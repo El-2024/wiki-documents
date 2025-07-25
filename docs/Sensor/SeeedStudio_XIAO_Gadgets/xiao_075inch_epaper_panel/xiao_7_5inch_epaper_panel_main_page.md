@@ -131,7 +131,7 @@ The following Wiki pages provide detailed information about different ways to pr
 
 * [**Works with ESPHome in Home Assistant**](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel) - Configure and control your ePaper Panel through ESPHome integration, ideal for Home Assistant users to create custom dashboards.
 
-* [**Works with Arduino**](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel_arduino) - Program your device using Arduino IDE with our library and examples for custom applications.
+* [**Works with Arduino**](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel_esphome) - Program your device using Arduino IDE with our library and examples for custom applications.
 
 * [**Works with TRMNL**](https://wiki.seeedstudio.com/xiao_7_5_inch_epaper_panel_with_trmnl) - Control your display with trmnl, an open-source platform for smart visual dashboard management.
 

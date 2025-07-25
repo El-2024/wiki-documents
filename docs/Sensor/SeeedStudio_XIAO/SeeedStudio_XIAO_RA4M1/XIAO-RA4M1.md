@@ -31,13 +31,13 @@ import TabItem from '@theme/TabItem';
 
 ## Introduction
 
-The XIAO RA4M1 integrates Renesas' RA4M1 chip (32-bit ARM® Cortex®-M4 MCU up to 48 MHz) into the classic XIAO form factor. This development board offers 256KB Flash, 32KB SRAM, 8KB EEPROM, a USB 2.0 connector, reset and boot buttons, 3 LEDs, a 14-bit A/D converter, a 12-bit D/A converter, and a CAN BUS interface. With onboard charging circuitry and low-power modes (as low as 45μA), it’s ideal for battery-powered applications. Sharing the same 32-bit R7FA4M1AB3CFM microcontroller as the Arduino Uno R4, it's natively compatible with Arduino IDE and the extensive XIAO accessories, making it the perfect starting point for electronics projects.
+The XIAO RA4M1 integrates Renesas' RA4M1 chip (32-bit ARM® Cortex®-M4 MCU up to 48 MHz) into the classic XIAO form factor. This development board offers 256KB Flash, 32KB SRAM, 8KB EEPROM, a USB 2.0 connector, reset and boot buttons, 3 LEDs, a 14-bit A/D converter, a 12-bit D/A converter, and a CAN BUS interface. With onboard charging circuitry and low-power modes (as low as 45μA), it’s ideal for battery-powered applications. Sharing the same 32-bit R7FA4M1AB3CNE microcontroller as the Arduino Uno R4, it's natively compatible with Arduino IDE and the extensive XIAO accessories, making it the perfect starting point for electronics projects.
 
 ### Features
 
 <!-- Key Features with bullet -->
 
-- **Popular Microcontroller Onboard:** Powered by Renesas RA4M1, an 32-bit ARM® Cortex®-M4 R7FA4M1AB3CFM MCU operating at up to 48 MHz, 256 KB of Flash memory, and 32 KB of SRAM.
+- **Popular Microcontroller Onboard:** Powered by Renesas RA4M1, an 32-bit ARM® Cortex®-M4 R7FA4M1AB3CNE MCU operating at up to 48 MHz, 256 KB of Flash memory, and 32 KB of SRAM.
 - **Highlighted Onboard Resources:** Equipped with a 14-bit ADC, 12-bit DAC, CAN BUS, USB 2.0, and an onboard RGB LED.
 - **Expanded 8 New IOs:** Adds 8 new IO pins on the back compared to previous XIAO boards (19 GPIOs in total), enabling more complex applications.
 - **Powerful Security Features:** Built-in hardware encryption, secure boot, key storage, and other functions to ensure application security.
