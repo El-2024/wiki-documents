@@ -254,7 +254,7 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 3. Clone Lerobot:
 
 ```bash
-git clone https://github.com/vectorBH6/lerobot.git ~/lerobot
+git clone https://github.com/Seeed-Projects/lerobot.git ~/lerobot
 ```
 
 4. When using miniconda, install ffmpeg in your environment:
@@ -876,7 +876,7 @@ As you can see, it's almost the same command as previously used to record your t
 
 ## FAQ
 
-- If you are following this documentation/tutorial, please git clone the recommended GitHub repository `https://github.com/vectorBH6/lerobot.git`. The repository recommended in this documentation is a verified stable version; the official Lerobot repository is continuously updated to the latest version, which may cause unforeseen issues such as different dataset versions, different commands, etc.
+- If you are following this documentation/tutorial, please git clone the recommended GitHub repository `https://github.com/Seeed-Projects/lerobot.git`. The repository recommended in this documentation is a verified stable version; the official Lerobot repository is continuously updated to the latest version, which may cause unforeseen issues such as different dataset versions, different commands, etc.
 
 - If you encounter the following error, you need to check whether the robotic arm connected to the corresponding port is powered on and whether the bus servos have any loose or disconnected cables.
   ```bash
