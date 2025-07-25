@@ -3925,7 +3925,7 @@ const sidebars = {
                 //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
                 // },
                 items: [
-                  'Robotics/Robot_Kits/Lerobot/starai',
+                  'Robotics/Robot_Kits/Lerobot/Lerobot_Starai_Arm',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_New',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_Isaacsim',
@@ -6243,6 +6243,7 @@ const sidebars = {
           type: 'category',
           label: 'Lerobot',
           items: [
+            'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Starai_Arm',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_Isaacsim',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Lekiwi',
