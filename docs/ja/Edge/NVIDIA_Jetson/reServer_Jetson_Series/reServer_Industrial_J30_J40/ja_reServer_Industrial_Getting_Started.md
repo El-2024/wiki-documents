@@ -502,9 +502,6 @@ import TabItem from '@theme/TabItem';
       </tr>
     </tbody>
   </table>
-
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
 </div>
 
 <p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>

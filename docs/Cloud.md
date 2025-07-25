@@ -33,7 +33,7 @@ Cloud services are a vital component that enable processed data management from 
 <div class="title_container">
     <div class="title_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCraft Data Platform</font></div>
-            <div class="start_card_title" style={{textAlign: 'center'}}><font color={'FFFFFF'} size={"3"}>The SenseCraft Data Platform provides data monitoring for SenseCAP sensor nodes and gateways.</font></div>
+            <p class="start_card_title" style={{textAlign: 'center'}}><font color={'FFFFFF'} size={"3"}>The SenseCraft Data Platform provides data monitoring for SenseCAP sensor nodes and gateways.</font></p>
     </div>
 </div>
 
@@ -86,7 +86,7 @@ Cloud services are a vital component that enable processed data management from 
 <div class="title_container">
     <div class="title_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCAP MX Blockchain App</font></div>
-            The SenseCAP HotSpot App is used on mobile phones to manage LoRaWAN hotspots.
+            <p>The SenseCAP HotSpot App is used on mobile phones to manage LoRaWAN hotspots.</p>
             <br/>
             > <a href="/sensecraft-blockchain/sensecraft-hotspot-app/download-app" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Download</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/hotspot-management" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Hotspot Management</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/remote-reboot" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Remote Reboot</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/hotspot-onboarding" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Hotspot Onboarding</font></span></a>
     </div>
@@ -97,7 +97,7 @@ Cloud services are a vital component that enable processed data management from 
 <div class="title_container">
     <div class="title_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCraft App</font></div>
-            SenseCraft App is used on mobile phones to config, build, and manage sensors, and display data from SenseCraft Data Platform.
+            <p>SenseCraft App is used on mobile phones to config, build, and manage sensors, and display data from SenseCraft Data Platform.</p>
             <br/>
             > <a href="/sensecraft-app/overview#download" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Download</font></span></a> / <a href="/sensecraft-app/overview#config" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Bind Devices</font></span></a> / <a href="/sensecraft-app/overview#account" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Account</font></span></a> / <a href="/sensecraft-app/overview#user" target="_blank"><span><font color={'FFFFFF'} size={"3"}>User</font></span></a>
     </div>
@@ -108,7 +108,7 @@ Cloud services are a vital component that enable processed data management from 
 <div class="title_container">
     <div class="title_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCraft AI</font></div>
-            SenseCraft AI can be accessed on the SenseCraft Data Platform and SenseCraft App.
+            <p>SenseCraft AI can be accessed on the SenseCraft Data Platform and SenseCraft App.</p>
             <br/>
             > <a href="/sensecraft-data-platform/applications/ai-advisor" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Getting Started</font></span></a> 
             > <a href="/sensecraft-data-platform/applications/planting-advice" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Connecting XIAO ESP32C3</font></span></a>
@@ -120,7 +120,7 @@ Cloud services are a vital component that enable processed data management from 
 <div class="title_container">
     <div class="title_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCraft Data Platform - API</font></div>
-            The SenseCraft Data Platform API supports device and data management.
+            <p>The SenseCraft Data Platform API supports device and data management.</p>
             <br/>
             > <a href="https://sensecap-docs.seeed.cc/pdf/sensecap_opanapi_document_en.pdf" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Download PDF</font></span></a> / <a href="/sensecraft-data-platform/sensecraft-data-platform-api/sensecraft-data-platform-api" target="_blank"><span><font color={'FFFFFF'} size={"3"}>API Introduction</font></span></a> / <a href="/sensecraft-fee/sensecraft-data-platform-api-pricing" target="_blank"><span><font color={'FFFFFF'} size={"3"}>API Pricing</font></span></a>
     </div>

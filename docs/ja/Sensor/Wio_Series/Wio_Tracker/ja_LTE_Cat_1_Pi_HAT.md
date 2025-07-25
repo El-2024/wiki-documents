@@ -108,8 +108,7 @@ LTE CAT.1 Pi HATはUARTおよびUSBインターフェースをサポートして
 
 <div>
   <style type="text/css" dangerouslySetInnerHTML={{__html: "\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}\n.tg .tg-us36{border-color:inherit;vertical-align:top}\n" }} />
-
-<table className="tg">
+  <table className="tg">
     <tbody><tr>
         <th className="tg-us36">使用ピン</th>
         <th className="tg-us36">Python (BCM)</th>
@@ -362,42 +361,6 @@ LTE CAT.1 Pi HATはUARTおよびUSBインターフェースをサポートして
         <td className="tg-us36">FREE</td>
       </tr>
     </tbody></table>
-
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
-<table>
-  <tr>
-    <th>功能</th>
-    <th>描述</th>
-    <th>示例</th>
-  </tr>
-  <tr>
-    <td>数据采集</td>
-    <td>通过传感器收集环境数据，例如温度、湿度、光照等。</td>
-    <td>使用 SenseCAP 传感器采集温度和湿度数据。</td>
-  </tr>
-  <tr>
-    <td>数据传输</td>
-    <td>将采集到的数据通过无线通信技术传输到网关或云端。</td>
-    <td>使用 LoRa-E5 模块进行数据传输。</td>
-  </tr>
-  <tr>
-    <td>数据存储</td>
-    <td>将传输的数据存储在数据库中，以便后续分析和处理。</td>
-    <td>使用 MySQL 数据库存储传感器数据。</td>
-  </tr>
-  <tr>
-    <td>数据分析</td>
-    <td>对存储的数据进行分析，以提取有价值的信息。</td>
-    <td>使用 Python 数据分析库进行数据处理。</td>
-  </tr>
-  <tr>
-    <td>数据可视化</td>
-    <td>将分析结果以图表或仪表盘的形式展示给用户。</td>
-    <td>使用 Grafana 创建实时数据仪表盘。</td>
-  </tr>
-</table>
-
 </div>
 
 

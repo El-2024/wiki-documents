@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 07/14/2025
+  date: 07/21/2025
   author: Frank
 ---
 
@@ -17,25 +17,49 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is July 14th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is July 21st, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [YOLOv11 With Depth Camera on Jetson Orin For Distance Measurement](https://wiki.seeedstudio.com/yolov11_with_depth_camera/)
+### [reSpeaker XVF3800 USB 4 Microphone Array with XIAO ESP32S3](http://localhost:3000/respeaker_xvf3800_xiao_getting_started/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Yolo11/connection.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/mute.jpg" alt="pir" width={800} height="auto" /></p>
 
-This wiki demonstrates how to use the Orbbec Gemini 2 depth camera with the reComputer J4012 (with NVIDIA® Jetson™ Orin™ NX 16GB Module), combining YOLOv11 object detection for visual target distance measurement.
+The ReSpeaker XVF3800 USB 4-Mic Array is a professional circular 4-microphone array based on the XMOS XVF3800. It features AEC, AGC, DoA, beamforming, VAD, noise suppression, de-reverberation, and 360° voice capture (up to 5 meters). It also supports dual operation modes, making it ideal for advanced voice applications. When combined with the Xiao ESP32S3, controlling the ReSpeaker XVF3800 USB becomes even more powerful, unlocking endless possibilities.
+
+We also provide several practical guides to help you explore the capabilities of the reSpeaker XVF3800 USB 4 Microphone Array with XIAO ESP32S3:
+
+* [I2S Test with XIAO ESP32S3](https://wiki.seeedstudio.com/respeaker_xvf3800_xiao_i2s/)
+* [RGB Control with XIAO ESP32S3](https://wiki.seeedstudio.com/respeaker_xvf3800_xiao_rgb/)
+* [Audio Playback and Volume Control via I2C](https://wiki.seeedstudio.com/respeaker_xvf3800_i2c_audio_playback/)
+* [Record and Playback Audio Using I2S](https://wiki.seeedstudio.com/respeaker_xvf3800_i2s_record_playback/)
+* [Control GPIO via XIAO ESP32S3](https://wiki.seeedstudio.com/respeaker_xvf3800_gpio_control/)
+
+These tutorials cover various features including I2S audio input/output, I2C control, RGB lighting, and GPIO handling, providing a complete understanding of the XVF3800's functionality in real-world scenarios.
+
+### [reCamera connects to XIAO via HTTP](https://wiki.seeedstudio.com/recamera_connects_to_xiao_via_http/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp" alt="pir" width={800} height="auto" /></p>
+
+This document demonstrates how to enable communication between the reCamera and XIAO via HTTP, transmitting data to XIAO so that you can integrate the reCamera into your own projects.
+
+### [TRMNL 7.5" (OG) DIY Kit](https://wiki.seeedstudio.com/trmnl_7inch5_diy_kit_main_page/)
+
+<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/x/1x1a0521.jpg" alt="pir" width={800} height="auto" /></p>
+
+The TRMNL 7.5" (OG) DIY Kit, co-developed by Seeed Studio and TRMNL, is a versatile e-ink development solution. It combines a 7.5-inch 800×480 monochrome e-ink display, XIAO ESP32-S3 PLUS driver board, 2000 mAh rechargeable battery, and 10cm FPC extension cable. Fully compatible with the TRMNL BYOD ecosystem, this kit enables no-code dashboard building with over 375 plugins and 8 layouts, ideal for DIY enthusiasts, smart home interfaces, and creative digital signage.
+
+### [Getting Started with XIAO IR Mate Smart IR Remote (For Home Assistant)](https://wiki.seeedstudio.com/XIAO_IR_Mate_Smart_IR_Remote/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_IR_MATE/6-109990586-XIAO-Smart-IR-Mate.jpg" alt="pir" width={800} height="auto" /></p>
+
+This device is specially designed for Home Assistant users, aiming to provide a seamless, efficient, and integrated smart infrared remote control solution. Through this guide, you will learn how to set up the device, connect it to your home network, integrate it into Home Assistant, and unlock its full potential, from basic signal learning to advanced smart air conditioner control.
 
 ## Existing Wiki Updated
 
-<!-- ### [Get Started with SenseCAP Solar Node](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/)
+### [Get Started with Indicator for Meshtastic](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/)
 
-We added an example of the [Flash Firmware](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/#flash-firmware) operation.
-
-### [Getting Started with reComputer Super](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/)
-
-We added an example of the [Flash JetPack OS](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/#flash-jetpack-os) operation. -->
+We have added instructions on how to use the [Keyboard](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/#keyboard).
 
 ## The Efforts of Contributor
 
@@ -100,7 +124,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.3.04th](/Seeed_Elderly/weekly_wiki/wiki240304)
 - [weekly wiki on 2024.3.11th](/Seeed_Elderly/weekly_wiki/wiki240311)
 - [weekly wiki on 2024.3.18th](/Seeed_Elderly/weekly_wiki/wiki240318)
-- [weekly wiki on 2024.3.25th](/Seeed_Elderly/weekly_wiki/wiki240325) -->
+- [weekly wiki on 2024.3.25th](/Seeed_Elderly/weekly_wiki/wiki240325)
 - [weekly wiki on 2024.4.01st](/Seeed_Elderly/weekly_wiki/wiki240401)
 - [weekly wiki on 2024.4.08th](/Seeed_Elderly/weekly_wiki/wiki240408)
 - [weekly wiki on 2024.4.15th](/Seeed_Elderly/weekly_wiki/wiki240415)
@@ -113,7 +137,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.6.03rd](/Seeed_Elderly/weekly_wiki/wiki240603)
 - [weekly wiki on 2024.6.10th](/Seeed_Elderly/weekly_wiki/wiki240610)
 - [weekly wiki on 2024.6.17th](/Seeed_Elderly/weekly_wiki/wiki240617)
-- [weekly wiki on 2024.6.24th](/Seeed_Elderly/weekly_wiki/wiki240624)
+- [weekly wiki on 2024.6.24th](/Seeed_Elderly/weekly_wiki/wiki240624) -->
 - [weekly wiki on 2024.7.01st](/Seeed_Elderly/weekly_wiki/wiki240701)
 - [weekly wiki on 2024.7.08th](/Seeed_Elderly/weekly_wiki/wiki240708)
 - [weekly wiki on 2024.7.16th](/Seeed_Elderly/weekly_wiki/wiki240716)
@@ -167,5 +191,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.6.23rd](/Seeed_Elderly/weekly_wiki/wiki250623)
 - [weekly wiki on 2025.6.30th](/Seeed_Elderly/weekly_wiki/wiki250630)
 - [weekly wiki on 2025.7.07th](/Seeed_Elderly/weekly_wiki/wiki250707)
+- [weekly wiki on 2025.7.14th](/Seeed_Elderly/weekly_wiki/wiki250714)
 
 </details>

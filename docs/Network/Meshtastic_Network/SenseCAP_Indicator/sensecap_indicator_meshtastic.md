@@ -246,7 +246,7 @@ Now that you have set the LoRa region on your device, you can continue with conf
 The keyboard usage of version 2.5.xx(The factory firmware is v2.5.11.) and version newer than 2.6.xx is different. Please check the following according to your current firmware version.
 :::
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/keyboard-version.png" alt="pir" width={400} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/keyboard-ve.png" alt="pir" width={400} height="auto" /></p>
 
 
 #### For version2.5.xx

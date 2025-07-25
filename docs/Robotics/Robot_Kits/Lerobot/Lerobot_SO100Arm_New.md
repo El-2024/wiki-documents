@@ -1,22 +1,22 @@
 ---
 description: This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework. 
-title: How to use the SO10xArm robotic arm in Lerobot
+title: How to use the SO10xArm robotic arm in the latest version of Lerobot
 keywords:
 - Lerobot
 - Huggingface
 - Arm
 - Robotics
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp
-slug: /lerobot_so100m
+slug: /lerobot_so100m_new
 last_update:
-  date: 12/24/2024
-  author: ZhuYaoHui
+  date: 7/18/2025
+  author: LiShanghang
 ---
 
-# How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot
+# How to use the SO-ARM100 and SO-ARM101 robotic arm in the latest version of Lerobot
 
 :::tip
-This tutorial repository maintains the verified stable release of Lerobot as of June 5, 2025. Currently, ​Hugging Face​ has rolled out a ​major upgrade​ to Lerobot, introducing many new features. If you want to experience the latest tutorials, please follow the [​official documentation​ for guidance](https://huggingface.co/docs/lerobot/index).
+This tutorial maintenance has been updated to the latest version of [lerobot](https://huggingface.co/docs/lerobot/index), if you want to refer to the tutorial of the previous version, please click [here](https://wiki.seeedstudio.com/lerobot_so100m/).
 :::
 
 ## Introduction
@@ -254,21 +254,7 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 3. Clone Lerobot:
 
 ```bash
-git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
-```
-
-**We adapted the Orbbec Gemini2 depth camera and found that a single depth camera performs better than two RGB cameras. If you are also using this camera, please clone the conversion repository branch to Orbbec and follow our subsequent steps to configure the camera.**  
-
-```bash  
-cd ~/lerobot  
-git checkout orbbec  
-```  
-
-**If you are only using RGB, do not switch branches, otherwise dependency-related errors may occur. If you have already switched to `orbbec` and want to revert to the original version:**  
-
-```bash  
-cd ~/lerobot  
-git checkout main  
+git clone https://github.com/Seeed-Projects/lerobot.git ~/lerobot
 ```
 
 4. When using miniconda, install ffmpeg in your environment:
@@ -324,7 +310,7 @@ If you are using a Jetson device, install Pytorch and Torchvision according to [
 ## Configure the motors
 
 :::danger  
-Due to official code and servo manufacturer firmware updates, users before June 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250706).7z) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
+Due to official code and servo manufacturer firmware updates, users before June 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
 :::
 
 :::note
@@ -382,111 +368,96 @@ If you buy the Arm Kit version (ST-3215-C001), use a 5V power supply. If you buy
 
 You can also refer to our SO-ARM100 servo calibration video, but please make sure that the servo joint IDs and gear ratios strictly correspond to those of the SO-ARM101.
 
-**Find USB ports associated to your arms**
+***The following are the code calibration steps, please calibrate with the reference wiring servo in the picture above***
+
+Find USB ports associated to your arms
 To find the correct ports for each arm, run the utility script twice:
 
 ```bash
-python lerobot/scripts/find_motors_bus_port.py
+python -m lerobot.find_port
 ```
 
-Example output when identifying the leader arm's port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyACM0` on Linux):
-
-Example output when identifying the follower arm's port (e.g., `/dev/tty.usbmodem575E0032081`, or possibly `/dev/ttyACM1` on Linux):
-
-Troubleshooting: On Linux, you might need to give access to the USB ports by running:
+Example output:
 
 ```bash
-sudo chmod 666 /dev/ttyACM0
-sudo chmod 666 /dev/ttyACM1
+Finding all available ports for the MotorBus.
+['/dev/ttyACM0', '/dev/ttyACM1']
+Remove the usb cable from your MotorsBus and press Enter when done.
+
+[...Disconnect corresponding leader or follower arm and press Enter...]
+
+The port of this MotorsBus is /dev/ttyACM1
+Reconnect the USB cable.
 ```
-
-**Configure your motors**
-
-Plug your first motor and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate:
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 1
-```
-
-Note: These motors are currently limitated. They can take values between 0 and 4096 only, which corresponds to a full turn. They can't turn more than that. 2048 is at the middle of this range, so we can take -2048 steps (180 degrees anticlockwise) and reach the maximum range, or take +2048 steps (180 degrees clockwise) and reach the maximum range. The configuration step also sets the homing offset to 0, so that if you misassembled the arm, you can always update the homing offset to account for a shift up to ± 2048 steps (± 180 degrees).
-
-Then unplug your motor and plug the second motor and set its ID to 2.
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 2
-```
-
-Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
-</TabItem>
-
-<TabItem value="SO100" label="SO100">
-
-Designate one bus servo adapter and 6 motors for your leader arm, and similarly the other bus servo adapter and 6 motors for the follower arm. It's convenient to label them and write on each motor if it's for the follower F or for the leader L and it's ID from 1 to 6 (F1...F6 and L1...L6).
-
-Follow steps 1 of the [assembly video](https://www.youtube.com/watch?v=FioA2oeFZ5I) which illustrates the use of our scripts below.
-
-<div class="video-container">
-<iframe width="900" height="600" src="https://www.youtube.com/embed/FioA2oeFZ5I?si=GjudmAovwF_X5m2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-**Find USB ports associated to your arms**
-To find the correct ports for each arm, run the utility script twice:
-
-```bash
-python lerobot/scripts/find_motors_bus_port.py
-```
-
-Example output when identifying the leader arm's port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyACM0` on Linux):
-
-Example output when identifying the follower arm's port (e.g., `/dev/tty.usbmodem575E0032081`, or possibly `/dev/ttyACM1` on Linux):
-
-Troubleshooting: On Linux, you might need to give access to the USB ports by running:
-
-```bash
-sudo chmod 666 /dev/ttyACM0
-sudo chmod 666 /dev/ttyACM1
-```
-
-**Configure your motors**
-
-Plug your first motor and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate:
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 1
-```
-
-:::note
-Note: These motors are currently limitated. They can take values between 0 and 4096 only, which corresponds to a full turn. They can't turn more than that. 2048 is at the middle of this range, so we can take -2048 steps (180 degrees anticlockwise) and reach the maximum range, or take +2048 steps (180 degrees clockwise) and reach the maximum range. The configuration step also sets the homing offset to 0, so that if you misassembled the arm, you can always update the homing offset to account for a shift up to ± 2048 steps (± 180 degrees).
+:::tip
+Remember to remove the usb, otherwise the interface will not be detected.
 :::
 
-Then unplug your motor and plug the second motor and set its ID to 2.
+Example output when identifying the leader arm's port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyACM0` on Linux):
+
+Example output when identifying the follower arm's port (e.g., `/dev/tty.usbmodem575E0032081`, or possibly `/dev/ttyACM1` on Linux):
+
+You might need to give access to the USB ports by running:
 
 ```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 2
+sudo chmod 666 /dev/ttyACM0
+sudo chmod 666 /dev/ttyACM1
 ```
 
-Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
+**Configure your motors**
+
+Connect the usb cable from your computer and the power supply to the follower arm’s controller board. Then, run the following command.
+
+```bash
+python -m lerobot.setup_motors \
+    --robot.type=so101_follower \
+    --robot.port=/dev/tty.usbmodem585A0076841  # <- paste here the port found at previous step
+```
+
+You should see the following instruction.
+
+```bash
+Connect the controller board to the 'gripper' motor only and press enter.
+```
+
+As instructed, plug the gripper’s motor. Make sure it’s the only motor connected to the board, and that the motor itself is not yet daisy-chained to any other motor. As you press [Enter], the script will automatically set the id and baudrate for that motor.
+
+You should then see the following message:
+
+```bash
+'gripper' motor id set to 6
+```
+
+Followed by the next instruction:
+
+```bash
+Connect the controller board to the 'wrist_roll' motor only and press enter.
+```
+
+You can disconnect the 3-pin cable from the controller board, but you can leave it connected to the gripper motor on the other end, as it will already be in the right place. Now, plug in another 3-pin cable to the wrist roll motor and connect it to the controller board. As with the previous motor, make sure it is the only motor connected to the board and that the motor itself isn’t connected to any other one.
+
+:::caution
+Repeat the operation for each motor as instructed.
+:::
+
+Check your cabling at each step before pressing Enter. For instance, the power supply cable might disconnect as you manipulate the board.
+
+When you are done, the script will simply finish, at which point the motors are ready to be used. You can now plug the 3-pin cable from each motor to the next one, and the cable from the first motor (the ‘shoulder pan’ with id=1) to the controller board, which can now be attached to the base of the arm.
+
+Do the same steps for the leader arm.
+
+```bash
+python -m lerobot.setup_motors \
+    --teleop.type=so101_leader \
+    --teleop.port=/dev/tty.usbmodem575E0031751  # <- paste here the port found at previous step
+```    
+
+<div class="video-container">
+<iframe width="900" height="600" src="//player.bilibili.com/player.html?isOutside=true&aid=114889737702887&bvid=BV1YVgzzVECY&cid=31182423503&p=1" title="bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 </TabItem>
+
 </Tabs>
 
 
@@ -553,167 +524,11 @@ Next, you need to connect the power supply and data cable to your SO-10x robot f
 
 **Manual calibration of follower arm**
 
-IMPORTANTLY: Now that you have your ports, update the port default values of [SO101RobotConfig](https://github.com/huggingface/lerobot/blob/main/lerobot/common/robot_devices/robots/configs.py) (`lerobot/lerobot/common/robot_devices/robots/configs.py`). You will find something like:
-
-```python
-@RobotConfig.register_subclass("so101")
-@dataclass
-class So101RobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/so101"
-    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
-    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
-    # the number of motors in your follower arms.
-    max_relative_target: int | None = None
-
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/ttyACM0",  <-- UPDATE HERE
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev//dev/ttyACM1",  <-- UPDATE HERE
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-```
+Please connect the interfaces of the 6 robot servos via a 3-pin cable and connect the chassis servo to the servo drive plate, then run the following command or API example to calibrate the robot arm:
 
 
 
-<details>
-
-<summary> Dual-Arm Teleoperation. (Option) </summary>
-
-If you want to implement dual-arm teleoperation, it means you need two Leader robotic arms and two Follower robotic arms. Therefore, you need to add the class names of the robotic arms and their corresponding port numbers in the `leader_arms dick` and `follower_arms dick`, for example:
-
-```python
-@RobotConfig.register_subclass("so101")
-@dataclass
-class So101RobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/so101"
-    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
-    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
-    # the number of motors in your follower arms.
-    max_relative_target: int | None = None
-
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "left": FeetechMotorsBusConfig(
-                port="/dev/ttyACM0",  <-- UPDATE HERE
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-            "right": FeetechMotorsBusConfig(
-                port="/dev/ttyACM1",  <-- UPDATE HERE
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "left": FeetechMotorsBusConfig(
-                port="/dev//dev/ttyACM2",  <-- UPDATE HERE
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-            "right": FeetechMotorsBusConfig(
-                port="/dev//dev/ttyACM3",  <-- UPDATE HERE
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-
-```
-
-:::caution
-You need to correctly match the left and right names of the dual arms and ensure that each robotic arm’s serial port number on the device is correctly assigned.
-:::
-
-In the next step, when calibrating the robotic arms, you need to calibrate all four arms individually. The command is as follows:
-
-
-```bash
-sudo chmod 666 /dev/ttyACM*
-```
-
-```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
-  --robot.cameras='{}' \
-  --control.type=calibrate \
-  --control.arms='["left_follower"]'
-  #  --control.arms='["right_follower"]'
-  #  --control.arms='["left_leader"]'
-  #  --control.arms='["right_leader"]'
-```
-
-After the calibration is completed, you can view the results in the .cache/calibration/so101 directory.
-```bash
-`-- calibration
-    `-- so101
-        |-- left_follower.json
-        |-- left_leader.json
-        |-- right_follower.json
-        `-- right_leader.json
-```
-
-The subsequent steps are the same as for the single-arm setup.
-
-</details>
-
+**Interface permissions are given first**
 
 ```bash
 sudo chmod 666 /dev/ttyACM*
@@ -721,31 +536,29 @@ sudo chmod 666 /dev/ttyACM*
 
 **Manual calibration of Follower arm**
 
-```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
-  --robot.cameras='{}' \
-  --control.type=calibrate \
-  --control.arms='["main_follower"]'
+```python
+python -m lerobot.calibrate \
+    --robot.type=so101_follower \
+    --robot.port=/dev/tty.usbmodem58760431551 \ # <- The port of your robot
+    --robot.id=my_awesome_follower_arm # <- Give the robot a unique name
 ```
+
+The video below shows how to perform the calibration. First you need to move the robot to the position where all joints are in the middle of their ranges. Then after pressing enter you have to move each joint through its full range of motion.
 
 **Manual calibration of leader arm**
 
-```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
-  --robot.cameras='{}' \
-  --control.type=calibrate \
-  --control.arms='["main_leader"]'
+Do the same steps to calibrate the leader arm, run the following command or API example:
+
+```python
+python -m lerobot.calibrate \
+    --teleop.type=so101_leader \
+    --teleop.port=/dev/tty.usbmodem58760431551 \ # <- The port of your robot
+    --teleop.id=my_awesome_leader_arm # <- Give the robot a unique name
 ```
 
-
-| **Follower Middle Position** | **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
-|:---------:|:---------:|:---------:|:---------:|
-| ![fig7](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_middle.webp) | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_zero.webp) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_rotated.webp) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_rest.webp) |
-| **LeaderMiddle Position** | **Leader Zero Position** | **Leader Rotated Position** | **Leader Rest Position** |
-| ![fig8](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_middle.webp) | ![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_zero.webp) | ![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_rotated.webp) | ![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_rest.webp) |
-
+<div class="video-container">
+<iframe width="900" height="600" src="//player.bilibili.com/player.html?isOutside=true&aid=114889704081608&bvid=BV15ggzzLE9t&cid=31182227140&p=1" title="bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 
 ## Teleoperate
@@ -753,16 +566,28 @@ python lerobot/scripts/control_robot.py \
 **Simple teleop**
 Then you are ready to teleoperate your robot! Run this simple script (it won't connect and display the cameras):
 
+Note that the id associated with a robot is used to store the calibration file. It’s important to use the same id when teleoperating, recording, and evaluating when using the same setup.
+
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
-  --robot.cameras='{}' \
-  --control.type=teleoperate
+python -m lerobot.teleoperate \
+    --robot.type=so101_follower \
+    --robot.port=/dev/tty.usbmodem58760431541 \
+    --robot.id=my_awesome_follower_arm \
+    --teleop.type=so101_leader \
+    --teleop.port=/dev/tty.usbmodem58760431551 \
+    --teleop.id=my_awesome_leader_arm
 ```
+
+The teleoperate command will automatically:
+
+1. Identify any missing calibrations and initiate the calibration procedure.
+2. Connect the robot and teleop device and start teleoperation.
 
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/hnRwfcyX1ZI?si=RuzYjP_FUTK16lfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+
 
 ## Add cameras
 
@@ -770,206 +595,69 @@ python lerobot/scripts/control_robot.py \
 The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO101's parameters and code for operation.
 :::
 
-After inserting your two USB cameras, run the following script to check the port numbers of the cameras, It is important to remember that the camera must not be connected to a USB Hub; instead, it should be plugged directly into the device. The slower speed of a USB Hub may result in the inability to read image data.
+To instantiate a camera, you need a camera identifier. This identifier might change if you reboot your computer or re-plug your camera, a behavior mostly dependant on your operating system.
 
-```bash
-python lerobot/common/robot_devices/cameras/opencv.py \
-    --images-dir outputs/images_from_opencv_cameras
+To find the camera indices of the cameras plugged into your system, run the following script:
+
+```python
+python -m lerobot.find_cameras opencv # or realsense for Intel Realsense cameras
 ```
 
 The terminal will print out the following information.
 
 ```markdown
-Mac or X86 Ubuntu detected. Finding available camera indices through scanning all indices from 0 to 60
-[...]
-Camera found at index 2
-Camera found at index 4
-[...]
-Connecting cameras
-OpenCVCamera(2, fps=30.0, width=640, height=480, color_mode=rgb)
-OpenCVCamera(4, fps=30.0, width=640, height=480, color_mode=rgb)
-Saving images to outputs/images_from_opencv_cameras
-Frame: 0000 Latency (ms): 39.52
-[...]
-Frame: 0046 Latency (ms): 40.07
-Images have been saved to outputs/images_from_opencv_cameras
+--- Detected Cameras ---
+Camera #0:
+  Name: OpenCV Camera @ 0
+  Type: OpenCV
+  Id: 0
+  Backend api: AVFOUNDATION
+  Default stream profile:
+    Format: 16.0
+    Width: 1920
+    Height: 1080
+    Fps: 15.0
+--------------------
+(more cameras ...)
 ```
 
-You can find the pictures taken by each camera in the `outputs/images_from_opencv_cameras` directory, and confirm the port index information corresponding to the cameras at different positions. Then complete the alignment of the camera parameters in the `lerobot/lerobot/common/robot_devices/robots/configs.py` file.
+You can find the pictures taken by each camera in the `outputs/captured_images` directory.
 
-```python
-@RobotConfig.register_subclass("so101")
-@dataclass
-class So101RobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/so101"
-    ''''''''''''''''
-          .
-          .
-    ''''''''''''''''
-    cameras: dict[str, CameraConfig] = field(
-        default_factory=lambda: {
-            "laptop": OpenCVCameraConfig(
-                camera_index=0,             ##### UPDATE HEARE
-                fps=30,
-                width=640,
-                height=480,
-            ),
-            "phone": OpenCVCameraConfig(
-                camera_index=1,             ##### UPDATE HEARE
-                fps=30,
-                width=640,
-                height=480,
-            ),
-        }
-    )
-
-    mock: bool = False
-  
-```
-
-
-<details>
-
-<summary> Add two or more additional cameras. (Option) </summary>
-If you want to add more cameras, you can continue adding different camera names and `camera_index` values in the camera dictionary, as long as the USB input allows it. Please note that using a USB hub for cameras is not recommended.
-
-```python
-@RobotConfig.register_subclass("so101")
-@dataclass
-class So101RobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/so101"
-    ''''''''''''''''
-          .
-          .
-    ''''''''''''''''
-    cameras: dict[str, CameraConfig] = field(
-        default_factory=lambda: {
-            "laptop": OpenCVCameraConfig(
-                camera_index=0,             ##### UPDATE HEARE
-                fps=30,
-                width=640,
-                height=480,
-            ),
-            "phone": OpenCVCameraConfig(
-                camera_index=1,             ##### UPDATE HEARE
-                fps=30,
-                width=640,
-                height=480,
-            ),
-            "new_camera": OpenCVCameraConfig( ##### UPDATE HEARE
-                camera_index=3,             ##### UPDATE HEARE
-                fps=30,
-                width=640,
-                height=480,
-            ),
-        }
-    )
-
-    mock: bool = False
-  
-```
-
-</details>
-
-<details>
-
-<summary>Using a Single Orbbec Gemini 2 Depth Camera</summary>
-
-:::tip
-This project was initiated by Orbbec with valuable guidance, and implemented by Jiaquan Zhang, Wenzhao Wang, and Jinpeng Huang from South China Normal University. It enables the use of Orbbec cameras to collect depth data within the lerobot framework, thereby enriching the environmental perception of robotic arms.
-If you already have an Orbbec Gemini2 depth camera, our current testing configuration places the depth camera at the front upper position. Please follow the installation instructions below.
+:::warning
+When using Intel RealSense cameras in , you could get this error: , this can be solved by running the same command with permissions. Note that using RealSense cameras in is unstable.macOSError finding RealSense cameras: failed to set power statesudomacOS.
 :::
 
-**Install and Compile Gemini 2 Depth Camera Python SDK**
 
-1. Clone pyOrbbecsdk
-
-```bash
-cd ~/
-git clone https://github.com/orbbec/pyorbbecsdk.git
-cd pyorbbecsdk
-```
-
-2. Install dependencies and compile pyOrbbecsdk
-
-```bash
-conda activate lerobot
-sudo apt-get install python3-dev python3-venv python3-pip python3-opencv
-pip3 install -r requirements.txt
-mkdir build
-cd build
-cmake -Dpybind11_DIR=`pybind11-config --cmakedir` ..
-make -j4
-make install
-cd ~/pyorbbecsdk
-pip install -e .
-```
-
-3. Test if the depth camera works properly
-```bash
-cd ~/pyorbbecsdk 
-pip install -e .
-export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
-sudo bash ./scripts/install_udev_rules.sh
-sudo udevadm control --reload-rules && sudo udevadm trigger
-python3 examples/depth.py
-```
-
-However, you need to run these commands again when opening a new terminal:
-```bash
-cd ~/pyorbbecsdk 
-export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
-sudo bash ./scripts/install_udev_rules.sh
-sudo udevadm control --reload-rules && sudo udevadm trigger
-```
-
-You can also add the following to the end of your `.bashrc` file:
-```bash
-export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
-sudo bash ~/pyorbbecsdk/scripts/install_udev_rules.sh
-sudo udevadm control --reload-rules && sudo udevadm trigger
-```
-This will automatically load the depth camera environment when starting a terminal.
-
-After connecting your Orbbec depth camera, run the following script to check the depth data stream and color data stream. Two windows will pop up, allowing you to adjust the camera position. Use Ctrl+C in the terminal to exit. Important: The camera must be connected directly to your device, not through a USB hub, as the hub's bandwidth may be too slow for image data transmission.
-
-After adjusting the camera, align the camera parameters in the configuration file at `lerobot/lerobot/common/robot_devices/robots/configs.py`.
-
-```python
-@RobotConfig.register_subclass("so101")  # Also compatible with so100
-@dataclass
-class So101RobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/so101"
-    ''''''''''''''''
-          .
-          .
-    ''''''''''''''''
-    cameras: dict[str, CameraConfig] = field(
-        default_factory=lambda: {
-            "Orbbec":OrbbecCameraConfig(    # Add Orbbec camera configuration here
-                fps=30,
-                use_depth=True,             # Whether to use depth
-                width = 640,                # Resolution automatically adapts to width. Only 640 or 1280 (untested) are valid values
-                Hi_resolution_mode = False, # High resolution mode (may reduce visualization quality but improves depth data resolution)
-            ),
-
-        }
-    )
-
-    mock: bool = False
-```
-
-</details>
 
 
 
 Then you will be able to display the cameras on your computer while you are teleoperating by running the following code. This is useful to prepare your setup before recording your first dataset.
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
-  --control.type=teleoperate \
-  --control.display_data=true
+python -m lerobot.teleoperate \
+    --robot.type=koch_follower \
+    --robot.port=/dev/tty.usbmodem58760431541 \
+    --robot.id=my_awesome_follower_arm \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}}" \
+    --teleop.type=koch_leader \
+    --teleop.port=/dev/tty.usbmodem58760431551 \
+    --teleop.id=my_awesome_leader_arm \
+    --display_data=true
+```
+
+If you have more cameras, you can change `--robot.cameras` to add cameras. You should note the format of the index_or_path, which is determined by the last digit of the camera ID output by `python -m lerobot.find_cameras opencv`.
+
+For example, you want to add a side camera:
+```bash
+python -m lerobot.teleoperate \
+    --robot.type=koch_follower \
+    --robot.port=/dev/tty.usbmodem58760431541 \
+    --robot.id=my_awesome_follower_arm \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}, side: {type: opencv, index_or_path: 1, width: 1920, height: 1080, fps: 30}}" \ 
+    --teleop.type=koch_leader \
+    --teleop.port=/dev/tty.usbmodem58760431551 \
+    --teleop.id=my_awesome_leader_arm \
+    --display_data=true
 ```
 
 
@@ -999,22 +687,24 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
 
-Record 2 episodes and upload your dataset to the hub:
+Record 5 episodes and upload your dataset to the hub:
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
-  --control.type=record \
-  --control.fps=30 \
-  --control.single_task="Grasp a lego block and put it in the bin." \
-  --control.repo_id=${HF_USER}/so101_test \
-  --control.tags='["so101","tutorial"]' \
-  --control.warmup_time_s=5 \
-  --control.episode_time_s=30 \
-  --control.reset_time_s=30 \
-  --control.num_episodes=2 \
-  --control.display_data=true \
-  --control.push_to_hub=true
+python -m lerobot.record \
+    --robot.type=so101_follower \
+    --robot.port=/dev/tty.usbmodem585A0076841 \
+    --robot.id=my_awesome_follower_arm \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}}" \
+    --teleop.type=so101_leader \
+    --teleop.port=/dev/tty.usbmodem58760431551 \
+    --teleop.id=my_awesome_leader_arm \
+    --display_data=true \
+    --dataset.repo_id=${HF_USER}/record-test \
+    --dataset.num_episodes=5 \
+    --dataset.single_task="Grab the black cube" \
+    --dataset.push_to_hub=true \     
+    --dataset.episode_time_s=30 \    
+    --dataset.reset_time_s=30 \
 ```
 
 You will see a lot of lines appearing like this one:
@@ -1032,9 +722,9 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 :::tip
 
-- "If you want to save the data locally (`--control.push_to_hub=false`), replace `--control.repo_id=${HF_USER}/so101_test` with a custom local folder name, such as `--control.repo_id=seeed_123/so101_test`. It will then be stored in the system's home directory at `~/.cache/huggingface/lerobot`."
+- "If you want to save the data locally (`--dataset.push_to_hub=false`), replace `--dataset.repo_id=${HF_USER}/so101_test` with a custom local folder name, such as `--dataset.repo_id=seeed_123/so101_test`. It will then be stored in the system's home directory at `~/.cache/huggingface/lerobot`."
 
-- If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
+- If you uploaded your dataset to the hub with `--dataset.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
 
 - Press right arrow → at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
 
@@ -1042,7 +732,7 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 - Press escape ESC at any time during episode recording to end the session early and go straight to video encoding and dataset uploading.
 
-- Note: You can resume recording by adding --control.resume=true. Also if you didn't push your dataset yet, add --control.local_files_only=true. You will need to manually delete the dataset directory if you want to start recording from scratch.
+- Note: Checkpoints are automatically created during recording. If an issue occurs, you can resume by re-running the same command with `--resume=true`. To start recording from scratch, manually delete the dataset directory.
 
 - Once you're comfortable with data recording, you can create a larger dataset for training. A good starting task is grasping an object at different locations and placing it in a bin. We suggest recording at least 50 episodes, with 10 episodes per location. Keep the cameras fixed and maintain consistent grasping behavior throughout the recordings. Also make sure the object you are manipulating is visible on the camera's. A good rule of thumb is you should be able to do the task yourself by only looking at the camera images.
 
@@ -1067,18 +757,17 @@ The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO
 echo ${HF_USER}/so101_test  
 ```
 
-If you didn't upload with `--control.push_to_hub=false`, you can also visualize it locally with:
-
+If you didn't upload with `--dataset.push_to_hub=false`, you can also visualize it locally with:
 
 ```bash
-python lerobot/scripts/visualize_dataset_html.py \
+python -m lerobot.scripts.visualize_dataset_html \
   --repo-id ${HF_USER}/so101_test \
 ```
 
-If you upload with `--control.push_to_hub=false`, you can also visualize it locally with:
+If you upload with `--dataset.push_to_hub=false`, you can also visualize it locally with:
 
 ```bash
-python lerobot/scripts/visualize_dataset_html.py \
+python -m lerobot.scripts.visualize_dataset_html \
   --repo-id seeed_123/so101_test \
 ```
 **Here, `seeed_123` is the custom `repo_id` name defined when collecting data.**
@@ -1097,32 +786,30 @@ The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO
 Now try to replay the first episode on your robot:
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
-  --control.type=replay \
-  --control.fps=30 \
-  --control.repo_id=${HF_USER}/so101_test \
-  --control.episode=0
+python -m lerobot.replay \
+    --robot.type=so101_follower \
+    --robot.port=/dev/tty.usbmodem58760431541 \
+    --robot.id=my_awesome_follower_arm \
+    --dataset.repo_id=${HF_USER}/record-test \
+    --dataset.episode=0 # choose the episode you want to replay
 ```
-
-Note: If you didn't push your dataset yet, add `--control.local_files_only=true` .
 
 ## Train a policy
 :::tip
 The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO101's parameters and code for operation.
 :::
 
-
-To train a policy to control your robot, use the `python lerobot/scripts/train.py` script. A few arguments are required. Here is an example command:
+To train a policy to control your robot, use the python -m lerobot.scripts.train script. A few arguments are required. Here is an example command:
 
 ```bash
-python lerobot/scripts/train.py \
+python -m lerobot.scripts.train \
   --dataset.repo_id=${HF_USER}/so101_test \
   --policy.type=act \
   --output_dir=outputs/train/act_so101_test \
   --job_name=act_so101_test \
   --policy.device=cuda \
-  --wandb.enable=true
+  --wandb.enable=true \
+  --policy.repo_id=${HF_USER}/my_policy
 ```
 
 **If you want to train on a local dataset, make sure the `repo_id` matches the one used during data collection.**
@@ -1131,21 +818,24 @@ python lerobot/scripts/train.py \
 Let's explain it:
 
 1. We provided the dataset as argument with `--dataset.repo_id=${HF_USER}/so101_test`.
-2. We provide the policy using `policy.type=act`, which will load the configuration from [`lerobot/lerobot/common/policies/act/configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/common/policies/act/configuration_act.py). Currently, ACT has been tested, but you can also try other policies such as diffusion, pi0, pi0fast, tdmpc, and vqbet.
-3. We provided policy.device=cuda since we are training on a Nvidia GPU, but you could use policy.device=mps to train on Apple silicon.
+2. We provide the policy using `policy.type=act`, which will load the configuration from [`configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py). Importantly, this policy will automatically adapt to the number of motor states, motor actions and cameras of your robot (e.g. `laptop` and `phone`) which have been saved in your dataset.
+3. We provided `policy.device=cuda` since we are training on a Nvidia GPU, but you could use `policy.device=mps` to train on Apple silicon.
 5. We provided `wandb.enable=true` to use [Weights and Biases](https://docs.wandb.ai/quickstart) for visualizing training plots. This is optional but if you use it, make sure you are logged in by running `wandb login`.
 
 Training should take several hours. You will find checkpoints in `outputs/train/act_so100_test/checkpoints`.
 
 To resume training from a checkpoint, below is an example command to resume from last checkpoint of the act_so101_test policy:
 ```bash
-python lerobot/scripts/train.py \
+python -m lerobot.scripts.train \
   --config_path=outputs/train/act_so101_test/checkpoints/last/pretrained_model/train_config.json \
   --resume=true
 ```
 
+If you do not want to push your model to the hub after training use `--policy.push_to_hub=false`.
+
 **Upload policy checkpoints**
 Once training is done, upload the latest checkpoint with:
+
 ```bash
 huggingface-cli upload ${HF_USER}/act_so101_test \
   outputs/train/act_so101_test/checkpoints/last/pretrained_model
@@ -1157,27 +847,27 @@ huggingface-cli upload ${HF_USER}/act_so101_test \
 The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO101's parameters and code for operation.
 :::
 
-You can use the `record` function from [`lerobot/scripts/control_robot.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/scripts/control_robot.py) but with a policy checkpoint as input. For instance, run this command to record 10 evaluation episodes:
+You can use the `record` function from [`lerobot/record.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/record.py) but with a policy checkpoint as input. For instance, run this command to record 10 evaluation episodes:
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
-  --control.type=record \
-  --control.fps=30 \
-  --control.single_task="Grasp a lego block and put it in the bin." \
-  --control.repo_id=${HF_USER}/eval_act_so101_test \
-  --control.tags='["tutorial"]' \
-  --control.warmup_time_s=5 \
-  --control.episode_time_s=30 \
-  --control.reset_time_s=30 \
-  --control.num_episodes=10 \
-  --control.push_to_hub=true \
-  --control.policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
+python -m lerobot.record  \
+  --robot.type=so100_follower \
+  --robot.port=/dev/ttyACM1 \
+  --robot.cameras="{ up: {type: opencv, index_or_path: /dev/video10, width: 640, height: 480, fps: 30}, side: {type: intelrealsense, serial_number_or_name: 233522074606, width: 640, height: 480, fps: 30}}" \
+  --robot.id=my_awesome_follower_arm \
+  --display_data=false \
+  --dataset.repo_id=${HF_USER}/eval_so100 \
+  --dataset.single_task="Put lego brick into the transparent box" \
+  # <- Teleop optional if you want to teleoperate in between episodes \
+  # --teleop.type=so100_leader \
+  # --teleop.port=/dev/ttyACM0 \
+  # --teleop.id=my_awesome_leader_arm \
+  --policy.path=${HF_USER}/my_policy
 ```
 
 As you can see, it's almost the same command as previously used to record your training dataset. Two things changed:
 
-1. There is an additional `--control.policy.path` argument which indicates the path to your policy checkpoint with  (e.g. `outputs/train/eval_act_so100_test/checkpoints/last/pretrained_model`). You can also use the model repository if you uploaded a model checkpoint to the hub (e.g. `${HF_USER}/act_so100_test`).
+1. There is an additional `--policy.path` argument which indicates the path to your policy checkpoint with  (e.g. `outputs/train/eval_act_so100_test/checkpoints/last/pretrained_model`). You can also use the model repository if you uploaded a model checkpoint to the hub (e.g. `${HF_USER}/act_so100_test`).
 2. The name of dataset begins by `eval` to reflect that you are running inference (e.g. `${HF_USER}/eval_act_so100_test`).
 
 <div class="video-container">
@@ -1186,7 +876,7 @@ As you can see, it's almost the same command as previously used to record your t
 
 ## FAQ
 
-- If you are following this documentation/tutorial, please git clone the recommended GitHub repository `https://github.com/ZhuYaoHui1998/lerobot.git`. The repository recommended in this documentation is a verified stable version; the official Lerobot repository is continuously updated to the latest version, which may cause unforeseen issues such as different dataset versions, different commands, etc.
+- If you are following this documentation/tutorial, please git clone the recommended GitHub repository `https://github.com/Seeed-Projects/lerobot.git`. The repository recommended in this documentation is a verified stable version; the official Lerobot repository is continuously updated to the latest version, which may cause unforeseen issues such as different dataset versions, different commands, etc.
 
 - If you encounter the following error, you need to check whether the robotic arm connected to the corresponding port is powered on and whether the bus servos have any loose or disconnected cables.
   ```bash

@@ -1,6 +1,48 @@
 const docList = [
   [
     {
+      "path": "/replace_the_thermal_conductive_paste_for_recomputer",
+      "image": "https://files.seeedstudio.com/wiki/replace_the_thermal_conductive_paste_for_recomputer/replace_the_thermal_conductive_paste_for_recomputer.webp",
+      "title": "Replace the Thermal Conductive Paste for reComputer",
+      "date": "07/18/2025"
+    },
+    {
+      "path": "/recomputer_r",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/113991274-2_3.webp",
+      "title": "reComputer R1000 Getting Started",
+      "date": "07/17/2025"
+    }
+  ],
+  [
+    {
+      "path": "/XIAO_IR_Mate_Smart_IR_Remote",
+      "image": "https://files.seeedstudio.com/wiki/XIAO_IR_MATE/XIAO-Smart-IR-Mate.webp",
+      "title": "Getting Started with XIAO IR Mate Smart IR Remote (For Home Assistant)",
+      "date": "07/17/2025"
+    },
+    {
+      "path": "/respeaker_xvf3800_xiao_getting_started",
+      "image": "https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array-with-xiao-esp32s3.webp",
+      "title": "reSpeaker XVF3800 USB 4 Microphone Array with XIAO ESP32S3",
+      "date": "7/16/2025"
+    }
+  ],
+  [
+    {
+      "path": "/respeaker_xvf3800_introduction",
+      "image": "https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array.webp",
+      "title": "Getting Started with ReSpeaker XVF3800",
+      "date": "7/15/2025"
+    },
+    {
+      "path": "/recamera_connects_to_xiao_via_http",
+      "image": "https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp",
+      "title": "reCamera connects to XIAO via HTTP",
+      "date": "07/11/2025"
+    }
+  ],
+  [
+    {
       "path": "/yolov11_with_depth_camera",
       "image": "https://files.seeedstudio.com/wiki/Yolo11/connection.webp",
       "title": "YOLOv11 With Depth Camera on Jetson Orin For Distance Measurement",
@@ -21,66 +63,24 @@ const docList = [
       "date": "06/30/2025"
     },
     {
+      "path": "/trmnl_7inch5_diy_kit_main_page",
+      "image": "https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/head.webp",
+      "title": "TRMNL 7.5\" (OG) DIY Kit",
+      "date": "06/29/2025"
+    }
+  ],
+  [
+    {
+      "path": "/works_with_trmnl",
+      "image": "https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/trmnl_head.webp",
+      "title": "TRMNL 7.5inch(OG) DIY Kit Works with TRMNL",
+      "date": "06/29/2025"
+    },
+    {
       "path": "/real_time_yolo_object_detection_using_recamera_based_on_cpp",
       "image": "https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp",
       "title": "Real-time YOLO object detection using reCamera based on Cpp",
       "date": "06/26/2025"
-    }
-  ],
-  [
-    {
-      "path": "/feetech_servo",
-      "image": "https://files.seeedstudio.com/wiki/robotics/Actuator/feetech/Feetech-ST3215-Servo.webp",
-      "title": "Feetech Servo Motors Documents Hub",
-      "date": "06/24/2025"
-    },
-    {
-      "path": "/sound_follow_robot",
-      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.webp",
-      "title": "A Sound Follow Robot Powered by reSpeaker and Lekiwi",
-      "date": "6/24/2025"
-    }
-  ],
-  [
-    {
-      "path": "/recomputer_jetson_super_getting_started",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super2.webp",
-      "title": "Getting Started with reComputer Super",
-      "date": "06/19/2025"
-    },
-    {
-      "path": "/r2000_series_frigate_and_home_assistant",
-      "image": "https://files.seeedstudio.com/wiki/recomputer-r2000-getting-start/1_24_1.webp",
-      "title": "Frigate NVR and Hailo on reComputer R2000 connect with Home Assistant",
-      "date": "6/18/2025"
-    }
-  ],
-  [
-    {
-      "path": "/hexfellow_y200",
-      "image": "https://files.seeedstudio.com/wiki/robotics/Sensor/IMU/hexfellow/fig1.webp",
-      "title": "HEXFELLOW Y200 IMU Sensor Getting Start",
-      "date": "06/18/2025"
-    },
-    {
-      "path": "/get_started_with_meshtastic_wio_tracker_l1",
-      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/wio-tracker-l1.webp",
-      "title": "Get Started with Wio Tracker L1",
-      "date": "6/17/2025"
-    }
-  ],
-  [
-    {
-      "path": "/real-time-ocr",
-      "image": "https://files.seeedstudio.com/wiki/Edge_Box/ocr.webp",
-      "title": "Real-time OCR with reComputer AI box",
-      "date": "6/16/2025"
-    },
-    {
-      "path": "/control_robotic_arm_via_gr00t",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/gr00t/dataset.webp",
-      "title": "Control 6/7 DOF Robot Arm using NVIDIA Isaac GR00T N1.5",
-      "date": "6/16/2025"
     }
   ]
 ];

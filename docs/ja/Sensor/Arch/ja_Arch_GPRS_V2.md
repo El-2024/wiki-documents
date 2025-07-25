@@ -23,7 +23,7 @@ Arch GPRS V2は標準的なArduinoインターフェースと[Grove](https://wik
 
 <div class="admonition note">
 <p class="admonition-title">注意</p>
-Arch GPRS V2には<a href="https://mbed.org/handbook/mbed-HDK">mbedインターフェース</a>が付属していません。デバッグメッセージを出力するには、<a href="https://mbed.org/handbook/USBSerial">USBSerial</a>を試してください。
+<p>Arch GPRS V2には<a href="https://mbed.org/handbook/mbed-HDK">mbedインターフェース</a>が付属していません。デバッグメッセージを出力するには、<a href="https://mbed.org/handbook/USBSerial">USBSerial</a>を試してください。</p>
 </div>
 
 特徴

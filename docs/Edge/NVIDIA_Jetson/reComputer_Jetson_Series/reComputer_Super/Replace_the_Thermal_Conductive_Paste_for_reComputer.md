@@ -4,7 +4,7 @@ title: Replace the Thermal Conductive Paste for reComputer
 keywords:
   - reComputer Super
   - Thermal Conductive Paste
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/replace_the_thermal_conductive_paste_for_recomputer/replace_the_thermal_conductive_paste_for_recomputer.webp
 slug: /replace_the_thermal_conductive_paste_for_recomputer
 last_update:
   date: 07/18/2025
@@ -31,7 +31,7 @@ For best results, we suggest using premium thermal paste like [this one](https:/
 
 ## Getting Started
 
-<div align="center">
+<div class="video-container">
   <iframe width="800" height="450" src="https://www.youtube.com/embed/dQJiup_SfAE" title="Replace the Thermal Conductive Paste for reComputer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 

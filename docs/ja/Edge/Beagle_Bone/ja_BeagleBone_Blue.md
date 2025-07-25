@@ -457,8 +457,7 @@ Groveはモジュール化された標準化コネクタのプロトタイピン
 
 <div>
   <style type="text/css" dangerouslySetInnerHTML={{__html: "\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-fhi2{background-color:#ffffff;color:#000000;font-size:20px;font-weight:bold;text-align:center;vertical-align:top}\n.tg .tg-366q{background-color:#ffffff;color:#000000;font-size:18px;text-align:center;vertical-align:top}\n" }} />
-
-<table className="tg">
+  <table className="tg">
     <thead>
       <tr>
         <th className="tg-fhi2">SKU</th>
@@ -848,16 +847,7 @@ Groveはモジュール化された標準化コネクタのプロトタイピン
       </tr>
     </tbody>
   </table>
-
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
-（以下に提供された表を翻訳します。元の形式を保持し、すべての行を完全に翻訳します。）
-
 </div>
-
-## FAQs
-
-**[こちら](http://support.seeedstudio.com/knowledgebase/articles/1826437-seeeduino-v4-2-sku-102010026)** をクリックして、BeagleBone® Blueに関するすべてのFAQをご覧ください。
 
 ## 回路図オンラインビューア
 

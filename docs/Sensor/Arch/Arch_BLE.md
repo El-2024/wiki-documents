@@ -68,7 +68,7 @@ You can open **main.cpp** to change the program. For example, use the following 
 
 <div className="admonition note">
   <p className="admonition-title">Note</p>
-  If you are get a compiling error that 'device.h' is not found, try to update the mbed library to the latest revision in your program.
+  <p>If you are get a compiling error that 'device.h' is not found, try to update the mbed library to the latest revision in your program.</p>
 </div>
 
 

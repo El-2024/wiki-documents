@@ -120,7 +120,7 @@ Update/Flash the Firmware
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-Please note that flashing the firmware will delete all the settings and files(images, musics) stored in the RePhone. Take a data backup before you flash/update the firmware.
+<p>Please note that flashing the firmware will delete all the settings and files(images, musics) stored in the RePhone. Take a data backup before you flash/update the firmware.</p>
 </div>
 
 To make use of the Arduino IDE for RePhone, you have to update/flash the firmware as well. The process is as simple as follows:
@@ -148,7 +148,7 @@ Reset to default
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-Please note that resetting your Rephone to default will delete all the settings and files(images, musics) in the RePhone. Take a data backup before you reset it to default.**
+<p>Please note that resetting your Rephone to default will delete all the settings and files(images, musics) in the RePhone. Take a data backup before you reset it to default.**</p>
 </div>
 
 To reset your RePhone to **DEFAULT**:

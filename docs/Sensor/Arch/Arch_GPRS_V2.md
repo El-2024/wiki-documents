@@ -20,7 +20,7 @@ Arch GPRS V2 has a standard Arduino interface as well as [Grove](https://wiki.se
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-Arch GPRS V2 does not come with <a href="https://mbed.org/handbook/mbed-HDK" >an mbed interface</a>. To output debug messages, please try <a href="https://mbed.org/handbook/USBSerial">USBSerial</a>.
+<p>Arch GPRS V2 does not come with <a href="https://mbed.org/handbook/mbed-HDK" >an mbed interface</a>. To output debug messages, please try <a href="https://mbed.org/handbook/USBSerial">USBSerial</a>.</p>
 </div>
 
 Features

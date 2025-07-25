@@ -390,51 +390,6 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </font>
 </table>
 
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
-<table>
-  <tr>
-    <th>功能</th>
-    <th>描述</th>
-    <th>示例</th>
-  </tr>
-  <tr>
-    <td>数据采集</td>
-    <td>通过传感器收集环境数据，例如温度、湿度、光照等。</td>
-    <td>使用 SenseCAP 传感器采集温度和湿度数据。</td>
-  </tr>
-  <tr>
-    <td>数据传输</td>
-    <td>将采集到的数据通过无线通信技术传输到网关或云端。</td>
-    <td>使用 LoRa-E5 模块进行数据传输。</td>
-  </tr>
-  <tr>
-    <td>数据存储</td>
-    <td>将传输的数据存储在云端或本地数据库中，以便后续分析。</td>
-    <td>将数据存储在 AWS 云数据库中。</td>
-  </tr>
-  <tr>
-    <td>数据分析</td>
-    <td>对存储的数据进行处理和分析，以提取有价值的信息。</td>
-    <td>使用 Python 脚本分析温度变化趋势。</td>
-  </tr>
-  <tr>
-    <td>数据可视化</td>
-    <td>通过图表或仪表盘展示分析结果，方便用户理解。</td>
-    <td>在 Web 应用中显示实时数据图表。</td>
-  </tr>
-  <tr>
-    <td>远程控制</td>
-    <td>通过网络远程控制设备，例如开关、调节参数等。</td>
-    <td>使用手机应用远程控制智能灯光。</td>
-  </tr>
-  <tr>
-    <td>设备管理</td>
-    <td>监控和管理连接的设备，包括故障诊断和维护。</td>
-    <td>通过 IoT 平台监控设备状态。</td>
-  </tr>
-</table>
-
 ## Seeed Studio XIAO シリーズ対応アクセサリ
 成長を続ける Seeed Studio XIAO エコシステムとして、Seeed Studio XIAO ボードと互換性のある幅広いアドオンを提供しています。[詳細はこちらをご覧ください](https://www.seeedstudio.com/xiao-series-page)。
 
