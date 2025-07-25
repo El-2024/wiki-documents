@@ -3925,6 +3925,7 @@ const sidebars = {
                 //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
                 // },
                 items: [
+                  'Robotics/Robot_Kits/Lerobot/starai',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_New',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_Isaacsim',
