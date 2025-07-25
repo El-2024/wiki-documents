@@ -5,7 +5,7 @@ keywords:
 - ePaper display
 - TRMNL
 image: https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/trmnl_head.webp
-slug: /works_with_trmnl
+slug: /ogdiy_kit_works_with_trmnl
 sidebar_position: 2
 last_update:
   date: 06/29/2025
@@ -98,10 +98,22 @@ Please use **FW 1.5.12** or newer firmware for Seeed compatibility.
 
 1. **Clone the Firmware Repository**
 
-   - Visit the [official firmware repository](https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project) and clone it:
-     ```
-     git clone https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project.git
-     ```
+  - Visit the [official firmware repository](https://github.com/usetrmnl/trmnl-firmware) and clone it:
+
+    ```
+    git clone https://github.com/usetrmnl/trmnl-firmware.git
+    ```
+
+:::tip
+
+There are times when we update our code and need to submit PR to TRMNL and review it before it is displayed, if you want to be the first to use the latest firmware version, you can also use the TRMNL repository under Seeed Project.
+
+  - Visit the [Seeed repository](https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project) and clone it:
+  
+    ```
+    git clone https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project.git
+    ```
+:::
 
 2. **Install PlatformIO**
 
@@ -155,7 +167,7 @@ To use your TRMNL 7.5inch(OG) DIY kit with TRMNL and send playlists, you first n
 ### Open the Captive Portal
 
 - Once connected, open a web browser (such as Chrome or Edge).
-- The device should automatically redirect you to the TRMNL configuration page. If it does not, manually visit [http://192.168.4.1](http://192.168.4.1) in your browser.
+- The device should automatically redirect you to the TRMNL configuration page. If it does not, manually visit [http://4.3.2.1](http://4.3.2.1) in your browser.
 
 ### Enter Your Wi-Fi Credentials
 

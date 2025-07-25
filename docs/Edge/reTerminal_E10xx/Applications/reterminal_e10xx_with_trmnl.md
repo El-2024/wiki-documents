@@ -1,27 +1,19 @@
 ---
-description: This article describes how to use the epaper panel to work with TRMNL.
-title: Works with TRMNL
-keywords:
-- ePaper display
-- TRMNL
-image: https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/216.webp
-slug: /xiao_7_5_inch_epaper_panel_with_trmnl
-sidebar_position: 4
+description: This article describes how to use the reTerminal E10xx series with TRMNL.
+title: reTerminal E10xx Works with TRMNL
+image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
+slug: /reterminal_e10xx_trmnl
+sidebar_position: 1
 last_update:
-  date: 05/19/2025
+  date: 07/21/2025
   author: Citric
 ---
 
-# XIAO 7.5-Inch ePaper Panel Works with TRMNL
+:::caution
+The Wiki content is under development and is not available at this time.
+:::
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/202.png" style={{width:900, height:'auto'}}/></div>
-
-<br></br>
-
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
-</div>
-
+# reTerminal E10xx Works with TRMNL
 
 ## What is [TRMNL](https://trmnl.app/)?
 
@@ -29,9 +21,9 @@ TRMNL is an innovative platform designed to help people stay focused and calm in
 
 At its core, TRMNL is built on the philosophy that technology should enhance our lives without demanding constant attention. The platform provides an elegant way to view important information at a glance through E Ink® displays, creating a more mindful and less intrusive technological experience.
 
-### Why Integrate TRMNL with the XIAO 7.5" ePaper Panel?
+### Why use TRMNL?
 
-The integration of TRMNL with our XIAO 7.5" ePaper Panel brings several compelling benefits:
+The integration of TRMNL will bring several compelling benefits:
 
 - **Simplified Dashboard Creation**: TRMNL's growing library of apps and integrations makes it easy to create custom information displays without complex programming
 - **Low Power Consumption**: The combination of TRMNL's efficient software with our E Ink® display's minimal power requirements creates an extremely energy-efficient solution
@@ -39,37 +31,13 @@ The integration of TRMNL with our XIAO 7.5" ePaper Panel brings several compelli
 - **Regular Updates**: TRMNL's active development means new features and integrations are added weekly, continuously expanding the possibilities for your display
 - **Developer-Friendly**: With TRMNL's open API and developer tools, you can create custom plugins and integrations for your specific needs
 
-By combining TRMNL's powerful platform with our high-quality E Ink® display, we're offering users an elegant solution for creating personalized, low-power information dashboards that respect both their attention and their time.
+By combining TRMNL's powerful platform with our high-quality E Ink® reTerminal E10xx display, we're offering users an elegant solution for creating personalized, low-power information dashboards that respect both their attention and their time.
 
 ## Getting Started with TRMNL
 
-Before diving into setting up your XIAO 7.5" ePaper Panel with TRMNL, let's gather the necessary materials and prepare your TRMNL credentials.
-
-### Materials Required
-
-For this integration, you'll need:
-
-<div class="table-center">
-	<table align="center">
-		<tr>
-			<th>XIAO 7.5" ePaper Panel</th>
-		</tr>
-		<tr>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/209.jpg" style={{width:300, height:'auto'}}/></div></td>
-		</tr>
-		<tr>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-				</a>
-			</div></td>
-		</tr>
-	</table>
-</div>
-
 ### TRMNL Account Setup and TRMNL Access
 
-Before connecting your ePaper Panel to TRMNL, you'll need to:
+Before connecting your kit to TRMNL, you'll need to:
 
 1. **Purchase TRMNL Access**
 
@@ -91,26 +59,28 @@ Before connecting your ePaper Panel to TRMNL, you'll need to:
 Your TRMNL credentials are sensitive information. Never share them publicly or commit them to version control systems.
 :::
 
-Once you have your materials and purchased TRMNL access, you can proceed with connecting your ePaper Panel to TRMNL's platform. If you encounter any issues or have questions, you can contact the TRMNL team directly at team@usetrmnl.com.
+Once you have your materials and purchased TRMNL access, you can proceed with connecting your device to TRMNL's platform. If you encounter any issues or have questions, you can contact the TRMNL team directly at team@usetrmnl.com.
 
 
 ### Firmware Flashing
 
-To get your XIAO 7.5" ePaper Panel working with TRMNL, you need to flash the appropriate firmware onto your device. There are three recommended methods:
+If you are still using the factory firmware for the reTerminal E10xx, then you will need to burn the TRMNL firmware using the following method before you can plug the device into the TRMNL.
 
 #### Method 1: Flash via TRMNL Web Flasher (Easiest)
 
-1. **Go to the TRMNL Web Flasher**
-
 :::tip
-Please use **FW 1.5.12** or newer firmware for Seeed compatibility.
+Please use **FW x.x.x** or newer firmware for Seeed compatibility.
 :::
+
+1. **Go to the TRMNL Web Flasher**
 
    - Visit [https://usetrmnl.com/flash](https://usetrmnl.com/flash)
    - This tool allows you to flash your device directly from your browser.
    - Follow the on-screen instructions to complete the flashing process.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/224.png" style={{width:700, height:'auto'}}/></div>
+
+---
 
 #### Method 2: Build and Flash from Source (For Advanced Users/Developers)
 
@@ -127,7 +97,7 @@ Please use **FW 1.5.12** or newer firmware for Seeed compatibility.
 There are times when we update our code and need to submit PR to TRMNL and review it before it is displayed, if you want to be the first to use the latest firmware version, you can also use the TRMNL repository under Seeed Project.
 
   - Visit the [Seeed repository](https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project) and clone it:
-  
+
     ```
     git clone https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project.git
     ```
@@ -143,20 +113,25 @@ There are times when we update our code and need to submit PR to TRMNL and revie
 
 4. **Select the Correct Environment**
 
-   - In `platformio.ini`, select the `seeed_xiao_esp32c3` environment.
+  - In `platformio.ini`, 
+  
+    - If you are using reTerminal E1001, select the `seeed_reTerminal_E1001` environment.
 
-   <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/214.png" style={{width:1000, height:'auto'}}/></div>
+    - If you are using reTerminal E1002, select the `seeed_reTerminal_E1002` environment.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/26.png" style={{width:1000, height:'auto'}}/></div>
 
 5. **Connect Your Device**
 
-   - Plug in your XIAO 7.5" ePaper Panel.
+   - Plug in your reTerminal E10xx device.
 
 6. **Build and Upload**
 
    - In PlatformIO, click the "Upload" button, or run:
-     ```
-     pio run --target upload
-     ```
+
+    ```
+    pio run --target upload
+    ```
 
    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/215.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -165,7 +140,7 @@ There are times when we update our code and need to submit PR to TRMNL and revie
 
 ## Configure Wi-Fi and Send Playlists to TRMNL
 
-To use your XIAO 7.5" ePaper Panel with TRMNL and send playlists, you first need to connect the device to your Wi-Fi network. This process is called "WiFi pairing mode" and is done through a simple captive portal. Please follow the steps below:
+To use your reTerminal E10xx with TRMNL and send playlists, you first need to connect the device to your Wi-Fi network. This process is called "WiFi pairing mode" and is done through a simple captive portal. Please follow the steps below:
 
 > 💡 **Troubleshooting Wi-Fi?** If you encounter issues connecting your device to Wi-Fi, please refer to the [TRMNL Device Wi-Fi Troubleshooting Guide](https://help.usetrmnl.com/en/articles/10193157-device-wifi-troubleshooting) for solutions to common networking and router compatibility issues.
 
@@ -190,11 +165,11 @@ To use your XIAO 7.5" ePaper Panel with TRMNL and send playlists, you first need
 ### Enter Your Wi-Fi Credentials
 
 - On the configuration page, you will see a list of available Wi-Fi networks.
-- **Select your 2.4GHz Wi-Fi network** (TRMNL does not support 5GHz networks).
+- **Select your 2.4GHz Wi-Fi network** (reTerminal E10xx does not support 5GHz networks).
 - Enter your Wi-Fi password.
 - Click **Save** or **Connect**.
 
-> ⚠️ **Important:** Make sure to use a 2.4GHz Wi-Fi network. 5GHz networks are not supported by the ESP32-C3 chip.
+> ⚠️ **Important:** Make sure to use a 2.4GHz Wi-Fi network. 5GHz networks are not supported by the reTerminal E10xx.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/218.png" style={{width:800, height:'auto'}}/></div>
 
@@ -215,7 +190,7 @@ To use your XIAO 7.5" ePaper Panel with TRMNL and send playlists, you first need
 
 ### Access the TRMNL Web Interface
 
-After your XIAO 7.5" ePaper Panel is connected to your Wi-Fi and you have recorded its MAC address (Device ID), you can add it to your TRMNL account:
+After your reTerminal E10xx is connected to your Wi-Fi and you have recorded its MAC address (Device ID), you can add it to your TRMNL account:
 
 1. **Open the TRMNL Web Interface**  
    - On your computer or mobile device, open a browser and go to the [TRMNL web interface](https://trmnl.app).
@@ -234,36 +209,36 @@ After your XIAO 7.5" ePaper Panel is connected to your Wi-Fi and you have record
 
    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/212.png" style={{width:700, height:'auto'}}/></div>
 
-5. **Register XIAO 7.5" Device MAC Address**
+5. **Register reTerminal E10xx MAC Address**
 
-   In order to build a connection between the XIAO epaper panel and TRMNL, we need to bind the correct device MAC address inside the TRMNL settings page.
+   In order to build a connection between the reTerminal E10xx and TRMNL, we need to bind the correct device MAC address inside the TRMNL settings page.
 
    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/223.png" style={{width:900, height:'auto'}}/></div>
 
    - You can retrieve the MAC address during the PlatformIO upload process (check the upload logs), or from the provisioning portal (it will be displayed after Wi-Fi setup).
    - Adding your MAC address early helps ensure a smooth onboarding process and device management.
 
-   - Then you can set a custom name for your ePaper Panel and adjust other settings as needed.
+   - Then you can set a custom name for your reTerminal E10xx and adjust other settings as needed.
 
-   <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/213.png" style={{width:700, height:'auto'}}/></div>
+Your reTerminal E10xx is now linked to your TRMNL account! You can now send playlists, images, or other content to your display directly from the TRMNL interface.
 
-Your XIAO 7.5" ePaper Panel is now linked to your TRMNL account! You can now send playlists, images, or other content to your display directly from the TRMNL interface.
-
-> 💡 **Tip:** If you have multiple ePaper Panels, repeat the above steps for each device using their unique Device IDs.
+> 💡 **Tip:** If you have multiple reTerminal E10xx, repeat the above steps for each device using their unique Device IDs.
 
 :::caution
 After adding your device in the TRMNL web interface, please go to the device's settings page and **turn off** both **Firmware Early Release** and **OTA Updates Enabled**.  
 
-If these options are left enabled, your device may automatically download and install firmware updates from TRMNL when connected to the internet. These updates are intended for official TRMNL hardware and **are not compatible with the XIAO 7.5" ePaper Panel**. Installing incompatible firmware may cause your device to malfunction or become unresponsive.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/213.png" style={{width:700, height:'auto'}}/></div>
 
-Always keep both options disabled to ensure stable operation of your XIAO ePaper Panel.
+If these options are left enabled, your device may automatically download and install firmware updates from TRMNL when connected to the internet. These updates are intended for official TRMNL hardware and **are not compatible with the reTerminal E10xx**. Installing incompatible firmware may cause your device to malfunction or become unresponsive.
+
+Always keep both options disabled to ensure stable operation of your reTerminal E10xx.
 :::
 
 ## Understanding the TRMNL Playlist Feature
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/221.png" style={{width:1000, height:'auto'}}/></div>
 
-The TRMNL Playlist feature allows you to control exactly what is displayed on your ePaper Panel and when. Here's a breakdown of the main sections and controls, as shown in the screenshot above:
+The TRMNL Playlist feature allows you to control exactly what is displayed on your reTerminal E10xx and when. Here's a breakdown of the main sections and controls, as shown in the screenshot above:
 
 ### Playlist Overview
 - **Playlist Title**: At the top, you see the name of your TRMNL device (e.g., "MengDu's TRMNL").
@@ -272,7 +247,7 @@ The TRMNL Playlist feature allows you to control exactly what is displayed on yo
 - **Add a Group / Add a Plugin**: Use these buttons to organize your playlist into groups or add new content plugins (such as weather, calendar, or custom text).
 
 ### Playlist Items
-Each row in the playlist represents a screen or widget that will be shown on your ePaper Panel (for reference only):
+Each row in the playlist represents a screen or widget that will be shown on your reTerminal E10xx (for reference only):
 
 1. **Weather**
    - Shows current weather information for your selected location.
@@ -295,20 +270,21 @@ For each item, you have several controls:
 
 > 📖 Want to learn more? Read the [Smart Playlists blog post](https://usetrmnl.com/blog/smart-playlists) for advanced tips and details.
 
-This flexible playlist system lets you fully customize what your ePaper Panel displays, how often it updates, and in what order. You can mix and match different plugins to create a personalized dashboard that fits your needs.
-
+This flexible playlist system lets you fully customize what your reTerminal E10xx, how often it updates, and in what order. You can mix and match different plugins to create a personalized dashboard that fits your needs.
 
 ## Exploring TRMNL Plugins
 
-TRMNL's plugin system is what makes your ePaper Panel truly powerful and customizable. Plugins are modular apps or widgets that you can add to your device to display a wide variety of information and content.
+TRMNL's plugin system is what makes your reTerminal E10xx truly powerful and customizable. Plugins are modular apps or widgets that you can add to your device to display a wide variety of information and content.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/222.png" style={{width:900, height:'auto'}}/></div>
 
 ### What are Plugins?
+
 Plugins are individual content blocks that can show things like weather, calendar events, stock prices, RSS feeds, motivational quotes, GitHub activity, and much more. You can mix and match plugins to create a dashboard that fits your needs.
 
 ### Connected Plugins
-At the top of the Plugins page, you'll see all the plugins you've already connected to your TRMNL account. These are ready to be added to your playlist and displayed on your ePaper Panel. Examples include:
+
+At the top of the Plugins page, you'll see all the plugins you've already connected to your TRMNL account. These are ready to be added to your playlist and displayed on your reTerminal E10xx. Examples include:
 - **Weather**: Show current weather conditions.
 - **Days Left This Year**: Countdown to the end of the year.
 - **Stock Price**: Track your favorite stocks.
@@ -317,6 +293,7 @@ At the top of the Plugins page, you'll see all the plugins you've already connec
 - **Language Learning, Motivational Quote, Custom Text**: Personalize your display with learning tools or custom messages.
 
 ### Plugin Marketplace
+
 Below your connected plugins, you'll find the plugin marketplace. Here you can browse, search, and discover new plugins to add to your device. Plugins are organized by categories and tags (such as #productivity, #news, #ecommerce, etc.), making it easy to find what you need.
 
 - **Browse & Search**: Use the search bar or tags to quickly find plugins that interest you.
@@ -332,17 +309,9 @@ If you have any questions about using TRMNL or want to explore more advanced fea
 
 ## Special Thanks
 
-Special thanks to the entire **TRMNL team** for their strong support and invaluable help with this project. In particular, we would like to thank **Bogdan**, **Ryan Kulp**, **Fr3d**, **Schappi**, and all other team members for their dedication and assistance throughout the development and documentation process.
+Special thanks to the entire **TRMNL team** for their strong support and invaluable help with this project. In particular, we would like to thank **Bogdan**, **Ryan Kulp**, **Fr3d** and all other team members for their dedication and assistance throughout the development and documentation process.
 
-Your expertise and commitment have made this integration possible and greatly improved the user experience for the XIAO 7.5" ePaper Panel community.
-
-
-## Resources
-
-- **[STP]**: [3D Model enclosure](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/3D_model.zip)
-- **[PDF]**: [ePaper Driver Board SCH PDF](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/ePaper_Driver_Board.pdf)
-- **[GITHUB]**: [TRMNL firmware repository](https://github.com/usetrmnl/firmware)
-- **[GITHUB]**: [Seeed_TRMNL_Eink_Project repository](https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project)
+Your expertise and commitment have made this integration possible and greatly improved the user experience for the reTerminal E10xx community.
 
 
 ## Tech Support & Product Discussion
@@ -360,6 +329,4 @@ Thank you for choosing our products! We are here to provide you with different s
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>
-
-
 
