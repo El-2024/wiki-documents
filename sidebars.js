@@ -3669,7 +3669,7 @@ const sidebars = {
               label: 'Developer Tools',
               // link: {
               //   type: "doc",
-              //   id: 'Edge/NVIDIA_Jetson/Application/Managed_Services',
+              //   id: 'Edge/NVIDIA_Jetson/Application/Developer_Tools',
               // },
               items: [
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/Gapi-Jetson-Getting-Started',
@@ -3685,7 +3685,10 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/reComputer_Jetson_Series_Resource',
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/NVStreamer_Getting_Started',
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/Roboflow-Jetson-Getting-Started',
-                'Edge/NVIDIA_Jetson/Application/Developer_Tools/vnc_for_reComputer'
+                'Edge/NVIDIA_Jetson/Application/Developer_Tools/Install_torch_on_reComputer',
+                'Edge/NVIDIA_Jetson/Application/Developer_Tools/vnc_for_reComputer',
+                
+                
 
               ]
             },
