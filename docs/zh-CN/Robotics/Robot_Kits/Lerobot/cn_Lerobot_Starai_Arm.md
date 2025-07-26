@@ -378,7 +378,7 @@ sudo chmod 666 /dev/ttyUSB0
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
+  --robot.type=starai \
   --robot.cameras='{}' \
   --control.type=teleoperate
 ```

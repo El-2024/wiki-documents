@@ -387,7 +387,7 @@ Then you are ready to teleoperate your robot! Run this simple script (it won't c
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
+  --robot.type=starai \
   --robot.cameras='{}' \
   --control.type=teleoperate
 ```

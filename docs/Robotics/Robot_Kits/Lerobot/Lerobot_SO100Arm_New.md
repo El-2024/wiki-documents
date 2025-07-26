@@ -635,7 +635,7 @@ Then you will be able to display the cameras on your computer while you are tele
 
 ```bash
 python -m lerobot.teleoperate \
-    --robot.type=koch_follower \
+    --robot.type=so101_follower \
     --robot.port=/dev/tty.usbmodem58760431541 \
     --robot.id=my_awesome_follower_arm \
     --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}}" \
@@ -650,7 +650,7 @@ If you have more cameras, you can change `--robot.cameras` to add cameras. You s
 For example, you want to add a side camera:
 ```bash
 python -m lerobot.teleoperate \
-    --robot.type=koch_follower \
+    --robot.type=so101_follower \
     --robot.port=/dev/tty.usbmodem58760431541 \
     --robot.id=my_awesome_follower_arm \
     --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}, side: {type: opencv, index_or_path: 1, width: 1920, height: 1080, fps: 30}}" \ 
