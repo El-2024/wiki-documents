@@ -7,7 +7,7 @@ keywords:
 - Robotics 
 slug: /Lerobot_Starai_Arm
 last_update:
-  date: 7/25/2025
+  date: 7/26/2025
   author: LiShanghang
 ---
 
