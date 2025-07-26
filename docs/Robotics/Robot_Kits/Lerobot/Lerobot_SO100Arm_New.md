@@ -714,7 +714,6 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 
 **Parameter Explanations**
-- wormup-time-s: It refers to the initialization time.
 - episode-time-s: It represents the time for collecting data each time.
 - reset-time-s: It is the preparation time between each data collection.
 - num-episodes: It indicates how many groups of data are expected to be collected.
