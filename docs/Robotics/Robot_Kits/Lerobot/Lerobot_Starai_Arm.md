@@ -564,7 +564,7 @@ Here, `starai` is the custom `repo_id` name defined when collecting data.
 
 Now try to replay the first episode on your robot:
 
-```
+```bash
 python lerobot/scripts/control_robot.py \
   --robot.type=starai \
   --control.type=replay \

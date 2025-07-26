@@ -556,7 +556,7 @@ python lerobot/scripts/visualize_dataset_html.py \
 
 现在尝试在您的机器人上重播第一个回合:
 
-```
+```bash
 python lerobot/scripts/control_robot.py \
   --robot.type=starai \
   --control.type=replay \

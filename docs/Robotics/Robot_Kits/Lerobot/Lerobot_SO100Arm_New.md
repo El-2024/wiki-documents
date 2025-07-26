@@ -639,7 +639,7 @@ python -m lerobot.teleoperate \
     --robot.port=/dev/tty.usbmodem58760431541 \
     --robot.id=my_awesome_follower_arm \
     --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}}" \
-    --teleop.type=koch_leader \
+    --teleop.type=so101_leader \
     --teleop.port=/dev/tty.usbmodem58760431551 \
     --teleop.id=my_awesome_leader_arm \
     --display_data=true
@@ -654,7 +654,7 @@ python -m lerobot.teleoperate \
     --robot.port=/dev/tty.usbmodem58760431541 \
     --robot.id=my_awesome_follower_arm \
     --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}, side: {type: opencv, index_or_path: 1, width: 1920, height: 1080, fps: 30}}" \ 
-    --teleop.type=koch_leader \
+    --teleop.type=so101_leader \
     --teleop.port=/dev/tty.usbmodem58760431551 \
     --teleop.id=my_awesome_leader_arm \
     --display_data=true
@@ -702,7 +702,7 @@ python -m lerobot.record \
     --dataset.repo_id=${HF_USER}/record-test \
     --dataset.num_episodes=5 \
     --dataset.single_task="Grab the black cube" \
-    --dataset.push_to_hub=true \     
+    --dataset.push_to_hub=true \  # You can choose false if you want to save the data locally
     --dataset.episode_time_s=30 \    
     --dataset.reset_time_s=30 
 ```
@@ -808,10 +808,9 @@ python -m lerobot.scripts.train \
   --job_name=act_so101_test \
   --policy.device=cuda \
   --wandb.enable=true \
-  --policy.repo_id=${HF_USER}/my_policy
 ```
 
-**If you want to train on a local dataset, make sure the `repo_id` matches the one used during data collection.**
+**If you want to train on a local dataset, make sure the `repo_id` matches the one used during data collection and add `--policy.push_to_hub=False`.**
 
 
 Let's explain it:
@@ -830,9 +829,8 @@ python -m lerobot.scripts.train \
   --resume=true
 ```
 
-If you do not want to push your model to the hub after training use `--policy.push_to_hub=false`.
-
 **Upload policy checkpoints**
+
 Once training is done, upload the latest checkpoint with:
 
 ```bash
@@ -840,6 +838,13 @@ huggingface-cli upload ${HF_USER}/act_so101_test \
   outputs/train/act_so101_test/checkpoints/last/pretrained_model
 ```
 
+You can also upload intermediate checkpoints with:
+
+```bash
+CKPT=010000
+huggingface-cli upload ${HF_USER}/act_so101_test${CKPT} \
+  outputs/train/act_so101_test/checkpoints/${CKPT}/pretrained_model
+```
 
 ## Evaluate your policy
 :::tip
@@ -857,10 +862,6 @@ python -m lerobot.record  \
   --display_data=false \
   --dataset.repo_id=${HF_USER}/eval_so100 \
   --dataset.single_task="Put lego brick into the transparent box" \
-  # <- Teleop optional if you want to teleoperate in between episodes \
-  # --teleop.type=so100_leader \
-  # --teleop.port=/dev/ttyACM0 \
-  # --teleop.id=my_awesome_leader_arm \
   --policy.path=${HF_USER}/my_policy
 ```
 
