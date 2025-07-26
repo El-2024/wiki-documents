@@ -704,7 +704,7 @@ python -m lerobot.record \
     --dataset.single_task="Grab the black cube" \
     --dataset.push_to_hub=true \     
     --dataset.episode_time_s=30 \    
-    --dataset.reset_time_s=30 \
+    --dataset.reset_time_s=30 
 ```
 
 You will see a lot of lines appearing like this one:
