@@ -1,6 +1,6 @@
 // 语言切换器 - 生产环境优化版本
-// 生成时间: 2025-07-07 11:32:58 (北京时间)
-// 多语言页面: 1823 个
+// 生成时间: 2025-07-28 14:21:52 (北京时间)
+// 多语言页面: 1821 个
 
 (function() {
   'use strict';
@@ -24,14 +24,6 @@
   // 内嵌的语言映射数据
   const languageMapping = {
   "/Cloud": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/HTTP_API/HTTP_API_Access_Guide": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/HTTP_API/Quick_Start": [
     "en",
     "ja"
   ],
@@ -2008,11 +2000,6 @@
     "es",
     "ja"
   ],
-  "/raspberry_pi_4g_lte_hat_mbim": [
-    "en",
-    "es",
-    "ja"
-  ],
   "/4g_lte_hat_and_raspberry_pi_router_with_openwrt": [
     "en",
     "es",
@@ -2610,6 +2597,10 @@
     "en",
     "es",
     "ja"
+  ],
+  "/lerobot_starai_arm": [
+    "cn",
+    "en"
   ],
   "/csi_camera_on_ros": [
     "cn",
@@ -6208,10 +6199,6 @@
     "en",
     "ja"
   ],
-  "/xiao_075inch_epaper_panel": [
-    "en",
-    "ja"
-  ],
   "/Driver_for_Seeeduino": [
     "en",
     "ja"
@@ -8579,6 +8566,10 @@
   ],
   "/connect_vision_ai_v2_to_ha": [
     "cn",
+    "ja"
+  ],
+  "/raspberry_pi_4g_lte_hat_mbim": [
+    "es",
     "ja"
   ]
 };

@@ -213,10 +213,6 @@ reCameraは、オープンソースで小型のAIカメラであり、プログ�
             </tbody>
         </table>
 
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
-（以下に翻訳を開始します）
-
 ## ハードウェア概要
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-12.png" /></div>
 

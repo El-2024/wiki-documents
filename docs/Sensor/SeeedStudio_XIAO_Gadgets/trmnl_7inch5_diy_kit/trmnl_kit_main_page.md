@@ -1,7 +1,7 @@
 ---
 description: 'This page is the navigation page for TRMNL 7inch5(OG) DIY Kit.'
 title: Getting Started with TRMNL 7.5inch(OG) DIY Kit
-image: https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/trmnl_head.webp
+image: https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/head.webp
 slug: /trmnl_7inch5_diy_kit_main_page
 sidebar_position: 1
 last_update:
@@ -83,14 +83,17 @@ Print open-source enclosure parts from [Printables](https://www.printables.com/)
 ## Wiki Center
 ### Explore Detailed Guides
 
-#### 1. [TRMNL BYOD Ecosystem Tutorial](https://wiki.seeedstudio.com/works_with_trmnl/)  
-Discover how to use the TRMNL BYOD platform with 375+ plugins, including no-code dashboard creation for your work and life.  
+#### 1. [TRMNL BYOD Ecosystem Tutorial](https://wiki.seeedstudio.com/ogdiy_kit_works_with_trmnl/)
 
-#### 2. [Works with Home Assistant](https://wiki.seeedstudio.com/works_with_esphome)  
-Learn how to set up your TRMNL kit with Home Assistant via ESPHome, including firmware upload and basic programming.  
+Discover how to use the TRMNL BYOD platform with 375+ plugins, including no-code dashboard creation for your work and life.
 
-#### 3. [Works with Arduino](https://wiki.seeedstudio.com/works_with_arduino/)  
-Master TRMNL kit control with Arduino, including refresh mechanisms, graphics rendering, and power management.  
+#### 2. [Works with Home Assistant](https://wiki.seeedstudio.com/ogdiy_kit_works_with_esphome)
+
+Learn how to set up your TRMNL kit with Home Assistant via ESPHome, including firmware upload and basic programming.
+
+#### 3. [Works with Arduino](https://wiki.seeedstudio.com/ogdiy_kit_works_with_arduino/)
+
+Master TRMNL kit control with Arduino, including refresh mechanisms, graphics rendering, and power management.
 
 ## Resources
 - **[Firmware]** [TRMNL ePaper Library (GitHub)](https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project)   
@@ -100,16 +103,16 @@ Master TRMNL kit control with Arduino, including refresh mechanisms, graphics re
 - **[Thingiverse]** [triangular base](https://www.thingiverse.com/thing:7091094)
 - **[Thingiverse]** [L-shaped base](https://www.thingiverse.com/thing:7091096)
 
-## Tech Support & Product Discussion -->
+## Tech Support & Product Discussion
 
 Thank you for choosing our products! We offer multiple support channels:
-<div class="table-center">
-  <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-  <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
-  </div>
-  <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-  <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
-  </div>
+
+<div class="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+</div>
+
+<div class="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

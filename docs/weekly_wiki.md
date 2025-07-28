@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 07/14/2025
+  date: 07/28/2025
   author: Frank
 ---
 
@@ -17,25 +17,55 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is July 14th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is July 28th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [YOLOv11 With Depth Camera on Jetson Orin For Distance Measurement](https://wiki.seeedstudio.com/yolov11_with_depth_camera/)
+### [Control PX4 with reComputer Jetson](https://wiki.seeedstudio.com/control_px4_with_recomputer_jetson/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Yolo11/connection.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg" alt="pir" width={800} height="auto" /></p>
 
-This wiki demonstrates how to use the Orbbec Gemini 2 depth camera with the reComputer J4012 (with NVIDIA® Jetson™ Orin™ NX 16GB Module), combining YOLOv11 object detection for visual target distance measurement.
+Pairing a high-performance companion computer like the reComputer Mini J3010 (Jetson Orin Nano 4G) with a PX4 flight controller creates the core architecture for a wide range of intelligent unmanned systems, including autonomous cars, boats, and drones. This powerful combination unlocks innovative applications in fields such as logistics, scientific research, search and rescue, and precision agriculture.
+
+### [How to use the SO-ARM100 and SO-ARM101 robotic arm in the latest version of Lerobot](https://wiki.seeedstudio.com/lerobot_so100m_new/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.png" alt="pir" width={800} height="auto" /></p>
+
+This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework.
+
+### [reTerminal E10xx Work with ESPHome for Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.jpg" alt="pir" width={800} height="auto" /></p>
+
+This wiki guides you in configuring Seeed’s ReTerminal E10xx device with ESPHome firmware. It walks through hardware setup, writing ESPHome YAML configurations, sensor and module integration, OTA flashing, Home Assistant integration, and automations—enabling seamless smart-home deployment with minimal code.
+
+### [Advanced ESPHome Usage of reTerminal E10xx in Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome_advanced/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.jpg" alt="pir" width={800} height="auto" /></p>
+
+This article explores advanced ESPHome configurations for your reTerminal E10xx device, building upon the foundational concepts covered in our [Basic ESPHome Usage guide](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome). If you're new to ESPHome or the reTerminal E10xx, we recommend starting with the basic guide before diving into these advanced applications.
+
+### [Install Pytorch for reComputer Jetson](https://wiki.seeedstudio.com/install_torch_on_recomputer/)
+
+This wiki demonstrates how to install NVIDIA-optimized PyTorch on your reComputer, matching your JetPack version. It also covers how to use virtual environments (conda) to manage multiple PyTorch versions for development and deployment.
+
+### [Make the C++ program auto-start on boot(reCamera Guide)](https://wiki.seeedstudio.com/make_the_cpp_program_auto_start_on_boot/)
+
+This guide explains how to configure reCamera so that your C++ program automatically starts running after the device reboots.
+
+### [How to use the LeRobot-starai robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_starai_arm/)
+
+This wiki provides a step-by-step guide to setting up, controlling, and training the StarAI robotic arm with the LeRobot framework. It covers environment setup, hardware connection, data collection, and model deployment, enabling you to integrate AI-powered control and automation seamlessly.
 
 ## Existing Wiki Updated
 
-<!-- ### [Get Started with SenseCAP Solar Node](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/)
+### [reComputer Jetson Robotics J401 Hardware and Getting Started](https://wiki.seeedstudio.com/recomputer_jetson_robotics_j401_getting_started/)
 
-We added an example of the [Flash Firmware](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/#flash-firmware) operation.
+We added [documentation](https://wiki.seeedstudio.com/recomputer_jetson_robotics_j401_getting_started/#can) related to CAN.
 
-### [Getting Started with reComputer Super](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/)
+### [NVIDIA® Jetson AGX Orin 32GB H01 Kit](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/)
 
-We added an example of the [Flash JetPack OS](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/#flash-jetpack-os) operation. -->
+We added [operational example](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/#flash-to-jetson) for flashing JetPack 6.2.
 
 ## The Efforts of Contributor
 
@@ -100,7 +130,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.3.04th](/Seeed_Elderly/weekly_wiki/wiki240304)
 - [weekly wiki on 2024.3.11th](/Seeed_Elderly/weekly_wiki/wiki240311)
 - [weekly wiki on 2024.3.18th](/Seeed_Elderly/weekly_wiki/wiki240318)
-- [weekly wiki on 2024.3.25th](/Seeed_Elderly/weekly_wiki/wiki240325) -->
+- [weekly wiki on 2024.3.25th](/Seeed_Elderly/weekly_wiki/wiki240325)
 - [weekly wiki on 2024.4.01st](/Seeed_Elderly/weekly_wiki/wiki240401)
 - [weekly wiki on 2024.4.08th](/Seeed_Elderly/weekly_wiki/wiki240408)
 - [weekly wiki on 2024.4.15th](/Seeed_Elderly/weekly_wiki/wiki240415)
@@ -113,7 +143,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.6.03rd](/Seeed_Elderly/weekly_wiki/wiki240603)
 - [weekly wiki on 2024.6.10th](/Seeed_Elderly/weekly_wiki/wiki240610)
 - [weekly wiki on 2024.6.17th](/Seeed_Elderly/weekly_wiki/wiki240617)
-- [weekly wiki on 2024.6.24th](/Seeed_Elderly/weekly_wiki/wiki240624)
+- [weekly wiki on 2024.6.24th](/Seeed_Elderly/weekly_wiki/wiki240624) -->
 - [weekly wiki on 2024.7.01st](/Seeed_Elderly/weekly_wiki/wiki240701)
 - [weekly wiki on 2024.7.08th](/Seeed_Elderly/weekly_wiki/wiki240708)
 - [weekly wiki on 2024.7.16th](/Seeed_Elderly/weekly_wiki/wiki240716)
@@ -167,5 +197,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.6.23rd](/Seeed_Elderly/weekly_wiki/wiki250623)
 - [weekly wiki on 2025.6.30th](/Seeed_Elderly/weekly_wiki/wiki250630)
 - [weekly wiki on 2025.7.07th](/Seeed_Elderly/weekly_wiki/wiki250707)
+- [weekly wiki on 2025.7.14th](/Seeed_Elderly/weekly_wiki/wiki250714)
+- [weekly wiki on 2025.7.21st](/Seeed_Elderly/weekly_wiki/wiki250721)
 
 </details>

@@ -22,10 +22,10 @@ import TabItem from '@theme/TabItem';
 
 <!-- 产品描述 -->
 
-<div style={{ textAlign: 'center' }}>
+<div style={{textAlign: 'center'}}>
   <img 
     src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/2-102010551-Seeed-Studio-XIAO-RA4M1-45font.jpg" 
-    style={{ width: 480, height: 'auto', "border-radius": '12.8px' }} 
+    style={{width: 480, height: 'auto', borderRadius: '12.8px'}} 
   />
 </div>
 
@@ -130,17 +130,17 @@ XIAO RA4M1 将 Renesas 的 RA4M1 芯片（32 位 ARM® Cortex®-M4 MCU，最高 
 	    <th>XIAO RA4M1 正面指示图</th>
 	</tr>
     <tr>
-        <br />
-        <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/XIAO-RA4M1-components.png" style={{width:380, height:'auto'}}/></div>
-        <br />        
+        <td>
+            <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/XIAO-RA4M1-components.png" style={{width:380, height:'auto'}}/></div>
+        </td>       
     </tr>
     <tr>
         <th>XIAO RA4M1 引脚列表</th>
     </tr>
     <tr>
-        <br />
-        <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/XIAO-RA4M1-pinout.png" style={{width:880, height:'auto'}}/></div>
-        <br />
+        <td>
+            <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/XIAO-RA4M1-pinout.png" style={{width:880, height:'auto'}}/></div>
+        </td>
     </tr>
 </table>
 
@@ -183,7 +183,7 @@ XIAO RA4M1 推荐的编程工具是 Arduino IDE，因此作为软件准备的一
     
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/arduino_preference.png" style={{width:800, height:'auto'}}/></div>
 
-    进入 **工具 > 开发板 > 开发板管理器...**，在搜索框中输入关键字 **RA4M1**，选择最新版本的 **Seeed Renesas Board**，并安装。
+    进入 **工具 > 开发板 > 开发板管理器...**，在搜索框中输入关键词 **RA4M1**，选择最新版本的 **Seeed Renesas Board**，并安装。
 
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/board_manager.png" style={{width:600, height:'auto'}}/></div>
 - **步骤 4.** 选择您的开发板和端口。

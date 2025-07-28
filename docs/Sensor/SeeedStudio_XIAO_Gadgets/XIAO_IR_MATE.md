@@ -2,7 +2,7 @@
 title: Getting Started with XIAO IR Mate Smart IR Remote
 description: |
   A smart IR remote  from Seeed Studio, designed to integrate traditional appliances like TVs and air conditioners into your Home Assistant smart home ecosystem.
-image: https://files.seeedstudio.com/wiki/XIAO_IR_MATE/1-109990586-XIAO-Smart-IR-Mate.jpg
+image: https://files.seeedstudio.com/wiki/XIAO_IR_MATE/XIAO-Smart-IR-Mate.webp
 slug: /XIAO_IR_Mate_Smart_IR_Remote
 keywords:
   - XIAO
@@ -105,6 +105,11 @@ When the network is not configured, the device will automatically create a Wi-Fi
 ### Step 3: Connect to the Hotspot and Configure Network
 
 1.  Open the Wi-Fi settings on your phone or computer, search for and connect to the network named **XIAO IR Mate**.
+
+:::note
+The hotspot has a default network password of ‘12345678’.
+:::
+
 2.  After a successful connection, your device will usually automatically open a configuration page. If it doesn't, please manually open a browser and visit **[http://192.168.4.1](http://192.168.4.1)**.
 3.  On this page, you will see a list of Wi-Fi networks. Please select your home's **2.4GHz Wi-Fi network (SSID)** and enter the correct password.
 4.  Click "Connect" or "Save". The device will attempt to connect to the Wi-Fi network you provided.
@@ -653,16 +658,12 @@ In short, don't just see the XIAO IR Mate as an IR tool. Think of it as a mini-r
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
-<div class="table-center">
-  <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-  <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
-  </div>
-
-  <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-  <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
-  </div>
+<div class="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
-
+<div class="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+</div>

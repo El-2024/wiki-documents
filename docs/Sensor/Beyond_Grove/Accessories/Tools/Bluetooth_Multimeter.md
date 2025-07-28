@@ -155,7 +155,7 @@ We have three Android App UI for Bluetooth Multimeter.
 
 |UI 1.jpg|UI 2.jpg|UI 3.jpg|
 |---|---|---|
-|![](https://files.seeedstudio.com/wiki/Bluetooth_Multimeter/img/UI_1.jpg)|![](https://files.seeedstudio.com/wiki/Bluetooth_Multimeter/img/UI_2.jpg)|![](https://files.seeedstudio.com/wiki/Bluetooth_Multimeter/img/UI_3.jpg)
+|![](https://files.seeedstudio.com/wiki/Bluetooth_Multimeter/img/UI_1.jpg)|![](https://files.seeedstudio.com/wiki/Bluetooth_Multimeter/img/UI_2.jpg)|![](https://files.seeedstudio.com/wiki/Bluetooth_Multimeter/img/UI_3.jpg)|
 
 We consistency agreed that the color of the previous two versions are not bright, it should use the orange and black or red and black two multimeter universal tone; At the same time, We increase Hold button, Range button, dial (mA, A, Ω, V, OFF (optional) five stalls)in the yellow version. And We post about which version do you like. Below is the feedback information:
 

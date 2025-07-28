@@ -77,7 +77,7 @@ int main()
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-If you are get a compiling error that 'device.h' is not found, try to update the mbed library to the latest revision in your program.
+<p>If you are get a compiling error that 'device.h' is not found, try to update the mbed library to the latest revision in your program.</p>
 </div>
 
 Applications

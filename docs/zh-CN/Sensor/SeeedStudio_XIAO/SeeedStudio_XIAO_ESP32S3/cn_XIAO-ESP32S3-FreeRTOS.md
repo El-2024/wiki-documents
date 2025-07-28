@@ -996,42 +996,230 @@ FreeRtos 可以用于基于 Arduino-IDE 的 XIAO-S3 构建。它类似于 ESP-ID
 #include "seeed_bme680.h"
 
 #define IIC_ADDR uint8_t(0x76)
-Seeed_BME680 bme680(IIC_ADDR); /* IIC 协议 */
+Seeed_BME680 bme680(IIC_ADDR); /* IIC PROTOCOL */
 
-// 用于 PCF8563 实时时钟的 I2C 通信库
+// I2C communication library for the PCF8563 real-time clock
 PCF8563 pcf;
 
-// OLED 显示屏库
-U8X8_SSD1306_128X64_NONAME_HW_I2C u8x8(/* clock=*/D4, /* data=*/D5, /* reset=*/U8X8_PIN_NONE);  // 无复位引脚的 OLED 显示屏
+// OLED display library
+U8X8_SSD1306_128X64_NONAME_HW_I2C u8x8(/* clock=*/D4, /* data=*/D5, /* reset=*/U8X8_PIN_NONE);  // OLEDs without Reset of the Display
 
-// WiFi 网络凭据
+// WiFi network credentials
 const char* ssid = "REPLACE_WITH_YOUR_SSID";
 const char* password = "REPLACE_WITH_YOUR_PASSWORD";
 
-// 用于时间同步的 NTP 服务器
+// NTP server for time synchronization
 const char* ntpServer = "pool.ntp.org";
 
-// 时区偏移（根据您的位置调整）
-const long gmtOffset_sec = 5.5 * 60 * 60;  // 小时 * 分钟 * 秒（此处为 GMT+5:30）
-const int daylightOffset_sec = 0;          // 假设没有夏令时
+// Timezone offset (adjust based on your location)
+const long gmtOffset_sec = 5.5 * 60 * 60;  // Hours * Minutes * Seconds (here, GMT+5:30)
+const int daylightOffset_sec = 0;          // No daylight saving time assumed
 
-// 用于存储当前时间信息的全局变量
+// Global variable to store current time information
 static Time nowTime;
 
-// 任务函数的原型
+// Function prototypes for tasks
 void printDateAndTime(void* pvParameters);
 void updateTime(void* pvParameters);
 void ledBlink2Hz(void* pvParameters);
 void oledDisplayUpdate(void* pvParameters);
 void taskBME680(void* pvParameters);
 
-// Setup 函数（启动时运行一次）
+// Setup function (runs once at startup)
 void setup() {
-  ...
-}
-``` 
 
-（代码过长，已省略部分内容，请参考原文继续翻译。）
+  Serial.begin(115200);  // Initialize serial communication for debugging
+
+  // Set built-in LED pin as output for blinking
+  pinMode(LED_BUILTIN, OUTPUT);
+
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+  WiFi.begin(ssid, password);  // Connect to WiFi network
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  while (!bme680.init()) {
+    Serial.println("bme680 init failed ! can't find device!");
+    delay(10000);
+  }
+
+  pcf.init();  // Initialize the PCF8563 real-time clock
+
+  // Stop the clock before setting the time
+  pcf.stopClock();
+
+  // Configure time synchronization using NTP server
+  configTime(gmtOffset_sec, daylightOffset_sec, ntpServer);
+  static struct tm timeinfo;
+  while (!getLocalTime(&timeinfo)) {
+    Serial.println("no received time info ... Waiting ...");
+  }
+
+  // Set the time on the PCF8563 clock based on retrieved time
+  pcf.setYear(timeinfo.tm_year);
+  pcf.setMonth(timeinfo.tm_mon);
+  pcf.setDay(timeinfo.tm_mday);
+  pcf.setHour(timeinfo.tm_hour);
+  pcf.setMinut(timeinfo.tm_min);
+  pcf.setSecond(timeinfo.tm_sec);
+
+  pcf.startClock();  // Start the clock after setting the time
+
+  Serial.println("WiFi connected at " + WiFi.localIP());
+
+  u8x8.begin();         // Initialize the OLED display
+  u8x8.setFlipMode(1);  // Optionally rotate OLED display content
+
+  // Create tasks for different functionalities
+  xTaskCreate(
+    updateTime,
+    "Get LocalTime",
+    configMINIMAL_STACK_SIZE * 2,
+    (void*)1,
+    tskIDLE_PRIORITY + 1,
+    NULL);
+
+  xTaskCreate(
+    ledBlink2Hz,
+    "Task 2",
+    configMINIMAL_STACK_SIZE,
+    (void*)1,
+    tskIDLE_PRIORITY + 1,
+    NULL);
+
+  xTaskCreate(
+    oledDisplayUpdate,
+    "OLED Display Task",
+    configMINIMAL_STACK_SIZE * 2,
+    (void*)1,
+    tskIDLE_PRIORITY,
+    NULL);
+
+  xTaskCreate(
+    printDateAndTime,
+    "Print Uart",
+    configMINIMAL_STACK_SIZE * 2,
+    (void*)1,
+    tskIDLE_PRIORITY,
+    NULL);
+
+  xTaskCreate(
+    taskBME680,
+    "BME680 Sensor Poll",
+    configMINIMAL_STACK_SIZE * 2,
+    (void*)1,
+    tskIDLE_PRIORITY + 1,
+    NULL);
+}
+
+// Loop function (doesn't do anything in this case, tasks handle everything)
+void loop() {
+  // Nothing to do here, all work is done in the tasks
+}
+
+// Function that will run as a task: Prints current date and time to serial port
+void printDateAndTime(void* pvParameters) {
+  for (;;) {
+    // Print current time in formatted string (DD/MM/YY\tHH:MM:SS) to serial port
+    Serial.printf("%02d/%02d/%02d\t%02d:%02d:%02d\n",
+                  nowTime.day, nowTime.month + 1, nowTime.year % 100,
+                  nowTime.hour, nowTime.minute, nowTime.second);
+    // Delay for 1 second before reading time again
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+  }
+}
+
+// Function that will run as a task: Reads current time from PCF8563 clock
+void updateTime(void* pvParameters) {
+  for (;;) {
+    // Update the global `nowTime` variable with the current time from the PCF8563 clock
+    nowTime = pcf.getTime();
+    // Delay for 0.5 second before reading time again (can be adjusted for desired update frequency)
+    vTaskDelay(500 / portTICK_PERIOD_MS);
+  }
+}
+
+// Function that will run as a task: Blinks the built-in LED at 2Hz
+void ledBlink2Hz(void* pvParameters) {
+  bool state = true;  // Initial state for LED (on or off)
+  for (;;) {
+    // Set LED state (HIGH for on, LOW for off)
+    digitalWrite(LED_BUILTIN, (state ? HIGH : LOW));
+    // Delay for 0.5 second to create a 2Hz blinking frequency (one cycle on/off)
+    vTaskDelay(500 / portTICK_PERIOD_MS);
+    // Toggle LED state for the next cycle
+    state = !state;
+  }
+}
+
+// Function that will run as a task: Updates OLED display with date and time
+void oledDisplayUpdate(void* pvParameters) {
+  for (;;) {
+
+    // Set font for the first line (date)
+    u8x8.setFont(u8x8_font_chroma48medium8_r);
+
+    // Set cursor position for the first line (centered)
+    u8x8.setCursor(0, 0);
+
+    char buffer1[12];  // Buffer to hold formatted date string
+    std::snprintf(buffer1, sizeof(buffer1), "%02d/%02d/%02d",
+                  nowTime.day, nowTime.month + 1, nowTime.year % 100);
+    u8x8.print(buffer1);
+
+    // Format time string (HH:MM:SS) into buffer2 using std::snprintf
+    std::snprintf(buffer1, sizeof(buffer1), "%02d:%02d:%02d",
+                  nowTime.hour, nowTime.minute, nowTime.second);
+    // Print formatted time string to OLED display
+    u8x8.print(buffer1);
+
+    // Adjust cursor position for the second line (below the first line)
+    u8x8.setCursor(0, 10);
+
+    char buffer2[20];  // Buffer to hold formatted sensor data
+
+    std::snprintf(buffer2, sizeof(buffer2), "T: %.1f°C", bme680.sensor_result_value.temperature);
+    u8x8.print(buffer2);
+    u8x8.setCursor(0, 20);
+
+    std::snprintf(buffer2, sizeof(buffer2), "P: %.1fkPa", bme680.sensor_result_value.pressure / 1000.0);
+    u8x8.print(buffer2);
+
+    u8x8.setCursor(0, 30);
+
+    std::snprintf(buffer2, sizeof(buffer2), "H: %.1f%%", bme680.sensor_result_value.humidity);
+    u8x8.print(buffer2);
+
+    // std::snprintf(buffer2, sizeof(buffer2), "G: %.1f Kohms", bme680.sensor_result_value.gas / 1000.0);
+    // u8x8.print(buffer2);
+
+    vTaskDelay(100 / portTICK_PERIOD_MS);  // Update every 0.1 seconds (adjust as needed)
+  }
+}
+
+void taskBME680(void* pvParameters) {
+  for (;;) {
+    if (bme680.read_sensor_data()) {
+      Serial.println("Failed to perform reading :(");
+    } else {
+      Serial.print("T: ");
+      Serial.print(bme680.sensor_result_value.temperature, 2);
+      Serial.print(" C  P: ");
+      Serial.print(bme680.sensor_result_value.pressure / 1000.0, 2);
+      Serial.print(" KPa  H: ");
+      Serial.print(bme680.sensor_result_value.humidity, 2);
+      Serial.print(" %  G: ");
+      Serial.print(bme680.sensor_result_value.gas / 1000.0, 2);
+      Serial.println(" Kohms");
+    }
+
+    vTaskDelay(1000 / portTICK_PERIOD_MS);
+  }
+}
+```
 
 ### 输出
 

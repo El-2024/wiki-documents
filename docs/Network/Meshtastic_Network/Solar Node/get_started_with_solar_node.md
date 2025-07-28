@@ -41,6 +41,10 @@ Drag the UF2 file to the DFU drive. Firmware should be flashed after the file is
 
 ### Install Battery and GPS Module(Optional)
 
+:::tip
+Recommended Battery: 18650 Lithium-ion Battery 3.6V (Button Top).
+:::
+
 P1-Pro version has built-in battery and GPS module, for P1 version, user needs to install the battery and GPS module manually if needed.
 
 * Step 1: Remove all the screws and the cover.
