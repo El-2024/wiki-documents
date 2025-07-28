@@ -1,13 +1,15 @@
 ---
+description: 本维基提供 Starai robotic arm 的调试教程，并在 Lerobot 框架内实现数据收集和训练。
 title: 如何在Lerobot中使用 Starai robotic arm 
 keywords:
 - Lerobot
 - Huggingface
 - Arm
 - Robotics 
-slug: /cn/Lerobot_Starai_Arm
+image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.png
+slug: /cn/lerobot_starai_arm
 last_update:
-  date: 7/25/2025
+  date: 7/28/2025
   author: LiShanghang
 ---
 
