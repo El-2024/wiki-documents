@@ -5,9 +5,9 @@ keywords:
 - Huggingface
 - Arm
 - Robotics 
-slug: /starai
+slug: /Lerobot_Starai_Arm
 last_update:
-  date: 7/18/2025
+  date: 7/26/2025
   author: LiShanghang
 ---
 
@@ -32,7 +32,7 @@ last_update:
     Deployment is supported via the reComputer Mini J4012 Orin NX 16GB platform.
 
 <div class="video-container">
-<iframe width="900" height="600" src="//player.bilibili.com/player.html?isOutside=true&aid=114901968297597&bvid=BV1gu8FzGECg&cid=31229740120&p=1" title="bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/ojMJa3C8-eA?si=V573ps_CFLC1QUqV" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Key Features
@@ -387,7 +387,7 @@ Then you are ready to teleoperate your robot! Run this simple script (it won't c
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \
+  --robot.type=starai \
   --robot.cameras='{}' \
   --control.type=teleoperate
 ```
@@ -398,7 +398,7 @@ After the program starts, the Hold button remains functional.
 ## Add cameras
 
 <div class="video-container">
-<iframe width="900" height="600" src="//player.bilibili.com/player.html?isOutside=true&aid=114908293234892&bvid=BV1hjbCzaEyu&cid=31254447600&p=1" title="bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/-p8K_-XxW8U?si=UmYWvEyKNPpTRxDC" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 After inserting your two USB cameras, run the following script to check the port numbers of the cameras. It is important to remember that the camera must not be connected to a USB Hub; instead, it should be plugged directly into the device. The slower speed of a USB Hub may result in the inability to read image data.
@@ -564,7 +564,7 @@ Here, `starai` is the custom `repo_id` name defined when collecting data.
 
 Now try to replay the first episode on your robot:
 
-```
+```bash
 python lerobot/scripts/control_robot.py \
   --robot.type=starai \
   --control.type=replay \
@@ -597,7 +597,7 @@ Let's explain it:
 1. We use our local dataset as argument `--dataset.repo_id=starai/starai`.
 2. We provide the policy using `policy.type=act`, which will load the configuration from [`lerobot/lerobot/common/policies/act/configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/common/policies/act/configuration_act.py). Currently, ACT has been tested, but you can also try other policies such as diffusion, pi0, pi0fast, tdmpc, and vqbet.
 3. We provided policy.device=cuda since we are training on a Nvidia GPU, but you could use policy.device=mps to train on Apple silicon.
-5. We provided `wandb.enable=true` to use [Weights and Biases](https://docs.wandb.ai/quickstart) for visualizing training plots. This is optional but if you use it, make sure you are logged in by running `wandb login`.
+4. We provided `wandb.enable=true` to use [Weights and Biases](https://docs.wandb.ai/quickstart) for visualizing training plots. This is optional but if you use it, make sure you are logged in by running `wandb login`.
 
 If you want to train on a local dataset, make sure the `repo_id` matches the one used during data collection. Training should take several hours. You will find checkpoints in`outputs/train/act_starai_test/checkpoints` .
 
