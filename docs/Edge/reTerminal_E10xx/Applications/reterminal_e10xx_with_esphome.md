@@ -1,7 +1,7 @@
 ---
 description: This article describes how to get the reTerminal E10xx series to work with Home Assistant and ESPHome.
 title: reTerminal E10xx Work with ESPHome for Home Assistant
-image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
+image: https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.webp
 slug: /reterminal_e10xx_with_esphome
 sidebar_position: 2
 last_update:

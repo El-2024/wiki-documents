@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 07/21/2025
+  date: 07/28/2025
   author: Frank
 ---
 
@@ -17,49 +17,55 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is July 21st, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is July 28th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [reSpeaker XVF3800 USB 4 Microphone Array with XIAO ESP32S3](http://localhost:3000/respeaker_xvf3800_xiao_getting_started/)
+### [Control PX4 with reComputer Jetson](https://wiki.seeedstudio.com/control_px4_with_recomputer_jetson/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/mute.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg" alt="pir" width={800} height="auto" /></p>
 
-The ReSpeaker XVF3800 USB 4-Mic Array is a professional circular 4-microphone array based on the XMOS XVF3800. It features AEC, AGC, DoA, beamforming, VAD, noise suppression, de-reverberation, and 360° voice capture (up to 5 meters). It also supports dual operation modes, making it ideal for advanced voice applications. When combined with the Xiao ESP32S3, controlling the ReSpeaker XVF3800 USB becomes even more powerful, unlocking endless possibilities.
+Pairing a high-performance companion computer like the reComputer Mini J3010 (Jetson Orin Nano 4G) with a PX4 flight controller creates the core architecture for a wide range of intelligent unmanned systems, including autonomous cars, boats, and drones. This powerful combination unlocks innovative applications in fields such as logistics, scientific research, search and rescue, and precision agriculture.
 
-We also provide several practical guides to help you explore the capabilities of the reSpeaker XVF3800 USB 4 Microphone Array with XIAO ESP32S3:
+### [How to use the SO-ARM100 and SO-ARM101 robotic arm in the latest version of Lerobot](https://wiki.seeedstudio.com/lerobot_so100m_new/)
 
-* [I2S Test with XIAO ESP32S3](https://wiki.seeedstudio.com/respeaker_xvf3800_xiao_i2s/)
-* [RGB Control with XIAO ESP32S3](https://wiki.seeedstudio.com/respeaker_xvf3800_xiao_rgb/)
-* [Audio Playback and Volume Control via I2C](https://wiki.seeedstudio.com/respeaker_xvf3800_i2c_audio_playback/)
-* [Record and Playback Audio Using I2S](https://wiki.seeedstudio.com/respeaker_xvf3800_i2s_record_playback/)
-* [Control GPIO via XIAO ESP32S3](https://wiki.seeedstudio.com/respeaker_xvf3800_gpio_control/)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.png" alt="pir" width={800} height="auto" /></p>
 
-These tutorials cover various features including I2S audio input/output, I2C control, RGB lighting, and GPIO handling, providing a complete understanding of the XVF3800's functionality in real-world scenarios.
+This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework.
 
-### [reCamera connects to XIAO via HTTP](https://wiki.seeedstudio.com/recamera_connects_to_xiao_via_http/)
+### [reTerminal E10xx Work with ESPHome for Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.jpg" alt="pir" width={800} height="auto" /></p>
 
-This document demonstrates how to enable communication between the reCamera and XIAO via HTTP, transmitting data to XIAO so that you can integrate the reCamera into your own projects.
+This wiki guides you in configuring Seeed’s ReTerminal E10xx device with ESPHome firmware. It walks through hardware setup, writing ESPHome YAML configurations, sensor and module integration, OTA flashing, Home Assistant integration, and automations—enabling seamless smart-home deployment with minimal code.
 
-### [TRMNL 7.5" (OG) DIY Kit](https://wiki.seeedstudio.com/trmnl_7inch5_diy_kit_main_page/)
+### [Advanced ESPHome Usage of reTerminal E10xx in Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome_advanced/)
 
-<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/x/1x1a0521.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.jpg" alt="pir" width={800} height="auto" /></p>
 
-The TRMNL 7.5" (OG) DIY Kit, co-developed by Seeed Studio and TRMNL, is a versatile e-ink development solution. It combines a 7.5-inch 800×480 monochrome e-ink display, XIAO ESP32-S3 PLUS driver board, 2000 mAh rechargeable battery, and 10cm FPC extension cable. Fully compatible with the TRMNL BYOD ecosystem, this kit enables no-code dashboard building with over 375 plugins and 8 layouts, ideal for DIY enthusiasts, smart home interfaces, and creative digital signage.
+This article explores advanced ESPHome configurations for your reTerminal E10xx device, building upon the foundational concepts covered in our [Basic ESPHome Usage guide](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome). If you're new to ESPHome or the reTerminal E10xx, we recommend starting with the basic guide before diving into these advanced applications.
 
-### [Getting Started with XIAO IR Mate Smart IR Remote (For Home Assistant)](https://wiki.seeedstudio.com/XIAO_IR_Mate_Smart_IR_Remote/)
+### [Install Pytorch for reComputer Jetson](https://wiki.seeedstudio.com/install_torch_on_recomputer/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_IR_MATE/6-109990586-XIAO-Smart-IR-Mate.jpg" alt="pir" width={800} height="auto" /></p>
+This wiki demonstrates how to install NVIDIA-optimized PyTorch on your reComputer, matching your JetPack version. It also covers how to use virtual environments (conda) to manage multiple PyTorch versions for development and deployment.
 
-This device is specially designed for Home Assistant users, aiming to provide a seamless, efficient, and integrated smart infrared remote control solution. Through this guide, you will learn how to set up the device, connect it to your home network, integrate it into Home Assistant, and unlock its full potential, from basic signal learning to advanced smart air conditioner control.
+### [Make the C++ program auto-start on boot(reCamera Guide)](https://wiki.seeedstudio.com/make_the_cpp_program_auto_start_on_boot/)
+
+This guide explains how to configure reCamera so that your C++ program automatically starts running after the device reboots.
+
+### [How to use the LeRobot-starai robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_starai_arm/)
+
+This wiki provides a step-by-step guide to setting up, controlling, and training the StarAI robotic arm with the LeRobot framework. It covers environment setup, hardware connection, data collection, and model deployment, enabling you to integrate AI-powered control and automation seamlessly.
 
 ## Existing Wiki Updated
 
-### [Get Started with Indicator for Meshtastic](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/)
+### [reComputer Jetson Robotics J401 Hardware and Getting Started](https://wiki.seeedstudio.com/recomputer_jetson_robotics_j401_getting_started/)
 
-We have added instructions on how to use the [Keyboard](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/#keyboard).
+We added [documentation](https://wiki.seeedstudio.com/recomputer_jetson_robotics_j401_getting_started/#can) related to CAN.
+
+### [NVIDIA® Jetson AGX Orin 32GB H01 Kit](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/)
+
+We added [operational example](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/#flash-to-jetson) for flashing JetPack 6.2.
 
 ## The Efforts of Contributor
 
@@ -192,5 +198,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.6.30th](/Seeed_Elderly/weekly_wiki/wiki250630)
 - [weekly wiki on 2025.7.07th](/Seeed_Elderly/weekly_wiki/wiki250707)
 - [weekly wiki on 2025.7.14th](/Seeed_Elderly/weekly_wiki/wiki250714)
+- [weekly wiki on 2025.7.21st](/Seeed_Elderly/weekly_wiki/wiki250721)
 
 </details>
