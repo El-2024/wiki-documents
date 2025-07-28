@@ -92,7 +92,7 @@ Replace the content of your src/main.cpp (or src/main.c) file with the following
         className="download_platformio_item"
         href="https://github.com/Seeed-Studio/platform-seeedboards/tree/main/examples/zephyr-blink"
         style={{
-            backgroundColor: '#FFA500', // 橘色
+            backgroundColor: '#FFA500', 
             color: '#FFFFFF',
             padding: '10px 20px',
             textDecoration: 'none',
@@ -110,7 +110,7 @@ Replace the content of your src/main.cpp (or src/main.c) file with the following
             width="20"
             height="20"
             fill="currentColor"
-            style={{ verticalAlign: 'middle', marginRight: '8px' }} // 注意这里也是JS对象
+            style={{ verticalAlign: 'middle', marginRight: '8px' }}
         >
             <path d="M0 0h24v24H0z" fill="none"/>
             <path d="M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414L12 15z"/>
