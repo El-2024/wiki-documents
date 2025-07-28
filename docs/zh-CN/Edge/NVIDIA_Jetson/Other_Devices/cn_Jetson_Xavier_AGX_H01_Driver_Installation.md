@@ -31,8 +31,7 @@ tags:
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/first_1.png" /></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Jetson-Xavier-AGX-H01-Kit-p-5283.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Jetson-Xavier-AGX-H01-Kit-p-5283.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong></a>
 </div>
 
 本 Wiki 将向您展示如何为 Jetson Xavier AGX H01 套件安装驱动程序。有多种方法可以实现这一点。
@@ -120,13 +119,13 @@ tags:
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver4.png" /></div>
 
-- **步骤 2**. 在主机 PC 上 [下载](https://files.seeedstudio.com/wiki/H01Driver/H01_Driver.zip) 额外所需的安装文件 <H01_Drivers>。
+- **步骤 2**. 在主机 PC 上 [下载](https://files.seeedstudio.com/wiki/H01Driver/H01_Driver.zip) 额外所需的安装文件 H01_Drivers。
 
-将 **步骤 1** 中下载的文件移动到与 <H01_Drivers> 相同的文件夹中。现在您将在同一文件夹中看到三个解压后的文件。
+将 **步骤 1** 中下载的文件移动到与 H01_Drivers 相同的文件夹中。现在您将在同一文件夹中看到三个解压后的文件。
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01drivera.png" /></div>
 
-- **步骤 3**. 解压文件 <AGX_H01_Drivers.zip>。
+- **步骤 3**. 解压文件 AGX_H01_Drivers.zip。
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver1b.png" /></div>
 
@@ -149,7 +148,7 @@ $ sudo  ./apply_binaries.sh
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/agx0.png" /></div>
 
-- **步骤 5**. 返回并将从下载的 <H01_Driver> 文件中复制的文件粘贴到解压后的 <Jetson_Linux_R32.6.1_aarch64.tbz2> 文件中。
+- **步骤 5**. 返回并将从下载的 H01_Driver 文件中复制的文件粘贴到解压后的 Jetson_Linux_R32.6.1_aarch64.tbz2 文件中。
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver6.png" /></div>
 

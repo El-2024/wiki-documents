@@ -82,7 +82,7 @@ Grove - Thumb Joystickはアナログデバイスで、0から1023までの範�
 |![画像説明を入力してください](https://files.seeedstudio.com/wiki/Grove_Light_Sensor/images/gs_1.jpg)|![画像説明を入力してください](https://files.seeedstudio.com/wiki/Grove_Light_Sensor/images/gs_4.jpg)|![画像説明を入力してください](https://files.seeedstudio.com/wiki/Grove-Thumb_Joystick/img/Bgjoy1_small.jpg)|
 |[今すぐ購入](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[今すぐ購入](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Thumb-Joystick-p-935.html)|
 
-- **ステップ 2.** Grove - Base Shieldの**A0/A1**ポートに4ピンのGroveケーブルを使用してモジュールを接続します。
+- **ステップ 2.** Grove - Base Shieldの**`A0`/`A1`**ポートに4ピンのGroveケーブルを使用してモジュールを接続します。
 - **ステップ 3.** Grove - Base ShieldをSeeeduinoに差し込みます。
 - **ステップ 4.** USBケーブルを使用してSeeeduinoをPCに接続します。
 
@@ -96,8 +96,8 @@ Grove Base Shieldがない場合は、以下のようにGrove-Thumb JoystickをS
 |-----------------|-------------------------|
 | 5V              | 赤                     |
 | GND             | 黒                     |
-| A1              | 白                     |
-| A0              | 黄                     |
+| `A1`            | 白                     |
+| `A0`            | 黄                     |
 
 #### ソフトウェア
 
@@ -134,13 +134,13 @@ void loop()
 ![](https://files.seeedstudio.com/wiki/Grove-Thumb_Joystick/img/Grove-Thumd_Joystick_Result.jpg)
 
 Arduinoのアナログポートからの出力値は、以下の式を使用して対応する抵抗値に変換できます：  
-R=(float)(1023-sensorValue)\*10/sensorValue
+R=(float)(1023-sensorValue)*10/sensorValue
 
 ### Codecraftで遊ぶ
 
 #### ハードウェア
 
-**ステップ 1.** Grove - Thumb JoystickをBase ShieldのポートA0に接続します。
+**ステップ 1.** Grove - Thumb Joystickを Base Shield のポート `A0` に接続します。
 
 **ステップ 2.** Base ShieldをSeeeduino/Arduinoに差し込みます。
 
@@ -160,7 +160,7 @@ Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用する
 
 プログラムをArduino/Seeeduinoにアップロードします。
 
-:::tipsuccess
+:::tip
 コードのアップロードが完了すると、シリアルモニターにXとYの座標が表示されます。
 :::
 
@@ -176,7 +176,7 @@ Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用する
 |[今すぐ購入](https://www.seeedstudio.com/Raspberry-Pi-3-Model-B-p-2625.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi-p-3186.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Thumb-Joystick-p-935.html)|
 
 - **ステップ 2.** Grove Base HatをRaspberry Piに差し込みます。
-- **ステップ 3.** Thumb JoystickをBase HatのポートA0に接続します。
+- **ステップ 3.** Thumb Joystickを Base Hat のポート `A0` に接続します。
 - **ステップ 4.** USBケーブルを使用してRaspberry PiをPCに接続します。
 
 ![](https://files.seeedstudio.com/wiki/Grove-Thumb_Joystick/img/Thumb_Hat.jpg)
@@ -207,7 +207,7 @@ python3 grove_thumb_joystick.py 0
 ```
 
 :::note
-プログラムを++python grove_thumb_joystick.py pin++で実行できます。pinはADCグループ内の{0, 2, 4, 6}のいずれかで、デバイスを対応するスロット{A0, A2, A4, A6}に接続します。
+プログラムを `python grove_thumb_joystick.py pin` で実行できます。pinはADCグループ内の{0, 2, 4, 6}のいずれかで、デバイスを対応するスロット{`A0`, `A2`, `A4`, `A6`}に接続します。
 :::
 
 以下はgrove_thumb_joystick.pyのコードです。
@@ -252,7 +252,7 @@ if __name__ == '__main__':
 
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作すれば、以下のような結果が表示されます。
 :::
 
@@ -286,10 +286,10 @@ KeyboardInterrupt
 
 ```
 
-このプログラムを終了するには、++ctrl+c++ を押すだけです。
+このプログラムを終了するには、Ctrl+C を押すだけです。
 
 :::note
-アナログポートの場合、シルクスクリーンのピン番号は **A1, A0** のようになっていますが、コマンドでは **0** と **1** のパラメータを使用します。これはデジタルポートと同じです。そのため、モジュールを正しいポートに接続してください。そうしないと、ピンの競合が発生する可能性があります。
+アナログポートの場合、シルクスクリーンのピン番号は **`A1`, `A0`** のようになっていますが、コマンドでは **0** と **1** のパラメータを使用します。これはデジタルポートと同じです。そのため、モジュールを正しいポートに接続してください。そうしないと、ピンの競合が発生する可能性があります。
 :::
 
 ### Raspberry Pi での操作 (GrovePi_Plus を使用)
@@ -304,7 +304,7 @@ KeyboardInterrupt
 |[今すぐ購入](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[今すぐ購入](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Thumb-Joystick-p-935.html)|
 
 - **ステップ 2.** GrovePi_Plus を Raspberry に接続します。
-- **ステップ 3.** Grove-Thumb Joystick を GrovePi_Plus の **A0** ポートに接続します。
+- **ステップ 3.** Grove-Thumb Joystick を GrovePi_Plus の **`A0`** ポートに接続します。
 - **ステップ 4.** USB ケーブルを使って Raspberry を PC に接続します。
 
 ![](https://files.seeedstudio.com/wiki/Grove-Thumb_Joystick/img/Pi_Joystick%20connection.jpg)
@@ -392,7 +392,7 @@ sudo python3 grove_thumb_joystick.py
 
 - **ステップ 4.** 以下のようにターミナルに出力が表示されます。
 
-![画像をここに挿入](https://files.seeedstudio.com/wiki/Grove-Thumb_Joystick/img/pi_result.png)|
+![画像をここに挿入](https://files.seeedstudio.com/wiki/Grove-Thumb_Joystick/img/pi_result.png)
 
 ## 回路図オンラインビューア
 
@@ -412,11 +412,11 @@ sudo python3 grove_thumb_joystick.py
 
 **Raspberry Pi ミュージックサーバー**: Raspberry Pi プロジェクトの第一歩。
 
-<iframe frameborder='0' height='327.5' scrolling='no' src='https://www.hackster.io/kishima7/raspberry-pi-music-server-f5a0ae/embed' width='350'></iframe>
+<iframe frameBorder="0" height="327.5" scrolling="no" src="https://www.hackster.io/kishima7/raspberry-pi-music-server-f5a0ae/embed" width="350"></iframe>
 
 **カスタム Minecraft コントローラーを作る**: GrovePi を使ってカスタム Minecraft コントローラーを作成。
 
-<iframe frameborder='0' height='327.5' scrolling='no' src='https://www.hackster.io/dexterindustries/build-a-custom-minecraft-controller-d55d9c/embed' width='350'></iframe>
+<iframe frameBorder="0" height="327.5" scrolling="no" src="https://www.hackster.io/dexterindustries/build-a-custom-minecraft-controller-d55d9c/embed" width="350"></iframe>
 
 ## 技術サポート & 製品ディスカッション
 

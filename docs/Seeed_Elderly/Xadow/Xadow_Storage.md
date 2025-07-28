@@ -34,89 +34,64 @@ Two AT24C256 of Xadow Storage are sharing a common two-wire bus. Each AT24C256 h
 <center>
 <table  cellspacing="0" width="50%">
 <tr>
-<th rowspan="2" scope="col">  Slave Address[A6 - A0]
-</th>
-<th colspan="3" scope="col"> A2,A1 and A0 inputs state
-</th></tr>
+<th rowspan="2" scope="col">  Slave Address[A6 - A0]</th>
+<th colspan="3" scope="col"> A2,A1 and A0 inputs state</th>
+</tr>
 <tr>
-<td scope="col"> A2
-</td>
-<td scope="col"> A1
-</td>
-<td scope="col"> A0
-</td></tr>
+<td scope="col"> A2</td>
+<td scope="col"> A1</td>
+<td scope="col"> A0</td>
+</tr>
 <tr>
-<td scope="row"> 1010000(0x50)
-</td>
-<td>GND/Floating
-</td>
-<td>GND/Floating
-</td>
-<td>GND/Floating
-</td></tr>
+<td scope="row"> 1010000(0x50)</td>
+<td>GND/Floating</td>
+<td>GND/Floating</td>
+<td>GND/Floating</td>
+</tr>
 <tr>
-<td scope="row"> 1010001(0x51)
-</td>
-<td> GND/Floating
-</td>
-<td> GND/Floating
-</td>
-<td> VCC
-</td></tr>
+<td scope="row"> 1010001(0x51)</td>
+<td> GND/Floating</td>
+<td> GND/Floating</td>
+<td> VCC</td>
+</tr>
 <tr>
-<td scope="row"> 1010010(0x52)
-</td>
-<td> GND/Floating
-</td>
-<td> VCC
-</td>
-<td> GND/Floating
-</td></tr>
+<td scope="row"> 1010010(0x52)</td>
+<td> GND/Floating</td>
+<td> VCC</td>
+<td> GND/Floating</td>
+</tr>
 <tr>
-<td scope="row"> 1010011(0x53)
-</td>
-<td> GND/Floating
-</td>
-<td> VCC
-</td>
-<td> VCC
-</td></tr>
+<td scope="row"> 1010011(0x53)</td>
+<td> GND/Floating</td>
+<td> VCC</td>
+<td> VCC</td>
+</tr>
 <tr>
-<td scope="row"> 1010100(0x54)
-</td>
-<td> VCC
-</td>
-<td> GND/Floating
-</td>
-<td> GND/Floating
-</td></tr>
+<td scope="row"> 1010100(0x54)</td>
+<td> VCC</td>
+<td> GND/Floating</td>
+<td> GND/Floating</td>
+</tr>
 <tr>
-<td scope="row"> 1010101(default 0x55)
-</td>
-<td> VCC
-</td>
-<td> GND/Floating
-</td>
-<td> VCC
-</td></tr>
+<td scope="row"> 1010101(default 0x55)</td>
+<td> VCC</td>
+<td> GND/Floating</td>
+<td> VCC</td>
+</tr>
 <tr>
-<td scope="row"> 1010110(0x56)
-</td>
-<td> VCC
-</td>
-<td> VCC
-</td>
-<td> GND/Floating
-</td></tr>
+<td scope="row"> 1010110(0x56)</td>
+<td> VCC</td>
+<td> VCC</td>
+<td> GND/Floating</td>
+</tr>
 <tr>
-<td scope="row"> 1010111(0x57)
-</td>
-<td> VCC
-</td>
-<td> VCC
-</td>
-<td> VCC
-</td></tr></table></center>
+<td scope="row"> 1010111(0x57)</td>
+<td> VCC</td>
+<td> VCC</td>
+<td> VCC</td>
+</tr>
+</table>
+</center>
 
 In default mode, one AT24C256(U1) I2C Address is 0x50 and another AT24C256(U2) I2C Address is 0x51(see the Xadow Storage).
 

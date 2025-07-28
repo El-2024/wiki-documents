@@ -27,63 +27,65 @@ RePhone Lumi KitはLED愛好家のために特別に設計されたキットで�
 <table>
 <tr>
 <td> マイクロコントローラー </td>
-<td> MT2502
-</td></tr>
+<td> MT2502</td>
+</tr>
 <tr>
 <td> MCUコア </td>
-<td> 32ビット ARM7EJ-STM RISCプロセッサ
-</td></tr>
+<td> 32ビット ARM7EJ-STM RISCプロセッサ</td>
+</tr>
 <tr>
 <td> RAM </td>
-<td> 4 MB
-</td></tr>
+<td> 4 MB</td>
+</tr>
 <tr>
 <td> フラッシュメモリ </td>
-<td> 16 MB
-</td></tr>
+<td> 16 MB</td>
+</tr>
 <tr>
 <td> 電源供給 </td>
-<td> 3.3 ~ 4.2V（SIMなし）/3.5 ~ 4.2V（SIMあり）
-</td></tr>
+<td> 3.3 ~ 4.2V（SIMなし）/3.5 ~ 4.2V（SIMあり）</td>
+</tr>
 <tr>
 <td> 消費電力 </td>
-<td> 20mW/30mW/52mW @ 待機（無線なし）/待機（GSM）/待機（BT）
-</td></tr>
+<td> 20mW/30mW/52mW @ 待機（無線なし）/待機（GSM）/待機（BT）</td>
+</tr>
 <tr>
 <td> クアッドバンド </td>
-<td> 850/900/1800/1900 MHz
-</td></tr>
+<td> 850/900/1800/1900 MHz</td>
+</tr>
 <tr>
 <td> GPRS </td>
-<td> クラス12モデム
-</td></tr>
+<td> クラス12モデム</td>
+</tr>
 <tr>
 <td> クロックスピード </td>
-<td> 260 MHz
-</td></tr>
+<td> 260 MHz</td>
+</tr>
 <tr>
 <td> コネクタ </td>
-<td> Xadowモジュール用35ピンコネクタ＆11ピンコネクタ; バッテリー用JST 1.0コネクタ
-</td></tr>
+<td> Xadowモジュール用35ピンコネクタ＆11ピンコネクタ; バッテリー用JST 1.0コネクタ</td>
+</tr>
 <tr>
 <td> インターフェース </td>
-<td> LCD、オーディオ、I2C、SPI、UART、GPIOなど
-</td></tr>
+<td> LCD、オーディオ、I2C、SPI、UART、GPIOなど</td>
+</tr>
 <tr>
 <td> 寸法 </td>
-<td> 25.37mm × 20.30mm / 1” × 0.8”
-</td></tr></table>
+<td> 25.37mm × 20.30mm / 1” × 0.8”</td>
+</tr>
+</table>
 
 ### Xadow Duino
 
 <table>
 <tr>
 <td> マイクロコントローラー </td>
-<td> ATmega32u4
-</td></tr>
+<td> ATmega32u4</td>
+</tr>
 <tr>
 <td> 電源供給 </td>
-<td> USB経由で5V、最大電流1.5A
+<td>
+ USB経由で5V、最大電流1.5A
 
 バッテリーソケット経由で3.3 ~ 4.2V、最大電流1.5A
 
@@ -91,53 +93,60 @@ RePhone Lumi KitはLED愛好家のために特別に設計されたキットで�
 
 Xadow GSM+BLE経由で3.3 ~ 4.2V、最大電流500mA
 
-</td></tr>
+</td>
+</tr>
 <tr>
 <td> 充電電流 </td>
-<td> 500mA
-</td></tr>
+<td> 500mA</td>
+</tr>
 <tr>
 <td> フラッシュメモリ </td>
-<td> 32 KB（ATmega32u4）、うち4 KBはブートローダーに使用
-</td></tr>
+<td> 32 KB（ATmega32u4）、うち4 KBはブートローダーに使用</td>
+</tr>
 <tr>
 <td> SRAM </td>
-<td> 2.5 KB（ATmega32u4）
-</td></tr>
+<td> 2.5 KB（ATmega32u4）</td>
+</tr>
 <tr>
 <td> EEPROM </td>
-<td> 1 KB（ATmega32u4）
-</td></tr>
+<td> 1 KB（ATmega32u4）</td>
+</tr>
 <tr>
 <td> クロックスピード </td>
-<td> 16 MHz
-</td></tr>
+<td> 16 MHz</td>
+</tr>
 <tr>
 <td> コネクタ </td>
-<td> 2 × 11ピンXadowコネクタ
+<td>
+ 2 × 11ピンXadowコネクタ
 
 RGB LED WS2812b用のボンディングパッド
 
-</td></tr>
+</td>
+</tr>
 <tr>
 <td> インターフェース </td>
-<td> Xadow GSM+BLEとのインターフェース
+<td>
+ Xadow GSM+BLEとのインターフェース
 
 I2C（7ビットアドレス0x23）
 
-</td></tr>
+</td>
+</tr>
 <tr>
 <td> 寸法 </td>
-<td> 25.37mm × 20.30mm / 1”× 0.8”
-</td></tr></table>
+<td> 25.37mm × 20.30mm / 1”× 0.8”</td>
+</tr>
+</table>
 
 ### Xadow GSM Breakout
 
 <table>
 <tr>
 <td> 寸法 </td>
-<td> 25.37mm × 20.30mm / 1” × 0.8”
-</td></tr></table>
+<td> 25.37mm × 20.30mm / 1” × 0.8”</td>
+</tr>
+</table>
 
 ## モジュール接続
 ---

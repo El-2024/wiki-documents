@@ -56,8 +56,8 @@ Si instalamos el contenedor de Home Assistant en reTerminal, perderemos varias f
 
 Si instalamos Home Assistant Supervised en reTerminal, podremos utilizar todas las funciones de Home Assistant y además podremos ver la interfaz del panel de control en la pantalla LCD de reTerminal. ¡Pero la instalación de este método implicará más pasos en comparación con los métodos OS y Contenedor! Sin embargo, si sigues cuidadosamente este wiki, ¡podrás lograrlo con éxito!
 
-importar Tabs from '@theme/Tabs';
-importar TabItem desde '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 <Tabs>
 

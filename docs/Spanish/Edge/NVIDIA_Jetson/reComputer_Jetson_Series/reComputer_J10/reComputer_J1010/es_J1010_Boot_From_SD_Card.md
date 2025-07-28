@@ -66,19 +66,19 @@ Se supone que debemos cambiar la configuración en "/boot/extlinux/extlinux.conf
 
     Después de iniciar desde el emmc de la Carrier Board, queremos modificarlo para que inicie desde la tarjeta SD. Necesitamos asegurarnos de que el proceso anterior, incluida la grabación del sistema en la tarjeta SD, y los controladores de la tarjeta SD estén instalados correctamente. Modifica los parámetros después de root a la dirección del dispositivo desde el que arrancamos. Cuando hayamos completado nuestros cambios, reinicia el sistema.
 
-    **Antes de arrancar modifica "/boot/extlinux/extlinux.conf" Después de reiniciar leer "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf"**
+    **Antes de arrancar modifica "/boot/extlinux/extlinux.conf" Después de reiniciar leer "/media/seeed/&#123;xxx-xxx&#125;/boot/extlinux/extlinux.conf"**
 
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/config_3.png" /></div>
 
 
     ¡¡¡Nota!!!
-        Nuestro archivo de configuración después de iniciar el sistema desde la tarjeta SD es "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf" y el archivo de configuración después de iniciar el sistema desde el emmc integrado está en "/boot/extlinux/extlinux.conf". Son los mismos archivos desde los cuales el dispositivo lee la configuración y elige dónde iniciar el sistema después del encendido, y las rutas relativas cambian cuando el sistema termina de iniciarse.
+        Nuestro archivo de configuración después de iniciar el sistema desde la tarjeta SD es "/media/seeed/&#123;xxx-xxx&#125;/boot/extlinux/extlinux.conf" y el archivo de configuración después de iniciar el sistema desde el emmc integrado está en "/boot/extlinux/extlinux.conf". Son los mismos archivos desde los cuales el dispositivo lee la configuración y elige dónde iniciar el sistema después del encendido, y las rutas relativas cambian cuando el sistema termina de iniciarse.
 
 - Arrancar desde el emmc de la placa
 
     Si queremos volver a iniciar desde el emmc después de iniciar desde una tarjeta SD o necesitamos cambiar la tarjeta SD por algún motivo. Debemos cambiar el dispositivo para que arranque desde el emmc. Deberíamos hacer los siguientes cambios.
 
-    **Antes de reiniciar modifica "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf" Tras reiniciar revisa "/boot/extlinux/extlinux.conf"**
+    **Antes de reiniciar modifica "/media/seeed/&#123;xxx-xxx&#125;/boot/extlinux/extlinux.conf" Tras reiniciar revisa "/boot/extlinux/extlinux.conf"**
 
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/config_4.png" /></div>
 

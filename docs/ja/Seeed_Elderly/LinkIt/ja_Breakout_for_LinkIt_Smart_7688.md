@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/Breakout_for_LinkIt_Smart_7688/img/Breakout_for_LinkIt_Smart_7688_product_view_1200.jpg)
 
-:::dangernote
+:::danger note
 MediaTek Labsの閉鎖により、関連リンクはすべて無効になっています。関連ファイルをダウンロードする必要がある場合は、以下のリンクで検索してください：[https://github.com/MediaTek-Labs](https://github.com/MediaTek-Labs)。
 :::
 
@@ -48,18 +48,12 @@ MediaTek Labsの閉鎖により、関連リンクはすべて無効になって�
 
 ## 仕様
 ---
-<table>
-<tr>
-<td> 入力電圧 </td>
-<td> 5.0V（USB電源ポート使用時）
-</td></tr>
-<tr>
-<td> 動作電圧 </td>
-<td> 3.3V
-</td></tr>
-<tr>
-<td colspan="2"> デバッグピン、イーサネットピン、USBタイプAホストピンはMT7688に接続され、その他のピンはATmega32U4に接続されます。
-</td></tr></table>
+| 項目 | 仕様 |
+|---|---|
+| 入力電圧 | 5.0V（USB電源ポート使用時） |
+| 動作電圧 | 3.3V |
+
+**注意：** デバッグピン、イーサネットピン、USBタイプAホストピンはMT7688に接続され、その他のピンはATmega32U4に接続されます。
 
 ## ハードウェア概要
 ---
@@ -83,15 +77,9 @@ MediaTek Labsの閉鎖により、関連リンクはすべて無効になって�
 
 ### **部品リスト**
 
-<table>
-<tr>
-<th>部品名   </th>
-<th> 数量
-</th></tr>
-<tr>
-<td> LinkIt Smart 7688用ブレイクアウトボード </td>
-<td> 1個
-</td></tr></table>
+| 部品名 | 数量 |
+|---|---|
+| LinkIt Smart 7688用ブレイクアウトボード | 1個 |
 
 ## 始め方
 

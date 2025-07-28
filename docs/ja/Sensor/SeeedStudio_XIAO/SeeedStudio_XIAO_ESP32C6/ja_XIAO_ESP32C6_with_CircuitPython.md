@@ -72,7 +72,7 @@ ls /dev/cu*
 これにより、すべてのシリアルポートデバイスが表示されます。
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/1.png" /></div>
 
-:::Tip
+:::tip
 ポートがビジー状態の場合、以下のコマンドを使用してポートを使用しているプロセスを特定し、終了させることができます(macOSの場合)：
 ポートを使用しているプロセスを特定：
 ```

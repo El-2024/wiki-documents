@@ -28,7 +28,7 @@ reServer industrial has 5 RJ45 GbE ports, 4 of which are PoE PSE ports for provi
 ## Features
 
 - **Fanless Compact Edge AI Server:** Powered by NVIDIA Jetson™ Orin Nano/Orin NX modules, ranging from 20 TOPS to 100 TOPS AI performance, wider temperature range from -20 ~ 60°C with 0.7m/s airflow
-- **Multi-Stream Processing:** 5* GbE RJ45(4 for 802.3af PSE ), handles multiple streams with real-time processing
+- **Multi-Stream Processing:** 5× GbE RJ45(4 for 802.3af PSE ), handles multiple streams with real-time processing
 - **Expandable Storage:** 2 drive bays for 2.5" SATA HDD/SSD, plus an M.2 2280 socket for NVMe SSD
 - **Industrial Interfaces:** Includes COM port, DI/DO ports, CAN port, USB 3.1, and optional TPM2.0 module
 - **Hybrid Connectivity:** Supports 5G/4G/LTE/LoRaWAN® (module optional) with Nano SIM card slot
@@ -88,13 +88,13 @@ reServer industrial has 5 RJ45 GbE ports, 4 of which are PoE PSE ports for provi
     </tr>
     <tr>
       <td>Video Encode</td>
-      <td colSpan={2}>Standards supported: H.265 (HEVC), H.264, AV1 1*4K60 (H.265) | 3*4K30 (H.265) | 6*1080p60 (H.265) | 12*1080p30 (H.265)</td>
+      <td colSpan={2}>Standards supported: H.265 (HEVC), H.264, AV1 1×4K60 (H.265) | 3×4K30 (H.265) | 6×1080p60 (H.265) | 12×1080p30 (H.265)</td>
       <td colSpan={2}>1080p30 supported by 1-2 CPU cores </td>
     </tr>
     <tr>
       <td>Video Decode</td>
-      <td colSpan={2}>Standards supported: H.265 (HEVC), H.264, VP9, AV1 1*8K30 (H.265) | 2*4K60 (H.265) | 4*4K30 (H.265) | 9*1080p60 (H.265) | 18*1080p30 (H.265) </td>
-      <td colSpan={2}>Standards supported: H.265 (HEVC), H.264, VP9, AV1 1*4K60 (H.265) | 2*4K30 (H.265) | 5*1080p60 (H.265) | 11*1080p30 (H.265)</td>
+      <td colSpan={2}>Standards supported: H.265 (HEVC), H.264, VP9, AV1 1×8K30 (H.265) | 2×4K60 (H.265) | 4×4K30 (H.265) | 9×1080p60 (H.265) | 18×1080p30 (H.265)</td>
+      <td colSpan={2}>Standards supported: H.265 (HEVC), H.264, VP9, AV1 1×4K60 (H.265) | 2×4K30 (H.265) | 5×1080p60 (H.265) | 11×1080p30 (H.265)</td>
     </tr>
     <tr>
       <td rowSpan={2}>Storage</td>
@@ -108,28 +108,28 @@ reServer industrial has 5 RJ45 GbE ports, 4 of which are PoE PSE ports for provi
     <tr>
       <td rowSpan={9}>I/O</td>
       <td>Ethernet</td>
-      <td colSpan={4}>1* LAN0 RJ45 GbE (10/100/1000Mbps)</td>
+      <td colSpan={4}>1× LAN0 RJ45 GbE (10/100/1000Mbps)</td>
     </tr>
     <tr>
       <td> </td>
-      <td colSpan={4}>4* LAN RJ45 GbE PoE(PSE 802.3 af 15 W, 10/100/1000Mbps)</td>
+      <td colSpan={4}>4× LAN RJ45 GbE PoE(PSE 802.3 af 15 W, 10/100/1000Mbps)</td>
     </tr>
     <tr>
       <td>USB</td>
-      <td colSpan={4}>4* USB3.1, 1* USB2.0 Type C(Device mode), 1* USB2.0 Type C For Debug UART &amp; RP2040</td>
+      <td colSpan={4}>4× USB3.1, 1× USB2.0 Type C(Device mode), 1× USB2.0 Type C For Debug UART &amp; RP2040</td>
     </tr>
     <tr>
       <td>DI/DO</td>
-      <td colSpan={4}>4*DI,4*DO,3*GND_DI,2*GND_DO,1*GND_ISO,1*CAN</td>
+      <td colSpan={4}>4×DI,4×DO,3×GND_DI,2×GND_DO,1×GND_ISO,1×CAN</td>
     </tr>
     <tr>
       <td>COM</td>
-      <td colSpan={4}>1* DB9 (RS232/RS422/RS485)</td>
+      <td colSpan={4}>1× DB9 (RS232/RS422/RS485)</td>
     </tr>
     <tr>
       <td>Display</td>
-      <td colSpan={2}>1*HDMI 2.1 Type A 7680x4320 at 30 Hz</td>
-      <td colSpan={2}>1*HDMI 1.4 Type A 3840x2160 at 30 Hz</td>
+      <td colSpan={2}>1×HDMI 2.1 Type A 7680x4320 at 30 Hz</td>
+      <td colSpan={2}>1×HDMI 1.4 Type A 3840x2160 at 30 Hz</td>
     </tr>
     <tr>
       <td>SATA</td>
@@ -137,7 +137,7 @@ reServer industrial has 5 RJ45 GbE ports, 4 of which are PoE PSE ports for provi
     </tr>
     <tr>
       <td>SIM</td>
-      <td colSpan={4}>1* Nano SIM card slot</td>
+      <td colSpan={4}>1× Nano SIM card slot</td>
     </tr>
     <tr>
       <td>Button</td>
@@ -154,15 +154,15 @@ reServer industrial has 5 RJ45 GbE ports, 4 of which are PoE PSE ports for provi
     </tr>
     <tr>
       <td>Fan</td>
-      <td colSpan={4}>Fanless, passive heatsink; 1*Fan connectors(5V PWM)</td>
+      <td colSpan={4}>Fanless, passive heatsink; 1×Fan connectors(5V PWM)</td>
     </tr>
     <tr>
       <td>TPM</td>
-      <td colSpan={4}>1* TPM 2.0 connector (Module optional)</td>
+      <td colSpan={4}>1× TPM 2.0 connector (Module optional)</td>
     </tr>
     <tr>
       <td>RTC</td>
-      <td colSpan={4}>1* RTC socket (CR1220 included),*RTC 2-pin</td>
+      <td colSpan={4}>1× RTC socket (CR1220 included),×RTC 2-pin</td>
     </tr>
     <tr>
       <td rowSpan={2}>Power</td>
@@ -176,7 +176,7 @@ reServer industrial has 5 RJ45 GbE ports, 4 of which are PoE PSE ports for provi
     <tr>
       <td rowSpan={9}>Mechanical</td>
       <td>Dimensions (W x D x H)</td>
-      <td colSpan={4}>194.33mm*187mm*95.5mm</td>
+      <td colSpan={4}>194.33mm×187mm×95.5mm</td>
     </tr>
     <tr>
       <td>Weight</td>
@@ -316,8 +316,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWoMiCYaghJGsmgX8ki3lrwB67RFYkI9zvBW6t86w_7chg?e=afbbOs" target="_blank" rel="noopener noreferrer">Download1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWoMiCYaghJGsmgX8ki3lrwB67RFYkI9zvBW6t86w_7chg?e=afbbOs" target="_blank" rel="noopener noreferrer">Download1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EWxVw3rZF-JPuKp0ksJZkGABWmsSxVizaJIqQBL5TDL1JA?e=4JJ2XV" target="_blank" rel="noopener noreferrer">Download2</a>
@@ -358,8 +357,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY9t48fwnJVLraZyoVzYe2gB5RMb9FMXqKxVT9_WBFnnzQ?e=rcBfY5" target="_blank" rel="noopener noreferrer">Download1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY9t48fwnJVLraZyoVzYe2gB5RMb9FMXqKxVT9_WBFnnzQ?e=rcBfY5" target="_blank" rel="noopener noreferrer">Download1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EW5Dood6aQ9DpT6ZaXWF50QBmyAyOowCktzqZj48sQeyhw?e=VVP56J" target="_blank" rel="noopener noreferrer">Download2</a>
@@ -379,8 +377,7 @@ import TabItem from '@theme/TabItem';
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZlrBLKGf5VDiczIJaPNpNoBcby3urzv85oWmS34pKtcGg?e=u7aWDL" target="_blank" rel="noopener noreferrer">Download1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZlrBLKGf5VDiczIJaPNpNoBcby3urzv85oWmS34pKtcGg?e=u7aWDL" target="_blank" rel="noopener noreferrer">Download1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EQJBb6D2ISBEnoUnUkqVEgkB9npGJ48jw5p2DXFIWaNJxA?e=lOJiFM" target="_blank" rel="noopener noreferrer">Download2</a>
@@ -390,8 +387,7 @@ import TabItem from '@theme/TabItem';
         <td>6.1</td>
         <td>36.4</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERd_GV-EQGtIiqm90pnmAisBKIuOgZnCISP783um9r7OJw?e=nYL7oz" target="_blank" rel="noopener noreferrer">Download1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERd_GV-EQGtIiqm90pnmAisBKIuOgZnCISP783um9r7OJw?e=nYL7oz" target="_blank" rel="noopener noreferrer">Download1</a>
         </td>
         <td>
           -
@@ -402,8 +398,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDbctjmL2tAtpW_gaqhylABEE5UT2chlro5vi20sFKygA?e=yE5NfC" target="_blank" rel="noopener noreferrer">Download1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDbctjmL2tAtpW_gaqhylABEE5UT2chlro5vi20sFKygA?e=yE5NfC" target="_blank" rel="noopener noreferrer">Download1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb6xTuWGRdlDpJfgLSWS7S4BpnKYxkI9RKl6tJbU0xI4FQ?e=m84vbP" target="_blank" rel="noopener noreferrer">Download2</a>
@@ -433,8 +428,7 @@ import TabItem from '@theme/TabItem';
         <td>6.1</td>
         <td>36.4</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXv18M5S-gNGvFVyCgUIfOMBveES_RLF25qpEP1uMLGrBA?e=d7b2j7" target="_blank" rel="noopener noreferrer">Download1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXv18M5S-gNGvFVyCgUIfOMBveES_RLF25qpEP1uMLGrBA?e=d7b2j7" target="_blank" rel="noopener noreferrer">Download1</a>
         </td>
         <td>
           -
@@ -444,8 +438,7 @@ import TabItem from '@theme/TabItem';
         <td>6.2</td>
         <td>36.4.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ESNHrERy6DJCotXjFJT_5yYBbRzp7AHYujEsbcT4B4ZNCg?e=d1BePF" target="_blank" rel="noopener noreferrer">Download1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ESNHrERy6DJCotXjFJT_5yYBbRzp7AHYujEsbcT4B4ZNCg?e=d1BePF" target="_blank" rel="noopener noreferrer">Download1</a>
         </td>
         <td>
           -
@@ -486,8 +479,7 @@ import TabItem from '@theme/TabItem';
         <td>6.1</td>
         <td>36.4</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYKvmiXvDrZKnyrWpGDKBXMByXVFfgOkbl0NyF3LY8bEWQ?e=ydwLF5" target="_blank" rel="noopener noreferrer">Download1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYKvmiXvDrZKnyrWpGDKBXMByXVFfgOkbl0NyF3LY8bEWQ?e=ydwLF5" target="_blank" rel="noopener noreferrer">Download1</a>
         </td>
         <td>
           -
@@ -497,8 +489,7 @@ import TabItem from '@theme/TabItem';
         <td>6.2</td>
         <td>36.4.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EaZE000_qQJMvjwjHeCNLxsBh7Uip9Gb5taPt5YqH5TMhg?e=Pfup2v" target="_blank" rel="noopener noreferrer">Download1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EaZE000_qQJMvjwjHeCNLxsBh7Uip9Gb5taPt5YqH5TMhg?e=Pfup2v" target="_blank" rel="noopener noreferrer">Download1</a>
         </td>
         <td>
           -

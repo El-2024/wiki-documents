@@ -207,7 +207,7 @@ tube2.setTubeType(TYPE_4,I2C_ADDR_DEFAULT_FOUR);
 - **Init(NUMERIC_I2C_ADDR):** initialize the device with I2C address, Grove - 0.54" Red Quad Alphanumeric Display I2C default address is 0x71.
 - **setBrightness(15):** set the brightness, the range is 0-15, the more brightness, the more power consumption. 
 - **setBlinkRate(BLINK_OFF):** set the interval of blinking, you can set as BLINK_OFF/BLINK_2HZ/BLINK_1HZ.
-- **displayNum(1234567,500):** display the number, there are 2 parameters. The first parameter is number and the second one is the scrolling interval(ms). If the num <100, The tubes display static number. Otherwise,it displays scrolling number. The scrolling interval(ms) only works on scrolling mode and you can set the interval as 0.
+- **displayNum(1234567,500):** display the number, there are 2 parameters. The first parameter is number and the second one is the scrolling interval(ms). If the num &lt;100, The tubes display static number. Otherwise,it displays scrolling number. The scrolling interval(ms) only works on scrolling mode and you can set the interval as 0.
 - **displayString("ABCDEFGHJIYZ",500):** display the character, there are 2 parameters. The first parameter is character and the second one is the scrolling interval(ms). If the character less than 2 characters, The tubes display static character. Otherwise,it displays scrolling characters. The scrolling interval(ms) only works on scrolling mode and you can set the interval as 0. The function does not support lower case letters and displays the same as upper case letters. 
 - **setTubeSingleChar(FIRST_TUBE,'t'):** set the single character @ specific tube. 
 - **tube.setPoint(true,false):** set the 2 dots on and off. This example sets the first dot on and the second as off.

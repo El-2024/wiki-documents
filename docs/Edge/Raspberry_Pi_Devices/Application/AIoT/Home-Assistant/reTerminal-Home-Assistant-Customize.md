@@ -145,7 +145,7 @@ Google Drive Backup add-on allows you to configure automatic backups where it wi
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/30.png"/></div>
 
-- **Step 2.** Copy and past **<https://github.com/sabeechen/hassio-google-drive-backup>** into the empty column and click **ADD**
+- **Step 2.** Copy and past **https://github.com/sabeechen/hassio-google-drive-backup** into the empty column and click **ADD**
 
 <div align="center"><img width={450} src="https://files.seeedstudio.com/wiki/Home-Assistant/31.png"/></div>
 

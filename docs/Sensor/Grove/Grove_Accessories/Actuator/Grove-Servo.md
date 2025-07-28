@@ -29,55 +29,43 @@ Specification
 ---
 
 <table cellSpacing={0} width="80%">
-  <tbody><tr>
-      <th scope="col"> Item
-      </th>
-      <th scope="col"> Min
-      </th>
-      <th scope="col"> Typical
-      </th>
-      <th scope="col"> Max
-      </th>
-      <th scope="col"> Unit
-      </th></tr>
+  <tbody>
     <tr>
-      <th> Working Voltage
-      </th>
-      <td> 4.8
-      </td>
-      <td> 5.0
-      </td>
-      <td> 6.0
-      </td>
-      <td> V
-      </td></tr>
+      <th scope="col"> Item </th>
+      <th scope="col"> Min </th>
+      <th scope="col"> Typical </th>
+      <th scope="col"> Max </th>
+      <th scope="col"> Unit </th>
+    </tr>
     <tr>
-      <th> Torque
-      </th><td colSpan={3}> 1.5/1.8
-      </td>
-      <td> Kg.cm
-      </td></tr>
+      <th> Working Voltage </th>
+      <td> 4.8 </td>
+      <td> 5.0 </td>
+      <td> 6.0 </td>
+      <td> V </td>
+    </tr>
     <tr>
-      <th scope="row"> Speed
-      </th>
-      <td colSpan={3}> 0.12/0.16
-      </td>
-      <td> s/60°
-      </td></tr>
+      <th> Torque </th>
+      <td colSpan={3}> 1.5/1.8 </td>
+      <td> Kg.cm </td>
+    </tr>
     <tr>
-      <th scope="row"> Size
-      </th>
-      <td colSpan={3}> 32X11.5X24
-      </td>
-      <td> mm
-      </td></tr>
+      <th scope="row"> Speed </th>
+      <td colSpan={3}> 0.12/0.16 </td>
+      <td> s/60° </td>
+    </tr>
     <tr>
-      <th scope="row"> Weight
-      </th>
-      <td colSpan={3}> 8.5
-      </td>
-      <td> g
-      </td></tr></tbody></table>
+      <th scope="row"> Size </th>
+      <td colSpan={3}> 32X11.5X24 </td>
+      <td> mm </td>
+    </tr>
+    <tr>
+      <th scope="row"> Weight </th>
+      <td colSpan={3}> 8.5 </td>
+      <td> g </td>
+    </tr>
+  </tbody>
+</table>
 
 Platforms Supported
 -------------------
@@ -114,7 +102,7 @@ The Servo has three wires: power, ground, and signal. The power wire is typicall
 #### Software
 
 * Let's sweep the shaft of a servo back and forth across 180 degrees by using [Adruino Servo Library](https://arduino.cc/en/Reference/Servo).
-* Open the code directly by the path: **File -> Examples ->Servo->Sweep**.
+* Open the code directly by the path: **File → Examples →Servo→Sweep**.
 
   ![](https://files.seeedstudio.com/wiki/Grove-Servo/img/library%20example.jpg)
 

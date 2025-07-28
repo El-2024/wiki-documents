@@ -25,36 +25,17 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### HTTP ヘッダー
  #### リクエスト
-<table >
-<tr>
-<th> キー
-</th>
-<th> 説明
-</th></tr>
-<tr>
-<td width="300"> API-VERSION
-</td>
-<td width="300"> API バージョン
-</td></tr></table>
+
+| キー | 説明 |
+|------|------|
+| API-VERSION | API バージョン |
 
  #### レスポンス
-<table >
-<tr>
-<th> キー
-</th>
-<th> 説明
-</th></tr>
-<tr>
-<td width="300"> api-gateway-excute-second
-</td>
-<td width="300"> API 実行にかかった秒数
-</td>
-</tr>
-<tr>
-<td width="300"> api-gateway-mpuo-consume
-</td>
-<td width="300"> API 実行で消費されたクォータ
-</td></tr></table>
+
+| キー | 説明 |
+|------|------|
+| api-gateway-excute-second | API 実行にかかった秒数 |
+| api-gateway-mpuo-consume | API 実行で消費されたクォータ |
 
  #### HTTP ベーシック認証
   [HTTP ベーシック認証](https://en.wikipedia.org/wiki/Basic_access_authentication)は、RESTful API 認証の最も一般的な方法の1つです。ユーザー名として Access ID を、パスワードとして Access Key を使用します。すべての HTTP クライアントライブラリには、ベーシック認証の組み込みサポートがあるはずです。このドキュメントでは、curl を使用しており、–user オプションを使用してベーシック認証の資格情報を指定します。

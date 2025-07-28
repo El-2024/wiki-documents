@@ -119,11 +119,10 @@ MBIMモードに設定した後：
 - Windowsは**セルラーネットワークインターフェース**を検出します。
 - Windowsの**ネットワークとインターネット設定**からネットワークを管理し、接続できるようになります。
 
-
-   <div style={{ textAlign: 'center' }}>
-  <img 
-    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/windows.PNG" 
-    style={{ width: 600}} 
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/windows.PNG"
+    style={{ width: 600}}
   />
 </div>
 
@@ -137,10 +136,10 @@ PCがMBIM経由でネットワーク接続を取得したか確認するには�
    ```
    「モバイルブロードバンド接続」または「セルラー」の下にIPアドレスが表示されるはずです。
 
-   <div style={{ textAlign: 'center' }}>
-  <img 
-    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mbimcmd.PNG" 
-    style={{ width: 600}} 
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mbimcmd.PNG"
+    style={{ width: 600}}
   />
 </div>
 

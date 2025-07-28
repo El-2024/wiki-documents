@@ -355,8 +355,7 @@ If this is your first time using Arduino, we highly recommend you to refer to [G
 - **Step 1. You need to Install an Arduino Software.**
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong></a>
 </div>
 
 **Launch the Arduino application**
@@ -378,7 +377,7 @@ Open the LED blink example sketch: **File > Examples >01.Basics > Blink**.
 
 Click on **File > Preference**, and fill Additional Boards Manager URLs with the url below:
 
-*<https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json>*
+*https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json*
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png" alt="pir" width={600} height="auto" /></p>
 

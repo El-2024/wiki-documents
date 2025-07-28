@@ -24,7 +24,7 @@ Helium 控制台是由 Helium 基金会托管的基于网页的设备管理工�
 
 ## 连接到 Helium 网络
 ### 创建新账户
-请访问 <https://console.helium.com/> 并注册您的账户。
+请访问 [https://console.helium.com/](https://console.helium.com/) 并注册您的账户。
 ### 设置传感器
 (1) 打开 SenseCAP Mate 应用程序
 
@@ -99,7 +99,7 @@ Helium 控制台是由 Helium 基金会托管的基于网页的设备管理工�
 
 ## 将数据从 Helium 上传到 Datacake
 ### 创建 Datacake 账户
-(1) 创建一个新账户，网站：<https://datacake.co/> 
+(1) 创建一个新账户，网站：[https://datacake.co/](https://datacake.co/) 
 
 ![](https://files.seeedstudio.com/wiki/SenseCAPS210X/Helium_Network/0020.png)
 

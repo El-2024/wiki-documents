@@ -73,8 +73,7 @@ XIAO ESP32S3 Sense を購入する場合、拡張ボードも含める必要が�
 - **ステップ 1.** お使いのオペレーティングシステムに応じて、安定版の Arduino IDE をダウンロードしてインストールします。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDE をダウンロード</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDE をダウンロード</font></span></strong></a>
 </div>
 
 #### 1.1.2 Arduino に XIAO-ESP32S3 Sense をインストールする
@@ -82,7 +81,7 @@ XIAO ESP32S3 Sense を購入する場合、拡張ボードも含める必要が�
 - **ステップ 1.** Arduino IDE に ESP32 ボードパッケージを追加します。
 
   **ファイル > 環境設定** に移動し、**"追加のボードマネージャーの URL"** に以下の URL を入力します：
-  _<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json>_
+  `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
 
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/6.png" style={{width:800, height:'auto'}}/></div>
 
@@ -528,7 +527,7 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
 #endif
 ```
 
-**"#include <XIAO_esp32S3_CatDog2_inferencing.h>"** を生成したライブラリに置き換えてください。その後、コードをアップロードし、猫や犬の画像、または実際のものを指してみてください。シリアルモニターで結果を確認できます。
+`#include <XIAO_esp32S3_CatDog2_inferencing.h>` を生成したライブラリに置き換えてください。その後、コードをアップロードし、猫や犬の画像、または実際のものを指してみてください。シリアルモニターで結果を確認できます。
 
 この tinyML 画像分類プロジェクトを完了したことをおめでとうございます 🙌。
 

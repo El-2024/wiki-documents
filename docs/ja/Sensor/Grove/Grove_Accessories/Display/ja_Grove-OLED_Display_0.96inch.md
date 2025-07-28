@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 **Grove - OLED ディスプレイ 0.96"** モジュールは、Grove 4ピン I2C インターフェースを備えた OLED モノクロ 128×64 ドットマトリックスディスプレイモジュールです。LCD と比較して、OLED スクリーンは高輝度、自発光、高コントラスト比、薄型設計、広視野角、広い温度範囲、低消費電力など、多くの利点を持つため、より競争力があります。このモジュールは、OLED 96×96 よりも大きな画面を持ち、より多くのコンテンツを表示することができます。
 
 <!-- [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now.png)](https://www.seeedstudio.com/item_detail.html?p_id=781) -->
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/item_detail.html?p_id=781)
+[<img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" />](https://www.seeedstudio.com/item_detail.html?p_id=781)
 ## バージョン
 
 | 製品バージョン                     | 変更点                                                                                                                                                                                    | リリース日   |

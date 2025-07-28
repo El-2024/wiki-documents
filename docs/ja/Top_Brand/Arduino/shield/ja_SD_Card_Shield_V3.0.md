@@ -46,61 +46,44 @@ SDカードシールド v3.0はピン10をチップセレクトとして使用�
 
 ## 仕様  
 
-<table  cellspacing="0" width="100%">
-<tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 最小値
-</th>
-<th scope="col"> 標準値
-</th>
-<th scope="col"> 最大値
-</th>
-<th scope="col"> 単位
-</th></tr>
-<tr>
-<th scope="row"> 電圧
-</th>
-<td> 2.7
-</td>
-<td> 3.3
-</td>
-<td> 3.6
-</td>
-<td> V
-</td></tr>
-<tr>
-<th scope="row"> 電流
-</th>
-<td> 0.159
-</td>
-<td> 40
-</td>
-<td> 200
-</td>
-<td> mA
-</td></tr>
-<tr>
-<th scope="row"> 対応カードタイプ
-</th>
-<td colspan="3"> SDカード(&lt;=2G); Micro SDカード(&lt;=2G); SDHCカード(&lt;=16G)
-</td>
-<td> /
-</td></tr>
-<tr>
-<th scope="row"> 寸法
-</th>
-<td colspan="3"> 57.15x44.70x19.00
-</td>
-<td> mm
-</td></tr>
-<tr>
-<th scope="row"> 正味重量
-</th>
-<td colspan="3"> 16.6
-</td>
-<td> g
-</td></tr></table>
+<table cellspacing="0" width="100%">
+  <tr>
+    <th scope="col"> 項目 </th>
+    <th scope="col"> 最小値 </th>
+    <th scope="col"> 標準値 </th>
+    <th scope="col"> 最大値 </th>
+    <th scope="col"> 単位 </th>
+  </tr>
+  <tr>
+    <th scope="row"> 電圧 </th>
+    <td> 2.7 </td>
+    <td> 3.3 </td>
+    <td> 3.6 </td>
+    <td> V </td>
+  </tr>
+  <tr>
+    <th scope="row"> 電流 </th>
+    <td> 0.159 </td>
+    <td> 40 </td>
+    <td> 200 </td>
+    <td> mA </td>
+  </tr>
+  <tr>
+    <th scope="row"> 対応カードタイプ </th>
+    <td colspan="3"> SDカード(&lt;=2G); Micro SDカード(&lt;=2G); SDHCカード(&lt;=16G) </td>
+    <td> / </td>
+  </tr>
+  <tr>
+    <th scope="row"> 寸法 </th>
+    <td colspan="3"> 57.15x44.70x19.00 </td>
+    <td> mm </td>
+  </tr>
+  <tr>
+    <th scope="row"> 正味重量 </th>
+    <td colspan="3"> 16.6 </td>
+    <td> g </td>
+  </tr>
+</table>
 
 ## インターフェース機能  
 
@@ -144,28 +127,23 @@ SDカードシールドをArduinoに差し込みます。SDカードをソケッ
 
 ## バージョントラッカー  
 
-<table  cellspacing="0" width="85%">
-<tr>
-<th scope="col"> リビジョン
-</th>
-<th scope="col"> 説明
-</th>
-<th scope="col"> リリース日
-</th></tr>
-<tr>
-<td> v3.0
-</td>
-<td> V3.0リリース
-</td>
-<td> 2012/3/29
-</td></tr>
-<tr>
-<td> v3.1
-</td>
-<td> 電圧レギュレーターがMIC5205にアップグレード
-</td>
-<td> 2012/5/10
-</td></tr></table>
+<table cellspacing="0" width="85%">
+  <tr>
+    <th scope="col"> リビジョン </th>
+    <th scope="col"> 説明 </th>
+    <th scope="col"> リリース日 </th>
+  </tr>
+  <tr>
+    <td> v3.0 </td>
+    <td> V3.0リリース </td>
+    <td> 2012/3/29 </td>
+  </tr>
+  <tr>
+    <td> v3.1 </td>
+    <td> 電圧レギュレーターがMIC5205にアップグレード </td>
+    <td> 2012/5/10 </td>
+  </tr>
+</table>
 
 ## SDカードシールド v3.1 回路図オンラインビューア
 

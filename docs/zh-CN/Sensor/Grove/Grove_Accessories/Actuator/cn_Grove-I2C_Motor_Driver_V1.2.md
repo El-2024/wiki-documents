@@ -21,28 +21,11 @@ Grove I2C 马达驱动器是 Grove 系列的新成员，同样拥有易于使用
 ## 版本追踪器
 
 ---
-<table width="494">
-<tr>
-<th> 版本
-</th>
-<th> 说明
-</th>
-<th> 发布
-</th></tr>
-<tr>
-<td> v1.0
-</td>
-<td> 首次公开发行
-</td>
-<td> 2012年5月17日
-</td></tr>
-<tr>
-<td> v1.2
-</td>
-<td> 由硬件设置的I2C地址
-</td>
-<td> 2012年7月2日
-</td></tr></table>
+
+| 版本 | 说明 | 发布 |
+|------|------|------|
+| v1.0 | 首次公开发行 | 2012年5月17日 |
+| v1.2 | 由硬件设置的I2C地址 | 2012年7月2日 |
 
 ## 功能特性
 
@@ -62,57 +45,14 @@ Grove I2C 马达驱动器是 Grove 系列的新成员，同样拥有易于使用
 ## 规格
 
 ---
-<table  cellspacing="0" width="80%">
-<tr>
-<th scope="col"> 项目
-</th>
-<th scope="col"> 最小值
-</th>
-<th scope="col"> 典型值
-</th>
-<th scope="col"> 最大值
-</th>
-<th scope="col"> 单位
-</th></tr>
-<tr>
-<th scope="row">工作电压
-</th>
-<td> 6
-</td>
-<td> -
-</td>
-<td> 15
-</td>
-<td> VDC
-</td></tr>
-<tr>
-<th scope="row"> 每通道最大输出电流
-</th>
-<td colspan="3">0.5
-</td>
-<td> A
-</td></tr>
-<tr>
-<th scope="row"> 最大总电流
-</th>
-<td colspan="3">1.0
-</td>
-<td> A
-</td></tr>
-<tr>
-<th scope="row"> I2C总线输入输出电压
-</th>
-<td colspan="3"> 5
-</td>
-<td> V
-</td></tr>
-<tr>
-<th scope="row">  通信协议
-</th>
-<td colspan="3"> I2C
-</td>
-<td> /
-</td></tr></table>
+
+| 项目 | 最小值 | 典型值 | 最大值 | 单位 |
+|------|--------|--------|--------|------|
+| 工作电压 | 6 | - | 15 | VDC |
+| 每通道最大输出电流 | 0.5 | 0.5 | 0.5 | A |
+| 最大总电流 | 1.0 | 1.0 | 1.0 | A |
+| I2C总线输入输出电压 | 5 | 5 | 5 | V |
+| 通信协议 | I2C | I2C | I2C | / |
 
 
 ## 接口功能
@@ -168,12 +108,9 @@ Grove I2C 马达驱动器是 Grove 系列的新成员，同样拥有易于使用
 
 ![](https://files.seeedstudio.com/wiki/Grove-I2C_Motor_Driver_V1.2/img/I2CMotorDriver-4.jpg)
 
-<div>
-  <span style={{color: 'red'}}>**注意:**
-  </span>
-  <dl><dd>然而，首先要注意的是，你需要一个外部电源来为你的直流马达供电。Arduino板上的5V引脚无法为两个马达提供足够的电力，如果你这样做，可能会损坏你的Arduino。
-    </dd></dl>
-</div>
+:::danger 注意
+然而，首先要注意的是，你需要一个外部电源来为你的直流马达供电。Arduino板上的5V引脚无法为两个马达提供足够的电力，如果你这样做，可能会损坏你的Arduino。
+:::
 
 
 然后，按照以下方式为你的Arduino编写程序：

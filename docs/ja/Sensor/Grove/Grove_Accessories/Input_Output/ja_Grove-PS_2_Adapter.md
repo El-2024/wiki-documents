@@ -32,54 +32,12 @@ PS/2 Adapterは、PS2デバイスをArduino/Seeeduinoメインボードに接続
 ## 仕様
 
 ---
-<table  cellspacing="0" width="80%">
-<tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 最小値
-</th>
-<th scope="col"> 標準値
-</th>
-<th scope="col"> 最大値
-</th>
-<th scope="col"> 単位
-</th></tr>
-<tr>
-<th scope="row"> 電圧
-</th>
-<td> 4.75
-</td>
-<td> 5.0
-</td>
-<td> 5.25
-</td>
-<td> V
-</td></tr>
-<tr>
-<th scope="row"> 電流
-</th>
-<td colspan="3"> 100
-</td>
-<td> mA
-</td></tr>
-<tr>
-<th scope="row"> 通信モード
-</th>
-<td colspan="3"> PS/2通信プロトコル
-</td>
-<td> /
-</td></tr>
-<tr>
-<th scope="row"> クロック周波数
-</th>
-<td> 10
-</td>
-<td> 15
-</td>
-<td> 33
-</td>
-<td> KHZ
-</td></tr></table>
+| 項目 | 最小値 | 標準値 | 最大値 | 単位 |
+|------|--------|--------|--------|------|
+| 電圧 | 4.75 | 5.0 | 5.25 | V |
+| 電流 | 100 | 100 | 100 | mA |
+| 通信モード | PS/2通信プロトコル | PS/2通信プロトコル | PS/2通信プロトコル | / |
+| クロック周波数 | 10 | 15 | 33 | KHZ |
 
 ## 応用例
 
@@ -96,70 +54,14 @@ PS/2コネクタには以下の図に示すように6つのピンがあります
 
  ![](https://files.seeedstudio.com/wiki/Grove-PS_2_Adapter/img/MiniDIN-6_Connector.svg.png)
 
-<table  cellspacing="0" width="702">
-<tr>
-<th scope="col"> ピン
-</th>
-<th scope="col"> 名前
-</th>
-<th scope="col"> 機能
-</th>
-<th scope="col"> Groveインターフェースに対応
-</th></tr>
-<tr>
-<th scope="row"> 1
-</th>
-<td> +DATA
-</td>
-<td> データ
-</td>
-<td> DATA
-</td></tr>
-<tr>
-<th scope="row"> 2
-</th>
-<td> NC
-</td>
-<td> 予約済み
-</td>
-<td> -
-</td></tr>
-<tr>
-<th scope="row"> 3
-</th>
-<td> GND
-</td>
-<td> グランドライン
-</td>
-<td> GND
-</td></tr>
-<tr>
-<th scope="row"> 4
-</th>
-<td> Vcc
-</td>
-<td> +5DCV
-</td>
-<td> VCC
-</td></tr>
-<tr>
-<th scope="row"> 5
-</th>
-<td> +CLK
-</td>
-<td> クロック周波数
-</td>
-<td> CLK
-</td></tr>
-<tr>
-<th scope="row"> 6
-</th>
-<td> NC
-</td>
-<td> 予約済み
-</td>
-<td> -
-</td></tr></table>
+| ピン | 名前 | 機能 | Groveインターフェースに対応 |
+|------|------|------|---------------------------|
+| 1 | +DATA | データ | DATA |
+| 2 | NC | 予約済み | - |
+| 3 | GND | グランドライン | GND |
+| 4 | Vcc | +5DCV | VCC |
+| 5 | +CLK | クロック周波数 | CLK |
+| 6 | NC | 予約済み | - |
 
 1.PS/2マウスまたはキーボードをGrove-PS/2 Adapterに接続し、Groveを[Grove - Base Shield](https://www.seeedstudio.com/depot/grove-base-shield-p-754.html?cPath=132_134)のD5/D6に接続します。デジタルポートは自由に変更できますが、デモコードの定義でポート番号を同時に変更することを忘れないでください。
 

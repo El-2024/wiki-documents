@@ -72,7 +72,7 @@ CAN 总线具有许多优点，包括高可靠性、低成本以及在恶劣环�
 
 在本 Wiki 教程中，我们将使用 `node-red-contrib-socketcan` 节点，因此请按照 [安装节点](/reTerminal-DM-Getting-Started-with-Node-Red#install-nodes) 的指南安装 `node-red-contrib-socketcan`。
 
-##### 在 reTerminal DM 上配置 CAN BUS
+##### 在 reTerminal DM 上配置 CAN BUS {#configure-can-bus-on-reterminal-dm}
 
 :::note
 假设您可以直接访问 reTerminal DM 上的 `Terminal` 应用程序或通过 SSH 访问 reTerminal DM，如果不能，请按照 [此处](/reTerminal-DM-Getting-Started-with-Node-Red#install-node-red) 的第一步操作，熟悉如何进行操作。

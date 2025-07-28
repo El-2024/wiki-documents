@@ -29,7 +29,7 @@ last_update:
 
 * **高性能：** 高精度、可靠性和稳定性
 * **通用协议：** MODBUS-RTU RS485
-* **宽范围电源：** 3.6V ~ 30V
+* **宽范围电源：** 3.6V &#126; 30V
 * **工业级坚固性：** IP68 防护等级，适用于长期应用
 * **强抗干扰能力：** 采用阻燃环氧树脂制成
 * **高耐久性：** 防腐蚀，长期使用性能优异
@@ -77,7 +77,7 @@ last_update:
 </tr>
 <tr>
 <td class="tg-vkfu">电源</td>
-<td class="tg-vkfu">3.6 ~ 30V DC</td>
+<td class="tg-vkfu">3.6 &#126; 30V DC</td>
 </tr>
 <tr>
 <td class="tg-vkfu">电流消耗</td>
@@ -88,11 +88,11 @@ last_update:
 </tr>
 <tr>
 <td class="tg-vkfu">工作温度</td>
-<td class="tg-vkfu">-40℃ ~ +85℃</td>
+<td class="tg-vkfu">-40℃ &#126; +85℃</td>
 </tr>
 <tr>
 <td class="tg-vkfu">存储温度</td>
-<td class="tg-vkfu">-40℃ ~ +85℃</td>
+<td class="tg-vkfu">-40℃ &#126; +85℃</td>
 </tr>
 <tr>
 <td class="tg-vkfu">响应时间</td>
@@ -135,7 +135,7 @@ last_update:
 <tr><th class="tg-luhj" colspan="2">土壤温度</th></tr>
 <tr>
 <td class="tg-vkfu"><span data-data-data-data-style="font-size: small;">范围</span></td>
-<td class="tg-vkfu">-40℃ ~ +80℃</td>
+<td class="tg-vkfu">-40℃ &#126; +80℃</td>
 </tr>
 <tr>
 <td class="tg-vkfu">精度</td>
@@ -160,8 +160,8 @@ last_update:
 <tr>
 <td class="tg-vkfu">精度</td>
 <td class="tg-vkfu">
-<p>±3% (0~53%)</p>
-<p>±5% (53~100%)</p>
+<p>±3% (0&#126;53%)</p>
+<p>±5% (53&#126;100%)</p>
 </td>
 </tr>
 <tr>

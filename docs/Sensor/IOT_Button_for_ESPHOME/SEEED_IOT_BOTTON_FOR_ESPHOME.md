@@ -18,6 +18,15 @@ last_update:
 
 In this tutorial, we will show you how to connect the Seeed Studio IoT Button to Home Assistant using ESPHome. You'll learn how to set up the button to detect different press patterns (single click, double click, and long press) and trigger different actions in your smart home.
 
+:::note
+If you follow this Wiki to connect the IoT Button to ESPHome, please be aware of the potential limitation:
+
+**Manual Wake-Up and Reconnection Delay:** Each time you want to use the button, you need to manually wake it up by pressing it. After waking up, the device will need to reconnect to the network, which may take a short period before the button can be used again.
+
+If you pick up the IoT Button V2, there will be an additional power detection feature in the ESPHome over the generation.
+:::
+
+
 ## Materials Required
 
 <div class="table-center">
@@ -127,357 +136,17 @@ If you prefer to use the ESPHome dashboard for more control over the configurati
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/10.png" style={{width:1000, height:'auto'}}/></div>
 
-<details>
+Due to frequent code updates, please click on the button posted below to access the Yaml program.
 
-<summary>Click here to preview the full code</summary>
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://github.com/Seeed-Studio/xiao-esphome-projects/blob/main/projects/seeedstudio-iot-button/seeedstudio-iot-button.yaml">
+            <strong><span><font color={'FFFFFF'} size={"4"}>IoT Button V1 Yaml 🖱️</font></span></strong>
+    </a>
+    <a class="get_one_now_item" href="https://github.com/Seeed-Studio/xiao-esphome-projects/blob/main/projects/seeedstudio-iot-button/seeedstudio-iot-button-v2.yaml">
+            <strong><span><font color={'FFFFFF'} size={"4"}>IoT Button V2 Yaml 🖱️</font></span></strong>
+    </a>
+</div>
 
-```yaml
-substitutions:
-  name: "seeedstudio-iot-button"
-  friendly_name: "Seeed Studio IoT Button"
-
-esphome:
-  name: "${name}"
-  friendly_name: "${friendly_name}"
-  name_add_mac_suffix: true
-  project:
-    name: "seeedstudio.iot_button"
-    version: "3.3"
-  platformio_options:
-    board_upload.maximum_size: 4194304
-  on_boot:
-    priority: -100.0
-    then:
-      - light.turn_on: blue_led
-      - delay: 5min  # Wait for initialization
-      - logger.log: "Boot complete, entering light sleep"
-      - light_sleep.enter:
-          id: light_sleep_1
-
-esp32:
-  board: esp32-c6-devkitc-1
-  variant: esp32c6
-  flash_size: 4MB # upload.flash_size
-  framework:
-    type: esp-idf
-    sdkconfig_options:
-      CONFIG_FREERTOS_UNICORE: y
-      CONFIG_FREERTOS_HZ: '1000'
-      CONFIG_PM_USE_RTC_TIMER_REF: y
-      CONFIG_XTAL_FREQ_40: y
-      CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ: '80000000'
-      CONFIG_PM_DFS_INIT_AUTO: n
-      CONFIG_FREERTOS_USE_TICKLESS_IDLE: y
-      CONFIG_PM_ENABLE: y
-      CONFIG_PM_SLP_IRAM_OPT: y
-      CONFIG_PM_RTOS_IDLE_OPT: y
-      CONFIG_ESP_WIFI_SLP_IRAM_OPT: y
-      CONFIG_PM_POWER_DOWN_CPU_IN_LIGHT_SLEEP: y
-      CONFIG_PM_PROFILING: y
-
-external_components:
-  - source:
-      type: git
-      url: https://github.com/Seeed-Studio/xiao-esphome-projects
-      ref: main
-    components: [ light_sleep ]
-    refresh: 0s
-
-  - source:
-      type: git
-      url: https://github.com/ackPeng/esphome.git
-      ref: api
-    components: [ api ]
-    refresh: 0s
-    
-# Enable logging
-logger:
-  hardware_uart: USB_SERIAL_JTAG
-  level: DEBUG
-
-# Enable Home Assistant API
-api:
-
-ota:
-  - platform: esphome
-
-wifi:
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: "seeedstudio-iot-button"
-    # ap_timeout: 10s
-
-  # WiFi network status events
-  on_connect:
-    then:
-      - logger.log: "WiFi Connected!"
-      # Show green color for 3 seconds then turn off to save power
-      - light.turn_on: 
-          id: rgb_led
-          brightness: 100%
-          red: 0%
-          green: 100%
-          blue: 0%
-          effect: "Subtle Flicker"
-      - delay: 1s
-      - light.turn_off: rgb_led
-
-  on_disconnect:
-    then:
-      - logger.log: "WiFi Disconnected!"
-
-captive_portal:
-
-output:
-  - platform: gpio
-    pin: GPIO2
-    id: user_led
-    inverted: True
-  - platform: gpio
-    pin: GPIO18
-    id: enable_pin
-
-light_sleep:
-  id: light_sleep_1
-  wakeup_pin: 9
-  on_prepare_sleep:
-    then:
-      - logger.log: "Preparing to enter light sleep"
-      - light.turn_off: blue_led
-      - light.turn_off: rgb_led
-  on_wakeup:
-    then:
-      - light.turn_on: blue_led
-      - logger.log: "Device woke up from light sleep"
-      - globals.set:
-          id: last_activity_time
-          value: !lambda 'return millis();'
-
-# Switch to control the LED strip power
-switch:
-  - platform: output
-    name: "LED Strip Power"
-    output: enable_pin
-    id: led_power
-    restore_mode: ALWAYS_ON  # Auto-enable on startup
-    internal: true
-
-  # Virtual switches for button actions
-  - platform: template
-    name: "Switch 1"
-    id: virtual_toggle_1
-    optimistic: true
-    turn_on_action:
-      - logger.log: "Single Short Clicked"
-      - logger.log: "Switch 1 turned ON"
-      # Toggle blue LED to indicate button press
-      - light.turn_on:
-          id: rgb_led
-          effect: "Blink"
-      - delay: 1s
-      - light.turn_off: rgb_led
-      - globals.set:
-          id: last_activity_time
-          value: !lambda 'return millis();'
-      # Add your switch-on action
-    turn_off_action:
-      - logger.log: "Single Short Clicked"
-      - logger.log: "Switch 1 turned OFF"
-      # Toggle blue LED to indicate button press
-      - light.turn_on:
-          id: rgb_led
-          effect: "Blink"
-      - delay: 1s
-      - light.turn_off: rgb_led
-      - globals.set:
-          id: last_activity_time
-          value: !lambda 'return millis();'
-      # Add your closing action
-
-  - platform: template
-    name: "Switch 2"
-    id: virtual_toggle_2
-    optimistic: true
-    turn_on_action:
-      - logger.log: "Double Clicked"
-      - logger.log: "Switch 2 turned ON"
-      # Double blink blue LED to indicate button press
-      - light.turn_on:
-          id: rgb_led
-          brightness: 100%
-          red: 100%
-          green: 50%
-          blue: 0%
-          effect: "Subtle Flicker"
-      - delay: 1s
-      - light.turn_off: rgb_led
-      - globals.set:
-          id: last_activity_time
-          value: !lambda 'return millis();'
-      # Add your switch-on action
-    turn_off_action:
-      - logger.log: "Double Clicked"
-      - logger.log: "Switch 2 turned OFF"
-      # Double blink blue LED to indicate button press
-      - light.turn_on:
-          id: rgb_led
-          brightness: 100%
-          red: 100%
-          green: 50%
-          blue: 0%
-          effect: "Subtle Flicker"
-      - delay: 1s
-      - light.turn_off: rgb_led
-      - globals.set:
-          id: last_activity_time
-          value: !lambda 'return millis();'
-      # Add your closing action
-
-  - platform: template
-    name: "Switch 3"
-    id: virtual_toggle_3
-    optimistic: true
-    turn_on_action:
-      - logger.log: "Long Press"
-      - logger.log: "Switch 3 turned ON"
-      # Long blue LED on to indicate button press
-      - light.turn_on:
-          id: rgb_led
-          effect: "Rainbow"
-      - delay: 1s
-      - light.turn_off: rgb_led
-      - globals.set:
-          id: last_activity_time
-          value: !lambda 'return millis();'
-      # Add your switch-on action
-    turn_off_action:
-      - logger.log: "Long Press"
-      - logger.log: "Switch 3 turned OFF"
-      # Long blue LED on to indicate button press
-      - light.turn_on:
-          id: rgb_led
-          effect: "Rainbow"
-      - delay: 1s
-      - light.turn_off: rgb_led
-      - globals.set:
-          id: last_activity_time
-          value: !lambda 'return millis();'
-      # Add your closing action
-
-
-light:
-  - platform: binary
-    name: "SeeedStudio IoT Button Blue LED"
-    output: user_led
-    id: blue_led
-    internal: true
-  - platform: esp32_rmt_led_strip
-    internal: true
-    pin: GPIO19
-    num_leds: 1
-    restore_mode: RESTORE_AND_OFF
-    chipset: WS2812
-    rgb_order: GRB
-    is_rgbw: False
-    name: "RGB Status LED"
-    id: rgb_led
-    effects:
-      - random:
-          name: "Random Color"
-          transition_length: 5s
-          update_interval: 10s
-      - addressable_rainbow:
-          name: "Rainbow"
-      - strobe:
-          name: "Blink"
-          colors:
-            - state: True
-              brightness: 100%
-              red: 100%
-              green: 0%
-              blue: 50%
-              duration: 500ms
-            - state: False
-              duration: 500ms
-      - flicker:
-          name: "Subtle Flicker"
-          alpha: 95%
-          intensity: 1.5%
-
-binary_sensor:
-  - platform: gpio
-    pin:
-      number: GPIO9
-      inverted: True
-      mode:
-        input: True
-        pullup: True
-    name: "SeeedStudio IoT Button"
-    on_multi_click:
-      - timing:
-          - ON for at most 300ms
-          - OFF for at least 0.5s
-        then:
-          - logger.log: "Single Short Clicked"
-          - switch.toggle: virtual_toggle_1
-
-      - timing:
-          - ON for at most 300ms
-          - OFF for at most 0.5s
-          - ON for at most 300ms
-          - OFF for at least 0.2s 
-        then:
-          - logger.log: "Double Clicked"
-          - switch.toggle: virtual_toggle_2
-
-      - timing:
-          - ON for 1s to 1.5s
-          - OFF for at least 0.5s
-        then:
-          - logger.log: "Long Press"
-          - switch.toggle: virtual_toggle_3
-    on_press:
-      - globals.set:
-          id: button_press_time
-          value: !lambda 'return millis();'
-      - globals.set:
-          id: last_activity_time
-          value: !lambda 'return millis();'
-    on_release:
-      - globals.set:
-          id: last_activity_time
-          value: !lambda 'return millis();'
-      - if:
-          condition:
-            lambda: 'return (millis() - id(button_press_time)) >= 5000;'
-          then:
-            - logger.log: "Entering Light Sleep Mode"
-            - light_sleep.enter:
-                id: light_sleep_1
-
-globals:
-  - id: button_press_time
-    type: uint32_t
-    restore_value: no
-    initial_value: '0'
-  - id: last_activity_time
-    type: uint32_t
-    restore_value: no
-    initial_value: '0'
-
-interval:
-  - interval: 10s
-    then:
-      - if:
-          condition:
-            lambda: 'return (millis() - id(last_activity_time)) >= 120000;'
-          then:
-            - logger.log: "No activity for 2 minutes, entering light sleep"
-            - light_sleep.enter:
-                id: light_sleep_1
-```
-
-</details>
 
 :::note
 Make sure to replace "Your_WiFi_SSID" and "Your_WiFi_Password" with your actual WiFi credentials. The WiFi configuration should match the network where your Home Assistant server is running to ensure proper connectivity.
@@ -620,8 +289,7 @@ After the battery has been removed, due to the chip protection strategy of the 1
 
 ## Resources
 
-- **[GITHUB]** [Seeed IoT Button Github Zigbee Repository](https://github.com/Seeed-Projects/Seeed_IoT_Button_Zigbee)
-- **[GITHUB]** [Seeed IoT Button Github ESPHome Repository](https://github.com/Seeed-Studio/xiao-esphome-projects/tree/main/projects/seeedstudio-iot-button)
+- **[GITHUB]** [Seeed IoT Button Github Repository](https://github.com/Seeed-Studio/xiao-esphome-projects/tree/main/projects/seeedstudio-iot-button)
 - **[PDF]** [Seeed IoT Button SCH PDF](https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/Seeed_IoT_Button_SCH.pdf)
 - **[SCH&PCB]** [Seeed IoT Button SCH & PCB](https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/Seeed_IoT_Button_SCH&PCB.zip)
 

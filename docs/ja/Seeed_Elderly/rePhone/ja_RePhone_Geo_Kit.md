@@ -29,52 +29,53 @@ GSMモジュールとGPSモジュールの組み合わせが、RePhone Geo Kit�
 <table>
 <tr>
 <td> マイクロコントローラー </td>
-<td> MT2502
-</td></tr>
+<td> MT2502</td>
+</tr>
 <tr>
 <td> MCUコア </td>
-<td> 32ビット ARM7EJ-STM RISCプロセッサ
-</td></tr>
+<td> 32ビット ARM7EJ-STM RISCプロセッサ</td>
+</tr>
 <tr>
 <td> RAM </td>
-<td> 4 MB
-</td></tr>
+<td> 4 MB</td>
+</tr>
 <tr>
 <td> フラッシュメモリ </td>
-<td> 16 MB
-</td></tr>
+<td> 16 MB</td>
+</tr>
 <tr>
 <td> 電源供給 </td>
-<td> 3.3 ~ 4.2V（SIMなし）/3.5 ~ 4.2V（SIMあり）
-</td></tr>
+<td> 3.3 ~ 4.2V（SIMなし）/3.5 ~ 4.2V（SIMあり）</td>
+</tr>
 <tr>
 <td> 消費電力 </td>
-<td> 20mW/30mW/52mW @ 待機（無線なし）/待機（GSM）/待機（BT）
-</td></tr>
+<td> 20mW/30mW/52mW @ 待機（無線なし）/待機（GSM）/待機（BT）</td>
+</tr>
 <tr>
 <td> クアッドバンド </td>
-<td> 850/900/1800/1900 MHz
-</td></tr>
+<td> 850/900/1800/1900 MHz</td>
+</tr>
 <tr>
 <td> GPRS </td>
-<td> クラス12モデム
-</td></tr>
+<td> クラス12モデム</td>
+</tr>
 <tr>
 <td> クロックスピード </td>
-<td> 260 MHz
-</td></tr>
+<td> 260 MHz</td>
+</tr>
 <tr>
 <td> コネクタ </td>
-<td> Xadowモジュール用35ピンコネクタ＆11ピンコネクタ；バッテリー用JST 1.0コネクタ
-</td></tr>
+<td> Xadowモジュール用35ピンコネクタ＆11ピンコネクタ；バッテリー用JST 1.0コネクタ</td>
+</tr>
 <tr>
 <td> インターフェース </td>
-<td> LCD、オーディオ、I2C、SPI、UART、GPIOなど
-</td></tr>
+<td> LCD、オーディオ、I2C、SPI、UART、GPIOなど</td>
+</tr>
 <tr>
 <td> 寸法 </td>
-<td> 25.37mm × 20.30mm / 1” × 0.8”
-</td></tr></table>
+<td> 25.37mm × 20.30mm / 1” × 0.8”</td>
+</tr>
+</table>
 
 ###   Xadow GPS v2
 
@@ -83,88 +84,89 @@ GSMモジュールとGPSモジュールの組み合わせが、RePhone Geo Kit�
 <table>
 <tr>
 <td> マイクロコントローラー </td>
-<td> Kinetis KL02
-</td></tr>
+<td> Kinetis KL02</td>
+</tr>
 <tr>
 <td> コア </td>
-<td> ARM® 32ビット Cortex® -M0+CPU
-</td></tr>
+<td> ARM® 32ビット Cortex® -M0+CPU</td>
+</tr>
 <tr>
 <td> 電源供給 </td>
-<td> 3.3 ~ 6 V（ブレークアウトピン経由）
-</td></tr>
+<td> 3.3 ~ 6 V（ブレークアウトピン経由）</td>
+</tr>
 <tr>
 <td> フラッシュ </td>
-<td> 32 KB
-</td></tr>
+<td> 32 KB</td>
+</tr>
 <tr>
 <td> SRAM </td>
-<td> 4 KB
-</td></tr>
+<td> 4 KB</td>
+</tr>
 <tr>
 <td> クロックスピード </td>
-<td> 48 MHz
-</td></tr>
+<td> 48 MHz</td>
+</tr>
 <tr>
 <td> 消費電力 </td>
-<td> 18mA@追跡、21mA@取得
-</td></tr>
+<td> 18mA@追跡、21mA@取得</td>
+</tr>
 <tr>
 <td> 省電力 </td>
-<td> Typ. 3mA@AlwaysLocateTM、7uA@バックアップモード、180uA@スタンバイモード
-</td></tr>
+<td> Typ. 3mA@AlwaysLocateTM、7uA@バックアップモード、180uA@スタンバイモード</td>
+</tr>
 <tr>
 <td> チャンネル </td>
-<td> 22（追跡）/ 66（取得）
-</td></tr>
+<td> 22（追跡）/ 66（取得）</td>
+</tr>
 <tr>
 <td> 更新レート </td>
-<td> 1Hz（デフォルト）、最大10Hz
-</td></tr>
+<td> 1Hz（デフォルト）、最大10Hz</td>
+</tr>
 <tr>
 <td> 水平位置精度 </td>
-<td> &lt;2.5m CEP
-</td></tr>
+<td> &lt;2.5m CEP</td>
+</tr>
 <tr>
 <td> 速度精度 </td>
-<td> &lt;0.1m/s
-</td></tr>
+<td> &lt;0.1m/s</td>
+</tr>
 <tr>
 <td> 最大速度 </td>
-<td> 最大515m/s
-</td></tr>
+<td> 最大515m/s</td>
+</tr>
 <tr>
 <td> EASYTMによるコールド/ウォームスタート </td>
-<td> 215秒/5秒
-</td></tr>
+<td> 215秒/5秒</td>
+</tr>
 <tr>
 <td> 取得感度 </td>
-<td> -145dBm
-</td></tr>
+<td> -145dBm</td>
+</tr>
 <tr>
 <td> 追跡感度 </td>
-<td>-163dBm
-</td></tr>
+<td>-163dBm</td>
+</tr>
 <tr>
 <td> 動作温度 </td>
-<td> -40℃ ～ 85℃
-</td></tr>
+<td> -40℃ ～ 85℃</td>
+</tr>
 <tr>
 <td> プロトコル </td>
-<td> NMEA 0183/PMTK
-</td></tr>
+<td> NMEA 0183/PMTK</td>
+</tr>
 <tr>
 <td> アンテナタイプ </td>
-<td> チップアンテナ
-</td></tr>
+<td> チップアンテナ</td>
+</tr>
 <tr>
 <td> インターフェース </td>
-<td> Xadow GSM+BLEとのインターフェース（I2C、7ビットアドレス0x05）
-</td></tr>
+<td> Xadow GSM+BLEとのインターフェース（I2C、7ビットアドレス0x05）</td>
+</tr>
 <tr>
 <td> 寸法 </td>
-<td> 25.37mm × 20.30mm / 1” × 0.8”
-</td></tr></table>
+<td> 25.37mm × 20.30mm / 1” × 0.8”</td>
+</tr>
+</table>
 
 ###   Xadow GSM Breakout
 
@@ -173,8 +175,9 @@ GSMモジュールとGPSモジュールの組み合わせが、RePhone Geo Kit�
 <table>
 <tr>
 <td> 寸法 </td>
-<td> 25.37mm × 20.30mm / 1” × 0.8”
-</td></tr></table>
+<td> 25.37mm × 20.30mm / 1” × 0.8”</td>
+</tr>
+</table>
 
 ## モジュール接続
 ---

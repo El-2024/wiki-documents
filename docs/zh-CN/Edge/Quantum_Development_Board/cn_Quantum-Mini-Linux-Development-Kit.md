@@ -31,7 +31,8 @@ Atom-N上扩展搭载了麦克风、MPU6050 IMU（加速度计和陀螺仪）、
 您可以基于Atom-N方便地进行项目原型验证，然后设计自己的底板用于实际项目。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.368f1debxu4SfD&ft=t&id=631246135630"><strong><span><font color={'FFFFFF'} size={"4"}> 点击购买🖱️</font></span></strong>
+    <a class="get_one_now_item" href="https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.368f1debxu4SfD&ft=t&id=631246135630">
+        <strong><span><font color={'FFFFFF'} size={"4"}> 点击购买🖱️</font></span></strong>
     </a>
 </div>
 

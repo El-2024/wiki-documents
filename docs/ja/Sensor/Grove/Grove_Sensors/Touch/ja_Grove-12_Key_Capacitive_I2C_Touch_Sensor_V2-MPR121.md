@@ -105,7 +105,7 @@ CH0～CH11については、電極の静電容量データが取得されると�
 
 ![](https://files.seeedstudio.com/wiki/Grove-12_Key_Capacitive_I2C_Touch_Sensor_V2-MPR121/img/pin_map_back_1.jpg)
 
-:::cautionDanger
+:::caution
 中央パッドはアドレスワイヤに接続されています。ワイヤを切断して再溶接することでI2Cアドレスを変更できます。ナイフや溶接ガンを使用する際は、自分や他人の安全に十分注意してください。
 :::
 
@@ -253,7 +253,7 @@ void loop()
 
 - **ステップ 5.** Arduino IDE の **シリアルモニタ** を開きます。**ツール -> シリアルモニタ** をクリックするか、`ctrl`+`shift`+`m` キーを同時に押します。ボーレートを **115200** に設定してください。
 
-:::tipsuccess
+:::tip
 すべてが正常に動作すれば、結果が得られます。CH0 ~ CH11 のパッドに触れると、**キー ?pressed** および **キー ?release** がトリガーされます。
 :::
 
@@ -407,7 +407,7 @@ if __name__  == '__main__':
     main()
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作すれば、結果が得られます。CH0 ~ CH11 のパッドに触れると、対応する圧力値とともに **channel # pressed** および **Channel # released** がトリガーされます。
 :::
 

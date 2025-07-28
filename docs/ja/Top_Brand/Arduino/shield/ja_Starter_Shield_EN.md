@@ -171,24 +171,17 @@ Tick Tock Shield のはんだ付けを完了してから、以下のデモに進
 
 **注意**
 
-<dl><dd>1) MsTimer2 と Timerone ライブラリは、上記で提供した Tick Tock Shield Library に含まれています。これらは Arduino の公式ウェブサイトからダウンロードしました。すでにライブラリフォルダに存在する場合は、再度追加する必要はありません。
+1) MsTimer2 と Timerone ライブラリは、上記で提供した Tick Tock Shield Library に含まれています。これらは Arduino の公式ウェブサイトからダウンロードしました。すでにライブラリフォルダに存在する場合は、再度追加する必要はありません。
 
-</dd><dd>2) Tick Tock Shield ライブラリ内のすべてのデモで以下を定義しています：
+2) Tick Tock Shield ライブラリ内のすべてのデモで以下を定義しています：
 
-<dl><dd><dl><dd>K3 - メニューキー
-</dd><dd>K2 - 増加キー
-</dd><dd>K1 - 減少キー
-</dd><dd>D4 - LED_CLOCK_ADJUST
-
-</dd><dd>D3 - LED_ALARM_ADJUST
-
-</dd><dd>D2 - LED_ALARM_ENABLE
-
-</dd><dd>D1 - LED_BRIGHT_ADJUST
-
-</dd></dl>
-</dd></dl>
-</dd></dl>
+- K3 - メニューキー
+- K2 - 増加キー
+- K1 - 減少キー
+- D4 - LED_CLOCK_ADJUST
+- D3 - LED_ALARM_ADJUST
+- D2 - LED_ALARM_ENABLE
+- D1 - LED_BRIGHT_ADJUST
 
 ### 始めよう: Tick Tock Shield で楽しむ  
 
@@ -196,39 +189,33 @@ Tick Tock Shield のはんだ付けを完了してから、以下のデモに進
 
 **デモ 1: LED のスイープ**
 
-<dl><dd>1. このデモでは、最も基本的なアクチュエータである LED の使用のみを含みます。
+1. このデモでは、最も基本的なアクチュエータである LED の使用のみを含みます。
 
-</dd><dd>2. Arduino IDE を再起動します。次のパスで例「RunLED」を開きます: File --&gt; Examples --&gt; TickTockShield--&gt; RunLED。
+2. Arduino IDE を再起動します。次のパスで例「RunLED」を開きます: File --&gt; Examples --&gt; TickTockShield--&gt; RunLED。
 
 ![](https://files.seeedstudio.com/wiki/Starter_Shield_EN/img/Open_RunLED_Code.jpg)
 
-</dd><dd>3. このデモでは、設定可能な速度で4つのLEDをスイープできます。関数「runLED(speed)」のパラメータを変更することでスイープ速度を変更できます。関数のコメントでさらに詳しい説明を見つけてください。
+3. このデモでは、設定可能な速度で4つのLEDをスイープできます。関数「runLED(speed)」のパラメータを変更することでスイープ速度を変更できます。関数のコメントでさらに詳しい説明を見つけてください。
 
-</dd><dd>4. アップロードボタンをクリックしてプログラムを Arduino にアップロードします。
+4. アップロードボタンをクリックしてプログラムを Arduino にアップロードします。
 
-</dd><dd>5. プログラムがアップロードされると、4つのLEDが左から右へ指定された速度で点灯・消灯する様子が見られます。
-
-</dd></dl>
+5. プログラムがアップロードされると、4つのLEDが左から右へ指定された速度で点灯・消灯する様子が見られます。
 
 **デモ 2: キーで LED を制御**
 
 このデモでは、最も基本的な入力であるボタンを使用してLEDを制御する方法を示します。
 
-<dl><dd>1. 上記の「RunLED」と同じ方法で例「ControlLED」を開きます。
+1. 上記の「RunLED」と同じ方法で例「ControlLED」を開きます。
 
-</dd><dd>2. このデモでは、キーを使用して4つのLEDをオンまたはオフにすることができます。このテストの状態を保存するために、TEST_START と TEST_END の2つのフラグを設定します。「メニュー」キーが押されるたびに、状態が TEST_START と TEST_END の間で切り替わります。TEST_START の状態では、「増加」キーが押されるたびに右から左へ1つのLEDが追加で点灯します。「減少」キーは「増加」キーとは逆の効果を持ちます。
-
-</dd></dl>
+2. このデモでは、キーを使用して4つのLEDをオンまたはオフにすることができます。このテストの状態を保存するために、TEST_START と TEST_END の2つのフラグを設定します。「メニュー」キーが押されるたびに、状態が TEST_START と TEST_END の間で切り替わります。TEST_START の状態では、「増加」キーが押されるたびに右から左へ1つのLEDが追加で点灯します。「減少」キーは「増加」キーとは逆の効果を持ちます。
 
 **デモ 3: キーでブザーの音程を変更**
 
 このデモでは、ブザーを使用して音を出す方法を示します。また、すでにボタンの使用方法を知っているため、このデモではボタンを使用してブザーの音程を増加または減少させます。
 
-<dl><dd>1. 例「changeThePitch」を開きます。
+1. 例「changeThePitch」を開きます。
 
-</dd><dd>2. 「増加」キーが押されるたびに、ブザーの音程が上昇します。「減少」キーが押されると、音程が下降します。
-
-</dd></dl>
+2. 「増加」キーが押されるたびに、ブザーの音程が上昇します。「減少」キーが押されると、音程が下降します。
 
 **デモ 4: 温度を表示**
 

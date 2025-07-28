@@ -63,7 +63,7 @@ If you want to follow this tutorial through everything, you will need to prepare
 The content of this tutorial will broadly go through the following steps.
 
 1. [Select your Home Assistant environment](#select-your-home-assistant-environment)
-2. [Install and cofigure ESPHome in Home Assistant](#install-and-configure-esphome-in-home-assistant)
+2. Install and cofigure ESPHome in Home Assistant
 3. [Configure the XIAO ESP32C3 and ESPHome connection](#configure-the-xiao-esp32c3-and-esphome-connection)
 4. [Add Relay Module to Home Assistant Dashboard](#add-relay-module-to-home-assistant-dashboard)
 

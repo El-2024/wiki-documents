@@ -241,7 +241,7 @@ while True:
     time.sleep(1)
 ```
 
-#### 2. Reproducir la canción << He's a pirate >>
+#### 2. Reproducir la canción "He's a pirate"
 
 ```cpp
 import machine

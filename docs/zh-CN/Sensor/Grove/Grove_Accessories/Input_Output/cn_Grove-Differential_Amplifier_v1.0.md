@@ -48,73 +48,13 @@ sku:    103020016
 ## 规格
 
 ---
-<table  cellspacing="0" width="80%">
-<tr>
-<th colspan="2" scope="col"> 项目
-</th>
-<th scope="col"> 最小值
-</th>
-<th scope="col"> 典型值
-</th>
-<th scope="col"> 最大值
-</th>
-<th scope="col"> 单位
-</th></tr>
-<tr>
-<th colspan="2" scope="row"> 工作电压
-</th>
-<td> 2.7
-</td>
-<td> 5.0
-</td>
-<td> 36
-</td>
-<td> VDC
-</td></tr>
-<tr>
-<th colspan="2" scope="row"> 输入电压
-    </th>
-<td> 0.1
-</td>
-<td> \
-</td>
-<td> (Vcc-0.8)/增益
-</td>
-<td> mV
-</td></tr>
-<tr>
-<th colspan="2" scope="row"> 输出电压
-</th>
-<td> 0
-</td>
-<td> \
-</td>
-<td> Vcc-0.80
-</td>
-<td> mV
-</td></tr>
-<tr>
-<th rowspan="2"> 增益
-</th>
-<td> 选择 304
-</td>
-<td> 297.92
-</td>
-<td> 304
-</td>
-<td> 310.08
-</td>
-<td colspan="2" rowspan="2"> /
-</td></tr>
-<tr>
-<td> 选择 971
-</td>
-<td> 951.58
-</td>
-<td> 971
-</td>
-<td> 990.42
-</td></tr></table>
+| 项目 | | 最小值 | 典型值 | 最大值 | 单位 |
+|------|---|--------|--------|--------|------|
+| 工作电压 | | 2.7 | 5.0 | 36 | VDC |
+| 输入电压 | | 0.1 | \ | (Vcc-0.8)/增益 | mV |
+| 输出电压 | | 0 | \ | Vcc-0.80 | mV |
+| 增益 | 选择 304 | 297.92 | 304 | 310.08 | / |
+| | 选择 971 | 951.58 | 971 | 990.42 | / |
 
 ## 接口功能
 
@@ -167,7 +107,7 @@ void loop()
     int value;
     float V,Vo;
     float Sum=0;
-    for(i=0;i&lt;10;i++)
+    for(i=0;i<10;i++)
     {
         value=analogRead(4);
         V=value*5.00/1023;

@@ -79,8 +79,8 @@ Inter Edison For Arduino
     <td class="tg-yw4l">Grove - Touch Sensor[(to Wiki)](/Grove-Touch_Sensor)</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Grove-Light_Sensor_v1.2_product_view_700_.jpg)](/Grove-Light_Sensor_v1.2)</td>
-    <td class="tg-yw4l">Grove - Light Sensor v1.2[(to Wiki)](/Grove-Light_Sensor_v1.2)</td>
+    <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Grove-Light_Sensor_v1.2_product_view_700_.jpg)](/Grove-Light_Sensor)</td>
+<td class="tg-yw4l">Grove - Light Sensor v1.2[(to Wiki)](/Grove-Light_Sensor)</td>
   </tr>
   <tr>
     <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Grove_Temperature_Sensor_View.jpg)](https://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html)</td>
@@ -150,36 +150,37 @@ Install the compute module, attach the legs, and plug in your cables.
 
 <table>
 <tr>
-<td> **Windows**</td>
-<td> The Windows 64-bit installer will install your drivers, update your firmware, and let you install your development environment (IDE) </td>
-<td> [Download 64-bit version](https://downloadmirror.intel.com/25384/eng/w_iot_2015.0.031.exe)
-</td></tr>
+<td>**Windows**</td>
+<td>The Windows 64-bit installer will install your drivers, update your firmware, and let you install your development environment (IDE)</td>
+<td>[Download 64-bit version](https://downloadmirror.intel.com/25384/eng/w_iot_2015.0.031.exe)</td>
+</tr>
 <tr>
-<td> **OS X** </td>
-<td> The Mac* OS X* installer will update your firmware, and let you install your development environment (IDE) </td>
-<td> [Download](https://downloadmirror.intel.com/25384/eng/m_iot_dev_kit_2015.0.026.tar.gz)
-</td></tr>
+<td>**OS X**</td>
+<td>The Mac* OS X* installer will update your firmware, and let you install your development environment (IDE)</td>
+<td>[Download](https://downloadmirror.intel.com/25384/eng/m_iot_dev_kit_2015.0.026.tar.gz)</td>
+</tr>
 <tr>
-<td> **Linux** </td>
-<td> The Linux* installer will update your firmware, and let you install your development environment (IDE) </td>
-<td> [Download](https://downloadmirror.intel.com/25384/eng/l_iot_dev_kit_2015.0.019.tar.gz)
-</td></tr></table>
+<td>**Linux**</td>
+<td>The Linux* installer will update your firmware, and let you install your development environment (IDE)</td>
+<td>[Download](https://downloadmirror.intel.com/25384/eng/l_iot_dev_kit_2015.0.019.tar.gz)</td>
+</tr>
+</table>
 
 If you are have a windows 32-bit system or having errors with the installer, Intel also provide manual process to install the drivers or update your firmware:
 
 <table>
 <tr>
 <td> **Windows**</td>
-<td> [Try Manual Process](https://software.intel.com/en-us/get-started-edison-windows-32-step2)
-</td></tr>
+<td>[Try Manual Process](https://software.intel.com/en-us/get-started-edison-windows-32-step2)</td>
+</tr>
 <tr>
 <td> **OS X** </td>
-<td> [Try Manual Process](https://software.intel.com/en-us/installing-firmware-with-flash-tool-mac)
-</td></tr>
+<td>[Try Manual Process](https://software.intel.com/en-us/installing-firmware-with-flash-tool-mac)</td>
+</tr>
 <tr>
 <td> **Linux** </td>
-<td> [Try Manual Process](https://software.intel.com/en-us/flashing-firmware-on-your-intel-edison-board-linux)
-</td></tr></table>
+<td>[Try Manual Process](https://software.intel.com/en-us/flashing-firmware-on-your-intel-edison-board-linux)</td>
+</tr></table>
 
 ###  Step 3: Set Up a Serial Terminal
 
@@ -205,65 +206,54 @@ Using 26AWG Grove Cable making the following connections:
 
 <table>
 <tr>
-<th>  Grove Modules
-</th>
-<th> Connected to
-</th></tr>
+<th>Grove Modules</th>
+<th>Connected to</th>
+</tr>
 <tr>
-<td width="200px"> Temperature&amp;Humidity Sensor
-</td>
-<td width="100px"> I2C
-</td></tr>
+<td width="200px">Temperature&amp;Humidity Sensor</td>
+<td width="100px">I2C</td>
+</tr>
 <tr>
-<td width="200px"> Moisture Sensor
-</td>
-<td width="100px"> A1
-</td></tr>
+<td width="200px">Moisture Sensor</td>
+<td width="100px">A1</td>
+</tr>
 <tr>
-<td width="200px"> Light Sensor
-</td>
-<td width="100px"> A2
-</td></tr>
+<td width="200px">Light Sensor</td>
+<td width="100px">A2</td>
+</tr>
 <tr>
-<td width="200px"> UV Sensor
-</td>
-<td width="100px"> A3
-</td></tr>
+<td width="200px">UV Sensor</td>
+<td width="100px">A3</td>
+</tr>
 <tr>
-<td width="200px"> PIR Motion Sensor
-</td>
-<td width="100px"> D7
-</td></tr>
+<td width="200px">PIR Motion Sensor</td>
+<td width="100px">D7</td>
+</tr>
 <tr>
-<td width="200px"> Encoder
-</td>
-<td width="100px"> D2
-</td></tr>
+<td width="200px">Encoder</td>
+<td width="100px">D2</td>
+</tr>
 <tr>
-<td width="200px"> Button
-</td>
-<td width="100px"> UART(D1)
-</td></tr>
+<td width="200px">Button</td>
+<td width="100px">UART(D1)</td>
+</tr>
 <tr>
-<td width="200px"> LCD RGB Backlight
-</td>
-<td width="100px"> I2C
-</td></tr>
+<td width="200px">LCD RGB Backlight</td>
+<td width="100px">I2C</td>
+</tr>
 <tr>
-<td width="200px"> Relay
-</td>
-<td width="100px"> D5
-</td></tr>
+<td width="200px">Relay</td>
+<td width="100px">D5</td>
+</tr>
 <tr>
-<td width="200px"> Servo
-</td>
-<td width="100px"> D6
-</td></tr>
+<td width="200px">Servo</td>
+<td width="100px">D6</td>
+</tr>
 <tr>
-<td width="200px"> Buzzer
-</td>
-<td width="100px"> D4
-</td></tr></table>
+<td width="200px">Buzzer</td>
+<td width="100px">D4</td>
+</tr>
+</table>
 
 ![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Edison_Indoor_Wire_Figure.png)
 
@@ -283,7 +273,7 @@ Using 26AWG Grove Cable making the following connections:
 
 ![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Upload_Indoor_Kit_Demo.png)
 
-5. Open **Serial Monitor**, it will print the sensors’ information:
+5. Open **Serial Monitor**, it will print the sensors' information:
 
 ![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Indoor_Kit_Serial_Monitor.png)
 
@@ -291,60 +281,50 @@ Using 26AWG Grove Cable making the following connections:
 
 ![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Indoor_Kit_Rotate_Encoder.png)
 
-7. In the **“Send TextBox”**, you can enter the following command to operate the sensors and actuators:
-
-_set [sensor][condition:&gt;, &lt; or =][ threshold],[actuator]=[action]_
+7. In the **"Send TextBox"**, you can enter the following command to operate the sensors and actuators:
 
 <table>
 <tr>
-<th>  Example
-</th>
-<th> Description
-</th></tr>
+<th>Example</th>
+<th>Description</th>
+</tr>
 <tr>
-<td width="300px"> _set temp&gt;40, relay=1_
-</td>
-<td width="500px"> if temperature is higher than 40℃, the relay opens.
-</td></tr>
+<td width="300px">_set temp&gt;40, relay=1_</td>
+<td width="500px">if temperature is higher than 40℃, the relay opens.</td>
+</tr>
 <tr>
-<td width="300px"> _set temp&gt;40, sleep=1_
-</td>
-<td width="500px"> if temperature is &gt;40℃, nothing to do.
-</td></tr>
+<td width="300px">_set temp&gt;40, sleep=1_</td>
+<td width="500px">if temperature is &gt;40℃, nothing to do.</td>
+</tr>
 <tr>
-<td width="300px"> _set humi&gt;60, buzzer=1_
-</td>
-<td width="500px"> if humidity is &gt;60%, the buzzer beeps.
-</td></tr>
+<td width="300px">_set humi&gt;60, buzzer=1_</td>
+<td width="500px">if humidity is &gt;60%, the buzzer beeps.</td>
+</tr>
 <tr>
-<td width="300px"> _set light&gt;600, servo=90_
-</td>
-<td width="500px"> if light intensity is &gt;600, the servo truns 90°.
-</td></tr>
+<td width="300px">_set light&gt;600, servo=90_</td>
+<td width="500px">if light intensity is &gt;600, the servo truns 90°.</td>
+</tr>
 <tr>
-<td width="300px"> _set uv&gt;80, relay=0_
-</td>
-<td width="500px"> if UV intensity is &gt;80, the relay closes.
-</td></tr>
+<td width="300px">_set uv&gt;80, relay=0_</td>
+<td width="500px">if UV intensity is &gt;80, the relay closes.</td>
+</tr>
 <tr>
-<td width="300px"> _set pir=1, buzzer=1_
-</td>
-<td width="500px"> if people detected, the buzzer beeps.
-</td></tr>
+<td width="300px">_set pir=1, buzzer=1_</td>
+<td width="500px">if people detected, the buzzer beeps.</td>
+</tr>
 <tr>
-<td width="300px"> _set ms&gt;40, relay=1_
-</td>
-<td width="500px"> if moisture is &gt;40, the relay opens.
-</td></tr>
+<td width="300px">_set ms&gt;40, relay=1_</td>
+<td width="500px">if moisture is &gt;40, the relay opens.</td>
+</tr>
 <tr>
-<td width="300px"> _set ssid=name, psw=password_
-</td>
-<td width="500px"> set the wifi SSID and Password.you can open a web browser, and go to the IP address displayed on the Serial Monitor or LCD. The default port is 88. he default port is 88. Such as: 192.168.1.101:88
-</td></tr></table>
+<td width="300px">_set ssid=name, psw=password_</td>
+<td width="500px">set the wifi SSID and Password.you can open a web browser, and go to the IP address displayed on the Serial Monitor or LCD. The default port is 88. he default port is 88. Such as: 192.168.1.101:88</td>
+</tr>
+</table>
 
 Note:
 
-*   The command should be ended with ‘/n’, so **“NewLine”** (in the Serial Monitor) should be selected.
+*   The command should be ended with 'n', so **"NewLine"** (in the Serial Monitor) should be selected.
 
 *   A actuator can only be controlled by a sensor. If A sensor wants to control a actuator(has be controlled by B sensor), B sensor should be set sleep.
 

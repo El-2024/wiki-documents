@@ -59,20 +59,20 @@ RP2040 使用的 Arduino 库:  https://github.com/bakercp/PacketSerial
 
 | PKT_TYPE  | DIR	 | 说明  |
 |:----------|:----------|:----------|
-| 0x00    | ESP32<->RP2040    |   ACK，字符串，值为：'ACK'  |
-| 0xA0    | ESP32->RP2040    |  采集间隔命令，PKT_PARA 为 uint32_t |
-| 0xA1    | ESP32->RP2040    |  蜂鸣器开启命令，PKT_PARA 为 uint32_t   |
-| 0xA2    | ESP32->RP2040    |  蜂鸣器关闭命令，PKT_PARA 为 uint32_t  |
-| 0xA3    | ESP32->RP2040    |  关机命令，PKT_PARA 为 uint32_t  |
-| 0xA4    | ESP32->RP2040    |  开机命令，PKT_PARA 为 uint32_t  |
-| 0xA0~0xAF  | ESP32->RP2040    |  其他数据或命令   |
-| 0xB0    | RP2040->ESP32    | SCD41 温度数据，PKT_PARA 为 float    |
-| 0xB1    | RP2040->ESP32    | SCD41 湿度数据，PKT_PARA 为 float    |
-| 0xB2    | RP2040->ESP32    | SCD41 CO2 数据，PKT_PARA 为 float    |
-| 0xB3    | RP2040->ESP32    | ATH20 温度数据，PKT_PARA 为 float    |
-| 0xB4    | RP2040->ESP32    | ATH20 湿度数据，PKT_PARA 为 float    |
-| 0xB5    | RP2040->ESP32    | SGP40 tVOC 数据，PKT_PARA 为 float，范围 0~500 指数   |
-| 0xB6~0xBF    | RP2040->ESP32    | 其他数据或命令，PKT_PARA 为 float    |
+| 0x00    | ESP32↔RP2040    |   ACK，字符串，值为：'ACK'  |
+| 0xA0    | ESP32→RP2040    |  采集间隔命令，PKT_PARA 为 uint32_t |
+| 0xA1    | ESP32→RP2040    |  蜂鸣器开启命令，PKT_PARA 为 uint32_t   |
+| 0xA2    | ESP32→RP2040    |  蜂鸣器关闭命令，PKT_PARA 为 uint32_t  |
+| 0xA3    | ESP32→RP2040    |  关机命令，PKT_PARA 为 uint32_t  |
+| 0xA4    | ESP32→RP2040    |  开机命令，PKT_PARA 为 uint32_t  |
+| 0xA0~0xAF  | ESP32→RP2040    |  其他数据或命令   |
+| 0xB0    | RP2040→ESP32    | SCD41 温度数据，PKT_PARA 为 float    |
+| 0xB1    | RP2040→ESP32    | SCD41 湿度数据，PKT_PARA 为 float    |
+| 0xB2    | RP2040→ESP32    | SCD41 CO2 数据，PKT_PARA 为 float    |
+| 0xB3    | RP2040→ESP32    | ATH20 温度数据，PKT_PARA 为 float    |
+| 0xB4    | RP2040→ESP32    | ATH20 湿度数据，PKT_PARA 为 float    |
+| 0xB5    | RP2040→ESP32    | SGP40 tVOC 数据，PKT_PARA 为 float，范围 0~500 指数   |
+| 0xB6~0xBF    | RP2040→ESP32    | 其他数据或命令，PKT_PARA 为 float    |
 
 # **技术支持**
 

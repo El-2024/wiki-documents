@@ -217,7 +217,7 @@ sudo ./docker-ubuntu.sh
     - 各画像に5つのキャプション
     - キーポイント付きの25万人
 
-    <div align=center><img width = 700 src="https://files.seeedstudio.com/wiki/node-red/22.png"/></div>
+    <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/node-red/22.png"/></div>
 
 設定が完了したら、インターフェース右上の**デプロイ**ボタンをクリックしてください。プログラムストリームが実行を開始します。
 

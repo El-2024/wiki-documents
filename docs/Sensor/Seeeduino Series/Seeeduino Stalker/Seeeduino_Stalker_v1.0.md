@@ -47,7 +47,7 @@ Seeeduino Stalker is a feature rich Arduino compatible Wireless Sensor Network n
 
 - Data Acquisition System capable of communicating with an App running on iPhone/Android Phone/Nokia Phone (using [BluetoothBee](https://seeeddoc.github.io/Bluetooth_Bee/)  - bought seperately)
 
-- RF Remote Control (using [RFBee](https://seeeddoc.github.io/RFbee_V1.1-Wireless_Arduino_compatible_node/) (title=undefined) - bought seperately)
+- RF Remote Control (using [RFBee](https://seeeddoc.github.io/RFbee_V1.1-Wireless_Arduino_compatible_node/) - bought seperately)
 
 - As a simple standalone Arduino compatible physical computing platform ([UartSBee](https://seeeddoc.github.io/UartSBee/)  must be bought seperately for programming)
 
@@ -82,13 +82,13 @@ Seeeduino Stalker is a feature rich Arduino compatible Wireless Sensor Network n
 
 ### Electrical Characterstics ###
 
- |Specifications|Min|Norm|Max|Units|
+|Specifications|Min|Norm|Max|Units|
 |---|---|---|---|---|
- |Input voltage|  5|  9|  12|  Volts (DC)|
- |Global Current Consumption|  -|  300|  1000|  mA|
- |3.3V I2C voltage|  3.2|  3.3|3.5|  Volts (DC)|
- |5.0V I2C voltage|  4.6|  4.7|  5|  Volts (DC)|
-| UART Baud Rate(while programming)|  -|  -|  115200|  bps|
+|Input voltage|5|9|12|Volts (DC)|
+|Global Current Consumption|-|300|1000|mA|
+|3.3V I2C voltage|3.2|3.3|3.5|Volts (DC)|
+|5.0V I2C voltage|4.6|4.7|5|Volts (DC)|
+|UART Baud Rate(while programming)|-|-|115200|bps|
 
 ## Usage ##
 
@@ -102,7 +102,7 @@ Seeeduino Stalker is a feature rich Arduino compatible Wireless Sensor Network n
 
 - **Bee series** socket - 2*10 pin 2.0mm pitch (which will mate with - one at a time - any of the **wireless modules**: **XBee**, [BluetoothBee](https://seeeddoc.github.io/Bluetooth_Bee/) , **GPSBee**or [RFBee](https://seeeddoc.github.io/RFbee_V1.1-Wireless_Arduino_compatible_node/) .) Communication with these modules are done through UART.
 
-- Serial interface – To save space and lower costs, USB<->Serial connectivity is not provided by default. You may use the FT232 based UartSBee (title=undefined) or other USB to serial adapter to do the programming or communicate with the PC.
+- Serial interface – To save space and lower costs, USB&lt;-&gt;Serial connectivity is not provided by default. You may use the FT232 based UartSBee or other USB to serial adapter to do the programming or communicate with the PC.
 
 - User LED and Switch – An LED and a Switch have been provided onboard for use in your application as desired.
 

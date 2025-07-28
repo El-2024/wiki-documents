@@ -199,7 +199,8 @@ idf.py build
 
 ### ステップ 3. ファームウェアを書き込む
 
-<details><summary>WSL2を使用する場合はusbipdが必要です</summary>
+<details>
+<summary>WSL2を使用する場合はusbipdが必要です</summary>
 
 WSL2を使用している場合は、[usbipd](https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/WSL.md#usbipd)をインストールする必要があります。
 

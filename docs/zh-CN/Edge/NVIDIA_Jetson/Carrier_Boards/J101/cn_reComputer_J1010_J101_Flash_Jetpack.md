@@ -23,8 +23,8 @@ no_comments: false # for Disqus
 
 我们可以使用 **NVIDIA SDK Manager** Linux 软件，或者直接通过 Linux 命令行使用 **NVIDIA Linux 驱动包** 将 JetPack OS 刷写到 reComputer J1010 上。对于 NVIDIA Jetson 的初学者，我们强烈推荐使用 NVIDIA SDK Manager。
 
-- [选项 1 - 通过 NVIDIA SDK Manager 刷写 JetPack OS](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [选项 2 - 通过命令行刷写 JetPack OS](#flashing-jetpack-os-via-command-line)
+- 选项 1 - 通过 NVIDIA SDK Manager 刷写 JetPack OS
+- 选项 2 - 通过命令行刷写 JetPack OS
 
 在开始之前，我们需要进行一些准备工作：
 

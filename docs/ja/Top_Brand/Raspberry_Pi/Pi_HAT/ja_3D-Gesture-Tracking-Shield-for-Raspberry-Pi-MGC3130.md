@@ -22,17 +22,17 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/3D-Gesture-Tracking-Shield-for-Raspberry-Pi-MGC3130/img/detect-part.jpg)
 
-<div align="center"><b>図1.</b><i>感知エリア</i></div>
+<div align="center"><b>図 1.</b><i>感知エリア</i></div>
 
 ストリップエリアは、北、南、西、東の方向変化を感知できます。中央エリアはタッチ、タップ、ダブルクリック、そしてその上の空中でのジェスチャーを感知できます。そのため、このシールドを「3Dジェスチャー＆トラッキングシールド」と呼んでいます。中央エリアに直接触れる必要はなく、中央エリアの上で手を振るだけで、このシールドは動きを感知します。
 
 Microchipの特許技術であるGestIC®テクノロジーのおかげで、このシールドは電気的近接場センサーを利用して動きを検出します。このシールドは中央パネルの上に磁場を生成し、手が近づくと磁場が干渉を受けます。シールドの下にある磁場受信機がその変化を検出します。
 
 ![](https://files.seeedstudio.com/wiki/3D-Gesture-Tracking-Shield-for-Raspberry-Pi-MGC3130/img/MF1.jpg)
-<div align="center"><b>図2.</b><i>手がない場合の磁場</i></div>
+<div align="center"><b>図 2.</b><i>手がない場合の磁場</i></div>
 
 ![](https://files.seeedstudio.com/wiki/3D-Gesture-Tracking-Shield-for-Raspberry-Pi-MGC3130/img/MF2.jpg)
-<div align="center"><b>図3.</b><i>手がある場合の磁場</i></div>
+<div align="center"><b>図 3.</b><i>手がある場合の磁場</i></div>
 
 このHATはI2Cインターフェースを介してRaspberry Piと通信します。また、他のモジュールと連携する必要がある場合に備えて、Grove I2Cコネクタも用意されています。
 
@@ -60,7 +60,7 @@ Microchipの特許技術であるGestIC®テクノロジーのおかげで、こ
 |主なチップ|MGC3130|
 |検出範囲|0～10 cm|
 |温度範囲|-20°C～+85°C|
-|受信感度| <1 fF|
+|受信感度| &lt;1 fF|
 |位置更新速度|200位置/秒|
 |空間解像度|最大150 dpi|
 |搬送周波数|44 kHz～115 kHz|
@@ -87,13 +87,13 @@ Microchipの特許技術であるGestIC®テクノロジーのおかげで、こ
 
 ### I2Cを有効化する
 
-- ステップ1. `sudo raspi-config` を実行します。
-- ステップ2. 下矢印キーを使用して「5 Interfacing Options」を選択します。
-- ステップ3. 「P5 I2C」を選択します。
-- ステップ4. I2Cを有効化するか尋ねられたら「はい」を選択します。
-- ステップ5. カーネルモジュールを自動的にロードするか尋ねられた場合も「はい」を選択します。
-- ステップ6. 右矢印キーを使用してボタンを選択します。
-- ステップ7. 再起動するか尋ねられたら「はい」を選択します。
+- ステップ 1. `sudo raspi-config` を実行します。
+- ステップ 2. 下矢印キーを使用して「5 Interfacing Options」を選択します。
+- ステップ 3. 「P5 I2C」を選択します。
+- ステップ 4. I2Cを有効化するか尋ねられたら「はい」を選択します。
+- ステップ 5. カーネルモジュールを自動的にロードするか尋ねられた場合も「はい」を選択します。
+- ステップ 6. 右矢印キーを使用してボタンを選択します。
+- ステップ 7. 再起動するか尋ねられたら「はい」を選択します。
 
 :::tip
 raspi-configに関する詳細情報は、[https://www.raspberrypi.org/documentation/configuration/raspi-config.md](https://www.raspberrypi.org/documentation/configuration/raspi-config.md) を参照してください。
@@ -101,14 +101,14 @@ raspi-configに関する詳細情報は、[https://www.raspberrypi.org/documenta
 
 ### ncursesをインストールする
 
-**ステップ1**：以下のリンクからダウンロードします：[こちら](https://invisible-mirror.net/archives/ncurses/)
+**ステップ 1**：以下のリンクからダウンロードします：[こちら](https://invisible-mirror.net/archives/ncurses/)
 
 ```
 cd ~
 wget https://invisible-mirror.net/archives/ncurses/ncurses-6.1.tar.gz
 ```
 
-**ステップ2**：ncursesをインストールします
+**ステップ 2**：ncursesをインストールします
 
 ```
 tar -xvf ncurses-6.1.tar.gz
@@ -118,7 +118,7 @@ make
 sudo make install
 ```
 
-**ステップ3**：ncursesが正常にインストールされたか確認します
+**ステップ 3**：ncursesが正常にインストールされたか確認します
 
 ```
 ncurses6-config --version
@@ -126,7 +126,7 @@ ncurses6-config --version
 
 ### デモを実行する
 
-**ステップ1**：mgc3103をインストールし、mgc3103を実行します。
+**ステップ 1**：mgc3103をインストールし、mgc3103を実行します。
 
 ```
 cd ~
@@ -136,7 +136,7 @@ make clean && make
 ./mgc3130
 ```
 
-**ステップ2**：以下が出力例です。
+**ステップ 2**：以下が出力例です。
 
 ```
  *

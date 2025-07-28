@@ -44,10 +44,8 @@ SenseCAP 产品线提供了一系列满足不同用户需求的产品，从爱�
 [**SenseCAP T1000**](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html) 是一款紧凑型 LoRaWAN® 追踪器，利用 GNSS/Wi-Fi/Bluetooth 实现精准的室内外定位追踪。它具有自适应地理功能、本地数据存储以及长达数月的电池续航。此外，它还配备了温度、光照和运动传感器，非常适合各种基于位置的应用。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/sensecap_t1000_tracker/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/sensecap_t1000_tracker/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
 ### LoRaWAN 传感器
@@ -69,8 +67,7 @@ SenseCAP S210X 是一系列无线 LoRaWAN® 传感器。它在城市场景中可
 |<p style={{textAlign: 'center'}}>[立即购买！](https://www.seeedstudio.com/SenseCAP-S2108-Soil-Moisture-Temperature-and-Pore-EC-Sensor-p-5825.html)</p>|<p style={{textAlign: 'center'}}>[立即购买！](https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html)</p>|<p style={{textAlign: 'center'}}>[立即购买！](https://www.seeedstudio.com/SenseCAP-S2106-p-5647.html)</p>|<p style={{textAlign: 'center'}}>[立即购买！](https://www.seeedstudio.com/SenseCAP-S2107-Temperature-Sensor-p-5807.html)</p>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/SenseCAP_LoRaWAN_S210X_Series_Sensor/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/SenseCAP_LoRaWAN_S210X_Series_Sensor/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
 
@@ -81,10 +78,8 @@ SenseCAP S210X 是一系列无线 LoRaWAN® 传感器。它在城市场景中可
 [SenseCAP LoRaWAN S2120 气象站](https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html) 通过全球 LoRaWAN 网络收集并上传空气温度、湿度、风速/风向、降雨强度、光强、紫外线指数和气压数据。S2120 气象站适用于花园、农业、气象、城市环境监测等场景。它还具有超低功耗、可靠性能、内置蓝牙支持 OTA 配置和远程设备管理，从而降低维护成本。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor_Introduction/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor_Introduction/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
 #### SenseCAP A1101 视觉 AI 传感器
@@ -94,10 +89,8 @@ SenseCAP S210X 是一系列无线 LoRaWAN® 传感器。它在城市场景中可
 [SenseCAP A1101](https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html) - LoRaWAN 视觉 AI 传感器是一款支持 TinyML 边缘 AI 的智能图像传感器。它支持多种 AI 模型，例如图像识别、人数统计、目标检测、仪表识别等。它还支持使用 TensorFlow Lite 进行模型训练。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/SenseCAP-Vision-AI-Get-Started/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/SenseCAP-Vision-AI-Get-Started/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
 ### SenseCAP ONE 气象传感器
@@ -118,8 +111,7 @@ SenseCAP ONE 是一系列一体化紧凑型气象传感器，将多个传感器�
 |<p style={{textAlign: 'center'}}>[S1000](https://www.seeedstudio.com/SenseCAP-S1000-10-in-1-Compact-Weather-Station-p-5654.html)</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>||
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/SenseCAP-ONE-Compact-Weather-Station-Introduction/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/SenseCAP-ONE-Compact-Weather-Station-Introduction/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
 ### 传感器探头
@@ -144,8 +136,7 @@ SenseCAP ONE 是一系列一体化紧凑型气象传感器，将多个传感器�
 |<p style={{textAlign: 'center'}}>[立即购买！](https://www.seeedstudio.com/Rain-Gauge-RG-9-p-4744.html)</p>|<p style={{textAlign: 'center'}}>[立即购买！](https://www.seeedstudio.com/Rain-Gauge-RG-15-p-4648.html)</p>|<p style={{textAlign: 'center'}}>[立即购买！](https://www.seeedstudio.com/Water-Leak-Detector-p-4620.html)</p>|
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/SenseCAP_Sensor_Probes_Product_Catalogue/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/SenseCAP_Sensor_Probes_Product_Catalogue/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
 ### 传感器构建器
@@ -157,10 +148,8 @@ SenseCAP ONE 是一系列一体化紧凑型气象传感器，将多个传感器�
 SenseCAP S2110 传感器构建器是一项突破性解决方案，能够融合工业级模块和创客级模块。它是一款开源工具，能够使用 500+ Grove 模块构建 RS485 功能模块。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Builder_build_LoRaWAN_Sensors/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Builder_build_LoRaWAN_Sensors/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
 ### 数据记录器
@@ -180,8 +169,7 @@ SenseCAP 提供两种类型的数据记录器：
 SenseCAP 解码器用于解码由 SenseCAP LoRaWAN® 设备发送的 LoRaWAN 消息。解码后，用户的应用程序将获得更友好且易于阅读的消息。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Decoder/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Decoder/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
 ## 软件服务
@@ -236,8 +224,7 @@ SenseCAP 门户旨在帮助客户管理设备、数据和访问密钥。在创�
 如今，我们可以使用无线 LoRa 数据采集器，通过蓝牙设置传感器连接到应用程序，并在五分钟内构建一个产品，直接应用于商业项目。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/develop_an_industrial_lorawan_sensor/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/develop_an_industrial_lorawan_sensor/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
 ### 与 Home Assistant 和 SenseCAP 传感器的协作
@@ -247,8 +234,7 @@ SenseCAP 门户旨在帮助客户管理设备、数据和访问密钥。在创�
 在这一系列文章中，我将分享如何在 Home Assistant 中构建一个出色的智能家居，并使用来自 Seeed Studio 的 SenseCAP 产品传感器。这是我们的第一个里程碑。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_with_sensecap_lorawan_sensors/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_with_sensecap_lorawan_sensors/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
 ## ✨ 贡献者项目

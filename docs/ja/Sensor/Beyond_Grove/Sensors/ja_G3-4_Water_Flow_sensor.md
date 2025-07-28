@@ -24,62 +24,19 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## 仕様
 
 ---
-<table>
-  <tbody><tr>
-      <td>最小動作電圧
-      </td>
-      <td>DC 4.5V
-      </td></tr>
-    <tr>
-      <td>最大動作電流
-      </td>
-      <td>15mA(DC 5V)
-      </td></tr>
-    <tr>
-      <td width="400px">動作電圧
-      </td>
-      <td width="400px">5V～24V
-      </td></tr>
-    <tr>
-      <td>流量範囲
-      </td>
-      <td>1～60L/min
-      </td></tr>
-    <tr>
-      <td>負荷容量
-      </td>
-      <td>≤10mA(DC 5V)
-      </td></tr>
-    <tr>
-      <td>動作温度
-      </td>
-      <td>≤80℃
-      </td></tr>
-    <tr>
-      <td>液体温度
-      </td>
-      <td>≤120℃
-      </td></tr>
-    <tr>
-      <td>動作湿度
-      </td>
-      <td>35%～90%RH
-      </td></tr>
-    <tr>
-      <td>水圧
-      </td>
-      <td>≤2.0MPa
-      </td></tr>
-    <tr>
-      <td>保管温度
-      </td>
-      <td>-25℃～+80℃
-      </td></tr>
-    <tr>
-      <td>保管湿度
-      </td>
-      <td>25%～95%RH
-      </td></tr></tbody></table>
+| 項目 | 値 |
+|------|-----|
+| 最小動作電圧 | DC 4.5V |
+| 最大動作電流 | 15mA(DC 5V) |
+| 動作電圧 | 5V～24V |
+| 流量範囲 | 1～60L/min |
+| 負荷容量 | ≤10mA(DC 5V) |
+| 動作温度 | ≤80℃ |
+| 液体温度 | ≤120℃ |
+| 動作湿度 | 35%～90%RH |
+| 水圧 | ≤2.0MPa |
+| 保管温度 | -25℃～+80℃ |
+| 保管湿度 | 25%～95%RH |
 
 ## 機械的寸法
 
@@ -87,139 +44,19 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### センサー構成部品
 
-<table>
-  <tbody><tr>
-      <th>No.
-      </th>
-      <th>名称
-      </th>
-      <th>数量
-      </th>
-      <th>材質
-      </th>
-      <th>備考
-      </th></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={200}> 1
-      </td>
-      <td width={150}> バルブボディ
-      </td>
-      <td width={150}> 1
-      </td>
-      <td width={150}> PA66+33%ガラス繊維
-      </td>
-      <td width={150}>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={200}> 2
-      </td>
-      <td width={150}> ステンレス鋼ビーズ
-      </td>
-      <td width={150}> 1
-      </td>
-      <td width={150}> ステンレス鋼 SUS304
-      </td>
-      <td width={150}>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 3
-      </td>
-      <td> 軸
-      </td>
-      <td> 1
-      </td>
-      <td> ステンレス鋼 SUS304
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 4
-      </td>
-      <td> インペラー
-      </td>
-      <td> 1
-      </td>
-      <td> POM
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 5
-      </td>
-      <td> リングマグネット
-      </td>
-      <td> 1
-      </td>
-      <td> フェライト
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 6
-      </td>
-      <td> 中間リング
-      </td>
-      <td> 1
-      </td>
-      <td> PA66+33%ガラス繊維
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 7
-      </td>
-      <td> Oシールリング
-      </td>
-      <td> 1
-      </td>
-      <td> ゴム
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 8
-      </td>
-      <td> 電子シールリング
-      </td>
-      <td> 1
-      </td>
-      <td> ゴム
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 9
-      </td>
-      <td> カバー
-      </td>
-      <td> 1
-      </td>
-      <td> PA66+33%ガラス繊維
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 10
-      </td>
-      <td> ネジ
-      </td>
-      <td> 4
-      </td>
-      <td> ステンレス鋼 SUS304
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 11
-      </td>
-      <td> ケーブル
-      </td>
-      <td> 1
-      </td>
-      <td> 1007 24AWG
-      </td>
-      <td>
-      </td></tr></tbody></table>
+| No. | 名称 | 数量 | 材質 | 備考 |
+|-----|------|------|------|------|
+| 1 | バルブボディ | 1 | PA66+33%ガラス繊維 | |
+| 2 | ステンレス鋼ビーズ | 1 | ステンレス鋼 SUS304 | |
+| 3 | 軸 | 1 | ステンレス鋼 SUS304 | |
+| 4 | インペラー | 1 | POM | |
+| 5 | リングマグネット | 1 | フェライト | |
+| 6 | 中間リング | 1 | PA66+33%ガラス繊維 | |
+| 7 | Oシールリング | 1 | ゴム | |
+| 8 | 電子シールリング | 1 | ゴム | |
+| 9 | カバー | 1 | PA66+33%ガラス繊維 | |
+| 10 | ネジ | 4 | ステンレス鋼 SUS304 | |
+| 11 | ケーブル | 1 | 1007 24AWG | |
 
 ## 使用例
 
@@ -302,24 +139,12 @@ void loop ()
 ---
 水平テストでのパルス周波数 (Hz) = 5.5Q、Qは流量 (L/min) を表します。（結果は±3%の範囲内）
 
-<table>
-<tr>
-<td width="400px">出力パルスの高レベル</td>
-<td width="400px">信号電圧 &gt;4.5 V (入力 DC 5 V)</td>
-</tr>
-<tr>
-<td>出力パルスの低レベル</td>
-<td>信号電圧 &lt;0.5 V (入力 DC 5 V)</td>
-</tr>
-<tr>
-<td>精度</td>
-<td>3% (流量 1L/min から 10L/min)</td>
-</tr>
-<tr>
-<td>出力信号のデューティサイクル</td>
-<td>40%～60%</td>
-</tr>
-</table>
+| 項目 | 値 |
+|------|-----|
+| 出力パルスの高レベル | 信号電圧 &gt;4.5 V (入力 DC 5 V) |
+| 出力パルスの低レベル | 信号電圧 &lt;0.5 V (入力 DC 5 V) |
+| 精度 | 3% (流量 1L/min から 10L/min) |
+| 出力信号のデューティサイクル | 40%～60% |
 
 ![](https://files.seeedstudio.com/wiki/G3-4_Water_Flow_sensor/img/G34_Flow_rate_to_frequency.jpg)
 

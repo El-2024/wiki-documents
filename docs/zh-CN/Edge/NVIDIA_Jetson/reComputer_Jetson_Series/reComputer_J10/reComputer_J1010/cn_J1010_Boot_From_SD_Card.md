@@ -36,7 +36,7 @@ git clone https://github.com/limengdu/bootFromUSB
 
 点击蓝色区域，然后点击绿色区域选择 "Format Partition"（格式化分区）。
 
-<div align="center"><img width="{800}" src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/disk_fix_1.jpg" /></div>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/disk_fix_1.jpg" /></div>
 
 点击绿色区域选择 "Internal disk for use with Linux systems only (Ext4)"（仅供 Linux 系统使用的内部磁盘 (Ext4)）。在黄色区域的 "Volume Name"（卷名称）中填写您想要的名称。
 
@@ -67,18 +67,18 @@ cd bootFromUSB
 
     当我们从载板上的 eMMC 启动后，想要修改为从 SD 卡启动时，需要确保之前的步骤（包括将系统烧录到 SD 卡以及安装 SD 卡驱动）已正确完成。将 root 后的参数修改为我们要启动的设备地址。当完成修改后，重启系统。
 
-    **重启前修改 "/boot/extlinux/extlinux.conf"，重启后查看 "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf"**
+    **重启前修改 "/boot/extlinux/extlinux.conf"，重启后查看 "/media/seeed/\{xxx-xxx\}/boot/extlinux/extlinux.conf"**
 
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/config_3.png" /></div>
 
     !!!注意
-        系统从 SD 卡启动后的配置文件为 "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf"，而从板载 eMMC 启动后的配置文件为 "/boot/extlinux/extlinux.conf"。它们是相同的文件，设备会从中读取配置并选择在上电后从哪里启动系统。当系统完成启动后，相关路径会发生变化。
+        系统从 SD 卡启动后的配置文件为 "/media/seeed/\{xxx-xxx\}/boot/extlinux/extlinux.conf"，而从板载 eMMC 启动后的配置文件为 "/boot/extlinux/extlinux.conf"。它们是相同的文件，设备会从中读取配置并选择在上电后从哪里启动系统。当系统完成启动后，相关路径会发生变化。
 
 - 从板载 eMMC 启动
 
     当我们从 SD 卡启动后，想要切换回从 eMMC 启动，或者需要更换 SD 卡时，我们需要先将设备改回从 eMMC 启动。我们应进行以下更改。
 
-    **重启前修改 "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf"，重启后查看 "/boot/extlinux/extlinux.conf"**
+    **重启前修改 "/media/seeed/\{xxx-xxx\}/boot/extlinux/extlinux.conf"，重启后查看 "/boot/extlinux/extlinux.conf"**
 
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/config_4.png" /></div>
 

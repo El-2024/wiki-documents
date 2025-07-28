@@ -51,8 +51,7 @@ last_update:
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong></a>
 </div>
 
 我们还需要确保已安装 TensorFlow 和 PyTorch——但我会在这里详细说明。
@@ -519,7 +518,7 @@ if __name__ == "__main__":
 </div>
 
 如果我们想提供一个 prompt（这是推荐的做法），URL 将如下所示：
-*http://jetsonIP:8080/generate_image?prompt=<your_prompt>*
+*http://jetsonIP:8080/generate_image?prompt=&lt;your_prompt&gt;*
 
 我们可以扩展这个示例来构建一个更好的页面，比如添加一些文本框供用户输入、一个漂亮的背景等。但这属于另一个项目。
 
@@ -669,7 +668,7 @@ wget -P $MODEL_DIR https://huggingface.co/stabilityai/stable-diffusion-xl-refine
 如果程序被终止或出现错误，请增加存储空间。我之前也遇到过这个问题，增加存储空间后，一切都正常了。
 
 使用以下提示词：
->手持法杖，orbstaff <lora:orbstaff:0.60> ，，(由 Gabriel Isak 和 Adam Elsheimer 创作:1.20)，(由 Jon Whitcomb、Bayard Wu 和 Malcolm Liepke 创作:0.80)，8k，专业时尚摄影
+>手持法杖，orbstaff &lt;lora:orbstaff:0.60&gt; ，，(由 Gabriel Isak 和 Adam Elsheimer 创作:1.20)，(由 Jon Whitcomb、Bayard Wu 和 Malcolm Liepke 创作:0.80)，8k，专业时尚摄影
 
 [来自这张图片](https://civitai.com/images/8570722)，
 在没有负面提示词的情况下，我得到了以下结果：

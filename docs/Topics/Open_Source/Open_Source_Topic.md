@@ -36,21 +36,24 @@ Seeed Studio is committed to the open-source hardware movement, and in that spir
       <th>Get all the files</th>
 		</tr>
 		<tr>
-			<td><div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/ATSAMD51.pdf"><strong><span> 📚 [PDF] ATSAMD51N19A Datasheet</span></strong></a></div>
-              <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal_SCH&PCB.zip"><strong><span> 📚 [ZIP] Schematics & PCB</span></strong></a></div>
-              <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Main-V3.0-White-72x57x10.4mm.pdf"><strong><span> 📚 Enclosure Dimensions - Front</span></strong></a></div>
-              <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Main-Back-V3.0-White-72x57x7.1mm.pdf"><strong><span> 📚 Enclosure Dimensions - Back</span></strong></a></div>
-              <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-PCB-V3.0.dxf"><strong><span> 📚 [DXF] PCB Dimensions</span></strong></a></div>
-              <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Chassis-Battery.dxf"><strong><span> 📚 [DXF] Battery Chassis Dimensions</span></strong></a></div>
+			<td>
+        <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/ATSAMD51.pdf"><strong><span> 📚 [PDF] ATSAMD51N19A Datasheet</span></strong></a></div>
+        <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal_SCH&PCB.zip"><strong><span> 📚 [ZIP] Schematics & PCB</span></strong></a></div>
+        <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Main-V3.0-White-72x57x10.4mm.pdf"><strong><span> 📚 Enclosure Dimensions - Front</span></strong></a></div>
+        <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Main-Back-V3.0-White-72x57x7.1mm.pdf"><strong><span> 📚 Enclosure Dimensions - Back</span></strong></a></div>
+        <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-PCB-V3.0.dxf"><strong><span> 📚 [DXF] PCB Dimensions</span></strong></a></div>
+        <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Chassis-Battery.dxf"><strong><span> 📚 [DXF] Battery Chassis Dimensions</span></strong></a></div>
       </td>
-			<td><div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/02%20Gerber%20Files"><strong><span> ⚙️ Gerber Files</span></strong></a></div>
-      <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/03%20Firmware%20Source%20Code"><strong><span> ⚙️ Firmware Source Code</span></strong></a></div>
-      <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/04%20Bill%20of%20Materials%20(BOM)"><strong><span> ⚙️ Bill of Materials (BOM)</span></strong></a></div>
-      <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/05%20Production%20Testing%20Plan"><strong><span> ⚙️ Production Testing Plan</span></strong></a></div>
-      <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/06%20Production%20SOP"><strong><span> ⚙️ Production SOP</span></strong></a></div>
-      <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/07%203D%20Models%20of%20the%20Enclosure"><strong><span> ⚙️ 3D Models of the Enclosure</span></strong></a></div>
+			<td>
+        <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/02%20Gerber%20Files"><strong><span> ⚙️ Gerber Files</span></strong></a></div>
+        <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/03%20Firmware%20Source%20Code"><strong><span> ⚙️ Firmware Source Code</span></strong></a></div>
+        <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/04%20Bill%20of%20Materials%20(BOM)"><strong><span> ⚙️ Bill of Materials (BOM)</span></strong></a></div>
+        <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/05%20Production%20Testing%20Plan"><strong><span> ⚙️ Production Testing Plan</span></strong></a></div>
+        <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/06%20Production%20SOP"><strong><span> ⚙️ Production SOP</span></strong></a></div>
+        <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/07%203D%20Models%20of%20the%20Enclosure"><strong><span> ⚙️ 3D Models of the Enclosure</span></strong></a></div>
 			</td>
-			<td><a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/open_source_topic/OSHW-WioTerminal.zip"><strong><span>⏬ Download All the files</span></strong></a>
+			<td>
+        <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/open_source_topic/OSHW-WioTerminal.zip"><strong><span>⏬ Download All the files</span></strong></a>
 			</td>
 		</tr>
 	</table>
@@ -69,7 +72,6 @@ Seeed Studio is committed to the open-source hardware movement, and in that spir
     </div>
   </div>
 </a>
-
 
 ## Open Source Software
 
@@ -126,4 +128,3 @@ Thank you for choosing our products! We are here to provide you with different s
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>
-

@@ -98,7 +98,7 @@ Wi-Fi 定位系统是一种地理定位系统，它利用附近 Wi-Fi 热点和�
 
 <iframe width="100%" height="500" src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/install.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-## 使用 XIAO ESP32S3 连接网络并获取公网 IP
+## 使用 XIAO ESP32S3 连接网络并获取公网 IP {#connect-to-the-network-and-obtain-public-ip-with-the-xiao-esp32s3}
 
 :::tip
 如果你对 XIAO ESP32S3 的网络功能不熟悉，可以阅读 [Seeed Studio XIAO ESP32S3 (Sense) 的 WiFi 使用指南](https://wiki.seeedstudio.com/xiao_esp32s3_wifi_usage/)。
@@ -149,7 +149,7 @@ if (WiFi.hostByName("ip-api.com", publicIP)) {
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/7.png" style={{width:600, height:'auto'}}/></div>
 
-## 使用 ipstack 平台获取位置坐标
+## 使用 ipstack 平台获取位置坐标 {#obtain-location-coordinates-with-the-ipstack-platform}
 
 使用 IP 地址进行位置查询通常需要一些公共服务器库的信息。我们可以借助某些平台的 API 接口来获取这些服务器信息。例如，在本教程中，我们将使用 [ipstack](https://ipstack.com) 平台。
 
@@ -259,7 +259,7 @@ bool getLocation(){
 
 可以看出，这种定位方式的误差在公里范围内，与我们对追踪器的期望相差甚远。
 
-## 通过 HTTPS 服务从 Google Maps 下载静态图片
+## 通过 HTTPS 服务从 Google Maps 下载静态图片 {#download-static-images-from-google-maps-via-https-service}
 
 纬度和经度坐标在我们的视角中并不直观。即使它们包含了国家和城市的信息。所以我们想知道是否可以将这些纬度和经度坐标标记在地图上并显示在屏幕上。于是我们找到了 Google Cloud 的地图服务。
 
@@ -267,7 +267,7 @@ bool getLocation(){
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/12.png" style={{width:800, height:'auto'}}/></div>
 
-如果您是首次注册用户，将会有 **$300** 的免费额度。这里我们主要使用的是 Maps Static API，其费用为 **$2.00 每 1000 次调用**。
+如果您是首次注册用户，将会有 **\$300** 的免费额度。这里我们主要使用的是 Maps Static API，其费用为 **\$2.00 每 1000 次调用**。
 
 ### 第 4 步：[设置您的 Google Cloud 项目](https://developers.google.com/maps/documentation/elevation/cloud-setup)并完成后续的设置说明
 
@@ -285,7 +285,7 @@ bool getLocation(){
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/4.png" style={{width:1000, height:'auto'}}/></div>
 :::
 
-## 在圆形显示屏上显示位置地图
+## 在圆形显示屏上显示位置地图 {#display-the-location-map-on-the-round-display}
 
 :::tip
 如果您是首次使用 XIAO 的圆形显示屏，那么您可能需要参考 [此处的 Wiki](https://wiki.seeedstudio.com/get_start_round_display/) 来为圆形屏幕配置您的 Arduino 环境。
@@ -314,7 +314,7 @@ https://maps.googleapis.com/maps/api/staticmap?parameters
 
 Maps Static API 使用以下 URL 参数定义地图图像：
 
-- `center`（如果未提供 markers 则为必需）定义地图的中心点，该点与地图所有边缘等距。此参数接受一个以逗号分隔的 {latitude,longitude} 坐标对（例如 "40.714728,-73.998672"）或一个字符串地址（例如 "city hall, new york, ny"），用于标识地球表面上的唯一位置。
+- `center`（如果未提供 markers 则为必需）定义地图的中心点，该点与地图所有边缘等距。此参数接受一个以逗号分隔的 \{latitude,longitude\} 坐标对（例如 "40.714728,-73.998672"）或一个字符串地址（例如 "city hall, new york, ny"），用于标识地球表面上的唯一位置。
 - `zoom`（如果未提供 markers 则为必需）定义地图的缩放级别，决定地图的放大程度。此参数接受一个数值，表示所需区域的缩放级别。
 - `size`（必需）定义地图图像的矩形尺寸。此参数接受一个格式为 `{horizontal_value}x{vertical_value}` 的字符串。
 - `maptype`（可选）定义要构建的地图类型。可能的 maptype 值包括 roadmap、satellite、hybrid 和 terrain。
@@ -511,7 +511,7 @@ void setup() {
 
 屏幕上还会显示与您的 IP 地址对应的地理位置图片。
 
-## 使用 WFPS 方法进行定位
+## 使用 WFPS 方法进行定位 {#positioning-using-the-wfps-method}
 
 正如我们在前面的步骤中比较过的，使用 IP 地址进行定位的精度确实很差。因此，接下来我们将使用 WFPS 方法改进程序，看看精度是否有所变化。
 
@@ -584,7 +584,7 @@ void getLocation(){
 
 位置偏差已经在 1 公里左右！这种性能甚至比某些 GPS 模块还要好。
 
-## 实时更新最新位置
+## 实时更新最新位置 {#live-updates-on-the-latest-location}
 
 最后一步，我们将完成这个全球定位追踪器。让它实现自动地图刷新功能。
 

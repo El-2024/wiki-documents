@@ -37,7 +37,8 @@ Con una placa de desarrollo Wio Tracker 1110 (basada en Nordic nRF52840 para BLE
 
 ### Especificación
 
-<table><tr><th colspan="3"><b>General</b></th></tr>
+<table>
+<tr><th colspan="3"><b>General</b></th></tr>
 <tr><td colspan="1" rowspan="2"><b>Voltaje de alimentación</b></td><td colspan="2">5V (USB 2.0 Tipo-C)</td></tr>
 <tr><td colspan="1">Conector de batería</td><td colspan="1">3.7V</td></tr>
 <tr><td colspan="1" rowspan="3"><b>Interfaz</b></td><td colspan="1">RFIO</td><td colspan="1"><p>GNSS Conector de Antena* 1</p><p>LoRa Conector de Antena* 1</p></td></tr>
@@ -48,11 +49,11 @@ Con una placa de desarrollo Wio Tracker 1110 (basada en Nordic nRF52840 para BLE
 <tr><td colspan="1"><b>Exterior FLASH Memory</b></td><td colspan="2">4M</td></tr>
 <tr><td colspan="3"><b>LoRa® y posicionamiento (Semtech LR1110)</b></td></tr>
 <tr><td colspan="1"><b>Protocolo LoRaWAN®</b></td><td colspan="2">V1.0.4</td></tr>
-<tr><td colspan="1"><b>Frecuencias</b></td><td colspan="2">863~928MHz</td></tr>
+<tr><td colspan="1"><b>Frecuencias</b></td><td colspan="2">863&#126;928MHz</td></tr>
 <tr><td colspan="1"><b>Sensitividad</b></td><td colspan="2"><p>-125dBm @125K/SF7</p><p>-141dBm @125K/SF12</p></td></tr>
 <tr><td colspan="1"><b>Potencia de Salida</b></td><td colspan="2">20dBm max @LoRa®</td></tr>
 <tr><td colspan="1"><b>Tecnología de Posicionamiento</b></td><td colspan="2">GNSS(GPS/BeiDou), WiFi Sniffer</td></tr>
-<tr><td colspan="1"><b>Range</b></td><td colspan="2">2~10km (Depende de la antena y el ambiente)</td></tr>
+<tr><td colspan="1"><b>Range</b></td><td colspan="2">2&#126;10km (Depende de la antena y el ambiente)</td></tr>
 <tr><td colspan="3"><b>Bluetooth(Nordic nRF52840)</b></td></tr>
 <tr><td colspan="1"><b>Bluetooth</b></td><td colspan="2">Bluetooth 5.3</td></tr>
 <tr><td colspan="1"><b>Flash</b></td><td colspan="2">1MB</td></tr>
@@ -61,12 +62,12 @@ Con una placa de desarrollo Wio Tracker 1110 (basada en Nordic nRF52840 para BLE
 <tr><td colspan="1"><b>Potencia de Salida</b></td><td colspan="2">6dBm max @Bluetooth</td></tr>
 <tr><td colspan="3"><b>Sensores integrados -- TH Sensor (SHT41)</b></td></tr>
 <tr><td colspan="1"></td><td colspan="1"><b>Rango</b></td><td colspan="1"><b>Precisión</b></td></tr>
-<tr><td colspan="1"><b>Temperatura</b></td><td colspan="1">-40~85°C</td><td colspan="1">± 0.2°C</td></tr>
-<tr><td colspan="1"><b>Humedad</b></td><td colspan="1">0~100%RH</td><td colspan="1">±1.8%RH</td></tr>
+<tr><td colspan="1"><b>Temperatura</b></td><td colspan="1">-40&#126;85°C</td><td colspan="1">± 0.2°C</td></tr>
+<tr><td colspan="1"><b>Humedad</b></td><td colspan="1">0&#126;100%RH</td><td colspan="1">±1.8%RH</td></tr>
 <tr><td colspan="3"><b>Sensores integrados -- 3-Axis Accelerometro( No usado )</b></td></tr>
 <tr><td colspan="1"><b>Rango</b></td><td colspan="2">±2g, 4g, 8g, 16g</td></tr>
-<tr><td colspan="1"><b>Ancho de Banda</b></td><td colspan="2">0\.5Hz ~ 625Hz</td></tr>
-<tr><td colspan="1"><b>Sensitividad (LSB/g)</b></td><td colspan="2">1000 (±2g) ~ 83 (±16g)</td></tr>
+<tr><td colspan="1"><b>Ancho de Banda</b></td><td colspan="2">0.5Hz &#126; 625Hz</td></tr>
+<tr><td colspan="1"><b>Sensitividad (LSB/g)</b></td><td colspan="2">1000 (±2g) &#126; 83 (±16g)</td></tr>
 </table>
 
 
@@ -82,7 +83,7 @@ Con una placa de desarrollo Wio Tracker 1110 (basada en Nordic nRF52840 para BLE
 | **Active Area**         | 21.74 (W) × 11.175 (H) mm |
 | **Dot Pitch**           | 0.17 (W) × 0.175 (H) mm  |
 | **Dot Size**            | 0.15 (W) × 0.15 (H) mm   |
-| **Operating Temperature Range** | -20 ~ 70 ℃ |
+| **Operating Temperature Range** | -20 &#126; 70 ℃ |
 
 
 ## Primeros Pasos

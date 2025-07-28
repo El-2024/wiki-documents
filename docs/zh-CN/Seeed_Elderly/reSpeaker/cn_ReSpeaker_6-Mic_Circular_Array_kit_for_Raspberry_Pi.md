@@ -95,7 +95,7 @@ PC                                  x1
 
 耳机或Speaker               x1
 
-:::tips
+:::tip
 实时上该套件支持 Raspberry Pi Zero, Raspberry Pi 1 B+, Raspberry Pi 2 B, Raspberry Pi 3 B ,Raspberry Pi 3 model B+和Raspberry Pi 4, 在这个wiki中我们用的是Raspberry Pi 3 B
 :::
 
@@ -319,7 +319,7 @@ aplay -D plughw:1,0 -r 16000 mono_to_play.wav
 
 您也可以使用Audacity进行播放和录制。
 
-:::tips
+:::tip
 你可以通过图形界面手动点击打开audacity或者通过命令行打开
 :::
 

@@ -311,9 +311,9 @@ A1: To change the measurement range you need to modify both the hardware and sof
 #define MODUEL_RANGE           20
 ```
 
-$$
+```
 \downdownarrows
-$$
+```
 
 ```
 #define MODUEL_RANGE           10
@@ -350,3 +350,4 @@ Thank you for choosing our products! We are here to provide you with different s
 <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
+

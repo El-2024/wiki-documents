@@ -33,31 +33,34 @@ Seeed Studio はオープンソースハードウェア運動に取り組んで�
 <br/>
 
 <div class="table-center">
-	<table align="center">
-    <tr>
-			<th>以前提供していたもの</th>
-			<th>現在提供しているもの</th>
-      <th>すべてのファイルを取得</th>
-		</tr>
-		<tr>
-			<td><div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/ATSAMD51.pdf"><strong><span> 📚 [PDF] ATSAMD51N19A データシート</span></strong></a></div>
-              <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal_SCH&PCB.zip"><strong><span> 📚 [ZIP] 回路図 & PCB</span></strong></a></div>
-              <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Main-V3.0-White-72x57x10.4mm.pdf"><strong><span> 📚 エンクロージャ寸法 - 前面</span></strong></a></div>
-              <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Main-Back-V3.0-White-72x57x7.1mm.pdf"><strong><span> 📚 エンクロージャ寸法 - 背面</span></strong></a></div>
-              <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-PCB-V3.0.dxf"><strong><span> 📚 [DXF] PCB寸法</span></strong></a></div>
-              <div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Chassis-Battery.dxf"><strong><span> 📚 [DXF] バッテリーチャシ寸法</span></strong></a></div>
-      </td>
-			<td><div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/02%20Gerber%20Files"><strong><span> ⚙️ ガーバーファイル</span></strong></a></div>
-      <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/03%20Firmware%20Source%20Code"><strong><span> ⚙️ ファームウェアソースコード</span></strong></a></div>
-      <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/04%20Bill%20of%20Materials%20(BOM)"><strong><span> ⚙️ 部品表 (BOM)</span></strong></a></div>
-      <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/05%20Production%20Testing%20Plan"><strong><span> ⚙️ 生産テスト計画</span></strong></a></div>
-      <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/06%20Production%20SOP"><strong><span> ⚙️ 生産標準作業手順 (SOP)</span></strong></a></div>
-      <div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/07%203D%20Models%20of%20the%20Enclosure"><strong><span> ⚙️ エンクロージャの3Dモデル</span></strong></a></div>
-			</td>
-			<td><a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/open_source_topic/OSHW-WioTerminal.zip"><strong><span>⏬ すべてのファイルをダウンロード</span></strong></a>
-			</td>
-		</tr>
-	</table>
+<table align="center">
+<tr>
+<th>以前提供していたもの</th>
+<th>現在提供しているもの</th>
+<th>すべてのファイルを取得</th>
+</tr>
+<tr>
+<td>
+<div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/ATSAMD51.pdf"><strong><span> 📚 [PDF] ATSAMD51N19A データシート</span></strong></a></div>
+<div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal_SCH&PCB.zip"><strong><span> 📚 [ZIP] 回路図 & PCB</span></strong></a></div>
+<div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Main-V3.0-White-72x57x10.4mm.pdf"><strong><span> 📚 エンクロージャ寸法 - 前面</span></strong></a></div>
+<div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Main-Back-V3.0-White-72x57x7.1mm.pdf"><strong><span> 📚 エンクロージャ寸法 - 背面</span></strong></a></div>
+<div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-PCB-V3.0.dxf"><strong><span> 📚 [DXF] PCB寸法</span></strong></a></div>
+<div style={{textAlign: 'left'}}><a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/Wio-Terminal-Chassis-Battery.dxf"><strong><span> 📚 [DXF] バッテリーチャシ寸法</span></strong></a></div>
+</td>
+<td>
+<div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/02%20Gerber%20Files"><strong><span> ⚙️ ガーバーファイル</span></strong></a></div>
+<div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/03%20Firmware%20Source%20Code"><strong><span> ⚙️ ファームウェアソースコード</span></strong></a></div>
+<div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/04%20Bill%20of%20Materials%20(BOM)"><strong><span> ⚙️ 部品表 (BOM)</span></strong></a></div>
+<div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/05%20Production%20Testing%20Plan"><strong><span> ⚙️ 生産テスト計画</span></strong></a></div>
+<div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/06%20Production%20SOP"><strong><span> ⚙️ 生産標準作業手順 (SOP)</span></strong></a></div>
+<div style={{textAlign: 'left'}}><a href="https://github.com/Seeed-Studio/OSHW-WioTerminal/tree/main/07%203D%20Models%20of%20the%20Enclosure"><strong><span> ⚙️ エンクロージャの3Dモデル</span></strong></a></div>
+</td>
+<td>
+<a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/open_source_topic/OSHW-WioTerminal.zip"><strong><span>⏬ すべてのファイルをダウンロード</span></strong></a>
+</td>
+</tr>
+</table>
 </div>
 
 <br/>
@@ -120,12 +123,11 @@ Seeed Studio Fusionは、PCB製造、組み立て、ハードウェアカスタ�
 
 <div class="table-center">
   <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-  <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
-</div>
-
-<div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-  <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+    <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+    <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
   </div>
-</div>
+  <div class="button_tech_support_container">
+    <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+    <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+  </div>
+</div> 

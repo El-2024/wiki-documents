@@ -363,7 +363,7 @@ DC 電源を取り付け、電源をオンにします。
 
 これで、携帯電話の仮想ジョイスティックを使用してロボットの動きを制御できます。
 
-*   <![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform_2.0/img/4WD_Edison_80.jpg)
+*   ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform_2.0/img/4WD_Edison_80.jpg)
 
 [YouTube でデモを見る](https://www.youtube.com/watch?v=l4wGzxzov2M)
 

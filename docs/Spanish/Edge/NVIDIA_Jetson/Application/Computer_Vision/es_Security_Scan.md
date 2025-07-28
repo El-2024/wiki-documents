@@ -118,7 +118,7 @@ print(tr.__version__)
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SecurityCheck/Security_Scan_11.png" /></div>
 
->Aviso: Los paquetes PyTorch wheels para Raspberry Pi 4 se encuentran en <https://github.com/Qengineering/PyTorch-Raspberry-Pi-64-OS>
+>Aviso: Los paquetes PyTorch wheels para Raspberry Pi 4 se encuentran en [https://github.com/Qengineering/PyTorch-Raspberry-Pi-64-OS](https://github.com/Qengineering/PyTorch-Raspberry-Pi-64-OS)
 
 **Tritonclient**
 

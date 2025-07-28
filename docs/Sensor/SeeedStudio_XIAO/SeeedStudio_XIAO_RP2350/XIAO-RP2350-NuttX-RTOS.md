@@ -13,6 +13,12 @@ last_update:
 
 # Seeed Studio XIAO RP2350 with NuttX(RTOS)
 
+:::note
+
+Due to changes in software versions, some steps in this documentation may no longer be accurate or up-to-date.
+
+:::
+
 ## Introduction
 
 [NuttX](https://nuttx.apache.org/) is a mature real-time operating system (RTOS) widely recognized for its standards compliance and small footprint. One of NuttX's main features is its scalability, which allows it to be used in environments ranging from 8-bit microcontrollers to 64-bit systems. This flexibility is achieved through adherence to POSIX and ANSI standards, enabling you to experiment with similar NuttX features across a wide range of chips from different architectures, families, and semiconductor vendors.
@@ -65,13 +71,13 @@ The Apache Nuttx it's divided into two project:
 To start an application it's necessary to load a configuration on NuttX, calling the command:
 
 ```bash
-./tools/configurate.sh board_name:your_application
+./tools/configure.sh board_name:your_application
 ```
 
 Also it's possible to check the list of board-supported a running the command:
 
 ```bash
-./tools/configurate.sh -L
+./tools/configure.sh -L
 ```
 
 4. Build NuttX (build process will generate the firmware binaries, including nuttx.uf2):
@@ -106,10 +112,10 @@ cd ~/nuttxspace/nuttx
 make distclean
 ```
 
-Now we select the NSH configuration to the xiao-nrf5200 board:
+Now we select the NSH configuration to the xiao-rp2350 board:
 
 ```bash
-./tools/configurate.sh xiao-rp2350:nsh
+./tools/configure.sh xiao-rp2350:nsh
 ```
 
 Compile the source code.
@@ -171,10 +177,10 @@ cd ~/nuttxspace/nuttx
 make distclean
 ```
 
-Now we select the NSH configuration to the xiao-nrf5200 board:
+Now we select the NSH configuration to the xiao-rp2350 board:
 
 ```bash
-./tools/configurate.sh xiao-rp2350:usbnsh
+./tools/configure.sh xiao-rp2350:usbnsh
 ```
 
 Compile the source code.
@@ -208,7 +214,7 @@ make distclean
 Select the combo configuration to the xiao-rp2350 board.
 
 ```bash
-./tools/configurate.sh xiao-rp2350:combo
+./tools/configure.sh xiao-rp2350:combo
 ```
 
 Compile de the source code.

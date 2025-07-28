@@ -143,7 +143,7 @@ reComputer J20 系列基于 Jetson Xavier NX 构建，是一款强大且紧凑�
 
 :::info
 reComputer J20 由 J202 载板提供支持。
-请参考此 [wiki 页面](/reComputer_J2021_J202_Flash_Jetpack) 获取有关刷写 JetPack 的更多信息。
+请参考此 [wiki 页面](/cn/reComputer_J2021_J202_Flash_Jetpack) 获取有关刷写 JetPack 的更多信息。
 :::
 
 ## 接口使用

@@ -28,8 +28,7 @@ type: gettingstarted
 本教程将向您展示如何快速上手 XIAO ESP32C3！
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong></a>
 </div>
 
 
@@ -219,7 +218,7 @@ type: gettingstarted
 - **步骤 3.** 在 Arduino IDE 中添加 ESP32 开发板包。
 
 导航到 **文件 > 首选项**，并在 **"Additional Boards Manager URLs"** 中填写以下 URL：
-*<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json>*
+*https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json*
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/add_board.png" style={{width:550, height:'auto'}}/></div>
 

@@ -112,20 +112,19 @@ void loop()  {
 ## バージョントラッカー
 
 <table cellPadding={5} cellSpacing={0}>
-  <tbody><tr>
-      <td width={150}> <strong>リビジョン</strong>
-      </td>
-      <td width={450}> <strong>説明</strong>
-      </td>
-      <td width={80}> <strong>リリース</strong>
-      </td></tr>
+  <tbody>
+    <tr>
+      <td width={150}> <strong>リビジョン</strong> </td>
+      <td width={450}> <strong>説明</strong> </td>
+      <td width={80}> <strong>リリース</strong> </td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> 1.0 rev 1
-      </td>
-      <td> 公開バージョン
-      </td>
-      <td> 19.11.2015
-      </td></tr></tbody></table>
+      <td> 1.0 rev 1 </td>
+      <td> 公開バージョン </td>
+      <td> 19.11.2015 </td>
+    </tr>
+  </tbody>
+</table>
 
 ## 技術サポートと製品ディスカッション
 

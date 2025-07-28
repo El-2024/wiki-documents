@@ -195,7 +195,8 @@ Now we can have the firmware into out XIAO C6, once you got prompt `Project buil
 
 ### Paso 3. Flashear el firmware
 
-<details><summary>usbipd es necesario si usas WSL2</summary>
+<details>
+<summary>usbipd es necesario si usas WSL2</summary>
 
 Si estás trabajando con WSL2, necesitarás tener instalado [usbipd](https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/WSL.md#usbipd).
 
@@ -217,10 +218,12 @@ usbipd attach --wsl --busid=<BUSID>
 ```
 
 Para ver qué puerto se comparte:
+
 ```shell
 dmesg | tail
 # dmesg | tail -n 100 | sed -n 's/.*\(ttyACM[0-9]*\).*/\1/p'
 ```
+
 </details>
 
 Suponiendo que haya detactado `ttyacm0`, el comando sería:

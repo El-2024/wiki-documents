@@ -24,7 +24,9 @@ A barometer is a widely used weather instrument that measures atmospheric pressu
 
 For instance, nowadays most mobile phones will have digital barometers builtin, of which are the main type of barometer in electronics field.
 
-<div align="center"><img src="https://files.seeedstudio.com/products/101020812/img/baro%20produced.2019-12-11%2011_05_01.gif" /></div>
+<div align="center">
+<img src="https://files.seeedstudio.com/products/101020812/img/baro%20produced.2019-12-11%2011_05_01.gif" />
+</div>
 
 ### How Does a Digital Barometer Work
 
@@ -34,15 +36,16 @@ The changing volume affects the strength of the current flowing through it, and 
 
 Below photo shows a typical barometer sensor with a builtin chip(DPS310):
 
-<div align="center"><img width="{400}" src="https://github.com/SeeedDocument/Grove-High-Precision-Barometer-Sensor-DPS310/raw/master/img/Grove-High-Precision-Barometer-Sensor-DPS310-pin.jpg" /><figcaption><b>Figure 1</b>. <i>Typical Barometer Sensor</i></figcaption>
+<div align="center">
+<img width="{400}" src="https://github.com/SeeedDocument/Grove-High-Precision-Barometer-Sensor-DPS310/raw/master/img/Grove-High-Precision-Barometer-Sensor-DPS310-pin.jpg" />
+<figcaption><b>Figure 1</b>. <i>Typical Barometer Sensor</i></figcaption>
 </div>
 
 ## Barometer Sensors at Seeed
 
 <div align="center">
 <figure>
-  <a href="https://files.seeedstudio.com/wiki/Barometer-Guide/Barometer.png" target="_blank"><img src="https://files.seeedstudio.com/wiki/Barometer-Guide/Barometer.png" alt="Seeed Barometer Selection Guide" title="Seeed Barometer Selection Guide" />
-  <figcaption><b>Figure 2</b>. <i>Barometer Sensors at Seeed</i></figcaption></a>
+  <a href="https://files.seeedstudio.com/wiki/Barometer-Guide/Barometer.png" target="_blank"><img src="https://files.seeedstudio.com/wiki/Barometer-Guide/Barometer.png" alt="Seeed Barometer Selection Guide" title="Seeed Barometer Selection Guide" /><figcaption><b>Figure 2</b>. <i>Barometer Sensors at Seeed</i></figcaption></a>
 </figure>
 </div>
 

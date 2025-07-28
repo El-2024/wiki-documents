@@ -273,19 +273,19 @@ aai app start
 
 现在您将在命令行上看到以下输出：
 
-<div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/41.png"/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/41.png"/></div>
 
-**步骤 3.** 打开一个网页浏览器并输入 **<http://localhost:5000>** 来打开视频流
+**步骤 3.** 打开一个网页浏览器并输入 **http://localhost:5000** 来打开视频流
 
 ```sh
 http://localhost:5000
 ```
 
-<div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/person-small.gif"/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/person-small.gif"/></div>
 
 如您所见，人群正在被实时检测，并且每个标签的置信度百分比显示在界面上。此外，在 **Jetson Xavier** 上的推理时间为 **0.009 秒，相当于约 111 帧每秒（fps）**。
 
-<div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/car-small.gif"/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/car-small.gif"/></div>
 
 上图是使用相同模型的另一个演示。
 
@@ -293,7 +293,7 @@ http://localhost:5000
 
 这里我们将在预加载的视频文件上运行目标检测。
 
-**步骤 1.** 将视频文件放置在 Jetson 设备的 alwaysAI 项目目录中。根据我们的示例，它是 **/home/{username}/alwaysai/test**
+**步骤 1.** 将视频文件放置在 Jetson 设备的 alwaysAI 项目目录中。根据我们的示例，它是 **/home/\{username\}/alwaysai/test**
 
 **步骤 2.** 在开发计算机上，打开我们之前创建的 **test** 文件夹中的 **app.py** 文件，并将以下代码段
 
@@ -381,13 +381,13 @@ aai app configure
 
 **步骤 6.** 选择 **Create new project**
 
-<div align="center"><img width= "{720}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/21.jpg"/></div>
+<div align="center"><img width={720} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/21.jpg"/></div>
 
 **步骤 7.** 输入一个 **项目名称**
 
 **步骤 8.** 选择初始化项目 **作为一个空应用程序**
 
-<div align="center"><img width= "{720}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/26.jpg"/></div>
+<div align="center"><img width={720} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/26.jpg"/></div>
 
 **步骤 9.** 重复 **使用开发计算机将项目部署到 Jetson 设备** 部分的相同步骤，从 **步骤 3** 到 **步骤 11**
 
@@ -399,7 +399,7 @@ aai app start
 
 现在您将在命令行上看到以下输出：
 
-<div align="center"><img width="{700}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/23.jpg"/></div>
+<div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/23.jpg"/></div>
 
 如您所见，我们正在使用 **vehicle_license_mobilenet_ssd 模型**，该模型能够识别车辆和车牌。
 
@@ -409,7 +409,7 @@ aai app start
 http://localhost:5000
 ```
 
-<div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/25.gif"/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/25.gif"/></div>
 
 在此演示中，推理正在对 [这里](https://github.com/alwaysai/license-plate-detector/tree/main/video) 的两个视频进行处理。如您所见，视频流中的车辆和车牌正在被检测，并且每个标签的置信度百分比显示在界面上。
 
@@ -449,31 +449,31 @@ alwaysAI 还提供企业版，具有以下功能：
 
 **步骤 1.** 准备您的训练数据集。确保您的数据集为 **PascalVOC 格式**，然后将所有图像和标签分别放入两个目录中，并按以下方式压缩文件
 
-<div align="center"><img width="{350}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/27.jpg"/></div>
+<div align="center"><img width={350} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/27.jpg"/></div>
 
 **步骤 2.** 前往 [alwaysAI dashboard](https://console.alwaysai.co/dashboard)，点击左侧导航栏中的 **Datasets**，然后点击 **Upload a Dataset**
 
-<div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/28.jpg"/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/28.jpg"/></div>
 
 **步骤 3.** 数据集上传完成后，点击 **Train**
 
-<div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/29.jpg"/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/29.jpg"/></div>
 
 **步骤 4.** 在这里，您可以根据自己的偏好更改训练设置，然后点击 **Start training**
 
-<div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/30.jpg"/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/30.jpg"/></div>
 
 训练完成后，您将看到以下输出
 
-<div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/31.jpg"/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/31.jpg"/></div>
 
 现在，训练好的模型已存储在您的账户中。您可以在对象检测项目中使用此模型，具体如下：
 
 **步骤 5.** 导航到 `Models > My Models`，然后点击我们刚刚训练的模型
 
-<div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/42.png"/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/42.png"/></div>
 
-<div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/43.png"/></div>
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/alwaysAI/pics/43.png"/></div>
 
 **步骤 6.** 如您所见，可以在对象检测应用程序的根目录中使用以下命令
 

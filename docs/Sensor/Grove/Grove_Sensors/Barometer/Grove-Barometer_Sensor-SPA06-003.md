@@ -160,10 +160,10 @@ More details about Grove modules please refer to [Grove System](https://wiki.see
     </tr>
     <tr>
       <td>Price</td>
-      <td>$9.8</td>
-      <td>$18.7</td>
-      <td>$7.5</td>
-      <td>$4.5</td>
+      <td>\$9.8</td>
+      <td>\$18.7</td>
+      <td>\$7.5</td>
+      <td>\$4.5</td>
     </tr>
   </table>
 </div>

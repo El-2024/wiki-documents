@@ -24,117 +24,118 @@ Sidekick includes loose components, wires, and a breadboard to compliment your L
 
 <table>
 <tr>
-<th>Parts name   </th>
-<th> Quantity
-</th></tr>
+<th>Parts name</th>
+<th>Quantity</th>
+</tr>
 <tr>
-<td>400 Tie-Point Breadboard </td>
-<td> 1 PCS
-</td></tr>
+<td>400 Tie-Point Breadboard</td>
+<td>1 PCS</td>
+</tr>
 <tr>
-<td>Green LED </td>
-<td> 5 PCS
-</td></tr>
+<td>Green LED</td>
+<td>5 PCS</td>
+</tr>
 <tr>
-<td>Red LED </td>
-<td> 5 PCS
-</td></tr>
+<td>Red LED</td>
+<td>5 PCS</td>
+</tr>
 <tr>
-<td>RGB Common Anode LED </td>
-<td> 1 PCS
-</td></tr>
+<td>RGB Common Anode LED</td>
+<td>1 PCS</td>
+</tr>
 <tr>
-<td>Ceramic Capacitor 10nF </td>
-<td> 10 PCS
-</td></tr>
+<td>Ceramic Capacitor 10nF</td>
+<td>10 PCS</td>
+</tr>
 <tr>
-<td>Ceramic Capacitor 100nF </td>
-<td> 10 PCS
-</td></tr>
+<td>Ceramic Capacitor 100nF</td>
+<td>10 PCS</td>
+</tr>
 <tr>
-<td> Aluminum Capacitor 100uF </td>
-<td> 5 PCS
-</td></tr>
+<td>Aluminum Capacitor 100uF</td>
+<td>5 PCS</td>
+</tr>
 <tr>
-<td>Resistor 330 ohm </td>
-<td> 10 PCS
-</td></tr>
+<td>Resistor 330 ohm</td>
+<td>10 PCS</td>
+</tr>
 <tr>
-<td>Resistor 1K ohm </td>
-<td> 10 PCS
-</td></tr>
+<td>Resistor 1K ohm</td>
+<td>10 PCS</td>
+</tr>
 <tr>
-<td>Resistor 10K ohm </td>
-<td> 10 PCS
-</td></tr>
+<td>Resistor 10K ohm</td>
+<td>10 PCS</td>
+</tr>
 <tr>
-<td>Tilt Switch </td>
-<td> 1 PCS
-</td></tr>
+<td>Tilt Switch</td>
+<td>1 PCS</td>
+</tr>
 <tr>
-<td>Thermistor </td>
-<td> 1 PCS
-</td></tr>
+<td>Thermistor</td>
+<td>1 PCS</td>
+</tr>
 <tr>
-<td>Photoresistor (photocell) </td>
-<td> 1 PCS
-</td></tr>
+<td>Photoresistor (photocell)</td>
+<td>1 PCS</td>
+</tr>
 <tr>
 <td>Diode (1N4004)</td>
-<td> 1 PCS
-</td></tr>
+<td>1 PCS</td>
+</tr>
 <tr>
 <td>Piezo Buzzer</td>
-<td> 1 PCS
-</td></tr>
+<td>1 PCS</td>
+</tr>
 <tr>
-<td>Button </td>
-<td> 5 PCS
-</td></tr>
+<td>Button</td>
+<td>5 PCS</td>
+</tr>
 <tr>
 <td>Switch</td>
-<td> 5 PCS
-</td></tr>
+<td>5 PCS</td>
+</tr>
 <tr>
-<td>Potentiometer with knob </td>
-<td> 2PCS
-</td></tr>
+<td>Potentiometer with knob</td>
+<td>2PCS</td>
+</tr>
 <tr>
 <td>Small DC Motor</td>
-<td> 1 PCS
-</td></tr>
+<td>1 PCS</td>
+</tr>
 <tr>
 <td>7 Segment Single Digit Display (SA39-11SRWA – [datasheet](https://energia.nu/wordpress/wp-content/uploads/2015/07/SevenSegmentDS.pdf))</td>
-<td> 1 PCS
-</td></tr>
+<td>1 PCS</td>
+</tr>
 <tr>
-<td>8-bit Shift Register (SN74HC595N – [datasheet](http://www.ti.com/lit/ds/symlink/sn74hc595.pdf)) </td>
-<td> 1 PCS
-</td></tr>
+<td>8-bit Shift Register (SN74HC595N – [datasheet](http://www.ti.com/lit/ds/symlink/sn74hc595.pdf))</td>
+<td>1 PCS</td>
+</tr>
 <tr>
-<td>NPN Transistor (LP395Z/NOPB – [datasheet](http://www.ti.com/lit/ds/symlink/lp395.pdf)) </td>
-<td> 1 PCS
-</td></tr>
+<td>NPN Transistor (LP395Z/NOPB – [datasheet](http://www.ti.com/lit/ds/symlink/lp395.pdf))</td>
+<td>1 PCS</td>
+</tr>
 <tr>
-<td>Analog Temperature Sensor (LM19CIZ/NOPB – [datasheet](http://www.ti.com/lit/ds/symlink/lm19.pdf)) </td>
-<td> 1 PCS
-</td></tr>
+<td>Analog Temperature Sensor (LM19CIZ/NOPB – [datasheet](http://www.ti.com/lit/ds/symlink/lm19.pdf))</td>
+<td>1 PCS</td>
+</tr>
 <tr>
-<td>Jumper Wire Long </td>
-<td> 5 PCS
-</td></tr>
+<td>Jumper Wire Long</td>
+<td>5 PCS</td>
+</tr>
 <tr>
 <td>Jumper Wire Short</td>
-<td> 20 PCS
-</td></tr>
+<td>20 PCS</td>
+</tr>
 <tr>
-<td>Sidekick Quick Start Guide </td>
-<td> 1 PCS
-</td></tr>
+<td>Sidekick Quick Start Guide</td>
+<td>1 PCS</td>
+</tr>
 <tr>
-<td>Sidekick Manual </td>
-<td> 1 PCS
-</td></tr></table>
+<td>Sidekick Manual</td>
+<td>1 PCS</td>
+</tr>
+</table>
 
 ##  Get started
 

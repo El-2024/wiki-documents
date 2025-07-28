@@ -145,7 +145,7 @@ Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftガ
 
 プログラムをArduino/Seeeduinoにアップロードします。
 
-:::tipsuccess
+:::tip
 コードのアップロードが完了すると、シリアルモニターでラインが検出されたかどうかが表示されます。
 :::
 

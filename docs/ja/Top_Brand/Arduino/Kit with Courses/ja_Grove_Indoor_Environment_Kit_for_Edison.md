@@ -44,7 +44,7 @@ Grove Indoor Environment Kit for Edisonは、Intel EdisonとArduino Breakout Boa
 
 * [Grove - UVセンサー](/Grove-UV_Sensor)  x1
 
-* [Grove - PIRモーションセンサー](Grove-PIR_Motion_Sensor)  x1
+* [Grove - PIRモーションセンサー](/ja/Grove-PIR_Motion_Sensor)  x1
 
 * [Grove - エンコーダー](/Grove-Encoder)  x1
 

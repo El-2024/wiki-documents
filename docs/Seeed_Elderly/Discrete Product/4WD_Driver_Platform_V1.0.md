@@ -32,63 +32,64 @@ last_update:
 ---
 
 <table>
-  <tbody><tr>
-      <td> Basic parameters
-      </td></tr>
-    <tr>
-      <td> Input voltage </td>
-      <td> 6-16V
-      </td></tr>
-    <tr>
-      <td> Output voltage </td>
-      <td> 5V/4V/3.3V/1.8V
-      </td></tr>
-    <tr>
-      <td> Idle Current </td>
-      <td> Less than150mA
-      </td></tr>
-    <tr>
-      <td> Dimensions </td>
-      <td> 130*110mm
-      </td></tr>
-    <tr>
-      <td> Motor Driver
-      </td></tr>
-    <tr>
-      <td> Driver chip </td>
-      <td> MC33931(Freescale) * 4, independent
-      </td></tr>
-    <tr>
-      <td> Input voltage </td>
-      <td> 5-30V
-      </td></tr>
-    <tr>
-      <td> Output current</td>
-      <td> 3A(MAX)
-      </td></tr>
-    <tr>
-      <td> Protection</td>
-      <td> Auto-cutting output for over temperature, low-voltage and short circuit occurrences
-      </td></tr>
-    <tr>
-      <td> Expandability
-      </td></tr>
-    <tr>
-      <td>I2C interface </td>
-      <td> 3
-      </td></tr>
-    <tr>
-      <td>SPI interface </td>
-      <td> 1
-      </td></tr>
-    <tr>
-      <td> UART interface </td>
-      <td> 2
-      </td></tr>
-    <tr>
-      <td> USB OTG interface </td>
-      <td> 1
-      </td></tr></tbody></table>
+  <tr>
+      <td>Basic parameters</td>
+  </tr>
+  <tr>
+      <td>Input voltage</td>
+      <td>6-16V</td>
+  </tr>
+  <tr>
+      <td>Output voltage</td>
+      <td>5V/4V/3.3V/1.8V</td>
+  </tr>
+  <tr>
+      <td>Idle Current</td>
+      <td>Less than150mA</td>
+  </tr>
+  <tr>
+      <td>Dimensions</td>
+      <td>130*110mm</td>
+  </tr>
+  <tr>
+      <td>Motor Driver</td>
+  </tr>
+  <tr>
+      <td>Driver chip</td>
+      <td>MC33931(Freescale) * 4, independent</td>
+  </tr>
+  <tr>
+      <td>Input voltage</td>
+      <td>5-30V</td>
+  </tr>
+  <tr>
+      <td>Output current</td>
+      <td>3A(MAX)</td>
+  </tr>
+  <tr>
+      <td>Protection</td>
+      <td>Auto-cutting output for over temperature, low-voltage and short circuit occurrences</td>
+  </tr>
+  <tr>
+      <td>Expandability</td>
+  </tr>
+  <tr>
+      <td>I2C interface</td>
+      <td>3</td>
+  </tr>
+  <tr>
+      <td>SPI interface</td>
+      <td>1</td>
+  </tr>
+  <tr>
+      <td>UART interface</td>
+      <td>2</td>
+  </tr>
+  <tr>
+      <td>USB OTG interface</td>
+      <td>1</td>
+  </tr>
+</table>
 
 
 ##  Application ideas

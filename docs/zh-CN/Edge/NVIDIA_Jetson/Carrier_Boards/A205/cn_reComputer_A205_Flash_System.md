@@ -36,16 +36,15 @@ tags:
 ![image](https://files.seeedstudio.com/wiki/reComputer_Carrier_Board/A205/Flash_A205.png)
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/A205-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5133.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/A205-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5133.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong></a>
 </div>
 
 ## 开始使用
 
 我们可以使用 **NVIDIA SDK Manager 和 Linux 终端**来刷入系统，也可以仅使用 **Linux 终端**轻松完成操作。对于有 Linux 知识基础的用户，我们强烈推荐仅使用 Linux 终端。
 
-- [通过 NVIDIA SDK Manager 和 Linux 终端刷入 JetPack OS](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [通过 Linux 终端刷入 JetPack OS](#flashing-jetpack-os-via-command-line)
+- 通过 NVIDIA SDK Manager 和 Linux 终端刷写 JetPack OS
+- 通过 Linux 终端刷写 JetPack OS
 
 在开始之前，我们需要进行一些准备工作：
 

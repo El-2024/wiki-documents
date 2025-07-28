@@ -26,8 +26,10 @@ last_update:
 
 - 在此默认你已经有了`python`的环境与`pip`包管理工具，且python>=3.8。
 
-<Tabs>
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
+<Tabs>
 <TabItem value="pip安装" label="pip">
 
 安装 `ultralytics` 软件包，或通过运行 `pip install -U ultralytics`.请访问Python Package Index (PyPI)，了解更多有关 `ultralytics`包可访问 [https://pypi.org/project/ultralytics/](https://pypi.org/project/ultralytics/).

@@ -40,7 +40,7 @@ last_update:
 
 在本节中，我们将重点关注 ESP-Matter 提供的 [light](https://github.com/espressif/esp-matter/tree/main/examples/light) 示例，该示例详细描述了 Matter 开发框架中集群、属性和命令的基本概念。通过阅读本文，您将更好地理解 Matter 开发框架的结构和核心知识。
 
-## 理解灯光示例
+## 理解灯光示例 {#understanding-the-light-example}
 
 首先，让我们看一下 ESP-Matter 环境中的文件目录及其作用。
 
@@ -138,7 +138,7 @@ last_update:
 
 - **sdkconfig.defaults**: light 示例的默认配置设置。
 
-## 设备初始化
+## 设备初始化 {#device-initialisation}
 
 接下来，我们深入 light 的代码，通过代码分析和理论结合来加深对 Matter 开发过程的理解。以下代码位于 [manin/app_main.cpp](https://github.com/espressif/esp-matter/blob/main/examples/light/main/app_main.cpp)。
 
@@ -173,7 +173,7 @@ app_driver_handle_t app_driver_light_init()
 }
 ```
 
-## 创建 Matter 节点
+## 创建 Matter 节点 {#create-matter-node}
 
 Matter 设备配置主线代码的下一步是创建一个 Matter 节点。代码如下：
 
@@ -197,7 +197,7 @@ Matter 节点表示 Matter 生态系统中的物理设备或逻辑实体。它�
    - 它类似于一个房子，可以包含多个端点（房间）。
    - 每个 Matter 节点都有自己的唯一标识符，用于网络中的识别和寻址。
 
-## 设置端点的属性
+## 设置端点的属性 {#sets-the-attribute-of-the-endpoint}
 
 创建 Matter 节点后，需要为端点的属性设置默认值。
 
@@ -269,7 +269,7 @@ esp_err_t add(endpoint_t *endpoint, config_t *config);
 } /* extended_color_light */
 ```
 
-## 创建端点及自动匹配 Cluster
+## 创建端点及自动匹配 Cluster {#create-endpoint--auto-match-cluster}
 
 在上文中，我们首先提到了 Matter 中两个重要的术语：端点（Endpoints）和 Cluster。
 
@@ -311,7 +311,7 @@ light_config.level_control.lighting.start_up_current_level = DEFAULT_BRIGHTNESS;
 
 `light_config.level_control` 是在端点中定义的属性（esp_matter_endpoint.h）。而 `light_config.level_control.lighting` 是在 Cluster 中定义的属性（esp_matter_cluster）。通过这种设置，系统可以自动匹配与属性对应的 Cluster，而无需开发者手动设置。
 
-## 使用默认值首次设置 Matter 设备
+## 使用默认值首次设置 Matter 设备 {#setting-up-the-matter-device-for-the-first-time-with-default-values}
 
 一旦上述的 Attributes、Clusters 和 Endpoints 已被配置，我们就可以开始启动 Matter 设备。启动的步骤和方法如下。
 
@@ -376,7 +376,7 @@ err |= app_driver_light_set_brightness(handle, &val);
 
 ---
 
-## 数据更新和延迟持久化
+## 数据更新和延迟持久化 {#data-updates-and-deferred-persistence}
 
 在 `app_driver.cpp` 的代码中，使用 `app_driver_attribute_update()` 函数更新 attribute 的值。
 

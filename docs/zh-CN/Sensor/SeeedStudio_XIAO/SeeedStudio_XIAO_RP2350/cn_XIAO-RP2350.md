@@ -513,7 +513,7 @@ int main() {
   </TabItem>
 </Tabs>
 
-## 资源与资产
+## 资源与资产 {#assets--resources}
 
 XIAO RP2350 利用 Raspberry Pi RP2350 的强大功能，并借助 Raspberry Pi 社区的丰富资源。这为您在这个小型开发板上定制项目提供了无限的创造力。以下是帮助您入门的关键资源和资产。
 

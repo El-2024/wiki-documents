@@ -217,7 +217,7 @@ sudo ./docker-ubuntu.sh
     - 每张图片 5 个描述
     - 25 万个人体关键点
 
-    <div align=center><img width = 700 src="https://files.seeedstudio.com/wiki/node-red/22.png"/></div>
+    <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/node-red/22.png"/></div>
 
 完成设置后，点击界面右上角的 **deploy** 按钮，程序流将开始运行。
 

@@ -50,7 +50,7 @@ También podemos flashear el sistema a la memoria eMMC incluida en el LinkStar-V
 
 Cuando se inserta una tarjeta TF en el LinkStar-V2, el sistema de la tarjeta TF es el que se inicia al encender el equipo, ya que la **tarjeta TF tiene prioridad de arranque**.
 
-### <span id="jump1">Flashear OpenWRT a la tarjeta TF</span>
+### Flashear OpenWRT a la tarjeta TF {#jump1}
 
 #### Preparativos
 
@@ -131,7 +131,7 @@ password: password
 
 ¡Felicidades! Ahora has instalado correctamente OpenWRT a través de la tarjeta TF.
 
-### <span id="jump2">Flashear OpenWRT en la eMMC</span>
+### Flashear OpenWRT en la eMMC {#jump2}
 
 #### Preparación
 

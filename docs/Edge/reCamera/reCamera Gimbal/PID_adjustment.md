@@ -94,13 +94,13 @@ To check the current PID values for a specific motor and control mode, use the f
 gimbal pid <id> <a|s>
 ```
 
-    <id>: Motor ID
+    &lt;id&gt;: Motor ID
 
         1 = Yaw Axis
 
         2 = Pitch Axis
 
-    <a|s>: Control Type
+    &lt;a|s&gt;: Control Type
 
         a = Angle PID
 
@@ -119,10 +119,10 @@ This command retrieves the angle PID settings for the yaw axis.
 To update PID parameters, use:
 
 ```bash
-gimbal pid <id> <a|s> <Kp> [Ki] [Kd]
+gimbal pid &lt;id&gt; &lt;a|s&gt; &lt;Kp&gt; [Ki] [Kd]
 ```
 
-  `<Kp>` is required. `[Ki]` and `[Kd]` are optional.
+  `&lt;Kp&gt;` is required. `[Ki]` and `[Kd]` are optional.
 
 If you want to keep the current value for Ki or Kd, use ^ as a placeholder.
 

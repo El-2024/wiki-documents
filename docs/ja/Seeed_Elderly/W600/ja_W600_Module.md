@@ -190,8 +190,10 @@ W600チップのピンを取り出し、ボードの裏側に配置しました�
 
 <div align="center">
   <figure>
-    <a href="https://files.seeedstudio.com/wiki/W600_Module/img/block.png" target="_blank"><img src="https://files.seeedstudio.com/wiki/W600_Module/img/block.png" alt="W600モジュールのブロック図" title="W600モジュールのブロック図" />
-      <figcaption><i>クリックしてより鮮明なオリジナルファイルを見る</i></figcaption></a>
+    <a href="https://files.seeedstudio.com/wiki/W600_Module/img/block.png" target="_blank">
+      <img src="https://files.seeedstudio.com/wiki/W600_Module/img/block.png" alt="W600モジュールのブロック図" title="W600モジュールのブロック図" />
+      <figcaption><i>クリックしてより鮮明なオリジナルファイルを見る</i></figcaption>
+    </a>
   </figure>
 </div>
 
@@ -199,8 +201,10 @@ W600チップのピンを取り出し、ボードの裏側に配置しました�
 
 <div align="center">
   <figure>
-    <a href="https://files.seeedstudio.com/wiki/W600_Module/img/pinout_w600_module.jpg" target="_blank"><img src="https://files.seeedstudio.com/wiki/W600_Module/img/pinout_w600_module.jpg" alt="W600モジュールのピン配置" title="W600モジュールのピン配置" />
-      <figcaption><i>クリックしてより鮮明なオリジナルファイルを見る</i></figcaption></a>
+    <a href="https://files.seeedstudio.com/wiki/W600_Module/img/pinout_w600_module.jpg" target="_blank">
+      <img src="https://files.seeedstudio.com/wiki/W600_Module/img/pinout_w600_module.jpg" alt="W600モジュールのピン配置" title="W600モジュールのピン配置" />
+      <figcaption><i>クリックしてより鮮明なオリジナルファイルを見る</i></figcaption>
+    </a>
   </figure>
 </div>
 

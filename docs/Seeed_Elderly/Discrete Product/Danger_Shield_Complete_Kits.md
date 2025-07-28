@@ -19,19 +19,16 @@ The Danger Shield is an add-on for the Arduino micro controller board. It contai
 
 <table>
 <tr>
-<th> Revision
-</th>
-<th> Descriptions
-</th>
-<th> Release
-</th></tr>
+<th>Revision</th>
+<th>Descriptions</th>
+<th>Release</th>
+</tr>
 <tr>
-<td width="300px"> v1.0
-</td>
-<td width="500px"> Initial public release
-</td>
-<td width="200px"> Oct 04, 2008
-</td></tr></table>
+<td width="300px">v1.0</td>
+<td width="500px">Initial public release</td>
+<td width="200px">Oct 04, 2008</td>
+</tr>
+</table>
 
 ##   Features
 ---
@@ -67,117 +64,86 @@ Please enjoy soldering them:
 
 <table>
 <tr>
-<th>ID
-</th>
-<th>Item
-</th>
-<th>QtyType
-</th></tr>
+<th>ID</th>
+<th>Item</th>
+<th>QtyType</th>
+</tr>
 <tr>
-<td width="300"> -
-</td>
-<td width="300"> Danger Shield v1.0 PCB
-</td>
-<td width="300"> 1 pcb
-</td></tr>
+<td width="300">-</td>
+<td width="300">Danger Shield v1.0 PCB</td>
+<td width="300">1 pcb</td>
+</tr>
 <tr>
-<td> DIS1
-</td>
-<td> 7 Segment LED, green, 0.3in
-</td>
-<td> 1 component
-</td></tr>
+<td>DIS1</td>
+<td>7 Segment LED, green, 0.3in</td>
+<td>1 component</td>
+</tr>
 <tr>
-<td>IC1
-</td>
-<td>74HC595N
-</td>
-<td>1 component
-</td></tr>
+<td>IC1</td>
+<td>74HC595N</td>
+<td>1 component</td>
+</tr>
 <tr>
-<td>JP1
-</td>
-<td>100 breakaway header
-</td>
-<td>5 component
-</td></tr>
+<td>JP1</td>
+<td>100 breakaway header</td>
+<td>5 component</td>
+</tr>
 <tr>
-<td>LED1-3
-</td>
-<td>5mm green LED
-</td>
-<td>3 component
-</td></tr>
+<td>LED1-3</td>
+<td>5mm green LED</td>
+<td>3 component</td>
+</tr>
 <tr>
-<td>R1-R3, R7
-</td>
-<td>10K ohm resistor
-</td>
-<td>4 component
-</td></tr>
+<td>R1-R3, R7</td>
+<td>10K ohm resistor</td>
+<td>4 component</td>
+</tr>
 <tr>
-<td>R4, R5, R9-R11, R19
-</td>
-<td>560 ohm resistor
-</td>
-<td>6 component
-</td></tr>
+<td>R4, R5, R9-R11, R19</td>
+<td>560 ohm resistor</td>
+<td>6 component</td>
+</tr>
 <tr>
-<td>R6, R12-R18
-</td>
-<td>680 ohm resistor
-</td>
-<td>8 component
-</td></tr>
+<td>R6, R12-R18</td>
+<td>680 ohm resistor</td>
+<td>8 component</td>
+</tr>
 <tr>
-<td>R8
-</td>
-<td>1M ohm resistor
-</td>
-<td>1 component
-</td></tr>
+<td>R8</td>
+<td>1M ohm resistor</td>
+<td>1 component</td>
+</tr>
 <tr>
-<td>S1-S4
-</td>
-<td>Omron B3F-1000 Button
-</td>
-<td>4 component
-</td></tr>
+<td>S1-S4</td>
+<td>Omron B3F-1000 Button</td>
+<td>4 component</td>
+</tr>
 <tr>
-<td>SG1, SG2
-</td>
-<td>12mm Piezo Buzzer
-</td>
-<td>2 component
-</td></tr>
+<td>SG1, SG2</td>
+<td>12mm Piezo Buzzer</td>
+<td>2 component</td>
+</tr>
 <tr>
-<td>SLIDER1-3
-</td>
-<td>Bourns PTL60 Green
-</td>
-<td>3 component
-</td></tr>
+<td>SLIDER1-3</td>
+<td>Bourns PTL60 Green</td>
+<td>3 component</td>
+</tr>
 <tr>
-<td>IC2
-</td>
-<td>LM35DZ
-</td>
-<td>1 component
-</td></tr>
+<td>IC2</td>
+<td>LM35DZ</td>
+<td>1 component</td>
+</tr>
 <tr>
-<td>R20
-</td>
-<td>LDR
-</td>
-<td>1 component
-</td></tr>
+<td>R20</td>
+<td>LDR</td>
+<td>1 component</td>
+</tr>
 <tr>
-<td>JP2
-</td>
-<td>100 breakaway header
-</td>
-<td>40 component
-</td></tr></table>
+<td>JP2</td>
+<td>100 breakaway header</td>
+<td>40 component</td>
+</tr>
+</table>
 
 
 

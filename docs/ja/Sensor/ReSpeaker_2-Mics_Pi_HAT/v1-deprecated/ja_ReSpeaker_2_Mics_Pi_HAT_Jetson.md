@@ -172,7 +172,7 @@ arecord -D hw:1,0 -f S32_LE -r 48000 -c 2 | aplay -D hw:1,0 -f S32_LE -r 48000 -
 
 ## 使用概要
 
-以下の例を実行するには、<https://github.com/respeaker/mic_hat.git> リポジトリを Jetson Nano にクローンしてください。
+以下の例を実行するには、[https://github.com/respeaker/mic_hat.git](https://github.com/respeaker/mic_hat.git) リポジトリを Jetson Nano にクローンしてください。
 
 ```
 git clone https://github.com/respeaker/mic_hat.git

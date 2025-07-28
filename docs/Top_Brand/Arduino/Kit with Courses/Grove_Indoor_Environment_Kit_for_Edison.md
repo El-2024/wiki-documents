@@ -40,7 +40,7 @@ Grove Indoor Environment Kit for Edison makes it easy to create complete indoor 
 
 * [Grove - UV Sensor](/Grove-UV_Sensor)  x1
 
-* [Grove - PIR Motion Sensor](Grove-PIR_Motion_Sensor)  x1
+* [Grove - PIR Motion Sensor](/Grove-PIR_Motion_Sensor)  x1
 
 * [Grove - Encoder](/Grove-Encoder)  x1
 
@@ -110,66 +110,57 @@ Refer to Intel Edison offical site: [Edison Getting Started Guide](https://commu
 Using 26AWG Grove Cable making the following connections:
 
 <table>
-<tr>
-<th>  Grove Modules
-</th>
-<th> Connected to
-</th></tr>
-<tr>
-<td width="200px"> Temperature&amp;Humidity Sensor
-</td>
-<td width="100px"> I2C
-</td></tr>
-<tr>
-<td width="200px"> Moisture Sensor
-</td>
-<td width="100px"> A1
-</td></tr>
-<tr>
-<td width="200px"> Light Sensor
-</td>
-<td width="100px"> A2
-</td></tr>
-<tr>
-<td width="200px"> UV Sensor
-</td>
-<td width="100px"> A3
-</td></tr>
-<tr>
-<td width="200px"> PIR Motion Sensor
-</td>
-<td width="100px"> D7
-</td></tr>
-<tr>
-<td width="200px"> Encoder
-</td>
-<td width="100px"> D2
-</td></tr>
-<tr>
-<td width="200px"> Button
-</td>
-<td width="100px"> UART(D1)
-</td></tr>
-<tr>
-<td width="200px"> LCD RGB Backlight
-</td>
-<td width="100px"> I2C
-</td></tr>
-<tr>
-<td width="200px"> Relay
-</td>
-<td width="100px"> D5
-</td></tr>
-<tr>
-<td width="200px"> Servo
-</td>
-<td width="100px"> D6
-</td></tr>
-<tr>
-<td width="200px"> Buzzer
-</td>
-<td width="100px"> D4
-</td></tr></table>
+  <tbody>
+    <tr>
+      <th>Grove Modules</th>
+      <th>Connected to</th>
+    </tr>
+    <tr>
+      <td width="200px">Temperature&amp;Humidity Sensor</td>
+      <td width="100px">I2C</td>
+    </tr>
+    <tr>
+      <td width="200px">Moisture Sensor</td>
+      <td width="100px">A1</td>
+    </tr>
+    <tr>
+      <td width="200px">Light Sensor</td>
+      <td width="100px">A2</td>
+    </tr>
+    <tr>
+      <td width="200px">UV Sensor</td>
+      <td width="100px">A3</td>
+    </tr>
+    <tr>
+      <td width="200px">PIR Motion Sensor</td>
+      <td width="100px">D7</td>
+    </tr>
+    <tr>
+      <td width="200px">Encoder</td>
+      <td width="100px">D2</td>
+    </tr>
+    <tr>
+      <td width="200px">Button</td>
+      <td width="100px">UART(D1)</td>
+    </tr>
+    <tr>
+      <td width="200px">LCD RGB Backlight</td>
+      <td width="100px">I2C</td>
+    </tr>
+    <tr>
+      <td width="200px">Relay</td>
+      <td width="100px">D5</td>
+    </tr>
+    <tr>
+      <td width="200px">Servo</td>
+      <td width="100px">D6</td>
+    </tr>
+    <tr>
+      <td width="200px">Buzzer</td>
+      <td width="100px">D4</td>
+    </tr>
+  </tbody>
+</table>
 
 ![](https://files.seeedstudio.com/wiki/Grove_Indoor_Environment_Kit_for_Edison/img/Edison_Indoor_Wire_Figure.png)
 
@@ -203,51 +194,45 @@ Using 26AWG Grove Cable making the following connections:
 _set [sensor][condition:&gt;, &lt; or =][ threshold],[actuator]=[action]_
 
 <table>
-<tr>
-<th>  Example
-</th>
-<th> Description
-</th></tr>
-<tr>
-<td width="300px"> _set temp&gt;40, relay=1_
-</td>
-<td width="500px"> if temperature is higher than 40℃, the relay opens.
-</td></tr>
-<tr>
-<td width="300px"> _set temp&gt;40, sleep=1_
-</td>
-<td width="500px"> if temperature is &gt;40℃, nothing to do.
-</td></tr>
-<tr>
-<td width="300px"> _set humi&gt;60, buzzer=1_
-</td>
-<td width="500px"> if humidity is &gt;60%, the buzzer beeps.
-</td></tr>
-<tr>
-<td width="300px"> _set light&gt;600, servo=90_
-</td>
-<td width="500px"> if light intensity is &gt;600, the servo truns 90°.
-</td></tr>
-<tr>
-<td width="300px"> _set uv&gt;80, relay=0_
-</td>
-<td width="500px"> if UV intensity is &gt;80, the relay closes.
-</td></tr>
-<tr>
-<td width="300px"> _set pir=1, buzzer=1_
-</td>
-<td width="500px"> if people detected, the buzzer beeps.
-</td></tr>
-<tr>
-<td width="300px"> _set ms&gt;40, relay=1_
-</td>
-<td width="500px"> if moisture is &gt;40, the relay opens.
-</td></tr>
-<tr>
-<td width="300px"> _set ssid=name, psw=password_
-</td>
-<td width="500px"> set the wifi SSID and Password.you can open a web browser, and go to the IP address displayed on the Serial Monitor or LCD. The default port is 88. he default port is 88. Such as: 192.168.1.101:88
-</td></tr></table>
+  <tbody>
+    <tr>
+      <th>Example</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td width="300px">_set temp&gt;40, relay=1_</td>
+      <td width="500px">if temperature is higher than 40℃, the relay opens.</td>
+    </tr>
+    <tr>
+      <td width="300px">_set temp&gt;40, sleep=1_</td>
+      <td width="500px">if temperature is &gt;40℃, nothing to do.</td>
+    </tr>
+    <tr>
+      <td width="300px">_set humi&gt;60, buzzer=1_</td>
+      <td width="500px">if humidity is &gt;60%, the buzzer beeps.</td>
+    </tr>
+    <tr>
+      <td width="300px">_set light&gt;600, servo=90_</td>
+      <td width="500px">if light intensity is &gt;600, the servo truns 90°.</td>
+    </tr>
+    <tr>
+      <td width="300px">_set uv&gt;80, relay=0_</td>
+      <td width="500px">if UV intensity is &gt;80, the relay closes.</td>
+    </tr>
+    <tr>
+      <td width="300px">_set pir=1, buzzer=1_</td>
+      <td width="500px">if people detected, the buzzer beeps.</td>
+    </tr>
+    <tr>
+      <td width="300px">_set ms&gt;40, relay=1_</td>
+      <td width="500px">if moisture is &gt;40, the relay opens.</td>
+    </tr>
+    <tr>
+      <td width="300px">_set ssid=name, psw=password_</td>
+      <td width="500px">set the wifi SSID and Password.you can open a web browser, and go to the IP address displayed on the Serial Monitor or LCD. The default port is 88. he default port is 88. Such as: 192.168.1.101:88</td>
+    </tr>
+  </tbody>
+</table>
 
 Note:
 

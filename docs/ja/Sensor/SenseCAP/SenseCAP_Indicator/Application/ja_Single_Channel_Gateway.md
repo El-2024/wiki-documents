@@ -67,8 +67,7 @@ GitHub ではファームウェアの統合バージョンも提供していま�
 ファームウェアをダウンロードするには以下をクリックしてください:
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241106.zip"><strong><span><font color={'FFFFFF'} size={"4"}> ダウンロード ⏬ </font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241106.zip"><strong><span><font color={'FFFFFF'} size={"4"}> ダウンロード ⏬ </font></span></strong></a>
 </div>
 
 ## ファームウェアのカスタマイズとビルド

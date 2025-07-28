@@ -75,52 +75,39 @@ ATMega328を搭載していないBluetooth BeeのようなBeeは、オンボー�
 ---
 <table  cellspacing="0" width="80%">
 <tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 最小
-</th>
-<th scope="col"> 標準
-</th>
-<th scope="col"> 最大
-</th>
-<th scope="col"> 単位
-</th></tr>
+<th scope="col">項目</th>
+<th scope="col">最小</th>
+<th scope="col">標準</th>
+<th scope="col">最大</th>
+<th scope="col">単位</th>
+</tr>
 <tr>
-<th scope="row"> 電圧
-</th>
-<td> 3.0
-</td>
-<td> 3.3
-</td>
-<td> 3.6
-</td>
-<td> VDC
-</td></tr>
+<th scope="row">電圧</th>
+<td>3.0</td>
+<td>3.3</td>
+<td>3.6</td>
+<td>VDC</td>
+</tr>
 <tr>
-<th scope="row"> 充電コントローラー
-</th>
-<td colspan="4"> CN3063
-</td></tr>
+<th scope="row">充電コントローラー</th>
+<td colspan="4">CN3063</td>
+</tr>
 <tr>
-<th scope="row"> 充電器（LiPoバッテリーの充電電圧）
-</th>
-<td colspan="4"> 4.4Vから6V（CN3063仕様に準拠）
-</td></tr>
+<th scope="row">充電器（LiPoバッテリーの充電電圧）</th>
+<td colspan="4">4.4Vから6V（CN3063仕様に準拠）</td>
+</tr>
 <tr>
-<th scope="row"> 充電電流
-</th>
-<td colspan="4"> 最大500mA
-</td></tr>
+<th scope="row">充電電流</th>
+<td colspan="4">最大500mA</td>
+</tr>
 <tr>
-<th scope="row"> 3.3V LDO
-</th>
-<td colspan="4"> 低ノイズ・低消費電力タイプ。バッテリー用途に適しています。
-</td></tr>
+<th scope="row">3.3V LDO</th>
+<td colspan="4">低ノイズ・低消費電力タイプ。バッテリー用途に適しています。</td>
+</tr>
 <tr>
-<th scope="row"> I/Oロジック
-</th>
-<td colspan="4"> 3.3Vロジック
-</td></tr></table>
+<th scope="row">I/Oロジック</th>
+<td colspan="4">3.3Vロジック</td>
+</tr></table>
 
 ## インターフェース機能
 
@@ -228,19 +215,15 @@ void loop() {
 ---
 <table>
 <tr>
-<th> 改訂版
-</th>
-<th> 説明
-</th>
-<th> リリース日
-</th></tr>
+<th>改訂版</th>
+<th>説明</th>
+<th>リリース日</th>
+</tr>
 <tr>
-<td width="300px"> v0.9b
-</td>
-<td width="500px"> 初回公開リリース
-</td>
-<td width="200px"> 2011年7月13日
-</td></tr></table>
+<td width="300px">v0.9b</td>
+<td width="500px">初回公開リリース</td>
+<td width="200px">2011年7月13日</td>
+</tr></table>
 
 ## 回路図オンラインビューア
 

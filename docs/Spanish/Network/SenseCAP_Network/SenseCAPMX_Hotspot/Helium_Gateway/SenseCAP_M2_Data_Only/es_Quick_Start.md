@@ -104,7 +104,7 @@ Haz clic en "Buscar redes", selecciona tu red Wi-Fi e ingresa la contraseña. Ta
 
 Sigue las instrucciones de la App para agregar el hotspot a la red.
 
-**NOTA**: El producto **NO incluye las tarifas de incorporación**. Se deducirán $10 USD de incorporación y $5 USD por ubicación desde la billetera Helium del usuario. Asegúrate de tener suficientes créditos Helium.
+**NOTA**: El producto **NO incluye las tarifas de incorporación**. Se deducirán \$10 USD de incorporación y \$5 USD por ubicación desde la billetera Helium del usuario. Asegúrate de tener suficientes créditos Helium.
 
 * **Establece la ubicación del hotspot**
 

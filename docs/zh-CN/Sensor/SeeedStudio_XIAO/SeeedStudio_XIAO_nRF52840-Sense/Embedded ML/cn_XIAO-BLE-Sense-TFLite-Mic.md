@@ -78,7 +78,7 @@ last_update:
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/TFLite/pics/micro-features-model-open.png" alt="pir" width={550} height="auto" /></p>
 
-- **步骤 2.** 用 **model.cc** 文件中的新值替换 **const unsigned char g_model[] DATA_ALIGN_ATTRIBUTE = {** 下的值
+- **步骤 2.** 用 **model.cc** 文件中的新值替换 **const unsigned char g_model[] DATA_ALIGN_ATTRIBUTE = \{** 下的值
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/TFLite/pics/model-values.png" alt="pir" width={550} height="auto" /></p>
 

@@ -90,6 +90,9 @@ chmod +x ./uninstall-ignition-edge.sh
 
 ## Iniciando Ignition Edge Gateway por Primera Vez
 
+### Configurar el gateway para que inicie al arrancar {#launch-ignition-edge-gateway-on-boot}
+Puedes configurar el gateway para que se inicie automáticamente al arrancar el dispositivo siguiendo las instrucciones del sistema operativo.
+
 Cuando la instalación esté completa, debes iniciar el servicio. Puedes [configurar el gateway para que inicie al arrancar](#launch-ignition-edge-gateway-on-boot) y reiniciar el dispositivo, o puedes elegir iniciar el servicio manualmente.
 
 ```bash

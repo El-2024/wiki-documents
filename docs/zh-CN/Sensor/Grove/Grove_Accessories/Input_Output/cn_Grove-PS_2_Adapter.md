@@ -27,54 +27,12 @@ PS/2适配器使您能够将PS2设备连接到Arduino/Seeeduino主板上。借�
 ## 规格参数
 
 ---
-<table  cellspacing="0" width="80%">
-<tr>
-<th scope="col"> 项目
-</th>
-<th scope="col"> 最小值
-</th>
-<th scope="col"> 典型值
-</th>
-<th scope="col"> 最大值
-</th>
-<th scope="col"> 单位
-</th></tr>
-<tr>
-<th scope="row"> 电压
-</th>
-<td> 4.75
-</td>
-<td> 5.0
-</td>
-<td> 5.25
-</td>
-<td> V
-</td></tr>
-<tr>
-<th scope="row"> 电流
-</th>
-<td colspan="3"> 100
-</td>
-<td> mA
-</td></tr>
-<tr>
-<th scope="row"> 通信模式
-</th>
-<td colspan="3">  PS/2通信协议
-</td>
-<td> /
-</td></tr>
-<tr>
-<th scope="row"> 时钟频率
-</th>
-<td> 10
-</td>
-<td> 15
-</td>
-<td> 33
-</td>
-<td> KHZ
-</td></tr></table>
+| 项目 | 最小值 | 典型值 | 最大值 | 单位 |
+|------|--------|--------|--------|------|
+| 电压 | 4.75 | 5.0 | 5.25 | V |
+| 电流 | 100 | 100 | 100 | mA |
+| 通信模式 | PS/2通信协议 | PS/2通信协议 | PS/2通信协议 | / |
+| 时钟频率 | 10 | 15 | 33 | KHZ |
 
 ## 应用思路
 
@@ -91,69 +49,14 @@ PS/2连接器是一个6针的Mini-DIN连接器，用于将键盘和鼠标连接�
 
  ![](https://files.seeedstudio.com/wiki/Grove-PS_2_Adapter/img/MiniDIN-6_Connector.svg.png)
 
-<table  cellspacing="0" width="702">
-<tr>
-<th scope="col"> 针脚编号
-</th>
-<th scope="col"> 名称	
-</th>
-<th scope="col"> 功能
-</th>
-<th scope="col"> 对应Grove接口
-</th></tr>
-<tr>
-<th scope="row"> 1
-</th>
-<td> +DATA
-</td>
-<td> 数据线
-</td>
-<td> DATA
-</td></tr>
-<tr>
-<th scope="row"> 2
-</th>
-<td> NC
-</td>
-<td> 预留（未使用）
-</td>
-<td> -
-</td></tr>
-<tr>
-<th scope="row"> 3
-</th>
-<td> GND
-</td>
-<td> 电源地线
-</td>
-<td> GND
-</td></tr>
-<tr>
-<th scope="row"> 4
-</th>
-<td> Vcc
-</td>
-<td> +5V直流电源	
-</td>
-<td> VCC
-</td></tr>
-<tr>
-<th scope="row"> 5
-</th>
-<td> +CLK</td>
-<td> 时钟频率
-</td>
-<td> CLK
-</td></tr>
-<tr>
-<th scope="row"> 6
-</th>
-<td> NC
-</td>
-<td> 预留（未使用）	
-</td>
-<td> -
-</td></tr></table>
+| 针脚编号 | 名称 | 功能 | 对应Grove接口 |
+|----------|------|------|---------------|
+| 1 | +DATA | 数据线 | DATA |
+| 2 | NC | 预留（未使用） | - |
+| 3 | GND | 电源地线 | GND |
+| 4 | Vcc | +5V直流电源 | VCC |
+| 5 | +CLK | 时钟频率 | CLK |
+| 6 | NC | 预留（未使用） | - |
 
 1.将PS/2鼠标或键盘连接到Grove-PS/2适配器，然后将Grove接口连接到[Grove - Base Shield](https://www.seeedstudio.com/depot/grove-base-shield-p-754.html?cPath=132_134)的D5/D6端口。您可以根据需要更改数字端口。但是，别忘了同时在演示代码的定义中更改端口号。
 

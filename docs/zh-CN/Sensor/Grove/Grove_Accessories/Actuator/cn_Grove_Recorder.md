@@ -38,84 +38,37 @@ Grove - Recorder基于ISD1820P芯片，可以录制8-20秒的音频。它提供�
 ![](https://files.seeedstudio.com/wiki/Grove_Recorder/img/Recorder_Bottom1.jpg)
 ![](https://files.seeedstudio.com/wiki/Grove_Recorder/img/Recorder_Top1.jpg)
 
-<dl><dt>① LED指示灯
-</dt><dd>模式:
-<dl><dd>录制: 红色 LED 灯从录制持续时间开始到结束一直亮起。
-</dd><dd>播放: 红色 LED 闪烁表示音频播放结束。
-</dd></dl>
-</dd></dl>
-<dl><dt>② 采样电阻
-</dt><dd>您可以根据下表通过更改采样电阻 （R6） 来设置录制持续时间和采样率:
-</dd></dl>
-<table  cellspacing="0" width="50%">
-<tr>
-<th scope="col"> ROSC
-</th>
-<th scope="col"> 期间
-</th>
-<th scope="col"> 采样频率
-</th>
-<th scope="col"> 输入带宽
-</th></tr>
-<tr>
-<th scope="row"> 80 KΩ
-</th>
-<td> 8 秒
-</td>
-<td> 8.0 KHz
-</td>
-<td> 3.4 KHz
-</td></tr>
-<tr>
-<th scope="row"> 100 KΩ (默认)
-</th>
-<td> 10 秒
-</td>
-<td> 6.4 KHz
-</td>
-<td> 2.6 KHz
-</td></tr>
-<tr>
-<th scope="row"> 120 KΩ
-</th>
-<td> 12 秒
-</td>
-<td> 5.3 KHz
-</td>
-<td> 2.3 KHz
-</td></tr>
-<tr>
-<th scope="row"> 160 KΩ
-</th>
-<td> 16 秒
-</td>
-<td> 4.0 KHz
-</td>
-<td> 1.7 KHz
-</td></tr>
-<tr>
-<th scope="row"> 200 KΩ
-</th>
-<td> 20 秒
-</td>
-<td> 3.2 KHz
-</td>
-<td> 1.3 KHz
-</td></tr>
-</table>
-<dl><dt>③ 播放电阻
-</dt><dd>模式:
-<dl><dd>循环: R8放置0Ω电阻
-</dd><dd>单次: R8不放置电阻
-</dd></dl>
-</dd></dl>
-<dl><dt>④ 播放键
-</dt><dd>当前未使用
-</dd><dt>⑤ 录音键
-</dt><dt>⑥ Grove接口
-</dt><dt>⑦ 扬声器接口
-</dt><dt>⑧ 录音IC：ISD1820P
-</dt></dl>
+① **LED指示灯**
+
+模式:
+- 录制: 红色 LED 灯从录制持续时间开始到结束一直亮起。
+- 播放: 红色 LED 闪烁表示音频播放结束。
+② **采样电阻**
+
+您可以根据下表通过更改采样电阻 （R6） 来设置录制持续时间和采样率:
+| ROSC | 期间 | 采样频率 | 输入带宽 |
+|------|------|----------|----------|
+| 80 KΩ | 8 秒 | 8.0 KHz | 3.4 KHz |
+| 100 KΩ (默认) | 10 秒 | 6.4 KHz | 2.6 KHz |
+| 120 KΩ | 12 秒 | 5.3 KHz | 2.3 KHz |
+| 160 KΩ | 16 秒 | 4.0 KHz | 1.7 KHz |
+| 200 KΩ | 20 秒 | 3.2 KHz | 1.3 KHz |
+③ **播放电阻**
+
+模式:
+- 循环: R8放置0Ω电阻
+- 单次: R8不放置电阻
+④ **播放键**
+
+当前未使用
+
+⑤ **录音键**
+
+⑥ **Grove接口**
+
+⑦ **扬声器接口**
+
+⑧ **录音IC：ISD1820P**
 
 
 ## 用法

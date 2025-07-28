@@ -255,7 +255,7 @@ void loop()
 在GitHub存储库中找到此项目的项目，名称为WioTerminal_Azure_Central.ino，并在Arduino IDE中打开它。上传Sketch后，通过按下Wio Terminal顶部的三个按钮并重置设备，进入配置模式。
 
 设备屏幕上将显示“进入配置模式”。使用串行监视器（波特率为115200，回车符）连接到设备，并设置WiFi SSID、密码和Azure IoT Central凭据(如下格式 ```set_az_iotc your_ID_scope your_primary_key your_device_ID```)，可以通过以下步骤获取这些凭据： 
-• 访问 <https://apps.azureiotcentral.com/>
+• 访问 [https://apps.azureiotcentral.com/](https://apps.azureiotcentral.com/)
 • 如果您还没有Microsoft帐户，请注册一个。
 • 转到 Build -> Custom app.输入应用程序名称和唯一URL（可以与应用程序名称类似）。选择免费计划。
 • 创建应用程序后，转到设备模板。选择IoT设备类型的自定义模型，在下图所示的方式下添加三个功能和两个接口（单击视图->可视化设备）。完成后，确保一切正确无误，并发布模板。

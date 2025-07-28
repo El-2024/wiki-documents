@@ -92,8 +92,8 @@ last_update:
 **Paso 7: Configura la ubicación del Hotspot y paga la tarifa**
 =====================================================
 
-*   El SenseCAP M1 incluye $40 por activación y $10 por la primera ubicación.
-*   Si cambias la ubicación en el futuro, deberás pagar $10 por cada nuevo lugar.
+*   El SenseCAP M1 incluye \$40 por activación y \$10 por la primera ubicación.
+*   Si cambias la ubicación en el futuro, deberás pagar \$10 por cada nuevo lugar.
 *   Selecciona la ubicación en el mapa y confirma.
 
 ![SenseCAP M1 Register Hotspot](https://www.sensecapmx.com/wp-content/uploads/2022/06/register-hotspot.png)

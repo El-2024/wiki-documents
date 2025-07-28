@@ -22,8 +22,8 @@ En esta wiki, te mostraremos cómo actualizar Jetpack OS en la reComputer J1020.
 
 Podemos usar el software Linux **NVIDIA SDK Manager** o podemos usar directamente el **Paquete de controladores NVIDIA Linux** a través de la línea de comandos de Linux para actualizar JetPack OS en la reComputer J1020. Para los principiantes en NVIDIA Jetson, recomendamos utilizar NVIDIA SDK Manager.
 
-- [Opción 1: Flasheo del sistema operativo JetPack a través de NVIDIA SDK Manager](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [Opción 2: Flasheo del sistema operativo JetPack a través de la línea de comandos](#flashing-jetpack-os-via-command-line)
+- Opción 1: Flasheo del sistema operativo JetPack a través de NVIDIA SDK Manager
+- Opción 2: Flasheo del sistema operativo JetPack a través de la línea de comandos
 
 Todavía hay algunos preparativos que necesitamos hacer:
 

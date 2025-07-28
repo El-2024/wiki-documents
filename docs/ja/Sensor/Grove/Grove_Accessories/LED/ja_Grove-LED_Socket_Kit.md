@@ -32,26 +32,25 @@ Grove - LED は、Arduino/Seeeduino の初心者向けに設計されており�
 ## 仕様
 ---
 <table>
-  <tbody><tr>
-      <td width={400}> **項目**
-      </td>
-      <td width={400}> **説明**
-      </td></tr>
+  <tbody>
+    <tr>
+      <td width={400}><strong>項目</strong></td>
+      <td width={400}><strong>説明</strong></td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> LED 制御モード
-      </td>
-      <td> Arduino のデジタルピン
-      </td></tr>
+      <td>LED 制御モード</td>
+      <td>Arduino のデジタルピン</td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> 動作電圧
-      </td>
-      <td> 5V
-      </td></tr>
+      <td>動作電圧</td>
+      <td>5V</td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> 供給モード
-      </td>
-      <td> Grove インターフェース
-      </td></tr></tbody></table>
+      <td>供給モード</td>
+      <td>Grove インターフェース</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ## Arduino を使った始め方

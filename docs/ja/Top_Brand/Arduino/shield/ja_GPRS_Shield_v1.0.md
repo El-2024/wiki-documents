@@ -67,37 +67,38 @@ GPRS Shieldは、標準的なArduinoボードと同じフォームファクタ�
 SIM900の仕様については、以下のPDFファイルを参照してください：[SIM900_SPEC.pdf](https://wiki.seeedstudio.com/ja/images/0/0b/SIM900_SPEC.pdf)
 
 <table cellspacing="0" width="80%">
-<tr>
-<th scope="col"> 項目
-</th><th scope="col"> 最小
-</th><th scope="col"> 標準
-</th><th scope="col"> 最大
-</th><th scope="col"> 単位
-</th></tr>
-<tr>
-<th scope="row"> 電圧
-</th><td>4.8
-</td><td>5.0
-</td><td>5.2
-</td><td>VDC
-</td></tr>
-<tr>
-<th scope="row"> 電流
-</th><td>/
-</td><td>50
-</td><td>450
-</td><td>mA
-</td></tr>
-<tr>
-<th scope="row"> 寸法（アンテナ含む）
-</th><td colspan="3"> 110x58x19
-</td><td>mm
-</td></tr>
-<tr>
-<th scope="row"> 正味重量
-</th><td colspan="3"> 76±2
-</td><td>g
-</td></tr></table>
+  <tr>
+    <th scope="col"> 項目 </th>
+    <th scope="col"> 最小 </th>
+    <th scope="col"> 標準 </th>
+    <th scope="col"> 最大 </th>
+    <th scope="col"> 単位 </th>
+  </tr>
+  <tr>
+    <th scope="row"> 電圧 </th>
+    <td>4.8</td>
+    <td>5.0</td>
+    <td>5.2</td>
+    <td>VDC</td>
+  </tr>
+  <tr>
+    <th scope="row"> 電流 </th>
+    <td>/</td>
+    <td>50</td>
+    <td>450</td>
+    <td>mA</td>
+  </tr>
+  <tr>
+    <th scope="row"> 寸法（アンテナ含む） </th>
+    <td colspan="3"> 110x58x19 </td>
+    <td>mm</td>
+  </tr>
+  <tr>
+    <th scope="row"> 正味重量 </th>
+    <td colspan="3"> 76±2 </td>
+    <td>g</td>
+  </tr>
+</table>
 
 ## インターフェース機能
 
@@ -131,46 +132,40 @@ SIM900の仕様については、以下のPDFファイルを参照してくだ�
 ### ライトステータス
 
 <table>
-  <tbody><tr>
-      <th> LED
-      </th>
-      <th> 状態
-      </th>
-      <th> 機能
-      </th></tr>
+  <tbody>
     <tr>
-      <td width="300px" rowSpan={2}> ステータス
-      </td><td width="300px"> オフ
-      </td>
-      <td width="400px"> 電源オフ
-      </td></tr>
+      <th> LED </th>
+      <th> 状態 </th>
+      <th> 機能 </th>
+    </tr>
     <tr>
-      <td width="300px"> オン
-      </td>
-      <td width="400px"> 電源オン
-      </td></tr>
+      <td width="300px" rowSpan={2}> ステータス </td>
+      <td width="300px"> オフ </td>
+      <td width="400px"> 電源オフ </td>
+    </tr>
     <tr>
-      <td width="300px" rowSpan={4}> ネットライト
-      </td>
-      <td width="300px"> オフ
-      </td>
-      <td width="400px"> SIM900が動作していない
-      </td></tr>
+      <td width="300px"> オン </td>
+      <td width="400px"> 電源オン </td>
+    </tr>
     <tr>
-      <td width="300px"> 64msオン/800msオフ
-      </td>
-      <td width="400px"> SIM900がネットワークを見つけていない
-      </td></tr>
+      <td width="300px" rowSpan={4}> ネットライト </td>
+      <td width="300px"> オフ </td>
+      <td width="400px"> SIM900が動作していない </td>
+    </tr>
     <tr>
-      <td width="300px"> 64msオン/3000msオフ
-      </td>
-      <td width="400px"> SIM900がネットワークを見つけた
-      </td></tr>
+      <td width="300px"> 64msオン/800msオフ </td>
+      <td width="400px"> SIM900がネットワークを見つけていない </td>
+    </tr>
     <tr>
-      <td width="300px"> 64msオン/300msオフ
-      </td>
-      <td width="400px"> GPRS通信中
-      </td></tr></tbody></table>
+      <td width="300px"> 64msオン/3000msオフ </td>
+      <td width="400px"> SIM900がネットワークを見つけた </td>
+    </tr>
+    <tr>
+      <td width="300px"> 64msオン/300msオフ </td>
+      <td width="400px"> GPRS通信中 </td>
+    </tr>
+  </tbody>
+</table>
 
 ### ハードウェアのインストール
 

@@ -34,8 +34,7 @@ In this wiki we introduce you [Real Time Whisper on Jetson](https://github.com/L
 <div class="table-center">
 	<table align="center">
 		<tr>
-			<th>reComputer(Or other devices based on Jetson)
-      </th>
+			<th>reComputer(Or other devices based on Jetson)</th>
       <th>reSpeaker (Or other USB interface microphones)</th>
 		</tr>
     <tr>

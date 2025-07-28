@@ -73,7 +73,7 @@ Además de sus potentes funciones, SenseCAP ofrece una amplia variedad de acceso
 
 **Nota:**
 
-**Las tarifas de incorporación NO están incluidas en el producto. Se deducirá una tarifa de incorporación de $10 USD y una tarifa de ubicación de $5 USD de la billetera del usuario durante el proceso de incorporación.**  
+**Las tarifas de incorporación NO están incluidas en el producto. Se deducirá una tarifa de incorporación de \$10 USD y una tarifa de ubicación de \$5 USD de la billetera del usuario durante el proceso de incorporación.**  
 Asegúrate de tener suficiente crédito Helium Data en tu billetera antes de iniciar el proceso.
 
 ![](https://www.sensecapmx.com/wp-content/uploads/2022/07/Pasted-into-Overview.png)

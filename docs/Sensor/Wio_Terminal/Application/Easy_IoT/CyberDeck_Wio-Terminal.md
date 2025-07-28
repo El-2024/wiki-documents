@@ -18,7 +18,7 @@ last_update:
 请点击此处查看[中文版本](/cn/CyberDeck_Wio-Terminal)
 :::
 
-## <span id="jump1"> Project Overview </span>
+## Project Overview {#jump1}
 
 Create a cyberpunk-style PC monitoring system using Wio Terminal as a display terminal to monitor various performance indicators of the computer in real time.
 
@@ -250,7 +250,7 @@ This project is great for beginners and offers plenty of room for expansion. Sta
 
 ---
 
-## <span id="jump2"> Cursor AI Development Tutorial - Based on the Wio Terminal PC Monitor</span>
+## Cursor AI Development Tutorial - Based on the Wio Terminal PC Monitor {#jump2}
 
 ## 1. Cursor AI Basics
 

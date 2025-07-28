@@ -235,7 +235,7 @@ If you are using **Raspberry Pi with Raspberrypi OS >= Bullseye**, you **cannot 
 curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s -
 ```
 
-:::tipsuccess
+:::tip
 if everything goes well, you will see the following notice.
 
 ```

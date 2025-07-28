@@ -227,7 +227,7 @@ BeagleBone® BlueをMicro-USBケーブルでコンピュータに接続します
 <div align="center"><img width={1000} src="https://github.com/SeeedDocument/Beaglebone_Blue/raw/master/img/connect.jpg" /></div>
 
 :::caution
-USBケーブルを優しく差し込んでください。そうしないとインターフェースを損傷する可能性があります。内部に4本のワイヤーがあるUSBケーブルを使用してください。2本のワイヤーしかないケーブルではデータ転送ができません。使用しているケーブルが不明な場合は、<a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><B>こちら</B></a>をクリックして購入できます。BeagleBone® Blueのモーター制御モジュールを使用する場合、USBポート経由の電源供給では不十分なため、DC-DCポートまたは2Sバッテリーを使用する必要があります。
+USBケーブルを優しく差し込んでください。そうしないとインターフェースを損傷する可能性があります。内部に4本のワイヤーがあるUSBケーブルを使用してください。2本のワイヤーしかないケーブルではデータ転送ができません。使用しているケーブルが不明な場合は、<a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><strong>こちら</strong></a>をクリックして購入できます。BeagleBone® Blueのモーター制御モジュールを使用する場合、USBポート経由の電源供給では不十分なため、DC-DCポートまたは2Sバッテリーを使用する必要があります。
 :::
 
 電源（PWRまたはON）LEDが点灯しているのが確認できます。1分ほどで、他のLEDがデフォルトの設定で点滅し始めます。
@@ -457,8 +457,7 @@ Groveはモジュール化された標準化コネクタのプロトタイピン
 
 <div>
   <style type="text/css" dangerouslySetInnerHTML={{__html: "\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;\n  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}\n.tg .tg-fhi2{background-color:#ffffff;color:#000000;font-size:20px;font-weight:bold;text-align:center;vertical-align:top}\n.tg .tg-366q{background-color:#ffffff;color:#000000;font-size:18px;text-align:center;vertical-align:top}\n" }} />
-
-<table className="tg">
+  <table className="tg">
     <thead>
       <tr>
         <th className="tg-fhi2">SKU</th>
@@ -848,16 +847,7 @@ Groveはモジュール化された標準化コネクタのプロトタイピン
       </tr>
     </tbody>
   </table>
-
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
-（以下に提供された表を翻訳します。元の形式を保持し、すべての行を完全に翻訳します。）
-
 </div>
-
-## FAQs
-
-**[こちら](http://support.seeedstudio.com/knowledgebase/articles/1826437-seeeduino-v4-2-sku-102010026)** をクリックして、BeagleBone® Blueに関するすべてのFAQをご覧ください。
 
 ## 回路図オンラインビューア
 

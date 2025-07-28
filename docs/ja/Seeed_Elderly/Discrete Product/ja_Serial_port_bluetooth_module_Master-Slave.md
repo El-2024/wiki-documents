@@ -73,10 +73,10 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <th>説明</th>
 </tr>
 <tr>
-<td width="100px">PIO11</td>
-<td width="100px">34</td>
-<td width="350px">双方向</td>
-<td width="450px">プログラム可能な入出力ライン</td>
+<td>PIO11</td>
+<td>34</td>
+<td>双方向</td>
+<td>プログラム可能な入出力ライン</td>
 </tr>
 <tr>
 <td>PIO10</td>
@@ -276,15 +276,18 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table>
 <tr>
-<td width="200px"> \r\n+STWMOD=0\r\n
-</td>
-<td width="400px"> デバイスの動作モードをクライアント（スレーブ）として設定します。保存して再起動します。
-</td></tr>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
 <tr>
-<td> \r\n+STWMOD=1\r\n
-</td>
-<td> デバイスの動作モードをサーバー（マスター）として設定します。保存して再起動します。
-</td></tr></table>
+<td>\r\n+STWMOD=0\r\n</td>
+<td>デバイスの動作モードをクライアント（スレーブ）として設定します。保存して再起動します。</td>
+</tr>
+<tr>
+<td>\r\n+STWMOD=1\r\n</td>
+<td>デバイスの動作モードをサーバー（マスター）として設定します。保存して再起動します。</td>
+</tr>
+</table>
 
 **注意:** **\r\n** は操作に必要で、16進数では **0x0D 0x0A** の値です。**\r** は **キャリッジリターン**、**\n** は **ラインフィード**（次の行）を表します。
 
@@ -292,123 +295,158 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table>
 <tr>
-<td width="200px"> \r\n+STBD=115200\r\n
-</td>
-<td width="400px"> ボーレートを115200に設定します。保存して再起動します。
-</td></tr>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
 <tr>
-<td colspan="2"> サポートされているボーレート: 9600, 19200, 38400, 57600, 115200, 230400, 460800。
-</td></tr></table>
+<td>\r\n+STBD=115200\r\n</td>
+<td>ボーレートを115200に設定します。保存して再起動します。</td>
+</tr>
+<tr>
+<td colspan="2">サポートされているボーレート: 9600, 19200, 38400, 57600, 115200, 230400, 460800。</td>
+</tr>
+</table>
 
 **3. デバイス名を設定する**
 
 <table>
 <tr>
-<td width="200px"> \r\n+STNA=abcdefg
-</td>
-<td width="400px"> デバイス名を「abcdefg」に設定します。保存して再起動します。
-</td></tr></table>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
+<tr>
+<td>\r\n+STNA=abcdefg</td>
+<td>デバイス名を「abcdefg」に設定します。保存して再起動します。</td>
+</tr>
+</table>
 
 **4. 電源投入時に最後にペアリングしたデバイスに自動接続する**
 
 <table>
 <tr>
-<td width="200px"> \r\n+STAUTO=0\r\n
-</td>
-<td width="400px"> 自動接続を禁止します。保存して再起動します。
-</td></tr>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
 <tr>
-<td width="200px"> \r\n+STAUTO=1\r\n
-</td>
-<td width="400px"> 自動接続を許可します。保存して再起動します。
-</td></tr></table>
+<td>\r\n+STAUTO=0\r\n</td>
+<td>自動接続を禁止します。保存して再起動します。</td>
+</tr>
+<tr>
+<td>\r\n+STAUTO=1\r\n</td>
+<td>自動接続を許可します。保存して再起動します。</td>
+</tr>
+</table>
 
 **5. ペアリング済みデバイスが接続を許可する**
 
 <table>
 <tr>
-<td width="200px"> \r\n+STOAUT=0\r\n
-</td>
-<td width="400px"> 禁止します。保存して再起動します。
-</td></tr>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
 <tr>
-<td width="200px"> \r\n+STOAUT=1\r\n
-</td>
-<td width="400px"> 許可します。保存して再起動します。
-</td></tr></table>
+<td>\r\n+STOAUT=0\r\n</td>
+<td>禁止します。保存して再起動します。</td>
+</tr>
+<tr>
+<td>\r\n+STOAUT=1\r\n</td>
+<td>許可します。保存して再起動します。</td>
+</tr>
+</table>
 
 **6. PINコードを設定する**
 
 <table>
 <tr>
-<td width="200px"> \r\n +STPIN=2222\r\n
-</td>
-<td width="400px"> PINコードを「2222」に設定します。保存して再起動します。
-</td></tr></table>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
+<tr>
+<td>\r\n +STPIN=2222\r\n</td>
+<td>PINコードを「2222」に設定します。保存して再起動します。</td>
+</tr>
+</table>
 
 **7. PINコードを削除する（MCUでPINコードを入力）**
 
 <table>
 <tr>
-<td width="200px"> \r\n+DLPIN\r\n
-</td>
-<td width="400px"> PINコードを削除します。保存して再起動します。
-</td></tr></table>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
+<tr>
+<td>\r\n+DLPIN\r\n</td>
+<td>PINコードを削除します。保存して再起動します。</td>
+</tr>
+</table>
 
 **8. ローカルアドレスコードを読み取る**
 
 <table>
 <tr>
-<td width="200px"> \r\n+RTADDR\r\n
-</td>
-<td width="400px"> デバイスのアドレスを返します。
-</td></tr></table>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
+<tr>
+<td>\r\n+RTADDR\r\n</td>
+<td>デバイスのアドレスを返します。</td>
+</tr>
+</table>
 
 **9. マスターデバイスが有効範囲外になった場合の自動再接続（スレーブデバイスは有効範囲外になった場合、30分以内に自動再接続します）**
 
 <table>
 <tr>
-<td width="200px"> \r\n+LOSSRECONN=0\r\n
-</td>
-<td width="400px"> 自動再接続を禁止します。
-</td></tr>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
 <tr>
-<td width="200px"> \r\n+LOSSRECONN=1\r\n
-</td>
-<td width="400px"> 自動再接続を許可します。
-</td></tr></table>
+<td>\r\n+LOSSRECONN=0\r\n</td>
+<td>自動再接続を禁止します。</td>
+</tr>
+<tr>
+<td>\r\n+LOSSRECONN=1\r\n</td>
+<td>自動再接続を許可します。</td>
+</tr>
+</table>
 
 #### 通常操作のためのコマンド:  
 
 **1. 検索**
 
+**a) マスター**
+
 <table>
 <tr>
-<td colspan="2" width="600px"> **a) マスター**
-</td></tr>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
 <tr>
-<td width="200px"> \r\n+INQ=0\r\n
-</td>
-<td width="400px"> 検索を停止します。
-</td></tr>
+<td>\r\n+INQ=0\r\n</td>
+<td>検索を停止します。</td>
+</tr>
 <tr>
-<td> \r\n+INQ=1\r\n
-</td>
-<td> 検索を開始/再開します。
-</td></tr>
+<td>\r\n+INQ=1\r\n</td>
+<td>検索を開始/再開します。</td>
+</tr>
+</table>
+
+**b) スレーブ**
+
+<table>
 <tr>
-<td colspan="2" width="600px"> **b) スレーブ**
-</td></tr>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
 <tr>
-<td> \r\n+INQ=0\r\n
-</td>
-<td> 検索されることを無効にします。
-</td></tr>
+<td>\r\n+INQ=0\r\n</td>
+<td>検索されることを無効にします。</td>
+</tr>
 <tr>
-<td> \r\n+INQ=1\r\n
-</td>
-<td> 検索されることを有効にします。
-</td></tr></table>
+<td>\r\n+INQ=1\r\n</td>
+<td>検索されることを有効にします。</td>
+</tr>
+</table>
 
 **+INQ=1** コマンドが成功すると、赤と緑のLEDが交互に点滅します。
 
@@ -416,19 +454,27 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table>
 <tr>
-<td width="250px"> \r\n+RTINQ=aa,bb,cc,dd,ee,ff;name\r\n
-</td>
-<td width="500px"> アドレス「aa,bb,cc,dd,ee,ff」と名前「name」を持つシリアルBluetoothデバイスが検索されました。
-</td></tr></table>
+<td>応答</td>
+<td>説明</td>
+</tr>
+<tr>
+<td>\r\n+RTINQ=aa,bb,cc,dd,ee,ff;name\r\n</td>
+<td>アドレス「aa,bb,cc,dd,ee,ff」と名前「name」を持つシリアルBluetoothデバイスが検索されました。</td>
+</tr>
+</table>
 
 **3. デバイスに接続する**
 
 <table>
 <tr>
-<td width="250px"> \r\n+CONN=aa,bb,cc,dd,ee,ff\r\n
-</td>
-<td width="500px"> アドレス「aa,bb,cc,dd,ee,ff」を持つデバイスに接続します。
-</td></tr></table>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
+<tr>
+<td>\r\n+CONN=aa,bb,cc,dd,ee,ff\r\n</td>
+<td>アドレス「aa,bb,cc,dd,ee,ff」を持つデバイスに接続します。</td>
+</tr>
+</table>
 
 **4. BluetoothモジュールがPINコードの入力を要求する**
 
@@ -438,13 +484,18 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table>
 <tr>
-<td colspan="2"> \r\n+RTPIN=code\r\n
-</td></tr>
+<td>コマンド</td>
+<td>説明</td>
+</tr>
 <tr>
-<td> 例: RTPIN=0000
-</td>
-<td> PINコード「0000」を入力します。
-</td></tr></table>
+<td>\r\n+RTPIN=code\r\n</td>
+<td></td>
+</tr>
+<tr>
+<td>例: RTPIN=0000</td>
+<td>PINコード「0000」を入力します。</td>
+</tr>
+</table>
 
 **6. デバイスを切断する**  
 PIO0を高にすると、現在接続中のBluetoothデバイスが切断されます。
@@ -479,7 +530,7 @@ PIO0を高にすると、現在接続中のBluetoothデバイスが切断され�
 
 ## 購入方法  
 
-こちらをクリックして購入: [シリアルポートBluetoothモジュール (マスター/スレーブ)](https://www.seeedstudio.com/depot/serial-port-bluetooth-module-masterslave-p-572.html?cPath=139_142)
+こちらをクリックして購入: [シリアルポートBluetoothモジュール (マスター/スレーブ)](https://www.seeedstudio.com/depot/serial-port-bluetooth-module-masterslave-p-572.html?cPath=139_142)
 
 ## 関連リンク  
 

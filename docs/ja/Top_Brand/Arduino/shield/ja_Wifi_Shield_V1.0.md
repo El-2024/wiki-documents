@@ -48,75 +48,15 @@ tags:
 
 # 仕様 #
 
-<table cellspacing="0" width="80%">
-<tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 最小
-</th>
-<th scope="col"> 標準
-</th>
-<th scope="col"> 最大
-</th>
-<th scope="col"> 単位
-</th></tr>
-<tr>
-<th scope="row"> 電圧
-</th>
-<td> 3.3
-</td>
-<td> 5
-</td>
-<td> 5.5
-</td>
-<td> VDC
-</td></tr>
-<tr>
-<th scope="row"> 電流
-</th>
-<td> 25
-</td>
-<td> 60
-</td>
-<td> 400
-</td>
-<td> mA
-</td></tr>
-<tr>
-<th scope="row"> 送信出力
-</th>
-<td colspan="3"> 0-10
-</td>
-<td> dBm
-</td></tr>
-<tr>
-<th scope="row"> 周波数
-</th>
-<td colspan="3"> 2402~2480
-</td>
-<td> MHz
-</td></tr>
-<tr>
-<th scope="row">
-<p>ネットワーク速度<br/>
-</p>
-</th>
-<td colspan="4"> 802.11bで1-11 Mbps/802.11gで6-54 Mbps
-</td></tr>
-<tr>
-<th scope="row"> 寸法
-</th>
-<td colspan="3"> 60x56x19
-</td>
-<td> mm
-</td></tr>
-<tr>
-<th scope="row"> 正味重量
-</th>
-<td colspan="3"> 20±2
-</td>
-<td> g
-</td></tr></table>
+| 項目 | 最小 | 標準 | 最大 | 単位 |
+|------|------|------|------|------|
+| 電圧 | 3.3 | 5 | 5.5 | VDC |
+| 電流 | 25 | 60 | 400 | mA |
+| 送信出力 | 0-10 | | | dBm |
+| 周波数 | 2402-2480 | | | MHz |
+| ネットワーク速度 | 802.11bで1-11 Mbps/802.11gで6-54 Mbps | | | |
+| 寸法 | 60x56x19 | | | mm |
+| 正味重量 | 20±2 | | | g |
 
 # インターフェース機能
 
@@ -233,7 +173,7 @@ while(!Wifly.connect("192.168.1.164","90"));//リモートサービスに接続
 
 スケッチをアップロードしてください。
 
-次に、まずTCPクライアントソフトウェアを実行し、その後シリアルポートソフトウェアを実行します。「OpenCom」ボタンをクリックし、仮想ソフトウェアの画面に"<--Connected!"というメッセージが表示されるまで待機してください。
+次に、まずTCPクライアントソフトウェアを実行し、その後シリアルポートソフトウェアを実行します。「OpenCom」ボタンをクリックし、仮想ソフトウェアの画面に"&lt;--Connected!"というメッセージが表示されるまで待機してください。
 
 ![](https://files.seeedstudio.com/wiki/Wifi_Shield_v1.0/img/Wifishield006.jpg)
 

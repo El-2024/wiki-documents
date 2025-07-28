@@ -462,7 +462,7 @@ wf.close()
 
 **对于 Windows 系统:** 我们首先运行命令 'pip install pyaudio'，然后使用 [get_index.py](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array_V2/res/get_index.py) 和 [record.py](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array_V2/res/record.py) 来提取语音。
 
-:::Warning
+:::warning
 如果看到 "Error: %1 is not a valid Win32 application."，请安装 Python Win32 版本。
 :::
 

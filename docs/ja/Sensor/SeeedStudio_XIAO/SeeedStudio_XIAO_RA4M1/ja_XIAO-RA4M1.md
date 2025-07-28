@@ -67,8 +67,7 @@ XIAO RA4M1 は、Renesas の RA4M1 チップ（32ビット ARM® Cortex®-M4 MCU
     <tbody>
         <tr>
             <th rowspan="2">プロセッサ</th>
-            <td><a href="https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ra4m1-32-bit-microcontrollers-48mhz-arm-cortex-m4-and-lcd-controller-and-cap-touch-hmi">Renesas RA4M1</a>
-            </td>
+            <td><a href="https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ra4m1-32-bit-microcontrollers-48mhz-arm-cortex-m4-and-lcd-controller-and-cap-touch-hmi">Renesas RA4M1</a></td>
         </tr>
         <tr>
             <td>48-MHz Arm® Cortex®-M4 コア</td>
@@ -173,8 +172,7 @@ Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.se
 - **ステップ 1.** お使いのオペレーティングシステムに応じて、安定版のArduino IDEをダウンロードしてインストールします。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDEをダウンロード</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDEをダウンロード</font></span></strong></a>
 </div>
 
 - **ステップ 2.** Arduinoアプリケーションを起動します。
@@ -182,7 +180,7 @@ Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.se
 - **ステップ 3.** Arduino IDEにRA4M1ボードパッケージを追加します。
 
     **ファイル > 設定**に移動し、**"追加のボードマネージャーURL"**に以下のURLを入力します：
-    *<https://files.seeedstudio.com/arduino/package_renesas_1.2.0_index.json>*
+    *https://files.seeedstudio.com/arduino/package_renesas_1.2.0_index.json*
     
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/arduino_preference.png" style={{width:800, height:'auto'}}/></div>
 

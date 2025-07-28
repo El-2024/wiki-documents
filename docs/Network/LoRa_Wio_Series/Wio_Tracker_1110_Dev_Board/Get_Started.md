@@ -69,39 +69,41 @@ You can choose others as well, but in that case, you cannot use SenseCAP platfor
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/products/SenseCAP/Wio-Tracker/Wio-1110getstart/4.jpeg" alt="pir" width={300} height="auto" /></p>
 
-<table align="center">
-  <caption> <h2>Platform</h2> </caption>
+<div style={{textAlign: 'center'}}>
+<h2>Platform</h2>
+<table>
   <tbody>
     <tr>
-    <td><h4>Platform</h4></td>
-    <td><h4>Description</h4></td>
+      <td><h4>Platform</h4></td>
+      <td><h4>Description</h4></td>
     </tr>
     <tr>
       <td>SenseCAP for The Things Network</td>
-    <td>Default platform.
-It must be used with SenseCAP Gateway. SenseCAP builds a proprietary TTN server that enables sensors to be used out of the box when paired with an SenseCAP gateway. <br />
-    <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCAP Outdoor Gateway</span></a><br />
-    <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCAP Indoor Gateway</span></a></td>
+      <td>Default platform.
+It must be used with SenseCAP Gateway. SenseCAP builds a proprietary TTN server that enables sensors to be used out of the box when paired with an SenseCAP gateway.<br />
+      <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCAP Outdoor Gateway</span></a><br />
+      <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCAP Indoor Gateway</span></a></td>
     </tr>
-        <tr>
-    <td>SenseCAP for Helium</td>
-    <td>When there is the Helium network coverage, data can upload via Helium. Devices run on a private Helium console of SenseCAP. Users do not need to create devices on Helium console, out of the box with SenseCAP Mate App and Portal. <br />
-
-<a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a></td>
+    <tr>
+      <td>SenseCAP for Helium</td>
+      <td>When there is the Helium network coverage, data can upload via Helium. Devices run on a private Helium console of SenseCAP. Users do not need to create devices on Helium console, out of the box with SenseCAP Mate App and Portal.<br />
+      <a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a></td>
     </tr>
-        <tr>
-    <td>Helium</td>
-    <td>Connect device to your public Helium console</td>
+    <tr>
+      <td>Helium</td>
+      <td>Connect device to your public Helium console</td>
     </tr>
-            <tr>
-    <td>The Things Network</td>
-    <td>Connect device to your TTN(TTS) server</td>
+    <tr>
+      <td>The Things Network</td>
+      <td>Connect device to your TTN(TTS) server</td>
     </tr>
-            <tr>
-    <td>Other Platform</td>
-    <td>Other LoRaWAN Network Server</td>
+    <tr>
+      <td>Other Platform</td>
+      <td>Other LoRaWAN Network Server</td>
     </tr>
-  </tbody></table>
+  </tbody>
+</table>
+</div>
 
 Choose the `Frequency Plan`.
 
@@ -109,10 +111,10 @@ Choose the `Frequency Plan`.
 
 Enter the `Position Uplink Interval (in minutes)` and `Sensor Uplink Interval (in minutes)`.
 
-|Parameters|Description|
+| Parameters | Description |
 | - | - |
-|Position Uplink Interval (minutes)|Scheduled upload of location information.<br/>Default 5 minutes.<br/>The higher the frequency, the higher the power consumption.|
-|Sensor Uplink Interval (minutes)|Scheduled upload of sensor data.<br/>Default 5 minutes.<br/>The higher the frequency, the higher the power consumption.|
+| Position Uplink Interval (minutes) | Scheduled upload of location information.<br/>Default 5 minutes.<br/>The higher the frequency, the higher the power consumption. |
+| Sensor Uplink Interval (minutes) | Scheduled upload of sensor data.<br/>Default 5 minutes.<br/>The higher the frequency, the higher the power consumption. |
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/products/SenseCAP/Wio-Tracker/Wio-1110getstart/6.jpeg" alt="pir" width={300} height="auto" /></p>
 

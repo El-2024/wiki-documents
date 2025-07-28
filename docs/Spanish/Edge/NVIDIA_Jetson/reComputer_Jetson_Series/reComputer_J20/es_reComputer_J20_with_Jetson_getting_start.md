@@ -138,7 +138,7 @@ El sistema completo incluye un módulo de producción NVIDIA Jetson Xavier NX, u
 
 :::info
 La reComputer J20 alimentada por la Carrier Board J202.
-Consulta esta [wiki](/reComputer_J2021_J202_Flash_Jetpack) para obtener más información sobre flasheaer jetpack.
+Consulta esta [wiki](/es/reComputer_J2021_J202_Flash_Jetpack) para obtener más información sobre flasheaer jetpack.
 :::
 
 ## Uso de interfaz

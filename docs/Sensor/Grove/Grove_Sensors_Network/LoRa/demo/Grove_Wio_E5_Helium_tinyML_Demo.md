@@ -64,7 +64,7 @@ Connect the Seeed Studio XIAO nRF52840 (Sense) to your computer via a USB Type-C
 - **Step 3.** Add Seeed Studio XIAO nRF52840 (Sense) board package to your Arduino IDE
 
 Navigate to **File > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
-    *<https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json>*
+    *https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json*
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png" alt="pir" width={700} height="auto" /></p>
 

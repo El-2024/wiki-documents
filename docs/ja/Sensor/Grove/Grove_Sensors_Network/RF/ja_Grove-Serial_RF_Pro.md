@@ -25,19 +25,16 @@ Grove-Serial RF Proは、433/470/868/915 MHzで動作する低コストで高性
 
 <table>
 <tr>
-<th> リビジョン
-</th>
-<th> 説明
-</th>
-<th> リリース
-</th></tr>
+<th> リビジョン</th>
+<th> 説明</th>
+<th> リリース</th>
+</tr>
 <tr>
-<td width="300px"> v0.9b
-</td>
-<td width="500px"> 初回公開リリース
-</td>
-<td width="200px"> NA
-</td></tr></table>
+<td width="300px"> v0.9b</td>
+<td width="500px"> 初回公開リリース</td>
+<td width="200px"> NA</td>
+</tr>
+</table>
 
 ## 特徴
 
@@ -65,88 +62,61 @@ Grove-Serial RF Proは、433/470/868/915 MHzで動作する低コストで高性
 ---
 <table  cellspacing="0" width="80%">
 <tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 最小
-</th>
-<th scope="col"> 典型
-</th>
-<th scope="col"> 最大
-</th>
-<th scope="col"> 単位
-</th></tr>
+<th scope="col"> 項目</th>
+<th scope="col"> 最小</th>
+<th scope="col"> 典型</th>
+<th scope="col"> 最大</th>
+<th scope="col"> 単位</th>
+</tr>
 <tr>
-<td scope="row">動作電圧
-</td>
-<td> 4.75
-</td>
-<td> 5.0
-</td>
-<td> 5.25
-</td>
-<td> VDC
-</td></tr>
+<td scope="row">動作電圧</td>
+<td> 4.75</td>
+<td> 5.0</td>
+<td> 5.25</td>
+<td> VDC</td>
+</tr>
 <tr>
-<td scope="row"> スリープモード時の電流
-</td>
-<td colspan="3"> 1
-</td>
-<td> uA
-</td></tr>
+<td scope="row"> スリープモード時の電流</td>
+<td colspan="3"> 1</td>
+<td> uA</td>
+</tr>
 <tr>
-<td scope="row"> 出力電力
-</td>
-<td> 1
-</td>
-<td> -
-</td>
-<td> 20
-</td>
-<td> dB
-</td></tr>
+<td scope="row"> 出力電力</td>
+<td> 1</td>
+<td> -</td>
+<td> 20</td>
+<td> dB</td>
+</tr>
 <tr>
-<td scope="row"> 通信速度
-</td>
-<td> 1.2
-</td>
-<td>  -
-</td>
-<td> 115.2
-</td>
-<td> Kbps
-</td></tr>
+<td scope="row"> 通信速度</td>
+<td> 1.2</td>
+<td>  -</td>
+<td> 115.2</td>
+<td> Kbps</td>
+</tr>
 <tr>
-<td scope="row"> 伝送距離（最大）
-</td>
-<td colspan="3"> 1
-</td>
-<td> Km
-</td></tr>
+<td scope="row"> 伝送距離（最大）</td>
+<td colspan="3"> 1</td>
+<td> Km</td>
+</tr>
 <tr>
-<td scope="row"> 感度
-</td>
-<td colspan="3"> -117
-</td>
-<td> dBm
-</td></tr>
+<td scope="row"> 感度</td>
+<td colspan="3"> -117</td>
+<td> dBm</td>
+</tr>
 <tr>
-<td scope="row"> 通信プロトコル
-</td>
-<td colspan="3">  UART
-</td>
-<td> /
-</td></tr>
+<td scope="row"> 通信プロトコル</td>
+<td colspan="3">  UART</td>
+<td> /</td>
+</tr>
 <tr>
-<td scope="row"> 動作温度
-</td>
-<td> -40
-</td>
-<td>  -
-</td>
-<td> +85
-</td>
-<td> ℃
-</td></tr></table>
+<td scope="row"> 動作温度</td>
+<td> -40</td>
+<td>  -</td>
+<td> +85</td>
+<td> ℃</td>
+</tr>
+</table>
 
 ## インターフェース機能
 
@@ -155,47 +125,40 @@ Grove-Serial RF Proは、433/470/868/915 MHzで動作する低コストで高性
 
 <table >
 <tr>
-<th> パッドタイプ (5V ロジックレベル)
-</th>
-<th> 説明
-</th></tr>
+<th> パッドタイプ (5V ロジックレベル)</th>
+<th> 説明</th>
+</tr>
 <tr>
-<td width="100px"> G(GND)
-</td>
-<td width="450px"> グランドポート
-</td></tr>
+<td width="100px"> G(GND)</td>
+<td width="450px"> グランドポート</td>
+</tr>
 <tr>
-<td> EN(ENABLE)
-</td>
+<td> EN(ENABLE)</td>
 <td> 通常モード（データ送受信）ではLowに設定（デフォルトは10kでGNDに接続）。
-スリープモードにするにはHighに設定。
-</td></tr>
+スリープモードにするにはHighに設定。</td>
+</tr>
 <tr>
-<td> CON(CONFIG)
-</td>
+<td> CON(CONFIG)</td>
 <td> 設定モードではLowに設定（GNDに接続）。
-通信モードではHighに設定（デフォルトはHigh）。
-</td></tr>
+通信モードではHighに設定（デフォルトはHigh）。</td>
+</tr>
 <tr>
-<td> RX
-</td>
-<td> UARTデータ入力
-</td></tr>
+<td> RX</td>
+<td> UARTデータ入力</td>
+</tr>
 <tr>
-<td> TX
-</td>
-<td> UARTデータ出力
-</td></tr>
+<td> TX</td>
+<td> UARTデータ出力</td>
+</tr>
 <tr>
-<td> V(VCC)
-</td>
-<td> 5V(+)電源用に設計
-</td></tr>
+<td> V(VCC)</td>
+<td> 5V(+)電源用に設計</td>
+</tr>
 <tr>
-<td> AT
-</td>
-<td> アンテナピン
-</td></tr></table>
+<td> AT</td>
+<td> アンテナピン</td>
+</tr>
+</table>
 
 ## はじめに
 
@@ -295,132 +258,73 @@ void clearBufferArray()              // 配列をクリアする関数
 
 <table>
   <tbody><tr>
-      <th>命令(HEX)
-      </th>
-      <th>説明
-      </th>
-      <th>設定命令(HEX)
-      </th>
-      <th>返却値
-      </th></tr>
+      <th>命令(HEX)</th>
+      <th>説明</th>
+      <th>設定命令(HEX)</th>
+      <th>返却値</th>
+    </tr>
     <tr>
-      <td>F0
-      </td>
-      <td>デフォルトパラメータにリセット（UART転送速度を除く）、パラメータは後続しない
-      </td>
-      <td width="400px">AA FA F0
-      </td>
-      <td>4F 4B 0D 0A （OK /r/n)
-      </td></tr>
+      <td>F0</td>
+      <td>デフォルトパラメータにリセット（UART転送速度を除く）、パラメータは後続しない</td>
+      <td width="400px">AA FA F0</td>
+      <td>4F 4B 0D 0A （OK /r/n)</td>
+    </tr>
     <tr>
-      <td>E1
-      </td>
-      <td>現在の設定パラメータを読み取る、パラメータは後続しない
-      </td>
-      <td>AA FA E1
-      </td>
-      <td>16バイト: (**以下の順序に従う**)
-        <pre>動作周波数-4バイト,{"\n"}無線データレート-4バイト,{"\n"}受信帯域幅-2バイト,{"\n"}周波数偏差-1バイト,{"\n"}送信電力-1バイト,{"\n"}UART転送速度-4バイト{"\n"}</pre>
-      </td></tr>
+      <td>E1</td>
+      <td>現在の設定パラメータを読み取る、パラメータは後続しない</td>
+      <td>AA FA E1</td>
+      <td>16バイト: (**以下の順序に従う**) 動作周波数-4バイト, 無線データレート-4バイト, 受信帯域幅-2バイト, 周波数偏差-1バイト, 送信電力-1バイト, UART転送速度-4バイト</td>
+    </tr>
     <tr>
-      <td>D2
-      </td>
-      <td>動作周波数を設定，[パラメータ]4バイト，[パラメータ]単位: Hz。
-        設定範囲:
-        *HM-TRP-433: 414000000-454000000Hz;
-        *   HM-TRP-470: 450000000-490000000Hz;
-        *HM-TRP-868: 849000000-889000000Hz;
-        *   HM-TRP-915: 895000000-935000000Hz
-      </td>
-      <td>例:
-        *設定命令: AA FA D2 **36 89 CA C0**, 周波数を915000000Hzに設定。(**0x36 89 CA C0=915000000**)
-        *   設定命令: AA FA D2 **19 DE 50 80**, 周波数を434000000Hzに設定。(**0x19 DE 50 80=434000000**)
-      </td>
-      <td>4F 4B 0D 0A （OK /r/n)
-      </td></tr>
+      <td>D2</td>
+      <td>動作周波数を設定，[パラメータ]4バイト，[パラメータ]単位: Hz。設定範囲: *HM-TRP-433: 414000000-454000000Hz; *HM-TRP-470: 450000000-490000000Hz; *HM-TRP-868: 849000000-889000000Hz; *HM-TRP-915: 895000000-935000000Hz</td>
+      <td>例: *設定命令: AA FA D2 **36 89 CA C0**, 周波数を915000000Hzに設定。(**0x36 89 CA C0=915000000**) *設定命令: AA FA D2 **19 DE 50 80**, 周波数を434000000Hzに設定。(**0x19 DE 50 80=434000000**)</td>
+      <td>4F 4B 0D 0A （OK /r/n)</td>
+    </tr>
     <tr>
-      <td>C3
-      </td>
-      <td>無線データレートを設定，[パラメータ]4バイト，[パラメータ]単位: bps。
-        設定範囲:1200-115200 bps
-      </td>
-      <td>例:
-        *設定命令: AA FA C3 **00 00 25 80**,転送速度を9600bpsに設定。(**0x00 00 25 80=9600**)
-        *   設定命令: AA FA C3 **00 00 96 00**, 転送速度を38400bpsに設定。(**0x00 00 96 00=38400**)
-      </td>
-      <td>4F 4B 0D 0A （OK /r/n)
-      </td></tr>
+      <td>C3</td>
+      <td>無線データレートを設定，[パラメータ]4バイト，[パラメータ]単位: bps。設定範囲:1200-115200 bps</td>
+      <td>例: *設定命令: AA FA C3 **00 00 25 80**,転送速度を9600bpsに設定。(**0x00 00 25 80=9600**) *設定命令: AA FA C3 **00 00 96 00**, 転送速度を38400bpsに設定。(**0x00 00 96 00=38400**)</td>
+      <td>4F 4B 0D 0A （OK /r/n)</td>
+    </tr>
     <tr>
-      <td>B4
-      </td>
-      <td>受信帯域幅を設定，[パラメータ]2バイト，[パラメータ]単位: KHz
-        設定範囲:30-620KHz
-      </td>
-      <td>例:
-        *設定命令: AA FA B4 **00 69**, 受信帯域幅を105KHzに設定。(**0x00 69=105**)
-        *   設定命令: AA FA B4 **01 2C**, 受信帯域幅を300KHzに設定。(**0x01 2C=300**)
-      </td>
-      <td>4F 4B 0D 0A （OK /r/n)
-      </td></tr>
+      <td>B4</td>
+      <td>受信帯域幅を設定，[パラメータ]2バイト，[パラメータ]単位: KHz 設定範囲:30-620KHz</td>
+      <td>例: *設定命令: AA FA B4 **00 69**, 受信帯域幅を105KHzに設定。(**0x00 69=105**) *設定命令: AA FA B4 **01 2C**, 受信帯域幅を300KHzに設定。(**0x01 2C=300**)</td>
+      <td>4F 4B 0D 0A （OK /r/n)</td>
+    </tr>
     <tr>
-      <td>A5
-      </td>
-      <td>周波数偏差を設定，[パラメータ]1バイト，[パラメータ]単位: KHz
-        設定範囲:10-160KHz
-      </td>
-      <td>例:
-        *設定命令: AA FA A5 **23**, 変調周波数を35KHzに設定。(**0x23=35**)
-        *   設定命令: AA FA A5 **32**, 変調周波数を50KHzに設定。(**0x32=50**)
-      </td>
-      <td>4F 4B 0D 0A （OK /r/n)
-      </td></tr>
+      <td>A5</td>
+      <td>周波数偏差を設定，[パラメータ]1バイト，[パラメータ]単位: KHz 設定範囲:10-160KHz</td>
+      <td>例: *設定命令: AA FA A5 **23**, 変調周波数を35KHzに設定。(**0x23=35**) *設定命令: AA FA A5 **32**, 変調周波数を50KHzに設定。(**0x32=50**)</td>
+      <td>4F 4B 0D 0A （OK /r/n)</td>
+    </tr>
     <tr>
-      <td>96
-      </td>
-      <td>送信電力を設定 ,[パラメータ]1バイト，0~7レベル
-        設定範囲:0-7レベル(1-20 dBm)
-      </td>
-      <td>例:
-        *設定命令: AA FA 96 **07**, 送信電力をレベル7 (+20 dBm)に設定
-        *   設定命令:AA FA 96 **03**, 送信電力をレベル3 (+8 dBm)に設定
-        <pre>送信電力レベル{"     "}送信電力{"\n"}7{"                                 "}+20dBm{"\n"}6{"                                 "}+17dBm{"\n"}5{"                                 "}+14dBm{"\n"}4{"                                 "}+11dBm{"\n"}3{"                                 "}+8dBm{"\n"}2{"                                 "}+5dBm{"\n"}1{"                                 "}+2dBm{"\n"}0{"                                 "}+1dBm{"\n"}</pre>
-      </td>
-      <td>4F 4B 0D 0A （OK /r/n)
-      </td></tr>
+      <td>96</td>
+      <td>送信電力を設定 ,[パラメータ]1バイト，0~7レベル 設定範囲:0-7レベル(1-20 dBm)</td>
+      <td>例: *設定命令: AA FA 96 **07**, 送信電力をレベル7 (+20 dBm)に設定 *設定命令:AA FA 96 **03**, 送信電力をレベル3 (+8 dBm)に設定 送信電力レベル表: 7=+20dBm, 6=+17dBm, 5=+14dBm, 4=+11dBm, 3=+8dBm, 2=+5dBm, 1=+2dBm, 0=+1dBm</td>
+      <td>4F 4B 0D 0A （OK /r/n)</td>
+    </tr>
     <tr>
-      <td>1E
-      </td>
-      <td>UART転送速度を設定，[パラメータ]4バイト，[パラメータ]単位: bps
-        設定範囲:1200-115200 bps
-      </td>
-      <td>例:
-        *設定命令 :AA FA 1E **00 00 25 80**,転送速度を9600bpsに設定。(**0x00 00 25 80=9600**)
-        *   設定命令 :AA FA 1E **00 00 96 00**, 転送速度を38400bpsに設定。(**0x00 00 96 00=38400**)
-      </td>
-      <td>4F 4B 0D 0A （OK /r/n)
-      </td></tr>
+      <td>1E</td>
+      <td>UART転送速度を設定，[パラメータ]4バイト，[パラメータ]単位: bps 設定範囲:1200-115200 bps</td>
+      <td>例: *設定命令 :AA FA 1E **00 00 25 80**,転送速度を9600bpsに設定。(**0x00 00 25 80=9600**) *設定命令 :AA FA 1E **00 00 96 00**, 転送速度を38400bpsに設定。(**0x00 00 96 00=38400**)</td>
+      <td>4F 4B 0D 0A （OK /r/n)</td>
+    </tr>
     <tr>
-      <td>87
-      </td>
-      <td>有効データを受信する際の無線信号強度、[パラメータ]は後続しない
-      </td>
-      <td>設定命令：AA FA 87
-        ![](https://files.seeedstudio.com/wiki/Grove-Serial_RF_Pro/img/WirelesssignalstrengthRSSI.jpg)
-      </td>
-      <td>RSSI値は8ビット、範囲: 0-255
-      </td></tr>
+      <td>87</td>
+      <td>有効データを受信する際の無線信号強度、[パラメータ]は後続しない</td>
+      <td>設定命令：AA FA 87 ![](https://files.seeedstudio.com/wiki/Grove-Serial_RF_Pro/img/WirelesssignalstrengthRSSI.jpg)</td>
+      <td>RSSI値は8ビット、範囲: 0-255</td>
+    </tr>
     <tr>
-      <td>78
-      </td>
-      <td>無線信号強度の妨害、[パラメータ]は後続しない
-        注意：
-        *変調指数 : h = Fd/Rb, 範囲は0.5 ~ 32。
-        *   h&gt;1の場合、BW =Rb+2Fd; h&lt;1の場合、BW =2Rb+ Fd。
-      </td>
-      <td>設定命令：AA FA 78
-      </td>
-      <td>RSSI値は8ビット , 範囲: 0-255
-      </td></tr></tbody></table>
+      <td>78</td>
+      <td>無線信号強度の妨害、[パラメータ]は後続しない 注意： *変調指数 : h = Fd/Rb, 範囲は0.5 ~ 32。 *h&gt;1の場合、BW =Rb+2Fd; h&lt;1の場合、BW =2Rb+ Fd。</td>
+      <td>設定命令：AA FA 78</td>
+      <td>RSSI値は8ビット , 範囲: 0-255</td>
+    </tr>
+  </tbody>
+</table>
 
 ## リソース
 

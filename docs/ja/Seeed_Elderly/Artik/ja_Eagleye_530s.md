@@ -180,10 +180,10 @@ USB-UARTから電源が供給される場合、ジャンパーJP1が1-2位置に
 
 **ソフトウェア**
 
-Eagleye 530sモジュールとの接続は、有線または無線で行うことができます。ここでは、無料のシリアルコンソールであるPuTTYをインストールする方法を選択します。ソフトウェアは<http://www.putty.org/>からダウンロードできます。ダウンロード後、以下の手順に従ってください：
+Eagleye 530sモジュールとの接続は、有線または無線で行うことができます。ここでは、無料のシリアルコンソールであるPuTTYをインストールする方法を選択します。ソフトウェアは[http://www.putty.org/](http://www.putty.org/)からダウンロードできます。ダウンロード後、以下の手順に従ってください：
 
 - ステップ1. コントロールパネルでデバイスマネージャーを開きます。
-- ステップ2. PCを使用する場合、USBからシリアルへのドライバーをインストールします。ドライバーは以下の場所からダウンロードできます：(<https://www.ftdichip.com/Drivers/CDM/CDM21218_Setup.zip>)。その他のドライバーについては、(<https://www.ftdichip.com/Drivers/D2XX.htm>)を参照してください。
+- ステップ2. PCを使用する場合、USBからシリアルへのドライバーをインストールします。ドライバーは以下の場所からダウンロードできます：[https://www.ftdichip.com/Drivers/CDM/CDM21218_Setup.zip](https://www.ftdichip.com/Drivers/CDM/CDM21218_Setup.zip)。その他のドライバーについては、[https://www.ftdichip.com/Drivers/D2XX.htm](https://www.ftdichip.com/Drivers/D2XX.htm)を参照してください。
 - ステップ3. USBシリアルケーブルを接続した際のPC上のCOMポート番号を確認します。この例では、割り当てられたCOMポートはCOM9です。
 
 ![](https://files.seeedstudio.com/wiki/Eagleye_530s/img/Com.png)

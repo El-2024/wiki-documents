@@ -24,7 +24,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 バイオメディカルセンサーは、校正されたバイオメディスン分野におけるセンサーの一部であり、人間の生理情報をそれに関連する一定の機能関係を持つ電気情報に変換する変換装置です。このセンサーが取得する情報は人間の生理情報であり、その出力はしばしば電気信号として表されます。
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_biomedical/IMG/Biomedicine.png" /><figcaption><b>図1</b>. <i> バイオメディカルセンサーの応用例 </i></figcaption>
+<div align="center">
+<img src="https://files.seeedstudio.com/wiki/Sensor_biomedical/IMG/Biomedicine.png" />
+<figcaption><b>図1</b>. <i> バイオメディカルセンサーの応用例 </i></figcaption>
 </div>
 
 ## 実績

@@ -30,8 +30,8 @@ SenseCAP [S2110 コントローラー](https://www.seeedstudio.com/SenseCAP-XIAO
 IP66 ハウジング、Bluetooth 設定、グローバル LoRaWAN® ネットワークとの互換性、内蔵 19 Ah バッテリー、そしてアプリからの強力なサポートにより、[SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device) は産業用途に最適な選択肢となります。このシリーズには、土壌水分、空気温度と湿度、光強度、CO2、EC、そして 8-in-1 気象ステーション用のセンサーが含まれています。次の成功する産業プロジェクトには、最新の SenseCAP S210x をお試しください。
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP 産業用センサー</strong></font></td>
-    </tr>
+  <tbody>
+    <tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP 産業用センサー</strong></font></td></tr>
     <tr>
       <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div>
       </td>
@@ -80,7 +80,7 @@ Node-REDをインストールしていない、またはNode-REDが何である�
 
 **ステップ1.** Node-REDを起動する
 
-ターミナルでコマンド`node-red`を入力してNode-REDを起動し、ブラウザを開いてアドレスバーに**<http://localhost:1880>**を入力してNode-REDのエディタにアクセスします。
+ターミナルでコマンド`node-red`を入力してNode-REDを起動し、ブラウザを開いてアドレスバーに`http://localhost:1880`を入力してNode-REDのエディタにアクセスします。
 
 **ステップ2.** MQTTノードを作成する
 

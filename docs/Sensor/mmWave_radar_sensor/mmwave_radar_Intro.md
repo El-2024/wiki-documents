@@ -196,11 +196,11 @@ Our range of mmWave Radar Sensors are shown below, each with different features 
     </tr>
     <tr>
         <th>Availability</th>
-        <td><a href="https://www.seeedstudio.com/"><strong>$24.9</strong> at Seeed Stduio</a></td>
-        <td><a href="https://www.seeedstudio.com/"><strong>$24.9</strong> at Seeed Stduio</a></td>
-        <td><a href="https://www.seeedstudio.com/Seeed-Studio-24GHz-mmWave-for-XIAO-p-5830.html"><strong>$4.49</strong> at Seeed Studio</a></td>
-        <td><a href="https://www.seeedstudio.com/mmWave-Human-Detection-Sensor-Kit-p-5773.html"><strong>$26.99</strong> at Seeed Stduio</a></td>
-        <td><a href="https://www.seeedstudio.com/24GHz-mmWave-Sensor-Human-Static-Presence-Module-Lite-p-5524.html"><strong>$6.9</strong> at Seeed Studio</a></td>
+        <td><a href="https://www.seeedstudio.com/"><strong>\$24.9</strong> at Seeed Stduio</a></td>
+        <td><a href="https://www.seeedstudio.com/"><strong>\$24.9</strong> at Seeed Stduio</a></td>
+        <td><a href="https://www.seeedstudio.com/Seeed-Studio-24GHz-mmWave-for-XIAO-p-5830.html"><strong>\$4.49</strong> at Seeed Studio</a></td>
+        <td><a href="https://www.seeedstudio.com/mmWave-Human-Detection-Sensor-Kit-p-5773.html"><strong>\$26.99</strong> at Seeed Stduio</a></td>
+        <td><a href="https://www.seeedstudio.com/24GHz-mmWave-Sensor-Human-Static-Presence-Module-Lite-p-5524.html"><strong>\$6.9</strong> at Seeed Studio</a></td>
     </tr>
 </font>
 </table>

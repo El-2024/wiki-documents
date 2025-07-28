@@ -14,13 +14,12 @@ last_update:
 https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
-[<p><img src="https://files.seeedstudio.com/wiki/Grove-4-Digit_Display/img/Grove-4_digit_display.jpg" alt="pir" width={600} height="auto" /></p>
-](https://www.seeedstudio.com/depot/grove-4digital-display-p-1198.html)
+[<img src="https://files.seeedstudio.com/wiki/Grove-4-Digit_Display/img/Grove-4_digit_display.jpg" alt="pir" width={600} height="auto" />](https://www.seeedstudio.com/depot/grove-4digital-display-p-1198.html)
 
 Grove - 4-Digit Display モジュールは、12ピンのモジュールです。このモジュールでは、TM1637を使用して制御ピンの数を2本に削減しています。つまり、ArduinoまたはSeeeduinoのデジタルピン2本だけで、内容と輝度の両方を制御できます。英数字の表示が必要なプロジェクトにおいて、このモジュールは良い選択肢となるでしょう。
 
 <!-- <p style=":center"><a href="https://www.seeedstudio.com/grove-4digital-display-p-1198.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/get_one_now_small.png" width="200" height="38"  border=0 /></a></p> -->
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/grove-4digital-display-p-1198.html)
+[<img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" />](https://www.seeedstudio.com/grove-4digital-display-p-1198.html)
 
 ## バージョン
 

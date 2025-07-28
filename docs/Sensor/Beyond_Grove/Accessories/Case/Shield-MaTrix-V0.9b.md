@@ -325,19 +325,15 @@ Library functions used for organizing various effects and scrolling text (data f
 
 <u> **mymatrix.init();**</u>
 
-<dl><dd>_Description_: nitialization module.
-</dd></dl>
+<dl><dd>_Description_: nitialization module.</dd></dl>
 
 <u> **mymatrix.clearLed();**</u>
 
-<dl><dd>_Description_:cleaning the display.
-</dd></dl>
+<dl><dd>_Description_:cleaning the display.</dd></dl>
 
 <u> **mymatrix.brightness(byte brightLevel);**</u>
 
-<dl><dd>_Description_: sets the display brightness.
-</dd><dd>_brightLevel_:brightness level (byte), a value of 255 - set to maximum brightness.
-</dd></dl>
+<dl><dd>_Description_: sets the display brightness.</dd><dd>_brightLevel_:brightness level (byte), a value of 255 - set to maximum brightness.</dd></dl>
 
 Example of use:
 
@@ -352,8 +348,7 @@ Example of use:
 
 <u> **mymatrix.get Brightness();**</u>
 
-<dl><dd>_Description_: returns the current display brightness.
-</dd></dl>
+<dl><dd>_Description_: returns the current display brightness.</dd></dl>
 
 Example of use:
 
@@ -368,13 +363,7 @@ Example of use:
 
 <u> **printString(String s, byte pos, byte color, unsigned char *Font, char effect, int speed);**</u>
 
-<dl><dd>_Description_: displays the specified string.
-</dd><dd>_pos_: starting position of the first character (byte). Counting from the right edge of the matrix, starting with 0.
-</dd><dd>_color_: color (byte). Three predefined values - RED, GREEN, YELLOW
-</dd><dd>_*Font_: a pointer to the font (unsigned char). Fonts available at the library: character - font5x8 (Latin), font6x8 (Latin and Cyrillic); digital - digit6x8bold, digit6x8future. Details about fonts, see the file fonts.c of the library archive MaTrix.
-</dd><dd>_effect_: the effect of the inscription (char). Available predefined values: LEFT, UP, DOWN (shift in the corresponding direction), FADE (manifestation), NONE (No effect - instantly). Default value - NONE.
-</dd><dd>_speed_: playback speed effect (int). Available predefined values: VSLOW, SLOW, MID,  FAST, VFAST (from "very slow" to "very quickly"), default value - MID.
-</dd></dl>
+<dl><dd>_Description_: displays the specified string.</dd><dd>_pos_: starting position of the first character (byte). Counting from the right edge of the matrix, starting with 0.</dd><dd>_color_: color (byte). Three predefined values - RED, GREEN, YELLOW</dd><dd>_*Font_: a pointer to the font (unsigned char). Fonts available at the library: character - font5x8 (Latin), font6x8 (Latin and Cyrillic); digital - digit6x8bold, digit6x8future. Details about fonts, see the file fonts.c of the library archive MaTrix.</dd><dd>_effect_: the effect of the inscription (char). Available predefined values: LEFT, UP, DOWN (shift in the corresponding direction), FADE (manifestation), NONE (No effect - instantly). Default value - NONE.</dd><dd>_speed_: playback speed effect (int). Available predefined values: VSLOW, SLOW, MID,  FAST, VFAST (from "very slow" to "very quickly"), default value - MID.</dd></dl>
 
 Example of use:
 
@@ -389,11 +378,7 @@ Example of use:
 
 <u> **printRunningString(String s, byte color, unsigned char *Font, int speed);**</u>
 
-<dl><dd>_Description_: displays the defined "running" line.
-</dd><dd>_color_: color (byte). Three predefined values - RED, GREEN, YELLOW
-</dd><dd>_*Font_: a pointer to the font (unsigned char). Fonts available at the library: character - font5x8 (Latin), font6x8 (Latin and Cyrillic); digital - digit6x8bold, digit6x8future. Details about fonts, see the file fonts.c of the library archive MaTrix.
-</dd><dd>_speed_: playback speed effect (int). Available predefined values: VSLOW, SLOW, MID,  FAST, VFAST (from "very slow" to "very quickly"), default value - MID.
-</dd></dl>
+<dl><dd>_Description_: displays the defined "running" line.</dd><dd>_color_: color (byte). Three predefined values - RED, GREEN, YELLOW</dd><dd>_*Font_: a pointer to the font (unsigned char). Fonts available at the library: character - font5x8 (Latin), font6x8 (Latin and Cyrillic); digital - digit6x8bold, digit6x8future. Details about fonts, see the file fonts.c of the library archive MaTrix.</dd><dd>_speed_: playback speed effect (int). Available predefined values: VSLOW, SLOW, MID,  FAST, VFAST (from "very slow" to "very quickly"), default value - MID.</dd></dl>
 
 Example of use:
 
@@ -410,42 +395,31 @@ Example of use:
 
 <u> **printArray();**</u>
 
-<dl><dd>_Description_: displays the serial port the current state of the main array (array).
-</dd></dl>
+<dl><dd>_Description_: displays the serial port the current state of the main array (array).</dd></dl>
 
 <u> **printShadow();**</u>
 
-<dl><dd>_Description_: displays the serial port the current state of the "shadow" of the array (shadow).
-</dd></dl>
+<dl><dd>_Description_: displays the serial port the current state of the "shadow" of the array (shadow).</dd></dl>
 
 <u> **printChar(unsigned char sym, byte pos, byte color);**</u>
 
-<dl><dd>_Description_: function changes the bulk (array)so that when displayed in the matrix in a predetermined position of the desired output color desired symbol.
-</dd><dd>_pos_:starting character position (byte). Counting from the right edge of the matrix, starting with 0.
-</dd><dd>_color_: color (byte). Three predefined values - RED, GREEN, YELLOW
-</dd></dl>
+<dl><dd>_Description_: function changes the bulk (array)so that when displayed in the matrix in a predetermined position of the desired output color desired symbol.</dd><dd>_pos_:starting character position (byte). Counting from the right edge of the matrix, starting with 0.</dd><dd>_color_: color (byte). Three predefined values - RED, GREEN, YELLOW</dd></dl>
 
 Attention! Font that is used when calling the function must be defined using the setFont.
 
 <u> **printCharShadow(unsigned char sym, byte pos, byte color);**</u>
 
-<dl><dd>_Description_: function similar printChar, but is subject to modification "shadow" array (shadow).
-</dd></dl>
+<dl><dd>_Description_: function similar printChar, but is subject to modification "shadow" array (shadow).</dd></dl>
 
 <u> **printStr(unsigned char *s, byte pos, byte color);**</u>
 
-<dl><dd>_Description_: function changes the bulk (array) so that when displayed on a matrix with a predetermined desired position of the array of characters displayed the color desired.
-</dd><dd>_*s_: a pointer to an array of characters (unsigned char).
-</dd><dd>_pos_: starting position of the first character (byte). Counting from the right edge of the matrix, starting with 0.
-</dd><dd>_color_: color (byte). Three predefined values - RED, GREEN, YELLOW
-</dd></dl>
+<dl><dd>_Description_: function changes the bulk (array) so that when displayed on a matrix with a predetermined desired position of the array of characters displayed the color desired.</dd><dd>_*s_: a pointer to an array of characters (unsigned char).</dd><dd>_pos_: starting position of the first character (byte). Counting from the right edge of the matrix, starting with 0.</dd><dd>_color_: color (byte). Three predefined values - RED, GREEN, YELLOW</dd></dl>
 
 Attention! Font that is used when calling the function must be defined using the setFont.
 
 <u> **printStrShadow(unsigned char *s, byte pos, byte color);**</u>
 
-<dl><dd>_Description_: function similar printChar, but is subject to modification "shadow" array (shadow).
-</dd></dl>
+<dl><dd>_Description_: function similar printChar, but is subject to modification "shadow" array (shadow).</dd></dl>
 
 ##   References
 

@@ -30,7 +30,7 @@ last_update:
 * **高性能**：高精度、可靠性和稳定性
 * **紧凑设计**：3合1，土壤湿度、温度和电导率传感器
 * **通用协议**：MODBUS-RTU RS-485
-* **宽范围电源供电**：3.6V ~ 30V
+* **宽范围电源供电**：3.6V &#126; 30V
 * **工业级坚固性**：IP68 防护等级，适合长期应用
 * **广泛适用**：可用于土壤、水、营养液及其他基质
 * **强抗干扰能力**：采用阻燃环氧树脂制造
@@ -78,7 +78,7 @@ last_update:
 </tr>
 <tr>
 <td class="tg-vkfu">电源供电</td>
-<td class="tg-vkfu">3.6 ~ 30V DC</td>
+<td class="tg-vkfu">3.6 &#126; 30V DC</td>
 </tr>
 <tr>
 <td class="tg-vkfu">电流消耗</td>
@@ -89,7 +89,7 @@ last_update:
 </tr>
 <tr>
 <td class="tg-vkfu">工作温度</td>
-<td class="tg-vkfu">-40℃ ~ +85℃</td>
+<td class="tg-vkfu">-40℃ &#126; +85℃</td>
 </tr>
 <tr>
 <td class="tg-vkfu">探针材料</td>
@@ -122,7 +122,7 @@ last_update:
 <tr><th class="tg-luhj" colspan="2">土壤温度</th></tr>
 <tr>
 <td class="tg-vkfu"><span data-data-data-style="font-size: small;">范围</span></td>
-<td class="tg-vkfu">-40℃ ~ +80℃</td>
+<td class="tg-vkfu">-40℃ &#126; +80℃</td>
 </tr>
 <tr>
 <td class="tg-vkfu">精度</td>
@@ -147,15 +147,15 @@ last_update:
 <tr>
 <td class="tg-vkfu">精度</td>
 <td class="tg-vkfu">
-<p>±2% (0~50%)</p>
-<p>±3% (50~100%)</p>
+<p>±2% (0&#126;50%)</p>
+<p>±3% (50&#126;100%)</p>
 </td>
 </tr>
 <tr>
 <td class="tg-vkfu">分辨率</td>
 <td class="tg-vkfu">
-<p>0.03% (0~50%)</p>
-<p>1% (50~100%)</p>
+<p>0.03% (0&#126;50%)</p>
+<p>1% (50&#126;100%)</p>
 </td>
 </tr>
 </tbody>
@@ -165,7 +165,7 @@ last_update:
 <tr><th class="tg-luhj" colspan="2">电导率</th></tr>
 <tr>
 <td class="tg-vkfu"><span data-data-data-style="font-size: small;">范围</span></td>
-<td class="tg-vkfu">0 ~ 10000 μs/cm</td>
+<td class="tg-vkfu">0 &#126; 10000 μs/cm</td>
 </tr>
 <tr>
 <td class="tg-vkfu">精度</td>

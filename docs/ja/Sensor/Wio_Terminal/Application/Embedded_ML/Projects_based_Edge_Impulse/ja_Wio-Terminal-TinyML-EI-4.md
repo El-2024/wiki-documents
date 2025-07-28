@@ -82,7 +82,7 @@ Wio Terminalと超音波センサーを木製または3Dプリントされたフ
 
 フレームを壁に取り付けるには、3Mのベルクロストリップを使用しました。
 
-<img width="{200}" align="left" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/3m.png" />
+<img width={200} align="left" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/3m.png" />
 
 その他の選択肢として、フォームテープ、ネジ、または釘を使用することもできます。
 
@@ -105,11 +105,11 @@ else {
 このプロジェクトでは、各クラスごとに1分30秒のデータを記録し、各サンプルを5000 msで記録した後、1500 msに切り取ります。データセットの多様性が非常に重要であるため、速く歩く、遅く歩く、走るなど、さまざまな動作を含むサンプルを確保してください。
 
 <div>
-<img width="{180}" align="center" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/in.png" />
+<img width={180} align="center" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/in.png" />
 
-<img width ={570} align="center" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/out.png"/>
+<img width={570} align="center" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/out.png"/>
 
-<img width="{175}" align="center" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/none.png" />
+<img width={175} align="center" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/none.png" />
 </div>
 
 「none」カテゴリでは、デバイスの前に誰もいないサンプルに加えて、デバイスの近くに立っている人や横を歩いている人を含むサンプルを追加することをお勧めします。これにより、動きが誤って「in」または「out」と分類されるのを防ぐことができます。
@@ -136,7 +136,7 @@ Spectral analysisブロックは、データサンプルに高速フーリエ変
 92%は概念実証やプロトタイプとしてはかなり良いですが、製品モデルとしてはひどいものです。製品化の場合、状況によって異なります – アプリケーションが重要で、自動制御や意思決定に使用される場合、98～99%未満の精度は望ましくありません。それでも低い場合があります。例えば、支払いまたは認証のための顔認識システムのようなものを考えてみてください。このシステムの精度を向上させる方法はあるのでしょうか？
 • 超音波センサーは安価で普及しているセンサーですが、比較的遅く、精度が高くありません。
 
-<img width="{200}" align="left" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/Grove-TF-Mini-LiDAR.JPG" />
+<img width={200} align="left" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/Grove-TF-Mini-LiDAR.JPG" />
 
  より良いデータを得るために、Grove TF Mini LiDARモジュールを使用することができます。
 
@@ -149,7 +149,7 @@ Spectral analysisブロックは、データサンプルに高速フーリエ変
 
 今回は、重要なデータを見逃さないようにするために、連続推論の例を使用します。最初のプロジェクトを思い出してください。推論の際には、サンプル内のすべてのデータポイントを収集し、推論を実行してから再びサンプリングに戻るという手順を取っていました。つまり、ニューラルネットワークにデータを供給する際にデータ収集を一時停止し、一部のデータを失うことになります。
 
-<img width="{200}" align="right" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/10df57c-RunImpulse.png" />
+<img width={200} align="right" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/10df57c-RunImpulse.png" />
 
 これは最適ではありません。この問題を解決するために、DMA（Direct Memory Access）、スレッド、またはマルチプロセッシングを使用することができます。
 <div align="center">
@@ -265,7 +265,7 @@ Githubリポジトリでこのプロジェクトを見つけ、名前が「WioTe
 デバイス画面に「設定モード」が表示されます。シリアルモニター（ボーレート115200、キャリッジリターン）でデバイスに接続し、WiFi SSID、パスワード、およびAzure IoT Centralの資格情報を以下の形式で設定します：
 ```set_az_iotc your_ID_scope your_primary_key your_device_ID```
 これらの資格情報は以下の手順で取得できます：
-- <https://apps.azureiotcentral.com/> にアクセスします。
+- [https://apps.azureiotcentral.com/](https://apps.azureiotcentral.com/) にアクセスします。
 - Microsoftアカウントをまだ持っていない場合は登録します。
 - 「Build -> Custom app」に進みます。アプリ名とユニークなURL（アプリ名に類似していても構いません）を入力します。無料プランを選択します。
 - アプリが作成された後、「Device Templates」に進みます。IoTデバイスタイプの新しいテンプレートを作成します。カスタムモデルを選択し、以下のスクリーンショットのように3つの機能と2つのインターフェースを追加します（「Views -> Visualizing the device」を押します）。すべてが正しいことを確認した後、テンプレートを公開します。

@@ -128,134 +128,46 @@ DSO Quadのアプリケーション開発に関する情報も参照してくだ
 ## 仕様
 
 ---
-<table >
-<tr>
-<td> アナログチャンネル *2                </td>
-<td> [CH_A] [CH_B]
-</td></tr>
-<tr>
-<td> デジタルチャンネル *2               </td>
-<td> [CH_C] [CH_D]
-</td></tr>
-<tr>
-<td> 垂直スケール                    </td>
-<td> 20mV-10V/div (1-2-5 ステップ) x1プローブ / 200mV-100V/div (1-2-5 ステップ) x10プローブ
-</td></tr>
-<tr>
-<td> 垂直分解能               </td>
-<td> 8ビット
-</td></tr>
-<tr>
-<td> 入力結合                    </td>
-<td> AC/DC
-</td></tr>
-<tr>
-<td> 最大入力電圧                 </td>
-<td> 80Vpp (x1プローブ) / 400Vpp (x10プローブ)
-</td></tr>
-<tr>
-<td> ストレージ                           </td>
-<td> 各チャンネル4K / 単一チャンネル8K
-</td></tr>
-<tr>
-<td> ソフトウェアトリガータイプ             </td>
-<td> エッジ、パルス、レベル（追加予定）
-</td></tr>
-<tr>
-<td> ハードウェアトリガータイプ             </td>
-<td> エッジ
-</td></tr>
-<tr>
-<td> トリガーソース                    </td>
-<td> CH1/CH2/EXT
-</td></tr>
-<tr>
-<td> トリガーモード                      </td>
-<td> オート、ノーマル、シングル、スキャン、なし
-</td></tr>
-<tr>
-<td> テスト信号ジェネレーター             </td>
-<td> 10Hz～8MHz 2.8Vpp 方形波、デューティサイクル10～90%調整可能 / 10Hz～20kHz 2.8Vpp 正弦波、方形波、のこぎり波、三角波
-</td></tr>
-<tr>
-<td> ストレージ                           </td>
-<td> 内蔵2MB USBディスク、BMP、DATファイル
-</td></tr>
-<tr>
-<td> 自動測定                      </td>
-<td> Vmax, Vmin, Vpp, Vavr, Vrms, Freq, Period, Pulse, Duty
-</td></tr>
-<tr>
-<td> カーソル測定                </td>
-<td> レベル、電圧
-</td></tr>
-<tr>
-<td> 表示モード                      </td>
-<td> CH1, CH2, EXT, CH1+CH2, CH1-CH2
-</td></tr>
-<tr>
-<td> サンプリングモード                     </td>
-<td> リアルタイム
-</td></tr>
-<tr>
-<td> サンプリングレート                     </td>
-<td> 30S/s - 72MS/s
-</td></tr>
-<tr>
-<td> 電源                             </td>
-<td> LiPoバッテリー
-</td></tr>
-<tr>
-<td> 寸法                         </td>
-<td> 98 * 60 * 14.5 (mm)
-</td></tr>
-<tr>
-<td> 重量                            </td>
-<td> 80g（バッテリーなし）
-</td></tr>
-<tr>
-<td> パック内付属品            </td>
-<td> 2 mcxオシロスコーププローブ、2 mcxデジタルプローブ
-</td></tr></table>
+| 項目 | 仕様 |
+|------|------|
+| アナログチャンネル *2 | [CH_A] [CH_B] |
+| デジタルチャンネル *2 | [CH_C] [CH_D] |
+| 垂直スケール | 20mV-10V/div (1-2-5 ステップ) x1プローブ / 200mV-100V/div (1-2-5 ステップ) x10プローブ |
+| 垂直分解能 | 8ビット |
+| 入力結合 | AC/DC |
+| 最大入力電圧 | 80Vpp (x1プローブ) / 400Vpp (x10プローブ) |
+| ストレージ | 各チャンネル4K / 単一チャンネル8K |
+| ソフトウェアトリガータイプ | エッジ、パルス、レベル（追加予定） |
+| ハードウェアトリガータイプ | エッジ |
+| トリガーソース | CH1/CH2/EXT |
+| トリガーモード | オート、ノーマル、シングル、スキャン、なし |
+| テスト信号ジェネレーター | 10Hz～8MHz 2.8Vpp 方形波、デューティサイクル10～90%調整可能 / 10Hz～20kHz 2.8Vpp 正弦波、方形波、のこぎり波、三角波 |
+| ストレージ | 内蔵2MB USBディスク、BMP、DATファイル |
+| 自動測定 | Vmax, Vmin, Vpp, Vavr, Vrms, Freq, Period, Pulse, Duty |
+| カーソル測定 | レベル、電圧 |
+| 表示モード | CH1, CH2, EXT, CH1+CH2, CH1-CH2 |
+| サンプリングモード | リアルタイム |
+| サンプリングレート | 30S/s - 72MS/s |
+| 電源 | LiPoバッテリー |
+| 寸法 | 98 * 60 * 14.5 (mm) |
+| 重量 | 80g（バッテリーなし） |
+| パック内付属品 | 2 mcxオシロスコーププローブ、2 mcxデジタルプローブ |
 
 ## コンポーネント
 
 ---
 コアコンポーネントのデータシートへのリンクを追加してください。
 
-<table >
-<tr>
-<td> CPU                 </td>
-<td> 72 MHz - ARM 32ビット Cortex™-M3 CPU - STM32F103VC [[2]](http://www.st.com/internet/mcu/product/164492.jsp)
-</td></tr>
-<tr>
-<td> FPGA                </td>
-<td> ICE65F_VQ100 [[3]](http://www.siliconbluetech.com/media/downloads/iCE65L04DiCEDatasheet.pdf)
-</td></tr>
-<tr>
-<td> TFT                 </td>
-<td>
-</td></tr>
-<tr>
-<td> ADC                 </td>
-<td> AD9288-40 [[4]](http://www.analog.com/static/imported-files/data_sheets/AD9288.pdf)
-</td></tr>
-<tr>
-<td> OPアンプ             </td>
-<td> OPA2354 [[5]](http://www.datasheetcatalog.org/datasheet/texasinstruments/opa354.pdf)
-</td></tr>
-<tr>
-<td> MOSFETスイッチ     </td>
-<td>
-</td></tr>
-<tr>
-<td> USBストレージ         </td>
-<td>
-</td></tr>
-<tr>
-<td> （ここにさらに追加）     </td>
-<td>
-</td></tr></table>
+| コンポーネント | 詳細 |
+|----------------|------|
+| CPU | 72 MHz - ARM 32ビット Cortex™-M3 CPU - STM32F103VC [[2]](http://www.st.com/internet/mcu/product/164492.jsp) |
+| FPGA | ICE65F_VQ100 [[3]](http://www.siliconbluetech.com/media/downloads/iCE65L04DiCEDatasheet.pdf) |
+| TFT | |
+| ADC | AD9288-40 [[4]](http://www.analog.com/static/imported-files/data_sheets/AD9288.pdf) |
+| OPアンプ | OPA2354 [[5]](http://www.datasheetcatalog.org/datasheet/texasinstruments/opa354.pdf) |
+| MOSFETスイッチ | |
+| USBストレージ | |
+| （ここにさらに追加） | |
 
 ## 注意事項
 
@@ -289,37 +201,13 @@ DSO Quadのアプリケーション開発に関する情報も参照してくだ
 
 ### ファイルの説明
 
-<table>
-<tr>
-<th> ファイルタイプ </th>
-<th> ファイル名形式 </th>
-<th> 説明
-</th></tr>
-<tr>
-<td> FPGAファイル </td>
-<td> xxxxFPGA.BIN </td>
-<td> FPGAの構成データ
-</td></tr>
-<tr>
-<td> ロゴファイル </td>
-<td> logo_xxx.BIN </td>
-<td> 任意の16色64*256 .BMPファイル（ファイルサイズ=46.9KB）を作成し、拡張子を.INFに変更します。これはスプラッシュスクリーンに表示される画像です。
-</td></tr>
-<tr>
-<td> システムファイル </td>
-<td> SYS_xxxx.hex </td>
-<td> ???（説明が必要）
-</td></tr>
-<tr>
-<td> アプリケーションファイル </td>
-<td> APP_xxxx.hex </td>
-<td> ???（説明が必要）
-</td></tr>
-<tr>
-<td> アドレスファイル </td>
-<td> xxxx.ADR </td>
-<td> これらのファイルは、次にアップロードする.BINファイルをデバイスが配置する場所を指定します。FPGAファイル用とLOGOファイル用にそれぞれ1つずつあります。ファイル名は対応するファイルが分かるように命名されています。
-</td></tr></table>
+| ファイルタイプ | ファイル名形式 | 説明 |
+|----------------|----------------|------|
+| FPGAファイル | xxxxFPGA.BIN | FPGAの構成データ |
+| ロゴファイル | logo_xxx.BIN | 任意の16色64*256 .BMPファイル（ファイルサイズ=46.9KB）を作成し、拡張子を.INFに変更します。これはスプラッシュスクリーンに表示される画像です。 |
+| システムファイル | SYS_xxxx.hex | ???（説明が必要） |
+| アプリケーションファイル | APP_xxxx.hex | ???（説明が必要） |
+| アドレスファイル | xxxx.ADR | これらのファイルは、次にアップロードする.BINファイルをデバイスが配置する場所を指定します。FPGAファイル用とLOGOファイル用にそれぞれ1つずつあります。ファイル名は対応するファイルが分かるように命名されています。 |
 
 **注意:** 新しいバージョンが利用可能になると、これらのファイル名が若干異なる場合があります。xは時間とともに変化する可能性のある値を表します。
 
@@ -327,88 +215,16 @@ DSO Quadのアプリケーション開発に関する情報も参照してくだ
 
 ![](https://files.seeedstudio.com/wiki/DSO_Quad/img/DSOQuad-bug-2.jpg)
 
-<table  cellpadding="1" cellspacing="1">
-<tr>
-<td> 開始
-</td>
-<td> 終了
-</td>
-<td> サイズ
-</td>
-<td> 備考
-</td></tr>
-<tr>
-<td> 0x00000
-</td>
-<td> 0x03fff
-</td>
-<td> 16384
-</td>
-<td> DFU
-</td></tr>
-<tr>
-<td> 0x04000
-</td>
-<td> 0x0bfff
-</td>
-<td> 32768
-</td>
-<td> SYS
-</td></tr>
-<tr>
-<td> 0x0c000
-</td>
-<td> 0x13fff
-</td>
-<td> 32768
-</td>
-<td> APP1（デフォルト）
-</td></tr>
-<tr>
-<td> 0x14000
-</td>
-<td> 0x1bfff
-</td>
-<td> 32768
-</td>
-<td> APP2
-</td></tr>
-<tr>
-<td> 0x1c000
-</td>
-<td> 0x23fff
-</td>
-<td> 32768
-</td>
-<td> APP3
-</td></tr>
-<tr>
-<td> 0x24000
-</td>
-<td> 0x2bfff
-</td>
-<td> 32768
-</td>
-<td> APP4
-</td></tr>
-<tr>
-<td> 0x2c000
-</td>
-<td> 0x3d7ff
-</td>
-<td> 71680
-</td>
-<td> FPGAビットストリーム（データシートでは最大サイズが533KBitと記載されているため、これは少し大きい）
-</td></tr>
-<tr>
-<td> 0x3d800
-</td>
-<td> 0x3ffff
-</td>
-<td> 10240
-</td>
-<td> ロゴ（bmp, 256x64, 4ビット）
-</td></tr></table>
+| 開始 | 終了 | サイズ | 備考 |
+|------|------|--------|------|
+| 0x00000 | 0x03fff | 16384 | DFU |
+| 0x04000 | 0x0bfff | 32768 | SYS |
+| 0x0c000 | 0x13fff | 32768 | APP1（デフォルト） |
+| 0x14000 | 0x1bfff | 32768 | APP2 |
+| 0x1c000 | 0x23fff | 32768 | APP3 |
+| 0x24000 | 0x2bfff | 32768 | APP4 |
+| 0x2c000 | 0x3d7ff | 71680 | FPGAビットストリーム（データシートでは最大サイズが533KBitと記載されているため、これは少し大きい） |
+| 0x3d800 | 0x3ffff | 10240 | ロゴ（bmp, 256x64, 4ビット） |
 
 注意: フラッシュのベースアドレスは0x08000000ですが、BOOT0が低い場合、チップによって0x00000000にミラーリングされます。
 

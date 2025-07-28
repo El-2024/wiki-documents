@@ -358,8 +358,8 @@ KeyboardInterrupt
 
 このプログラムを終了するには、++ctrl+c++を押すだけです。
 
-:::notice
-    アナログポートの場合、シルクスクリーンのピン番号は**A0, A1**のようになっていますが、コマンドでは**0**や**1**というパラメータを使用します。デジタルポートと同じです。そのため、モジュールを正しいポートに接続してください。そうしないとピンの競合が発生する可能性があります。
+:::note
+アナログポートの場合、シルクスクリーンのピン番号は**A0, A1**のようになっていますが、コマンドでは**0**や**1**というパラメータを使用します。デジタルポートと同じです。そのため、モジュールを正しいポートに接続してください。そうしないとピンの競合が発生する可能性があります。
 :::
 
 <div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-Gas_Sensor-MQ5/res/Gas_Sensor_Eagle_files.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>

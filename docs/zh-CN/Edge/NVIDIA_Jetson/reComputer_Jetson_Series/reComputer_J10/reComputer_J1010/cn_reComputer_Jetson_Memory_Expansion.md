@@ -53,29 +53,25 @@ SSD（固态硬盘）通常用作笔记本电脑、台式机等的主要存储�
       <th align="center">reComputer J2021</th>
     </tr>
     <tr>
-      <th align="center">SKU
-      </th><td align="center">110061361</td>
+      <th align="center">SKU</th><td align="center">110061361</td>
       <td align="center">110061363</td>
       <td align="center">110061401</td>
       <td align="center">110061381</td>
     </tr>
     <tr>
-      <th align="center">侧视图
-      </th><td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
+      <th align="center">侧视图</th><td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
       <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
       <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
       <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
     </tr>
     <tr>
-      <th align="center">配备模块
-      </th><td align="center">Jetson Nano 4G</td>
+      <th align="center">配备模块</th><td align="center">Jetson Nano 4G</td>
       <td align="center">Jetson Xavier NX 8GB</td>
       <td align="center">Jetson Xavier NX 16GB</td>
       <td align="center">Jetson Xavier NX 8GB</td>
     </tr>
     <tr>
-      <th align="center">运行载板
-      </th><td align="center">Jetson A206</td>
+      <th align="center">运行载板</th><td align="center">Jetson A206</td>
       <td align="center">Jetson A206</td>
       <td align="center">Jetson A206</td>
       <td align="center">J202</td>
@@ -93,13 +89,11 @@ SSD（固态硬盘）通常用作笔记本电脑、台式机等的主要存储�
       <th align="center">软件和硬件要求</th>  
     </tr>
     <tr>
-      <th align="center">reComputer for Jetson
-      </th><td align="left">JetPack 版本 4.4 ~ 4.6 <br />
+      <th align="center">reComputer for Jetson</th><td align="left">JetPack 版本 4.4 ~ 4.6 <br />
         载板必须包含 M.2 M-Key 插槽</td>
     </tr>
     <tr>
-      <th align="center">SSD
-      </th><td align="left">SSD 需要为第四代扩展文件系统 (Ext4) <br />
+      <th align="center">SSD</th><td align="left">SSD 需要为第四代扩展文件系统 (Ext4) <br />
         M.2 M-Key 接口，支持 NVMe 协议 <br />
         推荐容量 ≤ 512 GB</td>
     </tr>
@@ -110,7 +104,7 @@ SSD（固态硬盘）通常用作笔记本电脑、台式机等的主要存储�
     更新后的 JetPack 版本尚未经过扩展测试，因此无法保证扩展的稳定性或成功率，请仔细按照本教程操作。
 
     SSD 需要是 M.2 M-Key，否则将无法匹配载板上的接口。
-    <div align=center><img width = 300 src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/3.jpeg"/></div>
+    <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/3.jpeg"/></div>
 
     使用非第四代扩展文件系统（Ext4）的存储设备无法完成扩展操作。
 
@@ -191,20 +185,16 @@ USB 存储设备（如 U 盘和移动硬盘）在生活的各个领域被广泛�
       <th align="center">reComputer J1010</th>  
     </tr>
     <tr>
-      <th align="center">SKU
-      </th><td align="center">110061362</td>
+      <th align="center">SKU</th><td align="center">110061362</td>
     </tr>
     <tr>
-      <th align="center">侧视图
-      </th><td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview3_1.png" /></div></td>
+      <th align="center">侧视图</th><td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview3_1.png" /></div></td>
     </tr>
     <tr>
-      <th align="center">配备模块
-      </th><td align="center">Jetson Nano 4G</td>
+      <th align="center">配备模块</th><td align="center">Jetson Nano 4G</td>
     </tr>
     <tr>
-      <th align="center">运行载板
-      </th><td align="center">J1010 载板</td>
+      <th align="center">运行载板</th><td align="center">J1010 载板</td>
     </tr>
   </tbody>
 </table>
@@ -222,13 +212,11 @@ USB 存储设备（如 U 盘和移动硬盘）在生活的各个领域被广泛�
       <th align="center">软件和硬件要求</th>  
     </tr>
     <tr>
-      <th align="center">适用于 Jetson 的 reComputer
-      </th><td align="left">JetPack 版本 4.4 ~ 4.6 <br />
+      <th align="center">适用于 Jetson 的 reComputer</th><td align="left">JetPack 版本 4.4 ~ 4.6 <br />
         配备模块需为 Jetson Nano</td>
     </tr>
     <tr>
-      <th align="center">USB 存储设备
-      </th><td align="left">USB 存储设备需为第四代扩展文件系统（Ext4） <br />
+      <th align="center">USB 存储设备</th><td align="left">USB 存储设备需为第四代扩展文件系统（Ext4） <br />
         USB 存储设备供电电流 ≤ 0.5 A</td>
     </tr>
   </tbody>
@@ -431,20 +419,16 @@ LABEL primary
       <th align="center">描述</th>  
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/7.jpeg" /></div>
-      </th><td align="left">Ubuntu 主机 x1</td>
+      <th align="center"><div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/7.jpeg" /></div></th><td align="left">Ubuntu 主机 x1</td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/reComputerheadline.png" /></div>
-      </th><td align="left">无法访问系统的 reComputer Jetson x1</td>
+      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/reComputerheadline.png" /></div></th><td align="left">无法访问系统的 reComputer Jetson x1</td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/5.png" /></div>
-      </th><td align="left"><a href="https://www.seeedstudio.com/USB-To-Uart-5V-3V3-p-1832.html?queryID=cb30ad1a9d75c9ef437912535186b130&objectID=1112&indexName=bazaar_retailer_products">UART 转 USB 模块 x1</a></td>
+      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/5.png" /></div></th><td align="left"><a href="https://www.seeedstudio.com/USB-To-Uart-5V-3V3-p-1832.html?queryID=cb30ad1a9d75c9ef437912535186b130&objectID=1112&indexName=bazaar_retailer_products">UART 转 USB 模块 x1</a></td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/6.png" /></div>
-      </th><td align="left"><a href="https://www.seeedstudio.com/1-pin-dual-female-jumper-wire-100mm-50pcs-pack-p-260.html?queryID=a51c4491cb6b462a1e844c832c98c52a&objectID=2042&indexName=bazaar_retailer_products">母对母杜邦线 x3</a></td>
+      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/6.png" /></div></th><td align="left"><a href="https://www.seeedstudio.com/1-pin-dual-female-jumper-wire-100mm-50pcs-pack-p-260.html?queryID=a51c4491cb6b462a1e844c832c98c52a&objectID=2042&indexName=bazaar_retailer_products">母对母杜邦线 x3</a></td>
     </tr>
   </tbody>
 </table>

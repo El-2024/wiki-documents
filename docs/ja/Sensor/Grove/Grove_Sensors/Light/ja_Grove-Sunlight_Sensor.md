@@ -40,16 +40,28 @@ SenseCAP [S2110コントローラー](https://www.seeedstudio.com/SenseCAP-XIAO-
 SenseCAP S210xシリーズの産業用センサーは、環境センシングのための即時使用可能な体験を提供します。光強度検出のための高性能で堅牢なS2102ワイヤレス光強度センサーをご参照ください。このシリーズには、土壌水分、空気温度と湿度、光強度、CO2、EC、そして8-in-1気象ステーション用のセンサーが含まれています。次の成功する産業プロジェクトのために最新の[SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device)を試してみてください。
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td align="center"><font size={4}><strong>SenseCAP 産業用センサー</strong></font></td>
+  <tbody>
+    <tr>
+      <td align="center"><font size={4}><strong>SenseCAP 産業用センサー</strong></font></td>
     </tr>
     <tr>
-      <td><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank"><img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S2102-.png" /></a></div>
+      <td>
+        <div align="center">
+          <a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank">
+            <img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S2102-.png" />
+          </a>
+        </div>
       </td>
     </tr>
     <tr>
-      <td align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank"><strong>S2102 Light</strong></a></td>
+      <td align="center">
+        <a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank">
+          <strong>S2102 Light</strong>
+        </a>
+      </td>
     </tr>
-  </tbody></table>
+  </tbody>
+</table>
 
 ## 特徴
 
@@ -349,7 +361,7 @@ cd Seeed_Python_SI114X-Si115x
 python3 examples/BasicRead.py 
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作している場合、以下のように結果が表示されます：
 :::
 
@@ -410,7 +422,7 @@ cd Seeed_Python_SI114X-Si115x
 python3 seeed_si115x.py
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作している場合、以下のように結果が表示されます：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Raspberry-Pi-4/img/Sunlighttu.png" /></div>

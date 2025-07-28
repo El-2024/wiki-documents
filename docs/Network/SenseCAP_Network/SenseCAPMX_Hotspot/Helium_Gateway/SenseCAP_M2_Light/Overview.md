@@ -15,7 +15,7 @@ last_update:
 
 SenseCAP M2 Light Hotspot is a high-performance LoRaWAN gateway that allows users to join the Helium network at a minimal cost.
 
-SenseCAP Software Licence for SenseCAP M2 **down** **to** **$0.05** **per** **day** **paid** **on** **need** enables you to enjoy the benefits of PoC and data transfer with minimal investment.
+SenseCAP Software Licence for SenseCAP M2 **down** **to** **\$0.05** **per** **day** **paid** **on** **need** enables you to enjoy the benefits of PoC and data transfer with minimal investment.
 
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-sensecap-m2-light-hotspot-software-license--first_1_.jpg" alt="pir" width={600} height="auto" /></p>
 
@@ -40,7 +40,7 @@ SenseCAP M2 Light Hotspot requires a software license to be activated to provide
 
 |**License** **Valid** **Duration**|90 Days|365 Days|Unlimited|
 | :- | :- | :- | :- |
-|<p></p><p>**Package** **Plan**</p>|$7.99             Down to $0.09/day|$19.99            Down to $0.05/day|$49.99          Unlimited Licence|
+|<p></p><p>**Package** **Plan**</p>|\$7.99             Down to \$0.09/day|\$19.99            Down to \$0.05/day|\$49.99          Unlimited Licence|
 
 **NOTE:**  This License is only applied for **SenseCAP** **M2** **Light** **Hotspot**, and could not be used to activate other hotspots.
 

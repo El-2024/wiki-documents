@@ -11,8 +11,8 @@ last_update:
   author: gunengyu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 ![](https://files.seeedstudio.com/wiki/5V-3.3V_Breadboard_Power_Supply_v1.1/img/Supply.jpg)
@@ -35,68 +35,46 @@ SeeedStudio によって設計された 5V/3.3V ブレッドボード電源で�
 
 <table>
   <tbody><tr>
-      <th> 仕様
-      </th>
-      <th> 条件
-      </th>
-      <th> 最小
-      </th>
-      <th> 標準
-      </th>
-      <th> 最大
-      </th>
-      <th> 単位
-      </th></tr>
+      <th> 仕様</th>
+      <th> 条件</th>
+      <th> 最小</th>
+      <th> 標準</th>
+      <th> 最大</th>
+      <th> 単位</th>
+    </tr>
     <tr>
-      <td width={200}> 入力電圧
-      </td>
-      <td width={400}>
-      </td>
-      <td width={100}> 5.0
-      </td>
-      <td width={100}> 6.5
-      </td>
-      <td width={100}> 12.0
-      </td>
-      <td width={100}> V
-      </td></tr>
+      <td width={200}> 入力電圧</td>
+      <td width={400}></td>
+      <td width={100}> 5.0</td>
+      <td width={100}> 6.5</td>
+      <td width={100}> 12.0</td>
+      <td width={100}> V</td>
+    </tr>
     <tr>
-      <td rowSpan={2}> 出力電圧
-      </td>
-      <td> チャンネル 3.3V
-      </td>
-      <td> 3.235
-      </td>
-      <td> 3.3
-      </td>
-      <td> 3.365
-      </td>
-      <td> V
-      </td></tr>
+      <td rowSpan={2}> 出力電圧</td>
+      <td> チャンネル 3.3V</td>
+      <td> 3.235</td>
+      <td> 3.3</td>
+      <td> 3.365</td>
+      <td> V</td>
+    </tr>
     <tr>
-      <td> チャンネル 5V: 10mA≤IOUT≤600mA, 6.5V≤VIN ≤12V
-      </td>
-      <td> 4.9000
-      </td>
-      <td> 5.0
-      </td>
-      <td> 5.100
-      </td>
-      <td> V
-      </td></tr>
+      <td> チャンネル 5V: 10mA≤IOUT≤600mA, 6.5V≤VIN ≤12V</td>
+      <td> 4.9000</td>
+      <td> 5.0</td>
+      <td> 5.100</td>
+      <td> V</td>
+    </tr>
     <tr>
-      <td> 出力電流
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td> 800
-      </td>
-      <td> mA
-      </td></tr></tbody></table>
+      <td> 出力電流</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td> 800</td>
+      <td> mA</td>
+    </tr>
+  </tbody>
+</table>
 
 ## 使用方法  
 
@@ -117,26 +95,22 @@ SeeedStudio によって設計された 5V/3.3V ブレッドボード電源で�
 
 <table>
   <tbody><tr>
-      <th> リビジョン
-      </th>
-      <th> 説明
-      </th>
-      <th> リリース
-      </th></tr>
+      <th> リビジョン</th>
+      <th> 説明</th>
+      <th> リリース</th>
+    </tr>
     <tr>
-      <td width={300}> v1.0b
-      </td>
-      <td width={500}> 初回公開リリース
-      </td>
-      <td width={200}> 2009年11月16日
-      </td></tr>
+      <td width={300}> v1.0b</td>
+      <td width={500}> 初回公開リリース</td>
+      <td width={200}> 2009年11月16日</td>
+    </tr>
     <tr>
-      <td width={300}> v1.1
-      </td>
-      <td width={500}> JST 電源コネクタを DC ジャックコネクタに変更
-      </td>
-      <td width={200}> 2011年9月20日
-      </td></tr></tbody></table>
+      <td width={300}> v1.1</td>
+      <td width={500}> JST 電源コネクタを DC ジャックコネクタに変更</td>
+      <td width={200}> 2011年9月20日</td>
+    </tr>
+  </tbody>
+</table>
 
 ## オンライン回路図ビューア
 

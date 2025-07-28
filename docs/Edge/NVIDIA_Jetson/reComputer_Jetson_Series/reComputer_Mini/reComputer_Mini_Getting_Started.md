@@ -35,7 +35,7 @@ reComputer Mini is a tiny AI computer powered by NVIDIA Jetson Orin Nano/Orin NX
 
 - **Brilliant AI Performance for Production:** Achieves up to **100 TOPS** AI performance with low power and latency, built by NVIDIA Orin SoC combining the NVIDIA Ampere™ GPU architecture with 64-bit operating capability, integrated advanced multi-function video and image processing, and NVIDIA Deep Learning Accelerators.
 - **Hand-Size Edge AI Device:** Compact size at **63mmx95mmx42mm**, featuring an NVIDIA Jetson Orin NX 16GB module, Mini J401 carrier board, fan and enclosure. Support desktop and wall mounting.
-- **Expandable with Rich I/Os:** Includes up to 7x USB, 1x DP 2.1, 2x CSI, 1x RJ45 for GbE, M.2 Key E, M.2 Key M, dual channel CAN, and GPIO with extension board.
+- **Expandable with Rich I/Os:** Includes up to 7x USB, 1x DP 2.1, 1x RJ45 for GbE, M.2 Key E, M.2 Key M, dual channel CAN, and GPIO with extension board.
 - **Accelerate Solutions to Market:** Pre-installed **JetPack 6.0** on 128GB NVMe SSD, Linux OS BSP, supporting Jetson software and leading AI frameworks. 
 - **Scale to deploy:** support OTA, remote management services powered by Allxon and Balena. 
 - **Flexible Customization:** inlcudes changing accessories modules, logo, and hardware interfaces modification based on reComputer Mini J4012 original design.
@@ -124,7 +124,7 @@ reComputer Mini is a tiny AI computer powered by NVIDIA Jetson Orin Nano/Orin NX
     <tr>
       <td rowSpan={7}>I/O</td>
       <td >USB</td>
-      <td colSpan={3}>2x USB 3.2 Type-A (10Gbps)<br />1x USB 2.0 Micro-B (Device Mode)<br />1x USB 2.0 Type-C (Host Mode)<br />1x USB 2.0 JST-4pin (Host Mode)</td>
+      <td colSpan={3}>2x USB 3.2 Type-A (10Gbps)<br />1x USB 2.0 Micro-B (Device Mode)<br />1x USB 3.0 Type-C (Host Mode)<br />1x USB 2.0 JST-5pin (Host Mode)</td>
     </tr>
     <tr>
       <td>UART</td>
@@ -165,7 +165,7 @@ reComputer Mini is a tiny AI computer powered by NVIDIA Jetson Orin Nano/Orin NX
     <tr>
       <td rowSpan={5}>I/O</td>
       <td >USB</td>
-      <td colSpan={3}>4x USB 3.2 Type-A (10 Gbps)</td>
+      <td colSpan={3}>4x USB 3.2 Type-A (5 Gbps)</td>
     </tr>
     <tr>
       <td>CAN</td>
@@ -332,7 +332,7 @@ Here, we need to download the system image to our Ubuntu PC corresponding to the
     </tr>
     <tr>
       <td>Orin Nx 8GB</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUNTXrMsDcJCnIN2RvmXg6EBBLY6PRZiegvUjqI_N2i0YQ?e=SXEXXz" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EW8ze7CRh9hLkw0Nr2kowXIBB_5XsQz1G30j1tMYhHUOiw?e=0JWXfG" target="_blank" rel="noopener noreferrer">Download</a></td>
       <td>3A96643CF7CF8D765FD7B1B43CA7BEE<br />AAD97AF6094E073CE392AF6E1BAD45B91</td>
     </tr>
     <tr>

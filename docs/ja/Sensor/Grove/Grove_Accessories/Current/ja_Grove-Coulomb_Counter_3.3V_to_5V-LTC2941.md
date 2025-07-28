@@ -55,7 +55,7 @@ Grove - クーロンカウンター 3.3V to 5V (LTC2941) は、LTC2941 をベー
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Coulomb_Counter_3.3V_to_5V-LTC2941/img/pin-out/pin-out_0.jpg" /></div>
 
-:::cautionDanger
+:::caution
 3番と4番は電源入力インターフェースです。1つを電源入力として選択してください。同時に2つを使用しないでください。また、電圧が5Vを超えないようにしてください。そうしないと、モジュールが損傷する可能性があります。
 :::
 ___
@@ -241,7 +241,7 @@ void loop(void)
 
 - **ステップ 5.** Arduino IDE の **シリアルモニター** を開くには、**ツール -> シリアルモニター** をクリックします。または `ctrl`+`shift`+`m` キーを同時に押します。ボーレートを **115200** に設定してください。
 
-:::tipsuccess
+:::tip
 すべてが正常に動作している場合、シリアルモニターを開き、任意のキーを押して送信ボタンを押すと、以下のように表示される可能性があります：
 :::
 

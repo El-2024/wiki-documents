@@ -275,7 +275,7 @@ aai app start
 
 <div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/41.png"/></div>
 
-**ステップ 3.** ウェブブラウザを開き、**<http://localhost:5000>** を入力してビデオストリームを開きます。
+**ステップ 3.** ウェブブラウザを開き、**`http://localhost:5000`** を入力してビデオストリームを開きます。
 
 ```sh
 http://localhost:5000
@@ -293,7 +293,7 @@ http://localhost:5000
 
 ここでは、事前にロードされたビデオファイルで物体検出を実行します。
 
-**ステップ 1.** ビデオファイルを Jetson デバイスの alwaysAI プロジェクトディレクトリ内に配置します。例として、**/home/{username}/alwaysai/test** に配置します。
+**ステップ 1.** ビデオファイルを Jetson デバイスの alwaysAI プロジェクトディレクトリ内に配置します。例として、**/home/`<username>`/alwaysai/test** に配置します。
 
 **ステップ 2.** 開発用コンピュータで、以前作成した **test** フォルダ内の **app.py** ファイルを開き、以下のコードセクションを
 

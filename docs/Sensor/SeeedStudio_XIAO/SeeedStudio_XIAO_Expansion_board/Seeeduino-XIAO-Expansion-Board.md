@@ -603,7 +603,7 @@ CircuitPython is a programming language designed to simplify experimenting and l
 
 **Step 6.** Now, CircuitPython is loaded on Seeed Studio XIAO SAMD21 ! All you need to do it's to write you python program and name it `main.py` and drag it onto the `CIRCUITPY` drive.
 
-### CircuitPyhton Blink example
+### CircuitPython Blink example
 
 There is a simple example introduce how to use the CirsuitPython on the Seeed Studio XIAO .
 

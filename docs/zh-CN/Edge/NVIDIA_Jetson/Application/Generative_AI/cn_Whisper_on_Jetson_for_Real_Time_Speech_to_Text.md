@@ -37,8 +37,7 @@ no_comments: false # for Disqus
 <div class="table-center">
 	<table align="center">
 		<tr>
-			<th>reComputer(或其他基于 Jetson 的设备)
-      </th>
+			<th>reComputer(或其他基于 Jetson 的设备)</th>
       <th>reSpeaker (或其他 USB 接口麦克风)</th>
 		</tr>
     <tr>

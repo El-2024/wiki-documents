@@ -53,7 +53,7 @@ last_update:
 ## 🤗 Lerobot
 
 <div className="card-container">
-    <a href="/lerobot_so100m/" className="nav-item">
+    <a href="/lerobot_so100m_new/" className="nav-item">
       <span className="text">SO100/101 Arm</span>
       <span className="tag stable">Update</span>
     </a>
@@ -64,7 +64,15 @@ last_update:
       <span className="text">Lekiwi Mobile Base</span>
        <span className="tag recommended">New</span>
     </a>
+    <a href="/sound_follow_robot/" className="nav-item">
+      <span className="text">Lekiwi Sound Follow</span>
+       <span className="tag recommended">New</span>
+    </a>
 </div>
+    <a href="/control_robotic_arm_via_phospho/" className="nav-item">
+      <span className="text">Phospho Lerobot</span>
+       <span className="tag recommended">New</span>
+    </a>
 
 </div>
 </div>

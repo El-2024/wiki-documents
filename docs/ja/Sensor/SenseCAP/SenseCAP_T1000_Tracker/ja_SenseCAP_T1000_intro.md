@@ -22,8 +22,7 @@ GPS、Bluetooth、Wi-Fiを搭載しており、屋内外でシームレスな位
 
 
 
-<h1 style={{ textAlign: 'center', color: '#ffff' }}> SenseCAP T1000 トラッカーのカタログ
-</h1>
+<h1 style={{ textAlign: 'center', color: '#ffff' }}> SenseCAP T1000 トラッカーのカタログ</h1>
 
 
 <div class="all_container">

@@ -62,7 +62,7 @@ Home Assistant Green 是实现家庭自动化最简单且最注重隐私的方�
 
 我们建议在本教程中使用 Home Assistant Green 作为 Home Assistant 主机，或者您也可以使用任何带有 Supervisor 的 Home Assistant 主机。
 
-## 安装 HACS 插件
+## 安装 HACS 插件 {#installing-the-hacs-plugin}
 
 ### 第一步：在 Home Assistant 中启用高级模式
 
@@ -136,7 +136,7 @@ wget -q -O - https://install.hacs.xyz | bash -
 
 您可能需要重启 Home Assistant 以使 HACS 完全集成到您的系统中。
 
-## 安装 SenseCraft 插件
+## 安装 SenseCraft 插件 {#installing-the-sensecraft-plugin}
 
 ### 第四步：通过 HACS 安装 SenseCraft 插件
 
@@ -162,7 +162,7 @@ https://github.com/Seeed-Solution/SenseCraft-HomeAssistant.git
 
 到此为止，我们已经成功完成了 SenseCraft 插件的安装。
 
-## 将 SenseCAP Watcher 集成到 Home Assistant
+## 将 SenseCAP Watcher 集成到 Home Assistant {#integrate-sensecap-watcher-into-home-assistant}
 
 ### 第五步：通过 SenseCraft 添加 Watcher
 

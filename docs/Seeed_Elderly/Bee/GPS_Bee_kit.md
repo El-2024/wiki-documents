@@ -39,264 +39,42 @@ Kit is come with Mini Embedded Antenna U.FL for GPS，you can also purchase anot
 
 ##   Specification
 ---
-<table >
-<tr>
-<th> Item
-</th>
-<th> Symbol
-</th>
-<th> Min
-</th>
-<th> Typ
-</th>
-<th> Max
-</th>
-<th> Unit
-</th></tr>
-<tr>
-<td> Power Supply
-</td>
-<td> Vcc
-</td>
-<td> 2.7
-</td>
-<td> 3.0
-</td>
-<td> 3.6
-</td>
-<td> V
-</td></tr>
-<tr>
-<td> Peak Supply Current (Vcc=3.6V)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td> 150
-</td>
-<td> mA
-</td></tr>
-<tr>
-<td> Sustained Supply Current (Vcc=3.0V)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
-<tr>
-<td> Acquisition
-</td>
-<td>
-</td>
-<td>
-</td>
-<td> 102
-</td>
-<td>
-</td>
-<td> mA
-</td></tr>
-<tr>
-<td> Tracking
-</td>
-<td>
-</td>
-<td>
-</td>
-<td> 44
-</td>
-<td>
-</td>
-<td> mA
-</td></tr>
-<tr>
-<td> Antenna Gain
-</td>
-<td>
-</td>
-<td>
-</td>
-<td> 30
-</td>
-<td>
-</td>
-<td> dB
-</td></tr>
-<tr>
-<td> Operation temperature
-</td>
-<td>
-</td>
-<td> -40
-</td>
-<td>
-</td>
-<td> 85
-</td>
-<td> ℃
-</td></tr></table>
+| Item | Symbol | Min | Typ | Max | Unit |
+|------|--------|-----|-----|-----|------|
+| Power Supply | Vcc | 2.7 | 3.0 | 3.6 | V |
+| Peak Supply Current (Vcc=3.6V) | | | | 150 | mA |
+| Sustained Supply Current (Vcc=3.0V) | | | | | |
+| Acquisition | | | 102 | | mA |
+| Tracking | | | 44 | | mA |
+| Antenna Gain | | | 30 | | dB |
+| Operation temperature | | -40 | | 85 | ℃ |
 
-###   Pin definition and Rating
+### Pin definition and Rating
 
 ![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPS.jpg)
 
-<table >
-<tr>
-<th> Pin
-</th>
-<th> Name
-</th>
-<th> Function
-</th></tr>
-<tr>
-<td> 1
-</td>
-<td> Vcc
-</td>
-<td> Power suppl, 2.7-3.6VDC
-</td></tr>
-<tr>
-<td> 2
-</td>
-<td> TX
-</td>
-<td> Serial Port 1
-</td></tr>
-<tr>
-<td> 3
-</td>
-<td> RX
-</td>
-<td> Serial Port 2
-</td></tr>
-<tr>
-<td> 4
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 5
-</td>
-<td> EX
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 6
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 7
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 8
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 9
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 10
-</td>
-<td> GND
-</td>
-<td> Ground
-</td></tr>
-<tr>
-<td> 11
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 12
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 13
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 14
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 15
-</td>
-<td> TP
-</td>
-<td> Configurable Pulse output (default 1Hz, max 4Hz)
-</td></tr>
-<tr>
-<td> 16
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 17
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 18
-</td>
-<td> NC
-</td>
-<td> Reserved
-</td></tr>
-<tr>
-<td> 19
-</td>
-<td> SCL
-</td>
-<td> I2C clock pin (configuration only)
-</td></tr>
-<tr>
-<td> 20
-</td>
-<td> SDA
-</td>
-<td> I2C data pin (configuration only)
-</td></tr></table>
+| Pin | Name | Function |
+|-----|------|----------|
+| 1 | Vcc | Power suppl, 2.7-3.6VDC |
+| 2 | TX | Serial Port 1 |
+| 3 | RX | Serial Port 2 |
+| 4 | NC | Reserved |
+| 5 | EX | Reserved |
+| 6 | NC | Reserved |
+| 7 | NC | Reserved |
+| 8 | NC | Reserved |
+| 9 | NC | Reserved |
+| 10 | GND | Ground |
+| 11 | NC | Reserved |
+| 12 | NC | Reserved |
+| 13 | NC | Reserved |
+| 14 | NC | Reserved |
+| 15 | TP | Configurable Pulse output (default 1Hz, max 4Hz) |
+| 16 | NC | Reserved |
+| 17 | NC | Reserved |
+| 18 | NC | Reserved |
+| 19 | SCL | I2C clock pin (configuration only) |
+| 20 | SDA | I2C data pin (configuration only) |
 
 ##   Usage
 ---
@@ -304,27 +82,19 @@ Kit is come with Mini Embedded Antenna U.FL for GPS，you can also purchase anot
 
 2.
 
-<table border="0">
-<tr>
-<td width="300"> USB
-</td>
-<td width="300"> ![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPSBee-exam.jpg)
-</td></tr></table>
-<table border="0">
-<tr>
-<td width="300"> **Bluetooth GPS module**
+| | |
+|---|---|
+| USB | ![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPSBee-exam.jpg) |
 
-Work with UartSB as a USB port GPS module. You may use powerful Ucenter to get practical details easily. Or, add a Bluetooth module to get a Bluetooth GPS module for your projects.
-
-</td>
-<td width="300"> ![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPSBee-exam-2.jpg)
-</td></tr></table>
+| | |
+|---|---|
+| **Bluetooth GPS module** Work with UartSB as a USB port GPS module. You may use powerful Ucenter to get practical details easily. Or, add a Bluetooth module to get a Bluetooth GPS module for your projects. | ![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPSBee-exam-2.jpg) |
 
 ![](https://files.seeedstudio.com/wiki/GPS_Bee_kit/img/GPSBee-exam-3.jpg)
 
 Click [here](http://garden.seeedstudio.com/images/2/20/GPSBee-exam-3.jpg) to see the legible and complete image.
 
-###  SIM28 module Note:
+### SIM28 module Note:
 
 1. GPS Bee has change the module as SIM28 which the same footprint as origin version.
 
@@ -341,49 +111,13 @@ Click [here](http://garden.seeedstudio.com/images/2/20/GPSBee-exam-3.jpg) to see
 
 ##   Version Tracker
 
-<table>
-<tr>
-<th> Revision
-</th>
-<th> Descriptions
-</th>
-<th> Release
-</th></tr>
-<tr>
-<td width="300"> GPS Bee kit (with Mini Embedded Antenna)
-</td>
-<td width="500"> -
-</td>
-<td width="200"> Nov 08, 2009
-</td></tr>
-<tr>
-<td> v0.91
-</td>
-<td> complement
-</td>
-<td> Mar 15, 2011
-</td></tr>
-<tr>
-<td> v1.2
-</td>
-<td> antenna
-</td>
-<td> May 18,2012
-</td></tr>
-<tr>
-<td> v1.2
-</td>
-<td>  change the GPS module to SIM28
-</td>
-<td> Dec 5,2013
-</td></tr>
-<tr>
-<td> v1.3
-</td>
-<td> change the GPS module to SIM28, change the LED to the bottom side.
-</td>
-<td> Jan 10,2014
-</td></tr></table>
+| Revision | Descriptions | Release |
+|----------|-------------|----------|
+| GPS Bee kit (with Mini Embedded Antenna) | - | Nov 08, 2009 |
+| v0.91 | complement | Mar 15, 2011 |
+| v1.2 | antenna | May 18,2012 |
+| v1.2 | change the GPS module to SIM28 | Dec 5,2013 |
+| v1.3 | change the GPS module to SIM28, change the LED to the bottom side. | Jan 10,2014 |
 
 
 ## Schematic Online Viewer

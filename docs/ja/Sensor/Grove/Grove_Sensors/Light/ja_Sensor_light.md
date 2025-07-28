@@ -119,8 +119,10 @@ Seeedのバザールにあるすべての光センサーについては、[Bazaa
 
 <div align="center">
 <figure>
-  <a href="https://files.seeedstudio.com/wiki/Light-Sensor-Selection-Guide/Light-Sensor.png" target="_blank"><img src="https://files.seeedstudio.com/wiki/Light-Sensor-Selection-Guide/Light-Sensor.png" alt="Seeed 光センサー選択ガイド" title="Seeed 光センサー選択ガイド" />
-  <figcaption><b>図 2</b>. <i>Seeed の光センサー</i></figcaption></a>
+  <a href="https://files.seeedstudio.com/wiki/Light-Sensor-Selection-Guide/Light-Sensor.png" target="_blank">
+    <img src="https://files.seeedstudio.com/wiki/Light-Sensor-Selection-Guide/Light-Sensor.png" alt="Seeed 光センサー選択ガイド" title="Seeed 光センサー選択ガイド" />
+  </a>
+  <figcaption><b>図 2</b>. <i>Seeed の光センサー</i></figcaption>
 </figure>
 </div>
 

@@ -11,8 +11,8 @@ last_update:
   author: gunengyu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 ![https://www.seeedstudio.com/depot/images/large/product/mhg_01_LRG.jpg](http://bz.seeedstudio.com/depot/images/large/product/mhg_01_LRG.jpg)
@@ -37,60 +37,50 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ---
 <table>
 <tr>
-<td width="400px">重量
-</td>
-<td width="400px">165 g
-</td></tr>
+<td width="400px">重量</td>
+<td width="400px">165 g</td>
+</tr>
 <tr>
-<td>出力電圧
-</td>
-<td>3.6V
-</td></tr>
+<td>出力電圧</td>
+<td>3.6V</td>
+</tr>
 <tr>
-<td>バッテリー容量
-</td>
-<td>300mA
-</td></tr>
+<td>バッテリー容量</td>
+<td>300mA</td>
+</tr>
 <tr>
-<td>最大動作圧力
-</td>
-<td>1.75 MPa
-</td></tr>
+<td>最大動作圧力</td>
+<td>1.75 MPa</td>
+</tr>
 <tr>
-<td>動作圧力
-</td>
-<td>0~1.75MPa
-</td></tr>
+<td>動作圧力</td>
+<td>0~1.75MPa</td>
+</tr>
 <tr>
-<td>動作温度
-</td>
-<td>0~110°C
-</td></tr>
+<td>動作温度</td>
+<td>0~110°C</td>
+</tr>
 <tr>
-<td>最大
-</td>
-<td>110°Cで30分
-</td></tr>
+<td>最大</td>
+<td>110°Cで30分</td>
+</tr>
 <tr>
-<td>推奨流量範囲
-</td>
-<td>1.5~20 l/min(圧力 0.05-0.2mpa)
-</td></tr>
+<td>推奨流量範囲</td>
+<td>1.5~20 l/min(圧力 0.05-0.2mpa)</td>
+</tr>
 <tr>
-<td>設置方法
-</td>
-<td>矢印の方向
-</td></tr>
+<td>設置方法</td>
+<td>矢印の方向</td>
+</tr>
 <tr>
-<td>素材
-</td>
-<td>ナイロン/ガラス繊維、ポリホルムアルデヒド
-</td></tr>
+<td>素材</td>
+<td>ナイロン/ガラス繊維、ポリホルムアルデヒド</td>
+</tr>
 <tr>
-<td>入力および出力開口部のサイズ
-</td>
-<td>0.8インチ
-</td></tr></table>
+<td>入力および出力開口部のサイズ</td>
+<td>0.8インチ</td>
+</tr>
+</table>
 
 ##   機械的寸法
 ---

@@ -83,41 +83,34 @@ If you have questions or other better design ideas, you can go to our [forum](ht
 ##   Version Tracker  
 
 <table cellPadding={5} cellSpacing={0}>
-  <tbody><tr>
-      <td width={300}> **Revision **
-      </td>
-      <td width={500}> **Descriptions **
-      </td>
-      <td width={200}> **Release Date**
-      </td></tr>
+  <tbody>
+    <tr>
+      <td width={300}>**Revision**</td>
+      <td width={500}>**Descriptions**</td>
+      <td width={200}>**Release Date**</td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino V0.9
-      </td>
-      <td> Initial public release
-      </td>
-      <td>
-      </td></tr>
+      <td>Seeeduino V0.9</td>
+      <td>Initial public release</td>
+      <td></td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino V1.1
-      </td>
-      <td> -
-      </td>
-      <td>
-      </td></tr>
+      <td>Seeeduino V1.1</td>
+      <td>-</td>
+      <td></td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino V2.12
-      </td>
-      <td> -
-      </td>
-      <td>
-      </td></tr>
+      <td>Seeeduino V2.12</td>
+      <td>-</td>
+      <td></td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino V2.2
-      </td>
-      <td> -
-      </td>
-      <td>
-      </td></tr></tbody></table>
+      <td>Seeeduino V2.2</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 
 ##   Bug Tracker  

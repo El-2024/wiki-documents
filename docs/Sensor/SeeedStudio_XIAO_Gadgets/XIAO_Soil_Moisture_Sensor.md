@@ -722,7 +722,7 @@ Use USB cable to **connect the ePaper panel to your computer** and click **CONNE
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/66.png" style={{width:800, height:'auto'}}/></div>
 
-Select usbmodemxxx(Windows is COMxxx) and click connect. [Encountered a problem? Click here.](#Q5)
+Select usbmodemxxx(Windows is COMxxx) and click connect.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/67.png" style={{width:800, height:'auto'}}/></div>
 
@@ -744,7 +744,7 @@ If your Home Assistant Host (Raspberry PI/Green/Yellow etc.) is nearby, we recom
 
 Before you install the code to the device, you need to use USB cable to **connect this device to your Raspberry Pi or HA Green(Yellow) etc** which is running Home Assistant.
 
-Click the options following the image to install the code to the device. [Haven't found port when device in deep sleep mode?](#port)
+Click the options following the image to install the code to the device.
 
 <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/6.png" style={{width:'70%', height:'auto'}}/></div>

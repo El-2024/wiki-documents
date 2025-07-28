@@ -22,75 +22,56 @@ The Stalker Kit includes all necessary components to work with Seeeduino Stalker
 ---
 <table>
 <tr>
-<th> Component
-</th>
-<th> Description
-</th>
-<th> Quantity
-</th></tr>
+<th>Component</th>
+<th>Description</th>
+<th>Quantity</th>
+</tr>
 <tr>
-<td> <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a>
-</td>
-<td> The Arduino Compatible WSN Node
-</td>
-<td> 1
-</td></tr>
+<td><a href="/Seeeduino-Stalker_v3"><span><font size={"3"}>Seeeduino-Stalker_v3</font></span></a></td>
+<td>The Arduino Compatible WSN Node</td>
+<td>1</td>
+</tr>
 <tr>
-<td> Lithium-ion polymer Battery - 1050mAh Capacity
-</td>
-<td> Charged from Solar Panel using Stalker v3
-</td>
-<td> 1
-</td></tr>
+<td>Lithium-ion polymer Battery - 1050mAh Capacity</td>
+<td>Charged from Solar Panel using Stalker v3</td>
+<td>1</td>
+</tr>
 <tr>
-<td> SanDisk microSD™ Card 4GB
-</td>
-<td> Logs the sensor values and time-stamp data.
-</td>
-<td> 1
-</td></tr>
+<td>SanDisk microSD™ Card 4GB</td>
+<td>Logs the sensor values and time-stamp data.</td>
+<td>1</td>
+</tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/mini-usb-cable-110cm-p-252.html?cPath=178_179" ><span><font size={"3"}> Mini USB cable 100cm </font></span></a>
-</td>
-<td> As programming cable used with UartSBee
-</td>
-<td> 1
-</td></tr>
+<td><a href="https://www.seeedstudio.com/mini-usb-cable-110cm-p-252.html?cPath=178_179"><span><font size={"3"}>Mini USB cable 100cm</font></span></a></td>
+<td>As programming cable used with UartSBee</td>
+<td>1</td>
+</tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/uartsbee-v31-p-688.html?cPath=109" ><span><font size={"3"}> UartSBee V4 </font></span></a>
-</td>
-<td> Provides USB-Serial port to program Stalker V3 using Arduino IDE
-</td>
-<td> 1
-</td></tr>
+<td><a href="https://www.seeedstudio.com/uartsbee-v31-p-688.html?cPath=109"><span><font size={"3"}>UartSBee V4</font></span></a></td>
+<td>Provides USB-Serial port to program Stalker V3 using Arduino IDE</td>
+<td>1</td>
+</tr>
 <tr>
-<td>6 pin cable
-</td>
-<td> Connects UartSBee to Seeduino
-</td>
-<td> 1
-</td></tr>
+<td>6 pin cable</td>
+<td>Connects UartSBee to Seeduino</td>
+<td>1</td>
+</tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Seeeduino-Stalker-v3-enclosure-p-2419.html" ><span><font size={"3"}> Seeeduino Stalker v3 enclosure </font></span></a>
-</td>
-<td> Waterproof plastic case
-</td>
-<td> 1
-</td></tr>
+<td><a href="https://www.seeedstudio.com/Seeeduino-Stalker-v3-enclosure-p-2419.html"><span><font size={"3"}>Seeeduino Stalker v3 enclosure</font></span></a></td>
+<td>Waterproof plastic case</td>
+<td>1</td>
+</tr>
 <tr>
-<td> 0.5w Solar Panel 53x53mm
-</td>
-<td> Power Source
-</td>
-<td> 1
-</td></tr>
+<td>0.5w Solar Panel 53x53mm</td>
+<td>Power Source</td>
+<td>1</td>
+</tr>
 <tr>
-<td> CR2032 Button Cell
-</td>
-<td>
-</td>
-<td> 1
-</td></tr></table>
+<td>CR2032 Button Cell</td>
+<td></td>
+<td>1</td>
+</tr>
+</table>
 
 ## Features
 
@@ -196,39 +177,33 @@ You will require the following hardware for running your first program.
 
 Seeeduino Stalker v3 &lt;---&gt; UartSBee v4.0 connection
 
-<table >
-<caption> Jumper Wire connections
-</caption>
+<table>
+<caption>Jumper Wire connections</caption>
 <tr>
-<th> Seeeduino Stalker
-</th>
-<th> UartSBee_V4
-</th></tr>
+<th>Seeeduino Stalker</th>
+<th>UartSBee_V4</th>
+</tr>
 <tr>
-<td> USB5V
-</td>
-<td> VCC
-</td></tr>
+<td>USB5V</td>
+<td>VCC</td>
+</tr>
 <tr>
-<td> <font color="Red">RXD </font>
-</td>
-<td> <font color="Green">TXD </font>
-</td></tr>
+<td><font color="Red">RXD</font></td>
+<td><font color="Green">TXD</font></td>
+</tr>
 <tr>
-<td> <font color="Green">TXD </font>
-</td>
-<td> <font color="Red">RXD </font>
-</td></tr>
+<td><font color="Green">TXD</font></td>
+<td><font color="Red">RXD</font></td>
+</tr>
 <tr>
-<td> GND
-</td>
-<td> GND
-</td></tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
 <tr>
-<td> DTR
-</td>
-<td> DTR
-</td></tr></table>
+<td>DTR</td>
+<td>DTR</td>
+</tr>
+</table>
 
 <big>Connection Notes </big>
 

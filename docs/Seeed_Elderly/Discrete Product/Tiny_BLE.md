@@ -44,25 +44,21 @@ With its modular design, we can divide it into two parts - CMSIS DAP interface p
 ---
 <table>
 <tr>
-<th> Specification
-</th>
-<th> Value
-</th></tr>
+<th>Specification</th>
+<th>Value</th>
+</tr>
 <tr>
-<td width="200px"> Microcontroller
-</td>
-<td width="400px"> nRF51822QFAA; LPC11U35FHI33
-</td></tr>
+<td width="200px">Microcontroller</td>
+<td width="400px">nRF51822QFAA; LPC11U35FHI33</td>
+</tr>
 <tr>
-<td> Outline Dimension
-</td>
-<td> 43.3mm x 29.0mm x 4.3mm
-</td></tr>
+<td>Outline Dimension</td>
+<td>43.3mm x 29.0mm x 4.3mm</td>
+</tr>
 <tr>
-<td> Power supply
-</td>
-<td> USB/Battery(JST-1.0 Battery Holder)
-</td></tr>
+<td>Power supply</td>
+<td>USB/Battery(JST-1.0 Battery Holder)</td>
+</tr>
 </table>
 
 ##   Get Started

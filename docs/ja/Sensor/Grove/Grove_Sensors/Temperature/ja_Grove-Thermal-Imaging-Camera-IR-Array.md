@@ -14,12 +14,16 @@ last_update:
 https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/grove-thermal-imaging-camera_-ir-array-mlx90641-55-front.jpg" /><figcaption><b /> <i>Grove - サーマルイメージングカメラ / IRアレイ MLX90641</i></figcaption>
+<div align="center">
+  <img src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/grove-thermal-imaging-camera_-ir-array-mlx90641-55-front.jpg" />
+  <figcaption><b></b> <i>Grove - サーマルイメージングカメラ / IRアレイ MLX90641</i></figcaption>
 </div>
 
 このIRサーマルカメラは、16x12のサーマルセンサーアレイ **(MLX90641)** を搭載しており、中心エリアで±1℃、平均で±1.5℃の精度で遠距離の物体の温度を検出できます。サーマル画像を簡単に取得するために、I2Cプロトコルを使用してカメラから低解像度の画像を取得します。このカメラの視野角（FOV）は110°x75°で、温度測定範囲は-40℃から300℃です。サーマル画像を簡単に取得するために、I2Cプロトコルを使用してカメラから低解像度の画像を取得します。
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/90640.png" /><figcaption><b /> <i>Grove - サーマルイメージングカメラ / IRアレイ MLX90640</i></figcaption>
+<div align="center">
+  <img src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/90640.png" />
+  <figcaption><b></b> <i>Grove - サーマルイメージングカメラ / IRアレイ MLX90640</i></figcaption>
 </div>
 
 一方、Grove - サーマルイメージングカメラはサーマルセンサー **(MLX90640)** を搭載しており、32x24のサーマルセンサーアレイを持ち、±1.5℃の精度で数フィート離れた物体の温度を検出し、動的なサーマル画像を表示し、周囲温度を-40℃から300℃まで検出できます。狭角/広角のカメラは、視野角（FOV）が55°x35°/110°x75°です。サーマル画像を簡単に取得するために、I2Cプロトコルを使用してカメラから低解像度の画像を取得します。
@@ -646,7 +650,7 @@ void DrawLegend() {
 }
 ```
 
-:::tipsuccess
+:::tip
  すべてが正常に動作すれば、Wio Terminal の画面に可視化結果が表示されます。
 :::
 
@@ -712,7 +716,7 @@ ls /dev/i2c*
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/90641-raspi.png" /></div>
 
-:::tipsuccess
+:::tip
      すべてが正常に動作すれば、上記のような結果が表示されます。
 :::
 
@@ -745,7 +749,7 @@ sudo reboot
 sudo ircamera I2C MLX90641
 ```
 
-:::tipsuccess
+:::tip
      すべてが正常に動作すれば、以下のような結果が表示されます。
 :::
 

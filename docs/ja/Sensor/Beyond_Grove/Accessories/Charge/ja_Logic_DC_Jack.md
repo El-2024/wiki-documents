@@ -99,15 +99,17 @@ Logic DC Jackは、簡単なロジック機能を実現するためのロジッ�
 
 このモジュールには2種類のケーブルが含まれており、入力ポートに1つまたは2つの入力を接続する際に使用します。
 
-<dl><dd> 状況1 – 1つの入力
-</dd><dd> 入力が1つのモジュールのみの場合、Logic DC JackはANDおよびNOTのロジック機能を実現できます。以下はロジック機能の図です：
-</dd></dl>
+<dl>
+<dd>状況1 – 1つの入力</dd>
+<dd>入力が1つのモジュールのみの場合、Logic DC JackはANDおよびNOTのロジック機能を実現できます。以下はロジック機能の図です：</dd>
+</dl>
 
 ![](https://files.seeedstudio.com/wiki/Logic_DC_Jack/img/Logic_DC_Jack_3.png)
 
-<dl><dd> 状況2 – 2つの入力
-</dd><dd> 入力が2つのモジュールの場合、このLogic DC JackはANDのロジック機能のみを実現できます。以下はロジック機能の図です：
-</dd></dl>
+<dl>
+<dd>状況2 – 2つの入力</dd>
+<dd>入力が2つのモジュールの場合、このLogic DC JackはANDのロジック機能のみを実現できます。以下はロジック機能の図です：</dd>
+</dl>
 
 ![](https://files.seeedstudio.com/wiki/Logic_DC_Jack/img/Logic_DC_Jack_4.png)
 

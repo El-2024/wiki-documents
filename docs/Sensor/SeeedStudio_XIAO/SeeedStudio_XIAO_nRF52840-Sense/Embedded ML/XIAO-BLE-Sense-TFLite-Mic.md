@@ -82,9 +82,9 @@ Now we will use the downloaded TensorFlow Lite model file **(model.cc)** to reco
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/TFLite/pics/micro-features-model-open.png" alt="pir" width={550} height="auto" /></p>
 
 
-- **Step 2.** Replace the values under **const unsigned char g_model[] DATA_ALIGN_ATTRIBUTE = {** with the new values from the **model.cc** file
+- **Step 2.** Replace the values under `const unsigned char g_model[] DATA_ALIGN_ATTRIBUTE = {` with the new values from the **model.cc** file
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/TFLite/pics/model-values.png" alt="pir" width={550} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/TFLite/pics/model-values.png" alt="pir" width="550" height="auto" /></p>
 
 
 - **Step 3.** Change **g_model_len** according to the value from **model.cc**. Here we got **26720**

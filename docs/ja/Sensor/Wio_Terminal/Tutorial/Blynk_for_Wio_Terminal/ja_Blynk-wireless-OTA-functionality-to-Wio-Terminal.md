@@ -91,9 +91,9 @@ Arduino IDEのライブラリマネージャーで以下のライブラリファ
 
 Blynk IoT アプリをダウンロード：
 
-Android: <https://play.google.com/store/apps/details?id=cloud.blynk&hl=en_IN&gl=US>
+Android: [https://play.google.com/store/apps/details?id=cloud.blynk&hl=en_IN&gl=US](https://play.google.com/store/apps/details?id=cloud.blynk&hl=en_IN&gl=US)
 
-iOS: <https://apps.apple.com/us/app/blynk-iot/id1559317868>
+iOS: [https://apps.apple.com/us/app/blynk-iot/id1559317868](https://apps.apple.com/us/app/blynk-iot/id1559317868)
 
 メイン画面にログインします。
 

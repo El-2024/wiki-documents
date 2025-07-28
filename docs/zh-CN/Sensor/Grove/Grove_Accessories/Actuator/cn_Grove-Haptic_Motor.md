@@ -16,8 +16,7 @@ last_update:
 Grove - 触觉马达是一个集成了[DRV2605L](http://www.ti.com/product/DRV2605L)的Grove模块，它将为您的项目增添更多触感。该马达专为各种效果而设计，例如使振动水平逐渐上升和下降，适用于可穿戴设备和其他物联网设备。目前，我们已经开发了一个易于使用的库，该库总共模拟了123种振动模式，这将使您的原型制作更加迅速。此外，您还可以使用驱动程序DRV2605L开发更多高级功能，该驱动程序将提高执行器在加速度一致性、启动时间和制动时间方面的性能，并且可以通过共享的I2C兼容总线或PWM输入信号进行访问。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Haptic-Motor-p-2546.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Haptic-Motor-p-2546.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong></a>
 </div>
 
 ## 特点

@@ -15,7 +15,7 @@ last_update:
 
 SenseCAP M2 Light Hotspot es una puerta de enlace LoRaWAN de alto rendimiento que permite a los usuarios unirse a la red Helium a un costo mínimo.
 
-La **licencia de software SenseCAP para SenseCAP M2** desde **$0.05 por día**, con pago según necesidad, te permite disfrutar de los beneficios de PoC y transferencia de datos con una inversión mínima.
+La **licencia de software SenseCAP para SenseCAP M2** desde **\$0.05 por día**, con pago según necesidad, te permite disfrutar de los beneficios de PoC y transferencia de datos con una inversión mínima.
 
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-sensecap-m2-light-hotspot-software-license--first_1_.jpg" alt="pir" width={600} height="auto" /></p>
 
@@ -38,11 +38,11 @@ SenseCAP M2 Light Hotspot requiere una licencia de software para ser activado y 
 
 | **Duración de la Licencia** | 90 Días | 365 Días | Ilimitada |
 |-----------------------------|---------|-----------|------------|
-| **Plan** | $7.99 (≈$0.09/día) | $19.99 (≈$0.05/día) | $49.99 Licencia ilimitada |
+| **Plan** | \$7.99 (≈\$0.09/día) | \$19.99 (≈\$0.05/día) | \$49.99 Licencia ilimitada |
 
 **NOTA:** Esta licencia solo aplica para **SenseCAP M2 Light Hotspot**, y **no puede** ser utilizada para activar otros modelos de hotspot.
 
-La licencia de software SenseCAP es diferente de la tarifa de activación de Helium. Esta última ($50 USD) ya está incluida en el paquete del hotspot para registrarlo en los servidores de Helium.
+La licencia de software SenseCAP es diferente de la tarifa de activación de Helium. Esta última (\$50 USD) ya está incluida en el paquete del hotspot para registrarlo en los servidores de Helium.
 
 
 **Características**

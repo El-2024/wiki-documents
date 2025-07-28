@@ -45,40 +45,50 @@ Raspberry Pi用CAN BUSシールドには**3つのバージョン**がありま�
 
 ## ハードウェア概要
 
-<div align="center">
+<div style={{textAlign: 'center'}}>
 <figure>
-  <a href="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block.jpg" target="_blank"><img src="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block.jpg" alt="Raspberry Pi CAN BUSシールド" title="ハードウェア概要" />
-  <figcaption><b>図1</b>. <i>ハードウェア概要(MCP2517)</i></figcaption></a>
+  <a href="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block.jpg" target="_blank">
+    <img src="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block.jpg" alt="Raspberry Pi CAN BUSシールド" title="ハードウェア概要" />
+  </a>
+  <figcaption><b>図1</b>. <i>ハードウェア概要(MCP2517)</i></figcaption>
 </figure>
 </div>
 
-<div align="center">
+<div style={{textAlign: 'center'}}>
 <figure>
-  <a href="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block2.jpg" target="_blank"><img src="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block2.jpg" alt="Raspberry Pi CAN BUSシールド" title="ハードウェア概要" />
-  <figcaption><b>図2</b>. <i>ハードウェア概要(MCP2517)</i></figcaption></a>
+  <a href="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block2.jpg" target="_blank">
+    <img src="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block2.jpg" alt="Raspberry Pi CAN BUSシールド" title="ハードウェア概要" />
+  </a>
+  <figcaption><b>図2</b>. <i>ハードウェア概要(MCP2517)</i></figcaption>
 </figure>
 </div>
 
-<div align="center">
+<div style={{textAlign: 'center'}}>
 <figure>
-  <a href="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block-diagram.jpg" target="_blank"><img src="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block-diagram.jpg" alt="Raspberry Pi CAN BUSシールド" title="ハードウェア概要" />
-  <figcaption><b>図3</b>. <i>ブロック図(MCP2517)</i></figcaption></a>
+  <a href="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block-diagram.jpg" target="_blank">
+    <img src="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/block-diagram.jpg" alt="Raspberry Pi CAN BUSシールド" title="ハードウェア概要" />
+  </a>
+  <figcaption><b>図3</b>. <i>ブロック図(MCP2517)</i></figcaption>
 </figure>
 </div>
 
-<div align="center">
+<div style={{textAlign: 'center'}}>
 <figure>
-  <a href="https://files.seeedstudio.com/wiki/CAN-BUS-FD/CANBUS_REVIEW.png" target="_blank"><img src="https://files.seeedstudio.com/wiki/CAN-BUS-FD/CANBUS_REVIEW.png" alt="Raspberry Pi CAN BUSシールド" title="ハードウェア概要" />
-  <figcaption><b>図4</b>. <i>ハードウェア概要(MCP2518FD)</i></figcaption></a>
+  <a href="https://files.seeedstudio.com/wiki/CAN-BUS-FD/CANBUS_REVIEW.png" target="_blank">
+    <img src="https://files.seeedstudio.com/wiki/CAN-BUS-FD/CANBUS_REVIEW.png" alt="Raspberry Pi CAN BUSシールド" title="ハードウェア概要" />
+  </a>
+  <figcaption><b>図4</b>. <i>ハードウェア概要(MCP2518FD)</i></figcaption>
 </figure>
 </div>
 
 ## 取り付けガイド
 
-<div align="center">
+<div style={{textAlign: 'center'}}>
 <figure>
-  <a href="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/setup.jpg" target="_blank"><img src="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/setup.jpg" alt="Raspberry Pi CAN BUS shield" title="hardware overview" />
-  <figcaption><b>図4</b>. <i>取り付けガイド</i></figcaption></a>
+  <a href="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/setup.jpg" target="_blank">
+    <img src="https://files.seeedstudio.com/wiki/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/img/setup.jpg" alt="Raspberry Pi CAN BUS shield" title="hardware overview" />
+  </a>
+  <figcaption><b>図4</b>. <i>取り付けガイド</i></figcaption>
 </figure>
 </div>
 
@@ -224,17 +234,17 @@ sudo ifconfig can1 txqueuelen 65536
 
 - **ステップ 7**. 2つのターミナルウィンドウを開き、それぞれのウィンドウで以下のコマンドを入力して CAN FD プロトコルをテストします。
 
-```sh
+```bash
 #データ送信
 cangen can0 -mv 
 ```
 
-```sh
+```bash
 #データ受信
 candump can0
 ```
 
-> ジャンパーを使用して 2 つのチャンネルを接続することで、CAN-BUS をテストできます: 0_L <===> 1_L, 0_H <===> 1_H。
+> ジャンパーを使用して 2 つのチャンネルを接続することで、CAN-BUS をテストできます: 0_L ←→ 1_L, 0_H ←→ 1_H。
 
 #### Arduino CAN BUS シールドとの通信
 
@@ -579,9 +589,9 @@ can1: flags=128<NOARP>  mtu 16
 
 以下のようにチャンネルを接続してテストすることができます:
 
-0_L <===> 1_L
+0_L ←→ 1_L
 
-0_H <===> 1_H
+0_H ←→ 1_H
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/CAN-BUS-FD/jetson-connect.png"/></div>
 

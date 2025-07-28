@@ -44,62 +44,49 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ![](https://files.seeedstudio.com/wiki/Skeleton_box_for_Rasberry_Pi/img/Skeleton_Box4.jpg)
 
 <table cellSpacing={0} width="80%">
-  <tbody><tr>
-      <th scope="col"> 部品
-      </th>
-      <th scope="col"> パッケージ
-      </th>
-      <th scope="col"> 数量
-      </th></tr>
+  <tbody>
     <tr>
-      <th scope="row"> ブラケット
-      </th>
-      <td> 1.5mmアルミニウムプレートプレス成形、黒色サンド陽極酸化
-      </td>
-      <td> 2
-      </td></tr>
+      <th scope="col">部品</th>
+      <th scope="col">パッケージ</th>
+      <th scope="col">数量</th>
+    </tr>
     <tr>
-      <th scope="row"> 底部アクリル
-      </th>
-      <td> 厚さ2.5mm
-      </td>
-      <td> 1
-      </td></tr>
+      <th scope="row">ブラケット</th>
+      <td>1.5mmアルミニウムプレートプレス成形、黒色サンド陽極酸化</td>
+      <td>2</td>
+    </tr>
     <tr>
-      <th scope="row"> 上部アクリル
-      </th>
-      <td> 厚さ2.5mm
-      </td>
-      <td> 1
-      </td></tr>
+      <th scope="row">底部アクリル</th>
+      <td>厚さ2.5mm</td>
+      <td>1</td>
+    </tr>
     <tr>
-      <th scope="row"> リベット（白）
-      </th>
-      <td> R2056
-      </td>
-      <td> 20
-      </td></tr>
+      <th scope="row">上部アクリル</th>
+      <td>厚さ2.5mm</td>
+      <td>1</td>
+    </tr>
     <tr>
-      <th scope="row"> ネジ
-      </th>
-      <td> M2.5X12
-      </td>
-      <td> 3
-      </td></tr>
+      <th scope="row">リベット（白）</th>
+      <td>R2056</td>
+      <td>20</td>
+    </tr>
     <tr>
-      <th scope="row"> スペーサー
-      </th>
-      <td> M3X7X4
-      </td>
-      <td> 4
-      </td></tr>
+      <th scope="row">ネジ</th>
+      <td>M2.5X12</td>
+      <td>3</td>
+    </tr>
     <tr>
-      <th scope="row"> ナット
-      </th>
-      <td> M2.5X2
-      </td>
-      <td> 4
-      </td></tr></tbody></table>
+      <th scope="row">スペーサー</th>
+      <td>M3X7X4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th scope="row">ナット</th>
+      <td>M2.5X2</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
 
 ## 技術サポートと製品ディスカッション
 

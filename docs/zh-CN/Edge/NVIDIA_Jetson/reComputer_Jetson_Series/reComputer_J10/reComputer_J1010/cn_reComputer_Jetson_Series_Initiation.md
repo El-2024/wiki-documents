@@ -151,7 +151,7 @@ seeed@seeed-desktop:~$
 
 - 通常有两种方法为 reComputer 安装系统，第一种是使用 **NVIDIA SDK Manager**。
 
-如果您使用的是 **reComputer J2011** 或 **reComputer J2012**，在 [使用 SDK Manager 刷写到 eMMC](reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line) 的 **步骤 12** 中，您可以通过更改系统烧录位置来扩展容量。
+如果您使用的是 **reComputer J2011** 或 **reComputer J2012**，在 [使用 SDK Manager 刷写到 eMMC](/cn/reComputer_J2021_J202_Flash_Jetpack) 的 **步骤 12** 中，您可以通过更改系统烧录位置来扩展容量。
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/52.png" /></div>
 
@@ -161,9 +161,9 @@ seeed@seeed-desktop:~$
 
 - 通常有两种方法为 reComputer 安装系统，第二种是使用 **命令行**。
 
-- 如果您使用的是 **A20X 承载板**，使用命令行安装系统的方法在 [使用命令行刷写到 eMMC](/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line)。
+- 如果您使用的是 **A20X 承载板**，使用命令行安装系统的方法在 [使用命令行刷写到 eMMC](/reComputer_J2021_J202_Flash_Jetpack)。
 
-- 如果您使用的是 **reComputer J1010 承载板**，则使用命令行安装系统的方法在 [使用命令行刷写到 eMMC](/reComputer_J1010_J101_Flash_Jetpack#flashing-jetpack-os-via-command-line)。
+- 如果您使用的是 **reComputer J1010 承载板**，则使用命令行安装系统的方法在 [使用命令行刷写到 eMMC](/cn/reComputer_J1010_J101_Flash_Jetpack#flashing-jetpack-os-via-command-line)。
 
 它们本质上通过以下命令完成系统的安装：
 

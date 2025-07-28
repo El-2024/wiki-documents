@@ -100,10 +100,10 @@ USB ISPモードに入るには、Archをコンピュータに接続し、ボタ
   1. 「CRP DISABLD」ディスク内のfirmware.binを削除します。
   2. 新しいファームウェアをディスクにコピーします。
 - Linuxの場合
-  1. ディスクがマウントされていない場合、{mnt_dir}にディスクをマウントします。
-  2. **dd if={new_firmware.bin} of={mnt_dir}/firmware.bin conv=notrunc**
+  1. ディスクがマウントされていない場合、`{mnt_dir}`にディスクをマウントします。
+  2. **dd if=`{new_firmware.bin}` of=`{mnt_dir}`/firmware.bin conv=notrunc**
 - Macの場合、ターミナルを使用して以下のスクリプトを実行し、.binファイルをArchにコピーします。
-  1. **dd if={new_firmare.bin} of=/Volumes/CRP\ DISABLD/firmware.bin conv=notrunc**
+  1. **dd if=`{new_firmare.bin}` of=/Volumes/CRP\ DISABLD/firmware.bin conv=notrunc**
 
 また、**Automator**アプリケーションを作成して、ファイルをボードにドラッグ＆ドロップで対応させることもできます。「Run Shell Script」を作成し、以下のコマンドを使用します：
 dd if=$* of=/Volumes/CRP\ DISABLD/firmware.bin conv=notrunc

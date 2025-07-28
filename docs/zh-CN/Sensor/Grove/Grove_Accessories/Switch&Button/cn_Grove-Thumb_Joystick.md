@@ -76,7 +76,7 @@ Grove - Thumb Joystick 是一个模拟设备，输出的模拟信号范围在 0 
 |![enter image description here](https://files.seeedstudio.com/wiki/Grove_Light_Sensor/images/gs_1.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/Grove_Light_Sensor/images/gs_4.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/Grove-Thumb_Joystick/img/Bgjoy1_small.jpg)|
 |[立即获取](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[立即获取](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html)|[立即获取](https://www.seeedstudio.com/Grove-Thumb-Joystick-p-935.html)|
 
-- **步骤 2.** 使用 4 针 Grove 线缆将模块连接到 Grove - Base Shield 的 **A0/A1** 端口。
+- **步骤 2.** 使用 4 针 Grove 线缆将模块连接到 Grove - Base Shield 的 **`A0`/`A1`** 端口。
 - **步骤 3.** 将 Grove - Base Shield 插入 Seeeduino。
 - **步骤 4.** 通过 USB 线缆将 Seeeduino 连接到电脑。
 
@@ -91,7 +91,7 @@ Grove - Thumb Joystick 是一个模拟设备，输出的模拟信号范围在 0 
 | 5V        | 红色线                 |
 | GND       | 黑色线                 |
 | A1        | 白色线                 |
-| A0        | 黄色线                 |
+| `A0`        | 黄色线                 |
 
 #### 软件
 
@@ -101,7 +101,7 @@ Grove - Thumb Joystick 是一个模拟设备，输出的模拟信号范围在 0 
 /*
   Thumb Joystick demo v1.0
   by:https://www.seeedstudio.com
-  connect the module to A0&A1 for using;
+  connect the module to `A0`&`A1` for using;
 */
 
 void setup()
@@ -111,8 +111,8 @@ void setup()
 
 void loop()
 {
-    int sensorValue1 = analogRead(A0);
-    int sensorValue2 = analogRead(A1);
+    int sensorValue1 = analogRead(A_0);
+    int sensorValue2 = analogRead(A_1);
 
     Serial.print("The X and Y coordinate is:");
     Serial.print(sensorValue1, DEC);
@@ -133,7 +133,7 @@ Arduino 的模拟端口输出的值可以通过以下公式转换为对应的电
 
 #### 硬件
 
-**步骤 1.** 将 Grove - Thumb Joystick 连接到 Base Shield 的 A0 端口。
+**步骤 1.** 将 Grove - Thumb Joystick 连接到 Base Shield 的 `A0` 端口。
 
 **步骤 2.** 将 Base Shield 插入你的 Seeeduino/Arduino。
 
@@ -170,7 +170,7 @@ Arduino 的模拟端口输出的值可以通过以下公式转换为对应的电
 |[立即获取](https://www.seeedstudio.com/Raspberry-Pi-3-Model-B-p-2625.html)|[立即获取](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi-p-3186.html)|[立即获取](https://www.seeedstudio.com/Grove-Thumb-Joystick-p-935.html)|
 
 - **步骤 2**. 将 Grove Base Hat 插入树莓派。
-- **步骤 3**. 将 Thumb Joystick 连接到 Base Hat 的 A0 端口。
+- **步骤 3**. 将 Thumb Joystick 连接到 Base Hat 的 `A0` 端口。
 - **步骤 4**. 通过 USB 线缆将树莓派连接到电脑。
 
 ![](https://files.seeedstudio.com/wiki/Grove-Thumb_Joystick/img/Thumb_Hat.jpg)
@@ -203,7 +203,7 @@ python3 grove_thumb_joystick.py 0
 ```
 
 :::注意
-你可以使用命令 ++python grove_thumb_joystick.py 引脚++ 来执行程序，其中引脚可以是 ADC 组中的 {0, 2, 4, 6} 之一，并将设备连接到对应的插槽 {A0, A2, A4, A6}。
+你可以使用命令 ++python grove_thumb_joystick.py 引脚++ 来执行程序，其中引脚可以是 ADC 组中的 {0, 2, 4, 6} 之一，并将设备连接到对应的插槽 {`A0`, `A2`, `A4`, `A6`}。
 :::
 
 以下是 grove_thumb_joystick.py 代码的示例。
@@ -287,7 +287,7 @@ KeyboardInterrupt
 你可以通过简单地按下 ++ctrl+c++ 来退出此程序。
 
 :::提示
-你可能已经注意到，对于模拟端口，丝印引脚编号类似于 **A1, A0**，但在命令中我们使用的参数是 **0** 和 **1**，与数字端口相同。因此，请确保你将模块插入正确的端口，否则可能会出现引脚冲突。
+你可能已经注意到，对于模拟端口，丝印引脚编号类似于 **`A1`, `A0`**，但在命令中我们使用的参数是 **0** 和 **1**，与数字端口相同。因此，请确保你将模块插入正确的端口，否则可能会出现引脚冲突。
 :::
 
 ### 使用树莓派（配合 GrovePi_Plus）
@@ -302,7 +302,7 @@ KeyboardInterrupt
 |[立即获取](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[立即获取](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html)|[立即获取](https://www.seeedstudio.com/Grove-Thumb-Joystick-p-935.html)|
 
 - **步骤 2.** 将 GrovePi_Plus 插入树莓派。
-- **步骤 3.** 将 Grove-Thumb Joystick 连接到 GrovePi_Plus 的 **A0** 端口。
+- **步骤 3.** 将 Grove-Thumb Joystick 连接到 GrovePi_Plus 的 **`A0`** 端口。
 - **步骤 4.** 通过 USB 线缆将树莓派连接到电脑。
 
 ![](https://files.seeedstudio.com/wiki/Grove-Thumb_Joystick/img/Pi_Joystick%20connection.jpg)
@@ -409,11 +409,11 @@ sudo python3 grove_thumb_joystick.py
 
 **树莓派音乐服务器**：树莓派项目的第一步。
 
-<iframe frameborder='0' height='327.5' scrolling='no' src='https://www.hackster.io/kishima7/raspberry-pi-music-server-f5a0ae/embed' width='350'></iframe>
+{/* <iframe frameborder='0' height='327.5' scrolling='no' src='https://www.hackster.io/kishima7/raspberry-pi-music-server-f5a0XX/embed' width='350'></iframe> */}
 
 **构建自定义的Minecraft控制器**：使用GrovePi构建自定义的Minecraft控制器。
 
-<iframe frameborder='0' height='327.5' scrolling='no' src='https://www.hackster.io/dexterindustries/build-a-custom-minecraft-controller-d55d9c/embed' width='350'></iframe>
+{/* <iframe frameborder='0' height='327.5' scrolling='no' src='https://www.hackster.io/dexterindustries/build-a-custom-minecraft-controller-d55d9c/embed' width='350'></iframe> */}
 
 ## 技术支持与产品讨论
 

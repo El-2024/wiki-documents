@@ -26,60 +26,50 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ---
 <table>
 <tr>
-<th> PET
-</th>
-<th> パッケージ
-</th></tr>
+<th>PET</th>
+<th>パッケージ</th>
+</tr>
 <tr>
-<td width="400px"> 典型的なピーク電力
-</td>
-<td width="400px"> 0.55W
-</td></tr>
+<td width="400px"> 典型的なピーク電力</td>
+<td width="400px"> 0.55W</td>
+</tr>
 <tr>
-<td> ピーク電力時の電圧
-</td>
-<td> 5.5v
-</td></tr>
+<td> ピーク電力時の電圧</td>
+<td> 5.5v</td>
+</tr>
 <tr>
-<td> ピーク電力時の電流
-</td>
-<td> 100mA
-</td></tr>
+<td> ピーク電力時の電流</td>
+<td> 100mA</td>
+</tr>
 <tr>
-<td> 長さ
-</td>
-<td> 70 mm
-</td></tr>
+<td> 長さ</td>
+<td> 70 mm</td>
+</tr>
 <tr>
-<td> 幅
-</td>
-<td> 55 mm
-</td></tr>
+<td> 幅</td>
+<td> 55 mm</td>
+</tr>
 <tr>
-<td> 厚さ
-</td>
-<td> 1.5 mm
-</td></tr>
+<td> 厚さ</td>
+<td> 1.5 mm</td>
+</tr>
 <tr>
-<td> 重量
-</td>
-<td> 17g
-</td></tr>
+<td> 重量</td>
+<td> 17g</td>
+</tr>
 <tr>
-<td> 効率
-</td>
-<td> 17%
-</td></tr>
+<td> 効率</td>
+<td> 17%</td>
+</tr>
 <tr>
-<td> ワイヤー直径
-</td>
-<td> 1.5mm
-</td></tr>
+<td> ワイヤー直径</td>
+<td> 1.5mm</td>
+</tr>
 <tr>
-<td> コネクタ
-</td>
-<td> 2.0mm JST
-</td></tr></table>
+<td> コネクタ</td>
+<td> 2.0mm JST</td>
+</tr>
+</table>
 
 ## ハードウェアの取り付け
 

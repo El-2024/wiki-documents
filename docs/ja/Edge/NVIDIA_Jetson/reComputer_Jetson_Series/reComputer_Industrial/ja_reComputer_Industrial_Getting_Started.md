@@ -102,15 +102,15 @@ reComputer Industrialには2つのRJ45 GbEポートがあり、そのうち1つ�
     </tr>
     <tr>
       <td>ビデオエンコード</td>
-      <td colSpan={2}>1*4K60 (H.265) | 3*4K30 (H.265) | 6*1080p60 (H.265) | 12*1080p30 (H.265)</td>
+      <td colSpan={2}>1×4K60 (H.265) | 3×4K30 (H.265) | 6×1080p60 (H.265) | 12×1080p30 (H.265)</td>
       <td colSpan={2}>1080p30は1-2 CPUコアで対応</td>
-      <td colSpan={2}>2*4K60 | 4*4K30 | 10*1080p60 | 22*1080p30 (H.265)<br /> 2*4K60 | 4*4K30 | 10*1080p60 | 20*108p30 (H.264)</td>
+      <td colSpan={2}>2×4K60 | 4×4K30 | 10×1080p60 | 22×1080p30 (H.265)<br /> 2×4K60 | 4×4K30 | 10×1080p60 | 20×108p30 (H.264)</td>
     </tr>
     <tr>
       <td>ビデオデコード</td>
-      <td colSpan={2}>1*8K30 (H.265) | 2*4K60 (H.265) | 4*4K30 (H.265) | 9*1080p60 (H.265) | 18*1080p30 (H.265)</td>
-      <td colSpan={2}>1*4K60 (H.265) | 2*4K30 (H.265) | 5*1080p60 (H.265) | 11*1080p30 (H.265)</td>
-      <td colSpan={2}>2*8K30 | 6*4K60 | 12*4K30 | 22*1080p60 | 44*1080p30 (H.265)<br /> 2*4K60 | 6*4K30 | 10*1080p60 | 22*1080p30 (H.264)</td>
+      <td colSpan={2}>1×8K30 (H.265) | 2×4K60 (H.265) | 4×4K30 (H.265) | 9×1080p60 (H.265) | 18×1080p30 (H.265)</td>
+      <td colSpan={2}>1×4K60 (H.265) | 2×4K30 (H.265) | 5×1080p60 (H.265) | 11×1080p30 (H.265)</td>
+      <td colSpan={2}>2×8K30 | 6×4K60 | 12×4K30 | 22×1080p60 | 44×1080p30 (H.265)<br /> 2×4K60 | 6×4K30 | 10×1080p60 | 22×1080p30 (H.264)</td>
     </tr>
     <tr>
       <td rowSpan={2}>ストレージ</td>
@@ -136,7 +136,7 @@ reComputer Industrialには2つのRJ45 GbEポートがあり、そのうち1つ�
     </tr>
     <tr>
       <td>DI/DO</td>
-      <td colSpan={6}>4*DI,4*DO,3*GND_DI,2*GND_DO,1*GND_ISO,1*CAN<br /></td>
+      <td colSpan={6}>4×DI,4×DO,3×GND_DI,2×GND_DO,1×GND_ISO,1×CAN<br /></td>
     </tr>
     <tr>
       <td>COM</td>
@@ -144,7 +144,7 @@ reComputer Industrialには2つのRJ45 GbEポートがあり、そのうち1つ�
     </tr>
     <tr>
       <td>ディスプレイ</td>
-      <td colSpan={6}>1*HDMI 2.0 Type A</td>
+      <td colSpan={6}>1×HDMI 2.0 Type A</td>
     </tr>
     <tr>
       <td>SIM</td>
@@ -386,7 +386,7 @@ import TabItem from '@theme/TabItem';
     </tr>
   </tbody>
   </table>
-</div>
+  </div>
 
 <p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>
   * Download1とDownload2の画像ファイルは同じです。ダウンロード速度が速いリンクを選択してください。

@@ -15,7 +15,7 @@ last_update:
 
 ## Introducción
 
-El reTerminal, como un excelente dispositivo de Interfaz Hombre-Máquina (HMI), ha sido adoptado en muchos sistemas de diferentes ámbitos. Como interfaz del sistema, es buena idea montar el reTerminal en lugar de sostenerlo con la mano. En esta sección, discutiremos las distintas soluciones de montaje para el reTerminal. El contenido cubre la [Especificación de los Tornillos de Hardware](#Hardware_Specification_of_the_Screw) y los [Diseños de la Comunidad](#Community_Design).
+El reTerminal, como un excelente dispositivo de Interfaz Hombre-Máquina (HMI), ha sido adoptado en muchos sistemas de diferentes ámbitos. Como interfaz del sistema, es buena idea montar el reTerminal en lugar de sostenerlo con la mano. En esta sección, discutiremos las distintas soluciones de montaje para el reTerminal. El contenido cubre la especificación de los Tornillos de Hardware y los Diseños de la Comunidad.
 
 ## Especificación de los Tornillos de Hardware
 
@@ -31,7 +31,7 @@ El montaje en la parte inferior es una **montura de cámara estándar** con diá
 
 Este [módulo giratorio](https://protopedia.net/prototype/2903) permite al usuario rotar y sujetar el reTerminal. Con el nuevo firmware, cuando la pantalla gira a vertical, el reTerminal se orienta verticalmente. También, con un mayor desarrollo, hay más posibilidades para este módulo.
 
-*Referencia: <https://protopedia.net/prototype/2903>*
+*Referencia: [https://protopedia.net/prototype/2903](https://protopedia.net/prototype/2903)*
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_Mount_Options/5.png" alt="pir" width="1000" height="auto"/></p>
 
@@ -39,7 +39,7 @@ Este [módulo giratorio](https://protopedia.net/prototype/2903) permite al usuar
 
 El [módulo de techo para reTerminal](https://protopedia.net/prototype/2943) convierte al reTerminal en un dispositivo de control IoT. Sus características incluyen el control de la fuente de alimentación del enchufe y la monitorización mediante cámara.
 
-*Referencia: <https://protopedia.net/prototype/2943>*
+*Referencia: [https://protopedia.net/prototype/2943](https://protopedia.net/prototype/2943)*
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_Mount_Options/6.png" alt="pir" width="500" height="auto"/></p>
 
@@ -47,7 +47,7 @@ El [módulo de techo para reTerminal](https://protopedia.net/prototype/2943) con
 
 La aplicación industrial es otro escenario de uso para el reTerminal. Por ello, el [adaptador de conexión HAT para reTerminal](https://protopedia.net/prototype/2972) ofrece una integración más sencilla con el marco de aluminio de ranura en T.
 
-*Referencia: <https://protopedia.net/prototype/2972>*
+*Referencia: [https://protopedia.net/prototype/2972](https://protopedia.net/prototype/2972)*
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_Mount_Options/8.png" alt="pir" width="1000" height="auto"/></p>
 
@@ -55,7 +55,7 @@ La aplicación industrial es otro escenario de uso para el reTerminal. Por ello,
 
 El reTerminal puede ser un gran compañero de una impresora 3D. El [soporte para reTerminal en MakerGear M2](https://www.thingiverse.com/thing:5372724) está diseñado con ese fin.
 
-*Referencia: <https://www.thingiverse.com/thing:5372724>*
+*Referencia: [https://www.thingiverse.com/thing:5372724](https://www.thingiverse.com/thing:5372724)*
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_Mount_Options/9.png" alt="pir" width="500" height="auto"/></p>
 
@@ -63,6 +63,6 @@ El reTerminal puede ser un gran compañero de una impresora 3D. El [soporte para
 
 Un [soporte para reTerminal](https://www.thingiverse.com/thing:5036319) puede ser una solución muy directa para muchos proyectos.
 
-*Referencia: <https://www.thingiverse.com/thing:5036319>*
+*Referencia: [https://www.thingiverse.com/thing:5036319](https://www.thingiverse.com/thing:5036319)*
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_Mount_Options/10.png" alt="pir" width="500" height="auto"/></p>

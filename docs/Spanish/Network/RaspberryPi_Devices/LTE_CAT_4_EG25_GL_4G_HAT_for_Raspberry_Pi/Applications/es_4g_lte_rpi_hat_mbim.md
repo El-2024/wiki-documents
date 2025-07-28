@@ -63,8 +63,7 @@ Antes de continuar, asegúrate de que:
 
 Una vez instalado, puedes verificar la instalación del controlador navegando a **Administración de Equipos** → **Administrador de Dispositivos**. Una instalación exitosa mostrará los dispositivos bajo "Adaptadores de red" y "Puertos (COM y LPT)", similar a la imagen siguiente:
 
-
-  <div style={{ textAlign: 'center' }}>
+<div style={{ textAlign: 'center' }}>
   <img 
     src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/devicetree_mbim.PNG" 
     style={{ width: 600}} 
@@ -104,7 +103,7 @@ A veces puede que el puerto AT no responda. En esos casos, utiliza el puerto DM.
     src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mbimcommand.PNG" 
     style={{ width: 600}} 
   />
-</div>
+  </div>
 
 
 
@@ -120,24 +119,26 @@ Una vez configurado en modo MBIM:
     src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/windows.PNG" 
     style={{ width: 600}} 
   />
-</div>
+  </div>
 
 ## Verificar la Configuración de Red
 
 Para verificar si tu PC ha adquirido una conexión de red mediante MBIM:
 1. Abre la terminal de comandos (CMD).
-2. Ejecuta:
-   ```
-   ipconfig
-   ```
-   Deberías ver una interfaz con una dirección IP bajo "Conexión de Banda Ancha Móvil" o "Celular".
 
-   <div style={{ textAlign: 'center' }}>
-  <img 
-    src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mbimcmd.PNG" 
-    style={{ width: 600}} 
-  />
-</div>
+2. Ejecuta:
+
+  ```
+  ipconfig
+  ```
+  Deberías ver una interfaz con una dirección IP bajo "Conexión de Banda Ancha Móvil" o "Celular".
+
+  <div style={{ textAlign: 'center' }}>
+    <img 
+      src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mbimcmd.PNG" 
+      style={{ width: 600}} 
+    />
+  </div>
 
 
 
@@ -148,11 +149,11 @@ Para verificar si tu PC ha adquirido una conexión de red mediante MBIM:
 Ofrecemos varios canales de comunicación para adaptarnos a diferentes preferencias y necesidades.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+  <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+  <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

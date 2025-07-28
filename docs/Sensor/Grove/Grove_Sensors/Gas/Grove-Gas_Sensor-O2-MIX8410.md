@@ -21,7 +21,7 @@ Grove - Oxygen Sensor(MIX8410) is a new release version compared to the old one 
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/4df5kaaKa6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[<p><img src="https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/images/get_one_now.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-Oxygen-Sensor-MIX8410-p-4697.html) 
+<p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/Grove-Oxygen-Sensor-MIX8410-p-4697.html"><img src="https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/images/get_one_now.png" alt="pir" width={600} height="auto" /></a></p> 
 
 
 :::tip
@@ -31,7 +31,7 @@ Grove - Oxygen Sensor(MIX8410) is a new release version compared to the old one 
 ## Feature
 
 * High sensitivity (0.1±0.03 mA) with linear output
-* High stability with <10s response time
+* High stability with &lt;10s response time
 * Environmental protection design
 * Advanced anti-leakage technology which greatly reduces the probability of leakage
 * Low output current for longer sensor life
@@ -49,8 +49,8 @@ Grove - Oxygen Sensor(MIX8410) is a new release version compared to the old one 
 |Overload concentration| 30%|
 |Sensitivity	| 0.05~0.15 mA(in air) |
 |Repeatability  | ±2% |
-|responsible time(t90) | ＜ 10s |
-|stability| ＜ 2% / moth |
+|Responsible time(t90) | ＜ 10s |
+|Stability| ＜ 2% / moth |
 |Recommended load| 100Ω |
 |Long-term drift|  ＜ 5% / year|
 |Temperature Range |	-20 °C~50 °C |
@@ -121,7 +121,7 @@ Here is the correlation between MIX8410 output current and concentration of O2. 
 :::
 
 
-##Getting Started
+## Getting Started
 
 :::note
     This chapter is based on Win10 and Arduino IDE 1.7.9
@@ -140,7 +140,7 @@ Here we will show you how this Grove - Oxygen Sensor(MIX8410) works via a simple
 
 
 
-###Connection 
+### Connection 
 
 Thanks to the benefit of Grove series modules, you don't need to make soldering or bread board, what you need to do is connect the modules to the right port of Base Shield. For this demo, we have only one Grove module. 
 

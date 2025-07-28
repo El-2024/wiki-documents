@@ -90,7 +90,7 @@ Wappsto的iOS和Android应用程序还可以让您即时查看和控制设备。
    - Blockly NoCode 编程
    - Blockly javascript 编程
    - 设置在Wappsto上连接的所有设备和服务之间的自动化和交互
-   - Twitter 和 Wappsto:交叉自动化示例： <https://bit.wappsto.com/project/wappsto-blocks/>
+   - Twitter 和 Wappsto:交叉自动化示例： [https://bit.wappsto.com/project/wappsto-blocks/](https://bit.wappsto.com/project/wappsto-blocks/)
 
 ### Wappsto的常被忽视的功能
 
@@ -127,16 +127,16 @@ Wappsto的iOS和Android应用程序还可以让您即时查看和控制设备。
 
 ### 在电脑上安装Arduino IDE
 
-如果您没有安装，请参阅 <https://www.arduino.cc/en/Guide>
+如果您没有安装，请参阅 [https://www.arduino.cc/en/Guide](https://www.arduino.cc/en/Guide)
 
 #### 安装 ArduinoJson 库
 
-从库管理器中安装 ArduinoJson 库-详细信息请参阅 <https://arduinojson.org/v6/doc/installation/> 。
+从库管理器中安装 ArduinoJson 库-详细信息请参阅 [https://arduinojson.org/v6/doc/installation/](https://arduinojson.org/v6/doc/installation/) 。
 
 #### 安装此 Wappsto 库
 
 要在 Arduino IDE 中安装此库，请将此项目下载为 zip 文件，点击 "Code"，然后选择 "Download ZIP"。
-然后选择 "Sketch"->"Include Library"->"Add .Zip Library..."，详细信息请参阅 <https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries> 。
+然后选择 "Sketch"->"Include Library"->"Add .Zip Library..."，详细信息请参阅 [https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries) 。
 
 ### 生成设备的证书和 ID
 
@@ -196,7 +196,7 @@ pip install -U MarkupSafe==0.20
 
 由于您将成为制造商，您仍然可以在网络列表中看到设备，您可以看到它在线，但是您将无法查看值或控制设备。
 
-要认领设备，请转到 <https://wappsto.com/devices> 上的"IoT Devices"选项卡，点击右上角的"+ Add an IoT device"按钮，然后在框中输入网络UUID。
+要认领设备，请转到 [https://wappsto.com/devices](https://wappsto.com/devices) 上的"IoT Devices"选项卡，点击右上角的"+ Add an IoT device"按钮，然后在框中输入网络UUID。
 
 如果您点击网络的删除按钮，将会取消设备的所有权，以便其他用户可以认领它。一旦设备被认领，其他用户将无法再次认领它。
 
@@ -226,7 +226,7 @@ pip install -U MarkupSafe==0.20
 
 在创建之前，库将向 Wappsto 查询是否存在具有该名称的设备/值，因此它将链接到正确的值。如果没有名称匹配的项，将创建一个新的。如果父级具有具有相同名称的多个子级，库将选择第一个可用的。
 
-如果更改名称，将创建一个新的，但旧的不会被删除。您需要自己处理这个问题，例如使用 <https://wappsto.com/devices>
+如果更改名称，将创建一个新的，但旧的不会被删除。您需要自己处理这个问题，例如使用 [https://wappsto.com/devices](https://wappsto.com/devices)
 
 ### 初始化 Wappsto
 

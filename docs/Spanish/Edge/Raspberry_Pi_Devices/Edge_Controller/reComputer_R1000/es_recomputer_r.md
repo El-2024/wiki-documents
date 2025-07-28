@@ -641,8 +641,6 @@ El interruptor de arranque del reComputer R1000 está conectado al pin nRPI_BOOT
 
 ### USB
 
-<### Puertos USB
-
 <div align="left"><img width={150} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/fig20.png" /></div>
 
 El reComputer R1000 está equipado con un puerto USB tipo C y dos puertos USB tipo A. Consulte la tabla a continuación para conocer sus funciones y descripciones.
@@ -702,9 +700,9 @@ Una vez que haya identificado la entrada correspondiente a su SSD, puede procede
 
 :::note
 Existen dos usos principales para las tarjetas SSD:<br />
-1. **Almacenamiento de alta capacidad:** Las tarjetas SSD pueden utilizarse para necesidades de almacenamiento masivo.<br />
+1. **Almacenamiento de alta capacidad:** Las tarjetas SSD pueden utilizarse para satisfacer necesidades de almacenamiento masivo.<br />
 2. **Unidad de arranque con imagen del sistema:** Otro uso implica utilizar la SSD tanto para almacenamiento de alta capacidad como para alojar imágenes del sistema, permitiendo el arranque directamente desde la SSD.<br />
-Es importante tener en cuenta que no todas las tarjetas SSD disponibles en el mercado son compatibles con el segundo uso. Por lo tanto, si planea usarla como unidad de arranque y no está seguro de qué modelo comprar, recomendamos optar por nuestro SSD de 1TB recomendado (SKU 112990267). Este modelo ha sido probado y verificado para la funcionalidad de arranque, reduciendo el riesgo de problemas de compatibilidad y minimizando los costos de prueba y error.
+Es importante tener en cuenta que no todas las tarjetas SSD disponibles en el mercado son compatibles con el segundo uso. Por lo tanto, si planea usarla como unidad de arranque y no estás seguro de qué modelo comprar, recomendamos optar por nuestro SSD de 1TB recomendado (SKU 112990267). Este modelo ha sido probado y verificado para la funcionalidad de arranque, reduciendo el riesgo de problemas de compatibilidad y minimizando los costos de prueba y error.
 ::: 
 
 ### Mini-PCIe Slot

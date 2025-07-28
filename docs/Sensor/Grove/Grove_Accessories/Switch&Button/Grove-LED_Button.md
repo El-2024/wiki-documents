@@ -60,8 +60,8 @@ With the build-in LED, you can apply it to many interesting projects, it is real
 |Working voltage|3.3V/5V|
 |Operating Life without Load|100 000 times|
 |LED rated current|50mA|
-|Press Resistance^1^|<100mΩ|
-|Release Resistance^2^|>100MΩ|
+|Press Resistance^1^|&lt;100mΩ|
+|Release Resistance^2^|&gt;100MΩ|
 |Size|L: 40mm W: 20mm H: 13mm|
 |Weight|4.3g|
 |Package size|L: 140mm W: 90mm H: 10mm|
@@ -351,7 +351,7 @@ if __name__ == '__main__':
 
 ```
 
-:::tipsuccess
+:::tip
 If everything goes well, you will be able to see the LED turns on if you press it and turns off if you long press it. If you double click the LED button, the LED will blink.
 :::
 

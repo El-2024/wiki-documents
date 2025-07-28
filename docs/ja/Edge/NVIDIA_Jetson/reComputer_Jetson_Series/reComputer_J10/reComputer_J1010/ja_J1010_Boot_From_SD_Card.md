@@ -36,7 +36,7 @@ git clone https://github.com/limengdu/bootFromUSB
 
 青いエリアをクリックし、緑のエリアをクリックして「パーティションのフォーマット」を選択します。
 
-<div align="center"><img width="{800}" src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/disk_fix_1.jpg" /></div>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/disk_fix_1.jpg" /></div>
 
 緑のエリアをクリックして「Linuxシステム専用の内部ディスク（Ext4）」を選択します。黄色のエリアにある「ボリューム名」に希望する名前を入力します。
 
@@ -67,18 +67,19 @@ cd bootFromUSB
 
     キャリアボード上のeMMCから起動した後、SDカードから起動するように変更したい場合、SDカードへのシステム書き込みやSDカードドライバのインストールが正しく行われていることを確認する必要があります。「root」の後のパラメータを起動元デバイスのアドレスに変更します。変更が完了したら、システムを再起動します。
 
-    **再起動前に「/boot/extlinux/extlinux.conf」を変更し、再起動後に「/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf」を確認します。**
+    **再起動前に`/boot/extlinux/extlinux.conf`を変更し、再起動後に`/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf`を確認します。**
 
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/config_3.png" /></div>
 
-    !!!注意
-        SDカードからシステムを起動した後の設定ファイルは「/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf」であり、オンボードeMMCからシステムを起動した後の設定ファイルは「/boot/extlinux/extlinux.conf」です。これらは同じファイルであり、デバイスが電源投入後にシステムをどこから起動するかを選択するための設定を読み取ります。システムが起動した後、相対パスが変更されます。
+    :::warning 注意
+    SDカードからシステムを起動した後の設定ファイルは`/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf`であり、オンボードeMMCからシステムを起動した後の設定ファイルは`/boot/extlinux/extlinux.conf`です。これらは同じファイルであり、デバイスが電源投入後にシステムをどこから起動するかを選択するための設定を読み取ります。システムが起動した後、相対パスが変更されます。
+    :::
 
 - ボードeMMCからの起動
 
     SDカードから起動した後、再びeMMCから起動するように変更したい場合や、SDカードを交換する必要がある場合、デバイスをeMMCから起動するように変更する必要があります。以下の変更を行います。
 
-    **再起動前に「/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf」を変更し、再起動後に「/boot/extlinux/extlinux.conf」を確認します。**
+    **再起動前に`/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf`を変更し、再起動後に`/boot/extlinux/extlinux.conf`を確認します。**
 
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/config_4.png" /></div>
 

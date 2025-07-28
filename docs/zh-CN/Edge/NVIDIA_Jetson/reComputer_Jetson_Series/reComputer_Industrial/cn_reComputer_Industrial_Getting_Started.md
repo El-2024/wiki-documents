@@ -102,15 +102,15 @@ reComputer 工业版配备了 2 个 RJ45 GbE 端口，其中一个是 PoE PSE �
     </tr>
     <tr>
       <td>视频编码</td>
-      <td colSpan={2}>1*4K60 (H.265) | 3*4K30 (H.265) | 6*1080p60 (H.265) | 12*1080p30 (H.265)</td>
+      <td colSpan={2}>1×4K60 (H.265) | 3×4K30 (H.265) | 6×1080p60 (H.265) | 12×1080p30 (H.265)</td>
       <td colSpan={2}>1080p30 支持 1-2 个 CPU 核心</td>
-      <td colSpan={2}>2*4K60 | 4*4K30 | 10*1080p60 | 22*1080p30 (H.265)<br /> 2*4K60 | 4*4K30 | 10*1080p60 | 20*108p30 (H.264)</td>
+      <td colSpan={2}>2×4K60 | 4×4K30 | 10×1080p60 | 22×1080p30 (H.265)<br /> 2×4K60 | 4×4K30 | 10×1080p60 | 20×108p30 (H.264)</td>
     </tr>
     <tr>
       <td>视频解码</td>
-      <td colSpan={2}>1*8K30 (H.265) | 2*4K60 (H.265) | 4*4K30 (H.265) | 9*1080p60 (H.265) | 18*1080p30 (H.265)</td>
-      <td colSpan={2}>1*4K60 (H.265) | 2*4K30 (H.265) | 5*1080p60 (H.265) | 11*1080p30 (H.265)</td>
-      <td colSpan={2}>2*8K30 | 6*4K60 | 12*4K30 | 22*1080p60 | 44*1080p30 (H.265)<br /> 2*4K60 | 6*4K30 | 10*1080p60 | 22*1080p30 (H.264)</td>
+      <td colSpan={2}>1×8K30 (H.265) | 2×4K60 (H.265) | 4×4K30 (H.265) | 9×1080p60 (H.265) | 18×1080p30 (H.265)</td>
+      <td colSpan={2}>1×4K60 (H.265) | 2×4K30 (H.265) | 5×1080p60 (H.265) | 11×1080p30 (H.265)</td>
+      <td colSpan={2}>2×8K30 | 6×4K60 | 12×4K30 | 22×1080p60 | 44×1080p30 (H.265)<br /> 2×4K60 | 6×4K30 | 10×1080p60 | 22×1080p30 (H.264)</td>
     </tr>
     <tr>
       <td rowSpan={2}>存储</td>
@@ -128,27 +128,27 @@ reComputer 工业版配备了 2 个 RJ45 GbE 端口，其中一个是 PoE PSE �
     <tr>
       <td rowSpan={6}>I/O</td>
       <td>网络</td>
-      <td colSpan={6}>1* LAN1 RJ45 GbE PoE(PSE 802.3 af 15 W)<br />1* LAN2 RJ45 GbE (10/100/1000Mbps) </td>
+      <td colSpan={6}>1× LAN1 RJ45 GbE PoE(PSE 802.3 af 15 W)<br />1× LAN2 RJ45 GbE (10/100/1000Mbps) </td>
     </tr>
     <tr>
       <td>USB</td>
-      <td colSpan={6}>3* USB3.2 Gen1, 1* USB2.0 Type C(设备模式), 1* USB2.0 Type C 用于调试 UART &amp; RP2040</td>
+      <td colSpan={6}>3× USB3.2 Gen1, 1× USB2.0 Type C(设备模式), 1× USB2.0 Type C 用于调试 UART &amp; RP2040</td>
     </tr>
     <tr>
       <td>DI/DO</td>
-      <td colSpan={6}>4*DI,4*DO,3*GND_DI,2*GND_DO,1*GND_ISO,1*CAN<br /></td>
+      <td colSpan={6}>4×DI,4×DO,3×GND_DI,2×GND_DO,1×GND_ISO,1×CAN<br /></td>
     </tr>
     <tr>
       <td>COM</td>
-      <td colSpan={6}>1* DB9 (RS232/RS422/RS485)</td>
+      <td colSpan={6}>1× DB9 (RS232/RS422/RS485)</td>
     </tr>
     <tr>
       <td>显示</td>
-      <td colSpan={6}>1*HDMI 2.0 Type A</td>
+      <td colSpan={6}>1×HDMI 2.0 Type A</td>
     </tr>
     <tr>
       <td>SIM</td>
-      <td colSpan={6}>1* Nano SIM 卡插槽</td>
+      <td colSpan={6}>1× Nano SIM 卡插槽</td>
     </tr>
     <tr>
       <td rowSpan={7}>扩展</td>
@@ -165,19 +165,19 @@ reComputer 工业版配备了 2 个 RJ45 GbE 端口，其中一个是 PoE PSE �
     </tr>
     <tr>
       <td>风扇</td>
-      <td colSpan={6}>无风扇，被动散热器<br />1*风扇连接器(5V PWM)</td>
+      <td colSpan={6}>无风扇，被动散热器<br />1×风扇连接器(5V PWM)</td>
     </tr>
     <tr>
       <td>TPM</td>
-      <td colSpan={6}>1* TPM 2.0 连接器 (模块可选) </td>
+      <td colSpan={6}>1× TPM 2.0 连接器 (模块可选) </td>
     </tr>
     <tr>
       <td>RTC</td>
-      <td colSpan={6}>1* RTC 插座 (包含 CR1220), 1* RTC 2 针</td>
+      <td colSpan={6}>1× RTC 插座 (包含 CR1220), 1× RTC 2 针</td>
     </tr>
     <tr>
       <td>摄像头</td>
-      <td colSpan={6}>2* CSI (2 通道 15 针)</td>
+      <td colSpan={6}>2× CSI (2 通道 15 针)</td>
     </tr>
     <tr>
       <td rowSpan={2}>电源</td>
@@ -191,7 +191,7 @@ reComputer 工业版配备了 2 个 RJ45 GbE 端口，其中一个是 PoE PSE �
     <tr>
       <td rowSpan={3}>机械<br /></td>
       <td>尺寸 (宽 x 深 x 高)</td>
-      <td colSpan={6}>159mm*155mm*57mm</td>
+      <td colSpan={6}>159mm×155mm×57mm</td>
     </tr>
     <tr>
       <td>重量</td>
@@ -339,6 +339,7 @@ import TabItem from '@theme/TabItem';
 <TabItem value="Method 1" label="方法 1">
 
 - **步骤 1:** 根据您使用的板子，将系统镜像下载到您的 Ubuntu 电脑。
+
   <div class="table-center">
   <table style={{textAlign: 'center'}}>
   <thead>
@@ -388,19 +389,19 @@ import TabItem from '@theme/TabItem';
     </tr>
   </tbody>
   </table>
-</div>
+  </div>
 
-<p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>
-  * 来自 Download1 和 Download2 的镜像文件是相同的。您可以选择下载速度更快的链接。
-</p>
+  <p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>
+    * 来自 Download1 和 Download2 的镜像文件是相同的。您可以选择下载速度更快的链接。
+  </p>
 
-:::info
-要验证下载的固件的完整性，您可以比较 SHA256 哈希值。
+  :::info
+  要验证下载的固件的完整性，您可以比较 SHA256 哈希值。
 
-在 Ubuntu 主机上，打开终端并运行命令 `sha256sum <File>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 wiki 中提供的 SHA256 哈希值匹配，则表明您下载的固件是完整且未损坏的。
-:::
+  在 Ubuntu 主机上，打开终端并运行命令 `sha256sum <File>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 wiki 中提供的 SHA256 哈希值匹配，则表明您下载的固件是完整且未损坏的。
+  :::
 
-上述镜像的源代码可以在 [这里](https://github.com/Seeed-Studio/Linux_for_Tegra) 找到。
+  上述镜像的源代码可以在 [这里](https://github.com/Seeed-Studio/Linux_for_Tegra) 找到。
 
 - **步骤 2：** 解压生成的文件
 
@@ -610,6 +611,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 之后，开发板将重新启动并准备好使用！
 
 <div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/106.png"/></div>
+
 </TabItem>
 
 <TabItem value="Jetpack 6.1" label="Jetpack6.1">

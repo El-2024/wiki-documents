@@ -194,7 +194,8 @@ Now we can have the firmware into out XIAO C6, once you got prompt `Project buil
 
 ### Step 3. Flash the firmware
 
-<details><summary>usbipd is nedded if using WSL2</summary>
+<details>
+<summary>usbipd is nedded if using WSL2</summary>
 
 If you are working with WSL2, you'll need to have [usbipd](https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/WSL.md#usbipd) installed.
 

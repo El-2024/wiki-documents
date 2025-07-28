@@ -22,8 +22,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <iframe class="youtube-video-r" src="https://www.youtube.com/embed/xUX47UnT7xk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <div class="button-container">
-    <a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">
-            今すぐ購入 🖱️</a>
+    <a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">今すぐ購入 🖱️</a>
 </div>
 
 SenseCAP Indicator は、OpenAI の ChatGPT および DALL·E モデルの API 統合を通じてその能力を活用する強力なツールです。人工知能の分野で著名な OpenAI によって開発された SenseCAP Indicator は、さまざまなシナリオで AI の魅力的な可能性を体験できるようにします。

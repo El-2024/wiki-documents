@@ -37,21 +37,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## バージョントラッカー
 
-<table>
-<tr>
-<th> リビジョン
-</th>
-<th> 説明
-</th>
-<th> リリース
-</th></tr>
-<tr>
-<td width="300px"> v0.9b
-</td>
-<td width="500px"> 初回公開リリース
-</td>
-<td width="200px"> 2009年11月4日
-</td></tr></table>
+| リビジョン | 説明 | リリース |
+|------------|------|----------|
+| v0.9b | 初回公開リリース | 2009年11月4日 |
 
 ## 技術サポートと製品ディスカッション
 技術的な問題がある場合は、[フォーラム](http://forum.seeedstudio.com/)に問題を投稿してください。  

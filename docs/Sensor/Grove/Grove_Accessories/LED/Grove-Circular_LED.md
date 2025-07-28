@@ -33,52 +33,37 @@ This is a unique ring– it has a florid body with 24 controllable LEDs. Maybe i
 ---
 <table  cellspacing="0" width="80%">
 <tr>
-<th scope="col"> Item
-</th>
-<th scope="col"> Min
-</th>
-<th scope="col"> Typical
-</th>
-<th scope="col"> Max
-</th>
-<th scope="col"> Unit
-</th></tr>
+<th scope="col"> Item</th>
+<th scope="col"> Min</th>
+<th scope="col"> Typical</th>
+<th scope="col"> Max</th>
+<th scope="col"> Unit</th>
+</tr>
 <tr>
-<th scope="row"> Voltage
-</th>
-<td> 4.5
-</td>
-<td> 5
-</td>
-<td> 5.5
-</td>
-<td> VDC
-</td></tr>
+<th scope="row"> Voltage</th>
+<td> 4.5</td>
+<td> 5</td>
+<td> 5.5</td>
+<td> VDC</td>
+</tr>
 <tr>
-<th scope="row"> Current
-</th>
-<td> /
-</td>
-<td> 5.5 for each LED
-</td>
-<td>
-</td>
-<td> mA
-</td></tr>
+<th scope="row"> Current</th>
+<td> /</td>
+<td> 5.5 for each LED</td>
+<td></td>
+<td> mA</td>
+</tr>
 <tr>
-<th scope="row"> Dimension
-</th>
-<td colspan="3"> Ring Form:4.5 diameter
-</td>
-<td> cm
-</td></tr>
+<th scope="row"> Dimension</th>
+<td colspan="3"> Ring Form:4.5 diameter</td>
+<td> cm</td>
+</tr>
 <tr>
-<th scope="row"> Net Weight
-</th>
-<td colspan="3"> 12
-</td>
-<td> g
-</td></tr></table>
+<th scope="row"> Net Weight</th>
+<td colspan="3"> 12</td>
+<td> g</td>
+</tr>
+</table>
 
 ##   Interface
 ---

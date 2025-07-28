@@ -74,7 +74,7 @@ The reCamera Gimbal 2002 Series is the first open-source camera control system w
 | **Aperture**           | F2.8                                                                      |
 | **Equivalent Focal Length** | 3.46mm                                                                 |
 | **Field of View**      | 65°                                                                      |
-| **Distortion**         | <1%                                                                      |
+| **Distortion**         | &lt;1%                                                                      |
 | **Lens Structure**     | 5P                                                                        |
 
 

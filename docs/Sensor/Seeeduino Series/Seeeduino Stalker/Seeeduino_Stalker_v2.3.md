@@ -138,7 +138,7 @@ You will require the following hardware for running your first program.
 
 - **Bee series socket** - 2*10 pin 2.0mm pitch (which will mate with - one at a time - any of the **wireless modules** : **XBee** , [BluetoothBee](https://seeeddoc.github.io/Bluetooth_Bee/) , **GPSBee** or **RFBee**.) Communication with these modules are done through UART.
 
-- **Serial interface** – To save space and lower costs, USB<->Serial connectivity is not provided by default. You may use the FT232 based [UartSBee](https://seeeddoc.github.io/UartSBee/)  or other USB to serial adapter boards to do the programming or communicate with the PC.
+- **Serial interface** – To save space and lower costs, USB&lt;-&gt;Serial connectivity is not provided by default. You may use the FT232 based [UartSBee](https://seeeddoc.github.io/UartSBee/)  or other USB to serial adapter boards to do the programming or communicate with the PC.
 
 - **User LED** – An LED has been provided onboard for use in your application as desired.
 

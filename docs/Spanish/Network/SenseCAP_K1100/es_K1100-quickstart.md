@@ -41,7 +41,11 @@ Con el [controlador S2110 de SenseCAP](https://www.seeedstudio.com/SenseCAP-XIAO
 La carcasa con clasificación IP66, configuración por Bluetooth, compatibilidad con la red global LoRaWAN®, batería integrada de 19 Ah y el sólido soporte desde la aplicación hacen del [SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device) la mejor elección para aplicaciones industriales. La serie incluye sensores para humedad del suelo, temperatura y humedad del aire, intensidad lumínica, CO2, conductividad eléctrica (EC) y una estación meteorológica 8 en 1. Prueba el último SenseCAP S210x para tu próximo proyecto industrial exitoso.
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP Industrial Sensor</strong></font></td>
+  <tbody>
+    <tr>
+      <td colSpan={4} bgcolor="#0e3c49" align="center">
+        <font color="white" size={4}><strong>SenseCAP Industrial Sensor</strong></font>
+      </td>
     </tr>
     <tr>
       <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div>
@@ -583,11 +587,9 @@ Aparecerá una unidad llamada **Arduino** en tu PC. Copia el archivo **.uf2** al
 > **P6: Si cambio el Dev EUI, App EUI o App Key del Grove - Wio-E5, ¿puedo recuperarlos?**  
 > **R:** Sí, puedes recuperar esa información gracias a la interfaz de consulta abierta. Los códigos están impresos en la etiqueta posterior del Grove - Wio-E5.
 
-<div>
-  ```
-  https://sensecap.seeed.cc/makerapi/device/view_device_info?nodeEui=<your_eui>&amp;deviceCode=<your_code>
-      ```
-    </your_code></your_eui></div>
+```
+https://sensecap.seeed.cc/makerapi/device/view_device_info?nodeEui=<your_eui>&amp;deviceCode=<your_code>
+```
 
 Por favor, utiliza la información de **EUI** y **Código** marcada en la parte posterior del Grove - Wio-E5 para completar los campos correspondientes en el sitio web indicado anteriormente y así obtener los tres códigos únicos de tu dispositivo abriendo la página en tu navegador.
 

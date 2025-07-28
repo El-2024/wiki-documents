@@ -162,324 +162,198 @@ The PCB design is distributed under Creative Commons Attribution-ShareAlike 3.0 
 
 ##   BOM of FST-01
 ---
-<table  cellspacing="0">
-<caption> BoM of FST-01
-</caption>
+<table cellspacing="0">
+<caption>BoM of FST-01</caption>
 <tr>
-<th> Part #
-</th>
-<th> Name
-</th>
-<th> Detail
-</th>
-<th> Package
-</th>
-<th> Manufacturer
-</th>
-<th> Distributor
-</th>
-<th> distributor reference
-</th></tr>
+<th>Part #</th>
+<th>Name</th>
+<th>Detail</th>
+<th>Package</th>
+<th>Manufacturer</th>
+<th>Distributor</th>
+<th>distributor reference</th>
+</tr>
 <tr>
-<td> C1
-</td>
-<td> Capacitor
-</td>
-<td> 27pF
-</td>
-<td> C0402
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C1</td>
+<td>Capacitor</td>
+<td>27pF</td>
+<td>C0402</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> C2
-</td>
-<td> Capacitor
-</td>
-<td> 27pF
-</td>
-<td> C0402
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C2</td>
+<td>Capacitor</td>
+<td>27pF</td>
+<td>C0402</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> C3
-</td>
-<td> Capacitor
-</td>
-<td>0.1uF
-</td>
-<td> C0402
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C3</td>
+<td>Capacitor</td>
+<td>0.1uF</td>
+<td>C0402</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> C4
-</td>
-<td> Capacitor
-</td>
-<td> 0.1uF
-</td>
-<td> C0402
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C4</td>
+<td>Capacitor</td>
+<td>0.1uF</td>
+<td>C0402</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> C5
-</td>
-<td> Capacitor
-</td>
-<td> 0.1uF
-</td>
-<td> C0402
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C5</td>
+<td>Capacitor</td>
+<td>0.1uF</td>
+<td>C0402</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> C6
-</td>
-<td> Capacitor
-</td>
-<td> 0.1uF
-</td>
-<td> C0402
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C6</td>
+<td>Capacitor</td>
+<td>0.1uF</td>
+<td>C0402</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> C7
-</td>
-<td> Capacitor
-</td>
-<td> 0.1uF
-</td>
-<td> C0402
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C7</td>
+<td>Capacitor</td>
+<td>0.1uF</td>
+<td>C0402</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> C8
-</td>
-<td> Capacitor
-</td>
-<td> 4.7uF
-</td>
-<td> C0603
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C8</td>
+<td>Capacitor</td>
+<td>4.7uF</td>
+<td>C0603</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> C9
-</td>
-<td> Capacitor
-</td>
-<td> 0.01uF
-</td>
-<td> C0402
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C9</td>
+<td>Capacitor</td>
+<td>0.01uF</td>
+<td>C0402</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> C10
-</td>
-<td> Capacitor
-</td>
-<td> 4.7uF
-</td>
-<td> C0603
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C10</td>
+<td>Capacitor</td>
+<td>4.7uF</td>
+<td>C0603</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> C11
-</td>
-<td> Capacitor
-</td>
-<td> 0.1uF
-</td>
-<td> C0402
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>C11</td>
+<td>Capacitor</td>
+<td>0.1uF</td>
+<td>C0402</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> R1
-</td>
-<td> Resister
-</td>
-<td> 510R
-</td>
-<td> R0402
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>R1</td>
+<td>Resister</td>
+<td>510R</td>
+<td>R0402</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> D1
-</td>
-<td> LED
-</td>
-<td> Blue
-</td>
-<td> LED0603
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>D1</td>
+<td>LED</td>
+<td>Blue</td>
+<td>LED0603</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> J1
-</td>
-<td> Connector
-</td>
-<td> USB 2.0, 1002-015-01001
-</td>
-<td> USB Plug A Male
-</td>
-<td> CNC Tech
-</td>
-<td> Digikey
-</td>
-<td> 1175-1020-ND
-</td></tr>
+<td>J1</td>
+<td>Connector</td>
+<td>USB 2.0, 1002-015-01001</td>
+<td>USB Plug A Male</td>
+<td>CNC Tech</td>
+<td>Digikey</td>
+<td>1175-1020-ND</td>
+</tr>
 <tr>
-<td> U1
-</td>
-<td> MCU
-</td>
-<td> STM32F103TBU6
-</td>
-<td> QFN36
-</td>
-<td> ST Microelectronics
-</td>
-<td> AVNET
-</td>
-<td> STM32F103TBU6
-</td></tr>
+<td>U1</td>
+<td>MCU</td>
+<td>STM32F103TBU6</td>
+<td>QFN36</td>
+<td>STMicroelectronics</td>
+<td>AVNET</td>
+<td>STM32F103TBU6</td>
+</tr>
 <tr>
-<td> U2
-</td>
-<td> LDO V-Regulator
-</td>
-<td> CAT6217-330TDGT3 +3.3V
-</td>
-<td> TSOT23-5
-</td>
-<td> ON Semiconductor
-</td>
-<td> Mouser
-</td>
-<td> 698-CAT6217330TD-G
-</td></tr>
+<td>U2</td>
+<td>LDO V-Regulator</td>
+<td>CAT6217-330TDGT3 +3.3V</td>
+<td>TSOT23-5</td>
+<td>ON Semiconductor</td>
+<td>Mouser</td>
+<td>698-CAT6217330TD-G</td>
+</tr>
 <tr>
-<td> U3
-</td>
-<td> USB Terminator
-</td>
-<td> NUF2221W1
-</td>
-<td> SOT363
-</td>
-<td> ON Semiconductor
-</td>
-<td> Digikey
-</td>
-<td> NUF2221W1T2GOSTR-ND
-</td></tr>
+<td>U3</td>
+<td>USB Terminator</td>
+<td>NUF2221W1</td>
+<td>SOT363</td>
+<td>ON Semiconductor</td>
+<td>Digikey</td>
+<td>NUF2221W1T2GOSTR-ND</td>
+</tr>
 <tr>
-<td> U4
-</td>
-<td> SPI Flash Memory
-</td>
-<td> SST25VF032B-80-4I-QAE-T
-</td>
-<td> WSON8
-</td>
-<td> Silicon Storage Technology
-</td>
-<td> Digikey
-</td>
-<td> SST25VF032B-80-4I-QAE-T-ND
-</td></tr>
+<td>U4</td>
+<td>SPI Flash Memory</td>
+<td>SST25VF032B-80-4I-QAE-T</td>
+<td>WSON8</td>
+<td>Silicon Storage Technology</td>
+<td>Digikey</td>
+<td>SST25VF032B-80-4I-QAE-T-ND</td>
+</tr>
 <tr>
-<td> X1
-</td>
-<td> Crystal
-</td>
-<td> ABM8G-12.000MHZ-18-D2Y-T
-</td>
-<td> 3.2mmx2.5mm
-</td>
-<td> Abracon Corporation
-</td>
-<td> Digikey
-</td>
-<td> 535-10261-2-ND
-</td></tr>
+<td>X1</td>
+<td>Crystal</td>
+<td>ABM8G-12.000MHZ-18-D2Y-T</td>
+<td>3.2mmx2.5mm</td>
+<td>Abracon Corporation</td>
+<td>Digikey</td>
+<td>535-10261-2-ND</td>
+</tr>
 <tr>
-<td>
-</td>
-<td> Enclosure
-</td>
-<td> P1A-120704U  White
-</td>
-<td> 1.2 x .71 x .40 inch
-</td>
-<td> New Age Enclosures
-</td>
-<td>
-</td>
-<td>
-</td></tr></table>
+<td></td>
+<td>Enclosure</td>
+<td>P1A-120704U  White</td>
+<td>1.2 x .71 x .40 inch</td>
+<td>New Age Enclosures</td>
+<td></td>
+<td></td>
+</tr>
+</table>
 
 ##   Components of FST-01
 ---

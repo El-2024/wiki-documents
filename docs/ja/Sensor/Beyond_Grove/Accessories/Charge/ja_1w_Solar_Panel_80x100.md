@@ -11,8 +11,8 @@ last_update:
   author: gunengyu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 ![](http://bz.seeedstudio.com/depot/images/product/solarb.jpg)
@@ -25,60 +25,50 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table>
 <tr>
-<th>PET
-</th>
-<th>パッケージ
-</th></tr>
+<th>PET</th>
+<th>パッケージ</th>
+</tr>
 <tr>
-<td width="400px">標準ピーク電力
-</td>
-<td width="400px">0.935W
-</td></tr>
+<td width="400px">標準ピーク電力</td>
+<td width="400px">0.935W</td>
+</tr>
 <tr>
-<td>ピーク電力時の電圧
-</td>
-<td>5.5v
-</td></tr>
+<td>ピーク電力時の電圧</td>
+<td>5.5v</td>
+</tr>
 <tr>
-<td>ピーク電力時の電流
-</td>
-<td>170mA
-</td></tr>
+<td>ピーク電力時の電流</td>
+<td>170mA</td>
+</tr>
 <tr>
-<td>長さ
-</td>
-<td>100 mm
-</td></tr>
+<td>長さ</td>
+<td>100 mm</td>
+</tr>
 <tr>
-<td>幅
-</td>
-<td>75 mm
-</td></tr>
+<td>幅</td>
+<td>75 mm</td>
+</tr>
 <tr>
-<td>厚さ
-</td>
-<td>1.5 mm
-</td></tr>
+<td>厚さ</td>
+<td>1.5 mm</td>
+</tr>
 <tr>
-<td>重量
-</td>
-<td>33g
-</td></tr>
+<td>重量</td>
+<td>33g</td>
+</tr>
 <tr>
-<td>効率
-</td>
-<td>15.5%
-</td></tr>
+<td>効率</td>
+<td>15.5%</td>
+</tr>
 <tr>
-<td>ワイヤー直径
-</td>
-<td>1.5mm
-</td></tr>
+<td>ワイヤー直径</td>
+<td>1.5mm</td>
+</tr>
 <tr>
-<td>コネクタ
-</td>
-<td>2.0mm JST
-</td></tr></table>
+<td>コネクタ</td>
+<td>2.0mm JST</td>
+</tr>
+</table>
 
 ## 関連情報
 

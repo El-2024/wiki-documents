@@ -18,11 +18,11 @@ Además, el Wiki describe la implementación de detección en tiempo real de ano
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-esp32c6-aws/0.jpg" style={{width:1000, height:'auto'}}/></div>
 
-- [**Capturar datos de sensores en AWS IoT Core**](#Capturar_datos_de_sensores_en_AWS_IoT_Core).
-- [**Almacenar los datos usando AWS Analytics**](#Almacenar_los_datos_usando_AWS_Analytics).
-- [**Usar AWS Sagemaker para entrenar datos en entornos normales**](#Usar_AWS_Sagemaker_para_entrenar_datos_en_entornos_normales).
-- [**XIAO ESP32C6 para detección de entornos anormales**](#XIAO_ESP32C6_para_detección_de_entornos_anormales).
-- [**Notificación de mensaje de estado anormal**](#Notificación_de_mensaje_de_estado_anormal).
+- **Capturar datos de sensores en AWS IoT Core**.
+- **Almacenar los datos usando AWS Analytics**.
+- **Usar AWS Sagemaker para entrenar datos en entornos normales**.
+- **XIAO ESP32C6 para detección de entornos anormales**.
+- **Notificación de mensaje de estado anormal**.
 
 Al explorar este Wiki, los usuarios obtendrán una comprensión detallada del papel de cada componente en la creación de un sistema inteligente, receptivo y robusto de monitoreo ambiental, con información práctica sobre configuración y mantenimiento.
 

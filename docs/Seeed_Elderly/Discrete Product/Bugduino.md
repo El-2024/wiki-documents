@@ -40,45 +40,38 @@ Designed for working with [Buglabs BUG platform](http://www.buglabs.net/).
 
 <table cellpadding="1" cellspacing="1">
 <tr>
-<th scope="row"> Microprocessor
-</th>
-<td> Atmega328
-</td></tr>
+<th scope="row">Microprocessor</th>
+<td>Atmega328</td>
+</tr>
 <tr>
-<th scope="row"> PCB size
-</th>
-<td> 60.2cm x 60.2cm
-</td></tr>
+<th scope="row">PCB size</th>
+<td>60.2cm x 60.2cm</td>
+</tr>
 <tr>
-<th scope="row"> Indicators
-</th>
-<td> POWER,Green LED. LEDs for Txd, Rxd, Rst
-</td></tr>
+<th scope="row">Indicators</th>
+<td>POWER,Green LED. LEDs for Txd, Rxd, Rst</td>
+</tr>
 <tr>
-<th scope="row"> Power supply
-</th>
-<td> 5V DC
-</td></tr>
+<th scope="row">Power supply</th>
+<td>5V DC</td>
+</tr>
 <tr>
-<th scope="row"> Interface
-</th>
-<td> Mini-B USB, 2.54mm pitch pin header
-</td></tr>
+<th scope="row">Interface</th>
+<td>Mini-B USB, 2.54mm pitch pin header</td>
+</tr>
 <tr>
-<th scope="row"> Connectivity
-</th>
-<td> USB
-</td></tr>
+<th scope="row">Connectivity</th>
+<td>USB</td>
+</tr>
 <tr>
-<th scope="row"> Communication Protocol
-</th>
-<td> UART, Bit Bang I/O, SPI, I2C
-</td></tr>
+<th scope="row">Communication Protocol</th>
+<td>UART, Bit Bang I/O, SPI, I2C</td>
+</tr>
 <tr>
-<th scope="row"> ROHS
-</th>
-<td> YES
-</td></tr></table>
+<th scope="row">ROHS</th>
+<td>YES</td>
+</tr>
+</table>
 
 
 ##   Mechanic Dimensions

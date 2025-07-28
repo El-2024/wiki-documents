@@ -78,7 +78,7 @@ Rx、Tx、VCC、GNDピンのみがXbeeと同一です。RFbeeはXbeeと通信で
 | 送信電流                 |      | 34.5 |      | mA   |
 | 受信電流                 |      | 18.1 |      | mA   |
 | 待機電流                 |      | 5.2  |      | mA   |
-| 電源オフ電流             |      | <0.3 |      | mA   |
+| 電源オフ電流             |      | &lt;0.3 |      | mA   |
 | 動作温度                 | -50  |      | 125  | °C   |
 
 ハードウェア概要
@@ -184,7 +184,7 @@ RFExplorerは受信した電力と周波数を表示します。アンテナの�
 4. 更新中に失われた場合は、RFBeeの設定変更を再適用します。
 5. RFBeeはArduinoとして単独で動作できるため、必要に応じてファームウェアを追加または変更できます。
 
-**RFBeeファームウェア:** <http://code.google.com/p/rfbee/downloads/list>
+**RFBeeファームウェア:** [http://code.google.com/p/rfbee/downloads/list](http://code.google.com/p/rfbee/downloads/list)
 
 ## 回路図オンラインビューア
 

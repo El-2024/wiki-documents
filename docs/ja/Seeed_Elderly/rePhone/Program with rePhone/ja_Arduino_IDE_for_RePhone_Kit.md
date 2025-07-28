@@ -201,6 +201,7 @@ RePhone を**デフォルト**にリセットするには：
 
 6. 次のコードを Arduino IDE にコピーします：
 
+        ```
         // hello world for test RePhone
         // loovee@10-18-2015
         
@@ -213,6 +214,7 @@ RePhone を**デフォルト**にリセットするには：
             Serial.println("Hello World, Hello RePhone!");
             delay(100);
         }
+        ```
 
 7. **アップロード**ボタンを押してコードを RePhone にアップロードします。コードが正常にアップロードされると、**Done uploading** と表示されます。
 

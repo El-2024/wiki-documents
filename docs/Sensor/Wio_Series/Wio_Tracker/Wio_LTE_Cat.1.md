@@ -105,7 +105,7 @@ Hold the reset button for a short time(More than 10 seconds)| The hole board wil
 |                 | SMS                    | Peer to Peer Message, SMS broadcast, Text and PDU mode                          |
 |                 | Audio                  | Echo cancellation, Noise elimination                                            |
 | GNSS            | System                 | GPS/BeiDou/GLONASS/Galileo/QZSS                                                 |
-|                 | Precision              | <2.5 m CEP                                                                      |
+|                 | Precision              | &lt;2.5 m CEP                                                                      |
 | Peripheral      | Grove                  | 2 x Digital Port                                                                |
 |                 |                        | 2 x Analog Port                                                                 |
 |                 |                        | 1 x UART                                                                        |
@@ -181,29 +181,29 @@ And **EC21-A** is what we are using in WIO Tracker - LTE, which supports AT&T an
       <tr>
         <td className="tg-031e" rowSpan={2}>LTE</td>
         <td className="tg-031e">FDD-LTE</td>
-        <td className="tg-yw4l">B1/ B3/ B5/ B7/ B8/ B20</td>
-        <td className="tg-yw4l">B2/ B4/ B12</td>
-        <td className="tg-yw4l">B4/ B13</td>
-        <td className="tg-yw4l">B1/ B3/ B5/ B7/ B28</td>
+        <td className="tg-yw4l">B1／B3／B5／B7／B8／B20</td>
+        <td className="tg-yw4l">B2／B4／B12</td>
+        <td className="tg-yw4l">B4／B13</td>
+        <td className="tg-yw4l">B1／B3／B5／B7／B28</td>
       </tr>
       <tr>
         <td className="tg-031e">TDD-LTE</td>
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
       </tr>
       <tr>
         <td className="tg-031e">3G</td>
         <td className="tg-031e">WCDMA</td>
-        <td className="tg-yw4l">B1/ B5/ B8</td>
-        <td className="tg-yw4l">B2/ B4/ B5</td>
+        <td className="tg-yw4l">B1／B5／B8</td>
+        <td className="tg-yw4l">B2／B4／B5</td>
         <td className="tg-yw4l" />
-        <td className="tg-yw4l">B1/ B5</td>
+        <td className="tg-yw4l">B1／B5</td>
       </tr>
       <tr>
         <td className="tg-031e" colSpan={2}>GSM/EDGE</td>
-        <td className="tg-yw4l">B3/ B8</td>
+        <td className="tg-yw4l">B3／B8</td>
         <td className="tg-yw4l" />
         <td className="tg-yw4l" />
         <td className="tg-yw4l" />
@@ -255,43 +255,43 @@ And **EC21-A** is what we are using in WIO Tracker - LTE, which supports AT&T an
       <tr>
         <td className="tg-031e" rowSpan={2}>LTE</td>
         <td className="tg-031e">FDD-LTE</td>
-        <td className="tg-yw4l">B1/ B3/ B5/ B8/ B28</td>
-        <td className="tg-yw4l">B1/ B2①/ B3/ B4/ B5/ B7/ B8/ B28</td>
-        <td className="tg-yw4l">B1/ B3/ B5/ B7/ B8</td>
-        <td className="tg-yw4l">B1/ B3/ B8/ B18/ B19/ B26</td>
-        <td className="tg-yw4l">B1/ B3/ B5</td>
+        <td className="tg-yw4l">B1／B3／B5／B8／B28</td>
+        <td className="tg-yw4l">B1／B2①／B3／B4／B5／B7／B8／B28</td>
+        <td className="tg-yw4l">B1／B3／B5／B7／B8</td>
+        <td className="tg-yw4l">B1／B3／B8／B18／B19／B26</td>
+        <td className="tg-yw4l">B1／B3／B5</td>
       </tr>
       <tr>
         <td className="tg-031e">TDD-LTE</td>
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
         <td className="tg-yw4l">B40</td>
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
       </tr>
       <tr>
         <td className="tg-031e">3G</td>
         <td className="tg-031e">WCDMA</td>
-        <td className="tg-yw4l">B1/ B5/ B8</td>
-        <td className="tg-yw4l">B1/ B2/ B5/ B8</td>
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l">B1／B5／B8</td>
+        <td className="tg-yw4l">B1／B2／B5／B8</td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
       </tr>
       <tr>
         <td className="tg-031e" colSpan={2}>GSM/EDGE</td>
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
         <td className="tg-yw4l">Quad-band</td>
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
       </tr>
       <tr>
         <td className="tg-031e" colSpan={2}>Embedded GNSS</td>
-        <td className="tg-yw4l">N<br />			</td>
-        <td className="tg-yw4l">Optional<br />			</td>
-        <td className="tg-yw4l">N<br />			</td>
-        <td className="tg-yw4l">N<br />			</td>
+        <td className="tg-yw4l">N<br></br>			</td>
+        <td className="tg-yw4l">Optional<br></br>			</td>
+        <td className="tg-yw4l">N<br></br>			</td>
+        <td className="tg-yw4l">N<br></br>			</td>
         <td className="tg-yw4l">N</td>
       </tr>
       <tr>
@@ -314,8 +314,8 @@ And **EC21-A** is what we are using in WIO Tracker - LTE, which supports AT&T an
         <td className="tg-yw4l" colSpan={2}>Certification</td>
         <td className="tg-yw4l">RCM</td>
         <td className="tg-yw4l">RCM/ Anatel/ NCC</td>
-        <td className="tg-yw4l">KC/ SKT/KT*/ LGU+*</td>
-        <td className="tg-yw4l">JATE/ TELEC/ DOCOMO*</td>
+        <td className="tg-yw4l">KC/ SKT/KT＊/ LGU+＊</td>
+        <td className="tg-yw4l">JATE/ TELEC/ DOCOMO＊</td>
         <td className="tg-yw4l">CCC/ SRRC/ NAL</td>
       </tr>
     </tbody></table>

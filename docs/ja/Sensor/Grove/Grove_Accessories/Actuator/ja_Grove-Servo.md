@@ -34,55 +34,43 @@ Grove - サーボは、ギアとフィードバックシステムを備えたDC�
 ---
 
 <table cellSpacing={0} width="80%">
-  <tbody><tr>
-      <th scope="col"> 項目
-      </th>
-      <th scope="col"> 最小
-      </th>
-      <th scope="col"> 典型
-      </th>
-      <th scope="col"> 最大
-      </th>
-      <th scope="col"> 単位
-      </th></tr>
+  <tbody>
     <tr>
-      <th> 動作電圧
-      </th>
-      <td> 4.8
-      </td>
-      <td> 5.0
-      </td>
-      <td> 6.0
-      </td>
-      <td> V
-      </td></tr>
+      <th scope="col">項目</th>
+      <th scope="col">最小</th>
+      <th scope="col">典型</th>
+      <th scope="col">最大</th>
+      <th scope="col">単位</th>
+    </tr>
     <tr>
-      <th> トルク
-      </th><td colSpan={3}> 1.5/1.8
-      </td>
-      <td> Kg.cm
-      </td></tr>
+      <th>動作電圧</th>
+      <td>4.8</td>
+      <td>5.0</td>
+      <td>6.0</td>
+      <td>V</td>
+    </tr>
     <tr>
-      <th scope="row"> スピード
-      </th>
-      <td colSpan={3}> 0.12/0.16
-      </td>
-      <td> s/60°
-      </td></tr>
+      <th>トルク</th>
+      <td colSpan={3}>1.5/1.8</td>
+      <td>Kg.cm</td>
+    </tr>
     <tr>
-      <th scope="row"> サイズ
-      </th>
-      <td colSpan={3}> 32X11.5X24
-      </td>
-      <td> mm
-      </td></tr>
+      <th scope="row">スピード</th>
+      <td colSpan={3}>0.12/0.16</td>
+      <td>s/60°</td>
+    </tr>
     <tr>
-      <th scope="row"> 重量
-      </th>
-      <td colSpan={3}> 8.5
-      </td>
-      <td> g
-      </td></tr></tbody></table>
+      <th scope="row">サイズ</th>
+      <td colSpan={3}>32X11.5X24</td>
+      <td>mm</td>
+    </tr>
+    <tr>
+      <th scope="row">重量</th>
+      <td colSpan={3}>8.5</td>
+      <td>g</td>
+    </tr>
+  </tbody>
+</table>
 
 対応プラットフォーム
 -------------------

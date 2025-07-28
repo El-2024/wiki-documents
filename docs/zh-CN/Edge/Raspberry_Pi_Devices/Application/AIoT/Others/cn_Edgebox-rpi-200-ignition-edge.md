@@ -94,7 +94,7 @@ chmod +x ./uninstall-ignition-edge.sh
 
 ## 第一次启动 Ignition Edge Gateway
 
-安装完成后，您需要启动服务。您可以选择[设置网关在启动时自动启动](#launch-ignition-edge-gateway-on-boot)并重启设备，或者选择手动启动服务。
+安装完成后，您需要启动服务。您可以选择设置网关在启动时自动启动并重启设备，或者选择手动启动服务。
 
 ```bash
 /opt/ignitionedge/ignition.sh start

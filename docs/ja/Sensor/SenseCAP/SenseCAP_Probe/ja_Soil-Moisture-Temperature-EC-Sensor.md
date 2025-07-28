@@ -74,10 +74,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </tr>
 <tr>
 <td class="tg-vkfu">消費電流</td>
-<td class="tg-vkfu">
-<p>6mA@24V DC</p>
-<p>(静止消費電力)</p>
-</td>
+<td class="tg-vkfu">6mA@24V DC<br/>(静止消費電力)</td>
 </tr>
 <tr>
 <td class="tg-vkfu">動作温度</td>
@@ -131,24 +128,15 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <tr><th class="tg-luhj" colspan="2">土壌水分</th></tr>
 <tr>
 <td class="tg-vkfu">範囲</td>
-<td class="tg-vkfu">
-<p>完全に乾燥した状態から完全に飽和した状態まで</p>
-<p>(飽和度の0%から100%まで)</p>
-</td>
+<td class="tg-vkfu">完全に乾燥した状態から完全に飽和した状態まで<br/>(飽和度の0%から100%まで)</td>
 </tr>
 <tr>
 <td class="tg-vkfu">精度</td>
-<td class="tg-vkfu">
-<p>±2% (0~50%)</p>
-<p>±3% (50~100%)</p>
-</td>
+<td class="tg-vkfu">±2% (0~50%)<br/>±3% (50~100%)</td>
 </tr>
 <tr>
 <td class="tg-vkfu">分解能</td>
-<td class="tg-vkfu">
-<p>0.03% (0~50%)</p>
-<p>1% (50~100%)</p>
-</td>
+<td class="tg-vkfu">0.03% (0~50%)<br/>1% (50~100%)</td>
 </tr>
 </tbody>
 </table>
@@ -169,10 +157,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </tr>
 <tr>
 <td class="tg-vkfu">温度補正</td>
-<td class="tg-vkfu">
-<p>内蔵温度補正センサー</p>
-<p>範囲: 0-50°C</p>
-</td>
+<td class="tg-vkfu">内蔵温度補正センサー<br/>範囲: 0-50°C</td>
 </tr>
 </tbody>
 </table>

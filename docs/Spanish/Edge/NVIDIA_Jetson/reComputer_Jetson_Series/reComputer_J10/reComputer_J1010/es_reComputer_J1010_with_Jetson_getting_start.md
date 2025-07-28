@@ -68,50 +68,43 @@ Nota: Recibimos consultas de clientes que necesitan más almacenamiento que el e
     </tr>
     <tr>
       <td>Decodificador de Video</td>
-      <td colspan='2' align='center'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60 (H.265 & H.264)
-      </td>
+      <td colspan='2' align='center'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60 (H.265 & H.264)</td>
       <td>4Kp60 | 2x 4Kp30 | 8x 1080p30 | 18x 720p30 (H.264/H.265)</td>
     </tr>
     <tr>
       <td>Gigabit Ethernet</td>
-      <td colspan='3' align='center'>1*Conector RJ45 Gigabit Ethernet (10/100/1000)</td>
+      <td colspan='3' align='center'>1×Conector RJ45 Gigabit Ethernet (10/100/1000)</td>
     </tr>
     <tr>
       <td>USB</td>
-      <td>1 * USB 3.0 Tipo A; 
-2 * USB 2.0 Tipo A;
-1 * USB Tipo C para modo dispositivo;
-1 * USB Tipo C para alimentación de 5V</td>
-      <td>4 * USB 3.0 Tipo-A ；
-1 * Puerto Micro-USB para modo dispositivo;</td>
-      <td>4 * USB 3.0 Tipo-A; 
-1 * Puerto Micro-USB para alimentación 5V para modo dispositivo</td>
+      <td>1 × USB 3.0 Tipo A; 2 × USB 2.0 Tipo A; 1 × USB Tipo C para modo dispositivo; 1 × USB Tipo C para alimentación de 5V</td>
+      <td>4 × USB 3.0 Tipo-A ；1 × Puerto Micro-USB para modo dispositivo;</td>
+      <td>4 × USB 3.0 Tipo-A; 1 × Puerto Micro-USB para alimentación 5V para modo dispositivo</td>
     </tr>
     <tr>
       <td>Conexión para cámara CSI</td>
-      <td colspan='3' align='center'>2*CSI Camera (15 pos, 1mm pitch, MIPI CSI-2 )</td>
+      <td colspan='3' align='center'>2×CSI Camera (15 pos, 1mm pitch, MIPI CSI-2 )</td>
     </tr>
     <tr>
       <td>Pantalla</td>
-      <td>1*HDMI Tipo-A</td>
-      <td colspan='2' align='center'>1*HDMI Tipo-A; 
-1*DP</td>
+      <td>1×HDMI Tipo-A</td>
+      <td colspan='2' align='center'>1×HDMI Tipo-A; 1×DP</td>
     </tr>
     <tr>
       <td>Ventilador</td>
-      <td>1* Conector de ventilador (5V PWM)</td>
-      <td colspan='2' align='center'>1* Ventilador (5V PWM)</td>
+      <td>1× Conector de ventilador (5V PWM)</td>
+      <td colspan='2' align='center'>1× Ventilador (5V PWM)</td>
     </tr>
     <tr>
       <td>M.2 KEY E</td>
-      <td>1*M.2 Key E</td>
-      <td>1*M.2 Key E (Disahabilitado)</td>
-      <td>1*M.2 Key E</td>
+      <td>1×M.2 Key E</td>
+      <td>1×M.2 Key E (Disahabilitado)</td>
+      <td>1×M.2 Key E</td>
     </tr>
     <tr>
       <td>M.2 KEY M</td>
       <td>-</td>
-      <td>1*M.2 Key M</td>
+      <td>1×M.2 Key M</td>
       <td>-</td>
     </tr>
     <tr>
@@ -121,14 +114,13 @@ Nota: Recibimos consultas de clientes que necesitan más almacenamiento que el e
     </tr>
     <tr>
       <td>Puerto multifuncional</td>
-      <td colspan='3' align='center'>1* 40-Pin header</td>
+      <td colspan='3' align='center'>1× 40-Pin header</td>
     </tr>
     <tr>
       <td>Fuente de alimentación</td>
       <td>USB-Tipo C 5V⎓3A</td>
       <td>Jack DC 12V/2A</td>
-      <td>Jack DC 5V⎓4A；
-Micro-USB 5V⎓2A</td>
+      <td>Jack DC 5V⎓4A；Micro-USB 5V⎓2A</td>
     </tr>
     <tr>
       <td>Mecánica</td>
@@ -141,6 +133,6 @@ Micro-USB 5V⎓2A</td>
 ## Flashear JetPack a la reComputer J1010
 
 :::info
-Revisa esta [wiki](/reComputer_J1010_J101_Flash_Jetpack) parao obtener más información por que la J1010 utiliza la Carrier Board J101.
+Revisa esta [wiki](/es/reComputer_J1010_J101_Flash_Jetpack) parao obtener más información por que la J1010 utiliza la Carrier Board J101.
 :::
 

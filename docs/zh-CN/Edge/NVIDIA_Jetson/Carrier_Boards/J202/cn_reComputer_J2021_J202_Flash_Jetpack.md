@@ -138,7 +138,7 @@ reComputer J202 的设计和功能几乎与 NVIDIA® Jetson Xavier NX™ 扩展�
 以下内容将演示如何将 JetPack 4.6.1 系统刷写到 J2021 上。您可以参考此过程将所需的 JetPack 版本刷写到其他设备上。
 
 :::info
-请参考 [此处](https://developer.nvidia.com/embedded/jetson-linux-archive) 确定不同 [Jetson 模块](#supported-module) 支持的系统版本。
+请参考 [此处](https://developer.nvidia.com/embedded/jetson-linux-archive) 确定不同 Jetson 模块支持的系统版本。
 :::
 
 ### 前置条件
@@ -221,8 +221,8 @@ reComputer J202 的设计和功能几乎与 NVIDIA® Jetson Xavier NX™ 扩展�
 
 有两种可选方式将 JetPack OS 刷写到 reComputer J2021。对于初次接触 NVIDIA Jetson 的用户，我们强烈推荐使用 NVIDIA SDK Manager：
 
-- [通过 NVIDIA SDK Manager 刷写 JetPack OS](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [通过命令行刷写 JetPack OS](#flashing-to-emmc-with-command-line)
+- 通过 NVIDIA SDK Manager 刷写 JetPack OS
+- 通过命令行刷写 JetPack OS
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

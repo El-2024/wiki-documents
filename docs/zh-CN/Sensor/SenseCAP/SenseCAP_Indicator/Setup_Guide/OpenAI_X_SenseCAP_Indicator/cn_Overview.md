@@ -22,8 +22,7 @@ sidebar_position: 1
 <iframe class="youtube-video-r" src="https://www.youtube.com/embed/xUX47UnT7xk" title="YouTube 视频播放器" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <div class="button-container">
-    <a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">
-            立即获取 🖱️</a>
+    <a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">立即获取 🖱️</a>
 </div>
 
 SenseCAP 指示器是一款强大的工具，通过 API 集成利用了 OpenAI 的 ChatGPT 和 DALL·E 模型的能力。由人工智能领域知名的 OpenAI 开发，SenseCAP 指示器让用户能够在各种场景中体验 AI 的迷人潜力。

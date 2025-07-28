@@ -208,28 +208,12 @@ Rainbowduinoファームウェアを開き、**正しいボードを選択**（�
 
 **注意:** Rainbowduino v1ボードを所有している場合は、「Arduino Diecimila, Duemilanove, or Nano w/ ATmega168」を選択する必要があります！
 
-<table>
-<tr>
-<th>Arduino</th>
-<th>Rainbowduino</th>
-</tr>
-<tr>
-<td>RESET</td>
-<td>DTR</td>
-</tr>
-<tr>
-<td>GND</td>
-<td>GND</td>
-</tr>
-<tr>
-<td>RX</td>
-<td>RX</td>
-</tr>
-<tr>
-<td>TX</td>
-<td>TX</td>
-</tr>
-</table>
+| Arduino | Rainbowduino |
+|---|---|
+| RESET | DTR |
+| GND | GND |
+| RX | RX |
+| TX | TX |
 
 3. UartSBを使用してファームウェアをアップロードする
 
@@ -260,43 +244,14 @@ STEP 1: Buspirateを使用するには、新しいバージョンのavrdudeが�
 
 STEP 2: BuspirateをRainbowduinoのISPコネクタに以下のように接続します：
 
-<table>
-<tr>
-<th>Buspirate</th>
-<th>ISP</th>
-<th>ISPピン</th>
-</tr>
-<tr>
-<td>GND</td>
-<td>GND</td>
-<td>6</td>
-</tr>
-<tr>
-<td>+5V</td>
-<td>Vcc</td>
-<td>2</td>
-</tr>
-<tr>
-<td>CS</td>
-<td>RESET</td>
-<td>5</td>
-</tr>
-<tr>
-<td>MOSI</td>
-<td>MOSI</td>
-<td>4</td>
-</tr>
-<tr>
-<td>MISO</td>
-<td>MISO</td>
-<td>1</td>
-</tr>
-<tr>
-<td>SCL/CLK</td>
-<td>SCK</td>
-<td>3</td>
-</tr>
-</table>
+| Buspirate | ISP | ISPピン |
+|---|---|---|
+| GND | GND | 6 |
+| +5V | Vcc | 2 |
+| CS | RESET | 5 |
+| MOSI | MOSI | 4 |
+| MISO | MISO | 1 |
+| SCL/CLK | SCK | 3 |
 
 STEP 3: 正しいブートローダーを見つけます（tiny optibootファームウェアを使用しています）。このファイルを新しくコンパイルしたavrdudeディレクトリにコピーします。
 
@@ -473,14 +428,8 @@ NeorainbowduinoファームウェアはI2C経由でフルフレーム（92バイ
 
 **理由:** シリアルバッファサイズを32バイトから98バイトに増加
 
-<table>
-<tr>
-<th>元のファイル</th>
-<th>パッチ後のファイル</th>
-<caption></caption>
-<td width="300px"></td>
-</tr>
-</table>
+| 元のファイル | パッチ後のファイル |
+|---|---|
 
 <pre>#define BUFFER_LENGTH 32</pre>
 
@@ -505,32 +454,12 @@ RainbowduinoとArduinoの接続は以下のようになります：
 
 外部電源を使用していますが、Arduinoの5Vを使用することも可能です。
 
-<table>
-<tr>
-<th> Arduino
-</th>
-<th> Rainbowduino
-</th></tr>
-<tr>
-<td width="150px">RESET
-</td>
-<td width="150px">DTR
-</td></tr>
-<tr>
-<td>GND
-</td>
-<td>GND
-</td></tr>
-<tr>
-<td>Analog IN 4
-</td>
-<td>SDA
-</td></tr>
-<tr>
-<td>Analog IN 5
-</td>
-<td>SDL
-</td></tr></table>
+| Arduino | Rainbowduino |
+|---|---|
+| RESET | DTR |
+| GND | GND |
+| Analog IN 4 | SDA |
+| Analog IN 5 | SDL |
 
 <big>Processingライブラリのインストール</big>
 
@@ -659,70 +588,16 @@ I2Cを使用するように簡単に変更可能。変更が必要なのは1つ�
 
 ![](https://files.seeedstudio.com/wiki/Rainbowduino_LED_driver_platform-ATmega328/img/RAINBOW-Schema.png)
 
-<table>
-<tr>
-<th> PORTD
-</th>
-<th> PORTB
-</th>
-<th> PORTC
-</th></tr>
-<tr>
-<td width="150px">pin02 / PD0 / RXD
-</td>
-<td width="150px">pin14 / PB0 / INT0
-</td>
-<td width="150px">pin23 / PC0 / SDI
-</td></tr>
-<tr>
-<td>pin03 / PD1 / TXD
-</td>
-<td>pin15 / PB1 / INT1
-</td>
-<td>pin24 / PC1 / CLK
-</td></tr>
-<tr>
-<td>pin04 / PD2 / INT0
-</td>
-<td>pin16 / PB2 / INT2
-</td>
-<td>pin25 / PC2 / LE
-</td></tr>
-<tr>
-<td>pin05 / PD3 / INT19
-</td>
-<td>pin17 / PB3 / INT3
-</td>
-<td>pin26 / PC3 / OE
-</td></tr>
-<tr>
-<td>pin06 / PD4 / INT20
-</td>
-<td>pin18 / PB4 / INT4
-</td>
-<td>pin27 / PC4 / SDA
-</td></tr>
-<tr>
-<td>pin11 / PD5 / INT21
-</td>
-<td>pin19 / PB5 / INT5/SCK
-</td>
-<td>pin28 / PC5 / SDL
-</td></tr>
-<tr>
-<td>pin12 / PD6 / INT22
-</td>
-<td>
-</td>
-<td>
-</td></tr>
-<tr>
-<td>pin13 / PD7 / INT23
-</td>
-<td>
-</td>
-<td>
-</td></tr></table>
+| PORTD | PORTB | PORTC |
+|---|---|---|
+| pin02 / PD0 / RXD | pin14 / PB0 / INT0 | pin23 / PC0 / SDI |
+| pin03 / PD1 / TXD | pin15 / PB1 / INT1 | pin24 / PC1 / CLK |
+| pin04 / PD2 / INT0 | pin16 / PB2 / INT2 | pin25 / PC2 / LE |
+| pin05 / PD3 / INT19 | pin17 / PB3 / INT3 | pin26 / PC3 / OE |
+| pin06 / PD4 / INT20 | pin18 / PB4 / INT4 | pin27 / PC4 / SDA |
+| pin11 / PD5 / INT21 | pin19 / PB5 / INT5/SCK | pin28 / PC5 / SDL |
+| pin12 / PD6 / INT22 | | |
+| pin13 / PD7 / INT23 | | |
 
 **PORTB** はArduinoデジタルピン8から13にマッピングされます。上位2ビット（6 & 7）はクリスタルピンにマッピングされており、使用できません。
 
@@ -736,42 +611,14 @@ I2Cを使用するように簡単に変更可能。変更が必要なのは1つ�
 
 ![](https://files.seeedstudio.com/wiki/Rainbowduino_LED_driver_platform-ATmega328/img/RAINBOW-Mbi-schema.png)
 
-<table>
-<tr>
-<th> 名前
-</th>
-<th> 説明
-</th></tr>
-<tr>
-<td width="50px">OE
-</td>
-<td width="950px">出力イネーブル。低（アクティブ）時に出力ドライバが有効化され、高時にはすべての出力ドライバが無効化されます（ブランク状態）。
-</td></tr>
-<tr>
-<td>LE
-</td>
-<td>データストローブ入力端子。LEが高のときにシリアルデータがそれぞれのラッチに転送され、LEが低になるとデータがラッチされます。
-</td></tr>
-<tr>
-<td>SDI
-</td>
-<td>シフトレジスタへのシリアルデータ入力。
-</td></tr>
-<tr>
-<td>SDO
-</td>
-<td>次のドライバICのSDIに接続されるシリアルデータ出力。
-</td></tr>
-<tr>
-<td>R-EXT
-</td>
-<td>すべての出力チャネルの出力電流を設定するために外部抵抗を接続する入力端子。
-</td></tr>
-<tr>
-<td>CLK
-</td>
-<td>データシフトのためのクロック入力端子（立ち上がりエッジで動作）。
-</td></tr></table>
+| 名前 | 説明 |
+|---|---|
+| OE | 出力イネーブル。低（アクティブ）時に出力ドライバが有効化され、高時にはすべての出力ドライバが無効化されます（ブランク状態）。 |
+| LE | データストローブ入力端子。LEが高のときにシリアルデータがそれぞれのラッチに転送され、LEが低になるとデータがラッチされます。 |
+| SDI | シフトレジスタへのシリアルデータ入力。 |
+| SDO | 次のドライバICのSDIに接続されるシリアルデータ出力。 |
+| R-EXT | すべての出力チャネルの出力電流を設定するために外部抵抗を接続する入力端子。 |
+| CLK | データシフトのためのクロック入力端子（立ち上がりエッジで動作）。 |
 
 <big>スーパーソースドライバ</big>
 
@@ -788,28 +635,10 @@ LEDマトリックスにフルフレームを表示するには、Rainbowduino�
 
 標準ファームウェア（およびほとんどのサードパーティ製ファームウェア）は12ビットの色解像度をサポートしています。これを増加させることが可能です：
 
-<table>
-<tr>
-<th> 色解像度
-</th>
-<th> ペイロード
-</th>
-<th> 明るさレベル
-</th></tr>
-<tr>
-<td width="250px">12ビット（各色4ビット）、4096色
-</td>
-<td width="250px">96バイト（12ビット*64=768ビット）
-</td>
-<td>16
-</td></tr>
-<tr>
-<td>15ビット（各色5ビット）、32768色
-</td>
-<td>120バイト（15ビット*64=960ビット）
-</td>
-<td>32
-</td></tr></table>
+| 色解像度 | ペイロード | 明るさレベル |
+|---|---|---|
+| 12ビット（各色4ビット）、4096色 | 96バイト（12ビット*64=768ビット） | 16 |
+| 15ビット（各色5ビット）、32768色 | 120バイト（15ビット*64=960ビット） | 32 |
 
 各色4ビットを使用する利点はデータストレージにあります。1バイトで2つの色値を保持できるため、バイトバッファから色を簡単に取得できます。各色5ビットを使用する場合、より多くのCPUパワーまたはバッファスペースが必要になります（3つの色値に2バイトを使用 - 各色で1ビットを無駄にする）。
 

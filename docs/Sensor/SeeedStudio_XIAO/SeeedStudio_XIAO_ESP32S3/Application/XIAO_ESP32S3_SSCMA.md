@@ -195,7 +195,7 @@ After uploading, you'll need to annotate the images by labeling the hand gesture
 Roboflow offers three different ways of labelling images: Auto Label, Roboflow Labeling and Manual Labeling.
 
 - [**Auto Label**](https://blog.roboflow.com/yolo-world-prompting-tips/): Use a large generalized model to automatically label images.
-- **Roboflow Labeling**: Work with a professional team of human labelers. No minimum volumes. No upfront commitments. Bounding Box annotations start at $0.04 and Polygon annotations start at $0.08.
+- **Roboflow Labeling**: Work with a professional team of human labelers. No minimum volumes. No upfront commitments. Bounding Box annotations start at \$0.04 and Polygon annotations start at \$0.08.
 - **Manual Labeling**: You and your team label your own images.
 
 The following describes the most commonly used method of manual labelling.

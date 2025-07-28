@@ -35,9 +35,7 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 
 <html>
     <table>
-		<tr><td colspan="4" bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP 産業用センサー</strong></font>
-        </td>
-        </tr>
+		<tr><td colspan="4" bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP 産業用センサー</strong></font></td></tr>
         <tr>
             <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div>
             </td>
@@ -49,14 +47,10 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             </td>
         </tr>
         <tr>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html"  target="_blank"><strong>S2100 <br /> データロガー</strong></a>
-            </td>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html"  target="_blank"><strong>S2101 <br /> 空気温度 & 湿度</strong></a>
-            </td>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html"  target="_blank"><strong>S2102 <br /> 光</strong></a>
-            </td>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html"  target="_blank"><strong>S2103 <br /> 空気温度 & 湿度 & CO2</strong></a>
-            </td>
+            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html"  target="_blank"><strong>S2100 <br /> データロガー</strong></a></td>
+            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html"  target="_blank"><strong>S2101 <br /> 空気温度 & 湿度</strong></a></td>
+            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html"  target="_blank"><strong>S2102 <br /> 光</strong></a></td>
+            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html"  target="_blank"><strong>S2103 <br /> 空気温度 & 湿度 & CO2</strong></a></td>
         </tr>
         <tr>
             <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2104-LoRaWAN-Soil-Temperature-and-Moisture-Sensor-p-5357.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2104.png" /></a></div>
@@ -85,8 +79,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/ja/K1100-quickstart/" target="_blank">SenseCAP - K1100 を使用したクイックスタート</a>
-      </li></ul>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100-quickstart/" target="_blank">SenseCAP - K1100 を使用したクイックスタート</a></li>
+    </ul>
   </div>
   <h3>
     <span className="headline" id="Microsoft Azure IoT">Microsoft Azure IoT</span>
@@ -125,8 +119,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
       <li><a href="https://sensecap-docs.seeed.cc/introduction.html" target="_blank">SenseCAP ドキュメントセンター</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/" target="_blank">Node-RED を使用した SenseCAP コンソールのクイックスタート</a>
-      </li></ul>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/" target="_blank">Node-RED を使用した SenseCAP コンソールのクイックスタート</a></li>
+    </ul>
     <ul>
       <li><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_Azure_IoT_Central/" target="_blank">Node-RED を使用して SenseCAP を Azure IoT Central に接続する</a></li>
     </ul>
@@ -309,7 +303,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 <html>
     <table>
         <tr>
-            <td align="left">このチュートリアルでは、まず<strong>クイックスタートガイド</strong>セクションを通じて始めていただきます。このキットの卓越したデータプレゼンテーションと、IoT機能の簡便さを学びましょう。この章では、オープンソースプロジェクトを使用して、データ収集とデータ処理の楽しさを最短時間で体験できます。また、収集したデータをWiFiやLoRa®を通じてさまざまなプラットフォームに転送することができます。<br /><br /><a href="https://wiki.seeedstudio.com/ja/K1100-quickstart/">章にジャンプ &gt;</a>
+            <td align="left">
+                このチュートリアルでは、まず<strong>クイックスタートガイド</strong>セクションを通じて始めていただきます。このキットの卓越したデータプレゼンテーションと、IoT機能の簡便さを学びましょう。この章では、オープンソースプロジェクトを使用して、データ収集とデータ処理の楽しさを最短時間で体験できます。また、収集したデータをWiFiやLoRa®を通じてさまざまなプラットフォームに転送することができます。<br /><br /><a href="https://wiki.seeedstudio.com/ja/K1100-quickstart/">章にジャンプ &gt;</a>
             </td>
             <td>
                 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/K1100_overview/1.png" /></div>
@@ -382,7 +377,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 <table>
     <tbody>
         <tr>
-            <td colspan={2}>Microsoft Azure IoTは、数十億のIoT資産を接続、監視、制御するMicrosoft管理のクラウドサービスのコレクションです。これには、デバイスや機器のセキュリティおよびオペレーティングシステム、データおよび分析が含まれ、企業がIoTアプリケーションを構築、展開、管理するのを支援します。
+            <td colspan={2}>
+                Microsoft Azure IoTは、数十億のIoT資産を接続、監視、制御するMicrosoft管理のクラウドサービスのコレクションです。これには、デバイスや機器のセキュリティおよびオペレーティングシステム、データおよび分析が含まれ、企業がIoTアプリケーションを構築、展開、管理するのを支援します。
             </td>
             <td>
                 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/K1100/microsoft-azure.png" /></div>
@@ -458,7 +454,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 <table>
     <tbody>
         <tr>
-            <td colSpan={3}>ハードウェア/ソフトウェアに興味があるエンジニアや、業界で長年の経験を持つ方は、<strong>Arduino</strong> セクションから発見の旅を始めることができます。クラウド上のコンテンツについて心配する必要はありません。わかりやすいチュートリアルにより、最小限の時間でさまざまな IoT プロジェクトを完成させることができます。
+            <td colSpan={3}>
+                ハードウェア/ソフトウェアに興味があるエンジニアや、業界で長年の経験を持つ方は、<strong>Arduino</strong> セクションから発見の旅を始めることができます。クラウド上のコンテンツについて心配する必要はありません。わかりやすいチュートリアルにより、最小限の時間でさまざまな IoT プロジェクトを完成させることができます。
             </td>
         </tr>
         <tr>
@@ -516,7 +513,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 <table>
     <tbody>
         <tr>
-            <td colSpan={2}>センサー値をクラウドプラットフォームに送信するには、ネットワークの選択が必要不可欠です。現在、LoRa® で最も広範囲をカバーする2つのプラットフォームを提供しています。ここでは Helium セクションを紹介します。
+            <td colSpan={2}>
+                センサー値をクラウドプラットフォームに送信するには、ネットワークの選択が必要不可欠です。現在、LoRa® で最も広範囲をカバーする2つのプラットフォームを提供しています。ここでは Helium セクションを紹介します。
             </td>
             <td rowSpan={2}>
                 <div align="center"><img width={550} src="https://files.seeedstudio.com/wiki/K1100_overview/3.png" /></div>
@@ -575,7 +573,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 <table>
     <tbody>
         <tr>
-            <td colSpan={2}>センサー値をクラウドプラットフォームに送信するには、ネットワークの選択が必要不可欠です。本日は、LoRa®で最も広いカバレッジを持つ2つのプラットフォームを提供しています。ここでは The Things Network セクション（以下、TTN と呼びます）をご紹介します。
+            <td colSpan={2}>
+                センサー値をクラウドプラットフォームに送信するには、ネットワークの選択が必要不可欠です。本日は、LoRa®で最も広いカバレッジを持つ2つのプラットフォームを提供しています。ここでは The Things Network セクション（以下、TTN と呼びます）をご紹介します。
             </td>
             <td>
                 <div align="center"><img width={450} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-TTN/TTN.png" /></div>
@@ -606,7 +605,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 <table>
     <tbody>
         <tr>
-            <td colSpan={3}>もし LoRaWAN® が利用できない環境にいる場合でも、Wio Terminal の WiFi 機能を使用してポイントツーポイント通信を完了することができます。
+            <td colSpan={3}>
+                もし LoRaWAN® が利用できない環境にいる場合でも、Wio Terminal の WiFi 機能を使用してポイントツーポイント通信を完了することができます。
             </td>
         </tr>
         <tr>
@@ -648,8 +648,9 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 
 <table>
     <tbody><tr>
-        <td colSpan={2}>もちろん、TinyML に興味があり、機械学習プロジェクトやコンテンツを実装したい場合は、TinyML セクションを参照してください。
-      </td>
+        <td colSpan={2}>
+            もちろん、TinyML に興味があり、機械学習プロジェクトやコンテンツを実装したい場合は、TinyML セクションを参照してください。
+        </td>
       <td>
         <div align="center"><img width="{900}" src="https://files.seeedstudio.com/wiki/K1100_overview/tinyml.png" /></div>
       </td>
@@ -675,7 +676,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 
 <table>
   <tbody><tr>
-      <td>上記の各プラットフォームの基本チュートリアルに加えて、このキットの使用例を豊富に用意しています。ここで、このキットの価値が無限であることをご確認いただけます！
+      <td>
+          上記の各プラットフォームの基本チュートリアルに加えて、このキットの使用例を豊富に用意しています。ここで、このキットの価値が無限であることをご確認いただけます！
       </td>
       <td>
         <div align="center"><img width={350} src="https://files.seeedstudio.com/wiki/K1100_overview/project.png" /></div>

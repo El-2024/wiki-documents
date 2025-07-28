@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove--5A_DC-AC_Current_Sensor-ACS70331/img/101020615-preview.png" /></div>
 
-Grove - ±5A DC/AC電流センサー (ACS70331) は、ACS70331をベースにした高精度のDC/AC電流センサーです。ACS70331EESATR-005B3は、<5Aの電流検知用途向けのAllegro社製高感度電流センサーICです。このセンサーは、従来のホール効果センサーよりも25倍感度が高い巨大磁気抵抗（GMR）技術を採用しており、低抵抗の統合型一次導体を流れる電流によって生成される磁場を検知します。
+Grove - ±5A DC/AC電流センサー (ACS70331) は、ACS70331をベースにした高精度のDC/AC電流センサーです。ACS70331EESATR-005B3は、&lt;5Aの電流検知用途向けのAllegro社製高感度電流センサーICです。このセンサーは、従来のホール効果センサーよりも25倍感度が高い巨大磁気抵抗（GMR）技術を採用しており、低抵抗の統合型一次導体を流れる電流によって生成される磁場を検知します。
 
 Grove - ±5A DC/AC電流センサー (ACS70331) は、DC電流とAC電流の両方を最大5Aまで測定でき、基本感度は200mV/Aです。
 
@@ -29,7 +29,7 @@ Grove - ±5A DC/AC電流センサー (ACS70331) は、DC電流とAC電流の両�
 ## 特徴
 
 - DCおよびAC負荷に対応
-- 1MHz帯域幅、応答時間<550ns
+- 1MHz帯域幅、応答時間&lt;550ns
 - 低ノイズ：1MHzで8mA(rms)
 - 1.1mΩの一次導体抵抗により低電力損失を実現
 - 高DC PSRRにより、低精度の電源やバッテリー（3～4.5V動作）での使用が可能
@@ -42,7 +42,7 @@ Grove - ±5A DC/AC電流センサー (ACS70331) は、DC電流とAC電流の両�
 | 電源電圧 | 3.3V / 5V |
 | 動作環境温度 | -40 – 85℃ |
 | 保管温度 | -65°C – 125°C |
-| 動作電圧 | <100V |
+| 動作電圧 | &lt;100V |
 | 電流検知範囲 | 0 – 5A |
 | 感度 | 200mV/A (Typ.) |
 | 出力インターフェース | Groveアナログ |
@@ -105,7 +105,7 @@ ACS70331 QFNパッケージの内部構造は図1に示されています。ダ�
 
 ## はじめに
 
-:::cautionDanger
+:::caution
 テスト中にモジュールに人間の体が触れることは禁止されています。そうしないと感電の危険があります。
 :::
 
@@ -285,7 +285,7 @@ float Vref = 595.70;
 
 #### AC デモ
 
-:::cautionDanger
+:::caution
 AC 電源を使用する場合は、安全に注意し、感電を避けてください。
 :::
 
@@ -324,7 +324,7 @@ void loop()
 {
 
   // 500 回値を読み取る:
-  for(int i=0;i<20;i++)
+  for(int i=0;i&lt;20;i++)
   {
 
   for (int i = 0; i < averageValue; i++)

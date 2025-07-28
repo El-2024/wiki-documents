@@ -58,13 +58,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 上級
 
-1. まず、[インストールガイド](/ModelAssistant_Introduce_Installation)を参照して、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)の実行環境を構成してください。
+1. まず、[インストールガイド](/ja/ModelAssistant_Introduce_Installation)を参照して、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)の実行環境を構成してください。
 
 2. 次に、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)の基本的な使用方法に慣れてください：
 
    - **モデルのトレーニング**については、[モデルトレーニング](/ModelAssistant_Tutorials_Training_Overview)を参照して、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)を使用してモデルをトレーニングする方法を学んでください。例からモデルを選択してトレーニングすることをお勧めします。
 
-   - **モデルのエクスポート**。モデルのトレーニングを完了した後、エッジコンピューティングデバイスにデプロイするためには、まずモデルをエクスポートする必要があります。モデルのエクスポートに関するチュートリアルについては、[モデルエクスポート](/ModelAssistant_Tutorials_Export_Overview)を参照してください。
+   - **モデルのエクスポート**。モデルのトレーニングを完了した後、エッジコンピューティングデバイスにデプロイするためには、まずモデルをエクスポートする必要があります。モデルのエクスポートに関するチュートリアルについては、[モデルエクスポート](/ja/ModelAssistant_Tutorials_Export_Overview)を参照してください。
 
    - **モデルの検証**。モデルの検証は、トレーニング後またはエクスポート後に実行できます。前者はニューラルネットワークとトレーニング結果の正確性を検証し、後者は主にエクスポートされたモデルの正確性を検証して、後のエッジコンピューティングデバイスでのデプロイとデバッグを容易にします。モデル検証のいくつかの方法は、上記の2つのステップのドキュメントに記載されています。
 

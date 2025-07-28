@@ -30,35 +30,28 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 仕様
 
-<table  cellspacing="0" width="80%">
+<table>
 <tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 標準値
-</th>
-<th scope="col"> 単位
-</th></tr>
+<th>項目</th>
+<th>標準値</th>
+<th>単位</th>
+</tr>
 <tr>
-<th scope="row"> 長さ
-</th>
-<td> 126.8
-</td>
-<td> mm
-</td></tr>
+<td>長さ</td>
+<td>126.8</td>
+<td>mm</td>
+</tr>
 <tr>
-<th scope="row"> 幅
-</th>
-<td> 89.2
-</td>
-<td> mm
-</td></tr>
+<td>幅</td>
+<td>89.2</td>
+<td>mm</td>
+</tr>
 <tr>
-<th scope="row"> 高さ
-</th>
-<td> 30.0
-</td>
-<td> mm
-</td></tr></table>
+<td>高さ</td>
+<td>30.0</td>
+<td>mm</td>
+</tr>
+</table>
 
 ## 使用方法
 

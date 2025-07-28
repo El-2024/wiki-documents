@@ -19,8 +19,8 @@ En esta wiki, te mostraremos cómo flashear Jetpack OS en la reComputer J1010. p
 
 Podemos usar el software para Linux **NVIDIA SDK Manager** o podemos usar directamente el **paquete de controladores NVIDIA Linux** a través de la línea de comandos de Linux para actualizar JetPack OS en la reComputer J1010. Para los principiantes en NVIDIA Jetson, recomendamos utilizar NVIDIA SDK Manager.
 
-- [Opción 1 - Flashear JetPack OS usando NVIDIA SDK Manage](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [Opción 2 - Flashear JetPack OS usando la línea de comandos](#flashing-jetpack-os-via-command-line)
+- Opción 1 - Flashear JetPack OS usando NVIDIA SDK Manage
+- Opción 2 - Flashear JetPack OS usando la línea de comandos
 
 Todavía hay algunos preparativos que necesitamos primero:
 

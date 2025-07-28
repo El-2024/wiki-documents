@@ -48,7 +48,7 @@ Aquí estamos recopilando imágenes utilizando el módulo de cámara Sense y gua
 
 #### 1.1.1 Conectar la Cámara
 
-Si estás comprando el XIAO ESP32S3 Sense, también deberías incluir una placa de expansión. Esta placa de expansión tiene un sensor de cámara OV2640 de 1600\*1200, ranura para tarjeta SD integrada y micrófono digital.
+Si estás comprando el XIAO ESP32S3 Sense, también deberías incluir una placa de expansión. Esta placa de expansión tiene un sensor de cámara OV2640 de 1600×1200, ranura para tarjeta SD integrada y micrófono digital.
 
 Al instalar la placa de expansión con el XIAO ESP32S3 Sense, podrás usar las funciones de la placa de expansión.
 
@@ -68,8 +68,9 @@ Ahora tenemos una nueva cámara potente totalmente compatible con el XIAO ESP32S
 
 - **Paso 1.** Descarga e instala la versión estable de Arduino IDE según tu sistema operativo.
 
-<div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Descarga la IDE de Arduino</font></span></strong>
+<div className="download_arduino_container" style={{textAlign: 'center'}}>
+    <a className="download_arduino_item" href="https://www.arduino.cc/en/software">
+        <strong><span><font color={'FFFFFF'} size={"4"}>Descarga la IDE de Arduino</font></span></strong>
     </a>
 </div>
 
@@ -77,12 +78,12 @@ Ahora tenemos una nueva cámara potente totalmente compatible con el XIAO ESP32S
 
 - **Paso 1.** Agrega el paquete de la placa ESP32 a tu Arduino IDE.
 
-  Dirígete a **Archivo > Preferencias** y completa el campo **"URLs adicionales del Administrador de Placas"** con la siguiente URL:
-  _<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json>_
+  Dirígete a **Archivo → Preferencias** y completa el campo **"URLs adicionales del Administrador de Placas"** con la siguiente URL:
+  _&lt;https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json&gt;_
 
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/6.png" style={{width:800, height:'auto'}}/></div>
 
-  Dirígete a **Herramientas > Placa > Gestor de Placas...**, escribe la palabra clave **esp32** en el cuadro de búsqueda, selecciona la última versión de **esp32** e instálala.
+  Dirígete a **Herramientas → Placa → Gestor de Placas...**, escribe la palabra clave **esp32** en el cuadro de búsqueda, selecciona la última versión de **esp32** e instálala.
 
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/9.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -104,8 +105,7 @@ Con esta preparación, ya puedes comenzar a escribir programas para el XIAO ESP3
 
 Descarga el archivo del sketch desde [aquí](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/take_photos_command.ino.zip), descomprímelo en tu computadora y haz clic en "take_photos_command.ino" para abrir el sketch. Luego, selecciona el puerto y la placa correctos para el XIAO para cargar el programa.
 
-<div style={{textAlign:'center'}}><img src="https://github.com/salmanfarisvp/TinyML/blob/main/XIAO-esp32-S3-Sense/Image%20Recognition/src/img/img_CaptureSketch01.png?raw=true
-" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://github.com/salmanfarisvp/TinyML/blob/main/XIAO-esp32-S3-Sense/Image%20Recognition/src/img/img_CaptureSketch01.png?raw=true" style={{width:600, height:'auto'}}/></div>
 
 Mientras tomas las fotos, asegúrate de apuntar hacia la imagen u objeto que necesitamos recopilar como conjunto de datos. 
 
@@ -145,8 +145,7 @@ Después de recopilar los datos para tu proyecto, ahora puedes crear tu Impulso.
 
 Aquí utilizaremos operaciones de DSP (Procesamiento Digital de Señales) que se usan para extraer características con las que nuestro modelo aprende. Estas operaciones varían dependiendo del tipo de datos utilizados en tu proyecto. Primero necesitamos configurar los parámetros como se menciona a continuación.
 
-<div style={{textAlign:'center'}}><img src="https://github.com/salmanfarisvp/TinyML/blob/main/XIAO-esp32-S3-Sense/Image%20Recognition/src/img/Impulse02.png?raw=true
-" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://github.com/salmanfarisvp/TinyML/blob/main/XIAO-esp32-S3-Sense/Image%20Recognition/src/img/Impulse02.png?raw=true" style={{width:600, height:'auto'}}/></div>
 
 Una vez que establecemos los parámetros, necesitamos generar las características, haz clic en **Generar características** Para iniciar la operación.
 
@@ -160,7 +159,7 @@ Una vez que el entrenamiento esté completo, estamos listos para descargar la li
 
 <div style={{textAlign:'center'}}><img src="https://github.com/salmanfarisvp/TinyML/blob/main/XIAO-esp32-S3-Sense/Image%20Recognition/src/img/deployment1.png?raw=true" style={{width:600, height:'auto'}}/></div>
 
-La librería se descargará automáticamente. Después de eso, añádela al Arduino IDE. Abre tu Arduino IDE, haz clic en Esquema > Incluir librería > Añadir librería .ZIP.
+La librería se descargará automáticamente. Después de eso, añádela al Arduino IDE. Abre tu Arduino IDE, haz clic en Esquema → Incluir librería → Añadir librería .ZIP.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Get_Started_With_Arduino/img/Add_Zip.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -215,7 +214,7 @@ Copie el siguiente código de inferencia y pegalo en tu IDE de Arduino.
  */
 
 /* Inclusiones ---------------------------------------------------------------- */
-#include <XIAO_esp32S3_CatDog2_inferencing.h>
+#include &lt;XIAO_esp32S3_CatDog2_inferencing.h&gt;
 #include "edge-impulse-sdk/dsp/image/image.hpp"
 
 #include "esp_camera.h"
@@ -360,8 +359,8 @@ void loop()
                 result.timing.dsp, result.timing.classification, result.timing.anomaly);
 
 #if EI_CLASSIFIER_OBJECT_DETECTION == 1
-    bool bb_found = result.bounding_boxes[0].value > 0;
-    for (size_t ix = 0; ix < result.bounding_boxes_count; ix++) {
+    bool bb_found = result.bounding_boxes[0].value &gt; 0;
+    for (size_t ix = 0; ix &lt; result.bounding_boxes_count; ix++) {
         auto bb = result.bounding_boxes[ix];
         if (bb.value == 0) {
             continue;
@@ -372,7 +371,7 @@ void loop()
         ei_printf("    No se encontraron objetos\n");
     }
 #else
-    for (size_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
+    for (size_t ix = 0; ix &lt; EI_CLASSIFIER_LABEL_COUNT; ix++) {
         ei_printf("    %s: %.5f\n", result.classification[ix].label,
                                     result.classification[ix].value);
     }
@@ -410,19 +409,19 @@ bool ei_camera_init(void) {
 
     sensor_t * s = esp_camera_sensor_get();
     // los sensores iniciales están volteados verticalmente y los colores están un poco saturados
-    if (s->id.PID == OV3660_PID) {
-      s->set_vflip(s, 1); // volver a voltear
-      s->set_brightness(s, 1); // aumentar un poco el brillo
-      s->set_saturation(s, 0); // reducir la saturación
+    if (s→id.PID == OV3660_PID) {
+      s→set_vflip(s, 1); // volver a voltear
+      s→set_brightness(s, 1); // aumentar un poco el brillo
+      s→set_saturation(s, 0); // reducir la saturación
     }
 
 #if defined(CAMERA_MODEL_M5STACK_WIDE)
-    s->set_vflip(s, 1);
-    s->set_hmirror(s, 1);
+    s→set_vflip(s, 1);
+    s→set_hmirror(s, 1);
 #elif defined(CAMERA_MODEL_ESP_EYE)
-    s->set_vflip(s, 1);
-    s->set_hmirror(s, 1);
-    s->set_awb_gain(s, 1);
+    s→set_vflip(s, 1);
+    s→set_hmirror(s, 1);
+    s→set_awb_gain(s, 1);
 #endif
 
     is_initialised = true;
@@ -474,7 +473,7 @@ bool ei_camera_capture(uint32_t img_width, uint32_t img_height, uint8_t *out_buf
         return false;
     }
 
-   bool converted = fmt2rgb888(fb->buf, fb->len, PIXFORMAT_JPEG, snapshot_buf);
+   bool converted = fmt2rgb888(fb→buf, fb→len, PIXFORMAT_JPEG, snapshot_buf);
 
    esp_camera_fb_return(fb);
 
@@ -510,7 +509,7 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
     size_t out_ptr_ix = 0;
 
     while (pixels_left != 0) {
-        out_ptr[out_ptr_ix] = (snapshot_buf[pixel_ix] << 16) + (snapshot_buf[pixel_ix + 1] << 8) + snapshot_buf[pixel_ix + 2];
+        out_ptr[out_ptr_ix] = (snapshot_buf[pixel_ix] &lt;&lt; 16) + (snapshot_buf[pixel_ix + 1] &lt;&lt; 8) + snapshot_buf[pixel_ix + 2];
 
         // ir al siguiente píxel
         out_ptr_ix++;
@@ -526,7 +525,7 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
 #endif
 ```
 
-Asegúrate de reemplazar **"#include <XIAO_esp32S3_CatDog2_inferencing.h>"** con la librería que generaste. Luego, sube el código y apunta hacia las imágenes de un gato o perro, o usa las imágenes reales. Podrás ver los resultados en el monitor serial.
+Asegúrate de reemplazar **"#include &lt;XIAO_esp32S3_CatDog2_inferencing.h&gt;"** con la librería que generaste. Luego, sube el código y apunta hacia las imágenes de un gato o perro, o usa las imágenes reales. Podrás ver los resultados en el monitor serial.
 
 ¡Felicidades por completar el proyecto de clasificación de imágenes con tinyML! 🙌
 
@@ -574,9 +573,9 @@ Asegúrate de reemplazar **"#include <XIAO_esp32S3_CatDog2_inferencing.h>"** con
 
 ### Otras
 
-- **[STP]** [XIAO ESP32S3 Sense housing design (top)](<https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(top).stp>)
+- **[STP]** [XIAO ESP32S3 Sense housing design (top)](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(top).stp)
 
-- **[STP]** [XIAO ESP32S3 Sense housing design (bottom)](<https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(bottom).stp>)
+- **[STP]** [XIAO ESP32S3 Sense housing design (bottom)](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(bottom).stp)
 
 _El material de código abierto restante sigue compilando, ¡así que quedense atentos!_
 

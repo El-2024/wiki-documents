@@ -160,6 +160,7 @@ module.exports = (async () => {
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
+    onBrokenAnchors: 'warn',
     favicon: 'img/S.png',
     themes: ['docusaurus-theme-search-typesense'],
     scripts: [
@@ -180,6 +181,11 @@ module.exports = (async () => {
       async: true,
       },
     ],
+
+    future: {
+      v4: true, // Enable future Docusaurus v4 features
+      experimental_faster: true, // Enable experimental faster features
+    },
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.

@@ -52,161 +52,120 @@ Mesh BeeはSeeed Studioが提供する2.4GHzのワイヤレストランシーバ
 ---
 <table>
 <tr>
-<th> 仕様
-</th>
-<th> 値
-</th></tr>
+<th>仕様</th>
+<th>値</th>
+</tr>
 <tr>
-<td width="400px"> マイクロプロセッサ
-</td>
-<td width="600px"> JN5168 (32ビットRISC CPU, 32MHzクロックスピード)
-</td></tr>
+<td width="400px">マイクロプロセッサ</td>
+<td width="600px">JN5168 (32ビットRISC CPU, 32MHzクロックスピード)</td>
+</tr>
 <tr>
-<td> リソース
-</td>
-<td> 256kB/32kB/4kB (フラッシュ/RAM/EEPROM)
-</td></tr>
+<td>リソース</td>
+<td>256kB/32kB/4kB (フラッシュ/RAM/EEPROM)</td>
+</tr>
 <tr>
-<td> PCBサイズ
-</td>
-<td> 24.5mmx30.5mmx0.8mm
-</td></tr>
+<td>PCBサイズ</td>
+<td>24.5mmx30.5mmx0.8mm</td>
+</tr>
 <tr>
-<td> 外形寸法
-</td>
-<td> 24.5mmx30.5mmx9.77mm
-</td></tr>
+<td>外形寸法</td>
+<td>24.5mmx30.5mmx9.77mm</td>
+</tr>
 <tr>
-<td> インジケータ
-</td>
-<td> なし
-</td></tr>
+<td>インジケータ</td>
+<td>なし</td>
+</tr>
 <tr>
-<td> 電源供給
-</td>
-<td> 3.3V
-</td></tr>
+<td>電源供給</td>
+<td>3.3V</td>
+</tr>
 <tr>
-<td> IO数
-</td>
-<td> 12
-</td></tr>
+<td>IO数</td>
+<td>12</td>
+</tr>
 <tr>
-<td> ADC入力
-</td>
-<td> 3(2つはIOと多重化)
-</td></tr>
+<td>ADC入力</td>
+<td>3(2つはIOと多重化)</td>
+</tr>
 <tr>
-<td> インターフェース
-</td>
-<td> UARTx2, SPI, I2C
-</td></tr>
+<td>インターフェース</td>
+<td>UARTx2, SPI, I2C</td>
+</tr>
 <tr>
-<td> プログラムインターフェース
-</td>
-<td> UART+MISO
-</td></tr>
+<td>プログラムインターフェース</td>
+<td>UART+MISO</td>
+</tr>
 <tr>
-<td> 接続性
-</td>
-<td> XBee互換ソケット
-</td></tr>
+<td>接続性</td>
+<td>XBee互換ソケット</td>
+</tr>
 <tr>
-<td> 通信プロトコル
-</td>
-<td> Uart(TTL)
-</td></tr>
+<td>通信プロトコル</td>
+<td>Uart(TTL)</td>
+</tr>
 <tr>
-<td> 動作周波数帯
-</td>
-<td> 2.4GHz
-</td></tr>
+<td>動作周波数帯</td>
+<td>2.4GHz</td>
+</tr>
 <tr>
-<td> スタック/ソフトウェア
-</td>
-<td> RF4CE, JenNet-IP , ZigBee Pro
-</td></tr></table>
+<td>スタック/ソフトウェア</td>
+<td>RF4CE, JenNet-IP , ZigBee Pro</td>
+</tr>
+</table>
 
 ### 3.1 電気的特性
 
-<table >
+<table>
 <tr>
-<th> 仕様
-</th>
-<th> 最小
-</th>
-<th> 標準
-</th>
-<th> 最大
-</th>
-<th> 単位
-</th></tr>
+<th>仕様</th>
+<th>最小</th>
+<th>標準</th>
+<th>最大</th>
+<th>単位</th>
+</tr>
 <tr>
-<td width="400px"> 最大入力電圧
-</td>
-<td width="150px"> -0.3
-</td>
-<td width="150px">
-</td>
-<td width="150px"> 3.6
-</td>
-<td width="150px"> V
-</td></tr>
+<td width="400px">最大入力電圧</td>
+<td width="150px">-0.3</td>
+<td width="150px"></td>
+<td width="150px">3.6</td>
+<td width="150px">V</td>
+</tr>
 <tr>
-<td> 動作入力電圧
-</td>
-<td> 2.0
-</td>
-<td> 3.3
-</td>
-<td> 3.6
-</td>
-<td> V
-</td></tr>
+<td>動作入力電圧</td>
+<td>2.0</td>
+<td>3.3</td>
+<td>3.6</td>
+<td>V</td>
+</tr>
 <tr>
-<td> 送信電流
-</td>
-<td>
-</td>
-<td> 15
-</td>
-<td>
-</td>
-<td> mA
-</td></tr>
+<td>送信電流</td>
+<td></td>
+<td>15</td>
+<td></td>
+<td>mA</td>
+</tr>
 <tr>
-<td> 受信電流
-</td>
-<td>
-</td>
-<td> 17
-</td>
-<td>
-</td>
-<td> mA
-</td></tr>
+<td>受信電流</td>
+<td></td>
+<td>17</td>
+<td></td>
+<td>mA</td>
+</tr>
 <tr>
-<td> ディープスリープ電流
-</td>
-<td>
-</td>
-<td> 0.12
-</td>
-<td>
-</td>
-<td> uA
-</td></tr>
+<td>ディープスリープ電流</td>
+<td></td>
+<td>0.12</td>
+<td></td>
+<td>uA</td>
+</tr>
 <tr>
-<td> 動作温度
-</td>
-<td> -40
-</td>
-<td>
-</td>
-<td> 125
-</td>
-<td> °C
-</td></tr></table>
+<td>動作温度</td>
+<td>-40</td>
+<td></td>
+<td>125</td>
+<td>°C</td>
+</tr>
+</table>
 
 ## 4. ピン定義
 
@@ -214,194 +173,132 @@ Mesh BeeはSeeed Studioが提供する2.4GHzのワイヤレストランシーバ
 
 <table>
 <tr>
-<th> ピン
-</th>
-<th> 代替機能
-</th>
-<th> タイプ
-</th>
-<th> 説明
-</th></tr>
+<th>ピン</th>
+<th>代替機能</th>
+<th>タイプ</th>
+<th>説明</th>
+</tr>
 <tr>
-<td width="100px"> 3V3
-</td>
-<td width="200px"> -
-</td>
-<td width="200px"> 電源入力
-</td>
-<td width="400px"> VCC, +3.3V
-</td></tr>
+<td width="100px">3V3</td>
+<td width="200px">-</td>
+<td width="200px">電源入力</td>
+<td width="400px">VCC, +3.3V</td>
+</tr>
 <tr>
-<td> TX1
-</td>
-<td> D14
-</td>
-<td> 出力
-</td>
-<td> Uart1 Tx ポート; デジタル IO 14
-</td></tr>
+<td>TX1</td>
+<td>D14</td>
+<td>出力</td>
+<td>Uart1 Tx ポート; デジタル IO 14</td>
+</tr>
 <tr>
-<td> RX1
-</td>
-<td> D15
-</td>
-<td> 入力
-</td>
-<td> Uart Rx ポート; デジタル IO 15
-</td></tr>
+<td>RX1</td>
+<td>D15</td>
+<td>入力</td>
+<td>Uart Rx ポート; デジタル IO 15</td>
+</tr>
 <tr>
-<td> DO1
-</td>
-<td> SPIMISO
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル出力 1; SPI マスター入力スレーブ出力入力
-</td></tr>
+<td>DO1</td>
+<td>SPIMISO</td>
+<td>入力/出力</td>
+<td>デジタル出力 1; SPI マスター入力スレーブ出力入力</td>
+</tr>
 <tr>
-<td>  !RST
-</td>
-<td> -
-</td>
-<td> 入力
-</td>
-<td> リセットポート
-</td></tr>
+<td>!RST</td>
+<td>-</td>
+<td>入力</td>
+<td>リセットポート</td>
+</tr>
 <tr>
-<td> D11
-</td>
-<td> PWM1
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル IO 11 (デフォルト使用: RSSI インジケータ); PWM1 出力
-</td></tr>
+<td>D11</td>
+<td>PWM1</td>
+<td>入力/出力</td>
+<td>デジタル IO 11 (デフォルト使用: RSSI インジケータ); PWM1 出力</td>
+</tr>
 <tr>
-<td> DO0
-</td>
-<td> SPICLK
-</td>
-<td> 出力
-</td>
-<td> デジタル出力 0; SPI マスタークロック出力
-</td></tr>
+<td>DO0</td>
+<td>SPICLK</td>
+<td>出力</td>
+<td>デジタル出力 0; SPI マスタークロック出力</td>
+</tr>
 <tr>
-<td> D18
-</td>
-<td> SPIMOSI
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル IO 18; SPI マスター出力スレーブ入力出力
-</td></tr>
+<td>D18</td>
+<td>SPIMOSI</td>
+<td>入力/出力</td>
+<td>デジタル IO 18; SPI マスター出力スレーブ入力出力</td>
+</tr>
 <tr>
-<td> VRef
-</td>
-<td> ADC2
-</td>
-<td> 入力
-</td>
-<td> アナログ周辺機器基準電圧; ADC 入力 2
-</td></tr>
+<td>VRef</td>
+<td>ADC2</td>
+<td>入力</td>
+<td>アナログ周辺機器基準電圧; ADC 入力 2</td>
+</tr>
 <tr>
-<td> GND
-</td>
-<td> -
-</td>
-<td> GND
-</td>
-<td> GND
-</td></tr>
+<td>GND</td>
+<td>-</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
 <tr>
-<td> TX0
-</td>
-<td> D6
-</td>
-<td> 入力/出力
-</td>
-<td> Uart0 Tx ポート; デジタル IO 6
-</td></tr>
+<td>TX0</td>
+<td>D6</td>
+<td>入力/出力</td>
+<td>Uart0 Tx ポート; デジタル IO 6</td>
+</tr>
 <tr>
-<td> D12
-</td>
-<td> CTS0
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル IO 12; UART 0 クリアトゥセンド入力
-</td></tr>
+<td>D12</td>
+<td>CTS0</td>
+<td>入力/出力</td>
+<td>デジタル IO 12; UART 0 クリアトゥセンド入力</td>
+</tr>
 <tr>
-<td> D9
-</td>
-<td> -
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル IO 9 (デフォルト使用: Mesh Bee ON/スリープインジケータ)
-</td></tr>
+<td>D9</td>
+<td>-</td>
+<td>入力/出力</td>
+<td>デジタル IO 9 (デフォルト使用: Mesh Bee ON/スリープインジケータ)</td>
+</tr>
 <tr>
-<td> RX0
-</td>
-<td> D7
-</td>
-<td> 入力/出力
-</td>
-<td> Uart0 Rx ポート; デジタル IO 7
-</td></tr>
+<td>RX0</td>
+<td>D7</td>
+<td>入力/出力</td>
+<td>Uart0 Rx ポート; デジタル IO 7</td>
+</tr>
 <tr>
-<td> D10
-</td>
-<td> -
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル IO 10 (デフォルト使用: ネットワークアソシエーションインジケータ)
-</td></tr>
+<td>D10</td>
+<td>-</td>
+<td>入力/出力</td>
+<td>デジタル IO 10 (デフォルト使用: ネットワークアソシエーションインジケータ)</td>
+</tr>
 <tr>
-<td> D13
-</td>
-<td> RTS0
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル IO 13; UART 0 リクエストトゥセンド出力
-</td></tr>
+<td>D13</td>
+<td>RTS0</td>
+<td>入力/出力</td>
+<td>デジタル IO 13; UART 0 リクエストトゥセンド出力</td>
+</tr>
 <tr>
-<td> D1
-</td>
-<td> SPISEL2; ADC4
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル IO 1; SPI マスターセレクト出力 2; ADC 入力 4
-</td></tr>
+<td>D1</td>
+<td>SPISEL2; ADC4</td>
+<td>入力/出力</td>
+<td>デジタル IO 1; SPI マスターセレクト出力 2; ADC 入力 4</td>
+</tr>
 <tr>
-<td> D0
-</td>
-<td> SPISEL1; ADC3
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル IO 0; SPI マスターセレクト出力 1; ADC 入力 3
-</td></tr>
+<td>D0</td>
+<td>SPISEL1; ADC3</td>
+<td>入力/出力</td>
+<td>デジタル IO 0; SPI マスターセレクト出力 1; ADC 入力 3</td>
+</tr>
 <tr>
-<td> D16
-</td>
-<td> SCL
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル IO 16; I2C クロック
-</td></tr>
+<td>D16</td>
+<td>SCL</td>
+<td>入力/出力</td>
+<td>デジタル IO 16; I2C クロック</td>
+</tr>
 <tr>
-<td> D17
-</td>
-<td> SDA
-</td>
-<td> 入力/出力
-</td>
-<td> デジタル IO 17; I2C データ
-</td></tr></table>
+<td>D17</td>
+<td>SDA</td>
+<td>入力/出力</td>
+<td>デジタル IO 17; I2C データ</td>
+</tr>
+</table>
 
 注意: 重要な代替機能のみ記載しています。他にもある場合がありますので、JN516x データシートを参照してください。
 
@@ -780,41 +677,42 @@ ZigBee は低消費電力かつ低速のネットワーク伝送プロトコル�
 
 <table>
 <tr>
-<th> 伝送方向 </th>
-<th> 送信方法 </th>
-<th> パケット周期 (ms) </th>
-<th> 最大パケット長 (バイト)
-</th></tr>
+<th>伝送方向</th>
+<th>送信方法</th>
+<th>パケット周期 (ms)</th>
+<th>最大パケット長 (バイト)</th>
+</tr>
 <tr>
-<td> COO/ROU  </td>
-<td> ブロードキャスト </td>
-<td> 250 </td>
-<td> 50
-</td></tr>
+<td>COO/ROU</td>
+<td>ブロードキャスト</td>
+<td>250</td>
+<td>50</td>
+</tr>
 <tr>
-<td> COO/ROU -&gt; END </td>
-<td> ユニキャスト </td>
-<td> 40 </td>
-<td> 50
-</td></tr>
+<td>COO/ROU -&gt; END</td>
+<td>ユニキャスト</td>
+<td>40</td>
+<td>50</td>
+</tr>
 <tr>
-<td> END  </td>
-<td> ブロードキャスト </td>
-<td> 150 </td>
-<td> 50
-</td></tr>
+<td>END</td>
+<td>ブロードキャスト</td>
+<td>150</td>
+<td>50</td>
+</tr>
 <tr>
-<td> END -&gt; COO/ROU </td>
-<td> ユニキャスト </td>
-<td> 20 </td>
-<td> 25
-</td></tr>
+<td>END -&gt; COO/ROU</td>
+<td>ユニキャスト</td>
+<td>20</td>
+<td>25</td>
+</tr>
 <tr>
-<td> END -&gt; COO/ROU </td>
-<td> ユニキャスト </td>
-<td> 40 </td>
-<td> 50
-</td></tr></table>
+<td>END -&gt; COO/ROU</td>
+<td>ユニキャスト</td>
+<td>40</td>
+<td>50</td>
+</tr>
+</table>
 
 ネットワークが大きくなるとデータレートはさらに低下します。
 

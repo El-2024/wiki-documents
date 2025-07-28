@@ -81,7 +81,7 @@ Esto mostrará todos los puertos seriales disponibles.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/1.png" /></div>
 
-:::Tip
+:::tip
 Si el puerto está ocupado, puedes usar el siguiente comando para identificar y terminar los procesos que estén utilizando el puerto (en macOS):
 
 Identificar los procesos que usan el puerto:

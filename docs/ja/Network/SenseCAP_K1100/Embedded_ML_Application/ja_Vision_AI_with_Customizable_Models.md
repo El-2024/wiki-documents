@@ -23,8 +23,8 @@ SenseCAP [S2110 コントローラー](https://www.seeedstudio.com/SenseCAP-XIAO
 IP66 ハウジング、Bluetooth 設定、グローバル LoRaWAN® ネットワークとの互換性、内蔵 19 Ah バッテリー、そしてアプリからの強力なサポートにより、[SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device) は産業用途に最適な選択肢となります。このシリーズには、土壌水分、空気温度と湿度、光強度、CO2、EC、そして 8-in-1 気象ステーション用のセンサーが含まれています。次の成功する産業プロジェクトに最新の SenseCAP S210x をお試しください。
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP 産業用センサー</strong></font></td>
-    </tr>
+  <tbody>
+    <tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP 産業用センサー</strong></font></td></tr>
     <tr>
       <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div>
       </td>
@@ -104,7 +104,7 @@ YOLOは「You Only Look Once（1回見るだけ）」の略です。このアル
 このウィキは、以下の3つの主要セクションに分かれています。
 
 1. [公開データセットを使用して独自のAIモデルをトレーニングする](#jump1)
-2. [独自のデータセットを使用して独自のAIモデルをトレーニングする](#jump2)
+2. 独自のデータセットを使用して独自のAIモデルをトレーニングする
 3. [トレーニング済みAIモデルをGrove - Vision AI Moduleにデプロイする](#jump3)
 
 最初のセクションでは、最小限の手順で独自のAIモデルを構築する最速の方法を説明します。2番目のセクションでは、独自のAIモデルを構築するために時間と労力が必要ですが、その知識は確実に価値があります。3番目のセクションでは、最初または2番目のセクションの後にAIモデルをデプロイする方法を説明します。
@@ -112,7 +112,7 @@ YOLOは「You Only Look Once（1回見るだけ）」の略です。このアル
 このウィキを進めるには、以下の2つの方法があります。
 
 1. [セクション1](#jump1)を進めてから[セクション3](#jump3)を進める - 簡単に進められる方法
-2. [セクション2](#jump2)を進めてから[セクション3](#jump3)を進める - 時間がかかる方法
+2. セクション2を進めてから[セクション3](#jump3)を進める - 時間がかかる方法
 
 ただし、最初は1つ目の方法を進め、その後2つ目の方法に進むことをお勧めします。
 

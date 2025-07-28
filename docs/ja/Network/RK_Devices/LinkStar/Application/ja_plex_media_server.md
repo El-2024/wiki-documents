@@ -114,12 +114,12 @@ ext4形式を選択し、次に「FORMAT」ボタンをクリックします。
     提供された [リンク](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) にアクセスしてタイムゾーンを取得し、TZ データベース名をコピーします。
     以下の形式でタイムゾーンを設定します。
         
-        TZ=<タイムゾーンを入力>
+        TZ=&lt;タイムゾーンを入力&gt;
 
     提供された [リンク](https://www.plex.tv/claim/) にアクセスして claimToken を取得し、コピーして貼り付けます。
     以下の形式で claimToken を設定します。
     
-         PLEX_CLAIM=<claimToken を入力>
+         PLEX_CLAIM=&lt;claimToken を入力&gt;
 
 - **ステップ 3**: バインドマウントの設定
 

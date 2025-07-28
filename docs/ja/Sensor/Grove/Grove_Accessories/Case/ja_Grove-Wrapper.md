@@ -47,62 +47,66 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ---
 <table>
-<tr>
-<td> 寸法（大サイズ） </td>
-<td> 25 × 25 × 13 mm
-</td></tr>
-<tr>
-<td> 平面寸法（小サイズ）  </td>
-<td> 25 × 25 × 13 mm
-</td></tr>
-<tr>
-<td> 材質 </td>
-<td> ABS
-</td></tr>
-<tr>
-<td> 色 </td>
-<td> 青、緑、黄、赤（両サイズ共通）
-</td></tr></table>
+  <tr>
+    <td>寸法（大サイズ）</td>
+    <td>25 × 25 × 13 mm</td>
+  </tr>
+  <tr>
+    <td>平面寸法（小サイズ）</td>
+    <td>25 × 25 × 13 mm</td>
+  </tr>
+  <tr>
+    <td>材質</td>
+    <td>ABS</td>
+  </tr>
+  <tr>
+    <td>色</td>
+    <td>青、緑、黄、赤（両サイズ共通）</td>
+  </tr>
+</table>
 
 **異なる種類のラッパーと対応するSKU**
 
 <table>
-  <tbody><tr>
-      <td> 製品名 </td>
-      <td> SKU
-      </td></tr>
+  <tbody>
     <tr>
-      <td> 赤色 Grove Wrapper 1*1（4個パック）</td>
-      <td> 110070020
-      </td></tr>
+      <td>製品名</td>
+      <td>SKU</td>
+    </tr>
     <tr>
-      <td> 黄色 Grove Wrapper 1*1（4個パック）</td>
-      <td> 110070021
-      </td></tr>
+      <td>赤色 Grove Wrapper 1*1（4個パック）</td>
+      <td>110070020</td>
+    </tr>
     <tr>
-      <td> 青色 Grove Wrapper 1*1（4個パック）</td>
-      <td> 110070022
-      </td></tr>
+      <td>黄色 Grove Wrapper 1*1（4個パック）</td>
+      <td>110070021</td>
+    </tr>
     <tr>
-      <td> 緑色 Grove Wrapper 1*1（4個パック） </td>
-      <td> 110070023
-      </td></tr>
+      <td>青色 Grove Wrapper 1*1（4個パック）</td>
+      <td>110070022</td>
+    </tr>
     <tr>
-      <td> 赤色 Grove Wrapper 1*2（4個パック）</td>
-      <td> 110070024
-      </td></tr>
+      <td>緑色 Grove Wrapper 1*1（4個パック）</td>
+      <td>110070023</td>
+    </tr>
     <tr>
-      <td> 黄色 Grove Wrapper 1*2（4個パック）</td>
-      <td> 110070025
-      </td></tr>
+      <td>赤色 Grove Wrapper 1*2（4個パック）</td>
+      <td>110070024</td>
+    </tr>
     <tr>
-      <td> 青色 Grove Wrapper 1*2（4個パック）</td>
-      <td> 110070026
-      </td></tr>
+      <td>黄色 Grove Wrapper 1*2（4個パック）</td>
+      <td>110070025</td>
+    </tr>
     <tr>
-      <td> 緑色 Grove Wrapper 1*2（4個パック） </td>
-      <td> 110070027
-      </td></tr></tbody></table>
+      <td>青色 Grove Wrapper 1*2（4個パック）</td>
+      <td>110070026</td>
+    </tr>
+    <tr>
+      <td>緑色 Grove Wrapper 1*2（4個パック）</td>
+      <td>110070027</td>
+    </tr>
+  </tbody>
+</table>
 
 ## ハードウェア概要
 
@@ -131,24 +135,19 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ### **部品リスト**
 
 <table>
-<tr>
-<th>部品名   </th>
-<th> 数量
-</th></tr>
-<tr>
-<td>Grove - Wrapper（1色1サイズのみ） </td>
-<td> 4個
-</td></tr>
-<tr>
-<td>十字穴付き皿ネジ PM2.0*H10.0MM
-
-十字穴付き皿ネジ CM4.0*H8.0MM
-
-ナット（銀色） M2.0*H1.5mm
-
-</td>
-<td> 各8個
-</td></tr></table>
+  <tr>
+    <th>部品名</th>
+    <th>数量</th>
+  </tr>
+  <tr>
+    <td>Grove - Wrapper（1色1サイズのみ）</td>
+    <td>4個</td>
+  </tr>
+  <tr>
+    <td>十字穴付き皿ネジ PM2.0*H10.0MM<br/>十字穴付き皿ネジ CM4.0*H8.0MM<br/>ナット（銀色） M2.0*H1.5mm</td>
+    <td>各8個</td>
+  </tr>
+</table>
 
 ## デモ
 

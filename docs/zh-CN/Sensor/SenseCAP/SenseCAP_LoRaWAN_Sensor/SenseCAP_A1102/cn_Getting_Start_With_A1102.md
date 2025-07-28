@@ -51,7 +51,8 @@ sidebar_position: 1
         <td align="center">
         <strong>视觉 AI:</strong>Himax-6538 <br></br> 
         <strong>LoRaWAN 网络:</strong>Wio-E5 (STM32WLE5JC)<br></br>
-        <strong>蓝牙:</strong> XIAO ESP32C3<br></br></td>
+        <strong>蓝牙:</strong> XIAO ESP32C3<br></br>
+        </td>
 	</tr>
     <tr>
         <th>摄像头</th>

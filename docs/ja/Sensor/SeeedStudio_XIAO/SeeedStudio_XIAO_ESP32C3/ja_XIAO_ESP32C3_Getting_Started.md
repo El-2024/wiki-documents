@@ -28,8 +28,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 この Wiki では、XIAO ESP32C3 をすぐに使い始める方法を紹介します！
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
 </div>
 
 
@@ -219,7 +218,7 @@ ESP32C3のチップマニュアルによると、チップ内の**GPIO2**、**GP
 - **ステップ 3.** Arduino IDEにESP32ボードパッケージを追加します。
 
 **File > Preferences**に移動し、**"Additional Boards Manager URLs"**に以下のURLを入力します：
-*<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json>*
+`https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/add_board.png" style={{width:550, height:'auto'}}/></div>
 

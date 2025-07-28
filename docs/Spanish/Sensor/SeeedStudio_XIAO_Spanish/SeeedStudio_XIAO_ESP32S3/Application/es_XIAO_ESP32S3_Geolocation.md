@@ -47,12 +47,12 @@ La técnica de localización más común y extendida utilizada para el posiciona
 
 Esta es la base teórica para la capacidad de XIAO de obtener una ubicación sin la ayuda de un módulo GPS. También compararemos la mejor manera de obtener el posicionamiento con la ayuda de los dos métodos anteriores, combinados con el uso de la Pantalla Redonda, que muestra las coordenadas como un mapa en la pantalla. A continuación se presenta el índice y un resumen del artículo.
 
-- [Conectar a la red y obtener la IP pública con el XIAO ESP32S3](#Conectar-a-la-red-y-obtener-la-IP-pública-con-el-XIAO-ESP32S3)
-- [Obtener las coordenadas de ubicación con la plataforma ipstack](#Obtener-las-coordenadas-de-ubicación-conla-plataforma-ipstack)
-- [Descargar imágenes estáticas de Google Maps a través del servicio HTTPS](#Descargar-imágenes-estáticas-de-Google-Maps-a-través-del-servicio-HTTPS)
-- [Mostrar el mapa de ubicación en la pantalla redonda](#Mostrar-el-mapa-de-ubicación-en-la-pantalla-redonda)
-- [Posicionamiento utilizando el método WFPS](#Posicionamiento-utilizando-el-método-WFPS)
-- [Actualizaciones en vivo sobre la última ubicación](#Actualizaciones-en-vivo-sobre-la-última-ubicación)
+- [Conectar a la red y obtener la IP pública con el XIAO ESP32S3](#conectar-a-la-red-y-obtener-la-ip-pública-con-el-xiao-esp32s3)
+- [Obtener las coordenadas de ubicación con la plataforma ipstack](#obtener-coordenadas-de-ubicación-con-la-plataforma-ipstack)
+- [Descargar imágenes estáticas de Google Maps a través del servicio HTTPS](#descargar-imágenes-estáticas-de-google-maps-a-través-del-servicio-https)
+- [Mostrar el mapa de ubicación en la pantalla redonda](#mostrar-el-mapa-de-la-ubicación-en-la-pantalla-redonda)
+- [Posicionamiento utilizando el método WFPS](#posicionamiento-usando-el-método-wfps)
+- [Actualizaciones en vivo sobre la última ubicación](#actualizaciones-en-vivo-sobre-la-última-ubicación)
 
 ## Comenzando
 
@@ -91,8 +91,6 @@ Para completar con éxito este proyecto, es posible que necesites utilizar el si
 </div>
 
 Además de esto, también puedes preparar una pequeña batería de litio, una tarjeta microSD y una carcasa. Para completar la forma del rastreador.
-
-<iframe width="100%" height="500" src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/install.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
 ## Conectar a la red y obtener la IP pública con el XIAO ESP32S3
 
@@ -193,8 +191,11 @@ A continuación, necesitamos saber qué tipo de mensaje JSON nos devolverá ipst
     "capital": "Washington D.C.",
     "languages": [
         {
-          "code": "en",
-...
+          "code": "en"
+        }
+    ]
+  }
+}
 ```
 
 Luego, solo necesitamos extraer la información que necesitamos con la ayuda de la biblioteca ArduinoJSON.
@@ -235,8 +236,8 @@ bool getLocation(){
     Serial.println("País: " + country_name);
     Serial.println("Región: " + region_name);
     Serial.println("Ciudad: " + city);
-    Serial.println("Latitud: " + String(latitude));
-    Serial.println("Longitud: " + String(longitude));
+    Serial.println("Latitude: " + String(latitude));
+    Serial.println("Longitude: " + String(longitude));
     http.end(); // Cerrar la conexión
     return true;
   } else {
@@ -263,9 +264,9 @@ Antes de comenzar, creo que es importante que entiendas la [tarifa del servicio 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/12.png" style={{width:800, height:'auto'}}/></div>
 
-Si eres un usuario registrado por primera vez, tendrás un **crédito gratuito de $300**. Aquí estamos utilizando principalmente la API de Mapas Estáticos, que cuesta **$2.00 por cada 1000** llamadas.
+Si eres un usuario registrado por primera vez, tendrás un **crédito gratuito de \$300**. Aquí estamos utilizando principalmente la API de Mapas Estáticos, que cuesta **\$2.00 por cada 1000** llamadas.
 
-### Paso 4. [Configura tu proyecto de Google Cloud](https://developers.google.com/maps/documentation/elevation/cloud-setup) y completa las instrucciones de configuración que siguen.
+### Paso 4. Configura tu proyecto de Google Cloud y completa las instrucciones de configuración que siguen.
 
 ### Paso 5. Habilita la API de Google Maps
 
@@ -310,7 +311,7 @@ https://maps.googleapis.com/maps/api/staticmap?parameters
 
 La API de Mapas Estáticos define las imágenes de los mapas utilizando los siguientes parámetros de URL:
 
-- `center` (requerido si no hay marcadores) define el centro del mapa, equidistante de todos los bordes del mapa. Este parámetro toma una ubicación como un par de coordenadas {latitud,longitud} separado por coma (por ejemplo, "40.714728,-73.998672") o una dirección en forma de cadena (por ejemplo, "city hall, new york, ny") que identifica una ubicación única en la superficie de la Tierra.
+- `center` (requerido si no hay marcadores) define el centro del mapa, equidistante de todos los bordes del mapa. Este parámetro toma una ubicación como un par de coordenadas `{latitud,longitud}` separado por coma (por ejemplo, "40.714728,-73.998672") o una dirección en forma de cadena (por ejemplo, "city hall, new york, ny") que identifica una ubicación única en la superficie de la Tierra.
 - `zoom` (requerido si no hay marcadores) define el nivel de zoom del mapa, lo que determina el nivel de magnificación del mapa. Este parámetro toma un valor numérico correspondiente al nivel de zoom de la región deseada.
 - `size` (requerido) define las dimensiones rectangulares de la imagen del mapa. Este parámetro toma una cadena en el formato `{valor_horizontal}x{valor_vertical}`.
 - `maptype` (opcional) define el tipo de mapa a construir. Hay varios valores posibles para maptype, incluidos roadmap (mapa estándar), satellite (satélite), hybrid (híbrido) y terrain (terreno).
@@ -577,7 +578,6 @@ void getLocation(){
 
 Veamos cómo difieren las coordenadas obtenidas mediante WFPS de la posición real.
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/13.png" style={{width:1000, height:'auto'}}/></div>
 
 ¡¡La desviación en la posición ya está alrededor de 1 km!! ¡Este rendimiento es incluso mejor que el de algunos módulos GPS!
@@ -659,6 +659,3 @@ Si esto aún no resuelve el problema, te recomendamos usar el segundo método o 
 <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-
-
-

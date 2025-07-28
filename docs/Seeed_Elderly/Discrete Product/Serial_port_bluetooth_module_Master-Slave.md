@@ -68,293 +68,138 @@ and blue led blinks 1time/2s in interval. While disconnected only blue led blink
 
 <table >
 <tr>
-<th> Pin
-</th>
-<th> #
-</th>
-<th> Pad Type
-</th>
-<th> Description
-</th></tr>
+<th>Pin</th>
+<th>#</th>
+<th>Pad Type</th>
+<th>Description</th>
+</tr>
 <tr>
-<td width="100px"> PIO11
-</td>
-<td width="100px"> 34
-</td>
-<td width="350px"> Bi-Direction
-</td>
-<td width="450px"> Programmable input/output line
-</td></tr>
+<td width="100px">PIO11</td>
+<td width="100px">34</td>
+<td width="350px">Bi-Direction</td>
+<td width="450px">Programmable input/output line</td>
+</tr>
 <tr>
-<td> PIO10
-</td>
-<td> 33
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
+<td>PIO10</td>
+<td>33</td>
+<td>Bi-Direction</td>
+<td>Programmable input/output line</td>
+</tr>
 <tr>
-<td> PIO9
-</td>
-<td> 32
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
+<td>PIO9</td>
+<td>32</td>
+<td>Bi-Direction</td>
+<td>Programmable input/output line</td>
+</tr>
 <tr>
-<td> PIO8
-</td>
-<td> 31
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
+<td>PIO8</td>
+<td>31</td>
+<td>Bi-Direction</td>
+<td>Programmable input/output line</td>
+</tr>
 <tr>
-<td> PIO7
-</td>
-<td> 30
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
+<td>PIO7</td>
+<td>30</td>
+<td>Bi-Direction</td>
+<td>Programmable input/output line</td>
+</tr>
 <tr>
-<td> PIO6
-</td>
-<td> 29
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
+<td>PIO6</td>
+<td>29</td>
+<td>Bi-Direction</td>
+<td>Programmable input/output line</td>
+</tr>
 <tr>
-<td> PIO5
-</td>
-<td> 28
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
+<td>PIO5</td>
+<td>28</td>
+<td>Bi-Direction</td>
+<td>Programmable input/output line</td>
+</tr>
 <tr>
-<td> PIO4
-</td>
-<td> 27
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
+<td>PIO4</td>
+<td>27</td>
+<td>Bi-Direction</td>
+<td>Programmable input/output line</td>
+</tr>
 <tr>
-<td> PIO3
-</td>
-<td> 26
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
+<td>PIO3</td>
+<td>26</td>
+<td>Bi-Direction</td>
+<td>Programmable input/output line</td>
+</tr>
 <tr>
-<td> PIO32
-</td>
-<td> 25
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
+<td>PIO32</td>
+<td>25</td>
+<td>Bi-Direction</td>
+<td>Programmable input/output line</td>
+</tr>
 <tr>
-<td> PIO1
-</td>
-<td> 24
-</td>
-<td> Bi-Direction TX EN
-</td>
-<td> Programmable input/output line, control output for PA(if fitted)
-</td></tr>
+<td>PIO1</td>
+<td>24</td>
+<td>Bi-Direction TX EN</td>
+<td>Programmable input/output line, control output for PA(if fitted)</td>
+</tr>
 <tr>
-<td> PIO0
-</td>
-<td> 23
-</td>
-<td> Bi-Direction RX EN
-</td>
-<td> Programmable input/output line, control output for LNA(if fitted)
-</td></tr>
+<td>PIO0</td>
+<td>23</td>
+<td>Bi-Direction RX EN</td>
+<td>Programmable input/output line, control output for LNA(if fitted)</td>
+</tr>
 <tr>
-<td> GND
-</td>
-<td> 13,21,22
-</td>
-<td> VSS
-</td>
-<td> Ground pot
-</td></tr>
+<td>GND</td>
+<td>13,21,22</td>
+<td>VSS</td>
+<td>Ground pot</td>
+</tr>
 <tr>
-<td> USB±
-</td>
-<td> 15,20
-</td>
-<td> Bi-Directional
-</td>
-<td>
-</td></tr>
+<td>USB±</td>
+<td>15,20</td>
+<td>Bi-Directional</td>
+<td></td>
+</tr>
 <tr>
-<td> SPI_CLK
-</td>
-<td> 19
-</td>
-<td> CMOS input with weak internal pull-down
-</td>
-<td> Serial peripheral interface clock
-</td></tr>
+<td>SPI_CLK</td>
+<td>19</td>
+<td>CMOS input with weak internal pull-down</td>
+<td>Serial peripheral interface clock</td>
+</tr>
 <tr>
-<td> SPI_MISO
-</td>
-<td> 18
-</td>
-<td> CMOS input with weak internal pull-down
-</td>
-<td> Serial peripheral interface data Output
-</td></tr>
+<td>SPI_MISO</td>
+<td>18</td>
+<td>CMOS input with weak internal pull-down</td>
+<td>Serial peripheral interface data Output</td>
+</tr>
 <tr>
-<td> SPI_MOSI
-</td>
-<td> 17
-</td>
-<td> CMOS input with weak internal pull-down
-</td>
-<td> Serial peripheral interface data input
-</td></tr>
+<td>SPI_MOSI</td>
+<td>17</td>
+<td>CMOS input with weak internal pull-down</td>
+<td>Serial peripheral interface data input</td>
+</tr>
 <tr>
-<td> SPI_CSB
-</td>
-<td> 16
-</td>
-<td> CMOS input with weak internal pull-up
-</td>
-<td> Chip select for serial peripheral interface,active low
-</td></tr>
+<td>SPI_CSB</td>
+<td>16</td>
+<td>CMOS input with weak internal pull-up</td>
+<td>Chip select for serial peripheral interface,active low</td>
+</tr>
 <tr>
-<td> NC
-</td>
-<td> 14
-</td>
-<td>
-</td>
-<td>
-</td></tr>
+<td>NC</td>
+<td>14</td>
+<td></td>
+<td></td>
+</tr>
 <tr>
-<td> 3.3VCC
-</td>
-<td> 12
-</td>
-<td> 3.3V
-</td>
-<td> Integrated 3.3V(+)supply with on-chip linear regulator output within 3.15-3.3V
-</td></tr>
+<td>3.3VCC</td>
+<td>12</td>
+<td>3.3V</td>
+<td>Integrated 3.3V(+)supply with on-chip linear regulator output within 3.15-3.3V</td>
+</tr>
 <tr>
-<td> RESETB
-</td>
-<td> 11
-</td>
-<td> CMOS input with weak internal pull-up
-</td>
-<td> Reset if low. input debouncde so must be low for&gt;5MS to cause a reset
-</td></tr>
-<tr>
-<td> AIO1
-</td>
-<td> 10
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
-<tr>
-<td> AIO0
-</td>
-<td> 9
-</td>
-<td> Bi-Direction
-</td>
-<td> Programmable input/output line
-</td></tr>
-<tr>
-<td> PCM_SYNC
-</td>
-<td> 8
-</td>
-<td> Bi-Direction
-</td>
-<td> Synchronous PCM data strobe
-</td></tr>
-<tr>
-<td> PCM_IN
-</td>
-<td> 7
-</td>
-<td> CMOS Input
-</td>
-<td> Synchronous PCM data input
-</td></tr>
-<tr>
-<td> PCM_OUT
-</td>
-<td> 6
-</td>
-<td> CMOS output
-</td>
-<td> Synchronous PCM data output
-</td></tr>
-<tr>
-<td> PCM_CLK
-</td>
-<td> 5
-</td>
-<td> Bi-Direction
-</td>
-<td> Synchronous PCM data clock
-</td></tr>
-<tr>
-<td> UART_RTS
-</td>
-<td> 4
-</td>
-<td> CMOS output tri-stable with weak internal pull-up
-</td>
-<td> UART request to send, active low
-</td></tr>
-<tr>
-<td> UART_CTS
-</td>
-<td> 3
-</td>
-<td> CMOS input with weak internal pull-down
-</td>
-<td> UART Data input
-</td></tr>
-<tr>
-<td> UART_RX
-</td>
-<td> 2
-</td>
-<td> CMOS output,tri-stable with weak internal pull-down
-</td>
-<td> UART Data input
-</td></tr>
-<tr>
-<td> UART_TX
-</td>
-<td> 1
-</td>
-<td> CMOS output,tri-stable with weak internal pull-up
-</td>
-<td> UART Data output
-</td></tr></table>
+<td>RESETB</td>
+<td>11</td>
+<td>CMOS input with weak internal pull-up</td>
+<td>Reset if low (externally held)</td>
+</tr>
+</table>
 
 ##   Software Instruction  
 
@@ -372,15 +217,14 @@ and blue led blinks 1time/2s in interval. While disconnected only blue led blink
 
 <table>
 <tr>
-<td width="200px"> \r\n+STWMOD=0\r\n
-</td>
-<td width="400px"> Set device working mode as client (slave). Save and Rest.
-</td></tr>
+<td width="200px">\r\n+STWMOD=0\r\n</td>
+<td width="400px">Set device working mode as client (slave). Save and Rest.</td>
+</tr>
 <tr>
-<td> \r\n+STWMOD=1\r\n
-</td>
-<td> Set device working mode as server (master). Save and Rest.
-</td></tr></table>
+<td>\r\n+STWMOD=1\r\n</td>
+<td>Set device working mode as server (master). Save and Rest.</td>
+</tr>
+</table>
 
 **Note:** **\r\n** is necessary for operation and the value of are **0x0D 0x0A** in Hex. **\r** and **\n** represent **carriage-return** and **line-feed**(or next line),
 
@@ -388,91 +232,88 @@ and blue led blinks 1time/2s in interval. While disconnected only blue led blink
 
 <table>
 <tr>
-<td width="200px"> \r\n+STBD=115200\r\n
-</td>
-<td width="400px"> Set baudrate 115200. Save and Rest.
-</td></tr>
+<td width="200px">\r\n+STBD=115200\r\n</td>
+<td width="400px">Set baudrate 115200. Save and Rest.</td>
+</tr>
 <tr>
-<td colspan="2"> Supported baudrate: 9600, 19200,38400,57600,115200,230400,460800.
-</td></tr></table>
+<td colspan="2">Supported baudrate: 9600, 19200,38400,57600,115200,230400,460800.</td>
+</tr>
+</table>
 
 **3. Set Device NAME**
 
 <table>
 <tr>
-<td width="200px"> \r\n+STNA=abcdefg
-</td>
-<td width="400px"> Set device name as “abcdefg”. Save and Rest.
-</td></tr></table>
+<td width="200px">\r\n+STNA=abcdefg</td>
+<td width="400px">Set device name as "abcdefg". Save and Rest.</td>
+</tr>
+</table>
 
 **4. Auto-connect the last paired device on power**
 
 <table>
 <tr>
-<td width="200px"> \r\n+STAUTO=0\r\n
-</td>
-<td width="400px"> Auto-connect forbidden. Save and Rest.
-</td></tr>
+<td width="200px">\r\n+STAUTO=0\r\n</td>
+<td width="400px">Auto-connect forbidden. Save and Rest.</td>
+</tr>
 <tr>
-<td width="200px"> \r\n+STAUTO=1\r\n
-</td>
-<td width="400px"> Permit Auto-connect. Save and Rest.
-</td></tr></table>
+<td width="200px">\r\n+STAUTO=1\r\n</td>
+<td width="400px">Permit Auto-connect. Save and Rest.</td>
+</tr>
+</table>
 
 **5. Permit Paired device to connect me**
 
 <table>
 <tr>
-<td width="200px"> \r\n+STOAUT=0\r\n
-</td>
-<td width="400px"> Forbidden. Save and Rest.
-</td></tr>
+<td width="200px">\r\n+STOAUT=0\r\n</td>
+<td width="400px">Forbidden. Save and Rest.</td>
+</tr>
 <tr>
-<td width="200px"> \r\n+STOAUT=1\r\n
-</td>
-<td width="400px"> Permit. Save and Rest.
-</td></tr></table>
+<td width="200px">\r\n+STOAUT=1\r\n</td>
+<td width="400px">Permit. Save and Rest.</td>
+</tr>
+</table>
 
 **6. Set PINCODE**
 
 <table>
 <tr>
-<td width="200px"> \r\n +STPIN=2222\r\n
-</td>
-<td width="400px"> Set pincode “2222”, Save and Rest.
-</td></tr></table>
+<td width="200px">\r\n +STPIN=2222\r\n</td>
+<td width="400px">Set pincode "2222", Save and Rest.</td>
+</tr>
+</table>
 
 **7. Delete PINCODE(input PINCODE by MCU)**
 
 <table>
 <tr>
-<td width="200px"> \r\n+DLPIN\r\n
-</td>
-<td width="400px"> Delete pincode. Save and Rest.
-</td></tr></table>
+<td width="200px">\r\n+DLPIN\r\n</td>
+<td width="400px">Delete pincode. Save and Rest.</td>
+</tr>
+</table>
 
 **8. Read local ADDRESS CODE**
 
 <table>
 <tr>
-<td width="200px"> \r\n+RTADDR\r\n
-</td>
-<td width="400px"> Return address of the device.
-</td></tr></table>
+<td width="200px">\r\n+RTADDR\r\n</td>
+<td width="400px">Return address of the device.</td>
+</tr>
+</table>
 
 **9. Auto-reconnecting when master device is beyond the valid range (slave device will auto-reconnect in 30 min when it is beyond the valid range)**
 
 <table>
 <tr>
-<td width="200px"> \r\n+LOSSRECONN=0\r\n
-</td>
-<td width="400px"> Forbid auto-reconnecting.
-</td></tr>
+<td width="200px">\r\n+LOSSRECONN=0\r\n</td>
+<td width="400px">Forbid auto-reconnecting.</td>
+</tr>
 <tr>
-<td width="200px"> \r\n+LOSSRECONN=1\r\n
-</td>
-<td width="400px"> Permit auto-reconnecting.
-</td></tr></table>
+<td width="200px">\r\n+LOSSRECONN=1\r\n</td>
+<td width="400px">Permit auto-reconnecting.</td>
+</tr>
+</table>
 
 ####   Commands for Normal Operation:  
 
@@ -480,51 +321,48 @@ and blue led blinks 1time/2s in interval. While disconnected only blue led blink
 
 <table>
 <tr>
-<td colspan="2" width="600px"> **a) Master**
-</td></tr>
+<td colspan="2" width="600px">**a) Master**</td>
+</tr>
 <tr>
-<td width="200px"> \r\n+INQ=0\r\n
-</td>
-<td width="400px"> Stop Inquiring
-</td></tr>
+<td width="200px">\r\n+INQ=0\r\n</td>
+<td width="400px">Stop Inquiring</td>
+</tr>
 <tr>
-<td> \r\n+INQ=1\r\n
-</td>
-<td> Begin/Restart Inquiring
-</td></tr>
+<td>\r\n+INQ=1\r\n</td>
+<td>Begin/Restart Inquiring</td>
+</tr>
 <tr>
-<td colspan="2" width="600px"> **b) Slave**
-</td></tr>
+<td colspan="2" width="600px">**b) Slave**</td>
+</tr>
 <tr>
-<td> \r\n+INQ=0\r\n
-</td>
-<td> Disable been inquired
-</td></tr>
+<td>\r\n+INQ=0\r\n</td>
+<td>Disable been inquired</td>
+</tr>
 <tr>
-<td> \r\n+INQ=1\r\n
-</td>
-<td> Enable been inquired
-</td></tr></table>
+<td>\r\n+INQ=1\r\n</td>
+<td>Enable been inquired</td>
+</tr>
+</table>
 
-When **+INQ=1** command is successful, the  red and  green LEDS blink alternatively.
+When **+INQ=1** command is successful, the red and green LEDS blink alternatively.
 
 **2. Bluetooth module returns inquiring result**
 
 <table>
 <tr>
-<td width="250px"> \r\n+RTINQ=aa,bb,cc,dd,ee,ff;name\r\n
-</td>
-<td width="500px"> Serial Bluetooth device with the address “aa,bb,cc,dd,ee,ff” and the name “name” is inquired
-</td></tr></table>
+<td width="250px">\r\n+RTINQ=aa,bb,cc,dd,ee,ff;name\r\n</td>
+<td width="500px">Serial Bluetooth device with the address "aa,bb,cc,dd,ee,ff" and the name "name" is inquired</td>
+</tr>
+</table>
 
 **3. Connect device**
 
 <table>
 <tr>
-<td width="250px"> \r\n+CONN=aa,bb,cc,dd,ee,ff\r\n
-</td>
-<td width="500px"> Connect to a device with address of "aa,bb,cc,dd,ee,ff”
-</td></tr></table>
+<td width="250px">\r\n+CONN=aa,bb,cc,dd,ee,ff\r\n</td>
+<td width="500px">Connect to a device with address of "aa,bb,cc,dd,ee,ff"</td>
+</tr>
+</table>
 
 **4. Bluetooth module requests inputting PINCODE**
 
@@ -534,13 +372,13 @@ When **+INQ=1** command is successful, the  red and  green LEDS blink alternativ
 
 <table>
 <tr>
-<td colspan="2"> \r\n+RTPIN=code\r\n
-</td></tr>
+<td colspan="2">\r\n+RTPIN=code\r\n</td>
+</tr>
 <tr>
-<td> Example: RTPIN=0000
-</td>
-<td> Input PINCODE which is four zero
-</td></tr></table>
+<td>Example: RTPIN=0000</td>
+<td>Input PINCODE which is four zero</td>
+</tr>
+</table>
 
 **6. Disconnect device** Pulling PIO0 high will disconnect current working Bluetooth device.
 

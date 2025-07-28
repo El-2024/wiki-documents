@@ -25,51 +25,36 @@ Skeleton Box 3.0は最新バージョンの保護回路デバイスです。ア�
 
 ##  仕様
 
-<table  cellspacing="0" width="50%">
+<table>
 <tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 長さ
-</th>
-<th scope="col"> 幅
-</th>
-<th scope="col"> 高さ
-</th>
-<th scope="col"> 単位
-</th></tr>
+<th>項目</th>
+<th>長さ</th>
+<th>幅</th>
+<th>高さ</th>
+<th>単位</th>
+</tr>
 <tr>
-<th scope="row"> Skeleton Box 10x7
-</th>
-<td> 106
-</td>
-<td> 67
-</td>
-<td> 36
-</td>
-<td> mm
-</td></tr>
+<td>Skeleton Box 10x7</td>
+<td>106</td>
+<td>67</td>
+<td>36</td>
+<td>mm</td>
+</tr>
 <tr>
-<th scope="row"> Skeleton Box 10x10
-</th>
-<td> 106
-</td>
-<td> 106
-</td>
-<td> 36
-</td>
-<td> mm
-</td></tr>
+<td>Skeleton Box 10x10</td>
+<td>106</td>
+<td>106</td>
+<td>36</td>
+<td>mm</td>
+</tr>
 <tr>
-<th scope="row"> Skeleton Box 17x10
-</th>
-<td> 177
-</td>
-<td> 106
-</td>
-<td> 36
-</td>
-<td> mm
-</td></tr></table>
+<td>Skeleton Box 17x10</td>
+<td>177</td>
+<td>106</td>
+<td>36</td>
+<td>mm</td>
+</tr>
+</table>
 
 ##  Skeleton Box リスト
 
@@ -122,8 +107,9 @@ Skeleton Box 17x10には8つのエポキシ板フレームが含まれていま�
 
 ![](https://files.seeedstudio.com/wiki/Skeleton_Box_10x7_10x10_17x10/img/外壳搭建1.jpg)
 
-!!!注意
-    エポキシプレートフレームは長方形に連結できますが、フレーム間の位置関係に注意する必要があります。以下の図のように、すべての長いエポキシプレートフレームは上部に配置され、すべての短いエポキシプレートフレームは下部に配置されるべきです。2つのエポキシプレートフレーム間の位置関係の統一が重要であり、どちらが上部にあるかは問題ではありません。つまり、2つのエポキシプレートフレーム間の高さを均等に保つ必要があります。そうすることで、アクリルパネルとナイロンスタッドを正しく取り付けることができます。
+:::warning
+エポキシプレートフレームは長方形に連結できますが、フレーム間の位置関係に注意する必要があります。以下の図のように、すべての長いエポキシプレートフレームは上部に配置され、すべての短いエポキシプレートフレームは下部に配置されるべきです。2つのエポキシプレートフレーム間の位置関係の統一が重要であり、どちらが上部にあるかは問題ではありません。つまり、2つのエポキシプレートフレーム間の高さを均等に保つ必要があります。そうすることで、アクリルパネルとナイロンスタッドを正しく取り付けることができます。
+:::
 
 ![](https://files.seeedstudio.com/wiki/Skeleton_Box_10x7_10x10_17x10/img/环氧板位置关系.JPG)
 

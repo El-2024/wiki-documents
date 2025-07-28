@@ -27,16 +27,28 @@ SenseCAP [S2110コントローラー](https://www.seeedstudio.com/SenseCAP-XIAO-
 SenseCAP S210xシリーズの工業用センサーは、環境センシングのための即時使用可能な体験を提供します。空気品質監視のための高性能で堅牢なS2101ワイヤレス温湿度センサーをご参照ください。このシリーズには、土壌水分、空気温度と湿度、光強度、CO2、EC、そして8-in-1気象ステーション用のセンサーが含まれています。次の成功する工業プロジェクトのために最新の[SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device)をお試しください。
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td align="center"><font size="{4}"><strong>SenseCAP 工業用センサー</strong></font></td>
+  <tbody>
+    <tr>
+      <td align="center"><font size={4}><strong>SenseCAP 工業用センサー</strong></font></td>
     </tr>
     <tr>
-      <td><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank"><img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S21012103.png" /></a></div>
+      <td>
+        <div align="center">
+          <a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank">
+            <img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S21012103.png" />
+          </a>
+        </div>
       </td>
     </tr>
     <tr>
-      <td align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank"><strong>S2101 空気温度＆湿度</strong></a></td>
+      <td align="center">
+        <a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank">
+          <strong>S2101 空気温度＆湿度</strong>
+        </a>
+      </td>
     </tr>
-  </tbody></table>
+  </tbody>
+</table>
 
 ## 特徴
 
@@ -147,7 +159,7 @@ void loop()
 // ファイル終了
 ```
 
-:::tipsuccess
+:::tip
   すべてが正常に動作すれば、**シリアルモニター** に以下のような結果が表示されます：
 :::
 

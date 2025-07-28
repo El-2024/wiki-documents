@@ -34,8 +34,7 @@ En esta wiki, te presentamos [Whisper en tiempo real en la Jetson](https://githu
 <div class="table-center">
 	<table align="center">
 		<tr>
-			<th>reComputer (u otros dispositivos potenciados por Jetson)
-      </th>
+			<th>reComputer (u otros dispositivos potenciados por Jetson)</th>
       <th>reSpeaker (u otros micrófonos con interfaz USB)</th>
 		</tr>
     <tr>

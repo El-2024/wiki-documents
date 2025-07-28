@@ -176,7 +176,7 @@ With either method, you'll have your firmware updated and ready for integration 
 
 2. **Access Configuration**:
    - Connect to the network using a phone or PC.
-   - Open a browser and navigate to <http://192.168.4.1>.
+   - Open a browser and navigate to [http://192.168.4.1](http://192.168.4.1).
    - Enter the SSID and password of your home Wi-Fi network.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/ap_wireless_setting_page.png" style={{width:'auto', height:680, "border-radius": '15px'}}/></div>

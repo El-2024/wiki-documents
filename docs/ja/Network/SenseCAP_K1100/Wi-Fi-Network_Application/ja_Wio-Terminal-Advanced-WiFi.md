@@ -497,7 +497,7 @@ void loop()
 
 - コードをWio Terminalにアップロードします。
 
-- 同じネットワークからブラウザを使用して<http://WioTerminal.local/>にアクセスし、事前設定されたユーザー名とパスワードを入力します。
+- 同じネットワークからブラウザを使用して[http://WioTerminal.local/](http://WioTerminal.local/)にアクセスし、事前設定されたユーザー名とパスワードを入力します。
 
 ```cpp
 #include <rpcWiFi.h>

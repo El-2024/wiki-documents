@@ -863,11 +863,10 @@ OK+ Set:[P1]
 <td>AT+RSSB?</td>
 <td>OK+RSSB: [P1]</td>
 <td>P1: RSSI 値<br />
-
-<p>9999: 接続なし<br />
+9999: 接続なし<br />
 9998: 後で試してください<br />
 9997: 読み取りエラー<br />
-Xxxx: RSSI 値</p></td>
+Xxxx: RSSI 値</td>
 </tr>
 </tbody>
 </table>
@@ -894,11 +893,10 @@ Xxxx: RSSI 値</p></td>
 <td>AT+RSSE?</td>
 <td>OK+RSSE: [P1]</td>
 <td>P1: RSSI 値<br />
-
-<p>9999: 接続なし<br />
+9999: 接続なし<br />
 9998: 後で試してください<br />
 9997: 読み取りエラー<br />
-Xxxx: RSSI 値</p></td>
+Xxxx: RSSI 値</td>
 </tr>
 </tbody>
 </table>
@@ -1046,8 +1044,7 @@ OK+ Set:[P1]
 <tbody>
 <tr class="odd">
 <td>AT+VERR?<br />
-
-<p>AT+VERS?</p></td>
+AT+VERS?</td>
 <td>バージョン情報</td>
 <td>なし</td>
 </tr>

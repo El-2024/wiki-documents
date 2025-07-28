@@ -78,54 +78,40 @@ Grove series sensors can easily mounting to the PVC plate by rivet.
 
 <table  cellspacing="0" width="80%">
 <tr>
-<th scope="col"> Part
-</th>
-<th scope="col"> Package
-</th>
-<th scope="col"> Qty
-</th></tr>
+<th scope="col">Part</th>
+<th scope="col">Package</th>
+<th scope="col">Qty</th>
+</tr>
 <tr>
-<th scope="row"> Stalker enclosure
-</th>
-<td> 90 diameter 9.25 Height
-</td>
-<td> 1
-</td></tr>
+<th scope="row">Stalker enclosure</th>
+<td>90 diameter 9.25 Height</td>
+<td>1</td>
+</tr>
 <tr>
-<th scope="row"> PVC Mounting piece
-</th>
-<td> Size 200*63mm
-</td>
-<td> 1
-</td></tr>
+<th scope="row">PVC Mounting piece</th>
+<td>Size 200*63mm</td>
+<td>1</td>
+</tr>
 <tr>
-<th scope="row"> Battery separator piece
-</th>
-<td> Size 71.8*60mm
-</td>
-<td> 1
-</td></tr>
+<th scope="row">Battery separator piece</th>
+<td>Size 71.8*60mm</td>
+<td>1</td>
+</tr>
 <tr>
-<th scope="row"> Nylon Screw
-</th>
-<td> M3*6
-</td>
-<td> 4
-</td></tr>
+<th scope="row">Nylon Screw</th>
+<td>M3*6</td>
+<td>4</td>
+</tr>
 <tr>
-<th scope="row"> Screw Column
-</th>
-<td> M3*4
-</td>
-<td> 4
-</td></tr>
+<th scope="row">Screw Column</th>
+<td>M3*4</td>
+<td>4</td>
+</tr>
 <tr>
-<th scope="row">Buffer Sponge
-</th>
-<td> Size 70*55*8mm
-</td>
-<td> 1
-</td></tr>
+<th scope="row">Buffer Sponge</th>
+<td>Size 70*55*8mm</td>
+<td>1</td>
+</tr>
 </table>
 
 ## Tech Support & Product Discussion

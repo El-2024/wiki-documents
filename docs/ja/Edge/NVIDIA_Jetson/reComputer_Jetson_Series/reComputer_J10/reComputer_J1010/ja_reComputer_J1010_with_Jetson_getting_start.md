@@ -26,7 +26,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## はじめに
 reComputer J1010は、NVIDIA Jetson Nano 4GBプロダクションモジュールを搭載したコンパクトなエッジコンピュータで、128のNVIDIA CUDA®コアにより0.5 TFLOPs（FP16）の性能を発揮し、画像分類、物体検出、音声処理などのAIフレームワークやアプリケーションを実行できます。このプロダクションモジュールは16GB eMMC、長期保証、そして生産環境での5～10年の運用寿命を提供します（[Jetson FAQ](https://developer.nvidia.com/embedded/faq)）。また、より複雑なAIワークロードに対応するために21 TOPSのAI性能を発揮するJetson Xavier NXモジュールを搭載したreComputer [J20シリーズ](https://www.seeedstudio.com/reComputer-J2021-p-5438.html?queryID=14111cbf2ca4f2951fd8a4c1762eb435&objectID=5438&indexName=bazaar_retailer_products)もご用意しています。
 
-Jetsonモジュールに加えて、reComputer J1010には、オンボードmicroSDカードスロット、1*USB 3.0、2*USB2.0、HDMI、WiFi、LTE、Bluetooth用のM.2 Key E、RTC、Raspberry Pi GPIO 40ピンなどを備えた[J101キャリアボード](https://www.seeedstudio.com/reComputer-J101-v2-Carrier-Board-for-Jetson-Nano-p-5396.html)、ヒートシンク、アルミケースが含まれています。デバイスにはJetpack 4.6.1がプリインストールされており、USB C 5V/3A電源、キーボード、マウス、イーサネットケーブルを接続するだけで、組み込みAIの旅を始める準備が整います！より多くのUSB 3.0ポートやSSD接続用のオンボードM.2 Key Mが必要な場合は、reComputer J1020を選択できます。
+Jetsonモジュールに加えて、reComputer J1010には、オンボードmicroSDカードスロット、1×USB 3.0、2×USB2.0、HDMI、WiFi、LTE、Bluetooth用のM.2 Key E、RTC、Raspberry Pi GPIO 40ピンなどを備えた[J101キャリアボード](https://www.seeedstudio.com/reComputer-J101-v2-Carrier-Board-for-Jetson-Nano-p-5396.html)、ヒートシンク、アルミケースが含まれています。デバイスにはJetpack 4.6.1がプリインストールされており、USB C 5V/3A電源、キーボード、マウス、イーサネットケーブルを接続するだけで、組み込みAIの旅を始める準備が整います！より多くのUSB 3.0ポートやSSD接続用のオンボードM.2 Key Mが必要な場合は、reComputer J1020を選択できます。
 
 注意：16GB eMMCではストレージが不足するというお客様からの問い合わせを受け、2022年7月30日以降の注文分には、[キャリアボード](https://www.seeedstudio.com/reComputer-J101-v2-Carrier-Board-for-Jetson-Nano-p-5396.html)にmicroSDカードスロットを追加しました。microSDカードへのブートイメージの書き込みやI/O速度の調整については、[ガイド](https://wiki.seeedstudio.com/ja/J1010_Boot_From_SD_Card/#flashing-system-from-j101-to-sd-card)をご確認ください。
 
@@ -72,8 +72,7 @@ Jetsonモジュールに加えて、reComputer J1010には、オンボードmicr
     </tr>
     <tr>
       <td>ビデオデコーダ</td>
-      <td colspan='2' align='center'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60 (H.265 & H.264)
-      </td>
+      <td colspan='2' align='center'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60 (H.265 & H.264)</td>
       <td>4Kp60 | 2x 4Kp30 | 8x 1080p30 | 18x 720p30 (H.264/H.265)</td>
     </tr>
     <tr>
@@ -82,40 +81,39 @@ Jetsonモジュールに加えて、reComputer J1010には、オンボードmicr
     </tr>
     <tr>
       <td>USB</td>
-      <td>1 * USB 3.0 Type A; 
-2 * USB 2.0 Type A;
-1 * USB Type C (デバイスモード用);
-1 * USB Type C (5V電源入力用)</td>
-      <td>4 * USB 3.0 Type-A ；
-1 * Micro-USBポート (デバイスモード用);</td>
-      <td>4 * USB 3.0 Type-A; 
-1 * Micro-USBポート (5V電源入力用またはデバイスモード用)</td>
+      <td>1 × USB 3.0 Type A;
+2 × USB 2.0 Type A;
+1 × USB Type C (デバイスモード用);
+1 × USB Type C (5V電源入力用)</td>
+      <td>4 × USB 3.0 Type-A ；
+1 × Micro-USBポート (デバイスモード用);</td>
+      <td>4 × USB 3.0 Type-A;
+1 × Micro-USBポート (5V電源入力用またはデバイスモード用)</td>
     </tr>
     <tr>
       <td>CSIカメラ接続</td>
-      <td colspan='3' align='center'>2*CSIカメラ (15ピン, 1mmピッチ, MIPI CSI-2)</td>
+      <td colspan='3' align='center'>2×CSIカメラ (15ピン, 1mmピッチ, MIPI CSI-2)</td>
     </tr>
     <tr>
       <td>ディスプレイ</td>
-      <td>1*HDMI Type A</td>
-      <td colspan='2' align='center'>1*HDMI Type A; 
-1*DP</td>
+      <td>1×HDMI Type A</td>
+      <td colspan='2' align='center'>1×HDMI Type A; 1×DP</td>
     </tr>
     <tr>
       <td>ファン</td>
-      <td>1* ファンコネクタ (5V PWM)</td>
-      <td colspan='2' align='center'>1* ファン (5V PWM)</td>
+      <td>1× ファンコネクタ (5V PWM)</td>
+      <td colspan='2' align='center'>1× ファン (5V PWM)</td>
     </tr>
     <tr>
       <td>M.2 KEY E</td>
-      <td>1*M.2 Key E</td>
-      <td>1*M.2 Key E (無効化)</td>
-      <td>1*M.2 Key E</td>
+      <td>1×M.2 Key E</td>
+      <td>1×M.2 Key E (無効化)</td>
+      <td>1×M.2 Key E</td>
     </tr>
     <tr>
       <td>M.2 KEY M</td>
       <td>-</td>
-      <td>1*M.2 Key M</td>
+      <td>1×M.2 Key M</td>
       <td>-</td>
     </tr>
     <tr>
@@ -125,14 +123,13 @@ Jetsonモジュールに加えて、reComputer J1010には、オンボードmicr
     </tr>
     <tr>
       <td>多機能ポート</td>
-      <td colspan='3' align='center'>1* 40ピンヘッダー</td>
+      <td colspan='3' align='center'>1× 40ピンヘッダー</td>
     </tr>
     <tr>
       <td>電源供給</td>
       <td>USB-Type C 5V⎓3A</td>
       <td>DCジャック 12V/2A</td>
-      <td>DCジャック 5V⎓4A；
-Micro-USB 5V⎓2A</td>
+      <td>DCジャック 5V⎓4A；Micro-USB 5V⎓2A</td>
     </tr>
     <tr>
       <td>機械的仕様</td>
@@ -145,7 +142,7 @@ Micro-USB 5V⎓2A</td>
 ## reComputer J1010にJetPackをフラッシュする
 
 :::info
-J1010はJ101キャリアボードを使用しているため、詳細についてはこの[wiki](/reComputer_J1010_J101_Flash_Jetpack)ページを参照してください。
+J1010はJ101キャリアボードを使用しているため、詳細についてはこの[wiki](/ja/reComputer_J1010_J101_Flash_Jetpack)ページを参照してください。
 :::
 
 ## リソース

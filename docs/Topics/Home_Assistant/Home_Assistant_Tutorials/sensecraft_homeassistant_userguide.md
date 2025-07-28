@@ -280,11 +280,11 @@ If you can use the discovered devices, please configure from the discovered sect
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/sensecraft/sensecraft_homeassistant/SenseCraft-HomeAssistantimage42.png" alt="pir" width={800} height="auto" /></p>
 
-Then select <Another instance of the device "SenseCraft"> as shown:
+Then select **Another instance of the device "SenseCraft"** as shown:
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/sensecraft/sensecraft_homeassistant/SenseCraft-HomeAssistantimage43.png" alt="pir" width={500} height="auto" /></p>
 
-Then select `<Add device using host/id (LAN integration)>`.
+Then select **Add device using host/id (LAN integration)**.
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/sensecraft/sensecraft_homeassistant/SenseCraft-HomeAssistantimage44.png" alt="pir" width={500} height="auto" /></p>
 
@@ -340,7 +340,7 @@ In the dialog that appears, search for "sensecraft".
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/sensecraft/sensecraft_homeassistant/SenseCraft-HomeAssistantimage53.png" alt="pir" width={500} height="auto" /></p>
 
-Then click on the filter result, enter and select `<another instance of device "SenseCraft">`, then select "Add devices using SenseCraft Account".
+Then click on the filter result, enter and select **another instance of device "SenseCraft"**, then select "Add devices using SenseCraft Account".
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/sensecraft/sensecraft_homeassistant/SenseCraft-HomeAssistantimage54.png" alt="pir" width={800} height="auto" /></p>
 

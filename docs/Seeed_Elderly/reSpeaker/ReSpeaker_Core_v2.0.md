@@ -763,7 +763,7 @@ pin 1091 = 1
 
 **B. Use UPM Library**
 
-The UPM project implements sensors' driver based on the MRAA library, so we no longer need to care about the GPIO programming or what the I2C address of a sensor, all the default informations and logics for a particular sensor has been wrapped into a UPM library. UPM has supported bunch of sensors. <https://iotdk.intel.com/docs/master/upm/modules.html>. But please note that we didnt confirm every sensor works on the ReSpeaker Core v2.0.
+The UPM project implements sensors' driver based on the MRAA library, so we no longer need to care about the GPIO programming or what the I2C address of a sensor, all the default informations and logics for a particular sensor has been wrapped into a UPM library. UPM has supported bunch of sensors. [UPM modules](https://iotdk.intel.com/docs/master/upm/modules.html). But please note that we didnt confirm every sensor works on the ReSpeaker Core v2.0.
 
 **Example for Grove Digital Light Sensor**
 
@@ -961,7 +961,7 @@ on the new pads, as shown below：
 
 Here are the detail instructions.
 
-- Step 1. git clone <https://github.com/respeaker/image_builder>
+- Step 1. git clone [image_builder repository](https://github.com/respeaker/image_builder)
 - Step 2. modify the upload path @ /publish/respeaker.io_stable.sh
 - Step 3. sudo ./publish/respeaker.io_stable.sh
 

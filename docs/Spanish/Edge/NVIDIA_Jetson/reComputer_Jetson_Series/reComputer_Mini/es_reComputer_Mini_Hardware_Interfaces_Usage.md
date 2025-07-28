@@ -106,7 +106,7 @@ sudo dd if=/dev/zero of=tempfile bs=1M count=1024 conv=fdatasync
   <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/test_nvme.png"/>
 </div>
 
-:::Peligro
+:::danger
 Ejecuta el comando `sudo rm tempfile` para eliminar los archivos de caché una vez completada la prueba.
 :::
 

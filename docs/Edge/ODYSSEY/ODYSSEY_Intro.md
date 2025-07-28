@@ -27,10 +27,8 @@ last_update:
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/ODYSSEY-X86J4125800-v2-p-5531.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ODYSSEY-X86J4105/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/ODYSSEY-X86J4125800-v2-p-5531.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ODYSSEY-X86J4105/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
 <br />
@@ -347,10 +345,8 @@ last_update:
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Odyssey-MP135D-p-5727.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ODYSSEY-STM32MP135D/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Odyssey-MP135D-p-5727.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ODYSSEY-STM32MP135D/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
 <br />
@@ -370,10 +366,8 @@ last_update:
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/ODYSSEY-STM32MP157C-p-4464.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ODYSSEY-STM32MP157C/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/ODYSSEY-STM32MP157C-p-4464.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ODYSSEY-STM32MP157C/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
 <br />
@@ -393,10 +387,8 @@ last_update:
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-SoM-STM32MP157C-p-4500.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SEEED-SOM-STM32MP157C/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-SoM-STM32MP157C-p-4500.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SEEED-SOM-STM32MP157C/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
 

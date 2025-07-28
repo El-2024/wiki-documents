@@ -63,7 +63,7 @@ New code (compatible with both v4.0 and v5.0):https://github.com/Seeed-Studio/Gr
 |Item|Value|
 |------|----------|
 | Input Voltage|5V|
-| Operating Current | <60mA |
+| Operating Current | &lt;60mA |
 |CGROM | 10880 bit |
 | CGRAM | 64x8 bit |
 | LCD I2C Address | 0X3E |

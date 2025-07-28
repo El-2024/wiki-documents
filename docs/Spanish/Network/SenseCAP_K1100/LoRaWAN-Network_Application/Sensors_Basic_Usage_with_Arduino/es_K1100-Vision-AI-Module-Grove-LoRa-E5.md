@@ -20,7 +20,11 @@ Con el [controlador SenseCAP S2110](https://www.seeedstudio.com/SenseCAP-XIAO-Lo
 La carcasa con protección IP66, la configuración por Bluetooth, la compatibilidad con la red global LoRaWAN®, la batería incorporada de 19 Ah y el potente soporte desde la app hacen de los [SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device) la mejor opción para aplicaciones industriales. Esta serie incluye sensores para humedad del suelo, temperatura y humedad del aire, intensidad lumínica, CO₂, conductividad eléctrica (EC) y una estación meteorológica 8 en 1. Prueba los últimos SenseCAP S210x para tu próximo proyecto industrial exitoso.
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP Industrial Sensor</strong></font></td>
+  <tbody>
+    <tr>
+      <td colSpan={4} bgcolor="#0e3c49" align="center">
+        <font color="white" size={4}><strong>SenseCAP Industrial Sensor</strong></font>
+      </td>
     </tr>
     <tr>
       <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div>

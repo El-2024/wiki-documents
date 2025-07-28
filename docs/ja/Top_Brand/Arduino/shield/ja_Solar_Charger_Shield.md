@@ -71,150 +71,31 @@ tags:
 
 ### 主な仕様
 
-<table>
-  <tbody><tr>
-      <td width="400px"> PCBサイズ
-      </td>
-      <td width="400px"> 5.3 x 6.9 x 0.16 cm
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> インジケーター
-      </td>
-      <td> 充電中、完了
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 電源供給
-      </td>
-      <td>4.4VDV-6VDC
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 電源コネクタ
-      </td>
-      <td> Mini USB / JST
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> RoHS
-      </td>
-      <td> YES
-      </td></tr></tbody></table>
+| 項目 | 仕様 |
+|------|------|
+| PCBサイズ | 5.3 x 6.9 x 0.16 cm |
+| インジケーター | 充電中、完了 |
+| 電源供給 | 4.4VDV-6VDC |
+| 電源コネクタ | Mini USB / JST |
+| RoHS | YES |
 
 ### 充電
 
-<table>
-  <tbody><tr>
-      <th>仕様
-      </th>
-      <th>最小
-      </th>
-      <th>標準
-      </th>
-      <th>最大
-      </th>
-      <th>単位
-      </th></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={600}> 入力電圧
-      </td>
-      <td width={100}>  4.4
-      </td>
-      <td width={100}>  5
-      </td>
-      <td width={100}>  6
-      </td>
-      <td width={100}>  VDC
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 低電力しきい値
-      </td>
-      <td>
-      </td>
-      <td>  3.7
-      </td>
-      <td>  3.9
-      </td>
-      <td>  VDC
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 充電電圧
-      </td>
-      <td>  4.158
-      </td>
-      <td>  4.2
-      </td>
-      <td>  4.242
-      </td>
-      <td>  VDC
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 事前充電しきい値
-      </td>
-      <td>  2.9
-      </td>
-      <td>  3
-      </td>
-      <td>  3.1
-      </td>
-      <td>  VDC
-      </td></tr></tbody></table>
+| 仕様 | 最小 | 標準 | 最大 | 単位 |
+|------|------|------|------|------|
+| 入力電圧 | 4.4 | 5 | 6 | VDC |
+| 低電力しきい値 | - | 3.7 | 3.9 | VDC |
+| 充電電圧 | 4.158 | 4.2 | 4.242 | VDC |
+| 事前充電しきい値 | 2.9 | 3 | 3.1 | VDC |
 
 ### 電力供給
 
-<table>
-  <tbody><tr>
-      <th>仕様
-      </th>
-      <th>最小
-      </th>
-      <th>標準
-      </th>
-      <th>最大
-      </th>
-      <th>単位
-      </th></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={600}> バッテリー電圧
-      </td>
-      <td width={100}>  2.8
-      </td>
-      <td width={100}>  3.7
-      </td>
-      <td width={100}>  4.2
-      </td>
-      <td width={100}>  VDC
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 出力電圧
-      </td>
-      <td>  4.6
-      </td>
-      <td>  4.8
-      </td>
-      <td>  5.0
-      </td>
-      <td>  VDC
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 出力電流
-      </td>
-      <td>  200
-      </td>
-      <td>  4.2
-      </td>
-      <td>  500
-      </td>
-      <td>  mA
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 昇圧効率
-      </td>
-      <td>  70
-      </td>
-      <td>  80
-      </td>
-      <td>  87
-      </td>
-      <td> &nbsp;%
-      </td></tr></tbody></table>
+| 仕様 | 最小 | 標準 | 最大 | 単位 |
+|------|------|------|------|------|
+| バッテリー電圧 | 2.8 | 3.7 | 4.2 | VDC |
+| 出力電圧 | 4.6 | 4.8 | 5.0 | VDC |
+| 出力電流 | 200 | 4.2 | 500 | mA |
+| 昇圧効率 | 70 | 80 | 87 | % |
 
 ### 充電曲線
 
@@ -288,21 +169,9 @@ AA
 
 ## バージョントラッカー  
 
-<table>
-  <tbody><tr>
-      <th>リビジョン
-      </th>
-      <th>説明
-      </th>
-      <th>リリース日
-      </th></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={300}> Solar Charger Shield v1.0
-      </td>
-      <td width={500}> 初回公開リリース
-      </td>
-      <td width={200}> 2010年5月1日
-      </td></tr></tbody></table>
+| リビジョン | 説明 | リリース日 |
+|-----------|------|-----------|
+| Solar Charger Shield v1.0 | 初回公開リリース | 2010年5月1日 |
 
 ## バグトラッカー  
 

@@ -31,136 +31,97 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table cellspacing="0" width="80%">
 <tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 最小
-</th>
-<th scope="col"> 典型
-</th>
-<th scope="col"> 最大
-</th>
-<th scope="col"> 単位
-</th></tr>
+<th scope="col"> 項目</th>
+<th scope="col"> 最小</th>
+<th scope="col"> 典型</th>
+<th scope="col"> 最大</th>
+<th scope="col"> 単位</th>
+</tr>
 <tr>
-<th scope="row"> 電圧
-</th>
-<td>4.5
-</td>
-<td>5
-</td>
-<td>5.5
-</td>
-<td>VDC
-</td></tr>
+<th scope="row"> 電圧</th>
+<td>4.5</td>
+<td>5</td>
+<td>5.5</td>
+<td>VDC</td>
+</tr>
 <tr>
-<th scope="row"> 電流
-</th>
-<td>/
-</td>
-<td>/
-</td>
-<td>250
-</td>
-<td>mA
-</td></tr>
+<th scope="row"> 電流</th>
+<td>/</td>
+<td>/</td>
+<td>250</td>
+<td>mA</td>
+</tr>
 <tr>
-<th scope="row"> LCD パネルサイズ
-</th>
-<td colspan="3"> 2.8
-</td>
-<td>インチ
-</td></tr>
+<th scope="row"> LCD パネルサイズ</th>
+<td colspan="3"> 2.8</td>
+<td>インチ</td>
+</tr>
 <tr>
-<th scope="row"> 視野角
-</th>
-<td colspan="3"> 60~120
-</td>
-<td>度
-</td></tr>
+<th scope="row"> 視野角</th>
+<td colspan="3"> 60~120</td>
+<td>度</td>
+</tr>
 <tr>
-<th scope="row"> 解像度
-</th>
-<td colspan="3"> 320x240
-</td>
-<td>/
-</td></tr>
+<th scope="row"> 解像度</th>
+<td colspan="3"> 320x240</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> LCD 色
-</th>
-<td colspan="3"> 65k
-</td>
-<td>/
-</td></tr>
+<th scope="row"> LCD 色</th>
+<td colspan="3"> 65k</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> バックライトタイプ
-</th>
-<td colspan="3"> LED
-</td>
-<td>/
-</td></tr>
+<th scope="row"> バックライトタイプ</th>
+<td colspan="3"> LED</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> LCD ドライバ IC
-</th>
-<td colspan="3"> ST7781R
-</td>
-<td>/
-</td></tr>
+<th scope="row"> LCD ドライバ IC</th>
+<td colspan="3"> ST7781R</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> インターフェースタイプ
-</th>
-<td colspan="3"> 10±2
-</td>
-<td>g
-</td></tr>
+<th scope="row"> インターフェースタイプ</th>
+<td colspan="3"> 10±2</td>
+<td>g</td>
+</tr>
 <tr>
-<th scope="row"> インターフェースタイプ
-</th>
-<td colspan="3"> パラレルポート (8ビットデータ + 4ビット制御)
-</td>
-<td>/
-</td></tr>
+<th scope="row"> インターフェースタイプ</th>
+<td colspan="3"> パラレルポート (8ビットデータ + 4ビット制御)</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> タッチスクリーン
-</th>
-<td colspan="3"> 4線式抵抗膜タッチスクリーン
-</td>
-<td>/
-</td></tr>
+<th scope="row"> タッチスクリーン</th>
+<td colspan="3"> 4線式抵抗膜タッチスクリーン</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> アクティブエリア
-</th>
-<td colspan="3"> 43.2*57.3
-</td>
-<td>mm
-</td></tr>
+<th scope="row"> アクティブエリア</th>
+<td colspan="3"> 43.2*57.3</td>
+<td>mm</td>
+</tr>
 <tr>
-<th scope="row"> ESD 接触放電
-</th>
-<td colspan="3"> ±4
-</td>
-<td>KV
-</td></tr>
+<th scope="row"> ESD 接触放電</th>
+<td colspan="3"> ±4</td>
+<td>KV</td>
+</tr>
 <tr>
-<th scope="row"> ESD 空気放電
-</th>
-<td colspan="3"> ±8
-</td>
-<td>KV
-</td></tr>
+<th scope="row"> ESD 空気放電</th>
+<td colspan="3"> ±8</td>
+<td>KV</td>
+</tr>
 <tr>
-<th scope="row"> 寸法
-</th>
-<td colspan="3"> 72.5x54.7x18
-</td>
-<td>mm
-</td></tr>
+<th scope="row"> 寸法</th>
+<td colspan="3"> 72.5x54.7x18</td>
+<td>mm</td>
+</tr>
 <tr>
-<th scope="row"> 重量
-</th>
-<td colspan="3"> 24±2
-</td>
-<td>g
-</td></tr></table>
+<th scope="row"> 重量</th>
+<td colspan="3"> 24±2</td>
+<td>g</td>
+</tr>
+</table>
 
 **注意事項**
 

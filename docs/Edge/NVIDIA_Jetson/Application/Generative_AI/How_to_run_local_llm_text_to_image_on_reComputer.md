@@ -48,8 +48,7 @@ For this tutorial, we're going to need a Nvidia [Jetson Orin NX 16GB](https://ww
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
 </div>
 
 And we're going to need to make sure that TensorFlow and PyTorch are installed - but I'm going through that here. 
@@ -477,7 +476,7 @@ We can also use curl to get the image and save it.
 </div>
 
 If we want to give it a prompt (as we should), the URL will look like
-*http://jetsonIP:8080/generate_image?prompt=<your_prompt>*
+*http://jetsonIP:8080/generate_image?prompt=&lt;your_prompt&gt;*
 
 We can expand this example to build a better page, like having some text boxes for user input, a nice background, etc. But this is for another project. 
 
@@ -633,7 +632,7 @@ When selecting, AUTOMATIC1111 will optimize the model.
 If it gets getting killed or an error appears, get more space. It was happening to me and after getting more space, everything worked out. 
 
 Using the following prompt
->holding a staff, orbstaff <lora:orbstaff:0.60> , ,(by Gabriel Isak and Adam Elsheimer:1.20), (by Jon Whitcomb and Bayard Wu and Malcolm Liepke0.80),8k , professional fashion shot
+>holding a staff, orbstaff `<lora:orbstaff:0.60>` , ,(by Gabriel Isak and Adam Elsheimer:1.20), (by Jon Whitcomb and Bayard Wu and Malcolm Liepke0.80),8k , professional fashion shot
 
 [from this image](https://civitai.com/images/8570722),
 without the negative prompt, I got the following result

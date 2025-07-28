@@ -26,8 +26,7 @@ Wio Terminal电池底座是 [Wio-Terminal](https://www.seeedstudio.com/Wio-Termi
 通过 [Wio-Terminal 开发板](https://www.seeedstudio.com/Wio-Terminal-p-4509.html) + Wio Terminal电池底座, 您可以轻松构建最强大、最紧凑的物联网项目。借助扩展的Grove端口，您可以享受 [Grove 生态系统](https://www.seeedstudio.com/category/Grove-c-1003.html)的即插即用功能!
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-Chassis-Battery-650mAh-p-4756.html"><strong><span><font color={'FFFFFF'} size={"4"}> 点击购买 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-Chassis-Battery-650mAh-p-4756.html"><strong><span><font color={'FFFFFF'} size={"4"}> 点击购买 🖱️</font></span></strong></a>
 </div>
 
 ## 特点

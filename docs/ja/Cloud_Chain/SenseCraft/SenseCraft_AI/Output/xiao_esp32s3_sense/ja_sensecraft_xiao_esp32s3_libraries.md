@@ -234,8 +234,8 @@ GitHub から [Seeed_Arduino_SSCMA](https://github.com/Seeed-Studio/Seeed_Arduin
 
 :::note
 I2C通信には以下のプロトコルを使用してください：
-- READ: バイト 0x10, 0x01, LEN << 8, LEN & 0xff を送信
-- WRITE: バイト 0x10, 0x02, LEN << 8, LEN & 0xff を送信
+- READ: バイト 0x10, 0x01, LEN &lt;&lt; 8, LEN &amp; 0xff を送信
+- WRITE: バイト 0x10, 0x02, LEN &lt;&lt; 8, LEN &amp; 0xff を送信
 - AVAIL（データの有無を確認）: バイト 0x10, 0x03 を送信
 - RESET（バッファをクリア）: バイト 0x10, 0x06 を送信
 :::
@@ -362,8 +362,8 @@ void loop()
 
 :::note
 SPI通信には以下のプロトコルを使用してください：
-- READ: バイト 0x10, 0x01, LEN << 8, LEN & 0xff を送信
-- WRITE: バイト 0x10, 0x02, LEN << 8, LEN & 0xff を送信
+- READ: バイト 0x10, 0x01, LEN &lt;&lt; 8, LEN &amp; 0xff を送信
+- WRITE: バイト 0x10, 0x02, LEN &lt;&lt; 8, LEN &amp; 0xff を送信
 - AVAIL (データの有無を確認): バイト 0x10, 0x03 を送信
 - RESET (バッファをクリア): バイト 0x10, 0x06 を送信
 :::

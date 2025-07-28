@@ -80,8 +80,9 @@ Type "help", "copyright", "credits" or "license" for more information.
   <tbody>
     <tr>
       <td>目标检测</td>
-      <td> <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/000402.jpg" alt="pir" width={600} height="auto" /></p></td>
-      <td>演示：车辆检测 <br />
+      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/000402.jpg" alt="pir" width={600} height="auto" /></p></td>
+      <td>
+        演示：车辆检测 <br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_multi_stage.ipynb" target="_top">Jupyter Notebook</a><br />
         <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/detector" target="_top">示例脚本</a> <br />
         alpha 0.25 224x224 66.7 FPS (15 ms.)<br />
@@ -93,7 +94,8 @@ Type "help", "copyright", "credits" or "license" for more information.
     <tr>
       <td>图像分类</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/belt.png" alt="pir" width={600} height="auto" /></p> </td>
-      <td>演示：工业传送带裂纹识别<br />
+      <td>
+        演示：工业传送带裂纹识别<br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_conveyor_belt_rip_recognition.ipynb" target="_top">Jupyter Notebook</a><br />
         <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier" target="_top">示例脚本</a>
       </td>
@@ -101,7 +103,8 @@ Type "help", "copyright", "credits" or "license" for more information.
     <tr>
       <td>语义分割</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/CHNCXR_0331_1.png" alt="pir" width={600} height="auto" /></p></td>
-      <td>演示：肺部分割 <br />
+      <td>
+        演示：肺部分割 <br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_lung_segmentation.ipynb" target="_top">Jupyter Notebook</a><br />
         <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/segnet" target="_top">示例脚本</a>
       </td>
@@ -109,7 +112,8 @@ Type "help", "copyright", "credits" or "license" for more information.
     <tr>
       <td>人脸年龄/性别识别</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/output.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>演示：多阶段推理：MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
+      <td>
+        演示：多阶段推理：MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
         <a href="https://github.com/AIWintermuteAI/edge_ml_age_gender_recognition/tree/master" target="_top">Github 仓库</a><br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_age_gender" target="_top">示例脚本</a> <br />
         ~16-20 FPS (使用 <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_age-gender" target="_top">ARM NN</a>)
@@ -118,7 +122,8 @@ Type "help", "copyright", "credits" or "license" for more information.
     <tr>
       <td>人脸表情识别</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/ml/emotion/emotions.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>演示：多阶段推理：MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
+      <td>
+        演示：多阶段推理：MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
         <a href="https://github.com/AIWintermuteAI/edge_ml_emotion_recognition/tree/master" target="_top">Github 仓库</a><br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_emotion" target="_top">示例脚本</a> <br />
         ~11 FPS
@@ -127,7 +132,8 @@ Type "help", "copyright", "credits" or "license" for more information.
     <tr>
       <td>人脸防伪</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/ml/face_anti-spoofing/face_anti-spoofing.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>演示：多阶段推理：MobileNet YOLOv3 alpha 0.25 -&gt; MobileNet v1 alpha 0.25<br />
+      <td>
+        演示：多阶段推理：MobileNet YOLOv3 alpha 0.25 -&gt; MobileNet v1 alpha 0.25<br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_face_anti_spoofing.ipynb" target="_top">Jupyter Notebook</a><br />
         <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier" target="_top">示例脚本</a>  <br />
         ~23 FPS (ARM NN)
@@ -136,8 +142,9 @@ Type "help", "copyright", "credits" or "license" for more information.
     <tr>
       <td>人脸识别</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/face_recognition.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>演示：多阶段推理：超轻量人脸检测器与关键点检测 -&gt; MobileFaceNet<br />
-         <a >Jupyter Notebook</a><br /> 
+      <td>
+        演示：多阶段推理：超轻量人脸检测器与关键点检测 -&gt; MobileFaceNet<br />
+         <a href="#" target="_top">Jupyter Notebook</a><br /> 
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_recognition" target="_top">示例脚本</a>  <br />
         ~15 FPS (ARM NN)
       </td>
@@ -151,7 +158,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 由于 reTerminal 基于 Raspberry Pi 4，它没有额外的硬件加速器用于神经网络推理，因此只能应用标准的 CPU 推理优化方法。
 关于该主题的视频概述如下：
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/BEDEscDQFxk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/BEDEscDQFxk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 以下是 CPU 推理优化方法的简要概述：
 
@@ -183,17 +190,16 @@ MobileNetv1(alpha 0.25) YOLOv2 1 类 0.89 MB 83 FPS
 MobileNetv1(alpha 1.0) YOLOv3 20 类 13.1 MB 7.2 FPS  
 
 优化内核的主要问题是不同框架对不同架构/神经网络操作符/精度类型的支持不均。例如，INT8 优化内核在 ARM NN 和 XNNPACK 中仍在开发中。XNNPACK 对 INT8 优化内核的支持最近刚刚添加，似乎带来了约 30% 的适度性能提升，具体取决于模型中使用的操作符。  
-<https://github.com/google/XNNPACK/issues/999#issuecomment-870791779>
+[XNNPACK INT8 支持讨论](https://github.com/google/XNNPACK/issues/999#issuecomment-870791779)
 
 另一个有前景的方向是针对动态量化模型的优化内核，请参阅开发者的讨论：  
-<https://github.com/tensorflow/tensorflow/pull/48751#issuecomment-869111116>
+[动态量化模型优化讨论](https://github.com/tensorflow/tensorflow/pull/48751#issuecomment-869111116)
 
 开发者声称延迟改善了 3-4 倍，但目前仅限于非常特定的一组模型。一个允许更方便使用的 PR 正在开发中。
 
 4) **剪枝和稀疏推理**。剪枝是对训练好的神经网络进行微调以找到不影响正确预测的权重的过程。这可以减少模型的大小和延迟——准确性减少取决于稀疏设置。实验表明，可以实现高达 80% 的稀疏性，同时对准确性的影响可以忽略不计。详情请参阅  
-<https://ai.googleblog.com/2021/03/accelerating-neural-networks-on-mobile.html>  
-以及 Tensorflow 剪枝指南：  
-<https://www.tensorflow.org/model_optimization/guide/pruning/pruning_for_on_device_inference>  
+[移动设备上的神经网络加速](https://ai.googleblog.com/2021/03/accelerating-neural-networks-on-mobile.html)  
+以及 [TensorFlow 剪枝指南](https://www.tensorflow.org/model_optimization/guide/pruning/pruning_for_on_device_inference)。  
 不幸的是，目前只有非常有限的一组模型支持使用 XNNPACK 进行剪枝和稀疏推理。
 
 ## 常见问题解答

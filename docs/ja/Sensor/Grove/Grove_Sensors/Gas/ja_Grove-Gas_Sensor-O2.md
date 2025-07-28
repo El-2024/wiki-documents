@@ -27,8 +27,8 @@ Grove - 酸素センサー(ME2-O2-Ф20)は、空気中の酸素濃度を測定�
 
 [<p><img src="https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/images/get_one_now.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/grove-gas-sensoro2-p-1541.html)
 
-:::Tip
-    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶ際に役立ちます。
+:::tip
+[Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶ際に役立ちます。
 :::
 ## 特徴
 
@@ -38,8 +38,8 @@ Grove - 酸素センサー(ME2-O2-Ф20)は、空気中の酸素濃度を測定�
 * 強力な耐干渉性
 * 優れた信頼性
 
-:::Tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
+:::tip
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 ## 仕様
 

@@ -115,7 +115,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 これは、I^2^Cバスの異なる電圧セクションを接続するための典型的な双方向レベルシフター回路です。このセンサーのI<sup>2</sup>Cバスは3.3Vを使用しますが、ArduinoのI<sup>2</sup>Cバスが5Vを使用する場合、この回路が必要です。上記の回路図では、**Q17**と**Q18**はNチャンネルMOSFET [2N7002A](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/2N7002A_datasheet.pdf)で、双方向スイッチとして機能します。この部分をよりよく理解するために、[AN10441](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/AN10441.pdf)を参照してください。
 
 :::note
-        このセクションでは回路図の一部のみを示しています。完全なドキュメントについては[Resources](/#resources)を参照してください。
+        このセクションでは回路図の一部のみを示しています。完全なドキュメントについてはResourcesを参照してください。
 :::
 
 ## 対応プラットフォーム

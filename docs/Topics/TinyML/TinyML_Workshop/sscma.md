@@ -133,8 +133,7 @@ Connect the XIAO to your PC using a data cable with data transfer function.
 Click the button below to go to the SenseCraft AI Platform homepage.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-	<a class="get_one_now_item" href="https://sensecraft.seeed.cc/ai/#/device/local?time=1724577953974">
-	<strong><span><font color={'FFFFFF'} size={"2"}>SenseCraft AI Platform</font></span></strong></a>
+	<a class="get_one_now_item" href="https://sensecraft.seeed.cc/ai/#/device/local?time=1724577953974"><strong><span><font color={'FFFFFF'} size={"2"}>SenseCraft AI Platform</font></span></strong></a>
 </div><br />
 
 Once we are on the homepage of SenseCraft AI Platform, we need to first need to connect the XIAO ESPS3 for that, click **Connect** button.
@@ -195,7 +194,7 @@ Download the three binary files below.
 	<table align="center">
 		<tr>
 			<td>bootloader.bin</td>
-			<td><a href="https://github.com/salmanfarisvp/TinyML/raw/main/XIAO-esp32-S3-Sense/KeyWordSpotting(KWS)/src/bin/xiao_esp32_yes_no.ino.bootloader.bin"target="_blank"><b>Download</b></a></td>
+			<td><a href="https://github.com/salmanfarisvp/TinyML/raw/main/XIAO-esp32-S3-Sense/KeyWordSpotting(KWS)/src/bin/xiao_esp32_yes_no.ino.bootloader.bin" target="_blank"><b>Download</b></a></td>
 		</tr>
 		<tr>
 			<td>partition-table.bin</td>
@@ -213,8 +212,7 @@ Download the three binary files below.
 Please click the button below to come to SenseCraft AI Platform Flash Tools page.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-	<a class="get_one_now_item" href="https://seeed-studio.github.io/SenseCraft-Web-Toolkit/#/dashboard/workplace">
-	<strong><span><font color={'FFFFFF'} size={"4"}>Go to SenseCraft AI Platform</font></span></strong></a>
+	<a class="get_one_now_item" href="https://seeed-studio.github.io/SenseCraft-Web-Toolkit/#/dashboard/workplace"><strong><span><font color={'FFFFFF'} size={"4"}>Go to SenseCraft AI Platform</font></span></strong></a>
 </div><br />
 
 Once you are on the web page, please click on the **Connect** button from **Deployment** and then select the port number of your XIAO. Again, it should be clearly labeled **USB JTAG**.

@@ -468,13 +468,11 @@ SelectPlayerDevice(0x02);
 
 * SpecifyMusicPlay(uint16_t index)。_名前で曲を再生します。_
 
-<dl><dd>曲の名前に注意してください。以下の形式のように設定できます：
-</dd></dl>
+<dl><dd>曲の名前に注意してください。以下の形式のように設定できます：</dd></dl>
 
 ![](https://files.seeedstudio.com/wiki/Grove_Speech_Recognizer_Kit_for_Arduino/img/Type_of_songs.png)
 
-<dl><dd>この関数を使用して「005」という曲を再生できます：
-</dd></dl>
+<dl><dd>この関数を使用して「005」という曲を再生できます：</dd></dl>
 
 ```
 SpecifyMusicPlay(5);
@@ -482,8 +480,7 @@ SpecifyMusicPlay(5);
 
 * SpecifyfolderPlay(uint8_t folder, uint8_t index);   // 指定したフォルダ内の名前で曲を再生します
 
-<dl><dd>さらに、新しいフォルダで音楽を再生する場合、前述の機能が便利です。
-</dd></dl>
+<dl><dd>さらに、新しいフォルダで音楽を再生する場合、前述の機能が便利です。</dd></dl>
 
 ![](https://files.seeedstudio.com/wiki/Grove_Speech_Recognizer_Kit_for_Arduino/img/Form_of_folder.png)
 
@@ -630,33 +627,35 @@ clock.fillDayOfWeek(Mon);//月曜日
 <tr>
 <th> 音声ファイル名 </th>
 <th> <font color="Red">SDカード内のファイル番号</font> </th>
-<th> 音声テキスト
-</th></tr>
+<th> 音声テキスト </th>
+</tr>
 <tr>
 <td width="200px"> 000 </td>
 <td width="200px"> 1番目 </td>
-<td width="200px"> 0
-</td></tr>
+<td width="200px"> 0 </td>
+</tr>
 <tr>
 <td width="200px"> 001 </td>
 <td width="200px"> 2番目 </td>
-<td width="200px"> 1
-</td></tr>
+<td width="200px"> 1 </td>
+</tr>
 <tr>
 <td width="200px"> ... </td>
 <td width="200px"> ... </td>
-<td width="200px">  ...
-</td></tr>
+<td width="200px">  ... </td>
+</tr>
 <tr>
 <td width="200px"> 059 </td>
 <td width="200px"> 60番目 </td>
-<td width="200px"> 59
-</td></tr>
+<td width="200px"> 59 </td>
+</tr>
 <tr>
 <td width="200px"> 060 </td>
 <td width="200px"> 61番目 </td>
-<td width="200px"> It's
-</td></tr></table></center>
+<td width="200px"> It's </td>
+</tr>
+</table>
+</center>
 
 **統合プログラムとリアルタイム放送**
 

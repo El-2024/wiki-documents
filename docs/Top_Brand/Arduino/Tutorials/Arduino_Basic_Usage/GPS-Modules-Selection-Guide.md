@@ -22,8 +22,7 @@ One of the global positioning system (GPS) devices ultilizes data from satellite
 
 The four well-known Global Navigation Satellite System include GPS, BDS(Beidou), GLONASS and GALILEO four satellite navigation systems. The earliest appeared in the United States is GPS (Global Positioning System), which is the most complete technology at this stage. BDS, GLONASS and GALILEO have become the other largest satellite navigation systems in the world and are currently in the process of modernization.
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Grove-GPS/img/28251.jpg" /><figcaption><b>Figure 1</b>. <i> Illustration of globe with three satellites triangulating a precise location. ( Tim Gunther, 2020 ) </i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Grove-GPS/img/28251.jpg" /><figcaption><b>Figure 1</b>. <i> Illustration of globe with three satellites triangulating a precise location. ( Tim Gunther, 2020 ) </i></figcaption></div>
 
 We will introduce and compare these two GPS modules:
 
@@ -167,7 +166,7 @@ There are a numerous ultilizations of GPS Modules. Particularly, plenty of socia
 
 | Name| Thumbnail| Size |Update Rate| Baud Rate| Navigation Sensitivity|Power Requirements|Number of Channels| Time to first start | Antennas |Accuracy |Click to Buy|
 |-----------------------------------------------------------------|----------------------------------------------------------------------------------------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-----------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------|
-| [Grove – GPS Module](https://wiki.seeedstudio.com/Grove-GPS/)  | <img src="https://files.seeedstudio.com/wiki/Grove-GPS/img/gps-module.jpg"/>|40mm x 20mm x 13mm|1Hz, max 10Hz|9,600bps – 115,200bps|-160dBm|3.3V - 5V|22 tracking, 66 channels|Cold start: 13s; Warm start: 1-2s; Hot start: <1s|Antenna included|2.5m GPS Horizontal Position Accuracy|[Order Now](https://www.seeedstudio.com/Grove-GPS-Module.html?utm_source=blog&utm_medium=blog)|
+| [Grove – GPS Module](https://wiki.seeedstudio.com/Grove-GPS/) | ![Grove GPS](https://files.seeedstudio.com/wiki/Grove-GPS/img/gps-module.jpg) | `40mm x 20mm x 13mm` | `1Hz, max 10Hz` | `9,600bps – 115,200bps` | `-160dBm` | `3.3V - 5V` | `22 tracking, 66 channels` | `Cold start: 13s; Warm start: 1-2s; Hot start: <1s` | Antenna included | `2.5m GPS Horizontal Position Accuracy` | [Order Now](https://www.seeedstudio.com/Grove-GPS-Module.html?utm_source=blog&utm_medium=blog) |
 | [Grove – GPS (Air530)](https://wiki.seeedstudio.com/Grove-GPS-Air530/)  | <img src="https://files.seeedstudio.com/wiki/Grove-GPS/img/03_11.png"/>|40mm x 20mm x 13mm|/|Default 9,600bps|-148dB|3.3V - 5V|/|Cold start: 27s; Warm start: 4s;|Antenna included|2.5m Horizontal positioning accuracy|[Order Now](https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html)|
 
 ### Which GPS Module is better

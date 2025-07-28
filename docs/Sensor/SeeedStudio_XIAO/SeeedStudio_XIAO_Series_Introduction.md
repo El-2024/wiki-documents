@@ -34,8 +34,7 @@ last_update:
 ## Seeed Studio XIAO Series Comparison Table
 
 
-<table align="center">
-<font size={"2"}>
+<table align="center" style={{fontSize: '0.9em'}}>
 	<tr>
         <th></th>
 	    <th><a href="https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html">Seeed Studio XIAO SAMD21</a></th>
@@ -98,18 +97,18 @@ last_update:
 	</tr>
 	<tr>
 	    <th>Architecture</th>
-	    <td align="center">Cortex-M0+<br />running up to 48MHz</td>
-	    <td align="center">Dual-core Cortex-M0+<br />running up to 133 MHz</td>
-        <td align="center">Dual ARM Cortex-M33<br />running up to 150 MHz with FPU<br />switchable RISC‑V using dual Hazard3 RISC‑V cores</td>
-	    <td align="center">Cortex-M4<br />running up to 64 MHz</td>
-	    <td align="center">Cortex-M4<br />running up to 64 MHz</td>
+	    <td align="center">Cortex-M0+<br/>running up to 48MHz</td>
+	    <td align="center">Dual-core Cortex-M0+<br/>running up to 133 MHz</td>
+        <td align="center">Dual ARM Cortex-M33<br/>running up to 150 MHz with FPU<br/>switchable RISC‑V using dual Hazard3 RISC‑V cores</td>
+	    <td align="center">Cortex-M4<br/>running up to 64 MHz</td>
+	    <td align="center">Cortex-M4<br/>running up to 64 MHz</td>
         <td align="center">RISC-V<br/>running up to 160 MHz</td>
-        <td align="center">Two RISC-V processors<br />high-performance one running up to 160 MHz<br/>low-power one running up to 20 MHz</td>
-        <td align="center">Dual-core Xtensa LX7<br />running up to 240 MHz</td>
-        <td align="center">Dual-core Xtensa LX7<br />running up to 240 MHz</td>
-        <td align="center">Cortex-M4<br />running up to 48 MHz with FPU</td>
-        <td align="center">ARM Cortex-M33 <br />running up to 78 MHz</td>
-        <td align="center">ARM Cortex-M33 <br />running up to 78 MHz</td>
+        <td align="center">Two RISC-V processors<br/>high-performance one running up to 160 MHz<br/>low-power one running up to 20 MHz</td>
+        <td align="center">Dual-core Xtensa LX7<br/>running up to 240 MHz</td>
+        <td align="center">Dual-core Xtensa LX7<br/>running up to 240 MHz</td>
+        <td align="center">Cortex-M4<br/>running up to 48 MHz with FPU</td>
+        <td align="center">ARM Cortex-M33<br/>running up to 78 MHz</td>
+        <td align="center">ARM Cortex-M33<br/>running up to 78 MHz</td>
 	</tr>
 	<tr>
 	    <th>RAM</th>
@@ -120,8 +119,8 @@ last_update:
 	    <td align="center">256 KB RAM</td>
         <td align="center">400 KB SRAM</td>
         <td align="center">512KB SRAM</td>
-        <td align="center">512 KB SRAM<br />8MB PSRAM</td>
-        <td align="center">512 KB SRAM<br />8MB PSRAM</td>
+        <td align="center">512 KB SRAM<br/>8MB PSRAM</td>
+        <td align="center">512 KB SRAM<br/>8MB PSRAM</td>
         <td align="center">32 KB SRAM</td>
         <td align="center">256kB RAM</td>
         <td align="center">256kB RAM</td>
@@ -307,7 +306,7 @@ last_update:
         <td align="center">1.95μA</td>
 	</tr>
    <tr>
-	    <td colspan="11"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/xiao_topic_page/"><strong><span><font color={'FFFFFF'} size={"3"}>📚 Compatible Project</font></span></strong></a></div></td>        
+	    <td colspan="13" style={{textAlign: 'center', backgroundColor: '#007bff', padding: '10px'}}><a href="https://wiki.seeedstudio.com/xiao_topic_page/" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 Compatible Project</a></td>        
 	</tr>
     <tr>
 	    <th>Arduino</th>
@@ -384,7 +383,6 @@ last_update:
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>❌</font></td> 
     </tr>
-</font>
 </table>
 
 ## Seeed Studio XIAO Series Compatible Accessories
@@ -394,8 +392,7 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 ## Getting Started with Seeed Studio XIAO
 
-<table align="center">
-<font size={"2"}>
+<table align="center" style={{fontSize: '0.9em'}}>
     <tr>
         <th align="center"><strong>Wikis</strong></th>
         <th align="center"><strong>Book</strong></th>
@@ -404,20 +401,19 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
         <th align="center"><strong>Courses</strong></th>
     </tr>
     <tr>
-        <td><strong>Getting Started Wikis</strong><br />By Seeed Studio AE Team & Community</td>
-        <td>Power, Small Board: Mastering Arduino and TinyML<br />By Marcelo Rovai and Leo Feng</td>
-        <td>Fab XIAO: How to Create a Dev Board from Scratch<br />By <a href="https://www.linkedin.com/in/adri%C3%A1n-torres-oma%C3%B1a/">ADRIÁN TORRES</a></td>
+        <td><strong>Getting Started Wikis</strong><br/>By Seeed Studio AE Team & Community</td>
+        <td>Power, Small Board: Mastering Arduino and TinyML<br/>By Marcelo Rovai and Leo Feng</td>
+        <td>Fab XIAO: How to Create a Dev Board from Scratch<br/>By <a href="https://www.linkedin.com/in/adri%C3%A1n-torres-oma%C3%B1a/">ADRIÁN TORRES</a></td>
         <td>TinyML with the Seeed XIAO<br/>By Jim Bob Bennett</td>
-        <td>Maker100-Eco (Economy) Robotics, IoT and TinyML Machine Learning course<br />By Jeremy Ellis</td>
+        <td>Maker100-Eco (Economy) Robotics, IoT and TinyML Machine Learning course<br/>By Jeremy Ellis</td>
     </tr>
     <tr>
-        <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/xiao_topic_page/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Wiki</font></span></strong></a></div></td>
-        <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-Kit-Courses/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Courses</font></span></strong></a></div></td> 
-        <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://fabacademy.org/2020/labs/leon/students/adrian-torres/fabxiao.html"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Fab-Xiao</font></span></strong></a></div></td> 
-        <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.youtube.com/watch?v=ZsQ0-jXdnRY"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Part1</font></span></strong></a></div><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.youtube.com/watch?v=-1EP3iqYYdU"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Part2</font></span></strong></a></div></td> 
-        <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://github.com/hpssjellis/maker100-eco"><strong><span><font color={'FFFFFF'} size={"4"}>📚 GitHub</font></span></strong></a></div></td>  
+        <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://wiki.seeedstudio.com/xiao_topic_page/" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 Wiki</a></td>
+        <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://wiki.seeedstudio.com/XIAO-Kit-Courses/" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 Courses</a></td> 
+        <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://fabacademy.org/2020/labs/leon/students/adrian-torres/fabxiao.html" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 Fab-Xiao</a></td> 
+        <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://www.youtube.com/watch?v=ZsQ0-jXdnRY" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 Part1</a><br/><a href="https://www.youtube.com/watch?v=-1EP3iqYYdU" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 Part2</a></td> 
+        <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://github.com/hpssjellis/maker100-eco" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 GitHub</a></td>  
     </tr>
-</font>
 </table>
 
 ## Open Source the Seeed Studio XIAO

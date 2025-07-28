@@ -42,129 +42,130 @@ The LaunchPad is a set of Evaluation Kits from Texas Instruments. To introduce n
 
 i.e. MSP-EXP430F5529LP, EK-TM4C123GXL, etc
 
-The BoosterPack was designed in a way to leverage pins in the “inner 20 pins” [21-40]. The pins are connected as shown below in the table:
+The BoosterPack was designed in a way to leverage pins in the "inner 20 pins" [21-40]. The pins are connected as shown below in the table:
 
-Using the table below, developers should be able to read an analog value from a Grove module (i.e. potentiometer/turn knob) that is connected to Grove connector ‘J6’ by using the analogRead(24) API call with Energia.
+Using the table below, developers should be able to read an analog value from a Grove module (i.e. potentiometer/turn knob) that is connected to Grove connector 'J6' by using the analogRead(24) API call with Energia.
 
 <table>
 <tr>
-<th> Connector Type </th>
-<th> Grove connector Label </th>
-<th>   GND   </th>
-<th>   VCC   </th>
-<th> SIG1 (connection to the BoosterPack pin) </th>
-<th> SIG0 (connection to the BoosterPack pin) *
-</th></tr>
+<th>Connector Type</th>
+<th>Grove connector Label</th>
+<th>GND</th>
+<th>VCC</th>
+<th>SIG1 (connection to the BoosterPack pin)</th>
+<th>SIG0 (connection to the BoosterPack pin)</th>
+</tr>
 <tr>
-<td> Analog</td>
-<td> J5 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 23 (analog capable pin) </td>
-<td> 22 (analog capable pin)
-</td></tr>
+<td>Analog</td>
+<td>J5</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>23 (analog capable pin)</td>
+<td>22 (analog capable pin)</td>
+</tr>
 <tr>
-<td> Analog</td>
-<td> J6 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 25 (analog capable pin) </td>
-<td> 24 (analog capable pin)
-</td></tr>
+<td>Analog</td>
+<td>J6</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>25 (analog capable pin)</td>
+<td>24 (analog capable pin)</td>
+</tr>
 <tr>
-<td> Analog</td>
-<td> J7 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 26 (analog capable pin) </td>
-<td> 25 (analog capable pin)
-</td></tr>
+<td>Analog</td>
+<td>J7</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>26 (analog capable pin)</td>
+<td>25 (analog capable pin)</td>
+</tr>
 <tr>
-<td> Analog</td>
-<td> J8 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 27 (analog capable pin) </td>
-<td> 26 (analog capable pin)
-</td></tr>
+<td>Analog</td>
+<td>J8</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>27 (analog capable pin)</td>
+<td>26 (analog capable pin)</td>
+</tr>
 <tr>
-<td> Analog</td>
-<td> J9 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 28 (analog capable pin) </td>
-<td> 27 (analog capable pin)
-</td></tr>
+<td>Analog</td>
+<td>J9</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>28 (analog capable pin)</td>
+<td>27 (analog capable pin)</td>
+</tr>
 <tr>
-<td> I2C </td>
-<td> J10 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 10 (I2C SDA) </td>
-<td> 9 (I2C SCL)
-</td></tr>
+<td>I2C</td>
+<td>J10</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>10 (I2C SDA)</td>
+<td>9 (I2C SCL)</td>
+</tr>
 <tr>
-<td> UART </td>
-<td> J11 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 4 (UART to MCU) </td>
-<td> 3 (UART from MCU)
-</td></tr>
+<td>UART</td>
+<td>J11</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>4 (UART to MCU)</td>
+<td>3 (UART from MCU)</td>
+</tr>
 <tr>
-<td> SPI </td>
-<td> J12 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 14 (SPI MISO) </td>
-<td> 7 (SPI CLK)
-</td></tr>
+<td>SPI</td>
+<td>J12</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>14 (SPI MISO)</td>
+<td>7 (SPI CLK)</td>
+</tr>
 <tr>
-<td> Digital </td>
-<td> J13 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 39 (Digital/PWM pin) </td>
-<td> 40 (Digital/PWM pin)
-</td></tr>
+<td>Digital</td>
+<td>J13</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>39 (Digital/PWM pin)</td>
+<td>40 (Digital/PWM pin)</td>
+</tr>
 <tr>
-<td> Digital</td>
-<td> J14 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 38 (Digital/PWM pin) </td>
-<td> 39 (Digital/PWM pin)
-</td></tr>
+<td>Digital</td>
+<td>J14</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>38 (Digital/PWM pin)</td>
+<td>39 (Digital/PWM pin)</td>
+</tr>
 <tr>
-<td> Digital</td>
-<td> J15 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 37 (Digital/PWM pin) </td>
-<td> 38 (Digital/PWM pin)
-</td></tr>
+<td>Digital</td>
+<td>J15</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>37 (Digital/PWM pin)</td>
+<td>38 (Digital/PWM pin)</td>
+</tr>
 <tr>
-<td> Digital</td>
-<td> J16 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 36 (Digital/PWM pin) </td>
-<td> 37 (Digital/PWM pin)
-</td></tr>
+<td>Digital</td>
+<td>J16</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>36 (Digital/PWM pin)</td>
+<td>37 (Digital/PWM pin)</td>
+</tr>
 <tr>
-<td> Digital</td>
-<td> J17 </td>
-<td> GND </td>
-<td> 3.3V  </td>
-<td> 35 (Digital/PWM pin) </td>
-<td> 36 (Digital/PWM pin)
-</td></tr></table>
+<td>Digital</td>
+<td>J17</td>
+<td>GND</td>
+<td>3.3V</td>
+<td>35 (Digital/PWM pin)</td>
+<td>36 (Digital/PWM pin)</td>
+</tr>
+</table>
 
 ###   Using a 20-pin LaunchPad
 
 If you are using a 20-pin LaunchPad, you can use jumpers or jumper wire to make the appropriate connections between a Grove connector &amp; the BoosterPack connector.
 
-Using your specific LaunchPad’s pin out diagram, you can physically/electrically connect the Grove module to the appropriate pin. Pinout diagrams for each LaunchPad are available here:
+Using your specific LaunchPad's pin out diagram, you can physically/electrically connect the Grove module to the appropriate pin. Pinout diagrams for each LaunchPad are available here:
 [https://energia.nu/pin-maps/](https://energia.nu/pin-maps/)
 
 With the help of these pin diagrams, you know which pin has the function you need. If you want to use Grove connector J5 for an analog Grove module (i.e. potentiometer knob), you can use the Energia pin maps to identify an analog-capable pin of the BoosterPack connector. Using a jumper of wire, you can connect pin number 22 with the analog-capable pin that is available. For example, if you are using an MSP-EXP430G2 LaunchPad, you can use a jumper or a cable to connect pin 22 with pin 2.

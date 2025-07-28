@@ -69,7 +69,7 @@ The default wakeup word is “Jarvis”.
 2. Create custom role templates
 3. Modify existing templates
 :::note
-The Assistant Nickname set above will only work if {{assistant_nickname}} is added to the Role Introduction.
+The Assistant Nickname set above will only work if `assistant nickname` is added to the Role Introduction.
 To get the current time, you need to add: __DATE__
 :::
 

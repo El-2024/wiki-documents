@@ -33,16 +33,28 @@ SenseCAP [S2110コントローラー](https://www.seeedstudio.com/SenseCAP-XIAO-
 SenseCAP S210xシリーズの産業用センサーは、環境センサーとしての即時使用体験を提供します。光強度検出において高性能かつ堅牢性を備えたS2102ワイヤレス光強度センサーをご参照ください。このシリーズには、土壌水分、空気温度と湿度、光強度、CO2、EC、そして8-in-1気象ステーション用のセンサーが含まれています。次の成功する産業プロジェクトのために最新の[SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device)を試してみてください。
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td align="center"><font size={4}><strong>SenseCAP 産業用センサー</strong></font></td>
+  <tbody>
+    <tr>
+      <td align="center"><font size={4}><strong>SenseCAP 産業用センサー</strong></font></td>
     </tr>
     <tr>
-      <td><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank"><img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S2102-.png" /></a></div>
+      <td>
+        <div align="center">
+          <a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank">
+            <img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S2102-.png" />
+          </a>
+        </div>
       </td>
     </tr>
     <tr>
-      <td align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank"><strong>S2102 Light</strong></a></td>
+      <td align="center">
+        <a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank">
+          <strong>S2102 Light</strong>
+        </a>
+      </td>
     </tr>
-  </tbody></table>
+  </tbody>
+</table>
 
 ## バージョン
 
@@ -179,7 +191,7 @@ Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftガ
 
 Arduino/Seeeduinoにプログラムをアップロードします。
 
-:::tipsuccess
+:::tip
 コードのアップロードが完了すると、シリアルモニターに明るさの値が表示されます。
 :::
 
@@ -268,7 +280,7 @@ if __name__ == '__main__':
 
 ```
 
-:::tipsuccess
+:::tip
 すべてが正常に動作すれば、周囲の光に対応する以下の結果が表示されるはずです。
 :::
 

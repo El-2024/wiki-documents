@@ -149,17 +149,17 @@ APホットスポット名はSenseCAP_XXXXXX（6桁のMACアドレス）で、�
 
 #### LEDインジケータ
 
-<table><tr><th colspan="2" valign="top"><b>モード</b></th><th colspan="1" valign="top"><b>説明</b></th></tr>
-<tr><td colspan="1" rowspan="2" valign="top"><p></p><p></p><p>緑</p></td><td colspan="1" valign="top">点灯</td><td colspan="1" valign="top">ゲートウェイは正常で、インターネットに正常に接続されています。</td></tr>
-<tr><td colspan="1" valign="top">ゆっくり点滅</td><td colspan="1" valign="top">ゲートウェイが起動中です。お待ちください。</td></tr>
-<tr><td colspan="1" rowspan="3" valign="top"><p></p><p></p><p></p><p></p><p>青</p></td><td colspan="1" valign="top"><p></p><p>点灯</p></td><td colspan="1" valign="top"><p>ゲートウェイはインターネット接続の準備ができています。</p><p>さらなる設定が必要です。</p></td></tr>
-<tr><td colspan="1" valign="top">ゆっくり点滅</td><td colspan="1" valign="top">設定モードで、5分間操作がない場合は自動的に終了します。</td></tr>
-<tr><td colspan="1" valign="top"><p></p><p>高速点滅</p></td><td colspan="1" valign="top">ボタンを30秒間押し続けると、インジケータが高速点滅し、工場出荷時設定にリセットされます。</td></tr>
-<tr><td colspan="1" valign="top"><p></p><p>オレンジ</p></td><td colspan="1" valign="top"><p></p><p>ゆっくり点滅</p></td><td colspan="1" valign="top">ファームウェアを更新中です。ゲートウェイの電源を切ったり、インターネット接続を切断しないでください。</td></tr>
-<tr><td colspan="1" valign="top"><p></p><p>白</p></td><td colspan="1" valign="top"><p></p><p>点灯</p></td><td colspan="1" valign="top">ゲートウェイは工場出荷時のファームウェアのみを搭載しており、インターネットに接続されると自動的に最新のファームウェアに更新されます。</td></tr>
-<tr><td colspan="1" rowspan="2" valign="top"><p></p><p>赤</p></td><td colspan="1" valign="top">点灯</td><td colspan="1" valign="top">ハードウェアの問題またはインターネット接続の失敗。</td></tr>
-<tr><td colspan="1" valign="top">ゆっくり点滅</td><td colspan="1" valign="top">ゲートウェイがLNSに接続されていません。</td></tr>
-</table>
+| 色 | モード | 説明 |
+|---|---|---|
+| 緑 | 点灯 | ゲートウェイは正常で、インターネットに正常に接続されています。 |
+| 緑 | ゆっくり点滅 | ゲートウェイが起動中です。お待ちください。 |
+| 青 | 点灯 | ゲートウェイはインターネット接続の準備ができています。さらなる設定が必要です。 |
+| 青 | ゆっくり点滅 | 設定モードで、5分間操作がない場合は自動的に終了します。 |
+| 青 | 高速点滅 | ボタンを30秒間押し続けると、インジケータが高速点滅し、工場出荷時設定にリセットされます。 |
+| オレンジ | ゆっくり点滅 | ファームウェアを更新中です。ゲートウェイの電源を切ったり、インターネット接続を切断しないでください。 |
+| 白 | 点灯 | ゲートウェイは工場出荷時のファームウェアのみを搭載しており、インターネットに接続されると自動的に最新のファームウェアに更新されます。 |
+| 赤 | 点灯 | ハードウェアの問題またはインターネット接続の失敗。 |
+| 赤 | ゆっくり点滅 | ゲートウェイがLNSに接続されていません。 |
 
 #### SenseCAP Mate アプリ
 

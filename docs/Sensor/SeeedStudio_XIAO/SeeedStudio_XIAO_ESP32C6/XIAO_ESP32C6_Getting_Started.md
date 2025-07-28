@@ -258,8 +258,7 @@ And the on-board package for XIAO ESP32C6 requires at least version **2.0.8** to
 - **Step 1.** Download and Install the stable version of Arduino IDE according to your operating system.
 
   <div class="download_arduino_container" style={{textAlign: 'center'}}>
-      <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
-      </a>
+      <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong></a>
   </div>
 
   <br></br>

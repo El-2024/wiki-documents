@@ -323,7 +323,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 ```
 
 > Si estás en China, corre el siguiente comando:
-kubectl apply -f <https://gitee.com/wj204811/wj204811/raw/master/kube-flannel.yml>
+kubectl apply -f [https://gitee.com/wj204811/wj204811/raw/master/kube-flannel.yml](https://gitee.com/wj204811/wj204811/raw/master/kube-flannel.yml)
 
 Asegúrate de que todos los pods estén en funcionamiento:
 

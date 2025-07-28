@@ -35,7 +35,7 @@ Grove - 10A DC 电流传感器（ACS725）可以测量高达 10A 的直流电流
 |供电电压|3.3V / 5V|
 |工作环境温度| -40 – 150℃|
 |存储温度|- 65°C – 165°C|
-|工作电压|<400V|
+|工作电压|\<400V|
 |电流感应范围|0 – 10A|
 |灵敏度|264mV/A(典型值)|
 |输出接口|模拟|
@@ -473,7 +473,7 @@ class Current():
         val = 0
         for i in range(averageValue):
             data = self.bus.read_i2c_block_data(self.addr,REG_VOL_START+n,2)
-            val += data[1]<<8|data[0]
+            val += data[1]\<\<8|data[0]
         val = val / averageValue
         return val
 
@@ -490,7 +490,7 @@ class Current():
         val = 0
         for i in range(averageValue):
             data = self.bus.read_i2c_block_data(self.addr,REG_VOL_START+n,2)
-            val += data[1]<<8|data[0]
+            val += data[1]\<\<8|data[0]
         val = val / averageValue
         currentVal = (val - Vref) * sensitivity
         return currentVal,val
@@ -508,7 +508,7 @@ class Current():
         sensorValue = 0
         for i in range(averageValue):
             data=self.bus.read_i2c_block_data(self.addr,REG_VOL_START+n,2)
-            val=data[1]<<8|data[0]
+            val=data[1]\<\<8|data[0]
             if(val > sensorValue):
                 sensorValue=val
             time.sleep(0.00004)

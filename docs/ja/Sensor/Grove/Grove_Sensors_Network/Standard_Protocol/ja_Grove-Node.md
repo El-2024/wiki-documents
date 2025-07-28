@@ -94,80 +94,65 @@ Grove Node をバッテリーまたは USB ケーブルで接続し、ボタン�
 
 <table>
   <tbody><tr>
-      <th>モジュール名
-      </th>
-      <th>測定するパラメータ
-      </th></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={300}> Grove - 80cm 赤外線近接センサー
-      </td>
-      <td width={400}> 距離
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - ボタン
-      </td>
-      <td colSpan={3} rowSpan={1}>オン/オフ
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - 電流センサー
-      </td>
-      <td colSpan={3} rowSpan={1}> 電流
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - ガスセンサー(MQ2&amp;MQ5)
-      </td>
-      <td colSpan={3} rowSpan={1}> ガス品質
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - 光センサー
-      </td>
-      <td colSpan={3} rowSpan={1}> 光
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - 磁気スイッチ
-      </td>
-      <td colSpan={3} rowSpan={1}> 磁気
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - 湿度センサー
-      </td>
-      <td colSpan={3} rowSpan={1}> 湿度
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - PIR モーションセンサー
-      </td>
-      <td colSpan={3} rowSpan={1}> PIR モーション
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - 回転角センサー
-      </td>
-      <td colSpan={3} rowSpan={1}> 回転角
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - 傾きスイッチ
-      </td>
-      <td colSpan={3} rowSpan={1}> オブジェクトの位置
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - サウンドセンサー
-      </td>
-      <td colSpan={3} rowSpan={1}> 音
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - 温度センサー
-      </td>
-      <td colSpan={3} rowSpan={1}> 温度
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - タッチセンサー
-      </td>
-      <td colSpan={3} rowSpan={1}> 人のタッチ
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - 水センサー
-      </td>
-      <td colSpan={3} rowSpan={1}> 水
-      </td></tr></tbody></table>
+      <th>モジュール名</th>
+      <th>測定するパラメータ</th>
+    </tr>
+    <tr >
+      <td width="300"> Grove - 80cm 赤外線近接センサー</td>
+      <td width="400"> 距離</td>
+    </tr>
+    <tr>
+      <td> Grove - ボタン</td>
+      <td colspan="3" rowspan="1">オン/オフ</td>
+    </tr>
+    <tr>
+      <td> Grove - 電流センサー</td>
+      <td colspan="3" rowspan="1"> 電流</td>
+    </tr>
+    <tr>
+      <td> Grove - ガスセンサー(MQ2&amp;MQ5)</td>
+      <td colspan="3" rowspan="1"> ガス品質</td>
+    </tr>
+    <tr>
+      <td> Grove - 光センサー</td>
+      <td colspan="3" rowspan="1"> 光</td>
+    </tr>
+    <tr>
+      <td> Grove - 磁気スイッチ</td>
+      <td colspan="3" rowspan="1"> 磁気</td>
+    </tr>
+    <tr>
+      <td> Grove - 湿度センサー</td>
+      <td colspan="3" rowspan="1"> 湿度</td>
+    </tr>
+    <tr>
+      <td> Grove - PIR モーションセンサー</td>
+      <td colspan="3" rowspan="1"> PIR モーション</td>
+    </tr>
+    <tr>
+      <td> Grove - 回転角センサー</td>
+      <td colspan="3" rowspan="1"> 回転角</td>
+    </tr>
+    <tr>
+      <td> Grove - 傾きスイッチ</td>
+      <td colspan="3" rowspan="1"> オブジェクトの位置</td>
+    </tr>
+    <tr>
+      <td> Grove - サウンドセンサー</td>
+      <td colspan="3" rowspan="1"> 音</td>
+    </tr>
+    <tr>
+      <td> Grove - 温度センサー</td>
+      <td colspan="3" rowspan="1"> 温度</td>
+    </tr>
+    <tr>
+      <td> Grove - タッチセンサー</td>
+      <td colspan="3" rowspan="1"> 人のタッチ</td>
+    </tr>
+    <tr>
+      <td> Grove - 水センサー</td>
+      <td colspan="3" rowspan="1"> 水</td>
+    </tr></tbody></table>
 
 Grove 互換でない他のアナログセンサーは、少し調整が必要です。信号出力を Grove コネクタの pin4 に接続し、VCC と GND を接続してください。_アナログまたはデジタル 1/0 値を出力するセンサーのみが事前プログラムされたファームウェアで使用可能です_
 
@@ -177,30 +162,25 @@ Grove 互換でない他のアナログセンサーは、少し調整が必要�
 
 <table>
   <tbody><tr>
-      <th>モジュール名
-      </th>
-      <th>トリガー時の動作
-      </th></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={300}> Grove - ブザー
-      </td>
-      <td width={400}> ブザーが有効化
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - LED
-      </td>
-      <td colSpan={3} rowSpan={1}>LED 点灯
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - バイブレーター
-      </td>
-      <td colSpan={3} rowSpan={1}> 振動
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> Grove - リレー
-      </td>
-      <td colSpan={3} rowSpan={1}> 他の回路のオン/オフ切り替え
-      </td></tr></tbody></table>
+      <th>モジュール名</th>
+      <th>トリガー時の動作</th>
+    </tr>
+    <tr>
+      <td width="300"> Grove - ブザー</td>
+      <td width="400"> ブザーが有効化</td>
+    </tr>
+    <tr>
+      <td> Grove - LED</td>
+      <td colspan="3" rowspan="1">LED 点灯</td>
+    </tr>
+    <tr>
+      <td> Grove - バイブレーター</td>
+      <td colspan="3" rowspan="1"> 振動</td>
+    </tr>
+    <tr>
+      <td> Grove - リレー</td>
+      <td colspan="3" rowspan="1"> 他の回路のオン/オフ切り替え</td>
+    </tr></tbody></table>
 
 例えば、暗い環境で自動的に点灯し、それ以外では消灯するライトを作成する場合、[Grove-Light_Sensor](/Grove-Light_Sensor "Grove - Light Sensor") と Grove-Red_LED を選択します。
 
@@ -236,7 +216,7 @@ Grove Node には事前にプログラムされた OTA ブートローダーが�
 
 ## 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-Node/res/Grove-Node_v1.0_eagle.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div class="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-Node/res/Grove-Node_v1.0_eagle.zip">
 </div>
 
 ## リソース

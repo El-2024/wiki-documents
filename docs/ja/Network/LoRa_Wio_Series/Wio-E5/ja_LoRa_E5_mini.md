@@ -22,8 +22,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <!-- <p style="text-align:center"><a href="https://www.seeedstudio.com/LoRa-E5-mini-STM32WLE5JC-p-4869.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now.png" border=0 /></a></p> -->
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRa-E5-mini-STM32WLE5JC-p-4869.html"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRa-E5-mini-STM32WLE5JC-p-4869.html"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
 </div>
 
 > LoRaWAN® は LoRa Alliance® のライセンスの下で使用される商標です。
@@ -221,7 +220,7 @@ AT コマンドファームウェアには、DFU 用のブートローダーと 
 | コマンド形式 | 応答 | 説明 |
 | --- | --- | --- |
 | AT | +AT: OK | テストコマンド |
-| AT+VER | +VER: $MAJOR.$MINOR.$PATCH <br></br> +VER: 4.0.11 | ファームウェアバージョンを確認 |
+| AT+VER | +VER: \$MAJOR.\$MINOR.\$PATCH <br></br> +VER: 4.0.11 | ファームウェアバージョンを確認 |
 | AT+ID // 全てを読み取る、DevAddr(ABP)、DevEui(OTAA)、AppEui(OTAA)<br></br>AT+ID = DevAddr // デバイスアドレスを読み取る<br></br>AT+ID = DevEui // DevEuiを読み取る<br></br>AT+ID = AppEui // AppEuiを読み取る | +ID: DevAddr, xx: xx: xx:xx<br></br>+ID: DevEui, xx:xx:xx:xx:xx:xx:xx:xx<br></br>+ID: AppEui13, xx:xx:xx:xx:xx:xx:xx | LoRaWAN モジュールのIDを確認するために使用します。IDはビッグエンディアンの数値として扱われます。 |
 | AT+ID = DevAddr, “01234567” // 新しいDevAddrを設定<br></br>AT+ID = DevEui, “0123456789ABCDEF” // 新しいDevEuiを設定<br></br>AT+ID = AppEui, “0123456789ABCDEF” // 新しいAppEuiを設定 | +ID: DevAddr, 01:23:45:67<br></br>+ID: DevEui, 01:23:45:67:89:AB:CD:EF<br></br>+ID: AppEui, 01:23:45:67:89:AB:CD:EF | IDを変更 |
 | AT+RESET | +RESET: OK | モジュールをリセット |

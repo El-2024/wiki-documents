@@ -63,7 +63,7 @@ ls /dev/cu*
 This will show all serial port devices.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/1.png" /></div>
 
-:::Tip
+:::tip
 If the port is busy, you can use the following command to find an dkill and processes using the port(On macOS):
 Identify processes using the port:
 ```

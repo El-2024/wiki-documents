@@ -647,28 +647,10 @@ void resetRFM69(){
 
 ## 製品バージョン
 
-<table cellPadding={5} cellSpacing={0}>
-  <tbody><tr>
-      <td width={150}> <strong>リビジョン</strong>
-      </td>
-      <td width={450}> <strong>説明</strong>
-      </td>
-      <td width={80}> <strong>リリース日</strong>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 0.9
-      </td>
-      <td> 試作版
-      </td>
-      <td> 2014年5月5日
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 1.0
-      </td>
-      <td> 公開バージョン
-      </td>
-      <td> 2014年7月5日
-      </td></tr></tbody></table>
+| リビジョン | 説明 | リリース日 |
+|------------|------|------------|
+| 0.9 | 試作版 | 2014年5月5日 |
+| 1.0 | 公開バージョン | 2014年7月5日 |
 
 ## アプリケーション
 

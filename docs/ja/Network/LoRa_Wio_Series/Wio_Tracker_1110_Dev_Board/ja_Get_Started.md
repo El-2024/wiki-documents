@@ -86,9 +86,7 @@ SenseCAP Gateway と一緒に使用する必要があります。SenseCAP は独
     </tr>
         <tr>
     <td>SenseCAP for Helium</td>
-    <td>Helium ネットワークのカバレッジがある場合、データは Helium を介してアップロードできます。デバイスは SenseCAP のプライベート Helium コンソールで動作します。ユーザーは Helium コンソールでデバイスを作成する必要がなく、SenseCAP Mate App と Portal を使用してすぐに利用できます。<br />
-
-<a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a></td>
+    <td>Helium ネットワークのカバレッジがある場合、データは Helium を介してアップロードできます。デバイスは SenseCAP のプライベート Helium コンソールで動作します。ユーザーは Helium コンソールでデバイスを作成する必要がなく、SenseCAP Mate App と Portal を使用してすぐに利用できます。<br /><a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a></td>
     </tr>
         <tr>
     <td>Helium</td>

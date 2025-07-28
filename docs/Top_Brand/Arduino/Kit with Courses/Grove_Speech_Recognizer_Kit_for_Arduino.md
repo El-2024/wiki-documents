@@ -233,122 +233,103 @@ void loop()
 We can choose what buttons we need according to the table; Table of return value, [Grove - Speech Recognizer](https://wiki.seeedstudio.com/Seeed_BLE_Shield/); of return value of Speech Recognizer. Following is the table of return value:
 
 <center>
-<table >
-<tr>
-<th> Command
-</th>
-<th> Return Value
-</th></tr>
-<tr>
-<td width="200px"> Turn on the light
-</td>
-<td width="200px"> 1
-</td></tr>
-<tr>
-<td> Turn off the light
-</td>
-<td> 2
-</td></tr>
-<tr>
-<td> Play music
-</td>
-<td> 3
-</td></tr>
-<tr>
-<td> Pause
-</td>
-<td> 4
-</td></tr>
-<tr>
-<td> Next
-</td>
-<td> 5
-</td></tr>
-<tr>
-<td> Previous
-</td>
-<td> 6
-</td></tr>
-<tr>
-<td> Up
-</td>
-<td> 7
-</td></tr>
-<tr>
-<td> Down
-</td>
-<td> 8
-</td></tr>
-<tr>
-<td> Turn on the TV
-</td>
-<td> 9
-</td></tr>
-<tr>
-<td> Turn off the TV
-</td>
-<td> 10
-</td></tr>
-<tr>
-<td> Increase temperature
-</td>
-<td> 11
-</td></tr>
-<tr>
-<td> Decrease temperature
-</td>
-<td> 12
-</td></tr>
-<tr>
-<td> What's the time
-</td>
-<td> 13
-</td></tr>
-<tr>
-<td> Open the door
-</td>
-<td> 14
-</td></tr>
-<tr>
-<td> Close the door
-</td>
-<td> 15
-</td></tr>
-<tr>
-<td> Left
-</td>
-<td> 16
-</td></tr>
-<tr>
-<td> Right
-</td>
-<td> 17
-</td></tr>
-<tr>
-<td> Stop
-</td>
-<td> 18
-</td></tr>
-<tr>
-<td> Start
-</td>
-<td> 19
-</td></tr>
-<tr>
-<td> Mode 1
-</td>
-<td> 20
-</td></tr>
-<tr>
-<td> Mode 2
-</td>
-<td> 21
-</td></tr>
-<tr>
-<td> Go
-</td>
-<td> 22
-</td></tr></table></center>
+  <table>
+    <tbody>
+      <tr>
+        <th>Command</th>
+        <th>Return Value</th>
+      </tr>
+      <tr>
+        <td width="200px">Turn on the light</td>
+        <td width="200px">1</td>
+      </tr>
+      <tr>
+        <td>Turn off the light</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Play music</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Pause</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Next</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Previous</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>Up</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Down</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Turn on the TV</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>Turn off the TV</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Increase temperature</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>Decrease temperature</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>What's the time</td>
+        <td>13</td>
+      </tr>
+      <tr>
+        <td>Open the door</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>Close the door</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Left</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>Right</td>
+        <td>17</td>
+      </tr>
+      <tr>
+        <td>Stop</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Start</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>Mode 1</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Mode 2</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>Go</td>
+        <td>22</td>
+      </tr>
+    </tbody>
+  </table>
+</center>
 
 The following example uses two commands: "Turn of the TV" and "Turn off the TV"
 
@@ -485,13 +466,15 @@ SelectPlayerDevice(0x02);
 
 * SpecifyMusicPlay(uint16_t index). _play a song by name._
 
-<dl><dd>Pay attention to the name of songs, you can set a name like following type:
-</dd></dl>
+<dl>
+  <dd>Pay attention to the name of songs, you can set a name like following type:</dd>
+</dl>
 
 ![](https://files.seeedstudio.com/wiki/Grove_Speech_Recognizer_Kit_for_Arduino/img/Type_of_songs.png)
 
-<dl><dd>So we can play the song "005" by this function:
-</dd></dl>
+<dl>
+  <dd>So we can play the song "005" by this function:</dd>
+</dl>
 
 ```
 SpecifyMusicPlay(5);
@@ -499,8 +482,9 @@ SpecifyMusicPlay(5);
 
 * SpecifyfolderPlay(uint8_t folder, uint8_t index);   // play a song by name in a appointed folder
 
-<dl><dd>Furthermore, sometimes we may play music in a new folder, the previous function comes in handy.
-</dd></dl>
+<dl>
+  <dd>Furthermore, sometimes we may play music in a new folder, the previous function comes in handy.</dd>
+</dl>
 
 ![](https://files.seeedstudio.com/wiki/Grove_Speech_Recognizer_Kit_for_Arduino/img/Form_of_folder.png)
 
@@ -643,37 +627,41 @@ As all we known, it has 60 numbers while broadcasting time (0 ~ 59), and we can 
 By the way, we have ranked 61 sound files in a folder, you can [download it](https://files.seeedstudio.com/wiki/Grove_Speech_Recognizer_Kit_for_Arduino/res/Sound_file.zip) and copy it to your SD Card. Of course you may need to format SD Card first.
 
 <center>
-<table>
-<tr>
-<th> Name of Sound File </th>
-<th> <font color="Red">NO. of file in SD Card</font> </th>
-<th> Voice Text
-</th></tr>
-<tr>
-<td width="200px"> 000 </td>
-<td width="200px"> 1th </td>
-<td width="200px"> 0
-</td></tr>
-<tr>
-<td width="200px"> 001 </td>
-<td width="200px"> 2th </td>
-<td width="200px"> 1
-</td></tr>
-<tr>
-<td width="200px"> ... </td>
-<td width="200px"> ... </td>
-<td width="200px">  ...
-</td></tr>
-<tr>
-<td width="200px"> 059 </td>
-<td width="200px"> 60th </td>
-<td width="200px"> 59
-</td></tr>
-<tr>
-<td width="200px"> 060 </td>
-<td width="200px"> 61th </td>
-<td width="200px"> It's
-</td></tr></table></center>
+  <table>
+    <tbody>
+      <tr>
+        <th>Name of Sound File</th>
+        <th><font color="Red">NO. of file in SD Card</font></th>
+        <th>Voice Text</th>
+      </tr>
+      <tr>
+        <td width="200px">000</td>
+        <td width="200px">1th</td>
+        <td width="200px">0</td>
+      </tr>
+      <tr>
+        <td width="200px">001</td>
+        <td width="200px">2th</td>
+        <td width="200px">1</td>
+      </tr>
+      <tr>
+        <td width="200px">...</td>
+        <td width="200px">...</td>
+        <td width="200px">...</td>
+      </tr>
+      <tr>
+        <td width="200px">059</td>
+        <td width="200px">60th</td>
+        <td width="200px">59</td>
+      </tr>
+      <tr>
+        <td width="200px">060</td>
+        <td width="200px">61th</td>
+        <td width="200px">It's</td>
+      </tr>
+    </tbody>
+  </table>
+</center>
 
 **Integrated Program and broadcast real-time**
 

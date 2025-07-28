@@ -74,8 +74,7 @@ AI初心者の方で、重要なAIスキルを習得し、ディープラーニ�
     </tr>
     <tr>
       <td>ビデオデコーダー</td>
-      <td colspan='2'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60（H.265 & H.264）
-      </td>
+      <td colspan='2'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60（H.265 & H.264）</td>
       <td>4Kp60 | 2x 4Kp30 | 8x 1080p30 | 18x 720p30（H.264/H.265）</td>
     </tr>
     <tr>
@@ -95,48 +94,44 @@ AI初心者の方で、重要なAIスキルを習得し、ディープラーニ�
     </tr>
     <tr>
       <td>CSIカメラ接続</td>
-      <td colspan='3' align='center'>2*CSIカメラ（15ピン、1mmピッチ、MIPI CSI-2）</td>
+      <td colspan='3' align='center'>2×CSIカメラ（15ピン、1mmピッチ、MIPI CSI-2）</td>
     </tr>
     <tr>
       <td>ディスプレイ</td>
-      <td>1*HDMI Type A</td>
-      <td colspan='2' align='center'>1*HDMI Type A; 
-1*DP</td>
+      <td>1×HDMI Type A</td>
+      <td colspan='2' align='center'>1×HDMI Type A; 1×DP</td>
     </tr>
     <tr>
       <td>ファン</td>
-      <td colspan='3' align='center'>1*ファンコネクタ（5V PWM）</td>
+      <td colspan='3' align='center'>1×ファンコネクタ（5V PWM）</td>
     </tr>
     <tr>
       <td>M.2 KEY E</td>
-      <td>1*M.2 Key E</td>
-      <td>1*M.2 Key E（無効化）</td>
-      <td>1*M.2 Key E</td>
+      <td>1×M.2 Key E</td>
+      <td>1×M.2 Key E（無効化）</td>
+      <td>1×M.2 Key E</td>
     </tr>
     <tr>
       <td>M.2 KEY M</td>
       <td>-</td>
-      <td>1*M.2 Key M</td>
+      <td>1×M.2 Key M</td>
       <td>-</td>
     </tr>
     <tr>
       <td>RTC</td>
-      <td>1*RTCソケット</td>
-      <td>1*RTCソケット
-1*RTC 2ピン</td>
+      <td>1×RTCソケット</td>
+      <td>1×RTCソケット 1×RTC 2ピン</td>
       <td>-</td>
     </tr>
     <tr>
       <td>多機能ポート</td>
-      <td colspan='3' align='center'>1*40ピンヘッダー</td>
+      <td colspan='3' align='center'>1×40ピンヘッダー</td>
     </tr>
     <tr>
       <td>電源供給</td>
       <td>USB-Type C 5V⎓3A</td>
-      <td>	
-9-12V 電源アダプタは含まれていません（バレルジャック 5.5/2.5mm）</td>
-      <td>DCジャック 5V⎓4A；
-Micro-USB 5V⎓2A</td>
+      <td>9-12V 電源アダプタは含まれていません（バレルジャック 5.5/2.5mm）</td>
+      <td>DCジャック 5V⎓4A；Micro-USB 5V⎓2A</td>
     </tr>
     <tr>
       <td>機械的仕様</td>
@@ -149,7 +144,7 @@ Micro-USB 5V⎓2A</td>
 ## reComputer J1020v2 に JetPack をフラッシュする
 
 :::info
-J1020v2 は J202 キャリアボードを使用しているため、詳細についてはこの [wiki](/reComputer_J2021_J202_Flash_Jetpack) ページを参照してください。
+J1020v2 は J202 キャリアボードを使用しているため、詳細についてはこの [wiki](/ja/reComputer_J2021_J202_Flash_Jetpack) ページを参照してください。
 :::
 
 ## リソース

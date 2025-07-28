@@ -85,7 +85,7 @@ All procedures and steps in this tutorial have been completed based on the XIAO 
 - **Step 4.** Add ESP32 board package to your Arduino IDE
 
 Navigate to **File > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
-*<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json>*
+*[https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json](https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json)*
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/xiaoesp32c3-chatgpt/4.png"/></div>
 
@@ -157,7 +157,7 @@ This is a very simple WiFi connection program, upload the program to XIAO ESP32C
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/xiaoesp32c3-chatgpt/5.png"/></div>
 
-If you are interested in reading more about ESP32C3 applications and functions in WiFi, we recommend reading <a href="https://randomnerdtutorials.com/esp32-useful-wi- fi-functions-arduino/">ESP32 Useful Wi-Fi Library Functions</a>.
+If you are interested in reading more about ESP32C3 applications and functions in WiFi, we recommend reading [ESP32 Useful Wi-Fi Library Functions](https://randomnerdtutorials.com/esp32-useful-wifi-functions-arduino/).
 
 ## Build the embedded web page
 

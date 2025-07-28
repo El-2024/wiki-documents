@@ -24,7 +24,7 @@ Helium コンソールは、Helium Foundation がホストするウェブベー�
 
 ## Helium ネットワークへの接続
 ### 新しいアカウントを作成する
-<https://console.helium.com/> にアクセスし、アカウントを登録してください。
+[https://console.helium.com/](https://console.helium.com/) にアクセスし、アカウントを登録してください。
 
 ### センサーのセットアップ
 1. SenseCAP Mate アプリを開きます。
@@ -97,7 +97,7 @@ Helium コンソールは、Helium Foundation がホストするウェブベー�
 
 ## HeliumからDatacakeへのデータアップロード
 ### Datacakeアカウントを作成する
-(1) 新しいアカウントを作成します。ウェブサイト: <https://datacake.co/>
+(1) 新しいアカウントを作成します。ウェブサイト: [https://datacake.co/](https://datacake.co/)
 
 ![](https://files.seeedstudio.com/wiki/SenseCAPS210X/Helium_Network/0020.png)
 

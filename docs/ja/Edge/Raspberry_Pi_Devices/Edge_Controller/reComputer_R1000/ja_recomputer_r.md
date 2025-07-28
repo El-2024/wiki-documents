@@ -351,8 +351,6 @@ reComputer R1000 エッジ IoT コントローラーは、高性能な Raspberry
 
 </div>
 
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
 ## ハードウェア概要
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/fig03.png" /></div>
@@ -978,10 +976,6 @@ reComputer R1000 は豊富な拡張モジュールとアクセサリーをサポ
     </tr>
   </tbody>
 </table>
-
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
-（以下に翻訳を開始します）
 
 </div>
 

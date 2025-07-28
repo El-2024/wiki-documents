@@ -26,7 +26,7 @@ The Things Stackは、オープンソースのコアを基盤としたエンタ�
 
 ## The Things Networkに接続する 
    ### 新しいアカウントを作成する
-TTNウェブサイト: <https://www.thethingsnetwork.org/>
+TTNウェブサイト: [https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/)
 ### センサーをセットアップする
 (1) SenseCAP Mateアプリを開きます。  
 (2) ボタンを押し続けて3秒間保持すると、LEDが1秒間隔で点滅します。

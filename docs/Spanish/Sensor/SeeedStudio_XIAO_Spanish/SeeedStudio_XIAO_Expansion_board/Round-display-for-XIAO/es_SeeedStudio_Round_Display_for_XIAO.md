@@ -57,7 +57,7 @@ La pantalla redonda de Seeed Studio para XIAO es una placa de expansión compati
 	</tr>
 	<tr>
 	    <th>Fuente de alimentación</th>
-	    <td>USB Tipo-C: 5V @35 mA <br></br> Batería: 3.7V @37mA</td>
+	    <td>USB Tipo-C: 5V @35 mA <br /> Batería: 3.7V @37mA</td>
 	</tr>
 	<tr>
 	    <th>Corriente de carga</th>
@@ -69,7 +69,7 @@ La pantalla redonda de Seeed Studio para XIAO es una placa de expansión compati
 	</tr>
   <tr>
 	    <th>Screen</th>
-	    <td>Pantalla táctil de 1.28 pulgadas <br></br> 240×240 resolution <br></br> 65K colors</td>
+	    <td>Pantalla táctil de 1.28 pulgadas <br /> 240×240 resolution <br /> 65K colors</td>
 	</tr>
   <tr>
 	    <th>Otros equipos externos</th>
@@ -170,7 +170,8 @@ Si es la primera vez que usas Arduino, te recomendamos consultar el tutorial [Ge
 #### Paso 1. Descarga e instala la versión estable del IDE de Arduino según tu sistema operativo.
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
+        <strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
     </a>
 </div>
 
@@ -198,7 +199,7 @@ Primero, necesitas descargar las librerías **TFT_eSPI**, **LVGL** y **Round Scr
     </a>
 </div>
 
-<br></br>
+<br />
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Projects/SeeedStudio_TFT_eSPI">
@@ -206,7 +207,7 @@ Primero, necesitas descargar las librerías **TFT_eSPI**, **LVGL** y **Round Scr
     </a>
 </div>
 
-<br></br>
+<br />
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/Seeed_Arduino_RoundDisplay">
@@ -214,7 +215,7 @@ Primero, necesitas descargar las librerías **TFT_eSPI**, **LVGL** y **Round Scr
     </a>
 </div>
 
-<br></br>
+<br />
 
 Una vez que hayas descargado el archivo .ZIP de la librería, abre tu Arduino IDE, haz clic en **Sketch > Incluir librería > Añadir librería .ZIP**. Selecciona el archivo .ZIP que acabas de descargar y, si la librería se instala correctamente, verás un mensaje en la ventana de notificaciones que dice **Librería añadida a tus bibliotecas**. Esto significa que la librería se instaló correctamente.
 

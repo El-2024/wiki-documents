@@ -35,8 +35,7 @@ no_comments: false # 用于 Disqus
 <div class="table-center">
 	<table align="center">
 		<tr>
-			<th>reComputer（基于 Jetson，RAM >= 16GB）
-			</th>
+			<th>reComputer（基于 Jetson，RAM >= 16GB）</th>
 		</tr>
     <tr>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/recomputerj4012.jpg" style={{width:800, height:'auto'}}/></div></td>

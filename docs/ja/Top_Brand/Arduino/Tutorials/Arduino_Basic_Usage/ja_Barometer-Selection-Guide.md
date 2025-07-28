@@ -38,15 +38,14 @@ Seeed のバザールにあるすべての気圧センサーについては、[B
 
 以下の写真は、内蔵チップ（DPS310）を備えた典型的な気圧センサーを示しています：
 
-<div align="center"><img width="{400}" src="https://github.com/SeeedDocument/Grove-High-Precision-Barometer-Sensor-DPS310/raw/master/img/Grove-High-Precision-Barometer-Sensor-DPS310-pin.jpg" /><figcaption><b>図1</b>. <i>典型的な気圧センサー</i></figcaption>
-</div>
+<div align="center"><img width="400" src="https://github.com/SeeedDocument/Grove-High-Precision-Barometer-Sensor-DPS310/raw/master/img/Grove-High-Precision-Barometer-Sensor-DPS310-pin.jpg" /><figcaption><b>図1</b>. <i>典型的な気圧センサー</i></figcaption></div>
 
 ## Seeed の気圧センサー
 
 <div align="center">
 <figure>
-  <a href="https://files.seeedstudio.com/wiki/Barometer-Guide/Barometer.png" target="_blank"><img src="https://files.seeedstudio.com/wiki/Barometer-Guide/Barometer.png" alt="Seeed 気圧センサー選定ガイド" title="Seeed 気圧センサー選定ガイド" />
-  <figcaption><b>図2</b>. <i>Seeed の気圧センサー</i></figcaption></a>
+  <a href="https://files.seeedstudio.com/wiki/Barometer-Guide/Barometer.png" target="_blank"><img src="https://files.seeedstudio.com/wiki/Barometer-Guide/Barometer.png" alt="Seeed 気圧センサー選定ガイド" title="Seeed 気圧センサー選定ガイド" /></a>
+  <figcaption><b>図2</b>. <i>Seeed の気圧センサー</i></figcaption>
 </figure>
 </div>
 

@@ -261,7 +261,7 @@ audacity                      // run audacity
 
 ## Usage overview
 
-To run the following examples, clone <https://github.com/respeaker/4mics_hat.git> repository to your Raspberry Pi
+To run the following examples, clone [4mics_hat repository](https://github.com/respeaker/4mics_hat.git) repository to your Raspberry Pi
 
 ```
 git clone https://github.com/respeaker/4mics_hat.git
@@ -325,7 +325,7 @@ A2: Please click raspberry -> Preferences -> Raspberry Pi Configuration, then se
 - **[PDF]** [AC108 Datesheet](https://files.seeedstudio.com/wiki/ReSpeaker_6-Mics_Circular_Array_kit_for_Raspberry_Pi/reg/AC108_Datasheet_V1.2.pdf)
 - **[Driver]** [Seeed-Voice Driver](https://github.com/respeaker/seeed-voicecard)
 - **[Algorithms]** [Algorithms includes DOA, VAD, NS](https://github.com/respeaker/mic_array)
-- **[Voice Engine** [Voice Engine project, provides building blocks to create voice enabled objects](https://github.com/voice-engine/voice-engine)
+- **[Voice Engine]** [Voice Engine project, provides building blocks to create voice enabled objects](https://github.com/voice-engine/voice-engine)
 - **[Algorithms]** [AEC](https://github.com/voice-engine/ec)
 - **[Mechanical Drawing]** [2D Drawing](https://files.seeedstudio.com/wiki/ReSpeaker_4-Mics_Linear_Array_Kit/res/2d.zip)
 

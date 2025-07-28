@@ -29,16 +29,28 @@ SenseCAP [S2110コントローラー](https://www.seeedstudio.com/SenseCAP-XIAO-
 SenseCAP S210xシリーズの産業用センサーは、環境センシングのための即時使用可能な体験を提供します。土壌状態のモニタリングには、より高性能で堅牢なS2105ワイヤレス土壌湿度、温度、ECセンサーをご参照ください。このシリーズには、土壌湿度、空気温度と湿度、光強度、CO2、EC、そして8-in-1気象ステーション用のセンサーが含まれています。次の成功する産業プロジェクトのために、最新の[SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device)をお試しください。
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td align="center"><font size={4}><strong>SenseCAP 産業用センサー</strong></font></td>
+  <tbody>
+    <tr>
+      <td align="center"><font size={4}><strong>SenseCAP 産業用センサー</strong></font></td>
     </tr>
     <tr>
-      <td><a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank"><img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S2105-.png" /></a></div>
+      <td>
+        <div align="center">
+          <a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank">
+            <img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S2105-.png" />
+          </a>
+        </div>
       </td>
     </tr>
     <tr>
-      <td align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank"><strong>S2105 土壌湿度 &amp; 温度 &amp; EC</strong></a></td>
+      <td align="center">
+        <a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank">
+          <strong>S2105 土壌湿度 &amp; 温度 &amp; EC</strong>
+        </a>
+      </td>
     </tr>
-  </tbody></table>
+  </tbody>
+</table>
 
 ## バージョン
 
@@ -110,7 +122,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 **2** Groveモジュールは購入時にGroveケーブルが付属しています。Groveケーブルを紛失した場合は、[こちら](https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-%285-PCs-pack%29-p-936.html)をクリックして購入できます。
 :::
 
-:::noteimportant
+:::note
 **1** Arduino UNOをマザーボードとして使用する場合は、DC電源の使用を推奨します。そうしないと、VCCの最大リップルが100mVを超える可能性があります。Seeeduino V4.2をマザーボードとして使用する場合は、DC電源を接続する必要はありません。
 
 **2** ホットスワップはサポートされていません。
@@ -182,7 +194,7 @@ void loop() {
 
 - **ステップ2.** Arduino IDEの**シリアルモニタ**を開きます。**ツール->シリアルモニタ**をクリックするか、++ctrl+shift+m++キーを同時に押します。ボーレートを**9600**に設定します。
 
-:::tipsuccess
+:::tip
 すべてが正常に動作している場合、シリアルモニタを開くと以下のように表示されるかもしれません:
 :::
 

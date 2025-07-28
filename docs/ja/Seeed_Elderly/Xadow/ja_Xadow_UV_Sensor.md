@@ -10,8 +10,8 @@ last_update:
   author: shuxu hu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 ![](https://files.seeedstudio.com/wiki/Xadow_UV_Sensor/img/xadow%20uv.jpg)
@@ -144,80 +144,61 @@ Xadow UV センサーについては、抵抗値が 3M の抵抗を使用して�
 
 Xadow UVセンサーには、スレーブアドレスと呼ばれる7ビットのハードウェアアドレスがあります。このスレーブアドレスは、ADR0およびADR1のアドレス選択入力によって設定されます。ADR0およびADR1は、低レベル、浮動状態、または高レベルに接続することができます。これらの入力の状態によって、I2Cバス上でモジュールが応答するハードウェアアドレスが設定されます（以下の表を参照してください）。
 
-<table  cellspacing="0" width="50%">
+<table cellspacing="0" width="50%">
 <tr>
-<th rowspan="2" scope="col">  スレーブアドレス[A6 - A0]
-</th>
-<th colspan="2" scope="col"> ADR0およびADR1入力の状態
-</th></tr>
+<th rowspan="2" scope="col">スレーブアドレス[A6 - A0]</th>
+<th colspan="2" scope="col">ADR0およびADR1入力の状態</th>
+</tr>
 <tr>
-<td scope="col"> ADR1
-</td>
-<td scope="col"> ADR0
-</td></tr>
+<td scope="col">ADR1</td>
+<td scope="col">ADR0</td>
+</tr>
 <tr>
-<td scope="row"> 1010000(0x50)
-</td>
-<td>浮動
-</td>
-<td>浮動
-</td></tr>
+<td scope="row">1010000(0x50)</td>
+<td>浮動</td>
+<td>浮動</td>
+</tr>
 <tr>
-<td scope="row"> 1010001(0x51)
-</td>
-<td> 浮動
-</td>
-<td> L
-</td></tr>
+<td scope="row">1010001(0x51)</td>
+<td>浮動</td>
+<td>L</td>
+</tr>
 <tr>
-<td scope="row"> 1010010(0x52)
-</td>
-<td> 浮動
-</td>
-<td> H
-</td></tr>
+<td scope="row">1010010(0x52)</td>
+<td>浮動</td>
+<td>H</td>
+</tr>
 <tr>
-<td scope="row"> 1010100(0x54)
-</td>
-<td> L
-</td>
-<td> 浮動
-</td></tr>
+<td scope="row">1010100(0x54)</td>
+<td>L</td>
+<td>浮動</td>
+</tr>
 <tr>
-<td scope="row"> 1010101(0x55)
-</td>
-<td>L
-</td>
-<td>L
-</td></tr>
+<td scope="row">1010101(0x55)</td>
+<td>L</td>
+<td>L</td>
+</tr>
 <tr>
-<td scope="row"> 1010110(0x56)
-</td>
-<td> L
-</td>
-<td> H
-</td></tr>
+<td scope="row">1010110(0x56)</td>
+<td>L</td>
+<td>H</td>
+</tr>
 <tr>
-<td scope="row"> 1011000(0x58)
-</td>
-<td> H
-</td>
-<td> 浮動
-</td></tr>
+<td scope="row">1011000(0x58)</td>
+<td>H</td>
+<td>浮動</td>
+</tr>
 <tr>
-<td scope="row"> 1011001(0x59)
-</td>
-<td> H
-</td>
-<td> L
-</td></tr>
+<td scope="row">1011001(0x59)</td>
+<td>H</td>
+<td>L</td>
+</tr>
 <tr>
-<td scope="row">1011010(デフォルト 0x5A)
-</td>
-<td> H
-</td>
-<td> H
-</td></tr></table>
+<td scope="row">1011010(デフォルト 0x5A)</td>
+<td>H</td>
+<td>H</td>
+</tr>
+</table>
 
 デフォルトモードでは、ADR0およびADR1は"H"に接続されています（Xadow UVセンサーを参照）。
 

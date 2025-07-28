@@ -327,7 +327,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 ```
 
 > 中国国内にいる場合は、以下を使用してください：
-kubectl apply -f <https://gitee.com/wj204811/wj204811/raw/master/kube-flannel.yml>
+kubectl apply -f `<https://gitee.com/wj204811/wj204811/raw/master/kube-flannel.yml>`
 
 すべてのポッドが起動していることを確認してください：
 

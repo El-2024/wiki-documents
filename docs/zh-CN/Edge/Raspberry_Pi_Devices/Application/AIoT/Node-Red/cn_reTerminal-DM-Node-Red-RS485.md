@@ -134,7 +134,7 @@ node-red-restart
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/node-red/modbus-nodes.png" /></div>
 
-## 如何在 reTerminal DM 上使用 Modbus 节点
+## 如何在 reTerminal DM 上使用 Modbus 节点 {#how-to-use-modbus-node-with-retermianl-dm}
 
 ### 前置条件
 

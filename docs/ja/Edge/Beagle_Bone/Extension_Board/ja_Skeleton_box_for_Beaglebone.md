@@ -51,61 +51,45 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table cellSpacing={0} width="80%">
   <tbody><tr>
-      <th scope="col"> 部品
-      </th>
-      <th scope="col"> パッケージ
-      </th>
-      <th scope="col"> 数量
-      </th></tr>
+      <th scope="col"> 部品</th>
+      <th scope="col"> パッケージ</th>
+      <th scope="col"> 数量</th>
+    </tr>
     <tr>
-      <th scope="row"> ブラケット
-      </th>
-      <td> 1.5mmアルミプレートスタンピング成形、黒サンド陽極酸化処理
-      </td>
-      <td> 2
-      </td></tr>
+      <th scope="row"> ブラケット</th>
+      <td> 1.5mmアルミプレートスタンピング成形、黒サンド陽極酸化処理</td>
+      <td> 2</td>
+    </tr>
     <tr>
-      <th scope="row">Beagle底面カバー
-      </th>
-      <td> 厚さ2.5mm
-      </td>
-      <td> 1
-      </td></tr>
+      <th scope="row">Beagle底面カバー</th>
+      <td> 厚さ2.5mm</td>
+      <td> 1</td>
+    </tr>
     <tr>
-      <th scope="row">Beagle上面カバー
-      </th>
-      <td> 厚さ2.5mm
-      </td>
-      <td> 1
-      </td></tr>
+      <th scope="row">Beagle上面カバー</th>
+      <td> 厚さ2.5mm</td>
+      <td> 1</td>
+    </tr>
     <tr>
-      <th scope="row">リベット（黒）
-      </th>
-      <td> R2056
-      </td>
-      <td> 20
-      </td></tr>
+      <th scope="row">リベット（黒）</th>
+      <td> R2056</td>
+      <td> 20</td>
+    </tr>
     <tr>
-      <th scope="row">ネジ
-      </th>
-      <td> M3X5
-      </td>
-      <td> 4
-      </td></tr>
+      <th scope="row">ネジ</th>
+      <td> M3X5</td>
+      <td> 4</td>
+    </tr>
     <tr>
-      <th scope="row">ナイロンネジピラー
-      </th>
-      <td> M3X5X6
-      </td>
-      <td> 4
-      </td></tr>
+      <th scope="row">ナイロンネジピラー</th>
+      <td> M3X5X6</td>
+      <td> 4</td>
+    </tr>
     <tr>
-      <th scope="row">ナイロンナット
-      </th>
-      <td> M3X2.5
-      </td>
-      <td> 4
-      </td></tr></tbody></table>
+      <th scope="row">ナイロンナット</th>
+      <td> M3X2.5</td>
+      <td> 4</td>
+    </tr></tbody></table>
 
 ## 技術サポートと製品ディスカッション
 

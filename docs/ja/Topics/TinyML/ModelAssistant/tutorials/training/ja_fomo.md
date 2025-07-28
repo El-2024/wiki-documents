@@ -137,7 +137,7 @@ param_scheduler=[
 
 ## モデルのトレーニング
 
-モデルのトレーニングには、事前に設定した [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 作業環境を使用する必要があります。[インストール](ModelAssistant_Introduce_Installation) ガイドに従って Conda を使用して仮想環境 `sscma` に [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) をインストールした場合、現在その仮想環境内にいることを確認してください。
+モデルのトレーニングには、事前に設定した [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 作業環境を使用する必要があります。[インストール](/ja/ModelAssistant_Introduce_Installation) ガイドに従って Conda を使用して仮想環境 `sscma` に [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) をインストールした場合、現在その仮想環境内にいることを確認してください。
 
 次に、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant) プロジェクトのルートディレクトリで、以下のコマンドを実行して FOMO マスク検出モデルをトレーニングします。
 
@@ -189,7 +189,7 @@ python3 tools/inference.py \
 
 ### 評価
 
-モデルを実際のエッジコンピューティングデバイスでさらにテストおよび評価するには、モデルをエクスポートする必要があります。モデルのエクスポートプロセスでは、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant) がモデルのプルーニングや蒸留などの最適化を行います。モデルのエクスポート方法については、[エクスポート](ModelAssistant_Tutorials_Export_Overview) セクションを参照してください。
+モデルを実際のエッジコンピューティングデバイスでさらにテストおよび評価するには、モデルをエクスポートする必要があります。モデルのエクスポートプロセスでは、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant) がモデルのプルーニングや蒸留などの最適化を行います。モデルのエクスポート方法については、[エクスポート](/ja/ModelAssistant_Tutorials_Export_Overview) セクションを参照してください。
 
 ### デプロイ
 

@@ -192,8 +192,7 @@ Open Source Hardware (OSHW) refers to hardware whose design is made publicly ava
 	<table class="table-nobg">
     <tr class="table-trnobg">
       <th class="table-trnobg"><font size={"4"}>Wio Terminal Chassis Battery(650mAh)</font></th>
-      <th class="table-trnobg"><font size={"4"}>Wio Terminal LoRaWan Chassis with Antenna-built-in LoRa-E5 and GNSS, EU868/US915
-</font></th>
+      <th class="table-trnobg"><font size={"4"}>Wio Terminal LoRaWan Chassis with Antenna-built-in LoRa-E5 and GNSS, EU868/US915</font></th>
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">

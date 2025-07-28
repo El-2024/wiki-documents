@@ -34,16 +34,32 @@ With the SenseCAP [S2110 controller](https://www.seeedstudio.com/SenseCAP-XIAO-L
 SenseCAP S210x series industrial sensors provide an out-of-box experience for environmental sensing. Please refer to the S2103 Wireless CO2, Temperature, and Humidity Sensor with higher performance and robustness for air quality monitoring. The series includes sensors for soil moisture, air temperature and humidity, light intensity, CO2, EC, and an 8-in-1 weather station. Try the latest [SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device) for your next successful industrial project.
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td align="center"><font size={4}><strong>SenseCAP Industrial Sensor</strong></font></td>
-    </tr>
+  <tbody>
     <tr>
-      <td><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank"><img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S21012103.png" /></a></div>
+      <td align="center">
+        <font size={4}>
+          <strong>SenseCAP Industrial Sensor</strong>
+        </font>
       </td>
     </tr>
     <tr>
-      <td align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank"><strong>S2103 Air Temp &amp; Humidity &amp; CO2</strong></a></td>
+      <td>
+        <div align="center">
+          <a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank">
+            <img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S21012103.png" />
+          </a>
+        </div>
+      </td>
     </tr>
-  </tbody></table>
+    <tr>
+      <td align="center">
+        <a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank">
+          <strong>S2103 Air Temp &amp; Humidity &amp; CO2</strong>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -135,68 +151,66 @@ SenseCAP S210x series industrial sensors provide an out-of-box experience for en
   </tr>
 </table> -->
 
-<table border="2" colspan="tg" style={{ width: 529}}>
+<table border="2" style={{ width: 529}}>
   <colgroup>
     <col style={{width: 143}}/>
     <col style={{width: 98}}/>
     <col style={{width: 288}}/>
   </colgroup>
   <tr>
-    <th colspan="tg-xf7g">Parameter</th>
-    <th colspan="tg-xf7g">Signal</th>
-    <th colspan="tg-xf7g">Values</th>
+    <th>Parameter</th>
+    <th>Signal</th>
+    <th>Values</th>
   </tr>
   <tr>
-    <td colspan="tg-f5ry">Working Voltage</td>
-    <td colspan="tg-f5ry" colspan="1">                   3.3V/5V</td>
+    <td>Working Voltage</td>
+    <td colspan="2">3.3V/5V</td>
   </tr>
   <tr>
-    <td colspan="tg-f5ry" rowspan="2">Output range</td>
-    <td colspan="tg-f5ry">TVOC</td>
-    <td colspan="tg-28l8" >  0 ppb to 60000ppb </td>>
+    <td rowspan="2">Output range</td>
+    <td>TVOC</td>
+    <td>0 ppb to 60000ppb</td>
   </tr>
   <tr>
-    <td colspan="tg-eh2d">CO₂eq</td>
-    <td colspan="tg-3xi5">    400 ppm to 60000 ppm</td>
+    <td>CO₂eq</td>
+    <td>400 ppm to 60000 ppm</td>
   </tr>
    <tr>
-    <td colspan="tg-f5ry" rowspan="2">Sampling 
-    rate</td>
-    <td colspan="tg-eh2d">TVOC</td>
-    <td colspan="tg-3xi5">1HZ</td>
+    <td rowspan="2">Sampling rate</td>
+    <td>TVOC</td>
+    <td>1HZ</td>
   </tr>
   <tr>
-    <td colspan="tg-eh2d">CO₂eq</td>
-    <td colspan="tg-3xi5">1HZ</td>
+    <td>CO₂eq</td>
+    <td>1HZ</td>
   </tr>
   <tr>
-    <td colspan="tg-3we0"
-    rowspan="7">Resolution</td>
-    <td colspan="tg-3we0" rowspan="3">TVOC</td>
-    <td colspan="tg-i81m">0 - 2008 ppb / 1 ppb</td>
+    <td rowspan="7">Resolution</td>
+    <td rowspan="3">TVOC</td>
+    <td>0 - 2008 ppb / 1 ppb</td>
   </tr>
   <tr>
-    <td colspan="tg-i81m">2008 - 11110 ppb / 6 ppb</td>
+    <td>2008 - 11110 ppb / 6 ppb</td>
   </tr>
   <tr>
-    <td colspan="tg-i81m">11110 - 60000 ppb / 32 ppb</td>
+    <td>11110 - 60000 ppb / 32 ppb</td>
   </tr>
   <tr>
-    <td colspan="tg-3we0" rowspan="4">CO₂eq</td>
-    <td colspan="tg-i81m">400 - 1479 ppm / 1 ppm</td>
+    <td rowspan="4">CO₂eq</td>
+    <td>400 - 1479 ppm / 1 ppm</td>
   </tr>
   <tr>
-    <td colspan="tg-i81m">1479 -5144 ppm / 3 ppm</td>
+    <td>1479 -5144 ppm / 3 ppm</td>
   </tr>
   <tr>
-    <td colspan="tg-i81m">5144 - 17597 ppm / 9 ppm</td>
+    <td>5144 - 17597 ppm / 9 ppm</td>
   </tr>
   <tr>
-    <td colspan="tg-i81m">17597 - 60000 ppm / 31 ppm</td>
+    <td>17597 - 60000 ppm / 31 ppm</td>
   </tr>
   <tr>
-    <td colspan="tg-3we0">Default I2C address</td>
-    <td colspan="tg-i81m" colspan="1">0X58</td>
+    <td>Default I2C address</td>
+    <td colspan="2">0X58</td>
   </tr>
 </table>
 

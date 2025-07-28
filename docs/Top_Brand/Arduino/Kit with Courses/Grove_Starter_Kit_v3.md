@@ -309,13 +309,14 @@ Would you like a cup of flowers to ease your exhausted heart? This project is ma
 
 **Materials List**
 
-<dl><dd>1. Arduino x 1;
-</dd><dd>2. Grove – Base Shield x 1;
-</dd><dd>3. Grove – LED x 6;
-</dd><dd>4. Grove – Touch Sensor x 1;
-</dd><dd>5. 6 x 6cm Color paper x 6;
-</dd><dd>6. 9V battery &amp; 9V battery clip x 1.
-</dd></dl>
+<dl>
+  <dd>1. Arduino x 1;</dd>
+  <dd>2. Grove – Base Shield x 1;</dd>
+  <dd>3. Grove – LED x 6;</dd>
+  <dd>4. Grove – Touch Sensor x 1;</dd>
+  <dd>5. 6 x 6cm Color paper x 6;</dd>
+  <dd>6. 9V battery &amp; 9V battery clip x 1.</dd>
+</dl>
 
 :::note
     The number of LEDs is arbitrary. There are three of them contained in the basic kit. But you can increase or decrease it depending on the volume of your cup. I have a big cup here, so I added three more from our website.
@@ -394,14 +395,15 @@ Use a portable 9V battery to provide power to the flowers and settle it down in 
 How do you say hello to a friend? Big Chief would say “what’s better than a shake?” When one of these Big Chief paper toys lean his back against the others, they will shake to say hi!
 **Materials List**
 
-<dl><dd>1. Arduini x 1;
-</dd><dd>2. Grove – Base Shield x 1;
-</dd><dd>3. Grove – Magnetic Switch x 1;
-</dd><dd>4. Grove – Vibrator x 1;
-</dd><dd>5. Paper toys x 2;
-</dd><dd>6. Magnet x 1;
-</dd><dd>7. 9V battery &amp; 9V battery clip x 1.
-</dd></dl>
+<dl>
+  <dd>1. Arduini x 1;</dd>
+  <dd>2. Grove – Base Shield x 1;</dd>
+  <dd>3. Grove – Magnetic Switch x 1;</dd>
+  <dd>4. Grove – Vibrator x 1;</dd>
+  <dd>5. Paper toys x 2;</dd>
+  <dd>6. Magnet x 1;</dd>
+  <dd>7. 9V battery &amp; 9V battery clip x 1.</dd>
+</dl>
 
 **Note:** The number of LEDs is arbitrary. There are three of them contained in the basic kit. But you can increase or decrease it depending on the volume of your cup. I have a big cup here, so I added three more from our website.
 

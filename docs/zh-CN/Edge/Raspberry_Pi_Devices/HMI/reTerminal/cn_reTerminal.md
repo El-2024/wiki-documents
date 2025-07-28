@@ -334,7 +334,7 @@ reTerminal 开箱即带有预装的 Raspberry Pi OS。因此，我们可以直�
 - 电源适配器（5V/3A）
 - USB Type-C 数据线
 
-### <span id="jump2">将 Raspberry Pi OS/64 位 Ubuntu OS 或其他操作系统刷入 eMMC</span>
+### 将 Raspberry Pi OS/64 位 Ubuntu OS 或其他操作系统刷入 eMMC {#jump2}
 
 我们可以将 **Raspberry Pi OS/64 位 Ubuntu OS 或其他操作系统**刷入 reTerminal 上 CM4 的 **eMMC 存储**中。一旦安装了必要的驱动程序，只需将 reTerminal 的 USB Type-C 接口连接到您的电脑，它将显示为一个外部驱动器。首先，移除 reTerminal 的后壳。
 
@@ -549,7 +549,7 @@ sudo ./rpiboot
 
 - **步骤 14.** 将 **Boot Mode 开关** 翻回原始位置并组装 reTerminal 外壳
 
-### 使用 Wi-Fi/以太网通过 SSH 登录 Raspberry Pi OS/Ubuntu OS 或其他操作系统
+### 使用 Wi-Fi/以太网通过 SSH 登录 Raspberry Pi OS/Ubuntu OS 或其他操作系统 {#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet}
 
 如果您想通过 **Wi-Fi/以太网 SSH** 登录 Raspberry Pi OS，可以按照以下步骤操作。首先在 reTerminal 上设置 Wi-Fi/以太网，然后使用 Windows/Mac/Linux 进行 SSH 登录。
 
@@ -618,7 +618,7 @@ raspberry
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/102110497/SSH_WiFi_Linux.png" alt="pir" width="900" height="auto"/></p>
 
-### <span id="jump1">在刷新新的 Raspberry Pi OS/ Ubuntu OS 或其他操作系统后安装 reTerminal 驱动</span>
+### 在刷新新的 Raspberry Pi OS/ Ubuntu OS 或其他操作系统后安装 reTerminal 驱动 {#jump1}
 
 reTerminal 自带必要的驱动程序，开箱即用，因此您无需安装任何额外的驱动程序。然而，如果您自行刷新新的操作系统，则需要单独安装必要的驱动程序。需要驱动的硬件包括 **5 英寸 LCD、触摸屏、加速度计、光传感器、用户 LED、用户按钮、RTC、蜂鸣器、加密协处理器**。
 

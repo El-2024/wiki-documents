@@ -10,8 +10,8 @@ last_update:
   author: hushuxu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 ![画像をここに挿入](https://files.seeedstudio.com/wiki/Arch_V1.1/img/Arch.jpg)
@@ -135,12 +135,12 @@ USB ISPモードに入るには、Archをコンピュータに接続し、ボタ
     2.  新しいファームウェアをディスクにコピーします。
 
 -   Linuxの場合
-    1.  ディスクがマウントされていない場合、ディスクを**{mnt\_dir}**にマウントします。
-    2.  **dd if={new\_firmware.bin} of={mnt\_dir}/firmware.bin conv=notrunc**
+    1.  ディスクがマウントされていない場合、ディスクを**\{mnt\_dir\}**にマウントします。
+    2.  **dd if=\{new\_firmware.bin\} of=\{mnt\_dir\}/firmware.bin conv=notrunc**
 
 -   Macの場合、ターミナルを使用して以下のスクリプトを実行し、.binファイルをArchにコピーします。
 
-    1.  **dd if={new\_firmare.bin} of=/Volumes/CRP\\ DISABLD/firmware.bin conv=notrunc**
+    1.  **dd if=\{new\_firmare.bin\} of=/Volumes/CRP\\ DISABLD/firmware.bin conv=notrunc**
 
 また、**Automator**アプリケーションを作成して、ファイルをボードにドラッグ＆ドロップで対応することもできます。「*Run Shell Script*」を作成し、以下のコマンドを使用します：
 

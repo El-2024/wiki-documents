@@ -85,7 +85,7 @@ Currently, five configurations are supported: onnx, torch, tensorflow, caffe, an
 pip install tpu_mlir[all]==1.7
 ```
 
-When the tpu_mlir-{version}.whl file already exists locally, you can also use the following command to install it:
+When the `tpu_mlir-{version}.whl` file already exists locally, you can also use the following command to install it:
 
 ```bash
 pip install path/to/tpu_mlir-{version}.whl[all]

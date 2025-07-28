@@ -29,48 +29,41 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table>
 <tr>
-<th> タイプ
-</th>
-<th> SFB-55
-</th></tr>
+<th> タイプ </th>
+<th> SFB-55 </th>
+</tr>
 <tr>
-<td width="400px"> 定格電圧
-</td>
-<td width="400px"> 12
-</td></tr>
+<td width="400px"> 定格電圧 </td>
+<td width="400px"> 12 </td>
+</tr>
 <tr>
-<td> 定格電流
-</td>
-<td> 160
-</td></tr>
+<td> 定格電流 </td>
+<td> 160 </td>
+</tr>
 <tr>
-<td> 電圧範囲
-</td>
-<td> 8~16
-</td></tr>
+<td> 電圧範囲 </td>
+<td> 8~16 </td>
+</tr>
 <tr>
-<td> 最大出力
-</td>
-<td> 12
-</td></tr>
+<td> 最大出力 </td>
+<td> 12 </td>
+</tr>
 <tr>
-<td> 音量出力
-</td>
-<td> ≥110
-</td></tr>
+<td> 音量出力 </td>
+<td> ≥110 </td>
+</tr>
 <tr>
-<td> 動作温度
-</td>
-<td> -20~+50
-</td></tr>
+<td> 動作温度 </td>
+<td> -20~+50 </td>
+</tr>
 <tr>
-<td> 保管温度
-</td></tr>
+<td> 保管温度 </td>
+</tr>
 <tr>
-<td> 重量
-</td>
-<td> 80
-</td></tr></table>
+<td> 重量 </td>
+<td> 80 </td>
+</tr>
+</table>
 
 ## 機械的寸法
 
@@ -80,19 +73,16 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table>
 <tr>
-<th> リビジョン
-</th>
-<th> 説明
-</th>
-<th> リリース
-</th></tr>
+<th> リビジョン </th>
+<th> 説明 </th>
+<th> リリース </th>
+</tr>
 <tr>
-<td width="300px"> v0.9b
-</td>
-<td width="500px"> 初回公開リリース
-</td>
-<td width="200px"> 2009年6月8日
-</td></tr></table>
+<td width="300px"> v0.9b </td>
+<td width="500px"> 初回公開リリース </td>
+<td width="200px"> 2009年6月8日 </td>
+</tr>
+</table>
 
 ## 技術サポートと製品ディスカッション
 技術的な問題がある場合は、[フォーラム](http://forum.seeedstudio.com/)に問題を提出してください。  

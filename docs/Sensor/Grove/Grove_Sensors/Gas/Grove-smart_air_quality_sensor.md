@@ -56,7 +56,7 @@ We've released the [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.c
 - Power consumption: Low power consumption of 3.0 mA at 3.3 V
 - Operating temperature range: -40°C to +85°C
 - Humidity range: 0% to 100% RH (non-condensing)
-- Response time: <10 seconds for VOCs and <60 seconds for NOx
+- Response time: &lt;10 seconds for VOCs and &lt;60 seconds for NOx
 - Accuracy: ±15% for VOCs and ±50 ppb for NOx (at standard conditions)
 
 ## Applications

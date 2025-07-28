@@ -32,34 +32,36 @@ Unibody box for Galileo Gen2 is a protective casing for Intel Galileo board. It 
 ##  Specification
 ---
 <table>
-<tr>
-<td> Material </td>
-<td> PMMA
-</td></tr>
-<tr>
-<td> Color </td>
-<td> Transparent
-</td></tr>
-<tr>
-<td> Dimensions </td>
-<td> 136（L) * 80(W) * 20(H) mm
-</td></tr></table>
+  <tr>
+    <td> Material </td>
+    <td> PMMA </td>
+  </tr>
+  <tr>
+    <td> Color </td>
+    <td> Transparent </td>
+  </tr>
+  <tr>
+    <td> Dimensions </td>
+    <td> 136（L) * 80(W) * 20(H) mm </td>
+  </tr>
+</table>
 
 ##  Parts list
 ---
 <table>
-<tr>
-<th>Parts name   </th>
-<th> Quantity
-</th></tr>
-<tr>
-<td> Unibody box for Galileo Gen2  </td>
-<td> 1 PCS
-</td></tr>
-<tr>
-<td> Screw </td>
-<td> 5 PCS
-</td></tr></table>
+  <tr>
+    <th>Parts name</th>
+    <th>Quantity</th>
+  </tr>
+  <tr>
+    <td> Unibody box for Galileo Gen2 </td>
+    <td> 1 PCS </td>
+  </tr>
+  <tr>
+    <td> Screw </td>
+    <td> 5 PCS </td>
+  </tr>
+</table>
 
 ##  Assemle guides
 ---

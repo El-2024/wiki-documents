@@ -110,7 +110,8 @@ LoRaWAN 用 T1000-E は完全にオープンソースのファームウェアを
 
 ### LED
 
-<table><tr><th colspan="2" valign="top"><b>LEDステータス</b></th><th colspan="1" valign="top"><b>説明</b></th></tr>
+<table>
+<tr><th colspan="2" valign="top"><b>LEDステータス</b></th><th colspan="1" valign="top"><b>説明</b></th></tr>
 <tr><td colspan="1" rowspan="2">赤色LED</td><td colspan="1" valign="top">点灯</td><td colspan="1" valign="top">充電中</td></tr>
 <tr><td colspan="1" valign="top">点滅</td><td colspan="1" valign="top">充電異常</td></tr>
 <tr><td colspan="1" rowspan="4">緑色LED</td><td colspan="1" valign="top">点灯</td><td colspan="1" valign="top"><p>デバイスがDFUモードにあります。</p><p>DFUモードを終了するにはデバイスを再起動してください（ボタンを押し続け、充電ケーブルを接続した直後にボタンを放します）。</p></td></tr>
@@ -206,7 +207,8 @@ SenseCraftアプリにログインします。
 
 * **LoRa 設定**
 
-<table><tr><th colspan="1"></th><th colspan="1" valign="top"><b>パラメータ</b></th><th colspan="1" valign="top"><b>説明</b></th></tr>
+<table>
+<tr><th colspan="1"></th><th colspan="1" valign="top"><b>パラメータ</b></th><th colspan="1" valign="top"><b>説明</b></th></tr>
 <tr><td colspan="1" rowspan="5">プラットフォーム</td><td colspan="1" valign="top">SenseCAP for The Things Network（デフォルト）</td><td colspan="1" valign="top"><p>SenseCAP の専用TTNサーバー。SenseCAP ゲートウェイとペアリングすることで即使用可能。</p> <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCA Outdoor Gateway</span></a><br /><a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCA Indoor Gateway</span></a></td></tr>
 <tr><td colspan="1" valign="top">SenseCAP for Helium</td><td colspan="1" valign="top"><p>SenseCAP の専用Heliumコンソール。</p><p>SenseCAP Mate AppとPortalで即使用可能。</p></td></tr>
 <tr><td colspan="1" valign="top">Helium</td><td colspan="1" valign="top">公開Heliumサーバー</td></tr>
@@ -220,7 +222,8 @@ SenseCraftアプリにログインします。
 
 * **一般設定**
 
-<table><tr><th colspan="1"></th><th colspan="1" valign="top"><b>パラメータ</b></th><th colspan="1" valign="top"><b>説明</b></th></tr>
+<table>
+<tr><th colspan="1"></th><th colspan="1" valign="top"><b>パラメータ</b></th><th colspan="1" valign="top"><b>説明</b></th></tr>
 <tr><td colspan="1">3軸加速度計</td><td colspan="1" valign="top">有効/無効、デフォルトで無効</td><td colspan="1" valign="top">3軸加速度計のデータをアップロード</td></tr>
 <tr><td colspan="1" rowspan="2">SOSレポートモード</td><td colspan="1" valign="top">単一（デフォルト）</td><td colspan="1" valign="top">データをアップロードし、SOSイベントを1回報告。<br/>ブザーアラームが3秒間鳴る</td></tr>
 <tr><td colspan="1" valign="top">連続</td><td colspan="1" valign="top">データをアップロードし、SOSイベントを毎分報告、30回後に終了。<br/>ブザーアラームが30秒間鳴る</td></tr>

@@ -10,15 +10,11 @@ last_update:
   author: Matthew
 ---
 
-
-
 **SenseCAP M4 Square** is a device designed to run multiple web 3.0 applications and help you build decentralized networks. It has excellent hardware features to support the extension of multiple applications while providing easy and friendly methods to deploy **CUMULUS FluxNode** and other **web 3.0 Apps** with SenseCAP Hotspot App.
 
 SenseCAP M4 Square runs at a Quad-core Intel® Celeron® J4125 and RP2040 co-processor, equipping dual 2.5GbE interfaces and multiple wireless connectivities, supporting 4K output, carrying sufficient storage capability, and equipment expandability.
 
-
 <p style={{textAlign: 'center'}}><img src="https://www.sensecapmx.com/wp-content/uploads/2022/12/Pasted-into-Overview.png" alt="pir" width={600} height="auto" /></p>
-
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M4-Sqaure-Bundle.html">
@@ -37,7 +33,7 @@ SenseCAP M4 Square runs at a Quad-core Intel® Celeron® J4125 and RP2040 co-pro
     
 *   **Excellent Performance**：Powered by Intel® Celeron® J4125 (Frequency: 2.0 - 2.7GHz) with 4 cores and 4 threads.
     
-*   **Low Power Consumption** : 10w low power consumption, 7.2 kWh per month, cost $1.008 per month (global average kWh price of $0.144/per kWh).
+*   **Low Power Consumption** : 10w low power consumption, 7.2 kWh per month, cost \$1.008 per month (global average kWh price of \$0.144/per kWh).
     
 
 ![](https://www.sensecapmx.com/wp-content/uploads/2022/12/Pasted-into-Overview-1.png)
@@ -66,11 +62,11 @@ SenseCAP M4 Square runs at a Quad-core Intel® Celeron® J4125 and RP2040 co-pro
 
 ![](https://www.sensecapmx.com/wp-content/uploads/2022/12/Pasted-into-Overview-6.png)
 
-*   Device Size(/pcs): 130\*120\*55 mm
+*   Device Size(/pcs): 130×120×55 mm
     
 *   Device Weight(/pcs): 500g
     
-*   Package Size(/pcs): 165\*150\*115 mm
+*   Package Size(/pcs): 165×150×115 mm
     
 *   Package Weight(/pcs): 900g
     

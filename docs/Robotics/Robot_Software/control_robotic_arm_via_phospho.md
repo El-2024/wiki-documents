@@ -6,7 +6,7 @@ keywords:
 - Phospho
 - Robotic Arm
 - SOARM100
-image: https://files.seeedstudio.com/wiki/reComputer-Jetson/gr00t/dataset.webp
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/lerobot/so_arm_100.webp
 slug: /control_robotic_arm_via_phospho
 last_update:
   date: 7/1/2025
@@ -111,7 +111,7 @@ Before operating the robotic arm, we need to perform the second calibration. You
     src="https://files.seeedstudio.com/wiki/reComputer-Jetson/phospho/calibration.png" />
 </div>
 
-<div align="center">
+<div class="video-container">
   <iframe width="900" height="540" src="https://www.youtube.com/embed/65DW8yLcRmM" title="How to calibrate the SO-100 or SO-101 robot arm? Step by step guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
@@ -141,7 +141,7 @@ Beyond remote control of robotic arms, phospho offers many other exciting featur
 
 Here we experiment with VR-based robotic arm control. After installing the phospho teleop app in VR, the system can discover the robotic arm via local network. As demonstrated in the video, the VR interface enables remarkably smooth remote operation of the robotic arm's movements.
 
-<div align="center">
+<div class="video-container">
 <iframe width="900" height="540" src="https://www.youtube.com/embed/dvkHfyivQjI" title="AI-Powered Control of the Robotic Arm via Phospho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 

@@ -261,8 +261,7 @@ XIAO ESP32C6 的板载包要求至少使用版本 **2.0.8**。
 - **步骤 1.** 根据您的操作系统下载并安装稳定版本的 Arduino IDE。
 
   <div class="download_arduino_container" style={{textAlign: 'center'}}>
-      <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong>
-      </a>
+      <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong></a>
   </div>
 
   <br></br>

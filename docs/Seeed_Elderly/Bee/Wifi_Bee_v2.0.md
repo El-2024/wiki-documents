@@ -86,7 +86,7 @@ And the monitor replies with current ip address and opened port. It can be easil
 
 ![](https://files.seeedstudio.com/wiki/Wifi_Bee_v2.0/img/Join_network.png)
 
-*   8) Use Web browser to access "http://ip:port", like:"http://192.168.0.28:2000", and the monitor receives the http request from the Web browser shown below. However, the Web browser will not receive anything due to the wifi bee replies nothing.
+*   8) Use Web browser to access `http://ip:port`, like: `http://192.168.0.28:2000`, and the monitor receives the http request from the Web browser shown below. However, the Web browser will not receive anything due to the wifi bee replies nothing.
 
 ![](https://files.seeedstudio.com/wiki/Wifi_Bee_v2.0/img/Web_access.png)
 
@@ -108,28 +108,10 @@ Here we select [TCPUDPbg](https://files.seeedstudio.com/wiki/Wifi_Bee_v2.0/res/T
 
 ##  Version Tracker
 ---
-<table>
-<tr>
-<th>  Revision
-</th>
-<th> Descriptions
-</th>
-<th> Release
-</th></tr>
-<tr>
-<td width="300px"> Wifi Bee v1.0
-</td>
-<td width="500px"> transceiver module MRF24WB0MA which is SPI interface, and using a Atmega328p
-</td>
-<td width="200px"> Dec 13, 2011
-</td></tr>
-<tr>
-<td width="300px"> Wifi Bee v2.0
-</td>
-<td width="500px"> replace MRF24WB0MA with RN-171, cancel Atmega328p chip
-</td>
-<td width="200px"> Nov 11, 2013
-</td></tr></table>
+| Revision | Descriptions | Release |
+|----------|-------------|---------|
+| Wifi Bee v1.0 | transceiver module MRF24WB0MA which is SPI interface, and using a Atmega328p | Dec 13, 2011 |
+| Wifi Bee v2.0 | replace MRF24WB0MA with RN-171, cancel Atmega328p chip | Nov 11, 2013 |
 
 
 ## Schematic Online Viewer

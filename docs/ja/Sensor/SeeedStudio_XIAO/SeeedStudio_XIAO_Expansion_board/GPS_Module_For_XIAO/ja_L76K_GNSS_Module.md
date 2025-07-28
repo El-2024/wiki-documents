@@ -165,8 +165,7 @@ Arduino を初めて使用する場合は、[Arduino の使い方](/Getting_Star
 #### ステップ 1. お使いのオペレーティングシステムに応じて安定版の Arduino IDE をダウンロードしてインストール
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDE をダウンロード</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDE をダウンロード</font></span></strong></a>
 </div>
 
 #### ステップ 2. Arduino アプリケーションを起動

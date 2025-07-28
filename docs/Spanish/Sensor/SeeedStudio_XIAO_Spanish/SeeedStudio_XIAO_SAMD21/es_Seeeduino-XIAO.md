@@ -350,8 +350,7 @@ Si es la primera vez que usas Arduino, te recomendamos encarecidamente que consu
 - **Paso 1. Necesitas instalar el software de Arduino.**
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Descarga Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Descarga Arduino IDE</font></span></strong></a>
 </div>
 
 **Inicia la aplicación de Arduino**
@@ -373,7 +372,7 @@ Abre el sketch del ejemplo Blink: **Archivo > Ejemplos > 01.Básicos > Blink**.
 
 Haz clic en **Archivo > Preferencias** y completa el campo URLs adicionales del Administrador de Placas con la URL a continuación:
 
-*<https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json>*
+*&lt;https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json&gt;*
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png" alt="pir" width={600} height="auto" /></p>
 

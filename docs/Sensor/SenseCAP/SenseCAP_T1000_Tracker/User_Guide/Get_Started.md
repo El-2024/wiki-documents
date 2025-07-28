@@ -68,7 +68,8 @@ The device can cache data, which can be enabled through Bluetooth configuration 
 ### Button Function
 
 
-<table><tr><th colspan="1"><a name="_hlk134103971"></a><b>Actions</b></th><th colspan="1"><b>Description</b></th><th colspan="1"><b>LED Status</b></th><th colspan="1"><b>Buzzer</b></th></tr>
+<table>
+<tr><th colspan="1"><a name="_hlk134103971"></a><b>Actions</b></th><th colspan="1"><b>Description</b></th><th colspan="1"><b>LED Status</b></th><th colspan="1"><b>Buzzer</b></th></tr>
 <tr><td colspan="1" rowspan="2">Press button and hold for 3 seconds</td><td colspan="1">If the tracker is powered off, press and hold the button for 3 seconds to turn it on. The Bluetooth pairing will be activated automatically, and the user can use the app to scan and connect.</td><td colspan="1">The LED flashes once a second.</td><td colspan="1">Melody of rise</td></tr>
 <tr><td colspan="1">If the device is powered on, press and hold the button for 3 seconds to activate Bluetooth pairing.</td><td colspan="1">The LED flashes once a second.</td><td colspan="1">None</td></tr>
 <tr><td colspan="1">Press button and hold for 9 seconds</td><td colspan="1">Power off.</td><td colspan="1">None</td><td colspan="1">Melody of descent</td></tr>
@@ -166,9 +167,7 @@ It must be used with SenseCAP Gateway. SenseCAP builds a proprietary TTN server 
     </tr>
         <tr>
     <td>SenseCAP for Helium</td>
-    <td>When there is the Helium network coverage, data can upload via Helium. Devices run on a private Helium console of SenseCAP. Users do not need to create devices on Helium console, out of the box with SenseCAP Mate App and Portal. <br />
-
-<a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a></td>
+    <td>When there is the Helium network coverage, data can upload via Helium. Devices run on a private Helium console of SenseCAP. Users do not need to create devices on Helium console, out of the box with SenseCAP Mate App and Portal. <br /><a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a></td>
     </tr>
         <tr>
     <td>Helium</td>
@@ -182,7 +181,8 @@ It must be used with SenseCAP Gateway. SenseCAP builds a proprietary TTN server 
     <td>Other Platform</td>
     <td>Other LoRaWAN Network Server</td>
     </tr>
-  </tbody></table>
+  </tbody>
+</table>
 
 
 
@@ -215,7 +215,8 @@ It must be used with SenseCAP Gateway. SenseCAP builds a proprietary TTN server 
     <td>When “Platform” switches back to SenseCAP from another platform, LoRa parameters (EUI/App EUI/ App Key etc.) need to be restored</td>
     <td>You can use this function when you need to restore LoRa parameters to factory defaults</td>
     </tr>
-  </tbody></table>
+  </tbody>
+</table>
 
 
 
@@ -244,7 +245,8 @@ When the sensor is selected to be used with a public platform such as Helium or 
 To obtain EUI information in batches, please contact our sales team.
 :::
 
-<table><tr><th colspan="1" valign="top"><b>Frequency</b></th><th colspan="1" valign="top"><b>Common Name</b></th><th colspan="2" valign="top"><b>Sub-band</b></th></tr>
+<table>
+<tr><th colspan="1" valign="top"><b>Frequency</b></th><th colspan="1" valign="top"><b>Common Name</b></th><th colspan="2" valign="top"><b>Sub-band</b></th></tr>
 <tr><td colspan="1"><a name="ole_link14"></a>EU863-870</td><td colspan="1">EU868</td><td colspan="1">--------</td></tr>
 <tr><td colspan="1">US902-928</td><td colspan="1">US915</td><td colspan="1">Sub band from 1 to 8 (default sub-band 2)</td></tr>
 <tr><td colspan="1">AU915-928</td><td colspan="1">AU915</td><td colspan="1">Sub band from 1 to 8 (default sub-band 2)</td></tr>
@@ -271,7 +273,8 @@ For The Things Network, please refer to:[TTN-frequency-plans](https://www.thethi
 
 Please setup the work mode according to your needs.
 
-<table><tr><th colspan="1"><b>Parameters</b></th><th colspan="1"><b>Description</b></th><th colspan="1"></th></tr>
+<table>
+<tr><th colspan="1"><b>Parameters</b></th><th colspan="1"><b>Description</b></th><th colspan="1"></th></tr>
 <tr><td colspan="1">Heartbeat Interval</td><td colspan="1">When no data is uploaded by the device within the heartbeat interval, a heartbeat packet will be triggered. This packet only contains battery information.</td><td colspan="1">Default 720 minutes.</td></tr>
 <tr><td colspan="1">Enable Temp&Light</td><td colspan="1">If this switch is turned on, temperature and light will be collected and uploaded, but it will increase power consumption.</td><td colspan="1">Off by default.</td></tr>
 <tr><td colspan="1" rowspan="2">SOS Report Mode</td><td colspan="1">Single</td><td colspan="1"><a name="ole_link7"></a>If SOS is set to single mode, double-clicking the button will enable the single-shot SOS mode and upload the location/sensor data and SOS events once</td></tr>
@@ -288,7 +291,8 @@ Please setup the work mode according to your needs.
 
 For Event Mode, there are five events:
 
-<table><tr><th><b>Event Mode</b></th><th><b>Description</b></th><th></th></tr>
+<table>
+<tr><th><b>Event Mode</b></th><th><b>Description</b></th><th></th></tr>
 <tr><td>Uplink Interval – Non-event (min)</td><td><a name="ole_link16"></a>This is the upload interval when no events are triggered.</td><td><p>Default 60 minutes. </p><p>Range: 1~10080 min.</p></td></tr>
 <tr><td rowspan="2">Shock Event</td><td>When the shock event is enabled, the shock of the tracker will trigger a data report, including the shock event, location, and sensor data.</td><td>Off by default.</td></tr>
 <tr><td>3-Axis Motion Threshold (mg)</td><td>Default is 300. When the acceleration exceeds 300mg, the shock event is triggered.</td></tr>
@@ -316,7 +320,8 @@ The tracker supports positioning via GNSS, Wi-Fi, and Bluetooth.
 - **Wi-Fi**: Passive scanning, uploads the scanned 4 MAC addresses via LoRa. 
 - **BLE**: Uploads the scanned 3 best signal MAC addresses of Beacon via LoRa.
 
-<table><tr><th colspan="1"><b>Geolocation</b></th><th colspan="1"><b>Description</b></th><th colspan="1"></th></tr>
+<table>
+<tr><th colspan="1"><b>Geolocation</b></th><th colspan="1"><b>Description</b></th><th colspan="1"></th></tr>
 <tr><td colspan="1" rowspan="8">Geolocation Strategy</td><td colspan="1">Only GNSS</td><td colspan="1"><p>Default use GNSS. </p><p>Only GNSS is used for position.</p></td></tr>
 <tr><td colspan="1">Only Wi-Fi</td><td colspan="1">Only Wi-Fi scans are used for position.</td></tr>
 <tr><td colspan="1">Wi-Fi+GNSS</td><td colspan="1">Use Wi-Fi before GNSS. If Wi-Fi fails, then use GNSS in one geolocation cycle.</td></tr>

@@ -155,52 +155,14 @@ COMxとNCx（通常閉）またはNOx（通常開）の接続を使用して、�
 
 ## バージョントラッカー ##
 
-<div>
-  <h2>バージョントラッカー</h2>
-  <table>
-    <tbody><tr>
-        <th>リビジョン
-        </th>
-        <th>説明
-        </th>
-        <th>リリース日
-        </th></tr>
-      <tr style={{fontSize: '90%'}}>
-        <td width="300px"> Relay shield V1.0
-        </td>
-        <td width="500px"> 初回公開リリース
-        </td>
-        <td width="200px"> 2010年3月31日
-        </td></tr>
-      <tr style={{fontSize: '90%'}}>
-        <td> Relay shield V1.1
-        </td>
-        <td>
-        </td>
-        <td>
-        </td></tr>
-      <tr style={{fontSize: '90%'}}>
-        <td> Relay shield V1.2
-        </td>
-        <td>
-        </td>
-        <td>
-        </td></tr>
-      <tr style={{fontSize: '90%'}}>
-        <td> Relay shield V1.3
-        </td>
-        <td>
-          <ol><li>7805のパッケージ変更
-            </li><li>端子がArduinoのUSBコネクタに触れないように変更
-            </li><li>Arduino使用時のマルチ電源供給に対する保護を追加
-            </li><li>リレーに接続される配線の厚さを追加
-            </li><li>シルクスクリーンを基板の裏面に変更
-            </li><li>オープンソースハードウェアのロゴを追加
-            </li></ol>
-        </td>
-        <td> 2011年12月1日
-        </td></tr></tbody></table>
-</div>
+## バージョントラッカー
+
+| リビジョン | 説明 | リリース日 |
+|---|---|---|
+| Relay shield V1.0 | 初回公開リリース | 2010年3月31日 |
+| Relay shield V1.1 | | |
+| Relay shield V1.2 | | |
+| Relay shield V1.3 | 1. 7805のパッケージ変更<br/>2. 端子がArduinoのUSBコネクタに触れないように変更<br/>3. Arduino使用時のマルチ電源供給に対する保護を追加<br/>4. リレーに接続される配線の厚さを追加<br/>5. シルクスクリーンを基板の裏面に変更<br/>6. オープンソースハードウェアのロゴを追加 | 2011年12月1日 |
 
 ## 回路図オンラインビューア
 

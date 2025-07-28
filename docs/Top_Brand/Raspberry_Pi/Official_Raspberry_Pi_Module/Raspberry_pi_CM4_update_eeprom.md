@@ -27,7 +27,7 @@ In terms of external dimensions, this version adopts a completely new mechanical
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/0/102991421_front-05_2_1.png" alt="pir" width={650} height="auto" /></p>
 
 :::note
-The power of Raspberry Pi 4 in a compact form factor for deeply embedded applications. Raspberry Pi Compute Module 4 incorporates a quad-core ARM Cortex-A72 processor, dual video output, and a wide selection of other interfaces. Available in 32 variants, with a range of RAM and eMMC Flash options, and with or without wireless connectivity. -- [Raspbarry Pi CM4](https://www.raspberrypi.com/products/compute-module-4/?variant=raspberry-pi-cm4001000){target=_blank}
+The power of Raspberry Pi 4 in a compact form factor for deeply embedded applications. Raspberry Pi Compute Module 4 incorporates a quad-core ARM Cortex-A72 processor, dual video output, and a wide selection of other interfaces. Available in 32 variants, with a range of RAM and eMMC Flash options, and with or without wireless connectivity. -- [Raspbarry Pi CM4](https://www.raspberrypi.com/products/compute-module-4/?variant=raspberry-pi-cm4001000)
 :::
 
 ## Seeed Studio Compute Module 4 Products
@@ -54,7 +54,7 @@ The power of Raspberry Pi 4 in a compact form factor for deeply embedded applica
 | <a href="https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html" target="_blank"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/r/e/reterminal-cover-1.png" alt="pir" width="650" height="auto"/></a>  | <a href="https://www.seeedstudio.com/Dual-GbE-Carrier-Board-with-4GB-RAM-32GB-eMMC-RPi-CM4-Case-p-5029.html" target="_blank"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/110110110_preview-16.png" alt="pir" width="650" height="auto"/></a> | <a href="https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html" target="_blank"><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/110110090_preview-07-min.png" alt="pir" width="650" height="auto"/></a> |
 
 :::note
-This process requires to put the CM4 eMMC stroage into 'USB mass storage' mode, which currently on applicable with reRouter and reTerminal. If you have Edgebox-RPI-200 or EdgeLogix-RPI-1000 you will need to have a CM4 development board that could put CM4 eMMC storage into USB storage mode, For example [Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html){target=_blank}
+This process requires to put the CM4 eMMC stroage into 'USB mass storage' mode, which currently on applicable with reRouter and reTerminal. If you have Edgebox-RPI-200 or EdgeLogix-RPI-1000 you will need to have a CM4 development board that could put CM4 eMMC storage into USB storage mode, For example [Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html)
 :::
 
 ### Put CM4 eMMC Storage into USB mass storage Mode
@@ -131,7 +131,7 @@ cd recovery
 You should see the similar message as shown below:
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Mini_Router/eeprom_update_log.png" alt="pir" width={1000} height="auto" /></p>
 
-**Optional:** If you want use the specific release of the bootloader firmware you could visit the [rpi-eeprom](https://github.com/raspberrypi/rpi-eeprom/tree/master/firmware/){target=_blank} repo firmware folder to select and download firmware bin file to replace the **`pieeprom.original.bin`** file, For example:
+**Optional:** If you want use the specific release of the bootloader firmware you could visit the [rpi-eeprom](https://github.com/raspberrypi/rpi-eeprom/tree/master/firmware/) repo firmware folder to select and download firmware bin file to replace the **`pieeprom.original.bin`** file, For example:
 
 :::note
 This optinal step will replace the **`pieeprom.original.bin`** file with the latest `stable` build **`pieeprom-2023-01-11.bin`** at the time of writing this wiki.

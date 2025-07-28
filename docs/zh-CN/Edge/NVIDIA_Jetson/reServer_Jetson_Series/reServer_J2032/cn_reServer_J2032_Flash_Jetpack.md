@@ -33,15 +33,15 @@ sku:
     <tbody><tr>
       </tr>
       <tr>
-        <td align="center">正面
-        </td><td align="center">背面
-        </td></tr>
+        <td align="center">正面</td>
+        <td align="center">背面</td>
+      </tr>
       <tr>
         <td align="center">
-          <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware1.png" alt />
+          <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware1.png" alt="" />
         </td>
         <td align="center">
-          <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware2.png" alt />
+          <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware2.png" alt="" />
         </td>
       </tr>
     </tbody></table>
@@ -51,8 +51,8 @@ sku:
 
 我们可以使用 **NVIDIA SDK Manager** 来刷写系统，也可以通过 **命令行脚本** 轻松完成此操作。对于有 Linux 基础知识的用户，我们强烈推荐使用 **命令行脚本**，因为它提供了更多的功能。
 
-- [通过 NVIDIA SDK Manager 和 Linux 终端刷写 JetPack 操作系统](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [通过 Linux 终端刷写 JetPack 操作系统](#flashing-jetpack-os-via-command-line)
+- 通过 NVIDIA SDK Manager 和 Linux 终端刷写 JetPack 操作系统
+- 通过 Linux 终端刷写 JetPack 操作系统
 
 在开始之前，还需要进行一些准备工作：
 

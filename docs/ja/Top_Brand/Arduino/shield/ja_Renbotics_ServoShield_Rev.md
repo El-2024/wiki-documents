@@ -100,20 +100,17 @@ void loop()
 ## バージョントラッカー
 
 <table>
-<tr>
-<th> リビジョン
-</th>
-<th> 説明
-</th>
-<th> リリース日
-</th></tr>
-<tr>
-<td width="300px"> v1.1
-</td>
-<td width="500px"> 初回公開リリース
-</td>
-<td width="200px"> 2009年8月23日
-</td></tr></table>
+  <tr>
+    <th> リビジョン </th>
+    <th> 説明 </th>
+    <th> リリース日 </th>
+  </tr>
+  <tr>
+    <td width="300px"> v1.1 </td>
+    <td width="500px"> 初回公開リリース </td>
+    <td width="200px"> 2009年8月23日 </td>
+  </tr>
+</table>
 
 ## リソース
 

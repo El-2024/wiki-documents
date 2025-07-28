@@ -20,7 +20,7 @@ What is Samsung ARTIK™? Samsung ARTIK™ is a pre-integrated IoT platform cons
 
 As mentioned above, the Eagleye530s is based on the ARTIK 530s 1GB SoM, which is a Quad Core Cortex® A9 running @ 1.2 GHz with 4 B Flash memory, hardware-based security features, and Linux OS (Ubuntu). The Eagleye 530s also provides a 40 pin GPIO and accessory interface for Micro SD, Ethernet 10/100/1000, Wi-Fi 802.11 a/b/g/n, Bluetooth BLE 4.2 802.15.4, and ZigBee/Thread. It also supports full HDMI, MIPI camera interfaces, video, and audio media.
 
-Since the Eagleye 530s is pin-compatible with many “maker” hardware accessories, it allows Samsung ARTIK™ developers to easily tap into the extensive “maker” accessories marketplace and prototype and build with off-the-shelf sensors (eg. [GrovePi+](https://www.seeedstudio.com/GrovePi%2B-p-2241.html),[Grove sensors](https://www.seeedstudio.com/grove.html)), voice recognition (eg. [ReSpeaker 2-mic array](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT-p-2874.html) and [ReSpeaker 4-mic array](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi-p-2941.html)), relays, GPS, cellular connectivity, and more, providing many options for enterprise developers creating feature-rich proof-of-concepts (PoC) or production-ready products.
+Since the Eagleye 530s is pin-compatible with many "maker" hardware accessories, it allows Samsung ARTIK™ developers to easily tap into the extensive "maker" accessories marketplace and prototype and build with off-the-shelf sensors (eg. [GrovePi+](https://www.seeedstudio.com/GrovePi%2B-p-2241.html),[Grove sensors](https://www.seeedstudio.com/grove.html)), voice recognition (eg. [ReSpeaker 2-mic array](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT-p-2874.html) and [ReSpeaker 4-mic array](https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi-p-2941.html)), relays, GPS, cellular connectivity, and more, providing many options for enterprise developers creating feature-rich proof-of-concepts (PoC) or production-ready products.
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/4IR768d8Ins" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -61,7 +61,7 @@ Since the Eagleye 530s is pin-compatible with many “maker” hardware accessor
 |                  | Bluetooth®             | 4.2 (BLE+Classic)                                                         |
 |                  | 802.15.4               | ZigBee®/Thread                                                            |
 | Power Management |                        |                                                                           |
-|                  | PMIC                   | Provides all power of the ARTIK 530 Module using on board bucks and LDO’s |
+|                  | PMIC                   | Provides all power of the ARTIK 530 Module using on board bucks and LDO's |
 | Interfaces       |                        |                                                                           |
 |                  | Ethernet               | 10/100/1000Base-T MAC (External PHY required)                             |
 |                  | Analog and Digital I/O | GPIO, UART, I2C, SPI, USB Host, USB OTG, HSIC, ADC, PWM, I2S, JTAG        |
@@ -88,7 +88,7 @@ Below figures show the overall preview of the Eagleye 530s' TOP and BOTTOM.
 
 - <font face size={5} font color="ff0000">ⓓ</font> <strong>Ear Jack:</strong> has one 4 pin ear jack interface supporting stereo audio
 
-- <font face size={5} font color="ff0000">ⓔ</font> <strong>Boot Switch:</strong> When ‘eMMc 1st Boot’ is selected as a booting option, the system will first try to boot from eMMc, if this fails the system will search for an SD Card to boot from. If booting from the SD-Card also fails the system tries to boot from USB. When choosing the SD-Card booting option, the system starts with booting from SD, and if this fails will continue to try a USB boot. When USB is selected as the booting mechanism of choice, only a USB boot will be attempted.
+- <font face size={5} font color="ff0000">ⓔ</font> <strong>Boot Switch:</strong> When 'eMMc 1st Boot' is selected as a booting option, the system will first try to boot from eMMc, if this fails the system will search for an SD Card to boot from. If booting from the SD-Card also fails the system tries to boot from USB. When choosing the SD-Card booting option, the system starts with booting from SD, and if this fails will continue to try a USB boot. When USB is selected as the booting mechanism of choice, only a USB boot will be attempted.
 
 | SW402 | eMMc 1st Boot | SD Card 1st Boot | USB 1st Boot |
 |-------|---------------|------------------|--------------|
@@ -174,20 +174,20 @@ This section will describe how to start working with your Eagleye 530s Developme
 
 **Software**
 
-Setting up a connection with the Eagleye 530s Module can be done in a wired or wireless manner. Here we choose to install PuTTY a free serial console. The software can be downloaded from <http://www.putty.org/>. Once downloaded go through the following steps:
+Setting up a connection with the Eagleye 530s Module can be done in a wired or wireless manner. Here we choose to install PuTTY a free serial console. The software can be downloaded from [http://www.putty.org/](http://www.putty.org/). Once downloaded go through the following steps:
 
 - Step 1. Open the device manager on the control panel.
-- Step 2. When using a PC install the USB to Serial driver. The driver can be found at the following location: (<https://www.ftdichip.com/Drivers/CDM/CDM21218_Setup.zip>). For other drivers please visit (<https://www.ftdichip.com/Drivers/D2XX.htm>).
+- Step 2. When using a PC install the USB to Serial driver. The driver can be found at the following location: [https://www.ftdichip.com/Drivers/CDM/CDM21218_Setup.zip](https://www.ftdichip.com/Drivers/CDM/CDM21218_Setup.zip). For other drivers please visit [https://www.ftdichip.com/Drivers/D2XX.htm](https://www.ftdichip.com/Drivers/D2XX.htm).
 - Step 3. Check the COM port number on your PC when you connect the USB serial cable. In our case the COM port allocated is COM9.
 
 ![](https://files.seeedstudio.com/wiki/Eagleye_530s/img/Com.png)
 
 - Step 4. Set the PuTTY configuration as follows:
-  - Set the “Serial line” as the COM port number found in step 3.
+  - Set the "Serial line" as the COM port number found in step 3.
   - Set the COM speed to "115200".
   - Set the connection type to "Serial".
   - Save the session under Eagleye 530s.
-- Step 5. Select your saved session and click the “Open” button.
+- Step 5. Select your saved session and click the "Open" button.
 
 ![](https://files.seeedstudio.com/wiki/Eagleye_530s/img/Putty_setup.png)
 
@@ -366,7 +366,7 @@ connmanctl> quit
 
 **Firmware Update**
 
-- Step 1. Download the [firmware](https://developer.artik.io/documentation/downloads.html#firmware), the files for the “ARTIK 530s 1G”.
+- Step 1. Download the [firmware](https://developer.artik.io/documentation/downloads.html#firmware), the files for the "ARTIK 530s 1G".
 - Step 2. Use [Etcher](https://etcher.io/) tool to burn the firmware to SD card.
 - Step 3. Plug the SD card to Eagleye 530s SD slot.
 - Step 4. Change boot switch(named as number 21 on hardware overview) Pin4 to on.
@@ -529,7 +529,7 @@ ls tty*
 
 ```
 stty -F /dev/ttyAMA4 
-echo “hello ..” > /dev/ttyAMA4
+echo "hello .." > /dev/ttyAMA4
 ```
 
 - Step 4. We can see the serial monitor as below.
@@ -1194,11 +1194,11 @@ For more information, please refer to [Raspberry Pi Relay Board v1.0](https://wi
 ![](https://files.seeedstudio.com/wiki/Eagleye_530s/img/Com.png)
 
 - Step 2. Set the PuTTY configuration as follows:
-  - Set the “Serial line” as the COM port number found in step 3.
+  - Set the "Serial line" as the COM port number found in step 3.
   - Set the COM speed to "115200".
   - Set the connection type to "Serial".
   - Save the session under Eagleye 530s.
-- Step 3. Select your saved session and click the “Open” button.
+- Step 3. Select your saved session and click the "Open" button.
 
 ![](https://files.seeedstudio.com/wiki/Eagleye_530s/img/Putty_setup.png)
 

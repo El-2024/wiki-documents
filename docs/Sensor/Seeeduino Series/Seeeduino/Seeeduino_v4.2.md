@@ -57,7 +57,8 @@ Finally, the three on-board Grove interfaces can make your board connect to Grov
         <br />
         4.Add an I2C Grove connector<br />
         <br />
-        5.Change some silkscreen and part location</td>
+        5.Change some silkscreen and part location
+      </td>
       <td className="tg-yw4l">Aug 24, 2015</td>
     </tr>
       <tr>
@@ -257,7 +258,7 @@ Select the serial device of the Arduino board from the Tools | Serial Port menu.
 ![enter image description here](https://files.seeedstudio.com/wiki/SeeeduinoV4/images/select_port.png)
 
 :::note
-On the Mac or Linux, this should be something with **/dev/tty.USBmodem**.
+On the Mac or Linux, this should be something with **`/dev/tty.USBmodem`**.
 :::
 
 **Step 6. Upload the program.**
@@ -289,7 +290,7 @@ Here is some funny project for your reference.
 
 ## FAQs
 
-**Q1：In Ubuntu, I get the error 'avrdue: ser_open(): can't open device "dev/tty/ACM0": Permission denied'. How do I connect Seeeduino V4 to a Linux PC?**
+**Q1：In Ubuntu, I get the error 'avrdue: ser_open(): can't open device `dev/tty/ACM0`: Permission denied'. How do I connect Seeeduino V4 to a Linux PC?**
 
 A1： Please read the instuction [here](http://playground.arduino.cc/Linux/Debian) to make Arduino IDE work without root permission in Ubuntu. Please find below the relevant part.
 
@@ -303,7 +304,7 @@ A2: Seeeduino v4.2 is fully compatible with Arduino UNO. The mainly difference l
 - DCDC circuit instead of LDO, more efficiency
 - Others circuit improve
 
-**Q3: Error downloading <http://downloads.arduino.cc/packages/package_index.json>**
+**Q3: Error downloading `<http://downloads.arduino.cc/packages/package_index.json>`**
 
 A3: Please follow below steps to solve the issue.
 

@@ -71,15 +71,13 @@ Zigbeeデバイス間でデータを送信する際には、16ビットのネッ
 
 <table>
 <tr>
-<th> **UartSBee_V3.1に接続されたXBee ZBの設定**
-</th>
-<th> **Grove - XBee Carrierに接続されたXBee ZBの設定**
-</th></tr>
+<th>**UartSBee_V3.1に接続されたXBee ZBの設定**</th>
+<th>**Grove - XBee Carrierに接続されたXBee ZBの設定**</th>
+</tr>
 <tr>
-<td> ![](https://files.seeedstudio.com/wiki/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products/img/XBee_UartSBee.jpg)
-</td>
-<td> ![](https://files.seeedstudio.com/wiki/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products/img/XBee_Stem-XBee-Carrier.jpg)
-</td></tr></table>
+<td>![](https://files.seeedstudio.com/wiki/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products/img/XBee_UartSBee.jpg)</td>
+<td>![](https://files.seeedstudio.com/wiki/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products/img/XBee_Stem-XBee-Carrier.jpg)</td>
+</tr></table>
 
 *   **FT232RL**チップ用の必要なドライバを以下の手順でインストールしてください：
 

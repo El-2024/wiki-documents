@@ -113,7 +113,7 @@ last_update:
 这是一个典型的双向电平移位电路，用于连接I^2^C总线上两个不同电压的部分。这个传感器的I<sup>2</sup>C总线使用3.3V，如果Arduino的I<sup>2</sup>C总线使用5V，那么就需要这个电路。在上面的原理图中，**Q17** 和 **Q18** 是N沟道MOSFET [2N7002A](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/2N7002A_datasheet.pdf)，它们作为双向开关工作。为了更好地理解这一部分，您可以参考[AN10441](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/AN10441.pdf)。
 
 :::注意
-        在本节中，我们只向您展示了部分原理图，如需完整文档，请参考 [资源](/#resources)部分
+        在本节中，我们只向您展示了部分原理图，如需完整文档，请参考资源部分
 :::
 
 ## 支持的平台

@@ -180,7 +180,7 @@ bitbake rpi-test-image -k
 
 ##### 显示镜像中的软件包
 
-- bitbake -g < image > && cat pn-buildlist | grep -v -e '-native' | grep -v digraph | grep -v -e '-image' | awk '{print $1}' | sort | uniq
+- bitbake -g \< image \> && cat pn-buildlist | grep -v -e '-native' | grep -v digraph | grep -v -e '-image' | awk '\{print \$1\}' | sort | uniq
 
 此命令会将镜像中的软件包保存到名为 **pn-buildlist** 的文件中，并在控制台上列出它们。
 
@@ -194,7 +194,7 @@ bitbake -g rpi-test-image && cat pn-buildlist | grep -v -e '-native' | grep -v d
 
 ##### 显示软件包依赖关系
 
-- bitbake -g < package > && cat pn-buildlist | grep -v -e '-native' | grep -v digraph | grep -v -e '-image' | awk '{print $1}' | sort | uniq
+- bitbake -g \< package \> && cat pn-buildlist | grep -v -e '-native' | grep -v digraph | grep -v -e '-image' | awk '\{print \$1\}' | sort | uniq
 
 此命令会将软件包依赖关系保存到名为 **pn-buildlist** 的文件中，并在控制台上列出它们。
 
@@ -407,7 +407,7 @@ source toaster start webport=9000
 
   - Layer name: meta-raspberrypi
   - Where is the layer source code?: In a **Git repository**
-  - Git repository URL: <https://github.com/agherzan/meta-raspberrypi.git>
+  - Git repository URL: https://github.com/agherzan/meta-raspberrypi.git
   - Git revision: 8dc3a310883ea87cd9900442f46f20bb08e57583
 
 - **步骤 15.** 点击 **Import and add to project**
@@ -418,21 +418,21 @@ source toaster start webport=9000
 
   - Layer name: meta-qt5
   - Where is the layer source code?: In a **Git repository**
-  - Git repository URL: <https://github.com/meta-qt5/meta-qt5.git>
+  - Git repository URL: https://github.com/meta-qt5/meta-qt5.git
   - Git revision: master
 
 - **meta-seeed-reterminal**
 
   - Layer name: meta-seeed-reterminal
   - Where is the layer source code?: In a **Git repository**
-  - Git repository URL: <https://github.com/Seeed-Studio/meta-seeed-reterminal.git>
+  - Git repository URL: https://github.com/Seeed-Studio/meta-seeed-reterminal.git
   - Git revision: main
 
 - **meta-oe**
 
   - Layer name: meta-oe
   - Where is the layer source code?: In a **Git repository**
-  - Git repository URL: <https://github.com/openembedded/meta-openembedded.git>
+  - Git repository URL: https://github.com/openembedded/meta-openembedded.git
   - Repository subdirectory: meta-oe
   - Git revision: master
 
@@ -440,7 +440,7 @@ source toaster start webport=9000
 
   - Layer name: meta-python
   - Where is the layer source code?: In a **Git repository**
-  - Git repository URL: <https://github.com/openembedded/meta-openembedded.git>
+  - Git repository URL: https://github.com/openembedded/meta-openembedded.git
   - Repository subdirectory: meta-python
   - Git revision: master
 

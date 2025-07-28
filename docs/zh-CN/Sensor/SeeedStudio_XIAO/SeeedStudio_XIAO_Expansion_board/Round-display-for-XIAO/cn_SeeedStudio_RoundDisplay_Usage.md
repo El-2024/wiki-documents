@@ -322,7 +322,7 @@ void loop() {
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/80.png" style={{width:700, height:'auto'}}/></div>
 
-### 程序注释
+### 程序注释 {#program-annotation}
 
 此代码使用ADC测量电池电压并计算电池电量百分比。实现方式因硬件平台而异：
 

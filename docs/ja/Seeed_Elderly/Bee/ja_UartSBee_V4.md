@@ -24,33 +24,25 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table >
 <tr>
-<th> リビジョン
-</th>
-<th> 説明
-</th>
-<th> リリース日
-</th></tr>
+<th>リビジョン</th>
+<th>説明</th>
+<th>リリース日</th>
+</tr>
 <tr>
-<td> UartSBee V3.1
-</td>
-<td> 底面のBluetoothブレークアウトを削除、フォームファクタを縮小
-</td>
-<td> 2010年9月2日
-</td></tr>
+<td>UartSBee V3.1</td>
+<td>底面のBluetoothブレークアウトを削除、フォームファクタを縮小</td>
+<td>2010年9月2日</td>
+</tr>
 <tr>
-<td> UartSBee V2.3
-</td>
-<td> 3.3VピンのDC電流を強化、XBee Proをより良くサポートするために最大500mAを提供
-</td>
-<td> 2009年7月21日
-</td></tr>
+<td>UartSBee V2.3</td>
+<td>3.3VピンのDC電流を強化、XBee Proをより良くサポートするために最大500mAを提供</td>
+<td>2009年7月21日</td>
+</tr>
 <tr>
-<td> UartSBee V2.1
-</td>
-<td> 初の公開リリース
-</td>
-<td> 2009年2月1日
-</td></tr></table>
+<td>UartSBee V2.1</td>
+<td>初の公開リリース</td>
+<td>2009年2月1日</td>
+</tr></table>
 
 ## 特徴
 ---
@@ -86,98 +78,73 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table cellpadding="1" cellspacing="1">
 <tr>
-<th scope="row"> マイクロプロセッサ
-</th>
-<td> FT232RL
-</td></tr>
+<th scope="row">マイクロプロセッサ</th>
+<td>FT232RL</td>
+</tr>
 <tr>
-<th scope="row"> PCBサイズ
-</th>
-<td> 3.1cm x 4.1cm
-</td></tr>
+<th scope="row">PCBサイズ</th>
+<td>3.1cm x 4.1cm</td>
+</tr>
 <tr>
-<th scope="row"> インジケータ
-</th>
-<td> POWER、緑色LED。TxdおよびRxd用のLED
-</td></tr>
+<th scope="row">インジケータ</th>
+<td>POWER、緑色LED。TxdおよびRxd用のLED</td>
+</tr>
 <tr>
-<th scope="row"> 電源供給
-</th>
-<td> 3.3Vおよび5V DC
-</td></tr>
+<th scope="row">電源供給</th>
+<td>3.3Vおよび5V DC</td>
+</tr>
 <tr>
-<th scope="row"> インターフェース
-</th>
-<td> Mini-B USB、2.54mmピッチピンヘッダ
-</td></tr>
+<th scope="row">インターフェース</th>
+<td>Mini-B USB、2.54mmピッチピンヘッダ</td>
+</tr>
 <tr>
-<th scope="row"> アダプタソケット
-</th>
-<td> XBee互換2.0mmピッチメスピンヘッダ
-</td></tr>
+<th scope="row">アダプタソケット</th>
+<td>XBee互換2.0mmピッチメスピンヘッダ</td>
+</tr>
 <tr>
-<th scope="row"> 接続性
-</th>
-<td> USB
-</td></tr>
+<th scope="row">接続性</th>
+<td>USB</td>
+</tr>
 <tr>
-<th scope="row"> 通信プロトコル
-</th>
-<td> UART、ビットバングI/O、SPI
-</td></tr>
+<th scope="row">通信プロトコル</th>
+<td>UART、ビットバングI/O、SPI</td>
+</tr>
 <tr>
-<th scope="row"> ROHS
-</th>
-<td> YES
-</td></tr></table>
+<th scope="row">ROHS</th>
+<td>YES</td>
+</tr></table>
 
 ### 電気的特性
 
 <table >
 <tr>
-<th> 仕様
-</th>
-<th> 最小
-</th>
-<th> 標準
-</th>
-<th> 最大
-</th>
-<th> 単位
-</th></tr>
+<th>仕様</th>
+<th>最小</th>
+<th>標準</th>
+<th>最大</th>
+<th>単位</th>
+</tr>
 <tr>
-<td> 入力電圧
-</td>
-<td> -
-</td>
-<td> 5
-</td>
-<td> 5
-</td>
-<td> Vdc
-</td></tr>
+<td>入力電圧</td>
+<td>-</td>
+<td>5</td>
+<td>5</td>
+<td>Vdc</td>
+</tr>
 <tr>
-<td> 消費電流
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td> 500
-</td>
-<td> mA
-</td></tr>
+<td>消費電流</td>
+<td>-</td>
+<td>-</td>
+<td>500</td>
+<td>mA</td>
+</tr>
 <tr>
-<td> 出力電圧
-</td>
-<td> 3.3
-</td>
-<td> -
-</td>
-<td> 5
-</td>
-<td> Vdc
-</td></tr></table>
+<td>出力電圧</td>
+<td>3.3</td>
+<td>-</td>
+<td>5</td>
+<td>Vdc</td>
+</tr></table>
 
 ## システムブロック図
 ---
@@ -290,50 +257,41 @@ Bit-Bangモードは、FT232RLの特別な機能で、8つのI/Oライン（**D0
 
 <table >
 <tr>
-<th> UartSBee信号
-</th>
-<th> BitBang I/O信号
-</th></tr>
+<th>UartSBee信号</th>
+<th>BitBang I/O信号</th>
+</tr>
 <tr>
-<td> TxD
-</td>
-<td> D0
-</td></tr>
+<td>TxD</td>
+<td>D0</td>
+</tr>
 <tr>
-<td> RxD
-</td>
-<td> D1
-</td></tr>
+<td>RxD</td>
+<td>D1</td>
+</tr>
 <tr>
-<td> RTS
-</td>
-<td> D2
-</td></tr>
+<td>RTS</td>
+<td>D2</td>
+</tr>
 <tr>
-<td> CTS
-</td>
-<td> D3
-</td></tr>
+<td>CTS</td>
+<td>D3</td>
+</tr>
 <tr>
-<td> DTR
-</td>
-<td> D4
-</td></tr>
+<td>DTR</td>
+<td>D4</td>
+</tr>
 <tr>
-<td> DSR
-</td>
-<td> D5
-</td></tr>
+<td>DSR</td>
+<td>D5</td>
+</tr>
 <tr>
-<td> DCD
-</td>
-<td> D6
-</td></tr>
+<td>DCD</td>
+<td>D6</td>
+</tr>
 <tr>
-<td> RI
-</td>
-<td> D7
-</td></tr></table>
+<td>RI</td>
+<td>D7</td>
+</tr></table>
 
 **BitBangモードの操作:**
 

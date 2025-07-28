@@ -12,7 +12,7 @@ last_update:
 
 ![enter image description here](https://files.seeedstudio.com/wiki/LinkIt_Smart_7688/img/Linkit_Smart_product.jpg)
 
-:::dangernote
+:::danger
 Due to the closure of MediaTek Labs, all related links have become invalid. If you need to download relevant files, please search for them on the following link: [https://github.com/MediaTek-Labs](https://github.com/MediaTek-Labs).
 :::
 
@@ -43,75 +43,73 @@ This board is only a part of MediaTek LinkIt Smart 7688 platform which includes 
 ## Specification
 ---
 <table>
-<tr>
-<th>Category
-</th>
-<th> Feature
-</th>
-<th>Specification
-</th></tr>
+  <tr>
+    <th>Category</th>
+    <th>Feature</th>
+    <th>Specification</th>
+  </tr>
 <tr>
 <td rowspan="4"> MPU </td>
 <td> Chipset </td>
-<td> MT7688AN
-</td></tr>
+<td> MT7688AN </td>
+</tr>
 <tr>
 <td> Core </td>
-<td> MIPS24KEc
-</td></tr>
+<td> MIPS24KEc </td>
+</tr>
 <tr>
 <td> Clock speed</td>
-<td> 580MHz
-</td></tr>
+<td> 580MHz </td>
+</tr>
 <tr>
 <td> Working voltage </td>
-<td> 3.3V
-</td></tr>
+<td> 3.3V </td>
+</tr>
 <tr>
 <td> PCB Size </td>
 <td> Dimensions </td>
-<td> 55.7 x 26 mm
-</td></tr>
+<td> 55.7 x 26 mm </td>
+</tr>
 <tr>
-<td rowspan="2"> Memory   </td>
+<td rowspan="2"> Memory </td>
 <td> Flash </td>
-<td> 32MB
-</td></tr>
+<td> 32MB </td>
+</tr>
 <tr>
-<td>  RAM</td>
-<td> 128MB DDR2
-</td></tr>
+<td> RAM</td>
+<td> 128MB DDR2 </td>
+</tr>
 <tr>
-<td rowspan="2"> Power Source  </td>
+<td rowspan="2"> Power Source </td>
 <td> USB Power </td>
-<td> 5V (USB micro-B)
-</td></tr>
+<td> 5V (USB micro-B) </td>
+</tr>
 <tr>
-<td>  VCC </td>
-<td> 3.3V (Pin Breakout)
-</td></tr>
+<td> VCC </td>
+<td> 3.3V (Pin Breakout) </td>
+</tr>
 <tr>
-<td rowspan="2"> GPIO  </td>
+<td rowspan="2"> GPIO </td>
 <td> Pin Count </td>
-<td> 22 (MT7688AN)
-</td></tr>
+<td> 22 (MT7688AN) </td>
+</tr>
 <tr>
-<td>  Voltage </td>
-<td> 3.3V
-</td></tr>
+<td> Voltage </td>
+<td> 3.3V </td>
+</tr>
 <tr>
-<td rowspan="5"> PWM  </td>
+<td rowspan="5"> PWM </td>
 <td> Pin Count</td>
-<td> 4 (MT7688AN)
-</td></tr>
+<td> 4 (MT7688AN) </td>
+</tr>
 <tr>
-<td>  Voltage </td>
-<td> 3.3V
-</td></tr>
+<td> Voltage </td>
+<td> 3.3V </td>
+</tr>
 <tr>
-<td>  Max. Resolution </td>
-<td> 7 bits (customizable)
-</td></tr>
+<td> Max. Resolution </td>
+<td> 7 bits (customizable) </td>
+</tr>
 <tr>
 <td rowspan="2">Maximum Frequency@Resolution </td>
 <td>
@@ -124,7 +122,8 @@ This board is only a part of MediaTek LinkIt Smart 7688 platform which includes 
 3.125kHz@6-bit,
 1.5625kHz@7-bit (Standard mode)
 
-</td></tr>
+</td>
+</tr>
 <tr>
 <td>
 
@@ -137,106 +136,106 @@ This board is only a part of MediaTek LinkIt Smart 7688 platform which includes 
 625kHz@7-bit
 (Fast mode)
 
-</td></tr>
+</td>
+</tr>
 <tr>
 <td> External Interrupts </td>
 <td> Pin Count </td>
-<td> 22 (MT7688AN)
-</td></tr>
+<td> 22 (MT7688AN) </td>
+</tr>
 <tr>
 <td rowspan="3"> SPI </td>
 <td> Set count </td>
-<td> 1 (MT7688AN)
-</td></tr>
+<td> 1 (MT7688AN) </td>
+</tr>
 <tr>
-<td>  Pin numbers </td>
-<td> P22, P23, P24 (Shared with on-board flash), P25
-</td></tr>
+<td> Pin numbers </td>
+<td> P22, P23, P24 (Shared with on-board flash), P25 </td>
+</tr>
 <tr>
-<td>  Max. Speed </td>
-<td> 25 MHz
-</td></tr>
+<td> Max. Speed </td>
+<td> 25 MHz </td>
+</tr>
 <tr>
 <td rowspan="3"> SPI Slave </td>
 <td> Set count </td>
-<td> 1 (MT7688AN)
-</td></tr>
+<td> 1 (MT7688AN) </td>
+</tr>
 <tr>
-<td>  Pin numbers </td>
-<td> P28, P29, P30, P31
-</td></tr>
+<td> Pin numbers </td>
+<td> P28, P29, P30, P31 </td>
+</tr>
 <tr>
-<td>  Max. Speed </td>
-<td> 25 MHz
-</td></tr>
+<td> Max. Speed </td>
+<td> 25 MHz </td>
+</tr>
 <tr>
 <td rowspan="2"> I<sup>2</sup>S </td>
 <td> Set count </td>
-<td> 1 (MT7688AN)
-</td></tr>
+<td> 1 (MT7688AN) </td>
+</tr>
 <tr>
-<td>  Pin numbers </td>
-<td> P10, P11, P12, P13
-</td></tr>
+<td> Pin numbers </td>
+<td> P10, P11, P12, P13 </td>
+</tr>
 <tr>
 <td rowspan="3"> I<sup>2</sup>C </td>
 <td> Set count </td>
-<td> 1
-</td></tr>
+<td> 1 </td>
+</tr>
 <tr>
-<td>  Pin numbers </td>
-<td> P20, P21
-</td></tr>
+<td> Pin numbers </td>
+<td> P20, P21 </td>
+</tr>
 <tr>
-<td>  Speed </td>
-<td> 120K/400K
-</td></tr>
+<td> Speed </td>
+<td> 120K/400K </td>
+</tr>
 <tr>
 <td rowspan="3"> UART Lite </td>
 <td> Set count </td>
-<td> 3 (MT7688AN)
-</td></tr>
+<td> 3 (MT7688AN) </td>
+</tr>
 <tr>
-<td>  Pin numbers </td>
-<td> P8, P9, P16, P17, P18, P19
-</td></tr>
+<td> Pin numbers </td>
+<td> P8, P9, P16, P17, P18, P19 </td>
+</tr>
 <tr>
-<td>  Max. Speed </td>
-<td> 0.5Mbps
-</td></tr>
+<td> Max. Speed </td>
+<td> 0.5Mbps </td>
+</tr>
 <tr>
 <td rowspan="3"> USB Host </td>
 <td> Set count </td>
-<td> 1 (MT7688AN)
-</td></tr>
-<tr>
-<td>  Pin numbers </td>
-<td> P6, P7
-</td></tr>
-<tr>
-<td>  Speed </td>
-<td> Micro-AB
-</td></tr>
-<tr>
-<td rowspan="3"> ICommunication </td>
-<td> Wi-Fi </td>
-<td> 1T1R 802.11 b/g/n (2.4G)
-</td></tr>
-<tr>
-<td>  Ethernet </td>
-<td> 1-port 10/100 FE PHY
-</td></tr>
+<td> 1 (MT7688AN) </td>
+</tr>
 <tr>
 <td> Pin numbers </td>
-<td> P2, P3, P4, P5
-</td></tr>
+<td> P6, P7 </td>
+</tr>
+<tr>
+<td> Speed </td>
+<td> Micro-AB </td>
+</tr>
+<tr>
+<td rowspan="3"> Communication </td>
+<td> Wi-Fi </td>
+<td> 1T1R 802.11 b/g/n (2.4G) </td>
+</tr>
+<tr>
+<td> Ethernet </td>
+<td> 1-port 10/100 FE PHY </td>
+</tr>
+<tr>
+<td> Pin numbers </td>
+<td> P2, P3, P4, P5 </td>
+</tr>
 <tr>
 <td> User Storage </td>
 <td> SD Card </td>
-<td> Micro SD
-SDXC
-
-</td></tr></table>
+<td> Micro SD SDXC </td>
+</tr>
+</table>
 
 ## Hardware Overview
 ----
@@ -255,17 +254,18 @@ SDXC
 
 <table>
 <tr>
-<th>Parts name   </th>
-<th> Quantity
-</th></tr>
+<th>Parts name</th>
+<th>Quantity</th>
+</tr>
 <tr>
-<td> LinkIt<sup>TM</sup> Smart 7688  </td>
-<td> 1PC
-</td></tr>
+<td> LinkIt<sup>TM</sup> Smart 7688 </td>
+<td> 1PC </td>
+</tr>
 <tr>
 <td> Manual </td>
-<td> 1PC
-</td></tr></table>
+<td> 1PC </td>
+</tr>
+</table>
 
 ## Getting started
 ----

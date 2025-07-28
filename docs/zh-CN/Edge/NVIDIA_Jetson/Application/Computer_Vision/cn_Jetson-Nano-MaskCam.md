@@ -201,7 +201,7 @@ sudo docker-compose up -d
 
 ![](https://files.seeedstudio.com/wiki/Jetson-Nano-MaskCam/tu7.png)
 
-如果您等待几秒钟并刷新页面后仍然看到 ```ConnectionError```，请确保端口：<5432> 和 <80> 没有被占用或监听。
+如果您等待几秒钟并刷新页面后仍然看到 ```ConnectionError```，请确保端口：5432 和 80 没有被占用或监听。
 
 如果您第一次成功访问前端网页，但之后失败，目前解决问题的最佳方法是重新安装 Docker。
 

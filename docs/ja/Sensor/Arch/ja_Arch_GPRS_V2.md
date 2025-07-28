@@ -10,8 +10,8 @@ last_update:
   author: hushuxu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 ![](https://files.seeedstudio.com/wiki/Arch_GPRS_V2/img/Arch_GPRS_V2.jpg)
@@ -23,7 +23,7 @@ Arch GPRS V2は標準的なArduinoインターフェースと[Grove](https://wik
 
 <div class="admonition note">
 <p class="admonition-title">注意</p>
-Arch GPRS V2には<a href="https://mbed.org/handbook/mbed-HDK">mbedインターフェース</a>が付属していません。デバッグメッセージを出力するには、<a href="https://mbed.org/handbook/USBSerial">USBSerial</a>を試してください。
+<p>Arch GPRS V2には<a href="https://mbed.org/handbook/mbed-HDK">mbedインターフェース</a>が付属していません。デバッグメッセージを出力するには、<a href="https://mbed.org/handbook/USBSerial">USBSerial</a>を試してください。</p>
 </div>
 
 特徴
@@ -135,12 +135,12 @@ USB ISPモードに入るには、Archをコンピューターに接続し、ボ
 
 - Linuxの場合
 
-    1. ディスクがマウントされていない場合、ディスクを**{mnt\_dir}**にマウントします。
-    2. **dd if={new\_firmware.bin} of={mnt\_dir}/firmware.bin conv=notrunc**
+    1. ディスクがマウントされていない場合、ディスクを**\{mnt\_dir\}**にマウントします。
+    2. **dd if=\{new\_firmware.bin\} of=\{mnt\_dir\}/firmware.bin conv=notrunc**
 
 - Mac では、以下のスクリプトをターミナルで実行して、.bin ファイルを Arch にコピーする必要があります。
 
-    1. **dd if={new\_firmware.bin} of=/Volumes/CRP\\ DISABLD/firmware.bin conv=notrunc**
+    1. **dd if=\{new\_firmware.bin\} of=/Volumes/CRP\\ DISABLD/firmware.bin conv=notrunc**
 
 もし興味があれば、**Automator** アプリケーションを作成して、ファイルをボードにドラッグ＆ドロップで対応させることもできます。以下のコマンドを使用して "*Run Shell Script*" を作成してください：
 

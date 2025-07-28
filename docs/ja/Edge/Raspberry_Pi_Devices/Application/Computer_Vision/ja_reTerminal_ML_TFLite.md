@@ -81,7 +81,8 @@ TFLite Converter を使用すると、TensorFlow モデルを .tflite 形式に�
     <tr>
       <td>物体検出</td>
       <td> <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/000402.jpg" alt="pir" width={600} height="auto" /></p></td>
-      <td>デモ: 車両検出 <br />
+      <td>
+        デモ: 車両検出 <br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_multi_stage.ipynb" target="_top">Jupyter Notebook</a><br />
         <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/detector" target="_top">サンプルスクリプト</a> <br />
         alpha 0.25 224x224 66.7 FPS (15 ms.)<br />
@@ -93,7 +94,8 @@ TFLite Converter を使用すると、TensorFlow モデルを .tflite 形式に�
     <tr>
       <td>画像分類</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/belt.png" alt="pir" width={600} height="auto" /></p> </td>
-      <td>デモ: 工業用コンベアの裂け目識別<br />
+      <td>
+        デモ: 工業用コンベアの裂け目識別<br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_conveyor_belt_rip_recognition.ipynb" target="_top">Jupyter Notebook</a><br />
         <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier" target="_top">サンプルスクリプト</a>
       </td>
@@ -101,7 +103,8 @@ TFLite Converter を使用すると、TensorFlow モデルを .tflite 形式に�
     <tr>
       <td>セマンティックセグメンテーション</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/CHNCXR_0331_1.png" alt="pir" width={600} height="auto" /></p></td>
-      <td>デモ: 肺セグメンテーション <br />
+      <td>
+        デモ: 肺セグメンテーション <br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_lung_segmentation.ipynb" target="_top">Jupyter Notebook</a><br />
         <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/segnet" target="_top">サンプルスクリプト</a>
       </td>
@@ -109,7 +112,8 @@ TFLite Converter を使用すると、TensorFlow モデルを .tflite 形式に�
     <tr>
       <td>顔年齢/性別認識</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/output.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>デモ: マルチステージ推論: MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
+      <td>
+        デモ: マルチステージ推論: MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
         <a href="https://github.com/AIWintermuteAI/edge_ml_age_gender_recognition/tree/master" target="_top">Github リポジトリ</a><br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_age_gender" target="_top">サンプルスクリプト</a> <br />
         ~16-20 FPS (<a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_age-gender" target="_top">ARM NN</a> 使用時)
@@ -118,7 +122,8 @@ TFLite Converter を使用すると、TensorFlow モデルを .tflite 形式に�
     <tr>
       <td>顔表情認識</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/ml/emotion/emotions.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>デモ: マルチステージ推論: MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
+      <td>
+        デモ: マルチステージ推論: MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
         <a href="https://github.com/AIWintermuteAI/edge_ml_emotion_recognition/tree/master" target="_top">Github リポジトリ</a><br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_emotion" target="_top">サンプルスクリプト</a> <br />
         ~11 FPS
@@ -127,7 +132,8 @@ TFLite Converter を使用すると、TensorFlow モデルを .tflite 形式に�
     <tr>
       <td>顔アンチスプーフィング</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/ml/face_anti-spoofing/face_anti-spoofing.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>デモ: マルチステージ推論: MobileNet YOLOv3 alpha 0.25 -&gt; MobileNet v1 alpha 0.25<br />
+      <td>
+        デモ: マルチステージ推論: MobileNet YOLOv3 alpha 0.25 -&gt; MobileNet v1 alpha 0.25<br />
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_face_anti_spoofing.ipynb" target="_top">Jupyter Notebook</a><br />
         <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier" target="_top">サンプルスクリプト</a>  <br />
         ~23 FPS (ARM NN)
@@ -136,8 +142,9 @@ TFLite Converter を使用すると、TensorFlow モデルを .tflite 形式に�
     <tr>
       <td>顔認識</td>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/face_recognition.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>デモ: マルチステージ推論: Ultra Light Face Detector with Landmark Detection -&gt; MobileFaceNet<br />
-         <a >Jupyter Notebook</a><br /> 
+      <td>
+        デモ: マルチステージ推論: Ultra Light Face Detector with Landmark Detection -&gt; MobileFaceNet<br />
+        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_face_recognition.ipynb" target="_top">Jupyter Notebook</a><br /> 
         <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_recognition" target="_top">サンプルスクリプト</a>  <br />
         ~15 FPS (ARM NN)
       </td>
@@ -151,7 +158,7 @@ TFLite Converter を使用すると、TensorFlow モデルを .tflite 形式に�
 reTerminal は Raspberry Pi 4 をベースとしているため、ニューラルネットワーク推論用の追加ハードウェアアクセラレータを持たず、CPU 推論のための標準的な最適化手法のみが適用可能です。
 このトピックのビデオ概要はこちらでご覧いただけます：
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/BEDEscDQFxk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/BEDEscDQFxk" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
 以下は CPU 推論最適化手法の簡単な概要です：
 
@@ -185,18 +192,18 @@ MobileNetv1(alpha 0.25) YOLOv2 1クラス 0.89 MB 83 FPS
 MobileNetv1(alpha 1.0) YOLOv3 20クラス 13.1 MB 7.2 FPS  
 
 最適化されたカーネルの主な問題は、異なるフレームワークでのアーキテクチャ/NN オペレーター/精度タイプのサポートが不均一であることです。例えば、INT8 最適化カーネルは ARM NN と XNNPACK の両方で進行中の作業です。XNNPACK における INT8 最適化カーネルのサポートは非常に最近追加され、モデルで使用されるオペレーターに応じて約30％の控えめなパフォーマンス向上をもたらすようです。  
-<https://github.com/google/XNNPACK/issues/999#issuecomment-870791779>
+[https://github.com/google/XNNPACK/issues/999#issuecomment-870791779](https://github.com/google/XNNPACK/issues/999#issuecomment-870791779)
 
 もう一つの有望な方向性は、動的に量子化されたモデル用の最適化カーネルです。開発者との会話はこちらをご覧ください：  
-<https://github.com/tensorflow/tensorflow/pull/48751#issuecomment-869111116>
+[https://github.com/tensorflow/tensorflow/pull/48751#issuecomment-869111116](https://github.com/tensorflow/tensorflow/pull/48751#issuecomment-869111116)
 
 開発者は、レイテンシが3〜4倍改善すると主張していますが、現在のところ非常に特定のモデルセットに限定されています。より便利な使用を可能にするための PR が開発中です。
 
 4) **プルーニングとスパース推論**  
 プルーニングは、正確な予測に寄与しない重みを見つけるために訓練済みニューラルネットワークを微調整するプロセスです。これにより、モデルのサイズとレイテンシの両方を削減できます。精度の低下はスパース性の設定に依存します。実験的には、精度にほとんど影響を与えずに最大80％のスパース性を達成することが可能です。詳細はこちらをご覧ください：  
-<https://ai.googleblog.com/2021/03/accelerating-neural-networks-on-mobile.html>  
+[https://ai.googleblog.com/2021/03/accelerating-neural-networks-on-mobile.html](https://ai.googleblog.com/2021/03/accelerating-neural-networks-on-mobile.html)
 Tensorflow を使用したプルーニングのガイドはこちら：  
-<https://www.tensorflow.org/model_optimization/guide/pruning/pruning_for_on_device_inference>  
+[https://www.tensorflow.org/model_optimization/guide/pruning/pruning_for_on_device_inference](https://www.tensorflow.org/model_optimization/guide/pruning/pruning_for_on_device_inference)
 残念ながら、現在の形式では、XNNPACK を使用したプルーニングとスパース推論をサポートするモデルは非常に限られています。
 
 ## F.A.Q

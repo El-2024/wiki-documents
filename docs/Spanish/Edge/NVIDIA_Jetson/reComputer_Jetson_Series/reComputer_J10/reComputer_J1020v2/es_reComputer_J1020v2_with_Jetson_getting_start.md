@@ -70,69 +70,59 @@ Para los proveedores de soluciones, la reComputer J1020 v2 tiene preinstalado Je
     </tr>
     <tr>
       <td>Decodificador de video</td>
-      <td colspan='2'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60 (H.265 & H.264)
-      </td>
+      <td colspan='2'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60 (H.265 & H.264)</td>
       <td>4Kp60 | 2x 4Kp30 | 8x 1080p30 | 18x 720p30 (H.264/H.265)</td>
     </tr>
     <tr>
       <td>Gigabit Ethernet</td>
-      <td colspan='3' align='center'>1*RJ45 Conector Gigabit Ethernet (10/100/1000)</td>
+      <td colspan='3' align='center'>1×RJ45 Conector Gigabit Ethernet (10/100/1000)</td>
     </tr>
     <tr>
       <td>USB</td>
-      <td>1 * USB 3.0 Tipo - A; 
-2 * USB 2.0 Tipo - A;
-1 * USB Tipo - C para modo dispositivo;
-1 * USB Tipo - C para 5V de alimentación de entrada</td>
-      <td>4 * USB 3.0 Tipo - A ；
-1 * Puerto Micro-USB para modo dispositivo;</td>
-      <td>4 * USB 3.0 Tipo - A; 
-1 * Puerto Micro-USB para 5V de alimentación de entrada o para modo dispositivo</td>
+      <td>1 × USB 3.0 Tipo - A; 2 × USB 2.0 Tipo - A; 1 × USB Tipo - C para modo dispositivo; 1 × USB Tipo - C para 5V de alimentación de entrada</td>
+      <td>4 × USB 3.0 Tipo - A; 1 × Puerto Micro-USB para modo dispositivo;</td>
+      <td>4 × USB 3.0 Tipo - A; 1 × Puerto Micro-USB para 5V de alimentación de entrada o para modo dispositivo</td>
     </tr>
     <tr>
       <td>Conector para cámara CSI</td>
-      <td colspan='3' align='center'>2*CSI (15 pos, 1mm pitch, MIPI CSI-2 )</td>
+      <td colspan='3' align='center'>2×CSI (15 pos, 1mm pitch, MIPI CSI-2 )</td>
     </tr>
     <tr>
       <td>Pantalla</td>
-      <td>1*HDMI Tipo - As</td>
-      <td colspan='2' align='center'>1*HDMI Tipo - A; 
-1*DP</td>
+      <td>1×HDMI Tipo - As</td>
+      <td colspan='2' align='center'>1×HDMI Tipo - A; 1×DP</td>
     </tr>
     <tr>
       <td>Ventilador</td>
-      <td colspan='3' align='center'>1* Conector para ventilador (5V PWM)</td>
+      <td colspan='3' align='center'>1× Conector para ventilador (5V PWM)</td>
     </tr>
     <tr>
       <td>M.2 KEY E</td>
-      <td>1*M.2 Key E</td>
-      <td>1*M.2 Key E (Deshabilitado)</td>
-      <td>1*M.2 Key E</td>
+      <td>1×M.2 Key E</td>
+      <td>1×M.2 Key E (Deshabilitado)</td>
+      <td>1×M.2 Key E</td>
     </tr>
     <tr>
       <td>M.2 KEY M</td>
       <td>-</td>
-      <td>1*M.2 Key M</td>
+      <td>1×M.2 Key M</td>
       <td>-</td>
     </tr>
     <tr>
       <td>RTC</td>
-      <td>1*RTC Socket</td>
-      <td>1*RTC Socket
-1*RTC 2-pin</td>
+      <td>1×RTC Socket</td>
+      <td>1×RTC Socket 1×RTC 2-pin</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Puerto multifuncional</td>
-      <td colspan='3' align='center'>1* 40-Pin header</td>
+      <td colspan='3' align='center'>1× 40-Pin header</td>
     </tr>
     <tr>
       <td>Fuente de alimentación</td>
       <td>USB-Tipo C 5V⎓3A</td>
-      <td>	
-9-12V Adaptador de alimentación no incluido (Barrel Jack 5.5/2.5mm)</td>
-      <td>DC Jack 5V⎓4A；
-Micro-USB 5V⎓2A</td>
+      <td>9-12V Adaptador de alimentación no incluido (Barrel Jack 5.5/2.5mm)</td>
+      <td>DC Jack 5V⎓4A；Micro-USB 5V⎓2A</td>
     </tr>
     <tr>
       <td>Mecánica</td>
@@ -145,5 +135,5 @@ Micro-USB 5V⎓2A</td>
 ## Flashear JetPack a la reComputer J1020v2
 
 :::info
-Por favor revisa [esta wiki](/reComputer_J2021_J202_Flash_Jetpack) para más información, porque la J1020v2 utiliza la Carrier Board J202.
+Por favor revisa [esta wiki](/es/reComputer_J2021_J202_Flash_Jetpack) para más información, porque la J1020v2 utiliza la Carrier Board J202.
 :::

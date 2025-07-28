@@ -12,8 +12,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/100.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
 </div>
 
 ## Introduction
@@ -132,7 +131,7 @@ The following Wiki pages provide detailed information about different ways to pr
 
 * [**Works with ESPHome in Home Assistant**](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel) - Configure and control your ePaper Panel through ESPHome integration, ideal for Home Assistant users to create custom dashboards.
 
-* [**Works with Arduino**](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel_arduino) - Program your device using Arduino IDE with our library and examples for custom applications.
+* [**Works with Arduino**](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel_esphome) - Program your device using Arduino IDE with our library and examples for custom applications.
 
 * [**Works with TRMNL**](https://wiki.seeedstudio.com/xiao_7_5_inch_epaper_panel_with_trmnl) - Control your display with trmnl, an open-source platform for smart visual dashboard management.
 

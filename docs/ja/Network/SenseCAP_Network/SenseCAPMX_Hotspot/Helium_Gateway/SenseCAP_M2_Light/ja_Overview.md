@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 SenseCAP M2 Light Hotspot は、高性能な LoRaWAN ゲートウェイであり、最小限のコストでユーザーが Helium ネットワークに参加できるようにします。
 
-SenseCAP M2 用の SenseCAP ソフトウェアライセンスは、**1日あたりわずか $0.05** から利用可能で、必要に応じて支払うことで、PoC（Proof of Coverage）とデータ転送の利点を最小限の投資で享受できます。
+SenseCAP M2 用の SenseCAP ソフトウェアライセンスは、**1日あたりわずか \$0.05** から利用可能で、必要に応じて支払うことで、PoC（Proof of Coverage）とデータ転送の利点を最小限の投資で享受できます。
 
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-sensecap-m2-light-hotspot-software-license--first_1_.jpg" alt="pir" width={600} height="auto" /></p>
 
@@ -38,11 +38,11 @@ SenseCAP M2 Light Hotspot を有効化して Helium 用の LoRaWAN カバレッ�
 
 | **ライセンス有効期間** | 90日間 | 365日間 | 無制限 |
 | :- | :- | :- | :- |
-| <p></p><p>**パッケージプラン**</p> | $7.99 （1日あたり $0.09 から） | $19.99 （1日あたり $0.05 から） | $49.99 （無制限ライセンス） |
+| <p></p><p>**パッケージプラン**</p> | \$7.99 （1日あたり \$0.09 から） | \$19.99 （1日あたり \$0.05 から） | \$49.99 （無制限ライセンス） |
 
 **注意:** このライセンスは **SenseCAP M2 Light Hotspot** のみに適用され、他のホットスポットを有効化するためには使用できません。
 
-SenseCAP ソフトウェアライセンスは、Helium オンボーディング料金とは異なります。SenseCAP ソフトウェアとクラウドサービスを有効化するために必要な $50 の Helium オンボーディング料金は、SenseCAP Hotspot パッケージに含まれています。
+SenseCAP ソフトウェアライセンスは、Helium オンボーディング料金とは異なります。SenseCAP ソフトウェアとクラウドサービスを有効化するために必要な \$50 の Helium オンボーディング料金は、SenseCAP Hotspot パッケージに含まれています。
 
 **特徴**
 

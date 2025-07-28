@@ -11,8 +11,8 @@ last_update:
   author: gunengyu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 |![](https://files.seeedstudio.com/wiki/5V-3.3V_Breadboard_Power_Supply/img/Supply.jpg)|![](https://files.seeedstudio.com/wiki/5V-3.3V_Breadboard_Power_Supply/img/5VAnd3.3V_Breadboard_Power_Supply_v1.2.jpg)|
@@ -27,24 +27,21 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table>
   <tbody><tr>
-      <th> リビジョン
-      </th>
-      <th> 説明
-      </th>
-      <th> リリース日
-      </th></tr>
+      <th> リビジョン</th>
+      <th> 説明</th>
+      <th> リリース日</th>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td width="300px"> 5V/3.3V ブレッドボード電源 v1.1
-      </td>
-      <td width="500px"> 初回公開リリース
-      </td>
-      <td width="200px">
-      </td></tr>
+      <td width="300px"> 5V/3.3V ブレッドボード電源 v1.1</td>
+      <td width="500px"> 初回公開リリース</td>
+      <td width="200px"></td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> 5V/3.3V ブレッドボード電源 v1.2
-      </td>
-      <td>
-      </td></tr></tbody></table>
+      <td> 5V/3.3V ブレッドボード電源 v1.2</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 1. 不要なスイッチを削除
 

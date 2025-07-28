@@ -310,26 +310,27 @@ Follow the steps to flash a pre-compiled firmware:
     </tr>
     <tr>
         <td>
-        <div style={{textAlign: 'center'}}><strong>Chip Type</strong></div>
+            <div style={{textAlign: 'center'}}><strong>Chip Type</strong></div>
         </td>
-        <td><div  style={{textAlign: 'center'}}>ESP32-S3</div>
+        <td>
+            <div style={{textAlign: 'center'}}>ESP32-S3</div>
         </td>
     </tr>
     <tr>
-      <td>
-      <div  style={{textAlign: 'center'}}> <strong>WorkMode</strong></div>
-      </td>
-      <td>
-      <div  style={{textAlign: 'center'}}> Develop </div>
-      </td>
+        <td>
+            <div style={{textAlign: 'center'}}><strong>WorkMode</strong></div>
+        </td>
+        <td>
+            <div style={{textAlign: 'center'}}>Develop</div>
+        </td>
     </tr>
     <tr>
-      <td>
-      <div  style={{textAlign: 'center'}}> <strong>LoadMode</strong></div>
-      </td>
-      <td>
-      <div  style={{textAlign: 'center'}}> UART </div>
-      </td>
+        <td>
+            <div style={{textAlign: 'center'}}><strong>LoadMode</strong></div>
+        </td>
+        <td>
+            <div style={{textAlign: 'center'}}>UART</div>
+        </td>
     </tr>
   </table>
 </div>
@@ -350,18 +351,19 @@ Follow the steps to flash a pre-compiled firmware:
     </tr>
     <tr>
         <td>
-        <div style={{textAlign: 'center'}}><strong>SPI SPEED</strong></div>
+            <div style={{textAlign: 'center'}}><strong>SPI SPEED</strong></div>
         </td>
-        <td><div  style={{textAlign: 'center'}}>40MHz</div>
+        <td>
+            <div style={{textAlign: 'center'}}>40MHz</div>
         </td>
     </tr>
     <tr>
-      <td>
-      <div  style={{textAlign: 'center'}}> <strong>SPI MODE</strong></div>
-      </td>
-      <td>
-      <div  style={{textAlign: 'center'}}> DIO </div>
-      </td>
+        <td>
+            <div style={{textAlign: 'center'}}><strong>SPI MODE</strong></div>
+        </td>
+        <td>
+            <div style={{textAlign: 'center'}}>DIO</div>
+        </td>
     </tr>
   </table>
 </div>
@@ -417,8 +419,12 @@ Open your Arduino IDE, click on **Arduino IDE** > **Preferences**, and copy t
 <div class="table-center">
   <table align="center">
     <tr>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_29.png" style={{width:680, height:'auto'}}/></div></td>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_80.png" style={{width:680, height:'auto'}}/></div></td>
+        <td>
+            <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_29.png" style={{width:680, height:'auto'}}/></div>
+        </td>
+        <td>
+            <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_80.png" style={{width:680, height:'auto'}}/></div>
+        </td>
     </tr>
   </table>
 </div>
@@ -462,9 +468,13 @@ Search "Indicator" and select `Seeed INDICATOR RP2040` board and select the `usb
 <div class="table-center">
   <table align="center">
     <tr>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/board.png" style={{width:680, height:'auto'}}/></div></td>
+        <td>
+            <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/board.png" style={{width:680, height:'auto'}}/></div>
+        </td>
     </tr>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/portport.png" style={{width:680, height:'auto'}}/></div></td>
+     <td>
+        <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/portport.png" style={{width:680, height:'auto'}}/></div>
+    </td>
   </table>
 </div>
 
@@ -480,13 +490,19 @@ We provide an example code file, you can modify the code according to your needs
 <div class="table-center">
   <table align="center">
     <tr>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_36.png" style={{width:680, height:'auto'}}/></div></td>
+        <td>
+            <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_36.png" style={{width:680, height:'auto'}}/></div>
+        </td>
     </tr>
     <tr>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_37.png" style={{width:680, height:'auto'}}/></div></td>
+        <td>
+            <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_37.png" style={{width:680, height:'auto'}}/></div>
+        </td>
     </tr>
     <tr>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_38.png"style={{width:680, height:'auto'}}/></div></td>
+        <td>
+            <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_38.png" style={{width:680, height:'auto'}}/></div>
+        </td>
     </tr>
   </table>
 </div>

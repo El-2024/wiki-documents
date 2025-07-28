@@ -154,8 +154,8 @@ The Things Stack は TLS サーバー認証とクライアントトークンを�
 一般的な証明書を含む .pem ファイルは [Root Certificates Reference](https://www.thethingsindustries.com/docs/reference/root-certificates/) で利用可能です。  
 **最小証明書リスト**をダウンロードし、証明書ファイルのデータ内容をコピーします（証明書はテキスト形式で開くことができます）。
 
-6. **token:**  
-Authorization:Bearer <Your_API_Key>
+6. **token:**
+Authorization:Bearer `<Your_API_Key>`
 
 その他の設定はデフォルトのままにするか、必要に応じて変更してください。
 

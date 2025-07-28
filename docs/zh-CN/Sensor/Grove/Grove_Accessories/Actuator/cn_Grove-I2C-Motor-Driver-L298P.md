@@ -105,7 +105,7 @@ void loop() {
 
 - **motor_id** 表示使用哪个电机。你可以填写 MOTOR1 或 MOTOR2。
 
-- **_speed** 表示你为电机设定的速度。你可以在这里填写 -100~100。当 _speed>0 时，直流电机顺时针运行，而当 _speed<0 时，直流电机逆时针运行。_speed 的绝对值越大，直流电机的速度就越快。
+- **_speed** 表示你为电机设定的速度。你可以在这里填写 -100~100。当 _speed>0 时，直流电机顺时针运行，而当 _speed\<0 时，直流电机逆时针运行。_speed 的绝对值越大，直流电机的速度就越快。
 
 
 使用 stop() 函数，你可以停止正在运行的直流电机。
@@ -125,7 +125,7 @@ void setup() {
     Serial.begin(9600);
     Motor.begin(I2C_ADDRESS);
     // Drive a stepper motor
-    // _step: -1024~1024, when _step>0, stepper motor runs clockwise; _step<0, stepper
+    // _step: -1024~1024, when _step>0, stepper motor runs clockwise; _step\<0, stepper
     // motor runs anticlockwise; when _step is 512, the stepper motor will run a complete
     // turn; if step is 1024, the stepper motor will run 2 turns.
     Motor.StepperRun(-1024);
@@ -143,7 +143,7 @@ void loop() {
 
 ![](https://files.seeedstudio.com/wiki/Grove-I2C_Motor_Driver_V1.3/img/I2C_Motor_Driver_Connector.jpg)
 
-- **_step** 代表你为步进电机设置的运行步数。你可以填写-1024到1024。当 _step>0 时，步进电机顺时针运行；而当 _step<0 时，步进电机逆时针运行。当 _step 是512/-512时，步进电机会转一整圈；而当 _step 是1024/-1024时，步进电机会转两圈。步进电机会在完成所有步数后自动停止。
+- **_step** 代表你为步进电机设置的运行步数。你可以填写-1024到1024。当 _step>0 时，步进电机顺时针运行；而当 _step\<0 时，步进电机逆时针运行。当 _step 是512/-512时，步进电机会转一整圈；而当 _step 是1024/-1024时，步进电机会转两圈。步进电机会在完成所有步数后自动停止。
 
 ## **原理图在线查看器**
 

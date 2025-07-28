@@ -72,16 +72,16 @@ We have prepared everything, the last thing we need is your creative projects, s
 ||Operating Voltage|3.3V|
 ||DC Current per I/O Pin|7 mA|
 ||Clock Speed	|48 MHz|
-|GSM/GPRS|GSM|850/900/1800/1900MHz, Class 4 (2W @850/900MHz), Class 1 (1W @1800/1900MHz)|
+|GSM/GPRS|GSM|850／900／1800／1900MHz, Class 4 (2W @850／900MHz), Class 1 (1W @1800／1900MHz)|
 |||AT Command: GSM 07.07, 07.05 and enhanced AT Command|
 |||Low Power Consumption: 1.2mA@DRX=5|
 ||GPRS|GPRS Multi-slot Class 12: Down to 85.6kbps, Up to 85.6kbps|
-|||Protocol: TCP/UDP/FTP/HTTP/PPP/SSL|
+|||Protocol: TCP／UDP／FTP／HTTP／PPP／SSL|
 ||SMS|Peer to Peer Message, SMS broadcast, Text and PDU mode|
 ||Audio|Echo cancellation, Noise elimination|
 ||Bluetooth|Bluetooth 3.0: SPP, HFP-AG|
 |GNSS|System|GPS L1 1575.42MHz, BeiDou B1 1561.10MHz|
-||Precision|<2.5 m CEP|
+||Precision|&lt;2.5 m CEP|
 ||Technology|EASY/LOCUS/AlwaysLocate/EPO/GLP/AIC|
 |Peripheral|Grove|2 x Grove Digital Port|
 |||2 x Analog Port|

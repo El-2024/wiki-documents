@@ -807,7 +807,7 @@ WiFiシールドのRN-171モジュールはHTMLクライアント（基本的に
 
 サンフランシスコ（アメリカ）の天気JSON文字列を取得してみましょう。WiFiシールドがアクセスする必要があるURLは以下の通りです（ウェブブラウザでテストできます）：
 
-<http://api.openweathermap.org/data/2.5/weather?q=San%20Francisco>,US
+`http://api.openweathermap.org/data/2.5/weather?q=San%20Francisco`,US
 
 **ステップ 2: Arduinoコード**
 

@@ -111,70 +111,17 @@ GPRSシールドを使用して、ArduinoをGSM/GPRS携帯電話ネットワー�
 - アンテナ
   - アンテナコネクタのタイプはIPEXで、SIM900の最大送信電力は30dBm（1W）です。詳細については[アンテナ仕様](https://files.seeedstudio.com/wiki/GPRS_Shield_V2.0/res/Antenna_of_GPRS_.pdf)を参照してください。
 - LEDステータス説明
-  <dl><dd><table  cellspacing="0">
-  <tr>
-  <th scope="col"> **LED**
-  </th>
-  <th scope="col"> **ステータス**
-  </th>
-  <th scope="col"> **機能**
-  </th></tr>
-  <tr>
-  <th scope="row"> 電源オンインジケーター（緑）
-  </th>
-  <td> オフ
-  </td>
-  <td> GPRS Shieldの電源がオフ
-  </td></tr>
-  <tr>
-  <td>
-  </td>
-  <td> オン
-  </td>
-  <td> GPRS Shieldの電源がオン
-  </td></tr>
-  <tr>
-  <th scope="row"> ステータスインジケーター（赤）
-  </th>
-  <td> オフ
-  </td>
-  <td> 電源オフ
-  </td></tr>
-  <tr>
-  <td>
-  </td>
-  <td> オン
-  </td>
-  <td> 電源オン
-  </td></tr>
-  <tr>
-  <th scope="row"> ネットインジケーター（緑）
-  </th>
-  <td> オフ
-  </td>
-  <td> SIM900が動作していない
-  </td></tr>
-  <tr>
-  <td>
-  </td>
-  <td> 64msオン/800msオフ
-  </td>
-  <td> SIM900がネットワークを見つけていない
-  </td></tr>
-  <tr>
-  <td>
-  </td>
-  <td> 64msオン/3000msオフ
-  </td>
-  <td> SIM900がネットワークを見つけた
-  </td></tr>
-  <tr>
-  <td>
-  </td>
-  <td> 64msオン/300msオフ
-  </td>
-  <td> GPRS通信中
-  </td></tr></table></dd></dl>
+
+| LED | ステータス | 機能 |
+|---|---|---|
+| 電源オンインジケーター（緑） | オフ | GPRS Shieldの電源がオフ |
+|  | オン | GPRS Shieldの電源がオン |
+| ステータスインジケーター（赤） | オフ | 電源オフ |
+|  | オン | 電源オン |
+| ネットインジケーター（緑） | オフ | SIM900が動作していない |
+|  | 64msオン/800msオフ | SIM900がネットワークを見つけていない |
+|  | 64msオン/3000msオフ | SIM900がネットワークを見つけた |
+|  | 64msオン/300msオフ | GPRS通信中 |
 
 ## はじめに
 

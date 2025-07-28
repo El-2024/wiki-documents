@@ -64,7 +64,7 @@ node.send({ payload: msg.payload.value[0].image_url });
 
 すでにNode-REDで設定したいDiscordボットをお持ちの場合は、[**パート3**](#part-3-integrate-discord-with-node-red)に進んでください。
 
-### ステップ4. 開発用アプリケーションを作成する
+### ステップ4. 開発用アプリケーションを作成する {#step-4-create-development-application}
 
 Discordアカウントを設定してログインしたら、[**Discord Developer Portal**](https://discord.com/developers/applications)に進み、新しいアプリケーションを作成します。
 
@@ -78,7 +78,7 @@ Discordアカウントを設定してログインしたら、[**Discord Develope
 Discordアカウントに有効なメールアドレスがリンクされている必要があります。Discordアカウントにメールアドレスが関連付けられていない場合は、こちらの手順に従ってください：[アカウントのメールアドレスを変更する方法](https://support.discord.com/hc/en-us/articles/4423385681175-How-to-Change-Your-Account-s-Email-Address)
 :::
 
-### ステップ5. ボット設定を構成する
+### ステップ5. ボット設定を構成する {#step-5-configure-bot-settings}
 
 次に、ボット設定を構成します。以下の手順に従ってください：
 
@@ -112,7 +112,7 @@ Discordアカウントに有効なメールアドレスがリンクされてい�
 ボットのトークンを公開しないでください。トークンを持っている人は誰でもボットを制御できます。トークンを誤って公開してしまった場合は、すぐにこのページでリセットしてください。
 :::
 
-### ステップ 6. OAuth2 設定を構成する
+### ステップ 6. OAuth2 設定を構成する {#step-6-configure-oauth2-settings}
 
 次に、**Settings**（設定）の下にある **OAuth2** タブに切り替え、**OAuth2 URL Generator** が表示されるまでスクロールします。ここで、ボットアプリケーションを作成するために **bot** スコープを選択します。
 
@@ -137,8 +137,6 @@ Discordアカウントに有効なメールアドレスがリンクされてい�
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Watcher_Discord_Node_Red/Discord_10.png" style={{width:1000, height:'auto'}}/></div>
 
 次の画面では、OAuth2 URL Generator で [**ステップ 6**](#step-6-configure-oauth2-settings) で選択した権限に基づいて、ボットに付与する権限の包括的なリストが表示されます。それぞれの権限を慎重に確認し、**Authorize**（承認）をクリックします。
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Watcher_Discord_Node_Red/Discord_11.png" style={{width:1000, height:'auto'}}/></div>
 
 [**ステップ 5**](#step-5-configure-bot-settings) と同様に、多要素認証が再度求められる場合があります。その場合は、指示に従ってこの手順を完了してから進めてください。
 

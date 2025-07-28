@@ -51,7 +51,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 #### オプション1: 事前構築されたWindows実行ファイルを使用（Windowsのみ）
 
-- **Step 2-1-1:** [Pyinstaller](https://pyinstaller.org/en/stable/){target=_blank}パッケージを使用して実行ファイルを準備しました。[bmp_converter.exe](https://files.seeedstudio.com/wiki/Wio-Terminal/res/bmp_converter.exe)をクリックしてダウンロードしてください。
+- **Step 2-1-1:** [Pyinstaller](https://pyinstaller.org/en/stable/)パッケージを使用して実行ファイルを準備しました。[bmp_converter.exe](https://files.seeedstudio.com/wiki/Wio-Terminal/res/bmp_converter.exe)をクリックしてダウンロードしてください。
 
 - **Step 2-1-2:** ダウンロードした`bmp_converter.exe`を`Step 1-3`で作成した`bmpフォルダ`と同じディレクトリに配置します。
 

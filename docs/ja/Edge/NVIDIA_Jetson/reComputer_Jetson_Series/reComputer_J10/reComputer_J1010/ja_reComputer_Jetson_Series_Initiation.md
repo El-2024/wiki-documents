@@ -151,7 +151,7 @@ reComputer でプロジェクトを開始していない場合、このオプシ
 
 - reComputer にシステムをインストールする方法は一般的に 2 つあります。1 つ目は **NVIDIA SDK Manager** を使用する方法です。
 
-**reComputer J2011** または **reComputer J2012** を使用している場合、[SDK Manager を使用した eMMC へのフラッシュ](reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line) の **ステップ 12** で、システムの書き込み場所を変更することで容量を拡張できます。
+**reComputer J2011** または **reComputer J2012** を使用している場合、[SDK Manager を使用した eMMC へのフラッシュ](/ja/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line) の **ステップ 12** で、システムの書き込み場所を変更することで容量を拡張できます。
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/52.png" /></div>
 
@@ -163,7 +163,7 @@ reComputer でプロジェクトを開始していない場合、このオプシ
 
 - **A20X キャリアボード** を使用している場合、コマンドラインを使用してシステムをインストールする方法は [コマンドラインを使用した eMMC へのフラッシュ](/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line) に記載されています。
 
-- **reComputer J1010 キャリアボード** を使用している場合、コマンドラインを使用してシステムをインストールする方法は [コマンドラインを使用した JetPack OS のフラッシュ](/reComputer_J1010_J101_Flash_Jetpack#flashing-jetpack-os-via-command-line) に記載されています。
+- **reComputer J1010 キャリアボード** を使用している場合、コマンドラインを使用してシステムをインストールする方法は [コマンドラインを使用した JetPack OS のフラッシュ](/ja/reComputer_J1010_J101_Flash_Jetpack#flashing-jetpack-os-via-command-line) に記載されています。
 
 これらは本質的に以下のコマンドを使用してシステムのインストールを完了します。
 

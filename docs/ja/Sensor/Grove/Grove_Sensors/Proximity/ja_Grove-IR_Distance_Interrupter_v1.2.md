@@ -149,7 +149,7 @@ void loop()  {
 }
 ```
 
-5. コードをアップロードします。Arduinoスケッチのアップロード方法がわからない場合は、Windowsユーザーは<https://www.arduino.cc/en/Guide/Windows>、Macユーザーは<https://www.arduino.cc/en/Guide/MacOSX>を参照してください。以下のような結果が表示されます。
+5. コードをアップロードします。Arduinoスケッチのアップロード方法がわからない場合は、Windowsユーザーは[こちら](https://www.arduino.cc/en/Guide/Windows)、Macユーザーは[こちら](https://www.arduino.cc/en/Guide/MacOSX)を参照してください。以下のような結果が表示されます。
 
 6. 光の経路が何かの物体によって遮られると、シリアルターミナルに「誰かがいます。」と表示されます。それ以外の場合は「誰もいません。」と表示されます。
 
@@ -229,7 +229,7 @@ while True:
 - [LMV358 データシート](https://files.seeedstudio.com/wiki/Grove-IR_Distance_Interrupter_v1.2/res/LMV358_datasheet.pdf)
 - [赤外線反射センサー ソースファイル](https://files.seeedstudio.com/wiki/Grove-IR_Distance_Interrupter_v1.2/res/Grove-Infrared_Reflective_Sensor_v1.0_SourceFile.zip)
 
-このMarkdownファイルは<https://www.seeedstudio.com/wiki/Grove_-_IR_Distance_Interrupter_v1.2>から作成されました。
+このMarkdownファイルは[こちら](https://www.seeedstudio.com/wiki/Grove_-_IR_Distance_Interrupter_v1.2)から作成されました。
 
 ## 技術サポートと製品ディスカッション
 

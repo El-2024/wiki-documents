@@ -50,188 +50,116 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <table cellSpacing={0} width="100%">
   <tbody><tr>
-      <th scope="col"> Groveインターフェース
-      </th>
-      <th scope="col"> Groveピン
-      </th>
-      <th scope="col"> A/D
-      </th>
-      <th scope="col"> I²C
-      </th>
-      <th scope="col"> UART
-      </th>
-      <th scope="col"> BeagleBone®ピン
-      </th>
-      <th scope="col"> BeagleBone®機能
-      </th></tr>
+      <th scope="col"> Groveインターフェース</th>
+      <th scope="col"> Groveピン</th>
+      <th scope="col"> A/D</th>
+      <th scope="col"> I²C</th>
+      <th scope="col"> UART</th>
+      <th scope="col"> BeagleBone®ピン</th>
+      <th scope="col"> BeagleBone®機能</th>
+    </tr>
     <tr>
-      <td rowSpan={2}> J1
-      </td>
-      <td scope="row"> 1
-      </td>
-      <td>
-      </td>
-      <td> SCL1
-      </td>
-      <td>
-      </td>
-      <td> J8.17
-      </td>
-      <td> gpio[5]/
-      </td></tr>
+      <td rowSpan={2}> J1</td>
+      <td scope="row"> 1</td>
+      <td></td>
+      <td> SCL1</td>
+      <td></td>
+      <td> J8.17</td>
+      <td> gpio[5]/</td>
+    </tr>
     <tr>
-      <th scope="row"> 2
-      </th>
-      <td>
-      </td>
-      <td> SDA1
-      </td>
-      <td>
-      </td>
-      <td> J8.18
-      </td>
-      <td> gpio[4]/
-      </td></tr>
+      <td scope="row"> 2</td>
+      <td></td>
+      <td> SDA1</td>
+      <td></td>
+      <td> J8.18</td>
+      <td> gpio[4]/</td>
+    </tr>
     <tr>
-      <td rowSpan={2}> J5
-      </td>
-      <td> 1
-      </td>
-      <td>
-      </td>
-      <td> SCL2
-      </td>
-      <td>
-      </td>
-      <td> J8.19
-      </td>
-      <td> gpio[13]/
-      </td></tr>
+      <td rowSpan={2}> J5</td>
+      <td> 1</td>
+      <td></td>
+      <td> SCL2</td>
+      <td></td>
+      <td> J8.19</td>
+      <td> gpio[13]/</td>
+    </tr>
     <tr>
-      <td> 2
-      </td>
-      <td>
-      </td>
-      <td> SDA2
-      </td>
-      <td>
-      </td>
-      <td> J8.20
-      </td>
-      <td> gpio[12]/
-      </td></tr>
+      <td> 2</td>
+      <td></td>
+      <td> SDA2</td>
+      <td></td>
+      <td> J8.20</td>
+      <td> gpio[12]/</td>
+    </tr>
     <tr>
-      <td rowSpan={2}> J2
-      </td>
-      <td> 1
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td> RX1
-      </td>
-      <td> J8.26
-      </td>
-      <td> gpio[14]/
-      </td></tr>
+      <td rowSpan={2}> J2</td>
+      <td> 1</td>
+      <td></td>
+      <td></td>
+      <td> RX1</td>
+      <td> J8.26</td>
+      <td> gpio[14]/</td>
+    </tr>
     <tr>
-      <td> 2
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td> TX1
-      </td>
-      <td> J8.24
-      </td>
-      <td> gpio[15]/
-      </td></tr>
+      <td> 2</td>
+      <td></td>
+      <td></td>
+      <td> TX1</td>
+      <td> J8.24</td>
+      <td> gpio[15]/</td>
+    </tr>
     <tr>
-      <td rowSpan={2}> J6
-      </td>
-      <td> 1
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td> RX2
-      </td>
-      <td> J8.22
-      </td>
-      <td> gpio[2]/
-      </td></tr>
+      <td rowSpan={2}> J6</td>
+      <td> 1</td>
+      <td></td>
+      <td></td>
+      <td> RX2</td>
+      <td> J8.22</td>
+      <td> gpio[2]/</td>
+    </tr>
     <tr>
-      <td> 2
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td> TX2
-      </td>
-      <td> J8.21
-      </td>
-      <td> gpio[3]/
-      </td></tr>
+      <td> 2</td>
+      <td></td>
+      <td></td>
+      <td> TX2</td>
+      <td> J8.21</td>
+      <td> gpio[3]/</td>
+    </tr>
     <tr>
-      <td rowSpan={2}> J3
-      </td>
-      <td scope="row"> 1
-      </td>
-      <td> AIN0
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td> J8.39
-      </td>
-      <td>
-      </td></tr>
+      <td rowSpan={2}> J3</td>
+      <td scope="row"> 1</td>
+      <td> AIN0</td>
+      <td></td>
+      <td></td>
+      <td> J8.39</td>
+      <td></td>
+    </tr>
     <tr>
-      <th scope="row"> 2
-      </th>
-      <td> AIN1
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td> J8.40
-      </td>
-      <td>
-      </td></tr>
+      <td scope="row"> 2</td>
+      <td> AIN1</td>
+      <td></td>
+      <td></td>
+      <td> J8.40</td>
+      <td></td>
+    </tr>
     <tr>
-      <td rowSpan={2}> J7
-      </td>
-      <td scope="row"> 1
-      </td>
-      <td> AIN2
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td> J8.37
-      </td>
-      <td>
-      </td></tr>
+      <td rowSpan={2}> J7</td>
+      <td scope="row"> 1</td>
+      <td> AIN2</td>
+      <td></td>
+      <td></td>
+      <td> J8.37</td>
+      <td></td>
+    </tr>
     <tr>
-      <th scope="row"> 2
-      </th>
-      <td> AIN3
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td> J8.38
-      </td>
-      <td>
-      </td></tr></tbody></table>
+      <td scope="row"> 2</td>
+      <td> AIN3</td>
+      <td></td>
+      <td></td>
+      <td> J8.38</td>
+      <td></td>
+    </tr></tbody></table>
 
 ## 回路図オンラインビューア
 

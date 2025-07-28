@@ -19,8 +19,7 @@ It's equipped with GPS, Bluetooth, and Wi-Fi for seamless indoor and outdoor pos
 
 
 
-<h1 style={{ textAlign: 'center', color: '#ffff' }}> Catalog for SenseCAP T1000 Tracker
-</h1>
+<h1 style={{ textAlign: 'center', color: '#ffff' }}>Catalog for SenseCAP T1000 Tracker</h1>
 
 
 <div class="all_container">

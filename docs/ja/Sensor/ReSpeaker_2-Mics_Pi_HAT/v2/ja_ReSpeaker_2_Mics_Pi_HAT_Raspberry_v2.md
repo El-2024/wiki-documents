@@ -165,7 +165,7 @@ alsamixer
 
 ## 使用概要
 
-まず、<https://github.com/respeaker/mic_hat.git> リポジトリを Raspberry Pi にクローンしてください。
+まず、[https://github.com/respeaker/mic_hat.git](https://github.com/respeaker/mic_hat.git) リポジトリを Raspberry Pi にクローンしてください。
 
 ```bash
 git clone https://github.com/respeaker/mic_hat.git

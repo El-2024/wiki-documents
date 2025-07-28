@@ -49,9 +49,10 @@ TinyML AI models locally, transmitting only inference results via LoRaWAN® (863
 	<tr>
 	    <th>Microcontroller</th>
         <td align="center">
-        <strong>Vision AI:</strong>Himax-6538 <br></br> 
-        <strong>LoRaWAN Network:</strong>Wio-E5 (STM32WLE5JC)<br></br>
-        <strong>Bluetooth:</strong> XIAO ESP32C3<br></br></td>
+            <strong>Vision AI:</strong>Himax-6538 <br></br> 
+            <strong>LoRaWAN Network:</strong>Wio-E5 (STM32WLE5JC)<br></br>
+            <strong>Bluetooth:</strong> XIAO ESP32C3<br></br>
+        </td>
 	</tr>
     <tr>
         <th>Camera</th>

@@ -173,7 +173,7 @@ Para obtener más información, haz clic en la [Introducción a SenseCAP](https:
 
 ### Paso 1: Activa tu Gateway TTIG
 
-* Presiona el botón de reinicio (el botón pequeño en la parte trasera del gateway junto al puerto USB-C) durante 5 segundos hasta que el LED parpadee rápidamente en **VERDE <-> ROJO** un par de veces.
+* Presiona el botón de reinicio (el botón pequeño en la parte trasera del gateway junto al puerto USB-C) durante 5 segundos hasta que el LED parpadee rápidamente en **VERDE &lt;-&gt; ROJO** un par de veces.
 * Mantén presionado el botón **SETUP** (en la parte superior del gateway, junto al LED) durante 10 segundos hasta que el LED parpadee rápidamente en **ROJO**.
 * El gateway ahora expondrá un punto de acceso WiFi cuyo **SSID** será MINIHUB-xxxxxx, donde xxxxxx son los últimos 6 dígitos del ID del gateway.
 * La contraseña para esta red está impresa en el panel trasero del dispositivo, bajo la etiqueta **WiFi PW**.
@@ -186,7 +186,7 @@ Para obtener más información, haz clic en la [Introducción a SenseCAP](https:
 * Si tu configuración es correcta:
 
   * El gateway parpadeará en VERDE durante unos segundos mientras se conecta a la red.
-  * Luego parpadeará en VERDE <-> ROJO durante unos segundos mientras se conecta al endpoint CUPS y obtiene la información necesaria para conectarse al endpoint de tráfico LNS.
+  * Luego parpadeará en VERDE &lt;-&gt; ROJO durante unos segundos mientras se conecta al endpoint CUPS y obtiene la información necesaria para conectarse al endpoint de tráfico LNS.
 * Si la configuración fue exitosa, el LED se quedará en VERDE FIJO, lo que indica que el gateway está conectado a la red LoRaWAN y listo para manejar paquetes.
 
 ### Paso 2: Registro del Gateway en la Consola de TTN

@@ -46,7 +46,7 @@ wget https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v5.0/releas
   <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/ota/bsp_jp5.png"/>
 </div>
 
-### 1.2 构建 JP5.1.3 的系统镜像
+### 1.2 构建 JP5.1.3 的系统镜像 {#12-build-system-image-of-jp513}
 
 在主机电脑的终端窗口中运行以下命令以构建 5.1.3 系统镜像。
 

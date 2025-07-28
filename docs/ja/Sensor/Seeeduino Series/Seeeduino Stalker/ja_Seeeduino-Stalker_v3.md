@@ -56,70 +56,58 @@ Seeeduino Stalker v3.0は、特に屋外の**データロギング**アプリケ
 
 <table>
 <tr>
-<th> パラメータ
-</th>
-<th> 値
-</th></tr>
+<th> パラメータ </th>
+<th> 値 </th>
+</tr>
 <tr>
-<td> MCU
-</td>
-<td> ATmega328
-</td></tr>
+<td> MCU </td>
+<td> ATmega328 </td>
+</tr>
 <tr>
-<td> 水晶発振器
-</td>
-<td> 8 MHz
-</td></tr>
+<td> 水晶発振器 </td>
+<td> 8 MHz </td>
+</tr>
 <tr>
-<td> RTC
-</td>
-<td> DS1337S
-</td></tr>
+<td> RTC </td>
+<td> DS1337S </td>
+</tr>
 <tr>
-<td> I/O ロジック
-</td>
-<td> 3.3v
-</td></tr>
+<td> I/O ロジック </td>
+<td> 3.3v </td>
+</tr>
 <tr>
-<td> Arduino IDE 用ボード
-</td>
-<td> Arduino Pro または Pro Mini (**3.3v**, 8 MHz) w/ATmega328
-</td></tr>
+<td> Arduino IDE 用ボード </td>
+<td> Arduino Pro または Pro Mini (**3.3v**, 8 MHz) w/ATmega328 </td>
+</tr>
 <tr>
-<td> 電源
-</td>
-<td> 3.7v LiPo バッテリー、バッテリー充電には 5VDC ソーラーパネルを使用
-</td></tr>
+<td> 電源 </td>
+<td> 3.7v LiPo バッテリー、バッテリー充電には 5VDC ソーラーパネルを使用 </td>
+</tr>
 <tr>
-<td> 電源コネクタ
-</td>
-<td> 2 ピン JST/ USB
-</td></tr>
+<td> 電源コネクタ </td>
+<td> 2 ピン JST/ USB </td>
+</tr>
 <tr>
-<td> 接続性
-</td>
-<td> I<sup>2</sup>C, UART, SPI
-</td></tr>
+<td> 接続性 </td>
+<td> I<sup>2</sup>C, UART, SPI </td>
+</tr>
 <tr>
-<td> 開回路電流
-</td>
-<td> 最大 6 mA
-</td></tr>
+<td> 開回路電流 </td>
+<td> 最大 6 mA </td>
+</tr>
 <tr>
-<td> 充電電流
-</td>
-<td> 300mA
-</td></tr>
+<td> 充電電流 </td>
+<td> 300mA </td>
+</tr>
 <tr>
-<td> 3.3v ポートの最大電流
-</td>
-<td> 800mA
-</td></tr>
+<td> 3.3v ポートの最大電流 </td>
+<td> 800mA </td>
+</tr>
 <tr>
-<td> PCB サイズ
-</td>
-<td> 86.74mm x 60.96mm
-</td></tr></table>
+<td> PCB サイズ </td>
+<td> 86.74mm x 60.96mm </td>
+</tr>
+</table>
 
 ## アプリケーションアイデア  
 
@@ -220,51 +208,39 @@ Seeeduino Stalker V3 の底面には、構成/機能をオプションで変更�
 
 <font >**以下の表は、Seeeduino Stalker v3とUartSBee v4の接続を示しています。**</font>
 
-<table >
-<caption> ピン接続
-</caption>
+<table>
+<caption> ピン接続 </caption>
 <tr>
-<th> Seeeduino Stalker v3
-</th>
-<th>
-</th>
-<th> UartSBee v4
-</th></tr>
+<th> Seeeduino Stalker v3 </th>
+<th> </th>
+<th> UartSBee v4 </th>
+</tr>
 <tr>
-<td> 5V
-</td>
-<td>   ↔  
-</td>
-<td> VCC
-</td></tr>
+<td> 5V </td>
+<td>   ↔   </td>
+<td> VCC </td>
+</tr>
 <tr>
-<td> <font >RXD </font>
-</td>
-<td>   ↔  
-</td>
-<td> <font >TXD </font>
-</td></tr>
+<td> <font >RXD </font> </td>
+<td>   ↔   </td>
+<td> <font >TXD </font> </td>
+</tr>
 <tr>
-<td> <font >TXD </font>
-</td>
-<td>   ↔  
-</td>
-<td> <font >RXD </font>
-</td></tr>
+<td> <font >TXD </font> </td>
+<td>   ↔   </td>
+<td> <font >RXD </font> </td>
+</tr>
 <tr>
-<td> GND
-</td>
-<td>   ↔  
-</td>
-<td> GND
-</td></tr>
+<td> GND </td>
+<td>   ↔   </td>
+<td> GND </td>
+</tr>
 <tr>
-<td> DTR
-</td>
-<td>   ↔  
-</td>
-<td> DTR
-</td></tr></table>
+<td> DTR </td>
+<td>   ↔   </td>
+<td> DTR </td>
+</tr>
+</table>
 
 ## デモ
 
@@ -276,30 +252,24 @@ Seeeduino Stalker V3 の底面には、構成/機能をオプションで変更�
 
 <font >**注意: 「Interrupts」デモを使用する際にはいくつかのパッドをハンダ付けする必要があります**</font>
 
-<table >
-<caption> <font >ハンダ付け方法</font>
-</caption>
+<table>
+<caption> <font >ハンダ付け方法</font> </caption>
 <tr>
-<th> RTC のピン
-</th>
-<th> Seeeduino Stalker v3 のパッド
-</th>
-<th> ATmega328 のピン
-</th></tr>
+<th> RTC のピン </th>
+<th> Seeeduino Stalker v3 のパッド </th>
+<th> ATmega328 のピン </th>
+</tr>
 <tr>
-<td> INTA
-</td>
-<td> P3
-</td>
-<td> digital 2
-</td></tr>
+<td> INTA </td>
+<td> P3 </td>
+<td> digital 2 </td>
+</tr>
 <tr>
-<td> INTB
-</td>
-<td> P4
-</td>
-<td> digital 3
-</td></tr></table>
+<td> INTB </td>
+<td> P4 </td>
+<td> digital 3 </td>
+</tr>
+</table>
 
 #### 日付/時刻の調整
 

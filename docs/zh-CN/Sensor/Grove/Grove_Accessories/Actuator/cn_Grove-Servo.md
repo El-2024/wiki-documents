@@ -26,56 +26,13 @@ Grove - Servo 是一个带有齿轮和反馈系统的直流电机。它被用于
 
 ## 规格
 
-<table cellSpacing={0} width="80%">
-  <tbody><tr>
-      <th scope="col"> 项目
-      </th>
-      <th scope="col"> 最小值
-      </th>
-      <th scope="col"> 典型值
-      </th>
-      <th scope="col"> 最大值
-      </th>
-      <th scope="col"> 单位
-      </th></tr>
-    <tr>
-      <th> 工作电压
-      </th>
-      <td> 4.8
-      </td>
-      <td> 5.0
-      </td>
-      <td> 6.0
-      </td>
-      <td> V
-      </td></tr>
-    <tr>
-      <th> 扭矩
-      </th><td colSpan={3}> 1.5/1.8
-      </td>
-      <td> Kg.cm
-      </td></tr>
-    <tr>
-      <th scope="row"> 速度
-      </th>
-      <td colSpan={3}> 0.12/0.16
-      </td>
-      <td> s/60°
-      </td></tr>
-    <tr>
-      <th scope="row"> 尺寸
-      </th>
-      <td colSpan={3}> 32X11.5X24
-      </td>
-      <td> mm
-      </td></tr>
-    <tr>
-      <th scope="row"> 重量
-      </th>
-      <td colSpan={3}> 8.5
-      </td>
-      <td> g
-      </td></tr></tbody></table>
+| 项目 | 最小值 | 典型值 | 最大值 | 单位 |
+|------|--------|--------|--------|------|
+| 工作电压 | 4.8 | 5.0 | 6.0 | V |
+| 扭矩 | 1.5/1.8 | | | Kg.cm |
+| 速度 | 0.12/0.16 | | | s/60° |
+| 尺寸 | 32X11.5X24 | | | mm |
+| 重量 | 8.5 | | | g |
 
 支持的平台
 -------------------

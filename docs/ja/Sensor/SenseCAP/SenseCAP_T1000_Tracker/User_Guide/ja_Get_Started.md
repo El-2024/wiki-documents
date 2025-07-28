@@ -58,7 +58,8 @@ SenseCAP T1000 トラッカーには、温度センサー、光センサー、3�
 
 ### ボタン機能
 
-<table><tr><th colspan="1"><a name="_hlk134103971"></a><b>アクション</b></th><th colspan="1"><b>説明</b></th><th colspan="1"><b>LEDステータス</b></th><th colspan="1"><b>ブザー</b></th></tr>
+<table>
+<tr><th colspan="1"><a name="_hlk134103971"></a><b>アクション</b></th><th colspan="1"><b>説明</b></th><th colspan="1"><b>LEDステータス</b></th><th colspan="1"><b>ブザー</b></th></tr>
 <tr><td colspan="1" rowspan="2">ボタンを押して3秒間保持</td><td colspan="1">トラッカーが電源オフの場合、ボタンを3秒間押し続けると電源がオンになります。Bluetoothペアリングが自動的にアクティブになり、ユーザーはアプリを使用してスキャンして接続できます。</td><td colspan="1">LEDが1秒ごとに点滅します。</td><td colspan="1">上昇のメロディ</td></tr>
 <tr><td colspan="1">デバイスが電源オンの場合、ボタンを3秒間押し続けるとBluetoothペアリングがアクティブになります。</td><td colspan="1">LEDが1秒ごとに点滅します。</td><td colspan="1">なし</td></tr>
 <tr><td colspan="1">ボタンを押して9秒間保持</td><td colspan="1">電源オフ。</td><td colspan="1">なし</td><td colspan="1">下降のメロディ</td></tr>
@@ -152,9 +153,7 @@ SenseCAP Gatewayと一緒に使用する必要があります。SenseCAPは独�
     </tr>
         <tr>
     <td>SenseCAP for Helium</td>
-    <td>Heliumネットワークのカバレッジがある場合、データはHeliumを介してアップロードされます。デバイスはSenseCAPのプライベートHeliumコンソールで動作します。ユーザーはHeliumコンソールでデバイスを作成する必要がなく、SenseCAP Mate アプリとポータルで即座に使用できます。<br />
-
-<a href="https://explorer.helium.com/" target="_blank"><span>Helium カバレッジ</span></a></td>
+    <td>Heliumネットワークのカバレッジがある場合、データはHeliumを介してアップロードされます。デバイスはSenseCAPのプライベートHeliumコンソールで動作します。ユーザーはHeliumコンソールでデバイスを作成する必要がなく、SenseCAP Mate アプリとポータルで即座に使用できます。<br /><a href="https://explorer.helium.com/" target="_blank"><span>Helium カバレッジ</span></a></td>
     </tr>
         <tr>
     <td>Helium</td>
@@ -223,7 +222,8 @@ SenseCAP プラットフォームを使用する場合、EUI、APP EUI、およ�
 EUI 情報を一括で取得するには、当社の営業チームにお問い合わせください。
 :::
 
-<table><tr><th colspan="1" valign="top"><b>周波数</b></th><th colspan="1" valign="top"><b>一般名</b></th><th colspan="2" valign="top"><b>サブバンド</b></th></tr>
+<table>
+<tr><th colspan="1" valign="top"><b>周波数</b></th><th colspan="1" valign="top"><b>一般名</b></th><th colspan="1" valign="top"><b>サブバンド</b></th></tr>
 <tr><td colspan="1"><a name="ole_link14"></a>EU863-870</td><td colspan="1">EU868</td><td colspan="1">--------</td></tr>
 <tr><td colspan="1">US902-928</td><td colspan="1">US915</td><td colspan="1">サブバンド 1 ～ 8（デフォルトはサブバンド 2）</td></tr>
 <tr><td colspan="1">AU915-928</td><td colspan="1">AU915</td><td colspan="1">サブバンド 1 ～ 8（デフォルトはサブバンド 2）</td></tr>
@@ -231,10 +231,10 @@ EUI 情報を一括で取得するには、当社の営業チームにお問い�
 <tr><td colspan="1">IN865-867</td><td colspan="1">IN865</td><td colspan="1">--------</td></tr>
 <tr><td colspan="1">AS923-1-TTN</td><td colspan="1">AS1</td><td colspan="1">TTN 用周波数プラン</td></tr>
 <tr><td colspan="1">AS923-2-TTN</td><td colspan="1">AS2</td><td colspan="1">TTN 用周波数プラン</td></tr>
-<tr><td colspan="1" rowspan="4">AS923</td><td colspan="1">AS923-1</td><td colspan="1" rowspan="4">Helium 用周波数プラン</td></tr>
-<tr><td colspan="1">AS923-2</td></tr>
-<tr><td colspan="1">AS923-3</td></tr>
-<tr><td colspan="1">AS923-4</td></tr>
+<tr><td colspan="1">AS923-1</td><td colspan="1">AS923-1</td><td colspan="1">Helium 用周波数プラン</td></tr>
+<tr><td colspan="1">AS923-2</td><td colspan="1">AS923-2</td><td colspan="1">Helium 用周波数プラン</td></tr>
+<tr><td colspan="1">AS923-3</td><td colspan="1">AS923-3</td><td colspan="1">Helium 用周波数プラン</td></tr>
+<tr><td colspan="1">AS923-4</td><td colspan="1">AS923-4</td><td colspan="1">Helium 用周波数プラン</td></tr>
 </table>
 
 :::info 注意
@@ -247,15 +247,16 @@ The Things Network については、こちらを参照してください：[TTN
 
 必要に応じて動作モードを設定してください。
 
-<table><tr><th colspan="1"><b>パラメータ</b></th><th colspan="1"><b>説明</b></th><th colspan="1"></th></tr>
+<table>
+<tr><th colspan="1"><b>パラメータ</b></th><th colspan="1"><b>説明</b></th><th colspan="1"></th></tr>
 <tr><td colspan="1">ハートビート間隔</td><td colspan="1">デバイスがハートビート間隔内にデータをアップロードしない場合、ハートビートパケットがトリガーされます。このパケットにはバッテリー情報のみが含まれます。</td><td colspan="1">デフォルトは 720 分。</td></tr>
 <tr><td colspan="1">温度＆光の有効化</td><td colspan="1">このスイッチをオンにすると、温度と光が収集されてアップロードされますが、消費電力が増加します。</td><td colspan="1">デフォルトはオフ。</td></tr>
 <tr><td colspan="1" rowspan="2">SOS レポートモード</td><td colspan="1">シングル</td><td colspan="1"><a name="ole_link7"></a>SOS がシングルモードに設定されている場合、ボタンをダブルクリックするとシングルショット SOS モードが有効になり、位置情報/センサーデータおよび SOS イベントが 1 回アップロードされます。</td></tr>
-<tr><td colspan="1">連続</td><td colspan="1"><p>デフォルトは連続モード。</p><p>SOS が連続モードに設定されている場合、ボタンをダブルクリックすると SOS の連続モードが有効になり、1 分ごとに位置情報、センサーデータ、および SOS イベントがアップロードされ、30 回後に自動的に終了します。</p></td></tr>
+<tr><td colspan="1">連続</td><td colspan="1">デフォルトは連続モード。SOS が連続モードに設定されている場合、ボタンをダブルクリックすると SOS の連続モードが有効になり、1 分ごとに位置情報、センサーデータ、および SOS イベントがアップロードされ、30 回後に自動的に終了します。</td></tr>
 <tr><td colspan="1" rowspan="3">動作モード</td><td colspan="1">スタンバイモード</td><td colspan="1">ハートビート間隔に基づいてハートビートパケット（バッテリーレベルのみ）をアップロードします。</td></tr>
 <tr><td colspan="1">定期モード</td><td colspan="1">アップロード間隔に従って位置情報とセンサーデータをアップロードします。</td></tr>
 <tr><td colspan="1">イベントモード</td><td colspan="1"><a name="ole_link15"></a>温度、光、動きなどの測定値に基づいて閾値トリガー条件を設定し、トリガー後にアップロード間隔を調整します。</td></tr>
-<tr><td colspan="1">アップリンク間隔（分）– 定期モード</td><td colspan="1">定期的に位置情報とデータをアップロードします。</td><td colspan="1"><p>デフォルトは 60 分。</p><p>頻度が高いほど消費電力が増加します。</p></td></tr>
+<tr><td colspan="1">アップリンク間隔（分）– 定期モード</td><td colspan="1">定期的に位置情報とデータをアップロードします。</td><td colspan="1">デフォルトは 60 分。頻度が高いほど消費電力が増加します。</td></tr>
 <tr><td colspan="1">すべての設定を復元</td><td colspan="1">すべての構成パラメータを工場出荷時の設定に復元します。LoRa、動作モード、ジオロケーションを含みます。</td><td colspan="1"></td></tr>
 </table>
 
@@ -263,8 +264,9 @@ The Things Network については、こちらを参照してください：[TTN
 
 イベントモードでは、以下の 5 つのイベントがあります：
 
-<table><tr><th><b>イベントモード</b></th><th><b>説明</b></th><th></th></tr>
-<tr><td>アップリンク間隔 – 非イベント（分）</td><td><a name="ole_link16"></a>イベントがトリガーされていない場合のアップロード間隔です。</td><td><p>デフォルトは 60 分。</p><p>範囲：1～10080 分。</p></td></tr>
+<table>
+<tr><th><b>イベントモード</b></th><th><b>説明</b></th><th><b>詳細</b></th></tr>
+<tr><td>アップリンク間隔 – 非イベント（分）</td><td><a name="ole_link16"></a>イベントがトリガーされていない場合のアップロード間隔です。</td><td>デフォルトは 60 分。範囲：1～10080 分。</td></tr>
 <tr><td rowspan="2">衝撃イベント</td><td>衝撃イベントが有効になっている場合、トラッカーの衝撃がデータレポートをトリガーし、衝撃イベント、位置情報、センサーデータを含みます。</td><td>デフォルトはオフ。</td></tr>
 <tr><td>3 軸モーション閾値（mg）</td><td>デフォルトは 300。加速度が 300mg を超えると衝撃イベントがトリガーされます。</td></tr>
 <tr><td rowspan="3">モーションイベント</td><td>加速度が設定値を超えるとデバイスが動き始め、2 分間動きがない場合、デバイスの動きが停止します。開始動作と停止動作に応じてアップロード間隔を設定します。</td><td>デフォルトはオフ。</td></tr>
@@ -273,7 +275,7 @@ The Things Network については、こちらを参照してください：[TTN
 <tr><td rowspan="2">動作なしイベント</td><td>デバイスが一定時間以上同じ場所に静止している場合、静止タイムアウトイベントがトリガーされます。</td><td></td></tr>
 <tr><td>動作なしタイムアウト（分）</td><td>デフォルトは 360 分。</td></tr>
 <tr><td rowspan="4">温度イベント</td><td>温度イベントが有効になっている場合、温度に基づいてアップロード間隔を設定できます。</td><td>例：アップリンク間隔=10、値≥30 の場合、温度が 30°C を超えると、デバイスは 10 分間隔で位置情報をアップロードします。</td></tr>
-<tr><td>サンプル間隔（秒）</td><td><p>デフォルトは 30 秒。</p><p>30 秒ごとに温度を検出します。閾値がトリガーされると、位置情報とセンサーデータをアップロードします。</p></td></tr>
+<tr><td>サンプル間隔（秒）</td><td>デフォルトは 30 秒。30 秒ごとに温度を検出します。閾値がトリガーされると、位置情報とセンサーデータをアップロードします。</td></tr>
 <tr><td>アップリンク間隔（分）</td><td>温度が閾値を超えた場合、この間隔に従って位置情報とセンサーデータをアップロードします。</td></tr>
 <tr><td>値ルール</td><td>4 つの閾値ルールのいずれかを設定できます。</td></tr>
 <tr><td rowspan="3">光イベント</td><td>光イベントが有効になっている場合、温度に基づいてアップロード間隔を設定できます。</td><td>例：アップリンク間隔=10、値≥30 の場合、温度が 30% を超えると、デバイスは 10 分間隔で位置情報をアップロードします。</td></tr>
@@ -291,8 +293,9 @@ The Things Network については、こちらを参照してください：[TTN
 - **Wi-Fi**: パッシブスキャンを行い、スキャンされた4つのMACアドレスをLoRaを介してアップロードします。
 - **BLE**: Beaconの最良の信号を持つ3つのMACアドレスをLoRaを介してアップロードします。
 
-<table><tr><th colspan="1"><b>ジオロケーション</b></th><th colspan="1"><b>説明</b></th><th colspan="1"></th></tr>
-<tr><td colspan="1" rowspan="8">ジオロケーション戦略</td><td colspan="1">GNSSのみ</td><td colspan="1"><p>デフォルトでGNSSを使用します。</p><p>位置測定にはGNSSのみを使用します。</p></td></tr>
+<table>
+<tr><th colspan="1"><b>ジオロケーション</b></th><th colspan="1"><b>説明</b></th><th colspan="1"></th></tr>
+<tr><td colspan="1" rowspan="8">ジオロケーション戦略</td><td colspan="1">GNSSのみ</td><td colspan="1">デフォルトでGNSSを使用します。位置測定にはGNSSのみを使用します。</td></tr>
 <tr><td colspan="1">Wi-Fiのみ</td><td colspan="1">位置測定にはWi-Fiスキャンのみを使用します。</td></tr>
 <tr><td colspan="1">Wi-Fi+GNSS</td><td colspan="1">Wi-FiをGNSSの前に使用します。Wi-Fiが失敗した場合、1つのジオロケーションサイクル内でGNSSを使用します。</td></tr>
 <tr><td colspan="1">GNSS + Wi-Fi</td><td colspan="1">GNSSをWi-Fiの前に使用します。GNSSが失敗した場合、1つのジオロケーションサイクル内でWi-Fiを使用します。</td></tr>
@@ -300,7 +303,7 @@ The Things Network については、こちらを参照してください：[TTN
 <tr><td colspan="1">Bluetooth + Wi-Fi</td><td colspan="1">BluetoothをWi-Fiの前に使用します。Bluetoothが失敗した場合、1つのジオロケーションサイクル内でWi-Fiを使用します。</td></tr>
 <tr><td colspan="1">Bluetooth + GNSS</td><td colspan="1">BluetoothをGNSSの前に使用します。Bluetoothが失敗した場合、1つのジオロケーションサイクル内でGNSSを使用します。</td></tr>
 <tr><td colspan="1">Bluetooth + Wi-Fi + GNSS</td><td colspan="1">Bluetooth、Wi-Fi、GNSSを順番に使用して位置測定を行います（1つの測位タイプが失敗した後に次の測位タイプに切り替えます）。</td></tr>
-<tr><td colspan="1">GNSSタイムアウト</td><td colspan="1"><p>粗い位置を取得するためにGNSSを待機する最大時間</p></td><td colspan="1"><p>デフォルトは60秒です。</p><p>変更は推奨されません。時間が長くなるほど、消費電力が増加します。</p></td></tr>
+<tr><td colspan="1">GNSSタイムアウト</td><td colspan="1">粗い位置を取得するためにGNSSを待機する最大時間</td><td colspan="1">デフォルトは60秒です。変更は推奨されません。時間が長くなるほど、消費電力が増加します。</td></tr>
 <tr><td colspan="1"><a name="ole_link17"></a>GNSSデータキャッシュ</td><td colspan="1">LoRaを介してデータをアップロードできない場合、データはローカルに保存され、LoRa信号が回復した際にアップロードされます。</td><td colspan="1">デフォルトではオフです。</td></tr>
 </table>
 

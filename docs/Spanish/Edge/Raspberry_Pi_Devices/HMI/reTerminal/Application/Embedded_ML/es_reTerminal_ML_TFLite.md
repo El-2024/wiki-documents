@@ -61,86 +61,64 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Es posible usar el TFLite Converter para convertir cualquier modelo de TensorFlow a formato .tflite, siempre que solo consista en operaciones compatibles con TFLite Runtime. A continuación se presenta una lista de demos actualmente probadas en reTerminal, que se ampliarán y completarán en el futuro:
 
-<table style={{tableLayout: 'fixed', width: 743}}>
-  <colgroup>
-    <col style={{width: 146}} />
-    <col style={{width: 198}} />
-    <col style={{width: 399}} />
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Modelo</th>
-      <th>Resultado</th>
-      <th>Comentarios</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Detección de objetos</td>
-      <td> <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/000402.jpg" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Detección de vehículos <br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_multi_stage.ipynb" target="_top">Jupyter Notebook</a><br />
-        <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/detector" target="_top">Scripts de ejemplo</a> <br />
-        alpha 0.25 224x224 66.7 FPS (15 ms.)<br />
-        alpha 0.5 224x224 40 FPS (25 ms.)<br />
-        alpha 0.75 320x320 14.9 FPS (67 ms.)<br />
-        alpha 1.0 320x320 10.4 FPS (96 ms.)<br />
-      </td>
-    </tr>
-    <tr>
-      <td>Clasificación de imágenes</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/belt.png" alt="pir" width={600} height="auto" /></p> </td>
-      <td>Demo: Identificación de desgarrones en cinta industrial<br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_conveyor_belt_rip_recognition.ipynb" target="_top">Jupyter Notebook</a><br />
-        <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier" target="_top">Scripts de ejemplo</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Segmentación semántica</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/CHNCXR_0331_1.png" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Segmentación pulmonar <br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_lung_segmentation.ipynb" target="_top">Jupyter Notebook</a><br />
-        <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/segnet" target="_top">Scripts de ejemplo</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Reconocimiento de edad/género facial</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/output.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Inferencia multi-etapa: MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
-        <a href="https://github.com/AIWintermuteAI/edge_ml_age_gender_recognition/tree/master" target="_top">Repositorio de Github</a><br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_age_gender" target="_top">Scripts de ejemplo</a> <br />
-        ~16-20 FPS (con <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_age-gender" target="_top">ARM NN</a>)
-      </td>
-    </tr>
-    <tr>
-      <td>Reconocimiento de expresiones faciales</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/emotion/emotions.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Inferencia multi-etapa: MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
-        <a href="https://github.com/AIWintermuteAI/edge_ml_emotion_recognition/tree/master" target="_top">Repositorio de Github</a><br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_emotion" target="_top">Scripts de ejemplo</a> <br />
-        ~11 FPS
-      </td>
-    </tr>
-    <tr>
-      <td>Anti-suplantación facial</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/ml/face_anti-spoofing/face_anti-spoofing.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Inferencia multi-etapa: MobileNet YOLOv3 alpha 0.25 -&gt; MobileNet v1 alpha 0.25<br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_face_anti_spoofing.ipynb" target="_top">Jupyter Notebook</a><br />
-        <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier" target="_top">Scripts de ejemplo</a>  <br />
-        ~23 FPS (ARM NN)
-      </td>
-    </tr>
-    <tr>
-      <td>Reconocimiento facial</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/face_recognition.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Inferencia multi-etapa: Ultra Light Face Detector con Landmark Detection -&gt; MobileFaceNet<br />
-         <a >Jupyter Notebook</a><br /> 
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_recognition" target="_top">Scripts de ejemplo</a>  <br />
-        ~15 FPS (ARM NN)
-      </td>
-    </tr>
-  </tbody>
-</table>
+## Tabla de Ejemplos
+
+### Detección de objetos
+![Detección de objetos](https://files.seeedstudio.com/wiki/reTerminal_ML/000402.jpg)
+
+**Demo**: Detección de vehículos  
+[Jupyter Notebook](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_multi_stage.ipynb)  
+[Scripts de ejemplo](https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/detector)  
+- alpha 0.25 224x224 66.7 FPS (15 ms.)
+- alpha 0.5 224x224 40 FPS (25 ms.)
+- alpha 0.75 320x320 14.9 FPS (67 ms.)
+- alpha 1.0 320x320 10.4 FPS (96 ms.)
+
+### Clasificación de imágenes
+![Clasificación de imágenes](https://files.seeedstudio.com/wiki/reTerminal_ML/belt.png)
+
+**Demo**: Identificación de desgarrones en cinta industrial  
+[Jupyter Notebook](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_conveyor_belt_rip_recognition.ipynb)  
+[Scripts de ejemplo](https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier)
+
+### Segmentación semántica
+![Segmentación semántica](https://files.seeedstudio.com/wiki/reTerminal_ML/CHNCXR_0331_1.png)
+
+**Demo**: Segmentación pulmonar  
+[Jupyter Notebook](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_lung_segmentation.ipynb)  
+[Scripts de ejemplo](https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/segnet)
+
+### Reconocimiento de edad/género facial
+![Reconocimiento de edad/género facial](https://files.seeedstudio.com/wiki/reTerminal_ML/output.gif)
+
+**Demo**: Inferencia multi-etapa: MobileNet YOLOv3 alpha 0.25 -> MobileFaceNet  
+[Repositorio de Github](https://github.com/AIWintermuteAI/edge_ml_age_gender_recognition/tree/master)  
+[Scripts de ejemplo](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_age_gender)  
+~16-20 FPS (con [ARM NN](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_age-gender))
+
+### Reconocimiento de expresiones faciales
+![Reconocimiento de expresiones faciales](https://files.seeedstudio.com/wiki/reTerminal_ML/emotion/emotions.gif)
+
+**Demo**: Inferencia multi-etapa: MobileNet YOLOv3 alpha 0.25 -> MobileFaceNet  
+[Repositorio de Github](https://github.com/AIWintermuteAI/edge_ml_emotion_recognition/tree/master)  
+[Scripts de ejemplo](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_emotion)  
+~11 FPS
+
+### Anti-suplantación facial
+![Anti-suplantación facial](https://files.seeedstudio.com/ml/face_anti-spoofing/face_anti-spoofing.gif)
+
+**Demo**: Inferencia multi-etapa: MobileNet YOLOv3 alpha 0.25 -> MobileNet v1 alpha 0.25  
+[Jupyter Notebook](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_face_anti_spoofing.ipynb)  
+[Scripts de ejemplo](https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier)  
+~23 FPS (ARM NN)
+
+### Reconocimiento facial
+![Reconocimiento facial](https://files.seeedstudio.com/wiki/reTerminal_ML/face_recognition.gif)
+
+**Demo**: Inferencia multi-etapa: Ultra Light Face Detector con Landmark Detection -> MobileFaceNet  
+Jupyter Notebook  
+[Scripts de ejemplo](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_recognition)  
+~15 FPS (ARM NN)
 
 ## Optimización adicional
 

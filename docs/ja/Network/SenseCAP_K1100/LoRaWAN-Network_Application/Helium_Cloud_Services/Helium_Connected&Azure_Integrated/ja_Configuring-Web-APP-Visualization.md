@@ -80,7 +80,7 @@ Azure CLIはHomebrewの`python@3.10`パッケージに依存しており、こ�
 
 CLI がデフォルトのブラウザを開ける場合、[認証コードフロー](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow)を開始し、デフォルトのブラウザで Azure サインインページを読み込みます。
 
-そうでない場合は、[デバイスコードフロー](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-device-code)を開始し、<https://aka.ms/devicelogin> にアクセスして、ターミナルに表示されるコードを入力するよう指示されます。
+そうでない場合は、[デバイスコードフロー](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-device-code)を開始し、&lt;https://aka.ms/devicelogin&gt; にアクセスして、ターミナルに表示されるコードを入力するよう指示されます。
 
 ブラウザでアカウントの資格情報を使用してサインインしてください。
 

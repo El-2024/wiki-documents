@@ -271,7 +271,7 @@ Ahora deberías ver el siguiente output en tu línea de comandos:
 
 <div align="center"><img width= "{1000}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/41.png"/></div>
 
-**Paso 3.** Abre un navegador web y escribe **<http://localhost:5000>** para abrir la transmisión de video.
+**Paso 3.** Abre un navegador web y escribe `**<http://localhost:5000>**` para abrir la transmisión de video.
 
 ```sh
 http://localhost:5000
@@ -289,7 +289,7 @@ Arriba se muestra otro demo utilizando el mismo modelo.
 
 Aquí ejecutaremos la detección de objetos en un archivo de video precargado.
 
-**Paso 1.** Coloca el archivo de video dentro del directorio del proyecto AlwaysAI del dispositivo Jetson. Según nuestro ejemplo, es **/home/{username}/alwaysai/test**
+**Paso 1.** Coloca el archivo de video dentro del directorio del proyecto AlwaysAI del dispositivo Jetson. Según nuestro ejemplo, es **`/home/{username}/alwaysai/test`**
 
 **Paso 2.** En la computadora de desarrollo, abre el archivo **app.py** dentro de la carpeta **test** que creamos antes y reemplaza esta sección del código.
 

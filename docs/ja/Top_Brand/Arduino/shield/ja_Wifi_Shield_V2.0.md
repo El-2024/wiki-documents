@@ -135,17 +135,14 @@ RN-171は、スタンドアロンの完全なTCP/IPワイヤレスネットワ�
 <td>D1</td>
 <td>赤色LED。TCP/IP接続状態を示します。</td>
 <td><strong>点灯:</strong> TCP接続されています。<br />
-
-<p><strong>高速点滅 (1秒間に2回):</strong> IPアドレスがない、またはモジュールがコマンドモードにあります。<br />
-</p>
-<p><strong>低速点滅 (1秒間に1回):</strong> IPアドレスが正常です。</p></td>
+<strong>高速点滅 (1秒間に2回):</strong> IPアドレスがない、またはモジュールがコマンドモードにあります。<br />
+<strong>低速点滅 (1秒間に1回):</strong> IPアドレスが正常です。</td>
 <td>RN171モジュールのGPIO4に接続されています。</td>
 </tr>
 <tr class="odd">
 <td>RST</td>
 <td>赤色LED。WiFiモジュールのリセット状態を示します。</td>
-<td><strong>点灯:</strong> リセットボタン(WIFI_RST)が押されています。<br />
-</td>
+<td><strong>点灯:</strong> リセットボタン(WIFI_RST)が押されています。</td>
 <td>RN171モジュールのリセットに接続されています。</td>
 </tr>
 <tr class="even">
@@ -864,7 +861,7 @@ Android Studioプロジェクト/ソースコードを以下のリンクから�
 
 WiFiシールドのRN-171モジュールはHTMLクライアント（基本的にはテキストベースのウェブブラウザ）として動作する能力を持っています。これにより、シールドを使用してウェブサーバーにデータを送信したり受信したりすることができます。この例では、都市の天気データ（例：温度、湿度など）を表示するウェブアプリケーションプログラミングインターフェース（API）を使用して、シールドを操作する方法を学びます。
 
-使用するAPIの名前は[OpenWeatherMap](http://openweathermap.org/api)です。このウェブサイトに都市名と国名を送信すると、天気情報を含むJSON文字列が返されます。例えば、ロンドン（イギリス）の天気を表示したい場合は、以下のリンクのチュートリアルを参照してください：<http://openweathermap.org/appid>。2015年10月9日以降、このウェブサイトではAPIキーを取得するためにユーザー登録が必要です。APIキーを取得した後、以下のURLにアクセスできます：<http://api.openweathermap.org/data/2.5/weather?q=London>,uk。このURLは以下のようなJSON文字列を返します。この中に天気データやその他の情報が埋め込まれています。
+使用するAPIの名前は[OpenWeatherMap](http://openweathermap.org/api)です。このウェブサイトに都市名と国名を送信すると、天気情報を含むJSON文字列が返されます。例えば、ロンドン（イギリス）の天気を表示したい場合は、以下のリンクのチュートリアルを参照してください：`http://openweathermap.org/appid`。2015年10月9日以降、このウェブサイトではAPIキーを取得するためにユーザー登録が必要です。APIキーを取得した後、以下のURLにアクセスできます：`http://api.openweathermap.org/data/2.5/weather?q=London,uk`。このURLは以下のようなJSON文字列を返します。この中に天気データやその他の情報が埋め込まれています。
 
 ```
 {

@@ -17,35 +17,11 @@ last_update:
 
 ##   Hardware Version Tracker
 
-<table >
-<tr>
-<th> Revision
-</th>
-<th> Description
-</th>
-<th> Release Date
-</th></tr>
-<tr>
-<td> UartSBee V3.1
-</td>
-<td> Delete Bluetooth’s breakout on the bottom side, Reduce form factor
-</td>
-<td> Sept 02, 2010
-</td></tr>
-<tr>
-<td> UartSBee V2.3
-</td>
-<td> DC current for 3.3v pin, up to 500mA provided for better support of XBee pro
-</td>
-<td> Jul 21, 2009
-</td></tr>
-<tr>
-<td> UartSBee V2.1
-</td>
-<td> Initial public release
-</td>
-<td> Feb 01, 2009
-</td></tr></table>
+| Revision | Description | Release Date |
+|----------|-------------|--------------|
+| UartSBee V3.1 | Delete Bluetooth's breakout on the bottom side, Reduce form factor | Sept 02, 2010 |
+| UartSBee V2.3 | DC current for 3.3v pin, up to 500mA provided for better support of XBee pro | Jul 21, 2009 |
+| UartSBee V2.1 | Initial public release | Feb 01, 2009 |
 
 ##   Features
 ---
@@ -79,100 +55,25 @@ last_update:
 ---
 ###   Key Specifications
 
-<table cellpadding="1" cellspacing="1">
-<tr>
-<th scope="row"> Microprocessor
-</th>
-<td> FT232RL
-</td></tr>
-<tr>
-<th scope="row"> PCB size
-</th>
-<td> 3.1cm x 4.1cm
-</td></tr>
-<tr>
-<th scope="row"> Indicators
-</th>
-<td> POWER,Green LED. LEDs for Txd and Rxd
-</td></tr>
-<tr>
-<th scope="row"> Power supply
-</th>
-<td> 3.3V and 5V DC
-</td></tr>
-<tr>
-<th scope="row"> Interface
-</th>
-<td> Mini-B USB, 2.54mm pitch pin header
-</td></tr>
-<tr>
-<th scope="row"> Adapter socket
-</th>
-<td> XBee compatible 2.0mm pitch female pin header
-</td></tr>
-<tr>
-<th scope="row"> Connectivity
-</th>
-<td> USB
-</td></tr>
-<tr>
-<th scope="row"> Communication Protocol
-</th>
-<td> UART, Bit Bang I/O, SPI
-</td></tr>
-<tr>
-<th scope="row"> ROHS
-</th>
-<td> YES
-</td></tr></table>
+| Specification | Value |
+|--------------|-------|
+| Microprocessor | FT232RL |
+| PCB size | 3.1cm x 4.1cm |
+| Indicators | POWER,Green LED. LEDs for Txd and Rxd |
+| Power supply | 3.3V and 5V DC |
+| Interface | Mini-B USB, 2.54mm pitch pin header |
+| Adapter socket | XBee compatible 2.0mm pitch female pin header |
+| Connectivity | USB |
+| Communication Protocol | UART, Bit Bang I/O, SPI |
+| ROHS | YES |
 
 ###   Electrical Characterstics
 
-<table >
-<tr>
-<th> Specification
-</th>
-<th> Minimum
-</th>
-<th> Typical
-</th>
-<th> Maximum
-</th>
-<th> Unit
-</th></tr>
-<tr>
-<td> Input voltage
-</td>
-<td> -
-</td>
-<td> 5
-</td>
-<td> 5
-</td>
-<td> Vdc
-</td></tr>
-<tr>
-<td> Current Consumption
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td> 500
-</td>
-<td> mA
-</td></tr>
-<tr>
-<td> Output voltage
-</td>
-<td> 3.3
-</td>
-<td> -
-</td>
-<td> 5
-</td>
-<td> Vdc
-</td></tr></table>
+| Specification | Minimum | Typical | Maximum | Unit |
+|--------------|---------|---------|---------|------|
+| Input voltage | - | 5 | 5 | Vdc |
+| Current Consumption | - | - | 500 | mA |
+| Output voltage | 3.3 | - | 5 | Vdc |
 
 ##   System Block Digram
 ---
@@ -282,52 +183,16 @@ This is a special mode which requires reprogramming of FT232RL EEPROM. This uses
 
 **Table: Bit-Bang I/O Mapping**
 
-<table >
-<tr>
-<th> UartSBee Signal
-</th>
-<th> BitBang I/O Signal
-</th></tr>
-<tr>
-<td> TxD
-</td>
-<td> D0
-</td></tr>
-<tr>
-<td> RxD
-</td>
-<td> D1
-</td></tr>
-<tr>
-<td> RTS
-</td>
-<td> D2
-</td></tr>
-<tr>
-<td> CTS
-</td>
-<td> D3
-</td></tr>
-<tr>
-<td> DTR
-</td>
-<td> D4
-</td></tr>
-<tr>
-<td> DSR
-</td>
-<td> D5
-</td></tr>
-<tr>
-<td> DCD
-</td>
-<td> D6
-</td></tr>
-<tr>
-<td> RI
-</td>
-<td> D7
-</td></tr></table>
+| UartSBee Signal | BitBang I/O Signal |
+|-----------------|-------------------|
+| TxD | D0 |
+| RxD | D1 |
+| RTS | D2 |
+| CTS | D3 |
+| DTR | D4 |
+| DSR | D5 |
+| DCD | D6 |
+| RI | D7 |
 
 **BitBang Mode Operation:**
 

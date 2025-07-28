@@ -44,7 +44,7 @@ last_update:
 * **Sensecraft Edge OS** 用户请前往：[熟悉 Node-RED](#getting-familiar-with-node-red)，因为 Sensecraft Edge OS 已预装 Node-RED
 :::
 
-## 在 Raspbian OS 上安装和设置 Node-RED
+## 在 Raspbian OS 上安装和设置 Node-RED {#install-and-setting-up-node-red}
 
 在按照 [在 reTerminal DM 上安装操作系统](/reterminal-dm-flash-OS/) 完成新操作系统的设置后，请按照以下步骤设置 Node-RED。
 
@@ -140,7 +140,7 @@ Node-RED 团队为我们准备了一个 [一体化脚本](https://nodered.org/do
     * 选项 1：如果网页浏览器在您的 reTerminal DM 本地运行，请使用 `http://127.0.0.1:1880`。
     * 选项 2：如果网页浏览器在主机电脑上远程运行，请使用 `http://{RETERMINALDM_IP_ADDRESS}:1880`，请将 `{RETERMINALDM_IP_ADDRESS}` 替换为 reTerminal DM 的 IP 地址。
 
-## 熟悉 Node-RED
+## 熟悉 Node-RED {#getting-familiar-with-node-red}
 
 现在您应该看到类似于下图的结果：
 
@@ -191,7 +191,7 @@ npm install node-red-contrib-modbus
 node-red-restart
 ```
 
-#### 选项 2：Node-RED 编辑器
+#### 选项 2：Node-RED 编辑器 {#option-2-node-red-editor}
 
 步骤 1：点击右上角带有“三条横线”图标的 `设置` 按钮，然后选择 `管理调色板`
 

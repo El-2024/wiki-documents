@@ -407,7 +407,7 @@ sudo apt install openssl
 
 ### MQTT服务器连接示例代码
 
-这个示例演示了如何使用Wio Terminal连接到MQTT服务器。通过这个示例，你可以使用Wio Terminal订阅和发布消息到MQTT服务器。这里使用了一个免费的MQTT服务器： <https://test.mosquitto.org/>.
+这个示例演示了如何使用Wio Terminal连接到MQTT服务器。通过这个示例，你可以使用Wio Terminal订阅和发布消息到MQTT服务器。这里使用了一个免费的MQTT服务器： [https://test.mosquitto.org/](https://test.mosquitto.org/).
 
 - 在这里下载并安装 [**Arduino MQTT Library**](https://github.com/knolleary/pubsubclient) here.
 
@@ -505,7 +505,7 @@ void loop()
     <source src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/mqtts.mp4" type="video/mp4" />
   </video></div>
 
-这个示例演示了如何使用Wio Terminal建立MQTTs连接。这里使用了一个免费的MQTTs服务器： <https://test.mosquitto.org/> 并将加速度计数据发送到一个主题。
+这个示例演示了如何使用Wio Terminal建立MQTTs连接。这里使用了一个免费的MQTTs服务器： [https://test.mosquitto.org/](https://test.mosquitto.org/) 并将加速度计数据发送到一个主题。
 
 - 在这里下载并安装 [**Arduino MQTT 库**](https://github.com/knolleary/pubsubclient) 。
 

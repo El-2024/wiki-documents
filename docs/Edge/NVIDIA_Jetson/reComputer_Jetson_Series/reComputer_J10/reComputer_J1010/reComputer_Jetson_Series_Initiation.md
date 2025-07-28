@@ -147,7 +147,7 @@ If you haven't started a project with reComputer, you might consider using this 
 
 - There are generally two ways to install a system for reComputer, the first is to use the **NVIDIA SDK Manager**.
 
-If you are on a **reComputer J2011** or **reComputer J2012**, in **step 12** of [Flashing to eMMC with SDK Manager](reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line), you can expand the capacity by changing the location of the system burn-in.
+If you are on a **reComputer J2011** or **reComputer J2012**, in **step 12** of [Flashing to eMMC with SDK Manager](/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line), you can expand the capacity by changing the location of the system burn-in.
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/52.png" /></div>
 

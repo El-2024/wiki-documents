@@ -204,7 +204,7 @@ Material required:
 
 * [Grove - Touch Sensor](/Grove-Touch_Sensor) connect to D6
 
-* [Grove - LED Bar](Grove-LED_Bar) connect to D2
+* [Grove - LED Bar](/Grove-LED_Bar) connect to D2
 
 ### Upload code
 

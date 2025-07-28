@@ -63,7 +63,7 @@ SenseCAP 指示器的默认出厂固件是完全开源的，适用于 ESP32-S3 �
 
 ## 针对 **ESP32-S3**
 
-### **ESP-IDF** {#ESP-IDF}
+### **ESP-IDF** {#flash-esp32-s3-frimware-using-espressif-idf}
 
 > ESP-IDF（Espressif IoT Development Framework）是由 Espressif Systems 提供的软件开发框架，用于专门设计适用于其 ESP32 和 ESP8266 系列微控制器的固件和应用程序。有关更多信息，您可以参考 [ESP-IDF 编程指南](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/index.html)。
 
@@ -316,8 +316,7 @@ esptool.exe --chip esp32s3 --port COMx --baud 921600 write_flash -z 0x0 indicato
         <td>
         <div style={{textAlign: 'center'}}><strong>芯片类型</strong></div>
         </td>
-        <td><div  style={{textAlign: 'center'}}>ESP32-S3</div>
-        </td>
+        <td><div  style={{textAlign: 'center'}}>ESP32-S3</div></td>
     </tr>
     <tr>
       <td>
@@ -356,8 +355,7 @@ esptool.exe --chip esp32s3 --port COMx --baud 921600 write_flash -z 0x0 indicato
         <td>
         <div style={{textAlign: 'center'}}><strong>SPI 速度</strong></div>
         </td>
-        <td><div  style={{textAlign: 'center'}}>40MHz</div>
-        </td>
+        <td><div  style={{textAlign: 'center'}}>40MHz</div></td>
     </tr>
     <tr>
       <td>
@@ -466,7 +464,9 @@ RP2040 开发工具利用 Arduino 提升您的编码体验。
     <tr>
         <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/board.png" style={{width:680, height:'auto'}}/></div></td>
     </tr>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/portport.png" style={{width:680, height:'auto'}}/></div></td>
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/portport.png" style={{width:680, height:'auto'}}/></div></td>
+    </tr>
   </table>
 </div>
 

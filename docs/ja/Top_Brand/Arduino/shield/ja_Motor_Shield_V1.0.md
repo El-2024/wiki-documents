@@ -60,10 +60,10 @@ tags:
 | 出力電圧|0|/|入力電圧 -1|V  |  
 |各チャンネルの出力電流|/|/|2000 |mA   |
 |  出力デューティ範囲|0%~100% |   |      | /  |
-|  寸法| 68.5x54.5x29.5  |   |   |  mm |
+|  寸法| 68.5×54.5×29.5  |   |   |  mm |
 | 正味重量|37|||g  |  
 
-- 推奨最大デューティ <50%（フルロード時）
+- 推奨最大デューティ &lt;50%（フルロード時）
 
 ## インターフェース機能 ##
 
@@ -222,7 +222,7 @@ void loop() {
 
 ## 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Motor-Shield_V1.0/res/Motorshield09gerber.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Motor-Shield_V1.0/res/Motorshield09gerber.zip" style={{borderRadius: '0 0 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
 
 ## リソース ##

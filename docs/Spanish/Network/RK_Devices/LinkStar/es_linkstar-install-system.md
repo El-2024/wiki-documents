@@ -51,7 +51,7 @@ También podemos flashear el sistema a la eMMC que viene con LinkStar. Este mét
 
 Cuando una tarjeta TF está insertada en LinkStar, el sistema que arranca es el que está en la tarjeta TF, ya que la **TF tiene prioridad para arrancar**.
 
-### <span id="jump1">Flashear OpenWRT a la tarjeta TF</span>
+### Flashear OpenWRT a la tarjeta TF {#jump1}
 
 #### Preparación
 
@@ -134,7 +134,7 @@ password: password
 
 ¡Felicidades! Ahora has instalado exitosamente OpenWRT vía tarjeta TF.
 
-### <span id="jump2">Flashear OpenWRT a eMMC</span>
+### Flashear OpenWRT a eMMC {#jump2}
 
 #### Preparación
 
@@ -270,7 +270,7 @@ password: password
 
 ¡Felicidades! Ahora has instalado OpenWRT exitosamente en la memoria eMMC.
 
-### <span id="jump3">Flashear Android / Ubuntu a eMMC</span>
+### Flashear Android / Ubuntu a eMMC {#jump3}
 
 #### Preparación
 

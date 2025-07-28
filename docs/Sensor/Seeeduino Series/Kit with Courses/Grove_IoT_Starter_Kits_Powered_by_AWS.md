@@ -50,78 +50,79 @@ Seeeduino Cloud and Grove IoT Starter Kit Powered by AW
 
 <table>
 <tr>
-<th> Board/Part </th>
-<th> Qty </th>
-<th> Documentation
-</th></tr>
-<tr>
-<td> <a href="https://www.seeedstudio.com/Seeeduino-Cloud-Arduino-Yun-compatible-openWRT-controller-p-2123.html?cPath=6_7" ><span><font size={"3"}> Seeeduino Cloud development board </font></span></a> </td>
-<td> 1 </td>
+<th>Board/Part</th>
+<th>Qty</th>
+<th>Documentation</th>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Base-Shield-V2-p-1378.html?cPath=98_16" ><span><font size={"3"}> Base Shield </font></span></a> </td>
-<td> 1  </td>
+<td><a href="https://www.seeedstudio.com/Seeeduino-Cloud-Arduino-Yun-compatible-openWRT-controller-p-2123.html?cPath=6_7"><span><font size={"3"}>Seeeduino Cloud development board</font></span></a></td>
+<td>1</td>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html?cPath=34_36" ><span><font size={"3"}> Grove - LCD RGB Backlight </font></span></a> </td>
-<td> 1 </td>
+<td><a href="https://www.seeedstudio.com/Base-Shield-V2-p-1378.html?cPath=98_16"><span><font size={"3"}>Base Shield</font></span></a></td>
+<td>1</td>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Grove-Relay-p-769.html?cPath=39_42" ><span><font size={"3"}> Grove - Relay </font></span></a> </td>
-<td> 1 </td>
+<td><a href="https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html?cPath=34_36"><span><font size={"3"}>Grove - LCD RGB Backlight</font></span></a></td>
+<td>1</td>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Grove-Buzzer-p-768.html?cPath=38" ><span><font size={"3"}> Grove - Buzzer </font></span></a> </td>
-<td> 1</td>
+<td><a href="https://www.seeedstudio.com/Grove-Relay-p-769.html?cPath=39_42"><span><font size={"3"}>Grove - Relay</font></span></a></td>
+<td>1</td>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Grove-Sound-Sensor-p-752.html?cPath=25_128" ><span><font size={"3"}>Grove - Sound Sensor </font></span></a></td>
-<td> 1</td>
+<td><a href="https://www.seeedstudio.com/Grove-Buzzer-p-768.html?cPath=38"><span><font size={"3"}>Grove - Buzzer</font></span></a></td>
+<td>1</td>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Grove-Touch-Sensor-p-747.html?cPath=85_94" ><span><font size={"3"}>Grove - Touch Sensor </font></span></a> </td>
-<td> 1</td>
+<td><a href="https://www.seeedstudio.com/Grove-Sound-Sensor-p-752.html?cPath=25_128"><span><font size={"3"}>Grove - Sound Sensor</font></span></a></td>
+<td>1</td>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor-p-770.html?cPath=85_52" ><span><font size={"3"}>Grove - Rotary Angle Sensor</font></span></a></td>
-<td> 1</td>
+<td><a href="https://www.seeedstudio.com/Grove-Touch-Sensor-p-747.html?cPath=85_94"><span><font size={"3"}>Grove - Touch Sensor</font></span></a></td>
+<td>1</td>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Grove-Temperature-Sensor-p-774.html?cPath=25_125" ><span><font size={"3"}> Grove - Temperature Sensor </font></span></a> </td>
-<td> </td>
+<td><a href="https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor-p-770.html?cPath=85_52"><span><font size={"3"}>Grove - Rotary Angle Sensor</font></span></a></td>
+<td>1</td>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Grove-LED-p-767.html" ><span><font size={"3"}> Grove - LED </font></span></a> </td>
-<td> 1</td>
+<td><a href="https://www.seeedstudio.com/Grove-Temperature-Sensor-p-774.html?cPath=25_125"><span><font size={"3"}>Grove - Temperature Sensor</font></span></a></td>
+<td></td>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Grove-Light-Sensor-p-746.html?cPath=25_27" ><span><font size={"3"}>Grove - Light Sensor</font></span></a> </td>
-<td> 1</td>
+<td><a href="https://www.seeedstudio.com/Grove-LED-p-767.html"><span><font size={"3"}>Grove - LED</font></span></a></td>
+<td>1</td>
 </tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Grove-Button-p-766.html?cPath=85_50" ><span><font size={"3"}> Grove – Button</font></span></a> </td>
-<td> 1 </td>
+<td><a href="https://www.seeedstudio.com/Grove-Light-Sensor-p-746.html?cPath=25_27"><span><font size={"3"}>Grove - Light Sensor</font></span></a></td>
+<td>1</td>
 </tr>
 <tr>
-<td> DIP LED Blue-Blue </td>
-<td> 1
-</td></tr>
+<td><a href="https://www.seeedstudio.com/Grove-Button-p-766.html?cPath=85_50"><span><font size={"3"}>Grove – Button</font></span></a></td>
+<td>1</td>
+</tr>
 <tr>
-<td> DIP LED Green-Green </td>
-<td> 1
-</td></tr>
+<td>DIP LED Blue-Blue</td>
+<td>1</td>
+</tr>
 <tr>
-<td> DIP LED Red-Red </td>
-<td> 1
-</td></tr>
+<td>DIP LED Green-Green</td>
+<td>1</td>
+</tr>
 <tr>
-<td> Mini Servo </td>
-<td> 1
-</td></tr>
+<td>DIP LED Red-Red</td>
+<td>1</td>
+</tr>
 <tr>
-<td> Micro USB Cable - 48cm </td>
-<td> 1
-</td></tr></table>
+<td>Mini Servo</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Micro USB Cable - 48cm</td>
+<td>1</td>
+</tr>
+</table>
 
 ## Intel® Edison and Grove IoT Starter Kit Powered by AWS
 
@@ -139,10 +140,10 @@ For _**User Manual**_, please go to: [Intel® Edison and Grove IoT Starter Kit P
 
 <table>
 <tr>
-<th> Board/Part </th>
-<th> Qty </th>
-<th> Documentation
-</th></tr>
+<th>Board/Part</th>
+<th>Qty</th>
+<th>Documentation</th>
+</tr>
 <tr>
 <td>[Intel® Edison for Arduino](https://www.seeedstudio.com/Intel-Edison-for-Arduino-p-2149.html) </td>
 <td> 1 </td>
@@ -223,10 +224,10 @@ For _**User Manual**_, please go to:
 
 <table>
 <tr>
-<th> Board/Part </th>
-<th> Qty </th>
-<th> Documentation
-</th></tr>
+<th>Board/Part</th>
+<th>Qty</th>
+<th>Documentation</th>
+</tr>
 <tr>
 <td>[BeagleBone Green](https://www.seeedstudio.com/BeagleBone-Green-p-2504.html?cPath=122_113) </td>
 <td> 1 </td>
@@ -294,10 +295,10 @@ For _**User Manual**_, please go to:
 
 <table>
 <tr>
-<th> Board/Part </th>
-<th> Qty </th>
-<th> Documentation
-</th></tr>
+<th>Board/Part</th>
+<th>Qty</th>
+<th>Documentation</th>
+</tr>
 <tr>
 <td>[LinkIt ONE](https://www.seeedstudio.com/LinkIt-ONE-p-2017.html?cPath=122_142) </td>
 <td> 1 </td>

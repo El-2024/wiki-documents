@@ -125,7 +125,7 @@ source /opt/intel/openvino/bin/setupvars.sh
 
 **Note:** The OpenVINO environment variables are removed when you close the shell. As an option, you can permanently set the environment variables as follows:
 
-1. Open and `.bashrc` file in <user_directory>.
+1. Open and `.bashrc` file in `<user_directory>`.
 
 ```sh
 nano /home/USERNAME/.bashrc

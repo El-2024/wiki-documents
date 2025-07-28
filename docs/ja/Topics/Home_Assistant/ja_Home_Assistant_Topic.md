@@ -32,24 +32,24 @@ Home Assistantはホームオートメーションを超えて進化し、**ス�
 
 ### HA Green - プラグ＆プレイ
 
-<div class="table-center">
-	<table class="table-nobg">
-		<tr class="table-trnobg">
-    <td className="table-trnobg" style={{ textAlign: 'left' }}><font size={"2"}><br /><font size={"3"}><strong>簡単なセットアップ</strong></font>
-        <font size={"2"}> 電源とネットワークケーブルを接続し、モバイルアプリのアシストで簡単に操作できます。</font>
-        <br /><font size={"3"}><strong>オールインワン制御</strong></font>
-        <font size={"2"}> Apple、Google、Samsung、Amazonなどを1つのアプリで管理。</font>
-        <br /><font size={"3"}><strong>プライバシー優先</strong></font>
-        <font size={"2"}> データは専用の制御とローカルストレージで保護されます。</font>
-        <br /><font size={"3"}><strong>多様なエコシステム</strong></font>
-        <font size={"2"}> Zigbee/Thread、音声アシスタント、その他のスマートアクセサリとシームレスに接続。</font>
-        <br /><font size={"3"}><strong>オープンソースによる毎月の改善</strong></font></font></td>
-          <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Home_Assistant_Green/HAgreen.png" style={{width:700, height:'auto'}}/></div></td>
+<div className="table-center">
+	<table className="table-nobg">
+		<tr className="table-trnobg">
+    <td className="table-trnobg" style={{textAlign: 'left'}}><font size="2"><br /><font size="3"><strong>簡単なセットアップ</strong></font>
+        <font size="2"> 電源とネットワークケーブルを接続し、モバイルアプリのアシストで簡単に操作できます。</font>
+        <br /><font size="3"><strong>オールインワン制御</strong></font>
+        <font size="2"> Apple、Google、Samsung、Amazonなどを1つのアプリで管理。</font>
+        <br /><font size="3"><strong>プライバシー優先</strong></font>
+        <font size="2"> データは専用の制御とローカルストレージで保護されます。</font>
+        <br /><font size="3"><strong>多様なエコシステム</strong></font>
+        <font size="2"> Zigbee/Thread、音声アシスタント、その他のスマートアクセサリとシームレスに接続。</font>
+        <br /><font size="3"><strong>オープンソースによる毎月の改善</strong></font></font></td>
+          <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Home_Assistant_Green/HAgreen.png" style={{width:700, height:'auto'}}/></div></td>
 				</tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
-		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://green.home-assistant.io/"><strong><span><font color={'FFFFFF'} size={"3"}>📚 スタートガイドページ</font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+        <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}> <a className="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html"><strong><span><font color="FFFFFF" size="4"> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
+		<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://green.home-assistant.io/"><strong><span><font color="FFFFFF" size="3">📚 スタートガイドページ</font></span></strong></a></div></td>
     </tr>
 	</table>
 </div>
@@ -59,30 +59,30 @@ Home Assistantはホームオートメーションを超えて進化し、**ス�
 ### HA Yellowで可能性を解き放つ
 
 <div class="table-center">
-	<table class="table-nobg">
-		<tr class="table-trnobg">
-    <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Home_Assistant_Green/HAyellow.png" style={{width:700, height:'auto'}}/></div></td>
-    <td className="table-trnobg" style={{ textAlign: 'left' }}><font size={"2"}><br /><font size={"3"}><strong>シームレスな統合</strong></font>
-        <font size={"2"}> 1,000以上のデバイスを1つのソフトウェアで管理し、ホームオートメーションを向上。</font>
-        <br /><font size={"3"}><strong>多様な性能</strong></font>
-        <font size={"2"}> 最大8GB RAM、32GB eMMC、NVMe SSD用M.2スロット。</font>
-        <br /><font size={"3"}><strong>スマート接続</strong></font>
-        <font size={"2"}> Zigbee 3.0、OpenThread、Matterをサポート。</font>
-        <br /><font size={"3"}><strong>高速ネットワーク</strong></font>
-        <font size={"2"}> ギガビットイーサネットを含む。</font>
-        <br /><font size={"3"}><strong>エネルギー消費の追跡と管理</strong></font></font></td>
+	<table className="table-nobg">
+		<tr className="table-trnobg">
+    <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Home_Assistant_Green/HAyellow.png" style={{width:700, height:'auto'}}/></div></td>
+    <td className="table-trnobg" style={{textAlign: 'left'}}><font size="2"><br /><font size="3"><strong>シームレスな統合</strong></font>
+        <font size="2"> 1,000以上のデバイスを1つのソフトウェアで管理し、ホームオートメーションを向上。</font>
+        <br /><font size="3"><strong>多様な性能</strong></font>
+        <font size="2"> 最大8GB RAM、32GB eMMC、NVMe SSD用M.2スロット。</font>
+        <br /><font size="3"><strong>スマート接続</strong></font>
+        <font size="2"> Zigbee 3.0、OpenThread、Matterをサポート。</font>
+        <br /><font size="3"><strong>高速ネットワーク</strong></font>
+        <font size="2"> ギガビットイーサネットを含む。</font>
+        <br /><font size="3"><strong>エネルギー消費の追跡と管理</strong></font></font></td>
 				</tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Yellow-Kit-with-selectable-CM4-p-5680.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
-        <td class="table-trnobg"></td>
-		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://yellow.home-assistant.io/power-supply/"><strong><span><font color={'FFFFFF'} size={"3"}>📚 スタートガイドページ</font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+        <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}> <a className="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Yellow-Kit-with-selectable-CM4-p-5680.html"><strong><span><font color="FFFFFF" size="4"> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
+        <td className="table-trnobg"></td>
+		<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://yellow.home-assistant.io/power-supply/"><strong><span><font color="FFFFFF" size="3">📚 スタートガイドページ</font></span></strong></a></div></td>
      </tr>
-     <tr class="table-trnobg"></tr>
-    <tr class="table-trnobg">
-     <td class="table-trnobg"></td>
-     <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2024/07/23/home-assistant-green-vs-yellow-vs-blue/"><strong><span><font color={'FFFFFF'} size={"4"}> 🖥️ 比較</font></span></strong></a></div></td>
-      <td class="table-trnobg"></td>
+     <tr className="table-trnobg"></tr>
+    <tr className="table-trnobg">
+     <td className="table-trnobg"></td>
+     <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}> <a className="get_one_now_item" href="https://www.seeedstudio.com/blog/2024/07/23/home-assistant-green-vs-yellow-vs-blue/"><strong><span><font color="FFFFFF" size="4"> 🖥️ 比較</font></span></strong></a></div></td>
+      <td className="table-trnobg"></td>
     </tr>
 	</table>
 </div>
@@ -92,23 +92,23 @@ Home Assistantはホームオートメーションを超えて進化し、**ス�
 ### SkyConnect USBスティック: 無限の接続性
 
 <div class="table-center">
-	<table class="table-nobg">
-		<tr class="table-trnobg">
-    <td className="table-trnobg" style={{ textAlign: 'left' }}><font size={"2"}><br /><font size={"3"}><strong>Home Assistantユーザーに最適</strong></font>
-        <font size={"2"}> シームレスなZigbee接続と、ファームウェアアップデートによるMatterの将来的なサポート。</font>
-        <br /><font size={"3"}><strong>高性能・低消費電力</strong></font>
-        <font size={"2"}> EFR32MG21 Wireless SoCによって駆動され、付属のエクステンダーでフルスピードUSB 2.0をサポート。</font>
-        <br /><font size={"3"}><strong>信頼性の高い通信</strong></font>
-        <font size={"2"}> +20 dBmで送信し、堅牢で一貫した接続性を提供。</font>
-        <br /><font size={"3"}><strong>簡単なファームウェアアップデート</strong></font>
-        <font size={"2"}> Over-The-Wire (OTW)サポートにより、一貫したアップデートを実現。</font>
-        <br /><font size={"3"}><strong>デュアルプロトコル動作</strong></font><font size={"2"}> ZigbeeとMatterプロトコルを同時に実行し、多用途性を提供</font></font></td>
-          <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Skyconnect/skyconnect.png" style={{width:700, height:'auto'}}/></div></td>
+	<table className="table-nobg">
+		<tr className="table-trnobg">
+    <td className="table-trnobg" style={{textAlign: 'left'}}><font size="2"><br /><font size="3"><strong>Home Assistantユーザーに最適</strong></font>
+        <font size="2"> シームレスなZigbee接続と、ファームウェアアップデートによるMatterの将来的なサポート。</font>
+        <br /><font size="3"><strong>高性能・低消費電力</strong></font>
+        <font size="2"> EFR32MG21 Wireless SoCによって駆動され、付属のエクステンダーでフルスピードUSB 2.0をサポート。</font>
+        <br /><font size="3"><strong>信頼性の高い通信</strong></font>
+        <font size="2"> +20 dBmで送信し、堅牢で一貫した接続性を提供。</font>
+        <br /><font size="3"><strong>簡単なファームウェアアップデート</strong></font>
+        <font size="2"> Over-The-Wire (OTW)サポートにより、一貫したアップデートを実現。</font>
+        <br /><font size="3"><strong>デュアルプロトコル動作</strong></font><font size="2"> ZigbeeとMatterプロトコルを同時に実行し、多用途性を提供</font></font></td>
+          <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Skyconnect/skyconnect.png" style={{width:700, height:'auto'}}/></div></td>
 				</tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-SkyConnect-p-5479.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
-		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://skyconnect.home-assistant.io/"><strong><span><font color={'FFFFFF'} size={"3"}>📚 スタートガイドページ</font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+        <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}> <a className="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-SkyConnect-p-5479.html"><strong><span><font color="FFFFFF" size="4"> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
+		<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://skyconnect.home-assistant.io/"><strong><span><font color="FFFFFF" size="3">📚 スタートガイドページ</font></span></strong></a></div></td>
     </tr>
 	</table>
 </div>
@@ -146,20 +146,20 @@ Home Assistantはホームオートメーションを超えて進化し、**ス�
 ## Seeed対応のHome Assistantデバイス
 ### reTerminalシリーズ：手のひらや壁で使えるHome Assistant
 <div class="table-center">
-	<table class="table-nobg">
-		<tr class="table-trnobg">
-    <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/frigate/reterminal.png" style={{width:700, height:'auto'}}/></div></td>
-    <td className="table-trnobg" style={{ textAlign: 'left' }}><font size={"2"}> <br /><font size={"3"}><strong> Raspberry Pi Compute Module搭載</strong></font>
-        <font size={"2"}> Home Assistant OSのインストールとキオスクモードをサポート </font>
-        <br /><font size={"3"}><strong>モジュール設計</strong></font><font size={"2"}> 工業用拡張インターフェース、40ピンのRaspberry Pi互換ヘッダー</font>
-        <br /><font size={"3"}><strong>高性能</strong></font><font size={"2"}> 8GB RAM、32GB eMMC、デュアルバンドWi-Fi、Bluetoothを搭載。</font>
-        <br /><font size={"3"}><strong>豊富なインターフェースとコンポーネント</strong></font><font size={"2"}> USB Type-Aポート、ギガビットイーサネット、micro-HDMI、micro-SDカードスロット、MIPIカメラインターフェースなど。</font>
-        <br /><font size={"3"}><strong>カスタマイズサービス</strong></font><font size={"2"}></font></font></td>
+	<table className="table-nobg">
+		<tr className="table-trnobg">
+    <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/frigate/reterminal.png" style={{width:700, height:'auto'}}/></div></td>
+    <td className="table-trnobg" style={{textAlign: 'left'}}><font size="2"> <br /><font size="3"><strong> Raspberry Pi Compute Module搭載</strong></font>
+        <font size="2"> Home Assistant OSのインストールとキオスクモードをサポート </font>
+        <br /><font size="3"><strong>モジュール設計</strong></font><font size="2"> 工業用拡張インターフェース、40ピンのRaspberry Pi互換ヘッダー</font>
+        <br /><font size="3"><strong>高性能</strong></font><font size="2"> 8GB RAM、32GB eMMC、デュアルバンドWi-Fi、Bluetoothを搭載。</font>
+        <br /><font size="3"><strong>豊富なインターフェースとコンポーネント</strong></font><font size="2"> USB Type-Aポート、ギガビットイーサネット、micro-HDMI、micro-SDカードスロット、MIPIカメラインターフェースなど。</font>
+        <br /><font size="3"><strong>カスタマイズサービス</strong></font><font size="2"></font></font></td>
 				</tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-CM4108032-p-5712.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
-		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/reTerminal_Home_Assistant/"><strong><span><font color={'FFFFFF'} size={"3"}>📚スタートガイドページ </font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+        <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-CM4108032-p-5712.html"><strong><span><font color="FFFFFF" size="4"> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
+		<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://wiki.seeedstudio.com/ja/reTerminal_Home_Assistant/"><strong><span><font color="FFFFFF" size="3">📚スタートガイドページ </font></span></strong></a></div></td>
     </tr>
 	</table>
 </div>
@@ -168,24 +168,26 @@ Home Assistantはホームオートメーションを超えて進化し、**ス�
 ### Odyssey: ミニPCでのHome Assistant
 
 <div class="table-center">
-	<table class="table-nobg">
-		<tr class="table-trnobg">
-    <td className="table-trnobg" style={{ textAlign: 'left' }}><font size={"2"}><br /><font size={"3"}><strong>強力な性能</strong></font>
-        <font size={"2"}> クアッドコアIntel® Celeron® J4125、8GB LPDDR4 RAM </font>
-        <br /><font size={"3"}><strong>ハイブリッドで高速なネットワークアクセス</strong></font>
-        <font size={"2"}> デュアル2.5GbEインターフェース、デュアルバンドWi-Fi、4G LTE対応（モジュールは含まれません）およびSIMカードスロット。
-</font>
-        <br /><font size={"3"}><strong>拡張性</strong></font>
-        <font size={"2"}> 1x SATA、2x M.2インターフェース、1x SDカードスロット、1xオーディオジャック、1x USB 3.1、2x USB 2.0ポート
-</font>
-        <br /><font size={"3"}><strong>高解像度4Kビデオ出力</strong></font><font size={"2"}> 
-</font></font></td>
-         <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/ODYSSEY_X86J4125_v2/odyssey.png" style={{width:700, height:'auto'}}/></div></td>
+	<table className="table-nobg">
+		<tr className="table-trnobg">
+    <td className="table-trnobg" style={{textAlign: 'left'}}>
+  <font size="2">
+    <br /><font size="3"><strong>強力な性能</strong></font>
+    <font size="2"> クアッドコアIntel® Celeron® J4125、8GB LPDDR4 RAM </font>
+    <br /><font size="3"><strong>ハイブリッドで高速なネットワークアクセス</strong></font>
+    <font size="2"> デュアル2.5GbEインターフェース、デュアルバンドWi-Fi、4G LTE対応（モジュールは含まれません）およびSIMカードスロット。</font>
+    <br /><font size="3"><strong>拡張性</strong></font>
+    <font size="2"> 1x SATA、2x M.2インターフェース、1x SDカードスロット、1xオーディオジャック、1x USB 3.1、2x USB 2.0ポート</font>
+    <br /><font size="3"><strong>高解像度4Kビデオ出力</strong></font>
+    <font size="2"></font>
+  </font>
+</td>
+         <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/ODYSSEY_X86J4125_v2/odyssey.png" style={{width:700, height:'auto'}}/></div></td>
 				</tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/ODYSSEY-X86J4125864-v2-p-5536.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
-		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant/"><strong><span><font color={'FFFFFF'} size={"3"}>📚スタートガイドページ</font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+        <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}> <a className="get_one_now_item" href="https://www.seeedstudio.com/ODYSSEY-X86J4125864-v2-p-5536.html"><strong><span><font color="FFFFFF" size="4"> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
+		<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant/"><strong><span><font color="FFFFFF" size="3">📚スタートガイドページ</font></span></strong></a></div></td>
     </tr>
 	</table>
 </div>
@@ -195,23 +197,29 @@ Home Assistantはホームオートメーションを超えて進化し、**ス�
 ### LinkStar: DockerでのHome Assistant
 
 <div class="table-center">
-	<table class="table-nobg">
-		<tr class="table-trnobg">
-    <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/LinkStar/linkstar.png" style={{width:700, height:'auto'}}/></div></td>
-    <td className="table-trnobg" style={{ textAlign: 'left' }}><font size={"2"}>
-        <br /><font size={"3"}><strong>Docker対応のHome Assistantデバイス</strong></font>
-        <br /><font size={"3"}><strong>超高速ネットワークポート:</strong></font><font size={"2"}> デュアル最大2.5Gbpsイーサネット & デュアル1Gbpsイーサネット</font>
-        <br /><font size={"3"}><strong>多用途なOSサポート</strong></font><font size={"2"}> OpenWRT（Home Assistant対応）、Android、Lubuntu 20.04、Armbian。</font>
-        <br /><font size={"3"}><strong>大容量ストレージ</strong></font><font size={"2"}> オンボード32GB eMMCと追加のSDカードスロット</font>
-        <br /><font size={"3"}><strong>4Kマルチメディアプレーヤー</strong></font><font size={"2"}> Android 11 OSがプリインストールされ、HDMI 2.0ポートで4K@60fps表示とHDRをサポート。
-         <br /><font size={"3"}><strong>オプションのWi-Fi 6</strong></font><font size={"2"}> </font>
-        
-</font></font></td>
+	<table className="table-nobg">
+		<tr className="table-trnobg">
+    <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/LinkStar/linkstar.png" style={{width:700, height:'auto'}}/></div></td>
+    <td className="table-trnobg" style={{textAlign: 'left'}}>
+      <font size="2">
+        <br /><font size="3"><strong>Docker対応のHome Assistantデバイス</strong></font>
+        <br /><font size="3"><strong>超高速ネットワークポート:</strong></font>
+        <font size="2"> デュアル最大2.5Gbpsイーサネット & デュアル1Gbpsイーサネット</font>
+        <br /><font size="3"><strong>多用途なOSサポート</strong></font>
+        <font size="2"> OpenWRT（Home Assistant対応）、Android、Lubuntu 20.04、Armbian。</font>
+        <br /><font size="3"><strong>大容量ストレージ</strong></font>
+        <font size="2"> オンボード32GB eMMCと追加のSDカードスロット</font>
+        <br /><font size="3"><strong>4Kマルチメディアプレーヤー</strong></font>
+        <font size="2"> Android 11 OSがプリインストールされ、HDMI 2.0ポートで4K@60fps表示とHDRをサポート。</font>
+        <br /><font size="3"><strong>オプションのWi-Fi 6</strong></font>
+        <font size="2"></font>
+      </font>
+    </td>
 				</tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/LinkStar-H68K-1432-p-5501.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
-		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/h68k-ha-esphome/"><strong><span><font color={'FFFFFF'} size={"3"}>📚スタートガイドページ</font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+        <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}> <a className="get_one_now_item" href="https://www.seeedstudio.com/LinkStar-H68K-1432-p-5501.html"><strong><span><font color="FFFFFF" size="4"> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
+		<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://wiki.seeedstudio.com/ja/h68k-ha-esphome/"><strong><span><font color="FFFFFF" size="3">📚スタートガイドページ</font></span></strong></a></div></td>
     </tr>
 	</table>
 </div>
@@ -223,22 +231,26 @@ Home Assistantはホームオートメーションを超えて進化し、**ス�
 ### XIAO ESP32C3: 自分だけのノードを作成
 
 <div class="table-center">
-	<table class="table-nobg">
-		<tr class="table-trnobg">
-    <td className="table-trnobg" style={{ textAlign: 'left' }}><font size={"2"}><br /><font size={"3"}><strong>多用途なMCUボード</strong></font>
-        <font size={"2"}> ESP32-C3 32ビットRISC-Vチップを搭載し、最大160 MHzで動作。Arduino/CircuitPythonをサポート。
-        </font>
-        <br /><font size={"3"}><strong>優れたRF性能</strong></font>
-        <font size={"2"}> 完全なWi-FiおよびBluetooth Low Energy機能を備え、U.FLアンテナを使用して通信範囲が100mを超える。</font>
-        <br /><font size={"3"}><strong>親指サイズのデザイン</strong></font>
-        <font size={"2"}> ウェアラブルデバイスに適したサイズ。</font>
-        <br /><font size={"3"}><strong>量産対応</strong></font><font size={"2"}> ブレッドボード対応＆SMDデザイン、背面に部品なし。</font></font></td>
-          <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/board-pic.png" style={{width:200, height:'auto'}}/></div></td>
+	<table className="table-nobg">
+		<tr className="table-trnobg">
+    <td className="table-trnobg" style={{textAlign: 'left'}}>
+      <font size="2">
+        <br /><font size="3"><strong>多用途なMCUボード</strong></font>
+        <font size="2"> ESP32-C3 32ビットRISC-Vチップを搭載し、最大160 MHzで動作。Arduino/CircuitPythonをサポート。</font>
+        <br /><font size="3"><strong>優れたRF性能</strong></font>
+        <font size="2"> 完全なWi-FiおよびBluetooth Low Energy機能を備え、U.FLアンテナを使用して通信範囲が100mを超える。</font>
+        <br /><font size="3"><strong>親指サイズのデザイン</strong></font>
+        <font size="2"> ウェアラブルデバイスに適したサイズ。</font>
+        <br /><font size="3"><strong>量産対応</strong></font>
+        <font size="2"> ブレッドボード対応＆SMDデザイン、背面に部品なし。</font>
+      </font>
+    </td>
+          <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/board-pic.png" style={{width:200, height:'auto'}}/></div></td>
 				</tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
-		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO-ESP32C3-for-ESPHome-Support/"><strong><span><font color={'FFFFFF'} size={"3"}>📚 スタートガイドページ</font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+        <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}> <a className="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html"><strong><span><font color="FFFFFF" size="4"> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
+		<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO-ESP32C3-for-ESPHome-Support/"><strong><span><font color="FFFFFF" size="3">📚 スタートガイドページ</font></span></strong></a></div></td>
     </tr>
 	</table>
 </div>
@@ -247,21 +259,21 @@ Home Assistantはホームオートメーションを超えて進化し、**ス�
 ### mmWave Human Detection Sensor Kit: 泥棒を捕まえよう
 
 <div class="table-center">
-	<table class="table-nobg">
-		<tr class="table-trnobg">
-    <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave_kit/mmwavekit.png" style={{width:700, height:'auto'}}/></div></td>
-    <td className="table-trnobg" style={{ textAlign: 'left' }}><font size={"2"}><br /><font size={"3"}><strong>コード不要の人検知</strong></font>
-        <font size={"2"}> 簡単に正確な人検知をHome Assistantに統合可能。</font>
-        <br /><font size={"3"}><strong>高度なセンシング技術</strong></font>
-        <font size={"2"}> FMCW原理を使用したオンボードmmWaveセンサー。</font>
-        <br /><font size={"3"}><strong>XIAO ESP32C3のパワー</strong></font>
-        <font size={"2"}> XIAO ESP32C3によって駆動され、Wi-FiおよびBluetooth LEデータ通信を実現。</font>
-        <br /><font size={"3"}><strong>Seeed Studio カスタマイズサービス</strong></font><font size={"2"}></font></font></td>
+	<table className="table-nobg">
+		<tr className="table-trnobg">
+    <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave_kit/mmwavekit.png" style={{width:700, height:'auto'}}/></div></td>
+    <td className="table-trnobg" style={{textAlign: 'left'}}><font size="2"><br /><font size="3"><strong>コード不要の人検知</strong></font>
+        <font size="2"> 簡単に正確な人検知をHome Assistantに統合可能。</font>
+        <br /><font size="3"><strong>高度なセンシング技術</strong></font>
+        <font size="2"> FMCW原理を使用したオンボードmmWaveセンサー。</font>
+        <br /><font size="3"><strong>XIAO ESP32C3のパワー</strong></font>
+        <font size="2"> XIAO ESP32C3によって駆動され、Wi-FiおよびBluetooth LEデータ通信を実現。</font>
+        <br /><font size="3"><strong>Seeed Studio カスタマイズサービス</strong></font><font size="2"></font></font></td>
 				</tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/mmWave-Human-Detection-Sensor-Kit-p-5773.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
-		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/mmwave_human_detection_kit/"><strong><span><font color={'FFFFFF'} size={"3"}>📚 スタートガイドページ</font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+        <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}> <a className="get_one_now_item" href="https://www.seeedstudio.com/mmWave-Human-Detection-Sensor-Kit-p-5773.html"><strong><span><font color="FFFFFF" size="4"> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
+		<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://wiki.seeedstudio.com/ja/mmwave_human_detection_kit/"><strong><span><font color="FFFFFF" size="3">📚 スタートガイドページ</font></span></strong></a></div></td>
     </tr>
 	</table>
 </div>
@@ -270,22 +282,26 @@ Home Assistantはホームオートメーションを超えて進化し、**ス�
 ### SenseCAP Indicator: 作業デスク上のセンサーハブ
 
 <div class="table-center">
-	<table class="table-nobg">
-		<tr class="table-trnobg">
-    <td className="table-trnobg" style={{ textAlign: 'left' }}><font size={"2"}><br /><font size={"3"}><strong>デュアルMCU、豊富なGPIO</strong></font>
-        <font size={"2"}> ESP32S3とRP2040、400以上のGrove互換GPIOで柔軟な拡張が可能。
-        </font>
-        <br /><font size={"3"}><strong>空気質モニタリング</strong></font>
-        <font size={"2"}> 内蔵VOC、CO2センサー、外部AHT20温湿度センサーで正確な測定。</font>
-        <br /><font size={"3"}><strong>ローカルLoRaハブ</strong></font>
-        <font size={"2"}> SX1262 LoRaチップ（オプション）を統合し、Wi-Fiを介したIoT接続を実現。</font>
-        <br /><font size={"3"}><strong>Fusion ODMサービス</strong></font><font size={"2"}> Seeed Studioは迅速なカスタマイズと多様なニーズに対応するスケーラブルなソリューションを提供。</font></font></td>
-          <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_1.png" style={{width:700, height:'auto'}}/></div></td>
+	<table className="table-nobg">
+		<tr className="table-trnobg">
+    <td className="table-trnobg" style={{textAlign: 'left'}}>
+      <font size="2">
+        <br /><font size="3"><strong>デュアルMCU、豊富なGPIO</strong></font>
+        <font size="2"> ESP32S3とRP2040、400以上のGrove互換GPIOで柔軟な拡張が可能。</font>
+        <br /><font size="3"><strong>空気質モニタリング</strong></font>
+        <font size="2"> 内蔵VOC、CO2センサー、外部AHT20温湿度センサーで正確な測定。</font>
+        <br /><font size="3"><strong>ローカルLoRaハブ</strong></font>
+        <font size="2"> SX1262 LoRaチップ（オプション）を統合し、Wi-Fiを介したIoT接続を実現。</font>
+        <br /><font size="3"><strong>Fusion ODMサービス</strong></font>
+        <font size="2"> Seeed Studioは迅速なカスタマイズと多様なニーズに対応するスケーラブルなソリューションを提供。</font>
+      </font>
+    </td>
+          <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_1.png" style={{width:700, height:'auto'}}/></div></td>
 				</tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html?"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
-		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/SenseCAP_Indicator_Application_Home_Assistant/"><strong><span><font color={'FFFFFF'} size={"3"}>📚 スタートガイドページ</font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+        <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}> <a className="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html?"><strong><span><font color="FFFFFF" size="4"> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
+		<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://wiki.seeedstudio.com/ja/SenseCAP_Indicator_Application_Home_Assistant/"><strong><span><font color="FFFFFF" size="3">📚 スタートガイドページ</font></span></strong></a></div></td>
     </tr>
 	</table>
 </div>
@@ -294,23 +310,26 @@ Home Assistantはホームオートメーションを超えて進化し、**ス�
 ### Grove Vision AI 親指サイズのインテリジェントビジョン
 
 <div class="table-center">
-	<table class="table-nobg">
-		<tr class="table-trnobg">
-    <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/visionai-v2-ha/43.jpg" style={{width:700, height:'auto'}}/></div></td>
-    <td className="table-trnobg" style={{ textAlign: 'left' }}><font size={"2"}><br /><font size={"3"}><strong>AI処理能力</strong></font>
-        <font size={"2"}> WiseEye2 HX6538プロセッサ、デュアルコアArm Cortex-M55、統合Arm Ethos-U55ニューラルネットワークユニット。
-        </font>
-        <br /><font size={"3"}><strong>AIモデル対応</strong></font>
-        <font size={"2"}> SenseCraft AIでMobilenet、Efficientnet-lite、Yolo v5 & v8をサポート。TensorFlowおよびPyTorch互換。
-        </font>
-        <br /><font size={"3"}><strong>周辺機能</strong></font>
-        <font size={"2"}> PDMマイク、SDカードスロット、Type-C、Groveインターフェースなど。</font>
-        <br /><font size={"3"}><strong>互換性</strong></font> XIAOシリーズ、Arduino、Raspberry Pi、ESP開発ボードと互換性あり<font size={"2"}></font></font></td>
+	<table className="table-nobg">
+		<tr className="table-trnobg">
+    <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/visionai-v2-ha/43.jpg" style={{width:700, height:'auto'}}/></div></td>
+    <td className="table-trnobg" style={{textAlign: 'left'}}>
+      <font size="2">
+        <br /><font size="3"><strong>AI処理能力</strong></font>
+        <font size="2"> WiseEye2 HX6538プロセッサ、デュアルコアArm Cortex-M55、統合Arm Ethos-U55ニューラルネットワークユニット。</font>
+        <br /><font size="3"><strong>AIモデル対応</strong></font>
+        <font size="2"> SenseCraft AIでMobilenet、Efficientnet-lite、Yolo v5 & v8をサポート。TensorFlowおよびPyTorch互換。</font>
+        <br /><font size="3"><strong>周辺機能</strong></font>
+        <font size="2"> PDMマイク、SDカードスロット、Type-C、Groveインターフェースなど。</font>
+        <br /><font size="3"><strong>互換性</strong></font>
+        <font size="2"> XIAOシリーズ、Arduino、Raspberry Pi、ESP開発ボードと互換性あり</font>
+      </font>
+    </td>
 				</tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
-		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/connect_vision_ai_v2_to_ha/"><strong><span><font color={'FFFFFF'} size={"3"}>📚 スタートガイドページ</font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+        <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}> <a className="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html"><strong><span><font color="FFFFFF" size="4"> 🖱️ 今すぐ購入 </font></span></strong></a></div></td>
+		<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://wiki.seeedstudio.com/ja/connect_vision_ai_v2_to_ha/"><strong><span><font color="FFFFFF" size="3">📚 スタートガイドページ</font></span></strong></a></div></td>
     </tr>
 	</table>
 </div>
@@ -324,29 +343,29 @@ Seeed Studios製品を活用した魅力的なプロジェクトを探索しま�
 ### 統合環境モニタリング
 
 <div class="table-center">
-	<table class="table-nobg">
-    <tr class="table-trnobg">
-    <th class="table-trnobg">スマートサーモスタット</th>
-    <th class="table-trnobg">Comovis（ESPHome用のCO2、温度、湿度センサー）</th>
-      <th class="table-trnobg">Home Assistant Grove オールインワン環境センサーガイド</th>
+	<table className="table-nobg">
+    <tr className="table-trnobg">
+    <th className="table-trnobg">スマートサーモスタット</th>
+    <th className="table-trnobg">Comovis（ESPHome用のCO2、温度、湿度センサー）</th>
+      <th className="table-trnobg">Home Assistant Grove オールインワン環境センサーガイド</th>
       </tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-			<td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/9.jpg" style={{width:300, height:'auto'}}/></div></td>
-      <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://content.instructables.com/F12/9W7B/LDEJC7S4/F129W7BLDEJC7S4.png?auto=webp&frame=1&width=1024&height=1024&fit=bounds&md=6822a4406f091cf671d90b855308a0b4" style={{width:300, height:'auto'}}/></div></td>
-      <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://jamesachambers.com/wp-content/uploads/2023/02/Grove_SEN54_HomeAssistantView.webp" style={{width:300, height:'auto'}}/></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+			<td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/9.jpg" style={{width:300, height:'auto'}}/></div></td>
+      <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://content.instructables.com/F12/9W7B/LDEJC7S4/F129W7BLDEJC7S4.png?auto=webp&frame=1&width=1024&height=1024&fit=bounds&md=6822a4406f091cf671d90b855308a0b4" style={{width:300, height:'auto'}}/></div></td>
+      <td className="table-trnobg"><div style={{textAlign:'center'}}><img src="https://jamesachambers.com/wp-content/uploads/2023/02/Grove_SEN54_HomeAssistantView.webp" style={{width:300, height:'auto'}}/></div></td>
 		</tr>
-    <tr class="table-trnobg"></tr>
-    <tr class="table-trnobg">
-      <td class="table-trnobg" style={{ textAlign: 'justify' }}><font size={"2"}> クレジット: </font><strong><font color={'8DC215'} size={"2"}>Chris</font></strong><br /><font size={"2"}>このWikiでは、Xiao ESP32C3 ESPHomeスマートサーモスタットの作成方法をステップバイステップで解説します。それでは始めましょう！</font></td>
-       <td class="table-trnobg" style={{ textAlign: 'justify' }}><font size={"2"}> クレジット: </font><strong><font color={'8DC215'} size={"2"}>Nayel Khouatra</font></strong><br /><font size={"2"}>Comovisは、PM2.5、温度、湿度を含む室内空気質を監視します。Home Assistantと統合され、健康的な環境のためのリアルタイムの洞察を提供します。</font></td>
-      <td class="table-trnobg" style={{ textAlign: 'justify' }}><font size={"2"}><font size={"2"}> クレジット: </font><strong><font color={'8DC215'} size={"2"}>James A. Chambers</font></strong><br />XIAO ESP32C3とGrove SEN54オールインワンセンサーを使用したシンプルで効果的な空気質モニターを紹介します。Home Assistantとシームレスに統合され、効率的なモニタリングセットアップを実現します。</font></td>
+    <tr className="table-trnobg"></tr>
+    <tr className="table-trnobg">
+      <td className="table-trnobg" style={{textAlign: 'justify'}}><font size="2"> クレジット: </font><strong><font color="8DC215" size="2">Chris</font></strong><br /><font size="2">このWikiでは、Xiao ESP32C3 ESPHomeスマートサーモスタットの作成方法をステップバイステップで解説します。それでは始めましょう！</font></td>
+       <td className="table-trnobg" style={{textAlign: 'justify'}}><font size="2"> クレジット: </font><strong><font color="8DC215" size="2">Nayel Khouatra</font></strong><br /><font size="2">Comovisは、PM2.5、温度、湿度を含む室内空気質を監視します。Home Assistantと統合され、健康的な環境のためのリアルタイムの洞察を提供します。</font></td>
+      <td className="table-trnobg" style={{textAlign: 'justify'}}><font size="2"><font size="2"> クレジット: </font><strong><font color="8DC215" size="2">James A. Chambers</font></strong><br />XIAO ESP32C3とGrove SEN54オールインワンセンサーを使用したシンプルで効果的な空気質モニターを紹介します。Home Assistantとシームレスに統合され、効率的なモニタリングセットアップを実現します。</font></td>
     </tr>
-    <tr class="table-trnobg"></tr>
-		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/esp32c3_smart_thermostat/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.instructables.com/Comovis-Co2-Temperature-and-Humidity-Sensor-for-Es/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://jamesachambers.com/home-assistant-grove-all-in-one-environmental-sensor-guide/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+    <tr className="table-trnobg"></tr>
+		<tr className="table-trnobg">
+			<td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://wiki.seeedstudio.com/ja/esp32c3_smart_thermostat/"><strong><span><font color="FFFFFF" size="4">📚 詳細を見る</font></span></strong></a></div></td>
+      <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://www.instructables.com/Comovis-Co2-Temperature-and-Humidity-Sensor-for-Es/"><strong><span><font color="FFFFFF" size="4">📚 詳細を見る</font></span></strong></a></div></td>
+      <td className="table-trnobg"><div className="get_one_now_container" style={{textAlign: 'center'}}><a className="get_one_now_item" href="https://jamesachambers.com/home-assistant-grove-all-in-one-environmental-sensor-guide/"><strong><span><font color="FFFFFF" size="4">📚 詳細を見る</font></span></strong></a></div></td>
         </tr>
     </table>
     </div>

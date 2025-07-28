@@ -364,7 +364,7 @@ bool frame2bmp(camera_fb_t * fb, uint8_t ** out, size_t * out_len);
 ### Part III: app_httpd.cpp
 
 :::note
-This part of the library introduction is based on the [Create a video preservation terminal -- Based WebServer](#project-iii-create-a-video-preservation-terminal----based-webserver) section. This library is mainly used to perform image acquisition and face recognition functions for the web server. It is not directly included in the onboard package of ESP.
+This part of the library introduction is based on the Create a video preservation terminal -- Based WebServer section. This library is mainly used to perform image acquisition and face recognition functions for the web server. It is not directly included in the onboard package of ESP.
 :::
 
 1. Face recognition function.
@@ -422,7 +422,7 @@ void startCameraServer()
 
 ## Taking photos with the camera
 
-Next we start with the most basic usage of the camera, for example, we will first use the camera to complete the image acquisition. The first project we will use the microSD card, the main task of this program is to get the camera footage every minute and then save the footage to the microSD.
+Next we start with the most basic usage of the camera, for example, we will first use the camera to complete the image acquisition. The first project we will use the microSD card, the main task of this program is to get the camera footage every minute and then save the footage to the microSD card.
 
 Before you start, do what I did and install the microSD card and the camera.
 

@@ -118,7 +118,7 @@ Co2:845 Temperature:32.72 Humidity:50.13
 Co2:852 Temperature:32.28 Humidity:51.54
 ```
 
-:::notebug
+:::note
 - To get the stable and accurate value, you need to let the arduino run the code for about 2 hours. The result is much more reliable then.
 :::
 

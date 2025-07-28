@@ -90,7 +90,7 @@ reComputer R1000 支持多种物联网无线通信，包括 4G、LoRa®、Wi-Fi/
 
 <div align="left"><img width={700} src="https://files.seeedstudio.com/wiki/reComputer-R1000/Assembly_Guide/Wifi_and_ble.gif" /></div>
 
-**步骤 1：** 按照 [拆卸指南](/recomputer_r1000_assembly_guide/#assembly--disassembly-guide) 完全拆卸设备。
+**步骤 1：** 按照 [拆卸指南](/recomputer_r1000_assembly_guide) 完全拆卸设备。
 
 **步骤 2：** 按照下图所示，将 CM4 模块的馈线连接到天线孔。
 

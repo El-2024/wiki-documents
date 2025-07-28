@@ -122,7 +122,7 @@ The Watcher's Push to Talk feature allows you to interact with the device using 
 
 2. If you start a dialogue while Watcher is running a task, then Watcher will first pause the current task, and then re-enter your original task once the dialogue is over.
 
-3. To find out how to assign tasks, read the **[Run - Sending Task to Watcher by Speaking](#run---sending-task-to-watcher-by-speaking)** and **[How to assign tasks to Watcher](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)** tutorial first.
+3. To find out how to assign tasks, read the **[How to assign tasks to Watcher](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)** tutorial first.
 :::
 
 ## Fuction Overview

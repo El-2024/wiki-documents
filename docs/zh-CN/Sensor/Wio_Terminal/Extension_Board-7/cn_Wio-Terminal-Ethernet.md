@@ -97,7 +97,7 @@ void loop() {
 
 ### 示例代码
 
-:::注
+:::note注
 当您需要将设备连接到特定的网关和DNS（例如，旁路模式路由器/网关）时，这将非常有用。
 :::
 
@@ -559,7 +559,7 @@ void sendNTPpacket(const char * address) {
 
 点击[**这里**](http://arduino-tweet.appspot.com/oauth/twitter/login)获取一个使用OAuth进行消息发布的令牌。
 
->请访问 <http://arduino-tweet.appspot.com/> 获取更多参考信息
+>请访问 [http://arduino-tweet.appspot.com/](http://arduino-tweet.appspot.com/) 获取更多参考信息
 
 ### 示例代码
 

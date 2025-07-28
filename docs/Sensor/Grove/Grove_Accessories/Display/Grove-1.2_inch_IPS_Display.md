@@ -175,7 +175,7 @@ For instance, if you want to set digital pin 13 (corresponding to the 5th bit of
 PORTB |= (1 << 5);
 ```
 
-This statement sets the 5th bit of PORTB to 1 without changing other bits. This is achieved via the bitwise OR operator (|=) and the left-shift operator (<<).
+This statement sets the 5th bit of PORTB to 1 without changing other bits. This is achieved via the bitwise OR operator (|=) and the left-shift operator (&lt;&lt;).
 
 Likewise, if you want to set digital pin 13 to LOW, you can write as follows:
 

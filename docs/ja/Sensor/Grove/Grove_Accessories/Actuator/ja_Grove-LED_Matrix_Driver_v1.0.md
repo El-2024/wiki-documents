@@ -110,14 +110,14 @@ Grove - LED マトリックス ドライバ v1.0 は、さまざまなグラフ�
 
 #### コーディング作業
 
-より多くのデモスケッチは <https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver> で見つけることができ、開発用ライブラリは <https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver> にあります。
+より多くのデモスケッチは [https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver](https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver) で見つけることができ、開発用ライブラリは [https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver](https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver) にあります。
 
 1. 典型的なデモコードです。[Codebender](https://codebender.cc) を使用してメインコントロールボードにコードをアップロードできます。
 
 <iframe frameBorder={0} height={500} src="https://codebender.cc/embed/sketch:300168" width="50%">
 </iframe>
 
-2. コードをダウンロードしてアップロードします。Arduino スケッチのアップロード方法がわからない場合は、Windows ユーザーは <https://www.arduino.cc/en/Guide/Windows>、Mac ユーザーは <https://www.arduino.cc/en/Guide/MacOSX> を参照してください。以下のような結果が確認できます。
+2. コードをダウンロードしてアップロードします。Arduino スケッチのアップロード方法がわからない場合は、Windows ユーザーは [https://www.arduino.cc/en/Guide/Windows](https://www.arduino.cc/en/Guide/Windows)、Mac ユーザーは [https://www.arduino.cc/en/Guide/MacOSX](https://www.arduino.cc/en/Guide/MacOSX) を参照してください。以下のような結果が確認できます。
 
 ![](https://files.seeedstudio.com/wiki/Grove-LED_Matrix_Driver_v1.0/img/Grove-LED_Matrix_Driver_v1.0_wiki_demo_result_view_s.jpg)
 

@@ -48,8 +48,8 @@ Grove Formaldehyde Sensor can detect formaldehyde around 0~1000 ppb with low cro
 |---|---|
 |Supply voltage range|3.3V or 5V
 |Measurement range|0 to 1,000 ppb
-|Response time|<2 min
-|Limit of detection|<20 ppb
+|Response time|&lt;2 min
+|Limit of detection|&lt;20 ppb
 |Interface|I2C / UART
 |Formaldehyde accuracy|±20 ppb or ±20% of measured value, whichever is larger
 
@@ -275,7 +275,7 @@ int main(void) {
 
 ```
 
-:::tipsuccess
+:::tip
 If everything goes well, the following results can be displayed like:
 :::
 

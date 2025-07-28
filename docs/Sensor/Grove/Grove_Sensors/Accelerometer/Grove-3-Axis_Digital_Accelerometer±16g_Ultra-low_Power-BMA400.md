@@ -240,7 +240,7 @@ void loop(void)
 }
 ```
 
-:::attention
+:::warning
         The library file may be updated. This code may not be applicable to the updated library file, so we recommend that you use the first two methods.
 :::
 

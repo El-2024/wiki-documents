@@ -93,150 +93,108 @@ The board uses the 2G (not 3G or LTE) GSM networks.
 
 ###   Pin Definitions
 
-<table >
+<table>
 <tr>
-<th scope="col"> **Name**
-</th>
-<th scope="col"> **I/O**
-</th>
-<th scope="col"> **Description**
-</th>
-<th scope="col"> **Note**
-</th></tr>
+<th scope="col">Name</th>
+<th scope="col">I/O</th>
+<th scope="col">Description</th>
+<th scope="col">Note</th>
+</tr>
 <tr>
-<th scope="row"> BAT
-</th>
-<td>
-</td>
-<td> Power input / output
-</td>
-<td> 3.4V - 4.4V DC
-</td></tr>
+<td>BAT</td>
+<td></td>
+<td>Power input / output</td>
+<td>3.4V - 4.4V DC</td>
+</tr>
 <tr>
-<td> GND
-</td>
-<td>
-</td>
-<td> Power ground / logic ground
-</td>
-<td>
-</td></tr>
+<td>GND</td>
+<td></td>
+<td>Power ground / logic ground</td>
+<td></td>
+</tr>
 <tr>
-<td> VIO
-</td>
-<td> I
-</td>
-<td> Logic level reference
-</td>
-<td> 3.0V - 5.0V DC
-</td></tr>
+<td>VIO</td>
+<td>I</td>
+<td>Logic level reference</td>
+<td>3.0V - 5.0V DC</td>
+</tr>
 <tr>
-<td> DTR
-</td>
-<td> I
-</td>
-<td> Wake up pin for module in sleep mode
-</td>
-<td>
-</td></tr>
+<td>DTR</td>
+<td>I</td>
+<td>Wake up pin for module in sleep mode</td>
+<td></td>
+</tr>
 <tr>
-<td> PWR
-</td>
-<td> O
-</td>
-<td> Power switch
-</td>
-<td> Low level pulse
-</td></tr>
+<td>PWR</td>
+<td>O</td>
+<td>Power switch</td>
+<td>Low level pulse</td>
+</tr>
 <tr>
-<td> RI
-</td>
-<td> O
-</td>
-<td> Event/ message pin
-</td>
-<td>
-</td></tr>
+<td>RI</td>
+<td>O</td>
+<td>Event/ message pin</td>
+<td></td>
+</tr>
 <tr>
-<td> TXD
-</td>
-<td> O
-</td>
-<td> Transmit data
-</td>
-<td> UART output from SIM808
-</td></tr>
+<td>TXD</td>
+<td>O</td>
+<td>Transmit data</td>
+<td>UART output from SIM808</td>
+</tr>
 <tr>
-<td> RXD
-</td>
-<td> I
-</td>
-<td> Receive data
-</td>
-<td> UART Input to SIM808
-</td></tr>
+<td>RXD</td>
+<td>I</td>
+<td>Receive data</td>
+<td>UART Input to SIM808</td>
+</tr>
 <tr>
-<td> RST
-</td>
-<td> I
-</td>
-<td> Module rest
-</td>
-<td>
-</td></tr></table>
+<td>RST</td>
+<td>I</td>
+<td>Module rest</td>
+<td></td>
+</tr>
+</table>
 
 ###   Indicator LEDs
 
-<table >
+<table>
 <tr>
-<th scope="col"> **Indicator LEDs**
-</th>
-<th scope="col"> **Status**
-</th>
-<th scope="col"> **Behavior**
-</th></tr>
+<th scope="col">Indicator LEDs</th>
+<th scope="col">Status</th>
+<th scope="col">Behavior</th>
+</tr>
 <tr>
-<th scope="row"> Operating Status (Green)
-</th>
-<td> Off
-</td>
-<td> SIM808 is not running
-</td></tr>
+<td>Operating Status (Green)</td>
+<td>Off</td>
+<td>SIM808 is not running</td>
+</tr>
 <tr>
-<td>
-</td>
-<td> On
-</td>
-<td> SIM808 is running
-</td></tr>
+<td></td>
+<td>On</td>
+<td>SIM808 is running</td>
+</tr>
 <tr>
-<th scope="row"> Network Status (Red)
-</th>
-<td> Off
-</td>
-<td> SIM808 is not running
-</td></tr>
+<td>Network Status (Red)</td>
+<td>Off</td>
+<td>SIM808 is not running</td>
+</tr>
 <tr>
-<td>
-</td>
-<td> 64ms on/ 800ms Off
-</td>
-<td> SIM808 not registered to the network
-</td></tr>
+<td></td>
+<td>64ms on/ 800ms Off</td>
+<td>SIM808 not registered to the network</td>
+</tr>
 <tr>
-<td>
-</td>
-<td> 64ms On/ 3000ms Off
-</td>
-<td> SIM808 registered to the network
-</td></tr>
+<td></td>
+<td>64ms On/ 3000ms Off</td>
+<td>SIM808 registered to the network</td>
+</tr>
 <tr>
-<td>
-</td>
-<td> 64ms On/ 300ms Off
-</td>
-<td> PPP GPRS communication is established
-</td></tr></table>
+<td></td>
+<td>64ms On/ 300ms Off</td>
+<td>PPP GPRS communication is established</td>
+</tr>
+</table>
 
 ##   Usage  
 

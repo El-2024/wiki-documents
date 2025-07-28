@@ -23,7 +23,7 @@ We are running the machine learning model on our XIAO and feeding camera stream 
 ### Things needed
 
 - XIAO ESP32-Sense
-- <32GB MicroSD card
+- &lt;32GB MicroSD card
 - Type-C Cable
 - Arduino IDE
 - Edge Impulse Account
@@ -69,8 +69,7 @@ We now have a new fully XIAO ESP32S3 Sense-compatible powerful camera, the OV564
 - **Step 1.** Download and Install the stable version of Arduino IDE according to your operating system.
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong></a>
 </div>
 
 #### 1.1.2 Install XIAO-ESP32S3 Sense on Arduino
@@ -78,7 +77,7 @@ We now have a new fully XIAO ESP32S3 Sense-compatible powerful camera, the OV564
 - **Step 1.** Add ESP32 board package to your Arduino IDE.
 
   Navigate to **File > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
-  _<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json>_
+  *https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json*
 
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/6.png" style={{width:800, height:'auto'}}/></div>
 
@@ -526,7 +525,7 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
 #endif
 ```
 
-Make sure to replace the **"#include <XIAO_esp32S3_CatDog2_inferencing.h>"** with the library you generated. The upload the code and point to the Cat or Dog images or actual once, we can see the results Serial monitor.
+Make sure to replace the **`#include <XIAO_esp32S3_CatDog2_inferencing.h>`** with the library you generated. The upload the code and point to the Cat or Dog images or actual once, we can see the results Serial monitor.
 
 Congrats to you 🙌 on completing the tinyML image classification project.
 

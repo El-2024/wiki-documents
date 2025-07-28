@@ -27,8 +27,7 @@ prodimagename:
 Arduinoをサポートするすべてのボードでは、コードをアップロードしたり、ボードが正常に動作しているか確認したり、各種アプリケーションを有効にするためにArduino IDEが必要です。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDEをダウンロード</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDEをダウンロード</font></span></strong></a>
 </div>
 
 ### [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)
@@ -36,8 +35,7 @@ Arduinoをサポートするすべてのボードでは、コードをアップ�
 Arduinoライブラリのインストール方法についてのチュートリアルを提供しています。ほとんどのライブラリは[Github](https://github.com/Seeed-Studio)に保存されていることに注意してください。例えば、[CAN-BUS Shield V2](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)のように、製品がライブラリを必要とする場合にはArduinoライブラリを提供します。しかし、Grove - Buttonのような簡単な製品の場合、ライブラリを書く必要はありません。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>Arduinoライブラリのインストール方法</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>Arduinoライブラリのインストール方法</font></span></strong></a>
 </div>
 
 ### [コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)
@@ -45,8 +43,7 @@ Arduinoライブラリのインストール方法についてのチュートリ�
 コードのアップロード方法についての別のチュートリアルを提供しています：
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>コードのアップロード方法</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>コードのアップロード方法</font></span></strong></a>
 </div>
 
 ## Seeeduinoボード
@@ -54,15 +51,13 @@ Arduinoライブラリのインストール方法についてのチュートリ�
 ### [SeeedボードをArduino IDEに追加する方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/"><strong><span><font color={'FFFFFF'} size={"4"}>Seeedボードを追加</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/"><strong><span><font color={'FFFFFF'} size={"4"}>Seeedボードを追加</font></span></strong></a>
 </div>
 
 ### [Seeeduinoのドライバーをインストールする方法](https://wiki.seeedstudio.com/ja/Driver_for_Seeeduino)
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/Driver_for_Seeeduino"><strong><span><font color={'FFFFFF'} size={"4"}>Seeeduinoのドライバーをインストール</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/Driver_for_Seeeduino"><strong><span><font color={'FFFFFF'} size={"4"}>Seeeduinoのドライバーをインストール</font></span></strong></a>
 </div>
 
 ## その他のチュートリアル

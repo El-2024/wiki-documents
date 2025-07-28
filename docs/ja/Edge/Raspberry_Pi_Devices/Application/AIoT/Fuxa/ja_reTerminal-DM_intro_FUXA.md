@@ -89,7 +89,7 @@ sudo npm install -g --unsafe-perm @frangoteam/fuxa-min
 sudo fuxa
 
 ```
-FUXAのUIは以下のURLで利用可能です: **http://localhost:1881**。
+FUXAのUIは以下のURLで利用可能です: **http://localhost:1881**
 
 FUXAのWebサーバーは主に2つのページを提供します:
 

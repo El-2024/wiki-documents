@@ -242,9 +242,9 @@ while True:
     time.sleep(1)
 ```
 
-#### 2. Play the Song << He's a pirate >>
+#### 2. Play the Song "He's a pirate"
 
-```cpp
+```python
 import machine
 import time
 
@@ -404,7 +404,7 @@ while True:
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-MicroPy/C3-MicroPython8a.png" /></div>
 
 
-```cpp
+```python
 import network
 import urequests
 import utime as time

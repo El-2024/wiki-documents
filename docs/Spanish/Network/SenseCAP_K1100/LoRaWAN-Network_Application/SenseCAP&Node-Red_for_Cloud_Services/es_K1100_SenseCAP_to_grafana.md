@@ -25,16 +25,22 @@ Con el controlador SenseCAP [S2110](https://www.seeedstudio.com/SenseCAP-XIAO-Lo
 La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRaWAN®, batería incorporada de 19 Ah y el potente soporte desde la APP hacen del [SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device) la mejor opción para aplicaciones industriales. La serie incluye sensores para humedad del suelo, temperatura y humedad del aire, intensidad de luz, CO2, CE, y una estación meteorológica 8 en 1. Prueba el último SenseCAP S210x para tu próximo proyecto industrial exitoso.
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP Industrial Sensor</strong></font></td>
+  <tbody>
+    <tr>
+      <td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP Industrial Sensor</strong></font></td>
     </tr>
     <tr>
-      <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div>
+      <td bgcolor="#0e3c49">
+        <div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div>
       </td>
-      <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2101&S2103.png" /></a></div>
+      <td bgcolor="#0e3c49">
+        <div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2101&S2103.png" /></a></div>
       </td>
-      <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2102.png" /></a></div>
+      <td bgcolor="#0e3c49">
+        <div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2102.png" /></a></div>
       </td>
-      <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2101&S2103.png" /></a></div>
+      <td bgcolor="#0e3c49">
+        <div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2101&S2103.png" /></a></div>
       </td>
     </tr>
     <tr>
@@ -44,13 +50,17 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
       <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank"><strong>S2103 <br /> Air Temp &amp; Humidity &amp; CO2</strong></a></td>
     </tr>
     <tr>
-      <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2104-LoRaWAN-Soil-Temperature-and-Moisture-Sensor-p-5357.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2104-LoRaWAN-Soil-Temperature-and-Moisture-Sensor-p-5357.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2104.png" /></a></div>
+      <td bgcolor="#0e3c49">
+        <div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2104-LoRaWAN-Soil-Temperature-and-Moisture-Sensor-p-5357.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2104.png" /></a></div>
       </td>
-      <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2105.png" /></a></div>
+      <td bgcolor="#0e3c49">
+        <div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2105.png" /></a></div>
       </td>
-      <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2110.png" /></a></div>
+      <td bgcolor="#0e3c49">
+        <div align="center"><a href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2110.png" /></a></div>
       </td>
-      <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2120.png" /></a></div>
+      <td bgcolor="#0e3c49">
+        <div align="center"><a href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2120.png" /></a></div>
       </td>
     </tr>
     <tr>
@@ -81,7 +91,7 @@ Antes de comenzar, por favor prepara lo siguiente:
 
 **Paso 1.** Iniciar Node-RED
 
-Inicia Node-RED escribiendo el comando `node-red` en la terminal y abre un navegador ingresando la dirección **<http://localhost:1880>** en la barra de direcciones para acceder al editor de Node-RED.
+Inicia Node-RED escribiendo el comando `node-red` en la terminal y abre un navegador ingresando la dirección **`http://localhost:1880`** en la barra de direcciones para acceder al editor de Node-RED.
 
 **Paso 2.** Crear Nodo MQTT
 
@@ -169,7 +179,7 @@ Por favor, toma nota del **Nombre de la Organización** que definas aquí, ya qu
 Por defecto, InfluxDB usa el puerto TCP `8086` para la comunicación cliente-servidor mediante la API HTTP.
 
 ```
-http://localhost:8086/
+http://localhost:8086
 ```
 
 Para esta sección, la URL de InfluxDB es la anterior. Por favor, anótala, ya que la necesitaremos más adelante en la configuración de Node-RED.
@@ -201,7 +211,7 @@ Agrega un nodo **influx.batch** desde la barra lateral izquierda (sección *stor
 **Paso 2.** Editar el nodo **influx.batch**:
 
 - **Versión**: 2.0  
-- **URL**: <http://localhost:8086/>  
+- **URL**: `http://localhost:8086`  
 - **TOKEN**: El token que generaste en la sección **Obtener el Token de API**
 
 Una vez que hayas terminado, haz clic en el botón **Add** (Agregar) en la esquina superior derecha para volver a la página de propiedades del nodo **influx.batch**. En este punto, por favor completa con el **Nombre de tu Organización** y el **Nombre del Bucket**.
@@ -350,7 +360,7 @@ Luego, completa lo siguiente:
 
 - **Query Language (Lenguaje de Consulta)**: Flux  
 - En la sección **HTTP**, escribe:
-  - **URL**: <http://localhost:8086/>
+  - **URL**: `http://localhost:8086/`
 - En la sección **Auth**, haz lo siguiente:
   - Desactiva **Basic auth**.
 - En la sección **InfluxDB Details**, completa:

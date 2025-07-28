@@ -122,7 +122,7 @@ print(tr.__version__)
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SecurityCheck/Security_Scan_11.png" /></div>
 
->注意：Raspberry Pi 4 的 PyTorch 安装包可以在 <https://github.com/Qengineering/PyTorch-Raspberry-Pi-64-OS> 找到。
+>注意：Raspberry Pi 4 的 PyTorch 安装包可以在 https://github.com/Qengineering/PyTorch-Raspberry-Pi-64-OS 找到。
 
 **Tritonclient**
 

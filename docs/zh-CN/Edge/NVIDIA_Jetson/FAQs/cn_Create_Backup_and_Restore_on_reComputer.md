@@ -27,7 +27,7 @@ reComputer 是一个强大且紧凑的智能边缘设备，能够为边缘计算
 我们的测试平台是 reComputer J3011，JetPack 5.1.3 提供参考。
 :::
 
-## 前提条件
+## 前提条件 {#Recovery}
 - Ubuntu 主机电脑
 - USB Type-C 数据传输线
 - reComputer J3011（运行 JetPack 5.1.3 操作系统）
@@ -37,7 +37,6 @@ reComputer 是一个强大且紧凑的智能边缘设备，能够为边缘计算
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer_backup/jtop.png"/></div>
 如上图所示，我们安装了 jtop 软件，可以直接在终端中使用这些命令。
-<a id="Recovery"></a>
 :::
 
 ## 系统备份

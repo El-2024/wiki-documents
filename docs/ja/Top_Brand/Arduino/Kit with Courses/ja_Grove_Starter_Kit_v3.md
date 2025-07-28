@@ -313,13 +313,7 @@ Grove – Servoには異なる目的のための取り付けハードウェア�
 
 **材料リスト**
 
-<dl><dd>1. Arduino x 1;
-</dd><dd>2. Grove – Base Shield x 1;
-</dd><dd>3. Grove – LED x 6;
-</dd><dd>4. Grove – Touch Sensor x 1;
-</dd><dd>5. 6 x 6cmカラーペーパー x 6;
-</dd><dd>6. 9Vバッテリー & 9Vバッテリークリップ x 1。
-</dd></dl>
+<dl><dd>1. Arduino x 1;</dd><dd>2. Grove – Base Shield x 1;</dd><dd>3. Grove – LED x 6;</dd><dd>4. Grove – Touch Sensor x 1;</dd><dd>5. 6 x 6cmカラーペーパー x 6;</dd><dd>6. 9Vバッテリー & 9Vバッテリークリップ x 1。</dd></dl>
 
 :::note
     LEDの数は任意です。基本キットには3つが含まれています。しかし、カップの容量に応じて増減できます。ここでは大きなカップを使用しているため、ウェブサイトからさらに3つ追加しました。
@@ -398,14 +392,7 @@ void loop()
 友達にどのように挨拶しますか？Big Chiefは「握手より良いものは何か？」と言うでしょう。これらのBig Chiefペーパートイの1つが他のものに背中を寄りかからせると、挨拶するために振動します！
 **材料リスト**
 
-<dl><dd>1. Arduini x 1;
-</dd><dd>2. Grove – Base Shield x 1;
-</dd><dd>3. Grove – Magnetic Switch x 1;
-</dd><dd>4. Grove – Vibrator x 1;
-</dd><dd>5. Paper toys x 2;
-</dd><dd>6. Magnet x 1;
-</dd><dd>7. 9Vバッテリー & 9Vバッテリークリップ x 1。
-</dd></dl>
+<dl><dd>1. Arduini x 1;</dd><dd>2. Grove – Base Shield x 1;</dd><dd>3. Grove – Magnetic Switch x 1;</dd><dd>4. Grove – Vibrator x 1;</dd><dd>5. Paper toys x 2;</dd><dd>6. Magnet x 1;</dd><dd>7. 9Vバッテリー & 9Vバッテリークリップ x 1。</dd></dl>
 
 **注：** LEDの数は任意です。基本キットには3つが含まれています。しかし、カップの容量に応じて増減できます。ここでは大きなカップを使用しているため、ウェブサイトからさらに3つ追加しました。
 

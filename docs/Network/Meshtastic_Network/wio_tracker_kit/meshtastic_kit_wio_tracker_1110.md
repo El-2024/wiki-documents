@@ -38,7 +38,8 @@ Featuring a Wio Tracker 1110 Dev Board (based on Nordic nRF52840 for BLE, Semtec
 
 ### Specification
 
-<table><tr><th colspan="3"><b>General</b></th></tr>
+<table>
+<tr><th colspan="3"><b>General</b></th></tr>
 <tr><td colspan="1" rowspan="2"><b>Voltage - supply</b></td><td colspan="2">5V (USB 2.0 Type-C)</td></tr>
 <tr><td colspan="1">Battery Connector</td><td colspan="1">3.7V</td></tr>
 <tr><td colspan="1" rowspan="3"><b>Interface</b></td><td colspan="1">RFIO</td><td colspan="1"><p>GNSS Antenna Connector* 1</p><p>LoRa Antenna Connector* 1</p></td></tr>
@@ -49,11 +50,11 @@ Featuring a Wio Tracker 1110 Dev Board (based on Nordic nRF52840 for BLE, Semtec
 <tr><td colspan="1"><b>Exterior FLASH Memory</b></td><td colspan="2">4M</td></tr>
 <tr><td colspan="3"><b>LoRa® and Positioning (Semtech LR1110)</b></td></tr>
 <tr><td colspan="1"><b>LoRaWAN® Protocol</b></td><td colspan="2">V1.0.4</td></tr>
-<tr><td colspan="1"><b>Frequency Plan</b></td><td colspan="2">863~928MHz</td></tr>
+<tr><td colspan="1"><b>Frequency Plan</b></td><td colspan="2">863&#126;928MHz</td></tr>
 <tr><td colspan="1"><b>Sensitivity</b></td><td colspan="2"><p>-125dBm @125K/SF7</p><p>-141dBm @125K/SF12</p></td></tr>
 <tr><td colspan="1"><b>Output Power</b></td><td colspan="2">20dBm max @LoRa®</td></tr>
 <tr><td colspan="1"><b>Positioning Technology</b></td><td colspan="2">GNSS(GPS/BeiDou), WiFi Sniffer</td></tr>
-<tr><td colspan="1"><b>Range</b></td><td colspan="2">2~10km (Depends on antenna and environment)</td></tr>
+<tr><td colspan="1"><b>Range</b></td><td colspan="2">2&#126;10km (Depends on antenna and environment)</td></tr>
 <tr><td colspan="3"><b>Bluetooth(Nordic nRF52840)</b></td></tr>
 <tr><td colspan="1"><b>Bluetooth</b></td><td colspan="2">Bluetooth 5.3</td></tr>
 <tr><td colspan="1"><b>Flash</b></td><td colspan="2">1MB</td></tr>
@@ -62,12 +63,12 @@ Featuring a Wio Tracker 1110 Dev Board (based on Nordic nRF52840 for BLE, Semtec
 <tr><td colspan="1"><b>Output Power</b></td><td colspan="2">6dBm max @Bluetooth</td></tr>
 <tr><td colspan="3"><b>Onboard Sensors -- TH Sensor (SHT41)</b></td></tr>
 <tr><td colspan="1"></td><td colspan="1"><b>Range</b></td><td colspan="1"><b>Accuracy</b></td></tr>
-<tr><td colspan="1"><b>Temperature</b></td><td colspan="1">-40~85°C</td><td colspan="1">± 0.2°C</td></tr>
-<tr><td colspan="1"><b>Humidity</b></td><td colspan="1">0~100%RH</td><td colspan="1">±1.8%RH</td></tr>
+<tr><td colspan="1"><b>Temperature</b></td><td colspan="1">-40&#126;85°C</td><td colspan="1">± 0.2°C</td></tr>
+<tr><td colspan="1"><b>Humidity</b></td><td colspan="1">0&#126;100%RH</td><td colspan="1">±1.8%RH</td></tr>
 <tr><td colspan="3"><b>Onboard Sensors -- 3-Axis Accelerometer( Not used )</b></td></tr>
 <tr><td colspan="1"><b>Range</b></td><td colspan="2">±2g, 4g, 8g, 16g</td></tr>
-<tr><td colspan="1"><b>Bandwidth</b></td><td colspan="2">0\.5Hz ~ 625Hz</td></tr>
-<tr><td colspan="1"><b>Sensitivity (LSB/g)</b></td><td colspan="2">1000 (±2g) ~ 83 (±16g)</td></tr>
+<tr><td colspan="1"><b>Bandwidth</b></td><td colspan="2">0\.5Hz &#126; 625Hz</td></tr>
+<tr><td colspan="1"><b>Sensitivity (LSB/g)</b></td><td colspan="2">1000 (±2g) &#126; 83 (±16g)</td></tr>
 </table>
 
 
@@ -83,7 +84,7 @@ Featuring a Wio Tracker 1110 Dev Board (based on Nordic nRF52840 for BLE, Semtec
 |**Active Area**|21\.74(W)×11.175 (H) mm|
 |**Dot Pitch**|0\.17(W)×0.175 (H) mm|
 |**Dot Size**|0\.15(W)×0.15 (H) mm|
-|**Wide range of operating temperature**|-20~70 ℃|
+|**Wide range of operating temperature**|-20&#126;70 ℃|
 
 
 ## Get Started

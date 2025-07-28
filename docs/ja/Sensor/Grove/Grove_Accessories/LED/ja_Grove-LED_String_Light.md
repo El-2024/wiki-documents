@@ -38,10 +38,10 @@ Grove - LED String Light モジュールは、パックに含まれる LED ス�
 <!-- ![](https://files.seeedstudio.com/wiki/Grove-LED_String_Light/img/LED_String_Light.jpg) -->
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-LED_String_Light/img/LED_String_Light.jpg" alt="pir" width={600} height="auto" /></p>
 
-<dl><dt>① JST 2.0 インターフェース: LED ストリングライトに接続するために使用
-
-</dt><dt>② Grove インターフェース: SIG (ピン 1) が HIGH の場合、LED ストリングライトが点灯し、LOW の場合は消灯
-</dt></dl>
+<dl>
+<dt>① JST 2.0 インターフェース: LED ストリングライトに接続するために使用</dt>
+<dt>② Grove インターフェース: SIG (ピン 1) が HIGH の場合、LED ストリングライトが点灯し、LOW の場合は消灯</dt>
+</dl>
 
 ## 使用方法
 ---

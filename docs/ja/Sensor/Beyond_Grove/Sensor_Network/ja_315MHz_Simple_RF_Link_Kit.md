@@ -35,104 +35,22 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### 送信モジュール
 
-<table  cellspacing="0" width="80%">
-<tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 最小値
-</th>
-<th scope="col"> 標準値
-</th>
-<th scope="col"> 最大値
-</th>
-<th scope="col"> 単位
-</th></tr>
-<tr>
-<th scope="row"> 動作電圧
-</th>
-<td> 3.0
-</td>
-<td> 5.0
-</td>
-<td> 12.0
-</td>
-<td> VDC
-</td></tr>
-<tr>
-<th scope="row"> 電流
-</th>
-<td> 3
-</td>
-<td> /
-</td>
-<td> 10
-</td>
-<td> mA
-</td></tr>
-<tr>
-<th scope="row"> 動作モード
-</th>
-<td colspan="3"> ASK
-</td>
-<td> /
-</td></tr>
-<tr>
-<th scope="row"> 最大送信出力
-</th>
-<td colspan="3"> 15
-</td>
-<td> mW
-</td></tr>
-<tr>
-<th scope="row"> 動作距離
-</th>
-<td> 40
-</td>
-<td> /
-</td>
-<td> 100
-</td>
-<td> m
-</td></tr></table>
+| 項目 | 最小値 | 標準値 | 最大値 | 単位 |
+|------|--------|--------|--------|------|
+| 動作電圧 | 3.0 | 5.0 | 12.0 | VDC |
+| 電流 | 3 | / | 10 | mA |
+| 動作モード | ASK | | | / |
+| 最大送信出力 | 15 | | | mW |
+| 動作距離 | 40 | / | 100 | m |
 
 ### 受信モジュール
 
-<table  cellspacing="0" width="80%">
-<tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 標準値
-</th>
-<th scope="col"> 単位
-</th></tr>
-<tr>
-<th scope="row"> 動作電圧
-</th>
-<td> 5
-</td>
-<td> VDC
-</td></tr>
-<tr>
-<th scope="row"> 待機電流
-</th>
-<td> 5
-</td>
-<td> mA
-</td></tr>
-<tr>
-<th scope="row"> 受信感度
-</th>
-<td> -103
-</td>
-<td> dBm
-</td></tr>
-<tr>
-<th scope="row"> 動作周波数
-</th>
-<td> 315
-</td>
-<td> MHz
-</td></tr></table>
+| 項目 | 標準値 | 単位 |
+|------|--------|------|
+| 動作電圧 | 5 | VDC |
+| 待機電流 | 5 | mA |
+| 受信感度 | -103 | dBm |
+| 動作周波数 | 315 | MHz |
 
 ## 応用例
 
@@ -229,21 +147,9 @@ void loop()
 
 ## バージョントラッカー
 
-<table>
-<tr>
-<th> リビジョン
-</th>
-<th> 説明
-</th>
-<th> リリース日
-</th></tr>
-<tr>
-<td width="300px"> v0.9b
-</td>
-<td width="500px"> 初回公開リリース
-</td>
-<td width="200px"> 2011年10月3日
-</td></tr></table>
+| リビジョン | 説明 | リリース日 |
+|------------|------|------------|
+| v0.9b | 初回公開リリース | 2011年10月3日 |
 
 ## リソース
 

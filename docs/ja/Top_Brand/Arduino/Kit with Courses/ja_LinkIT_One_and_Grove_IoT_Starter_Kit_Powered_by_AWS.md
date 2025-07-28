@@ -208,7 +208,7 @@ File&gt;Sketchbook&gt;aws_paho_shadow をクリックしてコードを開きま
 
 * [Grove - Touch Sensor](/Grove-Touch_Sensor) を D6 に接続します。
 
-* [Grove - LED Bar](Grove-LED_Bar) を D2 に接続します。
+* [Grove - LED Bar](/ja/Grove-LED_Bar) を D2 に接続します。
 
 ### コードをアップロードする
 

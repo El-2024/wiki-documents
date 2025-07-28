@@ -32,13 +32,14 @@ You can discover this page with two large portions.
 
 <div class="all_container">
   <div class="top_nev_title">
-    <span>SenseCAP Sensors & Probes<br/> <font color={'FFFFFF'} size={"3"}>SenseCAP sensors and probes offer multiple ambient data sensing, with industrial hardware design.</font> </span>
+    <span>SenseCAP Sensors & Probes<br/> <font color={'FFFFFF'} size={"3"}>SenseCAP sensors and probes offer multiple ambient data sensing, with industrial hardware design.</font></span>
   </div>
 </div>
 
 <div class="all_container">
   <div class="sensecap_sensing_network">
-    <span>SenseCAP LoRaWAN Sensors 
+    <span>
+    SenseCAP LoRaWAN Sensors
     <br/>
     <a href="Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor" target="_blank" text-decoration= {"none"}><span><font color={'8DC21F'} size={"3"}> Wiki PDF Download ⏬</font></span></a>
     <br/> <font color={'FFFFFF'} size={"2"}>SenseCAP S2101 - Temperature and Humidity</font> 
@@ -63,7 +64,8 @@ You can discover this page with two large portions.
      <img width="500" src="https://files.seeedstudio.com/wiki/New_Wiki_Platform/example/showcase2.png" alt="your-image-description" />
   </div>
   <div class="sensecap_sensing_network">
-    <span>SenseCAP Multi-in-one Sensors 
+    <span>
+    SenseCAP Multi-in-one Sensors 
     <br/>
     <a href="Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor" target="_blank" text-decoration= {"none"}><span><font color={'8DC21F'} size={"3"}> Wiki PDF Download ⏬</font></span></a>
     <br/> <font color={'FFFFFF'} size={"2"}>SenseCAP ORCH S4 - 4-in-1 weather sensor </font> 
@@ -82,7 +84,8 @@ You can discover this page with two large portions.
 
 <div class="all_container">
   <div class="sensecap_sensing_network">
-    <span>SenseCAP Sensor Probes
+    <span>
+    SenseCAP Sensor Probes
     <br/> <font color={'FFFFFF'} size={"2"}>Liquid Level Detecting </font> 
     <a href="Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor" target="_blank"><span><font color={'8DC21F'} size={"2"}> -> Wiki Website </font></span></a> 
     <a href="Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor" target="_blank"><span><font color={'8DC21F'} size={"2"}> -> Get One Now</font></span></a> 
@@ -113,7 +116,8 @@ You can discover this page with two large portions.
      <img width="500" src="https://files.seeedstudio.com/wiki/New_Wiki_Platform/example/showcase2.png" alt="your-image-description" />
   </div>
   <div class="sensecap_sensing_network">
-    <span>SenseCAP Sensor Probes
+    <span>
+    SenseCAP Sensor Probes
     <br/>
     <div class="test_text2">pH Meter for Soil Conditions and Water Quality</div>
     <a class="test_text" href="#" target="_blank">1g1</a>
@@ -138,7 +142,8 @@ You can discover this page with two large portions.
      <img width="500" src="https://files.seeedstudio.com/wiki/New_Wiki_Platform/example/showcase2.png" alt="your-image-description" />
   </div>
   <div class="sensecap_sensing_network">
-    <span>SenseCAP Sensor Probes
+    <span>
+    SenseCAP Sensor Probes
     <br/>
     <div class="test_text2">pH Meter for Soil Conditions and Water Quality</div>
     <a class="test_text" href="#" target="_blank">1g1</a>
@@ -186,7 +191,8 @@ You can discover this page with two large portions.
 
 <div class="all_container">
   <div class="sensecap_sensing_network">
-    <span>SenseCAP LoRaWAN Sensors 
+    <span>
+    SenseCAP LoRaWAN Sensors 
     <br/> <font color={'FFFFFF'} size={"2"}>SenseCAP S2101 - Temperature and Humidity</font> 
     <a href="Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Get One Now</font></span></a> 
     <a href="Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Wiki Page</font></span></a> 

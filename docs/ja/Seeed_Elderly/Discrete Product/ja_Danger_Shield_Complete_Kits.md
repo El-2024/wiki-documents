@@ -24,19 +24,16 @@ Danger Shield は Arduino マイクロコントローラーボード用のアド
 
 <table>
 <tr>
-<th> リビジョン
-</th>
-<th> 説明
-</th>
-<th> リリース日
-</th></tr>
+<th> リビジョン</th>
+<th> 説明</th>
+<th> リリース日</th>
+</tr>
 <tr>
-<td width="300px"> v1.0
-</td>
-<td width="500px"> 初回公開リリース
-</td>
-<td width="200px"> 2008年10月4日
-</td></tr></table>
+<td width="300px"> v1.0</td>
+<td width="500px"> 初回公開リリース</td>
+<td width="200px"> 2008年10月4日</td>
+</tr>
+</table>
 
 ## 特徴
 ---
@@ -72,117 +69,86 @@ Danger Shield は Arduino マイクロコントローラーボード用のアド
 
 <table>
 <tr>
-<th>ID
-</th>
-<th>アイテム
-</th>
-<th>数量/タイプ
-</th></tr>
+<th>ID</th>
+<th>アイテム</th>
+<th>数量/タイプ</th>
+</tr>
 <tr>
-<td width="300"> -
-</td>
-<td width="300"> Danger Shield v1.0 PCB
-</td>
-<td width="300"> 1 基板
-</td></tr>
+<td width="300"> -</td>
+<td width="300"> Danger Shield v1.0 PCB</td>
+<td width="300"> 1 基板</td>
+</tr>
 <tr>
-<td> DIS1
-</td>
-<td> 7セグメントLED、緑色、0.3インチ
-</td>
-<td> 1 コンポーネント
-</td></tr>
+<td> DIS1</td>
+<td> 7セグメントLED、緑色、0.3インチ</td>
+<td> 1 コンポーネント</td>
+</tr>
 <tr>
-<td>IC1
-</td>
-<td>74HC595N
-</td>
-<td>1 コンポーネント
-</td></tr>
+<td>IC1</td>
+<td>74HC595N</td>
+<td>1 コンポーネント</td>
+</tr>
 <tr>
-<td>JP1
-</td>
-<td>100 ブレークアウェイヘッダー
-</td>
-<td>5 コンポーネント
-</td></tr>
+<td>JP1</td>
+<td>100 ブレークアウェイヘッダー</td>
+<td>5 コンポーネント</td>
+</tr>
 <tr>
-<td>LED1-3
-</td>
-<td>5mm 緑色LED
-</td>
-<td>3 コンポーネント
-</td></tr>
+<td>LED1-3</td>
+<td>5mm 緑色LED</td>
+<td>3 コンポーネント</td>
+</tr>
 <tr>
-<td>R1-R3, R7
-</td>
-<td>10K オーム抵抗
-</td>
-<td>4 コンポーネント
-</td></tr>
+<td>R1-R3, R7</td>
+<td>10K オーム抵抗</td>
+<td>4 コンポーネント</td>
+</tr>
 <tr>
-<td>R4, R5, R9-R11, R19
-</td>
-<td>560 オーム抵抗
-</td>
-<td>6 コンポーネント
-</td></tr>
+<td>R4, R5, R9-R11, R19</td>
+<td>560 オーム抵抗</td>
+<td>6 コンポーネント</td>
+</tr>
 <tr>
-<td>R6, R12-R18
-</td>
-<td>680 オーム抵抗
-</td>
-<td>8 コンポーネント
-</td></tr>
+<td>R6, R12-R18</td>
+<td>680 オーム抵抗</td>
+<td>8 コンポーネント</td>
+</tr>
 <tr>
-<td>R8
-</td>
-<td>1M オーム抵抗
-</td>
-<td>1 コンポーネント
-</td></tr>
+<td>R8</td>
+<td>1M オーム抵抗</td>
+<td>1 コンポーネント</td>
+</tr>
 <tr>
-<td>S1-S4
-</td>
-<td>Omron B3F-1000 ボタン
-</td>
-<td>4 コンポーネント
-</td></tr>
+<td>S1-S4</td>
+<td>Omron B3F-1000 ボタン</td>
+<td>4 コンポーネント</td>
+</tr>
 <tr>
-<td>SG1, SG2
-</td>
-<td>12mm ピエゾブザー
-</td>
-<td>2 コンポーネント
-</td></tr>
+<td>SG1, SG2</td>
+<td>12mm ピエゾブザー</td>
+<td>2 コンポーネント</td>
+</tr>
 <tr>
-<td>SLIDER1-3
-</td>
-<td>Bourns PTL60 緑色
-</td>
-<td>3 コンポーネント
-</td></tr>
+<td>SLIDER1-3</td>
+<td>Bourns PTL60 緑色</td>
+<td>3 コンポーネント</td>
+</tr>
 <tr>
-<td>IC2
-</td>
-<td>LM35DZ
-</td>
-<td>1 コンポーネント
-</td></tr>
+<td>IC2</td>
+<td>LM35DZ</td>
+<td>1 コンポーネント</td>
+</tr>
 <tr>
-<td>R20
-</td>
-<td>LDR
-</td>
-<td>1 コンポーネント
-</td></tr>
+<td>R20</td>
+<td>LDR</td>
+<td>1 コンポーネント</td>
+</tr>
 <tr>
-<td>JP2
-</td>
-<td>100 ブレークアウェイヘッダー
-</td>
-<td>40 コンポーネント
-</td></tr></table>
+<td>JP2</td>
+<td>100 ブレークアウェイヘッダー</td>
+<td>40 コンポーネント</td>
+</tr>
+</table>
 
 
 

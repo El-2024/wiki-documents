@@ -59,7 +59,7 @@ This is the theoretical basis for XIAO's ability to obtain a position without th
 
 To successfully complete this project, you may need to use the following hardware. Any of the XIAO ESP32s are supported.
 
-<div class="table-center">
+<div style={{textAlign:'center'}}>
   <table align="center">
     <tr>
         <th>Seeed Studio XIAO ESP32S3</th>
@@ -71,22 +71,28 @@ To successfully complete this project, you may need to use the following hardwar
         <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3sense.jpg" style={{width:250, height:'auto'}}/></div></td>
         <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/rounddisplay.jpg" style={{width:250, height:'auto'}}/></div></td>
     </tr>
-      <tr>
-        <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html">
+    <tr>
+        <td>
+          <div style={{textAlign:'center'}}>
+            <a href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-          </a>
-      </div></td>
-        <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
+            </a>
+          </div>
+        </td>
+        <td>
+          <div style={{textAlign:'center'}}>
+            <a href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-          </a>
-      </div></td>
-      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-Round-Display-for-XIAO-p-5638.html">
+            </a>
+          </div>
+        </td>
+        <td>
+          <div style={{textAlign:'center'}}>
+            <a href="https://www.seeedstudio.com/Seeed-Studio-Round-Display-for-XIAO-p-5638.html">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-          </a>
-      </div></td>
+            </a>
+          </div>
+        </td>
     </tr>
   </table>
 </div>
@@ -265,7 +271,7 @@ Before we begin, I think it is important for you to understand the [pricing of t
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/12.png" style={{width:800, height:'auto'}}/></div>
 
-If you are a first time registered user, you will have **$300** free credit. Here we are using mainly the Maps Static API, which costs **$2.00 per 1000** calls.
+If you are a first time registered user, you will have **\$300** free credit. Here we are using mainly the Maps Static API, which costs **\$2.00 per 1000** calls.
 
 ### Step 4. [Set up your Google Cloud project](https://developers.google.com/maps/documentation/elevation/cloud-setup) and complete the setup instructions that follow
 
@@ -312,7 +318,7 @@ https://maps.googleapis.com/maps/api/staticmap?parameters
 
 The Maps Static API defines map images using the following URL parameters:
 
-- `center` (required if markers not present) defines the center of the map, equidistant from all edges of the map. This parameter takes a location as either a comma-separated {latitude,longitude} pair (e.g. "40.714728,-73.998672") or a string address (e.g. "city hall, new york, ny") identifying a unique location on the face of the earth.
+- `center` (required if markers not present) defines the center of the map, equidistant from all edges of the map. This parameter takes a location as either a comma-separated `{latitude,longitude}` pair (e.g. "40.714728,-73.998672") or a string address (e.g. "city hall, new york, ny") identifying a unique location on the face of the earth.
 - `zoom` (required if markers not present) defines the zoom level of the map, which determines the magnification level of the map. This parameter takes a numerical value corresponding to the zoom level of the region desired.
 - `size` (required) defines the rectangular dimensions of the map image. This parameter takes a string of the form `{horizontal_value}x{vertical_value}`.
 - `maptype` (optional) defines the type of map to construct. There are several possible maptype values, including roadmap, satellite, hybrid, and terrain.

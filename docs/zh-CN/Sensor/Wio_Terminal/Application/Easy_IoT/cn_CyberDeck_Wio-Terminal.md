@@ -18,7 +18,7 @@ last_update:
 Click here to see the [English Version](/CyberDeck_Wio-Terminal)
 :::
 
-## <span id="jump1"> 项目概述 </span>
+## 项目概述 {#jump1}
 
 创建一个赛博朋克风格的 PC 监控系统，使用 Wio Terminal 作为显示终端，实时监控电脑的各种性能指标。
 
@@ -250,7 +250,7 @@ void loop() {
 
 ---
 
-## <span id="jump2"> Cursor AI 开发教程 —— 基于 Wio Terminal PC 监控项目 </span>
+## Cursor AI 开发教程 —— 基于 Wio Terminal PC 监控项目 {#jump2}
 
 ## 1. Cursor AI 基础
 

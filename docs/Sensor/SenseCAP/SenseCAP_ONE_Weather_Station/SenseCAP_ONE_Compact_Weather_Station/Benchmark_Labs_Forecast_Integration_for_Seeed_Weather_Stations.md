@@ -15,8 +15,8 @@ This guide explains how to purchase and activate Benchmark Labs’ hyper-local p
 
 ## Step 1: Visit the Benchmark Labs Landing Page
 
-Begin by visiting the [Benchmark Labs Landing Page](https://www.benchmarklabs.com/seeed-landing/) on our website at <https://www.benchmarklabs.com/seeed-landing/>
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image59.png"/></div>
+Begin by visiting the [Benchmark Labs Landing Page](https://www.benchmarklabs.com/seeed-landing/) on our website at &lt;https://www.benchmarklabs.com/seeed-landing/&gt;
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image59.png" /></div>
 
 *Image 1: Benchmark Labs landing page*
 
@@ -62,7 +62,7 @@ After selecting your service, you’ll be directed to a secure Stripe payment pa
 
 After payment, you will be directed to a short form to complete your account setup.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image60.png"/></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image60.png" /></div>
 
 *Image 2: Account Set Up Flow*
 
@@ -93,7 +93,7 @@ After your setup is processed, you will receive an email with your dashboard log
 -   Data populated with IBM and Benchmark Labs forecasting models
 -   Access to real-time and historical environmental data
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image61.png"/></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image61.png" /></div>
 
 ## You're Ready to Go
 

@@ -88,40 +88,32 @@ SeeeduinoはArduino互換のボードです。その設計はDiecimilaスキー�
 
 <table cellPadding={5} cellSpacing={0}>
   <tbody><tr>
-      <td width={300}> **リビジョン**
-      </td>
-      <td width={500}> **説明**
-      </td>
-      <td width={200}> **リリース日**
-      </td></tr>
+      <td width={300}> **リビジョン** </td>
+      <td width={500}> **説明** </td>
+      <td width={200}> **リリース日** </td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino V0.9
-      </td>
-      <td> 初回公開リリース
-      </td>
-      <td>
-      </td></tr>
+      <td> Seeeduino V0.9 </td>
+      <td> 初回公開リリース </td>
+      <td> </td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino V1.1
-      </td>
-      <td> -
-      </td>
-      <td>
-      </td></tr>
+      <td> Seeeduino V1.1 </td>
+      <td> - </td>
+      <td> </td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino V2.12
-      </td>
-      <td> -
-      </td>
-      <td>
-      </td></tr>
+      <td> Seeeduino V2.12 </td>
+      <td> - </td>
+      <td> </td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino V2.2
-      </td>
-      <td> -
-      </td>
-      <td>
-      </td></tr></tbody></table>
+      <td> Seeeduino V2.2 </td>
+      <td> - </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
 ## バグトラッカー  
 

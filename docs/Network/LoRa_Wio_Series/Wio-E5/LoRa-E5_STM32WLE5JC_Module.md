@@ -16,9 +16,8 @@ last_update:
 
 <!-- [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html) -->
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
+<div style={{textAlign: 'center'}}>
+    <a href="https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
 </div>
 
 > LoRaWAN® is a mark used under license from the LoRa Alliance®.
@@ -29,7 +28,7 @@ The LoRa® Mark is a trademark of Semtech Corporation or its subsidiaries.
 <iframe width={560} height={315} src="https://www.youtube.com/embed/XIksiHEXT3A?si=UNm6zmbeUVhgfWh4" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
 :::note
-We has recently released the Wio-E5 Series based on Wio-E5 module. Click [here](https://www.seeedstudio.com/lora-c-755.html?product_list_stock=3) to meet new members of the Wio-E5 family from the [Grove module](https://wiki.seeedstudio.com/Grove_LoRa_E5_New_Version/), [mini Dev boards](https://wiki.seeedstudio.com/LoRa_E5_mini/) to [Development Kit](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/). To learn more on creating a LoRaWAN End Node with STM32Cube MCU Package for STM32WL series(SDK), to join and to send data to LoRaWAN Network, read more on wiki pages for [mini Dev boards](https://wiki.seeedstudio.com/LoRa_E5_mini/) and [Development Kit](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/).
+We have recently released the Wio-E5 Series based on Wio-E5 module. Click [here](https://www.seeedstudio.com/lora-c-755.html?product_list_stock=3) to meet new members of the Wio-E5 family from the [Grove module](https://wiki.seeedstudio.com/Grove_LoRa_E5_New_Version/), [mini Dev boards](https://wiki.seeedstudio.com/LoRa_E5_mini/) to [Development Kit](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/). To learn more on creating a LoRaWAN End Node with STM32Cube MCU Package for STM32WL series(SDK), to join and to send data to LoRaWAN Network, read more on wiki pages for [mini Dev boards](https://wiki.seeedstudio.com/LoRa_E5_mini/) and [Development Kit](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/).
 :::
 
 Wio-E5 is a low-cost, ultra-low power, extremely compact, and high-performance LoRaWAN® Module designed by Seeed Technology Co., Ltd. **It contains ST system-level package chip STM32WLE5JC, which is the world first SoC integrated with the combo of LoRa® RF and MCU chip.** This module is also embedded with ARM Cortex M4 ultra-low-power MCU and LoRa® SX126X, and therefore supports (G)FSK mode and LoRa®. 62.5kHz, 125kHz, 250kHz, and 500kHz bandwidth can be used in LoRa® mode, making it suitable for the design of various IoT nodes, supporting EU868 and US915.
@@ -79,9 +78,11 @@ Wio-E5 series has a built-in AT command firmware, which supports LoRaWAN® Class
 The AT command firmware contains a bootloader for DFU and the AT application. The "PB13/SPI_SCK/BOOT" pin is used to control Wio-E5 to stay in the bootloader or jump to the AT application. When PB13 is HIGH, the module will jump to AT application after reset, with a default baud rate of 9600. When PB13 is LOW (press the "Boot" button on Wio-E5 mini/ Wio-E5 Development Kit), the module will stay in the bootloader, and keep transmitting "C" character every 1S at baud rate 115200.
 
 :::note
+
 * Factory AT Firmware is programmed with RDP(Read Protection) Level 1, developers need to remove RDP first with STM32Cube Programmer. Note that regression RDP to level 0 will cause a flash memory mass to erase and the Factory AT Firmware can't be restored again.
 
 * The "PB13/SPI_SCK/BOOT" pin on the Wio-E5 module is just a normal GPIO, not the "BOOT0" pin of the MCU. This "PB13/SPI_SCK/BOOT" pin is used in the bootloader of the Factory AT firmware, to decide to jump to APP or stay in bootloader(for DFU). The real "BOOT0" pin doesn't pinout to the module, so users need to be careful when developing the low-power applications.
+
 :::
 
 **2. Clock Configuration**
@@ -520,7 +521,7 @@ Hardware:
 |DBG4|PB10|PB4|
 |USART|USART2(PA2/PA3)|USART1: PB6=TX , PB7=RX|
 
-### Applications 
+### Applications
 
 Now we will explore several applications for Wio-E5 mini/ Wio-E5 Development Kit with STM32Cube MCU Package for STM32WL series(SDK).
 
@@ -536,6 +537,14 @@ This application will connect Wio-E5 mini/ Wio-E5 Development Kit with TTN (The 
 * **Step 2.** Extract the ZIP file and navigate to `Wio-E5-Node > Projects > Applications > LoRaWAN > LoRaWAN_End_Node > STM32CubeIDE`
 
 * **Step 3.** Double click the **.project** file
+
+  **Note:** For MAC, it should take one of the options below to open the project:
+
+  * **1.** Navigate to `Wio-E5-Node > Projects > Applications > LoRaWAN > LoRaWAN_End_Node`. Doulble click file "LoRaWAN_End_Node.ioc".
+
+  * **2.** Use "Import Projects from File System or Archieve" like below images.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LoRa-E5-mini/MAC.png" alt="pir" width={600} height="auto" /></p>
 
 * **Step 4.** Right click on the project and click **Properties**
 
@@ -756,11 +765,11 @@ Please submit any technical issue into our [forum](http://forum.seeedstudio.com/
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

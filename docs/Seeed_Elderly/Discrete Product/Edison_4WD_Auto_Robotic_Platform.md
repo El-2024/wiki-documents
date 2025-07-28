@@ -129,7 +129,7 @@ The 4WD Auto Robotic Platform is a powerful mobile unit with the Intel Edison Ar
 
 ###  Development Environment
 
-Although the Edsion Arduino can be programed by arduino IDE but for stronger development we got into the linux system to do some low level development. The most important resource is the mraa library which provided by Intel, things aren’t that idealized that there are difficulties in our early development, in order to build a convenient development Environment we copy the partition of rootfs out of the linux file system in which we have already configured all the needed resource and built the 4WD platform project. The only thing you should do to have this platform work is to flash a new firmware into Edison. If you want to know what we have done in the linux system and how to do your own project see the github repository:
+Although the Edsion Arduino can be programed by arduino IDE but for stronger development we got into the linux system to do some low level development. The most important resource is the mraa library which provided by Intel, things aren't that idealized that there are difficulties in our early development, in order to build a convenient development Environment we copy the partition of rootfs out of the linux file system in which we have already configured all the needed resource and built the 4WD platform project. The only thing you should do to have this platform work is to flash a new firmware into Edison. If you want to know what we have done in the linux system and how to do your own project see the github repository:
 
 [https://github.com/Seeed-Studio/Edison_WiFi_Car](https://github.com/Seeed-Studio/Edison_WiFi_Car)
 
@@ -139,7 +139,7 @@ Although the Edsion Arduino can be programed by arduino IDE but for stronger dev
 
 Follow the **Edison official web site getting started** to install required drivers and the terminal emulator PuTTy.
 
-Download [dfu-util - Device Firmware Upgrade Utilities](http://dfu-util.sourceforge.net/releases/dfu-util-0.8-binaries.tar.xz) and extract the xz file to “C:\” or any other directory.
+Download [dfu-util - Device Firmware Upgrade Utilities](http://dfu-util.sourceforge.net/releases/dfu-util-0.8-binaries.tar.xz) and extract the xz file to "C:\" or any other directory.
 
 ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform/img/Edison_4WD_Auto_Robotic_Platform22.png)
 
@@ -147,7 +147,7 @@ Download [dfu-util - Device Firmware Upgrade Utilities](http://dfu-util.sourcefo
 
 **Add Environment Variables**
 
-Right click This PC  &gt;  Advanced system setting  &gt;  Environment Variables  &gt; copy the path of dfu-util.exe to catch the “Path” environment variable.
+Right click This PC  &gt;  Advanced system setting  &gt;  Environment Variables  &gt; copy the path of dfu-util.exe to catch the "Path" environment variable.
 
 ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform/img/Edison_4WD_Auto_Robotic_Platform22.png)
 
@@ -244,7 +244,7 @@ sudo apt-get install dfu-util
 ###  Application
 
 Now use a smart phone or computer to search the WiFi accessible point, the SSID was named in a unique serier numbers by the S/N id on every edison main board like EDIOSN-FZED445001UCV501, and the passphrase is 12345678.
-After connected to the WiFi, open any web browser visit **http://192.168.42.1:8000** you’ll see a dashboard with which to controll the 4WD Platform.
+After connected to the WiFi, open any web browser visit **http://192.168.42.1:8000** you'll see a dashboard with which to controll the 4WD Platform.
 
 ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform/img/Edison_4WD_Auto_Robotic_Platform15.png)
 ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform/img/Edison_4WD_Auto_Robotic_Platform13.png)
@@ -257,7 +257,7 @@ After connected to the WiFi, open any web browser visit **http://192.168.42.1:80
 
 ###  How to program it
 
-Navigate to /usr/share/car you’ll see the project, these files are:
+Navigate to /usr/share/car you'll see the project, these files are:
 
 <pre>
 &gt;&gt;cd /usr/share/wificar
@@ -266,32 +266,28 @@ Navigate to /usr/share/car you’ll see the project, these files are:
 
 ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform/img/Edison_4WD_Auto_Robotic_Platform31.png)
 
-<table  cellspacing="0">
+<table cellspacing="0">
 <tr>
-<th scope="col"> car.py
-</th>
-<td> Car action class
-</td></tr>
+<th scope="col">car.py</th>
+<td>Car action class</td>
+</tr>
 <tr>
-<th> car_httpd.py
-</th>
-<td> Webserver process
-</td></tr>
+<th scope="col">car_httpd.py</th>
+<td>Webserver process</td>
+</tr>
 <tr>
-<th> i2c_motor.py
-</th>
-<td> The i2c Motor driver
-</td></tr>
+<th scope="col">i2c_motor.py</th>
+<td>The i2c Motor driver</td>
+</tr>
 <tr>
-<th> softi2c.py
-</th>
-<td> The softi2c driver for Edison
-</td></tr>
+<th scope="col">softi2c.py</th>
+<td>The softi2c driver for Edison</td>
+</tr>
 <tr>
-<th> www
-</th>
-<td> Webserver source file
-</td></tr></table>
+<th scope="col">www</th>
+<td>Webserver source file</td>
+</tr>
+</table>
 
 ###   Enhancement - two Motor Driver
 
@@ -341,7 +337,7 @@ Goto the virtual terminal open car.py do the below change.
 
 ##  FAQ
 
-1.If you have connected the Edison’s WiFi and the dashboard was shown but can’t controll the rover.
+1.If you have connected the Edison's WiFi and the dashboard was shown but can't controll the rover.
 
 A:Try to restart the power.
 
@@ -351,7 +347,7 @@ A:You have to take down the wheel when you want to connect USB cables. If you wa
 
 ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform/img/Edison_4WD_Auto_Robotic_Platform33.jpg)
 
-3.Have run the Wi-Fi car server and smart phone received the dashboard but can’t controll the rover. Why?
+3.Have run the Wi-Fi car server and smart phone received the dashboard but can't controll the rover. Why?
 
 A:The i2c Motor Driver has a bug that if a complete byte of orders sending was interrupted the motor driver will lose controll. You have to reset the driver board by pressing the reset button on it.
 

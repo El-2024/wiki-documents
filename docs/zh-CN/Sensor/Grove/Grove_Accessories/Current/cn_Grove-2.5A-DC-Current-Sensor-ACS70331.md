@@ -13,7 +13,7 @@ last_update:
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-2.5A_DC_Current_Sensor-ACS70331/img/preview.png" /></div>
 
-Grove - 2.5A DC 电流传感器（ACS70331）是一款基于 ACS70331 的高精度直流电流传感器。ACS70331 是一个芯片系列，本模块使用的是 ACS70331EESATR-2P5U3，它是 Allegro 公司针对 <2.5A 电流感应应用的高灵敏度电流传感器 IC。它集成了巨磁阻（GMR）技术，这种技术比传统的霍尔效应传感器对通过低电阻集成初级导体的电流产生的磁场感应更加敏感，灵敏度是传统霍尔效应传感器的 25 倍。
+Grove - 2.5A DC 电流传感器（ACS70331）是一款基于 ACS70331 的高精度直流电流传感器。ACS70331 是一个芯片系列，本模块使用的是 ACS70331EESATR-2P5U3，它是 Allegro 公司针对 \<2.5A 电流感应应用的高灵敏度电流传感器 IC。它集成了巨磁阻（GMR）技术，这种技术比传统的霍尔效应传感器对通过低电阻集成初级导体的电流产生的磁场感应更加敏感，灵敏度是传统霍尔效应传感器的 25 倍。
 
 Grove - 2.5A DC 电流传感器（ACS70331）可以测量高达 2.5A 的直流电流，基础灵敏度为 800mV/A。该传感器不支持交流电流测量，如果您想测量交流负载，请查看：
 
@@ -23,7 +23,7 @@ Grove - 2.5A DC 电流传感器（ACS70331）可以测量高达 2.5A 的直流�
 
 ## 特点
 
-- 带宽为 1 MHz，响应时间 <550 ns
+- 带宽为 1 MHz，响应时间 \<550 ns
 - 低噪声：在 1 MHz 下为 8 mA（rms）
 - 初级导体电阻为 1.1 mΩ，导致功率损耗低
 - 高直流电源抑制比（PSRR），适用于低精度电源或电池（3 至 4.5 V 工作电压）
@@ -36,7 +36,7 @@ Grove - 2.5A DC 电流传感器（ACS70331）可以测量高达 2.5A 的直流�
 |工作电压|3.3V / 5V|
 |工作环境温度| -40 – 85℃|
 |存储温度|- 65°C – 125°C|
-|工作电压范围|<100V|
+|工作电压范围|\<100V|
 |电流感应范围|0 – 2.5A|
 |灵敏度|800mV/A(典型)|
 |输出接口|模拟信号|
@@ -492,7 +492,7 @@ class Current():
         val = 0
         for i in range(averageValue):
             data = self.bus.read_i2c_block_data(self.addr,REG_VOL_START+n,2)
-            val += data[1]<<8|data[0]
+            val += data[1]\<\<8|data[0]
         val = val / averageValue
         return val
 
@@ -509,7 +509,7 @@ class Current():
         val = 0
         for i in range(averageValue):
             data = self.bus.read_i2c_block_data(self.addr,REG_VOL_START+n,2)
-            val += data[1]<<8|data[0]
+            val += data[1]\<\<8|data[0]
         val = val / averageValue
         currentVal = (val - Vref) * sensitivity
         return currentVal,val
@@ -527,7 +527,7 @@ class Current():
         sensorValue = 0
         for i in range(averageValue):
             data=self.bus.read_i2c_block_data(self.addr,REG_VOL_START+n,2)
-            val=data[1]<<8|data[0]
+            val=data[1]\<\<8|data[0]
             if(val > sensorValue):
                 sensorValue=val
             time.sleep(0.00004)

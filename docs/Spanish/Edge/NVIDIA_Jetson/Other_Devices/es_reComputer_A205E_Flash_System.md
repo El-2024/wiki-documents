@@ -29,10 +29,9 @@ En esta wiki, te mostraremos cómo flashear Jetpack OS a la Carrier Board A205E 
 <div align="center">
   <table>
     <tbody><tr>
-        <td align="center"><a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank"><span>Carrier Baord A205E</span></a>
-        </td>
-        <td align="center"><a href="https://www.seeedstudio.com/A205E-Mini-PC-with-128GB-SSD-p-5495.html" target="_blank"><span>A205E Mini PC</span></a>
-        </td></tr>
+        <td align="center"><a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank"><span>Carrier Baord A205E</span></a></td>
+        <td align="center"><a href="https://www.seeedstudio.com/A205E-Mini-PC-with-128GB-SSD-p-5495.html" target="_blank"><span>A205E Mini PC</span></a></td>
+    </tr>
       <tr>
         <td align="center">
           <a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank" rel="noopener"><img width={350} src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/5/_/5_7_1.png" alt /></a>
@@ -48,7 +47,7 @@ En esta wiki, te mostraremos cómo flashear Jetpack OS a la Carrier Board A205E 
 
 Podemos hacer esto fácilmente usando la **Terminal Linux**. Para las personas que tienen una base de conocimientos de Linux, recomendamos encarecidamente utilizar únicamente la Terminal de Linux.
 
-- [Flasheo de JetPack OS mediante la terminal de Linux](#flashing-jetpack-os-via-command-line)
+- Flasheo de JetPack OS mediante la terminal de Linux
 
 ### Preparación de Software
 
@@ -71,9 +70,9 @@ Antes de continuar con los pasos de instalación, debemos asegurarnos de que la 
 <div align="center">
   <table>
     <tbody><tr>
-        <td align="center">Carrier Board A205E
-        </td><td align="center">A205E Mini PC
-        </td></tr>
+        <td align="center">Carrier Board A205E</td>
+        <td align="center">A205E Mini PC</td>
+    </tr>
       <tr>
         <td align="center">
           <a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank" rel="noopener"><img width={350} src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/a/n/antenna_dc_jack_io_controller_20_pin_1_.png" alt /></a>

@@ -74,67 +74,65 @@ reComputer J1020 v2 是一款功能强大且紧凑的智能边缘设备，内置
     </tr>
     <tr>
       <td>视频解码器</td>
-      <td colspan='2'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60 (H.265 & H.264)
-      </td>
+      <td colspan='2'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60 (H.265 & H.264)</td>
       <td>4Kp60 | 2x 4Kp30 | 8x 1080p30 | 18x 720p30 (H.264/H.265)</td>
     </tr>
     <tr>
       <td>千兆以太网</td>
-      <td colspan='3' align='center'>1*RJ45 千兆以太网接口 (10/100/1000)</td>
+      <td colspan='3' align='center'>1×RJ45 千兆以太网接口 (10/100/1000)</td>
     </tr>
     <tr>
       <td>USB</td>
-      <td>1 * USB 3.0 Type A; 
-2 * USB 2.0 Type A;
-1 * USB Type C 用于设备模式;
-1 * USB Type C 用于 5V 电源输入</td>
-      <td>4 * USB 3.0 Type-A；
-1 * Micro-USB 接口用于设备模式;</td>
-      <td>4 * USB 3.0 Type-A; 
-1 * Micro-USB 接口用于 5V 电源输入或设备模式</td>
+      <td>1 × USB 3.0 Type A; 
+2 × USB 2.0 Type A;
+1 × USB Type C 用于设备模式;
+1 × USB Type C 用于 5V 电源输入</td>
+      <td>4 × USB 3.0 Type-A；
+1 × Micro-USB 接口用于设备模式;</td>
+      <td>4 × USB 3.0 Type-A; 
+1 × Micro-USB 接口用于 5V 电源输入或设备模式</td>
     </tr>
     <tr>
       <td>CSI 摄像头连接</td>
-      <td colspan='3' align='center'>2*CSI 摄像头 (15 pos, 1mm pitch, MIPI CSI-2 )</td>
+      <td colspan='3' align='center'>2×CSI 摄像头 (15 pos, 1mm pitch, MIPI CSI-2 )</td>
     </tr>
     <tr>
       <td>显示</td>
-      <td>1*HDMI Type A</td>
-      <td colspan='2' align='center'>1*HDMI Type A; 
-1*DP</td>
+      <td>1×HDMI Type A</td>
+      <td colspan='2' align='center'>1×HDMI Type A; 
+1×DP</td>
     </tr>
     <tr>
       <td>风扇</td>
-      <td colspan='3' align='center'>1* 风扇接口 (5V PWM)</td>
+      <td colspan='3' align='center'>1× 风扇接口 (5V PWM)</td>
     </tr>
     <tr>
       <td>M.2 KEY E</td>
-      <td>1*M.2 Key E</td>
-      <td>1*M.2 Key E（禁用）</td>
-      <td>1*M.2 Key E</td>
+      <td>1×M.2 Key E</td>
+      <td>1×M.2 Key E（禁用）</td>
+      <td>1×M.2 Key E</td>
     </tr>
     <tr>
       <td>M.2 KEY M</td>
       <td>-</td>
-      <td>1*M.2 Key M</td>
+      <td>1×M.2 Key M</td>
       <td>-</td>
     </tr>
     <tr>
       <td>RTC</td>
-      <td>1*RTC 插槽</td>
-      <td>1*RTC 插槽
-1*RTC 2 针</td>
+      <td>1×RTC 插槽</td>
+      <td>1×RTC 插槽
+1×RTC 2 针</td>
       <td>-</td>
     </tr>
     <tr>
       <td>多功能接口</td>
-      <td colspan='3' align='center'>1* 40 针排针</td>
+      <td colspan='3' align='center'>1× 40 针排针</td>
     </tr>
     <tr>
       <td>电源</td>
       <td>USB-Type C 5V⎓3A</td>
-      <td>	
-9-12V 电源适配器不包含（圆形插头 5.5/2.5mm）</td>
+      <td>9-12V 电源适配器不包含（圆形插头 5.5/2.5mm）</td>
       <td>DC 插头 5V⎓4A；
 Micro-USB 5V⎓2A</td>
     </tr>
@@ -149,7 +147,7 @@ Micro-USB 5V⎓2A</td>
 ## 将 JetPack 刷写到 reComputer J1020v2
 
 :::info
-请参考此 [wiki](/reComputer_J2021_J202_Flash_Jetpack) 页面获取更多信息，因为 J1020v2 使用的是 J202 扩展板。
+请参考此 [wiki](/cn/reComputer_J2021_J202_Flash_Jetpack) 页面获取更多信息，因为 J1020v2 使用的是 J202 扩展板。
 :::
 
 ## 资源

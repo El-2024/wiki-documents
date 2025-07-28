@@ -34,80 +34,61 @@ Raspberry Pi RS232 Board v1.0は、産業機器向けの標準通信ポートで
 仕様
 -------------
 
-<table border={1} cellSpacing={0} style={{width: 500, height: 442}} width={800}>
-  <tbody><tr>
-      <th align="center" scope="col" style={{width: '50%'}}> 項目
-      </th>
-      <th align="center" scope="col"> 最小
-      </th>
-      <th align="center" scope="col"> 典型
-      </th>
-      <th align="center" scope="col"> 最大
-      </th>
-      <th align="center" scope="col"> 単位
-      </th></tr>
+<div style={{textAlign: 'center'}}>
+<table>
+  <thead>
     <tr>
-      <th scope="row"> 入力電圧範囲
-      </th>
-      <td align="center"> -25
-      </td>
-      <td align="center"> /
-      </td>
-      <td align="center"> 25
-      </td>
-      <td align="center"> V
-      </td></tr>
+      <th>項目</th>
+      <th>最小</th>
+      <th>典型</th>
+      <th>最大</th>
+      <th>単位</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
-      <th scope="row"> 入力しきい値低 (VCC=3.3V/5.0V)
-      </th>
-      <td align="center"> 0.6 / 0.8
-      </td>
-      <td align="center"> 1.2 / 1.5
-      </td>
-      <td align="center"> /
-      </td>
-      <td align="center"> V
-      </td></tr>
+      <td>入力電圧範囲</td>
+      <td>-25</td>
+      <td>/</td>
+      <td>25</td>
+      <td>V</td>
+    </tr>
     <tr>
-      <th scope="row"> 入力しきい値高 (VCC=3.3V/5.0V)
-      </th>
-      <td align="center"> /
-      </td>
-      <td align="center"> 1.5 / 1.8
-      </td>
-      <td align="center"> 2.4 / 2.4
-      </td>
-      <td align="center"> V
-      </td></tr>
+      <td>入力しきい値低 (VCC=3.3V/5.0V)</td>
+      <td>0.6 / 0.8</td>
+      <td>1.2 / 1.5</td>
+      <td>/</td>
+      <td>V</td>
+    </tr>
     <tr>
-      <th scope="row"> 最大データレート
-      </th>
-      <td align="center"> 120
-      </td>
-      <td align="center"> 235
-      </td>
-      <td align="center">
-      </td>
-      <td align="center"> kHz
-      </td></tr>
+      <td>入力しきい値高 (VCC=3.3V/5.0V)</td>
+      <td>/</td>
+      <td>1.5 / 1.8</td>
+      <td>2.4 / 2.4</td>
+      <td>V</td>
+    </tr>
     <tr>
-      <th scope="row"> 動作温度
-      </th>
-      <td align="center"> 0
-      </td>
-      <td align="center"> /
-      </td>
-      <td align="center"> 70
-      </td>
-      <td align="center"> ℃
-      </td></tr>
+      <td>最大データレート</td>
+      <td>120</td>
+      <td>235</td>
+      <td></td>
+      <td>kHz</td>
+    </tr>
     <tr>
-      <th scope="row"> 寸法
-      </th>
-      <td align="center" colSpan={3}> 91.20 *56.15*32
-      </td>
-      <td align="center"> mm
-      </td></tr></tbody></table>
+      <td>動作温度</td>
+      <td>0</td>
+      <td>/</td>
+      <td>70</td>
+      <td>℃</td>
+    </tr>
+    <tr>
+      <td>寸法</td>
+      <td colSpan="3">91.20 x 56.15 x 32</td>
+      <td>mm</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 ハードウェア概要
 ------------------

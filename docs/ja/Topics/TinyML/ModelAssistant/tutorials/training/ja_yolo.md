@@ -79,7 +79,7 @@ model = dict(
 
 ## モデルのトレーニング
 
-モデルをトレーニングするには、事前に設定したSSCMA作業環境を使用する必要があります。[Installation](ModelAssistant_Introduce_Installation)ガイドに従ってCondaを使用して仮想環境`sscma`に[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)をインストールした場合、現在その仮想環境内にいることを確認してください。
+モデルをトレーニングするには、事前に設定したSSCMA作業環境を使用する必要があります。[Installation](/ja/ModelAssistant_Introduce_Installation)ガイドに従ってCondaを使用して仮想環境`sscma`に[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)をインストールした場合、現在その仮想環境内にいることを確認してください。
 
 その後、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)プロジェクトのルートディレクトリで、以下のコマンドを実行してSwfit-YOLOデジタルメーター検出モデルをトレーニングします。
 
@@ -132,7 +132,7 @@ python3 tools/inference.py \
 
 ### 評価
 
-モデルを実際のエッジコンピューティングデバイスでさらにテストおよび評価するには、モデルをエクスポートする必要があります。モデルのエクスポートプロセスでは、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)がモデルのプルーニングや蒸留などの最適化を行います。モデルのエクスポート方法については、[Export](ModelAssistant_Tutorials_Export_Overview)セクションを参照してください。
+モデルを実際のエッジコンピューティングデバイスでさらにテストおよび評価するには、モデルをエクスポートする必要があります。モデルのエクスポートプロセスでは、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)がモデルのプルーニングや蒸留などの最適化を行います。モデルのエクスポート方法については、[Export](/ja/ModelAssistant_Tutorials_Export_Overview)セクションを参照してください。
 
 ### デプロイ
 

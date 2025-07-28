@@ -22,11 +22,11 @@ last_update:
 
 Veamos algunos de los pasos generales necesarios para completar este proyecto.
 
-- [Regístrate y habilita el servicio Google Cloud Speech to Text](#sign-up-and-enable-google-cloud-speech-to-text-service)
-- [Implementa los servicios de transcripción de voz en hosts locales](#deploy-speech-to-text-services-on-local-hosts)
-- [Sube los archivos de sonido grabados con XIAO ESP32S3 Sense a Google Cloud para su reconocimiento](#upload-xiao-esp32s3-sense-recorded-sound-files-to-google-cloud-for-recognition)
-- [Implementa ChatGPT en XIAO ESP32S3 Sense](#deploy-chatgpt-on-xiao-esp32s3-sense)
-- [Diseño del contenido de la pantalla y la integración de programas](#design-of-screen-display-content--integration-of-programs)
+- Regístrate y habilita el servicio Google Cloud Speech to Text
+- Implementa los servicios de transcripción de voz en hosts locales
+- Sube los archivos de sonido grabados con XIAO ESP32S3 Sense a Google Cloud para su reconocimiento
+- Implementa ChatGPT en XIAO ESP32S3 Sense
+- Diseño del contenido de la pantalla y la integración de programas
 
 La estructura general del marco se puede ver en el diagrama a continuación.
 

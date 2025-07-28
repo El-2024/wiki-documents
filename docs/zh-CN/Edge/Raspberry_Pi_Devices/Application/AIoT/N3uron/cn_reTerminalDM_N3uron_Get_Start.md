@@ -124,10 +124,10 @@ sudo rm -r /opt/n3uron
 **步骤 1**：在您的本地计算机上打开一个网页浏览器。
 
 **步骤 2**：在浏览器地址栏中输入以下地址之一：
-- 本地访问：http://localhost:8003。
-- 在局域网 (LAN) 内的远程访问：http://reTerminal_IpAddress:8003。
-- 本地安全访问：https://localhost:8443。
-- 在局域网 (LAN) 内的安全远程访问：https://reTerminal_IpAddress:8443。
+- 本地访问：http://localhost:8003 。
+- 在局域网 (LAN) 内的远程访问：http://reTerminal_IpAddress:8003 。
+- 本地安全访问：https://localhost:8443 。
+- 在局域网 (LAN) 内的安全远程访问：https://reTerminal_IpAddress:8443 。
 
 **步骤 3**：按 Enter 键导航到 N3uron WebUI 登录页面。
 

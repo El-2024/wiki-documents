@@ -41,7 +41,7 @@ SenseCAP M4 Square は、クアッドコア Intel® Celeron® J4125 と RP2040 �
     
 *   **優れたパフォーマンス**：Intel® Celeron® J4125（周波数：2.0 - 2.7GHz）による 4 コア 4 スレッドのパワー。
     
-*   **低消費電力**：10W の低消費電力、月間 7.2 kWh、月額コスト $1.008（世界平均 kWh 価格 $0.144/kWh）。
+*   **低消費電力**：10W の低消費電力、月間 7.2 kWh、月額コスト \$1.008（世界平均 kWh 価格 \$0.144/kWh）。
     
 
 ![](https://www.sensecapmx.com/wp-content/uploads/2022/12/Pasted-into-Overview-1.png)

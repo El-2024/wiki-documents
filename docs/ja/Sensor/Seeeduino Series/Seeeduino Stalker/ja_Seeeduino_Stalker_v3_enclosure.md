@@ -80,56 +80,42 @@ Grove シリーズセンサーは、リベットを使用して PVC プレート
 
 ==**部品リスト**==
 
-<table  cellspacing="0" width="80%">
+<table cellspacing="0" width="80%">
 <tr>
-<th scope="col"> 部品
-</th>
-<th scope="col"> パッケージ
-</th>
-<th scope="col"> 数量
-</th></tr>
+<th scope="col"> 部品 </th>
+<th scope="col"> パッケージ </th>
+<th scope="col"> 数量 </th>
+</tr>
 <tr>
-<th scope="row"> ストーカーエンクロージャ
-</th>
-<td> 直径90 高さ9.25
-</td>
-<td> 1
-</td></tr>
+<th scope="row"> ストーカーエンクロージャ </th>
+<td> 直径90 高さ9.25 </td>
+<td> 1 </td>
+</tr>
 <tr>
-<th scope="row"> PVC マウントピース
-</th>
-<td> サイズ 200*63mm
-</td>
-<td> 1
-</td></tr>
+<th scope="row"> PVC マウントピース </th>
+<td> サイズ 200*63mm </td>
+<td> 1 </td>
+</tr>
 <tr>
-<th scope="row"> バッテリーセパレータピース
-</th>
-<td> サイズ 71.8*60mm
-</td>
-<td> 1
-</td></tr>
+<th scope="row"> バッテリーセパレータピース </th>
+<td> サイズ 71.8*60mm </td>
+<td> 1 </td>
+</tr>
 <tr>
-<th scope="row"> ナイロンスクリュー
-</th>
-<td> M3*6
-</td>
-<td> 4
-</td></tr>
+<th scope="row"> ナイロンスクリュー </th>
+<td> M3*6 </td>
+<td> 4 </td>
+</tr>
 <tr>
-<th scope="row"> スクリューコラム
-</th>
-<td> M3*4
-</td>
-<td> 4
-</td></tr>
+<th scope="row"> スクリューコラム </th>
+<td> M3*4 </td>
+<td> 4 </td>
+</tr>
 <tr>
-<th scope="row"> バッファースポンジ
-</th>
-<td> サイズ 70*55*8mm
-</td>
-<td> 1
-</td></tr>
+<th scope="row"> バッファースポンジ </th>
+<td> サイズ 70*55*8mm </td>
+<td> 1 </td>
+</tr>
 </table>
 
 ## 技術サポート & 製品ディスカッション

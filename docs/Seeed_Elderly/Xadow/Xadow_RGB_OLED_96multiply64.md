@@ -38,7 +38,7 @@ We only need CS, DC, MOSI, SCLK 4 pins for communication. and
 
 **SCLK** &lt;==&gt;  **15**
 
-:::cautions
+:::caution
     Please notice: heavy impact or stress on OLED will cause the breakdown of screen.
 :::
 ## Getting Started

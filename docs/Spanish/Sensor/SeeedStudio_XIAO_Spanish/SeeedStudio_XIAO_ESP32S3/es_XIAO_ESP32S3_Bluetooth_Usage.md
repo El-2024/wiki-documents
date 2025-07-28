@@ -78,10 +78,10 @@ Esto hace que consuma muy poca energía. BLE consume aproximadamente 100 veces m
 
 En cuanto a la parte de BLE del XIAO ESP32C6, introduciremos su uso en las siguientes tres secciones.
 
-- [Algunos conceptos fundamentales](#some-fundamental-concepts) -- Primero conoceremos algunos conceptos que pueden usarse con frecuencia en BLE para ayudarnos a entender el proceso de ejecución y el pensamiento detrás de los programas BLE.
-- [Escáner BLE](#ble-scanner) -- Esta sección explicará cómo buscar dispositivos Bluetooth cercanos y mostrarlos en el monitor serie.
-- [Servidor/cliente BLE](#ble-serverclient) -- Esta sección explicará cómo usar el XIAO ESP32C6 como Servidor y Cliente para enviar y recibir mensajes de datos específicos. También se usará para recibir o enviar mensajes desde el teléfono al XIAO.
-- [Intercambio de datos de sensores BLE](#ble-sensor-data-exchange) -- Esta es la última sección del tutorial completo donde recorreremos un ejemplo de sensor para explicar cómo enviar los datos del sensor a través de BLE.
+- **Algunos conceptos fundamentales** -- Primero conoceremos algunos conceptos que pueden usarse con frecuencia en BLE para ayudarnos a entender el proceso de ejecución y el pensamiento detrás de los programas BLE.
+- **Escáner BLE** -- Esta sección explicará cómo buscar dispositivos Bluetooth cercanos y mostrarlos en el monitor serie.
+- **Servidor/cliente BLE** -- Esta sección explicará cómo usar el XIAO ESP32C6 como Servidor y Cliente para enviar y recibir mensajes de datos específicos. También se usará para recibir o enviar mensajes desde el teléfono al XIAO.
+- **Intercambio de datos de sensores BLE** -- Esta es la última sección del tutorial completo donde recorreremos un ejemplo de sensor para explicar cómo enviar los datos del sensor a través de BLE.
 
 ### Algunos conceptos fundamentales
 

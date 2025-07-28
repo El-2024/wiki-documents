@@ -69,14 +69,29 @@ Here are the hardware details for Seeed SoM - STM32MP157C:
 </colgroup> -->
 
 <thead>
-  <div>
-    Pin <br />Package <br />Number
-    Pin <br />Number
-    Pin <br />Name
-    Pin <br />Type
-    Optional Function
-    Additional<br />Function
-  </div>
+  <tr>
+    <th><div>
+  Pin<br />Package<br />Number
+</div>
+</th>
+    <th><div>
+  Pin<br />Number
+</div>
+</th>
+    <th><div>
+  Pin<br />Name
+</div>
+</th>
+    <th><div>
+  Pin<br />Type
+</div>
+</th>
+    <th>Optional Function</th>
+    <th><div>
+  Additional<br />Function
+</div>
+</th>
+  </tr>
 </thead>
 
 <tbody>
@@ -2096,6 +2111,9 @@ Here are the hardware details for Seeed SoM - STM32MP157C:
     <td>I/O</td>
     <td><div>
   DFSDM1_CKIN0,LPTIM2_IN2,<br />DFSDM1_DATIN4,SAI2_FS_B,<br />QUADSPI_BK2_NCS,LCD_R5,<br />EVENTOUT
+</div>
+</td>
+    <td><div>
   ADC1_INP10,<br />ADC2_INP10
 </div>
 </td>

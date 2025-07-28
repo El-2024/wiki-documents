@@ -26,28 +26,10 @@ Grove I2C モータードライバは、使いやすいインターフェース�
 ## バージョントラッカー
 
 ---
-<table width="494">
-<tr>
-<th> リビジョン
-</th>
-<th> 説明
-</th>
-<th> リリース日
-</th></tr>
-<tr>
-<td> v1.0
-</td>
-<td> 初回公開リリース
-</td>
-<td> 2012年5月17日
-</td></tr>
-<tr>
-<td> v1.2
-</td>
-<td> ハードウェアで I2C アドレスを設定
-</td>
-<td> 2012年7月2日
-</td></tr></table>
+| リビジョン | 説明 | リリース日 |
+|-----------|------|-----------|
+| v1.0 | 初回公開リリース | 2012年5月17日 |
+| v1.2 | ハードウェアで I2C アドレスを設定 | 2012年7月2日 |
 
 ## 特徴
 
@@ -66,57 +48,13 @@ Grove I2C モータードライバは、使いやすいインターフェース�
 ## 仕様
 
 ---
-<table  cellspacing="0" width="80%">
-<tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 最小
-</th>
-<th scope="col"> 標準
-</th>
-<th scope="col"> 最大
-</th>
-<th scope="col"> 単位
-</th></tr>
-<tr>
-<th scope="row">動作電圧
-</th>
-<td> 6
-</td>
-<td> -
-</td>
-<td> 15
-</td>
-<td> VDC
-</td></tr>
-<tr>
-<th scope="row"> チャネルごとの最大出力電流
-</th>
-<td colspan="3">0.5
-</td>
-<td> A
-</td></tr>
-<tr>
-<th scope="row"> 最大合計電流
-</th>
-<td colspan="3">1.0
-</td>
-<td> A
-</td></tr>
-<tr>
-<th scope="row"> I2C バスの入出力電圧
-</th>
-<td colspan="3"> 5
-</td>
-<td> V
-</td></tr>
-<tr>
-<th scope="row"> 通信プロトコル
-</th>
-<td colspan="3"> I2C
-</td>
-<td> /
-</td></tr></table>
+| 項目 | 最小 | 標準 | 最大 | 単位 |
+|------|------|------|------|------|
+| 動作電圧 | 6 | - | 15 | VDC |
+| チャネルごとの最大出力電流 | 0.5 | 0.5 | 0.5 | A |
+| 最大合計電流 | 1.0 | 1.0 | 1.0 | A |
+| I2C バスの入出力電圧 | 5 | 5 | 5 | V |
+| 通信プロトコル | I2C | I2C | I2C | / |
 
 ## インターフェース機能
 
@@ -172,10 +110,8 @@ I2Cモータードライバは、L298チップをベースにしたモーター�
 ![](https://files.seeedstudio.com/wiki/Grove-I2C_Motor_Driver_V1.2/img/I2CMotorDriver-4.jpg)
 
 <div>
-  <span style={{color: 'red'}}>**注意:**
-  </span>
-  <dl><dd>最初に注意すべき点は、DCモーター用に外部電源が必要であることです。Arduinoの5Vピンでは2つのモーターを駆動するのに十分な電力を供給できず、Arduinoが損傷する可能性があります。
-    </dd></dl>
+  <span style={{color: 'red'}}>**注意:**</span>
+  <dl><dd>最初に注意すべき点は、DCモーター用に外部電源が必要であることです。Arduinoの5Vピンでは2つのモーターを駆動するのに十分な電力を供給できず、Arduinoが損傷する可能性があります。</dd></dl>
 </div>
 
 次に、以下のようにArduinoをプログラムします：

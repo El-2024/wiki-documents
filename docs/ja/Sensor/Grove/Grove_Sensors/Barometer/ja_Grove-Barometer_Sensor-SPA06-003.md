@@ -164,10 +164,10 @@ Groveモジュールの詳細については、[Groveシステム](https://wiki.
     </tr>
     <tr>
       <td>価格</td>
-      <td>$9.8</td>
-      <td>$18.7</td>
-      <td>$7.5</td>
-      <td>$4.5</td>
+      <td>\$9.8</td>
+      <td>\$18.7</td>
+      <td>\$7.5</td>
+      <td>\$4.5</td>
     </tr>
   </table>
 </div>
@@ -390,13 +390,13 @@ ESP32とコンピュータ間のシリアル通信を初期化します。ボー
 ```cpp
 Wire.begin()
 ```
-デフォルトのピン（ほとんどのプラットフォームではSDAとSCL）を使用してI²Cバスを初期化します。これはSPL07-003センサーと通信する前に必要です。
+デフォルトのピン（ほとんどのプラットフォームではSDAとSCL）を使用してI2Cバスを初期化します。これはSPL07-003センサーと通信する前に必要です。
 ```cpp
 spl.begin(SPL07_ADDR)
 ```
-指定されたI²Cアドレスを使用してSPL07-003センサーを初期化します。センサーがバス上で見つからない場合はfalseを返します。
+指定されたI2Cアドレスを使用してSPL07-003センサーを初期化します。センサーがバス上で見つからない場合はfalseを返します。
 
-- パラメータ: SPL07_ADDR – I²Cアドレス (0x76 または 0x77)
+- パラメータ: SPL07_ADDR – I2Cアドレス (0x76 または 0x77)
 
 - 戻り値: 成功時はtrue、センサーが検出されない場合はfalse
 ```cpp
@@ -441,7 +441,7 @@ spl.calcAltitude()
 
 - **[KiCAD]** [Grove-Barometer Sensor SPA06-003 SCH&PCB](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/res/SCH&PCB.zip)
 - **[データシート]** [SPA06-003 データシート](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/res/Datasheet.PDF)
-- **[参考資料]** [Arduino 用 I<sup>2</sup>C の使い方](https://www.arduino.cc/en/Reference/Wire)
+- **[参考資料]** [Arduino 用 I2C の使い方](https://www.arduino.cc/en/Reference/Wire)
 
 ## 技術サポート & 製品ディスカッション
 

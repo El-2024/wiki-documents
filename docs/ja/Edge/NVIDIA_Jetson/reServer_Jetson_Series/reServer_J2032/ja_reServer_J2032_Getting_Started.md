@@ -547,8 +547,6 @@ LoRa® マークは Semtech Corporation またはその子会社の商標です�
   </div>
 </div>
 
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
 ## ハードウェア概要
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware.png" alt="pir" width={1000} height="auto" /></p>

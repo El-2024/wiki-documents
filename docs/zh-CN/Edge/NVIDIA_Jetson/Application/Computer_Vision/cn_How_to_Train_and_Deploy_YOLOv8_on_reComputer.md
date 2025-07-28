@@ -26,8 +26,7 @@ last_update:
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong></a>
 </div>
 
 在本文档中，我们将在 [reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=f6de8f6c8d814c021e13f4455d041d03&objectID=5586&indexName=bazaar_retailer_products) 上训练和部署一个用于交通场景的目标检测模型。本文档以 [YOLOv8](https://www.ultralytics.com/) 目标检测算法为例，详细概述了整个过程。请注意，以下描述的所有操作均在 Jetson 边缘计算设备上进行，确保 Jetson 设备安装了 [JetPack 5.0](https://wiki.seeedstudio.com/NVIDIA_Jetson/) 或更高版本的操作系统。

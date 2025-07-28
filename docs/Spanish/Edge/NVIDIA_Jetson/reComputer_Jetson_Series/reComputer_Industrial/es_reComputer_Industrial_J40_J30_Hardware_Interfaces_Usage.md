@@ -157,7 +157,7 @@ Conecta una **batería de tipo CR2302 de 3 V con conector JST** al conector JST 
 
 ### Uso
 
-:::Peligro
+:::danger
 Ten en cuenta que si su dispositivo reComputer ya se flaseho a JetPack 6 o posterior, el RTC funcionará normalmente sin ninguna configuración adicional. Si estás utilizando JetPack 5, deberás consultar el siguiente contenido para configurar el servicio de sincronización de reloj.
 :::
 
@@ -502,7 +502,7 @@ Si ves el siguiente resultado, el sistema detecta el módulo
 
 - **Paso 2:** Ingresa los siguientes comandos para compilar y construir la herramienta de transmisión de señales LoRa
 
-:::Peligro
+:::danger
 Ten en cuenta que esta **herramienta de transmisión de señales LoRa** solo es aplicable a Jetpack5. Si deseas probar la funcionalidad del módulo LoRa en Jetpack6, consulta el [esquema](https://github.com/Seeed-Studio/OSHW-Jetson-Series/blob/main/reComputer%20Jetson%20carrier%20board/reComputer%20Industrial%20J201/Schematic/reComputer%20Industrial%20J201_V1.2.pdf) y [pinmux](https://developer.nvidia.com/downloads/jetson-orin-nx-and-orin-nano-series-pinmux-config-template) para determinar los nombres de los pines y usa el comando `gpioset` para configurar el estado del pin.
 :::
 
@@ -837,7 +837,7 @@ reComputer Industrial admite 4 canales de entrada digital y 4 canales de salida 
   </tbody>
 </table>
 
-:::Peligro
+:::danger
 Ten en cuenta que los números de PIN de la tabla anterior solo son válidos para Jetpack5. Podemos obtener los números de pin del Jetpack6 de las siguientes formas:
 
 1. Utiliza el comando `gpioinfo` para obtener la tabla GPIO.

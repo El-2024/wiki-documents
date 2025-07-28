@@ -28,9 +28,9 @@ Aquí está la descripción general de la Carrier Board reServer J2030 como refe
     <tbody><tr>
       </tr>
       <tr>
-        <td align="center">Frente
-        </td><td align="center">Parte trasera
-        </td></tr>
+        <td align="center">Frente</td>
+        <td align="center">Parte trasera</td>
+      </tr>
       <tr>
         <td align="center">
           <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware1.png" alt />
@@ -47,8 +47,8 @@ Aquí está la descripción general de la Carrier Board reServer J2030 como refe
 
 Podemos usar **NVIDIA SDK manager** para actualizar el sistema, o podemos hacerlo fácilmente usando el **Command Line Script**. Para las personas que tienen una base de conocimientos de Linux, recomendamos encarecidamente utilizar **Command Line Script**, que proporciona mucha más funcionalidades.
 
-- [Flasheando el sistema operativo JetPack a través del administrador SDK de NVIDIA y la terminal de Linux](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [Actualización del sistema operativo JetPack a través del terminal Linux](#flashing-jetpack-os-via-command-line)
+- Flasheando el sistema operativo JetPack a través del administrador SDK de NVIDIA y la terminal de Linux
+- Actualización del sistema operativo JetPack a través del terminal Linux
 
 Todavía hay algunos preparativos que se necesitan:
 

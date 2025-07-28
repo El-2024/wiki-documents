@@ -247,7 +247,7 @@ sudo apt-get install dfu-util
 ### アプリケーション
 
 スマートフォンまたはコンピュータを使用してWi-Fiアクセスポイントを検索します。SSIDは、Edisonメインボード上のS/N IDによって一意のシリアル番号で命名されており、例：EDIOSN-FZED445001UCV501、パスフレーズは12345678です。
-Wi-Fiに接続した後、任意のウェブブラウザを開き、**http://192.168.42.1:8000**にアクセスすると、4WDプラットフォームを制御するためのダッシュボードが表示されます。
+Wi-Fiに接続した後、任意のウェブブラウザを開き、[http://192.168.42.1:8000](http://192.168.42.1:8000)にアクセスすると、4WDプラットフォームを制御するためのダッシュボードが表示されます。
 
 ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform/img/Edison_4WD_Auto_Robotic_Platform15.png)
 ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform/img/Edison_4WD_Auto_Robotic_Platform13.png)
@@ -271,30 +271,26 @@ Wi-Fiに接続した後、任意のウェブブラウザを開き、**http://192
 
 <table  cellspacing="0">
 <tr>
-<th scope="col"> car.py
-</th>
-<td> 車の動作クラス
-</td></tr>
+<th scope="col"> car.py</th>
+<td> 車の動作クラス</td>
+</tr>
 <tr>
-<th> car_httpd.py
-</th>
-<td> Webサーバープロセス
-</td></tr>
+<th> car_httpd.py</th>
+<td> Webサーバープロセス</td>
+</tr>
 <tr>
-<th> i2c_motor.py
-</th>
-<td> i2c モータードライバー
-</td></tr>
+<th> i2c_motor.py</th>
+<td> i2c モータードライバー</td>
+</tr>
 <tr>
-<th> softi2c.py
-</th>
-<td> Edison 用の softi2c ドライバー
-</td></tr>
+<th> softi2c.py</th>
+<td> Edison 用の softi2c ドライバー</td>
+</tr>
 <tr>
-<th> www
-</th>
-<td> Webサーバーのソースファイル
-</td></tr></table>
+<th> www</th>
+<td> Webサーバーのソースファイル</td>
+</tr>
+</table>
 
 ###   強化 - 2つのモータードライバー
 

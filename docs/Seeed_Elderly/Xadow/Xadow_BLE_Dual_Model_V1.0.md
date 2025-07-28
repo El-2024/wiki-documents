@@ -44,7 +44,7 @@ Xadow - BLE (dual model) v1.0 uses CSR dual mode Bluetooth chip,with the ARM arc
 - **D1**:The led display two work models: sleeping whit It slowly flashing;connected status whit It continuously lighting.
 - **J1&J2**:The standard Xadow connector.
 
-:::cautions
+:::caution
     The supply voltage of this module is 2.5V ~ 3.7V, higher than this may cause permanent damage to the device.BLE transmission speed is slower than SPP transmission, so we selected the lower one in the design, in accordance with the speed of a BLE dual-mode product planning.
 :::
 ## Hardware Installation

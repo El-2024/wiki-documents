@@ -29,7 +29,7 @@ LoRaWAN 是一种基于 LoRa 技术构建的低功耗广域网络协议。它通
 
 请参考 [安装指南](https://learn.semtech.com/mod/book/view.php?id=223&chapterid=266#:~:text=Enter%20the%20following%20to%20clone%20the%20ChirpStack%20Docker,Share%20it%20on%20any%20security%20popups%20you%20see.) 以本地安装 Chirpstack。
 
-1. 打开浏览器并访问 http://localhost:8080。
+1. 打开浏览器并访问 http://localhost:8080
 
 您应该会看到 ChirpStack 的登录页面。
 

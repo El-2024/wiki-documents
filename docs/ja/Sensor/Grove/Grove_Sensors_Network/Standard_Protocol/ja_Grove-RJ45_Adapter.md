@@ -38,30 +38,25 @@ Grove-RJ45 アダプタは、標準の Grove コネクタを RJ45 コネクタ�
 
 <table  cellspacing="0" width="547">
 <tr>
-<th scope="col"> Grove コネクタ
-</th>
-<th scope="col"> RJ45 コネクタ
-</th></tr>
+<th scope="col"> Grove コネクタ</th>
+<th scope="col"> RJ45 コネクタ</th>
+</tr>
 <tr>
-<th scope="row"> VCC
-</th>
-<td> A7
-</td></tr>
+<th scope="row"> VCC</th>
+<td> A7</td>
+</tr>
 <tr>
-<th scope="row"> GND
-</th>
-<td> A8
-</td></tr>
+<th scope="row"> GND</th>
+<td> A8</td>
+</tr>
 <tr>
-<th scope="row"> D1
-</th>
-<td> A5
-</td></tr>
+<th scope="row"> D1</th>
+<td> A5</td>
+</tr>
 <tr>
-<th scope="row"> D2
-</th>
-<td> A4
-</td></tr></table>
+<th scope="row"> D2</th>
+<td> A4</td>
+</tr></table>
 
 ## 使用方法
 
@@ -76,7 +71,7 @@ Grove-RJ45 アダプタは、標準の Grove コネクタを RJ45 コネクタ�
 
 ## 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-RJ45_Adapter/res/Grove-RJ45_Adapter_Eagle_File.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div class="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-RJ45_Adapter/res/Grove-RJ45_Adapter_Eagle_File.zip">
 </div>
 
 ## リソース

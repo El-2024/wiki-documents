@@ -36,15 +36,15 @@ Machine learning is a field of computer systems that aims to develop self-improv
 <div class="all_container">
     <div class="xiao_topic_page_vertical">
         <font size={"2"}>Ultra-small ESP32-S3 development board with OV2640 camera, a risging star in the fields of AIoT</font>
-        <br /><font size={"3"}><strong>HIGH-PERFORMANCE</strong></font>
+        <br /><font size={"3"}>HIGH-PERFORMANCE</font>
         <font size={"2"}>240MHz Xtensa 32-bit LX7 dual-core processor</font>
-        <br /><font size={"3"}><strong>MEMORY</strong></font>
+        <br /><font size={"3"}>MEMORY</font>
         <font size={"2"}>8MB PSRAM + 8MB FLASH</font>
-        <br /><font size={"3"}><strong>MULTI-FUNCTIONAL</strong></font>
+        <br /><font size={"3"}>MULTI-FUNCTIONAL</font>
         <font size={"2"}>Microphone/SD card slot/Detachable OV2640</font>
-        <br /><font size={"3"}><strong>WIRELESS</strong></font>
+        <br /><font size={"3"}>WIRELESS</font>
         <font size={"2"}>2.4GHz WiFi and BLE 5</font>
-        <br /><font size={"3"}><strong>TINYML-SUPPORTED</strong></font>
+        <br /><font size={"3"}>TINYML-SUPPORTED</font>
         <font size={"2"}>Image Processing/Speech Recognition</font>
     </div>
     <div class="xiao_topic_page_pic">
@@ -69,12 +69,12 @@ Machine learning is a field of computer systems that aims to develop self-improv
     </div>
     <div class="xiao_topic_page_vertical">
         <font size={"2"}>XIAO nRF52840 Sense features an onboard microphone and 6-axis IMU, suitable for the TinyML AI+IOT project</font>
-        <br /><font size={"3"}><strong>HIGH-PERFORMANCE</strong></font>
+        <br /><font size={"3"}>HIGH-PERFORMANCE</font>
         <font size={"2"}>ARM® Cortex™-M4 32-bit processor with FPU operating at 64 MHz</font>
-        <br /><font size={"3"}><strong>Memory</strong></font><font size={"2"}>256 KB RAM + 2MB FLASH</font>
-        <br /><font size={"3"}><strong>MULTI-FUNCTIONAL</strong></font><font size={"2"}>Onboard microphone and 6-axis IMU</font>
-        <br /><font size={"3"}><strong>WIRELESS</strong></font><font size={"2"}>Bluetooth 5.0, NFC with onboard antenna</font>
-        <br /><font size={"3"}><strong>TINYML-SUPPORTED</strong></font><font size={"2"}>Gesture/Voice recognition</font>
+        <br /><font size={"3"}>Memory</font><font size={"2"}>256 KB RAM + 2MB FLASH</font>
+        <br /><font size={"3"}>MULTI-FUNCTIONAL</font><font size={"2"}>Onboard microphone and 6-axis IMU</font>
+        <br /><font size={"3"}>WIRELESS</font><font size={"2"}>Bluetooth 5.0, NFC with onboard antenna</font>
+        <br /><font size={"3"}>TINYML-SUPPORTED</font><font size={"2"}>Gesture/Voice recognition</font>
     </div>
 </div>
 
@@ -97,15 +97,15 @@ Machine learning is a field of computer systems that aims to develop self-improv
     </div>
     <div class="xiao_topic_page_vertical">
         <font size={"2"}>XIAO RP2040 is an ultra small, high performance universal development board. Features onboard 2MB flash, micropython support</font>
-        <br /><font size={"3"}><strong>GETTING STARTED FAST</strong></font>
+        <br /><font size={"3"}>GETTING STARTED FAST</font>
         <font size={"2"}>Support Arduino/Micropython/CircuitPython</font>
-        <br /><font size={"3"}><strong>COST-EFFECTIVE</strong></font>
+        <br /><font size={"3"}>COST-EFFECTIVE</font>
         <font size={"2"}>Lower the barrier to entry</font>
-        <br /><font size={"3"}><strong>MORE POWERFUL MCU (RP2040)</strong></font>
+        <br /><font size={"3"}>MORE POWERFUL MCU (RP2040)</font>
         <font size={"2"}>Dual-core ARM Cortex M0+ Raspberry PI RP2040 chip, running up to 133 MHz</font>
-        <br /><font size={"3"}><strong>RICH ON-CHIP MEMORY</strong></font>
+        <br /><font size={"3"}>RICH ON-CHIP MEMORY</font>
         <font size={"2"}>264KB of SRAM, 2MB of onboard Flash</font>
-        <br /><font size={"3"}><strong>INTERFACE RICH</strong></font>
+        <br /><font size={"3"}>INTERFACE RICH</font>
         <font size={"2"}>11 digital pins, 4 analog pins, 11 PWM Pins, 1 I2C interface, 1 UART interface, 1 SPI interface, 1 SWD Bonding pad interface</font>
     </div>
 </div>
@@ -124,15 +124,15 @@ Machine learning is a field of computer systems that aims to develop self-improv
 <div class="all_container">
     <div class="xiao_topic_page_vertical">
         <font size={"2"}>XIAO SAMD21 is an ultra small, high performance universal development board</font>
-        <br /><font size={"3"}><strong>USERS’ FAVOURITE</strong></font>
+        <br /><font size={"3"}>USERS' FAVOURITE</font>
         <font size={"2"}>First pioneering product of XIAO series!</font>
-        <br /><font size={"3"}><strong>THUMB-SIZED</strong></font>
+        <br /><font size={"3"}>THUMB-SIZED</font>
         <font size={"2"}>The smallest Arduino-compatible board in Seeed Studio board Family</font>
-        <br /><font size={"3"}><strong>POWERFUL MCU (SAMD21)</strong></font>
+        <br /><font size={"3"}>POWERFUL MCU (SAMD21)</font>
         <font size={"2"}>ARM® Cortex®-M0+ 32bit 48MHz microcontroller(SAMD21G18) with 256KB Flash,32KB SRAM</font>
-        <br /><font size={"3"}><strong>FLEXIBLE COMPATIBILITY</strong></font>
+        <br /><font size={"3"}>FLEXIBLE COMPATIBILITY</font>
         <font size={"2"}>Compatible with Arduino IDE, Breadboard-friendly</font>
-        <br /><font size={"3"}><strong>INTERFACE RICH</strong></font>
+        <br /><font size={"3"}>INTERFACE RICH</font>
         <font size={"2"}>11 digital/analog pins, 10 PWM Pins, 1 DAC output, 1 SWD Bonding pad interface, 1 I2C interface, 1 UART interface, 1 SPI interface</font>
     </div>
     <div class="xiao_topic_page_pic">
@@ -154,14 +154,13 @@ Machine learning is a field of computer systems that aims to develop self-improv
 
 <div class="all_container">
     <div class="xiao_topic_page_vertical">
-        <font size={"2"}>A complete AI platform to get started with TinyML and IoT - Built around the ATSAMD51P19 and ARM Cortex-M4F at 120MHz for high compatibility with various ML frameworks for microcontrollers
-</font>
-        <br /><font size={"3"}><strong>HIGH-PERFORMANCE</strong></font>
-        <font size={"2"}>ATSAMD51 Core with Realtek RTL8720DN BLE 5.0 & Wi-Fi 2.4G/5G Dev Board</font>
-        <br /><font size={"3"}><strong>Memory</strong></font><font size={"2"}>4 MB External Flash, 192 KB RAM</font>
-        <br /><font size={"3"}><strong>MULTI-FUNCTIONAL</strong></font><font size={"2"}>Complete system equipped with Screen + Development Board + Input/Output Interface + Enclosure</font>
-        <br /><font size={"3"}><strong>WIRELESS</strong></font><font size={"2"}>Reliable Wireless Connectivity, Equipped with Realtek RTL8720DN, dual-band 2.4Ghz / 5Ghz Wi-Fi</font>
-        <br /><font size={"3"}><strong>TINYML-SUPPORTED</strong></font><font size={"2"}>An Azure certified, Edge Impulse supported device to quickly get started with IoT and TinyML</font>
+        <font size={"2"}>A complete AI platform to get started with TinyML and IoT - Built around the ATSAMD51P19 and ARM Cortex-M4F at 120MHz for high compatibility with various ML frameworks for microcontrollers</font>
+        <br /><font size={"3"}>HIGH-PERFORMANCE</font>
+        <font size={"2"}>ATSAMD51 Core with Realtek RTL8720DN BLE 5.0 & Wi-Fi 2.4G/5G Dev Board</font>
+        <br /><font size={"3"}>Memory</font><font size={"2"}>4 MB External Flash, 192 KB RAM</font>
+        <br /><font size={"3"}>MULTI-FUNCTIONAL</font><font size={"2"}>Complete system equipped with Screen + Development Board + Input/Output Interface + Enclosure</font>
+        <br /><font size={"3"}>WIRELESS</font><font size={"2"}>Reliable Wireless Connectivity, Equipped with Realtek RTL8720DN, dual-band 2.4Ghz / 5Ghz Wi-Fi</font>
+        <br /><font size={"3"}>TINYML-SUPPORTED</font><font size={"2"}>An Azure certified, Edge Impulse supported device to quickly get started with IoT and TinyML</font>
     </div>
     <div class="xiao_topic_page_pic">
         <img src="https://files.seeedstudio.com/wiki/tinyml-topic/wio.png" style={{width:600, height:'auto'}}/>
@@ -185,9 +184,9 @@ Machine learning is a field of computer systems that aims to develop self-improv
     </div>
     <div class="xiao_topic_page_vertical">
         <br /><br /><br />
-        <font size={"2"}>A pre-trained embedded AI Vision Sensor with Himax HX6537-A processor, OV2640 camera sensor, a digital microphone and a 6-axis Inertial Measurement Unit (IMU), support YOLO v5 and Edge Impulse</font>
-        <br /><font size={"3"}><strong>MULTI-FUNCTIONAL</strong></font><font size={"2"}>Equipped with OV2640 sensor for image processing<br />A digital microphone & a 6-axis Inertial Measurement Unit (IMU)</font>
-        <br /><font size={"3"}><strong>TINYML-SUPPORTED</strong></font><font size={"2"}>Officially supported by Edge Impulse, with 3 customized models to realize mainstream ML functions like object detection</font>
+        <font size={"2"}>A pre-trained embedded AI Vision Sensor with Himax HX6537-A processor, OV2640 camera sensor, a digital microphone and a 6-axis Inertial Measurement Unit (IMU), support YOLO v5 and Edge Impulse</font>
+        <br /><font size={"3"}>MULTI-FUNCTIONAL</font><font size={"2"}>Equipped with OV2640 sensor for image processing<br />A digital microphone & a 6-axis Inertial Measurement Unit (IMU)</font>
+        <br /><font size={"3"}>TINYML-SUPPORTED</font><font size={"2"}>Officially supported by Edge Impulse, with 3 customized models to realize mainstream ML functions like object detection</font>
         <br /><br />
     </div>
 </div>
@@ -210,9 +209,9 @@ Machine learning is a field of computer systems that aims to develop self-improv
     <div class="xiao_topic_page_vertical">
         <br />
         <font size={"2"}>It is an MCU-based vision AI module powered by Arm Cortex-M55 & Ethos-U55. It supports TensorFlow and PyTorch frameworks and is compatible with Arduino IDE. With the SenseCraft AI algorithm platform, trained ML models can be deployed to the sensor without the need for coding.</font>
-        <br /><font size={"3"}><strong>Versatile AI Model Support:</strong></font><font size={"2"}> Easily deploy off-the-shelf or your custom AI models from SenseCraft AI, including Mobilenet V1, V2, Efficientnet-lite, Yolo v5 & v8. TensorFlow and PyTorch frameworks are supported.</font>
-        <br /><font size={"3"}><strong>Fully Open Source:</strong></font><font size={"2"}>All codes, design files, and schematics available for modification and use.</font>
-        <br /><font size={"3"}><strong>Rich Peripheral Devices:</strong></font><font size={"2"}> Includes PDM microphone, SD card slot, Type-C, Grove interface, and other peripherals.</font><br />
+        <br /><font size={"3"}>Versatile AI Model Support:</font><font size={"2"}> Easily deploy off-the-shelf or your custom AI models from SenseCraft AI, including Mobilenet V1, V2, Efficientnet-lite, Yolo v5 & v8. TensorFlow and PyTorch frameworks are supported.</font>
+        <br /><font size={"3"}>Fully Open Source:</font><font size={"2"}>All codes, design files, and schematics available for modification and use.</font>
+        <br /><font size={"3"}>Rich Peripheral Devices:</font><font size={"2"}> Includes PDM microphone, SD card slot, Type-C, Grove interface, and other peripherals.</font><br />
     </div>
 </div>
 
@@ -230,7 +229,7 @@ Machine learning is a field of computer systems that aims to develop self-improv
 <div class="all_container">
     <div class="xiao_topic_page_vertical">
         <br /><br /><br />
-        <font size={"2"}>The Sensor Prototype Kit to Quickly Get Started With LoRa® and AI<br /><br />Deploy in 10 minutes, build an AIoT project through 3 steps<br /><br />Combinition of ML and LoRa® Technologies<br /><br />Compatible with 400+ Grove sensors to support extensive applications<br /><br />Board integration with mainstream platforms for cloud support<br /><br />Upgradable to SenseCAP series industrial sensors</font>
+        <font size={"2"}>The Sensor Prototype Kit to Quickly Get Started With LoRa® and AI<br /><br />Deploy in 10 minutes, build an AIoT project through 3 steps<br /><br />Combinition of ML and LoRa® Technologies<br /><br />Compatible with 400+ Grove sensors to support extensive applications<br /><br />Board integration with mainstream platforms for cloud support<br /><br />Upgradable to SenseCAP series industrial sensors</font>
         <br /><br /><br />
     </div>
     <div class="xiao_topic_page_pic">
@@ -256,7 +255,7 @@ Machine learning is a field of computer systems that aims to develop self-improv
     <div class="xiao_topic_page_vertical">
       <br /><br /><br /><br />
       <font size={"2"}>TinyML Edge AI enabled smart image sensor, supporting a variety of AI models such as image recognition, people counting, target detection, meter recoignition etc.</font>
-      <br /><font size={"3"}><strong>TINYML-SUPPORTED</strong></font><font size={"2"}>Officially supported by Edge Impulse, quickly  get started training and deploying your ML models!</font>
+      <br /><font size={"3"}>TINYML-SUPPORTED</font><font size={"2"}>Officially supported by Edge Impulse, quickly get started training and deploying your ML models!</font>
       <br /><br /><br /><br /><br />
     </div>
 </div>
@@ -299,7 +298,7 @@ SenseCraft Model Assistant also supports multiple formats for model export, incl
 
 ### Codecraft
 
-Codecraft is based on Scratch 3.0 language and enables programming by simply “dragging and dropping” blocks. In addition to Scratch's ability to program interactive games or animations, Codecraft also supports a variety of common hardware devices, enabling hardware and software integration, which makes programming even more fun.
+Codecraft is based on Scratch 3.0 language and enables programming by simply "dragging and dropping" blocks. In addition to Scratch's ability to program interactive games or animations, Codecraft also supports a variety of common hardware devices, enabling hardware and software integration, which makes programming even more fun.
 
 <div class="button_tech_support_container">
 <a href="https://ide.tinkergen.com/" class="button_codecraft"></a> 
@@ -596,8 +595,8 @@ Wio Terminal supports a range of programming languages including Arduino, MicroP
 		</tr>
 		<tr class="table-trnobg"></tr>
     	<tr class="table-trnobg">
-			<td class="table-trnobg"><font size={"1"}>In this project we’re going to use Wio Terminal and Tensorflow Lite for Microcontrollers to create an intelligent meteostation, able to predict the weather and precipitation for next 24 hours based on local data from BME280 environmental sensor.</font></td>
-			<td class="table-trnobg"><font size={"1"}>In this project we’re going to employ a more efficient method and directly parse user utterances into actionable output in form of intent/slots.</font></td>
+			<td class="table-trnobg"><font size={"1"}>In this project we're going to use Wio Terminal and Tensorflow Lite for Microcontrollers to create an intelligent meteostation, able to predict the weather and precipitation for next 24 hours based on local data from BME280 environmental sensor.</font></td>
+			<td class="table-trnobg"><font size={"1"}>In this project we're going to employ a more efficient method and directly parse user utterances into actionable output in form of intent/slots.</font></td>
 			<td class="table-trnobg"><font size={"1"}>This tutorial will demonstrates how to use Wio Terminal to set up a simple gesture recognition machine learning demo with the help of TensorFlow Lite.</font></td>
     </tr>
 		<tr class="table-trnobg"></tr>
@@ -685,7 +684,7 @@ Using TinyML technology it is possible to combine sensor data with machine learn
 		<tr class="table-trnobg"></tr>
     	<tr class="table-trnobg">
 			<td class="table-trnobg"><font size={"1"}>In this project, we are going to play the chrome dino game physically with the help of machine learning and embedded electronics.</font></td>
-			<td class="table-trnobg"><font size={"1"}>In today’s tutorial, I’ll show you how you can build a machine learning based handwriting recognition device with the Wio Terminal and Edge Impulse. Follow this detailed guide to learn how a single time of flight sensor can allow you to recognise handwriting gestures and translate them to text!</font></td>
+			<td class="table-trnobg"><font size={"1"}>In today's tutorial, I'll show you how you can build a machine learning based handwriting recognition device with the Wio Terminal and Edge Impulse. Follow this detailed guide to learn how a single time of flight sensor can allow you to recognise handwriting gestures and translate them to text!</font></td>
     </tr>
 		<tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
@@ -776,7 +775,7 @@ Using TinyML technology it is possible to combine sensor data with machine learn
     	<tr class="table-trnobg">
 			<td class="table-trnobg"><font size={"1"}>I would like to make an infrastructure connected by LoRaWAN which has edge AI nodes monitoring the sand depletion region.</font></td>
 			<td class="table-trnobg"><font size={"1"}>Collect irrigation level data by thermal imaging, build and train a neural network model, and run the model directly on Wio Terminal.</font></td>
-			<td class="table-trnobg"><font size={"1"}>In today’s article we’re going to use Wio Terminal and Tensorflow Lite for Microcontrollers to create an intelligent meteostation, able to predict the weather and precipitation for next 24 hours based on local data from BME280 environmental sensor.</font></td>
+			<td class="table-trnobg"><font size={"1"}>In today's article we're going to use Wio Terminal and Tensorflow Lite for Microcontrollers to create an intelligent meteostation, able to predict the weather and precipitation for next 24 hours based on local data from BME280 environmental sensor.</font></td>
     </tr>
 		<tr></tr>
 		<tr class="table-trnobg">
@@ -1020,7 +1019,7 @@ TinyML can be applied to health monitoring to help the medical industry achieve 
 		</tr>
 		<tr class="table-trnobg"></tr>
     <tr class="table-trnobg">
-			<td class="table-trnobg" colspan="2"><font size={"1"}>AI is no longer stuck in the cloud. Instead of relying on powerful computers with GPUs, the past few years has brought AI to small devices thanks to TinyML – machine learning models that can run on microcontrollers. You may already have devices that use this around you, from voice controlled smart speakers to fitness trackers.<br />In this 2-part show, Jim gets his hands dirty with TinyML, building out a fitness tracker that can distinguish between rowing and running using a small microcontroller from Seeed studios – the Seeed XIAO BLE. Training and deploying these models is super complicated, so Jim enlists help from Edge Impulse, an online tool for capturing training data and building TinyML models.<br />Once Jim has his model, he will deploy it to his device using VS Code and PlatformIO, an extension for VS Code to do microcontroller development. From there he’ll deal with one of the complexities of building low powered fitness trackers, connectivity. A lot of fitness trackers use Bluetooth to sync with a phone app, so Jim will take this route, syncing fitness data to Azure IoT Central from a mobile app.</font></td>
+			<td class="table-trnobg" colspan="2"><font size={"1"}>AI is no longer stuck in the cloud. Instead of relying on powerful computers with GPUs, the past few years has brought AI to small devices thanks to TinyML – machine learning models that can run on microcontrollers. You may already have devices that use this around you, from voice controlled smart speakers to fitness trackers.<br />In this 2-part show, Jim gets his hands dirty with TinyML, building out a fitness tracker that can distinguish between rowing and running using a small microcontroller from Seeed studios – the Seeed XIAO BLE. Training and deploying these models is super complicated, so Jim enlists help from Edge Impulse, an online tool for capturing training data and building TinyML models.<br />Once Jim has his model, he will deploy it to his device using VS Code and PlatformIO, an extension for VS Code to do microcontroller development. From there he'll deal with one of the complexities of building low powered fitness trackers, connectivity. A lot of fitness trackers use Bluetooth to sync with a phone app, so Jim will take this route, syncing fitness data to Azure IoT Central from a mobile app.</font></td>
     </tr>
 		<tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">

@@ -40,7 +40,9 @@ PCB設計を自身で使用する場合は、目的に合わせて修正して�
 ファームウェアはGPLv3+の下でフリーソフトウェアとして利用可能です。
 
 *   http://git.gniibe.org/gitweb/?p=chopstx/chopstx.git;h=refs/heads/cortex-m0-support
-<pre> $ git clone --branch cortex-m0-support git://git.gniibe.org/chopstx/chopstx.git
+
+<pre>
+$ git clone --branch cortex-m0-support git://git.gniibe.org/chopstx/chopstx.git
 </pre>
 
 メインプログラムは `example-fsm-55` ディレクトリ内にあります。
@@ -58,15 +60,15 @@ PCでWindowsを使用している場合、ベンダーツールはCLIでうま�
 このツール（stlinkv2.py）を修正し、Cortex-M0 MCUで動作するようにしました。
 
 *   http://git.gniibe.org/gitweb/?p=gnuk/gnuk.git;h=refs/heads/stlink-m0-support
-<pre> $ git clone --branch stlink-m0-support git://git.gniibe.org/gnuk/gnuk.git
+
+<pre>
+$ git clone --branch stlink-m0-support git://git.gniibe.org/gnuk/gnuk.git
 </pre>
 
 このツールは元々FST-01用に開発されました。そして、SPIフラッシュチェックのようなFST-01固有のものがあります。FSM-55ではSPIフラッシュチェックを抑制するために `-i` オプションを使用して呼び出す必要があります。
 
-`
-`
-
-<pre> $ stlinkv2.py -i ...
+<pre>
+$ stlinkv2.py -i ...
 </pre>
 
 ## 理由: フリーツールは私たちにとって非常に重要です！

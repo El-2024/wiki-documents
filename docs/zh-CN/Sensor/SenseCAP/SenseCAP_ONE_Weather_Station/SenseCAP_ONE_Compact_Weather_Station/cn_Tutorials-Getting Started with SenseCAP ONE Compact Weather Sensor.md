@@ -115,7 +115,7 @@ last_update:
 
 SenseCAP ONE 配置工具提供了一个图形界面，供您配置设备。您可以从以下 GitHub 链接下载该工具：
 
-<https://github.com/Seeed-Solution/SenseCAP-One-Configuration-Tool/releases>
+[https://github.com/Seeed-Solution/SenseCAP-One-Configuration-Tool/releases](https://github.com/Seeed-Solution/SenseCAP-One-Configuration-Tool/releases)
 
 根据您的需求选择适用于 Windows、macOS 或 Linux 的软件。
 
@@ -215,7 +215,7 @@ RS-485 的设备地址和通信波特率存储在保持寄存器中，可以修�
 
 以下是 **Modbus Poll 工具** 的示例
 
-（下载地址：<https://www.modbustools.com/download.html>）。
+（下载地址：[https://www.modbustools.com/download.html](https://www.modbustools.com/download.html)）。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image35.png"/></div>
 
@@ -371,7 +371,7 @@ PM2.5、PM10 和 CO2 需要分别读取：
 ### 指令列表
 
 请参考：
-<https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf>
+[https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf](https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf)
 
 ## SDI-12
 
@@ -388,7 +388,7 @@ SDI-12 总线上的每个传感器都有一个唯一的地址，可以设置为 
 ### SDI-12 指令与响应
 
 请参考：
-<https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf>
+[https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf](https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf)
 
 ### SDI-12 读取
 
@@ -407,7 +407,7 @@ SDI-12 总线上的每个传感器都有一个唯一的地址，可以设置为 
 将红色线（Vin+ 电源正极）和棕色线（Vin- 电源地）连接到 12V 电源。
 
 下载串口调试助手：
-<https://github.com/Neutree/COMTool>，然后打开串口调试工具。
+[https://github.com/Neutree/COMTool](https://github.com/Neutree/COMTool)，然后打开串口调试工具。
 
 -   选择正确的端口号
 

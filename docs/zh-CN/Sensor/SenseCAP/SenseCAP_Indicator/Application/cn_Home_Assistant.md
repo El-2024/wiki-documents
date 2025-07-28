@@ -28,8 +28,7 @@ import TabItem from '@theme/TabItem';
 <iframe class="youtube-video-r" src="https://www.youtube.com/embed/PKMcutZDjDg" title="YouTube 视频播放器" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <div class="button-container">
-<a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">
-        立即购买 🖱️</a>
+<a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">立即购买 🖱️</a>
 </div>
 
 通过将 SenseCAP 指示器与 Home Assistant 集成，解锁智能家居的全部潜力。这种强大的组合使您能够以前所未有的轻松方式监控和控制您的环境。

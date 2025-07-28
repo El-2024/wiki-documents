@@ -27,75 +27,56 @@ Stalker Kitには、Seeeduino Stalker v3.0を使用するために必要なす�
 ---
 <table>
 <tr>
-<th> コンポーネント
-</th>
-<th> 説明
-</th>
-<th> 数量
-</th></tr>
+<th> コンポーネント </th>
+<th> 説明 </th>
+<th> 数量 </th>
+</tr>
 <tr>
-<td> <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a>
-</td>
-<td> Arduino互換のWSNノード
-</td>
-<td> 1
-</td></tr>
+<td> <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a> </td>
+<td> Arduino互換のWSNノード </td>
+<td> 1 </td>
+</tr>
 <tr>
-<td> リチウムイオンポリマーバッテリー - 1050mAh容量
-</td>
-<td> Stalker v3を使用してソーラーパネルから充電
-</td>
-<td> 1
-</td></tr>
+<td> リチウムイオンポリマーバッテリー - 1050mAh容量 </td>
+<td> Stalker v3を使用してソーラーパネルから充電 </td>
+<td> 1 </td>
+</tr>
 <tr>
-<td> SanDisk microSD™カード 4GB
-</td>
-<td> センサー値とタイムスタンプデータを記録
-</td>
-<td> 1
-</td></tr>
+<td> SanDisk microSD™カード 4GB </td>
+<td> センサー値とタイムスタンプデータを記録 </td>
+<td> 1 </td>
+</tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/mini-usb-cable-110cm-p-252.html?cPath=178_179" ><span><font size={"3"}> Mini USBケーブル 100cm </font></span></a>
-</td>
-<td> UartSBeeと使用するプログラミングケーブル
-</td>
-<td> 1
-</td></tr>
+<td> <a href="https://www.seeedstudio.com/mini-usb-cable-110cm-p-252.html?cPath=178_179" ><span><font size={"3"}> Mini USBケーブル 100cm </font></span></a> </td>
+<td> UartSBeeと使用するプログラミングケーブル </td>
+<td> 1 </td>
+</tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/uartsbee-v31-p-688.html?cPath=109" ><span><font size={"3"}> UartSBee V4 </font></span></a>
-</td>
-<td> Arduino IDEを使用してStalker V3をプログラムするためのUSB-シリアルポートを提供
-</td>
-<td> 1
-</td></tr>
+<td> <a href="https://www.seeedstudio.com/uartsbee-v31-p-688.html?cPath=109" ><span><font size={"3"}> UartSBee V4 </font></span></a> </td>
+<td> Arduino IDEを使用してStalker V3をプログラムするためのUSB-シリアルポートを提供 </td>
+<td> 1 </td>
+</tr>
 <tr>
-<td>6ピンケーブル
-</td>
-<td> UartSBeeをSeeduinoに接続
-</td>
-<td> 1
-</td></tr>
+<td> 6ピンケーブル </td>
+<td> UartSBeeをSeeduinoに接続 </td>
+<td> 1 </td>
+</tr>
 <tr>
-<td> <a href="https://www.seeedstudio.com/Seeeduino-Stalker-v3-enclosure-p-2419.html" ><span><font size={"3"}> Seeeduino Stalker v3エンクロージャ </font></span></a>
-</td>
-<td> 防水プラスチックケース
-</td>
-<td> 1
-</td></tr>
+<td> <a href="https://www.seeedstudio.com/Seeeduino-Stalker-v3-enclosure-p-2419.html" ><span><font size={"3"}> Seeeduino Stalker v3エンクロージャ </font></span></a> </td>
+<td> 防水プラスチックケース </td>
+<td> 1 </td>
+</tr>
 <tr>
-<td> 0.5wソーラーパネル 53x53mm
-</td>
-<td> 電源
-</td>
-<td> 1
-</td></tr>
+<td> 0.5wソーラーパネル 53x53mm </td>
+<td> 電源 </td>
+<td> 1 </td>
+</tr>
 <tr>
-<td> CR2032ボタン電池
-</td>
-<td>
-</td>
-<td> 1
-</td></tr></table>
+<td> CR2032ボタン電池 </td>
+<td> </td>
+<td> 1 </td>
+</tr>
+</table>
 
 ## 特徴
 

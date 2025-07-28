@@ -53,277 +53,33 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### 最大定格 (Ta=25℃)
 
-<table>
-<tr>
-<td colspan="2" width="400px"> 項目
-</td>
-<td width="200px"> 記号
-</td>
-<td width="200px"> 定格
-</td>
-<td width="200px"> 単位
-</td></tr>
-<tr>
-<td colspan="1" rowspan="4">入力
-</td>
-<td>消費電力
-</td>
-<td>PD
-</td>
-<td>100
-</td>
-<td>mW
-</td></tr>
-<tr>
-<td>逆電圧
-</td>
-<td>VR
-</td>
-<td>5
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>順電流
-</td>
-<td>IF
-</td>
-<td>50
-</td>
-<td>mA
-</td></tr>
-<tr>
-<td>パルス順電流 *1
-</td>
-<td>IFP
-</td>
-<td>1
-</td>
-<td>A
-</td></tr>
-<tr>
-<td colspan="1" rowspan="4">出力
-</td>
-<td>コレクター消費電力
-</td>
-<td>Pc
-</td>
-<td>100
-</td>
-<td>mW
-</td></tr>
-<tr>
-<td>コレクター電流
-</td>
-<td>Ic
-</td>
-<td>20
-</td>
-<td>mA
-</td></tr>
-<tr>
-<td>C-E電圧
-</td>
-<td>VCEO
-</td>
-<td>30
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>E-C電圧
-</td>
-<td>VECO
-</td>
-<td>5
-</td>
-<td>V
-</td></tr>
-<tr>
-<td colspan="2">動作温度
-</td>
-<td>Topr
-</td>
-<td> -10~+65
-</td>
-<td>℃
-</td></tr>
-<tr>
-<td colspan="2">保存温度
-</td>
-<td>Tstg
-</td>
-<td> -25~+85
-</td>
-<td>℃
-</td></tr>
-<tr>
-<td colspan="2">はんだ付け温度*2
-</td>
-<td>Tsol
-</td>
-<td>260
-</td>
-<td>℃
-</td></tr></table>
+| カテゴリ | 項目 | 記号 | 定格 | 単位 |
+|----------|------|------|------|------|
+| 入力 | 消費電力 | PD | 100 | mW |
+| 入力 | 逆電圧 | VR | 5 | V |
+| 入力 | 順電流 | IF | 50 | mA |
+| 入力 | パルス順電流 *1 | IFP | 1 | A |
+| 出力 | コレクター消費電力 | Pc | 100 | mW |
+| 出力 | コレクター電流 | Ic | 20 | mA |
+| 出力 | C-E電圧 | VCEO | 30 | V |
+| 出力 | E-C電圧 | VECO | 5 | V |
+| - | 動作温度 | Topr | -10~+65 | ℃ |
+| - | 保存温度 | Tstg | -25~+85 | ℃ |
+| - | はんだ付け温度*2 | Tsol | 260 | ℃ |
 
 ### 電気光学特性 (Ta=25℃)
 
-<table>
-<tr>
-<td colspan="2" width="300px"> 項目
-</td>
-<td width="100px"> 記号
-</td>
-<td width="200px"> 条件
-</td>
-<td width="100px"> 最小
-</td>
-<td width="100px"> 標準
-</td>
-<td width="100px"> 最大
-</td>
-<td width="100px"> 単位
-</td></tr>
-<tr>
-<td colspan="1" rowspan="4">入力
-</td>
-<td>順電圧
-</td>
-<td>VF
-</td>
-<td>IF=20mA
-</td>
-<td>
-</td>
-<td>1.2
-</td>
-<td>1.6
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>逆電流
-</td>
-<td>IR
-</td>
-<td>VR=5V
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>10
-</td>
-<td>µA
-</td></tr>
-<tr>
-<td>静電容量
-</td>
-<td>Ct
-</td>
-<td>V=0V, f=1kHZ
-</td>
-<td>
-</td>
-<td>25
-</td>
-<td>
-</td>
-<td>pF
-</td></tr>
-<tr>
-<td>ピーク波長
-</td>
-<td>λP
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>940
-</td>
-<td>
-</td>
-<td>nm
-</td></tr>
-<tr>
-<td colspan="1" rowspan="3">出力
-</td>
-<td>コレクター暗電流
-</td>
-<td>ICEO
-</td>
-<td>VCE=20V
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>0.1
-</td>
-<td>µA
-</td></tr>
-<tr>
-<td>光電流
-</td>
-<td>IL
-</td>
-<td>VCE=5V,IF=20mA
-</td>
-<td>50
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>µA
-</td></tr>
-<tr>
-<td>漏れ電流
-</td>
-<td>ICEOD
-</td>
-<td>VCE=5V,IF=10mA
-</td>
-<td>
-</td>
-<td>
-</td>
-<td>1
-</td>
-<td>µA
-</td></tr>
-<tr>
-<td colspan="1" rowspan="2">スイッチング速度
-</td>
-<td>立ち上がり時間
-</td>
-<td>tr
-</td>
-<td colspan="1" rowspan="2">Vcc=5V, Ic=1mA, RL=1kΩ
-</td>
-<td>
-</td>
-<td>15
-</td>
-<td>
-</td>
-<td>µsec
-</td></tr>
-<tr>
-<td>立ち下がり時間
-</td>
-<td>tf
-</td>
-<td>
-</td>
-<td>15
-</td>
-<td>
-</td>
-<td>µsec
-</td></tr></table>
+| カテゴリ | 項目 | 記号 | 条件 | 最小 | 標準 | 最大 | 単位 |
+|----------|------|------|------|------|------|------|------|
+| 入力 | 順電圧 | VF | IF=20mA | - | 1.2 | 1.6 | V |
+| 入力 | 逆電流 | IR | VR=5V | - | - | 10 | µA |
+| 入力 | 静電容量 | Ct | V=0V, f=1kHZ | - | 25 | - | pF |
+| 入力 | ピーク波長 | λP | - | - | 940 | - | nm |
+| 出力 | コレクター暗電流 | ICEO | VCE=20V | - | - | 0.1 | µA |
+| 出力 | 光電流 | IL | VCE=5V,IF=20mA | 50 | - | - | µA |
+| 出力 | 漏れ電流 | ICEOD | VCE=5V,IF=10mA | - | - | 1 | µA |
+| スイッチング速度 | 立ち上がり時間 | tr | Vcc=5V, Ic=1mA, RL=1kΩ | - | 15 | - | µsec |
+| スイッチング速度 | 立ち下がり時間 | tf | Vcc=5V, Ic=1mA, RL=1kΩ | - | 15 | - | µsec |
 
 ## 機械的寸法
 

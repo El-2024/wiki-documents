@@ -137,12 +137,12 @@ To enter the USB ISP mode, connect the Arch with your computer and long press it
     2.  copy a new firmware into the disk.
 
 -   On Linux
-    1.  if the disk is not mounted, mount the disk at **{mnt\_dir}**
-    2.  **dd if={new\_firmware.bin} of={mnt\_dir}/firmware.bin conv=notrunc**
+    1.  if the disk is not mounted, mount the disk at /path/to/mount
+    2.  **dd if=new_firmware.bin of=/path/to/mount/firmware.bin conv=notrunc**
 
 -   On Mac you will need to use Terminal to run the following script to copy you're .bin file to your Arch
 
-    1.  **dd if={new\_firmare.bin} of=/Volumes/CRP\\ DISABLD/firmware.bin conv=notrunc**
+    1.  **dd if=new_firmware.bin of=/Volumes/CRP\\ DISABLD/firmware.bin conv=notrunc**
 
 
 If you are so inclined, you can also create an **Automator** application to support drag-and-drop of the file to your board. Just create a "*Run Shell Script*" with the following command:

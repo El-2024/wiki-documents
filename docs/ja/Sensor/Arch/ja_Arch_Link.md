@@ -79,9 +79,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
     }
 ```
 
-<div class="admonition note">
-<p class="admonition-title">注意</p>
-もし「device.hが見つからない」というコンパイルエラーが発生した場合は、プログラム内のmbedライブラリを最新のリビジョンに更新してみてください。
+<div className="admonition note">
+<p className="admonition-title">注意</p>
+<p>'device.h'が見つからないというコンパイルエラーが発生した場合は、プログラム内のmbedライブラリを最新のリビジョンに更新してみてください。</p>
 </div>
 
 アプリケーション

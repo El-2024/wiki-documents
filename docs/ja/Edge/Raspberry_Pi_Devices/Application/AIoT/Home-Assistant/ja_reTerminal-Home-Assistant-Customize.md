@@ -149,7 +149,7 @@ Google Drive Backup アドオンを使用すると、バックアップを自動
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/30.png"/></div>
 
-- **ステップ 2.** 空欄に **<https://github.com/sabeechen/hassio-google-drive-backup>** をコピーして貼り付け、**ADD** をクリックします。
+- **ステップ 2.** 空欄に **https://github.com/sabeechen/hassio-google-drive-backup** をコピーして貼り付け、**ADD** をクリックします。
 
 <div align="center"><img width={450} src="https://files.seeedstudio.com/wiki/Home-Assistant/31.png"/></div>
 

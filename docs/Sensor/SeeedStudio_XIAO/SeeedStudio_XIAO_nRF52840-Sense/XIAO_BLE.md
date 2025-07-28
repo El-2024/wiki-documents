@@ -225,13 +225,13 @@ Seeed Studio XIAO nRF52840 Sense is compatible to the Seeed Studio XIAO expansio
     <th>XIAO nRF52840/XIAO nRF52840 Sense back indication diagram</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https:///files.seeedstudio.com/wiki/XIAO-BLE/back-pinout-5.jpg" style={{width:700, height:'auto'}}/></div></td>
+    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/back-pinout-5.jpg" style={{width:700, height:'auto'}}/></div></td>
   </tr>
   <tr>
     <th>XIAO nRF52840/XIAO nRF52840 Sense Pin List</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https:///files.seeedstudio.com/wiki/XIAO-BLE/pinout2.png" style={{width:1000, height:'auto'}}/></div></td>
+    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/pinout2.png" style={{width:1000, height:'auto'}}/></div></td>
   </tr>
 </table>
 
@@ -274,7 +274,7 @@ Seeed Studio XIAO nRF52840 assembles many functions in one tiny board and someti
 The Pin definition supported by these two libraries might be a little different and Seeed will keep update the wiki until it is clear.
 
 :::tip
-1. If you use the onboard package of Seeed nRF52 Boards, the Serial function may not compile. The solution is to add the line "#include <Adafruit_TinyUSB.h>" in your code. You can download this package from: https://github.com/adafruit/Adafruit_TinyUSB_Arduino
+1. If you use the onboard package of Seeed nRF52 Boards, the Serial function may not compile. The solution is to add the line `#include <Adafruit_TinyUSB.h>` in your code. You can download this package from: https://github.com/adafruit/Adafruit_TinyUSB_Arduino
 
 2. If you prefer a simpler approach, you can choose Seeed nRF52 mbed-enabled Boards from the beginning. It supports the compilation of the Serial function without the need for additional modifications.
 :::
@@ -308,9 +308,9 @@ Connect the Seeed Studio XIAO nRF52840 (Sense) to your computer via a USB Type-C
 - **Step 3.** Add Seeed Studio XIAO nRF52840 (Sense) board package to your Arduino IDE
 
 Navigate to **File > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
-    *<https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json>*
+    *https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json*
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png" alt="pir" width={700} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png" alt="pir" width="700" height="auto" /></p>
 
 Navigate to **Tools > Board > Boards Manager...**, type the keyword "**seeed nrf52**" in the search box, select the latest version of the board you want, and install it. You can install both.
 
@@ -495,7 +495,7 @@ void loop() {
 ```
 
 :::tip
-Here , We would like to express our special thanks to the author for providing the code  -> ***daCoder*** <-
+Here , We would like to express our special thanks to the author for providing the code → ***daCoder*** ←
 :::
 
 **If you want to know about this example more detail inforation , Click [Here](https://forum.seeedstudio.com/t/xiao-sense-accelerometer-examples-and-low-power/270801)**

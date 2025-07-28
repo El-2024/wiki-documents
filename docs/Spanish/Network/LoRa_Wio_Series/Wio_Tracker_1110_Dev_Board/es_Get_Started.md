@@ -74,33 +74,29 @@ También puedes elegir otras plataformas, pero en ese caso no podrás utilizar l
   <caption> <h2>Plataforma</h2> </caption>
   <tbody>
     <tr>
-    <td><h4>Plataforma</h4></td>
-    <td><h4>Descripción</h4></td>
+      <td><h4>Plataforma</h4></td>
+      <td><h4>Descripción</h4></td>
     </tr>
     <tr>
       <td>SenseCAP para The Things Network</td>
-    <td>Plataforma predeterminada.
-Debe usarse con una pasarela SenseCAP. SenseCAP construye un servidor TTN propietario que permite utilizar los sensores directamente al emparejarlos con una pasarela SenseCAP. <br /> <br />
-    <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCAP Outdoor Gateway</span></a><br />
-    <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCAP Indoor Gateway</span></a></td>
+      <td>Plataforma predeterminada. Debe usarse con una pasarela SenseCAP. SenseCAP construye un servidor TTN propietario que permite utilizar los sensores directamente al emparejarlos con una pasarela SenseCAP. <br /><br /><a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCAP Outdoor Gateway</span></a><br />
+        <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCAP Indoor Gateway</span></a></td>
     </tr>
-        <tr>
-    <td>SenseCAP para Helium</td>
-    <td>Cuando haya cobertura de la red Helium, los datos pueden subirse a través de Helium. Los dispositivos funcionan en una consola privada de Helium de SenseCAP. Los usuarios no necesitan crear dispositivos en la consola de Helium; funcionan directamente con la aplicación SenseCAP Mate y el portal. <br />
-
-<a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a></td>
+    <tr>
+      <td>SenseCAP para Helium</td>
+      <td>Cuando haya cobertura de la red Helium, los datos pueden subirse a través de Helium. Los dispositivos funcionan en una consola privada de Helium de SenseCAP. Los usuarios no necesitan crear dispositivos en la consola de Helium; funcionan directamente con la aplicación SenseCAP Mate y el portal. <br /><a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a></td>
     </tr>
-        <tr>
-    <td>Helium</td>
-    <td>Conecta el dispositivo a tu consola pública de Helium</td>
+    <tr>
+      <td>Helium</td>
+      <td>Conecta el dispositivo a tu consola pública de Helium</td>
     </tr>
-            <tr>
-    <td>The Things Network</td>
-    <td>Conecta el dispositivo a tu servidor TTN (TTS)</td>
+    <tr>
+      <td>The Things Network</td>
+      <td>Conecta el dispositivo a tu servidor TTN (TTS)</td>
     </tr>
-            <tr>
-    <td>Otra Plataforma</td>
-    <td>Otro servidor de red LoRaWAN</td>
+    <tr>
+      <td>Otra Plataforma</td>
+      <td>Otro servidor de red LoRaWAN</td>
     </tr>
   </tbody></table>
 

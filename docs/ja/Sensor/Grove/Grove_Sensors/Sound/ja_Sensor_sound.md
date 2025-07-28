@@ -29,7 +29,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 このユニークな「サウンドカメラ」は SeeSV-S205 と呼ばれ、中央に通常のカメラがあり、その周囲に高度なサウンドセンサーが配置されています。これにより、音を撮影することが光を撮影するのと同じくらい簡単になります。音源に向けてカメラを構えるだけで、最終的な画像で音源の位置を確認することができます。
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_sound/IMG/sound sensor.jpg" /><figcaption><b>図 1</b>. <i>SeeSV-S205 サウンドカメラ（画像提供：SinaTech, 2013）</i></figcaption>
+<div align="center">
+  <img src="https://files.seeedstudio.com/wiki/Sensor_sound/IMG/sound sensor.jpg" />
+  <figcaption><b>図 1</b>. <i>SeeSV-S205 サウンドカメラ（画像提供：SinaTech, 2013）</i></figcaption>
 </div>
 
 ### サウンドセンサーの仕組み
@@ -38,7 +40,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### サウンド＆ライトインタラクティブケーキ
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_sound/IMG/birthday cake.png" /><figcaption><b>図 2</b>. <i>サウンド＆ライトインタラクティブケーキの動作原理（画像提供：Dfrobot, 2019）</i></figcaption>
+<div align="center">
+  <img src="https://files.seeedstudio.com/wiki/Sensor_sound/IMG/birthday cake.png" />
+  <figcaption><b>図 2</b>. <i>サウンド＆ライトインタラクティブケーキの動作原理（画像提供：Dfrobot, 2019）</i></figcaption>
 </div>
 
 サウンドセンサーには黒いピックアップヘッド（マイク）が付いています。黒いピックアップヘッドの前で誕生日の歌が大きな音で再生されると、サウンドセンサーは音の振動を感知し、電気信号を生成してケーキのライトを点灯させます。

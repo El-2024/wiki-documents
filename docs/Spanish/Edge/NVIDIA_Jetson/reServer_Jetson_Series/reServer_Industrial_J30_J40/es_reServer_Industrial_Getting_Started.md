@@ -25,7 +25,8 @@ La reServer industrial tiene 5 puertos RJ45 GbE, 4 de los cuales son puertos PoE
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
 <a class="get_one_now_item" href="https://www.seeedstudio.com/reServer-industrial-J4012-p-5747.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Conseguir una 🖱️</font></span></strong>
-</a></div>
+</a>
+</div>
 
 ## Características
 
@@ -90,13 +91,13 @@ La reServer industrial tiene 5 puertos RJ45 GbE, 4 de los cuales son puertos PoE
     </tr>
     <tr>
       <td>Encoder de video</td>
-      <td colSpan={2}>Estándares soportados: H.265 (HEVC), H.264, AV1 1*4K60 (H.265) | 3*4K30 (H.265) | 6*1080p60 (H.265) | 12*1080p30 (H.265)</td>
+      <td colSpan={2}>Estándares soportados: H.265 (HEVC), H.264, AV1 1×4K60 (H.265) | 3×4K30 (H.265) | 6×1080p60 (H.265) | 12×1080p30 (H.265)</td>
       <td colSpan={2}>1080p30 soportado por 1-2 CPU núcleos </td>
     </tr>
     <tr>
       <td>Decodificador de video</td>
-      <td colSpan={2}>Estándares soportados: H.265 (HEVC), H.264, VP9, AV1 1*8K30 (H.265) | 2*4K60 (H.265) | 4*4K30 (H.265) | 9*1080p60 (H.265) | 18*1080p30 (H.265) </td>
-      <td colSpan={2}>Estándares soportados: H.265 (HEVC), H.264, VP9, AV1 1*4K60 (H.265) | 2*4K30 (H.265) | 5*1080p60 (H.265) | 11*1080p30 (H.265)</td>
+      <td colSpan={2}>Estándares soportados: H.265 (HEVC), H.264, VP9, AV1 1×8K30 (H.265) | 2×4K60 (H.265) | 4×4K30 (H.265) | 9×1080p60 (H.265) | 18×1080p30 (H.265) </td>
+      <td colSpan={2}>Estándares soportados: H.265 (HEVC), H.264, VP9, AV1 1×4K60 (H.265) | 2×4K30 (H.265) | 5×1080p60 (H.265) | 11×1080p30 (H.265)</td>
     </tr>
     <tr>
       <td rowSpan={2}>Almacenamiento</td>
@@ -110,28 +111,28 @@ La reServer industrial tiene 5 puertos RJ45 GbE, 4 de los cuales son puertos PoE
     <tr>
       <td rowSpan={9}>I/O</td>
       <td>Ethernet</td>
-      <td colSpan={4}>1* LAN0 RJ45 GbE (10/100/1000Mbps)</td>
+      <td colSpan={4}>1× LAN0 RJ45 GbE (10/100/1000Mbps)</td>
     </tr>
     <tr>
       <td> </td>
-      <td colSpan={4}>4* LAN RJ45 GbE PoE(PSE 802.3 af 15 W, 10/100/1000Mbps)</td>
+      <td colSpan={4}>4× LAN RJ45 GbE PoE(PSE 802.3 af 15 W, 10/100/1000Mbps)</td>
     </tr>
     <tr>
       <td>USB</td>
-      <td colSpan={4}>4* USB3.1, 1* USB2.0 Tipo - C(Modo dispositivo), 1* USB2.0 Tipo - C para depuración UART &amp; RP2040</td>
+      <td colSpan={4}>4× USB3.1, 1× USB2.0 Tipo - C(Modo dispositivo), 1× USB2.0 Tipo - C para depuración UART &amp; RP2040</td>
     </tr>
     <tr>
       <td>DI/DO</td>
-      <td colSpan={4}>4*DI,4*DO,3*GND_DI,2*GND_DO,1*GND_ISO,1*CAN</td>
+      <td colSpan={4}>4×DI,4×DO,3×GND_DI,2×GND_DO,1×GND_ISO,1×CAN</td>
     </tr>
     <tr>
       <td>COM</td>
-      <td colSpan={4}>1* DB9 (RS232/RS422/RS485)</td>
+      <td colSpan={4}>1× DB9 (RS232/RS422/RS485)</td>
     </tr>
     <tr>
       <td>Monitor</td>
-      <td colSpan={2}>1*HDMI 2.1 Tipo - A 7680x4320 at 30 Hz</td>
-      <td colSpan={2}>1*HDMI 1.4 Tipo - A 3840x2160 at 30 Hz</td>
+      <td colSpan={2}>1×HDMI 2.1 Tipo - A 7680x4320 at 30 Hz</td>
+      <td colSpan={2}>1×HDMI 1.4 Tipo - A 3840x2160 at 30 Hz</td>
     </tr>
     <tr>
       <td>SATA</td>
@@ -139,7 +140,7 @@ La reServer industrial tiene 5 puertos RJ45 GbE, 4 de los cuales son puertos PoE
     </tr>
     <tr>
       <td>SIM</td>
-      <td colSpan={4}>1* Ranura para tarjeta Nano SIM</td>
+      <td colSpan={4}>1× Ranura para tarjeta Nano SIM</td>
     </tr>
     <tr>
       <td>Botón</td>
@@ -156,15 +157,15 @@ La reServer industrial tiene 5 puertos RJ45 GbE, 4 de los cuales son puertos PoE
     </tr>
     <tr>
       <td>Ventilador</td>
-      <td colSpan={4}>Disipador térmico pasivo sin ventilador; 1 * conectores de ventilador (5V PWM)</td>
+      <td colSpan={4}>Disipador térmico pasivo sin ventilador; 1 × conectores de ventilador (5V PWM)</td>
     </tr>
     <tr>
       <td>TPM</td>
-      <td colSpan={4}>1* Conector TPM 2.0 (Módulo opcional)</td>
+      <td colSpan={4}>1× Conector TPM 2.0 (Módulo opcional)</td>
     </tr>
     <tr>
       <td>RTC</td>
-      <td colSpan={4}>1* RTC socket (CR1220 incluido),*RTC 2-pin</td>
+      <td colSpan={4}>1× RTC socket (CR1220 incluido),×RTC 2-pin</td>
     </tr>
     <tr>
       <td rowSpan={2}>Alimentación</td>
@@ -178,7 +179,7 @@ La reServer industrial tiene 5 puertos RJ45 GbE, 4 de los cuales son puertos PoE
     <tr>
       <td rowSpan={9}>Mecánica</td>
       <td>Dimensiones (W x D x H)</td>
-      <td colSpan={4}>194.33mm*187mm*95.5mm</td>
+      <td colSpan={4}>194.33mm×187mm×95.5mm</td>
     </tr>
     <tr>
       <td>Peso</td>
@@ -239,7 +240,7 @@ La reServer industrial tiene 5 puertos RJ45 GbE, 4 de los cuales son puertos PoE
 
 ## Flashear JetPack
 
-:::Peligro
+:::danger
 El dispositivo vendrá preinstalado con JetPack 5.1.1. Si no hay requisitos especiales, no es necesario actualizar el sistema.
 :::
 
@@ -318,8 +319,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWoMiCYaghJGsmgX8ki3lrwB67RFYkI9zvBW6t86w_7chg?e=afbbOs" target="_blank" rel="noopener noreferrer">Descarga 1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWoMiCYaghJGsmgX8ki3lrwB67RFYkI9zvBW6t86w_7chg?e=afbbOs" target="_blank" rel="noopener noreferrer">Descarga 1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EWxVw3rZF-JPuKp0ksJZkGABWmsSxVizaJIqQBL5TDL1JA?e=4JJ2XV" target="_blank" rel="noopener noreferrer">Descarga 2</a>
@@ -350,8 +350,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY9t48fwnJVLraZyoVzYe2gB5RMb9FMXqKxVT9_WBFnnzQ?e=rcBfY5" target="_blank" rel="noopener noreferrer">Descarga 1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY9t48fwnJVLraZyoVzYe2gB5RMb9FMXqKxVT9_WBFnnzQ?e=rcBfY5" target="_blank" rel="noopener noreferrer">Descarga 1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EW5Dood6aQ9DpT6ZaXWF50QBmyAyOowCktzqZj48sQeyhw?e=VVP56J" target="_blank" rel="noopener noreferrer">Descarga 2</a>
@@ -361,8 +360,7 @@ import TabItem from '@theme/TabItem';
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZlrBLKGf5VDiczIJaPNpNoBcby3urzv85oWmS34pKtcGg?e=u7aWDL" target="_blank" rel="noopener noreferrer">Descarga 1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZlrBLKGf5VDiczIJaPNpNoBcby3urzv85oWmS34pKtcGg?e=u7aWDL" target="_blank" rel="noopener noreferrer">Descarga 1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EQJBb6D2ISBEnoUnUkqVEgkB9npGJ48jw5p2DXFIWaNJxA?e=lOJiFM" target="_blank" rel="noopener noreferrer">Descarga 2</a>
@@ -372,8 +370,7 @@ import TabItem from '@theme/TabItem';
         <td>6.1</td>
         <td>36.4</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERd_GV-EQGtIiqm90pnmAisBKIuOgZnCISP783um9r7OJw?e=nYL7oz" target="_blank" rel="noopener noreferrer">Descarga 1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERd_GV-EQGtIiqm90pnmAisBKIuOgZnCISP783um9r7OJw?e=nYL7oz" target="_blank" rel="noopener noreferrer">Descarga 1</a>
         </td>
         <td>
           -
@@ -384,8 +381,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDbctjmL2tAtpW_gaqhylABEE5UT2chlro5vi20sFKygA?e=yE5NfC" target="_blank" rel="noopener noreferrer">Descarga 1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDbctjmL2tAtpW_gaqhylABEE5UT2chlro5vi20sFKygA?e=yE5NfC" target="_blank" rel="noopener noreferrer">Descarga 1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb6xTuWGRdlDpJfgLSWS7S4BpnKYxkI9RKl6tJbU0xI4FQ?e=m84vbP" target="_blank" rel="noopener noreferrer">Descarga 2</a>
@@ -405,8 +401,7 @@ import TabItem from '@theme/TabItem';
         <td>6.1</td>
         <td>36.4</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXv18M5S-gNGvFVyCgUIfOMBveES_RLF25qpEP1uMLGrBA?e=d7b2j7" target="_blank" rel="noopener noreferrer">Descarga 1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXv18M5S-gNGvFVyCgUIfOMBveES_RLF25qpEP1uMLGrBA?e=d7b2j7" target="_blank" rel="noopener noreferrer">Descarga 1</a>
         </td>
         <td>
           -
@@ -437,8 +432,7 @@ import TabItem from '@theme/TabItem';
         <td>6.1</td>
         <td>36.4</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYKvmiXvDrZKnyrWpGDKBXMByXVFfgOkbl0NyF3LY8bEWQ?e=ydwLF5" target="_blank" rel="noopener noreferrer">Descarga 1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYKvmiXvDrZKnyrWpGDKBXMByXVFfgOkbl0NyF3LY8bEWQ?e=ydwLF5" target="_blank" rel="noopener noreferrer">Descarga 1</a>
         </td>
         <td>
           -

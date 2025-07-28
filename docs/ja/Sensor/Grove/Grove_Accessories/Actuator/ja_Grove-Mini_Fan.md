@@ -33,8 +33,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 * マイクロコントローラーは Arduino 互換コードを実行
 * コードを変更して DC モーターの代わりにサーボモーターを駆動可能
 * 他の Grove モジュールに接続するための標準 4 ピン Grove ケーブルを使用
-* <div>
 
+<div>
   <span style={{color: 'red'}}>注意:</span> 最新バージョン(v1.1)では、モーターの出力電圧が 3.3 ボルトに更新されています。
 </div>
 
@@ -43,13 +43,14 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ---
 ![](https://files.seeedstudio.com/wiki/Grove-Mini_Fan/img/Mini_fan.jpg)
 
-<dl><dt>① UartSBee インターフェース: このインターフェースを使用してマイクロコントローラーのコードを変更します。[UartSBee](/UartSBee_V4) モジュールを使用して Uart インターフェースを介してマイクロコントローラーに接続します。
-</dt><dt>② JST 2.0 インターフェース: 3.3 ボルト DC モーターに接続するために使用（3.3 ボルトのみ）
-</dt><dt>③ Grove インターフェース
-</dt><dt>④ ICSP インターフェース
-</dt><dt>⑤ Atmega168 マイクロコントローラー
-</dt><dt>⑥ サーボインターフェース
-</dt></dl>
+<dl>
+<dt>① UartSBee インターフェース: このインターフェースを使用してマイクロコントローラーのコードを変更します。[UartSBee](/UartSBee_V4) モジュールを使用して Uart インターフェースを介してマイクロコントローラーに接続します。</dt>
+<dt>② JST 2.0 インターフェース: 3.3 ボルト DC モーターに接続するために使用（3.3 ボルトのみ）</dt>
+<dt>③ Grove インターフェース</dt>
+<dt>④ ICSP インターフェース</dt>
+<dt>⑤ Atmega168 マイクロコントローラー</dt>
+<dt>⑥ サーボインターフェース</dt>
+</dl>
 
 ## 使用方法
 

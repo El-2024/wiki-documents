@@ -68,7 +68,7 @@ import TabItem from '@theme/TabItem';
           >
             <strong>
               <span>
-                <font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱</font>
+                <font color="#FFFFFF" size="4"> Consigue Uno Ahora 🖱</font>
               </span>
             </strong>
           </a>
@@ -82,7 +82,7 @@ import TabItem from '@theme/TabItem';
           >
             <strong>
               <span>
-                <font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱</font>
+                <font color="#FFFFFF" size="4"> Consigue Uno Ahora 🖱</font>
               </span>
             </strong>
           </a>
@@ -96,7 +96,7 @@ import TabItem from '@theme/TabItem';
           >
             <strong>
               <span>
-                <font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱</font>
+                <font color="#FFFFFF" size="4"> Consigue Uno Ahora 🖱</font>
               </span>
             </strong>
           </a>
@@ -110,7 +110,7 @@ import TabItem from '@theme/TabItem';
           >
             <strong>
               <span>
-                <font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱</font>
+                <font color="#FFFFFF" size="4"> Consigue Uno Ahora 🖱</font>
               </span>
             </strong>
           </a>
@@ -128,7 +128,7 @@ El Seeed Studio XIAO nRF52840 Sense es compatible con la placa de expansión See
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
+            <strong><span><font color="#FFFFFF" size="4"> Consigue Uno Ahora 🖱️</font></span></strong>
     </a>
 </div>
 
@@ -151,10 +151,10 @@ El Seeed Studio XIAO nRF52840 Sense es compatible con la placa de expansión See
 	<table align="center">
   <tr>
       <th>Item</th>
-      <th style={{width:220, height:'auto'}}>Seeed Studio XIAO nRF52840</th>
-      <th style={{width:220, height:'auto'}}>Seeed Studio XIAO nRF52840 Sense</th>
-      <th style={{width:220, height:'auto'}}>Seeed Studio XIAO nRF52840 Plus</th>
-      <th style={{width:220, height:'auto'}}>Seeed Studio XIAO nRF52840 Sense Plus</th>
+      <th style={{width: '220px', height: 'auto'}}>Seeed Studio XIAO nRF52840</th>
+              <th style={{width: '220px', height: 'auto'}}>Seeed Studio XIAO nRF52840 Sense</th>
+              <th style={{width: '220px', height: 'auto'}}>Seeed Studio XIAO nRF52840 Plus</th>
+              <th style={{width: '220px', height: 'auto'}}>Seeed Studio XIAO nRF52840 Sense Plus</th>
   </tr>
   <tr>
       <th>Procesador</th>
@@ -215,19 +215,19 @@ El Seeed Studio XIAO nRF52840 Sense es compatible con la placa de expansión See
     <th>XIAO nRF52840/XIAO nRF52840 Sense diagrama de indicación frontal</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/front-pinout-4.jpg" style={{width:700, height:'auto'}}/></div></td>
+    <td><div style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/front-pinout-4.jpg" style={{width: '700px', height: 'auto'}} /></div></td>
   </tr>
   <tr>
     <th>XIAO nRF52840/XIAO nRF52840 Sense Diagrama de indicación trasera</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https:///files.seeedstudio.com/wiki/XIAO-BLE/back-pinout-5.jpg" style={{width:700, height:'auto'}}/></div></td>
+    <td><div style={{textAlign: 'center'}}><img src="https:///files.seeedstudio.com/wiki/XIAO-BLE/back-pinout-5.jpg" style={{width: '700px', height: 'auto'}} /></div></td>
   </tr>
   <tr>
     <th>XIAO nRF52840/XIAO nRF52840 Sense Lista de pines</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https:///files.seeedstudio.com/wiki/XIAO-BLE/pinout2.png" style={{width:1000, height:'auto'}}/></div></td>
+    <td><div style={{textAlign: 'center'}}><img src="https:///files.seeedstudio.com/wiki/XIAO-BLE/pinout2.png" style={{width: '1000px', height: 'auto'}} /></div></td>
   </tr>
 </table>
 
@@ -239,19 +239,19 @@ El Seeed Studio XIAO nRF52840 Sense es compatible con la placa de expansión See
     <th>XIAO nRF52840 Plus Diagrama de indicación frontal</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/plus_front.png" style={{width:700, height:'auto'}}/></div></td>
+    <td><div style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/plus_front.png" style={{width: '700px', height: 'auto'}} /></div></td>
   </tr>
   <tr>
     <th>XIAO nRF52840 Plus Diagrama de indicación trasero</th>
   </tr>
     <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/plus_back.png" style={{width:700, height:'auto'}}/></div></td>
+    <td><div style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/plus_back.png" style={{width: '700px', height: 'auto'}} /></div></td>
   </tr>
   <tr>
     <th>XIAO nRF52840 Plus Lista de pines</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/plus_pinout.png" style={{width:1000, height:'auto'}}/></div></td>
+    <td><div style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/plus_pinout.png" style={{width: '1000px', height: 'auto'}} /></div></td>
   </tr>
  </table>
 
@@ -270,7 +270,7 @@ El Seeed Studio XIAO nRF52840 agrupa muchas funciones en una pequeña placa y, a
 La definición de pines soportada por estas dos bibliotecas podría ser algo diferente y Seeed continuará actualizando la wiki hasta que quede claro.
 
 :::tip
-1. Si utilizas el paquete integrado de Seeed nRF52 Boards, la función Serial puede no compilar. La solución es agregar la línea "#include <Adafruit_TinyUSB.h>" en tu código. Puedes descargar este paquete desde: https://github.com/adafruit/Adafruit_TinyUSB_Arduino
+1. Si utilizas el paquete integrado de Seeed nRF52 Boards, la función Serial puede no compilar. La solución es agregar la línea "#include &lt;Adafruit_TinyUSB.h&gt;" en tu código. Puedes descargar este paquete desde: https://github.com/adafruit/Adafruit_TinyUSB_Arduino
 
 2. Si prefieres un enfoque más simple, puedes elegir desde el principio el paquete Seeed nRF52 mbed-enabled Boards. Este soporta la compilación de la función Serial sin la necesidad de modificaciones adicionales.
 :::
@@ -292,26 +292,26 @@ Algunos cables USB solo pueden suministrar energía y no transferir datos. Si no
 :::
 Conecta el Seeed Studio XIAO nRF52840 (Sense) a tu computadora mediante un cable USB Tipo-C.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/bletpyecconnect.png" alt="pir" width={500} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/bletpyecconnect.png" alt="pir" width="500" height="auto" /></p>
 
 ### Configuración de software
 
 - **Paso 1.** Descarga e instala la versión más reciente de Arduino IDE según tu sistema operativo.
 
-<p style={{textAlign: 'center'}}><a href="https://www.arduino.cc/en/software"><img src="https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3_1/images/Download_IDE.png" alt="pir" width={700} height="auto" /></a></p>
+<p style={{textAlign: 'center'}}><a href="https://www.arduino.cc/en/software"><img src="https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3_1/images/Download_IDE.png" alt="pir" width="700" height="auto" /></a></p>
 
 - **Paso 2.** Inicia la aplicación Arduino
 
 - **Paso 3.** Agrega el paquete de la placa Seeed Studio XIAO nRF52840 (Sense) a tu Arduino IDE
 
 Navega a **Archivo > Preferencias**, y llena el campo **"URLs adicionales para el gestor de placas"** con la siguiente URL:
-    *<https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json>*
+    *https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json*
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png" alt="pir" width={700} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png" alt="pir" width="700" height="auto" /></p>
 
 Navega a **Herramientas > Placa > Gestor de placas...**, escribe la palabra clave "**seeed nrf52**" en el cuadro de búsqueda, selecciona la versión más reciente de la placa que deseas y haz clic en instalar. Puedes instalar ambas.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO_nrf528401.png" alt="pir" width={700} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO_nrf528401.png" alt="pir" width="700" height="auto" /></p>
 
 - **Paso 4.** Selecciona tu placa y puerto
 
@@ -319,21 +319,21 @@ Navega a **Herramientas > Placa > Gestor de placas...**, escribe la palabra clav
 
 Después de instalar el paquete de la placa, navega a **Herramientas > Placa** y elige la placa que deseas, luego selecciona "**Seeed XIAO nRF52840 Sense**". Ahora hemos terminado de configurar el XIAO nRF52840 (Sense) para Arduino IDE.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO_nrf528402.png" alt="pir" width={700} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO_nrf528402.png" alt="pir" width="700" height="auto" /></p>
 
 **Puerto**
 
 Navega a **Herramientas > Puerto** y selecciona el nombre del puerto serial del Seeed Studio XIAO nRF52840 (Sense) conectado. Es probable que sea COM3 o superior (**COM1** y **COM2** generalmente están reservados para puertos seriales de hardware). El puerto serial del Seeed Studio XIAO nRF52840 (Sense) conectado suele contener paréntesis con el texto **Seeed Studio XIAO nRF52840** para **Seeed Studio XIAO nRF52840** o **Seeed Studio XIAO nRF52840 Sense** para **Seeed Studio XIAO nRF52840 Sense**.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/port.png" alt="pir" width={550} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/port.png" alt="pir" width="550" height="auto" /></p>
 
 - **Paso 5.** Navega a **Archivo > Ejemplos > 01.Básicos > Blink** para abrir el ejemplo **Blink**.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/select_blink.png" alt="pir" width={550} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/select_blink.png" alt="pir" width="550" height="auto" /></p>
 
 - **Paso 6.** Haz clic en el botón **Subir** para cargar el código del ejemplo **Blink** en la placa.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/upload_image.png" alt="pir" width={500} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/upload_image.png" alt="pir" width="500" height="auto" /></p>
 
 Una vez cargado, verás el LED rojo incorporado parpadeando con un retardo de 1 segundo entre cada parpadeo. Esto significa que la conexión fue exitosa y ahora puedes explorar más proyectos con el Seeed Studio XIAO nRF52840 (Sense).
 
@@ -375,7 +375,7 @@ Si estás utilizando el firmware de fábrica del Seeed Studio XIAO nRF52840 o nu
 
 - **Paso 2.** Usa la biblioteca `Seeed nRF52 Boards` aquí.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO_nrf528403.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO_nrf528403.png" alt="pir" width="800" height="auto" /></p>
 
 - **Paso 3.** Carga el demo de **deep_sleep** aquí y ejecútalo con **Arduino**.
 
@@ -480,7 +480,7 @@ void loop()
 ```
 
 :::tip
-Aquí, nos gustaría expresar nuestro agradecimiento especial al autor por proporcionar el código -> ***daCoder*** <-
+Aquí, nos gustaría expresar nuestro agradecimiento especial al autor por proporcionar el código → ***daCoder*** ←
 :::
 
 **Si desea saber sobre este ejemplo de información más detallada, haz click [aquí](https://forum.seeedstudio.com/t/xiao-sense-accelerometer-examples-and-low-power/270801)**
@@ -525,15 +525,15 @@ Es necesario descargar el software [Segger](https://www.segger.com/downloads/jli
 
 - **Paso 1.** Usa Jlink para conectar los pines a continuación:
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/SWD1.png" alt="pir" width={300} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/SWD1.png" alt="pir" width="300" height="auto" /></p>
 
 - **Paso 2.** Inicia J-Flash y busca nRF52840, creando un nuevo proyecto:
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/SWD2.png" alt="pir" width={500} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/SWD2.png" alt="pir" width="500" height="auto" /></p>
 
 - **Paso 3.** Haz clic en "Target" y luego selecciona "Connect".
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/SWD3.png" alt="pir" width={500} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/SWD3.png" alt="pir" width="500" height="auto" /></p>
 
 - **Paso 4.** Arrastra el archivo binario o [hex](https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_XIAO_nRF52840_Sense_bootloader-0.6.1_s140_7.3.0.hex) al software. Luego presiona F4 y F5 en ese orden. El reflasheo se completa.
 
@@ -553,7 +553,7 @@ Cuando P0.14 (D14) apaga la función ADC a un nivel alto de 3.3V, P0.31 estará 
 
 Actualmente, para este problema, recomendamos que los usuarios no apaguen la función ADC de P0.14 (D14) o configuren P0.14 (D14) en alto durante la carga de la batería.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/14.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/14.png" alt="pir" width="800" height="auto" /></p>
 
 ### P4: ¿Cómo se comporta la luz verde cuando esta enciendido?
 

@@ -29,7 +29,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ダイオードポンプ式ERBUMのおかげで、ガラス固体レーザーの高効率を実現し、ELEM-DP 10kレーザー距離計モジュールは10 Hzまたは20 Hzの連続的な高パルス繰り返し率を提供します。この機能により、このコンパクトなレーザー距離計は、航空機などの高速移動物体の距離を測定または追跡するのに理想的です。
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_distance/IMG/distance-sensor.png" /><figcaption><b>図1</b>. <i>距離センサー（Direct Industry, 2020より引用）</i></figcaption>
+<div align="center">
+  <img src="https://files.seeedstudio.com/wiki/Sensor_distance/IMG/distance-sensor.png" />
+  <figcaption><b>図1</b>. <i>距離センサー（Direct Industry, 2020より引用）</i></figcaption>
 </div>
 
 ### 距離センサーはどのように動作するか

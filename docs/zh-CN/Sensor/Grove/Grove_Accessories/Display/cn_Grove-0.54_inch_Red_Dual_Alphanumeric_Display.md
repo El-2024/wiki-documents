@@ -20,7 +20,7 @@ last_update:
 
 我们已经为Arduino、树莓派、Beaglebone和其他SBC（单板计算机）发布了很多 [显示屏](https://www.seeedstudio.com/displays-c-929.html) 现在我们为你带来了Grove - 0.54红色双字母数字显示屏，14段显示屏意味着更多的可能性和创造性。我们希望它能帮助您创建更多有趣的项目。
 
-如果您只需要一个四位数字母数字显示屏，您可以查看[Grove - 0.54”红色四位数字母数字显示屏](https://www.seeedstudio.com/Grove-0-54-Red-Quad-Alphanumeric-Display-p-4032.html)。
+如果您只需要一个四位数字母数字显示屏，您可以查看[Grove - 0.54"红色四位数字母数字显示屏](https://www.seeedstudio.com/Grove-0-54-Red-Quad-Alphanumeric-Display-p-4032.html)。
 
 
 
@@ -31,33 +31,32 @@ last_update:
 
 ## 特点
 
-- 可以显示所有字母和数字
-- 超高亮度：30mcd
-- Grove I2C接口，仅需占用两个IO引脚
-- 内置驱动器，使用简单
-- 阴极显示
+- 高亮度：超高亮度红色LED
+- 14段显示：可以显示所有字符，包括字母和数字
+- Grove接口：即插即用，无需焊接
+- I2C接口：只需要4根线
+- 可级联：可以连接多个显示屏
+- 3.3V/5V兼容
 
-## 规格
+## 规格参数
 
-| 参数            | 数值            |
-| --------------- | --------------- |
-| 供电电压        | 3.3V / 5V       |
-| 工作环境温度    | -30°C 至  85°C  |
-| LED显示屏型号   | JM-S05422AH-001 |
-| LED控制器驱动器 | HT16K33         |
-| LED颜色         | 红色            |
-| 超高亮度        | 30mcd           |
-| LED高度         | 0.54英寸        |
-| LED段数         | 14              |
-| 尺寸            | 40 * 40mm       |
-| 输出接口        | I2C             |
-| I2C地址（可选） | 0x70(默认)      |
+| 项目 | 值 |
+|------|-----|
+| 工作电压 | 3.3V / 5V |
+| 工作电流 | \<80mA |
+| 显示颜色 | 红色 |
+| 显示字符数 | 2 |
+| 字符高度 | 0.54英寸 |
+| 接口 | I2C |
+| I2C地址 | 0x70(默认) |
 
-## 应用领域
+## 应用
 
-- 工业控制指示器
-- 数字时钟、温度计、计数器、万用表
-- 仪表读数
+- 数字时钟显示
+- 计数器显示
+- 状态指示器
+- 工业控制面板
+- 汽车仪表盘
 - 其他消费类应用
 - LED显示屏
 
@@ -79,10 +78,6 @@ last_update:
 | 1    | 1    | 0    | 0x76     |
 | 1    | 1    | 1    | 0x77     |
 
-:::警告
-    如果您连接多个显示屏，您需要为每个显示屏单独提供外部VCC和GND，并将SDA、SCL和GND连接到Seeeduino板上。
-:::
-
 ## 支持的平台
 
 <!-- | Arduino                                                                                             | Raspberry Pi                                                                                             |                                                                                                 |                                                                                                          |                                                                                                    |
@@ -100,13 +95,9 @@ last_update:
 
 **所需材料**
 
-
-| Seeeduino V4.2 | 基础盾板 |Grove - 0.54" 红色双字母数字显示屏|
-|--------------|-------------|-----------------|
-|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove-0.54-Red-Dual-Alphanumeric-Display/img/front-s.png" alt="pir" width={600} height="auto" /></p>|
-|[立即获取](https://ww. seeeds<a href- ”https://ww. seeedstudio. com/Seeduino-V4.2-p-2517. html)|[立即获取](https: //www. seeedstudio. com/Base-Shield-V2-p-1378. html)|[立即获取](https://www.seeedstudio.com/Grove-0-54-Red-Dual-Alphanumeric-Display-p-4031.html)|
-
-
+- [Seeeduino V4.2](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)
+- [Base Shield](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html)  
+- [Grove - 0.54" 红色双字母数字显示屏](https://www.seeedstudio.com/Grove-0-54-Red-Dual-Alphanumeric-Display-p-4031.html)
 
 >此外，您可以考虑我们新推出的[Seeeduino Lotus M0+](https://www.seeedstudio.com/Seeeduino-Lotus-Cortex-M0-p-2896.html)，它相当于Seeeduino V4.2和基础盾板的组合。
 

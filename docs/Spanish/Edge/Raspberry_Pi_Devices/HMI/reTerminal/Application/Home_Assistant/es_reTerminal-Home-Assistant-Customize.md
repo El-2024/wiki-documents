@@ -145,7 +145,7 @@ El add-on Google Drive Backup te permite configurar respaldos automáticos que s
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/30.png"/></div>
 
-- **Paso 2.** Copia y pega **<https://github.com/sabeechen/hassio-google-drive-backup>** en la columna vacía y haz clic en **ADD**
+- **Paso 2.** Copia y pega **`https://github.com/sabeechen/hassio-google-drive-backup`** en la columna vacía y haz clic en **ADD**
 
 <div align="center"><img width={450} src="https://files.seeedstudio.com/wiki/Home-Assistant/31.png"/></div>
 

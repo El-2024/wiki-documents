@@ -112,12 +112,12 @@ After that you can see a form to fill down.
     Obtain the timezone by visiting the provided [link](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy the TZ database name.
     Set the timezone using the following format
         
-        TZ=<enter timezone>
+        TZ=[enter timezone]
 
     Obtain the claimToken by visiting the provided [link](https://www.plex.tv/claim/) and copy/paste the token.
     Set the claimToken using the following format
     
-         PLEX_CLAIM=<enter claimToken>
+         PLEX_CLAIM=[enter claimToken]
 
 - **Step 3** : Configure Bind Mounts
 

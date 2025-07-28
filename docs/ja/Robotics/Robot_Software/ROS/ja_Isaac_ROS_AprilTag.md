@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
 ## 前提条件  
-AprilTag をデプロイする前に、reComputer 上で Isaac ROS の基本環境が正常にセットアップされていることを確認してください。[インストールガイド](/docs/Robotics/Robot_Software/ROS/Install_IsaacROS.md)。ROS2 がインストールされていない場合は、[こちらのドキュメント](/docs/Robotics/Robot_Software/ROS/Install_ROS2_Humble.md)を参照してください。  
+AprilTag をデプロイする前に、reComputer 上で Isaac ROS の基本環境が正常にセットアップされていることを確認してください。[インストールガイド](./ja_Install_IsaacROS.md)。ROS2 がインストールされていない場合は、[こちらのドキュメント](./ja_Install_ROS2_Humble.md)を参照してください。
 
 ### Isaac ROS AprilTag パッケージのトピック  
 **購読されるトピック:**  

@@ -215,7 +215,7 @@ ssh user@192.xxx.xx.xx
 
 Kubernetes 是一个企业级容器编排系统，从一开始就设计为云原生。它已经发展成为事实上的云容器平台，并随着其拥抱新技术（包括容器原生虚拟化和无服务器计算）而不断扩展。
 
-Kubernetes 管理容器及更多内容，从边缘的微规模到公共和私有云环境中的大规模。它是“家庭私有云”项目的完美选择，既提供了强大的容器编排功能，又提供了学习一种需求量大且与云深度集成的技术的机会，其名称几乎与“云计算”同义。
+Kubernetes 管理容器及更多内容，从边缘的微规模到公共和私有云环境中的大规模。它是"家庭私有云"项目的完美选择，既提供了强大的容器编排功能，又提供了学习一种需求量大且与云深度集成的技术的机会，其名称几乎与"云计算"同义。
 
 在本教程中，我们使用一个主节点和三个工作节点。在接下来的步骤中，我们将用加粗字体指明软件运行在 ***master***（主节点）、***worker***（工作节点）还是 ***worker and master***（工作节点和主节点）。
 
@@ -329,7 +329,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 ```
 
 > 如果您在中国，请改用以下命令：
-kubectl apply -f <https://gitee.com/wj204811/wj204811/raw/master/kube-flannel.yml>
+kubectl apply -f https://gitee.com/wj204811/wj204811/raw/master/kube-flannel.yml
 
 确保所有 Pod 都已启动并运行：
 
@@ -414,146 +414,3 @@ sudo kubectl apply -f cuda-samples.yaml
 检查是否创建了示例 Pod：
 
 ```
-kubectl get pods
-```
-
-验证示例 Pod 的日志以支持 CUDA 库：
-
-```shell
-kubectl logs nvidia-l4t-base
-```
-
-以下是示例输出：
-
-```
-/usr/local/cuda/samples/1_Utilities/deviceQuery/deviceQuery Starting...
- CUDA Device Query (Runtime API) version (CUDART static linking)
-Detected 1 CUDA Capable device(s)
- 
-Device 0: "Xavier"
-  CUDA Driver Version / Runtime Version          10.2 / 10.2
-  CUDA Capability Major/Minor version number:    7.2
-  Total amount of global memory:                 7764 MBytes (8140709888 bytes)
-  ( 6) Multiprocessors, ( 64) CUDA Cores/MP:     384 CUDA Cores
-  GPU Max Clock rate:                            1109 MHz (1.11 GHz)
-  Memory Clock rate:                             1109 Mhz
-  Memory Bus Width:                              256-bit
-  L2 Cache Size:                                 524288 bytes
-  Maximum Texture Dimension Size (x,y,z)         1D=(131072), 2D=(131072, 65536), 3D=(16384, 16384, 16384)
-  Maximum Layered 1D Texture Size, (num) layers  1D=(32768), 2048 layers
-  Maximum Layered 2D Texture Size, (num) layers  2D=(32768, 32768), 2048 layers
-  Total amount of constant memory:               65536 bytes
-  Total amount of shared memory per block:       49152 bytes
-  Total number of registers available per block: 65536
-  Warp size:                                     32
-  Maximum number of threads per multiprocessor:  2048
-  Maximum number of threads per block:           1024
-  Max dimension size of a thread block (x,y,z): (1024, 1024, 64)
-  Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
-  Maximum memory pitch:                          2147483647 bytes
-  Texture alignment:                             512 bytes
-  Concurrent copy and kernel execution:          Yes with 1 copy engine(s)
-  Run time limit on kernels:                     No
-  Integrated GPU sharing Host Memory:            Yes
-  Support host page-locked memory mapping:       Yes
-  Alignment requirement for Surfaces:            Yes
-  Device has ECC support:                        Disabled
-  Device supports Unified Addressing (UVA):      Yes
-  Device supports Compute Preemption:            Yes
-  Supports Cooperative Kernel Launch:            Yes
-  Supports MultiDevice Co-op Kernel Launch:      Yes
-  Device PCI Domain ID / Bus ID / location ID:   0 / 0 / 0
-  Compute Mode:
-     < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
- 
-deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 10.2, CUDA Runtime Version = 10.2, NumDevs = 1
-Result = PASS
-```
-
-## 在 Kubernetes 上配置 Jupyter
-
-***worker 和 master***，添加以下内容并保存为 jupyter.yaml 文件：
-
-`nano jupyter.yaml`
-
-```shell
-apiVersion: apps/v1 # 对于 1.9.0 之前的版本使用 apps/v1beta2
-kind: Deployment
-metadata:
-  name: cluster-deployment
-spec:
-  selector:
-    matchLabels:
-      app: cluster
-  replicas: 3 # 指定部署运行 3 个与模板匹配的 pod
-  template:
-    metadata:
-      labels:
-        app: cluster
-    spec:
-      containers:
-      - name: nginx
-        image: helmuthva/jetson-nano-jupyter:latest
-        ports:
-        - containerPort: 8888
-```
-
-创建一个 jupyter GPU pod：
-
- ```
- kubectl apply -f jupyter.yml
- ```
-
-检查 jupyter pod 是否已创建并正在运行：
-
- ```shell
- kubectl get pod
- ```
-
-创建一个外部负载均衡器：
-
- ```
- kubectl expose deployment cluster-deployment --port=8888 --type=LoadBalancer 
- ```
-
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Jetson-Mate/Picture3.png" /></div>
-
-在这里可以看到 jupyter 集群在端口 31262 上有外部访问权限。因此我们使用 `http://se1.local:31262` 来访问 jupyter。
-
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Jetson-Mate/Picture4.png" /></div>
-
-我们可以使用以下代码检查可用 GPU 的数量。我们只有 3 个 worker，因此可用的 GPU 数量为 3。
-
-```python
-from tensorflow.python.client import device_lib
-
-def get_available_gpus():
-    local_device_protos = device_lib.list_local_devices()
-    return [x.name for x in local_device_protos if x.device_type == 'GPU']
-
-get_available_gpus()
-```
-
-好了，现在轮到你大展身手了。
-
-## 资源
-
-- **[PDF]** [Jetson Mate 原理图](https://files.seeedstudio.com/wiki/Jetson-Mate/Jetson-Mate-Schematics-V1.0.pdf)
-- **[PDF]** [Jetson Mate PCB 顶层](https://files.seeedstudio.com/wiki/Jetson-Mate/Jetson-Mate-PCB-TOP-V1.0.pdf)
-- **[PDF]** [Jetson Mate PCB 底层](https://files.seeedstudio.com/wiki/Jetson-Mate/Jetson-Mate-PCB-BOTTOM-V1.0.pdf)
-
-<iframe frameBorder={0} height={385} scrolling="no" src="https://www.hackster.io/WhoseAI/set-up-a-jetson-nano-nx-cluster-in-one-systerm-ac4235/embed" width={350} />
-
-## 技术支持与产品讨论
-
-感谢您选择我们的产品！我们为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供了多种沟通渠道，以满足不同的偏好和需求。
-
-<div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
-</div>
-
-<div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
-</div>

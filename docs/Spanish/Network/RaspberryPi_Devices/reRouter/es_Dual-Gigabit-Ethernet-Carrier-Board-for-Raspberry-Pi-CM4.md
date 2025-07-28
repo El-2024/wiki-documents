@@ -53,7 +53,7 @@ Incluye una variedad de periféricos de entrada/salida como MIPI CSI, MIPI DSI, 
 | Peso | 43g |
 
 
-:::cautionDanger
+:::caution
 Debido al alto nivel de integración de este producto, debe usarse con un [disipador para CM4](https://www.seeedstudio.com/Aluminum-Alloy-CNC-Heat-Sink-with-Fan-for-Raspberry-Pi-CM4-Module-p-4923.html). De lo contrario, puede causar inestabilidad en USB o Ethernet.
 :::
 

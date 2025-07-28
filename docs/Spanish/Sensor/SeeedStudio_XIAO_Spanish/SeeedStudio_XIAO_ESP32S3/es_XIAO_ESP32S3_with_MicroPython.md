@@ -64,7 +64,7 @@ ls /dev/cu*
 Esto mostrará todos los dispositivos de puertos seriales.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/1.png" /></div>
 
-:::Tip
+:::tip
 Si el puerto está ocupado, puedes usar el siguiente comando para encontrar y matar los procesos que están utilizando el puerto (en macOS):
 Identificar los procesos que utilizan el puerto:
 ```

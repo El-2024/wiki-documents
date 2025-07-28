@@ -259,8 +259,7 @@ Además, el paquete para XIAO ESP32C6 requiere al menos la versión **2.0.8** pa
 - **Paso 1.** Descarga e instala la versión estable de Arduino IDE según tu sistema operativo.
 
   <div class="download_arduino_container" style={{textAlign: 'center'}}>
-      <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Descargar Arduino IDE</font></span></strong>
-      </a>
+      <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Descargar Arduino IDE</font></span></strong></a>
   </div>
 
   <br></br>

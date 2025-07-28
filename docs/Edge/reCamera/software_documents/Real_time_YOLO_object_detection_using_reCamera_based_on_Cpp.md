@@ -29,10 +29,10 @@ First, you need to refer to the "Develop with C/C++" document to configure the c
 export SG200X_SDK_PATH=$HOME/recamera/sg2002_recamera_emmc/
 export PATH=$HOME/recamera/host-tools/gcc/riscv64-linux-musl-x86_64/bin:$PATH
 ```
-Then,enter the **Realtime_detection_http** folder under **[sscma-example-sg200x/solutions/](https://github.com/Seeed-Studio/sscma-example-sg200x/tree/main/solutions)**, and compile it.​
+Then,download the **[Realtime_detection_http](https://files.seeedstudio.com/wiki/reCamera/develop_with_c_cpp/Realtime_detection_http.zip)** project, and compile it.​
 
 ```
-cd sscma-example-sg200x/solutions/Realtime_detection_http/
+cd Realtime_detection_http/
 mkdir build && cd build
 cmake ..
 make

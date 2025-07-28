@@ -59,14 +59,14 @@ last_update:
 
 本教程的内容将主要涵盖以下步骤：
 
-1. [选择您的 Home Assistant 环境](#select-your-home-assistant-environment)
-2. [在 Home Assistant 中安装和配置 ESPHome](#install-and-configure-esphome-in-home-assistant)
-3. [配置 XIAO ESP32C3 和 ESPHome 的连接](#configure-the-xiao-esp32c3-and-esphome-connection)
-4. [配置 Home Assistant 面板](#configure-home-assistant-panel)
+1. 选择您的 Home Assistant 环境
+2. 在 Home Assistant 中安装和配置 ESPHome
+3. 配置 XIAO ESP32C3 和 ESPHome 的连接
+4. 配置 Home Assistant 面板
 
 当然，如果您对 XIAO ESP32C3 如何在 Home Assistant 中使用 Grove 感兴趣，可以直接阅读这一章节。
 
-- [使用 XIAO ESP32C3 将 Grove 连接到 Home Assistant](#connect-grove-to-home-assistant-using-xiao-esp32c3)
+- 使用 XIAO ESP32C3 将 Grove 连接到 Home Assistant
 
 ## 选择您的 Home Assistant 环境
 
@@ -248,7 +248,7 @@ panel_iframe:
 
 然后点击 **Next**。
 
-<span id="jump1">点击 <strong>Encryption key</strong> 并将其保存在安全的位置，我们将在后续步骤中使用此密钥。</span>
+点击 <strong>Encryption key</strong> 并将其保存在安全的位置，我们将在后续步骤中使用此密钥。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/homs-xiaoc3-linkstar/27.png" /></div>
 
@@ -527,7 +527,7 @@ number:
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/homs-xiaoc3-linkstar/44.png" /></div>
 
-如果输入的 IP 地址和端口号正确，您将看到要求输入加密密钥的提示，这是我们在 [第 4 步](#jump1) 中要求保存的密钥。
+如果输入的 IP 地址和端口号正确，您将看到要求输入加密密钥的提示，这是我们在第 4 步中要求保存的密钥。
 
 然后点击 **SUBMIT**。
 

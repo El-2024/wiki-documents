@@ -128,7 +128,7 @@ Dado que la Jetson Nano tiene solo un puerto PCIe, si el módulo usa la Jetson N
 
 ## Flashear Jetpack
 
-:::Peligro
+:::danger
 Al flashear JetPack se borrarán todos los datos del dispositivo. Procede con precaución.
 
 Si compraste el sistema completo en lugar de solo la Carrier Board, vendrá preinstalado con el sistema operativo JetPack, lo que te permitirá iniciarlo y usarlo directamente. Sin embargo, también puedes seguir el tutorial a continuación para instalar un nuevo sistema operativo si lo prefieres.
@@ -137,7 +137,7 @@ Si compraste el sistema completo en lugar de solo la Carrier Board, vendrá prei
 El siguiente contenido demostrará cómo actualizar el sistema JetPack 4.6.1 en el J2021. Puedes consultar este proceso para actualizar la versión de JetPack que desees en otro dispositivo.
 
 :::info
-Consulta [aquí](https://developer.nvidia.com/embedded/jetson-linux-archive) para determinar las versiones del sistema admitidas para diferentes [módulos Jetson](#supported-module).
+Consulta [aquí](https://developer.nvidia.com/embedded/jetson-linux-archive) para determinar las versiones del sistema admitidas para diferentes módulos Jetson.
 :::
 
 ### Prerequisitos
@@ -220,8 +220,8 @@ Antes de que podamos continuar con los pasos de instalación, debemos asegurarno
 
 Hay dos formas de actualizar JetPack OS en la reComputer J2021. Para los principiantes en NVIDIA Jetson, recomendamos utilizar NVIDIA SDK Manager:
 
-- [Flasheando JetPack OS con NVIDIA SDK Manage](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [Flasheando JetPack OS con la línea de comandos](#flashing-to-emmc-with-command-line)
+- Flasheando JetPack OS con NVIDIA SDK Manage
+- Flasheando JetPack OS con la línea de comandos
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';

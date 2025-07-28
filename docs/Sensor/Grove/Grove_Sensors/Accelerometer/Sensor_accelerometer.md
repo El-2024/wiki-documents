@@ -21,7 +21,9 @@ An accelerometer is a sensor capable of measuring objects' acceleration. During 
 
 For instance, recently a ninety-year-old American old lady said that after experiencing a traffic accident, the fall detection function of a smart watch successfully saved her life. When she walked out of the store and went home, a woman knocked her down while driving. At that time, the old lady could not find the phone to call the emergency service, but the smart watch she was wearing detected that she had fallen and started to ask her family for help.Thanks to a new generation of three-axis MEMS acceleration sensor and gyroscope chip technology, some smart watches now are capable of recognizing a variety of falling postures.
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Accelerometer.png" /><figcaption><b>Figure 1</b>. <i>Smart watch with a 3-axis accelerometer ( Image from Sensorexpert, 2015 )</i></figcaption>
+<div align="center">
+  <img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Accelerometer.png" />
+  <p><b>Figure 1</b>. <i>Smart watch with a 3-axis accelerometer ( Image from Sensorexpert, 2015 )</i></p>
 </div>
 
 
@@ -31,7 +33,9 @@ There exist two ways where an accelerometer works: Piezoelectric effect, and Cha
 
 #### Piezoelectric effect
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Piezoelectric effect.png" /><figcaption><b>Figure 2</b>. <i>Working principle of Piezoelectric effect ( Image from explainthatstuff, 2019 )</i></figcaption>
+<div align="center">
+  <img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Piezoelectric effect.png" />
+  <p><b>Figure 2</b>. <i>Working principle of Piezoelectric effect ( Image from explainthatstuff, 2019 )</i></p>
 </div>
 
 
@@ -40,7 +44,9 @@ As shown in the model in the figure above, accelerometers contain microscopic cr
 
 #### Change in Capacitance
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Change in Capacitance.png" /><figcaption><b>Figure 3</b>. <i>Working principle of Change in Capacitance ( Image from explainthatstuff, 2019 )</i></figcaption>
+<div align="center">
+  <img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Change in Capacitance.png" />
+  <p><b>Figure 3</b>. <i>Working principle of Change in Capacitance ( Image from explainthatstuff, 2019 )</i></p>
 </div>
 
 

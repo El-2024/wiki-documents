@@ -85,7 +85,7 @@ La RTL8822CE es una tarjeta compacta M.2 combinada WLAN+Bluetooth de doble banda
 
 ## Conexión de Hardware
 
-:::Peligro
+:::danger
 En esta wiki, usaremos la reComputer J4012 como ejemplo para demostrar cómo instalar y configurar un módulo inalámbrico RTL8822CE en un dispositivo Jetson.
 :::
 

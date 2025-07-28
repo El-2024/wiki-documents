@@ -15,14 +15,14 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
 <!-- ![](https://files.seeedstudio.com/wiki/Bazaar_doc/101020492/main_page.jpg) -->
-  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Bazaar_doc/101020492/main_page.jpg" alt="pir" width={600} height="auto" /></p>
+  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Bazaar_doc/101020492/main_page.jpg" alt="pir" width="600" height="auto" /></p>
 
 
 Grove - 3軸デジタルコンパスは、Bosch BMM150をベースにしたデジタルコンパスセンサーです。3つの直交する軸で磁場を測定でき、出力はI2CおよびSPIインターフェースを介して読み取ることができます。3軸モバイルアプリケーションに最適です。
 
 これはGrove - 3軸デジタルコンパスの第2世代であり、初代バージョンと比較して、すべての3軸アプリケーションの厳しい要件を完全に満たすことができ、価格は初代バージョンのほぼ半分と非常にコストパフォーマンスに優れています。
 
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-3-Axis-Digital-Compass-V2-p-3034.html)
+[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width="600" height="auto" /></p>](https://www.seeedstudio.com/Grove-3-Axis-Digital-Compass-V2-p-3034.html)
 
 ## 特徴
 
@@ -58,7 +58,7 @@ Grove - 3軸デジタルコンパスは、Bosch BMM150をベースにしたデ�
 | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo_n.jpg) | -->
 |Arduino|Raspberry Pi|
 |---|---|
-|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg" alt="pir" width={200} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg" alt="pir" width={200} height="auto" /></p>|
+|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg" alt="pir" width="200" height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg" alt="pir" width="200" height="auto" /></p>|
 
 :::caution
     上記で対応プラットフォームとして挙げられているものは、モジュールのソフトウェアまたは理論的な互換性を示しています。ほとんどの場合、Arduinoプラットフォーム用のソフトウェアライブラリまたはコード例のみを提供しています。すべての可能なMCUプラットフォーム用のソフトウェアライブラリやデモコードを提供することはできません。そのため、ユーザー自身でソフトウェアライブラリを作成する必要があります。
@@ -73,14 +73,14 @@ Grove - 3軸デジタルコンパスは、Bosch BMM150をベースにしたデ�
 
 | Seeeduino V4.2 | Base Shield | Grove-3-Axis_Digitial_Compass_v2.0 |
 |----------------|-------------|------------------------------------|
-|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/45d_small.jpg" alt="pir" width={600} height="auto" /></p>|
+|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg" alt="pir" width="600" height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg" alt="pir" width="600" height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/45d_small.jpg" alt="pir" width="600" height="auto" /></p>|
 |[今すぐ購入](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[今すぐ購入](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-3-Axis-Digital-Compass-V2-p-3034.html)|
 
 - **ステップ 2.** Grove-3-Axis_Digitial_Compass_v2.0をGrove-Base Shieldの**I2C**ポートに接続します。
 - **ステップ 3.** Grove - Base ShieldをSeeeduinoに差し込みます。
 - **ステップ 4.** USBケーブルを使ってSeeeduinoをPCに接続します。
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/with_ardu.jpg" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/with_ardu.jpg" alt="pir" width="600" height="auto" /></p>
 
 :::note
 Grove Base Shieldがない場合でも、以下のように直接このモジュールをSeeeduinoに接続することができます。
@@ -95,7 +95,7 @@ Grove Base Shieldがない場合でも、以下のように直接このモジュ
 
 <div class="admonition warning">
 <p class="admonition-title">注意</p>
-USBケーブルを優しく差し込んでください。そうしないとインターフェースを損傷する可能性があります。また、内部に4本のワイヤーがあるUSBケーブルを使用してください。2本のワイヤーしかないケーブルではデータを転送できません。お持ちのケーブルが不明な場合は、<a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><B>こちら</B></a>から購入できます。
+USBケーブルを優しく差し込んでください。そうしないとインターフェースを損傷する可能性があります。また、内部に4本のワイヤーがあるUSBケーブルを使用してください。2本のワイヤーしかないケーブルではデータを転送できません。お持ちのケーブルが不明な場合は、<a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><b>こちら</b></a>から購入できます。
 </div>
 
 #### ソフトウェア
@@ -164,11 +164,11 @@ void loop()
 
 **ステップ 5.** シリアルモニターを開いてセンサーのデータを受信します。
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/ardu_serial.jpg" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/ardu_serial.jpg" alt="pir" width="600" height="auto" /></p>
 
 **ステップ 6.** この3秒間の間に、以下の画像のようにコンパスを各軸で前後に傾けて回転させてください。
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/calibrate.jpg" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/calibrate.jpg" alt="pir" width="600" height="auto" /></p>
 
 キャリブレーションの時間は、関数**calibrate(uint16_t timeout)**のパラメータtimeoutを変更することで調整できます。
 
@@ -178,7 +178,7 @@ void loop()
 
 **ステップ 7.** 最後に、以下の画像のような結果が表示されます。
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/ardu_serial2.jpg" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/ardu_serial2.jpg" alt="pir" width="600" height="auto" /></p>
 
 :::tip
 方位値は0º〜360ºの範囲で、これはY軸に対応します。0ºはY軸が北を指していることを意味し、90ºはY軸が西を指していることを意味します。180ºはY軸が南を指し、270ºはY軸が東を指します。
@@ -193,7 +193,7 @@ void loop()
 
 | Raspberry Pi | Grove Base Hat for RasPi | Grove - 3-axis compass |
 |--------------|---------------------------|-------------------------|
-|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/rasp.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove_Base_Hat_for_Raspberry_Pi/img/thumbnail.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/45d_small.jpg" alt="pir" width={600} height="auto" /></p>|
+|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/rasp.jpg" alt="pir" width="600" height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove_Base_Hat_for_Raspberry_Pi/img/thumbnail.jpg" alt="pir" width="600" height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/img/45d_small.jpg" alt="pir" width="600" height="auto" /></p>|
 |[今すぐ購入](https://www.seeedstudio.com/Raspberry-Pi-3-Model-B-p-2625.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi-p-3186.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-3-Axis-Digital-Compass-V2-p-3034.html)|
 
 - **ステップ 2**. Grove Base Hat を Raspberry に接続します。
@@ -201,7 +201,7 @@ void loop()
 - **ステップ 4**. Raspberry Pi を USB ケーブルを介して PC に接続します。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove-3-Axis_Compass_V1.0/img/Compass_Hat.jpg) -->
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Compass_V1.0/img/Compass_Hat.jpg" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Compass_V1.0/img/Compass_Hat.jpg" alt="pir" width="600" height="auto" /></p>
 
 #### ソフトウェア
 
@@ -275,7 +275,7 @@ pi@raspberrypi:~/grove.py/grove $ grove_3_axis_compass_bmm150
 
 ## 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/res/Eagle File.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div class="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digitial_Compass_v2.0/res/Eagle File.zip" style={{borderRadius: '0px 0px 4px 4px', height: '500px', borderStyle: 'solid', borderWidth: '1px', borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: '1280px', maxHeight: '700px', boxSizing: 'border-box'}}>
 </div>
 
 ## リソース

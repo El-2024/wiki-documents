@@ -82,7 +82,7 @@ sudo ./tools/backup_restore/l4t_backup_restore.sh -e nvme0n1 -b recomputer-orin
 
 :::note
 JetPackフラッシュパッケージディレクトリに移動し、`xxx.conf`ファイルを見つけることができます。
-`xxx`は<target_board>です。
+`xxx`は`<target_board>`です。
 ```bash
 ls | grep *.conf
 ```

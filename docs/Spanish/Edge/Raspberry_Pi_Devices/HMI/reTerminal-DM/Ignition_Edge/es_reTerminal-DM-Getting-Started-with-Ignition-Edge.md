@@ -84,7 +84,7 @@ chmod +x ./uninstall-ignition-edge.sh
 
 ## Lanzando el Gateway de Ignition Edge por Primera Vez
 
-Cuando la instalación se complete, necesitarás iniciar el servicio. Puedes [configurar el gateway para que inicie en el arranque](#launch-ignition-edge-gateway-on-boot) y reiniciar el reTerminal o puedes optar por iniciar el servicio manualmente.
+Cuando la instalación se complete, necesitarás iniciar el servicio. Puedes configurar el gateway para que inicie en el arranque y reiniciar el reTerminal o puedes optar por iniciar el servicio manualmente.
 
 ```bash
 /opt/ignitionedge/ignition.sh start

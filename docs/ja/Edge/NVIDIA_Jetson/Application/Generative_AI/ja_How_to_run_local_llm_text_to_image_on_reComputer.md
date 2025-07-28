@@ -51,8 +51,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
 </div>
 
 また、TensorFlow と PyTorch がインストールされていることを確認する必要がありますが、ここではその手順を説明します。
@@ -493,7 +492,7 @@ curlを使用して画像を取得し保存することもできます。
 </div>
 
 プロンプトを指定する場合（推奨）、URLは以下のようになります。
-*http://jetsonIP:8080/generate_image?prompt=<your_prompt>*
+*http://jetsonIP:8080/generate_image?prompt=&lt;your_prompt&gt;*
 
 私たちはこの例を拡張して、ユーザー入力用のテキストボックスや美しい背景などを備えたより良いページを作成することができます。しかし、これは別のプロジェクトのためのものです。
 
@@ -596,7 +595,7 @@ AUTOMATIC1111は他のモデルもサポートしています。Stable Diffusion
 これは[NVIDIAのチュートリアル](https://www.jetson-ai-lab.com/tutorial_stable-diffusion-xl.html)からの例です。
 
 ```bash
-CONTAINERS_DIR=<where_jetson-containers_is_located>
+CONTAINERS_DIR=&lt;where_jetson-containers_is_located&gt;
 MODEL_DIR=$CONTAINERS_DIR/data/models/stable-diffusion/models/Stable-diffusion/
 sudo chown -R $USER $MODEL_DIR
 ```
@@ -625,7 +624,7 @@ wget -P $MODEL_DIR https://huggingface.co/stabilityai/stable-diffusion-xl-refine
 
 使用したいモデルを選択し、チェックポイントをダウンロードして以下のディレクトリに配置してください。
 ```bash
-/home/<user>/<jetson-containers-location>/data/models/stable-diffusion/models/Stable-diffusion/
+/home/&lt;user&gt;/&lt;jetson-containers-location&gt;/data/models/stable-diffusion/models/Stable-diffusion/
 ```
 私は[DreamShaper XL](https://civitai.com/models/112902/dreamshaper-xl)というモデルをダウンロードして試してみます。
 <div align="center">
@@ -648,7 +647,7 @@ wget -P $MODEL_DIR https://huggingface.co/stabilityai/stable-diffusion-xl-refine
 もしプロセスが停止したりエラーが発生した場合は、ストレージ容量を増やしてください。私の場合も容量を増やした後、すべて正常に動作しました。
 
 以下のプロンプトを使用しました：
-> holding a staff, orbstaff <lora:orbstaff:0.60>, ,(by Gabriel Isak and Adam Elsheimer:1.20), (by Jon Whitcomb and Bayard Wu and Malcolm Liepke0.80),8k , professional fashion shot
+> holding a staff, orbstaff &lt;lora:orbstaff:0.60&gt;, ,(by Gabriel Isak and Adam Elsheimer:1.20), (by Jon Whitcomb and Bayard Wu and Malcolm Liepke0.80),8k , professional fashion shot
 
 [この画像](https://civitai.com/images/8570722)から、ネガティブプロンプトなしで以下の結果を得ました。
 <div align="center">

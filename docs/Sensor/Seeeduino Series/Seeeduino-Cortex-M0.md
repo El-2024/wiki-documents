@@ -27,7 +27,7 @@ On top of that, Seeeduino Cortex-M0+ is the first Seeeduino development board wi
 
 <!-- <p style=":center"><a href="https://www.seeedstudio.com/Seeeduino-Cortex-M0-p-4070.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p> -->
 
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Seeeduino-Cortex-M0-p-4070.html)
+<a href="https://www.seeedstudio.com/Seeeduino-Cortex-M0-p-4070.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></a>
 
 
 
@@ -239,13 +239,13 @@ A few seconds after the upload finishes, you should see the pin 13 (L) LED on th
    
   <br />Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
-<div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+<div className="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" className="button_forum"></a> 
+<a href="https://www.seeedstudio.com/contacts" className="button_email"></a>
 </div>
 
-<div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
-</div>`
+<div className="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" className="button_discord"></a> 
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" className="button_discussion"></a>
+</div>
 </div>

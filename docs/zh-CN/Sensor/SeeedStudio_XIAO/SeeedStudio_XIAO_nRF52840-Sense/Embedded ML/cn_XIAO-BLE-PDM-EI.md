@@ -246,7 +246,7 @@ Edge Impulse 提供了一个简单但有效的神经网络架构用于关键词�
 ### 第八步 - 使用 XIAO nRF52840 Sense 通过语音控制 RGB 灯
 
 打开示例文件  
-进入 Examples > <your_files_names> > nano_ble33_sense > nano_ble33_sense_microphone
+进入 Examples > `<your_files_names>` > nano_ble33_sense > nano_ble33_sense_microphone
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/BLE-PDM-TinyML/edge32.png" alt="库已安装" width={600} height="auto" /></p>
 

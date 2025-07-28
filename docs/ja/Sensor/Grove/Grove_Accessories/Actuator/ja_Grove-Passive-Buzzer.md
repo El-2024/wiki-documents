@@ -222,7 +222,7 @@ void loop()
 
 ワンクリックインストール、クイックスタート、何と呼んでも構いませんが、以下の単一コマンドで、すべての依存関係と最新のgrove.pyをインストール/更新できます。
 
-:::attention
+:::warning
      **Raspberry Pi OS >= Bullseye**を使用している場合、このコマンドラインは使用できません。
 :::
 
@@ -243,7 +243,7 @@ curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo b
 
 ワンクリックインストール以外にも、すべての依存関係と最新のgrove.pyをステップバイステップでインストールすることもできます。
 
-:::attention
+:::warning
      **Raspberry Pi OS >= Bullseye**を使用している場合、**Python3のみ**で以下のコマンドラインを使用する必要があります。
 :::
 

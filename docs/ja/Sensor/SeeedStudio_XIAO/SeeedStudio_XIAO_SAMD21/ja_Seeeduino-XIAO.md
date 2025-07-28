@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # Seeed Studio XIAO SAMD21 の使い方
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino-XIAO-preview-1.jpg" alt="pir" width={600} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino-XIAO-preview-1.jpg" alt="pir" width={600} height="auto" />
 
 Seeed Studio XIAO SAMD21（以前は Seeeduino XIAO と呼ばれていました）は、[Arduino 互換の強力な親指サイズの開発ボードシリーズである Seeed Studio XIAO ファミリー](https://www.seeedstudio.com/xiao-series-page)の最初の製品です。このボードは低消費電力マイクロコントローラーである ATSAMD21G18A-MU を搭載しています。一方で、この小型ボードは処理性能が高く、消費電力が少ないという特徴があります。小型サイズで設計されており、ウェアラブルデバイスや小規模プロジェクトに使用できます。
 
@@ -70,13 +70,13 @@ Seeed Studio XIAO SAMD21 には 14 本のピンがあり、11 のデジタルイ
 
 ## **ハードウェア概要**
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino-XIAO-pinout-1.jpg" alt="pir" width={600} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino-XIAO-pinout-1.jpg" alt="pir" width={600} height="auto" />
 
-<p style={{textAlign: 'center'}}><img src="https:///files.seeedstudio.com/wiki/Seeeduino-XIAO/img/new1.png" alt="pir" width={600} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https:///files.seeedstudio.com/wiki/Seeeduino-XIAO/img/new1.png" alt="pir" width={600} height="auto" />
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino%20XIAO%20pinout%202.png" alt="pir" width={600} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino%20XIAO%20pinout%202.png" alt="pir" width={600} height="auto" />
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/regulator_to_3.3v.png" alt="pir" width={600} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/regulator_to_3.3v.png" alt="pir" width={600} height="auto" />
 
 :::caution
 一般的なI/Oピンについて：
@@ -100,7 +100,7 @@ XIAO SAMD21は現在バッテリー電源のみをサポートしており、**�
 
 この時点で、チップはブートローダーモードに入り、書き込みポートが再び表示されます。SAMD21チップには2つのパーティションがあり、1つはブートローダー、もう1つはユーザープログラムです。製品は出荷時にシステムメモリにブートローダーコードを焼き付けています。上記の手順を実行することでモードを切り替えることができます。
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/XIAO-reset.gif" alt="pir" width={600} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/XIAO-reset.gif" alt="pir" width={600} height="auto" />
 
 ### **リセット**
 
@@ -315,7 +315,7 @@ void loop()
 
 **結果**
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/THonny_DAC.jpg" alt="pir" width={600} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/THonny_DAC.jpg" alt="pir" width={600} height="auto" />
 
 ## **はじめに**
 
@@ -345,9 +345,10 @@ Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.se
 
 - **ステップ 1. Arduinoソフトウェアをインストールします。**
 
-<div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDEをダウンロード</font></span></strong>
-    </a>
+<div align="center">
+
+[**Arduino IDEをダウンロード**](https://www.arduino.cc/en/software)
+
 </div>
 
 **Arduinoアプリケーションを起動する**
@@ -369,30 +370,30 @@ LED点滅の例スケッチを開きます：**File > Examples > 01.Basics > Bli
 
 **File > Preference** をクリックし、以下のURLを「Additional Boards Manager URLs」に入力します：
 
-*<https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json>*
+[https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json](https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png" alt="pir" width={600} height="auto" /></p>
 
 **Tools-> Board-> Boards Manager...** をクリックし、検索欄に "**Seeed Studio XIAO SAMD21**" と入力します。「Seeed SAMD Boards」が表示されますので、これをインストールします。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/XIAO-board.png) -->
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/XIAO-board.png" alt="pir" width={600} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/XIAO-board.png" alt="pir" width={600} height="auto" />
 
 - **ステップ 4. ボードとポートを選択する**
 
 ボードをインストールした後、**Tools-> Board** をクリックし、 "**Seeed Studio XIAO**" を見つけて選択します。これで、Arduino IDE用にSeeed Studio XIAO SAMD21のボード設定が完了しました。
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/1.jpg" alt="pir" width={600} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/1.jpg" alt="pir" width={600} height="auto" />
 
 Arduinoボードのシリアルデバイスを **Tools | Serial Port** メニューから選択します。通常、COM3以上が該当します（**COM1** と **COM2** は通常ハードウェアシリアルポート用に予約されています）。確認するには、Arduinoボードを切断してメニューを再度開き、消えたエントリを確認してください。それがArduinoボードです。再接続してそのシリアルポートを選択します。
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/2.jpg" alt="pir" width={600} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/2.jpg" alt="pir" width={600} height="auto" />
 
 - **ステップ 5. プログラムをアップロードする**  
 
 環境内で「Upload」ボタンをクリックします。数秒待つと、アップロードが成功した場合、ステータスバーに「Done uploading.」というメッセージが表示されます。
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/upload_image.png" alt="pir" width={800} height="auto" /></p>
+<img style={{display: 'block', margin: '0 auto'}} src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/upload_image.png" alt="pir" width={800} height="auto" />
 
 アップロードが完了して数秒後、ボード上のピン13（L）LEDが点滅（オレンジ色）を開始するはずです。点滅した場合、おめでとうございます！Arduinoのセットアップが完了しました。問題がある場合は、トラブルシューティングの提案を参照してください。
 

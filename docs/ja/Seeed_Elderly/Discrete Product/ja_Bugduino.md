@@ -44,45 +44,38 @@ BugduinoはArduino互換モジュールです。
 
 <table cellpadding="1" cellspacing="1">
 <tr>
-<th scope="row"> マイクロプロセッサ
-</th>
-<td> Atmega328
-</td></tr>
+<th scope="row"> マイクロプロセッサ</th>
+<td> Atmega328</td>
+</tr>
 <tr>
-<th scope="row"> PCBサイズ
-</th>
-<td> 60.2cm x 60.2cm
-</td></tr>
+<th scope="row"> PCBサイズ</th>
+<td> 60.2cm x 60.2cm</td>
+</tr>
 <tr>
-<th scope="row"> インジケータ
-</th>
-<td> POWER、緑色LED。Txd、Rxd、Rst用のLED
-</td></tr>
+<th scope="row"> インジケータ</th>
+<td> POWER、緑色LED。Txd、Rxd、Rst用のLED</td>
+</tr>
 <tr>
-<th scope="row"> 電源供給
-</th>
-<td> 5V DC
-</td></tr>
+<th scope="row"> 電源供給</th>
+<td> 5V DC</td>
+</tr>
 <tr>
-<th scope="row"> インターフェース
-</th>
-<td> Mini-B USB、2.54mmピッチピンヘッダ
-</td></tr>
+<th scope="row"> インターフェース</th>
+<td> Mini-B USB、2.54mmピッチピンヘッダ</td>
+</tr>
 <tr>
-<th scope="row"> 接続性
-</th>
-<td> USB
-</td></tr>
+<th scope="row"> 接続性</th>
+<td> USB</td>
+</tr>
 <tr>
-<th scope="row"> 通信プロトコル
-</th>
-<td> UART、Bit Bang I/O、SPI、I2C
-</td></tr>
+<th scope="row"> 通信プロトコル</th>
+<td> UART、Bit Bang I/O、SPI、I2C</td>
+</tr>
 <tr>
-<th scope="row"> ROHS
-</th>
-<td> YES
-</td></tr></table>
+<th scope="row"> ROHS</th>
+<td> YES</td>
+</tr>
+</table>
 
 ## 機械的寸法
 

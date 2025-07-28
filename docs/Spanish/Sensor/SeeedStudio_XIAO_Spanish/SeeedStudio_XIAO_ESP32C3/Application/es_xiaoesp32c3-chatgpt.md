@@ -85,7 +85,7 @@ Todos los procedimientos y pasos en este tutorial se han completado utilizando e
 - **Paso 4.** Agrega el paquete de la placa ESP32 a tu Arduino IDE
 
 Ve a **Archivo > Preferencias** y llena el campo **"URLs adicionales para el gestor de placas"** con la siguiente URL:
-*<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json>*
+`https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json`
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/xiaoesp32c3-chatgpt/4.png"/></div>
 

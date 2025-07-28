@@ -301,7 +301,7 @@ Aquí, necesitamos descargar la imagen del sistema a nuestra PC con Ubuntu corre
 </table>
 </div>
 
-:::peligro
+:::danger
 El archivo de imagen Jetpack6 tiene un tamaño aproximado de **16,7 GB** y su descarga debería tardar unos 60 minutos. Espera a que se complete la descarga.
 :::
 

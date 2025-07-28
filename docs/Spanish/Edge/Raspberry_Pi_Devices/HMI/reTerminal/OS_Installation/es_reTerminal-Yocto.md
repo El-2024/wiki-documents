@@ -156,7 +156,7 @@ Ahí verás **rpi-test-image-seeed-reterminal.rootfs.wic.bz2**
 
 **Iniciar compilación**:
 
-```
+```sh
 bitbake <imagen>
 bitbake <imagen> -k
 ```
@@ -165,7 +165,7 @@ Ejemplo: `bitbake rpi-test-image` o `bitbake rpi-test-image -k`.
 
 **Mostrar paquetes en la imagen**:
 
-```
+```sh
 bitbake -g <imagen> && cat pn-buildlist | grep -v -e '-native' | grep -v digraph | grep -v -e '-image' | awk '{print $1}' | sort | uniq
 ```
 
@@ -179,7 +179,7 @@ bitbake -g rpi-test-image && cat pn-buildlist | grep -v -e '-native' | grep -v d
 
 **Mostrar dependencias de un paquete**:
 
-```
+```sh
 bitbake -g <paquete> && cat pn-buildlist | grep -v -e '-native' | grep -v digraph | grep -v -e '-image' | awk '{print $1}' | sort | uniq
 ```
 
@@ -193,7 +193,7 @@ bitbake -g i2c-tools && cat pn-buildlist | grep -v -e '-native' | grep -v digrap
 
 **Task dependency explorer UI**:
 
-```
+```sh
 bitbake <imagen> -g -u taskexp
 ```
 
@@ -207,7 +207,7 @@ bitbake rpi-test-image -g -u taskexp
 
 **Desplegar devshell para un paquete**:
 
-```
+```sh
 bitbake <paquete> -c devshell
 ```
 
@@ -221,7 +221,7 @@ bitbake evtest -c devshell
 
 **Listar tareas de un paquete**:
 
-```
+```sh
 bitbake <paquete> -c listtasks
 ```
 
@@ -235,7 +235,7 @@ bitbake evtest -c listtasks
 
 **Configuración interactiva del kernel**:
 
-```
+```sh
 bitbake virtual/kernel -c menuconfig
 ```
 
@@ -243,7 +243,7 @@ bitbake virtual/kernel -c menuconfig
 
 **Mostrar capas**:
 
-```
+```sh
 bitbake-layers show-layers
 ```
 
@@ -251,7 +251,7 @@ bitbake-layers show-layers
 
 **Mostrar recetas**:
 
-```
+```sh
 bitbake-layers show-recipes
 ```
 
@@ -261,7 +261,7 @@ Para ver la receta usada: `bitbake-layers show-recipes | grep rpi`
 
 **Verificar si un paquete está presente**:
 
-```
+```sh
 bitbake -s | grep <paquete>
 ```
 
@@ -275,7 +275,7 @@ bitbake -s | grep openssl
 
 **Guardar log detallado**:
 
-```
+```sh
 bitbake -v <imagen> 2>&1 | tee image_build.log
 ```
 
@@ -287,7 +287,7 @@ bitbake -v rpi-test-image 2>&1 | tee image_build.log
 
 **Limpiar el entorno**:
 
-```
+```sh
 bitbake -c cleanall [paquete]
 ```
 
@@ -386,7 +386,7 @@ http://127.0.0.1:8000
 
   - Layer name: meta-raspberrypi
   - Source code: "In a Git repository"
-  - URL: <https://github.com/agherzan/meta-raspberrypi.git>
+  - URL: [https://github.com/agherzan/meta-raspberrypi.git](https://github.com/agherzan/meta-raspberrypi.git)
   - Git revision: 8dc3a310883ea87cd9900442f46f20bb08e57583
 
 - **Paso 15.** Clic en **Import and add to project**.
@@ -395,23 +395,23 @@ http://127.0.0.1:8000
 
 - **meta-qt5**
   - name: meta-qt5
-  - Git: <https://github.com/meta-qt5/meta-qt5.git>
+  - Git: [https://github.com/meta-qt5/meta-qt5.git](https://github.com/meta-qt5/meta-qt5.git)
   - revision: master
 
 - **meta-seeed-reterminal**
   - name: meta-seeed-reterminal
-  - Git: <https://github.com/Seeed-Studio/meta-seeed-reterminal.git>
+  - Git: [https://github.com/Seeed-Studio/meta-seeed-reterminal.git](https://github.com/Seeed-Studio/meta-seeed-reterminal.git)
   - revision: main
 
 - **meta-oe**
   - name: meta-oe
-  - Git: <https://github.com/openembedded/meta-openembedded.git>
+  - Git: [https://github.com/openembedded/meta-openembedded.git](https://github.com/openembedded/meta-openembedded.git)
   - subdirectory: meta-oe
   - revision: master
 
 - **meta-python**
   - name: meta-python
-  - Git: <https://github.com/openembedded/meta-openembedded.git>
+  - Git: [https://github.com/openembedded/meta-openembedded.git](https://github.com/openembedded/meta-openembedded.git)
   - subdirectory: meta-python
   - revision: master
 

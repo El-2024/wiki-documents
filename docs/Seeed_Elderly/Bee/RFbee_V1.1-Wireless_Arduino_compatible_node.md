@@ -41,7 +41,7 @@ Features
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-Only the Rx,Tx, VCC, GND pins are identical to the Xbee. RFbee’s will not communicate with Xbee’s, so RFbee’s need to be used on both ends of the wireless connection.
+Only the Rx,Tx, VCC, GND pins are identical to the Xbee. RFbee's will not communicate with Xbee's, so RFbee's need to be used on both ends of the wireless connection.
 </div>
 
 Application Ideas
@@ -55,7 +55,7 @@ Specifications
 
 | Specification            | Value                                                      |
 |--------------------------|------------------------------------------------------------|
-| Microprocessor           | ATmega168(Version < V1.2), ATmega328(Version >= 1.2) |
+| Microprocessor           | ATmega168(Version &lt; V1.2), ATmega328(Version &gt;= 1.2) |
 | PCB size                 | 24.38mmx32.94mmx0.8mm                                      |
 | Indicators               | No                                                         |
 | Power supply             | 3.3V                                                       |
@@ -75,7 +75,7 @@ Specifications
 | Transmit Current      |     | 34.5 |     | mA   |
 | Receive Current       |     | 18.1 |     | mA   |
 | Idle Current          |     | 5.2  |     | mA   |
-| Power-down Current    |     | <0.3 |     | mA   |
+| Power-down Current    |     | &lt;0.3 |     | mA   |
 | Operating Temperature | -50 |      | 125 | °C   |
 
 Hardware Overview
@@ -89,11 +89,11 @@ Hardware Overview
 | TX      | 2   | Output       | Uart Tx port                       | 1(DIO)                  |
 | RX      | 3   | Input        | Uart Rx port                       | 0(DIO)                  |
 | PD4     | 4   | Input/Output | ATmega168 PD4                      | 4(DIO)                  |
-|  !RESET | 5   | Input        | ATmega168 Reset port               |                         |
+|  !RESET | 5   | Input        | ATmega168 Reset port               |                         |
 | PB1     | 6   | Input/Output | ATmega168 PB1                      | 9(DIO)                  |
 | PB0     | 7   | Input/Output | ATmega168 PB0                      | 8(DIO)                  |
 | PD7     | 8   | Input/Output | ATmega168 PD7                      | 7(DIO)                  |
-|  DTR    | 9   | Input        | Used for programming the ATmega168 | -                       |
+|  DTR    | 9   | Input        | Used for programming the ATmega168 | -                       |
 | GND     | 10  | GND          | GND                                | -                       |
 | PC3     | 11  | Input/Output | ATmega168 PC3                      | 3(Analog input)/17(DIO) |
 | PC2     | 12  | Input/Output | ATmega168 PC2                      | 2(Analog input)/16(DIO) |
@@ -136,7 +136,7 @@ The UartSBee device and the XbeeShield are sold separately.
 
 ### Example
 
-Here is a tutorial on how to use a RFBee transceiver from www.SeeedStudio.com with a RF Explorer Spectrum Analyzer from www.rf-explorer.com.
+Here is a tutorial on how to use a RFBee transceiver from [SeeedStudio](https://www.seeedstudio.com) with a RF Explorer Spectrum Analyzer from [rf-explorer.com](https://www.rf-explorer.com).
 
 #### RFBee monitored by RF Explorer
 
@@ -181,7 +181,7 @@ You can update the RFbee firmware using the Arduino IDE using the procedure belo
 4.  Reapply the configuration changes in the RFBee if they got lost during the update.
 5.  You could add or modify the firmware upon your demands, as the RFBee is able to work standalone as an Arduino.
 
-**RFBee firmware:** <http://code.google.com/p/rfbee/downloads/list>
+**RFBee firmware:** [Download from Google Code](http://code.google.com/p/rfbee/downloads/list)
 
 
 ## Schematic Online Viewer

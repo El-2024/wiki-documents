@@ -115,7 +115,7 @@ USB Type-Cケーブルを使用してデバイスをコンピュータに接続�
 
 SenseCAP ONE Configuration Toolは、デバイスを設定するためのグラフィカルインターフェースを提供します。このツールは以下のGitHubリンクからダウンロードできます：
 
-<https://github.com/Seeed-Solution/SenseCAP-One-Configuration-Tool/releases>
+[https://github.com/Seeed-Solution/SenseCAP-One-Configuration-Tool/releases](https://github.com/Seeed-Solution/SenseCAP-One-Configuration-Tool/releases)
 
 必要に応じて、Windows、macOS、またはLinux用のソフトウェアを選択してください。
 
@@ -215,7 +215,7 @@ RS-485のデバイスアドレスと通信ボーレートはHolding Registerに�
 
 以下は**Modbus Pollツール**の例です
 
-(<https://www.modbustools.com/download.html>からダウンロード可能)。
+([https://www.modbustools.com/download.html](https://www.modbustools.com/download.html)からダウンロード可能)。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image35.png"/></div>
 
@@ -371,7 +371,7 @@ PM2.5、PM10、およびCO2を個別に読み取る必要があります：
 ### コマンドリスト
 
 以下を参照してください：  
-<https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf>
+[https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf](https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf)
 
 ## SDI-12
 
@@ -388,7 +388,7 @@ SDI-12バス上の各センサーには一意のアドレスが割り当てら�
 ### SDI-12コマンドと応答
 
 以下を参照してください：
-<https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf>
+[https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf](https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf)
 
 ### SDI-12読み取り
 
@@ -407,7 +407,7 @@ SDI-12バス上の各センサーには一意のアドレスが割り当てら�
 赤のワイヤ（Vin+ 電源正極）と茶色のワイヤ（Vin- 電源負極）を12V電源に接続します。
 
 シリアルポートデバッグアシスタントをダウンロードしてください：
-<https://github.com/Neutree/COMTool>、その後シリアルポートデバッグツールを開きます。
+[https://github.com/Neutree/COMTool](https://github.com/Neutree/COMTool)、その後シリアルポートデバッグツールを開きます。
 
 - 適切なポート番号を選択します。
 - ボーレートをUSB to SDI-12デバッガのボーレートに設定します（SDI-12プロトコルのボーレートではないことに注意してください）。

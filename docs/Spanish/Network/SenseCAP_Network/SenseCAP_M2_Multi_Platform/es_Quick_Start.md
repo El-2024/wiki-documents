@@ -127,7 +127,8 @@ Haz clic en `Save & Apply` para guardar.
 
 #### LED Indicator
 
-<table><tr><th colspan="2" valign="top"><b>Modo</b></th><th colspan="1" valign="top"><b>Descripción</b></th></tr>
+<table>
+<tr><th colspan="2" valign="top"><b>Modo</b></th><th colspan="1" valign="top"><b>Descripción</b></th></tr>
 <tr><td colspan="1" rowspan="2" valign="top"><p></p><p></p><p>Verde</p></td><td colspan="1" valign="top">Fijo</td><td colspan="1" valign="top">Gateway conectado correctamente a Internet.</td></tr>
 <tr><td colspan="1" valign="top">Parpadeo lento</td><td colspan="1" valign="top">Gateway iniciando.</td></tr>
 <tr><td colspan="1" rowspan="3" valign="top"><p></p><p></p><p></p><p></p><p>Azul</p></td><td colspan="1" valign="top"><p></p><p>Fijo</p></td><td colspan="1" valign="top"><p>Listo para conexión.</p><p>Requiere configuración.</p></td></tr>

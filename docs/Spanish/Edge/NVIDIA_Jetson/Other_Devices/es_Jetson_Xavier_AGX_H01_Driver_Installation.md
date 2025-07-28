@@ -25,10 +25,11 @@ tags:
 
 # Instalación del controlador del kit Jetson Xavier AGX H01
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/first_1.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputerzhongwen/first_1.png" /></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Jetson-Xavier-AGX-H01-Kit-p-5283.html"><strong><span><font color={'FFFFFF'} size={"4"}> Conseguir una 🖱️</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Jetson-Xavier-AGX-H01-Kit-p-5283.html">
+        <strong><span><font color="FFFFFF" size="4"> Conseguir una 🖱️</font></span></strong>
     </a>
 </div>
 
@@ -53,12 +54,12 @@ Antes de instalar el controlador, es necesario configurar la placa en el modo de
 
 Hay un botón de recuperación en la placa, que se encuentra en medio de tres botones. Manten presionado el botón de recuperación y luego enciéndela, lo que ingresará al modo de recuperación forzada.
 
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/driver1.png" /></div>
+<div align="center"><img width="400" src="https://files.seeedstudio.com/wiki/recomputerzhongwen/driver1.png" /></div>
 
 
 Conecta la Jetson Xavier AGX H01 con la PC host de Ubuntu mediante un cable de transmisión de datos Tipo-C.
 
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/driver.png" /></div>
+<div align="center"><img width="400" src="https://files.seeedstudio.com/wiki/recomputerzhongwen/driver.png" /></div>
 
 
 #### Drivers requeridos
@@ -118,19 +119,19 @@ El ejemplo mostrado en esta wiki utiliza **NVIDIA L4T 32.7.1** para instalar **J
 
 - **Paso 1**. [Descargar](https://developer.nvidia.com/embedded/linux-tegra-r3271) los controladores en la PC host de NVIDIA. Los controladores 32.7.1 necesarios se muestran a continuación:
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver4.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/H01Driver/h01driver4.png" /></div>
 
 
-- **Paso 2**. [Descargar](https://files.seeedstudio.com/wiki/H01Driver/H01_Driver.zip) los archivos de instalación adicionales necesarios <H01_Drivers> en la PC host.
+- **Paso 2**. [Descargar](https://files.seeedstudio.com/wiki/H01Driver/H01_Driver.zip) los archivos de instalación adicionales necesarios &lt;H01_Drivers&gt; en la PC host.
 
-Mueve los archivos descargados en el **Paso 1** a la misma carpeta con <H01_Drivers>. Ahora verás tres archivos descomprimidos en la misma carpeta.
+Mueve los archivos descargados en el **Paso 1** a la misma carpeta con &lt;H01_Drivers&gt;. Ahora verás tres archivos descomprimidos en la misma carpeta.
 
-<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01drivera.png" /></div>
+<div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/H01Driver/h01drivera.png" /></div>
 
 
-- **Paso 3**. Descomprimir el archivo de <AGX_H01_Drivers.zip>.
+- **Paso 3**. Descomprimir el archivo de &lt;AGX_H01_Drivers.zip&gt;.
 
-<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver1b.png" /></div>
+<div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/H01Driver/h01driver1b.png" /></div>
 
 
 - **Paso 4**. Abre la terminal en la carpeta y descomprime el resto de los archivos. ejecuta los siguientes comandos:
@@ -143,7 +144,7 @@ $ cd ..
 $ sudo  ./apply_binaries.sh
 ```
 
-<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver5.png" /></div>
+<div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/H01Driver/h01driver5.png" /></div>
 
 
 ¡¡¡Nota!!!
@@ -151,12 +152,12 @@ $ sudo  ./apply_binaries.sh
 
 Las líneas de comando deberían lucir de la siguiente manera:
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/agx0.png" /></div>
+<div align="center"><img width="600" src="https://files.seeedstudio.com/wiki/recomputerzhongwen/agx0.png" /></div>
 
 
-- **Paso 5**. Retrocede, copia y pega el archivo desde el archivo <H01_Driver> cargado en el archivo descomprimido <Jetson_Linux_R32.6.1_aarch64.tbz2>.
+- **Paso 5**. Retrocede, copia y pega el archivo desde el archivo &lt;H01_Driver&gt; cargado en el archivo descomprimido &lt;Jetson_Linux_R32.6.1_aarch64.tbz2&gt;.
 
-<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver6.png" /></div>
+<div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/H01Driver/h01driver6.png" /></div>
 
 
 A continuación se muestran los comandos que deberías utilizar:
@@ -170,12 +171,12 @@ $ sudo ./flash.sh jetson-xavier mmcblk0p1
 
 El proceso de flasheo se ejecutará y el progreso lucirá de la siguiente manera:
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/agx2.png" /></div>
+<div align="center"><img width="600" src="https://files.seeedstudio.com/wiki/recomputerzhongwen/agx2.png" /></div>
 
 
 El resultado final debería lucir de la siguiente forma:
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/agx3.png" /></div>
+<div align="center"><img width="600" src="https://files.seeedstudio.com/wiki/recomputerzhongwen/agx3.png" /></div>
 
 
 ## Soporte Tech y discusión del producto

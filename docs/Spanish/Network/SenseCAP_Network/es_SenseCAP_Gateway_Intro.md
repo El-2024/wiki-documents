@@ -64,9 +64,11 @@ LoRa (Long Range) es un protocolo de red de área amplia y baja potencia (LPWAN)
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview/">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
     </a>
 </div>
 
@@ -89,9 +91,11 @@ LoRa (Long Range) es un protocolo de red de área amplia y baja potencia (LPWAN)
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M1-LoRaWAN-Indoor-Gateway-EU868-p-5022.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M1-LoRaWAN-Indoor-Gateway-EU868-p-5022.html">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Overview/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Overview/">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
     </a>
 </div>
 
@@ -111,9 +115,11 @@ LoRa (Long Range) es un protocolo de red de área amplia y baja potencia (LPWAN)
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M2-Data-Only-LoRaWAN-Indoor-Gateway-SX1302-EU868-p-5339.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M2-Data-Only-LoRaWAN-Indoor-Gateway-SX1302-EU868-p-5339.html">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_Overview/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_Overview/">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
     </a>
 </div>
 
@@ -125,7 +131,7 @@ LoRa (Long Range) es un protocolo de red de área amplia y baja potencia (LPWAN)
         <img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-sensecap-m2-light-hotspot-software-license--first_1_.jpg" style={{width:900, height:'auto'}}/>
     </div>
     <div class="xiao_topic_page_font1">
-        <font size={"2.1"}>SenseCAP M2 Light Hotspot es un gateway LoRaWAN de alto rendimiento compatible con Helium que permite a los usuarios unirse a la red a bajo costo. Con planes de licencia SenseCAP flexibles desde $0.05 USD por día, los usuarios pueden disfrutar de los beneficios del PoC y la transferencia de datos con una inversión mínima y mayor flexibilidad. </font>
+        <font size={"2.1"}>SenseCAP M2 Light Hotspot es un gateway LoRaWAN de alto rendimiento compatible con Helium que permite a los usuarios unirse a la red a bajo costo. Con planes de licencia SenseCAP flexibles desde \$0.05 USD por día, los usuarios pueden disfrutar de los beneficios del PoC y la transferencia de datos con una inversión mínima y mayor flexibilidad. </font>
     </div> 
 </div>
 
@@ -133,9 +139,11 @@ LoRa (Long Range) es un protocolo de red de área amplia y baja potencia (LPWAN)
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M2-Light-Hotspot-and-Software-License.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M2-Light-Hotspot-and-Software-License.html">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_Overview/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_Overview/">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
     </a>
 </div>
 
@@ -158,9 +166,11 @@ LoRa (Long Range) es un protocolo de red de área amplia y baja potencia (LPWAN)
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M4-Sqaure-Bundle.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M4-Sqaure-Bundle.html">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Overview/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Overview/">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
     </a>
 </div>
 
@@ -180,9 +190,11 @@ LoRa (Long Range) es un protocolo de red de área amplia y baja potencia (LPWAN)
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRaWAN-Gateway-EU868-p-4305.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRaWAN-Gateway-EU868-p-4305.html">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo Ahora</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/SenseCAP_LoRaWAN_Outdoor_Gateway_Overview/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/SenseCAP_LoRaWAN_Outdoor_Gateway_Overview/">
+      <strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
     </a>
 </div>
 

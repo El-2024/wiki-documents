@@ -37,7 +37,7 @@ This article will guide you through installing the Water Cooling Kit for Raspber
 
 - [Part2: Radiator connection Raspberry Pi 5](#jump2)
 
-### <span id="jump1">Part1: Water pump connection Radiator</span>
+### Part1: Water pump connection Radiator {#jump1}
 
 #### Step1: Install silicone hose
 
@@ -60,7 +60,7 @@ Connect the water pump and Radiator as shown.
 
 :::
 
-### <span id="jump2">Part2: Radiator connection Raspberry Pi 5</span>
+### Part2: Radiator connection Raspberry Pi 5 {#jump2}
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Water_Cooling_Kit/images/3.png" /></div>
 

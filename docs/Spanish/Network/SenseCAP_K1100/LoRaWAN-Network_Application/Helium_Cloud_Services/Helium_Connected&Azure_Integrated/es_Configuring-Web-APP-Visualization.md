@@ -76,7 +76,7 @@ La primera vez que utilices la CLI de Microsoft Azure en tu computadora, deberá
 
 Si la CLI puede abrir tu navegador predeterminado, iniciará el [flujo de código de autorización](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow) y cargará una página de inicio de sesión de Azure en el navegador.
 
-De lo contrario, iniciará el [flujo de código de dispositivo](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-device-code) y te indicará que abras una página del navegador en <https://aka.ms/devicelogin> e ingreses el código mostrado en tu terminal.
+De lo contrario, iniciará el [flujo de código de dispositivo](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-device-code) y te indicará que abras una página del navegador en `https://aka.ms/devicelogin` e ingreses el código mostrado en tu terminal.
 
 Inicia sesión con las credenciales de tu cuenta en el navegador.
 

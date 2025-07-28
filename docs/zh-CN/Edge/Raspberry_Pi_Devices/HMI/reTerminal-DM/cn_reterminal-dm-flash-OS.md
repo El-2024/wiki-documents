@@ -118,11 +118,10 @@ Windows 将自动检测硬件并安装必要的驱动程序。
 
 - **步骤 11.** 将 **启动模式开关** 翻转回原始位置。
 
-现在您可以跳转到 **[这里](#install-drivers)**。
 
 :::note
 
-完成上述步骤并重新为 reTerminal DM 供电后，电源 LED 应变为黄色，ACT LED 应闪烁绿色，但屏幕将保持空白且无背光。请不要惊慌，您只需按照 [安装驱动程序](#install-drivers) 的步骤操作即可恢复屏幕。
+完成上述步骤并重新为 reTerminal DM 供电后，电源 LED 应变为黄色，ACT LED 应闪烁绿色，但屏幕将保持空白且无背光。请不要惊慌，您只需按照安装驱动程序的步骤操作即可恢复屏幕。
 
 :::
 
@@ -196,7 +195,6 @@ sudo ./rpiboot
 
 - **步骤 13.** 将 **启动模式开关** 翻回到原始位置
 
-现在你可以跳转到 **[这里](#install-drivers)**
 
 :::note
 
@@ -310,9 +308,9 @@ rpi-imager
 
 :::
 
-## 安装驱动程序
+## 安装驱动程序 {#install-drivers}
 
-### 通过 SSH 访问 reTerminal DM
+### 通过 SSH 访问 reTerminal DM {#access-reterminal-dm-via-ssh}
 
 :::note
 
@@ -397,7 +395,7 @@ reTerminal DM 上预装的操作系统是 64 位的，如果您希望安装 32 �
 ```sh
 echo arm_64bit=0 | sudo tee -a /boot/config.txt
 ```
-然后继续 [**在刷写新 Raspbian OS 后安装驱动程序的过程**](#install-reterminal-drivers-after-flashing-new-raspbian-os)。
+然后继续 **在刷写新 Raspbian OS 后安装驱动程序的过程**。
 
 :::
 

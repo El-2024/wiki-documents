@@ -20,8 +20,7 @@ Con respecto a las características mencionadas anteriormente, la XIAO ESP32C3 e
 ¡Esta wiki te mostrará cómo puedes comenzar rápidamente con el XIAO ESP32C3!
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html"><strong><span><font color={'FFFFFF'} size={"4"}> Consígue uno ahora 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html"><strong><span><font color={'FFFFFF'} size={"4"}> Consígue uno ahora 🖱️</font></span></strong></a>
 </div>
 
 ## Características
@@ -175,7 +174,7 @@ Primero, vamos a conectar la XIAO ESP32C3 a la computadora, conectar un LED a la
 - **Paso 3.** Añade el paquete de placas ESP32 a tu Arduino IDE
 
 Navega a **Archivo > Preferencias**, y llena el campo **"URLs adicionales para el gestor de placas"** con la siguiente URL:
-*<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json>*
+`https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/add_board.png" style={{width:550, height:'auto'}}/></div>
 

@@ -39,8 +39,7 @@ For this tutorial, we're going to need a Nvidia [Jetson Orin NX 16GB](https://ww
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
 </div>
 
 ### Software Setup
@@ -95,7 +94,7 @@ In the file /etc/nvpmodel.conf, we have the power modes available.
 < POWER_MODEL ID=2 NAME=15W >
 < POWER_MODEL ID=3 NAME=25W >
 ```
-We can then use *sudo nvpmodel -m <#power model>* to change the power mode. And, according to [this thread post](https://forums.developer.nvidia.com/t/power-mode-in-terminal/287224), the settings are kept even after reboots.
+We can then use *sudo nvpmodel -m `<power model number>`* to change the power mode. And, according to [this thread post](https://forums.developer.nvidia.com/t/power-mode-in-terminal/287224), the settings are kept even after reboots.
 To see what power level are we on now,
 
 ```bash

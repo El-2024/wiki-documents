@@ -162,7 +162,7 @@ The Left and right arrow keys are used to select the channel or device and the U
 
 ## Usage overview
 
-To get started, clone <https://github.com/respeaker/mic_hat.git> repository to your Raspberry Pi.
+To get started, clone [https://github.com/respeaker/mic_hat.git](https://github.com/respeaker/mic_hat.git) repository to your Raspberry Pi.
 
 ```bash
 git clone https://github.com/respeaker/mic_hat.git

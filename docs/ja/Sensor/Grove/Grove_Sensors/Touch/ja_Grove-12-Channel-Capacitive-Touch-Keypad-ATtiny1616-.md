@@ -43,8 +43,10 @@ Grove 12ボタン静電容量式タッチキーパッドは、最大16 MHzで動
 
 <div align="center">
 <figure>
-  <a href="https://files.seeedstudio.com/wiki/Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616/img/pinmap.jpg" target="_blank"><img src="https://files.seeedstudio.com/wiki/Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616/img/pinmap.jpg" alt="タッチキーパッドハードウェア" title="ハードウェア概要" />
-  <figcaption><b>図1</b>. <i>ハードウェア概要</i></figcaption></a>
+  <a href="https://files.seeedstudio.com/wiki/Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616/img/pinmap.jpg" target="_blank">
+    <img src="https://files.seeedstudio.com/wiki/Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616/img/pinmap.jpg" alt="タッチキーパッドハードウェア" title="ハードウェア概要" />
+  </a>
+  <figcaption><b>図1</b>. <i>ハードウェア概要</i></figcaption>
 </figure>
 </div>
 
@@ -199,7 +201,7 @@ void printData() {
 
 - **ステップ4.** Arduino IDEの**シリアルモニタ**を開きます。**ツール -> シリアルモニタ**をクリックするか、`ctrl`+`shift`+`m`キーを同時に押します。ボーレートを**9600**に設定します。
 
-:::tipsuccess
+:::tip
 これで、キーパッドに触れると、モニタに対応するキーが出力されます。
 :::
 
@@ -313,7 +315,7 @@ python grove_12_channel_touch_keypad.py
 
 ```
 
-:::tipsuccess
+:::tip
     次にキーキャップに触れると、ターミナルに対応するキーが出力されます。
 :::
 

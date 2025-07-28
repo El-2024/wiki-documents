@@ -74,8 +74,8 @@ Además de las poderosas funciones del dispositivo, SenseCAP ofrece una variedad
 
 **Nota:**
 
-**Las tarifas de activación NO están incluidas en el producto. Se deducirán $0.50 por la activación y $0.50 por la confirmación de ubicación desde la billetera del usuario.**  
-Asegúrate de tener suficientes Helium Data Credit y al menos $1 en SOL en la billetera antes de iniciar el proceso.
+**Las tarifas de activación NO están incluidas en el producto. Se deducirán \$0.50 por la activación y \$0.50 por la confirmación de ubicación desde la billetera del usuario.**
+Asegúrate de tener suficientes Helium Data Credit y al menos \$1 en SOL en la billetera antes de iniciar el proceso.
 
 ![](https://www.sensecapmx.com/wp-content/uploads/2022/07/Pasted-into-Overview.png)
 

@@ -24,7 +24,8 @@ import TabItem from '@theme/TabItem';
 
 <div class="button-container">
 <a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">
-        Get One Now 🖱️</a>
+        Get One Now 🖱️
+</a>
 </div>
 
 Unlock the full potential of your smart home by integrating the SenseCAP Indicator with Home Assistant. This powerful combination allows you to monitor and control your environment with unprecedented ease.

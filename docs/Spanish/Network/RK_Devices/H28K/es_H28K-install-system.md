@@ -52,7 +52,7 @@ También es posible flashear el sistema en la memoria eMMC integrada del H28K.
 
 Cuando una tarjeta TF está insertada en el H28K, el sistema en la tarjeta TF es el que se inicia al encender el dispositivo, ya que la **tarjeta TF tiene prioridad de booteo**.
 
-### <span id="jump1">Flashear QWRT en la tarjeta TF</span>
+### Flashear QWRT en la tarjeta TF {#jump1}
 
 #### Preparación
 
@@ -135,7 +135,7 @@ password: password
 
 Felicitaciones, ahora has instalado exitosamente QWRT desde la tarjeta TF.
 
-### <span id="jump2">Flashear QWRT en la memoria eMMC</span>
+### Flashear QWRT en la memoria eMMC {#jump2}
 
 #### Preparación
 

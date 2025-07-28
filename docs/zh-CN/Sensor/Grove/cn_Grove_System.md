@@ -30,7 +30,7 @@ last_update:
 - [**Grove资源**](#jump12)
 - [**技术支持与产品讨论**](#jump13)
 
-## <span id="jump1"> 什么是Grove生态系统？ </span>
+## 什么是Grove生态系统？ {#jump1}
 
 Grove是一个模块化、标准化的连接器原型系统。与使用跳线或焊接的系统相比，Grove的模块化积木式方法使组装真实电子设备变得简单。Grove系统由一个基础单元和各种带有标准化连接器的模块组成。这些最初被称为"stems"和"twigs"，但这些名称已经被逐步淘汰。
 
@@ -41,45 +41,39 @@ Grove是一个模块化、标准化的连接器原型系统。与使用跳线或
     </a>
 </div> -->
 
-## <span id="jump2"> Grove生态系统包含什么？ </span>
+## Grove生态系统包含什么？ {#jump2}
 
 Grove生态系统为原型制作和构建电子系统提供了便捷且用户友好的方法。其模块化特性、标准化连接器和广泛的模块范围使初学者和经验丰富的制造者都能够快速组装和实验真实的电子设备。
 
-### <span id="jump3"> Grove传感器 </span>
+### Grove传感器 {#jump3}
 
 Grove生态系统提供了各种传感器，可以轻松集成到您的电子项目中。这些传感器专为处理特定功能而设计，可以提供各种类型的输入数据。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/GroveSystem/images/grove_cover.png" style={{width:1000, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Sensor_Intro/"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="/Grove_Sensor_Intro/"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
 </div>
 
-### <span id="jump4"> Grove网络模块</span>
+### Grove网络模块 {#jump4}
 
 Grove系统还包括网络模块，可在您的项目中实现通信和连接功能。这些模块允许您将电子设备连接到不同的网络，如Wi-Fi、蓝牙、LoRa、NFC或其他标准协议。
 
 借助Grove网络模块，您可以轻松为项目添加无线功能，实现数据传输、远程控制或与其他设备和互联网的交互。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_network_module_intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="/Grove_network_module_intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
 </div>
 
-### <span id="jump5"> Grove配件 </span>
+### Grove配件 {#jump5}
 
 除了传感器和网络模块外，Grove生态系统还提供各种配件来补充和增强您的电子项目。这些配件包括液晶显示器、LED矩阵、电机驱动器、继电器模块等组件。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
 </div>
 
 <!-- - [Grove传感器](/Grove_Sensor_Intro)
@@ -98,7 +92,7 @@ Grove系统还包括网络模块，可在您的项目中实现通信和连接功
 - [Seeed声音传感器选择指南](https://wiki.seeedstudio.com/Sensor_sound/)
  -->
 
-### <span id="jump6"> 支持Grove接口的开发板 </span>
+### 支持Grove接口的开发板 {#jump6}
 
 Grove接口设计为兼容各种开发板和微控制器。
 
@@ -115,7 +109,7 @@ Grove接口设计为兼容各种开发板和微控制器。
 		<tr class="table-trnobg">
 			<td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7fcf1504b9ae121117c384508995ea87/z/h/zheng1.jpg" style={{width:300, height:'auto'}}/></div></td>
       <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7fcf1504b9ae121117c384508995ea87/h/t/httpsstatics3.seeedstudio.comseeedimg2016-09ojyc6a5jtrgslqwc5j7gw9ti.jpg" style={{width:300, height:'auto'}}/></div></td>
-      <td class="table-trnobg"><div sawakentyle={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7fcf1504b9ae121117c384508995ea87/1/1/114992653_front-05.jpg" style={{width:300, height:'auto'}}/></div></td>
+      <td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/7fcf1504b9ae121117c384508995ea87/1/1/114992653_front-05.jpg" style={{width:300, height:'auto'}}/></div></td>
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
@@ -194,7 +188,7 @@ Grove接口设计为兼容各种开发板和微控制器。
     </a>
 </div> -->
 
-### <span id="jump7"> 包含Grove模块和课程的套件 </span>
+### 包含Grove模块和课程的套件 {#jump7}
 
 #### 基于Arduino开发板
 
@@ -294,20 +288,18 @@ Grove Arduino初学者套件是最适合初学者的Arduino初学者套件之一
 :::
 
 
-### <span id="jump8"> 共创计划 - Grove模块  </span>
+### 共创计划 - Grove模块 {#jump8}
 
 Seeed Studio Fusion启动了Grove传感器共创活动，帮助工程师将他们的Grove设计转化为真实产品。参与者可以在Seeed Studio Bazaar（产品购买页面）上制造和销售他们的设计。
 
 <div style={{textAlign:'center'}}><img src="https://www.seeedstudio.com/blog/wp-content/uploads/2023/03/project_2.png" style={{width:500, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即申请</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 更多信息</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即申请</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 更多信息</font></span></strong></a>
 </div>
 
-### <span id="jump9"> Grove连接线 </span>
+### Grove连接线 {#jump9}
 
 <!-- ![fusion activity](https://www.seeedstudio.com/blog/wp-content/uploads/2022/07/Grove%E6%B4%BB%E5%8A%A81200x.png) -->
 
@@ -410,7 +402,7 @@ Grove是一个便捷的即插即用系统，具有专用接口，但这并不意
 - 本页面由[Seeed Studio贡献者项目](https://github.com/orgs/Seeed-Studio/projects/6)更新。
 - 非常感谢[Elizabeth的努力](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=33931997)，您的贡献和工作将作为我们感谢的象征得到展示！
 
-## <span id="jump10"> Grove项目 </span>
+## Grove项目 {#jump10}
 
 以下是一些使用Grove制作的项目供您参考。更多项目请参考[Recipe](https://community.seeedstudio.com/discover.html?t=Grove)或[Instructables](https://www.instructables.com/howto/Grove/)。
 
@@ -441,7 +433,7 @@ Grove是一个便捷的即插即用系统，具有专用接口，但这并不意
 |![在此输入图像描述](https://files.seeedstudio.com/wiki/GroveSystem/project_images/Grove_Minimal_Thermometer.png)|![在此输入图像描述](https://files.seeedstudio.com/wiki/GroveSystem/project_images/More_Humane_Moisture_Sensor.png)|![在此输入图像描述](https://files.seeedstudio.com/wiki/GroveSystem/project_images/15.jpg)|
 |[立即制作！](https://www.instructables.com/id/Grove-Minimal-Thermometer/)|[立即制作！](https://www.instructables.com/id/More-Humane-Moisture-sensor/)|[立即制作！](https://www.instructables.com/id/DIY-a-Raspberry-Game-2048/)|
 
-## <span id="jump11"> 关于Grove生态系统的更多知识 </span>
+## 关于Grove生态系统的更多知识 {#jump11}
 
 以下信息由Seeed Studio提供，可能已过时。如果需要，我们欢迎社区更新此处的内容！
 
@@ -651,7 +643,7 @@ Grove I2C连接器具有标准布局。引脚1是SCL信号，引脚2是SDA信号
 |![在此输入图像描述](https://files.seeedstudio.com/wiki/Grove_Line_Finder/img/line_finder_s.jpg)|![在此输入图像描述](https://files.seeedstudio.com/wiki/GroveSystem/images/robot_5.jpg)|![在此输入图像描述](https://files.seeedstudio.com/wiki/GroveSystem/images/robot_6.jpg)|
 |[更多详情](https://www.seeedstudio.com/Grove-Line-Finder-v1-1.html)|[更多详情](https://www.seeedstudio.com/Grove-Ultrasonic-Ranger-p-960.html)|[更多详情](https://www.seeedstudio.com/Grove-80cm-Infrared-Proximity-Sensor-p-788.html)| -->
 
-## <span id="jump12"> Grove资源 </span>
+## Grove资源 {#jump12}
 
 【**ZIP**】[Grove机械图纸](https://files.seeedstudio.com/wiki/GroveSystem/res/Grove_Mechnical_Drawing.zip)
 
@@ -667,7 +659,7 @@ Grove I2C连接器具有标准布局。引脚1是SCL信号，引脚2是SDA信号
 
 【**ZIP**】[Grove 20X40 SMD水平尺寸](https://files.seeedstudio.com/wiki/GroveSystem/res/Grove-20x40-SMD-horizontal.zip)
 
-## <span id="jump13"> 技术支持与产品讨论 </span>
+## 技术支持与产品讨论 {#jump13}
 
 感谢您选择我们的产品！我们在这里为您提供不同的支持，确保您使用我们产品的体验尽可能顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
 

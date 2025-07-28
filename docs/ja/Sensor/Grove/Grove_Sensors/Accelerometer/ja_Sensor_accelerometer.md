@@ -26,8 +26,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 例えば、最近、90歳のアメリカ人女性が交通事故を経験した際、スマートウォッチの転倒検出機能が彼女の命を救ったという話があります。彼女が店を出て家に帰る途中、車を運転していた女性に倒されました。その時、彼女は緊急サービスに電話をかけることができませんでしたが、着用していたスマートウォッチが転倒を検知し、家族に助けを求め始めました。これは、新世代の3軸MEMS加速度センサーとジャイロスコープチップ技術のおかげで、現在の一部のスマートウォッチがさまざまな転倒姿勢を認識できるようになったためです。
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Accelerometer.png" /><figcaption><b>図1</b>. <i>3軸加速度計を搭載したスマートウォッチ（Sensorexpert, 2015より）</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Accelerometer.png" /><figcaption><b>図1</b>. <i>3軸加速度計を搭載したスマートウォッチ（Sensorexpert, 2015より）</i></figcaption></div>
 
 ### 加速度計の仕組み
 
@@ -35,15 +34,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### 圧電効果
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Piezoelectric effect.png" /><figcaption><b>図2</b>. <i>圧電効果の動作原理（explainthatstuff, 2019より）</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Piezoelectric effect.png" /><figcaption><b>図2</b>. <i>圧電効果の動作原理（explainthatstuff, 2019より）</i></figcaption></div>
 
 上記の図に示されているモデルのように、加速度計には微小な結晶構造が含まれており、振動が発生すると電圧を生成します。その後、生成された電圧が加速度の大きさを読み取るためのデータを作成します。
 
 #### 静電容量の変化
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Change in Capacitance.png" /><figcaption><b>図3</b>. <i>静電容量の変化の動作原理（explainthatstuff, 2019より）</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Sensor_accelerometer/IMG/Change in Capacitance.png" /><figcaption><b>図3</b>. <i>静電容量の変化の動作原理（explainthatstuff, 2019より）</i></figcaption></div>
 
 この方法では、加速度を求めるための公式を利用します。力 = 質量 × 加速度という公式を知っているため、加速度を求めるには、物体にかかる力をその質量で割ります。
 

@@ -110,117 +110,17 @@ DSO Quadを受け取った際、以下のようなものが含まれているは
 
 DSO QuadはUSBケーブルを接続して充電します。LTC4054バッテリーコントローラーは、[電源スイッチがオンの間はバッテリーを充電しません](https://forum.seeedstudio.com/viewtopic.php?p=6922#p6922)。以下の表で説明します：
 
-<table>
-<tr>
-<th> 電源スイッチ
-</th>
-<th> USBケーブル
-</th>
-<th> バッテリー
-</th>
-<th> 見える状態
-</th>
-<th> DSO Quadの電源モード
-</th></tr>
-<tr>
-<td> オフ
-</td>
-<td> 未接続
-</td>
-<td> 待機中
-</td>
-<td> LEDオフ、ディスプレイオフ
-</td>
-<td> 電源オフ
-</td></tr>
-<tr>
-<td> オン
-</td>
-<td> 未接続
-</td>
-<td> 放電中
-</td>
-<td> LEDオフ、ディスプレイオン
-</td>
-<td> 通常（電源オン）
-</td></tr>
-<tr>
-<td> オン
-</td>
-<td> 未接続
-</td>
-<td> 放電中
-</td>
-<td> 緑色LEDオン、ディスプレイオフ
-</td>
-<td> 省電力モード：600秒間ボタンが押されない場合、画面が消灯
-</td></tr>
-<tr>
-<td> オン
-</td>
-<td> 未接続
-</td>
-<td> 空
-</td>
-<td> LEDオフ、ディスプレイオフ
-</td>
-<td> バッテリーなし、電源オフ。USBケーブルを接続してください：バッテリーを充電する必要があります
-</td></tr>
-<tr>
-<td> オン
-</td>
-<td> 5V/500mA USBに接続
-</td>
-<td> 待機中
-</td>
-<td> 赤色LEDオン、ディスプレイオン
-</td>
-<td> 電源オン、[電源オン中はバッテリーは充電されません](https://forum.seeedstudio.com/viewtopic.php?p=6922#p6922)
-</td></tr>
-<tr>
-<td> オフ
-</td>
-<td> 5V/500mA USBに接続
-</td>
-<td> 充電中
-</td>
-<td> 赤色LEDオン、ディスプレイオフ
-</td>
-<td> 電源オフ、バッテリー充電中
-</td></tr>
-<tr>
-<td> オフ
-</td>
-<td> USBポートが電力を供給していない*
-</td>
-<td> 待機中
-</td>
-<td> LEDオフ、ディスプレイオフ
-</td>
-<td> 電源オフ、充電不可
-</td></tr>
-<tr>
-<td> オフ
-</td>
-<td> 5V/500mA USBに接続
-</td>
-<td> フル
-</td>
-<td> LEDオフ、ディスプレイオフ
-</td>
-<td> 電源オフ、バッテリーが満充電
-</td></tr>
-<tr>
-<td> オフ
-</td>
-<td> 5V/500mA USBに接続
-</td>
-<td> バッテリー未装着
-</td>
-<td> 赤色LEDが薄く点灯、ディスプレイオフ
-</td>
-<td> 電源オフ、バッテリー未装着
-</td></tr></table>
+| 電源スイッチ | USBケーブル | バッテリー | 見える状態 | DSO Quadの電源モード |
+|-------------|-------------|-----------|-----------|-------------------|
+| オフ | 未接続 | 待機中 | LEDオフ、ディスプレイオフ | 電源オフ |
+| オン | 未接続 | 放電中 | LEDオフ、ディスプレイオン | 通常（電源オン） |
+| オン | 未接続 | 放電中 | 緑色LEDオン、ディスプレイオフ | 省電力モード：600秒間ボタンが押されない場合、画面が消灯 |
+| オン | 未接続 | 空 | LEDオフ、ディスプレイオフ | バッテリーなし、電源オフ。USBケーブルを接続してください：バッテリーを充電する必要があります |
+| オン | 5V/500mA USBに接続 | 待機中 | 赤色LEDオン、ディスプレイオン | 電源オン、[電源オン中はバッテリーは充電されません](https://forum.seeedstudio.com/viewtopic.php?p=6922#p6922) |
+| オフ | 5V/500mA USBに接続 | 充電中 | 赤色LEDオン、ディスプレイオフ | 電源オフ、バッテリー充電中 |
+| オフ | USBポートが電力を供給していない* | 待機中 | LEDオフ、ディスプレイオフ | 電源オフ、充電不可 |
+| オフ | 5V/500mA USBに接続 | フル | LEDオフ、ディスプレイオフ | 電源オフ、バッテリーが満充電 |
+| オフ | 5V/500mA USBに接続 | バッテリー未装着 | 赤色LEDが薄く点灯、ディスプレイオフ | 電源オフ、バッテリー未装着 |
 
 *** USBポートが電力を供給していない場合:** DSO Quadが充電されない場合、USBポートが原因である可能性があります。以下はトラブルシューティングのヒントです：
 
@@ -237,75 +137,10 @@ DSO Quadにはいくつかのバージョンがあり、それぞれ異なるフ
 最新のファームウェアはこちらで確認できます：[DSO Quad Building Firmware](/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")  
 特別契約による最新ファームウェアはこちら：[FPGA(DFU，SYS，APP) v2.7.2](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/res/DS203.V2.72.zip)。
 
-<table>
-<tr>
-<th> 起動画面
-</th>
-<th> ハードウェアバージョン
-</th>
-<th> 工場出荷時ファームウェア
-</th>
-<th> 最新ファームウェア更新
-</th>
-<th> 備考
-</th></tr>
-<tr>
-<td>
-</td>
-<td> 2.7
-</td>
-<td> APP 2.53
-
-SYS 1.52
-
-FPGA 2.61
-
-</td>
-<td> APP P1.00
-
-SYS B1.52
-
-FPGA 2.61
-
-</td>
-<td> Seeed Studioがこのバージョンを出荷しています。
-
-このファームウェアはGUIが大幅に改善されています！
-
-（また、2.7の工場出荷時ファームウェアは頻繁にフリーズするため、このファームウェアが強く推奨されます）
-
-![](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_26.jpg)
-</td>
-<td> 2.6
-</td>
-<td> APP 2.33
-
-SYS 1.33
-FPGA 2.5
-
-</td>
-<td> APP 2.53
-
-SYS 1.52
-FPGA 2.61
-
-Seeed Studioがこのバージョンを出荷しています。
-
-![](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_22.jpg)
-
-2.2  
-APP  
-
-SYS 1.02
-
-</td>
-<td> [APP 2.34?](https://forum.seeedstudio.com/viewtopic.php?p=6760#p6760)
-
-[SYS 1.32?](https://forum.seeedstudio.com/viewtopic.php?p=6760#p6760)
-
-</td>
-<td> バージョン2.2のデバイスはベータテスターにのみ提供され、[無料で2.6にアップグレード](http://ourdev.cn/bbs/bbs_content_all.jsp?bbs_sn=4138839)されました。このバージョンは今後のソフトウェア更新を受けることはありません。
-</td></tr></table>
+| 起動画面 | ハードウェアバージョン | 工場出荷時ファームウェア | 最新ファームウェア更新 | 備考 |
+|----------|----------------------|------------------------|----------------------|------|
+| | 2.7 | APP 2.53<br/>SYS 1.52<br/>FPGA 2.61 | APP P1.00<br/>SYS B1.52<br/>FPGA 2.61 | Seeed Studioがこのバージョンを出荷しています。<br/>このファームウェアはGUIが大幅に改善されています！<br/>（また、2.7の工場出荷時ファームウェアは頻繁にフリーズするため、このファームウェアが強く推奨されます）<br/>![](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_26.jpg) |
+| | 2.6 | APP 2.33<br/>SYS 1.33<br/>FPGA 2.5 | APP 2.53<br/>SYS 1.52<br/>FPGA 2.61<br/>Seeed Studioがこのバージョンを出荷しています。<br/>![](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_22.jpg)<br/>2.2<br/>APP<br/>SYS 1.02 | [APP 2.34?](https://forum.seeedstudio.com/viewtopic.php?p=6760#p6760)<br/>[SYS 1.32?](https://forum.seeedstudio.com/viewtopic.php?p=6760#p6760) | バージョン2.2のデバイスはベータテスターにのみ提供され、[無料で2.6にアップグレード](http://ourdev.cn/bbs/bbs_content_all.jsp?bbs_sn=4138839)されました。このバージョンは今後のソフトウェア更新を受けることはありません。 |
 
 さらに情報を見つけることができます：[https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=1929](https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=1929)。
 
@@ -358,102 +193,26 @@ DSO Quadは初回使用前にキャリブレーションが必要であり、長
 
 メイン画面には以下のブロックがあります：
 
-<table>
-<tr>
-<th> タイトル
-</th>
-<th> ブロックの説明
-</th></tr>
-<tr>
-<td> RUN/HOLD
-</td>
-<td> オシロスコープの停止と再実行
-</td></tr>
-<tr>
-<td> CH(A)
-</td>
-<td> シアン色のプロットと測定値
-</td></tr>
-<tr>
-<td> CH(B)
-</td>
-<td> 黄色のプロットと測定値
-</td></tr>
-<tr>
-<td> CH(C)
-</td>
-<td> 紫色のプロットと測定値
-</td></tr>
-<tr>
-<td> CH(D)
-</td>
-<td> 緑色のプロットと測定値
-</td></tr>
-<tr>
-<td> SCAN
-</td>
-<td> 茶色のSCAN/AUTO/NORM（NORMAL）/SINGL（SINGLE）/NONEトリガーモード
-</td></tr>
-<tr>
-<td> Signal Generator
-</td>
-<td> 青色のデジタルおよびアナログ「波形出力」
-</td></tr>
-<tr>
-<td> Trigger
-</td>
-<td> CH(A)からCH(D)までのすべてのトリガーレベルとトリガーモード
-</td></tr>
-<tr>
-<td> YPOS
-</td>
-<td> YPOS
-</td></tr>
-<tr>
-<td> V1
-</td>
-<td> V1
-</td></tr>
-<tr>
-<td> V2
-</td>
-<td> V2
-</td></tr>
-<tr>
-<td> Horizontal scroller
-</td>
-<td> 水平方向スクロール
-</td></tr>
-<tr>
-<td> T1
-</td>
-<td> T1
-</td></tr>
-<tr>
-<td> T2
-</td>
-<td> T2
-</td></tr>
-<tr>
-<td> XPOS
-</td>
-<td> XPOS
-</td></tr>
-<tr>
-<td> Delta V
-</td>
-<td> V1とV2マーカー間の差
-</td></tr>
-<tr>
-<td> Delta T
-</td>
-<td> T1とT2マーカー間の差
-</td></tr>
-<tr>
-<td> live measurements
-</td>
-<td> カスタマイズ可能な測定値の読み取り。例：Vbt、FPS、Vdc、RMS、Max、Min、Vpp、FRQ、DUT、CIR、TL、TH
-</td></tr></table>
+| タイトル | ブロックの説明 |
+|----------|---------------|
+| RUN/HOLD | オシロスコープの停止と再実行 |
+| CH(A) | シアン色のプロットと測定値 |
+| CH(B) | 黄色のプロットと測定値 |
+| CH(C) | 紫色のプロットと測定値 |
+| CH(D) | 緑色のプロットと測定値 |
+| SCAN | 茶色のSCAN/AUTO/NORM（NORMAL）/SINGL（SINGLE）/NONEトリガーモード |
+| Signal Generator | 青色のデジタルおよびアナログ「波形出力」 |
+| Trigger | CH(A)からCH(D)までのすべてのトリガーレベルとトリガーモード |
+| YPOS | YPOS |
+| V1 | V1 |
+| V2 | V2 |
+| Horizontal scroller | 水平方向スクロール |
+| T1 | T1 |
+| T2 | T2 |
+| XPOS | XPOS |
+| Delta V | V1とV2マーカー間の差 |
+| Delta T | T1とT2マーカー間の差 |
+| live measurements | カスタマイズ可能な測定値の読み取り。例：Vbt、FPS、Vdc、RMS、Max、Min、Vpp、FRQ、DUT、CIR、TL、TH |
 
 ### 電圧の測定
 
@@ -467,30 +226,12 @@ Vmax、Vmin、Vpp、Vdc（平均電圧）、Vrms（sqrt(平均(V*V)))
 
 ### 定義
 
-<table>
-<tr>
-<th> Vpp
-</th>
-<td> ピーク間電圧
-</td></tr>
-<tr>
-<th> x1プローブ
-</th>
-<td> 低電圧信号を測定します。80Vppを超えないようにしてください。超えるとDSO Quadが損傷する可能性があります。（低インピーダンスプローブとして使用可能です。）
-</td></tr>
-<tr>
-<th> x10プローブ
-</th>
-<td> 高電圧信号を測定します。400Vppを超えないようにしてください。超えるとDSO Quadが損傷する可能性があります。（高インピーダンスプローブとして使用可能です。）
-
-画面上の値は入力の1/10で表示されるため、頭の中で10倍してください。
-
-</td></tr>
-<tr>
-<th> ...
-</th>
-<td> ...
-</td></tr></table>
+| 項目 | 説明 |
+|------|------|
+| Vpp | ピーク間電圧 |
+| x1プローブ | 低電圧信号を測定します。80Vppを超えないようにしてください。超えるとDSO Quadが損傷する可能性があります。（低インピーダンスプローブとして使用可能です。） |
+| x10プローブ | 高電圧信号を測定します。400Vppを超えないようにしてください。超えるとDSO Quadが損傷する可能性があります。（高インピーダンスプローブとして使用可能です。）<br/>画面上の値は入力の1/10で表示されるため、頭の中で10倍してください。 |
+| ... | ... |
 
 ### 要件
 

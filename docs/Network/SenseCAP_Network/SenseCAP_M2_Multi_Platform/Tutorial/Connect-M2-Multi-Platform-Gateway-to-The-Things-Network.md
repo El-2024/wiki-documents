@@ -68,11 +68,11 @@ Navigate to **LoRa** > **LoRa** **Network**
 1. **Gateway EUI**: It will automatically get the EUI of the connected gateway 
 
 2. **Server Address**: 
-For Semtech UDP Packet Forwarder use 'server-address'
-The 'server-address' is the address of your The Things Stack deployment. 
-See [Server Addresses](https://www.thethingsindustries.com/docs/the-things-stack/concepts/server-addresses/) for more info.
+For Semtech UDP Packet Forwarder use 'server-address'
+The 'server-address' is the address of your The Things Stack deployment. 
+See [Server Addresses](https://www.thethingsindustries.com/docs/the-things-stack/concepts/server-addresses/) for more info.
 
-3. **Server Port(Up/Down)**: The Up Port and Down Port are typically 1700.
+3. **Server Port(Up/Down)**: The Up Port and Down Port are typically 1700.
 
 Other settings can be left as default, or can be changed to suit your requirements.
 
@@ -83,7 +83,7 @@ Click **Save&Apply** to apply your settings.
 
 * **Step 4**: Channel Plan Settings
 
-Navigate to **LoRa** > **Channel Plan** 
+Navigate to **LoRa** > **LoRa Network**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/lora_network.png" alt="pir" width={600} height="auto" /></p>
 
@@ -123,17 +123,17 @@ Select a option to generate a API key for the CUPS or LNS service automatically,
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/APIkey.png" alt="pir" width={600} height="auto" /></p>
 
 
-Choose a Server according to your need, then click “Register gateway”
+Choose a Server according to your need, then click "Register gateway"
 
 **LoRaWAN Network Server (LNS)**
 
-LNS establishes a data connection between a LoRa Basics™ Station gateway and a Network Server (in this case, The Things Stack). LoRa® uplink and downlink frames are exchanged through this data connection. The LNS protocol is required for sending and receiving LoRaWAN data.
+LNS establishes a data connection between a LoRa Basics™ Station gateway and a Network Server (in this case, The Things Stack). LoRa® uplink and downlink frames are exchanged through this data connection. The LNS protocol is required for sending and receiving LoRaWAN data.
 
 **Configuration and Update Server (CUPS)**
 
-CUPS allows a Network Server to configure gateways remotely, and to update gateway firmware. CUPS is not required for sending and receiving LoRaWAN data, but it can greatly simplify the management of gateways. Configuring CUPS will also automatically retrieve LNS credentials and configure LNS on your gateway.
+CUPS allows a Network Server to configure gateways remotely, and to update gateway firmware. CUPS is not required for sending and receiving LoRaWAN data, but it can greatly simplify the management of gateways. Configuring CUPS will also automatically retrieve LNS credentials and configure LNS on your gateway.
 
-More information about LoRa Basics™ Station is available at [Semtech’s Developer Portal](https://lora-developers.semtech.com/resources/tools/lora-basics/lora-basics-for-gateways/).
+More information about LoRa Basics™ Station is available at [Semtech's Developer Portal](https://lora-developers.semtech.com/resources/tools/lora-basics/lora-basics-for-gateways/).
 
 
 
@@ -168,15 +168,15 @@ CUPS uses the URI: https://server-address:443, LNS uses the URI: wss://server-ad
 
 
 4. **Authentication Mode:** TLS server authentication and Client token
-The Things Stack supports TLS server authentication and client token. This requires a *.trust* file and a *.key* file. .
+The Things Stack supports TLS server authentication and client token. This requires a *.trust* file and a *.key* file. .
 
-5. **trust:** This is the [CA certificate](https://en.wikipedia.org/wiki/Certificate_authority) which secures your domain. 
-A .pem file containing common certificates is available in the [Root Certificates Reference](https://www.thethingsindustries.com/docs/reference/root-certificates/).
+5. **trust:** This is the [CA certificate](https://en.wikipedia.org/wiki/Certificate_authority) which secures your domain. 
+A .pem file containing common certificates is available in the [Root Certificates Reference](https://www.thethingsindustries.com/docs/reference/root-certificates/).
 Download the **minimal certificate list**, then copy the data content of the certificate file (the certificate can be opened in text form).
 
 
 
-6. **token:** Authorization:Bearer <Your_API_Key>
+6. **token:** Authorization:Bearer `<Your_API_Key>`
 
 Other settings can be left as default, or can be changed to suit your requirements.
 

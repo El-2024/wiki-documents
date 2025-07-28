@@ -35,7 +35,7 @@ SenseCAP M4 Square funciona con un procesador Intel® Celeron® J4125 de cuatro 
 
 * **Excelente Rendimiento**: Potenciado por Intel® Celeron® J4125 (frecuencia: 2.0 - 2.7 GHz) con 4 núcleos y 4 hilos.
 
-* **Bajo Consumo de Energía**: Consumo bajo de 10 W, 7.2 kWh por mes, costo aproximado de $1.008 USD mensuales (precio global promedio de kWh: $0.144 USD/kWh). 
+* **Bajo Consumo de Energía**: Consumo bajo de 10 W, 7.2 kWh por mes, costo aproximado de \$1.008 USD mensuales (precio global promedio de kWh: \$0.144 USD/kWh). 
 
 ![](https://www.sensecapmx.com/wp-content/uploads/2022/12/Pasted-into-Overview-1.png)
 

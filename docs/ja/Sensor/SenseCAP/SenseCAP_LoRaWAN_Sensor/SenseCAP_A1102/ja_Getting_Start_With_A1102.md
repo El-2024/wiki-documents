@@ -49,22 +49,11 @@ TinyML AIモデルをローカルで実行し、推論結果のみをLoRaWAN®�
 	</tr>
 	<tr>
 	    <th>マイクロコントローラー</th>
-        <td align="center">
-        <strong>Vision AI:</strong> Himax-6538 <br></br> 
-        <strong>LoRaWAN ネットワーク:</strong> Wio-E5 (STM32WLE5JC)<br></br>
-        <strong>Bluetooth:</strong> XIAO ESP32C3<br></br></td>
+        <td align="center"><strong>Vision AI:</strong> Himax-6538 <br></br> <strong>LoRaWAN ネットワーク:</strong> Wio-E5 (STM32WLE5JC)<br></br> <strong>Bluetooth:</strong> XIAO ESP32C3<br></br></td>
 	</tr>
     <tr>
         <th>カメラ</th>
-        <td align="center">
-            <strong>モジュール:</strong> OV5647<br />
-            <strong>レンズサイズ:</strong> 1/4"<br />
-            <strong>焦点距離:</strong> 3.4 mm (調整可能)<br />
-            <strong>解像度:</strong> 2592 × 1944 ピクセル<br />
-            <strong>ピクセルサイズ:</strong> 1.4 µm × 1.4 µm<br />
-            <strong>最大フレームレート:</strong> 1080p @ 30 fps, 720p @ 60 fps<br />
-            <strong>視野角 (FOV):</strong> 62°
-        </td>
+        <td align="center"><strong>モジュール:</strong> OV5647<br /> <strong>レンズサイズ:</strong> 1/4"<br /> <strong>焦点距離:</strong> 3.4 mm (調整可能)<br /> <strong>解像度:</strong> 2592 × 1944 ピクセル<br /> <strong>ピクセルサイズ:</strong> 1.4 µm × 1.4 µm<br /> <strong>最大フレームレート:</strong> 1080p @ 30 fps, 720p @ 60 fps<br /> <strong>視野角 (FOV):</strong> 62°</td>
     </tr>
     <tr>
 	    <th>モデル実行および推論</th>
@@ -72,18 +61,11 @@ TinyML AIモデルをローカルで実行し、推論結果のみをLoRaWAN®�
     </tr>
     <tr>
         <th>LoRaWAN® 送信</th>
-        <td align="center">
-        <strong>プロトコル:</strong> LoRaWAN v1.0.3 Class A<br />
-        <strong>LoRaWAN® 周波数:</strong> IN865/EU868/US915/AU915/ AS923<br />
-        <strong>通信距離:</strong> 2 ～ 10km (環境に依存)<br />
-        <strong>最大送信出力:</strong> 19dBm<br />
-        </td>
+        <td align="center"><strong>プロトコル:</strong> LoRaWAN v1.0.3 Class A<br /> <strong>LoRaWAN® 周波数:</strong> IN865/EU868/US915/AU915/ AS923<br /> <strong>通信距離:</strong> 2 ～ 10km (環境に依存)<br /> <strong>最大送信出力:</strong> 19dBm<br /></td>
     </tr>
     <tr>
         <th>電源供給</th>
-        <td align="center">
-        内蔵バッテリーまたは DC 12V/1A (外部接続ボックス配線付き)
-        </td>
+        <td align="center">内蔵バッテリーまたは DC 12V/1A (外部接続ボックス配線付き)</td>
     </tr>
 	<tr>
 	    <th>消費電力</th>
@@ -91,10 +73,7 @@ TinyML AIモデルをローカルで実行し、推論結果のみをLoRaWAN®�
 	</tr>
 	<tr>
 	      <th>バッテリー</th>
-        <td align="center">
-        <strong>容量:</strong> 19Ah (充電不可)<br />
-        <strong>タイプ:</strong> 標準 D サイズ SOCl2 バッテリー<br />
-        </td>
+        <td align="center"><strong>容量:</strong> 19Ah (充電不可)<br /> <strong>タイプ:</strong> 標準 D サイズ SOCl2 バッテリー<br /></td>
 	</tr>
 	<tr>
 	    <th>ローカルストレージメモリ</th>
@@ -122,10 +101,7 @@ TinyML AIモデルをローカルで実行し、推論結果のみをLoRaWAN®�
 	</tr>
 	<tr>
 	    <th>デバイス寸法</th>
-        <td align="center">
-        <strong>カメラ:</strong> 180mm*75mm*70mm<br />
-        <strong>DTU:</strong> 144.5mm*63mm*57mm<br />
-        </td>
+        <td align="center"><strong>カメラ:</strong> 180mm*75mm*70mm<br /> <strong>DTU:</strong> 144.5mm*63mm*57mm<br /></td>
 	</tr>
 </table>
 

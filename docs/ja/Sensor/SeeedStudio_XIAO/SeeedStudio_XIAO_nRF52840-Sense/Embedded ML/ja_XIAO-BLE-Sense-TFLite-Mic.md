@@ -77,7 +77,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/TFLite/pics/micro-features-model-open.png" alt="pir" width={550} height="auto" /></p>
 
-- **ステップ 2.** **model.cc** ファイルから取得した新しい値で、**const unsigned char g_model[] DATA_ALIGN_ATTRIBUTE = {** の下の値を置き換えます。
+- **ステップ 2.** **model.cc** ファイルから取得した新しい値で、**const unsigned char g_model[] DATA_ALIGN_ATTRIBUTE = &#123;** の下の値を置き換えます。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/TFLite/pics/model-values.png" alt="pir" width={550} height="auto" /></p>
 

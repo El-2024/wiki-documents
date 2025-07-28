@@ -28,8 +28,7 @@ tags:
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/first_1.png" /></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Jetson-Xavier-AGX-H01-Kit-p-5283.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Jetson-Xavier-AGX-H01-Kit-p-5283.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
 </div>
 
 
@@ -120,14 +119,14 @@ The example here is using **NVIDIA L4T 32.7.1** to install **Jetpack 4.6.1** on 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver4.png" /></div>
 
 
-- **Step 2**. [Donwload](https://files.seeedstudio.com/wiki/H01Driver/H01_Driver.zip) additional required installation files <H01_Drivers> on the host PC.
+- **Step 2**. [Download](https://files.seeedstudio.com/wiki/H01Driver/H01_Driver.zip) additional required installation files **H01_Drivers** on the host PC.
 
-Move downloaded files at **Step 1** into the same folder with <H01_Drivers>. Now you will see three unziped file in the same folder.
+Move downloaded files at **Step 1** into the same folder with **H01_Drivers**. Now you will see three unzipped files in the same folder.
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01drivera.png" /></div>
 
 
-- **Step 3**. Unzip the file of <AGX_H01_Drivers.zip>.
+- **Step 3**. Unzip the file of **AGX_H01_Drivers.zip**.
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver1b.png" /></div>
 
@@ -153,7 +152,7 @@ The command lines should be like:
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/agx0.png" /></div>
 
 
-- **Step 5**. Move back and copy & paste the file from fownloaded <H01_Driver> file to the unziped file <Jetson_Linux_R32.6.1_aarch64.tbz2>.
+- **Step 5**. Move back and copy & paste the file from downloaded **H01_Driver** file to the unzipped file **Jetson_Linux_R32.6.1_aarch64.tbz2**.
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver6.png" /></div>
 

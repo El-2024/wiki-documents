@@ -411,7 +411,7 @@ sudo apt install openssl
 
 ### MQTT サーバーへの接続例コード
 
-この例では、Wio Terminal を使用して MQTT サーバーとの接続を確立する方法を示します。これにより、Wio Terminal を使用して MQTT サーバーにメッセージを購読および公開できます。ここでは無料の MQTT サーバー <https://test.mosquitto.org/> を使用しています。
+この例では、Wio Terminal を使用して MQTT サーバーとの接続を確立する方法を示します。これにより、Wio Terminal を使用して MQTT サーバーにメッセージを購読および公開できます。ここでは無料の MQTT サーバー [https://test.mosquitto.org/](https://test.mosquitto.org/) を使用しています。
 
 - [**Arduino MQTT ライブラリ**](https://github.com/knolleary/pubsubclient) をダウンロードしてインストールしてください。
 
@@ -509,7 +509,7 @@ void loop()
     <source src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/mqtts.mp4" type="video/mp4" />
   </video></div>
 
-この例では、Wio Terminalを使用してMQTTs接続を確立する方法を示します。ここでは無料のMQTTsサーバー<https://test.mosquitto.org/>を使用し、加速度データをトピックに送信します。
+この例では、Wio Terminalを使用してMQTTs接続を確立する方法を示します。ここでは無料のMQTTsサーバー[https://test.mosquitto.org/](https://test.mosquitto.org/)を使用し、加速度データをトピックに送信します。
 
 - [**Arduino MQTTライブラリ**](https://github.com/knolleary/pubsubclient)をダウンロードしてインストールしてください。
 

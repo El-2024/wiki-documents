@@ -25,13 +25,13 @@ last_update:
 
 从数据集到模型部署，我们将经历以下主要步骤：
 
-1. [标注数据集](#labelled-datasets) —— 本章节重点介绍如何获取可用于训练模型的数据集。主要有两种方式：第一种是使用 Roboflow 社区提供的标注数据集；另一种是使用您自己场景的图片作为数据集，但需要手动进行标注。
+1. 标注数据集 —— 本章节重点介绍如何获取可用于训练模型的数据集。主要有两种方式：第一种是使用 Roboflow 社区提供的标注数据集；另一种是使用您自己场景的图片作为数据集，但需要手动进行标注。
 
-2. [训练数据集并导出模型](#training-dataset-exported-model) —— 本章节重点介绍如何基于第一步获得的数据集，在 Google Colab 平台上训练并获得可部署到 XIAO ESP32S3 的模型。
+2. 训练数据集并导出模型 —— 本章节重点介绍如何基于第一步获得的数据集，在 Google Colab 平台上训练并获得可部署到 XIAO ESP32S3 的模型。
 
-3. [通过 SenseCraft Model Assistant 上传模型](#upload-models-via-sensecraft-model-assistant) —— 本章节描述如何使用导出的模型文件，通过 SenseCraft Model Assistant 将模型上传到 XIAO ESP32S3。
+3. 通过 SenseCraft Model Assistant 上传模型 —— 本章节描述如何使用导出的模型文件，通过 SenseCraft Model Assistant 将模型上传到 XIAO ESP32S3。
 
-4. [模型的常用协议与应用](#common-protocols-and-applications-of-the-model) —— 最后，我们将介绍 SenseCraft AI 的统一数据通信格式，以便您充分利用设备和模型的潜力，制作适合您场景的应用。
+4. 模型的常用协议与应用 —— 最后，我们将介绍 SenseCraft AI 的统一数据通信格式，以便您充分利用设备和模型的潜力，制作适合您场景的应用。
 
 让我们开始这段激动人心的旅程，将您的数据变为现实。
 
@@ -192,7 +192,7 @@ Roboflow 提供了筛选器和搜索功能，帮助您查找数据集。您可�
 Roboflow 提供了三种不同的图像标注方式：自动标注、Roboflow 标注和手动标注。
 
 - [**自动标注**](https://blog.roboflow.com/yolo-world-prompting-tips/): 使用一个大型通用模型自动标注图像。
-- **Roboflow 标注**: 与专业的人类标注团队合作。没有最低数量要求，无需提前承诺。边界框标注起价为 $0.04，多边形标注起价为 $0.08。
+- **Roboflow 标注**: 与专业的人类标注团队合作。没有最低数量要求，无需提前承诺。边界框标注起价为 \$0.04，多边形标注起价为 \$0.08。
 - **手动标注**: 您和您的团队自行标注图像。
 
 以下是手动标注最常用方法的描述。
@@ -306,7 +306,7 @@ Roboflow 提供了三种不同的图像标注方式：自动标注、Roboflow �
 
 1. 将 `Gesture_Detection_Swift-YOLO_192` 替换为您希望存储数据集的目录名称。
 
-2. 将 Roboflow 数据集 URL（`https://universe.roboflow.com/ds/xaMM3ZTeWy?key=5bznPZyI0t`）替换为您的导出数据集链接（这是我们在 [标注数据集最后一步](#choose-how-you-get-your-dataset) 中获取的原始 URL）。确保在需要访问权限时包含 `key` 参数。
+2. 将 Roboflow 数据集 URL（`https://universe.roboflow.com/ds/xaMM3ZTeWy?key=5bznPZyI0t`）替换为您的导出数据集链接（这是我们在标注数据集最后一步中获取的原始 URL）。确保在需要访问权限时包含 `key` 参数。
 
 3. 如果需要，调整 `wget` 命令中的输出文件名（`-O your_directory/your_filename.zip`）。
 

@@ -415,75 +415,56 @@ void loop()
 
 <table  cellspacing="0" width="80%">
 <tr>
-<th scope="col"> センサー値
-</th>
-<th scope="col"> 照度 (LUX)
-</th>
-<th scope="col"> 説明 (Wikipediaより適応)
-</th></tr>
+<th scope="col"> センサー値 </th>
+<th scope="col"> 照度 (LUX) </th>
+<th scope="col"> 説明 (Wikipediaより適応) </th>
+</tr>
 <tr>
-<td> 100
-</td>
-<td> &lt;1
-</td>
-<td>
-</td></tr>
+<td> 100 </td>
+<td> &lt;1 </td>
+<td> </td>
+</tr>
 <tr>
-<td> 200
-</td>
-<td> ~1
-</td>
-<td> 熱帯地方での満月
-</td></tr>
+<td> 200 </td>
+<td> ~1 </td>
+<td> 熱帯地方での満月 </td>
+</tr>
 <tr>
-<td> 300
-</td>
-<td> ~3
-</td>
-<td> 都市の薄明かり
-</td></tr>
+<td> 300 </td>
+<td> ~3 </td>
+<td> 都市の薄明かり </td>
+</tr>
 <tr>
-<td> 400
-</td>
-<td> ~6
-</td>
-<td>
-</td></tr>
+<td> 400 </td>
+<td> ~6 </td>
+<td> </td>
+</tr>
 <tr>
-<td> 500
-</td>
-<td> ~10
-</td>
-<td>
-</td></tr>
+<td> 500 </td>
+<td> ~10 </td>
+<td> </td>
+</tr>
 <tr>
-<td> 600
-</td>
-<td> ~15
-</td>
-<td>
-</td></tr>
+<td> 600 </td>
+<td> ~15 </td>
+<td> </td>
+</tr>
 <tr>
-<td> 700
-</td>
-<td> ~35
-</td>
-<td> 家族のリビングルーム
-</td></tr>
+<td> 700 </td>
+<td> ~35 </td>
+<td> 家族のリビングルーム </td>
+</tr>
 <tr>
-<td> 800
-</td>
-<td> ~80
-</td>
-<td> オフィスビルの廊下の照明
-</td></tr>
+<td> 800 </td>
+<td> ~80 </td>
+<td> オフィスビルの廊下の照明 </td>
+</tr>
 <tr>
-<td> 900
-</td>
-<td> &gt;100
-</td>
-<td> 非常に暗い曇りの日
-</td></tr></table>
+<td> 900 </td>
+<td> &gt;100 </td>
+<td> 非常に暗い曇りの日 </td>
+</tr>
+</table>
 
 ### 12. Grove – 温度センサー
 
@@ -621,13 +602,7 @@ void loop()
 
 **材料リスト**
 
-<dl><dd>1. Arduino x 1;
-</dd><dd>2. Grove – ベースシールド x 1;
-</dd><dd>3. Grove – LED x 6;
-</dd><dd>4. Grove – タッチセンサー x 1;
-</dd><dd>5. 6 x 6cm の色紙 x 6;
-</dd><dd>6. 9Vバッテリー &amp; 9Vバッテリークリップ x 1。
-</dd></dl>
+<dl><dd>1. Arduino x 1;</dd><dd>2. Grove – ベースシールド x 1;</dd><dd>3. Grove – LED x 6;</dd><dd>4. Grove – タッチセンサー x 1;</dd><dd>5. 6 x 6cm の色紙 x 6;</dd><dd>6. 9Vバッテリー &amp; 9Vバッテリークリップ x 1.</dd></dl>
 
 !!!注意
      LEDの数は任意です。基本キットには3つ含まれていますが、カップの容量に応じて増減できます。私は大きなカップを使用したので、ウェブサイトからさらに3つ追加しました。
@@ -703,14 +678,7 @@ void loop()
 
 **材料リスト**
 
-<dl><dd>1. Arduino x 1;
-</dd><dd>2. Grove – ベースシールド x 1;
-</dd><dd>3. Grove – 磁気スイッチ x 1;
-</dd><dd>4. Grove – バイブレーター x 1;
-</dd><dd>5. ペーパートイ x 2;
-</dd><dd>6. 磁石 x 1;
-</dd><dd>7. 9Vバッテリー &amp; 9Vバッテリークリップ x 1。
-</dd></dl>
+<dl><dd>1. Arduino x 1;</dd><dd>2. Grove – ベースシールド x 1;</dd><dd>3. Grove – 磁気スイッチ x 1;</dd><dd>4. Grove – バイブレーター x 1;</dd><dd>5. ペーパートイ x 2;</dd><dd>6. 磁石 x 1;</dd><dd>7. 9Vバッテリー &amp; 9Vバッテリークリップ x 1.</dd></dl>
 
 :::注意
     LEDの数は任意です。基本キットには3つ含まれていますが、カップの容量に応じて増減できます。私は大きなカップを使用したので、ウェブサイトからさらに3つ追加しました。

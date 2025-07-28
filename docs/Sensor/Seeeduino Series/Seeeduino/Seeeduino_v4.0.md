@@ -14,7 +14,7 @@ last_update:
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_v4.0/img/ARD128D2P_1_02.jpg)
 
 <!-- <p style="text-align:center"><a href="https://www.seeedstudio.com/Seeeduino-V4-p-669.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now.png" border=0 /></a></p>  -->
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Seeeduino-V4-p-669.html)
+<a href="https://www.seeedstudio.com/Seeeduino-V4-p-669.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></a>
 The Seeeduino v4.0 is an ATMEGA328 Microcontroller development board. The ATMEGA328P-MU is a high performance, low power AVR 8-Bit Microcontroller. The Seeeduino v4.0 has 14 digital input/output pins (6 of which can be used as PWM outputs) and 6 analog pins. The board also features an ATMEGA16U2 microcontroller which acts as a UART-to-USB converter chip which means that the board can basically work like an FTDI chip.
 
 The Seeeduino v4.0 inherits all of Arduino Duemilanove's and Uno's features but also adds some of its own. This board is compatible to Duemilanove's and Uno's pin layout, and the Duemilanove's screw holes and board dimensions.  
@@ -293,23 +293,19 @@ void setup()
 Below is a list of changes that have been made to the Seeeduino board over all the versions.
 
 <table>
-  <tbody><tr>
-      <th> Revision
-      </th>
-      <th> Descriptions
-      </th>
-      <th> Release Date
-      </th></tr>
+  <tbody>
+    <tr>
+      <th>Revision</th>
+      <th>Descriptions</th>
+      <th>Release Date</th>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td width="300px"> Seeeduino V0.9
-      </td>
-      <td width="500px"> Initial public release
-      </td>
-      <td width="200px">
-      </td></tr>
+      <td width="300px">Seeeduino V0.9</td>
+      <td width="500px">Initial public release</td>
+      <td width="200px"></td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino v1.1
-      </td>
+      <td>Seeeduino v1.1</td>
       <td>
         1.  Fixed bug - unnessesary via on Pin4 wire.
         2.  Fixed bug - Lable mistakenly covered by switches.
@@ -319,11 +315,10 @@ Below is a list of changes that have been made to the Seeeduino board over all t
         6.  Replaced reset buttons with metal ones.
         7.  Rearranged texts and lables for clearer indications.
       </td>
-      <td>
-      </td></tr>
+      <td></td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino v2.12
-      </td>
+      <td>Seeeduino v2.12</td>
       <td>
         1.  Zero external power consumption when switched off
         2.  Stronger Switches
@@ -332,11 +327,10 @@ Below is a list of changes that have been made to the Seeeduino board over all t
         5.  1.0mm slim PCB for lighter weighs
         6.  Extra row reserved for pin headers
       </td>
-      <td>
-      </td></tr>
+      <td></td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino v2.2
-      </td>
+      <td>Seeeduino v2.2</td>
       <td>
         1.  USB/EXT power auto select
         2.  Upgrade power capacitor
@@ -345,27 +339,24 @@ Below is a list of changes that have been made to the Seeeduino board over all t
         5.  Real Quartz Crystal
         6.  Extern power Diode change to 1N4004(more power on Vin pin)
       </td>
-      <td> Dec 16, 2010
-      </td></tr>
+      <td>Dec 16, 2010</td>
+    </tr>
     <tr style={{fontSize: '90%'}}>
-      <td> Seeeduino v2.21
-      </td>
+      <td>Seeeduino v2.21</td>
       <td>
         1.  Upgraded to Stronger mini USB connector.
       </td>
-      <td> Jan 12, 2011
-      </td></tr>
+      <td>Jan 12, 2011</td>
+    </tr>
     <tr>
-      <td> Seeeduino v3.0
-      </td>
+      <td>Seeeduino v3.0</td>
       <td>
         1.  change JST connector to DC Jack connector
       </td>
-      <td> Jan 1, 2012
-      </td></tr>
+      <td>Jan 1, 2012</td>
+    </tr>
     <tr>
-      <td> Seeeduino v4.0
-      </td>
+      <td>Seeeduino v4.0</td>
       <td>
         1.  Remove RST switch
         2.  ATMEGA16U2 as USB bus converter chip
@@ -373,8 +364,10 @@ Below is a list of changes that have been made to the Seeeduino board over all t
         4.  Micro USB
         5.  UNO bootloader
       </td>
-      <td> Sep 1, 2014
-      </td></tr></tbody></table>
+      <td>Sep 1, 2014</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ##  Bug Report
@@ -405,12 +398,12 @@ Below is a list of changes that have been made to the Seeeduino board over all t
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
-<div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+<div className="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" className="button_forum"></a> 
+<a href="https://www.seeedstudio.com/contacts" className="button_email"></a>
 </div>
 
-<div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+<div className="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" className="button_discord"></a> 
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" className="button_discussion"></a>
 </div>

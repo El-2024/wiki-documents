@@ -10,6 +10,9 @@ last_update:
   author: Lakshantha
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Hardware and Interfaces Usage
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reServer-Industrial/2.jpg"/></div>
@@ -20,14 +23,14 @@ last_update:
 
 To learn more about how to use all the hardware and interfaces on the reServer Industrial board, we recommend you to follow the below section of the wiki.
 
-reServer Industrial features 2x 2.5" SATA HDD/ SSD drive bays to easily store hundreds of local video footages in a video analytics application. Also it enables multiple connectivity options including 5 RJ-45 Ethernet ports, 1 RS232/422/485, 4x Isolated DI/DO, 1x CAN, 4* USB3.1. Fanless design with versatile mounting options allows deployment from -20 to 60 ℃, which is ideal for more harsh environments and heavier loads.
+reServer Industrial features 2x 2.5" SATA HDD/ SSD drive bays to easily store hundreds of local video footages in a video analytics application. Also it enables multiple connectivity options including 5 RJ-45 Ethernet ports, 1 RS232/422/485, 4x Isolated DI/DO, 1x CAN, 4× USB3.1. Fanless design with versatile mounting options allows deployment from -20 to 60 ℃, which is ideal for more harsh environments and heavier loads.
 
 reServer Industrial comes with a passive heatsink and a fanless design, making it ideal for use in demanding environments. The passive heatsink allows for efficient cooling without the need for a fan, reducing the risk of component failure due to dust or other contaminants. The fanless design also reduces noise levels and power consumption, making it suitable for use in noise-sensitive environments and minimizing energy costs.
 
 reServer industrial has 5 RJ45 GbE ports, 4 of which are PoE PSE ports for providing power over Ethernet to devices like IP cameras. This eliminates the need for a separate power source and makes it easier to deploy network devices in areas without readily available power outlets. The remaining GbE port is used to connect to a network switch or router, enabling communication with other devices on the network and access to the Internet.
 
 - **Fanless Compact Edge AI Server:** Powered by NVIDIA Jetson™ Orin Nano/Orin NX modules, ranging from 20 TOPS to 100 TOPS AI performance, wider temperature range from -20 ~ 60°C with 0.7m/s airflow
-- **Multi-Stream Processing:** 5* GbE RJ45(4 for 802.3af PSE ), handles multiple streams with real-time processing
+- **Multi-Stream Processing:** 5× GbE RJ45(4 for 802.3af PSE ), handles multiple streams with real-time processing
 - **Expandable Storage:** 2 drive bays for 2.5" SATA HDD/SSD, plus an M.2 2280 socket for NVMe SSD
 - **Industrial Interfaces:** Includes COM port, DI/DO ports, CAN port, USB 3.1, and optional TPM2.0 module
 - **Hybrid Connectivity:** Supports 5G/4G/LTE/LoRaWAN® (module optional) with Nano SIM card slot

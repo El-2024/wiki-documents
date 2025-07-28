@@ -91,7 +91,7 @@ sudo npm install -g --unsafe-perm @frangoteam/fuxa-min
 sudo fuxa
 
 ```
-FUXA 的用户界面可以通过以下 URL 访问：**http://localhost:1881**。
+FUXA 的用户界面可以通过以下 URL 访问：**http://localhost:1881** 。
 
 FUXA Web 服务器主要提供两个页面：
 

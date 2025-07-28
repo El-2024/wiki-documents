@@ -48,8 +48,7 @@ Para este tutorial, necesitaremos una Nvidia [Jetson Orin NX 16GB](https://www.s
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> Conseguir una 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> Conseguir una 🖱️</font></span></strong></a>
 </div>
 
 Y vamos a necesitar asegurarnos de que TensorFlow y PyTorch estén instalados.
@@ -477,7 +476,7 @@ También podemos usar curl para obtener la imagen y guardarla.
 </div>
 
 Si queremos darle un prompt (como deberíamos), la URL se verá así
-*http://jetsonIP:8080/generate_image?prompt=<tu_prompt>*
+*http://jetsonIP:8080/generate_image?prompt={prompt}*
 
 Podemos ampliar este ejemplo para crear una página mejor, como tener algunos cuadros de texto para la entrada del usuario, un fondo bonito, etc. Pero esto es para otro proyecto.
 
@@ -632,7 +631,7 @@ Al seleccionar, AUTOMATIC1111 optimizará el modelo.
 Si muere o aparece un error, obten más espacio. Me estaba pasando a mí y después de generar más espacio, todo salió bien.
 
 Usar el siguiente prompt
->Sosteniendo un bastón, orbstaff <lora:orbstaff:0.60>, (por Gabriel Isak y Adam Elsheimer:1.20), (por Jon Whitcomb y Bayard Wu y Malcolm Liepke0.80),8k, fotografía de moda profesional
+>Sosteniendo un bastón, orbstaff `<lora:orbstaff:0.60>`, (por Gabriel Isak y Adam Elsheimer:1.20), (por Jon Whitcomb y Bayard Wu y Malcolm Liepke0.80),8k, fotografía de moda profesional
 
 [De esta imágen](https://civitai.com/images/8570722),
 obtuve el siguiente resultado
@@ -646,7 +645,7 @@ Con estos ajustes:
     <img width={800} src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/Nvidia_Jetson_recomputer_LLM_texto-to-image/29_dreamshaperXL_settings.png"/>
 </div>
 
-¿Recuerdas el mensaje anterior para la chica cyberpunk que usa el modelo *Stable Diffusion XL*?
+¿Recuedas el mensaje anterior para la chica cyberpunk que usa el modelo *Stable Diffusion XL*?
 
 Aquí hay una nueva imagen, con el mismo mensaje, generada con *DreamShaper XL* con la misma configuración anterior.
 <div align="center">

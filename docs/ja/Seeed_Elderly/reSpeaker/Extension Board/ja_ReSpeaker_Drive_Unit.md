@@ -65,7 +65,7 @@ sysupgrade -n -F ramips-openwrt-v1.0.01-LinkIt7688-squashfs-sysupgrade.bin
 
 電源ロゴを5秒以上押すと、ドライブユニットが電源オンになり、ReSpeaker Coreボードも起動します。
 
-:::Note
+:::note
 電源制御回路はドライブユニット内にあるため、ReSpeaker Coreを取り外しても、電源ロゴを5秒以上押すとドライブユニットが電源オンになります。
 :::
 

@@ -171,8 +171,7 @@ Round Display 的推荐方向是：当您面对 Round Display 时，XIAO 的 Typ
 #### 第一步：根据您的操作系统下载并安装稳定版本的 Arduino IDE。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong></a>
 </div>
 
 #### 第二步：启动 Arduino 应用程序。

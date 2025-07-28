@@ -319,7 +319,8 @@ Wiki に掲載されているカメラ関連のすべてのプログラムは、
 
 XIAO ESP32S3 Sense の冷却性能を最適化するために、アップグレードされたヒートシンクを取り付けてください。この新しい設計は、特にカメラ使用時の集中的な操作中に観察された冷却不足を解消するために開発されました。以前のモデルではヒートシンクが十分に熱を放散できないというフィードバックを受け、より効果的なソリューションが開発されました。
 
-<details><summary>性能比較を見るにはクリック</summary>
+<details>
+<summary>性能比較を見るにはクリック</summary>
 
 アップグレードされたヒートシンクの利点は、以下のテスト結果で確認されています：
 
@@ -405,8 +406,7 @@ Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.se
 - **ステップ1.** お使いのオペレーティングシステムに応じて、安定版のArduino IDEをダウンロードしてインストールします。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDEをダウンロード</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDEをダウンロード</font></span></strong></a>
 </div>
 
 - **ステップ2.** Arduinoアプリケーションを起動します。

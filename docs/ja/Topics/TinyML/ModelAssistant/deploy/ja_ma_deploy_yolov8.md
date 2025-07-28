@@ -11,6 +11,10 @@ last_update:
   date: 05/15/2025
   author: Jack Mu
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 :::note
 この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
 https://github.com/Seeed-Studio/wiki-documents/issues
@@ -34,7 +38,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <TabItem value="pip installation" label="pip">
 
-`ultralytics`パッケージをインストールするには、`pip install -U ultralytics`を実行します。`ultralytics`パッケージの詳細については、Python Package Index (PyPI)をご覧ください: <https://pypi.org/project/ultralytics/>](<https://pypi.org/project/ultralytics/>).
+`ultralytics`パッケージをインストールするには、`pip install -U ultralytics`を実行します。`ultralytics`パッケージの詳細については、Python Package Index (PyPI)をご覧ください: https://pypi.org/project/ultralytics/
 
 ```bash
 # pipを使用してインストール
@@ -47,7 +51,7 @@ pip install ultralytics
 
 <TabItem value="conda installation" label="conda">
 
-`Conda`は`pip`の代替パッケージマネージャーであり、インストールにも使用できます。詳細はAnacondaをご覧ください: [https://anaconda.org/conda-forge/ultralytics](https://anaconda.org/conda-forge/ultralytics)。`Ultralytics`のフィードストックリポジトリは、`conda`パッケージの更新用に[https://github.com/conda-forge/ultralytics-feedstock/](<https://github.com/conda-forge/ultralytics-feedstock>)にあります。
+`Conda`は`pip`の代替パッケージマネージャーであり、インストールにも使用できます。詳細はAnacondaをご覧ください: [https://anaconda.org/conda-forge/ultralytics](https://anaconda.org/conda-forge/ultralytics)。`Ultralytics`のフィードストックリポジトリは、`conda`パッケージの更新用に [https://github.com/conda-forge/ultralytics-feedstock/](https://github.com/conda-forge/ultralytics-feedstock) にあります。
 
 ```bash
 # condaを使用してインストール
@@ -166,4 +170,4 @@ vela --accelerator-config ethos-u55-64 \
 
 - トレーニング済みの tflite モデルをデバイスに書き込むには、弊社のウェブツールを使用することを強く推奨します。詳細な操作は [デプロイメントチュートリアル](https://wiki.seeedstudio.com/ja/ModelAssistant_Deploy_Overview/) に記載されています。
 
-`注意:` `ESP32S3` デバイスは `vela` グラフ最適化後のモデルデプロイをサポートしていないため、`XIAO ESP32S3` デバイスにモデルをデプロイする場合は、`tflite` モデルのグラフ最適化を行う必要はありません。
+`注意:` `ESP32S3` デバイスは `vela` グラフ最適化後のモデルデプロイをサポートしていないため、`XIAO ESP32S3` デバイスにモデルをデプロイする場合は、`tflite` モデルのグラフ最適化を行う必要はありません。 

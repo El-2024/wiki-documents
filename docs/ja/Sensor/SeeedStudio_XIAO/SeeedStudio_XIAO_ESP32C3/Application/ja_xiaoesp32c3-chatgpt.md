@@ -89,7 +89,7 @@ Seeed Studio XIAO ESP32C3 は、Espressif ESP32-C3 WiFi/Bluetooth デュアル�
 - **ステップ 4.** Arduino IDE に ESP32 ボードパッケージを追加します。
 
 **ファイル > 設定** に移動し、**"追加のボードマネージャー URL"** に以下の URL を入力します：
-*<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json>*
+`https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json`
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/xiaoesp32c3-chatgpt/4.png"/></div>
 

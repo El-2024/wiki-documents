@@ -562,7 +562,7 @@ void sendNTPpacket(const char * address) {
 
 OAuthを使用してメッセージを投稿するためのトークンを取得するには、[**こちら**](http://arduino-tweet.appspot.com/oauth/twitter/login) をクリックしてください。
 
->詳細については <http://arduino-tweet.appspot.com/> を参照してください。
+>詳細については [http://arduino-tweet.appspot.com/](http://arduino-tweet.appspot.com/) を参照してください。
 
 ### サンプルコード
 

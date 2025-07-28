@@ -45,364 +45,245 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ---
 ![](https://files.seeedstudio.com/wiki/Skeleton_Bot-4WD_hercules_mobile_robotic_platform/img/Parts_lists.jpg)
 
-<table  cellspacing="0" width="80%">
+<table>
 <tr>
-<th scope="col">
-</th>
-<th scope="col"> 部品名
-</th>
-<th scope="col"> 仕様
-</th>
-<th scope="col"> 材質
-</th>
-<th scope="col"> 数量
-</th></tr>
+<th>番号</th>
+<th>部品名</th>
+<th>仕様</th>
+<th>材質</th>
+<th>数量</th>
+</tr>
 <tr>
-<th scope="row"> 1
-</th>
-<td> ブラケット-1
-</td>
-<td> 200*35*20mm*3.0mm
-</td>
-<td> L アルミ押出 6061
-</td>
-<td> 2 個
-</td></tr>
+<td>1</td>
+<td>ブラケット-1</td>
+<td>200*35*20mm*3.0mm</td>
+<td>L アルミ押出 6061</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row"> 2
-</th>
-<td> ブラケット-2
-</td>
-<td> 135*35*20mm*3.0mm
-</td>
-<td> L アルミ押出 6061
-</td>
-<td> 2 個
-</td></tr>
+<td>2</td>
+<td>ブラケット-2</td>
+<td>135*35*20mm*3.0mm</td>
+<td>L アルミ押出 6061</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row"> 3
-</th>
-<td> 減速モーター
-</td>
-<td> 25GA-370
-</td>
-<td> 310rpm DC6V 停止トルク：70kg
-</td>
-<td> 2 個
-</td></tr>
+<td>3</td>
+<td>減速モーター</td>
+<td>25GA-370</td>
+<td>310rpm DC6V 停止トルク：70kg</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row"> 4
-</th>
-<td> エンコーダ付き減速モーター
-</td>
-<td> 25GA-370
-</td>
-<td> 310rpm DC6V 停止トルク：≥7.0 Kg.cm
-</td>
-<td> 2 個
-</td></tr>
+<td>4</td>
+<td>エンコーダ付き減速モーター</td>
+<td>25GA-370</td>
+<td>310rpm DC6V 停止トルク：≥7.0 Kg.cm</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row"> 5
-</th>
-<td> ブラケットアダプタプレート
-</td>
-<td> 29*12*2.0mm
-</td>
-<td> 冷間圧延板
-</td>
-<td> 4 個
-</td></tr>
+<td>5</td>
+<td>ブラケットアダプタプレート</td>
+<td>29*12*2.0mm</td>
+<td>冷間圧延板</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row"> 6
-</th>
-<td> ネジ
-</td>
-<td> 3*10mm
-</td>
-<td> 金属
-</td>
-<td> 30 個
-</td></tr>
+<td>6</td>
+<td>ネジ</td>
+<td>3*10mm</td>
+<td>金属</td>
+<td>30 個</td>
+</tr>
 <tr>
-<th scope="row"> 7
-</th>
-<td> ナット
-</td>
-<td> M3*2.5mm
-</td>
-<td> 金属
-</td>
-<td> 4 個
-</td></tr>
+<td>7</td>
+<td>ナット</td>
+<td>M3*2.5mm</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row"> 8
-</th>
-<td> モーターコネクタ
-</td>
-<td> Ф4mm*W12mm*L18mm
-</td>
-<td> 金属
-</td>
-<td> 4 個
-</td></tr>
+<td>8</td>
+<td>モーターコネクタ</td>
+<td>Ф4mm*W12mm*L18mm</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row"> 9
-</th>
-<td> ホイール
-</td>
-<td> Ф85mm*W31mm
-</td>
-<td> プラスチック+ゴム
-</td>
-<td> 4 個
-</td></tr>
+<td>9</td>
+<td>ホイール</td>
+<td>Ф85mm*W31mm</td>
+<td>プラスチック+ゴム</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row"> 10
-</th>
-<td> スプリングシム
-</td>
-<td> Ф7mm*Ф4mm
-</td>
-<td> 金属
-</td>
-<td> 4 個
-</td></tr>
+<td>10</td>
+<td>スプリングシム</td>
+<td>Ф7mm*Ф4mm</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row"> 11
-</th>
-<td> ネジ
-</td>
-<td> M4*8mm
-</td>
-<td> 金属
-</td>
-<td> 4 個
-</td></tr>
+<td>11</td>
+<td>ネジ</td>
+<td>M4*8mm</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row"> 12
-</th>
-<td> アンダープレート
-</td>
-<td> 199*129*2.0mm
-</td>
-<td> ティーブラック アクリル
-</td>
-<td> 1 個
-</td></tr>
+<td>12</td>
+<td>アンダープレート</td>
+<td>199*129*2.0mm</td>
+<td>ティーブラック アクリル</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row"> 13
-</th>
-<td> ワッシャー
-</td>
-<td> Ф5.0*Ф3*5mm
-</td>
-<td> PA
-</td>
-<td> 4 個
-</td></tr>
+<td>13</td>
+<td>ワッシャー</td>
+<td>Ф5.0*Ф3*5mm</td>
+<td>PA</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row"> 14
-</th>
-<td> 電源スイッチ
-</td>
-<td> /
-</td>
-<td> /
-</td>
-<td> 1 個
-</td></tr>
+<td>14</td>
+<td>電源スイッチ</td>
+<td>/</td>
+<td>/</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row"> 15
-</th>
-<td> [ヘラクレスデュアル15A 6-20Vモーターコントローラー](/Hercules_Dual_15A_6-20V_Motor_Controller)
-</td>
-<td>
-</td>
-<td>
-</td>
-<td> 1 個
-</td></tr>
+<td>15</td>
+<td><a href="/Hercules_Dual_15A_6-20V_Motor_Controller">ヘラクレスデュアル15A 6-20Vモーターコントローラー</a></td>
+<td></td>
+<td></td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row"> 16
-</th>
-<td> ネジ
-</td>
-<td> M3*21mm
-</td>
-<td> 金属
-</td>
-<td> 4 個
-</td></tr>
+<td>16</td>
+<td>ネジ</td>
+<td>M3*21mm</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row"> 17
-</th>
-<td> アクリルプレート
-</td>
-<td> 53*12*2.0mm
-</td>
-<td> 透明アクリル
-</td>
-<td> 2 個
-</td></tr>
+<td>17</td>
+<td>アクリルプレート</td>
+<td>53*12*2.0mm</td>
+<td>透明アクリル</td>
+<td>2 個</td>
+</tr>
 <tr>
-<th scope="row"> 18
-</th>
-<td> カバープレート
-</td>
-<td> 184*132*2.0mm
-</td>
-<td> ティーブラック アクリル
-</td>
-<td> 1 個
-</td></tr>
+<td>18</td>
+<td>カバープレート</td>
+<td>184*132*2.0mm</td>
+<td>ティーブラック アクリル</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row"> 19
-</th>
-<td> 銅柱
-</td>
-<td> M3*30mm-6mm
-</td>
-<td> シグナルスタッド
-</td>
-<td> 4 個
-</td></tr>
+<td>19</td>
+<td>銅柱</td>
+<td>M3*30mm-6mm</td>
+<td>シグナルスタッド</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row"> 20
-</th>
-<td> トッププレート
-</td>
-<td> 216*138*1.5mm
-</td>
-<td> アルミプレート
-</td>
-<td> 1 個
-</td></tr>
+<td>20</td>
+<td>トッププレート</td>
+<td>216*138*1.5mm</td>
+<td>アルミプレート</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row"> 21
-</th>
-<td> ネジ
-</td>
-<td> M3*21mm
-</td>
-<td> 金属
-</td>
-<td> 4 個
-</td></tr>
+<td>21</td>
+<td>ネジ</td>
+<td>M3*21mm</td>
+<td>金属</td>
+<td>4 個</td>
+</tr>
 <tr>
-<th scope="row"> 22
-</th>
-<td> ドライバー
-</td>
-<td> M3-85mm
-</td>
-<td> /
-</td>
-<td> 1 個
-</td></tr>
+<td>22</td>
+<td>ドライバー</td>
+<td>M3-85mm</td>
+<td>/</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row"> 23
-</th>
-<td> ドライバー
-</td>
-<td> 2.5-53mm
-</td>
-<td> /
-</td>
-<td> 1 個
-</td></tr>
+<td>23</td>
+<td>ドライバー</td>
+<td>2.5-53mm</td>
+<td>/</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row"> 24
-</th>
-<td> 電源ケーブル
-</td>
-<td> 150mm
-</td>
-<td> /
-</td>
-<td> 1 個
-</td></tr>
+<td>24</td>
+<td>電源ケーブル</td>
+<td>150mm</td>
+<td>/</td>
+<td>1 個</td>
+</tr>
 <tr>
-<th scope="row"> 25
-</th>
-<td> ワイヤー
-</td>
-<td> 160mm
-</td>
-<td> /
-</td>
-<td> 1 個
-</td></tr></table>
+<td>25</td>
+<td>ワイヤー</td>
+<td>160mm</td>
+<td>/</td>
+<td>1 個</td>
+</tr>
+</table>
 
 **注意:**
 
-<dl><dd> 1) コントロールパネルの詳細については、[こちら](https://www.seeedstudio.com/wiki/Hercules_Dual_15A_6-20V_Motor_Controller)をご参照ください。
-</dd><dd> 2) 25GA-370 減速モーターの製品仕様。
-</dd></dl>
-<table  cellspacing="0" width="80%">
+1) コントロールパネルの詳細については、[こちら](https://www.seeedstudio.com/wiki/Hercules_Dual_15A_6-20V_Motor_Controller)をご参照ください。
+
+2) 25GA-370 減速モーターの製品仕様。
+
+<table>
 <tr>
-<th colspan="2" scope="col"> 項目
-</th>
-<th scope="col"> パラメータ
-</th></tr>
+<th colspan="2">項目</th>
+<th>パラメータ</th>
+</tr>
 <tr>
-<th colspan="2" scope="row">動作電圧
-</th>
-<td> 4.0-7.0 DCV
-</td></tr>
+<td colspan="2">動作電圧</td>
+<td>4.0-7.0 DCV</td>
+</tr>
 <tr>
-<th colspan="2" scope="row"> 回転方向
-</th>
-<td> CCW
-</td></tr>
+<td colspan="2">回転方向</td>
+<td>CCW</td>
+</tr>
 <tr>
-<th rowspan="2"> 無負荷
-</th>
-<td> 電流
-</td>
-<td> 280mA
-</td></tr>
+<td rowspan="2">無負荷</td>
+<td>電流</td>
+<td>280mA</td>
+</tr>
 <tr>
-<td> 回転速度
-</td>
-<td> 310±12% r/min
-</td></tr>
+<td>回転速度</td>
+<td>310±12% r/min</td>
+</tr>
 <tr>
-<th rowspan="2"> 負荷時
-</th>
-<td> 電流
-</td>
-<td> 1600mA(最大)
-</td></tr>
+<td rowspan="2">負荷時</td>
+<td>電流</td>
+<td>1600mA(最大)</td>
+</tr>
 <tr>
-<td> 回転速度
-</td>
-<td> 260±12% rpm
-</td></tr>
+<td>回転速度</td>
+<td>260±12% rpm</td>
+</tr>
 <tr>
-<th colspan="2" scope="row"> 回転方向
-</th>
-<td> CCW
-</td></tr>
+<td colspan="2">起動電圧</td>
+<td>≤1.2V</td>
+</tr>
 <tr>
-<th colspan="2" scope="row"> 起動電圧
-</th>
-<td> ≤1.2V
-</td></tr>
+<td colspan="2">負荷トルク</td>
+<td>1500.0 g.cm</td>
+</tr>
 <tr>
-<th colspan="2" scope="row">負荷トルク
-</th>
-<td> 1500.0 g.cm
-</td></tr>
+<td colspan="2">停止トルク</td>
+<td>≥7.0 Kg.cm</td>
+</tr>
 <tr>
-<th colspan="2" scope="row"> 停止トルク
-</th>
-<td> ≥7.0 Kg.cm
-</td></tr>
-<tr>
-<th colspan="2" scope="row"> 停止電流
-</th>
-<td> ≤9.0A
-</td></tr></table>
+<td colspan="2">停止電流</td>
+<td>≤9.0A</td>
+</tr>
+</table>
 
 ## 組み立て図
 ---

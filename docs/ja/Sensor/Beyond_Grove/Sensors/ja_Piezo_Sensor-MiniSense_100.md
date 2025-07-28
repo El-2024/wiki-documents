@@ -46,111 +46,27 @@ MiniSense 100は、低周波数で高感度を提供するために質量を搭�
 
 ### 標準特性（25°C時）
 
-<table>
-  <tbody><tr>
-      <td width={500}> **パラメータ**
-      </td>
-      <td width={250}> **値**
-      </td>
-      <td width={250}> **単位**
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 電圧感度（開回路、基準値）
-      </td>
-      <td>  1.1
-      </td>
-      <td>  V/g
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 電荷感度（基準値）
-      </td>
-      <td>  260
-      </td>
-      <td>  pC/g
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 共振周波数
-      </td>
-      <td>  75
-      </td>
-      <td>  Hz
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 電圧感度（開回路、共振時）
-      </td>
-      <td>  6
-      </td>
-      <td>  V/g
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 上限周波数（+3 dB）
-      </td>
-      <td>  42
-      </td>
-      <td>  Hz
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 直線性
-      </td>
-      <td>  +/-1
-      </td>
-      <td>  %
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 静電容量
-      </td>
-      <td>  244
-      </td>
-      <td>  pF
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 損失係数
-      </td>
-      <td> 0.018
-      </td>
-      <td> (なし)
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 慣性質量
-      </td>
-      <td>  0.3
-      </td>
-      <td>  gram
-      </td></tr></tbody></table>
+| **パラメータ** | **値** | **単位** |
+|----------------|--------|----------|
+| 電圧感度（開回路、基準値） | 1.1 | V/g |
+| 電荷感度（基準値） | 260 | pC/g |
+| 共振周波数 | 75 | Hz |
+| 電圧感度（開回路、共振時） | 6 | V/g |
+| 上限周波数（+3 dB） | 42 | Hz |
+| 直線性 | +/-1 | % |
+| 静電容量 | 244 | pF |
+| 損失係数 | 0.018 | (なし) |
+| 慣性質量 | 0.3 | gram |
 
 
 ### 環境仕様
 
-<table>
-  <tbody><tr>
-      <td width={500}> **パラメータ**
-      </td>
-      <td width={250}> **値**
-      </td>
-      <td width={250}> **単位**
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 保管温度
-      </td>
-      <td colSpan={2} rowSpan={1}>  -40 ～ +80 °C
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 動作温度
-      </td>
-      <td colSpan={2} rowSpan={1}>  -20 ～ +60 °C
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td colSpan={1} rowSpan={2}> 重量
-      </td>
-      <td>  Minisense 100H
-      </td>
-      <td> 0.5 gram
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td>  Minisense 100V
-      </td>
-      <td> 0.6 gram
-      </td></tr></tbody></table>
+| **パラメータ** | **値** | **単位** |
+|----------------|--------|----------|
+| 保管温度 | -40 ～ +80 °C | |
+| 動作温度 | -20 ～ +60 °C | |
+| 重量 (Minisense 100H) | 0.5 | gram |
+| 重量 (Minisense 100V) | 0.6 | gram |
 
 
 

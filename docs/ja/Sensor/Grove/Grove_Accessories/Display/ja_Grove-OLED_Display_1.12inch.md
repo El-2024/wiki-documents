@@ -21,7 +21,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 このOLEDはSSD1327（V1.0）またはSH1107G（V2.1）ドライバチップを使用しており、ディスプレイを管理します。ドライバチップとは、4線式I2C（クロック、データ、電源、GNDピン）を使用して通信できます。
 
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-OLED-Display-1.12%27%27-V2-p-3031.html)
+[<img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" />](https://www.seeedstudio.com/Grove-OLED-Display-1.12%27%27-V2-p-3031.html)
 
 ## 仕様
 
@@ -572,7 +572,7 @@ if __name__ == '__main__':
 ```python
 （env）pi@raspberrypi:~ grove_lcd_1.2inches
 ```
-:::tip success
+:::tip
 
 すべてが正常に動作していれば、以下の結果が表示されるはずです。
 

@@ -29,8 +29,8 @@ I2C_LCDは非常に便利な製作方法を提供します。ぜひお楽しみ�
 
 | バージョン 	| 購入方法	|
 |-----------|---------------|
-|I2C_LCD (ユニバーサルGroveケーブル付き)|[<p><img src="https://files.seeedstudio.com/wiki/Grove_Light_Sensor/images/300px-Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/I2C_LCD-(With-universal-Grove-cable)-p-2601.html)|
-|I2C_LCD (変換Groveケーブル付き)|[<p><img src="https://files.seeedstudio.com/wiki/Grove_Light_Sensor/images/300px-Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/I2C_LCD-(With-universal-Grove-cable)-p-2601.html)|
+|I2C_LCD (ユニバーサルGroveケーブル付き)|[<img src="https://files.seeedstudio.com/wiki/Grove_Light_Sensor/images/300px-Get_One_Now_Banner.png" alt="pir" width={600} height="auto" />](https://www.seeedstudio.com/I2C_LCD-(With-universal-Grove-cable)-p-2601.html)|
+|I2C_LCD (変換Groveケーブル付き)|[<img src="https://files.seeedstudio.com/wiki/Grove_Light_Sensor/images/300px-Get_One_Now_Banner.png" alt="pir" width={600} height="auto" />](https://www.seeedstudio.com/I2C_LCD-(With-universal-Grove-cable)-p-2601.html)|
 
 ## 特徴
 
@@ -97,7 +97,7 @@ I2C_LCDは非常に便利な製作方法を提供します。ぜひお楽しみ�
 
 **ステップ 1:** 最新バージョンの Arduino IDE をコンピュータにインストールします。
 
-[<p><img src="https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3_1/images/Download_IDE.png" alt="pir" width={600} height="auto" /></p>](https://www.arduino.cc/en/Main/Software)
+[<img src="https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3_1/images/Download_IDE.png" alt="pir" width={600} height="auto" />](https://www.arduino.cc/en/Main/Software)
 
 **ステップ 2:** I2C_LCD ライブラリを Arduino IDE にダウンロードしてインストールします。
 

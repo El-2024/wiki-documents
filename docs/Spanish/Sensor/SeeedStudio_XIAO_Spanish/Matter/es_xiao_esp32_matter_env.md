@@ -535,7 +535,7 @@ El cliente enviará un paquete de comando único y luego saldrá.
 
 Cuando estés listo para depurar con Chip-tool, puedes desconectar el XIAO de la computadora y conectarlo a una fuente de energía.
 
-Como primer paso, necesitamos emparejar el dispositivo, lo cual se puede hacer utilizando cualquiera de los métodos en la sección [Emparejar un dispositivo sobre IP](#pair-a-device-over-ip) anterior.
+Como primer paso, necesitamos emparejar el dispositivo, lo cual se puede hacer utilizando cualquiera de los métodos en la sección Emparejar un dispositivo sobre IP anterior.
 
 Por ejemplo, utilizo el siguiente comando:
 
@@ -575,7 +575,7 @@ El entorno de ESP-Matter es un poco más exigente, y si estás utilizando un hos
 
 ### P2: ¿Cómo desinstalo el entorno de Matter?
 
-Si estás ejecutando el script `./install.sh` y te atascas en el paso de configurar tu entorno Python, es posible que debas verificar que tu [versión](#prepare-the-software) de Matter coincida con la versión de connectedhomeip.
+Si estás ejecutando el script `./install.sh` y te atascas en el paso de configurar tu entorno Python, es posible que debas verificar que tu versión de Matter coincida con la versión de connectedhomeip.
 
 La forma más sencilla de restablecerlo es ejecutar el siguiente comando:
 

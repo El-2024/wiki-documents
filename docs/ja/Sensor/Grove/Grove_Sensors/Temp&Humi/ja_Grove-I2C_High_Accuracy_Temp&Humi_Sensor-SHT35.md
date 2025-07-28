@@ -29,16 +29,28 @@ SenseCAP [S2110コントローラー](https://www.seeedstudio.com/SenseCAP-XIAO-
 SenseCAP S210xシリーズの産業用センサーは、環境センシングのための即時使用可能な体験を提供します。空気質モニタリングのための高性能で堅牢なS2101ワイヤレス温湿度センサーをご参照ください。このシリーズには、土壌水分、空気温湿度、光強度、CO2、EC、8-in-1気象ステーション用のセンサーが含まれています。次の成功する産業プロジェクトのために最新の[SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device)をお試しください。
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td align="center"><font size="{4}"><strong>SenseCAP 産業用センサー</strong></font></td>
+  <tbody>
+    <tr>
+      <td align="center"><font size={4}><strong>SenseCAP 産業用センサー</strong></font></td>
     </tr>
     <tr>
-      <td><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank"><img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S21012103.png" /></a></div>
+      <td>
+        <div align="center">
+          <a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank">
+            <img width="20%" src="https://files.seeedstudio.com/wiki/K1100_overview/S21012103.png" />
+          </a>
+        </div>
       </td>
     </tr>
     <tr>
-      <td align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank"><strong>S2101 空気温湿度</strong></a></td>
+      <td align="center">
+        <a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank">
+          <strong>S2101 空気温湿度</strong>
+        </a>
+      </td>
     </tr>
-  </tbody></table>
+  </tbody>
+</table>
 
 ## 特徴
 
@@ -223,7 +235,7 @@ void loop()
 
 - **ステップ5.** Arduino IDEの**シリアルモニタ**を開きます。**Tool-> Serial Monitor**をクリックするか、++ctrl+shift+m++キーを同時に押します。ボーレートを**115200**に設定します。
 
-:::tipsuccess
+:::tip
 すべてが正常に動作している場合、シリアルモニタを開くと以下のように表示される可能性があります：
 :::
 
@@ -346,7 +358,7 @@ if __name__ == "__main__":
 
 ```
 
-:::tipsuccess
+:::tip
     すべてが正常に動作すれば、以下のような結果が表示されます。
 :::
 

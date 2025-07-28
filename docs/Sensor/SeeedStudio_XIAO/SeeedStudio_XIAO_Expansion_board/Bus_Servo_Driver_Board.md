@@ -81,7 +81,7 @@ The Bus Servo Driver Board features several key connection points:
 
 **Input:**
 
-* **DC IN (5.5 * 2.1mm):** This is the power input for the board and the connected servos. Connect a 5~12V power supply here. *Crucially, the voltage of this power supply must match the voltage requirements of your servos.* For example, ST series servos typically operate at 9V, while SC series servos may require 12V.
+* **DC IN (5.5 * 2.1mm):** This is the power input for the board and the connected servos. Connect a 5&#126;12V power supply here. *Crucially, the voltage of this power supply must match the voltage requirements of your servos.* For example, ST series servos typically operate at 9V, while SC series servos may require 12V.
 
 **Output:**
 
@@ -326,8 +326,7 @@ Now that we have our library installed and we understand the basic functions, le
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong></a>
 </div>
 
 **Step 2.** Select your development board model and add it to the Arduino IDE.
@@ -498,14 +497,20 @@ It's recommended to read through these FAQs before starting your project. They a
 
 :::
 
-<details> <summary>What if the power supply voltage doesn’t match my servo?</summary>
+<details>
+<summary>What if the power supply voltage doesn’t match my servo?</summary>
 
 The board and servo may malfunction or sustain damage. Always match the input voltage to your servo’s requirements.
-</details> <details> <summary>Can I connect multiple servos at once?</summary>
+</details>
+
+<details>
+<summary>Can I connect multiple servos at once?</summary>
 
 Yes, multiple servos are supported, but ensure your power supply can handle the combined current draw.
 
-</details> <br/>
+</details>
+
+<br/>
 
 ## Resources
 

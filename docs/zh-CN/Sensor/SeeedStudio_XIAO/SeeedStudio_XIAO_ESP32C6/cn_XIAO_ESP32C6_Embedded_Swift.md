@@ -199,7 +199,8 @@ idf.py build
 
 ### 第 3 步：烧录固件
 
-<details><summary>使用 WSL2 时需要 usbipd</summary>
+<details>
+<summary>使用 WSL2 时需要 usbipd</summary>
 
 如果你在使用 WSL2，需要安装 [usbipd](https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/WSL.md#usbipd)。
 

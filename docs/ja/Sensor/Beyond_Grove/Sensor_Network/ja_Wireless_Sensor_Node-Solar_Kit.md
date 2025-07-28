@@ -134,27 +134,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## 仕様
 
 ---
-<table>
-<tr>
-<th> 項目
-</th>
-<th> 仕様
-</th></tr>
-<tr>
-<td width="200px"> Grove - XBee Carrier I/O ロジック
-</td>
-<td width="200px"> 3.3V
-</td></tr>
-<tr>
-<td> LiPo バッテリー
-</td>
-<td> 500mAH @ 3.7V
-</td></tr>
-<tr>
-<td> ソーラーパネル
-</td>
-<td> 0.5Watt @ 5.5V
-</td></tr></table>
+| 項目 | 仕様 |
+|------|------|
+| Grove - XBee Carrier I/O ロジック | 3.3V |
+| LiPo バッテリー | 500mAH @ 3.7V |
+| ソーラーパネル | 0.5Watt @ 5.5V |
 
 ## 使用方法
 

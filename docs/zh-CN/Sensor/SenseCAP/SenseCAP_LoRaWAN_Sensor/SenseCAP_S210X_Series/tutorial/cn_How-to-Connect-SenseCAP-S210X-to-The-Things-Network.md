@@ -23,7 +23,7 @@ The Things Stack 是一个企业级 LoRaWAN 网络服务器，基于开源核心
 
 ## 连接到 The Things Network
 ### 创建新账户
-TTN 网站：<https://www.thethingsnetwork.org/>
+TTN 网站：[https://www.thethingsnetwork.org/](https://www.thethingsnetwork.org/)
 
 ### 设置传感器
 (1) 打开 SenseCAP Mate 应用程序  

@@ -72,37 +72,34 @@ First, let's begin with the **SW1** which at the lower left corner. Actually, th
 
 The **VR1** is the potentiometer, the **Pin2** of the potentiometer is connected to the **Pin3** of the **U1A**
 
-The **U1A** is a [comparators](https://en.wikipedia.org/wiki/Comparator). For the comparators, 
+The **U1A** is a [comparators](https://en.wikipedia.org/wiki/Comparator). For the comparators, the output behavior follows this logic:
 
-
-$$
-V_{out} = 
-\begin{cases} 
-High,  & \mbox{if }V_+ > V_-  \\
-Low,  & \mbox{if }V_+ < V_- 
-\end{cases}
-$$
+<div style={{textAlign: 'center', padding: '15px', backgroundColor: 'var(--ifm-color-emphasis-100)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '5px', margin: '20px 0'}}>
+<strong>V<sub>out</sub> = High when V<sub>+</sub> > V<sub>-</sub></strong><br/>
+<strong>V<sub>out</sub> = Low when V<sub>+</sub> < V<sub>-</sub></strong>
+</div>
 
 **V+** connects to **Pin3**, **V-** connects to **Pin2**, **V<sub>out</sub>** connects to **Pin1**.
 
-For the **V+** you can adjust it by rotate the potentiometer, for instance, we can make it $VCC/2$.
+For the **V+** you can adjust it by rotate the potentiometer, for instance, we can make it VCC/2.
 
 For the **V-**, it depends on the **SW1(SW-420)**:
 
 - If this module is in a stable state, the **SW1** is turned on, Pin2 of **U1A** is connected to the **GND** through **SW1**. It will be:
 
-
-$$
-\left. \begin{array}{l}  & V- = 0V \\ & V+ = VCC/2 \end{array} \right\}  V_{out} = High
-$$
-
+<div style={{textAlign: 'center', padding: '15px', backgroundColor: 'var(--ifm-color-emphasis-100)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '5px', margin: '15px 0'}}>
+<strong>V<sub>-</sub> = 0V</strong><br/>
+<strong>V<sub>+</sub> = VCC/2</strong><br/>
+<strong>Therefore: V<sub>out</sub> = High</strong>
+</div>
 
 - If the module vibrates or tilts, the **SW1** will be turned off, the voltage of **V-** will be pulled up by the **VCC** through R1. Once the **V-** is higher than the VCC/2, then:
 
-$$
-\left. \begin{array}{l}  & V- > VCC/2 \\ & V+ = VCC/2 \end{array} \right\}  V_{out} = Low
-$$
-
+<div style={{textAlign: 'center', padding: '15px', backgroundColor: 'var(--ifm-color-emphasis-100)', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '5px', margin: '15px 0'}}>
+<strong>V<sub>-</sub> > VCC/2</strong><br/>
+<strong>V<sub>+</sub> = VCC/2</strong><br/>
+<strong>Therefore: V<sub>out</sub> = Low</strong>
+</div>
 
 Now you can set the **V+** to adjust the sensitivity, just remember: the lower the voltage of **V+**, the higher the sensitivity😆
 

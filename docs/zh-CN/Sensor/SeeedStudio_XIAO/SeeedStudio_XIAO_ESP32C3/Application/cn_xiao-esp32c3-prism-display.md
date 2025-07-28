@@ -62,15 +62,15 @@ last_update:
 
 主要步骤：
 
-1. [下载并 3D 打印外壳](#download-and-3d-print-enclosure)
-2. [连接相关电子元件](#attach-associated-electronics)
-3. [设置环境](#setup-environment)
-4. [配置 XIAO ESP32C3](#configure-the-xiao-esp32c3)
+1. 下载并 3D 打印外壳
+2. 连接相关电子元件
+3. 设置环境
+4. 配置 XIAO ESP32C3
 
 附加文档：
 
-1. [添加新的加密货币](#adding-new-cryptocurrencies)
-2. [调整和处理动画图像](#downsizing-and-processing-animated-images)
+1. 添加新的加密货币
+2. 调整和处理动画图像
 
 ## 下载并 3D 打印外壳
 

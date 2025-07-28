@@ -31,18 +31,21 @@ Grove system is designed to connect a processor to the real world through differ
 ### Version Tracker
 
 <table>
-<tr>
-<td>Product version </td>
-<td> Release date</td>
-<td> Support status </td>
-<td> Notes
-</td></tr>
-<tr>
-<td> Grove Starter kit for Arduino 101(v1.0 current version) </td>
-<td> April 2016 </td>
-<td> Supported </td>
-<td> None
-</td></tr></table>
+  <tbody>
+    <tr>
+      <td>Product version</td>
+      <td>Release date</td>
+      <td>Support status</td>
+      <td>Notes</td>
+    </tr>
+    <tr>
+      <td>Grove Starter kit for Arduino 101(v1.0 current version)</td>
+      <td>April 2016</td>
+      <td>Supported</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Features
 
@@ -57,18 +60,21 @@ Grove system is designed to connect a processor to the real world through differ
 ### Platform supported
 
 <table>
-<tr>
-<td>Platform</td>
-<td> Seeeduino/Arduino </td>
-<td> Rasberry Pi </td>
-<td> LinkIt One </td>
-<td> Beaglebone </td>
-<td> LinkIt ONE
-</td></tr>
-<tr>
-<td> Supported status</td>
-<td colspan="5"> Supported, except for Base Shield which only applies to Arduino/Seeeduino platform.
-</td></tr></table>
+  <tbody>
+    <tr>
+      <td>Platform</td>
+      <td>Seeeduino/Arduino</td>
+      <td>Rasberry Pi</td>
+      <td>LinkIt One</td>
+      <td>Beaglebone</td>
+      <td>LinkIt ONE</td>
+    </tr>
+    <tr>
+      <td>Supported status</td>
+      <td colSpan="5">Supported, except for Base Shield which only applies to Arduino/Seeeduino platform.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Hardware Overview
 
@@ -79,76 +85,79 @@ This section lists main parts in this kit and links to get more information for 
 ### **Parts list**
 
 <table>
-<tr>
-<th>Parts name   </th>
-<th> Quantity</th>
-<th> Links for more information
-</th></tr>
-<tr>
-<td> Grove - Rotary Angle Sensor(P)  </td>
-<td> 1 piece </td>
-<td> [https://www.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor](/Grove-Rotary_Angle_Sensor)
-</td></tr>
-<tr>
-<td> Grove – Button</td>
-<td>1 piece </td>
-<td> [https://www.seeedstudio.com/wiki/Grove_-_Button](/Grove-Button)
-</td></tr>
-<tr>
-<td>Grove - Touch Sensor </td>
-<td>1 piece</td>
-<td> [https://www.seeedstudio.com/wiki/Grove_-_Touch_Sensor](/Grove-Touch_Sensor)
-</td></tr>
-<tr>
-<td>Grove LEDs</td>
-<td>1 piece</td>
-<td>[https://www.seeedstudio.com/depot/s/GROVE%2520LED.html?search_in_description=0](https://www.seeedstudio.com/depot/s/GROVE%2520LED.html?search_in_description=0)
-</td></tr>
-<tr>
-<td>Grove - Buzzer</td>
-<td>1 piece</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Buzzer](/Grove-Buzzer)
-</td></tr>
-<tr>
-<td>Grove - Sound Sensor</td>
-<td>1 piece</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Sound_Sensor](/Grove-Sound_Sensor)
-</td></tr>
-<tr>
-<td>Grove - Light Sensor</td>
-<td>1 piece</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Light_Sensor_v1.2](/Grove-Light_Sensor)
-</td></tr>
-<tr>
-<td>Grove - Temperature Sensor</td>
-<td>1 piece</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Temperature_Sensor](/Grove-Temperature_Sensor)
-</td></tr>
-<tr>
-<td>Grove - Relay</td>
-<td>1 piece</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Relay](/Grove-Relay)
-</td></tr>
-<tr>
-<td>Grove - Servo</td>
-<td>1 piece</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Servo](/Grove-Servo)
-</td></tr>
-<tr>
-<td>Grove - LCD RGB Backlight</td>
-<td>1 piece</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_LCD_RGB_Backlight](/Grove-LCD_RGB_Backlight)
-</td></tr>
-<tr>
-<td>Base Shield V2.0</td>
-<td>1 piece</td>
-<td>[https://www.seeedstudio.com/wiki/Base_Shield_v2](/Base_Shield_V2)
-</td></tr>
-<tr>
-<td>User Manual (printed copy) </td>
-<td> 1 piece</td>
-<td> [https://www.seeedstudio.com/wiki/images/2/2e/Grove_Starter_Kit_arduino_101_manual%28printed_version%29_s.pdf](https://files.seeedstudio.com/wiki/Grove_Starter_kit_for_Arduino_101/res/Grove_Starter_Kit_arduino_101_manual-printed_version-s.pdf)
-</td></tr></table>
+  <tbody>
+    <tr>
+      <th>Parts name</th>
+      <th>Quantity</th>
+      <th>Links for more information</th>
+    </tr>
+    <tr>
+      <td>Grove - Rotary Angle Sensor(P)</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor](/Grove-Rotary_Angle_Sensor)</td>
+    </tr>
+    <tr>
+      <td>Grove – Button</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Button](/Grove-Button)</td>
+    </tr>
+    <tr>
+      <td>Grove - Touch Sensor</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Touch_Sensor](/Grove-Touch_Sensor)</td>
+    </tr>
+    <tr>
+      <td>Grove LEDs</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/depot/s/GROVE%2520LED.html?search_in_description=0](https://www.seeedstudio.com/depot/s/GROVE%2520LED.html?search_in_description=0)</td>
+    </tr>
+    <tr>
+      <td>Grove - Buzzer</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Buzzer](/Grove-Buzzer)</td>
+    </tr>
+    <tr>
+      <td>Grove - Sound Sensor</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Sound_Sensor](/Grove-Sound_Sensor)</td>
+    </tr>
+    <tr>
+      <td>Grove - Light Sensor</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Light_Sensor_v1.2](/Grove-Light_Sensor)</td>
+    </tr>
+    <tr>
+      <td>Grove - Temperature Sensor</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Temperature_Sensor](/Grove-Temperature_Sensor)</td>
+    </tr>
+    <tr>
+      <td>Grove - Relay</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Relay](/Grove-Relay)</td>
+    </tr>
+    <tr>
+      <td>Grove - Servo</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Servo](/Grove-Servo)</td>
+    </tr>
+    <tr>
+      <td>Grove - LCD RGB Backlight</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_LCD_RGB_Backlight](/Grove-LCD_RGB_Backlight)</td>
+    </tr>
+    <tr>
+      <td>Base Shield V2.0</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/Base_Shield_v2](/Base_Shield_V2)</td>
+    </tr>
+    <tr>
+      <td>User Manual (printed copy)</td>
+      <td>1 piece</td>
+      <td>[https://www.seeedstudio.com/wiki/images/2/2e/Grove_Starter_Kit_arduino_101_manual%28printed_version%29_s.pdf](https://files.seeedstudio.com/wiki/Grove_Starter_kit_for_Arduino_101/res/Grove_Starter_Kit_arduino_101_manual-printed_version-s.pdf)</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Getting Started
 

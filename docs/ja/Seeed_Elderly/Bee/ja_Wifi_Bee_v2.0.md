@@ -89,7 +89,7 @@ reboot
 
 ![](https://files.seeedstudio.com/wiki/Wifi_Bee_v2.0/img/Join_network.png)
 
-*   8) Webブラウザを使用して "http://ip:port" にアクセスします（例："http://192.168.0.28:2000" ）。モニターはWebブラウザからのHTTPリクエストを受信しますが、Wifi Beeが何も返信しないため、Webブラウザは何も受信しません。
+*   8) Webブラウザを使用して `http://ip:port` にアクセスします（例：`http://192.168.0.28:2000` ）。モニターはWebブラウザからのHTTPリクエストを受信しますが、Wifi Beeが何も返信しないため、Webブラウザは何も受信しません。
 
 ![](https://files.seeedstudio.com/wiki/Wifi_Bee_v2.0/img/Web_access.png)
 

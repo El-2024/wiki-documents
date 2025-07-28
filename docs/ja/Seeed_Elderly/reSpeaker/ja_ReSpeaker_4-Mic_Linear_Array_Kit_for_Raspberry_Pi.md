@@ -243,7 +243,7 @@ audacity                      // Audacity を実行
 
 ## 使用概要
 
-以下の例を実行するには、Raspberry Pi に <https://github.com/respeaker/4mics_hat.git> リポジトリをクローンしてください。
+以下の例を実行するには、Raspberry Pi に https://github.com/respeaker/4mics_hat.git リポジトリをクローンしてください。
 
 ```
 git clone https://github.com/respeaker/4mics_hat.git

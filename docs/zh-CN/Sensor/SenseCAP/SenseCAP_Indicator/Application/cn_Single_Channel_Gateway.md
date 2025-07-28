@@ -67,8 +67,7 @@ sidebar_position: 5
 点击下载固件：
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241106.zip"><strong><span><font color={'FFFFFF'} size={"4"}> 下载 ⏬ </font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241106.zip"><strong><span><font color={'FFFFFF'} size={"4"}> 下载 ⏬ </font></span></strong></a>
 </div>
 
 ## 自定义并构建固件

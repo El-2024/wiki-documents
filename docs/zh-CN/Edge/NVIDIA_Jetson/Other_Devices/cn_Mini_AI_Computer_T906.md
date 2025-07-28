@@ -420,7 +420,7 @@ sudo ./flash.sh jetson-agx-orin-devkit mmcblk0p1
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/AI_Computer_T906/image/flash_success.png" /></div>
 
-## 外设
+## 外设 {#peripherals}
 
 ### Wi-Fi 连接
 

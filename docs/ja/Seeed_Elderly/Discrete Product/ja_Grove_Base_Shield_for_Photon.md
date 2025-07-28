@@ -34,26 +34,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 仕様
 ---
-<table>
-<tr>
-<td> Groveポート </td>
-<td> 3つのデジタルポート
-
-2つのアナログポート
-
-2つのI<sup>2</sup>Cポート
-
-1つのUARTポート
-
-</td></tr>
-<tr>
-<td> 寸法  </td>
-<td> 53 × 53 mm
-</td></tr>
-<tr>
-<td> 重量  </td>
-<td> 18g
-</td></tr></table>
+| 項目 | 仕様 |
+|---|---|
+| Groveポート | 3つのデジタルポート<br/>2つのアナログポート<br/>2つのI<sup>2</sup>Cポート<br/>1つのUARTポート |
+| 寸法 | 53 × 53 mm |
+| 重量 | 18g |
 
 ## ハードウェア概要
 ---
@@ -61,15 +46,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### **部品リスト**
 
-<table>
-<tr>
-<th>部品名   </th>
-<th> 数量
-</th></tr>
-<tr>
-<td> Photon用Grove Base Shield  </td>
-<td> 1個
-</td></tr></table>
+| 部品名 | 数量 |
+|---|---|
+| Photon用Grove Base Shield | 1個 |
 
 ## はじめに
 ---
@@ -88,26 +67,22 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ブザーを鳴らす
 
-<dl><dd> 1. [こちら](https://docs.particle.io/guide/getting-started/connect/core/)を参照してデバイス（PCまたはMac）に接続してください。
-</dd></dl>
+1. [こちら](https://docs.particle.io/guide/getting-started/connect/core/)を参照してデバイス（PCまたはMac）に接続してください。
 
 !!!注意
     1. 特にWindows 10ユーザーには**node.js v4.2.3 LTS**を選択することをお勧めします。
     2. **particle setup**コマンドを実行した後にもう1つのステップが必要になる場合があります。それは、Windows 10で特に、名前に**Photon**を含むWi-Fiアクセスポイントにデバイス（PCまたはMac）を接続することです。
 
-<dl><dd> 2. プロジェクトには[Web IDE](https://build.particle.io/)を使用してください。アカウントでログインし、デバイスを選択します（左列の2番目のアイコンをクリック）。
-</dd></dl>
+2. プロジェクトには[Web IDE](https://build.particle.io/)を使用してください。アカウントでログインし、デバイスを選択します（左列の2番目のアイコンをクリック）。
 
 :::注意
     インターネット接続があまり良くない場合は、Particle Devを使用するよりも[Web IDE](https://build.particle.io/)を選択してコードをコンパイルまたはPhotonにフラッシュすることをお勧めします。
 :::
-<dl><dd> 3. 以下のように接続してください:
-</dd></dl>
+3. 以下のように接続してください:
 
 ![](https://files.seeedstudio.com/wiki/Grove_Base_Shield_for_Photon/img/Grove_Base_Shield_for_Photon_demo_conneciton_1200_S.jpg)
 
-<dl><dd> 4. 次に、以下のコードをWeb IDEにコピーして、左列の最初のアイコン（稲妻のようなアイコン）をクリックしてPhotonにフラッシュしてください。
-</dd></dl>
+4. 次に、以下のコードをWeb IDEにコピーして、左列の最初のアイコン（稲妻のようなアイコン）をクリックしてPhotonにフラッシュしてください。
 
 :::注意
     コードは_**filename.ino**_という名前のタブにのみコピーしてください。

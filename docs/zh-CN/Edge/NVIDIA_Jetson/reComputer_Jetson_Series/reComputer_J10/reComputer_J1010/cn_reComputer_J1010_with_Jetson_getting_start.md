@@ -72,8 +72,7 @@ reComputer J1010 是一款紧凑型边缘计算机，搭载 NVIDIA Jetson Nano 4
     </tr>
     <tr>
       <td>视频解码器</td>
-      <td colspan='2' align='center'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60 (H.265 & H.264)
-      </td>
+      <td colspan='2' align='center'>4K60 | 2x 4K30 | 4x 1080p60 | 8x 1080p30 | 9x 720p60 (H.265 & H.264)</td>
       <td>4Kp60 | 2x 4Kp30 | 8x 1080p30 | 18x 720p30 (H.264/H.265)</td>
     </tr>
     <tr>
@@ -82,40 +81,40 @@ reComputer J1010 是一款紧凑型边缘计算机，搭载 NVIDIA Jetson Nano 4
     </tr>
     <tr>
       <td>USB</td>
-      <td>1 * USB 3.0 Type A; 
-2 * USB 2.0 Type A;
-1 * USB Type C 用于设备模式;
-1 * USB Type C 用于 5V 电源输入</td>
-      <td>4 * USB 3.0 Type-A；
-1 * Micro-USB 用于设备模式;</td>
-      <td>4 * USB 3.0 Type-A; 
-1 * Micro-USB 用于 5V 电源输入或设备模式</td>
+      <td>1 × USB 3.0 Type A; 
+2 × USB 2.0 Type A;
+1 × USB Type C 用于设备模式;
+1 × USB Type C 用于 5V 电源输入</td>
+      <td>4 × USB 3.0 Type-A；
+1 × Micro-USB 用于设备模式;</td>
+      <td>4 × USB 3.0 Type-A; 
+1 × Micro-USB 用于 5V 电源输入或设备模式</td>
     </tr>
     <tr>
       <td>CSI 摄像头连接</td>
-      <td colspan='3' align='center'>2*CSI 摄像头 (15 pos, 1mm pitch, MIPI CSI-2 )</td>
+      <td colspan='3' align='center'>2×CSI 摄像头 (15 pos, 1mm pitch, MIPI CSI-2 )</td>
     </tr>
     <tr>
       <td>显示</td>
-      <td>1*HDMI Type A</td>
-      <td colspan='2' align='center'>1*HDMI Type A; 
-1*DP</td>
+      <td>1×HDMI Type A</td>
+      <td colspan='2' align='center'>1×HDMI Type A; 
+1×DP</td>
     </tr>
     <tr>
       <td>风扇</td>
-      <td>1* 风扇连接器 (5V PWM)</td>
-      <td colspan='2' align='center'>1* 风扇 (5V PWM)</td>
+      <td>1× 风扇连接器 (5V PWM)</td>
+      <td colspan='2' align='center'>1× 风扇 (5V PWM)</td>
     </tr>
     <tr>
       <td>M.2 KEY E</td>
-      <td>1*M.2 Key E</td>
-      <td>1*M.2 Key E（禁用）</td>
-      <td>1*M.2 Key E</td>
+      <td>1×M.2 Key E</td>
+      <td>1×M.2 Key E（禁用）</td>
+      <td>1×M.2 Key E</td>
     </tr>
     <tr>
       <td>M.2 KEY M</td>
       <td>-</td>
-      <td>1*M.2 Key M</td>
+      <td>1×M.2 Key M</td>
       <td>-</td>
     </tr>
     <tr>
@@ -125,7 +124,7 @@ reComputer J1010 是一款紧凑型边缘计算机，搭载 NVIDIA Jetson Nano 4
     </tr>
     <tr>
       <td>多功能端口</td>
-      <td colspan='3' align='center'>1* 40 针头</td>
+      <td colspan='3' align='center'>1× 40 针头</td>
     </tr>
     <tr>
       <td>电源</td>
@@ -145,7 +144,7 @@ Micro-USB 5V⎓2A</td>
 ## 将 JetPack 刷写到 reComputer J1010
 
 :::info
-请参考此 [wiki](/reComputer_J1010_J101_Flash_Jetpack) 页面获取更多信息，因为 J1010 使用 J101 载板。
+请参考此 [wiki](/cn/reComputer_J1010_J101_Flash_Jetpack) 页面获取更多信息，因为 J1010 使用 J101 载板。
 :::
 
 ## 资源

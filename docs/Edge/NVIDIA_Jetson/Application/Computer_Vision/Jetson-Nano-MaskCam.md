@@ -197,7 +197,7 @@ If you see a ```ConnectionError``` in the frontend, wait a couple more seconds a
 
 ![](https://files.seeedstudio.com/wiki/Jetson-Nano-MaskCam/tu7.png)
 
-If you wait a couple more seconds and reload the page but it is still a ```ConnectionError``` in the frontend, please make sure the ports: <5432> and <80> are not being occupied or listened up.
+If you wait a couple more seconds and reload the page but it is still a ```ConnectionError``` in the frontend, please make sure the ports: `5432` and `80` are not being occupied or listened up.
 
 If you visit the frontend webpage successfully the first time but failed the next, the best way to solve it currently is to re-install docker.
 

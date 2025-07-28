@@ -28,9 +28,9 @@ Here is the overview of the reServer J2030 carrier board for reference:
     <tbody><tr>
       </tr>
       <tr>
-        <td align="center">Front
-        </td><td align="center">Back
-        </td></tr>
+        <td align="center">Front</td>
+        <td align="center">Back</td>
+      </tr>
       <tr>
         <td align="center">
           <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware1.png" alt />

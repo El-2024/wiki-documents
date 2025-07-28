@@ -6,7 +6,7 @@ keywords:
 - ESPHome
 - Home Assistant
 image: https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/cover.webp
-slug: /xiao_075inch_epaper_panel
+slug: /xiao_075inch_epaper_panel_esphome
 sidebar_position: 2
 last_update:
   date: 03/12/2025
@@ -21,8 +21,7 @@ import TabItem from '@theme/TabItem';
 <br></br>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
 </div>
 
 
@@ -43,8 +42,7 @@ Home Assistant is a powerful open-source home automation platform that allows yo
 - **Customizable Dashboard**: Design your own user interface to display the information that matters most to you.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.home-assistant.io/"><strong><span><font color={'FFFFFF'} size={"4"}> Learn More 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.home-assistant.io/"><strong><span><font color={'FFFFFF'} size={"4"}> Learn More 🖱️</font></span></strong></a>
 </div>
 
 ### Why E-Paper Display with Home Assistant?
@@ -443,7 +441,7 @@ When you see the feedback like the following image, it means the code is running
 
 
 
-### 3. <span id="ttf">Display icon</span>
+### 3. Display icon {#ttf}
 
 This example will show icon on the display.
 
@@ -528,7 +526,7 @@ Copy the code and paste it to **captive_portal** part as the following image.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/43.png" style={{width:800, height:'auto'}}/></div>
 
-### 4. <span id="image">Display image</span>
+### 4. Display image {#image}
 
 This example will show any images you like on the display.
 
@@ -1243,9 +1241,9 @@ In this case, you should go to Settings -> Devices & Services -> Integrations to
 
 <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/101.png" style={{width:'100%', height:'auto'}}/></div>
 
-#### Q2: Why can't I get those data in Home Assistant?
+#### Q2: Why can't I get those data in Home Assistant? {#port}
 
-In this case, you should go to Settings -> Devices & Services -> Integrations to **ADD** your device to <span id="port">HA.</span>
+In this case, you should go to Settings -> Devices & Services -> Integrations to **ADD** your device to HA.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/11.png" style={{width:800, height:'auto'}}/></div>
 

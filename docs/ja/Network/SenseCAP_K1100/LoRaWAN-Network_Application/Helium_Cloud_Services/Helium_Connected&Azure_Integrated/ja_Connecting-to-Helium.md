@@ -26,8 +26,8 @@ IP66の筐体、Bluetooth設定、グローバルLoRaWAN®ネットワークと�
 
 <div>
   <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-    <tbody><tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP産業用センサー</strong></font></td>
-      </tr>
+    <tbody>
+      <tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP産業用センサー</strong></font></td></tr>
       <tr>
         <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div>
         </td>

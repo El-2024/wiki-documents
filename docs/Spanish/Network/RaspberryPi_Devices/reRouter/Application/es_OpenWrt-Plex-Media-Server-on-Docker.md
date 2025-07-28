@@ -134,7 +134,7 @@ docker run \
 linuxserver/plex
 ```
 
-**Nota:** Para obtener la **zona horaria (timezone)**, visita [este enlace](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) y copia el **nombre de la base de datos TZ**. Para obtener el **claimToken**, visita [este enlace](#www.plex.tv/claim) y copia/pega el token.
+**Nota:** Para obtener la **zona horaria (timezone)**, visita [este enlace](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) y copia el **nombre de la base de datos TZ**. Para obtener el **claimToken**, visita [este enlace](https://www.plex.tv/claim) y copia/pega el token.
 
 - **Paso 5.** Finalmente haz clic en **SUBMIT**
 

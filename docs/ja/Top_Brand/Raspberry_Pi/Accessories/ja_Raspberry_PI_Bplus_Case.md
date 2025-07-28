@@ -77,77 +77,58 @@ sku:  114990084 -->
 
 ![](https://files.seeedstudio.com/wiki/Raspberry_PI_Bplus_Case/img/20141016191832.jpg)
 
-<table  cellspacing="0" width="80%">
+<table cellspacing="0" width="80%">
 <tr>
-<th scope="col"> 部品
-</th>
-<th scope="col"> パッケージ
-</th>
-<th scope="col"> 数量
-</th></tr>
+<th scope="col">部品</th>
+<th scope="col">パッケージ</th>
+<th scope="col">数量</th>
+</tr>
 <tr>
-<th scope="row"> 上部ケース
-</th>
-<td> 厚さ4mm
-</td>
-<td> 1
-</td></tr>
+<th scope="row">上部ケース</th>
+<td>厚さ4mm</td>
+<td>1</td>
+</tr>
 <tr>
-<th scope="row"> 下部ケース
-</th>
-<td> 厚さ4mm
-</td>
-<td> 1
-</td></tr>
+<th scope="row">下部ケース</th>
+<td>厚さ4mm</td>
+<td>1</td>
+</tr>
 <tr>
-<th scope="row"> SDカードシート
-</th>
-<td> 厚さ2.5mm
-</td>
-<td> 1
-</td></tr>
+<th scope="row">SDカードシート</th>
+<td>厚さ2.5mm</td>
+<td>1</td>
+</tr>
 <tr>
-<th scope="row"> USBコネクターシート
-</th>
-<td> 厚さ2.5mm
-</td>
-<td> 1
-</td></tr>
+<th scope="row">USBコネクターシート</th>
+<td>厚さ2.5mm</td>
+<td>1</td>
+</tr>
 <tr>
-<th scope="row"> 金属ネジ
-</th>
-<td> M3*4
-</td>
-<td> 4
-</td></tr>
+<th scope="row">金属ネジ</th>
+<td>M3*4</td>
+<td>4</td>
+</tr>
 <tr>
-<th scope="row"> ナイロンネジ
-</th>
-<td> M3*6
-</td>
-<td> 4
-</td></tr>
+<th scope="row">ナイロンネジ</th>
+<td>M3*6</td>
+<td>4</td>
+</tr>
 <tr>
-<th scope="row"> ネジ柱
-</th>
-<td> M3*7
-</td>
-<td> 4
-</td></tr>
+<th scope="row">ネジ柱</th>
+<td>M3*7</td>
+<td>4</td>
+</tr>
 <tr>
-<th scope="row"> ナイロンリベット
-</th>
-<td> R2048
-</td>
-<td> 4
-</td></tr>
+<th scope="row">ナイロンリベット</th>
+<td>R2048</td>
+<td>4</td>
+</tr>
 <tr>
-<th scope="row"> シリコンクッション
-</th>
-<td> Ø10X3
-</td>
-<td> 4
-</td></tr></table>
+<th scope="row">シリコンクッション</th>
+<td>Ø10X3</td>
+<td>4</td>
+</tr>
+</table>
 
 ## 技術サポートと製品ディスカッション
 

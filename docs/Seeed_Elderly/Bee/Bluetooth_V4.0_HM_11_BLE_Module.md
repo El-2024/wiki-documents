@@ -41,261 +41,192 @@ This is a SMD BLE module used in our BLE Bee and Xadow BLE. It is based on TI CC
 ---
 <table>
 <tr>
-<th> Specification
-</th>
-<th> Value
-</th></tr>
+<th>Specification</th>
+<th>Value</th>
+</tr>
 <tr>
-<td width="200px"> Microprocessor
-</td>
-<td width="200px"> CC2541
-</td></tr>
+<td>Microprocessor</td>
+<td>CC2541</td>
+</tr>
 <tr>
-<td> Resources
-</td>
-<td> Support the AT command, the user can according to need to change the role (master, slave mode) and the serial port baud rate,name of equipment,Matching parameters such as password, the use of flexible.
-</td></tr>
+<td>Resources</td>
+<td>Support the AT command, the user can according to need to change the role (master, slave mode) and the serial port baud rate,name of equipment,Matching parameters such as password, the use of flexible.</td>
+</tr>
 <tr>
-<td> Outline Dimension
-</td>
-<td> 13.5mm x 18.5mm x 2.3mm
-</td></tr>
+<td>Outline Dimension</td>
+<td>13.5mm x 18.5mm x 2.3mm</td>
+</tr>
 <tr>
-<td> Power supply
-</td>
-<td> 3.3V
-</td></tr>
+<td>Power supply</td>
+<td>3.3V</td>
+</tr>
 <tr>
-<td> Communication Protocol
-</td>
-<td> Uart(3.3V LVTTL)
-</td></tr>
+<td>Communication Protocol</td>
+<td>Uart(3.3V LVTTL)</td>
+</tr>
 <tr>
-<td> IO counts
-</td>
-<td> 2
-</td></tr>
+<td>IO counts</td>
+<td>2</td>
+</tr>
 <tr>
-<td> Key input IO
-</td>
-<td> 1
-</td></tr>
+<td>Key input IO</td>
+<td>1</td>
+</tr>
 <tr>
-<td> LED Indicators IO
-</td>
-<td> 1
-</td></tr>
+<td>LED Indicators IO</td>
+<td>1</td>
+</tr>
 <tr>
-<td> Connectivity
-</td>
-<td> Socket compatible with XBee
-</td></tr></table>
+<td>Connectivity</td>
+<td>Socket compatible with XBee</td>
+</tr>
+</table>
 
 ##     Electrical Characteristics
 ---
-<table >
+<table>
 <tr>
-<th> Specification
-</th>
-<th> Min
-</th>
-<th> Typ
-</th>
-<th> Max
-</th>
-<th> Unit
-</th></tr>
+<th>Specification</th>
+<th>Min</th>
+<th>Typ</th>
+<th>Max</th>
+<th>Unit</th>
+</tr>
 <tr>
-<td width="400px"> Max Input Voltage
-</td>
-<td width="150px"> -0.3
-</td>
-<td width="150px">
-</td>
-<td width="150px"> 3.6
-</td>
-<td width="150px"> V
-</td></tr>
+<td>Max Input Voltage</td>
+<td>-0.3</td>
+<td></td>
+<td>3.6</td>
+<td>V</td>
+</tr>
 <tr>
-<td> Working Input Voltage
-</td>
-<td> 2.0
-</td>
-<td> 3.3
-</td>
-<td> 3.6
-</td>
-<td> V
-</td></tr>
+<td>Working Input Voltage</td>
+<td>2.0</td>
+<td>3.3</td>
+<td>3.6</td>
+<td>V</td>
+</tr>
 <tr>
-<td> Transmit Current
-</td>
-<td>
-</td>
-<td> 15
-</td>
-<td>
-</td>
-<td> mA
-</td></tr>
+<td>Transmit Current</td>
+<td></td>
+<td>15</td>
+<td></td>
+<td>mA</td>
+</tr>
 <tr>
-<td> Receive Current
-</td>
-<td>
-</td>
-<td> 8.5
-</td>
-<td>
-</td>
-<td> mA
-</td></tr>
+<td>Receive Current</td>
+<td></td>
+<td>8.5</td>
+<td></td>
+<td>mA</td>
+</tr>
 <tr>
-<td> Deep Sleep Current
-</td>
-<td>
-</td>
-<td> 600
-</td>
-<td>
-</td>
-<td> uA
-</td></tr>
+<td>Deep Sleep Current</td>
+<td></td>
+<td>600</td>
+<td></td>
+<td>uA</td>
+</tr>
 <tr>
-<td> Operating Temperature
-</td>
-<td> -40
-</td>
-<td>
-</td>
-<td> +65
-</td>
-<td> °C
-</td></tr></table>
+<td>Operating Temperature</td>
+<td>-40</td>
+<td></td>
+<td>+65</td>
+<td>°C</td>
+</tr>
+</table>
 
 ##     Pin definition
 ---
 ![](https://files.seeedstudio.com/wiki/Bluetooth_V4.0_HM_11_BLE_Module/img/HM-11_Pinout.jpg)
 
-<table >
+<table>
 <tr>
-<th> Pin
-</th>
-<th> Name
-</th>
-<th> Description
-</th></tr>
+<th>Pin</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
 <tr>
-<td width="100px"> 1
-</td>
-<td width="200px"> UART_RTS
-</td>
-<td width="350px"> UART
-</td></tr>
+<td>1</td>
+<td>UART_RTS</td>
+<td>UART</td>
+</tr>
 <tr>
-<td> 2
-</td>
-<td> UART_TX
-</td>
-<td> UART
-</td></tr>
+<td>2</td>
+<td>UART_TX</td>
+<td>UART</td>
+</tr>
 <tr>
-<td> 3
-</td>
-<td> UART_CTS
-</td>
-<td> UART
-</td></tr>
+<td>3</td>
+<td>UART_CTS</td>
+<td>UART</td>
+</tr>
 <tr>
-<td> 4
-</td>
-<td> UART_RX
-</td>
-<td> UART
-</td></tr>
+<td>4</td>
+<td>UART_RX</td>
+<td>UART</td>
+</tr>
 <tr>
-<td> 5
-</td>
-<td> NC
-</td>
-<td>
-</td></tr>
+<td>5</td>
+<td>NC</td>
+<td></td>
+</tr>
 <tr>
-<td> 6
-</td>
-<td> NC
-</td>
-<td>
-</td></tr>
+<td>6</td>
+<td>NC</td>
+<td></td>
+</tr>
 <tr>
-<td> 7
-</td>
-<td> NV
-</td>
-<td>
-</td></tr>
+<td>7</td>
+<td>NV</td>
+<td></td>
+</tr>
 <tr>
-<td> 8
-</td>
-<td> NV
-</td>
-<td>
-</td></tr>
+<td>8</td>
+<td>NV</td>
+<td></td>
+</tr>
 <tr>
-<td> 9
-</td>
-<td> VCC
-</td>
-<td> Power supply 3.3V
-</td></tr>
+<td>9</td>
+<td>VCC</td>
+<td>Power supply 3.3V</td>
+</tr>
 <tr>
-<td> 10
-</td>
-<td> NC
-</td>
-<td>
-</td></tr>
+<td>10</td>
+<td>NC</td>
+<td></td>
+</tr>
 <tr>
-<td> 11
-</td>
-<td> RESETB
-</td>
-<td> Reset, active low at least in 5ms
-</td></tr>
+<td>11</td>
+<td>RESETB</td>
+<td>Reset, active low at least in 5ms</td>
+</tr>
 <tr>
-<td> 12
-</td>
-<td> GND
-</td>
-<td> GND
-</td></tr>
+<td>12</td>
+<td>GND</td>
+<td>GND</td>
+</tr>
 <tr>
-<td> 13
-</td>
-<td> PIO3
-</td>
-<td> IO port, used for connect to DHT11/DS18B20
-</td></tr>
+<td>13</td>
+<td>PIO3</td>
+<td>IO port, used for connect to DHT11/DS18B20</td>
+</tr>
 <tr>
-<td> 14
-</td>
-<td> PIO2
-</td>
-<td> Digital input, output
-</td></tr>
+<td>14</td>
+<td>PIO2</td>
+<td>Digital input, output</td>
+</tr>
 <tr>
-<td> 15
-</td>
-<td> PIO1
-</td>
-<td> LED indicator
-</td></tr>
+<td>15</td>
+<td>PIO1</td>
+<td>LED indicator</td>
+</tr>
 <tr>
-<td> 16
-</td>
-<td> PIO0
-</td>
-<td> Button pin
-</td></tr></table>
+<td>16</td>
+<td>PIO0</td>
+<td>Button pin</td>
+</tr>
+</table>
 
 ##    AT commands &amp; Configuration
 ---

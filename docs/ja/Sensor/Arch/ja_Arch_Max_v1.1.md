@@ -10,8 +10,8 @@ last_update:
   author: hushuxu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 ![](https://files.seeedstudio.com/wiki/Arch_Max_v1.1/img/Arch_Max_v1.1_product_view.jpg)
@@ -112,7 +112,7 @@ Arch Maxの最新ファームウェアバージョンは、2014年10月8日に�
 -   Arch Maxのボタンを押し続けて電源を入れます。
 -   CRP DISABLDディスクが表示されます。
     -   Windowsの場合、上記のファームウェアでfirmware.binを置き換えます。
-    -   Linux/Macの場合、以下のコマンドを入力します：**dd if={new\_firmware.bin} of={firmware.bin} conv=notrunc**
+    -   Linux/Macの場合、以下のコマンドを入力します：**dd if=\{new\_firmware.bin\} of=\{firmware.bin\} conv=notrunc**
 
 ## オンライン回路図ビューア
 

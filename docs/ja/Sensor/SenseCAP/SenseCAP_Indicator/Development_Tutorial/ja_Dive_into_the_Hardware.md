@@ -59,7 +59,7 @@ RP2040で使用されるArduinoライブラリ: https://github.com/bakercp/Packe
 
 | PKT_TYPE  | DIR	 | 説明  |
 |:----------|:----------|:----------|
-| 0x00    | ESP32<->RP2040    |   ACK, 文字列, 値: 'ACK'  |
+| 0x00    | ESP32 ↔ RP2040    |   ACK, 文字列, 値: 'ACK'  |
 | 0xA0    | ESP32->RP2040    |  収集間隔コマンド, PKT_PARAはuint32_t |
 | 0xA1    | ESP32->RP2040    |  ビープ音オンコマンド, PKT_PARAはuint32_t   |
 | 0xA2    | ESP32->RP2040    |  ビープ音オフコマンド, PKT_PARAはuint32_t  |

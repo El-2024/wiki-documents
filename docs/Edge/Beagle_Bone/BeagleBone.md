@@ -59,10 +59,8 @@ BeagleBone Green: A collaboration with Seeed Studio, this model is similar to th
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBone-Blue-p-2809.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Blue/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBone-Blue-p-2809.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Blue/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
 ### SeeedStudio BeagleBone® Green
@@ -80,10 +78,8 @@ BeagleBone Green: A collaboration with Seeed Studio, this model is similar to th
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Green/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Green/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
 ### BeagleBone® Green Wireless
@@ -101,10 +97,8 @@ BeagleBone Green: A collaboration with Seeed Studio, this model is similar to th
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green-Wireless-Development-Board-TI-AM335x-WiFi-BT.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green-Wireless-Development-Board-TI-AM335x-WiFi-BT.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
 
@@ -123,10 +117,8 @@ BeagleBone Green: A collaboration with Seeed Studio, this model is similar to th
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-Gateway-p-4586.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone-Green-Gateway/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-Gateway-p-4586.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone-Green-Gateway/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
 ### BeagleBone® Case
@@ -136,7 +128,7 @@ BeagleBone Green: A collaboration with Seeed Studio, this model is similar to th
         <img src="https://files.seeedstudio.com/wiki/Beaglebone_Case/img/1130070001_1.jpg" style={{width:900, height:'auto'}}/>
     </div>
     <div class="xiao_topic_page_font1">
-        <font size={"2.1"}>The acrylic case is used for BeagleBone®, like the Raspberry PI B+ case.It’s made of acrylic sheet. manufacture by laser cutting, CNC milling, and hot bending. almost all handmade, Looks very compact and beautiful, Only 4 pieces sheets in total, so easy to assembled. It's strong enought, not easy break like other 6 acrylic sheets case. In the box rounded corners and beveled edges .you will feel very comfortable when you hold it.</font>
+        <font size={"2.1"}>The acrylic case is used for BeagleBone®, like the Raspberry PI B+ case.It's made of acrylic sheet. manufacture by laser cutting, CNC milling, and hot bending. almost all handmade, Looks very compact and beautiful, Only 4 pieces sheets in total, so easy to assembled. It's strong enought, not easy break like other 6 acrylic sheets case. In the box rounded corners and beveled edges .you will feel very comfortable when you hold it.</font>
     </div>
 </div>
 
@@ -144,10 +136,8 @@ BeagleBone Green: A collaboration with Seeed Studio, this model is similar to th
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBoner-Case.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Beaglebone_Case/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBoner-Case.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Beaglebone_Case/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
 
@@ -249,8 +239,7 @@ The BeagleBone® is a versatile platform capable of running a full Linux OS whil
 Seeed's BeagleBone® Green and BeagleBone® Green Wireless are part of the BeagleBone® family and are ready to be customized, manufactured, and deployed now.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Solutions/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Solutions/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
 ## ✨ Contributor Project

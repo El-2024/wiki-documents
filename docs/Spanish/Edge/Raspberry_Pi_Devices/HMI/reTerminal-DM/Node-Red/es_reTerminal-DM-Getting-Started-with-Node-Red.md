@@ -36,7 +36,7 @@ Dado que el reTerminal DM cuenta con gran escalabilidad y conectividad híbrida 
 A continuación, se presenta la guía de inicio para configurar y familiarizarse con la interfaz de Node-RED en reTerminal DM.
 
 :::tip
-* Para usuarios de **Raspbian OS**, por favor consulta: [Instalar Node-RED](#install-and-setting-up-node-red)  
+* Para usuarios de **Raspbian OS**, por favor consulta: Instalar Node-RED  
 * Para usuarios de **Sensecraft Edge OS**, por favor consulta: [Familiarizándose con Node-RED](#getting-familiar-with-node-red), ya que Sensecraft Edge OS viene con Node-RED preinstalado.
 :::
 
@@ -144,7 +144,7 @@ Los elementos centrales del editor son:
 
 ### Instalar Nodos
 
-Existen dos opciones para instalar módulos de nodos en Node-RED. Si usas SenseCraft EDGE OS, consulta el método del [editor de Node-RED](#option-2-node-red-editor).
+Existen dos opciones para instalar módulos de nodos en Node-RED. Si usas SenseCraft EDGE OS, consulta el método del editor de Node-RED.
 
 #### Opción 1: Línea de Comandos
 

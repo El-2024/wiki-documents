@@ -37,7 +37,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 |項目|	最小値	|標準値	|最大値	|単位|
 |---|---|---|---|---|
 |動作電圧|	4.7	|5.0|	5.3	|VDC|
-|測定精度	|/|<=1|/|	 %|
+|測定精度	|/|≤1|/|	 %|
 |外部電圧範囲	(ゲイン3選択時)|	0.3	|/|	12.9|	V|
 |外部電圧範囲 (ゲイン10選択時)|1.0	|/	|43|V|
 |寸法	|/|24X20|/|	mm|
@@ -62,7 +62,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 
 ![](https://files.seeedstudio.com/wiki/Grove-Voltage_Divider/img/Voltage_Divider_Test_Score.jpg)
 
-- ご覧の通り、入力が測定範囲内の場合、電圧分圧器は高い精度（<1%、"OK"とマーク）を持っています。しかし、入力が範囲外の場合、精度が低下します（"NO"とマーク）。具体的な測定範囲については[仕様](https://wiki.seeedstudio.com/ja/Grove-Voltage_Divider/#specification)をご参照ください。
+- ご覧の通り、入力が測定範囲内の場合、電圧分圧器は高い精度（&lt;1%、"OK"とマーク）を持っています。しかし、入力が範囲外の場合、精度が低下します（"NO"とマーク）。具体的な測定範囲については[仕様](https://wiki.seeedstudio.com/ja/Grove-Voltage_Divider/#specification)をご参照ください。
 
 また、電圧分圧器の出力電圧がVCC（Grove動作電圧およびアナログ読み取りの基準）を超える場合、エラーを示すインジケータが点灯します。
 
@@ -126,8 +126,7 @@ Codecraftを初めて使用する場合は、[CodecraftをArduinoで使用する
 
 ## 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-Voltage_Divider/res/Grove-Voltage_Divider_Eagle_File.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
-</div>
+<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-Voltage_Divider/res/Grove-Voltage_Divider_Eagle_File.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}></div>
 
 
 

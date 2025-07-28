@@ -73,7 +73,6 @@ If you haven't explored our guide on integrating [AWS IoT Core with reTerminal D
 <center><img width={1000} src="https://files.seeedstudio.com/wiki/reTerminalDM/N3uron_AWS/AWSconnection.PNG" /></center>
 
 - Step 04: Configure the connection properties:
-
     - A: Select **Amazon Web Services** from the **Destination Broker** drop down menu. **Authentication mode** will be **Certificate**. Also **Client Id** is **N3uron** in this example.
     - B: Load the **Certificate, Private key and CA certificate** you downloaded and saved when you created the Thing in the AWS IoT Console.
     - C: In the AWS IoT console, in the left-hand menu, go to **Settings** and copy your **Device Data Endpoint**. Go back to N3uron and paste it in the **Broker URL** field.

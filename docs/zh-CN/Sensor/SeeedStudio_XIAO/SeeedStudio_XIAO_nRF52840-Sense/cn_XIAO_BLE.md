@@ -313,7 +313,7 @@ Seeed Studio XIAO nRF52840 集成了许多功能于一个小型板卡中，有�
 - **步骤 3.** 将 Seeed Studio XIAO nRF52840 (Sense) 板卡包添加到 Arduino IDE
 
 进入 **File > Preferences**，并在 **"Additional Boards Manager URLs"** 中填写以下 URL：
-    *<https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json>*
+    *https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json*
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png" alt="pir" width={700} height="auto" /></p>
 
@@ -483,7 +483,7 @@ void loop()
 ```
 
 :::tip
-在此，我们特别感谢作者提供的代码 -> ***daCoder*** <-
+在此，我们特别感谢作者提供的代码 -> ***daCoder***
 :::
 
 **如果您想了解此示例的更多详细信息，请点击 [这里](https://forum.seeedstudio.com/t/xiao-sense-accelerometer-examples-and-low-power/270801)**

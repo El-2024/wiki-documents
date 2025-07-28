@@ -59,6 +59,9 @@ reServer 工业版配备了 5 个以太网端口，支持 10/100/1000Mbps 规格
 
 - 在连接 PoE 摄像头之前，需要为 4 个以太网端口启用 PoE 功能。启用方法如下：
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
   <Tabs>
   <TabItem value="Jetpack 5.1.x" label="Jetpack 5.1.x">
 

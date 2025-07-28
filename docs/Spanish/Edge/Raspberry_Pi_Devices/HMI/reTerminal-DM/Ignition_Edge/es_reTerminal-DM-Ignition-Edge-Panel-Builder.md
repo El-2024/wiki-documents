@@ -15,7 +15,7 @@ last_update:
 
 :::note
 Este documento asume que ya tienes un Gateway de Ignition Edge en funcionamiento y en tu red.  
-Antes de intentar estas instrucciones, sigue [Primeros pasos con Ignition Edge](./reTerminal-DM-Getting-Started-with-Ignition-Edge) si necesitas ayuda con esto.
+Antes de intentar estas instrucciones, sigue [Primeros pasos con Ignition Edge](/es/reTerminal-DM-Getting-Started-with-Ignition-Edge) si necesitas ayuda con esto.
 :::
 
 ## Requisitos de Hardware

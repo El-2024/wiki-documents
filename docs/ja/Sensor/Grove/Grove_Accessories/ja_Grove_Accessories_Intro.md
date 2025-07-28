@@ -42,10 +42,8 @@ Groveアクセサリーには、IoTプロジェクト、ワイヤレスセンサ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-1-2-Inch-IPS-Display-p-5699.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/grove_1.2inch_ips_display/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-1-2-Inch-IPS-Display-p-5699.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/grove_1.2inch_ips_display/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 4桁ディスプレイ
@@ -62,10 +60,8 @@ Groveアクセサリーには、IoTプロジェクト、ワイヤレスセンサ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-4-Digit-Display.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-4-Digit_Display/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-4-Digit-Display.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-4-Digit_Display/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 0.54インチ赤色アルファベットディスプレイ
@@ -92,8 +88,7 @@ Groveアクセサリーには、IoTプロジェクト、ワイヤレスセンサ
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/ja/Grove-0.54_inch_Red_Dual_Alphanumeric_Display/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="/ja/Grove-0.54_inch_Red_Dual_Alphanumeric_Display/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 16x2 LCD
@@ -123,8 +118,7 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/ja/Grove-16x2_LCD_Series/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="/ja/Grove-16x2_LCD_Series/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -143,10 +137,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LCD-RGB-Backlight.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-LCD_RGB_Backlight/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LCD-RGB-Backlight.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-LCD_RGB_Backlight/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -165,10 +157,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-66-SSD1306-v1-0-p-5096.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-OLED-Display-0.66-SSD1306_v1.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-66-SSD1306-v1-0-p-5096.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-OLED-Display-0.66-SSD1306_v1.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -187,10 +177,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-96-SSD1315-p-4294.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-OLED-Display-0.96-SSD1315/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-96-SSD1315-p-4294.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-OLED-Display-0.96-SSD1315/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -209,10 +197,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Yellow-Blue-Display-0-96-SSD1315-V1-0-p-5010.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-OLED-Yellow&Blue-Display-0.96-SSD1315_V1.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Yellow-Blue-Display-0-96-SSD1315-V1-0-p-5010.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-OLED-Yellow&Blue-Display-0.96-SSD1315_V1.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -231,10 +217,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-V2.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-OLED_Display_1.12inch/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-V2.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-OLED_Display_1.12inch/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -252,10 +236,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-OLED-Display-1.12-SH1107_V3.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-OLED-Display-1.12-SH1107_V3.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -276,10 +258,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Coil-Latching-Relay.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-2-Coil_Latching_Relay/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Coil-Latching-Relay.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-2-Coil_Latching_Relay/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -298,10 +278,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Buzzer.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Buzzer/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Buzzer.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Buzzer/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -320,10 +298,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Passive-Buzzer-p-4525.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Passive-Buzzer/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Passive-Buzzer-p-4525.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Passive-Buzzer/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -342,10 +318,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Chainable-RGB-Led-V2-0.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Chainable_RGB_LED/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Chainable-RGB-Led-V2-0.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Chainable_RGB_LED/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -364,10 +338,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Motor-Driver-with-L298.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-I2C_Motor_Driver_V1.3/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Motor-Driver-with-L298.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-I2C_Motor_Driver_V1.3/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -385,10 +357,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Motor-Driver-L298P-p-4534.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-I2C-Motor-Driver-L298P/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Motor-Driver-L298P-p-4534.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-I2C-Motor-Driver-L298P/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 赤外線エミッター
@@ -405,10 +375,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Emitter.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Infrared_Emitter/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Emitter.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Infrared_Emitter/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - MP3 v4.0
@@ -425,10 +393,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-MP3-V4-p-5862.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/grove_mp3_v4/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-MP3-V4-p-5862.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/grove_mp3_v4/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ミニファン
@@ -445,10 +411,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Mini-Fan-v1-1.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Mini_Fan/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Mini-Fan-v1-1.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Mini_Fan/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - レコーダー V3
@@ -465,10 +429,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Recorder-v3-0.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Recorder_v3.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Recorder-v3-0.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Recorder_v3.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - リレー
@@ -485,10 +447,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Relay/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Relay/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 2チャンネルSPDTリレー
@@ -505,10 +465,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Channel-SPDT-Relay.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-2-Channel_SPDT_Relay/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Channel-SPDT-Relay.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-2-Channel_SPDT_Relay/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 4-Channel SPDT Relay
@@ -525,10 +483,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-4-Channel-SPDT-Relay-p-3119.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-4-Channel_SPDT_Relay/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-4-Channel-SPDT-Relay-p-3119.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-4-Channel_SPDT_Relay/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 8-Channel Solid State Relay
@@ -545,10 +501,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-8-Channel-Solid-State-Relay.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-8-Channel_Solid_State_Relay/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-8-Channel-Solid-State-Relay.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-8-Channel_Solid_State_Relay/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - Optocoupler Relay (M281)
@@ -565,10 +519,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Optocoupler-Relay-M281-p-2923.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Optocoupler_Relay-M281/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Optocoupler-Relay-M281-p-2923.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Optocoupler_Relay-M281/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - Servo
@@ -585,10 +537,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Servo.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Servo/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Servo.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Servo/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - Speaker
@@ -605,10 +555,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Speaker-p-1445.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Speaker/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Speaker-p-1445.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Speaker/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - Speaker Plus
@@ -625,10 +573,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Speaker-Plus-p-4592.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Speaker-Plus/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Speaker-Plus-p-4592.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Speaker-Plus/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 振動モーター
@@ -646,10 +592,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vibration-Motor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Vibration_Motor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vibration-Motor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Vibration_Motor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -668,10 +612,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Water-Atomization-v1-0.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Water_Atomization/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Water-Atomization-v1-0.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Water_Atomization/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -690,10 +632,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-16-Channel-PWM-Driver-PCA9685.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-16-Channel_PWM_Driver-PCA9685/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-16-Channel-PWM-Driver-PCA9685.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-16-Channel_PWM_Driver-PCA9685/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -712,10 +652,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Motor-Driver-TB6612FNG-p-3220.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-I2C_Motor_Driver-TB6612FNG/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Motor-Driver-TB6612FNG-p-3220.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-I2C_Motor_Driver-TB6612FNG/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -735,10 +673,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Hall-Sensor-p-965.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Hall_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Hall-Sensor-p-965.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Hall_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -757,10 +693,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Voltage-Divider.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Voltage_Divider/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Voltage-Divider.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Voltage_Divider/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ### 時間
@@ -779,10 +713,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RTC-DS1307.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-RTC/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RTC-DS1307.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-RTC/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 高精度RTC (リアルタイムクロック)
@@ -799,10 +731,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-High-Precision-RTC.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove_High_Precision_RTC/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-High-Precision-RTC.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove_High_Precision_RTC/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ### 電流
@@ -821,10 +751,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-10A-DC-Current-Sensor-ACS725-p-2927.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-10A_DC_Current_Sensor-ACS725/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-10A-DC-Current-Sensor-ACS725-p-2927.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-10A_DC_Current_Sensor-ACS725/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ±5A DC/AC電流センサー (ACS70331)
@@ -841,10 +769,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-5A-DC-AC-Current-Sensor-ACS70331-p-2928.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-5A_DC_AC_Current_Sensor-ACS70331/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-5A-DC-AC-Current-Sensor-ACS70331-p-2928.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-5A_DC_AC_Current_Sensor-ACS70331/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 2.5A DC電流センサー (ACS70331)
@@ -861,10 +787,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-5A-DC-Current-Sensor-ACS70331-p-2929.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-2.5A-DC-Current-Sensor-ACS70331/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-5A-DC-Current-Sensor-ACS70331-p-2929.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-2.5A-DC-Current-Sensor-ACS70331/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 電力センサー
@@ -881,10 +805,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Electricity-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Electricity_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Electricity-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Electricity_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - クーロンカウンター 3.3V to 5V (LTC2941)
@@ -901,10 +823,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Coulomb-Counter-3-3V-to-5V-LTC2941.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Coulomb_Counter_3.3V_to_5V-LTC2941/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Coulomb-Counter-3-3V-to-5V-LTC2941.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Coulomb_Counter_3.3V_to_5V-LTC2941/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - MOSFET
@@ -921,10 +841,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-MOSFET.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-MOSFET/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-MOSFET.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-MOSFET/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - SPDTリレー(30A)
@@ -941,10 +859,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-SPDT-Relay-30A.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-SPDT_Relay_30A/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-SPDT-Relay-30A.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-SPDT_Relay_30A/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - スクリュー端子
@@ -961,10 +877,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Screw-Terminal.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Screw_Terminal/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Screw-Terminal.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Screw_Terminal/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 電磁石
@@ -981,10 +895,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Electromagnet.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Electromagnet/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Electromagnet.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Electromagnet/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ### LED
@@ -1003,10 +915,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Red_LED/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Red_LED/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 円形LED
@@ -1023,10 +933,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Circular-LED.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Circular_LED/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Circular-LED.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Circular_LED/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1045,10 +953,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RGB-LED-Stick-10-WS2813-Mini.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-RGB_LED_Stick-10-WS2813_Mini/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RGB-LED-Stick-10-WS2813-Mini.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-RGB_LED_Stick-10-WS2813_Mini/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1068,10 +974,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RGB-LED-Ring-20-WS2813-Mini.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-LED_ring/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RGB-LED-Ring-20-WS2813-Mini.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-LED_ring/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1090,10 +994,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LED-String-Light.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-LED_String_Light/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LED-String-Light.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-LED_String_Light/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1112,10 +1014,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LED-Strip-Driver.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-LED_Strip_Driver/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LED-Strip-Driver.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-LED_Strip_Driver/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1134,10 +1034,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RGB-LED-Matrix-w-Driver.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-RGB_LED_Matrix_w-Driver/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RGB-LED-Matrix-w-Driver.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-RGB_LED_Matrix_w-Driver/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1155,10 +1053,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LED-Matrix-Driver-HT16K33.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-LED_Matrix_Driver-HT16K33/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LED-Matrix-Driver-HT16K33.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-LED_Matrix_Driver-HT16K33/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1177,10 +1073,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED-Matrix-w-Driver.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Red_LED_Matrix_w_Driver/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED-Matrix-w-Driver.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Red_LED_Matrix_w_Driver/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1203,10 +1097,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Button.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Button/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Button.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Button/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1225,10 +1117,8 @@ Grove - 16 x 2 LCDは、ArduinoやRaspberry Piに最適なI2C LCDディスプレ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Switch-P.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Switch-P/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Switch-P.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Switch-P/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1260,8 +1150,7 @@ Grove - LED Buttonは、Grove - Yellow Button、Grove - Blue LED Button、Grove 
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/ja/Grove-LED_Button/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="/ja/Grove-LED_Button/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1280,10 +1169,8 @@ Grove - LED Buttonは、Grove - Yellow Button、Grove - Blue LED Button、Grove 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Dual-Button-p-4529.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Dual-Button/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Dual-Button-p-4529.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Dual-Button/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove-Mech keycap
@@ -1301,10 +1188,8 @@ Grove - LED Buttonは、Grove - Yellow Button、Grove - Blue LED Button、Grove 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Mech-Keycap.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Mech_Keycap/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Mech-Keycap.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Mech_Keycap/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1323,10 +1208,8 @@ Grove - LED Buttonは、Grove - Yellow Button、Grove - Blue LED Button、Grove 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Thumb-Joystick.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Thumb_Joystick/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Thumb-Joystick.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Thumb_Joystick/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1345,10 +1228,8 @@ Grove - LED Buttonは、Grove - Yellow Button、Grove - Blue LED Button、Grove 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Magnetic-Switch.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Magnetic_Switch/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Magnetic-Switch.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Magnetic_Switch/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1370,10 +1251,8 @@ Grove - LED Buttonは、Grove - Yellow Button、Grove - Blue LED Button、Grove 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Hub.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-I2C_Hub/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Hub.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-I2C_Hub/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1393,10 +1272,8 @@ Grove - LED Buttonは、Grove - Yellow Button、Grove - Blue LED Button、Grove 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Hub-6-Port-p-4349.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-I2C-Hub-6Port/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Hub-6-Port-p-4349.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-I2C-Hub-6Port/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1414,10 +1291,8 @@ Grove - LED Buttonは、Grove - Yellow Button、Grove - Blue LED Button、Grove 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-8-Channel-I2C-Hub-TCA9548A-p-4398.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-8-Channel-I2C-Hub-TCA9548A-p-4398.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1436,10 +1311,8 @@ Grove - LED Buttonは、Grove - Yellow Button、Grove - Blue LED Button、Grove 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-ADS1115-16-bit-ADC-p-4599.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-16-bit-ADC-ADS1115/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-ADS1115-16-bit-ADC-p-4599.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-16-bit-ADC-ADS1115/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1461,10 +1334,8 @@ Grove - LED Buttonは、Grove - Yellow Button、Grove - Blue LED Button、Grove 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/catalogsearch/result/index/?q=Grove%20-%20Wrapper"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="/ja/Grove-Wrapper/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/catalogsearch/result/index/?q=Grove%20-%20Wrapper"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Wrapper/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ## Seeed Studio FusionでGroveセンサーを共同開発
@@ -1474,10 +1345,8 @@ Seeed Studio Fusionは、エンジニアがGrove設計を実際の製品に変�
 <div style={{textAlign:'center'}}><img src="https://www.seeedstudio.com/blog/wp-content/uploads/2023/03/project_2.png" style={{width:500, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ申し込む</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細情報</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ申し込む</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細情報</font></span></strong></a>
 </div>
 
 ## ✨ コントリビュータープロジェクト

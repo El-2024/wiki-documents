@@ -122,7 +122,7 @@ Co2:845 Temperature:32.72 Humidity:50.13
 Co2:852 Temperature:32.28 Humidity:51.54
 ```
 
-:::notebug
+:::note
 - 安定して正確な値を得るには、Arduinoを約2時間コードを実行させる必要があります。その後の結果はより信頼性が高くなります。
 :::
 

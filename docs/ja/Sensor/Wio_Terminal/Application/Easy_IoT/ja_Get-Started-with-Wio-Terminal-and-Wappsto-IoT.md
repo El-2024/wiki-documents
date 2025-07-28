@@ -11,7 +11,7 @@ last_update:
 ---
 :::note
 この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+[url](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 # Wio Terminal と Wappsto IoT の使い方を始める
@@ -94,7 +94,7 @@ Wappstoに接続することで、以下の機能を操作できます。詳細�
    - Blockly NoCodeプログラミング
    - Blockly JavaScriptプログラミング
    - Wappstoに接続したすべてのデバイスやサービス間で自動化と相互作用を設定
-   - TwitterとWappsto:bitのクロス自動化例: <https://bit.wappsto.com/project/wappsto-blocks/>
+   - TwitterとWappsto:bitのクロス自動化例: [url](https://bit.wappsto.com/project/wappsto-blocks/)
 
 ### Wappstoの見落とされがちな機能
 
@@ -131,15 +131,15 @@ Wappstoに接続することで、以下の機能を操作できます。詳細�
 
 ### PCにArduino IDEがインストールされていること
 
-インストールされていない場合は、<https://www.arduino.cc/en/Guide>を参照してください。
+インストールされていない場合は、[url](https://www.arduino.cc/en/Guide)を参照してください。
 
 #### ArduinoJsonライブラリのインストール
 
-ライブラリマネージャーからArduinoJsonライブラリをインストールする必要があります。詳細は<https://arduinojson.org/v6/doc/installation/>を参照してください。
+ライブラリマネージャーからArduinoJsonライブラリをインストールする必要があります。詳細は[url](https://arduinojson.org/v6/doc/installation/)を参照してください。
 
 #### このWappstoライブラリをインストールする
 
-Arduino IDEにこのライブラリをインストールするには、プロジェクトをZIPファイルとしてダウンロードします。「Code」をクリックし、「Download ZIP」を選択してください。その後、「Sketch」->「Include Library」->「Add .Zip Library...」を選択します。詳細は<https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries>を参照してください。
+Arduino IDEにこのライブラリをインストールするには、プロジェクトをZIPファイルとしてダウンロードします。「Code」をクリックし、「Download ZIP」を選択してください。その後、「Sketch」->「Include Library」->「Add .Zip Library...」を選択します。詳細は[url](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries)を参照してください。
 
 ### 新しいデバイス用の証明書とIDを生成する
 
@@ -198,7 +198,7 @@ pip install -U MarkupSafe==0.20
 
 製造者である場合でも、ネットワークリストにデバイスが表示され、オンラインであることは確認できますが、値を確認したりデバイスを制御することはできません。
 
-デバイスをクレームするには、<https://wappsto.com/devices>の「IoT Devices」タブに移動し、右上の「+ Add an IoT device」ボタンをクリックして、ネットワークUUIDをボックスに入力します。
+デバイスをクレームするには、[url](https://wappsto.com/devices)の「IoT Devices」タブに移動し、右上の「+ Add an IoT device」ボタンをクリックして、ネットワークUUIDをボックスに入力します。
 
 ネットワークの削除ボタンをクリックすると、デバイスの所有権が解除され、他のユーザーがクレームできるようになります。一度デバイスがクレームされると、他のユーザーがクレームすることはできません。
 
@@ -228,7 +228,7 @@ pip install -U MarkupSafe==0.20
 
 ライブラリはデバイス/値がその名前で存在するかどうかを Wappsto に確認し、存在する場合は正しい値にリンクします。何もその名前を持っていない場合は新しいものが作成されます。親が同じ名前の子を複数持っている場合、ライブラリは最初に利用可能なものを選択します。
 
-名前を変更すると新しいものが作成されますが、古いものは削除されません。これを行うには、例えば <https://wappsto.com/devices> を使用してください。
+名前を変更すると新しいものが作成されますが、古いものは削除されません。これを行うには、例えば [url](https://wappsto.com/devices) を使用してください。
 
 ### Wappsto の初期化
 

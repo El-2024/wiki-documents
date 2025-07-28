@@ -95,174 +95,110 @@ V<sub>ss</sub>=0V,V<sub>DD</sub>=5V,T<sub>OP</sub>=25℃
 
 <table>
 <tr>
-<th>項目
-</th>
-<th>記号
-</th>
-<th>最小
-</th>
-<th>典型
-</th>
-<th>最大
-</th>
-<th>単位
-</th></tr>
+<th>項目</th>
+<th>記号</th>
+<th>最小</th>
+<th>典型</th>
+<th>最大</th>
+<th>単位</th>
+</tr>
 <tr>
-<td width="200px">E サイクル時間
-</td>
-<td width="100px">tc
-</td>
-<td width="100px">1500
-</td>
-<td width="100px"> -
-</td>
-<td width="100px"> -
-</td>
-<td width="100px">ns
-</td></tr>
+<td width="200px">E サイクル時間</td>
+<td width="100px">tc</td>
+<td width="100px">1500</td>
+<td width="100px"> -</td>
+<td width="100px"> -</td>
+<td width="100px">ns</td>
+</tr>
 <tr>
-<td>E 高レベル幅
-</td>
-<td>twh
-</td>
-<td>700
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
+<td>E 高レベル幅</td>
+<td>twh</td>
+<td>700</td>
+<td> -</td>
+<td> -</td>
+<td>ns</td>
+</tr>
 <tr>
-<td>E 低レベル幅
-</td>
-<td>twl
-</td>
-<td>700
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
+<td>E 低レベル幅</td>
+<td>twl</td>
+<td>700</td>
+<td> -</td>
+<td> -</td>
+<td>ns</td>
+</tr>
 <tr>
-<td>E 立ち上がり時間
-</td>
-<td>tr
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>18
-</td>
-<td>ns
-</td></tr>
+<td>E 立ち上がり時間</td>
+<td>tr</td>
+<td> -</td>
+<td> -</td>
+<td>18</td>
+<td>ns</td>
+</tr>
 <tr>
-<td>E 立ち下がり時間
-</td>
-<td>tf
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>18
-</td>
-<td>ns
-</td></tr>
+<td>E 立ち下がり時間</td>
+<td>tf</td>
+<td> -</td>
+<td> -</td>
+<td>18</td>
+<td>ns</td>
+</tr>
 <tr>
-<td>アドレスセットアップ時間
-</td>
-<td>tas
-</td>
-<td>5
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
+<td>アドレスセットアップ時間</td>
+<td>tas</td>
+<td>5</td>
+<td> -</td>
+<td> -</td>
+<td>ns</td>
+</tr>
 <tr>
-<td>アドレスセットアップ時間
-</td>
-<td>tasu
-</td>
-<td>210
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
+<td>アドレスセットアップ時間</td>
+<td>tasu</td>
+<td>210</td>
+<td> -</td>
+<td> -</td>
+<td>ns</td>
+</tr>
 <tr>
-<td>アドレス保持時間
-</td>
-<td>tah
-</td>
-<td>15
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
+<td>アドレス保持時間</td>
+<td>tah</td>
+<td>15</td>
+<td> -</td>
+<td> -</td>
+<td>ns</td>
+</tr>
 <tr>
-<td>データセットアップ時間
-</td>
-<td>tdsw
-</td>
-<td>300
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
+<td>データセットアップ時間</td>
+<td>tdsw</td>
+<td>300</td>
+<td> -</td>
+<td> -</td>
+<td>ns</td>
+</tr>
 <tr>
-<td>データ遅延時間
-</td>
-<td>td
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td> 480
-</td>
-<td>ns
-</td></tr>
+<td>データ遅延時間</td>
+<td>td</td>
+<td> -</td>
+<td> -</td>
+<td> 480</td>
+<td>ns</td>
+</tr>
 <tr>
-<td>データ保持時間（書き込み）
-</td>
-<td>tdhw
-</td>
-<td>15
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
+<td>データ保持時間（書き込み）</td>
+<td>tdhw</td>
+<td>15</td>
+<td> -</td>
+<td> -</td>
+<td>ns</td>
+</tr>
 <tr>
-<td>データ保持時間（読み取り）
-</td>
-<td>tdhr
-</td>
-<td>30
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr></table>
+<td>データ保持時間（読み取り）</td>
+<td>tdhr</td>
+<td>30</td>
+<td> -</td>
+<td> -</td>
+<td>ns</td>
+</tr>
+</table>
 <table >
 <tr>
 <td><div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/LCD_16-2_Characters-Green_Yellow_back_light/img/LCD-module-WTiming.jpg" /></div>
@@ -270,193 +206,115 @@ V<sub>ss</sub>=0V,V<sub>DD</sub>=5V,T<sub>OP</sub>=25℃
 <td><div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/LCD_16-2_Characters-Green_Yellow_back_light/img/LCD-module-RTiming.jpg" /></div>
 </td></tr>
 <tr>
-<td><strong>ホスト書き込みタイミング図</strong>
-</td>
-<td><strong>ホスト読み取りタイミング図</strong>
-</td></tr></table>
+<td><strong>ホスト書き込みタイミング図</strong></td>
+<td><strong>ホスト読み取りタイミング図</strong></td>
+</tr>
+</table>
 
 ## ピン定義と定格
 
 ---
 <table>
 <tr>
-<th>ピン番号
-</th>
-<th>ピン名
-</th>
-<th>I/O
-</th>
-<th>説明
-</th></tr>
+<th>ピン番号</th>
+<th>ピン名</th>
+<th>I/O</th>
+<th>説明</th>
+</tr>
 <tr>
-<td width="100px">1
-</td>
-<td width="100px">VSS
-</td>
-<td width="100px">電源
-</td>
-<td width="500px">負電源供給、グラウンド(0V)
-</td></tr>
+<td width="100px">1</td>
+<td width="100px">VSS</td>
+<td width="100px">電源</td>
+<td width="500px">負電源供給、グラウンド(0V)</td>
+</tr>
 <tr>
-<td>2
-</td>
-<td>VDD
-</td>
-<td>電源
-</td>
-<td>正電源供給
-</td></tr>
+<td>2</td>
+<td>VDD</td>
+<td>電源</td>
+<td>正電源供給</td>
+</tr>
 <tr>
-<td>3
-</td>
-<td>V0
-</td>
-<td>電源
-</td>
-<td>LCDコントラスト参照
-</td></tr>
+<td>3</td>
+<td>V0</td>
+<td>電源</td>
+<td>LCDコントラスト参照</td>
+</tr>
 <tr>
-<td>4
-</td>
-<td>RS
-</td>
-<td>入力
-</td>
+<td>4</td>
+<td>RS</td>
+<td>入力</td>
 <td>
-
 * RS=HIGH:DB0-DB7=表示RAMデータ
-
 * RS=LOW:DB0-DB7=命令データ
-
-<div>
-  5
-  R/W
-  入力
-</div>
-
-読み取りモードの場合
-
-R/W=HIGH
-
-LCDモジュールからデータを読み取り、データはDB0-DB7に表示され、E=Hでデバイスが選択されている間にホストによって読み取ることができます。
-
-書き込みモードの場合
-
-R/W=LOW;
-
-LCDモジュールにデータを書き込み、データはDB0-DB7に表示され、E=H-&gt;Lでデバイスが選択されている間にLCDモジュールに書き込まれます。
-
-</td></tr>
+</td>
+</tr>
 <tr>
-<td>6
+<td>5</td>
+<td>R/W</td>
+<td>入力</td>
+<td>
+読み取りモードの場合 R/W=HIGH: LCDモジュールからデータを読み取り、データはDB0-DB7に表示され、E=Hでデバイスが選択されている間にホストによって読み取ることができます。
+書き込みモードの場合 R/W=LOW: LCDモジュールにデータを書き込み、データはDB0-DB7に表示され、E=H->Lでデバイスが選択されている間にLCDモジュールに書き込まれます。
 </td>
-<td>E
-</td>
-<td>入力
-</td></tr>
+</tr>
 <tr>
-<td>7
-</td>
-<td>DB0
-</td>
-<td>I/O
-</td>
-<td rowspan="3">データバス;
-
-表示データまたは命令データ用の三状態I/O端子
-
-</td></tr>
+<td>6</td>
+<td>E</td>
+<td>入力</td>
+</tr>
 <tr>
-<td>..
-</td>
-<td>..
-</td>
-<td>..
-</td></tr>
+<td>7</td>
+<td>DB0</td>
+<td>I/O</td>
+<td rowspan="3">データバス; 表示データまたは命令データ用の三状態I/O端子</td>
+</tr>
 <tr>
-<td>14
-</td>
-<td>DB7
-</td>
-<td>I/O
-</td></tr>
+<td>..</td>
+<td>..</td>
+<td>..</td>
+</tr>
 <tr>
-<td>15
-</td>
-<td>CS1
-</td>
-<td>入力
-</td>
-<td>チップ選択、
-
-CS1=1(*1)の場合
-
-LCDモジュールの左側(64列)へのアクセスを有効にします。
-
-</td></tr>
+<td>14</td>
+<td>DB7</td>
+<td>I/O</td>
+</tr>
 <tr>
-<td>16
-</td>
-<td>CS2
-</td>
-<td>入力
-</td>
-<td>チップ選択、
-
-CS2=1(*1)の場合
-
-LCDモジュールの右側(64列)へのアクセスを有効にします。
-
-</td></tr>
+<td>15</td>
+<td>CS1</td>
+<td>入力</td>
+<td>チップ選択、CS1=1(*1)の場合 LCDモジュールの左側(64列)へのアクセスを有効にします。</td>
+</tr>
 <tr>
-<td>17
-</td>
-<td> /RST
-</td>
-<td>入力
-</td>
-<td>リセット信号
-
-/RST = Lの場合、
-
-表示オフ
-
-表示開始ラインレジスタが0になる
-
-コマンドや命令データは受け付けられない
-
-/RST = Hの場合
-
-通常動作
-
-</td></tr>
+<td>16</td>
+<td>CS2</td>
+<td>入力</td>
+<td>チップ選択、CS2=1(*1)の場合 LCDモジュールの右側(64列)へのアクセスを有効にします。</td>
+</tr>
 <tr>
-<td>18
-</td>
-<td>VOUT
-</td>
-<td>出力
-</td>
-<td>V0用の電源ブースター出力
-</td></tr>
+<td>17</td>
+<td> /RST</td>
+<td>入力</td>
+<td>リセット信号 /RST = Lの場合、表示オフ、表示開始ラインレジスタが0になる、コマンドや命令データは受け付けられない。/RST = Hの場合、通常動作</td>
+</tr>
 <tr>
-<td>19
-</td>
-<td>BLA
-</td>
-<td>電源
-</td>
-<td>LEDバックライト用の正電源
-</td></tr>
+<td>18</td>
+<td>VOUT</td>
+<td>出力</td>
+<td>V0用の電源ブースター出力</td>
+</tr>
 <tr>
-<td>20
-</td>
-<td>BLK
-</td>
-<td>電源
-</td>
-<td>LEDバックライト用の負電源
-</td></tr></table>
+<td>19</td>
+<td>BLA</td>
+<td>電源</td>
+<td>LEDバックライト用の正電源</td>
+</tr>
+<tr>
+<td>20</td>
+<td>BLK</td>
+<td>電源</td>
+<td>LEDバックライト用の負電源</td>
+</tr>
+</table>
 
 注意:
 
@@ -527,44 +385,30 @@ LCDモジュールは電源オン時に/RST端子を低レベルに設定する�
 
 <table >
 <tr>
-<th>項目
-</th>
-<th>記号
-</th>
-<th>最小値
-</th>
-<th>典型値
-</th>
-<th>最大値
-</th>
-<th>単位
-</th></tr>
+<th>項目</th>
+<th>記号</th>
+<th>最小値</th>
+<th>典型値</th>
+<th>最大値</th>
+<th>単位</th>
+</tr>
 <tr>
-<td width="200px">リセット時間
-</td>
-<td width="100px">trs
-</td>
-<td width="100px">2.0
-</td>
-<td width="100px"> -
-</td>
-<td width="100px"> -
-</td>
-<td width="100px"> μs
-</td></tr>
+<td width="200px">リセット時間</td>
+<td width="100px">trs</td>
+<td width="100px">2.0</td>
+<td width="100px"> -</td>
+<td width="100px"> -</td>
+<td width="100px"> μs</td>
+</tr>
 <tr>
-<td>立ち上がり時間
-</td>
-<td>tr
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>150
-</td>
-<td>ns
-</td></tr></table>
+<td>立ち上がり時間</td>
+<td>tr</td>
+<td> -</td>
+<td> -</td>
+<td>150</td>
+<td>ns</td>
+</tr>
+</table>
 
 ![](https://files.seeedstudio.com/wiki/LCD_16-2_Characters-Green_Yellow_back_light/img/VFD-lcd-module-trtx.jpg)
 

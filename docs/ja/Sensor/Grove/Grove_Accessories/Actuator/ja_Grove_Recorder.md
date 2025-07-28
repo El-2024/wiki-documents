@@ -45,84 +45,39 @@ Grove - RecorderはISD1820Pチップをベースにしており、8～20秒間�
 ![](https://files.seeedstudio.com/wiki/Grove_Recorder/img/Recorder_Bottom1.jpg)
 ![](https://files.seeedstudio.com/wiki/Grove_Recorder/img/Recorder_Top1.jpg)
 
-<dl><dt>① LEDインジケーター
-</dt><dd>モード:
-<dl><dd>録音: 赤色LEDが録音開始から終了まで点灯します。
-</dd><dd>再生: 赤色LEDが点滅して音声再生の終了を知らせます。
-</dd></dl>
-</dd></dl>
-<dl><dt>② サンプリング抵抗
-</dt><dd>以下の表に基づいてサンプリング抵抗（R6）を変更することで録音時間とサンプリングレートを設定できます:
-</dd></dl>
-<table  cellspacing="0" width="50%">
-<tr>
-<th scope="col"> ROSC
-</th>
-<th scope="col"> 録音時間
-</th>
-<th scope="col"> サンプリング周波数
-</th>
-<th scope="col"> 入力帯域幅
-</th></tr>
-<tr>
-<th scope="row"> 80 KΩ
-</th>
-<td> 8秒
-</td>
-<td> 8.0 KHz
-</td>
-<td> 3.4 KHz
-</td></tr>
-<tr>
-<th scope="row"> 100 KΩ (デフォルト)
-</th>
-<td> 10秒
-</td>
-<td> 6.4 KHz
-</td>
-<td> 2.6 KHz
-</td></tr>
-<tr>
-<th scope="row"> 120 KΩ
-</th>
-<td> 12秒
-</td>
-<td> 5.3 KHz
-</td>
-<td> 2.3 KHz
-</td></tr>
-<tr>
-<th scope="row"> 160 KΩ
-</th>
-<td> 16秒
-</td>
-<td> 4.0 KHz
-</td>
-<td> 1.7 KHz
-</td></tr>
-<tr>
-<th scope="row"> 200 KΩ
-</th>
-<td> 20秒
-</td>
-<td> 3.2 KHz
-</td>
-<td> 1.3 KHz
-</td></tr>
-</table>
-<dl><dt>③ 再生抵抗
-</dt><dd>モード:
-<dl><dd>サイクル: R8に0Ωの抵抗を配置
-</dd><dd>単一: R8に抵抗を配置しない
-</dd></dl>
-</dd></dl>
-<dl><dt>④ 再生キー
-</dt><dd>現在使用されていません
-</dd><dt>⑤ 録音キー
-</dt><dt>⑥ Groveインターフェース
-</dt><dt>⑦ スピーカーインターフェース
-</dt><dt>⑧ 録音IC：ISD1820P
-</dt></dl>
+**① LEDインジケーター**
+
+モード:
+- 録音: 赤色LEDが録音開始から終了まで点灯します。
+- 再生: 赤色LEDが点滅して音声再生の終了を知らせます。
+
+**② サンプリング抵抗**
+
+以下の表に基づいてサンプリング抵抗（R6）を変更することで録音時間とサンプリングレートを設定できます:
+| ROSC | 録音時間 | サンプリング周波数 | 入力帯域幅 |
+|------|----------|-------------------|------------|
+| 80 KΩ | 8秒 | 8.0 KHz | 3.4 KHz |
+| 100 KΩ (デフォルト) | 10秒 | 6.4 KHz | 2.6 KHz |
+| 120 KΩ | 12秒 | 5.3 KHz | 2.3 KHz |
+| 160 KΩ | 16秒 | 4.0 KHz | 1.7 KHz |
+| 200 KΩ | 20秒 | 3.2 KHz | 1.3 KHz |
+
+**③ 再生抵抗**
+
+モード:
+- サイクル: R8に0Ωの抵抗を配置
+- 単一: R8に抵抗を配置しない
+
+**④ 再生キー**
+現在使用されていません
+
+**⑤ 録音キー**
+
+**⑥ Groveインターフェース**
+
+**⑦ スピーカーインターフェース**
+
+**⑧ 録音IC：ISD1820P**
 
 ## 使用方法
 

@@ -47,10 +47,10 @@ Luego, combinado con el vasto ecosistema Grove, podrás crear aún más posibili
 
 El contenido de este tutorial cubrirá ampliamente los siguientes pasos:
 
-1. [Configurar el entorno Docker en LinkStar OpenWRT](#configure-home-assistant-panel)
-2. [Instalación y configuración de Home Assistant y ESPHome](#installation-and-configuration-of-home-assistant-esphome)
-3. [Agregar Seeed Studio XIAO ESP32C3 a ESPHome](#add-seeed-studio-xiao-esp32c3-to-esphome)
-4. [Módulos Grove con ESPHome y Home Assistant](#grove-modules-with-esphome-and-home-assistant)
+1. Configurar el entorno Docker en LinkStar OpenWRT
+2. Instalación y configuración de Home Assistant y ESPHome
+3. Agregar Seeed Studio XIAO ESP32C3 a ESPHome
+4. Módulos Grove con ESPHome y Home Assistant
 
 ## Configurar el entorno Docker en LinkStar OpenWRT
 

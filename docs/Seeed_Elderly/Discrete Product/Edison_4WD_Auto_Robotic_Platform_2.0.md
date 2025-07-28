@@ -398,7 +398,7 @@ Detach Intel Edison from Arduino expansion board and then install Intel Edison o
 
 
 
-*  ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform_2.0/img/4WD_Edison_79.jpg)>
+*  ![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform_2.0/img/4WD_Edison_79.jpg)
 
 Install DC Power supply. and switch on power.
 
@@ -418,8 +418,7 @@ Launch a browser on your phone and input _edison.local_ in address bar.
 
 Now you can control you robot movement by virtual joystick on your phone.
 
-*   <![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform_2.0/img/4WD_Edison_80.jpg)
-
+![](https://files.seeedstudio.com/wiki/Edison_4WD_Auto_Robotic_Platform_2.0/img/4WD_Edison_80.jpg)
 
 [View a demo on YouTube.](https://www.youtube.com/watch?v=l4wGzxzov2M)
 

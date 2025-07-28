@@ -18,8 +18,7 @@ last_update:
 
 [SenseCAP T1000 追踪器](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html)，小巧如信用卡，轻松放入口袋或附着于您的资产上。它配备了 GPS、蓝牙和 Wi-Fi，可实现无缝的室内外定位。不仅仅是位置追踪，它还能监测温度、亮度和运动等参数。配备紧急按钮和蜂鸣器，并且单次充电即可实现数月的电池续航，确保在各种应用场景中的可靠追踪。
 
-<h1 style={{ textAlign: 'center', color: '#ffff' }}> SenseCAP T1000 追踪器目录
-</h1>
+<h1 style={{ textAlign: 'center', color: '#ffff' }}> SenseCAP T1000 追踪器目录</h1>
 
 <div class="all_container">
           <a href= "https://wiki.seeedstudio.com/SenseCAP_T1000_tracker/Introduction/" class="sensecap">介绍</a>

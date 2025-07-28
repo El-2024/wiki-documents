@@ -31,24 +31,18 @@ last_update:
 ---
 <table>
 <tr>
-<td> Grove ports </td>
-<td> 3 digital ports
-
-2 analog ports
-
-2 I<sup>2</sup>C ports
-
-1 UART port.
-
-</td></tr>
+<td>Grove ports</td>
+<td>3 digital ports<br/>2 analog ports<br/>2 I<sup>2</sup>C ports<br/>1 UART port.</td>
+</tr>
 <tr>
-<td> Dimensions  </td>
-<td> 53  × 53 mm
-</td></tr>
+<td>Dimensions</td>
+<td>53 × 53 mm</td>
+</tr>
 <tr>
-<td> Weight  </td>
-<td> 18g
-</td></tr></table>
+<td>Weight</td>
+<td>18g</td>
+</tr>
+</table>
 
 ##  Hardware Overview
 ---
@@ -58,13 +52,14 @@ last_update:
 
 <table>
 <tr>
-<th>Parts name   </th>
-<th> Quantity
-</th></tr>
+<th>Parts name</th>
+<th>Quantity</th>
+</tr>
 <tr>
-<td> Grove Base Shield for Photon  </td>
-<td> 1PC
-</td></tr></table>
+<td>Grove Base Shield for Photon</td>
+<td>1PC</td>
+</tr>
+</table>
 
 ##  Getting Started
 ---
@@ -83,30 +78,29 @@ last_update:
 
 ###  Buzzing
 
-<dl><dd> 1. Refer to [here](https://docs.particle.io/guide/getting-started/connect/core/) to connect to a device (PC or Mac).
-</dd></dl>
-
-!!!Note
-    1. We recommend that you choose **node.js v4.2.3 LTS** especially for Windows 10 user.
-    2. You may need to one more steps after run command **particle setup**, that is, connect you device (PC or Mac) to a wi-fi AP whose name contain **Photon**, especially on Windows 10.
-
-<dl><dd> 2. Use [Web IDE](https://build.particle.io/) for your project. Login with your account and choose your device (click the 2nd last icon on left column).
-</dd></dl>
+1. Refer to [here](https://docs.particle.io/guide/getting-started/connect/core/) to connect to a device (PC or Mac).
 
 :::note
-    We recommend you choose [Web IDE](https://build.particle.io/) to compile or flashing your code to Photon which is much quicker than using Particle Dev, if your internet connectivity is not so good.
+1. We recommend that you choose **node.js v4.2.3 LTS** especially for Windows 10 user.
+2. You may need to one more steps after run command **particle setup**, that is, connect you device (PC or Mac) to a wi-fi AP whose name contain **Photon**, especially on Windows 10.
 :::
-<dl><dd> 3. Connect them like following:
-</dd></dl>
+
+2. Use [Web IDE](https://build.particle.io/) for your project. Login with your account and choose your device (click the 2nd last icon on left column).
+
+:::note
+We recommend you choose [Web IDE](https://build.particle.io/) to compile or flashing your code to Photon which is much quicker than using Particle Dev, if your internet connectivity is not so good.
+:::
+
+3. Connect them like following:
 
 ![](https://files.seeedstudio.com/wiki/Grove_Base_Shield_for_Photon/img/Grove_Base_Shield_for_Photon_demo_conneciton_1200_S.jpg)
 
-<dl><dd> 4. Now you can copy following code to Web IDE and flash them to Photo by clicking a lighting-like icon (the 1st icon on left column).
-</dd></dl>
+4. Now you can copy following code to Web IDE and flash them to Photo by clicking a lighting-like icon (the 1st icon on left column).
 
 :::note
-    Copy the code only to the tab named _**filename.ino**_.
+Copy the code only to the tab named _**filename.ino**_.
 :::
+
 ```
 /*
    Buzzing

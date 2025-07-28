@@ -149,7 +149,7 @@ Google Drive Backup 插件允许您配置自动备份功能，它会每天将备
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/30.png"/></div>
 
-- **步骤 2.** 将 **<https://github.com/sabeechen/hassio-google-drive-backup>** 复制并粘贴到空白栏中，然后点击 **添加**。
+- **步骤 2.** 将 **https://github.com/sabeechen/hassio-google-drive-backup** 复制并粘贴到空白栏中，然后点击 **添加**。
 
 <div align="center"><img width={450} src="https://files.seeedstudio.com/wiki/Home-Assistant/31.png"/></div>
 

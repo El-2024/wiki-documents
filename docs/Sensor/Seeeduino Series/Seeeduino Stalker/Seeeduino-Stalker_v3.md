@@ -52,70 +52,58 @@ Seeeduino Stalker v3.0 is a feature rich Arduino compatible **Wireless Sensor Ne
 
 <table >
 <tr>
-<th> Parameter
-</th>
-<th> Value
-</th></tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
 <tr>
-<td > MCU
-</td>
-<td > ATmega328
-</td></tr>
+<td>MCU</td>
+<td>ATmega328</td>
+</tr>
 <tr>
-<td> Crystal Oscillator
-</td>
-<td> 8 MHz
-</td></tr>
+<td>Crystal Oscillator</td>
+<td>8 MHz</td>
+</tr>
 <tr>
-<td> RTC
-</td>
-<td> DS1337S
-</td></tr>
+<td>RTC</td>
+<td>DS1337S</td>
+</tr>
 <tr>
-<td> I/O Logic
-</td>
-<td> 3.3v
-</td></tr>
+<td>I/O Logic</td>
+<td>3.3v</td>
+</tr>
 <tr>
-<td> Board for Arduino IDE
-</td>
-<td> Arduino Pro or Pro Mini (**3.3v** , 8 MHz)w/ATmega328
-</td></tr>
+<td>Board for Arduino IDE</td>
+<td>Arduino Pro or Pro Mini (**3.3v** , 8 MHz)w/ATmega328</td>
+</tr>
 <tr>
-<td> Power Supply
-</td>
-<td> 3.7v LiPo Battery, Use 5VDC solar panel for charging the battery.
-</td></tr>
+<td>Power Supply</td>
+<td>3.7v LiPo Battery, Use 5VDC solar panel for charging the battery.</td>
+</tr>
 <tr>
-<td> Power Connector
-</td>
-<td> 2 pin JST/ USB
-</td></tr>
+<td>Power Connector</td>
+<td>2 pin JST/ USB</td>
+</tr>
 <tr>
-<td> Connectivity
-</td>
-<td> I<sup>2</sup>C, UART, SPI
-</td></tr>
+<td>Connectivity</td>
+<td>I<sup>2</sup>C, UART, SPI</td>
+</tr>
 <tr>
-<td> Open Circuit Current
-</td>
-<td> 6 mA max
-</td></tr>
+<td>Open Circuit Current</td>
+<td>6 mA max</td>
+</tr>
 <tr>
-<td> Charging Current
-</td>
-<td> 300mA
-</td></tr>
+<td>Charging Current</td>
+<td>300mA</td>
+</tr>
 <tr>
-<td> Maximum Current on 3.3v port
-</td>
-<td> 800mA
-</td></tr>
+<td>Maximum Current on 3.3v port</td>
+<td>800mA</td>
+</tr>
 <tr>
-<td> Size of PCB
-</td>
-<td> 86.74mm x 60.96mm
-</td></tr></table>
+<td>Size of PCB</td>
+<td>86.74mm x 60.96mm</td>
+</tr>
+</table>
 
 ## Application Ideas  
 
@@ -216,50 +204,14 @@ The picture above shows the hardware and components required for Seeeduino Stalk
 <font >**The following table shows the connection between Seeeduino Stalker v3 and UartSBee v4.**</font>
 
 <table >
-<caption> Pins connection
-</caption>
-<tr>
-<th> Seeeduino Stalker v3
-</th>
-<th>
-</th>
-<th> UartSBee v4
-</th></tr>
-<tr>
-<td> 5V
-</td>
-<td>   ↔  
-</td>
-<td> VCC
-</td></tr>
-<tr>
-<td> <font >RXD </font>
-</td>
-<td>   ↔  
-</td>
-<td> <font >TXD </font>
-</td></tr>
-<tr>
-<td> <font >TXD </font>
-</td>
-<td>   ↔  
-</td>
-<td> <font >RXD </font>
-</td></tr>
-<tr>
-<td> GND
-</td>
-<td>   ↔  
-</td>
-<td> GND
-</td></tr>
-<tr>
-<td> DTR
-</td>
-<td>   ↔  
-</td>
-<td> DTR
-</td></tr></table>
+<caption>Pins connection</caption>
+<tr><th>Seeeduino Stalker v3</th><th></th><th>UartSBee v4</th></tr>
+<tr><td>5V</td><td>↔</td><td>VCC</td></tr>
+<tr><td><font>RXD</font></td><td>↔</td><td><font>TXD</font></td></tr>
+<tr><td><font>TXD</font></td><td>↔</td><td><font>RXD</font></td></tr>
+<tr><td>GND</td><td>↔</td><td>GND</td></tr>
+<tr><td>DTR</td><td>↔</td><td>DTR</td></tr>
+</table>
 
 ## Demos
 
@@ -272,29 +224,11 @@ Download and install the DS1337 library and sketches available in the resources 
 <font >**Please pay attention: You need to solder some pads while using the "Interrupts" demo**</font>
 
 <table >
-<caption> <font >How to solder </font>
-</caption>
-<tr>
-<th> Pins on RTC
-</th>
-<th> Pads on Seeeduino Stalker v3
-</th>
-<th> Pins on ATmega328
-</th></tr>
-<tr>
-<td> INTA
-</td>
-<td> P3
-</td>
-<td> digital 2
-</td></tr>
-<tr>
-<td> INTB
-</td>
-<td> P4
-</td>
-<td> digital 3
-</td></tr></table>
+<caption><font>How to solder</font></caption>
+<tr><th>Pins on RTC</th><th>Pads on Seeeduino Stalker v3</th><th>Pins on ATmega328</th></tr>
+<tr><td>INTA</td><td>P3</td><td>digital 2</td></tr>
+<tr><td>INTB</td><td>P4</td><td>digital 3</td></tr>
+</table>
 
 #### Adjust Date/Time
 
@@ -451,24 +385,12 @@ _Reference: [analogReference](https://arduino.cc/en/Reference/AnalogReference)_
 
 The following tables show the default UART connection between Bee Socket and ATMega328 MCU.
 
-<table >
-<caption> <font >How to use </font>
-</caption>
-<tr>
-<th> Pins on Bee socket
-</th>
-<th> Pins on ATmega328
-</th></tr>
-<tr>
-<td> BEE_TXD
-</td>
-<td> digital 0
-</td></tr>
-<tr>
-<td> BEE_RXD
-</td>
-<td> digital 1
-</td></tr></table>
+<table>
+<caption><font>How to use</font></caption>
+<tr><th>Pins on Bee socket</th><th>Pins on ATmega328</th></tr>
+<tr><td>BEE_TXD</td><td>digital 0</td></tr>
+<tr><td>BEE_RXD</td><td>digital 1</td></tr>
+</table>
 
 Also, you can turn the power supply of Bee module on or off by the optional pad.
 

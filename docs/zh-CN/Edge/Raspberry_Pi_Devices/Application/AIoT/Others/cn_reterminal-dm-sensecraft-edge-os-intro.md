@@ -93,7 +93,7 @@ import TabItem from '@theme/TabItem';
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/dashboard-eg.png" /></div>
 
-### Node-RED 编辑器标签页
+### Node-RED 编辑器标签页 {#node-red-editor-tab}
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/node-red.png" /></div>
 
@@ -115,7 +115,7 @@ import TabItem from '@theme/TabItem';
 * [reTerminal DM MQTT 与 Node-RED](/reTerminal-DM-Node-Red-mqtt)
 * [reTerminal DM CAN BUS 与 Node-RED](/reTerminal-DM-Node-Red-canbus)
 
-### 系统设置标签页
+### 系统设置标签页 {#system-settings-tab}
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/settings.png" /></div>
 

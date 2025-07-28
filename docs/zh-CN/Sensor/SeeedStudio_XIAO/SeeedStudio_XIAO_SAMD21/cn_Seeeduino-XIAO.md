@@ -354,8 +354,7 @@ void loop()
 - **第 1 步：安装 Arduino 软件。**
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong></a>
 </div>
 
 **启动 Arduino 应用程序**
@@ -377,7 +376,7 @@ void loop()
 
 点击 **文件 > 首选项**，在附加开发板管理器 URL 中填写以下 URL：
 
-*<https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json>*
+*https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json*
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Boardurl.png" alt="pir" width={600} height="auto" /></p>
 

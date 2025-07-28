@@ -19,8 +19,7 @@ sidebar_position: 1
 <iframe class="youtube-video-r" src="https://www.youtube.com/embed/IOdI5_MGbCw" title="YouTube 视频播放器" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <div class="button-container">
-<a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">
-        立即购买 🖱️</a>
+<a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">立即购买 🖱️</a>
 </div>
 
 SenseCAP Indicator 是一款由 ESP32-S3 和 RP2040 双 MCU 驱动的 4 英寸触摸屏，支持 Wi-Fi/Bluetooth/LoRa 通信。

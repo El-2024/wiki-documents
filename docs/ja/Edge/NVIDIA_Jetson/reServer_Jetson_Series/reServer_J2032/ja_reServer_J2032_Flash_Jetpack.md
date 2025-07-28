@@ -32,9 +32,9 @@ sku:
     <tbody><tr>
       </tr>
       <tr>
-        <td align="center">前面
-        </td><td align="center">背面
-        </td></tr>
+        <td align="center">前面</td>
+        <td align="center">背面</td>
+      </tr>
       <tr>
         <td align="center">
           <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware1.png" alt />

@@ -52,7 +52,7 @@ Edge Box-200 は、Raspberry Pi OS がプリインストールされた状態で
 
 - **ステップ 01**: Edge Box に SSH 接続する  
 Windows を使用している場合は PowerShell を開き、プログラムを使用している場合は Terminal アプリを開き、次のように入力します：  
-`ssh {USERNAME}@{EDGEBOX_IP_ADDRESS}`  
+`ssh USERNAME@EDGEBOX_IP_ADDRESS`
 例としては以下のようになります：
 
 ```sh
@@ -86,7 +86,7 @@ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/mast
 お好みの Web ブラウザを開き、以下の URL を入力してください：
 
 * オプション 1: Edge Box 上でローカルに Web ブラウザを実行している場合は、http://127.0.0.1:1880 を使用します（VNC 経由）。  
-* オプション 2: ホストコンピュータでリモートに Web ブラウザを実行している場合は、http://{EdgeBox_IP_ADDRESS}:1880 を使用します。{EdgeBox_IP_ADDRESS} を EdgeBox の IP アドレスに置き換えてください。
+* オプション 2: ホストコンピュータでリモートに Web ブラウザを実行している場合は、http://EdgeBox_IP_ADDRESS:1880 を使用します。EdgeBox_IP_ADDRESS を EdgeBox の IP アドレスに置き換えてください。
 
 ## Node-RED に慣れる
 

@@ -397,7 +397,7 @@ menderproduction_minio_1                           /usr/bin/docker-entrypoint ..
 https://mender.seeedstudio.com
 ```
 
-**注意:** 必ず **<https://>** を先頭に追加してください
+**注意:** 必ず **`https://`** を先頭に追加してください
 
 これで、自己ホスト型の Mender サーバーに接続されているクライアントに OTA 更新をプッシュすることができます！
 

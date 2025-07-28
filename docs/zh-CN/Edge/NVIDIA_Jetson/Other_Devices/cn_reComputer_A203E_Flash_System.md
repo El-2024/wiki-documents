@@ -44,7 +44,7 @@ tags:
 
 我们可以通过 **Linux 终端**轻松完成此操作。对于有 Linux 基础知识的用户，我们强烈推荐仅使用 Linux 终端。
 
-- [通过 Linux 终端刷入 JetPack OS](#flashing-jetpack-os-via-command-line)
+- 通过 Linux 终端刷写 JetPack OS
 
 ### 软件准备
 

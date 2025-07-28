@@ -369,7 +369,7 @@ Complete the Payload, now we will dive into SenseCAP Indicator to programme the 
 #### Step 3.1: Implement Your Payload Decoder
 
 <Tabs>
-  <Tabitem value="Indicator/main/Frame/frame.h">
+  <TabItem value="Indicator/main/Frame/frame.h">
 
   ```cpp
     #ifndef __SIMPLE_FRAME_H
@@ -407,8 +407,8 @@ Complete the Payload, now we will dive into SenseCAP Indicator to programme the 
     #endif
   ```
 
-  </Tabitem>
-  <Tabitem value="Indicator/main/Frame/frame.c">
+  </TabItem>
+  <TabItem value="Indicator/main/Frame/frame.c">
 
   ```cpp
     #include "frame.h"
@@ -471,7 +471,7 @@ Complete the Payload, now we will dive into SenseCAP Indicator to programme the 
         return crc & 0xFFFF;
     }
   ```
-  </Tabitem>
+  </TabItem>
 </Tabs>
 
 #### Step 3.2: Implement Sensor Data Structure

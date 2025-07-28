@@ -213,7 +213,7 @@ For **object detection** block, the settings are as follows.
     - 5 captions per image
     - 250,000 people with keypoints
 
-    <div align=center><img width = 700 src="https://files.seeedstudio.com/wiki/node-red/22.png"/></div>
+    <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/node-red/22.png"/></div>
 
 Once you have done so, click on the **deploy** button in the top right hand corner of the interface and the program stream will start running.
 

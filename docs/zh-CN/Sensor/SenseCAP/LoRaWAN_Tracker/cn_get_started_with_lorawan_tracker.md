@@ -109,14 +109,14 @@ T1000-E for LoRaWAN 配备了完全开源的固件。为了提升用户体验，
 
 ### LED
 
-<table><tr><th colspan="2" valign="top"><b>LED 状态</b></th><th colspan="1" valign="top"><b>描述</b></th></tr>
-<tr><td colspan="1" rowspan="2">红色 LED</td><td colspan="1" valign="top">常亮</td><td colspan="1" valign="top">充电中</td></tr>
-<tr><td colspan="1" valign="top">闪烁</td><td colspan="1" valign="top">充电异常</td></tr>
-<tr><td colspan="1" rowspan="4">绿色 LED</td><td colspan="1" valign="top">常亮</td><td colspan="1" valign="top"><p>设备处于 DFU 模式。</p><p>重启设备以退出 DFU 模式（按住按钮，然后在连接充电线后立即释放）</p></td></tr>
-<tr><td colspan="1" valign="top"><p>亮 500ms/灭 1s</p></td><td colspan="1" valign="top">蓝牙已开启</td></tr>
-<tr><td colspan="1" valign="top">呼吸灯</td><td colspan="1" valign="top">正在加入 LoRaWAN 网络</td></tr>
-<tr><td colspan="1" valign="top">快速闪烁 2 秒后熄灭</td><td colspan="1" valign="top">成功加入 LoRaWAN 网络</td></tr>
-</table>
+| LED | 状态 | 描述 |
+|-----|------|------|
+| 红色 LED | 常亮 | 充电中 |
+| 红色 LED | 闪烁 | 充电异常 |
+| 绿色 LED | 常亮 | 设备处于 DFU 模式。重启设备以退出 DFU 模式（按住按钮，然后在连接充电线后立即释放） |
+| 绿色 LED | 亮 500ms/灭 1s | 蓝牙已开启 |
+| 绿色 LED | 呼吸灯 | 正在加入 LoRaWAN 网络 |
+| 绿色 LED | 快速闪烁 2 秒后熄灭 | 成功加入 LoRaWAN 网络 |
 
 ### 传感器功能
 
@@ -206,38 +206,38 @@ SenseCAP T1000 追踪器配备了 3 个传感器：温度传感器、光传感�
 
 * **LoRa 设置**
 
-<table><tr><th colspan="1"></th><th colspan="1" valign="top"><b>参数</b></th><th colspan="1" valign="top"><b>描述</b></th></tr>
-<tr><td colspan="1" rowspan="5">平台</td><td colspan="1" valign="top">SenseCAP for The Things Network（默认）</td><td colspan="1" valign="top"><p>一个 SenseCAP 的专有 TTN 服务器。与 SenseCAP 网关配对时开箱即用。</p> <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCA 户外网关</span></a><br /><a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCA 室内网关</span></a></td></tr>
-<tr><td colspan="1" valign="top">SenseCAP for Helium</td><td colspan="1" valign="top"><p>一个 SenseCAP 的私有 Helium 控制台。</p><p>与 SenseCAP Mate App 和 Portal 开箱即用。</p></td></tr>
-<tr><td colspan="1" valign="top">Helium</td><td colspan="1" valign="top">公共 Helium 服务器</td></tr>
-<tr><td colspan="1" valign="top">The Things Network</td><td colspan="1" valign="top">公共 TTN 服务器</td></tr>
-<tr><td colspan="1" valign="top">其他平台</td><td colspan="1" valign="top">其他 LoRaWAN 网络服务器</td></tr>
-<tr><td colspan="1" valign="top">频率计划</td><td colspan="1" valign="top">EU868/US915/AU915/KR920/IN865/AS923-1/AS923-2/AS923-3/AS923-4</td><td colspan="1" valign="top">默认 EU868</td></tr>
-<tr><td colspan="1" valign="top">数据包策略</td><td colspan="1" valign="top">1C</td><td colspan="1" valign="top">默认启用</td></tr>
-<tr><td colspan="1" valign="top">LoRaWAN ADR</td><td colspan="1" valign="top">默认启用</td><td colspan="1" valign="top">默认启用</td></tr>
-<tr><td colspan="1" valign="top">恢复 LoRa 配置</td><td colspan="1" valign="top">默认启用</td><td colspan="1" valign="top">默认启用</td></tr>
-</table>
+| 类别 | 参数 | 描述 |
+|------|------|------|
+| 平台 | SenseCAP for The Things Network（默认） | 一个 SenseCAP 的专有 TTN 服务器。与 SenseCAP 网关配对时开箱即用。[SenseCAP 户外网关](https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html) / [SenseCAP 室内网关](https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html) |
+| 平台 | SenseCAP for Helium | 一个 SenseCAP 的私有 Helium 控制台。与 SenseCAP Mate App 和 Portal 开箱即用。 |
+| 平台 | Helium | 公共 Helium 服务器 |
+| 平台 | The Things Network | 公共 TTN 服务器 |
+| 平台 | 其他平台 | 其他 LoRaWAN 网络服务器 |
+| 频率计划 | EU868/US915/AU915/KR920/IN865/AS923-1/AS923-2/AS923-3/AS923-4 | 默认 EU868 |
+| 数据包策略 | 1C | 默认启用 |
+| LoRaWAN ADR | 默认启用 | 默认启用 |
+| 恢复 LoRa 配置 | 默认启用 | 默认启用 |
 
 * **常规设置**
 
-<table><tr><th colspan="1"></th><th colspan="1" valign="top"><b>参数</b></th><th colspan="1" valign="top"><b>描述</b></th></tr>
-<tr><td colspan="1">三轴加速度计</td><td colspan="1" valign="top">启用/禁用，默认禁用</td><td colspan="1" valign="top">上传三轴加速度计的数据</td></tr>
-<tr><td colspan="1" rowspan="2">SOS 报告模式</td><td colspan="1" valign="top">单次（默认）</td><td colspan="1" valign="top">上传数据并报告一次 SOS 事件。<br/>蜂鸣器报警 3 秒</td></tr>
-<tr><td colspan="1" valign="top">连续</td><td colspan="1" valign="top">每分钟上传数据并报告 SOS 事件，持续 30 次后结束。<br/>蜂鸣器报警 30 秒</td></tr>
-<tr><td colspan="1">上行间隔（分钟）</td><td colspan="1" valign="top">1-10080 分钟，默认 60 分钟</td><td colspan="1" valign="top">按间隔上传数据。<br/>频率越高，功耗越高</td></tr>
-<tr><td colspan="1" rowspan="7">地理定位策略</td><td colspan="1" valign="top">仅 GNSS（默认）</td><td colspan="1" valign="top">仅使用 GPS 卫星系统确定位置</td></tr>
-<tr><td colspan="1" valign="top">仅 Wi-Fi</td><td colspan="1" valign="top">上传 Wi-Fi AP 的 MAC 地址和 RSSI 信息</td></tr>
-<tr><td colspan="1" valign="top">仅蓝牙</td><td colspan="1" valign="top">上传蓝牙信标的 MAC 地址和 RSSI 信息</td></tr>
-<tr><td colspan="1" valign="top">GNSS + Wi-Fi</td><td colspan="1" valign="top">优先使用 GPS 定位，如果 GPS 失败，则在一个地理定位周期内使用 Wi-Fi</td></tr>
-<tr><td colspan="1" valign="top">蓝牙 + GNSS</td><td colspan="1" valign="top">优先使用蓝牙定位，如果蓝牙失败，则在一个地理定位周期内使用 GNSS</td></tr>
-<tr><td colspan="1" valign="top">蓝牙 + Wi-Fi</td><td colspan="1" valign="top">优先使用蓝牙定位，如果蓝牙失败，则在一个地理定位周期内使用 Wi-Fi</td></tr>
-<tr><td colspan="1" valign="top">蓝牙 + Wi-Fi + GNSS</td><td colspan="1" valign="top">依次使用蓝牙、Wi-Fi 和 GNSS 定位（某种定位失败后切换到下一种定位）</td></tr>
-<tr><td colspan="1" valign="top">GNSS（GPS）</td><td colspan="1" valign="top">GNSS 最大扫描时间（秒）</td><td colspan="1" valign="top">10-120 秒，默认 30 秒</td></tr>
-<tr><td colspan="1" rowspan="3">IBeacon 扫描</td><td colspan="1" valign="top">BLE 扫描的最大数量</td><td colspan="1" valign="top">3-5，默认 3</td></tr>
-<tr><td colspan="1" valign="top">扫描超时（秒）</td><td colspan="1" valign="top">3-10 秒，默认 3 秒</td></tr>
-<tr><td colspan="1" valign="top">组 UUID（十六进制）</td><td colspan="1" valign="top">设置 UUID 过滤器，最多 16 字节。<br/>例如，如果设置为 '01 020304'，它将过滤模式为 '0102 03 04 xx xx xx ...' 的信标</td></tr>
-<tr><td colspan="1" valign="top">Wi-Fi 扫描</td><td colspan="1" valign="top">Wi-Fi 扫描的最大数量</td><td colspan="1" valign="top">3-5，默认 3</td></tr>
-</table>
+| 类别 | 参数 | 描述 |
+|------|------|------|
+| 三轴加速度计 | 启用/禁用，默认禁用 | 上传三轴加速度计的数据 |
+| SOS 报告模式 | 单次（默认） | 上传数据并报告一次 SOS 事件。蜂鸣器报警 3 秒 |
+| SOS 报告模式 | 连续 | 每分钟上传数据并报告 SOS 事件，持续 30 次后结束。蜂鸣器报警 30 秒 |
+| 上行间隔（分钟） | 1-10080 分钟，默认 60 分钟 | 按间隔上传数据。频率越高，功耗越高 |
+| 地理定位策略 | 仅 GNSS（默认） | 仅使用 GPS 卫星系统确定位置 |
+| 地理定位策略 | 仅 Wi-Fi | 上传 Wi-Fi AP 的 MAC 地址和 RSSI 信息 |
+| 地理定位策略 | 仅蓝牙 | 上传蓝牙信标的 MAC 地址和 RSSI 信息 |
+| 地理定位策略 | GNSS + Wi-Fi | 优先使用 GPS 定位，如果 GPS 失败，则在一个地理定位周期内使用 Wi-Fi |
+| 地理定位策略 | 蓝牙 + GNSS | 优先使用蓝牙定位，如果蓝牙失败，则在一个地理定位周期内使用 GNSS |
+| 地理定位策略 | 蓝牙 + Wi-Fi | 优先使用蓝牙定位，如果蓝牙失败，则在一个地理定位周期内使用 Wi-Fi |
+| 地理定位策略 | 蓝牙 + Wi-Fi + GNSS | 依次使用蓝牙、Wi-Fi 和 GNSS 定位（某种定位失败后切换到下一种定位） |
+| GNSS（GPS） | GNSS 最大扫描时间（秒） | 10-120 秒，默认 30 秒 |
+| IBeacon 扫描 | BLE 扫描的最大数量 | 3-5，默认 3 |
+| IBeacon 扫描 | 扫描超时（秒） | 3-10 秒，默认 3 秒 |
+| IBeacon 扫描 | 组 UUID（十六进制） | 设置 UUID 过滤器，最多 16 字节。例如，如果设置为 '01 020304'，它将过滤模式为 '0102 03 04 xx xx xx ...' 的信标 |
+| Wi-Fi 扫描 | Wi-Fi 扫描的最大数量 | 3-5，默认 3 |
 
 ### 设备数据查看
 

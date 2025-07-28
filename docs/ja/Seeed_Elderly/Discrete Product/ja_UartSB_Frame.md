@@ -58,157 +58,41 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### 主な仕様
 
-<table cellpadding="1" cellspacing="1">
-<tr>
-<th scope="row"> マイクロプロセッサ
-</th>
-<td> FT232RL
-</td></tr>
-<tr>
-<th scope="row"> PCBサイズ
-</th>
-<td> 35mm x 20mm
-</td></tr>
-<tr>
-<th scope="row"> インジケータ
-</th>
-<td> 電源 - 緑色LED、RXおよびTX - 赤色LED
-</td></tr>
-<tr>
-<th scope="row"> 電源供給
-</th>
-<td> 3.3Vおよび5V DC
-</td></tr>
-<tr>
-<th scope="row"> インターフェース
-</th>
-<td> Mini-B USB、2.54mmピッチピンヘッダ
-</td></tr>
-<tr>
-<th scope="row"> Seeeduinoプログラミングポート
-</th>
-<td> 20ピンFPCソケット
-</td></tr>
-<tr>
-<th scope="row"> 接続性
-</th>
-<td> USB
-</td></tr>
-<tr>
-<th scope="row"> 通信プロトコル
-</th>
-<td> UART、ビットバングI/O、SPI
-</td></tr></table>
+| 項目 | 仕様 |
+|---|---|
+| マイクロプロセッサ | FT232RL |
+| PCBサイズ | 35mm x 20mm |
+| インジケータ | 電源 - 緑色LED、RXおよびTX - 赤色LED |
+| 電源供給 | 3.3Vおよび5V DC |
+| インターフェース | Mini-B USB、2.54mmピッチピンヘッダ |
+| Seeeduinoプログラミングポート | 20ピンFPCソケット |
+| 接続性 | USB |
+| 通信プロトコル | UART、ビットバングI/O、SPI |
 
 ### 電気的特性
 
-<table >
-<tr>
-<th> 仕様
-</th>
-<th> 最小
-</th>
-<th> 標準
-</th>
-<th> 最大
-</th>
-<th> 単位
-</th></tr>
-<tr>
-<td> 入力電圧
-</td>
-<td> -
-</td>
-<td> 5
-</td>
-<td> 5
-</td>
-<td> Vdc
-</td></tr>
-<tr>
-<td> 消費電流
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td> 500
-</td>
-<td> mA
-</td></tr>
-<tr>
-<td> 出力電圧
-</td>
-<td> 3.3
-</td>
-<td> -
-</td>
-<td> 5
-</td>
-<td> Vdc
-</td></tr></table>
+| 仕様 | 最小 | 標準 | 最大 | 単位 |
+|---|---|---|---|---|
+| 入力電圧 | - | 5 | 5 | Vdc |
+| 消費電流 | - | - | 500 | mA |
+| 出力電圧 | 3.3 | - | 5 | Vdc |
 
 ## ピン定義と定格  
 
 ![](https://files.seeedstudio.com/wiki/UartSB_Frame/img/UartSB_Frame_Outline_35mmx20mm.png)
 
-<table>
-<tr>
-<th> パッド名
-</th>
-<th> 説明
-</th></tr>
-<tr>
-<td width="100px"> GND
-</td>
-<td width="450px"> グランドピン
-</td></tr>
-<tr>
-<td width="100px"> 3v3
-</td>
-<td width="450px"> 3.3V 電源供給
-</td></tr>
-<tr>
-<td width="100px"> 5V
-</td>
-<td width="450px"> USBポートからの5V電源供給
-</td></tr>
-<tr>
-<td> RXD
-</td>
-<td> UARTデータ入力
-</td></tr>
-<tr>
-<td> TXD
-</td>
-<td> UARTデータ出力
-</td></tr>
-<tr>
-<td width="100px"> CTS
-</td>
-<td width="450px"> UART送信許可信号
-</td></tr>
-<tr>
-<td width="100px"> RTS
-</td>
-<td width="450px"> UART送信要求信号
-</td></tr>
-<tr>
-<td width="100px"> DTR
-</td>
-<td width="450px"> UARTデータ端末準備完了信号
-</td></tr>
-<tr>
-<td width="100px"> DCD
-</td>
-<td width="450px"> UARTデータキャリア検出信号
-</td></tr>
-<tr>
-<td width="100px"> DSR
-</td>
-<td width="450px"> UARTデータセット準備完了信号
-</td></tr>
-</table>
+| パッド名 | 説明 |
+|---|---|
+| GND | グランドピン |
+| 3v3 | 3.3V 電源供給 |
+| 5V | USBポートからの5V電源供給 |
+| RXD | UARTデータ入力 |
+| TXD | UARTデータ出力 |
+| CTS | UART送信許可信号 |
+| RTS | UART送信要求信号 |
+| DTR | UARTデータ端末準備完了信号 |
+| DCD | UARTデータキャリア検出信号 |
+| DSR | UARTデータセット準備完了信号 |
 
 ## 使用方法
 
@@ -310,52 +194,16 @@ FTDIのウェブサイトから**仮想COMポート**ドライバをダウンロ
 
 **表: ビットバングI/Oマッピング**
 
-<table>
-<tr>
-<th> UartSB Frame信号
-</th>
-<th> ビットバングI/O信号
-</th></tr>
-<tr>
-<td> TxD
-</td>
-<td> D0
-</td></tr>
-<tr>
-<td> RxD
-</td>
-<td> D1
-</td></tr>
-<tr>
-<td> RTS
-</td>
-<td> D2
-</td></tr>
-<tr>
-<td> CTS
-</td>
-<td> D3
-</td></tr>
-<tr>
-<td> DTR
-</td>
-<td> D4
-</td></tr>
-<tr>
-<td> DSR
-</td>
-<td> D5
-</td></tr>
-<tr>
-<td> DCD
-</td>
-<td> D6
-</td></tr>
-<tr>
-<td> RI
-</td>
-<td> D7
-</td></tr></table>
+| UartSB Frame信号 | ビットバングI/O信号 |
+|---|---|
+| TxD | D0 |
+| RxD | D1 |
+| RTS | D2 |
+| CTS | D3 |
+| DTR | D4 |
+| DSR | D5 |
+| DCD | D6 |
+| RI | D7 |
 
 **ビットバングモードの操作:**
 
@@ -459,38 +307,15 @@ FT232RLのビットバングモードは、AVR ISP、JTAG、SPI、I2Cポート�
 
 ## ドキュメントバージョントラッカー  
 
-<table>
-<tr>
-<th>改訂版</th>
-<th>説明</th>
-<th>編集者</th>
-<th>リリース日</th>
-</tr>
-<tr>
-<td>V0.9b</td>
-<td>詳細なアプリケーションノート</td>
-<td>Visweswara R</td>
-<td>2010年2月22日</td>
-</tr>
-</table>
+| 改訂版 | 説明 | 編集者 | リリース日 |
+|---|---|---|---|
+| V0.9b | 詳細なアプリケーションノート | Visweswara R | 2010年2月22日 |
 
 ## ハードウェアバージョントラッカー  
 
-<table>
-<tr>
-<th> リビジョン
-</th>
-<th> 説明
-</th>
-<th> リリース日
-</th></tr>
-<tr>
-<td> UartSBs Frame
-</td>
-<td> 0.9b
-</td>
-<td> 2010年2月22日
-</td></tr></table>
+| リビジョン | 説明 | リリース日 |
+|---|---|---|
+| UartSBs Frame | 0.9b | 2010年2月22日 |
 
 ## バグトラッカー  
 

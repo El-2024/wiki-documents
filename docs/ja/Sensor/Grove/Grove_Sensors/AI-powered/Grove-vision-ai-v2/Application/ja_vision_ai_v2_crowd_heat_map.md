@@ -205,7 +205,7 @@ docker ps
 
 "pysscma_server"コンテナがリストに表示され、ステータスが"Up"になっていることを確認してください。
 
-### ステップ7. IPアドレスの取得
+### ステップ7. IPアドレスの取得 {#step-7-obtaining-the-ip-address}
 
 DockerコンテナのIPアドレスを取得するには、以下のコマンドを実行します：
 

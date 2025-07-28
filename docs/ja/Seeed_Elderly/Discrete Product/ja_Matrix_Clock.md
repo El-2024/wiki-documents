@@ -42,47 +42,18 @@ Arduino Leonardoをベースにしたマトリックスクロックは、Arduino
 
 ## 仕様
 
-<table>
-<tr>
-<td> マイクロコントローラー </td>
-<td> Atmel ATmega32u4（TQFP-44パッケージ）
-</td></tr>
-<tr>
-<td> 動作電圧 </td>
-<td> 5V USB駆動または6V～9V
-</td></tr>
-<tr>
-<td> 電源および通信 </td>
-<td> USB Micro B
-</td></tr>
-<tr>
-<td> 消費電流 </td>
-<td> 通常動作時の平均約90mA、最大300mA
-</td></tr>
-<tr>
-<td> LEDマトリックス </td>
-<td> 2x 8x8 3mm緑色LED
-</td></tr>
-<tr>
-<td> クロック速度 </td>
-<td> マイクロコントローラー16MHz、RTCC 32.7
-</td></tr>
-<tr>
-<td> SRAM </td>
-<td> 2.5 KB
-</td></tr>
-<tr>
-<td> EEPROM </td>
-<td> 1 KB
-</td></tr>
-<tr>
-<td> フラッシュメモリ </td>
-<td> 32 KB
-</td></tr>
-<tr>
-<td> 拡張ヘッダー </td>
-<td> Gnd, Vin, 5V, Sleep, Piezo-, Piezo+
-</td></tr></table>
+| 項目 | 仕様 |
+|---|---|
+| マイクロコントローラー | Atmel ATmega32u4（TQFP-44パッケージ） |
+| 動作電圧 | 5V USB駆動または6V～9V |
+| 電源および通信 | USB Micro B |
+| 消費電流 | 通常動作時の平均約90mA、最大300mA |
+| LEDマトリックス | 2x 8x8 3mm緑色LED |
+| クロック速度 | マイクロコントローラー16MHz、RTCC 32.7 |
+| SRAM | 2.5 KB |
+| EEPROM | 1 KB |
+| フラッシュメモリ | 32 KB |
+| 拡張ヘッダー | Gnd, Vin, 5V, Sleep, Piezo-, Piezo+ |
 
 ## 回路図
 ---

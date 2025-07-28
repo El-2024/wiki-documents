@@ -104,7 +104,7 @@ reComputer industrial has 2 RJ45 GbE ports, one of which is a PoE PSE port for p
     </tr>
     <tr>
       <td>Video Decode</td>
-      <td colSpan={2}>1*8K30 (H.265) | 2*4K60 (H.265) | 4*4K30 (H.265) | 9*1080p60 (H.265) | 18*1080p30 (H.265)</td>
+      <td colSpan={2}>1×8K30 (H.265) | 2×4K60 (H.265) | 4×4K30 (H.265) | 9×1080p60 (H.265) | 18×1080p30 (H.265)</td>
       <td colSpan={2}>1*4K60 (H.265) | 2*4K30 (H.265) | 5*1080p60 (H.265) | 11*1080p30 (H.265)</td>
       <td colSpan={2}>2*8K30 | 6*4K60 | 12*4K30 | 22*1080p60 | 44*1080p30 (H.265)<br /> 2*4K60 | 6*4K30 | 10*1080p60 | 22*1080p30 (H.264)</td>
     </tr>
@@ -187,7 +187,7 @@ reComputer industrial has 2 RJ45 GbE ports, one of which is a PoE PSE port for p
     <tr>
       <td rowSpan={3}>Mechanical<br /></td>
       <td>Dimensions (W x D x H)</td>
-      <td colSpan={6}>159mm*155mm*57mm</td>
+      <td colSpan={6}>159mm×155mm×57mm</td>
     </tr>
     <tr>
       <td>Weight</td>
@@ -334,7 +334,8 @@ The first method download is around 14GB and the second method download is about
 <TabItem value="Method 1" label="Method 1">
 
 - **Step 1:** Download the system image to your Ubuntu PC corresponding to the board you are using
-  <div class="table-center">
+
+<div class="table-center">
   <table style={{textAlign: 'center'}}>
   <thead>
     <tr>
@@ -552,32 +553,32 @@ sudo apt install nvidia-jetpack -y
     <tr>
       <td>reComputer Industrial J4012</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWzTx7AJjbtFksz5DSwvW1sBjUa1RgnSlk-prR0kK_ymWw?e=dq9zIb" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <th>3b8b11c63d52d043fb3506b5be9870bca83fbe924e3871bf3060fbc811f253c5</th>
+      <th>436017DA6FBA2EF910F5F6C5D80749FB53029EC5108A461101CA3A69C1F8CEC3</th>
     </tr>
     <tr>
       <td>reComputer Industrial J4011</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQwbQHuBbGhDpLP_Prr6NgkBMtu41jENXa_zTRoQ2pYCBQ?e=tNeW4d" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <th>b8ffb1c7bf5b5436cca6ba0e32e9a71752b25c1494527ec25129895a2fbc7d93</th>
+      <th>B8FFB1C7BF5B5436CCA6BA0E32E9A71752B25C1494527EC25129895A2FBC7D93</th>
     </tr>
     <tr>
       <td>reComputer Industrial J3011</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EdhYh3cLibBPloeruCn9_TwBwyxtn8XycXp0jTqS5UlMaA?e=efwpWa" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <th>484cb81f399301b8a6ff61429e974ae790365b9498fb8b20df02c603656cf6d0</th>
+      <th>484CB81F399301B8A6FF61429E974AE790365B9498FB8B20DF02C603656CF6D0</th>
     </tr>
     <tr>
       <td>reComputer Industrial J3010</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXK1GomjByJKnmt3OdE5Vq8BSqzYZm1MY_yD18YjmRplLw?e=dIWPKA" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <th>a238c5229219ccf1f6ac2b2e4d93a914e6b2e471f56c975990cc03beefc5f9dd</th>
+      <th>A238C5229219CCF1F6AC2B2E4D93A914E6B2E471F56C975990CC03BEEFC5F9DD</th>
     </tr>
         <tr>
       <td>reComputer Industrial J2012</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EfB-onLVAIxFreZTCSpejYIBPX42dZoKnKrDm8ZC27DI_w?e=fAOXZr" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <th>b54cf2545a8ed8bfe115c439b0b427112bd882f03292b9f5c03ab55746c707c1</th>
+      <th>B54CF2545A8ED8BFE115C439B0B427112BD882F03292B9F5C03AB55746C707C1</th>
     </tr>
         <tr>
       <td>reComputer Industrial J2011</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXmfIDIx80hCk61-dZogyUwBe6uOlz0U6tZEW3i7WC2JBw?e=BLjUW3" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <th>11bdb47d06ca8409cfcea109b8bacd9bb79a54a275d2664d6cf492bfead31131</th>
+      <th>11BDB47D06CA8409CFCEA109B8BACD9BB79A54A275D2664D6CF492BFEAD31131</th>
     </tr>
   </tbody>
   </table> 
@@ -621,6 +622,7 @@ Please complete the **System Configuration** according to your needs.
 
 
 </TabItem>
+
 <TabItem value="Jetpack 6.0" label="Jetpack6.0">
 
 - **Step 1:**Download the system image to your Ubuntu PC corresponding to the board you are using

@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 Grove - OLED Display 1.12 V3.0 (SH1107) は、128×128 の解像度を持つ**モノクロ**ディスプレイです。LCD と比較して、OLED（有機発光ダイオード）には自己発光、高コントラスト比、薄型設計、広視野角、低消費電力など多くの利点があります。このディスプレイは 3.3V と 5V の両方の電源電圧で動作します。**I2C** または **SPI** インターフェースを使用して、マイクロコントローラーでディスプレイを点灯させ、文字や画像などを表示することができます。
 
 <!-- <p style="text-align:center"><a href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now.png" border=0 /></a></p> -->
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html)
+[<img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" />](https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html)
 
 ## 特徴
 

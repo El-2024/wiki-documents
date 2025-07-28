@@ -57,7 +57,8 @@ SenseCAP T1000 追踪器配备了 3 个传感器：温度传感器、光线传�
 
 ### 按键功能
 
-<table><tr><th colspan="1"><a name="_hlk134103971"></a><b>操作</b></th><th colspan="1"><b>描述</b></th><th colspan="1"><b>LED 状态</b></th><th colspan="1"><b>蜂鸣器</b></th></tr>
+<table>
+<tr><th colspan="1"><a name="_hlk134103971"></a><b>操作</b></th><th colspan="1"><b>描述</b></th><th colspan="1"><b>LED 状态</b></th><th colspan="1"><b>蜂鸣器</b></th></tr>
 <tr><td colspan="1" rowspan="2">按住按钮 3 秒</td><td colspan="1">如果追踪器已关机，按住按钮 3 秒可开机。蓝牙配对将自动激活，用户可以使用 APP 扫描并连接。</td><td colspan="1">LED 每秒闪烁一次。</td><td colspan="1">上升的旋律</td></tr>
 <tr><td colspan="1">如果设备已开机，按住按钮 3 秒可激活蓝牙配对。</td><td colspan="1">LED 每秒闪烁一次。</td><td colspan="1">无</td></tr>
 <tr><td colspan="1">按住按钮 9 秒</td><td colspan="1">关机。</td><td colspan="1">无</td><td colspan="1">下降的旋律</td></tr>
@@ -149,11 +150,9 @@ SenseCAP Mate 应用用于配置 LoRa 参数、设置间隔时间、将设备绑
     <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCAP 室外网关</span></a><br />
     <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCAP 室内网关</span></a></td>
     </tr>
-        <tr>
+    <tr>
     <td>SenseCAP for Helium</td>
-    <td>当有 Helium 网络覆盖时，数据可以通过 Helium 上传。设备运行在 SenseCAP 的私有 Helium 控制台上。用户无需在 Helium 控制台上创建设备，使用 SenseCAP Mate 应用和门户即可开箱即用。<br />
-
-<a href="https://explorer.helium.com/" target="_blank"><span>Helium 覆盖</span></a></td>
+    <td>当有 Helium 网络覆盖时，数据可以通过 Helium 上传。设备运行在 SenseCAP 的私有 Helium 控制台上。用户无需在 Helium 控制台上创建设备，使用 SenseCAP Mate 应用和门户即可开箱即用。<br /><a href="https://explorer.helium.com/" target="_blank"><span>Helium 覆盖</span></a></td>
     </tr>
         <tr>
     <td>Helium</td>
@@ -197,7 +196,8 @@ SenseCAP Mate 应用用于配置 LoRa 参数、设置间隔时间、将设备绑
     <td>当“平台”从其他平台切换回 SenseCAP 时，需要恢复 LoRa 参数（EUI/App EUI/App Key 等）</td>
     <td>当您需要将 LoRa 参数恢复为出厂默认值时，可以使用此功能</td>
     </tr>
-  </tbody></table>
+  </tbody>
+</table>
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/config_5.png" alt="pir" width={800} height="auto" /></p>
 
@@ -222,7 +222,8 @@ SenseCAP Mate 应用用于配置 LoRa 参数、设置间隔时间、将设备绑
 如需批量获取 EUI 信息，请联系销售团队。
 :::
 
-<table><tr><th colspan="1" valign="top"><b>频率</b></th><th colspan="1" valign="top"><b>常用名称</b></th><th colspan="2" valign="top"><b>子频段</b></th></tr>
+<table>
+<tr><th colspan="1" valign="top"><b>频率</b></th><th colspan="1" valign="top"><b>常用名称</b></th><th colspan="2" valign="top"><b>子频段</b></th></tr>
 <tr><td colspan="1"><a name="ole_link14"></a>EU863-870</td><td colspan="1">EU868</td><td colspan="1">--------</td></tr>
 <tr><td colspan="1">US902-928</td><td colspan="1">US915</td><td colspan="1">子频段从 1 到 8（默认子频段为 2）</td></tr>
 <tr><td colspan="1">AU915-928</td><td colspan="1">AU915</td><td colspan="1">子频段从 1 到 8（默认子频段为 2）</td></tr>
@@ -246,7 +247,8 @@ SenseCAP Mate 应用用于配置 LoRa 参数、设置间隔时间、将设备绑
 
 请根据需求设置工作模式。
 
-<table><tr><th colspan="1"><b>参数</b></th><th colspan="1"><b>描述</b></th><th colspan="1"></th></tr>
+<table>
+<tr><th colspan="1"><b>参数</b></th><th colspan="1"><b>描述</b></th><th colspan="1"></th></tr>
 <tr><td colspan="1">心跳间隔</td><td colspan="1">当设备在心跳间隔内没有上传数据时，将触发一个心跳包。该包仅包含电池信息。</td><td colspan="1">默认 720 分钟。</td></tr>
 <tr><td colspan="1">启用温度和光照</td><td colspan="1">如果打开此开关，将采集并上传温度和光照数据，但会增加功耗。</td><td colspan="1">默认关闭。</td></tr>
 <tr><td colspan="1" rowspan="2">SOS 报告模式</td><td colspan="1">单次模式</td><td colspan="1"><a name="ole_link7"></a>如果将 SOS 设置为单次模式，双击按钮将启用单次 SOS 模式，并上传一次位置/传感器数据和 SOS 事件。</td></tr>
@@ -262,7 +264,8 @@ SenseCAP Mate 应用用于配置 LoRa 参数、设置间隔时间、将设备绑
 
 对于事件模式，有五种事件：
 
-<table><tr><th><b>事件模式</b></th><th><b>描述</b></th><th></th></tr>
+<table>
+<tr><th><b>事件模式</b></th><th><b>描述</b></th><th></th></tr>
 <tr><td>上传间隔 – 非事件（分钟）</td><td><a name="ole_link16"></a>这是未触发事件时的上传间隔。</td><td><p>默认 60 分钟。</p><p>范围：1~10080 分钟。</p></td></tr>
 <tr><td rowspan="2">震动事件</td><td>当震动事件启用时，追踪器的震动将触发数据报告，包括震动事件、位置和传感器数据。</td><td>默认关闭。</td></tr>
 <tr><td>三轴运动阈值（mg）</td><td>默认值为 300。当加速度超过 300mg 时，触发震动事件。</td></tr>
@@ -290,7 +293,8 @@ SenseCAP Mate 应用用于配置 LoRa 参数、设置间隔时间、将设备绑
 - **Wi-Fi**: 被动扫描，通过 LoRa 上传扫描到的 4 个 MAC 地址。
 - **BLE**: 通过 LoRa 上传信号最强的 3 个 Beacon 的 MAC 地址。
 
-<table><tr><th colspan="1"><b>地理定位</b></th><th colspan="1"><b>描述</b></th><th colspan="1"></th></tr>
+<table>
+<tr><th colspan="1"><b>地理定位</b></th><th colspan="1"><b>描述</b></th><th colspan="1"></th></tr>
 <tr><td colspan="1" rowspan="8">地理定位策略</td><td colspan="1">仅 GNSS</td><td colspan="1"><p>默认使用 GNSS。</p><p>仅使用 GNSS 进行定位。</p></td></tr>
 <tr><td colspan="1">仅 Wi-Fi</td><td colspan="1">仅使用 Wi-Fi 扫描进行定位。</td></tr>
 <tr><td colspan="1">Wi-Fi+GNSS</td><td colspan="1">优先使用 Wi-Fi。如果 Wi-Fi 失败，则在一个地理定位周期内使用 GNSS。</td></tr>

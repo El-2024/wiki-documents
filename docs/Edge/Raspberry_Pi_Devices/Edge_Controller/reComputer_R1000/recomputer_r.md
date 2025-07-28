@@ -7,8 +7,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/113991274-2_3.webp
 slug: /recomputer_r
 last_update:
-  date: 01/08/2025
-  author: Joshua Lee
+  date: 07/17/2025
+  author: Jiahao
 ---
 
 <!-- ---
@@ -1304,22 +1304,49 @@ SX1261_RESET_PIN=579     # SX1261 reset (LBT / Spectral Scan)
 cp ./tools/reset_lgw.sh ./packet_forwarder/
 ```
 
-**Step 5.** Modify the content of the `global_conf.json.sx1250.EU868.usb` configuration file:
+**Step 5.** Load the WM1302-USB module
+
+```bash
+# Check the device
+lsusb
+```
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-R1000/check_lora_device.png" /></div>
+
+
+```bash
+# Use the ID number to find the port number
+sudo dmesg | grep 5740
+# Load ACM module 
+sudo modprobe cdc_acm
+```
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-R1000/load_lora_device.png" /></div>
+
+
+**Step 6.** Find the device file
+
+```bash
+sudo dmesg | grep 1-1.3.3
+```
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-R1000/ACM.png" /></div>
+
+**Step 7.** Modify the content of the `global_conf.json.sx1250.EU868.USB` configuration file:
 
 ```sh
 cd packet_forwarder
-vim global_conf.json.sx1250.EU868.usb
+vim global_conf.json.sx1250.EU868.USB
 ```
 
-Change `"com_path": "/dev/spidev0.0"` to `"com_path": "/dev/spidev0.1"`
+Change `"com_path": "/dev/ttyACM0"` to `"com_path": "/dev/ttyACM4"`
 
-**Step 6.** Start LoraWAN® Module
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-R1000/change_file.png" /></div>
+
+**Step 8.** Start LoraWAN® Module
 
 Then run the following code to start LoraWAN® Module according to your WM1302 operation frequence version.
 
 ```sh
 cd ~/sx1302_hal/packet_forwarder
-./lora_pkt_fwd -c global_conf.json.sx1250.EU868.usb
+./lora_pkt_fwd -c global_conf.json.sx1250.EU868.USB
 ```
 
 This command specifies the configuration file to be used for LoRa® USB.

@@ -122,13 +122,42 @@ T1000-E for LoRaWAN comes with fully open-source firmware. To enhance the user e
 
 ### LED
 
-<table><tr><th colspan="2" valign="top"><b>LED Status</b></th><th colspan="1" valign="top"><b>Description</b></th></tr>
-<tr><td colspan="1" rowspan="2">Red LED</td><td colspan="1" valign="top">Solid</td><td colspan="1" valign="top">Charging</td></tr>
-<tr><td colspan="1" valign="top">Flash</td><td colspan="1" valign="top">Abnormal charging</td></tr>
-<tr><td colspan="1" rowspan="4">Green LED</td><td colspan="1" valign="top">Solid</td><td colspan="1" valign="top"><p>Device in DFU mode.</p><p>Reboot the device to exit DFU mode(Press and hold the button, then release it immediately after connecting the charging cable)</p></td></tr>
-<tr><td colspan="1" valign="top"><p>On 500ms/Off 1s</p></td><td colspan="1" valign="top">Bluetooth on</td></tr>
-<tr><td colspan="1" valign="top">Breath</td><td colspan="1" valign="top">Joining LoRaWAN network</td></tr>
-<tr><td colspan="1" valign="top">Quick flash for 2s and then off </td><td colspan="1" valign="top">Joined the LoRaWAN network successfully</td></tr>
+<table>
+  <tr>
+    <th colspan="2" valign="top"><b>LED Status</b></th>
+    <th colspan="1" valign="top"><b>Description</b></th>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="2">Red LED</td>
+    <td colspan="1" valign="top">Solid</td>
+    <td colspan="1" valign="top">Charging</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Flash</td>
+    <td colspan="1" valign="top">Abnormal charging</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="4">Green LED</td>
+    <td colspan="1" valign="top">Solid</td>
+    <td colspan="1" valign="top">
+      <p>Device in DFU mode.</p>
+      <p>Reboot the device to exit DFU mode(Press and hold the button, then release it immediately after connecting the charging cable)</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">
+      <p>On 500ms/Off 1s</p>
+    </td>
+    <td colspan="1" valign="top">Bluetooth on</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Breath</td>
+    <td colspan="1" valign="top">Joining LoRaWAN network</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Quick flash for 2s and then off </td>
+    <td colspan="1" valign="top">Joined the LoRaWAN network successfully</td>
+  </tr>
 </table>
 
 
@@ -249,16 +278,60 @@ Navigate to `Settings` to set up the parameters.
 
 * **LoRa Setup**
 
-<table><tr><th colspan="1"></th><th colspan="1" valign="top"><b>Parameters</b></th><th colspan="1" valign="top"><b>Description</b></th></tr>
-<tr><td colspan="1" rowspan="5">Platform</td><td colspan="1" valign="top">SenseCAP for The Things Network（by default）</td><td colspan="1" valign="top"><p>A proprietary TTN server of SenseCAP. Out of the box when paired with a SenseCAP gateway. </p> <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCA Outdoor Gateway</span></a><br /><a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCA Indoor Gateway</span></a></td></tr>
-<tr><td colspan="1" valign="top">SenseCAP for Helium</td><td colspan="1" valign="top"><p>A private Helium console of SenseCAP. </p><p>Out of the box with SenseCAP Mate App and Portal.</p></td></tr>
-<tr><td colspan="1" valign="top">Helium</td><td colspan="1" valign="top">Public Helium Server</td></tr>
-<tr><td colspan="1" valign="top">The Things Network</td><td colspan="1" valign="top">Public TTN Server</td></tr>
-<tr><td colspan="1" valign="top">Other Platform</td><td colspan="1" valign="top">Other LoRaWAN Network Server</td></tr>
-<tr><td colspan="1" valign="top">Frequency Plan</td><td colspan="1" valign="top">EU868/US915/AU915/KR920/IN865/AS923-1/AS923-2/AS923-3/AS923-4</td><td colspan="1" valign="top">EU868 by default</td></tr>
-<tr><td colspan="1" valign="top">Packet Policy</td><td colspan="1" valign="top">1C</td><td colspan="1" valign="top">Enable by default</td></tr>
-<tr><td colspan="1" valign="top">LoRaWAN ADR</td><td colspan="1" valign="top">Enable by default</td><td colspan="1" valign="top">Enable by default</td></tr>
-<tr><td colspan="1" valign="top">Restore LoRa Configuration</td><td colspan="1" valign="top">Enable by default</td><td colspan="1" valign="top">Enable by default</td></tr>
+<table>
+  <tr>
+    <th colspan="1"></th>
+    <th colspan="1" valign="top"><b>Parameters</b></th>
+    <th colspan="1" valign="top"><b>Description</b></th>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="5">Platform</td>
+    <td colspan="1" valign="top">SenseCAP for The Things Network（by default）</td>
+    <td colspan="1" valign="top">
+      <p>A proprietary TTN server of SenseCAP. Out of the box when paired with a SenseCAP gateway. </p>
+      <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCA Outdoor Gateway</span></a><br />
+      <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCA Indoor Gateway</span></a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">SenseCAP for Helium</td>
+    <td colspan="1" valign="top">
+      <p>A private Helium console of SenseCAP. </p>
+      <p>Out of the box with SenseCAP Mate App and Portal.</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Helium</td>
+    <td colspan="1" valign="top">Public Helium Server</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">The Things Network</td>
+    <td colspan="1" valign="top">Public TTN Server</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Other Platform</td>
+    <td colspan="1" valign="top">Other LoRaWAN Network Server</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Frequency Plan</td>
+    <td colspan="1" valign="top">EU868/US915/AU915/KR920/IN865/AS923-1/AS923-2/AS923-3/AS923-4</td>
+    <td colspan="1" valign="top">EU868 by default</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Packet Policy</td>
+    <td colspan="1" valign="top">1C</td>
+    <td colspan="1" valign="top">Enable by default</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">LoRaWAN ADR</td>
+    <td colspan="1" valign="top">Enable by default</td>
+    <td colspan="1" valign="top">Enable by default</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Restore LoRa Configuration</td>
+    <td colspan="1" valign="top">Enable by default</td>
+    <td colspan="1" valign="top">Enable by default</td>
+  </tr>
 </table>
 
 
@@ -267,23 +340,83 @@ Navigate to `Settings` to set up the parameters.
 
 
 
-<table><tr><th colspan="1"></th><th colspan="1" valign="top"><b>Parameters</b></th><th colspan="1" valign="top"><b>Description</b></th></tr>
-<tr><td colspan="1">3-axis accelerometer</td><td colspan="1" valign="top">Enable/Disable, disable by default</td><td colspan="1" valign="top">Upload the data of the 3-axis accelerometer</td></tr>
-<tr><td colspan="1" rowspan="2">SOS Report Mode</td><td colspan="1" valign="top">Single(by default)</td><td colspan="1" valign="top">Upload data and report SOS event once.<br/>Buzzer alarm for 3 seconds </td></tr>
-<tr><td colspan="1" valign="top">Continuous</td><td colspan="1" valign="top">Upload data and report SOS event every minute, ends after 30 times.<br/>Buzzer alarm for 30 seconds</td></tr>
-<tr><td colspan="1">Uplink Interval(min)</td><td colspan="1" valign="top">1-10080min, 60min by default</td><td colspan="1" valign="top">Upload data at intervals.<br/>The higher the frequency, the higher the power consumption</td></tr>
-<tr><td colspan="1" rowspan="7">Geolocation Strategy</td><td colspan="1" valign="top">GNSS only(by default)</td><td colspan="1" valign="top">Uses only GPS satellite systems to determine the position</td></tr>
-<tr><td colspan="1" valign="top">Wi-Fi only</td><td colspan="1" valign="top">Upload the MAC address and RSSI info of the Wi-Fi AP</td></tr>
-<tr><td colspan="1" valign="top">Bluetooth only</td><td colspan="1" valign="top">Upload the MAC address and RSSI info of the Bluetooth beacon</td></tr>
-<tr><td colspan="1" valign="top">GNSS + Wi-Fi</td><td colspan="1" valign="top">Uses GPS positioning first, if GPS fails, then uses Wi-Fi in one geolocation cycle</td></tr>
-<tr><td colspan="1" valign="top">Bluetooth + GNSS</td><td colspan="1" valign="top">Uses Bluetooth positioning first, if Bluetooth fails, then uses GNSS in one geolocation cycle</td></tr>
-<tr><td colspan="1" valign="top">Bluetooth + Wi-Fi</td><td colspan="1" valign="top">Uses Bluetooth positioning first, if Bluetooth fails, then uses Wi-Fi in one geolocation cycle</td></tr>
-<tr><td colspan="1" valign="top">Bluetooth + Wi-Fi + GNSS</td><td colspan="1" valign="top">Use Bluetooth, Wi-Fi and GNSS for positioning in turn (switch to the next type of positioning after one type of positioning fails)</td></tr>
-<tr><td colspan="1" valign="top">GNSS(GPS)</td><td colspan="1" valign="top">GNSS Max Scan Time(s)</td><td colspan="1" valign="top">10-120s, 30s by default</td></tr>
-<tr><td colspan="1" rowspan="3">IBeacon Scan</td><td colspan="1" valign="top">Maximum number of BLE scans</td><td colspan="1" valign="top">3-5, 3 by default</td></tr>
-<tr><td colspan="1" valign="top">Scan Timeout(s)</td><td colspan="1" valign="top">3-10s, 3s by default</td></tr>
-<tr><td colspan="1" valign="top">Group UUID(Hex)</td><td colspan="1" valign="top">Set UUID Filter, up to 16bytes. <br/>Forexample, if set as '01 020304', it will filter beacons with thepattern'0102 03 04 xx xx xx ...'</td></tr>
-<tr><td colspan="1" valign="top">Wi-Fi Scan</td><td colspan="1" valign="top">Maximum number of Wi-Fi scans</td><td colspan="1" valign="top">3-5, 3 by default</td></tr>
+<table>
+  <tr>
+    <th colspan="1"></th>
+    <th colspan="1" valign="top"><b>Parameters</b></th>
+    <th colspan="1" valign="top"><b>Description</b></th>
+  </tr>
+  <tr>
+    <td colspan="1">3-axis accelerometer</td>
+    <td colspan="1" valign="top">Enable/Disable, disable by default</td>
+    <td colspan="1" valign="top">Upload the data of the 3-axis accelerometer</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="2">SOS Report Mode</td>
+    <td colspan="1" valign="top">Single(by default)</td>
+    <td colspan="1" valign="top">Upload data and report SOS event once.<br/>Buzzer alarm for 3 seconds </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Continuous</td>
+    <td colspan="1" valign="top">Upload data and report SOS event every minute, ends after 30 times.<br/>Buzzer alarm for 30 seconds</td>
+  </tr>
+  <tr>
+    <td colspan="1">Uplink Interval(min)</td>
+    <td colspan="1" valign="top">1-10080min, 60min by default</td>
+    <td colspan="1" valign="top">Upload data at intervals.<br/>The higher the frequency, the higher the power consumption</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="7">Geolocation Strategy</td>
+    <td colspan="1" valign="top">GNSS only(by default)</td>
+    <td colspan="1" valign="top">Uses only GPS satellite systems to determine the position</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Wi-Fi only</td>
+    <td colspan="1" valign="top">Upload the MAC address and RSSI info of the Wi-Fi AP</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Bluetooth only</td>
+    <td colspan="1" valign="top">Upload the MAC address and RSSI info of the Bluetooth beacon</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">GNSS + Wi-Fi</td>
+    <td colspan="1" valign="top">Uses GPS positioning first, if GPS fails, then uses Wi-Fi in one geolocation cycle</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Bluetooth + GNSS</td>
+    <td colspan="1" valign="top">Uses Bluetooth positioning first, if Bluetooth fails, then uses GNSS in one geolocation cycle</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Bluetooth + Wi-Fi</td>
+    <td colspan="1" valign="top">Uses Bluetooth positioning first, if Bluetooth fails, then uses Wi-Fi in one geolocation cycle</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Bluetooth + Wi-Fi + GNSS</td>
+    <td colspan="1" valign="top">Use Bluetooth, Wi-Fi and GNSS for positioning in turn (switch to the next type of positioning after one type of positioning fails)</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">GNSS(GPS)</td>
+    <td colspan="1" valign="top">GNSS Max Scan Time(s)</td>
+    <td colspan="1" valign="top">10-120s, 30s by default</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="3">IBeacon Scan</td>
+    <td colspan="1" valign="top">Maximum number of BLE scans</td>
+    <td colspan="1" valign="top">3-5, 3 by default</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Scan Timeout(s)</td>
+    <td colspan="1" valign="top">3-10s, 3s by default</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Group UUID(Hex)</td>
+    <td colspan="1" valign="top">Set UUID Filter, up to 16bytes. <br/>Forexample, if set as '01 020304', it will filter beacons with thepattern'0102 03 04 xx xx xx ...'</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Wi-Fi Scan</td>
+    <td colspan="1" valign="top">Maximum number of Wi-Fi scans</td>
+    <td colspan="1" valign="top">3-5, 3 by default</td>
+  </tr>
 </table>
 
 

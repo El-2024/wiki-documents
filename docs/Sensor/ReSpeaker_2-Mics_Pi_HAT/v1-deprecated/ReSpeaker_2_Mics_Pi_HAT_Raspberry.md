@@ -118,7 +118,7 @@ The Left and right arrow keys are used to select the channel or device and the U
 
 ## Usage overview
 
-To run the following examples, clone <https://github.com/respeaker/mic_hat.git> repository to your Raspberry Pi
+To run the following examples, clone [https://github.com/respeaker/mic_hat.git](https://github.com/respeaker/mic_hat.git) repository to your Raspberry Pi
 
 ```bash
 git clone https://github.com/respeaker/mic_hat.git
@@ -311,7 +311,7 @@ Turn off the lights by:
 
 #### Demo Source Code
 
-The demo is built with the **[Picovoice SDK](https://github.com/Picovoice/picovoice)**. The demo source code is available on GitHub at <https://github.com/Picovoice/picovoice/tree/master/demo/respeaker>.
+The demo is built with the **[Picovoice SDK](https://github.com/Picovoice/picovoice)**. The demo source code is available on GitHub at [https://github.com/Picovoice/picovoice/tree/master/demo/respeaker](https://github.com/Picovoice/picovoice/tree/master/demo/respeaker).
 
 #### Different Wake Words
 
@@ -319,7 +319,7 @@ The [**Picovoice SDK**](https://github.com/Picovoice/picovoice) includes free sa
 
 #### Custom Voice Commands
 
-The lighting commands are defined by a Picovoice *Speech-to-Intent context*. You can design and train contexts by typing in the allowed grammar using Picovoice Console. You can test your changes in-browser as you edit with the microphone button. Go to Picovoice Console (<https://picovoice.ai/console/>) and sign up for an account. Use the **Rhino Speech-to-Intent editor** to make contexts, then train them for Raspberry Pi.
+The lighting commands are defined by a Picovoice *Speech-to-Intent context*. You can design and train contexts by typing in the allowed grammar using Picovoice Console. You can test your changes in-browser as you edit with the microphone button. Go to Picovoice Console ([https://picovoice.ai/console/](https://picovoice.ai/console/)) and sign up for an account. Use the **Rhino Speech-to-Intent editor** to make contexts, then train them for Raspberry Pi.
 
 <div align="center"><img width ="{700}" src="https://files.seeedstudio.com/wiki/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/respeaker_demo_console_edit.gif"/></div>
 
@@ -395,7 +395,7 @@ Below are the colors associated with supported wake words for this demo:
 
 #### Multiple Wake Word Example Source Code
 
-Please see the complete source code of this example here: <https://github.com/Picovoice/porcupine/tree/master/demo/respeaker>.
+Please see the complete source code of this example here: [https://github.com/Picovoice/porcupine/tree/master/demo/respeaker](https://github.com/Picovoice/porcupine/tree/master/demo/respeaker).
 
 ## Keyword spotting with ReSpeaker 2-Mic Pi HAT and Mycroft Precise
 
@@ -541,7 +541,7 @@ Turn off the lights by:
 
 ### Demo Source Code
 
-The demo is built with the **[Picovoice SDK](https://github.com/Picovoice/picovoice)**. The demo source code is available on GitHub at <https://github.com/Picovoice/picovoice/tree/master/demo/respeaker-rpi0>.
+The demo is built with the **[Picovoice SDK](https://github.com/Picovoice/picovoice)**. The demo source code is available on GitHub at [https://github.com/Picovoice/picovoice/tree/master/demo/respeaker-rpi0](https://github.com/Picovoice/picovoice/tree/master/demo/respeaker-rpi0).
 
 ### Different Wake Words
 
@@ -549,7 +549,7 @@ The [**Picovoice SDK**](https://github.com/Picovoice/picovoice) includes free sa
 
 ### Custom Voice Commands
 
-The lighting commands are defined by a Picovoice *Speech-to-Intent context*. You can design and train contexts by typing in the allowed grammar using Picovoice Console. You can test your changes in-browser as you edit with the microphone button. Go to Picovoice Console (<https://picovoice.ai/console/>) and sign up for an account. Use the **Rhino Speech-to-Intent editor** to make contexts, then train them for Raspberry Pi Zero.
+The lighting commands are defined by a Picovoice *Speech-to-Intent context*. You can design and train contexts by typing in the allowed grammar using Picovoice Console. You can test your changes in-browser as you edit with the microphone button. Go to Picovoice Console ([https://picovoice.ai/console/](https://picovoice.ai/console/)) and sign up for an account. Use the **Rhino Speech-to-Intent editor** to make contexts, then train them for Raspberry Pi Zero.
 
 <div align="center"><img width ="{700}" src="https://files.seeedstudio.com/wiki/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/respeaker_demo_console_edit.gif"/></div>
 
@@ -653,7 +653,7 @@ Below are the colors associated with supported wake words for this demo:
 
 #### Multiple Wake Word Example Source Code
 
-Please see the complete source code of this example here: <https://github.com/Picovoice/porcupine/tree/master/demo/respeaker-rpi0>.
+Please see the complete source code of this example here: [https://github.com/Picovoice/porcupine/tree/master/demo/respeaker-rpi0](https://github.com/Picovoice/porcupine/tree/master/demo/respeaker-rpi0).
 
 ### Picovoice Tech Support
 

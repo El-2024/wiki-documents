@@ -342,7 +342,7 @@ docker ps
 一旦 Frigate 启动并运行，您可以访问 Web 界面来监控视频流并配置设置：
 
 1.  打开一个 Web 浏览器：在连接到与 Jetson 设备相同网络的设备上，打开一个 Web 浏览器。
-2.  输入 Jetson 设备的 IP 地址：在地址栏中输入 Jetson 设备的 IP 地址，后跟端口 5000（例如：http://<jetson-ip-address 或 127.0.0.1>:5000）。
+2.  输入 Jetson 设备的 IP 地址：在地址栏中输入 Jetson 设备的 IP 地址，后跟端口 5000（例如：http://jetson-ip-address 或 127.0.0.1:5000）。
 3. 查看 Dashboard：Frigate 仪表板将显示来自连接的 Dahua IP 摄像头的实时视频流、检测事件和配置选项。
 4.  现在，您可以通过 jtop 或 Frigate 系统检查 Jetson 是否正在使用 GPU 进行检测。如下图所示，检测部分每帧运行约 33 毫秒。
 

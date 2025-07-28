@@ -246,7 +246,7 @@ Arduino IDE で、新しくダウンロードしたファイルを追加しま�
 ### ステップ 8 - XIAO nRF52840 Sense で RGB ライトを音声制御
 
 例を開きます。  
-「Examples > <your_files_names> > nano_ble33_sense > nano_ble33_sense_microphone」に移動します。
+「Examples > &lt;your_files_names&gt; > nano_ble33_sense > nano_ble33_sense_microphone」に移動します。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/BLE-PDM-TinyML/edge32.png" alt="ライブラリインストール済み" width={600} height="auto" /></p>
 

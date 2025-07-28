@@ -29,77 +29,54 @@ Bluetooth マルチメーターは、エンジニア向けに特別に設計さ�
 ---
 <table cellspacing="0" width="80%">
 <tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 最小
-</th>
-<th scope="col"> 標準
-</th>
-<th scope="col"> 最大
-</th>
-<th scope="col"> 単位
-</th></tr>
+<th scope="col"> 項目 </th>
+<th scope="col"> 最小 </th>
+<th scope="col"> 標準 </th>
+<th scope="col"> 最大 </th>
+<th scope="col"> 単位 </th>
+</tr>
 <tr>
-<th scope="row"> 電圧測定範囲
-</th>
-<td> -30
-</td>
-<td> -
-</td>
-<td> 30
-</td>
-<td> VDC
-</td></tr>
+<th scope="row"> 電圧測定範囲 </th>
+<td> -30 </td>
+<td> - </td>
+<td> 30 </td>
+<td> VDC </td>
+</tr>
 <tr>
-<th scope="row"> 電圧測定精度
-</th>
-<td colspan="3"> 3
-</td>
-<td> %
-</td></tr>
+<th scope="row"> 電圧測定精度 </th>
+<td colspan="3"> 3 </td>
+<td> % </td>
+</tr>
 <tr>
-<th scope="row"> 電流測定範囲（最大）
-</th>
-<td colspan="3"> 1
-</td>
-<td> A
-</td></tr>
+<th scope="row"> 電流測定範囲（最大） </th>
+<td colspan="3"> 1 </td>
+<td> A </td>
+</tr>
 <tr>
-<th scope="row"> 電流測定精度
-</th>
-<td colspan="3"> 3
-</td>
-<td> %
-</td></tr>
+<th scope="row"> 電流測定精度 </th>
+<td colspan="3"> 3 </td>
+<td> % </td>
+</tr>
 <tr>
-<th scope="row"> 抵抗測定範囲
-</th>
-<td> 10
-</td>
-<td> -
-</td>
-<td> 1,000,000
-</td>
-<td> Ω
-</td></tr>
+<th scope="row"> 抵抗測定範囲 </th>
+<td> 10 </td>
+<td> - </td>
+<td> 1,000,000 </td>
+<td> Ω </td>
+</tr>
 <tr>
-<th scope="row"> 電圧測定精度
-</th>
-<td colspan="3"> 5
-</td>
-<td> %
-</td></tr>
+<th scope="row"> 電圧測定精度 </th>
+<td colspan="3"> 5 </td>
+<td> % </td>
+</tr>
 <tr>
-<th scope="row"> 動作温度
-</th>
-<td> 0
-</td>
-<td> -
-</td>
-<td> 45
-</td>
-<td> ℃
-</td></tr></table>
+<th scope="row"> 動作温度 </th>
+<td> 0 </td>
+<td> - </td>
+<td> 45 </td>
+<td> ℃ </td>
+</tr>
+</table>
 
 ## 製品概要
 ---
@@ -109,14 +86,12 @@ Bluetooth マルチメーターは、エンジニア向けに特別に設計さ�
 *   ②：シリアル Bluetooth 用のプログラミングコネクタ。
 *   ③：Bluetooth マルチメーターの電源スイッチ。
 *   ④：ペアリングインジケータ。
-<dl><dd>赤色インジケータと青色インジケータが交互に点滅 --- ペアリング中
-</dd><dd>青色インジケータが点滅 --- ペアリング完了
-</dd></dl>
+    - 赤色インジケータと青色インジケータが交互に点滅 --- ペアリング中
+    - 青色インジケータが点滅 --- ペアリング完了
 
 *   ⑤：充電インジケータ。
-<dl><dd>赤色インジケータ点灯 - 充電中
-</dd><dd>緑色インジケータ点灯 - 充電完了
-</dd></dl>
+    - 赤色インジケータ点灯 - 充電中
+    - 緑色インジケータ点灯 - 充電完了
 
 *   ⑥：データ転送インジケータ。データ転送中に点滅します。
 *   ⑦：抵抗測定用のオーディオコネクタ。

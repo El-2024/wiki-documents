@@ -10,8 +10,8 @@ last_update:
   author: hushuxu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 ![](https://files.seeedstudio.com/wiki/Arch_BLE/img/Arch_BLE.jpg)
@@ -72,7 +72,7 @@ nRF51822は、ULPワイヤレスアプリケーション向けの強力なマル
 
 <div className="admonition note">
   <p className="admonition-title">注意</p>
-  'device.h'が見つからないというコンパイルエラーが発生した場合は、プログラム内のmbedライブラリを最新のリビジョンに更新してみてください。
+  <p>'device.h'が見つからないというコンパイルエラーが発生した場合は、プログラム内のmbedライブラリを最新のリビジョンに更新してみてください。</p>
 </div>
 
 アプリケーション
@@ -136,7 +136,7 @@ Arch BLEの最新ファームウェアバージョンは、2015年3月2日にビ
 -   Arch BLEのボタンを押しながら電源を入れます。
 -   CRP DISABLDディスクが表示されます。
     -   Windowsの場合、上記のファームウェアでfirmware.binを置き換えます。
-    -   Linux/Macの場合、以下のコマンドを使用します： **dd if={new\_firmware.bin} of={firmware.bin} conv=notrunc**
+    -   Linux/Macの場合、以下のコマンドを使用します： **dd if=\{new\_firmware.bin\} of=\{firmware.bin\} conv=notrunc**
 
 ## 回路図オンラインビューア
 

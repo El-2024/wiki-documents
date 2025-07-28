@@ -1508,11 +1508,11 @@ Q2: 如何开始训练？
 
 Q3: 训练好的模型保存在哪里？
 
-模型和训练日志通常保存在仓库根目录下的 logs/<experiment_name>/<run_name>/ 文件夹中。其中 <experiment_name> 通常对应环境名称（如 PiRough），<run_name> 包含日期和时间戳。策略模型文件通常以 `.pt` 结尾。
+模型和训练日志通常保存在仓库根目录下的 `logs/<experiment_name>/<run_name>/` 文件夹中。其中 `<experiment_name>` 通常对应环境名称（如 PiRough），`<run_name>` 包含日期和时间戳。策略模型文件通常以 `.pt` 结尾。
 
 Q4: 如何可视化训练好的策略？
 
-运行类似 python legged_gym/scripts/play.py --task=Pi --checkpoint=logs/<experiment_name>/<run_name>/model_<iteration_number>.pt 的命令。你需要将 --checkpoint 指向你想要加载的模型文件。
+运行类似 `python legged_gym/scripts/play.py --task=Pi --checkpoint=logs/<experiment_name>/<run_name>/model_<iteration_number>.pt` 的命令。你需要将 `--checkpoint` 指向你想要加载的模型文件。
 
 Q5: 训练速度很慢怎么办？
 

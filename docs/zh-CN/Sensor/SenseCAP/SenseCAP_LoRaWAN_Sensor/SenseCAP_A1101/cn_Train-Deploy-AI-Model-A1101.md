@@ -506,12 +506,12 @@ python3 uf2conv.py -f GROVEAI -t 1 -c runs//train/yolov5n6_results//weights/best
 
 - **步骤 10.** 现在，一个名为 **model-1.uf2** 的文件将被生成。这就是我们将加载到 SenseCAP A1101 模块中以执行推理的文件！
 
-## 检查 BootLoader 版本
+## 检查 BootLoader 版本 {#check-bootloader-version}
 - 双击 BOOT 按钮并等待可移动驱动器挂载
 - 打开可移动驱动器中的 INFO_UF2.TXT 文件
 <div align="center"><img width="{600}" src="https://github.com/Seeed-Studio/Seeed_Arduino_GroveAI/raw/master/assert/q2.png"/></div>
 
-## 更新 BootLoader
+## 更新 BootLoader {#update-bootloader}
 
 如果您的 SenseCAP A1101 无法被电脑识别并且没有显示端口号，则可能需要更新 BootLoader。
 

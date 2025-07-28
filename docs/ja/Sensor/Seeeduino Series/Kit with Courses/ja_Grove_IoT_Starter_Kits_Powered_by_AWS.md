@@ -57,8 +57,8 @@ Seeeduino Cloud と AWS に対応した Grove IoT スターターキット
 <tr>
 <th> ボード/部品 </th>
 <th> 数量 </th>
-<th> ドキュメント
-</th></tr>
+<th> ドキュメント </th>
+</tr>
 <tr>
 <td> <a href="https://www.seeedstudio.com/Seeeduino-Cloud-Arduino-Yun-compatible-openWRT-controller-p-2123.html?cPath=6_7" ><span><font size={"3"}> Seeeduino Cloud 開発ボード </font></span></a> </td>
 <td> 1 </td>
@@ -109,24 +109,24 @@ Seeeduino Cloud と AWS に対応した Grove IoT スターターキット
 </tr>
 <tr>
 <td> DIP LED 青-青 </td>
-<td> 1
-</td></tr>
+<td> 1 </td>
+</tr>
 <tr>
 <td> DIP LED 緑-緑 </td>
-<td> 1
-</td></tr>
+<td> 1 </td>
+</tr>
 <tr>
 <td> DIP LED 赤-赤 </td>
-<td> 1
-</td></tr>
+<td> 1 </td>
+</tr>
 <tr>
 <td> ミニサーボ </td>
-<td> 1
-</td></tr>
+<td> 1 </td>
+</tr>
 <tr>
 <td> Micro USB ケーブル - 48cm </td>
-<td> 1
-</td></tr></table>
+<td> 1 </td>
+</tr></table>
 
 ## Intel® Edison と Grove IoT スターターキット Powered by AWS
 

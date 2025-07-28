@@ -45,8 +45,8 @@ SenseCAP [S2110コントローラー](https://www.seeedstudio.com/SenseCAP-XIAO-
 IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワークとの互換性、内蔵19Ahバッテリー、そしてAPPからの強力なサポートにより、[SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP~LoRaWAN%20Device&product_module=Device)は産業用途に最適な選択肢となります。このシリーズには、土壌水分、空気温度と湿度、光強度、CO2、EC、そして8-in-1気象ステーション用センサーが含まれています。次の成功する産業プロジェクトには最新のSenseCAP S210xを試してみてください。
 
 <table style={{marginLeft: 'auto', marginRight: 'auto'}}>
-  <tbody><tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP 産業用センサー</strong></font></td>
-    </tr>
+  <tbody>
+    <tr><td colSpan={4} bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP 産業用センサー</strong></font></td></tr>
     <tr>
       <td bgcolor="#0e3c49"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank" /><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="100%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div>
       </td>
@@ -576,11 +576,9 @@ A: Wio Terminal 用のファームウェアをいつでも書き込むことが�
 
 A: ユーザーがプロジェクトに合わせて3つのコードの情報を変更した場合でも、Grove - Wio-E5 の背面にあるステッカー情報を使用して、いつでもそれらを取得できるように問い合わせインターフェースを公開しています。
 
-<div>
-  ```
-  https://sensecap.seeed.cc/makerapi/device/view_device_info?nodeEui=<your_eui>&amp;deviceCode=<your_code>
-      ```
-    </your_code></your_eui></div>
+```
+https://sensecap.seeed.cc/makerapi/device/view_device_info?nodeEui=&lt;your_eui&gt;&amp;deviceCode=&lt;your_code&gt;
+```
 
 上記のウェブサイトをブラウザで開き、Grove - Wio-E5 の背面に記載されている **EUI** と **Code** の情報を対応する位置に入力して、デバイスに対応する3つのコードを確認してください。
 

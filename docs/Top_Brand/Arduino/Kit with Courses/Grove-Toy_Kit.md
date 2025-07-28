@@ -39,20 +39,19 @@ Grove Toy Kit includes:
 ##  Version Tracker
 
 <table>
-<tr>
-<th> Revision
-</th>
-<th> Descriptions
-</th>
-<th> Release
-</th></tr>
-<tr>
-<td width="300px"> GROVE - Toy Kit
-</td>
-<td width="500px"> the V0.9b revision published
-</td>
-<td width="200px"> Nov 23, 2011
-</td></tr></table>
+  <tbody>
+    <tr>
+      <th>Revision</th>
+      <th>Descriptions</th>
+      <th>Release</th>
+    </tr>
+    <tr>
+      <td width="300px">GROVE - Toy Kit</td>
+      <td width="500px">the V0.9b revision published</td>
+      <td width="200px">Nov 23, 2011</td>
+    </tr>
+  </tbody>
+</table>
 
 ##  Make your toy sensitive
 

@@ -11,8 +11,8 @@ last_update:
   author: gunengyu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 ![](https://files.seeedstudio.com/wiki/Shield-MaTrix-V0.9b/img/Shield_matrix.jpg)
@@ -323,19 +323,15 @@ MaTrix mymatrix;       // mymatrix オブジェクトの作成
 
 <u> **mymatrix.init();**</u>
 
-<dl><dd>_説明_: 初期化モジュール。
-</dd></dl>
+<dl><dd>_説明_: 初期化モジュール。</dd></dl>
 
 <u> **mymatrix.clearLed();**</u>
 
-<dl><dd>_説明_: ディスプレイのクリア。
-</dd></dl>
+<dl><dd>_説明_: ディスプレイのクリア。</dd></dl>
 
 <u> **mymatrix.brightness(byte brightLevel);**</u>
 
-<dl><dd>_説明_: ディスプレイの明るさを設定します。
-</dd><dd>_brightLevel_: 明るさレベル (byte)、255 の値で最大明るさに設定されます。
-</dd></dl>
+<dl><dd>_説明_: ディスプレイの明るさを設定します。</dd><dd>_brightLevel_: 明るさレベル (byte)、255 の値で最大明るさに設定されます。</dd></dl>
 
 使用例:
 
@@ -350,8 +346,7 @@ MaTrix mymatrix;       // mymatrix オブジェクトの作成
 
 <u> **mymatrix.getBrightness();**</u>
 
-<dl><dd>_説明_: 現在のディスプレイの明るさを返します。
-</dd></dl>
+<dl><dd>_説明_: 現在のディスプレイの明るさを返します。</dd></dl>
 
 使用例:
 
@@ -366,13 +361,7 @@ MaTrix mymatrix;       // mymatrix オブジェクトの作成
 
 <u> **printString(String s, byte pos, byte color, unsigned char *Font, char effect, int speed);**</u>
 
-<dl><dd>_説明_: 指定された文字列を表示します。
-</dd><dd>_pos_: 最初の文字の開始位置 (byte)。マトリックスの右端から数え、0 から始まります。
-</dd><dd>_color_: 色 (byte)。3つの事前定義された値 - RED, GREEN, YELLOW
-</dd><dd>_*Font_: フォントへのポインタ (unsigned char)。ライブラリで利用可能なフォント: キャラクター - font5x8 (ラテン)、font6x8 (ラテンとキリル); デジタル - digit6x8bold, digit6x8future。フォントの詳細は、ライブラリアーカイブ MaTrix の fonts.c ファイルを参照してください。
-</dd><dd>_effect_: 文字列の効果 (char)。利用可能な事前定義された値: LEFT, UP, DOWN (対応する方向へのシフト)、FADE (表示)、NONE (効果なし - 即座に表示)。デフォルト値 - NONE。
-</dd><dd>_speed_: 効果の再生速度 (int)。利用可能な事前定義された値: VSLOW, SLOW, MID, FAST, VFAST ("非常に遅い"から"非常に速い"まで)、デフォルト値 - MID。
-</dd></dl>
+<dl><dd>_説明_: 指定された文字列を表示します。</dd><dd>_pos_: 最初の文字の開始位置 (byte)。マトリックスの右端から数え、0 から始まります。</dd><dd>_color_: 色 (byte)。3つの事前定義された値 - RED, GREEN, YELLOW</dd><dd>_*Font_: フォントへのポインタ (unsigned char)。ライブラリで利用可能なフォント: キャラクター - font5x8 (ラテン)、font6x8 (ラテンとキリル); デジタル - digit6x8bold, digit6x8future。フォントの詳細は、ライブラリアーカイブ MaTrix の fonts.c ファイルを参照してください。</dd><dd>_effect_: 文字列の効果 (char)。利用可能な事前定義された値: LEFT, UP, DOWN (対応する方向へのシフト)、FADE (表示)、NONE (効果なし - 即座に表示)。デフォルト値 - NONE。</dd><dd>_speed_: 効果の再生速度 (int)。利用可能な事前定義された値: VSLOW, SLOW, MID, FAST, VFAST ("非常に遅い"から"非常に速い"まで)、デフォルト値 - MID。</dd></dl>
 
 使用例:
 
@@ -387,11 +376,7 @@ MaTrix mymatrix;       // mymatrix オブジェクトの作成
 
 <u> **printRunningString(String s, byte color, unsigned char *Font, int speed);**</u>
 
-<dl><dd>_説明_: 定義された"走る"文字列を表示します。
-</dd><dd>_color_: 色 (byte)。3つの事前定義された値 - RED, GREEN, YELLOW
-</dd><dd>_*Font_: フォントへのポインタ (unsigned char)。ライブラリで利用可能なフォント: キャラクター - font5x8 (ラテン)、font6x8 (ラテンとキリル); デジタル - digit6x8bold, digit6x8future。フォントの詳細は、ライブラリアーカイブ MaTrix の fonts.c ファイルを参照してください。
-</dd><dd>_speed_: 効果の再生速度 (int)。利用可能な事前定義された値: VSLOW, SLOW, MID, FAST, VFAST ("非常に遅い"から"非常に速い"まで)、デフォルト値 - MID。
-</dd></dl>
+<dl><dd>_説明_: 定義された"走る"文字列を表示します。</dd><dd>_color_: 色 (byte)。3つの事前定義された値 - RED, GREEN, YELLOW</dd><dd>_*Font_: フォントへのポインタ (unsigned char)。ライブラリで利用可能なフォント: キャラクター - font5x8 (ラテン)、font6x8 (ラテンとキリル); デジタル - digit6x8bold, digit6x8future。フォントの詳細は、ライブラリアーカイブ MaTrix の fonts.c ファイルを参照してください。</dd><dd>_speed_: 効果の再生速度 (int)。利用可能な事前定義された値: VSLOW, SLOW, MID, FAST, VFAST ("非常に遅い"から"非常に速い"まで)、デフォルト値 - MID。</dd></dl>
 
 使用例:
 
@@ -408,42 +393,31 @@ MaTrix mymatrix;       // mymatrix オブジェクトの作成
 
 <u> **printArray();**</u>
 
-<dl><dd>_説明_: 現在のメイン配列 (array) の状態をシリアルポートに表示します。
-</dd></dl>
+<dl><dd>_説明_: 現在のメイン配列 (array) の状態をシリアルポートに表示します。</dd></dl>
 
 <u> **printShadow();**</u>
 
-<dl><dd>_説明_: 現在の"シャドウ"配列 (shadow) の状態をシリアルポートに表示します。
-</dd></dl>
+<dl><dd>_説明_: 現在の"シャドウ"配列 (shadow) の状態をシリアルポートに表示します。</dd></dl>
 
 <u> **printChar(unsigned char sym, byte pos, byte color);**</u>
 
-<dl><dd>_説明_: 配列 (array) を変更し、マトリックスに表示する際に指定された位置に指定された色で指定されたシンボルを出力します。
-</dd><dd>_pos_: 最初の文字の開始位置 (byte)。マトリックスの右端から数え、0 から始まります。
-</dd><dd>_color_: 色 (byte)。3つの事前定義された値 - RED, GREEN, YELLOW
-</dd></dl>
+<dl><dd>_説明_: 配列 (array) を変更し、マトリックスに表示する際に指定された位置に指定された色で指定されたシンボルを出力します。</dd><dd>_pos_: 最初の文字の開始位置 (byte)。マトリックスの右端から数え、0 から始まります。</dd><dd>_color_: 色 (byte)。3つの事前定義された値 - RED, GREEN, YELLOW</dd></dl>
 
 注意！関数を呼び出す際に使用されるフォントは setFont を使用して定義する必要があります。
 
 <u> **printCharShadow(unsigned char sym, byte pos, byte color);**</u>
 
-<dl><dd>_説明_: printChar と類似した関数ですが、"シャドウ"配列 (shadow) を変更します。
-</dd></dl>
+<dl><dd>_説明_: printChar と類似した関数ですが、"シャドウ"配列 (shadow) を変更します。</dd></dl>
 
 <u> **printStr(unsigned char *s, byte pos, byte color);**</u>
 
-<dl><dd>_説明_: 配列 (array) を変更し、マトリックスに表示する際に指定された位置に指定された色で指定された文字列を表示します。
-</dd><dd>_*s_: 文字列配列へのポインタ (unsigned char)。
-</dd><dd>_pos_: 最初の文字の開始位置 (byte)。マトリックスの右端から数え、0 から始まります。
-</dd><dd>_color_: 色 (byte)。3つの事前定義された値 - RED, GREEN, YELLOW
-</dd></dl>
+<dl><dd>_説明_: 配列 (array) を変更し、マトリックスに表示する際に指定された位置に指定された色で指定された文字列を表示します。</dd><dd>_*s_: 文字列配列へのポインタ (unsigned char)。</dd><dd>_pos_: 最初の文字の開始位置 (byte)。マトリックスの右端から数え、0 から始まります。</dd><dd>_color_: 色 (byte)。3つの事前定義された値 - RED, GREEN, YELLOW</dd></dl>
 
 注意！関数を呼び出す際に使用されるフォントは setFont を使用して定義する必要があります。
 
 <u> **printStrShadow(unsigned char *s, byte pos, byte color);**</u>
 
-<dl><dd>_説明_: printChar と類似した関数ですが、"シャドウ"配列 (shadow) を変更します。
-</dd></dl>
+<dl><dd>_説明_: printChar と類似した関数ですが、"シャドウ"配列 (shadow) を変更します。</dd></dl>
 
 ## 参考文献
 

@@ -165,8 +165,7 @@ L76K GNSS 模块是一个多系统全球导航卫星系统模块，兼容所有 
 #### 第 1 步：根据您的操作系统下载并安装稳定版本的 Arduino IDE
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong></a>
 </div>
 
 #### 第 2 步：启动 Arduino 应用程序

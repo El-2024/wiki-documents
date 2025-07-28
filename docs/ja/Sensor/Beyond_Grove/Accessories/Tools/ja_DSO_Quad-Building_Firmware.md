@@ -21,12 +21,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ###   GCCとDebianを使用する
 
-<pre> apt-get install --no-install-recommends  build-essential autoconf flex bison texinfo libncurses5-dev libgmp3-dev libmpfr-dev libmpc-dev libftdi-dev
- cd
- git clone [git://github.com/esden/summon-arm-toolchain.git](git://github.com/esden/summon-arm-toolchain.git)
- cd summon-arm-toolchain
- $EDITOR summon-arm-toolchain
-</pre>
+```bash
+apt-get install --no-install-recommends  build-essential autoconf flex bison texinfo libncurses5-dev libgmp3-dev libmpfr-dev libmpc-dev libftdi-dev
+cd
+git clone git://github.com/esden/summon-arm-toolchain.git
+cd summon-arm-toolchain
+$EDITOR summon-arm-toolchain
+```
 
 ..そして、以下の設定が有効であることを確認してください:
 ```

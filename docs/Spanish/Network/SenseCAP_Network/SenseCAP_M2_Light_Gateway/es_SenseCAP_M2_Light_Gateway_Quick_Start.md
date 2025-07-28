@@ -56,7 +56,7 @@ Haz clic en “**Scan Networks**”, selecciona tu red Wi-Fi e ingresa la contra
 
 - Configura y confirma la ubicación de tu hotspot, luego agrégalo a la red blockchain de Helium.
 
-**NOTA:** El **SenseCAP M2 Light Hotspot** ya incluye en su precio la **tarifa de activación de $40** y la **primera afirmación de ubicación de $10** (total de $50). Si cambias la ubicación posteriormente, deberás pagar **$10 USD** por cada nueva afirmación.
+**NOTA:** El **SenseCAP M2 Light Hotspot** ya incluye en su precio la **tarifa de activación de \$40** y la **primera afirmación de ubicación de \$10** (total de \$50). Si cambias la ubicación posteriormente, deberás pagar **\$10 USD** por cada nueva afirmación.
 
 ![](https://files.seeedstudio.com/wiki/wiki-platform/sensor_network/M2_Light_Hotspot/image10.png)![](https://files.seeedstudio.com/wiki/wiki-platform/sensor_network/M2_Light_Hotspot/image11.png)![](https://files.seeedstudio.com/wiki/wiki-platform/sensor_network/M2_Light_Hotspot/image12.png)
 

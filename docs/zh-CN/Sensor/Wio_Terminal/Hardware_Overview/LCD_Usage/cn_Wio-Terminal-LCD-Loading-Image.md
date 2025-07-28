@@ -47,7 +47,7 @@ last_update:
 :::
 #### 选项 1: 使用预编译的Windows可执行文件（仅适用于Windows）：
 
-- **步骤 2-1-1:** 我们使用 [Pyinstaller](https://pyinstaller.org/en/stable/){target=_blank} 软件包准备了可执行文件，您只需点击 [bmp_converter.exe](https://files.seeedstudio.com/wiki/Wio-Terminal/res/bmp_converter.exe) 即可下载可执行文件。
+- **步骤 2-1-1:** 我们使用 [Pyinstaller](https://pyinstaller.org/en/stable/) 软件包准备了可执行文件，您只需点击 [bmp_converter.exe](https://files.seeedstudio.com/wiki/Wio-Terminal/res/bmp_converter.exe) 即可下载可执行文件。
 
 - **步骤 2-1-2:** 将下载的 `bmp_converter.exe` 放置在与步骤 `步骤 1-3` 中创建的 `bmp folder` 相同的目录中。
 

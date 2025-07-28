@@ -92,13 +92,13 @@ reServer 工业版配备 5 个 RJ45 GbE 端口，其中 4 个是 PoE PSE 端口�
     </tr>
     <tr>
       <td>视频编码</td>
-      <td colSpan={2}>支持标准：H.265 (HEVC)、H.264、AV1 1*4K60 (H.265) | 3*4K30 (H.265) | 6*1080p60 (H.265) | 12*1080p30 (H.265)</td>
+      <td colSpan={2}>支持标准：H.265 (HEVC)、H.264、AV1 1x4K60 (H.265) | 3x4K30 (H.265) | 6x1080p60 (H.265) | 12x1080p30 (H.265)</td>
       <td colSpan={2}>1080p30 支持 1-2 个 CPU 核心</td>
     </tr>
     <tr>
       <td>视频解码</td>
-      <td colSpan={2}>支持标准：H.265 (HEVC)、H.264、VP9、AV1 1*8K30 (H.265) | 2*4K60 (H.265) | 4*4K30 (H.265) | 9*1080p60 (H.265) | 18*1080p30 (H.265)</td>
-      <td colSpan={2}>支持标准：H.265 (HEVC)、H.264、VP9、AV1 1*4K60 (H.265) | 2*4K30 (H.265) | 5*1080p60 (H.265) | 11*1080p30 (H.265)</td>
+      <td colSpan={2}>支持标准：H.265 (HEVC)、H.264、VP9、AV1 1x8K30 (H.265) | 2x4K60 (H.265) | 4x4K30 (H.265) | 9x1080p60 (H.265) | 18x1080p30 (H.265)</td>
+      <td colSpan={2}>支持标准：H.265 (HEVC)、H.264、VP9、AV1 1x4K60 (H.265) | 2x4K30 (H.265) | 5x1080p60 (H.265) | 11x1080p30 (H.265)</td>
     </tr>
     <tr>
       <td rowSpan={2}>存储</td>
@@ -112,28 +112,28 @@ reServer 工业版配备 5 个 RJ45 GbE 端口，其中 4 个是 PoE PSE 端口�
     <tr>
       <td rowSpan={9}>I/O</td>
       <td>以太网</td>
-      <td colSpan={4}>1* LAN0 RJ45 GbE (10/100/1000Mbps)</td>
+      <td colSpan={4}>1x LAN0 RJ45 GbE (10/100/1000Mbps)</td>
     </tr>
     <tr>
       <td> </td>
-      <td colSpan={4}>4* LAN RJ45 GbE PoE(PSE 802.3 af 15 W, 10/100/1000Mbps)</td>
+      <td colSpan={4}>4x LAN RJ45 GbE PoE(PSE 802.3 af 15 W, 10/100/1000Mbps)</td>
     </tr>
     <tr>
       <td>USB</td>
-      <td colSpan={4}>4* USB3.1, 1* USB2.0 Type C（设备模式）, 1* USB2.0 Type C（用于调试 UART 和 RP2040）</td>
+      <td colSpan={4}>4x USB3.1, 1x USB2.0 Type C（设备模式）, 1x USB2.0 Type C（用于调试 UART 和 RP2040）</td>
     </tr>
     <tr>
       <td>DI/DO</td>
-      <td colSpan={4}>4*DI, 4*DO, 3*GND_DI, 2*GND_DO, 1*GND_ISO, 1*CAN</td>
+      <td colSpan={4}>4xDI, 4xDO, 3xGND_DI, 2xGND_DO, 1xGND_ISO, 1xCAN</td>
     </tr>
     <tr>
       <td>COM</td>
-      <td colSpan={4}>1* DB9 (RS232/RS422/RS485)</td>
+      <td colSpan={4}>1x DB9 (RS232/RS422/RS485)</td>
     </tr>
     <tr>
       <td>显示</td>
-      <td colSpan={2}>1*HDMI 2.1 Type A 7680x4320 @ 30 Hz</td>
-      <td colSpan={2}>1*HDMI 1.4 Type A 3840x2160 @ 30 Hz</td>
+      <td colSpan={2}>1xHDMI 2.1 Type A 7680x4320 @ 30 Hz</td>
+      <td colSpan={2}>1xHDMI 1.4 Type A 3840x2160 @ 30 Hz</td>
     </tr>
     <tr>
       <td>SATA</td>
@@ -141,7 +141,7 @@ reServer 工业版配备 5 个 RJ45 GbE 端口，其中 4 个是 PoE PSE 端口�
     </tr>
     <tr>
       <td>SIM</td>
-      <td colSpan={4}>1* Nano SIM 卡插槽</td>
+      <td colSpan={4}>1x Nano SIM 卡插槽</td>
     </tr>
     <tr>
       <td>按钮</td>
@@ -158,15 +158,15 @@ reServer 工业版配备 5 个 RJ45 GbE 端口，其中 4 个是 PoE PSE 端口�
     </tr>
     <tr>
       <td>风扇</td>
-      <td colSpan={4}>无风扇，被动散热器；1*风扇连接器（5V PWM）</td>
+      <td colSpan={4}>无风扇，被动散热器；1x风扇连接器（5V PWM）</td>
     </tr>
     <tr>
       <td>TPM</td>
-      <td colSpan={4}>1* TPM 2.0 连接器（模块可选）</td>
+      <td colSpan={4}>1x TPM 2.0 连接器（模块可选）</td>
     </tr>
     <tr>
       <td>RTC</td>
-      <td colSpan={4}>1* RTC 插座（包含 CR1220），*RTC 2 针</td>
+      <td colSpan={4}>1x RTC 插座（包含 CR1220），RTC 2 针</td>
     </tr>
     <tr>
       <td rowSpan={2}>电源</td>
@@ -180,7 +180,7 @@ reServer 工业版配备 5 个 RJ45 GbE 端口，其中 4 个是 PoE PSE 端口�
     <tr>
       <td rowSpan={9}>机械</td>
       <td>尺寸（宽 x 深 x 高）</td>
-      <td colSpan={4}>194.33mm*187mm*95.5mm</td>
+      <td colSpan={4}>194.33mm×187mm×95.5mm</td>
     </tr>
     <tr>
       <td>重量</td>
@@ -320,8 +320,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWoMiCYaghJGsmgX8ki3lrwB67RFYkI9zvBW6t86w_7chg?e=afbbOs" target="_blank" rel="noopener noreferrer">下载1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWoMiCYaghJGsmgX8ki3lrwB67RFYkI9zvBW6t86w_7chg?e=afbbOs" target="_blank" rel="noopener noreferrer">下载1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EWxVw3rZF-JPuKp0ksJZkGABWmsSxVizaJIqQBL5TDL1JA?e=4JJ2XV" target="_blank" rel="noopener noreferrer">下载2</a>
@@ -362,8 +361,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY9t48fwnJVLraZyoVzYe2gB5RMb9FMXqKxVT9_WBFnnzQ?e=rcBfY5" target="_blank" rel="noopener noreferrer">下载1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY9t48fwnJVLraZyoVzYe2gB5RMb9FMXqKxVT9_WBFnnzQ?e=rcBfY5" target="_blank" rel="noopener noreferrer">下载1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EW5Dood6aQ9DpT6ZaXWF50QBmyAyOowCktzqZj48sQeyhw?e=VVP56J" target="_blank" rel="noopener noreferrer">下载2</a>
@@ -383,8 +381,7 @@ import TabItem from '@theme/TabItem';
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZlrBLKGf5VDiczIJaPNpNoBcby3urzv85oWmS34pKtcGg?e=u7aWDL" target="_blank" rel="noopener noreferrer">下载1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZlrBLKGf5VDiczIJaPNpNoBcby3urzv85oWmS34pKtcGg?e=u7aWDL" target="_blank" rel="noopener noreferrer">下载1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EQJBb6D2ISBEnoUnUkqVEgkB9npGJ48jw5p2DXFIWaNJxA?e=lOJiFM" target="_blank" rel="noopener noreferrer">下载2</a>
@@ -394,8 +391,7 @@ import TabItem from '@theme/TabItem';
         <td>6.1</td>
         <td>36.4</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERd_GV-EQGtIiqm90pnmAisBKIuOgZnCISP783um9r7OJw?e=nYL7oz" target="_blank" rel="noopener noreferrer">下载1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERd_GV-EQGtIiqm90pnmAisBKIuOgZnCISP783um9r7OJw?e=nYL7oz" target="_blank" rel="noopener noreferrer">下载1</a>
         </td>
         <td>
           -
@@ -406,8 +402,7 @@ import TabItem from '@theme/TabItem';
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDbctjmL2tAtpW_gaqhylABEE5UT2chlro5vi20sFKygA?e=yE5NfC" target="_blank" rel="noopener noreferrer">下载1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDbctjmL2tAtpW_gaqhylABEE5UT2chlro5vi20sFKygA?e=yE5NfC" target="_blank" rel="noopener noreferrer">下载1</a>
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb6xTuWGRdlDpJfgLSWS7S4BpnKYxkI9RKl6tJbU0xI4FQ?e=m84vbP" target="_blank" rel="noopener noreferrer">下载2</a>
@@ -437,8 +432,7 @@ import TabItem from '@theme/TabItem';
         <td>6.1</td>
         <td>36.4</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXv18M5S-gNGvFVyCgUIfOMBveES_RLF25qpEP1uMLGrBA?e=d7b2j7" target="_blank" rel="noopener noreferrer">下载1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXv18M5S-gNGvFVyCgUIfOMBveES_RLF25qpEP1uMLGrBA?e=d7b2j7" target="_blank" rel="noopener noreferrer">下载1</a>
         </td>
         <td>
           -
@@ -448,8 +442,7 @@ import TabItem from '@theme/TabItem';
         <td>6.2</td>
         <td>36.4.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ESNHrERy6DJCotXjFJT_5yYBbRzp7AHYujEsbcT4B4ZNCg?e=d1BePF" target="_blank" rel="noopener noreferrer">下载1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ESNHrERy6DJCotXjFJT_5yYBbRzp7AHYujEsbcT4B4ZNCg?e=d1BePF" target="_blank" rel="noopener noreferrer">下载1</a>
         </td>
         <td>
           -
@@ -490,8 +483,7 @@ import TabItem from '@theme/TabItem';
         <td>6.1</td>
         <td>36.4</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYKvmiXvDrZKnyrWpGDKBXMByXVFfgOkbl0NyF3LY8bEWQ?e=ydwLF5" target="_blank" rel="noopener noreferrer">下载1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYKvmiXvDrZKnyrWpGDKBXMByXVFfgOkbl0NyF3LY8bEWQ?e=ydwLF5" target="_blank" rel="noopener noreferrer">下载1</a>
         </td>
         <td>
           -
@@ -501,8 +493,7 @@ import TabItem from '@theme/TabItem';
         <td>6.2</td>
         <td>36.4.3</td>
         <td>
-          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EaZE000_qQJMvjwjHeCNLxsBh7Uip9Gb5taPt5YqH5TMhg?e=Pfup2v" target="_blank" rel="noopener noreferrer">下载1
-          </a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EaZE000_qQJMvjwjHeCNLxsBh7Uip9Gb5taPt5YqH5TMhg?e=Pfup2v" target="_blank" rel="noopener noreferrer">下载1</a>
         </td>
         <td>
           -

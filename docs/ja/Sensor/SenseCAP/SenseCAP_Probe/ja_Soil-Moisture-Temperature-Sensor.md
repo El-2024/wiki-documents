@@ -73,10 +73,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </tr>
 <tr>
 <td class="tg-vkfu">消費電流</td>
-<td class="tg-vkfu">
-<p>最大40mA@24V DC</p>
-<p></p>
-</td>
+<td class="tg-vkfu">最大40mA@24V DC</td>
 </tr>
 <tr>
 <td class="tg-vkfu">動作温度</td>
@@ -92,9 +89,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </tr>
 <tr>
 <td class="tg-vkfu">測定エリア</td>
-<td class="tg-vkfu">
-<p>円柱エリア（プローブを中心とし、直径7cm、高さ7cm）</p>
-</td>
+<td class="tg-vkfu">円柱エリア（プローブを中心とし、直径7cm、高さ7cm）</td>
 </tr>
 <tr>
 <td class="tg-vkfu">プローブ素材</td>
@@ -144,23 +139,15 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <tr><th class="tg-luhj" colspan="2">土壌水分</th></tr>
 <tr>
 <td class="tg-vkfu">範囲</td>
-<td class="tg-vkfu">
-<p>完全に乾燥した状態から完全に飽和した状態まで</p>
-<p>(飽和度の0%から100%まで)</p>
-</td>
+<td class="tg-vkfu">完全に乾燥した状態から完全に飽和した状態まで<br/>(飽和度の0%から100%まで)</td>
 </tr>
 <tr>
 <td class="tg-vkfu">精度</td>
-<td class="tg-vkfu">
-<p>±3% (0~53%)</p>
-<p>±5% (53~100%)</p>
-</td>
+<td class="tg-vkfu">±3% (0~53%)<br/>±5% (53~100%)</td>
 </tr>
 <tr>
 <td class="tg-vkfu">分解能</td>
-<td class="tg-vkfu">
-<p>1%</p>
-</td>
+<td class="tg-vkfu">1%</td>
 </tr>
 </tbody>
 </table>

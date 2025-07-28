@@ -107,7 +107,7 @@ Seeeduino Stalker は、機能が豊富な Arduino 互換のワイヤレスセ�
 
 - **Beeシリーズ**ソケット - 2*10ピン 2.0mmピッチ（これにより、**XBee**、[BluetoothBee](https://seeeddoc.github.io/Bluetooth_Bee/)、**GPSBee**、または[RFBee](https://seeeddoc.github.io/RFbee_V1.1-Wireless_Arduino_compatible_node/)などの**ワイヤレスモジュール**を1つずつ接続可能）。これらのモジュールとの通信はUARTを介して行われます。
 
-- シリアルインターフェース – スペースを節約しコストを削減するため、USB<->シリアル接続はデフォルトでは提供されていません。FT232ベースのUartSBee (title=undefined) または他のUSB-シリアルアダプタを使用してプログラミングやPCとの通信を行うことができます。
+- シリアルインターフェース – スペースを節約しコストを削減するため、USB&lt;-&gt;シリアル接続はデフォルトでは提供されていません。FT232ベースのUartSBee (title=undefined) または他のUSB-シリアルアダプタを使用してプログラミングやPCとの通信を行うことができます。
 
 - ユーザーLEDとスイッチ – LEDとスイッチがオンボードに提供されており、必要に応じてアプリケーションで使用できます。
 

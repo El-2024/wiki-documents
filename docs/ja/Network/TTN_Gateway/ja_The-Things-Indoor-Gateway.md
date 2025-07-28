@@ -173,7 +173,7 @@ The Things Indoor LoRaWAN WiFi Gateway、The Things Network Console、そして 
 
 ### ステップ 1: TTIG ゲートウェイをアクティベートする
 
-* リセットボタン（ゲートウェイの背面、USB-C ポートの隣にある小さなボタン）を 5 秒間押し続け、LED が数回高速で緑<->赤に点滅するまで待ちます。
+* リセットボタン（ゲートウェイの背面、USB-C ポートの隣にある小さなボタン）を 5 秒間押し続け、LED が数回高速で緑↔赤に点滅するまで待ちます。
 * SETUP ボタン（ゲートウェイの上部、LED の隣にあるボタン）を 10 秒間押し続け、LED が高速で赤く点滅するまで待ちます。
 * ゲートウェイは WiFi AP を公開し、その SSID は MINIHUB-xxxxxx（xxxxxx はゲートウェイ ID の最後の 6 桁）です。
 * このネットワークのパスワードは、デバイスの背面パネルに WiFi PW として印刷されています。
@@ -185,12 +185,12 @@ The Things Indoor LoRaWAN WiFi Gateway、The Things Network Console、そして 
 * 「Save and Reboot」オプションを選択します。
 * 設定が正しい場合：
   * ゲートウェイはこのネットワークに接続する間、数秒間緑色に点滅します。
-  * 次に、CUPS エンドポイントに接続して LNS トラフィックエンドポイントに接続するための必要な情報を取得する間、数秒間緑<->赤に点滅します。
+  * 次に、CUPS エンドポイントに接続して LNS トラフィックエンドポイントに接続するための必要な情報を取得する間、数秒間緑↔赤に点滅します。
 * 設定が成功すると、LED が緑色に点灯し、ゲートウェイが LoRaWAN ネットワークに接続され、パケットを処理する準備が整ったことを示します。
 
 ### ステップ 2: TTN コンソールでゲートウェイを登録する
 
-TTN ウェブサイト <https://www.thethingsnetwork.org> にアクセスしてアカウントを作成し、「Console」にアクセスします。最初に「Gateway」をクリックします。
+TTN ウェブサイト [https://www.thethingsnetwork.org](https://www.thethingsnetwork.org) にアクセスしてアカウントを作成し、「Console」にアクセスします。最初に「Gateway」をクリックします。
 
 ![2.1](https://files.seeedstudio.com/products/113990896/wiki/s2.1.png)
 ゲートウェイを登録します：

@@ -31,44 +31,88 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
 
 <html>
     <table>
-		<tr><td colspan="4" bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP Industrial Sensor</strong></font>
-        </td>
+      <tr>
+        <td colspan="4" bgcolor="#0e3c49" align="center"><font color="white" size={4}><strong>SenseCAP Industrial Sensor</strong></font></td>
+      </tr>
+        <tr>
+            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div></td>
+            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2101&S2103.png" /></a></div></td>
+            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2102.png" /></a></div></td>
+            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2101&S2103.png" /></a></div></td>
         </tr>
         <tr>
-            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2100.png" /></a></div>
+            <td bgcolor="#0e3c49" align="center">
+              <a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html" target="_blank">
+                <strong>S2100 <br /> Data Logger</strong>
+              </a>
             </td>
-            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2101&S2103.png" /></a></div>
+            <td bgcolor="#0e3c49" align="center">
+              <a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html" target="_blank">
+                <strong>S2101 <br /> Air Temp & Humidity</strong>
+              </a>
             </td>
-            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2102.png" /></a></div>
+            <td bgcolor="#0e3c49" align="center">
+              <a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html" target="_blank">
+                <strong>S2102 <br /> Light</strong>
+              </a>
             </td>
-            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2101&S2103.png" /></a></div>
-            </td>
-        </tr>
-        <tr>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html"  target="_blank"><strong>S2100 <br /> Data Logger</strong></a>
-            </td>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2101-LoRaWAN-Air-Temperature-and-Humidity-Sensor-p-5354.html"  target="_blank"><strong>S2101 <br /> Air Temp & Humidity</strong></a>
-            </td>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html"  target="_blank"><strong>S2102 <br /> Light</strong></a>
-            </td>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html"  target="_blank"><strong>S2103 <br /> Air Temp & Humidity & CO2</strong></a>
-            </td>
-        </tr>
-        <tr>
-            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2104-LoRaWAN-Soil-Temperature-and-Moisture-Sensor-p-5357.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2104.png" /></a></div>
-            </td>
-            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2105.png" /></a></div>
-            </td>
-            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2110.png" /></a></div>
-            </td>
-            <td bgcolor="#0e3c49"><div align="center"><a href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html" target="_blank"><img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2120.png" /></a></div>
+            <td bgcolor="#0e3c49" align="center">
+              <a href="https://www.seeedstudio.com/SenseCAP-S2103-LoRaWAN-CO2-Temperature-and-Humidity-Sensor-p-5356.html" target="_blank">
+                <strong>S2103 <br /> Air Temp & Humidity & CO2</strong>
+              </a>
             </td>
         </tr>
         <tr>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2104-LoRaWAN-Soil-Temperature-and-Moisture-Sensor-p-5357.html"  target="_blank"><strong>S2104 <br /> Soil Moisture & Temp</strong></a></td>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html"  target="_blank"><strong>S2105 <br /> Soil Moisture & Temp & EC</strong></a></td>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html"  target="_blank"><strong>S2110 <br /> LoRaWAN® Controller</strong></a></td>
-            <td bgcolor="#0e3c49" align="center"><a href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html"  target="_blank"><strong>S2120 <br /> 8-in-1 Weather Station</strong></a></td>
+            <td bgcolor="#0e3c49">
+              <div align="center">
+                <a href="https://www.seeedstudio.com/SenseCAP-S2104-LoRaWAN-Soil-Temperature-and-Moisture-Sensor-p-5357.html" target="_blank">
+                  <img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2104.png" />
+                </a>
+              </div>
+            </td>
+            <td bgcolor="#0e3c49">
+              <div align="center">
+                <a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank">
+                  <img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2105.png" />
+                </a>
+              </div>
+            </td>
+            <td bgcolor="#0e3c49">
+              <div align="center">
+                <a href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank">
+                  <img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2110.png" />
+                </a>
+              </div>
+            </td>
+            <td bgcolor="#0e3c49">
+              <div align="center">
+                <a href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html" target="_blank">
+                  <img width="50%" src="https://files.seeedstudio.com/wiki/K1100_overview/2/S2120.png" />
+                </a>
+              </div>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#0e3c49" align="center">
+              <a href="https://www.seeedstudio.com/SenseCAP-S2104-LoRaWAN-Soil-Temperature-and-Moisture-Sensor-p-5357.html" target="_blank">
+                <strong>S2104 <br /> Soil Moisture & Temp</strong>
+              </a>
+            </td>
+            <td bgcolor="#0e3c49" align="center">
+              <a href="https://www.seeedstudio.com/SenseCAP-S2105-LoRaWAN-Soil-Temperature-Moisture-and-EC-Sensor-p-5358.html" target="_blank">
+                <strong>S2105 <br /> Soil Moisture & Temp & EC</strong>
+              </a>
+            </td>
+            <td bgcolor="#0e3c49" align="center">
+              <a href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank">
+                <strong>S2110 <br /> LoRaWAN® Controller</strong>
+              </a>
+            </td>
+            <td bgcolor="#0e3c49" align="center">
+              <a href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html" target="_blank">
+                <strong>S2120 <br /> 8-in-1 Weather Station</strong>
+              </a>
+            </td>
         </tr>
     </table>
 </html>
@@ -81,8 +125,10 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100-quickstart/" target="_blank">Inicio Rápido con SenseCAP - K1100</a>
-      </li></ul>
+      <li>
+        <a href="https://wiki.seeedstudio.com/K1100-quickstart/" target="_blank">Inicio Rápido con SenseCAP - K1100</a>
+      </li>
+    </ul>
   </div>
   <h3>
     <span className="headline" id="Microsoft Azure IoT">Microsoft Azure IoT</span>
@@ -121,8 +167,10 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
       <li><a href="https://sensecap-docs.seeed.cc/introduction.html" target="_blank">Centro de Documentación SenseCAP</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100_sensecap_node-red/" target="_blank">Consola SenseCAP con Node-RED Inicio Rápido</a>
-      </li></ul>
+      <li>
+        <a href="https://wiki.seeedstudio.com/K1100_sensecap_node-red/" target="_blank">Consola SenseCAP con Node-RED Inicio Rápido</a>
+      </li>
+    </ul>
     <ul>
       <li><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_Azure_IoT_Central/" target="_blank">Conectar SenseCAP a Azure IoT Central vía Node-RED</a></li>
     </ul>
@@ -305,7 +353,9 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
 <html>
     <table>
         <tr>
-            <td align="left">En este tutorial, nos gustaría que comenzaras revisando nuestra sección de la <strong>Guía de Inicio Rápido</strong>. Aprende sobre la extraordinaria presentación de datos de nuestro kit y la facilidad de uso de sus funciones de IoT. En este capítulo, podrás experimentar la diversión de la recopilación y el procesamiento de datos con nuestro proyecto de código abierto en el menor tiempo posible. Además, puedes transferir los datos recopilados a diferentes plataformas mediante WiFi o LoRa®.<br /><br /><a href="https://wiki.seeedstudio.com/K1100-quickstart/">Ir al capítulo &gt;</a>
+            <td align="left">
+              En este tutorial, nos gustaría que comenzaras revisando nuestra sección de la <strong>Guía de Inicio Rápido</strong>. Aprende sobre la extraordinaria presentación de datos de nuestro kit y la facilidad de uso de sus funciones de IoT. En este capítulo, podrás experimentar la diversión de la recopilación y el procesamiento de datos con nuestro proyecto de código abierto en el menor tiempo posible. Además, puedes transferir los datos recopilados a diferentes plataformas mediante WiFi o LoRa®.<br /><br />
+              <a href="https://wiki.seeedstudio.com/K1100-quickstart/">Ir al capítulo &gt;</a>
             </td>
             <td>
                 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/K1100_overview/1.png" /></div>
@@ -324,7 +374,10 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
 <table>
     <tbody>
         <tr>
-            <td colSpan={2}>Para facilitar a nuestros usuarios la conexión de datos desde la plataforma SenseCAP hacia diversas plataformas PaaS para un procesamiento de datos más profundo, realizaremos una serie de tutoriales para SenseCAP &amp; Node-RED.<br /><br /><a href="https://wiki.seeedstudio.com/K1100-quickstart/">Ir al capítulo &gt;</a></td>
+            <td colSpan={2}>
+              Para facilitar a nuestros usuarios la conexión de datos desde la plataforma SenseCAP hacia diversas plataformas PaaS para un procesamiento de datos más profundo, realizaremos una serie de tutoriales para SenseCAP &amp; Node-RED.<br /><br />
+              <a href="https://wiki.seeedstudio.com/K1100-quickstart/">Ir al capítulo &gt;</a>
+            </td>
             <td>
                 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/K1100_overview/1.png" /></div>
             </td>
@@ -378,7 +431,8 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
 <table>
     <tbody>
         <tr>
-            <td colspan={2}>Microsoft Azure IoT es una colección de servicios en la nube gestionados por Microsoft que conectan, monitorean y controlan miles de millones de dispositivos IoT. Incluye seguridad y sistemas operativos para dispositivos y equipos, junto con datos y análisis que ayudan a las empresas a construir, desplegar y gestionar aplicaciones IoT.
+            <td colspan={2}>
+              Microsoft Azure IoT es una colección de servicios en la nube gestionados por Microsoft que conectan, monitorean y controlan miles de millones de dispositivos IoT. Incluye seguridad y sistemas operativos para dispositivos y equipos, junto con datos y análisis que ayudan a las empresas a construir, desplegar y gestionar aplicaciones IoT.
             </td>
             <td>
                 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/K1100/microsoft-azure.png" /></div>
@@ -454,7 +508,8 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
 <table>
     <tbody>
         <tr>
-            <td colSpan={3}>Si eres un ingeniero interesado en hardware/software o llevas años en la industria, puedes comenzar tu recorrido de descubrimiento con nuestra sección de <strong>Arduino</strong>. No tienes que preocuparte por el contenido en la nube. Los tutoriales fáciles de entender te permitirán completar varios proyectos IoT con un costo mínimo de tiempo.
+            <td colSpan={3}>
+              Si eres un ingeniero interesado en hardware/software o llevas años en la industria, puedes comenzar tu recorrido de descubrimiento con nuestra sección de <strong>Arduino</strong>. No tienes que preocuparte por el contenido en la nube. Los tutoriales fáciles de entender te permitirán completar varios proyectos IoT con un costo mínimo de tiempo.
             </td>
         </tr>
         <tr>

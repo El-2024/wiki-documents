@@ -85,7 +85,7 @@ Wio Trackerを「ソリューション」と呼ぶ理由は、それが単なる
 || オーディオ | エコーキャンセル、ノイズ除去 |
 || Bluetooth | Bluetooth 3.0: SPP, HFP-AG |
 | GNSS | システム | GPS L1 1575.42MHz, BeiDou B1 1561.10MHz |
-|| 精度 | <2.5 m CEP |
+|| 精度 | &lt;2.5 m CEP |
 || 技術 | EASY/LOCUS/AlwaysLocate/EPO/GLP/AIC |
 | 周辺機器 | Grove | 2 x Grove デジタルポート |
 ||| 2 x アナログポート |

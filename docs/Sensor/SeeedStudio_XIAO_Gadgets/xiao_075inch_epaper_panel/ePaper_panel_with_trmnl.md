@@ -19,8 +19,7 @@ last_update:
 <br></br>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
 </div>
 
 
@@ -103,58 +102,36 @@ To get your XIAO 7.5" ePaper Panel working with TRMNL, you need to flash the app
 
 1. **Go to the TRMNL Web Flasher**
 
+:::tip
+Please use **FW 1.5.12** or newer firmware for Seeed compatibility.
+:::
+
    - Visit [https://usetrmnl.com/flash](https://usetrmnl.com/flash)
    - This tool allows you to flash your device directly from your browser.
    - Follow the on-screen instructions to complete the flashing process.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/224.png" style={{width:700, height:'auto'}}/></div>
 
----
-
-#### Method 2: Flash Pre-built Firmware
-
-1. **Download the Firmware Package**
-
-   - Download the latest firmware zip from [here](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/res/TRMNL_XIAO_7.5inch_epaper_panel_1.5.4.zip).
-
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/res/TRMNL_XIAO_7.5inch_epaper_panel_1.5.4.zip"><strong><span><font color={'FFFFFF'} size={"4"}> Download Firmware 🖱️</font></span></strong>
-    </a>
-</div>
-
-2. **Extract the Files**
-
-   - Unzip the downloaded file. You should see the following files:
-     - `bootloader.bin`
-     - `partitions.bin`
-     - `boot_app0.bin`
-     - `firmware.bin`
-
-3. **Connect Your Device**
-
-   - Plug your XIAO 7.5" ePaper Panel (with XIAO ESP32-C3) into your computer via USB.
-
-4. **Flash the Firmware**
-
-   - Open a terminal in the folder containing the extracted `.bin` files.
-   - Run the following command:
-
-     ```
-     esptool.py --chip esp32c3 --baud 460800 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size 4MB 0x0000 bootloader.bin 0x8000 partitions.bin 0xe000 boot_app0.bin 0x10000 firmware.bin
-     ```
-
-   - Wait for the process to complete. After the programme has been uploaded, you may need to click the Reset button to reboot the device.
-
----
-
-#### Method 3: Build and Flash from Source (For Advanced Users/Developers)
+#### Method 2: Build and Flash from Source (For Advanced Users/Developers)
 
 1. **Clone the Firmware Repository**
 
-   - Visit the [official TRMNL firmware repository](https://github.com/usetrmnl/firmware) and clone it:
-     ```
-     git clone https://github.com/usetrmnl/firmware.git
-     ```
+  - Visit the [official firmware repository](https://github.com/usetrmnl/trmnl-firmware) and clone it:
+
+    ```
+    git clone https://github.com/usetrmnl/trmnl-firmware.git
+    ```
+
+:::tip
+
+There are times when we update our code and need to submit PR to TRMNL and review it before it is displayed, if you want to be the first to use the latest firmware version, you can also use the TRMNL repository under Seeed Project.
+
+  - Visit the [Seeed repository](https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project) and clone it:
+  
+    ```
+    git clone https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project.git
+    ```
+:::
 
 2. **Install PlatformIO**
 
@@ -208,7 +185,7 @@ To use your XIAO 7.5" ePaper Panel with TRMNL and send playlists, you first need
 ### Open the Captive Portal
 
 - Once connected, open a web browser (such as Chrome or Edge).
-- The device should automatically redirect you to the TRMNL configuration page. If it does not, manually visit [http://192.168.4.1](http://192.168.4.1) in your browser.
+- The device should automatically redirect you to the TRMNL configuration page. If it does not, manually visit [http://4.3.2.1](http://4.3.2.1) in your browser.
 
 ### Enter Your Wi-Fi Credentials
 

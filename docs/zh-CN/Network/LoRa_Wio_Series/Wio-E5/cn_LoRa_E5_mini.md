@@ -21,8 +21,7 @@ last_update:
 <!-- <p style="text-align:center"><a href="https://www.seeedstudio.com/LoRa-E5-mini-STM32WLE5JC-p-4869.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now.png" border=0 /></a></p> -->
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRa-E5-mini-STM32WLE5JC-p-4869.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRa-E5-mini-STM32WLE5JC-p-4869.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong></a>
 </div>
 
 > LoRaWAN® 是 LoRa Alliance® 授权使用的标志。
@@ -217,7 +216,7 @@ AT 指令固件包含一个用于 DFU 的引导加载程序和 AT 应用程序�
 | 指令格式 | 返回值 | 描述 |
 | --- | --- | --- |
 | AT | +AT: OK | 测试指令 |
-| AT+VER | +VER: $MAJOR.$MINOR.$PATCH <br></br> +VER: 4.0.11 | 检查固件版本 |
+| AT+VER | +VER: \$MAJOR.\$MINOR.\$PATCH <br></br> +VER: 4.0.11 | 检查固件版本 |
 | AT+ID // 读取所有，DevAddr( ABP)、DevEui( OTAA)、AppEui( OTAA)<br></br>AT+ID = DevAddr // 读取设备地址<br></br>AT+ID = DevEui // 读取 DevEui<br></br>AT+ID = AppEui // 读取 AppEui | +ID: DevAddr, xx: xx: xx:xx<br></br>+ID: DevEui, xx:xx:xx:xx:xx:xx:xx:xx<br></br>+ID: AppEui13, xx:xx:xx:xx:xx:xx:xx | 用于检查 LoRaWAN 模块的 ID。ID 被视为大端数字。 |
 | AT+ID = DevAddr, “01234567” // 设置新的 DevAddr<br></br>AT+ID = DevEui, “0123456789ABCDEF” // 设置新的 DevEui<br></br>AT+ID = AppEui, “0123456789ABCDEF” // 设置新的 AppEui | +ID: DevAddr, 01:23:45:67<br></br>+ID: DevEui, 01:23:45:67:89:AB:CD:EF<br></br>+ID: AppEui, 01:23:45:67:89:AB:CD:EF | 更改 ID |
 | AT+RESET | +RESET: OK | 重置模块 |

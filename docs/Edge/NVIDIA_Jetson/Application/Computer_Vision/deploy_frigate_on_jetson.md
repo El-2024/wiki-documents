@@ -332,7 +332,7 @@ docker ps
 Once Frigate is up and running, you can access the web interface to monitor video feeds and configure settings:
 
 1.  Open a Web Browser: On a device connected to the same network as your Jetson device, open a web browser.
-2.  Enter the Jetson Device's IP Address: In the address bar, enter the IP address of your Jetson device followed by the port 5000 (e.g., http://<jetson-ip-address or 127.0.0.1>:5000).
+2.  Enter the Jetson Device's IP Address: In the address bar, enter the IP address of your Jetson device followed by the port 5000 (e.g., `http://jetson-ip-address:5000` or `http://127.0.0.1:5000`).
 3. View the Dashboard: The Frigate dashboard will display live video feeds from the connected Dahua IP camera(s), detection events, and configuration options.
 4.  Now you can check the Jetson is using GPU for detection with jtop or in frigate system. below we can see the detection part is running about 33ms for each frame.
 

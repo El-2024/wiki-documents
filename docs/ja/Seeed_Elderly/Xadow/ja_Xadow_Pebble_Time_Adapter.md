@@ -10,8 +10,8 @@ last_update:
   author: shuxu hu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Pebble_Time_Adapter/img/Xadow_Pebble_Time_Adapter_wiki.png)
@@ -43,7 +43,7 @@ Pebble Time 用 Xadow アプリのダウンロード
 
 Pebble Time 用 Xadow アプリをダウンロードし、GPS 情報やタグ ID にアクセスする手順に従うことができます。
 
-デモアプリは <https://github.com/Seeed-Studio/Xadow_Strap/raw/master/build/pebbleapp_jack.pbw> からダウンロードできます。スマートフォンからダウンロードするか、PC からスマートフォンに送信してください。その後、スマートフォンの「Pebble Time」アプリで開くオプションを選択します。デモアプリを Pebble Time にインストールするオプションが表示されます。
+デモアプリは [こちら](https://github.com/Seeed-Studio/Xadow_Strap/raw/master/build/pebbleapp_jack.pbw) からダウンロードできます。スマートフォンからダウンロードするか、PC からスマートフォンに送信してください。その後、スマートフォンの「Pebble Time」アプリで開くオプションを選択します。デモアプリを Pebble Time にインストールするオプションが表示されます。
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Pebble_Time_Adapter/img/Xadow_Pebble_Time_Adapter_APP_UI.png)
 
@@ -52,7 +52,7 @@ Pebble Time 用 Xadow アプリをダウンロードし、GPS 情報やタグ ID
 
 ### アダプターとの通信
 
-アダプターのファームウェアは、Pebble の公式ドキュメントで説明されているプロトコルを実装しています：<http://developer.getpebble.com/guides/hardware/smartstrap-protocol/>
+アダプターのファームウェアは、Pebble の公式ドキュメントで説明されているプロトコルを実装しています：[Smartstrap Protocol](http://developer.getpebble.com/guides/hardware/smartstrap-protocol/)
 
 したがって、ウォッチアプリ側から呼び出すことができるリソースは以下の通りです：
 
@@ -155,13 +155,13 @@ Pebble Time 用 Xadow アプリをダウンロードし、GPS 情報やタグ ID
 </tbody>
 </table>
 
-デモ Pebble アプリのソースコードは以下の GitHub リンクからダウンロードできます：<https://github.com/Seeed-Studio/Xadow_Strap>
+デモ Pebble アプリのソースコードは以下の GitHub リンクからダウンロードできます：[Xadow_Strap](https://github.com/Seeed-Studio/Xadow_Strap)
 
 このアプリは部分的な属性呼び出しのデモンストレーション用です。GPS、NFC などの機能を活用して、独自の素晴らしい Pebble アプリを自由に想像してください。
 
 ### アダプタのプログラミング
 
-アダプタは LPC11U35 を使用して構築されており、内部で mbed ソフトウェアを実行しています。初期ファームウェアは mbed.org にあります。以下をご覧ください：<https://developer.mbed.org/teams/Seeed/code/xadow_smartstrap_for_pebble/>
+アダプタは LPC11U35 を使用して構築されており、内部で mbed ソフトウェアを実行しています。初期ファームウェアは mbed.org にあります。以下をご覧ください：[mbed.org](https://developer.mbed.org/teams/Seeed/code/xadow_smartstrap_for_pebble/)
 
 アダプタの Eagle 回路図は以下からダウンロードできます：[こちら](https://files.seeedstudio.com/wiki/Xadow_Pebble_Time_Adapter/res/Xadow_Pebble_Time_Adapter.rar)
 

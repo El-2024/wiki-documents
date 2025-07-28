@@ -121,7 +121,7 @@ last_update:
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/profile4.png" alt="pir" width={800} height="auto" /></p>
 
-### 添加目标
+### 添加目标 {#add-destination}
 
 导航到 `Devices` > `Destination`，点击 `Add destination`。
 
@@ -244,6 +244,6 @@ T1000 Tracker 的原始负载从 `t1000-raw` 发布，解码后的数据从 `tra
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/dataview2.png" alt="pir" width={800} height="auto" /></p>
 
-## 资源
+## 资源 {#resource}
 
 [SenseCAP T1000 Tracker 解码器用于 AWS](https://github.com/Seeed-Solution/SenseCAP-Decoder/blob/main/T1000/AWS/SenseCAP_T1000_AWS_Decoder.js)

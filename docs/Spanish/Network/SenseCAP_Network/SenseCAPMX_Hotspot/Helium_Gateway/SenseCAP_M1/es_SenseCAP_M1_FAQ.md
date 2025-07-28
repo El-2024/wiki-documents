@@ -97,9 +97,9 @@ Esto puede variar dependiendo del entorno: más cerca en ciudades densas y más 
 **¿Hay tarifas adicionales para configurar el SenseCAP M1?**
 -------------------------------------------------------------
 
-Sí. El dispositivo incluye una tarifa de activación de **$40 USD**, y una tarifa de **$10 USD** para establecer la ubicación en la app de Helium.
+Sí. El dispositivo incluye una tarifa de activación de **\$40 USD**, y una tarifa de **\$10 USD** para establecer la ubicación en la app de Helium.
 
-Solo pagarás tarifas adicionales si vuelves a establecer una nueva ubicación después de la primera vez, lo cual cuesta aproximadamente $10 USD. Consulta la página de **tarifas de transacción de Helium** para más detalles.
+Solo pagarás tarifas adicionales si vuelves a establecer una nueva ubicación después de la primera vez, lo cual cuesta aproximadamente \$10 USD. Consulta la página de **tarifas de transacción de Helium** para más detalles.
 
 * * *
 

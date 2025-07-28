@@ -64,22 +64,22 @@ In the terminal demo, the following data frames are used for transmission：
 **Note**: The following commands are for reference only, of course you can also define your own commands.
 
 
-| PKT_TYPE  | DIR	 | Notes  |
+| PKT_TYPE  | DIR\t | Notes  |
 |:----------|:----------|:----------|
-| 0x00    | ESP32<->RP2040    |   ACK, string, value:'ACK'  |
-| 0xA0    | ESP32->RP2040    |  Collect Interval CMD, PKT_PARA is uint32_t |
-| 0xA1    | ESP32->RP2040    |  Beep on CMD, PKT_PARA is uint32_t   |
-| 0xA2    | ESP32->RP2040    |  Beep off CMD, PKT_PARA is uint32_t  |
-| 0xA3    | ESP32->RP2040    |  Shutdown CMD, PKT_PARA is uint32_t  |
-| 0xA4    | ESP32->RP2040    |  Power On CMD, PKT_PARA is uint32_t  |
-| 0xA0~0xAF  | ESP32->RP2040    |  Other data or cmd   |
-| 0xB0    | RP2040->ESP32    | SCD41 Temperature data, PKT_PARA is float    |
-| 0xB1    | RP2040->ESP32    | SCD41 Humidity data, PKT_PARA is float    |
-| 0xB2    | RP2040->ESP32    | SCD41 CO2 data, PKT_PARA is float    |
-| 0xB3    | RP2040->ESP32    | ATH20 Temperature data, PKT_PARA is float    |
-| 0xB4    | RP2040->ESP32    | ATH20 Humidity data, PKT_PARA is float    |
-| 0xB5    | RP2040->ESP32    | SGP40 tVOC data, PKT_PARA is float. 0~500 index   |
-| 0xB6~0xBF    | RP2040->ESP32    | Other data or cmd, PKT_PARA is float    |
+| 0x00    | ESP32↔RP2040    |   ACK, string, value:'ACK'  |
+| 0xA0    | ESP32→RP2040    |  Collect Interval CMD, PKT_PARA is uint32_t |
+| 0xA1    | ESP32→RP2040    |  Beep on CMD, PKT_PARA is uint32_t   |
+| 0xA2    | ESP32→RP2040    |  Beep off CMD, PKT_PARA is uint32_t  |
+| 0xA3    | ESP32→RP2040    |  Shutdown CMD, PKT_PARA is uint32_t  |
+| 0xA4    | ESP32→RP2040    |  Power On CMD, PKT_PARA is uint32_t  |
+| 0xA0～0xAF  | ESP32→RP2040    |  Other data or cmd   |
+| 0xB0    | RP2040→ESP32    | SCD41 Temperature data, PKT_PARA is float    |
+| 0xB1    | RP2040→ESP32    | SCD41 Humidity data, PKT_PARA is float    |
+| 0xB2    | RP2040→ESP32    | SCD41 CO2 data, PKT_PARA is float    |
+| 0xB3    | RP2040→ESP32    | ATH20 Temperature data, PKT_PARA is float    |
+| 0xB4    | RP2040→ESP32    | ATH20 Humidity data, PKT_PARA is float    |
+| 0xB5    | RP2040→ESP32    | SGP40 tVOC data, PKT_PARA is float. 0～500 index   |
+| 0xB6～0xBF    | RP2040→ESP32    | Other data or cmd, PKT_PARA is float    |
 
 
 

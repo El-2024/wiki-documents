@@ -56,74 +56,13 @@ sku:    103020016
 ## 仕様
 
 ---
-<table  cellspacing="0" width="80%">
-<tr>
-<th colspan="2" scope="col"> 項目
-</th>
-<th scope="col"> 最小値
-</th>
-<th scope="col"> 典型値
-</th>
-<th scope="col"> 最大値
-</th>
-<th scope="col"> 単位
-</th></tr>
-<tr>
-<th colspan="2" scope="row"> 動作電圧
-</th>
-<td> 2.7
-</td>
-<td> 5.0
-</td>
-<td> 36
-</td>
-<td> VDC
-</td></tr>
-<tr>
-<th colspan="2" scope="row"> 入力電圧
-
-</th>
-<td> 0.1
-</td>
-<td> \
-</td>
-<td> (Vcc-0.8)/ゲイン
-</td>
-<td> mV
-</td></tr>
-<tr>
-<th colspan="2" scope="row"> 出力電圧
-</th>
-<td> 0
-</td>
-<td> \
-</td>
-<td> Vcc-0.80
-</td>
-<td> mV
-</td></tr>
-<tr>
-<th rowspan="2"> ゲイン
-</th>
-<td> 304選択時
-</td>
-<td> 297.92
-</td>
-<td> 304
-</td>
-<td> 310.08
-</td>
-<td colspan="2" rowspan="2"> /
-</td></tr>
-<tr>
-<td> 971選択時
-</td>
-<td> 951.58
-</td>
-<td> 971
-</td>
-<td> 990.42
-</td></tr></table>
+| 項目 | | 最小値 | 典型値 | 最大値 | 単位 |
+|------|---|--------|--------|--------|------|
+| 動作電圧 | | 2.7 | 5.0 | 36 | VDC |
+| 入力電圧 | | 0.1 | \ | (Vcc-0.8)/ゲイン | mV |
+| 出力電圧 | | 0 | \ | Vcc-0.80 | mV |
+| ゲイン | 304選択時 | 297.92 | 304 | 310.08 | / |
+| | 971選択時 | 951.58 | 971 | 990.42 | / |
 
 ## インターフェース機能
 

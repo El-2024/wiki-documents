@@ -22,60 +22,54 @@ sku:    103030027
 
 ![](https://files.seeedstudio.com/wiki/Wifi_Shield_Fi250_V1.1/img/Fi250_board1.jpg)
 
-Wifi Shield (Fi250) V1.1 is a economic internet solution with Arduino. The Wi-Fi module support IEEE 802.11b/g/n mode, maximum speed up to 65Mbit/s. Wifi Shield (Fi250) V1.1 combine on board antenna; it’s easy to build you project in a small box. The module reserve a UFL connector, you can use an extra antenna to improve the signal range. There is a key on the board, just push one time to change wifi shield as AP mode. The module have a computer interface software, you can control and upgrade the module via USB-UART convertor.
-The wifi shield contain a Micro SD card socket, it’s like a recorder when wifi shield working as TCP, UDP server.
+Wifi Shield (Fi250) V1.1 is a economic internet solution with Arduino. The Wi-Fi module support IEEE 802.11b/g/n mode, maximum speed up to 65Mbit/s. Wifi Shield (Fi250) V1.1 combine on board antenna; it's easy to build you project in a small box. The module reserve a UFL connector, you can use an extra antenna to improve the signal range. There is a key on the board, just push one time to change wifi shield as AP mode. The module have a computer interface software, you can control and upgrade the module via USB-UART convertor.
+The wifi shield contain a Micro SD card socket, it's like a recorder when wifi shield working as TCP, UDP server.
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Wifi-Shield-(Fi250)-V1.1-p-2449.html)
 
 ## Specifications
 
 ---
-<table  cellpadding="1" cellspacing="1" width="555">
-<tr>
-<td> Module
-</td>
-<td>WIZnet FI250
-</td></tr>
-<tr>
-<td> Operating Voltage
-</td>
-<td> 5V or 3.3V (Auto select)
-</td></tr>
-<tr>
-<td> Current
-</td>
-<td> 300mA (maximum)
-</td></tr>
-<tr>
-<td>Single band
-</td>
-<td>2.4GHz IEEE 802.11b/g/n
-</td></tr>
-<tr>
-<td>Antenna
-</td>
-<td>On board PCB antenna (reserver UFL connector)
-</td></tr>
-<tr>
-<td>Memory
-</td>
-<td>1MB Flash Memory, 128KB SRAM, 1MB Serial Flash
-</td></tr>
-<tr>
-<td>Interface
-</td>
-<td>UART(default)/SPI(upgrade firmware)
-</td></tr>
-<tr>
-<td>Dimensions
-</td>
-<td>69.0x53.5x23.5 mm
-</td></tr>
-<tr>
-<td>Weight
-</td>
-<td>
-</td></tr></table>
+<table cellpadding="1" cellspacing="1" width="555">
+  <tbody>
+    <tr>
+      <td>Module</td>
+      <td>WIZnet FI250</td>
+    </tr>
+    <tr>
+      <td>Operating Voltage</td>
+      <td>5V or 3.3V (Auto select)</td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td>300mA (maximum)</td>
+    </tr>
+    <tr>
+      <td>Single band</td>
+      <td>2.4GHz IEEE 802.11b/g/n</td>
+    </tr>
+    <tr>
+      <td>Antenna</td>
+      <td>On board PCB antenna (reserver UFL connector)</td>
+    </tr>
+    <tr>
+      <td>Memory</td>
+      <td>1MB Flash Memory, 128KB SRAM, 1MB Serial Flash</td>
+    </tr>
+    <tr>
+      <td>Interface</td>
+      <td>UART(default)/SPI(upgrade firmware)</td>
+    </tr>
+    <tr>
+      <td>Dimensions</td>
+      <td>69.0x53.5x23.5 mm</td>
+    </tr>
+    <tr>
+      <td>Weight</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Usage
 

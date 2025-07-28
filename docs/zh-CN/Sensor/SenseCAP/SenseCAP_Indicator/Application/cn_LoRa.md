@@ -375,7 +375,7 @@ void loop() {
 #### 第 3.1 步：实现你的 Payload 解码器
 
 <Tabs>
-  <Tabitem value="Indicator/main/Frame/frame.h">
+  <TabItem value="Indicator/main/Frame/frame.h">
 
   ```cpp
     #ifndef __SIMPLE_FRAME_H
@@ -413,8 +413,8 @@ void loop() {
     #endif
   ```
 
-  </Tabitem>
-  <Tabitem value="Indicator/main/Frame/frame.c">
+  </TabItem>
+  <TabItem value="Indicator/main/Frame/frame.c">
 
   ```cpp
     #include "frame.h"
@@ -477,7 +477,7 @@ void loop() {
         return crc & 0xFFFF;
     }
   ```
-  </Tabitem>
+  </TabItem>
 </Tabs>
 
 #### 第 3.2 步：实现传感器数据结构

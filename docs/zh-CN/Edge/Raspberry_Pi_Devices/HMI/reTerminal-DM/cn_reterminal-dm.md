@@ -1366,6 +1366,8 @@ lsusb
 
 ```sh
 sudo dmesg | grep 5740
+# Load ACM module
+sudo modprobe cdc_acm
 ```
 
 接着可以获取设备端口，如下所示：

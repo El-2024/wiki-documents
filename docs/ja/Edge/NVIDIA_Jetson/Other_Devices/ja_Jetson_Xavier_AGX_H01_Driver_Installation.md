@@ -32,8 +32,7 @@ tags:
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/first_1.png" /></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Jetson-Xavier-AGX-H01-Kit-p-5283.html"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Jetson-Xavier-AGX-H01-Kit-p-5283.html"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
 </div>
 
 
@@ -124,14 +123,14 @@ Jetson Xavier AGX H01 を Type-C データ転送ケーブルを使用して Ubun
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver4.png" /></div>
 
 
-- **ステップ 2**. ホスト PC に追加のインストールファイル <H01_Drivers> を[ダウンロード](https://files.seeedstudio.com/wiki/H01Driver/H01_Driver.zip)します。
+- **ステップ 2**. ホスト PC に追加のインストールファイル `<H01_Drivers>` を[ダウンロード](https://files.seeedstudio.com/wiki/H01Driver/H01_Driver.zip)します。
 
-ステップ 1 でダウンロードしたファイルを <H01_Drivers> と同じフォルダーに移動します。これで、同じフォルダーに3つの解凍済みファイルが表示されます。
+ステップ 1 でダウンロードしたファイルを `<H01_Drivers>` と同じフォルダーに移動します。これで、同じフォルダーに3つの解凍済みファイルが表示されます。
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01drivera.png" /></div>
 
 
-- **ステップ 3**. <AGX_H01_Drivers.zip> ファイルを解凍します。
+- **ステップ 3**. `<AGX_H01_Drivers.zip>` ファイルを解凍します。
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver1b.png" /></div>
 
@@ -157,7 +156,7 @@ $ sudo  ./apply_binaries.sh
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/recomputerzhongwen/agx0.png" /></div>
 
 
-- **ステップ 5**. ダウンロードした <H01_Driver> ファイルから解凍済みの <Jetson_Linux_R32.6.1_aarch64.tbz2> ファイルにコピー＆ペーストします。
+- **ステップ 5**. ダウンロードした `<H01_Driver>` ファイルから解凍済みの `<Jetson_Linux_R32.6.1_aarch64.tbz2>` ファイルにコピー＆ペーストします。
 
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/H01Driver/h01driver6.png" /></div>

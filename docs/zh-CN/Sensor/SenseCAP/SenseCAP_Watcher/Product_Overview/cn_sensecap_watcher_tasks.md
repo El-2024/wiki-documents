@@ -47,7 +47,7 @@ Watcher 是一个强大的工具，它依赖用户发出的命令来执行各种
 
 SenseCAP Watcher 是首个用于智能场所的物理 LLM 代理，能够监控场景、触发动作并基于命令进行交互。此视频将介绍 SenseCAP Watcher 如何根据任务分析选择场景触发模型：设备端模型和 LLM 模型。我们还将展示如何配置 RGB 灯、显示与声音警报，以及通知推送模式：APP、UART、HTTP。
 
-## 任务的概念
+## 任务的概念 {#concept-of-the-task}
 
 要开始使用 Watcher，并让 Watcher 能够理解您希望它执行的任务，您需要阅读本文关于任务以及任务设置的注意事项。
 
@@ -87,7 +87,7 @@ Watcher 任务由三个主要组成部分构成：
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/local-app.png" style={{width:1000, height:'auto'}}/></div>
 
-### Watcher 基于云的 LLM 服务
+### Watcher 基于云的 LLM 服务 {#pure-llm-mode}
 
 #### 纯云端 LLM 服务
 
@@ -200,7 +200,7 @@ Watcher 设备的第三种操作模式是本地 AI 服务和基于云的 LLM 服
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/workflow.png" style={{width:1000, height:'auto'}}/></div>
 
-### 输入任务
+### 输入任务 {#type-the-task}
 
 每个 Watcher 设备在 SenseCraft APP 中都有一个专属的聊天窗口。要向特定的 Watcher 下发命令，请导航到其聊天窗口，并使用输入框输入您想要的命令。您可以手动输入命令，也可以使用键盘的语音输入功能以提高便利性。
 

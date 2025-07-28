@@ -474,8 +474,8 @@ Brett Hagman の GitHub リポジトリ "[Tone](https://github.com/bhagman/Tone)
 
 - チルトスイッチは信号入力モジュールです。
 - チルトスイッチの操作方法。
-- `digitalRead(pin)` 関数を使用してチルトスイッチから入力ロジック信号を取得します（オンの場合は HIGH、オフの場合は LOW）。
-- `if(condition){}else{}` 関数と比較演算子（!=、<、<=、==、>、>= など）の使用方法。
+- `digitalRead(pin)` 関数を使用してチルトスイッチから入力ロジック信号を取得します（オンの場合は HIGH オフの場合は LOW）。
+- `if(condition){}else{}` 関数と比較演算子（`!= < <= == > >=` など）の使用方法。
 
 **ハードウェア要件**
 
@@ -523,7 +523,7 @@ void loop()
 { 
   // 傾きスイッチの入力を読み取る
   val = digitalRead(tiltswitchPin);
-  // 傾きスイッチの状態を表示する。1はオン、0はオフ。
+  // 傾きスイッチの状態を表示する。1はオン 0はオフ。
   Serial.println(val);
 }
 ```
@@ -613,7 +613,7 @@ int melody[] = {
   NOTE_AS4, NOTE_AS4, NOTE_A4, NOTE_F4, NOTE_G4, NOTE_F4
 };
 
-// 音符の長さ: 4 = 4分音符, 8 = 8分音符など:
+// 音符の長さ: 4 = 4分音符 8 = 8分音符など:
 int noteDurations[] = {
   8, 8, 4, 4, 4, 2,
   8, 8, 4, 4, 4, 2,
@@ -642,8 +642,8 @@ void loop()
   if (HIGH == digitalRead(tiltSwitch)) {
 
     for (int thisNote = currentNote ; thisNote < 25 ; thisNote++) {
-      // 音符の長さを計算するには、1秒を音符の種類で割る。
-      // 例: 4分音符 = 1000 / 4, 8分音符 = 1000 / 8など。
+      // 音符の長さを計算するには 1秒を音符の種類で割る。
+      // 例: 4分音符 = 1000 / 4 8分音符 = 1000 / 8など。
       int noteDuration = 1000 / noteDurations[thisNote];
       tone(buzzer, melody[thisNote], noteDuration);
 
@@ -651,29 +651,27 @@ void loop()
       int pauseBetweenNotes = noteDuration * 1.30;
       delay(pauseBetweenNotes);
 
-      /* 音楽が終了した場合、currentNoteを0にリセット */
+      // 音楽が終了した場合、currentNoteを0にリセット
       if (thisNote >= 24) {
         currentNote = 0;
       }
 
-      /* 音楽再生中に傾きスイッチの状態を読み取り、
-      傾きスイッチの論理レベルがLOWの場合、
-      音楽再生を停止し、前回再生した音符を保存し、
-      次の音符に移動 */
+      // 音楽再生中に傾きスイッチの状態を読み取り
+      // 傾きスイッチがLOWの場合 音楽再生を停止し 前回再生した音符を保存し
+      // 次の音符に移動
       if (LOW == digitalRead(tiltSwitch)) {
 
         // 現在の音符(thisNote)をcurrentNoteに保存
         currentNote = thisNote;
         // currentNoteを1増加させて次の音符を再生準備
         currentNote++;
-        /* 音楽が終了した場合、currentNoteを
-        最初にリセット */
+        // 音楽が終了した場合にcurrentNoteを最初にリセット
         if (currentNote >= 25)
         {
           // 音楽を最初から再開するためにcurrentNoteを0にリセット
           currentNote = 0;
         }
-        // 傾きスイッチが論理レベルLOWに設定されている場合、音楽再生を停止
+        // 傾きスイッチがLOWなら音楽再生を停止
         break;
       }
     }

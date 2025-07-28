@@ -132,7 +132,7 @@ Please plug the USB cable， Doppler Radar Interface into Seeed Studio XIAO expa
 If this is the first time you work with Arduino, we strongly recommend you to see [Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) before the start.
 :::
 
-- **Step 1.** Download the [Demo code](https://files.seeedstudio.com/wiki/Grove-Doppler-Radar/Seeed_Arduino_DopplerRadar.rar).
+- **Step 1.** Download the [Demo code](https://github.com/Seeed-Studio/Seeed_Arduino_DopplerRadar).
 
 - **Step 2.** Copy the whole **Seeed_Arduino_DopplerRadar** file and paste it into your Arduino IDE library file.
 

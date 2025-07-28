@@ -40,159 +40,115 @@ Atom は、ワイヤレスデータ伝送とモバイル監視を特徴として
 ---
 <table  cellspacing="0" width="80%">
 <tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 典型値
-</th>
-<th scope="col"> 単位
-</th></tr>
+<th scope="col">項目</th>
+<th scope="col">典型値</th>
+<th scope="col">単位</th>
+</tr>
 <tr>
-<th scope="row"> USB供給電圧
-</th>
-<td>4.75-5.25
-</td>
-<td> VDC
-</td></tr>
+<th scope="row">USB供給電圧</th>
+<td>4.75-5.25</td>
+<td>VDC</td>
+</tr>
 <tr>
-<th scope="row"> 待機電流（RF Bee接続時）
-</th>
-<td> 25~40
-</td>
-<td> mA
-</td></tr>
+<th scope="row">待機電流（RF Bee接続時）</th>
+<td>25~40</td>
+<td>mA</td>
+</tr>
 <tr>
-<th scope="row"> GPIO電圧
-</th>
-<td> 3.3
-</td>
-<td> V
-</td></tr>
+<th scope="row">GPIO電圧</th>
+<td>3.3</td>
+<td>V</td>
+</tr>
 <tr>
-<th scope="row"> バッテリー容量
-</th>
-<td> 300
-</td>
-<td> mAH
-</td></tr>
+<th scope="row">バッテリー容量</th>
+<td>300</td>
+<td>mAH</td>
+</tr>
 <tr>
-<th scope="row"> 充電電流
-</th>
-<td> 300-500
-</td>
-<td> mA
-</td></tr>
+<th scope="row">充電電流</th>
+<td>300-500</td>
+<td>mA</td>
+</tr>
 <tr>
-<th scope="row"> USBインターフェース
-</th>
-<td>MICRO USB
-</td>
-<td> /
-</td></tr>
+<th scope="row">USBインターフェース</th>
+<td>MICRO USB</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> 動作周波数
-</th>
-<td> 16
-</td>
-<td> MHz
-</td></tr>
+<th scope="row">動作周波数</th>
+<td>16</td>
+<td>MHz</td>
+</tr>
 <tr>
-<th scope="row"> Grove供給電圧
-</th>
-<td> 3.3
-</td>
-<td> V
-</td></tr>
+<th scope="row">Grove供給電圧</th>
+<td>3.3</td>
+<td>V</td>
+</tr>
 <tr>
-<th scope="row"> 出力電流（最大）
-</th>
-<td> 500
-</td>
-<td> mA
-</td></tr>
+<th scope="row">出力電流（最大）</th>
+<td>500</td>
+<td>mA</td>
+</tr>
 <tr>
-<th scope="row"> 連続動作時間（最大）
-</th>
-<td> 22
-</td>
-<td> h
-</td></tr>
+<th scope="row">連続動作時間（最大）</th>
+<td>22</td>
+<td>h</td>
+</tr>
 <tr>
-<th scope="row"> 光センサー応答周波数
-</th>
-<td>100
-</td>
-<td> Hz
-</td></tr>
+<th scope="row">光センサー応答周波数</th>
+<td>100</td>
+<td>Hz</td>
+</tr>
 <tr>
-<th scope="row"> 低バッテリー表示
-</th>
-<td> 3.71
-</td>
-<td> V
-</td></tr>
+<th scope="row">低バッテリー表示</th>
+<td>3.71</td>
+<td>V</td>
+</tr>
 <tr>
-<th scope="row"> 光センサー応答周波数
-</th>
-<td>100
-</td>
-<td> Hz
-</td></tr>
+<th scope="row">光センサー応答周波数</th>
+<td>100</td>
+<td>Hz</td>
+</tr>
 <tr>
-<th scope="row"> RF BEE（seeed）通信距離（最大）屋外
-</th>
-<td> 200
-</td>
-<td> m
-</td></tr>
+<th scope="row">RF BEE（seeed）通信距離（最大）屋外</th>
+<td>200</td>
+<td>m</td>
+</tr>
 <tr>
-<th scope="row"> Xbee（Xbee）通信距離（最大）屋外
-</th>
-<td>30
-</td>
-<td> m
-</td></tr>
+<th scope="row">Xbee（Xbee）通信距離（最大）屋外</th>
+<td>30</td>
+<td>m</td>
+</tr>
 <tr>
-<th scope="row"> Bluetooth Bee（seeed）通信距離（最大）屋外
-</th>
-<td>20
-</td>
-<td> m
-</td></tr>
+<th scope="row">Bluetooth Bee（seeed）通信距離（最大）屋外</th>
+<td>20</td>
+<td>m</td>
+</tr>
 <tr>
-<th scope="row"> Groveコネクタ
-</th>
-<td> 3（IIC;UART;PWM）
-</td>
-<td> /
-</td></tr>
+<th scope="row">Groveコネクタ</th>
+<td>3（IIC;UART;PWM）</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> 20ピンBeeソケット
-</th>
-<td> Rfbee、Xbee、Bluetooth Bee互換
-</td>
-<td> /
-</td></tr>
+<th scope="row">20ピンBeeソケット</th>
+<td>Rfbee、Xbee、Bluetooth Bee互換</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> 二色充電インジケーター
-</th>
-<td>緑/赤
-</td>
-<td> /
-</td></tr>
+<th scope="row">二色充電インジケーター</th>
+<td>緑/赤</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> 二色ユーザーインジケーター
-</th>
-<td> 緑/赤
-</td>
-<td> /
-</td></tr>
+<th scope="row">二色ユーザーインジケーター</th>
+<td>緑/赤</td>
+<td>/</td>
+</tr>
 <tr>
-<th scope="row"> ブザー周波数
-</th>
-<td>2.7±0.3
-</td>
-<td> K
-</td></tr></table>
+<th scope="row">ブザー周波数</th>
+<td>2.7±0.3</td>
+<td>K</td>
+</tr></table>
 
 ## トポロジー
 
@@ -287,370 +243,250 @@ Atom Nodeで利用可能なセンサー：
 
 <table cellspacing="0" width="40%">
 <tr>
-<th scope="col"> ID
-</th>
-<th scope="col"> 名前
-</th>
-<th scope="col"> 種類
-</th>
-<th scope="col"> 制御モード
-</th></tr>
+<th scope="col">ID</th>
+<th scope="col">名前</th>
+<th scope="col">種類</th>
+<th scope="col">制御モード</th>
+</tr>
 <tr>
-<th scope="row"> 1
-</th>
-<td> Grove - ボタン
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">1</th>
+<td>Grove - ボタン</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 2
-</th>
-<td> Grove - チルトスイッチ
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">2</th>
+<td>Grove - チルトスイッチ</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 3
-</th>
-<td> Grove - ラインファインダー
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">3</th>
+<td>Grove - ラインファインダー</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 4
-</th>
-<td> Grove - PIRモーションセンサー
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">4</th>
+<td>Grove - PIRモーションセンサー</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 5
-</th>
-<td> Grove - 赤外線反射センサー
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">5</th>
+<td>Grove - 赤外線反射センサー</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 6
-</th>
-<td> Grove - 磁気スイッチ
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">6</th>
+<td>Grove - 磁気スイッチ</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 7
-</th>
-<td> Grove - タッチセンサー
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">7</th>
+<td>Grove - タッチセンサー</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 8
-</th>
-<td> Grove - 赤外線距離インタラプター
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">8</th>
+<td>Grove - 赤外線距離インタラプター</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 9
-</th>
-<td> Grove - ホールセンサー
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">9</th>
+<td>Grove - ホールセンサー</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 11
-</th>
-<td> Grove - 衝突センサー
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">11</th>
+<td>Grove - 衝突センサー</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 12
-</th>
-<td> Grove - 湿度センサー
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">12</th>
+<td>Grove - 湿度センサー</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 13
-</th>
-<td> Grove - 光センサー
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">13</th>
+<td>Grove - 光センサー</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 14
-</th>
-<td> Grove - 回転角センサー
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">14</th>
+<td>Grove - 回転角センサー</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 44
-</th>
-<td> Grove - 温度センサー
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">44</th>
+<td>Grove - 温度センサー</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 45
-</th>
-<td> Grove - 水センサー
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">45</th>
+<td>Grove - 水センサー</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 46
-</th>
-<td> Grove - 80cm赤外線近接センサー
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">46</th>
+<td>Grove - 80cm赤外線近接センサー</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 47
-</th>
-<td> Grove - 赤外線温度センサー
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">47</th>
+<td>Grove - 赤外線温度センサー</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 48
-</th>
-<td> Grove - スライドポテンショメータ
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">48</th>
+<td>Grove - スライドポテンショメータ</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 59
-</th>
-<td> Grove - 空気品質センサー1.0
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">59</th>
+<td>Grove - 空気品質センサー1.0</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 50
-</th>
-<td> Grove - 電気センサー
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">50</th>
+<td>Grove - 電気センサー</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 51
-</th>
-<td> Grove - アルコールセンサー
-</td>
-<td> センサー
-</td>
-<td> アナログ
-</td></tr>
+<th scope="row">51</th>
+<td>Grove - アルコールセンサー</td>
+<td>センサー</td>
+<td>アナログ</td>
+</tr>
 <tr>
-<th scope="row"> 53
-</th>
-<td> Grove - 音センサー
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">53</th>
+<td>Grove - 音センサー</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 54
-</th>
-<td> Grove - 超音波レンジャー
-</td>
-<td> センサー
-</td>
-<td> IO
-</td></tr>
+<th scope="row">54</th>
+<td>Grove - 超音波レンジャー</td>
+<td>センサー</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 81
-</th>
-<td> Grove - デジタル光センサー
-</td>
-<td> センサー
-</td>
-<td> IIC
-</td></tr>
+<th scope="row">81</th>
+<td>Grove - デジタル光センサー</td>
+<td>センサー</td>
+<td>IIC</td>
+</tr>
 <tr>
-<th scope="row"> 82
-</th>
-<td> Grove - 気圧センサー
-</td>
-<td> センサー
-</td>
-<td> IIC
-</td></tr>
+<th scope="row">82</th>
+<td>Grove - 気圧センサー</td>
+<td>センサー</td>
+<td>IIC</td>
+</tr>
 <tr>
-<th scope="row"> 102
-</th>
-<td> Grove - 温度＆湿度センサーPro –T
-</td>
-<td> センサー
-</td>
-<td> ONE-Wire
-</td></tr>
+<th scope="row">102</th>
+<td>Grove - 温度＆湿度センサーPro –T</td>
+<td>センサー</td>
+<td>ONE-Wire</td>
+</tr>
 <tr>
-<th scope="row"> 103
-</th>
-<td> Grove - 温度＆湿度センサーPro –H
-</td>
-<td> センサー
-</td>
-<td> ONE-Wire
-</td></tr>
+<th scope="row">103</th>
+<td>Grove - 温度＆湿度センサーPro –H</td>
+<td>センサー</td>
+<td>ONE-Wire</td>
+</tr>
 <tr>
-<th scope="row"> 110
-</th>
-<td> Grove - 赤外線受信機
-</td>
-<td> センサー
-</td>
-<td> IR
-</td></tr></table>
+<th scope="row">110</th>
+<td>Grove - 赤外線受信機</td>
+<td>センサー</td>
+<td>IR</td>
+</tr></table>
 
 現在、ほぼすべてのセンサーを駆動することができます。このことから、ファームウェアが非常に強力であることがわかります。
 Atom Nodeで利用可能なアクチュエータ：
 
 <table cellspacing="0" width="40%">
 <tr>
-<th scope="col"> ID
-</th>
-<th scope="col"> 名前
-</th>
-<th scope="col"> 種類
-</th>
-<th scope="col"> 制御モード
-</th></tr>
+<th scope="col">ID</th>
+<th scope="col">名前</th>
+<th scope="col">種類</th>
+<th scope="col">制御モード</th>
+</tr>
 <tr>
-<th scope="row"> 128
-</th>
-<td> Grove - リレー
-</td>
-<td> アクチュエータ
-</td>
-<td> IO
-</td></tr>
+<th scope="row">128</th>
+<td>Grove - リレー</td>
+<td>アクチュエータ</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 129
-</th>
-<td> Grove - LED
-</td>
-<td> アクチュエータ
-</td>
-<td> IO
-</td></tr>
+<th scope="row">129</th>
+<td>Grove - LED</td>
+<td>アクチュエータ</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 135
-</th>
-<td> Grove - マルチカラー点滅LED (5mm)
-</td>
-<td> アクチュエータ
-</td>
-<td> IO
-</td></tr>
+<th scope="row">135</th>
+<td>Grove - マルチカラー点滅LED (5mm)</td>
+<td>アクチュエータ</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 136
-</th>
-<td> Grove - 可変カラーLED
-</td>
-<td> アクチュエータ
-</td>
-<td> IO
-</td></tr>
+<th scope="row">136</th>
+<td>Grove - 可変カラーLED</td>
+<td>アクチュエータ</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 137
-</th>
-<td> Grove - ブザー
-</td>
-<td> アクチュエータ
-</td>
-<td> IO
-</td></tr>
+<th scope="row">137</th>
+<td>Grove - ブザー</td>
+<td>アクチュエータ</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 138
-</th>
-<td> Grove - バイブレーター
-</td>
-<td> アクチュエータ
-</td>
-<td> IO
-</td></tr>
+<th scope="row">138</th>
+<td>Grove - バイブレーター</td>
+<td>アクチュエータ</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 201
-</th>
-<td> Grove - OLEDディスプレイ128*64
-</td>
-<td> アクチュエータ
-</td>
-<td> IIC
-</td></tr>
+<th scope="row">201</th>
+<td>Grove - OLEDディスプレイ128*64</td>
+<td>アクチュエータ</td>
+<td>IIC</td>
+</tr>
 <tr>
-<th scope="row"> 202
-</th>
-<td> Grove - OLED 96x96
-</td>
-<td> アクチュエータ
-</td>
-<td> IIC
-</td></tr>
+<th scope="row">202</th>
+<td>Grove - OLED 96x96</td>
+<td>アクチュエータ</td>
+<td>IIC</td>
+</tr>
 <tr>
-<th scope="row"> 223
-</th>
-<td> Grove - LEDバー
-</td>
-<td> アクチュエータ
-</td>
-<td> IO
-</td></tr>
+<th scope="row">223</th>
+<td>Grove - LEDバー</td>
+<td>アクチュエータ</td>
+<td>IO</td>
+</tr>
 <tr>
-<th scope="row"> 224
-</th>
-<td> Grove - 赤外線エミッター
-</td>
-<td> アクチュエータ
-</td>
-<td> IR
-</td></tr></table>
+<th scope="row">224</th>
+<td>Grove - 赤外線エミッター</td>
+<td>アクチュエータ</td>
+<td>IR</td>
+</tr></table>
 
 ### ソフトウェア
 
@@ -744,61 +580,45 @@ IFTTT モードで動作する 2 台の Atom Node を使用する場合、以下
 ---
 <table cellspacing="0">
 <tr>
-<th scope="col"> **操作**
-</th>
-<th scope="col"> **状態**
-</th>
-<th scope="col"> **機能**
-</th></tr>
+<th scope="col">**操作**</th>
+<th scope="col">**状態**</th>
+<th scope="col">**機能**</th>
+</tr>
 <tr>
-<th> 電源ボタンを押す
-</th>
-<td> 電源LEDが点灯（青色）
-</td>
-<td> Atom Nodeを起動する
-</td></tr>
+<th>電源ボタンを押す</th>
+<td>電源LEDが点灯（青色）</td>
+<td>Atom Nodeを起動する</td>
+</tr>
 <tr>
-<th> Atom Nodeを起動した後に電源ボタンを押す
-</th>
-<td> 電源LEDが点灯（青色）、ユーザーLEDが点灯（未ペアリングの場合は赤色、ペアリング成功後は緑色で点滅）
-</td>
-<td> 設定モードに入る
-</td></tr>
+<th>Atom Nodeを起動した後に電源ボタンを押す</th>
+<td>電源LEDが点灯（青色）、ユーザーLEDが点灯（未ペアリングの場合は赤色、ペアリング成功後は緑色で点滅）</td>
+<td>設定モードに入る</td>
+</tr>
 <tr>
-<th> 設定モード中に電源ボタンを押す
-</th>
-<td> 電源LEDが点灯（青色）、ユーザーLEDが消灯
-</td>
-<td> 設定モードを終了する
-</td></tr>
+<th>設定モード中に電源ボタンを押す</th>
+<td>電源LEDが点灯（青色）、ユーザーLEDが消灯</td>
+<td>設定モードを終了する</td>
+</tr>
 <tr>
-<th> 電源ボタンを長押しする
-</th>
-<td> すべてのLEDが消灯し、ブザーが鳴る
-</td>
-<td> Atom Nodeをシャットダウンする
-</td></tr>
+<th>電源ボタンを長押しする</th>
+<td>すべてのLEDが消灯し、ブザーが鳴る</td>
+<td>Atom Nodeをシャットダウンする</td>
+</tr>
 <tr>
-<th> 電源ボタンをダブルクリックする
-</th>
-<td> ユーザーインジケーターがオンまたはオフになる
-</td>
-<td> ユーザーインジケーターをオン/オフする
-</td></tr>
+<th>電源ボタンをダブルクリックする</th>
+<td>ユーザーインジケーターがオンまたはオフになる</td>
+<td>ユーザーインジケーターをオン/オフする</td>
+</tr>
 <tr>
-<th> 電源ボタンを4回クリックする
-</th>
-<td> すべてのインジケーターが状態を保持
-</td>
-<td> データをクリアする
-</td></tr>
+<th>電源ボタンを4回クリックする</th>
+<td>すべてのインジケーターが状態を保持</td>
+<td>データをクリアする</td>
+</tr>
 <tr>
-<th> Atom NodeをUSBケーブルでPCに接続する
-</th>
-<td> 充電LEDが点灯（充電中は赤色、充電完了後は緑色）、電源LEDが点灯
-</td>
-<td> バッテリーを充電する、またはファームウェアを更新する
-</td></tr></table>
+<th>Atom NodeをUSBケーブルでPCに接続する</th>
+<td>充電LEDが点灯（充電中は赤色、充電完了後は緑色）、電源LEDが点灯</td>
+<td>バッテリーを充電する、またはファームウェアを更新する</td>
+</tr></table>
 
 ## ファームウェアのアップグレード
 ---

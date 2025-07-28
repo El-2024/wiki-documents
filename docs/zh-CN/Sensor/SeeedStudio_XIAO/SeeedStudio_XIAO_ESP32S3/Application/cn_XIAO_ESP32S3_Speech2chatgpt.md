@@ -26,11 +26,11 @@ last_update:
 
 让我们来看看完成此项目所需的一些基本步骤。
 
-- [注册并启用 Google Cloud 语音转文字服务](#sign-up-and-enable-google-cloud-speech-to-text-service)
-- [在本地主机上部署语音转文字服务](#deploy-speech-to-text-services-on-local-hosts)
-- [将 XIAO ESP32S3 Sense 录制的声音文件上传到 Google Cloud 进行识别](#upload-xiao-esp32s3-sense-recorded-sound-files-to-google-cloud-for-recognition)
-- [在 XIAO ESP32S3 Sense 上部署 ChatGPT](#deploy-chatgpt-on-xiao-esp32s3-sense)
-- [屏幕显示内容设计与程序集成](#design-of-screen-display-content--integration-of-programs)
+- 注册并启用 Google Cloud 语音转文字服务
+- 在本地主机上部署语音转文字服务
+- 将 XIAO ESP32S3 Sense 录制的声音文件上传到 Google Cloud 进行识别
+- 在 XIAO ESP32S3 Sense 上部署 ChatGPT
+- 屏幕显示内容设计与程序集成
 
 以下是项目的总体框架结构图。
 

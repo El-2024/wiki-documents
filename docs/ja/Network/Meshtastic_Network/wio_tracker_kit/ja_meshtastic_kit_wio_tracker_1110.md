@@ -37,7 +37,8 @@ Wio Tracker 1110 Dev Board（Nordic nRF52840 をベースとした BLE、Semtech
 
 ### 仕様
 
-<table><tr><th colspan="3"><b>一般仕様</b></th></tr>
+<table>
+<tr><th colspan="3"><b>一般仕様</b></th></tr>
 <tr><td colspan="1" rowspan="2"><b>電圧 - 供給</b></td><td colspan="2">5V (USB 2.0 Type-C)</td></tr>
 <tr><td colspan="1">バッテリーコネクタ</td><td colspan="1">3.7V</td></tr>
 <tr><td colspan="1" rowspan="3"><b>インターフェース</b></td><td colspan="1">RFIO</td><td colspan="1"><p>GNSS アンテナコネクタ * 1</p><p>LoRa アンテナコネクタ * 1</p></td></tr>
@@ -48,11 +49,11 @@ Wio Tracker 1110 Dev Board（Nordic nRF52840 をベースとした BLE、Semtech
 <tr><td colspan="1"><b>外部フラッシュメモリ</b></td><td colspan="2">4M</td></tr>
 <tr><td colspan="3"><b>LoRa® と位置情報 (Semtech LR1110)</b></td></tr>
 <tr><td colspan="1"><b>LoRaWAN® プロトコル</b></td><td colspan="2">V1.0.4</td></tr>
-<tr><td colspan="1"><b>周波数プラン</b></td><td colspan="2">863~928MHz</td></tr>
+<tr><td colspan="1"><b>周波数プラン</b></td><td colspan="2">863&#126;928MHz</td></tr>
 <tr><td colspan="1"><b>感度</b></td><td colspan="2"><p>-125dBm @125K/SF7</p><p>-141dBm @125K/SF12</p></td></tr>
 <tr><td colspan="1"><b>出力電力</b></td><td colspan="2">20dBm max @LoRa®</td></tr>
 <tr><td colspan="1"><b>位置情報技術</b></td><td colspan="2">GNSS(GPS/BeiDou)、WiFi スニファー</td></tr>
-<tr><td colspan="1"><b>通信範囲</b></td><td colspan="2">2~10km (アンテナと環境に依存)</td></tr>
+<tr><td colspan="1"><b>通信範囲</b></td><td colspan="2">2&#126;10km (アンテナと環境に依存)</td></tr>
 <tr><td colspan="3"><b>Bluetooth (Nordic nRF52840)</b></td></tr>
 <tr><td colspan="1"><b>Bluetooth</b></td><td colspan="2">Bluetooth 5.3</td></tr>
 <tr><td colspan="1"><b>フラッシュ</b></td><td colspan="2">1MB</td></tr>
@@ -61,12 +62,12 @@ Wio Tracker 1110 Dev Board（Nordic nRF52840 をベースとした BLE、Semtech
 <tr><td colspan="1"><b>出力電力</b></td><td colspan="2">6dBm max @Bluetooth</td></tr>
 <tr><td colspan="3"><b>オンボードセンサー -- 温湿度センサー (SHT41)</b></td></tr>
 <tr><td colspan="1"></td><td colspan="1"><b>範囲</b></td><td colspan="1"><b>精度</b></td></tr>
-<tr><td colspan="1"><b>温度</b></td><td colspan="1">-40~85°C</td><td colspan="1">± 0.2°C</td></tr>
-<tr><td colspan="1"><b>湿度</b></td><td colspan="1">0~100%RH</td><td colspan="1">±1.8%RH</td></tr>
+<tr><td colspan="1"><b>温度</b></td><td colspan="1">-40&#126;85°C</td><td colspan="1">± 0.2°C</td></tr>
+<tr><td colspan="1"><b>湿度</b></td><td colspan="1">0&#126;100%RH</td><td colspan="1">±1.8%RH</td></tr>
 <tr><td colspan="3"><b>オンボードセンサー -- 3軸加速度計 (未使用)</b></td></tr>
 <tr><td colspan="1"><b>範囲</b></td><td colspan="2">±2g, 4g, 8g, 16g</td></tr>
-<tr><td colspan="1"><b>帯域幅</b></td><td colspan="2">0.5Hz ~ 625Hz</td></tr>
-<tr><td colspan="1"><b>感度 (LSB/g)</b></td><td colspan="2">1000 (±2g) ~ 83 (±16g)</td></tr>
+<tr><td colspan="1"><b>帯域幅</b></td><td colspan="2">0.5Hz &#126; 625Hz</td></tr>
+<tr><td colspan="1"><b>感度 (LSB/g)</b></td><td colspan="2">1000 (±2g) &#126; 83 (±16g)</td></tr>
 </table>
 
 **Grove - OLED ディスプレイ 0.96 インチ**
@@ -80,7 +81,7 @@ Wio Tracker 1110 Dev Board（Nordic nRF52840 をベースとした BLE、Semtech
 |**アクティブエリア**|21.74(W)×11.175(H) mm|
 |**ドットピッチ**|0.17(W)×0.175(H) mm|
 |**ドットサイズ**|0.15(W)×0.15(H) mm|
-|**広い動作温度範囲**|-20~70 ℃|
+|**広い動作温度範囲**|-20&#126;70 ℃|
 
 ## はじめに
 

@@ -22,7 +22,7 @@ The Things Stack is an enterprise grade LoRaWAN network server, built on an open
 
 ## Connect to The Things Network 
    ### Create a New Account
-TTN Website: <https://www.thethingsnetwork.org/>
+TTN Website: &lt;https://www.thethingsnetwork.org/&gt;
 ### Setup the Sensor
 (1) Open the SenseCAP Mate App
 (2) Press button and hold for 3 seconds, the LED will flash at 1s frequency.
@@ -126,7 +126,7 @@ Different countries and LoRaWAN network servers use different frequency plans.
 
 For Helium network, please refer to: 
 
-*https://docs.helium.com/lorawan-on-helium/frequency-plans*	
+[Helium Frequency Plans](https://docs.helium.com/lorawan-on-helium/frequency-plans)	
 
 ![](https://files.seeedstudio.com/wiki/SenseCAPS210X/TTN_Network/0017.png)
 

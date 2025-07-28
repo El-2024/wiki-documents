@@ -57,9 +57,10 @@ Grove - マウスエンコーダは、回転方向と回転速度のフィード
 
 <div className="admonition note">
   <p className="admonition-title">注意</p>
-  <ol><li>製品リストにはノブが含まれていません。これは、このエンコーダを様々な環境により適応させるためです。</li>
-    <li><a href="https://files.seeedstudio.com/wiki/Grove-Mouse_Encoder/res/Grove-Mouse_Encoder_Dimensions.pdf">寸法</a>ファイルをPDF形式で提供しており、寸法に基づいてノブをカスタマイズできます。</li><ol>
-    </ol></ol></div>
+  <ol>
+    <li>製品リストにはノブが含まれていません。これは、このエンコーダを様々な環境により適応させるためです。</li>
+    <li><a href="https://files.seeedstudio.com/wiki/Grove-Mouse_Encoder/res/Grove-Mouse_Encoder_Dimensions.pdf">寸法</a>ファイルをPDF形式で提供しており、寸法に基づいてノブをカスタマイズできます。</li>
+  </ol></div>
 
 <div className="admonition tip">
   <p className="admonition-title">ヒント</p>

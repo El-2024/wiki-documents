@@ -147,7 +147,7 @@ Si no has iniciado un proyecto con la reComputer, podrías considerar usar esta 
 
 - Generalmente hay dos formas de instalar un sistema para reComputer, la primera es usar **NVIDIA SDK Manager**.
 
-Si estás en una **reComputer J2011** o **reComputer J2012**, en el **paso 12** de la wiki [Flashear a eMMC con SDK Manager](reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line), puedes ampliar la capacidad cambiando la ubicación del sistema de grabación.
+Si estás en una **reComputer J2011** o **reComputer J2012**, en el **paso 12** de la wiki [Flashear a eMMC con SDK Manager](/es/reComputer_J2021_J202_Flash_Jetpack), puedes ampliar la capacidad cambiando la ubicación del sistema de grabación.
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/52.png" /></div>
 
@@ -157,9 +157,9 @@ Este método no es aplicable al módulo Jetson Nano.
 
 - Generalmente hay dos formas de instalar un sistema para la reComputer, la segunda es usar la **línea de comandos**.
 
-- Si estás utilizando una **Carrier Board A20X**, el método para instalar el sistema usando la línea de comandos se encuentra en la siguiente wiki [Flashear a eMMC mediante la línea de comandos](/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line).
+- Si estás utilizando una **Carrier Board A20X**, el método para instalar el sistema usando la línea de comandos se encuentra en la siguiente wiki [Flashear a eMMC mediante la línea de comandos](/reComputer_J2021_J202_Flash_Jetpack).
 
-- Si estás utilizando la **Carrier Board reComputer J1010**, utiliza la línea de comandos para instalar el sistema en [Flashear a eMMC con línea de comandos](/reComputer_J1010_J101_Flash_Jetpack#flashing-jetpack-os-via-command-line).
+- Si estás utilizando la **Carrier Board reComputer J1010**, utiliza la línea de comandos para instalar el sistema en [Flashear a eMMC con línea de comandos](/reComputer_J1010_J101_Flash_Jetpack).
 
 Básicamente, ambos completan la instalación del sistema utilizando el siguiente comando.
 

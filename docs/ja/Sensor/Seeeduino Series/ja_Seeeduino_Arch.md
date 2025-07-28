@@ -49,62 +49,19 @@ Seeeduino Archは標準的なArduinoの外観とGroveコネクタを備えてお
 
 ## 仕様
 
-<table  cellspacing="0" width="100%">
-<tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 典型値
-</th></tr>
-<tr>
-<th scope="row"> 動作電圧
-</th>
-<td> 7 ~ 12V
-</td></tr>
-<tr>
-<th scope="row"> マイクロコントローラ
-</th>
-<td> LPC11U24
-</td></tr>
-<tr>
-<th scope="row"> フラッシュメモリ
-</th>
-<td> 32kB
-</td></tr>
-<tr>
-<th scope="row"> EEPROM
-</th>
-<td> 4kB
-</td></tr>
-<tr>
-<th scope="row"> RAM
-</th>
-<td> 8kB
-</td></tr>
-<tr>
-<th scope="row"> UART
-</th>
-<td> 1
-</td></tr>
-<tr>
-<th scope="row"> I2C
-</th>
-<td> 1
-</td></tr>
-<tr>
-<th scope="row"> ADCチャンネル
-</th>
-<td> 8
-</td></tr>
-<tr>
-<th scope="row"> I/Oピン
-</th>
-<td>40
-</td></tr>
-<tr>
-<th scope="row"> デジタルI/O最大入力電圧
-</th>
-<td> 5.0V
-</td></tr></table>
+<table cellspacing="0" width="100%">
+<tr><th scope="col">項目</th><th scope="col">典型値</th></tr>
+<tr><th scope="row">動作電圧</th><td>7 ~ 12V</td></tr>
+<tr><th scope="row">マイクロコントローラ</th><td>LPC11U24</td></tr>
+<tr><th scope="row">フラッシュメモリ</th><td>32kB</td></tr>
+<tr><th scope="row">EEPROM</th><td>4kB</td></tr>
+<tr><th scope="row">RAM</th><td>8kB</td></tr>
+<tr><th scope="row">UART</th><td>1</td></tr>
+<tr><th scope="row">I2C</th><td>1</td></tr>
+<tr><th scope="row">ADCチャンネル</th><td>8</td></tr>
+<tr><th scope="row">I/Oピン</th><td>40</td></tr>
+<tr><th scope="row">デジタルI/O最大入力電圧</th><td>5.0V</td></tr>
+</table>
 
 ## ピン配置
 
@@ -115,285 +72,63 @@ Seeeduino Archは標準的なArduinoの外観とGroveコネクタを備えてお
 ## Seeeduino ArchとArduinoの比較
 
 SeeeduinoとArduinoはどちらも迅速なプロトタイピングを作成するためのプラットフォームですが、いくつかの違いがあります。以下の表でそれらを比較することで、より詳しい情報を得ることができます。
-<center>
-<table  cellspacing="0" width="100%">
-<tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> Seeeduino Arch
-</th>
-<th scope="col"> Arduino
-</th></tr>
-<tr>
-<th scope="row"> マイクロコントローラ
-</th>
-<td> ARM Cortex-MシリーズMCU
-</td>
-<td> 主にAVR 8ビットMCU、新しいDue Cortex-M3 MCUファミリーを使用。
-</td></tr>
-<tr>
-<th scope="row"> ハードウェア仕様
-</th>
-<td> 標準化されたサイズとピンで簡単にモジュール化されたプロトタイプを構築可能
-</td>
-<td> 標準化されたサイズとピンで簡単にモジュール化されたプロトタイプを構築可能
-</td></tr>
-<tr>
-<th scope="row"> 開発環境
-</th>
-<td> コラボレーションや共有が容易なオンライン開発ツール、プロジェクトをローカルにエクスポートして開発やデバッグが可能。強力でありながらシンプル。
-</td>
-<td> Arduino IDE、使いやすく、シンプルだが機能的。
-</td></tr>
-<tr>
-<th scope="row"> 開発とデバッグ
-</th>
-<td> ライブラリのインポート、プロジェクトのエクスポート、バージョン管理、デバッグなどの機能をサポート。
-</td>
-<td> ライブラリとアプリケーションコードが分離されており、簡単なコードを書くのに適しているが、デバッグ機能はなし。
-</td></tr></table> </center>
-Seeeduino Archはハードウェア面でArduinoと互換性があります。以下にそれぞれのピン配置を共有します。  
-<center>
-<table  cellspacing="0" width="100%">
-<tr>
-<th scope="col"> Arduino
-</th>
-<th scope="col"> Seeeduino Arch
-</th>
-<th scope="col"> 説明
-</th></tr>
-<tr>
-<th scope="row"> D0
-</th>
-<td> P0_18
-</td>
-<td rowspan="14"> デジタルI/O
-</td></tr>
-<tr>
-<th scope="row"> D1
-</th>
-<td> P0_19
-</td></tr>
-<tr>
-<th scope="row"> D2
-</th>
-<td> P0_17
-</td></tr>
-<tr>
-<th scope="row"> D3
-</th>
-<td> P1_17
-</td></tr>
-<tr>
-<th scope="row"> D4
-</th>
-<td> P1_18
-</td></tr>
-<tr>
-<th scope="row"> D5
-</th>
-<td> P1_24
-</td></tr>
-<tr>
-<th scope="row"> D6
-</th>
-<td> P1_25
-</td></tr>
-<tr>
-<th scope="row"> D7
-</th>
-<td> P1_5
-</td></tr>
-<tr>
-<th scope="row"> D8
-</th>
-<td> P1_26
-</td></tr>
-<tr>
-<th scope="row"> D9
-</th>
-<td> P1_27
-</td></tr>
-<tr>
-<th scope="row"> D10
-</th>
-<td> P0_2
-</td></tr>
-<tr>
-<th scope="row"> D11
-</th>
-<td> P1_29
-</td></tr>
-<tr>
-<th scope="row"> D12
-</th>
-<td> P0_8
-</td></tr>
-<tr>
-<th scope="row"> D13
-</th>
-<td> P0_9
-</td></tr>
-<tr>
-<th scope="row"> SDA
-</th>
-<td> P0_5
-</td>
-<td rowspan="2"> I2C
-</td></tr>
-<tr>
-<th scope="row"> SCL
-</th>
-<td> P0_4
-</td></tr>
-<tr>
-<th scope="row"> A0
-</th>
-<td> P0_11
-</td>
-<td rowspan="7"> アナログ
-</td></tr>
-<tr>
-<th scope="row"> A1
-</th>
-<td> P0_12
-</td></tr>
-<tr>
-<th scope="row"> A2
-</th>
-<td> P0_13
-</td></tr>
-<tr>
-<th scope="row"> A3
-</th>
-<td> P0_14
-</td></tr>
-<tr>
-<th scope="row"> A4
-</th>
-<td> P0_16
-</td></tr>
-<tr>
-<th scope="row"> A5
-</th>
-<td> P0_22
-</td></tr>
-<tr>
-<th scope="row"> A6
-</th>
-<td> P0_23
-</td></tr>
-<tr>
-<th scope="row"> 1-MISO1
-</th>
-<td> P1_21
-</td>
-<td rowspan="6"> SPI1
-</td></tr>
-<tr>
-<th scope="row"> 2-SCK
-</th>
-<td> P1_20
-</td></tr>
-<tr>
-<th scope="row"> 3-RESET
-</th>
-<td> P1_23
-</td></tr>
-<tr>
-<th scope="row"> 4-GND
-</th>
-<td> /
-</td></tr>
-<tr>
-<th scope="row"> 5-MOSI
-</th>
-<td> P1_22
-</td></tr>
-<tr>
-<th scope="row"> 6-VCC
-</th>
-<td> /
-</td></tr>
-<tr>
-<th scope="row"> 1-SWDIO
-</th>
-<td> P0_15
-</td>
-<td rowspan="6"> 2X3 SWDインターフェース
-</td></tr>
-<tr>
-<th scope="row"> 2-VCC
-</th>
-<td> /
-</td></tr>
-<tr>
-<th scope="row"> 3-SWCLK
-</th>
-<td> P0_10
-</td></tr>
-<tr>
-<th scope="row"> 4-
-</th>
-<td> P1_4
-</td></tr>
-<tr>
-<th scope="row"> 5-nRET
-</th>
-<td> P0_0
-</td></tr>
-<tr>
-<th scope="row"> 6-GND
-</th>
-<td> /
-</td></tr>
-<tr>
-<th scope="row"> D+
-</th>
-<td> USB_DP
-</td>
-<td rowspan="5"> USB&amp;ISP
-</td></tr>
-<tr>
-<th scope="row"> D-
-</th>
-<td> USB_DM
-</td></tr>
-<tr>
-<th scope="row"> VBUS
-</th>
-<td> P0_3
-</td></tr>
-<tr>
-<th scope="row"> CONNECT
-</th>
-<td> P0_6
-</td></tr>
-<tr>
-<th scope="row"> ISP
-</th>
-<td> P0_1
-</td></tr>
-<tr>
-<th scope="row"> RX
-</th>
-<td> P1_14
-</td>
-<td rowspan="2"> UART Grove
-</td></tr>
-<tr>
-<th scope="row"> TX
-</th>
-<td> P1_13
-</td></tr>
-<tr>
-<th scope="row"> AREF
-</th>
-<td> P0_7
-</td>
-<td> /
-</td></tr></table>
-</center>
+
+<table cellspacing="0" width="100%">
+<tr><th scope="col">項目</th><th scope="col">Seeeduino Arch</th><th scope="col">Arduino</th></tr>
+<tr><th scope="row">マイクロコントローラ</th><td>ARM Cortex-MシリーズMCU</td><td>主にAVR 8ビットMCU、新しいDue Cortex-M3 MCUファミリーを使用。</td></tr>
+<tr><th scope="row">ハードウェア仕様</th><td>標準化されたサイズとピンで簡単にモジュール化されたプロトタイプを構築可能</td><td>標準化されたサイズとピンで簡単にモジュール化されたプロトタイプを構築可能</td></tr>
+<tr><th scope="row">開発環境</th><td>コラボレーションや共有が容易なオンライン開発ツール、プロジェクトをローカルにエクスポートして開発やデバッグが可能。強力でありながらシンプル。</td><td>Arduino IDE、使いやすく、シンプルだが機能的。</td></tr>
+<tr><th scope="row">開発とデバッグ</th><td>ライブラリのインポート、プロジェクトのエクスポート、バージョン管理、デバッグなどの機能をサポート。</td><td>ライブラリとアプリケーションコードが分離されており、簡単なコードを書くのに適しているが、デバッグ機能はなし。</td></tr>
+</table>
+
+Seeeduino Archはハードウェア面でArduinoと互換性があります。以下にそれぞれのピン配置を共有します。
+
+<table cellspacing="0" width="100%">
+<tr><th scope="col">Arduino</th><th scope="col">Seeeduino Arch</th><th scope="col">説明</th></tr>
+<tr><th scope="row">D0</th><td>P0_18</td><td rowspan="14">デジタルI/O</td></tr>
+<tr><th scope="row">D1</th><td>P0_19</td></tr>
+<tr><th scope="row">D2</th><td>P0_17</td></tr>
+<tr><th scope="row">D3</th><td>P1_17</td></tr>
+<tr><th scope="row">D4</th><td>P1_18</td></tr>
+<tr><th scope="row">D5</th><td>P1_24</td></tr>
+<tr><th scope="row">D6</th><td>P1_25</td></tr>
+<tr><th scope="row">D7</th><td>P1_5</td></tr>
+<tr><th scope="row">D8</th><td>P1_26</td></tr>
+<tr><th scope="row">D9</th><td>P1_27</td></tr>
+<tr><th scope="row">D10</th><td>P0_2</td></tr>
+<tr><th scope="row">D11</th><td>P1_29</td></tr>
+<tr><th scope="row">D12</th><td>P0_8</td></tr>
+<tr><th scope="row">D13</th><td>P0_9</td></tr>
+<tr><th scope="row">SDA</th><td>P0_5</td><td rowspan="2">I2C</td></tr>
+<tr><th scope="row">SCL</th><td>P0_4</td></tr>
+<tr><th scope="row">A0</th><td>P0_11</td><td rowspan="7">アナログ</td></tr>
+<tr><th scope="row">A1</th><td>P0_12</td></tr>
+<tr><th scope="row">A2</th><td>P0_13</td></tr>
+<tr><th scope="row">A3</th><td>P0_14</td></tr>
+<tr><th scope="row">A4</th><td>P0_16</td></tr>
+<tr><th scope="row">A5</th><td>P0_22</td></tr>
+<tr><th scope="row">A6</th><td>P0_23</td></tr>
+<tr><th scope="row">1-MISO1</th><td>P1_21</td><td rowspan="6">SPI1</td></tr>
+<tr><th scope="row">2-SCK</th><td>P1_20</td></tr>
+<tr><th scope="row">3-RESET</th><td>P1_23</td></tr>
+<tr><th scope="row">4-GND</th><td>/</td></tr>
+<tr><th scope="row">5-MOSI</th><td>P1_22</td></tr>
+<tr><th scope="row">6-VCC</th><td>/</td></tr>
+<tr><th scope="row">1-SWDIO</th><td>P0_15</td><td rowspan="6">2X3 SWDインターフェース</td></tr>
+<tr><th scope="row">2-VCC</th><td>/</td></tr>
+<tr><th scope="row">3-SWCLK</th><td>P0_10</td></tr>
+<tr><th scope="row">4-</th><td>P1_4</td></tr>
+<tr><th scope="row">5-nRET</th><td>P0_0</td></tr>
+<tr><th scope="row">6-GND</th><td>/</td></tr>
+<tr><th scope="row">D+</th><td>USB_DP</td><td rowspan="5">USB&amp;ISP</td></tr>
+<tr><th scope="row">D-</th><td>USB_DM</td></tr>
+<tr><th scope="row">VBUS</th><td>P0_3</td></tr>
+<tr><th scope="row">CONNECT</th><td>P0_6</td></tr>
+<tr><th scope="row">ISP</th><td>P0_1</td></tr>
+<tr><th scope="row">RX</th><td>P1_14</td><td rowspan="2">UART Grove</td></tr>
+<tr><th scope="row">TX</th><td>P1_13</td></tr>
+<tr><th scope="row">AREF</th><td>P0_7</td><td>/</td></tr>
+</table>
 
 ## はじめに
 
@@ -472,13 +207,13 @@ USB ISP モードに入るには、Arch をコンピュータに接続し、ボ�
 
 * Linuxの場合
 
-1. ディスクがマウントされていない場合は、**{mnt_dir}** にディスクをマウントします。
+1. ディスクがマウントされていない場合は、**\{mnt_dir\}** にディスクをマウントします。
 
-2. **dd if={new_firmware.bin} of={mnt_dir}/firmware.bin conv=notrunc**
+2. **dd if=\{new_firmware.bin\} of=\{mnt_dir\}/firmware.bin conv=notrunc**
 
 * Macの場合、ターミナルを使用して以下のスクリプトを実行し、.bin ファイルを Arch にコピーします。
 
-1. **dd if={new_firmare.bin} of=/Volumes/CRP\ DISABLD/firmware.bin conv=notrunc**
+1. **dd if=\{new_firmare.bin\} of=/Volumes/CRP\ DISABLD/firmware.bin conv=notrunc**
 
    必要に応じて、**Automator** アプリケーションを作成し、ファイルをボードにドラッグ＆ドロップで対応できるようにすることもできます。以下のコマンドを使用して "_Run Shell Script_" を作成してください：
 

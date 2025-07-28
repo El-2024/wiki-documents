@@ -59,7 +59,7 @@ Grove – Solid State Relay is a non-contact electronic switch module that has r
 
 ![](https://files.seeedstudio.com/wiki/Grove-Solid_State_Relay/img/Ssr_interface.jpg)
 
-:::cautions
+:::caution
         **1.** If the output voltage is higher than 36V, you need to ensure the module is in the off state before you operate with the screws.
 
         **2.** The heat sink can be in very high temperature, do not touch it during use.

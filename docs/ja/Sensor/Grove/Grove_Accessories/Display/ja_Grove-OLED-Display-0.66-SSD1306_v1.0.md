@@ -25,7 +25,7 @@ I2Cインターフェースを使用して、このミニディスプレイを�
 
 このGrove-OLEDディスプレイは、Olikrausによって書かれたU8g2モノクロディスプレイライブラリをサポートしています。このライブラリは非常に便利で互換性が高く、SSD1306やSSD1315などの他のチップもサポートしています。今すぐ手に入れて、この小さな画面で楽しんでみてください！
 <!-- <p style=":center"><a href="https://www.seeedstudio.com/Grove-OLED-Display-0-66-SSD1306-v1-0-p-5096.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p> -->
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-OLED-Display-0-66-SSD1306-v1-0-p-5096.html)
+[<img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" />](https://www.seeedstudio.com/Grove-OLED-Display-0-66-SSD1306-v1-0-p-5096.html)
 
 ## 特徴
 

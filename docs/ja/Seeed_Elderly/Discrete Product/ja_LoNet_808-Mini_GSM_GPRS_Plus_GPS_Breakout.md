@@ -102,150 +102,28 @@ GPS受信機は非常に感度が高く、22の追跡チャネルと66の取得�
 
 ### ピン定義
 
-<table >
-<tr>
-<th scope="col"> **名前**
-</th>
-<th scope="col"> **I/O**
-</th>
-<th scope="col"> **説明**
-</th>
-<th scope="col"> **備考**
-</th></tr>
-<tr>
-<th scope="row"> BAT
-</th>
-<td> I/0
-</td>
-<td> 電源入力 / 出力
-</td>
-<td> 3.4V - 4.4V DC
-</td></tr>
-<tr>
-<td> GND
-</td>
-<td> I/0
-</td>
-<td> 電源グラウンド / 論理グラウンド
-</td>
-<td>
-</td></tr>
-<tr>
-<td> VIO
-</td>
-<td> I
-</td>
-<td> 論理レベル参照
-</td>
-<td> 2.8V - 5.0V DC
-</td></tr>
-<tr>
-<td> DTR
-</td>
-<td> I
-</td>
-<td> スリープモード制御ピン
-</td>
-<td> スリープモード時にプルアップ
-</td></tr>
-<tr>
-<td> PWR
-</td>
-<td> O
-</td>
-<td> 電源スイッチ
-</td>
-<td> 2秒間アクティブロー
-</td></tr>
-<tr>
-<td> RI
-</td>
-<td> O
-</td>
-<td> イベント / メッセージピン
-</td>
-<td>
-</td></tr>
-<tr>
-<td> TXD
-</td>
-<td> O
-</td>
-<td> データ送信
-</td>
-<td> SIM808からのUART出力
-</td></tr>
-<tr>
-<td> RXD
-</td>
-<td> I
-</td>
-<td> データ受信
-</td>
-<td> SIM808へのUART入力
-</td></tr>
-<tr>
-<td> RST
-</td>
-<td> I
-</td>
-<td> リセットピン
-</td>
-<td> アクティブロー
-</td></tr></table>
+| **名前** | **I/O** | **説明** | **備考** |
+|---|---|---|---|
+| BAT | I/0 | 電源入力 / 出力 | 3.4V - 4.4V DC |
+| GND | I/0 | 電源グラウンド / 論理グラウンド | |
+| VIO | I | 論理レベル参照 | 2.8V - 5.0V DC |
+| DTR | I | スリープモード制御ピン | スリープモード時にプルアップ |
+| PWR | O | 電源スイッチ | 2秒間アクティブロー |
+| RI | O | イベント / メッセージピン | |
+| TXD | O | データ送信 | SIM808からのUART出力 |
+| RXD | I | データ受信 | SIM808へのUART入力 |
+| RST | I | リセットピン | アクティブロー |
 
 ### インジケータLED
 
-<table >
-<tr>
-<th scope="col"> **インジケータLED**
-</th>
-<th scope="col"> **ステータス**
-</th>
-<th scope="col"> **動作**
-</th></tr>
-<tr>
-<th scope="row"> 動作ステータス（緑色）
-</th>
-<td> オフ
-</td>
-<td> SIM808が動作していない
-</td></tr>
-<tr>
-<td>
-</td>
-<td> オン
-</td>
-<td> SIM808が動作中
-</td></tr>
-<tr>
-<th scope="row"> ネットワークステータス（赤色）
-</th>
-<td> オフ
-</td>
-<td> SIM808が動作していない
-</td></tr>
-<tr>
-<td>
-</td>
-<td> 64msオン / 800msオフ
-</td>
-<td> SIM808がネットワークに登録されていない
-</td></tr>
-<tr>
-<td>
-</td>
-<td> 64msオン / 3000msオフ
-</td>
-<td> SIM808がネットワークに登録されている
-</td></tr>
-<tr>
-<td>
-</td>
-<td> 64msオン / 300msオフ
-</td>
-<td> PPP GPRS通信が確立されている
-</td></tr></table>
+| **インジケータLED** | **ステータス** | **動作** |
+|---|---|---|
+| 動作ステータス（緑色） | オフ | SIM808が動作していない |
+| | オン | SIM808が動作中 |
+| ネットワークステータス（赤色） | オフ | SIM808が動作していない |
+| | 64msオン / 800msオフ | SIM808がネットワークに登録されていない |
+| | 64msオン / 3000msオフ | SIM808がネットワークに登録されている |
+| | 64msオン / 300msオフ | PPP GPRS通信が確立されている |
 
 ## アクセサリー
 ---
@@ -330,115 +208,29 @@ void loop() // 繰り返し実行
 
 初めてモジュールを使用する際に、このプロセスを実行することをお勧めします。以下の表の「Serial Monitor」列では、ATコマンドの入力は黒字、モジュールの返答はオレンジ色で示されています。
 
-<table>
-<tr>
-<th>シリアルモニター</th>
-<th>説明</th>
-</tr>
-<tr>
-<td>AT  
-OK</td>
-<td>コマンド「AT」を送信してボーレートを同期します。モジュールのシリアルポートはデフォルトで自動ボーレートモードに設定されており、このモードではモジュールがオンになってもインジケーションを出力しません。</td>
-</tr>
-<tr>
-<td>AT+IPR=9600  
-OK</td>
-<td>ボーレートを9600bpsに設定します。1200bpsから115200bpsまでサポートしています。</td>
-</tr>
-<tr>
-<td>AT+ECHARGE=1  
-OK</td>
-<td>コマンド「AT+ECHARGE=1」を送信してバッテリー充電機能を有効にします。デフォルトでは充電機能は無効です。</td>
-</tr>
-<tr>
-<td>AT&amp;W  
-OK</td>
-<td>パラメータ設定を保存します。</td>
-</tr>
-<tr>
-<td>AT+CPOWD=1  
-NORMAL POWER DOWN</td>
-<td>モジュールをシャットダウンします。</td>
-</tr>
-<tr>
-<td>RDY  
-+CFUN: 1  
-GPS Ready  
-+CPIN: READY  
-Call Ready  
-SMS Ready</td>
-<td>電源ボタンでモジュールを再度オンにすると、GPSおよびGSMのステータスが応答されます。</td>
-</tr>
-<tr>
-<td>AT+CBC  
-+CBC: 1,96,4175  
-OK</td>
-<td>充電状態とバッテリー残量を確認します。</td>
-</tr>
-<tr>
-<td>AT+CSQ  
-+CSQ: 14,0  
-OK</td>
-<td>GSM信号品質を確認します。</td>
-</tr>
-</table>
+| シリアルモニター | 説明 |
+|---|---|
+| AT<br/>OK | コマンド「AT」を送信してボーレートを同期します。モジュールのシリアルポートはデフォルトで自動ボーレートモードに設定されており、このモードではモジュールがオンになってもインジケーションを出力しません。 |
+| AT+IPR=9600<br/>OK | ボーレートを9600bpsに設定します。1200bpsから115200bpsまでサポートしています。 |
+| AT+ECHARGE=1<br/>OK | コマンド「AT+ECHARGE=1」を送信してバッテリー充電機能を有効にします。デフォルトでは充電機能は無効です。 |
+| AT&W<br/>OK | パラメータ設定を保存します。 |
+| AT+CPOWD=1<br/>NORMAL POWER DOWN | モジュールをシャットダウンします。 |
+| RDY<br/>+CFUN: 1<br/>GPS Ready<br/>+CPIN: READY<br/>Call Ready<br/>SMS Ready | 電源ボタンでモジュールを再度オンにすると、GPSおよびGSMのステータスが応答されます。 |
+| AT+CBC<br/>+CBC: 1,96,4175<br/>OK | 充電状態とバッテリー残量を確認します。 |
+| AT+CSQ<br/>+CSQ: 14,0<br/>OK | GSM信号品質を確認します。 |
 
 #### GPSで位置情報を取得する
 
-<table cellpadding="0">
-<tr>
-<th scope="col" width="11">シリアルモニター</th>
-<th scope="col" width="700">説明</th>
-</tr>
-<tr>
-<td>AT+CGPSPWR=1  
-OK</td>
-<td>GPSをオンにします。</td>
-</tr>
-<tr>
-<td>AT+CGPSSTATUS?  
-+CGPSSTATUS: Location Not Fix  
-OK</td>
-<td>GPSの固定状態を確認します。「Location Not Fix」は位置情報の取得に失敗していることを意味します。初回起動時には少なくとも30秒かかります。_**GPSは窓際または屋外でテストする必要があります。**_</td>
-</tr>
-<tr>
-<td>AT+CGPSSTATUS?  
-+CGPSSTATUS: Location 3D Fix  
-OK</td>
-<td>GPSが3Dステータスで固定されました。</td>
-</tr>
-<tr>
-<td>AT+CGPSINF=0  
-+CGPSINF:  
-0,2234.931817,11357.122485,  
-92.461185,20141031041141.000,  
-88,12,0.000000,0.000000</td>
-<td>現在のGPS位置情報を取得します。パラメータ形式: &lt;mode&gt;, &lt;altitude&gt;, &lt;longitude&gt;, &lt;UTC time&gt;, &lt;TTFF&gt;, &lt;num&gt;, &lt;speed&gt;, &lt;course&gt;</td>
-</tr>
-<tr>
-<td>AT+CGPSOUT=32  
-OK  
-$GPRMC,043326.000,A,  
-2234.9414,N,11357.1187,E,  
-0.000,143.69,311014,,,A*50</td>
-<td>NMEA $GPRMCデータを読み取ります。この中で「2234.9414 N, 11357.1187 E」が位置座標です。NMEA文についての詳細は[こちらのサイト](http://www.gpsinformation.org/dale/nmea.htm)を参照してください。</td>
-</tr>
-<tr>
-<td>AT+CGPSRST=0  
-OK</td>
-<td>GPSをコールドスタートモードでリセットします。</td>
-</tr>
-<tr>
-<td>AT+CGPSRST=1  
-OK</td>
-<td>GPSをホットスタートモードでリセットします。</td>
-</tr>
-<tr>
-<td>AT+CGPSPWR=0  
-OK</td>
-<td>GPSをオフにします。</td>
-</tr>
-</table>
+| シリアルモニター | 説明 |
+|---|---|
+| AT+CGPSPWR=1<br/>OK | GPSをオンにします。 |
+| AT+CGPSSTATUS?<br/>+CGPSSTATUS: Location Not Fix<br/>OK | GPSの固定状態を確認します。「Location Not Fix」は位置情報の取得に失敗していることを意味します。初回起動時には少なくとも30秒かかります。_**GPSは窓際または屋外でテストする必要があります。**_ |
+| AT+CGPSSTATUS?<br/>+CGPSSTATUS: Location 3D Fix<br/>OK | GPSが3Dステータスで固定されました。 |
+| AT+CGPSINF=0<br/>+CGPSINF:<br/>0,2234.931817,11357.122485,<br/>92.461185,20141031041141.000,<br/>88,12,0.000000,0.000000 | 現在のGPS位置情報を取得します。パラメータ形式: &lt;mode&gt;, &lt;altitude&gt;, &lt;longitude&gt;, &lt;UTC time&gt;, &lt;TTFF&gt;, &lt;num&gt;, &lt;speed&gt;, &lt;course&gt; |
+| AT+CGPSOUT=32<br/>OK<br/>$GPRMC,043326.000,A,<br/>2234.9414,N,11357.1187,E,<br/>0.000,143.69,311014,,,A*50 | NMEA $GPRMCデータを読み取ります。この中で「2234.9414 N, 11357.1187 E」が位置座標です。NMEA文についての詳細は[こちらのサイト](http://www.gpsinformation.org/dale/nmea.htm)を参照してください。 |
+| AT+CGPSRST=0<br/>OK | GPSをコールドスタートモードでリセットします。 |
+| AT+CGPSRST=1<br/>OK | GPSをホットスタートモードでリセットします。 |
+| AT+CGPSPWR=0<br/>OK | GPSをオフにします。 |
 
 ## ダウンロード
 ---

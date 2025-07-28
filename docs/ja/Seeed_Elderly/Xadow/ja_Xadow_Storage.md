@@ -37,91 +37,19 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 Xadowストレージの2つのAT24C256は、共通の2線式バスを共有しています。各AT24C256には、スレーブアドレスと呼ばれる8ビットのハードウェアアドレスがあります。このスレーブアドレスは、A2、A1、およびA0のアドレス選択入力によって構成されます。A2、A1、およびA0ピンはデバイスアドレス入力であり、直接GNDまたはVCCに接続されます。これらのピンが浮遊状態の場合、A2、A1、およびA0ピンは内部的にGNDにプルダウンされます。
 
 <center>
-<table  cellspacing="0" width="50%">
-<tr>
-<th rowspan="2" scope="col">  スレーブアドレス[A6 - A0]
-</th>
-<th colspan="3" scope="col"> A2、A1、およびA0入力状態
-</th></tr>
-<tr>
-<td scope="col"> A2
-</td>
-<td scope="col"> A1
-</td>
-<td scope="col"> A0
-</td></tr>
-<tr>
-<td scope="row"> 1010000(0x50)
-</td>
-<td>GND/浮遊
-</td>
-<td>GND/浮遊
-</td>
-<td>GND/浮遊
-</td></tr>
-<tr>
-<td scope="row"> 1010001(0x51)
-</td>
-<td> GND/浮遊
-</td>
-<td> GND/浮遊
-</td>
-<td> VCC
-</td></tr>
-<tr>
-<td scope="row"> 1010010(0x52)
-</td>
-<td> GND/浮遊
-</td>
-<td> VCC
-</td>
-<td> GND/浮遊
-</td></tr>
-<tr>
-<td scope="row"> 1010011(0x53)
-</td>
-<td> GND/浮遊
-</td>
-<td> VCC
-</td>
-<td> VCC
-</td></tr>
-<tr>
-<td scope="row"> 1010100(0x54)
-</td>
-<td> VCC
-</td>
-<td> GND/浮遊
-</td>
-<td> GND/浮遊
-</td></tr>
-<tr>
-<td scope="row"> 1010101(デフォルト 0x55)
-</td>
-<td> VCC
-</td>
-<td> GND/浮遊
-</td>
-<td> VCC
-</td></tr>
-<tr>
-<td scope="row"> 1010110(0x56)
-</td>
-<td> VCC
-</td>
-<td> VCC
-</td>
-<td> GND/浮遊
-</td></tr>
-<tr>
-<td scope="row"> 1010111(0x57)
-</td>
-<td> VCC
-</td>
-<td> VCC
-</td>
-<td> VCC
-</td></tr></table></center>
+<table cellspacing="0" width="50%">
+  <tr><th rowspan="2" scope="col">スレーブアドレス[A6 - A0]</th><th colspan="3" scope="col">A2、A1、およびA0入力状態</th></tr>
+  <tr><th scope="col">A2</th><th scope="col">A1</th><th scope="col">A0</th></tr>
+  <tr><td scope="row">1010000(0x50)</td><td>GND/浮遊</td><td>GND/浮遊</td><td>GND/浮遊</td></tr>
+  <tr><td scope="row">1010001(0x51)</td><td>GND/浮遊</td><td>GND/浮遊</td><td>VCC</td></tr>
+  <tr><td scope="row">1010010(0x52)</td><td>GND/浮遊</td><td>VCC</td><td>GND/浮遊</td></tr>
+  <tr><td scope="row">1010011(0x53)</td><td>GND/浮遊</td><td>VCC</td><td>VCC</td></tr>
+  <tr><td scope="row">1010100(0x54)</td><td>VCC</td><td>GND/浮遊</td><td>GND/浮遊</td></tr>
+  <tr><td scope="row">1010101(デフォルト 0x55)</td><td>VCC</td><td>GND/浮遊</td><td>VCC</td></tr>
+  <tr><td scope="row">1010110(0x56)</td><td>VCC</td><td>VCC</td><td>GND/浮遊</td></tr>
+  <tr><td scope="row">1010111(0x57)</td><td>VCC</td><td>VCC</td><td>VCC</td></tr>
+</table>
+</center>
 
 デフォルトモードでは、1つのAT24C256(U1)のI2Cアドレスは0x50で、もう1つのAT24C256(U2)のI2Cアドレスは0x51です（Xadowストレージを参照）。
 

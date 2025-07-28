@@ -158,14 +158,17 @@ keywords:
 
 :::
 
-<details> <summary>如果电源电压与我的舵机不匹配怎么办？</summary>
+<details>
+<summary>如果电源电压与我的舵机不匹配怎么办？</summary>
 
 板子和舵机可能会发生故障或损坏。始终确保输入电压与舵机的要求相匹配。
-</details> <details> <summary>我可以同时连接多个舵机吗？</summary>
+</details>
+
+<details>
+<summary>我可以同时连接多个舵机吗？</summary>
 
 可以支持多个舵机，但请确保您的电源能够处理所有舵机的总电流需求。
-
-</details> <br/>
+</details>
 
 ### 资源
 

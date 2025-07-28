@@ -180,7 +180,9 @@ bitbake rpi-test-image -k
 
 ##### イメージ内のパッケージを表示する
 
-- bitbake -g < image > && cat pn-buildlist | grep -v -e '-native' | grep -v digraph | grep -v -e '-image' | awk '{print $1}' | sort | uniq
+```sh
+bitbake -g <image> && cat pn-buildlist | grep -v -e '-native' | grep -v digraph | grep -v -e '-image' | awk '{print $1}' | sort | uniq
+```
 
 このコマンドは、イメージ内のパッケージを **pn-buildlist** という名前のファイルに保存し、コンソールにリスト表示します。
 
@@ -194,7 +196,9 @@ bitbake -g rpi-test-image && cat pn-buildlist | grep -v -e '-native' | grep -v d
 
 ##### パッケージの依存関係を表示する
 
-- bitbake -g < package > && cat pn-buildlist | grep -v -e '-native' | grep -v digraph | grep -v -e '-image' | awk '{print $1}' | sort | uniq
+```sh
+bitbake -g <package> && cat pn-buildlist | grep -v -e '-native' | grep -v digraph | grep -v -e '-image' | awk '{print $1}' | sort | uniq
+```
 
 このコマンドは、パッケージの依存関係を **pn-buildlist** という名前のファイルに保存し、コンソールにリスト表示します。
 
@@ -208,7 +212,9 @@ bitbake -g i2c-tools && cat pn-buildlist | grep -v -e '-native' | grep -v digrap
 
 ##### タスク依存関係エクスプローラー UI
 
-- bitbake < image > -g -u taskexp
+```sh
+bitbake <image> -g -u taskexp
+```
 
 これはタスク依存関係エクスプローラー UI を表示するのに役立ちます。タスク間の依存関係を表示します。
 
@@ -222,7 +228,9 @@ bitbake rpi-test-image -g -u taskexp
 
 ##### パッケージの devshell を起動する
 
-- bitbake < package > -c devshell
+```sh
+bitbake <package> -c devshell
+```
 
 このコマンドは、新しいシェルを開き、パッケージに必要なシステム値がすでに定義されています。
 
@@ -292,7 +300,9 @@ bitbake -s | grep openssl
 
 ##### 詳細なビルドログを保存
 
-- bitbake -v < image > 2>&1 | tee image_build.log
+```sh
+bitbake -v <image> 2>&1 | tee image_build.log
+```
 
 これにより、イメージのビルドが開始されると同時にコンソールに出力が表示され、詳細モードで**image_build.log**に出力が保存されます。
 
@@ -407,7 +417,7 @@ source toaster start webport=9000
 
   - Layer name: meta-raspberrypi
   - Where is the layer source code?: In a **Git repository**
-  - Git repository URL: <https://github.com/agherzan/meta-raspberrypi.git>
+  - Git repository URL: [https://github.com/agherzan/meta-raspberrypi.git](https://github.com/agherzan/meta-raspberrypi.git)
   - Git revision: 8dc3a310883ea87cd9900442f46f20bb08e57583
 
 - **ステップ 15.** **Import and add to project**をクリックします。
@@ -418,21 +428,21 @@ source toaster start webport=9000
 
   - Layer name: meta-qt5
   - Where is the layer source code?: In a **Git repository**
-  - Git repository URL: <https://github.com/meta-qt5/meta-qt5.git>
+  - Git repository URL: [https://github.com/meta-qt5/meta-qt5.git](https://github.com/meta-qt5/meta-qt5.git)
   - Git revision: master
 
 - **meta-seeed-reterminal**
 
   - Layer name: meta-seeed-reterminal
   - Where is the layer source code?: In a **Git repository**
-  - Git repository URL: <https://github.com/Seeed-Studio/meta-seeed-reterminal.git>
+  - Git repository URL: [https://github.com/Seeed-Studio/meta-seeed-reterminal.git](https://github.com/Seeed-Studio/meta-seeed-reterminal.git)
   - Git revision: main
 
 - **meta-oe**
 
   - Layer name: meta-oe
   - Where is the layer source code?: In a **Git repository**
-  - Git repository URL: <https://github.com/openembedded/meta-openembedded.git>
+  - Git repository URL: [https://github.com/openembedded/meta-openembedded.git](https://github.com/openembedded/meta-openembedded.git)
   - Repository subdirectory: meta-oe
   - Git revision: master
 
@@ -440,7 +450,7 @@ source toaster start webport=9000
 
   - Layer name: meta-python
   - Where is the layer source code?: In a **Git repository**
-  - Git repository URL: <https://github.com/openembedded/meta-openembedded.git>
+  - Git repository URL: [https://github.com/openembedded/meta-openembedded.git](https://github.com/openembedded/meta-openembedded.git)
   - Repository subdirectory: meta-python
   - Git revision: master
 

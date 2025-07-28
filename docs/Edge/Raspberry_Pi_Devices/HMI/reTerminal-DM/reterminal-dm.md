@@ -1383,6 +1383,8 @@ Then get the usb device with the Product ID number `5740`, In this case we get t
 
 ```sh
 sudo dmesg | grep 5740
+# Load ACM module
+sudo modprobe cdc_acm
 ```
 
 Then we could get the device port as follow:

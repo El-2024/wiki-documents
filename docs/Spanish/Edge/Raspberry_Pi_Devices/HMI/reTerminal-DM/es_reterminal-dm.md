@@ -300,7 +300,7 @@ El reTerminal DM se suministra con un voltaje nominal de 12~24 V. La alimentaci�
 ### PoE (opcional)
 
 :::note
-El producto estándar no incluye un módulo PoE por defecto. Seeed ofrece servicios de soldadura y montaje PoE para pedidos de personalización en lote a solicitud; por favor, contacta a <odm@seeed.cc>.
+El producto estándar no incluye un módulo PoE por defecto. Seeed ofrece servicios de soldadura y montaje PoE para pedidos de personalización en lote a solicitud; por favor, contacta a [odm@seeed.cc](mailto:odm@seeed.cc).
 :::
 
 Si se instala el módulo PoE, el puerto LAN1 del reTerminal DM puede recibir alimentación PoE, ofreciendo una forma cómoda y eficiente de alimentar el dispositivo a través de Ethernet. Esta opción simplifica el proceso de instalación y reduce la cantidad de cableado requerido, siendo ideal para aplicaciones con fuentes de alimentación limitadas o donde no haya tomas de corriente disponibles.
@@ -399,7 +399,7 @@ Si el LED ACT parpadea en un patrón irregular, entonces el arranque ha comenzad
 Si el LED ACT no parpadea, es posible que el código EEPROM esté dañado; intenta nuevamente sin tener nada conectado para asegurarte.<br/>
 Para más detalles, consulta el foro de Raspberry Pi:<br/>
 STICKY: Is your Pi not booting? (The Boot Problems Sticky) - Raspberry Pi Forums<br/>
-Para más información, visita: <https://forums.raspberrypi.com//viewtopic.php?f=28&t=58151><br/>
+Para más información, visita: [https://forums.raspberrypi.com//viewtopic.php?f=28&t=58151](https://forums.raspberrypi.com//viewtopic.php?f=28&t=58151)<br/>
 :::
 
 Para activar el LED USER, utiliza el siguiente comando:
@@ -1173,7 +1173,7 @@ La interfaz CSI de la cámara está reservada en la placa principal del reTermin
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/camera_version.png" /></div>
 
 :::note
-Ten en cuenta que la versión estándar del reTerminal DM no incluye una abertura para cámara en el panel frontal; por lo tanto, la funcionalidad de la cámara no está disponible en el producto estándar. Si tienes un requerimiento de cámara personalizada, por favor contacta a <odm@seeed.cc>.
+Ten en cuenta que la versión estándar del reTerminal DM no incluye una abertura para cámara en el panel frontal; por lo tanto, la funcionalidad de la cámara no está disponible en el producto estándar. Si tienes un requerimiento de cámara personalizada, por favor contacta a [odm@seeed.cc](mailto:odm@seeed.cc).
 :::
 
 ### Módulo 4G
@@ -1367,6 +1367,8 @@ En mi caso, nuestro WM1302 utiliza el "STMicroelectronics Virtual COM Port", obt
 
 ```sh
 sudo dmesg | grep 5740
+# Load ACM module
+sudo modprobe cdc_acm
 ```
 
 Luego, identifica el puerto USB utilizando:

@@ -180,7 +180,7 @@ FirefoxはESPデバイスのファームウェアフラッシュをサポート�
 
 2. **設定へのアクセス**:
    - 携帯電話またはPCを使用してネットワークに接続します。
-   - ブラウザを開き、<http://192.168.4.1>に移動します。
+   - ブラウザを開き、`http://192.168.4.1`に移動します。
    - ホームWi-FiネットワークのSSIDとパスワードを入力します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/ap_wireless_setting_page.png" style={{width:'auto', height:680, "border-radius": '15px'}}/></div>

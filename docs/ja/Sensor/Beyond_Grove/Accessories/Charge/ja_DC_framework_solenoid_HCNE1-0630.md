@@ -64,47 +64,15 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/DC_framework_solenoid_HCNE1-0630/img/HCNE1-0520-3-.jpg)
 
-<table>
-  <tbody><tr>
-      <th>No.
-      </th>
-      <th>名称
-      </th></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 1
-      </td>
-      <td width={150}> 固定フレーム
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 2
-      </td>
-      <td width={150}> カバー
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 3
-      </td>
-      <td width={150}> 可動コア
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 4
-      </td>
-      <td width={150}> 固定コア
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 5
-      </td>
-      <td width={150}> ソレノイド軸
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 6
-      </td>
-      <td width={150}> ソレノイド
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 7
-      </td>
-      <td width={150}> 導管
-      </td></tr></tbody></table>
+| No. | 名称 |
+|-----|------|
+| 1 | 固定フレーム |
+| 2 | カバー |
+| 3 | 可動コア |
+| 4 | 固定コア |
+| 5 | ソレノイド軸 |
+| 6 | ソレノイド |
+| 7 | 導管 |
 
 ![](https://files.seeedstudio.com/wiki/DC_framework_solenoid_HCNE1-0630/img/HCNE1-0520-4-.jpg)
 

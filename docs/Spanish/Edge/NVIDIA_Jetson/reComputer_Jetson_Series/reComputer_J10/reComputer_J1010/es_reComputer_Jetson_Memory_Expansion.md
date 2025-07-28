@@ -26,7 +26,7 @@ El primer sector del disco donde está instalado el sistema se llama **Master Bo
 1. En las dos fases anteriores, no necesitamos modificar la parte del kernel que carga los módulos funcionales con ramfs (fase 1), por lo que incluso si la reComputer se ha expandido, aún necesitarás usar el eMMC.
 2. Lo que necesitamos modificar es la segunda fase, que monta el sistema de archivos raíz en la memoria externa, permitiendo así la expansión.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/2.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/2.png" /></div>
 
 ## Notas sobre la expansión de la capacidad
 
@@ -56,22 +56,19 @@ Los SSD, también conocidos como unidades de estado sólido, se utilizan a menud
       <td align="center">110061381</td>
     </tr>
     <tr>
-      <th align="center">Vista lateral
-      </th><td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
-      <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
-      <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
-      <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
+      <th align="center">Vista lateral</th><td align="center"><div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
+      <td align="center"><div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
+      <td align="center"><div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
+      <td align="center"><div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
     </tr>
     <tr>
-      <th align="center">Módulo equipado
-      </th><td align="center">Jetson Nano 4G</td>
+      <th align="center">Módulo equipado</th><td align="center">Jetson Nano 4G</td>
       <td align="center">Jetson Xavier NX 8GB</td>
       <td align="center">Jetson Xavier NX 16GB</td>
       <td align="center">Jetson Xavier NX 8GB</td>
     </tr>
     <tr>
-      <th align="center">Carrier Board
-      </th><td align="center">Jetson A206</td>
+      <th align="center">Carrier Board</th><td align="center">Jetson A206</td>
       <td align="center">Jetson A206</td>
       <td align="center">Jetson A206</td>
       <td align="center">J202</td>
@@ -108,7 +105,7 @@ Se deben cumplir las siguientes condiciones para la solución de expansión medi
     La versión actualizada de JetPack no ha sido probada para expansión, por lo que no se puede garantizar la estabilidad o el éxito de la expansión. Sigue este tutorial cuidadosamente.
 
     El SSD debe ser M.2 M-Key; de lo contrario, no coincidirá con la interfaz de la placa portadora.
-    <div align=center><img width = 300 src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/3.jpeg"/></div>
+    <div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/3.jpeg"/></div>
 
     Los dispositivos de almacenamiento con sistemas de archivos de cuarta generación no extendidos (Ext4) no pueden completar las operaciones de expansión.
 
@@ -122,31 +119,31 @@ Sigue los pasos de las [instrucciones de Hardware](https://wiki.seeedstudio.com/
 
 Utiliza el acceso directo `Ctrl+F` o haz click en el icono de Ubuntu en la esquina superior izquierda para buscar **Disks** y abre la herramienta Disks (Discos) que viene con Ubuntu 18.04.
 
-<div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/1.png" /></div>
+<div align="center"><img width="500" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/1.png" /></div>
 
 Selecciona tu SSD en el lado izquierdo y luego selecciona **Format Disk** en la esquina superior derecha debajo de la barra de menú.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/ssd1.jpg" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/ssd1.jpg" /></div>
 
 
 Formatea tu SSD al formato GPT. Aparecerá una ventana emergente pidiéndote que confirmes e ingreses tu contraseña de usuario.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/ssd3.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/ssd3.png" /></div>
 
 
 Luego, hacemos click en el **+** central para agregar un carácter de disco.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/ssd6.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/ssd6.png" /></div>
 
 
 Haz click en "Next" (Siguiente).
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/ssd7.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/ssd7.png" /></div>
 
 
 Asigna un nombre a tu SSD, selecciona **Ext4** en el tipo y haz click en "Create". En este punto, hemos completado la preparación del SSD de acuerdo con los requisitos de expansión.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/ssd8.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/ssd8.png" /></div>
 
 
 **Paso 3.** Crea el directorio raíz del SSD
@@ -172,15 +169,15 @@ Ejecuta el siguiente comando para completar la configuración de rootfs.
 $ ./setup-service.sh
 ```
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/9.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/9.png" /></div>
 
 Cuando reinicies la reComputer, verás que el eMMC se ha convertido en un dispositivo de almacenamiento externo en la interfaz principal y verás que la huella del sistema se ha reducido, por lo que la expansión fue exitosa.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/11.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/11.png" /></div>
 
 ¡¡¡Atención!!!
     La ruta SSD predeterminada en el archivo de secuencia de comandos es `/dev/nvme0n1p1`, que también es la ruta asignada de forma predeterminada por la reComputer. Si descubres que la ruta de tu SSD no coincide con el comando `sudo fdisk -l`, cambia la ruta de todos los `/dev/nvme0n1p1` en los archivos **copy-rootfs-ssd.sh**, **data/setssdroot.service** y **data/setssdroot.sh** en rootOnNVMe a la ruta donde se encuentra tu SSD.
-   <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/21.png" /></div>
+   <div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/21.png" /></div>
 
 
     La expansión anterior no eliminará el contenido del directorio raíz original del eMMC. Si no deseas arrancar desde el SSD, puedes quitar el SSD y el sistema seguirá arrancando desde el eMMC.
@@ -199,16 +196,13 @@ Los dispositivos de almacenamiento USB, como unidades flash USB y discos duros m
       </th><td align="center">110061362</td>
     </tr>
     <tr>
-      <th align="center">Vista lateral
-      </th><td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview3_1.png" /></div></td>
+      <th align="center">Vista lateral</th><td align="center"><div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview3_1.png" /></div></td>
     </tr>
     <tr>
-      <th align="center">Módulo equipado
-      </th><td align="center">Jetson Nano 4G</td>
+      <th align="center">Módulo equipado</th><td align="center">Jetson Nano 4G</td>
     </tr>
     <tr>
-      <th align="center">Carrier Board
-      </th><td align="center">Carrier Board J1010</td>
+      <th align="center">Carrier Board</th><td align="center">Carrier Board J1010</td>
     </tr>
   </tbody>
 </table>
@@ -264,31 +258,31 @@ $ cd bootFromUSB
 
 Conecta un dispositivo de almacenamiento USB a tu computadora y abre la herramienta Discos que viene con Ubuntu 18.04 usando el acceso directo `Ctrl+F` o haciendo click en el ícono de Ubuntu en la esquina superior izquierda y buscando **Discos**.
 
-<div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/1.png" /></div>
+<div align="center"><img width="500" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/1.png" /></div>
 
 Selecciona tu dispositivo de almacenamiento USB en el lado izquierdo y luego selecciona **Formatear disco** en la esquina superior derecha debajo de la barra de menú.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/sd1.jpg" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/sd1.jpg" /></div>
 
 
 Formatea tu dispositivo de almacenamiento USB al formato GPT. Aparecerá una ventana emergente pidiéndote que confirmes e ingreses tu contraseña de usuario.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/sd2.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/sd2.png" /></div>
 
 
 Luego, hacemos click en el **+** central para agregar un carácter de disco.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/sd4.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/sd4.png" /></div>
 
 
 Haz click en "Next" (Siguiente).
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/sd5.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/sd5.png" /></div>
 
 
 Asigna un nombre a tu dispositivo de almacenamiento USB, selecciona **Ext4** en el tipo y haz click en "Create". En este punto, hemos completado la preparación del dispositivo de almacenamiento USB de acuerdo con los requisitos de expansión.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/sd6.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/sd6.png" /></div>
 
 
 **Paso 3.** Montaje de un dispositivo de almacenamiento USB
@@ -298,7 +292,7 @@ El dispositivo de almacenamiento USB preparado según el **paso 2** se puede ver
 !!!Nota
   Si descubres que tu dispositivo USB se montó automáticamente después de formatear, omite este paso.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/60.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/60.png" /></div>
 
 
 Usamos el siguiente comando para montar el dispositivo USB.
@@ -432,7 +426,7 @@ LABEL primary
 
 Guarda el archivo y reinicia la reComputer, la raíz del sistema cambiará al dispositivo de almacenamiento USB y la expansión estará completa.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/62.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/62.png" /></div>
 
 
 ## Restaurar la copia de seguridad del sistema a través de la consola serial
@@ -447,20 +441,16 @@ Cuando tu sistema no arranca correctamente debido a un error o por alguna otra r
       <th align="center">Descripción</th>  
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/7.jpeg" /></div>
-      </th><td align="left">Ubuntu host x1</td>
+      <th align="center"><div align="center"><img width="100" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/7.jpeg" /></div></th><td align="left">Ubuntu host x1</td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/reComputerheadline.png" /></div>
-      </th><td align="left">No se puede acceder al sistema reComputer Jetson x1</td>
+      <th align="center"><div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/reComputerheadline.png" /></div></th><td align="left">No se puede acceder al sistema reComputer Jetson x1</td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/5.png" /></div>
-      </th><td align="left"><a href="https://www.seeedstudio.com/USB-To-Uart-5V-3V3-p-1832.html?queryID=cb30ad1a9d75c9ef437912535186b130&objectID=1112&indexName=bazaar_retailer_products">Módulo UART a USB x1</a></td>
+      <th align="center"><div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/5.png" /></div></th><td align="left"><a href="https://www.seeedstudio.com/USB-To-Uart-5V-3V3-p-1832.html?queryID=cb30ad1a9d75c9ef437912535186b130&objectID=1112&indexName=bazaar_retailer_products">Módulo UART a USB x1</a></td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/6.png" /></div>
-      </th><td align="left"><a href="https://www.seeedstudio.com/1-pin-dual-female-jumper-wire-100mm-50pcs-pack-p-260.html?queryID=a51c4491cb6b462a1e844c832c98c52a&objectID=2042&indexName=bazaar_retailer_products">Cable Dupont Hembra - hembra x3</a></td>
+      <th align="center"><div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/6.png" /></div></th><td align="left"><a href="https://www.seeedstudio.com/1-pin-dual-female-jumper-wire-100mm-50pcs-pack-p-260.html?queryID=a51c4491cb6b462a1e844c832c98c52a&objectID=2042&indexName=bazaar_retailer_products">Cable Dupont Hembra - hembra x3</a></td>
     </tr>
   </tbody>
 </table>
@@ -474,7 +464,7 @@ Conecta la reComputer al módulo UART a USB de acuerdo con las instrucciones de 
 
 <table align="center">
   <tbody><tr>
-      <td colSpan={3}><div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/8.jpeg" /></div></td>
+      <td colSpan={3}><div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/8.jpeg" /></div></td>
     </tr>
     <tr>
       <td align="center">reComputer</td>
@@ -523,7 +513,7 @@ ingresa el comando para iniciar minicom.
 $ sudo minicom
 ```
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/40.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/40.png" /></div>
 
 **Paso 3.** Configurar minicom
 
@@ -534,7 +524,7 @@ la tecla **o** del teclado para acceder a la pantalla de configuración.
 Utiliza las teclas de flecha hacia arriba y hacia abajo del teclado para 
 controlar el cursor y moverse a **Serial port setup**.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/41.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/41.png" /></div>
 
 **Paso 4.** Conexión de la reComputer al host de Ubuntu
 
@@ -552,7 +542,7 @@ comandos mostrará el nombre del dispositivo recién conectado,
 necesitamos encontrar el fragmento que comienza con **tty** y 
 escribirlo.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/44.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/44.png" /></div>
 
 **Step 5.** Operación U-boot
 
@@ -560,19 +550,19 @@ Regresa a minicom y completa el nombre del dispositivo obtenido
 en **paso 4** en **Serial Device**. Además, verifica si la 
 velocidad en baudios está configurada en **115200**.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/42.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/42.png" /></div>
 
 Después de modificar, ingresA para guardar. Selecciona 
 **Save setup as dfl** y sal de la interfaz 
 de minicom.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/43.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/43.png" /></div>
 
 Vuelve a ingresar el comando `sudo minicom` y después de 
 ingresar minicom, veremos la información de inicio de la 
 computadora en la ventana.
 
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/45.png" /></div>
+<div align="center"><img width="800" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/45.png" /></div>
 
 Podemos solucionar el motivo por el que la reComputer no 
 arranca utilizando la información devuelta y utilizando 

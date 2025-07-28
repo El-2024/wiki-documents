@@ -192,7 +192,7 @@ root@mylinkit:~#
 上記の方法で Wi-Fi に接続できない場合は、`firstboot` コマンドを入力してファクトリーリセットを行ってください。
 :::
 
-Wi-Fi 機能が有効になった後、以下のコマンドを使用して SSH を介して ReSpeaker に接続できます。ReSpeaker の IP アドレスは <http://192.168.100.1/#!/overview> の WAN IP から取得できます。パスワードは `root` です。
+Wi-Fi 機能が有効になった後、以下のコマンドを使用して SSH を介して ReSpeaker に接続できます。ReSpeaker の IP アドレスは [http://192.168.100.1/#!/overview](http://192.168.100.1/#!/overview) の WAN IP から取得できます。パスワードは `root` です。
 
 ```
 ssh root@ssh *.*.*.*
@@ -552,13 +552,13 @@ orangectl passwd root 12345678  //12345678を設定したいパスワードに�
 **Q17: ReSpeakerが音声がないのに頻繁に起動する**
 
 - `keyword.txt`内のしきい値を増やすことで誤検出率を下げることができますが、感度も低下します。
-- 別の方法として、現在の音響モジュールに声を適応させることができます。詳細は<http://cmusphinx.sourceforge.net/wiki/tutorialadapt>をご覧ください。
+- 別の方法として、現在の音響モジュールに声を適応させることができます。詳細は[http://cmusphinx.sourceforge.net/wiki/tutorialadapt](http://cmusphinx.sourceforge.net/wiki/tutorialadapt)をご覧ください。
 - これにより個別のキーワード認識が効果的に向上しますが、認識器の一般性が低下する可能性があります。
 
 **Q18: ReSpeakerからGPIOピンを制御する方法**
 
-- <https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/gpio.py>を使用できます。
-- GPIOを使用してSPIをシミュレートする例は<https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/spi.py>にあります。
+- [https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/gpio.py](https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/gpio.py)を使用できます。
+- GPIOを使用してSPIをシミュレートする例は[https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/spi.py](https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/spi.py)にあります。
 
 **Q19: ウェイクアップワードを変更する方法**
 
@@ -593,7 +593,7 @@ orangectl passwd root 12345678  //12345678を設定したいパスワードに�
 
 **Q20: 工場イメージによるシステム復旧**
 
-注意: Web経由でReSpeakerを更新できない場合、または<http://192.168.100.1/home.html>にアクセスできない場合は、[こちら](https://s3-us-west-2.amazonaws.com/respeaker.io/firmware/ramips-openwrt-latest-LinkIt7688-squashfs-sysupgrade.bin)をクリックして最新のファームウェアをコンピュータにダウンロードし、SDカードにコピーしてReSpeakerに挿入してください。
+注意: Web経由でReSpeakerを更新できない場合、または[http://192.168.100.1/home.html](http://192.168.100.1/home.html)にアクセスできない場合は、[こちら](https://s3-us-west-2.amazonaws.com/respeaker.io/firmware/ramips-openwrt-latest-LinkIt7688-squashfs-sysupgrade.bin)をクリックして最新のファームウェアをコンピュータにダウンロードし、SDカードにコピーしてReSpeakerに挿入してください。
 
 ReSpeakerの[シリアルコンソール](https://github.com/respeaker/get_started_with_respeaker/blob/master/docs/ReSpeaker/QuickStart.md#serial-console)に接続し、以下のコマンドを入力してファームウェアを更新してください：
 

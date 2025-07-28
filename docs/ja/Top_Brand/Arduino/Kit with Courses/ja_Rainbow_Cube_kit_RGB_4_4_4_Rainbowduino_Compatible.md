@@ -24,11 +24,9 @@ surveyurl: https://www.research.net/r/Rainbow_Cube_kit_RGB_4x4x4_Rainbowduino_Co
 sku:  110060007
 --- -->
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow-3.jpg" /><figcaption><b /><i>ランダムな色で点灯するRainbow Cube Kit</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow-3.jpg" /><figcaption><b></b><i>ランダムな色で点灯するRainbow Cube Kit</i></figcaption></div>
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbowcuben.jpg" /><figcaption><b /><i>未組み立てのRainbow Cube Kit</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbowcuben.jpg" /><figcaption><b></b><i>未組み立てのRainbow Cube Kit</i></figcaption></div>
 
 <p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/Rainbow-Cube-kit-RGB-4X4X4-Rainbowduino-Compatible.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now.png" border={0} /></a></p>
 
@@ -44,59 +42,9 @@ sku:  110060007
 
 ---
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow-2.jpg" /><figcaption><b /><i /></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow-2.jpg" /><figcaption><b></b><i></i></figcaption></div>
 
-<table >
-<tr>
-<td width="300px">1. 8mm RGB LED x70
-</td>
-<td width="300px">2. キューブパネル X1
-</td>
-<td width="300px">3. スリムパネルPCB X4
-</td></tr>
-<tr>
-<td>4. 側面AスリムPCB X4
-</td>
-<td>5. 側面BスリムPCB X4
-</td>
-<td>6. 2.54mm 40ピンオスヘッダー X5
-</td></tr>
-<tr>
-<td>7. 2.54mm 40ピンメスヘッダー X2
-</td>
-<td>8. 2.54mm 16ピンメスヘッダー X3
-</td>
-<td>9. 2.0mm 10ピンメスヘッダー X2
-</td></tr>
-<tr>
-<td>10. 8ピンメスヘッダー X5
-</td>
-<td>11. 2X3メスヘッダー X1
-</td>
-<td>12. JST電源ケーブル X1
-</td></tr>
-<tr>
-<td>13. 3.5mm 4ピン緑端子 X1
-</td>
-<td>14. 3.5mm DCジャック X1
-</td>
-<td>15. 3mm LED赤 X1
-</td></tr>
-<tr>
-<td>16. 3mm LED緑 X1
-</td>
-<td>17. 1K 1/8W抵抗 X4
-</td>
-<td>18. 10K 1/8W抵抗 X1
-</td></tr>
-<tr>
-<td>19. 15K 1/8W抵抗 X1
-</td>
-<td>20. 線形電圧レギュレーター X1
-</td>
-<td>21. 10uF_16V_E-CAP X2
-</td></tr></table>
+<table><tr><td width="300px">1. 8mm RGB LED x70</td><td width="300px">2. キューブパネル X1</td><td width="300px">3. スリムパネルPCB X4</td></tr><tr><td>4. 側面AスリムPCB X4</td><td>5. 側面BスリムPCB X4</td><td>6. 2.54mm 40ピンオスヘッダー X5</td></tr><tr><td>7. 2.54mm 40ピンメスヘッダー X2</td><td>8. 2.54mm 16ピンメスヘッダー X3</td><td>9. 2.0mm 10ピンメスヘッダー X2</td></tr><tr><td>10. 8ピンメスヘッダー X5</td><td>11. 2X3メスヘッダー X1</td><td>12. JST電源ケーブル X1</td></tr><tr><td>13. 3.5mm 4ピン緑端子 X1</td><td>14. 3.5mm DCジャック X1</td><td>15. 3mm LED赤 X1</td></tr><tr><td>16. 3mm LED緑 X1</td><td>17. 1K 1/8W抵抗 X4</td><td>18. 10K 1/8W抵抗 X1</td></tr><tr><td>19. 15K 1/8W抵抗 X1</td><td>20. 線形電圧レギュレーター X1</td><td>21. 10uF_16V_E-CAP X2</td></tr></table>
 
 ## 特徴
 
@@ -132,8 +80,7 @@ sku:  110060007
 
 * 3.3V
 
-<dl><dt>LED</dt><dd>
-</dd></dl>
+<dl><dt>LED</dt><dd></dd></dl>
 
 * **8mm**共通アノードRGB LED。
 
@@ -147,18 +94,15 @@ sku:  110060007
 
 すべてのピンは以下のパネルボードからアクセス可能です。
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube_Panel_Bottom.jpg" /><figcaption><b /><i>パネルボード（底面図）</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube_Panel_Bottom.jpg" /><figcaption><b></b><i>パネルボード（底面図）</i></figcaption></div>
 
 * **Rainbow Cube**キットは、**Rainbowduino**のようなRGB LEDドライバボードに接続するための**2 x 16ピンヘッダー**を提供します。
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_pin_diagram.png" /><figcaption><b /><i>**2 x 16**ピンヘッダーコネクタ</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_pin_diagram.png" /><figcaption><b></b><i>**2 x 16**ピンヘッダーコネクタ</i></figcaption></div>
 
 * **xBeeソケット**
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/XBee_PinOut.jpeg" /><figcaption><b /><i>**2 x 16**ピンヘッダーコネクタ</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/XBee_PinOut.jpeg" /><figcaption><b></b><i>**2 x 16**ピンヘッダーコネクタ</i></figcaption></div>
 
 * **DCジャックピン**
 
@@ -178,8 +122,7 @@ sku:  110060007
 
 * [組み立て手順をダウンロードして読む](https://www.seeedstudio.com/depot/docu/CUBE.pdf)
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow-1.jpg" /><figcaption><b /><i>RGB Rainbow Cube Kit（組み立て済み）</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow-1.jpg" /><figcaption><b></b><i>RGB Rainbow Cube Kit（組み立て済み）</i></figcaption></div>
 
 ## 機械的寸法
 
@@ -205,8 +148,7 @@ sku:  110060007
 
 * LEDの実際の3D位置は、以下の写真に示されています。
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube_LED_3D_Coordinates.png" /><figcaption><b /><i /></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube_LED_3D_Coordinates.png" /><figcaption><b></b><i></i></figcaption></div>
 
 * **2D RGB LEDマトリックス**のX,Y座標は、以下のように**RGB Cubeキット**のブロック図にマッピングされています：
 
@@ -224,11 +166,9 @@ sku:  110060007
 
 * **Rainbow Cube Kit** の 2x16 ピンヘッダーを **Rainbowduino** に接続します。以下の図を参照してください。
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube_Installation_1.jpg" /><figcaption><b /><i>配置</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube_Installation_1.jpg" /><figcaption><b></b><i>配置</i></figcaption></div>
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube_Installation_2.jpg" /><figcaption><b /><i>**Rainbowduino** を **Rainbow Cube Kit** に正しく接続した状態</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube_Installation_2.jpg" /><figcaption><b></b><i>**Rainbowduino** を **Rainbow Cube Kit** に正しく接続した状態</i></figcaption></div>
 
 **Rainbowduino** を **Rainbow Cube Kit** に正しく接続した状態
 
@@ -273,8 +213,7 @@ void loop()
 
 出力
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube1.jpg" /><figcaption><b /><i>配置</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube1.jpg" /><figcaption><b></b><i>配置</i></figcaption></div>
 
 #### アプリケーションプログラミングインターフェース (API)
 
@@ -369,8 +308,7 @@ void loop()
 
 出力
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube2.jpg" /><figcaption><b /><i>配置</i></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube2.jpg" /><figcaption><b></b><i>配置</i></figcaption></div>
 
 * このデモでは、すべての LED がランダムな色で塗られます。5 秒の遅延後、キューブ全体が再びランダムな色で塗り直されます。
 
@@ -410,8 +348,7 @@ void loop()
 
 出力
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube3.jpg" /><figcaption><b /><i /></figcaption>
-</div>
+<div align="center"><img src="https://files.seeedstudio.com/wiki/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/img/Rainbow_Cube3.jpg" /><figcaption><b></b><i></i></figcaption></div>
 
 ### サードパーティのデモ
 

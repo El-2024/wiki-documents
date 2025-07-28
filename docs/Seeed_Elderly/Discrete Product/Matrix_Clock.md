@@ -44,45 +44,46 @@ Based on the Arduino Leonardo, the Matrix Clock is fully compatible with the Ard
 
 <table>
 <tr>
-<td> Microcontroller </td>
-<td> Atmel ATmega32u4 in TQFP-44 package
-</td></tr>
+<td>Microcontroller</td>
+<td>Atmel ATmega32u4 in TQFP-44 package</td>
+</tr>
 <tr>
-<td> Operating Voltage </td>
-<td> 5V USB powered or 6V to 9V
-</td></tr>
+<td>Operating Voltage</td>
+<td>5V USB powered or 6V to 9V</td>
+</tr>
 <tr>
-<td> Power and communications </td>
-<td> USB Micro B
-</td></tr>
+<td>Power and communications</td>
+<td>USB Micro B</td>
+</tr>
 <tr>
-<td> Current </td>
-<td> Approx 90mA average during normal operation  Max. 300mA
-</td></tr>
+<td>Current</td>
+<td>Approx 90mA average during normal operation  Max. 300mA</td>
+</tr>
 <tr>
-<td> LED Matrix </td>
-<td> 2x 8x8 3mm green  LEDs
-</td></tr>
+<td>LED Matrix</td>
+<td>2x 8x8 3mm green  LEDs</td>
+</tr>
 <tr>
-<td> Clock speed </td>
-<td> Microcontroler 16MHz, RTCC 32.7
-</td></tr>
+<td>Clock speed</td>
+<td>Microcontroler 16MHz, RTCC 32.7</td>
+</tr>
 <tr>
-<td> SRAM </td>
-<td> 2.5 KB
-</td></tr>
+<td>SRAM</td>
+<td>2.5 KB</td>
+</tr>
 <tr>
-<td> EEPROM </td>
-<td> 1 KB
-</td></tr>
+<td>EEPROM</td>
+<td>1 KB</td>
+</tr>
 <tr>
-<td> Flash Memory </td>
-<td> 32 KB
-</td></tr>
+<td>Flash Memory</td>
+<td>32 KB</td>
+</tr>
 <tr>
-<td> Expansion Header </td>
-<td> Gnd, Vin, 5V, Sleep, Piezo-, Pezo+
-</td></tr></table>
+<td>Expansion Header</td>
+<td>Gnd, Vin, 5V, Sleep, Piezo-, Pezo+</td>
+</tr>
+</table>
 
 ##  Schematic
 ---

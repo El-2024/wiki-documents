@@ -105,7 +105,7 @@ Pulsa en “Escanear Redes”, selecciona la red Wi-Fi e ingresa la contraseña;
 Sigue las instrucciones de la App para agregar el hotspot a la red Helium.
 
 **NOTA:** Las tarifas de activación y confirmación de ubicación **NO están incluidas**.  
-Necesitarás **1,000,000 Helium Data Credits ($10)** para la activación y **500,000 Data Credits ($5)** para confirmar la ubicación.  
+Necesitarás **1,000,000 Helium Data Credits (\$10)** para la activación y **500,000 Data Credits (\$5)** para confirmar la ubicación.  
 Puedes cambiar HNT por créditos dentro de la cartera Helium. Asegúrate de tener suficientes créditos antes de iniciar el proceso.
 
 *   Confirma la Ubicación del Hotspot

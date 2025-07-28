@@ -37,83 +37,62 @@ Starter bundle harness is a board  keeping the component of grove-starter bundle
 ##   Bill of Materials (BOM) /parts list
 
 <table >
-<tr>
-<th>Devic
-</th>
-<th>Value
-</th>
-<th>Details（size:mm)
-</th></tr>
-<tr>
-<td width="200px"> Plastic Board(FEG)
-</td>
-<td> 1
-</td>
-<td width="200px"> 115x172x2
-</td></tr>
-<tr>
-<td width="200px"> Screw
-</td>
-<td> 4
-</td>
-<td width="400px"> pm2.5x12
-</td></tr>
-<tr>
-<td width="200px"> Nut
-</td>
-<td> 4
-</td>
-<td width="200px"> m2.5
-</td></tr>
-<tr>
-<td width="200px"> Paper washer
-</td>
-<td> 4
-</td>
-<td width="400px">id3od7h2 (external diameter 3, internal diameter 7 ,thickness 2)
-</td></tr>
-<tr>
-<td width="200px"> Paper washer
-</td>
-<td> 3
-</td>
-<td width="400px">id3od7h4(external diameter 3, internal diameter 7 ,thickness 4)
-</td></tr>
-<tr>
-<td width="200px"> Nut
-</td>
-<td> 4
-</td>
-<td width="200px"> m3
-</td></tr>
-<tr>
-<td width="200px"> Hexagon plastic pillar（with screw）
-</td>
-<td> 4
-</td>
-<td width="400px"> m3x25
-</td></tr>
-<tr>
-<td width="200px"> Plastic rivet
-</td>
-<td> 25
-</td>
-<td width="400px"> 2.0X6.4(diameter 2 length 6.4 ,black)
-</td></tr>
-<tr>
-<td width="200px"> Plastic rivet
-</td>
-<td> 3
-</td>
-<td width="400px"> 3.0X10(diameter 3 length 10 ,black)
-</td></tr>
-<tr>
-<td width="200px"> Plastic Bag
-</td>
-<td> 1
-</td>
-<td width="400px"> 200X150
-</td></tr></table>
+  <tr>
+    <th>Devic</th>
+    <th>Value</th>
+    <th>Details（size:mm)</th>
+  </tr>
+  <tr>
+    <td width="200px"> Plastic Board(FEG)</td>
+    <td>1</td>
+    <td width="200px">115x172x2</td>
+  </tr>
+  <tr>
+    <td width="200px"> Screw</td>
+    <td>4</td>
+    <td width="400px">pm2.5x12</td>
+  </tr>
+  <tr>
+    <td width="200px"> Nut</td>
+    <td>4</td>
+    <td width="200px">m2.5</td>
+  </tr>
+  <tr>
+    <td width="200px"> Paper washer</td>
+    <td>4</td>
+    <td width="400px">id3od7h2 (external diameter 3, internal diameter 7 ,thickness 2)</td>
+  </tr>
+  <tr>
+    <td width="200px"> Paper washer</td>
+    <td>3</td>
+    <td width="400px">id3od7h4(external diameter 3, internal diameter 7 ,thickness 4)</td>
+  </tr>
+  <tr>
+    <td width="200px"> Nut</td>
+    <td>4</td>
+    <td width="200px">m3</td>
+  </tr>
+  <tr>
+    <td width="200px"> Hexagon plastic pillar（with screw）</td>
+    <td>4</td>
+    <td width="400px">m3x25</td>
+  </tr>
+  <tr>
+    <td width="200px"> Plastic rivet</td>
+    <td>25</td>
+    <td width="400px">2.0X6.4(diameter 2 length 6.4 ,black)</td>
+  </tr>
+  <tr>
+    <td width="200px"> Plastic rivet</td>
+    <td>3</td>
+    <td width="400px">3.0X10(diameter 3 length 10 ,black)</td>
+  </tr>
+  <tr>
+    <td width="200px"> Plastic Bag</td>
+    <td>1</td>
+    <td width="400px">200X150</td>
+  </tr>
+</table>
 
 ##   Resources
 

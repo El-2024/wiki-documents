@@ -59,154 +59,121 @@ last_update:
 
 <table cellpadding="1" cellspacing="1">
 <tr>
-<th scope="row"> Microprocessor
-</th>
-<td> FT232RL
-</td></tr>
+<th scope="row">Microprocessor</th>
+<td>FT232RL</td>
+</tr>
 <tr>
-<th scope="row"> PCB size
-</th>
-<td> 35mm x 20mm
-</td></tr>
+<th scope="row">PCB size</th>
+<td>35mm x 20mm</td>
+</tr>
 <tr>
-<th scope="row"> Indicators
-</th>
-<td> POWER - Green LED, RX and TX - Red LEDs
-</td></tr>
+<th scope="row">Indicators</th>
+<td>POWER - Green LED, RX and TX - Red LEDs</td>
+</tr>
 <tr>
-<th scope="row"> Power supply
-</th>
-<td> 3.3V and 5V DC
-</td></tr>
+<th scope="row">Power supply</th>
+<td>3.3V and 5V DC</td>
+</tr>
 <tr>
-<th scope="row"> Interface
-</th>
-<td> Mini-B USB, 2.54mm pitch pin header
-</td></tr>
+<th scope="row">Interface</th>
+<td>Mini-B USB, 2.54mm pitch pin header</td>
+</tr>
 <tr>
-<th scope="row"> Seeeduino Programming Port
-</th>
-<td> 20 Pin FPC socket
-</td></tr>
+<th scope="row">Seeeduino Programming Port</th>
+<td>20 Pin FPC socket</td>
+</tr>
 <tr>
-<th scope="row"> Connectivity
-</th>
-<td> USB
-</td></tr>
+<th scope="row">Connectivity</th>
+<td>USB</td>
+</tr>
 <tr>
-<th scope="row"> Communication Protocol
-</th>
-<td> UART, Bit Bang I/O, SPI
-</td></tr></table>
+<th scope="row">Communication Protocol</th>
+<td>UART, Bit Bang I/O, SPI</td>
+</tr>
+</table>
 
 ###   Electrical Characterstics  
 
-<table >
+<table>
 <tr>
-<th> Specification
-</th>
-<th> Minimum
-</th>
-<th> Typical
-</th>
-<th> Maximum
-</th>
-<th> Unit
-</th></tr>
+<th>Specification</th>
+<th>Minimum</th>
+<th>Typical</th>
+<th>Maximum</th>
+<th>Unit</th>
+</tr>
 <tr>
-<td> Input voltage
-</td>
-<td> -
-</td>
-<td> 5
-</td>
-<td> 5
-</td>
-<td> Vdc
-</td></tr>
+<td>Input voltage</td>
+<td>-</td>
+<td>5</td>
+<td>5</td>
+<td>Vdc</td>
+</tr>
 <tr>
-<td> Current Consumption
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td> 500
-</td>
-<td> mA
-</td></tr>
+<td>Current Consumption</td>
+<td>-</td>
+<td>-</td>
+<td>500</td>
+<td>mA</td>
+</tr>
 <tr>
-<td> Output voltage
-</td>
-<td> 3.3
-</td>
-<td> -
-</td>
-<td> 5
-</td>
-<td> Vdc
-</td></tr></table>
+<td>Output voltage</td>
+<td>3.3</td>
+<td>-</td>
+<td>5</td>
+<td>Vdc</td>
+</tr>
+</table>
 
 ##   Pin definition and Rating  
 
 ![](https://files.seeedstudio.com/wiki/UartSB_Frame/img/UartSB_Frame_Outline_35mmx20mm.png)
 
-<table >
+<table>
 <tr>
-<th> Pad Name
-</th>
-<th> Description
-</th></tr>
+<th>Pad Name</th>
+<th>Description</th>
+</tr>
 <tr>
-<td width="100px"> GND
-</td>
-<td width="450px"> Ground pin
-</td></tr>
+<td width="100px">GND</td>
+<td width="450px">Ground pin</td>
+</tr>
 <tr>
-<td width="100px"> 3v3
-</td>
-<td width="450px"> 3.3V Power Supply
-</td></tr>
+<td width="100px">3v3</td>
+<td width="450px">3.3V Power Supply</td>
+</tr>
 <tr>
-<td width="100px"> 5V
-</td>
-<td width="450px"> 5V Power supply from USB Port
-</td></tr>
+<td width="100px">5V</td>
+<td width="450px">5V Power supply from USB Port</td>
+</tr>
 <tr>
-<td> RXD
-</td>
-<td> UART Data input
-</td></tr>
+<td>RXD</td>
+<td>UART Data input</td>
+</tr>
 <tr>
-<td> TXD
-</td>
-<td> UART Data output
-</td></tr>
+<td>TXD</td>
+<td>UART Data output</td>
+</tr>
 <tr>
-<td width="100px"> CTS
-</td>
-<td width="450px"> UART Clear to Send Signal
-</td></tr>
+<td width="100px">CTS</td>
+<td width="450px">UART Clear to Send Signal</td>
+</tr>
 <tr>
-<td width="100px"> RTS
-</td>
-<td width="450px"> UART Request to Send Signal
-</td></tr>
+<td width="100px">RTS</td>
+<td width="450px">UART Request to Send Signal</td>
+</tr>
 <tr>
-<td width="100px"> DTR
-</td>
-<td width="450px"> UART Data Terminal Ready Signal
-</td></tr>
+<td width="100px">DTR</td>
+<td width="450px">UART Data Terminal Ready Signal</td>
+</tr>
 <tr>
-<td width="100px"> DCD
-</td>
-<td width="450px"> UART Data Carrier Detect Signal
-</td></tr>
+<td width="100px">DCD</td>
+<td width="450px">UART Data Carrier Detect Signal</td>
+</tr>
 <tr>
-<td width="100px"> DSR
-</td>
-<td width="450px"> UART Data Set Ready Signal
-</td></tr>
+<td width="100px">DSR</td>
+<td width="450px">UART Data Set Ready Signal</td>
+</tr>
 </table>
 
 ##  Usage
@@ -309,52 +276,44 @@ This is a special mode which requires reprogramming of FT232RL EEPROM. This uses
 
 **Table: Bit-Bang I/O Mapping**
 
-<table >
+<table>
 <tr>
-<th> UartSB Frame Signal
-</th>
-<th> BitBang I/O Signal
-</th></tr>
+<th>UartSB Frame Signal</th>
+<th>BitBang I/O Signal</th>
+</tr>
 <tr>
-<td> TxD
-</td>
-<td> D0
-</td></tr>
+<td>TxD</td>
+<td>D0</td>
+</tr>
 <tr>
-<td> RxD
-</td>
-<td> D1
-</td></tr>
+<td>RxD</td>
+<td>D1</td>
+</tr>
 <tr>
-<td> RTS
-</td>
-<td> D2
-</td></tr>
+<td>RTS</td>
+<td>D2</td>
+</tr>
 <tr>
-<td> CTS
-</td>
-<td> D3
-</td></tr>
+<td>CTS</td>
+<td>D3</td>
+</tr>
 <tr>
-<td> DTR
-</td>
-<td> D4
-</td></tr>
+<td>DTR</td>
+<td>D4</td>
+</tr>
 <tr>
-<td> DSR
-</td>
-<td> D5
-</td></tr>
+<td>DSR</td>
+<td>D5</td>
+</tr>
 <tr>
-<td> DCD
-</td>
-<td> D6
-</td></tr>
+<td>DCD</td>
+<td>D6</td>
+</tr>
 <tr>
-<td> RI
-</td>
-<td> D7
-</td></tr></table>
+<td>RI</td>
+<td>D7</td>
+</tr>
+</table>
 
 **BitBang Mode Operation:**
 
@@ -455,43 +414,35 @@ If you have questions or other better design ideas, you can go to our [forum](ht
 
 ##   Document Version Tracker  
 
-<table >
+<table>
 <tr>
-<th> Revision
-</th>
-<th> Description
-</th>
-<th> Editor
-</th>
-<th> Release Date
-</th></tr>
+<th>Revision</th>
+<th>Description</th>
+<th>Editor</th>
+<th>Release Date</th>
+</tr>
 <tr>
-<td> V0.9b
-</td>
-<td> Detailed Application Notes
-</td>
-<td> Visweswara R
-</td>
-<td> 22 Feb 2010
-</td></tr></table>
+<td>V0.9b</td>
+<td>Detailed Application Notes</td>
+<td>Visweswara R</td>
+<td>22 Feb 2010</td>
+</tr>
+</table>
 
 ##   Hardware Version Tracker  
 
-<table >
+<table>
 <tr>
-<th> Revision
-</th>
-<th> Description
-</th>
-<th> Release Date
-</th></tr>
+<th>Revision</th>
+<th>Description</th>
+<th>Release Date</th>
+</tr>
 <tr>
-<td> UartSBs Frame
-</td>
-<td> 0.9b
-</td>
-<td> Feb 22, 2010
-</td></tr></table>
+<td>UartSBs Frame</td>
+<td>0.9b</td>
+<td>Feb 22, 2010</td>
+</tr>
+</table>
 
 ##   Bug Tracker  
 

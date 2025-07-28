@@ -36,48 +36,48 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <table>
   <tbody><tr>
       <td> 出力電圧 </td>
-      <td> 3.3 V または 5 V（切り替え可能）
-      </td></tr>
+      <td> 3.3 V または 5 V（切り替え可能）</td>
+    </tr>
     <tr>
       <td> 最大出力電流 </td>
-      <td> 3.3Vで500mA、5Vで500mA
-      </td></tr>
+      <td> 3.3Vで500mA、5Vで500mA</td>
+    </tr>
     <tr>
       <td> デジタルGroveポート </td>
-      <td> 6（UART1（ラベル付き）およびUART4（ラベル付き）と同じピンを共有）
-      </td></tr>
+      <td> 6（UART1（ラベル付き）およびUART4（ラベル付き）と同じピンを共有）</td>
+    </tr>
     <tr>
       <td> アナログGroveポート </td>
-      <td> 2
-      </td></tr>
+      <td> 2</td>
+    </tr>
     <tr>
       <td> I<sup>2</sup>C Groveポート </td>
-      <td> 4
-      </td></tr>
+      <td> 4</td>
+    </tr>
     <tr>
       <td> UART Groveポート </td>
-      <td> 2（UART1、UART4）
-      </td></tr>
+      <td> 2（UART1、UART4）</td>
+    </tr>
     <tr>
       <td> EEPROM </td>
-      <td> 256kb（モデル: CAT24C256WI）
-      </td></tr>
+      <td> 256kb（モデル: CAT24C256WI）</td>
+    </tr>
     <tr>
       <td> 寸法 </td>
-      <td> 長さ70mm × 幅50mm
-      </td></tr></tbody></table>
+      <td> 長さ70mm × 幅50mm</td>
+    </tr></tbody></table>
 
 ### 部品リスト
 
 <table>
   <tbody><tr>
       <th>部品名 </th>
-      <th> 数量
-      </th></tr>
+      <th> 数量</th>
+    </tr>
     <tr>
       <td>BeagleBone®用 Grove Base Cape v2 </td>
-      <td> 1個
-      </td></tr></tbody></table>
+      <td> 1個</td>
+    </tr></tbody></table>
 
 ## ハードウェア概要
 

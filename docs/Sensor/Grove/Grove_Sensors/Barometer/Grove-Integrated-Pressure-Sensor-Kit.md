@@ -43,7 +43,7 @@ Grove integrated pressure sensor suite (MPX5700AP), this module adopts advanced 
 |Operating Voltage|	3.3V/5V DC|
 | output interface | analog |
 |Measuring Range|15Kpa-700Kpa|
-|Appearance size|<20*40mm|
+|Appearance size|&lt;20*40mm|
 
 
 ## Hardware Overview

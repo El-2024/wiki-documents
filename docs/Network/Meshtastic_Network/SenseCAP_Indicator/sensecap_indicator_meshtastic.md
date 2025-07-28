@@ -70,11 +70,6 @@ SenseCAP Indicator is a 4-inch touchscreen device designed for Meshtastic®, pow
 
 ## Flash Firmware
 
-:::tip NEW MUI(Fancy UI)
-To enter the 2.6 MUI preview page, press keys on your computer keyboard: ↑&nbsp;↑&nbsp;↓&nbsp;↓&nbsp;←&nbsp;→&nbsp;←&nbsp;→&nbsp;b&nbsp;a<br/>
-Then the page will turn black, you can see the pre-release option now.
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/2.6-ver.png" alt="pir" width={800} height="auto" /></p>
-:::
 
 ### Flash Application Firmware
 
@@ -113,7 +108,7 @@ Please select the `USB Serial` one, not the INDICATOR RP2040.
 
 
 
-### Flash GPS Firmware
+### Flash GPS Firmware(optional)
 
 
 The SenseCAP Indicator doesn't have a GPS built-in, to get the GPS location, a [Grove GPS Module](https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html) is required.<br/>
@@ -245,15 +240,50 @@ Refer to [LoRa Region by Country](https://meshtastic.org/docs/configuration/regi
 
 Now that you have set the LoRa region on your device, you can continue with configuring any [LoRa Configs](https://meshtastic.org/docs/configuration/radio/lora/) to suit your needs.
 
+### Keyboard
+
+:::tip note
+The keyboard usage of version 2.5.xx(The factory firmware is v2.5.11.) and version newer than 2.6.xx is different. Please check the following according to your current firmware version.
+:::
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/keyboard-ve.png" alt="pir" width={400} height="auto" /></p>
 
 
-### Precautions
+#### For version2.5.xx
+
+
+
+<div class="table-center">
+<iframe width="500" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/keyboard-usage.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+
+#### For version2.6 +
+
+
+
+<div class="table-center">
+<iframe width="500" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/keyboard-usage2.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+
+
+
+### FAQ
+
+#### RP2040 part
+
+RP2040 has not been developed yet, so the `buzzer`/`SD card`/`map` functions are not available yet. We are working with Meshtastic to optimize it.
+
+
 
 #### Role Selection
 
 :::caution
-DO NOT select the Repeater role, which will cause the device to repeatedly reboot.
+DO NOT select the `Repeater` role, which will cause the device to repeatedly reboot.
 :::
+
+
 
 
 #### GPS Module

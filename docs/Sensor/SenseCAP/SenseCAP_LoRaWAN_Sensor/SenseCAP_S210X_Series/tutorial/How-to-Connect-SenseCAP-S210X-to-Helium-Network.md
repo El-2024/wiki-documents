@@ -21,7 +21,7 @@ The Helium Console is a web-based device management tool hosted by the Helium Fo
 
 ## Connect to Helium Network
 ### Create a New account
-Please go to <https://console.helium.com/>  , and register your account.
+Please go to &lt;https://console.helium.com/&gt;  , and register your account.
 ### Setup the Sensor
 (1) Open the SenseCAP Mate App
 
@@ -98,7 +98,7 @@ Then, the sensor will reboot.
 
 ## Upload Data from Helium to Datacake
 ### Create a Datacake Account
-(1) Create a new account, website: <https://datacake.co/> 
+(1) Create a new account, website: &lt;https://datacake.co/&gt; 
 
 ![](https://files.seeedstudio.com/wiki/SenseCAPS210X/Helium_Network/0020.png)
 

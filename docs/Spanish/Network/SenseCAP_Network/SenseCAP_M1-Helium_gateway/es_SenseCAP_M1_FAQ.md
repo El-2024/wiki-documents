@@ -86,9 +86,9 @@ Los hotspots no deben instalarse demasiado cerca unos de otros. Una buena regla 
 **¿Existen cargos adicionales para configurar el SenseCAP M1?**
 ----------------------------------------------
 
-El dispositivo incluye una tarifa de activación cubierta de $40 USD para configurar el SenseCAP M1 y una tarifa de $10 USD para establecer la ubicación del SenseCAP M1 en la aplicación Helium.
+El dispositivo incluye una tarifa de activación cubierta de \$40 USD para configurar el SenseCAP M1 y una tarifa de \$10 USD para establecer la ubicación del SenseCAP M1 en la aplicación Helium.
 
-Solo pagarás tarifas adicionales si cambias la ubicación después de la primera vez, lo cual cuesta aproximadamente $10 USD. Para información detallada sobre tarifas, consulta la página de tarifas de transacción de Helium.
+Solo pagarás tarifas adicionales si cambias la ubicación después de la primera vez, lo cual cuesta aproximadamente \$10 USD. Para información detallada sobre tarifas, consulta la página de tarifas de transacción de Helium.
 
 * * *
 

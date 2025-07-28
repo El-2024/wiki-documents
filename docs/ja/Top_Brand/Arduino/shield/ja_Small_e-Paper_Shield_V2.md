@@ -56,92 +56,76 @@ e-paper（電子ペーパー）は、最も快適に読める素材の一つか�
 
 <font color="Green">Arduino の PIN</font>
 
-<table >
+<table>
 <tr>
-<th> Arduino
-</th>
-<th> E-paper
-</th></tr>
+<th>Arduino</th>
+<th>E-paper</th>
+</tr>
 <tr>
-<td width="150px"> D2
-</td>
-<td width="250px"> M_EPD_PANEL_ON
-</td></tr>
+<td width="150px">D2</td>
+<td width="250px">M_EPD_PANEL_ON</td>
+</tr>
 <tr>
-<td> D3
-</td>
-<td> M_EPD_BORDER
-</td></tr>
+<td>D3</td>
+<td>M_EPD_BORDER</td>
+</tr>
 <tr>
-<td> D4
-</td>
-<td> M_/SD_CS
-</td></tr>
+<td>D4</td>
+<td>M_/SD_CS</td>
+</tr>
 <tr>
-<td> D5
-</td>
-<td> M_EPD_PWM
-</td></tr>
+<td>D5</td>
+<td>M_EPD_PWM</td>
+</tr>
 <tr>
-<td> D6
-</td>
-<td> M_EPD_/RESET
-</td></tr>
+<td>D6</td>
+<td>M_EPD_/RESET</td>
+</tr>
 <tr>
-<td> D7
-</td>
-<td> M_EPD_BUSY
-</td></tr>
+<td>D7</td>
+<td>M_EPD_BUSY</td>
+</tr>
 <tr>
-<td> D8
-</td>
-<td> M_EPD_DISCHARGE
-</td></tr>
+<td>D8</td>
+<td>M_EPD_DISCHARGE</td>
+</tr>
 <tr>
-<td> D9
-</td>
-<td> M_/WORD_STOCK_CS
-</td></tr>
+<td>D9</td>
+<td>M_/WORD_STOCK_CS</td>
+</tr>
 <tr>
-<td> D10
-</td>
-<td> M_/EPD_CS
-</td></tr>
+<td>D10</td>
+<td>M_/EPD_CS</td>
+</tr>
 <tr>
-<td> ICSP PORT
-</td>
-<td> M_MOSI , M_SCK , M_MISO
-</td></tr>
+<td>ICSP PORT</td>
+<td>M_MOSI , M_SCK , M_MISO</td>
+</tr>
 <tr>
-<td> A0
-</td>
-<td> M_TEMP_SEN
-</td></tr>
+<td>A0</td>
+<td>M_TEMP_SEN</td>
+</tr>
 <tr>
-<td> A1
-</td>
-<td> M_OE123﻿﻿
-</td></tr>
+<td>A1</td>
+<td>M_OE123</td>
+</tr>
 <tr>
-<td> A2
-</td>
-<td> M_CKV
-</td></tr>
+<td>A2</td>
+<td>M_CKV</td>
+</tr>
 <tr>
-<td> A3
-</td>
-<td> M_STV_IN
-</td></tr>
+<td>A3</td>
+<td>M_STV_IN</td>
+</tr>
 <tr>
-<td> 3.3V
-</td>
-<td> M_VCC_3V3
-</td></tr>
+<td>3.3V</td>
+<td>M_VCC_3V3</td>
+</tr>
 <tr>
-<td> 5V
-</td>
-<td> M_VCC_5V
-</td></tr></table>
+<td>5V</td>
+<td>M_VCC_5V</td>
+</tr>
+</table>
 
 ## デモンストレーション
 
@@ -167,11 +151,11 @@ Small e-Paper Shieldは、画像、さまざまなグラフィック、テキス
 
 ![](https://files.seeedstudio.com/wiki/Small_e-Paper_Shield_V2/img/Text_Code.jpg)
 
-<dl><dd><font color="red">この注意点を再度強調します：</font>
-</dd></dl>
-<dl><dd>Arduino UNO、Seeeduino 3.0、またはAtmega 328PやAtmega32U4をコントローラーとして使用するボードを使用する場合、このデモを実行するにはSDカードを挿入する必要があります。これは、Atmega328pおよびAtmega32U4のストレージ容量が少ないため、一時データを保存するためにSDカードが必要だからです。
-</dd><dd>Arduino MegaやAtmega1280、Atmega2560を使用する場合は、SDカードを挿入する必要はありません。
-</dd></dl>
+**<font color="red">この注意点を再度強調します：</font>**
+
+Arduino UNO、Seeeduino 3.0、またはAtmega 328PやAtmega32U4をコントローラーとして使用するボードを使用する場合、このデモを実行するにはSDカードを挿入する必要があります。これは、Atmega328pおよびAtmega32U4のストレージ容量が少ないため、一時データを保存するためにSDカードが必要だからです。
+
+Arduino MegaやAtmega1280、Atmega2560を使用する場合は、SDカードを挿入する必要はありません。
 
 * 画面サイズに合わせてパラメータを変更します。画面が2.7インチの場合、200を270に変更する必要があります。他の例を使用する場合も、この変更を行う必要があります。
 

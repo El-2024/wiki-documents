@@ -60,22 +60,22 @@ SSD（Solid State Drive、ソリッドステートドライブ）は、ノート
       <td align="center">110061381</td>
     </tr>
     <tr>
-      <th align="center">側面図
-      </th><td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
+      <th align="center">側面図</th>
+      <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
       <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
       <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
       <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
     </tr>
     <tr>
-      <th align="center">搭載モジュール
-      </th><td align="center">Jetson Nano 4G</td>
+      <th align="center">搭載モジュール</th>
+      <td align="center">Jetson Nano 4G</td>
       <td align="center">Jetson Xavier NX 8GB</td>
       <td align="center">Jetson Xavier NX 16GB</td>
       <td align="center">Jetson Xavier NX 8GB</td>
     </tr>
     <tr>
-      <th align="center">動作キャリアボード
-      </th><td align="center">Jetson A206</td>
+      <th align="center">動作キャリアボード</th>
+      <td align="center">Jetson A206</td>
       <td align="center">Jetson A206</td>
       <td align="center">Jetson A206</td>
       <td align="center">J202</td>
@@ -94,13 +94,13 @@ SSDを使用した拡張ソリューションを実現するためには、以�
       <th align="center">ソフトウェアおよびハードウェア要件</th>  
     </tr>
     <tr>
-      <th align="center">Jetson用reComputer
-      </th><td align="left">JetPackバージョン 4.4 ~ 4.6 <br />
+      <th align="center">Jetson用reComputer</th>
+      <td align="left">JetPackバージョン 4.4 ~ 4.6 <br />
         キャリアボードにM.2 M-Keyスロットが必要</td>
     </tr>
     <tr>
-      <th align="center">SSD
-      </th><td align="left">SSDは第4世代拡張ファイルシステム（Ext4）である必要があります <br />
+      <th align="center">SSD</th>
+      <td align="left">SSDは第4世代拡張ファイルシステム（Ext4）である必要があります <br />
         M.2 M-KeyインターフェースとNVMeプロトコルを使用 <br />
         推奨容量 ≤ 512 GB</td>
     </tr>
@@ -108,13 +108,15 @@ SSDを使用した拡張ソリューションを実現するためには、以�
 </table>
 
 
-!!!注意
-    更新されたJetPackバージョンは拡張のテストが行われていないため、拡張の安定性や成功を保証することはできません。このチュートリアルを慎重に従ってください。
+:::caution 注意
+更新されたJetPackバージョンは拡張のテストが行われていないため、拡張の安定性や成功を保証することはできません。このチュートリアルを慎重に従ってください。
 
-    SSDはM.2 M-Keyである必要があります。それ以外の場合、キャリアボードのインターフェースと一致しません。
-    <div align=center><img width = 300 src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/3.jpeg"/></div>
+SSDはM.2 M-Keyである必要があります。それ以外の場合、キャリアボードのインターフェースと一致しません。
 
-    第4世代拡張ファイルシステム（Ext4）以外のストレージデバイスでは拡張操作を完了できません。
+<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/3.jpeg"/></div>
+
+第4世代拡張ファイルシステム（Ext4）以外のストレージデバイスでは拡張操作を完了できません。
+:::
 
 ### 拡張手順
 
@@ -182,11 +184,13 @@ reComputerを再起動すると、eMMCがメインインターフェース上で
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/11.png" /></div>
 
-!!!注意
-    スクリプトファイル内のデフォルトのSSDパスは`/dev/nvme0n1p1`です。これはreComputerによってデフォルトで割り当てられるパスでもあります。`sudo fdisk -l`コマンドで確認した際に、SSDパスがこれと一致しない場合は、rootOnNVMe内の**copy-rootfs-ssd.sh**、**data/setssdroot.service**、および**data/setssdroot.sh**ファイル内のすべての`/dev/nvme0n1p1`を、SSDが存在するパスに変更してください。
-   <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/21.png" /></div>
+:::caution 注意
+スクリプトファイル内のデフォルトのSSDパスは`/dev/nvme0n1p1`です。これはreComputerによってデフォルトで割り当てられるパスでもあります。`sudo fdisk -l`コマンドで確認した際に、SSDパスがこれと一致しない場合は、rootOnNVMe内の**copy-rootfs-ssd.sh**、**data/setssdroot.service**、および**data/setssdroot.sh**ファイル内のすべての`/dev/nvme0n1p1`を、SSDが存在するパスに変更してください。
 
-    上記の拡張では、eMMCから元のルートディレクトリの内容が削除されることはありません。SSDから起動したくない場合は、SSDを取り外すことでシステムはeMMCから起動します。
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/21.png" /></div>
+
+上記の拡張では、eMMCから元のルートディレクトリの内容が削除されることはありません。SSDから起動したくない場合は、SSDを取り外すことでシステムはeMMCから起動します。
+:::
 
 ## USBストレージデバイスによる容量拡張
 
@@ -198,20 +202,20 @@ USBフラッシュドライブやモバイルハードドライブなどのUSB�
       <th align="center">reComputer J1010</th>  
     </tr>
     <tr>
-      <th align="center">SKU
-      </th><td align="center">110061362</td>
+      <th align="center">SKU</th>
+      <td align="center">110061362</td>
     </tr>
     <tr>
-      <th align="center">側面図
-      </th><td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview3_1.png" /></div></td>
+      <th align="center">側面図</th>
+      <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview3_1.png" /></div></td>
     </tr>
     <tr>
-      <th align="center">搭載モジュール
-      </th><td align="center">Jetson Nano 4G</td>
+      <th align="center">搭載モジュール</th>
+      <td align="center">Jetson Nano 4G</td>
     </tr>
     <tr>
-      <th align="center">動作キャリアボード
-      </th><td align="center">J1010キャリアボード</td>
+      <th align="center">動作キャリアボード</th>
+      <td align="center">J1010キャリアボード</td>
     </tr>
   </tbody>
 </table>
@@ -228,26 +232,27 @@ USBを使用した拡張ソリューションでは、以下の条件を満た�
       <th align="center">ソフトウェアおよびハードウェア要件</th>  
     </tr>
     <tr>
-      <th align="center">Jetson用reComputer
-      </th><td align="left">JetPackバージョン4.4〜4.6 <br />
+      <th align="center">Jetson用reComputer</th>
+      <td align="left">JetPackバージョン4.4〜4.6 <br />
         搭載モジュールはJetson Nanoである必要があります</td>
     </tr>
     <tr>
-      <th align="center">USBストレージデバイス
-      </th><td align="left">USBストレージデバイスは第4世代拡張ファイルシステム（Ext4）である必要があります <br />
+      <th align="center">USBストレージデバイス</th>
+      <td align="left">USBストレージデバイスは第4世代拡張ファイルシステム（Ext4）である必要があります <br />
         USBストレージデバイスの電源供給電流 ≤ 0.5 A</td>
     </tr>
   </tbody>
 </table>
 
-!!!注意
-    更新されたJetPackバージョンでは拡張のテストが行われていないため、拡張の安定性や成功を保証することはできません。このチュートリアルを慎重に従ってください。
+:::caution 注意
+更新されたJetPackバージョンでは拡張のテストが行われていないため、拡張の安定性や成功を保証することはできません。このチュートリアルを慎重に従ってください。
 
-    大容量USBストレージデバイスでは、reComputerが適切に電源供給される必要があります。512 GBを超える容量のUSBストレージデバイスは推奨されません。不十分な電源供給は、reComputerの電源ダウンを引き起こす可能性があります。
+大容量USBストレージデバイスでは、reComputerが適切に電源供給される必要があります。512 GBを超える容量のUSBストレージデバイスは推奨されません。不十分な電源供給は、reComputerの電源ダウンを引き起こす可能性があります。
 
-    Jetson Nano以外の搭載モジュールでは、この方法を使用した拡張は現在サポートされていません。
+Jetson Nano以外の搭載モジュールでは、この方法を使用した拡張は現在サポートされていません。
 
-    第4世代拡張ファイルシステム（Ext4）以外のストレージデバイスでは、拡張操作を完了することができません。
+第4世代拡張ファイルシステム（Ext4）以外のストレージデバイスでは、拡張操作を完了することができません。
+:::
 
 ### 拡張手順
 
@@ -290,8 +295,9 @@ USBストレージデバイスに名前を付け、タイプで**Ext4**を選択
 
 **ステップ2**に従って準備したUSBストレージデバイスは、Disksソフトウェアで未マウントとして表示されます。
 
-!!!注意
-	フォーマット後にUSBデバイスが自動的にマウントされている場合、このステップをスキップしてください。
+:::caution 注意
+フォーマット後にUSBデバイスが自動的にマウントされている場合、このステップをスキップしてください。
+:::
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/60.png" /></div>
 
@@ -368,8 +374,9 @@ Sample for /boot/extlinux/extlinux.conf entry:
 APPEND ${cbootargs} root=UUID=e34d67bb-83bb-4fc5-b9a4-a1388d2b2be5 rootwait rootfstype=ext4
 ```
 
-!!!注意
-    返されるUUIDが上記の例と形式や長さが異なる場合、そのデバイスはおそらくExt4としてフォーマットされていません。**ステップ2**からやり直してください！
+:::caution 注意
+返されるUUIDが上記の例と形式や長さが異なる場合、そのデバイスはおそらくExt4としてフォーマットされていません。**ステップ2**からやり直してください！
+:::
 
 ---
 
@@ -445,20 +452,20 @@ LABEL primary
       <th align="center">説明</th>  
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/7.jpeg" /></div>
-      </th><td align="left">Ubuntuホスト x1</td>
+      <th align="center"><div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/7.jpeg" /></div></th>
+      <td align="left">Ubuntuホスト x1</td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/reComputerheadline.png" /></div>
-      </th><td align="left">システムにアクセスできないreComputer Jetson x1</td>
+      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/reComputerheadline.png" /></div></th>
+      <td align="left">システムにアクセスできないreComputer Jetson x1</td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/5.png" /></div>
-      </th><td align="left"><a href="https://www.seeedstudio.com/USB-To-Uart-5V-3V3-p-1832.html?queryID=cb30ad1a9d75c9ef437912535186b130&objectID=1112&indexName=bazaar_retailer_products">UART to USBモジュール x1</a></td>
+      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/5.png" /></div></th>
+      <td align="left"><a href="https://www.seeedstudio.com/USB-To-Uart-5V-3V3-p-1832.html?queryID=cb30ad1a9d75c9ef437912535186b130&objectID=1112&indexName=bazaar_retailer_products">UART to USBモジュール x1</a></td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/6.png" /></div>
-      </th><td align="left"><a href="https://www.seeedstudio.com/1-pin-dual-female-jumper-wire-100mm-50pcs-pack-p-260.html?queryID=a51c4491cb6b462a1e844c832c98c52a&objectID=2042&indexName=bazaar_retailer_products">メス-メス デュポンワイヤー x3</a></td>
+      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/6.png" /></div></th>
+      <td align="left"><a href="https://www.seeedstudio.com/1-pin-dual-female-jumper-wire-100mm-50pcs-pack-p-260.html?queryID=a51c4491cb6b462a1e844c832c98c52a&objectID=2042&indexName=bazaar_retailer_products">メス-メス デュポンワイヤー x3</a></td>
     </tr>
   </tbody>
 </table>
@@ -496,12 +503,13 @@ LABEL primary
   </tbody>
 </table>
 
-!!!Tip
-    reComputerとUART to USBモジュール間のVCCインターフェースは接続する必要はありません。
+:::tip
+reComputerとUART to USBモジュール間のVCCインターフェースは接続する必要はありません。
 
-    ケーブルを接続した後、reComputerの電源をまだ入れないでください。そのまま置いておいてください。
+ケーブルを接続した後、reComputerの電源をまだ入れないでください。そのまま置いておいてください。
 
-    拡張された外部メモリを切断してください。
+拡張された外部メモリを切断してください。
+:::
 
 **ステップ2.** Ubuntuホストにminicomをインストールして起動する
 

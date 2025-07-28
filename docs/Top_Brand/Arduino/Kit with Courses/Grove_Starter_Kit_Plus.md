@@ -406,77 +406,60 @@ void loop()
 
 The output of the analog light sensor ranges from 0 to 1023, but the output is not linear with the ambient light intensity. Below is a table to help you understand what the output really means.
 
-<table  cellspacing="0" width="80%">
-<tr>
-<th scope="col"> Sensor Value
-</th>
-<th scope="col"> Illuminance (LUX)
-</th>
-<th scope="col"> Description (adapted from Wikipedia)
-</th></tr>
-<tr>
-<td> 100
-</td>
-<td> &lt;1
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 200
-</td>
-<td> ~1
-</td>
-<td> Full moon overhead at tropical latitudes
-</td></tr>
-<tr>
-<td> 300
-</td>
-<td> ~3
-</td>
-<td> Twilight in the city
-</td></tr>
-<tr>
-<td> 400
-</td>
-<td> ~6
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 500
-</td>
-<td> ~10
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 600
-</td>
-<td> ~15
-</td>
-<td>
-</td></tr>
-<tr>
-<td> 700
-</td>
-<td> ~35
-</td>
-<td> Family living room
-</td></tr>
-<tr>
-<td> 800
-</td>
-<td> ~80
-</td>
-<td> Office building light in hallway
-</td></tr>
-<tr>
-<td> 900
-</td>
-<td> &gt;100
-</td>
-<td> Very dark, overcast day
-</td></tr></table>
+<table cellspacing="0" width="80%">
+  <tbody>
+    <tr>
+      <th scope="col">Sensor Value</th>
+      <th scope="col">Illuminance (LUX)</th>
+      <th scope="col">Description (adapted from Wikipedia)</th>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>&lt;1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>~1</td>
+      <td>Full moon overhead at tropical latitudes</td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td>~3</td>
+      <td>Twilight in the city</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>~6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>~10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>600</td>
+      <td>~15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>700</td>
+      <td>~35</td>
+      <td>Family living room</td>
+    </tr>
+    <tr>
+      <td>800</td>
+      <td>~80</td>
+      <td>Office building light in hallway</td>
+    </tr>
+    <tr>
+      <td>900</td>
+      <td>&gt;100</td>
+      <td>Very dark, overcast day</td>
+    </tr>
+  </tbody>
+</table>
 
 ###  12. Grove – Temperature Sensor
 
@@ -614,13 +597,14 @@ Would you like a cup of flowers to ease your exhausted heart? This project is ma
 
 **Materials List**
 
-<dl><dd>1. Arduino x 1;
-</dd><dd>2. Grove – Base Shield x 1;
-</dd><dd>3. Grove – LED x 6;
-</dd><dd>4. Grove – Touch Sensor x 1;
-</dd><dd>5. 6 x 6cm Color paper x 6;
-</dd><dd>6. 9V battery &amp; 9V battery clip x 1.
-</dd></dl>
+<dl>
+  <dd>1. Arduino x 1;</dd>
+  <dd>2. Grove – Base Shield x 1;</dd>
+  <dd>3. Grove – LED x 6;</dd>
+  <dd>4. Grove – Touch Sensor x 1;</dd>
+  <dd>5. 6 x 6cm Color paper x 6;</dd>
+  <dd>6. 9V battery &amp; 9V battery clip x 1.</dd>
+</dl>
 
 !!!Note
      The number of LEDs is arbitrary. There are three of them contained in the basic kit. But you can increase or decrease it depending on the volume of your cup. I have a big cup here, so I added three more from our website.
@@ -696,14 +680,15 @@ How do you say hello to a friend? Big Chief would say “what’s better than a 
 
 **Materials List**
 
-<dl><dd>1. Arduini x 1;
-</dd><dd>2. Grove – Base Shield x 1;
-</dd><dd>3. Grove – Magnetic Switch x 1;
-</dd><dd>4. Grove – Vibrator x 1;
-</dd><dd>5. Paper toys x 2;
-</dd><dd>6. Magnet x 1;
-</dd><dd>7. 9V battery &amp; 9V battery clip x 1.
-</dd></dl>
+<dl>
+  <dd>1. Arduini x 1;</dd>
+  <dd>2. Grove – Base Shield x 1;</dd>
+  <dd>3. Grove – Magnetic Switch x 1;</dd>
+  <dd>4. Grove – Vibrator x 1;</dd>
+  <dd>5. Paper toys x 2;</dd>
+  <dd>6. Magnet x 1;</dd>
+  <dd>7. 9V battery &amp; 9V battery clip x 1.</dd>
+</dl>
 
 :::note
     The number of LEDs is arbitrary. There are three of them contained in the basic kit. But you can increase or decrease it depending on the volume of your cup. I have a big cup here, so I added three more from our website.

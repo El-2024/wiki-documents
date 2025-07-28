@@ -104,7 +104,7 @@ LED点滅 | バッテリーエラー（バッテリー未接続を含む）
 |                 | SMS                    | ピアツーピアメッセージ、SMSブロードキャスト、テキストおよびPDUモード             |
 |                 | オーディオ             | エコーキャンセル、ノイズ除去                                                     |
 | GNSS            | システム               | GPS/BeiDou/GLONASS/Galileo/QZSS                                                 |
-|                 | 精度                   | <2.5m CEP                                                                        |
+|                 | 精度                   | &lt;2.5m CEP                                                                        |
 | 周辺機器        | Grove                  | 2 x デジタルポート                                                               |
 |                 |                        | 2 x アナログポート                                                               |
 |                 |                        | 1 x UART                                                                         |
@@ -169,17 +169,24 @@ EC21には9つのバリエーションがあります：EC21-E、EC21-A、EC21-V
 そして、**EC21-A**はWIO Tracker - LTEで使用しているもので、AT&TおよびT-mobileのSIMカードをサポートしています。他の地域向けにEC21モジュールをカスタマイズしたい場合は、fae@seeed.ccまでお気軽にメールしてください。
 
 <div>
-  <style type="text/css" dangerouslySetInnerHTML={{__html: "\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}\n.tg .tg-yw4l{vertical-align:top}\n" }} />
+  {/* eslint-disable-next-line react/no-danger */}
+  <style dangerouslySetInnerHTML={{__html: `
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+    .tg .tg-yw4l{vertical-align:top}
+  `}} />
   <table className="tg">
-    <tbody><tr>
-        <th className="tg-031e" colSpan={2}>周波数</th>
+    <tbody>
+      <tr>
+        <th className="tg-031e" colSpan="2">周波数</th>
         <th className="tg-yw4l">EC21-E</th>
         <th className="tg-yw4l">EC21-A</th>
         <th className="tg-yw4l">EC21-V</th>
         <th className="tg-yw4l">EC21-AUT</th>
       </tr>
       <tr>
-        <td className="tg-031e" rowSpan={2}>LTE</td>
+        <td className="tg-031e" rowSpan="2">LTE</td>
         <td className="tg-031e">FDD-LTE</td>
         <td className="tg-yw4l">B1/ B3/ B5/ B7/ B8/ B20</td>
         <td className="tg-yw4l">B2/ B4/ B12</td>
@@ -188,63 +195,71 @@ EC21には9つのバリエーションがあります：EC21-E、EC21-A、EC21-V
       </tr>
       <tr>
         <td className="tg-031e">TDD-LTE</td>
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
       </tr>
       <tr>
         <td className="tg-031e">3G</td>
         <td className="tg-031e">WCDMA</td>
         <td className="tg-yw4l">B1/ B5/ B8</td>
         <td className="tg-yw4l">B2/ B4/ B5</td>
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
         <td className="tg-yw4l">B1/ B5</td>
       </tr>
       <tr>
-        <td className="tg-031e" colSpan={2}>GSM/EDGE</td>
+        <td className="tg-031e" colSpan="2">GSM/EDGE</td>
         <td className="tg-yw4l">B3/ B8</td>
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
       </tr>
       <tr>
-        <td className="tg-031e" colSpan={2}>組み込みGNSS</td>
+        <td className="tg-031e" colSpan="2">組み込みGNSS</td>
         <td className="tg-yw4l">オプション</td>
         <td className="tg-yw4l">オプション</td>
         <td className="tg-yw4l">オプション</td>
         <td className="tg-yw4l">オプション</td>
       </tr>
       <tr>
-        <td className="tg-yw4l" colSpan={2}>Wi-Fiインターフェース</td>
+        <td className="tg-yw4l" colSpan="2">Wi-Fiインターフェース</td>
         <td className="tg-yw4l">Y</td>
         <td className="tg-yw4l">Y</td>
         <td className="tg-yw4l">Y</td>
         <td className="tg-yw4l">Y</td>
       </tr>
       <tr>
-        <td className="tg-yw4l" colSpan={2}>地域</td>
+        <td className="tg-yw4l" colSpan="2">地域</td>
         <td className="tg-yw4l">EMEA、韓国、タイ、インド</td>
         <td className="tg-yw4l">北米</td>
         <td className="tg-yw4l">北米</td>
         <td className="tg-yw4l">オーストラリア</td>
       </tr>
       <tr>
-        <td className="tg-yw4l" colSpan={2}>認証</td>
+        <td className="tg-yw4l" colSpan="2">認証</td>
         <td className="tg-yw4l">CE/ GCF/ Vodafone</td>
         <td className="tg-yw4l">FCC/ PTCRB/ AT&amp;T/ IC/ ROGERS</td>
         <td className="tg-yw4l">FCC/ GCF/ Verizon</td>
         <td className="tg-yw4l">RCM/ Telstra</td>
       </tr>
-    </tbody></table>
+    </tbody>
+  </table>
   <br />
 </div>
 
 <div>
-  <style type="text/css" dangerouslySetInnerHTML={{__html: "\n.tg  {border-collapse:collapse;border-spacing:0;}\n.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}\n.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}\n.tg .tg-yw4l{vertical-align:top}\n" }} />
+  {/* eslint-disable-next-line react/no-danger */}
+  <style dangerouslySetInnerHTML={{__html: `
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+    .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+    .tg .tg-yw4l{vertical-align:top}
+  `}} />
   <table className="tg">
-    <tbody><tr>
-        <th className="tg-031e" colSpan={2}>周波数</th>
+    <tbody>
+      <tr>
+        <th className="tg-031e" colSpan="2">周波数</th>
         <th className="tg-yw4l">EC21-AUV</th>
         <th className="tg-yw4l">EC21-AU</th>
         <th className="tg-yw4l">EC21-KL</th>
@@ -252,41 +267,41 @@ EC21には9つのバリエーションがあります：EC21-E、EC21-A、EC21-V
         <th className="tg-yw4l">EC20-CEL</th>
       </tr>
       <tr>
-        <td className="tg-031e" rowSpan={2}>LTE</td>
+        <td className="tg-031e" rowSpan="2">LTE</td>
         <td className="tg-031e">FDD-LTE</td>
         <td className="tg-yw4l">B1/ B3/ B5/ B8/ B28</td>
-        <td className="tg-yw4l">B1/ B2①/ B3/ B4/ B5/ B7/ B8/ B28</td>
+        <td className="tg-yw4l">B1/ B2&#9312;/ B3/ B4/ B5/ B7/ B8/ B28</td>
         <td className="tg-yw4l">B1/ B3/ B5/ B7/ B8</td>
         <td className="tg-yw4l">B1/ B3/ B8/ B18/ B19/ B26</td>
         <td className="tg-yw4l">B1/ B3/ B5</td>
       </tr>
       <tr>
         <td className="tg-031e">TDD-LTE</td>
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
         <td className="tg-yw4l">B40</td>
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
       </tr>
       <tr>
         <td className="tg-031e">3G</td>
         <td className="tg-031e">WCDMA</td>
         <td className="tg-yw4l">B1/ B5/ B8</td>
         <td className="tg-yw4l">B1/ B2/ B5/ B8</td>
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
       </tr>
       <tr>
-        <td className="tg-031e" colSpan={2}>GSM/EDGE</td>
-        <td className="tg-yw4l" />
+        <td className="tg-031e" colSpan="2">GSM/EDGE</td>
+        <td className="tg-yw4l"></td>
         <td className="tg-yw4l">クアッドバンド</td>
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
-        <td className="tg-yw4l" />
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
+        <td className="tg-yw4l"></td>
       </tr>
       <tr>
-        <td className="tg-031e" colSpan={2}>組み込みGNSS</td>
+        <td className="tg-031e" colSpan="2">組み込みGNSS</td>
         <td className="tg-yw4l">N<br />			</td>
         <td className="tg-yw4l">オプション<br />			</td>
         <td className="tg-yw4l">N<br />			</td>
@@ -294,7 +309,7 @@ EC21には9つのバリエーションがあります：EC21-E、EC21-A、EC21-V
         <td className="tg-yw4l">N</td>
       </tr>
       <tr>
-        <td className="tg-yw4l" colSpan={2}>Wi-Fiインターフェース</td>
+        <td className="tg-yw4l" colSpan="2">Wi-Fiインターフェース</td>
         <td className="tg-yw4l">Y</td>
         <td className="tg-yw4l">Y</td>
         <td className="tg-yw4l">Y</td>
@@ -302,7 +317,7 @@ EC21には9つのバリエーションがあります：EC21-E、EC21-A、EC21-V
         <td className="tg-yw4l">Y</td>
       </tr>
       <tr>
-        <td className="tg-yw4l" colSpan={2}>地域</td>
+        <td className="tg-yw4l" colSpan="2">地域</td>
         <td className="tg-yw4l">Vodafoneオーストラリア</td>
         <td className="tg-yw4l">南米、ANZ、台湾</td>
         <td className="tg-yw4l">韓国</td>
@@ -310,14 +325,15 @@ EC21には9つのバリエーションがあります：EC21-E、EC21-A、EC21-V
         <td className="tg-yw4l">中国電信</td>
       </tr>
       <tr>
-        <td className="tg-yw4l" colSpan={2}>認証</td>
+        <td className="tg-yw4l" colSpan="2">認証</td>
         <td className="tg-yw4l">RCM</td>
         <td className="tg-yw4l">RCM/ Anatel/ NCC</td>
-        <td className="tg-yw4l">KC/ SKT/KT*/ LGU+*</td>
-        <td className="tg-yw4l">JATE/ TELEC/ DOCOMO*</td>
+        <td className="tg-yw4l">KC/ SKT/KT&#42;/ LGU+&#42;</td>
+        <td className="tg-yw4l">JATE/ TELEC/ DOCOMO&#42;</td>
         <td className="tg-yw4l">CCC/ SRRC/ NAL</td>
       </tr>
-    </tbody></table>
+    </tbody>
+  </table>
 </div>
 
 ## はじめに
@@ -1330,26 +1346,22 @@ A6: オプション-->「すべてのデバイスをリスト」をクリック�
 
 ## Wio LTE AU バージョン v1.3b 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Wio_LTE/res/Wio%20LTE%20AU%20Version%20v1.3b-%204G%2C%20Cat.1%2C%20GNSS%2C%20Espruino%20Compatible.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
-</div>
+<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Wio_LTE/res/Wio%20LTE%20AU%20Version%20v1.3b-%204G%2C%20Cat.1%2C%20GNSS%2C%20Espruino%20Compatible.zip" style={{borderRadius: '0px 0px 4px 4px', height: '500px', borderStyle: 'solid', borderWidth: '1px', borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: '1280px', maxHeight: '700px', boxSizing: 'border-box'}}></div>
 
 
 ## Wio LTE EU バージョン v1.3b 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Wio_LTE/res/Wio%20LTE%20EU%20Version%20v1.3b-%204G%2C%20Cat.1%2C%20GNSS%2C%20Espruino%20Compatible.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
-</div>
+<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Wio_LTE/res/Wio%20LTE%20EU%20Version%20v1.3b-%204G%2C%20Cat.1%2C%20GNSS%2C%20Espruino%20Compatible.zip" style={{borderRadius: '0px 0px 4px 4px', height: '500px', borderStyle: 'solid', borderWidth: '1px', borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: '1280px', maxHeight: '700px', boxSizing: 'border-box'}}></div>
 
 
 ## Wio LTE JP バージョン v1.3b 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Wio_LTE/res/Wio%20LTE%20JP%20Version%20v1.3b-%204G%2C%20Cat.1%2C%20Espruino%20Compatible.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
-</div>
+<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Wio_LTE/res/Wio%20LTE%20JP%20Version%20v1.3b-%204G%2C%20Cat.1%2C%20Espruino%20Compatible.zip" style={{borderRadius: '0px 0px 4px 4px', height: '500px', borderStyle: 'solid', borderWidth: '1px', borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: '1280px', maxHeight: '700px', boxSizing: 'border-box'}}></div>
 
 
 ## Wio LTE US バージョン v1.3b 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Wio_LTE/res/Wio%20LTE%20US%20Version%20v1.3b%20-%204G%2C%20Cat.1%2C%20GNSS%2C%20Espruino%20Compatible.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
-</div>
+<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Wio_LTE/res/Wio%20LTE%20US%20Version%20v1.3b%20-%204G%2C%20Cat.1%2C%20GNSS%2C%20Espruino%20Compatible.zip" style={{borderRadius: '0px 0px 4px 4px', height: '500px', borderStyle: 'solid', borderWidth: '1px', borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: '1280px', maxHeight: '700px', boxSizing: 'border-box'}}></div>
 
 
 

@@ -48,8 +48,7 @@ If you don't use the complete ESP-IDF environment, it is also possible to flash 
 Click to download the firmware:
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/seeed_xiao_esp32s3_one_chanel_hub_2024_12_09_01.rar"><strong><span><font color={'FFFFFF'} size={"4"}> Download ⏬ </font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/seeed_xiao_esp32s3_one_chanel_hub_2024_12_09_01.rar"><strong><span><font color={'FFFFFF'} size={"4"}> Download ⏬ </font></span></strong></a>
 </div>
 
 **Step 1**: Download Esptool, for more information please refer to the [Esptool documentation](https://docs.espressif.com/projects/esptool/en/latest/esp32/).
@@ -141,7 +140,7 @@ If not using the complete ESP-IDF environment, can just download the provided bi
 **Step 3**: Follow the instructions in the app to configure the WiFi and LoRaWAN.
 
 - Register and Login SenseCraft APP
-- Navigate to `User` -> `Device Bluetooth Configuration`
+- Navigate to `User` → `Device Bluetooth Configuration`
 - Select `XIAO ESP32S3 & Wio-SX1262 Kit`
 - Click `Device is ready for configuration`
 - Press the kit botton once, When the LED starts to blink, it will enter the Bluetooth pairing mode.
@@ -330,7 +329,7 @@ idf.py menuconfig
 
 (1) Set **board type**:
 
-`LoRaWAN 1-CH HUB Configuration` -> `Hardware Configuration` -> `Board type` -> `Seeed XIAO ESP32S3 Gateway`
+`LoRaWAN 1-CH HUB Configuration` → `Hardware Configuration` → `Board type` → `Seeed XIAO ESP32S3 Gateway`
 
 The default setting of Lora radio type is `sx1262`.
 
@@ -340,17 +339,17 @@ Don't forget to disable the OLED Display.
 
 (2) Set **flash size**:
 
-`Serial flasher config` -> `Flash size` -> for XIAO ESP32S3 is `8MB`.
+`Serial flasher config` → `Flash size` → for XIAO ESP32S3 is `8MB`.
 
  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/22.png" alt="pir" width={800} height="auto" /></p>
 
  (3) Set **Wi-Fi Provisionning**:
 
 - Set the Wi-Fi Provisionning via **SenseCraft APP**:
- `LoRaWAN 1-CH HUB Configuration` -> `WiFi Configuration` -> `Disable WiFi Provisionning over BLE` 
+ `LoRaWAN 1-CH HUB Configuration` → `WiFi Configuration` → `Disable WiFi Provisionning over BLE` 
 
 - Set the Wi-Fi Provisionning via **ESP BLE prov**:
- `LoRaWAN 1-CH HUB Configuration` -> `WiFi Configuration` -> `Enable WiFi Provisionning over BLE` 
+ `LoRaWAN 1-CH HUB Configuration` → `WiFi Configuration` → `Enable WiFi Provisionning over BLE` 
 
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/100.png" alt="pir" width={800} height="auto" /></p>
 

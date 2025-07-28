@@ -46,63 +46,50 @@ sku:  101020065
 
 ---
 <center>
-<table  cellspacing="0" width="80%">
-<tr>
-<th scope="col"> 項目
-</th>
-<th scope="col"> 典型値
-</th>
-<th scope="col"> 単位
-</th></tr>
-<tr>
-<th scope="row"> 動作電圧
-</th>
-<td> 5
-</td>
-<td> V
-</td></tr>
-<tr>
-<th scope="row"> 等電点
-</th>
-<td> 7±0.5
-</td>
-<td> pH
-</td></tr>
-<tr>
-<th scope="row"> 測定範囲
-</th>
-<td> 0~14
-</td>
-<td> pH
-</td></tr>
-<tr>
-<th scope="row"> pHセンサー出力範囲
-</th>
-<td> -414.12 ~ 414.12
-</td>
-<td> mV
-</td></tr>
-<tr>
-<th scope="row"> 測定精度
-</th>
-<td> &lt;15
-</td>
-<td> mV
-</td></tr>
-<tr>
-<th scope="row"> 応答時間
-</th>
-<td> &lt;2
-</td>
-<td> 分
-</td></tr>
-<tr>
-<th scope="row"> 温度範囲
-</th>
-<td> 0~60
-</td>
-<td> ℃
-</td></tr></table></center>
+<table cellspacing="0" width="80%">
+  <tbody>
+    <tr>
+      <th scope="col">項目</th>
+      <th scope="col">典型値</th>
+      <th scope="col">単位</th>
+    </tr>
+    <tr>
+      <th scope="row">動作電圧</th>
+      <td>5</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <th scope="row">等電点</th>
+      <td>7±0.5</td>
+      <td>pH</td>
+    </tr>
+    <tr>
+      <th scope="row">測定範囲</th>
+      <td>0~14</td>
+      <td>pH</td>
+    </tr>
+    <tr>
+      <th scope="row">pHセンサー出力範囲</th>
+      <td>-414.12 ~ 414.12</td>
+      <td>mV</td>
+    </tr>
+    <tr>
+      <th scope="row">測定精度</th>
+      <td>&lt;15</td>
+      <td>mV</td>
+    </tr>
+    <tr>
+      <th scope="row">応答時間</th>
+      <td>&lt;2</td>
+      <td>分</td>
+    </tr>
+    <tr>
+      <th scope="row">温度範囲</th>
+      <td>0~60</td>
+      <td>℃</td>
+    </tr>
+  </tbody>
+</table></center>
 
 ## 回路図
 

@@ -21,7 +21,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
 ## 前提条件  
-Visual SLAMをデプロイする前に、Isaac ROS環境がReComputer上で正しくセットアップされていることを確認してください。[インストールガイド](/docs/Robotics/Robot_Software/ROS/Install_IsaacROS.md)を参照してください。ROS2がインストールされていない場合は、[こちらのドキュメント](/docs/Robotics/Robot_Software/ROS/Install_ROS2_Humble.md)を参照してください。  
+Visual SLAMをデプロイする前に、Isaac ROS環境がReComputer上で正しくセットアップされていることを確認してください。[インストールガイド](./ja_Install_IsaacROS.md)を参照してください。ROS2がインストールされていない場合は、[こちらのドキュメント](./ja_Install_ROS2_Humble.md)を参照してください。
 
 
 ## 1. 環境設定  

@@ -56,7 +56,7 @@ We have written complete configuration files and libraries for the 24GHz mmWave 
 The content of this tutorial will broadly go through the following steps.
 
 1. [Select your Home Assistant environment](#select-your-home-assistant-environment)
-2. [Install and cofigure ESPHome in Home Assistant](#install-and-configure-esphome-in-home-assistant)
+2. Install and cofigure ESPHome in Home Assistant
 3. [Configure the XIAO ESP32C3 and ESPHome connection](#configure-the-xiao-esp32c3-and-esphome-connection)
 4. [Configure Home Assistant Panel](#configure-home-assistant-panel)
 
@@ -545,7 +545,7 @@ Then enter the IP address of the XIAO ESP32C3 with port number **6053**. Then cl
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/homs-xiaoc3-linkstar/44.png" /></div>
 
-If the IP address and port number entered are correct, then you will see that you are asked to enter the Encryption key, which we asked to save in [step 4](#jump1).
+If the IP address and port number entered are correct, then you will see that you are asked to enter the Encryption key, which we asked to save in step 4.
 
 Then click on **SUBMIT**.
 

@@ -131,25 +131,21 @@ last_update:
 ---
 <table>
 <tr>
-<th> Item
-</th>
-<th> Specification
-</th></tr>
+<th> Item</th>
+<th> Specification</th>
+</tr>
 <tr>
-<td width="200px"> Grove - XBee Carrier I/O Logic
-</td>
-<td width="200px"> 3.3V
-</td></tr>
+<td width="200px"> Grove - XBee Carrier I/O Logic</td>
+<td width="200px"> 3.3V</td>
+</tr>
 <tr>
-<td> LiPo Battery
-</td>
-<td> 500mAH @ 3.7V
-</td></tr>
+<td> LiPo Battery</td>
+<td> 500mAH @ 3.7V</td>
+</tr>
 <tr>
-<td> Solar Panel
-</td>
-<td> 0.5Watt @ 5.5V
-</td></tr></table>
+<td> Solar Panel</td>
+<td> 0.5Watt @ 5.5V</td>
+</tr></table>
 
 ## Usage
 

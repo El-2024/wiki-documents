@@ -26,8 +26,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <div align="center">
   <figure>
-    <a href="https://files.seeedstudio.com/wiki/Seeed_Relay_Page/img/Relay.png" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed_Relay_Page/img/Relay.png" alt="Seeed リレー クイック選択図" title="Seeed リレー クイック選択図" />
-      <figcaption><b>図 1</b>. <i>Seeed リレー クイック選択図。図をクリックすると元のファイルを表示できます</i></figcaption></a>
+    <a href="https://files.seeedstudio.com/wiki/Seeed_Relay_Page/img/Relay.png" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed_Relay_Page/img/Relay.png" alt="Seeed リレー クイック選択図" title="Seeed リレー クイック選択図" /></a>
+    <figcaption><b>図 1</b>. <i>Seeed リレー クイック選択図。図をクリックすると元のファイルを表示できます</i></figcaption>
   </figure>
 </div>
 
@@ -213,8 +213,8 @@ Arduino用のリレーシールドも提供しています。このシールド�
 
 <div align="center">
 <figure>
-  <a href="https://www.seeedstudio.com/Relay-Shield-v3-0-p-2440.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed_Relay_Page/img/seeed_relay_shield.jpg" alt="Relay Shield v3.0" title="Relay Shield v3.0" />
-  <figcaption><b>図9</b>. <i>リレーシールド。クリックして詳細を確認できます</i></figcaption></a>
+  <a href="https://www.seeedstudio.com/Relay-Shield-v3-0-p-2440.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed_Relay_Page/img/seeed_relay_shield.jpg" alt="Relay Shield v3.0" title="Relay Shield v3.0" /></a>
+  <figcaption><b>図9</b>. <i>リレーシールド。クリックして詳細を確認できます</i></figcaption>
 </figure>
 </div>
 
@@ -224,8 +224,8 @@ Arduino用のリレーシールドも提供しています。このシールド�
 
 <div align="center">
 <figure>
-  <a href="https://www.seeedstudio.com/Heelight-Relay-p-2935.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed_Relay_Page/img/Heelight_Relay.jpg" alt="Heelight Relay" title="Heelight Relay" />
-  <figcaption><b>図10</b>. <i>Heelightリレー。クリックしてこの魔法のリレーを確認できます</i></figcaption></a>
+  <a href="https://www.seeedstudio.com/Heelight-Relay-p-2935.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed_Relay_Page/img/Heelight_Relay.jpg" alt="Heelight Relay" title="Heelight Relay" /></a>
+  <figcaption><b>図10</b>. <i>Heelightリレー。クリックしてこの魔法のリレーを確認できます</i></figcaption>
 </figure>
 </div>
 
@@ -235,8 +235,8 @@ Arduino用のリレーシールドも提供しています。このシールド�
 
 <div align="center">
 <figure>
-  <a href="https://www.seeedstudio.com/315MHz-Codec-Adaptive-Wireless-Relay-p-550.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed_Relay_Page/img/315MHz%20Codec-Adaptive%20Wireless%20Relay.jpg" alt="Wireless Relay" title="Wireless Relay" />
-  <figcaption><b>図11</b>. <i>ワイヤレスリレー。クリックして詳細を確認できます</i></figcaption></a>
+  <a href="https://www.seeedstudio.com/315MHz-Codec-Adaptive-Wireless-Relay-p-550.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed_Relay_Page/img/315MHz%20Codec-Adaptive%20Wireless%20Relay.jpg" alt="Wireless Relay" title="Wireless Relay" /></a>
+  <figcaption><b>図11</b>. <i>ワイヤレスリレー。クリックして詳細を確認できます</i></figcaption>
 </figure>
 </div>
 

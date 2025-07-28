@@ -319,7 +319,8 @@ Todos los programas relacionados con cámaras en la Wiki son compatibles tanto c
 
 Asegura una refrigeración óptima para tu XIAO ESP32S3 Sense instalando nuestro disipador de calor mejorado. Este nuevo diseño está hecho para abordar las deficiencias de refrigeración observadas con los modelos anteriores, especialmente durante operaciones intensivas como el uso de la cámara. Los comentarios señalaron que el disipador de calor original no disipaba adecuadamente el calor, lo que llevó al desarrollo de una solución más eficaz.
 
-<details><summary>Haz click para ver la comparación de rendimiento</summary>
+<details>
+<summary>Haz click para ver la comparación de rendimiento</summary>
 
 Nuestra prueba ha demostrado los beneficios del disipador de calor mejorado frente a la configuración original:
 
@@ -342,7 +343,6 @@ Nuestra prueba ha demostrado los beneficios del disipador de calor mejorado fren
   - El XIAO ESP32S3 funcionó de manera fluida.
   - La salida de video fue continua.
   - Se redujo significativamente la temperatura, asegurando un rendimiento confiable sin caídas de cuadros ni desconexiones.
-
 </details>
 
 
@@ -409,7 +409,8 @@ Si es la primera vez que usas Arduino, te recomendamos encarecidamente que consu
 - ****Paso 1:** Descarga e instala la versión estable de Arduino IDE según tu sistema operativo.
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Descarga Arduino IDE</font></span></strong>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
+        <strong><span><font color={'FFFFFF'} size={"4"}>Descarga Arduino IDE</font></span></strong>
     </a>
 </div>
 

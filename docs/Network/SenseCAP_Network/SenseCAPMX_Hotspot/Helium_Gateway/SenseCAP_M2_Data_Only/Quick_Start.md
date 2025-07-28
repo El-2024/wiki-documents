@@ -24,13 +24,13 @@ Below you will find the required steps to easily set up your hotspot in a few mi
 ===============================================================
 
 *   Install Helium Hotspot and SenseCAP MX Hotspot App
-*   Search and download “Helium Hotspot” and “SenseCAP MX Hotspot” from the Apple Store or Google Play and install these two Apps on your phone.
+*   Search and download "Helium Hotspot" and "SenseCAP MX Hotspot" from the Apple Store or Google Play and install these two Apps on your phone.
 
-“**Helium Hotspot**” App is the official Helium App and is necessary for Helium wallet authentication. You could use it to register and manage Helium wallet and make Hotspot and HNT transactions.
+"**Helium Hotspot**" App is the official Helium App and is necessary for Helium wallet authentication. You could use it to register and manage Helium wallet and make Hotspot and HNT transactions.
 
 ![Helium Hotspot App](https://www.sensecapmx.com/wp-content/uploads/2022/07/helium-app-logos-1.webp)
 
-“**SenseCAP MX Hotspot**” App is the official SenseCAP hotspot App developed by SenseCAP MX Team. You could use it to register and manage your SenseCAP hotspot.
+"**SenseCAP MX Hotspot**" App is the official SenseCAP hotspot App developed by SenseCAP MX Team. You could use it to register and manage your SenseCAP hotspot.
 
 ![SenseCAP Hotspot App](https://www.sensecapmx.com/wp-content/uploads/2022/07/SenseCAP-Hotspot-App.png)
 
@@ -91,7 +91,7 @@ Press the button for 5s until the blue indicator flashes slowly to enter configu
 
 *   Set up the Wi-Fi Connection
 
-Click “Scan Networks”, select the Wi-Fi, and enter the password; or click “Use Ethernet Instead” if you already use an ethernet cable.
+Click "Scan Networks", select the Wi-Fi, and enter the password; or click "Use Ethernet Instead" if you already use an ethernet cable.
 
 ![SenseCAP M2 Wifi Setup](https://www.sensecapmx.com/wp-content/uploads/2022/07/wifi.png)
 
@@ -104,7 +104,7 @@ Click “Scan Networks”, select the Wi-Fi, and enter the password; or click �
 
 Please follow the App instruction to add the hotspot to Helium Network.
 
-**NOTE**: Please note that the onboarding fees are NOT included in the product. A $10 onboarding fee and a $5 location asserting fee will be deducted by users' wallets to onboard. Please make sure you have enough Helium Data Credit in the Wallet when you proceed with the onboarding process.
+**NOTE**: Please note that the onboarding fees are NOT included in the product. A \$10 onboarding fee and a \$5 location asserting fee will be deducted by users' wallets to onboard. Please make sure you have enough Helium Data Credit in the Wallet when you proceed with the onboarding process.
 
 *   Assert Hotspot Location
 

@@ -154,46 +154,12 @@ V<sub>destination USB</sub>
 
 ### ピン説明とLEDステートメント
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>CHピンレベル（赤LED状態）</th>
-<th>OKピンレベル（緑LED状態）</th>
-<th>ステートメント</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>低レベル（ON）</td>
-<td>高レベル（OFF）</td>
-<td>充電中</td>
-</tr>
-<tr class="even">
-<td>高レベル（OFF）</td>
-<td>低レベル（最後にON）</td>
-<td>充電完了</td>
-</tr>
-<tr class="odd">
-<td>パルス信号（点滅）</td>
-<td>パルス信号（ON）</td>
-<td>バッテリーが存在しない</td>
-</tr>
-<tr class="even">
-<td>高レベル（OFF）</td>
-<td>高レベル（OFF）</td>
-<td>2つの状況:
-<ul>
-<li>入力電圧がゲート電圧より低い</li>
-<li>入力電圧がバッテリー電圧より低い</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| CHピンレベル（赤LED状態） | OKピンレベル（緑LED状態） | ステートメント |
+|---------------------------|---------------------------|-------------|
+| 低レベル（ON） | 高レベル（OFF） | 充電中 |
+| 高レベル（OFF） | 低レベル（最後にON） | 充電完了 |
+| パルス信号（点滅） | パルス信号（ON） | バッテリーが存在しない |
+| 高レベル（OFF） | 高レベル（OFF） | 2つの状況:<br/>• 入力電圧がゲート電圧より低い<br/>• 入力電圧がバッテリー電圧より低い |
 
 #### ハードウェアコンポーネント
 

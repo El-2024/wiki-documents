@@ -397,7 +397,7 @@ Additionally, we can manually set the fan speed using the jtop tool.
 ## CAN
 The CAN (Controller Area Network) interface is a serial communication protocol used for communication between microcontrollers and devices, featuring high speed, strong anti-interference capability, and support for multi-node communication.
 ### Hardware Connection
-- Please note the sequence of the connected lines (R OUT <-> RX, D IN <-> TX), and then convert them to CAN_L and CAN_H through the CAN bus transceiver.
+- Please note the sequence of the connected lines (R OUT ↔ RX, D IN ↔ TX), and then convert them to CAN_L and CAN_H through the CAN bus transceiver.
 
 <div align="center">
   <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/can1.png"/>

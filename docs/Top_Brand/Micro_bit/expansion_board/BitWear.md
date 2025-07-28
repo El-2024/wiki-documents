@@ -48,7 +48,7 @@ This is a magical gadget that can wake you up! Once the project completes, use t
 
 #### 1.2 Write a Program
 First, add a forever block. Connect the block show icon inside. Keep this heart icon on it.
-Next, add an IF-THEN statement. Connect a comparison block “<” into it. Inside the block, add the block acceleration (mg) from the tab Input to the box on the left; and input 800 into the box on the right.
+Next, add an IF-THEN statement. Connect a comparison block &lt; into it. Inside the block, add the block acceleration (mg) from the tab Input to the box on the left; and input 800 into the box on the right.
 Then, go to the tab Music and connect the block start melody (dadadum) repeating (once) underneath.
 
 <!-- ![](https://cdn.nlark.com/yuque/0/2020/png/2701823/1607655991101-b137ce8c-40cc-4e0f-a08b-a8b867c44cf6.png#align=left&display=inline&height=461&originHeight=461&originWidth=1303&size=0&status=done&style=none&width=1303) -->
@@ -58,7 +58,7 @@ Then, go to the tab Music and connect the block start melody (dadadum) repeating
 Attach the BitWear onto the micro:bit. Use a USB cable to connect the micro:bit and your PC together. Ensure that the LED indicator on the micro:bit lights up.
 
 #### 1.4 Download a Program
-You have been introduced how to download a program in the [previous tutorials](https://docproxy.tinkergen.com/web/#/2?page_id=329), which can be simplified into steps as: rename a program, click the “Download” button and send it to the micro:bit.
+You have been introduced how to download a program in the [previous tutorials](https://docproxy.tinkergen.com/web/#/2?page_id=329), which can be simplified into steps as: rename a program, click the "Download" button and send it to the micro:bit.
 
 #### 1.5 Run a Program
 Turn on the power switch on the BitWear and see if the program can run normally.
@@ -73,7 +73,7 @@ With a BitWear attached, the micro:bit shows a smiley face if the light level is
 ![](https://files.seeedstudio.com/wiki/microbit/bitwear/6.png)
 
 #### 2.2 Write a Program
-Note that MakeCode does not provide blocks to control the BitWear. Therefore we need to manually add an extension in MakeCode to make sure everything goes well. Let’s learn how to do it now!
+Note that MakeCode does not provide blocks to control the BitWear. Therefore we need to manually add an extension in MakeCode to make sure everything goes well. Let's learn how to do it now!
 How to Add a BitWear Extension:
 Go to MakeCode:
 [https://makecode.microbit.org](https://makecode.microbit.org/)
@@ -96,7 +96,7 @@ Go to MakeCode:
 <!-- ![](https://cdn.nlark.com/yuque/0/2020/png/2701823/1607655991400-25ce2189-c8b8-461d-ae36-98595d4c26a4.png#align=left&display=inline&height=937&originHeight=937&originWidth=1920&size=0&status=done&style=none&width=1920) -->
 ![](https://files.seeedstudio.com/wiki/microbit/bitwear/10.png)
 
-Let’s move on to the task after we added the extension.
+Let's move on to the task after we added the extension.
 
 
 
@@ -109,7 +109,7 @@ Follow this program logic and code: if the light level is greater than 80, then 
 #### 2.3 Connect a Device
 Attach the BitWear onto the micro:bit. Use a USB cable to connect the micro:bit and your PC together. Ensure that the LED indicator on the micro:bit lights up.
 #### 2.4 Download a Program
-You have been introduced how to download a program in the previous tutorials, which can be simplified into steps as: rename a program, click the “Download” button and send it to the micro:bit.
+You have been introduced how to download a program in the previous tutorials, which can be simplified into steps as: rename a program, click the "Download" button and send it to the micro:bit.
 #### 2.5 Run a Program
 Turn on the power switch on the BitWear and see if the program can run normally.
 

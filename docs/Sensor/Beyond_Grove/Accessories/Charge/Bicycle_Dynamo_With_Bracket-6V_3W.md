@@ -59,106 +59,85 @@ This product provide clean and green energy, it produce electric without any fue
 **output power test under constant voltage**
 
 <table>
-  <tbody><tr>
-      <th>Speed(km/h)
-      </th>
-      <th>Output power(W)
-      </th>
-      <th>Output volt(V)
-      </th>
-      <th>Output current(A)
-      </th></tr>
+  <tbody>
     <tr>
-      <td width="200px">5
-      </td>
-      <td width="200px">0.56
-      </td>
-      <td width="200px">6.00
-      </td>
-      <td width="200px">0.126
-      </td></tr>
+      <th>Speed(km/h)</th>
+      <th>Output power(W)</th>
+      <th>Output volt(V)</th>
+      <th>Output current(A)</th>
+    </tr>
     <tr>
-      <td>15
-      </td>
-      <td>1.89
-      </td>
-      <td>6.00
-      </td>
-      <td>0.369
-      </td></tr>
+      <td width="200px">5</td>
+      <td width="200px">0.56</td>
+      <td width="200px">6.00</td>
+      <td width="200px">0.126</td>
+    </tr>
     <tr>
-      <td>30
-      </td>
-      <td>4.09
-      </td>
-      <td>6.00
-      </td>
-      <td>0.560
-      </td></tr></tbody></table>
+      <td>15</td>
+      <td>1.89</td>
+      <td>6.00</td>
+      <td>0.369</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>4.09</td>
+      <td>6.00</td>
+      <td>0.560</td>
+    </tr>
+  </tbody>
+</table>
 
 
 **constant-resistance load testing （18 ohms）**
 
 <table>
-  <tbody><tr>
-      <th>speed（km/h）
-      </th>
-      <th>Output power(W)
-      </th>
-      <th>Output volt(V)
-      </th>
-      <th>Output current(A)
-      </th></tr>
+  <tbody>
     <tr>
-      <td width="200px">5
-      </td>
-      <td width="200px">0.45
-      </td>
-      <td width="200px">2.45
-      </td>
-      <td width="200px">0.115
-      </td></tr>
+      <th>speed（km/h）</th>
+      <th>Output power(W)</th>
+      <th>Output volt(V)</th>
+      <th>Output current(A)</th>
+    </tr>
     <tr>
-      <td>15
-      </td>
-      <td>1.89
-      </td>
-      <td>5.78
-      </td>
-      <td>0.325
-      </td></tr>
+      <td width="200px">5</td>
+      <td width="200px">0.45</td>
+      <td width="200px">2.45</td>
+      <td width="200px">0.115</td>
+    </tr>
     <tr>
-      <td>30
-      </td>
-      <td>3.21
-      </td>
-      <td>7.23
-      </td>
-      <td>0.435
-      </td></tr></tbody></table>
+      <td>15</td>
+      <td>1.89</td>
+      <td>5.78</td>
+      <td>0.325</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>3.21</td>
+      <td>7.23</td>
+      <td>0.435</td>
+    </tr>
+  </tbody>
+</table>
 
 
 **Tempreture test ：**
 
 <table>
-  <tbody><tr>
-      <th>Surroundings temp.
-      </th>
-      <th>Shell temp.
-      </th>
-      <th>Temp. rise
-      </th>
-      <th>Remarks
-      </th></tr>
+  <tbody>
     <tr>
-      <td width="200px">20℃
-      </td>
-      <td width="200px">55.2℃
-      </td>
-      <td width="200px">32.2℃
-      </td>
-      <td width="200px">keep 30cm distances test
-      </td></tr></tbody></table>
+      <th>Surroundings temp.</th>
+      <th>Shell temp.</th>
+      <th>Temp. rise</th>
+      <th>Remarks</th>
+    </tr>
+    <tr>
+      <td width="200px">20℃</td>
+      <td width="200px">55.2℃</td>
+      <td width="200px">32.2℃</td>
+      <td width="200px">keep 30cm distances test</td>
+    </tr>
+  </tbody>
+</table>
 
 
 

@@ -516,7 +516,7 @@ Use tilt switch module to turn on/off the built-in LED on the Seeeduino Lotus, a
 - Tilt Switch is a signal input module
 - The operation on tilt switch
 - uses digitalRead(pin) function get the input logic signal from tilt switch which is HIGH for switched on, and LOW for switched off.
-- if(condition){}else{}function and comparison operator such as !=(not equal to), <(less than), <=(less than or equal to), ==(equal to), >(greater than) and >=(greater than or equal to).
+- if(condition){}else{}function and comparison operator such as !=(not equal to), &lt;(less than), &lt;=(less than or equal to), ==(equal to), &gt;(greater than) and &gt;=(greater than or equal to).
 
 **Hardware requirement**
 

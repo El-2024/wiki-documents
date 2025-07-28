@@ -27,7 +27,7 @@ last_update:
 ### 所需物品
 
 - XIAO ESP32-Sense
-- <32GB MicroSD卡
+- \<32GB MicroSD卡
 - Type-C 数据线
 - Arduino IDE
 - Edge Impulse 账户
@@ -73,8 +73,7 @@ last_update:
 - **步骤 1.** 根据您的操作系统下载并安装稳定版本的 Arduino IDE。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong></a>
 </div>
 
 #### 1.1.2 在 Arduino 上安装 XIAO-ESP32S3 Sense
@@ -82,7 +81,7 @@ last_update:
 - **步骤 1.** 将 ESP32 板包添加到您的 Arduino IDE。
 
   导航到 **文件 > 首选项**，并在 **“附加开发板管理器 URLs”** 中填写以下 URL：
-  _<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json>_
+  _https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json_
 
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/6.png" style={{width:800, height:'auto'}}/></div>
 
@@ -529,7 +528,7 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
 #endif
 ```
 
-确保将 **"#include <XIAO_esp32S3_CatDog2_inferencing.h>"** 替换为您生成的库。然后上传代码并指向猫或狗的图片，或者实际的猫狗，我们可以在串口监视器中看到结果。
+确保将 **"#include \<XIAO_esp32S3_CatDog2_inferencing.h\>"** 替换为您生成的库。然后上传代码并指向猫或狗的图片，或者实际的猫狗，我们可以在串口监视器中看到结果。
 
 恭喜您 🙌 完成了这个 tinyML 图像分类项目。
 

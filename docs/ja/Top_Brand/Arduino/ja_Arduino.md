@@ -61,8 +61,7 @@ Arduinoは多面的なプラットフォームであり、さまざまなプロ�
 Arduinoをサポートするすべてのボードに対して、コードをアップロードしたり、ボードが正常に動作しているか確認したり、すべてのアプリケーションを有効にするためにArduino IDEが必要になる場合があります。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDEをダウンロード</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDEをダウンロード</font></span></strong></a>
 </div>
 
 ### Arduinoライブラリのインストール方法
@@ -70,8 +69,7 @@ Arduinoをサポートするすべてのボードに対して、コードをア�
 Arduinoライブラリのインストール方法についてのチュートリアルを提供しています。ほとんどすべてのライブラリは[Github](https://github.com/Seeed-Studio)に保存されていることに注意してください。製品がライブラリを必要とする場合、例えば[CAB-BUS Shield V2](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)のように、Arduinoライブラリを提供します。しかし、Grove - Buttonのような他のシンプルな製品ではライブラリを書く必要がありません。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>Arduinoライブラリのインストール方法</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>Arduinoライブラリのインストール方法</font></span></strong></a>
 </div>
 
 ### コードのアップロード方法
@@ -79,8 +77,7 @@ Arduinoライブラリのインストール方法についてのチュートリ�
 コードのアップロード方法についての別のチュートリアルを用意しています：
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>コードのアップロード方法</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>コードのアップロード方法</font></span></strong></a>
 </div>
 
 ### その他のハウツーチュートリアル

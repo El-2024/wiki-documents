@@ -213,7 +213,7 @@ Para el bloque de **object detection** (Detección de objetos), la configuració
     - 5 subtítulos por imágen
     - 250,000 personas con puntos clave
 
-    <div align=center><img width = 700 src="https://files.seeedstudio.com/wiki/node-red/22.png"/></div>
+    <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/node-red/22.png" /></div>
 
 Una vez que lo hayas hecho, haz click en el botón **deploy** en la esquina superior derecha de la interfaz y la secuencia del programa comenzará a ejecutarse.
 

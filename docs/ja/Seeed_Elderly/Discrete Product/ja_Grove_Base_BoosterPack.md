@@ -50,119 +50,21 @@ BoosterPackは、「内側の20ピン」[21-40]を活用するように設計さ
 
 以下の表を使用して、開発者はGroveコネクタ「J6」に接続されたGroveモジュール（例: ポテンショメータ/回転ノブ）からアナログ値を読み取ることができます。EnergiaのanalogRead(24) API呼び出しを使用します。
 
-<table>
-<tr>
-<th> コネクタタイプ </th>
-<th> Groveコネクタラベル </th>
-<th> GND </th>
-<th> VCC </th>
-<th> SIG1 (BoosterPackピンへの接続) </th>
-<th> SIG0 (BoosterPackピンへの接続) *
-</th></tr>
-<tr>
-<td> アナログ</td>
-<td> J5 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 23 (アナログ対応ピン) </td>
-<td> 22 (アナログ対応ピン)
-</td></tr>
-<tr>
-<td> アナログ</td>
-<td> J6 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 25 (アナログ対応ピン) </td>
-<td> 24 (アナログ対応ピン)
-</td></tr>
-<tr>
-<td> アナログ</td>
-<td> J7 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 26 (アナログ対応ピン) </td>
-<td> 25 (アナログ対応ピン)
-</td></tr>
-<tr>
-<td> アナログ</td>
-<td> J8 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 27 (アナログ対応ピン) </td>
-<td> 26 (アナログ対応ピン)
-</td></tr>
-<tr>
-<td> アナログ</td>
-<td> J9 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 28 (アナログ対応ピン) </td>
-<td> 27 (アナログ対応ピン)
-</td></tr>
-<tr>
-<td> I2C </td>
-<td> J10 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 10 (I2C SDA) </td>
-<td> 9 (I2C SCL)
-</td></tr>
-<tr>
-<td> UART </td>
-<td> J11 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 4 (UART to MCU) </td>
-<td> 3 (UART from MCU)
-</td></tr>
-<tr>
-<td> SPI </td>
-<td> J12 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 14 (SPI MISO) </td>
-<td> 7 (SPI CLK)
-</td></tr>
-<tr>
-<td> デジタル </td>
-<td> J13 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 39 (デジタル/PWMピン) </td>
-<td> 40 (デジタル/PWMピン)
-</td></tr>
-<tr>
-<td> デジタル</td>
-<td> J14 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 38 (デジタル/PWMピン) </td>
-<td> 39 (デジタル/PWMピン)
-</td></tr>
-<tr>
-<td> デジタル</td>
-<td> J15 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 37 (デジタル/PWMピン) </td>
-<td> 38 (デジタル/PWMピン)
-</td></tr>
-<tr>
-<td> デジタル</td>
-<td> J16 </td>
-<td> GND </td>
-<td> 3.3V </td>
-<td> 36 (デジタル/PWMピン) </td>
-<td> 37 (デジタル/PWMピン)
-</td></tr>
-<tr>
-<td> デジタル</td>
-<td> J17 </td>
-<td> GND </td>
-<td> 3.3V  </td>
-<td> 35 (デジタル/PWMピン) </td>
-<td> 36 (デジタル/PWMピン)
-</td></tr></table>
+| コネクタタイプ | Groveコネクタラベル | GND | VCC | SIG1 (BoosterPackピンへの接続) | SIG0 (BoosterPackピンへの接続) * |
+|---|---|---|---|---|---|
+| アナログ | J5 | GND | 3.3V | 23 (アナログ対応ピン) | 22 (アナログ対応ピン) |
+| アナログ | J6 | GND | 3.3V | 25 (アナログ対応ピン) | 24 (アナログ対応ピン) |
+| アナログ | J7 | GND | 3.3V | 26 (アナログ対応ピン) | 25 (アナログ対応ピン) |
+| アナログ | J8 | GND | 3.3V | 27 (アナログ対応ピン) | 26 (アナログ対応ピン) |
+| アナログ | J9 | GND | 3.3V | 28 (アナログ対応ピン) | 27 (アナログ対応ピン) |
+| I2C | J10 | GND | 3.3V | 10 (I2C SDA) | 9 (I2C SCL) |
+| UART | J11 | GND | 3.3V | 4 (UART to MCU) | 3 (UART from MCU) |
+| SPI | J12 | GND | 3.3V | 14 (SPI MISO) | 7 (SPI CLK) |
+| デジタル | J13 | GND | 3.3V | 39 (デジタル/PWMピン) | 40 (デジタル/PWMピン) |
+| デジタル | J14 | GND | 3.3V | 38 (デジタル/PWMピン) | 39 (デジタル/PWMピン) |
+| デジタル | J15 | GND | 3.3V | 37 (デジタル/PWMピン) | 38 (デジタル/PWMピン) |
+| デジタル | J16 | GND | 3.3V | 36 (デジタル/PWMピン) | 37 (デジタル/PWMピン) |
+| デジタル | J17 | GND | 3.3V | 35 (デジタル/PWMピン) | 36 (デジタル/PWMピン) |
 
 ### 20ピンLaunchPadの使用
 

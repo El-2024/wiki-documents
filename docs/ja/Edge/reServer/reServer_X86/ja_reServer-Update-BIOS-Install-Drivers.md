@@ -13,20 +13,14 @@ last_update:
 https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
-<!-- ---
-name: BIOSのアップグレードとドライバーのインストール
-category: reServer
-bzurl: 
-wikiurl: 
-sku: 
---- -->
+
 
 <div className="tips" style={{display: 'table', tableLayout: 'fixed', backgroundColor: '#fbd373', height: 'auto', width: '100%'}}>
   <div className="left-icon" style={{display: 'table-cell', verticalAlign: 'middle', backgroundColor: '#FC4A1A', paddingTop: 10, boxSizing: 'border-box', height: 'auto', width: 38, textAlign: 'center'}}><img style={{width: 26, verticalAlign: 'middle'}} src="https://s3-us-west-2.amazonaws.com/static.seeed.cc/seeed/icon/Danger.svg" alt="attention icon" /></div>
   <div className="right-desc" style={{display: 'table-cell', verticalAlign: 'middle', paddingLeft: 15, boxSizing: 'border-box', width: 'calc(95% - 38px)'}}>
     <p style={{color: '#000000', fontWeight: 'bold', marginTop: 10}}>重要な注意事項</p>
-    <p style={{color: '#000000', fontSize: 14}}> これにより、<b>古いBIOS設定が消去されます</b>。そのため、Windowsを使用している場合は、再度<b>Windowsを再アクティベート</b>する必要があります（アクティベーションキーが消去され、再アクティベートにはインターネットが必要です）。<br />
-    </p></div>
+    <p style={{color: '#000000', fontSize: 14}}> これにより、<b>古いBIOS設定が消去されます</b>。そのため、Windowsを使用している場合は、再度<b>Windowsを再アクティベート</b>する必要があります（アクティベーションキーが消去され、再アクティベートにはインターネットが必要です）。<br /></p>
+  </div>
 </div>
 
 ## BIOSのアップグレード

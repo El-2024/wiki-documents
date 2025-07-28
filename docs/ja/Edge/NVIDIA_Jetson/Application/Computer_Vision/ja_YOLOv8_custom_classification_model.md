@@ -42,8 +42,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=3d7dba9378be2accafeaff54420edb6a&objectID=5586&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
 </div>
 
 ### ソフトウェアセットアップ
@@ -98,7 +97,7 @@ sudo systemctl isolate multi-user
 < POWER_MODEL ID=2 NAME=15W >
 < POWER_MODEL ID=3 NAME=25W >
 ```
-次に、*sudo nvpmodel -m <#power model>* を使用して電力モードを変更できます。そして、[このスレッド投稿](https://forums.developer.nvidia.com/t/power-mode-in-terminal/287224)によると、設定は再起動後も保持されます。  
+次に、*sudo nvpmodel -m `<power model number>`* を使用して電力モードを変更できます。そして、[このスレッド投稿](https://forums.developer.nvidia.com/t/power-mode-in-terminal/287224)によると、設定は再起動後も保持されます。
 現在の電力レベルを確認するには、以下を実行します。
 
 ```bash

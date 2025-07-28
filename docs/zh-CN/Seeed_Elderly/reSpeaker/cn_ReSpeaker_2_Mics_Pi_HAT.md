@@ -247,10 +247,6 @@ off
 
 **Q1:严格按照本 wiki 操作，驱动还是安装失败，怎么办？**
 
-A1:如果按照上述方法安装驱动均失败，请点击下载下面镜像(不适用4带)
-
-[2018-08-06-raspbian-4GB-for-respeaker](https://v2.fangcloud.com/share/7395fd138a1cab496fd4792fe5?folder_id=188000207913)
-
 ![](https://files.seeedstudio.com/wiki/2mics_hat/img/image_select.JPG)
 
 请执行下面的步骤：

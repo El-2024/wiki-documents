@@ -63,86 +63,69 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 It is possible to use TFLite Converter to convert any Tensorflow model into .tflite format, provided it only consists of operations supported by TFLite Runtime. The following is list of demos currently tested on reTerminal, that will be expanded and completed in future:
 
-<table style={{tableLayout: 'fixed', width: 743}}>
-  <colgroup>
-    <col style={{width: 146}} />
-    <col style={{width: 198}} />
-    <col style={{width: 399}} />
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Model</th>
-      <th>Result</th>
-      <th>Comments</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Object Detection</td>
-      <td> <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/000402.jpg" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Vehicle Detection <br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_multi_stage.ipynb" target="_top">Jupyter Notebook</a><br />
-        <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/detector" target="_top">Example scripts</a> <br />
-        alpha 0.25 224x224 66.7 FPS (15 ms.)<br />
-        alpha 0.5 224x224 40 FPS (25 ms.)<br />
-        alpha 0.75 320x320 14.9 FPS (67 ms.)<br />
-        alpha 1.0 320x320 10.4 FPS (96 ms.)<br />
-      </td>
-    </tr>
-    <tr>
-      <td>Image Classification</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/belt.png" alt="pir" width={600} height="auto" /></p> </td>
-      <td>Demo: Industrial Conveyor Rip Identification<br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_conveyor_belt_rip_recognition.ipynb" target="_top">Jupyter Notebook</a><br />
-        <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier" target="_top">Example scripts</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Semantic segmentation</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/CHNCXR_0331_1.png" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Lung segmentation <br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_lung_segmentation.ipynb" target="_top">Jupyter Notebook</a><br />
-        <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/segnet" target="_top">Example scripts</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Face age/gender recognition</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/output.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Multi-stage inference: MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
-        <a href="https://github.com/AIWintermuteAI/edge_ml_age_gender_recognition/tree/master" target="_top">Github repository</a><br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_age_gender" target="_top">Example scripts</a> <br />
-        ~16-20 FPS (with <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_age-gender" target="_top">ARM NN</a>)
-      </td>
-    </tr>
-    <tr>
-      <td>Face expression recognition</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/ml/emotion/emotions.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Multi-stage inference: MobileNet YOLOv3 alpha 0.25 -&gt; MobileFaceNet <br />
-        <a href="https://github.com/AIWintermuteAI/edge_ml_emotion_recognition/tree/master" target="_top">Github repository</a><br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_emotion" target="_top">Example scripts</a> <br />
-        ~11 FPS
-      </td>
-    </tr>
-    <tr>
-      <td>Face anti-spoofing</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/ml/face_anti-spoofing/face_anti-spoofing.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Multi-stage inference: MobileNet YOLOv3 alpha 0.25 -&gt; MobileNet v1 alpha 0.25<br />
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_face_anti_spoofing.ipynb" target="_top">Jupyter Notebook</a><br />
-        <a href="https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier" target="_top">Example scripts</a>  <br />
-        ~23 FPS (ARM NN)
-      </td>
-    </tr>
-    <tr>
-      <td>Face Recognition</td>
-      <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminal_ML/face_recognition.gif" alt="pir" width={600} height="auto" /></p></td>
-      <td>Demo: Multi-stage inference: Ultra Light Face Detector with Landmark Detection -&gt; MobileFaceNet<br />
-         <a >Jupyter Notebook</a><br /> 
-        <a href="https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_recognition" target="_top">Example scripts</a>  <br />
-        ~15 FPS (ARM NN)
-      </td>
-    </tr>
-  </tbody>
-</table>
+### Object Detection
+
+![Vehicle Detection](https://files.seeedstudio.com/wiki/reTerminal_ML/000402.jpg)
+
+Demo: Vehicle Detection
+[Jupyter Notebook](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_multi_stage.ipynb)
+[Example scripts](https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/detector)
+- alpha 0.25 224x224 66.7 FPS (15 ms.)
+- alpha 0.5 224x224 40 FPS (25 ms.)
+- alpha 0.75 320x320 14.9 FPS (67 ms.)
+- alpha 1.0 320x320 10.4 FPS (96 ms.)
+
+### Image Classification
+
+![Industrial Conveyor](https://files.seeedstudio.com/wiki/reTerminal_ML/belt.png)
+
+Demo: Industrial Conveyor Rip Identification
+[Jupyter Notebook](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_conveyor_belt_rip_recognition.ipynb)
+[Example scripts](https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier)
+
+### Semantic Segmentation
+
+![Lung Segmentation](https://files.seeedstudio.com/wiki/reTerminal_ML/CHNCXR_0331_1.png)
+
+Demo: Lung segmentation
+[Jupyter Notebook](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_lung_segmentation.ipynb)
+[Example scripts](https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/segnet)
+
+### Face Age/Gender Recognition
+
+![Age Gender Recognition](https://files.seeedstudio.com/wiki/reTerminal_ML/output.gif)
+
+Demo: Multi-stage inference: MobileNet YOLOv3 alpha 0.25 -> MobileFaceNet
+[Github repository](https://github.com/AIWintermuteAI/edge_ml_age_gender_recognition/tree/master)
+[Example scripts](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_age_gender)
+~16-20 FPS (with [ARM NN](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_age-gender))
+
+### Face Expression Recognition
+
+![Emotion Recognition](https://files.seeedstudio.com/ml/emotion/emotions.gif)
+
+Demo: Multi-stage inference: MobileNet YOLOv3 alpha 0.25 -> MobileFaceNet
+[Github repository](https://github.com/AIWintermuteAI/edge_ml_emotion_recognition/tree/master)
+[Example scripts](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/tensorflow_lite/multi_stage_inference_emotion)
+~11 FPS
+
+### Face Anti-spoofing
+
+![Face Anti-spoofing](https://files.seeedstudio.com/ml/face_anti-spoofing/face_anti-spoofing.gif)
+
+Demo: Multi-stage inference: MobileNet YOLOv3 alpha 0.25 -> MobileNet v1 alpha 0.25
+[Jupyter Notebook](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/blob/main/jupyter_notebooks/aXeleRate_face_anti_spoofing.ipynb)
+[Example scripts](https://github.com/AIWintermuteAI/aXeleRate/tree/master/example_scripts/tensorflow_lite/classifier)
+~23 FPS (ARM NN)
+
+### Face Recognition
+
+![Face Recognition](https://files.seeedstudio.com/wiki/reTerminal_ML/face_recognition.gif)
+
+Demo: Multi-stage inference: Ultra Light Face Detector with Landmark Detection -> MobileFaceNet
+[Jupyter Notebook](#)
+[Example scripts](https://github.com/Seeed-Studio/Seeed_Python_MachineLearning/tree/main/examples/armnn/face_recognition)
+~15 FPS (ARM NN)
 
 ## Further optimization
 
@@ -182,17 +165,14 @@ MobileNetv1(alpha 0.25) YOLOv2 1 class 0.89 MB 83 FPS
 MobileNetv1(alpha 1.0) YOLOv3 20 class 13.1 MB 7.2 FPS
 
 Main problem with optimized kernels is the uneven support of different architectures/NN operators/precision types in different frameworks. For example INT8 optimized kernels are work-in-progress both in ARM NN and XNNPACK. The support for INT8 optimized kernels in XNNPACK was added very recently and seems to bring modest performance improvement, of about ~30%, depending on operators used in the model.
-<https://github.com/google/XNNPACK/issues/999#issuecomment-870791779>
+[XNNPACK GitHub Issue](https://github.com/google/XNNPACK/issues/999#issuecomment-870791779)
 
 Another promising lead is optimized kernels for dynamically quantized models, see the conversation with developer here:
-<https://github.com/tensorflow/tensorflow/pull/48751#issuecomment-869111116>
+[TensorFlow GitHub PR](https://github.com/tensorflow/tensorflow/pull/48751#issuecomment-869111116)
 
 The developer claims 3-4x latency improvement, but currently it is only limited to very specific set of models. A PR to allow more convenient usage is in development.
 
-4) **Pruning and sparse inference**. Pruning is a process of fine-tuning trained neural network to find weights, that do not contribute to correct predictions. This allows for reducing both size and latency of the models - the accuracy reduction depends on sparsity settings. Experimentally it is possible to achieve up to 80% sparsity with negligible impact on accuracy. See details here
-<https://ai.googleblog.com/2021/03/accelerating-neural-networks-on-mobile.html>
-and a guide to pruning with tensorflow here
-<https://www.tensorflow.org/model_optimization/guide/pruning/pruning_for_on_device_inference>
+4) **Pruning and sparse inference**. Pruning is a process of fine-tuning trained neural network to find weights, that do not contribute to correct predictions. This allows for reducing both size and latency of the models - the accuracy reduction depends on sparsity settings. Experimentally it is possible to achieve up to 80% sparsity with negligible impact on accuracy. See details [here](https://ai.googleblog.com/2021/03/accelerating-neural-networks-on-mobile.html) and a guide to pruning with tensorflow [here](https://www.tensorflow.org/model_optimization/guide/pruning/pruning_for_on_device_inference).
 Unfortunately in current form, only very limited set of models support pruning and sparse inference with XNNPACK.
 
 ## F.A.Q

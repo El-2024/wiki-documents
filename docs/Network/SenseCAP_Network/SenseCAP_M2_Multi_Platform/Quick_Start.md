@@ -155,7 +155,7 @@ To reduce data consumption, please check [Low Data Consumption Mode Config](http
 
 ### Channel Plan Settings
 
-Navigate to `LoRa` > `Channel Plan` 
+Navigate to `LoRa` > `Channel Plan` 
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/M2-MP3.png" alt="pir" width={800} height="auto" /></p>
 
@@ -172,14 +172,15 @@ After powering on the gateway, there are two ways for you to check the gateway w
 
 #### LED Indicator
 
-<table><tr><th colspan="2" valign="top"><b>Mode</b></th><th colspan="1" valign="top"><b>Description</b></th></tr>
+<table>
+<tr><th colspan="2" valign="top"><b>Mode</b></th><th colspan="1" valign="top"><b>Description</b></th></tr>
 <tr><td colspan="1" rowspan="2" valign="top"><p></p><p></p><p>Green</p></td><td colspan="1" valign="top">Solid</td><td colspan="1" valign="top">Gateway is healthy and the internet is well connected.</td></tr>
 <tr><td colspan="1" valign="top">Slow blinking</td><td colspan="1" valign="top">Gateway is booting, please wait.</td></tr>
 <tr><td colspan="1" rowspan="3" valign="top"><p></p><p></p><p></p><p></p><p>Blue</p></td><td colspan="1" valign="top"><p></p><p>Solid</p></td><td colspan="1" valign="top"><p>The gateway is ready for internet connection.</p><p>Further configuration is needed.</p></td></tr>
 <tr><td colspan="1" valign="top">Slow blinking</td><td colspan="1" valign="top">Configuration mode, and will auto exit after 5 mins if no activity.</td></tr>
 <tr><td colspan="1" valign="top"><p></p><p>Fast blinking</p></td><td colspan="1" valign="top">Press the button for 30s until the indicator show fast flash will trigger the factory reset.</td></tr>
-<tr><td colspan="1" valign="top"><p></p><p>Orange</p></td><td colspan="1" valign="top"><p></p><p>Slow blinking</p></td><td colspan="1" valign="top">Firmware is updating, and please do not power off the gateway or <br/>disconnect the internet.</td></tr>
-<tr><td colspan="1" valign="top"><p></p><p>White</p></td><td colspan="1" valign="top"><p></p><p>Solid</p></td><td colspan="1" valign="top">Gateway is only with a factory firmware, and will be updated to the latest firmware automatically<br/> when it is connected to the internet.</td></tr>
+<tr><td colspan="1" valign="top"><p></p><p>Orange</p></td><td colspan="1" valign="top"><p></p><p>Slow blinking</p></td><td colspan="1" valign="top">Firmware is updating, and please do not power off the gateway or disconnect the internet.</td></tr>
+<tr><td colspan="1" valign="top"><p></p><p>White</p></td><td colspan="1" valign="top"><p></p><p>Solid</p></td><td colspan="1" valign="top">Gateway is only with a factory firmware, and will be updated to the latest firmware automatically when it is connected to the internet.</td></tr>
 <tr><td colspan="1" rowspan="2" valign="top"><p></p><p>Red</p></td><td colspan="1" valign="top">Solid</td><td colspan="1" valign="top">Hardware issue or internet connection failure.</td></tr>
 <tr><td colspan="1" valign="top">Slow blinking</td><td colspan="1" valign="top">Gateway not connected to the LNS.</td></tr>
 </table>
@@ -245,7 +246,7 @@ eg: If your gateway is US915 version , then you need to set your sensor to US915
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/app7.png" alt="pir" width={500} height="auto" /></p>
 
 :::tip 
-SenseCAP M2 Multi-Platform Gateway can’t connect to Helium network.
+SenseCAP M2 Multi-Platform Gateway can't connect to Helium network.
 :::
 
 For more configurations about SenseCAP sensors, please refer to: SenseCAP Sensors

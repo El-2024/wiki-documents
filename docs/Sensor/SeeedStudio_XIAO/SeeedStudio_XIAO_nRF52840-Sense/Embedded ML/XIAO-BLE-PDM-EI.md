@@ -244,7 +244,7 @@ Choose the downloaded file. After a while, a message will appear on the output w
 ### Step 8 - Voice control the RGB lights on the XIAO nRF52840 Sense 
 
 Let's open an examples
-Go to Examples > <your_files_names> > nano_ble33_sense > nano_ble33_sense_microphone
+Go to Examples > &lt;your_files_names&gt; > nano_ble33_sense > nano_ble33_sense_microphone
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/BLE-PDM-TinyML/edge32.png" alt="Library installed" width={600} height="auto" /></p>
 

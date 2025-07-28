@@ -30,7 +30,8 @@ En esta wiki, te mostraremos cómo flashear Jetpack OS a la Carrier Board A205 q
 ![image](https://files.seeedstudio.com/wiki/reComputer_Carrier_Board/A205/Flash_A205.png)
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/A205-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5133.html"><strong><span><font color={'FFFFFF'} size={"4"}> Consigue una ahora 🖱️</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/A205-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5133.html">
+      <strong><span><font color="FFFFFF" size="4"> Consigue una ahora 🖱️</font></span></strong>
     </a>
 </div>
 
@@ -38,8 +39,8 @@ En esta wiki, te mostraremos cómo flashear Jetpack OS a la Carrier Board A205 q
 
 Podemos usar **NVIDIA SDK manager y terminal Linux** para actualizar el sistema, o podemos hacerlo fácilmente usando la **Terminal Linux**. Para las personas que tienen experiencia en Linux, recomendamos utilizar únicamente la Terminal de Linux.
 
-- [Flasheando JetPack OS con NVIDIA SDK manager y la terminal de Linux](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [Flasheando JetPack OS con la terminal de Linux](#flashing-jetpack-os-via-command-line)
+- Flasheando JetPack OS con NVIDIA SDK manager y la terminal de Linux
+- Flasheando JetPack OS con la terminal de Linux
 
 Todavía hay algunos preparativos que necesitamos hacer primero:
 

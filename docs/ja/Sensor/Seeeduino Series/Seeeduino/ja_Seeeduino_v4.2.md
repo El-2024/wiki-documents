@@ -51,16 +51,7 @@ Seeeduino v4.2はArduino UNOブートローダーをベースにしており、A
     </tr>
     <tr>
       <td className="tg-031e">Seeeduino V4.2</td>
-      <td className="tg-031e">
-        1. 左上隅のいくつかのパッドを削除<br />
-        <br />
-        2. USBの位置を中央に変更<br />
-        <br />
-        3. DCDC回路を改善して性能向上<br />
-        <br />
-        4. I2C Groveコネクタを追加<br />
-        <br />
-        5. シルクスクリーンと部品の位置を変更</td>
+      <td className="tg-031e">1. 左上隅のいくつかのパッドを削除<br />2. USBの位置を中央に変更<br />3. DCDC回路を改善して性能向上<br />4. I2C Groveコネクタを追加<br />5. シルクスクリーンと部品の位置を変更</td>
       <td className="tg-yw4l">2015年8月24日</td>
     </tr>
       <tr>
@@ -297,7 +288,7 @@ A2: Seeeduino v4.2はArduino UNOと完全互換性があります。主な違い
 - LDOの代わりにDCDC回路を使用し、効率が向上
 - その他の回路改善
 
-**Q3: <http://downloads.arduino.cc/packages/package_index.json> のダウンロードエラーが発生します**
+**Q3: http://downloads.arduino.cc/packages/package_index.json のダウンロードエラーが発生します**
 
 A3: 以下の手順で問題を解決してください。
 

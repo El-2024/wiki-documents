@@ -84,7 +84,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 詳細なマニュアルについては、以下のリンクをご覧ください：
 
-<https://www.seeedstudio.com/recipe/1068-traffic-light-indicates-travis-ci-compiled-results.html>
+[https://www.seeedstudio.com/recipe/1068-traffic-light-indicates-travis-ci-compiled-results.html](https://www.seeedstudio.com/recipe/1068-traffic-light-indicates-travis-ci-compiled-results.html)
 
 
 <!-- この Markdown ファイルは https://www.seeedstudio.com/wiki/Wio_Link_Deluxe_Plus_Kit から作成されました -->

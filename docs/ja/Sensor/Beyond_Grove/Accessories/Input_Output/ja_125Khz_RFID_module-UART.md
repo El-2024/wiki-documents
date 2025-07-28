@@ -41,71 +41,61 @@ RDM 125KHzカードミニモジュールは、125KHzカードのコードを読�
 
 <table>
 <tr>
-<td width="300px"> 周波数
-</td>
-<td width="500px"> 125KHz
-</td></tr>
+<td width="300px"> 周波数</td>
+<td width="500px"> 125KHz</td>
+</tr>
 <tr>
-<td> ボーレート
-</td>
-<td> 9600 (TTL電気レベルRS232形式)
-</td></tr>
+<td> ボーレート</td>
+<td> 9600 (TTL電気レベルRS232形式)</td>
+</tr>
 <tr>
-<td> インターフェース
-</td>
-<td> Weigang26またはTTL電気レベルRS232形式
-</td></tr>
+<td> インターフェース</td>
+<td> Weigang26またはTTL電気レベルRS232形式</td>
+</tr>
 <tr>
-<td> 電源供給
-</td>
-<td> DC 5V（±5%）
-</td></tr>
+<td> 電源供給</td>
+<td> DC 5V（±5%）</td>
+</tr>
 <tr>
-<td> 電流
-</td>
-<td> &lt;50mA
-</td></tr>
+<td> 電流</td>
+<td> &lt;50mA</td>
+</tr>
 <tr>
-<td> 動作範囲
-</td>
-<td> &gt;50mm（カード/タグの形状、製造元による）
-</td></tr>
+<td> 動作範囲</td>
+<td> &gt;50mm（カード/タグの形状、製造元による）</td>
+</tr>
 <tr>
-<td> 拡張I/Oポート
-</td>
-<td> N/A
-</td></tr>
+<td> 拡張I/Oポート</td>
+<td> N/A</td>
+</tr>
 <tr>
-<td> インジケータライト
-</td>
-<td> N/A
-</td></tr>
+<td> インジケータライト</td>
+<td> N/A</td>
+</tr>
 <tr>
-<td> 動作温度
-</td>
-<td> -10℃~ +70℃
-</td></tr>
+<td> 動作温度</td>
+<td> -10℃~ +70℃</td>
+</tr>
 <tr>
-<td> 保管温度
-</td>
-<td> -20℃~ +80℃
-</td></tr>
+<td> 保管温度</td>
+<td> -20℃~ +80℃</td>
+</tr>
 <tr>
-<td> 最大湿度
-</td>
-<td> 相対湿度 0 ~ 95%
-</td></tr>
+<td> 最大湿度</td>
+<td> 相対湿度 0 ~ 95%</td>
+</tr>
 <tr>
-<td> サイズ
-</td>
-<td> 38.5mm ×19mm×9mm
-</td></tr></table>
+<td> サイズ</td>
+<td> 38.5mm ×19mm×9mm</td>
+</tr>
+</table>
 
 ## ピン定義と定格
 
 以下の画像（機械的寸法）を参照し、ピン定義リストを確認してください：
 
-<pre> ピン定義 :
+```
+ピン定義 :
  P1:
    PIN1    TX
    PIN2    RX
@@ -119,7 +109,7 @@ RDM 125KHzカードミニモジュールは、125KHzカードのコードを読�
    PIN1    LED
    PIN2    +5V(DC)
    PIN3    GND
-</pre>
+```
 
 ## 機械的寸法
 
@@ -134,14 +124,12 @@ RDM 125KHzカードミニモジュールは、125KHzカードのコードを読�
 
 <table>
 <tr>
-<td width="100px"> 02
-</td>
-<td width="300px"> 10ASCIIデータ文字
-</td>
-<td width="100px"> チェックサム
-</td>
-<td width="100px"> 03
-</td></tr></table>
+<td width="100px"> 02</td>
+<td width="300px"> 10ASCIIデータ文字</td>
+<td width="100px"> チェックサム</td>
+<td width="100px"> 03</td>
+</tr>
+</table>
 
 例: カード番号: 62E3086CED
 

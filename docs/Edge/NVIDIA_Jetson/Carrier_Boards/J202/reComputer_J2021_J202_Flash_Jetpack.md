@@ -216,6 +216,10 @@ Before we can move on to the installation steps, we need to make sure that our r
 - For NVIDIA® Jetson Xavier™ NX: 0955:7e19 NVidia Corp
 :::
 
+:::caution
+The SPI interface on the Jetson-Nano is multiplexed with GPIO by default and is not enabled. Please refer to [**this guide**](/enable_spi_interface_on_jetsonnano) for instructions on how to enable it.
+:::
+
 ### Flash to Jetson
 
 There are two optional ways of flash JetPack OS into the reComputer J2021, For the beginners to NVIDIA Jetson, we highly recommand NVIDIA SDK Manager:

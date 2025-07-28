@@ -35,7 +35,7 @@ Grove——分压器提供了一个接口，用于测量外部电压，从而无
 |项目| 最小值 | 典型值 | 最大值 | 单位 |
 |---|---|---|---|---|
 | 工作电压               | 4.7    | 5.0    | 5.3    | VDC  |
-| 测量精度               | /      | <=1    | /      | %    |
+| 测量精度               | /      | \<=1    | /      | %    |
 | 外部电压范围（选择3）  | 0.3    | /      | 12.9   | V    |
 | 外部电压范围（选择10） | 1.0    | /      | 43     | V    |
 | 尺寸                   | /      | 24X20  | /      | mm   |
@@ -62,7 +62,7 @@ Grove——分压器提供了一个接口，用于测量外部电压，从而无
 
 ![](https://files.seeedstudio.com/wiki/Grove-Voltage_Divider/img/Voltage_Divider_Test_Score.jpg)
 
-- 如您所见，当输入值在测量范围内时，分压器具有高精度（<1%，我在此标记为“OK”）。但是，当输入值不在范围内时，精度会降低（我标记为“NO”）。请参考[规格参数](https://wiki.seeedstudio.com/Grove-Voltage_Divider/#specification)了解具体的测量范围。
+- 如您所见，当输入值在测量范围内时，分压器具有高精度（\<1%，我在此标记为“OK”）。但是，当输入值不在范围内时，精度会降低（我标记为“NO”）。请参考[规格参数](https://wiki.seeedstudio.com/Grove-Voltage_Divider/#specification)了解具体的测量范围。
 
   当分压器输出电压高于VCC（Grove工作电压和模拟读取的参考电压）时，指示灯会亮起以显示错误。
 
@@ -78,7 +78,7 @@ void loop()
 {
     long  sensorValue=analogRead(A0);
     long  sum=0;
-    for(int i=0;i<1000;i++)
+    for(int i=0;i\<1000;i++)
     {
         sum=sensorValue+sum;
         sensorValue=analogRead(A0);

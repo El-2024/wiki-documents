@@ -121,7 +121,7 @@ pi@raspberrypi:~ $ alsamixer
 
 ## 使用概要
 
-以下の例を実行するには、<https://github.com/respeaker/mic_hat.git> リポジトリを Raspberry Pi にクローンしてください。
+以下の例を実行するには、[https://github.com/respeaker/mic_hat.git](https://github.com/respeaker/mic_hat.git) リポジトリを Raspberry Pi にクローンしてください。
 
 ```bash
 git clone https://github.com/respeaker/mic_hat.git
@@ -314,7 +314,7 @@ context:
 
 #### デモのソースコード
 
-このデモは **[Picovoice SDK](https://github.com/Picovoice/picovoice)** を使用して構築されています。デモのソースコードは GitHub の <https://github.com/Picovoice/picovoice/tree/master/demo/respeaker> にあります。
+このデモは **[Picovoice SDK](https://github.com/Picovoice/picovoice)** を使用して構築されています。デモのソースコードは GitHub の [https://github.com/Picovoice/picovoice/tree/master/demo/respeaker](https://github.com/Picovoice/picovoice/tree/master/demo/respeaker) にあります。
 
 #### 異なるウェイクワード
 
@@ -322,7 +322,7 @@ context:
 
 #### カスタム音声コマンド
 
-照明コマンドは、Picovoiceの*Speech-to-Intent context*によって定義されています。Picovoice Consoleを使用して、許可される文法を入力することでコンテキストを設計およびトレーニングできます。編集中にマイクボタンを使用してブラウザ内で変更をテストすることができます。Picovoice Console (<https://picovoice.ai/console/>) にアクセスしてアカウントを作成してください。**Rhino Speech-to-Intent editor**を使用してコンテキストを作成し、それをRaspberry Pi用にトレーニングします。
+照明コマンドは、Picovoiceの*Speech-to-Intent context*によって定義されています。Picovoice Consoleを使用して、許可される文法を入力することでコンテキストを設計およびトレーニングできます。編集中にマイクボタンを使用してブラウザ内で変更をテストすることができます。Picovoice Console ([https://picovoice.ai/console/](https://picovoice.ai/console/)) にアクセスしてアカウントを作成してください。**Rhino Speech-to-Intent editor**を使用してコンテキストを作成し、それをRaspberry Pi用にトレーニングします。
 
 <div align="center"><img width ="{700}" src="https://files.seeedstudio.com/wiki/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/respeaker_demo_console_edit.gif"/></div>
 
@@ -396,7 +396,7 @@ detected 'Picovoice'
 
 #### 複数ウェイクワード例のソースコード
 
-この例の完全なソースコードはこちらをご覧ください：<https://github.com/Picovoice/porcupine/tree/master/demo/respeaker>.
+この例の完全なソースコードはこちらをご覧ください：[https://github.com/Picovoice/porcupine/tree/master/demo/respeaker](https://github.com/Picovoice/porcupine/tree/master/demo/respeaker).
 
 ## ReSpeaker 2-Mic Pi HAT と Mycroft Precise を使用したキーワード検出
 
@@ -542,7 +542,7 @@ context:
 
 ### デモのソースコード
 
-このデモは **[Picovoice SDK](https://github.com/Picovoice/picovoice)** を使用して構築されています。デモのソースコードは GitHub で以下のリンクから入手できます：<https://github.com/Picovoice/picovoice/tree/master/demo/respeaker-rpi0>
+このデモは **[Picovoice SDK](https://github.com/Picovoice/picovoice)** を使用して構築されています。デモのソースコードは GitHub で以下のリンクから入手できます：[https://github.com/Picovoice/picovoice/tree/master/demo/respeaker-rpi0](https://github.com/Picovoice/picovoice/tree/master/demo/respeaker-rpi0)
 
 ### 異なるウェイクワード
 
@@ -550,7 +550,7 @@ context:
 
 ### カスタム音声コマンド
 
-照明コマンドは Picovoice の *Speech-to-Intent context* によって定義されています。Picovoice Console を使用して許可される文法を入力することで、コンテキストを設計およびトレーニングできます。編集中にマイクボタンを使用してブラウザ内で変更をテストできます。Picovoice Console (<https://picovoice.ai/console/>) にアクセスしてアカウントを作成してください。**Rhino Speech-to-Intent editor** を使用してコンテキストを作成し、それを Raspberry Pi Zero 用にトレーニングしてください。
+照明コマンドは Picovoice の *Speech-to-Intent context* によって定義されています。Picovoice Console を使用して許可される文法を入力することで、コンテキストを設計およびトレーニングできます。編集中にマイクボタンを使用してブラウザ内で変更をテストできます。Picovoice Console ([https://picovoice.ai/console/](https://picovoice.ai/console/)) にアクセスしてアカウントを作成してください。**Rhino Speech-to-Intent editor** を使用してコンテキストを作成し、それを Raspberry Pi Zero 用にトレーニングしてください。
 
 <div align="center"><img width ="{700}" src="https://files.seeedstudio.com/wiki/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/respeaker_demo_console_edit.gif"/></div>
 
@@ -652,7 +652,7 @@ detected 'Picovoice'
 
 #### 複数ウェイクワードの例のソースコード
 
-この例の完全なソースコードは以下で確認できます：<https://github.com/Picovoice/porcupine/tree/master/demo/respeaker-rpi0>。
+この例の完全なソースコードは以下で確認できます：[https://github.com/Picovoice/porcupine/tree/master/demo/respeaker-rpi0](https://github.com/Picovoice/porcupine/tree/master/demo/respeaker-rpi0)。
 
 ### Picovoice技術サポート
 

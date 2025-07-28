@@ -23,7 +23,7 @@ Grove - Oxygen Sensor(ME2-O2-Ф20) is a kind of sensor to test the oxygen concen
 
 [<p><img src="https://files.seeedstudio.com/wiki/BeagleBone_Green_Wireless/images/get_one_now.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/grove-gas-sensoro2-p-1541.html)
 
-:::Tip
+:::tip
     We've released the [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/), it will help you choose the gas sensor that best suits your needs.
 :::
 ##Feature
@@ -34,7 +34,7 @@ Grove - Oxygen Sensor(ME2-O2-Ф20) is a kind of sensor to test the oxygen concen
 * Strong anti-interference ability
 * Extraordinary reliability
 
-:::Tip
+:::tip
     More details about Grove modules please refer to [Grove System](https://wiki.seeedstudio.com/Grove_System/)
 :::
 ##Specification

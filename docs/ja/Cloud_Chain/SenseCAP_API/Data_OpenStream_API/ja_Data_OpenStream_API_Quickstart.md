@@ -35,30 +35,32 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <i class="icon-arrow-up back-to-top"></i>すべてのデバイスのメッセージをリッスンしてみましょう。
 
 1. ターミナルウィンドウを開き、以下のコマンドを実行します。
-<ul>
-  <li>OrgID = Organization ID</li>
-  <li>Password = Access API keys</li>
-</ul>
-<div class="language-ruby highlighter-rouge">
-<div class="highlight">
-<pre class="highlight"><code><span class="n">mosquitto_sub</span> <span class="p">\</span>
-    <span class="o">-</span><span class="n">h</span> <span class="n">sensecap</span><span class="o">-</span><span class="n">openstream</span><span class="p">.</span><span class="nf">seeed</span><span class="p">.</span><span class="nf">cn</span> <span class="p">\</span>
-    <span class="o">-</span><span class="n">t</span> <span class="s1">'/device_sensor_data/&lt;OrgID&gt;/+/+/+/+'</span> <span class="p">\</span>
-    <span class="o">-</span><span class="n">u</span> <span class="s1">'org-&lt;OrgID&gt;'</span> <span class="p">\</span>
-    <span class="o">-</span><span class="no">P</span> <span class="s1">'&lt;Password&gt;'</span> <span class="p">\</span>
-    <span class="o">-</span><span class="no">I</span> <span class="s1">'org-&lt;OrgID&gt;-quickstart'</span> <span class="p">\</span>
-    <span class="o">-</span><span class="n">v</span>
-</code></pre>
-</div>
-</div>
+
+- OrgID = Organization ID
+- Password = Access API keys
+
+```bash
+mosquitto_sub \
+    -h sensecap-openstream.seeed.cn \
+    -t '/device_sensor_data/<OrgID>/+/+/+/+' \
+    -u 'org-<OrgID>' \
+    -P '<Password>' \
+    -I 'org-<OrgID>-quickstart' \
+    -v
+```
+
 先ほど取得した Organization ID と Access API Key を、上記の &lt;OrgID&gt; と &lt;Password&gt; に置き換えてください。
 
 2. デバイスの電源を入れます。デバイスがメッセージを送信し続ける間、以下のようなデータを受信するはずです。
-<div className="language-ruby highlighter-rouge">
-  <div className="highlight">
-    <pre className="highlight"><code><span className="sr">/device_sensor_data/</span><span className="mi">1234</span><span className="o">/</span><span className="mi">2</span><span className="no">CF7F12000000001</span><span className="o">/</span><span className="mi">1</span><span className="o">/</span><span className="n">vs</span><span className="o">/</span><span className="mi">4105</span> <span className="p" /><span className="s2">"value"</span><span className="p">:</span><span className="mi">2</span><span className="p">,</span><span className="s2">"timestamp"</span><span className="p">:</span><span className="mi">1544151824139</span><span className="p" />{"\n"}<span className="sr">/device_sensor_data/xxxx</span><span className="o">/</span><span className="mi">2</span><span className="no">CF7F12XXXXXXXXX</span><span className="o">/</span><span className="mi">1</span><span className="o">/</span><span className="n">vs</span><span className="o">/</span><span className="mi">4097</span> <span className="p" /><span className="s2">"value"</span><span className="p">:</span><span className="mi">23</span><span className="p">,</span><span className="s2">"timestamp"</span><span className="p">:</span><span className="mi">1544151900992</span><span className="p" />{"\n"}<span className="sr">/device_sensor_data/xxxx</span><span className="o">/</span><span className="mi">2</span><span className="no">CF7F12XXXXXXXXX</span><span className="o">/</span><span className="mi">1</span><span className="o">/</span><span className="n">vs</span><span className="o">/</span><span className="mi">4101</span> <span className="p" /><span className="s2">"value"</span><span className="p">:</span><span className="mi">101629</span><span className="p">,</span><span className="s2">"timestamp"</span><span className="p">:</span><span className="mi">1544151901112</span><span className="p" />{"\n"}<span className="sr">/device_sensor_data/xxxx</span><span className="o">/</span><span className="mi">2</span><span className="no">CF7F12XXXXXXXXX</span><span className="o">/</span><span className="mi">1</span><span className="o">/</span><span className="n">vs</span><span className="o">/</span><span className="mi">4098</span> <span className="p" /><span className="s2">"value"</span><span className="p">:</span><span className="mi">71</span><span className="p">,</span><span className="s2">"timestamp"</span><span className="p">:</span><span className="mi">1544151900992</span><span className="p" />{"\n"}<span className="sr">/device_sensor_data/xxxx</span><span className="o">/</span><span className="mi">2</span><span className="no">CF7F12XXXXXXXXX</span><span className="o">/</span><span className="mi">1</span><span className="o">/</span><span className="n">vs</span><span className="o">/</span><span className="mi">4099</span> <span className="p" /><span className="s2">"value"</span><span className="p">:</span><span className="mf">69.12</span><span className="p">,</span><span className="s2">"timestamp"</span><span className="p">:</span><span className="mi">1544151902224</span><span className="p" />{"\n"}<span className="sr">/device_sensor_data/xxxx</span><span className="o">/</span><span className="mi">2</span><span className="no">CF7F12XXXXXXXXX</span><span className="o">/</span><span className="mi">1</span><span className="o">/</span><span className="n">vs</span><span className="o">/</span><span className="mi">4100</span> <span className="p" /><span className="s2">"value"</span><span className="p">:</span><span className="mi">437</span><span className="p">,</span><span className="s2">"timestamp"</span><span className="p">:</span><span className="mi">1544151922137</span><span className="p" />{"\n"}</code></pre>
-  </div>
-</div>
+
+```
+/device_sensor_data/1234/2CF7F12000000001/1/vs/4105 {"value":2,"timestamp":1544151824139}
+/device_sensor_data/xxxx/2CF7F12XXXXXXXXX/1/vs/4097 {"value":23,"timestamp":1544151900992}
+/device_sensor_data/xxxx/2CF7F12XXXXXXXXX/1/vs/4101 {"value":101629,"timestamp":1544151901112}
+/device_sensor_data/xxxx/2CF7F12XXXXXXXXX/1/vs/4098 {"value":71,"timestamp":1544151900992}
+/device_sensor_data/xxxx/2CF7F12XXXXXXXXX/1/vs/4099 {"value":69.12,"timestamp":1544151902224}
+/device_sensor_data/xxxx/2CF7F12XXXXXXXXX/1/vs/4100 {"value":437,"timestamp":1544151922137}
+```
 
 <table>
 <thead>
@@ -112,11 +114,16 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 例:
 エア温湿度センサー（DeviceEUI: 2CF7F12210400083; Channel: 1;）によって収集された温度値を購読します。温度測定IDは4097です。
 &lt;OrgID&gt;を組織IDに、&lt;Password&gt;をアクセスAPIキーに置き換え、以下のコマンドを実行します:
-<div className="language-ruby highlighter-rouge">
-  <div className="highlight">
-    <pre className="highlight"><code><span className="n">mosquitto_sub</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="n">h</span> <span className="n">sensecap</span><span className="o">-</span><span className="n">openstream</span><span className="p">.</span><span className="nf">seeed</span><span className="p">.</span><span className="nf">cn</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="n">t</span> <span className="s1">'/device_sensor_data/&lt;OrgID&gt;/2CF7F12210400083/1/vs/4097'</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="n">u</span> <span className="s1">'org-&lt;OrgID&gt;'</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="no">P</span> <span className="s1">'&lt;Password&gt;'</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="no">I</span> <span className="s1">'org-&lt;OrgID&gt;-quickstart'</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="n">v</span>{"\n"}</code></pre>
-  </div>
-</div>
+
+```bash
+mosquitto_sub \
+    -h sensecap-openstream.seeed.cn \
+    -t '/device_sensor_data/<OrgID>/2CF7F12210400083/1/vs/4097' \
+    -u 'org-<OrgID>' \
+    -P '<Password>' \
+    -I 'org-<OrgID>-quickstart' \
+    -v
+```
 
 データを受信しました:
 ```cpp

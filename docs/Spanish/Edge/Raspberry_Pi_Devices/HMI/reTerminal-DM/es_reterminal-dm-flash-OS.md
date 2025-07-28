@@ -363,7 +363,7 @@ El reTerminal DM viene con los drivers necesarios preinstalados, por lo que no n
 
 El sistema operativo preinstalado en el reTerminal DM es de 64 bits. Si deseas instalar drivers para OS de 32 bits, utiliza el siguiente método para instalar los drivers DTS.
 
-Accede al reTerminal DM vía SSH (consulta [**Acceder al reTerminal DM vía SSH**](#access-drivers)) y luego ingresa el siguiente comando:
+Accede al reTerminal DM vía SSH (consulta Acceder al reTerminal DM vía SSH) y luego ingresa el siguiente comando:
 
 ```sh
 echo arm_64bit=0 | sudo tee -a /boot/config.txt
@@ -407,7 +407,7 @@ Ahora tu pantalla debería encender y funcionar con normalidad.
 
 **R:** Sigue cuidadosamente los pasos a continuación:
 
-Accede al reTerminal DM vía SSH (consulta [Acceder al reTerminal DM vía SSH](#access-drivers)) y luego ingresa el siguiente comando:
+Accede al reTerminal DM vía SSH (consulta Acceder al reTerminal DM vía SSH) y luego ingresa el siguiente comando:
 
 ```sh
 echo 'ATTRS{name}=="gt9271", ENV{LIBINPUT_CALIBRATION_MATRIX}="0  1.0  0 -1.0 0 1.0 0 0 1.0"' | sudo tee -a /etc/udev/rules.d/98-touchscreen-cal.rules

@@ -23,8 +23,7 @@ Raspberry Pi 用 ReSpeaker 4-Mic Array は、AIおよび音声アプリケーシ
 <iframe width="800" height="450" src="https://www.youtube.com/embed/IkSfBSf1IRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi-p-2941.html"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
-    </a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/ReSpeaker-4-Mic-Array-for-Raspberry-Pi-p-2941.html"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
 </div>
 
 ## 特徴
@@ -151,7 +150,7 @@ aplay stereo.wav                                      // デフォルトデバ�
 
 ## 使用概要
 
-以下の例を実行するには、<https://github.com/respeaker/4mics_hat.git> リポジトリを Raspberry Pi にクローンしてください。
+以下の例を実行するには、[https://github.com/respeaker/4mics_hat.git](https://github.com/respeaker/4mics_hat.git) リポジトリを Raspberry Pi にクローンしてください。
 
 ```
 git clone https://github.com/respeaker/4mics_hat.git
@@ -439,7 +438,7 @@ context:
 
 ### デモのソースコード
 
-このデモは **[Picovoice SDK](https://github.com/Picovoice/picovoice)** を使用して構築されています。デモのソースコードは GitHub で公開されています：<https://github.com/Picovoice/picovoice/tree/master/demo/respeaker>
+このデモは **[Picovoice SDK](https://github.com/Picovoice/picovoice)** を使用して構築されています。デモのソースコードは GitHub で公開されています：[https://github.com/Picovoice/picovoice/tree/master/demo/respeaker](https://github.com/Picovoice/picovoice/tree/master/demo/respeaker)
 
 ### 異なるウェイクワード
 
@@ -447,7 +446,7 @@ context:
 
 ### カスタム音声コマンド
 
-照明コマンドは Picovoice の *Speech-to-Intent context* によって定義されています。Picovoice Console を使用して許可される文法を入力することで、コンテキストを設計およびトレーニングできます。編集中にマイクボタンを使用してブラウザ内で変更をテストできます。Picovoice Console (<https://picovoice.ai/console/>) にアクセスしてアカウントを作成してください。**Rhino Speech-to-Intent エディタ**を使用してコンテキストを作成し、それを Raspberry Pi 用にトレーニングします。
+照明コマンドは Picovoice の *Speech-to-Intent context* によって定義されています。Picovoice Console を使用して許可される文法を入力することで、コンテキストを設計およびトレーニングできます。編集中にマイクボタンを使用してブラウザ内で変更をテストできます。Picovoice Console ([https://picovoice.ai/console/](https://picovoice.ai/console/)) にアクセスしてアカウントを作成してください。**Rhino Speech-to-Intent エディタ**を使用してコンテキストを作成し、それを Raspberry Pi 用にトレーニングします。
 
 <div align="center"><img width ="{700}" src="https://files.seeedstudio.com/wiki/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/respeaker_demo_console_edit.gif"/></div>
 
@@ -521,7 +520,7 @@ detected 'Picovoice'
 
 #### マルチウェイクワードの例のソースコード
 
-この例の完全なソースコードは以下をご覧ください：<https://github.com/Picovoice/porcupine/tree/master/demo/respeaker>。
+この例の完全なソースコードは以下をご覧ください：[https://github.com/Picovoice/porcupine/tree/master/demo/respeaker](https://github.com/Picovoice/porcupine/tree/master/demo/respeaker)。
 
 ### Picovoice テクニカルサポート
 

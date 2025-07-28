@@ -10,8 +10,8 @@ last_update:
   author: hushuxu
 ---
 :::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
+この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。
+[GitHub Issues](https://github.com/Seeed-Studio/wiki-documents/issues)
 :::
 
 Arch Maxは、迅速なプロトタイピングのためのmbed対応開発ボードです。  
@@ -155,7 +155,7 @@ Arch Maxの最新ファームウェアバージョンは、2014年10月8日に�
   * Windowsの場合、上記のファームウェアでfirmware.binを置き換えます。
 
   * Linux/Macの場合、以下のコマンドを使用します：  
-    **dd if={new_firmware.bin} of={firmware.bin} conv=notrunc**
+    **dd if=\{new_firmware.bin\} of=\{firmware.bin\} conv=notrunc**
 
 ## バージョン
 

@@ -78,7 +78,7 @@ Arduino IDEを開き、**設定** に移動します。「**コンパイルと�
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/StaticLibraries/a.png"/></div>
 
-一時ビルドフォルダの {temporary build folder}/libraries/{library name} フォルダから **Arduino/libraries/{library name}/src/{Board Framework Flag}** サブフォルダに `.a` ファイルをコピーします。私の場合は **`src/cortex-m4`** に配置します。
+一時ビルドフォルダの `{temporary build folder}/libraries/{library name}` フォルダから **Arduino/libraries/\{library name\}/src/\{Board Framework Flag\}** サブフォルダに `.a` ファイルをコピーします。私の場合は **`src/cortex-m4`** に配置します。
 
 `.a` ファイルの名前を変更し、名前の先頭に "lib" を追加します。私の場合、`libSeeed_Arduino_LIS3DHTR.a` になります。
 
@@ -93,7 +93,7 @@ precompiled=true
 ldflags=-lSeeed_Arduino_LIS3DHTR
 ```
 
-ここで、`ldflags` は `-l+{library name}` です。
+ここで、`ldflags` は `-l+\{library name\}` です。
 
 :::note
     フラグではファイル名の「lib」部分を指定しないことに注意してください。

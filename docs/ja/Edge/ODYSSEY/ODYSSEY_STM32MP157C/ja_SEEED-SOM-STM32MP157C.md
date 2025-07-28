@@ -730,54 +730,7 @@ SOM - STM32MP157C は STM32MP157C をベースにした SOM です。STM32MP157C
 </tbody>
 </table>
 
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
-（以下に翻訳を開始します）
-
 - **7.70-PIN コネクタ:** 各ピンの機能は以下の表から確認できます：
-
-<table>
-  <tr>
-    <th>ピン番号</th>
-    <th>名称</th>
-    <th>説明</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>VCC</td>
-    <td>電源入力 (3.3V)</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>GND</td>
-    <td>グランド</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>TX</td>
-    <td>UART送信</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>RX</td>
-    <td>UART受信</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>SCL</td>
-    <td>I2Cクロック</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>SDA</td>
-    <td>I2Cデータ</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>RST</td>
-    <td>リセット信号</td>
-  </tr>
-</table>
 
 <table style={{tableLayout: 'fixed', width: 597}}>
 
@@ -1532,59 +1485,16 @@ SOM - STM32MP157C は STM32MP157C をベースにした SOM です。STM32MP157C
 </tbody>
 </table>
 
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
-（以下に翻訳を開始します）
-
 - **8.70-PIN コネクタ:** 各ピンの機能は以下の表から確認できます：
 
-<table>
-  <tr>
-    <th>Pin Number</th>
-    <th>Function</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>VCC</td>
-    <td>電源供給ピン</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>GND</td>
-    <td>グランドピン</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>TX</td>
-    <td>送信データピン</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>RX</td>
-    <td>受信データピン</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>RESET</td>
-    <td>リセットピン</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>GPIO1</td>
-    <td>汎用入出力ピン1</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>GPIO2</td>
-    <td>汎用入出力ピン2</td>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td>ADC</td>
-    <td>アナログ-デジタル変換ピン</td>
-  </tr>
-</table>
+<!-- <colgroup>
+<col style="width: 90px">
+<col style="width: 80px">
+<col style="width: 120px">
+<col style="width: 60px">
+<col style="width: 280px">
+<col style="width: 140px">
+</colgroup> -->
 
 <table style={{tableLayout: 'fixed', width: 597}}>
 
@@ -2415,48 +2325,6 @@ SOM - STM32MP157C は STM32MP157C をベースにした SOM です。STM32MP157C
     <td>-</td>
   </tr>
 </tbody>
-</table>
-
-**注意：これは完全な表です。すべての行を翻訳し、省略しないでください。**
-
-（以下に翻訳を開始します）
-
-<table>
-  <tr>
-    <th>功能</th>
-    <th>描述</th>
-    <th>示例</th>
-  </tr>
-  <tr>
-    <td>数据采集</td>
-    <td>通过传感器收集环境数据，例如温度、湿度、光照等。</td>
-    <td>使用 SenseCAP 传感器采集温度和湿度数据。</td>
-  </tr>
-  <tr>
-    <td>数据传输</td>
-    <td>将采集到的数据通过无线通信技术传输到网关或云端。</td>
-    <td>使用 LoRa-E5 模块进行数据传输。</td>
-  </tr>
-  <tr>
-    <td>数据存储</td>
-    <td>将数据存储在本地设备或云端，以便后续分析和处理。</td>
-    <td>将数据存储在 AWS 云服务中。</td>
-  </tr>
-  <tr>
-    <td>数据分析</td>
-    <td>对采集到的数据进行处理和分析，以提取有价值的信息。</td>
-    <td>使用 Python 脚本分析温度变化趋势。</td>
-  </tr>
-  <tr>
-    <td>远程监控</td>
-    <td>通过远程设备实时查看和管理采集到的数据。</td>
-    <td>使用手机应用查看传感器数据。</td>
-  </tr>
-  <tr>
-    <td>设备管理</td>
-    <td>对传感器和网关设备进行配置、维护和故障排除。</td>
-    <td>通过 Web 界面更新传感器固件。</td>
-  </tr>
 </table>
 
 ## リソース

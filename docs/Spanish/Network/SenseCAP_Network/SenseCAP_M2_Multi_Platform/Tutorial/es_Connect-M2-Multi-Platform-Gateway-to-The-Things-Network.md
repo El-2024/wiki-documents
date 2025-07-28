@@ -141,7 +141,7 @@ Paso 3**: Configuración de Basics Station:
    Puedes descargar el archivo .pem desde la [referencia de certificados raíz de The Things Stack](https://www.thethingsindustries.com/docs/reference/root-certificates/)  
    Copia el contenido en texto del archivo.
 
-5. **token:** Authorization:Bearer <Your_API_Key>
+5. **token:** Authorization:Bearer &lt;Your_API_Key&gt;
 
 Otros parámetros pueden dejarse por defecto.
 

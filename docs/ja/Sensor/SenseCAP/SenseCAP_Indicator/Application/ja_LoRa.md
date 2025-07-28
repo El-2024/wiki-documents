@@ -372,7 +372,7 @@ void loop() {
 #### ステップ 3.1: ペイロードデコーダを実装する
 
 <Tabs>
-  <Tabitem value="Indicator/main/Frame/frame.h">
+  <TabItem value="Indicator/main/Frame/frame.h">
 
   ```cpp
     #ifndef __SIMPLE_FRAME_H
@@ -410,8 +410,8 @@ void loop() {
     #endif
   ```
 
-  </Tabitem>
-  <Tabitem value="Indicator/main/Frame/frame.c">
+  </TabItem>
+<TabItem value="Indicator/main/Frame/frame.c">
 
   ```cpp
     #include "frame.h"
@@ -474,7 +474,7 @@ void loop() {
         return crc & 0xFFFF;
     }
   ```
-  </Tabitem>
+  </TabItem>
 </Tabs>
 
 #### ステップ 3.2: センサーデータ構造を実装する

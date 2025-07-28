@@ -56,12 +56,14 @@ For single-axis control, the input is a number representing the angle value.
 
 For dual-axis control, the input should be a JSON object with this structure:
 
+```json
 {
     "yaw_angle": value,           // Horizontal angle in degrees
     "yaw_speed": speed_value,     // Optional: 0-720
     "pitch_angle": value,         // Vertical angle in degrees
     "pitch_speed": speed_value    // Optional: 0-720
 }
+```
 
 #### Output
 

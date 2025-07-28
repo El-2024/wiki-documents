@@ -50,13 +50,13 @@ Edge Box-200 随设备预装了 Raspberry Pi OS。如果您是第一次启动此
 ## 在 Edge Box 上安装 Node-RED
 
 - **步骤 01**: SSH 到 Edge Box  
-请打开 PowerShell（如果您使用的是 Windows）或打开终端应用程序（如果您使用的是其他操作系统），然后输入以下命令：`ssh {USERNAME}@{EDGEBOX_IP_ADDRESS}`。例如：
+请打开 PowerShell（如果您使用的是 Windows）或打开终端应用程序（如果您使用的是其他操作系统），然后输入以下命令：`ssh \{USERNAME\}@\{EDGEBOX_IP_ADDRESS\}`。例如：
 
 ```sh
 ssh pi@192.168.43.100
 ```
 
-然后请输入您在 Edge Box 操作系统上设置的 `{USER}` 的密码。
+然后请输入您在 Edge Box 操作系统上设置的 `\{USER\}` 的密码。
 
 - **步骤 02**: 安装 Node-RED  
 
@@ -86,7 +86,7 @@ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/mast
 
 * 选项 1: 如果 Web 浏览器在 Edge Box 上本地运行（通过 VNC），请使用 `http://127.0.0.1:1880` 。
 
-* 选项 2: 如果 Web 浏览器在主机计算机上远程运行，请使用 http://{EdgeBox_IP_ADDRESS}:1880，并将 {EdgeBox_IP_ADDRESS} 替换为 EdgeBox 的 IP 地址。
+* 选项 2: 如果 Web 浏览器在主机计算机上远程运行，请使用 http://\{EdgeBox_IP_ADDRESS\}:1880，并将 \{EdgeBox_IP_ADDRESS\} 替换为 EdgeBox 的 IP 地址。
 
 ## 熟悉 Node-RED
 

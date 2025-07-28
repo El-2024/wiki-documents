@@ -36,8 +36,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="table-center">
 	<table align="center">
 		<tr>
-			<th>JetsonをベースにしたreComputer（RAM >= 16GB）
-			</th>
+			<th>JetsonをベースにしたreComputer（RAM &gt;= 16GB）</th>
 		</tr>
     <tr>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/recomputerj4012.jpg" style={{width:800, height:'auto'}}/></div></td>

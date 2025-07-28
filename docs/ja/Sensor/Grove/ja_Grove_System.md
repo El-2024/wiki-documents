@@ -56,9 +56,11 @@ Groveエコシステムは、電子プロジェクトに簡単に統合できる
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/GroveSystem/images/grove_cover.png" style={{width:1000, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Sensor_Intro/"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
+    <a class="get_one_now_item" href="/Grove_Sensor_Intro/">
+        <strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html">
+        <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
     </a>
 </div>
 
@@ -69,9 +71,11 @@ Groveシステムには、プロジェクトで通信や接続を可能にする
 Groveネットワークモジュールを使用すると、プロジェクトにワイヤレス機能を簡単に追加でき、データ送信、リモートコントロール、他のデバイスやインターネットとの相互作用を可能にします。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_network_module_intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
+    <a class="get_one_now_item" href="/Grove_network_module_intro">
+        <strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html">
+        <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
     </a>
 </div>
 
@@ -80,9 +84,11 @@ Groveネットワークモジュールを使用すると、プロジェクトに
 センサーやネットワークモジュールに加えて、Groveエコシステムは、電子プロジェクトを補完し強化するさまざまなアクセサリーを提供しています。これらのアクセサリーには、LCDディスプレイ、LEDマトリックス、モータードライバー、リレーモジュールなどのコンポーネントが含まれます。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
+    <a class="get_one_now_item" href="/Grove_Accessories_Intro">
+        <strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html">
+        <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
     </a>
 </div>
 
@@ -303,9 +309,11 @@ Seeed Studio Fusionは、エンジニアが自分のGroveデザインを実際�
 <div style={{textAlign:'center'}}><img src="https://www.seeedstudio.com/blog/wp-content/uploads/2023/03/project_2.png" style={{width:500, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ申し込む</font></span></strong>
+    <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform">
+        <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ申し込む</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細情報</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html">
+        <strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細情報</font></span></strong>
     </a>
 </div>
 

@@ -48,92 +48,76 @@ In order to choose the correct library you should know the version of your panel
 
 ### PINs on Arduino
 
-<table >
-<tr>
-<th> Arduino
-</th>
-<th> E-paper
-</th></tr>
-<tr>
-<td width="150px"> D2
-</td>
-<td width="250px"> M_EPD_PANEL_ON
-</td></tr>
-<tr>
-<td> D3
-</td>
-<td> M_EPD_BORDER
-</td></tr>
-<tr>
-<td> D4
-</td>
-<td> M_/SD_CS
-</td></tr>
-<tr>
-<td> D5
-</td>
-<td> M_EPD_PWM
-</td></tr>
-<tr>
-<td> D6
-</td>
-<td> M_EPD_/RESET
-</td></tr>
-<tr>
-<td> D7
-</td>
-<td> M_EPD_BUSY
-</td></tr>
-<tr>
-<td> D8
-</td>
-<td> M_EPD_DISCHARGE
-</td></tr>
-<tr>
-<td> D9
-</td>
-<td> M_/WORD_STOCK_CS
-</td></tr>
-<tr>
-<td> D10
-</td>
-<td> M_/EPD_CS
-</td></tr>
-<tr>
-<td> ICSP PORT
-</td>
-<td> M_MOSI , M_SCK , M_MISO
-</td></tr>
-<tr>
-<td> A0
-</td>
-<td> M_TEMP_SEN
-</td></tr>
-<tr>
-<td> A1
-</td>
-<td> M_OE123﻿﻿
-</td></tr>
-<tr>
-<td> A2
-</td>
-<td> M_CKV
-</td></tr>
-<tr>
-<td> A3
-</td>
-<td> M_STV_IN
-</td></tr>
-<tr>
-<td> 3.3V
-</td>
-<td> M_VCC_3V3
-</td></tr>
-<tr>
-<td> 5V
-</td>
-<td> M_VCC_5V
-</td></tr></table>
+<table>
+  <tr>
+    <th>Arduino</th>
+    <th>E-paper</th>
+  </tr>
+  <tr>
+    <td width="150px">D2</td>
+    <td width="250px">M_EPD_PANEL_ON</td>
+  </tr>
+  <tr>
+    <td>D3</td>
+    <td>M_EPD_BORDER</td>
+  </tr>
+  <tr>
+    <td>D4</td>
+    <td>M_/SD_CS</td>
+  </tr>
+  <tr>
+    <td>D5</td>
+    <td>M_EPD_PWM</td>
+  </tr>
+  <tr>
+    <td>D6</td>
+    <td>M_EPD_/RESET</td>
+  </tr>
+  <tr>
+    <td>D7</td>
+    <td>M_EPD_BUSY</td>
+  </tr>
+  <tr>
+    <td>D8</td>
+    <td>M_EPD_DISCHARGE</td>
+  </tr>
+  <tr>
+    <td>D9</td>
+    <td>M_/WORD_STOCK_CS</td>
+  </tr>
+  <tr>
+    <td>D10</td>
+    <td>M_/EPD_CS</td>
+  </tr>
+  <tr>
+    <td>ICSP PORT</td>
+    <td>M_MOSI , M_SCK , M_MISO</td>
+  </tr>
+  <tr>
+    <td>A0</td>
+    <td>M_TEMP_SEN</td>
+  </tr>
+  <tr>
+    <td>A1</td>
+    <td>M_OE123﻿﻿</td>
+  </tr>
+  <tr>
+    <td>A2</td>
+    <td>M_CKV</td>
+  </tr>
+  <tr>
+    <td>A3</td>
+    <td>M_STV_IN</td>
+  </tr>
+  <tr>
+    <td>3.3V</td>
+    <td>M_VCC_3V3</td>
+  </tr>
+  <tr>
+    <td>5V</td>
+    <td>M_VCC_5V</td>
+  </tr>
+</table>
 
 ## Demonstration
 
@@ -158,11 +142,12 @@ Here we select the 2.0 inch screen as an example to show its display functions.
 
 ![](https://files.seeedstudio.com/wiki/Small_e-Paper_Shield/img/Text_Code.jpg)
 
-<dl><dd><font color="red">We need to re-emphasize this note:</font>
-</dd></dl>
-<dl><dd>If you use Arduino UNO, Seeeduino 3.0 and any board that uses Atmega 328P or Atmega32U4 as controller, you should insert an SD card using this demo. The SD card is used to store temporary data because of the little storage space of Atmega328p and Atmega32U4.
-</dd><dd>If you use an Arduino Mega, or any other board that uses Atmega1280 or Atmega2560, you don't need to insert an SD card.
-</dd></dl>
+**Important Note:**
+
+> We need to re-emphasize this note:
+>
+> - If you use Arduino UNO, Seeeduino 3.0 and any board that uses Atmega 328P or Atmega32U4 as controller, you should insert an SD card using this demo. The SD card is used to store temporary data because of the little storage space of Atmega328p and Atmega32U4.
+> - If you use an Arduino Mega, or any other board that uses Atmega1280 or Atmega2560, you don't need to insert an SD card.
 
 * Change the parameter to match your screen size. You need to change 200 to 270 if your screen is 2.7 inch. And you need to do this change when usisng other examples.
 
@@ -202,8 +187,8 @@ You need to upload the code to see the result.
 
 Of course, you can change the display image by changing the image's lattice data.
 
-For example, if your e-Paper screen is 2.7 inch, you need to provide the lattice data of 264 X 176 pixel and copy the code to ‘’’static unsigned char image_270[] PROGMEM ={}’’’ in picture.h.
-You need to copy the code for a lattice data of a 200x96 pixel to ‘’’static unsigned char image_200[] PROGMEM ={}’’’  when using a 2.0 inch screen.
+For example, if your e-Paper screen is 2.7 inch, you need to provide the lattice data of 264 X 176 pixel and copy the code to 'static unsigned char image_270[] PROGMEM ={}' in picture.h.
+You need to copy the code for a lattice data of a 200x96 pixel to 'static unsigned char image_200[] PROGMEM ={}'  when using a 2.0 inch screen.
 
 #### How to Display an Image
 
@@ -374,14 +359,15 @@ _This function can be used to draw a fill circle._
 
 **Example:**
 
-<pre>
-    EPAPER.drawRectangle(10, 10, 100, 80);
-    EPAPER.fillCircle(50, 50, 30);
-    EPAPER.fillRectangle(50, 65, 50, 20);
-    EPAPER.drawCircle(150, 50, 10);
-    EPAPER.fillCircle(150, 50, 5);
-    EPAPER.drawHorizontalLine(120, 50, 60);
-    EPAPER.drawVerticalLine(150, 20, 60);</pre>
+```cpp
+EPAPER.drawRectangle(10, 10, 100, 80);
+EPAPER.fillCircle(50, 50, 30);
+EPAPER.fillRectangle(50, 65, 50, 20);
+EPAPER.drawCircle(150, 50, 10);
+EPAPER.fillCircle(150, 50, 5);
+EPAPER.drawHorizontalLine(120, 50, 60);
+EPAPER.drawVerticalLine(150, 20, 60);
+```
 
 <u>16. void drawTraingle( int poX1, int poY1, int poX2, int poY2, int poX3, int poY3);</u>
 

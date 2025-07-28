@@ -433,11 +433,11 @@ void loop() {
 
 ここでは、マルチメーターの読み取り値が220V RMS電圧であり、センサーがシリアルモニターに718.87Vを表示している場合、正確なキャリブレーション値を得るために以下の式を使用して簡単な計算を行う必要があります。
 
-![ \dfrac{Mains Voltage}{x} = \dfrac{Sensor voltage}{Initail Calibration}](https://s0.wp.com/latex.php?latex=+%5Cdfrac%7BMains+Voltage%7D%7Bx%7D+%3D+%5Cdfrac%7BSensor+voltage%7D%7BInitail+Calibration%7D&bg=ffffff&fg=000&s=0&201002)
+![数式: (Mains Voltage)/x = (Sensor voltage)/(Initial Calibration)](https://s0.wp.com/latex.php?latex=+%5Cdfrac%7BMains+Voltage%7D%7Bx%7D+%3D+%5Cdfrac%7BSensor+voltage%7D%7BInitail+Calibration%7D&bg=ffffff&fg=000&s=0&201002)
 
 - **ステップ3**: xの値を求め、プログラム内のCalibration_Valueに置き換え、プログラムをマイクロコントローラーにフラッシュします。
 
-![ x = \dfrac{mains voltage \times initial calibration}{Sensor voltage}](https://s0.wp.com/latex.php?latex=+x+%3D+%5Cdfrac%7Bmains+voltage+%5Ctimes+initial+calibration%7D%7BSensor+voltage%7D&bg=ffffff&fg=000&s=0&c=20201002)
+![数式: x = (mains voltage × initial calibration)/(Sensor voltage)](https://s0.wp.com/latex.php?latex=+x+%3D+%5Cdfrac%7Bmains+voltage+%5Ctimes+initial+calibration%7D%7BSensor+voltage%7D&bg=ffffff&fg=000&s=0&c=20201002)
 
 Phase_Shift、ACサイクル数、タイムアウトなどの他のパラメータは、設定に応じて変更するか、デフォルトのままにしておくことができます。
 

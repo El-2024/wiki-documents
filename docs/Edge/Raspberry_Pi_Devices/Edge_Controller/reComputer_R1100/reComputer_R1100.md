@@ -90,7 +90,7 @@ The reComputer R1100 series is widely used in IoT applications, including **data
 | **RS485** | 2x RS485 (Isolated) |
 | **RS232** | 2x RS232 (Isolated) |
 | **DI (Digital Input)** | 2x Isolated DI Ports, Input Voltage: 5~24V DC |
-| **DO (Digital Output)** | 2x Isolated DO Ports, Output Voltage: <60V DC |
+| **DO (Digital Output)** | 2x Isolated DO Ports, Output Voltage: &lt;60V DC |
 | **SIM Card** | 1x Nano SIM Card Slot (Internal) |
 | **SD Card** | 1x MicroSD Card Slot |
 | **SSD** | 1x M.2 NVMe SSD Slot (2280-M Key) |
@@ -444,7 +444,7 @@ The reComputer R1100 series equipment includes 2x DO ports, 3-Pin 3.5mm spacing 
 |----------------------|----------------|  
 | Output Type         | Transistor      |  
 | Isolation Protection | 5 kV           |  
-| Output Note        | < 60VDC         |
+| Output Note        | &lt; 60VDC         |
 
 :::note
 For details on DO testing, please refer to [This Section](https://wiki.seeedstudio.com/recomputer_r1100_configure_system/#do-digital-output).

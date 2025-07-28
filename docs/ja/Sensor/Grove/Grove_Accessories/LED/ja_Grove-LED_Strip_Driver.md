@@ -42,63 +42,47 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ---
 <table>
 <tr>
-<td width="150"> **電源供給**
-</td>
-<td width="150"> **LEDストリップ**
-</td>
-<td width="100"> **LEDカラー**
-</td>
-<td width="100"> **長さ(m)**
-</td>
-<td width="150"> **最大電流(mA)**
-</td></tr>
+<td width="150"><strong>電源供給</strong></td>
+<td width="150"><strong>LEDストリップ</strong></td>
+<td width="100"><strong>LEDカラー</strong></td>
+<td width="100"><strong>長さ(m)</strong></td>
+<td width="150"><strong>最大電流(mA)</strong></td>
+</tr>
 <tr>
-<td rowspan="5"> 12V/5A
-</td>
-<td rowspan="5"> RGB LEDストリップ
-</td>
-<td rowspan="5"> ホワイト
-</td>
-<td> 1
-</td>
-<td> 1032
-</td></tr>
+<td rowspan="5">12V/5A</td>
+<td rowspan="5">RGB LEDストリップ</td>
+<td rowspan="5">ホワイト</td>
+<td>1</td>
+<td>1032</td>
+</tr>
 <tr>
-<td> 2
-</td>
-<td> 1822
-</td></tr>
+<td>2</td>
+<td>1822</td>
+</tr>
 <tr>
-<td> 3
-</td>
-<td> 2430
-</td></tr>
+<td>3</td>
+<td>2430</td>
+</tr>
 <tr>
-<td> 4
-</td>
-<td> 2800
-</td></tr>
+<td>4</td>
+<td>2800</td>
+</tr>
 <tr>
-<td> 5
-</td>
-<td> 3000
-</td></tr>
+<td>5</td>
+<td>3000</td>
+</tr>
 <tr>
-<td rowspan="2"> 9V/1A
-</td>
-<td rowspan="2"> RGB LEDストリップ
-</td>
-<td rowspan="2"> ホワイト
-</td>
-<td> 1
-</td>
-<td> 365
-</td></tr>
+<td rowspan="2">9V/1A</td>
+<td rowspan="2">RGB LEDストリップ</td>
+<td rowspan="2">ホワイト</td>
+<td>1</td>
+<td>365</td>
+</tr>
 <tr>
-<td> 2
-</td>
-<td> 627
-</td></tr></table>
+<td>2</td>
+<td>627</td>
+</tr>
+</table>
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove-LED_Strip_Driver/img/LED_Strip_Driver_Interface3.jpg) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-LED_Strip_Driver/img/LED_Strip_Driver_Interface3.jpg" alt="pir" width={600} height="auto" /></p>

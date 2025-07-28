@@ -66,56 +66,43 @@ The on-board FT232RL can be used like any other 3.3V USB to UART interface when 
 * Insert the Bees in the proper direction. Use the Bee outline on the silk-screen.
 
 ## Specification
-
 ---
-<table  cellspacing="0" width="80%">
+<table>
 <tr>
-<th scope="col"> Item
-</th>
-<th scope="col"> Min
-</th>
-<th scope="col"> Typical
-</th>
-<th scope="col"> Max
-</th>
-<th scope="col"> Unit
-</th></tr>
+<th>Item</th>
+<th>Min</th>
+<th>Typical</th>
+<th>Max</th>
+<th>Unit</th>
+</tr>
 <tr>
-<th scope="row"> Voltage
-</th>
-<td> 3.0
-</td>
-<td> 3.3
-</td>
-<td> 3.6
-</td>
-<td> VDC
-</td></tr>
+<th>Voltage</th>
+<td>3.0</td>
+<td>3.3</td>
+<td>3.6</td>
+<td>VDC</td>
+</tr>
 <tr>
-<th scope="row"> Charge Controller
-</th>
-<td colspan="4"> CN3063
-</td></tr>
+<th>Charge Controller</th>
+<td colspan="4">CN3063</td>
+</tr>
 <tr>
-<th scope="row"> CHARGER (Charging Voltage for LiPo Battery)
-</th>
-<td colspan="4"> 4.4V to 6V (as per CN3063 Spec)
-</td></tr>
+<th>CHARGER (Charging Voltage for LiPo Battery)</th>
+<td colspan="4">4.4V to 6V (as per CN3063 Spec)</td>
+</tr>
 <tr>
-<th scope="row"> Charging Current
-</th>
-<td colspan="4"> Max 500mA
-</td></tr>
+<th>Charging Current</th>
+<td colspan="4">Max 500mA</td>
+</tr>
 <tr>
-<th scope="row">  3.3V LDO
-</th>
-<td colspan="4"> Low Noise and Micropower type. Suitable for Battery Application.
-</td></tr>
+<th>3.3V LDO</th>
+<td colspan="4">Low Noise and Micropower type. Suitable for Battery Application.</td>
+</tr>
 <tr>
-<th scope="row"> I/O Logic
-</th>
-<td colspan="4"> 3.3V Logic
-</td></tr></table>
+<th>I/O Logic</th>
+<td colspan="4">3.3V Logic</td>
+</tr>
+</table>
 
 ## Interface Function
 
@@ -223,19 +210,16 @@ void loop() {
 ---
 <table>
 <tr>
-<th> Revision
-</th>
-<th> Descriptions
-</th>
-<th> Release
-</th></tr>
+<th>Revision</th>
+<th>Descriptions</th>
+<th>Release</th>
+</tr>
 <tr>
-<td width="300px"> v0.9b
-</td>
-<td width="500px"> Initial public release
-</td>
-<td width="200px"> 13th July 2011
-</td></tr></table>
+<td>v0.9b</td>
+<td>Initial public release</td>
+<td>13th July 2011</td>
+</tr>
+</table>
 
 ## Schematic Online Viewer
 

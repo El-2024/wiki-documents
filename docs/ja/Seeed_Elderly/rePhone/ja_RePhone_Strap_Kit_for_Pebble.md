@@ -35,88 +35,89 @@ RePhone（Xadow）モジュールの導入により、スマートウォッチ�
 <table>
 <tr>
 <td> マイクロコントローラ </td>
-<td> Kinetis KL02
-</td></tr>
+<td> Kinetis KL02</td>
+</tr>
 <tr>
 <td> コア </td>
-<td> ARM® 32-bit Cortex® -M0+CPU
-</td></tr>
+<td> ARM® 32-bit Cortex® -M0+CPU</td>
+</tr>
 <tr>
 <td> 電源供給 </td>
-<td> 3.3 ~ 6 V (ブレークアウトピン経由)
-</td></tr>
+<td> 3.3 ~ 6 V (ブレークアウトピン経由)</td>
+</tr>
 <tr>
 <td> フラッシュ </td>
-<td> 32 KB
-</td></tr>
+<td> 32 KB</td>
+</tr>
 <tr>
 <td> SRAM </td>
-<td> 4 KB
-</td></tr>
+<td> 4 KB</td>
+</tr>
 <tr>
 <td> クロックスピード </td>
-<td> 48 MHz
-</td></tr>
+<td> 48 MHz</td>
+</tr>
 <tr>
 <td> 消費電力 </td>
-<td> 18mA@トラッキング、21mA@取得
-</td></tr>
+<td> 18mA@トラッキング、21mA@取得</td>
+</tr>
 <tr>
 <td> 省電力 </td>
-<td> Typ. 3mA@AlwaysLocateTM、7uA@バックアップモード、180uA@スタンバイモード
-</td></tr>
+<td> Typ. 3mA@AlwaysLocateTM、7uA@バックアップモード、180uA@スタンバイモード</td>
+</tr>
 <tr>
 <td> チャンネル </td>
-<td> 22(トラッキング) / 66 (取得)
-</td></tr>
+<td> 22(トラッキング) / 66 (取得)</td>
+</tr>
 <tr>
 <td> 更新レート </td>
-<td> 1Hz(デフォルト)、最大10Hz
-</td></tr>
+<td> 1Hz(デフォルト)、最大10Hz</td>
+</tr>
 <tr>
 <td> 水平方向位置精度 </td>
-<td> &lt;2.5m CEP
-</td></tr>
+<td> &lt;2.5m CEP</td>
+</tr>
 <tr>
 <td> 速度精度 </td>
-<td> &lt;0.1m/s
-</td></tr>
+<td> &lt;0.1m/s</td>
+</tr>
 <tr>
 <td> 最大速度 </td>
-<td> 最大515m/s
-</td></tr>
+<td> 最大515m/s</td>
+</tr>
 <tr>
 <td> EASYTMによるコールド/ウォームスタート </td>
-<td> 215s/5s
-</td></tr>
+<td> 215s/5s</td>
+</tr>
 <tr>
 <td> 取得感度 </td>
-<td> -145dBm
-</td></tr>
+<td> -145dBm</td>
+</tr>
 <tr>
 <td> トラッキング感度 </td>
-<td>-163dBm
-</td></tr>
+<td>-163dBm</td>
+</tr>
 <tr>
 <td> 動作温度 </td>
-<td> -40℃ ～ 85℃
-</td></tr>
+<td> -40℃ ～ 85℃</td>
+</tr>
 <tr>
 <td> プロトコル </td>
-<td> NMEA 0183/PMTK
-</td></tr>
+<td> NMEA 0183/PMTK</td>
+</tr>
 <tr>
 <td> アンテナタイプ </td>
-<td> チップアンテナ
-</td></tr>
+<td> チップアンテナ</td>
+</tr>
 <tr>
 <td> インターフェース </td>
-<td> Xadow GSM+BLEとのインターフェース（I2C、7ビットアドレス0x05）
-</td></tr>
+<td> Xadow GSM+BLEとのインターフェース（I2C、7ビットアドレス0x05）</td>
+</tr>
 <tr>
 <td> 寸法 </td>
-<td> 25.37mm × 20.30mm / 1” × 0.8”
-</td></tr></table>
+<td> 25.37mm × 20.30mm / 1” × 0.8”</td>
+</tr>
+</table>
 
 ###   Xadow NFC v2
 
@@ -125,56 +126,58 @@ RePhone（Xadow）モジュールの導入により、スマートウォッチ�
 <table>
 <tr>
 <td> マイクロコントローラ </td>
-<td> Kinetis KL02
-</td></tr>
+<td> Kinetis KL02</td>
+</tr>
 <tr>
 <td> コア </td>
-<td> ARM® 32-bit Cortex® -M0+CPU
-</td></tr>
+<td> ARM® 32-bit Cortex® -M0+CPU</td>
+</tr>
 <tr>
 <td> 電源供給 </td>
-<td> 3.3 ~ 6V (ブレークアウトピン経由)
-</td></tr>
+<td> 3.3 ~ 6V (ブレークアウトピン経由)</td>
+</tr>
 <tr>
 <td> フラッシュ </td>
-<td> 32 KB
-</td></tr>
+<td> 32 KB</td>
+</tr>
 <tr>
 <td> SRAM </td>
-<td> 4 KB
-</td></tr>
+<td> 4 KB</td>
+</tr>
 <tr>
 <td> 動作電流 </td>
-<td> スタンバイ時5mA、読み書き時55mA
-</td></tr>
+<td> スタンバイ時5mA、読み書き時55mA</td>
+</tr>
 <tr>
 <td> 無線周波数 </td>
-<td> 13.56 MHz
-</td></tr>
+<td> 13.56 MHz</td>
+</tr>
 <tr>
 <td> 対応プロトコル </td>
-<td> ISO/IEC 14443 Type AおよびISO/IEC 14443 Type B
-</td></tr>
+<td> ISO/IEC 14443 Type AおよびISO/IEC 14443 Type B</td>
+</tr>
 <tr>
 <td> 最大動作距離 </td>
-<td> 現在のアンテナサイズに応じて約28mm
-</td></tr>
+<td> 現在のアンテナサイズに応じて約28mm</td>
+</tr>
 <tr>
 <td> 寸法 </td>
-<td> 25.37mm × 20.30mm / 1” × 0.8”
-</td></tr></table>
+<td> 25.37mm × 20.30mm / 1” × 0.8”</td>
+</tr>
+</table>
 
 ###   Xadow Battery 100mAh
 
 <table>
 <tr>
 <td> 電圧 </td>
-<td> 3.3 V
-</td></tr>
+<td> 3.3 V</td>
+</tr>
 <tr>
 <td> 寸法 </td>
-<td> 25.37mm × 20.30mm / 1” × 0.8”
-</td></tr></table>
+<td> 25.37mm × 20.30mm / 1” × 0.8”</td>
+</tr>
+</table>
 
 ## 組み立てプロセス
 ---

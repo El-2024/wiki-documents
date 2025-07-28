@@ -118,8 +118,7 @@ SNR9816TTS 是基于独家语音合成算法开发的一款高流畅度，高自
 1. Arduino IDE：下载并安装 Arduino IDE；
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong></a>
 </div>
 
 2. ESP32 开发板库：在 Arduino IDE 中添加 ESP32 支持；

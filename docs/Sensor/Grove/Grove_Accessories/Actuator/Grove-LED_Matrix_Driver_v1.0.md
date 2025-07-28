@@ -107,14 +107,14 @@ Connect all parts as following:
 
 #### Coding Work
 
-You can find more demo sketch at <https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver> and development library at <https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver>
+You can find more demo sketch at &lt;https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver&gt; and development library at &lt;https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver&gt;
 
 1. A typical demo code. You can upload code to main control board with [Codebender](https://codebender.cc).
 
 <iframe frameBorder={0} height={500} src="https://codebender.cc/embed/sketch:300168" width="50%">
 </iframe>
 
-2. Download and upload the code. If you do not know how to upload an Arduino sketch, please visit <https://www.arduino.cc/en/Guide/Windows> for Windows user or <https://www.arduino.cc/en/Guide/MacOSX> for Mac user. You can see the result as below.
+2. Download and upload the code. If you do not know how to upload an Arduino sketch, please visit &lt;https://www.arduino.cc/en/Guide/Windows&gt; for Windows user or &lt;https://www.arduino.cc/en/Guide/MacOSX&gt; for Mac user. You can see the result as below.
 
 ![](https://files.seeedstudio.com/wiki/Grove-LED_Matrix_Driver_v1.0/img/Grove-LED_Matrix_Driver_v1.0_wiki_demo_result_view_s.jpg)
 

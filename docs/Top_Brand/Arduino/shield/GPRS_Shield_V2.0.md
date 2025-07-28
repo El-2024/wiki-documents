@@ -107,70 +107,53 @@ Hook your Arduino up to GSM/GPRS cell phone network with GPRS shield! You can us
 - Antenna
   - The type of Antenna connector is IPEX, and the maximum transit power of SIM900 is 30dBm(1w). More information please see [the Specification of GPRS Antenna](https://files.seeedstudio.com/wiki/GPRS_Shield_V2.0/res/Antenna_of_GPRS_.pdf).
 - LED Status Description
-  <dl><dd><table  cellspacing="0">
+  <dl><dd><table cellspacing="0">
   <tr>
-  <th scope="col"> **LED**
-  </th>
-  <th scope="col"> **Status**
-  </th>
-  <th scope="col"> **Function**
-  </th></tr>
+    <th scope="col">**LED**</th>
+    <th scope="col">**Status**</th>
+    <th scope="col">**Function**</th>
+  </tr>
   <tr>
-  <th scope="row"> Power-on indicator(Green)
-  </th>
-  <td> Off
-  </td>
-  <td> Power of GPRS Shield is off
-  </td></tr>
+    <th scope="row">Power-on indicator(Green)</th>
+    <td>Off</td>
+    <td>Power of GPRS Shield is off</td>
+  </tr>
   <tr>
-  <td>
-  </td>
-  <td> On
-  </td>
-  <td> Power of GPRS Shield is on
-  </td></tr>
+    <td></td>
+    <td>On</td>
+    <td>Power of GPRS Shield is on</td>
+  </tr>
   <tr>
-  <th scope="row"> Status Indicator(Red)
-  </th>
-  <td> Off
-  </td>
-  <td> Power off
-  </td></tr>
+    <th scope="row">Status Indicator(Red)</th>
+    <td>Off</td>
+    <td>Power off</td>
+  </tr>
   <tr>
-  <td>
-  </td>
-  <td> On
-  </td>
-  <td> Power on
-  </td></tr>
+    <td></td>
+    <td>On</td>
+    <td>Power on</td>
+  </tr>
   <tr>
-  <th scope="row"> Net indicator(Green)
-  </th>
-  <td> Off
-  </td>
-  <td> SIM900 is not working
-  </td></tr>
+    <th scope="row">Net indicator(Green)</th>
+    <td>Off</td>
+    <td>SIM900 is not working</td>
+  </tr>
   <tr>
-  <td>
-  </td>
-  <td> 64ms On/800ms Off
-  </td>
-  <td> SIM900 does not find the network
-  </td></tr>
+    <td></td>
+    <td>64ms On/800ms Off</td>
+    <td>SIM900 does not find the network</td>
+  </tr>
   <tr>
-  <td>
-  </td>
-  <td> 64ms On/3000ms Off
-  </td>
-  <td> SIM900 finds the network
-  </td></tr>
+    <td></td>
+    <td>64ms On/3000ms Off</td>
+    <td>SIM900 finds the network</td>
+  </tr>
   <tr>
-  <td>
-  </td>
-  <td> 64ms On/300ms Off
-  </td>
-  <td> GPRS communication
-  </td></tr></table></dd></dl>
+    <td></td>
+    <td>64ms On/300ms Off</td>
+    <td>GPRS communication</td>
+  </tr>
+  </table></dd></dl>
 
 ## Getting Started
 

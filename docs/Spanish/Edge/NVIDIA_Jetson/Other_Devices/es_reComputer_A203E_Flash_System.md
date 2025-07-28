@@ -40,7 +40,7 @@ En esta wiki, te mostraremos cómo flashear Jetpack OS a la Mini PC A203E que ad
 
 Podemos hacer esto fácilmente usando la **Terminal Linux**. Para las personas que tienen una base de conocimientos de Linux, recomendamos encarecidamente utilizar únicamente la Terminal de Linux.
 
-- [Flasheo del sistema operativo JetPack a través de la terminal Linux](#flashing-jetpack-os-via-command-line)
+- Flasheo del sistema operativo JetPack a través de la terminal Linux
 
 ### Preparación de Software
 

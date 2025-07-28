@@ -872,7 +872,6 @@ OK+ Set:[P1]
 <td>AT+RSSB?</td>
 <td>OK+RSSB: [P1]</td>
 <td>P1: RSSI value<br />
-
 <p>9999: No connection<br />
 9998: Try later<br />
 9997: Read error<br />
@@ -902,9 +901,7 @@ This command must use after “AT+MODE1” is setup. This command is only used b
 <tr class="odd">
 <td>AT+RSSE?</td>
 <td>OK+RSSE: [P1]</td>
-<td>P1: RSSI value<br />
-
-<p>9999: No connection<br />
+<td>P1: RSSI value<br /><p>9999: No connection<br />
 9998: Try later<br />
 9997: Read error<br />
 Xxxx: RSSI value</p></td>
@@ -1024,10 +1021,7 @@ Q: AT+STOP?
 OK+ Get:[P1]
 </td>
 <td rowspan="2" width="300">
-P1: 0, 1, (Default: 0)
-0: 1 stop bit
-1: 2 stop bits
-
+P1: 0, 1, (Default: 0) 0: 1 stop bit 1: 2 stop bits
 </td>
 </tr>
 <tr>
@@ -1057,9 +1051,10 @@ OK+ Set:[P1]
 </thead>
 <tbody>
 <tr class="odd">
-<td>AT+VERR?<br />
-
-<p>AT+VERS?</p></td>
+<td>
+AT+VERR?<br />
+<p>AT+VERS?</p>
+</td>
 <td>Version Information</td>
 <td>None</td>
 </tr>

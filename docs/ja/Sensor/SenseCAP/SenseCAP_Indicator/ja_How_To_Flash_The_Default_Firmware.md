@@ -315,8 +315,7 @@ esptool.exe --chip esp32s3 --port COMx --baud 921600 write_flash -z 0x0 indicato
         <td>
         <div style={{textAlign: 'center'}}><strong>Chip Type</strong></div>
         </td>
-        <td><div  style={{textAlign: 'center'}}>ESP32-S3</div>
-        </td>
+        <td><div  style={{textAlign: 'center'}}>ESP32-S3</div></td>
     </tr>
     <tr>
       <td>
@@ -355,8 +354,7 @@ esptool.exe --chip esp32s3 --port COMx --baud 921600 write_flash -z 0x0 indicato
         <td>
         <div style={{textAlign: 'center'}}><strong>SPI SPEED</strong></div>
         </td>
-        <td><div  style={{textAlign: 'center'}}>40MHz</div>
-        </td>
+        <td><div  style={{textAlign: 'center'}}>40MHz</div></td>
     </tr>
     <tr>
       <td>

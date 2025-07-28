@@ -30,7 +30,8 @@ En esta wiki, te mostraremos cómo actualizar Jetpack OS en la Carrier Board A20
 ![image](https://files.seeedstudio.com/wiki/reComputer_Carrier_Board/A203/Flash_A203.jpeg)
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/A203-Carrier-Board-for-Jetson-Nano-Xavier-NX-V2-p-5214.html"><strong><span><font color={'FFFFFF'} size={"4"}> Conseguir una ahora 🖱️</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/A203-Carrier-Board-for-Jetson-Nano-Xavier-NX-V2-p-5214.html">
+      <strong><span><font color="FFFFFF" size="4"> Conseguir una ahora 🖱️</font></span></strong>
     </a>
 </div>
 
@@ -38,8 +39,8 @@ En esta wiki, te mostraremos cómo actualizar Jetpack OS en la Carrier Board A20
 
 Podemos usar **NVIDIA SDK manager y la terminal de Linux** para actualizar el sistema, o podemos hacerlo fácilmente usando la **Terminal de Linux**. Para las personas que tienen una base de conocimientos en Linux, recomendamos utilizar únicamente la terminal de Linux.
 
-- [Flasheando JetPack OS con el NVIDIA SDK manager y la terminal de Linux](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [Flasheando JetPack OS con la terminal de Linux](#flashing-jetpack-os-via-command-line)
+- Flasheando JetPack OS con el NVIDIA SDK manager y la terminal de Linux
+- Flasheando JetPack OS con la terminal de Linux
 
 Todavía hay algunos preparativos que debemos hacer antes de iniciar:
 

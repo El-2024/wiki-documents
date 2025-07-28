@@ -79,7 +79,7 @@ target remote localhost:3333
 
 - ArduinoボードライブラリのルートパスからArduinoブートローダーをロードします：
 
-> Seeed SAMDボード用のブートローダーはこちらでも見つけることができます：<https://github.com/Seeed-Studio/ArduinoCore-samd/tree/master/bootloaders>
+> Seeed SAMDボード用のブートローダーはこちらでも見つけることができます：https://github.com/Seeed-Studio/ArduinoCore-samd/tree/master/bootloaders
 
 **注意:** `ansonhe`を自分のユーザー名に変更するか、正しいパスに調整する必要があります。
 

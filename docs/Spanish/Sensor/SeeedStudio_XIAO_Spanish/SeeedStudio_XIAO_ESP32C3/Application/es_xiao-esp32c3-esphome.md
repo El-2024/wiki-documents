@@ -55,14 +55,14 @@ Hemos escrito archivos de configuración completos y bibliotecas para el Módulo
 
 El contenido de este tutorial pasará por los siguientes pasos:
 
-1. [Selecciona tu entorno de Home Assistant](#select-your-home-assistant-environment)
-2. [Instala y configura ESPHome en Home Assistant](#install-and-configure-esphome-in-home-assistant)
-3. [Configura la conexión entre el XIAO ESP32C3 y ESPHome](#configure-the-xiao-esp32c3-and-esphome-connection)
-4. [Configura el Panel de Home Assistant](#configure-home-assistant-panel)
+1. Selecciona tu entorno de Home Assistant
+2. Instala y configura ESPHome en Home Assistant
+3. Configura la conexión entre el XIAO ESP32C3 y ESPHome
+4. Configura el Panel de Home Assistant
 
 Por supuesto, si estás interesado en cómo el XIAO ESP32C3 utiliza Grove en Home Assistant, puedes leer este capítulo directamente.
 
-- [Conectar Grove a Home Assistant usando el XIAO ESP32C3](#connect-grove-to-home-assistant-using-xiao-esp32c3)
+- Conectar Grove a Home Assistant usando el XIAO ESP32C3
 
 ## Selecciona tu entorno de Home Assistant
 
@@ -256,7 +256,7 @@ En el tipo de dispositivo, selecciona **ESP32-C3**.
 
 Luego, haz clic en **Siguiente**.
 
-<span id="jump1">Haz clic en la <strong>clave de cifrado</strong> y guárdala en un lugar seguro, usaremos esta clave en un paso posterior.</span>
+### Haz clic en la <strong>clave de cifrado</strong> y guárdala en un lugar seguro, usaremos esta clave en un paso posterior. {#jump1}
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/homs-xiaoc3-linkstar/27.png" /></div>
 

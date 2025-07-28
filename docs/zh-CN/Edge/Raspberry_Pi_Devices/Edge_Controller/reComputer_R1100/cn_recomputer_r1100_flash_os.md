@@ -236,7 +236,6 @@ Windows 将自动检测硬件并安装必要的驱动程序。
 
 - **步骤 11.** 将 **启动模式开关** 切换回 **普通模式** 位置。
 
-现在您可以跳转到 **[这里](#install-drivers)**。
 
 ### 对于 MAC
 
@@ -316,7 +315,6 @@ sudo ./rpiboot
 
 - **步骤 13.** 将 **Boot Mode switch** 切换回 **Normal mode** 位置
 
-现在您可以跳转到 **[这里](#install-drivers)**
 
 
 ### 对于 Linux
@@ -510,13 +508,13 @@ reComputer R1100 自带必要的驱动程序，开箱即用，因此您无需安
 
 reComputer R1100 上预装的操作系统是 64 位的，如果您希望安装 32 位操作系统，请使用以下方法安装 DTS 驱动程序。
 
-请按照 [**通过 SSH 访问 reComputer R1100**](#access-recomputer-r1100-via-ssh) 的步骤，然后输入以下命令：
+请按照 **通过 SSH 访问 reComputer R1100** 的步骤，然后输入以下命令：
 
 ```sh
 echo arm_64bit=0 | sudo tee -a /boot/config.txt
 ```
 
-然后继续 [**在刷写新的 Raspbian OS 后安装驱动程序的过程**](#install-recomputer-r1100-drivers-after-flashing-new-raspbian-os)
+然后继续 **在刷写新的 Raspbian OS 后安装驱动程序的过程**
 
 :::
 

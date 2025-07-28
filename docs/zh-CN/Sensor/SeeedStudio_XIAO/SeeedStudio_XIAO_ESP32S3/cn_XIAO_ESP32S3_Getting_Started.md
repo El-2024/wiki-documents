@@ -320,7 +320,8 @@ Wiki 中关于摄像头的所有程序均兼容 OV5640 和 OV2640 摄像头。
 
 通过安装升级版散热片，为您的 XIAO ESP32S3 Sense 提供最佳散热效果。此新设计专为解决先前型号在高强度操作（如摄像头使用）期间的散热不足问题而开发。用户反馈表明，原始散热片无法有效散热，因此开发了更高效的解决方案。
 
-<details><summary>点击查看性能对比</summary>
+<details>
+<summary>点击查看性能对比</summary>
 
 我们的测试展示了升级版散热片相较于原始设置的优势：
 
@@ -407,8 +408,7 @@ Wiki 中关于摄像头的所有程序均兼容 OV5640 和 OV2640 摄像头。
 - **步骤 1.** 根据您的操作系统下载并安装稳定版本的 Arduino IDE。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong></a>
 </div>
 
 - **步骤 2.** 启动 Arduino 应用程序。

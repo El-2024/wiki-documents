@@ -93,8 +93,8 @@ Luego de actualizar, vuelve a presionar el botón durante 6-10 segundos hasta qu
 ============================================================================
 
 * Tras configurar el gateway, se te pedirá establecer la ubicación de tu hotspot.
-* El SenseCAP M1 ya incluye la tarifa de activación de red de Helium ($40) y la primera tarifa de ubicación ($10), sumando un total de $50 USD ya cubiertos.
-* Puedes establecer o cambiar la ubicación, pero cada cambio requerirá pagar nuevamente $10.
+* El SenseCAP M1 ya incluye la tarifa de activación de red de Helium (\$40) y la primera tarifa de ubicación (\$10), sumando un total de \$50 USD ya cubiertos.
+* Puedes establecer o cambiar la ubicación, pero cada cambio requerirá pagar nuevamente \$10.
 * Elige la ubicación en el mapa y confirma. La configuración quedará completada.
 
 ![Registro Hotspot SenseCAP M1](https://www.sensecapmx.com/wp-content/uploads/2022/06/register-hotspot.png)

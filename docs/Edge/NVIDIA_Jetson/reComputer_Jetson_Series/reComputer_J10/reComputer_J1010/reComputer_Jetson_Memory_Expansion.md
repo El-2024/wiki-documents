@@ -56,22 +56,22 @@ SSD, also known as Solid State Drives, is often used as the primary storage devi
       <td align="center">110061381</td>
     </tr>
     <tr>
-      <th align="center">Side View
-      </th><td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
+      <th align="center">Side View</th>
+      <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
       <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
       <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
       <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview5.png" /></div></td>
     </tr>
     <tr>
-      <th align="center">Equipped Module
-      </th><td align="center">Jetson Nano 4G</td>
+      <th align="center">Equipped Module</th>
+      <td align="center">Jetson Nano 4G</td>
       <td align="center">Jetson Xavier NX 8GB</td>
       <td align="center">Jetson Xavier NX 16GB</td>
       <td align="center">Jetson Xavier NX 8GB</td>
     </tr>
     <tr>
-      <th align="center">Operating carrier Board
-      </th><td align="center">Jetson A206</td>
+      <th align="center">Operating carrier Board</th>
+      <td align="center">Jetson A206</td>
       <td align="center">Jetson A206</td>
       <td align="center">Jetson A206</td>
       <td align="center">J202</td>
@@ -90,13 +90,13 @@ The following conditions need to be met for the expansion solution using SSDs, w
       <th align="center">software and hardware requirements</th>  
     </tr>
     <tr>
-      <th align="center">reComputer for Jetson
-      </th><td align="left">JetPack versions 4.4 ~ 4.6 <br />
+      <th align="center">reComputer for Jetson</th>
+      <td align="left">JetPack versions 4.4 ~ 4.6 <br />
         Carrier board must contain M.2 M-Key slot</td>
     </tr>
     <tr>
-      <th align="center">SSD
-      </th><td align="left">SSD need to be fourth generation extended file system (Ext4) <br />
+      <th align="center">SSD</th>
+      <td align="left">SSD need to be fourth generation extended file system (Ext4) <br />
         M.2 M-Key interface with NVMe protocol <br />
         Recommended capacity ≤ 512 GB</td>
     </tr>
@@ -108,7 +108,7 @@ The following conditions need to be met for the expansion solution using SSDs, w
     The updated JetPack version has not been tested for expansion, so the stability or success of the expansion cannot be guaranteed, please follow this tutorial carefully.
 
     The SSD needs to be M.2 M-Key, otherwise it will not match the interface on the carrier board.
-    <div align=center><img width = 300 src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/3.jpeg"/></div>
+    <div align="center"><img width="300" src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/3.jpeg"/></div>
 
     Storage devices with non-extended fourth generation file systems (Ext4) cannot complete expansion operations.
 
@@ -195,20 +195,20 @@ USB storage devices, such as USB flash drives and mobile hard drives, are widely
       <th align="center">reComputer J1010</th>  
     </tr>
     <tr>
-      <th align="center">SKU
-      </th><td align="center">110061362</td>
+      <th align="center">SKU</th>
+      <td align="center">110061362</td>
     </tr>
     <tr>
-      <th align="center">Side View
-      </th><td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview3_1.png" /></div></td>
+      <th align="center">Side View</th>
+      <td align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/frontview3_1.png" /></div></td>
     </tr>
     <tr>
-      <th align="center">Equipped Module
-      </th><td align="center">Jetson Nano 4G</td>
+      <th align="center">Equipped Module</th>
+      <td align="center">Jetson Nano 4G</td>
     </tr>
     <tr>
-      <th align="center">Operating carrier Board
-      </th><td align="center">J1010 carrier board</td>
+      <th align="center">Operating carrier Board</th>
+      <td align="center">J1010 carrier board</td>
     </tr>
   </tbody>
 </table>
@@ -227,13 +227,13 @@ The following conditions need to be met for the expansion solution using USB, wh
       <th align="center">software and hardware requirements</th>  
     </tr>
     <tr>
-      <th align="center">reComputer for Jetson
-      </th><td align="left">JetPack versions 4.4 ~ 4.6 <br />
+      <th align="center">reComputer for Jetson</th>
+      <td align="left">JetPack versions 4.4 ~ 4.6 <br />
         Equipped Module needs to be Jetson Nano</td>
     </tr>
     <tr>
-      <th align="center">USB storage devices
-      </th><td align="left">USB storage devices need to be fourth generation extended file system (Ext4) <br />
+      <th align="center">USB storage devices</th>
+      <td align="left">USB storage devices need to be fourth generation extended file system (Ext4) <br />
         USB storage device power supply current ≤ 0.5 A</td>
     </tr>
   </tbody>
@@ -447,20 +447,20 @@ When your system does not boot properly due to an error, or for some other reaso
       <th align="center">Description</th>  
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/7.jpeg" /></div>
-      </th><td align="left">Ubuntu host x1</td>
+      <th align="center"><div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/7.jpeg" /></div></th>
+      <td align="left">Ubuntu host x1</td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/reComputerheadline.png" /></div>
-      </th><td align="left">Unable to access the system reComputer Jetson x1</td>
+      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/reComputerheadline.png" /></div></th>
+      <td align="left">Unable to access the system reComputer Jetson x1</td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/5.png" /></div>
-      </th><td align="left"><a href="https://www.seeedstudio.com/USB-To-Uart-5V-3V3-p-1832.html?queryID=cb30ad1a9d75c9ef437912535186b130&objectID=1112&indexName=bazaar_retailer_products">UART to USB module x1</a></td>
+      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/5.png" /></div></th>
+      <td align="left"><a href="https://www.seeedstudio.com/USB-To-Uart-5V-3V3-p-1832.html?queryID=cb30ad1a9d75c9ef437912535186b130&objectID=1112&indexName=bazaar_retailer_products">UART to USB module x1</a></td>
     </tr>
     <tr>
-      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/6.png" /></div>
-      </th><td align="left"><a href="https://www.seeedstudio.com/1-pin-dual-female-jumper-wire-100mm-50pcs-pack-p-260.html?queryID=a51c4491cb6b462a1e844c832c98c52a&objectID=2042&indexName=bazaar_retailer_products">Female to female DuPont wire x3</a></td>
+      <th align="center"><div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/6.png" /></div></th>
+      <td align="left"><a href="https://www.seeedstudio.com/1-pin-dual-female-jumper-wire-100mm-50pcs-pack-p-260.html?queryID=a51c4491cb6b462a1e844c832c98c52a&objectID=2042&indexName=bazaar_retailer_products">Female to female DuPont wire x3</a></td>
     </tr>
   </tbody>
 </table>

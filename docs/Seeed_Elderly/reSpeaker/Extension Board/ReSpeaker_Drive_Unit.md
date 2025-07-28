@@ -62,7 +62,7 @@ Plug your ReSpeaker Core onto the Meow King drive unit like the image below.
 
 Press the power logo over 5 seconds, the drive unit will power on, and also the ReSpeaker Core board.
 
-:::Note
+:::note
 The power control circuit is in the drive unit, even when you pulled the ReSpeaker Core off, pressing the power logo over 5 seconds will still power on the drive unit.
 :::
 

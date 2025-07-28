@@ -80,7 +80,7 @@ sudo ./tools/backup_restore/l4t_backup_restore.sh -e nvme0n1 -b recomputer-orin
 
 :::note
 you can navigate  to your Jepack flashing package directory and find a `xxx.conf` file.
-`xxx` is your  <target_board> 
+`xxx` is your  `<target_board>`
 ```bash
 ls | grep *.conf
 ```

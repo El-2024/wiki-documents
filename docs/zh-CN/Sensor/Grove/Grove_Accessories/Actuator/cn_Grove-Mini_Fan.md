@@ -37,13 +37,17 @@ last_update:
 ---
 ![](https://files.seeedstudio.com/wiki/Grove-Mini_Fan/img/Mini_fan.jpg)
 
-<dl><dt>①  UartSBee接口：使用此接口更改微控制器代码。使用 [UartSBee](/UartSBee_V4) 模块通过Uart接口连接到微控制器。
-</dt><dt>② JST 2.0 接口：用于连接到3.3伏特的直流电机（仅限3.3伏特）
-</dt><dt>③ Grove 接口
-</dt><dt>④ ICSP 接口
-</dt><dt>⑤ Atmega168 微控制器
-</dt><dt>⑥ Servo 接口
-</dt></dl>
+① UartSBee接口：使用此接口更改微控制器代码。使用 [UartSBee](/UartSBee_V4) 模块通过Uart接口连接到微控制器。
+
+② JST 2.0 接口：用于连接到3.3伏特的直流电机（仅限3.3伏特）
+
+③ Grove 接口
+
+④ ICSP 接口
+
+⑤ Atmega168 微控制器
+
+⑥ Servo 接口
 
 ## 使用方法
 

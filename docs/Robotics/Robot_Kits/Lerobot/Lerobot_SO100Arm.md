@@ -103,8 +103,8 @@ Seeed Studio is only responsible for the quality of the hardware itself. The tut
       <td>5.5 mm × 2.1 mm DC 12 V 2 A</td>
       <td>5.5 mm × 2.1 mm DC 5 V 4 A</td>
       <td>
-        5.5 mm × 2.1 mm DC 12 V 2 A (Leader Arm)<br />
-        5.5 mm × 2.1 mm DC 5 V 4 A (Follower Arm)
+        5.5 mm × 2.1 mm DC 12 V 2 A (Follower Arm)<br />
+        5.5 mm × 2.1 mm DC 5 V 4 A (Leader Arm)
       </td>
     </tr>
     <tr>
@@ -324,7 +324,7 @@ If you are using a Jetson device, install Pytorch and Torchvision according to [
 ## Configure the motors
 
 :::danger  
-Due to official code and servo manufacturer firmware updates, users before June 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
+Due to official code and servo manufacturer firmware updates, users before June 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250706).7z) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
 :::
 
 :::note
@@ -1036,9 +1036,9 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 - If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
 
-- Press right arrow -> at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
+- Press right arrow → at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
 
-- Press left arrow <- at any time during episode recording or resetting to early stop, cancel the current episode, and re-record it.
+- Press left arrow ← at any time during episode recording or resetting to early stop, cancel the current episode, and re-record it.
 
 - Press escape ESC at any time during episode recording to end the session early and go straight to video encoding and dataset uploading.
 

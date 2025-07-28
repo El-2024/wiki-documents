@@ -46,358 +46,58 @@ Note: Mesh Bee will not communicate with Xbee as the ZigBee stack versions they'
 ## 3. Specification
 
 ---
-<table>
-<tr>
-<th> Specification
-</th>
-<th> Value
-</th></tr>
-<tr>
-<td width="400px"> Microprocessor
-</td>
-<td width="600px"> JN5168 (32-bit RISC CPU, 32MHz clock speed)
-</td></tr>
-<tr>
-<td> Resources
-</td>
-<td> 256kB/32kB/4kB (Flash/RAM/EEPROM)
-</td></tr>
-<tr>
-<td> PCB size
-</td>
-<td> 24.5mmx30.5mmx0.8mm
-</td></tr>
-<tr>
-<td> Outline Dimension
-</td>
-<td> 24.5mmx30.5mmx9.77mm
-</td></tr>
-<tr>
-<td> Indicators
-</td>
-<td> No
-</td></tr>
-<tr>
-<td> Power supply
-</td>
-<td> 3.3V
-</td></tr>
-<tr>
-<td> IO counts
-</td>
-<td> 12
-</td></tr>
-<tr>
-<td> ADC input
-</td>
-<td> 3(2 multiplexing with IO)
-</td></tr>
-<tr>
-<td> Interfaces
-</td>
-<td> UARTx2, SPI, I2C
-</td></tr>
-<tr>
-<td> Program interface
-</td>
-<td> UART+MISO
-</td></tr>
-<tr>
-<td> Connectivity
-</td>
-<td> Socket compatible with XBee
-</td></tr>
-<tr>
-<td> Communication Protocol
-</td>
-<td> Uart(TTL)
-</td></tr>
-<tr>
-<td> Operating Frequency Band
-</td>
-<td> 2.4GHz
-</td></tr>
-<tr>
-<td> Stack/Software
-</td>
-<td> RF4CE, JenNet-IP , ZigBee Pro
-</td></tr></table>
+| Specification | Value |
+|--------------|-------|
+| Microprocessor | JN5168 (32-bit RISC CPU, 32MHz clock speed) |
+| Resources | 256kB/32kB/4kB (Flash/RAM/EEPROM) |
+| PCB size | 24.5mmx30.5mmx0.8mm |
+| Outline Dimension | 24.5mmx30.5mmx9.77mm |
+| Indicators | No |
+| Power supply | 3.3V |
+| IO counts | 12 |
+| ADC input | 3(2 multiplexing with IO) |
+| Interfaces | UARTx2, SPI, I2C |
+| Program interface | UART+MISO |
+| Connectivity | Socket compatible with XBee |
+| Communication Protocol | Uart(TTL) |
+| Operating Frequency Band | 2.4GHz |
+| Stack/Software | RF4CE, JenNet-IP , ZigBee Pro |
 
 ### 3.1 Electrical Characteristics
 
-<table >
-<tr>
-<th> Specification
-</th>
-<th> Min
-</th>
-<th> Typ
-</th>
-<th> Max
-</th>
-<th> Unit
-</th></tr>
-<tr>
-<td width="400px"> Max Input Voltage
-</td>
-<td width="150px"> -0.3
-</td>
-<td width="150px">
-</td>
-<td width="150px"> 3.6
-</td>
-<td width="150px"> V
-</td></tr>
-<tr>
-<td> Working Input Voltage
-</td>
-<td> 2.0
-</td>
-<td> 3.3
-</td>
-<td> 3.6
-</td>
-<td> V
-</td></tr>
-<tr>
-<td> Transmit Current
-</td>
-<td>
-</td>
-<td> 15
-</td>
-<td>
-</td>
-<td> mA
-</td></tr>
-<tr>
-<td> Receive Current
-</td>
-<td>
-</td>
-<td> 17
-</td>
-<td>
-</td>
-<td> mA
-</td></tr>
-<tr>
-<td> Deep Sleep Current
-</td>
-<td>
-</td>
-<td> 0.12
-</td>
-<td>
-</td>
-<td> uA
-</td></tr>
-<tr>
-<td> Operating Temperature
-</td>
-<td> -40
-</td>
-<td>
-</td>
-<td> 125
-</td>
-<td> °C
-</td></tr></table>
+| Specification | Min | Typ | Max | Unit |
+|--------------|-----|-----|-----|------|
+| Max Input Voltage | -0.3 | | 3.6 | V |
+| Working Input Voltage | 2.0 | 3.3 | 3.6 | V |
+| Transmit Current | | 15 | | mA |
+| Receive Current | | 17 | | mA |
+| Deep Sleep Current | | 0.12 | | uA |
+| Operating Temperature | -40 | | | |
 
 ## 4. Pin definition
 
-![](https://files.seeedstudio.com/wiki/Mesh_Bee/img/Mesh_Bee_Pin.jpg)
-
-<table >
-<tr>
-<th> Pin
-</th>
-<th> Alternate Functions
-</th>
-<th> Type
-</th>
-<th> Description
-</th></tr>
-<tr>
-<td width="100px"> 3V3
-</td>
-<td width="200px"> -
-</td>
-<td width="200px"> Supply input
-</td>
-<td width="400px"> VCC, +3.3V
-</td></tr>
-<tr>
-<td> TX1
-</td>
-<td> D14
-</td>
-<td> Output
-</td>
-<td> Uart1 Tx port; Digital IO 14
-</td></tr>
-<tr>
-<td> RX1
-</td>
-<td> D15
-</td>
-<td> Input
-</td>
-<td> Uart Rx port; Digital IO 15
-</td></tr>
-<tr>
-<td> DO1
-</td>
-<td> SPIMISO
-</td>
-<td> Input/Output
-</td>
-<td> Digital Output 1; SPI Master In Slave Out Input
-</td></tr>
-<tr>
-<td>  !RST
-</td>
-<td> -
-</td>
-<td> Input
-</td>
-<td> Reset port
-</td></tr>
-<tr>
-<td> D11
-</td>
-<td> PWM1
-</td>
-<td> Input/Output
-</td>
-<td> Digital IO 11 (default usage: RSSI Indicator); PWM1 Output
-</td></tr>
-<tr>
-<td> DO0
-</td>
-<td> SPICLK
-</td>
-<td> Output
-</td>
-<td> Digital Output 0; SPI Master Clock Output
-</td></tr>
-<tr>
-<td> D18
-</td>
-<td> SPIMOSI
-</td>
-<td> Input/Output
-</td>
-<td> Digital IO 18; SPI Master Out Slave In Output
-</td></tr>
-<tr>
-<td> VRef
-</td>
-<td> ADC2
-</td>
-<td> Input
-</td>
-<td> Analogue peripheral reference voltage; ADC input 2
-</td></tr>
-<tr>
-<td> GND
-</td>
-<td> -
-</td>
-<td> GND
-</td>
-<td> GND
-</td></tr>
-<tr>
-<td> TX0
-</td>
-<td> D6
-</td>
-<td> Input/Output
-</td>
-<td> Uart0 Tx port; Digital IO 6
-</td></tr>
-<tr>
-<td> D12
-</td>
-<td> CTS0
-</td>
-<td> Input/Output
-</td>
-<td> Digital IO 12; UART 0 Clear To Send Input
-</td></tr>
-<tr>
-<td> D9
-</td>
-<td> -
-</td>
-<td> Input/Output
-</td>
-<td> Digital IO 9 (default usage: Mesh Bee ON/Sleep Indicator)
-</td></tr>
-<tr>
-<td> RX0
-</td>
-<td> D7
-</td>
-<td> Input/Output
-</td>
-<td> Uart0 Rx port; Digital IO 7
-</td></tr>
-<tr>
-<td> D10
-</td>
-<td> -
-</td>
-<td> Input/Output
-</td>
-<td> Digital IO 10 (default usage: Network Association Indicator)
-</td></tr>
-<tr>
-<td> D13
-</td>
-<td> RTS0
-</td>
-<td> Input/Output
-</td>
-<td> Digital IO 13; UART 0 Request To Send Output
-</td></tr>
-<tr>
-<td> D1
-</td>
-<td> SPISEL2; ADC4
-</td>
-<td> Input/Output
-</td>
-<td> Digital IO 1; SPI Master Select Output 2; ADC input 4
-</td></tr>
-<tr>
-<td> D0
-</td>
-<td> SPISEL1; ADC3
-</td>
-<td> Input/Output
-</td>
-<td> Digital IO 0; SPI Master Select Output 1; ADC input 3
-</td></tr>
-<tr>
-<td> D16
-</td>
-<td> SCL
-</td>
-<td> Input/Output
-</td>
-<td> Digital IO 16; I2C clock
-</td></tr>
-<tr>
-<td> D17
-</td>
-<td> SDA
-</td>
-<td> Input/Output
-</td>
-<td> Digital IO 17; I2C data
-</td></tr></table>
+| Pin Name | Alternate Functions | Type | Description |
+|----------|-------------------|------|-------------|
+| 3V3 | - | Supply input | VCC, +3.3V |
+| TX1 | D14 | Output | Uart1 Tx port; Digital IO 14 |
+| RX1 | D15 | Input | Uart Rx port; Digital IO 15 |
+| DO1 | SPIMISO | Input/Output | Digital Output 1; SPI Master In Slave Out Input |
+| !RST | - | Input | Reset port |
+| D11 | PWM1 | Input/Output | Digital IO 11 (default usage: RSSI Indicator); PWM1 Output |
+| DO0 | SPICLK | Output | Digital Output 0; SPI Master Clock Output |
+| D18 | SPIMOSI | Input/Output | Digital IO 18; SPI Master Out Slave In Output |
+| VRef | ADC2 | Input | Analogue peripheral reference voltage; ADC input 2 |
+| GND | - | GND | GND |
+| TX0 | D6 | Input/Output | Uart0 Tx port; Digital IO 6 |
+| D12 | CTS0 | Input/Output | Digital IO 12; UART 0 Clear To Send Input |
+| D9 | - | Input/Output | Digital IO 9 (default usage: Mesh Bee ON/Sleep Indicator) |
+| RX0 | D7 | Input/Output | Uart0 Rx port; Digital IO 7 |
+| D10 | - | Input/Output | Digital IO 10 (default usage: Network Association Indicator) |
+| D13 | RTS0 | Input/Output | Digital IO 13; UART 0 Request To Send Output |
+| D1 | SPISEL2; ADC4 | Input/Output | Digital IO 1; SPI Master Select Output 2; ADC input 4 |
+| D0 | SPISEL1; ADC3 | Input/Output | Digital IO 0; SPI Master Select Output 1; ADC input 3 |
+| D16 | SCL | Input/Output | Digital IO 16; I2C clock |
+| D17 | SDA | Input/Output | Digital IO 17; I2C data |
 
 Note: Only important alternate functions are listed, may have more, please refer to JN516x data sheet.
 
@@ -777,43 +477,13 @@ ZigBee is a low-power &amp; low-speed networked transmission protocol. So it's n
 
 The data rate specification of Mesh Bee network with 2~3 nodes:
 
-<table>
-<tr>
-<th> Transmission Direction </th>
-<th> Transmit Method </th>
-<th> Packet Period (ms) </th>
-<th> Max Packet Length (bytes)
-</th></tr>
-<tr>
-<td> COO/ROU  </td>
-<td> Broadcast </td>
-<td> 250 </td>
-<td> 50
-</td></tr>
-<tr>
-<td> COO/ROU -&gt; END </td>
-<td> Unicast </td>
-<td> 40 </td>
-<td> 50
-</td></tr>
-<tr>
-<td> END  </td>
-<td> Broadcast </td>
-<td> 150 </td>
-<td> 50
-</td></tr>
-<tr>
-<td> END -&gt; COO/ROU </td>
-<td> Unicast </td>
-<td> 20 </td>
-<td> 25
-</td></tr>
-<tr>
-<td> END -&gt; COO/ROU </td>
-<td> Unicast </td>
-<td> 40 </td>
-<td> 50
-</td></tr></table>
+| Transmission Direction | Transmit Method | Packet Period (ms) | Max Packet Length (bytes) |
+|----------------------|-----------------|-------------------|------------------------|
+| COO/ROU | Broadcast | 250 | 50 |
+| COO/ROU -> END | Unicast | 40 | 50 |
+| END | Broadcast | 150 | 50 |
+| END -> COO/ROU | Unicast | 20 | 25 |
+| END -> COO/ROU | Unicast | 40 | 50 |
 
 The data rate will be lower for a bigger network.
 
@@ -829,7 +499,7 @@ Mesh Bee uses the chip named JN5168 with a 32-bit RISC core and rich resources:
 
 * Slave SPI port
 
-* 2x UART’s
+* 2x UART's
 
 * 5x PWM (4x timer &amp; 1x counter)
 
