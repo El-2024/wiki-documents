@@ -5,7 +5,7 @@ keywords:
 - Huggingface
 - Arm
 - Robotics 
-slug: /Lerobot_Starai_Arm
+slug: /lerobot_starai_arm
 last_update:
   date: 7/26/2025
   author: LiShanghang

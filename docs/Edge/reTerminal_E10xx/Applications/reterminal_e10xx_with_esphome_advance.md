@@ -1,7 +1,7 @@
 ---
 description: This article describes how to utilise the hardware capabilities of the reTerminal E10xx series on ESPHome.
 title: Advanced ESPHome Usage of reTerminal E10xx in Home Assistant
-image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
+image: https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.webp
 slug: /reterminal_e10xx_with_esphome_advanced
 sidebar_position: 3
 last_update:
