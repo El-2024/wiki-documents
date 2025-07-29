@@ -54,16 +54,67 @@ El dispositivo puede almacenar datos en caché, función que puede activarse med
 
 ### Función del Botón
 
-<table><tr><th><b>Acciones</b></th><th><b>Descripción</b></th><th><b>Estado del LED</b></th><th><b>Buzzer</b></th></tr>
-<tr><td rowspan="2">Presionar botón durante 3 segundos</td><td>Si el rastreador está apagado, mantener presionado 3 segundos para encender. El emparejamiento Bluetooth se activa automáticamente y se puede usar la app para conectarse.</td><td>El LED parpadea una vez por segundo.</td><td>Melodía ascendente</td></tr>
-<tr><td>Si el dispositivo ya está encendido, mantener 3 segundos activa el emparejamiento Bluetooth.</td><td>El LED parpadea una vez por segundo.</td><td>Ninguno</td></tr>
-<tr><td>Presionar botón durante 9 segundos</td><td>Apaga el dispositivo.</td><td>Ninguno</td><td>Melodía descendente</td></tr>
-<tr><td>Unirse a red LoRa</td><td>Al salir de configuración Bluetooth, intenta unirse a red LoRaWAN.</td><td>Luz de respiración parpadea al intentar unirse; parpadeo rápido si tiene éxito</td><td>Melodía rápida y alegre al conectarse</td></tr>
-<tr><td rowspan="2">Presionar una vez</td><td>Obtiene ubicación y datos de sensores, sube datos y activa el evento “Presionar una vez”.</td><td>LED se enciende por 2 segundos</td><td>Beep cuando los datos se suben correctamente</td></tr>
-<tr><td>Si el Bluetooth está encendido, un solo clic lo apaga.</td><td>LED se apaga</td><td>Ninguno</td></tr>
-<tr><td rowspan="3">Presionar dos veces seguidas</td><td>Si el SOS está en modo de disparo único, activa ese modo y sube datos una sola vez.</td><td>Parpadea con sonido</td><td>3 segundos de alarma</td></tr>
-<tr><td>Si el SOS está en modo continuo, activa el envío continuo (cada minuto por 30 veces).</td><td>Parpadea con sonido</td><td>Sonido de alarma constante</td></tr>
-<tr><td>Presionar doble clic dos veces para salir de modo SOS</td><td>Ninguno</td><td>Ninguno</td></tr>
+<table>
+  <thead>
+    <tr>
+      <th><b>Acciones</b></th>
+      <th><b>Descripción</b></th>
+      <th><b>Estado del LED</b></th>
+      <th><b>Buzzer</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowSpan={2}>Presionar botón durante 3 segundos</td>
+      <td>Si el rastreador está apagado, mantener presionado 3 segundos para encender. El emparejamiento Bluetooth se activa automáticamente y se puede usar la app para conectarse.</td>
+      <td>El LED parpadea una vez por segundo.</td>
+      <td>Melodía ascendente</td>
+    </tr>
+    <tr>
+      <td>Si el dispositivo ya está encendido, mantener 3 segundos activa el emparejamiento Bluetooth.</td>
+      <td>El LED parpadea una vez por segundo.</td>
+      <td>Ninguno</td>
+    </tr>
+    <tr>
+      <td>Presionar botón durante 9 segundos</td>
+      <td>Apaga el dispositivo.</td>
+      <td>Ninguno</td>
+      <td>Melodía descendente</td>
+    </tr>
+    <tr>
+      <td>Unirse a red LoRa</td>
+      <td>Al salir de configuración Bluetooth, intenta unirse a red LoRaWAN.</td>
+      <td>Luz de respiración parpadea al intentar unirse; parpadeo rápido si tiene éxito</td>
+      <td>Melodía rápida y alegre al conectarse</td>
+    </tr>
+    <tr>
+      <td rowSpan={2}>Presionar una vez</td>
+      <td>Obtiene ubicación y datos de sensores, sube datos y activa el evento “Presionar una vez”.</td>
+      <td>LED se enciende por 2 segundos</td>
+      <td>Beep cuando los datos se suben correctamente</td>
+    </tr>
+    <tr>
+      <td>Si el Bluetooth está encendido, un solo clic lo apaga.</td>
+      <td>LED se apaga</td>
+      <td>Ninguno</td>
+    </tr>
+    <tr>
+      <td rowSpan={3}>Presionar dos veces seguidas</td>
+      <td>Si el SOS está en modo de disparo único, activa ese modo y sube datos una sola vez.</td>
+      <td>Parpadea con sonido</td>
+      <td>3 segundos de alarma</td>
+    </tr>
+    <tr>
+      <td>Si el SOS está en modo continuo, activa el envío continuo (cada minuto por 30 veces).</td>
+      <td>Parpadea con sonido</td>
+      <td>Sonido de alarma constante</td>
+    </tr>
+    <tr>
+      <td>Presionar doble clic dos veces para salir de modo SOS</td>
+      <td>Ninguno</td>
+      <td>Ninguno</td>
+    </tr>
+  </tbody>
 </table>
 
 :::info Nota
@@ -133,24 +184,30 @@ Haz clic en “Measure” (Medir) para obtener los valores de los sensores:
 Los rastreadores están diseñados para admitir un plan de frecuencia universal de 863 MHz a 928 MHz en un solo SKU. Cada dispositivo puede admitir 7 planes de frecuencia.
 
 <table align="center">
-  <caption> <h2>Plataforma</h2> </caption>
+  <caption><p style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Plataforma</p></caption>
+  <thead>
+    <tr>
+      <th><strong>Plataforma</strong></th>
+      <th><strong>Descripción</strong></th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td><h4>Plataforma</h4></td>
-      <td><h4>Descripción</h4></td>
-    </tr>
-    <tr>
       <td>SenseCAP para The Things Network</td>
-      <td>Plataforma predeterminada.  
-Debe utilizarse con una puerta de enlace SenseCAP. SenseCAP construye un servidor TTN propio que permite el uso de sensores listos para funcionar cuando se emparejan con una puerta de enlace SenseCAP. <br />
-      <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCAP Gateway Exterior</span></a><br />
-      <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCAP Gateway Interior</span></a>
+      <td>
+        Plataforma predeterminada. Debe utilizarse con una puerta de enlace SenseCAP. SenseCAP construye un servidor TTN propio que permite el uso de sensores listos para funcionar cuando se emparejan con una puerta de enlace SenseCAP.
+        <br />
+        <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank">SenseCAP Gateway Exterior</a>
+        <br />
+        <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank">SenseCAP Gateway Interior</a>
       </td>
     </tr>
     <tr>
       <td>SenseCAP para Helium</td>
-      <td>Cuando hay cobertura de red Helium, los datos pueden subirse mediante Helium. Los dispositivos se ejecutan en una consola privada de Helium de SenseCAP. Los usuarios no necesitan crear dispositivos en la consola Helium, funciona directamente con la app SenseCAP Mate y el portal. <br />
-      <a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a>
+      <td>
+        Cuando hay cobertura de red Helium, los datos pueden subirse mediante Helium. Los dispositivos se ejecutan en una consola privada de Helium de SenseCAP. Los usuarios no necesitan crear dispositivos en la consola Helium, funciona directamente con la app SenseCAP Mate y el portal.
+        <br />
+        <a href="https://explorer.helium.com/" target="_blank">Helium Coverage</a>
       </td>
     </tr>
     <tr>
@@ -322,22 +379,82 @@ Configura el modo de trabajo según tus necesidades.
 
 Para el modo de evento, existen cinco tipos de eventos:
 
-<table><tr><th><b>Modo de Evento</b></th><th><b>Descripción</b></th><th></th></tr>
-<tr><td>Intervalo de Envío – Sin evento (min)</td><td><a name="ole_link16"></a>Este es el intervalo de carga cuando no se activan eventos.</td><td><p>Por defecto: 60 minutos. </p><p>Rango: 1~10080 min.</p></td></tr>
-<tr><td rowspan="2">Evento de Impacto</td><td>Cuando el evento de impacto está habilitado, un impacto en el rastreador activará un informe de datos, que incluye el evento de impacto, la ubicación y los datos del sensor.</td><td>Desactivado por defecto.</td></tr>
-<tr><td>Umbral de Movimiento 3 Ejes (mg)</td><td>Por defecto es 300. Cuando la aceleración excede los 300 mg, se activa el evento de impacto.</td></tr>
-<tr><td rowspan="3">Evento de Movimiento</td><td>Cuando la aceleración supera el valor establecido, el dispositivo empieza a moverse, y cuando no hay movimiento durante 2 minutos, el dispositivo deja de moverse. Configura el intervalo de carga según el inicio y detención del movimiento.</td><td>Desactivado por defecto.</td></tr>
-<tr><td>Umbral de Movimiento 3 Ejes (mg)</td><td>Por defecto: 30. Cuando la aceleración supera los 30 mg, se determina que el dispositivo está en movimiento; si permanece 2 minutos por debajo de ese valor, se determina que está en reposo.</td></tr>
-<tr><td>Intervalo de Envío en Movimiento (min)</td><td>Configura el intervalo de carga mientras el dispositivo está en movimiento.</td></tr>
-<tr><td rowspan="2">Evento de Reposo</td><td>Cuando el dispositivo permanece inmóvil en una ubicación durante más de cierto tiempo, se activa un evento de tiempo de espera por inmovilidad.</td><td></td></tr>
-<tr><td>Tiempo de Espera por Reposo (min)</td><td>Por defecto: 360 minutos.</td></tr>
-<tr><td rowspan="4">Evento de Temperatura</td><td>Si el evento de temperatura está habilitado, puedes configurar el intervalo de carga basado en la temperatura.</td><td>Por ejemplo: Intervalo de Envío=10, Valor≥30. Si la temperatura supera los 30 °C, el dispositivo cargará la ubicación cada 10 minutos.</td></tr>
-<tr><td>Intervalo de Muestreo (s)</td><td><p>Por defecto: 30 segundos.</p><p>La temperatura se detecta cada 30 s. Cuando se activa el umbral, se cargan la ubicación y los datos del sensor.</p></td></tr>
-<tr><td>Intervalo de Envío (min)</td><td>Cuando la temperatura supera el umbral, se cargan la ubicación y los datos del sensor según este intervalo.</td></tr>
-<tr><td>Regla de Valor</td><td>Se puede configurar una de las cuatro reglas de umbral.</td></tr>
-<tr><td rowspan="3">Evento de Luz</td><td>Si el evento de luz está habilitado, puedes configurar el intervalo de carga basado en la luz.</td><td>Por ejemplo: Intervalo de Envío=10, Valor≥30. Si la luz es mayor al 30 %, el dispositivo cargará la ubicación cada 10 minutos.</td></tr>
-<tr><td>Intervalo de Envío (min)</td><td>Cuando la luz excede el umbral, se cargan la ubicación y los datos del sensor según este intervalo.</td></tr>
-<tr><td>Regla de Valor</td><td>Se puede configurar una de las cuatro reglas de umbral.</td></tr>
+<table>
+  <thead>
+    <tr>
+      <th><b>Modo de Evento</b></th>
+      <th><b>Descripción</b></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intervalo de Envío – Sin evento (min)</td>
+      <td>Este es el intervalo de carga cuando no se activan eventos.</td>
+      <td>Por defecto: 60 minutos.<br />Rango: 1~10080 min.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Evento de Impacto</td>
+      <td>Cuando el evento de impacto está habilitado, un impacto en el rastreador activará un informe de datos, que incluye el evento de impacto, la ubicación y los datos del sensor.</td>
+      <td>Desactivado por defecto.</td>
+    </tr>
+    <tr>
+      <td>Umbral de Movimiento 3 Ejes (mg)</td>
+      <td>Por defecto es 300. Cuando la aceleración excede los 300 mg, se activa el evento de impacto.</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Evento de Movimiento</td>
+      <td>Cuando la aceleración supera el valor establecido, el dispositivo empieza a moverse, y cuando no hay movimiento durante 2 minutos, el dispositivo deja de moverse. Configura el intervalo de carga según el inicio y detención del movimiento.</td>
+      <td>Desactivado por defecto.</td>
+    </tr>
+    <tr>
+      <td>Umbral de Movimiento 3 Ejes (mg)</td>
+      <td>Por defecto: 30. Cuando la aceleración supera los 30 mg, se determina que el dispositivo está en movimiento; si permanece 2 minutos por debajo de ese valor, se determina que está en reposo.</td>
+    </tr>
+    <tr>
+      <td>Intervalo de Envío en Movimiento (min)</td>
+      <td>Configura el intervalo de carga mientras el dispositivo está en movimiento.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Evento de Reposo</td>
+      <td>Cuando el dispositivo permanece inmóvil en una ubicación durante más de cierto tiempo, se activa un evento de tiempo de espera por inmovilidad.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tiempo de Espera por Reposo (min)</td>
+      <td>Por defecto: 360 minutos.</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Evento de Temperatura</td>
+      <td>Si el evento de temperatura está habilitado, puedes configurar el intervalo de carga basado en la temperatura.</td>
+      <td>Por ejemplo: Intervalo de Envío=10, Valor≥30. Si la temperatura supera los 30 °C, el dispositivo cargará la ubicación cada 10 minutos.</td>
+    </tr>
+    <tr>
+      <td>Intervalo de Muestreo (s)</td>
+      <td>Por defecto: 30 segundos.<br />La temperatura se detecta cada 30 s. Cuando se activa el umbral, se cargan la ubicación y los datos del sensor.</td>
+    </tr>
+    <tr>
+      <td>Intervalo de Envío (min)</td>
+      <td>Cuando la temperatura supera el umbral, se cargan la ubicación y los datos del sensor según este intervalo.</td>
+    </tr>
+    <tr>
+      <td>Regla de Valor</td>
+      <td>Se puede configurar una de las cuatro reglas de umbral.</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Evento de Luz</td>
+      <td>Si el evento de luz está habilitado, puedes configurar el intervalo de carga basado en la luz.</td>
+      <td>Por ejemplo: Intervalo de Envío=10, Valor≥30. Si la luz es mayor al 30 %, el dispositivo cargará la ubicación cada 10 minutos.</td>
+    </tr>
+    <tr>
+      <td>Intervalo de Envío (min)</td>
+      <td>Cuando la luz excede el umbral, se cargan la ubicación y los datos del sensor según este intervalo.</td>
+    </tr>
+    <tr>
+      <td>Regla de Valor</td>
+      <td>Se puede configurar una de las cuatro reglas de umbral.</td>
+    </tr>
+  </tbody>
 </table>
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/work_mode2.png" alt="pir" width={800} height="auto" /></p>
@@ -350,17 +467,59 @@ El rastreador admite posicionamiento vía GNSS, Wi-Fi y Bluetooth.
 - **Wi-Fi**: Escaneo pasivo, carga las 4 direcciones MAC escaneadas vía LoRa.
 - **BLE**: Carga las 3 mejores señales MAC de Beacon vía LoRa.
 
-<table><tr><th><b>Geolocalización</b></th><th><b>Descripción</b></th><th></th></tr>
-<tr><td rowspan="8">Estrategia de Geolocalización</td><td>Solo GNSS</td><td><p>Usa GNSS por defecto.</p><p>Solo se usa GNSS para la posición.</p></td></tr>
-<tr><td>Solo Wi-Fi</td><td>Solo se usan escaneos Wi-Fi para la posición.</td></tr>
-<tr><td>Wi-Fi + GNSS</td><td>Usa Wi-Fi antes que GNSS. Si Wi-Fi falla, usa GNSS en un mismo ciclo.</td></tr>
-<tr><td>GNSS + Wi-Fi</td><td>Usa GNSS antes que Wi-Fi. Si GNSS falla, usa Wi-Fi en un mismo ciclo.</td></tr>
-<tr><td>Solo Bluetooth</td><td>Solo se usan escaneos Bluetooth para la posición.</td></tr>
-<tr><td>Bluetooth + Wi-Fi</td><td>Usa Bluetooth antes que Wi-Fi. Si Bluetooth falla, usa Wi-Fi.</td></tr>
-<tr><td>Bluetooth + GNSS</td><td>Usa Bluetooth antes que GNSS. Si Bluetooth falla, usa GNSS.</td></tr>
-<tr><td>Bluetooth + Wi-Fi + GNSS</td><td>Usa Bluetooth, Wi-Fi y GNSS secuencialmente (cambia al siguiente si falla el anterior).</td></tr>
-<tr><td>Tiempo de Espera GNSS</td><td><p>Tiempo máximo esperando que el GNSS obtenga una posición aproximada.</p></td><td><p>Por defecto: 60 s.</p><p>No se recomienda modificar. A mayor tiempo, mayor consumo energético.</p></td></tr>
-<tr><td><a name="ole_link17"></a>Cache de Datos GNSS</td><td>Si no se puede subir la información vía LoRa, se guarda localmente y se sube cuando se recupere la señal LoRa.</td><td>Desactivado por defecto.</td></tr>
+<table>
+  <thead>
+    <tr>
+      <th><b>Geolocalización</b></th>
+      <th><b>Descripción</b></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Estrategia de Geolocalización</td>
+      <td>Solo GNSS</td>
+      <td>Usa GNSS por defecto.<br />Solo se usa GNSS para la posición.</td>
+    </tr>
+    <tr>
+      <td>Solo Wi-Fi</td>
+      <td>Solo se usan escaneos Wi-Fi para la posición.</td>
+    </tr>
+    <tr>
+      <td>Wi-Fi + GNSS</td>
+      <td>Usa Wi-Fi antes que GNSS. Si Wi-Fi falla, usa GNSS en un mismo ciclo.</td>
+    </tr>
+    <tr>
+      <td>GNSS + Wi-Fi</td>
+      <td>Usa GNSS antes que Wi-Fi. Si GNSS falla, usa Wi-Fi en un mismo ciclo.</td>
+    </tr>
+    <tr>
+      <td>Solo Bluetooth</td>
+      <td>Solo se usan escaneos Bluetooth para la posición.</td>
+    </tr>
+    <tr>
+      <td>Bluetooth + Wi-Fi</td>
+      <td>Usa Bluetooth antes que Wi-Fi. Si Bluetooth falla, usa Wi-Fi.</td>
+    </tr>
+    <tr>
+      <td>Bluetooth + GNSS</td>
+      <td>Usa Bluetooth antes que GNSS. Si Bluetooth falla, usa GNSS.</td>
+    </tr>
+    <tr>
+      <td>Bluetooth + Wi-Fi + GNSS</td>
+      <td>Usa Bluetooth, Wi-Fi y GNSS secuencialmente (cambia al siguiente si falla el anterior).</td>
+    </tr>
+    <tr>
+      <td>Tiempo de Espera GNSS</td>
+      <td>Tiempo máximo esperando que el GNSS obtenga una posición aproximada.</td>
+      <td>Por defecto: 60 s.<br />No se recomienda modificar. A mayor tiempo, mayor consumo energético.</td>
+    </tr>
+    <tr>
+      <td>Cache de Datos GNSS</td>
+      <td>Si no se puede subir la información vía LoRa, se guarda localmente y se sube cuando se recupere la señal LoRa.</td>
+      <td>Desactivado por defecto.</td>
+    </tr>
+  </tbody>
 </table>
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/mode3.png" alt="pir" width={500} height="auto" /></p>

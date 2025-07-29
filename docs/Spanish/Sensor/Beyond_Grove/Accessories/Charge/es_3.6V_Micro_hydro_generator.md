@@ -31,61 +31,51 @@ Este módulo incluye un circuito estabilizador de voltaje y una batería recarga
 ## Especificaciones
 ---
 <table>
-<tr>
-<td width="400px">Peso
-</td>
-<td width="400px">165 g
-</td></tr>
-<tr>
-<td>Voltaje de salida
-</td>
-<td>3.6V
-</td></tr>
-<tr>
-<td>Capacidad de la batería
-</td>
-<td>300mA
-</td></tr>
-<tr>
-<td>Presión máxima de trabajo
-</td>
-<td>1.75 MPa
-</td></tr>
-<tr>
-<td>Presión de trabajo
-</td>
-<td>0~1.75MPa
-</td></tr>
-<tr>
-<td>Temperatura operativa
-</td>
-<td>0~110°C
-</td></tr>
-<tr>
-<td>Máximo
-</td>
-<td>30 minutos a 110 °C
-</td></tr>
-<tr>
-<td>Rango recomendado de flujo
-</td>
-<td>1.5~20 l/min (Presión 0.05–0.2 MPa)
-</td></tr>
-<tr>
-<td>Método de instalación
-</td>
-<td>De acuerdo con la dirección de la flecha
-</td></tr>
-<tr>
-<td>Material
-</td>
-<td>Nylon/fibra de vidrio, polioximetileno
-</td></tr>
-<tr>
-<td>Tamaño de las aberturas de entrada y salida
-</td>
-<td>0.8 pulgadas
-</td></tr></table>
+  <tr>
+    <td width="400px">Peso</td>
+    <td width="400px">165 g</td>
+  </tr>
+  <tr>
+    <td>Voltaje de salida</td>
+    <td>3.6V</td>
+  </tr>
+  <tr>
+    <td>Capacidad de la batería</td>
+    <td>300mA</td>
+  </tr>
+  <tr>
+    <td>Presión máxima de trabajo</td>
+    <td>1.75 MPa</td>
+  </tr>
+  <tr>
+    <td>Presión de trabajo</td>
+    <td>0~1.75MPa</td>
+  </tr>
+  <tr>
+    <td>Temperatura operativa</td>
+    <td>0~110°C</td>
+  </tr>
+  <tr>
+    <td>Máximo</td>
+    <td>30 minutos a 110 °C</td>
+  </tr>
+  <tr>
+    <td>Rango recomendado de flujo</td>
+    <td>1.5~20 l/min (Presión 0.05–0.2 MPa)</td>
+  </tr>
+  <tr>
+    <td>Método de instalación</td>
+    <td>De acuerdo con la dirección de la flecha</td>
+  </tr>
+  <tr>
+    <td>Material</td>
+    <td>Nylon/fibra de vidrio, polioximetileno</td>
+  </tr>
+  <tr>
+    <td>Tamaño de las aberturas de entrada y salida</td>
+    <td>0.8 pulgadas</td>
+  </tr>
+</table>
 
 ## Dimensiones Mecánicas
 ---

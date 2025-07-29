@@ -60,7 +60,7 @@ Al conectar con Wappsto puedes realizar las siguientes operaciones. Para más in
 4. Pronóstico del clima desde yr.no  
 5. Automatizaciones con bloques visuales (Blockly)  
 6. Programación sin código o con JavaScript  
-7. Ejemplo de automatización cruzada con bit.wappsto.com: <https://bit.wappsto.com/project/wappsto-blocks/>
+7. Ejemplo de automatización cruzada con [bit.wappsto.com](https://bit.wappsto.com/project/wappsto-blocks/)
 
 ### Funciones poco conocidas de Wappsto
 
@@ -97,17 +97,17 @@ Necesitas tener una cuenta en [Wappsto](https://wappsto.com/). Si aún no la tie
 
 ### Tener Arduino IDE instalado
 
-Guía oficial de instalación: <https://www.arduino.cc/en/Guide>
+Guía oficial de [instalación](https://www.arduino.cc/en/Guide)
 
 #### Instalar la librería ArduinoJson
 
-Desde el gestor de librerías, instala **ArduinoJson**. Más info: <https://arduinojson.org/v6/doc/installation/>
+Desde el gestor de librerías, instala **ArduinoJson**. Más [info](https://arduinojson.org/v6/doc/installation/)
 
 #### Instalar la librería de Wappsto
 
 1. Descarga este proyecto como archivo ZIP desde GitHub.  
 2. En Arduino IDE ve a: `Sketch -> Include Library -> Add .ZIP Library...`  
-Más info: <https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries>
+Más [info](https://docs.arduino.cc/software/ide-v1/tutorials/installing-libraries)
 
 ### Generar certificados e ID para un nuevo dispositivo
 
@@ -171,7 +171,7 @@ Si obtienes un error de "no permitido acceder" a valores en el dispositivo que h
 
 Como tú serías el fabricante, aún verás el dispositivo en tu lista de redes, podrás ver que está en línea, pero no podrás ver valores ni controlar el dispositivo.
 
-Para reclamar un dispositivo, ve a la pestaña "IoT Devices" en <https://wappsto.com/devices>, haz clic en el botón "+ Add an IoT device" en la esquina superior derecha, e ingresa el UUID de la red en el recuadro.
+Para reclamar un dispositivo, ve a la pestaña [IoT Devices](https://wappsto.com/devices), haz clic en el botón "+ Add an IoT device" en la esquina superior derecha, e ingresa el UUID de la red en el recuadro.
 
 Si haces clic en el botón eliminar para una red, se eliminará la propiedad del dispositivo, para que otro usuario pueda reclamarlo. Una vez que un dispositivo ha sido reclamado no puede ser reclamado por otro.
 
@@ -201,7 +201,7 @@ Nota que el "nombre" para objetos dispositivo y valor tiene funcionalidad extra 
 
 La librería consultará a Wappsto si un dispositivo/valor existe con ese nombre antes de crearlo, así enlazará al valor correcto. Si nada tiene ese nombre se creará uno nuevo. Si un padre tiene múltiples hijos con el mismo nombre, la librería elegirá el primero disponible.
 
-Si cambias un nombre se creará uno nuevo, pero el viejo no se eliminará. Esto debes hacerlo tú manualmente, por ejemplo en <https://wappsto.com/devices>.
+Si cambias un nombre se creará uno nuevo, pero el viejo no se eliminará. Esto debes hacerlo tú manualmente, [aquí](https://wappsto.com/devices).
 
 ### Inicializar Wappsto
 

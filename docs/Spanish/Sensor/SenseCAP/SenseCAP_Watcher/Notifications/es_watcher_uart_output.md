@@ -807,7 +807,15 @@ sudo python watcher_uart.py
 
 ### Resultados esperados
 
-<br />\<div style={{textAlign:'center'}}>\<img src="[https://files.seeedstudio.com/wiki/watcher\_getting\_started/72.png](https://files.seeedstudio.com/wiki/watcher_getting_started/72.png)" style={{width:1000, height:'auto'}}/></div><br />
+<br />
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/watcher_getting_started/72.png"
+    style={{ width: 1000, height: 'auto' }}
+    alt="Watcher Getting Started"
+  />
+</div>
+<br />
 
 Después de ejecutar el script:
 

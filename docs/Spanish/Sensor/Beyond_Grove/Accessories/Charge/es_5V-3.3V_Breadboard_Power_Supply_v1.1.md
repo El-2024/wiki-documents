@@ -31,69 +31,48 @@ Con esta placa, puedes alimentar ambas líneas de energía de la protoboard, y c
 ## Especificaciones  
 
 <table>
-  <tbody><tr>
-      <th> Especificación
-      </th>
-      <th> Condiciones
-      </th>
-      <th> Min.
-      </th>
-      <th> Tip.
-      </th>
-      <th> Máx.
-      </th>
-      <th> Unidad
-      </th></tr>
+  <tbody>
     <tr>
-      <td width={200}> Voltaje de entrada
-      </td>
-      <td width={400}>
-      </td>
-      <td width={100}> 5.0
-      </td>
-      <td width={100}> 6.5
-      </td>
-      <td width={100}> 12.0
-      </td>
-      <td width={100}> V
-      </td></tr>
+      <th>Especificación</th>
+      <th>Condiciones</th>
+      <th>Min.</th>
+      <th>Tip.</th>
+      <th>Máx.</th>
+      <th>Unidad</th>
+    </tr>
     <tr>
-      <td rowSpan={2}> Voltaje de salida
-      </td>
-      <td> Canal 3.3V
-      </td>
-      <td> 3.235
-      </td>
-      <td> 3.3
-      </td>
-      <td> 3.365
-      </td>
-      <td> V
-      </td></tr>
+      <td width="200">Voltaje de entrada</td>
+      <td width="400"></td>
+      <td width="100">5.0</td>
+      <td width="100">6.5</td>
+      <td width="100">12.0</td>
+      <td width="100">V</td>
+    </tr>
     <tr>
-      <td> Canal 5V: 10mA≤IOUT≤600mA, 6.5V≤VIN ≤12V
-      </td>
-      <td> 4.9000
-      </td>
-      <td> 5.0
-      </td>
-      <td> 5.100
-      </td>
-      <td> V
-      </td></tr>
+      <td rowspan="2">Voltaje de salida</td>
+      <td>Canal 3.3V</td>
+      <td>3.235</td>
+      <td>3.3</td>
+      <td>3.365</td>
+      <td>V</td>
+    </tr>
     <tr>
-      <td> Corriente de salida
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td>
-      </td>
-      <td> 800
-      </td>
-      <td> mA
-      </td></tr></tbody></table>
+      <td>Canal 5V: 10mA≤IOUT≤600mA, 6.5V≤VIN ≤12V</td>
+      <td>4.9000</td>
+      <td>5.0</td>
+      <td>5.100</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>Corriente de salida</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>800</td>
+      <td>mA</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Usage  
 
@@ -115,27 +94,25 @@ Si tienes preguntas o sugerencias de mejora para el diseño, puedes visitar nues
 ## Historial de Versiones  
 
 <table>
-  <tbody><tr>
-      <th> Revisión
-      </th>
-      <th> Descripción
-      </th>
-      <th> Lanzamiento
-      </th></tr>
+  <tbody>
     <tr>
-      <td width={300}> v1.0b
-      </td>
-      <td width={500}> Versión pública inicial
-      </td>
-      <td width={200}> 16 de nov. 2009
-      </td></tr>
+      <th>Revisión</th>
+      <th>Descripción</th>
+      <th>Lanzamiento</th>
+    </tr>
     <tr>
-      <td width={300}> v1.1
-      </td>
-      <td width={500}> Conector JST reemplazado por conector DC Jack
-      </td>
-      <td width={200}> 20 de sept. 2011
-      </td></tr></tbody></table>
+      <td width="300">v1.0b</td>
+      <td width="500">Versión pública inicial</td>
+      <td width="200">16 de nov. 2009</td>
+    </tr>
+    <tr>
+      <td width="300">v1.1</td>
+      <td width="500">Conector JST reemplazado por conector DC Jack</td>
+      <td width="200">20 de sept. 2011</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Visor de Esquemático en Línea
 

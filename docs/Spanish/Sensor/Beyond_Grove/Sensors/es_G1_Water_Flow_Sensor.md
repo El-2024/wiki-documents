@@ -18,62 +18,20 @@ El sensor de flujo de agua consta de un cuerpo de válvula de plástico, un roto
 ## Especificaciones
 
 ---
-<table>
-  <tbody><tr>
-      <td>Voltaje mínimo de operación
-      </td>
-      <td>DC 4.5V
-      </td></tr>
-    <tr>
-      <td>Corriente máxima de operación
-      </td>
-      <td>15mA(DC 5V)
-      </td></tr>
-    <tr>
-      <td width="400px">Rango de voltaje de operación
-      </td>
-      <td width="400px">5V～24V
-      </td></tr>
-    <tr>
-      <td>Rango de flujo
-      </td>
-      <td>1～60L/min
-      </td></tr>
-    <tr>
-      <td>Capacidad de carga
-      </td>
-      <td>≤10mA(DC 5V)
-      </td></tr>
-    <tr>
-      <td>Temperatura de operación
-      </td>
-      <td>≤80℃
-      </td></tr>
-    <tr>
-      <td>Temperatura del líquido
-      </td>
-      <td>≤120℃
-      </td></tr>
-    <tr>
-      <td>Humedad de operación
-      </td>
-      <td>35%～90%RH
-      </td></tr>
-    <tr>
-      <td>Presión de agua
-      </td>
-      <td>≤1.75MPa(Max 2MPa)
-      </td></tr>
-    <tr>
-      <td>Temperatura de almacenamiento
-      </td>
-      <td>-25℃～+80℃
-      </td></tr>
-    <tr>
-      <td>Humedad de almacenamiento
-      </td>
-      <td>25%～95%RH
-      </td></tr></tbody></table>
+
+| **Parámetro**                    | **Valor**               |
+|----------------------------------|--------------------------|
+| Voltaje mínimo de operación      | DC 4.5V                  |
+| Corriente máxima de operación    | 15 mA (DC 5V)            |
+| Rango de voltaje de operación    | 5 V ～ 24 V              |
+| Rango de flujo                   | 1 ～ 60 L/min            |
+| Capacidad de carga               | ≤10 mA (DC 5V)           |
+| Temperatura de operación         | ≤80 ℃                   |
+| Temperatura del líquido          | ≤120 ℃                  |
+| Humedad de operación             | 35% ～ 90% RH            |
+| Presión de agua                  | ≤1.75 MPa (Máx. 2 MPa)   |
+| Temperatura de almacenamiento    | -25 ℃ ～ +80 ℃          |
+| Humedad de almacenamiento        | 25% ～ 95% RH            |
 
 ## Dimensiones mecánicas
 
@@ -82,138 +40,95 @@ El sensor de flujo de agua consta de un cuerpo de válvula de plástico, un roto
 ### Componentes del sensor
 
 <table>
-  <tbody><tr>
-      <th>No.
-      </th>
-      <th>Nombre
-      </th>
-      <th>Cantidad
-      </th>
-      <th>Material
-      </th>
-      <th>Nota
-      </th></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={200}> 1
-      </td>
-      <td width={150}>  Cuerpo de válvula
-      </td>
-      <td width={150}>  1
-      </td>
-      <td width={150}>  PA66 + 33% fibra de vidrio
-      </td>
-      <td width={150}>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={200}> 2
-      </td>
-      <td width={150}>  Bola de acero inoxidable
-      </td>
-      <td width={150}>  1
-      </td>
-      <td width={150}>  Acero inoxidable SUS304
-      </td>
-      <td width={150}>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 3
-      </td>
-      <td>  Eje
-      </td>
-      <td>  1
-      </td>
-      <td>  Acero inoxidable SUS304
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 4
-      </td>
-      <td>  Impulsor
-      </td>
-      <td>  1
-      </td>
-      <td>  POM
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 5
-      </td>
-      <td>  Imán en anillo
-      </td>
-      <td>  1
-      </td>
-      <td>  Ferrita
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 6
-      </td>
-      <td>  Anillo intermedio
-      </td>
-      <td>  1
-      </td>
-      <td>  PA66 + 33% fibra de vidrio
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 7
-      </td>
-      <td>  Anillo de sellado (O-ring)
-      </td>
-      <td>  1
-      </td>
-      <td>  Goma
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 8
-      </td>
-      <td>  Anillo de sellado electrónico
-      </td>
-      <td>  1
-      </td>
-      <td>  Goma
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 9
-      </td>
-      <td>  Cubierta
-      </td>
-      <td>  1
-      </td>
-      <td>  PA66 + 33% fibra de vidrio
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 10
-      </td>
-      <td>  Tornillo
-      </td>
-      <td>  4
-      </td>
-      <td>  Acero inoxidable SUS304
-      </td>
-      <td>
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 11
-      </td>
-      <td>  Cable
-      </td>
-      <td>  1
-      </td>
-      <td>  1007 24AWG
-      </td>
-      <td>
-      </td></tr></tbody></table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Nombre</th>
+      <th>Cantidad</th>
+      <th>Material</th>
+      <th>Nota</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="font-size: 90%;">
+      <td width="200">1</td>
+      <td width="150">Cuerpo de válvula</td>
+      <td width="150">1</td>
+      <td width="150">PA66 + 33% fibra de vidrio</td>
+      <td width="150"></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td width="200">2</td>
+      <td width="150">Bola de acero inoxidable</td>
+      <td width="150">1</td>
+      <td width="150">Acero inoxidable SUS304</td>
+      <td width="150"></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td>3</td>
+      <td>Eje</td>
+      <td>1</td>
+      <td>Acero inoxidable SUS304</td>
+      <td></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td>4</td>
+      <td>Impulsor</td>
+      <td>1</td>
+      <td>POM</td>
+      <td></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td>5</td>
+      <td>Imán en anillo</td>
+      <td>1</td>
+      <td>Ferrita</td>
+      <td></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td>6</td>
+      <td>Anillo intermedio</td>
+      <td>1</td>
+      <td>PA66 + 33% fibra de vidrio</td>
+      <td></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td>7</td>
+      <td>Anillo de sellado (O-ring)</td>
+      <td>1</td>
+      <td>Goma</td>
+      <td></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td>8</td>
+      <td>Anillo de sellado electrónico</td>
+      <td>1</td>
+      <td>Goma</td>
+      <td></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td>9</td>
+      <td>Cubierta</td>
+      <td>1</td>
+      <td>PA66 + 33% fibra de vidrio</td>
+      <td></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td>10</td>
+      <td>Tornillo</td>
+      <td>4</td>
+      <td>Acero inoxidable SUS304</td>
+      <td></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td>11</td>
+      <td>Cable</td>
+      <td>1</td>
+      <td>1007 24AWG</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Ejemplo de uso
 
@@ -297,27 +212,26 @@ El diámetro exterior de las roscas es de 1.4 mm.
 ---
 Frecuencia de pulsos (Hz) en prueba horizontal = 1 × Q, donde Q es el caudal en L/min. (Precisión ±3%)
 
-<table >
-<tr>
-<td width="400px">Nivel alto del pulso
-</td>
-<td width="400px">Voltaje > 4.5 V (entrada DC 5 V)
-</td></tr>
-<tr>
-<td>Nivel bajo del pulso
-</td>
-<td>Voltaje < 0.5 V (entrada DC 5 V)
-</td></tr>
-<tr>
-<td>Precisión
-</td>
-<td>±3% (entre 1 y 10 L/min)
-</td></tr>
-<tr>
-<td>Ciclo de trabajo
-</td>
-<td>40%～60%
-</td></tr></table>
+<table>
+  <tbody>
+    <tr>
+      <td width="400">Nivel alto del pulso</td>
+      <td width="400">Voltaje &gt; 4.5 V (entrada DC 5 V)</td>
+    </tr>
+    <tr>
+      <td>Nivel bajo del pulso</td>
+      <td>Voltaje &lt; 0.5 V (entrada DC 5 V)</td>
+    </tr>
+    <tr>
+      <td>Precisión</td>
+      <td>±3% (entre 1 y 10 L/min)</td>
+    </tr>
+    <tr>
+      <td>Ciclo de trabajo</td>
+      <td>40%～60%</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Preguntas frecuentes
 

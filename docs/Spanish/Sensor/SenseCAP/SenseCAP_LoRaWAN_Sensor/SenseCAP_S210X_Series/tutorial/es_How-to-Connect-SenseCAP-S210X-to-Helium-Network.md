@@ -21,7 +21,7 @@ La consola Helium es una herramienta de gestión de dispositivos basada en la we
 ## Conectar a la Red Helium
 
 ### Crear una nueva cuenta
-Visita: <https://console.helium.com/> y regístrate.
+Visita el [sitio de Helium](https://console.helium.com/) y regístrate.
 
 ### Configurar el sensor
 1. Abre la aplicación **SenseCAP Mate**  
@@ -94,7 +94,7 @@ Establece la frecuencia adecuada según la del gateway.
 
 ### Crear cuenta en Datacake
 
-1. Regístrate en: <https://datacake.co/>
+1. Regístrate en [Datacake](https://datacake.co/)
 
 ![](https://files.seeedstudio.com/wiki/SenseCAPS210X/Helium_Network/0020.png)
 

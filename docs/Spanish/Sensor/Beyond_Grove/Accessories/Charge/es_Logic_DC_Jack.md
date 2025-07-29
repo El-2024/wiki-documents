@@ -88,15 +88,13 @@ Logic DC Jack es un dispositivo lógico, utilizado para lograr funciones lógica
 
 Este módulo incluye dos tipos de cables y usarás uno de ellos al conectar una o dos entradas al puerto de entrada.
 
-<dl><dd> Situación 1 – Una entrada
-</dd><dd> Si solo hay un módulo de entrada, el Logic DC Jack puede realizar funciones lógicas AND y NOT. A continuación, se muestra la figura de la función lógica:
-</dd></dl>
+**Situación 1 – Una entrada**  
+Si solo hay un módulo de entrada, el Logic DC Jack puede realizar funciones lógicas AND y NOT. A continuación, se muestra la figura de la función lógica:
 
 ![](https://files.seeedstudio.com/wiki/Logic_DC_Jack/img/Logic_DC_Jack_3.png)
 
-<dl><dd> Situación 2 – Dos entradas
-</dd><dd> Si hay dos módulos de entrada, este Logic DC Jack solo puede realizar la función lógica AND. A continuación, se muestra la figura de la función lógica:
-</dd></dl>
+**Situación 2 – Dos entradas**  
+Si hay dos módulos de entrada, este Logic DC Jack solo puede realizar la función lógica AND. A continuación, se muestra la figura de la función lógica:
 
 ![](https://files.seeedstudio.com/wiki/Logic_DC_Jack/img/Logic_DC_Jack_4.png)
 

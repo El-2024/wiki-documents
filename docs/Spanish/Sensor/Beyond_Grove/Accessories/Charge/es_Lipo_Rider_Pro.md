@@ -69,85 +69,42 @@ Especificaciones
 --------------
 
 <table border="1">
-<tr>
-<th>
-Items
-</th>
-<th>
-Mínimo
-</th>
-<th>
-Normal
-</th>
-<th>
-Máximo
-</th>
-</tr>
-<tr align="center">
-<td width="400">
-V<sub>in</sub> Solar
-</td>
-<td width="200">
-4.8V
-</td>
-<td width="200">
-5.0V
-</td>
-<td width="200">
-6.5V(10s)
-</td>
-</tr>
-<tr align="center">
-<td>
-I<sub>carga</sub> (R<sub>Iset</sub>=3.9kΩ)
-</td>
-<td>
-400mA
-</td>
-<td>
-500mA
-</td>
-<td>
-600mA
-</td>
-</tr>
-<tr align="center">
-<td>
-I<sub>load</sub>
-</td>
-<td>
-0mA
-</td>
-<td>
-</td>
-<td>
-1000mA
-</td>
-</tr>
-<tr align="center">
-<td>
-V<sub>batt</sub>(R<sub>x</sub>=0Ω)
-</td>
-<td colspan="3" rowspan="1">
-4.2V
-</td>
-</tr>
-<tr align="center">
-<td>
-V<sub>fuente USB</sub>
-</td>
-<td colspan="3" rowspan="1">
-5.0V
-</td>
-</tr>
-<tr align="center">
-<td>
-V<sub>salida USB</sub>
-</td>
-<td colspan="3" rowspan="1">
-5.0V
-</td>
-</tr>
+  <tr>
+    <th>Items</th>
+    <th>Mínimo</th>
+    <th>Normal</th>
+    <th>Máximo</th>
+  </tr>
+  <tr align="center">
+    <td width="400">V<sub>in</sub> Solar</td>
+    <td width="200">4.8V</td>
+    <td width="200">5.0V</td>
+    <td width="200">6.5V (10s)</td>
+  </tr>
+  <tr align="center">
+    <td>I<sub>carga</sub> (R<sub>Iset</sub>=3.9kΩ)</td>
+    <td>400mA</td>
+    <td>500mA</td>
+    <td>600mA</td>
+  </tr>
+  <tr align="center">
+    <td>I<sub>load</sub></td>
+    <td>0mA</td>
+    <td></td>
+    <td>1000mA</td>
+  </tr>
+  <tr align="center">
+    <td>V<sub>batt</sub>(R<sub>x</sub>=0Ω)</td>
+    <td colspan="3">4.2V</td>
+  </tr>
+  <tr align="center">
+    <td>V<sub>fuente USB</sub></td>
+    <td colspan="3">5.0V</td>
+  </tr>
+  <tr align="center">
+    <td>V<sub>salida USB</sub></td>
+    <td colspan="3">5.0V</td>
+  </tr>
 </table>
 
 Definición de Pines y Estados de LEDs
@@ -156,44 +113,46 @@ Definición de Pines y Estados de LEDs
 **Instrucciones de Pines y Estados de LEDs**
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nivel del pin CH (LED Rojo)</th>
-<th>Nivel del pin OK (LED Verde)</th>
-<th>Estado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nivel bajo (ENCENDIDO)</td>
-<td>Nivel alto (APAGADO)</td>
-<td>Cargando</td>
-</tr>
-<tr class="even">
-<td>Nivel alto (APAGADO)</td>
-<td>Nivel bajo (último ENCENDIDO)</td>
-<td>Carga completa</td>
-</tr>
-<tr class="odd">
-<td>Señal de pulso (parpadeo))</td>
-<td>Señal de pulso (ENCENDIDO)</td>
-<td>La batería no está conectada</td>
-</tr>
-<tr class="even">
-<td>Nivel alto (APAGADO)</td>
-<td>Nivel alto (APAGADO)</td>
-<td>Dos situaciones posibles:
-<ul>
-<li>Voltaje de entrada menor al de umbral</li>
-<li>Voltaje de entrada menor al de la batería</li>
-</ul></td>
-</tr>
-</tbody>
+  <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Nivel del pin CH (LED Rojo)</th>
+      <th>Nivel del pin OK (LED Verde)</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>Nivel bajo (ENCENDIDO)</td>
+      <td>Nivel alto (APAGADO)</td>
+      <td>Cargando</td>
+    </tr>
+    <tr class="even">
+      <td>Nivel alto (APAGADO)</td>
+      <td>Nivel bajo (último ENCENDIDO)</td>
+      <td>Carga completa</td>
+    </tr>
+    <tr class="odd">
+      <td>Señal de pulso (parpadeo)</td>
+      <td>Señal de pulso (ENCENDIDO)</td>
+      <td>La batería no está conectada</td>
+    </tr>
+    <tr class="even">
+      <td>Nivel alto (APAGADO)</td>
+      <td>Nivel alto (APAGADO)</td>
+      <td>
+        Dos situaciones posibles:
+        <ul>
+          <li>Voltaje de entrada menor al de umbral</li>
+          <li>Voltaje de entrada menor al de la batería</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 ## Indicador LED de Batería

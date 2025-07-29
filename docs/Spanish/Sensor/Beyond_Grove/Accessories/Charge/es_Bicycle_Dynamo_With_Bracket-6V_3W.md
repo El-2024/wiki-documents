@@ -55,106 +55,83 @@ Este producto proporciona energía limpia y ecológica. Produce electricidad sin
 **Prueba de potencia de salida bajo voltaje constante**
 
 <table>
-  <tbody><tr>
-      <th>Velocidad(km/h)
-      </th>
-      <th>Potencia de salida(W)
-      </th>
-      <th>Voltaje de salida(V)
-      </th>
-      <th>Corriente de salida(A)
-      </th></tr>
+  <tbody>
     <tr>
-      <td width="200px">5
-      </td>
-      <td width="200px">0.56
-      </td>
-      <td width="200px">6.00
-      </td>
-      <td width="200px">0.126
-      </td></tr>
+      <th>Velocidad (km/h)</th>
+      <th>Potencia de salida (W)</th>
+      <th>Voltaje de salida (V)</th>
+      <th>Corriente de salida (A)</th>
+    </tr>
     <tr>
-      <td>15
-      </td>
-      <td>1.89
-      </td>
-      <td>6.00
-      </td>
-      <td>0.369
-      </td></tr>
+      <td width="200px">5</td>
+      <td width="200px">0.56</td>
+      <td width="200px">6.00</td>
+      <td width="200px">0.126</td>
+    </tr>
     <tr>
-      <td>30
-      </td>
-      <td>4.09
-      </td>
-      <td>6.00
-      </td>
-      <td>0.560
-      </td></tr></tbody></table>
+      <td>15</td>
+      <td>1.89</td>
+      <td>6.00</td>
+      <td>0.369</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>4.09</td>
+      <td>6.00</td>
+      <td>0.560</td>
+    </tr>
+  </tbody>
+</table>
 
 **Prueba con carga de resistencia constante (18 ohms)**
 
 <table>
-  <tbody><tr>
-      <th>Velocidad (km/h)
-      </th>
-      <th>Potencia de salida (W)
-      </th>
-      <th>Voltaje de salida (V)
-      </th>
-      <th>Corriente de salida (A)
-      </th></tr>
+  <tbody>
     <tr>
-      <td width="200px">5
-      </td>
-      <td width="200px">0.45
-      </td>
-      <td width="200px">2.45
-      </td>
-      <td width="200px">0.115
-      </td></tr>
+      <th>Velocidad (km/h)</th>
+      <th>Potencia de salida (W)</th>
+      <th>Voltaje de salida (V)</th>
+      <th>Corriente de salida (A)</th>
+    </tr>
     <tr>
-      <td>15
-      </td>
-      <td>1.89
-      </td>
-      <td>5.78
-      </td>
-      <td>0.325
-      </td></tr>
+      <td width="200px">5</td>
+      <td width="200px">0.45</td>
+      <td width="200px">2.45</td>
+      <td width="200px">0.115</td>
+    </tr>
     <tr>
-      <td>30
-      </td>
-      <td>3.21
-      </td>
-      <td>7.23
-      </td>
-      <td>0.435
-      </td></tr></tbody></table>
-
+      <td>15</td>
+      <td>1.89</td>
+      <td>5.78</td>
+      <td>0.325</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>3.21</td>
+      <td>7.23</td>
+      <td>0.435</td>
+    </tr>
+  </tbody>
+</table>
 
 **Prueba de temperatura：**
 
 <table>
-  <tbody><tr>
-      <th>Temp. ambiente
-      </th>
-      <th>Temp. carcasa
-      </th>
-      <th>Aumento de temperatura
-      </th>
-      <th>Observaciones
-      </th></tr>
+  <tbody>
     <tr>
-      <td width="200px">20℃
-      </td>
-      <td width="200px">55.2℃
-      </td>
-      <td width="200px">32.2℃
-      </td>
-      <td width="200px">Prueba a 30 cm de distancia
-      </td></tr></tbody></table>
-
+      <th>Temp. ambiente</th>
+      <th>Temp. carcasa</th>
+      <th>Aumento de temperatura</th>
+      <th>Observaciones</th>
+    </tr>
+    <tr>
+      <td width="200px">20℃</td>
+      <td width="200px">55.2℃</td>
+      <td width="200px">32.2℃</td>
+      <td width="200px">Prueba a 30 cm de distancia</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Uso
 

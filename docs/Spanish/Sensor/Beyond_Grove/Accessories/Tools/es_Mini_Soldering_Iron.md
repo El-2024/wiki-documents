@@ -41,91 +41,95 @@ Mini Soldering Iron es un soldador delgado, liviano, con control preciso de temp
 ## Especificaciones
 ---
 <table>
-<tr>
-<td> Pantalla </td>
-<td> OLED
-</td></tr>
-<tr>
-<td> Interfaz USB </td>
-<td> USB micro tipo B
-</td></tr>
-<tr>
-<td> Peso </td>
-<td> 33g (adaptador de corriente no incluido)
-</td></tr>
-<tr>
-<td> Potencia </td>
-<td> 65W
-</td></tr>
-<tr>
-<td> Voltaje de entrada (para adaptador) </td>
-<td> 100 ~ 240 V
-</td></tr>
-<tr>
-<td> Rango de temperatura </td>
-<td> 100 ~ 400 ℃ (212 ~ 752 ℉)
-</td></tr>
-<tr>
-<td> Impedancia de las puntas a tierra </td>
-<td> 2 Ω
-</td></tr>
-<tr>
-<td> Estabilidad de temperatura </td>
-<td> ± 2%
-</td></tr>
-<tr>
-<td> Temperatura modo reposo </td>
-<td> 200℃ (392℉), ajustable
-</td></tr></table>
+  <tbody>
+    <tr>
+      <td>Pantalla</td>
+      <td>OLED</td>
+    </tr>
+    <tr>
+      <td>Interfaz USB</td>
+      <td>USB micro tipo B</td>
+    </tr>
+    <tr>
+      <td>Peso</td>
+      <td>33g (adaptador de corriente no incluido)</td>
+    </tr>
+    <tr>
+      <td>Potencia</td>
+      <td>65W</td>
+    </tr>
+    <tr>
+      <td>Voltaje de entrada (para adaptador)</td>
+      <td>100 ~ 240 V</td>
+    </tr>
+    <tr>
+      <td>Rango de temperatura</td>
+      <td>100 ~ 400 ℃ (212 ~ 752 ℉)</td>
+    </tr>
+    <tr>
+      <td>Impedancia de las puntas a tierra</td>
+      <td>2 Ω</td>
+    </tr>
+    <tr>
+      <td>Estabilidad de temperatura</td>
+      <td>± 2%</td>
+    </tr>
+    <tr>
+      <td>Temperatura modo reposo</td>
+      <td>200℃ (392℉), ajustable</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Lista de piezas
 ---
 
 <table>
-<tr>
-<th>Nombre de la pieza</th>
-<th>Cantidad</th>
-</tr>
-<tr>
-<td> Mini Soldering Iron (parte principal) </td>
-<td> 1PC
-</td></tr>
-<tr>
-<td> Kit de soldadura PCB </td>
-<td> 1PC
-</td></tr>
-<tr>
-<td> Punta de soldador tipo BC2 </td>
-<td> 1PC
-</td></tr>
-<tr>
-<td> Punta de soldador tipo B2 </td>
-<td> 1PC
-</td></tr>
-<tr>
-<td> Soporte para soldador </td>
-<td> 1PC
-</td></tr>
-<tr>
-<td> Kit de soldadura PCB </td>
-<td> 1PC
-</td></tr>
-<tr>
-<td> Adaptador de corriente DC5525 </td>
-<td> 1PC
-</td></tr>
-<tr>
-<td> Pinzas de tierra </td>
-<td> 1PC
-</td></tr>
-<tr>
-<td> Llave hexagonal (y dos tornillos de repuesto) </td>
-<td> 1PC
-</td></tr>
-<tr>
-<td> Manual </td>
-<td> 1PC
-</td></tr></table>
+  <tr>
+    <th>Nombre de la pieza</th>
+    <th>Cantidad</th>
+  </tr>
+  <tr>
+    <td>Mini Soldering Iron (parte principal)</td>
+    <td>1PC</td>
+  </tr>
+  <tr>
+    <td>Kit de soldadura PCB</td>
+    <td>1PC</td>
+  </tr>
+  <tr>
+    <td>Punta de soldador tipo BC2</td>
+    <td>1PC</td>
+  </tr>
+  <tr>
+    <td>Punta de soldador tipo B2</td>
+    <td>1PC</td>
+  </tr>
+  <tr>
+    <td>Soporte para soldador</td>
+    <td>1PC</td>
+  </tr>
+  <tr>
+    <td>Kit de soldadura PCB</td>
+    <td>1PC</td>
+  </tr>
+  <tr>
+    <td>Adaptador de corriente DC5525</td>
+    <td>1PC</td>
+  </tr>
+  <tr>
+    <td>Pinzas de tierra</td>
+    <td>1PC</td>
+  </tr>
+  <tr>
+    <td>Llave hexagonal (y dos tornillos de repuesto)</td>
+    <td>1PC</td>
+  </tr>
+  <tr>
+    <td>Manual</td>
+    <td>1PC</td>
+  </tr>
+</table>
 
 ## Primeros pasos
 ---
@@ -135,17 +139,38 @@ Esta sección te muestra las operaciones básicas con este soldador. Para más d
 ### Vista Explodida
 
 ![](https://files.seeedstudio.com/wiki/Mini_Soldering_Iron/img/Mini_Soldering_Iron_exploded_view_s.jpg)
-<dl><dd> ①. Tornillo de fijación de la punta del soldador
-</dd><dd> ②. Botón A
-</dd><dd> ③. Botón B
-</dd><dd> ④. Tornillo de ajuste
-</dd><dd> ⑤. Puerto de alimentación
-</dd><dd> ⑥. Micro USB
-</dd><dd> ⑦. Puerto DC5525 12-24V
-</dd><dd> ⑧. Puerto de conexión de la punta del soldador
-</dd><dd> ⑨. Lado de conexión del soldador
-</dd><dd> ⑩. Elemento calefactor del soldador
-</dd></dl>
+
+<dl>
+  <dt>①</dt>
+  <dd>Tornillo de fijación de la punta del soldador</dd>
+
+  <dt>②</dt>
+  <dd>Botón A</dd>
+
+  <dt>③</dt>
+  <dd>Botón B</dd>
+
+  <dt>④</dt>
+  <dd>Tornillo de ajuste</dd>
+
+  <dt>⑤</dt>
+  <dd>Puerto de alimentación</dd>
+
+  <dt>⑥</dt>
+  <dd>Micro USB</dd>
+
+  <dt>⑦</dt>
+  <dd>Puerto DC5525 12-24V</dd>
+
+  <dt>⑧</dt>
+  <dd>Puerto de conexión de la punta del soldador</dd>
+
+  <dt>⑨</dt>
+  <dd>Lado de conexión del soldador</dd>
+
+  <dt>⑩</dt>
+  <dd>Elemento calefactor del soldador</dd>
+</dl>
 
 ### Montaje del soldador
 

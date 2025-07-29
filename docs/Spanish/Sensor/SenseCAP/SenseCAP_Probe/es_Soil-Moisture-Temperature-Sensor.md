@@ -155,11 +155,11 @@ Este sensor tiene clasificación IP68, es muy robusto y duradero, ideal para apl
 </td>
 </tr>
 <tr>
-<td class="tg-vkfu">Precisión</td>
-<td class="tg-vkfu">
-<p>±3% (0~53%)</p>
-<p>±5% (53~100%)</p>
-</td>
+  <td className="tg-vkfu">Precisión</td>
+  <td className="tg-vkfu">
+    {"±3% (0~53%)"}<br />
+    {"±5% (53~100%)"}
+  </td>
 </tr>
 <tr>
 <td class="tg-vkfu">Resolución</td>

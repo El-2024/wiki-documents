@@ -34,71 +34,61 @@ El módulo mini RDM de tarjeta RFID a 125KHz está diseñado para leer códigos 
 
 <table>
 <tr>
-<td width="300px"> Frecuencia
-</td>
-<td width="500px"> 125KHz
-</td></tr>
+<td width="300px">Frecuencia</td>
+<td width="500px">125KHz</td>
+</tr>
 <tr>
-<td> Velocidad en baudios
-</td>
-<td> 9600 (Nivel TTL, formato RS232)
-</td></tr>
+<td>Velocidad en baudios</td>
+<td>9600 (Nivel TTL, formato RS232)</td>
+</tr>
 <tr>
-<td> Interfaz
-</td>
-<td> Weigand26 o nivel TTL RS232
-</td></tr>
+<td>Interfaz</td>
+<td>Weigand26 o nivel TTL RS232</td>
+</tr>
 <tr>
-<td> Alimentación
-</td>
-<td> DC 5V（±5%）
-</td></tr>
+<td>Alimentación</td>
+<td>DC 5V (±5%)</td>
+</tr>
 <tr>
-<td> Corriente
-</td>
-<td> &lt;50Ma
-</td></tr>
+<td>Corriente</td>
+<td>&lt;50 mA</td>
+</tr>
 <tr>
-<td> Rango de operación
-</td>
-<td> &gt;50 mm (dependiendo de la tarjeta/etiqueta)
-</td></tr>
+<td>Rango de operación</td>
+<td>&gt;50 mm (dependiendo de la tarjeta/etiqueta)</td>
+</tr>
 <tr>
-<td> Expansión de I/O
-</td>
-<td> No disponible
-</td></tr>
+<td>Expansión de I/O</td>
+<td>No disponible</td>
+</tr>
 <tr>
-<td> Indicador luminoso
-</td>
-<td> No disponible
-</td></tr>
+<td>Indicador luminoso</td>
+<td>No disponible</td>
+</tr>
 <tr>
-<td> Temperatura de trabajo
-</td>
-<td> -10℃~ +70℃
-</td></tr>
+<td>Temperatura de trabajo</td>
+<td>-10℃ ~ +70℃</td>
+</tr>
 <tr>
-<td> Temperatura de almacén
-</td>
-<td> -20℃~ +80℃
-</td></tr>
+<td>Temperatura de almacén</td>
+<td>-20℃ ~ +80℃</td>
+</tr>
 <tr>
-<td> Humedad máxima
-</td>
-<td> Humedad relativa 0 ~ 95%
-</td></tr>
+<td>Humedad máxima</td>
+<td>Humedad relativa 0 ~ 95%</td>
+</tr>
 <tr>
-<td> Dimensiones
-</td>
-<td> 38.5mm × 19mm × 9mm
-</td></tr></table>
+<td>Dimensiones</td>
+<td>38.5 mm × 19 mm × 9 mm</td>
+</tr>
+</table>
 
 ##   Definición de Pines
 
 Consulta la imagen de dimensiones mecánicas y revisa la definición de pines a continuación:
 
-<pre> Definición de Pines:
+```
+Definición de Pines:
  P1:
    PIN1    TX
    PIN2    RX
@@ -112,7 +102,7 @@ Consulta la imagen de dimensiones mecánicas y revisa la definición de pines a 
    PIN1    LED
    PIN2    +5V(DC)
    PIN3    GND
-</pre>
+```
 
 ##   Dimensiones Mecánicas
 
@@ -126,15 +116,13 @@ Consulta la imagen de dimensiones mecánicas y revisa la definición de pines a 
 2.  **CHECKSUM**: Se calcula como una operación XOR sobre los 10 caracteres ASCII de datos.
 
 <table>
-<tr>
-<td width="100px"> 02
-</td>
-<td width="300px"> 10 caracteres ASCII del número de tarjeta 
-</td>
-<td width="100px"> Chechsum
-</td>
-<td width="100px"> 03
-</td></tr></table>
+  <tr>
+    <td width="100px">02</td>
+    <td width="300px">10 caracteres ASCII del número de tarjeta</td>
+    <td width="100px">Checksum</td>
+    <td width="100px">03</td>
+  </tr>
+</table>
 
 **Ejemplo:** Número de tarjeta: `62E3086CED`
 

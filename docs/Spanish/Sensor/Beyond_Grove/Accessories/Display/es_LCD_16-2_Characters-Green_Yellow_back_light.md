@@ -85,374 +85,61 @@ last_update:
 
 V<sub>ss</sub>=0V,V<sub>DD</sub>=5V,T<sub>OP</sub>=25℃
 
+| Parámetro                    | Símbolo | MIN  | TYP | MAX  | Unidad |
+| ----------------------------|---------|------|-----|------|--------|
+| Tiempo de ciclo de E         | tc      | 1500 | -   | -    | ns     |
+| Ancho en nivel alto de E     | twh     | 700  | -   | -    | ns     |
+| Ancho en nivel bajo de E     | twl     | 700  | -   | -    | ns     |
+| Tiempo de subida de E        | tr      | -    | -   | 18   | ns     |
+| Tiempo de bajada de E        | tf      | -    | -   | 18   | ns     |
+| Tiempo de preparación de direcciones | tas | 5 | - | -    | ns     |
+| Tiempo de configuración direcciones | tasu | 210 | - | -  | ns     |
+| Tiempo de retención de direcciones | tah  | 15  | -   | -    | ns     |
+| Tiempo de preparación de dato| tdsw    | 300  | -   | -    | ns     |
+| Tiempo de retardo de datos   | td      | -    | -   | 480  | ns     |
+| Tiempo retención dato (escritura) | tdhw | 15  | -   | -    | ns     |
+| Tiempo retención dato (lectura) | tdhr | 30   | -   | -    | ns     |
+
 <table>
 <tr>
-<th>Parámetro
-</th>
-<th>Símbolo
-</th>
-<th>MIN
-</th>
-<th>TYP
-</th>
-<th>MAX
-</th>
-<th>Unidad
-</th></tr>
+<td><div align="center"><img width="1000" src="https://files.seeedstudio.com/wiki/LCD_16-2_Characters-Green_Yellow_back_light/img/LCD-module-WTiming.jpg" /></div></td>
+<td><div align="center"><img width="1000" src="https://files.seeedstudio.com/wiki/LCD_16-2_Characters-Green_Yellow_back_light/img/LCD-module-RTiming.jpg" /></div></td>
+</tr>
 <tr>
-<td width="200px">Tiempo de ciclo de E
-</td>
-<td width="100px">tc
-</td>
-<td width="100px">1500
-</td>
-<td width="100px"> -
-</td>
-<td width="100px"> -
-</td>
-<td width="100px">ns
-</td></tr>
-<tr>
-<td>Ancho en nivel alto de E
-</td>
-<td>twh
-</td>
-<td>700
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
-<tr>
-<td>Ancho en nivel bajo de E
-</td>
-<td>twl
-</td>
-<td>700
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
-<tr>
-<td>Tiempo de subida de E
-</td>
-<td>tr
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>18
-</td>
-<td>ns
-</td></tr>
-<tr>
-<td>Tiempo de bajada de E
-</td>
-<td>tf
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>18
-</td>
-<td>ns
-</td></tr>
-<tr>
-<td>Tiempo de preparación de direcciones
-</td>
-<td>tas
-</td>
-<td>5
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
-<tr>
-<td>Tiempo de configuración direcciones
-</td>
-<td>tasu
-</td>
-<td>210
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
-<tr>
-<td>Tiempo de retención de direcciones
-</td>
-<td>tah
-</td>
-<td>15
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
-<tr>
-<td>Tiempo de preparación de dato
-</td>
-<td>tdsw
-</td>
-<td>300
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
-<tr>
-<td>Tiempo de retardo de datos
-</td>
-<td>td
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td> 480
-</td>
-<td>ns
-</td></tr>
-<tr>
-<td>Tiempo retención dato (escritura)
-</td>
-<td>tdhw
-</td>
-<td>15
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr>
-<tr>
-<td>Tiempo retención dato (lectura)
-</td>
-<td>tdhr
-</td>
-<td>30
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>ns
-</td></tr></table>
-<table >
-<tr>
-<td><div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/LCD_16-2_Characters-Green_Yellow_back_light/img/LCD-module-WTiming.jpg" /></div>
-</td>
-<td><div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/LCD_16-2_Characters-Green_Yellow_back_light/img/LCD-module-RTiming.jpg" /></div>
-</td></tr>
-<tr>
-<td><strong>HDiagrama de Temporización de Escritura desde el Host</strong>
-</td>
-<td><strong>Diagrama de Temporización de Lectura desde el Host</strong>
-</td></tr></table>
+<td><strong>Diagrama de Temporización de Escritura desde el Host</strong></td>
+<td><strong>Diagrama de Temporización de Lectura desde el Host</strong></td>
+</tr>
+</table>
 
 ## Definición de Pines y Descripción
 
 ---
-<table>
-<tr>
-<th>Nº de Pin
-</th>
-<th>Nombre del Pin
-</th>
-<th>I/O
-</th>
-<th>Descripción
-</th></tr>
-<tr>
-<td width="100px">1
-</td>
-<td width="100px">VSS
-</td>
-<td width="100px">Alimentación
-</td>
-<td width="500px">Tierra o GND (0V)
-</td></tr>
-<tr>
-<td>2
-</td>
-<td>VDD
-</td>
-<td>Alimentación
-</td>
-<td>Voltaje positivo de alimentación
-</td></tr>
-<tr>
-<td>3
-</td>
-<td>V0
-</td>
-<td>Alimentación
-</td>
-<td>Referencia de contraste del LCD
-</td></tr>
-<tr>
-<td>4
-</td>
-<td>RS
-</td>
-<td>Entrada
-</td>
-<td>
-
-* RS=HIGH:DB0-DB7=Datos de la RAM de pantalla
-
-* RS=LOW:DB0-DB7=Datos de instrucción
-
-<div>
-  5
-  R/W
-  Entrada
-</div>
-
-En modo de lectura
-
-R/W=HIGH
-
-Los datos se leen del módulo LCD,  
-los datos aparecen en DB0-DB7 y pueden ser leídos por el host  
-mientras E = H y el dispositivo está siendo seleccionado.
-
-En modo de escritura
-
-R/W=LOW;
-
-Se escriben datos en el módulo LCD,  
-los datos que aparecen en DB0-DB7 serán escritos  
-en el módulo LCD en el flanco de E=H→L y el dispositivo esté siendo seleccionado.
-
-</td></tr>
-<tr>
-<td>6
-</td>
-<td>E
-</td>
-<td>Entrada
-</td></tr>
-<tr>
-<td>7
-</td>
-<td>DB0
-</td>
-<td>I/O
-</td>
-<td rowspan="3">Bus de datos;
-
-Terminal de E/S en tres estados para datos de pantalla o datos de instrucción
-
-</td></tr>
-<tr>
-<td>..
-</td>
-<td>..
-</td>
-<td>..
-</td></tr>
-<tr>
-<td>14
-</td>
-<td>DB7
-</td>
-<td>I/O
-</td></tr>
-<tr>
-<td>15
-</td>
-<td>CS1
-</td>
-<td>Entrada
-</td>
-<td>Selección de chip,
-
-Cuando CS1 = 1 (*1)
-
-Habilita el acceso al lado izquierdo (64 columnas) del módulo LCD
-
-</td></tr>
-<tr>
-<td>16
-</td>
-<td>CS2
-</td>
-<td>Entrada
-</td>
-<td>Selección de chip,
-
-Cuando CS2 = 1 (*1)
-
-Habilita el acceso al lado derecho (64 columnas) del módulo LCD
-
-</td></tr>
-<tr>
-<td>17
-</td>
-<td> /RST
-</td>
-<td>Entrada
-</td>
-<td>Señal de reinicio
-
-/RST = L,
-
-Pantalla apagada
-
-El registro de línea de inicio de pantalla se pone en 0
-
-No se aceptan comandos o datos de instrucción
-
-/RST = H
-
-Funcionamiento normal
-
-</td></tr>
-<tr>
-<td>18
-</td>
-<td>VOUT
-</td>
-<td>Salida
-</td>
-<td>Salida del amplificador de potencia para V0
-</td></tr>
-<tr>
-<td>19
-</td>
-<td>BLA
-</td>
-<td>Alimentación
-</td>
-<td>Alimentación positiva para la retroiluminación LED
-</td></tr>
-<tr>
-<td>20
-</td>
-<td>BLK
-</td>
-<td>Alimentación
-</td>
-<td>Alimentación negativa para la retroiluminación LED
-</td></tr></table>
+| Nº de Pin | Nombre del Pin | I/O        | Descripción                                                                                                                                            |
+|-----------|----------------|------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1         | VSS            | Alimentación | Tierra o GND (0V)                                                                                                                                      |
+| 2         | VDD            | Alimentación | Voltaje positivo de alimentación                                                                                                                      |
+| 3         | V0             | Alimentación | Referencia de contraste del LCD                                                                                                                       |
+| 4         | RS             | Entrada    | - RS=HIGH: DB0-DB7 = Datos de la RAM de pantalla  
+- RS=LOW: DB0-DB7 = Datos de instrucción  
+**Nota:** Ver pin 5 para modo lectura/escritura.                                                               |
+| 5         | R/W            | Entrada    | **Modo lectura (R/W=HIGH):**  
+Los datos se leen del módulo LCD, aparecen en DB0-DB7 y pueden ser leídos por el host mientras E = H y el dispositivo está seleccionado.  
+**Modo escritura (R/W=LOW):**  
+Se escriben datos en el módulo LCD; los datos en DB0-DB7 serán escritos en el flanco E=H→L si el dispositivo está seleccionado.                            |
+| 6         | E              | Entrada    | Señal de habilitación                                                                                                                                |
+| 7         | DB0            | I/O        | Bus de datos; Terminal de E/S en tres estados para datos de pantalla o instrucción                                                                    |
+| ...       | ...            | ...        | ...                                                                                                                                                    |
+| 14        | DB7            | I/O        | Bus de datos; Terminal de E/S en tres estados para datos de pantalla o instrucción                                                                    |
+| 15        | CS1            | Entrada    | Selección de chip;  
+Cuando CS1 = 1 (*1), habilita acceso al lado izquierdo (64 columnas) del módulo LCD                                                                    |
+| 16        | CS2            | Entrada    | Selección de chip;  
+Cuando CS2 = 1 (*1), habilita acceso al lado derecho (64 columnas) del módulo LCD                                                                       |
+| 17        | /RST           | Entrada    | Señal de reinicio:  
+- /RST = L: Pantalla apagada, registro línea de inicio en 0, no se aceptan comandos o datos  
+- /RST = H: Funcionamiento normal                                                                                                                      |
+| 18        | VOUT           | Salida     | Salida del amplificador de potencia para V0                                                                                                          |
+| 19        | BLA            | Alimentación | Alimentación positiva para la retroiluminación LED                                                                                                   |
+| 20        | BLK            | Alimentación | Alimentación negativa para la retroiluminación LED                                                                                                   |
 
 **Nota:**
 
@@ -522,46 +209,11 @@ Por lo tanto, ejecuta otras instrucciones después de asegurarte de que DB4 = 0 
 
 Las condiciones de la fuente de alimentación al inicio son las siguientes:
 
-<table >
-<tr>
-<th>Item
-</th>
-<th>Símbolo
-</th>
-<th>Min
-</th>
-<th>Tip
-</th>
-<th>Max
-</th>
-<th>Unidad
-</th></tr>
-<tr>
-<td width="200px">Tiempo de reinicio
-</td>
-<td width="100px">trs
-</td>
-<td width="100px">2.0
-</td>
-<td width="100px"> -
-</td>
-<td width="100px"> -
-</td>
-<td width="100px"> us
-</td></tr>
-<tr>
-<td>Tiempo de subida
-</td>
-<td>tr
-</td>
-<td> -
-</td>
-<td> -
-</td>
-<td>150
-</td>
-<td>ns
-</td></tr></table>
+| Item           | Símbolo | Min | Tip | Max | Unidad |
+| -------------- | ------- | --- | --- | --- | ------ |
+| Tiempo de reinicio | trs     | 2.0 | -   | -   | us     |
+| Tiempo de subida   | tr      | -   | -   | 150 | ns     |
+
 
 ![](https://files.seeedstudio.com/wiki/LCD_16-2_Characters-Green_Yellow_back_light/img/VFD-lcd-module-trtx.jpg)
 

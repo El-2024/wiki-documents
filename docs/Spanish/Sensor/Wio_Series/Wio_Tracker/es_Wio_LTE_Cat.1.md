@@ -100,7 +100,7 @@ Además, la lógica de la **Tecla Reset** cambió:
 |                  | SMS                   | Mensajes punto a punto, difusión SMS, modo texto y PDU                         |
 |                  | Audio                 | Cancelación de eco, eliminación de ruido                                      |
 | GNSS             | Sistema               | GPS/BeiDou/GLONASS/Galileo/QZSS                                               |
-|                  | Precisión             | <2.5 m CEP                                                                    |
+|                  | Precisión             | 2.5 m CEP                                                                    |
 | Periféricos      | Grove                 | 2 x puerto digital                                                             |
 |                  |                       | 2 x puerto analógico                                                           |
 |                  |                       | 1 x UART                                                                       |
@@ -308,12 +308,12 @@ Y **EC21-A** es la versión que usamos en Wio Tracker - LTE, que soporta SIMs AT
         <td className="tg-yw4l">China Telecom</td>
       </tr>
       <tr>
-        <td className="tg-yw4l" colSpan={2}>Certification</td>
-        <td className="tg-yw4l">RCM</td>
-        <td className="tg-yw4l">RCM/ Anatel/ NCC</td>
-        <td className="tg-yw4l">KC/ SKT/KT*/ LGU+*</td>
-        <td className="tg-yw4l">JATE/ TELEC/ DOCOMO*</td>
-        <td className="tg-yw4l">CCC/ SRRC/ NAL</td>
+          <td className="tg-yw4l" colSpan={2}>Certification</td>
+          <td className="tg-yw4l">RCM</td>
+          <td className="tg-yw4l">RCM/ Anatel/ NCC</td>
+          <td className="tg-yw4l">KC/ SKT/KT\*/ LGU+\*</td>
+          <td className="tg-yw4l">JATE/ TELEC/ DOCOMO\*</td>
+          <td className="tg-yw4l">CCC/ SRRC/ NAL</td>
       </tr>
     </tbody></table>
 </div>

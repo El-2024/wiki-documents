@@ -505,7 +505,7 @@ void loop()
     <source src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/mqtts.mp4" type="video/mp4" />
   </video></div>
 
-Este ejemplo demuestra cómo establecer una conexión MQTTs usando Wio Terminal. Aquí se usa un servidor MQTTs gratuito: <https://test.mosquitto.org/> y envía datos del acelerómetro a un topic.
+Este ejemplo demuestra cómo establecer una conexión MQTTs usando Wio Terminal. Aquí se usa un servidor [MQTTs gratuito](https://test.mosquitto.org/) y envía datos del acelerómetro a un topic.
 
 - Descarga e instala la [**librería Arduino MQTT**](https://github.com/knolleary/pubsubclient).
 

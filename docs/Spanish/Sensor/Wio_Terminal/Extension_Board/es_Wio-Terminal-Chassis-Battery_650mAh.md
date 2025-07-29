@@ -16,10 +16,16 @@ El **Wio Terminal Battery Chassis** es una placa de expansión imprescindible pa
 
 La nueva versión del Wio Terminal Battery Chassis incluye el medidor de batería [BQ27441-G1A](http://www.ti.com/product/BQ27441-G1) de Texas Instruments — un medidor de combustible auto-calibrado basado en I2C para baterías LiPo, que permite medir el voltaje de la batería para estimar el porcentaje de carga y la capacidad restante.
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-Chassis-Battery-650mAh-p-4756.html"><strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
-    </a>
+<div className="get_one_now_container" style={{ textAlign: 'center' }}>
+  <a className="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-Chassis-Battery-650mAh-p-4756.html">
+    <strong>
+      <span>
+        <font color="#FFFFFF" size="4">Consigue uno ahora 🖱️</font>
+      </span>
+    </strong>
+  </a>
 </div>
+
 
 ## Feature
 
@@ -42,8 +48,8 @@ La nueva versión del Wio Terminal Battery Chassis incluye el medidor de baterí
 | **Power Supply**           | 4.75V - 5.25V                                                                                                                             |
 | **Built-in battery**       | 650mAh                                                                                                                                    |
 | **Charging current**       | Max: 660mA                                                                                                                                |
-| **Battery board mode**     | Verde encendido: carga activa.<br>Rojo encendido: OTG (descarga batería) activo.<br>Amarillo encendido: interfaz macho salida/entrada 5V. |
-| **GPIO output**            | Max voltaje: 5.15V<br>Max corriente: 380mA                                                                                                |
+| **Battery board mode** | Verde encendido: carga activa.<br />Rojo encendido: OTG (descarga batería) activo.<br />Amarillo encendido: interfaz macho salida/entrada 5V. |
+| **GPIO output**            | Max voltaje: 5.15V<br />Max corriente: 380mA                                                                                                |
 | **Trickle charge current** | 30mA                                                                                                                                      |
 | **Grove Interface**        | Grove Analógico/Digital \*4, Grove I2C \*1, Grove UART \*1                                                                                |
 

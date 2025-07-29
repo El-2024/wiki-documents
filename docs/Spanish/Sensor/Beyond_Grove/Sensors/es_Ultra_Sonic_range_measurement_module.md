@@ -29,46 +29,39 @@ El sensor ultrasónico de Seeed es un **módulo de medición de distancia sin co
 ## Especificaciones
 
 <table>
-<tr>
-<td width="400px"> Voltaje de alimentación
-</td>
-<td width="200px"> 5V
-</td></tr>
-<tr>
-<td> Consumo de corriente
-</td>
-<td> 15 mA
-</td></tr>
-<tr>
-<td>Frecuencia ultrasónica
-</td>
-<td> 40k Hz
-</td></tr>
-<tr>
-<td> Rango máximo
-</td>
-<td> 400 cm
-</td></tr>
-<tr>
-<td> Rango mínimo
-</td>
-<td> 3 cm
-</td></tr>
-<tr>
-<td> Resolución
-</td>
-<td> 1 cm
-</td></tr>
-<tr>
-<td> Ancho del pulso de disparo
-</td>
-<td> 10 μs
-</td></tr>
-<tr>
-<td> Dimensiones
-</td>
-<td> 43x20x15 mm
-</td></tr></table>
+  <tr>
+    <td width="400">Voltaje de alimentación</td>
+    <td width="200">5V</td>
+  </tr>
+  <tr>
+    <td>Consumo de corriente</td>
+    <td>15 mA</td>
+  </tr>
+  <tr>
+    <td>Frecuencia ultrasónica</td>
+    <td>40k Hz</td>
+  </tr>
+  <tr>
+    <td>Rango máximo</td>
+    <td>400 cm</td>
+  </tr>
+  <tr>
+    <td>Rango mínimo</td>
+    <td>3 cm</td>
+  </tr>
+  <tr>
+    <td>Resolución</td>
+    <td>1 cm</td>
+  </tr>
+  <tr>
+    <td>Ancho del pulso de disparo</td>
+    <td>10 μs</td>
+  </tr>
+  <tr>
+    <td>Dimensiones</td>
+    <td>43x20x15 mm</td>
+  </tr>
+</table>
 
 ## Primeros pasos
 

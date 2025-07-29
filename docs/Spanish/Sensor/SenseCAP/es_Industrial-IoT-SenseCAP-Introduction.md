@@ -136,8 +136,14 @@ Para mayor comodidad en tus aplicaciones, ofrecemos sondas RS485 para detección
 |<img src="https://files.seeedstudio.com/wiki/Optical_Rain_Gauge_RG-9/0000_front-05.png" width={300} />|<img src="https://files.seeedstudio.com/wiki/Industrial-Grade_Optical_Rain_Gauge_RG-15/114992321-07.png" width={300} />|<img src="https://files.seeedstudio.com/wiki/Water_Leak_Detector/pic.PNG" width={270} />|
 |[Comprar](https://www.seeedstudio.com/Rain-Gauge-RG-9-p-4744.html)|[Comprar](https://www.seeedstudio.com/Rain-Gauge-RG-15-p-4648.html)|[Comprar](https://www.seeedstudio.com/Water-Leak-Detector-p-4620.html)|
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Sensor_Probes_Product_Catalogue/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Más Información</font></span></strong></a>
+<div className="get_one_now_container" style={{ textAlign: 'center' }}>
+  <a className="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Sensor_Probes_Product_Catalogue/">
+    <strong>
+      <span style={{ color: '#FFFFFF', fontSize: '1.25rem' }}>
+        📚 Más Información
+      </span>
+    </strong>
+  </a>
 </div>
 
 ### Sensor Builder
@@ -148,11 +154,17 @@ Para mayor comodidad en tus aplicaciones, ofrecemos sondas RS485 para detección
 
 SenseCAP S2110 Sensor Builder es una solución innovadora que permite la fusión de módulos de grado industrial y módulos para makers. Es una herramienta de código abierto que tiene la capacidad de construir módulos funcionales RS485 con más de 500 módulos Grove.
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Builder_build_LoRaWAN_Sensors/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Más Información</font></span></strong>
-    </a>
+<div className="get_one_now_container" style={{ textAlign: 'center' }}>
+  <a className="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html">
+    <strong>
+      <span style={{ color: '#FFFFFF', fontSize: '1.25rem' }}>🖱️ Comprar Ahora</span>
+    </strong>
+  </a>
+  <a className="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Builder_build_LoRaWAN_Sensors/">
+    <strong>
+      <span style={{ color: '#FFFFFF', fontSize: '1.25rem' }}>📚 Más Información</span>
+    </strong>
+  </a>
 </div>
 
 ### Registrador de Datos (Data Logger)
@@ -172,10 +184,16 @@ SenseCAP ofrece dos tipos de Registradores de Datos:
 
 El decodificador SenseCAP se usa para decodificar los mensajes LoRaWAN enviados desde los dispositivos SenseCAP LoRaWAN®. Después de la decodificación, las aplicaciones de los usuarios obtendrán mensajes más amigables y legibles.
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Decoder/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Más Información</font></span></strong>
-    </a>
+<div className="get_one_now_container" style={{ textAlign: 'center' }}>
+  <a className="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Decoder/">
+    <strong>
+      <span style={{ color: '#FFFFFF', fontSize: '1.25rem' }}>
+        📚 Más Información
+      </span>
+    </strong>
+  </a>
 </div>
+
 
 ## Servicios de Software
 
@@ -229,10 +247,16 @@ Cuando se prototipa un proyecto comercial de adquisición de datos, toma mucho t
 
 Hoy, podemos usar un colector inalámbrico LoRa, configurar sensores para conectarse a una app vía Bluetooth y construir un producto en cinco minutos, directo para un proyecto comercial.
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/develop_an_industrial_lorawan_sensor/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Más Información</font></span></strong>
-    </a>
+<div className="get_one_now_container" style={{ textAlign: 'center' }}>
+  <a className="get_one_now_item" href="https://wiki.seeedstudio.com/develop_an_industrial_lorawan_sensor/">
+    <strong>
+      <span style={{ color: '#FFFFFF', fontSize: '1.25rem' }}>
+        📚 Más Información
+      </span>
+    </strong>
+  </a>
 </div>
+
 
 ### Tango con Home Assistant y Sensores SenseCAP
 
@@ -240,11 +264,15 @@ Hoy, podemos usar un colector inalámbrico LoRa, configurar sensores para conect
 
 En esta serie de artículos, compartiré cómo construí un hogar inteligente decente en Home Assistant y usé sensores de los productos SenseCAP de Seeed Studio. Y este es el primer hito.
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_with_sensecap_lorawan_sensors/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Más Información</font></span></strong>
-    </a>
+<div className="get_one_now_container" style={{ textAlign: 'center' }}>
+  <a className="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_with_sensecap_lorawan_sensors/">
+    <strong>
+      <span style={{ color: '#FFFFFF', fontSize: '1.25rem' }}>
+        📚 Más Información
+      </span>
+    </strong>
+  </a>
 </div>
-
 
 ## ✨ Proyecto para Contribuidores
 

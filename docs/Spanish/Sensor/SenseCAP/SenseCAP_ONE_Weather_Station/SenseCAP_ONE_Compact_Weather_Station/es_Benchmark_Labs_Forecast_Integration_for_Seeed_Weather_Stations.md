@@ -16,7 +16,7 @@ Esta guía explica cómo adquirir y activar los pronósticos hiperlocales y espe
 
 ## Paso 1: Visita la página de Benchmark Labs
 
-Comienza visitando la [página de Benchmark Labs](https://www.benchmarklabs.com/seeed-landing/) en nuestro sitio web: <https://www.benchmarklabs.com/seeed-landing/>
+Comienza visitando la [página de Benchmark Labs](https://www.benchmarklabs.com/seeed-landing/) en nuestro [sitio web](https://www.benchmarklabs.com/seeed-landing/)
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image59.png"/></div>
 

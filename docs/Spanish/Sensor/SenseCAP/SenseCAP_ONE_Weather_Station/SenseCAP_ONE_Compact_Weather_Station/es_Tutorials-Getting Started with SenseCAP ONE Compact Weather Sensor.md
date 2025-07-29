@@ -106,9 +106,7 @@ Si el controlador no se instala automáticamente, puedes [descargarlo](https://w
 
 ## Herramienta de Configuración SenseCAP ONE
 
-Esta herramienta ofrece una interfaz gráfica para configurar el dispositivo. Puedes descargarla desde el siguiente enlace de GitHub:
-
-<https://github.com/Seeed-Solution/SenseCAP-One-Configuration-Tool/releases>
+Esta herramienta ofrece una interfaz gráfica para configurar el dispositivo. Puedes descargarla desde el siguiente enlace de [GitHub](https://github.com/Seeed-Solution/SenseCAP-One-Configuration-Tool/releases)
 
 Selecciona el software según tu sistema operativo: Windows, macOS o Linux.
 
@@ -200,8 +198,7 @@ Cada registro tiene 16 bits (2 bytes).
 
 ### Lectura Modbus-RTU
 
-Ejemplo utilizando la herramienta **Modbus Poll**  
-(Descarga: <https://www.modbustools.com/download.html>)
+Ejemplo utilizando la herramienta **Modbus Poll** [Descarga](https://www.modbustools.com/download.html)
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image35.png"/></div>
 
@@ -336,8 +333,7 @@ Ejemplo: `0XA;BD=96<CR><LF>` → establece velocidad a 9600 bps.
 
 ### Lista de Comandos
 
-Consulta la guía completa:  
-<https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf>
+Consulta la [guía completa](https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf)
 
  
 
@@ -365,10 +361,7 @@ Formato de byte:
 
 ### Comandos y Respuestas SDI-12
 
-Consulta también:  
-<https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf>
-
- 
+Consulta [también](https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf)
 
 ### Lectura SDI-12
 
@@ -394,8 +387,7 @@ Conecta los siguientes cables a una fuente de alimentación de 12 V:
 - Cable rojo (Vin+, positivo)  
 - Cable marrón (Vin-, negativo)
 
-Descarga el asistente de depuración de puerto serie:  
-<https://github.com/Neutree/COMTool>
+Descarga el [asistente de depuración de puerto serie](https://github.com/Neutree/COMTool)
 
 Pasos:
 

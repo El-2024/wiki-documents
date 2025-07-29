@@ -279,7 +279,7 @@ Cuando el sensor está apagado, el dispositivo no sube el valor de medición del
 |16|RSSI de la dirección MAC 1|int8|bb|<p>bb es 0xBB = -69(DEC), tipo int8</p><p>RSSI = -69</p>|
 |17~22|Dirección MAC 2|-----|3ccd5798fd2e|<p>3ccd5798fd2e </p><p>La dirección MAC (HEX)= 3C:CD:57:98:FD:2E</p>|
 |23|RSSI de la dirección MAC 2|int8|bc|<p>bc es 0xBC = -68(DEC), tipo int8</p><p>RSSI = -68</p>|
-|24~29|Dirección MAC 3|-----|74cf002f3ad0|<p>74cf002f3ad0</p><p>La
+|24~29|Dirección MAC 3|-----|74cf002f3ad0|<p>74cf002f3ad0</p><p>La dirección MAC (HEX)= 74:CF:00:2F:3A:D0</p>|
 
 ### Paquete Solo Ubicación Bluetooth - 0x0B
 

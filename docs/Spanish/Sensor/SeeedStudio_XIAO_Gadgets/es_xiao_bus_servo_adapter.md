@@ -317,9 +317,10 @@ Con la librería instalada y conociendo las funciones básicas, vamos a ejecutar
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
 
-<div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Descarga Arduino IDE</font></span></strong>
-    </a>
+<div class="download_arduino_container" style="text-align: center;">
+  <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
+    <strong><span style="color: #FFFFFF; font-size: 1.25rem;">Descarga Arduino IDE</span></strong>
+  </a>
 </div>
 
 **Paso 2.** Selecciona el modelo de tu placa de desarrollo y añádelo al Arduino IDE.
@@ -482,14 +483,15 @@ Este ejemplo demuestra cómo controlar múltiples servos en bus Feetech serie SC
 Se recomienda leer estas FAQs antes de comenzar tu proyecto. Resuelven dudas comunes y posibles problemas.
 :::
 
-<details> <summary>¿Qué pasa si el voltaje de la fuente no coincide con el de mi servo?</summary>
+<details>
+  <summary>¿Qué pasa si el voltaje de la fuente no coincide con el de mi servo?</summary>
+  La placa y el servo podrían funcionar mal o dañarse. Siempre asegúrate de que el voltaje de entrada coincida con el requerido por tu servo.
+</details>
 
-La placa y el servo podrían funcionar mal o dañarse. Siempre asegúrate de que el voltaje de entrada coincida con el requerido por tu servo.
-</details> <details> <summary>¿Puedo conectar múltiples servos a la vez?</summary>
-
-Sí, se soportan múltiples servos, pero asegúrate que tu fuente de alimentación pueda manejar la corriente total requerida.
-
-</details> <br/>
+<details>
+  <summary>¿Puedo conectar múltiples servos a la vez?</summary>
+  Sí, se soportan múltiples servos, pero asegúrate que tu fuente de alimentación pueda manejar la corriente total requerida.
+</details>
 
 ## Recursos
 

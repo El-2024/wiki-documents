@@ -176,7 +176,7 @@ Con cualquiera de estos métodos, tendrás el firmware actualizado y listo para 
 
 2. **Acceder a la configuración**:
    - Conéctate a esa red desde tu teléfono o PC.
-   - Abre un navegador y entra a <http://192.168.4.1>.
+   - Abre un navegador y entra [aquí](http://192.168.4.1).
    - Ingresa el SSID y la contraseña de tu red Wi-Fi doméstica.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/ap_wireless_setting_page.png" style={{width:'auto', height:680, "border-radius": '15px'}}/></div>

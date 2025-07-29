@@ -24,422 +24,71 @@ last_update:
 
 ### Valores Máximos Absolutos
 
-<table>
-<tr>
-<th>Elemento
-</th>
-<th>Símbolo
-</th>
-<th>Min
-</th>
-<th>Max
-</th>
-<th>Unidad
-</th></tr>
-<tr>
-<td>Voltaje de alimentación (lógica)
-</td>
-<td>V<sub>DD</sub>-V<sub>SS</sub>
-</td>
-<td> -0.3
-</td>
-<td>7.0
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>Voltaje de alimentación (LCD)
-</td>
-<td>V<sub>DD</sub>-V<sub>O</sub>
-</td>
-<td> -0.3
-</td>
-<td>13.0
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>Voltaje de entrada
-</td>
-<td>V<sub>I</sub>
-</td>
-<td> -0.3
-</td>
-<td>VDD+0.3
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>Temperatura de operación
-</td>
-<td>T<sub>opr</sub>
-</td>
-<td>0
-</td>
-<td>50
-</td>
-<td>℃
-</td></tr>
-<tr>
-<td>Temperatura de almacenamiento
-</td>
-<td>T<sub>stg</sub>
-</td>
-<td> -10
-</td>
-<td>60
-</td>
-<td>℃
-</td></tr></table>
+### Tabla de límites eléctricos
+
+| Elemento                         | Símbolo                       | Min  | Max     | Unidad |
+| -------------------------------- | ----------------------------- | ---- | ------- | ------ |
+| Voltaje de alimentación (lógica) | V<sub>DD</sub>-V<sub>SS</sub> | -0.3 | 7.0     | V      |
+| Voltaje de alimentación (LCD)    | V<sub>DD</sub>-V<sub>O</sub>  | -0.3 | 13.0    | V      |
+| Voltaje de entrada               | V<sub>I</sub>                 | -0.3 | VDD+0.3 | V      |
+| Temperatura de operación         | T<sub>opr</sub>               | 0    | 50      | ℃      |
+| Temperatura de almacenamiento    | T<sub>stg</sub>               | -10  | 60      | ℃      |
 
 ### Datos Mecánicos
 
-<table>
-<tr>
-<th>Elemento
-</th>
-<th>Dimensiones Nominales
-</th>
-<th>Unidad
-</th></tr>
-<tr>
-<td>Tamaño del módulo (An×Al×P)
-</td>
-<td>58.0×32.0×9.5
-</td>
-<td>mm
-</td></tr>
-<tr>
-<td>Área de visualización (An×Al)
-</td>
-<td>36.0×15.0
-</td>
-<td>mm
-</td></tr>
-<tr>
-<td>Tamaño de caracteres (An×Al)
-</td>
-<td>2.45×5.0
-</td>
-<td>mm
-</td></tr>
-<tr>
-<td>Tamaño de puntos (An×Al)
-</td>
-<td>0.45×0.5
-</td>
-<td>mm
-</td></tr>
-<tr>
-<td>Peso
-</td>
-<td>
-</td>
-<td>g
-</td></tr></table>
+| Elemento                      | Dimensiones Nominales | Unidad |
+| ----------------------------- | --------------------- | ------ |
+| Tamaño del módulo (An×Al×P)   | 58.0×32.0×9.5         | mm     |
+| Área de visualización (An×Al) | 36.0×15.0             | mm     |
+| Tamaño de caracteres (An×Al)  | 2.45×5.0              | mm     |
+| Tamaño de puntos (An×Al)      | 0.45×0.5              | mm     |
+| Peso                          |                       | g      |
+
 
 ### Características Eléctricas
 
-(V<sub>DD</sub>=5V±0.25V)
+*(V<sub>DD</sub> = 5V ± 0.25V)*
 
-<table>
-<tr>
-<th>Elemento
-</th>
-<th>Símbolo
-</th>
-<th>Condición de prueba
-</th>
-<th>Min
-</th>
-<th>Típ
-</th>
-<th>Max
-</th>
-<th>Unidad
-</th></tr>
-<tr>
-<td>Voltaje alto de entrada
-</td>
-<td>V<sub>IH</sub>
-</td>
-<td> -
-</td>
-<td>2.2
-</td>
-<td> -
-</td>
-<td>V<sub>DD</sub>
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>Voltaje bajo de entrada
-</td>
-<td>V<sub>IL</sub>
-</td>
-<td> -
-</td>
-<td> -0.3
-</td>
-<td> -
-</td>
-<td> 0.6
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>Voltaje alto de salida
-</td>
-<td>V<sub>OH</sub>
-</td>
-<td>I<sub>OH</sub>=0.3mA
-</td>
-<td>2.4
-</td>
-<td> -
-</td>
-<td>V<sub>DD</sub>
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>Voltaje bajo de salida
-</td>
-<td>V<sub>OL</sub>
-</td>
-<td>I<sub>OL</sub>=1.2mA
-</td>
-<td>0
-</td>
-<td> -
-</td>
-<td>0.4
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>Corriente de suministro
-</td>
-<td>I<sub>DD</sub>
-</td>
-<td>V<sub>DD</sub>=5.0V
-</td>
-<td> -
-</td>
-<td>1.2
-</td>
-<td>3.0
-</td>
-<td>mA
-</td></tr>
-<tr>
-<td>Voltaje de manejo del LCD
-</td>
-<td>V<sub>DD</sub> - V<sub>O</sub>
-</td>
-<td>Ta=25℃
-</td>
-<td> -
-</td>
-<td>5.0
-</td>
-<td> -
-</td>
-<td>V
-</td></tr></table>
+| Elemento                  | Símbolo                        | Condición de prueba  | Min  | Típ | Max            | Unidad |
+| ------------------------- | ------------------------------ | -------------------- | ---- | --- | -------------- | ------ |
+| Voltaje alto de entrada   | V<sub>IH</sub>                 | -                    | 2.2  | -   | V<sub>DD</sub> | V      |
+| Voltaje bajo de entrada   | V<sub>IL</sub>                 | -                    | -0.3 | -   | 0.6            | V      |
+| Voltaje alto de salida    | V<sub>OH</sub>                 | I<sub>OH</sub>=0.3mA | 2.4  | -   | V<sub>DD</sub> | V      |
+| Voltaje bajo de salida    | V<sub>OL</sub>                 | I<sub>OL</sub>=1.2mA | 0    | -   | 0.4            | V      |
+| Corriente de suministro   | I<sub>DD</sub>                 | V<sub>DD</sub>=5.0V  | -    | 1.2 | 3.0            | mA     |
+| Voltaje de manejo del LCD | V<sub>DD</sub> - V<sub>O</sub> | Ta=25℃               | -    | 5.0 | -              | V      |
 
 ### Especificaciones de Retroiluminación LED (Ta=25℃)
 
-<table>
-<tr>
-<th>Elemento
-</th>
-<th>Símbolo
-</th>
-<th>Típ
-</th>
-<th>Max
-</th>
-<th>Unidad
-</th></tr>
-<tr>
-<td>Voltaje directo
-</td>
-<td>V<sub>f</sub>
-</td>
-<td>4.05
-</td>
-<td>4.25
-</td>
-<td>V
-</td></tr>
-<tr>
-<td>Corriente directa
-</td>
-<td>I<sub>f</sub>
-</td>
-<td>60
-</td>
-<td> -
-</td>
-<td>mA
-</td></tr>
-<tr>
-<td>Longitud de onda de emisión
-</td>
-<td>λ<sub>p</sub>
-</td>
-<td>568
-</td>
-<td> -
-</td>
-<td>nm
-</td></tr></table>
+### Parámetros eléctricos del LED
 
-## Definición de Pines y Niveles
+| Elemento                    | Símbolo       | Típ  | Max  | Unidad |
+| --------------------------- | ------------- | ---- | ---- | ------ |
+| Voltaje directo             | V<sub>f</sub> | 4.05 | 4.25 | V      |
+| Corriente directa           | I<sub>f</sub> | 60   | -    | mA     |
+| Longitud de onda de emisión | λ<sub>p</sub> | 568  | -    | nm     |
 
----
-<table>
-<tr>
-<th>Pin
-</th>
-<th>Símbolo
-</th>
-<th>Nivel
-</th>
-<th>Función
-</th></tr>
-<tr>
-<td>1
-</td>
-<td>V<sub>SS</sub>
-</td>
-<td> -
-</td>
-<td>GND(0V)
-</td></tr>
-<tr>
-<td>2
-</td>
-<td>V<sub>DD</sub>
-</td>
-<td> -
-</td>
-<td>Voltaje de alimentación lógica (+5V)
-</td></tr>
-<tr>
-<td>3
-</td>
-<td>V<sub>O</sub>
-</td>
-<td> -
-</td>
-<td>Voltaje de manejo del LCD
-</td></tr>
-<tr>
-<td>4
-</td>
-<td>RS
-</td>
-<td> H/L
-</td>
-<td>H: Dato
-L: Código de instrucción
-</td></tr>
-<tr>
-<td>5
-</td>
-<td>R/W
-</td>
-<td> H/L
-</td>
-<td>H: Lectura
-L: Escritura
-</td></tr>
-<tr>
-<td>6
-</td>
-<td>E
-</td>
-<td> H,H-&gt;L
-</td>
-<td>Señal de habilitación
-</td></tr>
-<tr>
-<td>7
-</td>
-<td>DB0
-</td>
-<td> H/L
-</td>
-<td rowspan="8">Línea de datos (bus de datos)
-</td></tr>
-<tr>
-<td>8
-</td>
-<td>DB1
-</td>
-<td> H/L
-</td></tr>
-<tr>
-<td>9
-</td>
-<td>DB2
-</td>
-<td> H/L
-</td></tr>
-<tr>
-<td>10
-</td>
-<td>DB3
-</td>
-<td>H/L
-</td></tr>
-<tr>
-<td>11
-</td>
-<td>DB4
-</td>
-<td> H/L
-</td></tr>
-<tr>
-<td>12
-</td>
-<td>DB5
-</td>
-<td> H/L
-</td></tr>
-<tr>
-<td>13
-</td>
-<td>DB6
-</td>
-<td> H/L
-</td></tr>
-<tr>
-<td>14
-</td>
-<td>DB7
-</td>
-<td> H/L
-</td></tr>
-<tr>
-<td>15
-</td>
-<td>LEDA
-</td>
-<td> -
-</td>
-<td rowspan="2">LED Backlight Power Supply
-</td></tr>
-<tr>
-<td>16
-</td>
-<td>LEDK
-</td>
-<td> -
-</td></tr></table>
+### Definición de Pines y Niveles
+
+| Pin | Símbolo        | Nivel  | Función                              |
+| --- | -------------- | ------ | ------------------------------------ |
+| 1   | V<sub>SS</sub> | -      | GND (0V)                             |
+| 2   | V<sub>DD</sub> | -      | Voltaje de alimentación lógica (+5V) |
+| 3   | V<sub>O</sub>  | -      | Voltaje de manejo del LCD            |
+| 4   | RS             | H/L    | H: Dato< /br>L: Código de instrucción  |
+| 5   | R/W            | H/L    | H: Lectura< /br>L: Escritura           |
+| 6   | E              | H, H→L | Señal de habilitación                |
+| 7   | DB0            | H/L    | Línea de datos (bus de datos)        |
+| 8   | DB1            | H/L    | (continúa línea de datos)            |
+| 9   | DB2            | H/L    |                                      |
+| 10  | DB3            | H/L    |                                      |
+| 11  | DB4            | H/L    |                                      |
+| 12  | DB5            | H/L    |                                      |
+| 13  | DB6            | H/L    |                                      |
+| 14  | DB7            | H/L    |                                      |
+| 15  | LEDA           | -      | LED Backlight Power Supply           |
+| 16  | LEDK           | -      | (continúa LED Backlight)             |
+
 
 ## Dimensiones Mecánicas
 

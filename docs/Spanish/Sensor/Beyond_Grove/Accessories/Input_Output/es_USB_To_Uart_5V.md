@@ -43,7 +43,7 @@ El **USB to UART 5V** es un adaptador USB a serie basado en el chip **CH340**. E
 
 * Voltaje de operación: **DC 5V**
 
-* Corriente de operación: **<10mA**
+* Corriente de operación: **&lt;10mA**
 
 * Sistemas operativos compatibles: **Windows**, **Linux**, **Mac**
 

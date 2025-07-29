@@ -149,7 +149,7 @@ Sensor de movimiento para anomalías, botón SOS y transmisión de datos de alta
 
 |Tecnología|Especificaciones|
 |--|--|
-|Constelación GNSS|T1000-A/B: GPS/GLONASS/Galileo/BeiDou/QZSS<br>T1000-C/D: GPS/BeiDou|
+|Constelación GNSS|T1000-A/B: GPS/GLONASS/Galileo/BeiDou/QZSS<br />T1000-C/D: GPS/BeiDou|
 |Sensibilidad GNSS|−145 dBm (inicio en frío), −160 dBm (seguimiento)|
 |Precisión|2.5 m (CEP 50%)|
 |Wi-Fi|Escaneo pasivo de 4 MACs|

@@ -14,7 +14,7 @@ last_update:
 
 Este repositorio describe cómo dibujar un histograma en el Wio Terminal. Similar a la biblioteca de gráficos de líneas, puedes usar esta herramienta para mostrar valores de sensores en tiempo real y visualizar lecturas en pantalla. Esta biblioteca es muy flexible y puede modificarse según tus necesidades.
 
-<div align="center"><img width=600 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200114131505.png" /></div>
+<div align="center"><img width="600" src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200114131505.png" /></div>
 
 ## Instalación de bibliotecas
 

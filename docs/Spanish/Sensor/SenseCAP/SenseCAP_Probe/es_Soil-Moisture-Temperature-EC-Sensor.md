@@ -142,18 +142,18 @@ Ideal para agricultura de precisión, irrigación inteligente, monitoreo ambient
 </td>
 </tr>
 <tr>
-<td class="tg-vkfu">Precisión</td>
-<td class="tg-vkfu">
-<p>±2% (0~50%)</p>
-<p>±3% (50~100%)</p>
-</td>
+  <td className="tg-vkfu">Precisión</td>
+  <td className="tg-vkfu">
+    {"±3% (0~50%)"}<br />
+    {"±5% (50~100%)"}
+  </td>
 </tr>
 <tr>
-<td class="tg-vkfu">Resolución</td>
-<td class="tg-vkfu">
-<p>0.03% (0~50%)</p>
-<p>1% (50~100%)</p>
-</td>
+  <td className="tg-vkfu">Precisión</td>
+  <td className="tg-vkfu">
+    {"±0.03% (0~50%)"}<br />
+    {"±1% (50~100%)"}
+  </td>
 </tr>
 </tbody>
 </table>

@@ -63,122 +63,100 @@ Utiliza este producto conforme a las recomendaciones para evitar posibles peligr
 ### Especificaciones clave
 
 <table>
-<tr>
-<td width="400px"> Pantalla
-</td>
-<td width="600px"> TFT LCD a color de 2.8", 65K colores, 320×240
-</td></tr>
-<tr>
-<td> Ancho de banda analógico
-</td>
-<td> 0 - 200KHz
-</td></tr>
-<tr>
-<td> Tasa de muestreo máxima
-</td>
-<td> 1 Msps a 12 bits
-</td></tr>
-<tr>
-<td> Memoria de muestreo
-</td>
-<td> 4096 puntos
-</td></tr>
-<tr>
-<td> Sensibilidad horizontal
-</td>
-<td> 1uS/Div~10S/Div
-</td></tr>
-<tr>
-<td> Posición horizontal
-</td>
-<td> Ajustable con indicador
-</td></tr>
-<tr>
-<td rowspan="2"> Sensibilidad vertical
-</td>
-<td> 10 mV/div – 10 V/div (con sonda ×1)
-</td></tr>
-<tr>
-<td> 0.5 V/div – 100 V/div (con sonda ×10)
-</td></tr>
-<tr>
-<td> Posición vertical
-</td>
-<td> Ajustable con indicador
-</td></tr>
-<tr>
-<td> Impedancia de entrada
-</td>
-<td> &gt;500KΩ
-</td></tr>
-<tr>
-<td> Voltaje de entrada máximo
-</td>
-<td> 40 Vpp (con sonda ×1)
-</td></tr>
-<tr>
-<td> Acoplamiento
-</td>
-<td> DCs
-</td></tr>
-<tr>
-<td rowspan="4"> Modos de disparo
-</td>
-<td> Auto, Normal, Simple, Ninguno, Escaneo y Ajuste automático (Fit)
-</td></tr>
-<tr>
-<td> Modos de disparo avanzados
-</td></tr>
-<tr>
-<td> Flanco de subida/bajada
-</td></tr>
-<tr>
-<td> Nivel ajustable, sensibilidad ajustable
-</td></tr>
-<tr>
-<td rowspan="4"> Funciones de medición
-</td>
-<td> Frecuencia, ciclo, duty cycle, voltaje pico, voltaje RMS, promedio y DC
-</td></tr>
-<tr>
-<td> Marcadores verticales: Precisión aumentada con marcadores
-</td></tr>
-<tr>
-<td> Marcadores horizontales: Precisión aumentada con marcadores
-</td></tr>
-<tr>
-<td> Hold/Run
-</td></tr>
-<tr>
-<td> Generador de señal
-</td>
-<td> Onda cuadrada de 10 Hz a 1 MHz
-</td></tr>
-<tr>
-<td> Almacenamiento de forma de onda
-</td>
-<td> Tarjeta Micro SD
-</td></tr>
-<tr>
-<td> Conexión a PC
-</td>
-<td> Vía USB como lector de tarjeta SD
-</td></tr>
-<tr>
-<td> Actualización de firmware
-</td>
-<td> USB
-</td></tr>
-<tr>
-<td> Actualización de firmware
-</td>
-<td> Batería de litio de 500 mAh 3.7 V / USB
-</td></tr>
-<tr>
-<td> Dimensiones (sin sonda)
-</td>
-<td> 91 mm × 62 mm × 13 mm
-</td></tr></table>
+  <tr>
+    <td width="400px"> Pantalla </td>
+    <td width="600px"> TFT LCD a color de 2.8", 65K colores, 320×240 </td>
+  </tr>
+  <tr>
+    <td> Ancho de banda analógico </td>
+    <td> 0 - 200KHz </td>
+  </tr>
+  <tr>
+    <td> Tasa de muestreo máxima </td>
+    <td> 1 Msps a 12 bits </td>
+  </tr>
+  <tr>
+    <td> Memoria de muestreo </td>
+    <td> 4096 puntos </td>
+  </tr>
+  <tr>
+    <td> Sensibilidad horizontal </td>
+    <td> 1uS/Div~10S/Div </td>
+  </tr>
+  <tr>
+    <td> Posición horizontal </td>
+    <td> Ajustable con indicador </td>
+  </tr>
+  <tr>
+    <td rowspan="2"> Sensibilidad vertical </td>
+    <td> 10 mV/div – 10 V/div (con sonda ×1) </td>
+  </tr>
+  <tr>
+    <td> 0.5 V/div – 100 V/div (con sonda ×10) </td>
+  </tr>
+  <tr>
+    <td> Posición vertical </td>
+    <td> Ajustable con indicador </td>
+  </tr>
+  <tr>
+    <td> Impedancia de entrada </td>
+    <td> &gt;500KΩ </td>
+  </tr>
+  <tr>
+    <td> Voltaje de entrada máximo </td>
+    <td> 40 Vpp (con sonda ×1) </td>
+  </tr>
+  <tr>
+    <td> Acoplamiento </td>
+    <td> DCs </td>
+  </tr>
+  <tr>
+    <td rowspan="4"> Modos de disparo </td>
+    <td> Auto, Normal, Simple, Ninguno, Escaneo y Ajuste automático (Fit) </td>
+  </tr>
+  <tr>
+    <td> Modos de disparo avanzados </td>
+  </tr>
+  <tr>
+    <td> Flanco de subida/bajada </td>
+  </tr>
+  <tr>
+    <td> Nivel ajustable, sensibilidad ajustable </td>
+  </tr>
+  <tr>
+    <td rowspan="4"> Funciones de medición </td>
+    <td> Frecuencia, ciclo, duty cycle, voltaje pico, voltaje RMS, promedio y DC </td>
+  </tr>
+  <tr>
+    <td> Marcadores verticales: Precisión aumentada con marcadores </td>
+  </tr>
+  <tr>
+    <td> Marcadores horizontales: Precisión aumentada con marcadores </td>
+  </tr>
+  <tr>
+    <td> Hold/Run </td>
+  </tr>
+  <tr>
+    <td> Generador de señal </td>
+    <td> Onda cuadrada de 10 Hz a 1 MHz </td>
+  </tr>
+  <tr>
+    <td> Almacenamiento de forma de onda </td>
+    <td> Tarjeta Micro SD </td>
+  </tr>
+  <tr>
+    <td> Conexión a PC </td>
+    <td> Vía USB como lector de tarjeta SD </td>
+  </tr>
+  <tr>
+    <td> Actualización de firmware </td>
+    <td> USB y batería de litio de 500 mAh 3.7 V </td>
+  </tr>
+  <tr>
+    <td> Dimensiones (sin sonda) </td>
+    <td> 91 mm × 62 mm × 13 mm </td>
+  </tr>
+</table>
 
 ### Structure
 
@@ -228,7 +206,7 @@ El Nano tiene seis modos de disparo, accesibles en la esquina superior izquierda
 **NONE:** Muestra la forma de onda sin sincronización, ignorando el disparo.  
 **FIT:** Ajusta automáticamente la escala vertical y horizontal para mostrar la forma de onda.
 
-table>
+<table>
 <caption> Tabla comparativa de los modos de disparo </caption>
 <tr>
 <th>Modo</th>

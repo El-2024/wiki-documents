@@ -64,9 +64,10 @@ Por lo tanto, si conectas el SenseCAP Indicator a la computadora, se presentará
 
 Usaremos Arduino.
 
-<div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Descargar Arduino IDE</font></span></strong>
-    </a>
+<div className="download_arduino_container" style={{ textAlign: "center" }}>
+  <a className="download_arduino_item" href="https://www.arduino.cc/en/software">
+    <strong>Descargar Arduino IDE</strong>
+  </a>
 </div>
 
 :::note

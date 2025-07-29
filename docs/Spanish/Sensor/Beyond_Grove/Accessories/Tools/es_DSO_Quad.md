@@ -110,95 +110,30 @@ Consulta también información sobre desarrollo de aplicaciones para el DSO Quad
 ## Especificaciones
 
 ---
+
 <table>
-<tr>
-<td> Canal analógico *2                </td>
-<td> [CH_A] [CH_B]
-</td></tr>
-<tr>
-<td> Canal digital *2                 </td>
-<td> [CH_C] [CH_D]
-</td></tr>
-<tr>
-<td> Escala vertical                  </td>
-<td> 20mV-10V/div (pasos 1-2-5) con sonda x1 / 200mV -100V/div (pasos 1-2-5) con sonda x10
-</td></tr>
-<tr>
-<td> Resolución vertical              </td>
-<td> 8 bits
-</td></tr>
-<tr>
-<td> Acoplamiento de entrada         </td>
-<td> AC/DC
-</td></tr>
-<tr>
-<td> Voltaje máximo de entrada       </td>
-<td> 80Vpp (sonda x1) / 400Vpp (sonda x10)
-</td></tr>
-<tr>
-<td> Memoria de almacenamiento       </td>
-<td> 4K por canal / 8K en canal único
-</td></tr>
-<tr>
-<td> Tipo de disparo por software    </td>
-<td> borde, pulso, nivel (por agregar)
-</td></tr>
-<tr>
-<td> Tipo de disparo por hardware    </td>
-<td> borde
-</td></tr>
-<tr>
-<td> Fuente de disparo               </td>
-<td> CH1/CH2/EXT
-</td></tr>
-<tr>
-<td> Modo de disparo                 </td>
-<td> Auto, Normal, Single, SCAN, None
-</td></tr>
-<tr>
-<td> Generador de señal de prueba    </td>
-<td> Onda cuadrada 10Hz a 8MHz 2.8Vpp, ciclo de trabajo ajustable 10~90% / Onda seno, cuadrada, diente de sierra, triangular 10Hz a 20kHz 2.8Vpp
-</td></tr>
-<tr>
-<td> Almacenamiento                 </td>
-<td> disco USB interno de 2MB, archivos BMP, DAT
-</td></tr>
-<tr>
-<td> Medición automática             </td>
-<td> Vmax, Vmin, Vpp, Vavr, Vrms, Freq, Period, Pulse, Duty
-</td></tr>
-<tr>
-<td> Medición por cursor              </td>
-<td> Nivel, Voltaje
-</td></tr>
-<tr>
-<td> Modo de visualización           </td>
-<td> CH1, CH2, EXT, CH1+CH2, CH1-CH2
-</td></tr>
-<tr>
-<td> Modo de muestreo                </td>
-<td> tiempo real
-</td></tr>
-<tr>
-<td> Tasa de muestreo                </td>
-<td> 30S/s - 72MS/s
-</td></tr>
-<tr>
-<td> Fuente de energía               </td>
-<td> Batería LiPo
-</td></tr>
-<tr>
-<td> Dimensiones                    </td>
-<td> 98 x 60 x 14.5 mm
-</td></tr>
-<tr>
-<td> Peso                           </td>
-<td> 80 g (sin batería)
-</td></tr>
-<tr>
-<td> Accesorios incluidos           </td>
-<td> 2 sondas osciloscopio MCX, 2 sondas digitales MCX
-</td></tr>
+<tr><td>Canal analógico *2</td><td>[CH_A] [CH_B]</td></tr>
+<tr><td>Canal digital *2</td><td>[CH_C] [CH_D]</td></tr>
+<tr><td>Escala vertical</td><td>20mV-10V/div (pasos 1-2-5) con sonda x1 / 200mV -100V/div (pasos 1-2-5) con sonda x10</td></tr>
+<tr><td>Resolución vertical</td><td>8 bits</td></tr>
+<tr><td>Acoplamiento de entrada</td><td>AC/DC</td></tr>
+<tr><td>Voltaje máximo de entrada</td><td>80Vpp (sonda x1) / 400Vpp (sonda x10)</td></tr>
+<tr><td>Memoria de almacenamiento</td><td>4K por canal / 8K en canal único</td></tr>
+<tr><td>Tipo de disparo por software</td><td>borde, pulso, nivel (por agregar)</td></tr>
+<tr><td>Tipo de disparo por hardware</td><td>borde</td></tr>
+<tr><td>Fuente de disparo</td><td>CH1/CH2/EXT</td></tr>
+<tr><td>Modo de disparo</td><td>Auto, Normal, Single, SCAN, None</td></tr>
+<tr><td>Generador de señal de prueba</td><td>Onda cuadrada 10Hz a 8MHz 2.8Vpp, ciclo de trabajo ajustable 10~90% / Onda seno, cuadrada, diente de sierra, triangular 10Hz a 20kHz 2.8Vpp</td></tr>
+<tr><td>Almacenamiento</td><td>disco USB interno de 2MB, archivos BMP, DAT</td></tr>
+<tr><td>Medición automática</td><td>Vmax, Vmin, Vpp, Vavr, Vrms, Freq, Period, Pulse, Duty</td></tr>
+<tr><td>Medición por cursor</td><td>Nivel, Voltaje</td></tr>
+<tr><td>Modo de visualización</td><td>CH1, CH2, EXT, CH1+CH2, CH1-CH2</td></tr>
+<tr><td>Modo de muestreo</td><td>tiempo real</td></tr>
+<tr><td>Tasa de muestreo</td><td>30S/s - 72MS/s</td></tr>
+<tr><td>Fuente de energía</td><td>Batería LiPo</td></tr>
+<tr><td>Dimensiones</td><td>98 x 60 x 14.5 mm</td></tr>
+<tr><td>Peso</td><td>80 g (sin batería)</td></tr>
+<tr><td>Accesorios incluidos</td><td>2 sondas osciloscopio MCX, 2 sondas digitales MCX</td></tr>
 </table>
 
 ## Componentes
@@ -207,38 +142,14 @@ Consulta también información sobre desarrollo de aplicaciones para el DSO Quad
 Por favor agregar enlaces a las hojas de datos de los componentes principales, como:
 
 <table>
-<tr>
-<td> CPU                 </td>
-<td> 72 MHz - ARM 32-bit Cortex™-M3 CPU - STM32F103VC [[2]](http://www.st.com/internet/mcu/product/164492.jsp)
-</td></tr>
-<tr>
-<td> FPGA                </td>
-<td> ICE65F_VQ100 [[3]](http://www.siliconbluetech.com/media/downloads/iCE65L04DiCEDatasheet.pdf)
-</td></tr>
-<tr>
-<td> TFT                 </td>
-<td> (vacío)
-</td></tr>
-<tr>
-<td> ADC                 </td>
-<td> AD9288-40 [[4]](http://www.analog.com/static/imported-files/data_sheets/AD9288.pdf)
-</td></tr>
-<tr>
-<td> Amplificadores operacionales </td>
-<td> OPA2354 [[5]](http://www.datasheetcatalog.org/datasheet/texasinstruments/opa354.pdf)
-</td></tr>
-<tr>
-<td> MOSFET - Interruptores     </td>
-<td> (vacío)
-</td></tr>
-<tr>
-<td> Almacenamiento USB         </td>
-<td> (vacío)
-</td></tr>
-<tr>
-<td> (agregar más aquí)         </td>
-<td> (vacío)
-</td></tr>
+<tr><td>CPU</td><td>72 MHz - ARM 32-bit Cortex™-M3 CPU - STM32F103VC <a href="http://www.st.com/internet/mcu/product/164492.jsp" target="_blank" rel="noopener noreferrer">[2]</a></td></tr>
+<tr><td>FPGA</td><td>ICE65F_VQ100 <a href="http://www.siliconbluetech.com/media/downloads/iCE65L04DiCEDatasheet.pdf" target="_blank" rel="noopener noreferrer">[3]</a></td></tr>
+<tr><td>TFT</td><td>(vacío)</td></tr>
+<tr><td>ADC</td><td>AD9288-40 <a href="http://www.analog.com/static/imported-files/data_sheets/AD9288.pdf" target="_blank" rel="noopener noreferrer">[4]</a></td></tr>
+<tr><td>Amplificadores operacionales</td><td>OPA2354 <a href="http://www.datasheetcatalog.org/datasheet/texasinstruments/opa354.pdf" target="_blank" rel="noopener noreferrer">[5]</a></td></tr>
+<tr><td>MOSFET - Interruptores</td><td>(vacío)</td></tr>
+<tr><td>Almacenamiento USB</td><td>(vacío)</td></tr>
+<tr><td>(agregar más aquí)</td><td>(vacío)</td></tr>
 </table>
 
 ## Precaución
@@ -275,35 +186,36 @@ Más detalles e instrucciones para Linux aquí: [DSO_Quad:Upgrading_Firmware](/D
 
 <table>
 <tr>
-<th> Tipo de archivo </th>
-<th> Formato del nombre </th>
-<th> Descripción
-</th></tr>
+  <th>Tipo de archivo</th>
+  <th>Formato del nombre</th>
+  <th>Descripción</th>
+</tr>
 <tr>
-<td> Archivo FPGA </td>
-<td> xxxxFPGA.BIN </td>
-<td> Datos de configuración para el FPGA
-</td></tr>
+  <td>Archivo FPGA</td>
+  <td>xxxxFPGA.BIN</td>
+  <td>Datos de configuración para el FPGA</td>
+</tr>
 <tr>
-<td> Archivo de logo </td>
-<td> logo_xxx.BIN </td>
-<td> Cree un archivo .BMP de 16 colores y tamaño 64x256 (tamaño de archivo = 46.9KB), y cambie la extensión a .INF. Esta es la imagen que se muestra en la pantalla de inicio.
-</td></tr>
+  <td>Archivo de logo</td>
+  <td>logo_xxx.BIN</td>
+  <td>Cree un archivo .BMP de 16 colores y tamaño 64x256 (tamaño de archivo = 46.9KB), y cambie la extensión a .INF. Esta es la imagen que se muestra en la pantalla de inicio.</td>
+</tr>
 <tr>
-<td> Archivo del sistema </td>
-<td> SYS_xxxx.hex </td>
-<td> ??? (se necesita descripción)
-</td></tr>
+  <td>Archivo del sistema</td>
+  <td>SYS_xxxx.hex</td>
+  <td>??? (se necesita descripción)</td>
+</tr>
 <tr>
-<td> Archivo de aplicación </td>
-<td> APP_xxxx.hex </td>
-<td> ??? (se necesita descripción)
-</td></tr>
+  <td>Archivo de aplicación</td>
+  <td>APP_xxxx.hex</td>
+  <td>??? (se necesita descripción)</td>
+</tr>
 <tr>
-<td> Archivo de dirección </td>
-<td> xxxx.ADR </td>
-<td> Estos archivos indican al dispositivo dónde colocar el siguiente archivo .BIN que cargue. Hay uno para el archivo FPGA y otro para el archivo de logo. Los archivos están nombrados para saber cuál corresponde a cuál.
-</td></tr></table>
+  <td>Archivo de dirección</td>
+  <td>xxxx.ADR</td>
+  <td>Estos archivos indican al dispositivo dónde colocar el siguiente archivo .BIN que cargue. Hay uno para el archivo FPGA y otro para el archivo de logo. Los archivos están nombrados para saber cuál corresponde a cuál.</td>
+</tr>
+</table>
 
 **Nota:** a medida que salgan versiones nuevas, estos nombres de archivo podrían variar ligeramente. Las x representan valores que podrían cambiar con el tiempo.
 
@@ -312,87 +224,61 @@ Más detalles e instrucciones para Linux aquí: [DSO_Quad:Upgrading_Firmware](/D
 ![](https://files.seeedstudio.com/wiki/DSO_Quad/img/DSOQuad-bug-2.jpg)
 
 <table cellpadding="1" cellspacing="1">
-<tr>
-<td> Inicio
-</td>
-<td> Fin
-</td>
-<td> Tamaño
-</td>
-<td> Nota
-</td></tr>
-<tr>
-<td> 0x00000
-</td>
-<td> 0x03fff
-</td>
-<td> 16384
-</td>
-<td> DFU
-</td></tr>
-<tr>
-<td> 0x04000
-</td>
-<td> 0x0bfff
-</td>
-<td> 32768
-</td>
-<td> SYS
-</td></tr>
-<tr>
-<td> 0x0c000
-</td>
-<td> 0x13fff
-</td>
-<td> 32768
-</td>
-<td> APP1 (por defecto)
-</td></tr>
-<tr>
-<td> 0x14000
-</td>
-<td> 0x1bfff
-</td>
-<td> 32768
-</td>
-<td> APP2
-</td></tr>
-<tr>
-<td> 0x1c000
-</td>
-<td> 0x23fff
-</td>
-<td> 32768
-</td>
-<td> APP3
-</td></tr>
-<tr>
-<td> 0x24000
-</td>
-<td> 0x2bfff
-</td>
-<td> 32768
-</td>
-<td> APP4
-</td></tr>
-<tr>
-<td> 0x2c000
-</td>
-<td> 0x3d7ff
-</td>
-<td> 71680
-</td>
-<td> FPGA bitstream (El datasheet indica que el tamaño máximo es 533 Kbit, por lo que este tamaño es un poco grande)
-</td></tr>
-<tr>
-<td> 0x3d800
-</td>
-<td> 0x3ffff
-</td>
-<td> 10240
-</td>
-<td> Logo (bmp, 256x64, 4 bits)
-</td></tr></table>
+  <tr>
+    <td>Inicio</td>
+    <td>Fin</td>
+    <td>Tamaño</td>
+    <td>Nota</td>
+  </tr>
+  <tr>
+    <td>0x00000</td>
+    <td>0x03fff</td>
+    <td>16384</td>
+    <td>DFU</td>
+  </tr>
+  <tr>
+    <td>0x04000</td>
+    <td>0x0bfff</td>
+    <td>32768</td>
+    <td>SYS</td>
+  </tr>
+  <tr>
+    <td>0x0c000</td>
+    <td>0x13fff</td>
+    <td>32768</td>
+    <td>APP1 (por defecto)</td>
+  </tr>
+  <tr>
+    <td>0x14000</td>
+    <td>0x1bfff</td>
+    <td>32768</td>
+    <td>APP2</td>
+  </tr>
+  <tr>
+    <td>0x1c000</td>
+    <td>0x23fff</td>
+    <td>32768</td>
+    <td>APP3</td>
+  </tr>
+  <tr>
+    <td>0x24000</td>
+    <td>0x2bfff</td>
+    <td>32768</td>
+    <td>APP4</td>
+  </tr>
+  <tr>
+    <td>0x2c000</td>
+    <td>0x3d7ff</td>
+    <td>71680</td>
+    <td>FPGA bitstream (El datasheet indica que el tamaño máximo es 533 Kbit, por lo que este tamaño es un poco grande)</td>
+  </tr>
+  <tr>
+    <td>0x3d800</td>
+    <td>0x3ffff</td>
+    <td>10240</td>
+    <td>Logo (bmp, 256x64, 4 bits)</td>
+  </tr>
+</table>
 
 **Nota:** La dirección base del flash es 0x08000000, pero está reflejada por el chip en 0x00000000 cuando BOOT0 está en bajo.
 

@@ -186,12 +186,15 @@ El Hardware de Código Abierto (OSHW) se refiere a hardware cuyo diseño está d
 
 <br />
 
-<div class="table-center">
-	<table class="table-nobg">
-    <tr class="table-trnobg">
-      <th class="table-trnobg"><font size={"4"}>Chasis con Batería para Wio Terminal (650mAh)</font></th>
-      <th class="table-trnobg"><font size={"4"}>Chasis LoRaWan para Wio Terminal con antena incorporada LoRa-E5 y GNSS, EU868/US915
-</font></th>
+<div className="table-center">
+  <table className="table-nobg">
+    <tr className="table-trnobg">
+      <th className="table-trnobg">
+        <font size="4">Chasis con Batería para Wio Terminal (650mAh)</font>
+      </th>
+      <th className="table-trnobg">
+        <font size="4">Chasis LoRaWAN para Wio Terminal con antena incorporada LoRa-E5 y GNSS, EU868/US915</font>
+      </th>
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">

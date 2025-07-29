@@ -121,7 +121,7 @@ Luego podrás usar `get_idf` para activar el entorno.[^refer](https://docs.espre
 </TabItem>
 </Tabs>
 
-Compilar y flashear el proyecto {#BUILD}
+Compilar y flashear el proyecto
 
 Si optas por compilar el código fuente, necesitarás ESP-IDF para llevar a cabo el proceso.
 

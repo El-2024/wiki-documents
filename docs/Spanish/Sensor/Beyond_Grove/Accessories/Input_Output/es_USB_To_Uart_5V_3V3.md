@@ -36,7 +36,7 @@ El **USB To Uart 5V/3V3** es un adaptador USB a serie basado en el chip **CH340*
 
 * Voltaje de operación: **DC 5V**
 
-* Corriente de operación: **<10mA**
+* Corriente de operación: **&lt;10mA**
 
 * Sistemas operativos compatibles: **Windows**, **Linux**, **Mac**
 

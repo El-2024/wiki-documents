@@ -65,83 +65,40 @@ Especificaciones
 
 <table border="1">
 <tr>
-<th>
-Ítems
-</th>
-<th>
-Mínimo
-</th>
-<th>
-Normal
-</th>
-<th>
-Máximo
-</th>
+<th>Ítems</th>
+<th>Mínimo</th>
+<th>Normal</th>
+<th>Máximo</th>
 </tr>
 <tr align="center">
-<td width="400">
-U<sub>in</sub> Solar
-</td>
-<td width="200">
-4.8V
-</td>
-<td width="200">
-5.0V
-</td>
-<td width="200">
-6.0V
-</td>
+<td width="400">U<sub>in</sub> Solar</td>
+<td width="200">4.8V</td>
+<td width="200">5.0V</td>
+<td width="200">6.0V</td>
 </tr>
 <tr align="center">
-<td>
-I<sub>carga</sub> (R<sub>Iset</sub>=2.0kΩ)
-</td>
-<td>
-700mA
-</td>
-<td>
-800mA
-</td>
-<td>
-900mA
-</td>
+<td>I<sub>carga</sub> (R<sub>Iset</sub>=2.0kΩ)</td>
+<td>700mA</td>
+<td>800mA</td>
+<td>900mA</td>
 </tr>
 <tr align="center">
-<td>
-I<sub>suministro</sub>
-</td>
-<td>
-0mA
-</td>
-<td>
-</td>
-<td>
-600mA
-</td>
+<td>I<sub>suministro</sub></td>
+<td>0mA</td>
+<td></td>
+<td>600mA</td>
 </tr>
 <tr align="center">
-<td>
-V<sub>batt</sub>(R<sub>x</sub>=0Ω)
-</td>
-<td colspan="3" rowspan="1">
-4.2V
-</td>
+<td>V<sub>batt</sub>(R<sub>x</sub>=0Ω)</td>
+<td colspan="3">4.2V</td>
 </tr>
 <tr align="center">
-<td>
-V<sub>USB fuente</sub>
-</td>
-<td colspan="3" rowspan="1">
-5.0V
-</td>
+<td>V<sub>USB fuente</sub></td>
+<td colspan="3">5.0V</td>
 </tr>
 <tr align="center">
-<td>
-V<sub>USB destino</sub>
-</td>
-<td colspan="3" rowspan="1">
-5.0V
-</td>
+<td>V<sub>USB destino</sub></td>
+<td colspan="3">5.0V</td>
 </tr>
 </table>
 
@@ -151,44 +108,46 @@ Definición y Calificación de Pines
 ### Instrucción de Pines y Estado de LED
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nivel pin CH (Estado LED Rojo)</th>
-<th>Nivel pin OK (Estado LED Verde)</th>
-<th>Estado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Nivel bajo (ENCENDIDO)</td>
-<td>Nivel alto (APAGADO)</td>
-<td>Cargando</td>
-</tr>
-<tr class="even">
-<td>Nivel alto (APAGADO)</td>
-<td>Nivel bajo (último ENCENDIDO)</td>
-<td>Carga completa</td>
-</tr>
-<tr class="odd">
-<td>Señal de pulso (Parpadeo)</td>
-<td>Señal de pulso (ENCENDIDO)</td>
-<td>La batería no existe</td>
-</tr>
-<tr class="even">
-<td>Nivel alto (APAGADO)</td>
-<td>Nivel alto (APAGADO)</td>
-<td>Dos situaciones:
-<ul>
-<li>Voltaje de entrada menor que el voltaje de la puerta</li>
-<li>Voltaje de entrada menor que el voltaje de la batería</li>
-</ul></td>
-</tr>
-</tbody>
+  <colgroup>
+    <col width="33%" />
+    <col width="33%" />
+    <col width="33%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Nivel pin CH (Estado LED Rojo)</th>
+      <th>Nivel pin OK (Estado LED Verde)</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>Nivel bajo (ENCENDIDO)</td>
+      <td>Nivel alto (APAGADO)</td>
+      <td>Cargando</td>
+    </tr>
+    <tr class="even">
+      <td>Nivel alto (APAGADO)</td>
+      <td>Nivel bajo (último ENCENDIDO)</td>
+      <td>Carga completa</td>
+    </tr>
+    <tr class="odd">
+      <td>Señal de pulso (Parpadeo)</td>
+      <td>Señal de pulso (ENCENDIDO)</td>
+      <td>La batería no existe</td>
+    </tr>
+    <tr class="even">
+      <td>Nivel alto (APAGADO)</td>
+      <td>Nivel alto (APAGADO)</td>
+      <td>
+        Dos situaciones:
+        <ul>
+          <li>Voltaje de entrada menor que el voltaje de la puerta</li>
+          <li>Voltaje de entrada menor que el voltaje de la batería</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 #### Componentes de Hardware

@@ -22,25 +22,24 @@ Historial de versiones:
 * 5V/3.3V Breadboard Power Supply v1.2: Mejora la facilidad de uso
 
 <table>
-  <tbody><tr>
-      <th> Versión
-      </th>
-      <th> Descripción
-      </th>
-      <th> Fecha de lanzamiento
-      </th></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width="300px"> 5V/3.3V Breadboard Power Supply v1.1
-      </td>
-      <td width="500px"> Lanzamiento público inicial
-      </td>
-      <td width="200px">
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td> 5V/3.3V Breadboard Power Supply v1.2
-      </td>
-      <td>
-      </td></tr></tbody></table>
+  <tbody>
+    <tr>
+      <th>Versión</th>
+      <th>Descripción</th>
+      <th>Fecha de lanzamiento</th>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td width="300px">5V/3.3V Breadboard Power Supply v1.1</td>
+      <td width="500px">Lanzamiento público inicial</td>
+      <td width="200px"></td>
+    </tr>
+    <tr style="font-size: 90%;">
+      <td>5V/3.3V Breadboard Power Supply v1.2</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 1.Eliminado interruptor innecesario
 

@@ -20,61 +20,51 @@ Este es un panel solar personalizado, que se conecta directamente con muchas de 
 
 ---
 <table>
-<tr>
-<th> PET
-</th>
-<th> Paquete
-</th></tr>
-<tr>
-<td width="400px"> Potencia pico típica
-</td>
-<td width="400px"> 0.55W
-</td></tr>
-<tr>
-<td> Voltaje en potencia pico
-</td>
-<td> 5.5v
-</td></tr>
-<tr>
-<td>Corriente en potencia pico
-</td>
-<td>100mA
-</td></tr>
-<tr>
-<td>Longitud
-</td>
-<td>70 mm
-</td></tr>
-<tr>
-<td>Ancho
-</td>
-<td>55 mm
-</td></tr>
-<tr>
-<td>Grosor
-</td>
-<td>1.5 mm
-</td></tr>
-<tr>
-<td>Peso
-</td>
-<td>17g
-</td></tr>
-<tr>
-<td>Eficiencia
-</td>
-<td>17%
-</td></tr>
-<tr>
-<td>Diámetro del cable
-</td>
-<td>1.5mm
-</td></tr>
-<tr>
-<td>Conector
-</td>
-<td>2.0mm JST
-</td></tr></table>
+  <tr>
+    <th>PET</th>
+    <th>Paquete</th>
+  </tr>
+  <tr>
+    <td width="400px">Potencia pico típica</td>
+    <td width="400px">0.55W</td>
+  </tr>
+  <tr>
+    <td>Voltaje en potencia pico</td>
+    <td>5.5v</td>
+  </tr>
+  <tr>
+    <td>Corriente en potencia pico</td>
+    <td>100mA</td>
+  </tr>
+  <tr>
+    <td>Longitud</td>
+    <td>70 mm</td>
+  </tr>
+  <tr>
+    <td>Ancho</td>
+    <td>55 mm</td>
+  </tr>
+  <tr>
+    <td>Grosor</td>
+    <td>1.5 mm</td>
+  </tr>
+  <tr>
+    <td>Peso</td>
+    <td>17g</td>
+  </tr>
+  <tr>
+    <td>Eficiencia</td>
+    <td>17%</td>
+  </tr>
+  <tr>
+    <td>Diámetro del cable</td>
+    <td>1.5mm</td>
+  </tr>
+  <tr>
+    <td>Conector</td>
+    <td>2.0mm JST</td>
+  </tr>
+</table>
 
 ## Instalación del Hardware
 

@@ -428,11 +428,11 @@ El programa muestra el valor del sensor en el monitor serial. También se puede 
 
 En mi caso, la lectura del multímetro es de 220 V RMS, mientras que el sensor muestra 718.87 V en el monitor serial. Para obtener un valor de calibración preciso, necesitamos hacer una simple operación matemática usando la siguiente fórmula.
 
-![ \dfrac{Mains Voltage}{x} = \dfrac{Sensor voltage}{Initail Calibration}](https://s0.wp.com/latex.php?latex=+%5Cdfrac%7BMains+Voltage%7D%7Bx%7D+%3D+%5Cdfrac%7BSensor+voltage%7D%7BInitail+Calibration%7D&bg=ffffff&fg=000&s=0&201002)
+![Fórmula de voltaje del sensor](https://s0.wp.com/latex.php?latex=+%5Cdfrac%7BMains+Voltage%7D%7Bx%7D+%3D+%5Cdfrac%7BSensor+voltage%7D%7BInitail+Calibration%7D&bg=ffffff&fg=000&s=0&201002)
 
 - Paso 3: Encuentra el valor de `x` y reemplázalo por `Calibration_Value` en el programa, luego flashea el programa al microcontrolador.
 
-![ x = \dfrac{mains voltage \times initial calibration}{Sensor voltage}](https://s0.wp.com/latex.php?latex=+x+%3D+%5Cdfrac%7Bmains+voltage+%5Ctimes+initial+calibration%7D%7BSensor+voltage%7D&bg=ffffff&fg=000&s=0&c=20201002)
+![Fórmula de voltaje del sensor](https://s0.wp.com/latex.php?latex=+x+%3D+%5Cdfrac%7Bmains+voltage+%5Ctimes+initial+calibration%7D%7BSensor+voltage%7D&bg=ffffff&fg=000&s=0&c=20201002)
 
 Puedes cambiar otros parámetros como `Phase_Shift`, el número de ciclos de CA y el tiempo de espera (`timeout`) de acuerdo con tu configuración o dejar los valores por defecto.
 

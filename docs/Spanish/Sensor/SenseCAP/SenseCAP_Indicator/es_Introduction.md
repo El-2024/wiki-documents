@@ -15,9 +15,10 @@ last_update:
 
 <iframe class="youtube-video-r" src="https://www.youtube.com/embed/IOdI5_MGbCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<div class="button-container">
-<a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">
-        Consigue uno ahora 🖱️</a>
+<div className="get_one_now_container" style={{ textAlign: "center" }}>
+  <a className="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">
+    <strong>🖱️ Cómpralo</strong>
+  </a>
 </div>
 
 SenseCAP Indicator es una pantalla táctil de 4 pulgadas impulsada por los microcontroladores duales ESP32-S3 y RP2040, que soporta comunicación Wi-Fi, Bluetooth y LoRa.

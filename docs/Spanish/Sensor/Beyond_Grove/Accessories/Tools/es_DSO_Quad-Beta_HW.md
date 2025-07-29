@@ -35,15 +35,19 @@ Puedes encontrar la página del producto para el dispositivo beta [aquí: TES101
 
 1. Si esta es una versión beta, ¿se podrá actualizar el firmware (vía USB) si se encuentran errores?
 
-<dl><dd> Claro, solo copia el firmware al disco USB interno y presiona "&gt;" durante el arranque para actualizar.
-</dd></dl>
+<dl>
+  <dt>Respuesta:</dt>
+  <dd>Claro, solo copia el firmware al disco USB interno y presiona "&gt;" durante el arranque para actualizar.</dd>
+</dl>
 
 2. Si se encuentran errores de hardware, ¿cómo se maneja? ¿Se puede devolver el producto beta por uno de producción? Probamos y aseguramos funciones principales de cada unidad. Puedes devolverlo para cambiarlo por uno de producción, pero debes cubrir el envío y diferencia de precio. Por favor entiende el riesgo de pruebas beta.
 
 3. Hay dos fechas de envío para la beta, una en marzo y otra el 20 de enero. ¿Cuál es correcta?
 
-<dl><dd> Debido a falta de componentes y errores detectados, necesitamos una revisión más para el lote beta. Se enviarán a finales de febrero o inicio de marzo.
-</dd></dl>
+<dl>
+  <dt>Respuesta</dt>
+  <dd>Debido a falta de componentes y errores detectados, necesitamos una revisión más para el lote beta. Se enviarán a finales de febrero o inicio de marzo.</dd>
+</dl>
 
 4. Aunque es beta, venden 300 copias, ¿no deberían dedicar tiempo a la documentación y al menos vender un producto funcional (¿NO CREES que es suficiente para al menos una garantía de 3 meses a 1 año?). ¡No compraré algo en lo que ni siquiera confían!
 
@@ -53,13 +57,17 @@ Puedes encontrar la página del producto para el dispositivo beta [aquí: TES101
 
 6. ¿Cuáles son las aplicaciones de usuario?
 
-<dl><dd><span style="color: red;">[Sin respuesta oficial]</span> Que yo sepa, existirá la posibilidad de arrancar diferentes aplicaciones que puedas almacenar en el U-Disk. Agregaré una sección en esta página para recopilar ideas para aplicaciones de usuario.
-</dd></dl>
+<dl>
+  <dt><span style="color: red;">[Sin respuesta oficial]</span></dt>
+  <dd>Que yo sepa, existirá la posibilidad de arrancar diferentes aplicaciones que puedas almacenar en el U-Disk. Agregaré una sección en esta página para recopilar ideas para aplicaciones de usuario.</dd>
+</dl>
 
 7. ¿Cuál es la duración de la batería?
 
-<dl><dd> 8 horas de trabajo continuo con brillo de pantalla al 60%. Apagado automático de pantalla a los 5 minutos, ajustable en firmwares futuros.
-</dd></dl>
+<dl>
+  <dt>Respuesta</dt>
+  <dd>8 horas de trabajo continuo con brillo de pantalla al 60%. Apagado automático de pantalla a los 5 minutos, ajustable en firmwares futuros.</dd>
+</dl>
 
 ## Ver también
 

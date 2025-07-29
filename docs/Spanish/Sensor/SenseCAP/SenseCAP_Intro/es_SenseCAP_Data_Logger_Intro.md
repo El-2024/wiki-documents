@@ -22,11 +22,14 @@ SenseCAP Sensor Hub es una solución compacta para monitoreo ambiental remoto. C
 
 <div align="center"><img width="{800}" src="https://files.seeedstudio.com/wiki/SenseCAP/introduction/hub.png"/></div>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Sensor-Hub-4G-Data-Logger-with-builtin-battery-p-4852.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Sensor/SenseCAP/SenseCAP_Data_Logger/SenseCAP-Sensor-Hub-Data-Logger/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
-    </a>
+<div className="get_one_now_container" style={{ textAlign: "center" }}>
+  <a className="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Sensor-Hub-4G-Data-Logger-with-builtin-battery-p-4852.html">
+    <strong>🖱️ Cómpralo</strong>
+  </a>
+  <br />
+  <a className="get_one_now_item" href="https://wiki.seeedstudio.com/Sensor/SenseCAP/SenseCAP_Data_Logger/SenseCAP-Sensor-Hub-Data-Logger/">
+    <strong>📚 Aprende Más</strong>
+  </a>
 </div>
 
 También están disponibles la [App móvil SenseCAP](https://solution.seeedstudio.com/product/software-cloud-sensecap-app/), el [portal web SenseCAP](https://solution.seeedstudio.com/product/software-cloud-sensecap-portal/), la [API SenseCAP](https://sensecap-docs.seeed.cc/introduction.html) y el [Dashboard SenseCAP](https://solution.seeedstudio.com/product/software-cloud-sensecap-dashboard/) para configuración rápida y gestión de dispositivos y datos.
@@ -37,12 +40,16 @@ También están disponibles la [App móvil SenseCAP](https://solution.seeedstudi
 
 El SenseCAP S2100 Data Logger es un dispositivo versátil que se conecta a sensores MODBUS-RTU RS485/Analógicos/GPIO, permitiendo la transmisión fácil de datos a la red LoRaWAN. Con diseño LoRa e IP66, ofrece alta estabilidad y confiabilidad, cubriendo largas distancias con consumo ultra bajo de energía. Perfecto para uso exterior, puede ser alimentado por batería o mediante una fuente externa de 12V para mayor flexibilidad. Cuando está conectado a la fuente de 12V, la batería interna reemplazable actúa como respaldo. Además, el S2100 Data Logger está optimizado para actualizaciones OTA con Bluetooth integrado, facilitando configuración y actualizaciones rápidas. El convertidor S2110 permite conectar sensores Grove, haciendo del S2100 una excelente opción para sensores industriales LoRaWAN DIY y despliegues a pequeña escala.
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Cómpralo</font></span></strong>
-    </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Sensor/SenseCAP/SenseCAP_Data_Logger/Data_Logger/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong>
-    </a>
+<div className="get_one_now_container" style={{ textAlign: "center" }}>
+  <a className="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html">
+    <strong>🖱️ Cómpralo</strong>
+  </a>
+  <br />
+  <a className="get_one_now_item" href="https://wiki.seeedstudio.com/Sensor/SenseCAP/SenseCAP_Data_Logger/Data_Logger/">
+    <strong>📚 Aprende Más</strong>
+  </a>
 </div>
+
 
 ## ✨ Proyecto Colaborador
 

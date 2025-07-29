@@ -27,62 +27,54 @@ Contamos con una línea completa de sensores de flujo de agua en diferentes diá
 
 ## Especificaciones
 
-<table >
-<tr>
-<td>Voltaje mínimo de trabajo
-</td>
-<td>DC 4.5V
-</td></tr>
-<tr>
-<td>Corriente máxima de trabajo
-</td>
-<td>15mA(DC 5V)
-</td></tr>
-<tr>
-<td width="400px">Voltaje de trabajo
-</td>
-<td width="400px">5V～24V
-</td></tr>
-<tr>
-<td>Rango de flujo
-</td>
-<td>0.3~6L/min
-</td></tr>
-<tr>
-<td>Capacidad de carga
-</td>
-<td>≤10mA(DC 5V)
-</td></tr>
-<tr>
-<td>Temperatura de operación
-</td>
-<td>≤80℃
-</td></tr>
-<tr>
-<td>Temperatura del líquido
-</td>
-<td>≤120℃
-</td></tr>
-<tr>
-<td>Humedad de operación
-</td>
-<td>35%～90%RH
-</td></tr>
-<tr>
-<td>Presión de agua
-</td>
-<td>≤0.8MPa
-</td></tr>
-<tr>
-<td>Temperatura de almacenamiento
-</td>
-<td>-25℃～+80℃
-</td></tr>
-<tr>
-<td>Humedad de almacenamiento
-</td>
-<td>25%～95%RH
-</td></tr></table>
+<table>
+  <tbody>
+    <tr>
+      <td>Voltaje mínimo de trabajo</td>
+      <td>DC 4.5V</td>
+    </tr>
+    <tr>
+      <td>Corriente máxima de trabajo</td>
+      <td>15 mA (DC 5 V)</td>
+    </tr>
+    <tr>
+      <td>Voltaje de trabajo</td>
+      <td>5 V～24 V</td>
+    </tr>
+    <tr>
+      <td>Rango de flujo</td>
+      <td>0.3~6 L/min</td>
+    </tr>
+    <tr>
+      <td>Capacidad de carga</td>
+      <td>≤10 mA (DC 5 V)</td>
+    </tr>
+    <tr>
+      <td>Temperatura de operación</td>
+      <td>≤80 ℃</td>
+    </tr>
+    <tr>
+      <td>Temperatura del líquido</td>
+      <td>≤120 ℃</td>
+    </tr>
+    <tr>
+      <td>Humedad de operación</td>
+      <td>35%～90% RH</td>
+    </tr>
+    <tr>
+      <td>Presión de agua</td>
+      <td>≤0.8 MPa</td>
+    </tr>
+    <tr>
+      <td>Temperatura de almacenamiento</td>
+      <td>-25 ℃～+80 ℃</td>
+    </tr>
+    <tr>
+      <td>Humedad de almacenamiento</td>
+      <td>25%～95% RH</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Primeros Pasos
 
@@ -162,26 +154,24 @@ El diámetro externo de la rosca de las conexiones es de 1.4 mm.
 Frecuencia de pulso (Hz) en prueba horizontal = 7.5Q, donde Q es la tasa de flujo en L/min. (Resultados con un margen de +/- 3%)
 
 <table>
-<tr>
-<td width="400px">Nivel alto de pulso de salida
-</td>
-<td width="400px">Voltaje de señal &gt;4.5 V (entrada DC 5 V)
-</td></tr>
-<tr>
-<td>Nivel bajo de pulso de salida
-</td>
-<td>Voltaje de señal &lt;0.5 V (entrada DC 5 V)
-</td></tr>
-<tr>
-<td>Precisión
-</td>
-<td>3% (Tasa de flujo de 1 L/min a 10 L/min)
-</td></tr>
-<tr>
-<td>Ciclo de trabajo de la señal de salida
-</td>
-<td>40%～60%
-</td></tr>
+  <tbody>
+    <tr>
+      <td>Nivel alto de pulso de salida</td>
+      <td>Voltaje de señal &gt; 4.5 V (entrada DC 5 V)</td>
+    </tr>
+    <tr>
+      <td>Nivel bajo de pulso de salida</td>
+      <td>Voltaje de señal &lt; 0.5 V (entrada DC 5 V)</td>
+    </tr>
+    <tr>
+      <td>Precisión</td>
+      <td>3% (Tasa de flujo de 1 L/min a 10 L/min)</td>
+    </tr>
+    <tr>
+      <td>Ciclo de trabajo de la señal de salida</td>
+      <td>40%～60%</td>
+    </tr>
+  </tbody>
 </table>
 
 ## Recursos

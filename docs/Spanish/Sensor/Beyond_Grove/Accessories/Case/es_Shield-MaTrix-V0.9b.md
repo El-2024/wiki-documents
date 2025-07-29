@@ -314,21 +314,19 @@ Utilizado por las funciones de la biblioteca para organizar diversos efectos y d
 
 ##   Funciones principales
 
-<u> **mymatrix.init();**</u>
+<dl>
+  <dt><u><strong>mymatrix.init();</strong></u></dt>
+  <dd><em>Descripción</em>: inicializa el módulo.</dd>
 
-<dl><dd>_Descripción_: inicializa el módulo.
-</dd></dl>
+  <dt><u><strong>mymatrix.clearLed();</strong></u></dt>
+  <dd><em>Descripción</em>: limpia la pantalla.</dd>
 
-<u> **mymatrix.clearLed();**</u>
-
-<dl><dd>_Descripción_: limpia la pantalla.
-</dd></dl>
-
-<u> **mymatrix.brightness(byte brightLevel);**</u>
-
-<dl><dd>_Descripción_: establece el brillo de la pantalla..
-</dd><dd>_brightLevel_:nivel de brillo (tipo byte), un valor de 255 indica el brillo máximo.
-</dd></dl>
+  <dt><u><strong>mymatrix.brightness(byte brightLevel);</strong></u></dt>
+  <dd>
+    <em>Descripción</em>: establece el brillo de la pantalla.<br/>
+    <em>brightLevel</em>: nivel de brillo (tipo byte), un valor de 255 indica el brillo máximo.
+  </dd>
+</dl>
 
 Ejemplo de uso:
 
@@ -339,12 +337,11 @@ Ejemplo de uso:
  mymatrix.brightness(177);
 ```
 
+<dl>
+  <dt><u><strong>mymatrix.getBrightness();</strong></u></dt>
+  <dd><em>Descripción</em>: regresa el valor actual del brillo de la pantalla.</dd>
+</dl>
 
-
-<u> **mymatrix.get Brightness();**</u>
-
-<dl><dd>_Descripción_: regresa el valor actual del brillo de la pantalla.
-</dd></dl>
 
 Ejemplo de. uso:
 
@@ -355,22 +352,24 @@ Ejemplo de. uso:
  Serial.println(mymatrix.getBrightness());
 ```
 
-
-<u><b>printString(String s, byte pos, byte color, unsigned char *Font, char effect, int speed);</b></u>
-
 <dl>
+  <dt><u><b>printString(String s, byte pos, byte color, unsigned char *Font, char effect, int speed);</b></u></dt>
   <dd><i>Descripción</i>: muestra la cadena especificada.</dd>
   <dd><i>pos</i>: posición inicial del primer carácter (byte). Se cuenta desde el borde derecho de la matriz, comenzando en 0.</dd>
   <dd><i>color</i>: color (byte). Tres valores predefinidos: RED, GREEN, YELLOW.</dd>
-  <dd><i>Font</i>: puntero a la fuente (unsigned char). Fuentes disponibles en la biblioteca:
+  <dd>
+    <i>Font</i>: puntero a la fuente (unsigned char). Fuentes disponibles en la biblioteca:
     <ul>
       <li>Caracteres latinos: <code>font5x8</code></li>
       <li>Latinos y cirílicos: <code>font6x8</code></li>
       <li>Digitales: <code>digit6x8bold</code>, <code>digit6x8future</code></li>
     </ul>
+  </dd>
+  <dd>
     Para más detalles sobre las fuentes, consulta el archivo <code>fonts.c</code> del archivo de la biblioteca MaTrix.
   </dd>
-  <dd><i>effect</i>: efecto de la inscripción (char). Valores predefinidos disponibles:
+  <dd>
+    <i>effect</i>: efecto de la inscripción (char). Valores predefinidos disponibles:
     <ul>
       <li><code>LEFT</code>, <code>UP</code>, <code>DOWN</code> (desplazamiento en la dirección correspondiente)</li>
       <li><code>FADE</code> (aparición)</li>
@@ -378,14 +377,14 @@ Ejemplo de. uso:
     </ul>
     Valor por defecto: <code>NONE</code>.
   </dd>
-  <dd><i>speed</i>: velocidad del efecto (int). Valores predefinidos disponibles:
+  <dd>
+    <i>speed</i>: velocidad del efecto (int). Valores predefinidos disponibles:
     <ul>
       <li><code>VSLOW</code>, <code>SLOW</code>, <code>MID</code>, <code>FAST</code>, <code>VFAST</code> (desde "muy lento" hasta "muy rápido")</li>
     </ul>
     Valor por defecto: <code>MID</code>.
   </dd>
 </dl>
-
 
 Ejemplo de uso:
 
@@ -396,20 +395,23 @@ Ejemplo de uso:
  mymatrix.printString("123", 3, GREEN, font6x8, UP, SLOW);
 ```
 
-<u><b>printRunningString(String s, byte color, unsigned char *Font, int speed);</b></u>
-
 <dl>
+  <dt><u><b>printRunningString(String s, byte color, unsigned char *Font, int speed);</b></u></dt>
   <dd><i>Descripción</i>: muestra la línea de texto tipo "running" (desplazamiento continuo).</dd>
   <dd><i>color</i>: color (byte). Tres valores predefinidos: RED, GREEN, YELLOW.</dd>
-  <dd><i>Font</i>: puntero a la fuente (unsigned char). Fuentes disponibles en la biblioteca:
+  <dd>
+    <i>Font</i>: puntero a la fuente (unsigned char). Fuentes disponibles en la biblioteca:
     <ul>
       <li>Caracteres latinos: <code>font5x8</code></li>
       <li>Latinos y cirílicos: <code>font6x8</code></li>
       <li>Digitales: <code>digit6x8bold</code>, <code>digit6x8future</code></li>
     </ul>
+  </dd>
+  <dd>
     Para más detalles sobre las fuentes, consulta el archivo <code>fonts.c</code> del archivo de la biblioteca MaTrix.
   </dd>
-  <dd><i>speed</i>: velocidad del efecto (int). Valores predefinidos disponibles:
+  <dd>
+    <i>speed</i>: velocidad del efecto (int). Valores predefinidos disponibles:
     <ul>
       <li><code>VSLOW</code>, <code>SLOW</code>, <code>MID</code>, <code>FAST</code>, <code>VFAST</code> (desde "muy lento" hasta "muy rápido")</li>
     </ul>
@@ -430,49 +432,34 @@ Ejemplo de uso:
 
 ##   Funciones auxiliares
 
-<u><b>printArray();</b></u>
 <dl>
+  <dt><u><b>printArray();</b></u></dt>
   <dd><i>Descripción</i>: muestra por el puerto serie el estado actual del arreglo principal (<code>array</code>).</dd>
-</dl>
 
-<u><b>printShadow();</b></u>
-<dl>
+  <dt><u><b>printShadow();</b></u></dt>
   <dd><i>Descripción</i>: muestra por el puerto serie el estado actual de la "sombra" del arreglo (<code>shadow</code>).</dd>
-</dl>
 
-<u><b>printChar(unsigned char sym, byte pos, byte color);</b></u>
-<dl>
+  <dt><u><b>printChar(unsigned char sym, byte pos, byte color);</b></u></dt>
   <dd><i>Descripción</i>: modifica el arreglo principal (<code>array</code>) para que, al mostrarse en la matriz, se imprima el símbolo deseado en la posición y color especificados.</dd>
   <dd><i>pos</i>: posición inicial del carácter (byte). Se cuenta desde el borde derecho de la matriz, comenzando en 0.</dd>
   <dd><i>color</i>: color (byte). Tres valores predefinidos: RED, GREEN, YELLOW.</dd>
-</dl>
-<p><b>¡Atención!</b> La fuente que se usará debe definirse previamente mediante <code>setFont</code>.</p>
 
-<u><b>printCharShadow(unsigned char sym, byte pos, byte color);</b></u>
-<dl>
+  <dt><u><b>printCharShadow(unsigned char sym, byte pos, byte color);</b></u></dt>
   <dd><i>Descripción</i>: función similar a <code>printChar</code>, pero modifica el arreglo "sombra" (<code>shadow</code>).</dd>
-</dl>
 
-<u><b>printStr(unsigned char *s, byte pos, byte color);</b></u>
-<dl>
+  <dt><u><b>printStr(unsigned char *s, byte pos, byte color);</b></u></dt>
   <dd><i>Descripción</i>: modifica el arreglo principal (<code>array</code>) para que, al mostrarse en la matriz, se imprima la cadena deseada en la posición y color especificados.</dd>
   <dd><i>s</i>: puntero a un arreglo de caracteres (<code>unsigned char</code>).</dd>
   <dd><i>pos</i>: posición inicial del primer carácter (byte). Se cuenta desde el borde derecho de la matriz, comenzando en 0.</dd>
   <dd><i>color</i>: color (byte). Tres valores predefinidos: RED, GREEN, YELLOW.</dd>
-</dl>
-<p><b>¡Atención!</b> La fuente que se usará debe definirse previamente mediante <code>setFont</code>.</p>
 
-<u><b>printStrShadow(unsigned char *s, byte pos, byte color);</b></u>
-<dl>
+  <dt><u><b>printStrShadow(unsigned char *s, byte pos, byte color);</b></u></dt>
   <dd><i>Descripción</i>: función similar a <code>printStr</code>, pero modifica el arreglo "sombra" (<code>shadow</code>).</dd>
 </dl>
 
-¡Atención! La fuente que se utiliza al llamar a la función debe definirse usando `setFont`.
+<p><b>¡Atención!</b> La fuente que se usará debe definirse previamente mediante <code>setFont</code>.</p>
 
-<u> **printStrShadow(unsigned char *s, byte pos, byte color);**</u>
-
-<dl><dd>_Descripción_: función similar a `printChar`, pero se aplica a la matriz modificada "shadow" (`shadow`).
-</dd></dl>
+<p><b>¡Atención!</b> La fuente que se utiliza al llamar a la función debe definirse usando <code>setFont</code>.</p>
 
 ## Referencias
 

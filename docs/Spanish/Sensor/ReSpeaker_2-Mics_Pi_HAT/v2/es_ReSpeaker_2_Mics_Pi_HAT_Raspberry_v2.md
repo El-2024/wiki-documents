@@ -165,7 +165,7 @@ Por favor, presiona **F6** para seleccionar primero el dispositivo `seeed-2mic-v
 
 ## Resumen de uso
 
-Para comenzar, clona el repositorio <https://github.com/respeaker/mic_hat.git> en tu Raspberry Pi:
+Para comenzar, clona el [repositorio](https://github.com/respeaker/mic_hat.git) en tu Raspberry Pi:
 
 ```bash
 git clone https://github.com/respeaker/mic_hat.git

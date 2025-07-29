@@ -84,7 +84,7 @@ Hemos preparado todo, lo último que necesitamos son tus proyectos creativos, as
 |                | Audio                      | Cancelación de eco, eliminación de ruido          |
 |                | Bluetooth                  | Bluetooth 3.0: SPP, HFP-AG                         |
 | GNSS           | Sistema                    | GPS L1 1575.42 MHz, BeiDou B1 1561.10 MHz          |
-|                | Precisión                  | <2.5 m CEP                                        |
+|                | Precisión                  | 2.5 m CEP                                        |
 |                | Tecnología                 | EASY / LOCUS / AlwaysLocate / EPO / GLP / AIC     |
 | Periféricos    | Grove                      | 2 x Puertos digitales Grove                         |
 |                |                            | 2 x Puertos analógicos                              |

@@ -78,7 +78,7 @@ header.height(header.font_height() * 2);
 header.draw();
 ```
 
-<div align="center"><img width=645 height=374 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/title.png" /></div>
+<div align="center"><img width="645" height="374" src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/title.png" /></div>
 
 ## Configurar la gráfica de líneas
 
@@ -103,7 +103,7 @@ spr.pushSprite(0, 0);
 delay(50);
 ```
 
-<div align="center"><img width=768 height=432 src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/linegraph2.png" /></div>
+<div align="center"><img width="768" height="432" src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/linegraph2.png" /></div>
 
 ## Código completo de ejemplo
 

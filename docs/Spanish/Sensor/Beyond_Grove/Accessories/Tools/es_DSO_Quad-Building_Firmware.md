@@ -17,12 +17,13 @@ Esta página actualmente solo contiene información para GCC en Debian. Por favo
 
 ### Usando GCC y Debian
 
-<pre> apt-get install --no-install-recommends  build-essential autoconf flex bison texinfo libncurses5-dev libgmp3-dev libmpfr-dev libmpc-dev libftdi-dev
+```
+apt-get install --no-install-recommends  build-essential autoconf flex bison texinfo libncurses5-dev libgmp3-dev libmpfr-dev libmpc-dev libftdi-dev
  cd
  git clone [git://github.com/esden/summon-arm-toolchain.git](git://github.com/esden/summon-arm-toolchain.git)
  cd summon-arm-toolchain
  $EDITOR summon-arm-toolchain
-</pre>
+```
 
 ..y asegúrate de que las siguientes configuraciones estén activas:
 

@@ -15,7 +15,7 @@ El firmware del [DSO Nano](/DSO_Nano "DSO Nano") puede compilarse con una herram
 
 ## Obtener un toolchain gcc para compilación cruzada ARM
 
-El toolchain ARM que la mayoría usamos es el GCC de ARM en <https://launchpad.net/gcc-arm-embedded>.
+El toolchain ARM que la mayoría usamos es el [GCC de ARM](https://launchpad.net/gcc-arm-embedded).
 
 Para Linux, puedes elegir el tarball o el instalador. Este último es una descarga mucho más grande que el primero, por alguna razón. En cualquier caso, asegúrate de tener el directorio "bin" del toolchain en tu ruta (PATH). Por ejemplo, si extrajiste el tarball en /opt, escribe esto en tu consola o agrégalo a tu .bashrc o .pam_environment:
 

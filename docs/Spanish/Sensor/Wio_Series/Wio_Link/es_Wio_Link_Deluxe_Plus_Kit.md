@@ -78,9 +78,7 @@ Este demo puede usarse como indicador del resultado de una compilación.
 
 ### Cómo hacerlo en detalle
 
-Por favor visita la receta para el manual detallado:
-
-<https://www.seeedstudio.com/recipe/1068-traffic-light-indicates-travis-ci-compiled-results.html>
+Por favor visita [este sitio](https://www.seeedstudio.com/recipe/1068-traffic-light-indicates-travis-ci-compiled-results.html) para el manual detallado.
 
 <!-- Este archivo Markdown fue creado desde https://www.seeedstudio.com/wiki/Wio_Link_Deluxe_Plus_Kit -->
 

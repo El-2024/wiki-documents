@@ -164,7 +164,7 @@ Construye tu propio escáner WiFi en unos pocos pasos. Solo necesitas:
 [¿Por qué no hacer uno tú mismo?](https://community.seeedstudio.com/project_detail.html?id=220)
 
 
-**Primer proyecto IoT con NodeMcu >ESP8266<**
+**Primer proyecto IoT con NodeMcu, ESP8266**
 
 ![](https://files.seeedstudio.com/wiki/WiFi_Serial_Transceiver_Module/img/Recipe-Primary_IoT_Make_with_NodeMcu--ESP8266--.jpg)
 

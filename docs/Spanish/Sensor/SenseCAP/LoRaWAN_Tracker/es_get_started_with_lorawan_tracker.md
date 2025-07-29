@@ -190,53 +190,17 @@ Navega a `Settings` para configurar los parámetros.
 
 * **Configuración LoRa**
 
-<table>
-<tr><th></th><th><b>Parámetros</b></th><th><b>Descripción</b></th></tr>
-<tr>
-  <td rowspan="5">Plataforma</td>
-  <td>SenseCAP para The Things Network (por defecto)</td>
-  <td>Servidor TTN propietario de SenseCAP. Funciona con gateway SenseCAP.<br/>
-  <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank">SenseCAP Outdoor Gateway</a><br/>
-  <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank">SenseCAP Indoor Gateway</a>
-  </td>
-</tr>
-<tr>
-  <td>SenseCAP para Helium</td>
-  <td>Consola privada Helium de SenseCAP. Integrado con SenseCAP Mate App y Portal.</td>
-</tr>
-<tr>
-  <td>Helium</td>
-  <td>Servidor público Helium</td>
-</tr>
-<tr>
-  <td>The Things Network</td>
-  <td>Servidor público TTN</td>
-</tr>
-<tr>
-  <td>Otra plataforma</td>
-  <td>Otro servidor de red LoRaWAN</td>
-</tr>
-<tr>
-  <td>Plan de frecuencia</td>
-  <td>EU868/US915/AU915/KR920/IN865/AS923-1/AS923-2/AS923-3/AS923-4</td>
-  <td>Por defecto EU868</td>
-</tr>
-<tr>
-  <td>Política de paquete</td>
-  <td>1C</td>
-  <td>Habilitado por defecto</td>
-</tr>
-<tr>
-  <td>LoRaWAN ADR</td>
-  <td>Habilitado por defecto</td>
-  <td>Habilitado por defecto</td>
-</tr>
-<tr>
-  <td>Restaurar configuración LoRa</td>
-  <td>Habilitado por defecto</td>
-  <td>Habilitado por defecto</td>
-</tr>
-</table>
+| Plataforma                          | Parámetro                                     | Descripción                                                                 |
+|-------------------------------------|-----------------------------------------------|------------------------------------------------------------------------------|
+| Plataforma                          | SenseCAP para The Things Network (por defecto) | Servidor TTN propietario de SenseCAP. Funciona con gateway SenseCAP.<br />[SenseCAP Outdoor Gateway](https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html)<br />[SenseCAP Indoor Gateway](https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html) |
+| Plataforma                          | SenseCAP para Helium                          | Consola privada Helium de SenseCAP. Integrado con SenseCAP Mate App y Portal. |
+| Plataforma                          | Helium                                        | Servidor público Helium                                                     |
+| Plataforma                          | The Things Network                            | Servidor público TTN                                                        |
+| Plataforma                          | Otra plataforma                               | Otro servidor de red LoRaWAN                                               |
+| Plan de frecuencia                  | EU868/US915/...                               | Por defecto EU868                                                           |
+| Política de paquete                 | 1C                                            | Habilitado por defecto                                                      |
+| LoRaWAN ADR                         | Habilitado por defecto                        | Habilitado por defecto                                                      |
+| Restaurar configuración LoRa       | Habilitado por defecto                        | Habilitado por defecto                                                      |
 
 * **Configuración general**
 

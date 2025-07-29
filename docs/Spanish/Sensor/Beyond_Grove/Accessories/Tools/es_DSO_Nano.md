@@ -29,57 +29,48 @@ Hasta ahora han existido tres versiones principales del DSO Nano: la original en
 
 Se publicó una foto del interior de la V2 en el [foro](https://community.seeedstudio.com/discover.html?t=DSO).
 
-<table >
-<tr>
-<td> CPU
-</td>
-<td> ARM Cortex™-M3 (STM32F103VBT6)
-</td></tr>
-<tr>
-<td> RAM
-</td>
-<td> 20k
-</td></tr>
-<tr>
-<td> Flash ROM
-</td>
-<td> 128k
-</td></tr>
-<tr>
-<td> Frecuencia de reloj
-</td>
-<td> 72MHz
-</td></tr>
-<tr>
-<td> Pantalla
-</td>
-<td> TFT LCD a color de 2.8″
-</td></tr>
-<tr>
-<td> Resolución de pantalla
-</td>
-<td> 320×240
-</td></tr>
-<tr>
-<td> Color de pantalla
-</td>
-<td> 65K
-</td></tr>
-<tr>
-<td> Conexión PC vía USB
-</td>
-<td> como lector de tarjeta SD
-</td></tr>
-<tr>
-<td> Actualización
-</td>
-<td> por bootloader vía USB
-</td></tr>
-<tr>
-<td> Fuente de alimentación
-</td>
-<td> Batería recargable de litio 3.7V / USB (controlador de carga LTC4054)
-</td></tr></table>
+<table>
+  <tr>
+    <td>CPU</td>
+    <td>ARM Cortex™-M3 (STM32F103VBT6)</td>
+  </tr>
+  <tr>
+    <td>RAM</td>
+    <td>20k</td>
+  </tr>
+  <tr>
+    <td>Flash ROM</td>
+    <td>128k</td>
+  </tr>
+  <tr>
+    <td>Frecuencia de reloj</td>
+    <td>72MHz</td>
+  </tr>
+  <tr>
+    <td>Pantalla</td>
+    <td>TFT LCD a color de 2.8″</td>
+  </tr>
+  <tr>
+    <td>Resolución de pantalla</td>
+    <td>320×240</td>
+  </tr>
+  <tr>
+    <td>Color de pantalla</td>
+    <td>65K</td>
+  </tr>
+  <tr>
+    <td>Conexión PC vía USB</td>
+    <td>Como lector de tarjeta SD</td>
+  </tr>
+  <tr>
+    <td>Actualización</td>
+    <td>Por bootloader vía USB</td>
+  </tr>
+  <tr>
+    <td>Fuente de alimentación</td>
+    <td>Batería recargable de litio 3.7V / USB (controlador de carga LTC4054)</td>
+  </tr>
+</table>
 
 ## Actualización del firmware
 ---
@@ -94,122 +85,28 @@ Para actualizar el firmware a la versión más reciente, tienes varias opciones:
 
 ## Capacidades
 ---
-<table >
-<tr>
-<td> Ancho de banda analógico
-</td>
-<td> 0 - 1MHz
-</td></tr>
-<tr>
-<td> Tasa máxima de muestreo
-</td>
-<td> 1Msps 12Bits
-</td></tr>
-<tr>
-<td> Profundidad de memoria de muestreo
-</td>
-<td> 4096 puntos
-</td></tr>
-<tr>
-<td> Sensibilidad horizontal
-</td>
-<td> 1μS/Div～10S/Div (pasos 1-2-5)
-</td></tr>
-<tr>
-<td> Posición horizontal
-</td>
-<td> ajustable con indicador
-</td></tr>
-<tr>
-<td> Sensibilidad vertical
-</td>
-<td> 10mV/Div～10V/Div (con sonda ×1)
-</td></tr>
-<tr>
-<td>
-</td>
-<td> 0.5V/Div～100V/Div (con sonda ×10)
-</td></tr>
-<tr>
-<td> Posición vertical
-</td>
-<td> ajustable con indicador
-</td></tr>
-<tr>
-<td> Impedancia de entrada
-</td>
-<td> &gt;500KΩ
-</td></tr>
-<tr>
-<td> Voltaje máximo de entrada
-</td>
-<td> 80Vpp (con sonda ×1)
-</td></tr>
-<tr>
-<td> Acoplamiento
-</td>
-<td> DC
-</td></tr>
-<tr>
-<td> Modos de disparo
-</td>
-<td> Auto, Normal, Single, None y Scan
-</td></tr>
-<tr>
-<td> Funcionalidades:
-</td>
-<td> Medición automática: frecuencia, ciclo, duty,
-</td></tr>
-<tr>
-<td>
-</td>
-<td> V<sub>pp</sub>, V<sub>rms</sub>, V<sub>avg</sub> y voltaje DC
-</td></tr>
-<tr>
-<td>
-</td>
-<td> Medición vertical precisa con marcadores
-</td></tr>
-<tr>
-<td>
-</td>
-<td> Medición horizontal precisa con marcadores
-</td></tr>
-<tr>
-<td>
-</td>
-<td> Disparo por flanco ascendente/descendente
-</td></tr>
-<tr>
-<td>
-</td>
-<td> Nivel de disparo ajustable con indicador
-</td></tr>
-<tr>
-<td>
-</td>
-<td> Sensibilidad de disparo ajustable con indicador
-</td></tr>
-<tr>
-<td>
-</td>
-<td> Función hold/run (pausar/reanudar)
-</td></tr>
-<tr>
-<td> Señal de prueba
-</td>
-<td> Interna de 10Hz～1MHz (pasos 1-2-5)
-</td></tr>
-<tr>
-<td> Almacenamiento de formas de onda
-</td>
-<td> Tarjeta SD
-</td></tr>
-<tr>
-<td> Conexión PC vía USB
-</td>
-<td> como lector de tarjeta SD
-</td></tr></table>
+| Característica                     | Especificación                                                                 |
+|-----------------------------------|--------------------------------------------------------------------------------|
+| Ancho de banda analógico          | 0 - 1 MHz                                                                      |
+| Tasa máxima de muestreo           | 1 Msps a 12 bits                                                               |
+| Profundidad de memoria de muestreo| 4096 puntos                                                                    |
+| Sensibilidad horizontal           | 1 μs/Div ~ 10 s/Div (pasos 1-2-5)                                              |
+| Posición horizontal               | Ajustable con indicador                                                       |
+| Sensibilidad vertical (x1)        | 10 mV/Div ~ 10 V/Div                                                           |
+| Sensibilidad vertical (x10)       | 0.5 V/Div ~ 100 V/Div                                                          |
+| Posición vertical                 | Ajustable con indicador                                                       |
+| Impedancia de entrada             | >500 kΩ                                                                        |
+| Voltaje máximo de entrada         | 80 Vpp (con sonda ×1)                                                          |
+| Acoplamiento                      | DC                                                                             |
+| Modos de disparo                  | Auto, Normal, Single, None, Scan                                              |
+| Funcionalidades                   | - Medición automática: frecuencia, ciclo, duty cycle, Vpp, Vrms, Vavg, DC     |
+|                                   | - Medición vertical y horizontal precisa con marcadores                       |
+|                                   | - Disparo por flanco ascendente/descendente                                   |
+|                                   | - Nivel y sensibilidad de disparo ajustables con indicador                    |
+|                                   | - Función hold/run (pausar/reanudar)                                          |
+| Señal de prueba                   | Interna de 10 Hz ~ 1 MHz (pasos 1-2-5)                                         |
+| Almacenamiento de formas de onda | Tarjeta SD                                                                     |
+| Conexión PC vía USB              | Como lector de tarjeta SD                                                     |
 
 ## Recursos
 ---

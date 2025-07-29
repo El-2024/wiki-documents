@@ -106,116 +106,77 @@ Sujeta firmemente el lado izquierdo mientras deslizas la tapa hacia la derecha. 
 El DSO Quad se carga conectando el cable USB. El controlador de batería LTC4054 [no cargará la batería](https://forum.seeedstudio.com/viewtopic.php?p=6922#p6922) mientras el interruptor de encendido esté activado. Esto se explica mejor en la siguiente tabla:
 
 <table>
-<tr>
-<th> Interruptor de energía
-</th>
-<th> Cable USB
-</th>
-<th> Batería
-</th>
-<th> Lo que ves
-</th>
-<th> Modo de energía del DSO Quad
-</th></tr>
-<tr>
-<td> APAGADO
-</td>
-<td> Desconectado
-</td>
-<td> Inactiva
-</td>
-<td> LEDs apagados, pantalla apagada
-</td>
-<td> Apagado
-</td></tr>
-<tr>
-<td> ENCENDIDO
-</td>
-<td> Desconectado
-</td>
-<td> Descargando
-</td>
-<td> LEDs apagados, pantalla encendida
-</td>
-<td> Normal (encendido)
-</td></tr>
-<tr>
-<td> ENCENDIDO
-</td>
-<td> Desconectado
-</td>
-<td> Descargando
-</td>
-<td> LED verde encendido, pantalla apagada
-</td>
-<td> Modo ahorro de energía: después de 600 segundos sin pulsar botones, la pantalla se apaga
-</td></tr>
-<tr>
-<td> ENCENDIDO
-</td>
-<td> Desconectado
-</td>
-<td> Vacía
-</td>
-<td> LEDs apagados, pantalla apagada
-</td>
-<td> Sin batería, apagado. Por favor conecta el cable USB: la batería necesita cargarse
-</td></tr>
-<tr>
-<td> ENCENDIDO
-</td>
-<td> Conectado a USB 5V/500mA
-</td>
-<td> Inactiva
-</td>
-<td> LED rojo encendido, pantalla encendida
-</td>
-<td> Encendido, [la batería no carga mientras está encendido](https://forum.seeedstudio.com/viewtopic.php?p=6922#p6922)
-</td></tr>
-<tr>
-<td> APAGADO
-</td>
-<td> Conectado a USB 5V/500mA
-</td>
-<td> Cargando
-</td>
-<td> LED rojo encendido, pantalla apagada
-</td>
-<td> Apagado, batería cargando
-</td></tr>
-<tr>
-<td> APAGADO
-</td>
-<td> Puerto USB sin alimentación*
-</td>
-<td> Inactiva
-</td>
-<td> LEDs apagados, pantalla apagada
-</td>
-<td> Apagado, no puede cargar
-</td></tr>
-<tr>
-<td> APAGADO
-</td>
-<td> Conectado a USB 5V/500mA
-</td>
-<td> Llena
-</td>
-<td> LEDs apagados, pantalla apagada
-</td>
-<td> Apagado, batería llena
-</td></tr>
-<tr>
-<td> APAGADO
-</td>
-<td> Conectado a USB 5V/500mA
-</td>
-<td> Sin batería instalada
-</td>
-<td> LED rojo tenue, pantalla apagada
-</td>
-<td> Apagado, sin batería instalada
-</td></tr></table>
+  <tr>
+    <th>Interruptor de energía</th>
+    <th>Cable USB</th>
+    <th>Batería</th>
+    <th>Lo que ves</th>
+    <th>Modo de energía del DSO Quad</th>
+  </tr>
+  <tr>
+    <td>APAGADO</td>
+    <td>Desconectado</td>
+    <td>Inactiva</td>
+    <td>LEDs apagados, pantalla apagada</td>
+    <td>Apagado</td>
+  </tr>
+  <tr>
+    <td>ENCENDIDO</td>
+    <td>Desconectado</td>
+    <td>Descargando</td>
+    <td>LEDs apagados, pantalla encendida</td>
+    <td>Normal (encendido)</td>
+  </tr>
+  <tr>
+    <td>ENCENDIDO</td>
+    <td>Desconectado</td>
+    <td>Descargando</td>
+    <td>LED verde encendido, pantalla apagada</td>
+    <td>Modo ahorro de energía: después de 600 segundos sin pulsar botones, la pantalla se apaga</td>
+  </tr>
+  <tr>
+    <td>ENCENDIDO</td>
+    <td>Desconectado</td>
+    <td>Vacía</td>
+    <td>LEDs apagados, pantalla apagada</td>
+    <td>Sin batería, apagado. Por favor conecta el cable USB: la batería necesita cargarse</td>
+  </tr>
+  <tr>
+    <td>ENCENDIDO</td>
+    <td>Conectado a USB 5V/500mA</td>
+    <td>Inactiva</td>
+    <td>LED rojo encendido, pantalla encendida</td>
+    <td>Encendido, <a href="https://forum.seeedstudio.com/viewtopic.php?p=6922#p6922" target="_blank" rel="noopener noreferrer">la batería no carga mientras está encendido</a></td>
+  </tr>
+  <tr>
+    <td>APAGADO</td>
+    <td>Conectado a USB 5V/500mA</td>
+    <td>Cargando</td>
+    <td>LED rojo encendido, pantalla apagada</td>
+    <td>Apagado, batería cargando</td>
+  </tr>
+  <tr>
+    <td>APAGADO</td>
+    <td>Puerto USB sin alimentación*</td>
+    <td>Inactiva</td>
+    <td>LEDs apagados, pantalla apagada</td>
+    <td>Apagado, no puede cargar</td>
+  </tr>
+  <tr>
+    <td>APAGADO</td>
+    <td>Conectado a USB 5V/500mA</td>
+    <td>Llena</td>
+    <td>LEDs apagados, pantalla apagada</td>
+    <td>Apagado, batería llena</td>
+  </tr>
+  <tr>
+    <td>APAGADO</td>
+    <td>Conectado a USB 5V/500mA</td>
+    <td>Sin batería instalada</td>
+    <td>LED rojo tenue, pantalla apagada</td>
+    <td>Apagado, sin batería instalada</td>
+  </tr>
+</table>
 
 *** Puerto USB no está suministrando energía:** si tu DSO Quad no está cargando, podría ser problema del puerto USB. Aquí algunos consejos para solución de problemas:
 
@@ -232,75 +193,67 @@ Existen varias versiones del DSO Quad, y el firmware para cada una es diferente.
 Consulta aquí el firmware más reciente: [DSO Quad Building Firmware](/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")  
 Aquí está el firmware más reciente bajo contrato especial con [FPGA(DFU，SYS，APP) v2.7.2](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/res/DS203.V2.72.zip).
 
-<table>
-<tr>
-<th> Pantalla de inicio
-</th>
-<th> Versión Hardware
-</th>
-<th> Firmware de fábrica
-</th>
-<th> Última actualización FW
-</th>
-<th> Notas
-</th></tr>
-<tr>
-<td>
-</td>
-<td> 2.7
-</td>
-<td> APP 2.53
-
-SYS 1.52
-
-FPGA 2.61
-
-</td>
-<td> APP P1.00
-
-SYS B1.52
-
-FPGA 2.61
-
-</td>
-<td> Seeed Studio envía esta versión.
-
-¡Este firmware tiene una GUI mucho mejor!
-
-(Además, el firmware de fábrica en 2.7 se congelaba mucho, por lo que se recomienda este firmware)
-
-![](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_26.jpg)
-</td>
-<td> 2.6
-</td>
-<td> APP 2.33
-
-SYS 1.33  
-FPGA 2.5
-
-</td>
-<td> APP 2.53
-
-SYS 1.52  
-FPGA 2.61
-
-Seeed Studio envió esta versión
-
- ![](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_22.jpg)
-
- 2.2  
- APP
-
-SYS 1.02
-
-</td>
-<td> [APP 2.34?](https://forum.seeedstudio.com/viewtopic.php?p=6760#p6760)
-
-[SYS 1.32?](https://forum.seeedstudio.com/viewtopic.php?p=6760#p6760)
-
-</td>
-<td> Los dispositivos versión 2.2 sólo fueron entregados a beta testers, con una [actualización gratuita a 2.6](http://ourdev.cn/bbs/bbs_content_all.jsp?bbs_sn=4138839). Esta versión no recibirá más actualizaciones de software.
-</td></tr></table>
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Pantalla de inicio</th>
+    <th>Versión Hardware</th>
+    <th>Firmware de fábrica</th>
+    <th>Última actualización FW</th>
+    <th>Notas</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td>2.7</td>
+    <td>
+      APP 2.53<br />
+      SYS 1.52<br />
+      FPGA 2.61
+    </td>
+    <td>
+      APP P1.00<br />
+      SYS B1.52<br />
+      FPGA 2.61
+    </td>
+    <td>
+      Seeed Studio envía esta versión.<br />
+      ¡Este firmware tiene una GUI mucho mejor!<br />
+      (Además, el firmware de fábrica en 2.7 se congelaba mucho, por lo que se recomienda este firmware)<br />
+      <img src="https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_26.jpg" alt="Versión 2.7" style="max-width: 150px;" />
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>2.6</td>
+    <td>
+      APP 2.33<br />
+      SYS 1.33<br />
+      FPGA 2.5
+    </td>
+    <td>
+      APP 2.53<br />
+      SYS 1.52<br />
+      FPGA 2.61
+    </td>
+    <td>
+      Seeed Studio envió esta versión<br />
+      <img src="https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_22.jpg" alt="Versión 2.6" style="max-width: 150px;" />
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>2.2</td>
+    <td>APP<br />SYS 1.02</td>
+    <td>
+      <a href="https://forum.seeedstudio.com/viewtopic.php?p=6760#p6760" target="_blank" rel="noopener noreferrer">APP 2.34?</a><br />
+      <a href="https://forum.seeedstudio.com/viewtopic.php?p=6760#p6760" target="_blank" rel="noopener noreferrer">SYS 1.32?</a>
+    </td>
+    <td>
+      Los dispositivos versión 2.2 sólo fueron entregados a beta testers,<br />
+      con una <a href="http://ourdev.cn/bbs/bbs_content_all.jsp?bbs_sn=4138839" target="_blank" rel="noopener noreferrer">actualización gratuita a 2.6</a>.<br />
+      Esta versión no recibirá más actualizaciones de software.
+    </td>
+  </tr>
+</table>
 
 Puedes encontrar más información en [https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=1929](https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=1929).
 
@@ -352,102 +305,84 @@ Cada uno de estos interruptores puede girarse hacia la izquierda o derecha, y pr
 
 La pantalla principal tiene estos bloques:
 
-<table>
-<tr>
-<th> Título
-</th>
-<th> Descripción del bloque
-</th></tr>
-<tr>
-<td> RUN/HOLD
-</td>
-<td> Pausar el osciloscopio, y volver a correrlo
-</td></tr>
-<tr>
-<td> CH(A)
-</td>
-<td> Gráfica y mediciones en color cian
-</td></tr>
-<tr>
-<td> CH(B)
-</td>
-<td> Gráfica y mediciones en color amarillo
-</td></tr>
-<tr>
-<td> CH(C)
-</td>
-<td> Gráfica y mediciones en color púrpura
-</td></tr>
-<tr>
-<td> CH(D)
-</td>
-<td> Gráfica y mediciones en color verde
-</td></tr>
-<tr>
-<td> SCAN
-</td>
-<td> Modo de disparo SCAN/AUTO/NORM (NORMAL)/SINGL (SINGLE)/NONE en color marrón
-</td></tr>
-<tr>
-<td> Generador de Señal
-</td>
-<td> Salida digital y analógica "wave out" en color azul
-</td></tr>
-<tr>
-<td> Disparo (Trigger)
-</td>
-<td> Todos los niveles de disparo (para CH(A) a CH(D)) y modo de disparo
-</td></tr>
-<tr>
-<td> YPOS
-</td>
-<td> YPOS
-</td></tr>
-<tr>
-<td> V1
-</td>
-<td> V1
-</td></tr>
-<tr>
-<td> V2
-</td>
-<td> V2
-</td></tr>
-<tr>
-<td> Desplazador horizontal
-</td>
-<td> Desplazador horizontal
-</td></tr>
-<tr>
-<td> T1
-</td>
-<td> T1
-</td></tr>
-<tr>
-<td> T2
-</td>
-<td> T2
-</td></tr>
-<tr>
-<td> XPOS
-</td>
-<td> XPOS
-</td></tr>
-<tr>
-<td> Delta V
-</td>
-<td> Diferencia entre los marcadores V1 y V2
-</td></tr>
-<tr>
-<td> Delta T
-</td>
-<td> Diferencia entre los marcadores T1 y T2
-</td></tr>
-<tr>
-<td> Mediciones en vivo
-</td>
-<td> Lecturas personalizables, por ejemplo: Vbt, FPS, Vdc, RMS, Max, Min, Vpp, FRQ, DUT, CIR, TL, TH
-</td></tr></table>
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Título</th>
+    <th>Descripción del bloque</th>
+  </tr>
+  <tr>
+    <td>RUN/HOLD</td>
+    <td>Pausar el osciloscopio, y volver a correrlo</td>
+  </tr>
+  <tr>
+    <td>CH(A)</td>
+    <td>Gráfica y mediciones en color cian</td>
+  </tr>
+  <tr>
+    <td>CH(B)</td>
+    <td>Gráfica y mediciones en color amarillo</td>
+  </tr>
+  <tr>
+    <td>CH(C)</td>
+    <td>Gráfica y mediciones en color púrpura</td>
+  </tr>
+  <tr>
+    <td>CH(D)</td>
+    <td>Gráfica y mediciones en color verde</td>
+  </tr>
+  <tr>
+    <td>SCAN</td>
+    <td>Modo de disparo SCAN/AUTO/NORM (NORMAL)/SINGL (SINGLE)/NONE en color marrón</td>
+  </tr>
+  <tr>
+    <td>Generador de Señal</td>
+    <td>Salida digital y analógica "wave out" en color azul</td>
+  </tr>
+  <tr>
+    <td>Disparo (Trigger)</td>
+    <td>Todos los niveles de disparo (para CH(A) a CH(D)) y modo de disparo</td>
+  </tr>
+  <tr>
+    <td>YPOS</td>
+    <td>YPOS</td>
+  </tr>
+  <tr>
+    <td>V1</td>
+    <td>V1</td>
+  </tr>
+  <tr>
+    <td>V2</td>
+    <td>V2</td>
+  </tr>
+  <tr>
+    <td>Desplazador horizontal</td>
+    <td>Desplazador horizontal</td>
+  </tr>
+  <tr>
+    <td>T1</td>
+    <td>T1</td>
+  </tr>
+  <tr>
+    <td>T2</td>
+    <td>T2</td>
+  </tr>
+  <tr>
+    <td>XPOS</td>
+    <td>XPOS</td>
+  </tr>
+  <tr>
+    <td>Delta V</td>
+    <td>Diferencia entre los marcadores V1 y V2</td>
+  </tr>
+  <tr>
+    <td>Delta T</td>
+    <td>Diferencia entre los marcadores T1 y T2</td>
+  </tr>
+  <tr>
+    <td>Mediciones en vivo</td>
+    <td>Lecturas personalizables, por ejemplo: Vbt, FPS, Vdc, RMS, Max, Min, Vpp, FRQ, DUT, CIR, TL, TH</td>
+  </tr>
+</table>
 
 ### Medición de Voltaje
 
@@ -462,29 +397,26 @@ Ancho de banda de entrada digital [Este hilo del foro](https://forum.seeedstudio
 ### Definiciones
 
 <table>
-<tr>
-<th> Vpp
-</th>
-<td> Voltios pico a pico
-</td></tr>
-<tr>
-<th> sonda x1
-</th>
-<td> Mide señales de bajo voltaje. No exceder 80Vpp o podrías dañar tu DSO Quad. (Puede usarse como sonda de baja impedancia.)
-</td></tr>
-<tr>
-<th> sonda x10
-</th>
-<td> Mide señales de alto voltaje. No exceder 400Vpp o podrías dañar tu DSO Quad. (Puede usarse como sonda de alta impedancia.)
-
-Nota que los valores en pantalla son 1/10 de la entrada, así que multiplica por 10 mentalmente.
-
-</td></tr>
-<tr>
-<th> ...
-</th>
-<td> ...
-</td></tr></table>
+  <tr>
+    <th>Vpp</th>
+    <td>Voltios pico a pico</td>
+  </tr>
+  <tr>
+    <th>sonda x1</th>
+    <td>Mide señales de bajo voltaje. No exceder 80Vpp o podrías dañar tu DSO Quad. (Puede usarse como sonda de baja impedancia.)</td>
+  </tr>
+  <tr>
+    <th>sonda x10</th>
+    <td>
+      Mide señales de alto voltaje. No exceder 400Vpp o podrías dañar tu DSO Quad. (Puede usarse como sonda de alta impedancia.)<br /><br />
+      Nota que los valores en pantalla son 1/10 de la entrada, así que multiplica por 10 mentalmente.
+    </td>
+  </tr>
+  <tr>
+    <th>...</th>
+    <td>...</td>
+  </tr>
+</table>
 
 ### Requisitos
 

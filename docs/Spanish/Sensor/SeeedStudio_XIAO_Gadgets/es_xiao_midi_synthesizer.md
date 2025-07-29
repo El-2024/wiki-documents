@@ -567,9 +567,10 @@ Ahora que ya tenemos la biblioteca instalada y entendemos las funciones básicas
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
 
-<div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Descarga Arduino IDE</font></span></strong>
-    </a>
+<div class="download_arduino_container" style="text-align: center;">
+  <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
+    <strong><span style="color: #FFFFFF; font-size: 1.25rem;">Descarga Arduino IDE</span></strong>
+  </a>
 </div>
 
 **Paso 2.** Selecciona el modelo de tu placa de desarrollo y agrégalo al IDE de Arduino.

@@ -22,9 +22,10 @@ import TabItem from '@theme/TabItem';
 
 <iframe class="youtube-video-r" src="https://www.youtube.com/embed/PKMcutZDjDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<div class="button-container">
-<a class="button-style" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">
-        Consigue uno ahora 🖱️</a>
+<div className="get_one_now_container" style={{ textAlign: "center" }}>
+  <a className="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">
+    <strong>🖱️ Cómpralo</strong>
+  </a>
 </div>
 
 Desbloquea todo el potencial de tu hogar inteligente integrando el **SenseCAP Indicator** con **Home Assistant**. Esta poderosa combinación te permite monitorear y controlar tu entorno con una facilidad sin precedentes.

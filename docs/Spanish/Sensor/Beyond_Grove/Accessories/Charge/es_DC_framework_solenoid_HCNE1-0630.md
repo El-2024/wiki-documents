@@ -66,47 +66,41 @@ Rendimiento esperado:
 ![](https://files.seeedstudio.com/wiki/DC_framework_solenoid_HCNE1-0630/img/HCNE1-0520-3-.jpg)
 
 <table>
-  <tbody><tr>
-      <th>No.
-      </th>
-      <th>Componente
-      </th></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 1
-      </td>
-      <td width={150}>  Estructura fija
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 2
-      </td>
-      <td width={150}>  Cubierta
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 3
-      </td>
-      <td width={150}>  Núcleo móvil
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 4
-      </td>
-      <td width={150}>  Núcleo fijo
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 5
-      </td>
-      <td width={150}>  Eje del solenoide
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 6
-      </td>
-      <td width={150}>  Solenoide
-      </td></tr>
-    <tr style={{fontSize: '90%'}}>
-      <td width={150}> 7
-      </td>
-      <td width={150}>  Conducto
-      </td></tr></tbody></table>
-
+  <tbody>
+    <tr>
+      <th>No.</th>
+      <th>Componente</th>
+    </tr>
+    <tr style="font-size:90%;">
+      <td width="150">1</td>
+      <td width="150">Estructura fija</td>
+    </tr>
+    <tr style="font-size:90%;">
+      <td width="150">2</td>
+      <td width="150">Cubierta</td>
+    </tr>
+    <tr style="font-size:90%;">
+      <td width="150">3</td>
+      <td width="150">Núcleo móvil</td>
+    </tr>
+    <tr style="font-size:90%;">
+      <td width="150">4</td>
+      <td width="150">Núcleo fijo</td>
+    </tr>
+    <tr style="font-size:90%;">
+      <td width="150">5</td>
+      <td width="150">Eje del solenoide</td>
+    </tr>
+    <tr style="font-size:90%;">
+      <td width="150">6</td>
+      <td width="150">Solenoide</td>
+    </tr>
+    <tr style="font-size:90%;">
+      <td width="150">7</td>
+      <td width="150">Conducto</td>
+    </tr>
+  </tbody>
+</table>
 
 ![](https://files.seeedstudio.com/wiki/DC_framework_solenoid_HCNE1-0630/img/HCNE1-0520-4-.jpg)
 

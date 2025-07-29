@@ -20,10 +20,12 @@ import TabItem from '@theme/TabItem';
 
 <br></br>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
-    </a>
+<div class="get_one_now_container" style="text-align: center;">
+  <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html">
+    <strong><span style="color: #FFFFFF; font-size: 1.25rem;">🖱️ Consigue uno ahora</span></strong>
+  </a>
 </div>
+
 
 ## Introducción a Home Assistant
 
@@ -38,10 +40,12 @@ Home Assistant es una potente plataforma de automatización del hogar de código
 - **Automatización Potente**: Crea reglas de automatización sofisticadas que pueden responder a diversos disparadores como hora, estado de dispositivos, lecturas de sensores y más.
 - **Panel Personalizable**: Diseña tu propia interfaz para mostrar la información que más te importe.
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.home-assistant.io/"><strong><span><font color={'FFFFFF'} size={"4"}> Aprende Más 🖱️</font></span></strong>
-    </a>
+<div class="get_one_now_container" style="text-align: center;">
+  <a class="get_one_now_item" href="https://www.home-assistant.io/">
+    <strong><span style="color: #FFFFFF; font-size: 1.25rem;">Aprende Más 🖱️</span></strong>
+  </a>
 </div>
+
 
 ### ¿Por qué usar una pantalla ePaper con Home Assistant?
 

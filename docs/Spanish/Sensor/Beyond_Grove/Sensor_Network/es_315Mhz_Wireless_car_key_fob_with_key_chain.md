@@ -38,20 +38,21 @@ Este es un control remoto inalámbrico estilo **llave de auto** con **4 botones*
 ## Historial de versiones
 
 <table>
-<tr>
-<th> Versión
-</th>
-<th> Descripción
-</th>
-<th> Lanzamiento
-</th></tr>
-<tr>
-<td width="300px"> v0.9b
-</td>
-<td width="500px"> Primera versión pública
-</td>
-<td width="200px"> 04-Nov-2009
-</td></tr></table>
+  <thead>
+    <tr>
+      <th>Versión</th>
+      <th>Descripción</th>
+      <th>Lanzamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="300px">v0.9b</td>
+      <td width="500px">Primera versión pública</td>
+      <td width="200px">04-Nov-2009</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Soporte Técnico y Discusión de Producto
 Si tienes algún problema técnico, envía tu consulta en nuestro [foro](http://forum.seeedstudio.com/).  

@@ -20,7 +20,7 @@ The Things Stack es un servidor de red LoRaWAN de nivel empresarial basado en un
 ## Conexión a The Things Network
 
 ### Crear una cuenta nueva  
-Sitio web de TTN: <https://www.thethingsnetwork.org/>
+Sitio web de [TTN](https://www.thethingsnetwork.org/)
 
 ### Configurar el sensor
 

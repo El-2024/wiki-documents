@@ -24,7 +24,7 @@ Consulta la guía “[Cómo conectar sensores S210X a The Things Network](https:
 
 ## Paso 2: Enviar datos desde TTN a Datacake
 
-1. Crea una nueva cuenta en: <https://datacake.co/>  
+1. Crea una nueva cuenta en [Datacake](https://datacake.co/)  
 2. Haz clic en **"Devices" -> "Add Device"**
 
 ![](https://files.seeedstudio.com/wiki/SenseCAPS210X/Datacake/image2.png)

@@ -123,7 +123,7 @@ Por favor, utiliza la tecla **F6** para seleccionar primero el dispositivo **see
 
 ## Descripción general de uso
 
-Para ejecutar los ejemplos que siguen, clona el repositorio <https://github.com/respeaker/mic_hat.git> en tu Raspberry Pi.
+Para ejecutar los ejemplos que siguen, clona el [repositorio](https://github.com/respeaker/mic_hat.git) en tu Raspberry Pi.
 
 ```bash
 git clone https://github.com/respeaker/mic_hat.git
@@ -145,7 +145,7 @@ Cada LED APA102 a bordo tiene un chip controlador adicional. Este chip se encarg
 python3 interfaces/pixels.py
 ```
 
-<video width={512} height={384} controls preload>
+<video width="512" height="384" controls preload="auto">
   <source src="https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/led.mp4" />
   <source src="https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/led.webmhd.webm" />
 </video>
@@ -317,7 +317,7 @@ Apaga las luces con el comando:
 
 ### Código Fuente de la Demo
 
-La demo está construida con el **[Picovoice SDK](https://github.com/Picovoice/picovoice)**. El código fuente está disponible en GitHub en: <https://github.com/Picovoice/picovoice/tree/master/demo/respeaker>.
+La demo está construida con el **[Picovoice SDK](https://github.com/Picovoice/picovoice)**. El código fuente está disponible en [GitHub](https://github.com/Picovoice/picovoice/tree/master/demo/respeaker).
 
 #### Palabras de Activación Diferentes
 
@@ -327,7 +327,7 @@ El [**Picovoice SDK**](https://github.com/Picovoice/picovoice) incluye palabras 
 
 Los comandos de iluminación están definidos por un contexto *Speech-to-Intent* de Picovoice. Puedes diseñar y entrenar contextos escribiendo la gramática permitida usando Picovoice Console. Puedes probar los cambios en el navegador usando el botón de micrófono.
 
-Visita Picovoice Console: <https://picovoice.ai/console/> y crea una cuenta. Usa el editor **Rhino Speech-to-Intent** para crear contextos y entrenarlos para Raspberry Pi.
+Visita [Picovoice Console](https://picovoice.ai/console/) y crea una cuenta. Usa el editor **Rhino Speech-to-Intent** para crear contextos y entrenarlos para Raspberry Pi.
 
 <div align="center"><img width ="{700}" src="https://files.seeedstudio.com/wiki/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/respeaker_demo_console_edit.gif"/></div>
 
@@ -403,7 +403,7 @@ Colores asociados a las palabras de activación soportadas en esta demo:
 
 #### Multiple Wake Word Example Source Code
 
-Código fuente completo disponible en: <https://github.com/Picovoice/porcupine/tree/master/demo/respeaker>.
+Código fuente completo disponible en este [repositorio](https://github.com/Picovoice/porcupine/tree/master/demo/respeaker).
 
 ## Keyword spotting con ReSpeaker 2-Mic Pi HAT y Mycroft Precise
 
@@ -547,8 +547,7 @@ Apaga las luces con:
 
 ### Código Fuente de la Demo
 
-La demo está construida con el **[Picovoice SDK](https://github.com/Picovoice/picovoice)**. El código fuente de la demo está disponible en GitHub en:  
-<https://github.com/Picovoice/picovoice/tree/master/demo/respeaker-rpi0>.
+La demo está construida con el **[Picovoice SDK](https://github.com/Picovoice/picovoice)**. El código fuente de la demo está disponible en [GitHub](https://github.com/Picovoice/picovoice/tree/master/demo/respeaker-rpi0).
 
 ### Diferentes Palabras de Activación
 
@@ -559,7 +558,7 @@ El [**Picovoice SDK**](https://github.com/Picovoice/picovoice) incluye ejemplos 
 Los comandos de iluminación están definidos mediante un *contexto de Speech-to-Intent* de Picovoice.  
 Puedes diseñar y entrenar contextos escribiendo la gramática permitida en la Picovoice Console.
 
-Puedes probar tus cambios en el navegador mientras editas usando el botón del micrófono. Ingresa a la Picovoice Console (<https://picovoice.ai/console/>) y crea una cuenta.  
+Puedes probar tus cambios en el navegador mientras editas usando el botón del micrófono. Ingresa a la [Picovoice Console](https://picovoice.ai/console/) y crea una cuenta.  
 Usa el **editor Rhino Speech-to-Intent** para crear contextos, y luego entrénalos para Raspberry Pi Zero.
 
 <div align="center"><img width ="{700}" src="https://files.seeedstudio.com/wiki/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/respeaker_demo_console_edit.gif"/></div>
@@ -665,7 +664,7 @@ A continuación se muestran los colores asignados a las palabras clave:
 
 #### Código Fuente del Ejemplo
 
-Consulta el código fuente completo en: <https://github.com/Picovoice/porcupine/tree/master/demo/respeaker-rpi0>.
+Consulta el [código fuente completo](https://github.com/Picovoice/porcupine/tree/master/demo/respeaker-rpi0).
 
 ### Soporte Técnico de Picovoice
 

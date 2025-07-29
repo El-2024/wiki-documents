@@ -62,9 +62,13 @@ Si no usas el entorno completo de ESP-IDF, también es posible flashear los arch
 
 Descarga el firmware:
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241106.zip"><strong><span><font color={'FFFFFF'} size={"4"}> Descarga ⏬ </font></span></strong>
-    </a>
+<div className="get_one_now_container" style={{ textAlign: "center" }}>
+  <a
+    className="get_one_now_item"
+    href="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241106.zip"
+  >
+    <strong>⏬ Descarga</strong>
+  </a>
 </div>
 
 ## Personalizar y compilar el firmware

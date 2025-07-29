@@ -121,26 +121,27 @@ El **Wireless Sensor Node - Solar Kit** es un paquete fácil de usar creado para
 ---
 
 <table>
-<tr>
-<th> Elemento
-</th>
-<th> Especificación
-</th></tr>
-<tr>
-<td width="200px"> Lógica I/O del Grove - XBee Carrier
-</td>
-<td width="200px"> 3.3V
-</td></tr>
-<tr>
-<td> Batería LiPo
-</td>
-<td> 500mAH @ 3.7V
-</td></tr>
-<tr>
-<td> Panel Solar
-</td>
-<td> 0.5Watt @ 5.5V
-</td></tr></table>
+  <thead>
+    <tr>
+      <th>Elemento</th>
+      <th>Especificación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="200px">Lógica I/O del Grove - XBee Carrier</td>
+      <td width="200px">3.3 V</td>
+    </tr>
+    <tr>
+      <td>Batería LiPo</td>
+      <td>500 mAh @ 3.7 V</td>
+    </tr>
+    <tr>
+      <td>Panel Solar</td>
+      <td>0.5 W @ 5.5 V</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Uso
 ---

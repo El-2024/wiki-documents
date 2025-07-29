@@ -24,48 +24,42 @@ Este zumbador pasivo de tipo piezoeléctrico está hecho de plástico, con color
 
 <table>
 <tr>
-<th> Tipo
-</th>
-<th> SFB-55
-</th></tr>
+  <th> Tipo </th>
+  <th> SFB-55 </th>
+</tr>
 <tr>
-<td width="400px"> Voltaje nominal
-</td>
-<td width="400px"> 12 V
-</td></tr>
+  <td width="400px"> Voltaje nominal </td>
+  <td width="400px"> 12 V </td>
+</tr>
 <tr>
-<td> Corriente nominal
-</td>
-<td> 160 mA
-</td></tr>
+  <td> Corriente nominal </td>
+  <td> 160 mA </td>
+</tr>
 <tr>
-<td> Rango de voltaje
-</td>
-<td> 8~16 V
-</td></tr>
+  <td> Rango de voltaje </td>
+  <td> 8~16 V </td>
+</tr>
 <tr>
-<td> Potencia máxima
-</td>
-<td>12 W
-</td></tr>
+  <td> Potencia máxima </td>
+  <td> 12 W </td>
+</tr>
 <tr>
-<td> Salida de sonido
-</td>
-<td> ≥110 dBA
-</td></tr>
+  <td> Salida de sonido </td>
+  <td> ≥110 dBA </td>
+</tr>
 <tr>
-<td>Temperatura de operación
-</td>
-<td> -20~+50 °C
-</td></tr>
+  <td> Temperatura de operación </td>
+  <td> -20~+50 °C </td>
+</tr>
 <tr>
-<td>Temperatura de almacenamiento
-</td></tr>
+  <td> Temperatura de almacenamiento </td>
+  <td> N/D </td>
+</tr>
 <tr>
-<td>Peso
-</td>
-<td>80 g
-</td></tr></table>
+  <td> Peso </td>
+  <td> 80 g </td>
+</tr>
+</table>
 
 ## Dimensiones Mecánicas
 
@@ -74,20 +68,17 @@ Este zumbador pasivo de tipo piezoeléctrico está hecho de plástico, con color
 ## Registro de Versiones
 
 <table>
-<tr>
-<th> Revisión
-</th>
-<th> Descripción
-</th>
-<th> Fecha de Lanzamiento
-</th></tr>
-<tr>
-<td width="300px"> v0.9b
-</td>
-<td width="500px"> Lanzamiento público inicial
-</td>
-<td width="200px"> 08 de junio de 2009
-</td></tr></table>
+  <tr>
+    <th>Revisión</th>
+    <th>Descripción</th>
+    <th>Fecha de Lanzamiento</th>
+  </tr>
+  <tr>
+    <td>v0.9b</td>
+    <td>Lanzamiento público inicial</td>
+    <td>08 de junio de 2009</td>
+  </tr>
+</table>
 
 ## Soporte Técnico y Discusión del Producto
 

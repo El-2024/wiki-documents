@@ -26,104 +26,84 @@ Este kit se utiliza para comunicación inalámbrica **unidireccional** a una fre
 
 ### Módulo Transmisor
 
-<table  cellspacing="0" width="80%">
-<tr>
-<th scope="col"> Parámetro
-</th>
-<th scope="col"> Mínimo
-</th>
-<th scope="col"> Típico
-</th>
-<th scope="col"> Máximo
-</th>
-<th scope="col"> Unidad
-</th></tr>
-<tr>
-<th scope="row"> Voltaje de trabajo
-</th>
-<td> 3.0
-</td>
-<td> 5.0
-</td>
-<td> 12.0
-</td>
-<td> VDC
-</td></tr>
-<tr>
-<th scope="row"> Corriente
-</th>
-<td> 3
-</td>
-<td> /
-</td>
-<td> 10
-</td>
-<td> mA
-</td></tr>
-<tr>
-<th scope="row">Modo de trabajo
-</th>
-<td colspan="3"> ASK
-</td>
-<td> /
-</td></tr>
-<tr>
-<th scope="row"> Potencia de transmisión
-</th>
-<td colspan="3"> 15
-</td>
-<td> mW
-</td></tr>
-<tr>
-<th scope="row"> Distancia de trabajo
-</th>
-<td> 40
-</td>
-<td> /
-</td>
-<td> 100
-</td>
-<td> m
-</td></tr></table>
+<table cellspacing="0" width="80%">
+  <thead>
+    <tr>
+      <th scope="col">Parámetro</th>
+      <th scope="col">Mínimo</th>
+      <th scope="col">Típico</th>
+      <th scope="col">Máximo</th>
+      <th scope="col">Unidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Voltaje de trabajo</th>
+      <td>3.0</td>
+      <td>5.0</td>
+      <td>12.0</td>
+      <td>VDC</td>
+    </tr>
+    <tr>
+      <th scope="row">Corriente</th>
+      <td>3</td>
+      <td>–</td>
+      <td>10</td>
+      <td>mA</td>
+    </tr>
+    <tr>
+      <th scope="row">Modo de trabajo</th>
+      <td colspan="3">ASK</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <th scope="row">Potencia de transmisión</th>
+      <td colspan="3">15</td>
+      <td>mW</td>
+    </tr>
+    <tr>
+      <th scope="row">Distancia de trabajo</th>
+      <td>40</td>
+      <td>–</td>
+      <td>100</td>
+      <td>m</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Módulo Receptor
 
-<table  cellspacing="0" width="80%">
-<tr>
-<th scope="col"> Parámetro
-</th>
-<th scope="col"> Típico
-</th>
-<th scope="col"> Unidad
-</th></tr>
-<tr>
-<th scope="row"> Voltaje de trabajo
-</th>
-<td> 5
-</td>
-<td> VDC
-</td></tr>
-<tr>
-<th scope="row"> Corriente en reposo
-</th>
-<td> 5
-</td>
-<td> mA
-</td></tr>
-<tr>
-<th scope="row"> Sensibilidad del receptor
-</th>
-<td> -103
-</td>
-<td> dBm
-</td></tr>
-<tr>
-<th scope="row"> Frecuencia de operación
-</th>
-<td> 315
-</td>
-<td> MHz
-</td></tr></table>
+<table cellspacing="0" width="80%">
+  <thead>
+    <tr>
+      <th scope="col">Parámetro</th>
+      <th scope="col">Típico</th>
+      <th scope="col">Unidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Voltaje de trabajo</th>
+      <td>5</td>
+      <td>VDC</td>
+    </tr>
+    <tr>
+      <th scope="row">Corriente en reposo</th>
+      <td>5</td>
+      <td>mA</td>
+    </tr>
+    <tr>
+      <th scope="row">Sensibilidad del receptor</th>
+      <td>-103</td>
+      <td>dBm</td>
+    </tr>
+    <tr>
+      <th scope="row">Frecuencia de operación</th>
+      <td>315</td>
+      <td>MHz</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Ideas de Aplicación
 
@@ -225,20 +205,21 @@ Este es solo un ejemplo simple de comunicación transmisor–receptor como refer
 ## Historial de versiones
 
 <table>
-<tr>
-<th> Versión
-</th>
-<th> Descripción
-</th>
-<th> Fecha de lanzamiento
-</th></tr>
-<tr>
-<td width="300px"> v0.9b
-</td>
-<td width="500px"> Primera versión pública
-</td>
-<td width="200px"> 03,Oct,2011
-</td></tr></table>
+  <thead>
+    <tr>
+      <th>Versión</th>
+      <th>Descripción</th>
+      <th>Fecha de lanzamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="300px">v0.9b</td>
+      <td width="500px">Primera versión pública</td>
+      <td width="200px">03, Oct, 2011</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Recursos
 

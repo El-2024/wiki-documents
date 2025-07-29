@@ -208,11 +208,11 @@ Una vez seleccionado el **Modo Contador** como tipo de entrada, configura lo sig
 
 | **Parámetro** | **Descripción** |
 |--------------|-----------------|
-| Entrada digital | Determina el tipo de pulso válido:<br>**Pull High**: válido al detectar un flanco ascendente.<br>**Pull Low**: válido al detectar un flanco descendente. <br>Seleccionamos **Pull High**. |
-| Filtro digital | Habilita esta opción si el ancho del pulso supera los 10 ms. <br>**Habilitado por defecto.** |
-| Reiniciar el conteo tras reinicio | Si está activado, el contador se reinicia a 0 al reiniciar el datalogger.<br>**Desactivado por defecto.** |
-| Y = Ax + B | Fórmula de conversión:<br>**Y** es el valor que se sube,<br>**x** es el valor del contador.<br>A = 0.2, B = 0. |
-| Conteo por unidad de tiempo | Si se habilita, el valor subido será el conteo por hora (por ejemplo, 1000/h). <br>**Desactivado** aquí. |
+| Entrada digital | Determina el tipo de pulso válido:<br />**Pull High**: válido al detectar un flanco ascendente.<br />**Pull Low**: válido al detectar un flanco descendente.<br />Seleccionamos **Pull High**. |
+| Filtro digital | Habilita esta opción si el ancho del pulso supera los 10 ms.<br />**Habilitado por defecto.** |
+| Reiniciar el conteo tras reinicio | Si está activado, el contador se reinicia a 0 al reiniciar el datalogger.<br />**Desactivado por defecto.** |
+| Y = Ax + B | Fórmula de conversión:<br />**Y** es el valor que se sube,<br />**x** es el valor del contador.<br />A = 0.2, B = 0. |
+| Conteo por unidad de tiempo | Si se habilita, el valor subido será el conteo por hora (por ejemplo, 1000/h).<br />**Desactivado** aquí. |
 
 Una vez completada la configuración, pulsa **"Back to Home"**. La conexión Bluetooth con el nodo se desconectará automáticamente y el dispositivo intentará conectarse a la red:
 
