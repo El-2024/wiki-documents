@@ -1,0 +1,130 @@
+---
+description: This article is a collection page for the reTerminal E10xx series.
+title: reTerminal E10xx Series
+image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
+slug: /reterminal_e10xx_main_page
+sidebar_position: 1
+last_update:
+  date: 07/21/2025
+  author: Citric
+---
+
+# reTerminal E10xx Series Overview
+
+## Introduction
+
+The reTerminal E10xx series represents Seeed Studio's family of ePaper display terminals designed for low-power information display applications. These devices combine the power efficiency of ePaper technology with wireless connectivity to create versatile displays for smart homes, retail environments, office spaces, and more.
+
+Unlike traditional displays that consume power continuously, the reTerminal E10xx series only uses power when changing content, making them ideal for applications requiring extended battery life and always-on information display.
+
+
+## reTerminal E1001
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/24.png" style={{width:500, height:'auto'}}/></div><br />
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+  <a class="get_one_now_item" href="https://wiki.seeedstudio.com/getting_started_with_reterminal_e1001">
+    <strong><span><font color={'FFFFFF'} size={"4"}>reTerminal E1001 Wiki</font></span></strong>
+  </a>
+  <a class="get_one_now_item" href="/reterminal_e10xx_main_page">
+    <strong><span><font color={'FFFFFF'} size={"4"}>Get One Now</font></span></strong>
+  </a>
+</div><br />
+
+The reTerminal E1001 features a 7.5-inch monochrome ePaper display with 4-level grayscale capability. With its 800×480 resolution, it delivers crisp text and clear images while consuming minimal power. The monochrome display is perfect for applications where text legibility and battery life are priorities.
+
+### Key Features
+
+- 7.5-inch monochrome ePaper display with 4-level grayscale
+- 800×480 resolution
+- Ultra-low power consumption for extended battery life
+- Perfect for text-heavy applications like calendars, to-do lists, and information displays
+
+## reTerminal E1002
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/25.png" style={{width:500, height:'auto'}}/></div><br />
+
+The reTerminal E1002 features a vibrant 7.3-inch six-color ePaper display with ACeP (Advanced Color ePaper) technology. This color display offers the same power efficiency benefits of ePaper technology while allowing for more visually engaging content with multiple colors, making it ideal for applications where visual distinction and aesthetic appeal are important.
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+  <a class="get_one_now_item" href="https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002">
+    <strong><span><font color={'FFFFFF'} size={"4"}>reTerminal E1002 Wiki</font></span></strong>
+  </a>
+  <a class="get_one_now_item" href="/reterminal_e10xx_main_page">
+    <strong><span><font color={'FFFFFF'} size={"4"}>Get One Now</font></span></strong>
+  </a>
+</div><br />
+
+### Key Features
+
+- 7.3-inch six-color ePaper display with ACeP technology
+- 800×480 resolution
+- Rich color representation while maintaining low power consumption
+- Perfect for gallery displays, colorful dashboards, and visually oriented applications
+
+## SenseCraft HMI Platform
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/23.png" style={{width:1000, height:'auto'}}/></div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://sensecraft.seeed.cc/hmi">
+            <strong><span><font color={'FFFFFF'} size={"4"}> SenseCraft HMI 🖱️</font></span></strong>
+    </a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_hmi_overview">
+            <strong><span><font color={'FFFFFF'} size={"4"}> SenseCraft HMI Wiki</font></span></strong>
+  </a>
+</div><br />
+
+All reTerminal E10xx devices are designed to work with the SenseCraft HMI platform, providing an intuitive web interface for creating and deploying content to your devices. Key features include:
+
+- **AI Generator**: Create dashboards using text prompts
+- **Gallery**: Display images and slideshows
+- **Canvas**: Design custom layouts with drag-and-drop tools
+- **RSS Integration**: Display news and updates from web feeds
+- **Web Content Display**: Show content from web pages
+
+## Applications
+
+The reTerminal E10xx series supports multiple development platforms and frameworks:
+
+- [reTerminal E10xx Work with ESPHome for Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome)
+
+  Explains how to plug the reTerminal E10xx into Home Assistant and write simple programs to draw simple graphs in ESPHome via YAML.
+
+- [Advanced ESPHome Usage of reTerminal E10xx in Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome_advanced)
+
+  Explains how to use reTerminal's hardware and advanced features such as deep sleep and comprehensive use cases in Home Assistant.
+
+- [reTerminal E10xx Works with TRMNL](https://wiki.seeedstudio.com/reterminal_e10xx_trmnl)
+
+  Utilize the dedicated TRMNL framework for simplified development and rapid deployment.
+
+<!-- - [GxEPD2 Library Support](https://wiki.seeedstudio.com/reTerminal_GxEPD2)
+Leverage the powerful GxEPD2 library for advanced ePaper display control and rendering.
+
+- [LVGL + SquareLine Studio](https://wiki.seeedstudio.com/reTerminal_LVGL_SquareLine)
+Create rich graphical interfaces using LVGL and the visual SquareLine Studio designer. -->
+
+## Resources
+
+- [SenseCraft HMI Documentation](/reterminal_e10xx_main_page)
+- [ESP32S3 Datasheet](/reterminal_e10xx_main_page)
+- [GitHub Repository](/reterminal_e10xx_main_page)
+
+## Tech Support & Product Discussion
+
+Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+
+<div class="table-center">
+  <div class="button_tech_support_container">
+  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+  <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+  </div>
+
+  <div class="button_tech_support_container">
+  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+  <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+  </div>
+</div>
+
+

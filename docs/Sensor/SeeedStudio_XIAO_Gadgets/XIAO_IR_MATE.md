@@ -105,6 +105,11 @@ When the network is not configured, the device will automatically create a Wi-Fi
 ### Step 3: Connect to the Hotspot and Configure Network
 
 1.  Open the Wi-Fi settings on your phone or computer, search for and connect to the network named **XIAO IR Mate**.
+
+:::note
+The hotspot has a default network password of ‘12345678’.
+:::
+
 2.  After a successful connection, your device will usually automatically open a configuration page. If it doesn't, please manually open a browser and visit **[http://192.168.4.1](http://192.168.4.1)**.
 3.  On this page, you will see a list of Wi-Fi networks. Please select your home's **2.4GHz Wi-Fi network (SSID)** and enter the correct password.
 4.  Click "Connect" or "Save". The device will attempt to connect to the Wi-Fi network you provided.

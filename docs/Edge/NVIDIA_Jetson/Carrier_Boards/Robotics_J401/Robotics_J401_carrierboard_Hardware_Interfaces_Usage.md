@@ -753,9 +753,122 @@ The Robotics J401 carrier board features a Pinhole Button for user interaction, 
 
 ## CAN
 
-The Robotics J401 provides one CAN0 interface integrated into the XT30 (2+2) power connector for convenient power and data transmission.
-Additionally, offers one CAN1 interface via two standard JST 4-pin headers for flexible CAN bus connectivity.
+CAN (Controller Area Network) is a robust vehicle bus standard that enables microcontrollers and devices to communicate with each other without a host computer.
+The Robotics J401 provides one CAN0 interface integrated into the XT30 (2+2) power connector for convenient power and data transmission.Additionally, offers 3 CAN1 interface via two standard JST 4-pin headers for flexible CAN bus connectivity.
 
+### CAN Communication
+
+In the [datasheet](https://files.seeedstudio.com/products/NVIDIA-Jetson/reComputer_robotics_J401_datasheet.pdf), you can find the wiring diagram for the CAN0/CAN1 interface as shown below:
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/can1_hearder.png"/>
+</div>
+
+Here we will demonstrate to you how to conduct data communication using the CAN1 interface, by utilizing the [USB to CAN Analyzer Adapter](https://www.seeedstudio.com/USB-CAN-Analyzer-p-2888.html).
+
+### Hardware Connection
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/can1_c.png"/>
+</div>
+
+According to the connection method shown in the figure below, connect CAN1's CANL, CANH, and GND to the corresponding CANL, CANH, and GND ports of the USB to CAN tool respectively.
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/can1_c1.png"/>
+</div>
+
+In our case, according to the adapter that we used, we have downloaded and installed the software which can be found [here](https://github.com/SeeedDocument/USB-CAN-Analyzer/tree/master/res/Program).
+
+**Step 1.** Configure the CAN1 interface:
+
+```bash
+#Set the bit rate
+sudo ip link set can1 type can bitrate 500000
+#Enable CAN1
+sudo ip link set can1 up
+```
+**Step 2.** Configure the PC data receiving software.
+Please configure the communication settings as shown in the following picture.
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/can_software.png"/>
+</div>
+
+**Step 3.** Jetson sends data to the PC:
+```bash
+cansend can1 123#abcdabcd
+```
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/pc_rcan1.png"/>
+</div>
+
+**Step 3.** PC sends data to the Jetson:
+```bash
+#CAN1 monitors PC data
+candump can1
+```
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/can1.png"/>
+</div>
+
+It can be seen that the Jetson terminal has received the data sent by the PC.
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/can1_r.png"/>
+</div>
+
+### CAN FD Mode 
+
+Here, I use CAN0 to connect to CAN1 to demonstrate how multiple Jetson devices can communicate via the CAN interface.
+
+### Hardware Connection
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/can0_can1_c.jpg"/>
+</div>
+
+**Step 1.** Remove the bottom cover and set both 120Ω termination resistors to the ​ON position.
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/on.jpg"/>
+</div>
+
+**Step 2.** Configure CAN0 and CAN1 interfaces:
+
+```bash
+#close the interface
+
+sudo ip link set can0 down
+sudo ip link set can1 down
+
+#Set to FD mode
+
+sudo ip link set can0 type can bitrate 500000 dbitrate 2000000 fd on
+sudo ip link set can1 type can bitrate 500000 dbitrate 2000000 fd on
+
+#open the interface
+sudo ip link set can0 up
+sudo ip link set can1 up
+
+```
+**Step 3.** Open a new terminal to listen to CAN1 and via CAN0 send data to CAN1:
+
+```bash
+#open a new terminal and run
+candump can1
+
+#another terminal sends data
+cansend can0 123##011112233445566778899AABBCCDDEEFF112233445566778899AABBCCDDEEFF112233445566778899AABBCCDDEEFF
+```
+:::info
+- `123` is ID
+- `##` Indicates CAN FD frame
+- The following is 64 bytes of data (a total of 128 hexadecimal characters)
+:::
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/can_fd.png"/>
+</div>
 
 
 ## UART
@@ -817,26 +930,231 @@ python3 uart_test.py
 
 ## I2C
 
-Robotics J401 provides two I2C interfaces (I2C0 and I2C1) through standard JST 4-pin headers.
+Robotics J401 provides two I2C interfaces (IIC0 and IIC1) through standard JST 4-pin headers.
 Enables easy connection of sensors and peripherals for system expansion.
 
+### Hardware Connection
+The Robotics J401 features two 4-pin GH-1.25 IIC interfaces, IIC0 and IIC1.
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/iic.jpg"/>
+</div> 
+
+In the [datasheet](https://files.seeedstudio.com/products/NVIDIA-Jetson/reComputer_robotics_J401_datasheet.pdf), you can find the wiring diagram for the IIC0/IIC1 4-pin GH-1.25 interface as shown below:
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/iic.png"/>
+</div> 
+Select an IIC interface device for testing; the choice is up to you. Here, we use a [Arduino-Uno-Rev4-Minima](https://www.seeedstudio.com/Arduino-Uno-Rev4-Minima-p-5716.html)  to test I2C0/I2C1.
 
 
-### Extension Port
+The testing process here involves scanning for the addresses of externally connected devices on IIC0/IIC1.
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/recomputer_mini/IICdraw.png"/>
+</div> 
 
-The Robotics j401 carrier board features a Camera Expansion Header for GMSL2 board.
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/iic_connect.jpg"/>
+</div> 
+
+### Usage Instruction
+
+**Step 1.** Download the [Arduino IDE](https://www.arduino.cc/en/software/) to upload he code.
+
+**Step 2.** Select the type of the development board.
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/slect_board.png"/>
+</div> 
+
+**Step 3.** Restart the IDE and upload you code.
+
+```bash
+#code example
+#include <Wire.h>
+
+void setup() {
+  Wire.begin(0x08); // Set the I2C slave address to 0x08
+  Wire.onReceive(receiveEvent);
+  Wire.onRequest(requestEvent);
+}
+
+void loop() {
+  delay(100);
+}
+
+void receiveEvent(int howMany) {
+  // Callback when receiving host data
+  while (Wire.available()) {
+    char c = Wire.read();
+    // Data received can be processed here.
+  }
+}
+
+void requestEvent() {
+  // Callback when the host requests data
+  Wire.write("A"); // Return a byte of data
+}
+```
+**Step 4.** Jetson install the tools for IIC testing.
+
+```bash
+sudo apt update
+sudo apt-get install i2c-tools
+```
+**Step 5.** Run the following command in the terminal to view the mapped names on the IIC bus:
+
+```bash
+i2cdetect -l
+```
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/iic_l.png"/>
+</div> 
+
+**Step 6.** Run the following commands to scan on IIC0:
+
+```bash
+sudo i2cdetect -y -r 1
+```
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/iic_detect.png"/>
+</div> 
+
+We can see that the device connected to IIC0 is set to address 0x08.
+
+## Extension Port
+
+The Robotics j401 carrier board features a Camera Expansion Header for GMSL extension board.It can simultaneously connect and operate four GMSL cameras at the same time.
 
 ### Hardware Connection
 
-Here are the Robotics j401 carrier board GMSL2 camera expansion board connection slot(need to prepare an extension board in advance):
+Here are the Robotics j401 carrier board GMSL camera expansion board connection slot(need to prepare an extension board in advance):
 
 <div align="center">
   <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/exb.png"/>
 </div>
 
+The following are the GMSL camera models that we have already supported:
+
+- [SG3S-ISX031C-GMSL2F](https://www.seeedstudio.com/SG3S-ISX031C-GMSL2F-p-6245.html)
+- SG3S-ISX031C-GMSL2
+- SG2-AR0233C-5200-G2A
+- SG2-IMX390C-5200-G2A
+- SG8S-AR0820C-5300-G2A
+- Orbbec Gemini 335Lg
+
+### Usage Instruction
+
+:::note
+Before enabling the GMSL functionality, please ensure that you have installed a JetPack version with the GMSL expansion board driver.
+:::
+
+### Configure the Jetson IO file
+
+```bash
+sudo /opt/nvidia/jetson-io/jetson-io.py
+```
 <div align="center">
-  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/gmsl_port.jpg"/>
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/io_p1.png"/>
 </div>
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/io_p2.png"/>
+</div>
+
+:::note
+There are three overlay files in total, namely Seeed GMSL 1X4 3G, Seeed GMSL 1X4 6G, Seeed GMSL 1X4, and Orbbec Gemini 335Lg. These correspond to the 3G camera of SG3S, the 6G camera of SG2, and the camera of Orbbec respectively. As shown in Figure 3, please configure the io file according to the model of your camera.
+:::
+
+**step 2.** Install the video interface configuration tools.
+```bash
+sudo apt update
+sudo apt install v4l-utils
+```
+### Use the camera of Gemini 335Lg
+
+```bash
+#Download the Orbbec Gemini 335Lg visualization tool
+wget https://github.com/orbbec/OrbbecSDK_v2/releases/download/v2.4.8/OrbbecViewer_v2.4.8_202507031357_a1355db_linux_aarch64.zip
+#unzip and run the UI tool
+unzip OrbbecViewer_v2.4.8_202507031357_a1355db_linux_aarch64.zip
+cd OrbbecViewer_v2.4.8_202507031357_a1355db_linux_aarch64
+./OrbbecViewer
+```
+The first time you turn it on, you might need to update the firmware.
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/update.png"/>
+</div>
+
+Opening the data stream, you can view the video from the camera.
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/g_camera.png"/>
+</div> 
+
+### Use the cameras of SGxxx Series
+
+**step 1.** Set the channel format for the serializer and deserializer.The interface number in the figure corresponds to the serializer/deserializer number.
+
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/interface.jpg"/>
+</div> 
+
+```bash
+media-ctl -d /dev/media0 --set-v4l2 '"ser_0_ch_0":1[fmt:YUYV8_1X16/1920x1080]'
+media-ctl -d /dev/media0 --set-v4l2 '"des_ch_0":0[fmt:YUYV8_1X16/1920x1080]'
+media-ctl -d /dev/media0 --set-v4l2 '"ser_1_ch_0":1[fmt:YUYV8_1X16/1920x1080]'
+media-ctl -d /dev/media0 --set-v4l2 '"des_ch_1":0[fmt:YUYV8_1X16/1920x1080]'
+media-ctl -d /dev/media0 --set-v4l2 '"ser_2_ch_0":1[fmt:YUYV8_1X16/1920x1536]'
+media-ctl -d /dev/media0 --set-v4l2 '"des_ch_2":0[fmt:YUYV8_1X16/1920x1536]'
+media-ctl -d /dev/media0 --set-v4l2 '"ser_3_ch_0":1[fmt:YUYV8_1X16/3840x2160]'
+media-ctl -d /dev/media0 --set-v4l2 '"des_ch_3":0[fmt:YUYV8_1X16/3840x2160]'	
+```
+:::note
+`ser_0_ch_0` is the first channel of the decoder, `des_ch_0` is the serializer on the first camera, and the same applies to the others.If the connected camera has a different resolution, then the configuration here will be based on the actual format of the camera.
+We need to set the channel format for the serializer and deserializer every time the device restarts.
+:::
+
+**step 2.** Set the resolution of the camera.
+
+:::info
+Here we demonstrate how to configure cameras of different models and resolutions.
+:::
+
+```bash
+v4l2-ctl -V --set-fmt-video=width=1920,height=1080 -c sensor_mode=1  -d /dev/video0
+v4l2-ctl -V --set-fmt-video=width=1920,height=1080 -c sensor_mode=1  -d /dev/video1
+v4l2-ctl -V --set-fmt-video=width=1920,height=1536 -c sensor_mode=0  -d /dev/video2
+v4l2-ctl -V --set-fmt-video=width=3840,height=2160 -c sensor_mode=2  -d /dev/video3	
+```
+:::note
+`--set-fmt-video` follows the resolution which is selected based on the camera being connected. The sensor_mode is also chosen accordingly. Currently, there are three sensor_mode options, each corresponding to a different resolution. 
+- sensor_mode=0 -------> YUYV8_1X16/1920x1536
+- sensor_mode=1 -------> YUYV8_1X16/1920x1080
+- sensor_mode=2 -------> YUYV8_1X16/3840x2160
+:::
+
+**step 3.** Start the camera.
+```bash
+gst-launch-1.0 v4l2src device=/dev/video0 ! \
+'video/x-raw,width=1920,height=1080,framerate=30/1,format=UYVY' ! \
+videoconvert ! xvimagesink -ev
+
+gst-launch-1.0 v4l2src device=/dev/video1 ! \
+'video/x-raw,width=1920,height=1080,framerate=30/1,format=UYVY' ! \
+videoconvert ! xvimagesink -ev
+
+gst-launch-1.0 v4l2src device=/dev/video2 ! \
+'video/x-raw,width=1920,height=1536,framerate=30/1,format=UYVY' ! \
+videoconvert ! xvimagesink -ev
+
+gst-launch-1.0 v4l2src device=/dev/video3 ! \
+'video/x-raw,width=3840,height=2160,framerate=30/1,format=UYVY' ! \
+videoconvert ! xvimagesink -ev
+```
+
+<div align="center">
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/camera1.png"/>
+</div> 
+
 
 
 ## Display

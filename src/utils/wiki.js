@@ -1,6 +1,34 @@
 const docList = [
   [
     {
+      "path": "/lerobot_so100m_new",
+      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp",
+      "title": "How to use the SO-ARM100 and SO-ARM101 robotic arm in the latest version of Lerobot",
+      "date": "7/26/2025"
+    },
+    {
+      "path": "/reterminal_e10xx_with_esphome_advanced",
+      "image": "https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.webp",
+      "title": "Advanced ESPHome Usage of reTerminal E10xx in Home Assistant",
+      "date": "07/24/2025"
+    }
+  ],
+  [
+    {
+      "path": "/reterminal_e10xx_with_esphome",
+      "image": "https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.webp",
+      "title": "reTerminal E10xx Work with ESPHome for Home Assistant",
+      "date": "07/21/2025"
+    },
+    {
+      "path": "/control_px4_with_recomputer_jetson",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.webp",
+      "title": "Control PX4 with reComputer Jetson",
+      "date": "7/21/2025"
+    }
+  ],
+  [
+    {
       "path": "/replace_the_thermal_conductive_paste_for_recomputer",
       "image": "https://files.seeedstudio.com/wiki/replace_the_thermal_conductive_paste_for_recomputer/replace_the_thermal_conductive_paste_for_recomputer.webp",
       "title": "Replace the Thermal Conductive Paste for reComputer",
@@ -53,34 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/lerobot/so_arm_100.webp",
       "title": "Getting Started with Phospho",
       "date": "7/1/2025"
-    }
-  ],
-  [
-    {
-      "path": "/multiple_cameras_with_jetson",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/yolo1.webp",
-      "title": "Multi-GMSL Cameras for Real-Time Object Detection and 3D Reconstruction on Jetson AGX Orin",
-      "date": "06/30/2025"
-    },
-    {
-      "path": "/trmnl_7inch5_diy_kit_main_page",
-      "image": "https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/head.webp",
-      "title": "TRMNL 7.5\" (OG) DIY Kit",
-      "date": "06/29/2025"
-    }
-  ],
-  [
-    {
-      "path": "/works_with_trmnl",
-      "image": "https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/trmnl_head.webp",
-      "title": "TRMNL 7.5inch(OG) DIY Kit Works with TRMNL",
-      "date": "06/29/2025"
-    },
-    {
-      "path": "/real_time_yolo_object_detection_using_recamera_based_on_cpp",
-      "image": "https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp",
-      "title": "Real-time YOLO object detection using reCamera based on Cpp",
-      "date": "06/26/2025"
     }
   ]
 ];
