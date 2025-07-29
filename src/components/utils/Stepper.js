@@ -1,3 +1,5 @@
+// 文件路径: src/components/Steppers.js
+
 import React, { useState, useEffect, useMemo } from 'react';
 import { useLocation, useHistory } from '@docusaurus/router';
 import { Steps } from 'antd';
@@ -22,7 +24,7 @@ export default function Steppers({ children }) {
     validChildren.forEach(child => {
       if (!React.isValidElement(child)) return;
       
-      // 新的标题检测方法：检查元素类型和属性
+      // 检测方法：检查元素类型和属性
       const isHeading = isHeadingElement(child);
 
       if (isHeading) {
@@ -42,7 +44,7 @@ export default function Steppers({ children }) {
       title: step.headingElement.props.children,
       description: (
         <>
-          {/* 更新隐形锚点的样式，使用绝对定位来创建偏移 */}
+          {/* 隐形锚点的样式，使用绝对定位来创建偏移 */}
           {React.cloneElement(step.headingElement, {
             style: {
               position: 'absolute',
