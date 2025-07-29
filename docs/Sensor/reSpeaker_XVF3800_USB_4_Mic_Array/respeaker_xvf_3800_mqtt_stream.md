@@ -37,12 +37,12 @@ This project demonstrates how to stream  audio captured from the **ReSpeaker XVF
 ## Functionality Overview
 
 This sketch does the following:
-- 1.Connects to a specified **WiFi** network.
-- 2.Connects to an **MQTT broker** (e.g., test.mosquitto.org).
-- 3.Captures real-time audio using I2S from ReSpeaker  XVF3800 with XIAO ESP32S3
-- 4.Encodes the audio into **WAV format**.
-- 5.Publishes the audio as a single MQTT message.
-- 6.Uses poll() to keep the MQTT connection alive.
+- Connects to a specified **WiFi** network.
+- Connects to an **MQTT broker** (e.g., test.mosquitto.org).
+- Captures real-time audio using I2S from ReSpeaker  XVF3800 with XIAO ESP32S3
+- Encodes the audio into **WAV format**.
+- Publishes the audio as a single MQTT message.
+- Uses poll() to keep the MQTT connection alive.
 
 ## Arduino Code
 
