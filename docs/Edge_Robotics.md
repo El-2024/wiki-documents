@@ -53,6 +53,10 @@ last_update:
 ## 🤗 Lerobot
 
 <div className="card-container">
+    <a href="/lerobot_starai_arm/" className="nav-item">
+      <span className="text">Starai Robotic Arm</span>
+      <span className="tag stable">Update</span>
+    </a>
     <a href="/lerobot_so100m_new/" className="nav-item">
       <span className="text">SO100/101 Arm</span>
       <span className="tag stable">Update</span>
