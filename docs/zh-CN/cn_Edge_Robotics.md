@@ -52,8 +52,12 @@ last_update:
 ## 🤗 Lerobot
 
 <div className="card-container">
+    <a href="/cn/lerobot_so100m_new/" className="nav-item">
+      <span className="text">SO100/101 机械臂(新版)</span>
+      <span className="tag stable">更新</span>
+    </a>
     <a href="/cn/lerobot_so100m/" className="nav-item">
-      <span className="text">SO100/101 机械臂</span>
+      <span className="text">SO100/101 机械臂(旧版)</span>
       <span className="tag stable">更新</span>
     </a>
     <a href="/cn/lerobot_so100m_isaacsim/" className="nav-item">

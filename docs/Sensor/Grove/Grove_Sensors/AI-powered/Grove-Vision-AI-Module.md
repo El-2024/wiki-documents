@@ -18,6 +18,11 @@ last_update:
     </a>
 </div>
 
+:::warning **[Board Version Updated]** 
+As part of our commitment to continuous improvement, we've evolved our product line, and support for this version has now concluded. We encourage you to explore and purchase the **Grove Vison AI V2** for an enhanced experience. If you're currently using V1 and experiencing any difficulties, please don't hesitate to reach out to our after-sales support team. We're committed to providing you with our best  assistance.
+:::
+
+
 ## Introduction
 
 Grove Vision AI Module Sensor represents a thumb-sized AI camera, customized sensor which has been already installed ML algorithm for people detection, and other customized models. Being easily deployed and displayed within minutes, it works under ultra-low power model, and provides two ways of singal transmission and multiple onboard modules, all of which make it perfect for getting started with AI-powered camera.

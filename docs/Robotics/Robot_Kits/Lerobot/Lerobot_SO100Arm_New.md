@@ -153,7 +153,7 @@ If you purchase the Arm Kit version, both power supplies are 5V. If you purchase
 - Torch 2.6  
 
 **For Jetson Orin:**
-- Jetson JetPack 6.2  
+- Jetson JetPack 6.0+  
 - Python 3.10  
 - Torch 2.6  
 
@@ -310,7 +310,7 @@ If you are using a Jetson device, install Pytorch and Torchvision according to [
 ## Configure the motors
 
 :::danger  
-Due to official code and servo manufacturer firmware updates, users before June 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
+Due to official code and servo manufacturer firmware updates, users before June 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
 :::
 
 :::note
@@ -366,7 +366,9 @@ If you buy the Arm Kit version (ST-3215-C001), use a 5V power supply. If you buy
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F1.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F2.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F3.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F4.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F5.jpg) |![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F6.jpg) |
 
-You can also refer to our SO-ARM100 servo calibration video, but please make sure that the servo joint IDs and gear ratios strictly correspond to those of the SO-ARM101.
+:::tip
+Again, please make sure that the servo joint IDs and gear ratios strictly correspond to those of the SO-ARM101.
+:::
 
 ***The following are the code calibration steps, please calibrate with the reference wiring servo in the picture above***
 
@@ -465,8 +467,6 @@ python -m lerobot.setup_motors \
 
 :::tip
 - The dual-arm assembly process of SO-ARM101 is the same as that of SO-ARM100. The only differences are the addition of cable clips on SO-ARM101 and the different gear ratios of the joint servos on the Leader Arm. So both SO100 and SO101 can be installed by referring to the following content
-- After calibrating the servos, do not rotate them before tightening the screws. Make sure the orientation of the 3D printed parts matches the reference direction in the images and that the motors are in their middle positions.
-
 - Before assembly, please check your motor model and reduction ratio again. If you have purchased SO100, you can ignore this step. If you have purchased SO101, please check the following table to distinguish F1 to F6 and L1 to L6. 
 :::
 
@@ -527,14 +527,13 @@ Next, you need to connect the power supply and data cable to your SO-10x robot f
 Please connect the interfaces of the 6 robot servos via a 3-pin cable and connect the chassis servo to the servo drive plate, then run the following command or API example to calibrate the robot arm:
 
 
-
-**Interface permissions are given first**
+***Interface permissions are given first***
 
 ```bash
 sudo chmod 666 /dev/ttyACM*
 ```
 
-**Manual calibration of Follower arm**
+***Then calibrate the follower arm***
 
 ```python
 python -m lerobot.calibrate \
@@ -628,9 +627,6 @@ When using Intel RealSense cameras in , you could get this error: , this can be 
 :::
 
 
-
-
-
 Then you will be able to display the cameras on your computer while you are teleoperating by running the following code. This is useful to prepare your setup before recording your first dataset.
 
 ```bash
@@ -665,6 +661,10 @@ python -m lerobot.teleoperate \
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/EUcXlLlOjGE?si=6ncQ7o5ZFLR4PGTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+
+
+
 
 ## Record the dataset
 :::tip
@@ -822,7 +822,7 @@ Let's explain it:
 
 Training should take several hours. You will find checkpoints in `outputs/train/act_so100_test/checkpoints`.
 
-To resume training from a checkpoint, below is an example command to resume from last checkpoint of the act_so101_test policy:
+To resume training from a checkpoint, below is an example command to resume from last checkpoint of the `act_so101_test` policy:
 ```bash
 python -m lerobot.scripts.train \
   --config_path=outputs/train/act_so101_test/checkpoints/last/pretrained_model/train_config.json \
@@ -923,7 +923,7 @@ If you encounter software issues or environment dependency problems that cannot 
 
 ## Citation
 
-[中文文档](https://wiki.seeedstudio.com/cn/lerobot_so100m/)
+[中文文档](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/)
 
 TheRobotStudio Project: [SO-ARM10x](https://github.com/TheRobotStudio/SO-ARM100)
 
