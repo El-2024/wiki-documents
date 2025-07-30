@@ -231,13 +231,13 @@ export const Highlight = ({children, color}) => (
     <th>XIAO nRF54L15 front indication diagram</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/whitenotsense.png" style={{width:1000, height:'auto'}}/></div></td>
+    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/XIAO_nRF54L15_Font.png" style={{width:1000, height:'auto'}}/></div></td>
   </tr>
   <tr>
     <th>XIAO nRF54L15 back indication diagram</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/backwhite.png" style={{width:850, height:'auto'}}/></div></td>
+    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/newback8.png" style={{width:850, height:'auto'}}/></div></td>
   </tr>
 </table>
 
@@ -255,13 +255,13 @@ export const Highlight = ({children, color}) => (
     <th>XIAO nRF54L15 Sense front indication diagram</th>
   </tr>
     <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/sensewhite.png" style={{width:1000, height:'auto'}}/></div></td>
+    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/XIAO_nRF54L15_Sense_Font.png" style={{width:1000, height:'auto'}}/></div></td>
   </tr>
   <tr>
     <th>XIAO nRF54L15 Sense back indication diagram</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/backwhite.png" style={{width:850, height:'auto'}}/></div></td>
+    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/newback8.png" style={{width:850, height:'auto'}}/></div></td>
   </tr>
  </table>
 
@@ -315,7 +315,7 @@ west --version
 
 <Steppers>
 
-#### Installation of SEGGER J-Link v8.18
+<!-- #### Installation of SEGGER J-Link v8.18
 Download the installer for your platform from https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack. Run the installer; when the “Select Optional Components” window appears during the installation process, be sure to check “Install legacy USB driver for J-Link”, which is a required component for some supported development kits.
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/jlink2.png" style={{width:600, height:'auto'}}/></div>
 #### Install the nrfutil and nrfutil device commands.
@@ -338,7 +338,7 @@ In your currently active terminal, type: nrfutil install device
 You should see the following output:
 ```cpp
 [00:00:02] ###### 100% [Install packages] Install packages
-```
+``` -->
 
 #### VScode configures the board and builds the burn-in file.
 
@@ -520,12 +520,11 @@ brew install openocd
 - Just enter the `west flash` command,To flash your device, simply enter the west flash command. The path highlighted in red indicates the location of your compiled .elf file. You can use this same path to find the corresponding .hex file, which is suitable for programming with a J-Link debugger.
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/Learn13.png" style={{width:600, height:'auto'}}/></div>
 
-
 #### Light up th LED
 
 When we successfully burned the program in the Seeed Studio XIAO nRF54L15 Sense, you can see the board above the user indicator in the non-stop blinking green light, if your hands are also the same rendering effect, it means that you have been successfully on it!🎊
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/light.gif" style={{width:400, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/light3.gif" style={{width:400, height:'auto'}}/></div>
 
 #### Deep Dive into nRF Connect SDK Internals
 To truly master the nRF Connect SDK, you need to understand its building blocks from the inside out. Jump into these courses to elevate your knowledge:
@@ -570,6 +569,7 @@ Please be careful not to short-circuit the positive and negative terminals and b
 
 The XIAO nRF54L15 integrates a battery voltage detection feature that centers on efficiently managing battery power measurements using the TPS22916CYFPR load switch. This guide will focus on analyzing the software implementation of the battery detection **(especially the main.c code)** and guide you on how to easily deploy and use this feature in a PlatformIO environment, avoiding the complexity of the Zephyr NCS SDK.
 
+
 <div style={{textAlign:'center'}}>
     <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/battery_A.png" alt="XIAO nRF54L15 BLE Advertising Power Consumption" style={{width:600, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
     <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>Detecting Battery Schematic</em></p>
@@ -580,7 +580,9 @@ What the TPS22916CYFPR chip does:
 
 - What does this feature help us do?
 Through this on-demand switching mechanism, the chip greatly reduces unnecessary current consumption and effectively extends battery life. Combined with the subsequent voltage divider circuit and the nRF54L15's ADC (analog-to-digital converter), the XIAO nRF54L15 is able to accurately monitor the battery's remaining charge, providing important range optimization for battery-powered, low-power applications such as IoT devices.
-
+:::note
+This power consumption code example is designed for use with **PlatformIO**. To configure your **XIAO nRF54L15** for use with PlatformIO, please refer to this link: [XIAO nRF54L15 PlatformIO Configuration](https://wiki.seeedstudio.com/xiao_nrf54l15_with_platform_io/).
+:::
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/platform-seeedboards/tree/main/examples/zephyr-battery">
     <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
@@ -719,10 +721,9 @@ It is required to download the [Segger](https://www.segger.com/downloads/jlink/)
 
 ## Onboard Keys
 
-XIAO nRF54L15(Sense) comes equipped with two important physical buttons that play crucial roles in device operation and firmware programming: the **Reset Button** and the **Boot Button**. Understanding their functions is essential for daily use and firmware updates.
+XIAO nRF54L15(Sense) comes equipped with two important physical buttons that play crucial roles in device operation and firmware programming: the **Reset Button** and the **User Button**. Understanding their functions is essential for daily use and firmware updates.
 
 ---
-
 ### Reset Button
 
 The Reset button is used to perform a hard reset operation on the device.
@@ -737,22 +738,25 @@ The Reset button is used to perform a hard reset operation on the device.
 
 ---
 
-### Boot Button
+### User Button
 
-The Boot button is used to place the device into a specific boot mode, typically for firmware updates or to enter the Bootloader mode.
+The User button is a versatile, programmable input that offers flexible control within your applications.
 
-* **Functionality:**
-    * **Entering Bootloader Mode:** This is its primary function. By following a specific sequence (usually holding down the Boot button, then pressing and releasing the Reset button, and finally releasing the Boot button), the device enters Bootloader mode. In this mode, the device can receive new firmware images, typically programmed via USB DFU (Device Firmware Update) or other programming interfaces.
-    * **Firmware Updates:** Users can flash new application firmware, fix bugs, or upgrade functionalities through Bootloader mode.
-    * **Recovery Mode:** When the main application has issues that prevent it from starting, Bootloader mode provides a recovery mechanism, allowing users to re-flash working firmware.
-* **Use Cases:**
-    * Initial programming of new firmware.
-    * Updating the device's firmware version.
-    * When the device's program is corrupted and cannot start normally, requiring re-flashing.
+**Functionality:**
 
----
+- Customizable Input：Unlike the fixed function of the Reset button, the User button's action is entirely defined by your programmed firmware.
 
-## Power-Consumpitons
+- Event Triggering： It can be programmed to trigger specific events, control different functionalities, or act as a general-purpose input for your applications.
+
+**User Cases:**
+
+- Activating specific features or modes within your custom application.
+
+
+
+## Power-Consumpitons Code Example for XIAO nRF54L15 (PlatformIO)
+
+This power consumption code example is designed for use with **PlatformIO**. To configure your **XIAO nRF54L15** for use with PlatformIO, please refer to this link: [XIAO nRF54L15 PlatformIO Configuration](https://wiki.seeedstudio.com/xiao_nrf54l15_with_platform_io/).
 
 ### Bluetooth Connected
 
@@ -769,7 +773,6 @@ As shown in the graph, the device exhibits periodic current peaks corresponding 
 
 ---
 #### BLE Advertising Code Example
-
  
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/platform-seeedboards/tree/main/examples/zephyr-ble">
@@ -958,7 +961,7 @@ int main(void)
 }
 ```
 
-### Ultra-low Power State b
+### Ultra-low Power State
 
 To achieve extremely low power consumption for the device, we conducted power consumption tests in **System Off** mode. System Off mode is a deep sleep mode provided by Zephyr OS, where most peripherals and the CPU are turned off, retaining only essential wake-up sources (such as GPIO interrupts) to minimize power consumption.
 
