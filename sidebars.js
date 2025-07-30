@@ -6324,6 +6324,7 @@ const sidebars = {
           label: 'Lerobot',
           items: [
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Starai_Arm',
+            'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_New',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_Isaacsim',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Lekiwi',

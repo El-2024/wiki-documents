@@ -6,10 +6,10 @@ keywords:
 - Huggingface
 - Arm
 - Robotics 
-image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.png
+image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.webp
 slug: /lerobot_starai_arm
 last_update:
-  date: 7/28/2025
+  date: 7/29/2025
   author: LiShanghang
 ---
 
