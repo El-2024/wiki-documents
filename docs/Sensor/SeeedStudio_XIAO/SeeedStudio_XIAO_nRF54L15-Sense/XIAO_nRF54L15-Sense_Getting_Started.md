@@ -422,7 +422,8 @@ To get started, **clone the repository from the GitHub link**`git clone https://
 - In the application view, click Add Build Configuration below the application name .
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/config3.png" style={{width:600, height:'auto'}}/></div>
 
-- We can select the model of XIAO nRF54L15 in the Board target, and select the default prj.config file in the Base configuartion files, and finally click build to build the file.
+- We can select the model of XIAO nRF54L15 in the Board target, and select the default prj.config file in the Base configuartion files, and finally click `Generate and Build` to build the file.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/config2.jpg" style={{width:600, height:'auto'}}/></div>
 
 #### Download Burn-in Plug-in
@@ -463,8 +464,6 @@ choco install openocd
 - Type `Get-Command openocd` and press Enter.
 
 - If the installation is successful, this command will display the path to openocd.exe.
-
-This command bypasses the execution policy for the current PowerShell session and installs Chocolatey. After installation, close and reopen the PowerShell window (still run as administrator).
 
 </TabItem>
 
