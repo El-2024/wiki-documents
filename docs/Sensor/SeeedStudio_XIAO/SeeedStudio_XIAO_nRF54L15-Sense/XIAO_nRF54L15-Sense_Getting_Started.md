@@ -34,12 +34,12 @@ import Steppers from '@site/src/components/utils/Stepper';
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-MG24-p-6247.html">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-nRF54L15-p-6493.html">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-nRF54L15-Sense-p-6494.html">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -172,15 +172,15 @@ export const Highlight = ({children, color}) => (
       <th>Operating temperature</th>
       <td align="center">-40 to 85 °C</td>
       <td align="center">-40 to 85 °C</td>
-      <td align="center">-40 to +105°C</td>
-      <td align="center">-40 to +105°C</td>
+      <td align="center">-40 to 105°C</td>
+      <td align="center">-40 to 105°C</td>
   </tr>
   <tr>
       <th>Supply voltage range</th>
-      <td align="center">1.7 to 5.5 V</td>
-      <td align="center">1.7 to 5.5 V</td>
-      <td align="center">1.7 to 3.6 V</td>
-      <td align="center">1.7 to 3.6 V</td>
+      <td align="center">3.3 to 5 V</td>
+      <td align="center">3.3 to 5 V</td>
+      <td align="center">3.3 to 5 V</td>
+      <td align="center">3.3 to 5 V</td>
   </tr>
   <tr>
       <th>ESB and 2.4 GHz Proprietary Protocols</th>
@@ -1065,6 +1065,7 @@ int main(void)
 }
 ```
 
+## Resources
 
 ### Seeed Studio XIAO nRF54L15
 
