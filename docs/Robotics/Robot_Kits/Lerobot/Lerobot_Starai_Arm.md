@@ -186,11 +186,21 @@ If you are using a Jetson device, install Pytorch and Torchvision according to [
 
 Robotic Arm Kit Includes
 
-- leader arm
+- Leader arm
+- Follower arm
+- Controller (handle)
+- Parallel gripper
+- Installation tools (screws, hex wrench)
+- Power supply ×2
+- C-clamp ×2
+- UC-01 debuging board ×2
 
-- follower arm
+UC-01 debuging board switch：
 
-- powerx2
+<div align="center">
+    <img width={800}
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/UC-01 debuging board switch.png" />
+</div>
 
 ### Configure Arm Port
 
@@ -384,6 +394,17 @@ sudo chmod 666 /dev/ttyUSB0
 
 ## Teleoperate
 
+<div class="video-container">
+<iframe width="900" height="600" src="https://www.youtube.com/embed/Uz-x-2P2xaE?si=HJTjALt5yFntR6-s" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+Move the arm to the position shown in the diagram and set it to standby.
+
+<div align="center">
+    <img width={800}
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Specifications.png" />
+</div>
+
 **Simple teleop**
 Then you are ready to teleoperate your robot! Run this simple script (it won't connect and display the cameras):
 
@@ -395,6 +416,7 @@ python lerobot/scripts/control_robot.py \
 ```
 
 After the program starts, the Hold button remains functional.
+
 
 
 ## Add cameras
@@ -474,6 +496,9 @@ python lerobot/scripts/control_robot.py \
 
 ## Record the dataset
 
+<div class="video-container">
+<iframe width="900" height="600" src="https://www.youtube.com/embed/OpaC0CA3-Mc?si=rbNhJJRkG9zngQB-" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 Once you're familiar with teleoperation, you can record your first dataset.
 
@@ -517,12 +542,14 @@ You will see a lot of lines appearing like this one:
 INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5hz) dtWfoll: 0.25 (3963.7hz) dtRfoll: 6.22 (160.7hz) dtRlaptop: 32.57 (30.7hz) dtRphone: 33.84 (29.5hz)
 ```
 
-**Parameter Explanations**
+```markdown
+Parameter Explanations
 - wormup-time-s: It refers to the initialization time.
 - episode-time-s: It represents the time for collecting data each time.
 - reset-time-s: It is the preparation time between each data collection.
 - num-episodes: It indicates how many groups of data are expected to be collected.
 - push-to-hub: It determines whether to upload the data to the HuggingFace Hub. 
+```
 
 :::tip
 

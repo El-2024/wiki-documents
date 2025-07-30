@@ -1,5 +1,5 @@
 ---
-description: 本Wiki提供SO ARM100的组装和调试教程，并在Lerobot框架内实现数据收集和训练。
+description: 本Wiki提供SO ARM100的组装和调试教程，并在最新的Lerobot框架内实现数据收集和训练。
 title: 如何在最新版Lerobot中使用SO10xArm机械臂
 keywords:
 - Lerobot
