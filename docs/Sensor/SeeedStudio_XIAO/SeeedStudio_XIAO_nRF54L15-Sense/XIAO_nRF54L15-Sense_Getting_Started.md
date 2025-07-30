@@ -231,7 +231,7 @@ export const Highlight = ({children, color}) => (
     <th>XIAO nRF54L15 front indication diagram</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/whitenotsense.png" style={{width:1000, height:'auto'}}/></div></td>
+    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/XIAO_nRF54L15_Font.png" style={{width:1000, height:'auto'}}/></div></td>
   </tr>
   <tr>
     <th>XIAO nRF54L15 back indication diagram</th>
@@ -255,7 +255,7 @@ export const Highlight = ({children, color}) => (
     <th>XIAO nRF54L15 Sense front indication diagram</th>
   </tr>
     <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/sensewhite.png" style={{width:1000, height:'auto'}}/></div></td>
+    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/XIAO_nRF54L15_Sense_Font.png" style={{width:1000, height:'auto'}}/></div></td>
   </tr>
   <tr>
     <th>XIAO nRF54L15 Sense back indication diagram</th>
@@ -520,7 +520,6 @@ brew install openocd
 - Just enter the `west flash` command,To flash your device, simply enter the west flash command. The path highlighted in red indicates the location of your compiled .elf file. You can use this same path to find the corresponding .hex file, which is suitable for programming with a J-Link debugger.
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/Learn13.png" style={{width:600, height:'auto'}}/></div>
 
-
 #### Light up th LED
 
 When we successfully burned the program in the Seeed Studio XIAO nRF54L15 Sense, you can see the board above the user indicator in the non-stop blinking green light, if your hands are also the same rendering effect, it means that you have been successfully on it!🎊
@@ -722,10 +721,9 @@ It is required to download the [Segger](https://www.segger.com/downloads/jlink/)
 
 ## Onboard Keys
 
-XIAO nRF54L15(Sense) comes equipped with two important physical buttons that play crucial roles in device operation and firmware programming: the **Reset Button** and the **Boot Button**. Understanding their functions is essential for daily use and firmware updates.
+XIAO nRF54L15(Sense) comes equipped with two important physical buttons that play crucial roles in device operation and firmware programming: the **Reset Button** and the **User Button**. Understanding their functions is essential for daily use and firmware updates.
 
 ---
-
 ### Reset Button
 
 The Reset button is used to perform a hard reset operation on the device.
@@ -740,20 +738,21 @@ The Reset button is used to perform a hard reset operation on the device.
 
 ---
 
-### Boot Button
+### User Button
 
-The Boot button is used to place the device into a specific boot mode, typically for firmware updates or to enter the Bootloader mode.
+The User button is a versatile, programmable input that offers flexible control within your applications.
 
-* **Functionality:**
-    * **Entering Bootloader Mode:** This is its primary function. By following a specific sequence (usually holding down the Boot button, then pressing and releasing the Reset button, and finally releasing the Boot button), the device enters Bootloader mode. In this mode, the device can receive new firmware images, typically programmed via USB DFU (Device Firmware Update) or other programming interfaces.
-    * **Firmware Updates:** Users can flash new application firmware, fix bugs, or upgrade functionalities through Bootloader mode.
-    * **Recovery Mode:** When the main application has issues that prevent it from starting, Bootloader mode provides a recovery mechanism, allowing users to re-flash working firmware.
-* **Use Cases:**
-    * Initial programming of new firmware.
-    * Updating the device's firmware version.
-    * When the device's program is corrupted and cannot start normally, requiring re-flashing.
+**Functionality:**
 
----
+- Customizable Input：Unlike the fixed function of the Reset button, the User button's action is entirely defined by your programmed firmware.
+
+- Event Triggering： It can be programmed to trigger specific events, control different functionalities, or act as a general-purpose input for your applications.
+
+**User Cases:**
+
+- Activating specific features or modes within your custom application.
+
+
 
 ## Power-Consumpitons Code Example for XIAO nRF54L15 (PlatformIO)
 
