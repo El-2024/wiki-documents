@@ -52,6 +52,10 @@ last_update:
 ## 🤗 Lerobot
 
 <div className="card-container">
+    <a href="/cn/lerobot_starai_arm/" className="nav-item">
+      <span className="text">华馨京starai arm</span>
+      <span className="tag stable">更新</span>
+    </a>
     <a href="/cn/lerobot_so100m_new/" className="nav-item">
       <span className="text">SO100/101 机械臂(新版)</span>
       <span className="tag stable">更新</span>
