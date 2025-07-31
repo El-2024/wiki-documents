@@ -166,7 +166,7 @@ Seeed Studio XIAO nRF52840 Sense is compatible to the Seeed Studio XIAO expansio
   </tr>
   <tr>
       <th>Wireless Connectivity</th>
-      <td colspan="4" align="center">Bluetooth 5.0/BLE/NFC</td>
+      <td colspan="4" align="center">Bluetooth LE 5.2/NFC</td>
   </tr>
   <tr>
       <th>Memory</th>
