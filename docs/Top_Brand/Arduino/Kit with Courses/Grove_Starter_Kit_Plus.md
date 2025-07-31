@@ -150,7 +150,7 @@ LED is the most familiar parts for beginners, no “one of”. We use them to in
 
 We already used an LED as an indicator in examples above. And here let’s make some light effect beyond the plain on/off operation, to fade an LED.
 ```
-<pre>/* This is an example code from Arduino, you can open it via this path in Arduino IDE: File --&gt; Example --&gt; 1.Basic --&gt; Fade */
+<pre>/* This is an example code from Arduino, you can open it via this path in Arduino IDE: File --> Example --> 1.Basic --> Fade */
 
 int brightness = 0;    // how bright the LED is
 int fadeAmount = 5;    // how many points to fade the LED by
@@ -233,7 +233,7 @@ int beats[] = { 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 4 };
 int tempo = 300;
 
 void playTone(int tone, int duration) {
-    for (long i = 0; i &lt; duration * 1000L; i += tone * 2) {
+    for (long i = 0; i < duration * 1000L; i += tone * 2) {
         digitalWrite(speakerPin, HIGH);
         delayMicroseconds(tone);
         digitalWrite(speakerPin, LOW);
@@ -246,7 +246,7 @@ void playNote(char note, int duration) {
     int tones[] = { 1915, 1700, 1519, 1432, 1275, 1136, 1014, 956 };
 
     // play the tone corresponding to the note name
-    for (int i = 0; i &lt; 8; i++) {
+    for (int i = 0; i < 8; i++) {
         if (names[i] == note) {
             playTone(tones[i], duration);
         }
@@ -259,7 +259,7 @@ void setup()
 }
 
 void loop() {
-    for (int i = 0; i &lt; length; i++) {
+    for (int i = 0; i < length; i++) {
         if (notes[i] == ' ')
         {
             delay(beats[i] * tempo); // rest
@@ -357,7 +357,7 @@ void setup()
 void loop()
 {
     int sensorValue = analogRead(A0); //read the sensorValue on Analog 0
-    if(sensorValue&gt;thresholdValue)
+    if(sensorValue>thresholdValue)
     digitalWrite(ledPin,HIGH);
     delay(200);
     digitalWrite(ledPin,LOW);
@@ -392,7 +392,7 @@ void setup()
 void loop()
 {
     int sensorValue = analogRead(0); //the light sensor is attached to analog 0
-    if(sensorValue&lt;thresholdvalue)
+    if(sensorValue<thresholdvalue)
     {
         digitalWrite(ledPin,HIGH);
     }
@@ -560,7 +560,7 @@ Servo is absolutely a fun motion control device to play! Via a servo library bui
 
 Servo is a kind of analog actuators. However Arduino can’t output analog signal. To approximate the analog signal required by analog actuator, Arduino adopts PWM (Pulse Width Modulization) to cope with this. Not all Grove ports can be used as analog outputs. The available ports are D3, D5, D6, D9, D10 and D11. Here is an example how we use a potentiometer to control the position of the servo.
 ```
-<pre>#include &lt;Servo.h&gt;
+<pre>#include <Servo.h>
 Servo groveServo; //create a object
 
 int potentiometer = 0;

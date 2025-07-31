@@ -48,9 +48,9 @@ Xadow UV センサーは、UV 指数に対応する電圧値を出力します�
 
 *   次に、以下のコードを Arduino IDE にコピーして貼り付け、Xadow メインボードにアップロードします。
 ```
-#include &lt;Wire.h&gt;
-#include &lt;SeeedOLED.h&gt;
-#include &lt;Streaming.h&gt;
+#include <Wire.h>
+#include <SeeedOLED.h>
+#include <Streaming.h>
 
 #define ADDR_ADC121    0x5A
 
@@ -109,9 +109,9 @@ void readVoltage()     //unsigned int *data
 
     Wire.requestFrom(ADDR_ADC121, 2);           // デバイスから 2 バイトを要求
     delay(1);
-    if(Wire.available()&lt;=2)
+    if(Wire.available()<=2)
     {
-        getData = (Wire.read()&amp;0x0f)&lt;&lt;8;
+        getData = (Wire.read()&0x0f)<<8;
         getData |= Wire.read();
     }
     delay(50);

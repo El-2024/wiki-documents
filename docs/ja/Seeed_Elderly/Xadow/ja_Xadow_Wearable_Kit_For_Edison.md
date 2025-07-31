@@ -196,11 +196,11 @@ NFCデモでは、LEDストリップを開くためのキーとして3つのNFC�
 **コード詳細**
 
 ```
-#include &lt;Wire.h&gt;
-#include &lt;PN532_I2C.h&gt;
-#include &lt;PN532.h&gt;
-#include &lt;NfcAdapter.h&gt;
-#include &lt;TimerOne.h&gt;
+#include <Wire.h>
+#include <PN532_I2C.h>
+#include <PN532.h>
+#include <NfcAdapter.h>
+#include <TimerOne.h>
 #include "Seeed_QTouch.h"
 #include "Seeed_ws2812.h"
 
@@ -259,10 +259,10 @@ File&gt;Examples&gt;GrowingThermometer をクリックします。
 **コード詳細**
 
 ```
-#include &lt;Wire.h&gt;
-#include &lt;SeeedOLED.h&gt;
+#include <Wire.h>
+#include <SeeedOLED.h>
 #include "Barometer.h"
-#include &lt;Seeed_ws2812.h&gt;
+#include <Seeed_ws2812.h>
 
 #define LEDN 5
 #define SIG_PIN 12
@@ -348,14 +348,14 @@ void loop()
 **コードの詳細**
 
 ```cpp
-#include &lt;Wire.h&gt;
-#include &lt;SeeedOLED.h&gt;
-#include &lt;Wire.h&gt;
-#include &lt;ADXL345.h&gt;
+#include <Wire.h>
+#include <SeeedOLED.h>
+#include <Wire.h>
+#include <ADXL345.h>
 #include "pedometer.h"
-#include &lt;SPI.h&gt;
-#include &lt;WiFi.h&gt;
-#include &lt;TimerOne.h&gt;
+#include <SPI.h>
+#include <WiFi.h>
+#include <TimerOne.h>
 
 #define MINUTES_TO_ALARM  (60) // 指定した分数（MINUTES_TO_ALARM）間歩かない場合、ブザーが0.5秒鳴ります。
 unsigned long curtime = 0;
@@ -411,7 +411,7 @@ void loop() {
     }
 
     // 指定した分数間歩かない場合、ブザーが0.5秒鳴る
-    if((millis()-curtime &gt; MINUTES_TO_ALARM * 60000) &amp;&amp; (pedometer.stepCount - cursteps &lt; MINUTES_TO_ALARM*60/2)){
+    if((millis()-curtime > MINUTES_TO_ALARM * 60000) && (pedometer.stepCount - cursteps < MINUTES_TO_ALARM*60/2)){
         buzzer_on(500);
         curtime = millis();
         cursteps = pedometer.stepCount;

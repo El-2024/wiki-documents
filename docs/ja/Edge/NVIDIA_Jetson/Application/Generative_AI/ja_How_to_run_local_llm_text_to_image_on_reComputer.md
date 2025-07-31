@@ -595,7 +595,7 @@ AUTOMATIC1111は他のモデルもサポートしています。Stable Diffusion
 これは[NVIDIAのチュートリアル](https://www.jetson-ai-lab.com/tutorial_stable-diffusion-xl.html)からの例です。
 
 ```bash
-CONTAINERS_DIR=&lt;where_jetson-containers_is_located&gt;
+CONTAINERS_DIR=<where_jetson-containers_is_located>
 MODEL_DIR=$CONTAINERS_DIR/data/models/stable-diffusion/models/Stable-diffusion/
 sudo chown -R $USER $MODEL_DIR
 ```
@@ -624,7 +624,7 @@ wget -P $MODEL_DIR https://huggingface.co/stabilityai/stable-diffusion-xl-refine
 
 使用したいモデルを選択し、チェックポイントをダウンロードして以下のディレクトリに配置してください。
 ```bash
-/home/&lt;user&gt;/&lt;jetson-containers-location&gt;/data/models/stable-diffusion/models/Stable-diffusion/
+/home/<user>/<jetson-containers-location>/data/models/stable-diffusion/models/Stable-diffusion/
 ```
 私は[DreamShaper XL](https://civitai.com/models/112902/dreamshaper-xl)というモデルをダウンロードして試してみます。
 <div align="center">

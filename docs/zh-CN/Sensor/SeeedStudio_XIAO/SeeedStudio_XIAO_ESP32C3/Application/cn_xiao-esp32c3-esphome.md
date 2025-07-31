@@ -176,22 +176,22 @@ panel_iframe:
     </tr>
     <tr>
       <td align="center">5V</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">5V</td>
     </tr>
     <tr>
       <td align="center">GND</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">GND</td>
     </tr>
     <tr>
       <td align="center">D2</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">RX</td>
     </tr>
     <tr>
       <td align="center">D3</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">TX</td>
     </tr>
   </tbody></table>

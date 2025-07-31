@@ -577,7 +577,7 @@ A: Wio Terminal 用のファームウェアをいつでも書き込むことが�
 A: ユーザーがプロジェクトに合わせて3つのコードの情報を変更した場合でも、Grove - Wio-E5 の背面にあるステッカー情報を使用して、いつでもそれらを取得できるように問い合わせインターフェースを公開しています。
 
 ```
-https://sensecap.seeed.cc/makerapi/device/view_device_info?nodeEui=&lt;your_eui&gt;&amp;deviceCode=&lt;your_code&gt;
+https://sensecap.seeed.cc/makerapi/device/view_device_info?nodeEui=<your_eui>&deviceCode=<your_code>
 ```
 
 上記のウェブサイトをブラウザで開き、Grove - Wio-E5 の背面に記載されている **EUI** と **Code** の情報を対応する位置に入力して、デバイスに対応する3つのコードを確認してください。

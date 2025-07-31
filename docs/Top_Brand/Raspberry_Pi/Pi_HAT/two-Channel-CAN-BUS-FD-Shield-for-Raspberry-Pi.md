@@ -301,7 +301,7 @@ Respberry pi setting and and you can use **can-util** to receive
 #set 500k baudrate
 pi@raspberrypi:~ $ sudo ip link set can0 up type can bitrate 500000
 pi@raspberrypi:~ $ ip -details link show can0
-3: can0: &lt;NOARP,UP,LOWER_UP,ECHO&gt; mtu 16 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 10
+3: can0: <NOARP,UP,LOWER_UP,ECHO> mtu 16 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 10
     link/can  promiscuity 0 
     can state ERROR-ACTIVE (berr-counter tx 0 rx 0) restart-ms 0 
    bitrate 500000 sample-point 0.875 

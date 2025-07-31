@@ -270,7 +270,7 @@ El Seeed Studio XIAO nRF52840 agrupa muchas funciones en una pequeña placa y, a
 La definición de pines soportada por estas dos bibliotecas podría ser algo diferente y Seeed continuará actualizando la wiki hasta que quede claro.
 
 :::tip
-1. Si utilizas el paquete integrado de Seeed nRF52 Boards, la función Serial puede no compilar. La solución es agregar la línea "#include &lt;Adafruit_TinyUSB.h&gt;" en tu código. Puedes descargar este paquete desde: https://github.com/adafruit/Adafruit_TinyUSB_Arduino
+1. Si utilizas el paquete integrado de Seeed nRF52 Boards, la función Serial puede no compilar. La solución es agregar la línea `#include <Adafruit_TinyUSB.h>` en tu código. Puedes descargar este paquete desde: https://github.com/adafruit/Adafruit_TinyUSB_Arduino
 
 2. Si prefieres un enfoque más simple, puedes elegir desde el principio el paquete Seeed nRF52 mbed-enabled Boards. Este soporta la compilación de la función Serial sin la necesidad de modificaciones adicionales.
 :::
