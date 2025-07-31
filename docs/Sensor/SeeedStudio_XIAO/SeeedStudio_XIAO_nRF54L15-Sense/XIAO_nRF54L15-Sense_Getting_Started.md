@@ -177,10 +177,10 @@ export const Highlight = ({children, color}) => (
   </tr>
   <tr>
       <th>Supply voltage range</th>
-      <td align="center">3.3 to 5 V</td>
-      <td align="center">3.3 to 5 V</td>
-      <td align="center">3.3 to 5 V</td>
-      <td align="center">3.3 to 5 V</td>
+      <td align="center">3.7 to 5 V</td>
+      <td align="center">3.7 to 5 V</td>
+      <td align="center">3.7 to 5 V</td>
+      <td align="center">3.7 to 5 V</td>
   </tr>
   <tr>
       <th>ESB and 2.4 GHz Proprietary Protocols</th>
@@ -520,6 +520,10 @@ brew install openocd
 - Just enter the `west flash` command,To flash your device, simply enter the west flash command. The path highlighted in red indicates the location of your compiled .elf file. You can use this same path to find the corresponding .hex file, which is suitable for programming with a J-Link debugger.
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/Learn13.png" style={{width:600, height:'auto'}}/></div>
 
+:::tip
+If the west flash error occurs, it means that there is a conflict with the CMake plugin in VS Code, and you need to remove the CMake plugin.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/error.jpg" style={{width:600, height:'auto'}}/></div>
+:::
 #### Light up th LED
 
 When we successfully burned the program in the Seeed Studio XIAO nRF54L15 Sense, you can see the board above the user indicator in the non-stop blinking green light, if your hands are also the same rendering effect, it means that you have been successfully on it!🎊
