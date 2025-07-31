@@ -85,32 +85,31 @@ export const Highlight = ({children, color}) => (
   <tr>
       <th>Wireless Connectivity</th>
       <td align="center">
-        Bluetooth 5.3<br/>
-        BLE<br/>
+        Bluetooth LE 5.2<br/>
         NFC
       </td>
       <td align="center">
-        Bluetooth 5.3<br/>
-        BLE<br/>
+        Bluetooth LE 5.2<br/>
         NFC
       </td>
       <td align="center">
-        Bluetooth 5.4<br/>
-        BLE<br/>
+        Bluetooth LE 6.0（include Channel Sounding）<br/>
         NFC<br/>
+        Thread<br/>
+        Zigbee<br/>
+        Matter<br/>
+        Amazon Sidewalk<br/>
+        Proprietary 2.4 GHz protocols<br/>
       </td>
       <td align="center">
-        Bluetooth 5.4<br/>
-        BLE<br/>
+        Bluetooth LE 6.0（include Channel Sounding）<br/>
         NFC<br/>
+        Thread<br/>
+        Zigbee<br/>
+        Matter<br/>
+        Amazon Sidewalk<br/>
+        Proprietary 2.4 GHz protocols<br/>
       </td>
-  </tr>
-  <tr>
-      <th>Bluetooth LE Version</th>
-      <td align="center">6.0</td>
-      <td align="center">6.0</td>
-      <td align="center">6.0</td>
-      <td align="center">6.0</td>
   </tr>
   <tr>
       <th>Memory</th>
