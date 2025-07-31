@@ -88,7 +88,7 @@ last_update:
 - Torch 2.6  
 
 **对于 Jetson Orin:**
-- Jetson JetPack 6.2  
+- Jetson JetPack 6.0+
 - Python 3.10  
 - Torch 2.6  
 
