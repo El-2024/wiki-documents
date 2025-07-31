@@ -304,24 +304,28 @@ Sigue estos pasos para flashear un firmware precompilado:
 
 - **Paso 2**: Selecciona las siguientes opciones:
 
-<div class="table-center">
-  <table align="center">
-    <tr>
+<div className="table-center">
+  <table style={{ margin: '0 auto', textAlign: 'center' }}>
+    <thead>
+      <tr>
         <th>Opción</th>
         <th>Parámetro</th>
-    </tr>
-    <tr>
-        <td><div style="text-align: center;"><strong>Tipo de chip</strong></div></td>
-        <td><div style="text-align: center;">ESP32-S3</div></td>
-    </tr>
-    <tr>
-      <td><div style="text-align: center;"><strong>Modo de trabajo</strong></div></td>
-      <td><div style="text-align: center;">Develop</div></td>
-    </tr>
-    <tr>
-      <td><div style="text-align: center;"><strong>Modo de carga</strong></div></td>
-      <td><div style="text-align: center;">UART</div></td>
-    </tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Tipo de chip</strong></td>
+        <td>ESP32-S3</td>
+      </tr>
+      <tr>
+        <td><strong>Modo de trabajo</strong></td>
+        <td>Develop</td>
+      </tr>
+      <tr>
+        <td><strong>Modo de carga</strong></td>
+        <td>UART</td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -333,20 +337,24 @@ Sigue estos pasos para flashear un firmware precompilado:
 
 - **Paso 5**: Configura la SPI Flash:
 
-<div class="table-center">
-  <table align="center">
-    <tr>
+<div className="table-center">
+  <table style={{ margin: '0 auto', textAlign: 'center' }}>
+    <thead>
+      <tr>
         <th>Opción</th>
         <th>Parámetro</th>
-    </tr>
-    <tr>
-        <td><div style="text-align: center;"><strong>Velocidad SPI</strong></div></td>
-        <td><div style="text-align: center;">40MHz</div></td>
-    </tr>
-    <tr>
-      <td><div style="text-align: center;"><strong>Modo SPI</strong></div></td>
-      <td><div style="text-align: center;">DIO</div></td>
-    </tr>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Velocidad SPI</strong></td>
+        <td>40MHz</td>
+      </tr>
+      <tr>
+        <td><strong>Modo SPI</strong></td>
+        <td>DIO</td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -396,12 +404,24 @@ Abre Arduino IDE, ve a **Arduino IDE** > **Preferencias** y copia esta URL en **
 
 `https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json`
 
-<div class="table-center">
-  <table align="center">
-    <tr>
-        <td><div style="text-align:center"><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_29.png" style="width:680px; height:auto"/></div></td>
-        <td><div style="text-align:center"><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_80.png" style="width:680px; height:auto"/></div></td>
-    </tr>
+<div className="table-center">
+  <table style={{ margin: '0 auto' }}>
+    <tbody>
+      <tr>
+        <td style={{ textAlign: 'center' }}>
+          <img
+            src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_29.png"
+            style={{ width: '680px', height: 'auto' }}
+          />
+        </td>
+        <td style={{ textAlign: 'center' }}>
+          <img
+            src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_80.png"
+            style={{ width: '680px', height: 'auto' }}
+          />
+        </td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -441,12 +461,26 @@ Para instalar *offline*, descarga el repositorio en formato zip desde GitHub, lu
 
 Busca "Indicator" y selecciona la placa `Seeed INDICATOR RP2040` y el puerto serial `usbmodem`.
 
-<div class="table-center">
-  <table align="center">
-    <tr>
-        <td><div style="text-align:center"><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/board.png" style="width:680px; height:auto"/></div></td>
-    </tr>
-     <td><div style="text-align:center"><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/portport.png" style="width:680px; height:auto"/></div></td>
+<div className="table-center">
+  <table style={{ margin: '0 auto' }}>
+    <tbody>
+      <tr>
+        <td style={{ textAlign: 'center' }}>
+          <img
+            src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/board.png"
+            style={{ width: '680px', height: 'auto' }}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td style={{ textAlign: 'center' }}>
+          <img
+            src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/portport.png"
+            style={{ width: '680px', height: 'auto' }}
+          />
+        </td>
+      </tr>
+    </tbody>
   </table>
 </div>
 
@@ -460,17 +494,34 @@ Puedes modificar este código según tus necesidades.
 
 - **Paso 7**: Verifica y sube el código.
 
-<div class="table-center">
-  <table align="center">
-    <tr>
-        <td><div style="text-align:center"><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_36.png" style="width:680px; height:auto"/></div></td>
-    </tr>
-    <tr>
-        <td><div style="text-align:center"><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_37.png" style="width:680px; height:auto"/></div></td>
-    </tr>
-    <tr>
-        <td><div style="text-align:center"><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_38.png" style="width:680px; height:auto"/></div></td>
-    </tr>
+<div className="table-center">
+  <table style={{ margin: '0 auto' }}>
+    <tbody>
+      <tr>
+        <td style={{ textAlign: 'center' }}>
+          <img
+            src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_36.png"
+            style={{ width: '680px', height: 'auto' }}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td style={{ textAlign: 'center' }}>
+          <img
+            src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_37.png"
+            style={{ width: '680px', height: 'auto' }}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td style={{ textAlign: 'center' }}>
+          <img
+            src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_38.png"
+            style={{ width: '680px', height: 'auto' }}
+          />
+        </td>
+      </tr>
+    </tbody>
   </table>
 </div>
 

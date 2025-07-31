@@ -12,11 +12,15 @@ last_update:
 
 [**SenseCAP T1000**](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html) es un rastreador LoRaWAN® compacto que utiliza GNSS/Wi-Fi/Bluetooth para posicionamiento preciso tanto en interiores como en exteriores. Ofrece capacidades de geolocalización auto-adaptativa, almacenamiento local de datos y una impresionante duración de batería de varios meses. Además, cuenta con sensores de temperatura, luz y movimiento, lo que lo hace ideal para una amplia gama de aplicaciones basadas en ubicación.
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker_1.png" alt="SenseCAP T1000 Tracker" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker_1.png"
+    alt="SenseCAP T1000 Tracker"
+    width="800"
+  />
 </p>
 
-<div class="get_one_now_container" style="text-align: center">
+<div class="get_one_now_container" style={{ textAlign: "center"}}>
   <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html">
     <strong><span><font color="FFFFFF" size="4">¡Consíguelo ahora!</font></span></strong>
   </a>
@@ -40,69 +44,105 @@ Compatible con GNSS, Wi-Fi y BLE para soluciones de localización interior y ext
 **GNSS (exterior)**  
 Posicionamiento vía GPS/BeiDou/satélites. Los datos se envían por LoRa.
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/located_by_Gnss.png" alt="GNSS" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/located_by_Gnss.png"
+    alt="GNSS"
+    width="800"
+  />
 </p>
 
 **Wi-Fi (interior)**  
 Escanea direcciones MAC y RSSI de redes cercanas y las sube por LoRaWAN para cálculo de ubicación.
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/by_wifi.png" alt="WiFi Positioning" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/by_wifi.png"
+    alt="WiFi Positioning"
+    width="800"
+  />
 </p>
 
 ### Almacenamiento de Datos Offline
 
 Almacena más de 1000 registros localmente. Si no hay cobertura, guarda los datos y los envía al recuperar señal.
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/cache.png" alt="Data Cache" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/cache.png"
+    alt="Data Cache"
+    width="800"
+  />
 </p>
 
 ### Adaptabilidad Regional
 
 Cambio automático de frecuencias LoRaWAN según la ubicación, compatible con EU, América y más.
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/earth.gif" alt="Adaptabilidad Global" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/earth.gif"
+    alt="Adaptabilidad Global"
+    width="800"
+  />
 </p>
 
 ### Meses de Vida de Batería
 
 Gracias al chip LR1110 y bajo consumo, puede durar hasta 3 meses con una subida por hora en modo solo GNSS.
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/battery_life.png" alt="Battery Life" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/battery_life.png"
+    alt="Battery Life"
+    width="800"
+  />
 </p>
 
 ### Sensores de Temperatura, Luz y Movimiento
 
 Útil para aplicaciones como monitoreo de temperatura en alimentos o detección de luz para seguridad.
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/sensor.png" alt="Sensores" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/sensor.png"
+    alt="Sensores"
+    width="800"
+  />
 </p>
 
 ### Red Descentralizada con Helium
 
 Helium valida ubicación de gateways, lo que mejora la fiabilidad del posicionamiento del T1000.
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/helium_map.png" alt="Helium Map" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/helium_map.png"
+    alt="Helium Map"
+    width="800"
+  />
 </p>
 
 ### Reporte de Emergencia
 
 Sensor de movimiento para anomalías, botón SOS y transmisión de datos de alta frecuencia en modo emergencia.
 
-<p style="text-align: center">
-  <img src="https://www.seeedstudio.com/blog/wp-content/uploads/2023/06/%E7%94%BB%E6%9D%BF-4@1.5x.png" alt="SOS" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://www.seeedstudio.com/blog/wp-content/uploads/2023/06/%E7%94%BB%E6%9D%BF-4@1.5x.png"
+    alt="SOS"
+    width="800"
+  />
 </p>
 
 ## Arquitectura
 
-<p style="text-align: center">
-  <img src="https://www.seeedstudio.com/blog/wp-content/uploads/2023/06/%E7%B4%A0%E6%9D%9033.png" alt="Arquitectura" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://www.seeedstudio.com/blog/wp-content/uploads/2023/06/%E7%B4%A0%E6%9D%9033.png"
+    alt="Arquitectura"
+    width="800"
+  />
 </p>
 
 ## Aplicaciones
@@ -111,8 +151,12 @@ Sensor de movimiento para anomalías, botón SOS y transmisión de datos de alta
 - Búsqueda y rescate  
 - Monitoreo de equipos  
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/applications.png" alt="Aplicaciones" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/applications.png"
+    alt="Aplicaciones"
+    width="800"
+  />
 </p>
 
 ## Especificaciones
@@ -122,8 +166,12 @@ Sensor de movimiento para anomalías, botón SOS y transmisión de datos de alta
 - **T1000-A/B**: GNSS sin cifrado.
 - **T1000-C/D**: GNSS cifrado, requiere [LoRa Cloud](https://www.loracloud.com/) para descifrado.
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/model_spec2.png" alt="Modelos" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/model_spec2.png"
+    alt="Modelos"
+    width="800"
+  />
 </p>
 
 ### Parámetros Generales

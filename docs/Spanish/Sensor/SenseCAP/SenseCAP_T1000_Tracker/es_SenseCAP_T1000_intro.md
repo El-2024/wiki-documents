@@ -11,15 +11,21 @@ last_update:
   author: Guillermo
 ---
 
-<p style="text-align: center">
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker_1.png" alt="SenseCAP T1000 Tracker" width="800" />
+<p style={{ textAlign: "center" }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker_1.png"
+    alt="SenseCAP T1000 Tracker"
+    width="800"
+  />
 </p>
 
 [**SenseCAP T1000 Tracker**](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html), tan compacto como una tarjeta de crédito, cabe fácilmente en tu bolsillo o puede colocarse en cualquier activo.
 
 Está equipado con GPS, Bluetooth y Wi-Fi para posicionamiento tanto en interiores como exteriores. Además del rastreo, mide parámetros como temperatura, brillo y movimiento. Incluye un botón de emergencia, un zumbador, y una batería que puede durar meses con una sola carga, brindando una solución confiable para múltiples aplicaciones.
 
-# <div style="text-align: center; color: white;">Catálogo del SenseCAP T1000 Tracker</div>
+<div style={{ textAlign: "center", color: "white" }}>
+  Catálogo del SenseCAP T1000 Tracker
+</div>
 
 ## Introducción
 

@@ -13,8 +13,6 @@ last_update:
   date: 07/22/2025
   author: Guillermo
 ---
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 # SenseCAP Indicator - Desarrollo de Aplicaciones LoRa
 
@@ -71,6 +69,9 @@ Clona o descarga el código de ejemplo desde [este enlace](https://github.com/Se
 ### Paso 2: Implementar el Codificador de Payload (XIAO; Arduino)
 
 #### Paso 2.1: Implementa tu Estructura de Payload y Codificador
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 <Tabs>
 
@@ -367,7 +368,7 @@ Completa el Payload, ahora nos enfocaremos en programar el decodificador de payl
 #### Paso 3.1: Implementa tu Decodificador de Payload
 
 <Tabs>
-  <Tabitem value="Indicator/main/Frame/frame.h">
+  <TabItem value="Indicator/main/Frame/frame.h">
 
   ```cpp
     #ifndef __SIMPLE_FRAME_H
@@ -405,8 +406,8 @@ Completa el Payload, ahora nos enfocaremos en programar el decodificador de payl
     #endif
   ```
 
-  </Tabitem>
-  <Tabitem value="Indicator/main/Frame/frame.c">
+  </TabItem>
+  <TabItem value="Indicator/main/Frame/frame.c">
 
   ```cpp
     #include "frame.h"
@@ -469,7 +470,7 @@ Completa el Payload, ahora nos enfocaremos en programar el decodificador de payl
         return crc & 0xFFFF;
     }
   ```
-  </Tabitem>
+  </TabItem>
 </Tabs>
 
 #### Paso 3.2: Implementar la Estructura de Datos del Sensor

@@ -37,7 +37,12 @@ Antes de iniciar, asegúrate de contar con lo siguiente:
 
 :::tip Nota
 Si acabas de flashear el firmware, usa un pin para presionar suavemente el botón de reinicio.
-<div style="text-align:center"><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/Flash/finish2.jpg" style="width:200px; height:auto"/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="http://files.seeedstudio.com/wiki/Watcher_Agent/Flash/finish2.jpg"
+    style={{ width: '200px', height: 'auto' }}
+  />
+</div>
 :::
 
 - El dispositivo se encenderá e ingresará al **modo de configuración Wi-Fi**.
@@ -64,7 +69,12 @@ Si la página no se abre automáticamente, asegúrate de seguir conectado a la r
 - Ingresa la contraseña de tu red Wi-Fi  
 - Haz clic en **"Connect"** para continuar  
 
-<div style="text-align:center"><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/wifi%20config.jpg" style="width:500px; height:auto"/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/wifi%20config.jpg"
+    style={{ width: '500px', height: 'auto' }}
+  />
+</div>
 
 :::note
 - Solo se admiten redes de **2.4GHz**  
@@ -81,7 +91,12 @@ Si la página no se abre automáticamente, asegúrate de seguir conectado a la r
 - El dispositivo se reiniciará en 3 segundos  
 - Tras reiniciarse, se conectará automáticamente a la red configurada  
 
-<div style="text-align:center"><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/wifi%20done.jpeg" style="width:500px; height:auto"/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/wifi%20done.jpeg"
+    style={{ width: '500px', height: 'auto' }}
+  />
+</div>
 
 ---
 
@@ -90,7 +105,12 @@ Si la página no se abre automáticamente, asegúrate de seguir conectado a la r
 **Paso 1. Código de verificación en pantalla**
 
 - El dispositivo mostrará un código de 6 dígitos para registrar el dispositivo  
-<div style="text-align:center"><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/activation.jpg" style="width:300px; height:auto"/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/activation.jpg"
+    style={{ width: '300px', height: 'auto' }}
+  />
+</div>
 
 **Paso 2. Registrar dispositivo**
 

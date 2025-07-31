@@ -11,7 +11,9 @@ last_update:
   author: Guillermo
 ---
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/1.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}>
+  <img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/1.jpg" style={{width:800, height:'auto'}}/>
+</div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-IoT-Button-p-6419.html">
@@ -80,11 +82,19 @@ Antes de comenzar, es esencial conocer algunos parámetros básicos del producto
 	</table>
 </div>
 
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/3.png"
+    style={{ width: '800px', height: 'auto' }}
+  />
+</div>
 
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/3.png" style={{width:800, height:'auto'}}/></div>
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/4.png" style={{width:800, height:'auto'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/4.png"
+    style={{ width: '800px', height: 'auto' }}
+  />
+</div>
 
 ## Primeros Pasos
 
@@ -123,13 +133,17 @@ Asegúrate de usar un cable USB Tipo-C de 5V conforme a los estándares. Cables 
 
 También puedes adquirir directamente **Home Assistant Green** o **Home Assistant Yellow**:
 
-<div align="center">
+<div style={{ textAlign: 'center' }}>
   <a href="https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html">
-    <strong><span style="color:white; font-size:1.1em;">Home Assistant Green</span></strong>
-  </a>  
+    <strong>
+      <span style={{ color: 'white', fontSize: '1.1em' }}>Home Assistant Green</span>
+    </strong>
+  </a>
   <br /><br />
   <a href="https://www.seeedstudio.com/Home-Assistant-Yellow-Kit-with-selectable-CM4-p-5680.html">
-    <strong><span style="color:white; font-size:1.1em;">Home Assistant Yellow</span></strong>
+    <strong>
+      <span style={{ color: 'white', fontSize: '1.1em' }}>Home Assistant Yellow</span>
+    </strong>
   </a>
 </div>
 
@@ -138,7 +152,12 @@ También puedes adquirir directamente **Home Assistant Green** o **Home Assistan
    - Ve a la sección "Add-ons" y busca **ESPHome**.
    - Haz clic en **Install** y luego en **Start** para activarlo.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/5.png" style={{width:1000, height:'auto'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/5.png"
+    style={{ width: '1000px', height: 'auto' }}
+  />
+</div>
 
 Con estos pasos, ya tendrás el entorno preparado para integrar el **IoT Button**.
 
@@ -150,6 +169,9 @@ El dispositivo viene preinstalado con firmware para **IoT Button**, pero podría
 2. **Actualizar el firmware:** para obtener nuevas funciones.
 
 Puedes hacerlo de dos maneras:
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 <Tabs>
 <TabItem value='Web Tool'>
@@ -184,9 +206,20 @@ Con el firmware instalado, puedes encender el IoT Button y aparecerá un punto d
 
 Navega a `192.168.4.1` para configurar los ajustes de red local de tu servidor de Home Assistant.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60fda2/opt-for-wifi-ap.jpg" style={{width:360, height:'auto', "border-radius": '15px'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60fda2/opt-for-wifi-ap.jpg"
+    style={{ width: '360px', height: 'auto', borderRadius: '15px' }}
+  />
+</div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60fda2/ha-enter-psw.jpg" style={{width:360, height:'auto', "border-radius": '15px'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60fda2/ha-enter-psw.jpg"
+    style={{ width: '360px', height: 'auto', borderRadius: '15px' }}
+  />
+</div>
+
 
 ### Paso 3: Descubrir y añadir el dispositivo en Home Assistant {#discovering-and-adding-the-device-in-home-assistant}
 
@@ -194,11 +227,21 @@ En esta sección utilizaremos la app de Home Assistant, pero el proceso es el mi
 
 1. **Abre la app**: Una vez abierta, selecciona tu servidor de Home Assistant. La app lo detectará automáticamente.
 
-  <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-server-option.JPG" style={{width:360, height:'auto', "border-radius": '15px'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-server-option.JPG"
+    style={{ width: '360px', height: 'auto', borderRadius: '15px' }}
+  />
+</div>
 
 2. **Crea una cuenta**: Si no tienes una cuenta, deberás crearla. Luego inicia sesión con tus credenciales.
 
-  <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-login.JPG" style={{width:360, height:'auto', "border-radius": '15px'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-login.JPG"
+    style={{ width: '360px', height: 'auto', borderRadius: '15px' }}
+  />
+</div>
 
 3. **Ve a la página de Integraciones**: Una vez dentro, ve a la sección "Integraciones" en Home Assistant. Si instalaste el complemento ESPHome y tanto el IoT Button como tu servidor están en la misma red, deberías ver el dispositivo `Seeed Studio IoT Button` en los dispositivos detectados.
 

@@ -43,47 +43,47 @@ El MiniSense 100 funciona como un acelerómetro tipo viga en voladizo. Cuando la
       <td width="250"><strong>Valor</strong></td>
       <td width="250"><strong>Unidad</strong></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Sensibilidad de voltaje (circuito abierto, base)</td>
       <td>1.1</td>
       <td>V/g</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Sensibilidad de carga (base)</td>
       <td>260</td>
       <td>pC/g</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Frecuencia de resonancia</td>
       <td>75</td>
       <td>Hz</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Sensibilidad de voltaje (circuito abierto, en resonancia)</td>
       <td>6</td>
       <td>V/g</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Frecuencia límite superior (+3 dB)</td>
       <td>42</td>
       <td>Hz</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Linealidad</td>
       <td>+/-1</td>
       <td>%</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Capacitancia</td>
       <td>244</td>
       <td>pF</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Factor de disipación</td>
       <td>0.018</td>
       <td>(sin unidad)</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Masa inercial</td>
       <td>0.3</td>
       <td>gramos</td>
@@ -100,20 +100,20 @@ El MiniSense 100 funciona como un acelerómetro tipo viga en voladizo. Cuando la
       <td width="250"><strong>Valor</strong></td>
       <td width="250"><strong>Unidad</strong></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Temperatura de almacenamiento</td>
       <td colspan="2" rowspan="1">-40 a +80 °C</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Temperatura de operación</td>
       <td colspan="2" rowspan="1">-20 a +60 °C</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td rowspan="2">Peso</td>
       <td>Minisense 100H</td>
       <td>0.5 gramos</td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>Minisense 100V</td>
       <td>0.6 gramos</td>
     </tr>

@@ -94,9 +94,18 @@ Consulta [Firmware Flash](https://wiki.seeedstudio.com/reSpeaker_usb_v3/#update-
 
 Descarga e instala la versión estable del Arduino IDE acorde a tu sistema operativo.
 
-<div class="download_arduino_container" style="text-align: center;">
-  <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
-    <strong><span style="color: #FFFFFF; font-size: 1.25rem;">Descarga Arduino IDE</span></strong>
+<div className="download_arduino_container" style={{ textAlign: 'center' }}>
+  <a
+    className="download_arduino_item"
+    href="https://www.arduino.cc/en/software"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <strong>
+      <span>
+        <font color="#FFFFFF" size="4">Descarga Arduino IDE</font>
+      </span>
+    </strong>
   </a>
 </div>
 

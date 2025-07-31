@@ -50,77 +50,77 @@ El sensor de flujo de agua consta de un cuerpo de válvula de plástico, un roto
     </tr>
   </thead>
   <tbody>
-    <tr style="font-size: 90%;">
-      <td width="200">1</td>
-      <td width="150">Cuerpo de válvula</td>
-      <td width="150">1</td>
-      <td width="150">PA66 + 33% fibra de vidrio</td>
-      <td width="150"></td>
+    <tr style={{ fontSize: '90%' }}>
+      <td style={{ width: '200px' }}>1</td>
+      <td style={{ width: '150px' }}>Cuerpo de válvula</td>
+      <td style={{ width: '150px' }}>1</td>
+      <td style={{ width: '150px' }}>PA66 + 33% fibra de vidrio</td>
+      <td style={{ width: '150px' }}></td>
     </tr>
-    <tr style="font-size: 90%;">
-      <td width="200">2</td>
-      <td width="150">Bola de acero inoxidable</td>
-      <td width="150">1</td>
-      <td width="150">Acero inoxidable SUS304</td>
-      <td width="150"></td>
+    <tr style={{ fontSize: '90%' }}>
+      <td style={{ width: '200px' }}>2</td>
+      <td style={{ width: '150px' }}>Bola de acero inoxidable</td>
+      <td style={{ width: '150px' }}>1</td>
+      <td style={{ width: '150px' }}>Acero inoxidable SUS304</td>
+      <td style={{ width: '150px' }}></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>3</td>
       <td>Eje</td>
       <td>1</td>
       <td>Acero inoxidable SUS304</td>
       <td></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>4</td>
       <td>Impulsor</td>
       <td>1</td>
       <td>POM</td>
       <td></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>5</td>
       <td>Imán en anillo</td>
       <td>1</td>
       <td>Ferrita</td>
       <td></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>6</td>
       <td>Anillo intermedio</td>
       <td>1</td>
       <td>PA66 + 33% fibra de vidrio</td>
       <td></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>7</td>
       <td>Anillo de sellado (O-ring)</td>
       <td>1</td>
       <td>Goma</td>
       <td></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>8</td>
       <td>Anillo de sellado electrónico</td>
       <td>1</td>
       <td>Goma</td>
       <td></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>9</td>
       <td>Cubierta</td>
       <td>1</td>
       <td>PA66 + 33% fibra de vidrio</td>
       <td></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>10</td>
       <td>Tornillo</td>
       <td>4</td>
       <td>Acero inoxidable SUS304</td>
       <td></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>11</td>
       <td>Cable</td>
       <td>1</td>
@@ -129,6 +129,7 @@ El sensor de flujo de agua consta de un cuerpo de válvula de plástico, un roto
     </tr>
   </tbody>
 </table>
+
 
 ## Ejemplo de uso
 

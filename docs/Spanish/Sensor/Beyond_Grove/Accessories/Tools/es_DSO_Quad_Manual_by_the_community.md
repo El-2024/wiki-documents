@@ -95,7 +95,16 @@ Cuando recibas el DSO Quad, deberías tener algo como esto:
 8. Desliza la tapa trasera en su lugar.  
 Sujeta firmemente el lado izquierdo mientras deslizas la tapa hacia la derecha. Mira [este enlace](http://www.flickr.com/photos/seeedstudio/5807556545/in/photostream/) para una demostración.
 
-9. <div className="thumb tright"><div className="thumbinner" style={{width: 202}}> <div className="thumbcaption">LED rojo de "carga"</div></div></div> Pon el DSO Quad en posición vertical y conecta el cable USB. Deberías ver el LED rojo de "carga". Por favor carga tu DSO Quad al menos 1 hora la primera vez antes de usarlo.
+9. 
+<div className="thumb tright">
+  <div className="thumbinner" style={{ width: '202px' }}>
+    <div className="thumbcaption">LED rojo de "carga"</div>
+  </div>
+</div>
+
+<p>
+  Pon el DSO Quad en posición vertical y conecta el cable USB. Deberías ver el LED rojo de "carga". Por favor carga tu DSO Quad al menos 1 hora la primera vez antes de usarlo.
+</p>
 
 ![](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_red_charging_led.jpg)
 
@@ -214,12 +223,16 @@ Aquí está el firmware más reciente bajo contrato especial con [FPGA(DFU，SYS
       SYS B1.52<br />
       FPGA 2.61
     </td>
-    <td>
-      Seeed Studio envía esta versión.<br />
-      ¡Este firmware tiene una GUI mucho mejor!<br />
-      (Además, el firmware de fábrica en 2.7 se congelaba mucho, por lo que se recomienda este firmware)<br />
-      <img src="https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_26.jpg" alt="Versión 2.7" style="max-width: 150px;" />
-    </td>
+<td>
+  Seeed Studio envía esta versión.<br />
+  ¡Este firmware tiene una GUI mucho mejor!<br />
+  (Además, el firmware de fábrica en 2.7 se congelaba mucho, por lo que se recomienda este firmware)<br />
+  <img
+    src="https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_26.jpg"
+    alt="Versión 2.7"
+    style={{ maxWidth: '150px' }}
+  />
+</td>
   </tr>
   <tr>
     <td></td>
@@ -234,10 +247,14 @@ Aquí está el firmware más reciente bajo contrato especial con [FPGA(DFU，SYS
       SYS 1.52<br />
       FPGA 2.61
     </td>
-    <td>
-      Seeed Studio envió esta versión<br />
-      <img src="https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_22.jpg" alt="Versión 2.6" style="max-width: 150px;" />
-    </td>
+<td>
+  Seeed Studio envió esta versión<br />
+  <img
+    src="https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/img/Dso_quad_hw_ver_22.jpg"
+    alt="Versión 2.6"
+    style={{ maxWidth: '150px' }}
+  />
+</td>
   </tr>
   <tr>
     <td></td>

@@ -15,7 +15,11 @@ last_update:
 |---|---|
 | Fuente de alimentación para protoboard 5V/3.3V v1.1 | Fuente de alimentación para protoboard 5V/3.3V v1.2 |
 
-<p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/5V-3.3V-Breadboard-Power-Supply-p-566.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
+<p align="center">
+  <a href="https://www.seeedstudio.com/5V-3.3V-Breadboard-Power-Supply-p-566.html" target="_blank">
+    <img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" />
+  </a>
+</p>
 
 Historial de versiones:
 
@@ -28,18 +32,19 @@ Historial de versiones:
       <th>Descripción</th>
       <th>Fecha de lanzamiento</th>
     </tr>
-    <tr style="font-size: 90%;">
-      <td width="300px">5V/3.3V Breadboard Power Supply v1.1</td>
-      <td width="500px">Lanzamiento público inicial</td>
-      <td width="200px"></td>
+    <tr style={{ fontSize: '90%' }}>
+      <td style={{ width: '300px' }}>5V/3.3V Breadboard Power Supply v1.1</td>
+      <td style={{ width: '500px' }}>Lanzamiento público inicial</td>
+      <td style={{ width: '200px' }}></td>
     </tr>
-    <tr style="font-size: 90%;">
+    <tr style={{ fontSize: '90%' }}>
       <td>5V/3.3V Breadboard Power Supply v1.2</td>
       <td></td>
       <td></td>
     </tr>
   </tbody>
 </table>
+
 
 1.Eliminado interruptor innecesario
 

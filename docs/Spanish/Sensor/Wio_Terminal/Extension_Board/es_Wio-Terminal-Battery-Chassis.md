@@ -16,8 +16,10 @@ El Chasis de Batería para Wio Terminal es una placa de expansión imprescindibl
 
 Con el [Wio Terminal Dev Board](https://www.seeedstudio.com/Wio-Terminal-p-4509.html) + el Chasis de Batería para Wio Terminal, puedes construir proyectos IoT compactos y potentes fácilmente. Gracias a los puertos Grove extendidos, podrás disfrutar de las funcionalidades plug and play del [ecosistema Grove](https://www.seeedstudio.com/category/Grove-c-1003.html).
 
-<div style="text-align:center">
-    <a href="https://www.seeedstudio.com/Wio-Terminal-Chassis-Battery-650mAh-p-4756.html" style="font-weight:bold; font-size:16px; color:#FFFFFF; background-color:#4CAF50; padding:10px 20px; text-decoration:none; border-radius:4px;">¡Consigue uno ahora 🖱️!</a>
+<div class="get_one_now_container" style={{ textAlign: "center"}}>
+  <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-Chassis-Battery-650mAh-p-4756.html">
+    <strong><span><font color="FFFFFF" size="4">¡Consíguelo ahora!</font></span></strong>
+  </a>
 </div>
 
 ## Características
@@ -63,15 +65,9 @@ Corriente de carga:
 
 * La resistencia ha sido cambiada a **680kΩ/1%** para limitar la corriente de carga a **450mA**.
 
-## Visualizador en Línea del Esquemático
-
-<div style="border:1px solid #f1f1f1; border-radius:0 0 4px 4px; max-width:1280px; max-height:700px; overflow:hidden; box-sizing:border-box; height:500px;">
-    <iframe src="https://files.seeedstudio.com/wiki/Wio-Terminal-Battery-Chassis/res/Wio%20Terminal%20Chassis%20-%20Battery_SCH.zip" style="width:100%; height:100%; border:none;"></iframe>
-</div>
-
 ## Recursos
 
-* **\[ZIP]** [Archivo de diseño esquemático del Chasis de Batería Wio Terminal](https://files.seeedstudio.com/wiki/Wio-Terminal-Battery-Chassis/res/Wio%20Terminal%20Chassis%20-%20Battery_SCH.zip)
+* **[ZIP]** [Archivo de diseño esquemático del Chasis de Batería Wio Terminal](https://files.seeedstudio.com/wiki/Wio-Terminal-Battery-Chassis/res/Wio%20Terminal%20Chassis%20-%20Battery_SCH.zip)
 
 ## Soporte Técnico y Discusión del Producto
 

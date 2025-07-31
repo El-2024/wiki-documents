@@ -46,86 +46,53 @@ Tiene un tamaño compacto y peso ligero, lo que facilita su instalación. Gracia
 
 ## Especificaciones
 
-<table class="tg" data-data-style="undefined;table-layout: fixed; width: 640px;">
-<tbody>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Rango de Medición</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">0 ~ 5 metros</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Longitud del Cable</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">5.3 metros</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Señal de Salida</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">0.5 ~ 4.5 V</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Precisión</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">± 0.25%F.S</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Deriva Térmica Cero</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">± 0.03%F.S/℃</span></td>
-</tr>
-<tr>
-<td class="tg-zdzz"><span style="color: #000000;">Deriva Térmica de Sensibilidad</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">± 0.03%F.S/℃</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Estabilidad a Largo Plazo</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">≤0.2%F.S/año</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Tiempo de Respuesta</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">5 ms (≤90%F.S)</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Líquido de Medición</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">Líquido levemente corrosivo (agua, aceite comestible, etc.)</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Fuente de Alimentación</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">5 V DC</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Capacidad de Sobrecarga</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">200%F.S</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Temperatura de Compensación</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">-10 ℃ ~ +70 ℃</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Temperatura del Medio</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">-40 ℃ ~ +80 ℃</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Temperatura de Almacenamiento</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">-40 ℃ ~ +85 ℃</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Material</span></td>
-<td class="tg-h2xt">
-<p><span style="color: #000000;">Cuerpo de acero inoxidable 304,</span></p>
-<p><span style="color: #000000;">núcleo de acero inoxidable 316L,</span></p>
-<p><span style="color: #000000;">cable aislado con goma especial.</span></p>
-</td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Clasificación IP</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">IP68</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Peso del Dispositivo</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">670 g</span></td>
-</tr>
-<tr>
-<td class="tg-h2xt"><span style="color: #000000;">Certificaciones</span></td>
-<td class="tg-h2xt"><span style="color: #000000;">CE, FCC, RoHS</span></td>
-</tr>
-</tbody>
+<table
+  style={{
+    tableLayout: "fixed",
+    width: "640px",
+    borderCollapse: "collapse",
+  }}
+>
+  <tbody>
+    {[
+      ["Rango de Medición", "0 ~ 5 metros"],
+      ["Longitud del Cable", "5.3 metros"],
+      ["Señal de Salida", "0.5 ~ 4.5 V"],
+      ["Precisión", "± 0.25%F.S"],
+      ["Deriva Térmica Cero", "± 0.03%F.S/℃"],
+      ["Deriva Térmica de Sensibilidad", "± 0.03%F.S/℃"],
+      ["Estabilidad a Largo Plazo", "≤0.2%F.S/año"],
+      ["Tiempo de Respuesta", "5 ms (≤90%F.S)"],
+      ["Líquido de Medición", "Líquido levemente corrosivo (agua, aceite comestible, etc.)"],
+      ["Fuente de Alimentación", "5 V DC"],
+      ["Capacidad de Sobrecarga", "200%F.S"],
+      ["Temperatura de Compensación", "-10 ℃ ~ +70 ℃"],
+      ["Temperatura del Medio", "-40 ℃ ~ +80 ℃"],
+      ["Temperatura de Almacenamiento", "-40 ℃ ~ +85 ℃"],
+      [
+        "Material",
+        <>
+          <p style={{ margin: 0 }}>Cuerpo de acero inoxidable 304,</p>
+          <p style={{ margin: 0 }}>núcleo de acero inoxidable 316L,</p>
+          <p style={{ margin: 0 }}>cable aislado con goma especial.</p>
+        </>,
+      ],
+      ["Clasificación IP", "IP68"],
+      ["Peso del Dispositivo", "670 g"],
+      ["Certificaciones", "CE, FCC, RoHS"],
+    ].map(([label, value], i) => (
+      <tr key={i} style={{ borderBottom: "1px solid #ccc" }}>
+        <td style={{ color: "#FFFFFF", padding: "6px 8px", verticalAlign: "top" }}>
+          {label}
+        </td>
+        <td style={{ color: "#FFFFFF", padding: "6px 8px", verticalAlign: "top" }}>
+          {value}
+        </td>
+      </tr>
+    ))}
+  </tbody>
 </table>
+
 
 ## Dimensiones
 

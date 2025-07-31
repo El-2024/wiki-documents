@@ -71,33 +71,33 @@ Rendimiento esperado:
       <th>No.</th>
       <th>Componente</th>
     </tr>
-    <tr style="font-size:90%;">
-      <td width="150">1</td>
-      <td width="150">Estructura fija</td>
+    <tr style={{ fontSize: '90%' }}>
+      <td style={{ width: '150px' }}>1</td>
+      <td style={{ width: '150px' }}>Estructura fija</td>
     </tr>
-    <tr style="font-size:90%;">
-      <td width="150">2</td>
-      <td width="150">Cubierta</td>
+    <tr style={{ fontSize: '90%' }}>
+      <td style={{ width: '150px' }}>2</td>
+      <td style={{ width: '150px' }}>Cubierta</td>
     </tr>
-    <tr style="font-size:90%;">
-      <td width="150">3</td>
-      <td width="150">Núcleo móvil</td>
+    <tr style={{ fontSize: '90%' }}>
+      <td style={{ width: '150px' }}>3</td>
+      <td style={{ width: '150px' }}>Núcleo móvil</td>
     </tr>
-    <tr style="font-size:90%;">
-      <td width="150">4</td>
-      <td width="150">Núcleo fijo</td>
+    <tr style={{ fontSize: '90%' }}>
+      <td style={{ width: '150px' }}>4</td>
+      <td style={{ width: '150px' }}>Núcleo fijo</td>
     </tr>
-    <tr style="font-size:90%;">
-      <td width="150">5</td>
-      <td width="150">Eje del solenoide</td>
+    <tr style={{ fontSize: '90%' }}>
+      <td style={{ width: '150px' }}>5</td>
+      <td style={{ width: '150px' }}>Eje del solenoide</td>
     </tr>
-    <tr style="font-size:90%;">
-      <td width="150">6</td>
-      <td width="150">Solenoide</td>
+    <tr style={{ fontSize: '90%' }}>
+      <td style={{ width: '150px' }}>6</td>
+      <td style={{ width: '150px' }}>Solenoide</td>
     </tr>
-    <tr style="font-size:90%;">
-      <td width="150">7</td>
-      <td width="150">Conducto</td>
+    <tr style={{ fontSize: '90%' }}>
+      <td style={{ width: '150px' }}>7</td>
+      <td style={{ width: '150px' }}>Conducto</td>
     </tr>
   </tbody>
 </table>

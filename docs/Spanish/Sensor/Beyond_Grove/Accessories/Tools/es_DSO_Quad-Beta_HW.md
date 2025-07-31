@@ -58,8 +58,10 @@ Puedes encontrar la página del producto para el dispositivo beta [aquí: TES101
 6. ¿Cuáles son las aplicaciones de usuario?
 
 <dl>
-  <dt><span style="color: red;">[Sin respuesta oficial]</span></dt>
-  <dd>Que yo sepa, existirá la posibilidad de arrancar diferentes aplicaciones que puedas almacenar en el U-Disk. Agregaré una sección en esta página para recopilar ideas para aplicaciones de usuario.</dd>
+  <dt><span style={{ color: 'red' }}>[Sin respuesta oficial]</span></dt>
+  <dd>
+    Que yo sepa, existirá la posibilidad de arrancar diferentes aplicaciones que puedas almacenar en el U-Disk. Agregaré una sección en esta página para recopilar ideas para aplicaciones de usuario.
+  </dd>
 </dl>
 
 7. ¿Cuál es la duración de la batería?

@@ -19,10 +19,10 @@ El Grove Shield para Wio Lite está diseñado para la serie Wio Lite de Seeed St
 
 Este Shield permite sacar los pines del procesador del Wio Lite (por ejemplo, el SAM D21 para el Wio Lite W600) en forma de headers y conectores Grove. Cuenta con 4 conectores digitales Grove, 4 conectores analógicos Grove, un puerto Grove UART y un puerto Grove I2C.
 
-<p style="text-align: center;">
-<a href="https://www.seeedstudio.com/Grove-Shield-for-Wio-Lite-p-4156.html" target="_blank">
-<img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" />
-</a>
+<p style={{ textAlign: 'center' }}>
+  <a href="https://www.seeedstudio.com/Grove-Shield-for-Wio-Lite-p-4156.html" target="_blank">
+    <img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" />
+  </a>
 </p>
 
 ## Especificaciones

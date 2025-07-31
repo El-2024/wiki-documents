@@ -14,12 +14,13 @@ last_update:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/203.png" style={{width:900, height:'auto'}}/></div>
 
-<div class="get_one_now_container" style="text-align: center;">
-  <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html">
-    <strong><span style="color: #FFFFFF; font-size: 1.25rem;">🖱️ Consigue uno ahora</span></strong>
+<div className="get_one_now_container" style={{ textAlign: 'center' }}>
+  <a className="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html">
+    <strong>
+      <span style={{ color: '#FFFFFF', fontSize: '1.25rem' }}>🖱️ Consigue uno ahora</span>
+    </strong>
   </a>
 </div>
-
 
 ## Descripción General
 
@@ -70,17 +71,38 @@ Esta librería cumple las mismas funciones que la librería TFT, pero **no es co
 
 Descarga e instala la librería Seeed Arduino LCD desde GitHub:
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/50.png" style={{width:800, height:'auto'}}/></div>  
+<div style={{ textAlign: 'center' }}>
+  <img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/50.png" style={{ width: 800, height: 'auto' }} />
+</div>
 
-<div align="center">
-<a href="https://github.com/Seeed-Studio/Seeed_Arduino_LCD" target="_blank">
-<p style={{textAlign: 'center'}}><button type="button" className="download" style={{backgroundColor: '#00A418', borderRadius: '8px', border: 'none', color: '#fff', padding: '12px 24px', textAlign: 'center', textDecoration: 'none', display: 'inline-block', fontSize: '16px', margin: '4px 2px', cursor: 'pointer'}}>Haz clic aquí para descargar</button></p>
-</a>
+<div style={{ textAlign: 'center' }}>
+  <a href="https://github.com/Seeed-Studio/Seeed_Arduino_LCD" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+    <button
+      type="button"
+      className="download"
+      style={{
+        backgroundColor: '#00A418',
+        borderRadius: '8px',
+        border: 'none',
+        color: '#fff',
+        padding: '12px 24px',
+        fontSize: '16px',
+        cursor: 'pointer',
+      }}
+    >
+      Haz clic aquí para descargar
+    </button>
+  </a>
 </div>
 
 Luego de descargarla, ve a **Programa** -> **Incluir Librería** -> **Añadir Librería .ZIP** y selecciona el archivo descargado.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/51.png" style={{width:800, height:'auto'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/51.png"
+    style={{ width: 800, height: 'auto' }}
+  />
+</div>
 
 Se incluyen 4 ejemplos básicos. Puedes abrir cualquiera de los siguientes:
 
@@ -89,27 +111,57 @@ Se incluyen 4 ejemplos básicos. Puedes abrir cualquiera de los siguientes:
 3. **Clock_digital**: Muestra un reloj digital.  
 4. **Shape**: Muestra palabras y figuras de distintos tamaños de forma aleatoria.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/52.png" style={{width:800, height:'auto'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/52.png"
+    style={{ width: 800, height: 'auto' }}
+  />
+</div>
 
 ### Paso 4. Subir el código
 
 Antes de subir el código, abre el archivo **User_Setup_Select.h** en la librería **Seeed_Arduino_LCD**.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/53.png" style={{width:800, height:'auto'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/53.png"
+    style={{ width: 800, height: 'auto' }}
+  />
+</div>
 
 Comenta la línea 160 y descomenta la línea 163, luego **guarda el archivo**.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/54.png" style={{width:800, height:'auto'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/54.png"
+    style={{ width: 800, height: 'auto' }}
+  />
+</div>
 
 Después, ve a **Herramientas** -> **Placa** -> **Seeeduino XIAO ESP32C3** y **Herramientas** -> **Puerto** -> **Selecciona el puerto al que está conectada tu placa**. Finalmente haz clic en **Subir**.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/55.png" style={{width:800, height:'auto'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/55.png"
+    style={{ width: 800, height: 'auto' }}
+  />
+</div>
 
 ¡Ahora deberías ver el resultado en tu pantalla ePaper! Aquí los resultados de los ejemplos **Bitmap** y **Clock**:
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/56.png" style={{width:800, height:'auto'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/56.png"
+    style={{ width: 800, height: 'auto' }}
+  />
+</div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/57.png" style={{width:800, height:'auto'}}/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/57.png"
+    style={{ width: 800, height: 'auto' }}
+  />
+</div>
 
 ## Recursos
 

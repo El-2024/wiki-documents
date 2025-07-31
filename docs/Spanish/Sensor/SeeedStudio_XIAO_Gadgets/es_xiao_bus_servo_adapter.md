@@ -317,9 +317,18 @@ Con la librería instalada y conociendo las funciones básicas, vamos a ejecutar
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
 
-<div class="download_arduino_container" style="text-align: center;">
-  <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
-    <strong><span style="color: #FFFFFF; font-size: 1.25rem;">Descarga Arduino IDE</span></strong>
+<div className="download_arduino_container" style={{ textAlign: 'center' }}>
+  <a
+    className="download_arduino_item"
+    href="https://www.arduino.cc/en/software"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <strong>
+      <span>
+        <font color="#FFFFFF" size="4">Descarga Arduino IDE</font>
+      </span>
+    </strong>
   </a>
 </div>
 

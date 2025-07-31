@@ -47,7 +47,8 @@ Este repositorio describe cómo cargar y mostrar imágenes desde la tarjeta SD e
 
 #### Opción 1: Usar ejecutables precompilados para Windows (solo Windows):
 
-- **Paso 2-1-1:** Hemos preparado el ejecutable utilizando el paquete [Pyinstaller](https://pyinstaller.org/en/stable/){target=_blank}, puedes descargar el ejecutable haciendo clic en [bmp_converter.exe](https://files.seeedstudio.com/wiki/Wio-Terminal/res/bmp_converter.exe)
+- **Paso 2-1-1:** Hemos preparado el ejecutable utilizando el paquete [Pyinstaller](https://pyinstaller.org/en/stable/). Puedes descargar el ejecutable haciendo clic en <a href="https://files.seeedstudio.com/wiki/Wio-Terminal/res/bmp_converter.exe" target="_blank" rel="noopener noreferrer">bmp_converter.exe</a>.
+
 
 - **Paso 2-1-2:** Coloca el archivo `bmp_converter.exe` descargado en el mismo directorio que la carpeta `bmp` creada en el `Paso 1-3`.
 

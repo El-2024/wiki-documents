@@ -13,8 +13,13 @@ last_update:
 
 <!-- ！[](https://files.seeedstudio.com/wiki/Wio-Lite-RISC-V-GD32VF103/img/%E4%BA%A7%E5%93%81%E6%8B%8D%E6%91%84%E6%A8%A1%E6%9D%BF_perspective-09.png) -->
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Lite-RISC-V-GD32VF103/img/%E4%BA%A7%E5%93%81%E6%8B%8D%E6%91%84%E6%A8%A1%E6%9D%BF_perspective-09.png" alt="pir" width={600} height="auto" /></p>
-
+<p style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/Wio-Lite-RISC-V-GD32VF103/img/%E4%BA%A7%E5%93%81%E6%8B%8D%E6%91%84%E6%A8%A1%E6%9D%BF_perspective-09.png"
+    alt="pir"
+    style={{ width: '600px', height: 'auto' }}
+  />
+</p>
 
 # Wio Lite RISC-V
 
@@ -26,10 +31,18 @@ El núcleo WiFi ESP8266 y el circuito de carga para batería LiPo a bordo hacen 
 
 Como parte de la familia Wio Lite, el Wio Lite RISC-V es totalmente compatible con el [Grove Shield para Wio Lite](https://www.seeedstudio.com/Grove-Shield-for-Wio-Lite-p-4156.html), que permite usar más de [200 módulos Grove](https://www.seeedstudio.com/grove.html). Por ejemplo, puedes usar cualquier [OLED Grove](https://www.seeedstudio.com/catalogsearch/result/?cat=&q=grove+OLED) para convertirlo en una placa de desarrollo visual.
 
-<p style="text-align: center;">
-<a href="https://www.seeedstudio.com/Wio-Lite-RISC-V-GD32VF103-p-4293.html" target="_blank">
-<img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/get_one_now_small.png" width="200" height="38" border="0" />
-</a>
+<p style={{ textAlign: 'center' }}>
+  <a
+    href="https://www.seeedstudio.com/Wio-Lite-RISC-V-GD32VF103-p-4293.html"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/get_one_now_small.png"
+      alt="Get One Now"
+      style={{ width: '200px', height: '38px', border: 0 }}
+    />
+  </a>
 </p>
 
 ## Características

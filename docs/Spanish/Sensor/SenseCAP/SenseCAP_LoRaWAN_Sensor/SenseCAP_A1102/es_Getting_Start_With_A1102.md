@@ -133,13 +133,23 @@ Modelos TinyML AI funcionando localmente, transmitiendo únicamente los resultad
 
 - **Opción 2:** El SenseCAP A1102 admite operación continua mediante fuente de 12 V DC. Requiere una caja de conexiones adicional para instalación sencilla.
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/39.png" style="width:900px; height:auto"/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/39.png"
+    style={{ width: '900px', height: 'auto' }}
+  />
+</div>
 
 ## Vista General de Hardware
 
 - Foto del dispositivo:
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/38.png" style="width:900px; height:auto"/></div>
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/38.png"
+    style={{ width: '900px', height: 'auto' }}
+  />
+</div>
 
 ## Conexión a LoRaWAN®
 

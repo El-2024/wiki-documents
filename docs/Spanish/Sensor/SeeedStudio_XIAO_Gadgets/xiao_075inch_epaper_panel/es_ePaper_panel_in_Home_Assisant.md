@@ -20,10 +20,8 @@ import TabItem from '@theme/TabItem';
 
 <br></br>
 
-<div class="get_one_now_container" style="text-align: center;">
-  <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html">
-    <strong><span style="color: #FFFFFF; font-size: 1.25rem;">🖱️ Consigue uno ahora</span></strong>
-  </a>
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Consíguelo Ahora 🖱️</font></span></strong></a>
 </div>
 
 
@@ -33,6 +31,7 @@ Home Assistant es una potente plataforma de automatización del hogar de código
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/204.png" style={{width:900, height:'auto'}}/></div>
 
+
 ### ¿Por qué Home Assistant?
 
 - **Control Local**: A diferencia de muchas soluciones basadas en la nube, Home Assistant se ejecuta localmente en tu red, asegurando que tus datos permanezcan privados y tus automatizaciones funcionen incluso sin conexión a Internet.
@@ -40,12 +39,9 @@ Home Assistant es una potente plataforma de automatización del hogar de código
 - **Automatización Potente**: Crea reglas de automatización sofisticadas que pueden responder a diversos disparadores como hora, estado de dispositivos, lecturas de sensores y más.
 - **Panel Personalizable**: Diseña tu propia interfaz para mostrar la información que más te importe.
 
-<div class="get_one_now_container" style="text-align: center;">
-  <a class="get_one_now_item" href="https://www.home-assistant.io/">
-    <strong><span style="color: #FFFFFF; font-size: 1.25rem;">Aprende Más 🖱️</span></strong>
-  </a>
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.home-assistant.io/"><strong><span><font color={'FFFFFF'} size={"4"}> Aprende Más 🖱️</font></span></strong></a>
 </div>
-
 
 ### ¿Por qué usar una pantalla ePaper con Home Assistant?
 
@@ -82,12 +78,12 @@ Antes de comenzar el tutorial, asegúrate de tener el siguiente hardware listo.
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
         <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html">
-        <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
+        <strong><span><font color={'FFFFFF'} size={"4"}> Consíguelo Ahora 🖱️</font></span></strong>
         </a>
       </div></td>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
         <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html">
-        <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
+        <strong><span><font color={'FFFFFF'} size={"4"}> Consíguelo Ahora 🖱️</font></span></strong>
         </a>
       </div></td>
     </tr>
@@ -118,25 +114,29 @@ Ve a **Configuración** → **Complementos** → **TIENDA DE COMPLEMENTOS**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/02.png" style={{width:800, height:'auto'}}/></div>
 
-Busca **ESPHome**, haz clic en él y pulsa **INSTALAR**, luego **INICIAR**.
+<p>
+Busca <strong>ESPHome</strong>, haz clic en él y pulsa <strong>INSTALAR</strong>, luego <strong>INICIAR</strong>.
+</p>
 
 :::tip
-Si no ves ESPHome, asegúrate de usar una instalación compatible con complementos (OS o supervisada). Para Home Assistant Container, usa ESPHome Device Builder con Docker. Consulta la [documentación oficial](https://esphome.io/guides/getting_started_hassio).
+Si no ves ESPHome, asegúrate de usar una instalación compatible con complementos (OS o supervisada). Para Home Assistant Container, usa ESPHome Device Builder con Docker. Consulta la <a href="https://esphome.io/guides/getting_started_hassio" target="_blank" rel="noreferrer">documentación oficial</a>.
 :::
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/03.png" style={{width:800, height:'auto'}}/></div>
 
+<p>
 Posteriormente en ESPHome Builder aparecerá la barra lateral.
+</p>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/04.png" style={{width:800, height:'auto'}}/></div>
 
 ### Paso 2. Añadir un nuevo dispositivo
 
-En ESPHome, haz clic en **NUEVO DISPOSITIVO**.
+<p>En ESPHome, haz clic en <strong>NUEVO DISPOSITIVO</strong>.</p>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/06.png" style={{width:800, height:'auto'}}/></div>
 
-Ponle un nombre y haz clic en **SIGUIENTE**.
+<p>Ponle un nombre y haz clic en <strong>SIGUIENTE</strong>.</p>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/1.png" style={{width:800, height:'auto'}}/></div>
 
@@ -145,7 +145,7 @@ Ponle un nombre y haz clic en **SIGUIENTE**.
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/3.png" style={{width:'100%', height:'auto'}}/></div>
 </div>
 
-Después de crear el dispositivo, haz clic en **EDITAR**.
+<p>Después de crear el dispositivo, haz clic en <strong>EDITAR</strong>.</p>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/4.png" style={{width:800, height:'auto'}}/></div>
 
@@ -190,6 +190,7 @@ display:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/5.png" style={{width:1000, height:'auto'}}/></div>
 
+
 Haz clic en **INSTALL** para instalar el código en el dispositivo y verás la siguiente imagen.
 
 <Tabs>
@@ -233,7 +234,6 @@ Espera un momento y verás 'Hello world!' en la pantalla ～
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/71.png" style={{width:'100%', height:'auto'}}/></div>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/33.png" style={{width:'80%', height:'auto'}}/></div>
 </div>
-
 </TabItem>
 
 <TabItem value='Instalar desde el host'>
@@ -253,9 +253,13 @@ Haz clic en las opciones siguiendo la imagen para instalar el código en el disp
 
 Espera un momento y verás un mensaje como en la imagen. Significa que el código se está ejecutando correctamente.
 
-<div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
-  <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/9.png" style={{width:'100%', height:'auto'}}/></div>
-  <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/33.png" style={{width:'80%', height:'auto'}}/></div>
+<div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%'}}>
+  <div style={{ flex: 1, textAlign: 'center' }}>
+    <img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/9.png" style={{width:'100%', height:'auto'}}/>
+  </div>
+  <div style={{flex:1, textAlign: 'center'}}>
+    <img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/33.png" style={{width:'80%', height:'auto'}}/>
+  </div>
 </div>
 
 </TabItem>
@@ -270,13 +274,19 @@ Con este método no necesitas conectar el panel ePaper a nada, solo asegúrate d
 
 Haz clic en la opción y el firmware se instalará automáticamente en el panel ePaper.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/72.png" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}>
+  <img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/72.png" style={{width:500, height:'auto'}}/>
+</div>
 
-Espera un momento y verás un mensaje como en la imagen. Si falla, puede deberse a una señal débil. Acerca el dispositivo a tu router. [¿Tuviste un problema? Haz clic aquí.](#Q5)
+<p>Espera un momento y verás un mensaje como en la imagen. Si falla, puede deberse a una señal débil. Acerca el dispositivo a tu router. <a href="#Q5">¿Tuviste un problema? Haz clic aquí.</a></p>
 
 <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
-  <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/73.png" style={{width:'100%', height:'auto'}}/></div>
-  <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/33.png" style={{width:'80%', height:'auto'}}/></div>
+  <div style={{flex:1, textAlign:'center'}}>
+    <img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/73.png" style={{width:'100%', height:'auto'}}/>
+  </div>
+  <div style={{flex:1, textAlign:'center'}}>
+    <img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/33.png" style={{width:'80%', height:'auto'}}/>
+  </div>
 </div>
 
 </TabItem>
@@ -442,7 +452,7 @@ Primero, necesitamos instalar el complemento File Editor. Busca **Studio Code Se
 
 <div align="center">
 <a href="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/font_ttf.zip" target="_blank">
-<p style={{textAlign: 'center'}}><button type="button" className="download" style={{backgroundColor: '#00A418', borderRadius: '8px', border: 'none', color: '#fff', padding: '12px 24px', textAlign: 'center', textDecoration: 'none', display: 'inline-block', fontSize: '16px', margin: '4px 2px', cursor: 'pointer'}}>Haz clic aquí para descargar</button></p>
+<p style={{textAlign: 'center'}}><button type="button" className="download" style={{backgroundColor: '#00A418', borderRadius: 8, border: 'none', color: '#fff', padding: '12px 24px', textAlign: 'center', textDecoration: 'none', display: 'inline-block', fontSize: 16, margin: '4px 2px', cursor: 'pointer'}}>Haz clic aquí para descargar</button></p>
 </a>
 </div>
 
@@ -499,7 +509,7 @@ Si deseas usar otros íconos, puedes hacer clic en el siguiente botón para expl
 
 <div align="center">
 <a href="https://pictogrammers.com/library/mdi/" target="_blank">
-<p style={{textAlign: 'center'}}><button type="button" className="download" style={{backgroundColor: '#00A418', borderRadius: '8px', border: 'none', color: '#fff', padding: '12px 24px', textAlign: 'center', textDecoration: 'none', display: 'inline-block', fontSize: '16px', margin: '4px 2px', cursor: 'pointer'}}>Haz clic aquí para ir al sitio de íconos</button></p>
+<p style={{textAlign: 'center'}}><button type="button" className="download" style={{backgroundColor: '#00A418', borderRadius: 8, border: 'none', color: '#fff', padding: '12px 24px', textAlign: 'center', textDecoration: 'none', display: 'inline-block', fontSize: 16, margin: '4px 2px', cursor: 'pointer'}}>Haz clic aquí para ir al sitio de íconos</button></p>
 </a>
 </div>
 

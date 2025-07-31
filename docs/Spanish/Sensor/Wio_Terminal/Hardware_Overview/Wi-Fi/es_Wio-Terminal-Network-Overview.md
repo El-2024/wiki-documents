@@ -18,13 +18,19 @@ Este wiki explica cómo actualizar el firmware más reciente del núcleo inalám
 
 Primero, necesitamos actualizar el firmware del núcleo inalámbrico Realtek RTL8720 en el Wio Terminal. **Esto es esencial y se debe actualizar al firmware más reciente antes de continuar con los ejemplos.**
 
-<div style="display: table; table-layout: fixed; background-color: #F5A9A9; width: 100%; height: auto;">
-  <div style="display: table-cell; vertical-align: middle; background-color: #DF0101; padding-top: 10px; width: 38px; text-align: center;">
-    <img style="width: 26px; vertical-align: middle;" src="https://s3-us-west-2.amazonaws.com/static.seeed.cc/seeed/icon/Danger.svg" alt="icono de atención" />
+<div style={{ display: 'table', tableLayout: 'fixed', backgroundColor: '#F5A9A9', width: '100%' }}>
+  <div style={{ display: 'table-cell', verticalAlign: 'middle', backgroundColor: '#DF0101', paddingTop: 10, width: 38, textAlign: 'center' }}>
+    <img
+      style={{ width: 26, verticalAlign: 'middle' }}
+      src="https://s3-us-west-2.amazonaws.com/static.seeed.cc/seeed/icon/Danger.svg"
+      alt="icono de atención"
+    />
   </div>
-  <div style="display: table-cell; vertical-align: middle; padding-left: 15px; width: calc(95% - 38px);">
-    <p style="color: #000000; font-weight: bold; margin-top: 10px;">Atención</p>
-    <p style="color: #000000; font-size: 14px;">¡Por favor actualiza el núcleo Wi-Fi antes de usar!</p>
+  <div style={{ display: 'table-cell', verticalAlign: 'middle', paddingLeft: 15 }}>
+    <p style={{ color: '#000000', fontWeight: 'bold', margin: '10px 0 0' }}>Atención</p>
+    <p style={{ color: '#000000', fontSize: 14, margin: 0 }}>
+      ¡Por favor actualiza el núcleo Wi-Fi antes de usar!
+    </p>
   </div>
 </div>
 
@@ -65,7 +71,9 @@ cd ambd_flash_tool
 
 **NOTA:** Para ver la ayuda de la herramienta, ejecuta `.\ambd_flash_tool.exe`
 
-<p style="text-align: center;"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/ambd_tool_win_2.png" alt="imagen herramienta Windows" width="700" /></p>
+<p style={{ textAlign: 'center' }}>
+  <img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/ambd_tool_win_2.png" alt="imagen herramienta Windows" width="700" />
+</p>
 
 #### Para Mac/Linux
 
@@ -102,7 +110,13 @@ python3 ambd_flash_tool.py erase
 
 **NOTA:** Para ver la ayuda de la herramienta, ejecuta `python3 ambd_flash_tool.py`
 
-<p style="text-align: center;"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/ambd_tool_linux.png" alt="imagen herramienta Linux" width="750" /></p>
+<p style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/ambd_tool_linux.png"
+    alt="imagen herramienta Linux"
+    width="750"
+  />
+</p>
 
 ### Paso 2 - Flashear el firmware más reciente
 
@@ -187,7 +201,13 @@ Al abrir el **Monitor Serial**, deberías ver impresa la **versión del firmware
 
 * **PASO 2:** Asegúrate de tener instalada la versión más reciente (1.8.1). Si no, selecciona la versión más nueva en el menú desplegable y haz clic en `Install`.
 
-<p style="text-align: center;"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/ArduinoCore_new.png" alt="ArduinoCore" width="850" /></p>
+<p style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/ArduinoCore_new.png"
+    alt="ArduinoCore"
+    width="850"
+  />
+</p>
 
 > También puedes consultar el código fuente del Seeed SAMD ArduinoCore [**aquí**](https://github.com/Seeed-Studio/ArduinoCore-samd).
 
@@ -203,7 +223,13 @@ Hay varias librerías Arduino necesarias para la conectividad inalámbrica. Hemo
 
 * **PASO 3:** Haz clic en **Install**
 
-<p style="text-align: center;"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/library_install_1.jpg" alt="Instalación de librerías" width="870" /></p>
+<p style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/library_install_1.jpg"
+    alt="Instalación de librerías"
+    width="870"
+  />
+</p>
 
 ### Librerías necesarias para Wi-Fi
 
@@ -221,7 +247,13 @@ Para tu comodidad, hemos agrupado todas estas librerías. Por ello, para futuras
 
 * [**Seeed\_Arduino\_SFUD**](https://github.com/Seeed-Studio/Seeed_Arduino_SFUD) – busca `"seeed sfud"`
 
-<p style="text-align: center;"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/newliarary.png" alt="Librerías Wi-Fi" width="700" /></p>
+<p style={{ textAlign: 'center' }}>
+  <img
+    src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/newliarary.png"
+    alt="Librerías Wi-Fi"
+    width="700"
+  />
+</p>
 
 ## Lanzamientos
 
