@@ -47,6 +47,7 @@ You can also view it in the left file directory:
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/3.png" /></div>
 
 Drag the file(s) to the desktop and open it with Notepad.Add the network as shown in the image, and change it to your SSID and password.
+**Note** : Do not include extra spaces on either side of the equals sign.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/4.png" /></div>
 
@@ -111,14 +112,26 @@ Navigate to **Tools > Port** and select the serial port name of the connected XI
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 
-const char* ssid = "{Your wifi name}";
-const char* password = "{Your wifi password}";
-const char* apiUrl = "http://{Your reCamera wlan0 IP}/modeldetector"; //You can replace "modeldetector" with your project interface.
-//You can check the reCamera IP address of wlan0 using 'ifconfig' in the terminal.
+#include <Adafruit_NeoPixel.h>
+#ifdef __AVR__
+ #include <avr/power.h> // Required for 16 MHz Adafruit Trinket
+#endif
+
+// Which pin on the Arduino is connected to the NeoPixels?
+#define PIN        A0 // On Trinket or Gemma, suggest changing this to 1
+
+// How many NeoPixels are attached to the Arduino?
+#define NUMPIXELS 60 // Popular NeoPixel ring size
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+
+#define DELAYVAL 500
+
+const char* ssid = {"your wifi name"};     
+const char* password = {"your wifi password"}; 
+const char* apiUrl = "http://{"your wifi ip"}/modeldetector";
 
 void setup() {
   Serial.begin(115200);
-  //network connection 
   WiFi.begin(ssid, password);
 
   while (WiFi.status() != WL_CONNECTED) {
@@ -126,29 +139,35 @@ void setup() {
     Serial.println("Connecting to WiFi...");
   }
   Serial.println("Connected to WiFi");
+
+  #if defined(__AVR_ATtiny85__) && (F_CPU == 16000000)
+  clock_prescale_set(clock_div_1);
+  #endif
+  // END of Trinket-specific code.
+
+  pixels.begin();
 }
 
 void loop() {
   if (WiFi.status() == WL_CONNECTED) {
-    //send HTTP requests
     HTTPClient http;
     http.begin(apiUrl); 
     http.addHeader("Content-Type", "application/json"); 
+
 
     int httpCode = http.GET();
     if (httpCode > 0) {
       String payload = http.getString(); 
       Serial.println("HTTP Response:");
-      // Serial.println(payload);
+      // Serial.println(payload); 
 
-   
-      DynamicJsonDocument doc(1024); // Adjust the buffer size according to the actual JSON size.
+      DynamicJsonDocument doc(1024); 
       DeserializationError error = deserializeJson(doc, payload);
       if (error) {
-        Serial.print("JSON Deserialization fail: ");
+        Serial.print("JSON read failed: ");
         Serial.println(error.c_str());
       } 
-      // Adjust the json key according to the actual JSON content.
+      else {
       Serial.print("Code:  ");
       Serial.println(doc["Code"].as<String>());      
       Serial.print("Msg:  ");
@@ -174,17 +193,42 @@ void loop() {
       Serial.println("ms");
 
 
+      if (doc["Target"].as<String>().indexOf("person") != -1){
+          pixels.clear();
+          pixels.show();
+          int smileyLEDs[] = {21,26,29,32,35,39};
+          int numLEDs = sizeof(smileyLEDs) / sizeof(smileyLEDs[0]);
+
+          for (int i = 0; i < numLEDs; i++) {
+              pixels.setPixelColor(smileyLEDs[i], pixels.Color(2, 2, 0)); // yellow
+          }
+          pixels.show();
+
+          printf("Target contains 'person'\n");
+        } else {
+            pixels.clear();
+            pixels.show();
+            printf("Target does not contain 'person'\n");
+        }
+    }
+
+
     } else {
-      Serial.print("HTTP Get fail: ");
+      pixels.clear();
+      pixels.show();
+      Serial.print("HTTP get failed: ");
       Serial.println(httpCode);
     }
-    http.end();  
+    http.end(); 
   } else {
+    pixels.clear();
+    pixels.show();
     Serial.println("WiFi disconnected");
   }
 
-  delay(5000); 
+  delay(5000);
 }
+
 
 ```
 
@@ -209,6 +253,19 @@ sudo ./Supervisor_add_detection_http
 You can see the Json results of HTTP service in the **serial monitor** of XIAO.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/11.png" /></div>
+
+When person face the camera, XIAO displays a smiling face, thus realizing a smiley camera that you can DIY yourself.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/14.png" /></div>
+
+For more details, please refer to our [GitHub repository](https://github.com/Seeed-Studio/OSHW-reCamera-Series).
+
+<div class="github_container" style={{textAlign: 'center'}}>
+    <a class="github_item" href="https://github.com/Seeed-Studio/OSHW-reCamera-Series">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    </a>
+</div><br />
+
 
 ## Tech Support & Product Discussion
 

@@ -142,8 +142,8 @@ Initialize LCD-display is as follows:
 
 ```cpp
 
-#include &lt;SPI.h&gt;
-#include &lt;LCD5110_Graph_SPI.h&gt;
+#include <SPI.h>
+#include <LCD5110_Graph_SPI.h>
 #include "EmonLib.h"   
 
 #define WINDOW 15
@@ -184,7 +184,7 @@ void setup(void)
     myGLCD.update();
     Irms[0] = emon1.calcIrms(1480); // the first value in the measurement obviously "crooked"
       //Serial.println("calculate delta");
-      for (int i=0; i&lt;WINDOW; i++) {
+      for (int i=0; i<WINDOW; i++) {
         Irms[i] = emon1.calcIrms(1480);
         cIrms = cIrms + Irms[i];
         delay(100);

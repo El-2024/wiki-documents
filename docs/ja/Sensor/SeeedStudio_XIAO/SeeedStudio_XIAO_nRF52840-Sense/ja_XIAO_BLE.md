@@ -277,7 +277,7 @@ Seeed Studio XIAO nRF52840は、多くの機能を小さなボードに集約し
 これら2つのライブラリでサポートされるピン定義は若干異なる場合があり、Seeedは明確になるまでWikiを更新し続けます。
 
 :::tip
-1. Seeed nRF52 Boardsのオンボードパッケージを使用する場合、シリアル機能がコンパイルされないことがあります。この場合の解決策として、コードに「#include &lt;Adafruit_TinyUSB.h&gt;」を追加してください。このパッケージは以下からダウンロードできます：https://github.com/adafruit/Adafruit_TinyUSB_Arduino
+1. Seeed nRF52 Boardsのオンボードパッケージを使用する場合、シリアル機能がコンパイルされないことがあります。この場合の解決策として、コードに `#include <Adafruit_TinyUSB.h>` を追加してください。このパッケージは以下からダウンロードできます：https://github.com/adafruit/Adafruit_TinyUSB_Arduino
 
 2. より簡単な方法を好む場合は、最初からSeeed nRF52 mbed-enabled Boardsを選択することをお勧めします。このライブラリは追加の修正なしでシリアル機能のコンパイルをサポートします。
 :::

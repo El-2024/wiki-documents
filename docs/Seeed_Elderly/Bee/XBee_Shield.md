@@ -159,7 +159,7 @@ Create a new sketch with the following code and download it into your Arduino bo
 //Computer is connected to Hardware UART
 //Bee Shield is connected to the Software UART
 
-#include &lt;NewSoftSerial.h&gt;
+#include <NewSoftSerial.h>
 #define RxD 11
 #define TxD 12
 
@@ -197,7 +197,7 @@ The code above may have worked on earlier versions but the SoftwareSerial librar
 /*
 Example from Arduino SoftwareSerial tutorial
  */
-#include &lt;SoftwareSerial.h&gt;
+#include <SoftwareSerial.h>
 
 SoftwareSerial mySerial(11, 12); // RX, TX
 

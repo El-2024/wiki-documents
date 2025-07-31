@@ -6,10 +6,10 @@ keywords:
 - Huggingface
 - Arm
 - Robotics 
-image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.png
+image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.webp
 slug: /cn/lerobot_starai_arm
 last_update:
-  date: 7/28/2025
+  date: 7/29/2025
   author: LiShanghang
 ---
 
@@ -177,16 +177,25 @@ print(torch.cuda.is_available())
 如果你使用的是 Jetson 设备，请根据[此教程](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)安装 Pytorch 和 Torchvision。
 
 
-### 机械臂开箱TODO
+### 机械臂开箱
 
 机械臂套装内包含
 
-- leader arm
+- Leader arm 主体
+- Follower arm 主体
+- 手柄
+- 平行夹爪
+- 安装工具（螺丝、内六角扳手）
+- 电源 x2
+- C型夹具 x2
+- UC-01 转接板 x2
 
-- follower arm
+UC-01 转接板 开关：
 
-- 电源x2
-
+<div align="center">
+    <img width={800}
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/UC-01 debuging board switch.png" />
+</div>
 
 ### 手臂端口设置
 
@@ -376,6 +385,17 @@ sudo chmod 666 /dev/ttyUSB0
 
 ## 遥控操作
 
+<div class="video-container">
+<iframe width="900" height="600" src="https://www.youtube.com/embed/Uz-x-2P2xaE?si=HJTjALt5yFntR6-s" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+将手臂移动至图上位置待机。
+
+<div align="center">
+    <img width={800}
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Specifications.png" />
+</div>
+
 您已准备好遥操作您的机器人（不包括摄像头）！运行以下简单脚本：
 
 ```bash
@@ -466,16 +486,19 @@ python lerobot/scripts/control_robot.py \
 
 ## Record the dataset
 
+<div class="video-container">
+<iframe width="900" height="600" src="https://www.youtube.com/embed/OpaC0CA3-Mc?si=rbNhJJRkG9zngQB-" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
-Once you're familiar with teleoperation, you can record your first dataset.
+一旦您熟悉了遥操作，您就可以开始您的第一个数据集。
 
-If you want to use the Hugging Face hub features for uploading your dataset and you haven't previously done it, make sure you've logged in using a write-access token, which can be generated from the [Hugging Face settings](https://huggingface.co/settings/tokens):
+如果您想使用 Hugging Face Hub 的功能来上传您的数据集，并且您之前尚未这样做，请确保您已使用具有写入权限的令牌登录，该令牌可以从 [Hugging Face 设置](https://huggingface.co/settings/tokens) 中生成：
 
 ```bash
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
-Store your Hugging Face repository name in a variable to run these commands:
+将您的 Hugging Face 仓库名称存储在一个变量中，以运行以下命令：
 
 ```bash
 HF_USER=$(huggingface-cli whoami | head -n 1)
@@ -483,10 +506,10 @@ echo $HF_USER
 ```
 
 :::tip
-If you don't want to use the Hugging Face hub features for uploading your dataset. You can choose `--control.push_to_hub=false`.
+如果你不想使用 Hugging Face Hub 的上传数据集功能，可以选择 `--control.push_to_hub=false`.
 :::
 
-Record 20 episodes and don't upload your dataset to the hub:
+记录 20 个回合但不上传数据集到 Hub：
 
 ```bash
 python lerobot/scripts/control_robot.py \

@@ -180,12 +180,6 @@ int main(void)
 
 This Bluetooth radio example program is specifically designed for development on the PlatformIO platform. The main advantage of choosing PlatformIO is that it provides an integrated development environment that greatly simplifies the setup, compilation and burn-in process of embedded projects, making it easier and faster for even beginners to start developing Bluetooth applications.
 
-<div style={{textAlign:'center'}}>
-    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/BLE.gif" alt="XIAO nRF54L15 Ultra-low Power Consumption in System Off Mode" style={{width:600, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
-    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>Cell Phone Connection XIAO nRF54L15</em></p>
-</div>
-
-
 ### BLE Advertising Code
 
 ```cpp
