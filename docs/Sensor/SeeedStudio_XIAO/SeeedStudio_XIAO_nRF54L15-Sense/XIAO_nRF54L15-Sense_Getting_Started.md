@@ -34,12 +34,12 @@ import Steppers from '@site/src/components/utils/Stepper';
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-MG24-p-6247.html">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-nRF54L15-p-6493.html">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-nRF54L15-Sense-p-6494.html">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -172,15 +172,15 @@ export const Highlight = ({children, color}) => (
       <th>Operating temperature</th>
       <td align="center">-40 to 85 °C</td>
       <td align="center">-40 to 85 °C</td>
-      <td align="center">-40 to +105°C</td>
-      <td align="center">-40 to +105°C</td>
+      <td align="center">-40 to 105°C</td>
+      <td align="center">-40 to 105°C</td>
   </tr>
   <tr>
       <th>Supply voltage range</th>
-      <td align="center">1.7 to 5.5 V</td>
-      <td align="center">1.7 to 5.5 V</td>
-      <td align="center">1.7 to 3.6 V</td>
-      <td align="center">1.7 to 3.6 V</td>
+      <td align="center">3.7 to 5 V</td>
+      <td align="center">3.7 to 5 V</td>
+      <td align="center">3.7 to 5 V</td>
+      <td align="center">3.7 to 5 V</td>
   </tr>
   <tr>
       <th>ESB and 2.4 GHz Proprietary Protocols</th>
@@ -520,6 +520,10 @@ brew install openocd
 - Just enter the `west flash` command,To flash your device, simply enter the west flash command. The path highlighted in red indicates the location of your compiled .elf file. You can use this same path to find the corresponding .hex file, which is suitable for programming with a J-Link debugger.
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/Learn13.png" style={{width:600, height:'auto'}}/></div>
 
+:::tip
+If the west flash error occurs, it means that there is a conflict with the CMake plugin in VS Code, and you need to remove the CMake plugin.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/error.jpg" style={{width:600, height:'auto'}}/></div>
+:::
 #### Light up th LED
 
 When we successfully burned the program in the Seeed Studio XIAO nRF54L15 Sense, you can see the board above the user indicator in the non-stop blinking green light, if your hands are also the same rendering effect, it means that you have been successfully on it!🎊
@@ -1065,6 +1069,7 @@ int main(void)
 }
 ```
 
+## Resources
 
 ### Seeed Studio XIAO nRF54L15
 
