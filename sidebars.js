@@ -7069,28 +7069,28 @@ const sidebars = {
   esSidebar: [
     {
       type: 'doc',
-      id: 'Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_SeeedStudio_XIAO_Series_Introduction',
+      id: 'Spanish/Sensor/SeeedStudio_XIAO/es_SeeedStudio_XIAO_Series_Introduction',
       label: 'Seeed Studio XIAO',
       className: 'sideboard_calss',
     },
-    "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_SeeedStudio_XIAO_Series_Projects",
+    "Spanish/Sensor/SeeedStudio_XIAO/es_SeeedStudio_XIAO_Series_Projects",
     {
       "type": "category",
       "label": "XIAO SAMD21",
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_XIAO-SAMD21-Zephyr-RTOS",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_XIAO-SAMD21-Zephyr-RTOS",
         {
           "type": "category",
           "label": "Lenguaje de programación",
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-by-Nanase",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-CircuitPython",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_XIAO-SAMD21-MicroPython",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-by-Nanase",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-CircuitPython",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_XIAO-SAMD21-MicroPython",
           ]
         },
         {
@@ -7099,7 +7099,7 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/Embedded ML/es_Seeeduino-XIAO-TinyML"
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/Embedded ML/es_Seeeduino-XIAO-TinyML"
           ]
         },
         {
@@ -7108,10 +7108,10 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-TinyUSB",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_XIAO-SPI-Communication-Interface",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/TuTorial/es_Seeeduino-XIAO-DAPLink",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/TuTorial/es_How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-TinyUSB",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_XIAO-SPI-Communication-Interface",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/TuTorial/es_Seeeduino-XIAO-DAPLink",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/TuTorial/es_How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI",
           ]
         }
       ]
@@ -7122,16 +7122,16 @@ const sidebars = {
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RA4M1/es_XIAO-RA4M1",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RA4M1/es_XIAO_RA4M1_Pin_Multiplexing",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RA4M1/es_XIAO-RA4M1",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RA4M1/es_XIAO_RA4M1_Pin_Multiplexing",
         {
           "type": "category",
           "label": "Aplicación",
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RA4M1/Application/es_XIAO_RA4M1_Clock",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RA4M1/Application/es_XIAO_RA4M1_Mouse"
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RA4M1/Application/es_XIAO_RA4M1_Clock",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RA4M1/Application/es_XIAO_RA4M1_Mouse"
           ]
         },
       ]
@@ -7142,10 +7142,10 @@ const sidebars = {
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_MG24/es_XIAO_MG24_Getting_Started",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_MG24/es_XIAO_MG24_Pin_Multiplexing",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_MG24/es_XIAO-MG24-Example-Matter",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_MG24/es_XIAO-MG24-Built-in-Sensor",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_MG24/es_XIAO_MG24_Getting_Started",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_MG24/es_XIAO_MG24_Pin_Multiplexing",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_MG24/es_XIAO-MG24-Example-Matter",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_MG24/es_XIAO-MG24-Built-in-Sensor",
       ]
     },
     {
@@ -7154,27 +7154,27 @@ const sidebars = {
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040",
         {
           "type": "category",
           "label": "Lenguaje de programación",
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-Arduino",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-MicroPython",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-CircuitPython",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-Arduino",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-MicroPython",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-CircuitPython",
           ]
         },
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-NuttX-RTOS",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-Zephyr-RTOS",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-NuttX-RTOS",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-Zephyr-RTOS",
         {
           "type": "category",
           "label": "ML embebido",
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/Embedded ML/es_XIAO-RP2040-EI"
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/Embedded ML/es_XIAO-RP2040-EI"
           ]
         },
       ]
@@ -7185,10 +7185,10 @@ const sidebars = {
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2350/es_XIAO-RP2350",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2350/es_XIAO-RP2350-with-Arduino",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2350/es_XIAO_RP2350_Pin_multiplexing",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2350/es_XIAO-RP2350-with-SDK",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2350/es_XIAO-RP2350",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2350/es_XIAO-RP2350-with-Arduino",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2350/es_XIAO_RP2350_Pin_multiplexing",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2350/es_XIAO-RP2350-with-SDK",
       ]
     },
     {
@@ -7197,15 +7197,15 @@ const sidebars = {
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO_BLE",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-nRF52840-Zephyr-RTOS",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO_BLE",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-nRF52840-Zephyr-RTOS",
         {
           "type": "category",
           "label": "Lenguaje de programación",
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE_CircutPython",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE_CircutPython",
           ]
         },
         {
@@ -7214,7 +7214,7 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-nRF52840_PlatformIO",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-nRF52840_PlatformIO",
           ]
         },
         {
@@ -7223,11 +7223,11 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-IMU-Usage",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-PDM-Usage",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE_QSPI-Usage",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-NFC-Usage",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-Pin-Multiplexing",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-IMU-Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-PDM-Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE_QSPI-Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-NFC-Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-Pin-Multiplexing",
           ]
         },
         {
@@ -7236,8 +7236,8 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/es_XIAO-BLE-Sense-Bluetooth_Usage",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/es_XIAO-BLE-Sense-Bluetooth-Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/es_XIAO-BLE-Sense-Bluetooth_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/es_XIAO-BLE-Sense-Bluetooth-Usage",
           ]
         },
         {
@@ -7246,10 +7246,10 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAOEI",
-            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAO-BLE-PDM-EI",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAO-BLE-Sense-TFLite-Getting-Started",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAO-BLE-Sense-TFLite-Mic",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAOEI",
+            // "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAO-BLE-PDM-EI",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAO-BLE-Sense-TFLite-Getting-Started",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAO-BLE-Sense-TFLite-Mic",
           ]
         },
         {
@@ -7258,8 +7258,8 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Application/es_XIAO-BLE-sidewalk",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Application/es_XIAO_BLE_HA"
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/es_XIAO-BLE-sidewalk",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/es_XIAO_BLE_HA"
           ]
         },
       ]
@@ -7270,16 +7270,16 @@ const sidebars = {
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Getting_Started",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Pin_Multiplexing",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Getting_Started",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Pin_Multiplexing",
         {
           "type": "category",
           "label": "Conexión inalámbrica",
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_WiFi_Usage",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Bluetooth_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_WiFi_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Bluetooth_Usage",
           ]
         },
         {
@@ -7288,9 +7288,9 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO-ESP32C3-Zephyr",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_with_CircuitPython",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_with_MicroPython"
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO-ESP32C3-Zephyr",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_with_CircuitPython",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_with_MicroPython"
           ]
         },
         {
@@ -7299,13 +7299,13 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_xiao-esp32c3-esphome",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_xiao-esp32c3-prism-display",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_xiaoesp32c3-chatgpt",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_ESP32C3_Smart_Thermostat",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_xiaoesp32c3-flash-storage",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_XIAO-ESP32C3-for-ESPHome-Support",
-            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_XIAO_ESP32C3_ESPNOW",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/es_xiao-esp32c3-esphome",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/es_xiao-esp32c3-prism-display",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/es_xiaoesp32c3-chatgpt",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/es_ESP32C3_Smart_Thermostat",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/es_xiaoesp32c3-flash-storage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/es_XIAO-ESP32C3-for-ESPHome-Support",
+            // "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/es_XIAO_ESP32C3_ESPNOW",
           ]
         },
       ]
@@ -7316,16 +7316,16 @@ const sidebars = {
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Getting_Started",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Pin_Multiplexing",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Getting_Started",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Pin_Multiplexing",
         {
           "type": "category",
           "label": "Conexión inalámbrica",
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_WiFi_Usage",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Bluetooth_Usage_spanish",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_WiFi_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Bluetooth_Usage_spanish",
           ]
         },
         {
@@ -7334,9 +7334,9 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Embedded_Swift",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_with_CircuitPython",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_with_MicroPython",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Embedded_Swift",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_with_CircuitPython",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_with_MicroPython",
           ]
         },
         {
@@ -7345,7 +7345,7 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_with_PlatformIO",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_with_PlatformIO",
           ]
         },
         {
@@ -7354,9 +7354,9 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Zigbee/es_xiao_esp32c6_zigbee",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Zigbee/es_xiao_esp32c6_zigbee_arduino",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Zigbee/es_xiaoc6_zigbee_led_ha",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/es_xiao_esp32c6_zigbee",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/es_xiao_esp32c6_zigbee_arduino",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/es_xiaoc6_zigbee_led_ha",
           ]
         },
         {
@@ -7365,9 +7365,9 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Application/es_xiao_esp32c6_aws_iot",
-            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Application/es_XIAO_ESP32C6_ESPNOW",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Application/es_xiao_esp32c6_kafka"
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/es_xiao_esp32c6_aws_iot",
+            // "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/es_XIAO_ESP32C6_ESPNOW",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/es_xiao_esp32c6_kafka"
           ]
         },
       ]
@@ -7378,17 +7378,17 @@ const sidebars = {
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Getting_Started",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Pin_Multiplexing",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Sense_Consumption",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Getting_Started",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Pin_Multiplexing",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Sense_Consumption",
         {
           "type": "category",
           "label": "Conexión inalámbrica",
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_WiFi_Usage",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Bluetooth_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_WiFi_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Bluetooth_Usage",
           ]
         },
         {
@@ -7397,11 +7397,11 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO-ESP32S3-Zephyr-RTOS",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO-ESP32S3-FreeRTOS",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_with_MicroPython",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_CircuitPython",
-            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Micropython",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO-ESP32S3-Zephyr-RTOS",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO-ESP32S3-FreeRTOS",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_with_MicroPython",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_CircuitPython",
+            // "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Micropython",
 
           ]
         },
@@ -7411,9 +7411,9 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_mic",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_tf_and_filesystem",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_camera",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_mic",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_tf_and_filesystem",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_camera",
           ]
         },
         {
@@ -7429,20 +7429,20 @@ const sidebars = {
               "collapsible": true,
               "link": {
                 type: "doc",
-                id: "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/es_EdgeImpulse",
+                id: "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/es_EdgeImpulse",
               },
               "items": [
-                "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/es_Key_Word_Spotting",
-                "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/es_Image_classification_project",
+                "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/es_Key_Word_Spotting",
+                "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/es_Image_classification_project",
               ]
             },
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_Speech2chatgpt",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_EdgeLab",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_Geolocation",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_ESPHome",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_SSCMA",
-            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_ESPNOW",
-            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_Keyword_Spotting",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_Speech2chatgpt",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_EdgeLab",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_Geolocation",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_ESPHome",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_SSCMA",
+            // "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_ESPNOW",
+            // "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_Keyword_Spotting",
           ]
         },
       ]
@@ -7459,16 +7459,16 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/es_SeeedStudio_Round_Display_for_XIAO",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/es_SeeedStudio_RoundDisplay_Usage",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/es_Draw_dials_with_Display_and_lvgl",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/es_SeeedStudio_Round_Display_for_XIAO",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/es_SeeedStudio_RoundDisplay_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/es_Draw_dials_with_Display_and_lvgl",
             {
               "type": "category",
               "label": "Aplicación",
               "collapsed": true,
               "collapsible": true,
               "items": [
-                "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/Application/es_SeeedStudio_Round_Display_Christmas_ball"
+                "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/Application/es_SeeedStudio_Round_Display_Christmas_ball"
               ]
             },
           ]
@@ -7479,19 +7479,19 @@ const sidebars = {
           "collapsed": true,
           "collapsible": true,
           "items": [
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO/es_L76K_GNSS_Module",
-            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO/es_L76K_GNSS_Ubidots_Map_Track"
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO/es_L76K_GNSS_Module",
+            "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO/es_L76K_GNSS_Ubidots_Map_Track"
           ]
         },
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_Seeeduino-XIAO-Expansion-Board",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_XIAO-CAN-Bus-Expansion-Board",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_Grove-Shield-for-Seeeduino-XIAO-embedded-battery-management-chip",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_xiao-rgb-matrix",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_gpio_expander_for_xiao",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_XIAO-eInk-Expansion-Board",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_xiao_eink_expansion_board_v2",
-        // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_gnss-for-xiao",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_XIAO-RS485-Expansion-Board",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_Seeeduino-XIAO-Expansion-Board",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_XIAO-CAN-Bus-Expansion-Board",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_Grove-Shield-for-Seeeduino-XIAO-embedded-battery-management-chip",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_xiao-rgb-matrix",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_gpio_expander_for_xiao",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_XIAO-eInk-Expansion-Board",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_xiao_eink_expansion_board_v2",
+        // "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_gnss-for-xiao",
+        "Spanish/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_XIAO-RS485-Expansion-Board",
       ]
     },
     {
@@ -7500,24 +7500,24 @@ const sidebars = {
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/Matter/es_xiao_esp32_idf_env",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/Matter/es_getting_started_with_matter",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/Matter/es_xiao_esp32_matter_env",
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/Matter/es_matter_development_framework_overview",
+        "Spanish/Sensor/SeeedStudio_XIAO/Matter/es_xiao_esp32_idf_env",
+        "Spanish/Sensor/SeeedStudio_XIAO/Matter/es_getting_started_with_matter",
+        "Spanish/Sensor/SeeedStudio_XIAO/Matter/es_xiao_esp32_matter_env",
+        "Spanish/Sensor/SeeedStudio_XIAO/Matter/es_matter_development_framework_overview",
       ]
     },
-    "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_XIAO_ESPNOW",
-    "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_PCB_Design_XIAO",
+    "Spanish/Sensor/SeeedStudio_XIAO/es_XIAO_ESPNOW",
+    "Spanish/Sensor/SeeedStudio_XIAO/es_PCB_Design_XIAO",
     {
       "type": "category",
       "label": "Kit con cursos",
       "collapsed": true,
       "collapsible": true,
       "items": [
-        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/Kit_with_Courses/es_kit_with_courses"
+        "Spanish/Sensor/SeeedStudio_XIAO/Kit_with_Courses/es_kit_with_courses"
       ]
     },
-    "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_XIAO_FAQ",
+    "Spanish/Sensor/SeeedStudio_XIAO/es_XIAO_FAQ",
 
 
     {
