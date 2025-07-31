@@ -3379,7 +3379,8 @@ const sidebars = {
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
-              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/real-time-ocr'
+              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/real-time-ocr',
+              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Using_YOLOv8_and_AI_Box_for_fall_climbing_and_tracking_detection'
             ]
           },
           {
@@ -6332,6 +6333,7 @@ const sidebars = {
           label: 'Lerobot',
           items: [
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Starai_Arm',
+            'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_New',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_Isaacsim',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Lekiwi',
