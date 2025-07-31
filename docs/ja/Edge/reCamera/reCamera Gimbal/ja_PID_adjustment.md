@@ -95,7 +95,7 @@ Pitch軸:
 特定のモーターと制御モードの現在の PID 値を確認するには、以下のコマンドを使用します：
 
 ```bash
-gimbal pid &lt;id&gt; &lt;a|s&gt;
+gimbal pid <id> <a|s>
 ```
 
     `<id>`: モーター ID
@@ -123,7 +123,7 @@ gimbal pid 1 a
 PID パラメータを更新するには、以下を使用します：
 
 ```bash
-gimbal pid &lt;id&gt; &lt;a|s&gt; &lt;Kp&gt; [Ki] [Kd]
+gimbal pid <id> <a|s> <Kp> [Ki] [Kd]
 ```
 
   `&lt;Kp&gt;` は必須です。`[Ki]` と `[Kd]` はオプションです。

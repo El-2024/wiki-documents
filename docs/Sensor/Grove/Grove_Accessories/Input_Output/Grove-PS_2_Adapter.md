@@ -141,7 +141,7 @@ A PS/2 connector has 6 pins as you can see from the following diagram. Pin 1 and
  * and report what it finds. Used the ps2 library.
  */
 
-#include &lt;ps2.h&gt;
+#include <ps2.h>
 
 /*
  * Pin 5 is the ps2 data pin, pin 6 is the clock pin

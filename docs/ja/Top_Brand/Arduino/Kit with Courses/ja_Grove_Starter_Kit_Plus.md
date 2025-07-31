@@ -364,7 +364,7 @@ void setup()
 void loop()
 {
     int sensorValue = analogRead(A0); // アナログ0のセンサー値を読み取る
-    if(sensorValue&gt;thresholdValue)
+    if(sensorValue>thresholdValue)
     digitalWrite(ledPin,HIGH);
     delay(200);
     digitalWrite(ledPin,LOW);
@@ -399,7 +399,7 @@ void setup()
 void loop()
 {
     int sensorValue = analogRead(0); // 光センサーはアナログ0に接続
-    if(sensorValue&lt;thresholdvalue)
+    if(sensorValue<thresholdvalue)
     {
         digitalWrite(ledPin,HIGH);
     }
@@ -565,7 +565,7 @@ void loop()
 
 サーボはアナログアクチュエータの一種です。しかし、Arduino はアナログ信号を出力できません。アナログアクチュエータが必要とするアナログ信号を近似するために、Arduino は PWM（パルス幅変調）を採用しています。すべての Grove ポートがアナログ出力として使用できるわけではありません。使用可能なポートは D3、D5、D6、D9、D10、D11 です。以下は、ポテンショメータを使用してサーボの位置を制御する方法の例です。
 ```
-<pre>#include &lt;Servo.h&gt;
+<pre>#include <Servo.h>
 Servo groveServo; // オブジェクトを作成
 
 int potentiometer = 0;

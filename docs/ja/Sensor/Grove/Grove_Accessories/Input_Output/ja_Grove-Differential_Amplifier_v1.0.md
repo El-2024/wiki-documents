@@ -115,7 +115,7 @@ void loop()
     int value;
     float V,Vo;
     float Sum=0;
-    for(i=0;i&lt;10;i++)
+    for(i=0;i<10;i++)
     {
         value=analogRead(4);
         V=value*5.00/1023;

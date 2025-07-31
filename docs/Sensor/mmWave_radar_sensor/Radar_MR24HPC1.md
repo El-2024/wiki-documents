@@ -858,22 +858,22 @@ The MR24HPC1 Sensor communicates using the UART serial port, you just need to co
     </tr>
     <tr>
       <td align="center">5V</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">5V</td>
     </tr>
     <tr>
       <td align="center">GND</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">GND</td>
     </tr>
     <tr>
       <td align="center">RX</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">soft serial port TX</td>
     </tr>
     <tr>
       <td align="center">TX</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">soft serial port RX</td>
     </tr>
   </tbody></table>
@@ -967,22 +967,22 @@ Connect the Sensor directly to the computer's usb port via a **UART to USB** dev
     </tr>
     <tr>
       <td align="center">5V</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">5V</td>
     </tr>
     <tr>
       <td align="center">GND</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">GND</td>
     </tr>
     <tr>
       <td align="center">RX</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">TX</td>
     </tr>
     <tr>
       <td align="center">TX</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">RX</td>
     </tr>
   </tbody></table>

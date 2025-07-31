@@ -207,14 +207,14 @@ And replace them with:
 Additionally, the file RFM69.cpp need to find the line:
 
 ```cpp
-void RFM69::isr0() { selfPointer-&gt;interruptHandler(); }
+void RFM69::isr0() { selfPointer->interruptHandler(); }
 ```
 
 And replace them with:
 
 ```cpp
-//void RFM69::isr0() { selfPointer-&gt;interruptHandler(); }
-void RFM69::isr1() { selfPointer-&gt;interruptHandler(); }
+//void RFM69::isr0() { selfPointer->interruptHandler(); }
+void RFM69::isr1() { selfPointer->interruptHandler(); }
 ```
 
 Module Initialization RFM69HW as follows:

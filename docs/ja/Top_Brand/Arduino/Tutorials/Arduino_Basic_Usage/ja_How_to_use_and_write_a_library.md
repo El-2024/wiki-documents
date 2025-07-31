@@ -62,7 +62,7 @@ int minus(int a, int b)
 
 ```cpp
 // calcライブラリのデモ
-#include &lt;Calc.h&gt;
+#include <Calc.h>
 
 void setup()
 {
