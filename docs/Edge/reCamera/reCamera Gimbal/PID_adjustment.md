@@ -119,7 +119,7 @@ This command retrieves the angle PID settings for the yaw axis.
 To update PID parameters, use:
 
 ```bash
-gimbal pid &lt;id&gt; &lt;a|s&gt; &lt;Kp&gt; [Ki] [Kd]
+gimbal pid <id> <a|s> <Kp> [Ki] [Kd]
 ```
 
   `&lt;Kp&gt;` is required. `[Ki]` and `[Kd]` are optional.

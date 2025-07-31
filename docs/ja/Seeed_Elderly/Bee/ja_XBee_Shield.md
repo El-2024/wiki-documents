@@ -161,7 +161,7 @@ XBee® シールドのサイズは 3.1cm x 4.1cm です。
 //コンピュータはハードウェア UART に接続されています
 //Bee シールドはソフトウェア UART に接続されています
 
-#include &lt;NewSoftSerial.h&gt;
+#include <NewSoftSerial.h>
 #define RxD 11
 #define TxD 12
 
@@ -199,7 +199,7 @@ void loop()
 /*
 Arduino SoftwareSerial チュートリアルの例
  */
-#include &lt;SoftwareSerial.h&gt;
+#include <SoftwareSerial.h>
 
 SoftwareSerial mySerial(11, 12); // RX, TX
 

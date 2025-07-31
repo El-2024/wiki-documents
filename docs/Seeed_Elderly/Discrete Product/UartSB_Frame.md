@@ -369,8 +369,8 @@ to Cathode of the LED
 #define DCD 0x40
 #define RI  0x80
 
-#include &lt;stdio.h&gt;;
-#include &lt;ftdi.h&gt;;    
+#include <stdio.h>;
+#include <ftdi.h>;    
 
 int main
 { 
@@ -378,22 +378,22 @@ int main
     struct ftdi_context ftdic;
 
     /* 1. Initialize ftdi device context */
-    ftdi_init(&amp;ftdic);  
+    ftdi_init(&ftdic);  
 
     /* 2. Open the device based of VID/PID pair */
 
-    if(ftdi_usb_open(&amp;ftdic, 0x0403, 0x6001) &amp;lt<span ;>0)
+    if(ftdi_usb_open(&ftdic, 0x0403, 0x6001) &lt<span ;>0)
     {
         printf("Unable to open UartSBs Frame");
         return1;}
 
     /* 3. Enable Bit-Bang mode with for DTR line  */
-    ftdi_set_bitmode(&amp;ftdic, TXD, BITMODE_BITBANG);
+    ftdi_set_bitmode(&ftdic, TXD, BITMODE_BITBANG);
 
     /* 4. Blink LED every 1 second */
     while(1)</span> <span class="br0">{
         ouputState ^= TXD;
-        ftdi_write_data(&amp;ftdic, &amp;ouputState, 1);
+        ftdi_write_data(&ftdic, &ouputState, 1);
         sleep(1);
     }
 }

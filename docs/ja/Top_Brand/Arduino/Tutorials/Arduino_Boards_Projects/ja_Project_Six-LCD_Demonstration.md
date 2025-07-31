@@ -38,7 +38,7 @@ _**次に、以下のArduinoスケッチをアップロードしてください�
 // プロジェクト6 - LCDデモンストレーション
 //
 
-#include &lt;LiquidCrystal.h&gt;
+#include <LiquidCrystal.h>
 
 LiquidCrystal lcd(1,2,3,4,5,6);
 

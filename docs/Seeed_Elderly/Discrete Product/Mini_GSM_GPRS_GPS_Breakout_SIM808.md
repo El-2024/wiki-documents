@@ -214,7 +214,7 @@ The module comes with a mini GPS and GSM antenna, but not includes Li-Po battery
 
 The module is controlled by AT command via serial port, here we use Arduino as USB to serial tool. Upload the following code to Arduino and open the serial monitor. If you use other USB to serial tools, you can use [AT Command Tester](https://seeeddoc.github.io/AT_Command_Tester_Application/) or [SSCOM32](https://files.seeedstudio.com/wiki/Mini-GSM-GPRS-GPS-Breakout-SIM808/res/Sscom32E.zip) to test AT commands.
 
-````c
+```c
 // this sketch is used for testing LoNet with Arduino
 
 // Connect VIO to +5V
@@ -222,7 +222,7 @@ The module is controlled by AT command via serial port, here we use Arduino as U
 // Connect RX (data into SIM808) to Digital 11
 // Connect TX (data out from SIM808) to Digital 10
 
-#include &lt;SoftwareSerial.h&gt;
+#include <SoftwareSerial.h>
 
 SoftwareSerial mySerial(10, 11); // RX, TX
 
@@ -254,116 +254,100 @@ void loop() // run over and over
 
 It is recommended to execute this process when first time to use the module. In the Serial Monitor columns of following tables, input of AT commands are in back, module returns values are in orange.
 
-<table cellpadding="0">
+<table cellPadding="0">
 <tr>
-<th scope="col" width="50"> Serial Monitor
-</th>
-<th scope="col" width="100"> Description
-</th></tr>
+<th scope="col" width="50"> Serial Monitor</th>
+<th scope="col" width="100"> Description</th>
+</tr>
 <tr>
-<td> AT
-<span style="color: rgb(242,133,0)">OK</span> </td>
-<td> Send command “AT” to synchronize baud rate. Serial port of module is by default set at auto-baud mode, and in this mode, it will not output any indications when the module is on.
-</td></tr>
+<td> AT <span style={{color: 'rgb(242,133,0)'}}>OK</span> </td>
+<td> Send command "AT" to synchronize baud rate. Serial port of module is by default set at auto-baud mode, and in this mode, it will not output any indications when the module is on.</td>
+</tr>
 <tr>
-<td> AT+IPR=9600
-<span style="color: rgb(242,133,0)">OK</span></td>
-<td> Set baud rate at 9600bps, supports baud rate from 1200bps to 115200bps.
-</td></tr>
+<td> AT+IPR=9600 <span style={{color: 'rgb(242,133,0)'}}>OK</span></td>
+<td> Set baud rate at 9600bps, supports baud rate from 1200bps to 115200bps.</td>
+</tr>
 <tr>
-<td> AT+ECHARGE=1
-<span style="color: rgb(242,133,0)">OK</span></td>
-<td> Send command “AT+ECHARGE=1” to enable battery charging function. By default the charging function is closed.
-</td></tr>
+<td> AT+ECHARGE=1 <span style={{color: 'rgb(242,133,0)'}}>OK</span></td>
+<td> Send command "AT+ECHARGE=1" to enable battery charging function. By default the charging function is closed.</td>
+</tr>
 <tr>
-<td> AT&amp;W
-<span style="color: rgb(242,133,0)">OK</span></td>
-<td> Save parameter setting.
-</td></tr>
+<td> AT&amp;W <span style={{color: 'rgb(242,133,0)'}}>OK</span></td>
+<td> Save parameter setting.</td>
+</tr>
 <tr>
-<td> AT+CPOWD=1
-<span style="color: rgb(242,133,0)">NORMAL POWER DOWN</span></td>
-<td>Power down the module.
-</td></tr>
+<td> AT+CPOWD=1 <span style={{color: 'rgb(242,133,0)'}}>NORMAL POWER DOWN</span></td>
+<td>Power down the module.</td>
+</tr>
 <tr>
-<td> <span style="color: rgb(242,133,0)">RDY
+<td> 
+<span style={{color: 'rgb(242,133,0)'}}>RDY
 +CFUN: 1
 GPS Ready
 +CPIN: READY
 Call Ready
-SMS Ready</span></td>
-<td>Turn on the module again by the power button, it will response status about GPS and GSM.
-</td></tr>
+SMS Ready</span>
+</td>
+<td>Turn on the module again by the power button, it will response status about GPS and GSM.</td>
+</tr>
 <tr>
-<td> AT+CBC
-<span style="color: rgb(242,133,0)"> +CBC: 1,96,4175
- OK</span></td>
-<td>Inquire charging status and remaining battery capacity.
-</td></tr>
+<td> AT+CBC <span style={{color: 'rgb(242,133,0)'}}> +CBC: 1,96,4175 OK</span></td>
+<td>Inquire charging status and remaining battery capacity.</td>
+</tr>
 <tr>
-<td> AT+CSQ
-<span style="color: rgb(242,133,0)"> +CSQ: 14,0
- OK</span></td>
-<td>Inquire GSM signal quality.
-</td></tr>
+<td> AT+CSQ <span style={{color: 'rgb(242,133,0)'}}> +CSQ: 14,0 OK</span></td>
+<td>Inquire GSM signal quality.</td>
+</tr>
 </table>
 
 ####   Get location with GPS
 
-<table cellpadding="0">
+<table cellPadding="0">
 <tr>
-<th scope="col" width="11"> Serial Monitor
-</th>
-<th scope="col" width="700"> Description
-</th></tr>
+<th scope="col" width="11"> Serial Monitor</th>
+<th scope="col" width="700"> Description</th>
+</tr>
 <tr>
-<td> AT+CGPSPWR=1
-<span style="color: rgb(242,133,0)">OK</span> </td>
-<td> Open GPS
-</td></tr>
+<td> AT+CGPSPWR=1 <span style={{color: 'rgb(242,133,0)'}}>OK</span> </td>
+<td> Open GPS</td>
+</tr>
 <tr>
-<td> AT+CGPSSTATUS?
-<span style="color: rgb(242,133,0)"> +CGPSSTATUS: Location Not Fix
-OK</span></td>
-<td> Read GPS fix status, “Location Not Fix” means that positioning is not successful. For the first time to start, it will take at least 30s. _**GPS must be tested by the window or outdoor.**_
-</td></tr>
+<td> AT+CGPSSTATUS? <span style={{color: 'rgb(242,133,0)'}}> +CGPSSTATUS: Location Not FixOK</span></td>
+<td> Read GPS fix status, "Location Not Fix" means that positioning is not successful. For the first time to start, it will take at least 30s. _**GPS must be tested by the window or outdoor.**_</td>
+</tr>
 <tr>
-<td> AT+CGPSSTATUS?
-<span style="color: rgb(242,133,0)"> +CGPSSTATUS: Location 3D Fix
-OK</span></td>
-<td> GPS has fixed with 3D status.
-</td></tr>
+<td> AT+CGPSSTATUS? <span style={{color: 'rgb(242,133,0)'}}> +CGPSSTATUS: Location 3D Fix OK</span></td>
+<td> GPS has fixed with 3D status.</td>
+</tr>
 <tr>
-<td> AT+CGPSINF=0
-<span style="color: rgb(242,133,0)"> +CGPSINF:
- 0,2234.931817,11357.122485,
-92.461185,20141031041141.000,
-88,12,0.000000,0.000000 </span></td>
-<td> Get the current GPS location information. Parameters formate: &lt;mode&gt;, &lt;altitude&gt;, &lt;longitude&gt;, &lt;UTC time&gt;, &lt;TTFF&gt;, &lt;num&gt;, &lt;speed&gt;, &lt;course&gt;
-</td></tr>
+<td> AT+CGPSINF=0 <span style={{color: 'rgb(242,133,0)'}}> +CGPSINF: 0,2234.931817,11357.122485,92.461185,20141031041141.000,88,12,0.000000,0.000000 </span></td>
+<td> Get the current GPS location information. Parameters formate: &lt;mode&gt;, &lt;altitude&gt;, &lt;longitude&gt;, &lt;UTC time&gt;, &lt;TTFF&gt;, &lt;num&gt;, &lt;speed&gt;, &lt;course&gt;</td>
+</tr>
 <tr>
-<td> AT+CGPSOUT=32
-<span style="color: rgb(242,133,0)">OK
-$GPRMC,043326.000,A,
+<td>
+AT+CGPSOUT=32
+<span style={{color: 'rgb(242,133,0)'}}>OK
+\$GPRMC,043326.000,A,
 2234.9414,N,11357.1187,E,
-0.000,143.69,311014,,,A*50 </span></td>
-<td> Read NMEA $GPRMC data, of which, “2234.9414 N, 11357.1187 E” is the location coordinates. For more details about NMEA sentences, [check this site](http://www.gpsinformation.org/dale/nmea.htm).
-</td></tr>
+0.000,143.69,311014,,,A*50 </span>
+</td>
+<td> Read NMEA \$GPRMC data, of which, "2234.9414 N, 11357.1187 E" is the location coordinates. For more details about NMEA sentences, [check this site](http://www.gpsinformation.org/dale/nmea.htm).</td>
+</tr>
 <tr>
-<td> AT+CGPSRST=0
-<span style="color: rgb(242,133,0)"> OK</span></td>
-<td>Reset GPS in Cold Start Mode.
-</td></tr>
+<td>
+AT+CGPSRST=0
+<span style={{color: 'rgb(242,133,0)'}}> OK</span>
+</td>
+<td>Reset GPS in Cold Start Mode.</td>
+</tr>
 <tr>
-<td> AT+CGPSRST=1
-<span style="color: rgb(242,133,0)"> OK</span></td>
-<td>Reset GPS in Hot Start Mode.
-</td></tr>
+<td> AT+CGPSRST=1 <span style={{color: 'rgb(242,133,0)'}}> OK</span></td>
+<td>Reset GPS in Hot Start Mode.</td>
+</tr>
 <tr>
-<td> AT+CGPSPWR=0
-<span style="color: rgb(242,133,0)"> OK</span></td>
-<td>Close GPS.
-</td></tr>
+<td> AT+CGPSPWR=0 <span style={{color: 'rgb(242,133,0)'}}> OK</span></td>
+<td>Close GPS.</td>
+</tr>
 </table>
 
 ##   Resource  
@@ -384,7 +368,7 @@ $GPRMC,043326.000,A,
 
 It's a pity that we don't have any demo about LoNet-GSM/GPRS/GPS Breakout in the [Recipe](https://www.seeedstudio.com/recipe/) yet.
 
-Post your awesome project about LoNet-GSM/GPRS/GPS Breakout to <font color="#FF0000">win $100 Coupon!</font>. Please feel free to contact us: **recipe@seeed.cc**
+Post your awesome project about LoNet-GSM/GPRS/GPS Breakout to <span style={{color: '#FF0000'}}>win $100 Coupon!</span>. Please feel free to contact us: **recipe@seeed.cc**
 
 Here we introduce some projects about [GPRS Shield](https://www.seeedstudio.com/depot/GPRS-Shield-V30-p-2333.html) as a reference.
 
@@ -457,7 +441,7 @@ Now share your awesome projects with us on [Recipe](https://www.seeedstudio.com/
 *   Core Users, are those who show high interests in Seeed products and make significant contributions on Recipe.
 *   We cooperate with our Core Users in the development of our new product, this, in another word, the Core Users will have the chance to experience any new products of Seeed before its official launch, and in return we expect valuable feedback from them to help us improve the product performance and user experience. And in most cases when our Core Users have some good ideas of making things, we'll offer hardware pieces, PCBA services as well as technical support. Besides, further commercial cooperation with the Core Users is highly possible.
 
-<font color="#FF0000">Get more information about Core User, please email to:</font> **recipe@seeed.cc**
+<span style={{color: '#FF0000'}}>Get more information about Core User, please email to:</span> **recipe@seeed.cc**
 
 ##   Support
 

@@ -411,11 +411,11 @@ Actualmente, los siguientes módulos Grove son compatibles con ESPHome:
     <td>Gas</td>
   </tr>
   <tr>
-    <td><a href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html">Grove - CO2 &amp; Temperatura &amp; Humedad (SCD30)</a></td>
+    <td><a href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html">Grove - CO2 & Temperatura & Humedad (SCD30)</a></td>
     <td>Gas</td>
   </tr>
   <tr>
-    <td><a href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD41-p-5025.html">Grove - CO2 &amp; Temperatura &amp; Humedad - SCD41</a></td>
+    <td><a href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD41-p-5025.html">Grove - CO2 & Temperatura & Humedad - SCD41</a></td>
     <td>Gas</td>
   </tr>
   <tr>
@@ -439,15 +439,15 @@ Actualmente, los siguientes módulos Grove son compatibles con ESPHome:
     <td>Ambiental</td>
   </tr>
   <tr>
-    <td><a href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html">Grove - Temperatura &amp; Sensor de Humedad V2.0 (DHT20)</a></td>
+    <td><a href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html">Grove - Temperatura & Sensor de Humedad V2.0 (DHT20)</a></td>
     <td>Ambiental</td>
   </tr>
   <tr>
-    <td><a href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-Pro-AM2302-DHT22.html">Grove - Temperatura &amp; Sensor de Humedad Pro (DHT22/AM2302)</a></td>
+    <td><a href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-Pro-AM2302-DHT22.html">Grove - Temperatura & Sensor de Humedad Pro (DHT22/AM2302)</a></td>
     <td>Ambiental</td>
   </tr>
   <tr>
-    <td><a href="https://www.seeedstudio.com/Grove-BME280-Environmental-Sensor-Temperature-Humidity-Barometer.html">Grove - Temp&amp;Humi&amp;Barómetro (BME280)</a></td>
+    <td><a href="https://www.seeedstudio.com/Grove-BME280-Environmental-Sensor-Temperature-Humidity-Barometer.html">Grove - Temp&Humi&Barómetro (BME280)</a></td>
     <td>Ambiental</td>
   </tr>
   <tr>
@@ -463,7 +463,7 @@ Actualmente, los siguientes módulos Grove son compatibles con ESPHome:
     <td>Ambiental</td>
   </tr>
   <tr>
-    <td><a href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html">Grove - Temperatura &amp; Sensor de Humedad (DHT11)</a></td>
+    <td><a href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html">Grove - Temperatura & Sensor de Humedad (DHT11)</a></td>
     <td>Ambiental</td>
   </tr>
   <tr>
@@ -471,11 +471,11 @@ Actualmente, los siguientes módulos Grove son compatibles con ESPHome:
     <td>Ambiental</td>
   </tr>
   <tr>
-    <td><a href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-SHT31.html">Grove - Temperatura &amp; Sensor de Humedad (SHT31)</a></td>
+    <td><a href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-SHT31.html">Grove - Temperatura & Sensor de Humedad (SHT31)</a></td>
     <td>Ambiental</td>
   </tr>
   <tr>
-    <td><a href="https://www.seeedstudio.com/Grove-Temp-Humi-Sensor-SHT40-p-5384.html" target="_blank" rel="noopener noreferrer">Grove - Sensor de Temperatura &amp; Humedad (SHT40)</a></td>
+    <td><a href="https://www.seeedstudio.com/Grove-Temp-Humi-Sensor-SHT40-p-5384.html" target="_blank" rel="noopener noreferrer">Grove - Sensor de Temperatura & Humedad (SHT40)</a></td>
     <td>Ambiental</td>
   </tr>
   <tr>

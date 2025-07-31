@@ -324,7 +324,7 @@ void loop()
 {
 
   // 500 回値を読み取る:
-  for(int i=0;i&lt;20;i++)
+  for(int i=0;i<20;i++)
   {
 
   for (int i = 0; i < averageValue; i++)

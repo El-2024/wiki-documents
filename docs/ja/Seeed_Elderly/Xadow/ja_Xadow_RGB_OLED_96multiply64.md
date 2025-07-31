@@ -71,9 +71,9 @@ RGB OLEDは、さまざまなグラフィックや文字を表示できます。
  作成者: lawliet.zou(lawliet.zou@gmail.com)
 */
 
-#include &lt;SGL.h&gt;
-#include &lt;SSD1331.h&gt;
-#include &lt;SPI.h&gt;
+#include <SGL.h>
+#include <SSD1331.h>
+#include <SPI.h>
 
 #define cs     A5
 #define dc     3
@@ -123,9 +123,9 @@ void loop(){
  作成者: lawliet.zou(lawliet.zou@gmail.com)
 */
 
-#include &lt;SGL.h&gt;
-#include &lt;SSD1331.h&gt;
-#include &lt;SPI.h&gt;
+#include <SGL.h>
+#include <SSD1331.h>
+#include <SPI.h>
 
 #define cs     A5
 #define dc     3
@@ -143,19 +143,19 @@ void setup(){
 }
 
 void loop(){
-    for(int i = 30; i &gt; 0; i--){
+    for(int i = 30; i > 0; i--){
         oled.drawCircle(48,32,i,COLOR_CYAN);
         delay(50);
     }
-    for(int i = 1; i &lt;= 30; i++){
+    for(int i = 1; i <= 30; i++){
         oled.drawCircle(48,32,i,COLOR_RED);
         delay(50);
     }
-    for(int i = 30; i &gt; 0; i--){
+    for(int i = 30; i > 0; i--){
         oled.drawCircle(48,32,i,COLOR_PURPLE);
         delay(50);
     }
-    for(int i = 1; i &lt;= 30; i++){
+    for(int i = 1; i <= 30; i++){
         oled.drawCircle(48,32,i,COLOR_GOLDEN);
         delay(50);
     }
@@ -181,9 +181,9 @@ void loop(){
  作成者: lawliet.zou(lawliet.zou@gmail.com)
 */
 
-#include &lt;SGL.h&gt;
-#include &lt;SSD1331.h&gt;
-#include &lt;SPI.h&gt;
+#include <SGL.h>
+#include <SSD1331.h>
+#include <SPI.h>
 
 #define cs     A5
 #define dc     3
@@ -201,12 +201,12 @@ void setup(){
 }
 
 void loop(){
-    for(int i = 1; i &lt; 16; i++){
+    for(int i = 1; i < 16; i++){
         oled.drawRectangle(3*i,2*i,95-6*i,63-4*i,COLOR_YELLOW);
         delay(50);
     }
     delay(2000);
-    for(int i = 15; i &gt; 0; i--){
+    for(int i = 15; i > 0; i--){
         oled.drawRectangle(3*i,2*i,95-6*i,63-4*i,COLOR_BLUE);
         delay(50);
     }
@@ -235,9 +235,9 @@ DrawTriangleの例題スケッチを以下のパスから開いてください: 
  作成者: lawliet.zou(lawliet.zou@gmail.com)
 */
 
-#include &lt;SGL.h&gt;
-#include &lt;SSD1331.h&gt;
-#include &lt;SPI.h&gt;
+#include <SGL.h>
+#include <SSD1331.h>
+#include <SPI.h>
 
 #define cs     A5
 #define dc     3
@@ -288,9 +288,9 @@ DrawStringの例題スケッチを以下のパスから開いてください: Fi
  作成者: lawliet.zou(lawliet.zou@gmail.com)
 */
 
-#include &lt;SGL.h&gt;
-#include &lt;SSD1331.h&gt;
-#include &lt;SPI.h&gt;
+#include <SGL.h>
+#include <SSD1331.h>
+#include <SPI.h>
 
 #define cs     A5
 #define dc     3
@@ -336,9 +336,9 @@ DrawBitMapの例題スケッチを以下のパスから開いてください: Fi
  作成者: lawliet.zou(lawliet.zou@gmail.com)
 */
 
-#include &lt;SGL.h&gt;
-#include &lt;SSD1331.h&gt;
-#include &lt;SPI.h&gt;
+#include <SGL.h>
+#include <SSD1331.h>
+#include <SPI.h>
 
 #define cs     A5
 #define dc     3

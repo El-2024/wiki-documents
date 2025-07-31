@@ -125,7 +125,7 @@ void loop()
     int sensorValue;
     int m;
     long sensorSum;
-    for(m=0;m&lt;50;m++)
+    for(m=0;m<50;m++)
     {
         sensorValue=analogRead(A0);//PHセンサーをA0ポートに接続
         sensorSum += sensorValue;
