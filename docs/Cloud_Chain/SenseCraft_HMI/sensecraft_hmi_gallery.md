@@ -18,9 +18,11 @@ import TabItem from '@theme/TabItem';
 
 ## Introduction
 
-The Gallery function in SenseCraft HMI allows you to transform your screen-based devices into beautiful digital photo frames. You can upload local images or import them from URLs, then display them with customizable transition intervals and visual effects. This feature is perfect for creating ambient displays, information screens, or decorative photo albums using your Seeed Studio display devices.
+The Gallery function in [SenseCraft HMI](https://sensecraft.seeed.cc/hmi) allows you to transform your screen-based devices into beautiful digital photo frames. You can upload local images or import them from URLs, then display them with customizable transition intervals and visual effects. This feature is perfect for creating ambient displays, information screens, or decorative photo albums using your Seeed Studio display devices.
 
 This tutorial will guide you through using the Gallery function in SenseCraft HMI, covering image upload methods, display settings, and important considerations for optimal performance.
+
+This article will use the [reTerminal E1002](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002/) as an example to explain how to use this feature on the SenseCraft HMI platform.
 
 ## Getting Started with Gallery
 
