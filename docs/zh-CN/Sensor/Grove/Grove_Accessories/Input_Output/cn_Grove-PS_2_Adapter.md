@@ -78,7 +78,7 @@ PS/2连接器是一个6针的Mini-DIN连接器，用于将键盘和鼠标连接�
  * and report what it finds. Used the ps2 library.
  */
 
-#include &lt;ps2.h&gt;
+#include <ps2.h>
 
 /*
  * Pin 5 is the ps2 data pin, pin 6 is the clock pin

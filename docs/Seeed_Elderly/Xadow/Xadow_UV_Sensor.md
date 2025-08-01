@@ -44,9 +44,9 @@ Xadow UV Sensor can output a voltage value corresponding to UV index. Because th
 *   Now you can upload it to Xadow Main Board by copying and pasting them into Arduino IDE.
 
 ```
-#include &lt;Wire.h&gt;
-#include &lt;SeeedOLED.h&gt;
-#include &lt;Streaming.h&gt;
+#include <Wire.h>
+#include <SeeedOLED.h>
+#include <Streaming.h>
 
 #define ADDR_ADC121    0x5A
 
@@ -105,9 +105,9 @@ void readVoltage()     //unsigned int *data
 
     Wire.requestFrom(ADDR_ADC121, 2);           // request 2byte from device
     delay(1);
-    if(Wire.available()&lt;=2)
+    if(Wire.available()<=2)
     {
-        getData = (Wire.read()&amp;0x0f)&lt;&lt;8;
+        getData = (Wire.read()&0x0f)<<8;
         getData |= Wire.read();
     }
     delay(50);

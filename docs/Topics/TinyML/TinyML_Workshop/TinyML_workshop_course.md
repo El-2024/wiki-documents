@@ -129,7 +129,7 @@ These files are under the relative path of `docs/Topics/TinyML/TinyML_Workshop`.
 
 Edge Impulse is a platform designed for developing and deploying TinyML models specifically for embedded devices. It provides tools for real-time data collection, model quantization, and optimization, enabling efficient deployment on devices like the XIAO ESP32S3. 
 
-For more details, you can refer to our [documentation here](https://wiki.seeedstudio.com/edgeimpulse/). When performing [Key Word Spotting](https://wiki.seeedstudio.com/tinyml_course_Key_Word_Spotting/) and [Image Classification](https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/), make sure to replace the default ESP NN folder with [the version we provide during deployment](https://github.com/Mjrovai/XIAO-ESP32S3-Sense/blob/main/ESP-NN.zip).
+For more details, you can refer to our [documentation here](https://wiki.seeedstudio.com/edgeimpulse/). When performing [Key Word Spotting](https://wiki.seeedstudio.com/tinyml_course_Key_Word_Spotting/) and [Image Classification](https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/).
 
 
 ## Tech Support & Product Discussion

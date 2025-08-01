@@ -1253,7 +1253,7 @@ const sidebars = {
           label: 'XIAO nRF54L15 Series',
           items: [
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_Getting_Started',
-            // 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_Pin_Multiplexing',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_Pin_Multiplexing',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_Built-in-Sensor',
             {
               type: 'category',
@@ -1978,6 +1978,13 @@ const sidebars = {
                   'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_gpio',
                   'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_mqtt_stream',
                   
+              ],
+        },
+           {
+              type: 'category',
+              label: 'Application',
+              items: [
+              'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_ha',
               ],
         },
         
@@ -3980,6 +3987,7 @@ const sidebars = {
                 // },
                 items: [
                   'Robotics/Robot_Kits/Lerobot/Lerobot_Starai_Arm',
+                  'Robotics/Robot_Kits/Lerobot/Starai_Arm_ROS2_Moveit',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_New',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_Isaacsim',
@@ -4076,6 +4084,7 @@ const sidebars = {
                 // },
                 items: [
                   'Robotics/Robot_Software/Isaac_Lab/Install_Isaac_lab',
+                  'Robotics/Robot_Software/Isaac_Lab/Simulate_SoArm101_by_LeIsaac',
                     ]},
 
             {
@@ -6326,6 +6335,7 @@ const sidebars = {
           label: 'Lerobot',
           items: [
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Starai_Arm',
+            'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Starai_Arm_ROS2_Moveit',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_New',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_Isaacsim',

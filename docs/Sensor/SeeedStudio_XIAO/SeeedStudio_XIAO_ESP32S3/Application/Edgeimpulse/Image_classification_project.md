@@ -169,7 +169,7 @@ Choose the zip file you just downloaded，and if the library install correct, yo
 
 ## Step 3. Run the example sketch
 
-Even though Edge Impulse has not released its SDK for ESP32S3 using the ESP NN accelerator, thanks to Dmitry Maslov, we can have its assembly optimizations restored and fixed for ESP32-S3. This solution is not official yet, and EI will include it in EI SDK once they fix conflicts with other boards.
+<!-- Even though Edge Impulse has not released its SDK for ESP32S3 using the ESP NN accelerator, thanks to Dmitry Maslov, we can have its assembly optimizations restored and fixed for ESP32-S3. This solution is not official yet, and EI will include it in EI SDK once they fix conflicts with other boards.
 
 :::caution
 For now, this only works with the non-EON version. So, you should also keep the the option **Enable EON Compiler** not selected.
@@ -186,7 +186,7 @@ Before we use the downloaded library, we need to enable the **ESP NN** Accelerat
 
 :::
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/10.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/10.png" style={{width:800, height:'auto'}}/></div> -->
 
 Copy the below inference code and paste to your Arduino IDE.
 

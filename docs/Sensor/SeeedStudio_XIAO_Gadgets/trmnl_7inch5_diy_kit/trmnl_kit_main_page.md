@@ -47,7 +47,8 @@ To celebrate the collaboration, Team TRMNL offers 30% off on TRMNL BYOD firmware
 
 ## Hardware Overview
 ### Component Diagram
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_7.5_Epaper_Panel/hardware_components.jpg" style={{width:1000, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/overview.png" style={{width:600, height:'auto'}}/></div>
 
 ### Part List
 | Product | Quantity |
@@ -75,10 +76,41 @@ Connect the battery cable to the JST connector on the driver board, ensuring cor
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/3.jpg" style={{width:600, height:'auto'}}/></div>
 
 **Step 3. Enclosure Assembly (Optional)**  
-Print open-source enclosure parts from [Printables](https://www.printables.com/) and assemble the components inside.  
+Print open-source enclosure parts from [Resource part](#resources) and assemble the components inside.  
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/4.jpeg" style={{width:600, height:'auto'}}/></div>
 
+First, assemble driver board and battery.
+
+<div class="table-center">
+<iframe width="600" height="340" src="https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/base.mp4?
+autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+Test TRMNL kit if it works well.
+
+<div class="table-center">
+<iframe width="600" height="340" src="https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/test.mp4?
+autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+Plug the screen into the case and make the FPC able out.
+
+<div class="table-center">
+<iframe width="600" height="340" src="https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/cable.mp4?
+autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+Connect FPC extension cable and assemble the whole case.
+
+<div class="table-center">
+<iframe width="600" height="340" src="https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/assembly.mp4?
+autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+:::tip
+If your TRMNL kit far away from your router, you can move the antenna outside the case. It would have better performance.
+:::
 
 ## Wiki Center
 ### Explore Detailed Guides
@@ -95,13 +127,19 @@ Learn how to set up your TRMNL kit with Home Assistant via ESPHome, including fi
 
 Master TRMNL kit control with Arduino, including refresh mechanisms, graphics rendering, and power management.
 
-## Resources
+## <span id="resource">Resources</span>
 - **[Firmware]** [TRMNL ePaper Library (GitHub)](https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project)   
 - **[Hardware]** [Driver Board SCH](https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/XIAO_ePaper_driver_board_sch.pdf)
 - **[Printable]** [triangular base](https://www.printables.com/model/1354873)  
+- **[Printable]** [protected triangular base](https://www.printables.com/model/1361112-upgrated-triangular-prism-3d-enclosure-for-trmnl-7)  
 - **[Printable]** [L-shaped base](https://www.printables.com/model/1354879)  
 - **[Thingiverse]** [triangular base](https://www.thingiverse.com/thing:7091094)
+- **[Thingiverse]** [protected triangular base](https://www.thingiverse.com/thing:7097231)
 - **[Thingiverse]** [L-shaped base](https://www.thingiverse.com/thing:7091096)
+- **[Makerworld]** [triangular base](https://makerworld.com/en/models/1625037-trmnl-7-5-og-diy-triangular-prism-shell-kit)
+- **[Makerworld]** [protected triangular base](https://makerworld.com/en/models/1625119-trmnl-7-5-og-diy-triangular-prism-shell-kit)
+- **[Makerworld]** [L-shaped base](https://makerworld.com/en/models/1625065-trmnl-7-5-og-diy-l-shaped-case-kit)
+
 
 ## Tech Support & Product Discussion
 

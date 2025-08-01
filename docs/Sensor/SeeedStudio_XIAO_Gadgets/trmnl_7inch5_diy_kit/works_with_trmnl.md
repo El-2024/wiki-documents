@@ -320,14 +320,17 @@ Your expertise and commitment have made this integration possible and greatly im
 
 
 ## Resources
-
-- **[GITHUB]**: [TRMNL firmware repository](https://github.com/usetrmnl/firmware)
 - **[Firmware]** [TRMNL ePaper Library (GitHub)](https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project)   
 - **[Hardware]** [Driver Board SCH](https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/XIAO_ePaper_driver_board_sch.pdf)
 - **[Printable]** [triangular base](https://www.printables.com/model/1354873)  
+- **[Printable]** [protected triangular base](https://www.printables.com/model/1361112-upgrated-triangular-prism-3d-enclosure-for-trmnl-7)  
 - **[Printable]** [L-shaped base](https://www.printables.com/model/1354879)  
 - **[Thingiverse]** [triangular base](https://www.thingiverse.com/thing:7091094)
+- **[Thingiverse]** [protected triangular base](https://www.thingiverse.com/thing:7097231)
 - **[Thingiverse]** [L-shaped base](https://www.thingiverse.com/thing:7091096)
+- **[Makerworld]** [triangular base](https://makerworld.com/en/models/1625037-trmnl-7-5-og-diy-triangular-prism-shell-kit)
+- **[Makerworld]** [protected triangular base](https://makerworld.com/en/models/1625119-trmnl-7-5-og-diy-triangular-prism-shell-kit)
+- **[Makerworld]** [L-shaped base](https://makerworld.com/en/models/1625065-trmnl-7-5-og-diy-l-shaped-case-kit)
 
 
 ## Tech Support & Product Discussion

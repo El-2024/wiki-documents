@@ -201,14 +201,14 @@ RF24 radio(7,8);
 さらに、RFM69.cpp ファイルで以下の行を見つけます：
 
 ```cpp
-void RFM69::isr0() { selfPointer-&gt;interruptHandler(); }
+void RFM69::isr0() { selfPointer->interruptHandler(); }
 ```
 
 これを以下のように置き換えます：
 
 ```cpp
-//void RFM69::isr0() { selfPointer-&gt;interruptHandler(); }
-void RFM69::isr1() { selfPointer-&gt;interruptHandler(); }
+//void RFM69::isr0() { selfPointer->interruptHandler(); }
+void RFM69::isr1() { selfPointer->interruptHandler(); }
 ```
 
 RFM69HW モジュールの初期化は以下のように行います：
