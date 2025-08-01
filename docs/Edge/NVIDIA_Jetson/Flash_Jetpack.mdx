@@ -15,7 +15,7 @@ last_update:
 import OneDriveLink from '@site/src/components/jetson/DownloadLink';
 import { VerifySHA256, ExtractFile, FlashCMD} from '@site/src/components/jetson/FlashCodeBlock'
 import { PrepareRequirementsMini,PrepareRequirementsRobotics,
-         PrepareRequirementsSuper,ExtractAndFlash} from '@site/src/components/jetson/FlashCodeBlock' 
+         PrepareRequirementsSuper,PrepareRequirementsClassic,ExtractAndFlash} from '@site/src/components/jetson/FlashCodeBlock' 
 import { ProductSelect } from '@site/src/components/jetson/JetsonSelect'
 
 <!--
@@ -108,6 +108,34 @@ export const productOptions = [
     l4t: ["36.4.3"],
     img: 'https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/0/-/0-114110327-recomputer-robotics-carrier-board_2.jpg',
     interfaceUsage: 'https://wiki.seeedstudio.com/recomputer_jetson_robotics_j401_getting_started/#interfaces-usage:~:text=to%20your%20needs.-,Interfaces%20Usage%E2%80%8B,interfaces%20of%20the%20Robotics%20J401%20board%20and%20how%20to%20use%20them.,-M.2%20Key'
+  },
+  { 
+    value: 'j4012classic', 
+    label: 'reComputer J4012', 
+    l4t: ["36.4.0","36.3.0", "35.5.0"],
+    img: 'https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/110110145_1.jpg',
+    interfaceUsage: 'https://wiki.seeedstudio.com/J401_carrierboard_Hardware_Interfaces_Usage/'
+  },
+  { 
+    value: 'j4011classic', 
+    label: 'reComputer J4011', 
+    l4t: ["36.4.0","36.3.0", "35.5.0"],
+    img: 'https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/110110145_1.jpg',
+    interfaceUsage: 'https://wiki.seeedstudio.com/J401_carrierboard_Hardware_Interfaces_Usage/'
+  },
+  { 
+    value: 'j3011classic', 
+    label: 'reComputer J3011', 
+    l4t: ["36.4.3","36.4.0","36.3.0", "35.5.0"],
+    img: 'https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/110110145_1.jpg',
+    interfaceUsage: 'https://wiki.seeedstudio.com/J401_carrierboard_Hardware_Interfaces_Usage/'
+  },
+  { 
+    value: 'j3010classic', 
+    label: 'reComputer J3010', 
+    l4t: ["36.4.3","36.4.0","36.3.0", "35.5.0"],
+    img: 'https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/110110145_1.jpg',
+    interfaceUsage: 'https://wiki.seeedstudio.com/J401_carrierboard_Hardware_Interfaces_Usage/'
   }
 ]
 
@@ -140,6 +168,7 @@ Click [here](https://seeedstudio88-my.sharepoint.com/:x:/g/personal/youjiang_yu_
 <PrepareRequirementsMini />
 <PrepareRequirementsRobotics />
 <PrepareRequirementsSuper />
+<PrepareRequirementsClassic />
 
 ### 3. Install flash dependencies
 Installing the flash dependencies in Host PC:
@@ -186,7 +215,8 @@ sudo apt-get install -y lz4
 - [reComputer-Jetson-for-Beginners](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)
 
 - [jetson-examples](https://github.com/Seeed-Projects/jetson-examples)
-<table>
+
+{/* <table>
   <tr>
    <td style={{ textAlign: "center" }}>
       <img src="https://files.seeedstudio.com/wiki/DeepStream/demo-optimized.gif" width="300" />
@@ -215,7 +245,7 @@ sudo apt-get install -y lz4
       <div><a href="https://wiki.seeedstudio.com/deploy_deepseek_on_jetson_with_mlc/">DeepSeek Demo</a></div>
     </td>
   </tr>
-</table>
+</table> */}
 
 - [Source code of Seeed's L4T](https://github.com/Seeed-Studio/Linux_for_Tegra)
 
