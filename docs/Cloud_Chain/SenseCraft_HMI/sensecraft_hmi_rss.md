@@ -15,9 +15,11 @@ last_update:
 
 ## Introduction
 
-The RSS function in SenseCraft HMI allows you to transform your screen-based devices into real-time information displays. By connecting to RSS feeds from news outlets, blogs, weather services, and more, you can create dynamic displays that automatically update with the latest content. This feature is perfect for creating news tickers, information boards, or personal dashboards that keep you informed without manual intervention.
+The RSS function in [SenseCraft HMI](https://sensecraft.seeed.cc/hmi) allows you to transform your screen-based devices into real-time information displays. By connecting to RSS feeds from news outlets, blogs, weather services, and more, you can create dynamic displays that automatically update with the latest content. This feature is perfect for creating news tickers, information boards, or personal dashboards that keep you informed without manual intervention.
 
 This tutorial will guide you through understanding RSS feeds and using the RSS function in SenseCraft HMI to display content on your device.
+
+This article will use the [reTerminal E1002](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002/) as an example to explain how to use this feature on the SenseCraft HMI platform.
 
 ## Understanding RSS
 

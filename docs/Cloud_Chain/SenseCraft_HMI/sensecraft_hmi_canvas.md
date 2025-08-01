@@ -18,9 +18,11 @@ import TabItem from '@theme/TabItem';
 
 ## Introduction
 
-The Canvas function in SenseCraft HMI is the most powerful and flexible feature of the platform, allowing you to create custom interfaces, dashboards, and data visualizations. With Canvas, you can design beautiful displays that combine static elements with dynamic data from various sources, including device sensors, weather information, stock data, and more.
+The Canvas function in [SenseCraft HMI](https://sensecraft.seeed.cc/hmi) is the most powerful and flexible feature of the platform, allowing you to create custom interfaces, dashboards, and data visualizations. With Canvas, you can design beautiful displays that combine static elements with dynamic data from various sources, including device sensors, weather information, stock data, and more.
 
 This comprehensive guide will walk you through using the Canvas function to create professional displays for your Seeed devices. From basic shapes and text to real-time data widgets and pre-made templates, you'll learn everything you need to build customized interfaces that meet your specific needs.
+
+This article will use the [reTerminal E1002](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002/) as an example to explain how to use this feature on the SenseCraft HMI platform.
 
 ## Getting Started with Canvas
 
@@ -758,12 +760,12 @@ Step 2. In the "Configure Template: YouTube Channel Stats" dialog that appears:
    - Enter a YouTube Channel Identifier in one of the supported formats:
 
      * Channel ID: 24-character string starting with "UC" (e.g., UC_x5XG1OV2P6uZZ5FSM9Ttw)
-     * @Handle: Channel handle starting with @ (e.g., @seeedstudio)
-     * Channel URL: Full YouTube URL (e.g., youtube.com/@seeedstudio)
+     * @Handle: Channel handle starting with @ (e.g., @seeedstudioSZ)
+     * Channel URL: Full YouTube URL (e.g., youtube.com/@seeedstudioSZ)
 
 Step 3. Click "Validate Channel" to verify the channel exists and retrieve its data
 
-Step 4. If validation is successful, you'll see a confirmation message (e.g., "Found channel: SeeedStudio • 50")
+Step 4. If validation is successful, you'll see a confirmation message (e.g., "Found channel: SeeedStudioSZ • 20K")
 
 Step 5. Click "OK" to proceed
 

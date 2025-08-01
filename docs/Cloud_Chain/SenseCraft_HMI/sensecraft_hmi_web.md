@@ -15,9 +15,11 @@ last_update:
 
 ## Introduction
 
-The Web function in SenseCraft HMI allows you to display web content directly on your screen-based devices. This powerful feature transforms your device into a dedicated web display, capable of showing dashboards, monitoring systems, documentation, or any web content you need. Unlike traditional browsers, SenseCraft HMI's Web function is optimized for embedded displays and IoT devices, making it perfect for creating information kiosks, status monitors, or dedicated web interfaces.
+The Web function in [SenseCraft HMI](https://sensecraft.seeed.cc/hmi) allows you to display web content directly on your screen-based devices. This powerful feature transforms your device into a dedicated web display, capable of showing dashboards, monitoring systems, documentation, or any web content you need. Unlike traditional browsers, SenseCraft HMI's Web function is optimized for embedded displays and IoT devices, making it perfect for creating information kiosks, status monitors, or dedicated web interfaces.
 
 This tutorial will guide you through using the Web function in SenseCraft HMI, covering setup, preview, and deployment of web content to your device.
+
+This article will use the [reTerminal E1002](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002/) as an example to explain how to use this feature on the SenseCraft HMI platform.
 
 ## Getting Started with Web Function
 

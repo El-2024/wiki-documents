@@ -15,9 +15,9 @@ last_update:
 
 ## Introduction
 
-SenseCraft HMI is Seeed Studio's interactive interface design platform specifically created for screen-based products. One of its most powerful features is the AI Generation function, which allows you to create beautiful display layouts and images by simply describing what you want in natural language.
+[SenseCraft HMI](https://sensecraft.seeed.cc/hmi) is Seeed Studio's interactive interface design platform specifically created for screen-based products. One of its most powerful features is the AI Generation function, which allows you to create beautiful display layouts and images by simply describing what you want in natural language.
 
-This tutorial will guide you through using the AI Generation capabilities in both the Gallery and Canvas sections of SenseCraft HMI, enabling you to:
+This tutorial will guide you through using the AI Generation capabilities in both the Gallery and Canvas sections of [SenseCraft HMI](https://sensecraft.seeed.cc/hmi), enabling you to:
 
 - Generate custom images based on text descriptions
 
@@ -26,6 +26,8 @@ This tutorial will guide you through using the AI Generation capabilities in bot
 - Refine and adjust AI-generated content through conversation
 
 - Deploy your designs directly to your device with one click
+
+This article will use the [reTerminal E1002](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002/) as an example to explain how to use this feature on the SenseCraft HMI platform.
 
 ## Getting Started with AI Generation
 
