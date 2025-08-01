@@ -181,7 +181,8 @@ export const PrepareRequirementsMini = () => {//名称不能下划线
         <HostEnvironmentNote1 />
   
         <div className="alert alert--info" role="alert" style={{ marginBottom: '1em' }}>
-          Before we can move on to the installation steps, we need to make sure that the board is in force recovery mode.
+          Before we can move on to the next step, we need to make sure that the board is in force recovery mode.
+          click the "step-by-step" to see how to enter recovery mode.
         </div>
   
         <details style={{ marginBottom: '1em' }}>
@@ -268,7 +269,8 @@ export const PrepareRequirementsMini = () => {//名称不能下划线
         <HostEnvironmentNote1 />
   
         <div className="alert alert--info" role="alert" style={{ marginBottom: '1em' }}>
-          Before we can move on to the installation steps, we need to make sure that the board is in force recovery mode.
+          Before we can move on to the next step, we need to make sure that the board is in force recovery mode.
+          click the "step-by-step" to see how to enter recovery mode.
         </div>
   
         <details style={{ marginBottom: '1em' }}>
@@ -332,6 +334,163 @@ export const PrepareRequirementsMini = () => {//名称不能下划线
       </div>
     );
   };
+
+
+  export const PrepareRequirementsClassic = () => {//名称不能下划线
+    console.log("PrepareRequirements rendered!");
+
+    const product = useJetsonStore(state => state.product);
+
+    const allowed = ['j4012classic', 'j4011classic', 'j3011classic', 'j3010classic'];
+    if (!allowed.includes(product)) {
+        return null;// 🚫 不渲染任何内容
+    }
+  
+    return (
+      <div>
+        <ul>
+          <li>Ubuntu Host Computer</li>
+          <li>reComputer J4012 / J4011 / J3010 or J3011</li>
+          <li>USB Type-C data transmission cable</li>
+        </ul>
+  
+        <HostEnvironmentNote1 />
+  
+        <div className="alert alert--info" role="alert" style={{ marginBottom: '1em' }}>
+          Before we can move on to the next step, we need to make sure that the board is in force recovery mode.<br />
+          Click the "step-by-step" to see how to enter recovery mode.
+        </div>
+  
+        <details style={{ marginBottom: '1em' }}>
+        <summary
+            style={{
+            cursor: 'pointer',
+            fontWeight: 'bold',
+            backgroundColor: 'var(--ifm-background-surface-color)',
+            padding: '0.6em 1em',
+            border: '1px solid #c3dafe',
+            borderRadius: '6px',
+            fontSize: '1.05em'
+        }}>Step-by-Step</summary>
+          <div style={{ textAlign: 'center', margin: '1em 0' }}>
+            <img
+              width={700}
+              src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/j401_set_recovery.gif"
+              alt="gif about RESET"
+            />
+          </div>
+  
+          <ul>
+            <li><strong>Step 1.</strong> Use a jumper wire to connect the <strong>FC REC</strong> pin and the <strong>GND</strong> pin.</li>
+          </ul>
+  
+        {/* 📌 插入 Table 部分 */}
+        <div style={{ display: "flex", justifyContent: "center", margin: "1em 0" }}>
+          <table border={1} cellPadding={8}>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Button Header</th>
+                <th>Description</th>
+                <th>Button Header</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowSpan={6} style={{ textAlign: "center" }}>
+                  <img
+                    width="200"
+                    src="https://files.seeedstudio.com/wiki/reComputer-J4012/1.png"
+                    alt="Pin layout"
+                  />
+                </td>
+                <td>1</td>
+                <td>PWR BTN</td>
+                <td>7</td>
+                <td>AUTO ON</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>GND</td>
+                <td>8</td>
+                <td>DIS</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>FC REC</td>
+                <td>9</td>
+                <td>UART TXD</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>GND</td>
+                <td>10</td>
+                <td>UART RXD</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>SYS RET</td>
+                <td>11</td>
+                <td>LED +</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>GND</td>
+                <td>12</td>
+                <td>LED -</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+  
+          <ul>
+            <li><strong>Step 2.</strong> Power up the reComputer by connecting the included cable from the power adapter.</li>
+            <div style={{ textAlign: 'center', margin: '1em 0' }}>
+            <img
+              width={700}
+              src="https://files.seeedstudio.com/wiki/reComputer-J4012/2.png"
+              alt="button about RESET"
+            />
+          </div>
+            <li><strong>Step 3.</strong> Connect the board to the Ubuntu host PC with a USB Type-C data transmission cable.</li>
+            <li><strong>Step 4.</strong> On the Linux host PC, open a Terminal window and enter the command <code>lsusb</code>. If the returned content has one of the following outputs according to the Jetson SoM you use, then the board is in force recovery mode.</li>
+          </ul>
+
+        </details>
+        <p>
+          If the device is not detected, try the following:
+          <ul>
+            <li>Reconnect the USB cable.</li>
+            <li>Use a different USB port (preferably USB 2.0).</li>
+            <li>Ensure the device is in recovery mode (press and hold Recovery + Reset).</li>
+          </ul>
+        </p>
+        <p>After the device enters recovery mode, open a Terminal and run on the Linux host PC:</p>
+      <CodeBlock language="bash">lsusb</CodeBlock>
+
+      <p>If the output includes one of the following IDs, the board is in force recovery mode:</p>
+      <ul>
+        <li>For Orin NX 16GB: <code>0955:7323</code> NVidia Corp</li>
+        <li>For Orin NX 8GB: <code>0955:7423</code> NVidia Corp</li>
+        <li>For Orin Nano 8GB: <code>0955:7523</code> NVidia Corp</li>
+        <li>For Orin Nano 4GB: <code>0955:7623</code> NVidia Corp</li>
+      </ul>
+
+      <p>The below image is for Orin Nano 8GB:</p>
+          <div style={{ textAlign: 'center', margin: '1em 0' }}>
+            <img
+              width={800}
+              src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/lsusb_f.png"
+              alt="lsusb result"
+            />
+          </div>
+      </div>
+    );
+  };
+
+
 
 /**
  * ExtractFile
