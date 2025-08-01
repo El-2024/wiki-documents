@@ -89,7 +89,7 @@ For more information about servo motors, please visit the following link.
 - Torch 2.6  
 
 **For Jetson Orin:**
-- Jetson JetPack 6.2  
+- Jetson JetPack 6.0+  
 - Python 3.10  
 - Torch 2.6  
 

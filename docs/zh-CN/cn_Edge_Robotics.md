@@ -56,6 +56,10 @@ last_update:
       <span className="text">华馨京starai arm</span>
       <span className="tag stable">更新</span>
     </a>
+    <a href="/cn/starai_arm_ros_moveit/" className="nav-item">
+      <span className="text">华馨京starai arm Moveit</span>
+      <span className="tag stable">更新</span>
+    </a>
     <a href="/cn/lerobot_so100m_new/" className="nav-item">
       <span className="text">SO100/101 机械臂(新版)</span>
       <span className="tag stable">更新</span>
