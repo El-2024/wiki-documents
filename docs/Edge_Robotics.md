@@ -57,6 +57,10 @@ last_update:
       <span className="text">Starai Robotic Arm</span>
       <span className="tag stable">Update</span>
     </a>
+    <a href="/starai_arm_ros_moveit/" className="nav-item">
+      <span className="text">Starai Robotic Arm Moveit</span>
+      <span className="tag stable">Update</span>
+    </a>
     <a href="/lerobot_so100m_new/" className="nav-item">
       <span className="text">SO100/101 Arm</span>
       <span className="tag stable">Update</span>

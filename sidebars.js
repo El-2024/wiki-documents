@@ -3987,6 +3987,7 @@ const sidebars = {
                 // },
                 items: [
                   'Robotics/Robot_Kits/Lerobot/Lerobot_Starai_Arm',
+                  'Robotics/Robot_Kits/Lerobot/Starai_Arm_ROS2_Moveit',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_New',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_Isaacsim',
@@ -6333,6 +6334,7 @@ const sidebars = {
           label: 'Lerobot',
           items: [
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Starai_Arm',
+            'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Starai_Arm_ROS2_Moveit',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_New',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_Isaacsim',
