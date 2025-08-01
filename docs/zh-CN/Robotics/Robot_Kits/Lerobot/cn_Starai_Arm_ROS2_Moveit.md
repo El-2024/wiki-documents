@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.webp
 slug: /cn/starai_arm_ros_moveit
 last_update:
-  date: 7/31/2025
+  date: 8/1/2025
   author: LiShanghang
 ---
 
@@ -25,6 +25,7 @@ last_update:
   src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/cello.png" />
 </div>
 
+
 ## 环境依赖
 
 No LSB modules are available.
@@ -38,10 +39,6 @@ Release:        22.04
 Codename:       Jammy
 
 ROS2:           Humble
-
-
-
-
 
 ### 安装ROS2 Humble
 
@@ -85,7 +82,6 @@ ros2 launch viola_configure demo.launch.py
 ```
 
 
-
 ## 使用真实的机械臂
 
 ### 终端1:开启手臂控制节点
@@ -108,7 +104,6 @@ ros2 run viola_controller controller
 ros2 launch viola_configure actual_robot_demo.launch.py
 ```
 
-
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/L82y7e9uk9Q?si=Fa8YorBPgbRszYGn" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
@@ -121,26 +116,3 @@ ros2 launch viola_configure actual_robot_demo.launch.py
     ```bash
     export QT_AUTO_SCREEN_SCALE_FACTOR=0
     ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
