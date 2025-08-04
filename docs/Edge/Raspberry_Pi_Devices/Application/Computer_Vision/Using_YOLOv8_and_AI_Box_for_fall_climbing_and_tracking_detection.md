@@ -6,7 +6,7 @@ keywords:
   - rpi5
   - Hailo
   - YOLO
-image: https://files.seeedstudio.com/R2000/tracking_people.png
+image: https://files.seeedstudio.com/wiki/YOLOv8_AI_Box/recompuer_ai_box.webp
 slug: /yolov8_on_ai_box_for_fall_climbing_tracking
 last_update:
   date: 07/29/2025
@@ -62,7 +62,9 @@ python app.py -i ./falldown_test.mp4 -n ./yolov8n.hef --show-fps -l ./common/coc
 
 ### Result
 
+<div class="video-container">
 <iframe width="800" height="400" src="https://www.youtube.com/embed/H0NaAevLo2k" title="How the Seeed Raspberry Pi AI Box Helps in Abnormal Event Detection" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Fence climbing
 
@@ -94,7 +96,9 @@ python app.py -i ./scale_the_fence.mp4 -n ./yolov8n.hef --show-fps -l ./common/c
 
 ### Result
 
+<div class="video-container">
 <iframe width="800" height="400" src="https://www.youtube.com/embed/_-89czNbZ_M?list=PLpH_4mf13-A3Wm6hJp7JeT4DD9NXXUAca" title="Seeed Raspberry Pi AI Box Helps in Abnormal Event Detection: Fence Climbing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Tracking 
 
@@ -126,7 +130,9 @@ python app.py -i ./people-walking.mp4 -n ./yolov8n.hef --show-fps -l ./common/co
 
 ### result 
 
+<div class="video-container">
 <iframe width="800" height="400" src="https://www.youtube.com/embed/xoeMcaG_FxE?list=PLpH_4mf13-A3Wm6hJp7JeT4DD9NXXUAca" title="reComputer Object Detection and Tracking: The Role of YOLOv8 in Shaping Results" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 
 ## Tech Support & Product Discussion

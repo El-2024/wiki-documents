@@ -7,7 +7,7 @@ keywords:
 - reSpeaker
 - XIAO
 - ESP32S3
-image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/6-ReSpeaker-XVF3800-4-Mic-Array-With-XIAO-ESP32S3.jpg
+image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/front-xiao.webp
 slug: /respeaker_xvf3800_xiao_mqtt_audio_stream
 last_update:
   date: 7/29/2025

@@ -8,7 +8,7 @@ keywords:
 - XIAO
 - ESP32S3
 - Home Assistant
-image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/6-ReSpeaker-XVF3800-4-Mic-Array-With-XIAO-ESP32S3.jpg
+image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array-with-xiao-esp32s3.webp
 slug: /respeaker_xvf3800_xiao_home_assistant
 last_update:
   date: 7/30/2025
@@ -22,7 +22,7 @@ Talk with smart spaces with new **ReSpeaker XMOS XVF3800 with XIAO ESP32S3** swi
 This chapter we will use the ReSpeaker XMOS XVF3800 with XIAO ESP32S3  HA Voice Assistant to connect the Sonoff smart switch to realize voice control of the light switch.
 
 
-<div align="center">
+<div class="video-container">
   <iframe width="800" height="400"
           src="https://www.youtube.com/embed/iqlsNezHYuE"
           title="ReSpeaker XVF3800 with XIAO ESP32S3 Home Assistant"
