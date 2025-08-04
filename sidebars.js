@@ -3984,7 +3984,6 @@ const sidebars = {
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_Isaacsim',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_Lekiwi',
                   'Robotics/Robot_Kits/Lerobot/Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
-                  'Robotics/Robot_Software/control_robotic_arm_via_phospho',
                     ]},
 
           ]
@@ -4051,6 +4050,7 @@ const sidebars = {
           type: 'category',
           label: 'Software',
           items: [
+            
             {
               type: 'category',
               label: 'ROS',
@@ -4064,7 +4064,6 @@ const sidebars = {
                   "Robotics/Robot_Software/ROS/Install_ROS2_Humble",
                   "Robotics/Robot_Software/ROS/Isaac_ROS_AprilTag",
                   "Robotics/Robot_Software/ROS/Isaac_ROS_Visual_SLAM",
-
                     ]},
             {
               type: 'category',
@@ -4088,6 +4087,7 @@ const sidebars = {
                   "Robotics/Robot_Software/PX4/Control_PX4_with_reComputer_Jetson",
                     ]},
             'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
+            'Robotics/Robot_Software/control_robotic_arm_via_phospho',
           ]
 
     },
@@ -6389,12 +6389,13 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Isaag Lab',
+          label: 'Isaac Lab',
           items: [
             'zh-CN/Robotics/Robot_Software/Isaac_Lab/cn_Install_Isaac_lab',
             'zh-CN/Robotics/cn_XiaoPi',
           ]
         },
+        'zh-CN/Robotics/Robot_Software/cn_control_robotic_arm_via_phospho',
       ]
     },
 
@@ -12307,7 +12308,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Isaag Lab',
+          label: 'Isaac Lab',
           items: [
             'ja/Robotics/Robot_Software/Isaac_Lab/ja_Install_Isaac_lab',
           ]

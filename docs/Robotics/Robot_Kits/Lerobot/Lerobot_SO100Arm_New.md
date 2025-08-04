@@ -538,7 +538,7 @@ sudo chmod 666 /dev/ttyACM*
 ```python
 python -m lerobot.calibrate \
     --robot.type=so101_follower \
-    --robot.port=/dev/tty.usbmodem58760431551 \ # <- The port of your robot
+    --robot.port=/dev/tty.usbmodem58760431551 \# <- The port of your robot
     --robot.id=my_awesome_follower_arm # <- Give the robot a unique name
 ```
 
@@ -551,7 +551,7 @@ Do the same steps to calibrate the leader arm, run the following command or API 
 ```python
 python -m lerobot.calibrate \
     --teleop.type=so101_leader \
-    --teleop.port=/dev/tty.usbmodem58760431551 \ # <- The port of your robot
+    --teleop.port=/dev/tty.usbmodem58760431551 \# <- The port of your robot
     --teleop.id=my_awesome_leader_arm # <- Give the robot a unique name
 ```
 
@@ -649,7 +649,7 @@ python -m lerobot.teleoperate \
     --robot.type=so101_follower \
     --robot.port=/dev/tty.usbmodem58760431541 \
     --robot.id=my_awesome_follower_arm \
-    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}, side: {type: opencv, index_or_path: 1, width: 1920, height: 1080, fps: 30}}" \ 
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}, side: {type: opencv, index_or_path: 1, width: 1920, height: 1080, fps: 30}}" \
     --teleop.type=so101_leader \
     --teleop.port=/dev/tty.usbmodem58760431551 \
     --teleop.id=my_awesome_leader_arm \
@@ -702,8 +702,8 @@ python -m lerobot.record \
     --dataset.repo_id=${HF_USER}/record-test \
     --dataset.num_episodes=5 \
     --dataset.single_task="Grab the black cube" \
-    --dataset.push_to_hub=true \  # You can choose false if you want to save the data locally
-    --dataset.episode_time_s=30 \    
+    --dataset.push_to_hub=true \# You can choose false if you want to save the data locally
+    --dataset.episode_time_s=30 \
     --dataset.reset_time_s=30 
 ```
 
