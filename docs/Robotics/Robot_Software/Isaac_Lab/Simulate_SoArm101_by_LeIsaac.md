@@ -4,7 +4,7 @@ title: Simulate SoArm101 by LeIsaac
 keywords:
 - NVIDIA
 - Isaac Lab
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/robotics/isaac_lab/simulate_soarm101_by_leisaac.webp
 slug: /simulate_soarm101_by_leisaac 
 last_update:
   date: 8/1/2025
