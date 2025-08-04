@@ -3990,7 +3990,7 @@ const sidebars = {
                   'Robotics/Robot_Kits/Lerobot/Starai_Arm_ROS2_Moveit',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_New',
                   //'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
-                  'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_Isaacsim',
+                  'Robotics/Robot_Software/Isaac_Lab/Simulate_SoArm101_by_LeIsaac',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_Lekiwi',
                   'Robotics/Robot_Kits/Lerobot/Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
                   'Robotics/Robot_Software/control_robotic_arm_via_phospho',
