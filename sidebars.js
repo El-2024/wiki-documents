@@ -6330,6 +6330,7 @@ const sidebars = {
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_Isaacsim',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Lekiwi',
+            'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
               ]},
 
       ]

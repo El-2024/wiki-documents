@@ -909,7 +909,7 @@ python -m lerobot.record  \
 
 ## 参考文档
 
-[英文文档](https://wiki.seeedstudio.com/lerobot_so100m_new/)
+[English Document](https://wiki.seeedstudio.com/lerobot_so100m_new/)
 
 TheRobotStudio Project: [SO-ARM10x](https://github.com/TheRobotStudio/SO-ARM100)
 

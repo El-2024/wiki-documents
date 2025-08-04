@@ -697,7 +697,7 @@ python lerobot/scripts/control_robot.py \
 
 ## 参考文档
 
-矽递科技英文Wiki文档：[How to use the SO10xArm robotic arm in Lerobot | Seeed Studio Wiki]([如何在 Lerobot 中使用 SO100/101Arm 机器人手臂 | Seeed Studio Wiki](https://wiki.seeedstudio.com/cn/lerobot_so100m/))
+矽递科技中文Wiki文档：[如何在最新版Lerobot中使用SO10xArm机械臂](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/)
 
 Huggingface Project:[Lerobot](https://github.com/huggingface/lerobot/tree/main)
 
@@ -710,5 +710,18 @@ Diffusion Policy:[Diffusion Policy](https://diffusion-policy.cs.columbia.edu/)
 TD-MPC:[TD-MPC](https://www.nicklashansen.com/td-mpc/)
 
 
+## 技术支持与产品讨论
+
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
+
+<div class="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
+<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+</div>
+
+<div class="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+</div>
 
 
