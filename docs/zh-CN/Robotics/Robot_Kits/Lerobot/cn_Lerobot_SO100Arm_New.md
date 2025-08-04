@@ -525,8 +525,8 @@ sudo chmod 666 /dev/ttyACM*
 ```python
 python -m lerobot.calibrate \
     --robot.type=so101_follower \
-    --robot.port=/dev/tty.usbmodem58760431551 \ # <- 您的机器人接口
-    --robot.id=my_awesome_follower_arm # <- 给机器人一个独一无二的名称
+    --robot.port=/dev/tty.usbmodem58760431551 \# <- 您的机器人接口
+    --robot.id=my_awesome_follower_arm# <- 给机器人一个独一无二的名称
 ```
 
 下面的视频演示了如何执行校准。首先，您需要将机器人移动到所有关节都位于其活动范围中间的位置。然后，按下回车键后，您必须将每个关节在其完整的运动范围内移动。
@@ -539,8 +539,8 @@ python -m lerobot.calibrate \
 ```python
 python -m lerobot.calibrate \
     --teleop.type=so101_leader \
-    --teleop.port=/dev/tty.usbmodem58760431551 \ # <- 您的机器人接口
-    --teleop.id=my_awesome_leader_arm # <- 给机器人一个独一无二的名称
+    --teleop.port=/dev/tty.usbmodem58760431551 \# <- 您的机器人接口
+    --teleop.id=my_awesome_leader_arm# <- 给机器人一个独一无二的名称
 ```
 
 <div class="video-container">
@@ -634,7 +634,7 @@ python -m lerobot.teleoperate \
     --robot.type=so101_follower \
     --robot.port=/dev/tty.usbmodem58760431541 \
     --robot.id=my_awesome_follower_arm \
-    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}, side: {type: opencv, index_or_path: 1, width: 1920, height: 1080, fps: 30}}" \ 
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}, side: {type: opencv, index_or_path: 1, width: 1920, height: 1080, fps: 30}}" \
     --teleop.type=so101_leader \
     --teleop.port=/dev/tty.usbmodem58760431551 \
     --teleop.id=my_awesome_leader_arm \
@@ -682,8 +682,8 @@ python -m lerobot.record \
     --dataset.repo_id=${HF_USER}/record-test \
     --dataset.num_episodes=5 \
     --dataset.single_task="Grab the black cube" \
-    --dataset.push_to_hub=true \  # You can choose false if you want to save the data locally
-    --dataset.episode_time_s=30 \    
+    --dataset.push_to_hub=true \# You can choose false if you want to save the data locally
+    --dataset.episode_time_s=30 \
     --dataset.reset_time_s=30 
 ```
 
