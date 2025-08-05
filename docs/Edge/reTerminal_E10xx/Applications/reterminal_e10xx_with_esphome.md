@@ -150,9 +150,9 @@ After you create a new device, click **EDIT**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/35.png" style={{width:1000, height:'auto'}}/></div>
 
-Inside the default generated code, the framework of esp32 may be `esp-idf`, which we need to change to `arduino`.
+<!-- Inside the default generated code, the framework of esp32 may be `esp-idf`, which we need to change to `arduino`.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/esphome_arduino.png" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/esphome_arduino.png" style={{width:600, height:'auto'}}/></div> -->
 
 ### Step 3. Install firmware
 
