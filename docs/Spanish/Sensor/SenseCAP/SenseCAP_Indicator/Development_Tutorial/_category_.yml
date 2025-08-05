@@ -5,6 +5,6 @@ collapsed: true # keep the category open by default
 className: indicator_dev
 link:
   type: generated-index
-  slug: Develop_with_SenseCAP_Indicator
+  slug: es/Develop_with_SenseCAP_Indicator
   title: Develop With SenseCAP Indicator
   description: This tutorial will guide you through the process of developing with SenseCAP Indicator.

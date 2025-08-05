@@ -217,8 +217,8 @@ Para usar la biblioteca MaTrix en tu sketch, debes declarar la función `void se
 `
 `
 
-``` #include &lt;SPI.h&gt;
- #include &lt;MaTrix.h&gt;	//connection library MaTrix
+``` #include <SPI.h>
+#include <MaTrix.h>	//connection library MaTrix
 
  MaTrix mymatrix;       //object creation mymatrix
 ```

@@ -5,6 +5,6 @@ collapsed: true # keep the category open by default
 className: development
 link:
   type: generated-index
-  slug: development
+  slug: es/development
   title: development
   description: This part focus on how to use watcher capability to help your development.

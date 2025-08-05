@@ -214,7 +214,7 @@ Copie el siguiente código de inferencia y pegalo en tu IDE de Arduino.
  */
 
 /* Inclusiones ---------------------------------------------------------------- */
-#include &lt;XIAO_esp32S3_CatDog2_inferencing.h&gt;
+#include <XIAO_esp32S3_CatDog2_inferencing.h>
 #include "edge-impulse-sdk/dsp/image/image.hpp"
 
 #include "esp_camera.h"
@@ -525,7 +525,7 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
 #endif
 ```
 
-Asegúrate de reemplazar **"#include &lt;XIAO_esp32S3_CatDog2_inferencing.h&gt;"** con la librería que generaste. Luego, sube el código y apunta hacia las imágenes de un gato o perro, o usa las imágenes reales. Podrás ver los resultados en el monitor serial.
+Asegúrate de reemplazar **`#include <XIAO_esp32S3_CatDog2_inferencing.h>`** con la librería que generaste. Luego, sube el código y apunta hacia las imágenes de un gato o perro, o usa las imágenes reales. Podrás ver los resultados en el monitor serial.
 
 ¡Felicidades por completar el proyecto de clasificación de imágenes con tinyML! 🙌
 

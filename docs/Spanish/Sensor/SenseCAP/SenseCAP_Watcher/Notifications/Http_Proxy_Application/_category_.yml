@@ -5,6 +5,6 @@ collapsed: true # keep the category open by default
 className: http_proxy_notification
 link:
   type: generated-index
-  slug: http_proxy_notification
+  slug: es/http_proxy_notification
   title: HTTP Proxy Notification
   description: This part focus on how to use Node-RED to send messages to different platforms.
