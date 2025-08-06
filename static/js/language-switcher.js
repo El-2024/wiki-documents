@@ -1,6 +1,6 @@
 // 语言切换器 - 生产环境优化版本
-// 生成时间: 2025-08-04 14:48:35 (北京时间)
-// 多语言页面: 1823 个
+// 生成时间: 2025-08-06 09:30:33 (北京时间)
+// 多语言页面: 1837 个
 
 (function() {
   'use strict';
@@ -2606,6 +2606,10 @@
     "cn",
     "en"
   ],
+  "/sound_follow_robot": [
+    "cn",
+    "en"
+  ],
   "/starai_arm_ros_moveit": [
     "cn",
     "en"
@@ -2648,10 +2652,18 @@
     "cn",
     "en"
   ],
+  "/control_robotic_arm_via_phospho": [
+    "cn",
+    "en"
+  ],
   "/install_isaaclab": [
     "cn",
     "en",
     "ja"
+  ],
+  "/simulate_soarm101_by_leisaac": [
+    "cn",
+    "en"
   ],
   "/installing_ros1": [
     "cn",
@@ -3423,354 +3435,442 @@
   ],
   "/Azure_Sphere_MT3620_Development_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/Grove_Starter_Kit_for_Azure_Sphere_MT3620_Development_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/MT3620_Ethernet_Shield_v1.0": [
     "en",
+    "es",
     "ja"
   ],
   "/MT3620_Grove_Breakout": [
     "en",
+    "es",
     "ja"
   ],
   "/MT3620_Mini_Dev_Board": [
     "en",
+    "es",
     "ja"
   ],
   "/Bracket_for_Infrared_Proximity_Sensor": [
     "en",
+    "es",
     "ja"
   ],
   "/Shield-MaTrix-V0.9b": [
     "en",
+    "es",
     "ja"
   ],
   "/0.5w_Solar_Panel_55x70": [
     "en",
+    "es",
     "ja"
   ],
   "/1.5W_Solar_Panel_81x137": [
     "en",
+    "es",
     "ja"
   ],
   "/1w_Solar_Panel_80x100": [
     "en",
+    "es",
     "ja"
   ],
   "/2.5W_Solar_Panel_116x160": [
     "en",
+    "es",
     "ja"
   ],
   "/3.6V_Micro_hydro_generator": [
     "en",
+    "es",
     "ja"
   ],
   "/3W_Solar_Panel_138x160": [
     "en",
+    "es",
     "ja"
   ],
   "/5V-3.3V_Breadboard_Power_Supply": [
     "en",
+    "es",
     "ja"
   ],
   "/5V-3.3V_Breadboard_Power_Supply_v1.1": [
     "en",
+    "es",
     "ja"
   ],
   "/Battery_Detector_with_Polymer_Lithium_Ion_1050mAh_3.7V": [
     "en",
+    "es",
     "ja"
   ],
   "/Battery_Detector_with_Polymer_Lithium_Ion_5100mAh_3.8V": [
     "en",
+    "es",
     "ja"
   ],
   "/Battery_kit_3.7V_520_mAh": [
     "en",
+    "es",
     "ja"
   ],
   "/Bicycle_Dynamo_With_Bracket-6V_3W": [
     "en",
+    "es",
     "ja"
   ],
   "/DC_framework_miniature_solenoid_VL-0063": [
     "en",
+    "es",
     "ja"
   ],
   "/DC_framework_solenoid_HCNE1-0520": [
     "en",
+    "es",
     "ja"
   ],
   "/DC_framework_solenoid_HCNE1-0630": [
     "en",
+    "es",
     "ja"
   ],
   "/Essentials": [
     "en",
+    "es",
     "ja"
   ],
   "/Lipo-Rider-Plus": [
     "en",
+    "es",
     "ja"
   ],
   "/Lipo_Rider": [
     "en",
+    "es",
     "ja"
   ],
   "/Lipo_Rider_Pro": [
     "en",
+    "es",
     "ja"
   ],
   "/Lipo_Rider_V1.1": [
     "en",
+    "es",
     "ja"
   ],
   "/Lipo_Rider_V1.3": [
     "en",
+    "es",
     "ja"
   ],
   "/Logic_DC_Jack": [
     "en",
+    "es",
     "ja"
   ],
   "/Qi_Wireless_Charger_Transmitter": [
     "en",
+    "es",
     "ja"
   ],
   "/Adjustable_DC_DC_Power_Converter_1V-12V-1.5A": [
     "en",
+    "es",
     "ja"
   ],
   "/Capacitance_Meter_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/RS-232_To_TTL_Conveter-MAX3232IDR": [
     "en",
+    "es",
     "ja"
   ],
   "/1-47inch_lcd_spi_display": [
     "en",
+    "es",
     "ja"
   ],
   "/1-69inch_lcd_spi_display": [
     "en",
+    "es",
     "ja"
   ],
   "/LCD_16-2_Characters-Green_Yellow_back_light": [
     "en",
+    "es",
     "ja"
   ],
   "/LCD_8-2_Characters-Blue_back_light": [
     "en",
+    "es",
     "ja"
   ],
   "/125Khz_RFID_module-UART": [
     "en",
+    "es",
     "ja"
   ],
   "/13.56Mhz_RFID_module-IOS-IEC_14443_type_a": [
     "en",
+    "es",
     "ja"
   ],
   "/2.8inch-TFT_Touch_Shield_V1.0": [
     "en",
+    "es",
     "ja"
   ],
   "/AVR_USB_Programmer": [
     "en",
+    "es",
     "ja"
   ],
   "/Bus_Pirate_v3_assembled": [
     "en",
+    "es",
     "ja"
   ],
   "/Codec-Adaptive_Wireless_Relay": [
     "en",
+    "es",
     "ja"
   ],
   "/Scream_out_loud-110dBA_fixed_tone_Siren": [
     "en",
+    "es",
     "ja"
   ],
   "/USB_To_Uart_3V3": [
     "en",
+    "es",
     "ja"
   ],
   "/USB_To_Uart_5V": [
     "en",
+    "es",
     "ja"
   ],
   "/USB_To_Uart_5V_3V3": [
     "en",
+    "es",
     "ja"
   ],
   "/FSM-55": [
     "en",
+    "es",
     "ja"
   ],
   "/Bluetooth_Multimeter": [
     "en",
+    "es",
     "ja"
   ],
   "/Dfu-util": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Nano-Development": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Nano-gcc": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Nano-OpenOCD_gdb": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Nano-Qemu_gdb": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Nano": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Nano_v3": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Quad-Beta_HW": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Quad-Building_Firmware": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Quad-Calibration": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Quad": [
     "en",
+    "es",
     "ja"
   ],
   "/DSO_Quad_Manual_by_the_community": [
     "en",
+    "es",
     "ja"
   ],
   "/Mini_Soldering_Iron": [
     "en",
+    "es",
     "ja"
   ],
   "/Replacement_LCD_Screen_for_DSO_nano": [
     "en",
+    "es",
     "ja"
   ],
   "/RF_Explorer_Software": [
     "en",
+    "es",
     "ja"
   ],
   "/Get_Started_with_EcoEye_Embedded_Vision_Camera": [
     "en",
+    "es",
     "ja"
   ],
   "/G1-8_Water_Flow_Sensor": [
     "en",
+    "es",
     "ja"
   ],
   "/G1_and_2_inch_Water_Flow_Sensor": [
     "en",
+    "es",
     "ja"
   ],
   "/G1_Water_Flow_Sensor": [
     "en",
+    "es",
     "ja"
   ],
   "/G3-4_Water_Flow_sensor": [
     "en",
+    "es",
     "ja"
   ],
   "/Gear_Stepper_Motor_Driver_Pack": [
     "en",
+    "es",
     "ja"
   ],
   "/M11_1.25_Water_flow_Sensor": [
     "en",
+    "es",
     "ja"
   ],
   "/Photo_interrupter_OS25B10": [
     "en",
+    "es",
     "ja"
   ],
   "/Photo_Reflective_Sensor": [
     "en",
+    "es",
     "ja"
   ],
   "/Piezo_Sensor-MiniSense_100": [
     "en",
+    "es",
     "ja"
   ],
   "/PIR_Motion_Sensor_Large_Lens_version": [
     "en",
+    "es",
     "ja"
   ],
   "/RF-Transmitter-and-Receiver-Link-Kit-315MHz-433MHz": [
     "en",
+    "es",
     "ja"
   ],
   "/Ultra_Sonic_range_measurement_module": [
     "en",
+    "es",
     "ja"
   ],
   "/Water-Flow-Sensor": [
     "en",
+    "es",
     "ja"
   ],
   "/Weight_Sensor_Load_Cell_0-500g": [
     "en",
+    "es",
     "ja"
   ],
   "/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder": [
     "en",
+    "es",
     "ja"
   ],
   "/315Mhz_remote_relay_switch_kits-2_channels": [
     "en",
+    "es",
     "ja"
   ],
   "/315Mhz_RF_link_kit": [
     "en",
+    "es",
     "ja"
   ],
   "/315MHz_Simple_RF_Link_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/315Mhz_Wireless_car_key_fob_with_key_chain": [
     "en",
+    "es",
     "ja"
   ],
   "/433Mhz_RF_Link_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/SDLogger-Open_Hardware_Data_Logger": [
     "en",
+    "es",
     "ja"
   ],
   "/WiFi_Serial_Transceiver_Module": [
     "en",
+    "es",
     "ja"
   ],
   "/Wireless_Sensor_Node-Solar_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/Grove-16-Channel_PWM_Driver-PCA9685": [
@@ -5171,191 +5271,235 @@
   ],
   "/SEEED-IOT-BUTTON-FOR-AWS": [
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_with_seeed_iot_button": [
     "en",
+    "es",
     "ja"
   ],
   "/iot_button_for_esphome": [
     "en",
+    "es",
     "ja"
   ],
   "/seeed_iot_button_with_zigbee": [
     "en",
+    "es",
     "ja"
   ],
   "/mmwave_for_xiao_to_ha_bt": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/mmwave_for_xiao": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/mmwave_for_xiao_arduino": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/mmwave_radar_Intro": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/mmwave_human_detection_kit": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/mmWave_Kit_And_Grove_Connect_To_ESPHome": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_with_mr60bha2_mmwave_kit": [
     "en",
+    "es",
     "ja"
   ],
   "/ha_with_mr60bha2": [
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_with_mr60fda2_mmwave_kit": [
     "en",
+    "es",
     "ja"
   ],
   "/ha_with_mr60fda2": [
     "en",
+    "es",
     "ja"
   ],
   "/Radar_MR24BSD1": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Radar_MR24FDB1": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Radar_MR24HPB1": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Radar_MR24HPC1": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Radar_MR60BHA1": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Radar_MR60FDA1": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Grove-Starter-Kit-for-Raspberry-Pi-Pico": [
     "en",
+    "es",
     "ja"
   ],
   "/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions": [
     "en",
+    "es",
     "ja"
   ],
   "/ReSpeaker_2_Mics_Pi_HAT": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/ReSpeaker_2_Mics_Pi_HAT_Jetson": [
     "en",
+    "es",
     "ja"
   ],
   "/ReSpeaker_2_Mics_Pi_HAT_Raspberry": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_2_mics_pi_hat_raspberry_v2": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_2_mics_pi_hat_v2_speech_recognition": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_lite_ha": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_lite_pi5": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_enclosure": [
     "en",
+    "es",
     "ja"
   ],
   "/reSpeaker_usb_v3": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_button": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_i2s_rgb": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_i2s_test": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_player_spiffs": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_record_and_play": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_rgb_test": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_streams_generator": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_streams_i2s_tflite": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_streams_memory": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_steams_mqtt": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_streams_print": [
     "en",
+    "es",
     "ja"
   ],
   "/respeaker_volume": [
     "en",
+    "es",
     "ja"
   ],
   "/xiao_respeaker": [
     "en",
+    "es",
     "ja"
   ],
   "/XIAO-Kit-Courses": [
@@ -6185,27 +6329,57 @@
   ],
   "/2_channel_wifi_ac_energy_meter": [
     "en",
+    "es",
     "ja"
   ],
   "/2_channel_wifi_ac_relay": [
     "en",
+    "es",
     "ja"
   ],
   "/6_channel_wifi_relay": [
     "en",
+    "es",
     "ja"
   ],
   "/relay_add_on_module_for_xiao": [
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_with_rs485_vision_ai_cam": [
     "en",
+    "es",
     "ja"
   ],
   "/xiao_075inch_epaper_panel_arduino": [
     "en",
+    "es",
     "ja"
+  ],
+  "/xiao_7_5_inch_epaper_panel_with_trmnl": [
+    "en",
+    "es"
+  ],
+  "/xiao_7_5_inch_epaper_panel_main_page": [
+    "en",
+    "es"
+  ],
+  "/xiao_bus_servo_adapter": [
+    "en",
+    "es"
+  ],
+  "/xiao_midi_synthesizer": [
+    "en",
+    "es"
+  ],
+  "/xiao_soil_moisture_sensor": [
+    "en",
+    "es"
+  ],
+  "/xiao_w5500_ethernet_adapter": [
+    "en",
+    "es"
   ],
   "/Driver_for_Seeeduino": [
     "en",
@@ -6361,1275 +6535,1556 @@
   ],
   "/iot_botton_connect_to_esphome": [
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/Accessories/Industrial-Grade-Optical-Rain-Gauge-RG-15": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/Accessories/Optical-Rain-Gauge-RG-9": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/develop_an_industrial_lorawan_sensor": [
     "en",
+    "es",
     "ja"
   ],
   "/home_assistant_with_sensecap_lorawan_sensors": [
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_introduction": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/select_lorawan_network": [
     "en",
+    "es",
     "ja"
   ],
   "/get_started_with_lorawan_tracker": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/open_source_lorawan": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/t1000_e_arduino_examples": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/tracker_at_command": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Data_Logger/Data_Logger": [
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Data_Logger/SenseCAP-Sensor-Hub-Data-Logger": [
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_12V_RS485_Sensor_for_S2100_Data_Logger": [
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_Analog_Sensor_for_S2100_Data_Logger": [
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_Counter&GPIO_Sensor_for_S2100_Data_Logger": [
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Decoder": [
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_Application_Home_Assistant": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_LoRa": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_Application_LoRaWAN": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_Application_Matter": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_Application_ChatGPT": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_Single_Channel_Gateway": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/sensecap_indicator_project": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_ESP32_BLE": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_ESP32_Button": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_ESP32_4_inch_Touch_Screen": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_ESP32_LoRa": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_ESP32_Wi-Fi": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_RP2040_Buzzer": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_RP2040_CO2": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_RP2040_Grove_ADC": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_RP2040_Grove_IIC": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_RP2040_MicroSD": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_RP2040_tVOC": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_Dive_into_the_Hardware": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_How_to_Create_your_own_UI": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_ESP32_Arduino": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_How_To_Flash_The_Default_Firmware": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_Native_Firmware": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_ChatGPT": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_DALL·E": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Indicator/Set_An_API_Key": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Indicator_OpenAI_X_Overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Data_Logger_Intro": [
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Sensor_Intro": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP-SOLO-CO2-Sensor": [
     "en",
+    "es",
     "ja"
   ],
   "/One-Stop-Model-Training-with-Edge-Impulse": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP-Vision-AI-Get-Started": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Train-Deploy-AI-Model-A1101": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Train-Water-Meter-Digits-Recognition-Model-with-SenseCAP-A1101": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/sensecap_a1102": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/train_ai_with_a1102": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/SenseCAP_LoRaWAN_S210X_Series_Sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_S2107": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/Connect-S210X-Sensor-to-Microsoft-Azure-IoT-Central": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/How-to-Connect-SenseCAP-S210X-to-Helium-Network": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/How-to-Connect-SenseCAP-S210X-to-The-Things-Network": [
     "cn",
     "en",
+    "es",
     "ja"
+  ],
+  "/how_to_connect_sensecap_s210x_to_datacake_via_ttn": [
+    "en",
+    "es"
   ],
   "/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor_Introduction": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Getting_Started_with_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_ONE_weather_sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/ORCH-S4-Weather-Station": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP-One-Series-Meteorological-Sensors": [
     "cn",
     "en",
+    "es",
     "ja"
+  ],
+  "/benchmark_labs_forecast_integration_for_seeed_weather_stations": [
+    "en",
+    "es"
   ],
   "/SenseCAP-ONE-Compact-Weather-Station-Introduction": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Getting_Started_with_SenseCAP_ONE_Compact_Weather_Sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Probe/Industrial-ph-Sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_probes_intro": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Probe/RS485_500cm_Ultrasonic_Sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/RS485_750cm_Ultrasonic_Sensor-1": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/RS485_Air_Temperature_Humidity_and_Barometric_Pressure_Sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Sensor_Probes_Product_Catalogue": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Probe/Soil-Moisture-Temperature-EC-Sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Probe/Soil-Moisture-Temperature-Sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/total_solar_radiation_sensor": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor/SenseCAP/SenseCAP_Probe/Water-Leak-Detector": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Build-LoRaWAN-Sensors-SenseCAP-XIAO-Controller-Data-Logger": [
     "en",
+    "es",
     "ja"
   ],
   "/list_of_supported_grove_n_adding_more": [
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_Builder_build_LoRaWAN_Sensors": [
     "en",
+    "es",
     "ja"
   ],
   "/get_started_with_t1000_p": [
     "en",
+    "es",
     "ja"
   ],
   "/faq_for_SenseCAP_T1000": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/fm_release_for_SenseCAP_T1000": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_Tracker_AWS": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker_Helium": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_Tracker_Loriot": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker_TTN": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/ttn_mapper_for_SenseCAP_T1000": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_Tracker_Akenza": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker_Datacake_TTS": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker_InfluxDB_TTS": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker_Qubitro_TTS": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker_Wialon": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker_TagoIO_TTS": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/thingsboard_integrated": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker_trackpac": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker_Ubidots_Helium": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker_Ubidots_TTS": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/location_lambda_code": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/sensecap_t1000_tracker": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_T1000_tracker/Introduction": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/bluetooth_beacon_for_SenseCAP_Traker": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Get_Started_with_SenseCAP_T1000_tracker": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/IPS_For_SenseCAP_T1000_Traker": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/T1000_payload": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Tracker_WiFi_Geolocation": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/training_model_for_watcher": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/use_case": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/device_network_setup": [
     "en",
+    "es",
     "ja"
   ],
   "/flash_watcher_agent_firmware": [
     "en",
+    "es",
     "ja"
   ],
   "/watcher_web_control_panel": [
     "en",
+    "es",
     "ja"
   ],
   "/watcher_software_framework": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_function_module_development_guide": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/build_watcher_development_environment": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_ui_integration_guide": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_to_node_red": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_node_red_to_ifttt": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_node_red_to_kafka": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_node_red_to_open_interpreter": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_node_red_to_p5js": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_node_red_to_telegram": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_node_red_to_twilio": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_node_red_to_discord": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_node_red_to_mongodb": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_node_red_to_whatsapp": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/integrate_watcher_to_ha": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/uart_output": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_with_watcher_task": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_hardware_overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_operation_guideline": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_with_watcher": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_price": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/sensecap_app_introduction": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_local_deploy": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher_software_service_framework": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/watcher": [
     "cn",
     "en",
+    "es",
     "ja"
+  ],
+  "/Sensor/SenseCAP/wiki/": [
+    "en",
+    "es"
   ],
   "/wio_tracker_for_sidewalk": [
     "en",
+    "es",
     "ja"
   ],
   "/flash_to_wio_tracker": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Link": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Link_Bootcamp_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Link_Deluxe_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Link_Deluxe_Plus_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Link_Environment_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Link_Event_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Link_Starter_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/Grove-Shield-for-Wio-Lite": [
     "en",
+    "es",
     "ja"
   ],
   "/Grove_Base_Shield_for_NodeMCU_V1.0": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Lite-AI-Getting-Started": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Lite-MG126": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Lite-W600": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Lite_RISC_V_GD32VF103_with_ESP8266": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Node": [
     "en",
+    "es",
     "ja"
   ],
   "/Use_MQTT_to_remotely_light_up_LED_lights": [
     "en",
+    "es",
     "ja"
   ],
   "/Use_Socket_to_connect_to_the_forum": [
     "en",
+    "es",
     "ja"
   ],
   "/Wireless-desktop-atmosphere-lamp": [
     "en",
+    "es",
     "ja"
   ],
   "/Wireless-Fall-Detection-Device": [
     "en",
+    "es",
     "ja"
   ],
   "/LAN_Communications": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-RP2040-with-Arduino-WIFI": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_RP2040_mini_Dev_Board-Onboard_Wifi": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_RP2040_Module_Build-in_Wireless_2.4G": [
     "en",
+    "es",
     "ja"
   ],
   "/Grove_Starter_Kit_for_Wio_LTE": [
     "en",
+    "es",
     "ja"
   ],
   "/LTE_Cat_1_Pi_HAT": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Extension-RTC": [
     "en",
+    "es",
     "ja"
   ],
   "/wio_gps_board": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio_LTE_Cat.1": [
     "en",
+    "es",
     "ja"
+  ],
+  "/Wio_LTE_Cat_M1_NB-IoT_Tracker": [
+    "en",
+    "es"
   ],
   "/Wio_Tracker": [
     "en",
+    "es",
     "ja"
   ],
   "/Connect-Wio-Terminal-to-Google-Cloud-IoT-Core": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/CyberDeck_Wio-Terminal": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Get-Started-with-Wio-Terminal-and-Wappsto-IoT": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Azure-IOT": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/AIoTs_GPS_state_tester": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML-EI-1": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML-EI-2": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML-EI-3": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML-EI-4": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML-EI-5": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML-EI-6": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Gesture-Recognition": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML-TFLM-1": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML-TFLM-2": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML-TFLM-3": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/ArduPy-LCD": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/ArduPy-Libraries": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/ArduPy": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Audio-GUI": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Audio-Overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Audio-Play-Record": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Battery-Chassis": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Chassis-Battery_650mAh": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Ethernet": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Terminal_LoRaWan_Chassis_with_Antenna-built-in_LoRa-E5_and_GNSS_EU868_US915": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/BLE-ibeacon-using-Wio-terminal": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-terminal-BLE-introduction": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Bluetooth-Overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Web-Bluetooth": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Buttons": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Buzzer": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Switch": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-IMU-Basic": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-IMU-Overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-IMU-Tapping": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Infrared-Emitter": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Grove": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-IO-Analog": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-IO-Digital": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-IO-I2C": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-IO-Overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-IO-SPI": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-LCD-Anti-aliased-Fonts": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-LCD-APIs": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-LCD-Basic": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-LCD-Fonts": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-LCD-Graphics": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-LCD-Histogram": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-LCD-Linecharts": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-LCD-Loading-Image": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-LCD-Overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-LVGL": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Light": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Mic": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-RTC": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-FS-Overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-FS-ReadWrite": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Advanced-Wi-Fi": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Network-Overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Wi-Fi": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Introduction_to_Artificial_Intelligence_for_Makers": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML-Kit-Course": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-TinyML": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Software-FreeRTOS": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Azure_IoT_CC": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Barometric-Pressure-sensor-using-the-Wio-terminal": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Blynk-wireless-OTA-functionality-to-Wio-Terminal": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Blynk": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Edge-Impulse-Tuner": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Getting_started_wizard": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-8720-dev": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Displaying-Gyro": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Displaying-Photos": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Firmware": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-HMI": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Interactive-Face": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Reading-COVID19": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Reading-Github": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Sound-Meter": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Storting-Analog-Data": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Thermal-Camera": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-DAPLink": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-HMI-Usermode-SDK": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Reading-Raspberry-Pi": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-USBCLIENT-Keyboard": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-USBCLIENT-MIDI": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-USBCLIENT-Mouse": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-USBCLIENT-Overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-USBH-Keyboard": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-USBH-Mouse": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-USBH-Overview": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-USBH-Xbox": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-CircuitPython": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Getting-Started": [
     "en",
+    "es",
     "ja"
   ],
   "/wio_terminal_faq": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio_Terminal_Intro": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Sensor_Network": [
     "en",
+    "es",
     "ja"
   ],
   "/Solutions": [
@@ -8577,6 +9032,10 @@
     "ja"
   ],
   "/raspberry_pi_4g_lte_hat_mbim": [
+    "es",
+    "ja"
+  ],
+  "/xiao_075inch_epaper_panel": [
     "es",
     "ja"
   ]
