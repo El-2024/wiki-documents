@@ -53,6 +53,14 @@ For details, please click [here](/upgrade_software_packages_for_jetson)
 
 For details, please click [here](/differences_of_l4t_between_seeed_and_nvidia)
 
+#### Q12: How to enable the SPI interface on Jetson-nano?
+For details, please click [here](/enable_spi_interface_on_jetsonnano)
+
+#### Q13: Why is it that sometimes after completing the flashing process on Jetson, the system fails to boot from the SSD?
+This issue currently occurs when flashing JetPack 5, and NVIDIA has officially documented it. For the solution, please click [here.](/issue_of_jetpack5_failing_to_boot_from_certain_ssd)
+
+#### Q14:How to Build the Source Code Project for Seeed's Jetson BSP?
+For details, please click [here](/how_to_build_the_source_code_project_for_seeed_jetson_bsp)
 
 # Tech support
 
