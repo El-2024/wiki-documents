@@ -195,13 +195,13 @@ openssl req -new -key privateKey.pem -out cert.csr
 4.Run the following to activate the certificate:
 
 ```cpp
-aws iot create-certificate-from-csr --certificate-signing-request file://cert.csr --set-as-active &gt; certOutput.txt
+aws iot create-certificate-from-csr --certificate-signing-request file://cert.csr --set-as-active > certOutput.txt
 ```
 
 5.Run the following to save the certificate into a cert.pem file:
 
 ```cpp
-aws iot describe-certificate --certificate-id &lt;certificate ID&gt; --output text --query certificateDescription.certificatePem  &gt; cert.pem
+aws iot describe-certificate --certificate-id <certificate ID> --output text --query certificateDescription.certificatePem  > cert.pem
 ```
 
 ![](https://files.seeedstudio.com/wiki/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/AWS_Edison_starter_kit_get_aws_cli4.png)
@@ -245,7 +245,7 @@ Notice:The policy name can be anything.
 9.Then attach the policy to the certificate with:
 
 ```cpp
-aws iot attach-principal-policy --principal &lt;principal arn&gt; --policy-name "PubSubToAnyTopic"
+aws iot attach-principal-policy --principal <principal arn> --policy-name "PubSubToAnyTopic"
 ```
 
 NOTE: replace &lt;principal arn&gt; with the  value stored in "certifcateArn" in the outputCert.txt file.
@@ -262,7 +262,7 @@ NOTE: replace &lt;principal arn&gt; with the  value stored in "certifcateArn" in
 * First get the root CA pem file:
 
 ```cpp
-curl https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem &gt; rootCA.pem
+curl https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem > rootCA.pem
 ```
 
 ![](https://files.seeedstudio.com/wiki/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/AWS_Edison_starter_kit_get_aws_cli10.png)
@@ -273,7 +273,7 @@ curl https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-C
 
 ```cpp
 cd ~
-mkdir aws_nodejs &amp;&amp; cd aws_nodejs
+mkdir aws_nodejs && cd aws_nodejs
 npm init
 npm install --save aws-iot-device-sdk
 touch main.js

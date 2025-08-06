@@ -433,7 +433,7 @@ Example:
 Find out which key gets pressed. Return the pin number of the key pressed. And return "-1" if no keys is pressed.
 
 ```cpp
-if((flag_scan_again)&amp;&amp;(KEY_MENU == ticktockshield.scanKey()))
+if((flag_scan_again)&&(KEY_MENU == ticktockshield.scanKey()))
       {
         ticktockshield.writeToAdjustArea();
         ticktockshield.processKey();

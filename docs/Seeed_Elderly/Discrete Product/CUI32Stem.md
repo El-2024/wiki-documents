@@ -180,11 +180,11 @@ Notice that when we change the variable, the LED changes state!
 **2 of 5: Blink an LED with a Timer ISR**
 Now that our LED is blinking, let's graduate to using a timer ISR (Interrupt Service Routine) rather than a programmed loop -- this way we can do other things with the "main loop" in the future. We'll keep line 10 of the program, but wipe out all the lines that followed, list the program, and start from there:
 ```
- source-c"><pre class="de1"><span class="sy0">&gt;</span> delete <span class="nu0">20</span><span class="sy0">-</span>
-<span class="sy0">&gt;</span> list
+ source-c"><pre class="de1"><span class="sy0">></span> delete <span class="nu0">20</span><span class="sy0">-</span>
+<span class="sy0">></span> list
 <span class="nu0">10</span> dim led as pin rd0 <span class="kw1">for</span> digital output
 end
-<span class="sy0">&gt;</span> <span class="n
+<span class="sy0">></span> <span class="n
 ```
 
 Line 10 still dimensions (declares) a variable named "led" that is bound to pin rd0 of the CUI32Stem, which is configured for digital output; line 20 configures timer #1 to pop every 500ms; line 30 enables the timer interrupt and says that every time the timer pops, we should run the statement "let led = !led" (if we had more work to do we could have called a subroutine); finally line 40 just puts the main loop to sleep -- we just service interrupts from then on!

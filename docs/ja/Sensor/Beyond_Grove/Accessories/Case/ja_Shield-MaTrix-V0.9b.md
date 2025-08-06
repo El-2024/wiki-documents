@@ -228,8 +228,8 @@ iBoardRF24 radio(41,40,39,38,37,19);
 `
 
 ``` 
-#include &lt;SPI.h&gt;
-#include &lt;MaTrix.h&gt;	// MaTrix ライブラリの接続
+#include <SPI.h>
+#include <MaTrix.h>	// MaTrix ライブラリの接続
 
 MaTrix mymatrix;       // mymatrix オブジェクトの作成
 ```

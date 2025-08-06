@@ -1,5 +1,5 @@
 ---
-description: This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework. 
+description: This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the latest version of Lerobot framework. 
 title: How to use the SO10xArm robotic arm in the latest version of Lerobot
 keywords:
 - Lerobot
@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp
 slug: /lerobot_so100m_new
 last_update:
-  date: 7/18/2025
+  date: 7/26/2025
   author: LiShanghang
 ---
 
@@ -153,7 +153,7 @@ If you purchase the Arm Kit version, both power supplies are 5V. If you purchase
 - Torch 2.6  
 
 **For Jetson Orin:**
-- Jetson JetPack 6.2  
+- Jetson JetPack 6.0+  
 - Python 3.10  
 - Torch 2.6  
 
@@ -309,15 +309,6 @@ If you are using a Jetson device, install Pytorch and Torchvision according to [
 
 ## Configure the motors
 
-:::danger  
-Due to official code and servo manufacturer firmware updates, users before June 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
-:::
-
-:::note
-If the servo cannot be recognized again after a failed firmware update, you can connect another detectable servo directly to the host computer, then perform a motor scan and firmware online detection. Keep the current window open, immediately disconnect the current servo, and connect the unrecognized servo instead. Click ​​"Online Upgrade"​​ within 1 second. If it fails, you can retry multiple times.
-:::
-
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -366,7 +357,9 @@ If you buy the Arm Kit version (ST-3215-C001), use a 5V power supply. If you buy
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F1.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F2.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F3.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F4.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F5.jpg) |![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F6.jpg) |
 
-You can also refer to our SO-ARM100 servo calibration video, but please make sure that the servo joint IDs and gear ratios strictly correspond to those of the SO-ARM101.
+:::tip
+Again, please make sure that the servo joint IDs and gear ratios strictly correspond to those of the SO-ARM101.
+:::
 
 ***The following are the code calibration steps, please calibrate with the reference wiring servo in the picture above***
 
@@ -453,7 +446,7 @@ python -m lerobot.setup_motors \
 ```    
 
 <div class="video-container">
-<iframe width="900" height="600" src="//player.bilibili.com/player.html?isOutside=true&aid=114889737702887&bvid=BV1YVgzzVECY&cid=31182423503&p=1" title="bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/hbW6eFYkHTg?si=jKdpTyI8wRC-iHxO" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 </TabItem>
@@ -465,8 +458,6 @@ python -m lerobot.setup_motors \
 
 :::tip
 - The dual-arm assembly process of SO-ARM101 is the same as that of SO-ARM100. The only differences are the addition of cable clips on SO-ARM101 and the different gear ratios of the joint servos on the Leader Arm. So both SO100 and SO101 can be installed by referring to the following content
-- After calibrating the servos, do not rotate them before tightening the screws. Make sure the orientation of the 3D printed parts matches the reference direction in the images and that the motors are in their middle positions.
-
 - Before assembly, please check your motor model and reduction ratio again. If you have purchased SO100, you can ignore this step. If you have purchased SO101, please check the following table to distinguish F1 to F6 and L1 to L6. 
 :::
 
@@ -520,26 +511,25 @@ The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO
 If you purchased the **SO101 Arm Kit Standard Edition**, all power supplies are 5V. If you purchased the **SO101 Arm Kit Pro Edition**, the Leader Arm should be calibrated and operated at every step using a 5V power supply, while the Follower Arm should be calibrated and operated at every step using a 12V power supply.
 :::
 
-Next, you need to connect the power supply and data cable to your SO-10x robot for calibration to ensure that the leader and follower arms have the same position values when they are in the same physical position. This calibration is essential because it allows a neural network trained on one SO-10x robot to work on another. If you need to recalibrate the robotic arm, delete the `~/lerobot/.cache/huggingface/calibration/so101` folder.
+Next, you need to connect the power supply and data cable to your SO-10x robot for calibration to ensure that the leader and follower arms have the same position values when they are in the same physical position. This calibration is essential because it allows a neural network trained on one SO-10x robot to work on another. If you need to recalibrate the robotic arm, delete the files under `~/.cache/huggingface/lerobot/calibration/robots` or `~/.cache/huggingface/lerobot/calibration/teleoperators` and recalibrate the robotic arm. Otherwise, an error prompt will appear. The calibration information for the robotic arm will be stored in the JSON files under this directory.
 
 **Manual calibration of follower arm**
 
 Please connect the interfaces of the 6 robot servos via a 3-pin cable and connect the chassis servo to the servo drive plate, then run the following command or API example to calibrate the robot arm:
 
 
-
-**Interface permissions are given first**
+***Interface permissions are given first***
 
 ```bash
 sudo chmod 666 /dev/ttyACM*
 ```
 
-**Manual calibration of Follower arm**
+***Then calibrate the follower arm***
 
 ```python
 python -m lerobot.calibrate \
     --robot.type=so101_follower \
-    --robot.port=/dev/tty.usbmodem58760431551 \ # <- The port of your robot
+    --robot.port=/dev/tty.usbmodem58760431551 \# <- The port of your robot
     --robot.id=my_awesome_follower_arm # <- Give the robot a unique name
 ```
 
@@ -552,12 +542,12 @@ Do the same steps to calibrate the leader arm, run the following command or API 
 ```python
 python -m lerobot.calibrate \
     --teleop.type=so101_leader \
-    --teleop.port=/dev/tty.usbmodem58760431551 \ # <- The port of your robot
+    --teleop.port=/dev/tty.usbmodem58760431551 \# <- The port of your robot
     --teleop.id=my_awesome_leader_arm # <- Give the robot a unique name
 ```
 
 <div class="video-container">
-<iframe width="900" height="600" src="//player.bilibili.com/player.html?isOutside=true&aid=114889704081608&bvid=BV15ggzzLE9t&cid=31182227140&p=1" title="bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/22n6f5xH9Dk?si=2QTzn1CDbsSv6Y_H" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 
@@ -628,18 +618,15 @@ When using Intel RealSense cameras in , you could get this error: , this can be 
 :::
 
 
-
-
-
 Then you will be able to display the cameras on your computer while you are teleoperating by running the following code. This is useful to prepare your setup before recording your first dataset.
 
 ```bash
 python -m lerobot.teleoperate \
-    --robot.type=koch_follower \
+    --robot.type=so101_follower \
     --robot.port=/dev/tty.usbmodem58760431541 \
     --robot.id=my_awesome_follower_arm \
     --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}}" \
-    --teleop.type=koch_leader \
+    --teleop.type=so101_leader \
     --teleop.port=/dev/tty.usbmodem58760431551 \
     --teleop.id=my_awesome_leader_arm \
     --display_data=true
@@ -650,11 +637,11 @@ If you have more cameras, you can change `--robot.cameras` to add cameras. You s
 For example, you want to add a side camera:
 ```bash
 python -m lerobot.teleoperate \
-    --robot.type=koch_follower \
+    --robot.type=so101_follower \
     --robot.port=/dev/tty.usbmodem58760431541 \
     --robot.id=my_awesome_follower_arm \
-    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}, side: {type: opencv, index_or_path: 1, width: 1920, height: 1080, fps: 30}}" \ 
-    --teleop.type=koch_leader \
+    --robot.cameras="{ front: {type: opencv, index_or_path: 0, width: 1920, height: 1080, fps: 30}, side: {type: opencv, index_or_path: 1, width: 1920, height: 1080, fps: 30}}" \
+    --teleop.type=so101_leader \
     --teleop.port=/dev/tty.usbmodem58760431551 \
     --teleop.id=my_awesome_leader_arm \
     --display_data=true
@@ -665,6 +652,10 @@ python -m lerobot.teleoperate \
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/EUcXlLlOjGE?si=6ncQ7o5ZFLR4PGTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+
+
+
 
 ## Record the dataset
 :::tip
@@ -702,9 +693,9 @@ python -m lerobot.record \
     --dataset.repo_id=${HF_USER}/record-test \
     --dataset.num_episodes=5 \
     --dataset.single_task="Grab the black cube" \
-    --dataset.push_to_hub=true \     
-    --dataset.episode_time_s=30 \    
-    --dataset.reset_time_s=30 \
+    --dataset.push_to_hub=true \# You can choose false if you want to save the data locally
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 
 ```
 
 You will see a lot of lines appearing like this one:
@@ -714,7 +705,6 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 
 **Parameter Explanations**
-- wormup-time-s: It refers to the initialization time.
 - episode-time-s: It represents the time for collecting data each time.
 - reset-time-s: It is the preparation time between each data collection.
 - num-episodes: It indicates how many groups of data are expected to be collected.
@@ -809,10 +799,9 @@ python -m lerobot.scripts.train \
   --job_name=act_so101_test \
   --policy.device=cuda \
   --wandb.enable=true \
-  --policy.repo_id=${HF_USER}/my_policy
 ```
 
-**If you want to train on a local dataset, make sure the `repo_id` matches the one used during data collection.**
+**If you want to train on a local dataset, make sure the `repo_id` matches the one used during data collection and add `--policy.push_to_hub=False`.**
 
 
 Let's explain it:
@@ -822,18 +811,35 @@ Let's explain it:
 3. We provided `policy.device=cuda` since we are training on a Nvidia GPU, but you could use `policy.device=mps` to train on Apple silicon.
 5. We provided `wandb.enable=true` to use [Weights and Biases](https://docs.wandb.ai/quickstart) for visualizing training plots. This is optional but if you use it, make sure you are logged in by running `wandb login`.
 
+<details>
+<summary>stack() error</summary>
+
+If you encounter the following error:
+
+<div align="center">
+    <img width={1000} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/stack_bug.png" />
+</div>
+
+Try running the following command to resolve it:
+
+```bash
+pip install datasets == 2.19
+```
+
+</details>
+
 Training should take several hours. You will find checkpoints in `outputs/train/act_so100_test/checkpoints`.
 
-To resume training from a checkpoint, below is an example command to resume from last checkpoint of the act_so101_test policy:
+To resume training from a checkpoint, below is an example command to resume from last checkpoint of the `act_so101_test` policy:
 ```bash
 python -m lerobot.scripts.train \
   --config_path=outputs/train/act_so101_test/checkpoints/last/pretrained_model/train_config.json \
   --resume=true
 ```
 
-If you do not want to push your model to the hub after training use `--policy.push_to_hub=false`.
-
 **Upload policy checkpoints**
+
 Once training is done, upload the latest checkpoint with:
 
 ```bash
@@ -841,6 +847,13 @@ huggingface-cli upload ${HF_USER}/act_so101_test \
   outputs/train/act_so101_test/checkpoints/last/pretrained_model
 ```
 
+You can also upload intermediate checkpoints with:
+
+```bash
+CKPT=010000
+huggingface-cli upload ${HF_USER}/act_so101_test${CKPT} \
+  outputs/train/act_so101_test/checkpoints/${CKPT}/pretrained_model
+```
 
 ## Evaluate your policy
 :::tip
@@ -858,10 +871,6 @@ python -m lerobot.record  \
   --display_data=false \
   --dataset.repo_id=${HF_USER}/eval_so100 \
   --dataset.single_task="Put lego brick into the transparent box" \
-  # <- Teleop optional if you want to teleoperate in between episodes \
-  # --teleop.type=so100_leader \
-  # --teleop.port=/dev/ttyACM0 \
-  # --teleop.id=my_awesome_leader_arm \
   --policy.path=${HF_USER}/my_policy
 ```
 
@@ -883,7 +892,7 @@ As you can see, it's almost the same command as previously used to record your t
   ConnectionError: Read failed due to comunication eror on port /dev/ttyACM0 for group key Present_Position_Shoulder_pan_Shoulder_lift_elbow_flex_wrist_flex_wrist_roll_griper: [TxRxResult] There is no status packet!
   ```
 
-- If you have repaired or replaced any parts of the robotic arm, please completely delete the `~/lerobot/.cache/huggingface/calibration/so100` folder and recalibrate the robotic arm.
+- If you have repaired or replaced any robotic arm parts, please completely delete the files under `~/.cache/huggingface/lerobot/calibration/robots` or `~/.cache/huggingface/lerobot/calibration/teleoperators` and recalibrate the robotic arm. Otherwise, an error prompt will appear. The calibration information for the robotic arm will be stored in the JSON files under this directory.
 
 - If the remote control functions normally but the remote control with Camera fails to display the image interface, you can find [here](https://github.com/huggingface/lerobot/pull/757/files)
 
@@ -923,7 +932,7 @@ If you encounter software issues or environment dependency problems that cannot 
 
 ## Citation
 
-[中文文档](https://wiki.seeedstudio.com/cn/lerobot_so100m/)
+[中文文档](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/)
 
 TheRobotStudio Project: [SO-ARM10x](https://github.com/TheRobotStudio/SO-ARM100)
 

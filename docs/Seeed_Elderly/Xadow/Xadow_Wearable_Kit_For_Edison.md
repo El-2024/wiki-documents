@@ -199,11 +199,11 @@ In this example, we use an NFC module and a QTouch module to control a RGB LED s
 ** Code Detail **
 
 ```
-#include &lt;Wire.h&gt;
-#include &lt;PN532_I2C.h&gt;
-#include &lt;PN532.h&gt;
-#include &lt;NfcAdapter.h&gt;
-#include &lt;TimerOne.h&gt;
+#include <Wire.h>
+#include <PN532_I2C.h>
+#include <PN532.h>
+#include <NfcAdapter.h>
+#include <TimerOne.h>
 #include "Seeed_QTouch.h"
 #include "Seeed_ws2812.h"
 
@@ -263,10 +263,10 @@ Click File&gt;Examples&gt;GrowingThermometer
 **CODE DETAIL**
 
 ```
-#include &lt;Wire.h&gt;
-#include &lt;SeeedOLED.h&gt;
+#include <Wire.h>
+#include <SeeedOLED.h>
 #include "Barometer.h"
-#include &lt;Seeed_ws2812.h&gt;
+#include <Seeed_ws2812.h>
 
 #define LEDN 5
 #define SIG_PIN 12
@@ -352,14 +352,14 @@ This example shows how to make a pedometer that counts a person’s steps. It us
 **Code Detail **
 
 ```
-#include &lt;Wire.h&gt;
-#include &lt;SeeedOLED.h&gt;
-#include &lt;Wire.h&gt;
-#include &lt;ADXL345.h&gt;
+#include <Wire.h>
+#include <SeeedOLED.h>
+#include <Wire.h>
+#include <ADXL345.h>
 #include "pedometer.h"
-#include &lt;SPI.h&gt;
-#include &lt;WiFi.h&gt;
-#include &lt;TimerOne.h&gt;
+#include <SPI.h>
+#include <WiFi.h>
+#include <TimerOne.h>
 
 #define MINUTES_TO_ALARM  (60) //If you don't walk enough in MINUTES_TO_ALARM minutes, the buzzer beeps 0.5s.
 unsigned long curtime = 0;
@@ -398,7 +398,7 @@ void setup() {
     curtime = millis();              // get the current time
     cursteps = pedometer.stepCount;  // get the current steps
 
-    Timer1.initialize(200000); // set a timer of length 100000 microseconds (or 0.1 sec - or 10Hz =&gt; the led will blink 5 times, 5 cycles of on-and-off, per second)
+    Timer1.initialize(200000); // set a timer of length 100000 microseconds (or 0.1 sec - or 10Hz => the led will blink 5 times, 5 cycles of on-and-off, per second)
     Timer1.attachInterrupt( TimerISR ); // attach the service routine here
 }
 
@@ -415,7 +415,7 @@ void loop() {
     }
 
     //If you don't walk enough in MINUTES_TO_ALARM minutes, the buzzer beeps 0.5s.
-    if((millis()-curtime &gt; MINUTES_TO_ALARM * 60000) &amp;&amp; (pedometer.stepCount - cursteps &lt; MINUTES_TO_ALARM*60/2)){
+    if((millis()-curtime > MINUTES_TO_ALARM * 60000) && (pedometer.stepCount - cursteps < MINUTES_TO_ALARM*60/2)){
         buzzer_on(500);
         curtime = millis();
         cursteps = pedometer.stepCount;

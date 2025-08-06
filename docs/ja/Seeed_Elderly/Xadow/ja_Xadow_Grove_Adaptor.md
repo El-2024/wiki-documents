@@ -49,8 +49,8 @@ Xadow Grove アダプタは、Grove インターフェースを Xadow インタ�
 **テストコードは以下の通りです：**
 ```
 <pre>
-#include &lt;Wire.h&gt;
-#include &lt;Streaming.h&gt;
+#include <Wire.h>
+#include <Streaming.h>
 
 #define ADDR_ADC121             0x58
 
@@ -84,9 +84,9 @@ void read_adc()     //unsigned int *data
 
     Wire.requestFrom(ADDR_ADC121, 2);           // デバイスから2バイト要求
     delay(1);
-    if(Wire.available()&lt;=2)
+    if(Wire.available()<=2)
     {
-        getData = (Wire.read()&amp;0x0f)&lt;&lt;8;
+        getData = (Wire.read()&0x0f)<<8;
         getData |= Wire.read();
     }
     Serial.print("getData:");
@@ -135,8 +135,8 @@ Grove - デジタル光センサーを例に、その使用方法を学びまし
 *
 * By:https://www.seeedstudio.com
 */
-#include &lt;Wire.h&gt;
-#include &lt;Digital_Light_TSL2561.h&gt;
+#include <Wire.h>
+#include <Digital_Light_TSL2561.h>
 void setup()
 {
   Wire.begin();

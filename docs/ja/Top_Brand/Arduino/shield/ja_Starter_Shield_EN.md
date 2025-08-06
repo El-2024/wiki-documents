@@ -475,7 +475,7 @@ if(isFirstLoad())//ファームウェアを初めてロードする場合
 例:
 
 ```cpp
-if((flag_scan_again)&amp;&amp;(KEY_MENU == ticktockshield.scanKey()))
+if((flag_scan_again)&&(KEY_MENU == ticktockshield.scanKey()))
       {
         ticktockshield.writeToAdjustArea();
         ticktockshield.processKey();

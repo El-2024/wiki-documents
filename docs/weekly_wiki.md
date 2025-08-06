@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 07/21/2025
+  date: 08/04/2025
   author: Frank
 ---
 
@@ -17,49 +17,85 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is July 21st, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is August 4th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [reSpeaker XVF3800 USB 4 Microphone Array with XIAO ESP32S3](http://localhost:3000/respeaker_xvf3800_xiao_getting_started/)
+### [Voice-Controlled Smart Home with ReSpeaker XVF3800 and Home Assistant](https://wiki.seeedstudio.com/respeaker_xvf3800_xiao_home_assistant/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/mute.jpg" alt="pir" width={800} height="auto" /></p>
+<div class="video-container">
+  <iframe width="800" height="400" src="https://www.youtube.com/embed/iqlsNezHYuE" title="ReSpeaker XVF3800 with XIAO ESP32S3 Home Assistant" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
-The ReSpeaker XVF3800 USB 4-Mic Array is a professional circular 4-microphone array based on the XMOS XVF3800. It features AEC, AGC, DoA, beamforming, VAD, noise suppression, de-reverberation, and 360° voice capture (up to 5 meters). It also supports dual operation modes, making it ideal for advanced voice applications. When combined with the Xiao ESP32S3, controlling the ReSpeaker XVF3800 USB becomes even more powerful, unlocking endless possibilities.
+The Gallery function in SenseCraft HMI allows you to transform your screen-based devices into beautiful digital photo frames. You can upload local images or import them from URLs, then display them with customizable transition intervals and visual effects. This feature is perfect for creating ambient displays, information screens, or decorative photo albums using your Seeed Studio display devices. This tutorial will guide you through using the Gallery function in SenseCraft HMI, covering image upload methods, display settings, and important considerations for optimal performance.
 
-We also provide several practical guides to help you explore the capabilities of the reSpeaker XVF3800 USB 4 Microphone Array with XIAO ESP32S3:
+### [reSpeaker XVF3800 USB Mic Array with XIAO ESP32S3 MQTT Audio Streaming](https://wiki.seeedstudio.com/respeaker_xvf3800_xiao_mqtt_audio_stream/)
 
-* [I2S Test with XIAO ESP32S3](https://wiki.seeedstudio.com/respeaker_xvf3800_xiao_i2s/)
-* [RGB Control with XIAO ESP32S3](https://wiki.seeedstudio.com/respeaker_xvf3800_xiao_rgb/)
-* [Audio Playback and Volume Control via I2C](https://wiki.seeedstudio.com/respeaker_xvf3800_i2c_audio_playback/)
-* [Record and Playback Audio Using I2S](https://wiki.seeedstudio.com/respeaker_xvf3800_i2s_record_playback/)
-* [Control GPIO via XIAO ESP32S3](https://wiki.seeedstudio.com/respeaker_xvf3800_gpio_control/)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/front-xiao.jpg" alt="pir" width={800} height="auto" /></p>
 
-These tutorials cover various features including I2S audio input/output, I2C control, RGB lighting, and GPIO handling, providing a complete understanding of the XVF3800's functionality in real-world scenarios.
+This project demonstrates how to stream  audio captured from the **ReSpeaker XVF3800** microphone array embedded a **XIAO ESP32S3** board and transmit it to an **MQTT broker** as a .wav file. The audio is captured via **I2S**, encoded in **WAV** format, and published over MQTT.
 
-### [reCamera connects to XIAO via HTTP](https://wiki.seeedstudio.com/recamera_connects_to_xiao_via_http/)
+### [Simulate SoArm101 by LeIsaac](https://wiki.seeedstudio.com/simulate_soarm101_by_leisaac/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp" alt="pir" width={800} height="auto" /></p>
+<div class="video-container">
+<iframe width="800" height="400" src="https://www.youtube.com/embed/GRzFK7o3lOQ" title="Simulate SoArm101 by LeIsaac (3)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
-This document demonstrates how to enable communication between the reCamera and XIAO via HTTP, transmitting data to XIAO so that you can integrate the reCamera into your own projects.
+This wiki will follow the document of leisaac, show how to teleoperate SoArm101 robot arm in IsaacLab by leisaac. Additionally, we will demonstrate the deployment of the fine-tuned Nvidia Isaac GR00T N1.5 model within the Isaac Lab simulation environment, using data collected from Isaac Lab.
 
-### [TRMNL 7.5" (OG) DIY Kit](https://wiki.seeedstudio.com/trmnl_7inch5_diy_kit_main_page/)
+### [SenseCraft HMI Overview](https://wiki.seeedstudio.com/sensecraft_hmi_overview/)
 
-<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/x/1x1a0521.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/23.png" alt="pir" width={800} height="auto" /></p>
 
-The TRMNL 7.5" (OG) DIY Kit, co-developed by Seeed Studio and TRMNL, is a versatile e-ink development solution. It combines a 7.5-inch 800×480 monochrome e-ink display, XIAO ESP32-S3 PLUS driver board, 2000 mAh rechargeable battery, and 10cm FPC extension cable. Fully compatible with the TRMNL BYOD ecosystem, this kit enables no-code dashboard building with over 375 plugins and 8 layouts, ideal for DIY enthusiasts, smart home interfaces, and creative digital signage.
+[SenseCraft HMI](https://sensecraft.seeed.cc/hmi) is Seeed Studio's powerful cloud-based interface design platform that enables you to create professional visual interfaces for screen-based devices without coding. With an intuitive drag-and-drop editor, pre-built templates, and AI-powered design capabilities, SenseCraft HMI makes it easy to transform your hardware into beautiful information displays, dashboards, digital signage, and control panels.
 
-### [Getting Started with XIAO IR Mate Smart IR Remote (For Home Assistant)](https://wiki.seeedstudio.com/XIAO_IR_Mate_Smart_IR_Remote/)
+### [Using AI Generation in SenseCraft HMI](https://wiki.seeedstudio.com/sensecraft_hmi_ai_generation/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_IR_MATE/6-109990586-XIAO-Smart-IR-Mate.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/65.jpg" alt="pir" width={800} height="auto" /></p>
 
-This device is specially designed for Home Assistant users, aiming to provide a seamless, efficient, and integrated smart infrared remote control solution. Through this guide, you will learn how to set up the device, connect it to your home network, integrate it into Home Assistant, and unlock its full potential, from basic signal learning to advanced smart air conditioner control.
+SenseCraft HMI is Seeed Studio's interactive interface design platform specifically created for screen-based products. One of its most powerful features is the AI Generation function, which allows you to create beautiful display layouts and images by simply describing what you want in natural language. This tutorial will guide you through using the AI Generation capabilities in both the Gallery and Canvas sections of SenseCraft HMI.
+
+### [Using Gallery in SenseCraft HMI](https://wiki.seeedstudio.com/sensecraft_hmi_gallery/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/66.jpg" alt="pir" width={800} height="auto" /></p>
+
+The Gallery function in SenseCraft HMI allows you to transform your screen-based devices into beautiful digital photo frames. You can upload local images or import them from URLs, then display them with customizable transition intervals and visual effects. This feature is perfect for creating ambient displays, information screens, or decorative photo albums using your Seeed Studio display devices. This tutorial will guide you through using the Gallery function in SenseCraft HMI, covering image upload methods, display settings, and important considerations for optimal performance.
+
+### [Using Canvas in SenseCraft HMI](https://wiki.seeedstudio.com/sensecraft_hmi_canvas/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/98.jpg" alt="pir" width={800} height="auto" /></p>
+
+The Canvas function in [SenseCraft HMI](https://sensecraft.seeed.cc/hmi) is the most powerful and flexible feature of the platform, allowing you to create custom interfaces, dashboards, and data visualizations. With Canvas, you can design beautiful displays that combine static elements with dynamic data from various sources, including device sensors, weather information, stock data, and more. This comprehensive guide will walk you through using the Canvas function to create professional displays for your Seeed devices. From basic shapes and text to real-time data widgets and pre-made templates, you'll learn everything you need to build customized interfaces that meet your specific needs.
+
+### [Using RSS in SenseCraft HMI](https://wiki.seeedstudio.com/sensecraft_hmi_rss/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/80.jpg" alt="pir" width={800} height="auto" /></p>
+
+The RSS function in [SenseCraft HMI](https://sensecraft.seeed.cc/hmi) allows you to transform your screen-based devices into real-time information displays. By connecting to RSS feeds from news outlets, blogs, weather services, and more, you can create dynamic displays that automatically update with the latest content. This feature is perfect for creating news tickers, information boards, or personal dashboards that keep you informed without manual intervention. This tutorial will guide you through understanding RSS feeds and using the RSS function in SenseCraft HMI to display content on your device.
+
+### [Using Web Function in SenseCraft HMI](https://wiki.seeedstudio.com/sensecraft_hmi_web/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/88.jpg" alt="pir" width={800} height="auto" /></p>
+
+The Web function in [SenseCraft HMI](https://sensecraft.seeed.cc/hmi) allows you to display web content directly on your screen-based devices. This powerful feature transforms your device into a dedicated web display, capable of showing dashboards, monitoring systems, documentation, or any web content you need. Unlike traditional browsers, SenseCraft HMI's Web function is optimized for embedded displays and IoT devices, making it perfect for creating information kiosks, status monitors, or dedicated web interfaces. This tutorial will guide you through using the Web function in SenseCraft HMI, covering setup, preview, and deployment of web content to your device.
+
+### [YOLOv8 AI Box: Fall, Climb & Track](https://wiki.seeedstudio.com/yolov8_on_ai_box_for_fall_climbing_tracking/)
+
+<div class="video-container">
+<iframe width="800" height="400" src="https://www.youtube.com/embed/H0NaAevLo2k" title="How the Seeed Raspberry Pi AI Box Helps in Abnormal Event Detection" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+This project will guide you on how to use the [reComputed AI Box](https://www.seeedstudio.com/reComputer-AI-R2140-12-p-6431.html) or [reComputed Industry AI Box](https://www.seeedstudio.com/reComputer-AI-Industrial-R2145-12-p-6486.html) to implement fall detection, climbing detection, and tracking detection using the YOLOv8 model.
 
 ## Existing Wiki Updated
 
-### [Get Started with Indicator for Meshtastic](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/)
+<!-- ### [reComputer Jetson Robotics J401 Hardware and Getting Started](https://wiki.seeedstudio.com/recomputer_jetson_robotics_j401_getting_started/)
 
-We have added instructions on how to use the [Keyboard](https://wiki.seeedstudio.com/sensecap_indicator_meshtastic/#keyboard).
+We added [documentation](https://wiki.seeedstudio.com/recomputer_jetson_robotics_j401_getting_started/#can) related to CAN.
+
+### [NVIDIA® Jetson AGX Orin 32GB H01 Kit](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/)
+
+We added [operational example](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/#flash-to-jetson) for flashing JetPack 6.2. -->
 
 ## The Efforts of Contributor
 
@@ -192,5 +228,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.6.30th](/Seeed_Elderly/weekly_wiki/wiki250630)
 - [weekly wiki on 2025.7.07th](/Seeed_Elderly/weekly_wiki/wiki250707)
 - [weekly wiki on 2025.7.14th](/Seeed_Elderly/weekly_wiki/wiki250714)
+- [weekly wiki on 2025.7.21st](/Seeed_Elderly/weekly_wiki/wiki250721)
+- [weekly wiki on 2025.7.28th](/Seeed_Elderly/weekly_wiki/wiki250728)
 
 </details>

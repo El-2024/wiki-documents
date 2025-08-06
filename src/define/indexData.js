@@ -402,7 +402,7 @@ export const exploreList = [
       },
       {
         title: 'Wiki SeeedStudio (Español)',
-        link: '/es/SeeedStudio_XIAO_Series_Introduction',
+        link: '/es/Sensor_Network/',
       },
     ],
   },

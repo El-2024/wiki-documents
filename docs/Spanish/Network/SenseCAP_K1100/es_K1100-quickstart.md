@@ -588,7 +588,7 @@ Aparecerá una unidad llamada **Arduino** en tu PC. Copia el archivo **.uf2** al
 > **R:** Sí, puedes recuperar esa información gracias a la interfaz de consulta abierta. Los códigos están impresos en la etiqueta posterior del Grove - Wio-E5.
 
 ```
-https://sensecap.seeed.cc/makerapi/device/view_device_info?nodeEui=<your_eui>&amp;deviceCode=<your_code>
+https://sensecap.seeed.cc/makerapi/device/view_device_info?nodeEui=<your_eui>&deviceCode=<your_code>
 ```
 
 Por favor, utiliza la información de **EUI** y **Código** marcada en la parte posterior del Grove - Wio-E5 para completar los campos correspondientes en el sitio web indicado anteriormente y así obtener los tres códigos únicos de tu dispositivo abriendo la página en tu navegador.

@@ -116,10 +116,22 @@ Please use **FW 1.5.12** or newer firmware for Seeed compatibility.
 
 1. **Clone the Firmware Repository**
 
-   - Visit the [official TRMNL firmware repository](https://github.com/usetrmnl/firmware) and clone it:
-     ```
-     git clone https://github.com/usetrmnl/firmware.git
-     ```
+  - Visit the [official firmware repository](https://github.com/usetrmnl/trmnl-firmware) and clone it:
+
+    ```
+    git clone https://github.com/usetrmnl/trmnl-firmware.git
+    ```
+
+:::tip
+
+There are times when we update our code and need to submit PR to TRMNL and review it before it is displayed, if you want to be the first to use the latest firmware version, you can also use the TRMNL repository under Seeed Project.
+
+  - Visit the [Seeed repository](https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project) and clone it:
+  
+    ```
+    git clone https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project.git
+    ```
+:::
 
 2. **Install PlatformIO**
 
@@ -173,7 +185,7 @@ To use your XIAO 7.5" ePaper Panel with TRMNL and send playlists, you first need
 ### Open the Captive Portal
 
 - Once connected, open a web browser (such as Chrome or Edge).
-- The device should automatically redirect you to the TRMNL configuration page. If it does not, manually visit [http://192.168.4.1](http://192.168.4.1) in your browser.
+- The device should automatically redirect you to the TRMNL configuration page. If it does not, manually visit [http://4.3.2.1](http://4.3.2.1) in your browser.
 
 ### Enter Your Wi-Fi Credentials
 

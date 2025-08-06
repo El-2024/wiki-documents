@@ -53,12 +53,21 @@ last_update:
 ## 🤗 Lerobot
 
 <div className="card-container">
+    <a href="/lerobot_starai_arm/" className="nav-item">
+      <span className="text">Starai Robotic Arm</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/starai_arm_ros_moveit/" className="nav-item">
+      <span className="text">Starai Robotic Arm Moveit</span>
+      <span className="tag recommended">New</span>
+    </a>
     <a href="/lerobot_so100m_new/" className="nav-item">
       <span className="text">SO100/101 Arm</span>
       <span className="tag stable">Update</span>
     </a>
-    <a href="/lerobot_so100m_isaacsim/" className="nav-item">
+    <a href="/simulate_soarm101_by_leisaac/" className="nav-item">
       <span className="text">SO100 Arm with IsaacSim</span>
+      <span className="tag recommended">New</span>
     </a>
     <a href="/lerobot_lekiwi/" className="nav-item">
       <span className="text">Lekiwi Mobile Base</span>
@@ -66,13 +75,12 @@ last_update:
     </a>
     <a href="/sound_follow_robot/" className="nav-item">
       <span className="text">Lekiwi Sound Follow</span>
-       <span className="tag recommended">New</span>
     </a>
-</div>
     <a href="/control_robotic_arm_via_phospho/" className="nav-item">
       <span className="text">Phospho Lerobot</span>
        <span className="tag recommended">New</span>
     </a>
+</div>
 
 </div>
 </div>
@@ -84,19 +92,15 @@ last_update:
 <div className="card-container">
     <a href="/myactuator_series/" className="nav-item">
       <span className="text">MyActuator X Series</span>
-      <span className="tag recommended">New</span>
     </a>
     <a href="/damiao_series/" className="nav-item">
       <span className="text">Damiao DM43 Series</span>
-      <span className="tag recommended">New</span>
     </a>
     <a href="/feetech_servo/" className="nav-item">
       <span className="text">Feetech STS3215 Servo Motor</span>
-      <span className="tag recommended">New</span>
     </a>
     <a href="/hightorque_series/" className="nav-item">
       <span className="text">HighTorque Series</span>
-      <span className="tag recommended">New</span>
     </a>
 </div>
 
@@ -121,7 +125,6 @@ last_update:
     </a>
     <a href="/slamtec/" className="nav-item">
       <span className="text">Slamtec Series</span>
-       <span className="tag recommended">New</span>
     </a>
 </div>
 
@@ -142,11 +145,9 @@ last_update:
 <div className="card-container">
     <a href="/ReSpeaker_Core_v2.0/" className="nav-item">
       <span className="text">ReSpeaker Core v2.0</span>
-      <span className="tag recommended">New</span>
     </a>
     <a href="/ReSpeaker_Mic_Array_v2.0/" className="nav-item">
       <span className="text">ReSpeaker Mic Array v2.0</span>
-      <span className="tag recommended">New</span>
     </a>
 </div>
 
@@ -155,7 +156,6 @@ last_update:
 <div className="card-container">
     <a href="/hexfellow_y200/" className="nav-item">
       <span className="text">HEXFELLOW Y200</span>
-      <span className="tag recommended">New</span>
     </a>
 </div>
 
@@ -187,12 +187,24 @@ last_update:
     </a>
 </div>
 
+**PX4**  
+<div className="card-container">
+<a href="/install_isaaclab/" className="nav-item">
+  <span className="text">PX4 with Jetson</span>
+  <span className="tag recommended">New</span>
+</a>
+
+</div>
 
 
 **NVIDIA Isaac**  
 <div className="card-container">
 <a href="/install_isaaclab/" className="nav-item">
   <span className="text">Isaac Lab Installation</span>
+</a>
+<a href="/simulate_soarm101_by_leisaac/" className="nav-item">
+  <span className="text">SO100 Arm with IsaacSim</span>
+  <span className="tag recommended">New</span>
 </a>
 </div>
 

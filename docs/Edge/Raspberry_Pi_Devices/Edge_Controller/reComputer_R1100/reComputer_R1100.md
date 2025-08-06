@@ -575,7 +575,7 @@ For details on RTC testing, please refer to [This Section](https://wiki.seeedstu
 The reComputer R1100 features an **independent hardware watchdog circuit** that automatically reboots the system in the event of a crash. This watchdog is implemented through the **RTC** and allows for **flexible feeding times ranging from 1 to 255 seconds**.  
 
 :::note 
-For details on watchdog testing, please refer to [This Section](https://wiki.seeedstudio.com/recomputer_r1100_intro/#watchdog-timer-testing).
+For details on watchdog testing, please refer to [This Section](https://wiki.seeedstudio.com/recomputer_r/#watchdog).
 :::
 
 ## Optional Interfaces and Modules  

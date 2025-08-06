@@ -17,16 +17,15 @@ const excludedPaths = [
 
   // 排除指定文档
   path.join(docsDirectory, 'Cloud_Chain'), // 排除cloud目录，因为最近在整改
-  path.join(docsDirectory, 'Robotics', 'Robot_Actuator', 'HighTorque.md'), //6.24
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Enable_SPI_Interface_on_JetsonNano.md'), //7.02
-  path.join(docsDirectory, 'Sensor', 'reSpeaker_XVF3800_USB_4_Mic_Array', 'respeaker_xvf_3800_gpio.md'), //7.16
-  path.join(docsDirectory, 'Sensor', 'reSpeaker_XVF3800_USB_4_Mic_Array', 'respeaker_xvf_3800_record_playback.md'), //7.16
-  path.join(docsDirectory, 'Sensor', 'reSpeaker_XVF3800_USB_4_Mic_Array', 'respeaker_xvf_3800_rgb_test.md'), //7.16
-  path.join(docsDirectory, 'Sensor', 'reSpeaker_XVF3800_USB_4_Mic_Array', 'respeaker_xvf_3800_volume.md'), //7.16
-  path.join(docsDirectory, 'Sensor', 'reSpeaker_XVF3800_USB_4_Mic_Array', 'respeaker_xvf3800_i2s_test.md'), //7.16
-  path.join(docsDirectory, 'Sensor', 'SeeedStudio_XIAO_Gadgets', 'trmnl_7inch5_diy_kit', 'works_with_Arduino.md'), //7.16
   path.join(docsDirectory, 'Sensor', 'SeeedStudio_XIAO_Gadgets', 'trmnl_7inch5_diy_kit', 'works_with_esphome.md'), //7.21
-
+  path.join(docsDirectory, 'Edge', 'reCamera', 'software_documents', 'Make_the_Cpp_program_auto_start_on_boot.md'), //7.26
+  path.join(docsDirectory, 'Robotics', 'Robot_Kits', 'Lerobot', 'Lerobot_Starai_Arm.md'), //7.26
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Application', 'Developer_Tools', 'Install_torch_on_reComputer.md'), //7.25
+  path.join(docsDirectory, 'Edge', 'reTerminal_E10xx', 'Applications', 'reterminal_e10xx_with_trmnl.md'), //7.21
+  path.join(docsDirectory, 'Edge', 'reTerminal_E10xx', 'reterminal_e10xx_main_page.md'), //7.21
+  path.join(docsDirectory, 'Edge', 'reTerminal_E10xx', 'reterminal_e10xx_factory_firmware.md'), //7.21
+  path.join(docsDirectory, 'Edge', 'reTerminal_E10xx', 'getting_started_with_reterminal_e1002.md'), //7.21
+  path.join(docsDirectory, 'Edge', 'reTerminal_E10xx', 'getting_started_with_reterminal_e1001.md'), //7.21
 ];
 
 // 递归函数，用于遍历多层文件夹

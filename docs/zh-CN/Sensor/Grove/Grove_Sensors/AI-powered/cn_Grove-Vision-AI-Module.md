@@ -440,10 +440,6 @@ if (ai.begin(ALGO_OBJECT_DETECTION, (MODEL_INDEX_T)0x11))
 
 例如，对于模型 **pfld_meter_pre_5.uf2**，最后一位数字是 **5**，这意味着模型编号是 **5**。您可以直接使用
 
-```
-
-```
-
 ```cpp
 ai.begin(ALGO_OBJECT_DETECTION, (MODEL_INDEX_T)5)
 ```
@@ -598,10 +594,6 @@ void loop()
 
 在我们提供的演示中，`setup()` 函数内部通过调用 `ai.begin()` 来初始化模型。
 
-```
-cpp
-```
-
 ```cpp
 if (ai.begin(ALGO_OBJECT_DETECTION, (MODEL_INDEX_T)0x11))
 ```
@@ -617,10 +609,6 @@ if (ai.begin(ALGO_OBJECT_DETECTION, (MODEL_INDEX_T)0x11))
 但如果您不想阅读这么长的文章，一个简单的方法是留意发布的模型的最后一个数字，这个数字就是我们需要的编号。
 
 例如，对于模型 **pfld_meter_pre_5.uf2**，最后一位数字是 **5**，这意味着模型编号是 **5**。您可以直接使用：
-
-```
-
-```
 
 ```cpp
 ai.begin(ALGO_OBJECT_DETECTION, (MODEL_INDEX_T)5)

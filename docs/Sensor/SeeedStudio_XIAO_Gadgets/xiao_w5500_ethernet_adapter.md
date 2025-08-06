@@ -755,6 +755,39 @@ Open the Serial Monitor to find the device's IP address after it connects to the
 - Modify the web server code to add authentication or additional endpoints.
 - Adapt the Ethernet pin definitions to match your custom hardware.
 
+## FAQ
+
+### Q1: Why does the W5500 Adapter have a poor network signal? Is there any solution?
+
+It is possible to add a code segment for adjusting power inside all codes that use WiFi, and by adjusting the transmit power, the signal strength can be significantly improved.
+
+Such as the following code snippet, is added to adjust the power of the function inside the `Setup()`.
+
+```cpp
+    // 1. Set WiFi to Station mode
+    WiFi.mode(WIFI_STA);
+
+    // 2. Adjust WiFi transmit power (Key correction)
+    int8_t power_dbm = 15;
+    int8_t power_param = (int8_t)(power_dbm / 0.25);
+    esp_err_t err = esp_wifi_set_max_tx_power(power_param);
+    
+    if (err == ESP_OK) {
+        Serial.print("Successfully set WiFi TX Power to: ");
+        Serial.print(power_dbm);
+        Serial.println(" dBm");
+    } else {
+        Serial.println("Failed to set WiFi TX Power.");
+    }
+    
+    // 3. Start connecting to WiFi
+    WiFi.begin(ssid, password);
+
+    Serial.print("Connecting to WiFi network: ");
+    Serial.println(ssid);
+```
+
+It has been verified that setting the power to the above code gives the best results.
 
 ## Resources
 

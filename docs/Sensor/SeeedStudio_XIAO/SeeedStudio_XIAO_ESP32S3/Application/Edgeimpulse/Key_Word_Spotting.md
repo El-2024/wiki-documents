@@ -265,7 +265,7 @@ Edge Impulse will package all the needed libraries, preprocessing functions, and
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/9.png" style={{width:600, height:'auto'}}/></div>
 
-Even though Edge Impulse has not released its SDK for ESP32S3 using the ESP NN accelerator, thanks to Dmitry Maslov, we can have its assembly optimizations restored and fixed for ESP32-S3. This solution is not official yet, and EI will include it in EI SDK once they fix conflicts with other boards.
+<!-- Even though Edge Impulse has not released its SDK for ESP32S3 using the ESP NN accelerator, thanks to Dmitry Maslov, we can have its assembly optimizations restored and fixed for ESP32-S3. This solution is not official yet, and EI will include it in EI SDK once they fix conflicts with other boards.
 
 :::caution
 For now, this only works with the non-EON version. So, you should also keep the the option **Enable EON Compiler** not selected.
@@ -275,7 +275,7 @@ When the Build button is selected, a Zip file will be created and downloaded to 
 
 Before we use the downloaded library, we need to enable the **ESP NN** Accelerator. For that, you can download a preliminary version from the [project GitHub](https://github.com/Mjrovai/XIAO-ESP32S3-Sense/blob/main/ESP-NN.zip), unzip it, and replace the ESP NN folder with it under:`src/edge-impulse-sdk/porting/espressif/ESP-NN`, in your Arduino library folder.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/10.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/10.png" style={{width:800, height:'auto'}}/></div> -->
 
 On your Arduino IDE, go to the Sketch tab and select the option Add .ZIP Library, and Choose the .zip file downloaded by the Edge Impulse.
 
