@@ -3448,7 +3448,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'Robotics J401 Carrier Board',
+                  label: 'J401-Robotics Carrier Board',
                   items: [
                     'Edge/NVIDIA_Jetson/Carrier_Boards/Robotics_J401/Robotics_J401_carrierboard_Hardware_Interfaces_Usage',
                   ],
@@ -3539,6 +3539,14 @@ const sidebars = {
                   'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Hardware_Interfaces_Usage'
                   ],
                 },
+                 {
+                  type: 'category',
+                  label: 'reComputer Robotics',
+                  items: [
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Robotics/reComputer_Robotics_Getting_Started',
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Robotics/reComputer_Robotics_Hardware_Interfaces_Usage'
+                  ],
+                },
                 {
                   type: 'category',
                   label: 'reComputer J401B',
@@ -3556,7 +3564,8 @@ const sidebars = {
                   'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing',
                   'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/Replace_the_Thermal_Conductive_Paste_for_reComputer'
                   ],
-                },
+                },  
+
             ]},
             
             // reServer Jetson Series
