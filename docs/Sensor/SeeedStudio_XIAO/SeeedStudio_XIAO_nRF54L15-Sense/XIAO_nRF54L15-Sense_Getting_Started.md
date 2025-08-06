@@ -70,28 +70,16 @@ export const Highlight = ({children, color}) => (
 <table align="center">
   <tr>
       <th>Item</th>
-      <th>XIAO nRF52840</th>
-      <th>XIAO nRF52840 Sense</th>
-      <th><Highlight color="#92c52a">XIAO nRF54L15</Highlight></th>
-      <th><Highlight color="#92c52a">XIAO nRF54L15 Sense</Highlight></th>
+      <th>XIAO nRF54L15</th>
+      <th>XIAO nRF54L15 Sense</th>
   </tr>
   <tr>
       <th>MCU</th>
-      <td align="center">Arm Cortex-M4 with FPU 64 MHz</td>
-      <td align="center">Arm Cortex-M4 with FPU 64 MHz</td>
       <td align="center">Arm Cortex-M33 128 MHz<br/>RISC-V coprocessor 128 MHz FLPR</td>
       <td align="center">Arm Cortex-M33 128 MHz<br/>RISC-V coprocessor 128 MHz FLPR</td>
   </tr>
   <tr>
       <th>Wireless Connectivity</th>
-      <td align="center">
-        Bluetooth LE 5.2<br/>
-        NFC
-      </td>
-      <td align="center">
-        Bluetooth LE 5.2<br/>
-        NFC
-      </td>
       <td align="center">
         Bluetooth LE 6.0（include Channel Sounding）<br/>
         NFC<br/>
@@ -113,15 +101,11 @@ export const Highlight = ({children, color}) => (
   </tr>
   <tr>
       <th>Memory</th>
-      <td align="center">NVM 1MB+256 KB RAM<br/>Flash 2MB onboard Flash</td>
-      <td align="center">NVM 1MB+256 KB RAM<br/>Flash 2MB onboard Flash</td>
       <td align="center">NVM 1.5 MB + RAM256 KB</td>
       <td align="center">NVM 1.5 MB + RAM256 KB</td>
   </tr>
   <tr>
       <th>Built-in Sensor</th>
-      <td align="center">N/A</td>
-      <td align="center">6 DOF IMU(LSM6DS3TR-C)<br/>Microphone(MSM261D3526H1CPM)</td>
       <td align="center">N/A</td>
       <td align="center">6 DOF IMU(LSM6DS3TR-C)<br/>Microphone (MSM261DGT006)</td>
   </tr>
@@ -129,33 +113,19 @@ export const Highlight = ({children, color}) => (
       <th>TX power</th>
       <td align="center">+8 dBm</td>
       <td align="center">+8 dBm</td>
-      <td align="center">+8 dBm</td>
-      <td align="center">+8 dBm</td>
   </tr>
   <tr>
       <th>RX sensitivity</th>
-      <td align="center">-97 dBm</td>
-      <td align="center">-97 dBm</td>
       <td align="center">-96 dBm</td>
       <td align="center">-96 dBm</td>
   </tr>
   <tr>
       <th>Highlighted peripherals</th>
-      <td align="center">12-bit ADC</td>
-      <td align="center">12-bit ADC</td>
       <td align="center">14-bit ADC, Global RTC</td>
       <td align="center">14-bit ADC, Global RTC</td>
   </tr>
   <tr>
       <th>Power</th>
-      <td align="center">
-        USB Type-C interface power supply<br/>
-        Support lithium battery power collection
-      </td>
-      <td align="center">
-        USB Type-C interface power supply<br/>
-        Support lithium battery power collection
-      </td>
       <td align="center">
         USB Type-C interface power supply<br/>
         Internal PMIC supports lithium battery power supply<br/>
@@ -169,8 +139,6 @@ export const Highlight = ({children, color}) => (
   </tr>
   <tr>
       <th>Operating temperature</th>
-      <td align="center">-40 to 85 °C</td>
-      <td align="center">-40 to 85 °C</td>
       <td align="center">-40 to 105°C</td>
       <td align="center">-40 to 105°C</td>
   </tr>
@@ -178,27 +146,19 @@ export const Highlight = ({children, color}) => (
       <th>Supply voltage range</th>
       <td align="center">3.7 to 5 V</td>
       <td align="center">3.7 to 5 V</td>
-      <td align="center">3.7 to 5 V</td>
-      <td align="center">3.7 to 5 V</td>
   </tr>
   <tr>
       <th>ESB and 2.4 GHz Proprietary Protocols</th>
-      <td align="center">up to 2 Mbps</td>
-      <td align="center">up to 2 Mbps</td>
       <td align="center">up to 4 Mbps</td>
       <td align="center">up to 4 Mbps</td>
   </tr>
   <tr>
       <th>Tamer idetectors</th>
-      <td align="center">NO</td>
-      <td align="center">NO</td>
       <td align="center">YES</td>
       <td align="center">YES</td>
   </tr>
   <tr>
       <th>Bluetooth channel sounding</th>
-      <td align="center">NO</td>
-      <td align="center">NO</td>
       <td align="center">YES</td>
       <td align="center">YES</td>
   </tr>
@@ -224,7 +184,7 @@ export const Highlight = ({children, color}) => (
     <th>XIAO nRF54L15 Pin List</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/whitepinout.png" style={{width:800, height:'auto'}}/></div></td>
+    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/definition.png" style={{width:800, height:'auto'}}/></div></td>
   </tr>
   <tr>
     <th>XIAO nRF54L15 front indication diagram</th>
@@ -248,7 +208,7 @@ export const Highlight = ({children, color}) => (
     <th>XIAO nRF54L15 Sense Pin List</th>
   </tr>
   <tr>
-    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/whitepinout2.png" style={{width:800, height:'auto'}}/></div></td>
+    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/sensedefinition.png" style={{width:800, height:'auto'}}/></div></td>
   </tr>
   <tr>
     <th>XIAO nRF54L15 Sense front indication diagram</th>
@@ -414,9 +374,23 @@ Our first application will be based on the Blinky example. The Blinky example is
     </a>
 </div>
 
-To get started, **clone the repository from the GitHub link**`git clone https://github.com/Seeed-Studio/platform-seeedboards.git` into your preferred local folder. Once cloned, navigate to the `platform-seeedboards/zephyr/boards` directory. **Remember this `boards` folder**; you'll need to **replace the `boards` folder in your project directory** with this one.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/config1.jpg" style={{width:600, height:'auto'}}/></div>
+To get started, **clone the repository from the GitHub link**`git clone https://github.com/Seeed-Studio/platform-seeedboards.git` into your preferred local folder. Once cloned, navigate to the `platform-seeedboards/zephyr/boards` directory. **Remember this `boards` folder Path**;
+
+To configure your board for nRF Connect in VS Code, you can follow these steps:
+
+- Open VS Code and go to Settings.
+
+- Type nRF Connect in the search box.
+
+- Find the Board Roots settings item and click Edit in settings.json.
+
+- Add the path of the downloaded XIAO nRF54L15 board file to the boardRoots array.
+
+<!-- <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/config1.jpg" style={{width:600, height:'auto'}}/></div> -->
+
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/addboard.jpg" style={{width:600, height:'auto'}}/></div>
 
 - In the application view, click Add Build Configuration below the application name .
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/config3.png" style={{width:600, height:'auto'}}/></div>
@@ -559,9 +533,9 @@ If you want to connect the battery for XIAO, we recommend you to purchase qualif
 
 At the same time, we designed a red indicator light for battery charging, through the indicator light display to inform the user of the current state of the battery in the charge.
 
-1. When XIAO nRF54L15 is not connected to the battery, the red light comes on when the Type-C cable is connected and goes off after 30 seconds.
+<!-- 1. When XIAO nRF54L15 is not connected to the battery, the red light comes on when the Type-C cable is connected and goes off after 30 seconds.
 2. The red light flashes when the battery is connected and the Type-C cable is connected for charging.
-3. When connecting Type-C to charge the battery fully, the red light turns off.
+3. When connecting Type-C to charge the battery fully, the red light turns off. -->
 
 :::caution
 Please be careful not to short-circuit the positive and negative terminals and burn the battery and equipment when soldering.
@@ -584,7 +558,14 @@ What the TPS22916CYFPR chip does:
 - What does this feature help us do?
 Through this on-demand switching mechanism, the chip greatly reduces unnecessary current consumption and effectively extends battery life. Combined with the subsequent voltage divider circuit and the nRF54L15's ADC (analog-to-digital converter), the XIAO nRF54L15 is able to accurately monitor the battery's remaining charge, providing important range optimization for battery-powered, low-power applications such as IoT devices.
 :::note
-This power consumption code example is designed for use with **PlatformIO**. To configure your **XIAO nRF54L15** for use with PlatformIO, please refer to this link: [XIAO nRF54L15 PlatformIO Configuration](https://wiki.seeedstudio.com/xiao_nrf54l15_with_platform_io/).
+The following sample code is designed for PlatformIO, but it is also compatible with the nRF Connect SDK.
+
+Using XIAO nRF54L15 in PlatformIO 
+If you want to use XIAO nRF54L15 in PlatformIO, please refer to this tutorial to configure it: [XIAO nRF54L15 PlatformIO Configuration](https://wiki.seeedstudio.com/xiao_nrf54l15_with_platform_io/).
+
+Using the XIAO nRF54L15 in the nRF Connect SDK 
+To use this code in the nRF Connect SDK, you need to port the following three files `main.c`,`prj.conf`,`app.overlay`
+[XIAO nRF54L15 PlatformIO Configuration](http://localhost:3000/xiao_nrf54l15_sense_getting_started/#power-consumpitons-code-example-for-xiao-nrf54l15-platformio)
 :::
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/platform-seeedboards/tree/main/examples/zephyr-battery">
@@ -756,10 +737,66 @@ The User button is a versatile, programmable input that offers flexible control 
 - Activating specific features or modes within your custom application.
 
 
+:::note
+The following sample code is designed for PlatformIO, but it is also compatible with the nRF Connect SDK.
+
+Using XIAO nRF54L15 in PlatformIO 
+If you want to use XIAO nRF54L15 in PlatformIO, please refer to this tutorial to configure it: [XIAO nRF54L15 PlatformIO Configuration](https://wiki.seeedstudio.com/xiao_nrf54l15_with_platform_io/).
+
+Using the XIAO nRF54L15 in the nRF Connect SDK 
+To use this code in the nRF Connect SDK, you need to port the following three files `main.c`,`prj.conf`,`app.overlay`
+[XIAO nRF54L15 PlatformIO Configuration](http://localhost:3000/xiao_nrf54l15_sense_getting_started/#power-consumpitons-code-example-for-xiao-nrf54l15-platformio)
+:::
+
+
+<div class="github_container" style={{textAlign: 'center'}}>
+    <a class="github_item" href="https://github.com/Seeed-Studio/platform-seeedboards/tree/main/examples/zephyr-button">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    </a>
+</div><br />
+
+
+
+The light comes on once every time you press a key
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/button.gif" style={{width:400, height:'auto'}}/></div>
+
 
 ## Power-Consumpitons Code Example for XIAO nRF54L15 (PlatformIO)
 
-This power consumption code example is designed for use with **PlatformIO**. To configure your **XIAO nRF54L15** for use with PlatformIO, please refer to this link: [XIAO nRF54L15 PlatformIO Configuration](https://wiki.seeedstudio.com/xiao_nrf54l15_with_platform_io/).
+The following sample code is designed for PlatformIO, but it is also compatible with the nRF Connect SDK.
+
+Using XIAO nRF54L15 in PlatformIO 
+If you want to use XIAO nRF54L15 in PlatformIO, please refer to this tutorial to configure it: [XIAO nRF54L15 PlatformIO Configuration](https://wiki.seeedstudio.com/xiao_nrf54l15_with_platform_io/).
+
+Using the XIAO nRF54L15 in the nRF Connect SDK 
+To use this code in the nRF Connect SDK, you need to port the following three files `main.c`,`prj.conf`,`app.overlay`
+
+**Porting main.c**
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/d1.jpg" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/f1.jpg" style={{width:600, height:'auto'}}/></div>
+
+**Porting prj.conf/app.overlay,You may see the following files when doing project configuration:**
+
+- prj.conf: this file is used to set the project's Kconfig configuration options, such as enabling specific peripherals or features.
+
+- app.overlay: This file is used to modify Device Tree settings, such as changing pin functions or adjusting hardware configurations.
+
+If the code example below contains these individual files, you will need to merge their contents into your nRF Connect SDK project.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/h1.jpg" style={{width:600, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/g1.jpg" style={{width:600, height:'auto'}}/></div>
+
+**Replacement position**
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/replace.jpg" style={{width:600, height:'auto'}}/></div>
+
+- `app.overlay file:` put it in your board folder.
+
+- `prj.conf file:` place it in your project root folder.
+
+- `main.c file:` place it in your src folder.
 
 ### Bluetooth Connected
 

@@ -18,7 +18,7 @@ sidebar_position: 3
 
 
 
-## nRF COnnect SDK
+## nRF Connect SDK
 
 This Bluetooth advertising tutorial is based on the official [sample](https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/lessons/lesson-2-bluetooth-le-advertising/topic/blefund-lesson-2-exercise-1/) code modified to run on the Nordic Connect SDK. With our development board combined with the official documentation, you can dive into more Bluetooth [applications](https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/).
 
@@ -175,7 +175,7 @@ int main(void)
 }
 ```
 
-
+<!-- 
 ## PlatformIO
 
 This Bluetooth radio example program is specifically designed for development on the PlatformIO platform. The main advantage of choosing PlatformIO is that it provides an integrated development environment that greatly simplifies the setup, compilation and burn-in process of embedded projects, making it easier and faster for even beginners to start developing Bluetooth applications.
@@ -294,7 +294,7 @@ int main(void)
 	printf("Bluetooth enabled");
 	return 0;
 }
-```
+``` -->
 
 ## Tech Support & Product Discussion
 
