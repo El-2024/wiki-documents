@@ -153,7 +153,7 @@ export const Highlight = ({children, color}) => (
       <td align="center">up to 4 Mbps</td>
   </tr>
   <tr>
-      <th>Tamer idetectors</th>
+      <th>Tamper detectors</th>
       <td align="center">YES</td>
       <td align="center">YES</td>
   </tr>
