@@ -490,8 +490,7 @@ SO100 和 SO101 的代码是兼容的。SO100 用户可以直接使用 SO101 的
 若购买 **SO101 Arm Kit 标准版**，所有电源均为5V。若购买 **SO101 Arm Kit Pro 版**，Leader机械臂的校准及每一步骤均使用5V电源，Follower机械臂的校准及每一步骤均使用12V电源。  
 :::
 
-接下来，你需要对你的 SO-10x 机器人接上电源和数据线进行校准，以确保在相同的物理位置时，Leader 臂和 Follower 臂的位置信息一致。这个校准过程至关重要，因为它可以让在一个 SO-10x 机器人上训练的神经网络在另一个机器人上也能正常工作。如果需要重新校准机械臂，请删除 `~/lerobot/.cache/huggingface/calibration/so101` 文件夹。
-
+接下来，你需要对你的 SO-10x 机器人接上电源和数据线进行校准，以确保在相同的物理位置时，Leader 臂和 Follower 臂的位置信息一致。这个校准过程至关重要，因为它可以让在一个 SO-10x 机器人上训练的神经网络在另一个机器人上也能正常工作。如果需要重新校准机械臂，请完全删除`~/.cache/huggingface/lerobot/calibration/robots`或者`~/.cache/huggingface/lerobot/calibration/teleoperators`下的文件并重新校准机械臂，否者会出现报错提示，校准的机械臂信息会存储该目录下的json文件中。
 
 ## 从动臂手动校准
 
@@ -792,6 +791,24 @@ python -m lerobot.scripts.train \
 * **设备选择**：我们提供了 `policy.device=cuda`，因为我们正在 Nvidia GPU 上进行训练，但您可以使用 `policy.device=mps` 在 Apple Silicon 上进行训练。
 * **可视化工具**：我们提供了 `wandb.enable=true` 来使用 [Weights and Biases](https://docs.wandb.ai/quickstart) 可视化训练图表。这是可选的，但如果您使用它，请确保您已通过运行 `wandb login` 登录。
 
+<details>
+<summary>stack()报错问题</summary>
+
+如果你遇到了以下报错：
+
+<div align="center">
+    <img width={1000} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/stack_bug.png" />
+</div>
+
+尝试运行以下命令来解决:
+
+```bash
+pip install datasets == 2.19
+```
+
+</details>
+
 训练可能需要几个小时。您将在 `outputs/train/act_so100_test/checkpoints` 目录中找到检查点文件。
 
 要从某个检查点恢复训练，下面是一个从 `act_so101_test` 策略的最后一个检查点恢复训练的示例命令：
@@ -856,7 +873,7 @@ python -m lerobot.record  \
   ConnectionError: Read failed due to comunication eror on port /dev/ttyACM0 for group key Present_Position_Shoulder_pan_Shoulder_lift_elbow_flex_wrist_flex_wrist_roll_griper: [TxRxResult] There is no status packet!
   ```
 
-- 如果你维修或者更换过机械臂零件，请完全删除`~/lerobot/.cache/huggingface/calibration/so100`文件夹并重新校准机械臂
+- 如果你维修或者更换过机械臂零件，请完全删除`~/.cache/huggingface/lerobot/calibration/robots`或者`~/.cache/huggingface/lerobot/calibration/teleoperators`下的文件并重新校准机械臂，否者会出现报错提示，校准的机械臂信息会存储该目录下的json文件中。
 
 - 如果遥操作正常，而带Camera的遥操作无法显示图像界面，请参考[这里](https://github.com/huggingface/lerobot/pull/757/files)
 

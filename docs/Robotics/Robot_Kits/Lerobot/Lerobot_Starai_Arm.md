@@ -34,7 +34,7 @@ last_update:
     Deployment is supported via the reComputer Mini J4012 Orin NX 16GB platform.
 
 <div class="video-container">
-<iframe width="900" height="600" src="https://www.youtube.com/embed/ojMJa3C8-eA?si=V573ps_CFLC1QUqV" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/pAKqP_vReNY?si=AaZQ_DBQyY2p0YMf" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## Key Features
