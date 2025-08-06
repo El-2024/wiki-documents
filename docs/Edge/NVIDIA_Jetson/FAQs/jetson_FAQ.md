@@ -36,7 +36,7 @@ For details, please click [here](/get_the_system_log_of_recomputer_j30_and_j40)
 For details, please click [here](/usb_timeout_during_flash)
 
 #### Q7: I cannot use USB-A port, Ethernet port or no HDMI dispaly after flashing the device.
-**A:** Please check file integrity (for instance, we provided the SHA256 cheksums), for some carrier boards (especially A60X series), make sure that the driver patch was successfully copied/applied to **Linux_for_tegra** directory. There are files that require **sudo** permission, and when you copy directories, make sure **-r** parameter is included in your command.
+**A:** Please check file integrity (for instance, we provided the SHA256 cheksums), for some carrier boards (especially A60X series), make sure that the driver patch was successfully copied/applied to **Linux_for_tegra** directory. There are files that require **sudo** permission, and when you copy directories, make sure **-r** parameter is included i+n your command.
 
 #### Q8: My system crashed/unable to boot/black screen/lost peripheral drivers after I execute "sudo apt-get update && sudo apt-get upgrade" commands.
 **A:** These issues can be concluded as **"Why can't I upgrade the system with apt upgrade on custom carrier boards?"** The short answer is: **Do not** run the apt upgrade command on **custom/third-party** carrier boards. Additionally, avoid running any scripts that include apt upgrade commands or using GUI updater tools in Ubuntu. Debian packages from the server do not account for the specific design of our custom boards, and forcing the upgrade can cause incompatibilities that may brick your device. This process is only compatible with the official devkit. To solve these issues, please follow our guide to reflash the JetPack.
@@ -53,6 +53,14 @@ For details, please click [here](/upgrade_software_packages_for_jetson)
 
 For details, please click [here](/differences_of_l4t_between_seeed_and_nvidia)
 
+#### Q12: How to enable the SPI interface on Jetson-nano?
+For details, please click [here](/enable_spi_interface_on_jetsonnano)
+
+#### Q13: Why is it that sometimes after completing the flashing process on Jetson, the system fails to boot from the SSD?
+This issue currently occurs when flashing JetPack 5, and NVIDIA has officially documented it. For the solution, please click [here.](/issue_of_jetpack5_failing_to_boot_from_certain_ssd)
+
+#### Q14:How to Build the Source Code Project for Seeed's Jetson BSP?
+For details, please click [here](/how_to_build_the_source_code_project_for_seeed_jetson_bsp)
 
 # Tech support
 
