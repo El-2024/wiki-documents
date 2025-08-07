@@ -257,6 +257,14 @@ conda install ffmpeg -c conda-forge
 conda install ffmpeg=7.1.1 -c conda-forge
 ```
 - 【仅限 Linux】安装 ffmpeg 的构建依赖并从源码编译支持 libsvtav1 的 ffmpeg，并确保使用的 ffmpeg 可执行文件是正确的，可以通过 `which ffmpeg` 确认。
+
+如果你遇到以下报错，也可以使用上述命令解决。
+
+<div align="center">
+    <img width={800} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/No valid stream.png" />
+</div>
+
 :::
 
 5. 安装带有 feetech 电机依赖的 LeRobot：
@@ -699,7 +707,7 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 - 在录制过程中随时按 ESCAPE ESC 可提前结束会话，直接进入视频编码和数据集上传。
 
-- 注意：你可以通过添加 `--control.resume=true` 来继续录制。如果你还没有上传数据集，还需要添加 `--control.local_files_only=true`。
+注意：在录制过程中会自动创建检查点。如果出现问题，可以通过重新运行相同的命令并添加 `--resume=true` 来恢复录制。如果要从头开始录制，请手动删除数据集目录。
 
 - 一旦你熟悉了数据记录，你就可以创建一个更大的数据集进行训练。一个不错的起始任务是在不同的位置抓取物体并将其放入箱子中。我们建议至少记录 50 个场景，每个位置 10 个场景。保持相机固定，并在整个录制过程中保持一致的抓取行为。同时确保你正在操作的物体在相机视野中可见。一个很好的经验法则是，你应该仅通过查看相机图像就能完成这项任务。
 
@@ -804,7 +812,7 @@ python -m lerobot.scripts.train \
 尝试运行以下命令来解决:
 
 ```bash
-pip install datasets == 2.19
+pip install datasets==2.19
 ```
 
 </details>

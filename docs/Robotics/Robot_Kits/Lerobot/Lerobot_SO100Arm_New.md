@@ -271,6 +271,12 @@ conda install ffmpeg=7.1.1 -c conda-forge
 ```
 - [On Linux only] Install ffmpeg build dependencies and compile ffmpeg from source with libsvtav1, and make sure you use the corresponding ffmpeg binary to your install with which ffmpeg.
 
+If you encounter an error like this, you can use this command too. 
+
+<div align="center">
+    <img width={800} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/No valid stream.png" />
+</div>
 
 :::
 
@@ -695,7 +701,7 @@ python -m lerobot.record \
     --dataset.single_task="Grab the black cube" \
     --dataset.push_to_hub=true \# You can choose false if you want to save the data locally
     --dataset.episode_time_s=30 \
-    --dataset.reset_time_s=30 
+    --dataset.reset_time_s=30
 ```
 
 You will see a lot of lines appearing like this one:
@@ -824,7 +830,7 @@ If you encounter the following error:
 Try running the following command to resolve it:
 
 ```bash
-pip install datasets == 2.19
+pip install datasets==2.19
 ```
 
 </details>

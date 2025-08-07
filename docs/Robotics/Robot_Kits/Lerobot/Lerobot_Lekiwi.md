@@ -9,8 +9,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.webp
 slug: /lerobot_lekiwi
 last_update:
-  date: 5/28/2025
-  author: ZhuYaoHui
+  date: 8/6/2025
+  author: LiShanghang
 ---
 
 # How to use the Lekiwi in Lerobot
@@ -101,7 +101,7 @@ Seeed Studio is only responsible for the quality of the hardware itself. The tut
 - Torch 2.6  
 
 **For Jetson Orin:**
-- Jetson JetPack 6.2  
+- Jetson JetPack 6.0+
 - Python 3.10  
 - Torch 2.6  
 
@@ -227,16 +227,37 @@ cd ~/lerobot && pip install -e ".[feetech]"
 </div>
 
 
-**Find USB ports associated to your arms**
-To find the correct ports for single motor, run the utility script twice:
+To find the port for each bus servo adapter, run this script:
 
 ```bash
-python lerobot/scripts/find_motors_bus_port.py
+python -m lerobot.find_port
+```
+
+Example output:
+
+```bash
+Finding all available ports for the MotorBus.
+['/dev/tty.usbmodem575E0032081']
+Remove the USB cable from your MotorsBus and press Enter when done.
+
+[...Disconnect corresponding leader or follower arm and press Enter...]
+
+The port of this MotorsBus is /dev/tty.usbmodem575E0032081
+Reconnect the USB cable.
 ```
 
 Example output when identifying the port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyACM0` on Linux):
 
 Example output when identifying the port (e.g., `/dev/tty.usbmodem575E0032081`, or possibly `/dev/ttyACM1` on Linux):
+
+:::tip
+```bash
+Finding all available ports for the MotorBus.
+['/dev/tty.usbmodem575E0032081']
+Remove the USB cable from your MotorsBus and press Enter when done.
+```
+Remember to remove the usb, then Press Enter, otherwise the interface will not be detected.
+:::
 
 Troubleshooting: On Linux, you might need to give access to the USB ports by running:
 
@@ -247,30 +268,20 @@ sudo chmod 666 /dev/ttyACM1
 
 **Configure your motors**
 
-Plug your first motor and run this script to set its ID to 7-9. It will also set its present position to 2048, so expect your motor to rotate:
+The instructions for configuring the motors can be found in the SO101 [docs](https://huggingface.co/docs/lerobot/so101#configure-the-motors). Besides the ids for the arm motors, we also need to set the motor ids for the mobile base. These need to be in a specific order to work. Below an image of the motor ids and motor mounting positions for the mobile base. Note that we only use one Motor Control board on LeKiwi. This means the motor ids for the wheels are 7, 8 and 9.
+
+You can run this command to setup motors for LeKiwi. It will first setup the motors for arm (id 6..1) and then setup motors for wheels (9,8,7)
 
 ```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 7
+python -m lerobot.setup_motors \
+    --robot.type=lekiwi \
+    --robot.port=/dev/tty.usbmodem58760431551 # <- paste here the port found at previous step
 ```
 
-Note: These motors are currently limitated. They can take values between 0 and 4096 only, which corresponds to a full turn. They can't turn more than that. 2048 is at the middle of this range, so we can take -2048 steps (180 degrees anticlockwise) and reach the maximum range, or take +2048 steps (180 degrees clockwise) and reach the maximum range. The configuration step also sets the homing offset to 0, so that if you misassembled the arm, you can always update the homing offset to account for a shift up to ± 2048 steps (± 180 degrees).
-
-Then unplug your motor and plug the second motor and set its ID to 8 and 9.
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 8
-```
-
+<div align="center">
+    <img width={800} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/motor_ids.png" />
+</div>
 
 ## Assembly
 
@@ -285,7 +296,6 @@ Upon receiving the printed parts, all printed components are as shown below.
     <img width={800}
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/1.jpg" />
 </div>
-
 
 **A. Attach the drive motor to the motor mount using 12 m2x6 tap screws.**
 
@@ -392,238 +402,62 @@ And ensure both the servo control cable and USB camera are connected to the Rasp
 </details>
 
 
-## Update config
-Both config files on the LeKiwi LeRobot and on the laptop should be the same. First we should find the Ip address of the Raspberry Pi of the mobile manipulator. This is the same Ip address used in SSH. We also need the usb port of the control board of the leader arm on the laptop and the port of the control board on LeKiwi. We can find these ports with the following script.
-
-On Linux, you might need to give access to the USB ports by running:
-```bash
-sudo chmod 666 /dev/ttyACM0
-sudo chmod 666 /dev/ttyACM1
-```
-
-IMPORTANTLY: Now that you have your ports of leader and follower arm and ip address of the mobile-so100, update the **ip** in Network configuration, **port** in leader_arms and **port** in lekiwi. In the [`LeKiwiRobotConfig`](https://github.com/huggingface/lerobot/blob/main/lerobot/common/robot_devices/robots/configs.py) file. Where you will find something like:
-```python
-@RobotConfig.register_subclass("lekiwi")
-@dataclass
-class LeKiwiRobotConfig(RobotConfig):
-    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
-    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
-    # the number of motors in your follower arms.
-    max_relative_target: int | None = None
-
-    # Network Configuration
-    ip: str = "172.17.133.91"
-    port: int = 5555
-    video_port: int = 5556
-
-    cameras: dict[str, CameraConfig] = field(
-        default_factory=lambda: {
-            "mobile": OpenCVCameraConfig(camera_index="/dev/video0", fps=30, width=640, height=480),
-            "mobile2": OpenCVCameraConfig(camera_index="/dev/video2", fps=30, width=640, height=480),
-        }
-    )
-
-    calibration_dir: str = ".cache/calibration/lekiwi"
-
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/tty.usbmodem585A0077581",
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/ttyACM0",
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                    "left_wheel": (7, "sts3215"),
-                    "back_wheel": (8, "sts3215"),
-                    "right_wheel": (9, "sts3215"),
-                },
-            ),
-        }
-    )
-
-    teleop_keys: dict[str, str] = field(
-        default_factory=lambda: {
-            # Movement
-            "forward": "w",
-            "backward": "s",
-            "left": "a",
-            "right": "d",
-            "rotate_left": "z",
-            "rotate_right": "x",
-            # Speed control
-            "speed_up": "r",
-            "speed_down": "f",
-            # quit teleop
-            "quit": "q",
-        }
-    )
-
-    mock: bool = False
-```
-
-## Wired version
-
-For the wired LeKiwi version your configured IP address should refer to your own laptop (127.0.0.1), because leader arm and LeKiwi are in this case connected to own laptop. Below and example configuration for this wired setup:
-```python
-@RobotConfig.register_subclass("lekiwi")
-@dataclass
-class LeKiwiRobotConfig(RobotConfig):
-    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
-    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
-    # the number of motors in your follower arms.
-    max_relative_target: int | None = None
-
-    # Network Configuration
-    ip: str = "127.0.0.1"
-    port: int = 5555
-    video_port: int = 5556
-
-    cameras: dict[str, CameraConfig] = field(
-        default_factory=lambda: {
-            "front": OpenCVCameraConfig(
-                camera_index=0, fps=30, width=640, height=480, rotation=90
-            ),
-            "wrist": OpenCVCameraConfig(
-                camera_index=1, fps=30, width=640, height=480, rotation=180
-            ),
-        }
-    )
-
-    calibration_dir: str = ".cache/calibration/lekiwi"
-
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/tty.usbmodem585A0077581",
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/tty.usbmodem58760431061",
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                    "left_wheel": (7, "sts3215"),
-                    "back_wheel": (8, "sts3215"),
-                    "right_wheel": (9, "sts3215"),
-                },
-            ),
-        }
-    )
-
-    teleop_keys: dict[str, str] = field(
-        default_factory=lambda: {
-            # Movement
-            "forward": "w",
-            "backward": "s",
-            "left": "a",
-            "right": "d",
-            "rotate_left": "z",
-            "rotate_right": "x",
-            # Speed control
-            "speed_up": "r",
-            "speed_down": "f",
-            # quit teleop
-            "quit": "q",
-        }
-    )
-
-    mock: bool = False
-```
-
-
 ## Calibration
-Now we have to calibrate the leader arm and the follower arm. The wheel motors don't have to be calibrated.
+Now we have to calibrate the leader arm and the follower arm. The wheel motors don’t have to be calibrated. The calibration process is very important because it allows a neural network trained on one robot to work on another.
 
 ### Calibrate follower arm (on mobile base)
 
-Run the following commands on your computer to calibrate the leader robotic arm. Note: The images shown here are for the SO101 model.
+Make sure the arm is connected to the Raspberry Pi and run this script or API example (on the Raspberry Pi via SSH) to launch calibration of the follower arm:
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=lekiwi \
-  --robot.cameras='{}' \
-  --control.type=calibrate \
-  --control.arms='["main_leader"]'
+python -m lerobot.calibrate \
+    --robot.type=lekiwi \
+    --robot.id=my_awesome_kiwi # <- Give the robot a unique name
 ```
 
-| **LeaderMiddle Position** | **Leader Zero Position** | **Leader Rotated Position** | **Leader Rest Position** |
-|:---------:|:---------:|:---------:|:---------:|
-| ![fig8](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_middle.webp) | ![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_zero.webp) | ![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_rotated.webp) | ![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_rest.webp) |
+We unified the calibration method for most robots, thus, the calibration steps for this SO100 arm are the same as the steps for the Koch and SO101. First, we have to move the robot to the position where each joint is in the middle of its range, then we press `Enter`. Secondly, we move all joints through their full range of motion. A video of this same process for the SO101 as reference can be found [here](https://huggingface.co/docs/lerobot/en/so101#calibration-video).
 
-Now run the following commands on your Raspberry Pi to calibrate the follower arm on LeKiwi. Ignore its current placement on the table - normal calibration should be performed when mounted on the vehicle.
+<div class="video-container">
+<iframe width="900" height="600" src="https://www.youtube.com/embed/22n6f5xH9Dk?si=2QTzn1CDbsSv6Y_H" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+### Wired version
+
+If you have the wired LeKiwi version, please run all commands on your laptop.
+
+### Calibrate leader arm
+
+Then, to calibrate the leader arm (which is attached to the laptop/pc). Run the following command of API example on your laptop:
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=lekiwi \
-  --robot.cameras='{}' \
-  --control.type=calibrate \
-  --control.arms='["main_follower"]'
+python -m lerobot.calibrate \
+    --teleop.type=so100_leader \
+    --teleop.port=/dev/tty.usbmodem58760431551 \ # <- The port of your robot
+    --teleop.id=my_awesome_leader_arm # <- Give the robot a unique name
 ```
 
-| **Follower Middle Position** | **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
-|:---------:|:---------:|:---------:|:---------:|
-| ![fig7](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_middle.webp) | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_zero.webp) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_rotated.webp) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_rest.webp) |
+## Teleoperate LeKiwi
 
-## Teleoperate
-
-> [!TIP]
-> If you're using a Mac, you might need to give Terminal permission to access your keyboard. Go to System Preferences > Security & Privacy > Input Monitoring and check the box for Terminal.
+:::tip
+If you're using a Mac, you might need to give Terminal permission to access your keyboard. Go to System Preferences > Security & Privacy > Input Monitoring and check the box for Terminal.
+:::
 
 To teleoperate SSH into your Raspberry Pi, and run `conda activate lerobot` and this script:
+
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=lekiwi \
-  --control.type=remote_robot
+python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-Then on your laptop, also run `conda activate lerobot` and this script:
-```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=lekiwi \
-  --control.type=teleoperate \
-  --control.fps=30
-```
+Then on your laptop, also run `conda activate lerobot` and run the API example, make sure you set the correct `remote_ip` and `port` in `examples/lekiwi/teleoperate.py`.
 
-> **NOTE:** To visualize the data, enable `--control.display_data=true`. This streams the data using `rerun`. For the `--control.type=remote_robot` you will also need to set `--control.viewer_ip` and `--control.viewer_port`
+<div align="center">
+      <img width={800}
+      src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/teleoperate.png" />
+</div>
+
+```bash
+python examples/lekiwi/teleoperate.py
+```
 
 You should see on your laptop something like this: ```[INFO] Connected to remote robot at tcp://172.17.133.91:5555 and video stream at tcp://172.17.133.91:5556.``` Now you can move the leader arm and use the keyboard (w,a,s,d) to drive forward, left, backwards, right. And use (z,x) to turn left or turn right. You can use (r,f) to increase and decrease the speed of the mobile robot. There are three speed modes, see the table below:
 
@@ -645,11 +479,14 @@ You should see on your laptop something like this: ```[INFO] Connected to remote
 | R   | Increase speed |
 | F   | Decrease speed |
 
-> [!TIP]
->  If you use a different keyboard you can change the keys for each command in the `LeKiwiRobotConfig`.
+:::tip
+If you use a different keyboard you can change the keys for each command in the `LeKiwiRobotConfig`.
+:::
 
 ### Wired version
+
 If you have the **wired** LeKiwi version please run all commands including both these teleoperation commands on your laptop.
+
 
 ## Troubleshoot communication
 
@@ -689,72 +526,95 @@ Make sure the configuration file on both your laptop/pc and the Raspberry Pi is 
 # G. Record a dataset
 Once you're familiar with teleoperation, you can record your first dataset with LeKiwi.
 
-To start the program on LeKiwi, SSH into your Raspberry Pi, and run `conda activate lerobot` and this script:
-```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=lekiwi \
-  --control.type=remote_robot
-```
+We use the Hugging Face hub features for uploading your dataset. If you haven’t previously used the Hub, make sure you can login via the cli using a write-access token, this token can be generated from the [Hugging Face settings](https://huggingface.co/settings/tokens).
 
-If you want to use the Hugging Face hub features for uploading your dataset and you haven't previously done it, make sure you've logged in using a write-access token, which can be generated from the [Hugging Face settings](https://huggingface.co/settings/tokens):
+Add your token to the CLI by running this command:
+
 ```bash
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
-Store your Hugging Face repository name in a variable to run these commands:
+Then store your Hugging Face repository name in a variable:
+
 ```bash
 HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
-On your laptop then run this command to record 2 episodes and upload your dataset to the hub:
+Now you can record a dataset. To record episodes and upload your dataset to the hub, execute this API example tailored for LeKiwi. Make sure to first adapt the `remote_ip`, `repo_id`, `port` and `task` in the script. If you would like to run the script for longer you can increase `NB_CYCLES_CLIENT_CONNECTION`.
+
+<div align="center">
+      <img width={800}
+      src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/record.png" />
+</div>
+
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=lekiwi \
-  --control.type=record \
-  --control.fps=30 \
-  --control.single_task="Grasp a lego block and put it in the bin." \
-  --control.repo_id=${HF_USER}/lekiwi_test \
-  --control.tags='["tutorial"]' \
-  --control.warmup_time_s=5 \
-  --control.episode_time_s=30 \
-  --control.reset_time_s=30 \
-  --control.num_episodes=2 \
-  --control.push_to_hub=true
+python examples/lekiwi/record.py
+```
+Dataset upload
+
+Locally, your dataset is stored in this folder: `~/.cache/huggingface/lerobot/{repo-id}`. At the end of data recording, your dataset will be uploaded on your Hugging Face page (e.g. https://huggingface.co/datasets/cadene/so101_test) that you can obtain by running:
+
+```bash
+echo https://huggingface.co/datasets/${HF_USER}/so101_test
 ```
 
-Note: You can resume recording by adding `--control.resume=true`.
+Your dataset will be automatically tagged with `LeRobot` for the community to find it easily, and you can also add custom tags (in this case `tutorial` for example).
+
+You can look for other LeRobot datasets on the hub by searching for `LeRobot` [tags](https://huggingface.co/datasets?other=LeRobot).
+
+:::tip
+
+### Tips for gathering data
+
+Once you’re comfortable with data recording, you can create a larger dataset for training. A good starting task is grasping an object at different locations and placing it in a bin. We suggest recording at least 50 episodes, with 10 episodes per location. Keep the cameras fixed and maintain consistent grasping behavior throughout the recordings. Also make sure the object you are manipulating is visible on the camera’s. A good rule of thumb is you should be able to do the task yourself by only looking at the camera images.
+
+In the following sections, you’ll train your neural network. After achieving reliable grasping performance, you can start introducing more variations during data collection, such as additional grasp locations, different grasping techniques, and altering camera positions.
+
+Avoid adding too much variation too quickly, as it may hinder your results.
+
+If you want to dive deeper into this important topic, you can check out the [blog](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset) [post](https://huggingface.co/blog/lerobot-datasets#what-makes-a-good-dataset) we wrote on what makes a good dataset.
+
+### Troubleshooting:
+
+On Linux, if the left and right arrow keys and escape key don’t have any effect during data recording, make sure you’ve set the `$DISPLAY` environment variable. See [pynput limitations](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
+
+:::
 
 ### Wired version
 If you have the **wired** LeKiwi version please run all commands including both these record dataset commands on your laptop.
 
-# H. Visualize a dataset
+# H. Visualize the dataset
 
-If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
+If you uploaded your dataset to the hub with `--dataset.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
 ```bash
 echo ${HF_USER}/lekiwi_test
 ```
 
-If you didn't upload with `--control.push_to_hub=false`, you can also visualize it locally with (a window can be opened in the browser `http://127.0.0.1:9090` with the visualization tool):
+If you didn't upload with `--dataset.push_to_hub=false`, you can also visualize it locally with (a window can be opened in the browser `http://127.0.0.1:9090` with the visualization tool):
 ```bash
-python lerobot/scripts/visualize_dataset_html.py \
-  --repo-id ${HF_USER}/lekiwi_test \
+python -m lerobot.scripts.visualize_dataset_html \
+  --repo-id ${HF_USER}/lekiwi_test \# <-change to your repo-id
   --local-files-only 1
 ```
 
 # I. Replay an episode
-Now try to replay the first episode on your robot:
+To replay an episode run the API example below, make sure to change `remote_ip`, `port`, LeRobotDatasetId and episode index. The file is under that path `examples/lekiwi/replay.py`.
+
+<div align="center">
+      <img width={800}
+      src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/Replay an episode.png" />
+</div>
+
+Execute the following command:
+
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=lekiwi \
-  --control.type=replay \
-  --control.fps=30 \
-  --control.repo_id=${HF_USER}/lekiwi_test \
-  --control.episode=0
+python examples/lekiwi/replay.py
 ```
 
 ## J. Train a policy
 
 To train a policy to control your robot, use the `python lerobot/scripts/train.py` script. A few arguments are required. Here is an example command:
+
 ```bash
 python lerobot/scripts/train.py \
   --dataset.repo_id=${HF_USER}/lekiwi_test \
@@ -762,7 +622,7 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_lekiwi_test \
   --job_name=act_lekiwi_test \
   --policy.device=cuda \
-  --wandb.enable=true
+  --wandb.enable=true # You can choose false if you don't need wandb
 ```
 
 Let's explain it:
@@ -775,25 +635,20 @@ Training should take several hours. You will find checkpoints in `outputs/train/
 
 ## K. Evaluate your policy
 
-You can use the `record` function from `lerobot/scripts/control_robot.py` but with a policy checkpoint as input. For instance, run this command to record 10 evaluation episodes:
+To evaluate your policy run the `evaluate.py` API example, make sure to change `remote_ip`, `port`, model..
+
+Path is `examples/lekiwi/evaluate.py`.
+<div align="center">
+      <img width={800}
+      src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/evaluation.png" />
+</div>
+
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=lekiwi \
-  --control.type=record \
-  --control.fps=30 \
-  --control.single_task="Drive to the red block and pick it up" \
-  --control.repo_id=${HF_USER}/eval_act_lekiwi_test \
-  --control.tags='["tutorial"]' \
-  --control.warmup_time_s=5 \
-  --control.episode_time_s=30 \
-  --control.reset_time_s=30 \
-  --control.num_episodes=10 \
-  --control.push_to_hub=true \
-  --control.policy.path=outputs/train/act_lekiwi_test/checkpoints/last/pretrained_model
+python examples/lekiwi/evaluate.py
 ```
 
 As you can see, it's almost the same command as previously used to record your training dataset. Two things changed:
-1. There is an additional `--control.policy.path` argument which indicates the path to your policy checkpoint with  (e.g. `outputs/train/eval_act_lekiwi_test/checkpoints/last/pretrained_model`). You can also use the model repository if you uploaded a model checkpoint to the hub (e.g. `${HF_USER}/act_lekiwi_test`).
+1. There is an additional `policy` argument which indicates the path to your policy checkpoint with  (e.g. `outputs/train/eval_act_lekiwi_test/checkpoints/last/pretrained_model`). You can also use the model repository if you uploaded a model checkpoint to the hub (e.g. `${HF_USER}/act_lekiwi_test`).
 2. The name of dataset begins by `eval` to reflect that you are running inference (e.g. `${HF_USER}/eval_act_lekiwi_test`).
 
 ## Help 🙋‍
