@@ -1,6 +1,6 @@
 ---
-description: 本文档展示了在 Raspberry Pi 5 上使用 Hailo8 进行 YOLOv8m 多流检测的基准测试。
-title: 在 Raspberry Pi 5 上使用 Hailo8 进行多流推理的基准测试
+description: 本维基展示了在 Raspberry Pi 5 上使用 Hailo8 进行 YOLOv8m 多流检测基准测试。
+title: 在 Raspberry Pi 上使用 Hailo8 进行多流推理基准测试
 keywords:
   - 边缘计算
   - Raspberry Pi 5
@@ -8,23 +8,19 @@ keywords:
 image: https://files.seeedstudio.com/wiki/multistream_benchmark_hailo8/raspberry_pi_ai_hat.webp
 slug: /cn/benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8
 last_update:
-  date: 05/15/2025
+  date: 11/21/2024
   author: Jiahao
 
 no_comments: false # 用于 Disqus
 ---
 
-# 在 Raspberry Pi 5 上使用 Hailo8 进行多流推理的基准测试
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+# 在 Raspberry Pi 5 上使用 Hailo8 进行多流推理基准测试
 
 ## 简介
 
-[YOLOv8](https://github.com/ultralytics/ultralytics)（You Only Look Once 第 8 版）是 YOLO 系列中最受欢迎的实时姿态估计和目标检测模型。它在前几代的基础上，通过在速度、精度和灵活性方面的多项改进，进一步提升了性能。[Hailo8](https://www.seeedstudio.com/Raspberry-Pi-Al-HAT-26-TOPS-p-6243.html) 被用于加速推理速度，提供 26 TOPS 的 AI 性能。
+[YOLOv8](https://github.com/ultralytics/ultralytics)（You Only Look Once 第八版）是 YOLO 系列中最受欢迎的实时姿态估计和目标检测模型。它通过引入多项速度、准确性和灵活性方面的改进，继承了其前代的优势。[Hailo8](https://www.seeedstudio.com/Raspberry-Pi-Al-HAT-26-TOPS-p-6243.html) 用于加速推理速度，具有 26 TOPS 的 AI 性能。
 
-本文档展示了在 Raspberry Pi 5 上使用 Hailo8 进行 YOLOv8m 的目标检测基准测试。所有测试均使用相同的模型（YOLOv8m），量化为 int8，输入分辨率为 640x640，批量大小设置为 8。
+本维基展示了在 Raspberry Pi 5 上使用 Hailo8 进行 YOLOv8m 的目标检测基准测试。所有测试均使用相同的模型（YOLOv8m），量化为 int8，输入分辨率为 640x640，批量大小设置为 8。
 
 ## 准备硬件
 
@@ -74,6 +70,7 @@ sudo apt full-upgrade
 sudo dpkg -i hailort_4.19.0_arm64.deb 
 
 sudo reboot
+
 ```
 
 ### 安装 dkms
@@ -87,6 +84,7 @@ sudo apt-get install dkms
 ```
 sudo dpkg -i hailort-pcie-driver_4.19.0_all.deb 
 sudo reboot
+
 ```
 
 ### 创建并激活 Python 虚拟环境
@@ -102,7 +100,7 @@ source hailo_env/bin/activate
 pip install hailort-4.19.0-cp311-cp311-linux_aarch64.whl 
 ```
 
-### 检查软件是否已安装
+### 检查软件是否安装成功
 
 ```
 hailortcli fw-control identify
@@ -126,20 +124,21 @@ Product Name: HAILO-8 AI ACC M.2 M KEY MODULE EXT TEMP
 
 ### 将 PCIe 设置为 gen2/gen3（gen3 比 gen2 更快）：
 
-在 ```/boot/firmware/config.txt``` 中添加以下内容：
+在 ```/boot/firmware/config.txt``` 文件中添加以下内容：
 
 ```
-# 启用 PCIe 外部连接器
+#启用 PCIe 外部连接器
 
 dtparam=pciex1
 
-# 强制使用 Gen 3.0 速度
+#强制使用 Gen 3.0 速度
 
 dtparam=pciex1_gen=3
+
 ```
 
 :::note
-如果您想使用 gen2，请注释掉 `dtparam=pciex1_gen=3`
+如果您想使用 gen2，请注释掉 dtparam=pciex1_gen=3
 :::
 
 ### 安装 Tapps
@@ -156,7 +155,7 @@ sudo apt-get install -y libcairo2-dev libgirepository1.0-dev libgstreamer1.0-dev
 sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0
 ```
 
-#### 设置 hailo_pci 的 force_desc_page_size 
+#### 设置 hailo_pci force_desc_page_size
 
 ```
 sudo nano /etc/modprobe.d/hailo_pci.conf
@@ -176,7 +175,7 @@ options hailo_pci force_desc_page_size=4096
 sudo reboot
 ```
 
-#### 下载 Tapps 
+#### 下载 Tapps
 
 ```
 git clone --depth 1 https://github.com/hailo-ai/tappas.git
@@ -196,7 +195,7 @@ git clone https://github.com/hailo-ai/hailort.git hailort/sources
 nano downloader/common.py
 ```
 
-将内容修改如下，在 `common.py` 中添加 `RaspberryPI5 = 'rpi5'`：
+将内容修改如下，添加 `RaspberryPI5 = 'rpi5'` 到 common.py：
 
 ```
 class Platform(Enum):
@@ -219,7 +218,7 @@ class Platform(Enum):
 ./install.sh --skip-hailort --target-platform rpi5
 ```
 
-#### 将批量大小更改为 8
+#### 将批量大小设置为 8
 
 ```
 cd ./apps/h8/gstreamer/general/multistream_detection/
@@ -250,7 +249,7 @@ hailonet hef-path=$hef_path batch-size=$batch_size device-count=$device_count sc
 queue name=hailo_postprocess0 leaky=no max-size-buffers=30 max-size-bytes=0 max-size-time=0 ! \
 ```
 
-最后按下 `Ctrl+X`，然后输入 `Y` 保存文件。
+最后，按下 `Ctrl+X` 并输入 `Y` 保存文件。
 
 ## 运行多流推理
 
@@ -261,7 +260,7 @@ sudo chmod +x multi_stream_detection.sh
 
 ## 结果
 
-所有结果基于模型输入尺寸为 640x640，批量大小为 8，视频分辨率为 1280x760（即 720p）的推理。
+所有结果均基于模型输入尺寸为 640x640，批量大小为 8，视频分辨率为 1280x760（即 720p）进行推理。
 
 <div class="table-center">
 
@@ -276,12 +275,12 @@ sudo chmod +x multi_stream_detection.sh
 </div>
 
 <div align="center">
-<iframe width="800" height="400" src="https://www.youtube.com/embed/CHxg7qWTMYw" title="Hailo8 与 RPi5 AI Box 的多流推理" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="800" height="400" src="https://www.youtube.com/embed/CHxg7qWTMYw" title="在 Hailo8 和 RPi5 AI Box 上进行多流推理" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时拥有顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

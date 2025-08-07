@@ -1,29 +1,28 @@
 ---
-title: I2C端口
+title: I2C
 nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-IO-I2C/
+image: https://wiki.seeedstudio.com/cn/Wio-Terminal-IO-I2C/
 slug: /cn/Wio-Terminal-IO-I2C
 last_update:
-  date: 3/10/2024
-  author: 金菊
+  date: 01/11/2022
+  author: gunengyu
 ---
+# 在 Wio Terminal 上使用 Grove I2C 端口
 
-# 在Wio Terminal上使用Grove I2C端口
-
-这个仓库演示了如何在Wio Terminal上使用Grove I2C端口，您可以直接与Grove生态系统进行插拔式功能的使用！
+本仓库演示了如何在 Wio Terminal 上使用 Grove I2C 端口，您可以简单地使用这个即插即用功能与 Grove 生态系统配合使用！
 
 ## 端口配置
 
-要在Wio Terminal上使用Grove I2C端口，只需将使用I2C的Grove传感器连接到Wio Terminal上的物理I2C端口即可。
+要在 Wio Terminal 上使用 Grove I2C 端口，只需将使用 I2C 的 Grove 传感器连接到 Wio Terminal 上的物理 I2C 端口即可。
 
-**Note:** 记得在Arduino IDE中包含传感器库。有关更多信息，请参考 [如何安装库](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) 。
+**注意：** 记得在 Arduino IDE 中包含传感器库。更多信息请参考 [如何安装库](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/)。
 
 ## 示例代码
 
-在这个示例中，使用了一个Grove LCD来演示。这是RGB LCD库中的 `HelloWorld` 示例。
+在这个示例中，使用了 Grove LCD 来进行演示。这是来自 RGB LCD 库的 `HelloWorld` 示例。
 
 ```cpp
 #include <Wire.h>
@@ -60,9 +59,9 @@ void loop()
 }
 ```
 
-## 技术支持 & 产品讨论
+## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供不同的支持，以确保您对我们的产品拥有尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

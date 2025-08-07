@@ -6,33 +6,33 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-FS-Overview
 last_update:
-  date: 3/09/2024
-  author: 金菊
+  date: 1/17/2023
+  author: jianjing Huang
 ---
 
 # 概述
 
-该仓库介绍了如何安装在Wio Terminal上使用的文件系统库。它提供了与SD卡一起进行文件操作的基本功能，使用SPI接口可以读取/写入SD卡。
+本仓库介绍如何安装在 Wio Terminal 上使用的文件系统库。它提供了与 SD 卡进行文件操作的基本功能，允许使用 SPI 接口从 SD 卡读取/写入数据。
 
 ## 安装文件系统库
 
-1. 访问 [Seeed_Arduino_FS](https://github.com/Seeed-Studio/Seeed_Arduino_FS/tree/master) 仓库并将整个仓库下载到本地驱动器。
+1. 访问 [Seeed_Arduino_FS](https://github.com/Seeed-Studio/Seeed_Arduino_FS/tree/master) 仓库，并将整个仓库下载到您的本地驱动器。
 
-2. 现在，可以将SFUD库安装到Arduino IDE中。打开Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`, 选择刚刚下载的 `Seeed_Arduino_FS` 文件。
+2. 现在，可以将 FS 库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，然后选择您刚刚下载的 `Seeed_Arduino_FS` 文件。
 
 ![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg)
 
-### 安装依赖的SFUD库
+### 安装依赖的 SFUD 库
 
-1. 访问 [Seeed_Arduino_SFUD](https://github.com/Seeed-Studio/Seeed_Arduino_SFUD) 仓库并将整个仓库下载到本地驱动器。
+1. 访问 [Seeed_Arduino_SFUD](https://github.com/Seeed-Studio/Seeed_Arduino_SFUD) 仓库，并将整个仓库下载到您的本地驱动器。
 
-2. 现在，可以将SFUD库安装到Arduino IDE中。打开Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`, 选择刚刚下载的 `Seeed_Arduino_SFUD` 文件。
+2. 现在，可以将 SFUD 库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，然后选择您刚刚下载的 `Seeed_Arduino_SFUD` 文件。
 
-## MicroSD卡格式
+## MicroSD 卡格式
 
-- **最大MicroSD卡容量: `16GB`**
+- **最大 MicroSD 卡容量：`16GB`**
 
-- **支持的MicroSD卡格式:**
+- **支持的 MicroSD 卡格式：**
 
   - FAT12
 

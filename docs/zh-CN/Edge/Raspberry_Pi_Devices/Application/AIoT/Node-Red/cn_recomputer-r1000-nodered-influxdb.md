@@ -1,7 +1,7 @@
 ---
-description: 在 reComputer R1000 上部署 InfluxDB，用于高效的时间序列数据收集和分析，适用于物联网应用。本指南涵盖安装、配置和使用，帮助您在树莓派驱动的边缘控制器上充分利用 InfluxDB 的强大功能。直接在网络边缘实现实时洞察和强大的监控能力。
+description: 在 reComputer R1000 上部署 InfluxDB，以实现物联网应用中高效的时序数据收集和分析。本指南涵盖安装、配置和使用方法，帮助您在基于树莓派的边缘控制器上充分利用 InfluxDB 的强大功能。直接在网络边缘实现实时洞察和强大的监控能力。
 
-title: reComputer R1000 配合 Node-Red 和 InfluxDB
+title: 使用 Node-RED 和 InfluxDB 的 reComputer R1000
 keywords:
   - 边缘控制器
   - reComputer R1000
@@ -10,16 +10,12 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png
 slug: /cn/recomputer_r1000_node_red_influxdb
 last_update:
-  date: 05/15/2025
+  date: 07/03/2024
   author: Kasun Thushara
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 介绍
 
-在 reComputer R1000 上部署 [InfluxDB](https://www.influxdata.com/)，一个基于树莓派的边缘控制器，可以在网络边缘实现强大的时间序列数据收集和分析。这种设置非常适合物联网应用，提供实时洞察和监控能力。通过利用轻量级但功能强大的 InfluxDB 数据库，您可以直接在 reComputer R1000 上高效地管理和分析传感器数据。以下指南概述了在 reComputer R1000 上安装、配置和使用 InfluxDB 的步骤，确保无缝集成到您的数据基础设施中。
+在 reComputer R1000（一个基于树莓派的边缘控制器）上部署 [InfluxDB](https://www.influxdata.com/) 可以在网络边缘实现强大的时序数据收集和分析。这种设置非常适合物联网应用，能够提供实时洞察和监控能力。通过利用轻量级但功能强大的 InfluxDB 数据库，您可以直接在 reComputer R1000 上高效地管理和分析传感器数据。以下指南概述了在 reComputer R1000 上安装、配置和使用 InfluxDB 的步骤，确保其无缝集成到您的数据基础设施中。
 
 ### 硬件准备
 
@@ -35,7 +31,7 @@ last_update:
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html">
-              <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+              <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
           </a></div></td>
         </tr>
     </table>
@@ -43,15 +39,15 @@ last_update:
 
 ### 软件准备
 
-我们已经准备了一份 [Node-RED 入门指南](https://wiki.seeedstudio.com/recomputer_r1000_getting_statrted_node_red/)。建议您在继续阅读本 Wiki 之前先查看该指南。
+我们已经准备了一份 [Node-RED 入门指南](https://wiki.seeedstudio.com/cn/recomputer_r1000_getting_statrted_node_red/)。建议您在继续阅读本 Wiki 之前先查看该指南。
 
 ## 在 reComputer R1000 上安装 InfluxDB
 
-本指南涵盖在 reComputer R1000 边缘控制器上安装和设置 InfluxDB 的步骤。
+本指南涵盖了在 reComputer R1000 边缘控制器上安装和设置 InfluxDB 的步骤。
 
 **步骤 1**：更新系统
 
-首先，通过运行以下命令确保您的系统是最新的：SSH 到 reComputer R1000 并执行
+首先，通过运行以下命令确保您的系统是最新的：通过 SSH 连接到 reComputer R1000 并运行
 
 ```sh
 sudo apt update
@@ -62,10 +58,10 @@ sudo apt update
 将 InfluxDB 的 GPG 密钥和仓库添加到您的系统。
 
 添加 GPG 密钥：
-
+   
 ```sh
 curl https://repos.influxdata.com/influxdata-archive.key | gpg --dearmor | sudo tee /usr/share/keyrings/influxdb-archive-keyring.gpg >/dev/null
-```
+ ```
 
 将仓库添加到源列表：
 
@@ -113,7 +109,7 @@ sudo systemctl start influxdb
 
 ## 测试 InfluxDB
 
-通过访问 InfluxDB CLI 工具执行基本的数据库操作。
+使用 InfluxDB CLI 工具执行基本的数据库操作。
 
 **步骤 1**. 打开终端：
 
@@ -266,7 +262,7 @@ return msg;
 
 1. 点击 `inject` 节点上的按钮以手动触发流程。
    
-2. 在终端中运行以下命令，检查您的 InfluxDB 数据库是否成功写入数据：
+2. 在终端中运行以下命令，检查数据是否已成功写入 InfluxDB 数据库：
 
 ```sh
 influx -username admin -password <password>
@@ -280,7 +276,7 @@ SELECT * FROM lab
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供了多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供了多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

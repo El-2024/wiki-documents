@@ -1,25 +1,21 @@
 ---
-description: 在 Edgebox RPi 200 上部署 InfluxDB，用于高效的时间序列数据收集和分析，适用于物联网应用。本指南涵盖安装、配置和使用，帮助您在基于树莓派的边缘控制器上充分利用 InfluxDB 的强大功能，实现实时洞察和强大的边缘网络监控能力。
+description: 在 Edgebox RPi 200 上部署 InfluxDB，以实现物联网应用中高效的时序数据收集和分析。本指南涵盖安装、配置和使用步骤，帮助您在基于树莓派的边缘控制器上充分利用 InfluxDB 的强大功能。直接在网络边缘实现实时洞察和强大的监控能力。
 
 title: Edge Box RPi 200 配置 Node-RED 和 InfluxDB
 keywords:
   - 边缘控制器
   - Edge-Box
-  - Node-RED
+  - Node-Red
   - InfluxDB
 image: https://files.seeedstudio.com/wiki/Edge_Box/nodered/EdgeBox-RPi-200-font.jpg
 slug: /cn/edge_box_rpi_200_node_red_influxdb
 last_update:
-  date: 05/15/2025
+  date: 2024/06/13
   author: Kasun Thushara
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+## 介绍
 
-## 简介
-
-在 Edgebox RPi 200（基于树莓派的边缘控制器）上部署 [InfluxDB](https://www.influxdata.com/) 可以实现强大的时间序列数据收集和分析功能，直接在网络边缘进行操作。这种设置非常适合物联网应用，提供实时洞察和监控能力。通过利用轻量级但功能强大的 InfluxDB 数据库，您可以高效地直接在 Edgebox 上管理和分析传感器数据。以下指南概述了在 Edgebox RPi 200 上安装、配置和使用 InfluxDB 的步骤，确保其无缝集成到您的数据基础设施中。
+在 Edgebox RPi 200（基于树莓派的边缘控制器）上部署 [InfluxDB](https://www.influxdata.com/) 可以在网络边缘实现强大的时序数据收集和分析。这种设置非常适合物联网应用，能够提供实时洞察和监控能力。通过利用轻量级但功能强大的 InfluxDB 数据库，您可以直接在 Edgebox 上高效管理和分析传感器数据。以下指南概述了在 Edgebox RPi 200 上安装、配置和使用 InfluxDB 的步骤，确保无缝集成到您的数据基础设施中。
 
 ### 硬件准备
 
@@ -43,7 +39,7 @@ last_update:
 
 ### 软件准备
 
-Edge Box 随附预装的 Raspberry Pi OS。如果您是第一次启动此设备，请阅读我们的 [快速入门 Wiki](https://wiki.seeedstudio.com/Edge_Box_introduction/)。我们还准备了 [Node-RED 快速入门指南](https://wiki.seeedstudio.com/Edge-Box-Getting-Started-with-Node-Red/)。建议您在继续阅读本教程之前先查看该指南。在本教程中，我们将连接运行 YABE 室温模拟器的主机 PC 与运行在 Edge Box 上的 Node-RED。
+Edge Box 随附预装的 Raspberry Pi OS。如果您是第一次启动此设备，请阅读我们的 [入门指南 Wiki](https://wiki.seeedstudio.com/cn/Edge_Box_introduction/)。我们还准备了 [Node-RED 入门指南](https://wiki.seeedstudio.com/cn/Edge-Box-Getting-Started-with-Node-Red/)。建议您在继续阅读本教程之前先查看这些指南。在本教程中，我们将连接运行 YABE 室温模拟器的主机 PC 与运行在 Edge Box 上的 Node-RED。
 
 ## 在 Edgebox RPi 200 上安装 InfluxDB
 
@@ -67,7 +63,7 @@ sudo apt update
 curl https://repos.influxdata.com/influxdata-archive.key | gpg --dearmor | sudo tee /usr/share/keyrings/influxdb-archive-keyring.gpg >/dev/null
  ```
 
-将仓库添加到 sources 列表：
+将仓库添加到源列表：
 
 ```sh
 echo "deb [signed-by=/usr/share/keyrings/influxdb-archive-keyring.gpg] https://repos.influxdata.com/debian stable main" | sudo tee /etc/apt/sources.list.d/influxdb.list
@@ -215,7 +211,7 @@ influx -username admin -password <password>
 
 **步骤 1**. 双击 `function` 节点。
 
-**步骤 2**. 输入一个名称（例如 `Format Data for InfluxDB`）。
+**步骤 2**. 输入一个名称（例如，`Format Data for InfluxDB`）。
 
 **步骤 3**. 在函数编辑器中输入以下代码：
 
@@ -230,14 +226,14 @@ return msg;
 ```
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/js-influxdb.PNG" /></center>
 
-**步骤 4**. 点击 "Done"。
+**步骤 4**. 点击“完成”。
 
 ### InfluxDB Out 节点
 
 此节点将格式化的数据发送到 InfluxDB。
 
 **步骤 1**. 双击 `influxdb out` 节点。
-
+   
 **步骤 2**. 输入以下详细信息：
 
 - **名称**: labdata
@@ -247,7 +243,7 @@ return msg;
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/influxin.PNG" /></center>
 
 **步骤 3**. 点击铅笔图标以添加新的 InfluxDB 服务器配置。
-
+   
 **步骤 4**. 输入以下详细信息：
 
 - **名称**: InfluxDB
@@ -258,14 +254,14 @@ return msg;
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/server-ifdb.PNG" /></center>
 
-**步骤 5**. 点击 "Add"，然后点击 "Done"。
+**步骤 5**. 点击“添加”，然后点击“完成”。
 
-**步骤 6**. 点击 "Deploy" 保存并部署您的流程。
+**步骤 6**. 点击“部署”以保存并部署您的流程。
 
 ### 测试流程
 
 1. 点击 `inject` 节点上的按钮以手动触发流程。
-
+   
 2. 在终端中运行以下命令，检查您的 InfluxDB 数据库是否成功写入数据：
 
 ```sh
@@ -280,7 +276,7 @@ SELECT * FROM lab
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供了多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

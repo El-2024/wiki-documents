@@ -4,20 +4,19 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-LCD-APIs/
+image: https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-APIs/
 slug: /cn/Wio-Terminal-LCD-APIs
 last_update:
-  date: 3/10/2024
-  author: 金 菊
+  date: 01/11/2022
+  author: gunengyu
 ---
-
 # TFT LCD API 示例
 
-该仓库提供了一些TFT LCD库示例的GIF动画，所有示例都可以在 `File`->`Example`->`Seeed_Arduino_LCD` -> `320 x 240`中找到。您可以使用这些示例来实现自己的设计。
+本仓库为 TFT LCD 库示例提供了一些 gif 图片，所有示例都可以在 `File`->`Example`->`Seeed_Arduino_LCD` -> `320 x 240` 下找到。您可以使用这些示例来实现您的设计。
 
-有关TFT LCD屏幕的更多信息，请访问 [TFT LCD 屏幕基础知识](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Basic/).
+有关 TFT LCD 屏幕的更多信息，请访问 [TFT LCD 屏幕基础知识](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Basic/)。
 
-## 有用的图形
+## 实用图形
 
 ### TFT_Pie_Chart
 
@@ -31,7 +30,7 @@ last_update:
 
 <div align="left"><img width={253} src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/IMG_0132.2019-12-03%2014_27_24.gif" /></div>
 
-## 显示数据
+## 数据显示
 
 ### TFT_Clock
 
@@ -65,9 +64,9 @@ last_update:
 
 <div align="left"><img width={253} src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/IMG_0141.2019-12-03%2014_57_30.gif" /></div>
 
-## 技术支持 & 产品讨论
+## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们将为您提供不同的支持，以确保您对我们的产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

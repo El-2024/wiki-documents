@@ -1,21 +1,15 @@
 ---
-description: LVGL for reTerminal
-title:  LVGL for reTerminal
+description: LVGL 用于 reTerminal
+title:  LVGL 用于 reTerminal
 keywords:
   - Edge
   - reTerminal 应用
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reTerminal-build-UI-using-LVGL
 last_update:
-  date: 05/15/2025
+  date: 2023/1/31
   author: jianjing Huang
 ---
-
-#  define USE_MONITOR         1
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/lvgl_banner.jpg" alt="pir" width="800" height="auto"/></p>
 
@@ -34,24 +28,24 @@ LVGL 提供了创建嵌入式 GUI 所需的一切，包括易于使用的图形�
 - 高级图形引擎：动画、抗锯齿、不透明度、平滑滚动、混合模式等。
 - 支持[多种输入设备](https://docs.lvgl.io/master/overview/indev.html)：触摸屏、鼠标、键盘、编码器、按钮等。
 - 支持[多显示器](https://docs.lvgl.io/master/overview/display.html)。
-- 硬件无关，可与任何微控制器和显示器一起使用。
-- 可扩展以使用极少的内存（64 kB Flash，16 kB RAM）。
-- 支持多语言，包含 UTF-8 处理、CJK、双向和阿拉伯语脚本支持。
+- 硬件无关，可与任何微控制器和显示器配合使用。
+- 可扩展以适应小内存设备（64 kB Flash，16 kB RAM）。
+- 支持多语言，包含 UTF-8 处理、CJK、双向文本和阿拉伯语脚本支持。
 - 通过 [CSS 样式](https://docs.lvgl.io/master/overview/style.html)完全自定义图形元素。
-- 强大的布局功能，灵感来自 CSS：[Flexbox](https://docs.lvgl.io/master/layouts/flex.html) 和 [Grid](https://docs.lvgl.io/master/layouts/grid.html)。
-- 支持但不依赖于操作系统、外部内存和 GPU。（内置支持 STM32 DMA2D 和 NXP PXP 及 VGLite）。
+- 受 CSS 启发的强大布局：[Flexbox](https://docs.lvgl.io/master/layouts/flex.html) 和 [Grid](https://docs.lvgl.io/master/layouts/grid.html)。
+- 支持但不依赖操作系统、外部内存和 GPU。（内置支持 STM32 DMA2D、NXP PXP 和 VGLite）。
 - 即使使用[单帧缓冲区](https://docs.lvgl.io/master/porting/display.html)也能实现平滑渲染。
 - 使用 C 编写，并兼容 C++。
-- Micropython 绑定通过 [Micropython 中的 LVGL API](https://blog.lvgl.io/2019-02-20/micropython-bindings) 提供支持。
-- [模拟器](https://docs.lvgl.io/master/get-started/pc-simulator.html) 可在无需嵌入式硬件的情况下在 PC 上开发。
+- Micropython 绑定通过 [LVGL API](https://blog.lvgl.io/2019-02-20/micropython-bindings) 暴露在 Micropython 中。
+- [模拟器](https://docs.lvgl.io/master/get-started/pc-simulator.html) 可在 PC 上开发，无需嵌入式硬件。
 - 超过 100 个简单的[示例](https://github.com/lvgl/lvgl/tree/master/examples)。
-- [文档](http://docs.lvgl.io/)和 API 参考在线和 PDF 格式可用。
+- [文档](http://docs.lvgl.io/)和 API 参考在线和 PDF 可用。
 
 ## 准备开发环境
 
 ### 在 reTerminal 上
 
-在 Raspberry Pi OS 上，你可以通过终端轻松安装 SDL2：
+在 Raspberry Pi OS 上，可以通过终端轻松安装 SDL2：
 
 ```bash
 sudo apt-get update && sudo apt-get install build-essential libsdl2-dev cmake  -y
@@ -88,9 +82,9 @@ Linux 版本：[链接](https://lvgl.io/assets/edgeline/EdgeLine_v0_3_linux.zip)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/lvgl.gif" alt="pir" width="800" height="auto"/></p>
 
-以下步骤可以在 Raspberry Pi OS 上使用 CMake 运行。
+以下步骤可在 Raspberry Pi OS 上使用 CMake 运行。
 
-确保已安装 CMake，即在终端中可以运行 `cmake` 命令。
+确保已安装 CMake，即 cmake 命令可以在终端中运行。
 
 ```bash
 cd pc_simulator/
@@ -100,33 +94,33 @@ cmake ..
 make -j4
 ```
 
-生成的二进制文件位于 `pc_simulator/build/bin/main`，可以通过以下命令运行：
+二进制文件将位于 pc_simulator/build/bin/main，可以通过以下命令运行：
 
 ```bash
 DISPLAY=:0 ./bin/main
 ```
 
-这将在窗口模式下显示小部件演示——如果需要更改为全屏模式，请打开
+这将在窗口模式下显示小部件演示——要将其更改为全屏模式，请打开
 ```pc_simulator/lv_drivers/sdl/sdl.c```
-并将第 #L344 行更改为：
+并将第 344 行更改为：
 
 ```c
 static void window_create(monitor_t * m)
 {
     m->window = SDL_CreateWindow("TFT Simulator",
                             SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-                            1280 , 720 , SDL_WINDOW_FULLSCREEN);       /*最后一个参数：SDL_WINDOW_BORDERLESS 用于隐藏边框*/
+                            1280 , 720 , SDL_WINDOW_FULLSCREEN);       /*最后一个参数 SDL_WINDOW_BORDERLESS 用于隐藏边框*/
 }
 ```
 
-此外，在 `pc_simulator/lv_drv_conf.h` 文件的第 #L90 行更改屏幕分辨率：
+此外，在 pc_simulator/lv_drv_conf.h 文件的第 90 行更改屏幕分辨率：
 
 ```conf
 /*-------------------
  *  PC 显示器
  *-------------------*/
 #ifndef USE_MONITOR
-
+#  define USE_MONITOR         1
 #endif
 
 #if USE_MONITOR
@@ -134,22 +128,22 @@ static void window_create(monitor_t * m)
 #  define MONITOR_VER_RES     720
 ```
 
-重新编译并执行二进制文件以查看全屏模式的演示应用程序！
+重新编译并执行二进制文件以查看全屏演示应用程序！
 
 ```bash
 make -j4
 DISPLAY=:0 ./bin/main
 ```
 
-如果触摸方向不正确，需要将 `/boot/config.txt` 文件的第 89 行更改为 `dtoverlay=reTerminal,tp_rotate=0`。
+如果触摸方向不正确，需要将 ```/boot/config.txt``` 的第 89 行更改为 ```dtoverlay=reTerminal,tp_rotate=0```。
 
-## 构建您自己的 GUI 应用程序
+## 构建自己的 GUI 应用程序
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/lvgl_reterminal.gif" alt="pir" width="800" height="auto"/></p>
 
 要了解如何使用 LVGL 8.0 为 reTerminal 构建自己的 UI 应用程序，可以查看 [此 GitHub 仓库](https://github.com/AIWintermuteAI/Seeed_reTerminal_LVGL_UI_Demo) 中的示例代码。
 
-所有必要的组件都在 `main.c` 中导入并初始化，之后调用主 UI 函数。UI 描述、回调和辅助函数位于 **lv_demo_reterminal_UI/lv_demo_reterminal_UI.c** 文件中。
+所有必要的组件都在 main.c 中导入并初始化，之后调用主 UI 函数。UI 描述、回调和辅助函数位于 **lv_demo_reterminal_UI/lv_demo_reterminal_UI.c** 文件中。
 
 ```cpp
     tv = lv_tabview_create(lv_scr_act(), LV_DIR_TOP, tab_h);
@@ -164,7 +158,7 @@ DISPLAY=:0 ./bin/main
     lv_obj_t * t3 = lv_tabview_add_tab(tv, "Stats");
 ```
 
-我们在活动屏幕上创建了一个 Tabview 小部件，并用三个标签页填充它：Assistant、Debug 和 Stats。
+我们在活动屏幕上创建一个 Tabview 小部件，并用三个标签页填充它：Assistant、Debug 和 Stats。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/lvgl-1.png" alt="pir" width="800" height="auto"/></p>
 
@@ -180,7 +174,7 @@ DISPLAY=:0 ./bin/main
     evdev_lis3dh_init();
 ```
 
-此外，还在 Tabview 小部件上创建了颜色更改元素，并初始化了内置加速度计。之后，我们创建了三个带有虚拟输入数据的定时器回调：
+此外，还在 Tabview 小部件上创建了颜色更改元素，并初始化了内置加速度计。之后，我们创建了三个定时器回调函数，使用虚拟输入数据：
 
 ```cpp
     static uint32_t user_data = 10;
@@ -189,7 +183,7 @@ DISPLAY=:0 ./bin/main
     lv_timer_t * accelerometer_timer = lv_timer_create(accelerometer_timer_cb, 50,  &user_data);
 ```
 
-这些回调分别负责获取系统时间、系统状态（CPU、内存、磁盘空间、以太网当前速度等）和加速度计读数。您可以在 `lv_demo_reterminal_UI.c` 文件的底部找到这三个回调函数。
+这些回调分别负责获取系统时间、系统状态（CPU、内存、磁盘空间、以太网当前速度等）以及加速度计读数。您可以在 lv_demo_reterminal_UI.c 文件底部找到这三个回调函数。
 
 ```cpp
 void time_timer_cb(lv_timer_t * timer)
@@ -238,13 +232,13 @@ void accelerometer_timer_cb(lv_timer_t * timer)
 }
 ```
 
-对于您的特定应用程序，可能更适合使用其他小部件而不是 Tabview。您可以参考 [LVGL 8.0 小部件的完整描述](https://docs.lvgl.io/master/widgets/index.html) 以获取用法和示例。
+对于您的特定应用程序，可能更适合使用其他小部件而不是 Tabview。您可以参考 [LVGL 8.0 小部件的完整描述](https://docs.lvgl.io/master/widgets/index.html) 以了解用法和示例。
 
-如果您决定在使用 LVGL 为 reTerminal 创建第一个 UI 应用程序时紧密遵循我们的演示应用程序，以下是关于其中一个函数（**assistant_create()**）内部发生的更详细信息。创建新应用程序的工作流程将类似：
+如果您决定在为 reTerminal 创建第一个 UI 应用程序时紧密遵循我们的演示应用程序，下面可以找到有关其中一个函数（**assistant_create()**）内部发生的详细信息。创建新应用程序的工作流程将类似：
 
 1) 在屏幕上初始化小部件
 2) 创建基于定时器或事件的回调以从传感器/系统获取数据
-3) 根据数据更改小部件的内容——通常通过在代码顶部声明的全局变量完成
+3) 根据数据更改小部件的内容——通常使用在代码顶部声明的全局变量完成
 
 **assistant_create**
 我们为标签页创建一个面板对象并设置其高度。
@@ -256,14 +250,14 @@ void accelerometer_timer_cb(lv_timer_t * timer)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/lvgl-2.png" alt="pir" width="800" height="auto"/></p>
 
-然后，我们从位于 `assets` 文件夹中的 C 数组创建一个图像按钮对象，该数组是通过 [LVGL 图像转换工具](https://lvgl.io/tools/imageconverter) 获得的。我们还初始化并分配了按钮按下时的样式转换（按钮按下时变为绿色）。此外，将事件回调 **speech_event_cb** 分配给按钮按下事件——由于这是一个模拟示例，它只会在终端中打印出一段文本。但在实际应用中，它可以用于启动智能助手。
+然后我们从位于 assets 文件夹中的 C 数组创建一个图像按钮对象，该数组是使用 [LVGL 图像转换工具](https://lvgl.io/tools/imageconverter) 获得的。我们还初始化并分配按钮按下样式转换到图像按钮对象（按钮按下时变为绿色）。此外，将事件回调 **speech_event_cb** 分配给按钮按下事件——由于这只是一个模拟示例，它只会在终端中打印出文本。但在实际应用中，它可以用于启动智能助手。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/lvgl-3.png" alt="pir" height="400" height="auto"/></p>
 
 ```cpp
     LV_IMG_DECLARE(speech_btn_img);
 
-    /* 创建一个宽度变换和重新着色的过渡动画。 */
+    /*创建一个宽度变换和重新着色的过渡动画。*/
     static lv_style_prop_t tr_prop[] = {LV_STYLE_IMG_RECOLOR_OPA, 0};
     static lv_style_transition_dsc_t tr;
     lv_style_transition_dsc_init(&tr, tr_prop, lv_anim_path_linear, 500, 0, NULL);
@@ -273,13 +267,13 @@ void accelerometer_timer_cb(lv_timer_t * timer)
     lv_style_set_text_color(&style_def, lv_color_white());
     lv_style_set_transition(&style_def, &tr);
 
-    /* 按下按钮时使其变暗并变宽 */
+    /*按下按钮时变暗并使其变宽*/
     static lv_style_t style_pr;
     lv_style_init(&style_pr);
     lv_style_set_img_recolor_opa(&style_pr, LV_OPA_70);
     lv_style_set_img_recolor(&style_pr, lv_palette_main(LV_PALETTE_GREEN));
 
-    /* 创建一个图像按钮 */
+    /*创建一个图像按钮*/
     lv_obj_t * speech_btn = lv_imgbtn_create(panel1);
     lv_imgbtn_set_src(speech_btn, LV_IMGBTN_STATE_RELEASED, NULL, &speech_btn_img, NULL);
     //lv_img_set_zoom(speech_btn, 128);
@@ -289,7 +283,7 @@ void accelerometer_timer_cb(lv_timer_t * timer)
     lv_obj_add_style(speech_btn, &style_pr, LV_STATE_PRESSED);
 ```
 
-在下一个代码块中，我们为时间、日期和用户问候创建文本标签。这些标签使用默认文本初始化，并将在 `time_timer` 回调中每秒更新一次。
+在下一个代码块中，我们为时间、日期和用户问候创建文本标签。这些标签以默认文本初始化，并将在 `time_timer` 回调中每秒更新一次。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/lvgl-4.png" alt="pir" width="600" height="auto"/></p>
 
@@ -326,7 +320,7 @@ void accelerometer_timer_cb(lv_timer_t * timer)
     static lv_coord_t grid_main_col_dsc[] = {LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
     static lv_coord_t grid_main_row_dsc[] = {LV_GRID_CONTENT, LV_GRID_CONTENT, LV_GRID_TEMPLATE_LAST};
 
-    /* 创建顶部面板 */
+    /*创建顶部面板*/
     static lv_coord_t grid_1_col_dsc[] = {400, 50, LV_GRID_CONTENT, LV_GRID_FR(2), LV_GRID_FR(1), LV_GRID_FR(1), LV_GRID_TEMPLATE_LAST};
     static lv_coord_t grid_1_row_dsc[] = {200, 100, 100, LV_GRID_CONTENT, 10, LV_GRID_CONTENT, LV_GRID_CONTENT, LV_GRID_TEMPLATE_LAST};
 
@@ -342,7 +336,7 @@ void accelerometer_timer_cb(lv_timer_t * timer)
     lv_obj_set_grid_cell(date_label, LV_GRID_ALIGN_START, 3, 1, LV_GRID_ALIGN_CENTER, 3, 1);
 ```
 
-其余选项卡包含不同的小部件，但整体工作流程相同。如果您需要了解特定小部件的参数或用法，请查阅 LVGL 文档。
+其余选项卡包含不同的小部件，但整体工作流程相同。如果您需要了解有关特定小部件的参数或用法的更多信息，请查阅 LVGL 文档。
 
 要编译应用程序，请在项目文件夹（包含 main.c 源文件）中运行以下命令：
 
@@ -359,7 +353,7 @@ make -j4
 DISPLAY=:0 ./../bin/main
 ```
 
-如果您向项目添加了其他文件夹，请确保相应修改 CMakeLists.txt 并从构建目录重新运行 cmake ..，否则会遇到链接错误。
+如果您向项目添加了其他文件夹，请确保相应更改 CMakeLists.txt 并从 build 目录重新运行 cmake ..，否则会遇到链接错误。
 
 ## 资源
 

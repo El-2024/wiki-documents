@@ -1,55 +1,49 @@
 ---
-description: reComputer 工业 J20 系列的硬件和接口使用
-title: reComputer 工业 J20 硬件和接口使用
+description: reComputer Industrial J20 系列的硬件和接口使用
+title: reComputer Industrial J20 硬件和接口使用
 tags:
-  - reComputer 工业
+  - reComputer Industrial
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reComputer_Industrial_J20_Hardware_Interfaces_Usage
 last_update:
-  date: 05/15/2025
+  date: 2023/05/16
   author: Lakshantha
 ---
 
-# USB 915
+本篇 Wiki 介绍了 reComputer Industrial J2012 和 J2011 的各种硬件和接口，以及如何使用它们来扩展您的项目创意。
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+## 拆解 reComputer Industrial
 
-本 Wiki 介绍了 reComputer 工业 J2012、J2011 上的各种硬件和接口，以及如何使用它们来扩展您的项目创意。
-
-## 拆解 reComputer 工业设备
-
-首先，最好拆解外壳以访问所有接口。按照以下步骤卸下位于背面的 4 个螺丝，以拆解 reComputer 工业设备。
+首先，建议拆卸外壳以访问所有接口。按照以下步骤卸下位于背面的 4 个螺丝，以拆解 reComputer Industrial。
 
 <div align="center"><img width ="450" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/98.png"/></div>
 
 ## CSI 摄像头
 
-reComputer 工业设备配备了 **2 个 2 通道 15 针 MIPI CSI 摄像头连接器**，支持以下摄像头：
+reComputer Industrial 配备了 **2 个 2 通道 15 针 MIPI CSI 摄像头连接器**，支持以下摄像头：
 
 - IMX219 摄像头
 
   - [Raspberry Pi Camera V2](https://www.seeedstudio.com/Raspberry-Pi-Camera-Module-V2.html)
-  - [IMX219-130 8MP 摄像头，130° 视场角](https://www.seeedstudio.com/IMX219-130-Camera-130-FOV-Applicable-for-Jetson-Nano-p-4606.html)
-  - [IMX219-160 8MP 摄像头，160° 视场角](https://www.seeedstudio.com/IMX219-160-Camera-160-FOV-Applicable-for-Jetson-Nano-p-4603.html)
-  - [IMX219-200 8MP 摄像头，200° 视场角](https://www.seeedstudio.com/IMX219-200-Camera-200-FOV-Applicable-for-Jetson-Nano-p-4609.html)
-  - [IMX219-77 8MP 摄像头，77° 视场角](https://www.seeedstudio.com/IMX219-77-Camera-77-FOV-Applicable-for-Jetson-Nano-p-4608.html)
-  - [IMX219 M12/CS 安装 CMOS 摄像头模块](https://www.seeedstudio.com/IMX-219-CMOS-camera-module-M12-and-CS-camera-available-p-5372.html)
-  - [IMX219-83 8MP 3D 立体摄像头模块](https://www.seeedstudio.com/IMX219-83-Stereo-Camera-8MP-Binocular-Camera-Module-Depth-Vision-Applicable-for-Jetson-Nano-p-4610.html)
-  - [IMX219-77IR 8MP 红外夜视摄像头，77° 视场角](https://www.seeedstudio.com/IMX219-77IR-Camera-77-FOV-Infrared-Applicable-for-Jetson-Nano-p-4607.html)
-  - [IMX219-160IR 8MP 摄像头，160° 视场角](https://www.seeedstudio.com/IMX219-160IR-Camera160-FOV-Infrared-Applicable-for-Jetson-Nano-p-4602.html)
-  - [IMX219 M12/CS 安装 CMOS 摄像头模块](https://www.seeedstudio.com/IMX-219-CMOS-camera-module-M12-and-CS-camera-available-p-5372.html)
+  - [IMX219-130 8MP Camera with 130° FOV](https://www.seeedstudio.com/IMX219-130-Camera-130-FOV-Applicable-for-Jetson-Nano-p-4606.html)
+  - [IMX219-160 8MP Camera with 160° FOV](https://www.seeedstudio.com/IMX219-160-Camera-160-FOV-Applicable-for-Jetson-Nano-p-4603.html)
+  - [IMX219-200 8MP Camera with 200° FOV](https://www.seeedstudio.com/IMX219-200-Camera-200-FOV-Applicable-for-Jetson-Nano-p-4609.html)
+  - [IMX219-77 8MP Camera with 77° FOV](https://www.seeedstudio.com/IMX219-77-Camera-77-FOV-Applicable-for-Jetson-Nano-p-4608.html)
+  - [IMX219 M12/CS mount CMOS Camera Module](https://www.seeedstudio.com/IMX-219-CMOS-camera-module-M12-and-CS-camera-available-p-5372.html)
+  - [IMX219-83 8MP 3D Stereo Camera Module](https://www.seeedstudio.com/IMX219-83-Stereo-Camera-8MP-Binocular-Camera-Module-Depth-Vision-Applicable-for-Jetson-Nano-p-4610.html)
+  - [IMX219-77IR 8MP IR Night Vision Camera with 77° FOV](https://www.seeedstudio.com/IMX219-77IR-Camera-77-FOV-Infrared-Applicable-for-Jetson-Nano-p-4607.html)
+  - [IMX219-160IR 8MP Camera with 160° FOV](https://www.seeedstudio.com/IMX219-160IR-Camera160-FOV-Infrared-Applicable-for-Jetson-Nano-p-4602.html)
+  - [IMX219 M12/CS mount CMOS Camera Module](https://www.seeedstudio.com/IMX-219-CMOS-camera-module-M12-and-CS-camera-available-p-5372.html)
 
 - IMX477 摄像头
 
-  - [Raspberry Pi 高质量摄像头](https://www.seeedstudio.com/Raspberry-Pi-High-Quality-Cam-p-4463.html)
-  - [Raspberry Pi HQ 摄像头 - M12 安装](https://www.seeedstudio.com/Raspberry-Pi-HQ-Camera-M12-mount-p-5578.html)
-  - [Raspberry Pi 高质量摄像头](https://www.seeedstudio.com/High-Quality-Camera-For-Raspberry-Pi-Compute-Module-Jetson-Nano-p-4729.html)
+  - [Raspberry Pi High Quality Camera](https://www.seeedstudio.com/Raspberry-Pi-High-Quality-Cam-p-4463.html)
+  - [Raspberry Pi HQ Camera - M12 mount](https://www.seeedstudio.com/Raspberry-Pi-HQ-Camera-M12-mount-p-5578.html)
+  - [High Quality Camera for Raspberry Pi](https://www.seeedstudio.com/High-Quality-Camera-For-Raspberry-Pi-Compute-Module-Jetson-Nano-p-4729.html)
 
 ### 连接概览
 
-这里的 2 个 CSI 摄像头连接器标记为 **CAM0 和 CAM1**。您可以将一个摄像头连接到任意一个连接器，或者同时将两个摄像头分别连接到两个连接器。
+这两个 CSI 摄像头连接器标记为 **CAM0 和 CAM1**。您可以将一个摄像头连接到任意一个连接器，或者同时将两个摄像头分别连接到两个连接器。
 
 - **步骤 1：** 轻轻拉出 CSI 连接器上的黑色锁扣。
 
@@ -65,7 +59,7 @@ reComputer 工业设备配备了 **2 个 2 通道 15 针 MIPI CSI 摄像头连�
 
 ### 使用方法
 
-首先，您需要配置开发板以加载适用于您将使用的特定摄像头的驱动程序。JetPack 系统内置了一个工具来支持 IMX219 和 IMX477 摄像头。
+首先，您需要配置开发板以加载适用于您所使用摄像头的驱动程序。JetPack 系统内置了支持 IMX219 和 IMX477 摄像头的工具。
 
 - **步骤 1：** 打开终端并执行以下命令：
 
@@ -81,7 +75,7 @@ sudo /opt/nvidia/jetson-io/jetson-io.py
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/120.jpg"/></div>
 
-- **步骤 4：** 选择您想使用的摄像头。
+- **步骤 4：** 选择您想要使用的摄像头。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/121.jpg"/></div>
 
@@ -114,7 +108,7 @@ nvgstcapture-1.0 sensor-id=1
 ```
 
 :::note
-如果您想更改摄像头的其他设置，可以输入 **"nvgstcapture-1.0 --help"** 来访问所有可配置选项。
+如果您想更改摄像头的其他设置，可以输入 **"nvgstcapture-1.0 --help"** 查看所有可配置选项。
 :::
 
 - 方法 2：
@@ -137,13 +131,13 @@ gst-launch-1.0 nvarguscamerasrc sensor-id=1 sensor-mode=0 ! 'video/x-raw(memory:
 
 ## RTC
 
-reComputer 工业设备配备了两种不同的方式来连接 RTC 电池。
+reComputer Industrial 配备了两种不同方式连接 RTC 电池。
 
 ### 连接概述
 
 - 方法 1：
 
-将 **3V CR1220 纽扣电池** 连接到板上的 RTC 插槽，如下图所示。确保电池的 **正极 (+)** 面朝上。
+将 **3V CR1220 纽扣电池** 连接到板上的 RTC 插槽，如下图所示。确保电池的 **正极 (+)** 朝上。
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/11.jpg"/></div>
 
@@ -159,7 +153,7 @@ reComputer 工业设备配备了两种不同的方式来连接 RTC 电池。
 
 - **步骤 2：** 打开 reComputer Industrial。
 
-- **步骤 3：** 在 Ubuntu 桌面上，点击右上角的下拉菜单，导航到 `设置 > 日期和时间`，通过以太网线连接到网络，并选择 **自动日期和时间** 以自动获取日期/时间。
+- **步骤 3：** 在 Ubuntu 桌面上，点击右上角的下拉菜单，导航到 `Settings > Date & Time`，通过以太网线连接到网络，并选择 **Automatic Date & Time** 以自动获取日期/时间。
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/13.png"/></div>
 
@@ -173,11 +167,11 @@ reComputer 工业设备配备了两种不同的方式来连接 RTC 电池。
 sudo hwclock
 ```
 
-您将看到类似以下的输出，但这不是正确的日期/时间：
+您将看到类似以下的输出，但这不是正确的日期/时间。
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/14.png"/></div>
 
-- **步骤 5：** 通过输入以下命令，将硬件时钟时间更改为当前系统时钟时间：
+- **步骤 5：** 输入以下命令，将硬件时钟时间更改为当前系统时钟时间：
 
 ```sh
 sudo hwclock --systohc
@@ -189,17 +183,17 @@ sudo hwclock --systohc
 sudo reboot
 ```
 
-- **步骤 7：** 检查硬件时钟时间，验证即使设备断电，日期/时间仍保持不变。
+- **步骤 7：** 检查硬件时钟时间，验证即使设备断电，日期/时间也保持不变。
 
 现在我们将创建一个脚本，在每次启动时始终从硬件时钟同步系统时钟。
 
-- **步骤 8：** 使用您喜欢的任何文本编辑器创建一个新的 shell 脚本。这里我们使用 **vi** 文本编辑器：
+- **步骤 8：** 使用您喜欢的文本编辑器创建一个新的 shell 脚本。这里我们使用 **vi** 文本编辑器：
 
 ```sh
 sudo vi /usr/bin/hwtosys.sh 
 ```
 
-- **步骤 9：** 按 **i** 键进入 **插入模式**，然后复制并粘贴以下内容到文件中：
+- **步骤 9：** 按 **i** 键进入 **插入模式**，将以下内容复制并粘贴到文件中：
 
 ```sh
 #!/bin/bash
@@ -255,33 +249,33 @@ sudo systemctl status hwtosys.service
 
 ## M.2 Key M
 
-开箱即用，reComputer Industrial 包含一个连接到 M.2 Key M 插槽的 128GB SSD，并预装了 JetPack 系统。
+开箱即用，reComputer Industrial 配备了一个连接到 M.2 Key M 插槽的 128GB SSD，并预装了 JetPack 系统。
 
 ### 连接概述
 
-如果您想移除预装的 SSD 并安装新的 SSD，可以按照以下步骤操作。我们仅推荐使用 Seeed 的 [128GB](https://www.seeedstudio.com/M-2-2280-SSD-128GB-p-5332.html)、[256GB](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-256GB-p-5333.html) 和 [512GB](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-512GB-p-5334.html) 存储 SSD，因为我们仅测试了这些 SSD。此外，该接口支持 PCIe Gen4.0 SSD。
+如果您想移除预装的 SSD 并安装新的 SSD，可以按照以下步骤操作。我们仅推荐使用 Seeed 的 [128GB](https://www.seeedstudio.com/M-2-2280-SSD-128GB-p-5332.html)、[256GB](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-256GB-p-5333.html) 和 [512GB](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-512GB-p-5334.html) 存储容量的 SSD，因为我们仅测试了这些型号。此外，该接口支持 PCIe Gen4.0 SSD。
 
-- **步骤 1：** 移除预装 SSD 的螺丝。
+- **步骤 1：** 移除预装 SSD 的螺丝
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/15.png"/></div>
 
-- **步骤 2：** 将 SSD 从 SSD 连接器中滑出以移除。
+- **步骤 2：** 将 SSD 从 SSD 连接器中滑出以移除
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/16.png"/></div>
 
-- **步骤 3：** 插入新的 SSD 并重新拧紧螺丝。
+- **步骤 3：** 插入新的 SSD 并重新拧紧螺丝
 
 ### 使用方法
 
 我们将解释如何对连接的 SSD 进行简单的基准测试。
 
-- **步骤 1：** 执行以下命令检查写入速度：
+- **步骤 1：** 通过执行以下命令检查写入速度
 
 ```sh
 sudo dd if=/dev/zero of=/home/nvidia/test bs=1M count=512 conv=fdatasync
 ```
 
-- **步骤 2：** 执行以下命令检查读取速度。在执行写入速度测试后再执行此命令：
+- **步骤 2：** 通过执行以下命令检查读取速度。在执行写入速度测试后再执行此命令。
 
 ```sh
 sudo sh -c "sync && echo 3 > /proc/sys/vm/drop_caches"
@@ -290,43 +284,43 @@ sudo dd if=/home/nvidia/test of=/dev/null bs=1M count=512
 
 ## mini PCIe
 
-reComputer Industrial 配备了一个 mini PCIe 接口，支持 4G 和 LoRa 模块。然而，您一次只能连接一个 4G 模块或一个 LoRa 模块。
+reComputer Industrial 配备了一个 mini PCIe 连接器，支持 4G 和 LoRa 模块。然而，您一次只能连接一个 4G 模块或一个 LoRa 模块。
 
 ### 4G 模块连接概述
 
-目前该板支持 EC25EUXGA 和 EC20CEHCLG 模块。
+目前该主板支持 EC25EUXGA 和 EC20CEHCLG 模块。
 
-- **步骤 1：** 如果设备已开启，请将其关闭。
+- **步骤 1：** 如果主板已开启，请关闭电源。
 
-- **步骤 2：** 移除预装的支架。仅当您使用 M.2 Key B 接口时才需要此支架。
+- **步骤 2：** 移除预装的支架。该支架仅在使用 M.2 Key B 接口时需要。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/110.jpg"/></div>
 
-- **步骤 3：** 将 4G 模块滑入 mini PCIe 插槽，使用预装的螺丝固定模块到两个孔中。
+- **步骤 3：** 将 4G 模块插入 mini PCIe 插槽，使用预装的螺丝并将其拧入两个孔中以固定 4G 模块。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/17.png"/></div>
 
-- **步骤 4：** 将天线连接到标记为 **MAIN** 的天线连接器。这里需要使用 IPEX 接头。
+- **步骤 4：** 将天线连接到标记为 **MAIN** 的天线连接器。此处需要使用 IPEX 连接器。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/18.png"/></div>
 
-- **步骤 5：** 将支持 4G 的 nano SIM 卡插入板上的 SIM 卡槽，确保 SIM 卡的金属面朝下。将卡完全插入，直到弹簧锁定到位。
+- **步骤 5：** 将支持 4G 的 nano SIM 卡插入主板上的 SIM 卡槽，确保 SIM 卡的金属面朝下。将卡完全插入，直到触碰到内部弹簧并锁定到位。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/19.png"/></div>
 
 :::note
-如果您想移除 SIM 卡，按下卡片以触发内部弹簧，SIM 卡将弹出。
+如果您想移除 SIM 卡，请将卡推入以触碰内部弹簧，这样 SIM 卡会从卡槽弹出。
 :::
 
-- **步骤 6：** 在 **J8 (Control and UART) Header** 上，将 **SIM_MUX_SEL** 和 **GND** 引脚之间添加一个跳线。
+- **步骤 6：** 在 **J8（控制和 UART）头** 上的 **SIM_MUX_SEL** 和 **GND** 引脚之间添加一个跳线。
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/20.png"/></div>
 
-- **步骤 6：** 打开开发板电源。
+- **步骤 7：** 打开主板电源。
 
 ### 4G 模块使用 - 测试拨号
 
-使用 EC25 模块时，模块会自动启动并准备就绪。然而，使用 EC20 模块时，需要重置模块才能正常工作。
+使用 EC25 模块时，模块会自动启动并准备使用。然而，使用 EC20 模块时，您需要重置模块才能正常工作。
 
 - **步骤 1：** 如果您使用的是 EC25 模块，可以跳过此步骤。如果您使用的是 EC20 模块，请输入以下命令访问负责重置 4G 模块的 GPIO298 引脚：
 
@@ -339,18 +333,18 @@ echo out > direction
 echo 1 > value
 ```
 
-对于 EC25 模块，LED2 在开发板启动后会亮起绿色。对于 EC20 模块，按照上述步骤重置模块后，LED2 会亮起绿色。
+对于 EC25 模块，当主板启动时，LED2 会亮起绿色。对于 EC20 模块，按照上述步骤重置模块后，LED2 会亮起绿色。
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/118.jpg"/></div>
 
-- **步骤 2：** 安装 minicom：
+- **步骤 2：** 安装 minicom
 
 ```sh
 sudo apt update
 sudo apt install minicom -y
 ```
 
-- **步骤 3：** 进入连接的 4G 模块的串口控制台，以便输入 AT 命令并与 4G 模块交互：
+- **步骤 3：** 进入连接的 4G 模块的串行控制台，以便输入 AT 命令并与 4G 模块交互。
 
 ```sh
 sudo minicom -D /dev/ttyUSB2 -b 115200
@@ -358,7 +352,7 @@ sudo minicom -D /dev/ttyUSB2 -b 115200
 
 - **步骤 4：** 按 **Ctrl+A**，然后按 **E** 打开本地回显。
 
-- **步骤 5：** 输入命令 **"AT"** 并按回车。如果看到响应为 "OK"，则说明 4G 模块工作正常。
+- **步骤 5：** 输入命令 **"AT"** 并按回车。如果您看到响应为 "OK"，则 4G 模块工作正常。
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/22.jpg"/></div>
 
@@ -384,7 +378,7 @@ ATD<phone_number>;
 
 如果您使用的是 EC25 模块，请按照以下步骤操作：
 
-- **步骤 1：** 按照上述步骤打开 4G 模块的串口控制台（参见 4G 模块使用 - 测试拨号部分），执行以下命令连接到互联网。将 **YOUR_APN** 替换为您的网络提供商的 APN：
+- **步骤 1：** 打开 4G 模块的串行控制台（如上文“4G 模块使用 - 测试拨号”部分所述），执行以下命令连接到互联网。将 **YOUR_APN** 替换为您的网络提供商的 APN。
 
 ```sh
 AT+CGDCONT=1,"IP","YOUR_APN"
@@ -392,7 +386,7 @@ AT+CGDCONT=1,"IP","YOUR_APN"
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/89.jpg"/></div>
 
-成功连接后，应该输出 **OK**，如上图所示。
+连接成功后，应该输出 **OK**，如上图所示。
 
 - **步骤 2：** 执行以下命令重启 4G 模块：
 
@@ -400,15 +394,15 @@ AT+CGDCONT=1,"IP","YOUR_APN"
 AT+CFUN=1,1
 ```
 
-此时，您将在串口终端上失去与 4G 模块的连接。
+此时，您将在串行终端上失去与 4G 模块的连接。
 
-- **步骤 3：** 按 **CTRL + A**，然后按 **Q** 关闭 **minicom**。
+- **步骤 3：** 按下 **CTRL + A** 然后按 **Q** 关闭 **minicom**
 
-- **步骤 4：** 输入 **ifconfig**，您将在 **usb0** 接口上看到一个 IP 地址。
+- **步骤 4：** 输入 **ifconfig**，你将在 **usb0** 接口上看到一个 IP 地址
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/93.png"/></div>
 
-- **步骤 5：** 您可以尝试以下命令 ping 一个网站，以检查是否有互联网连接：
+- **步骤 5：** 你可以尝试以下命令 ping 一个网站，以检查是否有互联网连接
 
 ```sh
 ping -I usb0 www.bing.com -c 5
@@ -418,65 +412,65 @@ ping -I usb0 www.bing.com -c 5
 
 #### EC20 模块
 
-如果您使用的是 EC20 模块，请按照以下步骤操作：
+如果你使用的是 EC20 模块，请按照以下步骤操作
 
-- **步骤 1：** 如果您已经按照前一部分（4G 模块使用 - 测试拨号部分）为 EC20 模块重置了 4G 模块，可以跳过此步骤。如果尚未完成，请立即执行。
+- **步骤 1：** 如果你已经按照前一部分（4G 模块使用 - 测试拨号部分）中针对 EC20 模块的说明重置了 4G 模块，可以跳过此步骤。如果尚未完成，请立即执行。
 
-- **步骤 2：** 进入 4G 模块的串口控制台，输入以下命令将其设置为 ECM 模式：
+- **步骤 2：** 进入 4G 模块的串行控制台，输入以下命令将其设置为 ECM 模式
 
 ```sh
 AT+QCFG="usbnet",1
 ```
 
-- **步骤 3：** 重置 4G 模块。
+- **步骤 3：** 重置 4G 模块
 
-- **步骤 4：** 在 4G 模块控制台中，执行以下命令连接到互联网。将 **YOUR_APN** 替换为您的网络提供商的 APN：
+- **步骤 4：** 在 4G 模块控制台中执行以下命令以连接到互联网。将 **YOUR_APN** 替换为你的网络提供商的 APN
 
 ```sh
 AT+CGDCONT=1,"IP","YOUR_APN"
 ```
 
-- **步骤 6：** 输入 **ifconfig**，您将在 **usb1** 接口上看到一个 IP 地址。
+- **步骤 6：** 输入 **ifconfig**，你将在 **usb1** 接口上看到一个 IP 地址
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/90.jpg"/></div>
 
-- **步骤 7：** 您可以尝试以下命令 ping 一个 URL，以检查是否有互联网连接：
+- **步骤 7：** 你可以尝试以下命令 ping 一个 URL，以检查是否有互联网连接
 
 <div align="center"><img width ="750" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/92.png"/></div>
 
 ### LoRa 模块连接概述
 
-目前此开发板支持 WM1302 SPI 模块。您可以选择 [美国版本](https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-SPI-US915-SKY66420-p-5455.html) 或 [欧洲版本](https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-SPI-EU868-p-4889.html)，它们均可在我们的 Bazaar 上购买。
+目前此开发板支持 WM1302 SPI 模块。你可以选择使用 [美国版本](https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-SPI-US915-SKY66420-p-5455.html) 或 [欧洲版本](https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-SPI-EU868-p-4889.html)，它们均可在我们的 Bazaar 上购买。
 
-- **步骤 1：** 如果开发板已通电，请关闭电源。
+- **步骤 1：** 如果开发板已开启，请关闭电源
 
-- **步骤 2：** 将 LoRa 模块插入 mini PCIe 插槽，并使用预装的螺丝将其固定在两个孔位上。
+- **步骤 2：** 将 LoRa 模块插入 mini PCIe 插槽，并使用预装的螺丝将其固定在 4G 模块的两个孔位上
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/25.png"/></div>
 
-- **步骤 3：** 将天线连接到天线接口。此处需要使用 IPEX 接口。
+- **步骤 3：** 将天线连接到天线接口。此处需要使用 IPEX 接头
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/26.png"/></div>
 
 :::note
-确保 **J8 (Control and UART) Header** 上的 **SIM_MUX_SEL** 和 **GND** 引脚之间没有跳线。此跳线仅在使用 4G 模块时需要。
+确保 **J8（控制和 UART 接口）** 上的 **SIM_MUX_SEL** 和 **GND** 引脚之间没有跳线。此跳线仅在使用 4G 模块时需要。
 :::
 
-- **步骤 4：** 打开开发板电源。
+- **步骤 4：** 打开开发板电源
 
 ### LoRa 模块使用 - 测试 LoRa RF
 
-当 LoRa 模块连接后，您会看到模块上的绿色和蓝色 LED 灯亮起。
+当 LoRa 模块连接后，你会看到模块上的绿色和蓝色 LED 灯亮起
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/27.png"/></div>
 
-- **步骤 1：** 输入以下命令检查系统是否检测到 LoRa 模块：
+- **步骤 1：** 输入以下命令以检查系统是否检测到 LoRa 模块
 
 ```sh
 i2cdetect -r -y 7
 ```
 
-如果看到以下输出，说明系统已检测到模块。
+如果看到以下输出，则说明系统已检测到模块
 
 <div align="center"><img width ="500" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/29.png"/></div>
 
@@ -491,17 +485,17 @@ cp ../tools/reset_lgw.sh .
 sudo ./test_loragw_hal_tx -r 1250 -m LORA -f 867.1 -s 12 -b 125 -n 1000 -z 100 --dig 3 --pa 0 --pwid 13 -d /dev/spidev2.0
 ```
 
-如果看到以下结果，并且 LoRa 模块上的 LED 变为红色，这表示模块已成功发送 RF 信号。
+如果看到以下结果，并且 LoRa 模块上的 LED 灯变为红色，则说明模块正在成功发送 RF 信号
 
 <div align="center"><img width ="750" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/78.jpg"/></div>
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/28.png"/></div>
 
-要停止发送，可以按键盘上的 **CTRL + C**。
+要停止发送，可以按下键盘上的 **CTRL + C**。
 
 ### LoRa 模块使用 - 连接到 TTN
 
-现在我们将连接到 TTN（The Things Network），并使用 reComputer Industrial 作为 TTN LoRaWAN 网关。
+现在我们将连接到 TTN（The Things Network），并将 reComputer Industrial 用作 TTN LoRaWAN 网关
 
 - **步骤 1：** 输入以下命令以准备数据包转发器
 ```sh
@@ -510,7 +504,7 @@ cd packet_forwarder
 cp ../tools/reset_lgw.sh .
 ```
 
-- **步骤 2：** 根据您使用的 LoRa 模块运行以下命令。这里我们测试了 SPI US915 版本。
+- **步骤 2：** 根据你使用的 LoRa 模块运行以下命令。这里我们测试了 SPI US915 版本
 
 ```sh
 sudo ./lora_pkt_fwd -c global_conf.json.sx1250.US915
@@ -519,7 +513,7 @@ sudo ./lora_pkt_fwd -c global_conf.json.sx1250.US915
 然而，不同模块的命令如下：
 
 ```sh
-
+# USB 915
 sudo ./lora_pkt_fwd -c global_conf.json.sx1250.US915.USB
 
 # SPI EU868
@@ -529,58 +523,58 @@ sudo ./lora_pkt_fwd -c global_conf.json.sx1250.EU868
 sudo ./lora_pkt_fwd -c global_conf.json.sx1250.EU868.USB
 ```
 
-运行上述命令后，您将看到以下输出，最后一行显示 **concentrator EUI** 信息。请保存此信息，因为稍后在 TTN 设置网关时会用到。
+运行上述命令后，你会看到以下输出，最后一行显示 **concentrator EUI** 信息。请保存此信息，因为稍后在设置网关与 TTN 时会用到。
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/79.jpg"/></div>
 
-- **步骤 3：** 访问 [此链接](https://console.cloud.thethings.network) 进入 TTN 控制台，并选择您所在的区域。
+- **步骤 3：** 访问 [此 URL](https://console.cloud.thethings.network) 进入 TTN 控制台，并选择你所在的区域
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/80.png"/></div>
 
-- **步骤 4：** 如果已有账户，请登录；如果没有账户，请注册一个新账户。
+- **步骤 4：** 如果你已有账户，请登录；如果没有，请注册一个新账户
 
 <div align="center"><img width ="450" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/81.png"/></div>
 
-- **步骤 5：** 点击 **Go to gateways**。
+- **步骤 5：** 点击 **Go to gateways**
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/82.png"/></div>
 
-- **步骤 6：** 点击 **+ Register gateway**。
+- **步骤 6：** 点击 **+ Register gateway**
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/83.png"/></div>
 
-- **步骤 7：** 在 **Gateway EUI** 部分输入之前获取的 **Concentrator EUI**，然后点击 **Confirm**。
+- **步骤 7：** 在 **Gateway EUI** 部分输入之前获取的 **Concentrator EUI**，然后点击 **Confirm**
 
 <div align="center"><img width ="500" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/84.jpg"/></div>
 
-- **步骤 8：** 根据您使用的 LoRa 模块输入 **Frequency plan**。这里我们使用的是 US915 版本的模块，因此选择 **United States 902-928 MHz, FSB 2 (used by TTN)**。然后点击 **Register gateway**。
+- **步骤 8：** 根据您使用的 LoRa 模块输入 **频率计划**。这里我们使用的是 US915 版本的模块，因此选择了 **United States 902-928 MHz, FSB 2 (used by TTN)**。之后点击 **Register gateway**。
 
 <div align="center"><img width ="500" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/85.jpg"/></div>
 
 :::note
-**Gateway ID** 已自动为您填写。不过，您可以根据需要更改它。**Gateway name** 不是必填项，但您可以根据需要填写。
+**网关 ID** 已自动为您填写。不过，您可以根据需要更改它。**网关名称**不是必填项，但您也可以根据需要填写。
 :::
 
-- **步骤 9：** 在网关主页上记下 **Gateway Server Address**。
+- **步骤 9：** 在网关的主页面上记下 **网关服务器地址**。
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/86.jpg"/></div>
 
-- **步骤 10：** 在 reTerminal Industrial 上，编辑我们与 **lora_pkt_fwd** 命令一起使用的 **global_conf_json** 文件。您需要更改以下选项：
+- **步骤 9：** 在 reTerminal Industrial 上，编辑我们与 **lora_pkt_fwd** 命令一起使用的 **global_conf_json** 文件。在这里，您需要更改 **gateway_ID**、**server_address**、**serv_port_up** 和 **serv_port_down** 选项，如下所示：
 
   - gateway_ID: 来自设备的 Concentrator EUI
-  - server_address: 来自 TTN 的 Gateway Server Address
+  - server_address: 来自 TTN 的网关服务器地址
   - serv_port_up: 1700
   - serv_port_down: 1700
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/87.png"/></div>
 
-- **步骤 11：** 重新运行数据包转发器。
+- **步骤 10：** 重新运行数据包转发器
 
 ```sh
 sudo ./lora_pkt_fwd -c global_conf.json.sx1250.US915
 ```
 
-如果看到以下输出，表示设备已成功连接到 TTN。
+如果您看到以下输出，则表示设备已成功连接到 TTN。
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/88.jpg"/></div>
 
@@ -590,35 +584,35 @@ reComputer Industrial 配备了一个支持 4G 和 5G 模块的 M.2 Key B 接口
 
 ### 5G 模块连接概览
 
-- **步骤 1：** 如果设备已开启，请关闭电源。
+- **步骤 1：** 如果板子已通电，请先关闭电源。
 
 - **步骤 2：** 确保支架已就位，然后移除支架上的顶部螺丝。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/111.jpg"/></div>
 
-- **步骤 3：** 将 5G 模块滑入 M.2 Key B 插槽，并用支架螺丝固定模块（确保支架到位）。
+- **步骤 2：** 将 5G 模块插入 M.2 Key B 插槽，并拧紧支架螺丝以固定 5G 模块（关于支架的说明）。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/112.jpg"/></div>
 
-- **步骤 4：** 将 4 根天线连接到模块上的天线接口。这里需要使用 IPEX 4 接头。
+- **步骤 3：** 将 4 根天线连接到模块上的天线接口。这里需要使用 IPEX 4 接头。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/113.jpg"/></div>
 
-- **步骤 5：** 将支持 5G 的 nano SIM 卡插入板上的 SIM 卡槽，确保 SIM 卡的金色表面朝下。将卡完全插入，直到内部弹簧锁定到位。
+- **步骤 4：** 将支持 5G 的 nano SIM 卡插入板上的 SIM 卡插槽，确保 SIM 卡的金色表面朝下。将卡完全插入，直到触碰到内部弹簧并锁定到位。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/19.png"/></div>
 
 :::note
-如果需要移除 SIM 卡，按下卡片以触发内部弹簧，SIM 卡会从卡槽弹出。
+如果您想取出 SIM 卡，请将卡向内推以触碰内部弹簧，这样 SIM 卡就会从插槽中弹出。
 :::
 
-- **步骤 6：** 打开设备电源。
+- **步骤 5：** 打开板子的电源。
 
 ### 5G 模块使用 - 测试拨号
 
-使用 SIM8202G-M2 5G 模块时，模块不会自动启动。因此，我们首先需要切换一些 GPIO 以使其启动。
+使用 SIM8202G-M2 5G 模块时，模块不会自动启动。因此，我们首先需要切换一些 GPIO 以启动它。
 
-- **步骤 1：** 输入以下命令以启动 5G 模块
+- **步骤 1：** 输入以下命令以启动 5G 模块：
 
 ```sh
 sudo su 
@@ -641,7 +635,7 @@ echo out > direction
 echo 0 > value
 ```
 
-执行上述命令后，LED2 将点亮为绿色，如下图所示：
+执行上述命令后，LED2 将会亮起绿色，如下所示：
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/117.jpg"/></div>
 
@@ -652,21 +646,21 @@ sudo apt update
 sudo apt install minicom -y
 ```
 
-- **步骤 3：** 进入连接的 5G 模块的串行控制台，以便输入 AT 命令并与 5G 模块交互
+- **步骤 3：** 进入已连接的 5G 模块的串行控制台，以便输入 AT 命令并与 5G 模块交互。
 
 ```sh
 sudo minicom -D /dev/ttyUSB2 -b 115200
 ```
 
-- **步骤 4：** 输入命令 **"AT"** 并按回车键。如果看到响应为 "OK"，则说明 5G 模块工作正常。
+- **步骤 4：** 输入命令 **"AT"** 并按回车键。如果您看到响应为 "OK"，则表示 5G 模块工作正常。
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/107.png"/></div>
 
-- **步骤 6：** 输入命令 **"ATI"** 以检查模块信息
+- **步骤 6：** 输入命令 **"ATI"** 以检查模块信息。
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/108.png"/></div>
 
-- **步骤 7：** 为测试模块，输入以下命令拨打另一个电话号码
+- **步骤 7：** 要测试模块，请输入以下命令拨打另一个电话号码：
 
 ```sh
 ATD<phone_number>;
@@ -678,11 +672,11 @@ ATD<phone_number>;
 
 ### 5G 模块使用 - 连接到互联网
 
-敬请期待
+即将推出。
 
 ## DI/ DO
 
-reComputer 工业版支持 4 个数字输入和 4 个数字输出通道，所有通道均光电隔离，可有效保护主板免受电压尖峰或其他电气干扰。此外，同一连接器上还有一个 CAN 接口，我们将在本 Wiki 的后续部分讨论。
+reComputer Industrial 支持 4 个数字输入通道和 4 个数字输出通道，所有通道均采用光电隔离，有效保护主板免受电压尖峰或其他电气干扰的影响。在同一连接器上还有一个 CAN 接口，我们将在本 Wiki 的后续部分讨论。
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/37.png"/></div>
 
@@ -694,7 +688,7 @@ reComputer 工业版支持 4 个数字输入和 4 个数字输出通道，所有
       <th>类型</th>
       <th>标签名称</th>
       <th>原理图信号</th>
-      <th>模块引脚编号</th>
+      <th>模块引脚号</th>
       <th>BGA 编号</th>
       <th>GPIO 编号</th>
       <th>电压/电流限制</th>
@@ -710,7 +704,7 @@ reComputer 工业版支持 4 个数字输入和 4 个数字输出通道，所有
       <td>PQ.05</td>
       <td>440</td>
       <td rowSpan={4}>总电流 12V/ 20mA</td>
-      <td rowSpan={4}>12V 数字输入，地信号需要连接到<br />GND_DI (引脚2/4/6)</td>
+      <td rowSpan={4}>12V 数字输入，接地信号需要<br />连接到 GND_DI (引脚 2/4/6)</td>
     </tr>
     <tr>
       <td>DI2</td>
@@ -740,8 +734,8 @@ reComputer 工业版支持 4 个数字输入和 4 个数字输出通道，所有
       <td>193</td>
       <td>PT.06</td>
       <td>463</td>
-      <td rowSpan={4}>每个引脚负载 40V/40mA</td>
-      <td rowSpan={4}>数字输出，最大耐压<br />40V，地信号需要连接到<br />GND_DO (引脚8/10)</td>
+      <td rowSpan={4}>每引脚负载 40V/40mA</td>
+      <td rowSpan={4}>数字输出，最大耐压<br />40V，接地信号需要<br />连接到 GND_DO (引脚 8/10)</td>
     </tr>
     <tr>
       <td>DO2</td>
@@ -768,41 +762,41 @@ reComputer 工业版支持 4 个数字输入和 4 个数字输出通道，所有
       <td rowSpan={2}>CAN</td>
       <td>CH</td>
       <td colSpan={5} rowSpan={2}>/</td>
-      <td rowSpan={2}>CAN 总线，标准差分信号，<br />地信号需要连接到 GND_ISO (引脚12)</td>
+      <td rowSpan={2}>标准差分信号的 CAN 总线，<br />接地信号需要连接到 GND_ISO (引脚 12)</td>
     </tr>
     <tr>
       <td>CL</td>
     </tr>
     <tr>
-      <td rowSpan={3}>地</td>
+      <td rowSpan={3}>接地</td>
       <td>GND_DI</td>
       <td colSpan={5} rowSpan={3}>/</td>
-      <td>12V 数字输入的参考地信号，<br />也是 DI 的回路</td>
+      <td>12V 数字输入的参考接地信号，<br />也是 DI 的回流路径</td>
     </tr>
     <tr>
       <td>GND_DO</td>
-      <td>数字输出的参考地信号，也是 DO 的回路</td>
+      <td>数字输出的参考接地信号，也是 DO 的回流路径</td>
     </tr>
     <tr>
       <td>CG</td>
-      <td>CAN 的参考地信号</td>
+      <td>CAN 的参考接地信号</td>
     </tr>
   </tbody>
 </table>
 
 ### DI 连接概览
 
-您可以按照下图进行 DI 的连接。最好在 DI 线上串联一个电阻。在这里，我们测试了一个 4.7kΩ 电阻连接到 DI1 引脚。
+您可以按照下图进行 DI 的连接。建议在 DI 线上串联一个电阻。我们测试时在 DI1 引脚上连接了一个 4.7kΩ 的电阻。
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/38.png"/></div>
 
 ### DI 使用方法
 
-您需要在 DI 线上输入 12V 电压才能被检测为输入。
+您需要在 DI 线上输入 12V 电压才能被检测为输入信号。
 
-- **步骤 1：** 按照上图连接到 **DI1 引脚** 并输入 **12V**
+- **步骤 1：** 按照上图所示连接到 **DI1 引脚** 并输入 **12V**
 
-- **步骤 2：** 打开 DI1 的 GPIO，如下所示：
+- **步骤 2：** 按如下方式打开 DI1 的 GPIO
 
 ```sh
 sudo su 
@@ -812,30 +806,30 @@ cd PQ.05
 ```
 
 :::note
-您可以参考 **DI/ DO 引脚分配表** 找到 GPIO 编号和 BGA 编号。在上述示例中，对于 DI1 引脚，GPIO 编号为 440，BGA 编号为 PQ.05。
+您可以参考 **DI/ DO 引脚分配表** 查找 GPIO 编号和 BGA 编号。在上述示例中，DI1 引脚的 GPIO 编号为 440，BGA 编号为 PQ.05。
 :::
 
-- **步骤 3：** 执行以下命令检查状态：
+- **步骤 3：** 执行以下命令检查状态
 
 ```sh
 cat value
 ```
 
-如果输出为 0，则表示有 12V 输入。如果输出为 1，则表示没有输入电压。
+如果输出为 0，表示有 12V 输入；如果输出为 1，表示没有输入电压。
 
 ### DO 连接概览
 
-您可以按照下图进行 DO 的连接。最好在 DO 线上串联一个电阻。在这里，我们测试了一个 4.7kΩ 电阻。
+您可以按照下图进行 DO 的连接。建议在 DO 线上串联一个电阻。我们测试时使用了一个 4.7kΩ 的电阻。
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/39.png"/></div>
 
 ### DO 使用方法
 
-在这里，您需要按照上图连接一个负载。测试的最简单方法是连接一个万用表（如果您有的话），或者连接一个最大电压低于 40V 的负载。
+您需要按照上述图示连接负载。测试最简单的方法是使用万用表，如果没有万用表，可以连接一个最大电压小于 40V 的负载。
 
-- **步骤 1：** 按照上图连接到 **DO1 引脚** 并输入 **最大 40V**
+- **步骤 1：** 按照上图所示连接到 **DO1 引脚** 并输入 **最大 40V**
 
-- **步骤 2：** 按如下方式打开 D01 的 GPIO
+- **步骤 2：** 按如下方式打开 DO1 的 GPIO
 
 ```sh
 sudo su 
@@ -846,10 +840,10 @@ echo out > direction
 ```
 
 :::note
-您可以参考 **DI/DO 引脚分配表** 来查找 GPIO 编号和 BGA 编号。在上述示例中，对于 DO1 引脚，GPIO 编号为 463，BGA 编号为 PT.06。
+您可以参考 **DI/ DO 引脚分配表** 查找 GPIO 编号和 BGA 编号。在上述示例中，DO1 引脚的 GPIO 编号为 463，BGA 编号为 PT.06。
 :::
 
-- **步骤 3：** 执行以下命令以打开引脚
+- **步骤 3：** 执行以下命令打开引脚
 
 ```sh
 echo 1 > value
@@ -859,25 +853,25 @@ echo 1 > value
 
 ## CAN
 
-reComputer Industrial 配备了一个支持 CAN FD（控制器局域网灵活数据速率）协议的 CAN 接口，速率为 5Mbps。CAN 接口通过电容隔离实现隔离，这提供了出色的 EMI 保护，并确保在工业和自动化应用中的可靠通信。默认情况下已安装一个 120Ω 的终端电阻，您可以通过 GPIO 开关打开或关闭该电阻。
+reComputer Industrial 配备了一个支持 CAN FD（控制器局域网灵活数据速率）协议的 CAN 接口，速率为 5Mbps。CAN 接口通过电容隔离实现隔离，这提供了出色的 EMI 保护，并确保在工业和自动化应用中的可靠通信。默认情况下已安装一个 120Ω 的终端电阻，您可以通过 GPIO 切换该电阻的开关状态。
 
 注意：CAN 接口使用隔离电源，这意味着连接到 CAN 接口的外部设备的地信号应连接到 CG 引脚。
 
-### 使用 USB 转 CAN 适配器的连接概览
+### 使用 USB 转 CAN 适配器的连接概述
 
 要测试和连接 CAN 总线，请将 USB 转 CAN 适配器连接到板上的 CAN 接口，如下图所示：
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/40.png"/></div>
 
-这里我们使用了 [USB 转 CAN 分析仪适配器及 USB 线缆](https://www.seeedstudio.com/USB-CAN-Analyzer-p-2888.html)，可在我们的 Bazaar 上购买。
+这里我们使用了 [带 USB 线的 USB 转 CAN 分析仪适配器](https://www.seeedstudio.com/USB-CAN-Analyzer-p-2888.html)，可在我们的商城中找到。
 
 ### 使用 USB 转 CAN 适配器
 
-- **步骤 1：** 从制造商网站下载您使用的 USB 转 CAN 适配器的驱动程序并安装。在我们的案例中，根据我们使用的适配器，驱动程序可以在 [这里](https://github.com/SeeedDocument/USB-CAN-Analyzer/tree/master/res/Driver/driver%20for%20USBCAN(CHS40)/windows-driver) 找到。
+- **步骤 1：** 从制造商的网站下载您所使用的 USB 转 CAN 适配器的驱动程序并安装。在我们的案例中，根据我们使用的适配器，驱动程序可以在[这里](https://github.com/SeeedDocument/USB-CAN-Analyzer/tree/master/res/Driver/driver%20for%20USBCAN(CHS40)/windows-driver)找到。
 
-- **步骤 2：** 一些适配器还附带必要的软件，用于 PC 与 CAN 设备通信。在我们的案例中，根据我们使用的适配器，我们下载并安装了可以在 [这里](https://github.com/SeeedDocument/USB-CAN-Analyzer/tree/master/res/Program) 找到的软件。
+- **步骤 2：** 一些适配器还附带了用于 PC 与 CAN 设备通信的必要软件。在我们的案例中，根据我们使用的适配器，我们下载并安装了可以在[这里](https://github.com/SeeedDocument/USB-CAN-Analyzer/tree/master/res/Program)找到的软件。
 
-- **步骤 3：** 在 reComputer Industrial 上打开一个终端窗口，并执行以下命令以配置和启用 CAN 接口：
+- **步骤 3：** 在 reComputer Industrial 上打开终端窗口，执行以下命令以配置并启用 CAN 接口：
 
 ```sh
 sudo modprobe mttcan
@@ -889,15 +883,15 @@ sudo ip link set can0 up
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/41.png"/></div>
 
-- **步骤 5：** 打开您之前安装的 CAN 软件。在本案例中，我们将打开根据我们使用的 CAN 适配器安装的软件。
+- **步骤 5：** 打开您之前安装的 CAN 软件。在本例中，我们将打开根据所使用的 CAN 适配器安装的软件。
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/42.jpg"/></div>
 
-- **步骤 6：** 将 USB 转 CAN 适配器连接到 PC，并通过 Windows 搜索栏搜索 **设备管理器** 打开它。现在，您将在 **端口 (COM & LPT)** 下看到已连接的适配器。记下此处列出的串口号。根据下图，串口号为 **COM9**。
+- **步骤 6：** 将 USB 转 CAN 适配器连接到 PC，并通过 Windows 搜索栏搜索打开 **设备管理器**。现在，您将在 **端口 (COM & LPT)** 下看到已连接的适配器。记下此处列出的串口号。根据下图，串口号为 **COM9**。
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/43.png"/></div>
 
-- **步骤 7：** 打开 CAN 软件，点击 **COM** 部分旁边的 **刷新**，点击下拉菜单并选择与适配器对应的串口号。保持 **COM bps** 为默认值并点击 **打开**。
+- **步骤 7：** 打开 CAN 软件，点击 **COM** 部分旁边的 **刷新**，点击下拉菜单并选择与适配器对应的串口号。保持 **COM bps** 为默认值，然后点击 **打开**。
 
 <div align="center"><img width ="250" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/44.jpg"/></div>
 
@@ -905,7 +899,7 @@ sudo ip link set can0 up
 
 <div align="center"><img width ="250" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/45.png"/></div>
 
-- **步骤 9：** 在 reComputer Industrial 上执行以下命令以向 PC 发送 CAN 信号：
+- **步骤 9：** 在 reComputer Industrial 上执行以下命令，将 CAN 信号发送到 PC：
 
 ```sh
 cansend can0 123#abcdabcd
@@ -915,7 +909,7 @@ cansend can0 123#abcdabcd
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/46.png"/></div>
 
-- **步骤 10：** 在 reComputer Industrial 上执行以下命令以等待接收来自 PC 的 CAN 信号：
+- **步骤 10：** 在 reComputer Industrial 上执行以下命令，等待接收来自 PC 的 CAN 信号：
 
 ```sh
 candump can0 &
@@ -929,7 +923,7 @@ candump can0 &
 
 <div align="center"><img width ="750" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/50.png"/></div>
 
-### 使用 reTerminal DM 的连接概览
+### 使用 reTerminal DM 的连接概述
 
 如果您有 [reTerminal DM](https://www.seeedstudio.com/reTerminal-DM-p-5616.html)，您可以直接与其通信，因为 reTerminal DM 也具有 CAN 接口。
 
@@ -939,17 +933,9 @@ candump can0 &
 
 ### 使用 reTerminal DM
 
-- **步骤 1：** 在使用 reTerminal DM 之前，请访问 [此 Wiki](https://wiki.seeedstudio.com/reterminal-dm) 以开始使用 reTerminal DM。
+- **步骤 1：** 在使用 reTerminal DM 之前，请访问[此 wiki](https://wiki.seeedstudio.com/cn/reterminal-dm)以开始使用 reTerminal DM。
 
-- **步骤 2：** 在 reComputer Industrial 上打开一个终端窗口，并执行以下命令以配置和启用 CAN 接口：
-
-```sh
-sudo modprobe mttcan
-sudo ip link set can0 type can bitrate 125000
-sudo ip link set can0 up
-```
-
-- **步骤 3：** 在 reTerminal DM 上打开一个终端窗口，并执行以下命令以配置和启用 CAN 接口：
+- **步骤 2：** 在 reComputer Industrial 上打开终端窗口，执行以下命令以配置并启用 CAN 接口：
 
 ```sh
 sudo modprobe mttcan
@@ -957,7 +943,7 @@ sudo ip link set can0 type can bitrate 125000
 sudo ip link set can0 up
 ```
 
-- **步骤 4：** 在 reTerminal DM 上打开一个终端窗口，并执行以下命令以配置和启用 CAN 接口：
+- **步骤 3：** 在 reTerminal DM 上打开终端窗口，执行以下命令以配置并启用 CAN 接口：
 
 ```sh
 sudo modprobe mttcan
@@ -965,23 +951,31 @@ sudo ip link set can0 type can bitrate 125000
 sudo ip link set can0 up
 ```
 
-- **步骤 5：** 如果在两个设备上输入 **ifconfig**，您将看到 CAN 接口已启用。
+- **步骤 4：** 在 reTerminal DM 上打开终端窗口，执行以下命令以配置并启用 CAN 接口：
+
+```sh
+sudo modprobe mttcan
+sudo ip link set can0 type can bitrate 125000
+sudo ip link set can0 up
+```
+
+- **步骤 5：** 在两个设备上输入 **ifconfig**，您将看到 CAN 接口已启用。
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/41.png"/></div>
 
-- **步骤 6：** 在 reTerminal DM 上，执行以下命令以等待接收来自 reComputer Industrial 的 CAN 信号：
+- **步骤 6：** 在 reTerminal DM 上执行以下命令，等待接收来自 reComputer Industrial 的 CAN 信号：
 
 ```sh
 candump can0 &
 ```
 
-- **步骤 7：** 在 reComputer Industrial 上，执行以下命令以向 reTerminal Industrial 发送 CAN 信号：
+- **步骤 7：** 在 reComputer Industrial 上执行以下命令，将 CAN 信号发送到 reTerminal Industrial
 
 ```sh
 cansend can0 123#abcdabcd
 ```
 
-现在您将在 reTerminal DM 上看到接收到的信号，如下所示：
+现在，您将在 reTerminal DM 上看到接收到的信号，如下所示：
 
 <div align="center"><img width ="750" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/50.png"/></div>
 
@@ -989,17 +983,17 @@ cansend can0 123#abcdabcd
 
 ## RS232/ RS422/ RS485 接口
 
-reComputer Industrial 配备了一个 DB9 接口，支持 RS232、RS422 和 RS485 通信协议，并且板载有一个 DIP 开关面板，用于在不同接口选项之间切换。
+reComputer Industrial 配备了一个支持 RS232、RS422 和 RS485 通信协议的 DB9 接口，并且板载有一个 DIP 开关面板，用于在不同接口选项之间切换。
 
-您可以看到下面的 DIP 开关面板：
+您可以看到 DIP 开关面板如下：
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/51.png"/></div>
 
 :::note
-在使用 DIP 开关面板之前，请确保移除黄色塑料盖。
+使用 DIP 开关面板之前，请确保移除黄色塑料盖。
 :::
 
-以下表格解释了根据 DIP 开关位置的不同模式：
+以下表格解释了基于 DIP 开关位置的不同模式：
 
 <table>
   <thead>
@@ -1035,7 +1029,7 @@ reComputer Industrial 配备了一个 DB9 接口，支持 RS232、RS422 和 RS48
       <td>1</td>
       <td>0</td>
       <td>RS-485 半双工</td>
-      <td>1T/1R RS-485，TX ENABLE 低电平有效</td>
+      <td>1T/1R RS-485，TX ENABLE 低电平激活</td>
     </tr>
     <tr>
       <td><img src="https://files.seeedstudio.com/wiki/reComputer-Industrial/55.png" alt="Image" width={200} height={127} /></td>
@@ -1043,7 +1037,7 @@ reComputer Industrial 配备了一个 DB9 接口，支持 RS232、RS422 和 RS48
       <td>1</td>
       <td>1</td>
       <td>RS-485 半双工</td>
-      <td>1T/1R RS-485，TX ENABLE 高电平有效</td>
+      <td>1T/1R RS-485，TX ENABLE 高电平激活</td>
     </tr>
     <tr>
       <td><img src="https://files.seeedstudio.com/wiki/reComputer-Industrial/56.png" alt="Image" width={200} height={127} /></td>
@@ -1076,7 +1070,7 @@ reComputer Industrial 配备了一个 DB9 接口，支持 RS232、RS422 和 RS48
       <td>1T/1R RS-485 带终端电阻</td>
     </tr>
     <tr>
-      <td>TX ENABLE 低电平有效</td>
+      <td>TX ENABLE 低电平激活</td>
     </tr>
     <tr>
       <td rowSpan={2}><img src="https://files.seeedstudio.com/wiki/reComputer-Industrial/59.png" alt="Image" width={200} height={127} /></td>
@@ -1084,7 +1078,7 @@ reComputer Industrial 配备了一个 DB9 接口，支持 RS232、RS422 和 RS48
       <td rowSpan={2}>1</td>
       <td rowSpan={2}>1</td>
       <td>低功耗</td>
-      <td rowSpan={2}>所有 I/O 引脚为高阻态</td>
+      <td rowSpan={2}>所有 I/O 引脚均为高阻态</td>
     </tr>
     <tr>
       <td>关机</td>
@@ -1093,10 +1087,10 @@ reComputer Industrial 配备了一个 DB9 接口，支持 RS232、RS422 和 RS48
 </table>
 
 :::note
-出厂时，开关的默认模式设置为 RS485，DIP 开关位置为 010。
+出厂时，开关的默认模式设置为 RS485，位置为 010。
 :::
 
-上述表格仅考虑了 DIP 开关面板的前三个开关。然而，第四个开关负责切换斜率速率，这与数据速率直接相关。
+上述表格考虑了 DIP 开关面板的前三个开关。然而，第四个开关负责切换斜率速率，这与数据速率直接相关。
 
 <table>
   <thead>
@@ -1110,29 +1104,29 @@ reComputer Industrial 配备了一个 DB9 接口，支持 RS232、RS422 和 RS48
     <tr>
       <td><img src="https://files.seeedstudio.com/wiki/reComputer-Industrial/62.png" alt="Image" width={200} height={127} /></td>
       <td>1</td>
-      <td>SLEW= Vcc<br />此 RS232/RS422/RS485 多协议收发器限制通信速率如下：<br />RS-232：最大数据速率为 1.5Mbps<br />RS-485/RS-422：最大数据速率为 10Mbps<br />实际最大数据速率取决于所使用的 Jetson SOM。</td>
+      <td>SLEW= Vcc<br />此 RS232/RS422/RS485 多协议收发器限制通信速率如下：<br />RS-232：最大数据速率为 1.5Mbps<br />RS-485/RS-422：最大数据速率为 10Mbps<br />实际最大数据速率取决于使用的 Jetson SOM</td>
     </tr>
     <tr>
       <td><img src="https://files.seeedstudio.com/wiki/reComputer-Industrial/63.png" alt="Image" width={200} height={127} /></td>
       <td>0</td>
-      <td>SLEW = GND<br />RS-232：最大数据速率为 250Kbps<br />RS-485/RS-422：最大数据速率为 250kbps</td>
+      <td>SLEW = GND<br />RS-232：最大数据速率为 250Kbps<br />RS-485/RS-422：最大数据速率为 250Kbps</td>
     </tr>
   </tbody>
 </table>
 
-这里我们将使用 USB 转 RS232、RS485 和 RS422 适配器来测试这些接口。因此，在继续之前，您需要在 PC 上安装一个串行终端应用程序。我们推荐您安装 **Putty**，它易于设置和使用。
+这里我们将使用 USB 转 RS232、RS485 和 RS422 适配器来测试接口。因此，在继续之前，您需要在您的 PC 上安装一个串行终端应用程序。我们推荐您安装 **Putty**，它易于设置和使用。
 
-- **步骤 1：** 访问 [此网站](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 并根据您的 PC 架构下载 Putty。
+- **步骤 1：** 访问 [此网站](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)，根据您的 PC 架构下载 Putty。
 
 <div align="center"><img width ="500" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/60.png"/></div>
 
-这里我们根据所用的 PC（X86 Windows 64 位机器）选择了 Putty。
+这里我们选择了适用于我们使用的 PC 的 Putty，该 PC 是 X86 Windows 64 位机器。
 
-- **步骤 2：** 打开下载的安装程序并按照提示安装应用程序。
+- **步骤 2：** 打开下载的安装程序，并按照提示安装应用程序。
 
 ### 通用连接概述
 
-您可以参考 DB9 接头的引脚编号和下表进行连接。
+您可以参考 DB9 接口的针脚编号和下表进行连接。
 
 <div align="center"><img width ="300" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/61.png"/></div>
 
@@ -1147,7 +1141,7 @@ reComputer Industrial 配备了一个 DB9 接口，支持 RS232、RS422 和 RS48
   </thead>
   <tbody>
     <tr>
-      <td>引脚</td>
+      <td>针脚</td>
       <td>RS232</td>
       <td>RS422</td>
       <td>RS485</td>
@@ -1211,29 +1205,29 @@ reComputer Industrial 配备了一个 DB9 接口，支持 RS232、RS422 和 RS48
 
 ### RS232 连接概述
 
-在这里，您可以使用 USB 转 RS232 适配器测试接口。我们使用了 [UGREEN USB 转 RS232 适配器](https://www.amazon.com/UGREEN-Converter-Adapter-Chipset-Windows/dp/B00QUZY4UG?th=1) 进行测试。
+在这里，您可以使用 USB 转 RS232 适配器来测试接口。我们使用了 [UGREEN USB 转 RS232 适配器](https://www.amazon.com/UGREEN-Converter-Adapter-Chipset-Windows/dp/B00QUZY4UG?th=1) 进行测试。
 
-- **步骤 1：** 关闭开发板。
+- **步骤 1：** 关闭开发板
 
 - **步骤 2：** 这里有两种设置 DIP 开关的选项，可以选择 001 模式或 101 模式。每种模式的开关位置如下所示：
 
 <div align="center"><img width ="450" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/64.png"/></div>
 
-- **步骤 3：** 将 USB 转 RS232 适配器连接到 DB9 接头。我们使用了上述提到的适配器。
+- **步骤 3：** 将 USB 转 RS232 适配器连接到 DB9 接头。这里我们连接了上述提到的适配器。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/68.jpg"/></div>
 
-- **步骤 4：** 将适配器的另一端连接到 PC 的 USB 接口。
+- **步骤 4：** 将另一端连接到 PC 的一个 USB 端口
 
-- **步骤 5：** 打开开发板。
+- **步骤 5：** 打开开发板
 
 ### RS232 使用方法
 
-- **步骤 1：** 您可能需要为所使用的适配器安装驱动程序，或者 Windows 会自动为您安装驱动程序。在 Windows 搜索框中输入 **设备管理器** 打开设备管理器，检查是否可以看到连接的适配器作为 COM 设备。
+- **步骤 1：** 您可能需要为所使用的适配器安装驱动程序，或者 Windows 会自动为您安装驱动程序。在 Windows 搜索中输入 **设备管理器** 打开设备管理器，检查是否可以看到连接的适配器作为 COM 设备。
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/67.jpg"/></div>
 
-- **步骤 2：** 如果看不到适配器，您需要根据所使用的适配器安装驱动程序。通常可以在制造商的网站上找到这些驱动程序。对于我们使用的适配器，您可以访问 [此页面](https://www.ugreen.com/pages/download)，搜索 **20201** 作为型号并下载相应的驱动程序。
+- **步骤 2：** 如果看不到适配器，您需要根据所使用的适配器安装驱动程序。通常可以在制造商的网站上找到这些驱动程序。对于我们使用的适配器，您可以访问 [此页面](https://www.ugreen.com/pages/download)，搜索型号 **20201** 并下载相应的驱动程序。
 
 - **步骤 3：** 在 PC 上打开 Putty，选择 **Terminal** 部分并设置以下内容：
 
@@ -1242,52 +1236,52 @@ reComputer Industrial 配备了一个 DB9 接口，支持 RS232、RS422 和 RS48
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/69.png"/></div>
 
-- **步骤 4：** 选择 **Session**，在 **Connection type** 下选择 **Serial**，根据您在 **设备管理器** 中看到的内容设置串口号，保持速度为默认值（9600），然后点击 **Open**。
+- **步骤 4：** 选择 **Session**，在 **Connection type** 下选择 **Serial**，根据 **设备管理器** 中看到的串口号设置串口号，保持速率为默认值（9600），然后点击 **Open**。
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/71.jpg"/></div>
 
-- **步骤 5：** 在 reTerminal 工业终端窗口中，输入以下命令，从 reComputer 向 PC 发送信号：
+- **步骤 5：** 在 reTerminal Industrial 的终端窗口中输入以下命令，从 reComputer 向 PC 发送信号：
 
 ```sh
 sudo chmod 777 /dev/ttyTHS0
 sudo echo "RS232 message from reComputer Industrial" > /dev/ttyTHS0
 ```
 
-现在，您将在 Putty 上看到此消息。
+现在您将在 Putty 上看到此消息显示。
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/72.jpg"/></div>
 
-- **步骤 6：** 在 reTerminal 工业终端窗口中，输入以下命令以等待从 PC 接收信号：
+- **步骤 6：** 在 reTerminal Industrial 的终端窗口中输入以下命令以等待接收来自 PC 的信号：
 
 ```sh
 sudo cat /dev/ttyTHS0
 ```
 
-- **步骤 7：** 在 Putty 上输入任意内容，按 **ENTER**，它将显示在 reComputer 工业终端窗口中。
+- **步骤 7：** 在 Putty 上输入任何内容，按 **ENTER**，它将显示在 reComputer Industrial 的终端窗口中。
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/73.png"/></div>
 
 ### RS422 连接概述
 
-在这里，您可以使用 USB 转 RS422 适配器测试接口。我们使用了 [DTech USB 转 RS485 适配器](https://www.amazon.com/Adapter-Serial-Terminal-Ferrite-Windows/dp/B08SM5MX8K) 进行测试。
+在这里，您可以使用 USB 转 RS422 适配器来测试接口。我们使用了 [DTech USB 转 RS485 适配器](https://www.amazon.com/Adapter-Serial-Terminal-Ferrite-Windows/dp/B08SM5MX8K) 进行测试。
 
-- **步骤 1：** 关闭开发板。
+- **步骤 1：** 关闭开发板
 
 - **步骤 2：** 这里有两种设置 DIP 开关的选项，可以选择 000 模式或 100 模式。每种模式的开关位置如下所示：
 
 <div align="center"><img width ="450" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/65.png"/></div>
 
-- **步骤 3：** 使用跳线将 USB 转 RS422 适配器连接到 DB9 接头，如下图所示。我们使用了上述提到的适配器。
+- **步骤 3：** 使用跳线将 USB 转 RS422 适配器连接到 DB9 接头，如下图所示。这里我们连接了上述提到的适配器。
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/74.png"/></div>
 
-- **步骤 4：** 将适配器的另一端连接到 PC 的 USB 接口。
+- **步骤 4：** 将另一端连接到 PC 的一个 USB 端口
 
-- **步骤 5：** 打开开发板。
+- **步骤 5：** 打开开发板
 
 ### RS422 使用方法
 
-- **步骤 1：** 您可能需要为所使用的适配器安装驱动程序，或者 Windows 会自动为您安装驱动程序。在 Windows 搜索框中输入 **设备管理器** 打开设备管理器，检查是否可以看到连接的适配器作为 COM 设备。
+- **步骤 1：** 您可能需要为所使用的适配器安装驱动程序，或者 Windows 会自动为您安装驱动程序。在 Windows 搜索中输入 **设备管理器** 打开设备管理器，检查是否可以看到连接的适配器作为 COM 设备。
 
 <div align="center"><img width ="450" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/75.png"/></div>
 
@@ -1300,69 +1294,65 @@ sudo cat /dev/ttyTHS0
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/69.png"/></div>
 
-### 第四步：选择 **Session**，在 **Connection type** 下选择 **Serial**，根据 **设备管理器** 中显示的内容设置串口号，保持速率为默认值（9600），然后点击 **Open**
+- **步骤 4：** 选择 **Session**，在 **Connection type** 下选择 **Serial**，根据 **设备管理器** 中看到的串口号设置串口号，保持速率为默认值（9600），然后点击 **Open**。
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/76.png"/></div>
 
-### 第四步：在 reTerminal 工业终端窗口中，输入以下命令以从 reComputer 向 PC 发送信号
+- **步骤 5：** 在 reTerminal Industrial 的终端窗口中输入以下命令，从 reComputer 向 PC 发送信号：
 
 ```sh
 sudo chmod 777 /dev/ttyTHS0
 sudo echo "RS422 message from reComputer Industrial" > /dev/ttyTHS0
 ```
 
-现在你将在 Putty 上看到此消息显示。
+现在您将在 Putty 上看到此消息显示。
 
-### 第五步：在 reTerminal 工业终端窗口中，输入以下命令以等待接收来自 PC 的信号
+- **步骤 6：** 在 reTerminal Industrial 的终端窗口中输入以下命令以等待接收来自 PC 的信号：
 
 ```sh
 sudo cat /dev/ttyTHS0
 ```
 
-### 第六步：在 Putty 中输入任意内容，按下 **ENTER**，它将在 reComputer 工业终端窗口中显示。
+- **步骤 7：** 在 Putty 上输入任何内容，按 **ENTER**，它将显示在 reComputer Industrial 的终端窗口中。
 
----
+### RS485 连接概述 
 
-### RS485 连接概述
+这里您可以使用 USB 转 RS422 适配器来测试接口。我们使用了 [DTech USB 转 RS485 适配器](https://www.amazon.com/Adapter-Serial-Terminal-Ferrite-Windows/dp/B08SM5MX8K) 进行测试。
 
-在这里，你可以使用 USB 转 RS422 适配器来测试接口。我们使用了 [DTech USB 转 RS485 适配器](https://www.amazon.com/Adapter-Serial-Terminal-Ferrite-Windows/dp/B08SM5MX8K) 进行测试。
+- **步骤 1：** 关闭开发板电源
 
-- **第一步：** 关闭开发板。
-
-- **第二步：** 这里有三种选项可以设置 DIP 开关。可以设置为 010 模式、011 模式或 110 模式。每种模式的开关位置如下所示：
+- **步骤 2：** 这里我们有 3 种选项来设置 DIP 开关。可以设置为 010 模式、011 模式或 110 模式。每种模式的开关位置如下所示：
 
 <div align="center"><img width ="650" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/66.png"/></div>
 
-- **第三步：** 使用跳线将 USB 转 RS422 适配器连接到 DB9 接头，如下图所示。我们连接了上述提到的适配器。
+- **步骤 3：** 使用跳线将 USB 转 RS422 适配器连接到 DB9 接头，如下图所示。这里我们连接了上面提到的适配器。
 
 <div align="center"><img width ="650" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/77.png"/></div>
 
-- **第四步：** 将另一端连接到 PC 的一个 USB 端口。
+- **步骤 4：** 将另一端连接到 PC 的一个 USB 端口
 
-- **第五步：** 打开开发板。
-
----
+- **步骤 5：** 打开开发板电源
 
 ### RS485 使用方法
 
-- **第一步：** 你可能需要为所使用的适配器安装驱动程序，或者 Windows 会自动安装驱动程序。在 Windows 搜索中输入 **Device Manager** 打开设备管理器，并检查是否可以看到连接的适配器作为 COM 设备。
+- **步骤 1：** 您可能需要为所使用的适配器安装驱动程序，或者 Windows 会自动为您安装驱动程序。在 Windows 搜索中输入 **设备管理器** 打开设备管理器，检查是否可以看到连接的适配器作为 COM 设备。
 
 <div align="center"><img width ="450" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/75.png"/></div>
 
-- **第二步：** 如果看不到适配器，则需要根据所使用的适配器安装驱动程序。通常可以在制造商网站上找到这些驱动程序。对于我们使用的适配器，可以参考 [此页面](https://www.dtechelectronics.com/front/downloads/downloadssearch/user_downloadscat_id/0/search_value/rs485)。
+- **步骤 2：** 如果看不到适配器，您需要根据所使用的适配器安装驱动程序。通常可以在制造商的网站上找到这些驱动程序。对于我们使用的适配器，您可以访问 [此页面](https://www.dtechelectronics.com/front/downloads/downloadssearch/user_downloadscat_id/0/search_value/rs485)。
 
-- **第三步：** 在 PC 上打开 Putty，选择 **Terminal** 部分并设置以下内容：
+- **步骤 3：** 在 PC 上打开 Putty，选择 **Terminal** 部分并设置以下内容：
 
-  - Local echo: Force on
-  - Local line editing: Force on
+  - 本地回显：强制开启
+  - 本地行编辑：强制开启
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/69.png"/></div>
 
-- **第四步：** 选择 **Session**，在 **Connection type** 下选择 **Serial**，根据 **设备管理器** 中显示的内容设置串口号，保持速率为默认值（9600），然后点击 **Open**
+- **步骤 4：** 选择 **Session**，在 **Connection type** 下选择 **Serial**，根据设备管理器中看到的串口号设置串口号，保持默认速度（9600），然后点击 **Open**。
 
 <div align="center"><img width ="400" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/76.png"/></div>
 
-- **第四步：** 在 reTerminal 工业终端窗口中，输入以下命令以从 reComputer 向 PC 发送信号
+- **步骤 5：** 在 reTerminal Industrial 的终端窗口中输入以下命令，从 reComputer 向 PC 发送信号：
 
 ```sh
 sudo su 
@@ -1374,9 +1364,9 @@ echo 0 > value
 echo "RS485 message from reComputer Industrial" > /dev/ttyTHS0
 ```
 
-现在你将在 Putty 上看到此消息显示。
+现在您将在 Putty 上看到此消息。
 
-- **第五步：** 在 reTerminal 工业终端窗口中，输入以下命令以等待接收来自 PC 的信号
+- **步骤 6：** 在 reTerminal Industrial 的终端窗口中输入以下命令，等待从 PC 接收信号：
 
 ```sh
 sudo su
@@ -1388,60 +1378,52 @@ echo 1 > value
 cat /dev/ttyTHS0
 ```
 
-- **第六步：** 在 Putty 中输入任意内容，按下 **ENTER**，它将在 reComputer 工业终端窗口中显示。
-
----
+- **步骤 7：** 在 Putty 上输入任何内容，按 **ENTER**，它将显示在 reComputer Industrial 的终端窗口中。
 
 ## 千兆以太网接口
 
-reComputer 工业版上有两个千兆以太网（10/100/1000M）接口，它们的功能不同：
+reComputer Industrial 上有两个千兆以太网（10/100/1000M）接口，它们的功能不同：
 
-- 最左侧的接口直接连接到 Jetson 模块，并能够提供 **PSE 802.3 af, 15W** 规格的 PoE 功能。这意味着你可以将 PoE IP 摄像头或任何其他 PoE 设备连接到此端口，为连接的设备供电。
-- 另一个接口通过 PCIe 转以太网（LAN7430-I/Y9X）模块连接。
+- 最左侧的接口直接连接到 Jetson 模块，并能够提供 **PSE 802.3 af, 15W** 规格的 PoE 功能。这意味着您可以将 PoE IP 摄像头或其他 PoE 设备连接到此端口，为连接的设备供电。
+- 另一个接口通过 PCIe 到以太网（LAN7430-I/Y9X）模块连接。
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/36.png"/></div>
 
-每个以太网端口上有两个 LED（绿色和黄色），指示以下内容：
+每个以太网端口上都有 2 个 LED（绿色和黄色），指示以下状态：
 
-- 绿色 LED：仅在连接到 1000M 网络时亮起。
-- 黄色 LED：显示网络活动状态。
-
----
+- 绿色 LED：仅在连接到 1000M 网络时亮起
+- 黄色 LED：显示网络活动状态
 
 ## USB
 
-reComputer 工业版配备了 3 个 USB3.2 接口，具有以下特点：
-- 在双层堆叠 USB 接口上，上下 USB 端口共享一个限流 IC，总供电能力为最大 2.1A 输出电流（单个也可以达到 2.1A）。如果超过 2.1A，将进入过流保护状态。
-- 在双层堆叠 USB 接口旁的单个 USB 接口上，总供电能力为最大 2.1A 输出电流。如果超过 2.1A，将进入过流保护状态。
-- Orin NX 模块配备了 3 个 USB3.2，其中只有一个在 reComputer 中使用，并转换为 3 路（USB3.1 TYPE-A x2 - J4 和 USB3.1 TYPE-A x1 - J3）。
+reComputer Industrial 配备了 3 个 USB3.2 接口，具有以下特性：
+- 在双层堆叠的 USB 接口上，上下两个 USB 端口共享一个限流 IC，总供电能力为最大输出电流 2.1A（单个端口也可以达到 2.1A）。如果超过 2.1A，将进入过流保护状态。
+- 在双层堆叠 USB 接口旁边的单个 USB 接口上，总供电能力为最大输出电流 2.1A。如果超过 2.1A，将进入过流保护状态。
+- Orin NX 模块自带 3 个 USB3.2，其中只有一个在 reComputer 中使用，并转换为 3 路输出。（USB3.1 TYPE-A x2 - J4 和 USB3.1 TYPE-A x1 - J3）。
 - 仅支持 USB 主机模式，不支持设备模式。
-- 提供 5V 2.1A。
+- 提供 5V 2.1A 电源。
 - 支持热插拔。
-
----
 
 ### 使用方法
 
-我们将解释如何对连接的 USB 闪存驱动器进行简单的基准测试。
+以下是如何对连接的 USB 闪存驱动器进行简单基准测试的说明：
 
-- **第一步：** 执行以下命令检查写入速度：
+- **步骤 1：** 通过执行以下命令检查写入速度
 
 ```sh
 sudo dd if=/dev/zero of=/dev/$1 bs=100M count=10 conv=fdatasync
 ```
 
-- **第二步：** 执行以下命令检查读取速度。在执行写入速度测试后再执行此命令。
+- **步骤 2：** 通过执行以下命令检查读取速度。请确保在执行上述写入速度命令后再执行此命令。
 
 ```sh
 sudo sh -c "sync && echo 3 > /proc/sys/vm/drop_caches"
 sudo dd if=/dev/$1 of=/dev/null bs=100M count=10
 ```
 
----
-
 ## 可配置 LED
 
-开发板上有一个绿色 LED，如下图所示。默认情况下，它作为指示设备正常运行的 LED。然而，你也可以通过系统编程控制此 LED 的开关状态。
+板载有一个绿色 LED，如下图所示。默认情况下，它用作指示设备运行正常的 LED。不过，您也可以通过系统编程控制此 LED 的开关。
 
 <div align="center"><img width ="250" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/21.png"/></div>
 
@@ -1469,7 +1451,7 @@ echo 0 > value
 echo 1 > value 
 ```
 
-如果您已完成对 LED 的使用，可以执行以下命令：
+如果您完成了对 LED 的使用，可以执行以下命令：
 
 ```sh
 cd ..
@@ -1485,7 +1467,7 @@ echo 318 > unexport
 - 设置为最大时钟频率
 - 检查 JetPack 信息
 
-- **步骤 1：** 在 reComputer Industrial 的终端窗口中输入以下命令：
+- **步骤 1：** 在 reComputer Industrial 的终端窗口中输入以下命令
 
 ```sh
 sudo apt update
@@ -1499,7 +1481,7 @@ sudo pip3 install jetson-stats
 sudo reboot
 ```
 
-- **步骤 3：** 在终端中输入以下命令：
+- **步骤 3：** 在终端中输入以下命令
 
 ```sh
 jtop
@@ -1509,25 +1491,25 @@ jtop
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/30.png"/></div>
 
-- **步骤 4：** 您可以浏览应用程序的不同页面并探索所有功能！
+- **步骤 4：** 您可以在应用程序的不同页面之间切换，探索所有功能！
 
 ## WiFi 和蓝牙
 
-reComputer Industrial 默认不带 WiFi 和蓝牙功能。但在 PCB 上预留了一个区域，可以焊接 WiFi/蓝牙模块。我们预留了空间以支持 **BL-M8723DU1** 模块。
+reComputer Industrial 默认不支持 WiFi 和蓝牙功能。但在 PCB 上预留了一个区域，可以焊接 WiFi/蓝牙模块。我们预留了支持 **BL-M8723DU1** 模块的空间。
 
-### 连接概览
+### 连接概述
 
-- **步骤 1：** 如果您想自行焊接 **BL-M8723DU1** 模块，可以进行焊接。但我们不推荐这样做，因为如果在此过程中损坏了开发板，保修将失效。我们建议您使用我们的专业服务来帮助您将此模块焊接到开发板上，您可以发送电子邮件至 order@seeed.cc 提出请求。
+- **步骤 1：** 如果您想自行焊接 **BL-M8723DU1** 模块，可以进行焊接。但我们不推荐这样做，因为如果在此过程中损坏了电路板，保修将失效。我们建议您使用我们的专业服务来帮助您将此模块焊接到电路板上，您可以发送电子邮件至 order@seeed.cc 提出请求。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/31.jpg"/></div>
 
-- **步骤 2：** 将两个天线连接到开发板上的两个天线连接器，用于 WiFi 和蓝牙。这里需要使用 IPEX 连接器。
+- **步骤 2：** 将两个天线连接到板上的两个天线连接器上，用于 WiFi 和蓝牙。这里需要使用 IPEX 连接器。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/32.png"/></div>
 
 ### 使用方法
 
-- **步骤 1：** 打开开发板，当设备启动到 Ubuntu 桌面后，点击右上角的下拉菜单，导航到 `Settings > Wi-Fi`，并切换标题栏上的按钮以启用 WiFi。之后选择一个 WiFi 网络，输入所需密码并连接。
+- **步骤 1：** 打开开发板，一旦设备启动到 Ubuntu 桌面，点击右上角的下拉菜单，导航到 `Settings > Wi-Fi`，并切换标题栏上的按钮以启用 WiFi。之后选择一个 WiFi 网络，输入所需密码并连接。
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/33.png"/></div>
 
@@ -1537,13 +1519,13 @@ reComputer Industrial 默认不带 WiFi 和蓝牙功能。但在 PCB 上预留�
 
 ## TPM
 
-reComputer Industrial 配备了一个 TPM 接口，用于连接外部 TPM 模块。我们已使用基于 Infineon SLB9670 的 TPM2.0 模块进行了测试。
+reComputer Industrial 配备了一个 TPM 接口，用于连接外部 TPM 模块。这里我们测试了基于 Infineon SLB9670 的 TPM2.0 模块。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/114.jpg"/></div>
 
 ### 连接概览
 
-将 TPM 模块连接到如下图所示的 TPM 接口：
+按照下图所示，将 TPM 模块连接到 TPM 接口。
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/115.jpg"/></div>
 
@@ -1562,7 +1544,7 @@ ls /dev/tpm* -l
 
 ## reComputer Industrial 的最大性能
 
-如果您想在 reComputer Industrial 上启用最大性能，请按照以下说明操作：
+如果您希望在 reComputer Industrial 上启用最大性能，请按照以下说明操作：
 
 - **步骤 1：** 输入以下命令以启用最大功率模式：
 
@@ -1572,9 +1554,9 @@ sudo nvpmodel -m 0
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/35.jpg"/></div>
 
-此时系统会提示您输入 **YES** 以重启开发板。
+此时系统会要求输入 **YES** 以重新启动设备。
 
-- **步骤 2：** 开发板启动后，输入以下命令将 CPU 时钟设置为最大频率：
+- **步骤 2：** 设备启动后，输入以下命令将 CPU 时钟设置为最大频率：
 
 ```sh
 sudo jetson_clocks
@@ -1820,7 +1802,7 @@ gpiochip0: GPIOs 504-511, parent: i2c/4-003c, max77620-gpio, can sleep:
 
 ## 技术支持
 
-请随时在我们的 [论坛](https://forum.seeedstudio.com/) 中提交问题。
+请随时在我们的[论坛](https://forum.seeedstudio.com/)提交问题。
 
 <div>
   <br /><p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/act-4.html?utm_source=wiki&utm_medium=wikibanner&utm_campaign=newproducts" target="_blank"><img src="https://files.seeedstudio.com/wiki/Wiki_Banner/new_product.jpg" /></a></p>

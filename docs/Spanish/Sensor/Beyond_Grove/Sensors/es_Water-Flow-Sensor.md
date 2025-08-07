@@ -215,7 +215,7 @@ void flow () // Interrupt function
 }
 ```
 
-:::tipsuccess
+:::tip
 Si todo está correctamente conectado, abre el monitor serial y ajusta la velocidad de baudios a **9600**.  
 Cuando el agua comience a fluir, el valor de caudal se imprimirá en la ventana correspondiente.
 :::

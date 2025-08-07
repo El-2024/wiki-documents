@@ -1,39 +1,37 @@
 ---
-title:  Grove - 摇杆控制器
-description: Grove - 摇杆控制器
+title: Grove - NunChuck
+nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-NunChuck/
+image: https://wiki.seeedstudio.com/cn/Grove-NunChuck/
 slug: /cn/Grove-NunChuck
 last_update:
-  date: 03/23/2024
-  author: WuFeifei
+  date: 01/09/2022
+  author: gunengyu
 ---
 
 ![](https://files.seeedstudio.com/wiki/Grove-NunChuck/img/Nunchuck_01.jpg)
 
-**Grove - NunChuck**是一款小型PCB板，它将Wii Nunchuck连接器适配为标准Grove连接器。Nunchuck的电源、地线以及双线接口都通过4针0.1"间距的接头引出。
+**Grove - NunChuck** 是一个小型 PCB，它将 Wii Nunchuck 连接器适配为标准 Grove 连接器。Nunchuck 的电源、地线和双线接口都被引出到一个 4 针 0.1" 间距的接头上。通过这个“Grove - NunChuck”，您可以使用 Wii Nunchuck 和其他 Wii 遥控器外设，而无需剪断电缆。只需将其插入 Wii Nunchuck，然后连接到 Grove - Base Shield。
 
-这款“Grove - NunChuck”让您可以轻松地使用Wii Nunchuck和其他Wii遥控器外设，而无需剪断线缆。只需将其插入Wii Nunchuck，然后再连接到Grove - Base Shield即可。
+这里还有一个 Wiichuck——一个 Wii-Nunchuck 的断路板，它们非常相似。
 
-有一款名为Wiichuck的Wii-Nunchuck转接板，它们的功能相似。
+• 设计用于插入 Nintendo Wii Nunchuck 的连接器
 
-• 设计用于插入Nintendo Wii Nunchuck的连接器
-
-• 可连接到Base Shield V2
+• 可连接到 Base Shield V2
 
 • 接口类型：I2C
 
 • 工作电压：+5 V
 
-资源文件：[Grove - NunChuck Eagle文件](https://files.seeedstudio.com/wiki/Grove-NunChuck/res/Grove-NunChuck_Eagle_File.zip)
+资源文件：[Grove - NunChuck Eagle 文件](https://files.seeedstudio.com/wiki/Grove-NunChuck/res/Grove-NunChuck_Eagle_File.zip)
 
-如果您有任何问题或其他更好的设计想法，您可以前往我们的[论坛](https://www.seeedstudio.com/forum)或[许愿墙](http://wish.seeedstudio.com/)进行讨论。
+如果您有任何问题或更好的设计想法，可以前往我们的 [论坛](https://www.seeedstudio.com/forum) 或 [愿望墙](http://wish.seeedstudio.com) 进行讨论。
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供各种支持，确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

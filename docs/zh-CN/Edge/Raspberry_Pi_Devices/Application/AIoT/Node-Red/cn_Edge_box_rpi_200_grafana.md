@@ -1,5 +1,5 @@
 ---
-description: 在本教程中，我们将指导您在由树莓派驱动的 EdgeBox RPi 200 上安装 Grafana。同时，我们还将展示如何将 Grafana 连接到现有的 InfluxDB 数据库，并创建一个详细的、具有说明性的仪表板。
+description: 在本教程中，我们将指导您在由树莓派驱动的 EdgeBox RPi 200 上安装 Grafana。我们还将向您展示如何将 Grafana 连接到现有的 InfluxDB 数据库，并创建一个详细的、直观的仪表板。
 title: 使用 Grafana 的 Edge Box RPi 200
 keywords:
   - Edge Box Rpi 200
@@ -10,16 +10,12 @@ keywords:
 image: https://files.seeedstudio.com/wiki/Edge_Box/nodered/EdgeBox-RPi-200-font.jpg
 slug: /cn/edgebox_rpi_200_grafana
 last_update:
-  date: 05/15/2025
+  date: 2024/6/24
   author: Kasun Thushara
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 简介
 
-[Grafana](https://grafana.com/oss/grafana/) 是一款开源的可视化和分析软件，它使您能够从任何存储位置查询、可视化、警报和探索您的指标、日志和跟踪数据。它提供了将时间序列数据库 (TSDB) 数据转换为有洞察力的图表和可视化工具。作为一个强大的监控解决方案，Grafana 有助于做出明智的决策、提高系统性能并简化故障排除。在本教程中，我们将指导您在由树莓派驱动的 EdgeBox RPi 200 上安装 Grafana，连接到现有的 InfluxDB 数据库，并创建一个说明性的仪表板。
+[Grafana](https://grafana.com/oss/grafana/) 是一款开源的可视化和分析软件，它使您能够查询、可视化、警报和探索来自任何存储位置的指标、日志和跟踪。它提供了将时间序列数据库（TSDB）数据转换为有洞察力的图表和可视化工具。作为一种强大的监控解决方案，Grafana 有助于做出明智的决策、提高系统性能并简化故障排除。在本教程中，我们将指导您在由树莓派驱动的 EdgeBox RPi 200 上安装 Grafana，将其连接到现有的 InfluxDB 数据库，并创建一个直观的仪表板。
 
 ### 硬件准备
 
@@ -35,7 +31,7 @@ last_update:
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/EdgeBox-RPi-200-CM4104016-p-5486.html">
-              <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
+              <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a></div></td>
         </tr>
     </table>
@@ -43,11 +39,11 @@ last_update:
 
 ### 软件准备
 
-建议参考之前的教程 [如何创建 InfluxDB 数据库](https://wiki.seeedstudio.com/edge_box_rpi_200_node_red_influxdb/)。在本教程中，我们将使用现有的 InfluxDB 连接进行设置。
+建议参考之前的教程：[如何创建 InfluxDB 数据库](https://wiki.seeedstudio.com/cn/edge_box_rpi_200_node_red_influxdb/)。在本教程中，我们将使用现有的 InfluxDB 连接进行设置。
 
 ## 添加 Grafana 仓库
 
-**确保您的树莓派上所有已安装的软件包都是最新的**：
+**确保您树莓派上当前安装的所有软件包都是最新的**：
 
 ```bash
 sudo apt update
@@ -115,7 +111,7 @@ http://<IPADDRESS>:3000
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/grafana/login.PNG" /></center>
 
-默认的用户名和密码是：
+默认的用户名和密码为：
 
 - **用户名：** `admin`
 - **密码：** `admin`
@@ -124,29 +120,29 @@ http://<IPADDRESS>:3000
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/grafana/updatepsw.PNG" /></center>
 
-## 创建您的第一个 Dashboard
+## 创建您的第一个仪表盘
 
-**导航到 Dashboards：**
+**导航到仪表盘：**
    
 点击左侧菜单中的 **Dashboards**。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/grafana/dashboard1.PNG" /></center>
 
-**创建一个新的 Dashboard：**
+**创建新仪表盘：**
    
-在 Dashboards 页面，点击 **New** 并选择 **New Dashboard**。
+在仪表盘页面，点击 **New** 并选择 **New Dashboard**。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/grafana/dashboard2.PNG" /></center>
 
-**添加一个可视化：**
+**添加可视化：**
    
-在仪表板上，点击 **+ Add visualization**。
+在仪表盘上，点击 **+ Add visualization**。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/grafana/dashboard3.PNG" /></center>
 
 **选择数据源：**
    
-您将被重定向到选择数据源的页面。在上一个教程中，我们创建了一个 InfluxDB 数据库。点击 **Configure a new data source**。
+系统会将您重定向到选择数据源页面。在上一个教程中，我们创建了一个 InfluxDB 数据库。点击 **Configure a new data source**。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/grafana/configuresource.PNG" /></center>
 
@@ -163,7 +159,7 @@ http://<IPADDRESS>:3000
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/grafana/saveandtest.PNG" /></center>
 
-**构建您的 Dashboard：**
+**构建您的仪表盘：**
    
 您将看到一条确认数据源配置的消息。点击 **Building a dashboard**。
 
@@ -171,27 +167,27 @@ http://<IPADDRESS>:3000
 
 **添加可视化：**
    
-您将被重定向到新的仪表板页面。点击 **Add visualization**。
+系统会将您重定向到新的仪表盘页面。点击 **Add visualization**。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/grafana/dashboard3.PNG" /></center>
 
 **选择数据源：**
    
-您将被重定向到选择数据源的页面。我们已经创建了一个 InfluxDB 数据库连接。点击 **InfluxDB**。
+系统会将您重定向到选择数据源页面。我们已经创建了一个 InfluxDB 数据库连接。点击 **InfluxDB**。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/grafana/datasource.PNG" /></center>
 
 **配置可视化**
 
-Grafana 提供了一个用户友好的界面，用于选择测量值、字段和其他相关数据点。我们将创建一个时间序列可视化。在左侧，您将看到用于输入面板标题、图例、轴设置和图表设置的选项。
-请注意以下视觉元素，以便在您的第一个仪表板中添加一个简单的图表。
+Grafana 提供了一个用户友好的界面，用于选择测量值、字段和其他相关数据点。我们将创建一个时间序列可视化。在左侧，您会看到用于输入面板标题、图例、轴设置和图表设置的选项。
+请注意以下视觉元素，以便在您的第一个仪表盘中添加一个简单的图表。
 有关更详细的设置和自定义，请参考 [Grafana 文档](https://grafana.com/docs/grafana/latest/panels-visualizations/visualizations/)。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/grafana/grafana.gif" /></center>
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时能够获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

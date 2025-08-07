@@ -1,44 +1,43 @@
 ---
-title: LCD屏幕的基础知识
+title: LCD 基础知识
 nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio_RP2040_Module_Build-in_Wireless_2.4G/
+image: https://wiki.seeedstudio.com/cn/Wio_RP2040_Module_Build-in_Wireless_2.4G/
 slug: /cn/Wio-Terminal-LCD-Basic
 last_update:
-  date: 3/10/2024
-  author: 金菊
+  date: 01/11/2022
+  author: gunengyu
 ---
 
-# TFT LCD屏幕的基础知识
+# TFT LCD 屏幕基础知识
 
 ## 像素坐标系统
 
-数字二维图像由像素的行和列组成。通过指定像素所在的列和行来指定图像中的像素。简单来说，像素可以通过一对整数来标识，即列号和行号。例如，具有坐标（4,7）的像素位于第4列和第7行。
+数字 2D 图像由像素的行和列组成。图像中的像素通过指定像素所在的列和行来确定。简单来说，像素可以通过一对整数来标识，这对整数提供列号和行号。例如，坐标为 (4,7) 的像素位于第 4 列和第 7 行。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/grids.jpg" /></div>
 
+通常，列从左上角开始从左到右编号，从零开始，但在某些情况下，也可以从其他角开始（通过设置旋转）。
 
-按照惯例，列从左上角向右编号，从零开始，但在某些情况下，也可以从其他角落开始（通过设置旋转）。
+## 8 位和 16 位颜色模型
 
-## 8位和16位色彩模型
+像素也以颜色形式表示，因此最好也了解一些颜色模型。8 位和 16 位颜色模型适合 MCU 使用，因此这是一个很好的开始。这两种颜色模型由 3 个颜色分量组成 - **红色、绿色和蓝色**。根据颜色模型，这 3 个颜色分量将存储到 8 位或 16 位变量中。
 
-像素也以颜色形式表示，因此最好涵盖一些色彩模型。 8位和16位色彩模型对于MCU来说是很好的工作方式，所以这是一个很好的起点。 这两种色彩模型由3个颜色分量 - **红, 绿, 和 蓝** 组成。根据色彩模型，这3个颜色分量将存储在8位或16位变量中。
+### 8 位颜色
 
-### 8位色彩
-
-| 位 | 7   | 6   | 5   | 4   | 3   | 2   | 1   | 0   |
+| 位  | 7   | 6   | 5   | 4   | 3   | 2   | 1   | 0   |
 | ---  | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
-| **数据** | 红   | 红   | 红   | 绿   | 绿   | 绿   | 蓝   | 蓝   |
+| **数据** | 红色   | 红色   | 红色   | 绿色   | 绿色   | 绿色   | 蓝色   | 蓝色   |
 
-### 16位色彩
+### 16 位颜色
 
 | 位  | 15   | 14   | 13   | 12   | 11   | 10   | 9   | 8   | 7   | 6   | 5   | 4   | 3   | 2   | 1   | 0   |
 | ---  | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
-| **数据** | 红   | 红   | 红   | 红   | 红   | 绿   | 绿   | 绿   | 绿   | 绿   | 绿   | 蓝   | 蓝   | 蓝   | 蓝   | 蓝   |
+| **数据** | 红色   | 红色   | 红色   | 红色   | 红色   | 绿色   | 绿色   | 绿色   | 绿色   | 绿色   | 绿色   | 蓝色   | 蓝色   | 蓝色   | 蓝色   | 蓝色   |
 
-以下是在LCD库中包含的一些预定义的基本颜色（16位）：
+以下是 LCD 库中包含的一些基本预定义示例颜色（16 位）：
 
 ```cpp
 #define TFT_BLACK       0x0000      /*   0,   0,   0 */
@@ -61,9 +60,9 @@ last_update:
 #define TFT_GREENYELLOW 0xB7E0      /* 180, 255,   0 */
 ```
 
-## TFT LCD屏幕初始化
+## TFT LCD 屏幕初始化
 
-要初始化Wio终端上的TFT LCD屏幕：
+要在 Wio Terminal 上初始化 TFT LCD 屏幕：
 
 ```cpp
 #include"TFT_eSPI.h"
@@ -73,16 +72,16 @@ void setup() {
   ...
     tft.begin();
     tft.setRotation(r);
-    digitalWrite(LCD_BACKLIGHT, HIGH); // turn on the backlight
+    digitalWrite(LCD_BACKLIGHT, HIGH); // 打开背光
   ...
 }
 ```
 
-其中r是TFT LCD屏幕的旋转（从0到3），表示它将从哪个角开始。
+其中 r 是 TFT LCD 屏幕的旋转角度（从 0 到 3），表示它将从哪个角开始。
 
 ### 示例代码
 
-这个示例初始化Wio终端上的TFT LCD屏幕，并用红色填充屏幕。
+此示例在 Wio Terminal 上初始化 TFT LCD 屏幕并用红色填充屏幕。
 
 ```cpp
 #include"TFT_eSPI.h"
@@ -92,7 +91,7 @@ void setup() {
     tft.begin();
     tft.setRotation(3);
 
-    tft.fillScreen(TFT_RED); // fills entire the screen with colour red
+    tft.fillScreen(TFT_RED); // 用红色填充整个屏幕
 }
 
 void loop() {
@@ -100,52 +99,51 @@ void loop() {
 }
 ```
 
-## 关闭LCD背光
+## 关闭 LCD 背光
 
-要关闭Wio终端的LCD背光，只需定义LCD背光控制引脚 `72Ul` 并将其拉 `HIGH` 以打开，将其拉 `LOW` 以关闭：
+要关闭 Wio Terminal 的 LCD 背光，只需定义 LCD 背光控制引脚 `72Ul`，将其拉 `HIGH` 以打开，拉 `LOW` 以关闭：
 
 ```cpp
 #include"TFT_eSPI.h"
 TFT_eSPI tft;
-#define LCD_BACKLIGHT (72Ul) // Control Pin of LCD
+#define LCD_BACKLIGHT (72Ul) // LCD 控制引脚
 
 void setup() {
-  // put your setup code here, to run once:
+  // 在这里放置您的设置代码，只运行一次：
   
     tft.begin();
     tft.setRotation(3);
     tft.fillScreen(TFT_RED);
 
     delay(2000);
-    // Turning off the LCD backlight
+    // 关闭 LCD 背光
     digitalWrite(LCD_BACKLIGHT, LOW);
     delay(2000);
-    // Turning on the LCD backlight
+    // 打开 LCD 背光
     digitalWrite(LCD_BACKLIGHT, HIGH);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // 在这里放置您的主要代码，重复运行：
 
 }
 ```
 
-## 控制LCD背光的亮度
+## 控制 LCD 背光亮度
 
-这个示例是由Kenta IDA编写的，所有的功劳归 [**Kenta IDA**](https://github.com/ciniml) 所有。
+此示例由 [**Kenta IDA**](https://github.com/ciniml) 编写，所有功劳归 Kenta IDA 所有。
 
-**步骤 1.** **在这里下载 [repo](https://github.com/Seeed-Studio/Seeed_Arduino_Sketchbook) 。**
+**步骤 1.** **在[这里](https://github.com/Seeed-Studio/Seeed_Arduino_Sketchbook)下载仓库。**
 
-- 位于 `examples/WioTerminal_BackLight` 位置。
+- 在 `examples/WioTerminal_BackLight` 位置下。
 
 **步骤 2.** **上传代码。**
 
-将 `lcd_backlight_control.ino` 上传到Wio终端，您将看到LCD上的亮度变化。
+将 `lcd_backlight_control.ino` 上传到 Wio Terminal，您将看到 LCD 上的亮度变化。
 
-## 技术支持 & 产品讨论
-
- 如果您遇到任何技术问题，请将问题提交到我们的 [论坛](http://forum.seeedstudio.com/) 。
-感谢您选择我们的产品！我们将为您提供不同的支持，以确保您对我们的产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+## 技术支持和产品讨论
+如果您有任何技术问题，请将问题提交到我们的[论坛](http://forum.seeedstudio.com/)。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

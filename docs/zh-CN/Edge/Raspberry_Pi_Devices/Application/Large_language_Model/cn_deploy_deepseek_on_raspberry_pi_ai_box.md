@@ -9,21 +9,17 @@ keywords:
 image: https://files.seeedstudio.com/wiki/AI_box_deepseek/install_deepseek.webp
 slug: /cn/deploy_deepseek_on_raspberry_pi_ai_box
 last_update:
-  date: 05/15/2025
+  date: 03/11/2025
   author: Jiahao
 
-no_comments: false # for Disqus
+no_comments: false # 用于 Disqus
 ---
 
 # 在 Raspberry Pi AI Box 上部署 DeepSeek
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 简介
 
-本文档解释了如何使用 [Ollama](https://ollama.com/) 部署框架在 Raspberry Pi AI Box 上部署 [DeepSeek](https://github.com/deepseek-ai/DeepSeek-LLM) 模型。Ollama 简化了在 Raspberry Pi 等紧凑型硬件上安装和运行 AI 模型的过程，处理依赖管理和系统配置。在本指南中，您将找到清晰的分步说明，包括如何设置环境、安装必要的软件以及启动 DeepSeek 模型。本资源面向希望在低功耗设备上利用 AI 能力的开发者和 AI 爱好者。
+本文档解释了如何使用 [Ollama](https://ollama.com/) 部署框架在 Raspberry Pi AI Box 上部署 [DeepSeek](https://github.com/deepseek-ai/DeepSeek-LLM) 模型。Ollama 简化了在 Raspberry Pi 等紧凑型硬件上安装和运行 AI 模型的过程，处理依赖管理和系统配置。在本指南中，您将找到有关设置环境、安装必要软件以及启动 DeepSeek 模型的清晰分步说明。本资源面向希望在低功耗设备上利用 AI 功能的开发者和 AI 爱好者。
 
 ## 准备硬件
 
@@ -57,7 +53,7 @@ sudo apt full-upgrade
 
 ### 安装 Ollama 
 
-打开一个终端（使用 `Ctrl+Alt+T`），并输入以下命令来安装 Ollama：
+打开一个终端（使用 `Ctrl+Alt+T`），并输入以下命令安装 Ollama：
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/AI_box_deepseek/install_ollama.png" alt="pir" width={1000} height="auto"/></p>
 
@@ -67,7 +63,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 ### 安装并运行 DeepSeek 模型
 
-然后输入以下命令来安装并运行 DeepSeek 7b 模型：
+然后输入以下命令安装并运行 DeepSeek 7b 模型：
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/AI_box_deepseek/install_deepseek.png" alt="pir" width={1000} height="auto"/></p>
 
@@ -77,13 +73,13 @@ ollama run deepseek-r1
 
 ## 结果
 
-在本次演示中，我使用了 DeepSeek 1.5b 模型。您可以根据需求和硬件的容量选择使用哪个模型。
+在本演示中，我使用了 DeepSeek 1.5b 模型。您可以根据需求和硬件的容量选择使用哪个模型。
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/qo2iv5RLgbA" title="如何在 Raspberry Pi AI Box 上部署 DeepSeek？ #deepseek #raspberrypi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们为您提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多种沟通方式，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们为您提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

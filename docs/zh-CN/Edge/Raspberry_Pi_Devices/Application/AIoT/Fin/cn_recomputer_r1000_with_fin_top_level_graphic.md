@@ -1,7 +1,7 @@
 ---
 description: 本文将向您展示如何创建一个顶级图形
 
-title: 使用 reComputer R1000 和 FIN 创建顶级图形
+title: 使用 FIN 在 reComputer R1000 上创建顶级图形
 keywords:
   - 边缘控制器
   - reComputer R1000
@@ -11,21 +11,18 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png
 slug: /cn/reComputer_r1000_fin_top_level_gaphic
 last_update:
-  date: 05/15/2025
+  date: 2024/07/17
   author: ShuishengPeng
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## 简介
-FIN Framework (FIN) 是一个包含应用套件的软件框架，可以用于集成、控制、管理、分析、可视化和连接。其功能可以被 OEM 集成到各种产品和服务中。
+FIN Framework (FIN) 是一个包含应用套件的软件框架，可用于集成、控制、管理、分析、可视化和连接。其功能可以被 OEM 集成到各种产品和服务中。
 
 本文将向您展示如何使用 FIN Framework 的 `Graphics Builder`，并通过 `Graphics Builder` 创建一个 `顶级图形`。
 
 ## 开始之前
 
-在开始此项目之前，您可能需要按照以下描述提前准备好硬件和软件。
+在开始此项目之前，您需要按照以下说明提前准备好硬件和软件。
 
 ### 硬件准备
 
@@ -41,18 +38,18 @@ FIN Framework (FIN) 是一个包含应用套件的软件框架，可以用于集
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html">
-              <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
+              <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a></div></td>
         </tr>
     </table>
     </div>
 
 ### 软件准备
-* 关于如何安装 FIN Framework，您可以参考此 [wiki](https://wiki.seeedstudio.com/reComputer_r1000_install_fin/)。
+* 关于如何安装 FIN Framework，您可以参考此 [wiki](https://wiki.seeedstudio.com/cn/reComputer_r1000_install_fin/)。
 
 ## 创建顶级图形的步骤
 ### 创建新的顶级图形
-**步骤 1**：我们创建三个站点。关于如何在 Equip Tree 下创建站点，您可以参考此 [wiki](https://wiki.seeedstudio.com/reComputer_r1000_fin_modbus_tcp_and_rtu/#add-data-points-to-equip-tree)。并请将系统上下文保存在主目录中。
+**步骤 1**：我们创建三个站点。关于如何在设备树下创建站点，您可以参考此 [wiki](https://wiki.seeedstudio.com/cn/reComputer_r1000_fin_modbus_tcp_and_rtu/#add-data-points-to-equip-tree)。请将系统上下文保留在主目录中。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Top_grap_Equip_tree_and_top_path.png" /></center>
 
@@ -62,7 +59,7 @@ FIN Framework (FIN) 是一个包含应用套件的软件框架，可以用于集
 
 ### 配置新的顶级图形
 
-**步骤 1**：导入平面图。首先在左下角的 `TYPE` 列中选择 `IMAGE`，然后您可以导入背景图片。有两种方式导入背景图片。第一种方式是直接从文件夹中将其拖入编辑框；第二种方式是点击左下角的 `BROWSE`。如果您之前导入过某张图片，可以在这里找到该图片。导入后，右键单击鼠标并选择 `Arrange => Send to back` 将图片移动到底层。
+**步骤 1**：导入平面图。首先在左下角的 `TYPE` 列中选择 `IMAGE`，然后您可以导入背景图片。有两种方式导入背景图片。第一种方式是直接从文件夹中将其拖入编辑框；第二种方式是点击左下角的 `BROWSE`。如果您之前导入过某张图片，可以在这里找到该图片。导入后，右键单击鼠标并选择 `Arrange => Send to back` 将图片移至底层。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Top_Grap_2.gif" /></center>
 
@@ -70,7 +67,7 @@ FIN Framework (FIN) 是一个包含应用套件的软件框架，可以用于集
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Top_Grap_3.gif" /></center>
 
-**步骤 3**：我们可以添加一个 `label` 来说明一些信息。我们在左侧找到 `label` 控件并将其拖入工作区，调整其大小，然后在右下角更改 `label` 的文本和文本大小。
+**步骤 3**：我们可以添加一个 `label` 来说明一些信息。在左侧找到 `label` 控件并将其拖入工作区，调整其大小，然后在右下角更改 `label` 的文本和文本大小。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Top_Grap_4.gif" /></center>
 
@@ -96,7 +93,7 @@ FIN Framework (FIN) 是一个包含应用套件的软件框架，可以用于集
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供了多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时拥有尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

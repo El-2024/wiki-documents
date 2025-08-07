@@ -1,5 +1,5 @@
 ---
-description: 本文主要介绍如何为 reComputer R1000 安装 FIN
+description: 本文主要介绍如何在 reComputer R1000 上安装 FIN。
 
 title: reComputer R1000 安装 FIN
 keywords:
@@ -10,15 +10,12 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png
 slug: /cn/reComputer_r1000_install_fin
 last_update:
-  date: 05/15/2025
+  date: 07/4/2024
   author: ShuishengPeng
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## 简介
-FIN 框架 (FIN) 是一个包含应用套件的软件框架，可用于集成、控制、管理、分析、可视化和连接。其功能可以被 OEM 集成到一系列产品和服务中。
+FIN 框架（FIN Framework）是一款软件框架，包含应用套件，可用于集成、控制、管理、分析、可视化和连接。其功能可以被 OEM 集成到一系列产品和服务中。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/FIN_framework.png" /></center>
 
@@ -26,7 +23,7 @@ FIN 框架 (FIN) 是一个包含应用套件的软件框架，可用于集成、
 
 ## 开始准备
 
-在开始这个项目之前，您可能需要提前准备好硬件和软件，如下所述。
+在开始这个项目之前，您需要提前准备好硬件和软件，如下所述。
 
 ### 硬件准备
 
@@ -51,7 +48,7 @@ FIN 框架 (FIN) 是一个包含应用套件的软件框架，可用于集成、
 ### 软件准备
 
 * 首先，您需要联系供应商获取 FIN 安装包和许可证文件。
-* 之后，请编写一个名为 `fin.service` 的文件，该文件将用于在系统中启动 FIN 服务。如果您的安装包是一个 zip 文件，`fin.service` 文件的内容如下：
+* 然后，请编写一个名为 `fin.service` 的文件，用于在系统中启动 FIN 服务。如果您的安装包是一个 zip 文件，`fin.service` 文件的内容如下：
   ```shell
   [Unit]
   Description=FIN Framework
@@ -91,7 +88,7 @@ FIN 框架 (FIN) 是一个包含应用套件的软件框架，可用于集成、
   ```
   <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/install_fin.gif" /></center>
 
-**步骤 2**：重启后，打开浏览器并输入 `http://localhost:8080/`。以下界面将出现，表示安装的第一步成功。
+**步骤 2**：重启后，打开浏览器并输入 `http://localhost:8080/`。出现以下界面，表示安装的第一步成功。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/login.png" /></center>
 
@@ -99,7 +96,7 @@ FIN 框架 (FIN) 是一个包含应用套件的软件框架，可用于集成、
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/change_passwd.gif" /></center>
 
-**步骤 4**：登录后，系统可能提示没有许可证文件。这时，您需要导入许可证文件。
+**步骤 4**：登录后，系统可能提示没有许可证文件，此时需要导入许可证文件。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/add_license.gif" /></center>
 
@@ -107,7 +104,7 @@ FIN 框架 (FIN) 是一个包含应用套件的软件框架，可用于集成、
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们提供多种支持渠道，确保您使用我们的产品时体验顺畅。以下是我们提供的几种沟通方式，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

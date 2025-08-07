@@ -67,6 +67,7 @@ ThingsBoard requires Java 17 to run.Open Terminal.
 4. Verify the installation:
    ```bash
    java -version
+   ```
 
 
 ## Step 2: Install ThingsBoard Service
@@ -78,6 +79,7 @@ ThingsBoard requires Java 17 to run.Open Terminal.
 2. Install ThingsBoard as a service:
    ```bash
    sudo dpkg -i thingsboard-3.8.deb
+   ```
 
 ## Step 3: Install PostgreSQL Database
 

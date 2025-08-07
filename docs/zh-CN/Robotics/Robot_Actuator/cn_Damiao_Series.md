@@ -263,7 +263,7 @@ last_update:
 
 
 
-有关CAN使用的更多细节，可参考此[wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can)。
+有关CAN使用的更多细节，可参考此[wiki](https://wiki.seeedstudio.com/cn/recomputer_jetson_mini_hardware_interfaces_usage/#can)。
 
 ### 启用CAN接口
 

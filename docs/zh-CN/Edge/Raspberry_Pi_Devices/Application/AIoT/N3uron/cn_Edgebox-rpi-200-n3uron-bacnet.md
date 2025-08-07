@@ -1,6 +1,6 @@
 ---
-description: 在本篇 Wiki 中，我们将探讨如何使用 EdgeBox RPi 200 与 N3uron 和 BACnet IoT 构建楼宇管理系统 (BMS)。学习如何集成和模拟设备，从而有效提升您的 BMS 解决方案。
-title: 在 EdgeBox RPi 200 上连接 N3uron 与 BACnet
+description: 在本维基中，我们将探索如何使用 EdgeBox RPi 200 与 N3uron 和 BACnet IoT 构建楼宇管理系统 (BMS)。学习如何集成和模拟设备，从而有效提升您的 BMS 解决方案。
+title: 在 EdgeBox RPi 200 上连接 N3uron 和 BACnet
 keywords:
   - Edge Box Rpi 200
   - 入门指南
@@ -11,14 +11,11 @@ keywords:
 image: https://files.seeedstudio.com/wiki/Edge_Box/nodered/EdgeBox-RPi-200-font.jpg
 slug: /cn/edgebox_rpi_200_n3uron_bacnet
 last_update:
-  date: 05/15/2025
+  date: 2024/6/20
   author: Kasun Thushara
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
-BACnet 是楼宇管理系统 (BMS) 中广泛采用的协议，其开放标准允许来自不同制造商的设备之间实现无缝集成和通信。它的流行还得益于其灵活性，支持多种网络配置并提供强大的互操作性。[N3uron](https://n3uron.com/) 是一个强大且多功能的平台，通过高效的数据采集和管理能力增强了 BACnet 的功能。结合使用 BACnet TCP 和 YABE Room Simulator，用户可以模拟和可视化 BACnet 设备，从而促进测试和开发。这种组合利用了每种技术的优势，确保了全面且高效的 BMS 解决方案。
+BACnet 是楼宇管理系统 (BMS) 中广泛采用的协议，其开放标准允许来自不同制造商的设备之间无缝集成和通信。它的流行还得益于其灵活性，支持多种网络配置并提供强大的互操作性。[N3uron](https://n3uron.com/) 是一个强大且多功能的平台，通过高效的数据采集和管理增强了 BACnet 的能力。使用 BACnet TCP 和 YABE Room Simulator，用户可以模拟和可视化 BACnet 设备，从而促进测试和开发。这种组合确保了全面且有效的 BMS 解决方案，充分利用了每项技术的优势。
 
 ## 前置条件
 
@@ -45,11 +42,11 @@ BACnet 是楼宇管理系统 (BMS) 中广泛采用的协议，其开放标准允
 
 ### 软件
 
-我们强烈建议先学习 [N3uron 入门指南](https://wiki.seeedstudio.com/Edgebox-rpi-200-n3uron/)。该指南提供了关于如何使用 N3uron Web 界面的重要见解，包括了解 Web UI 和 Web Vision 模块的概念、掌握标签 (tags) 的概念以及创建基本仪表板。如果您尚未了解这些基础知识，建议在继续之前先进行学习。您可以通过提供的链接访问该指南。
+我们强烈建议先学习 [N3uron 入门指南](https://wiki.seeedstudio.com/cn/Edgebox-rpi-200-n3uron/)。该指南提供了关于如何导航 N3uron Web 界面的重要信息，包括理解 Web UI 和 Web Vision 模块的概念、掌握标签的概念以及创建基本仪表板。如果您尚未了解这些基础知识，建议在继续之前先进行学习。您可以通过提供的链接访问该指南。
 
 ### YABE
 
-请访问此 [链接](https://sourceforge.net/projects/yetanotherbacnetexplorer/) 下载 YABE (Yet Another BACnet Explorer)。YABE 是一个多功能工具，可用于模拟和探索 BACnet 设备，非常适合测试和开发用途。下载并安装到您的主机 PC 后，YABE 将用于模拟房间温度数据，我们随后将在 Edge Box 上使用 Node-RED 读取和处理这些数据。
+请访问此 [链接](https://sourceforge.net/projects/yetanotherbacnetexplorer/) 下载 YABE (Yet Another BACnet Explorer)。YABE 是一个多功能工具，可用于模拟和探索 BACnet 设备，非常适合测试和开发用途。下载并安装到您的主机 PC 后，YABE 将用于模拟房间温度数据，我们将使用 Edge Box 上的 Node-RED 读取和处理这些数据。
 
 ### 配置以太网设置
 
@@ -60,7 +57,7 @@ BACnet 是楼宇管理系统 (BMS) 中广泛采用的协议，其开放标准允
 sudo nano /etc/dhcpcd.conf
 ```
 
-- 第二步：根据您的 PLC 网络域配置以太网端口设置，并使用 'metric' 命令设置优先级。数值越低的 metric 优先级越高。
+- 第二步：根据您的 PLC 网络域配置以太网端口设置，并使用 'metric' 命令设置优先级。最低的 metric 值具有最高优先级。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/N3uron-mqtt-modbus/ipconfig.PNG" /></center>
 
@@ -73,13 +70,13 @@ sudo nano /etc/dhcpcd.conf
 
 **配置模块**
 - 为模块提供一个名称（例如，`BACnetClient`）。
-- 指定模块类型（`BacnetClient`）。
-- 保存新的配置。
+- 分配模块类型（`BacnetClient`）。
+- 保存新配置。
 
   <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/N3uron_bacnet/bacnetmodule.PNG" /></center>
 
 **创建新通道**
-- 点击 Model 标题左侧的按钮。
+- 点击模型标题左侧的按钮。
 - 选择 `New Channel`。
 - 为通道命名（例如，`CH01`）。
 
@@ -87,12 +84,12 @@ sudo nano /etc/dhcpcd.conf
 
 **配置 BACnet 客户端**
 - 点击网络接口字段右侧的 `Network interface discovery` 按钮。
-- 选择您要连接的网络的相应接口（例如，使用 `0.0.0.0` 表示所有接口）。
+- 选择要连接的网络的对应接口（例如，使用 `0.0.0.0` 表示所有接口）。
 
  <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/N3uron_bacnet/networkad.PNG" /></center>
 
 - 默认的 BACnet 通信端口是 `47808`（十六进制为 BAC0）。
-- 将广播地址保留为 `255.255.255.255`。
+- 将广播地址保持为 `255.255.255.255`。
 
  <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/N3uron_bacnet/CH1.PNG" /></center>
 
@@ -104,18 +101,18 @@ sudo nano /etc/dhcpcd.conf
 
  <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/N3uron_bacnet/browsedevice.PNG" /></center>
 
-- 发现并选择您要连接的相应设备。
+- 发现并选择要连接的对应设备。
 
  <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/N3uron_bacnet/searcheddevices.PNG" /></center>
 
-- 将其他参数保留为默认值。
+- 将其他参数保持为默认值。
 
  <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/N3uron_bacnet/room_1.PNG" /></center>
 
 - 配置模块和设备后，点击 `Save`。
 - 重启模块。
 
-- 在 N3uron 中打开 "BACnet Browser"，选择设备后，点击 "Rebrowse" 查看对象列表。
+- 打开 N3uron 中的 "BACnet Browser"，选择设备后，点击 "Rebrowse" 查看对象列表。
 
  <center><img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/N3uron_bacnet/browser.PNG" /></center>
 
@@ -131,7 +128,7 @@ sudo nano /etc/dhcpcd.conf
 
 **配置标签**
 
-- 按以下参数设置配置：
+- 按如下方式设置配置参数：
   - **Type**: `Number`
   - **Format**: `Default`
   - **Client Access**: `R`
@@ -157,7 +154,7 @@ sudo nano /etc/dhcpcd.conf
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时拥有尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

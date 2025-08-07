@@ -1,11 +1,11 @@
 ---
-description: 矽递科技 Wiki 文档平台介绍
-title: 矽递科技 Wiki 文档平台
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+description: 作为自2008年以来值得信赖的物联网(IOT)硬件合作伙伴，Seeed Studio致力于实现我们物理世界的交互式数字副本。本网站是一个开源平台，收集了Seeed Studio目前发布的所有wiki，每周更新以展示我们的产品范围和研究，包括自然环境的数字化。
+title: Seeed Studio Wiki平台入门指南
+image: https://files.seeedstudio.com/wiki/seeed_logo/Wiki_Platform_GT_Logo.jpg
 slug: /cn/Getting_Started
 last_update:
-  date: 11/27/2024
-  author: 于剑锋、聂凡淞
+  date: 08/30/2024
+  author: Matthew
 ---
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/Wiki_Platform_GT_Logo.jpg" alt="pir" width={1000} height="auto" /></p>
@@ -16,171 +16,188 @@ last_update:
 
 我们的 wiki 文档平台是一个综合性的信息交流和知识分享平台，旨在为用户提供详尽的产品说明、使用指南和应用项目文档。我们会不断努力，提供清晰、准确且易于理解的文档，以帮助您更好地了解和使用我们的产品。
 
-<!-- We here also present you our current accomplishments and <strong><a href="/Solutions"><span><font color={'8DC215'} size={"4"}>  Solution </font></span></a></strong> and we are looking for your contributions. -->
+{/* We here also present you our current accomplishments and <strong><a href="/Solutions"><span style={{color: '8DC215', fontSize: '1.2em'}}>  Solution </span></a></strong> and we are looking for your contributions. */}
 
-<!-- <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/New_Wiki_Platform/example/showcase2.png" alt="pir" width={1000} height="auto" /></p> -->
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/New_Wiki_Platform/example/showcase2.png" alt="pir" width={1000} height="auto" /></p>
 
-## wiki 文档平台内容梗概
+## 本Wiki平台涵盖哪些内容？
 
-- 我们将所有内容进行了分组，包含四个主题，每个主题都包含两到三个大部分，以适应不同的情况。
+- 本平台将专注于侧边栏中显示的主要主题，提供我们所有产品的最新信息。
 
-- 您可以在这个文档平台中找到关于现实部署的边缘计算设备和工业物联网场景的资料，同时我们还提供了开放式开发工具的文档和课程，帮助您构建自己的解决方案。
+  - <strong><a href="/cn/Sensor_Network"><span style={{color: '8DC215', fontSize: '1.2em'}}> 传感器与感知</span></a></strong>
+  - <strong><a href="/cn/Network"><span style={{color: '8DC215', fontSize: '1.2em'}}> 网络</span></a></strong>
+  - <strong><a href="/cn/Edge_Computing"><span style={{color: '8DC215', fontSize: '1.2em'}}>  边缘计算 </span></a></strong>
+  - <strong><a href="/cn/Cloud"><span style={{color: '8DC215', fontSize: '1.2em'}}>  云服务</span></a></strong>
+  - <strong><a href="/cn/topicintroduction"><span style={{color: '8DC215', fontSize: '1.2em'}}>技术主题</span></a></strong>
+  - <strong><a href="/cn/Contributor"><span style={{color: '8DC215', fontSize: '1.2em'}}> 贡献者计划</span></a></strong>
 
-:::tip
-目前内容为测试版。最新更新在：<strong><a><span><font color={'8DC215'} size={"4"}> 2025 年 5 月 15 号 </font></span></a></strong>
-:::
+- 您将能够找到我们产品的详细文档，用于**实际使用**和**故障排除**、工业物联网场景，以及开放开发工具指南，帮助您开始自己的项目。
 
 
-## 物理世界信息数字化和数字信号传播设备
+## 感知与数据通信
 
-<div class="all_container">
-  <div class="getting_started">
-      <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#industrial-sensors-and-probes" class="getting_started_label2">SenseCAP 工业级传感器</a>
+<div className="all_container">
+  <div className="getting_started">
+      <div className="start_card_wrapper">
+          <a href= "https://wiki.seeedstudio.com/cn/Sensor_Network/#industrial-sensors-and-probes" className="getting_started_label2">SenseCAP工业传感器</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#data-logger-with-configuration-guide" class="getting_started_label2"> - 数据储存器</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Sensor_Network/#data-logger-with-configuration-guide" className="getting_started_label2"> - 数据记录器</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#gateway-for-multiple-platform" class="getting_started_label2"> - 网关设备 </a>
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#routers-for-other-network-infrastructure" class="getting_started_label2"> - 路由器 </a>
+          <a href= "https://wiki.seeedstudio.com/cn/Sensor_Network/#gateway-for-multiple-platform" className="getting_started_label2"> - 网关 </a>
+          <a href= "https://wiki.seeedstudio.com/cn/Sensor_Network/#routers-for-other-network-infrastructure" className="getting_started_label2"> - 路由器 </a>
       </div>
   </div>
-  <div class="getting_started">
-      <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#grove-ecosystem-sensors" class="getting_started_label2">Grove 初学者传感器</a>
+  <div className="getting_started">
+      <div className="start_card_wrapper">
+          <a href= "https://wiki.seeedstudio.com/cn/Sensor_Network/#grove-ecosystem-sensors" className="getting_started_label2">Grove 入门级传感器</a>
           <br/>          <br/>
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#grove-communication-modules" class="getting_started_label2">Grove 初学者通信模组 </a>
+          <a href= "https://wiki.seeedstudio.com/cn/Sensor_Network/#grove-communication-modules" className="getting_started_label2">Grove 网络模块 </a>
       </div>
   </div>
 </div>
 
-## 计算设备，单板电脑和计算模组
+## 计算设备、开发板和模块
 
-<div class="all_container">
-  <div class="getting_started">
-      <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#devices" class="getting_started_label2">计算设备</a>
+<div className="all_container">
+  <div className="getting_started">
+      <div className="start_card_wrapper">
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#devices" className="getting_started_label2">设备</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#os-installation--firmware-updating" class="getting_started_label3">> 系统安装和固件更新</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#os-installation--firmware-updating" className="getting_started_label3">> 操作系统安装和固件更新</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#extensions--carrier-board" class="getting_started_label3">- 设备扩展板</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#extensions--carrier-board" className="getting_started_label3">- 载板</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#application--software" class="getting_started_label3">- IoT 场景应用 / AI 模型部署 / 软件安装</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#application--software" className="getting_started_label3">- 应用程序 / 软件</a>
       </div>
   </div>
 </div>
 
-<div class="all_container">
-  <div class="getting_started">
-      <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#microcontrollers" class="getting_started_label2">计算模组（单片机）</a>
+<div className="all_container">
+  <div className="getting_started">
+      <div className="start_card_wrapper">
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#microcontrollers" className="getting_started_label2">微控制器</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#easy-iot-applications" class="getting_started_label3">> IoT 模型开发</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#easy-iot-applications" className="getting_started_label3">> 简易物联网应用</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#embedded-ml-scenarios" class="getting_started_label3">> 边缘 AI 应用</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#embedded-ml-scenarios" className="getting_started_label3">> 嵌入式机器学习场景</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#extensions" class="getting_started_label3">- 模组扩展组件 </a>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#accessories" class="getting_started_label3">- 模组外围设备</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#extensions" className="getting_started_label3">- 扩展</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#accessories" className="getting_started_label3">- 配件</a>
       </div>
   </div>
-  <div class="getting_started">
-      <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#single-board-computers" class="getting_started_label2">单板电脑</a>
+  <div className="getting_started">
+      <div className="start_card_wrapper">
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#single-board-computers" className="getting_started_label2">单板计算机</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#os-installation--firmware-updating-1" class="getting_started_label3">> 系统安装和固件更新</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#os-installation--firmware-updating-1" className="getting_started_label3">> 操作系统安装和固件更新</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#extensions-1" class="getting_started_label3">- 电脑扩展组件</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#extensions-1" className="getting_started_label3">- 扩展</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#application--software-1" class="getting_started_label3">- IoT 场景应用 / AI 模型部署 / 软件安装</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#application--software-1" className="getting_started_label3">- 应用程序 / 软件</a>
       </div>
   </div>
 </div>
 
 
-## 课程与套件
+## 配套课程套件
 
-<div class="all_container">
-  <div class="getting_started">
-      <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#kit-with-courses" class="getting_started_label2">基于单片机的课程与套件</a>
+<div className="all_container">
+  <div className="getting_started">
+      <div className="start_card_wrapper">
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#kit-with-courses" className="getting_started_label2">微控制器套件</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#tutorials" class="getting_started_label3">- 实用教程</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#tutorials" className="getting_started_label3">- 提供演示</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#kit-with-courses" class="getting_started_label3">- 免费课程</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#kit-with-courses" className="getting_started_label3">- 配套免费课程</a>
       </div>
   </div>
-  <div class="getting_started">
-      <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#kit-with-courses-1" class="getting_started_label2">基于单板电脑的课程与套件</a>
+  <div className="getting_started">
+      <div className="start_card_wrapper">
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#kit-with-courses-1" className="getting_started_label2">单板计算机套件</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#tutorials--faq" class="getting_started_label3">- 实用教程</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#tutorials--faq" className="getting_started_label3">- 提供演示</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#kit-with-courses-1" class="getting_started_label3">- 免费课程</a>
+          <a href= "https://wiki.seeedstudio.com/cn/Edge_Computing/#kit-with-courses-1" className="getting_started_label3">- 配套免费课程</a>
       </div>
   </div>
 </div>
 
 ## 云服务
 
-<div class="all_container">
-  <div class="getting_started">
-      <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/CloudnChain/#sensecap-cloud-production" class="getting_started_label2">SenseCAP 云服务</a>
+<div className="all_container">
+  <div className="getting_started">
+      <div className="start_card_wrapper">
+          <a href= "https://wiki.seeedstudio.com/cn/CloudnChain/#sensecap-cloud-production" className="getting_started_label2">SenseCAP Cloud</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/CloudnChain/#sensecap-ai" class="getting_started_label2">SenseCAP 云 AI</a>
-          <br/><a href= "https://wiki.seeedstudio.com/CloudnChain/#sensecap-hotspot-app" class="getting_started_label3">HotSpot 软件</a>,
-          <a href= "https://wiki.seeedstudio.com/CloudnChain/#sensecap-mate-app" class="getting_started_label3">Mate 软件</a>,
-          <a href= "https://wiki.seeedstudio.com/CloudnChain/#sensecap-api" class="getting_started_label3">SenseCAP 云 API</a>
+          <a href= "https://wiki.seeedstudio.com/cn/CloudnChain/#sensecap-ai" className="getting_started_label2">SenseCAP AI</a>
+          <br/><a href= "https://wiki.seeedstudio.com/cn/CloudnChain/#sensecap-hotspot-app" className="getting_started_label3">HotSpot APP</a>,
+          <a href= "https://wiki.seeedstudio.com/cn/CloudnChain/#sensecap-mate-app" className="getting_started_label3">Mate APP</a>,
+          <a href= "https://wiki.seeedstudio.com/cn/CloudnChain/#sensecap-api" className="getting_started_label3">SenseCAP API</a>
       </div>
   </div>
 </div>
 
-## ✨ Contributor 计划
+### 基于浏览器的AI解决方案
 
-矽递 Contributor 计划是一个对外合作计划，旨在团结社区的有共同爱好的开发者，共同构建创新的解决方案。
+<strong><a href="https://sensecraft.seeed.cc/ai/#/model"><span style={{color: '8DC215', fontSize: '1.2em'}}>告别复杂的配置和编码！</span></a></strong>
 
-<p style={{textAlign: 'center'}}><img src="https://www.seeedstudio.com/blog/wp-content/uploads/2023/08/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230817161402.png" alt="pir" width={800} height="auto" /></p>
+![](https://sensecraft.seeed.cc/wp-content/uploads/2023/11/%E5%88%87%E5%9B%BE-139@2x.png)
 
-### 我们如何与 Contributor 合作？
+## ✨ 贡献者计划 ✨ 
 
-我们欢迎所有能帮助我们改进 wiki 文档平台的贡献者和他们的贡献。
+在Seeed，我们非常重视我们的Seeeders社区。Seeed Studio贡献者计划是一个协作项目，旨在团结来自世界各地的亲爱朋友们，共同构建创新解决方案。
 
-- 我们提供了一系列任务（持续更新）供贡献者选择，每个任务都有详细的描述，意在将 wiki 文档平台进行更好优化。
-<!-- - 贡献者可以在完成任务后通过"Pull Request"提交他们的内容。维护人员将合并提交并记录贡献。 -->
+### [英雄墙](/contributors)
 
-我们希望通过提供一系列奖励向我们的贡献者表示感谢。
+截至`2024年9月1日`，我们总共有24位贡献者和超过50个wiki贡献。
 
-1. 根据任务的难度等级（Tier 0/1/2/3）、我们期望的完成时间（1天/3天/7天/15天）、实际提交时间以及实际提交内容，我们将提供不同级别的奖励。
-2. 我们将向贡献者提供我们的产品或现金奖励，以示激励和感谢。
-3. 此外，所有贡献者及其贡献将在平台上公开展示。
+![](https://files.seeedstudio.com/wiki/wiki-platform/contributor/contributors.png)
 
-### 任务的具体内容
+### [GitHub上的任务](https://github.com/orgs/Seeed-Studio/projects/6/views/1)
 
-截至目前，任务类型包括：
+我们将继续在我们的Wiki平台GitHub仓库上发布我们想要的项目，或者我们的贡献者提出的项目（建议更新、修复错别字或接受任务）。
 
-1. 项目开发：基于Seeed Studio产品的各种应用和软件部署，从单片机应用到工业级设备软件部署。
-2. 网页结构和内容的迭代：从简单的语法修正到整个页面内容的更新。
-3. 基于“解决方案”的原型、可部署解决方案、或有趣的项目想法。可参考背景示例：
-  - 数字自动化；
-  - 分散式数字转型；
-  - 可在野外部署的基础设施；
-  - 碳中和；
-  - 可持续发展目标（SDGs）；
-  - 解决日常生活中的问题；
-  - TinyML
+![](https://files.seeedstudio.com/wiki/wiki-platform/contributor/github_assignment_2.png)
 
+### 更多介绍
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-platform/contributor_program.png" alt="pir" width={900} height="auto" /></p>
+<strong><a href="/Contributor"><span style={{color: '8DC215', fontSize: '1.2em'}}>点击这里了解更多关于贡献者计划的信息！</span></a></strong>
 
+## 技术支持与产品讨论
 
-## 技术支持和产品讨论
+感谢您选择我们的产品！我们提供多种形式的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
-非常感谢您选择我们的产品！我们在此为您提供不同的支持，以确保您在使用我们产品的过程中获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
-<div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+<div className="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" className="button_forum"></a> 
+<a href="https://www.seeedstudio.com/contacts" className="button_email"></a>
 </div>
 
-<div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+<div className="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" className="button_discord"></a> 
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" className="button_discussion"></a>
 </div>
+
+## 社交媒体
+
+如果您有任何问题或意见，请随时访问我们的论坛，与我们直接讨论并联系我们！我们重视所有反馈和意见，并相信与我们的用户和社区一起成长和繁荣是正确的道路！
+
+<table align="center">
+  <tbody>
+    <tr>
+      <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/IndexWiki/Twitter1.png" alt="pir" width={60} height="auto" /></p></td>
+      <td align="left"><strong>Seeed Twitter</strong><br />关注我们获取第一手产品更新和活动信息<p><a href="https://twitter.com/seeedstudio" target="_blank">点击这里</a></p></td>
+    </tr>
+    <tr>
+      <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/IndexWiki/hackster1.png" alt="pir" width={200} height="auto" /></p></td>
+      <td align="left"><strong>Seeed Hackster</strong><br />一个可以找到和分享由Seeed产品驱动的项目的社区。立即探索！<p><a href="https://www.hackster.io/seeed" target="_blank">点击这里</a></p></td>
+    </tr>
+    <tr>
+      <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/IndexWiki/YouTube.png" alt="pir" width={300} height="auto" /></p></td>
+      <td align="left"><strong>Seeed Youtube</strong><br />Seeed最新动态的视频更新。订阅我们的频道了解更多。<p><a href="http://www.youtube.com/c/SeeedStudioSZ" target="_blank">点击这里</a></p></td>
+    </tr>
+    <tr>
+      <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/IndexWiki/LinkedIn_Logo.png" alt="pir" width={300} height="auto" /></p></td>
+      <td align="left"><strong>Seeed LinkedIn</strong><br />数字化转型正在发生。关注我们，在LinkedIn上了解物联网行业新闻、见解、案例研究等更多内容。<p><a href="https://www.linkedin.com/company/seeedstudio" target="_blank">点击这里</a></p></td>
+    </tr>
+  </tbody>
+</table>

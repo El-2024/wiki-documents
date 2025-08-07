@@ -1,30 +1,26 @@
 ---
-description: 本文档展示了如何在 reComputer R1000 上使用 YOLOv8 进行姿态估计，并结合 Raspberry-pi-AI-kit 加速。
-title:  在 reComputer R1000 上使用 Hailo-8L 进行 YOLOv8 姿态估计
+description: 本维基演示了如何在 reComputer R1000 上使用 YOLOv8 进行姿态估计，并通过 Raspberry-pi-AI-kit 加速。
+title: 在 reComputer R1000 上使用 Hailo-8L 进行 YOLOv8 姿态估计
 keywords:
-  - Edge
+  - 边缘计算
   - reComputer r1000
   - 目标检测
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l
 last_update:
-  date: 05/15/2025
+  date: 06/26/2024
   author: Jiahao
 
-no_comments: false # for Disqus
+no_comments: false # 用于 Disqus
 ---
 
 # 在 reComputer R1000 上使用 Hailo-8L 进行 YOLOv8 姿态估计
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 简介
 
-[YOLOv8](https://github.com/ultralytics/ultralytics)（You Only Look Once 第 8 版）是 YOLO 系列中最受欢迎的实时姿态估计模型。它在前几代的基础上，通过引入多项改进，在速度、准确性和灵活性方面表现出色。[Raspberry-pi-AI-kit](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html) 提供了加速推理速度的功能，其核心是基于 Hailo-8L 芯片的 13 TOPS 神经网络推理加速器。
+[YOLOv8](https://github.com/ultralytics/ultralytics)（You Only Look Once 第 8 版）是最受欢迎的 YOLO 系列实时姿态估计模型。它通过在速度、准确性和灵活性方面引入多项改进，继承了前几代的优势。[Raspberry-pi-AI-kit](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html) 用于加速推理速度，配备了基于 Hailo-8L 芯片构建的 13 TOPS 神经网络推理加速器。
 
-本文档展示了如何在 [reComputer R1000](https://www.seeedstudio.com/reComputer-R1000-Series-Optional-Accessories.html) 上使用 YOLOv8 进行姿态估计，并结合或不结合 Raspberry-pi-AI-kit 加速。Raspberry Pi AI Kit 提升了 Raspberry Pi 的性能，并释放了其在人工智能和机器学习应用（如智能零售、智能交通等）中的潜力。尽管 Raspberry AI Kit 是为 Raspberry Pi 5 设计的，我们也在基于 CM4 的边缘网关上进行了实验。让我们一起探索如何将边缘设备转变为智能物联网网关吧！
+本维基演示了如何在 [reComputer R1000](https://www.seeedstudio.com/reComputer-R1000-Series-Optional-Accessories.html) 上使用 YOLOv8 进行姿态估计，并比较是否使用 Raspberry-pi-AI-kit 加速的效果。Raspberry Pi AI Kit 提升了 Raspberry Pi 的性能，并释放其在人工智能和机器学习应用中的潜力，例如智能零售、智能交通等。虽然 Raspberry AI Kit 是为 Raspberry Pi 5 设计的，但我们已在基于 CM4 的边缘网关上进行了实验。期待将我们的边缘设备转变为智能物联网网关！
 
 ## 准备硬件
 
@@ -53,31 +49,31 @@ no_comments: false # for Disqus
 	</table>
 </div>
 
-## 运行此项目
+## 运行项目
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="Method 1" label="使用 Hailo-8L 运行">
+<TabItem value="方法 1" label="使用 Hailo-8L 运行">
 
-### 第 1 步：安装 AI Kit 
+### 第一步：安装 AI Kit 
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/install_AIkit.gif" alt="pir" width={1000} height="auto"/></p>
 
-### 第 2 步：更新系统并将 PCIe 设置为 Gen3
+### 第二步：更新系统并设置 PCIe 为 Gen3
 
 #### 更新系统
 
-在 reComputer R1000 上打开终端，输入以下命令以更新系统。
+在 reComputer R1000 上打开终端，输入以下命令更新系统。
 
 ```
 sudo apt update
 sudo apt full-upgrade
 ```
-#### 将 PCIe 设置为 Gen3
+#### 设置 PCIe 为 Gen3
 
-在 reComputer R1000 上打开终端，输入以下命令以配置 reComputer R1000。
+在 reComputer R1000 上打开终端，输入以下命令配置 reComputer R1000。
 
 ```
 sudo raspi-config
@@ -91,7 +87,7 @@ sudo raspi-config
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/step2.png" alt="pir" width={1000} height="auto"/></p>
 
-选择 "Yes" 以启用 PCIe Gen 3 模式
+选择 "Yes" 启用 PCIe Gen 3 模式
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/step3.png" alt="pir" width={1000} height="auto"/></p>
 
@@ -99,11 +95,11 @@ sudo raspi-config
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/step4.png" alt="pir" width={1000} height="auto"/></p>
 
-### 第 3 步：安装 Hailo 软件并验证安装
+### 第三步：安装 Hailo 软件并验证安装
 
 #### 安装 Hailo 软件
 
-在 reComputer R1000 上打开终端，输入以下命令以安装 Hailo 软件。
+在 reComputer R1000 上打开终端，输入以下命令安装 Hailo 软件。
 
 ```
 sudo apt install hailo-all
@@ -111,7 +107,7 @@ sudo reboot
 ```
 #### 检查软件和硬件
 
-在 reComputer R1000 上打开终端，输入以下命令以检查是否已安装 hailo-all。
+在 reComputer R1000 上打开终端，输入以下命令检查是否已安装 hailo-all。
 
 ```
 hailortcli fw-control identify
@@ -122,7 +118,7 @@ hailortcli fw-control identify
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/check_software.png" alt="pir" width={1000} height="auto"/></p>
 
 
-在 reComputer R1000 上打开终端，输入以下命令以检查是否已连接 hailo-8L。
+在 reComputer R1000 上打开终端，输入以下命令检查是否已连接 hailo-8L。
 
 ```
 lspci | grep Hailo
@@ -134,7 +130,7 @@ lspci | grep Hailo
 
 ### 运行 YOLOv8
 
-在 reComputer R1000 上打开终端，输入以下命令以运行 YOLOv8。
+在 reComputer R1000 上打开终端，输入以下命令运行 YOLOv8。
 
 ```
 git clone https://github.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L.git
@@ -146,11 +142,11 @@ bash ./run.sh pose-estimation-hailo
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/YOLOv8-pose-estimation-with-AIkit.gif" alt="pir" width={1000} height="auto"/></p>
 </TabItem>
 
-<TabItem value="Method 2" label="不使用 Hailo-8L 运行">
+<TabItem value="方法 2" label="不使用 Hailo-8L 运行">
 
 ### 运行 YOLOv8
 
-在 reComputer R1000 上打开终端，输入以下命令以运行 YOLOv8。
+在 reComputer R1000 上打开终端，输入以下命令运行 YOLOv8。
 
 ```
 git clone https://github.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L.git
@@ -166,7 +162,7 @@ bash ./run.sh pose-estimation
 
 ## 结果
 
-我们对使用 AI 套件加速前后，YOLOv8 在 640*640 分辨率输入下进行姿态估计的推理速度进行了比较。结果显示，在加速之前，推理速度仅为 0.5 FPS，而加速之后，推理速度达到了 27 FPS。
+我们比较了使用 AI 套件加速前后，YOLOv8 在 640*640 分辨率输入下进行姿态估计的推理速度。结果显示，在加速之前，推理速度仅为 0.5 FPS，而加速之后，推理速度达到了 27 FPS。
 
 <div align="center">
 <iframe width="800" height="400" src="https://www.youtube.com/embed/OwIrMppQzUU" title="Raspberry Pi AI: YOLOv8 Pose Estimation on reComputer R1000(CM4-powered Edge Gateway) with Hailo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -174,11 +170,11 @@ bash ./run.sh pose-estimation
 
 ## 项目展望
 
-在本项目中，我们对 YOLOv8 在使用和不使用 AI 套件时的姿态估计运行速度进行了基准测试。结果表明，AI 套件可以显著提升边缘设备的性能。未来，我们将对 YOLOv8 在不同场景下的运行速度进行基准测试。
+在本项目中，我们对 YOLOv8 在使用和不使用 AI 套件时进行姿态估计的运行速度进行了基准测试。结果表明，AI 套件可以显著提升边缘设备的性能。未来，我们将对 YOLOv8 在不同场景下的运行速度进行基准测试。
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时拥有顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

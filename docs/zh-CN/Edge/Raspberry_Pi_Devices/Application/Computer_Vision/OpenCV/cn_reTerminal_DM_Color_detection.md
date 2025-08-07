@@ -10,25 +10,19 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reTerminal_DM_Color_detection
 last_update:
-  date: 05/15/2025
+  date: 2023/11/28
   author: Kasun Thushara
 ---
-
-# Initialize PiCamera
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 <center><img width={800} src="https://files.seeedstudio.com/wiki/ReTerminal/opencv/colordetect.gif" /></center>
 
 ## 简介
 
-颜色检测是计算机视觉的核心组成部分，涉及识别和分析数字图像或视频中的颜色。它广泛应用于各个行业，使得任务如 **机器人中的物体识别、制造业中的质量控制，甚至在艺术品修复中** 都成为可能。颜色检测背后的算法推动了技术的进步，影响了诸如 **自动驾驶汽车、医学影像，以及电影和摄影中的视觉美学** 等领域。总的来说，颜色检测是一种多功能工具，能够以多种有意义的方式增强我们对视觉世界的理解和互动能力。
+颜色检测是计算机视觉的核心组成部分，涉及识别和分析数字图像或视频中的颜色。它被广泛应用于各个行业，使得诸如**机器人中的目标识别、制造业中的质量控制，甚至艺术品修复**等任务成为可能。颜色检测背后的算法推动了技术的进步，影响了**自动驾驶汽车、医学影像以及电影和摄影中的视觉美学**等领域。从本质上讲，颜色检测是一种多功能工具，能够以多种有意义的方式增强我们对视觉世界的理解和互动能力。
 
-## 开始准备
+## 开始
 
-在开始这个项目之前，您需要按照以下描述提前准备好硬件和软件。
+在开始这个项目之前，您需要提前准备好硬件和软件，如下所述。
 
 ### 硬件准备
 
@@ -48,35 +42,35 @@ last_update:
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html?queryID=26220f25bcce77bc420c9c03059787c0&objectID=4904&indexName=bazaar_retailer_products">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/reTerminal-piCam/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/reTerminal-piCam/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
         </tr>
     </table>
     </div>
 
 ### 软件准备
 
-我们建议从 Raspberry Pi 官方网站安装 **Bullesye** 或 **Bookworm** 版本的 64 位 Raspberry Pi 操作系统。如果您希望安装新的 Raspbian 操作系统，请按照此 [**指南**](https://wiki.seeedstudio.com/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc) 中的步骤操作。
+我们推荐从官方网站安装 Raspberry Pi 64 位操作系统的 **Bullseye** 或 **Bookworm** 版本。如果您希望安装新的 Raspbian 操作系统，请按照此[**指南**](https://wiki.seeedstudio.com/cn/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)中的步骤操作。
 
 :::note
 
-我们强烈建议您查看我们之前的教程 [**OpenCV 入门**](https://wiki.seeedstudio.com/reTerminal_DM_opencv/)，因为本教程是我们系列教程的延续。
+我们强烈建议您查看我们之前的教程 [**OpenCV 入门**](https://wiki.seeedstudio.com/cn/reTerminal_DM_opencv/)，因为本教程是我们系列教程的延续。
 
 :::
 
 ## 在 OpenCV 中探索颜色空间
 
-颜色空间是图像处理中的基础概念，OpenCV 支持多种颜色空间，每种都有其独特的用途。让我们深入了解 OpenCV 中的三种常见颜色空间：CMYK、BGR 和 HSV。
+颜色空间是图像处理中的基础，OpenCV 支持多种颜色空间，每种都有其独特的用途。让我们深入了解 OpenCV 中的三种常见颜色空间：CMYK、BGR 和 HSV。
 
 ### CMYK 颜色空间
-CMYK（青色、品红、黄色、黑色）是一种减色模型，主要用于彩色打印。
+CMYK（青色、品红、黄色、黑色）是一种减色颜色空间，常用于彩色打印。
 通过从白光中减去不同百分比的青色、品红、黄色和黑色来生成颜色。
 
 ### BGR 颜色空间
 
-OpenCV 的默认颜色空间是 RGB，但它内部以 BGR（蓝、绿、红）的顺序存储颜色。
-BGR 是一种加色模型，通过组合不同强度的蓝色、绿色和红色来形成各种颜色。
+OpenCV 的默认颜色空间是 RGB，但它内部以 BGR（蓝色、绿色、红色）存储颜色。
+BGR 是一种加色模型，通过蓝色、绿色和红色的不同强度组合形成不同的色调。
 
-**分量范围：**
+**组件范围：**
 
 - 蓝色 (0-255)：蓝色的强度。
 - 绿色 (0-255)：绿色的强度。
@@ -86,7 +80,7 @@ BGR 是一种加色模型，通过组合不同强度的蓝色、绿色和红色�
 HSV（色调、饱和度、明度）是一种从 RGB 颜色点派生的圆柱模型。
 它模拟了人类对颜色的感知，由色调、饱和度和明度组成。
 
-**分量范围：**
+**组件范围：**
 
 - 色调 (0-179)：颜色的类型，以角度表示。
 - 饱和度 (0-255)：颜色的强度或鲜艳度。
@@ -94,11 +88,11 @@ HSV（色调、饱和度、明度）是一种从 RGB 颜色点派生的圆柱模
 
 ## 为什么 HSV 在颜色检测问题中很重要？
 
-HSV（色调、饱和度、明度）在颜色检测任务中至关重要，因为它能够有效地分离颜色信息。与 RGB 或 BGR 不同，HSV 将颜色的类型（色调）与其强度（饱和度）和亮度（明度）分离开来，提供了一种更直观的表示方式。这种分离对光照变化具有较强的鲁棒性，使基于颜色的分割对光照条件的变化不那么敏感。此外，HSV 对颜色的自然表示简化了定义颜色阈值的过程，从而更容易为识别图像中的特定对象或区域设定精确的标准。HSV 在计算机视觉任务中的广泛应用（如基于颜色的目标跟踪和分割）突显了其在实现准确可靠结果方面的重要性。
+HSV（色调、饱和度、明度）在颜色检测任务中至关重要，因为它能够有效地分离颜色信息。与 RGB 或 BGR 不同，HSV 将颜色的类型（色调）与其强度（饱和度）和亮度（明度）分离开来，提供了一种更直观的表示。这种分离对光照变化具有很强的鲁棒性，使基于颜色的分割对光照条件的变化不那么敏感。此外，HSV 中颜色的自然表示简化了定义颜色阈值的过程，从而更容易为图像中的特定对象或区域定义精确的识别标准。HSV 在计算机视觉任务（如基于颜色的目标跟踪和分割）中的广泛应用，突显了其在实现准确可靠结果方面的重要性。
 
 ## 如何使用代码片段
 
-在第一个代码中，您可以通过交互式调整滑块来直观地确定最佳颜色阈值。通过试验这些滑块，您可以精确定位感兴趣的特定颜色，并记录相应的 HSV 最小值和最大值。这种动手操作提供了一种直观的方法来微调颜色参数，确保更个性化和精确的颜色识别体验。
+在第一个代码中，您可以交互式地调整滑动条，从而直观地确定最佳颜色阈值。通过试验这些滑动条，您可以找到感兴趣的特定颜色，并记录相应的 HSV 最小值和最大值。这种动手方法为用户提供了一种直观的方式来微调颜色参数，确保更个性化和精确的颜色识别体验。
 
  ```sh
 cd Seeed_Python_ReTerminal/samples/Opencv_and_piCam
@@ -108,7 +102,7 @@ cd Seeed_Python_ReTerminal/samples/Opencv_and_piCam
  ```sh
 python hsvtest.py
  ```
-您甚至可以使用 Thonny IDE 来运行该 Python 脚本。
+您甚至可以使用 Thonny IDE 来运行 Python 脚本。
 
 <center><img width={800} src="https://files.seeedstudio.com/wiki/ReTerminal/opencv/colortrack.PNG" /></center>
 
@@ -189,7 +183,7 @@ while True:
     cv2.waitKey(1)
 ```
 
-一旦您使用第一个代码片段中的滑块确定了 HSV 的最小值和最大值，您可以无缝地**将这些数值替换**为对应的**颜色名称**及其识别范围，并在第二个代码片段中使用。
+一旦您使用第一个代码片段中的滑动条确定了 HSV 的最小值和最大值，您可以无缝地**将这些数值替换为对应的颜色名称**及其识别范围，并在第二个代码片段中使用。
 
  ```sh
 python colordetector.py
@@ -223,6 +217,7 @@ def detect_single_color(imageFrame, color_name, lower_range, upper_range, color_
 
     return imageFrame
 
+# Initialize PiCamera
 picam2 = Picamera2()
 picam2.preview_configuration.main.size = (1280, 720)
 picam2.preview_configuration.main.format = "RGB888"
@@ -251,14 +246,14 @@ while True:
 
 ## 应用
 
-颜色检测在从计算机视觉和制造业到**医学影像**和艺术的各种应用中起着关键作用。在计算机视觉中，它支持物体识别和跟踪，有助于完成诸如**机器人导航和监控**等任务。工业领域利用颜色检测进行**分类和质量控制，确保产品符合标准**。医学影像依赖于基于颜色的分割进行精确分析，而娱乐行业则在电影色彩校正和艺术修复中使用它。从**交通标志识别到生物识别和环境监测**，检测和解释颜色的能力是基础性的，推动了技术、自动化及各个领域的进步。通过使用 OpenCV 计算机视觉库中的简单技术，如颜色检测和形状检测，我们可以轻松地统计停车位并检测异常停车场景。
+颜色检测在从计算机视觉和制造业到**医学影像**和艺术的各种应用中起着关键作用。在计算机视觉中，它支持目标识别和跟踪，有助于完成诸如**机器人导航和监控**等任务。工业领域利用颜色检测进行**分类和质量控制，确保产品符合标准**。医学影像依赖基于颜色的分割进行精确分析，而娱乐行业则在电影色彩分级和艺术修复中使用它。从**交通标志识别到生物识别和环境监测**，颜色检测和解释的能力是基础性的，推动了技术、自动化及各领域的进步。通过使用 OpenCV 计算机视觉库中的简单技术，如颜色检测和形状检测，我们可以轻松地统计停车位数量并检测异常停车场景。
 
 <center><img width={800} src="https://files.seeedstudio.com/wiki/ReTerminal/opencv/carpark.gif" /></center>
 
 
 ## 技术支持
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
