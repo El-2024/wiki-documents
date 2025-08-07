@@ -1,7 +1,7 @@
 ---
-description: 本文将向您展示如何创建一个站点图形
+description: 本文将向您展示如何创建站点图形
 
-title: 使用 reComputer R1000 和 FIN 创建站点图形
+title: 使用 FIN 在 reComputer R1000 上创建站点图形
 keywords:
   - 边缘控制器
   - reComputer R1000
@@ -11,21 +11,18 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png
 slug: /cn/reComputer_r1000_fin_site_gaphic
 last_update:
-  date: 05/15/2025
+  date: 2024/07/18
   author: ShuishengPeng
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## 简介
-FIN Framework (FIN) 是一个包含应用套件的软件框架，可用于集成、控制、管理、分析、可视化和连接。其功能可以被 OEM 集成到各种产品和服务中。
+FIN Framework（FIN）是一款软件框架，包含应用套件，可用于集成、控制、管理、分析、可视化和连接。其功能可以被 OEM 集成到各种产品和服务中。
 
 本文将向您展示如何使用 FIN Framework 的 `Graphics Builder`，并通过 `Graphics Builder` 创建一个 `站点图形`。
 
 ## 开始之前
 
-在开始此项目之前，您可能需要提前准备好硬件和软件，如下所述。
+在开始此项目之前，您需要提前准备好硬件和软件，如下所述。
 
 ### 硬件准备
 
@@ -48,11 +45,11 @@ FIN Framework (FIN) 是一个包含应用套件的软件框架，可用于集成
     </div>
 
 ### 软件准备
-* 关于如何安装 FIN Framework，您可以参考此 [wiki](https://wiki.seeedstudio.com/reComputer_r1000_install_fin/)。
+* 关于如何安装 FIN Framework，您可以参考此 [wiki](https://wiki.seeedstudio.com/cn/reComputer_r1000_install_fin/)。
 
 ## 创建站点图形的步骤
 ### 创建新的站点图形
-**步骤 1**：我们创建了 4 个楼层。关于如何创建楼层，您可以参考此 [wiki](https://wiki.seeedstudio.com/reComputer_r1000_fin_modbus_tcp_and_rtu/)。然后将上下文放置在相应的 `站点` 下，这里我们将其放置在 `Tower` 路径下。
+**步骤 1**：我们创建了 4 个楼层。关于如何创建楼层，您可以参考此 [wiki](https://wiki.seeedstudio.com/cn/reComputer_r1000_fin_modbus_tcp_and_rtu/)。然后将上下文放置在相应的 `站点` 下，这里我们将其放置在 `Tower` 路径下。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Site_graphic_path_and_floor.png" /></center>
 
@@ -62,11 +59,11 @@ FIN Framework (FIN) 是一个包含应用套件的软件框架，可用于集成
 
 ### 配置新的站点图形
 
-**步骤 1**：导入背景图片。首先，在左下角的属性栏中选择 `BACGROUND`，将 `TYPE` 设置为 `IMAGE`，然后将背景图片导入工作区，调整大小并固定。导入背景图片有两种方式。第一种方式是直接从文件夹拖动到编辑框中；第二种方式是点击左下角的 `BROWSE`。如果您之前导入过某张图片，可以在这里找到该图片。导入后，右键单击鼠标并选择 `Arrange => Send to back` 将图片移动到底层。
+**步骤 1**：导入背景图片。首先，在左下角的属性栏中选择 `BACGROUND`，将 `TYPE` 设置为 `IMAGE`，然后将背景图片导入工作区，调整大小并固定。导入背景图片有两种方式。第一种方式是直接从文件夹中拖动到编辑框中；第二种方式是点击左下角的 `BROWSE`。如果之前已导入某张图片，可以在此处找到该图片。导入后，右键单击鼠标并选择 `Arrange => Send to back` 将图片移动到底层。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Site_graphic_2.gif" /></center>
 
-**步骤 2**：调整标签位置。由于我们导入了 4 个 `Floors`，系统自动为我们生成了 4 个标签。为了美观，我们将这些标签一一映射到楼层。
+**步骤 2**：调整标签位置。由于我们导入了 4 个 `Floors`，系统为我们自动生成了 4 个标签。为了美观，我们将这些标签一一映射到楼层。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Site_graphic_3.gif" /></center>
 
@@ -74,7 +71,7 @@ FIN Framework (FIN) 是一个包含应用套件的软件框架，可用于集成
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Site_graphic_4.gif" /></center>
 
-**步骤 4**：添加 `虚拟点`。切换到左侧的 `Virtual points` 面板，选择与我们选择的 `Floor` 匹配的 `virtual point`，并将其拖入绘制的多边形中。
+**步骤 4**：添加 `虚拟点`。切换到左侧的 `Virtual points` 面板，选择与我们选择的 `Floor` 匹配的 `虚拟点`，并将其拖入绘制的多边形中。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Site_graphic_5.gif" /></center>
 

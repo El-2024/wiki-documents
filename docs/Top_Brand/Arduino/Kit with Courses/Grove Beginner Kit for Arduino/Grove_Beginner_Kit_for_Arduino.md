@@ -24,7 +24,6 @@ Grove system users need to have at least some basic electronic knowledge backgro
 
 ## Grove Beginner Kit for Arduino
 
-
 Grove Beginner Kit for Arduino contains one Seeeduino Lotus V1.1 Dev Board(Arduino Compatible) and 8 modules. The detailed information are listed below.
 
 ### Development Board
@@ -32,7 +31,6 @@ Grove Beginner Kit for Arduino contains one Seeeduino Lotus V1.1 Dev Board(Ardui
 #### Seeeduino Lotus V1.1
 
 Seeeduino Lotus is a development board with ATMEGA328 AVR microcontroller, it is the combination of Seeeduino and Grove Base Shield. It uses an Atmel ATmege328-MU microcontroller and CP2102N chip, ATmege328-MU is a high performance, low power AVR 8-bit Microcontroller, CP2102N is a USB to Serial converter chip which allows you to communicate the Seeeduino Lotus with computer by using a micro-USB cable. Seeeduino Lotus has 14 Digital input/output(6 can be used as PWM outputs) and 7 Analog input/output, a micro USB connection, an ICSP header, 12 Grove connector, a reset button.
-
 
 **Features**
 
@@ -78,10 +76,9 @@ USB 2 Uart: Pinout of USB-2-Uart. These pads can be used to interact with other 
 | Power supply interface |       Micro USB      |  USB, DC Port  |
 |    Grove Connectors    |          12          |      None      |
 
-#### Sensors 
+#### Sensors
 
 **[Grove - Buzzer](https://www.seeedstudio.com/Grove-Buzzer-p-768.html)**
-
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/buzzer.jpg)
 
@@ -95,13 +92,11 @@ Grove-Tilt Switch is the equivalent of a button, and is used as a digital input.
 
 **[Grove - Chainable RGB LED](https://www.seeedstudio.com/Grove-Chainable-RGB-Led-V2-0-p-2903.html)**
 
-
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/Grove-Chainable_RGB_LED_V2.0.jpg)
 
-Grove - Chainable RGB LED is based on P9813 chip which is a full-color LED driver. It provides 3 constant-current drivers as well as modulated output of 256 shades of gray. It communicates with a MCU using 2-wire transmission (Data and Clock). This 2-wire transmission can be used to cascade additional Grove - Chainable RGB LED modules. The built-in clock regeneration enhances the transmission distance. This Grove module is suitable for any colorful LED based projects. 
+Grove - Chainable RGB LED is based on P9813 chip which is a full-color LED driver. It provides 3 constant-current drivers as well as modulated output of 256 shades of gray. It communicates with a MCU using 2-wire transmission (Data and Clock). This 2-wire transmission can be used to cascade additional Grove - Chainable RGB LED modules. The built-in clock regeneration enhances the transmission distance. This Grove module is suitable for any colorful LED based projects.
 
 **[Grove - Light Sensor](https://www.seeedstudio.com/Grove-Light-Sensor-v1-2-p-2727.html)**
-
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/lightsensor.jpg)
 
@@ -109,10 +104,9 @@ The Grove - Light sensor integrates a photo-resistor(light dependent resistor) t
 
 **[Grove - Line Finder](https://www.seeedstudio.com/Grove-Line-Finder-v1-1-p-2712.html)**
 
-
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/linefinder.jpg)
 
-Grove-Line finder is designed for line-following robot. It has an IR emitting LED and an IR sensitive phototransistor. It can output digital signal to a microcontroller so that the robot can follow a black line on white background, or vice versa. 
+Grove-Line finder is designed for line-following robot. It has an IR emitting LED and an IR sensitive phototransistor. It can output digital signal to a microcontroller so that the robot can follow a black line on white background, or vice versa.
 
 **[Grove - LCD RGB Backlight](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html)**
 
@@ -122,37 +116,33 @@ This Grove - LCD RGB Backlight module is a 16 Characters  2 Lines LCD display, i
 
 **[Grove - Temperature & Humidity Sensor(DHT11)](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT1-p-745.html)**
 
-
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/DHT11.jpg)
 
-This Temperature & Humidity sensor provides a pre-calibrated digital output. A unique capacitive sensor element measures relative humidity and the temperature is measured by a negative temperature coefficient (NTC) thermistor. It has excellent reliability and long term stability. Please note that this sensor will not work for temperatures below 0 degree. 
+This Temperature & Humidity sensor provides a pre-calibrated digital output. A unique capacitive sensor element measures relative humidity and the temperature is measured by a negative temperature coefficient (NTC) thermistor. It has excellent reliability and long term stability. Please note that this sensor will not work for temperatures below 0 degree.
 
 **[Grove - 3-Axis Digital Accelerometer](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-1-5-p-765.html)**
- 
-
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/3_axis_cover.jpg)
 
-3-Axis Digital Accelerometer is the key part in projects like orientation detection, gesture detection and Motion detection. This 3-Axis Digital Accelerometer(±1.5g) is based on Freescale's low power consumption module, MMA7660FC. It features up to 10,000g high shock survivability and configurable Samples per Second rate. For generous applications that don't require too large measurement range, this is a great choice because it's durable, energy saving and cost-efficient. 
+3-Axis Digital Accelerometer is the key part in projects like orientation detection, gesture detection and Motion detection. This 3-Axis Digital Accelerometer(±1.5g) is based on Freescale's low power consumption module, MMA7660FC. It features up to 10,000g high shock survivability and configurable Samples per Second rate. For generous applications that don't require too large measurement range, this is a great choice because it's durable, energy saving and cost-efficient.
 
-## GETTING STARTED 
+## GETTING STARTED
 
-### Minimum Requirement 
+### Minimum Requirement
 
 - Grove starter kit
 - micro USB cable
 - Computer with Arduino IDE
 
-### Basic Tutorial 
+### Basic Tutorial
 
 #### Arduino IDE basic setup
 
 **Step 1.**  Install USB to Serial driver for Seeeduino Lotus V1.1
 
 Seeeduino lotus Version 1.1 and above which adapts the CP2102N USB to serial chip, it adds support for majority operating systems include Windows, MacOS and Linux, please download and install the relevant driver for your operating system.
-Download links: 
+Download links:
 Official Website: [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
-
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/logo.jpg)
 
@@ -183,7 +173,7 @@ Please download and install the Arduino IDE according to your operating system.
 <b id="step3">Step 3.</b> Add library for Seeeduino Lotus
 
 - Open Arduino | Preferences, from the preferences window under settings page find Additional Boards Manager URLS, copy & paste the Library URL into the text box, then press ok to take effect.
-Library URL:	https://raw.githubusercontent.com/Seeed-Studio/Seeed_Platform/master/package_legacy_seeeduino_boards_index.json
+Library URL: [https://raw.githubusercontent.com/Seeed-Studio/Seeed_Platform/master/package_legacy_seeeduino_boards_index.json](https://raw.githubusercontent.com/Seeed-Studio/Seeed_Platform/master/package_legacy_seeeduino_boards_index.json)
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard1.png)![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard2.png)![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard3.png)
 
@@ -194,11 +184,10 @@ Library URL:	https://raw.githubusercontent.com/Seeed-Studio/Seeed_Platform/maste
 - Open Tools | Board: under the secondary list you should find Seeeduino AVR Boards section as shown, and please select the correct boards according to your development environment, in this tutorial we should select Seeeduino Lotus.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard6.png)
-	
+ 
 **Step 4.** Connect Seeeduino Lotus
 
 Please connect Seeeduino Lotus and computer through a Micro-USB cable, the green power LED on Seeeduino lotus should lit up.
-
 
 ![with micro-USB](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/usb.jpg)
 
@@ -212,11 +201,9 @@ Select the serial device of the Arduino board from the Tools | Serial Port menu.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard7.png)
 
-
 Set “Tools | Programmer” as “AVR ISP”.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard8.png)
-
 
 ### Blink Demo
 
@@ -224,16 +211,14 @@ After all the basic set up of Arduino IDE, we can now test the blink demo code o
 
 **Select Blink Demo From Menu**
 
-Select File | Examples | 01 Basics | Blink from menu bar, the blink example code should appear in the new window. 
+Select File | Examples | 01 Basics | Blink from menu bar, the blink example code should appear in the new window.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard9.png)
-
 
 **Upload code**
 
 Please ensure the correct Board, Port and Programmer are selected under tools menu.
-Now we can upload the code into the Lotus dev board by press the right arrow icon on the top left corner of the IDE. 
-
+Now we can upload the code into the Lotus dev board by press the right arrow icon on the top left corner of the IDE.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard10.png)
 
@@ -244,7 +229,6 @@ Once the code uploaded successfully, the text “avrdude done. Thank you.” sho
 Now you should see the built-in LED flashes in a one second interval.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/blink.jpg)
-
 
 **Explanation of the blink code**
 
@@ -266,7 +250,6 @@ pinMode(LED_BUILTIN, OUTPUT);
 ```
 
 void loop() is the loop function runs over and over again forever.
-
 
 ```cpp
 
@@ -292,23 +275,19 @@ delay(1000);
 
 ```
 
-
-
-
 ## Grove Starter Kit 10 Sessions Tutorial
-
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/kit.jpg)
 
 ### Goal
-This section consists of 10 tutorials, the tutorials can be divided into two parts, the first 8 sessions introduce the basic operation of each individual module from this starter kit, and the last 2 sessions uses example cases to show how the modules can be combined and applied in real life applications.
 
+This section consists of 10 tutorials, the tutorials can be divided into two parts, the first 8 sessions introduce the basic operation of each individual module from this starter kit, and the last 2 sessions uses example cases to show how the modules can be combined and applied in real life applications.
 
 ### Prerequisite
 
 The fundamental knowledge on operate Seeeduino Lotus with Arduino IDE and the coding skill are essential to this tutorial. Therefore, please make sure you have completed the basic setup tutorial above and successfully installed the USB to serial driver on your operating system for Seeeduino Lotus, finished the Blink LED demo and ensure it is fully working with the Seeeduino Lotus board.
 
-### Learning outcome 
+### Learning outcome
 
 - Be able to operate Arduino IDE to write code for Seeeduino Lotus V1.1 to drive modules from Grove Starter Kit.
 - Be able to identify the type of modules include in this Kit and their applications.
@@ -316,10 +295,9 @@ The fundamental knowledge on operate Seeeduino Lotus with Arduino IDE and the co
 
 ### Session 1: Grove - Buzzer
 
-
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/buzzer.jpg)
 
-**Objective**	
+**Objective** 
 
 Using buzzer to generate some noise and also setting specific frequency to produce some tones.
 
@@ -331,7 +309,6 @@ Using buzzer to generate some noise and also setting specific frequency to produ
 - Use tone(pin, frequency, duration) function to make buzzer play music
 - Learn how to use “for loop” in Arduino IDE
 
-
 **Hardware requirement**
 
 Self-prepare
@@ -339,13 +316,11 @@ Self-prepare
 - micro-USB cable
 - a computer with Arduino IDE and serial-to-USB driver installed
 
-
 Included in the kit
 
 - Seeeduino Lotus V1.1 development board
 - Grove cable
-- Grove – Buzzer module	
-
+- Grove – Buzzer module 
 
 **Hardware connection**
 
@@ -355,7 +330,7 @@ Included in the kit
 
 **Step 2.** Link Seeeduino Lotus with computer by a micro USB cable.
 
-**Software programming**	
+**Software programming** 
 
 **Example 1**:Use digital logic high/low to make the buzzer “buzz”
 
@@ -383,12 +358,13 @@ void loop()
 }
 
 ```
+
 Step 2: Upload code into Seeeduino Lotus
 
 Step 3: Observe result
 
 :::success
-	When the code finishes upload, you can hear “buzz” with a 1 second gap in between sound.
+ When the code finishes upload, you can hear “buzz” with a 1 second gap in between sound.
 :::
 **Example 2**:Use different frequency to make the buzzer generate different tone.
 
@@ -430,9 +406,9 @@ Step 2: Upload code into Seeeduino Lotus
 Step 3: Observe result
 
 :::success
-	When the code finishes upload, you should hear the buzzer is making “Do、 Re、 Mi” sound.
+ When the code finishes upload, you should hear the buzzer is making “Do、 Re、 Mi” sound.
 :::
-**Example 3**:Use tone(pin, frequency, duration)function to make music from buzzer	
+**Example 3**:Use tone(pin, frequency, duration)function to make music from buzzer 
 
 Step 1: copy & paste the following code into Arduino IDE
 
@@ -494,7 +470,7 @@ Step 2: Upload code into Seeeduino Lotus
 Step 3: Observe result
 
 :::success
-	When the code finishes upload, you should hear a melody from buzzer, please what song is it.
+ When the code finishes upload, you should hear a melody from buzzer, please what song is it.
 :::
 
 **Further Explore**
@@ -503,15 +479,12 @@ Please checkout Brett Hagman’s GitHub repo "[Tone](https://github.com/bhagman/
 
 ### Session 2: Grove - Tilt Switch
 
-
-
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/Tilt.jpg)
 
-**Objective**	
+**Objective** 
 Use tilt switch module to turn on/off the built-in LED on the Seeeduino Lotus, and also use the tilt switch to make the buzzer module from previous session to buzz.
 
 **Key knowledge**
-
 
 - Tilt Switch is a signal input module
 - The operation on tilt switch
@@ -531,18 +504,16 @@ Included in the kit
 - Grove cable
 - Grove – Tilt Switch
 - Grove – Buzzer
-	
+ 
 **Hardware connection**
 
 Step 1: Connect Grove – Tilt Switch to D5 port of Seeeduino Lotus.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/tilt_ard.jpg)
 
+Step 2:  Link Seeeduino Lotus with computer by a micro USB cable
 
-Step 2:  Link Seeeduino Lotus with computer by a micro USB cable 
-
-
-**Software programming**	
+**Software programming** 
 **Example 1**:Observe the tilt switch behaviour by using Serial Monitor
 
 Step 1: copy & paste the following code into Arduino IDE
@@ -575,7 +546,7 @@ Step 2: Upload code into Seeeduino Lotus
 
 Step 3: Open Serial Monitor
 
-to open serial monitor please select Tools | Serial Monitor from menu bar, or simply click the magnifier icon on the tool bar. Note: Please wait for the code finish uploaded before open serial monitor. 
+to open serial monitor please select Tools | Serial Monitor from menu bar, or simply click the magnifier icon on the tool bar. Note: Please wait for the code finish uploaded before open serial monitor.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard12.png)
 
@@ -584,7 +555,6 @@ Step 4: Observe result
 Please tilt the tilt switch in both directions, you should see “1” or “0” displayed in serial monitor, now you can find the right orientation for tilt switch to turn on/off.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/tilt_off&on.jpg)
-
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard13.png)
 
@@ -626,10 +596,9 @@ Step 2: Upload code into Seeeduino Lotus
 Step 3: Observe result
 
 :::success
-	Now you should be able to turn on/off the built-in LED on the Seeeduino Lotus by tilting the tilt switch in the right orientation.
+ Now you should be able to turn on/off the built-in LED on the Seeeduino Lotus by tilting the tilt switch in the right orientation.
 :::
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/tilt_off&on.jpg)
-
 
 **Example 3**: Use tilt switch to pause and play ringtone from the buzzer
 Please connect Grove – Buzzer module to D6 port of Seeeduino Lotus
@@ -734,7 +703,7 @@ Step 2: Upload code into Seeeduino Lotus
 Step 3: Observe result
 
 :::success
-	Now you should be able to pause the ringtone by tilting the tilt switch to off position, and resume the music tone by tilting the tilt switch to on position.
+ Now you should be able to pause the ringtone by tilting the tilt switch to off position, and resume the music tone by tilting the tilt switch to on position.
 :::
 **Further Explore**
 
@@ -744,7 +713,7 @@ After this session, you can attach the tilt switch sensor module to your toolbox
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/Grove-Chainable_RGB_LED_V2.0.jpg)
 
-**Objective**	
+**Objective** 
 
 Use code to control the chainable RGB LED to show different color, and switch between colors by using tilt switch.
 
@@ -757,14 +726,12 @@ Use code to control the chainable RGB LED to show different color, and switch be
 - Use % (modulo) operation to find remainder, eg. 5%2=1, 9%3=0.
 - Use switch(val)…case…; function
 
-
-**Hardware requirement**	
+**Hardware requirement** 
 
 Self-prepare
 
 - micro-USB cable
 - computer with Arduino IDE and serial-to-USB driver installed
-
 
 Included in the kit
 
@@ -774,7 +741,6 @@ Included in the kit
 - Grove – Tilt Switch
 - Grove – Buzzer
 
-
 **Hardware connection**
 
 Step 1: Connect Grove – Chainable RGB LED to D7 port of Seeeduino Lotus, Note: please connect the G|V|DI|CI port from LED as shown below.
@@ -782,7 +748,6 @@ Step 1: Connect Grove – Chainable RGB LED to D7 port of Seeeduino Lotus, Note:
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/rgb_ard.jpg)
 
 Step 2: Link Seeeduino Lotus with computer by a micro USB cable.
-
 
 **Software programming**
 
@@ -800,7 +765,6 @@ Please select open Sketch | Include Library | Add .ZIP Library…, in the new po
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/ard14.png)
 
-
 Step 3: Test if the library added successfully
 
 Select and open File | Examples | ChainableLED-1.2 | CycleTroughColors
@@ -810,7 +774,7 @@ Select and open File | Examples | ChainableLED-1.2 | CycleTroughColors
 Upload Code: Click upload the code
 
 :::success
- 	if the LED module is cycling trough different colors, then you know you have successfully load the Library.
+  if the LED module is cycling trough different colors, then you know you have successfully load the Library.
 :::
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/rgb_flash_8.jpg)
 
@@ -1178,8 +1142,6 @@ By tilting the tilt switch, you should see when the tilt switch is on, LED chang
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/rgb_eg3.jpg)
 
-
-
 **Further Explore**
 
 After this session, you can now combine the modules from the first three sessions and turn into a birthday gift box, where you can place the tilt switch sensor on the box lid, at the time the box is open, the tilt switch is triggered, then the buzzer starts play birthday song and the LED light starts to flash colorful lights.
@@ -1188,7 +1150,7 @@ After this session, you can now combine the modules from the first three session
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/lightsensor.jpg)
 
-**Objective**	
+**Objective** 
 
 Use light sensor module to turn on/off the chainable RGB LED module, and control the brightness of the LED according to the ambient light intensity.
 
@@ -1199,7 +1161,7 @@ Use light sensor module to turn on/off the chainable RGB LED module, and control
 - use light sensor as a light switch
 - use light sensor to control the LED brightness by sense the ambient brightness
 
-**Hardware requirement**	
+**Hardware requirement** 
 
 Self-prepare
 
@@ -1213,14 +1175,13 @@ Included in the kit
 - Grove – Light Sensor
 - Grove – Chainable RGB LED
 
-
 **Hardware connection**
 
 Step 1: Connect Grove – Light Sensor module to A0 port of Seeeduino Lotus
 
 Step 2: Connect Grove – Chainable RGB LED to D7 port of Seeeduino Lotus
 
-Step 3:  Link Seeeduino Lotus with computer by a micro USB cable 
+Step 3:  Link Seeeduino Lotus with computer by a micro USB cable
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/light_rgb.jpg)
 
@@ -1380,12 +1341,11 @@ The brightness of the LED should decreases when the ambient brightness increases
 
 Now you can integrate this light sensor module into your corridor lighting system to control the brightness of the light, during the day time the light sensor detects the sun light then dim the brightness of the corridor light to low, which not only saves power, but also extend the lifespan of the globes.
 
-
 ### Session 5: Grove - Line Finder
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/linefinder.jpg)
 
-**Objective**	
+**Objective** 
 
 Uses line finder to detect black line, and control the color of the LED accordingly when the line finder detects black line or not.
 
@@ -1395,7 +1355,7 @@ Uses line finder to detect black line, and control the color of the LED accordin
 - Revise on how to use Serial Monitor
 - Uses signal input module to control Grove – Chainable RGB LED
 
-**Hardware requirement**	
+**Hardware requirement** 
 
 Self-prepare
 
@@ -1409,7 +1369,7 @@ Included in the kit
 
 **Hardware connection**
 
-Step 1: Connect Grove – Line Finder module to D3 port of Seeeduino Lotus 
+Step 1: Connect Grove – Line Finder module to D3 port of Seeeduino Lotus
 
 Step 2:  Link Seeeduino Lotus with computer by a micro USB cable
 
@@ -1449,9 +1409,7 @@ Step 3: Observe result
 
 Note you should keep at least 5cm away for the detecting object with the line finder, to test the line finder you should tape a strip of black tape onto a white paper or tiles (or uses black objects). Now aim the line finder to the black object, the Serial Monitor should display 0, and if you move away the line finder from black object, the Serial Monitor should display 1.
 
- ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/line_eg1_1.jpg) 
-
-
+ ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/line_eg1_1.jpg)
 
 **Example 2**:Uses Line detector to turn on or off Grove – Chainable RGB LED module.
 
@@ -1515,7 +1473,6 @@ Step 3: Observe result
 You should see that if the line finder detects black line, the LED should turn off, otherwise the LED should lid up if the line finder cannot detects the black line.
 
  ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/line_eg2.jpg)
- 
 
 **Example 3**:Uses line finder to control the LED to emit Red or Green
 
@@ -1574,9 +1531,7 @@ Step 3: Observe result
 
 You should notice when the line finder detects black line, the LED will emit Red light, otherwise, if the line finder cannot spot the black line, the LED should emit Green light.
 
-
  ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/line_eg3.jpg)
-
 
 **Further Explore**
 
@@ -1586,7 +1541,7 @@ Now you can build your own line tracking car by using this line finder module an
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/LCD.jpg)
 
-**Objective**	
+**Objective** 
 
 Uses Grove - LCD RGB Backlight screen to display “Hello World” and some custom characters.
 
@@ -1599,8 +1554,7 @@ Uses Grove - LCD RGB Backlight screen to display “Hello World” and some cust
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/chartable.png)
 
-
-**Hardware requirement**	
+**Hardware requirement** 
 
 Self-prepare
 
@@ -1613,22 +1567,19 @@ Included in the kit
 - Grove cable
 - Grove - LCD RGB Backlight
 
-
 **Hardware connection**
 
 Step 1: Connect Grove - LCD RGB Backlight module to I2C. port of Seeeduino Lotus note: it is the I2C port followed by one dot.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/lcd_ard.jpg)
 
-
 Step 2:  Link Seeeduino Lotus with computer by a micro USB cable.
-
 
 **Software programming**
 
 **Add Library**
 
-Add [Library](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/archive/master.zip) for Grove - LCD RGB Backlight Screen 
+Add [Library](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/archive/master.zip) for Grove - LCD RGB Backlight Screen
 
 Please follow the instructions in tutorial 3 on how to <a href="#step3">add library</a>.
 
@@ -2053,6 +2004,7 @@ void loop()
 }
 
 ```
+
 Step 2: Upload code into Seeeduino Lotus
 
 Step 3: Observe result
@@ -2080,7 +2032,6 @@ Use DHT11 sensor module to detect the surrounding temperature and humidity, and 
 - add DHT11 Library and initial setup for DHT11
 - use Serial Monitor and LCD Screen to display data from DHT11 sensor
 
-
 **Hardware requirement**
 
 Self-prepare
@@ -2101,8 +2052,6 @@ Step 1: Connect Grove – Temperature &Humidity Sensor(DHT11) module to D2 port 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/DHT11_ard.jpg)
 
 Step 2: Link Seeeduino Lotus with computer by a micro USB cable
-
-
 
 **Software programming**
 
@@ -2273,7 +2222,7 @@ After this session, you can build your own weather station by using DHT11 sensor
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/3_axis_cover.jpg)
 
-**Objective**	
+**Objective** 
 
 Learn how to operate 3-axis digital accelerometer by observe the output data displayed on the LCD screen.
 
@@ -2282,7 +2231,6 @@ Learn how to operate 3-axis digital accelerometer by observe the output data dis
 - Uses serial monitor to show the offset and acceleration value from the 3-axis accelerometer, discover the relations between the output data and  the position of the 3-axis accelerometer
 - Uses the offset data from 3-axis accelerometer to calculate pitch and roll value, and observe the data change relative to the position of the 3-axis accelerometer.
 - Learn how to use tilt switch to flip in between pages of the LCD screen, so the massive data from 3-axis accelerometer could be displayed clearly.
-
 
 **Hardware requirement**
 
@@ -2297,8 +2245,7 @@ Included in the kit
 - Grove cable
 - Grove – 3-Axis Digital Accelerometer
 - Grove - LCD RGB Backlight
-- Grove – Tilt Switch	
-
+- Grove – Tilt Switch 
 
 **Hardware connection**
 
@@ -2312,7 +2259,7 @@ Step 2: Link Seeeduino Lotus with computer by a micro USB cable.
 
 **Add Library**
 
-Please add the [3-axis accelerometer driver Library](https://github.com/Seeed- Studio/Accelerometer_MMA7660/archive/master.zip) into Arduino IDE
+Please add the [3-axis accelerometer driver Library](https://github.com/Seeed-Studio/Accelerometer_MMA7660/archive/master.zip) into Arduino IDE
 
 **Example 1**:Uses Serial Monitor to show the output data from the 3-axis accelerometer
 
@@ -2387,7 +2334,6 @@ Step 3: Open Serial Monitor
 Step 4: Observe result
 
 Please notice the data changes by positioning the 3-axis accelerometer according to pictures below.
-
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/result2.jpg)![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/result3.png)
 
@@ -2483,7 +2429,6 @@ Please place the 3-axis accelerometer on a levelled surface as shown below.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/3_axis.jpg)
 
-
 Observe the Roll data
 Please flip up/down the 3-axis accelerometer according to the green arrows in above figure, now the value of roll should increase when you flip down, decrease when flip up, in addition, the value of roll is positive when flip down at origin(placed parallel to water levelled), negative when flip up.
 
@@ -2501,8 +2446,6 @@ Please tilt left/right the 3-axis accelerometer according to the red arrows in a
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/result6.jpg)![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/result20.png)
 
 Now we can use 3-axis accelerometer to control or correct the direction of air plane or cars, by covert the pitch and roll data to control signal to control the actuator, the same technology is applied to the auto screen adjustment on mobile phone when you tilt the phone from portrait to landscape.
-
-
 
 **Example 3**: Uses LCD screen to display the output data from 3-axis accelerometer
 
@@ -2656,10 +2599,7 @@ Display the velocity, pitch and roll when tilt switch is on/off:
 
 After play around with digital accelerometer module, you can imagine that accelerometer is one of the most important module can be found in rocket guidance system along with other modules such as GPS and gyros etc.. accelerometer is also used in mobile phones to detect if your phone is in portrait mode or landscape mode, so the screen can be tilted and adjust accordingly.
 
-
-
 ### Session 9: Smart Garden
-
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/smartgarden.png)
 
@@ -2679,7 +2619,6 @@ To make a Smart Garden sensor and reminder system by combining Grove starter kit
 
 Use DHT11 module to monitor the surrounding environment of the plant, uses light sensor to detect the surrounding light intensity.
 
-
 **Actuator module**
 
 Uses buzzer to make different tones and LCD to notify different warnings message:
@@ -2688,7 +2627,6 @@ Uses buzzer to make different tones and LCD to notify different warnings message
 - warning 2: the surrounding humidity is lower than 40%
 - warning 3: Light intensity is lower than 50
 - warning 4: remind user to watering plant
-
 
 Uses LCD screen display:
 
@@ -2706,26 +2644,25 @@ Use tilt switch to reset warnings.
 
 Self-prepare
 
-	- micro-USB cable
-	- a computer with Arduino IDE and serial-to-USB driver installed
-	- DIY acrylic frame
-
+ - micro-USB cable
+ - a computer with Arduino IDE and serial-to-USB driver installed
+ - DIY acrylic frame
 
 Included in the kit
 
-	- Seeeduino Lotus V1.1 development board
-	- Grove cable
-	- Grove – Buzzer
-	- Grove – Chainable RGB LED
-	- Grove – Light Sensor
-	- Grove - LCD RGB Backlight
-	- Grove – Temperature &Humidity Sensor(DHT11)
-	- Grove – Tilt Switch
+ - Seeeduino Lotus V1.1 development board
+ - Grove cable
+ - Grove – Buzzer
+ - Grove – Chainable RGB LED
+ - Grove – Light Sensor
+ - Grove - LCD RGB Backlight
+ - Grove – Temperature &Humidity Sensor(DHT11)
+ - Grove – Tilt Switch
 
 **Hardware connection**
 
 Step 1:
-Connect Grove – Buzzer module to D6 port of Seeeduino Lotus 
+Connect Grove – Buzzer module to D6 port of Seeeduino Lotus
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/buzzer_ard.jpg)
 
@@ -2747,7 +2684,6 @@ Connect Grove – Temperature &Humidity Sensor(DHT11) module to D2 port of Seeed
 
 Connect Grove – Tilt Switch to D5 port of Seeeduino Lotus.
 
-
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/connect5.jpg)
 
 Fix all the components together on the DIY Acrylic Frame
@@ -2755,7 +2691,6 @@ Fix all the components together on the DIY Acrylic Frame
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/smartgarden1.png)![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/smartgarden2.png)![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/smartgarden3.png)
 
 Step 2:  Link Seeeduino Lotus with computer by a micro USB cable.
-
 
 **Software programming**
 
@@ -2973,8 +2908,6 @@ Reset warnings by using tilt switch
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/garden6.png)![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/garden7.png)
 
-
-
 ### Session 10: Smart Cup
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/smartcup.png)
@@ -2982,7 +2915,6 @@ Reset warnings by using tilt switch
 **Objective**
 
 Make a smart cup by using buzzer, RGB LED, 3-Axis Accelerometer and LCD screen, it will remind user to drink water at a certain period of time, the smart cup can also detect if the user consume some water, the LCD screen will display a counting down time to remind user when will be the next time to drink water.
-
 
 **Key knowledge**
 
@@ -3013,7 +2945,6 @@ Uses LCD screen display
 - state 3: congratulate the user for drink water
 - state 4: tell user to put back water once finished drinking
 
-
 **Flowchart**
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/flowchart1.png)
@@ -3039,18 +2970,15 @@ Included in the kit
 Step 1:
 Connect Grove - Buzzer module to D6 port of Seeeduino Lotus
 
-
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/buzzer_ard.jpg)
 
 Connect Grove – Chainable RGB LED to D7 port of Seeeduino Lotus
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/connect1.jpg)
 
-
 Connect Grove - LCD RGB Backlight module to I2C. port of Seeeduino Lotus note: it is the I2C port followed by one dot.
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/connect6.jpg)
- 
 
 Connect Grove – 3-Axis Digital Accelerometer to I2C port of Seeeduino Lotus note: it is the I2C port followed by two dots.
 
@@ -3448,13 +3376,11 @@ The 4 states of the smart cup
 
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/cup1.png)![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/cup2.png)
 
-
 ![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/cup3.png)![](https://files.seeedstudio.com/wiki/Grove_Beginner_Kit_for_Arduino/img/cup4.png)
-
 
 ## REFERENCE
 
-Aircraft principal axes. Accessed November 27, 2018. https://en.wikipedia.org/wiki/Aircraft_principal_axes.
+Aircraft principal axes. Accessed November 27, 2018. [https://en.wikipedia.org/wiki/Aircraft_principal_axes](https://en.wikipedia.org/wiki/Aircraft_principal_axes).
 
 ## APPENDIX
 
@@ -3465,11 +3391,11 @@ All the [coding](https://github.com/peterpanstechland/Grove_starter_kit.git) in 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

@@ -162,7 +162,7 @@ python scripts/environments/teleoperation/replay.py \
 
 收集到的远程操作数据以 HDF5 格式存储在指定目录中。如果使用这些数据来训练代理模型，则必须使用 LeIsaac 的转换脚本将数据集转换为与 LeRobot 兼容的格式。
 
-必须在 LeRobot 虚拟环境中执行此脚本。请按照此 [wiki](https://wiki.seeedstudio.com/lerobot_so100m_new/#install-lerobot) 中的步骤创建一个新的 LeRobot 环境。
+必须在 LeRobot 虚拟环境中执行此脚本。请按照此 [wiki](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/#install-lerobot) 中的步骤创建一个新的 LeRobot 环境。
 
 ```bash
 cd ..

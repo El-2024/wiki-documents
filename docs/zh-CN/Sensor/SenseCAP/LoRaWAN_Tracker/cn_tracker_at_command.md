@@ -1,77 +1,81 @@
 ---
-description: LoRaWAN 追踪器蓝牙 AT 指令说明
-title: LoRaWAN 追踪器蓝牙 AT 指令说明
+description: LoRaWAN 追踪器蓝牙 AT 命令说明
+title: LoRaWAN 追踪器蓝牙 AT 命令说明
 keywords:
-- 追踪器
-- 应用
+- Tracker
+- App
 image: https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/intro-e.webp
 slug: /cn/tracker_at_command
-last_update:
-  date: 05/15/2025
-  author: Jessie
 sidebar_position: 3
+last_update:
+  date: 4/15/2025
+  author: Jessie
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
-本章节将简要说明如何使用蓝牙 AT 指令，通过蓝牙 AT 指令建立蓝牙连接并查询/配置设备信息。
+本章将简要说明蓝牙 AT 命令的使用，建立蓝牙连接并通过蓝牙 AT 命令查询/配置设备信息。
 
-## 前置条件
 
-- 一台带有 LoRaWAN 固件的 T1000-E 设备。
+## 前提条件
+
+- 一台运行 LoRaWAN 固件的 T1000-E 设备。
 - 支持蓝牙 4.0+ 的手机。
-- [LoRaWAN 追踪器 AT 指令列表](https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/LoRaWAN%20Tracker%20AT%20Command.pdf)
-- 移动开发框架（例如 React Native + react-native-ble-plx）。
+- [LoRaWAN 追踪器 AT 命令列表](https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/LoRaWAN%20Tracker%20AT%20Command.pdf)
+- 移动开发框架（例如，React Native + react-native-ble-plx）。
 
-### 发现 BLE 服务和特性
+### 发现 BLE 服务和特征
 
-在应用程序中发现并筛选您的 BLE 设备：
+要在应用程序中发现和过滤您的 BLE 设备：
 
 * 扫描附近的蓝牙设备。
-* 根据 `["2886", "A886", "a6ed0701-d344-460a-8075-b9e8ec90d71b"]` 筛选扫描结果。
+* 通过 `["2886", "A886", "a6ed0701-d344-460a-8075-b9e8ec90d71b"]` 过滤扫描结果。
 
-* 可选：根据设备的广播名称进行筛选：
+* 可选择通过设备的广播名称过滤设备：
 
-在 `react-native-ble-plx` 中，本地名称可以通过 `(Device).localName` 访问。
+ 在 `react-native-ble-plx` 中，本地名称可以通过 `(Device).localName` 访问。
 
-仅保留 `localName` 包含 `T1000` 的设备。
+ 只保留 `localName` 包含 `T1000` 的设备。
 
 ### 检查设备状态
 
-* 如果扫描到的服务是 `2886` 或 `A886`，则需要建立蓝牙连接。
+* 如果扫描到的服务是 `2886` 或 `A886`，需要建立蓝牙连接。
 
 ### 连接蓝牙并发现服务
 
-* 连接后，发现所有服务和特性。
+* 连接后，发现所有服务和特征。
 
-* 找到具有以下 UUID 的 UART 服务：
-`49535343-FE7D-4AE5-8FA9-9FAFD205E455`
 
-* 在此服务中，有两个关键特性：
+* 找到 UUID 为以下的 UART 服务：
+`49535343-FE7D-4AE5-8FA9-9FAFD205E455` 
 
-|特性 UUID|用途|
+* 在此服务中，有两个关键特征：
+
+|特征 UUID|用途|
 |--|--|
-|49535343-8841-43F4-A8D4-ECBE34729BB3|	TX: 发送指令|
-|49535343-1E4D-4BD9-BA61-23C647249616|	RX: 接收数据|
+|49535343-8841-43F4-A8D4-ECBE34729BB3|	TX：发送命令|
+|49535343-1E4D-4BD9-BA61-23C647249616|	RX：接收数据|
 
-* ✅ 指令成功检查
 
-成功的 AT 指令通常返回：
+* ✅ 命令成功检查
 
-`\r\nok\r\n`、`\r\nOK\r\n` 或 `\r\nOk\r\n`
+ 成功的 AT 命令通常返回：
 
-### AT 指令示例
+ `\r\nok\r\n`、`\r\nOK\r\n` 或 `\r\nOk\r\n`
+
+
+### AT 命令示例
 
 **示例**：检查设备信息
 
-**指令：**
 
-通过 `49535343-8841-43F4-A8D4-ECBE34729BB3` 发送 `AT+CONFIG=?\r\n` 指令。
+**命令：**
+
+通过 `49535343-8841-43F4-A8D4-ECBE34729BB3` 发送 `AT+CONFIG=?\r\n` 命令
+
 
 **返回值：**
 
-响应将以 JSON 格式返回：
+响应将采用 JSON 格式：
+
 
 ```json
 {

@@ -1223,7 +1223,7 @@ python lerobot/scripts/control_robot.py \
 :::
 
 ## 参考文档
-矽递科技英文Wiki文档：[How to use the SO100Arm robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
+矽递科技英文Wiki文档：[How to use the SO100Arm robotic arm in Lerobot](https://wiki.seeedstudio.com/cn/lerobot_so100m/)
 
 
 TheRobotStudio Project: [SO-ARM10x](https://github.com/TheRobotStudio/SO-ARM100)

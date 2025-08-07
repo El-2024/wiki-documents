@@ -4,21 +4,18 @@ title: 开始使用 Google MediaPipe
 keywords:
   - Edge
   - reTerminal 应用
-  - Embedded_ML
+  - 嵌入式机器学习
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reTerminal_ML_MediaPipe
 last_update:
-  date: 05/15/2025
+  date: 1/10/2024
   author: Kasun Thushara
 ---
 
+
 # 在 reTerminal 上开始使用 MediaPipe
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
-MediaPipe 是 Google 提供的一个开源框架，用于构建多模态（例如视频、音频、任何时间序列数据）、跨平台（即 Android、iOS、Web、边缘设备）的应用机器学习管道。它针对端到端的设备内推理进行了性能优化。MediaPipe 目前正在积极开发中，并包含多个演示，可以在 reTerminal 上安装后直接运行。
+MediaPipe 是 Google 提供的一个开源框架，用于构建多模态（例如视频、音频、任何时间序列数据）、跨平台（如 Android、iOS、Web、边缘设备）的应用机器学习管道。它针对端到端的设备内推理进行了性能优化。MediaPipe 目前正在积极开发中，并包含多个演示，可以在 reTerminal 上安装后直接运行。
 
 ### 硬件准备
 
@@ -38,22 +35,22 @@ MediaPipe 是 Google 提供的一个开源框架，用于构建多模态（例�
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html?queryID=26220f25bcce77bc420c9c03059787c0&objectID=4904&indexName=bazaar_retailer_products">
               <strong><span><font color={'FFFFFF'} size={"4"}>立即购买 🖱️</font></span></strong>
           </a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/reTerminal-piCam/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/reTerminal-piCam/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
         </tr>
     </table>
     </div>
 
 ### 软件准备
 
-我们建议从 Raspberry Pi 官方网站安装 **Bullseye** 或 **Bookworm** 版本的 64 位 Raspberry Pi 操作系统。如果您希望安装新的 Raspbian 操作系统，请按照此 [**指南**](https://wiki.seeedstudio.com/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc) 中的步骤操作。
+我们建议从 Raspberry Pi 官方网站安装 **Bullseye** 或 **Bookworm** 版本的 64 位 Raspberry Pi 操作系统。如果您希望安装新的 Raspbian 操作系统，请按照此 [**指南**](https://wiki.seeedstudio.com/cn/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc) 中的步骤操作。
 
 :::note
 
-在早期的操作系统版本中，可以使用 pip（Python 包管理器）直接在系统范围内安装 Python 库。然而，在 Bookworm 版本中发生了变化。为了避免安装过程中可能出现的问题，现在需要使用 venv 在 Python 虚拟环境中通过 pip 安装包。
+在早期的操作系统版本中，可以使用 pip（Python 包管理器）直接系统范围安装 Python 库。然而，在 Bookworm 版本中发生了变化。为了避免安装过程中可能出现的问题，现在需要通过 venv 在 Python 虚拟环境中使用 pip 安装包。
 
 :::
 
-逐一执行以下命令，您将创建一个虚拟环境。
+逐条执行以下命令，您将创建一个虚拟环境。
 
  ```sh
 mkdir my_project
@@ -64,7 +61,7 @@ source env/bin/activate
 
 ## MediaPipe 中的机器学习解决方案
 
-首先使用以下命令将 GitHub 仓库克隆到您的 reTerminal 设备：
+首先，通过以下命令将 GitHub 仓库克隆到您的 reTerminal 设备：
 
  ```sh
  git clone https://github.com/Seeed-Studio/Seeed_Python_ReTerminal
@@ -92,7 +89,8 @@ sh setup.sh
 python3 detect.py
  ```
 
-### 人脸标记器
+### 人脸标记
+
 <center><img width={800} src="https://files.seeedstudio.com/wiki/ReTerminal/mediapipe/meadiapipe-facelandmarks.gif" /></center>
 
 - **步骤 1** 安装依赖项：
@@ -106,13 +104,13 @@ cd Seeed_Python_ReTerminal/samples/mediapipe_picam/face_landmarker/raspberry_pi
 sh setup.sh
  ```
 
-- **步骤 3** 安装完成后，您可以执行源文件以启动人脸标记器：
+- **步骤 3** 安装完成后，您可以执行源文件以启动人脸标记：
 
  ```sh
 python3 detect.py
  ```
 
-### 手部标记器
+### 手部标记
 
 <center><img width={800} src="https://files.seeedstudio.com/wiki/ReTerminal/mediapipe/mediapipe_handlandmarks.gif" /></center>
 
@@ -127,13 +125,13 @@ cd Seeed_Python_ReTerminal/samples/mediapipe_picam/hand_landmarker/raspberry_pi
 sh setup.sh
  ```
 
-- **步骤 3** 安装完成后，您可以执行源文件以启动手部标记器：
+- **步骤 3** 安装完成后，您可以执行源文件以启动手部标记：
 
  ```sh
 python3 detect.py
  ```
 
-### 姿态标记器
+### 姿态标记
 
 <center><img width={800} src="https://files.seeedstudio.com/wiki/ReTerminal/mediapipe/mediapipe-pose.gif" /></center>
 
@@ -148,7 +146,7 @@ cd Seeed_Python_ReTerminal/samples/mediapipe_picam/pose_landmarker/raspberry_pi
 sh setup.sh
  ```
 
-- **步骤 3** 安装完成后，您可以执行源文件以启动姿态标记器：
+- **步骤 3** 安装完成后，您可以执行源文件以启动姿态标记：
 
  ```sh
 python3 detect.py
@@ -162,7 +160,7 @@ python3 detect.py
 
 ## 技术支持
 
-感谢您选择我们的产品！我们为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们将为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

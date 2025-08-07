@@ -6,23 +6,19 @@ tags:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Allxon-Jetson-Getting-Started
 last_update:
-  date: 05/15/2025
+  date: 2023/1/13
   author: jianjing Huang
 ---
 
 # 在 NVIDIA® Jetson 设备上使用 Allxon 入门指南
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 <p style={{textAlign: 'center'}}><img src="https://www.allxon.com/hs-fs/hubfs/Allxon_%E6%8F%92%E7%95%AB_20210512-+NVIDIA.png?width=1125&height=845&name=Allxon_%E6%8F%92%E7%95%AB_20210512-+NVIDIA.png" alt="pir" width="1000" height="auto"/></p>
 
-[Allxon](https://www.allxon.com) 是一个重要的边缘设备管理解决方案，通过将 AI/IoT 生态系统中的硬件 (IHV)、软件 (ISV) 和服务提供商 (SI/MSP) 结合在一起，简化并优化业务运营管理。作为生态系统的连接者，Allxon 是点燃快速、无缝连接的火花，确保所有系统始终在线。
+[Allxon](https://www.allxon.com) 是一个重要的边缘设备管理解决方案，通过将 AI/IoT 生态系统（硬件 (IHV)、软件 (ISV) 和服务提供商 (SI/MSP)）结合在一起，简化并优化业务运营管理。作为生态系统的连接者，Allxon 是点燃快速、无缝连接的火花，确保所有系统始终在线。
 
-您可以安全地管理 NVIDIA® JetPack 4.6 及更高版本，边缘网络安全保护所有网络和硬件。Allxon 集成了 Trend Micro IoT Security™ (TMIS) 的独家威胁情报，确保您获得多层次的保护。
+您可以安全地管理 NVIDIA® JetPack 4.6 及更高版本，并通过边缘网络安全保护所有网络和硬件。Allxon 集成了 Trend Micro IoT Security™ (TMIS) 的独家威胁情报，确保您获得多层次的保护。
 
-Allxon 为所有边缘设备提供带内和带外的远程设备管理服务，帮助企业节省时间并降低指数级的人工成本。通过一个易于使用的单一云端门户，企业可以轻松优化和简化其服务。
+Allxon 为所有边缘设备提供带内和带外的远程设备管理服务，帮助企业节省时间并减少大量人工成本。通过一个易于使用的单一云门户，企业可以轻松优化和简化其服务。
 
 ## 支持的硬件
 - [支持所有 NVIDIA Jetson 设备](https://www.seeedstudio.com/tag/nvidia.html)
@@ -30,7 +26,7 @@ Allxon 为所有边缘设备提供带内和带外的远程设备管理服务，�
 ## 前置条件
 
 - 任何上述的 Jetson 设备
-- 已在 Jetson 设备上安装最新的 Jetson 操作系统
+- Jetson 设备上已安装最新的 Jetson OS
 - 显示器、键盘、鼠标（可选）
 
 ## 入门指南
@@ -43,7 +39,7 @@ Allxon 为所有边缘设备提供带内和带外的远程设备管理服务，�
 - 将 Jetson 设备添加到 Allxon DMS 门户
 
 ### 硬件接线介绍
-OOB 启用主板的引脚定义及对应的线缆颜色。
+OOB 启用主板的引脚定义及对应的电缆颜色。
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Allxon/writting-1.png" alt="pir" width="500" height="auto"/></p>
 这里，我们将使用 OOB 和 Jetson Orin Nano 的接线图作为示例。以下信息提供了 NVIDIA® Jetson™ Orin Nano 开发套件的接线示例。
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Allxon/wiring-2.png" alt="pir" width="700" height="auto"/></p>
@@ -52,15 +48,15 @@ OOB 启用主板的引脚定义及对应的线缆颜色。
 
 ### 注册 Allxon 账户
 
-- **步骤 1.** 访问 [此页面](https://dms.allxon.com/next/signup) 注册 Allxon 账户
+- **步骤 1.** 访问[此页面](https://dms.allxon.com/next/signup)注册 Allxon 账户
 
 - **步骤 2.** 输入您的电子邮件地址并继续
 
-- **步骤 3.** 从收到的激活邮件中验证账户并创建密码
+- **步骤 3.** 验证您收到的激活邮件并创建密码
 
 ### 在 Jetson 设备上安装 Allxon DMS Agent
 
-安装 Allxon DMS Agent 是一个非常简单的过程。您只需执行一条命令！
+安装 Allxon DMS Agent 非常简单。您只需执行一条命令！
 
 - **步骤 1.** 访问 Jetson 设备，打开终端并执行以下命令
 
@@ -70,9 +66,9 @@ sudo wget -qO - "https://get.allxon.net/linux/standard" | sudo bash -s
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Allxon/install-1.png" alt="pir" width="1000" height="auto"/></p>
 
-**注意：** 上述命令将安装 Allxon DMS Agent 和相关软件包
+**注意：** 上述命令将安装 Allxon DMS Agent 及相关软件包
 
-- **步骤 2.** 在安装结束时，它会询问您是否希望安装 **Trend Micro IoT Security™** 作为附加的边缘安全服务，并同意 TMIS EULA。您可以输入 **Y** 继续安装
+- **步骤 2.** 在安装结束时，系统会询问您是否要安装 **Trend Micro IoT Security™** 作为附加的边缘安全服务，并同意 TMIS EULA。您可以输入 **Y** 继续安装
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Allxon/install-2.jpg" alt="pir" width="1000" height="auto"/></p>
 
@@ -104,13 +100,13 @@ dms-get-pairing-code
 
 ### 将 Jetson 设备添加到 Allxon DMS 门户
 
-- **步骤 1.** 使用之前注册的凭据登录 [Allxon DMS 门户](https://dms.allxon.com/next/signin)
+- **步骤 1.** 使用之前的凭据登录 [Allxon DMS 门户](https://dms.allxon.com/next/signin)
 
 - **步骤 2.** 从左侧导航面板中点击 **设备**，然后点击 **+ 添加设备**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Allxon/portal-1.png" alt="pir" width="1000" height="auto"/></p>
 
-- **步骤 3.** 点击 **下一步**，输入之前获取的设备配对码，然后点击 **下一步**
+- **步骤 3.** 点击 **下一步**，输入之前获取的设备配对码并点击 **下一步**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Allxon/portal-2.png" alt="pir" width="450" height="auto"/></p>
 
@@ -118,11 +114,11 @@ dms-get-pairing-code
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Allxon/portal-3.png" alt="pir" width="450" height="auto"/></p>
 
-**注意：** 如果您有促销码，可以点击 **下一步** 并兑换。否则，您可以按 **跳过** 完成设置。
+**注意：** 如果您有促销代码，可以点击 **下一步** 并兑换。否则，您可以按 **跳过** 完成设置。
 
 ### Allxon DMS 门户
 
-在 Jetson 设备与 Allxon DMS 门户配对后，您将在 **设备** 页面下看到已连接的设备。
+之后，Jetson 设备与 Allxon DMS 门户配对成功，您将在 **设备** 页面下看到已连接的设备。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Allxon/portal-4.png" alt="pir" width="1000" height="auto"/></p>
 
@@ -138,7 +134,7 @@ dms-get-pairing-code
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供了多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

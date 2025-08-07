@@ -6,112 +6,108 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/XIAO-BLE-Sense-Pin-Multiplexing
 last_update:
-  date: 05/15/2025
+  date: 1/11/2023
   author: shuxu hu
 ---
 
 # Seeed Studio XIAO nRF52840 (Sense) 的引脚复用
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+Seeed Studio XIAO nRF52840 (Sense) 具有丰富的接口。它有 **11 个数字 I/O** 可用作 **PWM 引脚**，以及 **6 个模拟输入**可用作 **ADC 引脚**。它支持所有三种常见的串行通信接口，如 **UART、I2C 和 SPI**。本 wiki 将帮助您了解这些接口并在您的下一个项目中实现它们！
 
-Seeed Studio XIAO nRF52840 (Sense) 拥有丰富的接口。它有 **11 个数字 I/O 引脚**，可以用作 **PWM 引脚**，以及 **6 个模拟输入引脚**，可以用作 **ADC 引脚**。它支持所有三种常见的串行通信接口，例如 **UART、I2C 和 SPI**。本教程将帮助您了解这些接口并在您的下一个项目中实现它们！
+> 这里的基本功能对于 Seeed Studio XIAO nRF52840 Arduino 库的两个版本都表现良好。
 
-> 此处的基本功能在 Seeed Studio XIAO nRF52840 Arduino 库中均表现良好。
+## 数字
 
-## 数字引脚
-
-将一个按钮连接到引脚 D6，将一个 LED 连接到引脚 D10。然后上传以下代码，通过按钮控制 LED 的开/关。
+将按钮连接到引脚 D6，将 LED 连接到引脚 D10。然后上传以下代码，使用按钮控制 LED 的开/关。
 
 ```cpp
-const int buttonPin = 6;     // 按钮连接到数字引脚 6
-const int ledPin =  10;      // LED 连接到数字引脚 10
+const int buttonPin = 6;     // pushbutton connected to digital pin 6
+const int ledPin =  10;      // LED connected to digital pin 10
  
-int buttonState = 0;         // 用于读取按钮状态的变量
+int buttonState = 0;         // variable for reading the pushbutton status
  
 void setup() {
-  // 初始化 LED 引脚为输出模式：
+  // initialize the LED pin as an output:
   pinMode(ledPin, OUTPUT);
-  // 初始化按钮引脚为输入模式：
+  // initialize the pushbutton pin as an input:
   pinMode(buttonPin, INPUT);
 }
  
 void loop() {
-  // 读取按钮的状态值：
+  // read the state of the pushbutton value:
   buttonState = digitalRead(buttonPin);
  
-  // 检查按钮是否被按下。如果按下，buttonState 为 HIGH：
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
   if (buttonState == HIGH) {
-    // 关闭 LED：
+    // turn LED off:
     digitalWrite(ledPin, HIGH);
   } else {
-    // 打开 LED：
+    // turn LED on:
     digitalWrite(ledPin, LOW);
   }
 }
 ```
 
-## 数字引脚作为 PWM
+## 数字作为 PWM
 
-将一个 LED 连接到引脚 D10。然后上传以下代码，观察 LED 渐渐变亮和变暗。
+将 LED 连接到引脚 D10。然后上传以下代码，观察 LED 逐渐淡化的效果。
 
 ```cpp
-int ledPin = 10;    // LED 连接到数字引脚 10
+int ledPin = 10;    // LED connected to digital pin 10
 
 void setup() {
 
 }
 
 void loop() {
-  // 从最小值到最大值以 5 的增量渐渐变亮：
+  // fade in from min to max in increments of 5 points:
   for (int fadeValue = 0 ; fadeValue <= 255; fadeValue += 5) {
-    // 设置值（范围从 0 到 255）：
+    // sets the value (range from 0 to 255):
     analogWrite(ledPin, fadeValue);
-    // 等待 30 毫秒以观察渐变效果
+    // wait for 30 milliseconds to see the dimming effect
     delay(30);
   }
 
-  // 从最大值到最小值以 5 的增量渐渐变暗：
+  // fade out from max to min in increments of 5 points:
   for (int fadeValue = 255 ; fadeValue >= 0; fadeValue -= 5) {
-    // 设置值（范围从 0 到 255）：
+    // sets the value (range from 0 to 255):
     analogWrite(ledPin, fadeValue);
-    // 等待 30 毫秒以观察渐变效果
+    // wait for 30 milliseconds to see the dimming effect
     delay(30);
   }
 }
 ```
 
-## 模拟引脚
+## 模拟
 
-将一个电位器连接到引脚 A5，将一个 LED 连接到引脚 D10。然后上传以下代码，通过旋转电位器旋钮控制 LED 的闪烁间隔。
+将电位器连接到引脚 A5，将 LED 连接到引脚 D10。然后上传以下代码，通过旋转电位器旋钮来控制 LED 的闪烁间隔。
 
 ```cpp
 const int sensorPin = 5;
 const int ledPin =  10; 
 void setup() {
-  // 声明 ledPin 为输出：
+  // declare the ledPin as an OUTPUT:
   pinMode(sensorPin, INPUT);
   pinMode(ledPin, OUTPUT);
 }
  
 void loop() {
-  // 从传感器读取值：
+  // read the value from the sensor:
   int sensorValue = analogRead(sensorPin);
-  // 打开 ledPin
+  // turn the ledPin on
   digitalWrite(ledPin, HIGH);
-  // 停止程序 <sensorValue> 毫秒：
+  // stop the program for <sensorValue> milliseconds:
   delay(sensorValue);
-  // 关闭 ledPin：
+  // turn the ledPin off:
   digitalWrite(ledPin, LOW);
-  // 停止程序 <sensorValue> 毫秒：
+  // stop the program for for <sensorValue> milliseconds:
   delay(sensorValue);
 }
 ```
 
-## 串行通信
-使用 Serial1 通过 GPIO 使用 UART，而不是 USB。您可以同时使用两者。
-使用引脚 D6 作为 UART 的 TX 引脚，引脚 D7 作为 UART 的 RX 引脚，发送 "Hello World!" 消息。
+## 串口通信
+使用 Serial1 通过 GPIO 而不是 USB 来使用 UART。您也可以同时使用两者。
+使用引脚 D6 作为 UART 的 TX 引脚，引脚 D7 作为 UART 的 RX 引脚来发送 "Hello World!" 消息。
 
 ```cpp
 void setup() {
@@ -127,7 +123,7 @@ void loop() {
 
 ## I2C
 
-- **步骤 1.** 将 [Grove - OLED Display 1.12 (SH1107) V3.0](https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html) 连接到 Seeed Studio XIAO nRF52840 (Sense)，硬件连接如下。
+- **步骤 1.** 按照以下硬件连接将 [Grove - OLED Display 1.12 (SH1107) V3.0](https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html) 连接到 Seeed Studio XIAO nRF52840 (Sense)。
 
 |  Grove - OLED Display 1.12 (SH1107) |  Seeed Studio XIAO nRF52840 (Sense) |
 |-----------|-----------|
@@ -146,7 +142,7 @@ void loop() {
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/u8g2-install.png" alt="pir" width={600} height="auto" /></p>
 
 
-- **步骤 4.** 上传以下代码，在 OLED 显示屏上显示文本字符串
+- **步骤 4.** 上传以下代码在 OLED 显示屏上显示文本字符串
 
 ```cpp
 #include <Arduino.h>
@@ -172,7 +168,7 @@ void loop(void) {
 
 ## SPI
 
-- **步骤 1.** 将 [Grove - OLED Display 1.12 (SH1107) V3.0](https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html) 连接到 Seeed Studio XIAO nRF52840 (Sense)，硬件连接如下。
+- **步骤 1.** 按照以下硬件连接将 [Grove - OLED Display 1.12 (SH1107) V3.0](https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html) 连接到 Seeed Studio XIAO nRF52840 (Sense)。
 
 | Grove - OLED Display 1.12 (SH1107) | Seeed Studio XIAO nRF52840 (Sense) |
 |-----------|------------|
@@ -187,11 +183,11 @@ void loop(void) {
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/OLED-SPI.png" alt="pir" width={1000} height="auto" /></p>
 
 
-- **步骤 2.** 此 OLED 显示屏支持 I2C 和 SPI 通信，默认模式为 I2C。要使用 SPI 模式，您需要参考 [Grove - OLED Display 1.12 (SH1107) V3.0 wiki](https://wiki.seeedstudio.com/Grove-OLED-Display-1.12-SH1107_V3.0/#software-i2c) 将 OLED 显示屏通信更改为 SPI，然后继续。
+- **步骤 2.** 此 OLED 显示屏支持 I2C 和 SPI 通信，默认模式是 I2C。要使用 SPI 模式，您需要参考 [Grove - OLED Display 1.12 (SH1107) V3.0 wiki](https://wiki.seeedstudio.com/cn/Grove-OLED-Display-1.12-SH1107_V3.0/#software-i2c) 将 OLED 显示屏通信更改为 SPI，然后再继续进行
 
-**注意：** 请确保之前步骤中已安装 U8g2 库。
+**注意：** 确保已从前面的步骤中安装了 U8g2 库。
 
-- **步骤 3.** 上传以下代码，在 OLED 显示屏上显示文本字符串
+- **步骤 3.** 上传以下代码在 OLED 显示屏上显示文本字符串
 
 ```cpp
 #include <Arduino.h>

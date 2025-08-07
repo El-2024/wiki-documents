@@ -1,36 +1,32 @@
 ---
-description: XIAO nRF52840(sense) 搭载 NuttX(RTOS)
-title: XIAO nRF52840(sense) 搭载 NuttX(RTOS)
+description: XIAO nRF52840(sense) 与 NuttX(RTOS)
+title: XIAO nRF52840(sense) 与 NuttX(RTOS)
 keywords:
 - xiao
 image: https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.webp
 slug: /cn/xiao_nrf52840_nuttx
 last_update:
-  date: 05/15/2025
-  author: rcsim
+    date: 02/12/2025
+    author: rcsim
 ---
 
-# Seeed Studio XIAO nRF52840 搭载 NuttX(RTOS)
+# Seeed Studio XIAO nRF52840 与 NuttX(RTOS)
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+## 介绍
 
-## 简介
-
-[NuttX](https://nuttx.apache.org/) 是一个成熟的实时操作系统 (RTOS)，因其符合标准和小巧的占用空间而广受认可。NuttX 的主要特点之一是其可扩展性，使其能够在从 8 位微控制器到 64 位系统的环境中使用。这种灵活性通过遵循 POSIX 和 ANSI 标准得以实现，使您能够在不同架构、系列和半导体供应商的芯片上实验类似的 NuttX 功能。
+[NuttX](https://nuttx.apache.org/) 是一个成熟的实时操作系统（RTOS），因其标准合规性和小占用空间而广受认可。NuttX 的主要特性之一是其可扩展性，这使得它可以在从 8 位微控制器到 64 位系统的各种环境中使用。这种灵活性是通过遵循 POSIX 和 ANSI 标准实现的，使您能够在来自不同架构、系列和半导体供应商的各种芯片上体验类似的 NuttX 功能。
 
 <div align="center"><img width ="{200}" src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.svg"/></div>
 
-此外，NuttX 提供了许多先进且实用的功能，例如 USB、以太网、音频和图形子系统。这些特性使 NuttX 成为开发者的一个有吸引力的选择，它能够在各种硬件上运行，具有多功能性和强大的性能。
+此外，NuttX 提供了许多先进且有用的功能，如 USB、以太网、音频和图形子系统。这些特性使 NuttX 成为寻求多功能、强大的 RTOS 且能够在各种类型硬件上运行的开发者的有吸引力的选择。
 
-NuttX 支持大量且不断扩展的开发板。[官方文档](https://nuttx.apache.org/docs/latest/platforms/) 提供了按架构和系统芯片 (SoC) 系列组织的支持板列表。
+NuttX 支持大量且不断扩展的开发板。[官方文档](https://nuttx.apache.org/docs/latest/platforms/) 提供了支持的开发板的完整列表，按架构和片上系统（SoC）系列组织。
 
-例如，NuttX 文档中的 [Seeed Studio Xiao nRF52840](https://nuttx.apache.org/docs/latest/platforms/arm/nrf52/boards/xiao-nrf52840/index.html) 页面详细描述了每个支持的功能以及如何使用它们。此外，NuttX 文档中还有一个专门针对 [Nordic Semiconductor nRF52](https://nuttx.apache.org/docs/latest/platforms/arm/nrf52/index.html) 系列芯片的页面。
+例如，NuttX 文档中的 [Seeed Studio Xiao nRF52840](https://nuttx.apache.org/docs/latest/platforms/arm/nrf52/boards/xiao-nrf52840/index.html) 页面提供了每个支持功能的详细描述和如何使用它们的说明。此外，NuttX 文档中还有一个专门针对 [Nordic Semiconductor nRF52](https://nuttx.apache.org/docs/latest/platforms/arm/nrf52/index.html) 系列芯片的页面。
 
 ## 工具设置
 
-开始在 XIAO nRF52840 上使用 NuttX 的第一步是安装 UF2 工具，用于将 hex 文件格式转换为 uf2，然后下载 NuttX 源代码本身。NuttX 提供了一个适用于不同平台的[指南](https://nuttx.apache.org/docs/latest/quickstart/install.html)。按照以下步骤操作：
+在 XIAO nRF52840 上开始使用 NuttX 的第一步是安装 UF2 工具，该工具用于将 hex 文件格式转换为 uf2，然后下载 NuttX 源代码本身。Nuttx 提供了针对不同平台的[指南](https://nuttx.apache.org/docs/latest/quickstart/install.html)。按照以下步骤操作：
 
 1. 下载 UF2 工具：
 
@@ -52,20 +48,20 @@ NuttX 支持大量且不断扩展的开发板。[官方文档](https://nuttx.apa
     git clone https://github.com/apache/nuttx-apps apps
     ```
 
-Apache NuttX 分为两个项目：
+Apache Nuttx 分为两个项目：
 
-- Nuttx：包含实现的内核、驱动程序和子系统。
+- Nuttx：包含已实现的内核、驱动程序和子系统。
 - Apps：包含工具、shell、网络实用程序、库和解释器的集合。
 
 ## 应用程序
 
-要启动一个应用程序，需要在 NuttX 上加载一个配置，使用以下命令：
+要启动应用程序，需要在 NuttX 上加载配置，调用命令：
 
 ```bash
 ./tools/configurate.sh board_name:your_application
 ```
 
-还可以通过运行以下命令查看支持的板列表：
+也可以通过运行命令检查支持的开发板列表：
 
 ```bash
 ./tools/configurate.sh -L
@@ -80,13 +76,13 @@ Apache NuttX 分为两个项目：
     make V=1
     ```
 
-5. 使用 UF2 工具将 nuttx.hex 转换为 UF2 格式：
+5. 使用 U2F 工具将 nuttx.hex 转换为 UF2 格式：
 
     ```bash
     python3 uf2/utils/uf2conv.py -c -f 0xADA52840 -i nuttx.hex -o nuttx.uf2
     ```
 
-6. 连接 Seeed Studio XIAO nRF52840，并通过快速双击进入引导加载模式。板将被检测为 USB 大容量存储设备。然后将 “nuttx.uf2” 文件复制到设备中。
+6. 连接 Seeed Studio XIAO nRF52840，并通过快速双击进入引导加载程序模式。开发板将被检测为 USB 大容量存储设备。然后将 "nuttx.uf2" 复制到设备中。
 
 ## 实践操作
 
@@ -94,9 +90,9 @@ Apache NuttX 分为两个项目：
 
 ### NSH
 
-NuttShell(NSH) 是一个用于 NuttX 的 shell 系统，类似于 bash 和其他类似选项。它支持一组丰富的内置命令、脚本以及运行您自己的应用程序作为“内置”（与同一个 NuttX 二进制文件一起）。NSH 配置启用了 UART0 的控制台，使用 115200 bps。
+NuttShell(NSH) 是一个在 NuttX 中使用的 shell 系统，类似于 bash 和其他类似选项。它支持丰富的内置命令集、脚本编写以及将您自己的应用程序作为"内置"（同一个 NuttX 二进制文件的一部分）运行的能力。NSH 配置在 UART0 上启用控制台，使用 115200 bps。
 
-我们可以通过清除之前的配置开始构建过程：
+我们可以通过清除之前的配置来开始构建过程
 
 ```bash
 cd ~/nuttxspace/nuttx
@@ -109,19 +105,19 @@ make distclean
 ./tools/configurate.sh xiao-nrf52840:nsh
 ```
 
-编译源代码：
+编译源代码。
 
 ```bash
 make -j
 ```
 
-使用 UF2 工具将 nuttx.hex 转换为 UF2 格式：
+使用 U2F 工具将 nuttx.hex 转换为 UF2 格式：
 
 ```bash
 python3 uf2/utils/uf2conv.py -c -f 0xADA52840 -i nuttx.hex -o nuttx.uf2
 ```
 
-将固件加载到您的开发板，并将 USB-to-Serial 连接到 TX 和 RX 引脚，然后运行一个串行通信程序，例如 minicom 或 picocom：
+将固件加载到您的板子中，并将 USB 转串口连接到 TX 和 RX 引脚，然后运行串口通信程序，如 minicon 或 picocom：
 
 ```bash
 picocom -b 115200 /dev/ttyUSB0
@@ -134,7 +130,7 @@ NuttShell (NSH) NuttX-12.8.0
 nsh> 
 ```
 
-输入 `?`，您将访问可用的命令和内置应用程序选项。
+输入 `?`，您将访问命令和内置应用程序的可用选项。
 
 ```bash
 nsh> ?
@@ -154,20 +150,20 @@ Builtin Apps:
     getprime    hello       nsh         ostest      sh 
 ```
 
-让我们向 NuttX 打个招呼，输入 `hello`，然后它会执行命令：
+让我们向 NuttX 问好，输入 `hello`，然后它执行命令：
 
 ```bash
 nsh> hello
 Hello, World!!
 ```
 
-恭喜您，您已经完成了与 NuttX 的第一次交互。
+恭喜，您与 NuttX 的第一次交互已完成。
 
 ### USBNSH
 
-与 NSH 配置类似，但使用 CDC/ACM 串口（控制台启用在 USB 端口，速率为 115200 bps）。
+类似于 NSH 配置，但使用 CDC/ACM 串口（在 USB 端口启用控制台，115200 bps）。
 
-我们可以通过清除之前的配置开始构建过程：
+我们可以通过清除之前的配置来开始构建过程
 
 ```bash
 cd ~/nuttxspace/nuttx
@@ -180,25 +176,25 @@ make distclean
 ./tools/configurate.sh xiao-nrf52840:usbnsh
 ```
 
-编译源代码：
+编译源代码。
 
 ```bash
 make -j
 ```
 
-将 nuttx.hex 转换为 UF2 格式使用 U2F 工具：
+使用 U2F 工具将 nuttx.hex 转换为 UF2 格式：
 
 ```bash
 python3 uf2/utils/uf2conv.py -c -f 0xADA52840 -i nuttx.hex -o nuttx.uf2
 ```
 
-将固件加载到您的开发板中，运行一个串行通信程序，例如 minicon 或 picocom：
+将固件加载到您的板子中，运行串口通信程序，如 minicon 或 picocom：
 
 ```bash
 picocom -b 115200 /dev/ttyACM0
 ```
 
-您需要按下 Enter 键 3 次，然后终端中会显示以下消息：
+您必须按 Enter 键 3 次，然后此消息将在终端中显示。
 
 ```bash
 NuttShell (NSH) NuttX-12.8.0
@@ -207,14 +203,14 @@ nsh>
 
 ### JUMBO
 
-此配置启用了两个示例应用程序：gpio 和 leds。通用输入/输出 (GPIO) 是微控制器最基本的部分，允许它与外部世界连接。通过这种方式，我们将使用 NSH 来访问和配置这些引脚。但首先，让我们清除之前的配置。
+此配置启用两个示例应用程序：gpio 和 leds。通用输入/输出（GPIO）是微控制器最基本的部分，允许它连接到外部世界。这样我们将使用 NSH 来访问和配置这些引脚。但首先，让我们清除之前的配置。
 
 ```bash
 cd ~/nuttxspace/nuttx
 make distclean
 ```
 
-为 xiao-nrf52840 开发板选择 jumbo 配置。
+为 xiao-nrf52840 板选择 jumbo 配置。
 
 ```bash
 ./tools/configurate.sh xiao-nrf52840:jumbo
@@ -226,20 +222,20 @@ make distclean
 make -j
 ```
 
-将固件加载到您的开发板中，运行一个串行通信程序，例如 minicon 或 picocom：
+将固件加载到您的板子中，运行串口通信程序，如 minicon 或 picocom：
 
 ```bash
 picocom -b 115200 /dev/ttyACM0
 ```
 
-您需要按下 Enter 键 3 次，然后终端中会显示以下消息：
+您必须按 Enter 键 3 次，然后此消息将在终端中显示。
 
 ```bash
 NuttShell (NSH) NuttX-12.8.0
 nsh>
 ```
 
-要检查与此应用程序交互的可接受选项，请输入 `gpio -h`，它将返回参数列表。
+要检查与此应用程序交互接受哪些选项，输入 `gpio -h`，它将返回参数列表。
 
 ```bash
 NuttShell (NSH) NuttX-12.8.0
@@ -266,7 +262,7 @@ IO_INPUT_PIN_PULLDOWN
  10: GPIO_INTERRUPT_BOTH_PIN
 ```
 
-要确认 GPIO 设备文件已创建，请输入 `ls/dev`。输入后，您可以看到一些 GPIO 已在 [xiao-nrf52840.h](https://github.com/apache/nuttx/blob/5b9d535ce6d7089a55742a748d7111f31ec74204/boards/arm/nrf52/xiao-nrf52840/src/xiao-nrf52840.h#L61) 中声明，具体表示如下：
+要确认 GPIO 设备文件已创建，输入 `ls/dev`。输入后，您可以看到一些 gpio 被声明定义在 [xiao-nrf52840.h](https://github.com/apache/nuttx/blob/5b9d535ce6d7089a55742a748d7111f31ec74204/boards/arm/nrf52/xiao-nrf52840/src/xiao-nrf52840.h#L61) 中，它们代表：
 
 - 板载 RGB LED：
 
@@ -275,9 +271,9 @@ IO_INPUT_PIN_PULLDOWN
   - RGB_BLUE  -> P0.06
 
 - GPIOs
-  - 1 输入          - P0.02(/dev/gpio0)
-  - 1 中断输入      - P0.03(/dev/gpio2)
-  - 1 输出          - P0.28(/dev/gpio1)
+  - 1 个输入          - P0.02(/dev/gpio0)
+  - 1 个中断输入 - P0.03(/dev/gpio2)
+  - 1 个输出          - P0.28(/dev/gpio1)
 
 ```bash
 nsh> ls /dev
@@ -293,7 +289,7 @@ nsh> ls /dev
 nsh> 
 ```
 
-按照以下命令读取 gpio0 和 gpio2（带中断）并写入 gpio1。
+按照这些命令读取 gpio0 和 gpio2（带中断）并写入 gpio1。
 
 ```bash
 nsh> gpio /dev/gpio0
@@ -315,7 +311,7 @@ Driver: /dev/gpio2
   Verify:        Value=1
 ```
 
-USERLEDS 是一个子系统，允许通过单一操作控制 LED。此外，您可以使用类似 printf 的命令行。在此演示中，我们将每隔 1 秒打开和关闭板载 RGB LED。
+USERLEDS 是一个允许通过单一操作控制 LED 的子系统。此外，您可以使用像 printf 这样的命令行。在此演示中，我们将每 1 秒打开和关闭板载 RGB LED。
 
 输入 `leds`，您会观察到 LED 同时闪烁。
 
@@ -337,7 +333,7 @@ led_daemon: LED set 0x06
 led_daemon: LED set 0x07
 ```
 
-查看下面的视频，了解 gpio 和 leds 示例的演示：
+查看下面的 gpio 和 leds 示例演示视频：
 
 <div style={{ maxWidth: '100%', textAlign: 'center' }}>
   <video style={{ width: '100%', height: 'auto' }} controls>
@@ -345,16 +341,17 @@ led_daemon: LED set 0x07
   </video>
 </div>
 
-有关 NuttX RTOS 的更多信息，请访问 [NuttX 文档](https://nuttx.apache.org/docs/latest/index.html)。
+
+有关 NuttX RTOS 的更多信息，请访问 [NuttX 文档](https://nuttx.apache.org/docs/latest/index.html)
 
 ## ✨ 贡献者项目
 
 - 此项目由 Seeed Studio [贡献者项目](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) 支持。
-- 特别感谢 [Rodrigo](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=92947609) 的辛勤努力。您的工作将被 [展示](https://wiki.seeedstudio.com/contributors/)。
+- 特别感谢 [Rodrigo](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=92947609) 的专注努力。您的工作将被[展示](https://wiki.seeedstudio.com/cn/contributors/)。
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>

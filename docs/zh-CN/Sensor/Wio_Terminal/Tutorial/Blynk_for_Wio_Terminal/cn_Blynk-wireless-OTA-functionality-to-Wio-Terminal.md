@@ -1,44 +1,43 @@
 ---
-title: 适用于Blynk的WT OTA
+title: Wio Terminal 的 Blynk OTA 功能
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Blynk-wireless-OTA-functionality-to-Wio-Terminal/
+image: https://wiki.seeedstudio.com/cn/Blynk-wireless-OTA-functionality-to-Wio-Terminal/
 slug: /cn/Blynk-wireless-OTA-functionality-to-Wio-Terminal
 last_update:
-  date: 3/07/2024
-  author: jessie
+  date: 01/11/2022
+  author: gunengyu
 ---
+# 在 Wio Terminal 上使用 Blynk 无线 OTA 功能
 
-# 使用Blynk的无线OTA功能将Wio Terminal与Blynk平台集成
-
-在这篇文章中，我们将描述如何使用Blynk的无线OTA功能将Wio Terminal与Blynk平台集成。
+在本教程中，我们将介绍如何在 Wio Terminal 上使用 Blynk 无线 OTA 功能。
 
 - **什么是 Blynk**
 
-[**Blynk**](https://blynk.io/) 是一个新的平台，可以让您快速构建用于控制和监控硬件项目的界面，您可以从iOS和Android设备上进行操作。下载Blynk应用后，您可以创建一个项目仪表板，并将按钮、滑块、图表和其他小部件排列在屏幕上。
+[**Blynk**](https://blynk.io/) 是一个新平台，允许您快速构建界面，从您的 iOS 和 Android 设备控制和监控您的硬件项目。下载 Blynk 应用程序后，您可以创建项目仪表板，并在屏幕上排列按钮、滑块、图表和其他小部件。
 
 ## 所需硬件
 
 - [**Wio Terminal**](https://www.seeedstudio.com/Wio-Terminal-p-4509.html)
 
 - 手机
-- 从应用商店下载Blynk应用
-- WiFi连接
+- 从应用商店下载 Blynk 应用
+- WiFi
 
-## 从应用商店下载Blynk应用
+## 准备工作
 
-进入 [**Blynk 注册并登录**](https://blynk.cloud/dashboard/login) ，进入模板界面，创建一个新的模板。
+前往 [**Blynk 注册并登录**](https://blynk.cloud/dashboard/login)，进入模板界面，创建一个新模板。
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/1.png)
 
-然后编辑名称，选择设备和连接模式，本例中为 "Seeed Wio Terminal" 和 "WiFi" 。
+然后编辑名称并选择设备和连接模式，在本例中选择"Seeed Wio Terminal"和"WiFi"。
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/60.jpg)
 
-记下BLYNK_TEMPLATE_ID和BLYNK_DEVICE_NAME。
-在本示例中，它们分别为：
+记下 BLYNK_TEMPLATE_ID 和 BLYNK_DEVICE_NAME。
+在示例中，它们是：
 
-```C++
+```cpp
 #define BLYNK_TEMPLATE_ID "TMPLCc16MxA1"
 #define BLYNK_DEVICE_NAME "WioTerminal"
 ```
@@ -47,19 +46,19 @@ last_update:
 
 然后点击右上角的保存按钮。
 
-## 设置Arduino IDE并调整代码
+## 设置 Arduino IDE 并调整代码
 
-接下来，下载并在Arduino IDE中打开示例代码。
+接下来，在 Arduino IDE 中下载并打开示例代码。
 
 [**Edgent_Wio_Terminal_0-2.zip**](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/Edgent_Wio_Terminal_0-2.zip)
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/4.jpg)
 
-在开发板选项中选择Wio Terminal设备 ( [**参见 Wio Terminal wiki 页面**](https://blynk.cloud/dashboard/login) 了解如何在Arduino IDE中添加Wio Terminal）。
+从开发板选项中选择 Wio Terminal 设备（[**参见 Wio Terminal 教程页面**](https://blynk.cloud/dashboard/login) 了解如何在 Arduino IDE 中添加 Wio Terminal）。
 
-添加 [**blynk库**](https://github.com/blynkkk/blynk-library)
+添加 [**blynk-library**](https://github.com/blynkkk/blynk-library)
 
-在Arduino IDE库管理器中搜索并添加以下库文件：
+在 Arduino IDE 库管理器中搜索并添加以下库文件：
 
 - Seeed Arduino rpcunified
 - Seeed Arduino rpcWiFi
@@ -69,23 +68,23 @@ last_update:
 - ArduinoOTA
 - ArduinoHttpClient
 
-在代码的第16行和第17行中，填入系统刚生成的ID和NAME：
+在代码的第 16 和 17 行，填入系统刚刚生成的 ID 和 NAME：
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/5.jpg)
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/6.jpg)
 
-然后将代码编译并上传到Wio Terminal（如果在编译过程中缺少库文件，请在库管理器中搜索并下载它）。
+然后编译并将代码上传到 Wio Terminal（如果编译过程中缺少库文件，请在库管理器中搜索并下载）
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/7.png)
 
-程序成功上传后，打开串口监视器，并将波特率设置为115200。等待5-10秒钟。串口显示以下信息：（如果串口监视器没有响应，请尝试重新连接数据线并重新打开串口监视器。）
+程序成功上传后，打开串口监视器并将波特率设置为 115200。等待 5-10 秒。串口显示以下信息：（如果串口监视器没有响应，请尝试重新连接数据线并重新打开串口监视器。）
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/8.jpg)
 
-## 移动应用程序设置
+## 移动应用设置
 
-下载Blynk IoT应用程序：
+下载 Blynk IoT 应用：
 
 Android: [https://play.google.com/store/apps/details?id=cloud.blynk&hl=en_IN&gl=US](https://play.google.com/store/apps/details?id=cloud.blynk&hl=en_IN&gl=US)
 
@@ -101,16 +100,17 @@ IOS: [https://apps.apple.com/us/app/blynk-iot/id1559317868](https://apps.apple.c
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/xinshouji4454.png)
 
-在APP配置成功后，串口监视器将提示网络连接状态。当显示'Ready'时，表示WiFi连接成功。
+应用配置成功后，串口监视器将提示网络连接状态。当显示"Ready"时，WiFi 连接成功。
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/21.jpg)
 
-现在是时候尝试OTA功能了。
+现在是时候尝试 OTA 功能了。
 
-## OTA：更新BLYNK_FIRMWARE_VERSION
+## OTA：更新 BLYNK_FIRMWARE_VERSION
 
-您可以在"edgent_wio_terminal_0-2"中编写个人程序，其中包含"void setup()"和"void loop()"。在本例中，为了演示的目的，我们将直接更改程序的版本信息。如果程序成功上传，版本信息将发生变化。
-我们将BLYNK_FIRMWARE_VERSION从"0.2.0"更改为"0.2.11"。
+您可以在"edgent_wio_terminal_0-2"中编写个人程序，包含"void setup()"和"void loop()"。在这个示例中，为了演示方便，我们将直接更改程序的版本信息。如果程序成功上传，版本信息将会改变。
+我们将 BLYNK_FIRMWARE_VERSION 从"0.2.0"更改为"0.2.11"
+
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/22.jpg)
 
 然后点击"Export compiled Binary"并等待构建完成。
@@ -119,37 +119,37 @@ IOS: [https://apps.apple.com/us/app/blynk-iot/id1559317868](https://apps.apple.c
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/24.png)
 
-然后打开文件夹，进入BIN文件夹。
+然后打开文件夹并找到 BIN 文件。
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/25.jpg)
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/26.jpg)
 
-打开Blynk Air并在右上角选择"New Shipping"。在此屏幕上向下滑动，找到"Firmware"选项。
+打开 Blynk Air 并在右上角选择"New Shipping"。在此屏幕上向下点击找到"Firmware"选项。
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/27.jpg)
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/28.jpg)
 
-在这里选择刚刚生成的bin文件，您会看到软件版本已经更改为我们刚刚设置的"0.2.11"。然后点击右下角的"Start Shipping"按钮开始无线上传程序。
+在这里选择您刚刚生成的 bin 文件，您将看到软件版本已更改为我们刚刚设置的"0.2.11"。然后点击右下角的"Start Shipping"按钮开始无线上传程序。
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/29.jpg)
 
-您可以在网页或串口监视器上实时查看上传情况。
+您可以在网页上或串口监视器上看到实时上传。
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/30.jpg)
 
-如果您的串口监视器没有输出，请等待大约2分钟，然后尝试重新启动设备并再次打开串口监视器，您将实时看到上传情况。
+等待大约 2 分钟，如果您的串口监视器没有输出，请尝试重启设备并再次打开串口监视器，您将看到实时上传。
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/31.jpg)
 
-重新启动设备，您会看到软件版本在此处已经更改为我们刚刚修改的"0.2.11"。
+重启设备，您可以看到这里的软件版本已经更改为我们刚刚更改的"0.2.11"。
 
 ![](https://files.seeedstudio.com/wiki/Blynk-wireless-OTA-functionality-to-Wio-Termina/32.jpg)
 
-## 技术支持 & 产品讨论
+## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供不同的支持，以确保您对我们的产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

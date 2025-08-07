@@ -1,5 +1,5 @@
 ---
-description:  音频场景识别
+description: 音频场景识别
 title: 音频场景识别
 keywords:
 - Wio_terminal 
@@ -8,52 +8,52 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-TinyML-EI-3
 last_update:
-  date: 3/05/2024
-  author: 金菊
+  date: 1/30/2023
+  author: jianjing Huang
 ---
 
-# Wio Terminal Edge Impulse音频场景识别与内置麦克风
+# Wio Terminal Edge Impulse 使用内置麦克风进行音频场景识别
 
-在这个项目中，我们将学习如何使用Wio Terminal和Edge Impulse训练和部署音频场景分类器。
-有关更多详细信息和视频教程，请观看相应的视频！
+在这个项目中，我们将学习如何使用 Wio Terminal 和 Edge Impulse 训练和部署音频场景分类器。
+更多详细信息和视频教程，请观看相应的视频！
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2BISspenUng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 计算机中的声音处理
 
-音频场景分类是一个任务，机器学习模型需要为音频片段预测一个类别，例如“哭泣的婴儿”，“咳嗽声”，“狗叫声”等。
+音频场景分类是一项任务，机器学习模型需要为音频片段预测一个类别，例如"婴儿哭声"、"咳嗽声"、"狗叫声"等。
 
-声音是作为声波通过气体、液体或固体等传输介质传播的振动。
+声音是一种振动，以声波的形式通过传输介质（如气体、液体或固体）传播。
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/G2lY2zl.gif"/></div>
-声音的来源推动周围的介质分子，它们推动旁边的分子，依此类推。当它们达到其他物体时，它也会轻微振动 - 我们在麦克风中使用了这个原理。麦克风膜片被介质分子向内推，然后回到原来的位置。
+声源推动周围介质分子，它们推动相邻的分子，如此循环往复。当它们到达其他物体时，该物体也会轻微振动——我们在麦克风中使用这一原理。麦克风膜片被介质分子向内推动，然后回到原始位置。
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/mic-working.gif"/></div>
-这在电路中产生交流电流，其中电压与声音幅度成比例 - 声音越大，它推动膜片的程度就越大，从而产生更高的电压。然后我们用模数转换器读取这个电压，并以相等的间隔记录 - 我们在一秒钟内对声音进行测量的次数称为采样率，例如8000 Hz的采样率是每秒进行8000次测量。采样率对声音的质量明显很重要 - 如果我们采样得太慢，可能会错过重要的部分。用于数字录音的数字也很重要 - 使用的数字范围越大，我们可以从原始声音中保留的“细微差别”就越多。这就是所谓的音频位深度 - 你可能听说过8位音频和16位音频这样的术语。好吧，它正好是字面上所说的 - 对于8位音频，使用无符号的8位整数，其范围为0到255。对于16位音频，使用带符号的16位整数，范围为-32768到32767。好了，最后我们得到一串数字，较大的数字对应声音的响亮部分，我们可以像这样可视化它 - 这是以8000 Hz频率和8位深度（0-255）记录的1秒枪声的声音。
+这在电路中产生交流电，其中电压与声音振幅成正比——声音越大，对膜片的推动越强，从而产生更高的电压。然后我们用模数转换器读取这个电压，并以相等的间隔记录——我们每秒测量声音的次数称为采样率，例如 8000 Hz 采样率是每秒测量 8000 次。采样率显然对声音质量很重要——如果我们采样太慢，可能会错过重要的部分。用于数字录音的数字范围也很重要——使用的数字范围越大，我们能从原始声音中保留的"细节"就越多。这称为音频位深度——你可能听过 8 位声音和 16 位声音这样的术语。嗯，这正如字面意思——对于 8 位声音，使用无符号 8 位整数，范围从 0 到 255。对于 16 位声音，使用有符号 16 位整数，即 -32768 到 32767。好的，最终我们得到一串数字，较大的数字对应声音的响亮部分，我们可以这样可视化它——这是以 8000 Hz 频率、8 位深度（0-255）录制的 1 秒枪声。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/Capture1.PNG"/></div>
 
-然而，我们不能对这种原始声音表示做太多处理 - 是的，我们可以剪切和粘贴部分或使其更柔和或更响亮，但是对于分析声音来说，它太原始了。在这里，傅里叶变换、梅尔刻度、频谱图和倒谱系数派上用场。对于这个项目，我们将傅里叶变换定义为一种数学变换，它允许我们将信号分解为各个频率和频率幅度。
+不过，我们无法对这种原始声音表示做太多处理——是的，我们可以剪切和粘贴部分或使其更安静或更响亮，但对于分析声音来说，它太原始了。这就是傅里叶变换、梅尔刻度、频谱图和倒谱系数发挥作用的地方。在这个项目中，我们将傅里叶变换定义为一种数学变换，它允许我们将信号分解为其各个频率和频率的振幅。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/1 xTYCtcx_7otHVu-uToI9dA.png"/></div>
 
-或者，如果你愿意使用一个比喻 - 给定一个冰沙，它输出配方。
+或者，如果你想用一个比喻——给定奶昔，它输出配方。
 
-关于傅里叶变换有很多互联网上的资料，例如 [来自 betterexplained.com 的文章](https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/) 和 [ 3Blue1Gray 的视频](https://youtu.be/spUNpyF58BY)  - 查看它们以了解更多关于FFT的信息。
+互联网上有很多关于傅里叶变换的材料，例如[betterexplained.com 的这篇文章](https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/)和[3Blue1Gray 的视频](https://youtu.be/spUNpyF58BY)——查看它们以了解更多关于 FFT 的信息。
 
-这是应用傅里叶变换后我们的声音的样子 - 较高的柱状图对应较大的振幅频率。
+这是我们的声音应用傅里叶变换后的样子——较高的条形对应较大振幅的频率。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/Capture2.PNG"/></div>
 
-太棒了！现在我们可以用音频信号做更有趣的事情了 - 例如消除最不重要的频率以压缩音频文件，去除噪声或声音，等等。但是对于音频和语音识别来说，这仍然不够好 - 通过进行傅里叶变换，我们失去了所有的时间域信息，这对于非周期性信号（例如人类语音）不利。然而，我们是聪明的人，只需在信号样本上多次进行傅里叶变换，实质上将其切片，然后将多次傅里叶变换的数据拼接在一起，形成频谱图。
+太好了！现在我们可以对音频信号做更有趣的事情——例如消除最不重要的频率来压缩音频文件，或者去除噪音，或者可能是语音声音等。但这对于音频和语音识别仍然不够好——通过进行傅里叶变换，我们失去了所有时域信息，这对于非周期信号（如人类语音）不好。不过我们很聪明，只是在信号样本上多次进行傅里叶变换，本质上是切片，然后以频谱图的形式将来自多个傅里叶变换的数据重新拼接在一起。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/1 tIBRdtG3EfjmSIlraWVIxw.png"/></div>
 
-在这里，x轴表示时间，y轴表示频率，频率的幅度通过颜色来表示，较亮的颜色对应较大的振幅。
+这里 x 轴是时间，y 轴是频率，频率的振幅通过颜色表达，较亮的颜色对应较大的振幅。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/Capture3.PNG"/></div>
 
-非常好！现在我们可以进行声音识别吗？是的！不是！可能！
-普通的频谱图包含了太多的信息，如果我们只关心人耳能听到的声音。研究表明，人类对频率的感知并不是线性的。我们在低频率上检测差异比在高频率上更好。例如，我们可以轻松区分500和1000 Hz之间的差异，但是我们几乎无法区分10000和10500 Hz之间的差异，尽管两对之间的距离相同。
-1937年，斯蒂文斯、沃尔克曼和纽曼提出了一个基于音高的单位，使得音高上的等距离听起来对听众来说听起来同样远。这被称为梅尔刻度。
+很好！我们现在可以进行声音识别了吗？不！是的！也许！
+如果我们只关心识别人耳能听到的声音，普通频谱图包含太多信息。研究表明，人类不会在线性尺度上感知频率。我们更善于检测低频率的差异而不是高频率的差异。例如，我们可以轻易分辨 500 和 1000 Hz 之间的差异，但我们几乎无法分辨 10000 和 10500 Hz 之间的差异，尽管两对之间的距离相同。
+1937 年，Stevens、Volkmann 和 Newmann 提出了一个音调单位，使得音调中相等的距离对听者来说听起来同样遥远。这称为梅尔刻度。
 
 <div align="center"><img width ={400} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/1 erUKb2-Z-Wi_u8JWel6cDQ.gif"/></div>
 
@@ -61,37 +61,37 @@ last_update:
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/Capture4.PNG"/></div>
 
-对于识别语音还涉及到更多的步骤 - 例如上面提到的倒谱系数，我们将在以后的项目中讨论它们。现在是时候开始实际实施了。
+语音识别涉及更多步骤——例如我们上面提到的倒谱系数——我们将在后续项目中讨论它们。现在是时候开始实际实现了。
 
-## 获取训练数据
+## 训练数据采集
 
-音频信号需要以非常高的采样率进行采样，8000 Hz或者理想情况下是16000 Hz。Edge Impulse Data Forwarder工具处理这种采样率太慢，所以我们需要使用专门的数据收集固件来获取此项目的数据。下载一个具有麦克风支持的新版本Wio Terminal Edge Impulse固件，并将其烧录到你的设备上，如 [Getting started with Edge Impulse](#) 所述。然后在Edge Impulse平台上创建一个新项目，启动边缘推导服务。
+音频信号需要以非常高的采样率进行采样，8000 Hz 或理想情况下 16000 Hz。Edge Impulse 数据转发器工具太慢，无法处理这种采样率，因此我们需要使用专用的数据收集固件来获取此项目的数据。下载支持麦克风的新版本 Wio Terminal Edge Impulse 固件并将其刷入您的设备，如[Edge Impulse 入门](#)页面所述。之后在 Edge Impulse 平台上创建一个新项目，启动 edge-impulse 摄取服务
 
 ```
 edge-impulse-daemon
 ```
 
-如果你之前使用过edge-impulse-daemon，请在上述命令中添加--clean以清除项目数据。
+如果您之前使用过 edge-impulse-daemon，您需要在上述命令中添加 --clean 来清理项目数据。
 
-然后使用你的凭据登录，并选择你刚创建的项目。转到数据采集选项卡，你就可以开始获取数据样本了。
+然后使用您的凭据登录并选择您刚刚创建的项目。转到数据采集选项卡，您就可以开始获取数据样本了。
 
-我们将有三个类别的数据:
+我们将有三类数据：
 
-• background
+• background（背景）
 
-• coughing
+• coughing（咳嗽）
 
-•  crying
+• crying（哭泣）
 
-为每个类别记录10个样本，每个样本持续时间为5000毫秒。你可以录制从计算机扬声器播放的声音（除了背景类别），但如果你有机会录制真实的声音，那将更好。
+为每个类别录制 10 个样本，每个持续时间为 5000 毫秒。您可以录制从计算机扬声器播放的声音（背景类别除外），但如果您有机会录制真实的声音，那会更好。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/cough.png"/></div>
 
-对于背景类别，录制一些不应被分类为咳嗽或哭泣的声音，例如人们交谈、无声音、空调/风扇等等。
+对于背景类别，录制不应被分类为咳嗽或哭泣的声音，例如人们说话、无声音、空调/风扇等等。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/cough_p.png"/></div>
 
-30个样本太少了，所以我们还将上传更多的数据。只需从互联网上下载声音，将其重新采样为16000 Hz，并以.wav格式保存，使用这个转换脚本。
+30 个样本数量极少，所以我们还要上传更多数据。只需从互联网下载声音，将它们重新采样到 16000 Hz，并使用此转换器脚本将它们保存为 .wav 格式
 
 ```python
 import librosa 
@@ -105,10 +105,11 @@ print(data.shape, samplerate)
 sf.write(output_filename, data, samplerate, subtype='PCM_16')
 ```
 
-将代码复制并粘贴到一个文本文档中（使用Notepad++、IDLE IDE或其他适合的IDE。不要使用Windows默认的记事本）
+复制代码并将其粘贴到文本文档中（使用 Notepad++、IDLE IDE 或其他合适的 IDE。不要使用 Windows 默认记事本）。
+
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/path.png"/></div>
 
-将文档保存为 ```converter.py``` ，然后从Anaconda环境中运行。
+将文档保存为 ```converter.py```，然后从 Anaconda 环境运行
 
 ```
 python converter.py name-of-the-downloaded-file class_name.number.wav
@@ -116,50 +117,51 @@ python converter.py name-of-the-downloaded-file class_name.number.wav
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/command.png"/></div>
 
-你可以在这个项目的Github存储库中找到已经转换为正确格式的示例声音文件。
-然后将所有声音样本拆分，只留下“有趣”的部分 - 对于每个类别都要这样做，除了背景。
+您可以在此项目的 Github 仓库中找到已转换为正确格式的示例声音文件。
+然后分割所有声音样本，只保留"有趣"的片段——对每个类别都这样做，除了背景类别。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/data.png"/></div>
 
-完成数据收集后，现在是选择处理块和定义神经网络模型的时候了。
+数据收集完成后，就该选择处理块并定义我们的神经网络模型了。
 
 ## 构建机器学习模型
 
-在处理块中，我们看到三个熟悉的选项 - Raw（原始数据）、Spectral Analysis（信号的傅里叶变换）、Spectrogram（频谱图）和MFE（梅尔频率能量），它们对应于我们之前描述的音频处理的四个阶段！
+在处理块中，我们看到三个熟悉的选项——即原始数据、频谱分析（本质上是信号的傅里叶变换）、频谱图和 MFE（梅尔频率能量库）——这对应于我们之前描述的音频处理的四个阶段！
+
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/data_process.jpeg"/></div>
 
-如果您喜欢尝试实验，您可以尝试将它们全部应用于您的数据，除了"Raw"，因为对于我们相对较小的神经网络来说，它的数据量太大了。在这个任务中，我们只选择最适合的选项，即MFE或Mel-Frequency Energy banks。在计算完特征之后，转到NN分类器选项卡，并选择适合的模型架构。我们有两个选择，分别是使用1D Conv和2D Conv。两者都可以，但如果可能，我们应该始终选择较小的模型，因为我们希望将其部署到嵌入式设备上。在编写本课程材料时，我们进行了4个不同的实验，包括使用MFE和MFCC特征的1D Conv/2D Conv。它们的结果在以下表格中。
+如果您喜欢实验，可以尝试在您的数据上使用所有这些选项，除了可能的原始数据，因为对于我们相对较小的神经网络来说，原始数据会有太多数据。在本课程中，我们将选择最适合此任务的选项，即 MFE 或梅尔频率能量库。计算特征后，转到 NN 分类器选项卡并选择合适的模型架构。我们有两个选择：使用 1D 卷积和 2D 卷积。两者都可以工作，但如果可能的话，我们应该始终选择较小的模型，因为我们希望将其部署到嵌入式设备上。在编写本课程材料时，我们进行了 4 个不同的实验，使用 MFE 和 MFCC 特征的 1D 卷积/2D 卷积，结果如下表所示。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/table.PNG"/></div>
 
-最佳模型是使用MFE处理块的1D Conv网络。通过调整MFE参数（即将步长增加到0.02并将低频率降低到0），我们在验证数据集上实现了89.4%的准确率。
+最佳模型是使用 MFE 处理块的 1D 卷积网络。通过调整 MFE 参数（即将步长增加到 0.02 并将低频降低到 0），我们在验证数据集上达到了 89.4% 的准确率。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/accuracy.png"/></div>
 
-您可以在[此处](https://studio.edgeimpulse.com/public/25382/latest)找到训练好的模型并自行测试。尽管它在区分哭声和背景声音方面表现良好，但咳嗽声音的检测准确率稍低，可能需要获取更多样本。
+您可以在[这里](https://studio.edgeimpulse.com/public/25382/latest)找到训练好的模型并自己测试。虽然它很擅长区分哭声和背景声音，但咳嗽声检测的准确率有点低，可能需要获取更多样本。
 
-## 部署到Wio Terminal
+## 部署到 Wio Terminal
 
-在我们拥有模型并对其在训练中的准确性感到满意后，我们可以在"实时分类"选项卡中对其进行新数据的测试，然后将其部署到Wio Terminal。我们将其下载为Arduino库，放置在Arduino库文件夹中，并打开Examples -> 您的项目名称 -> nano_33_ble_sense_microphone_continuous。该演示基于Arduino Nano 33 BLE，并使用了PDM库。对于Wio Terminal，我们将依靠DMA（直接内存访问控制器）从ADC（模数转换器）获取样本，并将其保存到推断缓冲区，而不涉及MCU。
+在我们有了模型并对其训练准确率满意后，我们可以在实时分类选项卡中用新数据测试它，然后将其部署到 Wio Terminal。我们将其下载为 Arduino 库，放入 Arduino 库文件夹，并打开示例 -> 您的项目名称 -> nano_33_ble_sense_microphone_continuous。该演示基于 Arduino Nano 33 BLE 并使用 PDM 库。对于 Wio Terminal，我们将依靠 DMA 或直接内存访问控制器从 ADC（模数转换器）获取样本并将其保存到推理缓冲区，而无需 MCU 参与。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/dma.jpeg"/></div>
 
-这将使我们能够同时收集声音样本并进行推断。为了更改从PDM库到DMA的音频数据收集方式，我们需要进行一些更改。如果在解释过程中感到有些困惑，请查看完整的示例代码，您可以在课程材料中找到。
-从代码中删除PDM库。
+这将允许我们同时收集声音样本和执行推理。为了将声音数据收集从 PDM 库更改为 DMA，我们需要进行相当多的更改，如果您在解释过程中感到有点迷失，请查看完整的示例代码，您可以在课程材料中找到它。
+从草图中删除 PDM 库
 
 ```cpp
 #include <PDM.h>
 ```
 
-在最后的包含语句之后，添加DMA描述符结构和其他设置常量。
+在最后一个include语句之后添加DMA描述符结构和其他设置常量
 
 ```cpp
-// Settings
-#define DEBUG 1                 // Enable pin pulse during ISR  
-enum {ADC_BUF_LEN = 4096};    // Size of one of the DMA double buffers
-static const int debug_pin = 1; // Toggles each DAC ISR (if DEBUG is set to 1)
+// 设置
+#define DEBUG 1                 // 在 ISR 期间启用引脚脉冲  
+enum {ADC_BUF_LEN = 4096};    // DMA 双缓冲区之一的大小
+static const int debug_pin = 1; // 每次 DAC ISR 时切换（如果 DEBUG 设置为 1）
 
-// DMAC descriptor structure
+// DMAC 描述符结构
 typedef struct {
   uint16_t btctrl;
   uint16_t btcnt;
@@ -167,22 +169,23 @@ typedef struct {
   uint32_t dstaddr;
   uint32_t descaddr;
 } dmacdescriptor;
+
 ```
 
-然后，在设置函数之前，创建用于缓冲区数组的变量、用于在ISR回调和主代码之间传递值的易失性变量，以及高通Butterworth滤波器，我们将应用于信号以消除麦克风信号中的大部分直流分量。
+然后在 setup 函数之前创建缓冲区数组的变量、用于在 ISR 回调和主代码之间传递值的 volatile 变量，以及高通巴特沃斯滤波器，我们将应用它来消除麦克风信号中的大部分直流分量。
 
 ```cpp
-// Globals - DMA and ADC
+// 全局变量 - DMA 和 ADC
 volatile uint8_t recording = 0;
 volatile boolean results0Ready = false;
 volatile boolean results1Ready = false;
-uint16_t adc_buf_0[ADC_BUF_LEN];    // ADC results array 0
-uint16_t adc_buf_1[ADC_BUF_LEN];    // ADC results array 1
-volatile dmacdescriptor wrb[DMAC_CH_NUM] __attribute__ ((aligned (16)));          // Write-back DMAC descriptors
-dmacdescriptor descriptor_section[DMAC_CH_NUM] __attribute__ ((aligned (16)));    // DMAC channel descriptors
-dmacdescriptor descriptor __attribute__ ((aligned (16)));                         // Place holder descriptor
+uint16_t adc_buf_0[ADC_BUF_LEN];    // ADC 结果数组 0
+uint16_t adc_buf_1[ADC_BUF_LEN];    // ADC 结果数组 1
+volatile dmacdescriptor wrb[DMAC_CH_NUM] __attribute__ ((aligned (16)));          // 写回 DMAC 描述符
+dmacdescriptor descriptor_section[DMAC_CH_NUM] __attribute__ ((aligned (16)));    // DMAC 通道描述符
+dmacdescriptor descriptor __attribute__ ((aligned (16)));                         // 占位符描述符
 
-//High pass butterworth filter order=1 alpha1=0.0125 
+//高通巴特沃斯滤波器 order=1 alpha1=0.0125 
 class  FilterBuHp1
 {
   public:
@@ -206,30 +209,30 @@ class  FilterBuHp1
 FilterBuHp1 filter;
 ```
 
-在此之后，添加三个代码块-第一个是回调函数，由ISR（中断服务例程）在每次填充其中一个缓冲区时调用。在该函数内部，我们从录音缓冲区中读取元素（刚刚填充的缓冲区），对其进行处理并放入推理缓冲区。
+在此之后添加三个代码块 - 第一个是回调函数，每当两个缓冲区之一被填满时由 ISR（中断服务程序）调用。在该函数内部，我们从录音缓冲区（刚刚被填满的那个）读取元素，处理它们并放入推理缓冲区。
 
 ```cpp
 /*******************************************************************************
- * Interrupt Service Routines (ISRs)
+ * 中断服务程序 (ISRs)
  */
 
 /**
- * @brief      Copy sample data in selected buf and signal ready when buffer is full
+ * @brief      在选定的缓冲区中复制采样数据，当缓冲区满时发出就绪信号
  *
- * @param[in]  *buf  Pointer to source buffer
- * @param[in]  buf_len  Number of samples to copy from buffer
+ * @param[in]  *buf  指向源缓冲区的指针
+ * @param[in]  buf_len  从缓冲区复制的采样数量
  */
 static void audio_rec_callback(uint16_t *buf, uint32_t buf_len) {
 
   static uint32_t idx = 0;
 
-  // Copy samples from DMA buffer to inference buffer
+  // 从DMA缓冲区复制采样到推理缓冲区
   if (recording) {
     for (uint32_t i = 0; i < buf_len; i++) {
   
-      // Convert 12-bit unsigned ADC value to 16-bit PCM (signed) audio value
+      // 将12位无符号ADC值转换为16位PCM（有符号）音频值
       inference.buffers[inference.buf_select][inference.buf_count++] = filter.step(((int16_t)buf[i] - 1024) * 16);
-      // Swap double buffer if necessary
+      // 必要时交换双缓冲区
       if (inference.buf_count >= inference.n_samples) {
         inference.buf_select ^= 1;
         inference.buf_count = 0;
@@ -240,130 +243,132 @@ static void audio_rec_callback(uint16_t *buf, uint32_t buf_len) {
 }
 ```
 
-下一个代码块包含ISR本身-它由定时器在一定时间间隔内执行，函数内部我们检查DMAC通道1是否已暂停-如果已暂停，意味着麦克风数据的一个缓冲区已满，我们需要从中复制数据，切换到另一个缓冲区并重新启动DMAC ADC。
+下一个代码块包含ISR本身 - 它由定时器在特定时间周期执行，在该函数内部我们检查DMAC通道1是否已被挂起 - 如果已被挂起，这意味着麦克风数据的其中一个缓冲区已满，我们需要从中复制数据，切换到另一个缓冲区并重启DMAC ADC。
 
 ```cpp
 /**
- * Interrupt Service Routine (ISR) for DMAC 1
+ * DMAC 1 的中断服务程序 (ISR)
  */
 void DMAC_1_Handler() {
 
   static uint8_t count = 0;
 
-  // Check if DMAC channel 1 has been suspended (SUSP)
+  // 检查 DMAC 通道 1 是否已被挂起 (SUSP)
   if (DMAC->Channel[1].CHINTFLAG.bit.SUSP) {
 
-     // Debug: make pin high before copying buffer
+     // 调试：在复制缓冲区之前将引脚设为高电平
 #if DEBUG
     digitalWrite(debug_pin, HIGH);
 #endif
 
-    // Restart DMAC on channel 1 and clear SUSP interrupt flag
+    // 重启 DMAC 通道 1 并清除 SUSP 中断标志
     DMAC->Channel[1].CHCTRLB.reg = DMAC_CHCTRLB_CMD_RESUME;
     DMAC->Channel[1].CHINTFLAG.bit.SUSP = 1;
 
-    // See which buffer has filled up, and dump results into large buffer
+    // 查看哪个缓冲区已满，并将结果转储到大缓冲区中
     if (count) {
       audio_rec_callback(adc_buf_0, ADC_BUF_LEN);
     } else {
       audio_rec_callback(adc_buf_1, ADC_BUF_LEN);
     }
 
-    // Flip to next buffer
+    // 切换到下一个缓冲区
     count = (count + 1) % 2;
 
-    // Debug: make pin low after copying buffer
+    // 调试：在复制缓冲区后将引脚设为低电平
 #if DEBUG
     digitalWrite(debug_pin, LOW);
 #endif
   }
 }
+
 ```
 
-下一个代码块包含ADC DMAC和控制ISR（中断服务例程）的定时器的配置数据。
+下一个代码块包含 ADC DMAC 和控制 ISR（中断服务程序）的定时器的配置数据
 
 ```cpp
-// Configure DMA to sample from ADC at regular interval
+// 配置DMA以定期从ADC采样
 void config_dma_adc() {
   
-  // Configure DMA to sample from ADC at a regular interval (triggered by timer/counter)
-  DMAC->BASEADDR.reg = (uint32_t)descriptor_section;                          // Specify the location of the descriptors
-  DMAC->WRBADDR.reg = (uint32_t)wrb;                                          // Specify the location of the write back descriptors
-  DMAC->CTRL.reg = DMAC_CTRL_DMAENABLE | DMAC_CTRL_LVLEN(0xf);                // Enable the DMAC peripheral
-  DMAC->Channel[1].CHCTRLA.reg = DMAC_CHCTRLA_TRIGSRC(TC5_DMAC_ID_OVF) |      // Set DMAC to trigger on TC5 timer overflow
-                                 DMAC_CHCTRLA_TRIGACT_BURST;                  // DMAC burst transfer
+  // 配置DMA以定期从ADC采样（由定时器/计数器触发）
+  DMAC->BASEADDR.reg = (uint32_t)descriptor_section;                          // 指定描述符的位置
+  DMAC->WRBADDR.reg = (uint32_t)wrb;                                          // 指定写回描述符的位置
+  DMAC->CTRL.reg = DMAC_CTRL_DMAENABLE | DMAC_CTRL_LVLEN(0xf);                // 启用DMAC外设
+  DMAC->Channel[1].CHCTRLA.reg = DMAC_CHCTRLA_TRIGSRC(TC5_DMAC_ID_OVF) |      // 设置DMAC在TC5定时器溢出时触发
+                                 DMAC_CHCTRLA_TRIGACT_BURST;                  // DMAC突发传输
                                  
-  descriptor.descaddr = (uint32_t)&descriptor_section[1];                     // Set up a circular descriptor
-  descriptor.srcaddr = (uint32_t)&ADC1->RESULT.reg;                           // Take the result from the ADC0 RESULT register
-  descriptor.dstaddr = (uint32_t)adc_buf_0 + sizeof(uint16_t) * ADC_BUF_LEN;  // Place it in the adc_buf_0 array
-  descriptor.btcnt = ADC_BUF_LEN;                                             // Beat count
-  descriptor.btctrl = DMAC_BTCTRL_BEATSIZE_HWORD |                            // Beat size is HWORD (16-bits)
-                      DMAC_BTCTRL_DSTINC |                                    // Increment the destination address
-                      DMAC_BTCTRL_VALID |                                     // Descriptor is valid
-                      DMAC_BTCTRL_BLOCKACT_SUSPEND;                           // Suspend DMAC channel 0 after block transfer
-  memcpy(&descriptor_section[0], &descriptor, sizeof(descriptor));            // Copy the descriptor to the descriptor section
+  descriptor.descaddr = (uint32_t)&descriptor_section[1];                     // 设置循环描述符
+  descriptor.srcaddr = (uint32_t)&ADC1->RESULT.reg;                           // 从ADC0 RESULT寄存器获取结果
+  descriptor.dstaddr = (uint32_t)adc_buf_0 + sizeof(uint16_t) * ADC_BUF_LEN;  // 将其放入adc_buf_0数组
+  descriptor.btcnt = ADC_BUF_LEN;                                             // 节拍计数
+  descriptor.btctrl = DMAC_BTCTRL_BEATSIZE_HWORD |                            // 节拍大小为HWORD（16位）
+                      DMAC_BTCTRL_DSTINC |                                    // 递增目标地址
+                      DMAC_BTCTRL_VALID |                                     // 描述符有效
+                      DMAC_BTCTRL_BLOCKACT_SUSPEND;                           // 块传输后挂起DMAC通道0
+  memcpy(&descriptor_section[0], &descriptor, sizeof(descriptor));            // 将描述符复制到描述符段
   
-  descriptor.descaddr = (uint32_t)&descriptor_section[0];                     // Set up a circular descriptor
-  descriptor.srcaddr = (uint32_t)&ADC1->RESULT.reg;                           // Take the result from the ADC0 RESULT register
-  descriptor.dstaddr = (uint32_t)adc_buf_1 + sizeof(uint16_t) * ADC_BUF_LEN;  // Place it in the adc_buf_1 array
-  descriptor.btcnt = ADC_BUF_LEN;                                             // Beat count
-  descriptor.btctrl = DMAC_BTCTRL_BEATSIZE_HWORD |                            // Beat size is HWORD (16-bits)
-                      DMAC_BTCTRL_DSTINC |                                    // Increment the destination address
-                      DMAC_BTCTRL_VALID |                                     // Descriptor is valid
-                      DMAC_BTCTRL_BLOCKACT_SUSPEND;                           // Suspend DMAC channel 0 after block transfer
-  memcpy(&descriptor_section[1], &descriptor, sizeof(descriptor));            // Copy the descriptor to the descriptor section
+  descriptor.descaddr = (uint32_t)&descriptor_section[0];                     // 设置循环描述符
+  descriptor.srcaddr = (uint32_t)&ADC1->RESULT.reg;                           // 从ADC0 RESULT寄存器获取结果
+  descriptor.dstaddr = (uint32_t)adc_buf_1 + sizeof(uint16_t) * ADC_BUF_LEN;  // 将其放入adc_buf_1数组
+  descriptor.btcnt = ADC_BUF_LEN;                                             // 节拍计数
+  descriptor.btctrl = DMAC_BTCTRL_BEATSIZE_HWORD |                            // 节拍大小为HWORD（16位）
+                      DMAC_BTCTRL_DSTINC |                                    // 递增目标地址
+                      DMAC_BTCTRL_VALID |                                     // 描述符有效
+                      DMAC_BTCTRL_BLOCKACT_SUSPEND;                           // 块传输后挂起DMAC通道0
+  memcpy(&descriptor_section[1], &descriptor, sizeof(descriptor));            // 将描述符复制到描述符段
 
-  // Configure NVIC
-  NVIC_SetPriority(DMAC_1_IRQn, 0);    // Set the Nested Vector Interrupt Controller (NVIC) priority for DMAC1 to 0 (highest)
-  NVIC_EnableIRQ(DMAC_1_IRQn);         // Connect DMAC1 to Nested Vector Interrupt Controller (NVIC)
+  // 配置NVIC
+  NVIC_SetPriority(DMAC_1_IRQn, 0);    // 将嵌套向量中断控制器（NVIC）的DMAC1优先级设置为0（最高）
+  NVIC_EnableIRQ(DMAC_1_IRQn);         // 将DMAC1连接到嵌套向量中断控制器（NVIC）
 
-  // Activate the suspend (SUSP) interrupt on DMAC channel 1
+  // 激活DMAC通道1上的挂起（SUSP）中断
   DMAC->Channel[1].CHINTENSET.reg = DMAC_CHINTENSET_SUSP;
 
-  // Configure ADC
-  ADC1->INPUTCTRL.bit.MUXPOS = ADC_INPUTCTRL_MUXPOS_AIN12_Val; // Set the analog input to ADC0/AIN2 (PB08 - A4 on Metro M4)
-  while(ADC1->SYNCBUSY.bit.INPUTCTRL);                // Wait for synchronization
-  ADC1->SAMPCTRL.bit.SAMPLEN = 0x00;                  // Set max Sampling Time Length to half divided ADC clock pulse (2.66us)
-  while(ADC1->SYNCBUSY.bit.SAMPCTRL);                 // Wait for synchronization 
-  ADC1->CTRLA.reg = ADC_CTRLA_PRESCALER_DIV128;       // Divide Clock ADC GCLK by 128 (48MHz/128 = 375kHz)
-  ADC1->CTRLB.reg = ADC_CTRLB_RESSEL_12BIT |          // Set ADC resolution to 12 bits
-                    ADC_CTRLB_FREERUN;                // Set ADC to free run mode       
-  while(ADC1->SYNCBUSY.bit.CTRLB);                    // Wait for synchronization
-  ADC1->CTRLA.bit.ENABLE = 1;                         // Enable the ADC
-  while(ADC1->SYNCBUSY.bit.ENABLE);                   // Wait for synchronization
-  ADC1->SWTRIG.bit.START = 1;                         // Initiate a software trigger to start an ADC conversion
-  while(ADC1->SYNCBUSY.bit.SWTRIG);                   // Wait for synchronization
+  // 配置ADC
+  ADC1->INPUTCTRL.bit.MUXPOS = ADC_INPUTCTRL_MUXPOS_AIN12_Val; // 将模拟输入设置为ADC0/AIN2（PB08 - Metro M4上的A4）
+  while(ADC1->SYNCBUSY.bit.INPUTCTRL);                // 等待同步
+  ADC1->SAMPCTRL.bit.SAMPLEN = 0x00;                  // 将最大采样时间长度设置为ADC时钟脉冲的一半（2.66us）
+  while(ADC1->SYNCBUSY.bit.SAMPCTRL);                 // 等待同步
+  ADC1->CTRLA.reg = ADC_CTRLA_PRESCALER_DIV128;       // 将ADC GCLK时钟除以128（48MHz/128 = 375kHz）
+  ADC1->CTRLB.reg = ADC_CTRLB_RESSEL_12BIT |          // 将ADC分辨率设置为12位
+                    ADC_CTRLB_FREERUN;                // 将ADC设置为自由运行模式
+  while(ADC1->SYNCBUSY.bit.CTRLB);                    // 等待同步
+  ADC1->CTRLA.bit.ENABLE = 1;                         // 启用ADC
+  while(ADC1->SYNCBUSY.bit.ENABLE);                   // 等待同步
+  ADC1->SWTRIG.bit.START = 1;                         // 启动软件触发以开始ADC转换
+  while(ADC1->SYNCBUSY.bit.SWTRIG);                   // 等待同步
 
-  // Enable DMA channel 1
+  // 启用DMA通道1
   DMAC->Channel[1].CHCTRLA.bit.ENABLE = 1;
 
-  // Configure Timer/Counter 5
-  GCLK->PCHCTRL[TC5_GCLK_ID].reg = GCLK_PCHCTRL_CHEN |        // Enable perhipheral channel for TC5
-                                   GCLK_PCHCTRL_GEN_GCLK1;    // Connect generic clock 0 at 48MHz
+  // 配置定时器/计数器5
+  GCLK->PCHCTRL[TC5_GCLK_ID].reg = GCLK_PCHCTRL_CHEN |        // 为TC5启用外设通道
+                                   GCLK_PCHCTRL_GEN_GCLK1;    // 连接48MHz的通用时钟0
    
-  TC5->COUNT16.WAVE.reg = TC_WAVE_WAVEGEN_MFRQ;               // Set TC5 to Match Frequency (MFRQ) mode
-  TC5->COUNT16.CC[0].reg = 3000 - 1;                          // Set the trigger to 16 kHz: (4Mhz / 16000) - 1
-  while (TC5->COUNT16.SYNCBUSY.bit.CC0);                      // Wait for synchronization
+  TC5->COUNT16.WAVE.reg = TC_WAVE_WAVEGEN_MFRQ;               // 将TC5设置为匹配频率（MFRQ）模式
+  TC5->COUNT16.CC[0].reg = 3000 - 1;                          // 将触发设置为16 kHz：(4Mhz / 16000) - 1
+  while (TC5->COUNT16.SYNCBUSY.bit.CC0);                      // 等待同步
 
-  // Start Timer/Counter 5
-  TC5->COUNT16.CTRLA.bit.ENABLE = 1;                          // Enable the TC5 timer
-  while (TC5->COUNT16.SYNCBUSY.bit.ENABLE);                   // Wait for synchronization
+  // 启动定时器/计数器5
+  TC5->COUNT16.CTRLA.bit.ENABLE = 1;                          // 启用TC5定时器
+  while (TC5->COUNT16.SYNCBUSY.bit.ENABLE);                   // 等待同步
 }
 ```
 
-在setup函数的顶部添加调试条件：
+在setup函数顶部添加调试条件：
 
 ```cpp
-  // Configure pin to toggle on DMA interrupt
+  // 配置引脚在DMA中断时切换
 #if DEBUG
   pinMode(debug_pin, OUTPUT);
 #endif
+
 ```
 
-然后在setup函数中，在run_classifier_init();之后添加以下代码，创建推理缓冲区，配置DMA并通过将易失性全局变量recording设置为1来开始录制。
+然后在setup函数中，在 run_classifier_init(); 之后添加以下代码，该代码创建推理缓冲区，配置DMA并通过将易失性全局变量recording设置为1来开始录制。
 
 ```cpp
-  // Create double buffer for inference
+  // 为推理创建双缓冲区
   inference.buffers[0] = (int16_t *)malloc(EI_CLASSIFIER_SLICE_SIZE * sizeof(int16_t));
   
   if (inference.buffers[0] == NULL) {
@@ -378,33 +383,33 @@ void config_dma_adc() {
     return;
   }
 
-  // Set inference parameters
+  // 设置推理参数
   inference.buf_select = 0;
   inference.buf_count = 0;
   inference.n_samples = EI_CLASSIFIER_SLICE_SIZE;
   inference.buf_ready = 0;
 
-  // Configure DMA to sample from ADC at 16kHz (start sampling immediately)
+  // 配置DMA以16kHz从ADC采样（立即开始采样）
   config_dma_adc();
 
-  // Start recording to inference buffers
+  // 开始录制到推理缓冲区
   recording = 1;
 }
 ```
 
-从 ```microphone_inference_end(void)``` 函数中删除 ```PDM.end();``` 和 ```free(sampleBuffer);``` ，以及```microphone_inference_start(uint32_t n_samples)```和 ```pdm_data_ready_inference_callback(void)``` 函数，因为我们不使用它们。 
-编译和上传代码后，打开串行监视器，您将看到打印出的每个类别的概率。播放一些声音或在Wio Terminal上咳嗽，以检查准确性！
+从 ```microphone_inference_end(void)``` 函数中删除 ```PDM.end();``` 和 ```free(sampleBuffer);```，同时也从 ```microphone_inference_start(uint32_t n_samples)``` 和 ```pdm_data_ready_inference_callback(void)``` 函数中删除，因为我们不会使用它们。
+编译并上传代码后，打开串口监视器，你将看到每个类别的概率被打印出来。在 Wio Terminal 前播放一些声音或咳嗽来检查准确性！
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/cough_r.png"/></div>
 
 ## Blynk 集成
 
-由于WioTerminal可以连接到互联网，我们可以将这个简单的演示变成一个真正的物联网应用程序，使用 [Blynk](https://blynk.io)。
+由于 WioTerminal 可以连接到互联网，我们可以将这个简单的演示制作成一个真正的物联网应用程序，使用 [Blynk](https://blynk.io)。
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/b641e2030c1c47fbc7161c98a7e5d998.jpg"/></div>
 
-Blynk是一个平台，允许您快速构建用于控制和监控硬件项目的iOS和Android设备的界面。在这种情况下，我们将使用Blynk来向我们的智能手机推送通知，如果Wio Terminal检测到任何我们应该担心的声音。
-要开始使用Blynk，请下载该应用程序，注册一个新帐户并创建一个新项目。向其中添加推送通知元素并按播放按钮。
+Blynk 是一个平台，允许你快速构建界面来从你的 iOS 和 Android 设备控制和监控你的硬件项目。在这种情况下，我们将使用 Blink 向我们的智能手机推送通知，如果 Wio Terminal 检测到任何我们应该担心的声音。
+要开始使用 Blink，请下载应用程序，注册一个新账户并创建一个新项目。向其中添加一个推送通知元素并按播放按钮。
 
 <div> <img width="{200}" align="left" src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/app1.png" />
 </div>
@@ -413,9 +418,9 @@ Blynk是一个平台，允许您快速构建用于控制和监控硬件项目的
 
 <p> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> </p>
 
-然后确保您已经按照 [此处指南](https://wiki.seeedstudio.com/Wio-Terminal-Blynk/)设置了Wio Terminal WiFi库和固件。按照该教程中所述下载Blynk库。
+然后确保你已经根据[这里的指南](https://wiki.seeedstudio.com/cn/Wio-Terminal-Blynk/)设置了 Wio Terminal WiFi 库和固件。按照该教程中概述的方法下载 Blynk 库。
 
-然后通过编译和上传简单的按钮示例来测试您的设置-确保更改WiFi SSID、密码和您在应用程序中获取的Blynk API令牌。
+然后通过编译和上传简单的按钮示例来测试你的设置——确保你更改了 WiFi SSID、密码和你的 Blynk API 令牌，你可以在应用程序中获取它。
 
 <div align="center"><img width ={200} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/app3.png"/></div>
 
@@ -431,8 +436,8 @@ void checkPin()
 {
   int isButtonPressed = !digitalRead(WIO_KEY_A);
   if (isButtonPressed) {
-    Serial.println("Button is pressed.");
-    Blynk.notify("Yaaay... button is pressed!");
+    Serial.println("按钮被按下。");
+    Blynk.notify("耶...按钮被按下了！");
   }
 }
 void setup()
@@ -448,19 +453,20 @@ void loop()
 }
 ```
 
-如果代码编译成功并且测试成功（按下Wio Terminal上的左上按钮会在您的手机上弹出推送通知），那么您可以继续下一阶段。
+如果代码编译成功且测试成功（按下 Wio Terminal 左上角的按钮会在你的手机上出现推送通知），那么你可以进入下一阶段。
 
 <div align="center"><img width ={200} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/button.png"/></div>
 
-我们将把所有的神经网络推理代码移动到一个单独的函数中，并在loop()函数中的Blynk.run()后调用它。与之前所做的类似，我们检查神经网络预测的概率，如果它们超过某个类别的阈值，我们调用Blynk.notify()函数，该函数会向您的移动设备推送通知。
+我们将把所有神经网络推理代码移到一个单独的函数中，并在 loop() 函数中紧接着 Blynk.run() 之后调用它。与我们之前所做的类似，我们检查神经网络预测概率，如果它们对于某个特定类别高于阈值，我们调用 Blynk.notify() 函数，正如你可能猜到的，它会向你的移动设备推送通知。
+
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-3/cough_a.png"/></div>
 
-在此项目的Github存储库中找到了完整的NN推理+ Blynk通知的代码。
+在此项目的 Github 仓库中找到 NN 推理 + Blynk 通知的完整代码。
 
-## 参考资料
+## 参考
 
 - [Edge Impulse 公共项目](https://studio.edgeimpulse.com/public/25382/latest)
 
-- [Project Github](https://github.com/Seeed-Studio/Seeed_Arduino_Sketchbook/tree/master/examples/WioTerminal_TinyML_2_Audio_Scene_Recognition)
+- [项目 Github](https://github.com/Seeed-Studio/Seeed_Arduino_Sketchbook/tree/master/examples/WioTerminal_TinyML_2_Audio_Scene_Recognition)
 
-- [使用 Wio Terminal进行声音录制的原始项目](https://github.com/ShawnHymel/ei-keyword-spotting/blob/master/embedded-demos/arduino/wio-terminal/wio-terminal.ino)
+- [使用 DMA ADC 与 Wio Terminal 进行声音录制的原始项目](https://github.com/ShawnHymel/ei-keyword-spotting/blob/master/embedded-demos/arduino/wio-terminal/wio-terminal.ino)

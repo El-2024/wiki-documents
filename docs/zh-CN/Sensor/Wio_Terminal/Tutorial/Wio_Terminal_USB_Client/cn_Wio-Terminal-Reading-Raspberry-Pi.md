@@ -1,42 +1,42 @@
 ---
-description: Reading Raspberry Pi's Info using Wio Terminal
-title: 使用Wio Terminal读取Raspberry Pi的系统状态
+description: 使用 Wio Terminal 读取树莓派信息
+title: 使用 Wio Terminal 读取树莓派信息
 keywords:
 - Wio_terminal USB_Client
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-Reading-Raspberry-Pi
 last_update:
-  date: 3/07/2024
-  author: jessie
+  date: 1/31/2023
+  author: jianjing Huang
 ---
 
-# 使用Wio Terminal读取Raspberry Pi的系统状态
+# 使用 Wio Terminal 读取树莓派系统状态
 
 ![](https://files.seeedstudio.com/wiki/Wio-Terminal/img/WT-rasp.gif)
 
-本wiki介绍如何使用Wio Terminal通过USB串行通信读取Raspberry Pi的系统状态。在这个示例中，Raspberry Pi将作为主机计算机，通过USB将其系统信息发送到串口。Wio Terminal将作为从设备接收传入的数据，并在其LCD屏幕上显示。
+本教程介绍如何通过 USB 串口通信使用 Wio Terminal 读取树莓派的系统状态。在此演示中，树莓派将作为主机，通过 USB 将其系统信息发送到串口。Wio Terminal 将作为从机，接收传入的数据并在其 LCD 屏幕上显示。
 
-## 部件清单
+## 器件清单
 
-- [Raspberry Pi](https://www.seeedstudio.com/Boards-c-17.html) （此处使用3B+）
+- [树莓派](https://www.seeedstudio.com/Boards-c-17.html)（此处使用 3B+）
 
 - [Wio Terminal](https://www.seeedstudio.com/Wio-Terminal-p-4509.html)
 
 - USB Type-C 数据线
 
-## 特点
+## 功能特性
 
-- 读取Raspberry Pi的系统状态
+- 读取树莓派系统状态
 
-- 在 Wio Terminal的屏幕上显示
+- 在 Wio Terminal 屏幕上显示
 
-## Raspberry Pi主机程序
+## 树莓派主机程序
 
-在Raspberry Pi上运行以下Python代码，通过USB串口将系统信息发送到Wio Terminal。
+在树莓派上运行以下 Python 代码，通过 USB 串口将系统信息发送到 Wio Terminal。
 
-**注:** 请确保Python代码中的串口设置正确，并根据您的设备进行更改。
+**注意：** 请确保 Python 代码中的串口设置正确，请根据您的设备进行更改。
 
-### Raspberry Pi上的Python代码
+### 树莓派上的 Python 代码
 
 ```py
 import os
@@ -133,29 +133,29 @@ if __name__ == '__main__':
 
 ## Arduino 代码
 
-### 所需的Arduino库
+### 所需的 Arduino 库
 
-- 安装LCD屏幕库 `Seeed_Arduino_LCD`, 请访问 [Wio Terminal LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) 获取更多信息。
+- 安装 LCD 屏幕库 `Seeed_Arduino_LCD`，请访问 [Wio Terminal LCD](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Overview/) 获取更多信息。
 
-- 下载 [`Free_Fonts.h`](https://files.seeedstudio.com/wiki/Wio-Terminal/res/Free_Fonts.h) 头文件，以便在LCD库中使用免费字体的缩写。请确保将此头文件放在与Arduino Sketch相同的位置。
+- 下载 [`Free_Fonts.h`](https://files.seeedstudio.com/wiki/Wio-Terminal/res/Free_Fonts.h) 头文件，以便可以使用 LCD 库中包含的免费字体的缩写。请确保将此头文件放在与 Arduino 草图相同的位置。
 
 ### 完整代码
 
-在 [此处](https://files.seeedstudio.com/wiki/Wio-Terminal/res/readRasp.ino) 下载完整代码。
+在[此处](https://files.seeedstudio.com/wiki/Wio-Terminal/res/readRasp.ino)下载完整代码。
 
-## 操作说明
+## 使用说明
 
-1. 将Arduino代码上传到Wio Terminal。上传完成后，它应该显示在启动屏幕上。
+1. 将 Arduino 代码上传到 Wio Terminal。上传完成后，应该会显示启动屏幕。
 
-2. 使用USB Type-C数据线将Wio Terminal连接到Raspberry Pi。
+2. 通过 USB Type-C 数据线将 Wio Terminal 连接到树莓派。
 
-3. 在Raspberry Pi上运行Python代码。
+3. 在树莓派上运行 Python 代码。
 
-4. 现在，您应该能够在Wio Terminal的LCD屏幕上看到Raspberry Pi的系统信息。
+4. 现在，您应该能够在 Wio Terminal 的 LCD 屏幕上看到树莓派的系统信息。
 
-## 技术支持 & 产品讨论
+## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供不同的支持，以确保您尽可能顺畅的体验我们的产品。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您对我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

@@ -1,54 +1,53 @@
 ---
-title: Wi-Fi连接
+title: Wi-Fi
 nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-Wi-Fi/
+image: https://wiki.seeedstudio.com/cn/Wio-Terminal-Wi-Fi/
 slug: /cn/Wio-Terminal-Wi-Fi
 last_update:
-  date: 3/11/2024
-  author: 金菊
+  date: 01/11/2022
+  author: gunengyu
 ---
+# Wi-Fi 连接
 
-# Wi-Fi连接
+本文档介绍如何使用 Realtek RTL8720 核心在 Wio Terminal 上配置 Wi-Fi 连接。
 
-本 wiki 介绍如何使用Realtek RTL8720核心在Wio Terminal上配置Wi-Fi连接。
-
-:::注
-        确保您已经按照网络概述中的说明操作， **更新了RTL8720的最新固件并下载了所需的Arduino库。**
+:::note
+        确保您已经完成了网络概述，**在 RTL8720 上更新了最新固件并下载了相关的 Arduino 库。**
 :::
 <div className="tips" style={{display: 'table', tableLayout: 'fixed', backgroundColor: '#f5cfa9', height: 'auto', width: '100%'}}>
   <div className="left-icon" style={{display: 'table-cell', verticalAlign: 'middle', backgroundColor: '#eda964', paddingTop: 10, boxSizing: 'border-box', height: 'auto', width: 38, textAlign: 'center'}}><img style={{width: 26, verticalAlign: 'middle'}} src="https://s3-us-west-2.amazonaws.com/static.seeed.cc/seeed/icon/Danger.svg" alt="attention icon" /></div>
   <div className="right-desc" style={{display: 'table-cell', verticalAlign: 'middle', paddingLeft: 15, boxSizing: 'border-box', width: 'calc(95% - 38px)'}}>
-    <p style={{color: '#000000', fontWeight: 'bold', marginTop: 10}}>Attention</p>
-    <p style={{color: '#000000', fontSize: 14}}>The following examples have updated to work with <b>eRPC Structure Framework Firmware</b>, please update to eRPC structure. Simply replace the <code><b>AtWifi.h</b></code> with <code><b>rpcWiFi.h</b></code>.</p>
+    <p style={{color: '#000000', fontWeight: 'bold', marginTop: 10}}>注意</p>
+    <p style={{color: '#000000', fontSize: 14}}>以下示例已更新为使用 <b>eRPC 结构框架固件</b>，请更新到 eRPC 结构。只需将 <code><b>AtWifi.h</b></code> 替换为 <code><b>rpcWiFi.h</b></code>。</p>
   </div>
 </div>
 
-## 配置为站点（STA）模式
+## 配置为站点 (STA) 模式
 
-- 在Arduino中包含 `rpcWifi.h` 库。
+- 在 Arduino 中包含 `rpcWifi.h` 库。
 
-- 配置为STA模式：
+- 配置为 STA 模式：
 
 ```cpp
 WiFi.mode(WIFI_STA);
 ```
 
-### 扫描Wi-Fi网络示例代码
+### 扫描 Wi-Fi 网络示例代码
 
-该示例将配置Wio Terminal为Wi-Fi STA模式，并扫描并打印出所有可用网络到串行监视器中。
+此示例将配置自身为 Wi-Fi STA 模式，扫描并将所有可用网络打印到串口。
 
 ```cpp
 #include "rpcWiFi.h"
 
 void setup() {
     Serial.begin(115200);
-    while(!Serial); // Wait for Serial to be ready
+    while(!Serial); // 等待串口准备就绪
     delay(1000);
 
-    // Set WiFi to station mode and disconnect from an AP if it was previously connected
+    // 将WiFi设置为站点模式，如果之前连接过AP则断开连接
     WiFi.mode(WIFI_STA);
     WiFi.disconnect();
     delay(100);
@@ -59,7 +58,7 @@ void setup() {
 void loop() {
     Serial.println("scan start");
 
-    // WiFi.scanNetworks will return the number of networks found
+    // WiFi.scanNetworks 将返回找到的网络数量
     int n = WiFi.scanNetworks();
     Serial.println("scan done");
     if (n == 0) {
@@ -68,7 +67,7 @@ void loop() {
         Serial.print(n);
         Serial.println(" networks found");
         for (int i = 0; i < n; ++i) {
-            // Print SSID and RSSI for each network found
+            // 打印找到的每个网络的SSID和RSSI
             Serial.print(i + 1);
             Serial.print(": ");
             Serial.print(WiFi.SSID(i));
@@ -81,14 +80,14 @@ void loop() {
     }
     Serial.println("");
 
-    // Wait a bit before scanning again
+    // 再次扫描前等待一段时间
     delay(5000);
 }
 ```
 
 ### 连接到指定网络示例代码
 
-该示例连接到指定的Wi-Fi网络。将 `ssid` 和 `password` 更改为您的Wi-Fi网络。
+此示例连接到指定的 Wi-Fi 网络。将 `ssid` 和 `password` 更改为您的 Wi-Fi 网络。
 
 ```cpp
 #include "rpcWiFi.h"
@@ -98,9 +97,9 @@ const char* password =  "yourNetworkPassword";
 
 void setup() {
     Serial.begin(115200);
-    while(!Serial); // Wait for Serial to be ready
+    while(!Serial); // 等待串口准备就绪
 
-    // Set WiFi to station mode and disconnect from an AP if it was previously connected
+    // 将WiFi设置为站点模式，如果之前连接过AP则断开连接
     WiFi.mode(WIFI_STA);
     WiFi.disconnect();
 
@@ -114,7 +113,7 @@ void setup() {
     }
     Serial.println("Connected to the WiFi network");
     Serial.print("IP Address: ");
-    Serial.println (WiFi.localIP()); // prints out the device's IP address
+    Serial.println (WiFi.localIP()); // 打印出设备的IP地址
     }
 
 void loop() {
@@ -122,18 +121,19 @@ void loop() {
 }
 ```
 
-### WiFi多连接示例代码
+### WiFi Multi 示例代码
 
-- 在Arduino中包含 `rpcWiFi.h` 和  `WiFiMulti.h` 库。
+- 在 Arduino 中包含 `rpcWiFi.h` 和 `WiFiMulti.h` 库。
 
-此示例调用 `WiFiMulti` 类，您可以使用。
+此示例调用 `WiFiMulti` 类，您可以使用
 
 ```cpp
 wifiMulti.addAP("ssid", "password");
 ```
-将多个AP Wi-Fi添加到列表中， `wifiMulti.run()` 将尝试连接到信号最好的Wi-Fi。
 
-**注:** 根据您的Wi-Fi更改 `SSID` 和 `Password` 。
+来添加多个 AP Wi-Fi 到列表中，`wifiMulti.run()` 将尝试连接到信号最好的 Wi-Fi。
+
+**注意：** 根据您的 Wi-Fi 更改 `SSID` 和 `Password`。
 
 ```cpp
 #include "rpcWiFi.h"
@@ -167,17 +167,17 @@ void loop() {
 }
 ```
 
-### Wi-Fi客户端示例代码
+### Wi-Fi 客户端示例代码
 
-该示例演示了Wio Terminal配置为STA模式，连接到特定AP Wi-Fi，并从同一网络上的Web服务器发送HTTP GET请求并接收HTTP响应。
+此示例演示了 Wio Terminal 配置为 STA 模式，连接到特定的 AP Wi-Fi 并发送 HTTP GET 请求，然后从同一网络上的 Web 服务器接收 HTTP 响应。
 
-- 将 `ssid` 和 `password` 更改为您的Wi-Fi。
+- 将 `ssid` 和 `password` 更改为您的 Wi-Fi。
 
-- 将 `host` 更改为Web服务器的IP地址。
+- 将 `host` 更改为 Web 服务器 IP 地址。
 
-要简单测试示例，您可以在PC上使用Python启动一个简单的Web服务器：
+要简单测试此示例，您可以在 PC 上使用 Python 启动一个简单的 Web 服务器：
 
-1. 将以下内容复制并保存在本地驱动器上，命名为 `index.html` 。
+1. 复制并保存以下内容到您的本地驱动器，并将其命名为 `index.html`。
 
 ```html
 <html>
@@ -187,23 +187,23 @@ Hello World!
 </html>
 ```
 
-2. 在Powershell/Terminal中，将目录更改为刚刚保存 `index.html` 的路径，并运行以下代码以使用Python启动一个简单的Web服务器：
+2. 在 Powershell/终端中，将目录切换到您刚刚保存 `index.html` 的路径，并运行以下代码以使用 Python 启动一个简单的 Web 服务器：
 
-For Pyhton 3:
+对于 Python 3：
 
 ```py
 python3 -m http.server 80
 ```
 
-For Python 2:
+对于 Python 2：
 
 ```py
 python -m SimpleHTTPServer 80
 ```
 
-3. 在Arduino代码中将 `host` 更改为此PC的IP地址。还要将Arduino代码中的 `ssid` 和 `password` 更改为与此PC连接的相同Wi-Fi。
+3. 在Arduino代码中将`host`更改为此PC的IP地址。同时，将Arduino代码中的`ssid`和`password`更改为与此PC连接的相同Wi-Fi。
 
-4. 将代码上传到Wio Terminal，打开串行监视器以观察结果。
+4. 将代码上传到Wio Terminal，检查串口监视器以观察结果。
 
 ```cpp
 #include <rpcWiFi.h>
@@ -213,10 +213,10 @@ const char* password =  "yourNetworkPassword";
 
 void setup() {
     Serial.begin(115200);
-    while(!Serial); // Wait for Serial to be ready
+    while(!Serial); // 等待串口准备就绪
     delay(1000);
 
-    // Set WiFi to station mode and disconnect from an AP if it was previously connected
+    // 将WiFi设置为站点模式，如果之前连接过AP则断开连接
     WiFi.mode(WIFI_STA);
     WiFi.disconnect();
     delay(2000);
@@ -225,78 +225,78 @@ void setup() {
 
     while (WiFi.status() != WL_CONNECTED) {
         delay(500);
-        Serial.println("Connecting to WiFi..");
+        Serial.println("正在连接WiFi..");
     }
-    Serial.println("Connected to the WiFi network");
-    Serial.print("IP Address: ");
-    Serial.println (WiFi.localIP()); // prints out the device's IP address
+    Serial.println("已连接到WiFi网络");
+    Serial.print("IP地址: ");
+    Serial.println (WiFi.localIP()); // 打印出设备的IP地址
 }
 
 
 void loop() {
-    const uint16_t port = 80; // Default port
-    const char* host = "192.168.0.10";  // Target Server IP Address
+    const uint16_t port = 80; // 默认端口
+    const char* host = "192.168.0.10";  // 目标服务器IP地址
 
-    Serial.print("Connecting to ");
+    Serial.print("正在连接到 ");
     Serial.println(host);
 
-    // Use WiFiClient class to create TCP connections
+    // 使用WiFiClient类创建TCP连接
     WiFiClient client;
 
     if (!client.connect(host, port)) {
-        Serial.println("Connection failed.");
-        Serial.println("Waiting 5 seconds before retrying...");
+        Serial.println("连接失败。");
+        Serial.println("等待5秒后重试...");
         delay(5000);
         return;
     }
 
-    // This will send a request to the server
-    //uncomment this line to send an arbitrary string to the server
+    // 这将向服务器发送请求
+    //取消注释此行以向服务器发送任意字符串
     //client.print("Send this data to the server");
-    //uncomment this line to send a basic document request to the server
-    client.print("GET /index.html HTTP/1.1\n\n"); // sending HTTP GET request
+    //取消注释此行以向服务器发送基本文档请求
+    client.print("GET /index.html HTTP/1.1\n\n"); // 发送HTTP GET请求
 
     int maxloops = 0;
 
-    //wait for the server's reply to become available
+    //等待服务器的回复变为可用
     while (!client.available() && maxloops < 1000) {
         maxloops++;
-        delay(1); //delay 1 msec
+        delay(1); //延迟1毫秒
     }
     if (client.available() > 0) {
-        //read back one line from the server
-        String line = client.readString(); // Read from the server response
-        // Proceed various line-endings
+        //从服务器读取一行数据
+        String line = client.readString(); // 从服务器响应中读取
+        // 处理各种行结束符
         line.replace("\r\n", "\n");
         line.replace('\r', '\n');
         line.replace("\n", "\r\n");
         Serial.println(line);
     } else {
-        Serial.println("client.available() timed out ");
+        Serial.println("client.available() 超时 ");
     }
 
-    Serial.println("Closing connection.");
+    Serial.println("正在关闭连接。");
     client.stop();
 
-    Serial.println("Waiting 5 seconds before restarting...");
+    Serial.println("等待5秒后重新启动...");
     delay(5000);
 }
 ```
 
-### Wi-Fi HTTPS连接示例代码
+### Wi-Fi Https 连接示例代码
 
-该示例演示了使用Wio Terminal建立Https连接。通过使用此示例，您可以连接到几乎所有网站并获取所需的数据。
+此示例演示了如何使用 Wio Terminal 建立 Https 连接。通过此方法，您可以连接到几乎所有网站并获取所需的数据。
 
-- 将 `ssid` 和 `password` 更改为您的Wi-Fi。
+- 将 `ssid` 和 `password` 更改为您的 Wi-Fi 信息。
 
 ```cpp
 #include <rpcWiFi.h>
 #include <WiFiClientSecure.h>
 
-const char* ssid     = "yourNetworkName";     // your network SSID
-const char* password = "yourNetworkPassword"; // your network password
+const char* ssid     = "yourNetworkName";     // 你的网络SSID
+const char* password = "yourNetworkPassword"; // 你的网络密码
 
-const char*  server = "www.example.com";  // Server URL
+const char*  server = "www.example.com";  // 服务器URL
 const char* test_root_ca = \
                             "-----BEGIN CERTIFICATE-----\n"
                             "MIIDrzCCApegAwIBAgIQCDvgVpBCRrGhdWrJWZHHSjANBgkqhkiG9w0BAQUFADBh\n"
@@ -321,41 +321,41 @@ const char* test_root_ca = \
                             "CAUw7C29C79Fv1C5qfPrmAESrciIxpg0X40KPMbp1ZWVbd4=\n"
                             "-----END CERTIFICATE-----\n";
 
-// You can use x.509 client certificates if you want
-//const char* test_client_key = "";   //to verify the client
-//const char* test_client_cert = "";  //to verify the client
+// 如果需要，你可以使用x.509客户端证书
+//const char* test_client_key = "";   //用于验证客户端
+//const char* test_client_cert = "";  //用于验证客户端
 
 WiFiClientSecure client;
 
 void setup() {
-    //Initialize serial and wait for port to open:
+    //初始化串口并等待端口打开：
     Serial.begin(115200);
-    while(!Serial); // Wait for Serial to be ready
+    while(!Serial); // 等待串口准备就绪
     delay(1000);
 
-    Serial.print("Attempting to connect to SSID: ");
+    Serial.print("尝试连接到SSID: ");
     Serial.println(ssid);
     WiFi.begin(ssid, password);
 
-    // attempt to connect to Wifi network:
+    // 尝试连接到WiFi网络：
     while (WiFi.status() != WL_CONNECTED) {
         Serial.print(".");
-        // wait 1 second for re-trying
+        // 等待1秒后重试
         delay(1000);
     }
-    Serial.print("Connected to ");
+    Serial.print("已连接到 ");
     Serial.println(ssid);
 
     client.setCACert(test_root_ca);
-    //client.setCertificate(test_client_key); // for client verification
-    //client.setPrivateKey(test_client_cert); // for client verification
+    //client.setCertificate(test_client_key); // 用于客户端验证
+    //client.setPrivateKey(test_client_cert); // 用于客户端验证
 
-    Serial.println("\nStarting connection to server...");
+    Serial.println("\n开始连接到服务器...");
     if (!client.connect(server, 443)) {
-        Serial.println("Connection failed!");
+        Serial.println("连接失败！");
     } else {
-        Serial.println("Connected to server!");
-        // Make a HTTP request:
+        Serial.println("已连接到服务器！");
+        // 发起HTTP请求：
         client.println("GET https://www.example.com HTTP/1.0");
         client.println("Host: www.example.com");
         client.println("Connection: close");
@@ -364,12 +364,12 @@ void setup() {
         while (client.connected()) {
             String line = client.readStringUntil('\n');
             if (line == "\r") {
-                Serial.println("headers received");
+                Serial.println("已接收到头部信息");
                 break;
             }
         }
-        // if there are incoming bytes available
-        // from the server, read them and print them:
+        // 如果有来自服务器的传入字节可用
+        // 读取并打印它们：
         while (client.available()) {
             char c = client.read();
             if (c == '\n') {
@@ -382,54 +382,54 @@ void setup() {
 }
 
 void loop() {
-    // do nothing
+    // 什么都不做
 }
 ```
 
-#### 获取网站的根CA
+#### 获取网站的根 CA
 
-要获取网站的根CA，您可以在终端中运行以下命令（Linux Bash Shell）：
+要获取网站的根 CA，您可以在终端（Linux Bash Shell）中运行以下命令：
 
 ```sh
 openssl s_client -showcerts -verify 5 -connect www.example.com:443 < /dev/null
 ```
 
-将 **`www.example.com`** 替换为所需网站的根URL。
+将 **`www.example.com`** 替换为所需网站的根 URL。
 
-**For Windows**, 您可以使用 **Windows 子系统用于Linux（WSL）** 运行相同的Linux命令。
+**对于 Windows**，您可以使用 **Windows 子系统 Linux (WSL)** 来运行相同的 Linux 命令。
 
-**注:** 确保您已安装依赖项：
+**注意：** 确保您已安装依赖项：
 
 ```sh
 sudo apt update
 sudo apt install openssl
 ```
 
-### MQTT服务器连接示例代码
+### 连接到 MQTT 服务器示例代码
 
-这个示例演示了如何使用Wio Terminal连接到MQTT服务器。通过这个示例，你可以使用Wio Terminal订阅和发布消息到MQTT服务器。这里使用了一个免费的MQTT服务器： [https://test.mosquitto.org/](https://test.mosquitto.org/).
+此示例演示了如何使用 Wio Terminal 与 MQTT 服务器建立 MQTT 连接。通过此示例，您可以使用 Wio Terminal 订阅和发布消息到 MQTT 服务器。这里使用了一个免费的 MQTT 服务器：[https://test.mosquitto.org/](https://test.mosquitto.org/)。
 
-- 在这里下载并安装 [**Arduino MQTT Library**](https://github.com/knolleary/pubsubclient) here.
+- 在此处下载并安装 [**Arduino MQTT 库**](https://github.com/knolleary/pubsubclient)。
 
 ```cpp
 #include "rpcWiFi.h"
 #include <PubSubClient.h>
 
-// Update these with values suitable for your network.
-const char *ssid = "yourNetworkName";      // your network SSID
-const char *password = "yourNetworkPassword"; // your network password
+// 更新这些值以适合您的网络。
+const char *ssid = "yourNetworkName";      // 您的网络SSID
+const char *password = "yourNetworkPassword"; // 您的网络密码
 
-const char *ID = "Wio-Terminal-Client";  // Name of our device, must be unique
-const char *TOPIC = "WioTerminal";  // Topic to subcribe to
-const char *subTopic = "inTopic";  // Topic to subcribe to
-const char *server = "test.mosquitto.org"; // Server URL
+const char *ID = "Wio-Terminal-Client";  // 我们设备的名称，必须是唯一的
+const char *TOPIC = "WioTerminal";  // 要发布的主题
+const char *subTopic = "inTopic";  // 要订阅的主题
+const char *server = "test.mosquitto.org"; // 服务器URL
 
 
 WiFiClient wifiClient;
 PubSubClient client(wifiClient);
 
 void callback(char* topic, byte* payload, unsigned int length) {
-  Serial.print("Message arrived [");
+  Serial.print("消息到达 [");
   Serial.print(topic);
   Serial.print("] ");
   for (int i=0;i<length;i++) {
@@ -439,26 +439,26 @@ void callback(char* topic, byte* payload, unsigned int length) {
 }
 
 void reconnect() {
-  // Loop until we're reconnected
+  // 循环直到我们重新连接
   while (!client.connected())
   {
-    Serial.print("Attempting MQTT connection...");
-    // Attempt to connect
+    Serial.print("尝试 MQTT 连接...");
+    // 尝试连接
     if (client.connect(ID)) {
-      Serial.println("connected");
-      // Once connected, publish an announcement...
+      Serial.println("已连接");
+      // 一旦连接，发布一个公告...
       client.publish(TOPIC, "{\"message\": \"Wio Terminal is connected!\"}");
-      Serial.println("Published connection message successfully!");
-      // ... and resubscribe
+      Serial.println("成功发布连接消息！");
+      // ... 并重新订阅
       client.subscribe(subTopic);
-      Serial.print("Subcribed to: ");
+      Serial.print("已订阅到: ");
       Serial.println(subTopic);
     }
     else {
-      Serial.print("failed, rc=");
+      Serial.print("失败，rc=");
       Serial.print(client.state());
-      Serial.println(" try again in 5 seconds");
-      // Wait 5 seconds before retrying
+      Serial.println(" 5秒后重试");
+      // 重试前等待5秒
       delay(5000);
     }
   }
@@ -468,21 +468,21 @@ void setup()
 {
   Serial.begin(115200);
   while (!Serial)
-    ; // Wait for Serial to be ready
-  Serial.print("Attempting to connect to SSID: ");
+    ; // 等待串口准备就绪
+  Serial.print("尝试连接到SSID: ");
   Serial.println(ssid);
   WiFi.begin(ssid, password);
 
-  // attempt to connect to Wifi network:
+  // 尝试连接到Wifi网络:
   while (WiFi.status() != WL_CONNECTED)
   {
     Serial.print(".");
     WiFi.begin(ssid, password);
-    // wait 1 second for re-trying
+    // 等待1秒重试
     delay(1000);
   }
   
-  Serial.print("Connected to ");
+  Serial.print("已连接到 ");
   Serial.println(ssid);
   delay(500);
 
@@ -499,19 +499,19 @@ void loop()
 }
 ```
 
-### MQTTs服务器连接示例代码
+### 连接到 MQTTs 服务器示例代码
 
 <div align="center"><video width={560} height={315} controls>
     <source src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/mqtts.mp4" type="video/mp4" />
   </video></div>
 
-这个示例演示了如何使用Wio Terminal建立MQTTs连接。这里使用了一个免费的MQTTs服务器： [https://test.mosquitto.org/](https://test.mosquitto.org/) 并将加速度计数据发送到一个主题。
+此示例演示了使用 Wio Terminal 建立 MQTTs 连接。这里使用了一个免费的 MQTTs 服务器：[https://test.mosquitto.org/](https://test.mosquitto.org/) 并将加速度计数据发送到一个主题。
 
-- 在这里下载并安装 [**Arduino MQTT 库**](https://github.com/knolleary/pubsubclient) 。
+- 在此处下载并安装 [**Arduino MQTT 库**](https://github.com/knolleary/pubsubclient)。
 
-- 根据 [**此 wiki**](https://wiki.seeedstudio.com/Wio-Terminal-IMU-Overview/) 安装Wio Terminal的加速度计库。
+- 按照 [**此 wiki**](https://wiki.seeedstudio.com/cn/Wio-Terminal-IMU-Overview/) 为 Wio Terminal 安装加速度计库。
 
-- Wio Terminal将会发布加速度计数据到 `WioTerminal/IMU` 主题，并订阅来自 `inTopic` 主题的消息。
+- Wio Terminal 将向 `WioTerminal/IMU` 主题发布加速度计数据，并从 `inTopic` 主题订阅消息。
 
 ```cpp
 #include "rpcWiFi.h"
@@ -519,14 +519,14 @@ void loop()
 #include <WiFiClientSecure.h>
 #include"LIS3DHTR.h"
 
-const char *ssid = "yourNetworkName";      // your network SSID
-const char *password = "yourNetworkPassword"; // your network password
+const char *ssid = "yourNetworkName";      // 你的网络SSID
+const char *password = "yourNetworkPassword"; // 你的网络密码
 
-const char *ID = "Wio-Terminal-Client";  // Name of our device, must be unique
-const char *TOPIC = "WioTerminal/IMU";  // Topic to subcribe to
-const char *subTopic = "inTopic";  // Topic to subcribe to
+const char *ID = "Wio-Terminal-Client";  // 我们设备的名称，必须是唯一的
+const char *TOPIC = "WioTerminal/IMU";  // 要发布的主题
+const char *subTopic = "inTopic";  // 要订阅的主题
 
-const char *server = "test.mosquitto.org"; // Server URL
+const char *server = "test.mosquitto.org"; // 服务器URL
 const char *test_root_ca =
 "-----BEGIN CERTIFICATE-----\n"
 "MIIEAzCCAuugAwIBAgIUBY1hlCGvdj4NhBXkZ/uLUZNILAwwDQYJKoZIhvcNAQEL\n"
@@ -561,7 +561,7 @@ PubSubClient client(wifiClient);
 
 void callback(char *topic, byte *payload, unsigned int length)
 {
-  Serial.print("Message arrived [");
+  Serial.print("消息到达 [");
   Serial.print(topic);
   Serial.print("] ");
   for (int i = 0; i < length; i++)
@@ -573,28 +573,28 @@ void callback(char *topic, byte *payload, unsigned int length)
 
 void reconnect()
 {
-  // Loop until we're reconnected
+  // 循环直到我们重新连接
   while (!client.connected())
   {
-    Serial.print("Attempting MQTT connection...");
-    // Attempt to connect
+    Serial.print("尝试MQTT连接...");
+    // 尝试连接
     if (client.connect(ID))
     {
-      Serial.println("connected");
-      // Once connected, publish an announcement...
+      Serial.println("已连接");
+      // 一旦连接，发布一个公告...
       client.publish(TOPIC, "{\"message\": \"Wio Terminal is connected!\"}");
-      Serial.println("Published connection message successfully!");
-      // ... and resubscribe
+      Serial.println("连接消息发布成功！");
+      // ... 并重新订阅
       client.subscribe(subTopic);
-      Serial.print("Subcribed to: ");
+      Serial.print("已订阅到: ");
       Serial.println(subTopic);
     }
     else
     {
-      Serial.print("failed, rc=");
+      Serial.print("失败，rc=");
       Serial.print(client.state());
-      Serial.println(" try again in 5 seconds");
-      // Wait 5 seconds before retrying
+      Serial.println(" 5秒后重试");
+      // 重试前等待5秒
       delay(5000);
     }
   }
@@ -602,34 +602,34 @@ void reconnect()
 
 void setup()
 {
-  //Initialize serial and wait for port to open:
+  //初始化串口并等待端口打开:
   Serial.begin(115200);
   while (!Serial)
-    ; // Wait for Serial to be ready
+    ; // 等待串口准备就绪
   delay(1000);
 
   lis.begin(Wire1);
  
   if (!lis) {
-    Serial.println("ERROR");
+    Serial.println("错误");
     while(1);
   }
-  lis.setOutputDataRate(LIS3DHTR_DATARATE_25HZ); //Data output rate
-  lis.setFullScaleRange(LIS3DHTR_RANGE_2G); //Scale range set to 2g
+  lis.setOutputDataRate(LIS3DHTR_DATARATE_25HZ); //数据输出速率
+  lis.setFullScaleRange(LIS3DHTR_RANGE_2G); //量程范围设置为2g
 
-  Serial.print("Attempting to connect to SSID: ");
+  Serial.print("尝试连接到SSID: ");
   Serial.println(ssid);
   WiFi.begin(ssid, password);
 
-  // attempt to connect to Wifi network:
+  // 尝试连接到Wifi网络:
   while (WiFi.status() != WL_CONNECTED)
   {
     Serial.print(".");
     WiFi.begin(ssid, password);
-    // wait 1 second for re-trying
+    // 等待1秒重试
     delay(1000);
   }
-  Serial.print("Connected to ");
+  Serial.print("已连接到 ");
   Serial.println(ssid);
 
   wifiClient.setCACert(test_root_ca);
@@ -648,7 +648,7 @@ void loop()
   
   float x_values, y_values, z_values;
   
-  // Sending Data
+  // 发送数据
   long now = millis();
   if (now - lastMsg > 5000) {
     lastMsg = now;
@@ -659,9 +659,9 @@ void loop()
   String data="{\"x-axis\": "+String(x_values)+","+"\"y-axis\": "+String(y_values)+","+"\"z-axis\": "+String(z_values)+"}";
 
   if (!client.publish(TOPIC, data.c_str())) {
-    Serial.println("Message failed to send.");
+    Serial.println("消息发送失败。");
   }
-  Serial.printf("Message Send [%s] ", TOPIC);
+  Serial.printf("消息发送 [%s] ", TOPIC);
   Serial.println(data);
   }
   
@@ -669,19 +669,19 @@ void loop()
 }
 ```
 
-### UDP客户端示例代码
+### UDP 客户端示例代码
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/udp-example.png" /></div>
 
-此示例连接到Wi-Fi并向在您的PC上运行的UDP服务器发送UDP数据包。
+此示例连接到 Wi-Fi 并向运行在您 PC 上的 UDP 服务器发送 UDP 数据包。
 
-**注:** 确保您的PC和Wio终端处于同一个网络中！
+**注意：** 确保您的 PC 和 Wio Terminal 在同一网络中！
 
-#### Python UDP服务器代码
+#### Python UDP 服务器代码
 
-- 将以下代码保存为 `udp_server.py` 。
+- 将以下代码保存为 `udp_server.py`。
 
-- 运行Python脚本： **`python udp_server.py`** 。
+- 运行 python 脚本：**`python udp_server.py`**。
 
 ```py
 # This python script listens on UDP port 3333 
@@ -716,13 +716,13 @@ while 1:
 s.close()
 ```
 
-#### Arduino代码
+#### Arduino 代码
 
-- 将 `networkName` 和 `networkPswd` 更改为您的Wi-Fi设置。
+- 将 `networkName` 和 `networkPswd` 更改为您的 Wi-Fi 设置。
 
-- 将 `udpAddress` 更改为您的PC的IP地址，并确保运行UDP服务器的PC与Wio终端处于同一网络中。
+- 将 `udpAddress` 更改为您 PC 的 IP 地址，并确保运行 UDP 服务器的 PC 与 Wio Terminal 在同一网络中。
 
-- 将代码上传到Wio终端。
+- 将代码上传到 Wio Terminal。
 
 ```cpp
 #include <rpcWiFi.h>
@@ -800,11 +800,11 @@ void WiFiEvent(WiFiEvent_t event){
 
 ```
 
-### Wi-Fi NTP示例代码
+### Wi-Fi NTP 示例代码
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/wifi-udp-rpc.png" /></div>
 
-此示例使用UDP获取NTP时间，并使用SAMD51核心上的内置RTC来更新时间。
+此示例使用 UDP 获取 NTP 时间，并使用 SAMD51 核心上的内置 RTC 来保持时间更新。
 
 - 安装 [**Seeed_Arduino_RTC**](https://github.com/Seeed-Studio/Seeed_Arduino_RTC) 库。
 
@@ -815,96 +815,96 @@ void WiFiEvent(WiFiEvent_t event){
 #include <millisDelay.h>
 #include "RTC_SAMD51.h"
 
-const char ssid[] = "yourNetworkName"; // add your required ssid
-const char password[] = "yourNetworkPassword"; // add your own netywork password
+const char ssid[] = "yourNetworkName"; // 添加你需要的 ssid
+const char password[] = "yourNetworkPassword"; // 添加你自己的网络密码
 
-millisDelay updateDelay; // the update delay object. used for ntp periodic update.
+millisDelay updateDelay; // 更新延迟对象。用于 ntp 周期性更新。
 
-unsigned int localPort = 2390;      // local port to listen for UDP packets
-char timeServer[] = "time.nist.gov"; // extenral NTP server e.g. time.nist.gov
+unsigned int localPort = 2390;      // 监听 UDP 数据包的本地端口
+char timeServer[] = "time.nist.gov"; // 外部 NTP 服务器，例如 time.nist.gov
 
-const int NTP_PACKET_SIZE = 48; // NTP time stamp is in the first 48 bytes of the message
-byte packetBuffer[NTP_PACKET_SIZE]; //buffer to hold incoming and outgoing packets
+const int NTP_PACKET_SIZE = 48; // NTP 时间戳在消息的前 48 字节中
+byte packetBuffer[NTP_PACKET_SIZE]; // 用于保存传入和传出数据包的缓冲区
 
-// declare a time object
+// 声明一个时间对象
 DateTime now;
 
-// define WiFI client
+// 定义 WiFI 客户端
 WiFiClient client;
 
-//The udp library class
+// udp 库类
 WiFiUDP udp;
 
-// localtime
+// 本地时间
 unsigned long devicetime;
 
 RTC_SAMD51 rtc;
 
-// for use by the Adafuit RTClib library
+// 供 Adafuit RTClib 库使用
 char daysOfTheWeek[7][12] = { "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" };
 
 void setup() {
 
     Serial.begin(115200);
 
-    while (!Serial); // wait for serial port to connect. Needed for native USB
+    while (!Serial); // 等待串口连接。原生 USB 需要
 
-    // setup network before rtc check 
+    // 在 rtc 检查之前设置网络
     connectToWiFi(ssid, password);
 
-    // get the time via NTP (udp) call to time server
-    // getNTPtime returns epoch UTC time adjusted for timezone but not daylight savings
-    // time
+    // 通过 NTP (udp) 调用时间服务器获取时间
+    // getNTPtime 返回根据时区调整但不包含夏令时的纪元 UTC 时间
+    // 时间
     devicetime = getNTPtime();
 
-    // check if rtc present
+    // 检查 rtc 是否存在
     if (devicetime == 0) {
-        Serial.println("Failed to get time from network time server.");
+        Serial.println("从网络时间服务器获取时间失败。");
     }
 
     if (!rtc.begin()) {
-        Serial.println("Couldn't find RTC");
-        while (1) delay(10); // stop operating
+        Serial.println("找不到 RTC");
+        while (1) delay(10); // 停止运行
     }
 
-    // get and print the current rtc time
+    // 获取并打印当前 rtc 时间
     now = rtc.now();
-    Serial.print("RTC time is: ");
+    Serial.print("RTC 时间是: ");
     Serial.println(now.timestamp(DateTime::TIMESTAMP_FULL));
 
-    // adjust time using ntp time
+    // 使用 ntp 时间调整时间
     rtc.adjust(DateTime(devicetime));
 
-    // print boot update details
-    Serial.println("RTC (boot) time updated.");
-    // get and print the adjusted rtc time
+    // 打印启动更新详情
+    Serial.println("RTC (启动) 时间已更新。");
+    // 获取并打印调整后的 rtc 时间
     now = rtc.now();
-    Serial.print("Adjusted RTC (boot) time is: ");
+    Serial.print("调整后的 RTC (启动) 时间是: ");
     Serial.println(now.timestamp(DateTime::TIMESTAMP_FULL));
 
-    // start millisdelays timers as required, adjust to suit requirements
-    updateDelay.start(1 * 60 * 60 * 1000); // update time via ntp every hr
+    // 根据需要启动 millisdelays 定时器，调整以适应要求
+    updateDelay.start(1 * 60 * 60 * 1000); // 每小时通过 ntp 更新时间
 
 }
 
 void loop() {
 
-    if (updateDelay.justFinished()) { // 12 hour loop
-        // repeat timer
-        updateDelay.repeat(); // repeat
+    if (updateDelay.justFinished()) { // 12 小时循环
+        // 重复定时器
+        updateDelay.repeat(); // 重复
 
-        // update rtc time
+        // 更新 rtc 时间
         devicetime = getNTPtime();
         if (devicetime == 0) {
-            Serial.println("Failed to get time from network time server.");
+            Serial.println("从网络时间服务器获取时间失败。");
         }
         else {
             rtc.adjust(DateTime(devicetime));
             Serial.println("");
-            Serial.println("rtc time updated.");
-            // get and print the adjusted rtc time
+            Serial.println("rtc 时间已更新。");
+            // 获取并打印调整后的 rtc 时间
             now = rtc.now();
-            Serial.print("Adjusted RTC time is: ");
+            Serial.print("调整后的 RTC 时间是: ");
             Serial.println(now.timestamp(DateTime::TIMESTAMP_FULL));
         }
     }
@@ -912,181 +912,181 @@ void loop() {
 
 
 void connectToWiFi(const char* ssid, const char* pwd) {
-    Serial.println("Connecting to WiFi network: " + String(ssid));
+    Serial.println("连接到 WiFi 网络: " + String(ssid));
 
-    // delete old config
+    // 删除旧配置
     WiFi.disconnect(true);
 
-    Serial.println("Waiting for WIFI connection...");
+    Serial.println("等待 WIFI 连接...");
 
-    //Initiate connection
+    // 启动连接
     WiFi.begin(ssid, pwd);
 
     while (WiFi.status() != WL_CONNECTED) {
         WiFi.begin(ssid, pwd);
         delay(500);
     }
-    Serial.println("Connected.");
+    Serial.println("已连接。");
     printWifiStatus();
 
 }
 
 unsigned long getNTPtime() {
 
-    // module returns a unsigned long time valus as secs since Jan 1, 1970 
-    // unix time or 0 if a problem encounted
+    // 模块返回一个无符号长整型时间值，作为自 1970 年 1 月 1 日以来的秒数
+    // unix 时间，如果遇到问题则返回 0
 
-    //only send data when connected
+    // 仅在连接时发送数据
     if (WiFi.status() == WL_CONNECTED) {
-        //initializes the UDP state
-        //This initializes the transfer buffer
+        // 初始化 UDP 状态
+        // 这初始化传输缓冲区
         udp.begin(WiFi.localIP(), localPort);
 
-        sendNTPpacket(timeServer); // send an NTP packet to a time server
-        // wait to see if a reply is available
+        sendNTPpacket(timeServer); // 向时间服务器发送 NTP 数据包
+        // 等待查看是否有回复可用
         delay(1000);
 
         if (udp.parsePacket()) {
-            Serial.println("udp packet received");
+            Serial.println("收到 udp 数据包");
             Serial.println("");
-            // We've received a packet, read the data from it
-            udp.read(packetBuffer, NTP_PACKET_SIZE); // read the packet into the buffer
+            // 我们收到了一个数据包，从中读取数据
+            udp.read(packetBuffer, NTP_PACKET_SIZE); // 将数据包读入缓冲区
 
-            //the timestamp starts at byte 40 of the received packet and is four bytes,
-            // or two words, long. First, extract the two words:
+            // 时间戳从接收数据包的第 40 字节开始，长度为四个字节，
+            // 或两个字。首先，提取两个字：
 
             unsigned long highWord = word(packetBuffer[40], packetBuffer[41]);
             unsigned long lowWord = word(packetBuffer[42], packetBuffer[43]);
-            // combine the four bytes (two words) into a long integer
-            // this is NTP time (seconds since Jan 1 1900):
+            // 将四个字节（两个字）组合成一个长整数
+            // 这是 NTP 时间（自 1900 年 1 月 1 日以来的秒数）：
             unsigned long secsSince1900 = highWord << 16 | lowWord;
-            // Unix time starts on Jan 1 1970. In seconds, that's 2208988800:
+            // Unix 时间从 1970 年 1 月 1 日开始。以秒为单位，那是 2208988800：
             const unsigned long seventyYears = 2208988800UL;
-            // subtract seventy years:
+            // 减去七十年：
             unsigned long epoch = secsSince1900 - seventyYears;
 
-            // adjust time for timezone offset in secs +/- from UTC
-            // WA time offset from UTC is +8 hours (28,800 secs)
-            // + East of GMT
-            // - West of GMT
+            // 根据时区偏移量调整时间，以秒为单位，相对于 UTC 的 +/-
+            // WA 时间相对于 UTC 的偏移量是 +8 小时（28,800 秒）
+            // + GMT 以东
+            // - GMT 以西
             long tzOffset = 28800UL;
 
-            // WA local time 
+            // WA 本地时间
             unsigned long adjustedTime;
             return adjustedTime = epoch + tzOffset;
         }
         else {
-            // were not able to parse the udp packet successfully
-            // clear down the udp connection
+            // 无法成功解析 udp 数据包
+            // 清理 udp 连接
             udp.stop();
-            return 0; // zero indicates a failure
+            return 0; // 零表示失败
         }
-        // not calling ntp time frequently, stop releases resources
+        // 不经常调用 ntp 时间，stop 释放资源
         udp.stop();
     }
     else {
-        // network not connected
+        // 网络未连接
         return 0;
     }
 
 }
 
-// send an NTP request to the time server at the given address
+// 向给定地址的时间服务器发送 NTP 请求
 unsigned long sendNTPpacket(const char* address) {
-    // set all bytes in the buffer to 0
+    // 将缓冲区中的所有字节设置为 0
     for (int i = 0; i < NTP_PACKET_SIZE; ++i) {
         packetBuffer[i] = 0;
     }
-    // Initialize values needed to form NTP request
-    // (see URL above for details on the packets)
+    // 初始化形成 NTP 请求所需的值
+    // （有关数据包的详细信息，请参见上面的 URL）
     packetBuffer[0] = 0b11100011;   // LI, Version, Mode
-    packetBuffer[1] = 0;     // Stratum, or type of clock
-    packetBuffer[2] = 6;     // Polling Interval
-    packetBuffer[3] = 0xEC;  // Peer Clock Precision
-    // 8 bytes of zero for Root Delay & Root Dispersion
+    packetBuffer[1] = 0;     // Stratum，或时钟类型
+    packetBuffer[2] = 6;     // 轮询间隔
+    packetBuffer[3] = 0xEC;  // 对等时钟精度
+    // 根延迟和根分散的 8 个零字节
     packetBuffer[12] = 49;
     packetBuffer[13] = 0x4E;
     packetBuffer[14] = 49;
     packetBuffer[15] = 52;
 
-    // all NTP fields have been given values, now
-    // you can send a packet requesting a timestamp:
-    udp.beginPacket(address, 123); //NTP requests are to port 123
+    // 所有 NTP 字段都已赋值，现在
+    // 你可以发送请求时间戳的数据包：
+    udp.beginPacket(address, 123); // NTP 请求发送到端口 123
     udp.write(packetBuffer, NTP_PACKET_SIZE);
     udp.endPacket();
 }
 
 void printWifiStatus() {
-    // print the SSID of the network you're attached to:
+    // 打印你连接的网络的 SSID：
     Serial.println("");
     Serial.print("SSID: ");
     Serial.println(WiFi.SSID());
 
-    // print your WiFi shield's IP address:
+    // 打印你的 WiFi 模块的 IP 地址：
     IPAddress ip = WiFi.localIP();
-    Serial.print("IP Address: ");
+    Serial.print("IP 地址: ");
     Serial.println(ip);
 
-    // print the received signal strength:
+    // 打印接收到的信号强度：
     long rssi = WiFi.RSSI();
-    Serial.print("signal strength (RSSI):");
+    Serial.print("信号强度 (RSSI):");
     Serial.print(rssi);
     Serial.println(" dBm");
     Serial.println("");
 }
 ```
 
-## 将Wi-Fi配置为访问点（AP）模式/ Web服务器
+## 配置 Wi-Fi 为接入点 (AP) 模式 / Web 服务器
 
-- 在Arduino中包括 `rpcWiFi.h`, `WiFiClient.h` 和 `WifiAP.h` 。
+- 在 Arduino 中包含 `rpcWiFi.h`、`WiFiClient.h` 和 `WifiAP.h` 库。
 
-- 配置AP Wi-Fi的 `ssid` 和 `password` 。
+- 配置 AP Wi-Fi `ssid` 和 `password`。
 
-- 在端口80上初始化Wi-Fi服务器：
+- 在端口 80 上初始化 Wi-Fi 服务器：
 
 ```cpp
 WiFiServer server(80);
 ```
 
-- 使用 `ssid` and `password` 初始化AP:
+- 使用 `ssid` 和 `password` 初始化 AP：
 
 ```cpp
 WiFi.softAP(ssid, password);
 ```
 
-- 初始化AP:
+- 启动Web服务器：
 
 ```cpp
 server.begin();
 ```
 
-### 配置为AP模式（简单Web服务器）示例代码
+### 配置为 AP 模式（简单 Web 服务器）示例代码
 
-此示例将Wio终端配置为简单的Web服务器，并允许您连接到其AP网络，并根据HTTP响应控制硬件。
+此示例将 Wio Terminal 配置为简单的 Web 服务器，允许您连接到其 AP 网络并根据 HTTP 响应控制硬件。
 
 ```cpp
 /*
-    WiFiAccessPoint.ino creates a WiFi access point and provides a web server on it.
+    WiFiAccessPoint.ino 创建一个WiFi接入点并在其上提供Web服务器。
 
-    Steps:
-    1. Connect to the access point "yourAp"
-    2. Point your web browser to http://<This-AP-IP>/H to turn the LED on or http://<This-AP-IP>/L to turn it off
-       (<This-AP-IP> should be replaced with the IP got in terminal/SerialPort, see Note 1)
-     OR
-     Run raw TCP "GET /H" and "GET /L" on PuTTY terminal with IP address (see Note 1) and 80 as port
+    步骤：
+    1. 连接到接入点 "yourAp"
+    2. 将您的Web浏览器指向 http://<This-AP-IP>/H 来打开LED或 http://<This-AP-IP>/L 来关闭LED
+       （<This-AP-IP> 应该替换为在终端/串口中获得的IP，见注释1）
+     或者
+     在PuTTY终端上使用IP地址（见注释1）和80端口运行原始TCP "GET /H" 和 "GET /L"
 
-    Created for arduino-esp32 on 04 July, 2018
-    by Elochukwu Ifediora (fedy0)
+    为arduino-esp32创建于2018年7月4日
+    作者：Elochukwu Ifediora (fedy0)
 */
 
 #include <rpcWiFi.h>
 #include <WiFiClient.h>
 #include <WiFiAP.h>
 
-#define LED_BUILTIN 2   // Set the GPIO pin where you connected your test LED
-                        // or comment this line out if your dev board has a built-in LED
+#define LED_BUILTIN 2   // 设置您连接测试LED的GPIO引脚
+                        // 或者如果您的开发板有内置LED，请注释掉这一行
 
-// Set these to your desired credentials.
+// 将这些设置为您所需的凭据。
 const char* ssid = "yourAP";
 const char* password = "yourPassword";
 
@@ -1097,87 +1097,87 @@ void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
 
     Serial.begin(115200);
-    while(!Serial); // Wait for Serial to be ready
+    while(!Serial); // 等待串口准备就绪
     delay(1000);
     Serial.println();
-    Serial.println("Configuring access point...");
+    Serial.println("正在配置接入点...");
 
-    // You can remove the password parameter if you want the AP to be open.
+    // 如果您希望AP开放，可以删除密码参数。
     WiFi.softAP(ssid, password);
     IPAddress myIP = WiFi.softAPIP();
     /*
-     * Note 1
-     * Record this IP, will used by Client (such as Web Browser)
+     * 注释 1
+     * 记录此IP，将被客户端（如Web浏览器）使用
      */
-    Serial.print("AP IP address: ");
+    Serial.print("AP IP地址: ");
     Serial.println(myIP);
     server.begin();
 
-    Serial.println("Server started");
+    Serial.println("服务器已启动");
 }
 
 void loop() {
-    WiFiClient client = server.available();   // listen for incoming clients
+    WiFiClient client = server.available();   // 监听传入的客户端
 
-    if (client) {                             // if you get a client,
-        Serial.println("New Client.");           // print a message out the serial port
-        String currentLine = "";                // make a String to hold incoming data from the client
-        while (client.connected()) {            // loop while the client's connected
-            if (client.available()) {             // if there's bytes to read from the client,
-                char c = client.read();             // read a byte, then
-                Serial.write(c);                    // print it out the serial monitor
-                if (c == '\n') {                    // if the byte is a newline character
+    if (client) {                             // 如果您获得一个客户端，
+        Serial.println("新客户端。");           // 在串口打印一条消息
+        String currentLine = "";                // 创建一个字符串来保存来自客户端的传入数据
+        while (client.connected()) {            // 当客户端连接时循环
+            if (client.available()) {             // 如果有字节可从客户端读取，
+                char c = client.read();             // 读取一个字节，然后
+                Serial.write(c);                    // 在串口监视器中打印出来
+                if (c == '\n') {                    // 如果字节是换行符
 
-                    // if the current line is blank, you got two newline characters in a row.
-                    // that's the end of the client HTTP request, so send a response:
+                    // 如果当前行为空，您得到了连续两个换行符。
+                    // 这是客户端HTTP请求的结束，所以发送响应：
                     if (currentLine.length() == 0) {
-                        // HTTP headers always start with a response code (e.g. HTTP/1.1 200 OK)
-                        // and a content-type so the client knows what's coming, then a blank line:
+                        // HTTP头总是以响应代码开始（例如 HTTP/1.1 200 OK）
+                        // 和内容类型，以便客户端知道接下来是什么，然后是空行：
                         client.println("HTTP/1.1 200 OK");
                         client.println("Content-type:text/html");
                         client.println();
 
-                        // the content of the HTTP response follows the header:
-                        client.print("Click <a href=\"/H\">here</a> to turn ON the LED.<br>");
-                        client.print("Click <a href=\"/L\">here</a> to turn OFF the LED.<br>");
+                        // HTTP响应的内容跟在头部之后：
+                        client.print("点击<a href=\"/H\">这里</a>打开LED。<br>");
+                        client.print("点击<a href=\"/L\">这里</a>关闭LED。<br>");
 
-                        // The HTTP response ends with another blank line:
+                        // HTTP响应以另一个空行结束：
                         client.println();
-                        // break out of the while loop:
+                        // 跳出while循环：
                         break;
-                    } else {    // if you got a newline, then clear currentLine:
+                    } else {    // 如果您得到一个换行符，则清除currentLine：
                         currentLine = "";
                     }
-                } else if (c != '\r') {  // if you got anything else but a carriage return character,
-                    currentLine += c;      // add it to the end of the currentLine
+                } else if (c != '\r') {  // 如果您得到除回车符之外的任何其他字符，
+                    currentLine += c;      // 将其添加到currentLine的末尾
                 }
 
-                // Check to see if the client request was "GET /H" or "GET /L":
+                // 检查客户端请求是否为 "GET /H" 或 "GET /L"：
                 if (currentLine.endsWith("GET /H")) {
-                    digitalWrite(LED_BUILTIN, HIGH);               // GET /H turns the LED on
+                    digitalWrite(LED_BUILTIN, HIGH);               // GET /H 打开LED
                 }
                 if (currentLine.endsWith("GET /L")) {
-                    digitalWrite(LED_BUILTIN, LOW);                // GET /L turns the LED off
+                    digitalWrite(LED_BUILTIN, LOW);                // GET /L 关闭LED
                 }
             }
         }
-        // close the connection:
+        // 关闭连接：
         client.stop();
-        Serial.println("Client Disconnected.");
+        Serial.println("客户端已断开连接。");
     }
 }
 ```
 
-## 常见问题解答
+## 常见问题
 
-1. 在Arduino代码中如何检查RTL8720固件版本？
+1. 在 Arduino 代码中检查 RTL8720 固件版本？
 
 ```cpp
 #include "rpcWiFi.h"
 
 void setup() {
     Serial.begin(115200);
-    while(!Serial); // Wait to open Serial Monitor
+    while(!Serial); // 等待打开串口监视器
     Serial.printf("RTL8720 Firmware Version: %s", rpc_system_version());
 }
 
@@ -1185,9 +1185,9 @@ void loop() {
 }
 ```
 
-## 技术支持 & 产品讨论
+## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您对我们的产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

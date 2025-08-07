@@ -276,7 +276,7 @@ It is possible that the port is occupied, you can change the port from 5001 to 5
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_esp32c6_kafka/11.png" style={{width:1000, height:'auto'}}/></div>
 
-4. Now the server is running on http://127.0.0.1:5001. Click this link to open it.
+4. Now the server is running on `http://127.0.0.1:5001`. Click this link to open it.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_esp32c6_kafka/12.png" style={{width:800, height:'auto'}}/></div>
 

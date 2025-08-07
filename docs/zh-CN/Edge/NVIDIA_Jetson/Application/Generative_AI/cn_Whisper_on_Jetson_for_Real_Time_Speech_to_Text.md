@@ -1,44 +1,41 @@
 ---
-description: 在 NVIDIA Jetson Orin 上部署 Whisper，实现实时语音转文本
-title: 使用 Whisper 实现语音转文本
+description: 在 NVIDIA Jetson Orin 上部署 Whisper，实现实时语音转文字
+title: 使用 Whisper 实现语音转文字
 keywords:
-  - Edge
+  - 边缘计算
   - reComputer
   - Jetson
-  - whisper
+  - Whisper
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/cnWhisper_on_Jetson_for_Real_Time_Speech_to_Text
+
 last_update:
-  date: 05/15/2025
+  date: 03/14/2024
   author: Jiahao
 
-no_comments: false # for Disqus
+no_comments: false # 用于 Disqus
 
 ---
 
-# 在 NVIDIA Jetson Orin 上部署 Whisper，实现实时语音转文本
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+# 在 NVIDIA Jetson Orin 上部署 Whisper，实现实时语音转文字
 
 ## 简介
 
-实时语音转文本（STT）系统在现代应用中发挥着重要作用，从语音助手到转录服务。以下是一些流行的 STT 模型：Whisper、Riva、DeepSpeech、Google Cloud Speech-to-Text API、Microsoft Azure Speech Service、IBM Watson Speech to Text、Kaldi、Wit.ai 等。NVIDIA Jetson Orin 以其高性能和能源效率著称，为在边缘部署此类高需求应用提供了一个有前景的平台。
+实时语音转文字（STT）系统在现代应用中发挥着重要作用，从语音助手到转录服务。以下是一些流行的 STT 模型：Whisper、Riva、DeepSpeech、Google Cloud Speech-to-Text API、Microsoft Azure Speech Service、IBM Watson Speech to Text、Kaldi、Wit.ai 等。NVIDIA Jetson Orin 以其高性能和能源效率著称，为在边缘部署此类高需求应用提供了一个有前景的平台。
 
 [Whisper](https://github.com/openai/whisper) 是一个先进的 STT 系统，利用深度学习技术，在准确性和效率方面表现出色。[Riva](https://github.com/nvidia-riva) 是 NVIDIA 开发的一个全面的多模态对话式 AI 框架。通过在 Jetson Orin 上部署 Whisper 或 Riva，开发者可以利用其强大的 GPU 和 CPU 核心，以及 Tensor Cores 等硬件加速技术，实现低延迟的实时 STT。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/Real-Time-Whisper.gif" /></div>
 
-在本 Wiki 中，我们介绍了 [在 Jetson 上实现实时 Whisper](https://github.com/LJ-Hao/Deploy-Whisper-on-NVIDIA-Jetson-Orin-for-Real-time-Speech-to-Text.git)。这种集成使得语音处理可以直接在设备上进行，消除了对持续网络连接的需求，同时增强了隐私和安全性。此外，我们还将比较 Whisper 和 Riva 在同一 Jetson Orin 设备上的推理速度。最终，在 Jetson Orin 上部署 Whisper 使开发者能够构建强大、高效的 STT 应用，在智能家居到工业自动化等多个领域提供高准确性和低延迟。
+在本 Wiki 中，我们将介绍 [Jetson 上的实时 Whisper](https://github.com/LJ-Hao/Deploy-Whisper-on-NVIDIA-Jetson-Orin-for-Real-time-Speech-to-Text.git)。这种集成使得语音处理可以直接在设备上进行，消除了对持续网络连接的需求，同时增强了隐私和安全性。此外，我们还将比较 Whisper 和 Riva 在同一 Jetson Orin 设备上的推理速度。最终，在 Jetson Orin 上部署 Whisper 使开发者能够构建强大、高效的 STT 应用，在智能家居到工业自动化等多个领域提供高准确性和低延迟。
 
 ## 硬件设置
 ### 硬件组件
 <div class="table-center">
 	<table align="center">
 		<tr>
-			<th>reComputer(或其他基于 Jetson 的设备)</th>
-      <th>reSpeaker (或其他 USB 接口麦克风)</th>
+			<th>reComputer（或其他基于 Jetson 的设备）</th>
+      <th>reSpeaker（或其他 USB 接口麦克风）</th>
 		</tr>
     <tr>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/recomputer_industrial_j3011_orin_nano_8gb.jpg" style={{width:250, height:'auto'}}/></div></td>
@@ -71,38 +68,40 @@ git clone https://github.com/LJ-Hao/Deploy-Whisper-on-NVIDIA-Jetson-Orin-for-Rea
 cd Deploy-Whisper-on-NVIDIA-Jetson-Orin-for-Real-time-Speech-to-Text
 pip install -r requirements.txt
 sudo apt update && sudo apt install ffmpeg
-arecord -D hw:2,0 --dump-hw-params #将麦克风速率设置为 16000
+arecord -D hw:2,0 --dump-hw-params # 将麦克风速率设置为16000
 ```
+
 #### 第二步：测试环境：
 
 ```shell
 python test.py
 ```
+
 如果您在终端中看到以下信息打印出来，说明您已成功安装必要的库。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/Deploy-whisper-on-Nvidia-Jetson-orin-for-real-time-speech-to-text-test.png" alt="pir" width={1000} height="auto"/></p>
 
-在您的终端中（Ctrl+Alt+T），输入 ``` ffmpeg -version```，如果您看到类似以下内容，则说明您已安装 ffmpeg。
+在终端中（Ctrl+Alt+T）输入 ``` ffmpeg -version```，如果您看到类似以下内容，说明您已成功安装 ffmpeg。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/Whisper-ffmpeg.png" alt="pir" width={1000} height="auto"/></p>
 
-## 开始运行
+## 运行程序
 
 ```shell
 python main.py
 ``` 
-<iframe width="800" height="400" src="https://www.youtube.com/embed/KR0GYqUuo5Y?si=uSGUkKmCSZmaq5f7" title="YouTube 视频播放器" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="800" height="400" src="https://www.youtube.com/embed/KR0GYqUuo5Y?si=uSGUkKmCSZmaq5f7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Riva 与 Whisper 的比较
+## Riva 与 Whisper 的对比
 
-Riva 以其先进的 AI 驱动语音识别和自然语言处理而闻名，能够实时转录、翻译和分析语音对话。
+Riva 以其先进的 AI 驱动语音识别和自然语言处理功能而闻名，为用户提供实时转录、翻译和语音对话分析的能力。
 
-Whisper 是一个自动语音识别（ASR）系统，基于从网络收集的 680,000 小时多语言和多任务监督数据进行训练。此外，它支持多语言转录以及将这些语言翻译成英语。
+Whisper 是一个自动语音识别（ASR）系统，基于从网络收集的 68 万小时多语言和多任务监督数据进行训练。此外，它支持多语言转录，并能够将这些语言翻译成英语。
 
-在即将发布的对比视频中，我们将比较 [Riva](https://wiki.seeedstudio.com/Real%20Time%20Subtitle%20Recoder%20on%20Nvidia%20Jetson/) 和 Whisper 在 Nvidia Jetson 上开发的语音转文本能力。
+在即将发布的对比视频中，我们将比较 [Riva](https://wiki.seeedstudio.com/cn/Real%20Time%20Subtitle%20Recoder%20on%20Nvidia%20Jetson/) 和 Whisper 在 Nvidia Jetson 上开发的语音转文字能力。
 
-<iframe width="800" height="400" src="https://www.youtube.com/embed/2l7yus611DI?si=XdEjwzpZdJkLC8aB" title="YouTube 视频播放器" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="800" height="400" src="https://www.youtube.com/embed/2l7yus611DI?si=XdEjwzpZdJkLC8aB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 项目展望
 
-在本项目中，我们使用 Whisper 实时捕获来自麦克风输入的数据，并将其显示在网页上。未来，我们将增强 Whisper 的实时处理能力，以进一步降低延迟并提高语音识别的准确性，同时探索与其他 AI 服务或 API 的集成，以增强应用程序的功能性。
+在本项目中，我们使用 Whisper 实时捕获来自麦克风输入的数据并将其显示在网页上。未来，我们将增强 Whisper 的实时处理能力，以进一步减少延迟并提高语音识别的准确性，同时探索与其他 AI 服务或 API 的集成，以增强应用程序的功能。

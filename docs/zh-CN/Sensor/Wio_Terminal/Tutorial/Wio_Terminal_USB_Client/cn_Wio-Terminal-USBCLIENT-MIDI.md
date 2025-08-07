@@ -6,33 +6,33 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-USBCLIENT-MIDI
 last_update:
-  date: 3/07/2024
-  author: jessie
+  date: 1/17/2023
+  author: jianjing Huang
 ---
 
-# 将Wio Terminal用作USB MIDI设备
+# 将 Wio Terminal 用作 USB MIDI 设备
 
-该存储库介绍了如何将Wio Terminal用作USB MIDI（音乐器数字接口）设备，使其可以用于控制音乐器！
+本教程介绍如何将 Wio Terminal 用作 USB MIDI（音乐设备数字接口）设备，可以用来控制音乐设备！
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200110105918.gif"/></div>
 
-## 安装库
+## 安装库文件
 
-此示例还需要额外的Arduino MIDI库：
+此示例还需要额外的 Arduino MIDI 库：
 
-1. 访问 [Arduino MIDI Library](https://github.com/FortySevenEffects/arduino_midi_library) 存储库，并将整个存储库下载到本地驱动器。
+1. 访问 [Arduino MIDI Library](https://github.com/FortySevenEffects/arduino_midi_library) 仓库，将整个仓库下载到本地驱动器。
 
-2. 现在，可以将库安装到Arduino IDE中。打开Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`, 选择刚刚下载的 `Seeed_Arduino_LCD` 文件。
+2. 现在可以将库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，选择刚刚下载的 `Seeed_Arduino_LCD` 文件。
 
 ![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg)
 
 ## 获取结果
 
-在这种情况下，Wio Terminal连接到我的Macbook，并使用macOS附带的 `Audio MIDI Setup` 应用程序进行测试。您还可以在 `Arduino IDE`的串行监视器中查看串行数据。如果您有可用的MIDI设备，则可以使用该设备以获得更逼真的场景！
+在这个案例中，Wio Terminal 连接到我的 Macbook，使用 macOS 自带的 `Audio MIDI Setup` 应用程序进行测试。您也可以在 `Arduino IDE` 的串口监视器中查看串口数据。如果您有可用的 MIDI 设备，请使用该设备以获得更真实的场景！
 
 ## 完整代码
 
-有关更多功能，请参考TinyUSB库。
+更多功能请参考 TinyUSB 库。
 
 ```cpp
 #include <Arduino.h>

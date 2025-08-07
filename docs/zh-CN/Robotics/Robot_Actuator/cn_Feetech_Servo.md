@@ -81,7 +81,7 @@ last_update:
 
 ## 控制案例
 
-  <a href="https://wiki.seeedstudio.com/bus_servo_driver_board/" className="nav-item">
+  <a href="https://wiki.seeedstudio.com/cn/bus_servo_driver_board/" className="nav-item">
     <span className="text">XIAO总线舵机驱动板控制STS3215</span>
   </a>
 

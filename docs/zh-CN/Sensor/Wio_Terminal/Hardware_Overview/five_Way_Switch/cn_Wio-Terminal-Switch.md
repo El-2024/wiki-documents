@@ -1,22 +1,22 @@
 ---
 description: 概述
-title: 五向开关入门指南
+title: 5向开关入门指南
 keywords:
 - Wio_terminal five_Way_Switch
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-Switch
 last_update:
-  date: 3/09/2024
-  author: 金菊
+  date: 1/17/2023
+  author: jianjing Huang
 ---
 
-# 五向开关入门指南
+# 5向开关入门指南
 
-该存储库演示了如何在 Wio Terminal 上使用五向开关。
+本仓库演示了如何在 Wio Terminal 中使用5向开关。
 
 ## 示例代码
 
-**注:** **`WIO_5S_UP`**, **`WIO_5S_DOWN`**, **`WIO_5S_LEFT`**, **`WIO_5S_RIGHT`** 和  **`WIO_5S_PRESS`** 是为 Wio Terminal 的五向开关定义的常量。
+**注意：** **`WIO_5S_UP`**、**`WIO_5S_DOWN`**、**`WIO_5S_LEFT`**、**`WIO_5S_RIGHT`** 和 **`WIO_5S_PRESS`** 是为 Wio Terminal 5向开关定义的。
 
 ```cpp
 void setup() {

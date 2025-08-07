@@ -1,6 +1,6 @@
 ---
-description:  语音识别和语音-意图
-title:  语音识别和语音-意图
+description: 语音识别和语音转意图
+title: 语音识别和语音转意图
 keywords:
 - Wio_terminal 
 - Embedded_ML 
@@ -8,37 +8,37 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-TinyML-TFLM-3
 last_update:
-  date: 3/06/2024
-  author: 金菊
+  date: 1/30/2023
+  author: jianjing Huang
 ---
 
-# Wio Terminal上的TensorFlow Lite Micro语音识别-语音-意图
+# Wio Terminal Tensorflow Lite Micro 在MCU上的语音识别 – 语音转意图
 
-A传统的使用语音进行设备控制/用户请求满足的方法是先将语音转录为文本，然后解析文本以得到适当格式的命令/查询。虽然这种方法在词汇量和/或应用场景方面提供了很大的灵活性，但是将语音识别模型和专用解析器结合在一起并不适合于资源受限的微控制器
+传统的使用语音进行设备控制/用户请求处理的方法是，首先将语音转录为文本，然后将文本解析为合适格式的命令/查询。虽然这种方法在词汇量和/或应用场景方面提供了很大的灵活性，但语音识别模型和专用解析器的组合不适合微控制器的受限资源。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-TFLM-3/image-6-1024x416.png" /></div>
 
-    Source: Wio Terminal, Picovoice, Tensorflow Lite
+    来源：Wio Terminal、Picovoice、Tensorflow Lite
 
-在这个项目中，我们将采用一种更高效的方法，直接将用户的话语解析为可执行的输出，即意图/槽。我们将分享训练特定领域语音到意图模型并将其部署到内置麦克风的基于Cortex M4F的开发板Wio Terminal的技术。
+在这个项目中，我们将采用一种更高效的方法，直接将用户话语解析为意图/槽位形式的可操作输出。我们将分享训练特定领域语音转意图模型的技术，并将其部署到基于Cortex M4F的开发板上，该开发板内置麦克风，即来自Seeed Studio的Wio Terminal。
 
-有关更多细节和视觉效果，请观看相应的视频!
+更多详细信息和视觉效果，请观看相应的视频！
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CVq4cet5jgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-有不同类型的语音识别任务，我们可以大致将它们分为三组：
+有不同类型的语音识别任务——我们可以大致将它们分为三组：
 
-- 大词汇连续语音识别（LVCSR）
+- 大词汇量连续语音识别（LVCSR）
 - 关键词检测
-- 语音到意图
+- 语音转意图
 
-关键词检测在微控制器上效果很好，使用各种无代码开源工具（例如Edge Impulse）进行训练相对容易，但无法很好地处理较大的词汇量。
+关键词检测在微控制器上运行良好，使用各种可用的无代码开源工具（如Edge Impulse）相当容易训练，但无法很好地处理大词汇量。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-TFLM-3/image-7-768x570.png" /></div>
 
-如果我们希望设备能根据语音输入执行有用的操作，我们需要结合LVCSR模型和基于文本的自然语言解析器。这种方法鲁棒性强，相对容易实现，因为公开可用的语音识别引擎很多，但是即使在单板计算机上运行也不适合，更不用说微控制器了。
+如果我们希望设备基于语音输入执行有用的操作，我们需要结合LVCSR模型和基于文本的自然语言解析器——这种方法是稳健的，并且由于公开可用的ASR引擎丰富，实现起来相对容易，但即使在单板计算机上运行也不合适，更不用说微控制器了。
 
-还有第三种方式，直接将语音转换为基于特定领域词汇的解析意图。以智能洗衣机或智能灯为例，通过处理话语“正常循环低速”，语音到意图模型将输出解析的意图，例如：
+还有第三种方法，基于特定领域词汇直接将语音转换为解析的意图。让我们以智能洗衣机或智能灯为例。语音转意图模型在处理话语"Normal cycle with low-spin"时会输出解析的意图，例如
 
 ```json
 { Intent: washClothes },
@@ -49,33 +49,33 @@ A传统的使用语音进行设备控制/用户请求满足的方法是先将语
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-TFLM-3/image-9-768x621.png" /></div>
 
-这就是我们需要的一切，我们可以用声音来控制智能洗衣机。
+这确实是我们能够用语音控制所述智能洗衣机所需要的全部。
 
-语音到意图在研究中得到很好的代表，但缺乏适用于微控制器的广泛开源实现。 适用于微控制器的实现。
-生产就绪，而不是开源:
+语音转意图在研究中有很好的代表性，但缺乏适用于微控制器的广泛可用的开源实现。
+生产就绪，非开源：
 
 - Picovoice
 - Fluent.ai
 
-适用于生产的开源软件，不适合微控制器：
+生产就绪，FOSS，不适用于微控制器：
 
 - Speechbrain.io
 
-您可以使用我们准备的Jupyter Notebook或GitHub存储库中的训练脚本进行模型训练 (在文章末尾的 **Reference** 部分找到)。 Jupyter Notebook包含一个非常基本的参考模型实现，并对每个单元进行了解释。
+对于模型训练，您可以使用我们准备的Jupyter Notebook或来自Github仓库的训练脚本（在文章末尾的**参考**部分找到它们）。Jupyter Notebook包含一个非常基本的参考模型实现，并且对每个单元格都有解释。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-TFLM-3/image-10.png" /></div>
 
-在训练模型后，将其复制到Wio Terminal代码所在的文件夹中，并将模型的名称更改为 [line 106](https://github.com/AIWintermuteAI/Speech-to-Intent-Micro/blob/886746bb1878971d43e3e39584e0e2a492933491/inference_code/Wio_Terminal/wio_speech_to_intent_150_10/wio_speech_to_intent_150_10.ino#L106) 中的模型名称。让我们简要介绍代码的最重要部分。它可以大致分为三个部分：
+模型训练完成后，将其复制到包含Wio Terminal代码的文件夹中，并在[第106行](https://github.com/AIWintermuteAI/Speech-to-Intent-Micro/blob/886746bb1878971d43e3e39584e0e2a492933491/inference_code/Wio_Terminal/wio_speech_to_intent_150_10/wio_speech_to_intent_150_10.ino#L106)中将模型名称更改为您的模型名称。让我们回顾代码中最重要的部分。它可以大致分为三个部分：
 
-- 音频获取
+- 音频采集
 - MFCC计算
-- 对MFCC特征进行推理
+- 在MFCC特征上进行推理
 
 ## 音频采集
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-TFLM-3/DMAPIO.GIF" /></div>
 
-为了使用Wio终端内置麦克风录制声音进行处理，我们使用Cortex M4F MCU的DMA ADC功能。DMA代表直接内存访问，它的功能就是字面意义上的——在MCU中的一个特定部分称为DMAC或直接内存访问控制，在事先设置好的情况下，将数据从一个位置（例如内部存储器、SPI、I2C、ADC或其他接口）传输到另一个位置。这样，传输可以在MCU的较少参与下进行，除了初始设置之外。我们在这里设置传输的源和目的地。
+为了使用 Wio Terminal 内置麦克风录制声音进行处理，我们使用 Cortex M4F MCU 的 DMA ADC 功能。DMA 代表直接内存访问，正如其名称所示——MCU 的一个特定部分称为 DMAC 或直接内存访问控制器，预先设置用于将数据从一个位置（例如内部内存、SPI、I2C、ADC 或其他接口）"传输"到另一个位置。这样，传输可以在 MCU 很少参与的情况下进行，除了初始设置。我们在这里设置传输的源和目标
 
 ```cpp
 descriptor.descaddr = (uint32_t)&descriptor_section[1]; // Set up a circular descriptor
@@ -98,7 +98,7 @@ descriptor.btctrl = DMAC_BTCTRL_BEATSIZE_HWORD |    // Beat size is HWORD (16-bi
 memcpy(&descriptor_section[1], &descriptor, sizeof(descriptor));  // Copy the descriptor to the descriptor section
 ```
 
-正如我们在DMA描述符中指定的参数DMAC_BTCTRL_BLOCKACT_SUSPEND一样，在完成一个块传输后，DMA通道应挂起。然后，我们继续设置一个由TC5定时器触发的ISR（中断服务程序）：
+正如我们在 DMA 描述符中使用参数 DMAC_BTCTRL_BLOCKACT_SUSPEND; 指定的那样，DMA 通道应在完整的块传输后被挂起。然后我们继续设置一个由 TC5 定时器触发的 ISR（中断服务例程）：
 
 ```cpp
  // Configure Timer/Counter 5
@@ -112,7 +112,7 @@ TC5->COUNT16.CTRLA.bit.ENABLE = 1;                          // Enable the TC5 ti
 while (TC5->COUNT16.SYNCBUSY.bit.ENABLE);                   // Wait for synchronization
 ```
 
-中断服务程序（ISR）将以等间隔的时间间隔调用特定函数，由TC5定时器控制。让我们看看这个函数。
+ISR 将在由 TC5 定时器控制的等间隔时间调用特定函数。让我们看看那个函数。
 
 ```cpp
 /**
@@ -152,15 +152,15 @@ void DMAC_1_Handler() {
 }
 ```
 
-ISR函数DMAC1_Handler()检查是否挂起了DMAC通道1，这发生在一块信息录制完成时。如果挂起了，它调用用户定义的函数audio_rec_callback()，在这个函数中，我们将填充的DMA ADC缓冲区的内容复制到一个（可能更大的）用于计算MFCC特征的缓冲区中。在此步骤中，我们还可以选择对声音进行一些后处理。
+名为 DMAC1_Handler() 的 ISR 函数检查 DMAC 通道 1 是否被挂起——这在一个信息块完成录制时发生。如果是，它调用用户定义的函数 audio_rec_callback()，在这里我们将填充的 DMA ADC 缓冲区的内容复制到用于计算 MFCC 特征的（可能）更大的缓冲区中。可选地，我们还在此步骤中应用一些声音后处理。
 
 ## MFCC 计算
 
-MFCC特征提取以与TensorFlow MFCC Op代码匹配的方式借用自ARM在ARM微控制器上进行关键字搜索的存储库。您可以在 [此处](https://github.com/ARM-software/ML-KWS-for-MCU) 此处找到原始代码。
+用于匹配 TensorFlow MFCC Op 代码的 MFCC 特征提取借用了 ARM 仓库中用于 ARM 微控制器关键词搜索的代码。您可以在[这里](https://github.com/ARM-software/ML-KWS-for-MCU)找到原始代码。
 
-与MFCC特征计算相关的大部分工作都发生在MFCC类的mfcc_compute (const int16_t *audio_data, float* mfcc_out)方法中。该方法接收一个音频数据的指针，对于我们的情况，是320个声音数据点的指针，以及指向MFCC输出值数组中特定位置的指针。对于一个时间片，我们执行以下操作：
+与 MFCC 特征计算相关的大部分工作都在 MFCC 类的 mfcc_compute(const int16_t *audio_data, float* mfcc_out) 方法中进行。该方法接收一个指向音频数据的指针，在我们的情况下是 320 个声音数据点，以及一个指向 MFCC 输出值数组中特定位置的指针。对于一个时间片，我们执行以下操作：
 
-将数据归一化为-1到1之间的范围并进行填充（在我们的情况下，填充不会发生，因为音频数据的大小总是足够计算一个时间片的MFCC特征）：
+将数据标准化到 -1,1 并填充它（在我们的情况下不会发生填充，因为音频数据总是计算一个 MFCC 特征片所需的确切大小）：
 
 ```cpp
   //TensorFlow way of normalizing .wav data to (-1,1)
@@ -171,7 +171,7 @@ MFCC特征提取以与TensorFlow MFCC Op代码匹配的方式借用自ARM在ARM�
   memset(&frame[frame_len], 0, sizeof(float) * (frame_len_padded-frame_len));
 ```
 
-使用ARM数学库函数计算 RFTT or [实数快速傅里叶变换](https://www.keil.com/pack/doc/CMSIS/DSP/html/group__RealFFT.html) ：
+使用 ARM Math 库函数计算 RFTT 或[实数快速傅里叶变换](https://www.keil.com/pack/doc/CMSIS/DSP/html/group__RealFFT.html)：
 
 ```cpp
   //Compute FFT
@@ -193,7 +193,7 @@ MFCC特征提取以与TensorFlow MFCC Op代码匹配的方式借用自ARM在ARM�
   buffer[half_dim] = last_energy;  
 ```
 
-然后将梅尔滤波器应用于保存在上一步缓冲区中的数据的平方根。梅尔滤波器是在实例化MFCC类时创建的，在create_mel_fbank()方法中。用户事先指定了滤波器的数量、最小和最大频率，并且保持这些设置在训练脚本和推断代码之间一致非常重要，否则会导致显著的准确性下降。
+然后对上一步保存在缓冲区中的数据的平方根应用 Mel 滤波器组。Mel 滤波器组在 MFCC 类实例化时在 create_mel_fbank() 方法内创建。滤波器组的数量、最小和最大频率由用户预先指定——在训练脚本和推理代码之间保持它们的一致性非常重要，否则会出现显著的精度下降。
 
 ```cpp
   float sqrt_data;
@@ -215,35 +215,35 @@ MFCC特征提取以与TensorFlow MFCC Op代码匹配的方式借用自ARM在ARM�
   }
 ```
 
-最后，我们对梅尔能量数组进行 [离散余弦变换](https://en.wikipedia.org/wiki/Discrete_cosine_transform) ，并将其写入MFCC特征输出数组。在原始脚本中，这一步还进行了量化，但我选择使用Tensorflow Lite for Microcontrollers示例中的量化过程。
+最后，我们对 Mel 能量数组进行[离散余弦变换](https://en.wikipedia.org/wiki/Discrete_cosine_transform)并将其写入 MFCC 特征输出数组。在原始脚本中，此步骤也执行了量化，但我选择使用 Tensorflow Lite for Microcontrollers 示例中的量化程序。
 
-## 对MFCC特征进行推断
+## 对 MFCC 特征进行推理
 
-一旦一个样本（3秒内的所有音频）的所有音频都经过处理并转换为MFCC特征，我们将整个MFCC特征数组从FLOAT32转换为INT8值，并将其输入神经网络。 TensorFlow Lite for Microcontrollers 的初始化和推断过程已在我之前的文章中进行了描述，因此我在这里不再重复。
+一旦一个样本（3 秒）内的所有音频都被处理并转换为 MFCC 特征，我们将整个 MFCC 特征数组从 FLOAT32 转换为 INT8 值并将其输入神经网络。TensorFlow Lite for Microcontrollers 的初始化和推理过程已经在我之前的一篇文章中描述过，所以我不会在这里重复。
 
-在编译代码之前，请确保已安装所有必要的库，并且Seeed SAMD板定义的版本至少为1.8.2版本——这对于TensorFlow Lite库的编译非常重要。编译和上传代码——如果将DEBUG参数设置为false，代码将立即开始运行，并且您只需在Wio终端顶部按下C按钮，然后从数据集中说出一个句子。结果将同时显示在屏幕上，并在连接到计算机的情况下输出到串行监视器。
+在编译草图之前，请确保您已安装所有必要的库，并且 Seeed SAMD 板定义至少是 1.8.2 版本——这对于 TensorFlow Lite 库无错误编译非常重要。编译并上传草图——如果您将 DEBUG 参数设置为 false，代码将立即开始运行，您只需按下 Wio Terminal 顶部的 C 按钮并说出数据集中的一个句子。结果将显示在屏幕上，如果 Wio Terminal 连接到计算机，也会输出到串行监视器。
 
-虽然本课程基于Wio Terminal，因为它非常适合探索嵌入式机器学习，但也可以在其他设备上实现。最简单的方法是将代码移植到其他Cortex M4F MCU，例如Nano33 BLE Sense——这只需要调整以适应不同的麦克风即可。移植到其他ARM MCU应该也相当简单。
+虽然本课程基于 Wio Terminal，因为它非常适合探索嵌入式机器学习，但绝对可以在其他设备上实现。最简单的方法是将代码移植到其他 Cortex M4F MCU，如 Nano33 BLE Sense——这只需要调整不同的麦克风。移植到其他 ARM MCU 也应该相当简单。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-TFLM-3/image-13-768x626.png" /></div>
 
-如果要移植到其他体系结构，如ESP32或K210或其他体系结构，需要重新实现MFCC计算，因为它们使用CMSIS-DSP中的ARM特定函数。
+移植到其他架构，例如 ESP32 或 K210 或其他架构，需要重新实现 MFCC 计算，因为它们使用来自 CMSIS-DSP 的 ARM 特定函数。
 
-该项目中的基本神经网络架构可以进行多种改进。这些改进包括：
+项目中的基本神经网络架构可以进行多项改进。这些改进包括：
 
 - 模型预训练
-- seq2seq, LSTM, 注意力机制
+- seq2seq、LSTM、注意力机制
 - 可训练滤波器
-- AutoML, 合成数据
+- AutoML、合成数据
 
-请观看与此主题相关的TinyML讲座，以了解更多信息并找到论文链接！
+查看这个关于此主题的TinyML演讲，了解更多信息并找到论文链接！
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YmJrr1D191k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-我们鼓励您fork代码存储库，尝试在自己的数据集上进行训练，或者尝试实现更高级的架构或模型训练技术。如果您这样做，请不要犹豫在这里向我提问或在Github上提交PR！
+我们鼓励您分叉代码仓库，尝试在自己的数据集上进行训练，也许尝试实现更高级的架构或模型训练技术。如果您这样做，请不要犹豫在这里给我留言或在 Github 上提交 PR！
 
 ## 参考资料
 
 - [Jupyter notebook](https://github.com/AIWintermuteAI/Speech-to-Intent-Micro/blob/main/jupyter_notebooks/prepare_data.ipynb)
 
-- [Project Github](https://github.com/AIWintermuteAI/Speech-to-Intent-Micro)
+- [项目 Github](https://github.com/AIWintermuteAI/Speech-to-Intent-Micro)
