@@ -2043,6 +2043,14 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'AI Assistant',
+          items: [
+            'Sensor/Beyond_Grove/AI_Assistant/ai_assistant_getting_started'
+          ],
+        },
+        
+        {
+          type: 'category',
           label: 'Accessories',
           items: [
             {
