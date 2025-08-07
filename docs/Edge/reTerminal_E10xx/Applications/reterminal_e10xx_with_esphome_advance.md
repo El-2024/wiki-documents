@@ -817,6 +817,7 @@ display:
         it.printf(400, 280, id(mid_font), TextAlign::CENTER, "%s, %s", wday, dateStr);
       }
 ```
+
 </details>
 
 When your configuration is successfully uploaded and running, your reTerminal E10xx will display a comprehensive dashboard with environment data, time, and battery status:
@@ -891,4 +892,3 @@ Thank you for choosing our products! We are here to provide you with different s
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>
-```

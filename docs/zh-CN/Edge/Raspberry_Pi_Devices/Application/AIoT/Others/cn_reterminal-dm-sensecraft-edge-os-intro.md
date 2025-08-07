@@ -8,19 +8,14 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reterminal-dm-sensecraft-edge-os-intro
 last_update:
-  date: 05/15/2025
+  date: 04/23/2023
   author: Peter Pan
 ---
-
-#  reTerminal DM SenseCraft Edge OS 入门指南
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+# reTerminal DM SenseCraft Edge OS 入门指南
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/splash.png" alt="pir" width="600" height="auto"/></p>
 
-SenseCraft Edge OS 是一款为 reTerminal DM 的 10.1 英寸人机界面 (HMI) 设备精心设计的尖端操作系统，集成了多种功能，极大地提升了用户体验。这款革命性的操作系统拥有直观的界面，内置设置和控制功能，使用户能够轻松配置和管理设备。此外，它无缝集成了 Node-RED 编辑器和 Node-RED Dashboard，使用户能够解锁前所未有的定制化和自动化能力。借助 Node-RED 的可视化编程和自动化工具，该操作系统使用户能够轻松创建复杂的工作流并部署先进的控制系统。凭借直观的 HMI 控制与 Node-RED 的多功能性的完美结合，SenseCraft Edge OS 在各种使用场景中为 HMI 设备设立了增强功能和无与伦比的用户友好性的新标准。内置的 OSTree 版本化文件系统提供了一个强大的框架，用于以可扩展和可靠的方式管理和部署基于 Linux 的操作系统，重点在于原子性、不变性和高效的存储使用。
+SenseCraft Edge OS 是一款专为 reTerminal DM 的 10.1 英寸人机界面 (HMI) 设备精心设计的前沿操作系统，集成了众多功能，显著提升用户体验。这款创新操作系统拥有直观的界面和内置的设置与控制功能，使用户能够轻松配置和管理设备。此外，它与 Node-RED 编辑器和 Node-RED Dashboard 无缝集成，使用户能够解锁无与伦比的定制和自动化能力。借助 Node-RED 的可视化编程和自动化工具，该操作系统使用户能够轻松创建复杂的工作流程并部署高级控制系统。SenseCraft Edge OS 将直观的 HMI 控制与 Node-RED 的多功能性完美结合，为各种使用场景中的 HMI 设备设立了新的功能和用户友好性标准。内置的 OSTree 版本化文件系统提供了一个强大的框架，用于以可扩展和可靠的方式管理和部署基于 Linux 的操作系统，重点关注原子性、不变性和高效的存储使用。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-DM-p-5616.html">
@@ -29,21 +24,21 @@ SenseCraft Edge OS 是一款为 reTerminal DM 的 10.1 英寸人机界面 (HMI) 
 </div>
 
 :::note
-reTerminal DM 将从下一批产品发布开始预装 Raspberry Pi OS 作为默认操作系统。
+reTerminal DM 将从下一批产品发布开始默认搭载 Raspberry Pi OS 作为操作系统。
 :::
 
 :::note
 此操作系统目前基于 reTerminal DM 开发，仅适用于生产版本的 reTerminal DM，您可以下载 [Sensecraft Edge OS](https://sourceforge.net/projects/reterminal-dm/files/Sensecraft-edge-OS-V0.3.10.tar.gz/download)
 :::
 
-## 功能
+## 功能特点
 
-* **触摸友好的用户界面设计**，专为人机界面 (HMI) 设备量身定制，确保直观且无缝的用户体验。
-* **无缝集成**广受欢迎的**“无代码和低代码”开发环境 Node-RED**，以及其配套组件 **Node-RED Dashboard**。这种集成为用户提供了强大的可视化编程能力和多功能的仪表板框架，无需广泛的编码知识即可构建定制化应用程序。
-* **内置系统设置和控制**功能，提供全面且直观的界面，用于配置和管理 reTerminal DM 的各个方面。
-* **内置应用中心以支持未来的用例扩展**，它是一个访问和安装各种应用程序和扩展的中心，允许用户定制和扩展操作系统的功能。
-* **内置可配置服务**，如 **MQTT、MySQL 和 ChirpStack**，为用户在构建数据可视化仪表板应用程序时提供了增强的功能和灵活性。
-* **OSTree 版本化文件系统**支持操作系统的**原子升级**，并允许您跟踪和管理操作系统及其组件的不同版本。这使得在需要时更容易回滚到以前的版本。
+* **触摸友好的 UI 设计**，专为人机界面 (HMI) 设备量身定制，确保直观流畅的用户体验。
+* **无缝集成**广受欢迎的**“无代码和低代码”开发环境 Node-RED**及其配套组件 **Node-RED Dashboard**。此集成为用户提供强大的可视化编程能力和多功能仪表板框架，无需广泛的编码知识即可构建定制应用程序。
+* **内置系统设置和控制功能**，提供全面直观的界面，用于配置和管理 reTerminal DM 的各个方面。
+* **内置应用中心**，用于未来的用例扩展，它是访问和安装各种应用程序和扩展的中心，使用户能够定制和扩展操作系统的功能。
+* **内置可配置服务**，如 **MQTT、MySQL 和 ChirpStack**，为用户提供增强的功能和灵活性，用于构建数据可视化仪表板应用程序。
+* **OSTree 版本化文件系统**支持整个操作系统的**原子升级**，并允许您跟踪和管理操作系统及其组件的不同版本。这使得在需要时更容易回滚到以前的版本。
 * **内置系统健康检查功能**，允许用户监控 reTerminal DM 的整体健康状况和性能。此功能提供有关系统状态的宝贵见解，确保最佳功能并识别潜在问题。
 
 
@@ -63,41 +58,41 @@ import TabItem from '@theme/TabItem';
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/status-bar.png" /></div>
 
-可点击的项目及功能：
+可点击的项目及其功能：
 
 <div class="table-center">
 
 | 图标 | 功能 | 
 |---| ---|
 |电源控制 | 打开一个下拉列表，包含“重启”、“关机”、“睡眠”选项 |
-|蓝牙连接 | 跳转到蓝牙设置视图 |
-|以太网连接| 跳转到以太网设置视图 |
-|WiFi连接 | 跳转到 WiFi 设置视图 |
+|蓝牙连接 | 跳转到蓝牙设置界面 |
+|以太网连接| 跳转到以太网设置界面 |
+|WiFi连接 | 跳转到WiFi设置界面 |
 
 </div>
 
-### 仪表盘 标签页
+### 仪表盘标签页
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/overview.png" /></div>
 
-仪表盘 标签页在 reTerminal DM 上本地渲染 "node-red-dashboard" 视图，以下是一些设计参考：
+仪表盘标签页在本地 reTerminal DM 上渲染“node-red-dashboard”视图，以下是一些设计参考：
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/dashboard-size.png" /></div>
 
 * 无需滚动的最大宽度：1075px
 * 无需滚动的最大高度：752px
 
-您还可以在与 reTerminal DM 位于同一网络的外部设备上访问仪表盘视图，只需在外部设备上打开您喜欢的网页浏览器，输入 reTerminal DM 的 IP 地址，后接默认的 Node-RED 端口 1880，再加上 **'/ui/'**，URL 应如下所示：**"ipaddress:1880/ui/"**
+您还可以在与 reTerminal DM 位于同一网络的外部设备上访问仪表盘视图，只需在该设备上打开您喜欢的浏览器，输入 reTerminal DM 的 IP 地址，后接默认的 Node-RED 端口 1880，再加上 **'/ui/'**。URL 应如下所示：**"ipaddress:1880/ui/"**
 
 > 例如：在我的情况下，reTerminal DM 的 IP 地址是 "192.168.49.163"，那么 URL 是：**"192.168.49.163:1880/ui/"**
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/dashboard-eg.png" /></div>
 
-### Node-RED 编辑器标签页 {#node-red-editor-tab}
+### Node-RED 编辑器标签页
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/node-red.png" /></div>
 
-请注意，您可以在与 reTerminal DM 位于同一网络的外部设备上打开 Node-RED 编辑器，只需在外部设备上打开您喜欢的网页浏览器，输入 reTerminal DM 的 IP 地址，后接默认的 Node-RED 端口 1880。要找到 reTerminal DM 的 IP 地址，您可以参考下图：
+请注意，您可以在与 reTerminal DM 位于同一网络的外部设备上打开 Node-RED 编辑器，只需在该设备上打开您喜欢的浏览器，输入 reTerminal DM 的 IP 地址，后接默认的 Node-RED 端口 1880。要找到 reTerminal DM 的 IP 地址，可以参考下图：
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/node-red-ipaddress.png" /></div>
 
@@ -111,11 +106,11 @@ import TabItem from '@theme/TabItem';
 
 有关如何在 reTerminal DM 上使用 Node-RED 的更多信息，请访问 Node-RED 的 Wiki 页面：
 
-* [reTerminal DM RS485 接口与 Node-RED](/reTerminal-DM-Node-Red-RS485)
+* [reTerminal DM RS485 端口与 Node-RED](/reTerminal-DM-Node-Red-RS485)
 * [reTerminal DM MQTT 与 Node-RED](/reTerminal-DM-Node-Red-mqtt)
 * [reTerminal DM CAN BUS 与 Node-RED](/reTerminal-DM-Node-Red-canbus)
 
-### 系统设置标签页 {#system-settings-tab}
+### 系统设置标签页
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/settings.png" /></div>
 
@@ -166,21 +161,21 @@ import TabItem from '@theme/TabItem';
 ##### 更新
 
 :::note
-SenseCraft Edge OS 需要更新两部分内容。
+SenseCraft Edge OS 有两部分需要更新。
 
 系统更新：
 
-* 负责系统后端组件
+* 负责系统后端组件的更新
 
 SenseCraft Edge 更新：
 
-* 与 SenseCraft 应用程序 UI 界面相关的后端和前端组件
+* 负责 SenseCraft 应用程序 UI 界面的后端和前端组件更新
 
 有两种方式可以更新它们。
 
 本地更新：
 
-* 使用包含更新文件的 USB 存储设备。
+* 使用包含更新文件的 USB 存储设备
 
 网络更新：
 
@@ -194,13 +189,13 @@ SenseCraft Edge 更新：
 
 您可以分别点击 `立即更新` 按钮来更新系统或 SenseCraft Edge 应用程序。
 
-如果您的系统是最新版本，您将会收到弹出的通知 `The System Version is latest version`（系统版本是最新版本）。
+如果您的系统是最新版本，您将会收到弹出通知 `The System Version is latest version`（系统版本是最新版本）。
 
-关于系统更新：
+系统更新：
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/system-update-success.png" /></div>
 
-关于 SenseCraft Edge 更新：
+SenseCraft Edge 更新：
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/app-upgrade-success.png" /></div>
 
@@ -210,32 +205,32 @@ SenseCraft Edge 更新：
 
 ##### 本地更新
 
-<!-- 第一步：请下载更新文件并保存到一个 USB 存储设备 -->
+<!-- 第一步：请下载更新文件并保存到一个USB存储设备 -->
 
-第一步：请点击 `Local Update`（本地更新）按钮
+**步骤 1**：请点击 `Local Update`（本地更新）按钮
 
-您应该会看到以下弹出窗口。
+您将看到以下弹出窗口。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/local-update.png" /></div>
 
-第二步：请将包含更新文件的 USB 存储设备插入 reTerminal DM，如上图所示。
+**步骤 2**：请将包含更新文件的USB存储设备插入到reTerminal DM，如上图所示。
 
-第三步：在弹出窗口中点击 `next`（下一步），点击后请耐心等待，这可能需要一些时间来加载。
+**步骤 3**：在弹出窗口中点击 `next`（下一步），点击后请耐心等待，这可能需要一些时间加载。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/select-update-file.png" /></div>
 
 :::warning
 
-**USB 错误**
+**USB错误**
 
-如果 USB 出现问题，您将看到 `No USB flash drive detected`（未检测到 USB 闪存驱动器）。
+如果USB设备出现问题，您将看到 `No USB flash drive detected`（未检测到USB闪存驱动器）。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/local-update.png" /></div>
 
-为了让系统更新更加顺利，请确保您使用的是质量良好的 USB 存储设备，并格式化为 FAT32 或 EXT4，且 USB 存储设备的容量小于或等于 64GB。
+为了让系统更新更加顺利，请确保您使用的是质量良好的USB存储设备，并格式化为FAT32或EXT4，且USB存储设备的容量小于或等于64GB。
 :::
 
-第四步：点击下一步并等待更新过程完成。
+**步骤 4**：点击 `Next`（下一步）并等待更新过程完成。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/local-updating.png" /></div>
 
@@ -249,86 +244,78 @@ SenseCraft Edge 更新：
 
 ##### PIN码
 
-默认情况下 PIN 未设置，此 PIN 用于为 [Node-RED 编辑器标签](#node-red-editor-tab) 和 [系统设置标签](#system-settings-tab) 设置密码锁。
+默认情况下PIN码未设置，此PIN码用于为 [Node-RED编辑器标签](#node-red-editor-tab) 和 [系统设置标签](#system-settings-tab) 设置密码锁。
 
-##### 设置 PIN 码：
+##### 设置PIN码：
 
-设置 PIN 的步骤：
+设置PIN码的步骤：
 
-第一步：点击并切换 `Set PIN`（设置 PIN）按钮以进入 PIN 设置流程。
+**步骤 1**：点击并切换 `Set PIN`（设置PIN）按钮以进入PIN码设置流程。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/toggle-pin-setting.png" /></div>
 
-第二步：请输入 8 位 PIN 码。
+**步骤 2**：请输入8位PIN码。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/set-pin.png" /></div>
 
-第三步：请重复输入 8 位 PIN 码以确认。
+**步骤 3**：请重复输入8位PIN码以确认。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/set-pin-confirm.png" /></div>
 
-##### 重置 PIN 码：
+##### 重置PIN码：
 
 :::note
-此步骤仅在您已设置 PIN 码时有效。
+此步骤仅在您已设置PIN码时有效。
 :::
 
-第一步：点击 `RESET`（重置）按钮。
+**步骤 1**：点击 `RESET`（重置）按钮。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/reset-pins.png" /></div>
 
-第二步：请输入当前 PIN 码以确认重置流程。
+**步骤 2**：请输入当前PIN码以确认重置流程。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/enter-pin-to-reset.png" /></div>
 
-第三步：请输入新的 8 位 PIN 码。
+**步骤 3**：请输入新的8位PIN码。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/set-pin.png" /></div>
 
-第四步：请重复输入新的 8 位 PIN 码以确认。
+**步骤 4**：请重复输入新的8位PIN码以确认。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/set-pin-confirm.png" /></div>
 
 ##### 解锁
 
-一旦您设置了 PIN 码，当您进入 [Node-RED 编辑器标签](#node-red-editor-tab) 或 [系统设置标签](#system-settings-tab) 时，您需要输入 PIN 码进行解锁。
+一旦您设置了PIN码，当您进入 [Node-RED编辑器标签](#node-red-editor-tab) 或 [系统设置标签](#system-settings-tab) 时，您需要输入PIN码进行解锁。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/unlock.png" /></div>
 
-#### 中心
+#### 应用中心
 
-中心部分用于控制已安装的应用程序，其中中心标签充当应用商店，您可以安装、打开、禁用以及托管自己的应用程序，其功能类似于 Google Play 商店或 Apple 应用商店。目前此应用中心的功能有限，新功能将会更新，请保持关注并耐心等待。同时，我们欢迎您对应用中心的贡献，一旦社区贡献功能实现。
+应用中心用于控制已安装的应用程序。应用中心标签的功能类似于应用商店，您可以安装、打开、禁用以及托管自己的应用程序，类似于Google Play商店或苹果应用商店。目前应用中心的功能有限，新的功能将会更新，请保持关注并耐心等待。同时，我们欢迎您对应用中心的贡献，一旦社区贡献功能实现。
 
-ChirpStack 标签显示为应用程序配置视图，ChirpStack 应用程序是从应用中心安装的。
+ChirpStack标签显示的是应用程序配置视图，ChirpStack应用程序是从应用中心安装的。
 
-##### 中心
+##### 应用中心
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/appcenter.png" /></div>
 
 :::note
-目前此应用中心的功能有限，新功能将会更新，请保持关注并耐心等待。同时，我们欢迎您对应用中心的贡献，一旦社区贡献功能实现。
+目前应用中心的功能有限，新的功能将会更新，请保持关注并耐心等待。同时，我们欢迎您对应用中心的贡献，一旦社区贡献功能实现。
 :::
 
 ##### ChirpStack
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/sensecraft-edge/chirpstack.png" /></div>
 
-<!-- </TabItem>
-<TabItem value="DALL·E" label="DALL·E Code">
-
-</TabItem>
-</Tabs>
-
-代码结束 -->
-
-## 额外资源
+## 其他资源
 
 *  [reTerminal DM 数据手册](https://files.seeedstudio.com/wiki/reTerminalDM/reTerminalDM_datasheet.pdf)
 *  [reTerminal DM 用户手册](https://files.seeedstudio.com/wiki/reTerminalDM/reTerminal-DM-User-Manual.pdf)
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时拥有尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

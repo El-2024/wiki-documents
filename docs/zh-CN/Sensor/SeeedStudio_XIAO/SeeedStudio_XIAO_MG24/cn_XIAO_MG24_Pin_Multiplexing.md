@@ -1,26 +1,23 @@
 ---
-title: 使用 Seeed Studio XIAO MG24 进行引脚复用
-description: 使用 Seeed Studio XIAO MG24(Sense) 进行引脚复用。
+title: Seeed Studio XIAO MG24 引脚复用
+description: Seeed Studio XIAO MG24(Sense) 引脚复用。
 image: https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/2.webp
 slug: /cn/xiao_mg24_pin_multiplexing
-last_update:
-  date: 05/15/2025
-  author: Jason
 keywords:
   - XIAO
   - MG24
+last_update:
+  date: 11/6/2024 
+  author: Jason
 sidebar_position: 1
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/top.png" style={{width:700, height:'auto'}}/></div>
 
-***XIAO MG24*** 提供多达 ***22 个常规引脚***、***18 个模拟引脚***、***18 个数字引脚***、***2 个 SPI***、***2 个 UART***、***2 个 I2C***，并支持 ***所有 PWM***。它为我们提供了丰富的引脚资源。在本教程中，我将教您如何驱动这些引脚，从而有效地利用它们 😀！
+***XIAO MG24*** 具有多达 ***22 个常规引脚***、***18 个模拟引脚***、***18 个数字引脚***、***2 个 SPI***、***2 个 UART***、***2 个 I2C***，并支持 ***所有 PWM***。它提供了丰富多样的引脚供我们使用。在本教程中，我将教您如何驱动这些引脚，使我们能够有效地利用它们 😀！
 
 ## 数字引脚
 
@@ -29,7 +26,7 @@ import TabItem from '@theme/TabItem';
 <table align="center">
   <tr>
       <th>Seeed Studio XIAO MG24 Sense</th>
-        <th>Seeed Studio XIAO 扩展底板（带 Grove OLED）</th>
+        <th>Seeed Studio XIAO 扩展板配 Grove OLED</th>
         <th>Grove - 继电器</th>
   </tr>
   <tr>
@@ -40,50 +37,50 @@ import TabItem from '@theme/TabItem';
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
         <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
         <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
         <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
   </tr>
 </table>
 
-请将 XIAO MG24(Sense) 安装到扩展板上，并通过 Grove 电缆将继电器连接到扩展板的 **A0/D0** 接口。最后，通过 USB-C 电缆将 XIAO 连接到计算机。
+请将 XIAO MG24(Sense) 安装到扩展板上，并通过 Grove 线缆将继电器连接到扩展板的 **A0/D0** 接口。最后，通过 USB-C 线缆将 XIAO 连接到计算机。
 
 ### 软件实现
 
-在此示例中，我们将实现通过连接到 XIAO 扩展板的按钮来控制继电器的开/关状态。当按下按钮时，继电器打开；当松开按钮时，继电器关闭。
+在这个示例中，我们将使用连接到 XIAO 扩展板的按钮来控制继电器的开关状态。当按钮被按下时，继电器打开；当按钮被释放时，继电器关闭。
 
 ```c
-const int buttonPin = D1;     // 按钮引脚编号
-int buttonState = 0;          // 用于读取按钮状态的变量
+const int buttonPin = D1;     // the number of the pushbutton pin
+int buttonState = 0;          // variable for reading the pushbutton status
 const int relayPin = D0;
 
 void setup() {
-  // 将继电器引脚初始化为输出模式：
+  // initialize the Relay pin as an output:
   pinMode(relayPin, OUTPUT);
-  // 将按钮引脚初始化为输入模式：
+  // initialize the pushbutton pin as an input:
   pinMode(buttonPin, INPUT_PULLUP);
 }
 
 void loop() {
-  // 读取按钮的状态值：
+  // read the state of the pushbutton value:
   buttonState = digitalRead(buttonPin);
 
-  // 检查按钮是否被按下。如果按下，buttonState 为 HIGH：
+  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
   if (buttonState == HIGH) {
-    // 打开继电器：
+    // turn Relay on:
     digitalWrite(relayPin, HIGH);
   } else {
-    // 关闭继电器：
+    // turn Relay off:
     digitalWrite(relayPin, LOW);
   }
 }
@@ -91,21 +88,22 @@ void loop() {
 
 ### 结果图
 
-如果一切顺利，上传程序后，您应该会看到如下效果。
+如果一切顺利，上传程序后，您应该看到以下效果。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/2.gif" style={{width:500, height:'auto'}}/></div>
 
-## 数字引脚作为 PWM
 
-XIAO MG24(Sense) 的所有 GPIO 引脚均支持 PWM 输出。因此，您可以使用任意引脚输出 PWM 来调节灯光亮度、控制舵机等功能。
+## 数字引脚作为PWM
+
+XIAO MG24(Sense)上的所有GPIO引脚都支持PWM输出。因此，您可以使用任何引脚输出PWM来调节灯光亮度、控制舵机和其他功能。
 
 ### 硬件准备
 
 <table align="center">
 	<tr>
 	    <th>Seeed Studio XIAO MG24 Sense</th>
-        <th>Seeed Studio XIAO 扩展底板（带 Grove OLED）</th>
-        <th>Grove - 可变色 LED</th>
+        <th>Seeed Studio XIAO扩展板配Grove OLED</th>
+        <th>Grove - 可变色LED</th>
 	</tr>
 	<tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/shop.jpg" style={{width:500, height:'auto'}}/></div></td>
@@ -115,52 +113,52 @@ XIAO MG24(Sense) 的所有 GPIO 引脚均支持 PWM 输出。因此，您可以�
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Variable-Color-LED-V1-1.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	</tr>
 </table>
 
 :::tip
-请将 XIAO MG24(Sense) 安装到扩展板上，然后通过 Grove 电缆将可变色 LED 连接到扩展板的 A0/D0 接口。最后，通过 USB-C 电缆将 XIAO 连接到您的计算机。
+请将XIAO MG24(Sense)安装到扩展板上，然后使用Grove线缆将可变色LED连接到扩展板的A0/D0接口。最后，通过USB-C线缆将XIAO连接到您的计算机。
 :::
 
 ### 软件实现
 
-在这个示例中，我们将演示如何使用 PWM 输出来控制灯光的亮度。
+在这个示例中，我们将演示如何使用PWM输出来控制灯光的亮度。
 
 ```cpp
 int LED_pin = D0;    // LED连接到数字引脚10
 
 void setup() {
-  // 将LED引脚声明为输出
+  // 声明LED引脚为输出
   pinMode(LED_pin, OUTPUT);
 }
 
 void loop() {
-  // 从最小值到最大值以5点的增量渐亮：
+  // 从最小值到最大值以5点增量淡入：
   for (int fadeValue = 0 ; fadeValue <= 255; fadeValue += 3) {
     // 设置值（范围从0到255）：
     analogWrite(LED_pin, fadeValue);
-    // 等待30毫秒以观察渐变效果
+    // 等待30毫秒以查看调光效果
     delay(30);
   }
 
-  // 从最大值到最小值以5点的增量渐暗：
+  // 从最大值到最小值以5点增量淡出：
   for (int fadeValue = 255 ; fadeValue >= 0; fadeValue -= 3) {
     // 设置值（范围从0到255）：
     analogWrite(LED_pin, fadeValue);
-    // 等待30毫秒以观察渐变效果
+    // 等待30毫秒以查看调光效果
     delay(30);
   }
 }
@@ -172,62 +170,63 @@ void loop() {
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/5.gif" style={{width:500, height:'auto'}}/></div>
 
-## 模拟信号
+## 模拟
 
-XIAO MG24(Sense)开发板具有12位ADC，用于高分辨率读取模拟传感器值，这可以帮助我们读取更准确的值。
+XIAO MG24(Sense) 开发板具有 12 位 ADC，可高分辨率读取模拟传感器值，它可以帮助我们读取更准确的值。
 
-接下来，我们将选择两个传感器来反映ADC的特性。
+接下来，我们将选择两个传感器来体现 ADC 的特性。
 
 ### 硬件准备
 
 <table align="center">
 	<tr>
 	    <th>Seeed Studio XIAO MG24 Sense</th>
-        <th>Grove-可变颜色LED</th>
+         <th>Grove-可变色 LED</th>
 	    <th>Grove-旋转角度传感器</th>
-	    <th>Seeed Studio Grove Base for XIAO </th>
+	    <th>Seeed Studio Grove Base for XIAO</th>
 	</tr>
 	<tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/shop.jpg" style={{width:500, height:'auto'}}/></div></td>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/rotary.png" style={{width:500, height:'auto'}}/></div></td>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:500, height:'auto'}}/></div></td>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:500, height:'auto'}}/></div></td>
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Variable-Color-LED-V1-1.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	</tr>
 </table>
 
+
 ### 软件实现
 
 <Tabs>
-  <TabItem value="Without DMA" label="analogRead 无DMA" default>
+  <TabItem value="Without DMA" label="不使用 DMA 的 analogRead" default>
 
-```cpp
-const int analogInPin = D1;  // 模拟输入引脚，连接到电位器
-const int analogOutPin = 9;  // 模拟输出引脚，连接到LED
+``` cpp
+const int analogInPin = D1;  // 连接电位器的模拟输入引脚
+const int analogOutPin = 9;  // 连接 LED 的模拟输出引脚
 
 int sensorValue = 0;  // 从电位器读取的值
-int outputValue = 0;  // 输出到PWM（模拟输出）的值
+int outputValue = 0;  // 输出到 PWM（模拟输出）的值
 
 void setup() {
   Serial.begin(115200);
@@ -238,46 +237,46 @@ void loop() {
   outputValue = map(sensorValue, 0, 4095, 0, 255);
   analogWrite(analogOutPin, outputValue);
 
-  Serial.print("传感器值 = ");
+  Serial.print("sensor = ");
   Serial.print(sensorValue);
-  Serial.print("\t 输出值 = ");
+  Serial.print("\t output = ");
   Serial.println(outputValue);
   delay(100);
 }
 ```
 
-  </TabItem>
-  <TabItem value="With DMA" label="analogRead 使用DMA">
+</TabItem>
+  <TabItem value="With DMA" label="使用DMA的analogRead">
 
-```cpp
-#define ANALOG_VALUE_MIN 0     // 定义模拟值的最小值
+``` cpp
+#define ANALOG_VALUE_MIN 0     // 定义最小模拟值
 #define ANALOG_VALUE_MAX 4095  // 定义12位ADC的最大模拟值
 #define NUM_SAMPLES 128        // 定义每次采集的样本数量
 
-const int analogInPin = D1;            // 模拟输入引脚，连接到电位器
-const int analogOutPin = LED_BUILTIN;  // 模拟输出引脚，连接到LED
+const int analogInPin = D1;            // 电位器连接的模拟输入引脚
+const int analogOutPin = LED_BUILTIN;  // LED连接的模拟输出引脚
 
-// 用于存储样本的缓冲区
+// 存储样本的缓冲区
 uint32_t analog_buffer[NUM_SAMPLES];        // 全局缓冲区，用于存储采样值
-uint32_t analog_buffer_local[NUM_SAMPLES];  // 局部缓冲区，用于存储采样值以进行计算
+uint32_t analog_buffer_local[NUM_SAMPLES];  // 本地缓冲区，用于存储采样值进行计算
 
-volatile bool data_ready_flag = false;  // 数据就绪标志，指示新样本数据可用
+volatile bool data_ready_flag = false;  // 数据就绪标志，指示新的样本数据可用
 
-void analog_samples_ready_cb();                         // 样本准备好时调用的回调函数
-void calculate_and_display_analog_level();              // 计算并显示模拟电平的函数
+void analog_samples_ready_cb();                         // 样本就绪时调用的回调函数
+void calculate_and_display_analog_level();              // 计算和显示模拟电平的函数
 float getAverage(uint32_t *buffer, uint32_t buf_size);  // 计算给定缓冲区平均值的函数
 
 void setup() {
   Serial.begin(115200);
   pinMode(analogOutPin, OUTPUT);
 
-  // 开始DMA采样，将样本存储在analog_buffer中，完成后调用回调函数
+  // 开始DMA采样，将样本存储在analog_buffer中，完成时调用回调函数
   analogReadDMA(analogInPin, analog_buffer, NUM_SAMPLES, analog_samples_ready_cb);
-  Serial.println("开始采样...");
+  Serial.println("采样已开始...");
 }
 
 void loop() {
-  // 如果数据就绪，则处理数据
+  // 如果数据就绪，处理它
   if (data_ready_flag) {
     data_ready_flag = false;
     calculate_and_display_analog_level();
@@ -285,13 +284,13 @@ void loop() {
 }
 
 void analog_samples_ready_cb() {
-  // 将数据复制到局部缓冲区以防止被覆盖
+  // 将数据复制到本地缓冲区以防止被覆盖
   memcpy(analog_buffer_local, analog_buffer, NUM_SAMPLES * sizeof(uint32_t));
   data_ready_flag = true;
 }
 
 void calculate_and_display_analog_level() {
-  // 滚动平均值，用于平滑模拟电平
+  // 用于平滑模拟电平的滚动平均值
   static uint32_t rolling_average = 0u;
 
   // 停止采样以防止覆盖当前数据
@@ -312,9 +311,9 @@ void calculate_and_display_analog_level() {
     analogWrite(analogOutPin, brightness);
   }
   // 打印平均模拟电平和亮度输出
-  Serial.print("传感器值 = ");
+  Serial.print("传感器 = ");
   Serial.print(rolling_average);
-  Serial.print("\t 输出值 = ");
+  Serial.print("\t 输出 = ");
   Serial.println(brightness);
 
   // 重新开始采样
@@ -338,61 +337,63 @@ float getAverage(uint32_t *buffer, uint32_t buf_size) {
 </TabItem>
 </Tabs>
 
-:::提示
-需要注意的是，如果您想使用 DMA 读取模拟信号，您的库版本需要高于 2.2.0。目前，新版本尚未获得批准，您需要手动安装。
+:::tip
+需要注意的是，如果您想使用 DMA 读取模拟信号，您的库版本需要大于 2.2.0。目前新版本尚未获得批准，您需要手动安装。
 :::
 
 ### 结果图
-如果一切顺利，在上传程序后，您应该会看到以下效果。
+如果一切顺利，上传程序后，您应该看到以下效果。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/4.gif" style={{width:500, height:'auto'}}/></div>
 
 ## UART
 
-在使用 Arduino IDE 时，串行通信是许多项目的重要组成部分。要在 Arduino IDE 中使用串行通信，您需要首先打开串行监视器窗口。这可以通过点击工具栏中的 **Serial Monitor** 图标或按下 **Ctrl+Shift+M** 快捷键来完成。
+在使用 Arduino IDE 时，串行通信是许多项目的重要组成部分。要在 Arduino IDE 中使用串行通信，您需要首先打开串行监视器窗口。这可以通过点击工具栏中的**串行监视器**图标或按**Ctrl+Shift+M**快捷键来完成。
 
-### 常规串行通信使用
+### 通用串行使用
 
 一些常用的串行函数包括：
 
-- `Serial.begin()` -- 用于以指定的波特率初始化通信；
-- `Serial.print()` -- 以可读格式将数据发送到串行端口；
-- `Serial.write()` -- 将二进制数据发送到串行端口；
-- `Serial.available()` -- 检查是否有数据可从串行端口读取；
-- `Serial.read()` -- 从串行端口读取一个字节的数据；
-- `Serial.flush()` -- 等待传输完成所有的输出串行数据。
+- `Serial.begin()` -- 以指定的波特率初始化通信；
+- `Serial.print()` -- 以可读格式向串行端口发送数据；
+- `Serial.write()` -- 向串行端口发送二进制数据；
+- `Serial.available()` -- 检查串行端口是否有可读取的数据；
+- `Serial.read()` -- 从串行端口读取单个字节的数据；
+- `Serial.flush()` -- 等待传出串行数据的传输完成。
 
-通过使用这些串行函数，您可以在 Arduino 板和计算机之间发送和接收数据，从而为创建交互式项目打开了许多可能性。
+通过使用这些串行函数，您可以在 Arduino 开发板和计算机之间发送和接收数据，这为创建交互式项目开辟了许多可能性。
 
 以下是一个示例程序：
 
 ```c
 void setup() {
-  // 以 9600 比特每秒初始化串行通信：
+  // initialize serial communication at 9600 bits per second:
   Serial.begin(9600);
 }
 
 void loop() {
-  // 向串行端口发送数据
-  Serial.println("你好，世界！");
+  // send data to the serial port
+  Serial.println("Hello World!");
 
-  // 从串行端口读取数据
+  // read data from the serial port
   if (Serial.available() > 0) {
-    // 读取传入的字节：
+    // read the incoming byte:
     char incomingByte = Serial.read();
-    // 将传入的字节打印到串行监视器：
-    Serial.print("我收到：");
+    // print the incoming byte to the serial monitor:
+    Serial.print("I received: ");
     Serial.println(incomingByte);
   }
   
-  // 在重复循环之前等待一秒
+  // wait for a second before repeating the loop
   delay(1000);
 }
 ```
 
-### 使用 Serial1
+### Serial1 的使用
 
-根据上述 XIAO MG24(Sense) 引脚图的具体参数，我们可以看到有 TX 引脚和 RX 引脚。这与串行通信不同，但使用方法非常相似，只需添加一些参数即可。因此，接下来我们将使用芯片引出的引脚进行串行通信。
+根据上述 XIAO MG24(Sense) 引脚图的具体参数，我们可以观察到有 TX 引脚和 RX 引脚。
+这与串行通信不同，但用法也非常相似，只是需要添加一些参数。
+因此接下来，我们将使用芯片引出的引脚进行串行通信。
 
 ```c
 #define BAUD 115200
@@ -405,7 +406,7 @@ void loop() {
   if(Serial1.available() > 0)
   {
     char incominByte = Serial1.read();
-    Serial1.print("我收到：");
+    Serial1.print("I received : ");
     Serial1.println(incominByte);
   }
   delay(1000);
@@ -414,14 +415,14 @@ void loop() {
 
 ## I2C
 
-XIAO MG24(Sense) 具有一个 I2C 接口，可用于许多传感器的数据传输和解析，以及一些 OLED 屏幕的使用。
+XIAO MG24(Sense) 具有一个 I2C 接口，可用于许多传感器的数据传输和解析，以及使用一些 OLED 屏幕。
 
 ### 硬件准备
 
 <table align="center">
 	<tr>
 	    <th>Seeed Studio XIAO MG24 Sense</th>
-        <th>Seeed Studio XIAO 扩展底板带 Grove OLED</th>
+        <th>Seeed Studio XIAO 扩展底板配 Grove OLED</th>
 	</tr>
 	<tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/shop.jpg" style={{width:400, height:'auto'}}/></div></td>
@@ -430,26 +431,26 @@ XIAO MG24(Sense) 具有一个 I2C 接口，可用于许多传感器的数据传�
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	</tr>
 </table>
 
-XIAO 扩展板上的 OLED 显示屏使用 I2C 协议，并通过板上的 I2C 电路连接到 XIAO 的 I2C 接口。因此，我们可以直接将 XIAO 插入扩展板并对其编程以在屏幕上显示内容。
+XIAO 扩展板上的 OLED 显示屏使用 I2C 协议，通过板上的 I2C 电路连接到 XIAO 的 I2C 接口。因此，我们可以直接将 XIAO 插入扩展板并编程以在屏幕上显示内容。
 
 ### 软件实现
 
-此示例介绍如何使用 Seeed Studio 扩展底板上的 OLED 显示屏为 XIAO MG24(Sense)。
+本示例介绍如何使用 Seeed Studio XIAO MG24(Sense) 扩展底板上的 OLED 显示屏。
 
-***步骤 1. 将 Seeed Studio XIAO MG24(Sense) 安装到扩展板上，然后连接 Type-C 数据线。***
+***步骤 1. 将 Seeed Studio XIAO MG24(Sense) 安装在扩展板上，然后连接 Type-C 线缆。***
 
-***步骤 2. 安装 u8g2 库。***
+*** 步骤 2. 安装 u8g2 库。***
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/olikraus/U8g2_Arduino">
@@ -457,12 +458,12 @@ XIAO 扩展板上的 OLED 显示屏使用 I2C 协议，并通过板上的 I2C �
     </a>
 </div>
 
-***步骤 3. 将代码复制到 Arduino IDE 中并上传。***
-- 下载以下 zip 文件
+*** 步骤 3. 复制代码并粘贴到 Arduino IDE 中，然后上传。***
+- 下载下面的 zip 文件
 
-📄 **[ZIP]** [smiley_face Header](https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/smiley_face.zip)
+📄 **[ZIP]** [smiley_face 头文件](https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/smiley_face.zip)
 
-- 创建一个名为 "smiley_face.h" 的头文件，并将下载的 zip 文件内容复制到您创建的头文件中。
+- 创建一个名为 "smiley_face.h" 的头文件，并将下载的 zip 文件内容复制到您创建的头文件中
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/8.png" style={{width:800, height:'auto'}}/></div>
 
 ```c
@@ -514,13 +515,13 @@ void smeil_display() {
 }
 ```
 
-### 结果图形
+### 结果图
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/7.gif" style={{width:500, height:'auto'}}/></div>
 
 ## SPI
 
-XIAO MG24(Sense) 芯片集成了多个外设，包括一个 SPI 接口，可用于连接外部 SPI 设备，例如闪存、显示屏、传感器等。
+XIAO MG24(Sense) 芯片集成了多个外设，包括一个 SPI 接口，可用于连接外部 SPI 设备，如闪存、显示器、传感器等。
 
 ### Arduino 库概述
 
@@ -530,7 +531,8 @@ XIAO MG24(Sense) 芯片集成了多个外设，包括一个 SPI 接口，可用�
     </a>
 </div><br />
 
-基于 **Waveshare** 提供的 Arduino 示例程序，我们编写了适用于整个 XIAO 系列的 Arduino 库，您可以通过以下按钮直接访问该库的 Github 页面。
+
+基于 **Waveshare** 提供的 Arduino 示例程序，我们编写了一个适用于整个 XIAO 系列的 Arduino 库，您可以通过下面的按钮直接访问该库的 Github 页面。
 
 ### 硬件准备
 
@@ -538,7 +540,7 @@ XIAO MG24(Sense) 芯片集成了多个外设，包括一个 SPI 接口，可用�
 	<table align="center">
 		<tr>
 			<th>Seeed Studio XIAO MG24 Sense</th>
-			<th>1.69 英寸 LCD SPI 显示屏</th>
+			<th>1.69英寸 LCD SPI 显示屏</th>
 		</tr>
 		<tr>
 			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/shop.jpg" style={{width:300, height:'auto'}}/></div></td>
@@ -547,12 +549,12 @@ XIAO MG24(Sense) 芯片集成了多个外设，包括一个 SPI 接口，可用�
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html">
-				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/1-69inch-240-280-Resolution-IPS-LCD-Display-Module-p-5755.html">
-				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>
 		</tr>
@@ -561,19 +563,21 @@ XIAO MG24(Sense) 芯片集成了多个外设，包括一个 SPI 接口，可用�
 
 ### 引脚连接
 
-在准备好上述硬件后，使用跳线将 XIAO 的 SPI 接口与 OLED 连接。请参考以下连接示意图。
+准备好上述硬件后，使用跳线将 XIAO 和 OLED 的 SPI 接口连接起来。请参考以下图表进行接线。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/3.png" style={{width:700, height:'auto'}}/></div>
 
+
 ### 安装
 
-下载 ZIP 库文件后，打开 Arduino IDE，点击 **Sketch > Include Library > Add .ZIP Library**。选择刚刚下载的 ZIP 文件，如果库安装正确，您会在通知窗口中看到 **Library added to your libraries**，这表示库已成功安装。
+由于您已经下载了 zip 库文件，请打开您的 Arduino IDE，点击 **Sketch > Include Library > Add .ZIP Library**。选择您刚刚下载的 zip 文件，如果库安装正确，您将在通知窗口中看到 **Library added to your libraries**。这意味着库已成功安装。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Get_Started_With_Arduino/img/Add_Zip.png" style={{width:800, height:'auto'}}/></div>
 
+
 ### 软件实现
 
-在正确下载并安装库后，您可以在示例文件夹中找到两个示例程序，分别是 **helloworld.ino** 和 **bgcolor.ino**。bgcolor.ino 是一个显示背景颜色的示例，我们默认设置为红色。而 helloworld.ino 是一个显示公司 logo 动画的示例，该示例包含 bgcolor 示例中的效果。
+正确下载并安装库后，您可以在示例文件夹中找到两个名为 **helloworld.ino** 和 **bgcolor.ino** 的示例程序。bgcolor.ino 是一个显示背景颜色的示例，我们默认设置为红色。而 helloworld.ino 是一个显示我们公司标志动画的示例，该示例包含了 bgcolor 示例所具有的效果。
 
 ```cpp
 #include <st7789v2.h>
@@ -583,7 +587,7 @@ XIAO MG24(Sense) 芯片集成了多个外设，包括一个 SPI 接口，可用�
 st7789v2 Display;
 
 void setup() {
-  // 在这里放置初始化代码，仅运行一次：
+  // 在这里放置你的设置代码，只运行一次：
   Display.SetRotate(270);
   Display.Init();
   Display.SetBacklight(100);
@@ -591,9 +595,9 @@ void setup() {
 }
 
 void loop() {
-  // 在这里放置主代码，循环运行：
-  // Display.SetPixel(100, 100, RED);
-  // Display.DrawPoint(50, 50, YELLOW, DOT_PIXEL_8X8, DOT_FILL_AROUND);
+  // 在这里放置你的主要代码，重复运行：
+//  Display.SetPixel(100, 100, RED);
+//  Display.DrawPoint(50, 50, YELLOW, DOT_PIXEL_8X8, DOT_FILL_AROUND);
 
   Display.DrawImage(gImage_seeed, 20, 90, 240, 47);
 
@@ -626,22 +630,23 @@ void loop() {
   Display.DrawLine(215, 165, 265, 165, GRAYBLUE, DOT_PIXEL_2X2, LINE_STYLE_SOLID);
   
   Display.DrawString_EN(20, 180, "By: Jason", &Font20, WHITE, BLACK);
-  // Display.DrawNum(100, 220, 123456, &Font24, RED, BRED);
+//  Display.DrawNum(100, 220, 123456, &Font24, RED, BRED);
   Display.DrawFloatNum(100, 210, 1.00, 2, &Font16, WHITE, BLACK);
 }
 ```
 
-您会发现 Seeed Studio 的标志动态显示在屏幕上。
+您会发现 Seeed Studio 标志动态地显示在屏幕上。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/1.gif"style={{width:500, height:'auto'}}/></div>
 
-## 完成
+## 总结
 您已经学习了 XIAO MG24 (Sense) 引脚的基本功能。现在，让我们进一步探索内置传感器。
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/6.png" style={{width:1000, height:'auto'}}/></div>
 
+
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

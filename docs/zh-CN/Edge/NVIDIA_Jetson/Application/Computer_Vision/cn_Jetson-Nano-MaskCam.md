@@ -7,26 +7,22 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Jetson-Nano-MaskCam
 last_update:
-  date: 05/15/2025
+  date: 01/04/2023
   author: w0x7ce
 
 no_comments: false # 用于 Disqus
 
 ---
 
-# Maskcam - 基于 Jetson Nano 的人群口罩佩戴监测
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+# Maskcam - 基于 Jetson Nano 的人群口罩佩戴监控
 
 ## **简介**
 
-由于 COVID-19 的肆虐，在许多公共场所，我们经常看到要求佩戴口罩的规定。通常会有管理人员在区域入口观察人们是否佩戴口罩。对于人类来说，这可能是一个非常简单的任务，但如果我们将其与 Jetson Nano、图像捕捉和 AI 边缘计算结合起来，这将成为一个非常有趣且具有社会价值的任务。
+由于 COVID-19 的肆虐，在许多公共场所，我们经常看到佩戴口罩的要求。通常在区域入口处会有管理人员观察人们是否佩戴口罩。对于人类来说，这可能是一个非常简单的任务，但如果我们将其与 Jetson Nano、图像捕捉和 AI 边缘计算结合起来，这将成为一个非常有趣且具有社会价值的任务。
 
 MaskCam 由 Berkeley Design Technology, Inc. (BDTI) 和 Tryolabs S.A. 开发，开发资金由 NVIDIA 提供。MaskCam 根据 MIT 许可证提供。有关 MaskCam 的更多信息，请参阅 [BDTI 的报告](https://www.bdti.com/maskcam)。如果您有任何问题，请通过 maskcam@bdti.com 联系 BDTI。
 
-在本项目中，我们将使用 [NVIDIA® Jetson Nano™ 4GB 开发套件](https://www.seeedstudio.com/NVIDIA-Jetson-Nano-Development-Kit-B01-p-4437.html) 以及其他配件。同时，您可以选择来自 Seeed 的 [A206 Carrier Board](https://www.seeedstudio.com/A206-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5132.html)，它具有与 NVIDIA 官方载板相同的尺寸和功能设计，并且具有出色的稳定性和通用性。
+在本项目中，我们将使用 [NVIDIA® Jetson Nano™ 4GB 开发套件](https://www.seeedstudio.com/NVIDIA-Jetson-Nano-Development-Kit-B01-p-4437.html) 以及其他配件。同时，您可以选择 Seeed 的 [A206 扩展板](https://www.seeedstudio.com/A206-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5132.html)，它具有与 NVIDIA 官方扩展板相同的尺寸和功能设计，并且具有出色的稳定性和通用性。
 
 ## **准备工作**
 
@@ -34,7 +30,7 @@ MaskCam 由 Berkeley Design Technology, Inc. (BDTI) 和 Tryolabs S.A. 开发，�
 
 - [NVIDIA® Jetson Nano™ 4GB 开发套件](https://www.seeedstudio.com/NVIDIA-Jetson-Nano-Development-Kit-B01-p-4437.html) (JetPack 4.6)
 
-- [A206 Carrier Board](https://www.seeedstudio.com/A206-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5132.html)（可选）
+- [A206 扩展板](https://www.seeedstudio.com/A206-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5132.html)（可选）
 
 - 7 英寸 HDMI 显示器和 HDMI 线
 
@@ -48,7 +44,7 @@ MaskCam 由 Berkeley Design Technology, Inc. (BDTI) 和 Tryolabs S.A. 开发，�
 
 - 以太网线
 
-- 配备 Windows11（或 Windows10/Ubuntu18.04/ OSX Big Sur）的 PC
+- 配备 Windows11（或 Windows10/Ubuntu18.04/OSX Big Sur）的 PC
 
 ### **软件需求**
 
@@ -56,7 +52,7 @@ MaskCam 由 Berkeley Design Technology, Inc. (BDTI) 和 Tryolabs S.A. 开发，�
 
 - docker-compose
 
-- 视频软件（显示 RTSP 流，如 VLC/QuickTime/PotPlayer）
+- 视频软件（用于显示 RTSP 流，如 VLC/QuickTime/PotPlayer）
 
 ## **开始使用**
 
@@ -70,7 +66,7 @@ sudo docker pull maskcam/maskcam-beta
 
 ![](https://files.seeedstudio.com/wiki/Jetson-Nano-MaskCam/tu12.png)
 
-- #### **步骤 2.** 使用命令 ```ifconfig``` 找到 Jetson Nano 的 IP 地址
+- #### **步骤 2.** 使用命令 ```ifconfig``` 查找 Jetson Nano 的 IP 地址
 
 ```shell
 sudo ifconfig
@@ -78,9 +74,9 @@ sudo ifconfig
 
 ![](https://files.seeedstudio.com/wiki/Jetson-Nano-MaskCam/tu5.png)
 
-- #### **步骤 3.** 使用 Docker 启动 MaskCam
+- #### **步骤 3.** 使用 docker 启动 MaskCam
 
-确保您的 Jetson Nano 已连接 USB 摄像头，然后在终端中输入以下命令。
+确保将 Jetson Nano 连接到 USB 摄像头，然后在终端中输入以下命令。
 
 ```shell
 sudo docker run --runtime nvidia --privileged --rm -it --env MASKCAM_DEVICE_ADDRESS=<your-jetson-ip> -p 1883:1883 -p 8080:8080 -p 8554:8554 maskcam/maskcam-beta
@@ -90,7 +86,7 @@ sudo docker run --runtime nvidia --privileged --rm -it --env MASKCAM_DEVICE_ADDR
 
 **注意：** 在此命令中，将 ```<your-jetson-ip>``` 替换为您自己的 Jetson Nano 的 IP 地址。
 
-如果您不想使用默认输入设备，还有两种不同的命令可供选择并替换上述命令。
+如果您不想使用默认的输入设备，还有两种不同的命令可供选择并替换上述命令。
 
 使用 /dev/video1 摄像头设备：
 
@@ -116,11 +112,11 @@ Streaming at rtsp://aaa.bbb.ccc.ddd:8554/maskcam
 
 **注意：** ```aaa.bbb.ccc.ddd``` 是您之前在 ```MASKCAM_DEVICE_ADDRESS``` 中提供的地址。
 
-您可以将该 URL 复制粘贴到另一台计算机上的 RTSP 流媒体查看器中。在视频流中，如果您没有佩戴口罩，您的脸上会出现红色框。如果佩戴了口罩，则会出现绿色框。
+您可以将该 URL 复制粘贴到另一台计算机上的 RTSP 流媒体查看器中。在视频流中，如果您未佩戴口罩，您的脸上会出现一个红框。否则，您会看到一个绿框。
 
 ### **MQTT 服务器设置**
 
-除了基本功能外，此库还包括远程 [服务器](https://github.com/bdtinc/maskcam/blob/main/server) 的功能，这意味着您的 PC 可以从设备接收统计数据，将其存储在数据库中，并拥有基于 Web 的 GUI 前端来显示这些数据。
+除了基本功能外，该库还包括远程 [服务器](https://github.com/bdtinc/maskcam/blob/main/server) 的功能，这意味着您的 PC 可以从设备接收统计数据，将其存储在数据库中，并通过基于 Web 的 GUI 前端显示这些数据。
 
 在本文中，所有关于服务器的演示均基于 Windows11 系统主机，您也可以通过本文找到使用 Linux 系统的说明：[Maskcam](https://github.com/bdtinc/maskcam)。
 
@@ -128,7 +124,7 @@ Streaming at rtsp://aaa.bbb.ccc.ddd:8554/maskcam
 
 从其官方网站下载 [Docker](https://www.docker.com/) 的安装包：[https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
-注意：如果安装过程中出现消息提示 ```WLS 2 安装不完整```，请点击提示框中的链接，下载并安装 Linux 内核更新包。
+注意：如果在安装过程中出现消息 ```WLS 2 installization is incomplete.```，请点击提示框中的链接，下载并安装 Linux 内核更新包。
 然后您可以运行 ```docker```。
 
 - #### **步骤 2.** 设置构建目录
@@ -181,7 +177,7 @@ notepad database.env
 
 - #### **步骤3.** 构建并运行本地服务器
 
-编辑完数据库环境文件后，您可以通过以下命令构建所有容器并运行它们：
+编辑完数据库环境文件后，您可以使用以下命令构建所有容器并运行它们：
 
 ```shell
 sudo docker-compose up -d
@@ -197,17 +193,17 @@ sudo docker-compose up -d
 
 **注意：** 将 ```<server IP>``` 替换为您自己的 IP 地址。
 
-如果您在前端页面看到 ```ConnectionError```，请再等待几秒钟并刷新页面。后端容器可能需要一些时间来完成数据库设置。
+如果您在前端页面看到 ```ConnectionError```，请再等待几秒钟并重新加载页面。后端容器可能需要一些时间来完成数据库设置。
 
 ![](https://files.seeedstudio.com/wiki/Jetson-Nano-MaskCam/tu7.png)
 
-如果您等待几秒钟并刷新页面后仍然看到 ```ConnectionError```，请确保端口：5432 和 80 没有被占用或监听。
+如果您等待了几秒钟并重新加载页面后，前端仍然显示 ```ConnectionError```，请确保端口 `5432` 和 `80` 没有被占用或监听。
 
-如果您第一次成功访问前端网页，但之后失败，目前解决问题的最佳方法是重新安装 Docker。
+如果您第一次成功访问了前端网页，但之后失败了，目前最好的解决方法是重新安装 Docker。
 
 - #### **步骤4.** 将 Jetson Nano 指向您的本地服务器
 
-返回到您的 Jetson Nano 的终端，然后使用以下命令运行 maskcam 容器：
+返回到 Jetson Nano 的终端，然后使用以下命令运行 maskcam 容器：
 
 ```shell
 sudo docker run --runtime nvidia --privileged --rm -it --env MQTT_BROKER_IP=<server IP> --env MQTT_DEVICE_NAME=my-jetson-1 --env MASKCAM_DEVICE_ADDRESS=<your-jetson-ip> -p 1883:1883 -p 8080:8080 -p 8554:8554 maskcam/maskcam-beta
@@ -221,13 +217,13 @@ sudo docker run --runtime nvidia --privileged --rm -it --env MQTT_BROKER_IP=<ser
 
 ![](https://files.seeedstudio.com/wiki/Jetson-Nano-MaskCam/tu10.png)
 
-最后，您可以看到 Jetson Nano 收集的数据传输到服务器。
+最后，您可以看到 Jetson Nano 收集的数据正在传输到服务器。
 
 ![](https://files.seeedstudio.com/wiki/Jetson-Nano-MaskCam/tu11.png)
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们将为您提供多种支持，确保您在使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

@@ -4,23 +4,18 @@ title: J101 启用 SD 卡
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/J101_Enable_SD_Card
 last_update:
-  date: 05/15/2025
+  date: 01/05/2022
   author: w0x7ce
 
 no_comments: false # 用于 Disqus
 
 ---
 
+<!-- # 从 SD 卡启动 NVIDIA JetPack 操作系统，适用于 J101 扩展板 -->
+
 # J101 启用 SD 卡
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
-<!-- # 从 SD 卡启动 NVIDIA JetPack OS 适用于 J101 扩展板 -->
-
-
-此方法是在 J101 扩展板上将 NVIDIA JetPack OS 刷写到 SD 卡，并在 reComputer J1010 上操作。因此，首先需要<a href="https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack/" target="_blank"><span>将 JetPack OS 刷写到 reComputer J1010</span></a>。
+此方法是在 J101 扩展板上将 NVIDIA JetPack 操作系统刷入 SD 卡，并在 reComputer J1010 上运行。因此，首先需要<a href="https://wiki.seeedstudio.com/cn/reComputer_J1010_J101_Flash_Jetpack/" target="_blank"><span>将 JetPack 操作系统刷入 reComputer J1010</span></a>。
 
 ## 驱动配置
 
@@ -28,7 +23,7 @@ no_comments: false # 用于 Disqus
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/S.png" /></div>
 
-### 第 1 步：克隆仓库
+### 第 1 步：克隆代码库
 
 右键单击并打开终端，然后执行以下命令以下载相关代码：
 
@@ -38,7 +33,7 @@ git clone https://github.com/Seeed-Studio/seeed-linux-dtoverlays.git
 
 ### 第 2 步：编译 jetson-sdmmc-overlay
 
-进入工作区目录：
+进入工作目录：
 
 ```bash
 cd seeed-linux-dtoverlays
@@ -54,7 +49,7 @@ sed -i '17s#JETSON_COMPATIBLE#\"nvidia,p3449-0000-b00+p3448-0002-b00\"\, \"nvidi
 
 <div align=center><img width = 800 src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/change.png"/></div> -->
 
-然后我们编译修改过的文件以确保其被正确修改。
+然后，我们编译修改过的文件以确保其被正确修改。
 
 ```bash
 make overlays/jetsonnano/jetson-sdmmc-overlay.dtbo
@@ -70,7 +65,7 @@ cd /boot/
 sudo /opt/nvidia/jetson-io/config-by-hardware.py -l
 ```
 
-执行上述命令后，我们应该会得到**类似**（可能不完全相同，具体取决于已安装的外设和驱动程序）的输出，并确认 SD 卡已被识别：
+执行上述命令后，我们应该会得到**类似**（**可能不完全相同，具体取决于外设和已安装的驱动程序**）如下的输出，并确认 SD 卡已被识别：
 
 ```txt
     Header 1 [default]: Jetson 40pin Header
@@ -112,7 +107,7 @@ sudo /opt/nvidia/jetson-io/config-by-hardware.py -n "reComputer sdmmc"
 git clone https://github.com/limengdu/bootFromUSB
 ```
 
-其次，我们需要确保 SD 卡的格式为 ext4，可以通过 "disk" 工具直观地查看。如果不是 ext4 格式，我们需要格式化并将其更改为 ext4 格式。
+其次，我们需要确保 SD 卡为 ext4 格式，可以在 "磁盘" 工具中直观地看到。如果不是 ext4 格式，我们需要格式化并将其更改为 ext4 格式。
 
 <div align=center><img width = 800 src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/disk_view_1.png"/></div>
 
@@ -125,36 +120,37 @@ cd bootFromUSB
 
 等待一段时间，直到自动完成。如果没有报错，则烧录完成。
 
+
 ## 启动配置
 
-一旦驱动成功安装并配置，我们可以通过 "lsblk" 命令或查看 "/dev" 中的设备来简单地查看。
+当驱动程序成功安装并配置后，我们可以通过类似 "lsblk" 的命令查看，或者在 "/dev" 中查看设备。
 
 ### 更改启动设备
 
-我们需要修改 "/boot/extlinux/extlinux.conf" 中的配置。
+我们需要修改 "/boot/extlinux/extlinux.conf" 文件中的配置。
 
 - 从 SD 卡启动
 
-    当我们从扩展板上的 emmc 启动后，想要修改为从 SD 卡启动时，需要确保之前的步骤（包括将系统烧录到 SD 卡以及安装 SD 卡驱动）已正确完成。修改 root 后的参数为我们要启动设备的地址。完成修改后，重启系统。
+    在我们从载板上的 eMMC 启动后，想要修改为从 SD 卡启动。我们需要确保之前的步骤，包括系统烧录到 SD 卡以及 SD 卡驱动程序已正确安装。将 root 参数修改为我们要启动的设备地址。当完成修改后，重新启动系统。
 
-    **重启前修改 "/boot/extlinux/extlinux.conf"，重启后查看 "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf"**
+    **重新启动前修改 "/boot/extlinux/extlinux.conf"，重新启动后查看 "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf"**
 
     <div align=center><img width = 800 src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/config_3.png"></div>
 
     !!!注意
-        从 SD 卡启动系统后，配置文件路径为 "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf"，而从板载 emmc 启动系统后的配置文件路径为 "/boot/extlinux/extlinux.conf"。它们是相同的文件，设备从中读取配置并选择启动系统的位置，但系统启动完成后相对路径会发生变化。
+        从 SD 卡启动系统后的配置文件是 "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf"，而从板载 eMMC 启动系统后的配置文件是 "/boot/extlinux/extlinux.conf"。它们是设备读取配置并在上电后选择启动系统的同一个文件，当系统完成启动后，相关路径会发生变化。
 
-- 从板载 emmc 启动
+- 从板载 eMMC 启动
 
-    如果我们从 SD 卡启动后想要切换回从 emmc 启动，或者需要更换 SD 卡，则需要先将设备改回从 emmc 启动。我们应进行以下更改。
+    如果我们从 SD 卡启动后想要切换回 eMMC 启动，或者需要更换 SD 卡，我们需要将设备切换回 eMMC 启动。以下是需要进行的修改。
 
-    **重启前修改 "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf"，重启后查看 "/boot/extlinux/extlinux.conf"**
+    **重新启动前修改 "/media/seeed/{xxx-xxx}/boot/extlinux/extlinux.conf"，重新启动后查看 "/boot/extlinux/extlinux.conf"**
 
     <div align=center><img width = 800 src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/config_4.png"></div>
 
-最终，我们发现一切运行良好。
+最终，我们发现它确实运行良好。
 
-- 从 emmc 启动
+- 从 eMMC 启动
 
     <div align=center><img width = 800 src="https://files.seeedstudio.com/wiki/Boot_NVIDIA_System_from_SD_card_for_Jetson101/lsblk_emmc.png"></div>
 
@@ -166,7 +162,7 @@ cd bootFromUSB
 
 ### 更改 SD 卡 I/O 速度
 
-我们在 <a href="https://wiki.seeedstudio.com/install_NVIDIA_software_to_Jetson-101" target="_blank"><span>reComputer J101 扩展板</span></a> 上提供了 SD 卡功能，支持 CLK 频率 48MHz。这里的 CLK 设计是为了满足认证要求（例如 CE/FCC）。如果您希望自行提高 CLK，可以按照以下说明操作。
+我们在 <a href="https://wiki.seeedstudio.com/cn/install_NVIDIA_software_to_Jetson-101" target="_blank"><span>reComputer J101 载板</span></a> 上提供了 SD 卡功能，支持 CLK 频率为 48MHz。这里的 CLK 设计是为了满足认证要求（如 CE/FCC）。如果您希望自行提高 CLK，可以使用以下指令。
 
 <div>
   <p style={{}}><a href="https://github.com/Seeed-Studio/seeed-linux-dtoverlays/blob/master/overlays/jetsonnano/jetson-sdmmc-overlay.dts" target="_blank" /></p><div align="center"><a href="https://github.com/Seeed-Studio/seeed-linux-dtoverlays/blob/master/overlays/jetsonnano/jetson-sdmmc-overlay.dts" target="_blank"><img width={300} src="https://files.seeedstudio.com/wiki/seeed_logo/github.png" /></a></div><p />
@@ -188,7 +184,7 @@ cd bootFromUSB
     sudo /opt/nvidia/jetson-io/config-by-hardware.py -n "reComputer sdmmc"
     ```
 
-- **步骤 3**. 重启设备
+- **步骤 3**. 重启
 
     ```bash
     reboot
@@ -196,7 +192,7 @@ cd bootFromUSB
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供各种支持，确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时拥有尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

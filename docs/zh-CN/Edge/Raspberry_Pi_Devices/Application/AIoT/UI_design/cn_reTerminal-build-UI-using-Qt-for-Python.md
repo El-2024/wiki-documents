@@ -7,29 +7,25 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reTerminal-build-UI-using-Qt-for-Python
 last_update:
-  date: 05/15/2025
+  date: 1/31/2023
   author: jianjing Huang
 ---
 
-# 导入库
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/final-output.png" alt="pir" width="1000" height="auto"/></p>
 
 ## 简介
 
-本篇 Wiki 介绍了如何使用 Qt for Python 在 reTerminal 上构建自己的用户界面。这里我们使用了 PySide2 进行开发。PySide2 是 Qt for Python 项目的官方 Python 模块，它提供了对完整 Qt5 框架的访问。Qt for Python 允许您以更友好的方式构建交互式用户界面！它使用起来也非常灵活，并且学习曲线较短。
+本篇 Wiki 讲解了如何使用 Python 的 Qt 在 reTerminal 上构建自己的用户界面。这里我们使用了 PySide2 进行开发。PySide2 是来自 Qt for Python 项目的官方 Python 模块，它提供了对完整 Qt5 框架的访问。Qt for Python 允许您以更友好的方式构建交互式用户界面！它还非常灵活且易于使用，学习曲线较短。
 
-通过以下指南，您将能够创建一个应用程序，通过点击 LCD 上的按钮来控制 reTerminal 的 STA 和 USR LED。那么让我们开始吧！
+通过以下指南，您将能够创建一个应用程序，通过点击 LCD 上的按钮来控制 reTerminal 上的 STA 和 USR LED。那么让我们开始吧！
 
 ## 准备开发环境
 
 ### 在 reTerminal 上
 
-- **步骤 1.** 使用 **板载 LCD、外接显示器或 SSH** 访问 reTerminal，具体操作请参考[这里](https://wiki.seeedstudio.com/reTerminal/#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet)，然后在终端窗口中输入以下命令：
+- **步骤 1.** 按照[这里](https://wiki.seeedstudio.com/cn/reTerminal/#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet)的说明，通过 **板载 LCD、外接显示器或 SSH** 访问 reTerminal，并在终端窗口中输入以下命令：
 
 ```sh
 sudo apt install qml-module-qtquick-shapes python3-pyside2.qtqml python3-pyside2.qtcore python3-pyside2.qtnetwork python3-pyside2.qtgui python3-pyside2.qtwidgets python3-pyside2.qtquick qtquickcontrols2-5-dev qml-module-qtcharts qml-module-qtquick-controls qml-module-qtquick-controls2
@@ -41,7 +37,7 @@ sudo apt install qml-module-qtquick-shapes python3-pyside2.qtqml python3-pyside2
 sudo apt install qt5-qmake
 ```
 
-**注意：** 我们需要手动安装 QtQuick.Studio，因为默认的 Debian 和 Ubuntu 操作系统中没有此模块。
+**注意：** 我们需要手动安装 QtQuick.Studio，因为默认的 Debian 和 Ubuntu 操作系统没有此模块。
 
 - **步骤 3.** 安装 **QtQuick.Studio** 模块
 
@@ -55,7 +51,7 @@ sudo make install
 
 **注意：** 由于最新的 QtQuick.Studio 模块无法在当前的 Raspberry Pi OS 上运行，我们已将其移植到 Debian GNU/Linux 10 (buster)。
 
-可以忽略以下提示错误：
+我们可以忽略以下提示错误。
 
 ```txt
 Some of the required modules (qtHaveModule(quick)) are not available.
@@ -70,17 +66,17 @@ Skipped.
 
 **注意：** 下载适合您操作系统的安装程序。
 
-- **步骤 2.** 点击左侧导航菜单中的 **扩展** 标签，然后在搜索框中输入 **remote development**
+- **步骤 2.** 点击左侧导航菜单中的 **扩展** 标签，并在搜索框中输入 **remote development**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/remote-dev-extension.png" alt="pir" width="800" height="auto"/></p>
 
-- **步骤 3.** 选择 **Remote Development** 并点击 **Install**（安装）。
+- **步骤 3.** 选择 **Remote Development** 并点击 **安装**
 
 - **步骤 4.** 按下键盘上的 **F1**，输入 **ssh** 并选择 **Remote-SSH:Connect to Host...**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/remote-ssh.png" alt="pir" width="800" height="auto"/></p>
 
-- **步骤 5.** 输入以下内容：
+- **步骤 5.** 输入以下内容
 
 ```sh
 pi@192.xxx.xx.xx
@@ -88,19 +84,19 @@ pi@192.xxx.xx.xx
 
 **注意：** **pi** 是用户名，**192.xxx.xx.xx** 是 reTerminal 的 IP 地址。
 
-- **步骤 6.** 输入用户的密码。
+- **步骤 6.** 输入用户的密码
 
 现在您已经成功通过 SSH 登录到 reTerminal。
 
-- **步骤 7.** 按照 **步骤 2** 的方式安装 **Python** 扩展。
+- **步骤 7.** 按照 **步骤 2** 的方式安装 **Python** 扩展
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/python-extension.png" alt="pir" width="800" height="auto"/></p>
 
-- **步骤 8.** 安装 **Qt for Python** 扩展。
+- **步骤 8.** 安装 **Qt for Python** 扩展
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/qt-python-extension.png" alt="pir" width="800" height="auto"/></p>
 
-- **步骤 9.** 导航到 `File > Open Folder...` 并选择您想要打开的任意文件夹。
+- **步骤 9.** 导航到 `文件 > 打开文件夹...` 并选择您想要打开的任何文件夹
 
 **注意：** 稍后我们将使用 Visual Studio Code 在 reTerminal 内创建文件并构建我们的项目。
 
@@ -108,7 +104,7 @@ pi@192.xxx.xx.xx
 
 ## 构建项目
 
-接下来我们开始构建项目。工作流程如下：
+接下来，我们开始构建项目。工作流程如下：
 
 1. 在**图形设计软件**中设计用户界面 (UI)
 2. 创建一个 **.qml** 文件，并根据从图形设计软件中获得的 UI 元素位置构建 UI
@@ -118,9 +114,9 @@ pi@192.xxx.xx.xx
 6. 创建一个**脚本**以运行 Python 文件
 7. 创建一个**桌面快捷方式**，通过双击图标打开创建的应用程序
 
-我们需要创建的文件如下：
+需要创建的文件如下：
 
-- LedGui.qml - 带有图形元素的 UI
+- LedGui.qml - 包含图形元素的 UI
 - App.qml - 全屏 UI 应用程序
 - ledControl.py - 控制 LED 的函数
 - main.py - 运行应用程序
@@ -129,7 +125,7 @@ pi@192.xxx.xx.xx
 
 ### 设计 UI
 
-首先我们需要设计 UI。为此，我们将使用一个免费的在线图形设计软件 **Gravit Designer**。
+首先，我们需要设计 UI。为此，我们将使用一个免费的在线图形设计软件 **Gravit Designer**。
 
 - **步骤 1.** 点击 [此链接](https://www.designer.io/) 打开 Gravit Designer
 
@@ -139,7 +135,7 @@ pi@192.xxx.xx.xx
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/gravit-dimensions.png" alt="pir" width="800" height="auto"/></p>
 
-**注意：** 我们将其设置为 1280x720px，因为这是 reTerminal LCD 的分辨率
+**注意：** 我们将其设置为 1280x720px，因为这是 reTerminal LCD 的分辨率。
 
 - **步骤 4.** 选择 **Rectangle** 形状
 
@@ -191,7 +187,7 @@ pi@192.xxx.xx.xx
 
 ### 在 qml 中构建 UI
 
-现在我们将从 Gravit Designer 转移设计到 qml 并构建 UI。
+现在我们将从 Gravit Designer 转移设计到 qml，并构建 UI。
 
 - **步骤 1.** 使用 Microsoft Visual Code 通过 SSH 连接到 reTerminal，打开之前提到的文件夹。
 
@@ -199,7 +195,7 @@ pi@192.xxx.xx.xx
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/wiki3/buildui-1.png" alt="pir" width="700" height="auto"/></p>
 
-- **步骤 3.** 为文件夹输入一个名称并进入文件夹
+- **步骤 3.** 为文件夹命名并进入文件夹
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/wiki3/buildui-2.png" alt="pir" width="500" height="auto"/></p>
 
@@ -207,11 +203,11 @@ pi@192.xxx.xx.xx
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/wiki3/buildui-3.png" alt="pir" width="500" height="auto"/></p>
 
-- **步骤 4.** 为文件输入一个名称，并使用 **.qml** 扩展名，如下所示
+- **步骤 4.** 为文件命名并使用 **.qml** 扩展名，如下所示
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/wiki3/buildui-4.png" alt="pir" width="600" height="auto"/></p>
 
-**注意：** 确保文件名的首字母为**大写**
+**注意：** 确保文件名的首字母为**大写**。
 
 - **步骤 5.** 进入 **.qml 文件**并复制以下代码
 
@@ -237,7 +233,7 @@ Item {
         width: 1280 // 矩形块宽度
         height: 175 // 矩形块高度
         color: "green" // 矩形块颜色
-        /* 你也可以为颜色字段输入 **十六进制值** */
+        /* 你也可以在颜色字段中输入 **十六进制值** */
     }
 
     // 左上按钮 (ON)
@@ -251,7 +247,7 @@ Item {
         font.pointSize: 28 // 文本字体
         palette.button: "green" // 按钮颜色
         palette.buttonText: "white" // 文本颜色
-        // 用于在 Python 文件中访问按钮控制类并打开 LED
+        // 用于访问 Python 文件中的按钮控制类并打开 LED
         onClicked:
         {
             _Setting.staGreenOn()
@@ -412,9 +408,9 @@ Item {
 
 ### 构建全屏用户界面
 
-接下来，我们将构建全屏用户界面
+接下来，让我们构建全屏用户界面
 
-- **步骤 1.** 打开之前创建的 Root 文件夹，并在该文件夹下创建一个新的 **.qml 文件**
+- **步骤 1.** 打开之前创建的根文件夹，并在该文件夹下创建一个新的 **.qml 文件**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/wiki3/buildui-6.png" alt="pir" width="400" height="auto"/></p>
 
@@ -443,20 +439,20 @@ ApplicationWindow {
 }
 ```
 
-现在我们已经完成了全屏应用的构建
+现在我们已经完成了全屏应用程序的构建。
 
 ### 控制 LED 的方法
 
-接下来我们将创建一个 Python 文件，用于获取控制 reTerminal 上 LED 的方法
+接下来，我们将创建一个 Python 文件，用于获取控制 reTerminal 上 LED 的方法。
 
-- **步骤 1.** 打开之前创建的 Root 文件夹，并在该文件夹下创建一个新的 **.py** Python 文件
+- **步骤 1.** 打开之前创建的根文件夹，并在该文件夹下创建一个新的 **.py 文件**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/python-1.png" alt="pir" width="400" height="auto"/></p>
 
 - **步骤 2.** 打开 **.py 文件**，并复制以下代码
 
 ```py
-
+# 导入库
 import sys
 import os
 from PySide2.QtCore import *
@@ -496,13 +492,13 @@ class Setting(QObject):
         sys.exit()
 ```
 
-现在我们已经完成了用于控制 LED 的 Python 文件
+现在我们已经完成了用于控制 LED 的 Python 文件。
 
-### 准备运行应用的 Python 文件
+### 准备运行应用程序的 Python 文件
 
-现在我们需要创建一个 Python 文件，用于运行我们构建的应用
+现在我们需要创建一个 Python 文件，用于运行我们构建的应用程序。
 
-- **步骤 1.** 打开之前创建的 Root 文件夹，并在该文件夹下创建一个新的 **.py 文件**
+- **步骤 1.** 打开之前创建的根文件夹，并在该文件夹下创建一个新的 **.py 文件**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/buildui-7.png" alt="pir" width="400" height="auto"/></p>
 
@@ -515,11 +511,11 @@ from PySide2.QtWidgets import *
 from PySide2.QtCore import *
 from ledControl import Setting
 
-# 启动应用
+# 启动应用程序
 if __name__ == '__main__':
     app = QApplication([])
     engine = QQmlApplicationEngine()
-    # 我们之前创建的全屏应用的位置
+    # 全屏应用程序的位置
     url = QUrl("./App.qml")
     context = engine.rootContext()
     seting = Setting()
@@ -530,7 +526,7 @@ if __name__ == '__main__':
 
 ### 准备运行 Python 文件的脚本
 
-- **步骤 1.** 打开之前创建的 Root 文件夹，并在该文件夹下创建一个新的 **.sh 文件**
+- **步骤 1.** 打开之前创建的根文件夹，并在该文件夹下创建一个新的 **.sh 文件**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/buildui-8.png" alt="pir" width="400" height="auto"/></p>
 
@@ -542,9 +538,9 @@ cd $HOME/ledApp
 DISPLAY=:0 python3 main.py
 ```
 
-**注意：** 这里 **$HOME/ledApp** 是 **main.py** 文件的位置
+**注意：** 这里 **$HOME/ledApp** 是 **main.py** 文件的位置。
 
-- **步骤 3.** 在 reTerminal 中打开一个终端窗口，并导航到应用的根目录
+- **步骤 3.** 在 reTerminal 中打开一个终端窗口，并导航到应用程序的根目录
 
 ```sh
 示例：
@@ -557,9 +553,9 @@ cd /ledApp
 chmod +x led_start.sh
 ```
 
-### 准备一个桌面文件以启动应用
+### 准备一个桌面文件以启动应用程序
 
-- **步骤 1.** 打开之前创建的 Root 文件夹，并在该文件夹下创建一个新的 **.desktop 文件**
+- **步骤 1.** 打开之前创建的根文件夹，并在该文件夹下创建一个新的 **.desktop 文件**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/buildui-9.png" alt="pir" width="400" height="auto"/></p>
 
@@ -575,9 +571,9 @@ Type=Application
 Categories=Application;Development;
 ```
 
-**注意：** **Exec** 是我们之前创建的脚本的位置
+**注意：** **Exec** 是我们之前创建的脚本的位置。
 
-- **步骤 3.** 在 reTerminal 中打开一个终端窗口，并导航到应用的根目录
+- **步骤 3.** 在 reTerminal 中打开一个终端窗口，并导航到应用程序的根目录
 
 ```sh
 示例：
@@ -590,9 +586,9 @@ cd /ledApp
 chmod +x led.desktop
 ```
 
-### 启动应用
+### 启动应用程序
 
-- **步骤 1.** 使用 reTerminal LCD 导航到 **ledApp 文件夹**
+- **步骤 1.** 使用 reTerminal 的 LCD 导航到 **ledApp 文件夹**
 
 - **步骤 2.** 双击 **LED Test** 文件
 
@@ -602,9 +598,9 @@ chmod +x led.desktop
 
 现在您可以点击按钮，看到 LED 点亮！
 
-### 调试应用
+### 调试应用程序
 
-让我们回顾一下在开发过程中调试应用的步骤
+让我们在开发过程中调试您的应用程序
 
 - **步骤 1.** 使用 **Microsoft Visual Studio Code** 通过 **SSH** 登录到 reTerminal
 
@@ -628,7 +624,7 @@ cd Python_ReTerminalQt5_LED_UI
 python3 main.py
 ```
 
-最后，您将在新窗口中看到输出结果。如果代码中有任何错误，它们将显示在 MobaXterm 的终端窗口中。
+最后，您将在一个新窗口中看到输出结果。如果代码中有任何错误，它们将显示在 MobaXterm 的终端窗口中。
 
 ## 额外演示
 
@@ -643,7 +639,7 @@ python3 main.py
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供了多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时获得最佳体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

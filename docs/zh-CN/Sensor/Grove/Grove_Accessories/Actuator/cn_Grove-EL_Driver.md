@@ -1,111 +1,113 @@
 ---
-title: Grove - 电致发光驱动器
-description: Grove - 电致发光驱动器
+title: Grove - EL 驱动器
+nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-EL_Driver/
+image: https://wiki.seeedstudio.com/cn/Grove-EL_Driver/
 slug: /cn/Grove-EL_Driver
 last_update:
-  date: 03/20/2024
-  author: WuFeifei
+  date: 01/09/2022
+  author: gunengyu
 ---
 ![](https://files.seeedstudio.com/wiki/Grove-EL_Driver/img/Grove-EL_Driver.jpg)
 
-Grove - EL驱动器专为驱动EL线设计。它集成了一个非常小的逆变器来驱动EL线，因此您只需使用一根Grove线缆就可以轻松点亮EL线。
+Grove - EL 驱动器专为驱动 EL 电线设计。它集成了一个非常小的逆变器来驱动 EL 电线，因此您只需一个 Grove 电缆即可轻松点亮 EL 电线。
 
 [![](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://www.seeedstudio.com/Grove-EL-Driver-p-2269.html)
 
-## 版本追踪
+版本追踪
+---------------
 
-| 版本号 | 描述             | 发布日期       |
-| ------ | ---------------- | -------------- |
-| v1.0   | 初始公开发行版本 | 2014年12月11日 |
+| 修订版 | 描述                   | 发布日期      |
+|--------|------------------------|--------------|
+| v1.0   | 初次公开发布           | 2014年12月11日 |
 
-#### **支持的EL线：**
+#### **支持的 EL 电线：**
 
-- [EL Wire-绿色 3m](https://www.seeedstudio.com/depot/EL-WireGreen-3m-p-1102.html)
-- [EL Wire-红色 3m](https://www.seeedstudio.com/depot/EL-WireRed-3m-p-1129.html)
-- [EL Wire-蓝色 3m](https://www.seeedstudio.com/depot/EL-WireBlue-3m-p-1128.html)
-- [EL Wire-黄色 3m](https://www.seeedstudio.com/depot/EL-WireYellow-3m-p-1127.html)
-- [EL Wire-白色 3m](https://www.seeedstudio.com/depot/EL-WireWhite-3m-p-1130.html)
+- [EL 电线-绿色 3m](https://www.seeedstudio.com/depot/EL-WireGreen-3m-p-1102.html)
+- [EL 电线-红色 3m](https://www.seeedstudio.com/depot/EL-WireRed-3m-p-1129.html)
+- [EL 电线-蓝色 3m](https://www.seeedstudio.com/depot/EL-WireBlue-3m-p-1128.html)
+- [EL 电线-黄色 3m](https://www.seeedstudio.com/depot/EL-WireYellow-3m-p-1127.html)
+- [EL 电线-白色 3m](https://www.seeedstudio.com/depot/EL-WireWhite-3m-p-1130.html)
 
-## 特性
+特点
+--------
 
-- Grove兼容接口
-- 3.3V/5V兼容
+- Grove 兼容接口
+- 3.3V/5V 兼容
 - 集成逆变器变压器
-- 输入电流：最大300mA（根据负载而定）
-- 支持的最大EL电容：15nF
+- 输入电流：最大 300mA（根据负载）
+- 支持的最大 EL 电容：15nF
 
-:::提示
-    更多关于Grove模块的信息，请参考 [Grove系统](https://wiki.seeedstudio.com/Grove_System/)
+:::tip
+    更多关于 Grove 模块的详细信息，请参考 [Grove 系统](https://wiki.seeedstudio.com/cn/Grove_System/)
 :::
 
-## 使用说明
+使用方法
+-----
 
-### 与Arduino配合使用
+### 使用 Arduino
 
-这里我们展示如何使用Arduino来控制LED的状态。
+以下是如何使用 Arduino 控制 LED 状态的示例。
 
-1. 使用4pin Grove线缆将Grove - EL驱动器连接到Base Shield的**数字端口2**。当然，如果有必要，您可以更改为其他有效的数字端口，并应相应地更改端口定义。使用产品包装中提供的线缆将EL线连接到EL驱动器的**J1**端口。
+1. 使用 4pin Grove 电缆将 Grove - EL 驱动器连接到 Base Shield 的 **数字端口 2**。当然，如果需要，您可以更改为其他有效的数字端口，并相应地更改端口定义。使用产品包装中提供的电缆将 EL 电线连接到 EL 驱动器的 **J1** 端口。
 
-2. 将其插入Arduino/Seeeduino。使用USB线缆将板连接到PC。
+2. 将其插入 Arduino/Seeeduino。使用 USB 电缆将板连接到 PC。
 
-3. 将示例代码复制到您的草图中，然后上传到Arduino或Seeeduino板。您将看到EL线每秒闪烁一次。
-
+3. 将示例代码复制到您的草图中，然后上传到 Arduino 或 Seeeduino 板。您会看到 EL 电线每秒闪烁一次。
 
 ```
 /*************************   2014 Seeedstudio   **************************
-* File Name          : GroveELDriverDemoCode.ino
-* Author             : Seeedteam
-* Version            : V1.0
-* Date               : 11/12/2014
-* Description        : Demo code for Grove - EL Driver
+* 文件名          : GroveELDriverDemoCode.ino
+* 作者             : Seeedteam
+* 版本            : V1.0
+* 日期               : 11/12/2014
+* 描述        : Grove - EL 驱动器的示例代码
 *************************************************************************/
  
-#define ELPin 2 //connect EL Driver to digital pin2
+#define ELPin 2 //将 EL 驱动器连接到数字端口2
 void setup() {                
-  // initialize the digital pin2 as an output.
+  // 初始化数字端口2为输出。
   pinMode(ELPin, OUTPUT);     
 }
  
 void loop() {
-  digitalWrite(ELPin, HIGH);   // set the EL Wire on
-  delay(500);               // for 500ms
-  digitalWrite(ELPin, LOW);   // set the EL Wire off
+  digitalWrite(ELPin, HIGH);   // 打开 EL 电线
+  delay(500);               // 持续 500ms
+  digitalWrite(ELPin, LOW);   // 关闭 EL 电线
   delay(500);
 }
 ```
 
 ![](https://files.seeedstudio.com/wiki/Grove-EL_Driver/img/Grove-EL_Driver_usage.jpg)
 
-### 使用Codecraft编程
+### 使用 Codecraft
 
 #### 硬件
 
-**步骤 1.** 将Grove - EL驱动器连接到Base Shield的D2端口。
+**步骤 1.** 将 Grove - EL 驱动器连接到 Base Shield 的 D2 端口。
 
-**步骤 2.** 将Base Shield插入您的Seeeduino/Arduino。
+**步骤 2.** 将 Base Shield 插入您的 Seeeduino/Arduino。
 
-**步骤 3.** 通过USB线缆将Seeeduino/Arduino连接到您的PC。
+**步骤 3.** 使用 USB 电缆将 Seeeduino/Arduino 连接到您的 PC。
 
 #### 软件
 
-**步骤 1.** 打开[Codecraft](https://ide.chmakered.com/)，添加Arduino支持，并将一个主程序拖放到工作区域。
+**步骤 1.** 打开 [Codecraft](https://ide.chmakered.com/)，添加 Arduino 支持，并将主程序拖到工作区。
 
-:::注意
-    如果您是第一次使用Codecraft，也请参阅[使用Arduino的Codecraft指南](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)。
+:::note
+    如果这是您第一次使用 Codecraft，请参阅 [使用 Arduino 的 Codecraft 指南](https://wiki.seeedstudio.com/cn/Guide_for_Codecraft_using_Arduino/)。
 :::
 
-**步骤 2.** 按照下面的图片拖拽模块，或者打开可以在本页面末尾下载的cdc文件。
+**步骤 2.** 按下图拖动模块或打开页面底部提供的 cdc 文件。
 
 ![](https://files.seeedstudio.com/wiki/Grove-EL_Driver/img/EL_Driver.png)
 
-将程序上传到您的Arduino/Seeeduino。
+将程序上传到您的 Arduino/Seeeduino。
 
-:::提示
-    当代码上传完成后，您将看到EL线开始闪烁。
+:::tip
+    当代码上传完成后，您会看到 EL 电线闪烁。
 :::
 
 ## 在线原理图查看器
@@ -116,15 +118,15 @@ void loop() {
 资源
 ---------
 
-- [原理图_电路板_eagle](https://files.seeedstudio.com/wiki/Grove-EL_Driver/res/Grove-EL_Driver_v1.0.zip)
-- [原理图_pdf](https://files.seeedstudio.com/wiki/Grove-EL_Driver/res/Grove-EL_Driver_v1.0.pdf)
+- [sch_pcb_eagle](https://files.seeedstudio.com/wiki/Grove-EL_Driver/res/Grove-EL_Driver_v1.0.zip)
+- [sch_pdf](https://files.seeedstudio.com/wiki/Grove-EL_Driver/res/Grove-EL_Driver_v1.0.pdf)
 - [CodeCraft 库](https://files.seeedstudio.com/wiki/Grove-EL_Driver/res/EL%20Driver.zip)
 
-<!-- This Markdown file was created from https://www.seeedstudio.com/wiki/Grove_-_EL_Driver -->
+<!-- 此 Markdown 文件来源于 https://www.seeedstudio.com/wiki/Grove_-_EL_Driver -->
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在此为您提供全方位的支持，以确保您在使用我们的产品时能够获得最顺畅的体验。我们提供多种沟通渠道，以满足您不同的偏好和需求。
+感谢您选择我们的产品！我们提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多种沟通方式以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

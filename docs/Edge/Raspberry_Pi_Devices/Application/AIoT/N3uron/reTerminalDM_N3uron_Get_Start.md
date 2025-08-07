@@ -125,9 +125,9 @@ To access the N3uron WebUI, follow these steps:
 
 
 **Step 2:** Enter one of the following addresses into the browser's address bar:
-- For local access: http://localhost:8003. 
+- For local access: http://localhost:8003 . 
 - For remote access within the local area network (LAN): http://reTerminal_IpAddress:8003.
-- For local secure access: https://localhost:8443. 
+- For local secure access: https://localhost:8443 . 
 - For secured remote access within the local area network (LAN): https://reTerminal_IpAddress:8443.
 
 **Step 3:** Press Enter to navigate to the N3uron WebUI login page.

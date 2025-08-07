@@ -4341,7 +4341,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Development',
+              label: 'Deployment',
               collapsed: true,
               collapsible: true,
               link: {
@@ -5129,786 +5129,799 @@ const sidebars = {
 
 
 
-// 中文文档
+  // 中文文档
   CNSidebar: [
     {
       type: 'doc',
       id: 'zh-CN/cn_Getting_Started',
-      label: '矽递科技 Wiki 文档平台',
+      label: '快速入门',
       className: 'sideboard_calss',
     },
 
     {
       type: 'doc',
-      id: 'zh-CN/Sensor/Grove/cn_Grove_System',
-      label: 'Grove 系列',
+      id: 'zh-CN/cn_Sensor',
+      label: '传感器',
       className: 'sideboard_calss',
     },
+
     {
       type: 'category',
-      label: 'Grove 传感器',
+      label: 'Grove',
       collapsed: true,
       collapsible: true,
+      link: {
+        type: "doc",
+        id: "zh-CN/Sensor/Grove/cn_Grove_System"
+      },
       items: [
         {
           type: 'category',
-          label: 'AI驱动',
+          label: 'Grove 传感器',
           collapsed: true,
           collapsible: true,
+          link: {
+            type: "doc",
+            id: "zh-CN/Sensor/Grove/Grove_Sensors/cn_Grove_Sensor_Intro"
+          },
           items: [
             {
               type: 'category',
-              label: 'Grove Vision AI V2',
+              label: '多合一传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/All_in_one/cn_Grove_SEN5X_All_in_One',
+                'zh-CN/Sensor/Grove/Grove_Sensors/All_in_one/cn_Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680',
+                'zh-CN/Sensor/Grove/Grove_Sensors/All_in_one/cn_Grove-CO2&Temperature&HumiditySensor-SCD41',
+                'zh-CN/Sensor/Grove/Grove_Sensors/All_in_one/cn_Grove-CO2_Temperature_Humidity_Sensor-SCD30',
+                'zh-CN/Sensor/Grove/Grove_Sensors/All_in_one/cn_Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'AI 驱动传感器',
+              items: [        
+                {
+                  type: 'category',
+                  label: 'Grove Vision AI',
+                  collapsed: true,
+                  collapsible: true,
+                  link: {
+                    type: "doc",
+                    id: "zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/cn_Grove-Vision-AI-Module"
+                  },
+                  items: [
+                    'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/cn_Train-Deploy-AI-Model-Grove-Vision-AI',
+                    'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/cn_edge-impulse-vision-ai',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Grove Vision AI V2',
+                  collapsed: true,
+                  collapsible: true,
+                  link: {
+                    type: "doc",
+                    id: "zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_Grove-vision-ai-v2"
+                  },
+                  items: [
+                    'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_Grove-vision-ai-v2-software-supported',
+                    'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_Grove-vision-ai-v2-camera-supported',
+                    'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_grove_vision_ai_v2_sscma',
+                    'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_Grove_vision_ai_v2_RS485',
+                    {
+                      type: 'category',
+                      label: '开发',
+                      items: [
+                        'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Development/cn_grove-vision-ai-v2-himax-sdk',
+                        'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Development/cn_grove_vision_ai_v2_at_library',
+                      ],
+                    },
+                    {
+                      type: 'category',
+                      label: '应用',
+                      items: [
+                        'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/cn_grove-vision-ai-v2-sensecap-app',
+                        'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/cn_grove-vision-ai-v2-demo',
+                        'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/cn_grove_vision_ai_v2_webcamera',
+                        'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/cn_vision_ai_v2_crowd_heat_map',
+                        'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/cn_grove_vision_ai_v2_telegram',
+                      ],
+                    },
+                  ],
+                },
+                'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/cn_Grove-Gesture_sensor_paj7660',
+              ],
+            },
+            {
+              type: 'category',
+              label: '温湿度传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temp&Humi/cn_Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temp&Humi/cn_Grove-TempAndHumi_Sensor-SHT31',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temp&Humi/cn_Grove-I2C_High_Accuracy_Temp&Humi_Sensor-SHT35',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temp&Humi/cn_Grove-Temperature_and_Humidity_Sensor_Pro',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temp&Humi/cn_Grove-TemperatureAndHumidity_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temp&Humi/cn_Grove-Temperature-Humidity-Sensor-DH20',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temp&Humi/cn_Grove-TemperatureAndHumidity_Sensor-HDC1000',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temp&Humi/cn_Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temp&Humi/cn_Grove-SHT4x',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '温度传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-1-Wire_Thermocouple_Amplifier-MAX31850K',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-I2C_Thermocouple_Amplifier-MCP9600',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_One-Wire-Temperature-Sensor-DS18B20',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-High_Temperature_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-Thermal-Imaging-Camera-IR-Array',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-Digital_Infrared_Temperature_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-Infrared_Temperature_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-Infrared_Temperature_Sensor_Array-AMG8833',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-Temperature_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-Temperature_Sensor_V1.2',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '土壤湿度传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Soli_Humidity/cn_Grove-Capacitive_Moisture_Sensor-Corrosion-Resistant',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Soli_Humidity/cn_Grove-Moisture_Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '接近传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Grove-Ultrasonic_Sensor_SMS812',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Sensor_distance',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Grove-Ultrasonic_Ranger',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Grove-IR_Distance_Interrupter_v1.2',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Grove-TF_Mini_LiDAR',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Grove-Doppler-Radar',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Grove-Time_of_Flight_Distance_Sensor-VL53L0X',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Grove-80cm_Infrared_Proximity_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Grove-Gesture_v1.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Proximity/cn_Grove-Adjustable_PIR_Motion_Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '空气质量传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Air_Quality/cn_Grove-Laser_PM2.5_Sensor-HM3301',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Air_Quality/cn_Grove-Dust_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Air_Quality/cn_Grove-Air_Quality_Sensor_v1.3',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Air_Quality/cn_Grove-Formaldehyde-Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '气体传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Sensor_gas',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Gas_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Multichannel-Gas-Sensor-V2',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Gas_Sensor-MQ2',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Gas_Sensor-MQ3',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Gas_Sensor-MQ5',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Gas_Sensor-MQ9',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Gas_Sensor-O2',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Gas_Sensor-O2-MIX8410',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Oxygen-Sensor-Pro',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Alcohol_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-CO2_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-smart_air_quality_sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-VOC_and_eCO2_Gas_Sensor-SGP30',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-VOC_Gas_Sensor-SGP40',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-HCHO_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Gas/cn_Grove-Multichannel_Gas_Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '气压计',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Barometer/cn_Sensor_barometer',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Barometer/cn_Grove-Barometer-High-Accuracy',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Barometer/cn_Grove-Barometer_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Barometer/cn_Grove-Barometer_Sensor-BME280',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Barometer/cn_Grove-Barometer_Sensor-BMP180',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Barometer/cn_Grove-Barometer_Sensor-BMP280',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Barometer/cn_Grove-Barometer_Sensor-SPA06-003',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Barometer/cn_Grove-High-Precision-Barometric-Pressure-Sensor-DPS310',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Barometer/cn_Grove-Integrated-Pressure-Sensor-Kit',
+              ],
+            },
+            {
+              type: 'category',
+              label: '加速度计',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-D7S-Vibration-Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Sensor_accelerometer',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Digital_Accelerometer-16g',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Analog_Accelerometer',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Compass_V1.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Digitial_Compass_v2.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Digital_Accelerometer-1.5g',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Digital_Accelerometer-400g',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Analog_Accelerometer_20g-ADXL356B',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis-Digital-Accelerometer-LIS3DHTR',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Analog_Accelerometer_40g-ADXL356C',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Digital_Accelerometer_40g-ADXL357',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Digital_Accelerometer_200g-ADXL372',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Digital_Gyro',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-3-Axis_Digital_Accelerometer±16g_Ultra-low_Power-BMA400',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-6-Axis_AccelerometerAndCompass_V2.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-6-Axis_AccelerometerAndGyroscope',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-6-Axis_Accelerometer&Gyroscope_BMI088',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-IMU_10DOF',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-IMU_10DOF_v2.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-IMU_9DOF_v2.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-IMU_9DOF-lcm20600+AK09918',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Accelerometer/cn_Grove-Single_Axis_Analog_Gyro',
+              ],
+            },
+            {
+              type: 'category',
+              label: '光线传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Lightning-Sensor-AS3935',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Sensor_light',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Digital_Light_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Heelight_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Light_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Sunlight_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-UV_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-I2C_UV_Sensor-VEML6070',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Luminance_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Infrared_Receiver',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Line_Finder',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-IR_Line_Follower_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Flame_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Infrared_Reflective_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-I2C_Color_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove_Color_Sensor'
+              ],
+            },
+            {
+              type: 'category',
+              label: '生物识别传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Sensor_biomedicine',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Grove-Finger-clip_Heart_Rate_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Grove-Finger-clip_Heart_Rate_Sensor_with_shell',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Grove-EMG_Detector',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Grove-Ear-clip_Heart_Rate_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Grove-Chest_Strap_Heart_Rate_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Grove-Capacitive-Fingerprint-Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Grove-Fingerprint_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Grove-GSR_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Grove-Human_Presence_Sensor-AK9753',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '声音传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Sound/cn_Sensor_sound',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Sound/cn_Grove-Sound_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Sound/cn_Grove-Loudness_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Sound/cn_Grove-Speech_Recognizer',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Sound/cn_Grove-Sound_Recorder',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Sound/cn_Grove-Analog-Microphone',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Sound/cn_Grove-Recorder_v2.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Sound/cn_Grove-Offline-Voice-Recognition',
+              ],
+            },
+            {
+              type: 'category',
+              label: '触摸传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Touch/cn_Grove-Touch_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Touch/cn_Grove-Rotary_Angle_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Touch/cn_Grove-Round_Force_Sensor_FSR402',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Touch/cn_Grove-2_Channel_Inductive_Sensor-LDC1612',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Touch/cn_Grove-12_Key_Capacitive_I2C_Touch_Sensor_V2-MPR121',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Touch/cn_Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Touch/cn_Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616-',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Touch/cn_Grove-Capacitive_Touch_Slide_Sensor-CY8C4014LQI',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Touch/cn_Grove-I2C_Touch_Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '液体传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_Sensor_liquid',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_Grove-ORP-Sensor-Pro',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_Grove-Water_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_Grove-Water-Level-Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_G1-1-4_Water_Flow_sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_Grove-PH-Sensor-kit',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_Grove-EC-Sensor-kit',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_Grove-TDS-Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_Grove-Turbidity-Sensor-Meter-for-Arduino-V1.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_Grove-ORP-Sensor-kit',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Liquid/cn_Grove-PH_Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '运动传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Sensor_motion',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-PIR_Motion_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Digital-PIR-Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Collision_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Tilt_Switch',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Mini_Track_Ball',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Mouse_Encoder',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Piezo_Vibration_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Slide_Potentiometer',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Optical_Rotary_Encoder-TCUT1600X01',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-12-bit-Magnetic-Rotary-Position-Sensor-AS5600',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Vibration_Sensor_SW-420',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Encoder',
+                'zh-CN/Sensor/Grove/Grove_Sensors/Motion/cn_Grove-Step_Counter-BMA456',
+              ],
+            },
+            {
+              type: 'category',
+              label: '重量传感器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors/Weight/cn_Grove-ADC_for_Load_Cell-HX711',
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Grove 网络模块',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: "zh-CN/Sensor/Grove/Grove_Sensors_Network/cn_Grove_network_module_intro"
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'LoRa',
               collapsed: true,
               collapsible: true,
               link: {
                 type: "doc",
-                id: "zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_Grove-vision-ai-v2"
+                id: "zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/cn_Grove_LoRa_E5_New_Version"
               },
               items: [
-                'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_Grove-vision-ai-v2-software-supported',
-                'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_grove-vision-ai-v2-ha',
-                'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_Grove-vision-ai-v2-camera-supported',
-                'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_grove-vision-ai-v2-himax-sdk',
-                'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/cn_grove-vision-ai-v2-sensecap-app',
+                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/cn_Grove_LoRa_E5_New_Version',
+                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_P2P',
+                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_TTN_Demo',
+                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_Helium_Demo',
+                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_Helium_tinyML_Demo',
+                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_SenseCAP_Cloud_Demo',
+                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_SenseCAP_XIAO_ESP32S3',
+              ],
+            },
+            {
+              type: 'category',
+              label: '蓝牙',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Bluetooth/cn_Grove-BLE-dual_model-v1.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Bluetooth/cn_Grove-Serial_Bluetooth_v3.0',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Bluetooth/cn_Grove-BLE_v1',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Bluetooth/cn_Grove-Serial_Bluetooth',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wi-Fi',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Wi-Fi/cn_Grove-UART_Wifi',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Wi-Fi/cn_Grove-UART_Wifi_V2',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'NFC',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/NFC/cn_Grove_NFC_ST25',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/NFC/cn_Grove_NFC',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/NFC/cn_Grove_NFC_Tag',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'GPS',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/GPS/cn_Grove-GPS',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/GPS/cn_Grove-GPS-Air530',
+              ],
+            },
+            {
+              type: 'category',
+              label: '射频',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/RF/cn_Grove-125KHz_RFID_Reader',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/RF/cn_Grove-315MHz_RF_Kit',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/RF/cn_Grove-433MHz_Simple_RF_Link_Kit',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/RF/cn_Grove_LoRa_Radio',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/RF/cn_Grove-Serial_RF_Pro',
+              ],
+            },
+            {
+              type: 'category',
+              label: '标准协议',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/cn_Grove-DMX512',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/cn_Grove-I2C_ADC',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/cn_Grove-I2C_FM_Receiver',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/cn_Grove-I2C_FM_Receiver_v1.1',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/cn_Grove-Protoshield',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/cn_Grove-RJ45_Adapter',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/cn_Grove-Node',
               ],
             },
           ],
         },
-        'zh-CN/Sensor/Grove/Grove_Sensors/cn_Grove-Air_Quality_Sensor_v1.3',
-        'zh-CN/Sensor/Grove/Grove_Sensors/cn_Grove-Light_Sensor',
-        'zh-CN/Sensor/Grove/Grove_Sensors/cn_Grove-Red_LED',
-        'zh-CN/Sensor/Grove/Grove_Sensors/cn_Grove-Slide_Potentiometer',
-        'zh-CN/Sensor/Grove/Grove_Sensors/cn_Grove-Sound_Sensor',
-        'zh-CN/Sensor/Grove/Grove_Sensors/cn_Grove-Temperature_and_Humidity_Sensor_Pro',
-      ], 
-    },
-    {
-      type: 'category',
-      label: 'Grove 配件',
-      collapsed: true,
-      collapsible: true,   
-      link: {
-        type: "doc",
-        id: "zh-CN/Sensor/Grove/Grove_Accessories/cn_Grove_Accessories_Intro"
-      },
-      items: [
-          {
-            type: 'category',
-            label: '显示',
-            collapsed: true,
-            collapsible: true,
-            items: [
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-0.54_inch_Red_Dual_Alphanumeric_Display',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-0.54_inch_Red_Quad_Alphanumeric_Display',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-1.2_inch_IPS_Display',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-4-Digit_Display',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-16x2_LCD_Series',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-LCD_RGB_Backlight',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED_Display_0.96inch',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED_Display_1.12inch',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED-Display-0.66-SSD1306_v1.0',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED-Display-0.96-SSD1315',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED-Display-1.12-SH1107_V3.0',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED-Yellow&Blue-Display-0.96-SSD1315_V1.0',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-Serial_LCD_V1.0',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-Triple_Color_E-Ink_Display_1_54',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-Triple_Color_E-Ink_Display_2_13',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_I2C_LCD',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-BlinkM',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-Serial_Camera_Kit', 
-            ],
+
+        {
+          type: 'category',
+          label: 'Grove 配件',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: "zh-CN/Sensor/Grove/Grove_Accessories/cn_Grove_Accessories_Intro"
           },
-          {
-            type: 'category',
-            label: '驱动器',
-            collapsed: true,
-            collapsible: true,
-            items: [
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-2-Coil_Latching_Relay',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Buzzer',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Passive-Buzzer',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Chainable_RGB_LED',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Dry-Reed_Relay',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-EL_Driver',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Haptic_Motor',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-I2C_Motor_Driver',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-I2C_Motor_Driver_V1.2',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-I2C_Motor_Driver_V1.3',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-I2C-Motor-Driver-L298P',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Infrared_Emitter',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-LED_Matrix_Driver_v1.0',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-MP3_v2.0',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-MP3-v3',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-mp3-v4',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Mini_Fan',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Mini_I2C_Motor_Driver_v1.0',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove_Recorder',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Recorder_v3.0',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Relay',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-4-Channel_SPDT_Relay',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-2-Channel_SPDT_Relay',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Solid_State_Relay',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Solid_State_Relay_V2',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-2-Channel_Solid_State_Relay',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-4-Channel_Solid_State_Relay',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-8-Channel_Solid_State_Relay',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Optocoupler_Relay-M281',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Serial_MP3_Player',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Servo',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Speaker',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Speaker-Plus',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Variable_Color_LED',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Vibration_Motor',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Water_Atomization',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-16-Channel_PWM_Driver-PCA9685',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-I2C_Motor_Driver-TB6612FNG',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Hall_Sensor',
-            'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Voltage_Divider',
-            ],
-          },
-          
-          {
-            type: 'category',
-            label: '时钟',
-            items: [
-              'zh-CN/Sensor/Grove/Grove_Accessories/Time/cn_Grove-RTC',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Time/cn_Grove_High_Precision_RTC',
-            ],
-          },
-
-          {
-            type: 'category',
-            label: '电流',
-            items: [
-              'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-10A_DC_Current_Sensor-ACS725',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-5A_DC_AC_Current_Sensor-ACS70331',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-2.5A-DC-Current-Sensor-ACS70331',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-Electricity_Sensor',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-Coulomb_Counter_3.3V_to_5V-LTC2941',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-MOSFET',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-SPDT_Relay_30A',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-Screw_Terminal',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-Electromagnet',
-            ],
-          },
-
-          {
-            type: 'category',
-            label: '开关 & 按钮',
-            items: [
-              'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-6-Position_DIP_Switch',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Button',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Switch-P',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-LED_Button',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Dual-Button',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-5-Way_Switch',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Mech_Keycap',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Thumb_Joystick',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Magnetic_Switch',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Joint_v2.0',
-            ],
-          }, 
-
-          {
-            type: 'category',
-            label: '输入输出',
-            items: [
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-Differential_Amplifier_v1.2',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-I2C_Hub',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-I2C-Hub-6Port',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-AND',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-OR',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-DC_Jack_Power',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-Qwiic-Hub',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-NunChuck',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-PS_2_Adapter',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-Mini_Camera',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-Serial_Camera',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-16-bit-ADC-ADS1115',
-              'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-NOT',
-            ],
-          },              
-
-          {
-            type: 'category',
-            label: '包装',
-            items: ['zh-CN/Sensor/Grove/Grove_Accessories/Case/cn_Grove-Wrapper'],
-          },
-
-      ], 
-    },
-    
-    {
-      type: 'doc',
-      id: 'zh-CN/Sensor/SeeedStudio_XIAO/cn_SeeedStudio_XIAO_Series_Introduction',
-      label: 'XIAO 拇指开发板',
-      className: 'sideboard_calss',
-    },
-    'zh-CN/Sensor/SeeedStudio_XIAO/cn_SeeedStudio_XIAO_Series_Projects',
-    {
-
-      type: 'category',
-      label: 'XIAO SAMD21',
-      collapsed: true,
-      collapsible: true,
-      items: [
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_Seeeduino-XIAO',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_XIAO-SAMD21-Zephyr-RTOS',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_XIAO_SAMD21_with_PlatformIO',
-        {
-          type: 'category',
-          label: '编程语言',
           items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_Seeeduino-XIAO-by-Nanase',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_Seeeduino-XIAO-CircuitPython',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_XIAO-SAMD21-MicroPython',
-          ],
-        },
-        {
-          type: 'category',
-          label: '嵌入式机器学习',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/Embedded ML/cn_Seeeduino-XIAO-TinyML',
-          ],
-        },
-        {
-          type: 'category',
-          label: '实用教程',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_Seeeduino-XIAO-TinyUSB',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_XIAO-SPI-Communication-Interface',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/TuTorial/cn_Seeeduino-XIAO-DAPLink',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/TuTorial/cn_How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI',
-          ],
-        },
-      ]
-    },
-    { // XIAO RA4M1
-      type: 'category',
-      label: 'XIAO RA4M1',
-      items: [
-        {
-          type: 'autogenerated',
-          dirName: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RA4M1',
-        }
-      ],
-    },
-    {
-      type: 'category',
-      label: 'XIAO MG24',
-      items: [
-        {
-          type: 'autogenerated',
-          dirName: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_MG24',
-        },
-      ],
-    },
-    {
-
-      type: 'category',
-      label: 'XIAO RP2040',
-      collapsed: true,
-      collapsible: true,
-      items: [
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040',
-        {
-          type: 'category',
-          label: '编程语言',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-Arduino',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-MicroPython',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-CircuitPython',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'RTOS',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-NuttX-RTOS',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-Zephyr-RTOS',
-          ],
-        },
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO_RP2040_with_PlatformIO',
-        {
-          type: 'category',
-          label: '嵌入式机器学习',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/Embedded ML/cn_XIAO-RP2040-EI',
-          ],
-        },
-      ]
-    },
-    { // XIAO RP2350
-      type: 'category',
-      label: 'XIAO RP2350',
-      items: [
-        {
-          type: 'autogenerated',
-          dirName: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2350',
-        },
-      ]
-    },
-    {
-      type: 'category',
-      label: 'XIAO nRF52840 (Sense)',
-      collapsed: true,
-      collapsible: true,
-      items: [
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO_BLE',
-        {
-          type: 'category',
-          label: 'RTOS',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-nRF52840-Zephyr-RTOS',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-nRF52840_PlatformIO',
-          ],
-        },
-        {
-          type: 'category',
-          label: '编程语言',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE_CircutPython',
-          ],
-        },
-        {
-          type: 'category',
-          label: '平台',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-nRF52840_PlatformIO',
-          ],
-        },
-        {
-          type: 'category',
-          label: '硬件基础教学',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE-Sense-IMU-Usage',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE-Sense-PDM-Usage',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE_QSPI-Usage',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE-Sense-Pin-Multiplexing',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE-Sense-NFC-Usage',
-          ],
-        },
-        {
-          type: 'category',
-          label: '蓝牙使用',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/cn_XIAO-BLE-Sense-Bluetooth_Usage',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/cn_XIAO-BLE-Sense-Bluetooth-Usage',
-          ],
-        },
-        {
-          type: 'category',
-          label: '嵌入式机器学习',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/cn_XIAOEI',
-            // 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/cn_XIAO-BLE-PDM-EI',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/cn_XIAO-BLE-Sense-TFLite-Getting-Started',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/cn_XIAO-BLE-Sense-TFLite-Mic',
-          ],
-        },
-        {
-          type: 'category',
-          label: '实用教程',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/cn_XIAO-BLE-sidewalk',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/cn_XIAO_BLE_HA',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/cn_XIAO_BLE_Sense_Head_Tracker'
-          ],
-        },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'XIAO ESP32C3',
-      collapsed: true,
-      collapsible: true,
-      items: [
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_Getting_Started',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_Pin_Multiplexing',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO-ESP32C3-NuttX',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO-ESP32C3-Zephyr',
-        {
-          type: 'category',
-          label: '无线通讯功能',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_WiFi_Usage',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_Bluetooth_Usage',
-          ],
-        },
-        {
-          type: 'category',
-          label: '编程语言',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_with_CircuitPython',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_MicroPython',
-          ],
-        },
-        {
-          type: 'category',
-          label: '实用教程',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_xiao-esp32c3-esphome',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_xiao-esp32c3-prism-display',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_xiaoesp32c3-chatgpt',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_ESP32C3_Smart_Thermostat',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_xiaoesp32c3-flash-storage',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_XIAO-ESP32C3-for-ESPHome-Support',
-            // 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_xiaoesp32c3-chatgpt',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_Xiao_C3_Ibeacon',
-          ],
-        },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'XIAO ESP32C6',
-      collapsed: true,
-      collapsible: true,
-      items: [
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_Getting_Started',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_Pin_Multiplexing',
-        {
-          type: 'category',
-          label: '无线通讯功能',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_WiFi_Usage',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_Bluetooth_Usage',
-          ],
-        },
-        {
-          type: 'category',
-          label: '编程语言',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_Embedded_Swift',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_with_CircuitPython',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_with_MicroPython',
-          ],
-        },
-        {
-          type: 'category',
-          label: '平台',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_with_PlatformIO',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'RTOS',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO-ESP32C6-NuttX',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Zigbee',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/cn_xiao_esp32c6_zigbee',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/cn_xiao_esp32c6_zigbee_arduino',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/cn_xiaoc6_zigbee_led_ha',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/cn_use_cursor_create_zigbee_prj',
-          ],
-        },
-        {
-          type: 'category',
-          label: '实用教程',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/cn_xiao_esp32c6_aws_iot',
-            // 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/cn_XIAO_ESP32C6_ESPNOW',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/cn_xiao_esp32c6_kafka',
-          ],
-        },
-      ],
-    },
-
-    {
-       type: 'category',
-       label: 'XIAO ESP32S3 系列',
-       collapsed: true,
-       collapsible: true,
-       items: [
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_Getting_Started',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_Pin_Multiplexing',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_Sense_Consumption', 
-         {
-           type: 'category',
-           label: '无线通讯功能',
-           items: [
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_WiFi_Usage',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_Bluetooth_Usage',
-           ],
-         },
-         {
-          type: 'category',
-          label: '编程语言',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_with_MicroPython',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_CircuitPython',
-            // 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_Micropython',
-            
-          ],
-        },
-       {
-          type: 'category',
-          label: 'RTOS',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO-ESP32S3-Zephyr-RTOS',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO-ESP32S3-FreeRTOS',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO-ESP32S3-NuttX-RTOS',            
-          ],
-        },
-         {
-           type: 'category',
-           label: '硬件基础教学（Sense版本）',
-           items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/cn_XIAO_ESP32S3_Sense_camera',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/cn_XIAO_ESP32S3_Sense_mic',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/cn_XIAO_ESP32S3_Sense_tf_and_filesystem',
-           ],
-         },
-         {
-           type: 'category',
-           label: '实用教程',
-           items: [
-            //  'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Speech2chatgpt',
             {
               type: 'category',
-              label: 'Edgeimpulse',
-              link: {
-                type: "doc",
-                id: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/cn_EdgeImpulse',
-              },
+              label: '显示器',
               items: [
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/cn_Image_classification_project',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/cn_Key_Word_Spotting',
-            ],
-          },
-
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Speech2chatgpt',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_EdgeLab',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Geolocation',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_ESPHome',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_SSCMA',
-            //  'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Voice_Pomodoro',
-            //  'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Keyword_Spotting',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Baidu',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Voice_Recognition_MiniMax',
-             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Voice_Recognition_MiniMax_tts',
-           ],
-         },
-       ],
-     },
-     {
-      type: 'category',
-      label: 'XIAO 的兼容扩展板',
-      items: [
-        {
-          type: 'category',
-          label: '基于 XIAO 的圆形显示屏',
-          items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/cn_SeeedStudio_Round_Display_for_XIAO',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/cn_SeeedStudio_RoundDisplay_Usage',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/cn_Draw_dials_with_Display_and_lvgl',
-            {
-              type: 'category',
-              label: '实用教程',
-              items: [
-                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/Application/cn_SeeedStudio_Round_Display_Christmas_ball',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-1.2_inch_IPS_Display',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-4-Digit_Display',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-0.54_inch_Red_Dual_Alphanumeric_Display',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-0.54_inch_Red_Quad_Alphanumeric_Display',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-16x2_LCD_Series',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-LCD_RGB_Backlight',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED-Display-0.66-SSD1306_v1.0',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED_Display_0.96inch',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED-Display-0.96-SSD1315',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED-Yellow&Blue-Display-0.96-SSD1315_V1.0',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED_Display_1.12inch',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-OLED-Display-1.12-SH1107_V3.0',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_I2C_LCD',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-Triple_Color_E-Ink_Display_2_13',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-Triple_Color_E-Ink_Display_1_54',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-Serial_LCD_V1.0',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-BlinkM',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Display/cn_Grove-Serial_Camera_Kit',
               ],
             },
-          ],
-        },
-        {
-          type: 'category',
-          label: '基于 XIAO 的 GPS 模块',
-          items: [
             {
-              type: 'autogenerated',
-              dirName: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO',
+              type: 'category',
+              label: '执行器',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-2-Coil_Latching_Relay',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Buzzer',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Passive-Buzzer',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Chainable_RGB_LED',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Dry-Reed_Relay',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-EL_Driver',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Haptic_Motor',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-I2C_Motor_Driver',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-I2C_Motor_Driver_V1.2',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-I2C_Motor_Driver_V1.3',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-I2C-Motor-Driver-L298P',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Infrared_Emitter',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-LED_Matrix_Driver_v1.0',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-MP3_v2.0',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-MP3-v3',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-mp3-v4',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Mini_Fan',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Mini_I2C_Motor_Driver_v1.0',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove_Recorder',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Recorder_v3.0',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Relay',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-4-Channel_SPDT_Relay',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-2-Channel_SPDT_Relay',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Solid_State_Relay',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Solid_State_Relay_V2',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-2-Channel_Solid_State_Relay',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-4-Channel_Solid_State_Relay',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-8-Channel_Solid_State_Relay',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Optocoupler_Relay-M281',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Serial_MP3_Player',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Servo',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Speaker',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Speaker-Plus',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Variable_Color_LED',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Vibration_Motor',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Water_Atomization',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-16-Channel_PWM_Driver-PCA9685',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-I2C_Motor_Driver-TB6612FNG',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Hall_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Voltage_Divider',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '时间模块',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Accessories/Time/cn_Grove-RTC',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Time/cn_Grove_High_Precision_RTC',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '电流模块',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-10A_DC_Current_Sensor-ACS725',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-5A_DC_AC_Current_Sensor-ACS70331',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-2.5A-DC-Current-Sensor-ACS70331',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-Electricity_Sensor',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-Coulomb_Counter_3.3V_to_5V-LTC2941',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-MOSFET',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-SPDT_Relay_30A',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-Screw_Terminal',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Current/cn_Grove-Electromagnet',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'LED',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-Red_LED',
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-Circular_LED',
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-LED_Bar',
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-RGB_LED_Stick-10-WS2813_Mini',
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-LED_ring',
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-LED_Socket_Kit',
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-LED_String_Light',
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-LED_Strip_Driver',
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-RGB_LED_Matrix_w-Driver',
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-LED_Matrix_Driver-HT16K33',
+                'zh-CN/Sensor/Grove/Grove_Accessories/LED/cn_Grove-Red_LED_Matrix_w_Driver',
+              ],
+            },
+            {
+              type: 'category',
+              label: '开关和按钮',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-6-Position_DIP_Switch',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Button',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Switch-P',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-LED_Button',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Dual-Button',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-5-Way_Switch',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Mech_Keycap',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Thumb_Joystick',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Magnetic_Switch',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Switch&Button/cn_Grove-Joint_v2.0',
+              ],
+            },
+            {
+              type: 'category',
+              label: '输入输出',
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-Differential_Amplifier_v1.2',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-I2C_Hub',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-I2C-Hub-6Port',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-AND',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-OR',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-DC_Jack_Power',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-Qwiic-Hub',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-NunChuck',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-PS_2_Adapter',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-Mini_Camera',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-Serial_Camera',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-16-bit-ADC-ADS1115',
+                'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-NOT',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '外壳',
+              items: ['zh-CN/Sensor/Grove/Grove_Accessories/Case/cn_Grove-Wrapper'],
             },
           ],
         },
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_Seeeduino-XIAO-Expansion-Board',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_XIAO-CAN-Bus-Expansion-Board',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_Grove-Shield-for-Seeeduino-XIAO-embedded-battery-management-chip',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_xiao-rgb-matrix',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_gpio_expander_for_xiao',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_XIAO-eInk-Expansion-Board',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_xiao_eink_expansion_board_v2',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_XIAO-RS485-Expansion-Board',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_Bus_Servo_Driver_Board',
-        'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_LED_Driver_Board',
       ],
     },
 
     {
       type: 'category',
-      label: 'XIAO + ESP-IDF + ESP- Matter',
-      items: [
-        'zh-CN/Sensor/SeeedStudio_XIAO/Matter/cn_xiao_esp32_idf_env',
-        'zh-CN/Sensor/SeeedStudio_XIAO/Matter/cn_getting_started_with_matter',
-        'zh-CN/Sensor/SeeedStudio_XIAO/Matter/cn_xiao_esp32_matter_env',
-        'zh-CN/Sensor/SeeedStudio_XIAO/Matter/cn_matter_development_framework_overview',
-       ],
-    },
-
-    'zh-CN/Sensor/SeeedStudio_XIAO/cn_XIAO_ESPNOW',
-    'zh-CN/Sensor/SeeedStudio_XIAO/cn_PCB_Design_XIAO',
-    
-    {
-      type: 'category',
-      label: '基于 XIAO 的初学者套件',
-      items: ['zh-CN/Sensor/SeeedStudio_XIAO/Kit_with_Courses/cn_XIAO-Kit-Courses'],
-    },
-    // 'zh-CN/Sensor/SeeedStudio_XIAO/cn_PCB_Design_XIAO',
-    'zh-CN/Sensor/SeeedStudio_XIAO/cn_XIAO_FAQ',
-
-    //XIAO 这里
-
-
-    {
-      type: 'doc',
-      id: 'zh-CN/Sensor/SenseCAP/cn_Industrial-IoT-SenseCAP-Introduction',
       label: 'SenseCAP',
-      className: 'sideboard_calss',
-    },
-    {
-      type: 'category',
-      label: 'SenseCAP T1000 追踪器',
       collapsed: true,
       collapsible: true,
       link: {
         type: "doc",
-        id: 'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_SenseCAP_T1000_intro',
+        id: "zh-CN/Sensor/SenseCAP/cn_Industrial-IoT-SenseCAP-Introduction",
       },
       items: [
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_SenseCAP_T1000_Tracker_Introduction',
         {
-        type: 'category',
-        label: '用户指南',
-        items: [
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Get_Started',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Payload',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Tracker_WiFi_Geolocation',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_E5_Bluetooth_Location_Beacon',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Indoor_Positioning_Guide',
-                ],
-      },
-      {
-        type: 'category',
-        label: '集成 LoRaWAN 网络服务器',
-        items: [
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_Helium',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_The_Things_Network',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_Loriot',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_AWS_Service',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_TTN_Mapper',
-                ],
-      },
-      {
-        type: 'category',
-        label: '集成主流可视化仪表盘',
-        items: [
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Datacake_Integrated',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Ubidots_Integrated',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_thingsboard_integrated', 
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Ubidots_Integrated(Helium)',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Qubitro_Integrated',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_TagoIO_Integrated',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_InfluxDB_Integrated',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Akenza_Integrated',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Trackpac_Integrated',
-        'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_sensecap_t1000_tracker_wialon',
-                ],
-      },
-      'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_FAQ',
-      'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_Firmware_release_note',
-          ],
-    },
-
-
-    {
-      type: 'category',
-      label: 'SenseCAP 传感器',
-      collapsed: true,
-      collapsible: true,
-      link: {
-        type: "doc",
-        id: "zh-CN/Sensor/SenseCAP/SenseCAP_Intro/cn_SenseCAP_Sensor_Intro",
-      },
-      items: [
+          type: 'category',
+          label: 'SenseCAP T1000 追踪器',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_SenseCAP_T1000_intro',
+          },
+          items: [
+            'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_SenseCAP_T1000_Tracker_Introduction',
+            {
+            type: 'category',
+            label: '用户指南',
+            items: [
+              'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Get_Started',
+              'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Payload',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Tracker_WiFi_Geolocation',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_BC01_Indoor_Bluetooth_Beacon',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Indoor_Positioning_Guide',
+                  ],
+          },
+          {
+            type: 'category',
+            label: '与 LoRaWAN 网络服务器集成',
+            items: [
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_Helium',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_The_Things_Network',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_Loriot',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_AWS_Service',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_TTN_Mapper',
+                  ],
+          },
+          {
+            type: 'category',
+            label: '与热门仪表板集成',
+            items: [
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Datacake_Integrated',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Ubidots_Integrated',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_thingsboard_integrated', 
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Ubidots_Integrated(Helium)',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Qubitro_Integrated',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_TagoIO_Integrated',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_InfluxDB_Integrated',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Akenza_Integrated',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Trackpac_Integrated',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_sensecap_t1000_tracker_wialon',
+                  ],
+          },
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_FAQ',
+          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_Firmware_release_note',
+              ],
+        },
 
         {
           type: 'category',
-          label: 'SenseCAP LoRaWAN 传感器',
+          label: 'SenseCAP 传感器',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: "zh-CN/Sensor/SenseCAP/SenseCAP_Intro/cn_SenseCAP_Sensor_Intro",
+          },
           items: [
+
             {
               type: 'category',
-              label: 'SenseCAP S210X 系列',
+              label: 'SenseCAP LoRaWAN 传感器',
+
               items: [
-                'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/cn_SenseCAP_LoRaWAN_S210X_Series_Sensor',
-                'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/cn_SenseCAP_S2107',
                 {
                   type: 'category',
-                  label: '教程',
+                  label: 'SenseCAP S210X 系列',
                   items: [
-                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/cn_Connect-S210X-Sensor-to-Microsoft-Azure-IoT-Central',
-                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/cn_How-to-Connect-SenseCAP-S210X-to-Helium-Network',
-                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/cn_How-to-Connect-SenseCAP-S210X-to-The-Things-Network',
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/cn_SenseCAP_LoRaWAN_S210X_Series_Sensor',
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/cn_SenseCAP_S2107',
+                    {
+                      type: 'category',
+                      label: '教程',
+                      items: [
+                        'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/cn_Connect-S210X-Sensor-to-Microsoft-Azure-IoT-Central',
+                        'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/cn_How-to-Connect-SenseCAP-S210X-to-Helium-Network',
+                        'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/cn_How-to-Connect-SenseCAP-S210X-to-The-Things-Network',
+                        'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/cn_How_to_Connect_SenseCAP_S210X_to_Datacake_via_TTN',
+                      ],
+                    },
+                  ],
+                },
+
+                {
+                  type: 'category',
+                  label: 'SenseCAP S2120 8合1 LoRaWAN 气象传感器',
+                  items: [
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/cn_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor_Introduction',
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/cn_Tutorials-Getting_Started_with_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor',
+                  ],
+                },
+
+                {
+                  type: 'category',
+                  label: 'SenseCAP A1101',
+                  items: [
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_SenseCAP-Vision-AI-Get-Started',
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_Train-Deploy-AI-Model-A1101',
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_One-Stop-Model-Training-with-Edge-Impulse',
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_Train-Water-Meter-Digits-Recognition-Model-with-SenseCAP-A1101',
+                  ],
+                },
+
+
+                {
+                  type: 'category',
+                  label: 'SenseCAP A1102',
+                  items: [
+                    {
+                      type: 'autogenerated',
+                      dirName: 'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1102',
+                    },
                   ],
                 },
               ],
             },
+
             {
               type: 'category',
-              label: 'SenseCAP S2120 八合一 LoRaWAN 气象传感器',
+              label: 'SenseCAP ONE 气象传感器',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: "zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/cn_ONE_intro",
+              },
               items: [
-                'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/cn_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor_Introduction',
-                'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/cn_Tutorials-Getting_Started_with_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'SenseCAP A1101',
-              items: [
-                'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_SenseCAP-Vision-AI-Get-Started',
-                'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_Train-Deploy-AI-Model-A1101',
-                'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_One-Stop-Model-Training-with-Edge-Impulse',
-                'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_Train-Water-Meter-Digits-Recognition-Model-with-SenseCAP-A1101',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'SenseCAP A1102',
-              items: [
+                'zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/cn_SenseCAP-One-Series-Meteorological-Sensors',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/cn_ORCH-S4-Weather-Station',
                 {
-                  type: 'autogenerated',
-                  dirName: 'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1102',
+                  type: 'category',
+                  label: 'SenseCAP One 紧凑型气象站',
+                  items: [
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/cn_Introduction',
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/cn_Tutorials-Getting Started with SenseCAP ONE Compact Weather Sensor',
+                    'zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/cn_Benchmark_Labs_Forecast_Integration_for_Seeed_Weather_Stations',
+                  ],
                 },
               ],
             },
-          ],
-        },
 
-        {
-          type: 'category',
-          label: 'SenseCAP ONE 气象传感器',
-          collapsed: true,
-          collapsible: true,
-          link: {
-            type: "doc",
-            id: "zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/cn_ONE_intro",
-          },
-          items: [
-            'zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/cn_SenseCAP-One-Series-Meteorological-Sensors',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/cn_ORCH-S4-Weather-Station',
             {
               type: 'category',
-              label: 'SenseCAP One 紧凑型气象站',
+              label: 'SenseCAP 传感器探头',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: "zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Probe_intro",
+              },
               items: [
-                'zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/cn_Introduction',
-                'zh-CN/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/cn_Tutorials-Getting Started with SenseCAP ONE Compact Weather Sensor',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_SenseCAP_Sensor_Probes_Product_Catalogue',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Total_Solar_Radiation_Sensor',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Liquid-Level-Sensor',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Water-Leak-Detector',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Industrial-ph-Sensor',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_RS485_Air_Temperature_Humidity_and_Barometric_Pressure_Sensor(S-THP-01A)',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Soil-Moisture-Temperature-EC-Sensor',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Soil-Moisture-Temperature-Sensor',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_RS485_500cm_Ultrasonic_Sensor',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_RS485_750cm_Ultrasonic_Sensor-1',
+                'zh-CN/Sensor/SenseCAP/Accessories/cn_Industrial-Grade-Optical-Rain-Gauge-RG-15',
+                'zh-CN/Sensor/SenseCAP/Accessories/cn_Optical-Rain-Gauge-RG-9',
               ],
             },
           ],
@@ -5916,37 +5929,63 @@ const sidebars = {
 
         {
           type: 'category',
-          label: 'SenseCAP 传感探头',
+          label: 'SenseCAP 传感器构建器',
           collapsed: true,
           collapsible: true,
           link: {
             type: "doc",
-            id: "zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Probe_intro",
+            id: 'zh-CN/Sensor/SenseCAP/SenseCAP_Sensor_Builder/cn_Build-LoRaWAN-Sensors-SenseCAP-XIAO-Controller-Data-Logger',
           },
           items: [
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_SenseCAP_Sensor_Probes_Product_Catalogue',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Total_Solar_Radiation_Sensor',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Liquid-Level-Sensor',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Water-Leak-Detector',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Industrial-ph-Sensor',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_RS485_Air_Temperature_Humidity_and_Barometric_Pressure_Sensor(S-THP-01A)',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Soil-Moisture-Temperature-EC-Sensor',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_Soil-Moisture-Temperature-Sensor',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_RS485_500cm_Ultrasonic_Sensor',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Probe/cn_RS485_750cm_Ultrasonic_Sensor-1',
-            'zh-CN/Sensor/SenseCAP/Accessories/cn_Industrial-Grade-Optical-Rain-Gauge-RG-15',
-            'zh-CN/Sensor/SenseCAP/Accessories/cn_Optical-Rain-Gauge-RG-9',
+            'zh-CN/Sensor/SenseCAP/SenseCAP_Sensor_Builder/cn_SenseCAP_Builder_build_LoRaWAN_Sensors',
+            'zh-CN/Sensor/SenseCAP/SenseCAP_Sensor_Builder/cn_list_of_seeed_grove_for_builder'
           ],
+        },
+
+        {
+          type: 'category',
+          label: 'SenseCAP 数据记录器',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'zh-CN/Sensor/SenseCAP/SenseCAP_Intro/cn_SenseCAP_Data_Logger_Intro',
+          },
+          items: [
+            'zh-CN/Sensor/SenseCAP/SenseCAP_Data_Logger/cn_SenseCAP-Sensor-Hub-Data-Logger',
+            'zh-CN/Sensor/SenseCAP/SenseCAP_Data_Logger/cn_Data_Logger',
+            {
+              type: 'category',
+              label: '教程',
+              items: [
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/cn_How_to_Configure_the_12V_RS485_Sensor_for_S2100_Data_Logger',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/cn_How_to_Configure_the_Analog_Sensor_for_S2100_Data_Logger',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/cn_How_to_Configure_the_Counter&GPIO_Sensor_for_S2100_Data_Logger',
+              ],
+            },
+          ],
+        },
+        'zh-CN/Sensor/SenseCAP/cn_SenseCAP_Decoder',
+        {
+          type: 'category',
+          label: '应用案例',
+          items: [
+            'zh-CN/Sensor/SenseCAP/Applications/cn_Home_Assistant_X_SenseCAP_LoRaWAN_Sensors',
+            'zh-CN/Sensor/SenseCAP/Applications/cn_Develop_an_Industrial_LoRaWAN_Sensor',
+          ],
+        },
+        {
+          type: 'category',
+          label: '学习资源',
+          items: [
+            'zh-CN/Sensor/SenseCAP/Learn/cn_How_to_Select_the_LoRaWAN_Network',
+        ],
         },
       ],
     },
     {
       type: 'category',
       label: 'LoRaWAN 追踪器',
-      link: {
-        type: "doc",
-        id: 'zh-CN/Sensor/SenseCAP/LoRaWAN_Tracker/cn_get_started_with_lorawan_tracker',
-      },
       items: [
         {
           type: 'autogenerated',
@@ -5972,7 +6011,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCAP Watcher',
+      label: 'SenseCAP 观察者',
       collapsed: true,
       collapsible: true,
       link: {
@@ -5986,344 +6025,2562 @@ const sidebars = {
         },
       ]
     },
+    {
+      type: 'category',
+      label: '毫米波雷达传感器',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Sensor/mmWave_radar_sensor/cn_mmwave_radar_Intro',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'XIAO 毫米波雷达',
+          items: [
+            'zh-CN/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/cn_mmwave-for-xiao',
+            'zh-CN/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/cn_mmwave-for-xiao_arduino',
+            'zh-CN/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/cn_mmwave-for-xiao-connect-to-HA',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MR60FDA2 毫米波套件',
+          items: [
+            'zh-CN/Sensor/mmWave_radar_sensor/mr60fda2-mmwave-kit/cn_getting_started_with_mr60fda2',
+            'zh-CN/Sensor/mmWave_radar_sensor/mr60fda2-mmwave-kit/cn_ha_with_mr60fda2',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MR60BHA2 毫米波套件',
+          items: [
+            'zh-CN/Sensor/mmWave_radar_sensor/mr60bha2-mmwave-kit/cn_getting_started_with_mr60bha2',
+            'zh-CN/Sensor/mmWave_radar_sensor/mr60bha2-mmwave-kit/cn_ha_with_mr60bha2',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MR24HPC1 毫米波套件',
+          items: [
+            'zh-CN/Sensor/mmWave_radar_sensor/mr24hpc1-mmwave-kit/cn_mr24hpc1-mmwave_human_kit',
+            'zh-CN/Sensor/mmWave_radar_sensor/mr24hpc1-mmwave-kit/cn_mr24hpc1-mmWave_Kit_And_Grove_Connect_To_ESPHome',
+          ],
+        },
+        'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR24HPC1',
+        'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR60BHA1',
+        'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR60FDA1',
+        'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR24BSD1',
+        'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR24HPB1',
+        'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR24FDB1',
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'XIAO',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Sensor/SeeedStudio_XIAO/cn_SeeedStudio_XIAO_Series_Introduction',
+      },
+      items: [
+        'zh-CN/Sensor/SeeedStudio_XIAO/cn_SeeedStudio_XIAO_Series_Projects',
+
+        {
+          type: 'category',
+          label: 'XIAO SAMD21',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_Seeeduino-XIAO',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_XIAO-SAMD21-Zephyr-RTOS',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_XIAO_SAMD21_with_PlatformIO',
+            {
+              type: 'category',
+              label: '编程语言',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_Seeeduino-XIAO-by-Nanase',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_Seeeduino-XIAO-CircuitPython',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_XIAO-SAMD21-MicroPython',
+
+              ],
+            },
+            {
+              type: 'category',
+              label: '嵌入式机器学习',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/Embedded ML/cn_Seeeduino-XIAO-TinyML',
+              ],
+            },
+            {
+              type: 'category',
+              label: '教程',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_Seeeduino-XIAO-TinyUSB',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_XIAO-SPI-Communication-Interface',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/TuTorial/cn_Seeeduino-XIAO-DAPLink',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/TuTorial/cn_How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI',
+              ],
+            },
+          ],
+        },
+        { // XIAO RA4M1
+          type: 'category',
+          label: 'XIAO RA4M1',
+          items: [
+            {
+              type: 'autogenerated',
+              dirName: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RA4M1',
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO MG24',
+          items: [
+            {
+              type: 'autogenerated',
+              dirName: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_MG24',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO RP2040',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040',
+            {
+              type: 'category',
+              label: '编程语言',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-Arduino',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-MicroPython',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-CircuitPython',
+              ],
+            },
+            {
+              type: 'category',
+              label: '实时操作系统',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-NuttX-RTOS',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-Zephyr-RTOS',
+              ],
+            },
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO_RP2040_with_PlatformIO',
+            {
+              type: 'category',
+              label: '嵌入式机器学习',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/Embedded ML/cn_XIAO-RP2040-EI',
+              ],
+            },
+          ],
+        },
+        { // XIAO RP2350
+          type: 'category',
+          label: 'XIAO RP2350',
+          items: [
+            {
+              type: 'autogenerated',
+              dirName: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2350',
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'XIAO nRF52840 系列',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO_BLE',
+            {
+              type: 'category',
+              label: '实时操作系统',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-nRF52840-NuttX-RTOS',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-nRF52840-Zephyr-RTOS',
+              ],
+            },
+            {
+              type: 'category',
+              label: '编程语言',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE_CircutPython',
+              ],
+            },
+            {
+              type: 'category',
+              label: '平台',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-nRF52840_PlatformIO',
+              ],
+            },
+            {
+              type: 'category',
+              label: '硬件使用',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE-Sense-IMU-Usage',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE-Sense-PDM-Usage',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE_QSPI-Usage',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE-Sense-Pin-Multiplexing',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE-Sense-NFC-Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: '蓝牙库',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/cn_XIAO-BLE-Sense-Bluetooth_Usage',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/cn_XIAO-BLE-Sense-Bluetooth-Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: '嵌入式机器学习',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/cn_XIAOEI',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/cn_XIAO-BLE-Sense-TFLite-Getting-Started',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/cn_XIAO-BLE-Sense-TFLite-Mic',
+              ],
+            },
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/cn_XIAO-BLE-sidewalk',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/cn_XIAO_BLE_HA',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO nRF54L15 系列',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/cn_XIAO_nRF54L15-Sense_Getting_Started',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/cn_XIAO_nRF54L15-Sense_Pin_Multiplexing',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/cn_XIAO_nRF54L15-Sense_Built-in-Sensor',
+            {
+              type: 'category',
+              label: '无线连接',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/cn_XIAO_nRF54L15-Sense_Bluetooth_Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: '平台',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/cn_XIAO_nRF54L15-Sense_PlatformIO',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO ESP32C3',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_Getting_Started',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_Pin_Multiplexing',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO-ESP32C3-NuttX',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO-ESP32C3-Zephyr',
+            {
+              type: 'category',
+              label: '无线连接',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_WiFi_Usage',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_Bluetooth_Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: '编程语言',
+              items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_with_CircuitPython',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_with_MicroPython',
+              ],
+            },
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_xiao-esp32c3-esphome',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_xiao-esp32c3-prism-display',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_xiaoesp32c3-chatgpt',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_ESP32C3_Smart_Thermostat',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_xiaoesp32c3-flash-storage',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_XIAO-ESP32C3-for-ESPHome-Support',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/cn_Xiao_C3_Ibeacon',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO ESP32C6',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_Getting_Started',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_Pin_Multiplexing',
+      
+            {
+              type: 'category',
+              label: '无线连接',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_WiFi_Usage',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_Bluetooth_Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: '编程语言',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_Embedded_Swift',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_with_CircuitPython',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_with_MicroPython',
+              ],
+            },
+            {
+              type: 'category',
+              label: '平台',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_with_PlatformIO',
+              ],
+            },
+            {
+              type: 'category',
+              label: '实时操作系统',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO-ESP32C6-NuttX',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Zigbee',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/cn_xiao_esp32c6_zigbee',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/cn_xiao_esp32c6_zigbee_arduino',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/cn_xiaoc6_zigbee_led_ha',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/cn_use_cursor_create_zigbee_prj',
+              ],
+            },
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/cn_xiao_esp32c6_aws_iot',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/cn_xiao_esp32c6_kafka',
+              ],
+            },
+            
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO ESP32S3 系列',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_Getting_Started',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_Pin_Multiplexing',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_Sense_Consumption',
+            {
+              type: 'category',
+              label: '无线连接',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_WiFi_Usage',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_Bluetooth_Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: '编程语言',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_with_MicroPython',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_CircuitPython',
+              ],
+            },
+            {
+              type: 'category',
+              label: '实时操作系统',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO-ESP32S3-Zephyr-RTOS',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO-ESP32S3-FreeRTOS',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO-ESP32S3-NuttX-RTOS',
+              ],
+            },
+            {
+              type: 'category',
+              label: '硬件使用',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/cn_XIAO_ESP32S3_Sense_mic',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/cn_XIAO_ESP32S3_Sense_tf_and_filesystem',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/cn_XIAO_ESP32S3_Sense_camera',
+              ],
+            },
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Edge Impulse',
+                  collapsed: true,
+                  collapsible: true,
+                  link: {
+                    type: "doc",
+                    id: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/cn_EdgeImpulse',
+                  },
+                  items: [
+                    'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/cn_Key_Word_Spotting',
+                    'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/cn_Image_classification_project',
+                  ],
+                },
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Speech2chatgpt',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_EdgeLab',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Geolocation',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_ESPHome',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_SSCMA',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/cn_XIAO_ESP32S3_Voice_Pomodoro',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO 扩展板',
+          items: [
+            {
+              type: 'category',
+              label: 'XIAO 圆形显示屏',
+              items: [
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/cn_SeeedStudio_Round_Display_for_XIAO',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/cn_SeeedStudio_RoundDisplay_Usage',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/cn_Draw_dials_with_Display_and_lvgl',
+                {
+                  type: 'category',
+                  label: '应用',
+                  items: [
+                    'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/Application/cn_SeeedStudio_Round_Display_Christmas_ball',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'XIAO GPS 模块',
+              items: [
+                {
+                  type: 'autogenerated',
+                  dirName: 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO',
+                },
+              ]
+            },
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_Seeeduino-XIAO-Expansion-Board',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_XIAO-CAN-Bus-Expansion-Board',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_Grove-Shield-for-Seeeduino-XIAO-embedded-battery-management-chip',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_xiao-rgb-matrix',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_gpio_expander_for_xiao',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_XIAO-eInk-Expansion-Board',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_xiao_eink_expansion_board_v2',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_XIAO-RS485-Expansion-Board',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_Bus_Servo_Driver_Board',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_LED_Driver_Board',
+            
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO + ESP-IDF + ESP-Matter',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/Matter/cn_xiao_esp32_idf_env',
+            'zh-CN/Sensor/SeeedStudio_XIAO/Matter/cn_getting_started_with_matter',
+            'zh-CN/Sensor/SeeedStudio_XIAO/Matter/cn_xiao_esp32_matter_env',
+            'zh-CN/Sensor/SeeedStudio_XIAO/Matter/cn_matter_development_framework_overview',
+          ],
+        },
+        'zh-CN/Sensor/SeeedStudio_XIAO/cn_XIAO_ESPNOW',
+        'zh-CN/Sensor/SeeedStudio_XIAO/cn_PCB_Design_XIAO',
+        {
+          type: 'category',
+          label: '教学套件',
+          items: ['zh-CN/Sensor/SeeedStudio_XIAO/Kit_with_Courses/cn_XIAO-Kit-Courses'],
+        },
+        'zh-CN/Sensor/SeeedStudio_XIAO/cn_XIAO_FAQ',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'XIAO 创意装置',
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Sensor/SeeedStudio_XIAO_Gadgets',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Wio Terminal',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Sensor/Wio_Terminal/cn_Wio_Terminal_Intro',
+      },
+      items: [
+        'zh-CN/Sensor/Wio_Terminal/cn_Wio-Terminal-Getting-Started',
+        'zh-CN/Sensor/Wio_Terminal/cn_Wio-Terminal-CircuitPython',
+        'zh-CN/Sensor/Wio_Terminal/cn_Software-FreeRTOS',
+        'zh-CN/Sensor/Wio_Terminal/cn_wio_terminal_faq',
+        {
+          type: 'category',
+          label: '硬件概览',
+          items: [
+            {
+              type: 'category',
+              label: 'LCD 使用',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Overview',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Basic',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Graphics',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Fonts',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Anti-aliased-Fonts',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Loading-Image',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Linecharts',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Histogram',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-APIs',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LVGL',
+              ],
+            },
+            {
+              type: 'category',
+              label: '输入 / 输出',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-Overview',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-Analog',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-Digital',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-I2C',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-SPI',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-Grove',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'IMU 使用',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/IMU/cn_Wio-Terminal-IMU-Overview',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/IMU/cn_Wio-Terminal-IMU-Basic',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/IMU/cn_Wio-Terminal-IMU-Tapping',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'SD 卡',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/SD_Card/cn_Wio-Terminal-FS-Overview',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/SD_Card/cn_Wio-Terminal-FS-ReadWrite',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wi-Fi',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Wi-Fi/cn_Wio-Terminal-Network-Overview',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Wi-Fi/cn_Wio-Terminal-Wi-Fi',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Wi-Fi/cn_Wio-Terminal-Advanced-Wi-Fi',
+              ],
+            },
+            {
+              type: 'category',
+              label: '蓝牙',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/cn_Wio-Terminal-Bluetooth-Overview',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/cn_Wio-terminal-BLE-introduction',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/cn_Wio-Terminal-Web-Bluetooth',
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/cn_BLE-ibeacon-using-Wio-terminal',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'RTC 实时时钟',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/RTC/cn_Wio-Terminal-RTC',
+              ],
+            },
+            {
+              type: 'category',
+              label: '按键',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Buttons/cn_Wio-Terminal-Buttons',
+              ],
+            },
+            {
+              type: 'category',
+              label: '五向开关',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/five_Way_Switch/cn_Wio-Terminal-Switch',
+              ],
+            },
+            {
+              type: 'category',
+              label: '光线传感器',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Light_Sensor/cn_Wio-Terminal-Light',
+              ],
+            },
+            {
+              type: 'category',
+              label: '红外发射器',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Infrared_Emitter/cn_Wio-Terminal-Infrared-Emitter',
+              ],
+            },
+            {
+              type: 'category',
+              label: '麦克风',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Microphone/cn_Wio-Terminal-Mic',
+              ],
+            },
+            {
+              type: 'category',
+              label: '蜂鸣器',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Buzzer/cn_Wio-Terminal-Buzzer',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '应用',
+          items: [
+            {
+              type: 'category',
+              label: '简易物联网',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central',
+                'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_Wio-Terminal-Azure-IOT',
+                'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_Connect-Wio-Terminal-to-Google-Cloud-IoT-Core',
+                'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_Get-Started-with-Wio-Terminal-and-Wappsto-IoT',
+                'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_CyberDeck_Wio-Terminal',
+              ],
+            },
+            {
+              type: 'category',
+              label: '嵌入式机器学习',
+              items: [
+                {
+                  type: 'category',
+                  label: '基于 Edge Impulse 的项目',
+                  items: [
+                    'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-1',
+                    'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-2',
+                    'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-3',
+                    'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-4',
+                    'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-5',
+                    'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-6',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '基于 TensorFlow Lite 的项目',
+                  items: [
+                    'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/cn_Wio-Terminal-TinyML-TFLM-1',
+                    'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/cn_Wio-Terminal-TinyML-TFLM-2',
+                    'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/cn_Wio-Terminal-TinyML-TFLM-3',
+                    'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/cn_Wio-Terminal-Gesture-Recognition',
+                  ],
+                },
+                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/cn_AIoTs_GPS_state_tester',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '扩展板',
+          items: [
+            'zh-CN/Sensor/Wio_Terminal/Extension_Board/cn_Wio-Terminal-Battery-Chassis',
+            'zh-CN/Sensor/Wio_Terminal/Extension_Board/cn_Wio-Terminal-Chassis-Battery_650mAh',
+            'zh-CN/Sensor/Wio_Terminal/Extension_Board/cn_Wio_Terminal_LoRaWan_Chassis_with_Antenna-built-in_LoRa-E5_and_GNSS_EU868_US915',
+            'zh-CN/Sensor/Wio_Terminal/Extension_Board/cn_Wio-Terminal-Ethernet',
+            {
+              type: 'category',
+              label: '音频扩展板',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Extension_Board/Audio_Extension_Board/cn_Wio-Terminal-Audio-Overview',
+                'zh-CN/Sensor/Wio_Terminal/Extension_Board/Audio_Extension_Board/cn_Wio-Terminal-Audio-Play-Record',
+                'zh-CN/Sensor/Wio_Terminal/Extension_Board/Audio_Extension_Board/cn_Wio-Terminal-Audio-GUI',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '配套课程套件',
+          items: [
+            'zh-CN/Sensor/Wio_Terminal/Kit_with_Courses/cn_Wio-Terminal-TinyML-Kit-Course',
+            'zh-CN/Sensor/Wio_Terminal/Kit_with_Courses/cn_Wio-Terminal-TinyML',
+            'zh-CN/Sensor/Wio_Terminal/Kit_with_Courses/cn_Introduction_to_Artificial_Intelligence_for_Makers',
+          ],
+        },
+        {
+          type: 'category',
+          label: '教程',
+          items: [
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Firmware',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Azure_IoT_CC',
+            {
+              type: 'category',
+              label: 'Wio Terminal 的 Blynk 教程',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Blynk_for_Wio_Terminal/cn_Wio-Terminal-Blynk',
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Blynk_for_Wio_Terminal/cn_Blynk-wireless-OTA-functionality-to-Wio-Terminal',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio Terminal USB 主机',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/cn_Wio-Terminal-USBH-Overview',
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/cn_Wio-Terminal-USBH-Keyboard',
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/cn_Wio-Terminal-USBH-Mouse',
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/cn_Wio-Terminal-USBH-Xbox',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio Terminal USB 从机',
+              items: [
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-USBCLIENT-Overview',
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-USBCLIENT-Keyboard',
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-USBCLIENT-Mouse',
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-USBCLIENT-MIDI',
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-HMI-Usermode-SDK',
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-DAPLink',
+                'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-Reading-Raspberry-Pi',
+              ],
+            },
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Displaying-Gyro',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Storting-Analog-Data',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Displaying-Photos',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Interactive-Face',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Barometric-Pressure-sensor-using-the-Wio-terminal',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Reading-COVID19',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Thermal-Camera',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-HMI',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Sound-Meter',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Getting_started_wizard',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Edge-Impulse-Tuner',
+            'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Reading-Github',
+          ],
+        },
+      ],
+    },
 
 
+    {
+      type: 'category',
+      label: 'ReSpeaker 2-Mics Pi HAT',
+      items: [
+        'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/cn_ReSpeaker_2_Mics_Pi_HAT',
+        {
+          type: 'category',
+          label: '适用于 v1 用户（已废弃）',
+          items: [
+            'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/cn_ReSpeaker_2_Mics_Pi_HAT_Raspberry',
+            'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/cn_ReSpeaker_2_Mics_Pi_HAT_Jetson',
+          ],
+        },
+        {
+          type: 'category',
+          label: '适用于 v2 用户',
+          items: [
+            'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/cn_ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
+            'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/cn_ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
+          ],
+        },
+        'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/cn_ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ReSpeaker Lite',
+      items: [
+        'zh-CN/Sensor/ReSpeaker_Lite/cn_reSpeaker_lite_introduction',
+        {
+          type: 'category',
+          label: 'ReSpeaker Lite 搭配 XIAO ESP32S3',
+          link: {
+            type: "doc",
+            id: 'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_xiao_respeaker',
+          },
+          items: [
+            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_i2s_test',
+            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_rgb_test',
+            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_volume',
+            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_button',
+            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_record_and_play',
+            {
+              type: 'doc',
+              id: 'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_generator',
+              label: '音频流生成器',
+            },
+            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_print',
+            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_memory',
+            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_player_spiffs',
+            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_mqtt',
+            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_i2s_tflite',
+          ],
+        },
+        {
+          type: 'category',
+          label: '应用',
+          items: [
+            'zh-CN/Sensor/ReSpeaker_Lite/Application/cn_respeaker_lite_ha',
+            'zh-CN/Sensor/ReSpeaker_Lite/Application/cn_respeaker_lite_pi5',
+          ],
+        },
+        'zh-CN/Sensor/ReSpeaker_Lite/cn_respeaker_enclosure',
+      ],
+    },
 
 
+    {
+      type: 'category',
+      label: 'reSpeaker XVF3800 USB 四麦克风阵列',
+      items: [
+        'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf3800_usb_4_mic_array',
 
-    //SenseCAP 这里
-  
+        {
+          type: 'category',
+          label: 'reSpeaker XVF3800 USB 四麦阵列搭配 XIAO',
+          items: [
+            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf3800_with_xiao_intro',
+            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf3800_i2s_test',
+            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_rgb_test',
+            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_volume',
+            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_record_playback',
+            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_gpio',
+            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_mqtt_stream',
+          ],
+        },
+        {
+          type: 'category',
+          label: '应用',
+          items: [
+            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_ha',
+          ],
+        },
+      ],
+    },
+
+
+    {
+      type: 'category',
+      label: '其他传感模块',
+      items: [
+        {
+          type: 'category',
+          label: '传感器',
+          items: [
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_Ultra_Sonic_range_measurement_module',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_Water-Flow-Sensor',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_Weight_Sensor_Load_Cell_0-500g',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_G1_Water_Flow_Sensor',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_G1_and_2_inch_Water_Flow_Sensor',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_G1-8_Water_Flow_Sensor',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_G3-4_Water_Flow_sensor',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_M11_1.25_Water_flow_Sensor',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_PIR_Motion_Sensor_Large_Lens_version',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_Photo_Reflective_Sensor',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_Photo_interrupter_OS25B10',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_Piezo_Sensor-MiniSense_100',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_RF-Transmitter-and-Receiver-Link-Kit-315MHz-433MHz',
+            'zh-CN/Sensor/Beyond_Grove/Sensors/cn_Gear_Stepper_Motor_Driver_Pack',
+            'zh-CN/Seeed_Elderly/Radar_Sensor/cn_Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11',
+          ],
+        },
+        {
+          type: 'category',
+          label: '传感网络',
+          items: [
+            'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_2KM_Long_Range_RF_link_kits_w_encoder_and_decoder',
+            'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_315Mhz_RF_link_kit',
+            'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_315MHz_Simple_RF_Link_Kit',
+            'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_315Mhz_Wireless_car_key_fob_with_key_chain',
+            'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_315Mhz_remote_relay_switch_kits-2_channels',
+            'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_433Mhz_RF_Link_Kit',
+            'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_SDLogger-Open_Hardware_Data_Logger',
+            'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_WiFi_Serial_Transceiver_Module',
+            'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_Wireless_Sensor_Node-Solar_Kit',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'EcoEye 视觉摄像头',
+          items: [
+            'zh-CN/Sensor/Beyond_Grove/EcoEye_Embedded_Vison_Camera/cn_Get_Started_with_EcoEye',
+          ],
+        },
+        {
+          type: 'category',
+          label: '配件',
+          items: [
+            {
+              type: 'category',
+              label: '电源与充电',
+              items: [
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Essentials',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Battery_Detector_with_Polymer_Lithium_Ion_1050mAh_3.7V',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Battery_Detector_with_Polymer_Lithium_Ion_5100mAh_3.8V',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Lipo_Rider_Pro',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Lipo-Rider-Plus',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Lipo_Rider_V1.3',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_DC_framework_miniature_solenoid_VL-0063',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_DC_framework_solenoid_HCNE1-0520',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_DC_framework_solenoid_HCNE1-0630',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_0.5w_Solar_Panel_55x70',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_1.5W_Solar_Panel_81x137',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_1w_Solar_Panel_80x100',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_2.5W_Solar_Panel_116x160',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_3W_Solar_Panel_138x160',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_3.6V_Micro_hydro_generator',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Bicycle_Dynamo_With_Bracket-6V_3W',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Battery_kit_3.7V_520_mAh',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Logic_DC_Jack',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Qi_Wireless_Charger_Transmitter',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Lipo_Rider',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_Lipo_Rider_V1.1',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_5V-3.3V_Breadboard_Power_Supply',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Charge/cn_5V-3.3V_Breadboard_Power_Supply_v1.1',
+              ],
+            },
+            {
+              type: 'category',
+              label: '输入/输出',
+              items: [
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Input_Output/cn_USB_To_Uart_5V_3V3',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Input_Output/cn_125Khz_RFID_module-UART',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Input_Output/cn_13.56Mhz_RFID_module-IOS-IEC_14443_type_a',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Input_Output/cn_AVR_USB_Programmer',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Input_Output/cn_Scream_out_loud-110dBA_fixed_tone_Siren',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Input_Output/cn_2.8inch-TFT_Touch_Shield_V1.0',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Input_Output/cn_USB_To_Uart_3V3',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Input_Output/cn_USB_To_Uart_5V',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Input_Output/cn_Bus_Pirate_v3_assembled',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Input_Output/cn_Codec-Adaptive_Wireless_Relay',
+              ],
+            },
+            {
+              type: 'category',
+              label: '电流相关',
+              items: [
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Current/cn_Adjustable_DC_DC_Power_Converter_1V-12V-1.5A',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Current/cn_Capacitance_Meter_Kit',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Current/cn_RS-232_To_TTL_Conveter-MAX3232IDR',
+              ],
+            },
+            {
+              type: 'category',
+              label: '外壳',
+              items: [
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Case/cn_Bracket_for_Infrared_Proximity_Sensor',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Case/cn_Shield-MaTrix-V0.9b',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'LED',
+              items: [
+                'zh-CN/Sensor/Beyond_Grove/Accessories/LED/cn_FSM-55',
+              ],
+            },
+            {
+              type: 'category',
+              label: '工具',
+              items: [
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_Bluetooth_Multimeter',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Nano',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_Dfu-util',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_Replacement_LCD_Screen_for_DSO_nano',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Nano_v3',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Nano-Development',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Nano-OpenOCD_gdb',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Nano-Qemu_gdb',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Nano-gcc',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Quad',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Quad_Manual_by_the_community',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Quad-Beta_HW',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Quad-Building_Firmware',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_DSO_Quad-Calibration',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_Mini_Soldering_Iron',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Tools/cn_RF_Explorer_Software',
+              ],
+            },
+            {
+              type: 'category',
+              label: '显示',
+              items: [
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Display/cn_1-69inch_LCD_SPI_display',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Display/cn_1-47inch_LCD_SPI_display',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Display/cn_LCD_16-2_Characters-Green_Yellow_back_light',
+                'zh-CN/Sensor/Beyond_Grove/Accessories/Display/cn_LCD_8-2_Characters-Blue_back_light',
+              ],
+            },
+          ],
+        },
+      ],
+    },
+
+    
+    {
+      type: 'category',
+      label: '其他微控制器',
+      items: [
+        {
+          type: 'category',
+          label: 'Wio 系列',
+          items: [
+            'zh-CN/Sensor/Wio_Series/cn_Wio',
+            {
+              type: 'category',
+              label: 'Sidewalk 的 LPWAN 开发套件',
+              items: [
+                'zh-CN/Sensor/Wio_Series/LPWAN_Dev_Kit_for_Sidewalk/cn_LPWAN_Dev_Kit_for_Sidewalk',
+                'zh-CN/Sensor/Wio_Series/LPWAN_Dev_Kit_for_Sidewalk/cn_Switch_to_Wio_Tracker',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio RP2040',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Wio RP2040 模块',
+                  items: [
+                    'zh-CN/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_Module/cn_Wio_RP2040_Module_Build-in_Wireless_2.4G',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Wio RP2040 迷你开发板',
+                  items: [
+                    'zh-CN/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/cn_Wio_RP2040_mini_Dev_Board-Onboard_Wifi',
+                    'zh-CN/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/cn_Wio-RP2040-with-Arduino-WIFI',
+                    'zh-CN/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/cn_LAN_Communications',
+                    {
+                      type: 'category',
+                      label: '应用',
+                      items: [
+                        'zh-CN/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/Application/cn_Use_MQTT_to_remotely_light_up_LED_lights',
+                        'zh-CN/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/Application/cn_Use_Socket_to_connect_to_the_forum',
+                        'zh-CN/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/Application/cn_Wireless-Fall-Detection-Device',
+                        'zh-CN/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/Application/cn_Wireless-desktop-atmosphere-lamp',
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio Link',
+              items: [
+                'zh-CN/Sensor/Wio_Series/Wio_Link/cn_Wio_Link',
+                'zh-CN/Sensor/Wio_Series/Wio_Link/cn_Wio_Link_Bootcamp_Kit',
+                'zh-CN/Sensor/Wio_Series/Wio_Link/cn_Wio_Link_Deluxe_Kit',
+                'zh-CN/Sensor/Wio_Series/Wio_Link/cn_Wio_Link_Deluxe_Plus_Kit',
+                'zh-CN/Sensor/Wio_Series/Wio_Link/cn_Wio_Link_Environment_Kit',
+                'zh-CN/Sensor/Wio_Series/Wio_Link/cn_Wio_Link_Event_Kit',
+                'zh-CN/Sensor/Wio_Series/Wio_Link/cn_Wio_Link_Starter_Kit',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio Tracker',
+              items: [
+                'zh-CN/Sensor/Wio_Series/Wio_Tracker/cn_Wio_Tracker',
+                'zh-CN/Sensor/Wio_Series/Wio_Tracker/cn_Wio_LTE_Cat.1',
+                'zh-CN/Sensor/Wio_Series/Wio_Tracker/cn_wio_gps_board',
+                'zh-CN/Sensor/Wio_Series/Wio_Tracker/cn_LTE_Cat_1_Pi_HAT',
+                'zh-CN/Sensor/Wio_Series/Wio_Tracker/cn_Wio_LTE_Cat_M1_NB-IoT_Tracker',
+                'zh-CN/Sensor/Wio_Series/Wio_Tracker/cn_Wio-Extension-RTC',
+                'zh-CN/Sensor/Wio_Series/Wio_Tracker/cn_Grove_Starter_Kit_for_Wio_LTE',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio Lite',
+              items: [
+                'zh-CN/Sensor/Wio_Series/Wio_Lite/cn_Wio-Lite-AI-Getting-Started',
+                'zh-CN/Sensor/Wio_Series/Wio_Lite/cn_Wio-Lite-W600',
+                'zh-CN/Sensor/Wio_Series/Wio_Lite/cn_Wio-Lite-MG126',
+                'zh-CN/Sensor/Wio_Series/Wio_Lite/cn_Wio_Lite_RISC_V_GD32VF103_with_ESP8266',
+                'zh-CN/Sensor/Wio_Series/Wio_Lite/cn_Grove-Shield-for-Wio-Lite',
+                'zh-CN/Sensor/Wio_Series/Wio_Lite/cn_Grove_Base_Shield_for_NodeMCU_V1.0',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio Node',
+              items: [
+                'zh-CN/Sensor/Wio_Series/Wio_Node/cn_Wio_Node',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Seeeduino 系列',
+          items: [
+            'zh-CN/Sensor/Seeeduino Series/cn_Getting_Started_with_Seeeduino',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeed_Arduino_Boards',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_Buying_Guide',
+            {
+              type: 'category',
+              label: 'Seeeduino',
+              items: [
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino/cn_Seeeduino_v4.2',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino/cn_Seeeduino_v4.0',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino/cn_Seeeduino_V2.2_Atmega-168P',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino/cn_Seeeduino_V2.2',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino/cn_Seeeduino_v2.21',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino/cn_Seeeduino_v3.0',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino/cn_Seeeduino',
+              ],
+            },
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_Cloud',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino-Cortex-M0',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_Ethernet',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_GPRS',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_Lite',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_LoRAWAN',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_Lotus',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_Lotus_Cortex-M0-',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_Mega',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_Mega_Protoshield_Kit',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino-Nano',
+            {
+              type: 'category',
+              label: 'Seeeduino Stalker',
+              items: [
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino Stalker/cn_Seeeduino_Stalker_V3-Waterproof_Solar_Kit',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino Stalker/cn_Seeeduino_Stalker_V3.1',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino Stalker/cn_Seeeduino_Stalker_v3_enclosure',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino Stalker/cn_Seeeduino_Stalker_v1.0',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino Stalker/cn_Seeeduino_Stalker_v2.3',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino Stalker/cn_Seeeduino_Stalker',
+                'zh-CN/Sensor/Seeeduino Series/Seeeduino Stalker/cn_Seeeduino-Stalker_v3',
+              ],
+            },
+            'zh-CN/Sensor/Seeeduino Series/cn_SeeedStudio-GD32-RISC-V-Dev-Board',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino-Crypto-ATmega4809-ECC608',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_Arch',
+            'zh-CN/Sensor/Seeeduino Series/cn_Seeeduino_Arch_V1.0',
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                'zh-CN/Sensor/Seeeduino Series/Application/cn_Driver_for_Seeeduino',
+                'zh-CN/Sensor/Seeeduino Series/Application/cn_FM_Receiver',
+                'zh-CN/Sensor/Seeeduino Series/Application/cn_Grove-SGP41-with-AHT20',
+              ],
+            },
+            {
+              type: 'category',
+              label: '带课程的套件',
+              items: [
+                'zh-CN/Sensor/Seeeduino Series/Kit with Courses/cn_Grove_IoT_Starter_Kits_Powered_by_AWS',
+                'zh-CN/Sensor/Seeeduino Series/Kit with Courses/cn_Seeeduino_Cloud_and_Grove_IoT_Starter_Kit_Powered_by_AWS',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'LinkIt',
+          items: [
+            'zh-CN/Seeed_Elderly/LinkIt/cn_LinkIt',
+            'zh-CN/Seeed_Elderly/LinkIt/cn_LinkIt_Smart_7688',
+            'zh-CN/Seeed_Elderly/LinkIt/cn_LinkIt_Smart_7688_Duo',
+            'zh-CN/Seeed_Elderly/LinkIt/cn_Linkit_Connect_7681',
+            'zh-CN/Seeed_Elderly/LinkIt/cn_Breakout_for_LinkIt_Smart_7688',
+            'zh-CN/Seeed_Elderly/LinkIt/cn_Breakout_for_LinkIt_Smart_7688_v2.0',
+            'zh-CN/Seeed_Elderly/LinkIt/cn_Arduino_Breakout_for_LinkIt_Smart_7688_Duo',
+            'zh-CN/Seeed_Elderly/LinkIt/cn_Grove_Breakout_for_LinkIt_Smart_7688_Duo',
+            'zh-CN/Seeed_Elderly/LinkIt/cn_Grove_Starter_kit_for_LinkIt_Smart7688_Duo',
+            {
+              type: 'category',
+              label: 'LinkIt ONE',
+              items: [
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE_Tutorial-Analog_Interface',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE_Tutorial-Colorful_World',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE_Tutorial-Get_temperature_with_Webpage',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE_Tutorial-Hello_World',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE_Tutorial-Light-Sensor',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE_Tutorial-Marquee',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt-ONE-Tutorial---Mini-Servo',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE_Tutorial-Push_Button',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE_Tutorial-SMS_control_the_LED',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE_Tutorial-The_Basics',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_Sidekick_Basic_Kit_for_LinkIt_ONE',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_Grove-Starter_Kit_for_LinkIt_ONE',
+                'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_Secret_Box',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Arch',
+          items: [
+            'zh-CN/Sensor/Arch/cn_Arch_Mix',
+            'zh-CN/Sensor/Arch/cn_Arch_V1.1',
+            'zh-CN/Sensor/Arch/cn_Arch_Pro',
+            'zh-CN/Sensor/Arch/cn_Arch_BLE',
+            'zh-CN/Sensor/Arch/cn_Arch_Link',
+            'zh-CN/Sensor/Arch/cn_Arch_GPRS',
+            'zh-CN/Sensor/Arch/cn_Arch_GPRS_V2',
+            'zh-CN/Sensor/Arch/cn_Arch_Max',
+            'zh-CN/Sensor/Arch/cn_Arch_Max_v1.1',
+            'zh-CN/Sensor/Arch/cn_Heart-Sound_Sensor',
+            'zh-CN/Sensor/Arch/cn_Grove-Starter_Kit_for_mbed',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Azure Sphere MT3620',
+          items: [
+            'zh-CN/Sensor/Azure Sphere MT3620/cn_Azure_Sphere_MT3620_Development_Kit',
+            'zh-CN/Sensor/Azure Sphere MT3620/cn_Grove_Starter_Kit_for_Azure_Sphere_MT3620_Development_Kit',
+            'zh-CN/Sensor/Azure Sphere MT3620/cn_MT3620_Ethernet_Shield_v1.0',
+            'zh-CN/Sensor/Azure Sphere MT3620/cn_MT3620_Mini_Dev_Board',
+            'zh-CN/Sensor/Azure Sphere MT3620/cn_MT3620_Grove_Breakout',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Seeed Studio 物联网按钮',
+          items: [
+            'zh-CN/Sensor/IOT_Button_for_ESPHOME/cn_getting_started_with_iot_button',
+            'zh-CN/Sensor/IOT_Button_for_ESPHOME/cn_SEEED_IOT_BOTTON_FOR_ESPHOME',
+            'zh-CN/Sensor/IOT_Button_for_ESPHOME/cn_seeed_iot_button_with_zigbee',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'AWS 物联网按钮',
+          items: [
+            'zh-CN/Sensor/IOT_Button_For_AWS/cn_SEEED-IOT-BUTTON-FOR-AWS',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Pi Pico',
+          items: [
+            'zh-CN/Sensor/Pi_Pico/cn_Grove-Starter-Kit-for-Raspberry-Pi-Pico',
+          ],
+        },
+      ],
+    },
+
+
     {
       type: 'doc',
-      id: 'zh-CN/Network/Meshtastic_Network/cn_meshtastic_intro',
-      label: 'Meshtastic 网络',
-      className: 'sideboard_calss',
-    },
-    {
-      type: 'autogenerated',
-      dirName: 'zh-CN/Network/Meshtastic_Network',
-    },
-    {
-      type: 'doc',
-      id: 'zh-CN/Network/LoRa_Wio_Series/Wio-E5/cn_LoRa-E5_STM32WLE5JC_Module',
-      label: 'LoRa Wio 系列',
-      className: 'sideboard_calss',
-    },
-    {
-      type: 'autogenerated',
-      dirName: 'zh-CN/Network/LoRa_Wio_Series',
-    },
-
-
-
-    {
-      type: 'doc',
-      id: 'zh-CN/Edge/NVIDIA_Jetson/cn_RecomputerPage',
-      label: 'NVIDIA Jetson 套件',
+      id: 'zh-CN/cn_Network',
+      label: '网络',
       className: 'sideboard_calss',
     },
     {
       type: 'category',
-      label: '英伟达 Jetson 系列',
+      label: 'Meshtastic 网络',
+      collapsed: true,
+      collapsible: true,
       link: {
         type: "doc",
-        id: 'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/cn_reComputer_Intro',
+        id: 'zh-CN/Network/Meshtastic_Network/cn_meshtastic_intro',
       },
       items: [
-        // Carrier Boards
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Network/Meshtastic_Network',
+        },
+      ]
+    },
+
+
+    {
+      type: 'category',
+      label: 'LoRa Wio 系列',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Network/LoRa_Wio_Series',
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'SenseCAP 网关',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Network/SenseCAP_Network/cn_SenseCAP_Gateway_Intro',
+      },
+      items: [
         {
           type: 'category',
-          label: '载板',
+          label: 'SenseCAP M2 多平台网关',
           items: [
-            'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J101/cn_reComputer_J1010_J101_Flash_Jetpack',
-            'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J202/cn_reComputer_J2021_J202_Flash_Jetpack',
+            'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/cn_SenseCAP_M2_Multi_Platform_Overview',
+            'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/cn_SenseCAP_M2_MP_Gateway_LNS_Configuration',
+            'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/cn_Quick_Start',
             {
               type: 'category',
-              label: 'J401 载板',
+              label: '教程',
               items: [
-                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J401/cn_reComputer_J4012_Flash_Jetpack',
-                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J401/cn_J401_carrierboard_Hardware_Interfaces_Usage',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/cn_Connect-M2-Multi-Platform-Gateway-to-AWS-IoT',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/cn_Connect-M2-Multi-Platform-Gateway-to-The-Things-Network',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/cn_Connect-M2-Multi-Platform-Gateway-to-ChirpStack',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/cn_traffic_saving_config',
+              ],
+            },
+            'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/cn_flash_opensource_firmware_to_m2_gateway'
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Helium 网关',
+          items: [
+            {
+              type: 'category',
+              label: 'SenseCAP M1 网关',
+              items: [
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/cn_SenseCAP_M1_Overview',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/cn_SenseCAP_M1_Quick_Start',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/cn_SenseCAP_M1_Local_Console',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/cn_SenseCAP_M1_FAQ',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/cn_SenseCAP_M1_Troubleshooting',
               ],
             },
             {
               type: 'category',
-              label: 'J401-Mini 载板',
+              label: 'SenseCAP M2 仅数据网关',
               items: [
-                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/cn_reComputer_Mini_J4012_Flash_Jetpack',
-                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/cn_J401_Mini_carrierboard_Hardware_Interfaces_Usage',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/cn_SenseCAP_M2_Data_Only_Overview',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/cn_SenseCAP_M2_Data_Only_Quick_Start',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/cn_M2_Local_Console',
               ],
             },
             {
               type: 'category',
-              label: 'J501 载板',
+              label: 'SenseCAP M2 轻量网关',
               items: [
-                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J501/cn_reServer_Industrial_J501_Getting_Started',
-                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J501/cn_Hardware_Interfaces_Usage',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/cn_SenseCAP_M2_Light_Gateway_Overview',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/cn_SenseCAP_M2_Light_Gateway_Quick_Start',
+                'zh-CN/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/cn_SenseCAP_M2_Light_Gateway_FAQ',
               ],
             },
-            'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A203v2/cn_reComputer_A203_Flash_System',
-            'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A205/cn_reComputer_A205_Flash_System',
-            'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A603/cn_A603_Flash_JetPack',
-            'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A607/cn_A607_Flash_JetPack',
-            'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A608/cn_A608_Flash_JetPack',
-            
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Flux 网关',
+          items: [
+            'zh-CN/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/cn_SenseCAP_M4_Overview',
+            'zh-CN/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/cn_SenseCAP_M4_Quick_Start',
+            'zh-CN/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/cn_SenseCAP_M4_FAQ',
+          ],
+        },
+        {
+          type: 'category',
+          label: '户外网关',
+          items: [
+            'zh-CN/Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/cn_SenseCAP_LoRaWAN_Outdoor_Gateway_Overview',
+          ],
+        },
+      ],
+    },
+
+
+    {
+      type: 'category',
+      label: 'SenseCAP K1100',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Network/SenseCAP_K1100/cn_SenseCAP_K1100_Intro',
+      },
+      items: [
+        'zh-CN/Network/SenseCAP_K1100/cn_K1100-quickstart',
+        'zh-CN/Network/SenseCAP_K1100/cn_K1100_Getting_Started',
+        {
+          type: 'category',
+          label: 'LoRaWAN 网络应用',
+          items: [
+            {
+              type: 'category',
+              label: 'Arduino 传感器基础使用',
+              items: [
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/cn_K1100-Light-Sensor-Grove-LoRa-E5',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/cn_K1100-IMU-Sensor-Grove-LoRa-E5',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/cn_K1100-Soil-Moisture-Sensor-Grove-LoRa-E5',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/cn_K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/cn_K1100-Temp-Humi-Sensor-Grove-LoRa-E5',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/cn_K1100-Vision-AI-Module-Grove-LoRa-E5',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Helium 云服务',
+              items: [
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/cn_Helium-Introduction',
+                {
+                  type: 'category',
+                  label: 'Helium 连接与 Azure 集成',
+                  items: [
+                    'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/Helium_Connected&Azure_Integrated/cn_Connecting-to-Helium',
+                    'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/Helium_Connected&Azure_Integrated/cn_Integrate-into-Azure-IoT-Hub',
+                    'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/Helium_Connected&Azure_Integrated/cn_Configuring-Web-APP-Visualization',
+                  ],
+                },
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/cn_Integrate_into_Google_Sheets_via_Helium',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/cn_Connect_AWS_via_helium',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'TTN 云服务',
+              items: [
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/TTN_Cloud_Services/cn_TTN-Introduction',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/TTN_Cloud_Services/cn_Connecting-to-TTN',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'SenseCAP 与 Node-Red 云服务集成',
+              items: [
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/cn_K1100_sensecap_node-red',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/cn_K1100_SenseCAP_to_Azure_IoT_Central',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/cn_K1100_SenseCAP_to_PowerBI',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/cn_K1100_SenseCAP_to_influxdb',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/cn_K1100_SenseCAP_to_twilio',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/cn_K1100_SenseCAP_to_datacake',
+                'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/cn_K1100_SenseCAP_to_grafana',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Wi-Fi 网络应用',
+          items: [
+            'zh-CN/Network/SenseCAP_K1100/Wi-Fi-Network_Application/cn_Wio-Terminal-Advanced-WiFi',
+            {
+              type: 'category',
+              label: '云服务',
+              items: [
+                'zh-CN/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Cloud_Service/cn_Getting_started_with_Ubidots',
+                'zh-CN/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Cloud_Service/cn_Quick-Start-to-using-Blynk',
+                'zh-CN/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Cloud_Service/cn_Connect-Wio-Terminal-to-Google-Cloud',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Azure 物联网平台使用',
+              items: [
+                'zh-CN/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Azure_IoT_Platform_Usage/cn_Connect-Wio-Terminal-to-Azure-IoT-Central',
+                'zh-CN/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Azure_IoT_Platform_Usage/cn_Develop-in-Microsoft-Azure-IoT-Central',
+                'zh-CN/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Azure_IoT_Platform_Usage/cn_K1100_Azure_to_PowerBI',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '嵌入式机器学习应用',
+          items: [
+            'zh-CN/Network/SenseCAP_K1100/Embedded_ML_Application/cn_K1111-Edge-Impulse',
+            'zh-CN/Network/SenseCAP_K1100/Embedded_ML_Application/cn_Vision_AI_with_Customizable_Models',
+          ],
+        },
+        {
+          type: 'category',
+          label: '贡献者项目',
+          items: [
+            'zh-CN/Network/SenseCAP_K1100/Contributors_Project/cn_IoT-into-the-wild-contest',
+            'zh-CN/Network/SenseCAP_K1100/Contributors_Project/cn_K1111-Quick-Start-Guide',
+          ],
+        },
+      ],
+    },
+
+
+    {
+      type: 'category',
+      label: 'SenseCAP LoRaWAN 入门套件',
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Network/SenseCAP_LoRaWAN_Starter_Kit',
+        },
+      ]
+    },
+
+    {
+      type: 'category',
+      label: 'Raspberry Pi 解决方案',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'category',
+          label: 'reRouter',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'zh-CN/Network/RaspberryPi_Devices/reRouter/cn_reRouter_Intro',
+          },
+          items: [
+            'zh-CN/Network/RaspberryPi_Devices/reRouter/cn_Raspberry-OpenWrt-Getting-Started',
+            'zh-CN/Network/RaspberryPi_Devices/reRouter/cn_Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4',
+            'zh-CN/Network/RaspberryPi_Devices/reRouter/cn_FAQs_For_openWrt',
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                'zh-CN/Network/RaspberryPi_Devices/reRouter/Application/cn_OpenWrt-Getting-Started',
+                'zh-CN/Network/RaspberryPi_Devices/reRouter/Application/cn_OpenWrt-Plex-Media-Server-on-Docker',
+                'zh-CN/Network/RaspberryPi_Devices/reRouter/Application/cn_Mender-Client-dual-GbE-CM4',
+              ],
+            },
+          ],
+        },  
+
+        {
+          type: 'category',
+          label: 'Raspberry Pi 4G LTE 扩展板',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/cn_Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Windows 网络配置',
+                  items: [
+                    'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_4g_lte_rpi_hat_rndis',
+                    'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_4g_lte_rpi_hat_mbim',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Raspberry Pi OS 网络配置',
+                  items: [
+                    'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_mobile_internet_for_your_pi_ecm_set_up',
+                    'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_4g_lte_rpi_hat_qmi',
+                  ],
+                },
+                'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_send_text_massages_lte_cat_hat_for_rpi',
+                'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
+                'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_4g_lte_hotspot_on_rpi_os',
+                'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_ftp_on_rpi_4g_lte_hat',
+                'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_mqtt_on_rpi_4g_lte_hat',
+                'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_tcp_ip_rpi_4g_lte_hat',
+                'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_4g_lte_rpi_hat_openwrt',
+              ],
+            },
+          ],
+        },  
+      ],
+    },
+
+
+    {
+      type: 'category',
+      label: 'Rockchip 解决方案',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Network/RK_Devices/cn_RK_intro',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'LinkStar-H68K',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'zh-CN/Network/RK_Devices/LinkStar/cn_Linkstar_Intro',
+          },
+          items: [
+            'zh-CN/Network/RK_Devices/LinkStar/cn_Linkstar_Datasheet',
+            'zh-CN/Network/RK_Devices/LinkStar/cn_linkstar-install-system',
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                'zh-CN/Network/RK_Devices/LinkStar/Application/cn_h68k-ha-esphome',
+                'zh-CN/Network/RK_Devices/LinkStar/Application/cn_plex_media_server',
+                'zh-CN/Network/RK_Devices/LinkStar/Application/cn_wordpress_linkstar',
+                'zh-CN/Network/RK_Devices/LinkStar/Application/cn_grocy-bookstack-linkstar',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'LinkStar-H68K-V2',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'zh-CN/Network/RK_Devices/H68K_V2/cn_H68KV2_Datasheet',
+          },
+          items: [
+            'zh-CN/Network/RK_Devices/H68K_V2/cn_H68KV2_Datasheet',
+            'zh-CN/Network/RK_Devices/H68K_V2/cn_H68KV2_install_system',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'LinkStar-H28K',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'zh-CN/Network/RK_Devices/H28K/cn_H28K_Datasheet',
+          },
+          items: [
+            'zh-CN/Network/RK_Devices/H28K/cn_H28K_Datasheet',
+            'zh-CN/Network/RK_Devices/H28K/cn_H28K-install-system',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: '其他网络设备',
+      items: [
+        'zh-CN/Network/TTN_Gateway/cn_The-Things-Indoor-Gateway',
+        {
+          type: 'category',
+          label: 'Wio-WM6180 WiFi-Halow 设备',
+          items: [
+            'zh-CN/Network/WiFi-Halow/cn_wifi-halow-module-for-xiao',
+            'zh-CN/Network/WiFi-Halow/cn_wifi-halow-mini-pcie-module',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'doc',
+      id: 'zh-CN/cn_Edge_Computing',
+      label: '边缘计算',
+      className: 'sideboard_calss',
+    },
+
+    {
+      type: 'category',
+      label: '树莓派设备',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Edge/Raspberry_Pi_Devices/cn_RpiDevices',
+      },
+      items:[
+        {
+          type: 'category',
+          label: '边缘AI计算机',
+          collapsed: true,
+          collapsible: true,
+          items:[
+            {
+              type: 'category',
+              label: 'reComputer-AI-R2000',
+              collapsed: true,
+              collapsible: true,
+              link:{
+                type:"doc",
+                id:'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/cn_reComputer_AI_R2000_getting_start'
+              },
+              items: [
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/cn_reComputer_AI_R2000_getting_start'
+              ]
+            },
+            {
+              type: 'category',
+              label: 'reComputer-AI-Industrial-R2000',
+              collapsed: true,
+              collapsible: true,
+              link:{
+                type:"doc",
+                id:'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/cn_reComputer_AI_Industrial_R2135_getting_start'
+              },
+              items: [
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/cn_reComputer_AI_Industrial_R2135_getting_start',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/cn_reComputer_AI_Industrial_R2000_Flash_OS'
+              ]
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: '人机界面 (HMI)',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: 'reTerminal',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/cn_reTerminal_Intro',
+              },
+              items: [
+                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/cn_reTerminal',
+                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/cn_reTerminal-hardware-interfaces-usage',
+                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/cn_reTerminal-piCam',
+                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/cn_reTerminal-FAQ',
+                {
+                  type: 'category',
+                  label: '操作系统安装',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/cn_reTerminal-Buildroot-SDK',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/cn_reTerminal-Yocto',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/cn_Streampi_OBS_On_reTerminal',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '扩展板',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/cn_reTerminalBridge',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/cn_reTerminal_Mount_Options',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'reTerminal DM',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/cn_reTerminal-dm_Intro',
+              },
+              items: [
+                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/cn_reterminal-dm',
+                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/cn_reterminal-dm-flash-OS',
+                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/cn_reterminal-dm-warranty',
+                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/cn_reterminal-dm-hardware-guide',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '边缘控制器',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: 'EdgeBox-RPI-200',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/cn_Edge_Box_intro',
+              },
+              items: [
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/cn_Edgebox_rpi_200_Introduction',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'reComputer-R1000',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_intro',
+              },
+              items: [
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_pcn',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_flash_os',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_assembly_guide',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_warranty',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_how_to_use_rs485_modbus',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_use_bacnet_mstp',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_reComputer_R1000_FAQ', 
+              ],
+            },
+            {
+              type: 'category',
+              label: 'reComputer R1100',
+              collapsed: true,
+              collapsible: true,
+              items: [
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/cn_reComputer_R1100',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/cn_recomputer_r1100_flash_os',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/cn_recomputer_r1100_configure_system',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/cn_recomputer_r1100_assembly_guide',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '扩展板（Hat）',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: 'M.2 扩展板',
+              items: [
+                'zh-CN/Edge/Raspberry_Pi_Devices/M_2_Hat/cn_m_2_hat_start_with_pi5',
+              ],
+            },
           ],
         },
 
-        // reComputer Jetson Series
         {
           type: 'category',
-          label: 'reComputer Jetson 系列',
-          link: {
-            type: "doc",
-            id: 'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/cn_reComputer_Intro',
-          },
+          label: '应用',
+          collapsed: true,
+          collapsible: true,
           items: [
             {
               type: 'category',
-              label: 'reComputer J10 套件',
+              label: 'AIoT',
+              items: [
+                {
+                  type: 'category',
+                  label: 'BalenaOS',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/cn_recomputer_r1000_build_seeed_balena_image',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/cn_recomputer_r1000_balena',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '云解决方案',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/cn_recomputer_r1000_aws',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/cn_reTerminal-DM_AWS_first',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/cn_reTerminal-DM_Azure_IoT',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Fin',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_install_fin',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with_fin_create_equip_graphic',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with_fin_create_site_graphic',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with_fin_top_level_graphic',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with_fin_use_modbus',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with-_fin_use_logic_to_alarm',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with-fin_create_floor_graphic',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Fuxa',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_to_achieve_SCADA',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_use_modbus',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_use_mqtt',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_use_opcua',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_use_webapi',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_reTerminal-DM_intro_FUXA',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Home Assistant',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_recomputer-r1000-home-assistant',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_recomputer-r1000-modbus-home-assistant',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_reTerminal_Home_Assistant',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_reTerminal-Home-Assistant-Customize',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'N3uron',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_Edgebox-rpi-200-n3uron-aws',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_Edgebox-rpi-200-n3uron-bacnet',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_Edgebox-rpi-200-n3uron-modbus-mqtt',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_Edgebox-rpi-200-n3uron',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_recomputer_r1000_n3uron_aws',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_recomputer_r1000_n3uron_bacnet',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_recomputer_r1000_n3uron_getting_started',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_recomputer_r1000_n3uron_modbus_mqtt',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminal_DM_N3uron_AWS',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminal_DM_N3uron_Historian',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminal_DM_N3uron_modbus_mqtt',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminalDM_N3uron_Get_Start',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Node Red',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_box_rpi_200_grafana',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_Bacnet_tcp',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_getting_started',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_influxdb',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_Modbus_rtu',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_Modbus_tcp',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_mqtt',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_neqto_engine_for_linux_reTerminal',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer_r1000_nodered_modbustcp',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer_r1000_nodered_opcua_server',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer_r1000_nodered_s7',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer_r1000_with_node_red_and_bacnet',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer_r1000-grafana',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer-r1000-nodered-getting-start',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-Bacnet',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-canbus',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-grafana',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-influxdb',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-Modbus-TCP',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-mqtt',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-RS485',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'UI 设计',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_reTerminal-build-UI-using-Electron',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_reTerminal-build-UI-using-Flutter',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_reTerminal-build-UI-using-LVGL',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_reTerminal-build-UI-using-Qt-for-Python',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_weather-dashboard-with-Grafana-reTerminal',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '其他',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_Edgebox-rpi-200-ignition-edge',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_Mender-Client-reTerminal',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_flowfuse_getting_start',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_install_codesys',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_thingsboard_ce',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_thingsboard_dashboard',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_with_codesys_use_modbus_rtu',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reTerminal-DM_intro_machinechat_jedi',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reTerminal-DM-Getting-Started-with-Ignition-Edge',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reTerminal-DM-Ignition-Edge-Panel-Builder',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reterminal-dm-sensecraft-edge-os-intro',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_use_ups',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: '计算机视觉 (Computer Vision)',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Benchmark 性能测试',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/cn_benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/cn_benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'OpenCV',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM_Color_detection',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM_Face_detection',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM_Object_detection',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM_opencv',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM_Shape_detection',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM-tracking',
+                  ],
+                },
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_clip_application_on_rpi_with_ai_kit',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_convert_model_to_edge_tpu_tflite_format_for_google_coral',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_frigate_nvr_with_raspberrypi_5',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_frigate_home_assistant_recomputer_r2000',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_install_m.2_coral_to_rpi5',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_pose_based_light_control_with_nodered_and_rpi_with_aikit',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reterminal_frigate',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reTerminal_ML_Edgeimpulse',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reTerminal_ML_TFLite',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reTerminal-DM-edgeimpulse',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reterminal-DM-Frigate',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reTerminal-DM-Yolo5',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_real-time-ocr',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_Using_YOLOv8_and_AI_Box_for_fall_climbing_and_tracking_detection',
+              ],
+            },
+            {
+              type: 'category',
+              label: '大型语言模型 (Large language Model)',
+              items:[
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/cn_deploy_deepseek_on_raspberry_pi_ai_box',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/cn_distributed_inference_of_deepseek_model_on_raspberrypi',
+              ],
+            },
+          ],
+        }
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'NVIDIA® Jetson™',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Edge/NVIDIA_Jetson/cn_RecomputerPage',
+      },
+      items: [
+        // 快速上手
+        {
+          type: 'category',
+          label: '快速上手',
+          items: [
+            // 载板
+            {
+              type: 'category',
+              label: '载板',
+              items: [
+                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J101/cn_reComputer_J1010_J101_Flash_Jetpack',
+                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J202/cn_reComputer_J2021_J202_Flash_Jetpack',
+                {
+                  type: 'category',
+                  label: 'J401 载板',
+                  items: [
+                    'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J401/cn_reComputer_J4012_Flash_Jetpack',
+                    'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J401/cn_J401_carrierboard_Hardware_Interfaces_Usage',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'J401-Mini 载板',
+                  items: [
+                    'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/cn_reComputer_Mini_J4012_Flash_Jetpack',
+                    'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/cn_J401_Mini_carrierboard_Hardware_Interfaces_Usage',
+                  ],
+                },
+              
+                {
+                  type: 'category',
+                  label: 'J501 载板',
+                  items: [
+                    'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J501/cn_reServer_Industrial_J501_Getting_Started',
+                    'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/J501/cn_Hardware_Interfaces_Usage',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Robotics J401 载板',
+                  items: [
+                    'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/Robotics_J401/cn_Robotics_J401_carrierboard_Hardware_Interfaces_Usage',
+                  ],
+                },
+                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A203v2/cn_reComputer_A203_Flash_System',
+                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A205/cn_reComputer_A205_Flash_System',
+                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A603/cn_A603_Flash_JetPack',
+                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A607/cn_A607_Flash_JetPack',
+                'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A608/cn_A608_Flash_JetPack',
+                
+              ],
+            },
+
+            // reComputer Jetson 系列
+            {
+              type: 'category',
+              label: 'reComputer Jetson',
               link: {
                 type: "doc",
-                id: 'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/cn_reComputer_Jetson_Series_Introduction',
+                id: 'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/cn_reComputer_Intro',
               },
               items: [
                 {
                   type: 'category',
-                  label: 'reComputer J1010',
+                  label: 'reComputer J10',
+                  link: {
+                    type: "doc",
+                    id: 'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/cn_reComputer_Jetson_Series_Introduction',
+                  },
                   items: [
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_J1010_with_Jetson_getting_start',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_J101_Enable_SD_Card',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_J1010_Boot_From_SD_Card',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_GPIO',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Memory_Expansion',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Series_Hardware_Layout',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Series_Initiation',
+                    {
+                      type: 'category',
+                      label: 'reComputer J1010',
+                      items: [
+                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_J1010_with_Jetson_getting_start',
+                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_J101_Enable_SD_Card',
+                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_J1010_Boot_From_SD_Card',
+                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_GPIO',
+                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Memory_Expansion',
+                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Series_Hardware_Layout',
+                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Series_Initiation',
+                      ],
+                    },
+
+                    {
+                      type: 'category',
+                      label: 'reComputer J1020',
+                      items: [
+                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/cn_reComputer_J1020v2_with_Jetson_getting_start',
+                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/cn_reComputer_J1020_A206_Flash_JetPack',
+                      ],
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer J20',
+                  items: [
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J20/cn_reComputer_J20_with_Jetson_getting_start',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer J30/40',
+                  items: [
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/cn_reComputer_J30_40_with_Jetson_getting_start',
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/cn_reComputer_Jetson_with_Infineon_Wi-Fi_Module'
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer Industrial',
+                  items: [
+                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_Getting_Started',
+                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_J20_Hardware_Interfaces_Usage',
+                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer Mini',
+                  items: [
+                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/cn_reComputer_Mini_Getting_Started',
+                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/cn_reComputer_Mini_Hardware_Interfaces_Usage'
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer J401B',
+                  items: [
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/cn_recomputer_j401b_getting_start',
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/cn_recomputer_j401b_interfaces_usage'
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer Super',
+                  items: [
+                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_reComputer_Super_Getting_Started',
+                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_reComputer_Super_Hardware_Interfaces_Usage',
+                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing',
+                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_Replace_the_Thermal_Conductive_Paste_for_reComputer'
+                  ],
+                },
+            ]},
+            
+            // reServer Jetson 系列
+            {
+              type: 'category',
+              label: 'reServer Jetson',
+              items: [
+                //'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/cn_reServer_Industrial_Getting_Started',
+                {
+                  type: 'category',
+                  label: 'reServer Industrial J30/40',
+                  items: [
+                  'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/cn_reServer_Industrial_Getting_Started',
+                  'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/cn_reServer_Industrial_Hardware_Interface_Usage'
                   ],
                 },
 
                 {
                   type: 'category',
-                  label: 'reComputer J1020',
+                  label: 'reServer J2032',
                   items: [
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/cn_reComputer_J1020v2_with_Jetson_getting_start',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/cn_reComputer_J1020_A206_Flash_JetPack',
+                  'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/cn_reServer_J2032_Flash_Jetpack',
+                  'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/cn_reServer_J2032_Getting_Started'
+                  ],
+                },
+
+            ]},
+
+            // 其他设备
+            {
+              type: 'category',
+              label: '其他设备',
+              items: [
+                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
+                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_RTL8822CE_Wireless_Module_for_Jetson',
+                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_Jetson_AGX_Orin_32GB_H01_Flash_Jetpack',
+                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_Jetson_Xavier_AGX_H01_Driver_Installation',
+                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_Jetson-Mate',
+                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_Mini_AI_Computer_T906',
+                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_reComputer_A203E_Flash_System',
+                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_reComputer_A205E_Flash_System',
+                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_reComputer_Jetson_Series_GPIO_Grove'
+              ]
+            },
+            // 刷写 Jetpack 页面
+            'zh-CN/Edge/NVIDIA_Jetson/cn_Flash_Jetpack',
+          ]
+        },
+
+        // 应用
+        {
+          type: 'category',
+          label: '应用',
+          items: [
+            // 计算机视觉
+            {
+              type: 'category',
+              label: '计算机视觉',
+              items: [
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_DashCamNet-with-Jetson-Xavier-NX-Multicamera',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_How_to_Train_and_Deploy_YOLOv8_on_reComputer',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_Jetson-Nano-MaskCam',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_Security_Scan',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_reComputer_Jetson_Series_Projects',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_Traffic-Management-DeepStream-SDK',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv5-Object-Detection-Jetson',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv8-DeepStream-TRT-Jetson',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv8-TRT-Jetson',
+                // 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_reComputer_Jetson_Series_Tutorials_Exercise',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv8_custom_classification_model',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_Multi-GMSL_Cameras_for_Real-Time_Object_Detection_and_3D_Reconstruction_on_Jetson_AGX_Orin',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv11_With_Depth_Camera_For_Distance_Measurement',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_deploy_frigate_on_jetson',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_AI-NVR_with_Jetson',
+              ]
+            },
+
+            // 生成式 AI
+            {
+              type: 'category',
+              label: '生成式 AI',
+              link: {
+                type: "doc",
+                id: 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Generative_AI_Intro',
+              },
+              
+              items: [
+                // 模型
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Finetune_LLM_by_Llama_Factory_on_Jetson',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Quantized_Llama2_7B_with_MLC_LLM_on_Jetson',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_run_local_llm_text_to_image_on_reComputer',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Whisper_on_Jetson_for_Real_Time_Speech_to_Text',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Local_RAG_based_on_Jetson_with_LlamaIndex',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_run_zero_shot_detection_on_reComputer',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_run_VLM_on_reComputer',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson',
+                
+                // 项目
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Deploy_Riva_and_Llama2_on_reComputer',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Real_Time_Subtitle_Recoder_on_Jetson',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Deploy_Ollama_and_AnythingLLM_on_Jetson',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Quickly_Deploy_DeepSeek_on_reComputer_Jetson',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Deploy_DeepSeek_on_reComputer_Jetson_with_MLC',
+              ]
+            },
+            {
+              type: 'category',
+              label: '多模态 AI',
+              items: [
+                // 模型
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Multimodal_AI/cn_Speech_vlm',
+              ]
+            },
+            // 托管服务
+            {
+              type: 'category',
+              label: '托管服务',
+              items: [
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_Allxon-Jetson-Getting-Started',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_neqto_engine_for_linux_recomputer',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_Scailable-Jetson-Getting-Started',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_Update-Jetson-Linux-OTA-Using-Allxon'
+              ]
+            },
+
+            // 开发者工具
+            {
+              type: 'category',
+              label: '开发者工具',
+              items: [
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Gapi-Jetson-Getting-Started',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_alwaysAI-Jetson-Getting-Started',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Cochl.Sense-Jetson-Getting-Started',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_CVEDIA-Jetson-Getting-Started',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_DeciAI-Getting-Started',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_HardHat',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Jetson-AI-developer-tools',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_jetson-docker-getting-started',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Lumeo-Jetson-Getting-Started',
+                // 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_No-code-Edge-AI-Tool',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_reComputer_Jetson_Series_Resource',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_NVStreamer_Getting_Started',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Roboflow-Jetson-Getting-Started',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Install_torch_on_reComputer',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_vnc_for_reComputer',
+              ]
+            },
+          ]
+        },
+
+        // 常见问题
+        {
+          type: 'category',
+          label: '常见问题',
+          items: [
+            'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_jetson_FAQ',
+            'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Create_Backup_and_Restore_on_reComputer',
+            // 'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Updating_Jetpack_with_OTA',
+            'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera',
+            'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Use_IMX477_Camera_with_A603',
+            'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Differences_of_L4T_Between_Seeed_and_NVIDIA',
+            'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Overview_of_the_Relationship_Between_JetPack_and_Jetson',
+          ]
+        }
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'ESP 设备',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'category',
+          label: 'EdgeBox-ESP-100',
+          items: ['zh-CN/Edge/Edge_Series/Edge_Box_ESP_100/cn_Edgebox-ESP-100-Arduino'],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'BeagleBone®',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Edge/Beagle_Bone/cn_BeagleBone',
+      },
+      items: [
+        'zh-CN/Edge/Beagle_Bone/cn_BeagleBone_Blue',
+        'zh-CN/Edge/Beagle_Bone/cn_BeagleBone_Green',
+        'zh-CN/Edge/Beagle_Bone/cn_BeagleBone_Green_Wireless',
+        'zh-CN/Edge/Beagle_Bone/cn_BeagleBone-Green-Gateway',
+        'zh-CN/Edge/Beagle_Bone/cn_Beaglebone_Case',
+        {
+          type: 'category',
+          label: '应用',
+          items: [
+            'zh-CN/Edge/Beagle_Bone/Application/cn_BeagleBone_Solutions',
+            'zh-CN/Edge/Beagle_Bone/Application/cn_ChatGPT_and_BeagleBone',
+          ],
+        },
+        {
+          type: 'category',
+          label: '扩展板',
+          items: [
+            'zh-CN/Edge/Beagle_Bone/Extension_Board/cn_Grove_Cape_for_BeagleBone_Series',
+            'zh-CN/Edge/Beagle_Bone/Extension_Board/cn_Grove_Base_Cape_for_BeagleBone_v2',
+            'zh-CN/Edge/Beagle_Bone/Extension_Board/cn_Motor_Bridge_Cape_v1.0',
+            'zh-CN/Edge/Beagle_Bone/Extension_Board/cn_Skeleton_box_for_Beaglebone',
+            'zh-CN/Edge/Beagle_Bone/Extension_Board/cn_BeagleBone_Green_HDMI_Cape',
+            'zh-CN/Edge/Beagle_Bone/Extension_Board/cn_Seeed-Studio-BeagleBone-Green-LCD-Cape-with-Resistive-Touch',
+          ],
+        },
+        {
+          type: 'category',
+          label: '配套课程套件',
+          items: [
+            'zh-CN/Edge/Beagle_Bone/Kit_with_Courses/cn_Grove_Starter_Kit_for_BeagleBone_Green',
+            'zh-CN/Edge/Beagle_Bone/Kit_with_Courses/cn_Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'ODYSSEY',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Edge/ODYSSEY/cn_ODYSSEY_Intro',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'ODYSSEY STM32MP135D',
+          items: [
+            'zh-CN/Edge/ODYSSEY/ODYSSEY_STM32MP135D/cn_ODYSSEY STM32MP135D',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'ODYSSEY X86J4105',
+          items: [
+            'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/cn_ODYSSEY-X86J4105',
+            'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/cn_ODYSSEY-X86J4105-GPIO',
+            'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/cn_ODYSSEY-X86J4105-Accessories',
+            'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/cn_Coral-Mini-PCIe-Accelerator-on-ODYSSEY-X86J4105',
+            'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/cn_ODYSSEY-X86J4105-LTE-Module',
+            'zh-CN/Edge/ODYSSEY/cn_ODYSSEY_FAQ',
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Home Assistant for ODYSSEY',
+                  items: [
+                    'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Home-Assistant_for_ODYSSEY/cn_ODYSSEY-X86-Home-Assistant',
+                    'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Home-Assistant_for_ODYSSEY/cn_ODYSSEY-Home-Assistant-Customize',
+                    'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Home-Assistant_for_ODYSSEY/cn_Connect-Grove-to-Home-Assistant-ESPHome',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Azure IoT for ODYSSEY',
+                  items: [
+                    'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Azure_IoT_for_ODYSSEY/cn_ODYSSEY-X86J4105-AzureIOT',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Mender for ODYSSEY',
+                  items: [
+                    'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Mender_for_ODYSSEY/cn_Mender-Client-ODYSSEY-X86',
+                    'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Mender_for_ODYSSEY/cn_Mender-Server-ODYSSEY-X86',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '计算机视觉',
+                  items: [
+                    'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Computer_Version/cn_ODYSSEY-X86J4105-Intel-OpenVINO',
+                    'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Computer_Version/cn_ODYSSEY-X86J4105-NCS2',
+                    'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Computer_Version/cn_ODYSSEY-X86J4105-Frigate',
                   ],
                 },
               ],
             },
             {
               type: 'category',
-              label: 'reComputer J20 套件',
+              label: '系统安装',
               items: [
-                'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J20/cn_reComputer_J20_with_Jetson_getting_start',
-              ]
-            },
-            {
-              type: 'category',
-              label: 'reComputer J30/40 套件',
-              items: [
-                'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/cn_reComputer_J30_40_with_Jetson_getting_start',
-                'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/cn_reComputer_Jetson_with_Infineon_Wi-Fi_Module'
-              ]
-            },
-            {
-              type: 'category',
-              label: 'reComputer 工业级套件',
-              items: [
-              'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_Getting_Started',
-              'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_J20_Hardware_Interfaces_Usage',
-              'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
+                'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_ODYSSEY-X86J4105-Installing-OS',
+                'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_ODYSSEY-X86J4105-Updating-Firmware',
+                'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_Jellyfin-on-Docker-Ubuntu-X86',
+                'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_ODYSSEY-X86J4105-Installing-openwrt',
+                'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_ODYSSEY-X86-OPNsense',
+                'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_ODYSSEY-X86J4105-pfSense',
+                'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_ODYSSEY-X86-TrueNAS',
+                'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_ODYSSEY-X86J4105-Installing-Android',
+                'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_ODYSSEY-X86J4105-Installing-FreeNAS',
+                'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_BalenaOS-X86-Getting-Started',
               ],
             },
-            {
-              type: 'category',
-              label: 'reComputer Mini 套件',
-              items: [
-              'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/cn_reComputer_Mini_Getting_Started',
-              'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/cn_reComputer_Mini_Hardware_Interfaces_Usage'
-              ],
-            },
-            {
-              type: 'category',
-              label: 'reComputer J401B',
-              items: [
-                'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/cn_recomputer_j401b_getting_start',
-                'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/cn_recomputer_j401b_interfaces_usage'
-              ]
-            },
-          ]
+          ],
         },
+
+        {
+          type: 'category',
+          label: 'ODYSSEY STM32MP157C',
+          items: [
+            'zh-CN/Edge/ODYSSEY/ODYSSEY_STM32MP157C/cn_ODYSSEY-STM32MP157C',
+            'zh-CN/Edge/ODYSSEY/ODYSSEY_STM32MP157C/cn_SEEED-SOM-STM32MP157C',
+          ],
+        },
+      ],
+    },
+
         
-        // reServer Jetson Series
-        {
-          type: 'category',
-          label: 'reServer Jetson 系列',
-          items: [
-            {
-              type: 'category',
-              label: 'reServer 工业 J30/40 套件',
-              items: [
-              'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/cn_reServer_Industrial_Getting_Started',
-              'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/cn_reServer_Industrial_Hardware_Interface_Usage'
-              ],
-            },
-
-            {
-              type: 'category',
-              label: 'reServer J2032 套件',
-              items: [
-              'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/cn_reServer_J2032_Flash_Jetpack',
-              'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/cn_reServer_J2032_Getting_Started'
-              ],
-            },
-          ]
-        },
-      ]
-    },
-
-    {
-      type: 'category',
-      label: '其他设备',
-      items: [
-        // Models
-        // 'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_initial_setup_jon',
-        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
-        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_RTL8822CE_Wireless_Module_for_Jetson',
-        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_Jetson_AGX_Orin_32GB_H01_Flash_Jetpack',
-        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_Jetson_Xavier_AGX_H01_Driver_Installation',
-        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_Jetson-Mate',
-        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_Mini_AI_Computer_T906',
-        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_reComputer_A203E_Flash_System',
-        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_reComputer_A205E_Flash_System',
-        'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_reComputer_Jetson_Series_GPIO_Grove',
-      ]
-    },
-    // Applications
-    {
-      type: 'category',
-      label: '实用教程',
-      items: [
-        // Computer Vision
-        {
-          type: 'category',
-          label: '计算机视觉',
-          items: [
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_DashCamNet-with-Jetson-Xavier-NX-Multicamera',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_How_to_Train_and_Deploy_YOLOv8_on_reComputer',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_Jetson-Nano-MaskCam',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_Security_Scan',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_reComputer_Jetson_Series_Projects',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_Traffic-Management-DeepStream-SDK',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv5-Object-Detection-Jetson',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv8-DeepStream-TRT-Jetson',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv8-TRT-Jetson',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv8_custom_classification_model',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_deploy_frigate_on_jetson',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_AI-NVR_with_Jetson',
-          ]
-        },
-
-        // Generative AI
-        {
-          type: 'category',
-          label: '生成式 AI',
-          link: {
-            type: "doc",
-            id: 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Generative_AI_Intro',
-          },
-          
-          items: [
-            // Models
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Finetune_LLM_by_Llama_Factory_on_Jetson',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Quantized_Llama2_7B_with_MLC_LLM_on_Jetson',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_run_local_llm_text_to_image_on_reComputer',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Whisper_on_Jetson_for_Real_Time_Speech_to_Text',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Local_RAG_based_on_Jetson_with_LlamaIndex',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_run_zero_shot_detection_on_reComputer',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_run_VLM_on_reComputer',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson',
-            
-            // Projects
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Deploy_Riva_and_Llama2_on_reComputer',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Real_Time_Subtitle_Recoder_on_Jetson',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Deploy_Ollama_and_AnythingLLM_on_Jetson',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Quickly_Deploy_DeepSeek_on_reComputer_Jetson',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Deploy_DeepSeek_on_reComputer_Jetson_with_MLC',
-          ]
-        },
-        {
-          type: 'category',
-          label: '语音和多模态 AI',
-          items: [
-            // Models
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Multimodal_AI/cn_Speech_vlm',
-          ]
-        },
-        // Managed Services
-        {
-          type: 'category',
-          label: '托管服务',
-          items: [
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_Allxon-Jetson-Getting-Started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_neqto_engine_for_linux_recomputer',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_Scailable-Jetson-Getting-Started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_Update-Jetson-Linux-OTA-Using-Allxon'
-          ]
-        },
-
-        // Developer Tools
-        {
-          type: 'category',
-          label: '开发者工具',
-          items: [
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Gapi-Jetson-Getting-Started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_alwaysAI-Jetson-Getting-Started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Cochl.Sense-Jetson-Getting-Started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_CVEDIA-Jetson-Getting-Started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_DeciAI-Getting-Started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_HardHat',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Jetson-AI-developer-tools',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_jetson-docker-getting-started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Lumeo-Jetson-Getting-Started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_reComputer_Jetson_Series_Resource',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_NVStreamer_Getting_Started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Roboflow-Jetson-Getting-Started',
-            'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_vnc_for_reComputer'
-
-          ]
-        },
-      ]
-    },
-
-    // FAQs
-    {
-      type: 'category',
-      label: '常见问题',
-      items: [
-        'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_jetson_FAQ',
-        'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Create_Backup_and_Restore_on_reComputer',
-        'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera',
-        'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Use_IMX477_Camera_with_A603',
-        'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Differences_of_L4T_Between_Seeed_and_NVIDIA',
-      ]
-    },
-
-
     {
       type: 'category',
       label: 'reCamera',
-      // link: {
-      //   type: "doc",
-      //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
-      // },
+      collapsed: true,
+      collapsible: true,
       items: [
-        'zh-CN/Edge/reCamera/reCamera_2002_Series/cn_quick_start_guide',
-        'zh-CN/Edge/reCamera/reCamera_2002_Series/cn_develop_with_nodered'
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Edge/reCamera',
+        },
       ]
     },
 
+    {
+      type: 'category',
+      label: 'reTerminal E10xx',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Edge/reTerminal_E10xx/cn_reterminal_e10xx_main_page',
+      },
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Edge/reTerminal_E10xx',
+        },
+      ]
+    },
 
-    //Jetson 这里
+    {
+      type: 'category',
+      label: '其他边缘设备',
+      items: [
+        {
+          type: 'category',
+          label: 'reServer X86',
+          items: [
+            'zh-CN/Edge/reServer/reServer_X86/cn_reServer-Getting-Started',
+            'zh-CN/Edge/reServer/reServer_X86/cn_reServer-Update-BIOS-Install-Drivers',
+          ],
+        },
+        'zh-CN/Edge/Quantum_Development_Board/cn_Quantum-Mini-Linux-Development-Kit',
+      ],
+    },
 
 
     {
@@ -6418,669 +8675,814 @@ const sidebars = {
         'zh-CN/Robotics/Robot_Software/cn_control_robotic_arm_via_phospho',
       ]
     },
-
-
-
+    
 
     {
       type: 'doc',
-      id: 'zh-CN/Edge/Raspberry_Pi_Devices/cn_RpiDevices',
-      label: 'Raspberry Pi 设备',
+      id: 'zh-CN/cn_Cloud',
+      label: 'SenseCraft 与云端',
       className: 'sideboard_calss',
     },
-
-    //Edge AI Computer
     {
       type: 'category',
-      label: '边缘 AI 计算机',
-      collapsed: true,
-      collapsible: true,
-      items:[
-        {
-          type: 'category',
-          label: 'reComputer-AI-R2000',
-          collapsed: true,
-          collapsible: true,
-          link:{
-            type:"doc",
-            id:'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/cn_reComputer_AI_R2000_getting_start'
-          },
-          items: [
-            'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/cn_reComputer_AI_R2000_getting_start'
-          ]
-        },
-      ]
-    },
-    //HMI
-    {
-      type: 'category',
-      label: '人机界面 (HMI)',
+      label: 'SenseCraft AI',
       collapsed: true,
       collapsible: true,
       items: [
         {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Cloud_Chain/SenseCraft_AI',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SenseCraft HMI',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Cloud_Chain/SenseCraft_HMI/cn_sensecraft_hmi_overview',
+      },
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Cloud_Chain/SenseCraft_HMI',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SenseCraft 应用程序',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Cloud_Chain/SenseCraft_APP',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SenseCraft 数据平台',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Cloud_Chain/SenseCraft_Data_Platform',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SenseCraft 区块链',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Cloud_Chain/SenseCraft_Blockchain',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SenseCraft 费用',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'zh-CN/Cloud_Chain/SenseCraft_Fee',
+        },
+      ],
+    },
+
+        
+    // START OF Solutions
+    {
+      type: 'link',
+      label: '解决方案',
+      href: 'https://solution.seeed.cc/',
+      className: 'sideboard_calss',
+    },
+    {
+      type: 'autogenerated',
+      dirName: 'zh-CN/Solutions',
+    },
+    // END OF Solutions
+
+    {
+      type: 'doc',
+      id: 'zh-CN/Topics/cn_Topic_introduction',
+      label: '技术专题',
+      className: 'sideboard_calss',
+    },
+
+    {
+      type: 'category',
+      label: 'Home Assistant',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Topics/Home_Assistant/cn_Home_Assistant_Topic',
+      },
+      items: [
+        'zh-CN/Topics/Home_Assistant/Home_Assistant_Tutorials/cn_home_assistant_sensecap',
+        'zh-CN/Topics/Home_Assistant/Home_Assistant_Tutorials/cn_Extend_Home_Assistant_with_LoRaWAN_device',
+        'zh-CN/Topics/Home_Assistant/Home_Assistant_Tutorials/cn_sensecraft_homeassistant_userguide',
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'TinyML',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Topics/TinyML/cn_TinyML_Topic',
+      },
+      items: [
+        {
           type: 'category',
-          label: 'reTerminal',
+          label: 'AI 工作坊',
           collapsed: true,
           collapsible: true,
           link: {
+            type: "doc",
+            id: 'zh-CN/Topics/TinyML/TinyML_Workshop/cn_TinyML_workshop_course',
+          },
+          items: [
+              'zh-CN/Topics/TinyML/TinyML_Workshop/cn_sscma',
+              'zh-CN/Topics/TinyML/TinyML_Workshop/cn_TrainModel',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'ModelAssistant',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: '简介',
+              collapsed: false,
+              items: [
+                'zh-CN/Topics/TinyML/ModelAssistant/introduction/cn_overview',
+                'zh-CN/Topics/TinyML/ModelAssistant/introduction/cn_quick_start',
+                'zh-CN/Topics/TinyML/ModelAssistant/introduction/cn_installation',
+              ]
+            },
+            {
+              type: 'category',
+              label: '教程',
+              collapsed: false,
+              items: [
+                'zh-CN/Topics/TinyML/ModelAssistant/tutorials/cn_config',
+                'zh-CN/Topics/TinyML/ModelAssistant/tutorials/cn_datasets',
+                {
+                  type: 'category',
+                  label: '训练',
+                  collapsed: true,
+                  link: {
+                    type: "doc",
+                    id: 'zh-CN/Topics/TinyML/ModelAssistant/tutorials/training/cn_overview',
+                  },
+                  items: [
+                    'zh-CN/Topics/TinyML/ModelAssistant/tutorials/training/cn_yolo',
+                    'zh-CN/Topics/TinyML/ModelAssistant/tutorials/training/cn_fomo',
+                    'zh-CN/Topics/TinyML/ModelAssistant/tutorials/training/cn_pfld',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: '导出',
+                  collapsed: true,
+                  link: {
+                    type: "doc",
+                    id: 'zh-CN/Topics/TinyML/ModelAssistant/tutorials/export/cn_overview',
+                  },
+                  items: [
+                    'zh-CN/Topics/TinyML/ModelAssistant/tutorials/export/cn_pytorch_2_onnx',
+                    'zh-CN/Topics/TinyML/ModelAssistant/tutorials/export/cn_pytorch_2_tflite',
+                  ]
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: '部署',
+              collapsed: true,
+              collapsible: true,
+              link: {
                 type: "doc",
-                id: 'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/cn_reTerminal_Intro',
+                id: 'zh-CN/Topics/TinyML/ModelAssistant/deploy/cn_overview',
               },
-          items: [
-            'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/cn_reTerminal',
-            'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/cn_reTerminal-hardware-interfaces-usage',
-            'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/cn_reTerminal-piCam',
-            'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/cn_reTerminal-FAQ',
-            {
-              type: 'category',
-              label: 'OS Installation',
               items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/cn_reTerminal-Buildroot-SDK',
-                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/cn_reTerminal-Yocto',
-                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/cn_Streampi_OBS_On_reTerminal',
-              ],
+                'zh-CN/Topics/TinyML/ModelAssistant/deploy/cn_ma_deploy_yolov5',
+                'zh-CN/Topics/TinyML/ModelAssistant/deploy/cn_ma_deploy_yolov8',
+                'zh-CN/Topics/TinyML/ModelAssistant/deploy/cn_ma_deploy_yolov8_pose',
+              ]
             },
-            {
-              type: 'category',
-              label: 'Extension Board',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/cn_reTerminalBridge',
-                'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/cn_reTerminal_Mount_Options',
-              ],
-            },
-          ],
-        },
-        {
-          type: 'category',
-          label: 'reTerminal DM',
-          collapsed: true,
-          collapsible: true,
-          link: {
-            type: "doc",
-            id: 'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/cn_reTerminal-dm_Intro',
-          },
-          items: [
-            'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/cn_reterminal-dm',
-            'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/cn_reterminal-dm-flash-OS',
-            'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/cn_reterminal-dm-warranty',
-            'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/cn_reterminal-dm-hardware-guide',
           ],
         },
       ],
     },
-    // Edge Controller
-    {
-      type: 'category',
-      label: '边缘控制器',
-      collapsed: true,
-      collapsible: true,
-      items: [
-        {
-          type: 'category',
-          label: 'EdgeBox-RPI-200',
-          collapsed: true,
-          collapsible: true,
-          link: {
-            type: "doc",
-            id: 'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/cn_Edge_Box_intro',
-          },
-          items: [
-            'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/cn_Edgebox_rpi_200_Introduction',
-          
-          ],
-        },
 
-        {
-          type: 'category',
-          label: 'reComputer-R1000',
-          collapsed: true,
-          collapsible: true,
-          link: {
-            type: "doc",
-            id: 'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_intro',
-          },
-          items: [
-            'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_pcn',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_flash_os',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_assembly_guide',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_warranty',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_how_to_use_rs485_modbus',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_use_bacnet_mstp',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_reComputer_R1000_FAQ', 
-          ],
-        },
-        {
-          type: 'category',
-          label: 'reComputer R1100',
-          collapsed: true,
-          collapsible: true,
-          items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/cn_reComputer_R1100',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/cn_recomputer_r1100_flash_os',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/cn_recomputer_r1100_configure_system',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/cn_recomputer_r1100_assembly_guide',
-          ],
-        },
-      ],
-    },
-    //Hat
-    {
-      type: 'category',
-      label: '扩展板',
-      collapsed: true,
-      collapsible: true,
-      items: [
-        {
-          type: 'category',
-          label: 'M.2 扩展板',
-          items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/M_2_Hat/cn_m_2_hat_start_with_pi5',
-          ],
-        },
-      ],
-    },
-    //Application
-    {
-      type: 'category',
-      label: '实用教程',
-      collapsed: true,
-      collapsible: true,
-      items: [
-        {
-          type: 'category',
-          label: '人工智能物联网（AIoT）',
-          items: [
-            {
-              type: 'category',
-              label: 'BalenaOS',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/cn_recomputer_r1000_build_seeed_balena_image',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/cn_recomputer_r1000_balena',
-              ]
-            },
-            {
-              type: 'category',
-              label: '云解决方案',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/cn_recomputer_r1000_aws',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/cn_reTerminal-DM_AWS_first',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/cn_reTerminal-DM_Azure_IoT',
-              ]
-            },
-            {
-              type: 'category',
-              label: 'Fin',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_install_fin',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with_fin_create_equip_graphic',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with_fin_create_site_graphic',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with_fin_top_level_graphic',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with_fin_use_modbus',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with-_fin_use_logic_to_alarm',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with-fin_create_floor_graphic',
-              ]
-            },
-            {
-              type: 'category',
-              label: 'Fuxa',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_to_achieve_SCADA',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_use_modbus',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_use_mqtt',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_use_opcua',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_use_webapi',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_reTerminal-DM_intro_FUXA',
-              ]
-            },
-            {
-              type: 'category',
-              label: '家庭助理',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_recomputer-r1000-home-assistant',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_recomputer-r1000-modbus-home-assistant',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_reTerminal_Home_Assistant',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_reTerminal-Home-Assistant-Customize',
-              ]
-            },
-            {
-              type: 'category',
-              label: 'N3uron',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_Edgebox-rpi-200-n3uron-aws',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_Edgebox-rpi-200-n3uron-bacnet',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_Edgebox-rpi-200-n3uron-modbus-mqtt',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_Edgebox-rpi-200-n3uron',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_recomputer_r1000_n3uron_aws',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_recomputer_r1000_n3uron_bacnet',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_recomputer_r1000_n3uron_getting_started',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_recomputer_r1000_n3uron_modbus_mqtt',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminal_DM_N3uron_AWS',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminal_DM_N3uron_Historian',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminal_DM_N3uron_modbus_mqtt',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminalDM_N3uron_Get_Start',
-              ]
-            },
-            {
-              type: 'category',
-              label: 'Node Red',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_box_rpi_200_grafana',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_Bacnet_tcp',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_getting_started',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_influxdb',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_Modbus_rtu',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_Modbus_tcp',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_Edge_Box_rpi_200_Node_red_mqtt',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_neqto_engine_for_linux_reTerminal',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer_r1000_nodered_modbustcp',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer_r1000_nodered_opcua_server',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer_r1000_nodered_s7',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer_r1000_with_node_red_and_bacnet',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer_r1000-grafana',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_recomputer-r1000-nodered-getting-start',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-Bacnet',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-canbus',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-grafana',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-influxdb',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-Modbus-TCP',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-mqtt',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-RS485',
-              ]
-            },
-            {
-              type: 'category',
-              label: 'UI Design',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_reTerminal-build-UI-using-Electron',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_reTerminal-build-UI-using-Flutter',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_reTerminal-build-UI-using-LVGL',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_reTerminal-build-UI-using-Qt-for-Python',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_weather-dashboard-with-Grafana-reTerminal',
-              ]
-            },
-            {
-              type: 'category',
-              label: '其他',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_Edgebox-rpi-200-ignition-edge',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_Mender-Client-reTerminal',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_flowfuse_getting_start',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_install_codesys',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_thingsboard_ce',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_thingsboard_dashboard',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_with_codesys_use_modbus_rtu',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reTerminal-DM_intro_machinechat_jedi',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reTerminal-DM-Getting-Started-with-Ignition-Edge',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reTerminal-DM-Ignition-Edge-Panel-Builder',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reterminal-dm-sensecraft-edge-os-intro',
-              ]
-            },
-          ]
-        },
-        {
-          type: 'category',
-          label: '计算机视觉',
-          items: [
-            {
-              type: 'category',
-              label: 'Benchmark',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/cn_benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/cn_benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
-              ]
-            },
-            {
-              type: 'category',
-              label: 'OpenCV',
-              items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM_Color_detection',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM_Face_detection',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM_Object_detection',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM_opencv',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM_Shape_detection',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/cn_reTerminal_DM-tracking',
-              ]
-            },
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_clip_application_on_rpi_with_ai_kit',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_convert_model_to_edge_tpu_tflite_format_for_google_coral',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_frigate_nvr_with_raspberrypi_5',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_install_m.2_coral_to_rpi5',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_pose_based_light_control_with_nodered_and_rpi_with_aikit',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reterminal_frigate',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reTerminal_ML_Edgeimpulse', 
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reTerminal_ML_TFLite',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reTerminal-DM-edgeimpulse',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reterminal-DM-Frigate',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_reTerminal-DM-Yolo5',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/cn_yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l'
-          ]
-        },
-        {
-          type: 'category',
-          label: '大语言模型',
-          items:[
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/cn_deploy_deepseek_on_raspberry_pi_ai_box',
-            'zh-CN/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/cn_distributed_inference_of_deepseek_model_on_raspberrypi'
-          ]
-        },
-      ]
-    },
-
-
-    //raspberry pi 这里
+    'zh-CN/Topics/Open_Source/cn_Open_Source_Topic',
+    'zh-CN/Topics/Edge_AI/cn_Edge_AI_Topic',
 
 
     {
       type: 'doc',
-      id: 'zh-CN/Sensor/Wio_Terminal/cn_Wio_Terminal_Intro',
-      label: 'Wio Terminal',
+      id: 'zh-CN/cn_Contributor',
+      label: '贡献指南',
       className: 'sideboard_calss',
     },
 
-    'zh-CN/Sensor/Wio_Terminal/cn_Wio-Terminal-Getting-Started',
-    'zh-CN/Sensor/Wio_Terminal/cn_Wio-Terminal-CircuitPython',
-    'zh-CN/Sensor/Wio_Terminal/cn_Software-FreeRTOS',
-    'zh-CN/Sensor/Wio_Terminal/cn_wio_terminal_faq',
-
     {
       type: 'category',
-      label: '硬件概述',
+      label: 'GitHub 贡献指南',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Contribution/Contributors/Contribution-Guide/cn_Contribution-Guide',
+      },
       items: [
-        {
-          type: 'category',
-          label: 'LCD 的使用',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Overview',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Basic',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Graphics',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Fonts',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Anti-aliased-Fonts',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Loading-Image',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Linecharts',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-Histogram',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LCD-APIs',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/cn_Wio-Terminal-LVGL',
-          ],
-        },
-        {
-          type: 'category',
-          label: '输入/输出',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-Overview',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-Analog',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-Digital',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-I2C',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-SPI',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-Grove',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'IMU 的使用',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/IMU/cn_Wio-Terminal-IMU-Overview',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/IMU/cn_Wio-Terminal-IMU-Basic',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/IMU/cn_Wio-Terminal-IMU-Tapping',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'SD 卡',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/SD_Card/cn_Wio-Terminal-FS-Overview',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/SD_Card/cn_Wio-Terminal-FS-ReadWrite',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Wi-Fi',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Wi-Fi/cn_Wio-Terminal-Network-Overview',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Wi-Fi/cn_Wio-Terminal-Wi-Fi',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Wi-Fi/cn_Wio-Terminal-Advanced-Wi-Fi',
-          ],
-        },
-        {
-          type: 'category',
-          label: '蓝牙',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/cn_Wio-Terminal-Bluetooth-Overview',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/cn_Wio-terminal-BLE-introduction',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/cn_Wio-Terminal-Web-Bluetooth',
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/cn_BLE-ibeacon-using-Wio-terminal',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'RTC',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/RTC/cn_Wio-Terminal-RTC',
-          ],
-        },
-        {
-          type: 'category',
-          label: '按钮',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Buttons/cn_Wio-Terminal-Buttons',
-          ],
-        },
-
-        {
-          type: 'category',
-          label: '5路开关',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/five_Way_Switch/cn_Wio-Terminal-Switch',
-          ],
-        },
-
-        {
-          type: 'category',
-          label: '光传感器',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Light_Sensor/cn_Wio-Terminal-Light',
-          ],
-        },
-
-        {
-          type: 'category',
-          label: '红外线发射器',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Infrared_Emitter/cn_Wio-Terminal-Infrared-Emitter',
-          ],
-        },
-
-        {
-          type: 'category',
-          label: '麦克风',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Microphone/cn_Wio-Terminal-Mic',
-          ],
-        },
-        {
-          type: 'category',
-          label: '蜂鸣器',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Buzzer/cn_Wio-Terminal-Buzzer',
-          ],
-        },
+        'zh-CN/Contribution/Contributors/Deploy_Page_Locally/cn_Deploy_Page_Locally',
+        'zh-CN/Contribution/Contributors/Contribution-Guide/cn_full_steps_pull_request',
+        'zh-CN/Contribution/Contributors/Contribution-Guide/cn_quick_pull_request',
       ],
     },
+
+    // 'zh-CN/Contribution/Contributors/cn_community_sourced_projects',
+    'zh-CN/Contribution/Contributors/cn_Scale-up-Your-Creation-with-Fusion',
+
+    {
+      type: 'doc',
+      id: 'zh-CN/Top_Brand/cn_PopularPlatforms',
+      label: '热门平台',
+      className: 'sideboard_calss',
+    },
+
     {
       type: 'category',
-      label: '应用',
+      label: 'Arduino',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Top_Brand/Arduino/cn_Arduino',
+      },
       items: [
+        'zh-CN/Top_Brand/Arduino/cn_Getting_Started_with_Arduino',
         {
           type: 'category',
-          label: 'Easy IoT',
+          label: '扩展板',
           items: [
-            'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central',
-            'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_Wio-Terminal-Azure-IOT',
-            'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_Connect-Wio-Terminal-to-Google-Cloud-IoT-Core',
-            'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_Get-Started-with-Wio-Terminal-and-Wappsto-IoT',
-            'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_CyberDeck_Wio-Terminal',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_2.8inch_TFT_Touch_Shield_v2.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_4A_Motor_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Base_Shield_V2',
+            // 'zh-CN/Top_Brand/Arduino/shield/cn_Bluetooth_Shield_V2',
+            'zh-CN/Top_Brand/Arduino/shield/cn_CAN-BUS_Shield_V2.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Camera_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Energy_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Motor_Shield_V2.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Brushless_Motor_Shield_TB6605FTG',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Music_Shield_V2.2',
+            'zh-CN/Top_Brand/Arduino/shield/cn_NFC_Shield_V2.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Grove-Mega_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Protoshield_Kit_for_Arduino',
+            'zh-CN/Top_Brand/Arduino/shield/cn_RS232_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Relay_Shield_v3',
+            'zh-CN/Top_Brand/Arduino/shield/cn_SD_Card_shield_V4.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Solar_Charger_Shield_V2.2',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Spartan_Edge_Accelerator_Board',
+            'zh-CN/Top_Brand/Arduino/shield/cn_W5500_Ethernet_Shield_v1.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Grove_Shield_for_Arduino_Nano',
+            'zh-CN/Top_Brand/Arduino/shield/cn_RGBW_Stripe_WireLess_Shield_V1.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Renbotics_ServoShield_Rev',
+            'zh-CN/Top_Brand/Arduino/shield/cn_WireLess_Gate_Shield_V1.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_2.7inch-Triple-Color-E-Ink-Shield-for-Arduino',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Bluetooth_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Motor_Shield_V1.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Motor_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_NFC_Shield_V1.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_NFC_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Energy_Monitor_Shield_V0.9b',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Ethernet_Shield_V1.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Ethernet_Shield_V2.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Ethernet_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_GPRS-Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_GPRS_Shield_v1.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_GPRS_Shield_V2.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_GPRS_Shield_V3.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Music_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Music_Shield_V1.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Relay_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Relay_Shield_V1',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Relay_Shield_V2',
+            'zh-CN/Top_Brand/Arduino/shield/cn_SD_Card_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_SD_Card_Shield_V3.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Small_e-Paper_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Solar_Charger_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Starter_Shield_EN',
+            'zh-CN/Top_Brand/Arduino/shield/cn_TFT_Touch_Shield_V1.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Wifi_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Wifi_Shield_V1.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Wifi_Shield_V1.1',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Wifi_Shield_V1.2',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Wifi_Shield_Fi250_V1.1',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Wifi_Shield_V2.0',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Shield_Bot_V1.1',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Shield_Bot_V1.2',
+            'zh-CN/Top_Brand/Arduino/shield/cn_CAN-BUS_Shield_V1.2',
+            'zh-CN/Top_Brand/Arduino/shield/cn_EL_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Seeed_BLE_Shield',
+            'zh-CN/Top_Brand/Arduino/shield/cn_Small_e-Paper_Shield_V2',
           ],
         },
         {
           type: 'category',
-          label: '嵌入式机器学习',
+          label: '教程',
           items: [
             {
               type: 'category',
-              label: '基于边缘脉冲的项目 ',
+              label: 'Arduino 基础用法',
               items: [
-                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-1',
-                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-2',
-                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-3',
-                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-4',
-                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-5',
-                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-6',
-             ],
-            },
-            {
-              type: 'category',
-              label: '基于TensorFlow Lite 的项目',
-              items: [
-                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/cn_Wio-Terminal-TinyML-TFLM-1',
-                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/cn_Wio-Terminal-TinyML-TFLM-2',
-                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/cn_Wio-Terminal-TinyML-TFLM-3',
-                'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/cn_Wio-Terminal-Gesture-Recognition',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Download-Arduino-and-install-Arduino_Driver',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_A_Handy_Serial_Library',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_How_to_install_Arduino_Library',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_How_to_use_and_write_a_library',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Upload_Code',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Use_External_Editor',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_How_To_Use_Sketchbook',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Sketchbook_of_Sidekick_Advanced_Kit',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Guide_to_use_demos_downloaded_from_Seeed-s_Github',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Software-Serial',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Arduino_Software_I2C_user_guide',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Software-SPI',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Software-Static-Library',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Arduino_Common_Error',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_How-to-Choose-A-Gas-Sensor',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_A_Comparison_of_Different_Grove_Temperature_Sensors',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_GPS-Modules-Selection-Guide',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_How_to_detect_finger_touch',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Seeed_Relay_Page',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Barometer-Selection-Guide',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_How_To_Choose_The_Right_Cable',
               ],
             },
-            'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/cn_AIoTs_GPS_state_tester',
+
+            {
+              type: 'category',
+              label: 'Arduino 进阶用法',
+              items: [
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_Suli',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_Seeed_Arduino_Serial',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_I2C_And_I2C_Address_of_Seeed_Product',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_ODYSSEY-X86J4105-Firmata',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_Software-SWD',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_Arduino-AWS-IOT-Bridge',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_Arduino-DAPLink',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_Flashing-Arduino-Bootloader-DAPLink',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_Xadow_IO_pin_mapping',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Arduino 开发板项目',
+              items: [
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_IR_Remote',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Joystick_Control_RGB_Led',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Light_Sensor_and_LED_Bar',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_LightView_201k_Digital_display_module',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_RFID_Control_LED',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Relay_Control_LED',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Sound_Sensor_And_LED_Bar',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_temperature_sensor',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_One-Blink',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_One-Double_Blink',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_Two-Digital_Input',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_Two-Digital_Input_v1.0b',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_Three-Analog_Input_v1b',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_Four-Noise_Maker',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_Five-Relay_Control',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_Six-LCD_Demonstration',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_Seven-Temperature',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_Eight-Thermostat',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '编译平台',
+              items: [
+                'zh-CN/Top_Brand/Arduino/Tutorials/Compiling_Platform/cn_Compiling_MicroPython_for_embedded_devices',
+                'zh-CN/Top_Brand/Arduino/Tutorials/Compiling_Platform/cn_Software-PlatformIO',
+                {
+                  type: 'category',
+                  label: '编译平台',
+                  items: [
+                    'zh-CN/Top_Brand/Arduino/Tutorials/Compiling_Platform/Codecraft_Platform_for_Arduino/cn_Guide_for_Codecraft_using_Arduino',
+                    'zh-CN/Top_Brand/Arduino/Tutorials/Compiling_Platform/Codecraft_Platform_for_Arduino/cn_Codecraft_Grove_Compatible_List',
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '带教程套件',
+          items: [
+            {
+              type: 'category',
+              label: 'Arduino Grove 初学者套件',
+              items: [
+                'zh-CN/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/cn_Grove-Beginner-Kit-For-Arduino',
+                'zh-CN/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/cn_Grove-Beginner-Kit-for-Arduino-education-pack',
+                'zh-CN/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/cn_Grove-Beginner-Kit-for-Arduino-Upverter-Guide',
+                'zh-CN/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/cn_Grove_Beginner_Kit_for_Arduino',
+              ],
+            },
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Grove_Speech_Recognizer_Kit_for_Arduino',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Sidekick_Basic_Kit_for_Arduino_V2',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Grove_Starter_kit_for_Arduino_101',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Grove_Indoor_Environment_Kit_for_Edison',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Grove_Smart_Plant_Care_Kit',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Techbox_Tricks',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Grove_Starter_Kit_Plus',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Grove_Starter_Kit_v3',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Grove-Creator-Kit-1',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Grove-Mixer_Pack_V2',
+            'zh-CN/Top_Brand/Arduino/Kit with Courses/cn_Grove-Toy_Kit',
           ],
         },
       ],
     },
+
     {
       type: 'category',
-      label: '扩展板',
+      label: 'Raspberry Pi',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Top_Brand/Raspberry_Pi/cn_Raspberry_Pi',
+      },
       items: [
-        'zh-CN/Sensor/Wio_Terminal/Extension_Board-7/cn_Wio-Terminal-Battery-Chassis',
-        'zh-CN/Sensor/Wio_Terminal/Extension_Board-7/cn_Wio-Terminal-Chassis-Battery_650mAh',
-        'zh-CN/Sensor/Wio_Terminal/Extension_Board-7/cn_Wio_Terminal_LoRaWan_Chassis_with_Antenna-built-in_LoRa-E5_and_GNSS_EU868_US915',
-        'zh-CN/Sensor/Wio_Terminal/Extension_Board-7/cn_Wio-Terminal-Ethernet',
         {
           type: 'category',
-          label: '音频扩展板',
+          label: '官方 Raspberry Pi 主板',
           items: [
-            'zh-CN/Sensor/Wio_Terminal/Extension_Board-7/Audio_Extension_Board/cn_Wio-Terminal-Audio-Overview',
-            'zh-CN/Sensor/Wio_Terminal/Extension_Board-7/Audio_Extension_Board/cn_Wio-Terminal-Audio-Play-Record',
-            'zh-CN/Sensor/Wio_Terminal/Extension_Board-7/Audio_Extension_Board/cn_Wio-Terminal-Audio-GUI',
+            'zh-CN/Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Board/cn_Raspberry_Pi_3_Model_B',
+            'zh-CN/Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Board/cn_remote_connect',
+          ],
+        },
+        {
+          type: 'category',
+          label: '官方 Raspberry Pi 模块',
+          items: [
+            'zh-CN/Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Module/cn_Raspberry_pi_CM4_update_eeprom',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Pi 扩展板（HAT）',
+          items: [
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Grove_Base_Hat_for_Raspberry_Pi',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Grove_Base_Hat_for_Raspberry_Pi_Zero',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_3D-Gesture-Tracking-Shield-for-Raspberry-Pi-MGC3130',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Grove_Base_HAT',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_GrovePi_Plus',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Raspberry_Pi_Breakout_Board_v1.0',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Raspberry_Pi_Motor_Driver_Board_v1.0',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Pi_RTC-DS1307',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_High_Accuracy_Pi_RTC-DS3231',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Raspberry_Pi_R232_Board_v1.0',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Raspberry_Pi_Relay_Board_v1.0',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_four-Channel_16-Bit_ADC_for_Raspberry_Pi-ADS1115',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_eight-Channel_12-Bit_ADC_for_Raspberry_Pi-STM32F030',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_RS-485_Shield_for_Raspberry_Pi',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Grove_AI_HAT_for_Edge_Computing',
+            'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_two-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi',
+          ],
+        },
+        {
+          type: 'category',
+          label: '配件',
+          items: [
+            'zh-CN/Top_Brand/Raspberry_Pi/Accessories/cn_Skeleton_Box_for_Raspberry_Pi_Compute_Module_Development_Kit',
+            'zh-CN/Top_Brand/Raspberry_Pi/Accessories/cn_Skeleton_box_for_Rasberry_Pi',
+            'zh-CN/Top_Brand/Raspberry_Pi/Accessories/cn_Raspberry_PI_Bplus_Case',
+          ],
+        },
+        {
+          type: 'category',
+          label: '散热设备',
+          items: [
+            'zh-CN/Top_Brand/Raspberry_Pi/Cooler_Device/cn_Water_Cooling_Kit',
+          ],
+        },
+        {
+          type: 'category',
+          label: '课程套件',
+          items: [
+            'zh-CN/Top_Brand/Raspberry_Pi/Kit/cn_Grove_Base_Kit_for_Raspberry_Pi',
+            'zh-CN/Top_Brand/Raspberry_Pi/Kit/cn_LoRa_LoRaWan_Gateway_Kit',
+            'zh-CN/Top_Brand/Raspberry_Pi/Kit/cn_Grove_Starter_Kit_for_IoT_based_on_Raspberry_Pi',
+          ],
+        },
+        {
+          type: 'category',
+          label: '应用',
+          items: [
+            'zh-CN/Top_Brand/Raspberry_Pi/Application/cn_Raspberry_Pi_as_a_NAS',
           ],
         },
       ],
     },
+
     {
       type: 'category',
-      label: '课程套件',
+      label: 'Micro:bit',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Top_Brand/Micro_bit/cn_microbit_wiki_page',
+      },
       items: [
-        'zh-CN/Sensor/Wio_Terminal/Kit_with_Courses/cn_Wio-Terminal-TinyML-Kit-Course',
-        'zh-CN/Sensor/Wio_Terminal/Kit_with_Courses/cn_Wio-Terminal-TinyML',
-        'zh-CN/Sensor/Wio_Terminal/Kit_with_Courses/cn_Introduction_to_Artificial_Intelligence_for_Makers',
-      ],
-    },
-    {
-      type: 'category',
-      label: '教程',
-      items: [
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Firmware',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Azure_IoT_CC',
+        'zh-CN/Top_Brand/Micro_bit/cn_Grove_Inventor_Kit_for_microbit',
+        'zh-CN/Top_Brand/Micro_bit/cn_Microsoft_MakeCode',
         {
           type: 'category',
-          label: 'Wio Terminal 的 Blynk 应用',
+          label: '扩展板',
           items: [
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Blynk_for_Wio_Terminal/cn_Wio-Terminal-Blynk',
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Blynk_for_Wio_Terminal/cn_Blynk-wireless-OTA-functionality-to-Wio-Terminal',
+            'zh-CN/Top_Brand/Micro_bit/expansion_board/cn_BitWear',
+            'zh-CN/Top_Brand/Micro_bit/expansion_board/cn_BitMaker',
+            'zh-CN/Top_Brand/Micro_bit/expansion_board/cn_BitMaker_Lite',
+            'zh-CN/Top_Brand/Micro_bit/expansion_board/cn_BitPlayer',
+            'zh-CN/Top_Brand/Micro_bit/expansion_board/cn_BitCar',
           ],
         },
-        {
-          type: 'category',
-          label: 'Wio Terminal USB 主机',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/cn_Wio-Terminal-USBH-Overview',
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/cn_Wio-Terminal-USBH-Keyboard',
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/cn_Wio-Terminal-USBH-Mouse',
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/cn_Wio-Terminal-USBH-Xbox',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Wio Terminal USB 客户端',
-          items: [
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-USBCLIENT-Overview',
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-USBCLIENT-Keyboard',
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-USBCLIENT-Mouse',
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-USBCLIENT-MIDI',
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-HMI-Usermode-SDK',
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-DAPLink',
-            'zh-CN/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/cn_Wio-Terminal-Reading-Raspberry-Pi',
-          ],
-        },
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Displaying-Gyro',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Storting-Analog-Data',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Displaying-Photos',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Interactive-Face',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Barometric-Pressure-sensor-using-the-Wio-terminal',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Reading-COVID19',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Thermal-Camera',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-HMI',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Sound-Meter',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Getting_started_wizard',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Edge-Impulse-Tuner',
-        'zh-CN/Sensor/Wio_Terminal/Tutorial/cn_Wio-Terminal-Reading-Github',
       ],
     },
 
     {
       type: 'doc',
-      id: 'zh-CN/Edge/Quantum_Development_Board/cn_Quantum-Mini-Linux-Development-Kit',
-      label: '夸克(Quark)迷你开发者套件',
-      className: 'sideboard_calss',
-    },
-
-
-    {
-      type: 'doc',
-      id: 'zh-CN/Sensor/mmWave_radar_sensor/cn_mmwave_radar_Intro',
-      label: '毫米波雷达传感器',
+      id: 'zh-CN/Seeed_Elderly/cn_DiscontinuedProducts',
+      label: '停产产品',
       className: 'sideboard_calss',
     },
     {
       type: 'category',
-      label: '用于XIAO的毫米波',
-      collapsed: true,
-      collapsible: true,   
+      label: '产品列表',
       items: [
-        'zh-CN/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/cn_mmwave-for-xiao',      
-        'zh-CN/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/cn_mmwave-for-xiao_arduino',
-        'zh-CN/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/cn_mmwave-for-xiao-connect-to-HA',
-      ], 
+        {
+          type: 'category',
+          label: 'reSpeaker',
+          items: [
+            //'zh-CN/Seeed_Elderly/reSpeaker/cn_reSpeaker_Getting_Started',
+            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker',
+            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_Product_Guide',
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                'zh-CN/Seeed_Elderly/reSpeaker/Application/cn_ReSpeaker_Solutions',
+                'zh-CN/Seeed_Elderly/reSpeaker/Application/cn_Google_Assistant',
+                'zh-CN/Seeed_Elderly/reSpeaker/Application/cn_Voice_Interaction',
+                'zh-CN/Seeed_Elderly/reSpeaker/Application/cn_ReSpeaker_Core_V2_&_Wio_Link',
+              ],
+            },
+            {
+              type: 'category',
+              label: '扩展板',
+              items: [
+                'zh-CN/Seeed_Elderly/reSpeaker/Extension Board/cn_ReSpeaker_Drive_Unit',
+                'zh-CN/Seeed_Elderly/reSpeaker/Extension Board/cn_ReSpeaker_Mic_Array_v2.0',
+                'zh-CN/Seeed_Elderly/reSpeaker/Extension Board/cn_ReSpeaker_Mic_Array',
+              ],
+            },
+            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_4_Mic_Array_for_Raspberry_Pi',
+            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_4-Mic_Linear_Array_Kit_for_Raspberry_Pi',
+            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_6-Mic_Circular_Array_kit_for_Raspberry_Pi',
+            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_Core',
+            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_Core_v2.0',
+            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker-USB-Mic-Array',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'rePhone',
+          items: [
+            'zh-CN/Seeed_Elderly/rePhone/cn_RePhone',
+            'zh-CN/Seeed_Elderly/rePhone/cn_RePhone_Geo_Kit',
+            'zh-CN/Seeed_Elderly/rePhone/cn_RePhone_Lumi_Kit',
+            'zh-CN/Seeed_Elderly/rePhone/cn_RePhone_Strap_Kit_for_Pebble',
+            'zh-CN/Seeed_Elderly/rePhone/cn_RePhone_core_2G-Atmel32u4',
+            'zh-CN/Seeed_Elderly/rePhone/cn_Rephone_core_2G-AtmelSAMD21',
+            'zh-CN/Seeed_Elderly/rePhone/cn_Retro Phone Kit',
+            {
+              type: 'category',
+              label: 'rePhone 编程',
+              items: [
+                'zh-CN/Seeed_Elderly/rePhone/Program with rePhone/cn_Arduino_IDE_for_RePhone_Kit',
+                'zh-CN/Seeed_Elderly/rePhone/Program with rePhone/cn_Eclipse_IDE_for_RePhone_Kit',
+                'zh-CN/Seeed_Elderly/rePhone/Program with rePhone/cn_JavaScript_for_RePhone',
+                'zh-CN/Seeed_Elderly/rePhone/Program with rePhone/cn_Lua_for_RePhone',
+                'zh-CN/Seeed_Elderly/rePhone/Program with rePhone/cn_RePhone_APIs-Audio',
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Bee',
+          items: [
+            'zh-CN/Seeed_Elderly/Bee/cn_Mesh_Bee',
+            'zh-CN/Seeed_Elderly/Bee/cn_RFbee_V1.1-Wireless_Arduino_compatible_node',
+            'zh-CN/Seeed_Elderly/Bee/cn_Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products',
+            'zh-CN/Seeed_Elderly/Bee/cn_Bees_Shield',
+            'zh-CN/Seeed_Elderly/Bee/cn_UartSBee_V3.1',
+            'zh-CN/Seeed_Elderly/Bee/cn_UartSBee_V4',
+            'zh-CN/Seeed_Elderly/Bee/cn_UartSBee_v5',
+            'zh-CN/Seeed_Elderly/Bee/cn_BLE_Bee',
+            'zh-CN/Seeed_Elderly/Bee/cn_BLE_dual_Bee_v1.0',
+            'zh-CN/Seeed_Elderly/Bee/cn_Bluetooth_Bee_v2.0',
+            'zh-CN/Seeed_Elderly/Bee/cn_Bluetooth_Bee_Standalone',
+            'zh-CN/Seeed_Elderly/Bee/cn_Bluetooth_Bee',
+            'zh-CN/Seeed_Elderly/Bee/cn_Wifi_Bee',
+            'zh-CN/Seeed_Elderly/Bee/cn_Wifi_Bee_v2.0',
+            'zh-CN/Seeed_Elderly/Bee/cn_XBee_Shield',
+            'zh-CN/Seeed_Elderly/Bee/cn_XBee_Shield_V2.0',
+            'zh-CN/Seeed_Elderly/Bee/cn_Atom_Node',
+            'zh-CN/Seeed_Elderly/Bee/cn_Bluetooth_V4.0_HM_11_BLE_Module',
+            'zh-CN/Seeed_Elderly/Bee/cn_GPS_Bee_kit',
+            'zh-CN/Seeed_Elderly/Bee/cn_Grove-XBee_Carrier',
+            'zh-CN/Seeed_Elderly/Bee/cn_Grove-Bee_Socket',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Xadow',
+          items: [
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_3_Aixs_Accelerometer',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_3_Aixs_Digital_Accelerometer_plusandminus_400g',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_BLE_Dual_Model_V1.0',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_BLE_Slave',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Breakout',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Buzzer',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Compass',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Edison_Kit',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_GPS',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_GPS_V2',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Gesture_v1.0',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Grove_Adaptor',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_IMU_6DOF',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_IMU_9DOF',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_IMU_10DOF',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_LED_5x7',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_LED_5_multiply_7_v1.0',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_M0',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Main_Board',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Multichannel_Gas_Sensor',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xado_OLED_128multiply64',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_RGB_OLED_96multiply64',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_RTC',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Storage',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_UV_Sensor',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Vibrator_Motor',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_1.54_inch_Touchscreen',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Audio',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_BLE',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Barometer',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Barometer_BMP180',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Basic_Sensors',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Duino',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_GSM_Breakout',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_GSMPlusBLE',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Metal_Frame',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_NFC',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_NFC_tag',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_NFC_v2',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Pebble_Time_Adapter',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Q_Touch_Sensor',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Tutorial_Acceleration_Detector',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Tutorial_Communicate_via_BLE',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Tutorial_Shaking_Shaking',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Wearable_Kit_For_Edison',
+            'zh-CN/Seeed_Elderly/Xadow/cn_Xadow_Motor_Driver',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Rainbowduino',
+          items: [
+            'zh-CN/Seeed_Elderly/Rainbowduino/cn_Rainbowduino_v3.0',
+            'zh-CN/Seeed_Elderly/Rainbowduino/cn_Rainbowduino_Extension_Board_v0.9b',
+            'zh-CN/Seeed_Elderly/Rainbowduino/cn_Rainbow_Cube_Kit_Acrylic_Harness',
+            'zh-CN/Seeed_Elderly/Rainbowduino/cn_Rainbowduino_LED_driver_platform-ATmega328',
+            'zh-CN/Seeed_Elderly/Rainbowduino/cn_Rainbowduino',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'reComputer Alpha',
+          items: [
+            'zh-CN/Seeed_Elderly/reComputer_Alpha/cn_How-to-build-a-home-soft-router-and-NAS-With-ReComputer',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Air Serial',
+          items: [
+            'zh-CN/Seeed_Elderly/Air_Serial/cn_Air602_WiFi_Development_Board',
+            'zh-CN/Seeed_Elderly/Air_Serial/cn_Air602_Firmware_Programming_Manual',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'NPi-i',
+          items: ['zh-CN/Seeed_Elderly/NPi-i/cn_NPi-i.MX6ULL-Dev-Board-Linux-SBC'],
+        },
+        {
+          type: 'category',
+          label: 'W600',
+          items: ['zh-CN/Seeed_Elderly/W600/cn_W600_Module'],
+        },
+        {
+          type: 'category',
+          label: 'Artik',
+          items: [
+            'zh-CN/Seeed_Elderly/Artik/cn_Artik',
+            'zh-CN/Seeed_Elderly/Artik/cn_Eagleye_530s',
+          ],
+        },
+        {
+          type: 'category',
+          label: '其他',
+          items: [
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_ESP32_Breakout_Kit',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_UartSB_Frame',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_IoT_Fast_Prototyping_Kit S5D9',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Grove_IoT_Developer_Kit-Microsoft_Azure_Edition',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Atmel_AVRISP_STK500_USB_ISP_Programmer',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_AT_Command_Tester',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_AT_Command_Tester_Application',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Tiny_BLE',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Edison_4WD_Auto_Robotic_Platform_2.0',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Edison_4WD_Auto_Robotic_Platform',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Mini_GSM_GPRS_GPS_Breakout_SIM808',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Nose_LED_Kit',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Serial_port_bluetooth_module_Master-Slave',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Sidekick_Advanced_Kit',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Stepper_Motor_Driver',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Stepper_Motor_Driver_v2.3',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_4WD_Driver_Platform_V1.0',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_4WD_Mecanum_Wheel_Robot_Kit_Series',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Hercules_Dual_15A_6-20V_Motor_Controller',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Basic_Fastener_Kit',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Sidekick_Basic_Kit_for_TI_LaunchPad',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Grove Maker Kit for Intel Joule',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Grove_Shield_for_Intel_Joule',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Grove_Base_BoosterPack',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Grove_Base_Shield_for_Photon',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Tricycle_Bot',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_mbed_Shield',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_BLE_Carbon',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_BLE_Micro',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_BLE_Nitrogen',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Fubarino_SD',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_LoNet_808-Mini_GSM_GPRS_Plus_GPS_Breakout',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Matrix_Clock',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Bugduino',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_CUI32Stem',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Danger_Shield_Complete_Kits',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_FST-01',
+            'zh-CN/Seeed_Elderly/Discrete Product/cn_Grove-Base_Shield_for_IOIO-OTG',
+          ],
+        },
+      ],
     },
-    {
-      type: 'category',
-      label: '毫米波套件',
-      collapsed: true,
-      collapsible: true,   
-      items: [
-        'zh-CN/Sensor/mmWave_radar_sensor/mmwave-kit/cn_mmwave_human_kit',
-        'zh-CN/Sensor/mmWave_radar_sensor/mmwave-kit/cn_mmWave_Kit_And_Grove_Connect_To_ESPHome',
-             
-      ], 
-    },
-    'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR24BSD1',
-    'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR24FDB1',
-    'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR24HPB1',
-    'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR24HPC1',
-    'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR60BHA1',
-    'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR60FDA1',
+    
+    'zh-CN/cn_About',
+    'zh-CN/cn_License',
   ],
-
-
-
 
 
 

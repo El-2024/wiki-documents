@@ -7,15 +7,12 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reTerminal-Buildroot-SDK
 last_update:
-  date: 05/15/2025
+  date: 2023/2/1
   author: jianjing Huang
 ---
 
-# 为 reTerminal 构建 Buildroot
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+# 为 reTerminal 构建 Buildroot
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/buildroot/thumb.jpg" alt="pir" width="500" height="auto"/></p>
 
@@ -27,7 +24,7 @@ last_update:
 
 它具有简单的结构，易于理解和扩展。它仅依赖于众所周知的 Makefile 语言。Buildroot 是一个开源项目，许多开发者每天都在为其贡献代码。
 
-通过以下指南，您将能够使用 Buildroot 构建您自己的 [reTerminal](https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html) 系统镜像。那么让我们开始吧！
+通过以下指南，您将能够使用 Buildroot 构建自己的 [reTerminal](https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html) 系统镜像。那么让我们开始吧！
 
 ## 编译 Buildroot 源代码
 
@@ -68,9 +65,9 @@ make reTerminal_64_defconfig
 make
 ```
 
-#### 使用您自己的配置为 reTerminal 编译
+#### 使用自定义配置为 reTerminal 编译
 
-输入以下命令以安装必要的软件包，用于使用您自己的配置进行编译
+输入以下命令以安装必要的软件包，用于使用自定义配置进行编译
 
 ```sh
 sudo apt install libncurses-dev
@@ -84,17 +81,17 @@ make menuconfig
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/buildroot/menuconfig.png" alt="pir" width="1000" height="auto"/></p>
 
-您可以使用此配置窗口浏览可用选项，并根据您的需求**自定义镜像**。此外，如果您在此窗口中点击 **Save** 并 **Exit** 而不进行任何更改，将加载 reTerminal 的默认配置。
+您可以使用此配置窗口浏览可用选项，并根据需要**自定义镜像**。此外，如果您从此窗口中选择 **保存** 并 **退出** 而不进行任何更改，将加载默认的 reTerminal 配置。
 
 #### 查找已编译的镜像
 
-编译成功后，进入 `seeed-linux-buildroot/output/images`，您将找到已编译的镜像文件 **sdcard.img**
+编译成功后，导航到 `seeed-linux-buildroot/output/images`，您将找到已编译的镜像文件 **sdcard.img**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/buildroot/image-location-1.png" alt="pir" width="1000" height="auto"/></p>
 
 ### 下载已编译的镜像
 
-如果您想下载已经使用 Buildroot 编译好的 reTerminal 系统镜像，可以按照以下步骤操作。
+如果您想下载已使用 Buildroot 编译好的 reTerminal 系统镜像，可以按照以下步骤操作。
 
 - **步骤 1.** 打开 [此链接](https://github.com/Seeed-Studio/seeed-linux-buildroot/actions) 进入 **seeed-linux-buildroot** GitHub 仓库的 **Actions** 页面
 
@@ -106,21 +103,21 @@ make menuconfig
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/buildroot/download.jpg" alt="pir" width="1000" height="auto"/></p>
 
-**注意：** 下载镜像后，解压镜像以获取 **sdcard.img** 文件
+**注意：** 下载镜像后，解压镜像以获取 **sdcard.img** 文件。
 
-## 将镜像刷写到 reTerminal
+## 将镜像烧录到 reTerminal
 
-现在我们将继续将镜像刷写到 reTerminal 的 CM4 的 eMMC 上。
+现在我们将继续将镜像烧录到 reTerminal 上 CM4 的 eMMC 中。
 
-请按照 [此维基](https://wiki.seeedstudio.com/reTerminal/#getting-started-with-reterminal-extended) 中的步骤操作，并注意以下步骤：
+请按照[此 Wiki](https://wiki.seeedstudio.com/cn/reTerminal/#getting-started-with-reterminal-extended)中的步骤操作，并注意以下步骤：
 
-**注意：** 当您打开 **Raspberry Pi Imager** 时，点击 **CHOOSE OS**，选择 **Use custom** 并选择下载的 **sdcard.img** 文件。
+**注意：** 当你打开 **Raspberry Pi Imager** 时，点击 **CHOOSE OS**，选择 **Use custom**，然后选择下载的 **sdcard.img** 文件。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/buildroot/RPi-imager-1.png" alt="pir" width="600" height="auto"/></p>
 
 ## reTerminal 的首次启动
 
-在我们将系统镜像刷写到 reTerminal 后，打开 reTerminal 的电源。此时您会看到内核日志在 reTerminal 的 LCD 上弹出，最后会打开一个使用 Qt 制作的演示应用程序。
+在我们将系统镜像烧录到 reTerminal 后，打开 reTerminal 的电源。此时你会看到内核日志在 reTerminal 的 LCD 上弹出，最后会打开一个使用 Qt 制作的演示应用程序。
 
 默认系统镜像的启动时间大约为 30 秒。
 
@@ -128,7 +125,7 @@ make menuconfig
 
 ## 分析 Buildroot 镜像
 
-如前所述，Buildroot 是一个非常强大的工具，它可以依赖第三方库和工具，快速构建我们需要的内容。如果您想了解 Buildroot 的编译时间、依赖关系、编译所消耗的资源大小等，通过代码检查会非常不方便。然而，Buildroot 提供了可视化分析工具来分析上述内容，我们只需要几个简单的命令即可使用它们。
+如前所述，Buildroot 是一个非常强大的工具，它可以依赖第三方库和工具，快速构建我们需要的内容。如果你想了解 Buildroot 的编译时间、依赖关系、编译所消耗的资源大小等，通过代码检查是非常不方便的。然而，Buildroot 提供了可视化分析工具来分析上述内容，我们只需要几个简单的命令即可使用它们。
 
 首先安装以下软件包：
 
@@ -138,15 +135,15 @@ sudo apt install python3-matplotlib python3-numpy
 
 ### 生成依赖关系图
 
-Buildroot 的一个任务是理解包之间的依赖关系，并确保它们以正确的顺序构建。这些依赖关系有时可能很复杂，对于一个给定的系统，通常不容易理解为什么某个包被 Buildroot 引入并成功构建。为了帮助理解依赖关系以及更好地理解嵌入式 Linux 系统中不同组件的作用，Buildroot 能够生成依赖关系图（PDF 格式）。
+Buildroot 的任务之一是理解包之间的依赖关系，并确保它们按正确的顺序构建。这些依赖关系有时可能很复杂，对于一个给定的系统，通常很难理解为什么某个包或另一个包会被 Buildroot 引入并成功构建。为了帮助理解依赖关系并更好地了解嵌入式 Linux 系统中不同组件的作用，Buildroot 能够生成依赖关系图（PDF 格式）。
 
-- **步骤 1.** 安装以下软件包：
+- **步骤 1.** 安装以下软件包
 
 ```sh
 sudo apt install graphviz
 ```
 
-- **步骤 2.** 生成依赖关系图：
+- **步骤 2.** 生成依赖关系图
 
 ```sh
 make graph-depends
@@ -154,14 +151,14 @@ make graph-depends
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/buildroot/depends-command.png" alt="pir" width="1000" height="auto"/></p>
 
-执行上述命令后，依赖关系图将生成在 `seeed-linux-buildroot > output > graphs` 文件夹中，文件包括：
+执行上述命令后，依赖关系图将生成在 `seeed-linux-buildroot > output > graphs` 目录下，文件包括：
 
 - graph-depends.pdf
 - graph-depends.dot
 
 [![](https://files.seeedstudio.com/wiki/ReTerminal/buildroot/graph-depends-img.png)](https://files.seeedstudio.com/wiki/ReTerminal/buildroot/graph-depends-img.png)
 
-**注意：** 点击上方图片查看放大版本。
+**注意：** 点击上方图片以查看放大版本。
 
 ### 生成编译所消耗资源大小的分析
 
@@ -173,7 +170,7 @@ Buildroot 可以生成编译所消耗资源大小的分析。
 make graph-size
 ```
 
-执行上述命令后，可视化分析文件将生成在 `seeed-linux-buildroot > output > graphs` 文件夹中，文件包括：
+执行上述命令后，可视化分析文件将生成在 `seeed-linux-buildroot > output > graphs` 目录下，文件包括：
 
 - graph-size.pdf
 - file-size-stats.csv
@@ -181,11 +178,11 @@ make graph-size
 
 [![](https://files.seeedstudio.com/wiki/ReTerminal/buildroot/graph-size-img.png)](https://files.seeedstudio.com/wiki/ReTerminal/buildroot/graph-size-img.png)
 
-**注意：** 点击上方图片查看放大版本。
+**注意：** 点击上方图片以查看放大版本。
 
 ## 测试 Buildroot 镜像
 
-要在 reTerminal 上测试上述 Buildroot 镜像，您可以访问 [reTerminal 硬件和接口使用 Wiki](https://wiki.seeedstudio.com/reTerminal-hardware-interfaces-usage) 并参考其中提到的步骤。
+要在 reTerminal 上测试上述 Buildroot 镜像，您可以访问 [reTerminal 硬件和接口使用指南](https://wiki.seeedstudio.com/cn/reTerminal-hardware-interfaces-usage)，并参考其中提到的步骤。
 
 ## 资源
 
@@ -194,7 +191,7 @@ make graph-size
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时拥有顺畅的体验。我们提供了多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时拥有尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

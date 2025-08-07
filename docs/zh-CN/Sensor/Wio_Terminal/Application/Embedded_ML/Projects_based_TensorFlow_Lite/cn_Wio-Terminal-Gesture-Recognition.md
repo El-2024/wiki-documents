@@ -1,6 +1,6 @@
 ---
-description:  使用Wio Terminal手势识别
-title:  使用Wio Terminal手势识别
+description: 使用 Wio Terminal 进行手势识别
+title: 使用 Wio Terminal 进行手势识别
 keywords:
 - Wio_terminal 
 - Embedded_ML 
@@ -8,19 +8,19 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-Gesture-Recognition
 last_update:
-  date: 3/06/2024
-  author: 金菊
+  date: 1/30/2023
+  author: jianjing Huang
 ---
 
 # 使用 Wio Terminal 进行机器学习 - 手势识别
 
-在本教程中，我们使用Wio Terminal来建立一个简单的手势识别机器学习演示，通过 **TensorFlow Lite** 实现。
+本教程将演示如何使用 Wio Terminal 在 **TensorFlow Lite** 的帮助下设置一个简单的手势识别机器学习演示。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/TF.gif"/></div>
 
-这个示例是基于Arduino团队和TensorFlow Lite团队的官方演示进行修改的。如果您想获取更多信息和参考资料，请访问 [Get started with machine learning on Arduino](https://blog.arduino.cc/2019/10/15/get-started-with-machine-learning-on-arduino/)。为了使演示与Wio Terminal兼容，进行了一些修改。
+此示例修改自 Arduino 团队与 TensorFlow Lite 团队的官方演示。更多信息和参考资料，请访问 [Get started with machine learning on Arduino](https://blog.arduino.cc/2019/10/15/get-started-with-machine-learning-on-arduino/)。为了使演示与 Wio Terminal 兼容，进行了一些修改。
 
-*参考资料:* [如何在 Arduino上开始机器学习](https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157)
+*参考资料：* [How-to Get Started with Machine Learning on Arduino](https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157)
 
 ## 零件清单
 
@@ -28,25 +28,25 @@ last_update:
 
 - [Wio Terminal 电池底座](https://www.seeedstudio.com/Wio-Terminal-Chassis-Battery-p-4516.html)
 
-## 功能
+## 特性
 
-- 在 Wio Terminal上进行机器学习
+- 在 Wio Terminal 上进行机器学习
 
 - 手势识别
 
 - TensorFlow Lite
 
-## 所需的Arduino库
+## 所需的 Arduino 库
 
-- 安装内置加速度计库 `Seeed_Arduino_LIS3DHTR`, 请访问 [Wio Terminal IMU](https://wiki.seeedstudio.com/Wio-Terminal-IMU-Overview/) 获取更多信息。
+- 安装板载加速度计库 `Seeed_Arduino_LIS3DHTR`，请访问 [Wio Terminal IMU](https://wiki.seeedstudio.com/cn/Wio-Terminal-IMU-Overview/) 获取更多信息。
 
-- 安装 **Arduino TensorFlow Lite** 库, 请访问 [Wio Terminal TensorFlow Lite](https://wiki.seeedstudio.com/Wio-Terminal-TinyML-TFLM-1) 获取更多信息。
+- 安装 **Arduino TensorFlow Lite** 库，请访问 [Wio Terminal TensorFlow Lite](https://wiki.seeedstudio.com/cn/Wio-Terminal-TinyML-TFLM-1) 获取更多信息。
 
-## 从Wio Terminal训练IMU数据
+## 从 Wio Terminal 训练 IMU 数据
 
-与其他机器学习项目一样，我们将获取一些传感器数据，用于后续模型的训练。首先，我们将运行一个简单的Arduino程序，从Wio Terminal流式传输传感器数据。
+就像其他机器学习项目一样，我们将获取一些传感器数据用于后续训练模型。首先，我们将运行一个简单的 Arduino 程序来从 Wio Terminal 流式传输传感器数据。
 
-复制以下代码，并将其上传到Wio Terminal:
+复制以下代码并将代码上传到 Wio Terminal：
 
 ```cpp
 #include"LIS3DHTR.h"
@@ -113,25 +113,23 @@ void loop() {
 }
 ```
 
-或者从 [**这里**](https://files.seeedstudio.com/wiki/Wio-Terminal/res/IMU.zip) 下载代码，并将其上传到Wio Terminal。如果您打开串行监视器，您应该能够看到IMU数据。
+或者在[**这里**](https://files.seeedstudio.com/wiki/Wio-Terminal/res/IMU.zip)下载代码并将代码上传到Wio Terminal。如果你打开串口监视器，你应该能够看到IMU数据。
 
 ## 捕获手势训练数据
- 
-**将IMU 数据 捕获为 CSV格式** ，用于 TensorFlow ：
 
-- 打开串行监视器，并拿起Wio Terminal。
+**将IMU数据捕获为CSV**并用于TensorFlow：
 
-- 进行一次拳击手势，确保您已触发捕获。
+- 打开串口监视器，拿起Wio Terminal。
 
-- 重复相同的动作至少10次，训练数据越多越好。
+- 做一个出拳手势，确保你已经触发了捕获。
 
 - 重复相同的动作至少10次，训练数据越多越好。
 
-将串行监视器中的数据复制粘贴到一个名为 **`punch.csv`** 的新文本文件中。
+- 从串口监视器复制并粘贴数据到一个名为**`punch.csv`**的新文本文件中。
 
-- 清除并重置Wio Terminal，然后按照上述步骤进行手指弯曲手势，保存为 **`flex.csv`**。
+- 清除并重置Wio Terminal，这次重复上述所有步骤，但使用弯曲手势并保存为**`flex.csv`**。
 
-**注:** 如果您使用的是Linux或Mac，您可以直接将Wio Terminal的传感器数据输出到一个.csv文件中，使用以下命令：
+**注意：** 如果你使用的是Linux或Mac，你可以直接将传感器数据从Wio Terminal输出到`.csv`文件，使用：
 
 ```sh
  cat /dev/cu.usbmodem[nnnnn] > punch.csv
@@ -141,70 +139,70 @@ void loop() {
 
 ## 检查 `.csv` 文件
 
-打开 `punch.csv` 和 `flex.csv` 文件并确保csv文件的第一行是 **aX,aY,aZ** 如下所示：
+打开 `punch.csv` 和 `flex.csv` 文件，确保 csv 文件的第一行是 **aX,aY,aZ**，参考下图：
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/IMU-csv.png"/></div>
 
-## 在TensorFlow中训练数据
+## 在 TensorFlow 中训练数据
 
-在这里，我们将使用由Arduino团队创建的 **Google Colab project** 。Colab提供了一个Jupyter笔记本，允许我们在Web浏览器中运行TensorFlow训练。Colab将设置环境，训练模型，并将模型转换为TensorFlow Lite模型，并将模型编码为Arduino头文件。
+这里我们将使用由 Arduino 团队创建的 **Google Colab 项目**。Colab 提供了一个 Jupyter notebook，允许我们在网页浏览器中运行 TensorFlow 训练。该 colab 将设置环境、训练模型并将模型转换为 TensorFlow Lite 模式，然后将模型编码为 Arduino 头文件。
 
-点击 [**这里**](https://colab.research.google.com/github/arduino/ArduinoTensorFlowLiteTutorials/blob/master/GestureToEmoji/arduino_tinyml_workshop.ipynb) 访问 **Google Colab project**.
+点击[**这里**](https://colab.research.google.com/github/arduino/ArduinoTensorFlowLiteTutorials/blob/master/GestureToEmoji/arduino_tinyml_workshop.ipynb)访问 **Google Colab 项目**。
 
-## 在 Google Colab 项目中进行修改
+## Google Colab 项目中的修改
 
-在Google Colab项目中需要进行一些修改，以适应Wio Terminal：
+需要在 Google Colab 项目中进行一些修改以适配 Wio Terminal：
 
-- 在 **Setup the Python Environment** 中不需要进行任何更改。
+- **Setup the Python Environment** 中不需要更改。
 
-- 在 **Upload Data** 中不需要进行任何更改。
+- **Upload Data** 中不需要更改。
 
-- 在 **Graph Data** 中, 将所有陀螺仪数据部分注释掉，如下所示：
+- 在 **Graph Data** 中，注释掉所有陀螺仪数据部分，如下所示：
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/TF-step1.png"/></div>
 
-- 在 Parse and prepare the data 中, 将所有陀螺仪数据部分注释掉，如下所示：
+- 在 Parse and prepare the data 中，注释掉所有陀螺仪数据部分，如下所示：
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/TF-step2.png"/></div>
 
-- 在 **Randomize and split the input and output pairs for training** 中不需要进行任何更改。
+- **Randomize and split the input and output pairs for training** 中不需要更改。
 
-- 在 **Build & Train the Model** 中不需要进行任何更改。
+- **Build & Train the Model** 中不需要更改。
 
-- 在 **Graph the loss** 中不需要进行任何更改。
+- **Graph the loss** 中不需要更改。
 
-- 在 **Graph the loss again, skipping a bit of the start** 中不需要进行任何更改。
+- **Graph the loss again, skipping a bit of the start** 中不需要更改。
 
-- 在 **Graph the mean absolute error** 中不需要进行任何更改。
+- **Graph the mean absolute error** 中不需要更改。
 
-- 在 **Run with Test Data** 中不需要进行任何更改。
+- **Run with Test Data** 中不需要更改。
 
-- 在 **Convert the Trained Model to Tensor Flow Lite** 中不需要进行任何更改。
+- **Convert the Trained Model to Tensor Flow Lite** 中不需要更改。
 
-- 在 **Encode the Model in an Arduino Header File** 中不需要进行任何更改。
+- **Encode the Model in an Arduino Header File** 中不需要更改。
 
 从左侧面板下载 **`model.h`** 文件。
 
-## 将代码上传至 Wio Terminal
+## 在 Wio Terminal 上上传代码
 
-- 下载完模型的头文件后，打开 [IMU_Classifier.ino](https://files.seeedstudio.com/wiki/Wio-Terminal/res/IMU_Classifier.zip) 或者将以下代码复制到 Arduino IDE 中。
+- 下载模型头文件后，打开 [IMU_Classifier.ino](https://files.seeedstudio.com/wiki/Wio-Terminal/res/IMU_Classifier.zip) 或在 Arduino IDE 中复制以下代码：
 
 ```cpp
 /*
-  IMU Classifier
-  This example uses the on-board IMU to start reading acceleration and gyroscope
-  data from on-board IMU, once enough samples are read, it then uses a
-  TensorFlow Lite (Micro) model to try to classify the movement as a known gesture.
-  Note: The direct use of C/C++ pointers, namespaces, and dynamic memory is generally
-        discouraged in Arduino examples, and in the future the TensorFlowLite library
-        might change to make the sketch simpler.
-  The circuit:
-  - Arduino Nano 33 BLE or Arduino Nano 33 BLE Sense board.
-  Created by Don Coleman, Sandeep Mistry
-  Modified by Dominic Pajak, Sandeep Mistry
-  This example code is in the public domain.
+  IMU 分类器
+  此示例使用板载 IMU 开始从板载 IMU 读取加速度和陀螺仪
+  数据，一旦读取足够的样本，它就会使用
+  TensorFlow Lite (Micro) 模型尝试将运动分类为已知手势。
+  注意：直接使用 C/C++ 指针、命名空间和动态内存通常
+        在 Arduino 示例中不被推荐，未来 TensorFlowLite 库
+        可能会改变以使草图更简单。
+  电路：
+  - Arduino Nano 33 BLE 或 Arduino Nano 33 BLE Sense 开发板。
+  创建者：Don Coleman, Sandeep Mistry
+  修改者：Dominic Pajak, Sandeep Mistry
+  此示例代码属于公共领域。
 
-  Modified to adapt for Wio Terminal - Anson (Seeed Studio)
+  修改以适配 Wio Terminal - Anson (Seeed Studio)
 */
 
 #undef min
@@ -221,17 +219,17 @@ void loop() {
 LIS3DHTR<TwoWire> lis;
 
 
-const float accelerationThreshold = 2; // threshold of significant in G's
+const float accelerationThreshold = 2; // 显著性阈值，单位为 G
 const int numSamples = 119;
 
 int samplesRead = numSamples;
 
-// global variables used for TensorFlow Lite (Micro)
+// 用于 TensorFlow Lite (Micro) 的全局变量
 tflite::MicroErrorReporter tflErrorReporter;
 
-// pull in all the TFLM ops, you can remove this line and
-// only pull in the TFLM ops you need, if would like to reduce
-// the compiled size of the sketch.
+// 引入所有 TFLM 操作，如果您想减少
+// 草图的编译大小，可以删除此行并
+// 仅引入您需要的 TFLM 操作。
 tflite::ops::micro::AllOpsResolver tflOpsResolver;
 
 const tflite::Model* tflModel = nullptr;
@@ -239,12 +237,12 @@ tflite::MicroInterpreter* tflInterpreter = nullptr;
 TfLiteTensor* tflInputTensor = nullptr;
 TfLiteTensor* tflOutputTensor = nullptr;
 
-// Create a static memory buffer for TFLM, the size may need to
-// be adjusted based on the model you are using
+// 为 TFLM 创建静态内存缓冲区，大小可能需要
+// 根据您使用的模型进行调整
 constexpr int tensorArenaSize = 8 * 1024;
 byte tensorArena[tensorArenaSize];
 
-// array to map gesture index to a name
+// 将手势索引映射到名称的数组
 const char* GESTURES[] = {
   "punch",
   "flex"
@@ -259,27 +257,27 @@ void setup() {
 
   lis.begin(Wire1);
   
-  // initialize the IMU
+  // 初始化 IMU
   if (!lis) {
-    Serial.println("Failed to initialize IMU!");
+    Serial.println("初始化 IMU 失败！");
     while (1);
   }
 
 
-  // get the TFL representation of the model byte array
+  // 获取模型字节数组的 TFL 表示
   tflModel = tflite::GetModel(model);
   if (tflModel->version() != TFLITE_SCHEMA_VERSION) {
-    Serial.println("Model schema mismatch!");
+    Serial.println("模型架构不匹配！");
     while (1);
   }
 
-  // Create an interpreter to run the model
+  // 创建解释器来运行模型
   tflInterpreter = new tflite::MicroInterpreter(tflModel, tflOpsResolver, tensorArena, tensorArenaSize, &tflErrorReporter);
 
-  // Allocate memory for the model's input and output tensors
+  // 为模型的输入和输出张量分配内存
   tflInterpreter->AllocateTensors();
 
-  // Get pointers for the model's input and output tensors
+  // 获取模型输入和输出张量的指针
   tflInputTensor = tflInterpreter->input(0);
   tflOutputTensor = tflInterpreter->output(0);
 }
@@ -287,7 +285,7 @@ void setup() {
 void loop() {
   float x, y, z;
 
-  // wait for significant motion
+  // 等待显著运动
   while (samplesRead == numSamples) {
     x=lis.getAccelerationX();
     y=lis.getAccelerationY();
@@ -295,27 +293,26 @@ void loop() {
 
     float aSum = fabs(x) + fabs(y) + fabs(z);
 
-      // check if it's above the threshold
+      // 检查是否超过阈值
       if (aSum >= accelerationThreshold) {
-        // reset the sample read count
+        // 重置样本读取计数
         samplesRead = 0;
         break;
       }
   }
 
-  // check if the all the required samples have been read since
-  // the last time the significant motion was detected
+  // 检查自上次检测到显著运动以来
+  // 是否已读取所有必需的样本
   while (samplesRead < numSamples) {
-    // check if new acceleration AND gyroscope data is available
-      // read the acceleration and gyroscope data
+    // 检查是否有新的加速度和陀螺仪数据可用
+      // 读取加速度和陀螺仪数据
       x=lis.getAccelerationX();
       y=lis.getAccelerationY();
       z=lis.getAccelerationZ();
 
 
-
-      // normalize the IMU data between 0 to 1 and store in the model's
-      // input tensor
+      // 将 IMU 数据标准化到 0 到 1 之间并存储在模型的
+      // 输入张量中
       tflInputTensor->data.f[samplesRead * 6 + 0] = (x + 4.0) / 8.0;
       tflInputTensor->data.f[samplesRead * 6 + 1] = (y + 4.0) / 8.0;
       tflInputTensor->data.f[samplesRead * 6 + 2] = (z + 4.0) / 8.0;
@@ -323,15 +320,15 @@ void loop() {
       samplesRead++;
 
       if (samplesRead == numSamples) {
-        // Run inferencing
+        // 运行推理
         TfLiteStatus invokeStatus = tflInterpreter->Invoke();
         if (invokeStatus != kTfLiteOk) {
-          Serial.println("Invoke failed!");
+          Serial.println("调用失败！");
           while (1);
           return;
         }
 
-        // Loop through the output tensor values from the model
+        // 循环遍历模型的输出张量值
         for (int i = 0; i < NUM_GESTURES; i++) {
           Serial.print(GESTURES[i]);
           Serial.print(": ");
@@ -343,16 +340,16 @@ void loop() {
 }
 ```
 
-- 将训练好的 `model.h` 头文件放置在与 IMU_Classifier.ino 文件相同的文件夹中，然后将代码上传到 Wio Terminal。
+- 将训练好的 `model.h` 头文件放在与 IMU_Classifier.ino 文件相同的文件夹中，并将代码上传到 Wio Terminal。
 
-- 现在，打开串口监视器并执行手势！您应该会看到打印出每个手势的置信度（0 表示低置信度，1 表示高置信度）。
+- 现在，打开串口监视器并执行您的手势！您应该看到每个手势的置信度被打印出来（0 = 低置信度，1 = 高置信度）。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/TF-step3.png"/></div>
 
 ## 示例模型文件
 
-为了参考，我附上了训练好的 [model.h](https://files.seeedstudio.com/wiki/Wio-Terminal/res/model.h) 文件供下载。您可以将其与 IMU_Classifier.ino 一起使用进行测试。
+作为参考，我已经附上了训练好的模型 [model.h](https://files.seeedstudio.com/wiki/Wio-Terminal/res/model.h) 文件供下载。您可以将此文件与 IMU_Classifier.ino 一起使用进行测试。
 
-## 深层开发
+## 进一步开发
 
-关于深层开发，可以通过 IMU 在 Wio Terminal 上训练更多手势，并触发不同的输出！尝试在微控制器上使用 TensorFlow Lite 进行机器学习！
+对于进一步开发，可以通过 IMU 在 Wio Terminal 上训练更多手势，并触发不同的输出！使用 TensorFlow Lite 在微控制器上探索机器学习！

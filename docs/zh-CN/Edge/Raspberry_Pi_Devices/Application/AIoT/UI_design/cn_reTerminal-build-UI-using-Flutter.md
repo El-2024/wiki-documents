@@ -1,24 +1,22 @@
 ---
-description: 使用 Flutter 为 reTerminal 开发
-title: 使用 Flutter 为 reTerminal 开发
+description:  Flutter 用于 reTerminal
+title:  Flutter 用于 reTerminal
 keywords:
   - Edge
   - reTerminal 应用
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reTerminal-build-UI-using-Flutter
 last_update:
-  date: 05/15/2025
+  date: 1/31/2023
   author: jianjing Huang
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/vs-13.png" alt="pir" width="800" height="auto"/></p>
 
-## 简介
+## 介绍
 
-本篇 Wiki 介绍了如何使用 Flutter 构建自己的用户界面。Flutter 是由 Google 创建的开源 UI 软件开发工具包，用于从单一代码库开发适用于 Android、iOS、Linux、Mac、Windows、Google Fuchsia 和 Web 的跨平台应用程序。这意味着您可以使用一种编程语言和一个代码库来创建两个不同的应用程序（适用于 iOS、Android 等）。
+本篇 Wiki 讲解了如何使用 Flutter 构建自己的用户界面。Flutter 是由 Google 创建的开源 UI 软件开发工具包，用于从单一代码库开发适用于 Android、iOS、Linux、Mac、Windows、Google Fuchsia 和 Web 的跨平台应用程序。这意味着您可以使用一种编程语言和一个代码库来创建两个不同的应用程序（适用于 iOS、Android 等）。
 
 要使用 Flutter 开发，您需要一种名为 Dart 的编程语言。Dart 是一种开源的、通用的、面向对象的编程语言，具有 C 风格的语法，由 Google 开发。
 
@@ -34,7 +32,7 @@ last_update:
 
 > 点击 [这里](https://github.com/ardera/flutter-pi) 访问 flutter-pi 的 GitHub 仓库
 
-- **步骤 1.** 按照 [此 Wiki](https://wiki.seeedstudio.com/reTerminal/#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet) 中的说明登录到 reTerminal，并在 reTerminal 上安装 **flutter 引擎二进制文件**
+- **步骤 1.** 按照[此 Wiki](https://wiki.seeedstudio.com/cn/reTerminal/#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet) 的说明登录到 reTerminal，并在 reTerminal 上安装 **flutter 引擎二进制文件**
 
 ```sh
 git clone --depth 1 https://github.com/ardera/flutter-engine-binaries-for-arm.git engine-binaries
@@ -83,13 +81,13 @@ sudo raspi-config
 
 - **步骤 8.** 切换到控制台模式，导航到 `System Options > Boot / Auto Login` 并选择 **Console 或 Console (Autologin)**
 
-- **步骤 9.** 启用 V3D 图形驱动程序，导航到 `Advanced Options > GL Driver > GL (Fake KMS)`
+- **步骤 9.** 启用 V3D 图形驱动，导航到 `Advanced Options > GL Driver > GL (Fake KMS)`
 
 - **步骤 10.** 配置 GPU 内存，导航到 `Performance Options -> GPU Memory` 并输入 **64**
 
-- **步骤 11.** 按 **ESC** 键退出 **rasp-config** 窗口
+- **步骤 11.** 按下键盘上的 **ESC** 离开 **rasp-config** 窗口
 
-- **步骤 12.** 赋予 reTerminal 使用 3D 加速的权限。（注意：可能存在安全隐患。如果您不想这样做，可以使用 **sudo** 启动 flutter-pi。）
+- **步骤 12.** 给予 reTerminal 使用 3D 加速的权限。（注意：可能存在安全隐患。如果您不想这样做，可以使用 **sudo** 启动 flutter-pi。）
 
 ```sh
 usermod -a -G render pi
@@ -105,7 +103,7 @@ sudo reboot
 
 ### 在主机 PC 上
 
-接下来，我们需要为开发准备主机 PC。在这里，我们将安装 **Flutter SDK**（包含 Flutter 开发所需的必要包）、**Android Studio**（用于代码编辑）以及 **Android Emulator**（用于运行和测试代码）。
+接下来，我们需要为开发准备主机 PC。在这里，我们将安装 **Flutter SDK**（包含 Flutter 开发所需的包）、**Android Studio**（用于代码编辑）和 **Android Emulator**（用于运行和测试代码）。
 
 - **步骤 1.** 根据您的操作系统下载并安装 [Flutter SDK](https://flutter.dev/docs/get-started/install)
 
@@ -135,7 +133,7 @@ flutter --version
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/avd-9.png" alt="pir" width="650" height="auto"/></p>
 
-- **步骤 8.** 当 IDE 再次打开时，导航到 `Configure > AVD Manager`
+- **步骤 8.** IDE 再次打开后，导航到 `Configure > AVD Manager`
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/android-studio-open.png" alt="pir" width="800" height="auto"/></p>
 
@@ -147,7 +145,7 @@ flutter --version
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/avd-2.png" alt="pir" width="800" height="auto"/></p>
 
-- **步骤 11.** 按以下设置进行配置：
+- **步骤 11.** 按以下方式配置设置：
 
   - 设备名称：reTerminal
   - 设备类型：手机/平板
@@ -161,7 +159,7 @@ flutter --version
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/avd-3.png" alt="pir" width="800" height="auto"/></p>
 
-- **步骤 12.** 点击 **Finish** 然后点击 **Next**
+- **步骤 12.** 点击 **Finish**，然后点击 **Next**
 
 - **步骤 13.** 选择最新的 Android 镜像并点击 **Next**
 
@@ -179,11 +177,11 @@ flutter --version
 
 ### 硬件连接
 
-我们将连接一个 LED 到 reTerminal 的 GPIO 24 以进行测试。稍后您可以添加一个继电器并使用 GPIO 控制家用电器！
+我们将连接一个 LED 到 reTerminal 的 GPIO 24 以进行测试。稍后，您可以添加一个继电器并使用 GPIO 控制家用电器！
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/LED-connection-1.png" alt="pir" width="800" height="auto"/></p>
 
-**注意：** GPIO 引脚和 LED 之间需要一个电阻，否则 LED 会烧毁。
+**注意：** 在 GPIO 引脚和 LED 之间需要一个电阻，否则 LED 会烧毁。
 
 ### 创建并初始化应用程序
 
@@ -201,7 +199,7 @@ flutter --version
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/avd-12.png" alt="pir" width="800" height="auto"/></p>
 
-现在您的示例项目将打开，并显示 **main.dart**
+现在您的示例项目将打开 **main.dart**
 
 ### 创建 main.dart（主应用程序）
 
@@ -210,24 +208,24 @@ flutter --version
 打开 **main.dart** 文件并复制以下代码：
 
 ```dart
-//库导入
+// 库导入
 import 'package:flutter/material.dart';
 import 'package:flutter_gpiod/flutter_gpiod.dart';
 
-//应用程序的入口点
+// 应用程序的入口点
 void main() {
   runApp(MyApp());
 }
 
-// 这是主应用程序小部件。
+// 这是主应用程序小部件
 class MyApp extends StatelessWidget {
   // GPIO 控制功能
   void ledState(state) {
-    // 获取 GPIO 芯片列表。
+    // 获取 GPIO 芯片列表
     final chips = FlutterGpiod.instance.chips;
 
-    // 获取第一个芯片的索引为 24 的线路。
-    // 这是树莓派的 BCM 引脚 24。
+    // 获取第一个芯片的索引为 24 的线路
+    // 这是树莓派的 BCM 引脚 24
     final chip = chips.singleWhere(
           (chip) => chip.label == 'pinctrl-bcm2711',
       orElse: () =>
@@ -236,7 +234,7 @@ class MyApp extends StatelessWidget {
 
     final line2 = chip.lines[24];
 
-    // 请求 BCM 24 作为输出。
+    // 请求 BCM 24 作为输出
     line2.requestOutput(consumer: "flutter_gpiod test", initialValue: false);
     line2.setValue(state);
     line2.release();
@@ -250,18 +248,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // Scaffold 小部件
       home: Scaffold(
-        // 应用程序的背景颜色。
+        // 应用程序的背景颜色
         // 在这里输入 "Colors." 后，Android Studio 将推荐可用的颜色。
-        // 您还可以将鼠标悬停以检查由 [ ] 包围的数字分配的不同颜色变化。
+        // 您还可以将鼠标悬停以检查由 [ ] 包围的不同颜色变化。
         backgroundColor: Colors.grey[700],
         // AppBar 小部件
         appBar: AppBar(
-          // 应用栏的背景颜色
+          // appbar 的背景颜色
           backgroundColor: Colors.black,
-          // 在应用栏小部件中居中对齐文本
+          // 在 appbar 小部件中居中对齐文本
           title: Center(
             child: Text(
-              'LIVING ROOM',
+              '客厅',
             ),
           ),
         ),
@@ -272,9 +270,9 @@ class MyApp extends StatelessWidget {
             children: [
               // ON 按钮功能
               ElevatedButton(
-                child: Text('ON'),
+                child: Text('开'),
                 onPressed: () {
-                  print('ON');
+                  print('开');
                   ledState(true);
                 },
                 // ON 按钮样式
@@ -292,9 +290,9 @@ class MyApp extends StatelessWidget {
               ),
               // OFF 按钮功能
               ElevatedButton(
-                child: Text('OFF'),
+                child: Text('关'),
                 onPressed: () {
-                  print('OFF');
+                  print('关');
                   ledState(false);
                 },
                 // OFF 按钮样式
@@ -315,13 +313,13 @@ class MyApp extends StatelessWidget {
 
 #### 使用的 Flutter 小部件
 
-Flutter 小部件使用一个现代框架构建，该框架受 React 的启发。核心思想是您通过小部件构建用户界面。小部件根据其当前配置和状态描述其视图应该是什么样子。
+Flutter 小部件使用一个现代框架构建，该框架从 React 中汲取灵感。核心思想是您通过小部件构建用户界面。小部件根据其当前配置和状态描述其视图的外观。
 
 **StatelessWidget（无状态组件）：**  
-无状态组件在描述用户界面时非常有用，当该界面部分仅依赖于对象本身的配置信息和组件被加载的 BuildContext 时，可以使用无状态组件。
+无状态组件在描述用户界面的一部分时非常有用，当该部分仅依赖于对象本身的配置信息和组件被加载时的 BuildContext，而不依赖其他内容时，可以使用无状态组件。
 
 **MaterialApp（Material 应用）：**  
-MaterialApp 组件是一个封装了许多常用于 Material Design 应用程序的组件的组件。
+MaterialApp 组件是一个包装了许多常用组件的组件，这些组件通常是构建 Material Design 应用所需的。
 
 **Scaffold（脚手架）：**  
 Scaffold 组件提供了一个框架，用于实现 Flutter 应用的基本 Material Design 视觉布局结构。它提供了显示抽屉、Snackbar 和底部弹出框的 API。
@@ -333,17 +331,17 @@ Appbar 是一个包含工具栏的组件，用于 Flutter 应用程序中。
 Row 组件用于以水平数组的形式显示其子组件。我们将在此组件中使用 UI 元素。
 
 **ElevatedButton（凸起按钮）：**  
-ElevatedButton 组件包含一个按钮，可以按下并根据需要做出响应。
+ElevatedButton 组件包含一个按钮，可以通过点击触发相应的反应。
 
 #### Google Material Icons（谷歌 Material 图标）
 
-我们在应用中使用了来自 **Google Material Icons** 的 **lightbulb（灯泡）** 图标。要了解更多 Google Material Icons，请访问 [此链接](https://fonts.google.com/icons)，搜索一个按钮，选择按钮并查看该按钮的 Flutter 代码。
+我们在应用中使用了一个来自 **Google Material Icons** 的 **lightbulb（灯泡）** 图标。要了解更多 Google Material 图标，请访问 [此链接](https://fonts.google.com/icons)，搜索按钮，选择按钮并查看按钮的 Flutter 代码。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/vs-14.png" alt="pir" width="800" height="auto"/></p>
 
 ### 安装 GPIO 库
 
-接下来，我们将继续在 Flutter 应用程序中安装 GPIO 控制库。在这里，我们将使用一个名为 [flutter_gpiod](https://pub.dev/packages/flutter_gpiod/versions/0.4.0-nullsafety) 的 GPIO 库。
+接下来，我们将把 GPIO 控制库安装到我们的 Flutter 应用中。在这里，我们将使用一个名为 [flutter_gpiod](https://pub.dev/packages/flutter_gpiod/versions/0.4.0-nullsafety) 的 GPIO 库。
 
 - **步骤 1.** 要安装 GPIO 库，请进入 Flutter 项目中的 **pubspec.yaml** 文件，并在 **dependencies:** 下添加以下内容：
 
@@ -356,7 +354,7 @@ dependencies:
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/vs-17.jpg" alt="pir" width="520" height="auto"/></p>
 
-### 测试应用程序
+### 测试应用
 
 - **步骤 1.** 打开 **main.dart** 文件
 
@@ -364,7 +362,7 @@ dependencies:
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/avd-13.1.jpg" alt="pir" width="800" height="auto"/></p>
 
-现在，您将看到以下输出：
+现在你将看到以下输出：
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/vs-5.png" alt="pir" width="800" height="auto"/></p>
 
@@ -372,15 +370,15 @@ dependencies:
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/avd-14.png" alt="pir" width="800" height="auto"/></p>
 
-现在，您将在 Android 模拟器上看到以下应用程序运行：
+现在你将在 Android 模拟器上看到以下运行的应用程序：
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/vs-13.png" alt="pir" width="800" height="auto"/></p>
 
 ### 构建应用程序并传输到 reTerminal
 
-接下来，我们将构建 Flutter 应用程序并将其传输到 reTerminal。
+接下来，我们将构建我们的 Flutter 应用程序并将其传输到 reTerminal。
 
-- **步骤 1.** 在 Android Studio 中打开一个终端窗口，导航到 `View > Tool Windows > Terminal`
+- **步骤 1.** 在 Android Studio 中通过导航到 `View > Tool Windows > Terminal` 打开一个终端窗口
 
 - **步骤 2.** 输入以下命令以准备构建：
 
@@ -396,17 +394,17 @@ flutter build bundle
 
 - **步骤 4.** 打开 reTerminal
 
-**注意：** 您会注意到 reTerminal 启动到命令行模式。
+**注意：** 你会注意到 reTerminal 启动到命令行模式。
 
 - **步骤 5.** 将构建的项目传输到 reTerminal：
 
 ```sh
-scp -r ./build/flutter_assets pi@<ip_address_of_reTerminal>:/home/pi/testapp
+scp -r ./build/flutter_assets pi@<reTerminal 的 IP 地址>:/home/pi/testapp
 ```
 
 ## 在 reTerminal 上启动应用程序
 
-- **步骤 1.** 在 reTerminal 的命令行中输入以下内容：
+- **步骤 1.** 在 reTerminal 的命令行中输入以下命令：
 
 ```sh
 flutter-pi /home/pi/testapp
@@ -414,7 +412,7 @@ flutter-pi /home/pi/testapp
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/flutter/vs-13.png" alt="pir" width="800" height="auto"/></p>
 
-当您按下 **ON** 和 **OFF** 按钮时，您会注意到连接到 GPIO 24 的 LED 会根据按钮的状态做出相应反应！
+当您按下 **ON** 和 **OFF** 按钮时，您会注意到连接到 GPIO 24 的 LED 会根据按钮的状态做出相应的反应！
 
 您还可以通过在 GPIO 引脚上添加继电器来扩展功能，从而控制家用电器，并在 reTerminal 上构建完整的智能家居解决方案！
 
@@ -432,7 +430,7 @@ flutter-pi /home/pi/testapp
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时拥有流畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

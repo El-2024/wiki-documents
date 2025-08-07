@@ -6,29 +6,29 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-Infrared-Emitter
 last_update:
-  date: 3/09/2024
-  author: 金菊
+  date: 1/17/2023
+  author: jianjing Huang
 ---
 
 # 红外发射器入门指南
 
-该存储库演示了如何将内置的红外发射器作为 Wio Terminal 的组件使用。红外发射器是一个数字接口，可以用于发送红外信号，就像遥控器一样！
+本教程演示如何在 Wio Terminal 中使用内置红外发射器组件。红外发射器是一个数字接口，可用于发送红外信号，就像遥控器一样！
 
 ![](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Wio-Terminal-IR.gif)
 
-## 安装  Wio Terminal 的红外库
+## 为 Wio Terminal 安装红外库
 
-1. 访问 [Seeed_Arduino_IR](https://github.com/Seeed-Studio/Seeed_Arduino_IR) 存储库，并将整个存储库下载到本地驱动器。
+1. 访问 [Seeed_Arduino_IR](https://github.com/Seeed-Studio/Seeed_Arduino_IR) 仓库，将整个仓库下载到本地驱动器。
 
-2. 现在，可以将红外库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library` ,然后选择刚刚下载的  `Seeed_Arduino_IR` 文件。
+2. 现在可以将红外库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，选择刚刚下载的 `Seeed_Arduino_IR` 文件。
 
 ![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg)
 
 ## 示例代码
 
-导航到 **Files** -> **Examples** -> **IRLib2** -> **Send**。 发送示例将出现，并且应该如下所示。要测试来自 Wio 终端的红外信号，您可以使用 [Grove - 红外接收器](https://wiki.seeedstudio.com/Grove-Infrared_Receiver/)。这可以很容易地修改为将 Wio 终端用作电视遥控器！
+导航到 **Files** -> **Examples** -> **IRLib2** -> **Send**。发送示例将出现，应如下所示。要测试来自 Wio Terminal 的红外信号，您可以使用 [Grove - 红外接收器](https://wiki.seeedstudio.com/cn/Grove-Infrared_Receiver/)。这可以轻松修改为使用 Wio Terminal 作为您的电视遥控器！
 
-**注:** **`WIO_IR`**  已在红外发射器的库头文件中定义（因此不需要在 ino 文件中定义）。
+**注意：** **`WIO_IR`** 为内置红外发射器定义（已在此库的头文件中定义，因此无需在 ino 文件中定义）
 
 ```cpp
 /* send.ino Example sketch for IRLib2
@@ -67,4 +67,4 @@ void loop() {
 }
 ```
 
-**注:**  红外发射器位于 Wio 终端的背面，在 SD 卡插槽的左侧。
+**注意：** 红外发射器位于 Wio Terminal 的背面，在 SD 卡槽的左侧。

@@ -1,99 +1,99 @@
 ---
-description:  Wio Terminal Displaying Photos
-title:  Wio Terminal 显示图片
+description: Wio Terminal 显示照片
+title: Wio Terminal 显示照片
 keywords:
 - Wio_terminal Tutorial
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-Displaying-Photos
 last_update:
-  date: 3/08/2024
-  author: jessie
+  date: 1/31/2023
+  author: jianjing Huang
 ---
 
-# Wio Terminal显示照片
+# Wio Terminal 显示照片
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/products.2019-11-26%2017_40_45.gif" /></div>
 
 ## 概述
 
-此示例演示了如何循环显示来自SD卡的图像。 
+此示例演示如何循环显示SD卡中的图像。
 
-### 特点
+### 功能特性
 
-- 循环显示照片
+- 循环播放照片
 
-## 需要的Arduino库
+## 所需的Arduino库
 
-- 安装LCD屏幕库 `Seeed_Arduino_LCD`, 请访问 [Wio Terminal Overview](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) 获取更多信息。
+- 安装LCD屏幕库 `Seeed_Arduino_LCD`，请访问 [Wio Terminal 概述](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Overview/) 获取更多信息。
 
-- 安装SD卡库 `Seeed_Arduino_FS`, 请访问 [Seeed-Arduino-FS](https://github.com/Seeed-Studio/Seeed_Arduino_FS) 获取更多信息。
+- 安装SD卡库 `Seeed_Arduino_FS`，请访问 [Seeed-Arduino-FS](https://github.com/Seeed-Studio/Seeed_Arduino_FS) 获取更多信息。
 
-- 安装 `RawImage.h` 库, 请访问 [Loading Images](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Loading-Image/) 获取更多信息。
+- 安装 `RawImage.h` 库，请访问 [加载图像](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Loading-Image/) 获取更多信息。
 
-## Arduino 指令
+## Arduino 说明
 
-1. 下载 [`displayPhotos.ino`](https://files.seeedstudio.com/wiki/Wio-Terminal/res/displayPhotos.zip) 和 `RawImage.h` 文件，并通过 `Arduino IDE` 上传到Wio Terminal。确保您已安装所有库。
+1. 下载 [`displayPhotos.ino`](https://files.seeedstudio.com/wiki/Wio-Terminal/res/displayPhotos.zip) 和 `RawImage.h` 文件，通过 `Arduino IDE` 上传到您的Wio Terminal。确保您已安装所有库。
 
-2. 将 `photos` 文件夹拖放到SD卡中，并保存整个文件夹。
+2. 将 `photos` 文件夹拖拽并保存整个文件到SD卡中。
 
-3. 您应该看到图像开始循环显示！
+3. 您应该看到图像开始循环播放！
 
 ## 代码
 
 ```cpp
 #include"TFT_eSPI.h"
-#include "Seeed_FS.h" //Including SD card library
-#include"RawImage.h"  //Including image processing library
+#include "Seeed_FS.h" //包含SD卡库
+#include"RawImage.h"  //包含图像处理库
 TFT_eSPI tft;
 
 void setup() {
-    //Initialise SD card
+    //初始化SD卡
     if (!SD.begin(SDCARD_SS_PIN, SDCARD_SPI)) {
         while (1);
     }
-    //Initialise LCD screen
+    //初始化LCD屏幕
     tft.begin();
     tft.setRotation(3);
 
 }
-//storing the names of photos 
+//存储照片名称
 const char* list[] = {"photos/1.bmp", "photos/2.bmp", "photos/3.bmp", "photos/4.bmp"};
 
 void loop() {
     for (uint8_t cnt = 0; cnt < 4; cnt++) {
-        drawImage<uint16_t>(list[cnt],0,0); //dispalying images one by one
+        drawImage<uint16_t>(list[cnt],0,0); //逐一显示图像
         delay(1000);
     }
 }
 ```
 
-## 使用按钮在Wio Terminal显示照片
+## Wio Terminal 使用按钮显示照片
 
 ### 概述
 
-此示例与上述示例类似，但是使用内置按钮来更改显示的图像！
+此示例与上面类似，但使用内置按钮来切换显示的图像！
 
-### 特点
+### 功能特性
 
-- 左按钮：上一张图像
+- 左按钮：上一张图片
 
-- 右按钮：下一张图像
+- 右按钮：下一张图片
 
-### 需要的Arduino库
+### 所需的Arduino库
 
-- 安装LCD屏幕库 `Seeed_Arduino_LCD`, 请访问 [Wio Terminal 概述](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) 获取更多信息。
+- 安装LCD屏幕库 `Seeed_Arduino_LCD`，请访问 [Wio Terminal 概述](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Overview/) 获取更多信息。
 
-- 安装SD卡库 `Seeed_Arduino_FS`, 请访问 [Seeed-Arduino-FS](https://github.com/Seeed-Studio/Seeed_Arduino_FS/tree/beta) 获取更多信息。
+- 安装SD卡库 `Seeed_Arduino_FS`，请访问 [Seeed-Arduino-FS](https://github.com/Seeed-Studio/Seeed_Arduino_FS/tree/beta) 获取更多信息。
 
-- 安装 `RawImage.h` 库, 请访问 [Loading Images](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Loading-Image/) 获取更多信息。
+- 安装 `RawImage.h` 库，请访问 [加载图像](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Loading-Image/) 获取更多信息。
 
-### Arduino 指令
+### Arduino 说明
 
-1. 下载 [`displayPhotos_buttons.ino`](https://files.seeedstudio.com/wiki/Wio-Terminal/res/displayPhotos_buttons.zip) 和 `RawImage.h` 文件，并通过 `Adruino IDE`上传到Wio Terminal。确保您已安装所有库。
+1. 下载 [`displayPhotos_buttons.ino`](https://files.seeedstudio.com/wiki/Wio-Terminal/res/displayPhotos_buttons.zip) 和 `RawImage.h` 文件，通过 `Arduino IDE` 上传到您的Wio Terminal。确保您已安装所有库。
 
-2. 将 `photos` 文件夹拖放到SD卡中，并保存整个文件夹。
+2. 将 `photos` 文件夹拖拽并保存整个文件到SD卡中。
 
-3. 按下左按钮向左滚动，按下右按钮向右滚动！
+3. 按左按钮向左滚动，按右按钮向右滚动！
 
 ### 代码
 
@@ -102,8 +102,8 @@ void loop() {
 ```cpp
 void setup() {
     ...
-    pinMode(BUTTON_1, INPUT); //left button
-    pinMode(BUTTON_3, INPUT); //right button
+    pinMode(BUTTON_1, INPUT); //左按钮
+    pinMode(BUTTON_3, INPUT); //右按钮
     ...
 }
 ```
@@ -112,8 +112,8 @@ void setup() {
 
 ```cpp
 #include"TFT_eSPI.h"
-#include "Seeed_FS.h" //Including SD card library
-#include"RawImage.h"  //Including image processing library
+#include "Seeed_FS.h" //包含SD卡库
+#include"RawImage.h"  //包含图像处理库
 TFT_eSPI tft;
 
 bool left_flag = false;
@@ -127,7 +127,7 @@ void button_handler_right() {
 }
 
 void setup() {
-  //Initialise SD card
+  //初始化SD卡
   if (!SD.begin(SDCARD_SS_PIN, SDCARD_SPI,16000000)) {
     while (1);
   }

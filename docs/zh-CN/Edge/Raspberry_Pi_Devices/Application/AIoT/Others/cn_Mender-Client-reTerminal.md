@@ -7,15 +7,11 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Mender-Client-reTerminal
 last_update:
-  date: 05/15/2025
+  date: 2023/1/31
   author: jianjing Huang
 ---
 
 # 在 reTerminal 上安装 Mender 客户端
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 我们可以在 reTerminal 上设置 Mender 客户端，然后从托管或自托管的 Mender 服务器接收 OTA 更新。
 
@@ -23,26 +19,26 @@ last_update:
 
 ## 测试结果
 
-下表中的 Yocto 项目版本已由 Mender 社区测试。如果您在其他 [Yocto 项目版本](https://wiki.yoctoproject.org/wiki/Releases?target=_blank) 上测试了此集成，请更新表格：
+下表中的 Yocto 项目版本已由 Mender 社区测试。如果您在其他 [Yocto 项目版本](https://wiki.yoctoproject.org/wiki/Releases?target=_blank) 上测试了此集成，请更新此表：
 
 | Yocto 项目 | 构建 | 运行时 |
 |---|---|---|
 | dunfell (3.1 / 5.3.0) | 测试通过 | 测试通过 |
 
-**构建** 表示使用此 Mender 集成的 Yocto 项目构建完成且无错误，并输出镜像。  
+**构建** 表示使用此 Mender 集成构建的 Yocto 项目能够无错误完成并输出镜像。
 **运行时** 表示已验证 Mender 在板上正常工作。对于基于 U-Boot 的板，已验证 [集成检查表](https://docs.mender.io/devices/integrating-with-u-boot/integration-checklist?target=_blank)。
 
-## 前置条件
+## 前提条件
 
 - 在您的工作站/笔记本电脑上安装支持的 Linux 发行版和依赖项，如 [Yocto Mega Manual](https://www.yoctoproject.org/docs/current/mega-manual/mega-manual.html#detailed-supported-distros) 中所述
-  - 注意：具体说明取决于您打算使用的 Yocto 版本。
+  - 注意：说明取决于您打算使用的 Yocto 版本。
 - [reTerminal](https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html)
 
 ## 配置构建
 
 ### 设置 Yocto 环境
 
-创建一个目录以存放 `mender-reterminal` 设置，并克隆元信息。
+创建一个目录以存放您的 `mender-reterminal` 设置，并克隆元信息。
 
 ```
 mkdir mender-reterminal && cd mender-reterminal
@@ -118,24 +114,24 @@ bitbake-layers add-layer ../layers/meta-mender/meta-mender-demo
 
 ### 配置 Mender 服务器 URL（可选）
 
-此部分不是成功构建所必需的，但默认生成的镜像仅适用于 [独立部署](https://docs.mender.io/architecture/standalone-deployments?target=_blank) 中的 Mender 客户端，因为缺少服务器配置。
+此部分不是成功构建所必需的，但默认生成的镜像仅适用于 [独立部署](https://docs.mender.io/architecture/standalone-deployments?target=_blank) 中的 Mender 客户端，因为缺乏服务器配置。
 
-您可以编辑 `conf/local.conf` 文件以提供您的 Mender 服务器配置，确保生成的镜像和 Mender Artifacts 连接到您正在使用的 Mender 服务器。在生成的 `conf/local.conf` 文件中应该已经有一个注释部分，您可以简单地取消注释相关配置选项并为其分配适当的值。
+您可以编辑 `conf/local.conf` 文件以提供您的 Mender 服务器配置，确保生成的镜像和 Mender Artifact 能够连接到您使用的 Mender 服务器。生成的 `conf/local.conf` 文件中应该已经有一个注释部分，您可以简单地取消注释相关配置选项并为其分配适当的值。
 
-为托管 Mender 构建：
+针对托管 Mender 构建：
 
 ```
 # 获取您的租户令牌：
 #    - 登录 https://hosted.mender.io
 #    - 点击右上角的您的邮箱，然后选择“我的组织”
-#    - 点击“复制到剪贴板”
+#    - 按下“复制到剪贴板”
 #    - 将剪贴板内容分配给 MENDER_TENANT_TOKEN
 #
 MENDER_SERVER_URL = "https://hosted.mender.io"
 MENDER_TENANT_TOKEN = "<复制令牌到此处>"
 ```
 
-为 Mender 演示服务器构建：
+针对 Mender 演示服务器构建：
 
 ```
 # https://docs.mender.io/administration/demo-installation
@@ -143,14 +139,14 @@ MENDER_TENANT_TOKEN = "<复制令牌到此处>"
 MENDER_DEMO_HOST_IP_ADDRESS = "<Mender 演示服务器的 IP 地址>"
 ```
 
-为 Mender 生产/自托管（本地）构建：
+针对 Mender 生产/自托管（本地部署）构建：
 
 ```
 # https://docs.mender.io/3.1/system-updates-yocto-project/build-for-production
 #
-# 取消注释以下内容并更新 URL 以匹配您配置的域名，并提供生成的 server.crt 文件的路径。
+# 取消注释以下内容并更新 URL 以匹配您的配置域名，并提供生成的 server.crt 文件的路径。
 #
-# 请注意，仅当您使用自签名证书时才需要自定义 server.crt 文件。
+# 注意：仅当您使用自签名证书时才需要自定义 server.crt 文件。
 #
 # 注意！建议您在自定义 Yocto 层中提供以下信息，这仅用于演示目的。有关更多信息，请参阅链接文档。
 MENDER_SERVER_URL = "<自托管 Mender 服务器的 URL>"
@@ -174,17 +170,19 @@ MACHINE="seeed-reterminal-mender" bitbake rpi-test-image
 
 - `build/tmp/deploy/images/seeed-reterminal-mender/rpi-test-image-seeed-reterminal-mender.sdimg.bz2`
 
-如果您的设备上已经运行了 Mender，并希望使用此构建部署 rootfs 更新，则应使用 [Mender Artifact](https://docs.mender.io/architecture/mender-artifacts?target=_blank) 文件，这些文件具有 `.mender` 后缀。您可以通过 Mender 服务器的托管模式（在服务器 UI 的 Releases 中上传）或仅使用 Mender 客户端的[独立部署](https://docs.mender.io/architecture/standalone-deployments?target=_blank)来部署此 Artifact。
+如果您的设备上已经运行了 Mender，并希望使用此构建部署 rootfs 更新，则应使用 [Mender Artifact](https://docs.mender.io/architecture/mender-artifacts?target=_blank) 文件，这些文件具有 `.mender` 后缀。您可以通过以下两种方式部署此 Artifact：
+- 在托管模式下通过 Mender 服务器（在服务器 UI 中将其上传到 Releases 下）。
+- 或者仅使用 Mender 客户端进行 [独立部署](https://docs.mender.io/architecture/standalone-deployments?target=_blank)。
 
 ## 刷写说明
 
-请参考[此 Wiki 指南](https://wiki.seeedstudio.com/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)了解如何将上述镜像刷写到 reTerminal 的 eMMC 上。
+请参考 [此 Wiki 指南](https://wiki.seeedstudio.com/cn/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc) 了解如何将上述镜像刷写到 reTerminal 的 eMMC 上。
 
 刷写完成后，当您打开 reTerminal 时，它将从编译的镜像启动。
 
 ## 启动成功
 
-如果您从 UART 中看到以下日志，则表示系统已成功启动：
+如果您从 UART 看到以下日志，则表示系统已成功启动：
 
 ```
 [  OK  ] Started Kernel Logging Service.

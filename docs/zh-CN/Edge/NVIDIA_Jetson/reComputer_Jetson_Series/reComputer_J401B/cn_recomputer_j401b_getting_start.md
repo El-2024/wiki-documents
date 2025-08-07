@@ -6,26 +6,23 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/recomputer-j401b_1.webp
 slug: /cn/recomputer_j401b_getting_start
 last_update:
-  date: 05/15/2025
+  date: 2025/4/27
   author: Youjiang
 ---
 
 # reComputer J401B 入门指南
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 <div align="center">
   <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/recomputer-j401b_1.jpg"/>
 </div>
+
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
   <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J401B-optional-accessories.html"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong></a>
 </div>
 
 ## 简介
-reComputer J401B 系列是 reComputer Classic 系列的迭代产品。reComputer J4011B 搭载 NVIDIA Jetson Orin NX 8GB 模块，是一款功能强大的紧凑型边缘 AI 设备，提供丰富的接口：2 个 USB 3.2、HDMI、以太网、用于 Wi-Fi 模块的 M.2 Key E、用于 SSD 的 M.2 Key M、用于 LTE 模块的 mini-PCIe、CAN、40 针 GPIO 等。
+reComputer J401B 系列是 reComputer Classic 系列的迭代产品。reComputer J4011B 搭载 NVIDIA Jetson Orin NX 8GB 模块，是一款功能强大的紧凑型边缘 AI 设备，提供丰富的接口：2 个 USB 3.2、HDMI、以太网、M.2 Key E（用于 Wi-Fi 模块）、M.2 Key M（用于 SSD）、mini-PCIe（用于 LTE 模块）、CAN、40 针扩展接口等。
 
 ## 特性
 
@@ -33,7 +30,7 @@ reComputer J401B 系列是 reComputer Classic 系列的迭代产品。reComputer
 
 - **为开发和生产而设计：** 配备丰富的 I/O 接口：2 个 USB3.2、HDMI、以太网、M.2 Key M、M.2 Key E、mini-PCIe、40 针 GPIO 等。支持多种有线和无线通信，包括 Wi-Fi 和 LTE。
 
-- **快速上市：** 预装 JetPack 5.1.3，Linux OS BSP 准备就绪。
+- **快速上市：** 预装 JetPack 5.1.3，支持 Linux OS BSP。
 
 - **认证包括：** ROHS、CE、FCC、KC、UKCA、REACH。
 
@@ -97,7 +94,7 @@ reComputer J401B 系列是 reComputer Classic 系列的迭代产品。reComputer
       <td>16GB 128 位 LPDDR5 102.4GB/s</td>
     </tr>
     <tr>
-      <td>深度学习加速器</td>
+      <td>DL 加速器</td>
       <td colSpan='2' align='center'>/</td>
       <td>1x NVDLA v2</td>
       <td>2x NVDLA v2</td>
@@ -191,22 +188,22 @@ reComputer J401B 系列是 reComputer Classic 系列的迭代产品。reComputer
 
 ## 刷写 JetPack
 
-在这里，我们将向您展示如何将 [Jetpack](https://developer.nvidia.com/embedded/jetpack) 刷写到连接到 reComputer J4012B/ J4011B/ J3010B 和 J3011B 的 NVMe SSD 上。这些设备均内置 J401B 载板，刷写步骤对于所有设备都是相同的。
+在这里，我们将向您展示如何将 [Jetpack](https://developer.nvidia.com/embedded/jetpack) 刷写到连接到 reComputer J4012B/J4011B/J3010B 和 J3011B 的 NVMe SSD 上。这些设备均内置 J401B 承载板，刷写过程对所有设备都是相同的。
 
 :::danger
-reComputer J401B 系列随附的 NVMe SSD 上预装了 JetPack 5.1.3，因此您无需重新刷写。然而，如果您希望重新刷写 JetPack，可以按照本指南进行操作。
+reComputer J401B 系列随附的 NVMe SSD 上预装了 JetPack 5.1.3，因此您无需重新刷写。然而，如果您希望重新刷写 JetPack，可以按照本指南操作。
 :::
 
 ### 支持的模块
-- [NVIDIA® Jetson Orin™ Nano 模块 4GB](https://www.seeedstudio.com/NVIDIA-JETSON-ORIN-NANO-4GB-Module-p-5553.html) 
-- [NVIDIA® Jetson Orin™ Nano 模块 8GB](https://www.seeedstudio.com/NVIDIA-JETSON-ORIN-NANO-8GB-Module-p-5551.html?___store=retailer) 
-- [NVIDIA® Jetson Orin™ NX 模块 8GB](https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-8GB-p-5522.html) 
-- [NVIDIA® Jetson Orin™ NX 模块 16GB](https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-16GB-p-5523.html) 
+- [NVIDIA® Jetson Orin™ Nano Module 4GB](https://www.seeedstudio.com/NVIDIA-JETSON-ORIN-NANO-4GB-Module-p-5553.html) 
+- [NVIDIA® Jetson Orin™ Nano Module 8GB](https://www.seeedstudio.com/NVIDIA-JETSON-ORIN-NANO-8GB-Module-p-5551.html?___store=retailer) 
+- [NVIDIA® Jetson Orin™ NX Module 8GB](https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-8GB-p-5522.html) 
+- [NVIDIA® Jetson Orin™ NX Module 16GB](https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-16GB-p-5523.html) 
 
 ### 前置条件
 
 - Ubuntu 主机电脑
-- reComputer J4012B/ J4011B/ J3010B 或 J3011B
+- reComputer J4012B/J4011B/J3010B 或 J3011B
 - USB Type-C 数据传输线
 
 :::info
@@ -216,25 +213,25 @@ reComputer J401B 系列随附的 NVMe SSD 上预装了 JetPack 5.1.3，因此您
 <table style={{textAlign: 'center'}}>
   <tbody>
     <tr>
-        <td  rowspan="2"> JetPack 版本 </td>
+        <td rowspan="2"> JetPack 版本 </td>
         <td class="dbon" colspan="3"> Ubuntu 版本（主机电脑） </td>
     </tr>
     <tr>
-        <td > 18.04 </td>
-        <td > 20.04 </td>
-        <td > 22.04 </td>
+        <td> 18.04 </td>
+        <td> 20.04 </td>
+        <td> 22.04 </td>
     </tr>
     <tr>
-        <td >JetPack 5.x</td>
-        <td > ✅ </td>
-        <td > ✅ </td>
-        <td > </td>
+        <td> JetPack 5.x </td>
+        <td> ✅ </td>
+        <td> ✅ </td>
+        <td> </td>
     </tr>
     <tr>
-        <td >JetPack 6.x</td>
-        <td > </td>
-        <td > ✅ </td>
-        <td > ✅ </td>
+        <td> JetPack 6.x </td>
+        <td> </td>
+        <td> ✅ </td>
+        <td> ✅ </td>
     </tr>
   </tbody>
 </table>
@@ -249,27 +246,27 @@ reComputer J401B 系列随附的 NVMe SSD 上预装了 JetPack 5.1.3，因此您
 
 在进行安装步骤之前，我们需要确保 Jetson 设备处于强制恢复模式。
 
-请参考以下步骤将 Jetson 设备设置为强制恢复模式。
+请按照以下步骤将 Jetson 设备设置为强制恢复模式。
 
 <div align="center"><img width="{800}" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/j401_set_recovery.gif" /></div>
 
 :::note
-动画 GIF 中的载板是 J401，但不用担心——进入强制恢复模式的步骤对于 J401 和 J401B 载板是相同的。
+动画 GIF 中的承载板是 J401，但请放心，进入强制恢复模式的步骤对于 J401 和 J401B 承载板是相同的。
 :::
 
 <details>
 
 <summary> 分步操作 </summary>
 
-**步骤 1.** 使用跳线连接 **FC REC** 引脚和 **GND** 引脚。
+**步骤 1.** 使用跳线将 **FC REC** 引脚和 **GND** 引脚连接。
 
 <table align="center">
 <thead>
   <tr>
     <th> </th>
-    <th>按钮头</th>
+    <th>按钮引脚</th>
     <th>描述</th>
-    <th>按钮头</th>
+    <th>按钮引脚</th>
     <th>描述</th>
   </tr>
 </thead>
@@ -314,11 +311,11 @@ reComputer J401B 系列随附的 NVMe SSD 上预装了 JetPack 5.1.3，因此您
 </tbody>
 </table>
 
-**步骤 2.** 通过连接电源适配器的附带电缆为 reComputer 供电，并使用 USB Type-C 数据传输线将载板连接到 Ubuntu 主机电脑。
+**步骤 2.** 通过连接电源适配器附带的电缆为 reComputer 供电，并使用 USB Type-C 数据传输线将主板与 Ubuntu 主机电脑连接。
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reComputer-J4012/2.png"/></div>
 
-**步骤 3.** 在 Linux 主机电脑上，打开终端窗口并输入命令 `lsusb`。如果返回的内容包含以下输出之一（根据您使用的 Jetson SoM），则载板已进入强制恢复模式。
+**步骤 3.** 在 Linux 主机电脑上，打开终端窗口并输入命令 `lsusb`。如果返回的内容中包含以下输出之一（根据您使用的 Jetson SoM），则说明主板已进入强制恢复模式。
 
 - 对于 Orin NX 16GB: **0955:7323 NVidia Corp**
 - 对于 Orin NX 8GB: **0955:7423 NVidia Corp**
@@ -333,13 +330,13 @@ reComputer J401B 系列随附的 NVMe SSD 上预装了 JetPack 5.1.3，因此您
 
 </details>
 
-### 刷写 JetPack 操作系统
+### 刷写 Jetpack OS
 
 :::note
-在进行刷写之前需要注意，Jetson Orin NX 模块仅支持 JetPack 5.1 及以上版本，而 Jetson Orin Nano 模块仅支持 JetPack 5.1.1 及以上版本。
+在开始刷写之前，需要注意的是 Jetson Orin NX 模块仅支持 JetPack 5.1 及以上版本，而 Jetson Orin Nano 模块仅支持 JetPack 5.1.1 及以上版本。
 :::
 
-首先，在 Ubuntu 主机电脑上安装以下所需依赖项，然后再进行 JetPack 的刷写。
+首先，在 Ubuntu 主机电脑上安装以下必要的依赖项，然后再进行 JetPack 的刷写。
 
 ```sh
 sudo apt install qemu-user-static sshpass abootimg nfs-kernel-server libxml2-utils binutils -y
@@ -353,13 +350,13 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="JP5.1.1" label="JP5.1.1">
 
-在这里我们将使用 NVIDIA L4T 35.3.1 在 reComputer 上安装 JetPack 5.1.1。
+这里我们将使用 NVIDIA L4T 35.3.1 在 reComputer 上安装 Jetpack 5.1.1。
 
-**步骤 1:** 在主机电脑上[下载](https://developer.nvidia.com/embedded/jetson-linux-r3531) NVIDIA 驱动程序。所需的驱动程序如下所示：
+**步骤 1:** 在主机电脑上[下载](https://developer.nvidia.com/embedded/jetson-linux-r3531) NVIDIA 驱动程序。所需的驱动程序如下图所示：
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/Jetson-AGX-Orin-32GB-H01-Kit/2.jpg"/></div>
 
-**步骤 2:** 解压 **Jetson_Linux_R35.3.1_aarch64** 和 **Tegra_Linux_Sample-Root-Filesystem_R35.3.1_aarch64**，导航到包含这些文件的文件夹，应用更改并安装必要的前置条件。
+**步骤 2:** 解压 **Jetson_Linux_R35.3.1_aarch64** 和 **Tegra_Linux_Sample-Root-Filesystem_R35.3.1_aarch64**，进入包含这些文件的文件夹，应用更改并安装必要的前置条件。
 
 ```sh
 tar xf Jetson_Linux_R35.3.1_aarch64
@@ -369,13 +366,13 @@ sudo ./apply_binaries.sh
 sudo ./tools/l4t_flash_prerequisites.sh
 ```
 
-**步骤 3（可选）:** 配置您的用户名、密码和主机名，以便设备完成启动后无需进入 Ubuntu 安装向导。
+**步骤 3（可选）:** 配置您的用户名、密码和主机名，以便设备启动完成后无需进入 Ubuntu 安装向导。
 
 ```sh
 sudo tools/l4t_create_default_user.sh -u {USERNAME} -p {PASSWORD} -a -n {HOSTNAME} --accept-license
 ```
 
-例如（用户名："nvidia"，密码："nvidia"，设备名称："nvidia-desktop"）：
+例如（用户名："nvidia"，密码："nvidia"，设备名："nvidia-desktop"）：
 
 ```sh
 sudo tools/l4t_create_default_user.sh -u nvidia -p nvidia -a -n nvidia-desktop --accept-license
@@ -396,7 +393,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 \
 现在，您可以将鼠标、键盘和显示器连接到 Jetson 设备。设备已准备好使用！
 
 :::tip
-如果您的 Jetson 设备打开桌面需要较长时间，请重新连接电源。
+如果您的 Jetson 设备打开桌面需要很长时间，请重新连接电源。
 :::
 
 **步骤 5（可选）：** 安装 Nvidia Jetpack SDK
@@ -408,12 +405,13 @@ sudo apt update
 sudo apt install nvidia-jetpack
 ```
 
+
 </TabItem>
 <TabItem value="JP5.1.2" label="JP5.1.2">
 
 这里我们将使用 NVIDIA L4T 35.4.1 在 reComputer 上安装 Jetpack 5.1.2。
 
-**步骤 1：** [下载](https://developer.nvidia.com/embedded/jetson-linux-r3541) NVIDIA 驱动到主机 PC。所需的驱动如下所示：
+**步骤 1：** 在主机 PC 上[下载](https://developer.nvidia.com/embedded/jetson-linux-r3541) NVIDIA 驱动程序。所需的驱动程序如下所示：
 
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/Jetson-AGX-Orin-32GB-H01-Kit/2.jpg"/></div>
 
@@ -427,7 +425,7 @@ sudo ./apply_binaries.sh
 sudo ./tools/l4t_flash_prerequisites.sh
 ```
 
-现在我们需要应用 NVIDIA 提供的补丁，该补丁是 JP5.1.2 所需的，详细说明见 [这里](https://docs.nvidia.com/jetson/archives/r35.4.1/ReleaseNotes/Jetson_Linux_Release_Notes_r35.4.1.pdf)，位于官方 NVIDIA JetPack 发布说明的第 4.2.3 节。
+现在我们需要应用 NVIDIA 提供的补丁，该补丁是 JP5.1.2 所需的，具体说明请参考 [这里](https://docs.nvidia.com/jetson/archives/r35.4.1/ReleaseNotes/Jetson_Linux_Release_Notes_r35.4.1.pdf)，位于官方 NVIDIA JetPack 发布说明的第 4.2.3 节。
 
 **步骤 3：** 导航到以下目录：
 
@@ -445,14 +443,14 @@ tfc {
     };
 ```
 
-**步骤 5（可选）：** 导航到 **"Linux_for_Tegra"** 目录，并输入以下命令以配置您的用户名、密码和主机名，这样设备启动后无需进入 Ubuntu 安装向导：
+**步骤 5（可选）：** 导航到 **"Linux_for_Tegra"** 目录，并输入以下命令配置您的用户名、密码和主机名，这样在设备启动完成后无需进入 Ubuntu 安装向导：
 
 ```sh
 cd Linux_for_Tegra
 sudo tools/l4t_create_default_user.sh -u {USERNAME} -p {PASSWORD} -a -n {HOSTNAME} --accept-license
 ```
 
-例如（用户名："nvidia"，密码："nvidia"，设备名称："nvidia-desktop"）：
+例如（用户名："nvidia"，密码："nvidia"，设备名："nvidia-desktop"）：
 
 ```sh
 sudo tools/l4t_create_default_user.sh -u nvidia -p nvidia -a -n nvidia-desktop --accept-license
@@ -474,7 +472,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1   -c t
 现在，您可以将鼠标、键盘和显示器连接到 Jetson 设备。设备已准备好使用！
 
 :::tip
-如果您的 Jetson 设备打开桌面需要较长时间，请重新连接电源。
+如果您的 Jetson 设备打开桌面需要很长时间，请重新连接电源。
 :::
 
 **步骤 7（可选）：** 安装 Nvidia Jetpack SDK
@@ -492,7 +490,7 @@ sudo apt install nvidia-jetpack
 
 这里我们将在 reComputer 上安装 Jetpack 5.1.3。
 
-**步骤 1：** 下载与您使用的 Jetson 模块对应的系统镜像到您的 Ubuntu PC：
+**步骤 1：** 根据您使用的 Jetson 模块，将对应的系统镜像下载到您的 Ubuntu PC：
 
 <div class="table-center">
 <table style={{textAlign: 'center'}}>
@@ -537,18 +535,19 @@ sudo apt install nvidia-jetpack
 </div>
 
 :::info
-为了验证下载的固件的完整性，您可以比较 SHA256 哈希值。
+为了验证下载固件的完整性，您可以比较 SHA256 哈希值。
 
-在 Ubuntu 主机上打开终端并运行命令 `sha256sum <File>` 来获取下载文件的 SHA256 哈希值。如果结果哈希值与 Wiki 中提供的 SHA256 哈希值匹配，则说明您下载的固件是完整且未损坏的。
+
+在 Ubuntu 主机上，打开终端并运行命令 `sha256sum <File>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 Wiki 中提供的 SHA256 哈希值匹配，则表明您下载的固件是完整且未损坏的。
 :::
 
-**步骤 2:** 解压下载的镜像文件：
+**步骤 2：** 解压下载的镜像文件：
 ```bash
 sudo tar xpf mfi_xxxx.tar.gz
 # 例如：sudo tar xpf mfi_recomputer-orin-nano-8g-j401-6.0-36.3.0-2024-06-07.tar.gz
 ```
 
-**步骤 3:** 进入解压后的目录，并执行以下命令将 Jetpack 系统刷写到 NVMe SSD：
+**步骤 3：** 进入解压后的目录，并执行以下命令将 Jetpack 系统刷写到 NVMe SSD 上：
 
 ```bash
 cd mfi_xxxx
@@ -564,7 +563,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 刷写命令可能需要运行 2-10 分钟。
 :::
 
-**步骤 4:** 使用板上的 HDMI 接口将 J401 连接到显示器，并完成初始配置设置。
+**步骤 4：** 使用板载 HDMI 接口将 J401 连接到显示器，并完成初始配置设置。
 
 :::info
 请根据您的需求完成 **系统配置**。
@@ -574,9 +573,9 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 
 <TabItem value="JP6.0" label="JP6.0">
 
-这里我们将使用 NVIDIA L4T 36.3 在 reComputer 上安装 Jetpack 6.0。
+在这里，我们将使用 NVIDIA L4T 36.3 在 reComputer 上安装 Jetpack 6.0。
 
-**步骤 1:** 根据您使用的 Jetson 模块，将系统镜像下载到您的 Ubuntu PC：
+**步骤 1：** 根据您使用的 Jetson 模块，将对应的系统镜像下载到您的 Ubuntu 电脑：
 
 <div class="table-center">
 <table style={{textAlign: 'center'}}>
@@ -634,18 +633,18 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 </div>
 
 :::info
-为了验证下载的固件完整性，您可以比较 SHA256 哈希值。
+为了验证下载固件的完整性，您可以比较 SHA256 哈希值。
 
-在 Ubuntu 主机上打开终端，运行命令 `sha256sum <File>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 Wiki 中提供的 SHA256 哈希值匹配，则说明您下载的固件是完整且未损坏的。
+在 Ubuntu 主机上，打开终端并运行命令 `sha256sum <File>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 Wiki 中提供的 SHA256 哈希值匹配，则表明您下载的固件是完整且未损坏的。
 :::
 
-**步骤 2:** 解压下载的镜像文件：
+**步骤 2：** 解压下载的镜像文件：
 ```bash
 sudo tar xpf mfi_xxxx.tar.gz
 # 例如：sudo tar xpf mfi_recomputer-orin-nano-8g-j401-6.0-36.3.0-2024-06-07.tar.gz
 ```
 
-**步骤 3:** 进入解压后的目录，并执行以下命令将 Jetpack 系统刷写到 NVMe SSD：
+**步骤 3：** 进入解压后的目录，并执行以下命令将 Jetpack 系统刷写到 NVMe SSD 上：
 
 ```bash
 cd mfi_xxxx
@@ -661,7 +660,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 刷写命令可能需要运行 2-10 分钟。
 :::
 
-**步骤 4:** 使用板上的 HDMI 接口将 J401 连接到显示器，并完成初始配置设置：
+**步骤 4：** 使用板载 HDMI 接口将 J401 连接到显示器，并完成初始配置设置：
 
 <div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/jetpack6_configuration.png"/></div>
 
@@ -669,7 +668,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 请根据您的需求完成 **系统配置**。
 :::
 
-**步骤 5:** 启动系统后，您需要执行以下命令重新激活无线网卡驱动：
+**步骤 5：** 系统启动后，您需要执行以下命令以重新激活无线网卡驱动：
 ```bash
 sudo rm /lib/modules/5.15.136-tegra/build
 sudo ln -s /usr/src/linux-headers-5.15.136-tegra-ubuntu22.04_aarch64/3rdparty/canonical/linux-jammy/kernel-source/ /lib/modules/5.15.136-tegra/build
@@ -680,9 +679,9 @@ sudo apt install -y iwlwifi-modules
 
 <TabItem value="JP6.1" label="JP6.1">
 
-这里我们将使用 NVIDIA L4T 36.4 在 reComputer 上安装 Jetpack 6.1。
+在这里，我们将使用 NVIDIA L4T 36.4 在 reComputer 上安装 Jetpack 6.1。
 
-**步骤 1:** 根据您使用的 Jetson 模块，将系统镜像下载到您的 Ubuntu PC：
+**步骤 1：** 根据您使用的 Jetson 模块，将系统镜像下载到您的 Ubuntu PC：
 
 <div class="table-center">
 <table style={{textAlign: 'center'}}>
@@ -727,9 +726,9 @@ sudo apt install -y iwlwifi-modules
 </div>
 
 :::info
-要验证下载的固件的完整性，可以比较 SHA256 哈希值。
+为了验证下载的固件的完整性，您可以比较 SHA256 哈希值。
 
-在 Ubuntu 主机上，打开终端并运行命令 `sha256sum <File>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 Wiki 中提供的 SHA256 哈希值匹配，则说明您下载的固件是完整且未损坏的。
+在 Ubuntu 主机上打开终端，运行命令 `sha256sum <文件>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 Wiki 中提供的 SHA256 哈希值匹配，则说明您下载的固件是完整且未损坏的。
 :::
 
 **步骤 2：** 解压下载的镜像文件：
@@ -799,14 +798,14 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 </div>
 
 :::info
-要验证下载的固件的完整性，可以比较 SHA256 哈希值。
+为了验证下载的固件的完整性，您可以比较 SHA256 哈希值。
 
-在 Ubuntu 主机上，打开终端并运行命令 `sha256sum <File>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 Wiki 中提供的 SHA256 哈希值匹配，则说明您下载的固件是完整且未损坏的。
+在 Ubuntu 主机上打开终端，运行命令 `sha256sum <文件>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 Wiki 中提供的 SHA256 哈希值匹配，则说明您下载的固件是完整且未损坏的。
 :::
 
 :::note
-请注意，由于启用 `超级模式` 后功耗和热量增加，[reComputer J4011B](https://www.seeedstudio.com/reComputer-J4011B-p-6407.html) 和 [reComputer J4012B](https://www.seeedstudio.com/reComputer-J4012B-p-6406.html) 无法在最高模式下稳定运行。因此，此更新不包括这两款产品。
-我们目前正在设计新版本的 reComputer，敬请期待！
+请注意，由于启用 `超级模式` 后功耗和热量增加，[reComputer J4011B](https://www.seeedstudio.com/reComputer-J4011B-p-6407.html) 和 [reComputer J4012B](https://www.seeedstudio.com/reComputer-J4012B-p-6406.html) 无法在最高模式下稳定运行。因此，此更新不包括这两个产品。
+我们正在设计新版本的 reComputer，敬请期待！
 :::
 
 **步骤 2：** 解压下载的镜像文件：
@@ -846,7 +845,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 ## 接口使用
 
 :::info
-请参考此 [Wiki 页面](/recomputer_j401b_interfaces_usage) 了解更多关于接口使用的信息。
+请参考此 [wiki 页面](/recomputer_j401b_interfaces_usage) 了解更多关于接口使用的信息。
 :::
 
 
@@ -857,13 +856,13 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 - [Seeed Jetson 系列目录](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
 - [Seeed Studio 边缘 AI 成功案例](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
 - [Seeed Jetson 系列比较](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
-- [Seeed Jetson 设备一览](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
+- [Seeed Jetson 设备一页概览](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
 - [Jetson 示例](https://github.com/Seeed-Projects/jetson-examples)
-- [reComputer-Jetson-入门指南](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)
+- [reComputer-Jetson-初学者指南](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们提供多种支持渠道，确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
@@ -871,6 +870,6 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord">加入我们的 Discord 社区</a> 
-<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion">参与 GitHub 讨论</a>
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
