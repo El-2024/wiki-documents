@@ -318,7 +318,7 @@ Here, we need to download the system image to our Ubuntu PC corresponding to the
       <td rowSpan={4}>6.0</td>
       <td>Orin Nx 16GB</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZojl6PUN4FFkshyt9a8kFEBUVVrQVO669V-pB_PNJvCuQ?e=YzFd1Z" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <td>C579FF60F6F140E43C592F784EA5417<br />91DD8F7DDA49924F36EFBB63196FC1C35</td>
+      <td>8BA3010268C76CD985C7915C55EAFA2<br />56389D5361C476208343D3BDC70D65C50</td>
     </tr>
     <tr>
       <td>Orin Nx 8GB</td>
