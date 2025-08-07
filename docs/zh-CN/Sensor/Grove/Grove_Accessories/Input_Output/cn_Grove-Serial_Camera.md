@@ -1,35 +1,37 @@
 ---
-title: Grove - 串行相机
-description: Grove - 串行相机
+title: Grove - 串口摄像头
+nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Serial_Camera/
+image: https://wiki.seeedstudio.com/cn/Grove-Serial_Camera/
 slug: /cn/Grove-Serial_Camera
 last_update:
-  date: 03/23/2024
-  author: WuFeifei
+  date: 01/09/2022
+  author: gunengyu
 ---
 
 ![](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/img/Serial_camera.jpg)
 
-串行相机是一款易于微控制器（MCU）使用的JPEG彩色相机模块。它集成了图像处理DSP，可生成不含缩略图信息的320*240或640*480 JPEG图像。捕获的图片将存储在内部缓冲区中，并通过UART端口传输。
+串口摄像头是一款易于 MCU 使用的 JPEG 彩色摄像头模块。它集成了图像处理 DSP，可生成 320*240 或 640*480 的 JPEG 图像（不包含缩略图信息）。拍摄的图片将存储在内部缓冲区中，并通过 UART 端口传输。
 
 [![](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://www.seeedstudio.com/Grove-Serial-Camera-p-945.html)
 
-## 特性
+特点
+--------
 
-- Grove接口
-- 不含缩略图信息的JPEG压缩图像
-- 5V电源供电
+- Grove 接口
+- JPEG 压缩图像（无缩略图信息）
+- 5V 电源供电
 - 小巧紧凑
 - 协议控制
 
-:::提示
-   更多关于Grove模块的信息，请参考[Grove系统](https://wiki.seeedstudio.com/Grove_System/)
+:::tip
+    更多关于 Grove 模块的详细信息，请参考 [Grove 系统](https://wiki.seeedstudio.com/cn/Grove_System/)
 :::
 
-## 规格参数
+规格参数
+--------------
 
 <table border="1" cellspacing="0" width="80%">
 <tr>
@@ -51,10 +53,10 @@ last_update:
 </tr>
 <tr align="center">
 <th scope="row">
-操作电压
+工作电压
 </th>
 <td>
-4,8
+4.8
 </td>
 <td>
 5.0
@@ -85,82 +87,82 @@ V
 115200
 </td>
 <td>
-波特
+波特率
 </td>
 </tr>
 </table>
 
-
 支持的平台
 -------------------
 
-| Arduino                                                      | 树莓派                                                       |                                                              |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Arduino                                                                                             | Raspberry Pi                                                                                             |                                                                                                 |                                                                                                          |                                                                                                    |
+|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo_n.jpg) |
 
-:::警告
-    上述列出的支持平台仅表示该模块的软件或理论兼容性。在大多数情况下，我们只提供针对Arduino平台的软件库或代码示例。由于无法为所有可能的MCU平台提供软件库/演示代码，因此用户必须自行编写软件库。
+:::caution
+    上述提到的支持平台仅表示模块的软件或理论兼容性。我们通常仅为 Arduino 平台提供软件库或代码示例。无法为所有可能的 MCU 平台提供软件库或演示代码，因此用户需要自行编写软件库。
 :::
 
-## 应用创意
+应用场景
+-----------------
 
-- 与[SD卡屏蔽罩](https://www.seeedstudio.com/depot/sd-card-shield-p-492.html?cPath=109)搭配使用的数码相机
+- 使用 [SD 卡扩展板](https://www.seeedstudio.com/depot/sd-card-shield-p-492.html?cPath=109) 的数码相机
 - 视频监控系统
 
-## 使用方法
+使用方法
+-----
 
-### 在电脑上使用摄像头
+### 在 PC 上使用摄像头
 
-**步骤1**：下载专用的串口调试工具[VC0703COMTOOL.rar](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/res/VC0703COMTOOL.rar)并安装。
+**步骤 1**：下载专用串口调试工具 [VC0703COMTOOL.rar](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/res/VC0703COMTOOL.rar) 并安装。
 
-**步骤2**：使用UartSBee串口转换器工具，通过USB将串行摄像头连接到电脑。
+**步骤 2**：使用串口转换工具 UartSBee 将串口摄像头连接到 PC。
 
-| 串行摄像头 | Uart\_SB v3.1 |
-| ---------- | ------------- |
-| GND (黑色) | GND           |
-| VCC (红色) | VCC           |
-| RX (白色)  | TX            |
-| TX (黄色)  | RX            |
+| 串口摄像头 | Uart\_SB v3.1 |
+|---------------|---------------|
+| GND (黑色)   | GND           |
+| VCC (红色)     | VCC           |
+| RX (白色)    | TX            |
+| TX (黄色)   | RX            |
 
-**步骤3：**将Uart_SB v3.1连接到电脑并打开vc0703CommTool软件。选择您与摄像头连接的正确COM端口号，默认波特率为115200，然后打开端口。
+**步骤 3**：将 Uart\_SB v3.1 连接到电脑并打开 vc0703CommTool 软件。选择与摄像头连接的正确 COM 端口号，默认波特率为 115200，然后打开端口。
 
-**步骤4：**点击“获取版本”按钮，这将重置摄像头。
+**步骤 4**：点击“Get Version”按钮以重置摄像头。
 
-**步骤5：**点击“Fbuf”按钮准备拍照。
+**步骤 5**：点击“Fbuf”按钮准备拍摄照片。
 
-1. 点击“停止CFbuf”来拍照。
+1. 点击“stop CFbuf”拍摄照片。
 
-2. 点击“选择文件”来选择存储图片的文件名。
+2. 点击“Sel File”选择存储照片的文件名。
 
-3. 点击“读取”从缓冲区读取数据并存储到所选文件中，如下所示：
+3. 点击“Read”从缓冲区读取数据并存储到所选文件中，如下图所示：
 
     ![](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/img/Serial_Camera_Picture.jpg)
 
-4. 点击“恢复”以恢复帧更新，这样您就可以继续拍摄另一张照片。
+4. 点击“Resume”恢复帧更新，以便继续拍摄下一张照片。
 
-### 使用Arduino和SD卡与摄像头
+### 使用 Arduino 和 SD 卡操作摄像头
 
-**步骤1**：将Grove - Serial Camera连接到Arduino板，所需的硬件部件包括Seeeduino V3.0、SD Card Shield、SanDisk microSD™ Card 2GB、Grove - Button。
+**步骤 1**：将 Grove - 串口摄像头连接到 Arduino 板，硬件包括 Seeeduino V3.0、SD 卡扩展板、SanDisk microSD™ 卡 2GB、Grove - 按钮。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/img/Serial_Camera.jpg) -->
 
-**步骤2**：将串行接收缓冲区大小（默认64字节）更改为128字节。打开hardware/arduino/cores目录，并编辑名为wiring_serial.c或HardwareSerial.cpp的文件。在文件顶部附近有一个#define SERIAL_BUFFER_SIZE 64，这表示缓冲区使用了64字节。您需要将此值更改为128。更多详细信息，请参考[Arduino Hacks](http://learn.adafruit.com/arduino-tips-tricks-and-techniques/arduino-hacks)。
+**步骤 2**：将串口接收缓冲区（默认 64 字节）更改为 128 字节。打开 hardware/arduino/cores 目录，编辑名为 wiring_serial.c 或 HardwareSerial.cpp 的文件，顶部有一个 #define SERIAL_BUFFER_SIZE 64，表示缓冲区使用了 64 字节。需要将其更改为 128。更多详情，请参考 [Arduino Hacks](http://learn.adafruit.com/arduino-tips-tricks-and-techniques/arduino-hacks)。
 
-**步骤3**：下载[Grove - Serial Camera库](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/res/SerialCameral_DemoCode.zip)，将其上传到Seeeduino。如果无法编译，请确认您的Arduino IDE文件夹中是否包含[SD库](https://arduino.cc/en/Reference/SD)。
+**步骤 3**：下载 [Grove - 串口摄像头库](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/res/SerialCameral_DemoCode.zip)，上传到 Seeeduino。如果无法编译，请确认 [SD 库](https://arduino.cc/en/Reference/SD) 是否在您的 Arduino IDE 文件夹中。
 
-**步骤4**：打开串行监视器，在SD卡和摄像头初始化后，按下按钮拍照。
+**步骤 4**：打开串口监视器，按下按钮拍摄照片（在 SD 卡和摄像头初始化后）。
 
-## 资源
+资源
+---------
 
 - [VC0703 调试工具](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/res/VC0703COMTOOL.rar)
-- [串行摄像头手册.pdf](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/res/Manual_for_serial_camera.pdf)
-- [Grove - Serial Camera 库](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/res/SerialCameral_DemoCode.zip)
+- [串口摄像头使用手册.pdf](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/res/Manual_for_serial_camera.pdf)
+- [Grove - 串口摄像头库](https://files.seeedstudio.com/wiki/Grove-Serial_Camera/res/SerialCameral_DemoCode.zip)
 
-<!-- This Markdown file was created from https://www.seeedstudio.com/wiki/Grove_-_Serial_Camera -->
+## 技术支持与产品讨论
 
-## 技术支持和产品讨论
-
-感谢您选择我们的产品！我们为您提供多种支持，以确保您使用我们的产品时体验尽可能顺畅。我们提供多种沟通渠道，以满足不同偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

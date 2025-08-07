@@ -4,64 +4,66 @@ title: 如何编写 ArduPy 库
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /cn/ArduPy-Libraries
 last_update:
-  date: 3/04/2024
-  author: 金菊
+  date: 11/20/2022
+  author: Matthew
 ---
 
 # 如何编写 ArduPy 库
 
 ![](https://files.seeedstudio.com/ardupy/ardupy_logo.png)
 
-在这个wiki中，我们将介绍如何从头开始编写一个ArduPy库，并使用一个示例完整地介绍工作流程。通过阅读本文，您将了解如何编写一个ArduPy库并将其应用到您的ArduPy项目中！您可以将您喜欢的Arduino库转换为MicroPython格式，并在ArduPy下使用它！
+在这个教程中，我们将介绍如何从零开始编写一个 ArduPy 库，并使用一个示例来完整演示整个工作流程。通过学习本教程，您将了解如何编写 ArduPy 库并将其实现到您的 ArduPy 项目中！您可以将您喜欢的 Arduino 库转换为 MicroPython 形式，并在 ArduPy 下使用它！
 
-这需要一些软件编程知识，但是按照一些关键点进行操作应该很简单。
+这需要一些软件编程知识，但通过一些关键要点应该很容易理解。
 
-## 需要的硬件
+## 所需硬件
   
 - [**Wio Terminal**](https://www.seeedstudio.com/Wio-Terminal-p-4509.html)
 
-## 入门
+## 开始使用
 
-让我们通过一个示例来帮助您更好地理解
+让我们通过一个示例来帮助您更好地理解！
 
 ### 1. Arduino 库
 
-首先，要编写一个ArduPy库，您需要找到已经以 **Arduino 库** 形式编写的库。这应该很容易，因为我们的大多数模块都支持Arduino，并且在我们的[github](https://github.com/Seeed-Studio)上有一个Arduino库。只需在github上搜索模块并找到存储库即可。
+首先，要编写 ArduPy 库，您需要找到已经以 **Arduino 库** 形式编写的库。这应该很容易，因为我们的大多数模块都支持 Arduino，并且在我们的 [github](https://github.com/Seeed-Studio) 上都有 Arduino 库。只需在 github 上搜索模块并找到相应的仓库。
 
-在本wiki中，我将以 [**Grove - Temp&Humi&Barometer Sensor (BME280)**](https://www.seeedstudio.com/Grove-BME280-Environmental-Sensor-Temperature-Humidity-Barometer.html) 为例，并提供 [**Grove-BME280 Arduino 库**](https://github.com/Seeed-Studio/Grove_BME280) 。
+在这个教程中，我将以 [**Grove - 温湿度气压传感器 (BME280)**](https://www.seeedstudio.com/Grove-BME280-Environmental-Sensor-Temperature-Humidity-Barometer.html) 为例，这里是 [**Grove-BME280 Arduino 库**](https://github.com/Seeed-Studio/Grove_BME280)。
 
-!!!注
-        首先要做的是最好检查该库在Arduino上是否工作，以免后面出现问题。只需上传其中一个示例以查看是否有任何错误。
+!!!Note
+        首先要做的是最好检查库在 Arduino 上是否正常工作，这样以后就不会出现程序问题。只需上传其中一个示例，看看是否有任何错误。
 
 ### 2. ArduPy 库结构
 
-让我们首先介绍ArduPy库的结构，以便了解所需的内容!
+让我们首先了解 ArduPy 库结构，这样我们就知道需要什么！
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-ArduPy-Library/structure.png" /></div>
 
 
-这是 [ Grove-BME280的ArduPy库](https://github.com/Seeed-Studio/seeed-ardupy-bme280) 一个ArduPy库包括以下内容:
+这是 [Grove-BME280 的 ArduPy 库](https://github.com/Seeed-Studio/seeed-ardupy-bme280)，这就是 ArduPy 库的组成：
 
-- **`.gitigore`** - 指定要在git中忽略的意图不跟踪的文件
+- **`.gitigore`** - 指定 git 要忽略的未跟踪文件
 
-- **`.travis.yml`** - 我们的CI测试文件，可以忽略不
+- **`.travis.yml`** - 我们的 CI 测试文件，可以忽略
 
-- **`LICENSE`** - 库的许可证y
+- **`LICENSE`** - 库的许可证
 
-- **`README.md`** - 说明文
+- **`README.md`** - README 文档
 
-- **`library.json`** - ArduPy库的json文件
+- **`library.json`** - 库的 ArduPy json 文件
 
-- **`mod_ardupy_bme280.c`** - 将C代码转换为MicroPython的核心代码
+- **`mod_ardupy_bme280.c`** - 将 c 转换为 micropython 的核心代码
 
-- **`wrapper_ardupy_bme280.cpp`** - 代码的包装器，因此，重要的文件只有 **`library.json`**, **`mod_ardupy_bme280.c`** 和 **`wrapper_ardupy_bme280.cpp`** ，其他文件在编写自己的ArduPy库时不需要。
+- **`wrapper_ardupy_bme280.cpp`** - 代码的包装器
 
-!!!注
-        虽然不是必需的，但最好包含上述所有文件（许可证和README使其更加用户友好）
+因此重要的文件只有 **`library.json`**、**`mod_ardupy_bme280.c`** 和 **`wrapper_ardupy_bme280.cpp`**，如果您为自己编写 ArduPy 库，其他文件不是必需的。
+
+!!!Note
+        虽然不是必需的，但最好也包含上面列出的所有文件（LICENSE 和 README 使其更加用户友好）
 
 ### 3. 编写 `library.json`
 
-我们首先从编写 [`library.json`](https://github.com/Seeed-Studio/seeed-ardupy-bme280/blob/master/library.json) 开始。这是定位依赖库的json文件。对于Grove-BME280，它的内容如下所示 :
+让我们首先编写 [`library.json`](https://github.com/Seeed-Studio/seeed-ardupy-bme280/blob/master/library.json)。这是用于定位依赖库的 json 文件。对于 Grove-BME280，它看起来像这样：
 
 ```json
 {
@@ -78,27 +80,27 @@ last_update:
 }
 ```
 
-其中， `name` 是ArduPy库的名称，`repository`下的 `url` 是库的URL。这个  `url` 用于ArduPy-aip进行搜索。你可以替换为你自己的GitHub仓库。
+其中 `name` 是 ArduPy 库的名称，`repository` 下的 `url` 是库的 url。这个 `url` 被 ArduPy-aip 用于搜索。您可以替换为您自己的 github 仓库。
 
-在 `dependencies`下，这是依赖的库（Arduino库）:
+在 `dependencies` 下，这是依赖库（Arduino 库）：
 
-- `name` 是以后使用的Arduino库的名称，您也可以使用格式 **`Seeed_Arduino_MODULE-NAME`**。
-- `url` 是依赖的Arduino库的URL。
+- `name` 是 Arduino 库的名称，供以后使用，您也可以使用格式 **`Seeed_Arduino_MODULE-NAME`**。
+- `url` 是依赖 Arduino 库的 url。
 
 ### 4. 编写 `wrapper_ardupy_MODULE.cpp`
 
-这是将 `c` 代码转换为 `MicroPython` 代码的包装器。让我们以 [`wrapper_ardupy_bme280.cpp`](https://github.com/Seeed-Studio/seeed-ardupy-bme280/blob/master/wrapper_ardupy_bme280.cpp) 为例进行说明。
+这是将 `c` 转换为 `MicroPython` 代码的包装器。让我们以 [`wrapper_ardupy_bme280.cpp`](https://github.com/Seeed-Studio/seeed-ardupy-bme280/blob/master/wrapper_ardupy_bme280.cpp) 为例。
 
-首先，需要包含依赖库，类似于以下内容:
+首先，需要包含依赖库，像这样：
 
 ```cpp
 #include "Seeed_Arduino_BME280/Seeed_BME280.h"
 ```
 
-!!!注意
-    请确保名称匹配。
+!!!Note
+    确保名称匹配。
 
-包含共享绑定:
+包含共享绑定：
 
 ```cpp
 extern "C"{
@@ -110,16 +112,16 @@ extern "C"{
 }
 ```
 
-使用以下格式初始化模块:
+按照以下格式初始化模块：
 
 ```cpp
 #define bme280 (*(BME280*)self->module)
 void * operator new(size_t, void *);
 ```
 
-其中， `bme280` 和 `BME280` 将替换为您的模块名称。
+其中 `bme280` 和 `BME280` 将被替换为您的模块名称。
 
-接下来有一点复杂。按照相同的格式，从[Grove-BME280](https://github.com/Seeed-Studio/Grove_BME280/blob/master/Seeed_BME280.h)映射函数 。
+接下来会变得有点复杂。按照相同的格式从 [Grove-BME280](https://github.com/Seeed-Studio/Grove_BME280/blob/master/Seeed_BME280.h) 映射函数。
 
 ```cpp
 extern "C" {
@@ -142,16 +144,16 @@ extern "C" {
 }
 ```
 
-其中， `common_hal_bme280_construct` 是用于创建对象的初始化函数，格式如下：
+其中 `common_hal_bme280_construct` 是创建对象的初始化函数，它的格式为：
 
 ```cpp
 self->module = new (m_new_obj(BME280)) BME280();
 bme280.init()
 ```
 
-将 `BME280` 替换为您的模块。使用`bme280.init()` 初始化模块，该函数来自 [这里](https://github.com/Seeed-Studio/Grove_BME280/blob/master/Seeed_BME280.h#L47).
+将 `BME280` 替换为您的模块。使用 `bme280.init()` 初始化模块，这来自[这里](https://github.com/Seeed-Studio/Grove_BME280/blob/master/Seeed_BME280.h#L47)。
 
-对于函数, 它只是从Arduino端调用，格式如下所示:
+对于函数，它只是从 Arduino 端调用，看起来像这样：
 
 ```cpp
 float common_hal_bme280_get_temperature(abstract_module_t *self){
@@ -159,23 +161,23 @@ float common_hal_bme280_get_temperature(abstract_module_t *self){
 }
 ```
 
-`getTemperature()` 来自 [这里](https://github.com/Seeed-Studio/Grove_BME280/blob/master/Seeed_BME280.h#L48).
+`getTemperature()` 来自[这里](https://github.com/Seeed-Studio/Grove_BME280/blob/master/Seeed_BME280.h#L48)。
 
-你应该能够看到这里的模式，你只需要从 [Grove-BME280](https://github.com/Seeed-Studio/Grove_BME280/blob/master/Seeed_BME280.h#L45) 映射函数即可。
+您应该能够看到这里的模式，您只需按照上述格式从[Grove-BME280](https://github.com/Seeed-Studio/Grove_BME280/blob/master/Seeed_BME280.h#L45)映射函数即可。
 
-#### 带有参数的函数
+#### 带参数的函数
 
-- 如果您的 **模块具有带有参数的函数**,请阅读以下内容。
+- 如果您的**模块有带参数的函数**，请阅读这里。
 
-让我们以 [Seeed_Arduino_LIS3DHTR](https://github.com/Seeed-Studio/Seeed_Arduino_LIS3DHTR/blob/master/src/LIS3DHTR.h#L208)为例，其中有一个带有一个参数的函数。这个函数将转换为 [seeed-ardupy-lis3dhtr](https://github.com/Seeed-Studio/seeed-ardupy-lis3dhtr/blob/master/wrapper_ardupy_lis3dhtr.cpp#L83)中的这样一个函数。
+让我们以[Seeed_Arduino_LIS3DHTR](https://github.com/Seeed-Studio/Seeed_Arduino_LIS3DHTR/blob/master/src/LIS3DHTR.h#L208)中的一个例子为例，它接受一个参数。这个函数将在[seeed-ardupy-lis3dhtr](https://github.com/Seeed-Studio/seeed-ardupy-lis3dhtr/blob/master/wrapper_ardupy_lis3dhtr.cpp#L83)中转换为这样。
 
-从这个:
+从这个：
 
 ```cpp
 void setHighSolution(bool enable);
 ```
 
-转换为:
+转换为：
 
 ```cpp
 void common_hal_lis3dhtr_setHighSolution(abstract_module_t *self, bool enable)
@@ -184,13 +186,13 @@ void common_hal_lis3dhtr_setHighSolution(abstract_module_t *self, bool enable)
 }
 ```
 
-你应该能够看到这里的模式。这里提供了一个带有两个参数的[示例](https://github.com/Seeed-Studio/seeed-ardupy-my9221/blob/master/wrapper_my9221.cpp#L58) 。
+您应该能够看到这里的模式。这里提供了一个[接受2个参数的例子](https://github.com/Seeed-Studio/seeed-ardupy-my9221/blob/master/wrapper_my9221.cpp#L58)。
 
 ### 5. 编写 `mod_ardupy_MODULE.c`
 
-一旦包装器完成，让我们开始核心部分，以[`mod_ardupy_bme280.c`](https://github.com/Seeed-Studio/seeed-ardupy-bme280/blob/master/mod_ardupy_bme280.c) 为例。
+一旦包装器完成，让我们开始核心工作，将以[`mod_ardupy_bme280.c`](https://github.com/Seeed-Studio/seeed-ardupy-bme280/blob/master/mod_ardupy_bme280.c)为例。
 
-首先，也要包含共享绑定:
+首先，也包含共享绑定：
 
 ```cpp
 #include "py/mphal.h"
@@ -201,7 +203,7 @@ void common_hal_lis3dhtr_setHighSolution(abstract_module_t *self, bool enable)
 #include "shared-bindings/util.h"
 ```
 
-声明来自 [wrapper](https://github.com/Seeed-Studio/seeed-ardupy-bme280/blob/master/wrapper_ardupy_bme280.cpp)中先前定义的函数:
+声明之前从[包装器](https://github.com/Seeed-Studio/seeed-ardupy-bme280/blob/master/wrapper_ardupy_bme280.cpp)定义的函数：
 
 ```cpp
 void common_hal_bme280_construct(abstract_module_t *self);
@@ -212,7 +214,7 @@ uint32_t common_hal_bme280_get_humidity(abstract_module_t *self);
 extern const mp_obj_type_t grove_bme280_type;
 ```
 
-初始化模块:
+初始化模块：
 
 ```cpp
 m_generic_make(bme280) {
@@ -223,9 +225,9 @@ m_generic_make(bme280) {
 }
 ```
 
-在这里，您可以按照相同的格式进行操作，并替换为您的函数和模块名称。
+您可以按照相同的格式并替换为您的函数和模块名称。
 
-接下来是对象属性，您应该按照以下格式编写:
+接下来是对象属性，您也应该按照以下格式编写：
 
 ```cpp
 void bme280_obj_attr(mp_obj_t self_in, qstr attr, mp_obj_t *dest){
@@ -234,17 +236,17 @@ void bme280_obj_attr(mp_obj_t self_in, qstr attr, mp_obj_t *dest){
     float number;
     if (dest[0] == MP_OBJ_NULL) {
         if (attr == MP_QSTR_temperature) {
-            number = common_hal_bme280_get_temperature(self); // Call previously defined unction
-            dest[0] = mp_obj_new_float(number); // This the MicroPython float type, should match with the data type
+            number = common_hal_bme280_get_temperature(self); // 调用之前定义的函数
+            dest[0] = mp_obj_new_float(number); // 这是MicroPython浮点类型，应该与数据类型匹配
             return;
         }
         else if (attr == MP_QSTR_pressure) {
-            value = common_hal_bme280_get_pressure(self); // Call previously defined unction
-            dest[0] = mp_obj_new_int(value); // This the MicroPython int type, should match with the data type
+            value = common_hal_bme280_get_pressure(self); // 调用之前定义的函数
+            dest[0] = mp_obj_new_int(value); // 这是MicroPython整数类型，应该与数据类型匹配
             return;
         }
         else if (attr == MP_QSTR_humidity) {
-            value = common_hal_bme280_get_humidity(self); // Call previously defined unction
+            value = common_hal_bme280_get_humidity(self); // 调用之前定义的函数
             dest[0] = mp_obj_new_int(value);
             return;
         }
@@ -253,23 +255,23 @@ void bme280_obj_attr(mp_obj_t self_in, qstr attr, mp_obj_t *dest){
 }
 ```
 
-您可以看到它只需按照以下方式返回函数:
+您可以看到它只是通过以下方式返回函数：
 
 ```cpp
 if (attr == MP_QSTR_temperature) {
-    number = common_hal_bme280_get_temperature(self); // Call previously defined unction
-    dest[0] = mp_obj_new_float(number); // This the MicroPython float type, should match with the data type
+    number = common_hal_bme280_get_temperature(self); // 调用之前定义的函数
+    dest[0] = mp_obj_new_float(number); // 这是MicroPython浮点类型，应该与数据类型匹配
     return;
 }
 ```
 
-这基本上转换为使用中的 `.temperature` 方法 (例如 `MP_QSTR_[Function-name]`)。您应该也能够看到这里的模式。
+这基本上转换为使用中的`.temperature`方法（即`MP_QSTR_[Function-name]`）。您也应该能够看到这里的模式。
 
-!!!注
-        `dest[0]` 的数据类型应该匹配。 有 `mp_obj_new_float`, `mp_obj_new_int`, `mp_obj_new_bool`, `mp_obj_new_str` 等。
+!!!Note
+        `dest[0]`数据类型应该在这里匹配。有`mp_obj_new_float`、`mp_obj_new_int`、`mp_obj_new_bool`、`mp_obj_new_str`等。
 
 
-定义查找表:
+定义查找表：
 
 ```cpp
 const mp_rom_map_elem_t bme280_locals_dict_table[] = {
@@ -282,7 +284,7 @@ const mp_rom_map_elem_t bme280_locals_dict_table[] = {
 MP_DEFINE_CONST_DICT(bme280_locals_dict, bme280_locals_dict_table);
 ```
 
-定义初始模块类型:
+定义初始模块类型：
 
 ```cpp
 const mp_obj_type_t grove_bme280_type = {
@@ -294,15 +296,15 @@ const mp_obj_type_t grove_bme280_type = {
 };
 ```
 
-这可能一开始看起来有些棘手，但实际上只涉及替换模块名称和很少的编。
+这起初可能看起来很复杂，但实际上只是替换模块名称和很少的编程。
 
-#### 接受参数的函数
+#### 带参数的函数
 
-- 如果您的， **模块有接受参数的函数**, 请阅读以下内容。
+- 如果您的**模块有带参数的函数**，请阅读这里。
 
-我们将继续使用之前的示例来进行演示。下面是在`mod_ardupy_[MODULE].c`中实现该函数的代码。按照以下格式映射函数:
+让我们也以之前相同的例子来演示。这是在`mod_ardupy_[MODULE].c`中实现函数的代码。按照以下相同格式映射函数：
 
-- 对于数 [接受1个参数](https://github.com/Seeed-Studio/seeed-ardupy-lis3dhtr/blob/master/mod_ardupy_lis3dhtr.c#L97)的函数:
+- 对于[接受1个参数](https://github.com/Seeed-Studio/seeed-ardupy-lis3dhtr/blob/master/mod_ardupy_lis3dhtr.c#L97)的函数：
 
 ```cpp
 mp_obj_t lis3dhtr_setHighSolution(size_t n_args, const mp_obj_t *pos_args, mp_map_t *kw_args)
@@ -315,7 +317,7 @@ mp_obj_t lis3dhtr_setHighSolution(size_t n_args, const mp_obj_t *pos_args, mp_ma
 MP_DEFINE_CONST_FUN_OBJ_KW(lis3dhtr_setHighSolution_obj, 1, lis3dhtr_setHighSolution);
 ```
 
-- 对于 [接受2个参数](https://github.com/Seeed-Studio/seeed-ardupy-my9221/blob/master/mod_ardupy_my9221.c#L85) 的函数(**这个示例代码并不是针对lis3dhtr的，只是用来演示的**):
+- 对于[接受2个参数](https://github.com/Seeed-Studio/seeed-ardupy-my9221/blob/master/mod_ardupy_my9221.c#L85)的函数（**这不是lis3dhtr的代码，只是为了演示**）：
 
 ```cpp
 mp_obj_t led_bar_set_brightness(size_t n_args, const mp_obj_t *pos_args, mp_map_t *kw_args){
@@ -329,10 +331,10 @@ mp_obj_t led_bar_set_brightness(size_t n_args, const mp_obj_t *pos_args, mp_map_
 MP_DEFINE_CONST_FUN_OBJ_KW(led_bar_set_brightness_obj, 2, led_bar_set_brightness);
 ```
 
-!!!注意
-    在这里，数据类型应该匹配，例如`mp_obj_is_true`, `mp_obj_get_int`, `mp_obj_get_float`, `mp_obj_get_str` 等。
+!!!Note
+    同样，数据类型应该匹配，有 `mp_obj_is_true`、`mp_obj_get_int`、`mp_obj_get_float`、`mp_obj_get_str` 等等。
 
-记得将函数添加到 [look-up table](https://github.com/Seeed-Studio/seeed-ardupy-lis3dhtr/blob/master/mod_ardupy_lis3dhtr.c#L169)中,格式如下:
+记住要将函数添加到[查找表](https://github.com/Seeed-Studio/seeed-ardupy-lis3dhtr/blob/master/mod_ardupy_lis3dhtr.c#L169)中，如下所示：
 
 ```cpp
 const mp_rom_map_elem_t lis3dhtr_locals_dict_table[] = {
@@ -352,53 +354,53 @@ const mp_rom_map_elem_t lis3dhtr_locals_dict_table[] = {
 
 ### 6. 构建固件
 
-现在，一旦您编写了ArduPy库，您将需要构建它，并在构建过程中调试任何错误！您现在可以将整个项目的代码上传到您的GitHub存储库中，例如: https://github.com/Seeed-Studio/seeed-ardupy-bme280.
+现在一旦你编写了 ArduPy 库，你需要构建它，当然如果在构建过程中有任何错误，还需要调试！你现在可以将整个项目草图上传到你的 github 仓库，例如：https://github.com/Seeed-Studio/seeed-ardupy-bme280。
 
-- 下载并安装 `ardupy-aip` 工具集以构建ArduPy库，按照以下 [**教程**](https://wiki.seeedstudio.com/ArduPy/#install-aip-with-macos) 操作。
+- 下载并安装 `ardupy-aip` 工具集来构建 ArduPy 库，按照这个[**教程**](https://wiki.seeedstudio.com/cn/ArduPy/#install-aip-with-macos)。
 
-安装了 `ardupy-aip` 之后，可以运行以下命令构建ArduPy固件:
+一旦你安装了 `ardupy-aip`，你可以运行以下命令来构建你的 ArduPy 固件：
 
 ```sh
 aip install [Your ArduPy library url]
 # For example: aip install https://github.com/Seeed-Studio/seeed-ardupy-bme280
 ```
 
-使用固件构建ArduPy库:
+使用固件构建 ArduPy 库：
 
 ```sh
 aip build
 ```
 
-如果一切顺利，您将看到以下屏幕，表示ArduPy库没有错误!
+如果一切顺利，你应该看到如下屏幕，这意味着 ArduPy 库中没有错误！
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-ArduPy-Library/build.png" /></div>
 
 
 ## 测试库
 
-一旦构建成功，您可以使用以下命令将固件烧录到设备并测试库的功能:
+一旦你的构建成功，你可以使用以下命令将固件刷写到你的设备并测试库：
 
 ```sh
 aip flash
 ```
 
-**注:** 确保设备在连接到计算机之前已连接。
+**注意：** 确保你的设备事先连接到你的 PC。
 
-烧录固件后，可以使用shell函数进入REPL模式:
+一旦刷写完成，你可以使用 shell 功能进入 repl 模式：
 
 ```cpp
 aip shell -c "repl"
 ```
 
-- 使用以下格式导入编写的模块:
+- 使用以下格式导入编写的模块：
 
 ```py
 from arduino import grove_bme280
 ```
 
-其中`grove_bme280` 将被替换为您的库模块名称。
+其中 `grove_bme280` 将被替换为你的库模块名称。
 
-- 初始化库并调用函数:
+- 初始化库并调用函数如下：
 
 ```py
 bme280 = grove_bme280()
@@ -407,20 +409,20 @@ print ("Humidity: ", bme280.humidity, "%")
 print ("Pressure: ", bme280.pressure, "Pa")
 ```
 
-如果您已经成功进行到这一步，那么您已经成功编写了一个ArduPy库！这使您能够将任何Arduino库转换为ArduPy库。
+如果你已经走到这一步，你已经成功编写了一个 ArduPy 库！这允许你将任何 Arduino 库转换为 ArduPy 库。
 
-!!!注
-        如果您的库在任何时候停止响应或无法返回结果，可能是代码中存在一些错误。请仔细检查。
+!!!Note
+        如果你的库在任何时候卡住或没有得到结果返回，代码中可能有一些错误。请仔细检查。
 
 ## 资源
 
-已经有许多ArduPy库可供使用，您可以轻松安装和构建您的ArduPy固件。您还可以将它们用作编写自己的ArduPy库的模板！
+已经有许多 ArduPy 库可用，您可以轻松安装并使用这些库构建您的 ArduPy 固件。您也可以将这些库作为模板来编写您自己的 ArduPy 库！
 
-- [可用ArduPy库](https://github.com/Seeed-Studio?q=ardupy&type=&language=)
+- [可用的 ArduPy 库](https://github.com/Seeed-Studio?q=ardupy&type=&language=)
 
-## 技术支持 & 产品讨论
+## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们将为您提供各种支持，以确保您与我们的产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

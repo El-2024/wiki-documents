@@ -6,18 +6,14 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reComputer_J30_40_with_Jetson_getting_start
 last_update:
-  date: 05/15/2025
+  date: 2023/6/29
   author: Lakshantha
 ---
 
 # reComputer J30/40 入门指南
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 <div align="center">
-  <iframe width="800" height="480" src="https://www.youtube.com/embed/-KAyUHzRxHc" title="开箱及连接 reComputer J4012 - 由 NVIDIA Jetson Orin NX 提供支持" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="800" height="480" src="https://www.youtube.com/embed/-KAyUHzRxHc" title="Unboxing &amp; Plug in reComputer J4012 - Powered by NVIDIA Jetson Orin NX" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -26,18 +22,18 @@ last_update:
 </a></div>
 
 ## 简介
-reComputer J30/40 搭载 Jetson Orin，是一款功能强大且紧凑的智能边缘设备，可为边缘提供高达 100TOPS 的现代 AI 性能。它结合了 NVIDIA Ampere™ GPU 架构和 64 位操作能力。
+reComputer J30/40 基于 Jetson Orin 构建，是一款强大且紧凑的智能边缘设备，可为边缘提供高达 100TOPS 的现代 AI 性能。它结合了 NVIDIA Ampere™ GPU 架构和 64 位操作能力。
 
-完整系统包括一个 NVIDIA Jetson Orin 生产模块、一个散热器和一个电源适配器。reComputer J30/40 预装了 Jetpack 5.1.1，简化了开发过程，非常适合从事视频分析、目标检测、自然语言处理、医学影像和机器人技术的边缘 AI 解决方案提供商，适用于智慧城市、安全、工业自动化和智能工厂等行业。
+完整系统包括一个 NVIDIA Jetson Orin 生产模块、一个散热器和一个电源适配器。reComputer J30/40 预装了 Jetpack 5.1.1，简化了开发流程，非常适合从事视频分析、目标检测、自然语言处理、医学影像和机器人等领域的边缘 AI 解决方案提供商在智能城市、安全、工业自动化和智能工厂等行业中的部署。
 
 如果您需要不带电源适配器的版本，请查看 [reComputer-Jetson](https://www.seeedstudio.com/reComputer-J4012-w-o-power-adapter-p-5628.html)。
 
 ## 特性
 
-- **卓越的生产级 AI 性能：** 设备端处理，提供高达 100 TOPS 的 AI 性能，低功耗和低延迟
-- **手掌大小的边缘 AI 设备：** 紧凑尺寸为 130mm x 120mm x 58.5mm，包括 NVIDIA Jetson Orin 生产模块、散热器、外壳和电源适配器。支持桌面、壁挂，适合各种场景
-- **丰富的 I/O 扩展能力：** 4 个 USB3.2、HDMI 2.1、2 个 CSI、1 个 RJ45 千兆以太网、M.2 Key E、M.2 Key M、CAN 和 GPIO
-- **加速解决方案上市：** 预装 Jetpack 和 NVIDIA JetPack™ 5.1，内置 128GB NVMe SSD，Linux OS BSP，128GB SSD，WiFi BT 组合模块，2 根天线，支持 Jetson 软件和主流 AI 框架及软件平台
+- **卓越的生产级 AI 性能：** 设备端处理，提供高达 100 TOPS 的 AI 性能，低功耗、低延迟
+- **手掌大小的边缘 AI 设备：** 紧凑尺寸为 130mm x 120mm x 58.5mm，包括 NVIDIA Jetson Orin 生产模块、散热器、外壳和电源适配器。支持桌面安装、壁挂安装，适合任何场景
+- **丰富的 I/O 扩展能力：** 4 个 USB3.2 接口、HDMI 2.1、2 个 CSI 接口、1 个 RJ45 千兆以太网接口、M.2 Key E、M.2 Key M、CAN 和 GPIO
+- **加速解决方案上市：** 预装 Jetpack 和 NVIDIA JetPack™ 5.1，配备 128GB NVMe SSD、Linux OS BSP、128GB SSD、WiFi BT 组合模块、2 根天线，支持 Jetson 软件和主流 AI 框架及软件平台
 - **全面认证：** FCC、CE、RoHS、UKCA
 
 ## 规格参数
@@ -160,8 +156,8 @@ reComputer J30/40 搭载 Jetson Orin，是一款功能强大且紧凑的智能�
       <td colSpan='4' align='center'>1* CAN</td>
     </tr>
     <tr>
-      <td>多功能端口</td>
-      <td colSpan='4' align='center'>1* 40 针扩展头，1* 12 针控制和 UART 头</td>
+      <td>多功能接口</td>
+      <td colSpan='4' align='center'>1* 40 针扩展头，1* 12 针控制和 UART 接口</td>
     </tr>
     <tr>
       <td>RTC</td>
@@ -189,14 +185,14 @@ reComputer J30/40 搭载 Jetson Orin，是一款功能强大且紧凑的智能�
 ## 刷写 JetPack
 
 :::info
-reComputer J30/40 由 J401 承载板驱动。  
+reComputer J30/40 搭载 J401 承载板。  
 请参考此 [wiki 页面](/reComputer_J4012_Flash_Jetpack) 了解更多关于刷写 JetPack 的信息。
 :::
 
 ## 接口使用
 
 :::info
-reComputer J30/40 由 J401 承载板驱动。  
+reComputer J30/40 搭载 J401 承载板。  
 请参考此 [wiki 页面](/J401_carrierboard_Hardware_Interfaces_Usage) 了解更多关于接口使用的信息。
 :::
 
@@ -205,16 +201,16 @@ reComputer J30/40 由 J401 承载板驱动。
 - [reComputer J40x 数据手册](https://files.seeedstudio.com/products/NVIDIA/reComputer-J401x-datasheet.pdf)
 - [reComputer J30/J40 原理图](https://files.seeedstudio.com/wiki/J401/reComputer_J401_SCH_V1.0.pdf)
 - [reComputer J30/J40 3D 文件](https://files.seeedstudio.com/wiki/reComputer-J4012/reComputer-J4012.stp)
-- [Seeed Jetson 系列目录](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
+- [Seeed Jetson 系列产品目录](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
 - [Seeed Studio 边缘 AI 成功案例](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
 - [Seeed Jetson 系列对比](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
 - [Seeed Jetson 设备一览](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
 - [Jetson 示例](https://github.com/Seeed-Projects/jetson-examples)
-- [reComputer-Jetson-入门指南](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)
+- [reComputer-Jetson 入门指南](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners)
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时获得顺畅的体验。我们提供了多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们将为您提供多种支持，确保您在使用我们的产品时获得顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

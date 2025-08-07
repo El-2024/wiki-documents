@@ -1,5 +1,5 @@
 ---
-description: 本文档演示如何将 Tensorflow 模型或 Pytorch 模型编译为 Edge TPU 模型，并运行它。
+description: 本文档展示了如何将 Tensorflow 模型或 Pytorch 模型编译为 Edge TPU 模型，并运行它。
 title: 将模型转换为 Google Coral 的 Edge TPU TFlite 格式
 keywords:
   - Edge TPU
@@ -10,32 +10,27 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/convert_model_to_edge_tpu_tflite_format_for_google_coral
 last_update:
-  date: 05/15/2025
+  date: 07/23/2024
   author: Jiahao
 
 no_comments: false # 用于 Disqus
 ---
 
 # 将模型转换为 Google Coral 的 Edge TPU TFlite 格式
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 简介
 
-[Coral M.2 Accelerator](https://www.seeedstudio.com/Coral-M2-Accelerator-with-Dual-Edge-TPU-p-4681.html) 是一款带有双 Edge TPU 的 M.2 模块，可通过 M.2 E-key 插槽为现有系统和产品提供 Edge TPU 协处理器。[Tensorflow](https://www.tensorflow.org/) 和 [Pytorch](https://pytorch.org/) 是最流行的深度学习框架。因此，为了使用 Edge TPU，我们需要将模型编译为 Edge TPU 格式。
+[Coral M.2 加速器](https://www.seeedstudio.com/Coral-M2-Accelerator-with-Dual-Edge-TPU-p-4681.html) 配备双 Edge TPU，是一个 M.2 模块，可为具有 M.2 E-key 插槽的现有系统和产品提供两个 Edge TPU 协处理器。[Tensorflow](https://www.tensorflow.org/) 和 [Pytorch](https://pytorch.org/) 是最流行的深度学习框架。因此，为了使用 Edge TPU，我们需要将模型编译为 Edge TPU 格式。
 
-本文档将指导您完成模型编译和在 Google Coral TPU 上运行的过程，使您能够利用其高性能机器学习应用的能力。
+本文将指导您完成将模型编译并运行在 Google Coral TPU 上的过程，使您能够利用其高性能机器学习应用的能力。
 
 ## 准备硬件
 
 <div class="table-center">
 	<table align="center">
 	<tr>
-		<th>Raspberry Pi 5 8GB</th>
-		<th>Raspberry Pi M.2 HAT+</th>
-		<th>Coral M.2 Accelerator B+M key</th>
+		<th>树莓派 5 8GB</th>
+		<th>树莓派 M.2 HAT+</th>
+		<th>Coral M.2 加速器 B+M key</th>
 	</tr>
     <tr>
       <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/2/-/2-102110919-raspberry-pi-5-8gb-font.jpg" style={{width:600, height:'auto'}}/></div></td>
@@ -69,14 +64,14 @@ no_comments: false # 用于 Disqus
 ## 转换模型
 
 :::note
-在开始之前，请确保您已按照[安装指南](https://wiki.seeedstudio.com/install_m2_coral_to_rpi5/)将 Google Coral TPU 安装到 Pi 5。
+在开始之前，请确保您已按照[安装指南](https://wiki.seeedstudio.com/cn/install_m2_coral_to_rpi5/)将 Google Coral TPU 安装到 Pi 5。
 :::
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="Method 1" label="针对 Tensorflow 模型">
+<TabItem value="方法 1" label="针对 Tensorflow 模型">
 
 :::note
 所有过程均已在 Python 3.11.9 上测试。
@@ -94,33 +89,33 @@ tflite_convert -h
 
 结果应如下所示：
 ```
-2024-07-23 10:41:03.750087: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2024-07-23 10:41:04.276520: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-07-23 10:41:03.750087: I tensorflow/core/platform/cpu_feature_guard.cc:182] 此 TensorFlow 二进制文件已优化以在性能关键操作中使用可用的 CPU 指令。
+要启用以下指令：AVX2 FMA，请在其他操作中使用适当的编译器标志重新构建 TensorFlow。
+2024-07-23 10:41:04.276520: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT 警告：未找到 TensorRT
 usage: tflite_convert [-h] --output_file OUTPUT_FILE [--saved_model_dir SAVED_MODEL_DIR | --keras_model_file KERAS_MODEL_FILE] [--saved_model_tag_set SAVED_MODEL_TAG_SET]
                       [--saved_model_signature_key SAVED_MODEL_SIGNATURE_KEY] [--enable_v1_converter] [--experimental_new_converter [EXPERIMENTAL_NEW_CONVERTER]]
                       [--experimental_new_quantizer [EXPERIMENTAL_NEW_QUANTIZER]]
 
-Command line tool to run TensorFlow Lite Converter.
+TensorFlow Lite 转换器的命令行工具。
 
-optional arguments:
-  -h, --help            show this help message and exit
+可选参数:
+  -h, --help            显示此帮助信息并退出
   --output_file OUTPUT_FILE
-                        Full filepath of the output file.
+                        输出文件的完整路径。
   --saved_model_dir SAVED_MODEL_DIR
-                        Full path of the directory containing the SavedModel.
+                        包含 SavedModel 的目录的完整路径。
   --keras_model_file KERAS_MODEL_FILE
-                        Full filepath of HDF5 file containing tf.Keras model.
+                        包含 tf.Keras 模型的 HDF5 文件的完整路径。
   --saved_model_tag_set SAVED_MODEL_TAG_SET
-                        Comma-separated set of tags identifying the MetaGraphDef within the SavedModel to analyze. All tags must be present. In order to pass in an empty tag set, pass in "". (default "serve")
+                        用逗号分隔的标签集，用于标识 SavedModel 中的 MetaGraphDef。所有标签必须存在。要传递空标签集，请传递 ""。（默认值 "serve"）
   --saved_model_signature_key SAVED_MODEL_SIGNATURE_KEY
-                        Key identifying the SignatureDef containing inputs and outputs. (default DEFAULT_SERVING_SIGNATURE_DEF_KEY)
+                        标识包含输入和输出的 SignatureDef 的键。（默认值 DEFAULT_SERVING_SIGNATURE_DEF_KEY）
   --enable_v1_converter
-                        Enables the TensorFlow V1 converter in 2.0
+                        在 2.0 中启用 TensorFlow V1 转换器
   --experimental_new_converter [EXPERIMENTAL_NEW_CONVERTER]
-                        Experimental flag, subject to change. Enables MLIR-based conversion instead of TOCO conversion. (default True)
+                        实验性标志，可能会更改。启用基于 MLIR 的转换，而不是 TOCO 转换。（默认值 True）
   --experimental_new_quantizer [EXPERIMENTAL_NEW_QUANTIZER]
-                        Experimental flag, subject to change. Enables MLIR-based quantizer instead of flatbuffer conversion. (default True)
+                        实验性标志，可能会更改。启用基于 MLIR 的量化器，而不是 flatbuffer 转换。（默认值 True）
 
 ```
 ### 将 Tensorflow 模型转换为 TFlite 模型
@@ -154,10 +149,10 @@ edgetpu_compiler YOUR_MODEL_NAME.tflite
 
 </TabItem>
 
-<TabItem value="Method 2" label="针对 Pytorch 模型">
+<TabItem value="方法 2" label="针对 Pytorch 模型">
 
 :::note
-我们不推荐这种方法，因为在实际过程中存在许多冲突的包。此外，TensorFlow Lite 支持的操作集有限，一些 PyTorch 操作可能不被支持。
+我们不推荐这种方法，因为实际过程中存在许多冲突的包。此外，TensorFlow Lite 支持的操作集有限，某些 PyTorch 操作可能不被支持。
 :::
 
 ### 将 Pytorch 模型转换为 tflite 模型
@@ -186,7 +181,7 @@ edge_model = ai_edge_torch.convert(resnet18.eval(), sample_inputs)
 edge_model.export('resnet.tflite')
 ```
 
-您将获得 ```resnet.tflite``` 
+您将得到 ```resnet.tflite``` 
 
 ### 检查 tflite_converter
 :::note
@@ -198,33 +193,33 @@ tflite_convert -h
 
 结果应如下所示：
 ```
-2024-07-23 10:41:03.750087: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2024-07-23 10:41:04.276520: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-07-23 10:41:03.750087: I tensorflow/core/platform/cpu_feature_guard.cc:182] 此 TensorFlow 二进制文件已优化以在性能关键操作中使用可用的 CPU 指令。
+要启用以下指令：AVX2 FMA，请在其他操作中使用适当的编译器标志重新构建 TensorFlow。
+2024-07-23 10:41:04.276520: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT 警告：未找到 TensorRT
 usage: tflite_convert [-h] --output_file OUTPUT_FILE [--saved_model_dir SAVED_MODEL_DIR | --keras_model_file KERAS_MODEL_FILE] [--saved_model_tag_set SAVED_MODEL_TAG_SET]
                       [--saved_model_signature_key SAVED_MODEL_SIGNATURE_KEY] [--enable_v1_converter] [--experimental_new_converter [EXPERIMENTAL_NEW_CONVERTER]]
                       [--experimental_new_quantizer [EXPERIMENTAL_NEW_QUANTIZER]]
 
-Command line tool to run TensorFlow Lite Converter.
+TensorFlow Lite 转换器的命令行工具。
 
-optional arguments:
-  -h, --help            show this help message and exit
+可选参数:
+  -h, --help            显示此帮助信息并退出
   --output_file OUTPUT_FILE
-                        Full filepath of the output file.
+                        输出文件的完整路径。
   --saved_model_dir SAVED_MODEL_DIR
-                        Full path of the directory containing the SavedModel.
+                        包含 SavedModel 的目录的完整路径。
   --keras_model_file KERAS_MODEL_FILE
-                        Full filepath of HDF5 file containing tf.Keras model.
+                        包含 tf.Keras 模型的 HDF5 文件的完整路径。
   --saved_model_tag_set SAVED_MODEL_TAG_SET
-                        Comma-separated set of tags identifying the MetaGraphDef within the SavedModel to analyze. All tags must be present. In order to pass in an empty tag set, pass in "". (default "serve")
+                        用逗号分隔的标签集，用于标识 SavedModel 中的 MetaGraphDef。所有标签必须存在。要传递空标签集，请传递 ""。（默认值 "serve"）
   --saved_model_signature_key SAVED_MODEL_SIGNATURE_KEY
-                        Key identifying the SignatureDef containing inputs and outputs. (default DEFAULT_SERVING_SIGNATURE_DEF_KEY)
+                        标识包含输入和输出的 SignatureDef 的键。（默认值 DEFAULT_SERVING_SIGNATURE_DEF_KEY）
   --enable_v1_converter
-                        Enables the TensorFlow V1 converter in 2.0
+                        在 2.0 中启用 TensorFlow V1 转换器
   --experimental_new_converter [EXPERIMENTAL_NEW_CONVERTER]
-                        Experimental flag, subject to change. Enables MLIR-based conversion instead of TOCO conversion. (default True)
+                        实验性标志，可能会更改。启用基于 MLIR 的转换，而不是 TOCO 转换。（默认值 True）
   --experimental_new_quantizer [EXPERIMENTAL_NEW_QUANTIZER]
-                        Experimental flag, subject to change. Enables MLIR-based quantizer instead of flatbuffer conversion. (default True)
+                        实验性标志，可能会更改。启用基于 MLIR 的量化器，而不是 flatbuffer 转换。（默认值 True）
 ```
 
 ### 将 TFlite 模型转换为 Edge TPU 模型
@@ -290,7 +285,7 @@ edgetpu_compiler yolov8s_int8.tflite
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

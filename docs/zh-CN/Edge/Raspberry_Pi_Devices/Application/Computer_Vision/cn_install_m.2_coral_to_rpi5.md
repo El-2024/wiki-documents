@@ -8,33 +8,28 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/install_m2_coral_to_rpi5
 last_update:
-  date: 05/15/2025
+  date: 07/19/2024
   author: Jiahao
 
 no_comments: false # 用于 Disqus
 ---
 
 # 将 M.2 Coral 安装到 Raspberry Pi 5
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 简介
 
-[Coral M.2 Accelerator](https://www.seeedstudio.com/Coral-M2-Accelerator-with-Dual-Edge-TPU-p-4681.html) 配备双 Edge TPU，是一个 M.2 模块，可为具有 M.2 E-key 插槽的现有系统和产品提供两个 Edge TPU 协处理器。
+[Coral M.2 Accelerator](https://www.seeedstudio.com/Coral-M2-Accelerator-with-Dual-Edge-TPU-p-4681.html) 配备双 Edge TPU，是一款 M.2 模块，可为具有 M.2 E-key 插槽的现有系统和产品提供两个 Edge TPU 协处理器。
 
-[树莓派第五代旗舰开发计算机](https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html) 配备强大的 2.4GHz 64 位四核 Arm 处理器和 800MHz VideoCore VII GPU，提供令人印象深刻的图形性能。它支持高级摄像头功能、灵活的连接性和增强的外设，非常适合多媒体、游戏和工业任务。
+[树莓派第五代旗舰开发计算机](https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html) 配备强大的 2.4GHz 64 位四核 Arm 处理器和 800MHz VideoCore VII GPU，提供令人印象深刻的图形性能。它支持高级摄像头功能、多样化的连接选项和增强的外设，非常适合多媒体、游戏和工业任务。
 
-本文档将向您展示如何将 Coral M.2 Accelerator 安装到 Raspberry Pi 5，最后我们将测试 Coral M.2 Accelerator。
+本文档将向您展示如何将 Coral M.2 Accelerator 安装到 Raspberry Pi 5，最后测试 Coral M.2 Accelerator。
 
 ## 准备硬件
 
 <div class="table-center">
 	<table align="center">
 	<tr>
-		<th>树莓派 5 8GB</th>
-		<th>树莓派 M.2 HAT+</th>
+		<th>Raspberry Pi 5 8GB</th>
+		<th>Raspberry Pi M.2 HAT+</th>
 		<th>Coral M.2 Accelerator B+M key</th>
 	</tr>
     <tr>
@@ -77,7 +72,7 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-### 第二步：安装必要依赖
+### 第二步：安装必要的依赖
 
 打开终端并运行以下命令以安装所需的软件包：
 ```
@@ -112,7 +107,7 @@ cd ..
 python3.8 -V
 ```
 
-结果应为：
+结果应该是：
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/Python3.8.png" alt="pir" width={1000} height="auto"/></p>
 
@@ -147,19 +142,19 @@ dtoverlay=pineboards-hat-ai
 sudo reboot
 ```
 
-检查内核版本：
+检查内核：
 
-打开终端并运行以下命令以检查内核版本：
+打开终端并运行以下命令以检查内核：
 
 :::note
-确保内核版本为 6.6.30 或更高
+确保内核版本为 6.6.30 或更高版本
 :::
 
 ```
 uname -a
 ```
 
-## 安装 PCIe 驱动和 Edge TPU 运行时
+## 安装 PCIe 驱动和 Edge TPU Runtime
 
 ### 第一步：进入虚拟环境
 
@@ -167,7 +162,7 @@ uname -a
 source coral_venv/bin/activate
 ```
 
-### 第二步：安装 Edge TPU 运行时
+### 第二步：安装 Edge TPU Runtime
 
 添加 Google Coral Edge TPU 软件包仓库
 
@@ -179,7 +174,7 @@ curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 sudo apt-get update
 ````
 
-安装必要的软件包和 Edge TPU 运行时
+安装必要的软件包和 Edge TPU Runtime
 
 ```
 sudo apt-get install cmake libedgetpu1-std devscripts debhelper dkms dh-dkms
@@ -227,13 +222,13 @@ ls /dev/apex_0
 
 ## 安装 PyCoral 库并测试 Edge TPU
 
-### 第一步：安装 PyCoral 库
+### 步骤 1：安装 PyCoral 库
 ```
 source coral_venv/bin/activate
 pip install --upgrade pip
 python3 -m pip install --extra-index-url https://google-coral.github.io/py-repo/ pycoral~=2.0
 ```
-### 第二步：测试 Edge TPU
+### 步骤 2：测试 Edge TPU
 
 安装示例所需资源：
 ```
@@ -257,13 +252,13 @@ python3 examples/classify_image.py \
 
 ## 结果
 
-我们已经成功在 Raspberry Pi 5 上安装了 M.2 Coral 加速器并测试了 Edge TPU。我们还在 Coral M.2 加速器上运行了 YOLOv8s 模型，使用了 int8 量化，输入尺寸为 640x640，批量大小为 1。推理时间约为 800-1000ms，相当于大约 1.1 帧每秒（FPS）。
+我们已经成功在 Raspberry Pi 5 上安装了 M.2 Coral 加速器并测试了 Edge TPU。我们还在 Coral M.2 加速器上运行了 YOLOv8s 模型，使用 int8 量化，输入尺寸为 640x640，批量大小为 1。推理时间约为 800-1000 毫秒，相当于大约 1.1 帧每秒（FPS）。
 
 <iframe width="800" height="400" src="https://www.youtube.com/embed/4c8UX06d9Tg" title="Raspberry Pi AI: YOLOv8s Object Detection with Int8 Format Using M.2 Coral Accelerator on RPi 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们提供多种支持渠道，确保您使用我们的产品时体验顺畅。我们提供多种沟通方式，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

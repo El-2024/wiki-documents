@@ -1,6 +1,6 @@
 ---
-description: 本文档演示如何使用 YOLOv8 进行姿态估计来控制灯光。
-title: 基于姿态的灯光控制：使用 Node-Red 和 Raspberry Pi 搭配 AIkit
+description: 本文档演示如何使用 YOLOv8 的姿态估计功能来控制灯光。
+title: 基于姿态的灯光控制：结合 Node-Red 和 Raspberry Pi 的 AIkit
 keywords:
   - Edge
   - reComputer r1000
@@ -9,20 +9,16 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/pose_based_light_control_with_nodered_and_rpi_with_aikit
 last_update:
-  date: 05/15/2025
+  date: 07/26/2024
   author: Jiahao
 
 no_comments: false # 用于 Disqus
 ---
 
-# 基于姿态的灯光控制：使用 Node-Red 和 Raspberry Pi 搭配 AIkit
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+# 基于姿态的灯光控制：结合 Node-Red 和 Raspberry Pi 的 AIkit
 
 ## 简介
-本文档将指导您如何使用 AI kit 运行 YOLOv8，利用 YOLOv8 监测您的姿态，并最终根据您的姿态控制灯光。在本项目中，USB 摄像头捕捉您的姿态，YOLOv8n 在 [AI kit](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html) 和 [reComputer R1000](https://www.seeedstudio.com/reComputer-R1000-Series-Optional-Accessories.html) 上运行以检测您的姿态。处理后的视频会实时通过 [gstreamer](https://gstreamer.freedesktop.org/) 流式传输到 [reTerminal DM](https://www.seeedstudio.com/reTerminal-DM-CM4104032-p-5898.html)。同时，关节坐标通过 [mqtt](https://mqtt.org/) 发送到部署在 reComputer R1000 上的 [Node-RED](https://nodered.org/)。最后，Node-RED 流程根据关节坐标控制智能灯光。
+本文档将指导您如何使用 AI 套件运行 YOLOv8，利用 YOLOv8 监测您的姿态，并最终根据您的姿态控制灯光。在本项目中，USB 摄像头捕捉您的姿态，YOLOv8n 在 [AI 套件](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html) 和 [reComputer R1000](https://www.seeedstudio.com/reComputer-R1000-Series-Optional-Accessories.html) 上运行以检测您的姿态。处理后的视频会实时通过 [gstreamer](https://gstreamer.freedesktop.org/) 流式传输到 [reTerminal DM](https://www.seeedstudio.com/reTerminal-DM-CM4104032-p-5898.html)。同时，关节坐标通过 [mqtt](https://mqtt.org/) 发送到部署在 reComputer R1000 上的 [Node-RED](https://nodered.org/)。最后，Node-RED 流程根据关节坐标控制智能灯光。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/pose_control_light/pose_control.jpeg" alt="pir" width={1000} height="auto"/></p>
 
@@ -64,40 +60,40 @@ no_comments: false # 用于 Disqus
 
 ### 在 reComputer R1000 上
 
-#### 第一步：安装 AI 套件
+#### 第 1 步：安装 AI 套件
 
-请参考 [此维基](https://wiki.seeedstudio.com/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l/)，确保您已在 reComputer R1000 上安装 AI 套件。
+请参考[此 Wiki](https://wiki.seeedstudio.com/cn/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l/)，确保您已在 reComputer R1000 上安装 AI 套件。
 
-#### 第二步：安装项目
+#### 第 2 步：安装项目
 
 使用以下命令下载项目：
 ```
 git clone https://github.com/LJ-Hao/Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit.git && cd Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit
 ```
 
-#### 第三步：运行姿态估计
+#### 第 3 步：运行姿态估计
 
-编辑 ```pose_estimation.py``` 文件，将 ```mqtt_server``` 修改为您的 reTerminal DM 的 IP 地址。同时将 ```Gstreamer pipeline``` 修改为您的 reTerminal DM 的 IP 地址。然后运行以下命令以启动姿态估计：
+编辑 ```pose_estimation.py``` 文件，将 ```mqtt_server``` 修改为您的 reTerminal DM 的 IP 地址，并将 ```Gstreamer pipeline``` 修改为您的 reTerminal DM 的 IP 地址。然后运行以下命令以启动姿态估计。
 
 ```
 bash run.sh
 ```
 
-#### 第四步：安装 Node-RED
+#### 第 4 步：安装 Node-RED
 
-安装 Node-RED。您可以使用以下单行命令下载 Node-RED：
+安装 Node-RED。您可以使用以下一行命令下载 Node-RED：
 
 ```
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 ```
 
-#### 第五步：导入 flows.json
+#### 第 5 步：导入 flows.json
 
-导入项目文件。点击右上角的 ```Settings => Import```，在新弹出的窗口中点击 ```click select a file``` 选择文件，选择 ```flows.json```，最后点击 ```Import```。
+导入项目文件。点击右上角的 ```Settings => Import```，在新弹出的窗口中点击 ```select a file``` 选择文件，选择 ```flows.json```，最后点击 ```Import```。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/pose_control_light/nodered_import.gif" alt="pir" width={1000} height="auto"/></p>
 
-#### 第六步：下载所需的控件
+#### 第 6 步：下载所需控件
 
 导入项目文件后，系统可能提示您的 Node-RED 缺少一些控件。您需要下载以下控件：
 
@@ -125,11 +121,11 @@ node-red-sensecap-paas
 node-red-node-random
 ```
 
-以 ```node-red-node-random``` 为例，点击右上角的 ```Settings => Manage Palette```，在新窗口中选择 ```Install``` 栏，输入 ```node-red-node-random```，最后点击 ```Install``` 按钮。
+以 ```node-red-node-random``` 为例，点击右上角的 ```Settings => Manage Palette```，在新窗口中选择 ```Install``` 栏目，输入 ```node-red-node-random```，最后点击 ```Install``` 按钮。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/pose_control_light/nodered_dowload_patelle.gif" alt="pir" width={1000} height="auto"/></p>
 
-#### 第七步：部署项目
+#### 第 7 步：部署项目
 
 点击右上角的部署按钮，系统将正常运行。
 
@@ -137,7 +133,7 @@ node-red-node-random
 
 ### 在 reTerminal DM 上
 
-#### 第一步：在 reTerminal DM 上安装 gstreamer
+#### 第 1 步：在 reTerminal DM 上安装 gstreamer
 
 使用以下命令下载 gstreamer：
 
@@ -145,14 +141,14 @@ node-red-node-random
 sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
 ```
 
-#### 第二步：安装仓库
+#### 第 2 步：安装仓库
 
 使用以下命令下载仓库：
 ```
 git clone https://github.com/LJ-Hao/Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit.git && cd Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit
 ```
 
-#### 第三步：运行视频接收器
+#### 第 3 步：运行视频接收器
 
 ```
 python3 video_receiver.py
@@ -160,15 +156,15 @@ python3 video_receiver.py
 
 ## 结果
 
-我们在 YouTube 的直播中展示了这个演示，直播开始于 ```19:47```。你可以看到，当主持人拍手时，灯会亮起；当主持人挥手时，灯会熄灭。请欣赏这个演示：
+我们在 YouTube 的直播中展示了这个演示，直播开始时间为 ```19:47```。您可以看到，当主持人拍手时，灯会亮起；当主持人挥手时，灯会熄灭。请欣赏这个演示：
 
 <div align="center">
-<iframe width="800" height="400" src="https://www.youtube.com/embed/v-S6_tH75NI" title="Making Next Gadget: AI Boosted RPi for Real World Applications" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="800" height="400" src="https://www.youtube.com/embed/v-S6_tH75NI" title="制作下一代设备：AI增强的树莓派用于现实世界应用" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供了多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

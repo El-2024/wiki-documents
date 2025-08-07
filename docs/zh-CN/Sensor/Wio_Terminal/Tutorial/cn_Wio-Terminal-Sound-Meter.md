@@ -22,7 +22,7 @@ last_update:
 - [**ReSpeaker 2-Mics Pi HAT**](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT.html)
 
 :::注
-请访问 [**Audio 概述**](https://wiki.seeedstudio.com/Wio-Terminal-Audio-Overview/) 以获取 **硬件连接**的详细信息。
+请访问 [**Audio 概述**](https://wiki.seeedstudio.com/cn/Wio-Terminal-Audio-Overview/) 以获取 **硬件连接**的详细信息。
 :::
 
 ## 特点
@@ -36,9 +36,9 @@ last_update:
 
 ## 库安装
 
-1. 安装音频库 `Seeed_Arduino_Audio`, 请访问 [**Audio Overview**](https://wiki.seeedstudio.com/Wio-Terminal-Audio-Overview/) 获取更多信息。
+1. 安装音频库 `Seeed_Arduino_Audio`, 请访问 [**Audio Overview**](https://wiki.seeedstudio.com/cn/Wio-Terminal-Audio-Overview/) 获取更多信息。
 
-2. 安装LCD屏幕库 `Seeed_Arduino_LCD`, 请访问 [Wio Terminal LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) 获取更多信息。
+2. 安装LCD屏幕库 `Seeed_Arduino_LCD`, 请访问 [Wio Terminal LCD](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Overview/) 获取更多信息。
 
 3. 现在，可以将库安装到Arduino IDE中。打开Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`, 选择刚刚下载的 `Seeed_Arduino_Audio` 文件。
 

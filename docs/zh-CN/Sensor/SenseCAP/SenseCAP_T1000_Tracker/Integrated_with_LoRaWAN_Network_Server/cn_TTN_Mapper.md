@@ -7,24 +7,24 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/ttn_mapper_for_SenseCAP_T1000
 last_update:
-  date: 05/15/2025
+  date: 10/13/2023
   author: Jessie
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
-[TTN Mapper](https://ttnmapper.org/) 是一个用于映射连接到 The Things Stack 的网关网络覆盖范围的便捷工具。有关更多详细信息，请查看官方 [TTN Mapper 文档站点](https://docs.ttnmapper.org/)。
+[TTN Mapper](https://ttnmapper.org/) 是一个便捷的工具，用于映射连接到 The Things Stack 的网关的网络覆盖范围。查看官方 [TTN Mapper 文档站点](https://docs.ttnmapper.org/) 了解更多详情。
 
 本教程将指导用户将 [SenseCAP T1000 Tracker](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html) 添加到 TTN Mapper。
 
-为了探索下一步，请先参考 [连接到 The Things Network](https://wiki.seeedstudio.com/SenseCAP_T1000_tracker_TTN/) 注册您的设备。
 
-### 配置 Payload 格式化器
+为了探索后续步骤，请参考 [连接到 The Things Network](https://wiki.seeedstudio.com/cn/SenseCAP_T1000_tracker_TTN/) 首先注册您的设备。
+
+### 配置载荷格式化器
 
 创建一个 `自定义 JavaScript 格式化器` 并复制以下代码。
 
+
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/decoder.png" alt="pir" width={800} height="auto" /></p>
+
 
 <details>
 
@@ -354,7 +354,7 @@ function deserialize (dataId, dataValue) {
                 {measurementId: '3942', type: '心跳间隔', measurementValue: heartbeatInterval},
                 {measurementId: '3943', type: '周期间隔', measurementValue: periodicInterval},
                 {measurementId: '3944', type: '事件间隔', measurementValue: eventInterval},
-                {measurementId: '3941', type: 'SOS 模式', measurementValue: getSOSMode(dataValue.substring(16, 18))},
+                {measurementId: '3941', type: 'SOS模式', measurementValue: getSOSMode(dataValue.substring(16, 18))},
                 {measurementId: '3900', type: '上行间隔', measurementValue: interval}
             ]
             break;
@@ -363,7 +363,7 @@ function deserialize (dataId, dataValue) {
                 {measurementId: '3000', type: '电池', measurementValue: getBattery(dataValue.substring(0, 2))},
                 {measurementId: '3940', type: '工作模式', measurementValue: getWorkingMode(dataValue.substring(2, 4))},
                 {measurementId: '3965', type: '定位策略', measurementValue: getPositioningStrategy(dataValue.substring(4, 6))},
-                {measurementId: '3941', type: 'SOS 模式', measurementValue: getSOSMode(dataValue.substring(6, 8))}
+                {measurementId: '3941', type: 'SOS模式', measurementValue: getSOSMode(dataValue.substring(6, 8))}
             ]
             break
         case '06':
@@ -373,7 +373,7 @@ function deserialize (dataId, dataValue) {
                 {measurementId: '4197', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '经度', measurementValue: parseFloat(getSensorValue(dataValue.substring(16, 24), 1000000))},
                 {measurementId: '4198', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '纬度', measurementValue: parseFloat(getSensorValue(dataValue.substring(24, 32), 1000000))},
                 {measurementId: '4097', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '空气温度', measurementValue: getSensorValue(dataValue.substring(32, 36), 10)},
-                {measurementId: '4199', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '光线', measurementValue: getSensorValue(dataValue.substring(36, 40))},
+                {measurementId: '4199', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '光照', measurementValue: getSensorValue(dataValue.substring(36, 40))},
                 {measurementId: '3000', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '电池', measurementValue: getBattery(dataValue.substring(40, 42))}
             ]
             break
@@ -382,9 +382,9 @@ function deserialize (dataId, dataValue) {
             collectTime = getUTCTimestamp(dataValue.substring(8, 16))
             measurementArray = [
                 {measurementId: '4200', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '事件状态', measurementValue: getEventStatus(dataValue.substring(0, 6))},
-                {measurementId: '5001', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: 'Wi-Fi 扫描', measurementValue: getMacAndRssiObj(dataValue.substring(16, 72))},
+                {measurementId: '5001', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: 'Wi-Fi扫描', measurementValue: getMacAndRssiObj(dataValue.substring(16, 72))},
                 {measurementId: '4097', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '空气温度', measurementValue: getSensorValue(dataValue.substring(72, 76), 10)},
-                {measurementId: '4199', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '光线', measurementValue: getSensorValue(dataValue.substring(76, 80))},
+                {measurementId: '4199', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '光照', measurementValue: getSensorValue(dataValue.substring(76, 80))},
                 {measurementId: '3000', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '电池', measurementValue: getBattery(dataValue.substring(80, 82))}
             ]
             break
@@ -392,9 +392,9 @@ function deserialize (dataId, dataValue) {
             collectTime = getUTCTimestamp(dataValue.substring(8, 16))
             measurementArray = [
                 {measurementId: '4200', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '事件状态', measurementValue: getEventStatus(dataValue.substring(0, 6))},
-                {measurementId: '5002', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: 'BLE 扫描', measurementValue: getMacAndRssiObj(dataValue.substring(16, 58))},
+                {measurementId: '5002', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: 'BLE扫描', measurementValue: getMacAndRssiObj(dataValue.substring(16, 58))},
                 {measurementId: '4097', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '空气温度', measurementValue: getSensorValue(dataValue.substring(58, 62), 10)},
-                {measurementId: '4199', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '光线', measurementValue: getSensorValue(dataValue.substring(62, 66))},
+                {measurementId: '4199', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '光照', measurementValue: getSensorValue(dataValue.substring(62, 66))},
                 {measurementId: '3000', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '电池', measurementValue: getBattery(dataValue.substring(66, 68))}
             ]
             break
@@ -411,7 +411,7 @@ function deserialize (dataId, dataValue) {
             collectTime = getUTCTimestamp(dataValue.substring(8, 16))
             measurementArray = [
                 {measurementId: '4200', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '事件状态', measurementValue: getEventStatus(dataValue.substring(0, 6))},
-                {measurementId: '5001', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: 'Wi-Fi 扫描', measurementValue: getMacAndRssiObj(dataValue.substring(16, 72))},
+                {measurementId: '5001', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: 'Wi-Fi扫描', measurementValue: getMacAndRssiObj(dataValue.substring(16, 72))},
                 {measurementId: '3000', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '电池', measurementValue: getBattery(dataValue.substring(72, 74))}
             ]
             break
@@ -419,7 +419,7 @@ function deserialize (dataId, dataValue) {
             collectTime = getUTCTimestamp(dataValue.substring(8, 16))
             measurementArray = [
                 {measurementId: '4200', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '事件状态', measurementValue: getEventStatus(dataValue.substring(0, 6))},
-                {measurementId: '5002', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: 'BLE 扫描', measurementValue: getMacAndRssiObj(dataValue.substring(16, 58))},
+                {measurementId: '5002', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: 'BLE扫描', measurementValue: getMacAndRssiObj(dataValue.substring(16, 58))},
                 {measurementId: '3000', timestamp: collectTime, motionId: getMotionId(dataValue.substring(6, 8)), type: '电池', measurementValue: getBattery(dataValue.substring(58, 60))},
             ]
             break
@@ -428,13 +428,13 @@ function deserialize (dataId, dataValue) {
             let error = ''
             switch (errorCode) {
                 case 1:
-                    error = '获取 UTC 时间戳失败'
+                    error = '获取UTC时间戳失败'
                     break
                 case 2:
-                    error = '星历太旧'
+                    error = '历书过旧'
                     break
                 case 3:
-                    error = '多普勒错误'
+                    error = '多普勒误差'
                     break
             }
             measurementArray.push({errorCode, error})
@@ -448,7 +448,7 @@ function deserialize (dataId, dataValue) {
                 groupId: groupId,
                 index: shardFlag.index,
                 count: shardFlag.count,
-                type: 'gnss-ng payload',
+                type: 'gnss-ng载荷',
                 measurementValue: payload
             }
             measurementArray.push(measurement)
@@ -484,7 +484,7 @@ function deserialize (dataId, dataValue) {
                 groupId: groupId,
                 index: shardFlag.index,
                 count: shardFlag.count,
-                type: '光线',
+                type: '光照',
                 measurementValue: '' + getSensorValue(dataValue.substring(20, 24))
             })
             measurementArray.push({
@@ -549,7 +549,7 @@ function deserialize (dataId, dataValue) {
                 measurementArray.push({
                     timestamp: collectTime,
                     measurementId: '4199',
-                    type: '光线',
+                    type: '光照',
                     measurementValue: '' + getSensorValue(dataValue.substring(20, 24))
                 })
             }
@@ -574,33 +574,33 @@ function getPositingStatus (str) {
         case 0:
             return {id:status, statusName:"定位成功。"}
         case 1:
-            return {id:status, statusName:"GNSS 扫描超时，无法获取位置。"}
+            return {id:status, statusName:"GNSS扫描超时，无法获取位置。"}
         case 2:
-            return {id:status, statusName:"Wi-Fi 扫描超时，无法获取位置。"}
+            return {id:status, statusName:"Wi-Fi扫描超时，无法获取位置。"}
         case 3:
-            return {id:status, statusName:"Wi-Fi + GNSS 扫描超时，无法获取位置。"}
+            return {id:status, statusName:"Wi-Fi + GNSS扫描超时，无法获取位置。"}
         case 4:
-            return {id:status, statusName:"GNSS + Wi-Fi 扫描超时，无法获取位置。"}
+            return {id:status, statusName:"GNSS + Wi-Fi扫描超时，无法获取位置。"}
         case 5:
             return {id:status, statusName:"蓝牙扫描超时，无法获取位置。"}
         case 6:
-            return {id:status, statusName:"蓝牙 + Wi-Fi 扫描超时，无法获取位置。"}
+            return {id:status, statusName:"蓝牙 + Wi-Fi扫描超时，无法获取位置。"}
         case 7:
-            return {id:status, statusName:"蓝牙 + GNSS 扫描超时，无法获取位置。"}
+            return {id:status, statusName:"蓝牙 + GNSS扫描超时，无法获取位置。"}
         case 8:
-            return {id:status, statusName:"蓝牙 + Wi-Fi + GNSS 扫描超时，无法获取位置。"}
+            return {id:status, statusName:"蓝牙 + Wi-Fi + GNSS扫描超时，无法获取位置。"}
         case 9:
-            return {id:status, statusName:"位置服务器解析 GNSS 位置失败。"}
+            return {id:status, statusName:"位置服务器解析GNSS位置失败。"}
         case 10:
-            return {id:status, statusName:"位置服务器解析 Wi-Fi 位置失败。"}
+            return {id:status, statusName:"位置服务器解析Wi-Fi位置失败。"}
         case 11:
             return {id:status, statusName:"位置服务器解析蓝牙位置失败。"}
         case 12:
-            return {id:status, statusName:"由于精度差，解析 GNSS 位置失败。"}
+            return {id:status, statusName:"由于精度较差，解析GNSS位置失败。"}
         case 13:
             return {id:status, statusName:"时间同步失败。"}
         case 14:
-            return {id:status, statusName:"由于星历过旧，无法获取位置。"}
+            return {id:status, statusName:"由于历书过旧，无法获取位置。"}
     }
     return getInt(str)
 }
@@ -626,7 +626,7 @@ function getUpShortInfo (messageValue) {
         }, {
             measurementId: '3945', type: '传感器启用', measurementValue: getInt(messageValue.substring(26, 28))
         }, {
-            measurementId: '3941', type: 'SOS 模式', measurementValue: getSOSMode(messageValue.substring(28, 30))
+            measurementId: '3941', type: 'SOS模式', measurementValue: getSOSMode(messageValue.substring(28, 30))
         }
     ]
 }
@@ -648,8 +648,8 @@ function getStaticSetting (str) {
 
 function getShockSetting (str) {
     return [
-        {measurementId: '3951', type: '震动启用', measurementValue: getInt(str.substring(0, 2))},
-        {measurementId: '3952', type: '震动阈值', measurementValue: getInt(str.substring(2, 6))}
+        {measurementId: '3951', type: '冲击启用', measurementValue: getInt(str.substring(0, 2))},
+        {measurementId: '3952', type: '冲击阈值', measurementValue: getInt(str.substring(2, 6))}
     ]
 }
 
@@ -666,12 +666,12 @@ function getTempSetting (str) {
 
 function getLightSetting (str) {
     return [
-        {measurementId: '3959', type: '光线启用', measurementValue: getInt(str.substring(0, 2))},
-        {measurementId: '3960', type: '事件光线间隔', measurementValue: getMinsByMin(str.substring(2, 6))},
-        {measurementId: '3961', type: '事件光线采样间隔', measurementValue: getSecondsByInt(str.substring(6, 10))},
-        {measurementId: '3962', type: '光线最大阈值', measurementValue: getSensorValue(str.substring(10, 14), 10)},
-        {measurementId: '3963', type: '光线最小阈值', measurementValue: getSensorValue(str.substring(14, 18), 10)},
-        {measurementId: '3964', type: '光线警告类型', measurementValue: getInt(str.substring(18, 20))}
+        {measurementId: '3959', type: '光照启用', measurementValue: getInt(str.substring(0, 2))},
+        {measurementId: '3960', type: '事件光照间隔', measurementValue: getMinsByMin(str.substring(2, 6))},
+        {measurementId: '3961', type: '事件光照采样间隔', measurementValue: getSecondsByInt(str.substring(6, 10))},
+        {measurementId: '3962', type: '光照最大阈值', measurementValue: getSensorValue(str.substring(10, 14), 10)},
+        {measurementId: '3963', type: '光照最小阈值', measurementValue: getSensorValue(str.substring(14, 18), 10)},
+        {measurementId: '3964', type: '光照警告类型', measurementValue: getInt(str.substring(18, 20))}
     ]
 }
 
@@ -839,19 +839,19 @@ function getEventStatus (str) {
                 event.push({id:3, eventName:"静止事件。"})
                 break
             case 3:
-                event.push({id:4, eventName:"震动事件。"})
+                event.push({id:4, eventName:"冲击事件。"})
                 break
             case 4:
                 event.push({id:5, eventName:"温度事件。"})
                 break
             case 5:
-                event.push({id:6, eventName:"光线事件。"})
+                event.push({id:6, eventName:"光照事件。"})
                 break
             case 6:
-                event.push({id:7, eventName:"SOS 事件。"})
+                event.push({id:7, eventName:"SOS事件。"})
                 break
             case 7:
-                event.push({id:8, eventName:"按下一次事件。"})
+                event.push({id:8, eventName:"按一次事件。"})
                 break
         }
     }
@@ -892,23 +892,29 @@ function loraWANV2PositiveDataFormat (str, divisor = 1) {
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/webhook-map.png" alt="pir" width={800} height="auto" /></p>
 
-通过填写 Webhook ID 字段，为您的集成命名。
 
-在 Email address 字段中填写一个有效的电子邮件地址，这是 TTN Mapper 接受您的数据所必需的。终端设备发送的所有数据都将与此电子邮件地址相关联，并且它将提供一些数据质量的保证。
+通过填写 Webhook ID 字段为您的集成命名。
+
+在 Email address 字段中填写有效的电子邮件地址，这是 TTN Mapper 接受您数据所必需的。您的终端设备发送的所有数据都将与此电子邮件地址关联，这将为数据质量提供一些保证。
 
 要了解更多关于实验的信息，请阅读此处的实验部分。
 
-最后点击 `Create TTN Mapper webhook` 按钮完成操作。
+最后点击 `Create TTN Mapper webhook` 按钮完成。
+
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/webhook2.png" alt="pir" width={800} height="auto" /></p>
 
-### 观察网络覆盖范围
+
+### 观察网络覆盖
+
 
 导航到 [TTN Mapper](https://ttnmapper.org/) 并在顶部菜单中选择 `Advanced Maps`。
 
-在 `Device data` 部分，填写 `Device ID` 字段，使用来自 The Things Stack 的设备 ID。<br/>
+
+在 `Device data` 部分，使用 The Things Stack 中的设备 ID 填写 `Device ID` 字段。<br/>
 选择今天作为 `Start Date` 和 `End Date`。<br/>
-点击 `View Map` 按钮查看来自终端设备上行数据的数据点。
+点击 `View Map` 按钮查看来自您终端设备上行数据的数据点。
+
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/view-map.png" alt="pir" width={800} height="auto" /></p>
 

@@ -1,23 +1,22 @@
 ---
-title: 模拟端口
+title: 模拟
 nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-IO-Analog/
+image: https://wiki.seeedstudio.com/cn/Wio-Terminal-IO-Analog/
 slug: /cn/Wio-Terminal-IO-Analog
 last_update:
-  date: 3/10/2024
-  author: 金菊
+  date: 01/11/2022
+  author: gunengyu
 ---
-
-# 在Wio Terminal上使用Grove模拟端口
+# 在 Wio Terminal 上使用 Grove 模拟端口
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/2019-12-12%2011-36-22.2019-12-12%2011_37_02.gif" /></div>
 
-这个仓库演示了如何在Wio Terminal上使用模拟输入。要使用Wio Terminal上的模拟引脚，您必须使用RPI引脚。
+本仓库演示了如何在 Wio Terminal 上使用模拟输入。要在 Wio Terminal 上使用模拟引脚，您必须使用 RPI 引脚。
 
-## RPI模拟引脚
+## RPI 模拟引脚
 
 Raspberry Pi 引脚定义如下：
 
@@ -25,7 +24,7 @@ Raspberry Pi 引脚定义如下：
 
 ## Grove 端口配置
 
-要将 **Grove 可配置的A/D端口** 用作模拟端口，只需按如下方式定义：
+要将 **Grove 可配置 A/D 端口**用作模拟端口，只需按如下方式定义：
 
 ```cpp
 void setup() {
@@ -33,11 +32,11 @@ void setup() {
 }
 ```
 
-现在，将您的Grove传感器连接到物理引脚上！
+现在，将您的 Grove 传感器连接到物理引脚！
 
 ## 示例代码
 
-在这个示例中，使用了一个Grove响度传感器进行演示：
+在此示例中，使用 Grove 声音传感器进行演示：
 
 ```cpp
 void setup() {
@@ -52,9 +51,9 @@ void loop() {
 }
 ```
 
-## 技术支持 & 产品讨论
+## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们提供多种沟通渠道，以满足不同的偏好和需求，为您提供不同的支持，以确保您在使用我们的产品时体验顺畅。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

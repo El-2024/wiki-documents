@@ -178,7 +178,7 @@ To configure your SenseCAP gateway, access its web interface where you'll begin 
   <img class='border-radius: 10px;' width={680} src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/LoRaWAN_Application/gateway_config.png"/>
 </div>
 
-After adjusting the settings, click `Save & Apply` to commit your changes.  You can then access the ChirpStack interface using the provided URL (for example, http://192.168.1.102:8080).
+After adjusting the settings, click `Save & Apply` to commit your changes.  You can then access the ChirpStack interface using the provided URL (for example, `http://192.168.1.102:8080`).
 
 Use the following default credentials to log in:
 

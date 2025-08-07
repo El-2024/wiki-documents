@@ -1,25 +1,21 @@
 ---
-description: 在 reTerminal DM 上部署 InfluxDB，用于高效的时间序列数据收集和分析，适用于物联网应用。本指南涵盖安装、配置和使用，帮助您在基于树莓派的 HMI 上充分利用 InfluxDB 的强大功能。实现实时洞察和强大的边缘网络监控能力。
+description: 在 reTerminal DM 上部署 InfluxDB，以实现高效的时间序列数据收集和分析，适用于物联网应用。本指南涵盖安装、配置和使用步骤，帮助您在基于 Raspberry Pi 的 HMI 上充分利用 InfluxDB 的强大功能。直接在网络边缘实现实时洞察和强大的监控能力。
 
-title: reTerminal DM 配置 Node-Red 和 InfluxDB
+title: 使用 Node-Red 和 InfluxDB 的 reTerminal DM
 keywords:
-  - 树莓派
+  - Raspberry Pi
   - HMI
   - Node-Red
   - InfluxDB
 image: https://files.seeedstudio.com/wiki/reTerminalDM/nodered/reterminal-influx.png
 slug: /cn/reterminal_dm_200_node_red_influxdb
 last_update:
-  date: 05/15/2025
+  date: 06/28/2024
   author: Kasun Thushara
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+## 介绍
 
-## 简介
-
-在 reTerminal DM（基于树莓派的 HMI）上部署 [InfluxDB](https://www.influxdata.com/) 可以在网络边缘实现强大的时间序列数据收集和分析。这种设置非常适合物联网应用，提供实时洞察和监控能力。通过利用轻量级但功能强大的 InfluxDB 数据库，您可以直接在 reTerminal DM 上高效管理和分析传感器数据。以下指南概述了在 reTerminal DM 上安装、配置和使用 InfluxDB 的步骤，确保无缝集成到您的数据基础设施中。
+在 reTerminal DM（基于 Raspberry Pi 的 HMI）上部署 [InfluxDB](https://www.influxdata.com/) 可以在网络边缘实现强大的时间序列数据收集和分析。这种设置非常适合物联网应用，能够提供实时洞察和监控能力。通过利用轻量级但功能强大的 InfluxDB 数据库，您可以直接在 reTerminal DM 上高效地管理和分析传感器数据。以下指南概述了在 reTerminal DM 上安装、配置和使用 InfluxDB 的步骤，确保其无缝集成到您的数据基础设施中。
 
 ### 硬件准备
 
@@ -43,7 +39,7 @@ last_update:
 
 ### 软件准备
 
-我们已经准备了一份 [Node-RED 入门指南](https://wiki.seeedstudio.com/reTerminal-DM-Getting-Started-with-Node-Red/)。建议您在继续阅读本 Wiki 之前先查看该指南。
+我们已经准备了一份 [Node-RED 入门指南](https://wiki.seeedstudio.com/cn/reTerminal-DM-Getting-Started-with-Node-Red/)。建议您在继续阅读本 Wiki 之前先查看该指南。
 
 ## 在 reTerminal DM 上安装 InfluxDB
 
@@ -51,7 +47,7 @@ last_update:
 
 **步骤 1**：更新系统
 
-首先，通过运行以下命令确保您的系统是最新的：通过 SSH 连接到 reTerminal DM 并运行
+首先，通过运行以下命令确保您的系统是最新的：SSH 到 reTerminal DM 并执行
 
 ```sh
 sudo apt update
@@ -59,10 +55,10 @@ sudo apt update
 
 **步骤 2**：添加 InfluxDB 仓库
 
-将 InfluxDB 的 GPG 密钥和仓库添加到您的系统中。
+将 InfluxDB 的 GPG 密钥和仓库添加到您的系统。
 
 添加 GPG 密钥：
-
+   
 ```sh
 curl https://repos.influxdata.com/influxdata-archive.key | gpg --dearmor | sudo tee /usr/share/keyrings/influxdb-archive-keyring.gpg >/dev/null
  ```
@@ -113,7 +109,7 @@ sudo systemctl start influxdb
 
 ## 测试 InfluxDB
 
-访问 InfluxDB CLI 工具以执行基本的数据库操作。
+通过 InfluxDB CLI 工具执行基本的数据库操作。
 
 **步骤 1**. 打开终端：
 
@@ -171,7 +167,7 @@ exit
 sudo nano /etc/influxdb/influxdb.conf
 ```
 
-在 `[HTTP]` 部分下，添加或修改以下行：
+在 `[HTTP]` 部分下，添加或修改以下内容：
 
 ```
     auth-enabled = true
@@ -280,7 +276,7 @@ SELECT * FROM lab
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供了多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

@@ -1,40 +1,36 @@
 ---
-description: Docker 入门指南
-title: Docker 入门指南
+description: 入门 Docker
+title: 入门 Docker
 keywords:
   - Edge
   - reComputer 应用
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/jetson-docker-getting-started
 last_update:
-  date: 05/15/2025
+  date: 01/04/2023
   author: w0x7ce
 ---
 
-# Docker 入门指南
+# 入门 Docker
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
-> 本文转载自 [Ajeet](https://collabnix.com/author/ajeetraina) 在 [collabnix.com](https://collabnix.com) 上撰写的 [博客](https://collabnix.com/getting-started-with-docker-on-seeed-studios-recomputer-powered-by-nvidia-jetson)。所有版权归原作者所有。
+> 本文转载自 [Ajeet](https://collabnix.com/author/ajeetraina) 在 [collabnix.com](https://collabnix.com) 上撰写的[博客](https://collabnix.com/getting-started-with-docker-on-seeed-studios-recomputer-powered-by-nvidia-jetson)。所有版权归作者所有。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/jetson-docker/1.jpeg" /></div>
 
-上周，我有幸首次接触到最新的 Seeed Studio [reComputer J1020](https://www.seeedstudio.com/Jetson-10-1-H0-p-5335.html) 边缘 AI 设备。reComputer J1020 由 Jetson Nano 开发套件提供支持。这是一台小型、手掌大小的强大计算机，为嵌入式开发者带来了现代 AI 的强大功能。这款售价 259 美元的小型设备基于 NVIDIA Jetson Nano 系统模块构建，专为边缘 AI 应用设计。该设备可以并行运行多个神经网络，用于图像分类、目标检测、分割和语音处理等应用。凭借丰富的扩展模块、工业级外设和热管理功能，reComputer J1020 准备好帮助您通过部署流行的 DNN 模型和 ML 框架到边缘并以高性能进行推理，加速和扩展下一代 AI 产品，用于实时分类、目标检测、姿态估计、语义分割和自然语言处理 (NLP) 等任务。
+上周，我有幸首次接触到最新的 Seeed Studio [reComputer J1020](https://www.seeedstudio.com/Jetson-10-1-H0-p-5335.html) 边缘 AI 设备。reComputer J1020 基于 Jetson Nano 开发套件，是一款小型、手掌大小的强大计算机，为嵌入式开发者带来了现代 AI 的强大功能。这款售价 259 美元的小型设备基于 NVIDIA Jetson Nano 系统模块构建，专为边缘 AI 应用设计。该设备可以并行运行多个神经网络，用于图像分类、目标检测、分割和语音处理等应用。凭借丰富的扩展模块、工业外设和热管理功能，reComputer J1020 准备帮助您通过部署流行的 DNN 模型和 ML 框架到边缘并进行高性能推理，加速和扩展下一代 AI 产品，用于实时分类、目标检测、姿态估计、语义分割和自然语言处理（NLP）等任务。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/jetson-docker/2.jpg" /></div>
 
 ## reComputer J1020 的独特之处是什么？
 
-[Seeed Studio reComputer J1020](https://wiki.seeedstudio.com/reComputer_Jetson_Series_Introduction/#recomputer-j1020) 提供了构建 AI 应用所需的一切。与 NVIDIA 提供的 Jetson Nano 开发套件相比，它不需要从头开始在 SD 卡上刷写操作系统。它预装了 Ubuntu 操作系统在 16 GB eMMC 上。reComputer 预装的 Jetpack 4.6 包括板支持包 (BSP)、Linux 操作系统、NVIDIA CUDA、cuDNN 和 TensorRT 软件库，用于深度学习、计算机视觉、GPU 计算、多媒体处理等。它支持整个 [Jetson 软件栈](https://developer.nvidia.com/embedded/develop/software) 和各种 [开发工具](https://wiki.seeedstudio.com/Jetson-AI-developer-tools)，由 Seeed Edge AI 合作伙伴提供，用于 [构建快速且强大的 AI 应用](https://wiki.seeedstudio.com/Jetson-AI-developer-tools)。
+[Seeed Studio reComputer J1020](https://wiki.seeedstudio.com/cn/reComputer_Jetson_Series_Introduction/#recomputer-j1020) 提供了构建基于 AI 应用所需的一切。与 NVIDIA 提供的 Jetson Nano 开发套件相比，它无需从头开始在 SD 卡上刷写操作系统。它预装了 Ubuntu 操作系统在 16 GB eMMC 上。reComputer 预装的 Jetpack 4.6 包括板级支持包（BSP）、Linux 操作系统、NVIDIA CUDA、cuDNN 和 TensorRT 软件库，用于深度学习、计算机视觉、GPU 计算、多媒体处理等。它支持整个 [Jetson 软件栈](https://developer.nvidia.com/embedded/develop/software) 和各种 [开发工具](https://wiki.seeedstudio.com/cn/Jetson-AI-developer-tools)，这些工具由 Seeed Edge AI 合作伙伴提供，用于[构建快速且强大的 AI 应用](https://wiki.seeedstudio.com/cn/Jetson-AI-developer-tools)。
 
 ## 一些显著特点包括
 
-- 128 个 NVIDIA CUDA® 核心 – 提供 0.5 TFLOPs (FP16)，用于运行 AI 框架和模型，例如图像分类、目标检测、分割和语音处理。
+- 128 个 NVIDIA CUDA® 核心 – 提供 0.5 TFLOPs (FP16) 的性能，用于运行图像分类、目标检测、分割和语音处理等应用的 AI 框架和模型。
 - 配备 Armv8 处理器
-- 搭载 NVIDIA Tegra X1(nvgpu)/集成
-- 磁盘容量为 16GB
+- 集成 NVIDIA Tegra X1 (nvgpu)
+- 16GB 磁盘容量
 - 4GB 内存
 - 64 位操作系统类型
 - Ubuntu 18.04.5
@@ -44,39 +40,39 @@ last_update:
 - CUDA 架构：5.3
 - OpenCV 版本：4.1.1
 
-[了解更多关于 reComputer 的硬件布局](https://wiki.seeedstudio.com/reComputer_Jetson_Series_Hardware_Layout)
+[了解更多关于 reComputer 的硬件布局](https://wiki.seeedstudio.com/cn/reComputer_Jetson_Series_Hardware_Layout)
 
 ## reComputer 的组件
 
-它包含以下部件列表：
+它包含以下部件清单：
 
 - NVIDIA Jetson Nano x1
 - Seed 参考载板 x1
-- 被动铝制散热片 x1
+- 被动式铝制散热片 x1
 - 铝制外壳 x1
 - 12V 电源适配器 x1
 - 4 个 USB 3.0 接口
 - 2 个 HDMI 接口
 - MIPI-CSI 摄像头连接器
 - 控制和 UART 接口
-- 40 针扩展接口 (GPIO, I2C, 接口)
+- 40 针扩展接口（GPIO、I2C、接口）
 - 260 针 SODIMM
 - MicroUSB
 - 千兆以太网接口
-- LED 灯
+- LED 指示灯
 
 ## 硬件设置
 
-要开始使用，您需要以下最低连接器：
+开始之前，您需要以下基本连接器：
 
 - 电源线
 - WiFi 模块 / 千兆以太网线
 - WiFi 键盘和鼠标的 USB 接收器
-- HDMI 显示器连接
+- HDMI 显示器连接线
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/jetson-docker/3.jpg" /></div>
 
-## 运行 CUDA deviceQuery
+## 运行 CUDA 的 deviceQuery
 
 ```sh
 cd /usr/local/cuda/samples/1_Utilities/deviceQuery
@@ -84,7 +80,7 @@ sudo make
 ./deviceQuery
 ```
 
-以下是结果：
+以下是运行结果：
 
 ```sh
 ./deviceQuery Starting...
@@ -136,9 +132,9 @@ Result = PASS
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/jetson-docker/4.png" /></div>
 
-[Docker](https://www.docker.com) 是一套用于创建、共享和运行独立容器的软件开发工具。它是一个容器化平台，将您的应用程序及其所有依赖项打包成 Docker 容器的形式，以确保您的应用程序能够在任何环境中无缝运行。Docker 容器是一个标准化的单元，可以即时创建以部署特定的应用程序或环境。
+[Docker](https://www.docker.com) 是一套用于创建、共享和运行独立容器的软件开发工具。它是一个容器化平台，将应用程序及其所有依赖项打包成一个 Docker 容器，以确保应用程序能够在任何环境中无缝运行。Docker 容器是一种标准化的单元，可以随时创建以部署特定的应用程序或环境。
 
-如今开发任何类型的应用程序都非常复杂，不仅仅是编写代码。涉及多种编程语言、Web 框架、复杂的架构，以及每个生命周期阶段工具之间的不连续接口，这些都增加了巨大的复杂性。Docker 简化并加速了您的工作流程，同时让开发人员可以自由选择工具、应用程序栈和每个项目的部署环境。它使您能够将应用程序与基础设施分离，从而快速交付软件。
+如今开发任何类型的应用程序都非常复杂，不仅仅是编写代码。开发过程中涉及多种编程语言、Web 框架、复杂的架构，以及每个生命周期阶段工具之间的不连续接口，这些都增加了开发的复杂性。Docker 简化并加速了您的工作流程，同时为开发人员提供了选择工具、应用程序栈和每个项目部署环境的自由。它使您能够将应用程序与基础设施分离，从而快速交付软件。
 
 Docker 在 reComputer J1020（一个基于 Jetson Nano 的开发套件）上获得官方支持。该套件默认预装了最新版本的 Docker。您可以通过运行以下命令验证 Docker 的版本：
 
@@ -213,7 +209,7 @@ docker info | grep runtime
 
 ## 运行您的第一个 Python 容器
 
-让我们通过运行以下命令测试一个简单的基于 Arm 的 Python Docker 镜像：
+让我们通过运行以下命令来测试一个简单的基于 Arm 的 Python Docker 镜像：
 
 ```sh
 sudo docker run arm64v8/python:slim ls
@@ -221,7 +217,7 @@ sudo docker run arm64v8/python:slim ls
 
 ## 使用 JTOP Docker 容器监控 CPU、GPU 和内存
 
-在本节中，您将学习如何设置一个系统监控工具来监控 CPU、RAM 和 GPU。我们将使用 JTOP 工具。JTOP 是一个运行在终端上的系统监控工具，可以实时查看和控制 reComputer Jetson Nano 套件的状态，包括 CPU、RAM、GPU 的状态和频率。您将学习如何将该工具容器化。让我们开始吧——
+在本节中，您将学习如何设置一个系统监控工具来监控 CPU、RAM 和 GPU。我们将使用 JTOP 工具。JTOP 是一个运行在终端上的系统监控工具，可以实时查看和控制您的 reComputer Jetson Nano 套件的状态，包括 CPU、RAM、GPU 的状态和频率。您将学习如何将该工具容器化。让我们开始吧——
 
 首先，创建一个包含以下内容的 Dockerfile：
 
@@ -249,7 +245,7 @@ docker build -t ajeetraina/jetson-stats-nano .
 
 ## 运行 JTOP Docker 容器
 
-现在是运行 Docker 容器的时候了，通过传递 `--gpus` 参数并将其挂载到 jtop 套接字。
+现在是时候运行 Docker 容器了，通过传递 --gpus 参数并将其挂载到 jtop 套接字。
 
 ```sh
 docker run --rm -it --gpus all -v /run/jtop.sock:/run/jtop.sock ajeetraina/jetson-stats-nano jtop
@@ -259,14 +255,14 @@ docker run --rm -it --gpus all -v /run/jtop.sock:/run/jtop.sock ajeetraina/jetso
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/jetson-docker/5.png" /></div>
 
-在我们的下一篇博客文章中，我们将看到如何在 Docker 容器中运行 OpenDatacam 实现车辆识别。敬请期待！
+在我们的下一篇博客文章中，我们将看到如何使用运行在 Docker 容器中的 OpenDatacam 实现车辆识别。敬请期待！
 
 请查看以下带有教程的应用示例！
 
-- [通过 Edge Impulse 实现行人检测](https://www.edgeimpulse.com/blog/recognizing-your-blind-spots-pedestrian-detection-system-with-nvidia-jetson-nano)
+- [Edge Impulse 的行人检测](https://www.edgeimpulse.com/blog/recognizing-your-blind-spots-pedestrian-detection-system-with-nvidia-jetson-nano)
 - [安全帽检测](https://www.seeedstudio.com/blog/2022/03/03/deploy-hard-hat-detection-for-enforcing-workplace-safety) 并构建自定义 PPE 检测
-- [使用 alwaysAI 进行姿态估计](https://alwaysai.co/blog/using-pose-estimation-on-the-jetson-nano-with-alwaysai)
-- [使用 NVIDIA Deepstream IoT 进行视觉异常检测](https://developer.nvidia.com/gtc/2020/video/s22675-vid)
+- [使用 alwaysAI 的姿态估计](https://alwaysai.co/blog/using-pose-estimation-on-the-jetson-nano-with-alwaysai)
+- [使用 NVIDIA Deepstream IoT 的视觉异常检测](https://developer.nvidia.com/gtc/2020/video/s22675-vid)
 - [零售店商品检测](https://www.seeedstudio.com/blog/2022/06/08/retail-store-items-detection-using-yolov5-roboflow-and-node-red)
 - [野火检测](https://github.com/Seeed-Studio/node-red-contrib-ml)
 - [动物检测](https://github.com/Seeed-Studio/node-red-contrib-ml)
@@ -279,7 +275,7 @@ docker run --rm -it --gpus all -v /run/jtop.sock:/run/jtop.sock ajeetraina/jetso
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们将为您提供多种支持，确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

@@ -37,7 +37,7 @@ Phospho 是机器学习工程师让真实机器人变得智能的方式。我们
 ## 入门指南
 
 ### 组装机械臂
-1. 如果您是从 Seeedstudio 购买的机械臂套件，您需要参考[此链接](https://wiki.seeedstudio.com/lerobot_so100m/#assembly)来组装您的机械臂。
+1. 如果您是从 Seeedstudio 购买的机械臂套件，您需要参考[此链接](https://wiki.seeedstudio.com/cn/lerobot_so100m/#assembly)来组装您的机械臂。
 2. 如果您是从[Phospho](https://robots.phospho.ai/)购买的，您将获得一个即开即用的设备，可以完全跳过组装过程。
 
 <div align="center">
@@ -150,7 +150,7 @@ LeRobot SO Arm 100/101 通常需要两个校准阶段：
 - [https://phospho.ai/](https://phospho.ai/) 
 - [https://docs.phospho.ai/welcome](https://docs.phospho.ai/welcome)
 - [https://github.com/phospho-app/phosphobot](https://github.com/phospho-app/phosphobot)
-- [https://wiki.seeedstudio.com/lerobot_so100m](https://wiki.seeedstudio.com/lerobot_so100m/)
+- [https://wiki.seeedstudio.com/cn/lerobot_so100m](https://wiki.seeedstudio.com/cn/lerobot_so100m/)
 
 ## 技术支持与产品讨论
 

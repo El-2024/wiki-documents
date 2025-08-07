@@ -1,18 +1,18 @@
 ---
-description: ArduPy简介
-title:  ArduPy与Wio Terminal
+description: ArduPy 的描述
+title:  ArduPy 与 Wio Terminal
 keywords:
 - Sorftware
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/ArduPy
 last_update:
-  date: 3/04/2024
-  author: 金菊
+  date: 8/7/2023
+  author: cessarr
 ---
 
 # ArduPy 入门指南
 
-要开始使用ArduPy，首先需要安装 **`aip` - ArduPy Integrated Platform** ，这是一个用于开发ArduPy并与ArduPy板进行交互的工具。它使用户能够快速开始使用ArduPy。 `aip` aip是一个简单的命令行工具。您可以通过它自定义自己的ArduPy固件，而无需了解更多关于ArduPy的细节。
+要开始使用 ArduPy，首先需要安装 **`aip` - ArduPy 集成平台**，这是一个用于开发 ArduPy 并与 ArduPy 开发板交互的实用工具。它使用户能够快速开始使用 ardupy。`aip` 是一个简单的命令行工具。您可以通过它自定义自己的 ardupy 固件，而无需了解更多关于 ArduPy 的详细信息。
 
 ## 支持的开发板
 
@@ -20,37 +20,37 @@ last_update:
 
 - [**Seeeduino XIAO**](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html)
 
-## ArduPy快速入门
+## ArduPy 快速入门
 
-以下方法是以最简单的方式体验ArduPy软件的方法。按照以下步骤开始！
+以下方法用于以最简单的方式体验 ArduPy 软件。按照以下步骤立即开始！
 
-- **步骤.1 进入引导模式**
+- **步骤 1 进入引导加载程序模式**
 
-通过USB连接将您的设备连接到电脑上。通过快速复位设备进入引导模式。
+通过 USB 连接将您的设备连接到 PC。通过快速重置设备进入引导加载程序模式。
 
-  1. 关于 **Wio Terminal**, 请参考 [此处](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/#faq).
-  2. 关于 **Seeeduino XIAO**, 请参考 [此处](https://wiki.seeedstudio.com/Seeeduino-XIAO/#reset).
+  1. 对于 **Wio Terminal**，请参考[这里](https://wiki.seeedstudio.com/cn/Wio-Terminal-Getting-Started/#faq)。
+  2. 对于 **Seeeduino XIAO**，请参考[这里](https://wiki.seeedstudio.com/cn/Seeeduino-XIAO/#reset)。
 
-您的电脑上应该会出现一个名为 **`Arduino`** 的USB驱动器。进入Arduino USB驱动器的位置。
+您的 PC 中应该会出现一个名为 **`Arduino`** 的 USB 驱动器。进入 Arduino USB 驱动器位置。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/USBdrive.png"/></div>
 
-- **步骤.2 下载ArduPy UF2固件**
+- **步骤 2 下载 ArduPy UF2 固件**
 
-以UF2文件的形式下载ArduPy固件。
+以 UF2 文件形式下载 ArduPy 固件。
 
-  1. 关于 [Wio Terminal](https://files.seeedstudio.com/wiki/Wio-Terminal/res/ArduPy_wio_terminal_lastest.uf2)
-  2. 关于 [Seeeduino XIAO](https://files.seeedstudio.com/wiki/Wio-Terminal/res/ArduPy_xiao_lastest.uf2)
+  1. 对于 [Wio Terminal](https://files.seeedstudio.com/wiki/Wio-Terminal/res/ArduPy_wio_terminal_lastest.uf2)
+  2. 对于 [Seeeduino XIAO](https://files.seeedstudio.com/wiki/Wio-Terminal/res/ArduPy_xiao_lastest.uf2)
 
-并将其保存在您的驱动器中。
+并将其保存到您的驱动器中。
 
-- **步骤.3 刷写ArduPy固件到设备**
+- **步骤 3 将 ArduPy 固件刷写到设备**
 
-一旦下载了适用于您的设备的固件，请将 `.UF2` 文件拖动到 `ARDUINO` USB驱动器中。现在，您的板子将从电脑上消失。重置板子，它将加载ArduPy固件！
+下载适用于您设备的固件后。将 `.UF2` 文件拖到 `ARDUINO` USB 驱动器。现在，您的开发板将从 PC 中消失。重置开发板，它已将 ArduPy 固件加载到其中！
 
-- **步骤.4 闪烁设备**
+- **步骤 4 让设备闪烁**
 
-现在，您的电脑上会出现一个名为 **`ARDUPY`** 的USB驱动器。打开 `ARDUPY` ，您将看到一个名为 `main.py` 的Python文件。  使用您喜欢的编辑器（如 [Microsoft Visual Studio Code](https://code.visualstudio.com/), [Atom](https://atom.io/), [Sublime Text](https://www.sublimetext.com/) 等）打开`main.py`。复制以下代码并保存 `main.py`。
+现在，您的 PC 中将出现一个名为 **`ARDUPY`** 的 USB 驱动器。打开 `ARDUPY`，您将看到一个 `main.py` python 文件。使用您喜欢的编辑器（如 [Microsoft Visual Studio Code](https://code.visualstudio.com/)、[Atom](https://atom.io/)、[Sublime Text](https://www.sublimetext.com/) 等）打开 `main.py`。复制以下代码并保存 `main.py`。
 
 ```py
 from machine import Pin, Map
@@ -65,44 +65,43 @@ while True:
     time.sleep(1)
 ```
 
-现在，您应该会看到您设备上的内置LED开始闪烁！请查看下面的章节，了解更多关于ArduPy的信息！您将学习如何使用 `ArduPy-aip` 工具以及如何使用 `aip` 构建和刷写自己的固件到设备！
+现在您应该看到设备的内置 LED 开始闪烁！查看以下部分了解更多关于 ArduPy 的信息！您将了解 `ArduPy-aip` 工具以及如何使用 `aip` 构建并将您自己的固件刷写到设备！
 
-## 在macOS上安装 `aip` 
+## 在 macOS 上安装 `aip`
 
-对于macOS用户，您可以在终端中运行以下命令来安装ArduPy-aip：
-
-```sh
-pip3 install ardupy-aip
-```
-
-**注:** 请确保您已在macOS上安装了 **Python 3** 。要安装Python 3，您可以使用 [**Homebrew**](https://brew.sh/) ，它是macOS的软件包管理器。安装了Homebrew之后，运行以下命令安装Python 3： **`brew install python3`**。您还可以 [从官方Python网站](https://www.python.org/downloads/mac-osx/)下载并安装[Python 3](https://www.python.org/downloads/mac-osx/)。
-
-
-## 在Windows上安装 `aip`
-
-您可以在下面的部分下载Windows的最新版本ArduPy。下载完成后，将二进制文件 `aip` 解压到 `PATH`中的某个目录中
-
-- [**For Windows 64 Bit**](https://files.seeedstudio.com/ardupy/tools/aip-0.5.0/aip.exe)
-
-或者，如果您已经具备 **Python 3** 环境，也可以使用 `pip3`进行安装:
+对于 macOS 用户，您可以在终端中简单运行以下命令来安装 ArduPy-aip：
 
 ```sh
 pip3 install ardupy-aip
 ```
 
-## 在Linux上安装 `aip` 
+**注意：** 请确保您已在 macOS 上安装了 **Python 3**。要安装 Python 3，您可以使用 [**Homebrew**](https://brew.sh/)，这是 macOS 的软件包管理器。安装 Homebrew 后，运行以下命令安装 python 3：**`brew install python3`**。您也可以从[官方 Python 网站下载并安装 Python 3](https://www.python.org/downloads/mac-osx/)。
 
-对于Linux用户，您可以在终端中运行以下命令来安装ArduPy-aip：
+## 在 Windows 上安装 `aip`
+
+您可以在下面的部分下载适用于 Windows 的最新版本 ArduPy。下载后，将二进制文件 `aip` 解压到您的 `PATH` 中的目录。
+
+- [**适用于 Windows 64 位**](https://files.seeedstudio.com/ardupy/tools/aip-0.5.0/aip.exe)
+
+或者如果您有 **Python 3** 环境，您也可以使用 `pip3` 安装：
 
 ```sh
 pip3 install ardupy-aip
 ```
 
-**注:** 请确保您已经安装了 **Python 3** 并且 `pip3` 已经更新至最新版本。
+## 在 Linux 上安装 `aip`
 
-## ArduPy-aip 命令行界面
+对于 Linux 用户，您可以在终端中运行以下命令来安装 ArduPy-aip：
 
-`aip` 是ArduPy的命令行界面，您可以使用aip轻松安装ArduPy库、构建和刷写ArduPy固件到硬件上。只需使用 `help` 命令获取更多信息：
+```sh
+pip3 install ardupy-aip
+```
+
+**注意：** 请确保您已安装 **Python 3** 并且 `pip3` 是最新版本。
+
+## ArduPy-aip CLI
+
+`aip` 是 ArduPy 的命令行界面，您可以使用 aip 来安装 ArduPy 库、构建 ArduPy 固件并轻松地将其刷写到硬件中。只需使用 `help` 来获取更多信息：
 
 ```sh
 aip help
@@ -110,65 +109,65 @@ aip help
 
 <div align="center"><img src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/aip-help.png"/></div>
 
-- 获取开发板信息（固件信息）:
+- 获取开发板信息（固件信息）：
 
 ```sh
 aip board
 ```
 
-- 安装与ArduPy绑定的Arduino库:
+- 安装与 ArduPy 绑定的 Arduino 库：
 
-请查看这里获取可用的 [**ArduPy 库**](https://github.com/Seeed-Studio?q=seeed-ardupy&type=&language=).
+请在此处查看可用的 [**ArduPy 库**](https://github.com/Seeed-Studio?q=seeed-ardupy&type=&language=)。
 
 ```sh
 aip install <ArduPy Library Path> 
-# Example Usage: 
+# 使用示例： 
 # aip install Seeed-Studio/seeed-ardupy-ultrasonic-sensor
 ```
 
-- 卸载ArduPy库:
+- 卸载 ArduPy 库：
 
 ```sh
 aip uninstall <ArduPy Library Path> 
-# Example Usage: 
+# 使用示例： 
 # aip uninstall Seeed-Studio/seeed-ardupy-ultrasonic-sensor
 ```
 
-- 列出已安装的ArduPy库:
+- 列出已安装的 ArduPy 库
 
 ```sh
 aip list
 ```
 
-- 构建包含您安装的库和基本ArduPy功能的ArduPy固件。请注意，您现在可以选择为 [Seeeduino XIAO](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html) 或 [Wio Terminal](https://www.seeedstudio.com/Wio-Terminal-p-4509.html) 构建!
+- 构建包含您安装的库和基本 ArduPy 功能的 ArduPy 固件。请注意，您现在可以选择为 [Seeeduino XIAO](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html) 或 [Wio Terminal](https://www.seeedstudio.com/Wio-Terminal-p-4509.html) 构建！
 
 ```sh
 aip build --board=<board>
-# For Seeeduino XIAO:
+# 对于 Seeeduino XIAO：
 # aip build --board=xiao
-# For Wio Terminal:
+# 对于 Wio Terminal：
 # aip build --board=wio_terminal
 ```
 
 
-- 刷写ArduPy固件到硬件上:
+- 将 ArduPy 固件刷写到硬件：
 
 ```sh
 aip flash
 ```
 
-!!!注
-        在命令之后，您可以使用 `-h` 标志查看该命令的更多用法。例如， `aip flash -h`。
+!!!Note
+        在命令后，您可以使用 `-h` 标志来查看该命令的更多用法。例如，`aip flash -h`。
 
-- 与开发板进行交互（基于shell的文件浏览器）:
+- 与开发板交互（基于 shell 的文件浏览器）：
 
 ```sh
 aip shell
 ```
 
-**注:** 一旦进入ardupy-mpfshell，您可以使用 `help` 获取更多信息和命令。
+**注意：** 一旦进入 ardupy-mpfshell，您可以使用 `help` 获取更多信息和命令。
 
-- 进入 **REPL** 模式:
+- 进入 **REPL** 模式：
 
 ```sh
 aip shell -c "repl"
@@ -176,57 +175,57 @@ aip shell -c "repl"
 
 <div align="center"><img src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/aip-shell.png"/></div>
 
-- 运行Python文件:
+- 运行 Python 文件：
 
 ```sh
 aip shell -n -c "runfile <YourPythonFilePath> [Path]"
-# Example Usage:
+# 使用示例：
 # aip shell -n -c "runfile /Users/ansonhe/Desktop/ur.py"
 ```
 
-- 使用shell将文件加载到开发板中:
+- 使用 shell 将文件加载到开发板：
 
 ```sh
 aip shell -n -c "put <YourPythonFilePath> [Path]"
-# Example Usage:
+# 使用示例：
 # aip shell -n -c "put /Users/ansonhe/Desktop/ur.py"
 ```
 
-### 运行您的第一个脚本t
+### 运行您的第一个脚本
 
-一旦刷写了ArduPy固件，您的电脑上应该会出现一个名为 **`ARDUPY`** 的USB驱动器。您可以创建以下Python文件以开始使用。
+一旦刷写了 ArduPy 固件，您的 PC 中应该会出现一个名为 **`ARDUPY`** 的 USB 驱动器。您可以创建以下 Python 文件来开始使用。
 
 - **`boot.py`**
 
-要在启动时运行MicroPython脚本，只需将您的项目命名为根位置的 **`boot.py`** 。 **该脚本在设备启动时执行**。
+要从启动时运行 MicroPython 脚本，只需将您的项目命名为 **`boot.py`** 并放在开发板的根目录位置。**此脚本在设备启动时执行。**
 
 - **`main.py`**
 
-这是默认的Python脚本，但它不会在启动时运行。当 `main.py` 被更改并保存后， `main.py` 将运行。即它可以自动重新加载。
+这是默认的 python 脚本，但它不会在启动时运行。当 `main.py` 保存更改时，`main.py` 会运行。即它可以自动重新加载。
 
-### 在 ardupy-mpfshell中使用
+### 在 ardupy-mpfshell 下的使用
 
-一旦进入ardupy-mpfshell，使用 `help` 来检查命令的使用方法。这里列出了一些有用的命令：
+一旦进入 ardupy-mpfshell，使用 `help` 检查命令用法。这里列出了一些有用的命令：
 
-- 列出设备上的文件:
+- 列出设备上的文件：
 
 ```sh
 ls
 ```
 
-- 删除设备上的文件（或目录）:
+- 删除设备上的文件（或目录）：
 
 ```sh
 rm <File/Directory>
 ```
 
-- 上传例如本地文件 `boot.py` 到设备:
+- 将本地文件（例如 `boot.py`）上传到设备：
 
 ```sh
 put <YourPythonFilePath> [Path]
 ```
 
-- 在设备上执行文件，例如 `test.py` on the device:
+- 执行设备上的文件，例如 `test.py`：
 
 ```sh
 execfile test.py
@@ -234,25 +233,25 @@ execfile test.py
 
 <div align="center"><img src="https://s3-us-west-2.amazonaws.com/files.seeedstudio.com/wiki/Wio-Terminal/img/aip-mpfshell.png"/></div>
 
-## 使用aip示例包含其他ArduPy库
+## 使用 aip 包含其他 ArduPy 库的示例
 
-`aip` 是ArduPy的一个关键特性，它可以将Arduino库转换为Python接口，用于ArduPy。这里提供一个示例，演示如何使用Wio Terminal将ArduPy库包含到ArduPy固件中：
+`aip` 是 ArduPy 的关键特性之一，可用于将 Arduino 库转换为 Python 接口以供 ArduPy 使用。这里我们提供一个示例，展示如何使用 Wio Terminal 将 ArduPy 库包含到 ArduPy 固件中：
 
-1.打开终端/PowerShell，运行以下命令安装ardupy库。
+1.打开终端/Powershell，运行以下命令安装 ardupy 库。
 
 ```sh
 aip install Seeed-Studio/seeed-ardupy-ultrasonic-sensor
 ```
 
-2.构建固件:
+2.构建固件：
 
 ```sh
 aip build --board=wio_terminal
 ```
 
-**注:** 刷写固件的使用方法将显示在构建的底部。
+**注意：** 烧录固件的用法将出现在构建的底部。
 
-3.将 "**NEW**" 固件刷写到开发板上 **通过复制构建结束时的用法**。aip将自动查找连接到计算机的开发板并上传固件。如果开发板未连接，将出现错误提示。
+3.通过**复制构建结束时的用法**将"**新**"固件烧录到开发板中。这里 aip 将自动查找连接到 PC 的开发板并上传固件。如果开发板未连接，将出现错误。
 
 ```sh
 aip flash
@@ -262,7 +261,7 @@ aip flash
 
 #### 库示例用法
 
-一旦将库包含在ArduPy固件中并刷写到设备上，您可以按以下方式导入和使用模块:
+一旦库被包含在 ArduPy 固件中并烧录到设备中，您可以按如下方式导入和使用模块：
 
 ```sh
 aip shell -n -c "put /Users/ansonhe/Desktop/ur.py"
@@ -270,7 +269,7 @@ aip shell -n -c "put /Users/ansonhe/Desktop/ur.py"
 
 >将 `/Users/ansonhe/Desktop` 替换为您的路径。
 
- 即`ur.py` 所在之处:
+其中 `ur.py` 是：
 
 ```py
 from arduino import grove_ultra_ranger
@@ -283,79 +282,79 @@ while True:
     time.sleep(1)
 ```
 
-有关更多参考，请查看 [seeed-ardupy-ultrasonic-sensor](https://github.com/Seeed-Studio/seeed-ardupy-ultrasonic-sensor).
+更多参考，请查看 [seeed-ardupy-ultrasonic-sensor](https://github.com/Seeed-Studio/seeed-ardupy-ultrasonic-sensor)。
 
 ### 常见问题
 
-有关更多aip参考，请访问 [ardupy-aip](https://github.com/Seeed-Studio/ardupy-aip) 以了解更多信息。
+更多 aip 参考，请访问 [ardupy-aip](https://github.com/Seeed-Studio/ardupy-aip) 了解更多。
 
 ---
 
-## 时间和延迟
+## 时间和延时
 
-- 导入时间模块和延迟:
-
-```py
-import time
-
-time.sleep(1)           # Delay for 1 second
-time.sleep_ms(500)      # Delay for 500 milliseconds
-time.sleep_us(500)      # Delay for 500 microseconds
-```
-
-- 使用时间计数器:
+- 导入时间模块和延时：
 
 ```py
 import time
 
-time.ticks_ms()          # milliseconds counter
-start = time.ticks_us()  # microseconds counter
-time.ticks_diff(time.tick_us(), start) # Measure the difference between counters
+time.sleep(1)           # 延时 1 秒
+time.sleep_ms(500)      # 延时 500 毫秒
+time.sleep_us(500)      # 延时 500 微秒
 ```
 
-**注:** 您可以使用 **`TAB`** 键进行自动建议和查看所有可用的函数。例如，在输入 `time.`后，按下 **`TAB`** 键以查看time中的所有函数。
+- 使用时间计数器：
 
-有关更多参考，请访问 [MicroPython time related functions](https://docs.micropython.org/en/latest/library/utime.html).
+```py
+import time
 
-## 引脚和GPIO
+time.ticks_ms()          # 毫秒计数器
+start = time.ticks_us()  # 微秒计数器
+time.ticks_diff(time.tick_us(), start) # 测量计数器之间的差值
+```
 
-###  Seeeduino XIAO引脚图
+**注意：** 您可以使用 **`TAB`** 键进行自动建议并查看所有可用的函数。例如，在输入 `time.` 后，按 **`TAB`** 键查看时间模块中的所有函数。
+
+更多参考，请访问 [MicroPython 时间相关函数](https://docs.micropython.org/en/latest/library/utime.html)。
+
+## 引脚和 GPIO
+
+### Seeeduino XIAO 引脚图
 
 ![](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino-XIAO-pinout.jpg)
 
-###  Wio Terminal引脚图
+### Wio Terminal 引脚图
 
 ![](https://files.seeedstudio.com/wiki/Wio-Terminal/img/WioT-Pinout.jpg)
 
-要在ArduPy中引用GPIO，只需使用您使用的设备的物理引脚映射。例如，对于Wio Terminal，引脚1是3.3V，引脚2是5V。
+要在 ArduPy 中引用 GPIO，只需使用您正在使用的设备的物理引脚映射。例如，对于 Wio Terminal，引脚 1 是 3.3V，引脚 2 是 5V。
 
-- 导入引脚并配置GPIO:
+- 导入 Pin 并配置 GPIO：
 
 ```py
 from machine import Pin
-p3 = Pin(3, Pin.OUT)    # Setting Pin 3 as a output pin
-p3.on()                 # Setting Pin 3 to HIGH
-p3.off()                # Setting Pin 3 to LOW
+p3 = Pin(3, Pin.OUT)    # 将引脚 3 设置为输出引脚
+p3.on()                 # 将引脚 3 设置为高电平
+p3.off()                # 将引脚 3 设置为低电平
 
-p3.value(1)             # Setting Pin 3 to HIGH using value method
+p3.value(1)             # 使用 value 方法将引脚 3 设置为高电平
 
 
-p5 = Pin(5, Pin.IN)     # Setting Pin 5 as input pin
-p5.value()              # Prints the value of the input pin
+p5 = Pin(5, Pin.IN)     # 将引脚 5 设置为输入引脚
+p5.value()              # 打印输入引脚的值
 
-p3 = Pin(3, Pin.OUT, value=1) # Setting Pin 3 as output pin and HIGH in one line
-p5 = Pin(5, Pin.IN, Pin.PULL_UP) # Setting Pin 5 as input with pull-up resistors
+p3 = Pin(3, Pin.OUT, value=1) # 在一行中将引脚 3 设置为输出引脚并设为高电平
+p5 = Pin(5, Pin.IN, Pin.PULL_UP) # 将引脚 5 设置为带上拉电阻的输入
 ```
 
-## Map
+## 映射
 
-为了更方便地访问开发板的外设，ArduPy使用了与Arduino相同的调用方法:
+为了更容易访问开发板外设，ArduPy 映射了与 Arduino 相同的调用方法：
 
 ```py
 from machine import Pin, Map
 import time
 
-LED = Pin(Map.LED_BUILTIN, Pin.OUT) # Setting builtin LED as output
+LED = Pin(Map.LED_BUILTIN, Pin.OUT) # 将内置LED设置为输出
 
 while True:
     LED.on()
@@ -364,96 +363,96 @@ while True:
     time.sleep(1)
 ```
 
-## PWM (脉宽调制)
+## PWM（脉宽调制）
 
-要使用PWM，您必须使用设备上的PWM通道。请参考设备引脚映射，指示PWM通道的位置。
+要使用 PWM，您必须使用设备上的 PWM 通道。请参考设备引脚图，查看 PWM 通道的位置。
 
-- 使用 PWM:
+- 使用 PWM：
 
 ```py
 from machine import Pin, PWM
 
-pwm0 = PWM(Pin(13))     # Creating PWM Channel on Pin 13
-pwm0.freq()             # Current frequency
-pwm0.freq(1000)         # Sets the frequency to 1000Hz
-pwm0.duty()             # Current duty cycle
-pwm0.duty(200)          # Sets the duty cycle to 200
-pwm0.deinit()           # Switch off PWM on the pin
+pwm0 = PWM(Pin(13))     # 在引脚13上创建PWM通道
+pwm0.freq()             # 当前频率
+pwm0.freq(1000)         # 将频率设置为1000Hz
+pwm0.duty()             # 当前占空比
+pwm0.duty(200)          # 将占空比设置为200
+pwm0.deinit()           # 关闭引脚上的PWM
 
-pwm1 = PWM(Pin(16), freq=1000, duty=200) # PWM in one line
+pwm1 = PWM(Pin(16), freq=1000, duty=200) # 一行代码设置PWM
 ```
 
 ## ADC
 
-要在设备上使用ADC，您必须使用模拟引脚。例如，Wio Terminal上的引脚13（A0）。
+要在设备上使用 ADC，您必须使用模拟引脚。例如，Wio Terminal 上的引脚 13(A0)。
 
-**注: Wio Terminal上的ADC通道是10位（0-1023）.**
+**注意：Wio Terminal 上的 ADC 通道是 10 位(0-1023)。**
 
 - 使用 ADC
 
 ```py
 from machine import ADC, Pin
 
-adc = ADC(Pin(13))      # Crating ADC on Pin 13
-adc.read()              # reading ADC value, 0 ~ 1023
+adc = ADC(Pin(13))      # 在引脚13上创建ADC
+adc.read()              # 读取ADC值，0 ~ 1023
 ```
 
 ## DAC
 
-要在设备上使用DAC，您必须使用DAC引脚或板上的PWM引脚。例如，Wio Terminal上的引脚11（DAC0）。
+要在设备上使用 DAC，您必须使用开发板上的 DAC 引脚或 PWM 引脚。例如，Wio Terminal 上的引脚 11(DAC0)。
 
-**注: Wio Terminal上的DAC通道是12位（0-4095）.**
+**注意：Wio Terminal 上的 DAC 通道是 12 位(0-4095)。**
 
-- 使用 DAC:
+- 使用 DAC：
 
 ```py
 from machine import DAC, Pin
 
-dac0 = DAC(Pin(11))      # Creating DAC on Pin 11
-dac0.write(512)          # Writing value to DAC, 512/4096*3.3 = 0.4125 V
+dac0 = DAC(Pin(11))      # 在引脚11上创建DAC
+dac0.write(512)          # 向DAC写入值，512/4096*3.3 = 0.4125 V
 
-dac1 = DAC(Pin(26), resolution=10)  # Creating DAC on Pin 26 and using 10 bit resolution
-dac1.write(1023)                    # Writing max output to DAC, 3.3V
+dac1 = DAC(Pin(26), resolution=10)  # 在引脚26上创建DAC并使用10位分辨率
+dac1.write(1023)                    # 向DAC写入最大输出值，3.3V
 ```
 
-**注:** 当在PWM引脚上使用DAC时，通道的分辨率仅为8位。
+**注意：** 在 PWM 引脚上使用 DAC 时，通道的分辨率将只有 8 位。
 
 ```py
-# Using DAC om PWM Pins
+# 在PWM引脚上使用DAC
 from machine import DAC, Pin
 
-dac2 = DAC(Pin(16))     # Creating DAC on Pin 16
-dac2.write(128)         # Writing value to DAC, 128/255*3.3 = 1.65V
+dac2 = DAC(Pin(16))     # 在引脚16上创建DAC
+dac2.write(128)         # 向DAC写入值，128/255*3.3 = 1.65V
 ```
 
 ## LCD
 
-对于Wio Terminal，TFT LCD显示屏可按如下方式使用。有关更多LCD参考，请访问 [**ArduPy LCD API 参考**](https://wiki.seeedstudio.com/ArduPy-LCD/).
+对于 Wio Terminal，TFT LCD 显示屏可以按如下方式使用。更多 LCD 参考，请访问 [**ArduPy LCD API 参考**](https://wiki.seeedstudio.com/cn/ArduPy-LCD/)。
 
 
-- 使用 LCD 模块:
+- 使用 LCD 模块：
 
 ```py
 from machine import LCD
 
-lcd = LCD()                            # Initialize LCD and turn the backlight
-lcd.fillScreen(lcd.color.BLACK)        # Fill the LCD screen with color black
-lcd.setTextSize(2)                     # Setting font size to 2
-lcd.setTextColor(lcd.color.GREEN)      # Setting test color to Green
-lcd.drawString("Hello World!", 0, 0)   # Printing Hello World at (0, 0)
+lcd = LCD()                            # 初始化LCD并打开背光
+lcd.fillScreen(lcd.color.BLACK)        # 用黑色填充LCD屏幕
+lcd.setTextSize(2)                     # 将字体大小设置为2
+lcd.setTextColor(lcd.color.GREEN)      # 将文本颜色设置为绿色
+lcd.drawString("Hello World!", 0, 0)   # 在(0, 0)位置打印Hello World
 ```
 
-**注:** 使用 **`tab`**  键查看可用函数。
+注意：使用 **`tab`** 键查看可用函数。
 
 ---
 
-## IDE 入 门
+## IDE 入门
 
-如前所述，您可以使用首选的编辑器编写Python程序。为了方便运行和测试程序，您可以简单地编辑位于 `ARDUPY` 的 `main.py` 文件（自动重新加载功能）这里将使用 **Wio Terminal**演示另一个快速示例 :
+如前所述，您可以使用您喜欢的编辑器来编写 Python 程序。为了轻松运行和测试程序，您可以简单地编辑 `ARDUPY` USB 位置中的 `main.py` 文件（自动重新加载功能）。这里将使用 **Wio Terminal** 演示另一个快速示例：
 
->在进行下一步之前，请确保您已经按照上述步骤操作。
+>确保您在下一节之前已经遵循了上述步骤。
 
-1.在 `ARDUPY` 位置打开`main.py`文件。
+1.在 `ARDUPY` USB 位置打开 `main.py`。
 
 2.将以下代码复制到 `main.py` 并保存文件。
 
@@ -465,34 +464,34 @@ DEG2RAD = 0.0174532925
 lcd = LCD()
 lcd.fillScreen(lcd.color.BLACK)
 
-# DRAW CIRCLE SEGMENTS
-# x,y == coords of centre of circle
+# 绘制圆形扇形
+# x,y == 圆心坐标
 # start_angle = 0 - 359
-# sub_angle   = 0 - 360 = subtended angle
-# r = radius
-# colour = 16 bit colour value
+# sub_angle   = 0 - 360 = 圆心角
+# r = 半径
+# colour = 16位颜色值
 
 def fillSegment(x, y, startAngle, subAngle, r, color):
-    # Calculate first pair of coordinates for segment start
+    # 计算扇形起始的第一对坐标
     sx = math.cos((startAngle - 90) * DEG2RAD)
     sy = math.sin((startAngle - 90) * DEG2RAD)
     x1 = sx * r + x
     y1 = sy * r + y
 
-    # Draw colour blocks every inc degrees
+    # 每inc度绘制颜色块
     for i in range(startAngle, startAngle+subAngle, 1):
-        # Calculate pair of coordinates for segment end
+        # 计算扇形结束的坐标对
         x2 = math.cos((i + 1 - 90) * DEG2RAD) * r + x
         y2 = math.sin((i + 1 - 90) * DEG2RAD) * r + y
 
         lcd.fillTriangle(int(x1), int(y1), int(x2), int(y2), x, y, color)
 
-        # Copy segment end to segment start for next segment
+        # 将扇形结束点复制为下一个扇形的起始点
         x1 = x2
         y1 = y2
 
 def main():
-    # Draw 4 pie chart segments
+    # 绘制4个饼图扇形
     fillSegment(160, 120, 0, 60, 100, lcd.color.RED)
     fillSegment(160, 120, 60, 30, 100, lcd.color.GREEN)
     fillSegment(160, 120, 60 + 30, 120, 100, lcd.color.BLUE)
@@ -505,10 +504,10 @@ if __name__ == "__main__":
         main()
 ```
 
-3.您应该立即看到Wio Terminal开始在屏幕上绘制饼图 !
+3.您应该看到 Wio Terminal 立即开始在屏幕上绘制饼图！
 
-自动重新加载功能在测试小型程序时非常有用。
+自动重新加载在测试小程序时非常有用。
 
 ## 技术支持
 
-请将任何技术问题提交到我们的 [论坛](https://forum.seeedstudio.com/) 。<br /><a href="https://www.seeedstudio.com/act-4.html?utm_source=wiki&utm_medium=wikibanner&utm_campaign=newproducts" target="_blank"><img src="https://files.seeedstudio.com/wiki/Wiki_Banner/new_product.jpg" /></a>
+请将任何技术问题提交到我们的[论坛](https://forum.seeedstudio.com/)<br /><a href="https://www.seeedstudio.com/act-4.html?utm_source=wiki&utm_medium=wikibanner&utm_campaign=newproducts" target="_blank"><img src="https://files.seeedstudio.com/wiki/Wiki_Banner/new_product.jpg" /></a>

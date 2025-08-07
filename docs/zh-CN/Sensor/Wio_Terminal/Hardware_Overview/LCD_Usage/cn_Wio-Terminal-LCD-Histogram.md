@@ -4,34 +4,33 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-LCD-Histogram/
+image: https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Histogram/
 slug: /cn/Wio-Terminal-LCD-Histogram
 last_update:
-  date: 3/10/2024
-  author: 金菊
+  date: 01/11/2022
+  author: gunengyu
 ---
-
 # 直方图
 
-该存储库描述了如何在Wio终端上绘制直方图。与线图库类似，您可以使用它来显示原始传感器值，以在屏幕上可视化读数。该库非常灵活，可以根据您的需求进行修改。
+本文档介绍如何在 Wio Terminal 上绘制直方图。与折线图库类似，您可以使用它来显示原始传感器数值，在屏幕上可视化读数。这个库非常灵活，可以根据您的需要进行修改。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200114131505.png" /></div>
 
-## 安装库
+## 库安装
 
 ### 安装直方图库
 
-- 访问 [Seeed_Arduino_Histogram](https://github.com/Seeed-Studio/Seeed_Arduino_Histogram) 并将整个存储库下载到您的本地驱动器。
+- 访问 [Seeed_Arduino_Histogram](https://github.com/Seeed-Studio/Seeed_Arduino_Histogram) 并将整个仓库下载到您的本地驱动器。
 
-- 现在，可以将库安装到Arduino IDE中。打开Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`, 然后选择刚刚下载的 `Seeed_Arduino_Histogram` 文件。
+- 现在，可以将库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，然后选择您刚刚下载的 `Seeed_Arduino_Histogram` 文件。
 
 ![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg)
 
 ## 入门指南
 
-### 初始化直方图
+### 初始化绘制直方图
 
-包括直方图库并初始化直方图，如下所示:
+包含直方图库并按如下方式初始化直方图：
 
 ```cpp
 #include <TFT_eSPI.h> // Hardware-specific library
@@ -48,19 +47,19 @@ void setup(void) {
 }
 ```
 
-### 创建直方图列
+### 在直方图中创建列
 
-创建直方图列：
+在直方图中创建列：
 
 ```cpp
 void formHistogram(String label,int NO,double Histogram_value,int Histogram_WIDTH,uint32_t colour);
 ```
 
-其中 `label` 是列名， `NO` 是直方图列的编号, `Histogram_value` 是直方图列的值, `Histogram_WIDTH` 是直方图列的宽度 `colour` 是直方图列的颜色。
+其中 `label` 是列下方的列名，`NO` 是直方图列的编号标签，`Histogram_value` 是直方图列的值，`Histogram_WIDTH` 是直方图列的宽度，`colour` 是直方图列的颜色。
 
-### 显示直方
+### 显示直方图
 
-图显示直方图：
+显示直方图：
 
 ```cpp
 void showHistogram();
@@ -68,13 +67,13 @@ void showHistogram();
 
 ### 更改列值
 
-更改已存在的列的值：
+更改现有列的值：
 
 ```cpp
 void changeParam(uint8_t NO, String lable, float Histogram_value, uint32_t colour);
 ```
 
-其中 `NO` 是要更改的直方图列的编号。
+其中 `NO` 指向直方图列的编号标签（要更改哪一列）。
 
 ### 删除列
 
@@ -84,17 +83,17 @@ void changeParam(uint8_t NO, String lable, float Histogram_value, uint32_t colou
 void deleteCylinder(uint8_t NO);
 ```
 
-其中 `NO` 是要删除的直方图列的编号。
+其中 `NO` 指向直方图列的编号标签。
 
-### 添加线图到直方图
+### 向直方图添加折线图
 
-添加线图:
+添加折线图：
 
 ```cpp
 void lineChart(uint32_t colour);
 ```
 
-其中 `color` 是线图的颜色。
+其中 `color` 是折线图的颜色。
 
 ### 隐藏直方图的坐标轴
 
@@ -104,7 +103,7 @@ void notShowAxis();
 
 ### 其他有用的函数
 
-有关直方图库的其他有用函数，请参考 **`Histogram.h`**. 此外，它还提供了一组示例以及一个完整的功能演示，可以在 `examples` 文件夹中找到。
+有关直方图库的更多其他有用函数，请参考 **`Histogram.h`**。此外，它还提供了一系列示例以及完整的功能演示，可以在 `examples` 文件夹中找到。
 
 ## 示例代码
 
@@ -142,9 +141,9 @@ void loop() {
 }
 ```
 
-## 技术支持 & 产品讨论
+## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们的产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

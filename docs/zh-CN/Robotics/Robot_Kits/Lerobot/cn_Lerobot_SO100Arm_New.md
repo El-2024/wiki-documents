@@ -16,7 +16,7 @@ last_update:
 # 如何从0搭建具身智能最新版Lerobot SO-ARM100和SO-ARM101机械臂并完成自定义抓取任务
 
 :::tip
-本教程已更新至最新版 [lerobot](https://huggingface.co/docs/lerobot/index)，如需查阅旧版教程，请点击[此处](https://wiki.seeedstudio.com/lerobot_so100m/)。
+本教程已更新至最新版 [lerobot](https://huggingface.co/docs/lerobot/index)，如需查阅旧版教程，请点击[此处](https://wiki.seeedstudio.com/cn/lerobot_so100m/)。
 :::
 
 [SO-10xARM](https://github.com/TheRobotStudio/SO-ARM100) 是由 [TheRobotStudio](https://www.therobotstudio.com/) 发起的一个完全开源的机器人手臂项目。它包括从动臂和领导臂手臂，并提供详细的3D打印文件和操作指南。[LeRobot](https://github.com/huggingface/lerobot/tree/main) 致力于为真实世界的机器人提供 PyTorch 中的模型、数据集和工具。其目标是降低机器人学的入门门槛，使每个人都能通过共享数据集和预训练模型进行贡献和受益。LeRobot 集成了经过验证的前沿方法，专注于模仿学习和强化学习。它提供了一套预训练模型、包含人类收集的示范数据集和仿真环境，使用户无需进行机器人组装即可开始使用。未来几周，计划在当前最具成本效益和性能的机器人上增强对真实世界机器人的支持。
@@ -922,7 +922,7 @@ python -m lerobot.record  \
 
 ## 参考文档
 
-[English Document](https://wiki.seeedstudio.com/lerobot_so100m_new/)
+[English Document](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/)
 
 TheRobotStudio Project: [SO-ARM10x](https://github.com/TheRobotStudio/SO-ARM100)
 

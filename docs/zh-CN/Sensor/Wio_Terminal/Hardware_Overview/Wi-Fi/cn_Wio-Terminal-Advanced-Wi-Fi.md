@@ -1,38 +1,37 @@
 ---
-title: 高级 Wi-Fi 使用方法
+title: 高级 Wi-Fi 使用
 nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-Advanced-Wi-Fi/
+image: https://wiki.seeedstudio.com/cn/Wio-Terminal-Advanced-Wi-Fi/
 slug: /cn/Wio-Terminal-Advanced-Wi-Fi
 last_update:
-  date: 3/10/2024
-  author: 金菊
+  date: 01/11/2022
+  author: gunengyu
 ---
+# 高级 Wi-Fi 使用
 
-# 高级 Wi-Fi 使用方法
+本 wiki 介绍了 Wi-Fi 的一些高级库使用方法，如 **HTTPClient、DNSServer 和 WebServer** 库。通过实现这些库，您可以使用简单的 API 开发您的物联网项目。
 
-本 Wiki 介绍了 Wi-Fi 的一些高级库用法，例如 **HTTPClient, DNSServer 和 WebServer** 。通过使用这些库，您可以使用简单的 API 开发物联网项目。
-
-请确保您已按照 [**Network 概述**](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/) 中的说明更新了 **最新的固件和依赖库** 。
+请确保您已经按照 [**网络概述**](https://wiki.seeedstudio.com/cn/Wio-Terminal-Network-Overview/) 更新了**最新的固件和依赖库**。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/banner.png" /></div>
 
 :::note
-    确保 **the RTL8720 固件版本 >= v2.0.2**
+    确保 **RTL8720 固件版本 >= v2.0.2**
 :::
-## HTTPClient 使用方法
+## HTTPClient 使用
 
-HTTPClient 用于轻松地向 Web 服务器发送  **HTTP GET, POST 和 PUT**  请求。以下是一些示例，帮助您入门！
+HTTPClient 用于非常轻松地向 Web 服务器发出 **HTTP GET、POST 和 PUT** 请求。以下是一些帮助您入门的示例！
 
 ### HTTP GET 示例
 
-这是使用 HTTPClient 进行简单 HTTP 连接并将响应打印到串行监视器的示例。
+这是一个使用 HTTPClient 进行简单 HTTP 连接并将响应打印回串行监视器的示例。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/HTTP.png" /></div>
 
-- 将 `yourNetwork` 和 `yourPassword`  更改为您的 Wi-Fi 的 **ssid** 和 **password**。
+- 将 `yourNetwork` 和 `yourPassword` 更改为您的 WiFi **ssid** 和**密码**。
 
 - 将代码上传到 Wio Terminal。
 
@@ -84,17 +83,17 @@ void loop() {
 }
 ```
 
-### HTTPS GET 示例
+### HTTPs GET 示例
 
-这是使用 HTTPClient 库进行 **HTTPs connection** 的示例。您可以参考此示例发送 HTTPS GET 请求以访问您想要访问的网站！
+这是使用 HTTPClient 库的 **HTTPs 连接**。您可以参考此示例向您想要访问的网站发送 HTTPs GET 请求！
 
-:::注
-    您可以根据 [**此文档**](https://wiki.seeedstudio.com/Wio-Terminal-Wi-Fi/#obtaining-websites-root-ca)找到网站的根 CA。
+:::note
+    您可以按照[**此方法**](https://wiki.seeedstudio.com/cn/Wio-Terminal-Wi-Fi/#obtaining-websites-root-ca)找到网站的根 CA。
 :::
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/HTTPs.png" /></div>
 
 
-- 将 `yourNetwork` 和 `yourPassword` 更改为您的 Wi-Fi 的 **ssid** 和 **password**。
+- 将 `yourNetwork` 和 `yourPassword` 更改为您的 WiFi **ssid** 和**密码**。
 
 - 将代码上传到 Wio Terminal。
 
@@ -140,11 +139,11 @@ void setup() {
   Serial.begin(115200);
   WiFi.begin(ssid, password);
 
-  while (WiFi.status() != WL_CONNECTED) { //Check for the connection
+  while (WiFi.status() != WL_CONNECTED) { //检查连接状态
     delay(500);
-    Serial.println("Connecting..");
+    Serial.println("连接中..");
   }
-  Serial.print("Connected to the WiFi network with IP: ");
+  Serial.print("已连接到WiFi网络，IP地址为: ");
   Serial.println(WiFi.localIP());
   client.setCACert(test_root_ca);
 }
@@ -152,56 +151,56 @@ void setup() {
 void loop() {
   if(&client) {
     {
-      // Add a scoping block for HTTPClient https to make sure it is destroyed before WiFiClientSecure *client is 
+      // 为HTTPClient https添加一个作用域块，确保在WiFiClientSecure *client之前销毁
       HTTPClient https;
-      Serial.print("[HTTPS] begin...\n");
+      Serial.print("[HTTPS] 开始...\n");
       if (https.begin(client, "https://www.google.com/index.html")) {  // HTTPS
         Serial.print("[HTTPS] GET...\n");
-        // start connection and send HTTP header
+        // 开始连接并发送HTTP头
         int httpCode = https.GET();
-        // httpCode will be negative on error
+        // 出错时httpCode为负数
         if (httpCode > 0) {
-          // HTTP header has been send and Server response header has been handled
-          Serial.printf("[HTTPS] GET... code: %d\n", httpCode);
-          // file found at server
+          // HTTP头已发送，服务器响应头已处理
+          Serial.printf("[HTTPS] GET... 代码: %d\n", httpCode);
+          // 在服务器上找到文件
           if (httpCode == HTTP_CODE_OK || httpCode == HTTP_CODE_MOVED_PERMANENTLY) {
             String payload = https.getString();
             Serial.println(payload);
           }
         } else {
-          Serial.printf("[HTTPS] GET... failed, error: %s\n", https.errorToString(httpCode).c_str());
+          Serial.printf("[HTTPS] GET... 失败，错误: %s\n", https.errorToString(httpCode).c_str());
         }
         https.end();
       } else {
-        Serial.printf("[HTTPS] Unable to connect\n");
+        Serial.printf("[HTTPS] 无法连接\n");
       }
-      // End extra scoping block
+      // 结束额外的作用域块
     }
   } else {
-    Serial.println("Unable to create client");
+    Serial.println("无法创建客户端");
   }
   Serial.println();
-  Serial.println("Waiting 10s before the next round...");
+  Serial.println("等待10秒后进行下一轮...");
   delay(10000);
 }
 ```
 
 ### HTTP POST 示例
 
-这是使用 Wio Terminal 的 HTTPClient 发送 **HTTP POST request** 的示例，将数据发送到 Web 服务器。为了演示，我们将在我们的 PC 上使用 Python 设置一个简单的 Web 服务器，用于接收和响应 HTTP 请求。
+这是一个使用 Wio Terminal 的 HTTPClient 向 Web 服务器发送 **HTTP POST 请求**的示例。在此演示中，我们使用 Python 在 PC 上设置一个简单的 Web 服务器，该服务器可以接收和响应 HTTP 请求。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/HTTP-POST.png" /></div>
 
 
 #### Python 服务器代码
 
-首先，我们需要使用 `pip` 在 Python 中安装所需的 **bottle 库** 在终端中运行以下命令来安装 bottle：
+首先，我们需要使用 `pip` 在 Python 中安装所需的 **bottle 库**。在终端中运行以下命令来安装 bottle：
 
 ```sh
 pip install bottle
 ```
 
-导入 bottle 库后，复制以下代码并保存为  **`simple-server.py`** 。您也可以将端口更改为您喜欢的其他值，但请确保与 Arduino 侧的端口匹配。
+导入bottle后，复制以下代码并保存为**`simple-server.py`**。您也可以将端口更改为您喜欢的其他端口，但请确保这与Arduino端匹配。
 
 ```py
 from bottle import run, request, post
@@ -216,11 +215,11 @@ run(host='0.0.0.0', port=1880, debug=True)
 
 #### Arduino 代码
 
-- 将 `yourNetwork` 和 `yourPassword` 更改为您的 Wi-Fi 的 **ssid** 和 **password**。
+- 将 `yourNetwork` 和 `yourPassword` 更改为您的 WiFi **ssid** 和 **password**。
 
 - 将代码上传到 Wio Terminal。
 
-- 检查终端，您将看到来自 Wio Terminal 的传入 HTTP 请求消息。
+- 检查终端，您可以看到来自 Wio Terminal 的传入 HTTP 请求消息。
 
 ```cpp
 #include <rpcWiFi.h>
@@ -275,20 +274,20 @@ void loop() {
 
 ## WebServer 使用方法
 
-通过使用 **WebServer 库**, 您可以在 Wio Terminal 上设置运行的 Web 服务器。通过使用连接到与 Wio Terminal 相同网络的任何计算机上运行的浏览器访问服务器，您可以从网页上 **控制硬件、读取传感器的值** 等等！
+借助 **WebServer 库**，您可以在 Wio Terminal 上设置运行的 Web 服务器。通过使用连接到与 Wio Terminal 相同网络的任何计算机上运行的浏览器访问服务器，您可以**从网页控制硬件、读取传感器的值**等等！
 
 ### 简单的 HelloServer 示例
 
-这会在连接的网络上使用 Wio Terminal 设置一个简单的 Web 服务器。
+这将使用 Wio Terminal 在连接的网络上设置一个简单的 Web 服务器。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/helloServer.png" /></div>
 
 
-- 将 `yourNetwork` 和 `yourPassword` 更改为您的 Wi-Fi 的 **ssid** 和 **password**。
+- 将 `yourNetwork` 和 `yourPassword` 更改为您的 WiFi **ssid** 和**密码**。
 
 - 将代码上传到 Wio Terminal。
 
-- 使用浏览器从相同网络中输入 Wio Terminal 的 IP 地址访问 Web 服务器。
+- 通过使用浏览器从同一网络输入 Wio Terminal 的 IP 来访问 Web 服务器。
 
 ```cpp
 #include <rpcWiFi.h>
@@ -359,18 +358,18 @@ void loop(void) {
 }
 ```
 
-### HTTP 认证 Web 服务器示例
+### HTTP 身份验证 Web 服务器示例
 
-这个示例设置了一个需要进行认证过程的 Web 服务器，这在某些情况下非常有用以增加安全性。
+此示例设置了一个需要身份验证过程的 Web 服务器，在某些情况下对于安全目的非常有用。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/auth.gif" /></div>
 
 
-- 将 `yourNetwork` 和 `yourPassword` 更改为您的 Wi-Fi 的 **ssid** 和 **password**。
+- 将 `yourNetwork` 和 `yourPassword` 更改为您的 WiFi **ssid** 和**密码**。
 
 - 将代码上传到 Wio Terminal。
 
-- 使用浏览器从相同网络中输入 Wio Terminal 的 IP 地址访问 Web 服务器，并输入预设的用户名和密码。
+- 通过浏览器从同一网络输入 Wio Terminal 的 IP 地址来访问 Web 服务器，并输入预设的用户名和密码。
 
 ```cpp
 #include <rpcWiFi.h>
@@ -414,22 +413,22 @@ void loop() {
 
 ## DNSServer 使用方法
 
-我们之前讨论了 **WebServer**, 我们使用 **IP address** 址来访问它。但是如果您想通过输入域名 (例如 `www.google.com`) 来访问它，那么您需要使用 **DNSServer**。
+我们讨论了 **WebServer**，我们使用 **IP 地址** 来访问它。但是如果你想通过输入域名（如 `www.google.com`）来访问它，那么你需要使用 **DNSServer**。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/DNS.gif" /></div>
 
 
-- 使用DNSServer必须处于 **AP 模式** 下。
+- 使用 DNSServer 必须在 **AP 模式** 下。
 
-- 引入相应的库  `#include <DNSServer.h>` 。
+- 引入相应的库 `#include <DNSServer.h>`。
 
 - 声明 `DNSServer` 对象。
 
-- 使用 `start()` 方法启动DNS服务器。
+- 使用 `start()` 方法启动 DNS 服务器。
 
 - 使用 `processNextRequest()` 方法处理来自客户端的请求。
 
-- 将代码上传到Wio Terminal，并将您的PC连接到 `DNSServer example` Wi-Fi。
+- 将代码上传到 Wio Terminal 并将你的 PC 连接到 `DNSServer example` Wi-Fi。
 
 - 输入 `www.wioterminal.com` 和 `www.wioterminal.com/p1`。
 
@@ -466,7 +465,7 @@ void setup()
   webserver.on("/", handleRoot);
   webserver.on("/p1", handleP1);
 
-  dnsServer.start(DNS_PORT, "www.wioterminal.com", local_IP); //Start the DNS service, example.com is the registered domain name.
+  dnsServer.start(DNS_PORT, "www.wioterminal.com", local_IP); //启动 DNS 服务，example.com 是注册的域名。
   webserver.begin();
 }
 
@@ -477,30 +476,30 @@ void loop()
 }
 ```
 
-## mDNS 使用方法
+## mDNS 使用
 
-**什么是组播DNS(mDNS)？**
+**什么是多播 DNS(mDNS)？**
 
-[multicast DNS (mDNS)](https://en.wikipedia.org/wiki/Multicast_DNS) 协议用于解析小型网络中的主机名到IP地址，这些网络不包括本地名称服务器。mDNS专为小型网络设计，旨在提高其用户友好性。其理念是用户可以在私有局域网中连接设备而无需任何问题。
+[多播 DNS (mDNS)](https://en.wikipedia.org/wiki/Multicast_DNS) 协议在不包含本地名称服务器的小型网络中将主机名解析为 IP 地址。多播 DNS 专为小型网络设计，旨在提高其用户友好性。其理念是用户可以在私有局域网中无缝连接设备。
 
 ### 安装 Seeed_Arduino_rpcmDNS
 
-1. 访问 [**Seeed_Arduino_rpcmDNS**](https://github.com/Seeed-Studio/Seeed_Arduino_rpcmDNS) 存储库，并将整个存储库下载到本地驱动器。
+1. 访问 [**Seeed_Arduino_rpcmDNS**](https://github.com/Seeed-Studio/Seeed_Arduino_rpcmDNS) 仓库并将整个仓库下载到本地驱动器。
 
-2. 现在，可以将Seeed_Arduino_rpcmDNS库安装到Arduino IDE中。打开Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`, 选择刚刚下载的 `Seeed_Arduino_rpcmDNS` 文件。
+2. 现在，可以将 Seeed_Arduino_rpcmDNS 库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，然后选择刚刚下载的 `Seeed_Arduino_rpcmDNS` 文件。
 
 ### mDNS Web 服务器示例
 
-这是一个在Wio Terminal上设置mDNS Web服务器的示例，以便在同一网络中连接的其他设备可以浏览定义的网站。
+这是一个在 Wio Terminal 上设置 mDNS web 服务器的示例，使连接到同一网络的其他设备可以在定义的站点浏览该 web 服务器。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/mdns-webserver.png" /></div>
 
 
-- 更改 `yourNetwork` 和 `yourPassword` 更改为您的WiFi的 **ssid** 和 **password**。
+- 将 `yourNetwork` 和 `yourPassword` 更改为您的 WiFi **ssid** 和**密码**。
 
 - 将代码上传到 Wio Terminal。
 
-- 使用浏览器在同一网络中输入 http://WioTerminal.local/ 访问web服务器，并输入预设的用户名和密码。
+- 通过在同一网络中使用浏览器输入 http://WioTerminal.local/ 来访问 web 服务器，并输入预设的用户名和密码。
 
 ```cpp
 #include <rpcWiFi.h>
@@ -510,7 +509,7 @@ void loop()
 const char* ssid     = "yourNetwork";
 const char* password = "yourPassword";
 
-// TCP server at port 80 will respond to HTTP requests
+// 端口80的TCP服务器将响应HTTP请求
 WiFiServer server(80);
 
 void setup(void)
@@ -519,71 +518,71 @@ void setup(void)
     while(!Serial){
         ;
     }
-    Serial.printf("Setup Start \r\n");
-    // Connect to WiFi network
+    Serial.printf("设置开始 \r\n");
+    // 连接到WiFi网络
     WiFi.begin(ssid, password);
     Serial.println("");
 
-    // Wait for connection
+    // 等待连接
     while (WiFi.status() != WL_CONNECTED) {
         delay(500);
         Serial.print(".");
     }
     Serial.println("");
-    Serial.print("Connected to ");
+    Serial.print("已连接到 ");
     Serial.println(ssid);
-    Serial.print("IP address: ");
+    Serial.print("IP地址: ");
     Serial.println(WiFi.localIP());
 
-    // Set up mDNS responder:
-    // - first argument is the domain name, in this example
-    //   the fully-qualified domain name is "esp8266.local"
-    // - second argument is the IP address to advertise
-    //   we send our IP address on the WiFi network
+    // 设置mDNS响应器:
+    // - 第一个参数是域名，在这个例子中
+    //   完全限定域名是 "esp8266.local"
+    // - 第二个参数是要广播的IP地址
+    //   我们发送WiFi网络上的IP地址
     if (!MDNS.begin("WioTerminal")) {
-        Serial.println("Error setting up MDNS responder!");
+        Serial.println("设置MDNS响应器时出错!");
         while(1) {
             delay(1000);
         }
     }
-    Serial.println("mDNS responder started");
+    Serial.println("mDNS响应器已启动");
 
-    // Start TCP (HTTP) server
+    // 启动TCP (HTTP) 服务器
     server.begin();
-    Serial.println("TCP server started");
+    Serial.println("TCP服务器已启动");
 
-    // Add service to MDNS-SD
+    // 向MDNS-SD添加服务
     MDNS.addService("http", "tcp", 80);
 
-    Serial.printf("Setup Done \r\n");
+    Serial.printf("设置完成 \r\n");
 }
 
 void loop(void)
 {
-    // Check if a client has connected
+    // 检查是否有客户端连接
     WiFiClient client = server.available();
     if (!client) {
         return;
     }
     Serial.println("");
-    Serial.println("New client");
-    // Wait for data from client to become available
+    Serial.println("新客户端");
+    // 等待客户端数据变为可用
     while(client.connected() && !client.available()){
         delay(1);
     }
-    // Read the first line of HTTP request
+    // 读取HTTP请求的第一行
     String req = client.readStringUntil('\r');
-    // First line of HTTP request looks like "GET /path HTTP/1.1"
-    // Retrieve the "/path" part by finding the spaces
+    // HTTP请求的第一行看起来像 "GET /path HTTP/1.1"
+    // 通过查找空格来检索 "/path" 部分
     int addr_start = req.indexOf(' ');
     int addr_end = req.indexOf(' ', addr_start + 1);
     if (addr_start == -1 || addr_end == -1) {
-        Serial.print("Invalid request: ");
+        Serial.print("无效请求: ");
         Serial.println(req);
         return;
     }
     req = req.substring(addr_start + 1, addr_end);
-    Serial.print("Request: ");
+    Serial.print("请求: ");
     Serial.println(req);
 
     String s;
@@ -591,33 +590,33 @@ void loop(void)
     {
         IPAddress ip = WiFi.localIP();
         String ipStr = String(ip[0]) + '.' + String(ip[1]) + '.' + String(ip[2]) + '.' + String(ip[3]);
-        s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>Hello from Wio Terminal at ";
+        s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>来自Wio Terminal的问候，地址: ";
         s += ipStr;
         s += "</html>\r\n\r\n";
-        Serial.println("Sending 200");
+        Serial.println("发送200");
     }
     else
     {
         s = "HTTP/1.1 404 Not Found\r\n\r\n";
-        Serial.println("Sending 404");
+        Serial.println("发送404");
     }
     client.print(s);
 
     client.stop();
-    Serial.println("Done with client");
+    Serial.println("客户端处理完成");
 }
 ```
 
 ### mDNS-SD 示例
 
-这是一个 [mDNS-SD(服务发现)](https://github.com/Seeed-Studio/Seeed_Arduino_rpcmDNS/blob/main/examples/mDNS-SD_Extended/mDNS-SD_Extended.ino) 示例，允许您在同一网络中发现服务。
+这是一个 [mDNS-SD(服务发现)](https://github.com/Seeed-Studio/Seeed_Arduino_rpcmDNS/blob/main/examples/mDNS-SD_Extended/mDNS-SD_Extended.ino) 示例，允许您发现同一网络中的服务。
 
 关于 [基于DNS的服务发现](https://en.wikipedia.org/wiki/Zero-configuration_networking#DNS-SD)
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/mdns-sd.png" /></div>
 
 
-- 将 `yourNetwork` 和 `yourPassword` 更改为您的WiFi的 **ssid** 和 **password**。
+- 将 `yourNetwork` 和 `yourPassword` 更改为您的WiFi **ssid** 和 **密码**。
 
 - 将代码上传到 Wio Terminal。
 
@@ -629,7 +628,7 @@ void loop(void)
 const char* ssid     = "yourNetwork";
 const char* password = "yourPassword";
 
-// TCP server at port 80 will respond to HTTP requests
+// 端口80的TCP服务器将响应HTTP请求
 WiFiServer server(80);
 
 void setup(void)
@@ -638,71 +637,71 @@ void setup(void)
     while(!Serial){
         ;
     }
-    Serial.printf("Setup Start \r\n");
-    // Connect to WiFi network
+    Serial.printf("设置开始 \r\n");
+    // 连接到WiFi网络
     WiFi.begin(ssid, password);
     Serial.println("");
 
-    // Wait for connection
+    // 等待连接
     while (WiFi.status() != WL_CONNECTED) {
         delay(500);
         Serial.print(".");
     }
     Serial.println("");
-    Serial.print("Connected to ");
+    Serial.print("已连接到 ");
     Serial.println(ssid);
-    Serial.print("IP address: ");
+    Serial.print("IP地址: ");
     Serial.println(WiFi.localIP());
 
-    // Set up mDNS responder:
-    // - first argument is the domain name, in this example
-    //   the fully-qualified domain name is "esp8266.local"
-    // - second argument is the IP address to advertise
-    //   we send our IP address on the WiFi network
+    // 设置mDNS响应器:
+    // - 第一个参数是域名，在这个例子中
+    //   完全限定域名是 "esp8266.local"
+    // - 第二个参数是要广播的IP地址
+    //   我们发送WiFi网络上的IP地址
     if (!MDNS.begin("WioTerminal")) {
-        Serial.println("Error setting up MDNS responder!");
+        Serial.println("设置MDNS响应器时出错!");
         while(1) {
             delay(1000);
         }
     }
-    Serial.println("mDNS responder started");
+    Serial.println("mDNS响应器已启动");
 
-    // Start TCP (HTTP) server
+    // 启动TCP (HTTP) 服务器
     server.begin();
-    Serial.println("TCP server started");
+    Serial.println("TCP服务器已启动");
 
-    // Add service to MDNS-SD
+    // 向MDNS-SD添加服务
     MDNS.addService("http", "tcp", 80);
 
-    Serial.printf("Setup Done \r\n");
+    Serial.printf("设置完成 \r\n");
 }
 
 void loop(void)
 {
-    // Check if a client has connected
+    // 检查是否有客户端连接
     WiFiClient client = server.available();
     if (!client) {
         return;
     }
     Serial.println("");
-    Serial.println("New client");
-    // Wait for data from client to become available
+    Serial.println("新客户端");
+    // 等待客户端数据变为可用
     while(client.connected() && !client.available()){
         delay(1);
     }
-    // Read the first line of HTTP request
+    // 读取HTTP请求的第一行
     String req = client.readStringUntil('\r');
-    // First line of HTTP request looks like "GET /path HTTP/1.1"
-    // Retrieve the "/path" part by finding the spaces
+    // HTTP请求的第一行看起来像 "GET /path HTTP/1.1"
+    // 通过查找空格来检索 "/path" 部分
     int addr_start = req.indexOf(' ');
     int addr_end = req.indexOf(' ', addr_start + 1);
     if (addr_start == -1 || addr_end == -1) {
-        Serial.print("Invalid request: ");
+        Serial.print("无效请求: ");
         Serial.println(req);
         return;
     }
     req = req.substring(addr_start + 1, addr_end);
-    Serial.print("Request: ");
+    Serial.print("请求: ");
     Serial.println(req);
 
     String s;
@@ -710,43 +709,43 @@ void loop(void)
     {
         IPAddress ip = WiFi.localIP();
         String ipStr = String(ip[0]) + '.' + String(ip[1]) + '.' + String(ip[2]) + '.' + String(ip[3]);
-        s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>Hello from Wio Terminal at ";
+        s = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>来自Wio Terminal的问候，地址: ";
         s += ipStr;
         s += "</html>\r\n\r\n";
-        Serial.println("Sending 200");
+        Serial.println("发送200");
     }
     else
     {
         s = "HTTP/1.1 404 Not Found\r\n\r\n";
-        Serial.println("Sending 404");
+        Serial.println("发送404");
     }
     client.print(s);
 
     client.stop();
-    Serial.println("Done with client");
+    Serial.println("客户端处理完成");
 }
 ```
 
 ## WiFiManager 使用方法
 
-我们已经将知名的WiFi Manager移植到Wio Terminal平台，以便您可以使用手机或其他设备为Wio Terminal配置Wi-Fi设置！
+我们已经将知名的 WiFi Manager 移植到 Wio Terminal 平台，这样您就可以使用手机或其他设备为您的 Wio Terminal 配置 Wi-Fi 设置！
 
 ### 安装 Seeed_Arduino_rpcWiFiManager
 
-1. 访问 [**Seeed_Arduino_rpcWiFiManager**](https://github.com/Seeed-Studio/Seeed_Arduino_rpcWiFiManager) 存储库，并将整个存储库下载到本地驱动器。
+1. 访问 [**Seeed_Arduino_rpcWiFiManager**](https://github.com/Seeed-Studio/Seeed_Arduino_rpcWiFiManager) 仓库，并将整个仓库下载到您的本地驱动器。
 
-2. 现在，可以将Seeed_Arduino_rpcWiFiManager库安装到Arduino IDE中。打开Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`, 选择刚刚下载的 `Seeed_Arduino_rpcWiFiManager` 文件。
+2. 现在，可以将 Seeed_Arduino_rpcWiFiManager 库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，然后选择您刚刚下载的 `Seeed_Arduino_rpcWiFiManager` 文件。
 
 ### WiFiManager 自动连接示例
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/wifimanager.gif" /></div>
 
 
-这个示例演示了自动连接示例。您可以使用该示例来设置Wio Terminal的WiFi设置。
+这个示例演示了自动连接功能。您可以使用这个示例为 Wio Terminal 设置 WiFi 配置。
 
-- 将代码上传到Wio Terminal。
+- 将代码上传到 Wio Terminal。
 
-- 如果Wio Terminal以前连接过WiFi，它将自动连接到同一个网络。如果无法连接到任何WiFi，它将进入AP模式并发出一个WiFi信号。使用手机连接到此WiFi并输入WiFi设置。
+- 如果 Wio Terminal 之前已连接过 WiFi，它将自动连接到相同的网络。如果无法连接到任何 WiFi，它将进入 AP 模式并发射一个 WiFi。使用您的手机连接到这个 WiFi 并输入 WiFi 设置。
 
 ```cpp
 #include <rpcWiFi.h>
@@ -780,10 +779,9 @@ void loop() {
 }
 ```
 
-## 技术支持 & 产品讨论
-
- 如果您有任何技术问题，请将问题提交到我们的 [论坛](http://forum.seeedstudio.com/)。 
-感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们的产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+## 技术支持与产品讨论
+如果您有任何技术问题，请将问题提交到我们的[论坛](http://forum.seeedstudio.com/)。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

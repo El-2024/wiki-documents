@@ -1,5 +1,5 @@
 ---
-description: 本文档提供了在 Raspberry Pi 5 上部署 Frigate NVR 和 Hailo 8 的分步指南。
+description: 本文提供了在 Raspberry Pi 5 上使用 Hailo 8 部署 Frigate NVR 的分步指南。
 title: 使用 Raspberry Pi 5 部署 Frigate NVR
 keywords:
   - Edge
@@ -8,20 +8,17 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/frigate.webp
 slug: /cn/frigate_nvr_with_raspberrypi_5
 last_update:
-  date: 05/15/2025
+  date: 2025/03/04
   author: Joshua Lee
 
 no_comments: false # 用于 Disqus
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
-## 简介
+## 介绍
 
-**Frigate NVR** 是一个开源的网络视频录像机，专为使用 AI 模型进行实时目标检测而设计。结合 **Raspberry Pi 5**，它可以实现高效的边缘视频监控。本指南将引导您完成安装和配置过程，以实现最佳设置。
+**Frigate NVR** 是一个开源的网络视频录像机，专为使用 AI 模型进行实时目标检测而设计。结合 **Raspberry Pi 5**，它能够实现高效的边缘视频监控。本指南将引导您完成安装和配置过程，以实现最佳设置。
 
-## 官方 Frigate 
+## 官方 Frigate
 
 ### 准备硬件
 
@@ -45,7 +42,7 @@ no_comments: false # 用于 Disqus
 	</table>
 </div>
 
-**或者，您还需要至少一台用于视频流的摄像头。您可以参考 [推荐硬件](https://docs.frigate.video/frigate/hardware#cameras) 查看推荐的摄像头。**
+**或者，您至少需要一台摄像机进行视频流传输。您可以参考 [推荐硬件](https://docs.frigate.video/frigate/hardware#cameras) 查看推荐的摄像机。**
 
 ### 安装 Hailo PCIe 驱动
 
@@ -107,7 +104,7 @@ $ sudo mkdir -p /lib/firmware/hailo
 $ sudo cp hailo8_fw*.bin /lib/firmware/hailo/hailo8_fw.bin
 ```
 
-为避免 PCIe max_desc_page_size 问题，我们还需要在 `/etc/modprobe.d/hailo_pci.conf` 中创建一个规则，内容如下。
+为避免 PCIe max_desc_page_size 问题，我们还需要在 `/etc/modprobe.d/hailo_pci.conf` 中创建一个规则，内容如下：
 
 ```bash
 options hailo_pci force_desc_page_size=4096
@@ -119,7 +116,7 @@ options hailo_pci force_desc_page_size=4096
 $ sudo reboot
 ```
 
-系统重启后，Hailo PCIe 驱动已成功安装。将会创建 `/dev/hailo0` 设备。运行以下命令检查设备。
+系统重启后，Hailo PCIe 驱动已成功安装。将创建 `/dev/hailo0` 设备。运行以下命令检查设备。
 
 ```bash
 $ ls /dev/hailo*
@@ -128,7 +125,7 @@ $ ls /dev/hailo*
 
 ### 安装 Frigate NVR
 
-在本部分中，我们假设您已设置好摄像头，并准备通过 RTSP 协议以 1920x1080 分辨率进行流媒体传输。
+在本部分中，我们假设您已设置好摄像机，并准备通过 RTSP 协议以 1920x1080 分辨率进行流传输。
 
 - 示例 RTSP URL: `rtsp://admin:passw0rd@192.168.98.11:554/cam/realmonitor?channel=1&subtype=0`
 
@@ -157,7 +154,7 @@ $ ls /dev/hailo*
 
 1. **拉取 Frigate 镜像：**
 
-    前往 [Package frigate](https://github.com/blakeblackshear/frigate/pkgs/container/frigate/versions)，选择一个带有 `-h8l` 后缀的镜像。在本例中，我们选择 `ghcr.io/blakeblackshear/frigate:0.15.0-rc2-h8l`。
+    访问 [Package frigate](https://github.com/blakeblackshear/frigate/pkgs/container/frigate/versions)，选择带有 `-h8l` 后缀的镜像。在本例中，我们选择 `ghcr.io/blakeblackshear/frigate:0.15.0-rc2-h8l`。
 
     ```bash
     $ docker pull ghcr.io/blakeblackshear/frigate:0.15.0-rc2-h8l
@@ -240,7 +237,7 @@ $ ls /dev/hailo*
     $ docker compose -f frigate.yml up -d
     ```
 
-    当 Frigate 启动并运行后，您可以通过访问 `http://<your-raspberry-pi-ip>:5000` 打开 Frigate 的 Web 界面以检查摄像头流。
+    当 Frigate 启动并运行后，您可以通过访问 `http://<your-raspberry-pi-ip>:5000` 打开 Frigate 的 Web 界面来检查摄像头流。
 
     ![frigate-web](https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/frigate_web.webp)
 
@@ -248,12 +245,12 @@ $ ls /dev/hailo*
 
 ### 修改 PCIe 设置
 
-打开 config.txt 文件
+打开 config.txt
 ```
 sudo nano /boot/firmware/config.txt 
 ```
 
-在 config.txt 中添加以下内容
+将以下内容添加到 config.txt 中
 ```
 dtparam=pciex1_gen=3
 dtoverlay=pciex1-compat-pi5,no-mip
@@ -273,12 +270,12 @@ sudo apt install docker-compose-plugin
 
 ### 创建 yml 文件 
 
-创建 frigate.yml 文件以通过 Docker Compose 运行 Frigate
+创建 frigate.yml 文件以便 Docker Compose 运行 Frigate
 ```
 cd ~
 sudo nano frigate.yml
 ```
-以下是一个 frigate.yml 的示例
+以下是 frigate.yml 的示例
 ```
 version: "3.9"
 services:
@@ -315,7 +312,7 @@ cd model_cache && wget https://hailo-model-zoo.s3.eu-west-2.amazonaws.com/ModelZ
 
 cd .. && nano config.yml
 ```
-以下是一个 config.yml 的示例
+以下是 config.yml 的示例
 
 ```yml
 database:
@@ -418,7 +415,7 @@ camera_groups:
 
 ```
 cd ~
-docker pull frigate_seeed
+docker pull mjqx2023/frigate_seeed
 docker compose -f frigate.yml start 
 ```
 然后在 AI 盒子的 Web 浏览器中打开 `localhost:5000`：

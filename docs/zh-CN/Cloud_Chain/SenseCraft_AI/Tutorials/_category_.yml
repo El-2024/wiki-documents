@@ -1,0 +1,5 @@
+position: 2 # 支持浮动位置
+label: '教程'
+collapsible: true # 使类别可折叠
+collapsed: true # 默认保持类别关闭
+className: sensecraft_ai_Tutorials

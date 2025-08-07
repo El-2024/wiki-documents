@@ -1,5 +1,5 @@
 ---
-description: 本文提供了使用 NVIDIA Jetson 平台实现 AI NVR（网络视频录像机）的全面指南。内容涵盖从硬件设置和软件安装到配置 DeepStream 和 VST 以实现实时视频分析，并在视频墙上显示。
+description: 本文提供了在 NVIDIA Jetson 平台上实现 AI NVR（网络视频录像机）的全面指南，涵盖从硬件设置、软件安装到配置 DeepStream 和 VST 以实现实时视频分析及在视频墙上显示的所有内容。
 title: 基于 Jetson Orin 的 AI NVR
 keywords:
 - reComputer
@@ -8,48 +8,44 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/ai_nvr_with_jetson
 last_update:
-  date: 05/15/2025
+  date: 2024/08/12
   author: Youjiang
 ---
 
 # 基于 reServer Jetson 的 AI NVR
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 简介
 
-随着人工智能技术的进步，传统的视频监控系统正在向更智能化方向发展。AI NVR（网络视频录像机）结合了人工智能与视频监控技术，不仅能够记录视频，还能实时分析、识别和处理视频内容，从而提高安全监控的效率和准确性。本文将介绍如何使用 NVIDIA Jetson 平台实现 AI NVR。
+随着人工智能技术的进步，传统的视频监控系统正朝着更智能化的方向发展。AI NVR（网络视频录像机）将人工智能与视频监控技术相结合，不仅能够记录视频，还能对视频内容进行实时分析、识别和处理，从而提高安防监控的效率和准确性。本文将介绍如何使用 NVIDIA Jetson 平台实现 AI NVR。
 
 <div align="center">
     <img width={900} 
      src="https://files.seeedstudio.com/wiki/reComputer-Jetson/ai-nvr/vst.png" />
 </div>
 
-在本指南中，我们将使用 [Nvidia VST](https://docs.nvidia.com/mms/text/media-service/VST_Overview.html) 和其他来自 [Jetson Platform Service](https://developer.nvidia.com/embedded/jetpack/jetson-platform-services-get-started) 的微服务，在 Jetson 设备上快速部署本地 AI NVR。我们将使用 VST 添加摄像头，利用 DeepStream 行人检测模型检测目标，并在 VST 视频墙上显示检测结果和原始视频流。
+在本指南中，我们将使用 [Nvidia VST](https://docs.nvidia.com/mms/text/media-service/VST_Overview.html) 和 [Jetson Platform Service](https://developer.nvidia.com/embedded/jetpack/jetson-platform-services-get-started) 提供的其他微服务，在 Jetson 设备上快速部署本地 AI NVR。我们将通过 VST 添加摄像头，使用 DeepStream 行人检测模型检测目标，并在 VST 视频墙上显示检测结果及原始视频流。
 
 ### 什么是 AI NVR？
 
-AI NVR 是一种集视频录像和人工智能分析功能于一体的设备。与传统 NVR 不同，AI NVR 能够自动识别视频中的关键事件，例如入侵或物品丢失，甚至可以根据预定义规则触发警报。这种智能化水平依赖于强大的计算能力和深度学习算法。
+AI NVR 是一种集视频录制和人工智能分析功能于一体的设备。与传统 NVR 不同，AI NVR 能够自动识别视频中的关键事件，例如入侵或物品丢失，甚至可以根据预设规则触发警报。这种智能化水平依赖于强大的计算能力和深度学习算法。
 
 ### 为什么选择 reServer（NVIDIA Jetson）平台？
 
-NVIDIA Jetson 是一个高性能、低功耗的嵌入式计算平台，非常适合 AI 和深度学习应用。Jetson 平台配备了 NVIDIA GPU，可加速深度学习推理过程，并支持 TensorFlow 和 PyTorch 等多种 AI 工具和框架。
+NVIDIA Jetson 是一个高性能、低功耗的嵌入式计算平台，非常适合 AI 和深度学习应用。Jetson 平台配备了 NVIDIA GPU，可加速深度学习推理过程，并支持 TensorFlow 和 PyTorch 等广泛的 AI 工具和框架。
 
-reServer 是基于 Nvidia Jetson 平台的边缘计算设备，具有紧凑设计、无风扇散热、5 个 RJ45 GbE 接口（支持 PoE）、2 个 2.5" HDD/SSD 驱动器插槽，以及丰富的工业接口，是边缘 AI IoT 设备的理想选择。
+reServer 是一款基于 Nvidia Jetson 平台的边缘计算设备。它具有紧凑的设计、无风扇散热、5 个 RJ45 GbE 接口（支持 PoE）、2 个 2.5 英寸 HDD/SSD 驱动器托架以及丰富的工业接口，是边缘 AI 物联网设备的理想选择。
 
-## 前提条件
+## 前置条件
 
-- Jetson Orin 设备（安装 [Jetpack 6.0](https://developer.nvidia.com/embedded/jetson-linux-r363) 操作系统）。
+- Jetson Orin 设备（安装 [JetPack 6.0](https://developer.nvidia.com/embedded/jetson-linux-r363) 操作系统）。
 - IP 摄像头。
 
 :::note
-在本指南中，我们将使用 [reServer Industrial J4012](https://www.seeedstudio.com/reServer-industrial-J4012-p-5747.html) 完成任务，但您也可以尝试使用其他 Jetson 设备。
+在本指南中，我们将使用 [reServer Industrial J4012](https://www.seeedstudio.com/reServer-industrial-J4012-p-5747.html) 完成以下任务，但您也可以尝试使用其他 Jetson 设备。
 :::
 
 :::note
-我们可以按照 [此指南](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/#flash-jetpack) 的说明，将最新的 JetPack 6.0 系统刷入 reServer。
+我们可以按照[本指南](https://wiki.seeedstudio.com/cn/reServer_Industrial_Getting_Started/#flash-jetpack)中的说明，将最新的 JetPack 6.0 系统刷入 reServer。
 :::
 
 <div align="center">
@@ -79,7 +75,6 @@ reServer 是基于 Nvidia Jetson 平台的边缘计算设备，具有紧凑设�
 sudo apt update
 sudo apt install nvidia-jetson-services
 ```
-
 然后我们可以在 `/opt/nvidia/jetson/services/` 目录中找到许多微服务。
 
 <div align="center">
@@ -89,7 +84,7 @@ sudo apt install nvidia-jetson-services
 
 ### 第二步：修改 ingress 配置
 
-在 `/opt/nvidia/jetson/services/ingress/config/` 目录中创建一个名为 ai-nvr-nginx.conf 的新文件，并填入以下内容：
+在 `/opt/nvidia/jetson/services/ingress/config/` 目录中，创建一个名为 `ai-nvr-nginx.conf` 的新文件，并填入以下内容：
 
 ```bash
 # 在此处指定您的服务发现配置
@@ -115,7 +110,7 @@ location /ws-emdx/ {
 
 ### 第三步：修改 NVR 数据存储位置（可选）
 
-打开文件 `/opt/nvidia/jetson/services/vst/config/vst_storage.json` 并根据需要更改目录。
+打开文件 `/opt/nvidia/jetson/services/vst/config/vst_storage.json`，根据需要更改目录。
 
 ```bash
 {
@@ -126,8 +121,7 @@ location /ws-emdx/ {
 ```
 
 ### 第四步：启动 VST 服务
-
-VST 服务依赖其他服务，因此需要一起启动所有依赖服务。
+VST 服务依赖于其他服务，因此需要一起启动所有依赖服务。
 
 ```bash
 sudo systemctl start jetson-redis
@@ -135,7 +129,7 @@ sudo systemctl start jetson-ingress
 sudo systemctl start jetson-vst
 ```
 
-服务启动后，将创建相应的 Docker 容器。
+微服务启动后，将创建相应的 Docker 容器。
 
 <div align="center">
     <img width={900} 
@@ -145,7 +139,7 @@ sudo systemctl start jetson-vst
 :::info
 现在，我们可以在浏览器中打开 VST 的 Web UI。
 
-在本地网络中，打开浏览器并输入：`http://<jetson 的 IP 地址>:81/`
+在本地网络中，打开浏览器并输入：`http://<jetson的IP地址>:81/`
 :::
 
 <div align="center">
@@ -174,7 +168,7 @@ cd ai_nvr
 
 ### 第六步：修改 DeepStream 配置文件
 
-为了能够实时查看模型的推理结果，我们需要修改 DeepStream 的输入方式。在这里，我们可以将其配置为以 RTSP 输出。
+为了实时查看模型的推理结果，我们需要修改 DeepStream 的输入方式。在这里，我们可以将其配置为以 RTSP 输出。
 
 找到以下配置文件并更新其内容。
 
@@ -189,15 +183,23 @@ cd ai_nvr
 # SPDX-FileCopyrightText: Copyright (c) 2024 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 # SPDX-License-Identifier: MIT
 #
-# Permission is hereby granted，免费提供给任何获得本软件及相关文档副本的人使用，
-# 允许其在不受限制的情况下使用，包括但不限于使用、复制、修改、合并、发布、分发、再许可和/或出售本软件的副本，
-# 并允许获得本软件的人员这样做，条件是：
+# Permission is hereby granted, free of charge, to any person obtaining a
+# copy of this software and associated documentation files (the "Software"),
+# to deal in the Software without restriction, including without limitation
+# the rights to use, copy, modify, merge, publish, distribute, sublicense,
+# and/or sell copies of the Software, and to permit persons to whom the
+# Software is furnished to do so, subject to the following conditions:
 #
-# 上述版权声明和本许可声明应包含在本软件的所有副本或主要部分中。
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
 #
-# 本软件按“原样”提供，不提供任何形式的明示或暗示保证，包括但不限于适销性、
-# 适用于特定用途和非侵权的保证。在任何情况下，作者或版权持有人均不对因本软件或本软件的使用或其他交易而产生的任何索赔、
-# 损害或其他责任负责，无论是在合同诉讼、侵权诉讼或其他诉讼中。
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+# DEALINGS IN THE SOFTWARE.
 ################################################################################
 
 deepstream:
@@ -294,13 +296,13 @@ deepstream:
 </details>
 
 :::note
-请注意您的 Jetson 设备型号。在本例中，使用的是 Orin Nx 16GB 模块。如果您使用的是其他型号，请找到相应的配置文件并进行必要的修改。
+请注意您的 Jetson 设备型号。在本例中，使用的是 Orin Nx 16GB 模块。如果您使用的是其他型号，请找到对应的配置文件并进行必要的修改。
 :::
 
-在 compose 文件中的 SDR 下添加环境变量 `WDM_WL_NAME_IGNORE_REGEX`。
-这里，我的 Jetson 设备是由 Orin Nx 16GB 驱动的 reServer J4012，因此我需要编辑以下 compose 文件：
+在 compose 文件的 SDR 部分下添加 WDM_WL_NAME_IGNORE_REGEX 环境变量。
+这里，我的 Jetson 设备是由 Orin Nx 16GB 提供支持的 reServer J4012，因此我需要编辑以下 compose 文件：
 
-`<ai_nvr路径>/compose_nx16.yaml`
+`<path-of-ai_nvr>/compose_nx16.yaml`
 
 ```yaml
 ...
@@ -310,12 +312,13 @@ WDM_WL_NAME_IGNORE_REGEX: ".*deepstream.*"
 ...
 ```
 
-### 第七步：启动 AI NVR 应用程序
 
-在 Jetson 终端中，输入相应的命令以启动 AI NVR 应用程序。
+### 第7步 启动 AI NVR 应用程序
+
+在 Jetson 终端中，输入适当的命令以启动 AI NVR 应用程序。
 
 ```bash
-cd <下载路径>/files/ai_nvr
+cd <path-of-download>/files/ai_nvr
 
 # Orin AGX: 
 # sudo docker compose -f compose_agx.yaml up -d --force-recreate
@@ -327,17 +330,17 @@ sudo docker compose -f compose_nx16.yaml up -d --force-recreate
 # sudo docker compose -f compose_nano.yaml up -d --force-recreate
 ```
 
-在启动过程中，应用程序将创建其他 Docker 容器，例如 DeepStream。
+在启动过程中，应用程序将创建额外的 Docker 容器，例如 DeepStream。
 
 <div align="center">
     <img width={900} 
      src="https://files.seeedstudio.com/wiki/reComputer-Jetson/ai-nvr/all_containers.png" />
 </div>
 
-### 第八步：通过 Web UI 配置本地 AI NVR
+### 第8步 通过 Web UI 配置本地 AI NVR
 
-至此，我们已经成功在 Jetson 设备上安装并启动了 AI NVR 应用程序。
-接下来的步骤是通过 Web UI 配置摄像头。
+此时，我们已经成功在 Jetson 设备上安装并启动了 AI NVR 应用程序。
+下一步是通过 Web UI 配置摄像头。
 
 在本地网络中，打开浏览器并输入：`http://<ip-of-jetson>:30080/vst/`
 
@@ -357,14 +360,15 @@ sudo docker compose -f compose_nx16.yaml up -d --force-recreate
 :::danger
 DeepStream 输出流为 rtsp://192.168.49.161:8555/ds-test。
 
-这取决于 DeepStream 的配置文件，可以根据您的需求进行修改。
+这取决于 DeepStream 配置文件，您可以根据需要进行修改。
 :::
 
 :::danger
-配置 DeepStream 输出流时，我们需要在摄像头名称中添加 `deepstream` 字段。
+在配置 Deepstream 输出流时，我们需要在摄像头名称中添加 `deepstream` 字段。
 :::
 
-配置成功后，您可以在视频墙上查看所有的实时视频流。
+
+配置成功后，您可以在视频墙上查看所有视频流。
 
 `Video Wall` -->  `Select All`  --> `Start`
 
@@ -373,7 +377,7 @@ DeepStream 输出流为 rtsp://192.168.49.161:8555/ds-test。
      src="https://files.seeedstudio.com/wiki/reComputer-Jetson/ai-nvr/result.png" />
 </div>
 
-### 关闭 ai-nvr 应用程序
+### 关闭 AI NVR 应用程序
 
 在 Jetson 终端中，输入适当的命令以关闭 AI NVR 应用程序。
 
@@ -393,7 +397,7 @@ sudo docker compose -f compose_nx16.yaml down --remove-orphans
 # sudo docker compose -f compose_nano.yaml down --remove-orphans
 ```
 
-服务可以通过以下命令停止：
+可以使用以下命令停止服务：
 
 `sudo systemctl stop <service-name>`
 
@@ -410,7 +414,7 @@ sudo systemctl stop jetson-vst
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
