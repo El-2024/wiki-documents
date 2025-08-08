@@ -273,7 +273,7 @@ conda install ffmpeg=7.1.1 -c conda-forge
 cd ~/lerobot && pip install -e ".[feetech]"
 ```
 
-对于 Jetson Jetpack 6.2 设备（请确保在执行此步骤前按照[此链接教程](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)第 5 步安装了 Pytorch-gpu 和 Torchvision）：
+对于 Jetson Jetpack 6.0+ 设备（请确保在执行此步骤前按照[此链接教程](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)第 5 步安装了 Pytorch-gpu 和 Torchvision）：
 
 ```bash
 conda install -y -c conda-forge "opencv>=4.10.0.84"  # 通过 conda 安装 OpenCV 和其他依赖，仅适用于 Jetson Jetpack 6.0+
@@ -875,6 +875,17 @@ python -m lerobot.record  \
 ## FAQ
 
 - 如果实用本文档教程，请git clone本文档推荐的github仓库`https://github.com/Seeed-Projects/lerobot.git`，本文档推荐的仓库是验证过后的稳定版本，Lerobot官方仓库是实时更新的最新版本，会出现一些无法预知的问题，例如数据集版本不同，指令不同等。
+
+- 如果遇到此类错误，可以使用该命令解决。
+
+<div align="center">
+    <img width={800} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/No valid stream.png" />
+</div>
+
+```bash
+conda install ffmpeg=7.1.1 -c conda-forge
+```
 
 - 如果遇到以下报错，需要检查对应端口号的机械臂是否接通电源，总线舵机是否出现数据线松动或者脱落。
   ```bash
