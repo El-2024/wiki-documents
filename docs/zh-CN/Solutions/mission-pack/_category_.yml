@@ -1,0 +1,10 @@
+position: 9
+label: 'Mission Pack'
+collapsible: true
+collapsed: true
+className: _mission-pack
+link:
+  type: generated-index
+  slug: mission-pack
+  title: Mission Pack
+  description: 一套开源的 AIoT 最小单元解决方案
