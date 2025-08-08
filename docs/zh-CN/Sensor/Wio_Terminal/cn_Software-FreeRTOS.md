@@ -1,71 +1,71 @@
 ---
-description: FreeRTOS with Wio Terminal
-title:  Wio Terminal上的FreeRTOS
+description: 在 Wio Terminal 上使用 FreeRTOS
+title: 在 Wio Terminal 上使用 FreeRTOS
 keywords:
 - Sorftware
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Software-FreeRTOS
 last_update:
-  date: 3/06/2024
-  author: jessie
+  date: 1/16/2023
+  author: jianjing Huang
 ---
 
-# 如何在Arduino中使用FreeRTOS进行多任务处理
+# 如何在 Arduino 中使用 FreeRTOS 进行多任务处理
 
 <div align="center"><img width ="{600}" src="https://files.seeedstudio.com/wiki/FreeRTOS/full.gif"/></div>
 
 ## 什么是 RTOS
 
-如今嵌入式系统中最重要的组成部分之一是 **RTOS**  **（实时操作系统）**, 它负责从任务调度到执行应用程序的一切。
+当今嵌入式系统最重要的组件之一是 **RTOS**，也称为**实时操作系统**，它负责从任务调度到执行应用程序的所有工作。
 
-**RTOS** 旨在提供可预测的执行模式。当处理必须满足系统的时间限制时，使用RTOS。因此，与通用操作系统（GPOS）相比，RTOS通常轻量且体积小，通常仅提供特定类型应用程序在特定硬件上运行所需的功能。在某些情况下，开发人员可以修改现有的RTOS，将其缩小为仅提供特定应用程序所需的功能，并/或自定义其功能或性能特征。
+**RTOS** 旨在提供可预测的执行模式。当处理必须满足系统的时间限制时，就会使用 RTOS。因此，与 GPOS（通用操作系统）相比，RTOS 通常重量轻、体积小，通常只提供在特定硬件上运行特定类型应用程序所需的功能。在某些情况下，开发人员可以修改现有的 RTOS，将其缩小到只提供特定应用程序所需的功能，和/或定制其功能或性能特征。
 
-##  RTOS 工作原理
+## RTOS 如何工作
 
- **内核** 是操作系统的核心组件。像Linux这样的操作系统使用内核，允许用户同时访问计算机。每个正在执行的程序都是操作系统控制下的任务（或线程）。如果操作系统能够以这种方式执行多个任务, 就可以说它是 **多任务处理**。
+**内核**是操作系统的核心组件。像 Linux 这样的操作系统使用内核，允许用户看起来同时访问计算机。每个正在执行的程序都是操作系统控制下的一个任务（或线程）。如果操作系统能够以这种方式执行多个任务，就可以说它是**多任务**的。
 
 - **多任务处理**
 
-传统处理器一次只能执行 **一个任务** ，但是多任务处理操作系统可以通过快速在任务之间进行切换来使每个任务看起来同时执行。下图显示了三个任务的执行模式与时间的关系
+传统处理器一次只能执行**一个任务**，但多任务操作系统可以通过在任务之间快速切换，使每个任务看起来同时执行。下图显示了三个任务的执行模式与时间的关系。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/FreeRTOS/TaskExecution.gif"/></div>
 
 - **调度**
 
-**调度器** 是内核的一部分，负责在任何特定时间决定执行哪个任务。内核可以在任务的生命周期中多次暂停和恢复任务。
+**调度器**是内核中负责决定在任何特定时间执行哪个任务的部分。内核可以在任务的生命周期中多次暂停和恢复任务。
 
-**调度策略** 调度器用于决定任何时刻执行哪个任务的算法。非实时多用户系统策略可能会为每个任务提供“公平”的处理器时间份额。
+**调度策略**是调度器用来决定在任何时间点执行哪个任务的算法。（非实时）多用户系统策略可能会给每个任务分配处理器时间的"公平"比例。
 
-除了被内核强制暂停之外，任务还可以选择自行暂停。如果它想要 **延迟（睡眠）** 一段时间，或者 **等待（阻塞）** 某个资源可用（例如串口）或事件（例如按键按下），它会这样做。
+除了被内核非自愿地暂停外，任务也可以选择暂停自己。如果它想要**延迟（睡眠）**一段时间，或**等待（阻塞）**资源可用（如串口）或事件（如按键）时，它会这样做。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/FreeRTOS/suspending.gif"/></div>
 
-*参考: [**FreeRTOS Fundamentals**](https://www.freertos.org/implementation/a00002.html)*
+*参考：[**FreeRTOS 基础**](https://www.freertos.org/implementation/a00002.html)*
 
 ## 什么是 FreeRTOS
 
 <div align="center"><img width ="{400}" src="https://files.seeedstudio.com/wiki/FreeRTOS/FreeRTOS-logo.png"/></div>
 
-[**FreeRTOS**](https://www.freertos.org/) 是一种设计成足够小以在微控制器上运行的RTOS类别，尽管它的使用不限于微控制器应用。FreeRTOS包括一个内核和一个适用于各行业和应用程序的不断增长的软件库集合。借助FreeRTOS的帮助，您可以在基于微控制器的硬件上进行多任务处理！
+[**FreeRTOS**](https://www.freertos.org/) 是一类 RTOS，设计得足够小，可以在微控制器上运行——尽管它的使用不限于微控制器应用。FreeRTOS 包括一个内核和一套不断增长的软件库，适用于各个行业部门和应用。借助 FreeRTOS，您可以在基于微控制器的硬件上进行多任务处理！
 
-**为了与Arduino兼容**, 我们将FreeRTOS移植到了Arduino框架中，以便您能够轻松地在喜爱的Arduino板上使用FreeRTOS！
+**为了兼容 Arduino**，我们已经将 FreeRTOS 移植到 Arduino 框架中，这样您就能够轻松地在您喜爱的 Arduino 开发板上使用 FreeRTOS！
 
-:::注
-2017年, [Amazon](https://aws.amazon.com/freertos/) 接管了FreeRTOS的管理权，使其在嵌入式领域更加可靠和安全。
+:::note
+在 2017 年，[Amazon](https://aws.amazon.com/freertos/) 接管了 FreeRTOS 的管理权，这使得它在嵌入式世界中变得可靠和安全。
 :::
 
-## 在Arduino中快速开始使用FreeRTOS
+## 使用 Arduino 快速开始 FreeRTOS
 
-### 安装FreeRTOS Arduino库
+### 安装 FreeRTOS Arduino 库
 
-1. 访问 [**Seeed_Arduino_FreeRTOS**](https://github.com/Seeed-Studio/Seeed_Arduino_FreeRTOS) 存储库，并将整个存储库下载到本地驱动器上。
+1. 访问 [**Seeed_Arduino_FreeRTOS**](https://github.com/Seeed-Studio/Seeed_Arduino_FreeRTOS) 仓库并将整个仓库下载到您的本地驱动器。
 
-2. 现在，可以将Seeed_Arduino_FreeRTOS库安装到Arduino IDE中。打开Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`, 选择刚刚下载的 `Seeed_Arduino_FreeRTOS` 文件。
+2. 现在，可以将 Seeed_Arduino_FreeRTOS 库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，然后选择您刚刚下载的 `Seeed_Arduino_FreeRTOS` 文件。
 
 ![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg)
 
-:::注
-该库将最新的FreeRTOS（10.2.1）移植过来，并允许您在Arduino IDE中创建FreeRTOS项目。
+:::note
+此库移植了最新的 FreeRTOS(10.2.1)，允许您在 Arduino IDE 中创建 FreeRTOS 项目。
 :::
 
 ### 支持的开发板
@@ -74,7 +74,7 @@ last_update:
 
 - [Wio Terminal](https://www.seeedstudio.com/Wio-Terminal-p-4509.html)
 - [Seeeduino XIAO](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html)
-- Seeeduino Zero 系列:
+- Seeeduino Zero 系列：
   - [Seeeduino Cortex-M0+](https://www.seeedstudio.com/Seeeduino-Cortex-M0-p-4070.html)
   - [Seeeduino Lotus Cortex-M0+](https://www.seeedstudio.com/Seeeduino-Lotus-Cortex-M0-p-2896.html)
   - [Wio Lite W600 - ATSAMD21 Cortex-M0 无线开发板](https://www.seeedstudio.com/Wio-Lite-W600-p-4155.html)
@@ -83,13 +83,13 @@ last_update:
 
 ## FreeRTOS Arduino 示例
 
-FreeRTOS 提供了微控制器的  **实时调度功能,任务间通信,定时和同步原语**等功能，非常强大
+FreeRTOS 通过为微控制器提供**实时调度功能、任务间通信、定时和同步原语**，可以变得非常强大。
 
-为了帮助您轻松入门 FreeRTOS，这里提供一些示例供参考。以下示例是在 Wio Terminal 上构建和运行的。
+为了让您轻松开始使用 FreeRTOS，这里提供了一些示例供参考。以下示例在 Wio Terminal 上构建和运行。
 
 ### Hello World 示例
 
-这个示例简单地创建了 **两个线程** 以不同的速率向串口监视器打印不同的 `字符串` 。
+此示例简单地创建了**两个线程**，以不同的速率向串行监视器打印不同的`字符串`。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/FreeRTOS/helloworld.png"/></div>
 
@@ -146,12 +146,12 @@ void loop() {
 }
 ```
 
-### Blink 示例
+### 闪烁示例
 
-这个示例也创建了两个线程，并输出信号以点亮 LED。其中一个线程是简单地闪烁 LED，另一个线程是呼吸灯效果。
+此示例同样创建两个线程并输出信号来点亮LED。一个是简单地闪烁LED，另一个是呼吸LED。
 
-:::注
-        确保呼吸灯连接在 PWM 引脚上。
+:::note
+        确保呼吸LED连接在PWM引脚上。
 :::
 
 <div align="center"><img width ="{600}" src="https://files.seeedstudio.com/wiki/FreeRTOS/Blink.gif"/></div>
@@ -159,13 +159,13 @@ void loop() {
 ```cpp
 #include <Seeed_Arduino_FreeRTOS.h>
 
-#define LEDPIN_1 PIN_WIRE_SCL // Left side of Grove Port of Wio Terminal
-#define LEDPIN_2 D0 // Right side of Grove Port of Wio Terminal
+#define LEDPIN_1 PIN_WIRE_SCL // Wio Terminal Grove 端口的左侧
+#define LEDPIN_2 D0 // Wio Terminal Grove 端口的右侧
 
 TaskHandle_t Handle_aTask;
 TaskHandle_t Handle_bTask;
 
-// Blinking LED
+// 闪烁LED
 static void LED_1(void* pvParameters) {
     while (1) {
         digitalWrite(LEDPIN_1, HIGH);
@@ -175,7 +175,7 @@ static void LED_1(void* pvParameters) {
     }
 }
 
-// Breathing LED
+// 呼吸LED
 static void LED_2(void* pvParameters) {
     int cnt = 5;
     while (1) {
@@ -194,8 +194,8 @@ static void LED_2(void* pvParameters) {
 void setup() {
     Serial.begin(115200);
 
-    vNopDelayMS(1000); // prevents usb driver crash on startup, do not omit this
-//    while(!Serial);  // Wait for serial terminal to open port before starting program
+    vNopDelayMS(1000); // 防止启动时usb驱动程序崩溃，请勿省略此项
+//    while(!Serial);  // 在开始程序之前等待串口终端打开端口
 
     pinMode(LEDPIN_1, OUTPUT);
     pinMode(LEDPIN_2, OUTPUT);
@@ -203,7 +203,7 @@ void setup() {
     xTaskCreate(LED_1,     "Task A",       256, NULL, tskIDLE_PRIORITY + 2, &Handle_aTask);
     xTaskCreate(LED_2,     "Task B",       256, NULL, tskIDLE_PRIORITY + 1, &Handle_bTask);
 
-    // Start the RTOS, this function will never return and will schedule the tasks.
+    // 启动RTOS，此函数永远不会返回并将调度任务。
     vTaskStartScheduler();
 }
 
@@ -214,7 +214,7 @@ void loop() {
 
 ### LCD 示例
 
-这个示例演示了 FreeRTOS 与 Wio Terminal 中的其他 Arduino 库的结合，如 LCD Sprites。这个示例创建了两个线程中的两个精灵，以相反的方式计数。 `taskMonitor` 是一个用于监视线程并打印每个线程的堆栈信息的函数。
+这个示例演示了在 Wio Terminal 中将 FreeRTOS 与其他 Arduino 库（如 LCD Sprites）结合使用。此示例在两个线程中创建两个精灵，以相反的方式计数。`taskMonitor` 是一个用于监控线程并打印每个线程堆栈信息的函数。
 
 <div align="center"><img width ="{600}" src="https://files.seeedstudio.com/wiki/FreeRTOS/FreeRTOS-LCD.gif"/></div>
 
@@ -231,9 +231,9 @@ TFT_eSprite img = TFT_eSprite(&tft);
 TFT_eSprite img2 = TFT_eSprite(&tft);
 
 static void LCD_TASK_1 (void* pvParameters) {
-    Serial.println("Thread A: Started");
+    Serial.println("线程 A: 已启动");
     img.createSprite(100, 100);
-    img.fillSprite(tft.color565(229,58,64)); // RED
+    img.fillSprite(tft.color565(229,58,64)); // 红色
     img.setTextSize(8);
     img.setTextColor(TFT_WHITE);
     for(int i = 0; i < 100; i++) {
@@ -246,9 +246,9 @@ static void LCD_TASK_1 (void* pvParameters) {
 }
 
 static void LCD_TASK_2 (void* pvParameters) {
-    Serial.println("Thread B: Started");
+    Serial.println("线程 B: 已启动");
     img2.createSprite(100, 100);
-    img2.fillSprite(tft.color565(48,179,222)); // BLUE
+    img2.fillSprite(tft.color565(48,179,222)); // 蓝色
     img2.setTextSize(8);
     img2.setTextColor(TFT_WHITE);
     for(int x = 99; x >= 0; x--) {
@@ -264,35 +264,35 @@ void taskMonitor(void* pvParameters) {
     int x;
     int measurement;
 
-    Serial.println("Task Monitor: Started");
+    Serial.println("任务监视器: 已启动");
 
-    // run this task a few times before exiting forever
+    // 在永久退出之前运行此任务几次
     for (x = 0; x < 10; ++x) {
 
         Serial.println("");
         Serial.println("******************************");
-        Serial.println("[Stacks Free Bytes Remaining] ");
+        Serial.println("[堆栈剩余空闲字节数] ");
 
         measurement = uxTaskGetStackHighWaterMark(Handle_aTask);
-        Serial.print("Thread A: ");
+        Serial.print("线程 A: ");
         Serial.println(measurement);
 
         measurement = uxTaskGetStackHighWaterMark(Handle_bTask);
-        Serial.print("Thread B: ");
+        Serial.print("线程 B: ");
         Serial.println(measurement);
 
         measurement = uxTaskGetStackHighWaterMark(Handle_monitorTask);
-        Serial.print("Monitor Stack: ");
+        Serial.print("监视器堆栈: ");
         Serial.println(measurement);
 
         Serial.println("******************************");
 
-        delay(10000); // print every 10 seconds
+        delay(10000); // 每10秒打印一次
     }
 
-    // delete ourselves.
-    // Have to call this or the system crashes when you reach the end bracket and then get scheduled.
-    Serial.println("Task Monitor: Deleting");
+    // 删除自身。
+    // 必须调用此函数，否则当到达结束括号并被调度时系统会崩溃。
+    Serial.println("任务监视器: 正在删除");
     vTaskDelete(NULL);
 }
 
@@ -300,49 +300,49 @@ void setup() {
 
     Serial.begin(115200);
 
-    vNopDelayMS(1000); // prevents usb driver crash on startup, do not omit this
-    while (!Serial) ;  // Wait for Serial terminal to open port before starting program
+    vNopDelayMS(1000); // 防止启动时usb驱动程序崩溃，请勿省略此项
+    while (!Serial) ;  // 等待串口终端打开端口后再启动程序
 
     tft.begin();
     tft.setRotation(3);
-    tft.fillScreen(tft.color565(9,7,7)); // BLACK background
-    tft.setTextColor(tft.color565(239,220,5)); // YELLOW text
+    tft.fillScreen(tft.color565(9,7,7)); // 黑色背景
+    tft.setTextColor(tft.color565(239,220,5)); // 黄色文本
     tft.setTextSize(2);
-    tft.drawString("Thread A", 30, 50);
-    tft.drawString("Thread B", 190, 50);
+    tft.drawString("线程 A", 30, 50);
+    tft.drawString("线程 B", 190, 50);
 
     Serial.println("");
     Serial.println("******************************");
-    Serial.println("        Program start         ");
+    Serial.println("        程序启动         ");
     Serial.println("******************************");
 
-    // Create the threads that will be managed by the rtos
-    // Sets the stack size and priority of each task
-    // Also initializes a handler pointer to each task, which are important to communicate with and retrieve info from tasks
-    xTaskCreate(LCD_TASK_1,     "Task A",       256, NULL, tskIDLE_PRIORITY + 3, &Handle_aTask);
-    xTaskCreate(LCD_TASK_2,     "Task B",       256, NULL, tskIDLE_PRIORITY + 2, &Handle_bTask);
-    xTaskCreate(taskMonitor, "Task Monitor",    128, NULL, tskIDLE_PRIORITY + 1, &Handle_monitorTask);
+    // 创建将由rtos管理的线程
+    // 设置每个任务的堆栈大小和优先级
+    // 同时初始化每个任务的处理程序指针，这对于与任务通信和从任务检索信息很重要
+    xTaskCreate(LCD_TASK_1,     "任务 A",       256, NULL, tskIDLE_PRIORITY + 3, &Handle_aTask);
+    xTaskCreate(LCD_TASK_2,     "任务 B",       256, NULL, tskIDLE_PRIORITY + 2, &Handle_bTask);
+    xTaskCreate(taskMonitor, "任务监视器",    128, NULL, tskIDLE_PRIORITY + 1, &Handle_monitorTask);
 
-    // Start the RTOS, this function will never return and will schedule the tasks.
+    // 启动RTOS，此函数永远不会返回并将调度任务。
     vTaskStartScheduler();
 }
 
 void loop() {
-    //NOTHING
+    //无内容
 }
 ```
 
-## 用于 Arduino 的 Cpp FreeRTOS
+## FreeRTOS 在 Arduino 中的 Cpp 应用
 
-除此之外，我们还提供了 [**Seeed_Arduino_ooFreeRTOS**](https://github.com/Seeed-Studio/Seeed_Arduino_ooFreeRTOS), 它是 **一个在 Arduino 框架下工作的封装了 FreeRTOS 功能的 C++ 包装库集合。**
+此外，我们还提供了 [**Seeed_Arduino_ooFreeRTOS**](https://github.com/Seeed-Studio/Seeed_Arduino_ooFreeRTOS)，这是**一个封装了 FreeRTOS 功能的 C++ 包装器集合，它在 Arduino 框架下工作。**
 
 ### 安装 FreeRTOS Cpp Arduino 库
 
-1. 访问 [**Seeed_Arduino_ooFreeRTOS**](https://github.com/Seeed-Studio/Seeed_Arduino_ooFreeRTOS) 仓库，并将整个仓库下载到您的本地驱动器上。
+1. 访问 [**Seeed_Arduino_ooFreeRTOS**](https://github.com/Seeed-Studio/Seeed_Arduino_ooFreeRTOS) 仓库，并将整个仓库下载到您的本地驱动器。
 
-2. 现在，可以将 Seeed_Arduino_ooFreeRTOS 库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`, 选择刚刚下载的  `Seeed_Arduino_ooFreeRTOS` 文件。
+2. 现在，可以将 Seeed_Arduino_ooFreeRTOS 库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，然后选择您刚刚下载的 `Seeed_Arduino_ooFreeRTOS` 文件。
 
-### Cpp 中的 Blink 示例
+### Cpp 中的闪烁示例
 
 ```cpp
 #include <Seeed_Arduino_ooFreeRTOS.h>
@@ -381,7 +381,6 @@ private:
 };
 
 
-
 void setup (void)
 {
   
@@ -413,6 +412,6 @@ void loop()
 
 ```
 
-## 参考资料
+## 资源
 
 - [官方 FreeRTOS 入门指南](https://www.freertos.org/FreeRTOS-quick-start-guide.html)

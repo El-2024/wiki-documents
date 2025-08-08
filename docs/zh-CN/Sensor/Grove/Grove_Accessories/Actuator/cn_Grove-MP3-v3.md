@@ -1,45 +1,44 @@
 ---
-title: Grove - MP3播放器v3.0
-description: Grove - MP3播放器v3.0
+title: Grove - MP3 v3.0
+nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-MP3-v3/
+image: https://wiki.seeedstudio.com/cn/Grove-MP3-v3/
 slug: /cn/Grove-MP3-v3
 last_update:
-  date: 03/21/2024
-  author: WuFeifei
+  date: 01/09/2022
+  author: gunengyu
 ---
-
 
 ![](https://files.seeedstudio.com/wiki/Grove-MP3-V3/img/Grove-MP3-V3-preview.jpg)
 
-Grove - MP3是一款基于WT2003S-20SS音频解码器的20x40mm超小型音乐模块。它支持采样率为8~48KHz、比特率为8~320Kbps的高质量MP3格式音频文件。为了扩展存储容量，我们在模块的背面增加了一个TF卡槽。TF卡采用DIO接口模式，支持最大32GB的存储容量，并兼容FAT16、FAT32文件系统。现在，有了这个小巧的音乐模块，你就可以把成千上万首歌曲装进口袋了。
+Grove - MP3 是一个基于 WT2003S-20SS 音频解码器的 20x40mm 超迷你音乐模块。它支持采样率为 8~48KHz、比特率为 8~320Kbps 的高质量 MP3 格式音频文件。为了扩展存储容量，我们在模块背面添加了一个 TF 卡插槽。TF 卡采用 DIO 接口模式，支持最大 32GB，支持 FAT16 和 FAT32 文件系统。现在有了这个小巧的音乐模块，你可以随身携带成百上千首音乐。
 
-顾名思义，Grove - MP3 V3是Grove - MP3 V2的升级版。与Grove MP3 V2相比，V3增加了一个JST2.0扬声器端口，这意味着你可以同时通过扬声器和3.5mm耳机输出音频。
+顾名思义，Grove - MP3 V3 是 Grove - MP3 V2 的升级版本。与 Grove MP3 V2 相比，V3 增加了一个 JST2.0 扬声器端口，使您可以同时通过扬声器和 3.5mm 耳机输出音频。
 
 <p style={{}}><a href="https://www.seeedstudio.com/Grove-MP3-V3-p-4297.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
 
-## 特点
+## 特性
 
-- 支持MP3格式音频文件
+- 支持 MP3 格式音频文件
 - 采样率：8~48KHz / 比特率：8~320Kbps
-- 支持最大32GB的TF卡
-- 同时支持扬声器和耳机输出音频
-- 兼容3.3V和5V平台
-- 支持32级音量调节
+- 支持最大 32GB TF 卡
+- 支持扬声器和耳机同时输出音频
+- 兼容 3.3V 和 5V 平台
+- 支持 32 级音量调节
 
 ## 规格
 
-|参数|值|
+| 参数 | 值 |
 |---|---|
-|工作电压|3.3V / 5V|
-|采样率| 8~48KHz / 比特率：8~320Kbps |
-|接口|I2C（默认I2C地址：0x36）& 不可更改|
-|输出|扬声器/3.5mm音频插孔|
-|音量调节|支持32级音量调节|
+| 供电电压 | 3.3V / 5V |
+| 采样率 | 8~48KHz / 比特率：8~320Kbps |
+| 接口 | I2C（默认 I2C 地址：0x36）且不可更改 |
+| 输出 | 扬声器 / 3.5mm 音频插孔 |
+| 分辨率 | 支持 32 级音量调节 |
 
-## 硬件概述
+## 硬件概览
 
 <div align="center">
   <figure>
@@ -49,22 +48,22 @@ Grove - MP3是一款基于WT2003S-20SS音频解码器的20x40mm超小型音乐�
 
 ## 支持的平台
 
-| Arduino                                                      | 树莓派                                                       |                                                              |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Arduino                                                                                             | Raspberry Pi                                                                                             |                                                                                                 |                                                                                                          |                                                                                                    |
+|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo_n.jpg) |
 
 ## 入门指南
 
-### 玩转 Arduino
+### 使用 Arduino
 
 **所需材料**
 
-| Seeeduino V4.2 | 基础扩展板                                                   | Grove - MP3 V3 -音乐播放器 |
-|--------------|-------------|-----------------|
-|![enter image description here](https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/Grove-MP3-V3/img/Grove-MP3-V3-thumbnail.jpg)|
-|[立即获取](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[立即获取](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html)|[立即获取](https://www.seeedstudio.com/Grove-MP3-V3-p-4297.html)|
+| Seeeduino V4.2 | Base Shield | Grove - MP3 V3 -音乐播放器 |
+|----------------|-------------|-------------------------------|
+|![图片](https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg)|![图片](https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg)|![图片](https://files.seeedstudio.com/wiki/Grove-MP3-V3/img/Grove-MP3-V3-thumbnail.jpg)|
+|[立即购买](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[立即购买](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html)|[立即购买](https://www.seeedstudio.com/Grove-MP3-V3-p-4297.html)|
 
->此外，你还可以考虑我们的新款[Seeeduino Lotus M0+](https://www.seeedstudio.com/Seeeduino-Lotus-Cortex-M0-p-2896.html)，它相当于Seeeduino V4.2和Baseshield的组合。
+>此外，您可以考虑我们的新产品 [Seeeduino Lotus M0+](https://www.seeedstudio.com/Seeeduino-Lotus-Cortex-M0-p-2896.html)，它相当于 Seeeduino V4.2 和 Base Shield 的组合。
 
 #### 硬件连接
 
@@ -72,27 +71,27 @@ Grove - MP3是一款基于WT2003S-20SS音频解码器的20x40mm超小型音乐�
 
 - **步骤 2.** 将 Grove - Base Shield 插入 Seeeduino。
 
-- **步骤 3** 通过 USB 线缆将 Seeeduino 连接到电脑。
+- **步骤 3.** 使用 USB 数据线将 Seeeduino 连接到电脑。
 
 ![](https://files.seeedstudio.com/wiki/Grove-MP3-V3/img/connect.png)
 
 #### 软件
 
 :::提示
-        如果您是第一次使用Arduino，我们强烈建议您在开始之前先查看[Arduino入门指南](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)。
+如果这是您第一次使用 Arduino，我们强烈建议您在开始之前查看 [Arduino 入门指南](https://wiki.seeedstudio.com/cn/Getting_Started_with_Arduino/)。
 :::
 
-- **步骤 1.** 将您的 `.mp3` 音乐文件复制到TF卡中，并保存在TF卡的根目录下。
+- **步骤 1.** 将您的 `.mp3` 音乐文件复制到 TF 卡，并将它们保存到 TF 卡的根目录。
 
-- **步骤 2.** 从Github下载[Seeed_Serial_MP3](https://github.com/Seeed-Studio/Seeed_Serial_MP3_Player)库。
+- **步骤 2.** 从 Github 下载 [Seeed_Serial_MP3](https://github.com/Seeed-Studio/Seeed_Serial_MP3_Player) 库。
 
 :::注意
-        参考如何安装库的说明，以在Arduino中[安装库](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)。
+参考 [如何安装库](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/) 来为 Arduino 安装库。
 :::
 
-- **步骤 3.** 重启Arduino IDE。通过以下路径打开**WT2003S_Terminal_Player**示例：**文件** → **示例** → **Seeed_Serial_MP3_Player** → **WT2003S_Terminal_Player**。您可以使用此模块播放 `.mp3` 格式的音乐文件，并通过3.5mm音频插孔、JST2.0扬声器端口上的扬声器进行输出，或者同时输出到两者。
+- **步骤 3.** 重启 Arduino IDE。通过以下路径打开 **WT2003S_Terminal_Player** 示例：**文件** → **示例** → **Seeed_Serial_MP3_Player** → **WT2003S_Terminal_Player**。您可以使用此模块播放 `.mp3` 格式的音乐文件，并通过 3.5mm 音频插孔、JST2.0 扬声器端口播放音频，甚至可以同时输出。
 
-WT2003S_Terminal_Player示例代码如下：
+以下是 WT2003S_Terminal_Player 示例代码：
 
 ```cpp
 #include "WT2003S_Player.h"
@@ -169,7 +168,7 @@ void getAllSong() {
         SPISong = (struct Play_history*)malloc((spi_flash_songs + 1) * sizeof(struct Play_history));
         readSongName(SPISong, spi_flash_songs, SPIFLASH);
     }
-    if (diskstatus && 0x02) { // have SD
+    if (diskstatus && 0x02) { // 有 SD 卡
         sd_songs = Mp3Player.getSDMp3FileNumber();
         ShowSerial.print("SD:");
         ShowSerial.println(sd_songs);
@@ -182,12 +181,12 @@ void getAllSong() {
 }
 void printSongs() {
     ShowSerial.print("-------------------");
-    ShowSerial.print("index");
+    ShowSerial.print("索引");
     ShowSerial.print("<-------->");
-    ShowSerial.print("name");
+    ShowSerial.print("名称");
     ShowSerial.print("-------------------");
     ShowSerial.println();
-    ShowSerial.println("-------------------spi flash-------------------------------");
+    ShowSerial.println("-------------------SPI Flash-------------------------------");
     for (int i = 0 ; i < spi_flash_songs; i++) {
         ShowSerial.print("-------------------");
         ShowSerial.print(SPISong[i].index);
@@ -196,7 +195,7 @@ void printSongs() {
         ShowSerial.print("-------------------");
         ShowSerial.println();
     }
-    ShowSerial.println("-------------------sd card-------------------------------");
+    ShowSerial.println("-------------------SD 卡-------------------------------");
     for (int i = 0 ; i < sd_songs; i++) {
         ShowSerial.print("-------------------");
         ShowSerial.print(SDSong[i].index);
@@ -225,7 +224,7 @@ void loop() {
         char cmd = ShowSerial.read();
         switch (cmd) {
             case '+': {
-                    ShowSerial.print("Volume up: ");
+                    ShowSerial.print("音量增加: ");
                     vol = Mp3Player.getVolume();
                     Mp3Player.volume(++vol);
                     ShowSerial.print(vol);
@@ -233,7 +232,7 @@ void loop() {
                     break;
                 }
             case '-': {
-                    ShowSerial.print("Volume down: ");
+                    ShowSerial.print("音量减少: ");
                     vol = Mp3Player.getVolume();
                     if (--vol > 31) {
                         vol = 0;
@@ -245,16 +244,16 @@ void loop() {
                 }
             case 't': {
                     uint8_t status;
-                    ShowSerial.print("status:");
+                    ShowSerial.print("状态:");
                     status = Mp3Player.getStatus();
                     if (status == 0x01) {
-                        ShowSerial.print("playing");
+                        ShowSerial.print("播放中");
                     }
                     if (status == 0x02) {
-                        ShowSerial.print("stop");
+                        ShowSerial.print("停止");
                     }
                     if (status == 0x03) {
-                        ShowSerial.print("pause");
+                        ShowSerial.print("暂停");
                     }
                     ShowSerial.println();
                     break;
@@ -296,7 +295,7 @@ void loop() {
             case '7':
             case '8':
             case '9':
-                ShowSerial.print("play:");
+                ShowSerial.print("播放:");
                 if (workdisk == SD) {
                     Mp3Player.playSDRootSong(cmd - '0' - 1);
                     ShowSerial.print(cmd + ": ");
@@ -316,38 +315,38 @@ void loop() {
 }
 
 void printMenu(void) {
-    ShowSerial.println("MP3 Command List:");
+    ShowSerial.println("MP3 命令列表:");
     ShowSerial.println("-----------------");
-    ShowSerial.println("'+' or '-'  : raise/lower volume");
-    ShowSerial.println("'1' ~ '9'   : select a song");
-    ShowSerial.println("'n'         : next song");
-    ShowSerial.println("'s'         : switch play disk, spi flash");
-    ShowSerial.println("'p'         : play or pause");
-    ShowSerial.println("'w'         : set playmode single no loop");
-    ShowSerial.println("'x'         : set playmode single loop");
-    ShowSerial.println("'y'         : set playmode all loop");
-    ShowSerial.println("'z'         : set playmode random");
-    ShowSerial.println("'c'         : Copy mp3 to SPIFlash");
-    ShowSerial.println("             (Yes, this really does go by copy order.)");
+    ShowSerial.println("'+' 或 '-'  : 增加/减少音量");
+    ShowSerial.println("'1' ~ '9'   : 选择歌曲");
+    ShowSerial.println("'n'         : 下一首歌曲");
+    ShowSerial.println("'s'         : 切换播放磁盘，SPI Flash");
+    ShowSerial.println("'p'         : 播放或暂停");
+    ShowSerial.println("'w'         : 设置播放模式为单次播放");
+    ShowSerial.println("'x'         : 设置播放模式为单曲循环");
+    ShowSerial.println("'y'         : 设置播放模式为全部循环");
+    ShowSerial.println("'z'         : 设置播放模式为随机播放");
+    ShowSerial.println("'c'         : 将 MP3 文件复制到 SPI Flash");
+    ShowSerial.println("             (是的，这确实按复制顺序进行。)");
     ShowSerial.println();
-    ShowSerial.println("Any other key to show this menu");
+    ShowSerial.println("按任意其他键显示此菜单");
     ShowSerial.println();
 }
 ```
 
-- **在Step 3.** 上传示例程序。如果您不知道如何上传代码，请查阅[如何上传代码](https://wiki.seeedstudio.com/Upload_Code/)。
+- **步骤 3.** 上传示例代码。如果您不知道如何上传代码，请查看[如何上传代码](https://wiki.seeedstudio.com/cn/Upload_Code/)。
 
-- **步骤 4.** 通过点击 **工具->串口监视器** 打开Arduino IDE的**串口监视器**。或者同时按下 ++ctrl+shift+m++ 快捷键。将波特率设置为 **9600**。
+- **步骤 4.** 打开 Arduino IDE 的 **串口监视器**，点击 **工具->串口监视器**。或者同时按下 ++ctrl+shift+m++ 键。将波特率设置为 **9600**。
 
-- **步骤 5.**  结果应该如下所示。按照命令列表播放音乐或使用其他有用功能。
+- **步骤 5.** 结果应如下图所示。根据命令列表播放音乐或使用其他实用功能。
 
 ![](https://files.seeedstudio.com/wiki/Grove-MP3-V3/img/result.jpg)
 
 ## 常见问题解答
 
-**Q1#** TF卡无法被识别。
+**Q1#** TF 卡无法识别。
 
-**A1:** 检查TF卡的文件系统，确保它使用的是FAT16或FAT32文件系统。
+**A1:** 检查 TF 卡的文件系统，确保其为 FAT16 或 FAT32 文件系统。
 
 ## 资源
 
@@ -356,7 +355,7 @@ void printMenu(void) {
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在此为您提供各种支持，以确保您在使用我们的产品时能够尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们将为您提供多种支持，确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

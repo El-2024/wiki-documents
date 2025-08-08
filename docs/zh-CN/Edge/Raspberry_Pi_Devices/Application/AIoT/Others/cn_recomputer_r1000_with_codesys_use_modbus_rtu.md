@@ -10,16 +10,9 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png
 slug: /cn/recomputer_r1000_use_modbus_rtu_with_codesys
 last_update:
-  date: 05/15/2025
+  date: 2024/10/10
   author: ShuishengPeng
 ---
-
-# 在文件末尾添加以下内容，其中 ttyAMAx 是 reComputer R1000 的串口号。Linux.Devicefile.1~3 表示 CODESYS 中的串口号。这里将 CODESYS 的串口号绑定到 reComputer R1000 的串口号，否则 CODESYS 无法识别正确的串口。
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 简介
 本文主要介绍如何基于 CODESYS 使用 reComputer R1000 的 Modbus RTU 功能。我们将使用 reComputer R1000 的两个 RS485 接口，一个接口用作 Modbus 主站，另一个接口用作 Modbus 从站。本文将详细说明如何在 CODESYS 上配置 Modbus 主站和从站，并展示如何将其部署到 reComputer R1000 上。
 
@@ -50,7 +43,7 @@ last_update:
 
 ## 开始使用
 
-在开始之前，请确保您的 reComputer R1000 与主机处于同一网段，并且您已经在 reComputer R1000 上部署了 `CODESYS 运行时`。有关如何部署 `CODESYS 运行时` 的信息，请参考 [wiki](https://wiki.seeedstudio.com/reComputer_r1000_install_codesys/)
+在开始之前，请确保您的 reComputer R1000 与主机处于同一网段，并且您已经在 reComputer R1000 上部署了 `CODESYS 运行时`。有关如何部署 `CODESYS 运行时` 的信息，请参考 [wiki](https://wiki.seeedstudio.com/cn/reComputer_r1000_install_codesys/)
 
 ### 硬件配置
 
@@ -65,7 +58,7 @@ last_update:
 ```
 在文件末尾添加以下内容：
 ```shell
-
+# 在文件末尾添加以下内容，其中 ttyAMAx 是 reComputer R1000 的串口号。Linux.Devicefile.1~3 表示 CODESYS 中的串口号。这里将 CODESYS 的串口号绑定到 reComputer R1000 的串口号，否则 CODESYS 无法识别正确的串口。
     [SysCom]
     Linux.Devicefile.1=/dev/ttyAMAx
     Linux.Devicefile.2=/dev/ttyAMAx
@@ -104,27 +97,27 @@ last_update:
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/master/7.png" /></center>
 
-**步骤 7**：右键点击 `Modbus_COM` 并点击 `Add Device`，为该端口添加一个 Modbus 设备。
+**步骤 7**：右键点击 `Modbus_COM` 并点击 `Add Device`，为此端口添加一个 Modbus 设备。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/master/8.png" /></center>
 
-**步骤 8**：选择 `Modbus Serial Master` ---> `Modbus Client, COM Port`，将一个 Modbus 主站设备绑定到该串口。
+**步骤 8**：选择 `Modbus Serial Master` ---> `Modbus Client, COM Port`，将一个 Modbus 主站设备绑定到此串口。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/master/9.png" /></center>
 
-**步骤 9**：右键点击 `Modbus_Clent_COM_Port` 并选择 `Add Device`，为该 Modbus 主站添加需要操作的从站设备。您可以在此处添加多个从站设备。这些从站设备表示主站需要操作的从站，稍后需要配置主站对这些从站的操作。
+**步骤 9**：右键点击 `Modbus_Clent_COM_Port` 并选择 `Add Device`，为此 Modbus 主站添加要操作的从站设备。您可以在此处添加多个从站设备。这些从站设备表示主站需要操作的从站设备，稍后需要配置主站对这些从站的操作。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/master/10.png" /></center>
 
-**步骤 10**：选择 `Modbus Serial Slave` ---> `Modbus Server, COM Port` 添加一个 Modbus 从站设备。
+**步骤 10**：选择 `Modbus Serial Slave` ---> `Modbus Server, COM Port`，添加一个 Modbus 从站设备。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/master/11.png" /></center>
 
-**步骤 11**：双击新添加的从设备，在 `General` 中可以设置 `Server address` 和 `Response timeout` 属性。
+**步骤 11**：双击新添加的从设备，在 `General` 中可以设置 `Server address` 和 `Response timeout` 属性
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/master/12.png" /></center>
 
-**步骤 12**：点击 `Modbus Server Channel`，然后点击右下角的 `Add Channel` 来配置主站对从站执行的操作，例如选择功能码、操作寄存器的数量等。您可以点击 `Add Channel` 添加多个操作。
+**步骤 12**：点击 `Modbus Server Channel`，然后点击右下角的 `Add Channel` 来配置主站对从站执行的操作，例如选择功能码、操作的寄存器数量等。您可以点击 `Add Channel` 添加多个操作
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/master/13.png" /></center>
 
@@ -136,23 +129,23 @@ last_update:
 
 ### Modbus 从站配置
 
-**步骤 1**：右键点击项目并选择 `Add Device` 来添加设备。
+**步骤 1**：右键点击项目并选择 `Add Device` 添加设备
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/slave/1.png" /></center>
 
-**步骤 2**：选择 `Modbus` ---> `Modbus Serial Port` ---> `Modbus COM` 来添加一个 Modbus 串口。
+**步骤 2**：选择 `Modbus` ---> `Modbus Serial Port` ---> `Modbus COM` 添加一个 Modbus 串口
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/slave/2.png" /></center>
 
-**步骤 3**：点击新添加的 Modbus 串口，选择 `General`，并配置串口号、波特率等信息。
+**步骤 3**：点击新添加的 Modbus 串口，选择 `General`，并配置串口号、波特率等信息
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/slave/3.png" /></center>
 
-**步骤 4**：右键点击新添加的 Modbus 串口，选择 `Add Device`，并添加 Modbus 从设备。
+**步骤 4**：右键点击新添加的 Modbus 串口，选择 `Add Device`，并添加 Modbus 从设备
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/slave/4.png" /></center>
 
-**步骤 5**：选择 `Modbus` ---> `Modbus Serial Device` ---> `Modbus Serial Device` 来添加一个从设备。
+**步骤 5**：选择 `Modbus` ---> `Modbus Serial Device` ---> `Modbus Serial Device` 添加一个从设备
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/slave/5.png" /></center>
 
@@ -160,21 +153,21 @@ last_update:
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/slave/6.png" /></center>
 
-**步骤 7**：点击 `Modbus Serial Device I/O Mapping`，并在右下角的 `Always update variable` 中选择 `Enable 1`。至此，Modbus 从站的配置完成。
+**步骤 7**：点击 `Modbus Serial Device I/O Mapping`，并在右下角的 `Always update variable` 中选择 `Enable 1`。至此，Modbus 从站配置完成。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/slave/7.png" /></center>
 
 ### Modbus 部署
 
-**步骤 1**：双击项目，点击 `Scan Network`，然后选择您的设备并点击 `OK`。
+**步骤 1**：双击项目，点击 `Scan Network`，然后选择您的设备并点击 `OK`
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/deploy/1.png" /></center>
 
-**步骤 2**：输入 reComputer R1000 的用户名和密码以连接到设备。
+**步骤 2**：输入 reComputer R1000 的用户名和密码以连接设备
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/deploy/2.png" /></center>
 
-**步骤 3**：点击如图所示的按钮，将项目部署到 reComputer R1000。
+**步骤 3**：点击如图所示的按钮，将项目部署到 reComputer R1000
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/MODBUS_RTU/deploy/3.png" /></center>
 

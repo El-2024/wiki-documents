@@ -1,6 +1,6 @@
 ---
-description: 少样本目标检测 - 数据标注、AI模型训练、AI模型部署，使用 Yolov5 和 Roboflow 在 NVIDIA Jetson 平台上实现
-title: 使用 Yolov5 和 Roboflow 入门
+description: 少样本目标检测 - 数据标注、AI模型训练、AI模型部署，使用Yolov5和Roboflow在NVIDIA Jetson平台上实现
+title: 使用Yolov5和Roboflow入门
 tags:
   - 数据标注
   - AI模型训练
@@ -9,94 +9,90 @@ tags:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/YOLOv5-Object-Detection-Jetson
 last_update:
-  date: 05/15/2025
+  date: 01/04/2023
   author: w0x7ce
 ---
 
-# 使用 YOLOv5 和 Roboflow 实现少样本目标检测
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+# 使用YOLOv5和Roboflow进行少样本目标检测
 
 ## 简介
 
-[YOLO](https://docs.ultralytics.com) 是目前最著名的目标检测算法之一。它只需要**少量样本进行训练**，同时提供**更快的训练时间**和**高精度**。我们将在本教程中逐步演示这些特性，同时解释完整的机器学习流程，包括**收集数据、标注数据、训练模型，最后使用训练好的模型进行目标检测**，并在边缘设备（如 **NVIDIA Jetson 平台**）上运行训练好的模型。此外，我们还将比较使用自定义数据集和公共数据集的区别。
+[YOLO](https://docs.ultralytics.com) 是目前最著名的目标检测算法之一。它只需要**少量样本进行训练**，同时提供**更快的训练时间**和**高精度**。我们将在本教程中逐一演示这些功能，并通过逐步解释完整的机器学习流程，展示如何**收集数据、标注数据、训练模型，最后使用训练好的数据进行目标检测**，并在边缘设备（如 **NVIDIA Jetson 平台**）上运行训练好的模型。此外，我们还将比较使用自定义数据集和公共数据集的差异。
 
-## 什么是 YOLOv5？
+## 什么是YOLOv5？
 
-YOLO 是 “You Only Look Once”（你只需看一次）的缩写。这是一种能够实时检测和识别图像中各种目标的算法。Ultralytics 的 [YOLOv5](https://ultralytics.com/yolov5) 是 YOLO 的最新版本，现在基于 PyTorch 框架。
+YOLO是“You Only Look Once”（你只需看一次）的缩写。它是一种实时检测和识别图像中各种目标的算法。Ultralytics [YOLOv5](https://ultralytics.com/yolov5) 是YOLO的最新版本，现在基于PyTorch框架。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/YOLOv5_banner.jpg" /></div>
 
 ## 什么是少样本目标检测？
 
-传统上，如果你想训练一个机器学习模型，你需要使用像 Pascal VOC 2012 数据集这样的公共数据集，该数据集包含大约 17112 张图像。然而，我们将使用迁移学习，通过 YOLOv5 实现少样本目标检测，这只需要非常少的训练样本。我们将在本教程中演示这一点。
+传统上，如果您想训练一个机器学习模型，通常会使用公共数据集，例如包含约17112张图像的Pascal VOC 2012数据集。然而，我们将使用迁移学习，通过YOLOv5实现少样本目标检测，仅需要极少的训练样本。我们将在本教程中演示这一点。
 
 ## 支持的硬件
 
-YOLOv5 支持以下硬件：
+YOLOv5支持以下硬件：
 
-- NVIDIA 官方开发套件：
+- NVIDIA官方开发套件：
 
-  - NVIDIA® Jetson Nano 开发套件
-  - NVIDIA® Jetson Xavier NX 开发套件
-  - NVIDIA® Jetson AGX Xavier 开发套件
-  - NVIDIA® Jetson TX2 开发套件
+  - NVIDIA® Jetson Nano开发套件
+  - NVIDIA® Jetson Xavier NX开发套件
+  - NVIDIA® Jetson AGX Xavier开发套件
+  - NVIDIA® Jetson TX2开发套件
 
-- NVIDIA 官方 SoM 模块：
-  
-  - NVIDIA® Jetson Nano 模块
-  - NVIDIA® Jetson Xavier NX 模块
-  - NVIDIA® Jetson TX2 NX 模块
-  - NVIDIA® Jetson TX2 模块
-  - NVIDIA® Jetson AGX Xavier 模块
+- NVIDIA官方模块：
 
-- Seeed 提供的载板：
+  - NVIDIA® Jetson Nano模块
+  - NVIDIA® Jetson Xavier NX模块
+  - NVIDIA® Jetson TX2 NX模块
+  - NVIDIA® Jetson TX2模块
+  - NVIDIA® Jetson AGX Xavier模块
+
+- Seeed载板：
 
   - Jetson Mate
   - Jetson SUB Mini PC
-  - Jetson Xavier AGX H01 套件
-  - A203 载板
-  - A203（版本 2）载板
-  - A205 载板
-  - A206 载板
+  - Jetson Xavier AGX H01套件
+  - A203载板
+  - A203（版本2）载板
+  - A205载板
+  - A206载板
 
 ## 前置条件
 
-- 运行最新 JetPack v4.6.1 并安装所有 SDK 组件的上述任意 Jetson 设备（安装参考 [此教程](https://wiki.seeedstudio.com/reComputer_J1020_A206_Flash_JetPack/)）
+- 运行最新JetPack v4.6.1并安装所有SDK组件的上述任意Jetson设备（参考[此教程](https://wiki.seeedstudio.com/cn/reComputer_J1020_A206_Flash_JetPack/)了解安装方法）
 
-- 主机电脑
+- 主机PC
 
-  - 本地训练需要一台 Linux 电脑（推荐使用 Ubuntu）
-  - 云端训练可以在任何操作系统的电脑上进行
+  - 本地训练需要Linux PC（建议使用Ubuntu）
+  - 云端训练可在任何操作系统的PC上进行
 
 ## 入门
 
-在边缘设备（如 Jetson 平台）上运行你的第一个目标检测项目只需 4 个主要步骤！
+在边缘设备（如Jetson平台）上运行您的第一个目标检测项目只需4个主要步骤！
 
 1. 收集数据集或使用公开可用的数据集
 
     - 手动收集数据集
     - 使用公开可用的数据集
 
-2. 使用 Roboflow 标注数据集
+2. 使用Roboflow标注数据集
 
-3. 在本地电脑或云端进行训练
+3. 在本地PC或云端进行训练
 
-    - 在本地电脑（Linux）训练
-    - 在 Google Colab 上训练
+    - 在本地PC（Linux）上训练
+    - 在Google Colab上训练
 
-4. 在 Jetson 设备上进行推理
+4. 在Jetson设备上进行推理
 
 ## 收集数据集或使用公开可用的数据集
 
-目标检测项目的第一步是获取训练所需的数据。你可以下载公开可用的数据集，也可以创建自己的数据集！通常，公开数据集用于教育和研究目的。然而，如果你想构建特定的目标检测项目，而公开数据集中没有你想检测的目标，你可能需要构建自己的数据集。
+对象检测项目的第一步是获取用于训练的数据。您可以选择下载公开可用的数据集，或者创建自己的数据集！通常，公开数据集用于教育和研究目的。然而，如果您想构建特定的对象检测项目，而公开数据集中没有您想要检测的对象，那么您可能需要创建自己的数据集。
 
 ### 手动收集数据集
 
-建议你首先录制一段包含你想识别目标的视频。你需要确保覆盖目标的所有角度（360 度），并将目标置于不同的环境、不同的光照和不同的天气条件下。
-我们录制的视频总时长为 9 分钟，其中 4.5 分钟是花朵，剩下的 4.5 分钟是叶子。录制内容可以分解如下：
+建议您首先录制一段包含您想要识别的对象的视频。您需要确保覆盖对象的所有角度（360度），并将对象放置在不同的环境、不同的光照条件和不同的天气条件下。
+我们录制的视频总时长为9分钟，其中4.5分钟是花朵，剩下的4.5分钟是叶子。录制内容可以分解如下：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/pink-flowers-2.gif" /></div>
 
@@ -110,33 +106,33 @@ YOLOv5 支持以下硬件：
 8. 傍晚有风天气
 9. 傍晚下雨天气
 
-**注意：** 稍后我们会将这段视频转换为一系列图像，作为训练数据集。
+**注意：** 稍后我们会将这段视频转换为一系列图像，以构建用于训练的数据集。
 
 ### 使用公开可用的数据集
 
-你可以下载许多公开可用的数据集，例如 [COCO 数据集](https://cocodataset.org)、[Pascal VOC 数据集](http://host.robots.ox.ac.uk/pascal/VOC) 等。[Roboflow Universe](https://universe.roboflow.com) 是一个推荐的平台，它提供了广泛的数据集，并且拥有 [90,000+ 数据集和 66+ 百万张图像](https://blog.roboflow.com/computer-vision-datasets-and-apis)，可用于构建计算机视觉模型。此外，你还可以简单地在 Google 上搜索 **开源数据集**，从各种可用数据集中进行选择。
+您可以下载许多公开可用的数据集，例如 [COCO 数据集](https://cocodataset.org)、[Pascal VOC 数据集](http://host.robots.ox.ac.uk/pascal/VOC) 等。[Roboflow Universe](https://universe.roboflow.com) 是一个推荐的平台，它提供了广泛的数据集，并且拥有 [90,000+ 数据集和 66+ 百万张图像](https://blog.roboflow.com/computer-vision-datasets-and-apis)，可用于构建计算机视觉模型。此外，您还可以在 Google 上搜索 **开源数据集**，从中选择各种可用的数据集。
 
 ## 使用 Roboflow 标注数据集
 
-接下来，我们将开始标注数据集。标注的意思是简单地在我们想检测的每个目标周围绘制矩形框，并为它们分配标签。我们将解释如何使用 Roboflow 来完成这一任务。
+接下来，我们将开始标注数据集。标注的意思是简单地在我们想要检测的每个对象周围绘制矩形框，并为其分配标签。我们将解释如何使用 Roboflow 来完成此操作。
 
-[Roboflow](https://roboflow.com) 是一个基于在线的标注工具。在这里，我们可以直接将之前录制的视频导入到 Roboflow 中，它会将视频导出为一系列图像。这个工具非常方便，因为它可以帮助我们将数据集分为“训练、验证和测试”集。此外，该工具还允许我们在标注后对这些图像进行进一步处理。此外，它可以轻松地将标注好的数据集导出为 **YOLOv5 PyTorch 格式**，这正是我们所需要的！
+[Roboflow](https://roboflow.com) 是一个基于在线的标注工具。在这里，我们可以直接将之前录制的视频导入到 Roboflow 中，它会将视频导出为一系列图像。这个工具非常方便，因为它可以帮助我们将数据集分为“训练集、验证集和测试集”。此外，该工具还允许我们在标注后对这些图像进行进一步处理。此外，它可以轻松地将标注好的数据集导出为 **YOLOV5 PyTorch 格式**，这正是我们所需要的！
 
 - **步骤 1.** 点击 [这里](https://app.roboflow.com/login) 注册一个 Roboflow 账户
 
-- **步骤 2.** 点击 **Create New Project** 来开始我们的项目
+- **步骤 2.** 点击 **Create New Project** 开始我们的项目
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/2.jpg" /></div>
 
-- **步骤 3.** 填写 **Project Name**，保持 **License (CC BY 4.0)** 和 **Project type (Object Detection (Bounding Box))** 为默认值。在 **What will your model predict?** 列中填写一个注释组名称。例如，在我们的案例中，我们选择 **plants**。这个名称应该概括数据集中的所有类别。最后，点击 **Create Public Project**。
+- **步骤 3.** 填写 **Project Name**，保持 **License (CC BY 4.0)** 和 **Project type (Object Detection (Bounding Box))** 为默认值。在 **What will your model predict?** 栏中，填写一个标注组名称。例如，在我们的案例中，我们选择 **plants**。这个名称应该概括您的数据集中的所有类别。最后，点击 **Create Public Project**。
 
 <div align="center"><img width={360} src="https://files.seeedstudio.com/wiki/YOLOV5/20.jpg" /></div>
 
-- **步骤 4.** 拖放之前录制的视频素材
+- **步骤 4.** 拖放之前录制的视频
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/4.jpg" /></div>
 
-- **步骤 5.** 选择一个帧率，将视频分割成一系列图像。这里我们使用默认帧率 **1 帧/秒**，这将生成总共 542 张图像。一旦通过滑块选择帧率，点击 **Choose Frame Rate**。根据视频长度，这个过程可能需要几秒到几分钟。
+- **步骤 5.** 选择一个帧率，以便将视频分割为一系列图像。这里我们使用默认帧率，即 **1 帧/秒**，这将生成总共 542 张图像。一旦通过滑块选择帧率，点击 **Choose Frame Rate**。完成此过程可能需要几秒到几分钟（取决于视频长度）。
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/YOLOV5/5.png" /></div>
 
@@ -148,27 +144,27 @@ YOLOv5 支持以下硬件：
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/YOLOV5/7.jpg" /></div>
 
-- **步骤 8.** 选择一张图像，在一朵花周围画一个矩形框，选择标签为 **pink flower**，然后按 **ENTER**
+- **步骤 8.** 选择一张图像，在花朵周围绘制一个矩形框，选择标签为 **pink flower**，然后按 **ENTER**
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/21.jpg" /></div>
 
-- **步骤 9.** 对剩余的花重复相同的操作
+- **步骤 9.** 对剩余的花朵重复相同操作
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/22.jpg" /></div>
 
-- **步骤 10.** 在一片叶子周围画一个矩形框，选择标签为 **leaf**，然后按 **ENTER**
+- **步骤 10.** 在叶子周围绘制一个矩形框，选择标签为 **leaf**，然后按 **ENTER**
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/23.jpg" /></div>
 
-- **步骤 11.** 对剩余的叶子重复相同的操作
+- **步骤 11.** 对剩余的叶子重复相同操作
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/24.jpg" /></div>
 
-**注意：** 尽量标注图像中看到的所有物体。如果只有物体的一部分可见，也尽量标注。
+**注意：** 尽量标注图像中您看到的所有对象。如果只有对象的一部分可见，也尽量标注。
 
-- **步骤 12.** 继续为数据集中的所有图像进行标注
+- **步骤 12.** 继续标注数据集中的所有图像
 
-Roboflow 提供了一个名为 **Label Assist** 的功能，它可以提前预测标签，从而加快标注速度。然而，它并不适用于所有类型的物体，而是针对某些特定类型的物体。要启用此功能，只需按下 **Label Assist** 按钮，**选择一个模型**，**选择类别**，然后浏览图像以查看带有边界框的预测标签。
+Roboflow 有一个名为 **Label Assist** 的功能，它可以提前预测标签，从而加快您的标注速度。然而，这个功能并不适用于所有对象类型，而是针对某些特定类型的对象。要启用此功能，您只需按下 **Label Assist** 按钮，**选择一个模型**，**选择类别**，然后浏览图像以查看带有边界框的预测标签。
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/YOLOV5/41.png" /></div>
 
@@ -176,148 +172,144 @@ Roboflow 提供了一个名为 **Label Assist** 的功能，它可以提前预�
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/YOLOV5/40.png" /></div>
 
-如上所示，它只能帮助预测 80 个类别的注释。如果您的图像不包含上述类别的物体，则无法使用此功能。
+如上所示，它只能帮助预测上述提到的80个类别的标注。如果您的图像不包含上述对象类别，则无法使用标签辅助功能。
 
-- **步骤 13.** 标注完成后，点击 **Add images to Dataset**
+- **步骤13.** 标注完成后，点击 **Add images to Dataset**（添加图像到数据集）
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/25.jpg" /></div>
 
-- **步骤 14.** 接下来，我们将图像分为 "Train, Valid 和 Test"。保持默认的分配百分比，然后点击 **Add Images**
+- **步骤14.** 接下来我们将图像分为“训练集、验证集和测试集”。保持默认的分配百分比，然后点击 **Add Images**（添加图像）
 
 <div align="center"><img width={330} src="https://files.seeedstudio.com/wiki/YOLOV5/26.png" /></div>
 
-- **步骤 15.** 点击 **Generate New Version**
+- **步骤15.** 点击 **Generate New Version**（生成新版本）
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/27.jpg" /></div>
 
-- **步骤 16.** 现在您可以根据需要添加 **Preprocessing** 和 **Augmentation**。这里我们将 **删除** **Resize** 选项，并保持原始图像尺寸。
+- **步骤16.** 现在您可以根据需要添加 **Preprocessing**（预处理）和 **Augmentation**（数据增强）。这里我们将 **删除** **Resize**（调整大小）选项，并保留原始图像尺寸。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/28.jpg" /></div>
 
-- **步骤 17.** 接下来，保持其余默认设置并点击 **Generate**
+- **步骤17.** 接下来，保持其余默认设置并点击 **Generate**（生成）
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/29.jpg" /></div>
 
-- **步骤 18.** 点击 **Export**
+- **步骤18.** 点击 **Export**（导出）
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/17.jpg" /></div>
 
-- **步骤 19.** 选择 **download zip to computer**，在 "Select a Format" 下选择 **YOLO v5 PyTorch**，然后点击 **Continue**
+- **步骤19.** 选择 **download zip to computer**（下载zip到电脑），在“选择格式”下选择 **YOLO v5 PyTorch**，然后点击 **Continue**（继续）
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/YOLOV5/18.jpg" /></div>
 
-- **步骤 20.** 之后，一个 **.zip 文件** 将下载到您的计算机。我们稍后将在训练中需要这个 .zip 文件。
+- **步骤20.** 之后，一个 **.zip 文件** 将下载到您的电脑。我们稍后将在训练中需要这个 .zip 文件。
 
-## 在本地 PC 或云端训练
+## 在本地电脑或云端训练
 
-完成数据集标注后，我们需要对数据集进行训练。我们将介绍两种训练方法。一种是基于在线平台（Google Colab），另一种是基于本地 PC（Linux）。
+完成数据集标注后，我们需要对数据集进行训练。我们将介绍两种训练方法。一种是基于在线（Google Colab）的方法，另一种是基于本地电脑（Linux）的方法。
 
-对于 Google Colab 训练，我们将使用两种方法。第一种方法是使用 Ultralytics HUB 上传数据集，在 Colab 上设置训练，监控训练并获取训练好的模型。第二种方法是通过 Roboflow API 从 Roboflow 获取数据集，在 Colab 上训练并下载模型。
+对于Google Colab训练，我们将使用两种方法。第一种方法是使用Ultralytics HUB上传数据集，在Colab上设置训练，监控训练并获取训练好的模型。第二种方法是通过Roboflow API从Roboflow获取数据集，在Colab上训练并下载模型。
 
-### 使用 Google Colab 和 Ultralytics HUB
+### 使用Google Colab和Ultralytics HUB
 
-[Ultralytics HUB](https://hub.ultralytics.com) 是一个无需编写任何代码即可训练模型的平台。只需将数据上传到 Ultralytics HUB，训练模型并将其部署到现实世界！它快速、简单且易于使用，任何人都可以轻松上手！
+[Ultralytics HUB](https://hub.ultralytics.com) 是一个无需编写任何代码即可训练模型的平台。只需将数据上传到Ultralytics HUB，训练模型并将其部署到现实世界！它快速、简单且易于使用，任何人都可以轻松上手！
 
-### 使用 Ultralytics HUB 进行训练
+- **步骤1.** 访问[此链接](https://hub.ultralytics.com)注册一个免费的Ultralytics HUB账户
 
-- **步骤 1.** 访问 [此链接](https://hub.ultralytics.com) 注册一个免费的 Ultralytics HUB 账户。
-
-- **步骤 2.** 输入您的凭证并选择 **使用邮箱注册**，或者直接使用 **Google、GitHub 或 Apple 账户**注册。
+- **步骤2.** 输入您的凭据并通过 **邮箱注册** 或直接使用 **Google、GitHub 或 Apple 账户** 注册
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/1.png" /></div>
 
-登录到 Ultralytics HUB 后，您将看到如下的仪表板：
+登录Ultralytics HUB后，您将看到如下仪表盘
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/2.png" /></div>
 
-- **步骤 3.** 解压之前从 Roboflow 下载的压缩文件，并将其中的所有文件放入一个新文件夹中。
+- **步骤3.** 解压我们之前从Roboflow下载的zip文件，并将其中的所有文件放入一个新文件夹中
 
-- **步骤 4.** 确保您的 **数据集 yaml 文件** 和 **根文件夹**（我们之前创建的文件夹）名称相同。例如，如果您将 yaml 文件命名为 **pinkflowers.yaml**，那么根文件夹应该命名为 **pinkflowers**。
+- **步骤4.** 确保您的 **数据集yaml文件** 和 **根文件夹**（我们之前创建的文件夹）名称相同。例如，如果您将yaml文件命名为 **pinkflowers.yaml**，则根文件夹应命名为 **pinkflowers**。
 
-- **步骤 5.** 打开 **pinkflowers.yaml** 文件并编辑 **train** 和 **val** 目录，如下所示：
+- **步骤5.** 打开 **pinkflowers.yaml** 文件，并编辑 **train** 和 **val** 目录如下：
 
 ```sh
 train: train/images
 val: valid/images
 ```
 
-- **步骤 6.** 将根文件夹压缩为 **.zip** 文件，并将其命名为与根文件夹相同的名称（在此示例中为 **pinkflowers.zip**）。
+- **步骤6.** 将根文件夹压缩为一个 **.zip 文件**，并将其命名为与根文件夹相同的名称（在此示例中为 **pinkflowers.zip**）
 
-现在我们已经准备好了数据集，可以上传到 Ultralytics HUB。
+现在我们已经准备好了可以上传到Ultralytics HUB的数据集。
 
-- **步骤 7.** 点击 **Datasets** 标签，然后点击 **Upload Dataset**。
+- **步骤7.** 点击 **Datasets**（数据集）标签，然后点击 **Upload Dataset**（上传数据集）
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/6.jpg" /></div>
 
-- **步骤 8.** 为数据集输入一个 **名称**，如果需要可以输入 **描述**，将我们之前创建的 .zip 文件拖放到 **Dataset** 字段中，然后点击 **Upload Dataset**。
+- **步骤8.** 输入数据集的 **名称**，如有需要输入 **描述**，将我们之前创建的 .zip 文件拖放到 **Dataset** 字段下，然后点击 **Upload Dataset**（上传数据集）
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/YOLOv5-2/24.png" /></div>
 
-- **步骤 9.** 数据集上传后，点击数据集以查看更多数据集的详细信息。
+- **步骤9.** 数据集上传后，点击数据集以查看更多数据集的详细信息
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/25.png" /></div>
 
-- **步骤 10.** 点击 **Projects** 标签，然后点击 **Create Project**。
+- **步骤10.** 点击 **Projects**（项目）标签，然后点击 **Create Project**（创建项目）
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/5.jpg" /></div>
 
-- **步骤 11.** 为项目输入一个 **名称**，如果需要可以输入 **描述**，添加一个 **封面图片**（可选），然后点击 **Create Project**。
+- **步骤11.** 输入项目的 **名称**，如有需要输入 **描述**，添加 **封面图片**（如有需要），然后点击 **Create Project**（创建项目）
 
 <div align="center"><img width={350} src="https://files.seeedstudio.com/wiki/YOLOv5-2/26.png" /></div>
 
-- **步骤 12.** 进入新创建的项目并点击 **Create Model**。
+- **步骤12.** 进入新创建的项目并点击 **Create Model**（创建模型）
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/27.png" /></div>
 
-- **步骤 13.** 输入一个 **模型名称**，选择 **YOLOv5n** 作为预训练模型，然后点击 **Next**。
+- **步骤13.** 输入 **模型名称**，选择 **YOLOv5n** 作为预训练模型，然后点击 **Next**（下一步）
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/28.png" /></div>
 
-**注意：** 通常推荐使用 **YOLOv5n6** 作为预训练模型，因为它适合用于边缘设备，例如 Jetson 平台。然而，Ultralytics HUB 目前尚不支持该模型，因此我们使用 **YOLOv5n**，它是一个稍微类似的模型。
+**注意：** 通常建议选择 **YOLOv5n6** 作为预训练模型，因为它适合用于诸如Jetson平台等边缘设备。然而，Ultralytics HUB目前尚不支持它。因此我们使用 **YOLOv5n**，它是一个稍微类似的模型。
 
-- **步骤 14.** 选择我们之前上传的数据集，然后点击 **Next**。
+- **步骤14.** 选择我们之前上传的数据集，然后点击 **Next**（下一步）
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/29.png" /></div>
 
-- **步骤 15.** 选择 **Google Colab** 作为训练平台，然后点击 **Advanced Options** 下拉菜单。在这里我们可以更改一些训练设置。例如，我们将训练的 epoch 数从 300 改为 100，其他设置保持不变。点击 **Save**。
+- **步骤 15.** 选择 **Google Colab** 作为训练平台，并点击 **Advanced Options** 下拉菜单。在这里我们可以更改一些训练设置。例如，我们将训练的 epoch 数从 300 改为 100，其他设置保持不变。点击 **Save**。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/30.png" /></div>
 
 **注意：** 如果您计划进行本地训练，也可以选择 **Bring your own agent**。
 
-- **步骤 16.** 复制 **API key**，然后点击 **Open Colab**。
+- **步骤 16.** 复制 **API key** 并点击 **Open Colab**。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/31.png" /></div>
 
-- **步骤 17.** 将 **MODEL_KEY** 替换为我们之前复制的 **API key**。
+- **步骤 17.** 将 **MODEL_KEY** 替换为之前复制的 **API key**。
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/YOLOv5-2/16.jpg" /></div>
 
-- **步骤 18.** 点击 `Runtime > Run All` 运行所有代码单元，开始训练过程。
+- **步骤 18.** 点击 `Runtime > Run All` 运行所有代码单元格并开始训练过程。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/YOLOv5-2/17.jpg" /></div>
 
-- **步骤 19.** 返回 Ultralytics HUB，当按钮变为蓝色时点击 **Done**。您还会看到 Colab 显示为 **Connected**。
+- **步骤 19.** 返回到 Ultralytics HUB，当按钮变为蓝色时点击 **Done**。您还会看到 Colab 显示为 **Connected**。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/32.png" /></div>
 
-现在您可以在 HUB 上看到训练进度。
+现在您将在 HUB 上看到训练进度。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/33.png" /></div>
 
-- **步骤 20.** 训练完成后，点击 PyTorch 下载训练好的模型（PyTorch 格式）。PyTorch 是我们需要的格式，用于在 Jetson 设备上进行推理。
+- **步骤 20.** 训练完成后，点击 PyTorch 下载以 PyTorch 格式保存的训练模型。PyTorch 是我们需要的格式，用于在 Jetson 设备上进行推理。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/37.png" /></div>
 
 **注意：** 您也可以导出为其他格式，这些格式显示在 **Formats** 下。
 
-如果您返回 Google Colab，可以看到如下更多详细信息：
+如果返回到 Google Colab，您可以看到如下更多详细信息：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/36.png" /></div>
 
-这里的准确率 `mAP@.5` 分别为叶子约 90% 和花朵约 99.4%，总准确率 `mAP@.5` 约为 94.7%。
-
----
+这里的准确率 `mAP@.5` 大约为 90%（叶子）和 99.4%（花朵），总准确率 `mAP@.5` 大约为 94.7%。
 
 ### 使用 Google Colab 和 Roboflow API
 
@@ -331,17 +323,17 @@ val: valid/images
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/37.png" /></div>
 
-这里的准确率 `mAP@.5` 分别为叶子约 91.6% 和花朵约 99.4%，总准确率 `mAP@.5` 约为 95.5%。
+这里的准确率 `mAP@.5` 大约为 91.6%（叶子）和 99.4%（花朵），总准确率 `mAP@.5` 大约为 95.5%。
 
-- **步骤 2.** 在 **Files** 标签下，如果你导航到 `runs/train/exp/weights`，你会看到一个名为 **best.pt** 的文件。这是训练生成的模型。下载此文件并复制到你的 Jetson 设备，因为这是我们稍后将在 Jetson 设备上进行推理时使用的模型。
+- **步骤 2.** 在 **Files** 标签下，如果您导航到 `runs/train/exp/weights`，您会看到一个名为 **best.pt** 的文件。这是训练生成的模型。下载此文件并复制到您的 Jetson 设备，因为这是我们稍后将在 Jetson 设备上进行推理时使用的模型。
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/YOLOV5/52.png" /></div>
 
 ### 使用本地 PC
 
-这里你可以使用运行 Linux 操作系统的 PC 进行训练。我们在本教程中使用了一台 Ubuntu 20.04 的 PC。
+在这里您可以使用安装了 Linux 操作系统的 PC 进行训练。我们在本教程中使用了 Ubuntu 20.04 PC。
 
-- **步骤 1.** 克隆 **YOLOv5 仓库**并在 **Python>=3.7.0** 环境中安装 **requirements.txt**
+- **步骤 1.** 克隆 **YOLOv5 仓库**并在 **Python>=3.7.0** 环境中安装 **requirements.txt**。
 
 ```sh
 git clone https://github.com/ultralytics/yolov5 
@@ -349,7 +341,7 @@ cd yolov5
 pip install -r requirements.txt
 ```
 
-- **步骤 2.** 将之前从 Roboflow 下载的 .zip 文件复制并粘贴到 **yolov5** 目录中并解压
+- **步骤 2.** 将之前从 Roboflow 下载的 .zip 文件复制并粘贴到 **yolov5** 目录中并解压。
 
 ```sh
 # 示例
@@ -357,28 +349,28 @@ cp ~/Downloads/pink-flowers.v1i.yolov5pytorch.zip ~/yolov5
 unzip pink-flowers.v1i.yolov5pytorch.zip
 ```
 
-- **步骤 3.** 打开 **data.yaml** 文件并编辑 **train** 和 **val** 目录如下
+- **步骤 3.** 打开 **data.yaml** 文件并编辑 **train** 和 **val** 目录如下：
 
 ```sh
 train: train/images
 val: valid/images
 ```
 
-- **步骤 4.** 执行以下命令开始训练
+- **步骤 4.** 执行以下命令开始训练：
 
 ```sh
 python3 train.py --data data.yaml --img-size 640 --batch-size -1 --epoch 100 --weights yolov5n6.pt
 ```
 
-由于我们的数据集相对较小（约 500 张图片），**迁移学习**预计会比从头开始训练产生更好的结果。我们的模型通过将预训练的 COCO 模型的权重名称（yolov5n6）传递给 `weights` 参数来初始化。这里我们使用 **yolov5n6**，因为它非常适合边缘设备。**图像大小**设置为 **640x640**。我们将 **batch-size** 设置为 **-1**，因为这会自动确定最佳批量大小。然而，如果出现 "GPU 内存不足" 的错误，可以选择批量大小为 **32** 或 **16**。你也可以根据自己的喜好更改 **epoch**。
+由于我们的数据集相对较小（约 500 张图片），**迁移学习**预计会比从头开始训练产生更好的结果。我们的模型通过将预训练的 COCO 模型权重传递给 `weights` 参数进行了初始化。在这里我们使用 **yolov5n6**，因为它非常适合边缘设备。这里的 **图像大小** 设置为 **640x640**。我们使用 **batch-size** 为 **-1**，因为它会自动确定最佳批量大小。然而，如果出现 "GPU 内存不足" 的错误，可以选择批量大小为 **32**，甚至 **16**。您也可以根据自己的偏好更改 **epoch**。
 
-训练完成后，你会看到如下输出：
+训练完成后，您将看到如下输出：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/65.png" /></div>
 
-这里的准确率 `mAP@.5` 分别为叶子约 90.6% 和花朵约 99.4%，而总准确率 `mAP@.5` 约为 95%。
+这里的准确率 `mAP@.5` 大约为 90.6%（叶子）和 99.4%（花朵），总准确率 `mAP@.5` 大约为 95%。
 
-- **步骤 5.** 如果你导航到 `runs/train/exp/weights`，你会看到一个名为 **best.pt** 的文件。这是训练生成的模型。将此文件复制并粘贴到你的 Jetson 设备，因为这是我们稍后将在 Jetson 设备上进行推理时使用的模型。
+- **步骤 5.** 如果您导航到 `runs/train/exp/weights`，您会看到一个名为 **best.pt** 的文件。这是训练生成的模型。将此文件复制并粘贴到您的 Jetson 设备，因为这是我们稍后将在 Jetson 设备上进行推理时使用的模型。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/YOLOV5/33.jpg" /></div>
 
@@ -386,7 +378,7 @@ python3 train.py --data data.yaml --img-size 640 --batch-size -1 --epoch 100 --w
 
 ### 使用 TensorRT
 
-现在我们将使用 Jetson 设备，通过之前训练生成的模型对图像进行推理（检测对象）。这里我们将使用 [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt) 来提高 Jetson 平台上的推理性能。
+现在我们将使用 Jetson 设备，通过之前训练生成的模型，对图像进行推理（检测对象）。这里我们将使用 [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt) 来提高 Jetson 平台上的推理性能。
 
 - **步骤 1.** 访问 Jetson 设备的终端，安装 pip 并升级
 
@@ -409,7 +401,7 @@ cd yolov5
 vi requirements.txt
 ```
 
-- **步骤 4.** 编辑以下行。这里你需要先按 **i** 进入编辑模式。按 **ESC**，然后输入 **:wq** 保存并退出
+- **步骤 4.** 编辑以下几行。首先需要按 **i** 进入编辑模式。编辑完成后按 **ESC**，然后输入 **:wq** 保存并退出。
 
 ```sh
 matplotlib==3.2.2
@@ -418,7 +410,7 @@ numpy==1.19.4
 # torchvision>=0.8.1
 ```
 
-**注意：** 我们为 **matplotlib** 和 **numpy** 包含了固定版本，以确保运行 YOLOv5 时不会出现错误。同时，暂时排除了 torch 和 torchvision，因为它们稍后会被安装。
+**注意：** 我们固定了 **matplotlib** 和 **numpy** 的版本，以确保运行 YOLOv5 时不会出现错误。同时，暂时排除了 torch 和 torchvision，因为它们将在后续步骤中安装。
 
 - **步骤 5.** 安装以下依赖项
 
@@ -426,7 +418,7 @@ numpy==1.19.4
 sudo apt install -y libfreetype6-dev
 ```
 
-- **步骤 6.** 安装必要的包
+- **步骤 6.** 安装必要的软件包
 
 ```sh
 pip3 install -r requirements.txt
@@ -472,7 +464,7 @@ cd yolov5
 python3 gen_wts.py -w best.pt -o best.wts
 ```
 
-- **步骤 13.** 导航到 **tensorrtx/yolov5**
+- **步骤 13.** 进入 **tensorrtx/yolov5** 目录
 
 ```sh
 cd ~
@@ -485,13 +477,13 @@ cd tensorrtx/yolov5
 vi yololayer.h
 ```
 
-- **步骤 15.** 将 **CLASS_NUM** 更改为你的模型训练的类别数量。在我们的示例中，它是 2
+- **步骤 15.** 将 **CLASS_NUM** 修改为模型训练的类别数。在我们的示例中，类别数为 2。
 
 ```sh
 CLASS_NUM = 2
 ```
 
-- **步骤 16.** 创建一个新的 **build** 目录并导航到其中
+- **步骤 16.** 创建一个新的 **build** 目录并进入该目录
 
 ```sh
 mkdir build 
@@ -519,11 +511,11 @@ sudo ./yolov5 -s [.wts] [.engine] [n/s/m/l/x/n6/s6/m6/l6/x6 or c/c6 gd gw]
 sudo ./yolov5 -s best.wts best.engine n6
 ```
 
-这里我们使用 **n6**，因为它推荐用于像 NVIDIA Jetson 平台这样的边缘设备。然而，如果你使用 Ultralytics HUB 设置训练，你只能使用 **n**，因为 HUB 尚不支持 **n6**。
+这里我们使用 **n6**，因为它推荐用于 NVIDIA Jetson 平台等边缘设备。然而，如果您使用 Ultralytics HUB 设置训练，则只能使用 **n**，因为 HUB 尚不支持 **n6**。
 
-- **步骤 20.** 将你希望模型检测的图像复制到一个新文件夹中，例如 **tensorrtx/yolov5/images**
+- **步骤 20.** 将需要检测的图像复制到一个新文件夹中，例如 **tensorrtx/yolov5/images**
 
-- **步骤 21.** 反序列化并对图像进行推理
+- **步骤 21.** 反序列化并对图像进行推理，命令如下
 
 ```sh
 sudo ./yolov5 -d best.engine images
@@ -537,7 +529,7 @@ sudo ./yolov5 -d best.engine images
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/58.png" /></div>
 
-从上述结果中，我们可以取平均值约为 **47ms**。将此值转换为每秒帧数：1000/47 = 21.2766 = **21fps**。
+从上述结果可以得出平均值约为 **47ms**。将此值转换为每秒帧数：1000/47 = 21.2766 = **21fps**。
 
 #### Jetson Xavier NX
 
@@ -545,7 +537,7 @@ sudo ./yolov5 -d best.engine images
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/59.jpg" /></div>
 
-从上述结果中，我们可以取平均值约为 **20ms**。将此值转换为每秒帧数：1000/20 = **50fps**。
+从上述结果可以得出平均值约为 **20ms**。将此值转换为每秒帧数：1000/20 = **50fps**。
 
 此外，检测到的对象输出图像如下：
 
@@ -557,7 +549,7 @@ sudo ./yolov5 -d best.engine images
 
 这里我们将使用 [NVIDIA TensorRT](https://developer.nvidia.com/tensorrt) 和 [NVIDIA DeepStream SDK](https://developer.nvidia.com/deepstream-sdk) 对视频进行推理。
 
-- **步骤 1.** 确保您已在 Jetson 设备上正确安装了所有 **SDK 组件** 和 **DeepStream SDK**。（参考[此 Wiki](https://wiki.seeedstudio.com/Tutorial-of-A20X-Carrier-Boards) 了解安装方法）
+- **步骤 1.** 确保您已在 Jetson 设备上正确安装所有 **SDK 组件** 和 **DeepStream SDK**。（参考 [此教程](https://wiki.seeedstudio.com/cn/Tutorial-of-A20X-Carrier-Boards) 了解安装方法）
 
 **注意：** 推荐使用 NVIDIA SDK Manager 安装所有 SDK 组件和 DeepStream SDK。
 
@@ -582,7 +574,7 @@ cd yolov5
 vi requirements.txt
 ```
 
-- **步骤 5.** 编辑以下行。在这里，您需要先按 **i** 进入编辑模式。按 **ESC**，然后输入 **:wq** 保存并退出。
+- **步骤 5.** 编辑以下几行。首先需要按 **i** 进入编辑模式。编辑完成后按 **ESC**，然后输入 **:wq** 保存并退出。
 
 ```sh
 matplotlib==3.2.2
@@ -591,7 +583,7 @@ numpy==1.19.4
 # torchvision>=0.8.1
 ```
 
-**注意：** 我们为 **matplotlib** 和 **numpy** 包含了固定版本，以确保运行 YOLOv5 时不会出现错误。同时，暂时排除了 torch 和 torchvision，因为它们将在稍后安装。
+**注意：** 我们固定了 **matplotlib** 和 **numpy** 的版本，以确保运行 YOLOv5 时不会出现错误。同时，暂时排除了 torch 和 torchvision，因为它们将在后续步骤中安装。
 
 - **步骤 6.** 安装以下依赖项
 
@@ -630,13 +622,13 @@ cd ~
 git clone https://github.com/marcoslucianops/DeepStream-Yolo
 ```
 
-- **步骤 11.** 将 **gen_wts_yoloV5.py** 从 **DeepStream-Yolo/utils** 复制到 **yolov5** 目录
+- **步骤 11.** 将 **DeepStream-Yolo/utils** 中的 **gen_wts_yoloV5.py** 复制到 **yolov5** 目录
 
 ```sh
 cp DeepStream-Yolo/utils/gen_wts_yoloV5.py yolov5
 ```
 
-- **步骤 12.** 在 yolov5 仓库中，从 YOLOv5 发布页面下载 **pt 文件**（例如 YOLOv5s 6.1）
+- **步骤 12.** 在 yolov5 仓库中，从 YOLOv5 发布页面下载 **pt 文件**（以 YOLOv5s 6.1 为例）
 
 ```sh
 cd yolov5
@@ -649,7 +641,7 @@ wget https://github.com/ultralytics/yolov5/releases/download/v6.1/yolov5s.pt
 python3 gen_wts_yoloV5.py -w yolov5s.pt
 ```
 
-**注意：** 要更改推理大小（默认：640）
+**注意**: 要更改推理尺寸（默认: 640）
 
 ```sh
 -s SIZE
@@ -657,7 +649,7 @@ python3 gen_wts_yoloV5.py -w yolov5s.pt
 -s HEIGHT WIDTH
 --size HEIGHT WIDTH
 
-例如 1280：
+例如 1280:
 -s 1280
 或
 -s 1280 1280
@@ -707,7 +699,7 @@ deepstream-app -c deepstream_app_config.txt
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/FP32-yolov5s.gif" /></div>
 
-上述结果是在 **Jetson Xavier NX** 上运行的，使用 **FP32** 和 **YOLOv5s 640x640**。我们可以看到 **FPS** 大约为 **30**。
+上述结果运行在 **Jetson Xavier NX** 上，使用 **FP32** 和 **YOLOv5s 640x640**。可以看到 **FPS** 大约为 **30**。
 
 #### INT8 校准
 
@@ -729,7 +721,7 @@ CUDA_VER=11.4 OPENCV=1 make -C nvdsinfer_custom_impl_Yolo
 CUDA_VER=10.2 OPENCV=1 make -C nvdsinfer_custom_impl_Yolo
 ```
 
-- **步骤 3.** 对于 COCO 数据集，下载 [val2017](https://drive.google.com/file/d/1gbvfn7mcsGDRZ_luJwtITL-ru2kK99aK/view?usp=sharing)，解压并移动到 **DeepStream-Yolo** 文件夹。
+- **步骤 3.** 对于 COCO 数据集，下载 [val2017](https://drive.google.com/file/d/1gbvfn7mcsGDRZ_luJwtITL-ru2kK99aK/view?usp=sharing)，解压并移动到 **DeepStream-Yolo** 文件夹
 
 - **步骤 4.** 为校准图像创建一个新目录
 
@@ -745,7 +737,7 @@ for jpg in $(ls -1 val2017/*.jpg | sort -R | head -1000); do \
 done
 ```
 
-**注意：** NVIDIA 推荐至少使用 500 张图像以获得良好的准确性。在此示例中，选择了 1000 张图像以获得更高的准确性（更多图像 = 更高的准确性）。更高的 INT8_CALIB_BATCH_SIZE 值将带来更高的准确性和更快的校准速度。根据您的 GPU 内存进行设置。您可以通过 **head -1000** 设置。例如，对于 2000 张图像，使用 **head -2000**。此过程可能需要较长时间。
+**注意:** NVIDIA 推荐至少使用 500 张图像以获得较好的准确性。在此示例中，选择了 1000 张图像以获得更好的准确性（更多图像 = 更高准确性）。更高的 INT8_CALIB_BATCH_SIZE 值将提高准确性并加快校准速度。根据您的 GPU 内存进行设置。您可以通过 **head -1000** 设置。例如，对于 2000 张图像，使用 **head -2000**。此过程可能需要较长时间。
 
 - **步骤 6.** 使用所有选定的图像创建 **calibration.txt** 文件
 
@@ -792,11 +784,11 @@ deepstream-app -c deepstream_app_config.txt
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/INT8-yolov5s.gif" /></div>
 
-上述结果是在 **Jetson Xavier NX** 上运行的，使用 **INT8** 和 **YOLOv5s 640x640**。可以看到 **FPS** 大约为 **60**。
+上述结果运行在 **Jetson Xavier NX** 上，使用 **INT8** 和 **YOLOv5s 640x640**。可以看到 **FPS** 大约为 **60**。
 
 #### 基准测试结果
 
-下表总结了不同模型在 **Jetson Xavier NX** 上的性能表现。
+以下表格总结了不同模型在 **Jetson Xavier NX** 上的性能。
 
 <table>
 <thead>
@@ -838,7 +830,7 @@ deepstream-app -c deepstream_app_config.txt
 </tbody>
 </table>
 
-## 使用公共数据集与自定义数据集的对比
+## 使用公共数据集和自定义数据集的比较
 
 现在我们将比较使用公共数据集和自定义数据集时训练样本数量和训练时间的差异。
 
@@ -846,7 +838,7 @@ deepstream-app -c deepstream_app_config.txt
 
 #### 自定义数据集
 
-在本教程中，我们首先收集了植物数据集的视频，然后使用 Roboflow 将视频转换为一系列图像。我们获得了 542 张图像，与公共数据集相比，这是一个非常小的数据集。
+在本教程中，我们首先将植物数据集以视频形式收集，然后使用 Roboflow 将视频转换为一系列图像。在这里，我们获得了 542 张图像，与公共数据集相比，这是一个非常小的数据集。
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/YOLOV5/62.jpg" /></div>
 
@@ -866,25 +858,25 @@ deepstream-app -c deepstream_app_config.txt
 
 #### 本地训练
 
-训练是在一块 NVIDIA GeForce GTX 1660 Super 显卡（6GB 显存）上完成的。
+训练是在配备 6GB 显存的 NVIDIA GeForce GTX 1660 Super 显卡上完成的。
 
 ##### 使用本地训练的自定义数据集
 
 ###### 540 张图像数据集
 
-根据我们之前对植物数据集的本地训练，获得了以下结果：
+根据我们之前对植物数据集的本地训练，得到了以下结果：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/65.png" /></div>
 
-在这里，运行 100 个 epoch 仅耗时 **2.2 小时**。与使用公共数据集的训练相比，这明显更快。
+在这里，运行 100 个 epoch 仅花费了 **2.2 小时**。与使用公共数据集的训练相比，这显然更快。
 
 ###### 240 张图像数据集
 
-我们将数据集减少到 240 张图像，再次进行训练，获得了以下结果：
+我们将数据集减少到 240 张图像，并再次进行训练，得到了以下结果：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/83.png" /></div>
 
-在这里，运行 100 个 epoch 仅耗时约 **1 小时**。与使用公共数据集的训练相比，这明显更快。
+在这里，运行 100 个 epoch 仅花费了大约 **1 小时**。与使用公共数据集的训练相比，这显然更快。
 
 ##### 使用本地训练的 Pascal VOC 2012 数据集
 
@@ -892,37 +884,37 @@ deepstream-app -c deepstream_app_config.txt
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/66.png" /></div>
 
-如果计算 100 个 epoch 的训练时间，大约需要 **50 * 100 分钟 = 5000 分钟 = 83 小时**，这远远长于自定义数据集的训练时间。
+如果计算 100 个 epoch 的训练时间，大约需要 **50 * 100 分钟 = 5000 分钟 = 83 小时**，这比自定义数据集的训练时间长得多。
 
 ##### 使用本地训练的 Microsoft COCO 2017 数据集
 
-在这种情况下，我们使用 Microsoft COCO 2017 数据集进行训练，同时保持相同的训练参数。我们发现运行 1 个 epoch 预计需要 **7.5 小时**，因此我们在 1 个 epoch 完成前停止了训练。
+在这种情况下，我们使用 Microsoft COCO 2017 数据集进行训练，同时保持相同的训练参数。我们发现运行 1 个 epoch 预计需要大约 **7.5 小时**，因此我们在 1 个 epoch 完成之前停止了训练。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/68.png" /></div>
 
-如果计算 100 个 epoch 的训练时间，大约需要 **7.5 小时 * 100 = 750 小时**，这远远长于自定义数据集的训练时间。
+如果计算 100 个 epoch 的训练时间，大约需要 **7.5 小时 * 100 = 750 小时**，这比自定义数据集的训练时间长得多。
 
 #### Google Colab 训练
 
-训练是在一块 NVIDIA Tesla K80 显卡（12GB 显存）上完成的。
+训练是在配备 12GB 显存的 NVIDIA Tesla K80 显卡上完成的。
 
 ##### 自定义数据集
 
 ###### 540 张图像数据集
 
-根据我们之前在 Google Colab 上对 540 张植物图像的训练，获得了以下结果：
+根据我们之前在 Google Colab 上对 540 张植物图像的训练，得到了以下结果：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/37.png" /></div>
 
-在这里，运行 100 个 epoch 仅耗时约 **1.3 小时**。这也明显快于使用公共数据集的训练。
+在这里，运行 100 个 epoch 仅花费了大约 **1.3 小时**。这也比使用公共数据集的训练快得多。
 
 ###### 240 张图像数据集
 
-我们将数据集减少到 240 张图像，再次进行训练，获得了以下结果：
+我们将数据集减少到 240 张图像，并再次进行训练，得到了以下结果：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/79.png" /></div>
 
-在这里，运行 100 个 epoch 仅耗时约 **42 分钟 (0.697 小时 * 60)**。这明显快于使用公共数据集的训练。
+在这里，运行 100 个 epoch 仅花费了大约 **42 分钟 (0.697 小时 * 60)**。这比使用公共数据集的训练快得多。
 
 ##### 使用 Google Colab 训练的 Pascal VOC 2012 数据集
 
@@ -930,19 +922,19 @@ deepstream-app -c deepstream_app_config.txt
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/67.png" /></div>
 
-如果计算 100 个 epoch 的训练时间，大约需要 **9 * 100 分钟 = 900 分钟 = 15 小时**，这远远长于自定义数据集的训练时间。
+如果计算 100 个 epoch 的训练时间，大约需要 **9 * 100 分钟 = 900 分钟 = 15 小时**，这比自定义数据集的训练时间长得多。
 
 ##### 使用 Google Colab 训练的 Microsoft COCO 2017 数据集
 
-在这种情况下，我们使用 Microsoft COCO 2017 数据集进行训练，同时保持相同的训练参数。我们发现运行 1 个 epoch 预计需要 **1.25 小时**，因此我们在 1 个 epoch 完成前停止了训练。
+在这种情况下，我们使用 Microsoft COCO 2017 数据集进行训练，同时保持相同的训练参数。我们发现运行 1 个 epoch 预计需要大约 **1.25 小时**，因此我们在 1 个 epoch 完成之前停止了训练。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOV5/69.png" /></div>
 
-如果我们计算训练 100 个 epoch 的时间，大约需要 **1.25 小时 * 100 = 125 小时**，这比自定义数据集的训练时间要长得多。
+如果计算 100 个 epoch 的训练时间，大约需要 **1.25 小时 * 100 = 125 小时**，这比自定义数据集的训练时间长得多。
 
 ### 训练样本数量和训练时间总结
 
-| 数据集 | 训练样本数量 | 本地 PC (GTX 1660 Super) 训练时间 | Google Colab (NVIDIA Tesla K80) 训练时间 |
+| 数据集 | 训练样本数量 | 本地 PC 训练时间 (GTX 1660 Super) | Google Colab 训练时间 (NVIDIA Tesla K80) |
 |---|---|---|---|
 | 自定义 | 542 | 2.2 小时 | 1.3 小时 |
 |  | 240 | 1 小时 | 42 分钟 |
@@ -951,7 +943,7 @@ deepstream-app -c deepstream_app_config.txt
 
 ## 预训练检查点比较
 
-您可以从下表中了解更多关于预训练检查点的信息。以下是我们在 **Google Colab** 上训练并在 **Jetson Nano** 和 **Jetson Xavier NX** 上使用 **YOLOv5n6** 作为预训练检查点进行推理的场景。
+您可以从下表中了解更多关于预训练检查点的信息。以下是我们在 **Google Colab** 上训练，并在 **Jetson Nano** 和 **Jetson Xavier NX** 上使用 **YOLOv5n6** 作为预训练检查点进行推理的场景。
 
 | 模型 | 尺寸 (像素) | mAPval 0.5:0.95 | mAPval 0.5 | CPU b1 速度 (ms) | V100 b1 速度 (ms) | V100 b32 速度 (ms) | Jetson Nano FP16 速度 (ms) | Jetson Xavier NX FP16 速度 (ms) | 参数 (M) | FLOPs @640 (B) |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -968,13 +960,13 @@ deepstream-app -c deepstream_app_config.txt
 
 > 参考：[YOLOv5 GitHub](https://github.com/ultralytics/yolov5)
 
-## 应用案例
+## 额外应用
 
-由于我们上面解释的所有步骤对于任何类型的目标检测应用都是通用的，您只需要更换数据集即可应用于您自己的目标检测任务！
+由于我们上面解释的所有步骤对于任何类型的目标检测应用都是通用的，您只需更换数据集即可应用于您自己的目标检测任务！
 
-### 路标检测
+### 道路标志检测
 
-这里我们使用了来自 Roboflow 的 [路标数据集](https://universe.roboflow.com/usmanchaudhry622-gmail-com/traffic-and-road-signs/1)，并在 NVIDIA Jetson 上进行了推理！
+这里我们使用了来自 Roboflow 的 [道路标志数据集](https://universe.roboflow.com/usmanchaudhry622-gmail-com/traffic-and-road-signs/1)，并在 NVIDIA Jetson 上进行了推理！
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/YOLOv5-2/thumb-2.png" /></div>
 
@@ -994,7 +986,7 @@ deepstream-app -c deepstream_app_config.txt
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们为您提供多种支持渠道，确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们将为您提供多种支持，确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

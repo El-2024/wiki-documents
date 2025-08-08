@@ -559,7 +559,7 @@ LoRa® 标志是 Semtech Corporation 或其子公司的商标。
 
 ## 刷写 JetPack
 
-reServer J2032 已经预装了 JetPack，开箱即用。但如果您想重新刷写设备，请参考[此 Wiki](https://wiki.seeedstudio.com/reServer_J2032_Flash_Jetpack)。
+reServer J2032 已经预装了 JetPack，开箱即用。但如果您想重新刷写设备，请参考[此 Wiki](https://wiki.seeedstudio.com/cn/reServer_J2032_Flash_Jetpack)。
 
 ## 快速开始：reServer 外设和模块组装
 

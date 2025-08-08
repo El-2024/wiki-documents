@@ -1,7 +1,7 @@
 ---
 description: 本文主要介绍如何使用 fuxa 进行 WebAPI 通信。
 
-title: reComputer R1000 使用 fuxa 进行 WebAPI 通信
+title: 使用 fuxa 在 reComputer R1000 上实现 WebAPI
 keywords:
   - 边缘控制器
   - reComputer R1000
@@ -10,21 +10,18 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png
 slug: /cn/reComputer_r1000_fuxa_web_api
 last_update:
-  date: 05/15/2025
+  date: 2024/10/8
   author: ShuishengPeng
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## 简介
-FUXA 是一个基于 Web 的过程可视化 (SCADA/HMI/Dashboard) 软件。使用 FUXA，您可以为您的机器创建现代化的过程可视化界面，并实时显示数据。它支持 Modbus RTU/TCP、Siemens S7 协议、OPC-UA、BACnet IP、MQTT 和其他协议。
+FUXA 是一个基于 Web 的过程可视化（SCADA/HMI/Dashboard）软件。使用 FUXA，您可以为您的机器创建现代化的过程可视化界面，并实时显示数据。它支持 Modbus RTU/TCP、Siemens S7 协议、OPC-UA、BACnet IP、MQTT 等协议。
 
-[postman](https://www.postman.com/downloads/?utm_source=postman-home) 是一个接口调试和测试工具，支持 http 协议。其主要特点是功能强大、使用简单且易于操作，常用于 WebAPI 的接口调试。
+[postman](https://www.postman.com/downloads/?utm_source=postman-home) 是一个支持 http 协议的接口调试和测试工具。其主要特点是功能强大、使用简单且易于操作，常用于 WebAPI 的接口调试。
 
-本文主要介绍如何使用 fuxa 进行 WebAPI 通信。目前阶段，fuxa 仅支持 `GET` 功能，数据包为 Json 格式。我们将使用 fuxa 的 `GET` 功能获取 `postman` 的数据包。
+本文主要介绍如何使用 fuxa 进行 WebAPI 通信。目前阶段，fuxa 仅支持 `GET` 功能，数据包格式为 Json。我们将使用 fuxa 的 `GET` 功能获取 `postman` 的数据包。
 
-## 入门
+## 开始
 
 在开始这个项目之前，您可能需要提前准备好硬件和软件，如下所述。
 
@@ -50,7 +47,7 @@ FUXA 是一个基于 Web 的过程可视化 (SCADA/HMI/Dashboard) 软件。使�
 
 ### 软件准备
 
-* Python 3.11 可能与 fuxa 不兼容。如果您的 Python 版本是 3.11，请考虑更换为其他版本的 Python。
+* Python 3.11 可能与 fuxa 不兼容。如果您的 Python 版本是 3.11，请考虑更换为其他版本。
 * 在 reComputer R1000 上使用 [fuxa](https://github.com/frangoteam/FUXA)。您可以参考以下步骤在 reComputer R1000 上安装 fuxa：
   ```shell
     ## 您需要安装 Node 版本 14 || 16 || 18。
@@ -66,7 +63,7 @@ FUXA 是一个基于 Web 的过程可视化 (SCADA/HMI/Dashboard) 软件。使�
   ```
 
 ## WebAPI 通信步骤
-**步骤 1**：点击 `fuxa` 界面右下角的 `+` 号，输入 `Name`，在 `Type` 中选择 `WebAPI`，在 `Method` 中选择 `GET`，在 `Format` 中选择 `JSON`。然后在 `URL` 中输入 `https://postman-echo.com/get`，最后点击 `OK`。您可以看到 fuxa 成功与 `postman` 建立连接。
+**步骤 1**：点击 `fuxa` 界面右下角的 `+` 号，输入 `Name`，在 `Type` 中选择 `WebAPI`，在 `Method` 中选择 `GET`，在 `Format` 中选择 `JSON`。然后在 `URL` 中输入 `https://postman-echo.com/get`，最后点击 `OK`。您可以看到 fuxa 成功与 `postman` 建立了连接。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fuxa/connect_webapi.gif" /></center>
 

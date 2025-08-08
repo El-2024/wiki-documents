@@ -1,5 +1,5 @@
 ---
-description: SenseCAP T1000 追踪器与 ThingsBoard 集成
+description: SenseCAP T1000 追踪器与 Thingsboard 集成
 title: ThingsBoard 集成（通过 TTS）
 keywords:
 - ThingsBoard
@@ -7,24 +7,26 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/thingsboard_integrated
 last_update:
-  date: 05/15/2025
+  date: 8/20/2024
   author: Jessie
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
-[ThingsBoard](https://thingsboard.io/) 是一个开源的物联网平台，能够快速开发、管理和扩展物联网项目。我们的目标是提供开箱即用的物联网云端或本地解决方案，为您的物联网应用提供服务器端基础设施。
 
-本章节内容将指导用户如何通过 TTN 将 [SenseCAP T1000 追踪器](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html) 连接到 ThingsBoard。
+[ThingsBoard](https://thingsboard.io/) 是一个开源的物联网平台，能够快速开发、管理和扩展物联网项目。我们的目标是提供开箱即用的物联网云端或本地解决方案，为您的物联网应用程序提供服务器端基础设施。
 
-## 开始
 
-在开始设置之前，请先查看 [将 SenseCAP T1000 连接到 TTS](https://wiki.seeedstudio.com/SenseCAP_T1000_tracker_TTN)，以先将您的 SenseCAP T1000 追踪器连接到 TTS。
+本章内容将指导用户如何通过 TTN 将 [SenseCAP T1000 追踪器](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html) 连接到 ThingsBoard。
+
+
+## 开始使用
+
+在开始设置之前，请查看 [将 SenseCAP T1000 连接到 TTS](https://wiki.seeedstudio.com/cn/SenseCAP_T1000_tracker_TTN) 以首先将您的 SenseCAP T1000 追踪器连接到 TTS。
+
 
 ## 配置 ThingsBoard
 
-首先，创建一个 [ThingsBoard](https://thingsboard.cloud/) 账户。
+
+首先，在 [ThingsBoard](https://thingsboard.cloud/) 创建一个账户。
 
 ### 创建转换器
 
@@ -34,7 +36,8 @@ last_update:
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/converter.png" alt="pir" width={800} height="auto" /></p>
 
-为转换器命名，启用 `Debug mode`，复制以下代码并点击 `Add`。
+
+命名转换器，启用 `Debug mode`，复制以下代码并点击 `Add`。
 
 ```cpp
 var data = decodeToJson(payload);
@@ -81,14 +84,16 @@ return result;
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/converter2.png" alt="pir" width={800} height="auto" /></p>
 
+
 ### 添加集成
 
 导航到 `Integration`，点击 `Add Integration`。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/integrate1.png" alt="pir" width={800} height="auto" /></p>
 
-**类型**: `The Things Stack Community`<br/>
-**启用**: `Enable integration`  `Debug mode`  `Allow create devices or assets`
+
+**Type**: `The Things Stack Community`<br/>
+**Enable**: `Enable integration`  `Debug mode`  `Allow create devices or assets`
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tts-inte.png" alt="pir" width={800} height="auto" /></p>
 
@@ -98,12 +103,13 @@ return result;
 
 跳过 `Downlink data converter`。
 
+
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/skip-down.png" alt="pir" width={800} height="auto" /></p>
 
-**区域**: 您的应用在 TTS 中注册的区域<br/>
-**用户名**: 来自 TTS 的用户名<br/>
-**密码**: 来自 TTS 的密码<br/>
-**使用 API v3**: 设置为 `Enable`
+**Region**: 您的应用程序在 TTS 中注册的区域<br/>
+**Username**: 来自 TTS 的用户名<br/>
+**Password**: 来自 TTS 的密码<br/>
+**Use API v3**: 设置为 `Enable`
 
 :::tip
 信息可以在 TTS MQTT 集成中找到。
@@ -112,16 +118,19 @@ return result;
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/add-inte2.png" alt="pir" width={800} height="auto" /></p>
 
+
 ### 数据查看
 
-导航到 `Entities` -> `Devices`，您可以看到：
+导航到 `Entities` -> `Devices`，在这里您可以看到：
 
-* 一个新设备已在 ThingsBoard 中注册。
-* 在 `Latest Telemetry` 部分，您将看到设备的更新数据。
+* 在 Thingsboard 中注册了一个新设备
+* 在 `Latest Telemetry` 部分，您将看到来自设备的更新数据。
+
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/telemetry.png" alt="pir" width={800} height="auto" /></p>
 
-### 添加 Dashboard
+
+### 添加仪表板
 
 导航到 `Dashboards`，点击 `Create new dashboard`。
 
@@ -136,9 +145,10 @@ return result;
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/map1.png" alt="pir" width={800} height="auto" /></p>
 
-**类型**: `Device`<br/>
-**设备**: 我们创建的设备。<br/>
-**数据键**: `latitude`, `longitude`
+
+**Type**: `Device`<br/>
+**Device**: 我们创建的设备。<br/>
+**Data key**: `latitude`, `longitude`
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/add-map.png" alt="pir" width={800} height="auto" /></p>
 
@@ -148,18 +158,20 @@ return result;
 
 #### 温度
 
-**设备**: 我们创建的设备。<br/>
-**数据键**: `air_temperature`
+**Device**: 我们创建的设备。<br/>
+**Data key**: `air_temperature`
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/add-temp.png" alt="pir" width={800} height="auto" /></p>
 
+
 #### 电池
 
-**设备**: 我们创建的设备。<br/>
-**数据键**: `battery`
+**Device**: 我们创建的设备。<br/>
+**Data key**: `battery`
+
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/add-battery.png" alt="pir" width={800} height="auto" /></p>
 
-以下是一个基本示例，您可以自定义自己的仪表板。
+这是一个基本示例，您可以自定义自己的仪表板。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/dashboard3.png" alt="pir" width={800} height="auto" /></p>

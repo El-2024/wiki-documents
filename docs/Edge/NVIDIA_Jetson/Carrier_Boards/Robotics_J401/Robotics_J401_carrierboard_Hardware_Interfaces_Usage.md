@@ -2,7 +2,7 @@
 description: This wiki provides a comprehensive introduction to the hardware features and interface usage of the reComputer Jetson Robotics J401 carrier board. It covers detailed specifications, supported modules, setup instructions, and practical guides for using various interfaces such as M.2, Ethernet, USB, CAN, UART, I2C, and GMSL2 camera expansion, helping users quickly get started with robotics development on the J401 platform.
 title: Interfaces Usage
 tags:
-  - Robotics J401 carrier board
+  - J401-Robotics carrier board
   - Jetson
   - Robotics
   - Interfaces Usage
@@ -15,7 +15,7 @@ last_update:
   author: Zibo
 ---
 
-# reComputer Jetson Robotics J401 Hardware and Getting Started
+# Robotics J401 carrier board Hardware and Getting Started
 
 
 The reComputer Robotics J401 is a compact, high-performance edge AI carrier board designed for advanced robotics. Compatible with NVIDIA Jetson Orin Nano/Orin NX modules in Super/MAXN mode, it delivers up to 157 TOPS of AI performance. Equipped with extensive connectivity options—including dual Gigabit Ethernet ports, M.2 slots for 5G and Wi-Fi/BT modules, 6 USB 3.2 ports, CAN, GMSL2 (via optional expansion), I2C, and UART—it serves as a powerful robotic brain capable of processing complex data from various sensors. Pre-installed with JetPack 6 and Linux BSP, it ensures seamless deployment.​
@@ -94,7 +94,7 @@ Supporting frameworks like NVIDIA Isaac ROS, Hugging Face, PyTorch, and ROS 2/1,
     <tr>
       <th rowSpan="1">Storage</th>
       <td>M.2 KEY M PCIe</td>
-      <td>1x M.2 KEY M PCIe (M.2 NVMe 2242 SSD 128G included)</td>
+      <td>1x M.2 KEY M PCIe (M.2 NVMe 2280 SSD 128G included)</td>
     </tr>
     <tr>
       <th rowSpan="3">Networking</th>
@@ -120,7 +120,7 @@ Supporting frameworks like NVIDIA Isaac ROS, Hugging Face, PyTorch, and ROS 2/1,
     </tr>
     <tr>
       <td>CAN</td>
-      <td>2x CAN0 (XT30(2+2));<br />3x CAN1 (4-Pin JST Header)</td>
+      <td>2x CAN0 (XT30(2+2));<br />3x CAN1 (4-Pin GH 1.25 Header)</td>
     </tr>
     <tr>
       <td>Display</td>
@@ -128,11 +128,11 @@ Supporting frameworks like NVIDIA Isaac ROS, Hugging Face, PyTorch, and ROS 2/1,
     </tr>
     <tr>
       <td>UART</td>
-      <td>1x UART 4-Pin JST Header</td>
+      <td>1x UART 4-Pin GH 1.25 Header</td>
     </tr>
     <tr>
       <td>I2C</td>
-      <td>2x I2C 4-Pin JST Header</td>
+      <td>2x I2C 4-Pin GH 1.25 Header</td>
     </tr>
     <tr>
       <td>Fan</td>
@@ -177,7 +177,7 @@ Supporting frameworks like NVIDIA Isaac ROS, Hugging Face, PyTorch, and ROS 2/1,
     </tr>
     <tr>
       <td>Weight</td>
-      <td>141g</td>
+      <td>200g</td>
     </tr>
     <tr>
       <td>Installation</td>
@@ -193,7 +193,7 @@ Supporting frameworks like NVIDIA Isaac ROS, Hugging Face, PyTorch, and ROS 2/1,
     </tr>
     <tr>
       <th rowSpan="1">Certification</th>
-      <td>RoHS, REACH, CE, FCC, UKCA, Telec, KC</td>
+      <td>RoHS, REACH, CE, FCC, UKCA, KC</td>
     </tr>
   </tbody>
 </table>
@@ -712,7 +712,7 @@ The reComputer Jetson Robotics J401 is equipped with two types of fan connectors
 ### Hardware Connection
 
 <div align="center">
-  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/fan.jpg"/>
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/fan.png"/>
 </div>
 
 :::note
@@ -761,7 +761,7 @@ The Robotics J401 provides one CAN0 interface integrated into the XT30 (2+2) pow
 In the [datasheet](https://files.seeedstudio.com/products/NVIDIA-Jetson/reComputer_robotics_J401_datasheet.pdf), you can find the wiring diagram for the CAN0/CAN1 interface as shown below:
 
 <div align="center">
-  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/can1_hearder.png"/>
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/can1_datasheet.png"/>
 </div>
 
 Here we will demonstrate to you how to conduct data communication using the CAN1 interface, by utilizing the [USB to CAN Analyzer Adapter](https://www.seeedstudio.com/USB-CAN-Analyzer-p-2888.html).
@@ -941,15 +941,23 @@ The Robotics J401 features two 4-pin GH-1.25 IIC interfaces, IIC0 and IIC1.
 
 In the [datasheet](https://files.seeedstudio.com/products/NVIDIA-Jetson/reComputer_robotics_J401_datasheet.pdf), you can find the wiring diagram for the IIC0/IIC1 4-pin GH-1.25 interface as shown below:
 <div align="center">
-  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/iic.png"/>
+  <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/12c.png"/>
 </div> 
 Select an IIC interface device for testing; the choice is up to you. Here, we use a [Arduino-Uno-Rev4-Minima](https://www.seeedstudio.com/Arduino-Uno-Rev4-Minima-p-5716.html)  to test I2C0/I2C1.
 
 
 The testing process here involves scanning for the addresses of externally connected devices on IIC0/IIC1.
-<div align="center">
-  <img width="1000" src="https://files.seeedstudio.com/wiki/recomputer_mini/IICdraw.png"/>
-</div> 
+:::info
+Please connect the devices(IIC0/IIC1 ↔ Device) according to the following connections:
+
+- Power → Power
+
+- SDA → SDA
+
+- SCL → SCL
+
+- Ground → Ground
+:::
 
 <div align="center">
   <img width="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/iic_connect.jpg"/>
@@ -1035,7 +1043,6 @@ Here are the Robotics j401 carrier board GMSL camera expansion board connection 
 The following are the GMSL camera models that we have already supported:
 
 - [SG3S-ISX031C-GMSL2F](https://www.seeedstudio.com/SG3S-ISX031C-GMSL2F-p-6245.html)
-- SG3S-ISX031C-GMSL2
 - SG2-AR0233C-5200-G2A
 - SG2-IMX390C-5200-G2A
 - SG8S-AR0820C-5300-G2A

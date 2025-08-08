@@ -6,17 +6,17 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-Light
 last_update:
-  date: 3/09/2024
-  author: 金菊
+  date: 1/17/2023
+  author: jianjing Huang
 ---
 
 # 光传感器入门指南
 
-该存储库演示了如何将内置的光传感器作为Wio Terminal的组件使用。光传感器使用模拟接口，您可以通过读取其引脚来简单地获取周围的光传感器值。
+本仓库演示了如何在 Wio Terminal 中使用内置光传感器作为组件。光传感器使用模拟接口，您可以通过读取其引脚来简单地读取周围的光传感器值。
 
 ## 示例代码
 
-**注:** **`WIO_LIGHT`** 是内置光传感器的引脚。光传感器连接到  **A13** 引脚。
+**注意：** **`WIO_LIGHT`** 是内置光传感器的引脚。光传感器连接到 **A13**。
 
 ```cpp
 void setup() {
@@ -33,4 +33,4 @@ void loop() {
 }
 ```
 
-**注:** 光传感器位于Wio Terminal的背面，就在microSD卡槽的上方。
+**注意：** 光传感器位于 Wio Terminal 的背面，就在 microSD 卡槽的上方。

@@ -1,56 +1,57 @@
 ---
-description: Keyboard
+description: 键盘
 title: 键盘
 keywords:
 - Wio_terminal USB_Host
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-USBH-Keyboard
 last_update:
-  date: 3/07/2024
-  author: jessie
+  date: 1/17/2023
+  author: jianjing Huang
 ---
 
-# 在Wio Terminal上使用USB键盘
+# 在 Wio Terminal 上使用 USB 键盘
 
-本教程介绍了如何在Wio Terminal上使用USB键盘。您可以使用此示例将键盘输入的数据传输到Wio Terminal上！
+本教程介绍如何在 Wio Terminal 上使用 USB 键盘。您可以通过此示例实现从键盘向 Wio Terminal 输入数据！
 
 <div align="center"><img width ="{500}" src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/20200108143407.gif"/></div>
 
 ## 要求
 
-要使用此示例，您需要一个 **USB OTG 适配器** 和一个 **USB 串口模块**, 其中OTG适配器用于连接键盘，USB串口模块用于读取Wio Terminal的输出。
+要使用此示例，您需要一个 **USB OTG 适配器** 和一个 **USB 转串口模块**，其中 OTG 适配器用于连接键盘，USB 转串口模块用于读取 Wio Terminal 的输出。
 
 ## 步骤
 
-1. 使用 `Arduino IDE` 将代码上传到Wio Terminal。
+1. 使用 `Arduino IDE` 将代码上传到 Wio Terminal。
 
-2. 从Wio Terminal上拔掉用于上传代码的USB Type-C数据线。
+2. 拔掉用于上传代码的 USB Type-C 线缆。
 
-3. 将你的 **键盘** 连接到 **OTG 适配器**， 然后然后将OTG适配器连接到 Wio Terminal的USB-C端口。
-      - **`键盘`** -> **`OTG 适配器`** -> **`Wio TerminalType-C端口）`**
+3. 将您的 **键盘** 连接到 **OTG 适配器**，然后连接到 Wio Terminal 的 USB-C 端口。
+      - **`键盘`** -> **`OTG 适配器`** -> **`Wio Terminal(Type-C 端口)`**
 
-4. 按照以下方式将 **USB 串口模块** 连接到 Wio Terminal：
-      - **`TXD(USB 串口模块)`** -> **`RXD(Wio Terminal的引脚10)`**
-      - **`RXD(USB 串口模块)`** -> **`TXD(Wio Terminal的引脚8)`**
-      - **`3.3V(USB 串口模块)`** -> **`3.3V(Wio Terminal的引脚1)`**
-      - **`GND(USB 串口模块)`** -> **`GND(Wio Terminal的引脚6)`**
+4. 按以下方式将 **USB 转串口模块** 连接到 Wio Terminal：
+      - **`TXD(USB 转串口模块)`** -> **`RXD(Wio Terminal 的引脚 10)`**
+      - **`RXD(USB 转串口模块)`** -> **`TXD(Wio Terminal 的引脚 8)`**
+      - **`3.3V(USB 转串口模块)`** -> **`3.3V(Wio Terminal 的引脚 1)`**
+      - **`GND(USB 转串口模块)`** -> **`GND(Wio Terminal 的引脚 6)`**
 
-5. 将USB串口模块连接到您的计算机。根据使用的USB串口模块的不同, **下载模块的USB驱动程序** 以便您的计算机可以识别它。
+5. 将 USB 转串口模块连接到您的计算机。根据所使用的 USB 转串口模块，**下载相应的 USB 驱动程序**，以便您的计算机能够识别它。
 
-6. 对于Windows用户，您可以打开设备管理器来检查是否识别。一个新的 `COM` 端口应该出现。
-      - 对于Mac用户，在终端中使用命令 `ls /dev/cu.*` 来检查模块的可用性。
+6. 对于 Windows 用户，您可以打开设备管理器检查是否被识别。应该会出现一个新的 `COM` 端口。
+      - 对于 Mac 用户，在终端中使用 `ls /dev/cu.*` 检查模块的可用性。
 
 7. 查看串口数据：
-      - **Windows:** 下载并安装 [PuTTY](https://www.putty.org/)。 选择 `Serial` 并将Serial line中的 `COM` 更改为设备管理器中出现的COM端口号，同时将Speed更改为 `115200` 然后点击打开。一个终端窗口应该出现。现在，如果您开始在连接的键盘上键入，您应该看到串口输出！
+      - **Windows：** 下载并安装 [PuTTY](https://www.putty.org/)。选择 `Serial`，将串口线路中的 `COM` 更改为设备管理器中出现的 COM 端口，同时将速度更改为 `115200` 并按 Open。应该会出现一个终端。现在，如果您开始在连接的键盘上打字，您应该能看到串口输出！
 
-      - **Mac:** 打开终端并使用 `brew install screen` 命令安装  `screen` 安装完成后，使用命令 **`screen /dev/cu.usbserial 115200`** ，其中 `/dev/cu.usbserial` 应该与上面的匹配。您应该能够从Wio Terminal看到串口输出！
+      - **Mac：** 打开终端并使用 `brew install screen` 安装 `screen`。安装完成后，使用命令 **`screen /dev/cu.usbserial 115200`**，其中 `/dev/cu.usbserial` 应与上面的匹配。您应该能看到来自 Wio Terminal 的串口输出！
 
-**重要提示:** 由于Wio Terminal的USB端口正在用于USB连接，如果要向Wio Terminal上传另一个程序，需要通过按两次电源按钮进入引导模式（LED灯会变暗），然后您应该能够再次看到端口。
+**重要提示：** 由于 Wio Terminal 的 USB 端口正在用于 USB 功能，要向 Wio Terminal 上传另一个程序需要通过按两次电源按钮进入引导加载程序模式（LED 会变暗），然后您应该能再次看到端口。
 
 ## USB 主机配置
-要在Wio Terminal上启用USB主机功能，您需要配置两个引脚。需要将 `PIN_USB_HOST_ENABLE` 设为 **LOW** 将 `OUTPUT_CTR_5V` 设为 **HIGH**。
 
-您可以通过在 `void setup()` 中添加以下代码来完成这个操作：
+要在 Wio Terminal 上启用 USB 主机，您必须配置两个引脚。需要将 `PIN_USB_HOST_ENABLE` 设置为 **LOW**，将 `OUTPUT_CTR_5V` 设置为 **HIGH**。
+
+您可以通过在 `void setup()` 中添加以下代码来简单实现：
 
 ```cpp
 digitalWrite(PIN_USB_HOST_ENABLE, LOW);

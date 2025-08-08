@@ -1,236 +1,236 @@
 ---
-title: 将Wio Terminal连接到Google Cloud IoT Core
+title: 将 Wio Terminal 连接到 Google Cloud IoT Core
 nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Google-Cloud-IoT-Core/
+image: https://wiki.seeedstudio.com/cn/Connect-Wio-Terminal-to-Google-Cloud-IoT-Core/
 slug: /cn/Connect-Wio-Terminal-to-Google-Cloud-IoT-Core
 last_update:
-  date: 3/01/2024
-  author: 金菊
+  date: 01/11/2022
+  author: gunengyu
 ---
-# 将Wio Terminal连接到Google Cloud IoT Core
+# 将 Wio Terminal 连接到 Google Cloud IoT Core
 
 ![](https://files.seeedstudio.com/wiki/Google_Cloud_IoT/thumb.png)
 
-## 引言 
-在本教程中，我们将带您逐步了解如何将Wio Terminal连接到Google Cloud IoT Core，并将来自Wio Terminal的遥测数据发送到Google Cloud IoT Core。这将分为两个部分，第一部分将介绍如何使用已预配置在代码中的令人兴奋的库发送遥测数据，而第二部分将介绍如何将自己的传感器添加到Wio Terminal，并将遥测数据发送到Google Cloud IoT Core。Google Cloud IoT Core支持HTTP和MQTT协议进行通信，但在本教程中，我们将使用MQTT协议。
+## 介绍
+在本教程中，我们将引导您完成将 Wio Terminal 连接到 Google Cloud IoT Core 并从 Wio Terminal 向 Google Cloud IoT Core 发送遥测数据的过程。本教程将分为两个部分，第一部分将介绍如何使用现有的库来发送代码中预配置的遥测数据，第二部分将介绍如何向 Wio Terminal 添加您自己的传感器以向 Google Cloud IoT Core 发送遥测数据。Google Cloud IoT Core 支持 HTTP 和 MQTT 协议进行通信，但在本教程中我们将使用 MQTT 协议。
 
 
-### 什么是Google Cloud?
-[Google Cloud](https://cloud.google.com/) 由一系列物理资产（如计算机和硬盘驱动器）和虚拟资源（如虚拟机）组成，这些资源位于全球各地的Google数据中心中。资源的分布提供了多个优势，包括在故障发生时的冗余备份和通过将资源靠近客户端来减少延迟。
+### 什么是 Google Cloud？
+[Google Cloud](https://cloud.google.com/) 由一组物理资产（如计算机和硬盘驱动器）和虚拟资源（如虚拟机 (VM)）组成，这些资源包含在 Google 遍布全球的数据中心中。这种资源分布提供了多项好处，包括在发生故障时的冗余性，以及通过将资源放置在更靠近客户端的位置来减少延迟。
 
-在云计算中，您可能习惯将软件和硬件产品视为服务。这些服务提供对底层资源的访问。[Google Cloud提供的服务种类](https://cloud.google.com/products) 繁多，而且不断增长。当您在Google Cloud上开发您的网站或应用程序时，您可以将这些服务进行组合，以创建满足您需求的基础设施，并添加您的代码来实现您想要构建的场景。
+在云计算中，您可能习惯于将软件和硬件产品视为服务。这些服务提供对底层资源的访问。[可用的 Google Cloud 服务列表](https://cloud.google.com/products)很长，而且还在不断增长。当您在 Google Cloud 上开发网站或应用程序时，您可以将这些服务混合搭配成组合，提供您需要的基础设施，然后添加您的代码来实现您想要构建的场景。
 
-### 什么是Google Cloud平台?
-[Google Cloud 平台 (GCP)](https://console.cloud.google.com/)是一组云计算服务的集合。通过一系列管理工具，它提供了一系列模块化的云服务，包括计算、数据存储、数据分析和机器学习等。GCP提供基础设施即服务（IaaS）、平台即服务（PaaS）和无服务器计算环境。
+### 什么是 Google Cloud Platform？
+[Google Cloud Platform (GCP)](https://console.cloud.google.com/) 是云计算服务的集合。它提供一套管理工具，提供一系列模块化云服务，包括计算、数据存储、数据分析和机器学习。它提供基础设施即服务、平台即服务和无服务器计算环境。
 
-### 什么是Google Cloud IoT Core?
-[Google Cloud Internet of Things (IoT) Core](https://cloud.google.com/iot/docs) 是一个全面托管的服务，用于安全地连接和管理物联网设备，无论是几个还是数百万个设备。它可以接收来自连接设备的数据，并构建与Google Cloud Platform的其他大数据服务集成的丰富应用程序。
+### 什么是 Google Cloud IoT Core？
+[Google Cloud Internet of Things (IoT) Core](https://cloud.google.com/iot/docs) 是一个完全托管的服务，用于安全连接和管理 IoT 设备，从几个到数百万个设备。从连接的设备中摄取数据，并构建与 Google Cloud Platform 其他大数据服务集成的丰富应用程序。
 
-### 什么是Google Cloud Console?
+### 什么是 Google Cloud Console？
 
-[Google Cloud Console](https://console.cloud.google.com/) 提供了一个基于Web的图形用户界面，您可以使用它来管理Google Cloud Platform资源。当您使用Cloud Console时，您可以创建一个新项目或选择一个现有项目，并在该项目的上下文中使用您创建的资源。您可以创建多个项目，因此可以根据自己的需求将工作分隔开来。例如，如果您希望只有特定团队成员可以访问该项目中的资源，而所有团队成员仍可以访问另一个项目中的资源，那么您可以启动一个新项目。
+[Google Cloud Console](https://console.cloud.google.com/) 提供了一个基于 Web 的图形用户界面，您可以使用它来管理 Google Cloud Platform 资源。当您使用 Cloud Console 时，您创建一个新项目或选择一个现有项目，并使用您在该项目上下文中创建的资源。您可以创建多个项目，因此您可以使用项目以对您有意义的任何方式分离您的工作。例如，如果您想确保只有某些团队成员可以访问该项目中的资源，而所有团队成员可以继续访问另一个项目中的资源，您可能会启动一个新项目。
 
-## 将Wio Terminal通过MQTT连接到Google Cloud IoT Core
+## 通过 MQTT 连接 Wio Terminal 到 Google Cloud IoT Core
 
-正如之前所解释的，我们将使用可用的MQTT桥来实现Wio Terminal与Google Cloud IoT Core之间的通信。然而，如果您有特定的要求，也可以使用HTTP桥接。
+如前所述，我们将使用可用的 MQTT 桥接器来实现 Wio Terminal 和 Google Cloud IoT Core 之间的通信。不过，如果您有需要，也可以使用 HTTP 桥接器。
 
 ![](https://files.seeedstudio.com/wiki/Google_Cloud_IoT/5555555.png)
 
-### Google Cloud Console 设置 
+### Google Cloud Console 设置
 
-首先，我们需要访问Google Cloud Console，创建一个Cloud IoT Core设备注册表并注册设备。
+首先我们需要访问 Google Cloud Console，创建一个 Cloud IoT Core 设备注册表并注册一个设备。
 
 #### 初始设置
 
-- **步骤 1:** 访问 [此处](https://console.cloud.google.com/) 创建一个新项目
+- **步骤 1：** 访问[这里](https://console.cloud.google.com/)创建一个新项目
 
-**注:** 如有提示，请使用您的Google账户登录
+**注意：** 如果提示，请登录您的 Google 账户
 
-- **步骤 2:** 点击 **Select a project** 菜单
+- **步骤 2：** 点击**选择项目**菜单
 
-- **步骤 3:** 点击 **NEW PROJECT** 并输入一个 **项目名**
+- **步骤 3：** 点击**新建项目**并输入**项目名称**
 
-- **步骤 4:** 点击 **CREATE** 
+- **步骤 4：** 点击**创建**
 
-- **步骤 5:** 为您的云项目启用计费。这是为了确保您不是机器人，并且不会产生费用。在导航菜单中选择"计费"，并按照设置进行操作。
+- **步骤 5：** 为您的 Cloud 项目启用计费。这是为了确保您不是机器人，您不会被收费。在导航菜单下选择"计费"并完成设置。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Google_Cloud_IoT/1111111.png" alt="pir" width={500} height="auto" /></p>
 
 
-- **步骤 6:** 访问 [此处](https://console.cloud.google.com/flows/enableapi?apiid=cloudiot.googleapis.com%2Cpubsub&authuser=3&_ga=2.254170561.853675115.1607885458-878786893.1606048800)启用Cloud IoT Core和Cloud Pub/Sub API
+- **步骤 6：** 访问[这里](https://console.cloud.google.com/flows/enableapi?apiid=cloudiot.googleapis.com%2Cpubsub&authuser=3&_ga=2.254170561.853675115.1607885458-878786893.1606048800)启用 Cloud IoT Core 和 Cloud Pub/Sub API
 
-**注:** 从下拉菜单中选择您之前创建的项目
+**注意：** 从下拉菜单中选择您之前创建的项目
 
-#### 创建设备注册表 
+#### 创建设备注册表
 
-- **步骤 1:** 在Cloud控制台中访问 [Google Cloud IoT Core页面](https://console.cloud.google.com/iot/registries) 
+- **步骤 1：** 在 Cloud Console 中访问 [Google Cloud IoT Core 页面](https://console.cloud.google.com/iot/registries)
 
-- **步骤 2:** 点击 **Create Registry**
+- **步骤 2：** 点击**创建注册表**
 
-- **步骤 3:** 输入一个 **registry ID**
+- **步骤 3：** 输入**注册表 ID**
 
-**注:** 这是您注册表的名称
+**注意：** 这是您注册表的名称
 
-- **步骤 4:** 选择一个 **Region**
+- **步骤 4：** 选择一个**区域**
 
-**注:**  如果您在美国，请选择us-central1作为区域。如果您在美国以外，请选择您首选的区域。
+**注意：** 如果您在美国，请为区域选择 us-central1。如果您在美国以外，请选择您偏好的区域。
 
-- **步骤 5:** 在 **Select a Cloud Pub/Sub topic** 的下拉列表中, 选择 **Create a topic** 并输入您首选的 **Topic ID**
+- **步骤 5：** 在**选择 Cloud Pub/Sub 主题**下拉列表中，选择**创建主题**并输入您偏好的**主题 ID**
 
-- **步骤 6:** 点击 **CREATE TOPIC**
+- **步骤 6：** 点击**创建主题**
 
-- **步骤 7:** 点击 **SHOW ADVANCED OPTIONS**
+- **步骤 7：** 点击**显示高级选项**
 
-- **步骤 8:**  **Device state topic** 和 **Certificate value** 字段是可选的，所以留空即可
+- **步骤 8：** **设备状态主题**和**证书值**字段是可选的，所以留空
 
-- **步骤 9:** 选择 **MQTT** 作为 **Protocol**
+- **步骤 9：** 为**协议**选择 **MQTT**
 
-- **步骤 10:** 在Cloud IoT Core页面上点击 **Create** 
+- **步骤 10：** 在 Cloud IoT Core 页面上点击**创建**
 
-现在我们已经创建了一个带有Cloud Pub/Sub主题的设备注册表，用于发布设备遥测事件。
+现在我们已经创建了一个设备注册表，其中包含一个用于发布设备遥测事件的 Cloud Pub/Sub 主题
 
-#### 生成设备密钥对 (EC Keys)
+#### 生成设备密钥对（EC 密钥）
 
-Cloud IoT Core使用公钥（或非对称）身份验证：
+Cloud IoT Core 使用公钥（或非对称）身份验证
 
-- 设备使用私钥对 [JSON Web Token (JWT)](https://cloud.google.com/iot/docs/how-tos/credentials/jwts)进行签名。该令牌作为设备身份的证明传递给Cloud IoT Core。 
-- 服务使用设备的公钥（在发送JWT之前上传）来验证设备的身份。
+- 设备使用私钥来签署 [JSON Web Token (JWT)](https://cloud.google.com/iot/docs/how-tos/credentials/jwts)。令牌被传递给 Cloud IoT Core 作为设备身份的证明。
+- 服务使用设备公钥（在发送 JWT 之前上传）来验证设备的身份。
 
-Cloud IoT Core支持RSA和椭圆曲线算法，本教程将使用椭圆曲线密钥。
+Cloud IoT Core 支持 RSA 和椭圆曲线算法，我们将在本教程中使用椭圆曲线密钥。
 
-- **步骤 1:** 在您的计算机上创建一个新文件夹。
+- **步骤 1：** 在您的 PC 上创建一个新文件夹
 
-- **步骤 2:** 从终端窗口导航到该文件夹，并输入以下命令生成P-256椭圆曲线密钥对：
+- **步骤 2：** 从终端窗口导航到该文件夹并输入以下命令来生成 P-256 椭圆曲线密钥对
 
 ```sh
 openssl ecparam -genkey -name prime256v1 -noout -out ec_private.pem
 openssl ec -in ec_private.pem -pubout -out ec_public.pem
 ```
 
-**注:**  确保按照  [此链接](https://slproweb.com/products/Win32OpenSSL.html) 安装**openssl** 并将其目录位置添加到PATH中。
+**注意：** 确保通过[此链接](https://slproweb.com/products/Win32OpenSSL.html)安装 **openssl** 并将目录位置添加到 PATH 中。
 
-上述命令将生成以下公钥/私钥对：
+上述命令创建以下公钥/私钥对：
 
-- **ec_private.pem**: 私钥，必须安全存储在设备上，并用于对身份验证JWT进行签名。
-- **ec_public.pem**: 公钥，必须存储在Cloud IoT Core中，并用于验证身份验证JWT的签名。
+- **ec_private.pem**：必须安全存储在设备上并用于签署身份验证 JWT 的私钥。
+- **ec_public.pem**：必须存储在 Cloud IoT Core 中并用于验证身份验证 JWT 签名的公钥。
 
-#### 提取私钥 
+#### 提取私钥
 
-我们需要提取私钥的字节并将其复制到稍后在本教程中创建的Arduino项目的私钥字符串中。暂时保存这些密钥以备后用。
+我们需要提取私钥字节并将它们复制到我们稍后在本教程中创建的 Arduino 项目中的私钥字符串中。现在保存这些密钥以供稍后使用。
 
-- **步骤 1:** 打开一个终端窗口，并导航到包含我们之前生成的椭圆曲线密钥对的文件夹。 
+- **步骤 1：** 打开终端窗口并导航到包含我们之前生成的椭圆曲线密钥对的文件夹。
 
-- **步骤 2:** 输入以下命令
+- **步骤 2：** 输入以下命令
 
 ```sh
 openssl ec -in ec_private.pem -noout -text
 ```
 
-- **步骤 3:** 将生成的私钥字节（在 **priv:** 下方）复制并粘贴到记事本中，并保存以备后用。
+- **步骤 3：** 复制并粘贴生成的私钥字节到记事本中的 **priv:** 下方，保存以备后用。
 
 #### 将设备添加到注册表
 
-- **步骤 1:** 访问 [Registries page](https://console.cloud.google.com/iot/registries) 并选择之前创建的注册表
+- **步骤 1：** 访问[注册表页面](https://console.cloud.google.com/iot/registries)并选择您之前创建的注册表
 
-- **步骤 2:** 选择 **Devices** 设备选项卡，然后点击 **CREATE A DEVICE**
+- **步骤 2：** 选择 **Devices** 选项卡并点击 **CREATE A DEVICE**
 
-- **步骤 3:** 输入一个 **Device ID**
+- **步骤 3：** 输入一个 **Device ID**
 
-- **步骤 4:**  **Device metadata** 字段是可选的，所以留空即可
+- **步骤 4：** **Device metadata** 字段是可选的，所以留空即可
 
-- **步骤 5:** 点击 **COMMUNICATION, CLOUD LOGGING, AUTHENTICATION** 下拉菜单 
+- **步骤 5：** 点击 **COMMUNICATION, CLOUD LOGGING, AUTHENTICATION** 下拉菜单
 
-- **步骤 6:** 为  **Device communication**选择**Allow**
+- **步骤 6：** 为 **Device communication** 选择 **Allow**
 
-- **步骤 7:** 在 **Authentication** 身份验证字段中，在 **Input method**输入方法下拉菜单中, 选择 **Upload**
+- **步骤 7：** 在 **Authentication** 字段内，在 **Input method** 下选择 **Upload**
 
-- **步骤 8:** 在**Public key format**公钥格式下拉菜单中选择 **ES256** 
+- **步骤 8：** 从 **Public key format** 下拉菜单中选择 **ES256**
 
-- **步骤 9:** 在**Public key value**公钥值下方，点击 **BROWSE** 浏览按钮，导航到我们之前创建的**Elliptic Curve key pair** 并选择 **ec_public.pem**
+- **步骤 9：** 在 **Public key value** 下，按 **BROWSE** 按钮，导航到我们之前创建的 **Elliptic Curve key pair** 文件夹并选择 **ec_public.pem**
 
-- **步骤 10:** 点击 **Create**
+- **步骤 10：** 点击 **Create**
 
-现在您已将设备添加到注册表中。ES256密钥将显示在设备详细信息页面上。
+现在您已经将设备添加到注册表中。ES256 密钥会出现在您设备的设备详情页面上。
 
-#### 设置订阅者 
+#### 设置订阅者
 
-现在我们已经创建了设备注册表、创建了一个主题并将设备添加到该注册表中，接下来让我们继续创建一个订阅者，以订阅我们创建的主题，以便从Wio Terminal获取遥测数据。
+现在我们已经创建了设备注册表，创建了主题并将设备添加到该注册表中，让我们继续创建一个订阅者来订阅我们创建的主题，以便从 Wio Terminal 获取遥测数据。
 
-- **步骤 1:** 在Google Cloud控制台的搜索栏中输入 **Pub** 然后从结果中选择 **Pub/Sub** 。
+- **步骤 1：** 在 Google Cloud Console 的搜索栏中输入 **Pub**，并从结果中选择 **Pub/Sub**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Google_Cloud_IoT/333333.png" alt="pir" width={700} height="auto" /></p>
 
-- **步骤 2:** 在导航栏点击 **Subscriptions** 
+- **步骤 2：** 在导航菜单中点击 **Subscriptions**
 
-- **步骤 3:** 点击 **CREATE SUBSCRIPTION** 
+- **步骤 3：** 点击 **CREATE SUBSCRIPTION**
 
-- **步骤 4:** 输入您选择的 **Subscription ID** 
+- **步骤 4：** 输入您选择的 **Subscription ID**
 
-- **步骤 5:** 从**Select a Cloud Pub/Sub topic**下拉菜单中选择我们之前创建的 **Pub/Sub topic** 
+- **步骤 5：** 从 **Select a Cloud Pub/Sub topic** 下拉菜单中选择我们之前创建的 **Pub/Sub topic**
 
-- **步骤 6:** 将传递方式设置为 **Pull** 
+- **步骤 6：** 选择 **Pull** 作为传递类型
 
-- **步骤 7:** 点击 **Create** 
+- **步骤 7：** 点击 **Create**
 
-现在我们已经完成了Google Cloud IoT Core的设置。接下来，我们将继续设置Wio Terminal和Arduino IDE。
+现在我们已经完成了 Google Cloud IoT Core 的设置。接下来，我们将继续设置 Wio Terminal 和 Arduino IDE。
 
-### 使用Arduino设置Wio Terminal 
+### 使用 Wio Terminal 进行 Arduino 设置
 
-#### 所需库 
+#### 所需库
 
-我们需要两个库来完成本教程。 
-1. lwMQTT MQTT Arduino 库
-2. Google Cloud IoT Arduino 库
+本教程需要两个库。
+1. lwMQTT MQTT Arduino Library
+2. Google Cloud IoT Arduino Library
 
-下载这些库:
+要下载这些库：
 
-- **步骤 1:** 打开 Arduino IDE
-- **步骤 2:** 导航到 `Sketch > Include Library > Manage Libraries`
-- **步骤 3:** 在搜索框中键入 **lwMQTT** 和 **Google Cloud IoT** 然后安装这些库
+- **步骤 1：** 打开 Arduino IDE
+- **步骤 2：** 导航到 `Sketch > Include Library > Manage Libraries`
+- **步骤 3：** 在搜索框中输入 **lwMQTT** 和 **Google Cloud IoT** 并安装这些库
 
-#### 配置凭据和帐户信息
+#### 凭据和账户信息配置
 
-现在我们需要在 **ciotc_config.h**文件中设置Wi-Fi凭据和Google Cloud IoT Core信息。
+现在我们需要在 **ciotc_config.h** 文件中设置 Wi-Fi 凭据和 Google Cloud IoT Core 信息。
 
-- **步骤 1:** 在Arduino IDE中，选择 `File > Examples > Google Cloud IoT JWT > Esp32-lwmqtt`
+- **步骤 1：** 在 Arduino IDE 中，`File > Examples > Google Cloud IoT JWT > Esp32-lwmqtt`
 
-- **步骤 2:** 导航到 **ciotc_config.h**
+- **步骤 2：** 导航到 **ciotc_config.h**
 
-- **步骤 3:** 更改 **Wifi network details**
+- **步骤 3：** 更改 **Wifi network details**
 
-```c++
+```cpp
 const char *ssid = "Enter_SSID";
 const char *password = "Enter_Password";
 ```
 
-- **步骤 4:** 更改 **Google Cloud IoT details**
+- **步骤 4：** 更改 **Google Cloud IoT 详细信息**
 
-```c++
+```cpp
 const char *project_id = "Enter_Project_ID";
 const char *location = "Enter_location";
 const char *registry_id = "Enter_Registry_ID";
 const char *device_id = "Enter_Device_ID";
 ```
 
-- **步骤 5:** 将我们从 **ec_private.pem** 中获取的私钥字节复制到记事本中保存的位置
+- **步骤 5：** 复制我们之前从 **ec_private.pem** 获得并保存到记事本中的私钥字节
 
-```c++
+```cpp
 const char *private_key_str =
     "6e:b8:17:35:c7:fc:6b:d7:a9:cb:cb:49:7f:a0:67:"
     "63:38:b0:90:57:57:e0:c0:9a:e8:6f:06:0c:d9:ee:"
     "31:41";
 ```
 
-**注:** 密钥长度应为32对十六进制数字
+**注意：** 密钥长度应为32对十六进制数字
 
 #### 更改NTP时间方法
 
-打开 **esp32-mqtt.h** 文件，并用以下代码替换整个文件。这里我们使用通过UDP获取NTP时间的实现替换了configTime函数。
+打开 **esp32-mqtt.h** 并用以下代码替换整个文件。这里我们用通过UDP获取NTP时间的实现替换了configTime函数。
 
-```c++
+```cpp
 #include <Client.h>
 #include <rpcWiFi.h>
 #include <WiFiClientSecure.h>
@@ -239,17 +239,17 @@ const char *private_key_str =
 
 #include <CloudIoTCore.h>
 #include <CloudIoTCoreMqtt.h>
-#include "ciotc_config.h" // Update this file with your configuration
+#include "ciotc_config.h" // 使用您的配置更新此文件
 
 // !!REPLACEME!!
-// The MQTT callback function for commands and configuration updates
-// Place your message handler code here.
+// 用于命令和配置更新的MQTT回调函数
+// 将您的消息处理代码放在这里。
 void messageReceived(String &topic, String &payload){
   Serial.println("incoming: " + topic + " - " + payload);
 }
 ///////////////////////////////
 
-// Initialize WiFi and MQTT for this board
+// 为此开发板初始化WiFi和MQTT
 //Client *netClient;
 CloudIoTCoreDevice *device;
 CloudIoTCoreMqtt *mqtt;
@@ -260,95 +260,95 @@ WiFiUDP udp;
 
 unsigned int localPort = 2390;
 unsigned long devicetime;
-const int NTP_PACKET_SIZE = 48; // NTP time stamp is in the first 48 bytes of the message
-byte packetBuffer[NTP_PACKET_SIZE]; //buffer to hold incoming and outgoing packets
+const int NTP_PACKET_SIZE = 48; // NTP时间戳在消息的前48字节中
+byte packetBuffer[NTP_PACKET_SIZE]; //用于保存传入和传出数据包的缓冲区
 
-// send an NTP request to the time server at the given address
+// 向给定地址的时间服务器发送NTP请求
 unsigned long sendNTPpacket(const char* address) {
-    // set all bytes in the buffer to 0
+    // 将缓冲区中的所有字节设置为0
     for (int i = 0; i < NTP_PACKET_SIZE; ++i) {
         packetBuffer[i] = 0;
     }
-    // Initialize values needed to form NTP request
-    // (see URL above for details on the packets)
+    // 初始化形成NTP请求所需的值
+    // (有关数据包的详细信息，请参见上面的URL)
     packetBuffer[0] = 0b11100011;   // LI, Version, Mode
     packetBuffer[1] = 0;     // Stratum, or type of clock
     packetBuffer[2] = 6;     // Polling Interval
     packetBuffer[3] = 0xEC;  // Peer Clock Precision
-    // 8 bytes of zero for Root Delay & Root Dispersion
+    // Root Delay & Root Dispersion的8个零字节
     packetBuffer[12] = 49;
     packetBuffer[13] = 0x4E;
     packetBuffer[14] = 49;
     packetBuffer[15] = 52;
 
-    // all NTP fields have been given values, now
-    // you can send a packet requesting a timestamp:
-    udp.beginPacket(address, 123); //NTP requests are to port 123
+    // 所有NTP字段都已赋值，现在
+    // 您可以发送请求时间戳的数据包：
+    udp.beginPacket(address, 123); //NTP请求发送到端口123
     udp.write(packetBuffer, NTP_PACKET_SIZE);
     udp.endPacket();
 }
 
 unsigned long getNTPtime() {
 
-    // module returns a unsigned long time valus as secs since Jan 1, 1970 
-    // unix time or 0 if a problem encounted
+    // 模块返回一个无符号长整型时间值，表示自1970年1月1日以来的秒数
+    // unix时间，如果遇到问题则返回0
 
-    //only send data when connected
+    //仅在连接时发送数据
     if (WiFi.status() == WL_CONNECTED) {
-        //initializes the UDP state
-        //This initializes the transfer buffer
+        //初始化UDP状态
+        //这会初始化传输缓冲区
         udp.begin(WiFi.localIP(), localPort);
-        sendNTPpacket(ntp_primary); // send an NTP packet to a time server
-        // wait to see if a reply is available
+        sendNTPpacket(ntp_primary); // 向时间服务器发送NTP数据包
+        // 等待查看是否有回复可用
         delay(1000);
         if (udp.parsePacket()) {
 //            Serial.println("udp packet received");
 //            Serial.println("");
-            // We've received a packet, read the data from it
-            udp.read(packetBuffer, NTP_PACKET_SIZE); // read the packet into the buffer
+            // 我们收到了一个数据包，从中读取数据
+            udp.read(packetBuffer, NTP_PACKET_SIZE); // 将数据包读入缓冲区
 
-            //the timestamp starts at byte 40 of the received packet and is four bytes,
-            // or two words, long. First, extract the two words:
+            //时间戳从接收数据包的第40字节开始，长度为4字节，
+            // 或两个字。首先，提取这两个字：
 
             unsigned long highWord = word(packetBuffer[40], packetBuffer[41]);
             unsigned long lowWord = word(packetBuffer[42], packetBuffer[43]);
-            // combine the four bytes (two words) into a long integer
-            // this is NTP time (seconds since Jan 1 1900):
+            // 将四个字节（两个字）组合成一个长整数
+            // 这是NTP时间（自1900年1月1日以来的秒数）：
             unsigned long secsSince1900 = highWord << 16 | lowWord;
-            // Unix time starts on Jan 1 1970. In seconds, that's 2208988800:
+            // Unix时间从1970年1月1日开始。以秒为单位，那是2208988800：
             const unsigned long seventyYears = 2208988800UL;
-            // subtract seventy years:
+            // 减去七十年：
             unsigned long epoch = secsSince1900 - seventyYears;
 
-            // adjust time for timezone offset in secs +/- from UTC
-            // WA time offset from UTC is +8 hours (28,800 secs)
-            // + East of GMT
-            // - West of GMT
+            // 根据时区偏移量调整时间，以秒为单位，相对于UTC的+/-
+            // WA时间相对于UTC的偏移量是+8小时（28,800秒）
+            // + 格林威治标准时间以东
+            // - 格林威治标准时间以西
 //            long tzOffset = 28800UL;
             long tzOffset = 0UL;
 
-            // WA local time 
+            // WA本地时间
             unsigned long adjustedTime;
             return adjustedTime = epoch + tzOffset;
         }
         else {
-            // were not able to parse the udp packet successfully
-            // clear down the udp connection
+            // 无法成功解析udp数据包
+            // 清理udp连接
             udp.stop();
-            return 0; // zero indicates a failure
+            return 0; // 零表示失败
         }
-        // not calling ntp time frequently, stop releases resources
+        // 不经常调用ntp时间，stop释放资源
         udp.stop();
     }
     else {
-        // network not connected
+        // 网络未连接
         return 0;
     }
 
 }
 
 ///////////////////////////////
-// Helpers specific to this board
+// 此开发板特定的辅助函数
 ///////////////////////////////
 String getDefaultSensor(){
   return "Wifi: " + String(WiFi.RSSI()) + "db";
@@ -368,7 +368,7 @@ void setupWifi(){
   Serial.println("Starting wifi");
 
   WiFi.mode(WIFI_STA);
-  // WiFi.setSleep(false); // May help with disconnect? Seems to have been removed from WiFi
+  // WiFi.setSleep(false); // 可能有助于防止断开连接？似乎已从WiFi中删除
   WiFi.begin(ssid, password);
   Serial.println("Connecting to WiFi");
   while (WiFi.status() != WL_CONNECTED){
@@ -393,7 +393,7 @@ void connectWifi(){
 }
 
 ///////////////////////////////
-// Orchestrates various methods from preceeding code.
+// 协调来自前面代码的各种方法。
 ///////////////////////////////
 bool publishTelemetry(String data){
   return mqtt->publishTelemetry(data);
@@ -433,142 +433,139 @@ void setupCloudIoT(){
 }
 ```
 
-#### 在Esp32-lwmqtt.ino文件中添加宏定义
+#### 在 Esp32-lwmqtt.ino 中添加宏定义
 
-在**Esp32-lwmqtt.ino**文件中，将Wio Terminal板添加到宏定义中。
+在 **Esp32-lwmqtt.ino** 内部的宏定义中添加 Wio Terminal 开发板
 
-```c++
+```cpp
 #if defined(ESP32) || defined(WIO_TERMINAL)
 #define __ESP32_MQTT_H__
 #endif
 ```
 
-现在我们已经完成了Arduino IDE的设置。最后，您需要将此代码上传到Wio Terminal。打开串行监视器，您将看到以下内容显示。
+现在我们已经完成了 Arduino IDE 的设置。最后你需要将这段代码上传到 Wio Terminal。打开串口监视器，你将看到以下显示内容。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Google_Cloud_IoT/4444444.png" alt="pir" width={700} height="auto" /></p>
 
 
-
 ### 显示遥测数据
 
-现在我们需要显示来自Wio Terminal的传入遥测数据。在这个示例代码中，Wi-Fi信号强度将作为遥测数据发送。
+现在我们需要显示来自 Wio Terminal 的传入遥测数据。在这个示例代码中，Wi-Fi 信号强度将作为遥测数据发送。
 
 
-- **步骤 1:** 在Google Cloud控制台中访问 **Pub/Sub**
+- **步骤 1：** 在 Google Cloud Console 中访问 **Pub/Sub**
 
-**注:** 您可以在Google Cloud控制台的搜索栏中搜索 **Pub** 
+**注意：** 你可以在 Google Cloud Console 的搜索栏中搜索 **Pub**
 
-- **步骤 2:** 导航到导航菜单中的 **Subscriptions** 
+- **步骤 2：** 在导航菜单中导航到 **Subscriptions**
 
-- **步骤 3:** 选择我们之前创建的订阅ID
+- **步骤 3：** 选择我们之前创建的订阅 ID
 
-- **步骤 4:** 点击 **VIEW MESSAGES**
+- **步骤 4：** 点击 **VIEW MESSAGES**
 
-- **步骤 5:** C点击 **PULL** 您将看到传入的遥测数据如下所示
+- **步骤 5：** 点击 **PULL**，你将看到如下传入的遥测数据。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Google_Cloud_IoT/6666666.png" alt="pir" width={950} height="auto" /></p>
 
 
-
 ### 如何添加其他传感器？
 
-您可以向Wio Terminal添加任何传感器，并将遥测数据发送到Google Cloud IoT Core。为了简单起见，我们将使用Wio Terminal上的内置光传感器将光强度级别发送到Google Cloud IoT Core。
+你可以向 Wio Terminal 添加任何传感器，并将遥测数据发送到 Google Cloud IoT Core。为了简化，我们将使用 Wio Terminal 上的内置光传感器将光强度级别发送到 Google Cloud IoT Core。
 
-#### Google Cloud IoT设置
+#### Google Cloud IoT 设置
 
-- **步骤 1:** 在Google Cloud控制台中访问 **IoT Core** 
+- **步骤 1：** 在 Google Cloud Console 中访问 **IoT Core**
 
-**注:** 您可以在Google Cloud控制台的搜索栏中搜索 **IoT Core** 
+**注意：** 你可以在 Google Cloud Console 的搜索栏中搜索 **IoT Core**
 
-- **步骤 2:** 选择我们之前创建的注册表
+- **步骤 2：** 选择我们之前创建的注册表
 
-- **步骤 3:** 在Cloud **Pub/Sub topics** 下选择 **Add or edit topics**
+- **步骤 3：** 在 **Cloud Pub/Sub topics** 下选择 **Add or edit topics**
 
-- **步骤 4:** 点击 **ADD ADDITIONAL TOPIC**
+- **步骤 4：** 点击 **ADD ADDITIONAL TOPIC**
 
-- **步骤 5:** 从   **Select a Cloud Pub/Sub topic**的下拉菜单中选择**CREATE A TOPIC**
+- **步骤 5：** 从 **Select a Cloud Pub/Sub topic** 的下拉菜单中点击 **CREATE A TOPIC**
 
-- **步骤 6:** 输入一个 **Topic ID** 然后点击 **CREATE TOPIC**
+- **步骤 6：** 输入一个 **Topic ID** 并点击 **CREATE TOPIC**
 
-- **步骤 7:** 在 **Subfolder** 列中输入一个**Subfolder name**
+- **步骤 7：** 在 **Subfolder** 列中输入一个 **Subfolder name**
 
-**注:** 子文件夹名称将用于与Arduino代码中的主题相关联
+**注意：** 子文件夹名称将用于在 Arduino 代码中关联到主题
 
-- **步骤 8:** 点击 **UPDATE**
+- **步骤 8：** 点击 **UPDATE**
 
-- **步骤 9:** 创建一个 **new subscription** 如前所述
-
+- **步骤 9：** 按照之前的说明创建一个 **新订阅**
 
 
 #### Arduino 设置
 
-打开 **Esp32-lwmqtt.ino** 文件并按照以下步骤进行操作：
+导航到 **Esp32-lwmqtt.ino** 并添加以下内容
 
-- **步骤 1:**  在循环结束后，添加以下代码以使用内置光传感器：
+- **步骤 1：** 在循环后，为内置光传感器添加以下内容
 
-```c++
+```cpp
 void loop() {
   int light = analogRead(WIO_LIGHT); //assign variable to store light sensor values 
   light = map(light,0,1023,0,100); //Map sensor values  
 ```
 
-- **步骤 2:**  在代码中添加使用子文件夹名称的主题
+- **步骤 2：** 添加带有子文件夹名称的主题
 
-```c++
+```cpp
     publishTelemetry(getDefaultSensor());
     publishTelemetry("/light",String(light));
 ```
 
-**注:** 如果未添加子文件夹名称，遥测数据将被发送到默认主题。在这种情况下，如前所述，Wi-Fi信号强度的遥测数据将被发送到之前创建的第一个主题，即默认主题。
+**注意：** 如果没有添加子文件夹名称，遥测数据将发送到默认主题。在这种情况下，如前所述的Wi-Fi信号强度遥测数据将发送到我们之前创建的第一个主题，即默认主题。
 
-在将代码上传到Wio Terminal后，作为一个订阅者从新创建的主题中接收数据，您将会看到以下结果。
+将代码上传到Wio Terminal后，作为订阅者从新创建的主题拉取数据，您将看到以下结果。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Google_Cloud_IoT/222222.png" alt="pir" width={950} height="auto" /></p>
 
 
-### 如何将其他传感器添加到Wio Terminal并在仪表板上可视化数据？
+### 如何添加其他传感器并在仪表板上可视化数据？
 
-虽然Google Cloud IoT Core没有提供用于可视化传感器数据的即用仪表板，但我们可以使用InfluxDB和Grafana来实现。
+尽管Google Cloud IoT Core没有提供现成的仪表板来可视化传感器数据，但我们将解释如何通过使用InfluxDB和Grafana来实现这一点。
 
-[InfluxDB](https://www.influxdata.com/) 是一个时间序列数据库，每个数据都与一个时间戳相关联，显示与该数据相关的日期和时间。而  [Grafana](https://grafana.com/)  则是一个用于运行数据分析、提取有意义的指标并通过可自定义的仪表板监控应用程序的开源解决方案。
+[InfluxDB](https://www.influxdata.com/) 是一个时间序列数据库，即InfluxDB中的每个数据都与特定的时间戳相关联，该时间戳显示与特定数据相关联的日期和时间。而[Grafana](https://grafana.com/) 是一个开源解决方案，用于运行数据分析，提取对大量数据有意义的指标，并通过可定制的仪表板监控应用程序。
 
-基本上，我们将连接一个温湿度传感器到Wio Terminal，使用Google Cloud Function将来自Pub/Sub的数据传输到位于GKE（Google Kubernetes Engine）集群中的InfluxDB，并使用交互式仪表板在Grafana上显示来自InfluxDB的数据。
+基本上，我们将温度/湿度传感器连接到Wio Terminal，使用Google Cloud Function将数据从Pub/Sub传输到位于GKE（Google Kubernetes Engine）集群中的InfluxDB，并使用交互式仪表板在Grafana上显示来自InfluxDB的数据。
 
 ![](https://files.seeedstudio.com/wiki/Google_Cloud_IoT/thumb.png)
 
-#### Arduino的硬件设置
+#### Arduino硬件设置
 
 将Grove - 温湿度传感器（DHT11）连接到Wio Terminal的Grove - 数字/模拟端口（D0）。
 
-#### Arduino的软件设置 
+#### Arduino软件设置
 
-- **步骤 1:** 访问 [Grove - Temperature and Humidity Sensor repo](https://github.com/Seeed-Studio/Grove_Temperature_And_Humidity_Sensor) 并将其下载为zip文件
+- **步骤1：** 访问[Grove - 温湿度传感器仓库](https://github.com/Seeed-Studio/Grove_Temperature_And_Humidity_Sensor)并将其下载为zip文件
 
-- **步骤 2:** 打开 Arduino, 导航到 `Sketch > Include Library > Add .ZIP Library` 然后选择下载的库进行安装
+- **步骤2：** 打开Arduino，导航到`Sketch > Include Library > Add .ZIP Library`并选择下载的库进行安装
 
-在之前使用的 **Esp32-lwmqtt.ino** Esp32-lwmqtt.ino文件中，按照以下步骤进行操作：
+导航到之前使用的**Esp32-lwmqtt.ino**并添加以下内容：
 
-- **步骤 1:** 在 **#include "esp32-mqtt.h"**之后添加以下代码：
+- **步骤1：** 在**#include "esp32-mqtt.h"**之后添加以下内容
 
-```c++
-#include "DHT.h" //DHT library
+```cpp
+#include "DHT.h" //DHT库
 
-#define DHTPIN 0 //Define Signal Pin of DHT
-#define DHTTYPE DHT11 //Define DHT Sensor Type
-DHT dht(DHTPIN, DHTTYPE); //Initializing DHT sensor  
+#define DHTPIN 0 //定义DHT的信号引脚
+#define DHTTYPE DHT11 //定义DHT传感器类型
+DHT dht(DHTPIN, DHTTYPE); //初始化DHT传感器  
 ```
 
-- **步骤 2:** 在 **setup** 函数中添加以下代码以启动DHT传感器
+- **步骤 2：** 在 **setup** 中添加以下代码来启动 DHT 传感器
 
-```c++
+```cpp
 dht.begin(); 
 ```
 
-- **步骤 3:**  在**void loop()**函数的**if loop**内部添加以下代码：
+- **步骤 3：** 在 **void loop()** 中的 **if 循环** 内添加以下内容
 
-```c++
-int temperature = dht.readTemperature(); //Assign variable to store temperature
-int humidity = dht.readHumidity(); //Assign variable to store humidity
+```cpp
+int temperature = dht.readTemperature(); //分配变量来存储温度
+int humidity = dht.readHumidity(); //分配变量来存储湿度
 
 String payload = String("{\"timestamp\":") + getNTPtime() +
                   String(",\"temperature\":") temperature +
@@ -576,33 +573,34 @@ String payload = String("{\"timestamp\":") + getNTPtime() +
                   String("}");
 publishTelemetry(payload); 
 ```
-**Note:** 在这里，我们将所有数据解析为字符串，并将其发送到InfluxDB。 **time** 非常重要，因为InfluxDB是一个时间序列数据库。此外， **pushTelemetry** 函数将会将数据发送到我们在本教程一开始创建的默认主题。
 
-- **步骤 4:** 将代码上传到Wio Terminal
+**注意：** 这里我们将所有数据作为字符串解析到 influxDB 中。解析**时间**很重要，因为 influxDB 是一个时间序列数据库。同时 **pushTelemetry** 函数会将数据发送到我们在本教程开始时创建的默认主题。
+
+- **步骤 4：** 将代码上传到 Wio Terminal
 
 #### Google Cloud IoT 设置
 
-- **步骤 1:** 访问 [此存储库](https://github.com/lakshanthad/esp32-cloud-iot-core-k8s) 并将其下载为zip文件
+- **步骤 1：** 访问[此](https://github.com/lakshanthad/esp32-cloud-iot-core-k8s)仓库并将其下载为 zip 文件
 
-- **步骤 2:** 解压下载的zip文件 
+- **步骤 2：** 解压下载的 zip 文件
 
-- **步骤 3:** 打开Google Cloud控制台，并导航到 [Google Kubernetes Engine](https://console.cloud.google.com/kubernetes/list) ，等待系统初始化
+- **步骤 3：** 打开 Google Cloud Console 并导航到 [Google Kubernetes Engine](https://console.cloud.google.com/kubernetes/list)，等待系统初始化
 
-- **步骤 4:** 通过点击右上角的按钮启动 Cloud shell
+- **步骤 4：** 点击右上角的按钮启动 Cloud shell
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Google_Cloud_IoT/cloud_shell_1.png" alt="pir" width={700} height="auto" /></p>
 
 
-- **步骤 5:** 输入以下命令来设置gcloud命令行工具的默认值
+- **步骤 5：** 输入以下命令为 gcloud 命令行工具设置默认值
 
 ```sh
-export ZONE=<enter_zone> # e.g. us-central1-a, see https://cloud.google.com/compute/docs/regions-zones/#available
-export PROJECT_ID=<enter_project-id> # project ID name 
+export ZONE=<enter_zone> # 例如 us-central1-a，参见 https://cloud.google.com/compute/docs/regions-zones/#available
+export PROJECT_ID=<enter_project-id> # 项目 ID 名称
 gcloud config set project $PROJECT_ID
 gcloud config set compute/zone $ZONE
 ```
 
-- **步骤 6:** 输入以下命令来创建一个包含一个n1-standard-1节点的GKE集群
+- **步骤 6：** 输入以下命令创建一个包含一个 n1-standard-1 节点的 GKE 集群
 
 ```sh
 gcloud container clusters create influxdb-grafana \
@@ -611,7 +609,7 @@ gcloud container clusters create influxdb-grafana \
                 --zone $ZONE
 ```
 
-- **步骤 7:** 输入以下命令来创建一个用于存储InfluxDB和Grafana身份验证信息的密钥
+- **步骤 7：** 输入以下命令创建一个密钥来存储 InfluxDB 和 Grafana 认证信息
 
 ```sh
 kubectl create secret generic influxdb-grafana \
@@ -621,42 +619,43 @@ kubectl create secret generic influxdb-grafana \
   --from-literal=grafana-password=passw0rd
 ```
 
-**注:** 您根据您的喜好更改InfluxDB和Grafana的用户名和密码
+**注意：** 您可以根据自己的偏好更改 influxdb/grafana 用户名和密码
 
-- **步骤 8:** 在Google Shell中点击 **Open Editor** 
+- **步骤 8：** 在 Google Shell 中点击 **Open Editor**
 
-- **步骤 9:** 将之前下载并解压的文件夹拖放到 **Cloud Shell Editor**中
+- **步骤 9：** 将之前下载并解压的文件夹拖放到 **Cloud Shell Editor** 中
 
-- **步骤 10:** 点击 **Open Terminal** 返回到终端，通过输入以下命令导航到 **05-influxdb_grafana_k8s** 目录
+- **步骤 10：** 点击 **Open Terminal** 返回终端。通过输入以下命令导航到 **05-influxdb_grafana_k8s** 目录
 
 ```sh
 cd esp32-cloud-iot-core-k8s-master/05-influxdb_grafana_k8s
 ```
 
-- **步骤 11:** 输入以下命令将InfluxDB和Grafana部署到Kubernetes集群中
+- **步骤 11：** 输入以下命令将 InfluxDB 和 Grafana 部署到 Kubernetes
 
 ```sh
 kubectl create -f k8s/
 ```
+
 #### Grafana 设置
 
-- **步骤 1:** 输入以下命令来检查服务的外部IP地址/端口
+- **步骤 1：** 输入以下命令检查服务的外部 IP / 端口
 
 ```sh
 kubectl get services
 ```
 
-- **步骤 2:** 复制Grafana的外部IP地址
+- **步骤 2:** 复制 Grafana 的外部 IP
 
-- **步骤 3:** 在浏览器中访问 `http://<grafana service external ip>:3000`
+- **步骤 3:** 访问 `http://<grafana service external ip>:3000`
 
-**Note:** 将之前复制的Grafana外部IP粘贴到 `<grafana service external ip>`中
+**注意:** 将之前复制的 Grafana 外部 IP 粘贴到 `<grafana service external ip>`
 
-- **步骤 4:** 使用之前设置的凭据登录到Grafana
+- **步骤 4:** 使用之前设置的凭据登录 Grafana
 
-- **步骤 5:** 点击齿轮图标，导航到 `Configuration > Data Sources`
+- **步骤 5:** 点击齿轮图标并导航到 `Configuration > Data Sources`
 
-- **步骤 6:** 点击 **Add data source** 选择 **influxDB**
+- **步骤 6:** 点击 **Add data source** 并选择 **influxDB**
 
 - **步骤 7:** 在 **URL** 字段中输入以下内容
 
@@ -664,51 +663,51 @@ kubectl get services
 http://influxdb:8086
 ```
 
-- **步骤 8:** 在 **Database** 字段中输入以下内容，然后点击 **Save & Test**
+- **步骤 8：** 在 **Database** 字段中输入以下内容并点击 **Save & Test**
 
 ```sh
 iot
 ```
 
-**注:** 如果成功在Grafana上设置了**InfluxDB**数据源，您将看到 **Data source is working**的消息
+**注意：** 如果您已经在 Grafana 上成功设置了 **InfluxDB** 数据源，您应该会看到消息 **Data source is working**
 
-#### 创建一个Google Cloud函数
+#### 创建 Google Cloud Function
 
-现在我们需要创建一个Google Cloud函数，将Pub/Sub上的主题数据传输到InfluxDB，并使用交互式仪表板在Grafana上显示InfluxDB中的数据。
+现在我们需要创建一个 Google Cloud Function 来将数据从 Pub/Sub 上的主题传输到 InfluxDB，并使用交互式仪表板在 Grafana 上显示来自 InfluxDB 的数据。
 
-- **步骤 1:** 返回到 **Google Cloud Console** 打开 **Cloud Shell**
+- **步骤 1：** 返回到 **Google Cloud Console** 并打开 **Cloud Shell**
 
-- **步骤 2:** 输入以下命令来启用 **Cloud Functions API**
+- **步骤 2：** 输入以下命令来启用 **Cloud Functions API**
 
 ```sh
 gcloud services enable cloudfunctions.googleapis.com
 ```
 
-- **步骤 3:** 通过输入以下命令导航到 **06-cloud_function** 目录
+- **步骤 3：** 通过输入以下命令导航到 **06-cloud_function** 目录
 
 ```sh
 cd esp32-cloud-iot-core-k8s-master/06-cloud_function
 ```
 
-- **步骤 4:**  使用 **vim文本编辑器** 打开 **main.py**
+- **步骤 4：** 在 **vim 文本编辑器** 中打开 **main.py**
 
 ```sh
 cd esp32-cloud-iot-core-k8s-master/06-cloud_function
 ```
 
-- **步骤 5:** 在键盘上按下 **i** 进入 **编辑模式**
+- **步骤 5：** 按键盘上的 **i** 键进入 **编辑模式**
 
-- **步骤 6:** 修改**_get_influxdb_client function**中的 **InfluxDB variables** 主机、端口、用户名、密码）
+- **步骤 6：** 在 **_get_influxdb_client 函数** 中修改 **InfluxDB 变量**（主机、端口、用户名、密码）
 
-**注:** 在Cloud Shell上输入以下命令以获取InfluxDB主机的外部IP地址，并将其复制
+**注意：** 通过在 Cloud Shell 中输入以下命令并复制外部 IP 来获取 InfluxDB 主机
 
 ```sh
 kubectl get services
 ```
 
-- **步骤 7:** 输入 **:wq**来保存文件
+- **步骤 7:** 通过输入 **:wq** 保存文件
 
-- **步骤 8:** 输入以下命令来部署 **Cloud Function**  
+- **步骤 8:** 通过输入以下命令部署 **Cloud Function**
 
 ```sh
 export PUBSUB_TOPIC="enter_topic-name>"
@@ -716,48 +715,46 @@ export REGION="enter_region" # https://cloud.google.com/functions/docs/locations
 gcloud functions deploy iotcore_pubsub_to_influxdb --runtime python37 --trigger-topic $PUBSUB_TOPIC --region $REGION
 ```
 
-#### 返回Grafana设置
+#### 返回 Grafana 设置
 
-- **步骤 1:** 打开Grafana，导航到 `Dashboards > Manage`
+- **步骤 1:** 打开 Grafana 并导航到 `Dashboards > Manage`
 
-- **步骤 2:** 点击 **New Dashboard** 然后点击 **Add new panel**
+- **步骤 2:** 点击 **New Dashboard** 并点击 **Add new panel**
 
-- **步骤 3:** 导航到 **Visualization** 点击 **Graph**
+- **步骤 3:** 导航到 **Visualization** 并点击 **Graph**
 
-- **步骤 4:** 在 **Query**下, 在 **FROM** 选项卡中, 点击 **select measurement** 然后从下拉菜单中选择 **temperature** 
+- **步骤 4:** 在 **Query** 下，在 **FROM** 选项卡中，点击 **select measurement** 并从下拉菜单中选择 **temperature**
 
-- **步骤 5:**  点击 **+ Query** 并重复 **step 12** 的步骤来选择 **humidity**
+- **步骤 5:** 点击 **+ Query** 并重复与 **步骤 12** 相同的步骤来添加 **humidity**
 
 - **步骤 6:** 根据您的偏好更改其他设置
 
 - **步骤 7:** 点击 **Apply**
 
-- **步骤 8:** 点击 **Add panel** 然后点击 **Add new panel**
+- **步骤 8:** 点击 **Add panel** 和 **Add new panel**
 
-- **步骤 9:** 导航到 **Visualization** 点击 **Gauge**
+- **步骤 9:** 导航到 **Visualization** 并点击 **Gauge**
 
-- **步骤 10:** 在 **Query**下, 在 **FROM** 选项卡中，点击 **select measurement** 然后从下拉菜单中选择 **temperature** 
+- **步骤 10:** 在 **Query** 下，在 **FROM** 选项卡中，点击 **select measurement** 并从下拉菜单中选择 **temperature**
 
-- **步骤 11:** 在 **Field** 选项卡中, 在 **Unit**, 下，从下拉菜单中选择 `Temperature > Celcius`
+- **步骤 11:** 在 **Field** 选项卡中，在 **Unit** 下，从下拉菜单中选择 `Temperature > Celcius`
 
-- **步骤 12:** 通过在 **Min** 和 **Max**中输入值为仪表设置最小和最大值
+- **步骤 12:** 通过在 **Min** 和 **Max** 中输入来为仪表设置最小值和最大值
 
-- **步骤 13:** 在 **Display name**下, 输入 `Temperature`
+- **步骤 13:** 在 **Display name** 下，输入 `Temperature`
 
-- **步骤 14:** 通过按照 **step 15**  重复相同的步骤 ，为**humidity**设置仪表
+- **步骤 14:** 从 **步骤 15** 开始，对 **humidity** 重复相同的操作。
 
 - **步骤 15:** 点击 **Apply**
 
-现在您将在Grafana上看到创建的仪表板
+您现在将看到在 Grafana 上创建的仪表板
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Google_Cloud_IoT/grafana_dash_1.png" alt="pir" width={900} height="auto" /></p>
 
 
-
-## 技术支持 & 产品讨论
-
- 如果您遇到任何技术问题，请将问题提交到我们的 [论坛](http://forum.seeedstudio.com/) 。
-中。感谢您选择我们的产品！我们将为您提供不同的支持，以确保您使用我们的产品的体验尽可能顺利。我们提供多种沟通渠道，以满足不同的偏好和需求。
+## 技术支持与产品讨论
+如果您有任何技术问题，请将问题提交到我们的[论坛](http://forum.seeedstudio.com/)。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

@@ -1,35 +1,35 @@
 ---
-description: Grove端口
-title: Grove端口
+description: Grove 接口
+title: Grove 接口
 keywords:
 - Wio_terminal Hardware_Overview
 - Input&Output
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-Grove
 last_update:
-  date: 3/07/2024
-  author: 金菊
+  date: 1/31/2023
+  author: jianjing Huang
 ---
 
-# Grove 端口
+# Grove 接口
 
-这个仓库介绍了如何在Wio Terminal上与 [**Grove 生态系统**](https://www.seeedstudio.com/grove.html) 一起使用。
+本文档介绍如何将 Wio Terminal 与 [**Grove 生态系统**](https://www.seeedstudio.com/grove.html) 配合使用。
 
-借助Grove，您可以通过更简单的连接方式更快地进行原型制作！
+借助 Grove，您可以通过更简单的连接更快地制作原型！
 
-## Wio Terminal与Grove - TDS传感器
+## Wio Terminal 与 Grove - TDS 传感器
 
-本部分介绍如何使用 [Grove - TDS 传感器](https://wiki.seeedstudio.com/Grove-TDS-Sensor/) 与Wio Terminal，在线图表上显示实时的TDS读数！
+本节介绍如何将 [Grove - TDS 传感器](https://wiki.seeedstudio.com/cn/Grove-TDS-Sensor/) 与 Wio Terminal 配合使用，在折线图上显示实时 TDS 读数！
 
-### 库的安装
+### 库安装
 
-1. 安装 [LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) 库。
+1. 安装 [LCD](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Overview/) 库。
 
-2. 安装 [Linechart](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Linecharts/) 库。
+2. 安装 [Linechart](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Linecharts/) 库。
 
 ### 完整代码
 
-将Grove TDS传感器连接到Wio Terminal的Grove D/A引脚，上传代码并检查结果
+将 Grove TDS 传感器连接到 Wio Terminal 的 Grove D/A 引脚，上传代码并查看结果！
 
 ```cpp
 #include"seeed_line_chart.h" //include the library
@@ -91,17 +91,17 @@ void loop() {
 }
 ```
 
-## Wio Terminal与Grove - OLED显示屏
+## Wio Terminal 与 Grove - OLED 显示屏
 
-如果您需要在Wio Terminal上使用第二个屏幕进行显示, **Grove - OLED 显示屏 0.96英寸"** 将是一个完美的选择。它可以用于显示图形和数据，为Wio Terminal添加更多的交互功能。
+如果您需要一个第二屏幕与 Wio Terminal 一起显示，**Grove - OLED 显示屏 0.96"** 将是完美的选择。它可以用来显示图形和数据，为 Wio Terminal 增加更多交互功能。
 
-### 库的安装
+### 库安装
 
-1. 在Arduino IDE的 **Library Manager** 安装 **U8g2** 库，导航到 **Sketch** -> **Include Library** -> **Manage Libraries**... 然后在库管理器中搜索并安装  `U8g2` 库。
+1. 从 Arduino IDE 的**库管理器**中安装 **U8g2** 库。导航到 **Sketch** -> **Include Library** -> **Manage Libraries**... 并在库管理器中搜索并安装 `U8g2`。
 
-### U8g2初始化
+### U8g2 初始化
 
-使用u8g2的软件I2C初始化OLED显示屏，使用SCL作为时钟信号，SDA作为数据信号：
+使用 u8g2 的软件 I2C 初始化 OLED 显示屏，使用 SCL 作为时钟，SDA 作为数据：
 
 ```cpp
 U8G2_SSD1306_128X64_NONAME_1_SW_I2C u8g2(U8G2_R0, /* clock=*/ SCL, /* data=*/ SDA, /* reset=*/ U8X8_PIN_NONE);
@@ -113,15 +113,15 @@ U8G2_SSD1306_128X64_NONAME_1_SW_I2C u8g2(U8G2_R0, /* clock=*/ SCL, /* data=*/ SD
 
 2. 开始一个 do-while 循环。
 
-3. 在循环体内：使用常规的绘图命令绘制内容。
+3. 在循环体内：使用常规绘制命令绘制内容。
 
-4. 只要 u8g2.nextPage() 返回true，就循环执行。
+4. 只要 u8g2.nextPage() 返回 true 就继续循环。
 
 更多信息，请访问 [u8g2](https://github.com/olikraus/u8g2/wiki)
 
 ### 完整代码
 
-将Grove OLED显示屏0.96英寸连接到Wio Terminal的Grove I2C引脚，并检查结果！
+将 Grove OLED Display 0.96" 连接到 Grove I2C 引脚并查看结果！
 
 ```cpp
 #include <U8g2lib.h>
@@ -196,33 +196,33 @@ void loop() {
 }
 ```
 
-## Wio Terminal与Grove - 温度传感器
+## Wio Terminal 与 Grove - 温度传感器
 
-本部分介绍如何使用 [Grove - 温度传感器](https://wiki.seeedstudio.com/Grove-Temperature_Sensor_V1.2/) 与Wio Terminal一起显示实时环境温度读数。
+本节介绍如何使用 [Grove - 温度传感器](https://wiki.seeedstudio.com/cn/Grove-Temperature_Sensor_V1.2/) 与 Wio Terminal 来显示实时环境温度读数。
 
-### 库的安装
+### 库安装
 
-1. 安装 [LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) 库。
+1. 安装 [LCD](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Overview/) 库。
 
-2. 安装 [Linechart](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Histogram/) 库。
+2. 安装 [Linechart](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Histogram/) 库。
 
 ### 完整代码
 
-将Grove温度传感器连接到Wio Terminal的Grove D/A引脚，上传代码并检查结果！
+将 Grove 温度传感器连接到 Wio Terminal 的 Grove D/A 引脚，上传代码并查看结果！
 
 ```cpp
-#include"seeed_line_chart.h" //include the library
+#include"seeed_line_chart.h" //包含库文件
 #include <math.h>
 
 TFT_eSPI tft;
 
-#define max_size 50 //maximum size of data
-doubles data; //Initilising a doubles type to store data
+#define max_size 50 //数据的最大大小
+doubles data; //初始化一个doubles类型来存储数据
 TFT_eSprite spr = TFT_eSprite(&tft);  // Sprite 
 
-const int B = 4275;               // B value of the thermistor
+const int B = 4275;               // 热敏电阻的B值
 const int R0 = 100000;            // R0 = 100k
-const int pinTempSensor = A0;     // Grove - Temperature Sensor connect to A0
+const int pinTempSensor = A0;     // Grove - 温度传感器连接到A0
 
 void setup() {
     pinMode(pinTempSensor, INPUT);
@@ -238,16 +238,16 @@ void loop() {
     float R = 1023.0/a-1.0;
     R = R0*R;
 
-    float temperature = 1.0/(log(R/R0)/B+1/298.15)-273.15; // convert to temperature via datasheet
+    float temperature = 1.0/(log(R/R0)/B+1/298.15)-273.15; // 通过数据表转换为温度
 
     if (data.size() == max_size) {
-        data.pop();//this is used to remove the first read variable
+        data.pop();//用于移除第一个读取的变量
     }
-    data.push(temperature); //read variables and store in data
+    data.push(temperature); //读取变量并存储在data中
 
-    //Settings for the line graph title
+    //折线图标题的设置
     auto header =  text(0, 0)
-                .value("Temperature Reading")
+                .value("温度读数")
                 .align(center)
                 .color(TFT_WHITE)
                 .valign(vcenter)
@@ -255,19 +255,19 @@ void loop() {
                 .thickness(2);
 
     header.height(header.font_height() * 2);
-    header.draw(); //Header height is the twice the height of the font
+    header.draw(); //标题高度是字体高度的两倍
 
-  //Settings for the line graph
-    auto content = line_chart(20, header.height()); //(x,y) where the line graph begins
+  //折线图的设置
+    auto content = line_chart(20, header.height()); //(x,y) 折线图开始的位置
          content
-                .height(tft.height() - header.height() * 1.5) //actual height of the line chart
-                .width(tft.width() - content.x() * 2) //actual width of the line chart
-                .based_on(0.0) //Starting point of y-axis, must be a float
-                .show_circle(true) //drawing a cirle at each point, default is on.
+                .height(tft.height() - header.height() * 1.5) //折线图的实际高度
+                .width(tft.width() - content.x() * 2) //折线图的实际宽度
+                .based_on(0.0) //y轴的起始点，必须是浮点数
+                .show_circle(true) //在每个点绘制圆圈，默认开启。
                 .y_role_color(TFT_WHITE)
                 .x_role_color(TFT_WHITE)
-                .value(data) //passing through the data to line graph
-                .color(TFT_RED) //Setting the color for the line
+                .value(data) //将数据传递给折线图
+                .color(TFT_RED) //设置线条的颜色
                 .draw();
 
     spr.pushSprite(0, 0);
@@ -275,17 +275,17 @@ void loop() {
 }
 ```
 
-## Wio Terminal与Grove - GPS传感器
+## Wio Terminal 与 Grove - GPS 传感器
 
-本部分介绍如何使用Grove - GPS传感器与Wio Terminal一起获取实时GPS信息。传感器本身输出NMEA GPS数据，我们将使用TinyGPSPlus库将数据解析为可读信息。
+本节介绍如何将 Grove - GPS 传感器与 Wio Terminal 配合使用来获取实时 GPS 信息。传感器本身输出 NMEA GPS 数据，我们将使用 TinyGPSPlus 库来解析数据为可读信息。
 
-### 库的安装
+### 库安装
 
 1. 安装 [TinyGPSPlus 库](https://github.com/mikalhart/TinyGPSPlus)。
 
 ### 完整代码
 
-将Grove GPS传感器连接到Wio Terminal的Grove I2C引脚（左侧），上传代码并在串行监视器中检查结果（波特率：9600）！
+将 Grove GPS 传感器连接到 Wio Terminal 的 Grove I2C 引脚（左侧），上传代码并在串口监视器中查看结果（波特率：9600）！
 
 ```cpp
 #include <TinyGPS++.h>
@@ -293,11 +293,11 @@ void loop() {
 
 static const uint32_t GPSBaud = 9600;
 
-// The TinyGPS++ object
+// TinyGPS++ 对象
 TinyGPSPlus gps;
 
-// The serial connection to the GPS device - Left side Grove connector.
-// Left side Grove connector shares pins with I2C1 of 40 pin connector.
+// 与GPS设备的串行连接 - 左侧Grove连接器。
+// 左侧Grove连接器与40针连接器的I2C1共享引脚。
 static Uart Serial3(&sercom3, PIN_WIRE_SCL, PIN_WIRE_SDA, SERCOM_RX_PAD_1, UART_TX_PAD_0);
 
 void setup()
@@ -311,21 +311,21 @@ void setup()
  
 void loop()
 {
-  // This sketch displays information every time a new sentence is correctly encoded.
+  // 此示例在每次正确编码新语句时显示信息。
   while (Serial3.available() > 0)
     if (gps.encode(Serial3.read()))
       displayInfo();
  
   if (millis() > 5000 && gps.charsProcessed() < 10)
   {
-    Serial.println(F("No GPS detected: check wiring."));
+    Serial.println(F("未检测到GPS：请检查接线。"));
     while(true);
   }
 }
 
 void displayInfo()
 {
-  Serial.print(F("Location: ")); 
+  Serial.print(F("位置: ")); 
   if (gps.location.isValid())
   {
     Serial.print(gps.location.lat(), 6);
@@ -334,10 +334,10 @@ void displayInfo()
   }
   else
   {
-    Serial.print(F("INVALID"));
+    Serial.print(F("无效"));
   }
 
-  Serial.print(F("  Date/Time: "));
+  Serial.print(F("  日期/时间: "));
   if (gps.date.isValid())
   {
     Serial.print(gps.date.month());
@@ -348,7 +348,7 @@ void displayInfo()
   }
   else
   {
-    Serial.print(F("INVALID"));
+    Serial.print(F("无效"));
   }
 
   Serial.print(F(" "));
@@ -368,7 +368,7 @@ void displayInfo()
   }
   else
   {
-    Serial.print(F("INVALID"));
+    Serial.print(F("无效"));
   }
 
   Serial.println();

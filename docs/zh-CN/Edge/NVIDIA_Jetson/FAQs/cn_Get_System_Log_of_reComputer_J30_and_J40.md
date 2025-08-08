@@ -1,17 +1,14 @@
 ---
-description: 本文档提供了使用 Jetson 串口获取 reComputer J4012（或类似设备）启动日志的分步指南。
+description: 本文档提供了通过 Jetson 串口获取 reComputer J4012（或类似设备）启动日志的分步指南。
 title: 如何获取 reComputer J30/J40 的系统日志？
 keywords:
 - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/get_the_system_log_of_recomputer_j30_and_j40
 last_update:
-  date: 05/15/2025
+  date: 2025/1/22
   author: Youjiang
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 本文档将以 [reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) 为例，演示如何通过 Jetson 串口获取设备的启动日志。
 
@@ -41,10 +38,10 @@ last_update:
 
 ## 获取系统日志
 
-**步骤1.** 获取电脑识别到的 USB2TTL 模块的标识号。
+**步骤1.** 获取电脑识别到的 USB2TTL 模块的识别号。
 
 :::note
-如果您的电脑运行的是 Windows 系统，可以在设备管理器中找到识别到的标识号。
+如果您的电脑运行的是 Windows 系统，可以在设备管理器中找到识别号。
 :::
 
 <div align="center">
@@ -57,7 +54,7 @@ last_update:
   <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/FAQ/config_serial.png"/>
 </div>
 
-**步骤3.** 启动 Jetson。如果一切正常，您应该可以在串口调试工具窗口中看到系统启动日志。
+**步骤3.** 给 Jetson 上电。如果一切正常，您应该可以在串口调试工具窗口中看到系统启动日志。
 
 <div align="center">
 <iframe width="800" height="450" src="https://www.youtube.com/embed/rwiKgF91mNE" title="获取 reComputer J30/J40 的系统日志" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -65,7 +62,7 @@ last_update:
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们为您提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多种沟通方式，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们为您提供多种支持渠道，确保您在使用我们的产品时获得顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

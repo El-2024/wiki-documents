@@ -6,23 +6,23 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-Mic
 last_update:
-  date: 3/08/2024
-  author: 金菊
+  date: 1/17/2023
+  author: jianjing Huang
 ---
 
-#  麦克风入门指南
+# 麦克风入门指南
 
-本 wiki 介绍如何在Wio Terminal中使用内置麦克风进行音频输入。麦克风可以用于检测周围的声音并做出相应的反应。
+本教程介绍如何在 Wio Terminal 中使用内置麦克风进行音频输入。麦克风可用于检测周围声音并做出相应响应。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/MIC.png"/></div>
 
-:::注
-本文仅演示麦克风的基本用法，我们正在开发适用于Wio Terminal的麦克风库，以实现更多功能！敬请期待！
+:::note
+本教程仅演示麦克风的基本功能，我们正在为 Wio Terminal 开发麦克风库以实现更多功能！敬请期待！
 :::
 
 ## 示例代码
 
-注: 已经定义了 `WIO_MIC` 用于内置麦克风。
+注意：`WIO_MIC` 是为内置麦克风定义的。
 
 ```cpp
 void setup() {
@@ -37,12 +37,13 @@ void loop() {
 }
 ```
 
-## 带有LCD屏幕的示例代码
+## 带 LCD 屏幕的示例代码
 
-### 安装库
+### 库安装
 
-- 安装 [LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) 库。
-- 安装 [Linechart](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Linecharts/) 库。
+- 安装 [LCD](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Overview/) 库。
+
+- 安装 [Linechart](https://wiki.seeedstudio.com/cn/Wio-Terminal-LCD-Linecharts/) 库。
 
 ```cpp
 #include"seeed_line_chart.h" //include the library
