@@ -8,6 +8,12 @@ const featureContents = {
     rpifeature3: 'The Raspberry Pi is easy to set up and use, even for beginners. It comes with a stable Raspbian operating system and a huge number of enthusiasts are constantly developing new applications for it',
     rpifeature4: 'The Raspberry Pi is small and lightweight, making it easy to carry around and use in different locations',
   },
+  cn: {
+    rpifeature1: '树莓派是一款低成本的计算机，每个人都能负担得起。根据型号不同，树莓派的价格从5美元到55美元不等。',
+    rpifeature2: '树莓派可用于广泛的项目，从家庭自动化到游戏再到机器人技术。它还可以运行多种操作系统，包括Linux和Android。',
+    rpifeature3: '树莓派易于设置和使用，即使对初学者也是如此。它配备了稳定的Raspbian操作系统，大量爱好者不断为其开发新应用程序。',
+    rpifeature4: '树莓派小巧轻便，便于携带和在不同地点使用。',
+  },
   ja: {
     rpifeature1: 'Raspberry Piは低価格なコンピュータで、誰でも手に入れやすいです。モデルによって5ドルから55ドルの価格帯です。',
     rpifeature2: 'Raspberry Piはホームオートメーション、ゲーム、ロボティクスなど幅広いプロジェクトに使えます。LinuxやAndroidなど多様なOSも動作します。',
@@ -30,7 +36,7 @@ const Value = ({ lang = 'en' }) => {
           onMouseEnter={() => setActiveFeature('rpifeature1')}
           onMouseLeave={() => setActiveFeature(null)}
         >
-          💰 {lang === 'ja' ? '手頃な価格' : 'Affordability'}
+          💰 {lang === 'cn' ? '实惠价格' : lang === 'ja' ? '手頃な価格' : 'Affordability'}
         </div>
         <div
           id='rpifeature2'
@@ -38,7 +44,7 @@ const Value = ({ lang = 'en' }) => {
           onMouseEnter={() => setActiveFeature('rpifeature2')}
           onMouseLeave={() => setActiveFeature(null)}
         >
-          🧩 {lang === 'ja' ? '多用途' : 'Versatility'}
+          🧩 {lang === 'cn' ? '多功能性' : lang === 'ja' ? '多用途' : 'Versatility'}
         </div>
         <div
           id='rpifeature3'
@@ -46,7 +52,7 @@ const Value = ({ lang = 'en' }) => {
           onMouseEnter={() => setActiveFeature('rpifeature3')}
           onMouseLeave={() => setActiveFeature(null)}
         >
-          🚀 {lang === 'ja' ? '使いやすさ' : 'Ease of use'}
+          🚀 {lang === 'cn' ? '易于使用' : lang === 'ja' ? '使いやすさ' : 'Ease of use'}
         </div>
         <div
           id='rpifeature4'
@@ -54,12 +60,12 @@ const Value = ({ lang = 'en' }) => {
           onMouseEnter={() => setActiveFeature('rpifeature4')}
           onMouseLeave={() => setActiveFeature(null)}
         >
-          🐜 {lang === 'ja' ? 'サイズ' : 'Size'}
+          🐜 {lang === 'cn' ? '小巧尺寸' : lang === 'ja' ? 'サイズ' : 'Size'}
         </div>
       </div>
 
       <div className='feature-explanation'>
-        <p>{activeFeature ? texts[activeFeature] : (lang === 'ja' ? '特徴にカーソルを合わせて説明を表示します' : 'Hover over a feature to see explanation')}</p>
+        <p>{activeFeature ? texts[activeFeature] : (lang === 'cn' ? '将鼠标悬停在功能上查看说明' : lang === 'ja' ? '特徴にカーソルを合わせて説明を表示します' : 'Hover over a feature to see explanation')}</p>
       </div>
     </div>
   );
