@@ -528,7 +528,11 @@ When you have completed the above steps, then you can follow this [step](https:/
 <iframe width="730" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/reset%20via%20serial%20tool.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </div>
 
-**3) Device can not enter DFU mode and no serial port display, please contact the tech support: support@sensecapmx.com**
+**3) Device can not enter DFU mode and no serial port display**
+
+* Please disconnect the charging cable and leave the device for a few days until the battery is completely drained, then connect the charging cable and try to pair it again.
+
+**4) If none of the above steps work, please contact the tech support: support@sensecapmx.com**
 
 
 ### Firmware flashing failed
