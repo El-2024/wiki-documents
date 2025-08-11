@@ -902,7 +902,7 @@ if __name__ == "__main__":
             depth_frame = frames.get_depth_frame()
             if color_frame is None or depth_frame is None:
                 continue
-            # 彩色帧转为BGR图像
+           
             color_image = simple_frame_to_bgr(color_frame)
    
 
