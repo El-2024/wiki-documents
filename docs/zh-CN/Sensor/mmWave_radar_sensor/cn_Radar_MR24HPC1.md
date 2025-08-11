@@ -864,22 +864,22 @@ MR24HPC1 传感器使用 UART 串口通信，您只需要按照下面的接线�
     </tr>
     <tr>
       <td align="center">5V</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">5V</td>
     </tr>
     <tr>
       <td align="center">GND</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">GND</td>
     </tr>
     <tr>
       <td align="center">RX</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">软串口 TX</td>
     </tr>
     <tr>
       <td align="center">TX</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">软串口 RX</td>
     </tr>
   </tbody></table>
@@ -975,22 +975,22 @@ void loop() {
     </tr>
     <tr>
       <td align="center">5V</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">5V</td>
     </tr>
     <tr>
       <td align="center">GND</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">GND</td>
     </tr>
     <tr>
       <td align="center">RX</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">TX</td>
     </tr>
     <tr>
       <td align="center">TX</td>
-      <td align="center">--&gt;</td>
+      <td align="center">--></td>
       <td align="center">RX</td>
     </tr>
   </tbody></table>

@@ -213,8 +213,8 @@ iBoardRF24 radio(41,40,39,38,37,19);
 要在您的代码中使用 MaTrix 库，需要在 `void setup()` 函数中声明以下代码行：
 
 ```
-#include &lt;SPI.h&gt;
-#include &lt;MaTrix.h&gt;	//连接 MaTrix 库
+#include <SPI.h>
+#include <MaTrix.h>	//连接 MaTrix 库
 
 MaTrix mymatrix;       //创建对象 mymatrix
 ```

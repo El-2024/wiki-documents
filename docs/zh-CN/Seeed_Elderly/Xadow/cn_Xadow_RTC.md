@@ -40,7 +40,7 @@ last_update:
 **示例代码如下所示：**
 
 ```
-#include &lt;Wire.h&gt;
+#include <Wire.h>
 #define DS1337_CTRL_ID 0x68
 
 unsigned char  second,minute,hour;
@@ -115,9 +115,9 @@ void readTime(void)
     // 请求7字节数据（秒、分钟、小时、星期、日期、月份、年份）
     Wire.requestFrom(DS1337_CTRL_ID, 7);
     // 其中一些需要掩码，因为某些位是控制位
-    second       = bcdToDec(Wire.read() &amp; 0x7f);
+    second       = bcdToDec(Wire.read() & 0x7f);
     minute       = bcdToDec(Wire.read());
-    hour       = bcdToDec(Wire.read() &amp; 0x3f);// 如果是12小时制需要更改
+    hour       = bcdToDec(Wire.read() & 0x3f);// 如果是12小时制需要更改
     week  = bcdToDec(Wire.read());
     day = bcdToDec(Wire.read());
     month      = bcdToDec(Wire.read());
