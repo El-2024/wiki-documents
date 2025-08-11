@@ -331,7 +331,7 @@ Before we can move on to the installation steps, we need to make sure that the b
 **Step 5.** On the Linux host PC, open a Terminal window and enter the command `lsusb`. If the returned content has one of the following outputs according to the Jetson SoM you use, then the board is in force recovery mode.
 
 - For AGX Orin 32GB: **0955:7223 NVidia Corp**
-- For AGX Orin 64GB: **0955:7423 NVidia Corp**
+- For AGX Orin 64GB: **0955:7023 NVidia Corp**
 
 The below image is for AGX Orin 32GB
 
