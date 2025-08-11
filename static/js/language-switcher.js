@@ -10699,6 +10699,18 @@
   "/xiao_075inch_epaper_panel": [
     "es",
     "ja"
+  ],
+  "/non_invasive_ct_energy_consumption": [
+    "cn",
+    "en",
+  ],
+  "/mission_pack_intro_v3":[
+    "cn",
+    "en",
+  ],
+  "/mission_pack_features_v3":[
+    "cn",
+    "en",
   ]
 };
 
