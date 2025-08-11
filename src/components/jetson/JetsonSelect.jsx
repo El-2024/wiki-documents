@@ -27,13 +27,19 @@ export const ProductSelect = ({ children, options }) => {
 
     // L4T version and corresponding JetPack SDK version
     const L4T2JPVers = {
+        '36.4.3 (GMSL❌)': 'R36.4.3 (GMSL❌) (JetPack 6.2🚀)',
+        '36.4.3 (GMSL✅)': 'R36.4.3 (GMSL✅) (JetPack 6.2🚀)',
         '36.4.3': 'R36.4.3 (JetPack 6.2🚀)',
         '36.4.0': 'R36.4.0 (JetPack 6.1)',
         '36.3.0': 'R36.3.0 (JetPack 6.0)',
+        '36.3.0 (GMSL❌)': 'R36.3.0 (GMSL❌) (JetPack 6.0)',
+        '36.3.0 (GMSL✅)': 'R36.3.0 (GMSL✅) (JetPack 6.0)',
         '36.2.0': 'R36.2.0 (JetPack 6.0 DP)',
         '35.6.1': 'R35.6.1 (JetPack 5.1.5) 🚀',
         '35.6.0': 'R35.6.0 (JetPack 5.1.4)',
         '35.5.0': 'R35.5.0 (JetPack 5.1.3)',
+        '35.5.0 (GMSL❌)': 'R35.5.0 (GMSL❌) (JetPack 5.1.3)',
+        '35.5.0 (GMSL✅)': 'R35.5.0 (GMSL✅) (JetPack 5.1.3)',
         '35.4.1': 'R35.4.1 (JetPack 5.1.2)',
         '35.3.1': 'R35.3.1 (JetPack 5.1.1)',
         '35.2.1': 'R35.2.1 (JetPack 5.1.0)',
