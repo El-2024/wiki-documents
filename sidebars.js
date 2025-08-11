@@ -1985,6 +1985,7 @@ const sidebars = {
               label: 'Application',
               items: [
               'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_ha',
+              'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_edgeimpulse',
               ],
         },
         
@@ -4111,6 +4112,7 @@ const sidebars = {
                 // },
                 items: [
                   "Robotics/Robot_Software/PX4/Control_PX4_with_reComputer_Jetson",
+                  "Robotics/Robot_Software/PX4/Object_Tracking_with_reComputer_Jetson_and_PX4"
                     ]},
             'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
             'Robotics/Robot_Software/control_robotic_arm_via_phospho',
