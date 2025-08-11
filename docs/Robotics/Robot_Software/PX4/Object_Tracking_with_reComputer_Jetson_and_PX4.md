@@ -91,7 +91,7 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 Connect the PX4 controller to the UART1 serial port of Jetson
 <div align="center">
     <img width={1000} 
-    src="https://files.seeedstudio.com/wiki/robotics/Object_Tracking/px4_jetson.png" />
+    src="https://files.seeedstudio.com/wiki/robotics/Object_Tracking/px4_mini.jpg" />
 </div>
 
 
