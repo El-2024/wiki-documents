@@ -7,7 +7,7 @@ tags:
   - Robotics
   - reComputer
   - reComputer Robotics
-image: https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer_robotics1.webp
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer-robotics_2.webp
 slug: /recomputer_robotics_j401_getting_started
 last_update:
   date: 08/06/2025

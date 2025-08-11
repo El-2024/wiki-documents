@@ -1,6 +1,48 @@
 const docList = [
   [
     {
+      "path": "/lerobot_lekiwi",
+      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.webp",
+      "title": "How to use the Lekiwi in Lerobot",
+      "date": "8/8/2025"
+    },
+    {
+      "path": "/object_tracking_with_reComputer_jetson_and_pX4",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.webp",
+      "title": "Object Tracking with reComputer Jetson and PX4",
+      "date": "8/08/2025"
+    }
+  ],
+  [
+    {
+      "path": "/ai_assistant_getting_started",
+      "image": "https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/Top_Pic.webp",
+      "title": "Getting Started with AI Assistant",
+      "date": "08/07/2025"
+    },
+    {
+      "path": "/respeaker_xvf3800_xiao_edge_impulse",
+      "image": "https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array-with-xiao-esp32s3.webp",
+      "title": "Edge Impulse-Based Speech Recognition Using TinyML on ReSpeaker XVF3800 with XIAO ESP32S3",
+      "date": "8/7/2025"
+    }
+  ],
+  [
+    {
+      "path": "/recomputer_robotics_j401_getting_started",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer-robotics_2.webp",
+      "title": "Getting Started with reComputer Robotics",
+      "date": "08/06/2025"
+    },
+    {
+      "path": "/recomputer_robotics_j401_hardware_interfaces_usage",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/image-_J4011-3.webp",
+      "title": "reComputer Robotics Hardware and Interfaces Usage",
+      "date": "08/06/2025"
+    }
+  ],
+  [
+    {
       "path": "/starai_arm_ros_moveit",
       "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.webp",
       "title": "Starai Arm Manipulator - ROS2 MoveIt Guide",
@@ -9,7 +51,7 @@ const docList = [
     {
       "path": "/simulate_soarm101_by_leisaac",
       "image": "https://files.seeedstudio.com/wiki/robotics/isaac_lab/simulate_soarm101_by_leisaac.webp",
-      "title": "Simulate SoArm101 by LeIsaac",
+      "title": "Get started with Lightwheel LeIsaac — Open-source workflow combining Hugging Face LeRobot x GR00T N1.5 x Isaac Sim!",
       "date": "8/1/2025"
     }
   ],
@@ -39,48 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp",
       "title": "How to use the SO-ARM100 and SO-ARM101 robotic arm in the latest version of Lerobot",
       "date": "7/26/2025"
-    }
-  ],
-  [
-    {
-      "path": "/reterminal_e10xx_with_esphome_advanced",
-      "image": "https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.webp",
-      "title": "Advanced ESPHome Usage of reTerminal E10xx in Home Assistant",
-      "date": "07/24/2025"
-    },
-    {
-      "path": "/reterminal_e10xx_with_esphome",
-      "image": "https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.webp",
-      "title": "reTerminal E10xx Work with ESPHome for Home Assistant",
-      "date": "07/21/2025"
-    }
-  ],
-  [
-    {
-      "path": "/control_px4_with_recomputer_jetson",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.webp",
-      "title": "Control PX4 with reComputer Jetson",
-      "date": "7/21/2025"
-    },
-    {
-      "path": "/replace_the_thermal_conductive_paste_for_recomputer",
-      "image": "https://files.seeedstudio.com/wiki/replace_the_thermal_conductive_paste_for_recomputer/replace_the_thermal_conductive_paste_for_recomputer.webp",
-      "title": "Replace the Thermal Conductive Paste for reComputer",
-      "date": "07/18/2025"
-    }
-  ],
-  [
-    {
-      "path": "/recomputer_r",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/113991274-2_3.webp",
-      "title": "reComputer R1000 Getting Started",
-      "date": "07/17/2025"
-    },
-    {
-      "path": "/XIAO_IR_Mate_Smart_IR_Remote",
-      "image": "https://files.seeedstudio.com/wiki/XIAO_IR_MATE/XIAO-Smart-IR-Mate.webp",
-      "title": "Getting Started with XIAO IR Mate Smart IR Remote (For Home Assistant)",
-      "date": "07/17/2025"
     }
   ]
 ];

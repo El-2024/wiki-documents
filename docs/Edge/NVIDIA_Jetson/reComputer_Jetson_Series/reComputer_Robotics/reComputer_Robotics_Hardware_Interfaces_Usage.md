@@ -8,7 +8,7 @@ tags:
   - reComputer
   - reComputer Robotics
   - Hardware and Interfaces Usage
-image: https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer_robotics1.webp
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/image-_J4011-3.webp
 slug: /recomputer_robotics_j401_hardware_interfaces_usage
 last_update:
   date: 08/06/2025
