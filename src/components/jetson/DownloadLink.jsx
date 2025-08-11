@@ -18,16 +18,34 @@ import L4TData from "@site/src/data/jetson/L4TData.json"
  * A React component that displays download links and file information
  * based on the selected product and L4T version.
  */
-export const OneDriveLink = () => {
+export const OneDriveLink = ({ lang = 'en' }) => {
     const product = useJetsonStore(state => state.product);
     const l4t = useJetsonStore(state => state.l4t);
+
+    // 多语言内容
+    const content = {
+        en: {
+            missingSelection: "Finish the selection first, or corresponding information is missing.",
+            link: "Link",
+            file: "File",
+            sha256: "SHA256"
+        },
+        cn: {
+            missingSelection: "请先完成选择，或相应信息缺失。",
+            link: "链接",
+            file: "文件",
+            sha256: "SHA256"
+        }
+    };
+
+    const texts = content[lang] || content.en;
 
     // Retrieve the associated download metadata
     let obj = getL4TData(product, l4t)
 
     // Show fallback message if required selection is incomplete
     if (!obj.product || !obj.l4t) {
-        return <p>Finish the selection first, or corresponding information is missing.</p>;
+        return <p>{texts.missingSelection}</p>;
     }
 
     return (
@@ -38,7 +56,7 @@ export const OneDriveLink = () => {
             marginLeft: 20,
         }}>
             <Row>
-                <Col span={3}><p style={{ userSelect: 'none', fontWeight: 'bold' }}>Link</p></Col>
+                <Col span={3}><p style={{ userSelect: 'none', fontWeight: 'bold' }}>{texts.link}</p></Col>
                 <Col span={4}><a href={obj.mainlink}>OneDrive1</a></Col>
                 {/* conditional rendering mirrorlink */}
                 {obj.mirrorlink && (
@@ -47,11 +65,11 @@ export const OneDriveLink = () => {
             </Row>
 
             <Row>
-                <Col span={3}><p style={{ userSelect: 'none', fontWeight: 'bold' }}>File</p></Col>
+                <Col span={3}><p style={{ userSelect: 'none', fontWeight: 'bold' }}>{texts.file}</p></Col>
                 <Col><span>{obj.filename}</span></Col>
             </Row>
             <Row>
-                <Col span={3}><p style={{ userSelect: 'none', fontWeight: 'bold' }}>SHA256</p></Col>
+                <Col span={3}><p style={{ userSelect: 'none', fontWeight: 'bold' }}>{texts.sha256}</p></Col>
                 <Col><span>{obj.sha256}</span></Col>
             </Row>
         </div>
