@@ -411,11 +411,11 @@ LinkStar H68K 不支持识别外部 MCU 设备，因此我们需要先下载已�
     <td>气体</td>
   </tr>
   <tr>
-    <td><a href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html">Grove - CO2 &amp; 温度 &amp; 湿度传感器 (SCD30)</a></td>
+    <td><a href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html">Grove - CO2 & 温度 & 湿度传感器 (SCD30)</a></td>
     <td>气体</td>
   </tr>
   <tr>
-    <td><a href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD41-p-5025.html">Grove - CO2 &amp; 温度 &amp; 湿度传感器 - SCD41</a></td>
+    <td><a href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD41-p-5025.html">Grove - CO2 & 温度 & 湿度传感器 - SCD41</a></td>
     <td>气体</td>
   </tr>
   <tr>

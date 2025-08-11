@@ -202,7 +202,7 @@ void loop()
 {
     // read the value from the sensor:
     adcIn = analogRead(adcPin);
-    if(adcIn &gt;= 500) digitalWrite(ledPin,HIGH);  // if adc in &gt; 500, led light
+    if(adcIn >= 500) digitalWrite(ledPin,HIGH);  // if adc in > 500, led light
     else digitalWrite(ledPin, LOW);
     Serial.println(adcIn);
     delay(100);

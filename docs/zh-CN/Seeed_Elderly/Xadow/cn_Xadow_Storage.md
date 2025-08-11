@@ -108,7 +108,7 @@ Xadow 存储模块的两个 AT24C256 共享一个公共的双线总线。每个 
 **演示代码：**
 
 ```
-#include &lt;Wire.h&gt; //I2C 库
+#include <Wire.h> //I2C 库
 void setup()
 {
     char somedata[] = "this is data from the eeprom"; // 要写入的数据
@@ -137,8 +137,8 @@ void loop()
 void i2c_eeprom_write_byte( int deviceaddress, unsigned int eeaddress, byte data ) {
     int rdata = data;
     Wire.beginTransmission(deviceaddress);
-    Wire.write((int)(eeaddress &gt;&gt; 8)); // MSB
-    Wire.write((int)(eeaddress &amp; 0xFF)); // LSB
+    Wire.write((int)(eeaddress >> 8)); // MSB
+    Wire.write((int)(eeaddress & 0xFF)); // LSB
     Wire.write(rdata);
     Wire.endTransmission();
 }
@@ -147,18 +147,18 @@ void i2c_eeprom_write_byte( int deviceaddress, unsigned int eeaddress, byte data
 // 此外，数据最多约为 30 字节，因为 Wire 库有一个 32 字节的缓冲区
 void i2c_eeprom_write_page( int deviceaddress, unsigned int eeaddresspage, byte* data, byte length ) {
     Wire.beginTransmission(deviceaddress);
-    Wire.write((int)(eeaddresspage &gt;&gt; 8)); // MSB
-    Wire.write((int)(eeaddresspage &amp; 0xFF)); // LSB
+    Wire.write((int)(eeaddresspage >> 8)); // MSB
+    Wire.write((int)(eeaddresspage & 0xFF)); // LSB
     byte c;
-    for ( c = 0; c &lt; length; c++)
+    for ( c = 0; c < length; c++)
     Wire.write(data[c]);
     Wire.endTransmission();
 }
 byte i2c_eeprom_read_byte( int deviceaddress, unsigned int eeaddress ) {
     byte rdata = 0xFF;
     Wire.beginTransmission(deviceaddress);
-    Wire.write((int)(eeaddress &gt;&gt; 8)); // MSB
-    Wire.write((int)(eeaddress &amp; 0xFF)); // LSB
+    Wire.write((int)(eeaddress >> 8)); // MSB
+    Wire.write((int)(eeaddress & 0xFF)); // LSB
     Wire.endTransmission();
     Wire.requestFrom(deviceaddress,1);
     if (Wire.available()) rdata = Wire.read();
@@ -167,12 +167,12 @@ byte i2c_eeprom_read_byte( int deviceaddress, unsigned int eeaddress ) {
 // 最好不要一次读取超过 30 或 32 字节！
 void i2c_eeprom_read_buffer( int deviceaddress, unsigned int eeaddress, byte *buffer, int length ) {
     Wire.beginTransmission(deviceaddress);
-    Wire.write((int)(eeaddress &gt;&gt; 8)); // MSB
-    Wire.write((int)(eeaddress &amp; 0xFF)); // LSB
+    Wire.write((int)(eeaddress >> 8)); // MSB
+    Wire.write((int)(eeaddress & 0xFF)); // LSB
     Wire.endTransmission();
     Wire.requestFrom(deviceaddress,length);
     int c = 0;
-    for ( c = 0; c &lt; length; c++ )
+    for ( c = 0; c < length; c++ )
     if (Wire.available()) buffer[c] = Wire.read();
 }
 ```

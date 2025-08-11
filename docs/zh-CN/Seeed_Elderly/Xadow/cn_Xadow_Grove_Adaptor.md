@@ -44,8 +44,8 @@ Xadow Grove 转接器是一种将 Grove 接口转换为 Xadow 接口以兼容 Xa
 **测试代码如下：**
 ```
 <pre>
-#include &lt;Wire.h&gt;
-#include &lt;Streaming.h&gt;
+#include <Wire.h>
+#include <Streaming.h>
 
 #define ADDR_ADC121             0x58
 
@@ -79,9 +79,9 @@ void read_adc()     //unsigned int *data
 
     Wire.requestFrom(ADDR_ADC121, 2);           // 从设备请求 2 字节
     delay(1);
-    if(Wire.available()&lt;=2)
+    if(Wire.available()<=2)
     {
-        getData = (Wire.read()&amp;0x0f)&lt;&lt;8;
+        getData = (Wire.read()&0x0f)<<8;
         getData |= Wire.read();
     }
     Serial.print("getData:");
@@ -130,8 +130,8 @@ void loop()
 *
 * By:https://www.seeedstudio.com
 */
-#include &lt;Wire.h&gt;
-#include &lt;Digital_Light_TSL2561.h&gt;
+#include <Wire.h>
+#include <Digital_Light_TSL2561.h>
 void setup()
 {
   Wire.begin();
