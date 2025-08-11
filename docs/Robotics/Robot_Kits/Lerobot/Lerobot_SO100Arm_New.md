@@ -271,6 +271,12 @@ conda install ffmpeg=7.1.1 -c conda-forge
 ```
 - [On Linux only] Install ffmpeg build dependencies and compile ffmpeg from source with libsvtav1, and make sure you use the corresponding ffmpeg binary to your install with which ffmpeg.
 
+If you encounter an error like this, you can use this command too. 
+
+<div align="center">
+    <img width={800} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/No valid stream.png" />
+</div>
 
 :::
 
@@ -281,7 +287,7 @@ cd ~/lerobot && pip install -e ".[feetech]"
 ```
 
 
-For Jetson Jetpack devices (please make sure to install [Pytorch-gpu and Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) from step 5 before executing this step):
+For Jetson Jetpack 6.0+ devices (please make sure to install [Pytorch-gpu and Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) from step 5 before executing this step):
 
 ```bash
 conda install -y -c conda-forge "opencv>=4.10.0.84"  # Install OpenCV and other dependencies through conda, this step is only for Jetson Jetpack 6.0+
@@ -695,7 +701,7 @@ python -m lerobot.record \
     --dataset.single_task="Grab the black cube" \
     --dataset.push_to_hub=true \# You can choose false if you want to save the data locally
     --dataset.episode_time_s=30 \
-    --dataset.reset_time_s=30 
+    --dataset.reset_time_s=30
 ```
 
 You will see a lot of lines appearing like this one:
@@ -824,7 +830,7 @@ If you encounter the following error:
 Try running the following command to resolve it:
 
 ```bash
-pip install datasets == 2.19
+pip install datasets==2.19
 ```
 
 </details>
@@ -886,6 +892,17 @@ As you can see, it's almost the same command as previously used to record your t
 ## FAQ
 
 - If you are following this documentation/tutorial, please git clone the recommended GitHub repository `https://github.com/Seeed-Projects/lerobot.git`. The repository recommended in this documentation is a verified stable version; the official Lerobot repository is continuously updated to the latest version, which may cause unforeseen issues such as different dataset versions, different commands, etc.
+
+- If you encounter an error like this, you should use this command. 
+
+<div align="center">
+    <img width={800} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/No valid stream.png" />
+</div>
+
+```bash
+conda install ffmpeg=7.1.1 -c conda-forge
+```
 
 - If you encounter the following error, you need to check whether the robotic arm connected to the corresponding port is powered on and whether the bus servos have any loose or disconnected cables.
   ```bash
