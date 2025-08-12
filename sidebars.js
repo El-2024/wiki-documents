@@ -4814,7 +4814,7 @@ const sidebars = {
           label: 'reSpeaker',
           items: [
             //'Seeed_Elderly/reSpeaker/reSpeaker_Getting_Started',
-            'Seeed_Elderly/reSpeaker/ReSpeaker',
+            //'Seeed_Elderly/reSpeaker/ReSpeaker',
             'Seeed_Elderly/reSpeaker/ReSpeaker_Product_Guide',
             {
               type: 'category',
