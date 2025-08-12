@@ -187,7 +187,7 @@ Si es la primera vez que usas Arduino, te recomendamos consultar el tutorial [Ge
 
 - Si deseas usar **Seeed Studio XIAO ESP32C6** para los siguientes procedimientos, consulta **[este tutorial](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/#software-preparation)** para completar la configuración.
 
-- Si deseas usar **Seeed Studio XIAO ESP32S3** para los siguientes procedimientos, consulta **[este tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** para completar la configuración.
+- Si deseas usar **Seeed Studio XIAO ESP32S3** para los siguientes procedimientos, consulta **[este tutorial](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** para completar la configuración.
 
 #### Paso 4. Añadir la librería Round Display a Arduino.
 

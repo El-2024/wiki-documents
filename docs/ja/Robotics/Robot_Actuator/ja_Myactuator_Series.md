@@ -185,7 +185,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
      src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg" />
 </div>
 
-CANの使用に関する詳細は、この[wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can)を参照してください。
+CANの使用に関する詳細は、この[wiki](https://wiki.seeedstudio.com/ja/recomputer_jetson_mini_hardware_interfaces_usage/#can)を参照してください。
 
 ### CANインターフェースを有効化する
 

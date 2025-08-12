@@ -15,7 +15,7 @@ last_update:
 
 El Grove - Sensor de Temperatura utiliza [Termistor](https://github.com/SeeedDocument/Grove-Temperature_Sensor_V1.2/raw/master/res/NCP18WF104F03RC.pdf) para detectar la temperatura ambiente. La resistencia de un termistor incrementa cuando la temperatura ambiente decrese. Esta es la característica que utilizamos para calcular la temperatura del entorno. El rango de detección es de -40 a 125ºC con una presicón de ±1.5ºC.
 
-Nota: Esta Wiki trabaja con el Grove - Sensor de Temperatur v1.1, así como también con el V1.0, Por favor revisa [Grove - Sensor de Temperatura](http://wiki.seeedstudio.com/Grove-Temperature_Sensor)
+Nota: Esta Wiki trabaja con el Grove - Sensor de Temperatur v1.1, así como también con el V1.0, Por favor revisa [Grove - Sensor de Temperatura](https://wiki.seeedstudio.com/Grove-Temperature_Sensor)
 
 <p style={{}}><a href="https://www.seeedstudio.com/Grove-Temperature-Sensor-p-774.html" target="_blank"><img src="https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/get_one_now_small.png" width={210} height={41} border={0} /></a></p>
 
@@ -30,7 +30,7 @@ Nota: Esta Wiki trabaja con el Grove - Sensor de Temperatur v1.1, así como tamb
 - B-Constante nominal： 4250 ~ 4299K
 
 ¡Consejo!
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Plataformas Compatibles
 
@@ -50,7 +50,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 Después de esta sección, podrás hacer funcionar el Grove - Sensor de Temperatura V1.1/1.2 con solo unos pasos.
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
 
 ### Jugando con Arduino
 
@@ -83,7 +83,7 @@ Si no tienes la Shield Base - Grove, puedes conectar directamente el módulo com
 
 #### Software
 
-- **Paso 1.** Lanza el IDE de Arduino y da click en **Archivo>Nuevo** para abrir una nueva página. Copia el siguiente código y subelo. Si no sabes como hacerlo, por favor revisa [How to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 1.** Lanza el IDE de Arduino y da click en **Archivo>Nuevo** para abrir una nueva página. Copia el siguiente código y subelo. Si no sabes como hacerlo, por favor revisa [How to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 ```
 // Demo code for Grove - Temperature Sensor V1.1/1.2
@@ -144,7 +144,7 @@ En el paso 3, puedes concetar el sensor de temperatura a **cualquier puerto Anal
 
 #### Software
 
-- **Paso 1**. Sigue [Setting Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Sigue [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 - **Paso 2**. Descarga el Archivo fuente clonando la librería grove.py.
 
 ```

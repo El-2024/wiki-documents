@@ -242,7 +242,7 @@ void loop() {
 
 ## 资源
 
-- **[PDF]** [微波传感器 - 24GHz 多普勒雷达运动传感器 - MW2401TR11](http://wiki.seeedstudio.com/Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11/MW2401TR11_datasheet.zip)
+- **[PDF]** [微波传感器 - 24GHz 多普勒雷达运动传感器 - MW2401TR11](https://wiki.seeedstudio.com/cn/Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11/MW2401TR11_datasheet.zip)
 
 ## 技术支持与产品讨论
 

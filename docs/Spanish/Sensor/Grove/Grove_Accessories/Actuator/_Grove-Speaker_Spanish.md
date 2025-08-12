@@ -23,7 +23,7 @@ El módulo Grove - Altavoz consiste en amplificación de poder y salidad de voz.
 - Interfaz Grove
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Especificaciones
 
@@ -45,7 +45,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 ## Primeros Pasos
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
 
 ### Jugando con Arduino
 
@@ -111,7 +111,7 @@ Debido a la influencia de la capacitancia, el módulo solo puede dar salidas de 
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega soporte para Arduino, y arrastra <em>main procedure</em> al área de trabajo.
 
 ¡Nota!
-Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra bloques como se muestra en la siguiente imagen, o abre el archivo cdc que puede ser descargado al final de esta página.
 

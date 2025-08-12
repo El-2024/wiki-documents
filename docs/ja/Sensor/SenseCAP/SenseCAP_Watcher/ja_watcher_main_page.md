@@ -40,61 +40,61 @@ Watcher製品カタログの紹介です。このカタログは、Watcherデバ
 
 ### [価格と利点](https://wiki.seeedstudio.com/ja/watcher_price/)
 
-### [製品概要](http://wiki.seeedstudio.com/product_overview_with_watcher/)
+### [製品概要](https://wiki.seeedstudio.com/ja/product_overview_with_watcher/)
 
-- [ハードウェア概要](http://wiki.seeedstudio.com/watcher_hardware_overview/)
+- [ハードウェア概要](https://wiki.seeedstudio.com/ja/watcher_hardware_overview/)
 
-- [操作ガイドライン](http://wiki.seeedstudio.com/watcher_operation_guideline/)
+- [操作ガイドライン](https://wiki.seeedstudio.com/ja/watcher_operation_guideline/)
 
-- [タスク割り当てガイドライン](http://wiki.seeedstudio.com/getting_started_with_watcher_task/)
+- [タスク割り当てガイドライン](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_task/)
 
-### [ソフトウェアフレームワーク概要](http://wiki.seeedstudio.com/watcher_software_framework_overview/)
+### [ソフトウェアフレームワーク概要](https://wiki.seeedstudio.com/ja/watcher_software_framework_overview/)
 
-- [SenseCraft APPの紹介](http://wiki.seeedstudio.com/sensecap_app_introduction/)
+- [SenseCraft APPの紹介](https://wiki.seeedstudio.com/ja/sensecap_app_introduction/)
 
-- [Watcherソフトウェアサービスの紹介](http://wiki.seeedstudio.com/watcher_software_service_framework/)
+- [Watcherソフトウェアサービスの紹介](https://wiki.seeedstudio.com/ja/watcher_software_service_framework/)
 
-- [WatcherのAI機能をローカルで展開](http://wiki.seeedstudio.com/watcher_local_deploy/)
+- [WatcherのAI機能をローカルで展開](https://wiki.seeedstudio.com/ja/watcher_local_deploy/)
 
-### [通知](http://wiki.seeedstudio.com/notifications_with_watcher_main_page/)
+### [通知](https://wiki.seeedstudio.com/ja/notifications_with_watcher_main_page/)
 
-#### [UART出力](http://wiki.seeedstudio.com/uart_output/)
+#### [UART出力](https://wiki.seeedstudio.com/ja/uart_output/)
 
-#### [HTTPプロキシ通知](http://wiki.seeedstudio.com/http_proxy_notification/)
+#### [HTTPプロキシ通知](https://wiki.seeedstudio.com/ja/http_proxy_notification/)
 
-##### [スマートホーム](http://wiki.seeedstudio.com/smart_main_page/)
+##### [スマートホーム](https://wiki.seeedstudio.com/ja/smart_main_page/)
 
-- [WatcherをHome Assistantに統合](http://wiki.seeedstudio.com/integrate_watcher_to_ha/)
+- [WatcherをHome Assistantに統合](https://wiki.seeedstudio.com/ja/integrate_watcher_to_ha/)
 
-##### [Node-RED統合](http://wiki.seeedstudio.com/notification_with_watcher/)
+##### [Node-RED統合](https://wiki.seeedstudio.com/ja/notification_with_watcher/)
 
-- [WatcherからNode-REDへ](http://wiki.seeedstudio.com/watcher_to_node_red/)
+- [WatcherからNode-REDへ](https://wiki.seeedstudio.com/ja/watcher_to_node_red/)
 
-- [Watcher & Node-REDからIFTTTへ](http://wiki.seeedstudio.com/watcher_node_red_to_ifttt/)
+- [Watcher & Node-REDからIFTTTへ](https://wiki.seeedstudio.com/ja/watcher_node_red_to_ifttt/)
 
-- [Watcher & Node-REDからKafkaへ](http://wiki.seeedstudio.com/watcher_node_red_to_kafka/)
+- [Watcher & Node-REDからKafkaへ](https://wiki.seeedstudio.com/ja/watcher_node_red_to_kafka/)
 
-- [Watcher & Node-REDからOpen Interpreterへ](http://wiki.seeedstudio.com/watcher_node_red_to_open_interpreter/)
+- [Watcher & Node-REDからOpen Interpreterへ](https://wiki.seeedstudio.com/ja/watcher_node_red_to_open_interpreter/)
 
-- [Watcher & Node-REDからP5JSへ](http://wiki.seeedstudio.com/watcher_node_red_to_p5js/)
+- [Watcher & Node-REDからP5JSへ](https://wiki.seeedstudio.com/ja/watcher_node_red_to_p5js/)
 
-- [Watcher & Node-REDからTelegramへ](http://wiki.seeedstudio.com/watcher_node_red_to_telegram/)
+- [Watcher & Node-REDからTelegramへ](https://wiki.seeedstudio.com/ja/watcher_node_red_to_telegram/)
 
-- [Watcher & Node-REDからTwilioへ](http://wiki.seeedstudio.com/watcher_node_red_to_twilio/)
+- [Watcher & Node-REDからTwilioへ](https://wiki.seeedstudio.com/ja/watcher_node_red_to_twilio/)
 
-- [Watcher & Node-REDからDiscordへ](http://wiki.seeedstudio.com/watcher_node_red_to_discord/)
+- [Watcher & Node-REDからDiscordへ](https://wiki.seeedstudio.com/ja/watcher_node_red_to_discord/)
 
-- [Watcher & Node-REDからMongoDBへ](http://wiki.seeedstudio.com/watcher_node_red_to_mongodb/)
+- [Watcher & Node-REDからMongoDBへ](https://wiki.seeedstudio.com/ja/watcher_node_red_to_mongodb/)
 
-- [Watcher & Node-REDからWhatsAppへ](http://wiki.seeedstudio.com/watcher_node_red_to_whatsapp/)
+- [Watcher & Node-REDからWhatsAppへ](https://wiki.seeedstudio.com/ja/watcher_node_red_to_whatsapp/)
 
-### [アプリケーション](http://wiki.seeedstudio.com/applications_with_watcher_main_page/)
+### [アプリケーション](https://wiki.seeedstudio.com/ja/applications_with_watcher_main_page/)
 
-#### [ユースケース](http://wiki.seeedstudio.com/use_case/)
+#### [ユースケース](https://wiki.seeedstudio.com/ja/use_case/)
 
-#### [開発](http://wiki.seeedstudio.com/development/)
+#### [開発](https://wiki.seeedstudio.com/ja/development/)
 
-- [Watcher用モデルのトレーニング](http://wiki.seeedstudio.com/training_model_for_watcher/)
+- [Watcher用モデルのトレーニング](https://wiki.seeedstudio.com/ja/training_model_for_watcher/)
 
 
 

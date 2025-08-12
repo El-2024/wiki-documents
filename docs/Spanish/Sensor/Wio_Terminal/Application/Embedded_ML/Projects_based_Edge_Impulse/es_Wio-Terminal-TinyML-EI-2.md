@@ -29,7 +29,7 @@ Al final tendrás una sólida comprensión para aplicar ML en dispositivos embeb
 
 ## 1. Prerrequisitos
 
-* Sigue el tutorial [Wio Terminal Edge Impulse Getting Started](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse).
+* Sigue el tutorial [Wio Terminal Edge Impulse Getting Started](https://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse).
 
 * Necesitas un dispositivo soportado (además de Wio Terminal):
 
@@ -224,4 +224,4 @@ Edge Impulse facilita esta transformación, permitiendo procesar datos directame
 ## Referencias
 
 * [Edge Impulse Continuous Motion Recognition](https://docs.edgeimpulse.com/docs/continuous-motion-recognition)
-* [Wio Terminal Edge Impulse Getting Started](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse)
+* [Wio Terminal Edge Impulse Getting Started](https://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse)

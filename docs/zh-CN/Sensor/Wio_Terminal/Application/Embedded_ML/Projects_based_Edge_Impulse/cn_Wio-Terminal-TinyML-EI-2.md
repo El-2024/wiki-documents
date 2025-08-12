@@ -23,7 +23,7 @@ last_update:
 
 ## 1. 先决条件
 
-对于本教程，您需要一个受支持的设备。请先按照 [**Wio Terminal Edge Impulse**](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse) 教程进行操作，然后再进行以下步骤。
+对于本教程，您需要一个受支持的设备。请先按照 [**Wio Terminal Edge Impulse**](https://wiki.seeedstudio.com/cn/Wio-Terminal-Edge-Impulse) 教程进行操作，然后再进行以下步骤。
 
 除了 **Wio Terminal**，以下是其他受支持的设备。
 
@@ -265,4 +265,4 @@ Edge Impulse 帮助您解锁这些数据。通过直接在设备上处理数据�
 
 - [Edge Impulse Continuous motion recognition](https://docs.edgeimpulse.com/docs/continuous-motion-recognition)
 
-- [Wio Terminal Edge Impulse Getting Started](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse)
+- [Wio Terminal Edge Impulse Getting Started](https://wiki.seeedstudio.com/cn/Wio-Terminal-Edge-Impulse)

@@ -203,7 +203,7 @@ Grove 超声波传感器 (SMS812) 是一款小型化、超低功耗的测距传�
 
 - 如果您想在后续例程中使用 **XIAO ESP32C3**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/XIAO_ESP32C3_Getting_Started/#software-setup)** 完成添加。
 
-- 如果您想在后续例程中使用 **XIAO ESP32S3**，请参考 **[此教程](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
+- 如果您想在后续例程中使用 **XIAO ESP32S3**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
 
 :::caution
 对于 **XIAO nRF52840**，请选择 **Seeed nRF52 mbed-enabled Boards**，否则运行程序时可能会报错。

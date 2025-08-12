@@ -207,7 +207,7 @@ ZIP形式のライブラリをダウンロードしたら、Arduino IDEを開き
 
 - **XIAO ESP32C3** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/#software-setup)** を参照して追加を完了してください。
 
-- **XIAO ESP32S3** を使用する場合は、**[このチュートリアル](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
+- **XIAO ESP32S3** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
 
 :::caution
 **XIAO nRF52840** を使用する場合は、**Seeed nRF52 mbed-enabled Boards** を選択してください。そうしないと、プログラム実行時にエラーが報告される可能性があります。

@@ -197,7 +197,7 @@ Arduino を初めて使用する場合は、[Arduino の始め方](https://wiki.
 
 - 後の手順で **Seeed Studio XIAO ESP32C3** を使用したい場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started#software-setup)** を参照して追加を完了してください。
 
-- 後の手順で **Seeed Studio XIAO ESP32S3** を使用したい場合は、**[このチュートリアル](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
+- 後の手順で **Seeed Studio XIAO ESP32S3** を使用したい場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
 
 
 ## Seeed_Arduino_LCD ライブラリの使用

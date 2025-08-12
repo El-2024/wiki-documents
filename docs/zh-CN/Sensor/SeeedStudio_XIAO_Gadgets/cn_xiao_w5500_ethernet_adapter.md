@@ -175,7 +175,7 @@ XIAO W5500 以太网适配器使用 ESP32 Arduino 以太网库进行网络连接
 
 **步骤 2.** 选择您的开发板型号并将其添加到 Arduino IDE 中。
 
-- 要在后续例程中使用 **Seeed Studio XIAO ESP32-S3 Plus**，请参考 **[此教程](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
+- 要在后续例程中使用 **Seeed Studio XIAO ESP32-S3 Plus**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
 
 **步骤 3.** 所需材料
 

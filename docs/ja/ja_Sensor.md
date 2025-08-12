@@ -59,24 +59,24 @@ https://github.com/Seeed-Studio/wiki-documents/issues
     </div>
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP プローブ</font></div>
-            <a href="/Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 液体レベル検出</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 液体レベル検出</font></span></a>
             <br/>
-            <a href="/Sensor/SenseCAP/SenseCAP_Probe/Water-Leak-Detector" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 水漏れ警告</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Probe/Water-Leak-Detector" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 水漏れ警告</font></span></a>
             <br/>
-            <a href="/Sensor/SenseCAP/SenseCAP_Probe/Industrial-ph-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 土壌条件および水質用pHメーター</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Probe/Industrial-ph-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 土壌条件および水質用pHメーター</font></span></a>
             <br/>
-            <a href="/Sensor/SenseCAP/SenseCAP_Probe/Soil-Moisture-Temperature-EC-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 土壌水分＆温度プローブ</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Probe/Soil-Moisture-Temperature-EC-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 土壌水分＆温度プローブ</font></span></a>
             <br/>
-            <a href="/Sensor/SenseCAP/SenseCAP_Probe/Soil-Moisture-Temperature-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 土壌水分＆温度＆ECプローブ</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Probe/Soil-Moisture-Temperature-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 土壌水分＆温度＆ECプローブ</font></span></a>
             <br/>
-            <a href="/Sensor/SenseCAP/SenseCAP_Probe/RS485_500cm_Ultrasonic_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> RS485 500cm超音波レベルセンサー</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Probe/RS485_500cm_Ultrasonic_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> RS485 500cm超音波レベルセンサー</font></span></a>
     </div>
 </div>
 
 <div class="intro_container">
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP マルチインワンセンサー</font></div>
-            <a href="/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/ORCH-S4-Weather-Station" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SenseCAP ORCH S4 - 温度、湿度、大気圧、光</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/ORCH-S4-Weather-Station" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SenseCAP ORCH S4 - 温度、湿度、大気圧、光</font></span></a>
             <br/>
             <a href="https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SenseCAP ONE気象センサーシリーズユーザーガイドのPDFダウンロード</font></span></a>
             <br/>
@@ -102,11 +102,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'left'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP A1101 Vision AI</font></div>
-            <a href="/SenseCAP-Vision-AI-Get-Started" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP A1101 Vision AI の使い方</font></span></a>
+            <a href="/ja/SenseCAP-Vision-AI-Get-Started" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP A1101 Vision AI の使い方</font></span></a>
             <br/>
-            <a href="/Train-Deploy-AI-Model-A1101" target="_blank"><span><font color={'FFFFFF'} size={"2"}>独自の AI モデルを SenseCAP A1101 にトレーニングおよびデプロイする</font></span></a>
+            <a href="/ja/Train-Deploy-AI-Model-A1101" target="_blank"><span><font color={'FFFFFF'} size={"2"}>独自の AI モデルを SenseCAP A1101 にトレーニングおよびデプロイする</font></span></a>
             <br/>
-            <a href="/One-Stop-Model-Training-with-Edge-Impulse" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Edge Impulse を使用したワンストップモデルトレーニング</font></span></a>
+            <a href="/ja/One-Stop-Model-Training-with-Edge-Impulse" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Edge Impulse を使用したワンストップモデルトレーニング</font></span></a>
     </div>
     <div class="intro_item" style={{textAlign: 'left'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>近日公開</font></div>
@@ -126,20 +126,20 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="independent_container">
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP S2100 データロガー</font></div>
-            <a href="/Sensor/SenseCAP/SenseCAP_Data_Logger/Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP S2100 LoRaWAN® データロガーの紹介</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Data_Logger/Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP S2100 LoRaWAN® データロガーの紹介</font></span></a>
             <br/>
-            <a href="/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_12V_RS485_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>S2100 データロガー用 12V RS485 センサーの設定方法</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_12V_RS485_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>S2100 データロガー用 12V RS485 センサーの設定方法</font></span></a>
             <br/>
-            <a href="/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_Analog_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>S2100 データロガー用アナログセンサーの設定方法</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_Analog_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>S2100 データロガー用アナログセンサーの設定方法</font></span></a>
             <br/>
-            <a href="/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_Counter&GPIO_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>S2100 データロガー用カウンター & GPIO センサーの設定方法</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_Counter&GPIO_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>S2100 データロガー用カウンター & GPIO センサーの設定方法</font></span></a>
             <br/>
-            <a href="/Build-LoRaWAN-Sensors-SenseCAP-XIAO-Controller-Data-Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP S2110 センサービルダーと SenseCAP データロガーを使用した LoRaWAN® センサーの構築</font></span></a>
+            <a href="/ja/Build-LoRaWAN-Sensors-SenseCAP-XIAO-Controller-Data-Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP S2110 センサービルダーと SenseCAP データロガーを使用した LoRaWAN® センサーの構築</font></span></a>
             <br/>
     </div>
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP センサーハブ 4G</font></div>
-            <a href="/Sensor/SenseCAP/SenseCAP_Data_Logger/SenseCAP-Sensor-Hub-Data-Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP センサーハブ 4G データロガーの紹介</font></span></a>
+            <a href="/ja/Sensor/SenseCAP/SenseCAP_Data_Logger/SenseCAP-Sensor-Hub-Data-Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP センサーハブ 4G データロガーの紹介</font></span></a>
             <br/>
             <a href="https://files.seeedstudio.com/products/114992170/Sensor%20Hub%204G%20Data%20Logger%20User%20Guide.pdf" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP センサーハブ 4G ユーザーガイドの PDF ダウンロード</font></span></a>
             <br/>
@@ -162,28 +162,28 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="independent_container">
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>Helium プラットフォームゲートウェイ</font></div>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M1 クイックスタート</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M1 クイックスタート</font></span></a>
             <br/>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Local_Console" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M1 ローカルコンソール</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Local_Console" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M1 ローカルコンソール</font></span></a>
             <br/>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 データ専用クイックスタート</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 データ専用クイックスタート</font></span></a>
             <br/>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/M2_Local_Console" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 データ専用ローカルコンソール</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/M2_Local_Console" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 データ専用ローカルコンソール</font></span></a>
             <br/>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 ライトゲートウェイクイックスタート</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 ライトゲートウェイクイックスタート</font></span></a>
             <br/>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_FAQ" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 ライトゲートウェイ FAQ</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_FAQ" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 ライトゲートウェイ FAQ</font></span></a>
             <br/>
     </div>
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>マルチプラットフォームゲートウェイ</font></div>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 マルチプラットフォームゲートウェイの概要</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 マルチプラットフォームゲートウェイの概要</font></span></a>
             <br/>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-AWS-IoT" target="_blank"><span><font color={'FFFFFF'} size={"2"}> AWS プラットフォームへの接続</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-AWS-IoT" target="_blank"><span><font color={'FFFFFF'} size={"2"}> AWS プラットフォームへの接続</font></span></a>
             <br/>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-The-Things-Network" target="_blank"><span><font color={'FFFFFF'} size={"2"}> TTN プラットフォームへの接続</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-The-Things-Network" target="_blank"><span><font color={'FFFFFF'} size={"2"}> TTN プラットフォームへの接続</font></span></a>
             <br/>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ChirpStack プラットフォームへの接続</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ChirpStack プラットフォームへの接続</font></span></a>
             <br/>
     </div>
 </div>
@@ -191,18 +191,18 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'left'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>Flux プラットフォームゲートウェイ</font></div>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 スクエア概要</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 スクエア概要</font></span></a>
             <br/>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 スクエアクイックスタート</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 スクエアクイックスタート</font></span></a>
             <br/>
-            <a href="/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_FAQ" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 スクエア FAQ</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_FAQ" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 スクエア FAQ</font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'left'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>屋外 / 屋内ゲートウェイ</font></div>
-            <a href="/Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/SenseCAP_LoRaWAN_Outdoor_Gateway_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP LoRaWAN® 屋外ゲートウェイ</font></span></a>
+            <a href="/ja/Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/SenseCAP_LoRaWAN_Outdoor_Gateway_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP LoRaWAN® 屋外ゲートウェイ</font></span></a>
             <br/>
-            <a href="/The-Things-Indoor-Gateway" target="_blank"><span><font color={'FFFFFF'} size={"2"}>The Things 屋内ゲートウェイ</font></span></a>
+            <a href="/ja/The-Things-Indoor-Gateway" target="_blank"><span><font color={'FFFFFF'} size={"2"}>The Things 屋内ゲートウェイ</font></span></a>
             <br/>
     </div>
 </div>
@@ -219,23 +219,23 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="independent_container">
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>reRouter</font></div>
-            <a href="/Raspberry-OpenWrt-Getting-Started" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ハードウェア概要の紹介</font></span></a>
+            <a href="/ja/Raspberry-OpenWrt-Getting-Started" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ハードウェア概要の紹介</font></span></a>
             <br/>
-            <a href="/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4" target="_blank"><span><font color={'FFFFFF'} size={"2"}> オリジナルOSのインストール</font></span></a>
+            <a href="/ja/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4" target="_blank"><span><font color={'FFFFFF'} size={"2"}> オリジナルOSのインストール</font></span></a>
             <br/>
-            <a href="/OpenWrt-Getting-Started" target="_blank"><span><font color={'FFFFFF'} size={"2"}> アプリケーション: OpenWRT のインストール</font></span></a>
+            <a href="/ja/OpenWrt-Getting-Started" target="_blank"><span><font color={'FFFFFF'} size={"2"}> アプリケーション: OpenWRT のインストール</font></span></a>
             <br/>
-            <a href="/OpenWrt-Plex-Media-Server-on-Docker" target="_blank"><span><font color={'FFFFFF'} size={"2"}> アプリケーション: Plex メディアサーバーのインストール</font></span></a>
+            <a href="/ja/OpenWrt-Plex-Media-Server-on-Docker" target="_blank"><span><font color={'FFFFFF'} size={"2"}> アプリケーション: Plex メディアサーバーのインストール</font></span></a>
             <br/>
-            <a href="/Mender-Client-dual-GbE-CM4" target="_blank"><span><font color={'FFFFFF'} size={"2"}> アプリケーション: reRouter 用 Mender の使用</font></span></a>
+            <a href="/ja/Mender-Client-dual-GbE-CM4" target="_blank"><span><font color={'FFFFFF'} size={"2"}> アプリケーション: reRouter 用 Mender の使用</font></span></a>
     </div>
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>LinkStar</font></div>
-            <a href="/Linkstar_Datasheet" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ハードウェア概要の紹介</font></span></a>
+            <a href="/ja/Linkstar_Datasheet" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ハードウェア概要の紹介</font></span></a>
             <br/>
-            <a href="/linkstar-install-system" target="_blank"><span><font color={'FFFFFF'} size={"2"}> オリジナルOSのインストール</font></span></a>
+            <a href="/ja/linkstar-install-system" target="_blank"><span><font color={'FFFFFF'} size={"2"}> オリジナルOSのインストール</font></span></a>
             <br/>
-            <a href="/h68k-ha-esphome" target="_blank"><span><font color={'FFFFFF'} size={"2"}> アプリケーション: Home Assistant を中心としたスマートホーム制御センターの構築</font></span></a>
+            <a href="/ja/h68k-ha-esphome" target="_blank"><span><font color={'FFFFFF'} size={"2"}> アプリケーション: Home Assistant を中心としたスマートホーム制御センターの構築</font></span></a>
     </div>
 </div>
 
@@ -261,40 +261,40 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>温度 & 湿度</font></div>
-            <a href="/Grove-Temperature-Humidity-Sensor-DH20" target="_blank"><span><font color={'FFFFFF'} size={"2"}> DHT20 </font></span></a>,
-            <a href="/Grove-Temperature_and_Humidity_Sensor_Pro" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  DHT22</font></span></a>
+            <a href="/ja/Grove-Temperature-Humidity-Sensor-DH20" target="_blank"><span><font color={'FFFFFF'} size={"2"}> DHT20 </font></span></a>,
+            <a href="/ja/Grove-Temperature_and_Humidity_Sensor_Pro" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  DHT22</font></span></a>
             <br/>
-            <a href="/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> AHT20</font></span></a>,
-            <a href="/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> HDC1000</font></span></a>
+            <a href="/ja/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> AHT20</font></span></a>,
+            <a href="/ja/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> HDC1000</font></span></a>
             <br/>
-            <a href="/Grove-TempAndHumi_Sensor-SHT31" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SHT31 </font></span></a>,
-            <a href="/Grove-I2C_High_Accuracy_Temp%26Humi_Sensor-SHT35" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SHT35 </font></span></a>,
-            <a href="/Grove-SHT4x" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SHT4x </font></span></a>
+            <a href="/ja/Grove-TempAndHumi_Sensor-SHT31" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SHT31 </font></span></a>,
+            <a href="/ja/Grove-I2C_High_Accuracy_Temp%26Humi_Sensor-SHT35" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SHT35 </font></span></a>,
+            <a href="/ja/Grove-SHT4x" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SHT4x </font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>温度</font></div>
-            <a href="/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808" target="_blank"><span><font color={'FFFFFF'} size={"2"}>I2C - MCP9808</font></span></a>
+            <a href="/ja/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808" target="_blank"><span><font color={'FFFFFF'} size={"2"}>I2C - MCP9808</font></span></a>
             <br/>
-            <a href="/Grove-Thermal-Imaging-Camera-IR-Array" target="_blank"><span><font color={'FFFFFF'} size={"2"}>サーマルイメージング</font></span></a>
+            <a href="/ja/Grove-Thermal-Imaging-Camera-IR-Array" target="_blank"><span><font color={'FFFFFF'} size={"2"}>サーマルイメージング</font></span></a>
             <br/>
-            <a href="/Grove-1-Wire_Thermocouple_Amplifier-MAX31850K" target="_blank"><span><font color={'FFFFFF'} size={"2"}>ワンワイヤー - MAX31850K</font></span></a>
+            <a href="/ja/Grove-1-Wire_Thermocouple_Amplifier-MAX31850K" target="_blank"><span><font color={'FFFFFF'} size={"2"}>ワンワイヤー - MAX31850K</font></span></a>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"} >複数機能一体型</font></div>
-            <a href="/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680" target="_blank"><span><font color={'FFFFFF'} size={"2"}>温度/湿度/気圧/ガス</font></span></a>
+            <a href="/ja/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680" target="_blank"><span><font color={'FFFFFF'} size={"2"}>温度/湿度/気圧/ガス</font></span></a>
             <br/>
-            <a href="/Grove_SEN5X_All_in_One" target="_blank"><span><font color={'FFFFFF'} size={"2"}>NOx/PM/VOC/RH/温度</font></span></a>
+            <a href="/ja/Grove_SEN5X_All_in_One" target="_blank"><span><font color={'FFFFFF'} size={"2"}>NOx/PM/VOC/RH/温度</font></span></a>
             <br/>
-            <a href="/Grove-CO2_&_Temperature_&_Humidity_Sensor-SCD41" target="_blank"><span><font color={'FFFFFF'} size={"2"}>CO2/温度/湿度</font></span></a>,
-            <a href="/Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931" target="_blank"><span><font color={'FFFFFF'} size={"2"}> その他... </font></span></a>
+            <a href="/ja/Grove-CO2_&_Temperature_&_Humidity_Sensor-SCD41" target="_blank"><span><font color={'FFFFFF'} size={"2"}>CO2/温度/湿度</font></span></a>,
+            <a href="/ja/Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931" target="_blank"><span><font color={'FFFFFF'} size={"2"}> その他... </font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>ビジョンAI</font></div>
-            <a href="/Train-Deploy-AI-Model-Grove-Vision-AI" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Grove - Vision AI </font></span></a>
+            <a href="/ja/Train-Deploy-AI-Model-Grove-Vision-AI" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Grove - Vision AI </font></span></a>
             <br/>
-            <a href="/edge-impulse-vision-ai" target="_blank"><span><font color={'FFFFFF'} size={"2"}>高速モデルトレーニング </font></span></a>
+            <a href="/ja/edge-impulse-vision-ai" target="_blank"><span><font color={'FFFFFF'} size={"2"}>高速モデルトレーニング </font></span></a>
             <br/>
     </div>
 </div>
@@ -302,40 +302,40 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>土壌湿度</font></div>
-            <a href="/Grove-Capacitive_Moisture_Sensor-Corrosion-Resistant" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 単一プローブタイプ</font></span></a>
+            <a href="/ja/Grove-Capacitive_Moisture_Sensor-Corrosion-Resistant" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 単一プローブタイプ</font></span></a>
             <br/>
-            <a href="/Grove-Moisture_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 二重プローブタイプ</font></span></a>
+            <a href="/ja/Grove-Moisture_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 二重プローブタイプ</font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>近接センサー</font></div>
-            <a href="/Grove-Time_of_Flight_Distance_Sensor-VL53L0X" target="_blank"><span><font color={'FFFFFF'} size={"2"}> TOF</font></span></a>,
-            <a href="/Grove-80cm_Infrared_Proximity_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 赤外線</font></span></a>
+            <a href="/ja/Grove-Time_of_Flight_Distance_Sensor-VL53L0X" target="_blank"><span><font color={'FFFFFF'} size={"2"}> TOF</font></span></a>,
+            <a href="/ja/Grove-80cm_Infrared_Proximity_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 赤外線</font></span></a>
             <br/>
-            <a href="/Grove-Gesture_v1.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ジェスチャー</font></span></a>
+            <a href="/ja/Grove-Gesture_v1.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ジェスチャー</font></span></a>
             <br/>
-            <a href="/Grove-Doppler-Radar" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ドップラー</font></span></a>,
-            <a href="/Grove-Ultrasonic_Ranger" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 超音波</font></span></a>
+            <a href="/ja/Grove-Doppler-Radar" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ドップラー</font></span></a>,
+            <a href="/ja/Grove-Ultrasonic_Ranger" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 超音波</font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>空気質</font></div>
-            <a href="/Grove-Air_Quality_Sensor_v1.3" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 空気質センサー</font></span></a>
+            <a href="/ja/Grove-Air_Quality_Sensor_v1.3" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 空気質センサー</font></span></a>
             <br/>
-            <a href="/Grove-Laser_PM2.5_Sensor-HM3301" target="_blank"><span><font color={'FFFFFF'} size={"2"}> レーザーPM2.5センサー</font></span></a>
+            <a href="/ja/Grove-Laser_PM2.5_Sensor-HM3301" target="_blank"><span><font color={'FFFFFF'} size={"2"}> レーザーPM2.5センサー</font></span></a>
             <br/>
-            <a href="/Grove-Dust_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ダストセンサー</font></span></a>
+            <a href="/ja/Grove-Dust_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ダストセンサー</font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>ガス</font></div>
-            <a href="/Grove-Gas_Sensor-O2-MIX8410" target="_blank"><span><font color={'FFFFFF'} size={"2"}> O₂ </font></span></a>
-            <a href="/Grove-CO2_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> CO₂ </font></span></a>
+            <a href="/ja/Grove-Gas_Sensor-O2-MIX8410" target="_blank"><span><font color={'FFFFFF'} size={"2"}> O₂ </font></span></a>
+            <a href="/ja/Grove-CO2_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> CO₂ </font></span></a>
             <br/>
-            <a href="/Grove-HCHO_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> HCHO </font></span></a>,
-            <a href="/Grove-VOC_and_eCO2_Gas_Sensor-SGP30" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SGP30 </font></span></a>
+            <a href="/ja/Grove-HCHO_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> HCHO </font></span></a>,
+            <a href="/ja/Grove-VOC_and_eCO2_Gas_Sensor-SGP30" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SGP30 </font></span></a>
             <br/>
-            <a href="/Grove-Multichannel-Gas-Sensor-V2" target="_blank"><span><font color={'FFFFFF'} size={"2"}> マルチチャンネルガス </font></span></a>
+            <a href="/ja/Grove-Multichannel-Gas-Sensor-V2" target="_blank"><span><font color={'FFFFFF'} size={"2"}> マルチチャンネルガス </font></span></a>
             <br/>
     </div>
 </div>
@@ -343,42 +343,42 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>気圧計</font></div>
-            <a href="/Grove-Barometer-High-Accuracy" target="_blank"><span><font color={'FFFFFF'} size={"2"}> HP206F  </font></span></a>
+            <a href="/ja/Grove-Barometer-High-Accuracy" target="_blank"><span><font color={'FFFFFF'} size={"2"}> HP206F  </font></span></a>
             <br/>
-            <a href="/Grove-Barometer_Sensor-BME280" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  BME280  </font></span></a>,
-            <a href="/Grove-Barometer_Sensor-BMP280" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  BMP280  </font></span></a>
+            <a href="/ja/Grove-Barometer_Sensor-BME280" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  BME280  </font></span></a>,
+            <a href="/ja/Grove-Barometer_Sensor-BMP280" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  BMP280  </font></span></a>
             <br/>
-            <a href="/Grove-High-Precision-Barometric-Pressure-Sensor-DPS310" target="_blank"><span><font color={'FFFFFF'} size={"2"}> DPS310 </font></span></a>,
-            <a href="/Grove-Integrated-Pressure-Sensor-Kit" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  MPX5700AP  </font></span></a>
+            <a href="/ja/Grove-High-Precision-Barometric-Pressure-Sensor-DPS310" target="_blank"><span><font color={'FFFFFF'} size={"2"}> DPS310 </font></span></a>,
+            <a href="/ja/Grove-Integrated-Pressure-Sensor-Kit" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  MPX5700AP  </font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>加速度計</font></div>
-            <a href="/Grove-3-Axis_Digital_Accelerometer±16g_Ultra-low_Power-BMA400" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 3軸 </font></span></a>,
-            <a href="/Grove-6-Axis_Accelerometer&Gyroscope_BMI088" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 6軸 </font></span></a>
+            <a href="/ja/Grove-3-Axis_Digital_Accelerometer±16g_Ultra-low_Power-BMA400" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 3軸 </font></span></a>,
+            <a href="/ja/Grove-6-Axis_Accelerometer&Gyroscope_BMI088" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 6軸 </font></span></a>
             <br/>
-            <a href="/Grove-IMU_9DOF_v2.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 9軸 </font></span></a>,
-            <a href="/Grove-IMU_10DOF_v2.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 10軸 </font></span></a>
+            <a href="/ja/Grove-IMU_9DOF_v2.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 9軸 </font></span></a>,
+            <a href="/ja/Grove-IMU_10DOF_v2.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 10軸 </font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>光</font></div>
-            <a href="/Grove-Digital_Light_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 光 </font></span></a>,
-            <a href="/Grove-UV_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> UV </font></span></a>,
-            <a href="/Grove-Infrared_Receiver" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 赤外線 </font></span></a>
+            <a href="/ja/Grove-Digital_Light_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 光 </font></span></a>,
+            <a href="/ja/Grove-UV_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> UV </font></span></a>,
+            <a href="/ja/Grove-Infrared_Receiver" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 赤外線 </font></span></a>
             <br/>
-            <a href="/Grove-Line_Finder" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ラインファインダー </font></span></a>,
-            <a href="/Grove-Luminance_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 輝度 </font></span></a>
+            <a href="/ja/Grove-Line_Finder" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ラインファインダー </font></span></a>,
+            <a href="/ja/Grove-Luminance_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 輝度 </font></span></a>
             <br/>
-            <a href="/Grove-Sunlight_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 太陽光（複数の光） </font></span></a>
+            <a href="/ja/Grove-Sunlight_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 太陽光（複数の光） </font></span></a>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>バイオメトリクス</font></div>
-            <a href="/Grove-Finger-clip_Heart_Rate_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 心拍数 </font></span></a>
+            <a href="/ja/Grove-Finger-clip_Heart_Rate_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 心拍数 </font></span></a>
             <br/>
-            <a href="/Grove-Fingerprint_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 指紋 </font></span></a>
+            <a href="/ja/Grove-Fingerprint_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 指紋 </font></span></a>
             <br/>
-            <a href="/Grove-GSR_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> GSR（皮膚電気反応） </font></span></a>
+            <a href="/ja/Grove-GSR_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> GSR（皮膚電気反応） </font></span></a>
             <br/>
     </div>
 </div>
@@ -386,43 +386,43 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>音</font></div>
-            <a href="/Grove-Sound_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 音 </font></span></a>,
-            <a href="/Grove-Loudness_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 音量 </font></span></a>
+            <a href="/ja/Grove-Sound_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 音 </font></span></a>,
+            <a href="/ja/Grove-Loudness_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 音量 </font></span></a>
             <br/>
-            <a href="/Grove-Recorder_v3.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> レコーダー </font></span></a>
+            <a href="/ja/Grove-Recorder_v3.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> レコーダー </font></span></a>
             <br/>
-            <a href="/Grove-Speech_Recognizer" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 音声認識 </font></span></a>
+            <a href="/ja/Grove-Speech_Recognizer" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 音声認識 </font></span></a>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>タッチ</font></div>
-            <a href="/Grove-Touch_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> タッチ </font></span></a>
+            <a href="/ja/Grove-Touch_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> タッチ </font></span></a>
             <br/>
-            <a href="/Grove-2_Channel_Inductive_Sensor-LDC1612" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 誘導型 </font></span></a>,
-            <a href="/Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 静電容量型 </font></span></a>
+            <a href="/ja/Grove-2_Channel_Inductive_Sensor-LDC1612" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 誘導型 </font></span></a>,
+            <a href="/ja/Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 静電容量型 </font></span></a>
             <br/>
-            <a href="/Grove-Round_Force_Sensor_FSR402" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 円形力感知型 </font></span></a>
+            <a href="/ja/Grove-Round_Force_Sensor_FSR402" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 円形力感知型 </font></span></a>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>液体</font></div>
-            <a href="/Grove-Water_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 水 </font></span></a>,
-            <a href="/Grove-Water-Level-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 水位 </font></span></a>
+            <a href="/ja/Grove-Water_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 水 </font></span></a>,
+            <a href="/ja/Grove-Water-Level-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 水位 </font></span></a>
             <br/>
-            <a href="/Grove-EC-Sensor-kit" target="_blank"><span><font color={'FFFFFF'} size={"2"}> EC </font></span></a>,
-            <a href="/Grove-TDS-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> TDS </font></span></a>
+            <a href="/ja/Grove-EC-Sensor-kit" target="_blank"><span><font color={'FFFFFF'} size={"2"}> EC </font></span></a>,
+            <a href="/ja/Grove-TDS-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> TDS </font></span></a>
             <br/>
-            <a href="/Grove-PH-Sensor-kit" target="_blank"><span><font color={'FFFFFF'} size={"2"}> PH </font></span></a>,
-            <a href="/Grove-ORP-Sensor-Pro" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ORP </font></span></a>
+            <a href="/ja/Grove-PH-Sensor-kit" target="_blank"><span><font color={'FFFFFF'} size={"2"}> PH </font></span></a>,
+            <a href="/ja/Grove-ORP-Sensor-Pro" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ORP </font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>モーション</font></div>
-            <a href="/Grove-PIR_Motion_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> PIRモーション </font></span></a>,
-            <a href="/Grove-Mouse_Encoder" target="_blank"><span><font color={'FFFFFF'} size={"2"}> マウス </font></span></a>
+            <a href="/ja/Grove-PIR_Motion_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> PIRモーション </font></span></a>,
+            <a href="/ja/Grove-Mouse_Encoder" target="_blank"><span><font color={'FFFFFF'} size={"2"}> マウス </font></span></a>
             <br/>
-            <a href="/Grove-Piezo_Vibration_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 振動 </font></span></a>,
-            <a href="/Grove-Collision_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 衝突 </font></span></a>
+            <a href="/ja/Grove-Piezo_Vibration_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 振動 </font></span></a>,
+            <a href="/ja/Grove-Collision_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 衝突 </font></span></a>
             <br/>
-            <a href="/Grove-Slide_Potentiometer" target="_blank"><span><font color={'FFFFFF'} size={"2"}> スライドポテンショメータ </font></span></a>
+            <a href="/ja/Grove-Slide_Potentiometer" target="_blank"><span><font color={'FFFFFF'} size={"2"}> スライドポテンショメータ </font></span></a>
     </div>
 </div>
 
@@ -442,26 +442,26 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>LoRa®</font></div>
-            <a href="/Grove_LoRa_E5_New_Version" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Wio-E5 </font></span></a>
+            <a href="/ja/Grove_LoRa_E5_New_Version" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Wio-E5 </font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>Bluetooth</font></div>
-            <a href="/Grove-BLE-dual_model-v1.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> BLE(デュアルモデル) v1 </font></span></a>
+            <a href="/ja/Grove-BLE-dual_model-v1.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> BLE(デュアルモデル) v1 </font></span></a>
             <br/>
-            <a href="/Grove-Serial_Bluetooth_v3.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> シリアルBluetooth v3.0 </font></span></a>
+            <a href="/ja/Grove-Serial_Bluetooth_v3.0" target="_blank"><span><font color={'FFFFFF'} size={"2"}> シリアルBluetooth v3.0 </font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>Wi-Fi</font></div>
-            <a href="/Grove-UART_Wifi_V2" target="_blank"><span><font color={'FFFFFF'} size={"2"}> UART Wi-Fi V2.0 </font></span></a>
+            <a href="/ja/Grove-UART_Wifi_V2" target="_blank"><span><font color={'FFFFFF'} size={"2"}> UART Wi-Fi V2.0 </font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>NFC</font></div>
-            <a href="/Grove_NFC" target="_blank"><span><font color={'FFFFFF'} size={"2"}> NFCモジュール </font></span></a>
+            <a href="/ja/Grove_NFC" target="_blank"><span><font color={'FFFFFF'} size={"2"}> NFCモジュール </font></span></a>
             <br/>
-            <a href="/Grove_NFC_Tag" target="_blank"><span><font color={'FFFFFF'} size={"2"}> NFCタグ </font></span></a>
+            <a href="/ja/Grove_NFC_Tag" target="_blank"><span><font color={'FFFFFF'} size={"2"}> NFCタグ </font></span></a>
             <br/>
     </div>
 </div>
@@ -469,27 +469,27 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>GPS</font></div>
-            <a href="/Grove-GPS" target="_blank"><span><font color={'FFFFFF'} size={"2"}> GPS - SIM28</font></span></a>
+            <a href="/ja/Grove-GPS" target="_blank"><span><font color={'FFFFFF'} size={"2"}> GPS - SIM28</font></span></a>
             <br/>
-            <a href="/Grove-GPS-Air530" target="_blank"><span><font color={'FFFFFF'} size={"2"}> GPS - Air530</font></span></a>
+            <a href="/ja/Grove-GPS-Air530" target="_blank"><span><font color={'FFFFFF'} size={"2"}> GPS - Air530</font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>RF</font></div>
-            <a href="/Grove-Serial_RF_Pro" target="_blank"><span><font color={'FFFFFF'} size={"2"}> シリアルRF Pro </font></span></a>
+            <a href="/ja/Grove-Serial_RF_Pro" target="_blank"><span><font color={'FFFFFF'} size={"2"}> シリアルRF Pro </font></span></a>
             <br/>
-            <a href="/Grove-125KHz_RFID_Reader" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 125KHz RFIDリーダー </font></span></a>
+            <a href="/ja/Grove-125KHz_RFID_Reader" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 125KHz RFIDリーダー </font></span></a>
             <br/>
-            <a href="/Grove_LoRa_Radio" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 868MHz長距離通信 </font></span></a>
+            <a href="/ja/Grove_LoRa_Radio" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 868MHz長距離通信 </font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>標準プロトコル</font></div>
-            <a href="/Grove-I2C_ADC" target="_blank"><span><font color={'FFFFFF'} size={"2"}> アナログ-デジタルコンバーター </font></span></a>
+            <a href="/ja/Grove-I2C_ADC" target="_blank"><span><font color={'FFFFFF'} size={"2"}> アナログ-デジタルコンバーター </font></span></a>
             <br/>
-            <a href="/Grove-RJ45_Adapter" target="_blank"><span><font color={'FFFFFF'} size={"2"}> RJ45アダプター </font></span></a>
+            <a href="/ja/Grove-RJ45_Adapter" target="_blank"><span><font color={'FFFFFF'} size={"2"}> RJ45アダプター </font></span></a>
             <br/>
-            <a href="/Grove-I2C_FM_Receiver" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 周波数変調受信機 </font></span></a>
+            <a href="/ja/Grove-I2C_FM_Receiver" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 周波数変調受信機 </font></span></a>
             <br/>
     </div>
 </div>
@@ -511,18 +511,18 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="independent_container">
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>mmWaveレーダーセンサー</font></div>
-            <a href="/Radar_MR24HPC1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 24GHz mmWave 人体静止検知モジュール Lite - パラメーター設定可能</font></span></a>
+            <a href="/ja/Radar_MR24HPC1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 24GHz mmWave 人体静止検知モジュール Lite - パラメーター設定可能</font></span></a>
             <br/>
-            <a href="/Radar_MR24FDB1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 24GHz mmWave 転倒検知センサー </font></span></a>,
-            <a href="/Radar_MR24HPB1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 24GHz mmWave 人体静止検知センサー</font></span></a>
+            <a href="/ja/Radar_MR24FDB1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 24GHz mmWave 転倒検知センサー </font></span></a>,
+            <a href="/ja/Radar_MR24HPB1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 24GHz mmWave 人体静止検知センサー</font></span></a>
             <br/>
-            <a href="/Radar_MR24BSD1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 60GHz mmWave 睡眠呼吸モニタリングモジュール</font></span></a>
+            <a href="/ja/Radar_MR24BSD1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 60GHz mmWave 睡眠呼吸モニタリングモジュール</font></span></a>
             <br/>
-            <a href="/Radar_MR60BHA1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 60GHz mmWave 呼吸および心拍モジュール</font></span></a>
+            <a href="/ja/Radar_MR60BHA1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 60GHz mmWave 呼吸および心拍モジュール</font></span></a>
             <br/>
-            <a href="/Radar_MR60FDA1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 60GHz mmWave 転倒検知モジュール Pro</font></span></a>
+            <a href="/ja/Radar_MR60FDA1" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 60GHz mmWave 転倒検知モジュール Pro</font></span></a>
             <br/>
-            <a href="/Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11" target="_blank"><span><font color={'FFFFFF'} size={"2"}> マイクロ波センサー - 24GHz ドップラー レーダー モーションセンサー - MW2401TR11</font></span></a>
+            <a href="/ja/Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11" target="_blank"><span><font color={'FFFFFF'} size={"2"}> マイクロ波センサー - 24GHz ドップラー レーダー モーションセンサー - MW2401TR11</font></span></a>
             <br/>
     </div>
 </div>
@@ -533,28 +533,28 @@ https://github.com/Seeed-Studio/wiki-documents/issues
     <div class="title_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>廃止 / 引退製品</font></div>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'FFFFFF'} size={"3"}>Seeed Studioの旧型センサーおよび通信モジュール。</font></div>
-            <a href="/Ultra_Sonic_range_measurement_module" target="_blank"><span><font color={'FFFFFF'} size={"3"}> こちらをクリック </font></span></a>して全体像をご覧ください。
+            <a href="/ja/Ultra_Sonic_range_measurement_module" target="_blank"><span><font color={'FFFFFF'} size={"3"}> こちらをクリック </font></span></a>して全体像をご覧ください。
     </div>
 </div>
 
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>センサー</font></div>
-            <a href="/Ultra_Sonic_range_measurement_module" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 超音波距離測定モジュール</font></span></a>
+            <a href="/ja/Ultra_Sonic_range_measurement_module" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 超音波距離測定モジュール</font></span></a>
             <br/>
-            <a href="/Water-Flow-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 水流センサー </font></span></a>,
-            <a href="/Gear_Stepper_Motor_Driver_Pack" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ギアステッパーモータードライバーパック</font></span></a>
+            <a href="/ja/Water-Flow-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 水流センサー </font></span></a>,
+            <a href="/ja/Gear_Stepper_Motor_Driver_Pack" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ギアステッパーモータードライバーパック</font></span></a>
             <br/>
-            <a href="/Photo_Reflective_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> フォトリフレクティブセンサー </font></span></a>,
-            <a href="/G3-4_Water_Flow_sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 重量センサー </font></span></a>
+            <a href="/ja/Photo_Reflective_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> フォトリフレクティブセンサー </font></span></a>,
+            <a href="/ja/G3-4_Water_Flow_sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 重量センサー </font></span></a>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>センサーネットワーク</font></div>
-            <a href="/Wireless_Sensor_Node-Solar_Kit" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ワイヤレスセンサーノード - ソーラーキット</font></span></a>
+            <a href="/ja/Wireless_Sensor_Node-Solar_Kit" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ワイヤレスセンサーノード - ソーラーキット</font></span></a>
             <br/>
-            <a href="/WiFi_Serial_Transceiver_Module" target="_blank"><span><font color={'FFFFFF'} size={"2"}> WiFiシリアルトランシーバーモジュール</font></span></a>
+            <a href="/ja/WiFi_Serial_Transceiver_Module" target="_blank"><span><font color={'FFFFFF'} size={"2"}> WiFiシリアルトランシーバーモジュール</font></span></a>
             <br/>
-            <a href="/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 2KM長距離RFリンクキット（エンコーダーおよびデコーダー付き）</font></span></a>
+            <a href="/ja/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 2KM長距離RFリンクキット（エンコーダーおよびデコーダー付き）</font></span></a>
             <br/>
     </div>
 </div>
@@ -585,34 +585,34 @@ https://github.com/Seeed-Studio/wiki-documents/issues
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP K1100</font></div>
             <span><font color={'FFFFFF'} size={"4"}> ☁️ LoRaWAN®-ネットワークアプリケーション </font></span>
             <br/>
-            <a href="/K1100_sensecap_node-red" target="_blank"><span><font color={'FFFFFF'} size={"3"}>  > SenseCAP & Node-Red を使用したクラウドサービス</font></span></a>
+            <a href="/ja/K1100_sensecap_node-red" target="_blank"><span><font color={'FFFFFF'} size={"3"}>  > SenseCAP & Node-Red を使用したクラウドサービス</font></span></a>
             <br/>
-            <span><font color={'FFFFFF'} size={"2"}> 統合済み</font></span><a href="/K1100_SenseCAP_to_Azure_IoT_Central" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Azure IoT</font></span></a>,
-            <a href="/K1100_SenseCAP_to_PowerBI" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Power BI</font></span></a>,
-            <a href="/K1100_SenseCAP_to_influxdb" target="_blank"><span><font color={'FFFFFF'} size={"2"}> InfluxDB</font></span></a>
+            <span><font color={'FFFFFF'} size={"2"}> 統合済み</font></span><a href="/ja/K1100_SenseCAP_to_Azure_IoT_Central" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Azure IoT</font></span></a>,
+            <a href="/ja/K1100_SenseCAP_to_PowerBI" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Power BI</font></span></a>,
+            <a href="/ja/K1100_SenseCAP_to_influxdb" target="_blank"><span><font color={'FFFFFF'} size={"2"}> InfluxDB</font></span></a>
             <br/>
-            <a href="/Helium-Introduction" target="_blank"><span><font color={'FFFFFF'} size={"3"}>  > Helium クラウドサービス</font></span></a>
+            <a href="/ja/Helium-Introduction" target="_blank"><span><font color={'FFFFFF'} size={"3"}>  > Helium クラウドサービス</font></span></a>
             <br/>
-            <span><font color={'FFFFFF'} size={"2"}> 統合済み</font></span><a href="/Integrate-into-Azure-IoT-Hub" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Azure IoT</font></span></a>,
-            <a href="/Integrate_into_Google_Sheets_via_Helium" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Google Sheets</font></span></a>,
-            <a href="/Connect_AWS_via_helium" target="_blank"><span><font color={'FFFFFF'} size={"2"}> AWS IOT</font></span></a>
+            <span><font color={'FFFFFF'} size={"2"}> 統合済み</font></span><a href="/ja/Integrate-into-Azure-IoT-Hub" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Azure IoT</font></span></a>,
+            <a href="/ja/Integrate_into_Google_Sheets_via_Helium" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Google Sheets</font></span></a>,
+            <a href="/ja/Connect_AWS_via_helium" target="_blank"><span><font color={'FFFFFF'} size={"2"}> AWS IOT</font></span></a>
             <br/>
-            <a href="/TTN-Introduction" target="_blank"><span><font color={'FFFFFF'} size={"3"}> > TTN クラウドサービス</font></span></a>
+            <a href="/ja/TTN-Introduction" target="_blank"><span><font color={'FFFFFF'} size={"3"}> > TTN クラウドサービス</font></span></a>
             <br/>
     </div>
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP K1100</font></div>
             <span><font color={'FFFFFF'} size={"4"}> ☁️ WiFi-ネットワークアプリケーション </font></span>
             <br/>
-            <a href="/Quick-Start-to-using-Blynk" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  > Blynk を使ったクイックスタート</font></span></a>
+            <a href="/ja/Quick-Start-to-using-Blynk" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  > Blynk を使ったクイックスタート</font></span></a>
             <br/>
-            <a href="/Connect-Wio-Terminal-to-Google-Cloud" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  > Google Cloud IoT を使ったクイックスタート</font></span></a>
+            <a href="/ja/Connect-Wio-Terminal-to-Google-Cloud" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  > Google Cloud IoT を使ったクイックスタート</font></span></a>
             <br/>
-            <a href="/Develop-in-Microsoft-Azure-IoT-Central" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  > Microsoft Azure IoT Central での開発</font></span></a>
+            <a href="/ja/Develop-in-Microsoft-Azure-IoT-Central" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  > Microsoft Azure IoT Central での開発</font></span></a>
             <br/>
-            <a href="/K1100_Azure_to_PowerBI" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  > Power BI を使ったデータ可視化</font></span></a>
+            <a href="/ja/K1100_Azure_to_PowerBI" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  > Power BI を使ったデータ可視化</font></span></a>
             <br/>
-            <a href="/Wio-Terminal-Advanced-WiFi" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  > 高度な WiFi 使用法</font></span></a>
+            <a href="/ja/Wio-Terminal-Advanced-WiFi" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  > 高度な WiFi 使用法</font></span></a>
             <br/>
     </div>
 </div>

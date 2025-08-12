@@ -56,7 +56,7 @@ Groveエコシステムは、電子プロジェクトに簡単に統合できる
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/GroveSystem/images/grove_cover.png" style={{width:1000, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Sensor_Intro/">
+    <a class="get_one_now_item" href="/ja/Grove_Sensor_Intro/">
         <strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
     </a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html">
@@ -71,7 +71,7 @@ Groveシステムには、プロジェクトで通信や接続を可能にする
 Groveネットワークモジュールを使用すると、プロジェクトにワイヤレス機能を簡単に追加でき、データ送信、リモートコントロール、他のデバイスやインターネットとの相互作用を可能にします。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_network_module_intro">
+    <a class="get_one_now_item" href="/ja/Grove_network_module_intro">
         <strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
     </a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html">
@@ -84,7 +84,7 @@ Groveネットワークモジュールを使用すると、プロジェクトに
 センサーやネットワークモジュールに加えて、Groveエコシステムは、電子プロジェクトを補完し強化するさまざまなアクセサリーを提供しています。これらのアクセサリーには、LCDディスプレイ、LEDマトリックス、モータードライバー、リレーモジュールなどのコンポーネントが含まれます。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Accessories_Intro">
+    <a class="get_one_now_item" href="/ja/Grove_Accessories_Intro">
         <strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
     </a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html">
@@ -198,7 +198,7 @@ Raspberry Pi、Pi Zero、またはその他のボードのような Grove イン
 </div>
 
 <!-- <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki プラットフォーム</font></span></strong>
+    <a class="get_one_now_item" href="/ja/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki プラットフォーム</font></span></strong>
     </a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
     </a>
@@ -221,7 +221,7 @@ Grove Beginner Kit for Arduinoは、初心者に最適なArduino入門キット�
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/Grove-Beginner-Kit-For-Arduino"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/ja/Grove-Beginner-Kit-For-Arduino"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -245,7 +245,7 @@ Seeedでは、基本的なGroveモジュールとRaspberry Pi 4ボードを使�
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/Grove_Base_Kit_for_Raspberry_Pi"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/ja/Grove_Base_Kit_for_Raspberry_Pi"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -269,7 +269,7 @@ Raspberry Piに関する他のキットについては、[こちら](https://www
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/XIAO-Kit-Courses"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/ja/XIAO-Kit-Courses"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -293,7 +293,7 @@ Seeed Studio XIAO シリーズに関する他のキットについては、[こ�
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/Wio-Terminal-TinyML-Kit-Course"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/ja/Wio-Terminal-TinyML-Kit-Course"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -452,7 +452,7 @@ Grove は便利なプラグアンドプレイシステムで専用インター�
 
 以下の情報はSeeed Studioによって提供されており、古くなっている可能性があります。必要に応じて、コミュニティからの更新を歓迎します！
 
-貢献方法の詳細については、<strong><a href="/Contributor"><span><font color={'8DC215'} size={"4"}>こちらをクリック！</font></span></a></strong>
+貢献方法の詳細については、<strong><a href="/ja/Contributor"><span><font color={'8DC215'} size={"4"}>こちらをクリック！</font></span></a></strong>
 
 ### Groveモジュールのインターフェース
 

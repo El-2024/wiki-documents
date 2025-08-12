@@ -14,7 +14,7 @@ last_update:
 ![](https://github.com/SeeedDocument/Grove-Infrared_Emitter/raw/master/img/main.jpg)
 
 El Emisor Infrarrojo es usado para transmitir señales infrarrojas a través de un LED Infrarrojo, mientrás haya un **Receptor Infrarrojo** para recibir las señales del otro lado. Un LED Infrarrojo es igual a cualquier otro LED, con su color centrado alrededor de 940nm. No solo podemos usar el Emisor para transmitir información o comandos, es posible también emular un control remoto para controlar aplicaciones en casa usando un Seeeduino o Arduino. El Emisor Infrarrojo puede transmitir señales a una distancia de hasta 10 metros. Más álla de esto, es posible que el receptor no capte las señales. Ofrecemos los dos módulos Grove para trabajar en conjunto el
-[Receptor Infrarrojo](http://wiki.seeedstudio.com/Grove-Infrared_Receiver) y el Emisor Infrarrojo.
+[Receptor Infrarrojo](https://wiki.seeedstudio.com/Grove-Infrared_Receiver) y el Emisor Infrarrojo.
 
 <p style={{}}><a href="http://www.seeedstudio.com/Grove-Infrared-Emitter-p-993.html" target="_blank"><img src="https://raw.githubusercontent.com/SeeedDocument/Seeed-WiKi/master/docs/images/get_one_now_small.png" width={210} height={41} border="0/" /></a></p>
 
@@ -45,7 +45,7 @@ El Emisor Infrarrojo es usado para transmitir señales infrarrojas a través de 
 | Tamaño                     | 20mmX20mm     |
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Plataformas Compatibles
 
@@ -63,7 +63,7 @@ El Grove - Emisor Infrarrojo puede enviar información a través del Grove - Rec
 ### Jugando con Arduino
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
 
 #### Hardware
 
@@ -102,7 +102,7 @@ Si no tienes la Shield Base - Grove, puedes conectar directamente el módulo Gro
 
 - **Paso 1.** Descarga la Librería [IRSendRev-master](https://github.com/Seeed-Studio/IRSendRev) desde GitHub.
 
-- **Paso 2.** Revisa [How to install library](http://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar la librería de Arduino.
+- **Paso 2.** Revisa [How to install library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar la librería de Arduino.
 
 - **Paso 3.** Reinicia el IDE de Arduino. Abre el ejemplo`recv` usando el path: **File->Examples->Grove - Infrared Receiver And Emitter->recv**.
 
@@ -178,7 +178,7 @@ void loop()
 ```
 
 - **Paso 4.** Sube la demostración `recv` al seeeduino con el Grove - Receptor Infrarrojo. Si no sabes como subir el código, por favor revisa
-  [how to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+  [how to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 - **Paso 5.** Abre el ejemplo `send` usando el path: **File->Examples->Grove - Infrared Receiver and Emitter->send**.
 

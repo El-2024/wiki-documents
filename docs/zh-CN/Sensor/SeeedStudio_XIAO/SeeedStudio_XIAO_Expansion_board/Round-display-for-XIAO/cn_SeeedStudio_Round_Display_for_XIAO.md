@@ -188,7 +188,7 @@ XIAO SAMD21、RP2040 和 RA4M1 由于内存不足，可能**不**兼容圆形屏
 
 - 如果您想在后续例程中使用 **Seeed Studio XIAO ESP32C6**，请参考**[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32c6_getting_started/#software-preparation)**完成添加。
 
-- 如果您想在后续例程中使用 **Seeed Studio XIAO ESP32S3**，请参考**[此教程](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)**完成添加。
+- 如果您想在后续例程中使用 **Seeed Studio XIAO ESP32S3**，请参考**[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started#software-preparation)**完成添加。
 
 #### 步骤 4. 将圆形显示屏的库添加到 Arduino。
 

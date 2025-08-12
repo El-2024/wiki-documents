@@ -372,7 +372,7 @@ SenseCraft AI Model Assistantページの右上隅で、**Grove Vision AI (WE2)*
 
 - **Seeed Studio XIAO ESP32C3** を後のルーチンで使用したい場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started#software-setup)** を参照して追加を完了してください。
 
-- **Seeed Studio XIAO ESP32S3** を後のルーチンで使用したい場合は、**[このチュートリアル](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
+- **Seeed Studio XIAO ESP32S3** を後のルーチンで使用したい場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
 
 - **Seeeduino V4.3** を後のルーチンで使用したい場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/Seeeduino_v4.2/)** を参照して追加を完了してください。
 
