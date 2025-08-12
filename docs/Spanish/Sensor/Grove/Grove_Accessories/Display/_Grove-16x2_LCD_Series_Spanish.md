@@ -13,7 +13,7 @@ last_update:
 
 ![](https://github.com/SeeedDocument/Grove-16x2_LCD_Series/raw/master/img/main.jpg)
 
-El [Grove - LCD RGB Backlight](http://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/) ha sido bien recibido desde su comienzo. Basado en las retroalimentaciones de los clientes, ahora brindamos una mayor relación costo-beneficio con una luz de fondo monocromática para ti.
+El [Grove - LCD RGB Backlight](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/) ha sido bien recibido desde su comienzo. Basado en las retroalimentaciones de los clientes, ahora brindamos una mayor relación costo-beneficio con una luz de fondo monocromática para ti.
 
 El Grove - 16 x 2 LCD (Fondo Amarrillo)  
 El Grove - 16 x 2 LCD (Fondo Rojo)  
@@ -104,14 +104,14 @@ Si no cuentas con el Grove Shield Base, es posible conectar de igual manera el m
 #### Software
 
 ¡Atención!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
 
 - **Paso 1.** Descarga la librería [Grove-LCD RGB Backlight](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/archive/master.zip) de GitHub.
 
 ¡Consejos!
-El Grove - 16 x 2 LCD comparte la misam librería con [Grove-LCD RGB Backlight](http://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/). Su uso es casi el mismo, excepto por el hecho de que el Grove - 16 x 2 LCD no soporta el API de colores RGB, **setRGB()**.
+El Grove - 16 x 2 LCD comparte la misam librería con [Grove-LCD RGB Backlight](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/). Su uso es casi el mismo, excepto por el hecho de que el Grove - 16 x 2 LCD no soporta el API de colores RGB, **setRGB()**.
 
-- **Paso 2.** Ve a [How to install library](http://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar una librería para Arduino.
+- **Paso 2.** Ve a [How to install library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar una librería para Arduino.
 
 - **Paso 3.** Reinicia el IDE de Arduino. Abre el ejemplo, puedes hacerlo de cualquiera las siguientes tres maneras:
 
@@ -168,7 +168,7 @@ void loop()
 1** El archivo de la librería puede ser actualizado. Este código podría no ser aplicable para actualizar los archivos de la librería, por ello, recomendamos usar los dos primeros métodos.
 2** Desde el **Grove - 16 x 2 LCD** todas las series tienen luces de fondo monocromáticas, deberás comentar el color RGB rojo en el código en relación. Línea 6 y 17.
 
-- **Paso 4.** Carga la demostración. Si no sabes como subir el código, por favor revisa [How to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 4.** Carga la demostración. Si no sabes como subir el código, por favor revisa [How to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 ¡Éxito!
 Si todo va bien, podrás ver en tu LCD la clásica secuencia: hello, world.

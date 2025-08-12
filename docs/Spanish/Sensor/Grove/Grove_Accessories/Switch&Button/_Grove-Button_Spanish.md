@@ -29,7 +29,7 @@ Grove - Botón es un botón de pulso momentario. Contiene un "momentario on/off"
 - Utiliza estándar cables Grove de 4-pines
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Espeficiaciones
 
@@ -131,7 +131,7 @@ void loop(){
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega soporte Arduino, y arrasta un <em>main procedure</em> al área de trabajo.
 
 ¡Nota!:
-Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Inserta bloques siguiento la imagen a continuación o puedes abrir el archivo cdc que puedes descargar al final de esta página.
 
@@ -160,7 +160,7 @@ Cuando el código haya finalizado de subirse, el LED en el Arduino/Seeeduino se 
 
 #### Software
 
-- **Paso 1**. Sigue [Setting Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Sigue [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 - **Paso 2**. Descarga el archivo fuente clonando la librería grove.py.
 
 ```

@@ -22,7 +22,7 @@ import TabItem from '@theme/TabItem';
 
 ### 环境配置
 
-与[训练](/ModelAssistant_Tutorials_Training_Overview)步骤一样，我们建议您在模型导出阶段在**虚拟环境**中进行。在 `sscma` 虚拟环境中，确保已完成[安装 - 先决条件 - 安装额外依赖项](/ModelAssistant_Introduce_Installation#step-4-install-extra-dependencies-optional)步骤。
+与[训练](/cn/ModelAssistant_Tutorials_Training_Overview)步骤一样，我们建议您在模型导出阶段在**虚拟环境**中进行。在 `sscma` 虚拟环境中，确保已完成[安装 - 先决条件 - 安装额外依赖项](/cn/ModelAssistant_Introduce_Installation#step-4-install-extra-dependencies-optional)步骤。
 
 :::tip
 
@@ -36,9 +36,9 @@ conda activate sscma
 
 ### 模型和权重
 
-在导出模型之前，您还需要准备 PyTorch 模型及其权重。对于模型，您可以在[配置](/ModelAssistant_Tutorials_Config)部分找到，我们已经预先配置好了。对于权重，您可以参考以下步骤获取模型权重。
+在导出模型之前，您还需要准备 PyTorch 模型及其权重。对于模型，您可以在[配置](/cn/ModelAssistant_Tutorials_Config)部分找到，我们已经预先配置好了。对于权重，您可以参考以下步骤获取模型权重。
 
-- 参考[训练](/ModelAssistant_Tutorials_Training_Overview)部分，选择一个模型并训练以获得模型权重。
+- 参考[训练](/cn/ModelAssistant_Tutorials_Training_Overview)部分，选择一个模型并训练以获得模型权重。
 
 - 或者从我们的 [GitHub Releases - Model Zoo](https://github.com/Seeed-Studio/ModelAssistantreleases/tag/model_zoo) 下载 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 官方预训练权重。
 

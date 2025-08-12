@@ -31,15 +31,15 @@ Grove Speech Recognizer Kit for Arduino 专为智能家居原型设计，包含�
 
 1. Grove - Speech Recognizer  SKU:101020232
 
-2. [Grove - MP3 v2.0](/Grove-MP3_v2.0)
+2. [Grove - MP3 v2.0](/cn/Grove-MP3_v2.0)
 
-3. [Grove – RTC](/Grove-RTC)
+3. [Grove – RTC](/cn/Grove-RTC)
 
-4. [Base Shield](/Base_Shield_V2)
+4. [Base Shield](/cn/Base_Shield_V2)
 
-5. [Grove - Infrared Receiver](/Grove-Infrared_Receiver)
+5. [Grove - Infrared Receiver](/cn/Grove-Infrared_Receiver)
 
-6. [Grove - Infrared Emitter](/Grove-Infrared_Emitter)
+6. [Grove - Infrared Emitter](/cn/Grove-Infrared_Emitter)
 
 ## 应用
 
@@ -439,7 +439,7 @@ void loop()
 
 从github下载必要的库：
 [Grove_Serial_MP3_Player_V2.0](https://github.com/Seeed-Studio/Seeed_Serial_MP3_Player.git);
-库，[Grove - MP3 v2.0](/Grove-MP3_v2.0)，<font color="Red">注意你的库的路径：.../arduino/libraries </font>。
+库，[Grove - MP3 v2.0](/cn/Grove-MP3_v2.0)，<font color="Red">注意你的库的路径：.../arduino/libraries </font>。
 
 **关于Grove - MP3 v2的有用函数**
 
@@ -596,7 +596,7 @@ void loop()
 
 **调整实时时间**
 
-从github下载必要的库：<font color="Red">[RTC_DS1307](https://github.com/Seeed-Studio/RTC_DS1307);[库，Grove - RTC](/Grove-RTC);，注意你的库的路径：.../arduino/libraries</font>。
+从github下载必要的库：<font color="Red">[RTC_DS1307](https://github.com/Seeed-Studio/RTC_DS1307);[库，Grove - RTC](/cn/Grove-RTC);，注意你的库的路径：.../arduino/libraries</font>。
 
 * 打开"SetTimeAndDisplay"的示例文件：File --&gt; Sketchbook --&gt; libraries --&gt; RTC_DS1307 --&gt; SetTimeAndDisplay。
 

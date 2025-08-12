@@ -43,7 +43,7 @@ Seeeduino Lotus 1.0はWindowsオペレーティングシステムでのみ動作
 |トラックボールで制御する車|FM受信機|木製ガンを作る|
 |-------|-------|-------|
 |![画像説明を入力してください](https://files.seeedstudio.com/wiki/Seeeduino_Lotus/img/example_1.png)|![画像説明を入力してください](https://files.seeedstudio.com/wiki/Seeeduino_Lotus/img/Fm%20demo.jpg)|![画像説明を入力してください](https://files.seeedstudio.com/wiki/Seeeduino_Lotus/img/gun.jpg)|
-|[今すぐ作る](https://community.seeedstudio.com/A-Car-Controlled-by-Track-Ball-p-1132.html)|<a href="/FM_Receiver" ><span><font size={"3"}> 今すぐ作る </font></span></a>|[今すぐ作る](https://www.instructables.com/id/DIY-a-Wooden-Laser-Gun-As-a-Xmas-Present-for-Your-/)|
+|[今すぐ作る](https://community.seeedstudio.com/A-Car-Controlled-by-Track-Ball-p-1132.html)|<a href="/ja/FM_Receiver" ><span><font size={"3"}> 今すぐ作る </font></span></a>|[今すぐ作る](https://www.instructables.com/id/DIY-a-Wooden-Laser-Gun-As-a-Xmas-Present-for-Your-/)|
 
 ## 特徴
 

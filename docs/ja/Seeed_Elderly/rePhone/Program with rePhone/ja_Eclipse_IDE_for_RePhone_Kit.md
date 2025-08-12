@@ -252,7 +252,7 @@ RePhoneを**デフォルト設定**にリセットするには：
 
 [![](https://files.seeedstudio.com/wiki/Eclipse_IDE_for_RePhone_Kit/img/RePhone_Kit_Create_VXP.png)](https://github.com/WayenWeng/RePhone_Create_Kit_VXP/)
 
-<!-- 3. [RePhone Mass Storage Mode](/Xadow_GSMPlusBLE#Operating_Mode) に入ります -->
+<!-- 3. [RePhone Mass Storage Mode](/ja/Xadow_GSMPlusBLE#Operating_Mode) に入ります -->
 
 4. 「RePhone Create Kit VXP」という名前のファイル内のすべてをRePhoneの5MBマスストレージにコピーします。
 

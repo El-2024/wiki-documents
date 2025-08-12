@@ -53,9 +53,9 @@ Seeedstudio 的官方手册可以在 [这里](https://forum.seeedstudio.com/view
 
 ### 其他 Seeedstudio 文档
 
-* [DSO Quad 手册（官方 Wiki 页面）](/DSO_Quad "DSO Quad")
+* [DSO Quad 手册（官方 Wiki 页面）](/cn/DSO_Quad "DSO Quad")
 
-* [DSO Quad 固件构建教程](/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")
+* [DSO Quad 固件构建教程](/cn/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")
 
 * [DSO Quad 电池安装教程（含视频）](https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=2074)
 
@@ -190,7 +190,7 @@ DSO Quad 通过连接 USB 电缆充电。LTC4054 电池控制器[在电源开关
 
 DSO Quad 有多个版本，每个版本的固件都不同。请仔细确认您的硬件型号。当您首次打开 DSO Quad 时，请查看硬件版本。将您看到的内容与以下表格进行比较：
 
-在此处查看最新固件：[DSO Quad Building Firmware](/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")  
+在此处查看最新固件：[DSO Quad Building Firmware](/cn/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")  
 以下是与 [FPGA(DFU，SYS，APP) v2.7.2](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/res/DS203.V2.72.zip) 特别合同下的最新固件。
 
 <table>
@@ -258,7 +258,7 @@ DSO Quad 在首次使用前需要校准，并且在长时间使用后应重新�
 
     3. 按照说明操作。
 
-更多详情请参阅：[DSO Quad:Calibration](/DSO_Quad-Calibration "DSO Quad:Calibration")
+更多详情请参阅：[DSO Quad:Calibration](/cn/DSO_Quad-Calibration "DSO Quad:Calibration")
 
 注意：我注意到当连接或断开微型 USB 电源时，校准结果会有所不同。因此，请按照您最常使用的方式进行校准。
 
@@ -388,7 +388,7 @@ Vmax、Vmin、Vpp、Vdc（平均电压）、Vrms（sqrt(average(V*V))）
 
 DSO Quad 可以通过任何普通 USB 端口充电。请在使用前至少充电 1 小时。
 
-DSO Quad 固件会进行快速的 USB 断开-重新连接以执行“实时”固件更新。这种方法与 Mac OS X 或 Linux 不兼容。有关更多信息，请参阅[相关论坛帖子](https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=1934)。请参阅 [DSO Quad 构建固件](/DSO_Quad-Building_Firmware "DSO Quad 构建固件") 了解如何从 Linux 升级固件。
+DSO Quad 固件会进行快速的 USB 断开-重新连接以执行“实时”固件更新。这种方法与 Mac OS X 或 Linux 不兼容。有关更多信息，请参阅[相关论坛帖子](https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=1934)。请参阅 [DSO Quad 构建固件](/cn/DSO_Quad-Building_Firmware "DSO Quad 构建固件") 了解如何从 Linux 升级固件。
 
 ## 资源
 

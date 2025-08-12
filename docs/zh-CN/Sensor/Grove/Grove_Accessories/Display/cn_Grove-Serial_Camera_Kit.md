@@ -41,7 +41,7 @@ Grove - 串行摄像头套件包括一个控制板和两个可互换镜头，一
 ## 演示
 
 ---
-本演示将向您展示如何使用 Grove - 串行摄像头套件。我们需要一个 [Seeeduino](https://www.seeedstudio.com/seeeduino-v30-atmega-328p-p-669.html?cPath=6_7)、一个 [SD 卡扩展板](https://www.seeedstudio.com/sd-card-shield-v40-p-1381.html?cPath=105) 和一个 [Grove - 按钮](/Grove-Button)。当按下按钮时，我们拍摄一张照片并将其保存到 SD 卡。
+本演示将向您展示如何使用 Grove - 串行摄像头套件。我们需要一个 [Seeeduino](https://www.seeedstudio.com/seeeduino-v30-atmega-328p-p-669.html?cPath=6_7)、一个 [SD 卡扩展板](https://www.seeedstudio.com/sd-card-shield-v40-p-1381.html?cPath=105) 和一个 [Grove - 按钮](/cn/Grove-Button)。当按下按钮时，我们拍摄一张照片并将其保存到 SD 卡。
 
 按照以下步骤逐步操作，您可以轻松运行您的 Grove - 串行摄像头套件。让我们开始吧。
 

@@ -162,9 +162,9 @@ ms
 
 ガスセンサーを使用する前に、以下の知識を読むことをお勧めします。これにより、Arduinoや当社の製品についてより深く理解でき、オープンソースハードウェアをより簡単に使用できるようになります。
 
-<!-- - [Getting Started with Arduino](/Getting_Started_with_Seeeduino)
-- [What is Grove system](/Grove_System)
-- [Why i need a Base shield?](/Base_Shield_V2) -->
+<!-- - [Getting Started with Arduino](/ja/Getting_Started_with_Seeeduino)
+- [What is Grove system](/ja/Grove_System)
+- [Why i need a Base shield?](/ja/Base_Shield_V2) -->
 
 - Arduinoの使い方
 - Groveシステムとは
@@ -251,7 +251,7 @@ void loop()
 
 1. Raspberry PiとGrovePiまたはGrovePi+を準備してください。
 
-2. 開発環境の設定を完了している必要があります。設定がまだの場合は[こちら](/GrovePi_Plus)を参照してください。
+2. 開発環境の設定を完了している必要があります。設定がまだの場合は[こちら](/ja/GrovePi_Plus)を参照してください。
 
 3. 接続
 

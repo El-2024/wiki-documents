@@ -15,7 +15,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
 :::caution
-この Wiki は ReSpeaker 2-Mics Pi HAT **v1** 用に書かれています。v1 と v2 のデバイスを区別するには、[ReSpeaker 2-Mics Pi HAT ハードウェアリビジョンの区別方法](/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions)を参照してください。
+この Wiki は ReSpeaker 2-Mics Pi HAT **v1** 用に書かれています。v1 と v2 のデバイスを区別するには、[ReSpeaker 2-Mics Pi HAT ハードウェアリビジョンの区別方法](/ja/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions)を参照してください。
 :::
 
 ### ドライバーのインストールと設定

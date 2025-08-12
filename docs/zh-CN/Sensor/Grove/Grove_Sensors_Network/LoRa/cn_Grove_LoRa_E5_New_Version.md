@@ -232,7 +232,7 @@ Grove LoRa E5 配备内置 LoRaWAN 固件，提供 AT 服务器（查看 [LoRa-E
 3. [Grove - Wio-E5 Helium 演示](https://wiki.seeedstudio.com/cn/Grove_Wio_E5_Helium_Demo/) 使用 Grove - Wio-E5 模块和 Seeeduino XIAO 模块连接到 Helium IoT 网络
 4. [Grove - Wio-E5 与 Arduino Uno R4 配合使用演示](https://wiki.seeedstudio.com/cn/Grove_Wio_E5_SenseCAP_Cloud_Demo/)
 5. [Grove - Wio-E5 与 XIAO ESP32S3 配合使用演示](https://wiki.seeedstudio.com/cn/Grove_Wio_E5_SenseCAP_XIAO_ESP32S3/)
-6. [在 PlatformIO(Arduino) 上使用 Wio-E5 和 XIAO ESP32S3 访问 LoRaWAN 网络](/platformio_wio_e5/) 一个实用指南。它详细介绍了使用 PlatformIO 将 Wio-E5 与 Arduino 兼容板集成，以实现高效的 LoRaWAN 连接。
+6. [在 PlatformIO(Arduino) 上使用 Wio-E5 和 XIAO ESP32S3 访问 LoRaWAN 网络](/cn/platformio_wio_e5/) 一个实用指南。它详细介绍了使用 PlatformIO 将 Wio-E5 与 Arduino 兼容板集成，以实现高效的 LoRaWAN 连接。
 
 ## 资源
 

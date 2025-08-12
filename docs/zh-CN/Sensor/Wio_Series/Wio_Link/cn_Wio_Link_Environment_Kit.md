@@ -34,11 +34,11 @@ last_update:
 
 | 零件名称                                                                                                                | 数量 |
 |---------------------------------------------------------------------------------------------------------------------------|----------|
-| [Grove - 湿度传感器](/Grove-Moisture_Sensor/)                                                                         | 1个     |
+| [Grove - 湿度传感器](/cn/Grove-Moisture_Sensor/)                                                                         | 1个     |
 | [Grove - 温湿度传感器](https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temp-Humi-Sensor-SHT35.html?queryID=ea8d1729f76e80d6b1b53c492c74fcdb&objectID=35&indexName=bazaar_retailer_products)                | 1个     |
 | [Grove - 数字光传感器](https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.html?queryID=c7822737fbcac80a47232a5fb1ac1e1d&objectID=1594&indexName=bazaar_retailer_products)      | 1个     |
 | [Grove - 空气质量传感器 v1.3](https://www.seeedstudio.com/Grove-Air-Quality-Sensor-v1-3-Arduino-Compatible.html?queryID=c98f1d7e388efeeee92d1815abe557cb&objectID=700&indexName=bazaar_retailer_products) | 1个     |
-| [Wio Link](/Wio_Link/)                                                                                                     | 1个     |
+| [Wio Link](/cn/Wio_Link/)                                                                                                     | 1个     |
 | [Micro USB 线缆 - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html?queryID=a8b80828fdcd52ad1ae49daa5ed97191&objectID=1405&indexName=bazaar_retailer_products)                  | 1根     |
 
 简单演示
@@ -49,12 +49,12 @@ last_update:
 ### 预备指南
 
 -   [Travis CI](https://travis-ci.org/)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/cn/Wio_Link/)
 
 ### 所需材料
 
 -   [Wio Link APP](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/cn/Wio_Link/)
 -   [Grove 继电器](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   一个 Travis CI 账户
 -   一个 GitHub 账户

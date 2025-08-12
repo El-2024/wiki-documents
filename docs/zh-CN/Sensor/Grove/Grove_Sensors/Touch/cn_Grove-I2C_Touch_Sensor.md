@@ -125,7 +125,7 @@ CH4-CH11 供客户扩展功能使用。如果您需要更多，可以自己制�
 - [I2C 触摸传感器库](https://github.com/Seeed-Studio/Grove_I2C_Touch_Sensor)
 - [I2C 触摸传感器 eagle 文件(v1.1).zip](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/I2C_Touch_Sensor_eagle_files-v1.1-.zip)
 - [I2C 触摸传感器 PDF](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/Grove-I2C_Color_sensor_v1.2.pdf)
-- [如何检测手指触摸？](/How_to_detect_finger_touch)
+- [如何检测手指触摸？](/cn/How_to_detect_finger_touch)
 - [I2C 触摸传感器数据手册](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/Freescale_Semiconductor;MPR121QR2.pdf)
 - [Codecraft CDC 文件](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/Grove_I2C_Touch_Sensor_CDC_File.zip)
 

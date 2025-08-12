@@ -64,7 +64,7 @@ Grove センサーを使用して、カスタムでコスト効率の高い産�
 
 Builder に追加するための Grove モジュールをさらに探しています。ぜひご参加ください！以下の情報を確認し、あなたの作品を私たちに提供してください（これは [Seeed Studio Contributor Program](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=34120904) の一環です）。
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/list_of_supported_grove_n_adding_more"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 始め方 </font></span></strong></a> <a class="get_one_now_item" href="https://github.com/Seeed-Studio/Seeed_Arduino_S2110"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 ソースコード </font></span></strong></a> <a class="get_one_now_item" href="https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=34120904"><strong><span><font color={'FFFFFF'} size={"4"}> 🙋 コントリビューター </font></span></strong></a> </div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/ja/list_of_supported_grove_n_adding_more"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 始め方 </font></span></strong></a> <a class="get_one_now_item" href="https://github.com/Seeed-Studio/Seeed_Arduino_S2110"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 ソースコード </font></span></strong></a> <a class="get_one_now_item" href="https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=34120904"><strong><span><font color={'FFFFFF'} size={"4"}> 🙋 コントリビューター </font></span></strong></a> </div>
 
 ### RS485 を使用して XIAO RP2040 ボードで開発
 

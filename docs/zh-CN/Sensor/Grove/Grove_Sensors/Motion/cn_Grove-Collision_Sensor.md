@@ -307,7 +307,7 @@ pi@raspberrypi:~/grove.py/grove $
 
 1.您应该已经有了一个树莓派和一个 grovepi 或 grovepi+。
 
-2.您应该已经完成了开发环境的配置，否则请参考[这里](/GrovePi_Plus/)。
+2.您应该已经完成了开发环境的配置，否则请参考[这里](/cn/GrovePi_Plus/)。
 
 3.连接
 

@@ -26,7 +26,7 @@ EdgeBox-RPi-200 系列是基于树莓派的多合一工业边缘计算控制器�
 </div>
 
 :::tip在您继续之前: 
-自 2023 年 3 月 30 日之后发布的批次起，我们已更新树莓派计算模块 4 的 EEPROM，启动顺序更改为 `NVME > USB-MSD > BCM-USB-MSD > SD CARD/eMMC > NETWORK > RESTART`，有关更多信息，请访问 [更新计算模块 4 的 EEPROM](/Raspberry_pi_CM4_update_eeprom/) 页面。
+自 2023 年 3 月 30 日之后发布的批次起，我们已更新树莓派计算模块 4 的 EEPROM，启动顺序更改为 `NVME > USB-MSD > BCM-USB-MSD > SD CARD/eMMC > NETWORK > RESTART`，有关更多信息，请访问 [更新计算模块 4 的 EEPROM](/cn/Raspberry_pi_CM4_update_eeprom/) 页面。
 
 **如果您在 2023 年 3 月 30 日之前购买了 EdgeBox-RPI-200，并希望按照指南更新 EEPROM 或在 EdgeBox-RPI-200 上刷新操作系统，您需要一个至少包含选择树莓派 CM4 启动模式功能的开发板，[双千兆以太网 NICs 载板](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html) 是一个完美的选择。**
 
@@ -133,7 +133,7 @@ fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles
 
 请插入电源并等待设备启动。
 
-然后请使用 SSH 访问 EdgeBox-RPI-200，这里是 [指南](/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh)。
+然后请使用 SSH 访问 EdgeBox-RPI-200，这里是 [指南](/cn/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh)。
 
 一旦获得 SSH 访问权限，您可以按照以下步骤操作：
 

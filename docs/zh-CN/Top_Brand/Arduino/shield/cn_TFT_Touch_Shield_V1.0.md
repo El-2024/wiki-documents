@@ -165,7 +165,7 @@ last_update:
 
 ---
 
-TFT Touch Shield 使用 [Adafruit Touch Screen Library](https://github.com/adafruit/Touch-Screen-Library)。要了解电阻式触摸屏背后的原理，请参考[外部链接](/2.8inch_TFT_Touch_Shield_v2.0#resources)。简而言之，4 线电阻式触摸屏为 X 和 Y 轴各提供一个分压器。通过为每个轴施加适当的电压并扫描 ADC 值，可以检测到触摸的位置。这些值总是容易受到噪声影响。因此使用数字滤波器。
+TFT Touch Shield 使用 [Adafruit Touch Screen Library](https://github.com/adafruit/Touch-Screen-Library)。要了解电阻式触摸屏背后的原理，请参考[外部链接](/cn/2.8inch_TFT_Touch_Shield_v2.0#resources)。简而言之，4 线电阻式触摸屏为 X 和 Y 轴各提供一个分压器。通过为每个轴施加适当的电压并扫描 ADC 值，可以检测到触摸的位置。这些值总是容易受到噪声影响。因此使用数字滤波器。
 
 - 要使用 TouchScreen 库，首先创建一个 TouchScreen 对象：
 

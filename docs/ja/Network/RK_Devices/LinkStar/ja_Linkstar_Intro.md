@@ -18,8 +18,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## Linkstar の使い方
 
-- [ハードウェア概要と紹介](/Linkstar_Datasheet)
-- [オリジナルOSのインストール](/linkstar-install-system)
+- [ハードウェア概要と紹介](/ja/Linkstar_Datasheet)
+- [オリジナルOSのインストール](/ja/linkstar-install-system)
 
 ## Seeed Studio による Linkstar アプリケーション
 

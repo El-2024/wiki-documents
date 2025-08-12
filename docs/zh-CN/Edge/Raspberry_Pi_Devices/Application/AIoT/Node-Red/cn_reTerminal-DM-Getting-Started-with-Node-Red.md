@@ -41,7 +41,7 @@ last_update:
 
 ## 在 Raspbian OS 上安装和设置 Node-RED
 
-在按照 [在 reTerminal DM 上安装操作系统](/reterminal-dm-flash-OS/) 完成新操作系统的设置后，请按照以下步骤设置 Node-RED。
+在按照 [在 reTerminal DM 上安装操作系统](/cn/reterminal-dm-flash-OS/) 完成新操作系统的设置后，请按照以下步骤设置 Node-RED。
 
 ### 安装 Node-RED
 
@@ -216,9 +216,9 @@ node-red-restart
 
 # reTerminal DM 支持的节点
 
-* [reTerminal DM RS485 端口与 Node-RED](/reTerminal-DM-Node-Red-RS485)
-* [reTerminal DM MQTT 与 Node-RED](/reTerminal-DM-Node-Red-mqtt)
-* [reTerminal DM CAN BUS 与 Node-RED](/reTerminal-DM-Node-Red-canbus)
+* [reTerminal DM RS485 端口与 Node-RED](/cn/reTerminal-DM-Node-Red-RS485)
+* [reTerminal DM MQTT 与 Node-RED](/cn/reTerminal-DM-Node-Red-mqtt)
+* [reTerminal DM CAN BUS 与 Node-RED](/cn/reTerminal-DM-Node-Red-canbus)
   
 ## 技术支持与产品讨论
 

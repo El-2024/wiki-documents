@@ -37,7 +37,7 @@ El Seguidor de línea - Grove está diseñado para robot seguidor de línea. Tie
 | Comparador             | MV358                                                             |
 
 Consejo:
-Para más información sobre los módulos Grove, visita [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/)
+Para más información sobre los módulos Grove, visita [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/)
 
 ## Plataformas compatibles
 
@@ -132,7 +132,7 @@ black
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), añade soporte para Arduino y arrastra un procedimiento principal al área de trabajo.
 
 Nota:
-Si es la primera vez que usas Codecraft, visita [Guía para Codecraft usando Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es la primera vez que usas Codecraft, visita [Guía para Codecraft usando Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra los bloques como se muestra en la imagen o descarga el archivo cdc que se encuentra al final de esta página.
 

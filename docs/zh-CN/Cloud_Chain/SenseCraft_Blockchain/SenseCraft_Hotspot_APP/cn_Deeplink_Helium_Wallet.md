@@ -6,7 +6,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/sensecraft-blockchain/sensecraft-hotspot-app/deeplink_helium_wallet
 aliases:
-  - /Cloud_Chain/SenseCAP_Hotspot_APP/Deeplink_Helium_Wallet
+  - /cn/Cloud_Chain/SenseCAP_Hotspot_APP/Deeplink_Helium_Wallet
 last_update:
   date: 02/14/2023
   author: Matthew

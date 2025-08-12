@@ -41,8 +41,8 @@ A-LOAM は、自動運転、ロボティクス、3D マッピングなどのさ�
 - __RoboSense RS32 Lidar__.
 
   :::note
-    - reComputer が Jetpack 5.x を実行していることを確認してください。Ubuntu 20.04 と ROS Noetic でのみテストされています。このガイドに記載されている [reComputer 用 ROS1 のインストール](/installing_ros1) を参照して ROS 環境のセットアップを完了してください。
-    - [reComputer 上で RoboSense RS32 LiDAR を ROS で起動する](/robosense_lidar) チュートリアルに従い、ポイントクラウドデータを正常に可視化できることを確認してください。
+    - reComputer が Jetpack 5.x を実行していることを確認してください。Ubuntu 20.04 と ROS Noetic でのみテストされています。このガイドに記載されている [reComputer 用 ROS1 のインストール](/ja/installing_ros1) を参照して ROS 環境のセットアップを完了してください。
+    - [reComputer 上で RoboSense RS32 LiDAR を ROS で起動する](/ja/robosense_lidar) チュートリアルに従い、ポイントクラウドデータを正常に可視化できることを確認してください。
   :::
 
 <div align="center">

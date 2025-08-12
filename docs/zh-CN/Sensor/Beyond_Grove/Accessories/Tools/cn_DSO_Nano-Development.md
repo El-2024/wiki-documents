@@ -9,13 +9,13 @@ last_update:
   author: gunengyu
 ---
 
-一些关于 [DSO Nano](/DSO_Nano "DSO Nano") 开发的资源。
+一些关于 [DSO Nano](/cn/DSO_Nano "DSO Nano") 开发的资源。
 
 ## 固件开发
 
 * 获取源码并进行构建
 
-请参阅 [使用 gcc 构建源码](/DSO_Nano-gcc "DSO Nano/gcc")。如果需要使用 IAR 构建，请参阅下面的链接部分。
+请参阅 [使用 gcc 构建源码](/cn/DSO_Nano-gcc "DSO Nano/gcc")。如果需要使用 IAR 构建，请参阅下面的链接部分。
 
 * 提交补丁
 
@@ -23,9 +23,9 @@ last_update:
 
 ## 调试
 
-* 使用 [qemu 模拟器和 gdb](/DSO_Nano-Qemu_gdb "DSO Nano/Qemu gdb") 调试运行在 ARM 上的代码
+* 使用 [qemu 模拟器和 gdb](/cn/DSO_Nano-Qemu_gdb "DSO Nano/Qemu gdb") 调试运行在 ARM 上的代码
 
-* 使用 [OpenOCD 和 gdb](/DSO_Nano-OpenOCD_gdb "DSO Nano/OpenOCD gdb") 调试运行在带有 JTAG 的开发板上的 ARM 代码
+* 使用 [OpenOCD 和 gdb](/cn/DSO_Nano-OpenOCD_gdb "DSO Nano/OpenOCD gdb") 调试运行在带有 JTAG 的开发板上的 ARM 代码
 
 ## 链接
 

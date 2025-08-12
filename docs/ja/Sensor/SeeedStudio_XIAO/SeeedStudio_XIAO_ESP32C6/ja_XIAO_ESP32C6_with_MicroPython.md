@@ -154,7 +154,7 @@ COMXXをPC上のCOMポート番号に置き換えてください。
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトはSeeed Studio [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479)によってサポートされています。
-- [Hendraとshariltuminの努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=c6&pane=issue&itemId=59874459&issue=Seeed-Studio%7Cwiki-documents%7C1117)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/ja/contributors/)。
+- [Hendraとshariltuminの努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=c6&pane=issue&itemId=59874459&issue=Seeed-Studio%7Cwiki-documents%7C1117)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/contributors/)。
 
 ## 技術サポートと製品ディスカッション
 

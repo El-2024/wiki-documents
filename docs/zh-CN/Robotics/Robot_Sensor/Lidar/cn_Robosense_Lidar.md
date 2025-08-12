@@ -29,7 +29,7 @@ RoboSense速腾聚创3D雷达传感器为各种应用提供高精度的 3D 点�
 
 
 ## 前置条件
-- __[reComputer J30/40 系列](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__：已完成 [JetPack 5.x 系统安装](/reComputer_J4012_Flash_Jetpack) 和 [ROS Noetic 环境安装](/installing_ros1) 的教程。
+- __[reComputer J30/40 系列](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__：已完成 [JetPack 5.x 系统安装](/cn/reComputer_J4012_Flash_Jetpack) 和 [ROS Noetic 环境安装](/cn/installing_ros1) 的教程。
 
 - __RoboSense 全系列 LiDAR__
 

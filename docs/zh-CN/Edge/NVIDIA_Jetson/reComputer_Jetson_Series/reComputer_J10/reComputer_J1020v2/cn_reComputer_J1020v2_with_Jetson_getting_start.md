@@ -140,7 +140,7 @@ reComputer J1020 v2 是一款功能强大且紧凑的智能边缘设备，基于
 ## 为 reComputer J1020v2 刷写 JetPack
 
 :::info
-请参考此 [wiki](/reComputer_J2021_J202_Flash_Jetpack) 页面获取更多信息，因为 J1020v2 使用 J202 载板。
+请参考此 [wiki](/cn/reComputer_J2021_J202_Flash_Jetpack) 页面获取更多信息，因为 J1020v2 使用 J202 载板。
 :::
 
 ## 资源

@@ -23,7 +23,7 @@ surveyurl: https://www.research.net/r/Beagle_Bone_Green_and_Grove_IoT_Starter_Ki
 
 ![](https://files.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/Aws_kit_bbg_cover.JPG)
 
-<!-- *主要文章：从这里开始 [Grove IoT 入门套件，由 AWS 提供支持](/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoT 入门套件，由 AWS 提供支持") , [Beaglebone Green](/BeagleBone_Green "Beaglebone green")* -->
+<!-- *主要文章：从这里开始 [Grove IoT 入门套件，由 AWS 提供支持](/cn/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoT 入门套件，由 AWS 提供支持") , [Beaglebone Green](/cn/BeagleBone_Green "Beaglebone green")* -->
 
 [BeagleBone Green](https://www.seeedstudio.com/depot/BeagleBone-Green-p-2504.html?cPath=122_113) (BBG) 是 BeagleBoard.org 和 Seeed Studio 的联合开发成果。它基于 [BeagleBone Black](https://beagleboard.org/BLACK) 的开源硬件设计，并增加了两个 Grove 接口。该套件包含全新的 BBG、10 个 Grove 模块以及逐步教程，帮助您快速连接这些模块。Grove IoT 入门套件包括最常用的传感器和执行器，结合 AWS 云计算，将您的创意转化为实际应用。
 
@@ -43,17 +43,17 @@ surveyurl: https://www.research.net/r/Beagle_Bone_Green_and_Grove_IoT_Starter_Ki
 
 <!-- | 板卡/部件                                                                                                                                    | 数量 | 文档                                                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------|-----|---------------------------------------------------------------------------------------------------|
-| [BeagleBone Green](https://www.seeedstudio.com/depot/BeagleBone-Green-p-2504.html?cPath=122_113)                                              | 1   | [阅读这里](/BeagleBone_Green "Beaglebone green")                                                 |
-| [Grove - I2C ADC](https://www.seeedstudio.com/depot/Grove-I2C-ADC-p-1580.html?cPath=98_16)                                                    | 1   | [阅读这里](/Grove-I2C_ADC "Grove - I2C ADC")                                                     |
-| [Grove - I2C Hub](https://www.seeedstudio.com/depot/Grove-I2C-Hub-p-851.html?cPath=98_16)                                                     | 1   | [阅读这里](/Grove-I2C_Hub "Grove - I2C Hub")                                                     |
-| [Grove - Relay](https://www.seeedstudio.com/depot/Grove-Relay-p-769.html?cPath=39_42)                                                         | 1   | [阅读这里](/Grove-Relay "Grove - Relay")                                                         |
-| [Grove - Buzzer](https://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html?cPath=38)                                                          | 1   | [阅读这里](/Grove-Buzzer "Grove - Buzzer")                                                       |
-| [Grove - OLED Display 0.96'](https://www.seeedstudio.com/depot/Grove-OLED-Display-096-p-824.html?cPath=34_36)'                                | 1   | [阅读这里](/Grove-OLED_Display_0.96inch "Grove - OLED Display 96*96")                               |
-| [Grove - Button](https://www.seeedstudio.com/depot/Grove-Button-p-766.html?cPath=85_50)                                                       | 1   | [阅读这里](/Grove-Button "Grove - Button")                                                       |
-| [Grove - Temperature Sensor](https://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html?cPath=25_125)                              | 1   | [阅读这里](/Grove-Temperature_Sensor_V1.2 "Grove - Temperature Sensor V1.2")                     |
-| [Grove - Sound Sensor](https://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html?cPath=25_128)                                          | 1   | [阅读这里](/Grove-Sound_Sensor "Grove - Sound Sensor")                                           |
-| [Grove - 3-Axis Digital Accelerometer(±16g)](https://www.seeedstudio.com/depot/Grove-3Axis-Digital-Accelerometer16g-p-1156.html?cPath=25_132) | 1   | [阅读这里](/Grove-3-Axis_Digital_Accelerometer-16g "Grove - 3-Axis Digital Accelerometer(±16g\)") |
-| [Grove - Chainable RGB LED](https://www.seeedstudio.com/depot/Grove-Chainable-RGB-LED-p-850.html?cPath=81_35)                                 | 1   | [阅读这里](/Grove-Chainable_RGB_LED "Grove - Chainable RGB LED")                                 |
+| [BeagleBone Green](https://www.seeedstudio.com/depot/BeagleBone-Green-p-2504.html?cPath=122_113)                                              | 1   | [阅读这里](/cn/BeagleBone_Green "Beaglebone green")                                                 |
+| [Grove - I2C ADC](https://www.seeedstudio.com/depot/Grove-I2C-ADC-p-1580.html?cPath=98_16)                                                    | 1   | [阅读这里](/cn/Grove-I2C_ADC "Grove - I2C ADC")                                                     |
+| [Grove - I2C Hub](https://www.seeedstudio.com/depot/Grove-I2C-Hub-p-851.html?cPath=98_16)                                                     | 1   | [阅读这里](/cn/Grove-I2C_Hub "Grove - I2C Hub")                                                     |
+| [Grove - Relay](https://www.seeedstudio.com/depot/Grove-Relay-p-769.html?cPath=39_42)                                                         | 1   | [阅读这里](/cn/Grove-Relay "Grove - Relay")                                                         |
+| [Grove - Buzzer](https://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html?cPath=38)                                                          | 1   | [阅读这里](/cn/Grove-Buzzer "Grove - Buzzer")                                                       |
+| [Grove - OLED Display 0.96'](https://www.seeedstudio.com/depot/Grove-OLED-Display-096-p-824.html?cPath=34_36)'                                | 1   | [阅读这里](/cn/Grove-OLED_Display_0.96inch "Grove - OLED Display 96*96")                               |
+| [Grove - Button](https://www.seeedstudio.com/depot/Grove-Button-p-766.html?cPath=85_50)                                                       | 1   | [阅读这里](/cn/Grove-Button "Grove - Button")                                                       |
+| [Grove - Temperature Sensor](https://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html?cPath=25_125)                              | 1   | [阅读这里](/cn/Grove-Temperature_Sensor_V1.2 "Grove - Temperature Sensor V1.2")                     |
+| [Grove - Sound Sensor](https://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html?cPath=25_128)                                          | 1   | [阅读这里](/cn/Grove-Sound_Sensor "Grove - Sound Sensor")                                           |
+| [Grove - 3-Axis Digital Accelerometer(±16g)](https://www.seeedstudio.com/depot/Grove-3Axis-Digital-Accelerometer16g-p-1156.html?cPath=25_132) | 1   | [阅读这里](/cn/Grove-3-Axis_Digital_Accelerometer-16g "Grove - 3-Axis Digital Accelerometer(±16g\)") |
+| [Grove - Chainable RGB LED](https://www.seeedstudio.com/depot/Grove-Chainable-RGB-LED-p-850.html?cPath=81_35)                                 | 1   | [阅读这里](/cn/Grove-Chainable_RGB_LED "Grove - Chainable RGB LED")                                 |
 | [Micro USB Cable - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html)                                                                                                                       | 1   |                                                                                                   |  -->
 
 
@@ -115,7 +115,7 @@ surveyurl: https://www.research.net/r/Beagle_Bone_Green_and_Grove_IoT_Starter_Ki
 
 ### 设置你的 BeagleBone Green
 
-<!-- 通过 micro USB 数据线将 BBG 连接到你的电脑，并让 BBG 访问互联网。如果这是你第一次使用 BBG/BBB，你可以参考 [这里](/BeagleBone_Green) 开始入门。 -->
+<!-- 通过 micro USB 数据线将 BBG 连接到你的电脑，并让 BBG 访问互联网。如果这是你第一次使用 BBG/BBB，你可以参考 [这里](/cn/BeagleBone_Green) 开始入门。 -->
 
 将 Grove 模块连接到 BBG，如下图所示。
 
@@ -656,21 +656,21 @@ thingShadows.on('timeout',
 
 - [【PDF】AWS IoT 开发者指南](https://files.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS/res/AWS_IoT_Developer_Guide.pdf)
 - [【PDF】AWS BBG 用户指南](https://files.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS/res/AWS_User_Guide_for_BBG.pdf)
-<!-- - [Grove IoT Starter Kits Powered by AWS 主页面](/Main Page for Grove IoT Starter Kits Powered by AWS) -->
+<!-- - [Grove IoT Starter Kits Powered by AWS 主页面](/cn/Main Page for Grove IoT Starter Kits Powered by AWS) -->
 - [【Github】AWS SDK for BeagleBone Green kit](https://github.com/Seeed-Studio/AWS_SDK_for_BBG)
 - [【Github】BeagleBone Green kit 的库](https://github.com/Seeed-Studio/Grove_Starter_Kit_for_BBG)
-<!-- - [BeagleBone Green](/BeagleBone_Green) -->
+<!-- - [BeagleBone Green](/cn/BeagleBone_Green) -->
 - [Beagleboard 主页面](https://beagleboard.org/getting-started)
-<!-- - [Grove - I2C ADC](/Grove_Sensors_Network/Standard_Protocol) -->
-- [Grove - I2C Hub](/Grove-I2C_Hub)
-<!-- - [Grove - Relay](/Grove-Relay) -->
-<!-- - [Grove - Buzzer](/Grove-Buzzer) -->
-- [Grove - OLED 显示屏 96\*96](/Grove-OLED_Display_0.96inch)
-- [Grove - 按钮](/Grove-Button)
-- [Grove - 温度传感器 v1.2](/Grove-Temperature_Sensor_V1.2)
-- [Grove - 声音传感器](/Grove-Sound_Sensor)
-- [Grove - 三轴数字加速度计 ADXL345](/Grove-3-Axis_Digital_Accelerometer-16g)
-<!-- - [Grove - 可链式 RGB LED](/Grove-Chainable_RGB_LED) -->
+<!-- - [Grove - I2C ADC](/cn/Grove_Sensors_Network/Standard_Protocol) -->
+- [Grove - I2C Hub](/cn/Grove-I2C_Hub)
+<!-- - [Grove - Relay](/cn/Grove-Relay) -->
+<!-- - [Grove - Buzzer](/cn/Grove-Buzzer) -->
+- [Grove - OLED 显示屏 96\*96](/cn/Grove-OLED_Display_0.96inch)
+- [Grove - 按钮](/cn/Grove-Button)
+- [Grove - 温度传感器 v1.2](/cn/Grove-Temperature_Sensor_V1.2)
+- [Grove - 声音传感器](/cn/Grove-Sound_Sensor)
+- [Grove - 三轴数字加速度计 ADXL345](/cn/Grove-3-Axis_Digital_Accelerometer-16g)
+<!-- - [Grove - 可链式 RGB LED](/cn/Grove-Chainable_RGB_LED) -->
 <!-- 上述链接缺失 -->
 
 <!-- 此 Markdown 文件来源于 https://www.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS -->

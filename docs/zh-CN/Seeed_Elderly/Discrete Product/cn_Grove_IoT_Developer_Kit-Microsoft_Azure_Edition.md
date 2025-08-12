@@ -48,7 +48,7 @@ Intel Edison Arduino开发板
 
 [![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Base_Shield_v2-1.png)](https://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html)
 
-<!-- 基础扩展板 V2[(到Wiki)](/Base_Shield_V2) -->
+<!-- 基础扩展板 V2[(到Wiki)](/cn/Base_Shield_V2) -->
 
 ### 传感器
 
@@ -59,35 +59,35 @@ Intel Edison Arduino开发板
   </tr>
   <tr>
     <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Button.jpg)](https://www.seeedstudio.com/depot/Grove-Button-p-766.html)</td>
-    <td class="tg-yw4l">Grove - 按钮[(到Wiki)](/Grove-Button)</td>
+    <td class="tg-yw4l">Grove - 按钮[(到Wiki)](/cn/Grove-Button)</td>
   </tr>
   <tr>
     <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Wiki_soundsensor.jpg)](https://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html)</td>
-    <td class="tg-yw4l">Grove - 声音传感器[(到Wiki)](/Grove-Sound_Sensor)</td>
+    <td class="tg-yw4l">Grove - 声音传感器[(到Wiki)](/cn/Grove-Sound_Sensor)</td>
   </tr>
   <tr>
     <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/3_aix_acc.jpg)](https://www.seeedstudio.com/depot/Grove-3Axis-Digital-Accelerometer15g-p-765.html)</td>
-    <td class="tg-yw4l">Grove - 三轴数字加速度计(±1.5g)[[(到Wiki)](/Grove-3-Axis_Digital_Accelerometer-1.5g)</td>
+    <td class="tg-yw4l">Grove - 三轴数字加速度计(±1.5g)[[(到Wiki)](/cn/Grove-3-Axis_Digital_Accelerometer-1.5g)</td>
   </tr>
   <tr>
     <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Touch_sensor.jpg)](https://www.seeedstudio.com/depot/Grove-Touch-Sensor-p-747.html)</td>
-    <td class="tg-yw4l">Grove - 触摸传感器[(到Wiki)](/Grove-Touch_Sensor)</td>
+    <td class="tg-yw4l">Grove - 触摸传感器[(到Wiki)](/cn/Grove-Touch_Sensor)</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Grove-Light_Sensor_v1.2_product_view_700_.jpg)](/Grove-Light_Sensor)</td>
-    <td class="tg-yw4l">Grove - 光传感器 v1.2[(到Wiki)](/Grove-Light_Sensor)</td>
+    <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Grove-Light_Sensor_v1.2_product_view_700_.jpg)](/cn/Grove-Light_Sensor)</td>
+    <td class="tg-yw4l">Grove - 光传感器 v1.2[(到Wiki)](/cn/Grove-Light_Sensor)</td>
   </tr>
   <tr>
     <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Grove_Temperature_Sensor_View.jpg)](https://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html)</td>
-    <td class="tg-yw4l">Grove - 温度传感器[(到Wiki)](/Grove-Temperature_Sensor_V1.2)</td>
+    <td class="tg-yw4l">Grove - 温度传感器[(到Wiki)](/cn/Grove-Temperature_Sensor_V1.2)</td>
   </tr>
   <tr>
     <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Potentiometer1.jpg)](https://www.seeedstudio.com/depot/Grove-Rotary-Angle-SensorP-p-1242.html)</td>
-    <td class="tg-yw4l">Grove - 旋转角度传感器(P)[(到Wiki)](/Grove-Rotary_Angle_Sensor)</td>
+    <td class="tg-yw4l">Grove - 旋转角度传感器(P)[(到Wiki)](/cn/Grove-Rotary_Angle_Sensor)</td>
   </tr>
   <tr>
     <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Piezo_Vibration_Sensor_01.jpg)](https://www.seeedstudio.com/depot/Grove-Piezo-Vibration-Sensor-p-1411.html)</td>
-    <td class="tg-yw4l">Grove - 压电振动传感器[(到Wiki)](/Grove-Piezo_Vibration_Sensor)</td>
+    <td class="tg-yw4l">Grove - 压电振动传感器[(到Wiki)](/cn/Grove-Piezo_Vibration_Sensor)</td>
   </tr>
 </table>
 
@@ -95,15 +95,15 @@ Intel Edison Arduino开发板
 
 *   [![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Serial_LEC_RGB_Backlight_Lcd.jpg)](https://www.seeedstudio.com/depot/Grove-LCD-RGB-Backlight-p-1643.html)
 
-<!-- Grove - LCD RGB背光[(到Wiki)](/Grove-LCD_RGB_Backlight) -->
+<!-- Grove - LCD RGB背光[(到Wiki)](/cn/Grove-LCD_RGB_Backlight) -->
 
 *   [![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Buzzer1.jpg)](https://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html)
 
-<!-- Grove - 蜂鸣器[(到Wiki)](/Grove-Buzzer) -->
+<!-- Grove - 蜂鸣器[(到Wiki)](/cn/Grove-Buzzer) -->
 
 *   [![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Red_LED.jpg)](https://www.seeedstudio.com/depot/Grove-Red-LED-p-1142.html)
 
-<!-- Grove - 红色 LED[(到 Wiki)](/Grove-Red_LED) -->
+<!-- Grove - 红色 LED[(到 Wiki)](/cn/Grove-Red_LED) -->
 
 
 

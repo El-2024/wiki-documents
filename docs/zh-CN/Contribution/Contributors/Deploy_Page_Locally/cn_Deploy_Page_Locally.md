@@ -64,5 +64,5 @@ yarn start
 
 ### 7. 现在您可以进行更改或添加文件
 
-- [PR 的完整步骤](/full_steps_pull_request)
-- [PR 的快速步骤](/quick_pull_request)
+- [PR 的完整步骤](/cn/full_steps_pull_request)
+- [PR 的快速步骤](/cn/quick_pull_request)

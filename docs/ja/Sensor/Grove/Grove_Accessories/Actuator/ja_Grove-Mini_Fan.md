@@ -44,7 +44,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ![](https://files.seeedstudio.com/wiki/Grove-Mini_Fan/img/Mini_fan.jpg)
 
 <dl>
-<dt>① UartSBee インターフェース: このインターフェースを使用してマイクロコントローラーのコードを変更します。[UartSBee](/UartSBee_V4) モジュールを使用して Uart インターフェースを介してマイクロコントローラーに接続します。</dt>
+<dt>① UartSBee インターフェース: このインターフェースを使用してマイクロコントローラーのコードを変更します。[UartSBee](/ja/UartSBee_V4) モジュールを使用して Uart インターフェースを介してマイクロコントローラーに接続します。</dt>
 <dt>② JST 2.0 インターフェース: 3.3 ボルト DC モーターに接続するために使用（3.3 ボルトのみ）</dt>
 <dt>③ Grove インターフェース</dt>
 <dt>④ ICSP インターフェース</dt>
@@ -59,22 +59,22 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 1. まず、JST2.0 二線式インターフェースを使用して DC モーターを **Grove - Mini Fan** モジュールに接続します。
 
-2. Mini Fan モジュールを回路の出力側（電源モジュールの右側）に接続します。回路の入力側には、センサーをベースとした入力モジュール（[Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor"), [Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor"), [Grove - Button](/Grove-Button "Grove - Button") または [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")）を使用できます。
+2. Mini Fan モジュールを回路の出力側（電源モジュールの右側）に接続します。回路の入力側には、センサーをベースとした入力モジュール（[Grove - Light Sensor](/ja/Grove-Light_Sensor "Grove - Light Sensor"), [Grove - Sound Sensor](/ja/Grove-Sound_Sensor "Grove - Sound Sensor"), [Grove - Button](/ja/Grove-Button "Grove - Button") または [Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")）を使用できます。
 
 3. 回路に電源を供給します。
 
 4. 入力モジュールがトリガーを供給すると DC モーターが回転を開始します：
 
-* [Grove - Button](/Grove-Button "Grove - Button") モジュールのようなモーメンタリースイッチを使用する場合、ボタンを押すだけでモーターが ON になります。
+* [Grove - Button](/ja/Grove-Button "Grove - Button") モジュールのようなモーメンタリースイッチを使用する場合、ボタンを押すだけでモーターが ON になります。
 
-* [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") を使用する場合、スライダーを GND 位置から VCC 位置に移動すると、供給電圧が増加するにつれてモーターの速度が上がります。柔らかい羽根のファンを取り付ければ、熱を和らげるために好きな速度で動作する可変速度の個人用ファンが完成します！
+* [Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") を使用する場合、スライダーを GND 位置から VCC 位置に移動すると、供給電圧が増加するにつれてモーターの速度が上がります。柔らかい羽根のファンを取り付ければ、熱を和らげるために好きな速度で動作する可変速度の個人用ファンが完成します！
 
-* 回路の入力側に直接接続された [Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor") を使用する場合、明るい光の中でモーターが動作し、暗闇では停止することが確認できます：
+* 回路の入力側に直接接続された [Grove - Light Sensor](/ja/Grove-Light_Sensor "Grove - Light Sensor") を使用する場合、明るい光の中でモーターが動作し、暗闇では停止することが確認できます：
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mini_Fan/img/Light_Sensitive_Fan.gif)
 
 * モーターを暗闇でのみ動作させたい場合は、光センサーと電源モジュールの間に Grove - NOT モジュールを追加します。
-* [Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor") を使用する場合、音を検出するとモーターが動作することが確認できます。逆の動作、つまり音がある場合を除いて常にモーターを ON にしたい場合は、音センサーと電源モジュールの間に Grove - NOT モジュールを追加します。
+* [Grove - Sound Sensor](/ja/Grove-Sound_Sensor "Grove - Sound Sensor") を使用する場合、音を検出するとモーターが動作することが確認できます。逆の動作、つまり音がある場合を除いて常にモーターを ON にしたい場合は、音センサーと電源モジュールの間に Grove - NOT モジュールを追加します。
 
 Grove 回路には Grove - USB Power モジュールまたは Grove - DC Jack Power モジュールを使用できます。
 

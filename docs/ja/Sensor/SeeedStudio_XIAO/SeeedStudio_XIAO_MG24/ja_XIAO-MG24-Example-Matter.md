@@ -53,7 +53,7 @@ XIAO MG24上でMatterアプリケーションを開発するには、以下の�
 必要なソフトウェアには、**Silicon LabsのArduino Coreを備えたArduino IDE**が含まれます：
 
 - まだインストールされていない場合は、[Silicon Labs Arduino Core](https://github.com/SiliconLabs/arduino)をダウンロードしてセットアップし、XIAO MG24との互換性を確保してください。
-- 詳細なセットアップ手順については、[Getting Started Guide](/xiao_mg24_getting_started/#add-board)をご参照ください。
+- 詳細なセットアップ手順については、[Getting Started Guide](/ja/xiao_mg24_getting_started/#add-board)をご参照ください。
 
 Matterプロトコルスタックを選択することを忘れないでください：
 
@@ -184,7 +184,7 @@ Matterに初めて触れる方は、以下のリソースがMatterエコシス�
 - **[Matter開発者ジャーニー](https://www.silabs.com/wireless/matter/matter-developer-journey)**: 必要なツール、リソース、効果的な実装のためのベストプラクティスを含む、Matter開発プロセスの包括的なガイドです。
 - **[Matter仕様書](https://csa-iot.org/developer-resource/specifications-download-request/)**: Matterプロトコルとそのコンポーネントに関する技術仕様書です。このリソースは、プロトコルの機能と運用の詳細を理解するための主要な資料です。
 - **[デバイスデータモデル - Google Home Developers](https://developers.home.google.com/matter/primer/device-data-model)**: デバイスの機能や特性がMatterエコシステム内でどのように標準化されているかを詳しく説明した資料です。
-- **[Matter開発フレームワーク概要](/matter_development_framework)**: XIAO ESP32C6向けのMatter開発フレームワークに特化したガイドで、Matterデバイス開発の代替アプローチを提供します。
+- **[Matter開発フレームワーク概要](/ja/matter_development_framework)**: XIAO ESP32C6向けのMatter開発フレームワークに特化したガイドで、Matterデバイス開発の代替アプローチを提供します。
 
 ## 技術サポートと製品ディスカッション
 

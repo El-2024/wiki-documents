@@ -30,7 +30,7 @@ El Zumbador - Grove tiene un [zumbador piezoeléctrico](https://en.wikipedia.org
 - Utiliza cables Grove estándar de 4 pines para conectarse a otros módulos Grove, como [Grove Power Modules](/Grove_System/) y la Shield Base- Grove.
 
 Consejo:
-Para más información sobre los módulos Grove, por favor visite [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/)
+Para más información sobre los módulos Grove, por favor visite [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/)
 
 ## Especificaciones
 
@@ -114,7 +114,7 @@ void loop()
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), añade soporte para Arduino y arrastra un procedimiento principal al área de trabajo.
 
 Nota:
-Si es tu primera vez usando Codecraft, ve también [Guía para Codecraft usando Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía para Codecraft usando Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra los bloques como se muestra en la imagen o abre el archivo cdc que puedes descargar al final de esta página.
 
@@ -143,7 +143,7 @@ Cuando el código termine de cargarse, podrás escuchar al zumbador sonar de man
 
 #### Software
 
-- **Paso 1**. Sigue [Configuración de Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Sigue [Configuración de Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 - **Paso 2**. Descarga el archivo fuente clonando la librería grove.py
 
 ```

@@ -306,10 +306,10 @@ reTerminal E1002 配有支撑架配件，允许您将设备直立放置以获得
 
 ## 资源
 
-- [reTerminal E1002 原理图 (PDF)](/getting_started_with_reterminal_e1002)
-- [ESP32S3 数据手册](/getting_started_with_reterminal_e1002)
+- [reTerminal E1002 原理图 (PDF)](/cn/getting_started_with_reterminal_e1002)
+- [ESP32S3 数据手册](/cn/getting_started_with_reterminal_e1002)
 - [SenseCraft HMI 平台文档](https://wiki.seeedstudio.com/cn/sensecraft_hmi_overview)
-- [GitHub 仓库](/getting_started_with_reterminal_e1002)
+- [GitHub 仓库](/cn/getting_started_with_reterminal_e1002)
 
 ## 技术支持与产品讨论
 

@@ -177,13 +177,13 @@ DSO Quadのアプリケーション開発に関する情報も参照してくだ
 ## ファームウェアのアップグレード
 
 ---
-この手順は現在、Windowsでのみ動作します。[Linux用の手順はこちら](/DSO_Quad#upgrading-firmware "DSO_Quad/#upgrading-firmware")。(2011-04-29) LinuxやMacでアップグレードディスクが動作するようになれば、初心者向けにこのプロセスを自動化するアプリケーションを作成するのは非常に簡単になるでしょう。また、アップグレードプログラムがハードウェアバージョンを確認し、誤ったファームウェアのアップロードを防ぐことも可能になるかもしれません。
+この手順は現在、Windowsでのみ動作します。[Linux用の手順はこちら](/ja/DSO_Quad#upgrading-firmware "DSO_Quad/#upgrading-firmware")。(2011-04-29) LinuxやMacでアップグレードディスクが動作するようになれば、初心者向けにこのプロセスを自動化するアプリケーションを作成するのは非常に簡単になるでしょう。また、アップグレードプログラムがハードウェアバージョンを確認し、誤ったファームウェアのアップロードを防ぐことも可能になるかもしれません。
 
 ### ファームウェアの入手先
 
 [最新のファームウェアはこちら](https://files.seeedstudio.com/wiki/DSO_Quad/res/PA1_V113.zip)。
 
-また、[ソースからファームウェアをビルドする](/DSO_Quad-Building_Firmware "DSO Quad:Building Firmware")こともできます。
+また、[ソースからファームウェアをビルドする](/ja/DSO_Quad-Building_Firmware "DSO Quad:Building Firmware")こともできます。
 
 ### バージョンに関する警告
 
@@ -197,7 +197,7 @@ DSO Quadのアプリケーション開発に関する情報も参照してくだ
 
 すべてのファームウェアファイルのアップロードが完了したら、デバイスをオフにしてアップグレードを完了します。再度デバイスを起動すると、ファームウェアバージョンが更新されているはずです。スプラッシュスクリーンでエラーが発生した場合は、上記の手順を慎重に従ってファームウェアを再度アップロードしてください。
 
-詳細およびLinuxの手順はこちら: [DSO_Quad:Upgrading_Firmware](/DSO_Quad#upgrading-firmware "DSO_Quad/#upgrading-firmware")
+詳細およびLinuxの手順はこちら: [DSO_Quad:Upgrading_Firmware](/ja/DSO_Quad#upgrading-firmware "DSO_Quad/#upgrading-firmware")
 
 ### ファイルの説明
 

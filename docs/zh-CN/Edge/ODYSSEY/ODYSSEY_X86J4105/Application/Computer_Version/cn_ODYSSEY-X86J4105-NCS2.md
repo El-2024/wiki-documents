@@ -17,7 +17,7 @@ last_update:
 
 ## 设置软件环境
 
-要使用 Intel NCS2，请首先完成 [为 ODYSSEY - X86J41x5 安装 Intel® Distribution of OpenVINO™ 工具包](/ODYSSEY-X86J4105-NCS2) 并配置所有依赖的软件环境。
+要使用 Intel NCS2，请首先完成 [为 ODYSSEY - X86J41x5 安装 Intel® Distribution of OpenVINO™ 工具包](/cn/ODYSSEY-X86J4105-NCS2) 并配置所有依赖的软件环境。
 <!-- 上述链接有误 -->
 
 如果您已经完成了教程，请按照以下说明操作。

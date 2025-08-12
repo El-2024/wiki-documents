@@ -22,15 +22,15 @@ last_update:
 导出的模型类型，例如 `--targets onnx` 或 `--targets tflite`。
 :::
 
-- [PyTorch 转 ONNX](/ModelAssistant_Tutorials_Export_PyTorch_2_ONNX)：将 PyTorch 模型和 `.pth`
+- [PyTorch 转 ONNX](/cn/ModelAssistant_Tutorials_Export_PyTorch_2_ONNX)：将 PyTorch 模型和 `.pth`
   权重转换为 ONNX 模型 `.onnx`
 
-- [PyTorch 转 TFLite](/ModelAssistant_Tutorials_Export_PyTorch_2_TFLite)：将 PyTorch 模型和 `.pth`
+- [PyTorch 转 TFLite](/cn/ModelAssistant_Tutorials_Export_PyTorch_2_TFLite)：将 PyTorch 模型和 `.pth`
   权重转换为 TFLite 模型 `.tflite`
 
 :::tip
 在开始导出模型之前，您需要完成
-[训练](/ModelAssistant_Tutorials_Training_Overview) 部分并获得模型权重 `.pth` 文件
+[训练](/cn/ModelAssistant_Tutorials_Training_Overview) 部分并获得模型权重 `.pth` 文件
 才能开始导出。
 
 :::

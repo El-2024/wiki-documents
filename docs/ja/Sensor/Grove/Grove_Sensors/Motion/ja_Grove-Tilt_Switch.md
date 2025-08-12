@@ -350,7 +350,7 @@ KeyboardInterrupt
 :::
 1. Raspberry Pi と Grovepi または Grovepi+ を用意してください。
 
-2. 開発環境の設定を完了している必要があります。設定がまだの場合は [こちら](/GrovePi_Plus/) を参照してください。
+2. 開発環境の設定を完了している必要があります。設定がまだの場合は [こちら](/ja/GrovePi_Plus/) を参照してください。
 
 3. 接続
 

@@ -60,7 +60,7 @@ SenseCAP S2110 传感器构建器是一个突破性的解决方案，能够融�
 
 我们正在寻找更多的 Grove 模块添加到 Builder 中。如果您能加入我们，我们将深感荣幸！查看下面的信息并向我们贡献您的作品（这属于 [Seeed Studio 贡献者计划](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=34120904)）！
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/list_of_supported_grove_n_adding_more"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 开始使用 </font></span></strong></a> <a class="get_one_now_item" href="https://github.com/Seeed-Studio/Seeed_Arduino_S2110"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 源代码 </font></span></strong></a> <a class="get_one_now_item" href="https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=34120904"><strong><span><font color={'FFFFFF'} size={"4"}> 🙋 贡献者 </font></span></strong></a> </div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/cn/list_of_supported_grove_n_adding_more"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 开始使用 </font></span></strong></a> <a class="get_one_now_item" href="https://github.com/Seeed-Studio/Seeed_Arduino_S2110"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 源代码 </font></span></strong></a> <a class="get_one_now_item" href="https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=34120904"><strong><span><font color={'FFFFFF'} size={"4"}> 🙋 贡献者 </font></span></strong></a> </div>
 
 
 ### 使用 RS485 与 XIAO RP2040 开发板进行开发

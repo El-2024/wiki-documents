@@ -25,17 +25,17 @@ last_update:
 
 以下是您可以在 Seeed WiKi 中找到的 LinkIt 开发板列表。该列表将不断更新。
 
-- [适用于 LinkIt Smart 7688 Duo 的 Arduino 扩展板](/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
-- [适用于 LinkIt Smart 7688 的扩展板](/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
-- [适用于 LinkIt Smart 7688 v2.0 的扩展板](/Breakout_for_LinkIt_Smart_7688_v2.0/)
-<!-- - [Grove - LinkIt ONE 入门套件](/_Grove-Starter_Kit_for_LinkIt_ONE/) -->
-<!-- - [Grove LinkIt Smart 7688 Duo 扩展板](/_Grove_Breakout_for_LinkIt_Smart_7688_Duo/) -->
-- [Grove LinkIt Smart7688 Duo 入门套件](/Grove_Starter_kit_for_LinkIt_Smart7688_Duo/)
-<!-- - [LinkIt ONE](/LinkIt_ONE/) -->
-<!-- - [LinkIt Smart 7688](/LinkIt_Smart_7688/) -->
-<!-- - [LinkIt Smart 7688 Duo](/LinkIt_Smart_7688_Duo/) -->
-<!-- - [Linkit Connect 7681](/Linkit_Connect_7681/) -->
-<!-- - [LinkIt ONE 的 Sidekick 基础套件](/Sidekick_Basic_Kit_for_LinkIt_ONE/) -->
+- [适用于 LinkIt Smart 7688 Duo 的 Arduino 扩展板](/cn/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
+- [适用于 LinkIt Smart 7688 的扩展板](/cn/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
+- [适用于 LinkIt Smart 7688 v2.0 的扩展板](/cn/Breakout_for_LinkIt_Smart_7688_v2.0/)
+<!-- - [Grove - LinkIt ONE 入门套件](/cn/_Grove-Starter_Kit_for_LinkIt_ONE/) -->
+<!-- - [Grove LinkIt Smart 7688 Duo 扩展板](/cn/_Grove_Breakout_for_LinkIt_Smart_7688_Duo/) -->
+- [Grove LinkIt Smart7688 Duo 入门套件](/cn/Grove_Starter_kit_for_LinkIt_Smart7688_Duo/)
+<!-- - [LinkIt ONE](/cn/LinkIt_ONE/) -->
+<!-- - [LinkIt Smart 7688](/cn/LinkIt_Smart_7688/) -->
+<!-- - [LinkIt Smart 7688 Duo](/cn/LinkIt_Smart_7688_Duo/) -->
+<!-- - [Linkit Connect 7681](/cn/Linkit_Connect_7681/) -->
+<!-- - [LinkIt ONE 的 Sidekick 基础套件](/cn/Sidekick_Basic_Kit_for_LinkIt_ONE/) -->
 
 感谢您选择我们的产品！我们提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
 

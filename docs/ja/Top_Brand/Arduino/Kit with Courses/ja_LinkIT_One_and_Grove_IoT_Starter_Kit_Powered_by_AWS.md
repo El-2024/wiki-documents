@@ -25,7 +25,7 @@ sku:
 --- -->
 ![](https://files.seeedstudio.com/wiki/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/Aws_linkit_cover.JPG)
 
-_主な参考資料: [Grove IoTスターターキット（AWS対応）](/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoTスターターキット（AWS対応）"), [LinkIt ONE](https://wiki.seeedstudio.com/ja/LinkIt_ONE/ "LinkIt ONE"), [MediaTek AWS IoTガイド](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit/hdk_intro/aws_kit/index.gsp)_
+_主な参考資料: [Grove IoTスターターキット（AWS対応）](/ja/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoTスターターキット（AWS対応）"), [LinkIt ONE](https://wiki.seeedstudio.com/ja/LinkIt_ONE/ "LinkIt ONE"), [MediaTek AWS IoTガイド](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit/hdk_intro/aws_kit/index.gsp)_
 
 **LinkIt ONE**開発ボードは、ウェアラブルおよびIoT製品のプロトタイピング向けのオープンソースで高性能な開発ボードです。このボードはMT2502（ARM7EJ-S™ MCU）をベースにしており、GSM、GPRS、Wi-Fi、Bluetooth BR/EDR/BLE、GPS、オーディオデコーダー、SDカードコネクタを1つの開発ボードに統合しています。このキットを使用すると、スマートシティ、輸送、物流に関連する通信を含むクラウドコンピューティング接続プロジェクトを構築できます。
 
@@ -204,15 +204,15 @@ File&gt;Sketchbook&gt;aws_paho_shadow をクリックしてコードを開きま
 
 必要な材料:
 
-* [Base Shield v2.0](/Base_Shield_V2)、Base Shield ボードの隅にあるスイッチを 3V3 に設定します。
+* [Base Shield v2.0](/ja/Base_Shield_V2)、Base Shield ボードの隅にあるスイッチを 3V3 に設定します。
 
-* [Grove - Touch Sensor](/Grove-Touch_Sensor) を D6 に接続します。
+* [Grove - Touch Sensor](/ja/Grove-Touch_Sensor) を D6 に接続します。
 
 * [Grove - LED Bar](/ja/Grove-LED_Bar) を D2 に接続します。
 
 ### コードをアップロードする
 
-**ヒント:** ライブラリファイル（またはヘッダーファイル）の不足エラーが表示された場合は、[こちら](/Guide_to_use_demos_downloaded_from_Seeed-s_Github)を参照してください。
+**ヒント:** ライブラリファイル（またはヘッダーファイル）の不足エラーが表示された場合は、[こちら](/ja/Guide_to_use_demos_downloaded_from_Seeed-s_Github)を参照してください。
 LinkIt ONE を PC に接続し、最初に Wi-Fi アンテナを挿入することを忘れないでください。デバイスマネージャーを開くと、2つの COM ポートが表示されます。
 
 ![](https://files.seeedstudio.com/wiki/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/AWS_LinkIt_starter_kit_find_COM_port.jpg)

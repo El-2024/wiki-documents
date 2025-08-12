@@ -61,7 +61,7 @@ MediaTek Labsの閉鎖により、関連リンクはすべて無効になって�
 
 **Groveインターフェース**
 
-<!-- 豊富な[Grove](/Grove_System)インターフェースの機能モジュールを接続できます。このようなポートを使用することで、ジャンパーワイヤやはんだ付け作業が不要になり、これらの機能モジュールを使用してより強力なアプリケーションを作成できます。 -->
+<!-- 豊富な[Grove](/ja/Grove_System)インターフェースの機能モジュールを接続できます。このようなポートを使用することで、ジャンパーワイヤやはんだ付け作業が不要になり、これらの機能モジュールを使用してより強力なアプリケーションを作成できます。 -->
 
 :::note
     **注意** 次回の製品バージョンでは、このボードにオーディオ録音機能を追加する予定です。
@@ -99,7 +99,7 @@ MediaTek Labsの閉鎖により、関連リンクはすべて無効になって�
 
 ### 音楽を再生する
 
-<!-- 1.[こちら](/LinkIt_Smart_7688#Getting_Started)を参照して、LinkIt Smart 7688をインターネットに接続します。 -->
+<!-- 1.[こちら](/ja/LinkIt_Smart_7688#Getting_Started)を参照して、LinkIt Smart 7688をインターネットに接続します。 -->
 
 :::note
     - ジャンパーワイヤをMT7688 UART2ポートに差し込むことで、Pin 8、Pin 9、Pin GNDに直接はんだ付けする必要がなくなります。
@@ -126,7 +126,7 @@ MediaTek Labsの閉鎖により、関連リンクはすべて無効になって�
 
 *   [回路図ファイル](https://files.seeedstudio.com/wiki/Breakout_for_LinkIt_Smart_7688/res/Breakout_for_LinkIt_Smart_7688_v2.0_schematic_files.zip)
 
-<!-- *   [LinkIt smart 7688](/LinkIt_Smart_7688) -->
+<!-- *   [LinkIt smart 7688](/ja/LinkIt_Smart_7688) -->
 
 *   [OpenWrt](http://wiki.openwrt.org/doc/howto/user.beginner)
 

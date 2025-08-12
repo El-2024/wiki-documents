@@ -21,7 +21,7 @@ sku:
 --- -->
 ![](https://files.seeedstudio.com/wiki/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/Aws_kit_wiki_cover.JPG)
 
-_主要文章：从这里开始 [Grove IoT 入门套件，由 AWS 提供支持](/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoT 入门套件，由 AWS 提供支持") , [Intel Edison](https://software.intel.com/en-us/iot/library/edison-getting-started)_
+_主要文章：从这里开始 [Grove IoT 入门套件，由 AWS 提供支持](/cn/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoT 入门套件，由 AWS 提供支持") , [Intel Edison](https://software.intel.com/en-us/iot/library/edison-getting-started)_
 
 专为专业创客、企业家和工业物联网公司设计，Intel Edison 模块通过完全开源的硬件和软件开发环境提供更简便的原型制作。它支持 Wi-Fi 和 BLE 4.0 连接。该套件包含十一个精选的 Grove 传感器和执行器，供您跟踪室内环境以及创建智能家居应用。
 
@@ -34,18 +34,18 @@ _主要文章：从这里开始 [Grove IoT 入门套件，由 AWS 提供支持](
 | 部件                                                                                                                                                                      | Wiki                                                                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | [Intel® Edison for Arduino](https://www.seeedstudio.com/depot/Intel-Edison-for-Arduino-p-2149.html)                                                                         | [点击阅读](https://software.intel.com/en-us/iot/library/edison-getting-started)                                                         |
-| [Base Shield](https://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html?cPath=98_16)                                                                                     | [点击阅读](/Base_Shield_V2 "Base shield v2")                                                                                           |
-| [Grove - Temperature&Humidity Sensor (High-Accuracy & Mini)](https://www.seeedstudio.com/depot/Grove-TemperatureHumidity-Sensor-HighAccuracy-Mini-p-1921.html?cPath=25_125) | [点击阅读](/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0 "Grove - Tempture&Humidity Sensor (High-Accuracy &Mini) v1.0") |
-| [Grove - Moisture Sensor](https://www.seeedstudio.com/depot/Grove-Moisture-Sensor-p-955.html?cPath=25_27)                                                                   | [点击阅读](/Grove-Moisture_Sensor "Grove - Moisture Sensor")                                                                           |
-| [Grove - Light Sensor](https://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html?cPath=25_27)                                                                         | [点击阅读](/Grove-Light_Sensor "Grove - Light Sensor")                                                                                 |
-| [Grove - UV Sensor](https://www.seeedstudio.com/depot/Grove-UV-Sensor-p-1540.html?cPath=25_27)                                                                              | [点击阅读](/Grove-UV_Sensor "Grove - UV Sensor")                                                                                       |
-| [Grove - PIR Motion Sensor](https://www.seeedstudio.com/depot/Grove-PIR-Motion-Sensor-p-802.html?cPath=25_31)                                                               | [点击阅读](/Grove-PIR_Motion_Sensor "Grove - PIR Motion Sensor")                                                                       |
-| [Grove - Encoder](https://www.seeedstudio.com/depot/Grove-Encoder-p-1352.html?cPath=85_52)                                                                                  | [点击阅读](/Grove-Encoder "Grove - Encoder")                                                                                           |
-| [Grove - Button](https://www.seeedstudio.com/depot/Grove-Button-p-766.html)                                                                                                 | [点击阅读](/Grove-Button "Grove - Button")                                                                                             |
-| [Grove - LCD RGB Backlight](https://www.seeedstudio.com/depot/Grove-LCD-RGB-Backlight-p-1643.html?cPath=34_36)                                                              | [点击阅读](/Grove-LCD_RGB_Backlight "Grove - LCD RGB Backlight")                                                                       |
-| [Grove - Relay](https://www.seeedstudio.com/depot/Grove-Relay-p-769.html?cPath=39_42)                                                                                       | [点击阅读](/Grove-Relay "Grove - Relay")                                                                                               |
-| [Grove - Servo](https://www.seeedstudio.com/depot/Grove-Servo-p-1241.html?cPath=39_41)                                                                                      | [点击阅读](/Grove-Servo "Grove - Servo")                                                                                               |
-| [Grove - Buzzer](https://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html?cPath=38)                                                                                        | [点击阅读](/Grove-Buzzer "Grove - Buzzer")                                                                                             |
+| [Base Shield](https://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html?cPath=98_16)                                                                                     | [点击阅读](/cn/Base_Shield_V2 "Base shield v2")                                                                                           |
+| [Grove - Temperature&Humidity Sensor (High-Accuracy & Mini)](https://www.seeedstudio.com/depot/Grove-TemperatureHumidity-Sensor-HighAccuracy-Mini-p-1921.html?cPath=25_125) | [点击阅读](/cn/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0 "Grove - Tempture&Humidity Sensor (High-Accuracy &Mini) v1.0") |
+| [Grove - Moisture Sensor](https://www.seeedstudio.com/depot/Grove-Moisture-Sensor-p-955.html?cPath=25_27)                                                                   | [点击阅读](/cn/Grove-Moisture_Sensor "Grove - Moisture Sensor")                                                                           |
+| [Grove - Light Sensor](https://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html?cPath=25_27)                                                                         | [点击阅读](/cn/Grove-Light_Sensor "Grove - Light Sensor")                                                                                 |
+| [Grove - UV Sensor](https://www.seeedstudio.com/depot/Grove-UV-Sensor-p-1540.html?cPath=25_27)                                                                              | [点击阅读](/cn/Grove-UV_Sensor "Grove - UV Sensor")                                                                                       |
+| [Grove - PIR Motion Sensor](https://www.seeedstudio.com/depot/Grove-PIR-Motion-Sensor-p-802.html?cPath=25_31)                                                               | [点击阅读](/cn/Grove-PIR_Motion_Sensor "Grove - PIR Motion Sensor")                                                                       |
+| [Grove - Encoder](https://www.seeedstudio.com/depot/Grove-Encoder-p-1352.html?cPath=85_52)                                                                                  | [点击阅读](/cn/Grove-Encoder "Grove - Encoder")                                                                                           |
+| [Grove - Button](https://www.seeedstudio.com/depot/Grove-Button-p-766.html)                                                                                                 | [点击阅读](/cn/Grove-Button "Grove - Button")                                                                                             |
+| [Grove - LCD RGB Backlight](https://www.seeedstudio.com/depot/Grove-LCD-RGB-Backlight-p-1643.html?cPath=34_36)                                                              | [点击阅读](/cn/Grove-LCD_RGB_Backlight "Grove - LCD RGB Backlight")                                                                       |
+| [Grove - Relay](https://www.seeedstudio.com/depot/Grove-Relay-p-769.html?cPath=39_42)                                                                                       | [点击阅读](/cn/Grove-Relay "Grove - Relay")                                                                                               |
+| [Grove - Servo](https://www.seeedstudio.com/depot/Grove-Servo-p-1241.html?cPath=39_41)                                                                                      | [点击阅读](/cn/Grove-Servo "Grove - Servo")                                                                                               |
+| [Grove - Buzzer](https://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html?cPath=38)                                                                                        | [点击阅读](/cn/Grove-Buzzer "Grove - Buzzer")                                                                                             |
 | USB 线缆；480mm-黑色                                                                                                                                                     |                                                                                                                                          |
 | USB 墙式电源适配器                                                                                                                                                      |                                                                                                                                          |
 
@@ -93,7 +93,7 @@ _主要文章：从这里开始 [Grove IoT 入门套件，由 AWS 提供支持](
 
 6.创建一个物品
 
-在这一部分，您也可以参考[Beagle Bone wiki](/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS)了解另一种创建物品和完成剩余任务的方法。不同之处在于Beagle Bone没有使用AWS CLI工具来获取证书。
+在这一部分，您也可以参考[Beagle Bone wiki](/cn/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS)了解另一种创建物品和完成剩余任务的方法。不同之处在于Beagle Bone没有使用AWS CLI工具来获取证书。
 
 ![](https://files.seeedstudio.com/wiki/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/AWS_Edison_starter_kit_create_a_thing1.png)
 
@@ -438,7 +438,7 @@ function sendData(){
 
 * **[PDF]** [AWS IoT 开发者指南](https://files.seeedstudio.com/wiki/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS/res/AWS_IoT_Developer_Guide.pdf)
 
-* [Wiki]<a href="/Grove_IoT_Starter_Kits_Powered_by_AWS" target="_blank"><span><font color={'000000'} size={"3"}> Grove IoT 入门套件（由 AWS 驱动）主页面 </font></span></a>
+* [Wiki]<a href="/cn/Grove_IoT_Starter_Kits_Powered_by_AWS" target="_blank"><span><font color={'000000'} size={"3"}> Grove IoT 入门套件（由 AWS 驱动）主页面 </font></span></a>
 
 * [Edison 入门指南](https://software.intel.com/en-us/iot/library/edison-getting-started)
 

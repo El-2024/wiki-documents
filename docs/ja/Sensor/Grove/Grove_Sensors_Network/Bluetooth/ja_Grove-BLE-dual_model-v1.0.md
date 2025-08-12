@@ -78,12 +78,12 @@ BLEの伝送速度はSPPの伝送速度よりも遅いため、設計時にBLE�
 
 ### UART Beeを介してPCにBluetoothを接続する
 
-Bluetoothは標準的なGroveソケットを備えたシリアルポートを提供しており、ほとんどのUSB-UARTコンバータが使用可能です。ここでは[UartSBee V5](/UartSBee_v5)を使用してBluetoothとPCを接続します。
+Bluetoothは標準的なGroveソケットを備えたシリアルポートを提供しており、ほとんどのUSB-UARTコンバータが使用可能です。ここでは[UartSBee V5](/ja/UartSBee_v5)を使用してBluetoothとPCを接続します。
 ![](https://files.seeedstudio.com/wiki/Grove-BLE-dual_model-v1.0/img/Grove-BLE-dual_model-v1.0_ConnectToPC.jpg)
 
 ### ArduinoにBluetoothを接続する
 
-Arduino UnoにはGroveソケットがないため、代わりに<a href="/Seeeduino_Lotus"><span><font color={'8DC215'} size={"3"}> Seeeduino Lotus </font></span></a>を使用します。また、Arduinoを**Grove Base Shield V2**と一緒に使用することもできます。
+Arduino UnoにはGroveソケットがないため、代わりに<a href="/ja/Seeeduino_Lotus"><span><font color={'8DC215'} size={"3"}> Seeeduino Lotus </font></span></a>を使用します。また、Arduinoを**Grove Base Shield V2**と一緒に使用することもできます。
 例として、D2とD3をソフトウェアUARTとして使用します。そのため、Groveケーブルを「D2」ソケットに差し込みます。
 
 ![](https://files.seeedstudio.com/wiki/Grove-BLE-dual_model-v1.0/img/Grove-BLE-dual_model-v1.0_ConnectToArduino.jpg)
@@ -1130,7 +1130,7 @@ Bluetoothを電源に接続し、ペリフェラルモードに設定します�
 
 初期化後、セントラルとペリフェラルは異なる動作をします。セントラルは一定間隔でペリフェラルにメッセージを送信し、ペリフェラルから受信した内容を印刷します。一方、ペリフェラルはセントラルに応答するだけです。
 
-[こちら](https://github.com/Seeed-Studio/HM-13_SW)をクリックしてテストコードをダウンロードし、Arduino IDEでHM-13/_SW.inoを開き、コンパイルしてArduino Unoにダウンロードしてください。プログラムの冒頭でマクロを変更してBluetoothを異なる役割に設定することを忘れないでください。Arduinoの使い方に関して問題がある場合は、<a href="/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}>こちら</font></span></a>をクリックしてヘルプを参照してください。
+[こちら](https://github.com/Seeed-Studio/HM-13_SW)をクリックしてテストコードをダウンロードし、Arduino IDEでHM-13/_SW.inoを開き、コンパイルしてArduino Unoにダウンロードしてください。プログラムの冒頭でマクロを変更してBluetoothを異なる役割に設定することを忘れないでください。Arduinoの使い方に関して問題がある場合は、<a href="/ja/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}>こちら</font></span></a>をクリックしてヘルプを参照してください。
 
 プログラムをダウンロードした後、2つのシリアルターミナルウィンドウを開きます。BluetoothのLEDが点滅し、数秒後に点滅が停止して点灯し続けます。これは、互いに接続されたことを示します。
 プログラムに記述されている通り、セントラルはペリフェラルに継続的にメッセージを送信し、毎回フィードバックを受け取ります。

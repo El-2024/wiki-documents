@@ -49,7 +49,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-AHT20-I2C-Industrial-grade-temperature-and-humidity-sensor-p-4497.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 温度 & 湿度センサー (SHT31)
@@ -67,7 +67,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-SHT31.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-TempAndHumi_Sensor-SHT31/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-TempAndHumi_Sensor-SHT31/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - I2C 高精度温度 & 湿度センサー (SHT35)
@@ -85,7 +85,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temp-Humi-Sensor-SHT35.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C_High_Accuracy_Temp%26Humi_Sensor-SHT35/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-I2C_High_Accuracy_Temp%26Humi_Sensor-SHT35/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 温度 & 湿度センサー Pro (DHT22)
@@ -103,7 +103,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-Pro-AM2302-DHT22.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Temperature_and_Humidity_Sensor_Pro/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Temperature_and_Humidity_Sensor_Pro/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -123,7 +123,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-TemperatureAndHumidity_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-TemperatureAndHumidity_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -143,7 +143,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Temperature-Humidity-Sensor-DH20/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Temperature-Humidity-Sensor-DH20/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -164,7 +164,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-High-Accuracy-Mini.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -184,7 +184,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temp-Humi-Sensor-SHT40-p-5384.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-SHT4x/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-SHT4x/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -207,7 +207,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-1-Wire-Thermocouple-Amplifier-MAX31850K.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-1-Wire_Thermocouple_Amplifier-MAX31850K/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-1-Wire_Thermocouple_Amplifier-MAX31850K/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - I2C 熱電対アンプ (MCP9600)
@@ -225,7 +225,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Thermocouple-Amplifier-MCP9600.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C_Thermocouple_Amplifier-MCP9600/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-I2C_Thermocouple_Amplifier-MCP9600/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### ワイヤー温度センサー DS18B20
@@ -243,7 +243,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/One-Wire-Temperature-Sensor-p-1235.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/One-Wire-Temperature-Sensor-DS18B20/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/One-Wire-Temperature-Sensor-DS18B20/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 高温センサー
@@ -261,7 +261,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-High-Temperature-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-High_Temperature_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-High_Temperature_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - サーマルイメージングカメラ IR-アレイ MLX90641
@@ -279,7 +279,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Thermal-Imaging-Camera-IR-Array-MLX90641-110-degree-p-4612.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Thermal-Imaging-Camera-IR-Array/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Thermal-Imaging-Camera-IR-Array/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - デジタル赤外線温度センサー
@@ -297,7 +297,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Digital-Infrared-Temperature-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Digital_Infrared_Temperature_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Digital_Infrared_Temperature_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 赤外線温度センサー
@@ -315,7 +315,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Temperature-Sensor-p-1058.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Infrared_Temperature_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Infrared_Temperature_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -335,7 +335,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Temperature-Sensor-Array-AMG8833.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Infrared_Temperature_Sensor_Array-AMG8833/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Infrared_Temperature_Sensor_Array-AMG8833/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -355,7 +355,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Temperature_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Temperature_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -375,7 +375,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Temperature_Sensor_V1.2/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Temperature_Sensor_V1.2/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -395,7 +395,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temperature-Sensor-MCP9808.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -418,7 +418,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-All-in-one-Environmental-Sensor-SEN54-p-5374.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove_SEN5X_All_in_One/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove_SEN5X_All_in_One/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 温度・湿度・気圧・ガスセンサー (BME680)
@@ -436,7 +436,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Pressure-and-Gas-Sensor-for-Arduino-BME680.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - CO2 & 温度・湿度センサー (SCD41)
@@ -454,7 +454,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD41-p-5025.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-CO2_&_Temperature_&_Humidity_Sensor-SCD41/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-CO2_&_Temperature_&_Humidity_Sensor-SCD41/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - CO2 & 温度・湿度センサー (SCD30)
@@ -472,7 +472,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-CO2_Temperature_Humidity_Sensor-SCD30/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-CO2_Temperature_Humidity_Sensor-SCD30/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 光・ジェスチャー・カラー・近接センサー (TMG39931)
@@ -490,7 +490,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Light-Color-Proximity-Sensor-TMG39931-p-2879.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ### AI搭載
@@ -510,7 +510,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-p-5457.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Vision-AI-Module/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Vision-AI-Module/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove Vision AI Module V2
@@ -529,7 +529,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove_vision_ai_v2/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/grove_vision_ai_v2/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -549,7 +549,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Smart-IR-Gesture-Sensor-p-5721.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove_gesture_paj7660/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/grove_gesture_paj7660/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -572,7 +572,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Capacitive-Moisture-Sensor-Corrosion-Resistant-p-2580.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Capacitive_Moisture_Sensor-Corrosion-Resistant/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Capacitive_Moisture_Sensor-Corrosion-Resistant/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -592,7 +592,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Moisture-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Moisture_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Moisture_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -614,7 +614,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Ultrasonic_Ranger/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Ultrasonic_Ranger/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -633,7 +633,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-IR-Distance-Interrupter-p-1278.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-IR_Distance_Interrupter_v1.2/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-IR_Distance_Interrupter_v1.2/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -653,7 +653,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeedstudio-Grove-TF-Mini-LiDAR.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-TF_Mini_LiDAR/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-TF_Mini_LiDAR/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -673,7 +673,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Doppler-Radar-BGT24LTR11-p-4572.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Doppler-Radar/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Doppler-Radar/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -693,7 +693,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Time-of-Flight-Distance-Sensor-VL53L0X.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Time_of_Flight_Distance_Sensor-VL53L0X/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Time_of_Flight_Distance_Sensor-VL53L0X/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -713,7 +713,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-80cm-Infrared-Proximity-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-80cm_Infrared_Proximity_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-80cm_Infrared_Proximity_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -733,7 +733,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Gesture-PAJ7620U2.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Gesture_v1.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Gesture_v1.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -752,7 +752,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Adjustable-PIR-Motion-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Adjustable_PIR_Motion_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Adjustable_PIR_Motion_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ### 空気品質
@@ -772,7 +772,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Laser-PM2-5-Sensor-HM3301.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Laser_PM2.5_Sensor-HM3301/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Laser_PM2.5_Sensor-HM3301/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ダストセンサー
@@ -790,7 +790,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Dust-Sensor-PPD42NS.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Dust_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Dust_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 空気品質センサー v1.3
@@ -808,7 +808,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Air-Quality-Sensor-v1-3-Arduino-Compatible.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Air_Quality_Sensor_v1.3/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Air_Quality_Sensor_v1.3/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ホルムアルデヒドセンサー
@@ -826,7 +826,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Formaldehyde-Sensor-SFA30-p-5204.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Formaldehyde-Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Formaldehyde-Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ### ガス
@@ -846,7 +846,7 @@ Grove センサーには、温度センサー、湿度センサー、光セン�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor-v2-p-4569.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Multichannel-Gas-Sensor-V2/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Multichannel-Gas-Sensor-V2/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ガスセンサーモジュール
@@ -892,7 +892,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove-Gas_Sensor-MQ2/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Gas_Sensor-MQ2/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ガスセンサー(O₂)
@@ -911,7 +911,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Oxygen-Sensor-ME2-O2-f20.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Gas_Sensor-O2/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Gas_Sensor-O2/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -931,7 +931,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Oxygen-Sensor-MIX8410-p-4697.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Gas_Sensor-O2-MIX8410/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Gas_Sensor-O2-MIX8410/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -951,7 +951,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Oxygen-Sensor-Pro-Pre-calibration-p-4896.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Oxygen-Sensor-Pro/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Oxygen-Sensor-Pro/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - アルコールセンサー
@@ -969,7 +969,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Alcohol-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Alcohol_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Alcohol_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - CO2センサー
@@ -987,7 +987,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Carbon-Dioxide-Sensor-MH-Z16.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-CO2_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-CO2_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - スマート空気質センサー (SGP41)
@@ -1005,7 +1005,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Air-Quality-Sensor-SGP41-p-5687.html?queryID=3ac9c3a1ed9e1a56a66b142e8282868a&objectID=5687&indexName=bazaar_retailer_products"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove-smart-air-quality-sensor-sgp41/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/grove-smart-air-quality-sensor-sgp41/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - VOCおよびeCO2ガスセンサー (SGP30)
@@ -1023,7 +1023,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-VOC-and-eCO2-Gas-Sensor-for-Arduino-SGP30.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - VOCガスセンサー (SGP40)
@@ -1041,7 +1041,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Air-Quality-Sensor-SGP40-p-5700.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove_voc_gas_sensor_sgp40/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/grove_voc_gas_sensor_sgp40/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - HCHO センサー
@@ -1059,7 +1059,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-HCHO-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-HCHO_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-HCHO_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - マルチチャンネルガスセンサー
@@ -1077,7 +1077,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Multichannel_Gas_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Multichannel_Gas_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ### 気圧計
@@ -1097,7 +1097,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Barometer-High-Accuracy.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Barometer-High-Accuracy/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Barometer-High-Accuracy/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 気圧センサー（BME280）
@@ -1115,7 +1115,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-BME280-Environmental-Sensor-Temperature-Humidity-Barometer.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Barometer_Sensor-BME280/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Barometer_Sensor-BME280/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 気圧センサー（BMP280）
@@ -1133,7 +1133,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Barometer-Sensor-BMP280.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Barometer_Sensor-BMP280/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Barometer_Sensor-BMP280/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 高精度気圧センサー DPS310
@@ -1151,7 +1151,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-High-Precision-Barometer-Sensor-DPS310-p-4397.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-High-Precision-Barometric-Pressure-Sensor-DPS310/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-High-Precision-Barometric-Pressure-Sensor-DPS310/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1171,7 +1171,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Integrated-Pressure-Sensor-Kit-MPX5700AP-p-4295.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Integrated-Pressure-Sensor-Kit/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Integrated-Pressure-Sensor-Kit/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1194,7 +1194,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-D7S-Vibration-Sensor-p-5701.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove-d7s-vibration-sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/grove-d7s-vibration-sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 3軸デジタル加速度センサー
@@ -1221,7 +1221,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove-Gas_Sensor-MQ2/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Gas_Sensor-MQ2/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1229,7 +1229,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-3-Axis_Digital_Accelerometer-16g/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-3-Axis_Digital_Accelerometer-16g/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1249,7 +1249,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR-p-4533.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 3軸アナログ加速度センサー
@@ -1267,7 +1267,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-3-Axis-Analog-Accelerometer-ADXL335.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-3-Axis_Analog_Accelerometer/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-3-Axis_Analog_Accelerometer/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 3軸デジタルコンパス v2.0
@@ -1285,7 +1285,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-3-Axis-Digital-Compass-V2.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-3-Axis_Digitial_Compass_v2.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-3-Axis_Digitial_Compass_v2.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 3軸デジタル加速度センサー±16g 超低消費電力 (BMA400)
@@ -1303,7 +1303,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g-Ultra-low-Power-BMA400.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-3-Axis_Digital_Accelerometer±16g_Ultra-low_Power-BMA400/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-3-Axis_Digital_Accelerometer±16g_Ultra-low_Power-BMA400/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 6軸加速度センサー＆ジャイロスコープ
@@ -1321,7 +1321,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-6-Axis-Accelerometer-Gyroscope.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-6-Axis_AccelerometerAndGyroscope/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-6-Axis_AccelerometerAndGyroscope/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 6軸加速度センサー＆ジャイロスコープ(BMI088)
@@ -1339,7 +1339,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-6-Axis-Accelerometer-Gyroscope-BMI088.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-6-Axis_Accelerometer&Gyroscope_BMI088/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-6-Axis_Accelerometer&Gyroscope_BMI088/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - IMU 9DOF(lcm20600+AK09918)
@@ -1357,7 +1357,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-IMU-9DOF-ICM20600-AK09918.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-IMU_9DOF-lcm20600+AK09918/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-IMU_9DOF-lcm20600+AK09918/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1379,7 +1379,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Lightning-Sensor-AS3935-p-5603.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove-lightning-sensor-as3935/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/grove-lightning-sensor-as3935/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1399,7 +1399,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Digital_Light_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Digital_Light_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1419,7 +1419,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Light-Sensor-v1-2-LS06-S-phototransistor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Light_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Light_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1439,7 +1439,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Sunlight-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Sunlight_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Sunlight_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1460,7 +1460,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-UV-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-UV_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-UV_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 赤外線受信モジュール
@@ -1478,7 +1478,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Receiver.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Infrared_Receiver/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Infrared_Receiver/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ラインファインダー V1.1
@@ -1496,7 +1496,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Line-Finder-v1-1.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Line_Finder/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Line_Finder/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 炎センサー
@@ -1514,7 +1514,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Flame-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Flame_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Flame_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 赤外線反射センサー
@@ -1532,7 +1532,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Reflective-Sensor-v1-2.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Infrared_Reflective_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Infrared_Reflective_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ### バイオメトリクス
@@ -1552,7 +1552,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Finger-clip-Heart-Rate-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Finger-clip_Heart_Rate_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Finger-clip_Heart_Rate_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - EMG検出器
@@ -1570,7 +1570,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-EMG-Detector-p-1737.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-EMG_Detector/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-EMG_Detector/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - イヤークリップ心拍センサー
@@ -1589,7 +1589,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Ear-clip-Heart-Rate-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Ear-clip_Heart_Rate_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Ear-clip_Heart_Rate_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - GSRセンサー
@@ -1608,7 +1608,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GSR-sensor-p-1614.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-GSR_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-GSR_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1630,7 +1630,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Sound-Sensor-Based-on-LM358-amplifier-Arduino-Compatible.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Sound_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Sound_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1650,7 +1650,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Loudness-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Loudness_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Loudness_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1670,7 +1670,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Analog-Microphone-p-4593.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Analog-Microphone/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Analog-Microphone/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1690,7 +1690,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Recorder-v2-0-p-4552.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Recorder_v2.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Recorder_v2.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1710,7 +1710,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Offline-Voice-Recognition-Module-p-5861.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Offline-Voice-Recognition/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Offline-Voice-Recognition/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ### タッチ
@@ -1730,7 +1730,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Touch-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Touch_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Touch_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ロータリー角度センサー
@@ -1748,7 +1748,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Rotary_Angle_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Rotary_Angle_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ラウンドフォースセンサー FSR402
@@ -1766,7 +1766,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Round-Force-Sensor-FSR402.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Round_Force_Sensor_FSR402/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Round_Force_Sensor_FSR402/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 2チャンネル誘導センサー（LDC1612）
@@ -1784,7 +1784,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Channel-Inductive-Sensor-LDC1612.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-2_Channel_Inductive_Sensor-LDC1612/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-2_Channel_Inductive_Sensor-LDC1612/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 12キー静電容量式I2Cタッチセンサー V3（MPR121）
@@ -1802,7 +1802,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121-p-4694.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove 12 Channel Capacitive Touch Keypad (ATtiny1616)
@@ -1821,7 +1821,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616-p-4068.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616-/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616-/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1843,7 +1843,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-ORP-Sensor-Kit-Pro-p-5570.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-ORP-Sensor-Pro/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-ORP-Sensor-Pro/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1863,7 +1863,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Water-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Water_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Water_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - Water Level Sensor
@@ -1882,7 +1882,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Water-Level-Sensor-10CM-p-4443.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Water-Level-Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Water-Level-Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -1902,7 +1902,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-TDS-Sensor-p-4400.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-TDS-Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-TDS-Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - Turbidity Sensor Meter for Arduino V1.0
@@ -1921,7 +1921,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Turbidity-Sensor-p-4399.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Turbidity-Sensor-Meter-for-Arduino-V1.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Turbidity-Sensor-Meter-for-Arduino-V1.0/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ### モーション
@@ -1942,7 +1942,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-PIR-Motion-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-PIR_Motion_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-PIR_Motion_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - デジタルPIRセンサー
@@ -1961,7 +1961,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Digital-PIR-Motion-Sensor-p-4524.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Digital-PIR-Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Digital-PIR-Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - チルトスイッチ
@@ -1980,7 +1980,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Tilt-Switch.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Tilt_Switch/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Tilt_Switch/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ピエゾ振動センサー
@@ -1999,7 +1999,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Piezo-Vibration-Sensor.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Piezo_Vibration_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Piezo_Vibration_Sensor/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - スライドポテンショメーター
@@ -2018,7 +2018,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Slide-Potentiometer.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Slide_Potentiometer/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Slide_Potentiometer/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 光学ロータリーエンコーダー(TCUT1600X01)
@@ -2037,7 +2037,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Optical-Rotary-Encoder-TCUT1600X01.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Optical_Rotary_Encoder-TCUT1600X01/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Optical_Rotary_Encoder-TCUT1600X01/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - 12-bit 磁気ロータリーポジションセンサー / エンコーダ (AS5600)
@@ -2056,7 +2056,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-12-bit-Magnetic-Rotary-Position-Sensor-AS5600-p-4192.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-12-bit-Magnetic-Rotary-Position-Sensor-AS5600/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-12-bit-Magnetic-Rotary-Position-Sensor-AS5600/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove-エンコーダ
@@ -2075,7 +2075,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Encoder.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Encoder/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Encoder/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 #### Grove - ステップカウンター (BMA456)
@@ -2094,7 +2094,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Step-Counter-BMA456.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Step_Counter-BMA456/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/Grove-Step_Counter-BMA456/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 
@@ -2116,7 +2116,7 @@ Grove - 3軸デジタル加速度センサーは、方向検出、ジェスチ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-ADC-for-Load-Cell-HX711-p-4361.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove_adc_for_load_cell_hx711/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/grove_adc_for_load_cell_hx711/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
 ## Seeed Studio FusionでGroveセンサーを共同作成

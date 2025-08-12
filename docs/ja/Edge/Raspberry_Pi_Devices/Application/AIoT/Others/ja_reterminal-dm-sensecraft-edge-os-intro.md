@@ -111,9 +111,9 @@ Node-REDエディタは、同じネットワーク上にある外部マシンか
 
 Node-REDをreTerminal DMで使用する方法についての詳細は、以下のNode-RED Wikiページをご覧ください：
 
-* [reTerminal DM RS485ポートとNode-RED](/reTerminal-DM-Node-Red-RS485)
-* [reTerminal DM MQTTとNode-RED](/reTerminal-DM-Node-Red-mqtt)
-* [reTerminal DM CAN BUSとNode-RED](/reTerminal-DM-Node-Red-canbus)
+* [reTerminal DM RS485ポートとNode-RED](/ja/reTerminal-DM-Node-Red-RS485)
+* [reTerminal DM MQTTとNode-RED](/ja/reTerminal-DM-Node-Red-mqtt)
+* [reTerminal DM CAN BUSとNode-RED](/ja/reTerminal-DM-Node-Red-canbus)
 
 ### システム設定タブ
 

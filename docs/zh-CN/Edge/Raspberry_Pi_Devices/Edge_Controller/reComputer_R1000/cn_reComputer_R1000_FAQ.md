@@ -12,7 +12,7 @@ last_update:
 
 #### 问题1：默认用户 "recomputer" 的密码是什么？
 
-详情请点击 [**这里**](/R1000_default_username_password)。
+详情请点击 [**这里**](/cn/R1000_default_username_password)。
 
 # 技术支持
 

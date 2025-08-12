@@ -93,17 +93,17 @@ Grove システムは、プロセッサをセンサーやモーターなどの�
 <tr>
 <td>Grove - ロータリーアングルセンサー (P)</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor](/Grove-Rotary_Angle_Sensor)</td>
+<td>[https://www.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor](/ja/Grove-Rotary_Angle_Sensor)</td>
 </tr>
 <tr>
 <td>Grove - ボタン</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Button](/Grove-Button)</td>
+<td>[https://www.seeedstudio.com/wiki/Grove_-_Button](/ja/Grove-Button)</td>
 </tr>
 <tr>
 <td>Grove - タッチセンサー</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Touch_Sensor](/Grove-Touch_Sensor)</td>
+<td>[https://www.seeedstudio.com/wiki/Grove_-_Touch_Sensor](/ja/Grove-Touch_Sensor)</td>
 </tr>
 <tr>
 <td>Grove LED</td>
@@ -113,42 +113,42 @@ Grove システムは、プロセッサをセンサーやモーターなどの�
 <tr>
 <td>Grove - ブザー</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Buzzer](/Grove-Buzzer)</td>
+<td>[https://www.seeedstudio.com/wiki/Grove_-_Buzzer](/ja/Grove-Buzzer)</td>
 </tr>
 <tr>
 <td>Grove - サウンドセンサー</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Sound_Sensor](/Grove-Sound_Sensor)</td>
+<td>[https://www.seeedstudio.com/wiki/Grove_-_Sound_Sensor](/ja/Grove-Sound_Sensor)</td>
 </tr>
 <tr>
 <td>Grove - ライトセンサー</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Light_Sensor_v1.2](/Grove-Light_Sensor)</td>
+<td>[https://www.seeedstudio.com/wiki/Grove_-_Light_Sensor_v1.2](/ja/Grove-Light_Sensor)</td>
 </tr>
 <tr>
 <td>Grove - 温度センサー</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Temperature_Sensor](/Grove-Temperature_Sensor)</td>
+<td>[https://www.seeedstudio.com/wiki/Grove_-_Temperature_Sensor](/ja/Grove-Temperature_Sensor)</td>
 </tr>
 <tr>
 <td>Grove - リレー</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Relay](/Grove-Relay)</td>
+<td>[https://www.seeedstudio.com/wiki/Grove_-_Relay](/ja/Grove-Relay)</td>
 </tr>
 <tr>
 <td>Grove - サーボ</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_Servo](/Grove-Servo)</td>
+<td>[https://www.seeedstudio.com/wiki/Grove_-_Servo](/ja/Grove-Servo)</td>
 </tr>
 <tr>
 <td>Grove - LCD RGB バックライト</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Grove_-_LCD_RGB_Backlight](/Grove-LCD_RGB_Backlight)</td>
+<td>[https://www.seeedstudio.com/wiki/Grove_-_LCD_RGB_Backlight](/ja/Grove-LCD_RGB_Backlight)</td>
 </tr>
 <tr>
 <td>Base Shield V2.0</td>
 <td>1個</td>
-<td>[https://www.seeedstudio.com/wiki/Base_Shield_v2](/Base_Shield_V2)</td>
+<td>[https://www.seeedstudio.com/wiki/Base_Shield_v2](/ja/Base_Shield_V2)</td>
 </tr>
 <tr>
 <td>ユーザーマニュアル (印刷版)</td>
