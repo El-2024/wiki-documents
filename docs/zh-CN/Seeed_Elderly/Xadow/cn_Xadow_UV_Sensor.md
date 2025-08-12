@@ -44,9 +44,9 @@ Xadow 紫外线传感器可以输出与紫外线指数对应的电压值。由�
 *   现在您可以将代码上传到 Xadow 主板，只需将代码复制并粘贴到 Arduino IDE 中。
 
 ```
-#include &lt;Wire.h&gt;
-#include &lt;SeeedOLED.h&gt;
-#include &lt;Streaming.h&gt;
+#include <Wire.h>
+#include <SeeedOLED.h>
+#include <Streaming.h>
 
 #define ADDR_ADC121    0x5A
 
@@ -105,9 +105,9 @@ void readVoltage()     //unsigned int *data
 
     Wire.requestFrom(ADDR_ADC121, 2);           // 从设备请求 2 字节
     delay(1);
-    if(Wire.available()&lt;=2)
+    if(Wire.available()<=2)
     {
-        getData = (Wire.read()&amp;0x0f)&lt;&lt;8;
+        getData = (Wire.read()&0x0f)<<8;
         getData |= Wire.read();
     }
     delay(50);

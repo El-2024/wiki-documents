@@ -16,14 +16,30 @@
  * Props:
  *  - options: Array of products, each with an associated list of L4T versions
  *  - children: Optional custom JSX content for each Select
+ *  - lang: Language selection ('en' or 'cn')
  */
 import React, { useEffect } from "react";
 import { Select, Image, ConfigProvider, theme } from "antd";
 import { useColorMode } from '@docusaurus/theme-common';
 import { useJetsonStore, useThemeStore } from '@site/src/stores/useJetsonStore';
 
+// 多语言内容配置
+const content = {
+    en: {
+        selectProduct: "Select a Product",
+        selectJetsonLinux: "Select Jetson Linux",
+        hardwareInterface: "Hardware Interface",
+        hardwareInterfaceText: "Check here for carrier board interface usage.",
+    },
+    cn: {
+        selectProduct: "选择产品",
+        selectJetsonLinux: "选择Jetson Linux",
+        hardwareInterface: "硬件接口",
+        hardwareInterfaceText: "在此查看载板接口使用方法。",
+    }
+};
 
-export const ProductSelect = ({ children, options }) => {
+export const ProductSelect = ({ children, options, lang = 'en' }) => {
 
     // L4T version and corresponding JetPack SDK version
     const L4T2JPVers = {
@@ -70,8 +86,11 @@ export const ProductSelect = ({ children, options }) => {
     const currentTheme = useThemeStore((state) => state.theme);
 
     const imgUrl = selectedProduct?.img
-
     const interfaceUsage = selectedProduct?.interfaceUsage
+    
+    // Get texts for current language
+    const texts = content[lang] || content.en;
+    
     return (
         <ConfigProvider
             theme={{
@@ -96,7 +115,7 @@ export const ProductSelect = ({ children, options }) => {
                     value={selectedProduct}
                     showSearch
                     size='large'
-                    placeholder="Select a Product"
+                    placeholder={texts.selectProduct}
                     optionFilterProp="label"
                     onChange={(value) => setProduct(value)}
                     style={{
@@ -110,7 +129,7 @@ export const ProductSelect = ({ children, options }) => {
                     value={l4t}
                     showSearch
                     size='large'
-                    placeholder="Select Jetson Linux"
+                    placeholder={texts.selectJetsonLinux}
                     optionFilterProp="label"
                     onChange={(value) => setL4T(value)}
                     style={{
@@ -121,9 +140,9 @@ export const ProductSelect = ({ children, options }) => {
                 </Select>
             </div>
             <div className="alert alert--info" role="alert">
-        <strong>Hardware Interface</strong><br />
-        Check here for carrier board <a href={interfaceUsage}>interface usage</a>.
-     </div>
+                <strong>{texts.hardwareInterface}</strong><br />
+                {texts.hardwareInterfaceText} <a href={interfaceUsage}>{lang === 'cn' ? '接口使用方法' : 'interface usage'}</a>。
+            </div>
             <p> </p>
         </ConfigProvider>
 

@@ -158,7 +158,7 @@ XBee® 扩展板的尺寸为 3.1cm X 4.1cm。
 //计算机连接到硬件 UART
 //Bee 扩展板连接到软件 UART
 
-#include &lt;NewSoftSerial.h&gt;
+#include <NewSoftSerial.h>
 #define RxD 11
 #define TxD 12
 
@@ -196,7 +196,7 @@ void loop()
 /*
 来自 Arduino SoftwareSerial 教程的示例
  */
-#include &lt;SoftwareSerial.h&gt;
+#include <SoftwareSerial.h>
 
 SoftwareSerial mySerial(11, 12); // RX, TX
 
