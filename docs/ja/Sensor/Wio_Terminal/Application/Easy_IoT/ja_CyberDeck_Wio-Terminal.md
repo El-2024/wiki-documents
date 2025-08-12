@@ -18,10 +18,6 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/CyberDesk_Wio-Terminal/CyberDesk_Wio-Terminal.gif" style={{width:500, height:'auto'}}/></div>
 
-:::info
-[中文版本](/ja/cn/CyberDeck_Wio-Terminal)はこちらをクリックしてください。
-:::
-
 ## <span id="jump1"> プロジェクト概要 </span>
 
 Wio Terminal をディスプレイ端末として使用し、コンピュータのさまざまなパフォーマンス指標をリアルタイムで監視するサイバーパンクスタイルのPCモニタリングシステムを作成します。
