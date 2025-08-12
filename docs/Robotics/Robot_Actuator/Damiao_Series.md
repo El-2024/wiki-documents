@@ -262,7 +262,7 @@ You can also copy the CAN data (in hexadecimal format) and use a serial port deb
 
 
 
-## Control the Motor Using the [​reComputer Mini Jetson Orin.](/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md)
+## Control the Motor Using the [​reComputer Mini Jetson Orin.](/recomputer_jetson_mini_getting_started)
 
 Currently, the most common CAN communication interfaces for motors in the market use **XT30 (2+2)** and **JST connectors**. Our **reComputer Mini Jetson Orin** and **reComputer Robotics** device is equipped with **dual XT30 (2+2) ports** and **JST-based CAN interfaces**, providing seamless compatibility.  
 
