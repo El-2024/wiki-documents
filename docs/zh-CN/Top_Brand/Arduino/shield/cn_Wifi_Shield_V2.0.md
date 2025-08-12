@@ -1207,7 +1207,7 @@ String getPinState(int pinNumber)
 
 现在您知道如何向 WiFi shield 发送和接收信息，您可以看到通过网络控制任何类型的设备是多么容易。
 
-如果您希望通过网页或手机应用程序控制高功率设备，如台灯、电机或水泵，我们推荐我们的[继电器 Shield V2.0](/Relay_Shield_v3)。
+如果您希望通过网页或手机应用程序控制高功率设备，如台灯、电机或水泵，我们推荐我们的[继电器 Shield V2.0](/cn/Relay_Shield_v3)。
 
 继电器 Shield V2.0 使用引脚 4、5、6 和 7，因此与本页示例中的代码完全兼容。
 
@@ -1256,7 +1256,7 @@ A3: 不要将塑料或任何其他介电材料放置在与天线接触的位置�
 - [RN-171 数据手册](https://files.seeedstudio.com/wiki/Wifi_Shield_V2.0/res/WiFly-RN-171.pdf)
 - [Wifi Shield 库](https://github.com/Seeed-Studio/WiFi_Shield)
 - [WiFi 模块用户手册](https://files.seeedstudio.com/wiki/Wifi_Shield_V2.0/res/WiFly-RN-UM.pdf) *-- 这里您可以找到扩展板中 RN-171 模块的所有命令。*
-- [什么是 Seeeduino](/Seeeduino_v4.2)
+- [什么是 Seeeduino](/cn/Seeeduino_v4.2)
 - [w3schools](http://www.w3schools.com/) 学习 HTML、Javascript 和 JQuery 的优秀网站
 
 <!-- This Markdown file was created from https://www.seeedstudio.com/wiki/Wifi_Shield_V2.0 -->

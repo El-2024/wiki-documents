@@ -268,4 +268,4 @@ void ei_printf(const char *format, ...) {
 
 - [Edge Impulse 公共项目](https://studio.edgeimpulse.com/public/37392/latest)
 
-- [项目 Github](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse)
+- [项目 Github](https://wiki.seeedstudio.com/cn/Wio-Terminal-Edge-Impulse)

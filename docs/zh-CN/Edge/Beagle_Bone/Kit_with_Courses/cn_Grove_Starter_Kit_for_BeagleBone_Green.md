@@ -37,7 +37,7 @@ I2C Hub Grove 是一个扩展 Grove 模块，用于将多个 I2C 设备连接到
 
 它可以与 Universal 4 Pin to X2 4 Pin 电缆一起使用，并最多连接 7 个 I2C 设备，能够满足大多数开发需求。
 
-如果您想了解更多关于此模块的信息，请点击[**这里**](/Grove-I2C_Hub)。
+如果您想了解更多关于此模块的信息，请点击[**这里**](/cn/Grove-I2C_Hub)。
 
 ### Grove - 按钮
 
@@ -60,7 +60,7 @@ Grove - I2C ADC 是一个基于 ADC121C021 的 12 位精度 ADC 模块。
 由于其地址可更改，您最多可以同时使用 9 个 I2C ADC。
 
 另一方面，该模块提供自动睡眠功能，大大降低了功耗。
-<!-- 如果您想了解更多关于此模块的信息，请点击[**这里**](/Grove-I2C_ADC)。 -->
+<!-- 如果您想了解更多关于此模块的信息，请点击[**这里**](/cn/Grove-I2C_ADC)。 -->
 
 ### Grove - 温度传感器
 
@@ -75,7 +75,7 @@ Grove - 温度传感器使用热敏电阻来检测环境温度。
 该传感器的检测范围为 -40 - 125ºC，精度为 ±1.5ºC。
 
 您应将其插入 Grove - I2C ADC J2 端口。
-如果您想了解更多关于此模块的信息，请点击[**这里**](/Grove-Temperature_Sensor_V1.2)。
+如果您想了解更多关于此模块的信息，请点击[**这里**](/cn/Grove-Temperature_Sensor_V1.2)。
 
 ### Grove - 声音传感器
 
@@ -86,7 +86,7 @@ Grove - 声音传感器可以检测环境的声音强度。
 该模块的主要组件是一个简单的麦克风，它基于 LM358 放大器和驻极体麦克风。
 
 该模块的输出为模拟信号，您应将其插入 Grove - I2C ADC J2 端口。
-如果您想了解更多关于此模块的信息，请点击[**这里**](/Grove-Sound_Sensor)。
+如果您想了解更多关于此模块的信息，请点击[**这里**](/cn/Grove-Sound_Sensor)。
 
 ### Grove - 3 轴数字加速度计（±16g）
 
@@ -98,7 +98,7 @@ Grove - 声音传感器可以检测环境的声音强度。
 
 同时，它足够灵敏，可以检测单击和双击。它非常适合运动检测、手势检测以及机器人技术。
 
-如果您想了解更多关于此模块的信息，请点击[**这里**](/Grove-3-Axis_Digital_Accelerometer-16g)。
+如果您想了解更多关于此模块的信息，请点击[**这里**](/cn/Grove-3-Axis_Digital_Accelerometer-16g)。
 
 ### Grove - 继电器
 
@@ -140,7 +140,7 @@ Grove - 声音传感器可以检测环境的声音强度。
 
 通过线缆（DATA 和 CLK）进行传输，内置循环功能，可增强传输距离。
 
-<!-- 如果您想了解更多关于此模块的信息，请点击 [**这里**](/Grove-Chainable_RGB_LED/)。 -->
+<!-- 如果您想了解更多关于此模块的信息，请点击 [**这里**](/cn/Grove-Chainable_RGB_LED/)。 -->
 
 ### Grove - OLED 显示屏 0.96"
 
@@ -152,7 +152,7 @@ Grove - OLED 96 x 96 由 96 x 96 点阵 OLED 模块 LY120 和 SSD1327 驱动 IC 
 
 与 LCD 相比，OLED 屏幕更具竞争力，具有许多优势，例如高亮度、自发光、高对比度、纤薄外形、宽视角、宽温度范围和低功耗。
 
-如果您想了解更多关于此模块的信息，请点击 [**这里**](/Grove-OLED_Display_0.96inch)。
+如果您想了解更多关于此模块的信息，请点击 [**这里**](/cn/Grove-OLED_Display_0.96inch)。
 
 :::tip
 更多关于 Grove 模块的详细信息，请参考 [Grove 系统](https://wiki.seeedstudio.com/cn/Grove_System/)
@@ -164,7 +164,7 @@ Grove - OLED 96 x 96 由 96 x 96 点阵 OLED 模块 LY120 和 SSD1327 驱动 IC 
 要开始编辑板上的程序，可以使用 Cloud9 IDE。
 作为熟悉 Cloud9 IDE 的一个简单练习，创建一个简单的应用程序来点亮 BeagleBone® 上的 4 个用户可编程 LED 之一是一个不错的开始。
 
-如果这是您第一次使用 Cloud9 IDE，请按照此 [**链接**](/BeagleBone_Green)。
+如果这是您第一次使用 Cloud9 IDE，请按照此 [**链接**](/cn/BeagleBone_Green)。
 
 ### 如何在 BBG 上使用 Grove - 按钮
 

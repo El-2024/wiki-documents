@@ -12,13 +12,13 @@ last_update:
 
 ### 感谢您考虑为我们的 Seeed Studio 文件做出贡献！
 
-此简化的贡献流程旨在提供完整的步骤来提交文件的 PR。如果您只想添加 Markdown 文件和图片，可以查看[这里](/quick_pull_request)。
+此简化的贡献流程旨在提供完整的步骤来提交文件的 PR。如果您只想添加 Markdown 文件和图片，可以查看[这里](/cn/quick_pull_request)。
 
 ## 按步骤将文件提交到仓库
 
 ### 前提条件：`git clone` 仓库并在本地部署网站
 
-<strong><a href="/Deploy_Page_Locally"><span><font color={'8DC215'} size={"4"}>点击这里，您可以在本地部署网站并查看更改！</font></span></a></strong>
+<strong><a href="/cn/Deploy_Page_Locally"><span><font color={'8DC215'} size={"4"}>点击这里，您可以在本地部署网站并查看更改！</font></span></a></strong>
 
 ### 1. 更新您的 fork 分支
 

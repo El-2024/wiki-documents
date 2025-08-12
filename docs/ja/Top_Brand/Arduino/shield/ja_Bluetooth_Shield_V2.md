@@ -87,7 +87,7 @@ Bluetooth ShieldはシリアルBluetoothモジュールを統合しています�
 
 3. Arduino IDEを開き、File -> Examples -> Bluetooth_Shield_V2_Demo_Code -> Slave_ledを選択して、スレーブのコードを開きます。
 
-4. アップロードボタンをクリックしてコードをアップロードします。Arduinoの使い方に問題がある場合は、[こちら](/Getting_Started_with_Seeeduino)をクリックしてヘルプを参照してください。
+4. アップロードボタンをクリックしてコードをアップロードします。Arduinoの使い方に問題がある場合は、[こちら](/ja/Getting_Started_with_Seeeduino)をクリックしてヘルプを参照してください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Bluetooth_Shield_V2/img/Bluetooth_ide_1.jpg" alt="pir" width={600} height="auto" /></p>
 

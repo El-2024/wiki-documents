@@ -46,7 +46,7 @@ Seeeduino Stalker v3.0 是一个功能丰富的 Arduino 兼容**无线传感器�
 
 * XBee 模块和 ATMega328P 的复位按钮
 
-* **Bee 系列插槽** - 2*10 引脚 2.0mm 间距（可与以下任一无线模块配合使用：**XBee**、[BluetoothBee](/Bluetooth_Bee "Bluetooth Bee")、[GPSBee](https://seeeddoc.github.io/Bluetooth_Bee/) 或 [RFBee](https://seeeddoc.github.io/RFbee_V1.1-Wireless_Arduino_compatible_node/)。）
+* **Bee 系列插槽** - 2*10 引脚 2.0mm 间距（可与以下任一无线模块配合使用：**XBee**、[BluetoothBee](/cn/Bluetooth_Bee "Bluetooth Bee")、[GPSBee](https://seeeddoc.github.io/Bluetooth_Bee/) 或 [RFBee](https://seeeddoc.github.io/RFbee_V1.1-Wireless_Arduino_compatible_node/)。）
 
 ## 规格
 
@@ -418,7 +418,7 @@ digitalWrite(5,HIGH);
 
 修改后
 
-2.现在应用<a href="/Seeeduino-Stalker_v3#pcb-jumper-pads" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>中提到的程序（即）切断跳线并将跳线P5的中间焊盘焊接到PD7。
+2.现在应用<a href="/cn/Seeeduino-Stalker_v3#pcb-jumper-pads" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>中提到的程序（即）切断跳线并将跳线P5的中间焊盘焊接到PD7。
 
 ## 板子布局
 

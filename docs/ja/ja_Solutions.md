@@ -72,18 +72,18 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="independent_container">
     <a class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}> 貢献ガイド </font></div>
-            <a href="/Contribution-Guide" target="_blank"><span><font color={'FFFFFF'} size={"3"}> 貢献ガイド </font></span></a>
+            <a href="/ja/Contribution-Guide" target="_blank"><span><font color={'FFFFFF'} size={"3"}> 貢献ガイド </font></span></a>
             <br/>
-            <a href="/Honorary-Contributors" target="_blank"><span><font color={'FFFFFF'} size={""}> 名誉貢献者 </font></span></a>
+            <a href="/ja/Honorary-Contributors" target="_blank"><span><font color={'FFFFFF'} size={""}> 名誉貢献者 </font></span></a>
             <br/>
     </a>
     <a class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}> Fusionで創造を拡大 </font></div>
-            <a href="/Scale-up-Your-Creation-with-Fusion#licensed-product-program" target="_blank"><span><font color={'FFFFFF'} size={"3"}> ライセンス製品プログラム </font></span></a>
+            <a href="/ja/Scale-up-Your-Creation-with-Fusion#licensed-product-program" target="_blank"><span><font color={'FFFFFF'} size={"3"}> ライセンス製品プログラム </font></span></a>
             <br/>
-            <a href="/Scale-up-Your-Creation-with-Fusion#licensed-products-were-looking-for" target="_blank"><span><font color={'FFFFFF'} size={"3"}> 求めているライセンス製品 </font></span></a>
+            <a href="/ja/Scale-up-Your-Creation-with-Fusion#licensed-products-were-looking-for" target="_blank"><span><font color={'FFFFFF'} size={"3"}> 求めているライセンス製品 </font></span></a>
             <br/>
-            <a href="/Scale-up-Your-Creation-with-Fusion#user-cases" target="_blank"><span><font color={'FFFFFF'} size={"3"}> ユーザーケース </font></span></a>
+            <a href="/ja/Scale-up-Your-Creation-with-Fusion#user-cases" target="_blank"><span><font color={'FFFFFF'} size={"3"}> ユーザーケース </font></span></a>
             <br/>
     </a>
 </div>

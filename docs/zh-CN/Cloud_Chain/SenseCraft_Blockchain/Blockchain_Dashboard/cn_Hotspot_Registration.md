@@ -7,7 +7,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/sensecraft-blockchain/blockchain-dashboard/hotspot-registration
 aliases:
-  - /sensecraft-blockchain/sensecap-mx-dashboard/hotspot-registration
+  - /cn/sensecraft-blockchain/sensecap-mx-dashboard/hotspot-registration
 last_update:
   date: 06/06/2025
   author: Matthew

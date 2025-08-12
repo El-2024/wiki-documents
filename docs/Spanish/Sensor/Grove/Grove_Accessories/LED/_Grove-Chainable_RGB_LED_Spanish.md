@@ -29,7 +29,7 @@ last_update:
 - Protocolo de comunicación: Serial
 
 Consejo:
-Para más información sobre los módulos Grove, visita [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/)
+Para más información sobre los módulos Grove, visita [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/)
 
 ## Plataformas compatibles
 
@@ -181,7 +181,7 @@ Basado en la [Librería Chainable LED](https://github.com/pjpmarques/ChainableLE
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), añade soporte para Arduino, y arrastra un procedimiento principal al área de trabajo.
 
 Nota:
-Si es la primera vez que usas Codecraft, visita [Guía de Codecraft usando Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es la primera vez que usas Codecraft, visita [Guía de Codecraft usando Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra los bloques como se muestra en la imagen o descarga el archivo cdc que se encuentra al final de esta página.
 

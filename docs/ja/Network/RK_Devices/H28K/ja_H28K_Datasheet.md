@@ -72,7 +72,7 @@ LinkStar-H28K は、PCIE/RGMII ギガビット技術を使用した 2 つのギ�
 
 ## クイックスタート
 
-H28K ルーターには事前にインストールされたシステムが付属していません。以下のチュートリアルに従って、オペレーティングシステムを手動でインストールしてください。[H28K-install-system](/H28K-install-system)
+H28K ルーターには事前にインストールされたシステムが付属していません。以下のチュートリアルに従って、オペレーティングシステムを手動でインストールしてください。[H28K-install-system](/ja/H28K-install-system)
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

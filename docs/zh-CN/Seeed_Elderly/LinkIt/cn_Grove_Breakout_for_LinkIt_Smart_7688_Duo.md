@@ -56,7 +56,7 @@ Grove 扩展板适用于 LinkIt Smart 7688 Duo，是一个集成了 Grove 接口
 
 **Grove 接口**
 
-<!-- 连接丰富的 [Grove](/Grove_System/) 接口功能模块。通过这种接口，您无需跳线或焊接工作，可以使用这些功能模块创建更强大的应用程序。 -->
+<!-- 连接丰富的 [Grove](/cn/Grove_System/) 接口功能模块。通过这种接口，您无需跳线或焊接工作，可以使用这些功能模块创建更强大的应用程序。 -->
 
 ## 入门指南
 
@@ -70,7 +70,7 @@ Grove 扩展板适用于 LinkIt Smart 7688 Duo，是一个集成了 Grove 接口
 
 **使用 Grove 蜂鸣器发出声音**
 
-<!-- 1.参考 [LinkIt Smart 7688 Duo 的 Wiki](/LinkIt_Smart_7688_Duo/) 将您的 LinkIt Smart 7688 Duo 连接到互联网。 -->
+<!-- 1.参考 [LinkIt Smart 7688 Duo 的 Wiki](/cn/LinkIt_Smart_7688_Duo/) 将您的 LinkIt Smart 7688 Duo 连接到互联网。 -->
 
 :::note
     1. 您可以在靠近连接 LinkIt Smart 7688 的端口找到 Pin 8、Pin 9 和 Pin GND。
@@ -87,9 +87,9 @@ Grove 扩展板适用于 LinkIt Smart 7688 Duo，是一个集成了 Grove 接口
     将 Grove - 蜂鸣器插入端口 D4。
 :::
 
-<!-- 4.参考 [LinkIt Smart 7688 Duo 的 Wiki](/LinkIt_Smart_7688_Duo/) 在主机电脑上为 LinkIt Smart 7688 Duo 平台构建 Arduino 环境。 -->
+<!-- 4.参考 [LinkIt Smart 7688 Duo 的 Wiki](/cn/LinkIt_Smart_7688_Duo/) 在主机电脑上为 LinkIt Smart 7688 Duo 平台构建 Arduino 环境。 -->
 
-<!-- 5.下载 [firmata](https://files.seeedstudio.com/wiki/Grove-Breakout_for_LinkIt_Smart_7688_Duo/res/Firmata_to_build_Arduino_IDE_for.zip)。参考 [LinkIt Smart 7688 Duo 的 Wiki](/LinkIt_Smart_7688_Duo/) 为 LinkIt Smart 7688 平台安装 Arduino IDE，并将文件 firmata 刷写到开发板。 -->
+<!-- 5.下载 [firmata](https://files.seeedstudio.com/wiki/Grove-Breakout_for_LinkIt_Smart_7688_Duo/res/Firmata_to_build_Arduino_IDE_for.zip)。参考 [LinkIt Smart 7688 Duo 的 Wiki](/cn/LinkIt_Smart_7688_Duo/) 为 LinkIt Smart 7688 平台安装 Arduino IDE，并将文件 firmata 刷写到开发板。 -->
 
 :::note
     以下步骤在嵌入式操作系统（OpenWRT）上进行。

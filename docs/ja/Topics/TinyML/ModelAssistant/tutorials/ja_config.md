@@ -106,7 +106,7 @@ model=dict(
 
 データセットとデータパイプラインはデータローダーを構築するために設定する必要があります。この部分の複雑さのため、中間変数を使用してデータローダー設定の記述を簡略化しています。より複雑なデータ拡張方法は、`sscma/datasets/pipelines` パスで見つけることができます。
 
-ここでは、[Custom COCO_MASK Dataset](/ModelAssistant_Tutorials_Datasets) を使用するFOMOのトレーニングおよびテストパイプラインを示します：
+ここでは、[Custom COCO_MASK Dataset](/ja/ModelAssistant_Tutorials_Datasets) を使用するFOMOのトレーニングおよびテストパイプラインを示します：
 
 ```python
 dataset_type='FomoDatasets'   # データセットタイプ、これによりデータセットが定義される

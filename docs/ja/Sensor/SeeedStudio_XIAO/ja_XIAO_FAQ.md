@@ -16,89 +16,89 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### Q1: アップロードが失敗する/プログラムが異常に動作する/デバイスポートが見つからない場合はどうすればよいですか？
 
-詳細については、[**こちら**](/noport_upload_fails)をクリックしてください。
+詳細については、[**こちら**](/ja/noport_upload_fails)をクリックしてください。
 
 ### XIAO nRF52840 (Sense) に関して
 
 #### Q1: XIAO nRF52840 (Sense) を使用してバッテリー充電を行う際の注意点は何ですか？
 
-詳細については、[**こちら**](/battery_charging_considerations)をクリックしてください。
+詳細については、[**こちら**](/ja/battery_charging_considerations)をクリックしてください。
 
 #### Q2: バッテリー電源に接続した際に XIAO BLE の5Vピンから出力がないのはなぜですか？
 
-詳細については、[**こちら**](/bat_5vNo_OUTPUT)をクリックしてください。
+詳細については、[**こちら**](/ja/bat_5vNo_OUTPUT)をクリックしてください。
 
 ### XIAO ESP32C3 に関して
 
 #### Q1: バッテリー電圧を確認する方法は？
 
-詳細については、[**こちら**](/check_battery_voltage)をクリックしてください。
+詳細については、[**こちら**](/ja/check_battery_voltage)をクリックしてください。
 
 #### Q2: XIAO ESP32C3 の IO 割り当てに関する注意点は？
 
-詳細については、[**こちら**](/exp32c3_d9_d6_d8)をクリックしてください。
+詳細については、[**こちら**](/ja/exp32c3_d9_d6_d8)をクリックしてください。
 
 #### Q3: 工場出荷時のファームウェアでブートローダーを再フラッシュする方法は？
 
-詳細については、[**こちら**](/reflash_the_bootloader)をクリックしてください。
+詳細については、[**こちら**](/ja/reflash_the_bootloader)をクリックしてください。
 
 ### XIAO ESP32S3 (Sense) に関して
 
 #### Q1: XIAO の丸い角が平らにならない問題が発生するのはなぜですか？
 
-詳細については、[**こちら**](/not_being_flush)をクリックしてください。
+詳細については、[**こちら**](/ja/not_being_flush)をクリックしてください。
 
 ### Seeed Studio XIAO 用ラウンドディスプレイに関して
 
 #### Q1: プログラムをアップロードした後にディスプレイが何も表示しないのはなぜですか？
 
-詳細については、[**こちら**](/DO_NOT_display)をクリックしてください。
+詳細については、[**こちら**](/ja/DO_NOT_display)をクリックしてください。
 
 #### Q2: チュートリアルに従ったにもかかわらず、TFT または LVGL プログラムが正しくコンパイルできない場合はどうすればよいですか？
 
-詳細については、[**こちら**](/TFT_or_LVGL_program)をクリックしてください。
+詳細については、[**こちら**](/ja/TFT_or_LVGL_program)をクリックしてください。
 
 #### Q3: XIAO SAMD21 用の円形スクリーンプログラムをコンパイルする際にピン定義エラーが発生するのはなぜですか？
 
-詳細については、[**こちら**](/pin_definition_error)をクリックしてください。
+詳細については、[**こちら**](/ja/pin_definition_error)をクリックしてください。
 
 #### Q4: XIAO RP2040 がラウンドディスプレイ用の HardwareTest コードを使用する際に非常に奇妙な C++ エラーが発生するのはなぜですか？
 
-詳細については、[**こちら**](/error_when_using_the_code)をクリックしてください。
+詳細については、[**こちら**](/ja/error_when_using_the_code)をクリックしてください。
 
 #### Q5: XIAO RP2040 用のプログラムをアップロードする際に「実行可能セグメントで未整列のオペコードが検出されました」というエラーが発生するのはなぜですか？
 
-詳細については、[**こちら**](/uploading_while_an_error-rp2040)をクリックしてください。
+詳細については、[**こちら**](/ja/uploading_while_an_error-rp2040)をクリックしてください。
 
 #### Q6: XIAO nRF52840 (Sense) を使用する際にエラーが発生するのはなぜですか？
 
-詳細については、[**こちら**](/error_when_use_XIAOnRF52840)をクリックしてください。
+詳細については、[**こちら**](/ja/error_when_use_XIAOnRF52840)をクリックしてください。
 
 #### Q7: Seeed Studio XIAO ESP32S3 Sense をこの拡張スクリーンに接続したい場合、2つのTFカードスロットとの競合は発生しますか？
 
-詳細については、[**こちら**](/two_TF_card)をクリックしてください。
+詳細については、[**こちら**](/ja/two_TF_card)をクリックしてください。
 
 ### XIAO CAN バス拡張ボードに関して
 
 #### Q1: XIAO CAN バス拡張ボードがサポートする最大ボーレートは何ですか？
 
-詳細については、[**こちら**](/the_maximum_baud_rate)をクリックしてください。
+詳細については、[**こちら**](/ja/the_maximum_baud_rate)をクリックしてください。
 
 #### Q2: 同じ CAN バスネットワークで複数の XIAO CAN バス拡張ボードを使用できますか？
 
-詳細については、[**こちら**](/multiple_in_the_same_CAN)をクリックしてください。
+詳細については、[**こちら**](/ja/multiple_in_the_same_CAN)をクリックしてください。
 
 #### Q3: XIAO CAN バス拡張ボードを他のマイクロコントローラーや開発ボードと一緒に使用できますか？
 
-詳細については、[**こちら**](/in_other_microcontrollers_or_development_boards)をクリックしてください。
+詳細については、[**こちら**](/ja/in_other_microcontrollers_or_development_boards)をクリックしてください。
 
 #### Q4: CAN バス接続の最大ケーブル長に制限はありますか？
 
-詳細については、[**こちら**](/limitations_on_the_maximum_cable_length)をクリックしてください。
+詳細については、[**こちら**](/ja/limitations_on_the_maximum_cable_length)をクリックしてください。
 
 #### Q5: CAN バス通信の問題をトラブルシューティングする方法は？
 
-詳細については、[**こちら**](/troubleshoot_CAN_communication_issues)をクリックしてください。
+詳細については、[**こちら**](/ja/troubleshoot_CAN_communication_issues)をクリックしてください。
 
 # 技術サポート
 

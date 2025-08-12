@@ -45,7 +45,7 @@ no_comments: false # for Disqus
 - [W5500 Ethernet Shield v1.0](https://wiki.seeedstudio.com/cn/W5500_Ethernet_Shield_v1.0/)
 - [Wifi Shield (Fi250) V1.1](https://wiki.seeedstudio.com/cn/Wifi_Shield_Fi250_V1.1/)
 - [Wifi Shield V2.0](https://wiki.seeedstudio.com/cn/Wifi_Shield_V2.0/)
-<!-- - [XBee Shield V2.0](/https://wiki.seeedstudio.comXBee_Shield_V2.0/) -->
+<!-- - [XBee Shield V2.0](/cn/https://wiki.seeedstudio.comXBee_Shield_V2.0/) -->
 
 感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 

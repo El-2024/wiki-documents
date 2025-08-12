@@ -14,10 +14,6 @@ last_update:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/CyberDesk_Wio-Terminal/CyberDesk_Wio-Terminal.gif" style={{width:500, height:'auto'}}/></div>
 
-:::info
-Haz clic aquí para ver la [versión en chino](/cn/CyberDeck_Wio-Terminal)
-:::
-
 ## <span id="jump1"> Resumen del Proyecto </span>
 
 Crea un sistema de monitoreo de PC estilo cyberpunk utilizando el Wio Terminal como terminal de visualización para monitorear en tiempo real varios indicadores de rendimiento del ordenador.

@@ -43,7 +43,7 @@ Grove - 温度传感器使用[热敏电阻](http://www.legacydistribution.co.uk/
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Temperature_Sensor/img/Tempreture_Sensor_Connector.jpg" /></div>
 
-4. 上传下面的代码。如果您不知道如何上传，请点击[这里](/Upload_Code/)。
+4. 上传下面的代码。如果您不知道如何上传，请点击[这里](/cn/Upload_Code/)。
 
 ```
 /*
@@ -83,11 +83,11 @@ void loop()
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Temperature_Sensor/img/Twig-Temperature-Sensor-value.jpg" /></div>
 
-### 与 [Raspberry Pi](/GrovePi_Plus/ "GrovePi+") 配合使用
+### 与 [Raspberry Pi](/cn/GrovePi_Plus/ "GrovePi+") 配合使用
 
 1.您应该有一个树莓派和一个 grovepi 或 grovepi+。
 
-2.您应该已经完成了开发环境的配置，否则请按照[这里](/GrovePi_Plus/#Introducing_the_GrovePi.2B)的说明进行。
+2.您应该已经完成了开发环境的配置，否则请按照[这里](/cn/GrovePi_Plus/#Introducing_the_GrovePi.2B)的说明进行。
 
 3.连接
 
@@ -137,7 +137,7 @@ sudo python grove_temperature_sensor.py
 
 作为熟悉 Cloud9 IDE 的简单练习，创建一个简单的应用程序来闪烁 BeagleBone 上 4 个用户可编程 LED 中的一个是一个很好的开始。
 
-如果这是您第一次使用 Cloud9 IDE，请按照此[**链接**](/BeagleBone_Green/#getting-started)进行操作。
+如果这是您第一次使用 Cloud9 IDE，请按照此[**链接**](/cn/BeagleBone_Green/#getting-started)进行操作。
 
 **步骤1：** 点击右上角的"+"创建一个新文件。
 

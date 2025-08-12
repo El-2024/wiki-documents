@@ -34,29 +34,29 @@ Grove Indoor Environment Kit for Edisonは、Intel EdisonとArduino Breakout Boa
 
 ---
 
-* [Base Shield V2](/Base_Shield_V2)  x1
+* [Base Shield V2](/ja/Base_Shield_V2)  x1
 
-* [Grove - 温度＆湿度センサー（高精度＆ミニ）](/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0)  x1
+* [Grove - 温度＆湿度センサー（高精度＆ミニ）](/ja/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0)  x1
 
-* [Grove - 土壌湿度センサー](/Grove-Moisture_Sensor)  x1
+* [Grove - 土壌湿度センサー](/ja/Grove-Moisture_Sensor)  x1
 
-* [Grove - 光センサー](/Grove-Light_Sensor)  x1
+* [Grove - 光センサー](/ja/Grove-Light_Sensor)  x1
 
-* [Grove - UVセンサー](/Grove-UV_Sensor)  x1
+* [Grove - UVセンサー](/ja/Grove-UV_Sensor)  x1
 
 * [Grove - PIRモーションセンサー](/ja/Grove-PIR_Motion_Sensor)  x1
 
-* [Grove - エンコーダー](/Grove-Encoder)  x1
+* [Grove - エンコーダー](/ja/Grove-Encoder)  x1
 
-* [Grove - ボタン](/Grove-Button)  x1
+* [Grove - ボタン](/ja/Grove-Button)  x1
 
-* [Grove - LCD RGBバックライト](/Grove-LCD_RGB_Backlight)  x1
+* [Grove - LCD RGBバックライト](/ja/Grove-LCD_RGB_Backlight)  x1
 
-* [Grove - リレー](/Grove-Relay)  x1
+* [Grove - リレー](/ja/Grove-Relay)  x1
 
-* [Grove - サーボ](/Grove-Servo)  x1
+* [Grove - サーボ](/ja/Grove-Servo)  x1
 
-* [Grove - ブザー](/Grove-Buzzer)  x1
+* [Grove - ブザー](/ja/Grove-Buzzer)  x1
 
 * [9V to バレルジャックアダプター](https://www.seeedstudio.com/depot/9V-to-Barrel-Jack-Adapter-p-1481.html)  x1
 

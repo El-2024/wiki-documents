@@ -120,7 +120,7 @@ void loop()
 
 **下载代码：**
 
-<!-- *   从 Github 网站下载 Grove - 数字光传感器的 [Digital_Light_Library](https://github.com/Seeed-Studio/Grove_Digital_Light_Sensor) 并安装到 Arduino 库中。参考 Wiki 页面中的 [如何安装 Arduino 库](/How_to_install_Arduino_Library)，您将熟悉安装过程。
+<!-- *   从 Github 网站下载 Grove - 数字光传感器的 [Digital_Light_Library](https://github.com/Seeed-Studio/Grove_Digital_Light_Sensor) 并安装到 Arduino 库中。参考 Wiki 页面中的 [如何安装 Arduino 库](/cn/How_to_install_Arduino_Library)，您将熟悉安装过程。
 *   安装完成后打开代码。 -->
 
 ```
@@ -154,7 +154,7 @@ void loop()
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Grove_Adaptor/img/Digital_Light_Sensor_Score_Picture.jpg)
 
-<!-- Xadow Grove 转接器中使用的 ADC IC ADC121C021 已被应用于 Grove - I2C ADC。当然，改变 I2C 地址的方法是相同的。请参考 Grove - I2C ADC 的 [参考部分](/Grove-I2C_ADC#Reference) 了解变更方法。此外，板上的 "0" 和 "1" 是 A0 接口的地址变更区域，"2" 和 "3" 是 A1 接口的地址变更区域。 -->
+<!-- Xadow Grove 转接器中使用的 ADC IC ADC121C021 已被应用于 Grove - I2C ADC。当然，改变 I2C 地址的方法是相同的。请参考 Grove - I2C ADC 的 [参考部分](/cn/Grove-I2C_ADC#Reference) 了解变更方法。此外，板上的 "0" 和 "1" 是 A0 接口的地址变更区域，"2" 和 "3" 是 A1 接口的地址变更区域。 -->
 
 ## 原理图在线查看器
 

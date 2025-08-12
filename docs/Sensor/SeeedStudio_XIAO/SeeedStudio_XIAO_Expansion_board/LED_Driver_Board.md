@@ -251,7 +251,7 @@ If this is your first time using Arduino, we highly recommend you to refer to [G
 
 - If you want to use **Seeed Studio XIAO ESP32C6** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/#software-preparation)** to finish adding.
 
-- If you want to use **Seeed Studio XIAO ESP32S3** for the later routines, please refer to **[this tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
+- If you want to use **Seeed Studio XIAO ESP32S3** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
 
 - If you want to use **Seeed Studio XIAO RA4M1** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/getting_started_xiao_ra4m1/#software-preparation)** to finish adding.
 

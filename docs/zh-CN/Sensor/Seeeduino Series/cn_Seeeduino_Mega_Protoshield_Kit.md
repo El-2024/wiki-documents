@@ -11,7 +11,7 @@ last_update:
 ---
 ![](https://www.seeedstudio.com/images/large/product/protomega_LRG.jpg)
 
-这是第一款专为 <a href="/Seeeduino_Mega" ><span><font size={"3"}> Seeeduino Mega</font></span></a> 设计的原型扩展板，它将 <a href="/Seeeduino_V2.2" ><span><font size={"3"}> Seeeduino </font></span></a> 甚至 <a href="/Arduino" ><span><font size={"3"}> Arduino </font></span></a> 的所有引脚都引到了顶层！使用这款原型扩展板，用户将获得一个大型原型制作区域，您甚至可以在此板上使用 Xbee，将其制作成 Xbee 扩展板。
+这是第一款专为 <a href="/cn/Seeeduino_Mega" ><span><font size={"3"}> Seeeduino Mega</font></span></a> 设计的原型扩展板，它将 <a href="/cn/Seeeduino_V2.2" ><span><font size={"3"}> Seeeduino </font></span></a> 甚至 <a href="/cn/Arduino" ><span><font size={"3"}> Arduino </font></span></a> 的所有引脚都引到了顶层！使用这款原型扩展板，用户将获得一个大型原型制作区域，您甚至可以在此板上使用 Xbee，将其制作成 Xbee 扩展板。
 
 [enter image description here](https://www.seeedstudio.com/seeeduino-mega-protoshield-kit-p-597.html?cPath=132_134)
 

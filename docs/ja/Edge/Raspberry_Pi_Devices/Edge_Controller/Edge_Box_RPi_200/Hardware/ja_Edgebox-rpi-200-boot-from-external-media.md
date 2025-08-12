@@ -29,7 +29,7 @@ EdgeBox-RPi-200シリーズは、Raspberry Piをベースにしたオールイ�
 </div>
 
 :::tip進む前に:
-2023年3月30日以降にリリースされたバッチから、Raspberry Pi Compute Module 4のEEPROMを更新したため、起動順序が`NVME > USB-MSD > BCM-USB-MSD > SD CARD/eMMC > NETWORK > RESTART`に変更されました。詳細については、[Compute Module 4のEEPROMを更新する](/Raspberry_pi_CM4_update_eeprom/)ページをご覧ください。
+2023年3月30日以降にリリースされたバッチから、Raspberry Pi Compute Module 4のEEPROMを更新したため、起動順序が`NVME > USB-MSD > BCM-USB-MSD > SD CARD/eMMC > NETWORK > RESTART`に変更されました。詳細については、[Compute Module 4のEEPROMを更新する](/ja/Raspberry_pi_CM4_update_eeprom/)ページをご覧ください。
 
 **2023年3月30日以前にEdgebox-RPI-200を購入し、EEPROMを更新するか、Edgebox-RPI-200にオペレーティングシステムをフラッシュするガイドに従いたい場合は、Raspberry Pi CM4の起動モードを選択する機能を備えた最小限の開発ボードが必要です。そのため、[Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html)が最適です。**
 
@@ -135,7 +135,7 @@ NVMeドライブがフォーマットされており、起動可能なパーテ�
 
 電源を接続し、デバイスが起動するのを待ってください。
 
-その後、SSHを使用してEdgeBox-RPI-200にアクセスしてください。[こちらのガイド](/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh)をご覧ください。
+その後、SSHを使用してEdgeBox-RPI-200にアクセスしてください。[こちらのガイド](/ja/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh)をご覧ください。
 
 SSHアクセスを取得したら、以下の手順に従ってください：
 

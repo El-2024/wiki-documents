@@ -34,7 +34,7 @@ GPIO（汎用入出力）ポートは、Jetson キャリアボードの上端に
 
 Grove はオープンソースでモジュール化された、すぐに使用できるツールセットであり、電子機器を組み立てるためにブロック方式を適用します。Grove は、従来の複雑な学習方法（ブレッドボードやさまざまな電子部品を使用してプロジェクトを組み立てる方法）と比較して、学習と使用を大幅に簡素化します。
 
-- [Grove システムについて学ぶ](https://wiki.seeedstudio.com/cn/Grove/)
+- [Grove システムについて学ぶ](https://wiki.seeedstudio.com/ja/cn/Grove/)
 
 ## Grove PiHAT と NVIDIA Jetson Nano を使用してさらに多くの AI の可能性を創造する
 

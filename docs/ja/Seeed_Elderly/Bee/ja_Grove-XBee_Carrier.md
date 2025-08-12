@@ -26,7 +26,7 @@ sku:  113020004
 
 ![](https://files.seeedstudio.com/wiki/Grove-XBee_Carrier/img/Bee_Stem.jpg)
 
-Grove - XBee Carrierは、BeeシリーズおよびGroveユニット向けに設計されたワイヤレスセンサーネットワーク（WSN）ベースボードです。主に、ATMega328を搭載したRFBeeやWifi BeeのようなスタンドアロンBeeノード、およびXBee（Zigbee）モジュールに適しています。[RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")、[Wifi Bee](/Wifi_Bee "Wifi Bee")、[XBee](http://garden.seeedstudio.com/index.php?title=Bee_series#ZigBee "Bee_series#ZigBee")、Bluetooth Beeと互換性があります。Bee用のソケットに加えて、2つのGroveコネクタも備えています。このボードはリチウムバッテリーまたはUSBケーブルで電源を供給できます。ワイヤレス充電器、ソーラーパネル、またはUSBケーブルを使用してバッテリーを充電することができます。オンボードのFT232RLチップは、Beeモジュールに直接プログラムをダウンロードするのに役立ちます。
+Grove - XBee Carrierは、BeeシリーズおよびGroveユニット向けに設計されたワイヤレスセンサーネットワーク（WSN）ベースボードです。主に、ATMega328を搭載したRFBeeやWifi BeeのようなスタンドアロンBeeノード、およびXBee（Zigbee）モジュールに適しています。[RFBee](/ja/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")、[Wifi Bee](/ja/Wifi_Bee "Wifi Bee")、[XBee](http://garden.seeedstudio.com/index.php?title=Bee_series#ZigBee "Bee_series#ZigBee")、Bluetooth Beeと互換性があります。Bee用のソケットに加えて、2つのGroveコネクタも備えています。このボードはリチウムバッテリーまたはUSBケーブルで電源を供給できます。ワイヤレス充電器、ソーラーパネル、またはUSBケーブルを使用してバッテリーを充電することができます。オンボードのFT232RLチップは、Beeモジュールに直接プログラムをダウンロードするのに役立ちます。
 
 ATMega328を搭載していないBluetooth BeeのようなBeeは、オンボードのFT232RL（USB to UART）を使用してのみ設定できます。これらのBeeはスタンドアロンアプリケーションには適していません。
 
@@ -54,7 +54,7 @@ ATMega328を搭載していないBluetooth BeeのようなBeeは、オンボー�
 
 ---
 
-* [Wifi Bee](/Wifi_Bee "Wifi Bee")のようなスタンドアロンBeeノードを使用したワイヤレスセンサーネットワーク。
+* [Wifi Bee](/ja/Wifi_Bee "Wifi Bee")のようなスタンドアロンBeeノードを使用したワイヤレスセンサーネットワーク。
 
 * FT232RLを使用したBeeの設定補助。
 
@@ -135,7 +135,7 @@ RFBeeを使用する場合、Arduino IDEを使用するために以下のRFBee�
 
 #### 充電
 
-<!-- アプリケーションに適したバッテリーを**SeeedStudio**の[バッテリーと充電器](/Solar_Charger_Shield_V2.2 "Solar_Charger_Shield_V2.2")から選択できます -->
+<!-- アプリケーションに適したバッテリーを**SeeedStudio**の[バッテリーと充電器](/ja/Solar_Charger_Shield_V2.2 "Solar_Charger_Shield_V2.2")から選択できます -->
 
 * 3.7V LiPoバッテリーを**BAT** JSTソケットに接続します。
 
@@ -147,9 +147,9 @@ RFBeeを使用する場合、Arduino IDEを使用するために以下のRFBee�
 
 #### スタンドアロンBeeノードとの連携
 
-BeeノードはスタンドアロンのArduino互換ワイヤレスノードです。**SeeedStudio**には、[Wifi Bee](/Wifi_Bee "Wifi Bee")と[RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")の2つのノードがあります。
+BeeノードはスタンドアロンのArduino互換ワイヤレスノードです。**SeeedStudio**には、[Wifi Bee](/ja/Wifi_Bee "Wifi Bee")と[RFBee](/ja/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")の2つのノードがあります。
 
-* 以下の画像は、[WiFi Bee](/Wifi_Bee "Wifi Bee")を**Grove - XBee Carrier**に接続した例を示しています。
+* 以下の画像は、[WiFi Bee](/ja/Wifi_Bee "Wifi Bee")を**Grove - XBee Carrier**に接続した例を示しています。
 
 * 任意のGroveモジュールを提供されたGroveソケットに接続できます。
 
@@ -169,7 +169,7 @@ Bee Stem Connected To RFBee And TwoTwigs.jpg
 
 このセクションでは、Arduinoブートローダーで事前にプログラムされていないMCUを持つBeeモジュールについて説明します。これらは主にワイヤレス送受信機として機能します。これらの**Beeモジュール**（Bluetooth Beeなど）はPCとも通信できます。この場合、**Grove - XBee Carrier**はこれらのBeeモジュールのキャリアとして機能し、必要な電力を供給し、FT232RL USBからUARTを介してPCとの通信インターフェースを提供します。
 
-<!-- *   以下の例では、[Bluetooth Bee](/Bluetooth_Bee "Bluetooth Bee")が**Grove - XBee Carrier**に接続され、USB-UARTを使用して設定されています -->
+<!-- *   以下の例では、[Bluetooth Bee](/ja/Bluetooth_Bee "Bluetooth Bee")が**Grove - XBee Carrier**に接続され、USB-UARTを使用して設定されています -->
 
 ![](https://files.seeedstudio.com/wiki/Grove-XBee_Carrier/img/Stem_XBee_Carrier_Connected_to_BluetoothBee.jpg)
 
@@ -181,7 +181,7 @@ Bee Stem Connected To RFBee And TwoTwigs.jpg
 
 ![](https://files.seeedstudio.com/wiki/Grove-XBee_Carrier/img/Stem_XBee_Carrier_BluetoothBee_Commands.png)
 
-<!-- *   [Bluetooth Bee](/Bluetooth_Bee "Bluetooth Bee")の使用に関する詳細は、[Bluetooth Beeコマンドドキュメント](/Bluetooth_Bee#Commands_to_change_default_configuration "Bluetooth Bee")を参照してください。 -->
+<!-- *   [Bluetooth Bee](/ja/Bluetooth_Bee "Bluetooth Bee")の使用に関する詳細は、[Bluetooth Beeコマンドドキュメント](/ja/Bluetooth_Bee#Commands_to_change_default_configuration "Bluetooth Bee")を参照してください。 -->
 
 ### プログラミング
 

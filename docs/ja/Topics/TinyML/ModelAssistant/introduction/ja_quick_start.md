@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # クイックスタート
 
-[概要](/ModelAssistant_Introduce_Overview)では、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)が提供する機能と特徴について紹介しました。[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)は複数の異なるモジュールに分かれており、それぞれのモジュールが対応するタスクを完了します。以下の手順に従うことで、迅速に始めることができます。
+[概要](/ja/ModelAssistant_Introduce_Overview)では、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)が提供する機能と特徴について紹介しました。[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)は複数の異なるモジュールに分かれており、それぞれのモジュールが対応するタスクを完了します。以下の手順に従うことで、迅速に始めることができます。
 
 :::tip
 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant)の初心者には、[Getting Started](#getting-started)から学び始めることをお勧めします。[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)や[OpenMMLab](https://github.com/open-mmlab)に精通しており、エッジコンピューティングデバイスへのデプロイ、既存のニューラルネットワークの修正、またはユーザー定義データセットでのトレーニングを試したい場合は、[Advanced](#advanced)を直接参照してください。
@@ -26,7 +26,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### モデルのデプロイ
 
-デバイスにモデルをデプロイしたい場合は、[Deploy](/ModelAssistant_Deploy_Overview)セクションを参照して、モデルのデプロイ方法を学んでください。
+デバイスにモデルをデプロイしたい場合は、[Deploy](/ja/ModelAssistant_Deploy_Overview)セクションを参照して、モデルのデプロイ方法を学んでください。
 
 ### モデルのトレーニング
 
@@ -62,16 +62,16 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 2. 次に、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)の基本的な使用方法に慣れてください：
 
-   - **モデルのトレーニング**については、[モデルトレーニング](/ModelAssistant_Tutorials_Training_Overview)を参照して、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)を使用してモデルをトレーニングする方法を学んでください。例からモデルを選択してトレーニングすることをお勧めします。
+   - **モデルのトレーニング**については、[モデルトレーニング](/ja/ModelAssistant_Tutorials_Training_Overview)を参照して、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)を使用してモデルをトレーニングする方法を学んでください。例からモデルを選択してトレーニングすることをお勧めします。
 
    - **モデルのエクスポート**。モデルのトレーニングを完了した後、エッジコンピューティングデバイスにデプロイするためには、まずモデルをエクスポートする必要があります。モデルのエクスポートに関するチュートリアルについては、[モデルエクスポート](/ja/ModelAssistant_Tutorials_Export_Overview)を参照してください。
 
    - **モデルの検証**。モデルの検証は、トレーニング後またはエクスポート後に実行できます。前者はニューラルネットワークとトレーニング結果の正確性を検証し、後者は主にエクスポートされたモデルの正確性を検証して、後のエッジコンピューティングデバイスでのデプロイとデバッグを容易にします。モデル検証のいくつかの方法は、上記の2つのステップのドキュメントに記載されています。
 
-- **モデルのデプロイ**。エクスポートされたトレーニングモデルをエッジコンピューティングデバイスにデプロイしたい場合は、[デプロイメント](/ModelAssistant_Deploy_Overview)を参照してください。
-- **カスタムデータセット**。カスタムデータセットでトレーニングを行いたい場合は、[データセット](/ModelAssistant_Tutorials_Datasets)を参照してください。
+- **モデルのデプロイ**。エクスポートされたトレーニングモデルをエッジコンピューティングデバイスにデプロイしたい場合は、[デプロイメント](/ja/ModelAssistant_Deploy_Overview)を参照してください。
+- **カスタムデータセット**。カスタムデータセットでトレーニングを行いたい場合は、[データセット](/ja/ModelAssistant_Tutorials_Datasets)を参照してください。
 
-- **カスタムモデル**。既存のニューラルネットワークを修正したり、自分自身でニューラルネットワークを設計したい場合は、[モデル構成](/ModelAssistant_Tutorials_Config)を参照してください。
+- **カスタムモデル**。既存のニューラルネットワークを修正したり、自分自身でニューラルネットワークを設計したい場合は、[モデル構成](/ja/ModelAssistant_Tutorials_Config)を参照してください。
 
 ## 必要な知識
 

@@ -31,7 +31,7 @@ MID360 LIDAR センサーは、さまざまな用途向けに高精度な 3D ポ
 
 
 ## 前提条件
-- __[reComputer J30/40 シリーズ](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__: チュートリアルに従って [JetPack 5.x のインストール](/reComputer_J4012_Flash_Jetpack) システムおよび [ROS Noetic 環境](/installing_ros1) をすでに完了していること。
+- __[reComputer J30/40 シリーズ](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__: チュートリアルに従って [JetPack 5.x のインストール](/ja/reComputer_J4012_Flash_Jetpack) システムおよび [ROS Noetic 環境](/ja/installing_ros1) をすでに完了していること。
 
 - __MID360 LIDAR__
 

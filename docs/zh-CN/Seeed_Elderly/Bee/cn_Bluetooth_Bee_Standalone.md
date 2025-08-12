@@ -54,7 +54,7 @@ last_update:
 ---
 
 * 兼容 Arduino 的模块，支持蓝牙通信。
-<!-- *   当与 [UartSBee](/UartSBee_V4) 连接并上传 SoftSerial 程序到 **ATMEGA168** 时，可作为 PC 的蓝牙串口。 -->
+<!-- *   当与 [UartSBee](/cn/UartSBee_V4) 连接并上传 SoftSerial 程序到 **ATMEGA168** 时，可作为 PC 的蓝牙串口。 -->
 
 :::caution
     * 需要 3.3V 电源。
@@ -77,7 +77,7 @@ last_update:
 ## 使用方法
 
 ---
-<!-- 示例：使用 Bluetooth Bee-Standalone 控制 [Grove-Red_LED](/Grove-Red_LED)，通过 XBee 扩展板实现。 -->
+<!-- 示例：使用 Bluetooth Bee-Standalone 控制 [Grove-Red_LED](/cn/Grove-Red_LED)，通过 XBee 扩展板实现。 -->
 
 * 第一步
 
@@ -213,7 +213,7 @@ void sendBlueToothCommand(char command[])
 
 * 第五步
 
-<!-- 使用另一个 Bluetooth Bee 连接到 Bluetooth Bee-Standalone。如何连接？您可以参考 [Bluetooth Bee](/Bluetooth_Bee)。连接后，您可以通过另一个 Bluetooth Bee 控制 LED。当您发送 "ON" 到 Bluetooth Bee-Standalone 时，LED 将亮起；发送 "SH"（SHUT 的缩写）时，LED 将熄灭。 -->
+<!-- 使用另一个 Bluetooth Bee 连接到 Bluetooth Bee-Standalone。如何连接？您可以参考 [Bluetooth Bee](/cn/Bluetooth_Bee)。连接后，您可以通过另一个 Bluetooth Bee 控制 LED。当您发送 "ON" 到 Bluetooth Bee-Standalone 时，LED 将亮起；发送 "SH"（SHUT 的缩写）时，LED 将熄灭。 -->
 
 ![](https://files.seeedstudio.com/wiki/Bluetooth_Bee_Standalone/img/Bluetooth_Bee-Standalone1.jpg)
 

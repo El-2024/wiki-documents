@@ -22,15 +22,15 @@ MobileNet に関する詳細情報は、論文 [MobileNets: Efficient Convolutio
 
 ## データセットの準備
 
-[SSCMA](https://github.com/Seeed-Studio/ModelAssistant) はデフォルトで [COCO_MASK データセット](/ModelAssistant_Tutorials_Datasets#SSCMA) を使用して FOMO モデルをトレーニングします。以下の手順に従ってデータセットの準備を完了してください。
+[SSCMA](https://github.com/Seeed-Studio/ModelAssistant) はデフォルトで [COCO_MASK データセット](/ja/ModelAssistant_Tutorials_Datasets#SSCMA) を使用して FOMO モデルをトレーニングします。以下の手順に従ってデータセットの準備を完了してください。
 
-1. [インターネットデータセット](/ModelAssistant_Tutorials_Datasets#SSCMA) を参照してデータセットをダウンロードし、解凍してください。
+1. [インターネットデータセット](/ja/ModelAssistant_Tutorials_Datasets#SSCMA) を参照してデータセットをダウンロードし、解凍してください。
 
 2. 解凍したデータセットの **フォルダパス**（例: `datasets\mask`）を覚えておいてください。このフォルダパスは後で使用する可能性があります。
 
 ## 設定ファイルの選択
 
-トレーニングタスクの種類に応じて適切な設定ファイルを選択します。設定ファイルの機能、構造、および原則については、[Config](/ModelAssistant_Tutorials_Config) で既に紹介しています。
+トレーニングタスクの種類に応じて適切な設定ファイルを選択します。設定ファイルの機能、構造、および原則については、[Config](/ja/ModelAssistant_Tutorials_Config) で既に紹介しています。
 
 FOMO モデルの例では、`fomo_mobnetv2_0.35_x8_abl_coco.py` を設定ファイルとして使用します。このファイルは [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) のルートディレクトリ内の `configs/fomo` フォルダにあり、さらに `default_runtime_det.py` 設定ファイルを継承しています。
 
@@ -193,4 +193,4 @@ python3 tools/inference.py \
 
 ### デプロイ
 
-モデルをエクスポートした後、エッジコンピューティングデバイスにモデルをデプロイしてテストおよび評価を行うことができます。モデルのデプロイ方法については、[デプロイ](/ModelAssistant_Deploy_Overview) セクションを参照してください。
+モデルをエクスポートした後、エッジコンピューティングデバイスにモデルをデプロイしてテストおよび評価を行うことができます。モデルのデプロイ方法については、[デプロイ](/ja/ModelAssistant_Deploy_Overview) セクションを参照してください。

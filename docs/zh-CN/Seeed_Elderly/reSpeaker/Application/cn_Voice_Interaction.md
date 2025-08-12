@@ -74,8 +74,8 @@ Bing Speech 包括将音频转换为文本、理解意图以及将文本转换�
 
 以下是语音交互教程列表。
 
-<!-- - [ReSpeaker Core V2 & Wio Link](/ReSpeaker_Core_V2_&_Wio_Link/)
-- [Google Assistant](/Google_Assistant) -->
+<!-- - [ReSpeaker Core V2 & Wio Link](/cn/ReSpeaker_Core_V2_&_Wio_Link/)
+- [Google Assistant](/cn/Google_Assistant) -->
 感谢您选择我们的产品！我们致力于为您提供各种支持，确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">

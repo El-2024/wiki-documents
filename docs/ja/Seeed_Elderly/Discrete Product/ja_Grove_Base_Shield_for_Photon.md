@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/Grove_Base_Shield_for_Photon/img/Grove_Base_Shield_for_Photon_product_view_1200_s.jpg)
 
-<!-- **Photon用Grove Base Shield**は、[Grove](/Grove_System)ポートを組み込んだ拡張シールドボードで、より強力で知的なアプリケーションを、より豊富でコスト効率の高いGrove機能モジュールを使用して構築することができます。デジタルポート3つ、アナログポート2つ、I<sup>2</sup>Cポート2つ、UARTポート1つを備えています。これはプラグアンドプレイ型のボードであり、プロトタイピングプロセスを劇的に加速します。 -->
+<!-- **Photon用Grove Base Shield**は、[Grove](/ja/Grove_System)ポートを組み込んだ拡張シールドボードで、より強力で知的なアプリケーションを、より豊富でコスト効率の高いGrove機能モジュールを使用して構築することができます。デジタルポート3つ、アナログポート2つ、I<sup>2</sup>Cポート2つ、UARTポート1つを備えています。これはプラグアンドプレイ型のボードであり、プロトタイピングプロセスを劇的に加速します。 -->
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Particle-Photon-Base-Shield-p-2598.html?cPath=98_106_57)
 
@@ -127,7 +127,7 @@ void loop() {
 ---
 *   [回路図ファイル](https://files.seeedstudio.com/wiki/Grove_Base_Shield_for_Photon/res/Schematic_files_for_Grove_Base_Shield_for_Photon.zip)
 
-<!-- *   [Grove_System](/Grove_System) -->
+<!-- *   [Grove_System](/ja/Grove_System) -->
 
 ## 技術サポートと製品ディスカッション
 

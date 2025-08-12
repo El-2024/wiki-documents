@@ -11,7 +11,7 @@ last_update:
 ---
 
 :::caution
-本wiki是为ReSpeaker 2-Mics Pi HAT **v1**编写的，要区分v1和v2设备，请参考[如何区分ReSpeaker 2-Mics Pi HAT硬件版本](/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions)。
+本wiki是为ReSpeaker 2-Mics Pi HAT **v1**编写的，要区分v1和v2设备，请参考[如何区分ReSpeaker 2-Mics Pi HAT硬件版本](/cn/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions)。
 :::
 
 ### 驱动安装和配置

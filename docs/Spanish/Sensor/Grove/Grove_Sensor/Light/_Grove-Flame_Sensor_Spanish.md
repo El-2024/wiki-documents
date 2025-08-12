@@ -26,7 +26,7 @@ El Sensor de Flama - Grove puede utilizarse para detectar fuentes de incendio u 
 - Sensibilidad ajustable
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Especificaciones
 
@@ -158,7 +158,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 ## Primeros pasos
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) before the start.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) before the start.
 
 ### Jugando con Arduino
 
@@ -261,7 +261,7 @@ boolean isFlameDetected()
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega el soporte para Arduino y arrastra el procedimiento principal al área de trabajo.
 
 Nota:
-Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra los bloques como se muestra en la imagen o abre el archivo cdc que puedes descargar al final de esta página.
 

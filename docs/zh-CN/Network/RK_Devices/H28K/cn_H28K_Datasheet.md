@@ -68,7 +68,7 @@ LinkStar-H28K 配备了两个使用 PCIE/RGMII 千兆技术的千兆网络端口
 
 ## 快速开始
 
-H28K 路由器未预装系统。您需要按照以下教程手动安装操作系统。[H28K-安装系统](/H28K-install-system)
+H28K 路由器未预装系统。您需要按照以下教程手动安装操作系统。[H28K-安装系统](/cn/H28K-install-system)
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

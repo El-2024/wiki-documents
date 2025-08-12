@@ -37,7 +37,7 @@ There are two documents on the usage of **Seeed Studio XIAO SAMD21** which focus
 
 ### **CircuitPython on Seeed Studio XIAO SAMD21**
 
-- Get started with [**CircuitPython on Seeed Studio XIAO SAMD21 **](http://wiki.seeedstudio.com/Seeeduino-XIAO-CircuitPython).
+- Get started with [**CircuitPython on Seeed Studio XIAO SAMD21 **](https://wiki.seeedstudio.com/Seeeduino-XIAO-CircuitPython).
 
 ## **Features**
 

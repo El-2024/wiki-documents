@@ -5,7 +5,7 @@ title: Grove Vision AI V2 的模型输出
 image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/54.webp
 slug: /cn/sensecraft-ai/tutorials/sensecraft-ai-output-grove-vision-ai
 aliases:
-  - /sensecraft_ai_output_grove_visionai
+  - /cn/sensecraft_ai_output_grove_visionai
 last_update:
   date: 12/04/2024
   author: Citric

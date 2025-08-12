@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-IMU_10DOF/img/main.jpg" alt="pir" width={600} height="auto" /></p>
 
 
-Grove - IMU 10DOF は、Grove - IMU 9DOF と [Grove - Barometer Sensor (BMP180)](/Grove-Barometer_Sensor-BMP180/ "Grove - Barometer Sensor (BMP180)") を組み合わせたモジュールです。このモジュールは MPU-9250 と BMP180 を基盤としており、MPU-9250 は 3 軸ジャイロスコープ、3 軸加速度計、3 軸磁力計、デジタルモーションプロセッサ (DMP) を組み合わせた 9 軸モーショントラッキングデバイスです。一方、BMP180 は高精度で超低消費電力のデジタル圧力センサーで、消費者向けアプリケーションに適しています。このモジュールは、スマートフォン、タブレット、ウェアラブルデバイスのアプリケーションに非常に適しています。
+Grove - IMU 10DOF は、Grove - IMU 9DOF と [Grove - Barometer Sensor (BMP180)](/ja/Grove-Barometer_Sensor-BMP180/ "Grove - Barometer Sensor (BMP180)") を組み合わせたモジュールです。このモジュールは MPU-9250 と BMP180 を基盤としており、MPU-9250 は 3 軸ジャイロスコープ、3 軸加速度計、3 軸磁力計、デジタルモーションプロセッサ (DMP) を組み合わせた 9 軸モーショントラッキングデバイスです。一方、BMP180 は高精度で超低消費電力のデジタル圧力センサーで、消費者向けアプリケーションに適しています。このモジュールは、スマートフォン、タブレット、ウェアラブルデバイスのアプリケーションに非常に適しています。
 
 
 [<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-IMU-10DOF-p-2386.html)

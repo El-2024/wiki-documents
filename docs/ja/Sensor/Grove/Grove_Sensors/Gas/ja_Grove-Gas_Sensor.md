@@ -20,10 +20,10 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 
 各 Grove - ガスセンサーキットは、1つのガスセンサーベースと4つの検出器で構成されています。特定のターゲットガスに応じて、ベース上の検出器を切り替えることができます。
 
--   [Grove - ガスセンサー(MQ2)](/Grove-Gas_Sensor-MQ2)：可燃性ガス、煙
--   [Grove - ガスセンサー(MQ3)](/Grove-Gas_Sensor-MQ3)：アルコール蒸気
--   [Grove - ガスセンサー(MQ5)](/Grove-Gas_Sensor-MQ5)：LPG、天然ガス、都市ガス
--   [Grove - ガスセンサー(MQ9)](/Grove-Gas_Sensor-MQ9)：一酸化炭素、石炭ガス、液化ガス
+-   [Grove - ガスセンサー(MQ2)](/ja/Grove-Gas_Sensor-MQ2)：可燃性ガス、煙
+-   [Grove - ガスセンサー(MQ3)](/ja/Grove-Gas_Sensor-MQ3)：アルコール蒸気
+-   [Grove - ガスセンサー(MQ5)](/ja/Grove-Gas_Sensor-MQ5)：LPG、天然ガス、都市ガス
+-   [Grove - ガスセンサー(MQ9)](/ja/Grove-Gas_Sensor-MQ9)：一酸化炭素、石炭ガス、液化ガス
 
 仕様
 -------------

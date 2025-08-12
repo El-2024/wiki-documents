@@ -130,7 +130,7 @@ Codecraft を初めて使用する場合は、[Arduino を使用した Codecraft
 - [I2C タッチセンサーライブラリ](https://github.com/Seeed-Studio/Grove_I2C_Touch_Sensor)
 - [I2C タッチセンサー Eagle ファイル(v1.1).zip](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/I2C_Touch_Sensor_eagle_files-v1.1-.zip)
 - [I2C タッチセンサー PDF](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/Grove-I2C_Color_sensor_v1.2.pdf)
-- [指のタッチを検出する方法](/How_to_detect_finger_touch)
+- [指のタッチを検出する方法](/ja/How_to_detect_finger_touch)
 - [I2C タッチセンサー データシート](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/Freescale_Semiconductor;MPR121QR2.pdf)
 - [Codecraft CDC ファイル](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/Grove_I2C_Touch_Sensor_CDC_File.zip)
 

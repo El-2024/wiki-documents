@@ -159,14 +159,14 @@ void loop()
 
 <div class="admonition note">
 <p class="admonition-title">注意</p>
-Grove - I2C ADC的地址是可更改的，这意味着您可以重新定义其地址。这需要对电路板进行一些硬件修改。如果您考虑同时使用多个I2C ADC，请按照下面参考部分的说明进行操作。可以同时使用的I2C ADC的最大数量是9个，但Grove - Base Shield V1.2上只有4个I2C插座，所以如果您想使用超过4个I2C ADC，请使用<a href="/Grove-I2C_Hub">Grove - I2C Hub</a>来创建更多I2C插座。
+Grove - I2C ADC的地址是可更改的，这意味着您可以重新定义其地址。这需要对电路板进行一些硬件修改。如果您考虑同时使用多个I2C ADC，请按照下面参考部分的说明进行操作。可以同时使用的I2C ADC的最大数量是9个，但Grove - Base Shield V1.2上只有4个I2C插座，所以如果您想使用超过4个I2C ADC，请使用<a href="/cn/Grove-I2C_Hub">Grove - I2C Hub</a>来创建更多I2C插座。
 </div>
 ### 与Beaglebone Green配合使用
 
 要开始编辑在BBG上运行的程序，您可以使用Cloud9 IDE。
 作为熟悉Cloud9 IDE的简单练习，创建一个简单的应用程序来闪烁BeagleBone上4个用户可编程LED中的一个是一个很好的开始。
 
-如果这是您第一次使用Cloud9 IDE，请访问此[**链接**](/BeagleBone_Green)。
+如果这是您第一次使用Cloud9 IDE，请访问此[**链接**](/cn/BeagleBone_Green)。
 
 **步骤1：** 将Grove - UART插座设置为Grove - GPIO插座，只需按照此[**链接**](https://www.seeedstudio.com/recipe/362-how-to-use-the-grove-uart-port-as-a-gpio-on-bbg.html)操作。
 

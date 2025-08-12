@@ -90,7 +90,7 @@ BLE Micro 模块有两个批次，一个带有 Nordic S110 SoftDevice 6.0 和 "D
 
 如果您熟悉 Docker，Paul 已为您创建了一个 [Docker 容器](https://registry.hub.docker.com/u/skyplabs/ble-micro/)，可以快速设置工具链。您可以使用 [Dockerfile](https://github.com/SkypLabs/ble_micro_dockerfile) 开始。
 
-<!-- 如果您有 [Arch BLE](https://www.seeedstudio.com/depot/Arch-BLE-p-1998.html)，您也可以使用 [ARM mbed 基于云的 IDE](https://developer.mbed.org/compiler/)。另请参阅 [Arch BLE wiki](/Arch_BLE) -->
+<!-- 如果您有 [Arch BLE](https://www.seeedstudio.com/depot/Arch-BLE-p-1998.html)，您也可以使用 [ARM mbed 基于云的 IDE](https://developer.mbed.org/compiler/)。另请参阅 [Arch BLE wiki](/cn/Arch_BLE) -->
 
 ## BLE UART
 ---

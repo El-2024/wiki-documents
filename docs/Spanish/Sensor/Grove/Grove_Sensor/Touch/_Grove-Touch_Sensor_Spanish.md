@@ -26,7 +26,7 @@ El Sensor Touch - Grove permite reemplazar la presión con el contacto. Puede de
 - Chip utilizado: TTP223-BA6
 
 ¡Consejo!
-Para más información sobre módulos Grove, visita [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/)
+Para más información sobre módulos Grove, visita [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/)
 
 ## Plataformas compatibles
 
@@ -110,7 +110,7 @@ void loop() {
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega soporte para Arduino y arrastra un procedimiento principal al área de trabajo.
 
 Nota:
-Si es tu primera vez usando Codecraft, por favor revisa [Guía para Codecraft usando Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, por favor revisa [Guía para Codecraft usando Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra bloques como se muestra en la imagen, o abre el archivo cdc que puedes descargar al final de esta página.
 
@@ -143,7 +143,7 @@ En el paso 3, puedes conectar el Sensor Touch a **cualquier puerto GPIO** pero d
 
 #### Software
 
-- **Paso 1**. Sigue [Configuración de Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Sigue [Configuración de Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 - **Paso 2**. Descarga el archivo fuente clonando la librería grove.py.
 
 ```

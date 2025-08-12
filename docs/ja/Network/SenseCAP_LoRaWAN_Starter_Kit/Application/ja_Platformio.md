@@ -48,12 +48,12 @@ Long Range のネットワークアーキテクチャやアプリケーション
 
 ### ハードウェア
 
-- **[XIAO ESP32S3](/xiao_esp32s3_getting_started/)**: Arduino 互換で、多様な IoT プロジェクトに最適な汎用ボードです。必要に応じて、他の Arduino 互換ボードに置き換えることができます。
-- **[Grove - DHT11](/Grove-TemperatureAndHumidity_Sensor)**: 環境データ収集用で、多くの IoT アプリケーションに不可欠です。
-- **[Grove - Circular LED](/Grove-Circular_LED)**: ライト制御に使用されます。これは制御可能なデバイスの例であり、必要に応じて他のコンポーネントに置き換えることができます。
+- **[XIAO ESP32S3](/ja/xiao_esp32s3_getting_started/)**: Arduino 互換で、多様な IoT プロジェクトに最適な汎用ボードです。必要に応じて、他の Arduino 互換ボードに置き換えることができます。
+- **[Grove - DHT11](/ja/Grove-TemperatureAndHumidity_Sensor)**: 環境データ収集用で、多くの IoT アプリケーションに不可欠です。
+- **[Grove - Circular LED](/ja/Grove-Circular_LED)**: ライト制御に使用されます。これは制御可能なデバイスの例であり、必要に応じて他のコンポーネントに置き換えることができます。
 - **[Grove - OLED Display](https://wiki.seeedstudio.com/ja/Grove-OLED-Display-0.96-SSD1315/)**: 視覚的なデータ表示機能をプロジェクトに追加します。このコンポーネントはオプションですが、よりインタラクティブなユーザーインターフェースを提供するために推奨されます。
-- **[Grove - Wio-E5 LoRa Module](/Grove_LoRa_E5_New_Version/)**: 長距離、低消費電力のワイヤレス通信を提供し、LoRaWAN アプリケーションに最適です。
-- **[SenseCAP M2 Multi-Platform Gateway](/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview/)**: Wio-E5 モジュールと LoRaWAN ネットワーク間の通信を可能にする重要なコンポーネントです。
+- **[Grove - Wio-E5 LoRa Module](/ja/Grove_LoRa_E5_New_Version/)**: 長距離、低消費電力のワイヤレス通信を提供し、LoRaWAN アプリケーションに最適です。
+- **[SenseCAP M2 Multi-Platform Gateway](/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview/)**: Wio-E5 モジュールと LoRaWAN ネットワーク間の通信を可能にする重要なコンポーネントです。
 
 ### ソフトウェア
 
@@ -72,7 +72,7 @@ Long Range のネットワークアーキテクチャやアプリケーション
 :::info
 PlatformIO に不慣れな方や理解を深めたい方は、以下のリソースから始めてください:
 
-- [PlatformIO IDE を使用した Arduino プログラミング方法](/Software-PlatformIO) – 初心者向けのガイドです。
+- [PlatformIO IDE を使用した Arduino プログラミング方法](/ja/Software-PlatformIO) – 初心者向けのガイドです。
 - [PlatformIO 公式ウェブサイト](https://platformio.org/) – 詳細で包括的な説明を提供します。
 :::
 
@@ -89,8 +89,8 @@ ChirpStack の以下の手順に不慣れな場合は:
 
 以下のリソースから学ぶことができます:
 
-- [LoRaWAN ネットワークサーバーへのデバイス登録](/SenseCAP_Indicator_Application_LoRaWAN/#21-configure-the-sensecap-lorawan-gateway)
-- [SenseCAP M2 MP Gateway LNS 設定](/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_MP_Gateway_LNS_Configuration)
+- [LoRaWAN ネットワークサーバーへのデバイス登録](/ja/SenseCAP_Indicator_Application_LoRaWAN/#21-configure-the-sensecap-lorawan-gateway)
+- [SenseCAP M2 MP Gateway LNS 設定](/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_MP_Gateway_LNS_Configuration)
 
 *次のセクションで一緒に行います*。
 :::
@@ -98,8 +98,8 @@ ChirpStack の以下の手順に不慣れな場合は:
 :::tip
 AWS IoT や TTN などの代替プラットフォームを好む方は、以下のガイドを参照してください:
 
-- [AWS IoT への接続](/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-AWS-IoT/)
-- [TTN への接続](/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-The-Things-Network/)
+- [AWS IoT への接続](/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-AWS-IoT/)
+- [TTN への接続](/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-The-Things-Network/)
 :::
 
 
@@ -122,7 +122,7 @@ Wio-E5 モジュールを使用して LoRaWAN ネットワークと通信を成�
 
 前のセクションで ChirpStack ネットワークサーバーをすでに設定していると仮定すると、次のステップは必要なネットワーク接続パラメータを収集することです。これらのパラメータは、デバイスがネットワークに正常に接続し、アクセスするために不可欠です。
 
-詳細なステップバイステップのチュートリアルについては、[LoRaWAN ネットワークサーバーにデバイスを登録する](/SenseCAP_Indicator_Application_LoRaWAN/#21-configure-the-sensecap-lorawan-gateway) セクションを参照してください。
+詳細なステップバイステップのチュートリアルについては、[LoRaWAN ネットワークサーバーにデバイスを登録する](/ja/SenseCAP_Indicator_Application_LoRaWAN/#21-configure-the-sensecap-lorawan-gateway) セクションを参照してください。
 
 #### デバイスプロファイルを追加する
 
@@ -379,7 +379,7 @@ Grove_LED_Bar ライブラリで問題が発生している場合は、以下の
 
 ## リソース
 
-- [Grove - Wio-E5 | Wiki](/Grove_LoRa_E5_New_Version/)
+- [Grove - Wio-E5 | Wiki](/ja/Grove_LoRa_E5_New_Version/)
 - [Wio-E5 AT コマンド仕様書](https://files.seeedstudio.com/products/317990687/res/LoRa-E5%20AT%20Command%20Specification_V1.0%20.pdf)
 
 #### LoRaE5 ライブラリ

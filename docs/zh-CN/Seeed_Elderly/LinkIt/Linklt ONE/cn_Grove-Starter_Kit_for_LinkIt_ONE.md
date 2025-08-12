@@ -12,7 +12,7 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/Grove-Starter_Kit_for_LinkIt_ONE/img/Grove_Starter_Kit_for_LinkIt_ONE_530x397.jpg)
 
-<!-- Grove - Starter Kit for LinkIt ONE 是一个工具包，用于在 LinkIt ONE 开发平台上更快、更轻松地构建您的应用程序。通过此套件，您可以专注于项目的设计过程，从而节省大量时间和费用。它包含了构建物联网（IoT）应用程序的最流行模块，例如 [Base Shield](/Base_Shield_V2)。 -->
+<!-- Grove - Starter Kit for LinkIt ONE 是一个工具包，用于在 LinkIt ONE 开发平台上更快、更轻松地构建您的应用程序。通过此套件，您可以专注于项目的设计过程，从而节省大量时间和费用。它包含了构建物联网（IoT）应用程序的最流行模块，例如 [Base Shield](/cn/Base_Shield_V2)。 -->
 
 [![](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://www.seeedstudio.com/depot/Grove-Starter-Kit-for-LinkIt-ONE-p-2028.html)
 
@@ -32,22 +32,22 @@ last_update:
 
 请参考每个模块的规格：
 
-<!-- -   [Grove - Dust Sensor](/Grove-Dust_Sensor#Specification)
--   [Grove - Temperature and Humidity Sensor Pro](/Grove-Temperature_and_Humidity_Sensor_Pro#specifications)
--   [Grove - Sound Sensor](/Grove-Sound_Sensor#Specifications)
--   [Grove - UV Sensor](/Grove-UV_Sensor#specifications)
--   [Grove - Barometer Sensor (BMP280)](/Grove-Barometer_Sensor-BMP280#specifications)
--   [Grove - Light Sensor v1.2](/Grove-Light_Sensor)
--   [Grove - 3-Axis Digital Accelerometer(±16g)](/Grove-3-Axis_Digital_Accelerometer-16g)
--   [Grove - LED Bar](/Grove-LED_Bar)
--   [Grove - Servo](/Grove-Servo#Specification)
--   [Grove - Touch Sensor](/Grove-Touch_Sensor#specifications)
--   [Grove - Base shield v2](/Base_Shield_V2) -->
+<!-- -   [Grove - Dust Sensor](/cn/Grove-Dust_Sensor#Specification)
+-   [Grove - Temperature and Humidity Sensor Pro](/cn/Grove-Temperature_and_Humidity_Sensor_Pro#specifications)
+-   [Grove - Sound Sensor](/cn/Grove-Sound_Sensor#Specifications)
+-   [Grove - UV Sensor](/cn/Grove-UV_Sensor#specifications)
+-   [Grove - Barometer Sensor (BMP280)](/cn/Grove-Barometer_Sensor-BMP280#specifications)
+-   [Grove - Light Sensor v1.2](/cn/Grove-Light_Sensor)
+-   [Grove - 3-Axis Digital Accelerometer(±16g)](/cn/Grove-3-Axis_Digital_Accelerometer-16g)
+-   [Grove - LED Bar](/cn/Grove-LED_Bar)
+-   [Grove - Servo](/cn/Grove-Servo#Specification)
+-   [Grove - Touch Sensor](/cn/Grove-Touch_Sensor#specifications)
+-   [Grove - Base shield v2](/cn/Base_Shield_V2) -->
 
 应用创意
 -----------------
 
-<!-- 您可以构建 [秘密盒子](/Secret_Box) 和其他有趣的应用程序。 -->
+<!-- 您可以构建 [秘密盒子](/cn/Secret_Box) 和其他有趣的应用程序。 -->
 
 请注意，本节列出的创意仅是此套件广泛应用的一些线索。
 
@@ -110,14 +110,14 @@ Grove LED 灯条由 10 段 LED 组成，可用作指示器。
 
 请注意，本节仅向您展示如何构建基本开发环境。
 
-<!-- [LinkIt ONE 基本开发环境指南](/LinkIt_ONE)。 -->
+<!-- [LinkIt ONE 基本开发环境指南](/cn/LinkIt_ONE)。 -->
 
 演示
 -----
 
 请注意，本节将向您展示一个实现了一些实际功能的演示。
 
-<!-- 完整的教程请参见：[秘密盒子](/Secret_Box)。 -->
+<!-- 完整的教程请参见：[秘密盒子](/cn/Secret_Box)。 -->
 
 资源
 ---------

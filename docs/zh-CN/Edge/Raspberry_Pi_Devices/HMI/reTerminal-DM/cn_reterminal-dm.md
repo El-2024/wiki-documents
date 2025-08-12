@@ -841,7 +841,7 @@ gcc canreceive.c -o canreceive
 
 <div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/usb-c.png" /></div>
 
-USB Type-C是一个USB 2.0端口，用于串行调试或根据启动开关位置刷写操作系统镜像。有关刷写操作系统的更多信息，请参考[刷写操作系统Wiki页面](/reterminal-dm-flash-OS)。
+USB Type-C是一个USB 2.0端口，用于串行调试或根据启动开关位置刷写操作系统镜像。有关刷写操作系统的更多信息，请参考[刷写操作系统Wiki页面](/cn/reterminal-dm-flash-OS)。
 
 ### SIM卡插槽
 
@@ -1183,7 +1183,7 @@ reTerminal DM 主板上预留了 CSI 摄像头接口，可定制支持摄像头�
 - EC25-EUX 4G 模块 x 1
 - SIM 卡 x 1
 
-**步骤 1.** 请参考 [EC25 4G 模块硬件安装指南](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna)，将 `EC25 4G 模块` 安装到标有 *`4G/LTE`* 丝印的 `4G/LTE PCIe 插槽` 中，并在 [SIM 卡插槽](/reterminal-dm/#sim-card-slot) 中插入支持 4G 的 SIM 卡，然后再启动系统。
+**步骤 1.** 请参考 [EC25 4G 模块硬件安装指南](/cn/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna)，将 `EC25 4G 模块` 安装到标有 *`4G/LTE`* 丝印的 `4G/LTE PCIe 插槽` 中，并在 [SIM 卡插槽](/cn/reterminal-dm/#sim-card-slot) 中插入支持 4G 的 SIM 卡，然后再启动系统。
 
 **步骤 2.** 使用 ```lsusb``` 检查是否检测到 EC25-EUX。
 
@@ -1258,7 +1258,7 @@ import TabItem from '@theme/TabItem';
     </a>
 </div>
 
-**步骤 1.** 请参考 [LoRaWAN® 模块硬件组装](/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna) 指南，将 `WM1302 SPI LoRaWAN® 模块` 安装到标有 *`Lora`* 丝印的 `LoRaWAN® Mini PCIe 插槽` 中。安装模块时需要安装必要的软件包 build-essential（build-essential 是一个 Debian 包，包含从源代码创建 DEB 包所需的工具）。
+**步骤 1.** 请参考 [LoRaWAN® 模块硬件组装](/cn/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna) 指南，将 `WM1302 SPI LoRaWAN® 模块` 安装到标有 *`Lora`* 丝印的 `LoRaWAN® Mini PCIe 插槽` 中。安装模块时需要安装必要的软件包 build-essential（build-essential 是一个 Debian 包，包含从源代码创建 DEB 包所需的工具）。
 
 ```sh
 sudo apt update
@@ -1320,7 +1320,7 @@ $ ./lora_pkt_fwd -c global_conf.json.sx1250.US915
     </a>
 </div>
 
-**步骤 1.** 请参考 [LoRaWAN® 模块硬件组装](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) 指南，将 `WM1302 USB LoRaWAN® 模块` 安装到标有 *`4G`* 丝印的 `4G Mini PCIe 插槽` 中。
+**步骤 1.** 请参考 [LoRaWAN® 模块硬件组装](/cn/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) 指南，将 `WM1302 USB LoRaWAN® 模块` 安装到标有 *`4G`* 丝印的 `4G Mini PCIe 插槽` 中。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/dmlora.png"/></div>
 

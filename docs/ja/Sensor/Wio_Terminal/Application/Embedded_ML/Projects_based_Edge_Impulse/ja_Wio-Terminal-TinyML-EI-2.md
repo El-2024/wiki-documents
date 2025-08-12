@@ -26,7 +26,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 1. 前提条件
 
-このチュートリアルを進めるには、対応するデバイスが必要です。まず [**Wio Terminal Edge Impulse**](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse) チュートリアルを確認してください。
+このチュートリアルを進めるには、対応するデバイスが必要です。まず [**Wio Terminal Edge Impulse**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Edge-Impulse) チュートリアルを確認してください。
 
 **Wio Terminal** 以外にも以下の対応デバイスがあります。
 
@@ -270,4 +270,4 @@ Edge Impulseはこのデータを活用する手助けをします。デバイ�
 
 - [Edge Impulse Continuous motion recognition](https://docs.edgeimpulse.com/docs/continuous-motion-recognition)
 
-- [Wio Terminal Edge Impulse Getting Started](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse)
+- [Wio Terminal Edge Impulse Getting Started](https://wiki.seeedstudio.com/ja/Wio-Terminal-Edge-Impulse)

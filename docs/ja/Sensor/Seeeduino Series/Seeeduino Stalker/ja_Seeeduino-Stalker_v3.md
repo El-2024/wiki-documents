@@ -50,7 +50,7 @@ Seeeduino Stalker v3.0は、特に屋外の**データロギング**アプリケ
 
 * XBeeモジュールおよびATMega328P用のリセットボタン
 
-* **Beeシリーズソケット** - 2*10ピン2.0mmピッチ（以下のいずれかのワイヤレスモジュールと接続可能：**XBee**、[BluetoothBee](/Bluetooth_Bee "Bluetooth Bee")、[GPSBee](https://seeeddoc.github.io/Bluetooth_Bee/)、または[RFBee](https://seeeddoc.github.io/RFbee_V1.1-Wireless_Arduino_compatible_node/)。）
+* **Beeシリーズソケット** - 2*10ピン2.0mmピッチ（以下のいずれかのワイヤレスモジュールと接続可能：**XBee**、[BluetoothBee](/ja/Bluetooth_Bee "Bluetooth Bee")、[GPSBee](https://seeeddoc.github.io/Bluetooth_Bee/)、または[RFBee](https://seeeddoc.github.io/RFbee_V1.1-Wireless_Arduino_compatible_node/)。）
 
 ## 仕様
 
@@ -468,7 +468,7 @@ digitalWrite(5,HIGH);
 
 変更後
 
-2. 次に、<a href="/Seeeduino-Stalker_v3#pcb-jumper-pads"><span><font size={"3"}>Seeeduino-Stalker v3</font></span></a>に記載されている手順を適用します。(例: ジャンパーを切断し、ジャンパーP5の中央パッドをPD7に接続する)。
+2. 次に、<a href="/ja/Seeeduino-Stalker_v3#pcb-jumper-pads"><span><font size={"3"}>Seeeduino-Stalker v3</font></span></a>に記載されている手順を適用します。(例: ジャンパーを切断し、ジャンパーP5の中央パッドをPD7に接続する)。
 
 ## ボードレイアウト
 

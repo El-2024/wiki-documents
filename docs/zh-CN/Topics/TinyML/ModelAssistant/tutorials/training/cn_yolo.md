@@ -24,7 +24,7 @@ last_update:
 
 ## 选择配置
 
-我们将根据需要执行的训练任务类型选择合适的配置文件，我们已经在[配置](/ModelAssistant_Tutorials_Config)中介绍了配置文件的功能、结构和原理的简要说明。
+我们将根据需要执行的训练任务类型选择合适的配置文件，我们已经在[配置](/cn/ModelAssistant_Tutorials_Config)中介绍了配置文件的功能、结构和原理的简要说明。
 
 对于 Swift-YOLO 模型示例，我们使用 `swift_yolo_tiny_1xb16_300e_coco.py` 作为配置文件，它位于 SSCMA 根目录下的 `configs/swift_yolo` 文件夹中，并且它还继承了 `base_arch.py` 配置文件。
 
@@ -75,7 +75,7 @@ model = dict(
 
 ## 训练模型
 
-训练模型需要使用我们之前配置的 SSCMA 工作环境，如果您按照我们的[安装](/ModelAssistant_Introduce_Installation)指南使用 Conda 在名为 `sscma` 的虚拟环境中安装了 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant)，请首先确保您当前在虚拟环境中。
+训练模型需要使用我们之前配置的 SSCMA 工作环境，如果您按照我们的[安装](/cn/ModelAssistant_Introduce_Installation)指南使用 Conda 在名为 `sscma` 的虚拟环境中安装了 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant)，请首先确保您当前在虚拟环境中。
 
 然后，在 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 项目根目录中，我们执行以下命令来训练 Swift-YOLO 数字仪表检测模型。
 
@@ -128,8 +128,8 @@ python3 tools/inference.py \
 
 ### 评估
 
-为了在实际的边缘计算设备上进一步测试和评估模型，您需要导出模型。在导出模型的过程中，[SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 会对模型进行一些优化，如模型剪枝、蒸馏等。您可以参考[导出](/ModelAssistant_Tutorials_Export_Overview)部分了解更多关于如何导出模型的信息。
+为了在实际的边缘计算设备上进一步测试和评估模型，您需要导出模型。在导出模型的过程中，[SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 会对模型进行一些优化，如模型剪枝、蒸馏等。您可以参考[导出](/cn/ModelAssistant_Tutorials_Export_Overview)部分了解更多关于如何导出模型的信息。
 
 ### 部署
 
-导出模型后，您可以将模型部署到边缘计算设备上进行测试和评估。您可以参考[部署](/ModelAssistant_Deploy_Overview)部分了解更多关于如何部署模型的信息。
+导出模型后，您可以将模型部署到边缘计算设备上进行测试和评估。您可以参考[部署](/cn/ModelAssistant_Deploy_Overview)部分了解更多关于如何部署模型的信息。

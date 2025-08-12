@@ -14,16 +14,16 @@ last_update:
 
 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 目前支持以下模型。您可以参考相应的教程来完成模型的训练并获得模型权重。
 
-- [目标检测 - SWIFT-YOLO](/ModelAssistant_Tutorials_Training_YOLO)：数字仪表读数
+- [目标检测 - SWIFT-YOLO](/cn/ModelAssistant_Tutorials_Training_YOLO)：数字仪表读数
 
-- [目标检测 - FOMO](/ModelAssistant_Tutorials_Training_FOMO)：口罩检测
+- [目标检测 - FOMO](/cn/ModelAssistant_Tutorials_Training_FOMO)：口罩检测
 
-- [关键点检测 PFLD](/ModelAssistant_Tutorials_Training_PFLD)：指针仪表读数
+- [关键点检测 PFLD](/cn/ModelAssistant_Tutorials_Training_PFLD)：指针仪表读数
 
 
 :::tip
 
-在开始训练之前，我们建议您先阅读[配置](/ModelAssistant_Tutorials_Config)和[数据集](/ModelAssistant_Tutorials_Datasets)部分。
+在开始训练之前，我们建议您先阅读[配置](/cn/ModelAssistant_Tutorials_Config)和[数据集](/cn/ModelAssistant_Tutorials_Datasets)部分。
 
 :::
 
@@ -63,4 +63,4 @@ python3 tools/train.py --help
 
 ### 部署
 
-导出模型后，您可以将模型部署到边缘计算设备上进行测试和评估。您可以参考[部署](/ModelAssistant_Deploy_Overview)部分了解更多关于如何部署模型的信息。
+导出模型后，您可以将模型部署到边缘计算设备上进行测试和评估。您可以参考[部署](/cn/ModelAssistant_Deploy_Overview)部分了解更多关于如何部署模型的信息。
