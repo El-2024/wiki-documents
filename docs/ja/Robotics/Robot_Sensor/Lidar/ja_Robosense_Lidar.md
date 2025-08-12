@@ -31,7 +31,7 @@ RoboSense LiDARセンサーは、さまざまなアプリケーション向け�
 
 
 ## 前提条件
-- __[reComputer J30/40シリーズ](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__: チュートリアルに従って[JetPack 5.x](/reComputer_J4012_Flash_Jetpack)システムおよび[ROS Noetic環境](/installing_ros1)のインストールを完了していること。
+- __[reComputer J30/40シリーズ](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__: チュートリアルに従って[JetPack 5.x](/ja/reComputer_J4012_Flash_Jetpack)システムおよび[ROS Noetic環境](/ja/installing_ros1)のインストールを完了していること。
 
 - __RoboSense全シリーズLiDAR__
 

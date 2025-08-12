@@ -92,7 +92,7 @@ Grove - マウスエンコーダは、回転方向と回転速度のフィード
 
 このセクションでは、Grove - マウスエンコーダを使用してアプリケーションを構築するためのIDE環境の構築方法を説明します。
 
-<!-- 図有問題 Refer to [Seeeduino V4.2](/Seeeduino_v4.2#Getting_Started_on_Windows)(It is exchangeable with Arduino board) for how to build a complete an IDE for your applications, or read [Arduino guide](https://www.arduino.cc/en/Guide/HomePage) if you use Arduino original board. -->
+<!-- 図有問題 Refer to [Seeeduino V4.2](/ja/Seeeduino_v4.2#Getting_Started_on_Windows)(It is exchangeable with Arduino board) for how to build a complete an IDE for your applications, or read [Arduino guide](https://www.arduino.cc/en/Guide/HomePage) if you use Arduino original board. -->
 
 <div className="admonition note">
   <p className="admonition-title">注意</p>

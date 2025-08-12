@@ -74,8 +74,8 @@ ChatGPT の数学的能力をテストしたり、さまざまな質問に対す
 
 ChatGPT および DALL·E モデルの使用方法についてさらに詳しい情報が必要ですか？
 
-- [SenseCAP_Indicator_ChatGPT チャット完了](/SenseCAP_Indicator_ChatGPT)
-- [SenseCAP_Indicator_DALL·E 画像生成](/SenseCAP_Indicator_DALL·E)
+- [SenseCAP_Indicator_ChatGPT チャット完了](/ja/SenseCAP_Indicator_ChatGPT)
+- [SenseCAP_Indicator_DALL·E 画像生成](/ja/SenseCAP_Indicator_DALL·E)
 
 # **技術サポート**
 **SenseCAP Indicator に関するサポートが必要ですか？私たちがお手伝いします！**

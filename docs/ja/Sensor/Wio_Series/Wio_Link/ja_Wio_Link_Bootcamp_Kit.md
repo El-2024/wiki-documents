@@ -39,11 +39,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 | 部品名                                                                                               | 数量 |
 |----------------------------------------------------------------------------------------------------------|----------|
-| [Grove - Relay](/Grove-Relay/)                                                                            | 1個     |
-| [Grove - Recorder](/Grove-Recorder_v2.0/)                                                                 | 1個     |
+| [Grove - Relay](/ja/Grove-Relay/)                                                                            | 1個     |
+| [Grove - Recorder](/ja/Grove-Recorder_v2.0/)                                                                 | 1個     |
 | Grove - WS2812 防水LEDストリップ - 30個のLED 1メートル                                                    | 1個     |
-| [Grove - Buzzer](/Grove-Buzzer/)                                                                          | 1個     |
-| [Wio Link](/Wio_Link/)                                                                                    | 1個     |
+| [Grove - Buzzer](/ja/Grove-Buzzer/)                                                                          | 1個     |
+| [Wio Link](/ja/Wio_Link/)                                                                                    | 1個     |
 | [Micro USBケーブル - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html?queryID=39d1b009a50fc3dc9e5a02a476ecb407&objectID=1405&indexName=bazaar_retailer_products) | 1個     |
 | [Grove - Servo](https://www.seeedstudio.com/Grove-Servo.html?queryID=ef605ab9a8a236dec86d63eec8c17796&objectID=1626&indexName=bazaar_retailer_products)                                | 1個     |
 
@@ -55,12 +55,12 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ### 予備ガイド
 
 -   Travis CI
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/ja/Wio_Link/)
 
 ### 必要条件
 
 -   [Wio Link APP](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/ja/Wio_Link/)
 -   [Grove Relay](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   Travis CIアカウント
 -   GitHubアカウント

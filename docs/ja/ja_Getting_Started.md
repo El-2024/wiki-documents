@@ -14,7 +14,7 @@ last_update:
 
 2008年以来、信頼されるIoT（Internet of Things）ハードウェアパートナーとして、Seeed Studioは物理的な世界のインタラクティブなデジタルレプリカの実現に尽力しています。このウェブサイトは、Seeed Studioが現在公開しているすべてのWikiを収集したオープンソースプラットフォームであり、毎週更新され、製品ラインナップや研究成果を紹介しています。その内容には自然環境のデジタル化も含まれます。
 
-<!-- ここでは現在の成果と<strong><a href="/Solutions"><span><font color={'8DC215'} size={"4"}>  ソリューション </font></span></a></strong>を紹介し、皆様の貢献をお待ちしています。 -->
+<!-- ここでは現在の成果と<strong><a href="/ja/Solutions"><span><font color={'8DC215'} size={"4"}>  ソリューション </font></span></a></strong>を紹介し、皆様の貢献をお待ちしています。 -->
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/New_Wiki_Platform/example/showcase2.png" alt="pir" width={1000} height="auto" /></p>
 
@@ -146,7 +146,7 @@ last_update:
 
 Seeedでは、Seeedersコミュニティを非常に大切にしています。Seeed Studio コントリビュータープログラムは、世界中の親愛なる仲間たちと協力して革新的なソリューションを共に構築するために開始された共同プログラムです。
 
-### [ヒーローウォール](/contributors)
+### [ヒーローウォール](/ja/contributors)
 
 現在、`2024年9月1日`時点で、合計24人のコントリビューターと50以上のWiki貢献が掲載されています。
 
@@ -164,7 +164,7 @@ Seeedでは、Seeedersコミュニティを非常に大切にしています。S
 
 ## ウィークリーワイキ
 
-[Seeed Studio ウィークリーワイキ](/weekly_wiki)は毎週月曜日に公開され、最新のコンテンツ（新製品、Seeedersチームによる興味深いプロジェクト、チュートリアル、ガイド、紹介、その他興味深く関連性のある内容）を紹介します！
+[Seeed Studio ウィークリーワイキ](/ja/weekly_wiki)は毎週月曜日に公開され、最新のコンテンツ（新製品、Seeedersチームによる興味深いプロジェクト、チュートリアル、ガイド、紹介、その他興味深く関連性のある内容）を紹介します！
 
 ![](https://files.seeedstudio.com/wiki/IndexWiki/logo.png)
 

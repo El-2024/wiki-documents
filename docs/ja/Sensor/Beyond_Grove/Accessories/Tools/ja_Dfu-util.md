@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## dfu-util を使用したファームウェアの更新
 
-[DSO Nano](/DSO_Nano "DSO Nano") に dfu ファイルをダウンロードするには、dfu-util 0.5 以降が必要です。古いバージョンの dfu-util は動作しません。DSO Nano や ST Micro のマイクロコントローラをベースにした多くのデバイスは、DFU 標準と互換性のない ST Micro 独自の DFU 拡張 (DfuSe) を使用しています。
+[DSO Nano](/ja/DSO_Nano "DSO Nano") に dfu ファイルをダウンロードするには、dfu-util 0.5 以降が必要です。古いバージョンの dfu-util は動作しません。DSO Nano や ST Micro のマイクロコントローラをベースにした多くのデバイスは、DFU 標準と互換性のない ST Micro 独自の DFU 拡張 (DfuSe) を使用しています。
 
 Ubuntu 10.04 用の dfu-util 0.8 パッケージは [Tormod's PPA](https://launchpad.net/~tormodvolden/+archive/ppa/+packages?field.series_filter=lucid) で見つけることができます。適切な .deb パッケージをダウンロードしてインストールしてください。同じパッケージは、後の Ubuntu バージョンや Debian unstable でも問題なくインストールできるはずです。他のオペレーティングシステムでは、dfu-util のホームページに記載されている手順に従って自分でビルドする必要があるかもしれません。
 

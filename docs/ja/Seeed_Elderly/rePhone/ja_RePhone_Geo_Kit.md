@@ -24,7 +24,7 @@ GSMモジュールとGPSモジュールの組み合わせが、RePhone Geo Kit�
 ---
 ###   Xadow GSM+BLE
 
-<!-- このモジュールの詳細については、[**Xadow GSM+BLE Wikiページ**](/Xadow_GSMPlusBLE)をご覧ください。 -->
+<!-- このモジュールの詳細については、[**Xadow GSM+BLE Wikiページ**](/ja/Xadow_GSMPlusBLE)をご覧ください。 -->
 
 <table>
 <tr>
@@ -79,7 +79,7 @@ GSMモジュールとGPSモジュールの組み合わせが、RePhone Geo Kit�
 
 ###   Xadow GPS v2
 
-<!-- このモジュールの詳細については、[**Xadow GPS V2 Wikiページ**](/Xadow_GPS_V2)をご覧ください。 -->
+<!-- このモジュールの詳細については、[**Xadow GPS V2 Wikiページ**](/ja/Xadow_GPS_V2)をご覧ください。 -->
 
 <table>
 <tr>
@@ -170,7 +170,7 @@ GSMモジュールとGPSモジュールの組み合わせが、RePhone Geo Kit�
 
 ###   Xadow GSM Breakout
 
-<!-- このモジュールの詳細については、[**Xadow GSM Breakout Wikiページ**](/Xadow_GSM_Breakout)をご覧ください。 -->
+<!-- このモジュールの詳細については、[**Xadow GSM Breakout Wikiページ**](/ja/Xadow_GSM_Breakout)をご覧ください。 -->
 
 <table>
 <tr>
@@ -187,7 +187,7 @@ Xadow GSM+BLE は、Xadow 36 ピンコネクタと Xadow 11 ピンコネクタ�
 
 ## GPS テストコードの実行
 ---
-<!-- まず、**[Arduino IDE for RePhone Kit](/Arduino_IDE_for_RePhone_Kit "Arduino IDE for RePhone Kit")** の指示に従って、RePhone Kit 用の Arduino IDE をダウンロードし、ドライバをインストールする必要があります。 -->
+<!-- まず、**[Arduino IDE for RePhone Kit](/ja/Arduino_IDE_for_RePhone_Kit "Arduino IDE for RePhone Kit")** の指示に従って、RePhone Kit 用の Arduino IDE をダウンロードし、ドライバをインストールする必要があります。 -->
 次に、以下の GPS テストコードを RePhone 用の Arduino IDE にコピーします。**ボードを「RePhone」に設定**し、**「MTK USB Debug Port」でダウンロード**してください。
 ```
 #include <LGPS.h>
@@ -279,7 +279,7 @@ RePhone コミュニティでよくある質問を収集し、**[「RePhoneの�
 
 ##  リソース
 
-<!-- 詳細については、Wikiページ [Xadow GPS V2](/Xadow_GPS_V2) をご覧ください。 -->
+<!-- 詳細については、Wikiページ [Xadow GPS V2](/ja/Xadow_GPS_V2) をご覧ください。 -->
 
 ## 技術サポート & 製品ディスカッション
 

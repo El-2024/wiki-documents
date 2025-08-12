@@ -53,7 +53,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 このGroveモジュールは以下のGroveキットシリーズの一部として提供されています：
 
-<!-- * [Grove Mixer Pack V2](/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
+<!-- * [Grove Mixer Pack V2](/ja/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
 
 DCジャック電源Groveモジュールは、上記のパックの一部としてのみ販売されており、Seeed Studio Bazaarでは単体での販売は行われていません。
 

@@ -92,9 +92,9 @@ Groveネットワークモジュールを使用すると、プロジェクトに
     </a>
 </div>
 
-<!-- - [Grove Sensor](/Grove_Sensor_Intro)
-- [Grove Network Module](/Grove_network_module_intro)
-- [Grove Accessories](/Grove_Accessories_Intro) -->
+<!-- - [Grove Sensor](/ja/Grove_Sensor_Intro)
+- [Grove Network Module](/ja/Grove_network_module_intro)
+- [Grove Accessories](/ja/Grove_Accessories_Intro) -->
 
 <!-- ## Grove選択ガイド
 

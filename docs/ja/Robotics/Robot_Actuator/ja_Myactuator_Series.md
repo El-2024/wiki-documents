@@ -176,7 +176,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 詳細な機能については、[MYACTUATOR_Setup Software_V4.0.zip](https://www.myactuator.com/_files/archives/cab28a_b3f2a1c77d4645a08052a923690b40fc.zip?dn=MYACTUATOR_Setup%20Software_V4.0_20250206.zip)ファイルに含まれる​**Setup Software Instruction Manual - V3.0.pdf**を参照してください。
 
-## モーターを [​reComputer Mini Jetson Orin](/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md) を使用して制御する
+## モーターを [​reComputer Mini Jetson Orin](/ja/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md) を使用して制御する
 
 現在、市場で最も一般的なモーター用のCAN通信インターフェースは、**XT30 (2+2)** および **JSTコネクタ**を使用しています。私たちの **reComputer Mini Jetson Orin** デバイスは、**デュアルXT30 (2+2)ポート**と**JSTベースのCANインターフェース**を備えており、シームレスな互換性を提供します。
 

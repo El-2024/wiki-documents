@@ -29,17 +29,17 @@ LinkIt ONEの後、LinkIt Smart 7688とLinkIt Smart 7688 Duoをリリースし�
 
 以下は、Seeed WiKiで見つけることができるLinkItボードのリストです。このリストは随時更新されます。
 
-- [Arduino Breakout for LinkIt Smart 7688 Duo](/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
-- [Breakout for LinkIt Smart 7688](/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
-- [Breakout for LinkIt Smart 7688 v2.0](/Breakout_for_LinkIt_Smart_7688_v2.0/)
-<!-- - [Grove - Starter Kit for LinkIt ONE](/_Grove-Starter_Kit_for_LinkIt_ONE/) -->
-<!-- - [Grove Breakout for LinkIt Smart 7688 Duo](/_Grove_Breakout_for_LinkIt_Smart_7688_Duo/) -->
-- [Grove Starter kit for LinkIt Smart7688 Duo](/Grove_Starter_kit_for_LinkIt_Smart7688_Duo/)
-<!-- - [LinkIt ONE](/LinkIt_ONE/) -->
-<!-- - [LinkIt Smart 7688](/LinkIt_Smart_7688/) -->
-<!-- - [LinkIt Smart 7688 Duo](/LinkIt_Smart_7688_Duo/) -->
-<!-- - [Linkit Connect 7681](/Linkit_Connect_7681/) -->
-<!-- - [Sidekick Basic Kit for LinkIt ONE](/Sidekick_Basic_Kit_for_LinkIt_ONE/) -->
+- [Arduino Breakout for LinkIt Smart 7688 Duo](/ja/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
+- [Breakout for LinkIt Smart 7688](/ja/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
+- [Breakout for LinkIt Smart 7688 v2.0](/ja/Breakout_for_LinkIt_Smart_7688_v2.0/)
+<!-- - [Grove - Starter Kit for LinkIt ONE](/ja/_Grove-Starter_Kit_for_LinkIt_ONE/) -->
+<!-- - [Grove Breakout for LinkIt Smart 7688 Duo](/ja/_Grove_Breakout_for_LinkIt_Smart_7688_Duo/) -->
+- [Grove Starter kit for LinkIt Smart7688 Duo](/ja/Grove_Starter_kit_for_LinkIt_Smart7688_Duo/)
+<!-- - [LinkIt ONE](/ja/LinkIt_ONE/) -->
+<!-- - [LinkIt Smart 7688](/ja/LinkIt_Smart_7688/) -->
+<!-- - [LinkIt Smart 7688 Duo](/ja/LinkIt_Smart_7688_Duo/) -->
+<!-- - [Linkit Connect 7681](/ja/Linkit_Connect_7681/) -->
+<!-- - [Sidekick Basic Kit for LinkIt ONE](/ja/Sidekick_Basic_Kit_for_LinkIt_ONE/) -->
 
 私たちの製品を選んでいただきありがとうございます！製品の使用体験がスムーズになるように、さまざまなサポートを提供しています。異なる好みやニーズに対応するために、いくつかのコミュニケーションチャネルを用意しています。
 

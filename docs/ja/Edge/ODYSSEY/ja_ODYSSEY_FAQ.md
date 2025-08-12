@@ -16,35 +16,35 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### Q1: BIOS関連の問題のトラブルシューティング（WiFi/Bluetooth/ファン/自動電源オン/ブートガード/GPIOを含む）
 
-詳細については、[こちら](/Troubleshooting_BIOS-Related_Issues)をクリックしてください。
+詳細については、[こちら](/ja/Troubleshooting_BIOS-Related_Issues)をクリックしてください。
 
 #### Q2: Arduino IDEがODYSSEY - X86J4105/X86J4125のオンボードマイクロコントローラーを認識しない
 
-詳細については、[こちら](/not_recognize-onboard-microcontroller)をクリックしてください。
+詳細については、[こちら](/ja/not_recognize-onboard-microcontroller)をクリックしてください。
 
 #### Q3: 元のWindowsを再インストールする
 
-詳細については、[こちら](/reinstall_the_Original_Windows)をクリックしてください。
+詳細については、[こちら](/ja/reinstall_the_Original_Windows)をクリックしてください。
 
 #### Q4: ODYSSEY - X86J4105の電源ボタンの異なる状態
 
-詳細については、[こちら](/Power_button)をクリックしてください。
+詳細については、[こちら](/ja/Power_button)をクリックしてください。
 
 #### Q5: ファンが回らない
 
-詳細については、[こちら](/Turn_on_the_Fan)をクリックしてください。
+詳細については、[こちら](/ja/Turn_on_the_Fan)をクリックしてください。
 
 #### Q6: ファンのピン配置
 
-詳細については、[こちら](/Fan_Pinout)をクリックしてください。
+詳細については、[こちら](/ja/Fan_Pinout)をクリックしてください。
 
 #### Q7: ODYSSEY - X86J4105が電源オンしない
 
-詳細については、[こちら](/power_up)をクリックしてください。
+詳細については、[こちら](/ja/power_up)をクリックしてください。
 
 #### Q8: OdysseyにはTPMがありますか？
 
-詳細については、[こちら](/TPM)をクリックしてください。
+詳細については、[こちら](/ja/TPM)をクリックしてください。
 
 # 技術サポート
 

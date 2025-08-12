@@ -93,25 +93,25 @@ _File -> Examples -> Starter Kit for LinkIt -> Extend_Lesson -> L8_Buzzer_Music_
 
 **参考**
 
-<!-- *   [基本](/LinkIt_ONE_Tutorial-The_Basics)
+<!-- *   [基本](/ja/LinkIt_ONE_Tutorial-The_Basics)
 
-*   [Hello World](/LinkIt_ONE_Tutorial-Hello_World)
+*   [Hello World](/ja/LinkIt_ONE_Tutorial-Hello_World)
 
-*   [プッシュボタン](/LinkIt_ONE_Tutorial-Push_Button)
+*   [プッシュボタン](/ja/LinkIt_ONE_Tutorial-Push_Button)
 
-*   [マーキー](/LinkIt_ONE_Tutorial-Marquee)
+*   [マーキー](/ja/LinkIt_ONE_Tutorial-Marquee)
 
-*   [カラフルな世界](/LinkIt_ONE_Tutorial-Colorful_World)
+*   [カラフルな世界](/ja/LinkIt_ONE_Tutorial-Colorful_World)
 
-*   [アナログインターフェース](/LinkIt_ONE_Tutorial-Analog_Interface)
+*   [アナログインターフェース](/ja/LinkIt_ONE_Tutorial-Analog_Interface)
 
-*   [ミニサーボ](/LinkIt-ONE-Tutorial---Mini-Servo)
+*   [ミニサーボ](/ja/LinkIt-ONE-Tutorial---Mini-Servo)
 
-*   [光センサー](/LinkIt_ONE_Tutorial-Light-Sensor)
+*   [光センサー](/ja/LinkIt_ONE_Tutorial-Light-Sensor)
 
-*   [SMSでLEDを制御](/LinkIt_ONE_Tutorial-SMS_control_the_LED)
+*   [SMSでLEDを制御](/ja/LinkIt_ONE_Tutorial-SMS_control_the_LED)
 
-*   [ウェブページで温度を取得](/LinkIt_ONE_Tutorial-Get_temperature_with_Webpage) -->
+*   [ウェブページで温度を取得](/ja/LinkIt_ONE_Tutorial-Get_temperature_with_Webpage) -->
 
 ## 技術サポートと製品ディスカッション
 

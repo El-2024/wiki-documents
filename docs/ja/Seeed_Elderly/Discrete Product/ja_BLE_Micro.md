@@ -97,7 +97,7 @@ BLE Microの新しいアプリケーションを[Arch BLE](https://www.seeedstud
 
 Docker に精通している場合は、Paul によって作成された [Docker コンテナ](https://registry.hub.docker.com/u/skyplabs/ble-micro/) を使用してツールチェーンを迅速にセットアップできます。[Dockerfile](https://github.com/SkypLabs/ble_micro_dockerfile) を使用して開始してください。
 
-<!-- [Arch BLE](https://www.seeedstudio.com/depot/Arch-BLE-p-1998.html) をお持ちの場合は、[ARM mbed クラウドベース IDE](https://developer.mbed.org/compiler/) を使用することもできます。[Arch BLE wiki](/Arch_BLE) も参照してください。 -->
+<!-- [Arch BLE](https://www.seeedstudio.com/depot/Arch-BLE-p-1998.html) をお持ちの場合は、[ARM mbed クラウドベース IDE](https://developer.mbed.org/compiler/) を使用することもできます。[Arch BLE wiki](/ja/Arch_BLE) も参照してください。 -->
 
 ## BLE UART
 ---

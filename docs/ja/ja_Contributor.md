@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # ✨ Contributor Program ✨ 
 
-Seeedでは、Seeedersコミュニティを非常に大切にしています。[Seeed Studio Contributor Program](/contributors)は、世界中の親愛なる友人たちと協力して革新的なソリューションを共に構築するために開始された共同プログラムです。
+Seeedでは、Seeedersコミュニティを非常に大切にしています。[Seeed Studio Contributor Program](/ja/contributors)は、世界中の親愛なる友人たちと協力して革新的なソリューションを共に構築するために開始された共同プログラムです。
 
 <p style={{textAlign: 'center'}}><img src="http://files.seeedstudio.com/wiki/wiki-platform/contributor/contributors.png" alt="pir" width={800} height="auto" /></p>
 

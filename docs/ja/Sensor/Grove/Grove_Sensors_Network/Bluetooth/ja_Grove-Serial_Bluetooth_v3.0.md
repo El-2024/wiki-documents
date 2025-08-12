@@ -57,7 +57,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 ![](https://files.seeedstudio.com/wiki/Grove-Serial_Bluetooth_v3.0/img/Grove_serial_bluetooth_4_.jpg.png)
 
 1. Arduino IDEを開き、File -> Examples -> Bluetooth_Shield_V2_Demo_Code -> Slave_ledを開き、Slaveのコードを開いて上記と同様にコードを修正してください。
-2. 修正を保存し、アップロードをクリックしてコードをアップロードしてください。Arduinoの使い方に関して問題がある場合は、<a href="/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}>こちら</font></span></a>をクリックしてヘルプをご覧ください。
+2. 修正を保存し、アップロードをクリックしてコードをアップロードしてください。Arduinoの使い方に関して問題がある場合は、<a href="/ja/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}>こちら</font></span></a>をクリックしてヘルプをご覧ください。
 
 ### 結果の確認
 

@@ -66,11 +66,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 送信モジュールと受信モジュールの両方には、Vcc、Ground、信号の3本のワイヤが必要です。キットのピン2部分はどちらも接続されていません。
 
-* 送信モジュールを使用するArduinoの[Grove_-_Base_Shield](/Base_Shield_V2 "Grove - Base Shield")のデジタルI/O 2に接続します。
+* 送信モジュールを使用するArduinoの[Grove_-_Base_Shield](/ja/Base_Shield_V2 "Grove - Base Shield")のデジタルI/O 2に接続します。
 Grove-433MHz_Simple_RF_Link_Kit
-* 受信モジュールを受信側のArduinoの[Grove_-_Base_Shield](/Base_Shield_V2 "Grove - Base Shield")のデジタルI/O 2に接続します。
+* 受信モジュールを受信側のArduinoの[Grove_-_Base_Shield](/ja/Base_Shield_V2 "Grove - Base Shield")のデジタルI/O 2に接続します。
 
-**注意:** ハードウェアのインストールについては、[Grove - 433MHz Simple RF Link Kitの使用方法](/Grove-433MHz_Simple_RF_Link_Kit "Grove-433MHz_Simple_RF_Link_Kit")を参照してください。
+**注意:** ハードウェアのインストールについては、[Grove - 433MHz Simple RF Link Kitの使用方法](/ja/Grove-433MHz_Simple_RF_Link_Kit "Grove-433MHz_Simple_RF_Link_Kit")を参照してください。
 
 * [VirtualWireライブラリ](https://files.seeedstudio.com/wiki/315MHz_Simple_RF_Link_Kit/res/VirtualWire_Library.zip)をダウンロードし、Arduino IDEのライブラリフォルダに解凍します。パスは..\arduino-1.0\librariesです。[こちら](http://www.pjrc.com/teensy/td_libs_VirtualWire.html)を参考にしてください。
 * 以下のコードを送信モジュールにアップロードします：

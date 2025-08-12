@@ -27,7 +27,7 @@ surveyurl: https://www.research.net/r/Beagle_Bone_Green_and_Grove_IoT_Starter_Ki
 
 ![](https://files.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/Aws_kit_bbg_cover.JPG)
 
-<!-- *Main articles: Start here [Grove IoT Starter Kits Powered by AWS](/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoT Starter Kits Powered by AWS") , [Beaglebone Green](/BeagleBone_Green "Beaglebone green")* -->
+<!-- *Main articles: Start here [Grove IoT Starter Kits Powered by AWS](/ja/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoT Starter Kits Powered by AWS") , [Beaglebone Green](/ja/BeagleBone_Green "Beaglebone green")* -->
 
 [BeagleBone Green](https://www.seeedstudio.com/depot/BeagleBone-Green-p-2504.html?cPath=122_113) (BBG) は BeagleBoard.org と Seeed Studio の共同開発による製品です。これは [BeagleBone Black](https://beagleboard.org/BLACK) のオープンソースハードウェア設計を基にしており、2つの Grove コネクタが追加されています。このキットには新しい BBG、10個の Grove モジュール、およびそれらを迅速に接続するためのステップバイステップのチュートリアルが含まれています。Grove IoT スターターキットには、AWS クラウドコンピューティングを使用してアイデアを具体的なアプリケーションに変えるために最も頻繁に使用されるセンサーとアクチュエータが含まれています。
 
@@ -47,17 +47,17 @@ surveyurl: https://www.research.net/r/Beagle_Bone_Green_and_Grove_IoT_Starter_Ki
 
 <!-- | ボード/部品                                                                                                                                   | 数量 | ドキュメント                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------|-----|---------------------------------------------------------------------------------------------------|
-| [BeagleBone Green](https://www.seeedstudio.com/depot/BeagleBone-Green-p-2504.html?cPath=122_113)                                              | 1   | [こちらを読む](/BeagleBone_Green "Beaglebone green")                                                 |
-| [Grove - I2C ADC](https://www.seeedstudio.com/depot/Grove-I2C-ADC-p-1580.html?cPath=98_16)                                                    | 1   | [こちらを読む](/Grove-I2C_ADC "Grove - I2C ADC")                                                     |
-| [Grove - I2C Hub](https://www.seeedstudio.com/depot/Grove-I2C-Hub-p-851.html?cPath=98_16)                                                     | 1   | [こちらを読む](/Grove-I2C_Hub "Grove - I2C Hub")                                                     |
-| [Grove - Relay](https://www.seeedstudio.com/depot/Grove-Relay-p-769.html?cPath=39_42)                                                         | 1   | [こちらを読む](/Grove-Relay "Grove - Relay")                                                         |
-| [Grove - Buzzer](https://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html?cPath=38)                                                          | 1   | [こちらを読む](/Grove-Buzzer "Grove - Buzzer")                                                       |
-| [Grove - OLED Display 0.96'](https://www.seeedstudio.com/depot/Grove-OLED-Display-096-p-824.html?cPath=34_36)'                                | 1   | [こちらを読む](/Grove-OLED_Display_0.96inch "Grove - OLED Display 96*96")                               |
-| [Grove - Button](https://www.seeedstudio.com/depot/Grove-Button-p-766.html?cPath=85_50)                                                       | 1   | [こちらを読む](/Grove-Button "Grove - Button")                                                       |
-| [Grove - Temperature Sensor](https://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html?cPath=25_125)                              | 1   | [こちらを読む](/Grove-Temperature_Sensor_V1.2 "Grove - Temperature Sensor V1.2")                     |
-| [Grove - Sound Sensor](https://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html?cPath=25_128)                                          | 1   | [こちらを読む](/Grove-Sound_Sensor "Grove - Sound Sensor")                                           |
-| [Grove - 3-Axis Digital Accelerometer(±16g)](https://www.seeedstudio.com/depot/Grove-3Axis-Digital-Accelerometer16g-p-1156.html?cPath=25_132) | 1   | [こちらを読む](/Grove-3-Axis_Digital_Accelerometer-16g "Grove - 3-Axis Digital Accelerometer(±16g\)") |
-| [Grove - Chainable RGB LED](https://www.seeedstudio.com/depot/Grove-Chainable-RGB-LED-p-850.html?cPath=81_35)                                 | 1   | [こちらを読む](/Grove-Chainable_RGB_LED "Grove - Chainable RGB LED")                                 |
+| [BeagleBone Green](https://www.seeedstudio.com/depot/BeagleBone-Green-p-2504.html?cPath=122_113)                                              | 1   | [こちらを読む](/ja/BeagleBone_Green "Beaglebone green")                                                 |
+| [Grove - I2C ADC](https://www.seeedstudio.com/depot/Grove-I2C-ADC-p-1580.html?cPath=98_16)                                                    | 1   | [こちらを読む](/ja/Grove-I2C_ADC "Grove - I2C ADC")                                                     |
+| [Grove - I2C Hub](https://www.seeedstudio.com/depot/Grove-I2C-Hub-p-851.html?cPath=98_16)                                                     | 1   | [こちらを読む](/ja/Grove-I2C_Hub "Grove - I2C Hub")                                                     |
+| [Grove - Relay](https://www.seeedstudio.com/depot/Grove-Relay-p-769.html?cPath=39_42)                                                         | 1   | [こちらを読む](/ja/Grove-Relay "Grove - Relay")                                                         |
+| [Grove - Buzzer](https://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html?cPath=38)                                                          | 1   | [こちらを読む](/ja/Grove-Buzzer "Grove - Buzzer")                                                       |
+| [Grove - OLED Display 0.96'](https://www.seeedstudio.com/depot/Grove-OLED-Display-096-p-824.html?cPath=34_36)'                                | 1   | [こちらを読む](/ja/Grove-OLED_Display_0.96inch "Grove - OLED Display 96*96")                               |
+| [Grove - Button](https://www.seeedstudio.com/depot/Grove-Button-p-766.html?cPath=85_50)                                                       | 1   | [こちらを読む](/ja/Grove-Button "Grove - Button")                                                       |
+| [Grove - Temperature Sensor](https://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html?cPath=25_125)                              | 1   | [こちらを読む](/ja/Grove-Temperature_Sensor_V1.2 "Grove - Temperature Sensor V1.2")                     |
+| [Grove - Sound Sensor](https://www.seeedstudio.com/depot/Grove-Sound-Sensor-p-752.html?cPath=25_128)                                          | 1   | [こちらを読む](/ja/Grove-Sound_Sensor "Grove - Sound Sensor")                                           |
+| [Grove - 3-Axis Digital Accelerometer(±16g)](https://www.seeedstudio.com/depot/Grove-3Axis-Digital-Accelerometer16g-p-1156.html?cPath=25_132) | 1   | [こちらを読む](/ja/Grove-3-Axis_Digital_Accelerometer-16g "Grove - 3-Axis Digital Accelerometer(±16g\)") |
+| [Grove - Chainable RGB LED](https://www.seeedstudio.com/depot/Grove-Chainable-RGB-LED-p-850.html?cPath=81_35)                                 | 1   | [こちらを読む](/ja/Grove-Chainable_RGB_LED "Grove - Chainable RGB LED")                                 |
 | [Micro USB Cable - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html)                                                                                                                       | 1   |                                                                                                   |  -->
 
 
@@ -118,7 +118,7 @@ surveyurl: https://www.research.net/r/Beagle_Bone_Green_and_Grove_IoT_Starter_Ki
 
 ### BeagleBone Green のセットアップ
 
-<!-- BBG をマイクロ USB ケーブルで PC に接続し、BBG をインターネットに接続します。BBG/BBB を初めて使用する場合は、[こちら](/BeagleBone_Green) を参照して開始してください。 -->
+<!-- BBG をマイクロ USB ケーブルで PC に接続し、BBG をインターネットに接続します。BBG/BBB を初めて使用する場合は、[こちら](/ja/BeagleBone_Green) を参照して開始してください。 -->
 
 以下の画像のように Grove モジュールを BBG に接続します。
 
@@ -657,21 +657,21 @@ SDカードを（電源がオフの状態の）ボードに挿入し、USBケー
 
 - [【PDF】AWS IoT Developer Guide](https://files.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS/res/AWS_IoT_Developer_Guide.pdf)
 - [【PDF】AWS User Guide for BBG](https://files.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS/res/AWS_User_Guide_for_BBG.pdf)
-<!-- - [Main Page for Grove IoT Starter Kits Powered by AWS](/Main Page for Grove IoT Starter Kits Powered by AWS) -->
+<!-- - [Main Page for Grove IoT Starter Kits Powered by AWS](/ja/Main Page for Grove IoT Starter Kits Powered by AWS) -->
 - [【Github】AWS SDK for BeagleBone Green kit](https://github.com/Seeed-Studio/AWS_SDK_for_BBG)
 - [【Github】Libraries for BeagleBone Green kit](https://github.com/Seeed-Studio/Grove_Starter_Kit_for_BBG)
-<!-- - [BeagleBone Green](/BeagleBone_Green) -->
+<!-- - [BeagleBone Green](/ja/BeagleBone_Green) -->
 - [Main page of Beagleboard](https://beagleboard.org/getting-started)
-<!-- - [Grove - I2C ADC](/Grove_Sensors_Network/Standard_Protocol) -->
-- [Grove - I2C Hub](/Grove-I2C_Hub)
-<!-- - [Grove - Relay](/Grove-Relay) -->
-<!-- - [Grove - Buzzer](/Grove-Buzzer) -->
-- [Grove - OLED Display 96\*96](/Grove-OLED_Display_0.96inch)
-- [Grove - Button](/Grove-Button)
-- [Grove - Temperature sensor v1.2](/Grove-Temperature_Sensor_V1.2)
-- [Grove - Sound sensor](/Grove-Sound_Sensor)
-- [Grove - 3-Axis Digital Accelerometer ADXL345](/Grove-3-Axis_Digital_Accelerometer-16g)
-<!-- - [Grove - Chainable RGB LED](/Grove-Chainable_RGB_LED) -->
+<!-- - [Grove - I2C ADC](/ja/Grove_Sensors_Network/Standard_Protocol) -->
+- [Grove - I2C Hub](/ja/Grove-I2C_Hub)
+<!-- - [Grove - Relay](/ja/Grove-Relay) -->
+<!-- - [Grove - Buzzer](/ja/Grove-Buzzer) -->
+- [Grove - OLED Display 96\*96](/ja/Grove-OLED_Display_0.96inch)
+- [Grove - Button](/ja/Grove-Button)
+- [Grove - Temperature sensor v1.2](/ja/Grove-Temperature_Sensor_V1.2)
+- [Grove - Sound sensor](/ja/Grove-Sound_Sensor)
+- [Grove - 3-Axis Digital Accelerometer ADXL345](/ja/Grove-3-Axis_Digital_Accelerometer-16g)
+<!-- - [Grove - Chainable RGB LED](/ja/Grove-Chainable_RGB_LED) -->
 <!-- 上述リンク欠落 -->
 
 <!-- このMarkdownファイルは https://www.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS から作成されました -->
