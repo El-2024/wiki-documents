@@ -13,7 +13,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/sensecraft-data-platform/applications/ai-advisor
 aliases:
-  - /how_to_use_sensecap_data_platform_ai_advisor_on_the_web_and_sensecraft_app
+  - /cn/how_to_use_sensecap_data_platform_ai_advisor_on_the_web_and_sensecraft_app
 tags:
   - SenseCraft
   - SenseCraft 数据平台

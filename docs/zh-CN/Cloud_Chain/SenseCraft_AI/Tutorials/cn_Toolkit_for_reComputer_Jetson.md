@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
 slug: /cn/sensecraft-ai/tutorials/sensecraft-ai-jetson
 aliases:
-  - /sensecraft_ai_jetson
+  - /cn/sensecraft_ai_jetson
 last_update:
   date: 08/16/2024
   author: Frank
