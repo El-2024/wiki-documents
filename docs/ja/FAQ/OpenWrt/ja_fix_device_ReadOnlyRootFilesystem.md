@@ -1,6 +1,6 @@
 ---
 description: OpenWrt-FAQ
-title: "Read Only Root filesystem"エラーが発生した場合のデバイス修復方法
+title: Read Only Root filesystem エラーが発生した場合のデバイス修復方法
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /ja/fix_device_ReadOnlyRootFilesystem
 last_update:

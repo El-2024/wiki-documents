@@ -23,15 +23,15 @@ reTerminalには必要なドライバーが最初から事前にインストー�
 
 ### 両方のライトが点灯している場合
 
-  この状況はLCD画面を制御するドライバーの問題により発生します。この時点で、[**2番目のステップ**](/reterminal_black_screen/#second-confirm-whether-you-have-installed-a-new-system)で提供されているトラブルシューティング手順に従い、段階的に実行してください。
+  この状況はLCD画面を制御するドライバーの問題により発生します。この時点で、[**2番目のステップ**](/ja/reterminal_black_screen/#second-confirm-whether-you-have-installed-a-new-system)で提供されているトラブルシューティング手順に従い、段階的に実行してください。
 
 ## ステップ2：新しいシステムをインストールしたかどうかを確認する
 
 :::caution
 
-- 自分で新しいOSをフラッシュしてLCD画面が正しく表示されない場合は、[**必要なreTerminalドライバーをインストール**](/reterminal_black_screen/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)する必要があります。
+- 自分で新しいOSをフラッシュしてLCD画面が正しく表示されない場合は、[**必要なreTerminalドライバーをインストール**](/ja/reterminal_black_screen/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)する必要があります。
 
-- 独自のOSをフラッシュしていないが画面が黒いままの場合は、[**reTerminalに元々搭載されているRaspberry Pi OSをフラッシュ**](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)に直接進んでください。
+- 独自のOSをフラッシュしていないが画面が黒いままの場合は、[**reTerminalに元々搭載されているRaspberry Pi OSをフラッシュ**](/ja/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)に直接進んでください。
 
 - **Raspbian OS**をインストールしようとしている場合、テストを実施した結果、**Bulleseye**の*32ビットと64ビット*の両方のバージョンがreTerminalで**黒い画面問題**に遭遇することなく正常に動作することがわかりました。さらに、新しい**Bookworm** *64ビット*バージョンもテストし、reTerminalで正常に機能することを確認しました。
 
@@ -89,9 +89,9 @@ sudo reboot
 異なるOSにフラッシュしており、reTerminalに搭載されているデフォルトのRaspberry Pi OSに戻したい場合は、以下の手順に従ってください
 :::
 
-reTerminalのCM4の**eMMCストレージ**に**Raspberry Pi OS / 64ビットUbuntu OSまたはその他のOS**をフラッシュできます。以前にreTerminalでシステムをフラッシュしたことがない場合は、**必要なドライバーのインストール**を含むシステムフラッシュの準備として、[eMMCに異なるOSをフラッシュ](/flash_different_os_to_emmc)に従うことを強くお勧めします。
+reTerminalのCM4の**eMMCストレージ**に**Raspberry Pi OS / 64ビットUbuntu OSまたはその他のOS**をフラッシュできます。以前にreTerminalでシステムをフラッシュしたことがない場合は、**必要なドライバーのインストール**を含むシステムフラッシュの準備として、[eMMCに異なるOSをフラッシュ](/ja/flash_different_os_to_emmc)に従うことを強くお勧めします。
 
-[必要なドライバー](/flash_different_os_to_emmc)がインストールされたら、reTerminalのUSB Type-CポートをPCに接続するだけです。ファイルエクスプローラーを開いてCompute Module 4のeMMCがUSBマスストレージデバイスとして表示されたら、以下の手順を実行できます：
+[必要なドライバー](/ja/flash_different_os_to_emmc)がインストールされたら、reTerminalのUSB Type-CポートをPCに接続するだけです。ファイルエクスプローラーを開いてCompute Module 4のeMMCがUSBマスストレージデバイスとして表示されたら、以下の手順を実行できます：
 
 - **1.** 以下のリンクにアクセスしてRaspberry Pi OSをダウンロードします
 

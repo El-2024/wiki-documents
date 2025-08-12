@@ -43,7 +43,7 @@ Windowsがハードウェアを検出し、必要なドライバーをインス�
 - **ステップ4.** **ファイルエクスプローラー**を開くと、Compute Module 4のeMMCが**USBマスストレージデバイス**として表示されます
 
 :::caution
-**reTerminalに元々搭載されているRaspberry Pi OS**をフラッシュする場合は、この[Wiki](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)に戻ってください。<br/>
+**reTerminalに元々搭載されているRaspberry Pi OS**をフラッシュする場合は、この[Wiki](/ja/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)に戻ってください。<br/>
 そうでない場合は、以下の手順を続行してください。
 :::
 
@@ -77,7 +77,7 @@ Windowsがハードウェアを検出し、必要なドライバーをインス�
 
 - **ステップ11.** **ブートモードスイッチ**を元の位置に戻し、reTerminalシェルを組み立てます
 
-これで**[こちら](/log_rpios_use_ssh_over_wifi_ethernet)**にスキップできます
+これで**[こちら](/ja/log_rpios_use_ssh_over_wifi_ethernet)**にスキップできます
 
 ### MAC用
 
@@ -120,7 +120,7 @@ sudo ./rpiboot
 - **ステップ 6.** reTerminalをUSB Type-Cケーブルを使ってMacコンピュータに接続します
 
 :::caution
-**reTerminalに元々搭載されているRaspberry Pi OS**をフラッシュする場合は、この[Wiki](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)に戻ってください。<br/>
+**reTerminalに元々搭載されているRaspberry Pi OS**をフラッシュする場合は、この[Wiki](/ja/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)に戻ってください。<br/>
 そうでない場合は、以下の手順を続行してください。
 :::
 
@@ -202,7 +202,7 @@ sudo ./rpiboot
 - **ステップ 7.** USB Type-CケーブルでreTerminalをPCに接続します
 
 :::caution
-**reTerminalに元々搭載されているRaspberry Pi OS**をフラッシュする場合は、この[Wiki](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)に戻ってください。<br/>
+**reTerminalに元々搭載されているRaspberry Pi OS**をフラッシュする場合は、この[Wiki](/ja/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)に戻ってください。<br/>
 そうでない場合は、以下の手順を続行してください。
 :::
 

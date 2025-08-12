@@ -20,11 +20,11 @@ last_update:
 :::successクイックブラウズ
 以下は、様々なタイプのXIAOにおけるアップロード失敗、プログラムの異常動作、またはデバイスポートが見つからないエラーのトラブルシューティング方法です。以下のリンクから素早くインデックスできます：
 
-- [**XIAO SAMD21**](/noport_upload_fails/#for-xiao-samd21)
-- [**XIAO RP2040**](/noport_upload_fails/#for-xiao-rp2040)
-- [**XIAO nRF52840(Sense)**](/noport_upload_fails/#for-xiao-nrf52840-sense)
-- [**XIAO ESP32C3**](/noport_upload_fails/#for-xiao-esp32c3)
-- [**XIAO ESP32S3(Sense)**](/noport_upload_fails/#for-xiao-esp32s3-sense)
+- [**XIAO SAMD21**](/ja/noport_upload_fails/#for-xiao-samd21)
+- [**XIAO RP2040**](/ja/noport_upload_fails/#for-xiao-rp2040)
+- [**XIAO nRF52840(Sense)**](/ja/noport_upload_fails/#for-xiao-nrf52840-sense)
+- [**XIAO ESP32C3**](/ja/noport_upload_fails/#for-xiao-esp32c3)
+- [**XIAO ESP32S3(Sense)**](/ja/noport_upload_fails/#for-xiao-esp32s3-sense)
 :::
 
 ## **XIAO SAMD21の場合**
