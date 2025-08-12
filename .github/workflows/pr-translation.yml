@@ -1,0 +1,239 @@
+name: PR Translation Workflow
+
+on:
+  pull_request:
+    types: [opened, synchronize, labeled]
+    paths: ['docs/**']
+  issue_comment:
+    types: [created]
+
+jobs:
+  # 检测 PR 中的文档变更
+  detect-docs-changes:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    outputs:
+      has-docs-changes: ${{ steps.changes.outputs.any_changed }}
+      new-files: ${{ steps.analyze.outputs.new_files }}
+      modified-files: ${{ steps.analyze.outputs.modified_files }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Check for docs changes
+        id: changes
+        uses: tj-actions/changed-files@v40
+        with:
+          files: |
+            docs/**/*.{md,mdx}
+          files_ignore: |
+            docs/zh-CN/**
+            docs/ja/**
+            docs/Spanish/**
+      
+      - name: Analyze changes
+        id: analyze
+        if: steps.changes.outputs.any_changed == 'true'
+        run: |
+          new_files=$(git diff --name-status origin/${{ github.base_ref }}..HEAD -- docs/ | grep '^A' | grep -E '\.(md|mdx)$' | grep -v -E '(zh-CN|ja|Spanish)' | cut -f2 | tr '\n' ' ')
+          modified_files=$(git diff --name-status origin/${{ github.base_ref }}..HEAD -- docs/ | grep '^M' | grep -E '\.(md|mdx)$' | grep -v -E '(zh-CN|ja|Spanish)' | cut -f2 | tr '\n' ' ')
+          
+          echo "new_files=$new_files" >> $GITHUB_OUTPUT
+          echo "modified_files=$modified_files" >> $GITHUB_OUTPUT
+
+  # 添加翻译提示评论
+  add-translation-comment:
+    needs: detect-docs-changes
+    if: needs.detect-docs-changes.outputs.has-docs-changes == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add translation comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+            
+            const newFiles = '${{ needs.detect-docs-changes.outputs.new-files }}'.trim();
+            const modifiedFiles = '${{ needs.detect-docs-changes.outputs.modified-files }}'.trim();
+            
+            const comment = `## 检测到文档变更 - 可进行多语言翻译
+            
+            ${newFiles ? `### 新增文件：\n\`\`\`\n${newFiles.split(' ').join('\n')}\n\`\`\`` : ''}
+            
+            ${modifiedFiles ? `### 修改文件：\n\`\`\`\n${modifiedFiles.split(' ').join('\n')}\n\`\`\`` : ''}
+            
+            ### 开始翻译
+            在此评论回复以下命令之一：
+            
+            - \`/translate all\` - 翻译所有变更到所有语言
+            - \`/translate zh\` - 仅翻译到中文 
+            - \`/translate ja\` - 仅翻译到日文
+            - \`/translate es\` - 仅翻译到西班牙语
+            - \`/translate zh ja\` - 翻译到中文和日文
+            
+            > 使用 Claude Sonnet 进行翻译`;
+            
+            github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: pull_number,
+              body: comment
+            });
+
+  # 手动触发翻译
+  manual-translate:
+    if: |
+      github.event_name == 'issue_comment' && 
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/translate')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - name: Check user permissions
+        id: check-permissions
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const username = context.payload.comment.user.login;
+            
+            console.log(`检查用户权限: ${username}`);
+            
+            try {
+              const { data: permission } = await github.rest.repos.getCollaboratorPermissionLevel({
+                owner,
+                repo,
+                username
+              });
+              
+              const allowedRoles = ['admin', 'maintain'];
+              const hasPermission = allowedRoles.includes(permission.permission);
+              
+              console.log(`用户 ${username} 的权限级别: ${permission.permission}`);
+              console.log(`是否有翻译权限: ${hasPermission}`);
+              
+              if (!hasPermission) {
+                await github.rest.issues.createComment({
+                  owner,
+                  repo,
+                  issue_number: context.payload.issue.number,
+                  body: `❌ @${username} 权限不足，只有仓库管理员和维护者可以触发翻译。\n\n当前权限级别: \`${permission.permission}\`\n需要权限级别: \`admin\` 或 \`maintain\``
+                });
+                
+                core.setFailed(`用户 ${username} 权限不足`);
+                return;
+              }
+              
+              core.setOutput('has_permission', 'true');
+              
+            } catch (error) {
+              console.error('权限检查失败:', error);
+              
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: context.payload.issue.number,
+                body: `❌ 权限检查失败，无法验证 @${username} 的权限。请确保用户是仓库的协作者。`
+              });
+              
+              core.setFailed(`权限检查失败: ${error.message}`);
+            }
+      
+      - name: Checkout PR
+        if: steps.check-permissions.outputs.has_permission == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr checkout ${{ github.event.issue.number }}
+      
+      - name: Setup Node.js
+        if: steps.check-permissions.outputs.has_permission == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Parse translation command
+        if: steps.check-permissions.outputs.has_permission == 'true'
+        id: parse
+        run: |
+          comment="${{ github.event.comment.body }}"
+          if [[ "$comment" == *"/translate all"* ]]; then
+            languages="zh-CN ja es"
+          else
+            languages=""
+            [[ "$comment" == *" zh"* ]] && languages="$languages zh-CN"
+            [[ "$comment" == *" ja"* ]] && languages="$languages ja" 
+            [[ "$comment" == *" es"* ]] && languages="$languages es"
+          fi
+          echo "languages=$languages" >> $GITHUB_OUTPUT
+      
+      - name: Get PR changes
+        if: steps.check-permissions.outputs.has_permission == 'true'
+        id: pr-changes
+        run: |
+          base_sha=$(gh pr view ${{ github.event.issue.number }} --json baseRefOid --jq '.baseRefOid')
+          new_files=$(git diff --name-status $base_sha..HEAD -- docs/ | grep '^A' | grep -E '\.(md|mdx)$' | grep -v -E '(zh-CN|ja|Spanish)' | cut -f2 | tr '\n' ' ')
+          modified_files=$(git diff --name-status $base_sha..HEAD -- docs/ | grep '^M' | grep -E '\.(md|mdx)$' | grep -v -E '(zh-CN|ja|Spanish)' | cut -f2 | tr '\n' ' ')
+          
+          echo "new_files=$new_files" >> $GITHUB_OUTPUT
+          echo "modified_files=$modified_files" >> $GITHUB_OUTPUT
+          echo "base_sha=$base_sha" >> $GITHUB_OUTPUT
+      
+      - name: Install dependencies
+        if: steps.check-permissions.outputs.has_permission == 'true'
+        run: npm install @anthropic-ai/sdk
+      
+      - name: Run translation
+        if: steps.check-permissions.outputs.has_permission == 'true'
+        env:
+          TRANSLATION_API_KEY: ${{ secrets.TRANSLATION_API_KEY }}
+          TARGET_LANGUAGES: ${{ steps.parse.outputs.languages }}
+          NEW_FILES: ${{ steps.pr-changes.outputs.new_files }}
+          MODIFIED_FILES: ${{ steps.pr-changes.outputs.modified_files }}
+          BASE_SHA: ${{ steps.pr-changes.outputs.base_sha }}
+        run: node .github/scripts/translate.js
+      
+      - name: Commit and push changes
+        if: steps.check-permissions.outputs.has_permission == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          
+          if git diff --quiet; then
+            echo "没有翻译内容需要提交"
+          else
+            git add docs/
+            git commit -m "自动翻译文档
+            
+            语言: ${{ steps.parse.outputs.languages }}
+            由 @${{ github.event.comment.user.login }} 触发"
+            git push
+          fi
+      
+      - name: Add completion comment
+        if: steps.check-permissions.outputs.has_permission == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issue_number = context.payload.issue.number;
+            
+            const comment = `## ✅ 翻译完成！
+            
+            **翻译语言:** ${{ steps.parse.outputs.languages }}
+            **处理时间:** ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}
+            **触发者:** @${{ github.event.comment.user.login }}
+            
+            > 💡 请检查翻译质量，如有需要可手动调整`;
+            
+            github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number,
+              body: comment
+            });
