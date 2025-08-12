@@ -95,17 +95,70 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
       
+      - name: Check user permissions
+        id: check-permissions
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const username = context.payload.comment.user.login;
+            
+            console.log(`检查用户权限: ${username}`);
+            
+            try {
+              const { data: permission } = await github.rest.repos.getCollaboratorPermissionLevel({
+                owner,
+                repo,
+                username
+              });
+              
+              const allowedRoles = ['admin', 'maintain'];
+              const hasPermission = allowedRoles.includes(permission.permission);
+              
+              console.log(`用户 ${username} 的权限级别: ${permission.permission}`);
+              console.log(`是否有翻译权限: ${hasPermission}`);
+              
+              if (!hasPermission) {
+                await github.rest.issues.createComment({
+                  owner,
+                  repo,
+                  issue_number: context.payload.issue.number,
+                  body: `❌ @${username} 权限不足，只有仓库管理员和维护者可以触发翻译。\n\n当前权限级别: \`${permission.permission}\`\n需要权限级别: \`admin\` 或 \`maintain\``
+                });
+                
+                core.setFailed(`用户 ${username} 权限不足`);
+                return;
+              }
+              
+              core.setOutput('has_permission', 'true');
+              
+            } catch (error) {
+              console.error('权限检查失败:', error);
+              
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: context.payload.issue.number,
+                body: `❌ 权限检查失败，无法验证 @${username} 的权限。请确保用户是仓库的协作者。`
+              });
+              
+              core.setFailed(`权限检查失败: ${error.message}`);
+            }
+      
       - name: Checkout PR
+        if: steps.check-permissions.outputs.has_permission == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh pr checkout ${{ github.event.issue.number }}
       
       - name: Setup Node.js
+        if: steps.check-permissions.outputs.has_permission == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '18'
       
       - name: Parse translation command
+        if: steps.check-permissions.outputs.has_permission == 'true'
         id: parse
         run: |
           comment="${{ github.event.comment.body }}"
@@ -120,6 +173,7 @@ jobs:
           echo "languages=$languages" >> $GITHUB_OUTPUT
       
       - name: Get PR changes
+        if: steps.check-permissions.outputs.has_permission == 'true'
         id: pr-changes
         run: |
           base_sha=$(gh pr view ${{ github.event.issue.number }} --json baseRefOid --jq '.baseRefOid')
@@ -131,9 +185,11 @@ jobs:
           echo "base_sha=$base_sha" >> $GITHUB_OUTPUT
       
       - name: Install dependencies
+        if: steps.check-permissions.outputs.has_permission == 'true'
         run: npm install @anthropic-ai/sdk
       
       - name: Run translation
+        if: steps.check-permissions.outputs.has_permission == 'true'
         env:
           TRANSLATION_API_KEY: ${{ secrets.TRANSLATION_API_KEY }}
           TARGET_LANGUAGES: ${{ steps.parse.outputs.languages }}
@@ -143,6 +199,7 @@ jobs:
         run: node .github/scripts/translate.js
       
       - name: Commit and push changes
+        if: steps.check-permissions.outputs.has_permission == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
@@ -159,6 +216,7 @@ jobs:
           fi
       
       - name: Add completion comment
+        if: steps.check-permissions.outputs.has_permission == 'true'
         uses: actions/github-script@v7
         with:
           script: |

@@ -27,19 +27,27 @@ const LANGUAGE_CONFIG = {
 
 // 术语保护列表
 const PRESERVE_TERMS = {
-  'reCamera': 'reCamera',
-  'Grove': 'Grove',
-  'SenseCAP': 'SenseCAP',
-  'LoRa-E5': 'LoRa-E5',
-  'API': 'API',
-  'GitHub': 'GitHub',
-  'Seeed': 'Seeed',
-  'IoT': 'IoT',
-  'WiFi': 'WiFi',
-  'USB': 'USB',
-  'Bluetooth': 'Bluetooth',
-  'reComputer': 'reComputer'
-};
+    'reCamera': 'reCamera',
+    'Grove': 'Grove',
+    'SenseCAP': 'SenseCAP',
+    'LoRa-E5': 'LoRa-E5',
+    'API': 'API',
+    'GitHub': 'GitHub',
+    'Seeed': 'Seeed',
+    'IoT': 'IoT',
+    'WiFi': 'WiFi',
+    'USB': 'USB',
+    'Bluetooth': 'Bluetooth',
+    'reComputer': 'reComputer',
+    'XIAO': 'XIAO',
+    'ReSpeaker': 'ReSpeaker',
+    'LinkStar': 'LinkStar',
+    'reTerminal': 'reTerminal',
+    'reserver': 'reserver',
+    'BeagleBone': 'BeagleBone',
+    'SenseCraft': 'SenseCraft',
+    'Home Assistant': 'Home Assistant'
+  };
 
 // 生成翻译 prompt
 function generatePrompt(targetLang, pathPrefix) {
