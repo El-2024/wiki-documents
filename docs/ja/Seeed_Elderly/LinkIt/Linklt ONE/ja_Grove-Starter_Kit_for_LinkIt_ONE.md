@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/Grove-Starter_Kit_for_LinkIt_ONE/img/Grove_Starter_Kit_for_LinkIt_ONE_530x397.jpg)
 
-<!-- Grove - LinkIt ONE用スターターキットは、LinkIt ONE開発プラットフォームを使用してアプリケーションをより迅速かつ簡単に構築するためのツールキットです。このキットを使用することで、プロジェクトの設計プロセスに集中でき、時間や費用を大幅に節約できます。IoT（モノのインターネット）アプリケーションを構築するための最も人気のあるモジュール（例：[Base Shield](/Base_Shield_V2)）が含まれています。 -->
+<!-- Grove - LinkIt ONE用スターターキットは、LinkIt ONE開発プラットフォームを使用してアプリケーションをより迅速かつ簡単に構築するためのツールキットです。このキットを使用することで、プロジェクトの設計プロセスに集中でき、時間や費用を大幅に節約できます。IoT（モノのインターネット）アプリケーションを構築するための最も人気のあるモジュール（例：[Base Shield](/ja/Base_Shield_V2)）が含まれています。 -->
 
 [![](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://www.seeedstudio.com/depot/Grove-Starter-Kit-for-LinkIt-ONE-p-2028.html)
 
@@ -36,22 +36,22 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 各モジュールの仕様については以下をご参照ください：
 
-<!-- -   [Grove - Dust Sensor](/Grove-Dust_Sensor#Specification)
--   [Grove - Temperature and Humidity Sensor Pro](/Grove-Temperature_and_Humidity_Sensor_Pro#specifications)
--   [Grove - Sound Sensor](/Grove-Sound_Sensor#Specifications)
--   [Grove - UV Sensor](/Grove-UV_Sensor#specifications)
--   [Grove - Barometer Sensor (BMP280)](/Grove-Barometer_Sensor-BMP280#specifications)
--   [Grove - Light Sensor v1.2](/Grove-Light_Sensor)
--   [Grove - 3-Axis Digital Accelerometer(±16g)](/Grove-3-Axis_Digital_Accelerometer-16g)
--   [Grove - LED Bar](/Grove-LED_Bar)
--   [Grove - Servo](/Grove-Servo#Specification)
--   [Grove - Touch Sensor](/Grove-Touch_Sensor#specifications)
--   [Grove - Base shield v2](/Base_Shield_V2) -->
+<!-- -   [Grove - Dust Sensor](/ja/Grove-Dust_Sensor#Specification)
+-   [Grove - Temperature and Humidity Sensor Pro](/ja/Grove-Temperature_and_Humidity_Sensor_Pro#specifications)
+-   [Grove - Sound Sensor](/ja/Grove-Sound_Sensor#Specifications)
+-   [Grove - UV Sensor](/ja/Grove-UV_Sensor#specifications)
+-   [Grove - Barometer Sensor (BMP280)](/ja/Grove-Barometer_Sensor-BMP280#specifications)
+-   [Grove - Light Sensor v1.2](/ja/Grove-Light_Sensor)
+-   [Grove - 3-Axis Digital Accelerometer(±16g)](/ja/Grove-3-Axis_Digital_Accelerometer-16g)
+-   [Grove - LED Bar](/ja/Grove-LED_Bar)
+-   [Grove - Servo](/ja/Grove-Servo#Specification)
+-   [Grove - Touch Sensor](/ja/Grove-Touch_Sensor#specifications)
+-   [Grove - Base shield v2](/ja/Base_Shield_V2) -->
 
 アプリケーションアイデア
 -----------------
 
-<!-- [秘密の箱](/Secret_Box)やその他の面白いアプリケーションを構築できます。 -->
+<!-- [秘密の箱](/ja/Secret_Box)やその他の面白いアプリケーションを構築できます。 -->
 
 このセクションに記載されているアイデアは、このキットの膨大なアプリケーションの一部に過ぎません。
 
@@ -114,14 +114,14 @@ Grove LEDバーは10セグメントのLEDで構成されており、インジケ
 
 このセクションでは、基本的な開発環境の構築方法のみを示します。
 
-<!-- [基本的な開発環境の構築ガイド](/LinkIt_ONE)をご覧ください。 -->
+<!-- [基本的な開発環境の構築ガイド](/ja/LinkIt_ONE)をご覧ください。 -->
 
 デモ
 -----
 
 このセクションでは、いくつかの実際的な機能を実装したデモを紹介します。
 
-<!-- 完全なレシピはこちらをご覧ください：[秘密の箱](/Secret_Box) -->
+<!-- 完全なレシピはこちらをご覧ください：[秘密の箱](/ja/Secret_Box) -->
 
 リソース
 ---------

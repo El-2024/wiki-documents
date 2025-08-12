@@ -133,7 +133,7 @@ void loop()
 
 ### 颜色传感器示例/应用
 
-此示例展示了如何使用 Grove - I2C 颜色传感器的功能，并通过[可链接 RGB LED Grove](/Grove-Chainable_RGB_LED/) 显示检测到的颜色。
+此示例展示了如何使用 Grove - I2C 颜色传感器的功能，并通过[可链接 RGB LED Grove](/cn/Grove-Chainable_RGB_LED/) 显示检测到的颜色。
 
 :::note
 如果您之前没有将 <a href="https://github.com/Seeed-Studio/Grove_Chainable_RGB_LED">Grove-可链接 RGB LED 库</a> 下载到您的 Arduino IDE 中，请先下载并设置该库。

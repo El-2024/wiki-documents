@@ -25,7 +25,7 @@ sku:
 --- -->
 ![](https://files.seeedstudio.com/wiki/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/Aws_kit_wiki_cover.JPG)
 
-_主要記事: まずはこちらから [Grove IoTスターターキット（AWS対応）](/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoTスターターキット（AWS対応）"), [Intel Edison](https://software.intel.com/en-us/iot/library/edison-getting-started)_
+_主要記事: まずはこちらから [Grove IoTスターターキット（AWS対応）](/ja/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoTスターターキット（AWS対応）"), [Intel Edison](https://software.intel.com/en-us/iot/library/edison-getting-started)_
 
 Intel Edisonモジュールは、専門的なメーカー、起業家、産業IoT企業向けに設計されており、完全にオープンソースのハードウェアおよびソフトウェア開発環境を提供することで、プロトタイピングを容易にします。Wi-FiおよびBLE 4.0接続をサポートしています。このキットには、屋内環境を追跡したりスマートハウスアプリケーションを作成したりするための11種類の選択されたGroveセンサーとアクチュエーターが含まれています。
 
@@ -38,18 +38,18 @@ Intel Edisonモジュールは、専門的なメーカー、起業家、産業Io
 | 部品                                                                                                                                                                      | Wiki                                                                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | [Intel® Edison for Arduino](https://www.seeedstudio.com/depot/Intel-Edison-for-Arduino-p-2149.html)                                                                         | [こちらを読む](https://software.intel.com/en-us/iot/library/edison-getting-started)                                                         |
-| [Base Shield](https://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html?cPath=98_16)                                                                                     | [こちらを読む](/Base_Shield_V2 "Base shield v2")                                                                                           |
-| [Grove - Temperature&Humidity Sensor (High-Accuracy & Mini)](https://www.seeedstudio.com/depot/Grove-TemperatureHumidity-Sensor-HighAccuracy-Mini-p-1921.html?cPath=25_125) | [こちらを読む](/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0 "Grove - Tempture&Humidity Sensor (High-Accuracy &Mini) v1.0") |
-| [Grove - Moisture Sensor](https://www.seeedstudio.com/depot/Grove-Moisture-Sensor-p-955.html?cPath=25_27)                                                                   | [こちらを読む](/Grove-Moisture_Sensor "Grove - Moisture Sensor")                                                                           |
-| [Grove - Light Sensor](https://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html?cPath=25_27)                                                                         | [こちらを読む](/Grove-Light_Sensor "Grove - Light Sensor")                                                                                 |
-| [Grove - UV Sensor](https://www.seeedstudio.com/depot/Grove-UV-Sensor-p-1540.html?cPath=25_27)                                                                              | [こちらを読む](/Grove-UV_Sensor "Grove - UV Sensor")                                                                                       |
-| [Grove - PIR Motion Sensor](https://www.seeedstudio.com/depot/Grove-PIR-Motion-Sensor-p-802.html?cPath=25_31)                                                               | [こちらを読む](/Grove-PIR_Motion_Sensor "Grove - PIR Motion Sensor")                                                                       |
-| [Grove - Encoder](https://www.seeedstudio.com/depot/Grove-Encoder-p-1352.html?cPath=85_52)                                                                                  | [こちらを読む](/Grove-Encoder "Grove - Encoder")                                                                                           |
-| [Grove - Button](https://www.seeedstudio.com/depot/Grove-Button-p-766.html)                                                                                                 | [こちらを読む](/Grove-Button "Grove - Button")                                                                                             |
-| [Grove - LCD RGB Backlight](https://www.seeedstudio.com/depot/Grove-LCD-RGB-Backlight-p-1643.html?cPath=34_36)                                                              | [こちらを読む](/Grove-LCD_RGB_Backlight "Grove - LCD RGB Backlight")                                                                       |
-| [Grove - Relay](https://www.seeedstudio.com/depot/Grove-Relay-p-769.html?cPath=39_42)                                                                                       | [こちらを読む](/Grove-Relay "Grove - Relay")                                                                                               |
-| [Grove - Servo](https://www.seeedstudio.com/depot/Grove-Servo-p-1241.html?cPath=39_41)                                                                                      | [こちらを読む](/Grove-Servo "Grove - Servo")                                                                                               |
-| [Grove - Buzzer](https://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html?cPath=38)                                                                                        | [こちらを読む](/Grove-Buzzer "Grove - Buzzer")                                                                                             |
+| [Base Shield](https://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html?cPath=98_16)                                                                                     | [こちらを読む](/ja/Base_Shield_V2 "Base shield v2")                                                                                           |
+| [Grove - Temperature&Humidity Sensor (High-Accuracy & Mini)](https://www.seeedstudio.com/depot/Grove-TemperatureHumidity-Sensor-HighAccuracy-Mini-p-1921.html?cPath=25_125) | [こちらを読む](/ja/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0 "Grove - Tempture&Humidity Sensor (High-Accuracy &Mini) v1.0") |
+| [Grove - Moisture Sensor](https://www.seeedstudio.com/depot/Grove-Moisture-Sensor-p-955.html?cPath=25_27)                                                                   | [こちらを読む](/ja/Grove-Moisture_Sensor "Grove - Moisture Sensor")                                                                           |
+| [Grove - Light Sensor](https://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html?cPath=25_27)                                                                         | [こちらを読む](/ja/Grove-Light_Sensor "Grove - Light Sensor")                                                                                 |
+| [Grove - UV Sensor](https://www.seeedstudio.com/depot/Grove-UV-Sensor-p-1540.html?cPath=25_27)                                                                              | [こちらを読む](/ja/Grove-UV_Sensor "Grove - UV Sensor")                                                                                       |
+| [Grove - PIR Motion Sensor](https://www.seeedstudio.com/depot/Grove-PIR-Motion-Sensor-p-802.html?cPath=25_31)                                                               | [こちらを読む](/ja/Grove-PIR_Motion_Sensor "Grove - PIR Motion Sensor")                                                                       |
+| [Grove - Encoder](https://www.seeedstudio.com/depot/Grove-Encoder-p-1352.html?cPath=85_52)                                                                                  | [こちらを読む](/ja/Grove-Encoder "Grove - Encoder")                                                                                           |
+| [Grove - Button](https://www.seeedstudio.com/depot/Grove-Button-p-766.html)                                                                                                 | [こちらを読む](/ja/Grove-Button "Grove - Button")                                                                                             |
+| [Grove - LCD RGB Backlight](https://www.seeedstudio.com/depot/Grove-LCD-RGB-Backlight-p-1643.html?cPath=34_36)                                                              | [こちらを読む](/ja/Grove-LCD_RGB_Backlight "Grove - LCD RGB Backlight")                                                                       |
+| [Grove - Relay](https://www.seeedstudio.com/depot/Grove-Relay-p-769.html?cPath=39_42)                                                                                       | [こちらを読む](/ja/Grove-Relay "Grove - Relay")                                                                                               |
+| [Grove - Servo](https://www.seeedstudio.com/depot/Grove-Servo-p-1241.html?cPath=39_41)                                                                                      | [こちらを読む](/ja/Grove-Servo "Grove - Servo")                                                                                               |
+| [Grove - Buzzer](https://www.seeedstudio.com/depot/Grove-Buzzer-p-768.html?cPath=38)                                                                                        | [こちらを読む](/ja/Grove-Buzzer "Grove - Buzzer")                                                                                             |
 | USBケーブル; 480mm-ブラック                                                                                                                                                     |                                                                                                                                          |
 | USB壁用電源                                                                                                                                                      |                                                                                                                                          |
 
@@ -97,7 +97,7 @@ Intel Edisonモジュールは、専門的なメーカー、起業家、産業Io
 
 6. Thingを作成します。
 
-このセクションでは、[Beagle Bone wiki](/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS)を参照して、Thingを作成し残りのタスクを完了する別の方法を確認することもできます。違いは、Beagle BoneではAWS CLIツールを使用して認証を取得しない点です。
+このセクションでは、[Beagle Bone wiki](/ja/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS)を参照して、Thingを作成し残りのタスクを完了する別の方法を確認することもできます。違いは、Beagle BoneではAWS CLIツールを使用して認証を取得しない点です。
 
 ![](https://files.seeedstudio.com/wiki/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/AWS_Edison_starter_kit_create_a_thing1.png)
 
@@ -438,7 +438,7 @@ function sendData(){
 
 * **[PDF]** [AWS IoT 開発者ガイド](https://files.seeedstudio.com/wiki/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS/res/AWS_IoT_Developer_Guide.pdf)
 
-* [Wiki]<a href="/Grove_IoT_Starter_Kits_Powered_by_AWS" target="_blank"><span><font color={'000000'} size={"3"}> AWS 対応 Grove IoT スターターキットのメインページ </font></span></a>
+* [Wiki]<a href="/ja/Grove_IoT_Starter_Kits_Powered_by_AWS" target="_blank"><span><font color={'000000'} size={"3"}> AWS 対応 Grove IoT スターターキットのメインページ </font></span></a>
 
 * [Edison の始め方](https://software.intel.com/en-us/iot/library/edison-getting-started)
 

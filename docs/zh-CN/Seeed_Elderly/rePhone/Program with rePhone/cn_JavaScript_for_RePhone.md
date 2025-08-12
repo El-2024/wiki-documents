@@ -19,9 +19,9 @@ RePhone 可以作为一个学习工具，帮助您开始有趣的项目。目前
 安装驱动和更新固件
 ----------------------------------
 
-- 要**安装驱动**，请参考 **<a href="/JavaScript_for_RePhone" ><span><font color={'000000'} size={"3"}> Arduino IDE for RePhone Kit</font></span></a>** 的第 2 节。
+- 要**安装驱动**，请参考 **<a href="/cn/JavaScript_for_RePhone" ><span><font color={'000000'} size={"3"}> Arduino IDE for RePhone Kit</font></span></a>** 的第 2 节。
 
-- 要**更新固件**，请参考 **<a href="/JavaScript_for_RePhone" ><span><font color={'000000'} size={"3"}> Arduino IDE for RePhone Kit</font></span></a>** 的第 3 节。
+- 要**更新固件**，请参考 **<a href="/cn/JavaScript_for_RePhone" ><span><font color={'000000'} size={"3"}> Arduino IDE for RePhone Kit</font></span></a>** 的第 3 节。
 
 下载 JavaScript for RePhone 应用程序
 -------------------------------------------

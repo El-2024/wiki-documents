@@ -95,13 +95,13 @@ sku: 109020041
 #### ソフトウェア
 
 :::caution
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** Githubから[Seeed Arduino ADS1115](https://github.com/Seeed-Studio/Seeed_Arduino_ADS1115)ライブラリをダウンロードします。
 
 :::note
-Arduino用ライブラリの[インストール方法](http://wiki.seeedstudio.com/How_to_install_Arduino_Library/)を参照してください。
+Arduino用ライブラリの[インストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)を参照してください。
 :::
 
 - **ステップ2.** Arduino IDEを再起動します。**Seeed_Arduino_ADS1115**の例を次のパスから開きます：**File** → **Examples** → **Grove - ADS1115** → **single_ended**。
@@ -166,7 +166,7 @@ void loop(void)
 }
 ```
 
-- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](http://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 4.** Arduino IDE の **シリアルモニタ** を開きます。**ツール -> シリアルモニタ** をクリックするか、++ctrl+shift+m++ キーを同時に押します。ボーレートを **115200** に設定してください。
 
@@ -216,7 +216,7 @@ Grove - 16-bit ADC(ADS1115) は Raspberry Pi 用の 4 チャンネル 16 ビッ�
 
 - **ステップ 2.** [**サンプルコード**](https://github.com/Seeed-Studio/Seeed_Arduino_Sketchbook/tree/master/examples/WioTerminal-ADS1115) をこちらからダウンロードします。
 
-- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](http://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 4.** ロータリーセンサーを調整すると、対応する電圧が Wio Terminal の LCD 画面に表示されます：
 

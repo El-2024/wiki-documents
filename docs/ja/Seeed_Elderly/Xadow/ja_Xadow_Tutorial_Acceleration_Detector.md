@@ -19,13 +19,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 このデモに必要なもの：
 
 <!-- 
-*   [Xadow メインボード](/Xadow_Main_Board/)
+*   [Xadow メインボード](/ja/Xadow_Main_Board/)
 
-*   [Xadow OLED](/Xado_OLED_128multiply64)
+*   [Xadow OLED](/ja/Xado_OLED_128multiply64)
 
 *   [Xadow 振動モーター](https://wiki.seeedstudio.com/ja/Xadow_Vibrator_Motor/)
 
-*   [Xadow 加速度計](/Xadow_3_Aixs_Accelerometer/) 
+*   [Xadow 加速度計](/ja/Xadow_3_Aixs_Accelerometer/) 
 -->
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Acceleration_Detector/img/Untitled2.jpg)
@@ -34,7 +34,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 *   Xadow メインボード、Xadow OLED、Xadow 振動モーター、Xadow 加速度計を FFC ケーブルで同じ方向に接続します。
 
-<!-- *   Xadow メインボードを Micro USB ケーブルで PC に接続します。コードをアップロードする前に、Xadow ドライバーをインストールする必要があります。具体的な操作については [こちら](/Xadow_Main_Board#Get_Start_with_Xadow_Main_Board) をクリックしてください。 -->
+<!-- *   Xadow メインボードを Micro USB ケーブルで PC に接続します。コードをアップロードする前に、Xadow ドライバーをインストールする必要があります。具体的な操作については [こちら](/ja/Xadow_Main_Board#Get_Start_with_Xadow_Main_Board) をクリックしてください。 -->
 
 *   「これで、他の Arduino ボードと同じように Xadow をプログラムして使用できます」と表示されたら、準備が完了したことを意味します。
 

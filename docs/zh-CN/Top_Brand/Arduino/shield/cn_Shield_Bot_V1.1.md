@@ -23,7 +23,7 @@ sku:  110060010
 
 与之前版本相比，Shield Bot V1.1 可以使用 PC 的 USB 端口为电池充电。在我们优化电路后，充电效率大大提高。您还可以使用 Arduino/Seeeduino 的 Vin 引脚进行快速充电。
 
-注意：不包含兼容的 Arduino 开发板，请尝试 [Seeeduino](/Seeeduino "Seeeduino")。
+注意：不包含兼容的 Arduino 开发板，请尝试 [Seeeduino](/cn/Seeeduino "Seeeduino")。
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Shield-Bot-p-1380.html)
 

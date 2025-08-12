@@ -39,7 +39,7 @@ Grove-Mixer_Pack
 
 此Grove模块作为以下Grove套件系列的一部分提供：
 
-<!-- * [Grove Mixer Pack V2](/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
+<!-- * [Grove Mixer Pack V2](/cn/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
 
 请注意，此Grove - AND模块仅作为上述套件的一部分出售，Seeed Studio Bazaar不单独提供。
 

@@ -26,7 +26,7 @@ reTerminal E10xx 系列代表了 Seeed Studio 的电子纸显示终端产品系�
   <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/getting_started_with_reterminal_e1001">
     <strong><span><font color={'FFFFFF'} size={"4"}>reTerminal E1001 Wiki</font></span></strong>
   </a>
-  <a class="get_one_now_item" href="/reterminal_e10xx_main_page">
+  <a class="get_one_now_item" href="/cn/reterminal_e10xx_main_page">
     <strong><span><font color={'FFFFFF'} size={"4"}>立即获取</font></span></strong>
   </a>
 </div><br />
@@ -50,7 +50,7 @@ reTerminal E1002 配备鲜艳的 7.3 英寸六色电子纸显示屏，采用 ACe
   <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/getting_started_with_reterminal_e1002">
     <strong><span><font color={'FFFFFF'} size={"4"}>reTerminal E1002 Wiki</font></span></strong>
   </a>
-  <a class="get_one_now_item" href="/reterminal_e10xx_main_page">
+  <a class="get_one_now_item" href="/cn/reterminal_e10xx_main_page">
     <strong><span><font color={'FFFFFF'} size={"4"}>立即获取</font></span></strong>
   </a>
 </div><br />
@@ -107,9 +107,9 @@ Create rich graphical interfaces using LVGL and the visual SquareLine Studio des
 
 ## 资源
 
-- [SenseCraft HMI 文档](/reterminal_e10xx_main_page)
-- [ESP32S3 数据手册](/reterminal_e10xx_main_page)
-- [GitHub 仓库](/reterminal_e10xx_main_page)
+- [SenseCraft HMI 文档](/cn/reterminal_e10xx_main_page)
+- [ESP32S3 数据手册](/cn/reterminal_e10xx_main_page)
+- [GitHub 仓库](/cn/reterminal_e10xx_main_page)
 
 ## 技术支持与产品讨论
 

@@ -58,9 +58,9 @@ Seeedstudioの公式マニュアルは[こちら](https://forum.seeedstudio.com/
 
 ### その他のSeeedstudioドキュメント
 
-* [DSO Quad マニュアル（公式Wikiページ）](/DSO_Quad "DSO Quad")
+* [DSO Quad マニュアル（公式Wikiページ）](/ja/DSO_Quad "DSO Quad")
 
-* [DSO Quad ファームウェアの構築](/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")
+* [DSO Quad ファームウェアの構築](/ja/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")
 
 * [DSO Quad バッテリー取り付けチュートリアル（ビデオ付き）](https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=2074)
 
@@ -134,7 +134,7 @@ DSO QuadはUSBケーブルを接続して充電します。LTC4054バッテリ�
 
 DSO Quadにはいくつかのバージョンがあり、それぞれ異なるファームウェアが必要です。ハードウェアを慎重に識別してください。DSO Quadを初めて起動した際に、ハードウェアバージョンを確認してください。以下の表と比較してください：
 
-最新のファームウェアはこちらで確認できます：[DSO Quad Building Firmware](/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")  
+最新のファームウェアはこちらで確認できます：[DSO Quad Building Firmware](/ja/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")  
 特別契約による最新ファームウェアはこちら：[FPGA(DFU，SYS，APP) v2.7.2](https://files.seeedstudio.com/wiki/DSO_Quad_Manual_by_the_community/res/DS203.V2.72.zip)。
 
 | 起動画面 | ハードウェアバージョン | 工場出荷時ファームウェア | 最新ファームウェア更新 | 備考 |
@@ -177,7 +177,7 @@ DSO Quadは初回使用前にキャリブレーションが必要であり、長
 
     3. 指示に従ってください。
 
-詳細はこちらをご覧ください：[DSO Quad:Calibration](/DSO_Quad-Calibration "DSO Quad:Calibration")
+詳細はこちらをご覧ください：[DSO Quad:Calibration](/ja/DSO_Quad-Calibration "DSO Quad:Calibration")
 
 注意: マイクロUSB接続に電源を接続または切断した場合、キャリブレーションが異なることに気付きました。最も頻繁に使用する方法でキャリブレーションを行ってください。
 
@@ -237,7 +237,7 @@ Vmax、Vmin、Vpp、Vdc（平均電圧）、Vrms（sqrt(平均(V*V)))
 
 DSO Quadは通常のUSBポートから充電できます。使用する前に少なくとも1時間充電してください。
 
-DSO Quadのファームウェアは「ライブ」ファームウェア更新を行うために急速なUSB切断-再接続を行います。この方法はMac OS XやLinuxと互換性がありません。詳細については[このフォーラムスレッド](https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=1934)を参照してください。[DSO Quad Building Firmware](/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")を参照してLinuxからファームウェアをアップグレードする方法を確認してください。
+DSO Quadのファームウェアは「ライブ」ファームウェア更新を行うために急速なUSB切断-再接続を行います。この方法はMac OS XやLinuxと互換性がありません。詳細については[このフォーラムスレッド](https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=1934)を参照してください。[DSO Quad Building Firmware](/ja/DSO_Quad-Building_Firmware "DSO Quad Building Firmware")を参照してLinuxからファームウェアをアップグレードする方法を確認してください。
 
 ## リソース
 

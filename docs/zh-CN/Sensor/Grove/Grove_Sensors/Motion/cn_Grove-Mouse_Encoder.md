@@ -90,7 +90,7 @@ Grove - 鼠标编码器是一种机械式增量旋转编码器，具有旋转方
 
 本节将向您展示如何构建用于使用 Grove - 鼠标编码器构建应用程序的 IDE 环境。
 
-<!-- 图有问题 Refer to [Seeeduino V4.2](/Seeeduino_v4.2#Getting_Started_on_Windows)(It is exchangeable with Arduino board) for how to build a complete an IDE for your applications, or read [Arduino guide](https://www.arduino.cc/en/Guide/HomePage) if you use Arduino original board. -->
+<!-- 图有问题 Refer to [Seeeduino V4.2](/cn/Seeeduino_v4.2#Getting_Started_on_Windows)(It is exchangeable with Arduino board) for how to build a complete an IDE for your applications, or read [Arduino guide](https://www.arduino.cc/en/Guide/HomePage) if you use Arduino original board. -->
 
 <div className="admonition note">
   <p className="admonition-title">注意</p>

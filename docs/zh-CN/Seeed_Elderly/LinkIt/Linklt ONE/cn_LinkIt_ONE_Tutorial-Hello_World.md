@@ -88,25 +88,25 @@ _File -> Examples -> Starter Kit for LinkIt -> Extend_Lesson -> L2_Breath_LED_
 
 **参考**
 
-<!-- *   [基础知识](/LinkIt_ONE_Tutorial-The_Basics)
+<!-- *   [基础知识](/cn/LinkIt_ONE_Tutorial-The_Basics)
 
-*   [Hello World](/LinkIt_ONE_Tutorial-Hello_World)
+*   [Hello World](/cn/LinkIt_ONE_Tutorial-Hello_World)
 
-*   [按钮开关](/LinkIt_ONE_Tutorial-Push_Button)
+*   [按钮开关](/cn/LinkIt_ONE_Tutorial-Push_Button)
 
-*   [跑马灯](/LinkIt_ONE_Tutorial-Marquee)
+*   [跑马灯](/cn/LinkIt_ONE_Tutorial-Marquee)
 
-*   [多彩世界](/LinkIt_ONE_Tutorial-Colorful_World)
+*   [多彩世界](/cn/LinkIt_ONE_Tutorial-Colorful_World)
 
-*   [模拟接口](/LinkIt_ONE_Tutorial-Analog_Interface)
+*   [模拟接口](/cn/LinkIt_ONE_Tutorial-Analog_Interface)
 
-*   [迷你舵机](/LinkIt-ONE-Tutorial---Mini-Servo)
+*   [迷你舵机](/cn/LinkIt-ONE-Tutorial---Mini-Servo)
 
-*   [光传感器](/LinkIt_ONE_Tutorial-Light-Sensor)
+*   [光传感器](/cn/LinkIt_ONE_Tutorial-Light-Sensor)
 
-*   [短信控制 LED](/LinkIt_ONE_Tutorial-SMS_control_the_LED)
+*   [短信控制 LED](/cn/LinkIt_ONE_Tutorial-SMS_control_the_LED)
 
-*   [通过网页获取温度](/LinkIt_ONE_Tutorial-Get_temperature_with_Webpage) -->
+*   [通过网页获取温度](/cn/LinkIt_ONE_Tutorial-Get_temperature_with_Webpage) -->
 
 ## 技术支持与产品讨论
 

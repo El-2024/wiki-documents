@@ -18,16 +18,16 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant)は現在以下のモデルをサポートしています。対応するチュートリアルを参照してモデルのトレーニングを完了し、モデルの重みを取得することができます。
 
-- [物体検出 - SWIFT-YOLO](/ModelAssistant_Tutorials_Training_YOLO): デジタルメーターの読み取り
+- [物体検出 - SWIFT-YOLO](/ja/ModelAssistant_Tutorials_Training_YOLO): デジタルメーターの読み取り
 
-- [物体検出 - FOMO](/ModelAssistant_Tutorials_Training_FOMO): マスク着用検出
+- [物体検出 - FOMO](/ja/ModelAssistant_Tutorials_Training_FOMO): マスク着用検出
 
-- [キーポイント検出 PFLD](/ModelAssistant_Tutorials_Training_PFLD): ポインターメーターの読み取り
+- [キーポイント検出 PFLD](/ja/ModelAssistant_Tutorials_Training_PFLD): ポインターメーターの読み取り
 
 
 :::tip
 
-トレーニングを開始する前に、まず[Config](/ModelAssistant_Tutorials_Config)と[Datasets](/ModelAssistant_Tutorials_Datasets)セクションを読むことをお勧めします。
+トレーニングを開始する前に、まず[Config](/ja/ModelAssistant_Tutorials_Config)と[Datasets](/ja/ModelAssistant_Tutorials_Datasets)セクションを読むことをお勧めします。
 
 :::
 
@@ -67,4 +67,4 @@ python3 tools/train.py --help
 
 ### デプロイ
 
-モデルをエクスポートした後、エッジコンピューティングデバイスにモデルをデプロイしてテストと評価を行うことができます。[Deploy](/ModelAssistant_Deploy_Overview)セクションを参照して、モデルのデプロイ方法について詳しく学んでください。
+モデルをエクスポートした後、エッジコンピューティングデバイスにモデルをデプロイしてテストと評価を行うことができます。[Deploy](/ja/ModelAssistant_Deploy_Overview)セクションを参照して、モデルのデプロイ方法について詳しく学んでください。

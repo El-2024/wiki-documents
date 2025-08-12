@@ -13,14 +13,14 @@ last_update:
 ![](https://www.seeedstudio.com/blog/wp-content/uploads/2023/03/sensor@2x.png)
 
 <div class="embedded_world_container">
-    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/LoRa-E5_STM32WLE5JC_Module">
+    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/cn/LoRa-E5_STM32WLE5JC_Module">
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>Wio-E5 无线模块</font></div>
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'FFFFFF'} size={"3"}>全球首款将 LoRa RF 和 MCU 芯片组合成一个单一小型芯片</font></div>
     </a>
 </div>
 
 <div class="embedded_world_container">
-    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/LoRa_E5_Dev_Board">
+    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/cn/LoRa_E5_Dev_Board">
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>Wio-E5 开发套件</font></div>
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'FFFFFF'} size={"3"}>Wio-E5 开发套件，提供 Wio-E5 的完整 GPIO 和 Grove 接口</font></div>
     </a>

@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 **これは Seeeduino Stalker の最新バージョンではなく、販売が終了しています。
 最新バージョンはこちらで確認できます：[Seeeduino Stalker v2.1](https://seeeddoc.github.io/Seeeduino_Stalker_v2.1/)
-v1.0、v2.0、v2.1 の比較については、<a href="/Seeeduino_Stalker#Comparison_between_various_versions_of_Seeeduino_Stalker" ><span><font size={"3"}> Arduino </font></span></a> をご覧ください。**
+v1.0、v2.0、v2.1 の比較については、<a href="/ja/Seeeduino_Stalker#Comparison_between_various_versions_of_Seeeduino_Stalker" ><span><font size={"3"}> Arduino </font></span></a> をご覧ください。**
 
 このデバイスの製品ページへのリンク（購入はこちらから）：
 **Seeeduino Stalker Atmega 168P v1.0モデル: [ARD125B5P](https://www.seeedstudio.com/depot/seeeduino-stalker-atmega-168-p-639.html?cPath=79_80)**

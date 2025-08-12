@@ -145,11 +145,11 @@ last_update:
 
 **麦克风阵列** 
 <div className="card-container">
-    <a href="/ReSpeaker_Core_v2.0/" className="nav-item">
+    <a href="/cn/ReSpeaker_Core_v2.0/" className="nav-item">
       <span className="text">ReSpeaker Core v2.0</span>
       <span className="tag recommended">New</span>
     </a>
-    <a href="/ReSpeaker_Mic_Array_v2.0/" className="nav-item">
+    <a href="/cn/ReSpeaker_Mic_Array_v2.0/" className="nav-item">
       <span className="text">ReSpeaker Mic Array v2.0</span>
       <span className="tag recommended">New</span>
     </a>

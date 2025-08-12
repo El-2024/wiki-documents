@@ -58,7 +58,7 @@ Grove - Chainable RGB LEDを手に入れたら、「どうやって点灯させ�
 
 このデモを完成させるには、1つまたは複数のGrove - Chainable RGB LEDを使用できます。1つのGrove - Chainable RGB LEDのINインターフェースをGrove - Base ShieldのD7/D8に接続し、そのOUTインターフェースを別のGrove - Chainable RGB LEDのINインターフェースに接続する必要があります。この方法でさらにLEDを連結できます。
 
-- [Chainable LED Library](https://github.com/pjpmarques/ChainableLED)をダウンロードしてArduinoライブラリにインストールします。wikiページには[Arduinoライブラリのインストール方法](/How_to_install_Arduino_Library)に関するコースがあります。
+- [Chainable LED Library](https://github.com/pjpmarques/ChainableLED)をダウンロードしてArduinoライブラリにインストールします。wikiページには[Arduinoライブラリのインストール方法](/ja/How_to_install_Arduino_Library)に関するコースがあります。
 - パス: File->Examples->ChainableLED_masterから例「CycleThroughColors」を開き、Seeeduinoにアップロードします。
 
 ```
@@ -211,7 +211,7 @@ void loop()
 :::
 1. Raspberry PiとGrovePiまたはGrovePi+を用意してください。
 
-2. 開発環境の設定を完了している必要があります。設定がまだの場合は[こちら](/GrovePi_Plus)を参照してください。
+2. 開発環境の設定を完了している必要があります。設定がまだの場合は[こちら](/ja/GrovePi_Plus)を参照してください。
 
 3. 接続
 
@@ -637,7 +637,7 @@ BBG上でプログラムを編集するには、Cloud9 IDEを使用できます�
 
 Cloud9 IDEに慣れるための簡単な練習として、BeagleBoneの4つのユーザープログラム可能なLEDの1つを点滅させるシンプルなアプリケーションを作成するのが良いでしょう。
 
-Cloud9 IDEを初めて使用する場合は、こちらの[**リンク**](/BeagleBone_Green)を参照してください。
+Cloud9 IDEを初めて使用する場合は、こちらの[**リンク**](/ja/BeagleBone_Green)を参照してください。
 
 **ステップ1:** Grove - UARTソケットをGrove - GPIOソケットとして設定します。この[**リンク**](https://www.seeedstudio.com/recipe/362-how-to-use-the-grove-uart-port-as-a-gpio-on-bbg.html)に従ってください。
 

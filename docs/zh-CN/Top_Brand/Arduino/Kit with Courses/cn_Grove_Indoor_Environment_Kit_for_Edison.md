@@ -30,29 +30,29 @@ Grove Edison室内环境套件让您可以轻松地使用Intel Edison和Arduino�
 
 ---
 
-* [Base Shield V2](/Base_Shield_V2)  x1
+* [Base Shield V2](/cn/Base_Shield_V2)  x1
 
-* [Grove - 温湿度传感器（高精度迷你版）](/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0)  x1
+* [Grove - 温湿度传感器（高精度迷你版）](/cn/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0)  x1
 
-* [Grove - 湿度传感器](/Grove-Moisture_Sensor)  x1
+* [Grove - 湿度传感器](/cn/Grove-Moisture_Sensor)  x1
 
-* [Grove - 光线传感器](/Grove-Light_Sensor)  x1
+* [Grove - 光线传感器](/cn/Grove-Light_Sensor)  x1
 
-* [Grove - 紫外线传感器](/Grove-UV_Sensor)  x1
+* [Grove - 紫外线传感器](/cn/Grove-UV_Sensor)  x1
 
-* [Grove - PIR运动传感器](/Grove-PIR_Motion_Sensor)  x1
+* [Grove - PIR运动传感器](/cn/Grove-PIR_Motion_Sensor)  x1
 
-* [Grove - 编码器](/Grove-Encoder)  x1
+* [Grove - 编码器](/cn/Grove-Encoder)  x1
 
-* [Grove - 按钮](/Grove-Button)  x1
+* [Grove - 按钮](/cn/Grove-Button)  x1
 
-* [Grove - LCD RGB背光](/Grove-LCD_RGB_Backlight)  x1
+* [Grove - LCD RGB背光](/cn/Grove-LCD_RGB_Backlight)  x1
 
-* [Grove - 继电器](/Grove-Relay)  x1
+* [Grove - 继电器](/cn/Grove-Relay)  x1
 
-* [Grove - 舵机](/Grove-Servo)  x1
+* [Grove - 舵机](/cn/Grove-Servo)  x1
 
-* [Grove - 蜂鸣器](/Grove-Buzzer)  x1
+* [Grove - 蜂鸣器](/cn/Grove-Buzzer)  x1
 
 * [9V转桶形插头适配器](https://www.seeedstudio.com/depot/9V-to-Barrel-Jack-Adapter-p-1481.html)  x1
 

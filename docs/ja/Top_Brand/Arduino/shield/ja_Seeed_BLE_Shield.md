@@ -103,7 +103,7 @@ Seeed BLE ShieldはHM-11モジュールを利用して、Arduino/Seeeduinoにシ
 
 ![](https://files.seeedstudio.com/wiki/Seeed_BLE_Shield/img/BLE_Shield.png)
 
-* HM-11: 基本モジュールはHM-11です。詳細については[HM-11](/Bluetooth_V4.0_HM_11_BLE_Module)のWikiを参照してください。
+* HM-11: 基本モジュールはHM-11です。詳細については[HM-11](/ja/Bluetooth_V4.0_HM_11_BLE_Module)のWikiを参照してください。
 
 * 信号ランプ: BLEが接続されていない場合はランプが点滅しますが、BLEが接続されるとランプは点灯し続けます。
 
@@ -249,7 +249,7 @@ AT コマンドに関する詳細情報は、BLE モジュールのデータシ�
 
 ---
 
-* [Seeed BLE Shieldに関するFAQ](/Seeed_BLE_Shield). _また、製品のWikiページ右側にある「FAQ」ボタンをクリックすることでFAQページにアクセスできます。_
+* [Seeed BLE Shieldに関するFAQ](/ja/Seeed_BLE_Shield). _また、製品のWikiページ右側にある「FAQ」ボタンをクリックすることでFAQページにアクセスできます。_
 
 ## 回路図オンラインビューア
 

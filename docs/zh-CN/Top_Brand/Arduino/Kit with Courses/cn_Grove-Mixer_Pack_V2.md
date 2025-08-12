@@ -11,7 +11,7 @@ last_update:
 ---
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/U8GUZNb9TVZ14lLRW6ialXEV.jpg)
 
-<!-- The [Grove - Mixer Pack V2](https://www.seeedstudio.com/depot/Mixer-Pack-V2Electronic-blockswithout-Arduinoplug-and-play-system-p-1867.html?cPath=14) is a stand-alone, Lego-like electronics kit that consists of 13 select Grove modules from the [ Grove System](/Grove_System "GROVE System") developed by [Seeed Studio](https://www.seeedstudio.com/depot/). These mini-modules can be used as building blocks to create electronic circuits and prototypes quite rapidly without necessarily using a Microcontroller board such as a [Seeeduino](/Seeeduino "Seeeduino") or an [ Arduino](/Arduino "Main Page"). -->
+<!-- The [Grove - Mixer Pack V2](https://www.seeedstudio.com/depot/Mixer-Pack-V2Electronic-blockswithout-Arduinoplug-and-play-system-p-1867.html?cPath=14) is a stand-alone, Lego-like electronics kit that consists of 13 select Grove modules from the [ Grove System](/cn/Grove_System "GROVE System") developed by [Seeed Studio](https://www.seeedstudio.com/depot/). These mini-modules can be used as building blocks to create electronic circuits and prototypes quite rapidly without necessarily using a Microcontroller board such as a [Seeeduino](/cn/Seeeduino "Seeeduino") or an [ Arduino](/cn/Arduino "Main Page"). -->
 
 包含的13个Grove模块是传感器模块、执行器、逻辑和电源模块的组合，使用极其简单且有趣。在几分钟内，您就可以设计新电路并组装功能原型。
 
@@ -34,43 +34,43 @@ last_update:
 
 - **13个Grove模块：**
 
-<!-- 1.  1x [Grove - DC Jack Power](/Grove-DC_Jack_Power "Grove - DC Jack Power")
+<!-- 1.  1x [Grove - DC Jack Power](/cn/Grove-DC_Jack_Power "Grove - DC Jack Power")
 
-2.  1x [Grove - Recorder](/Grove_Recorder "Grove - Recorder")
+2.  1x [Grove - Recorder](/cn/Grove_Recorder "Grove - Recorder")
 
-3.  1x [Grove - LED String Light](/Grove-LED_String_Light "Grove - LED String Light")
+3.  1x [Grove - LED String Light](/cn/Grove-LED_String_Light "Grove - LED String Light")
 
-4.  1x [Grove - Mini Fan](/Grove-Mini_Fan "Grove - Mini Fan")
+4.  1x [Grove - Mini Fan](/cn/Grove-Mini_Fan "Grove - Mini Fan")
 
-5.  1x [Grove - NOT](/Grove-NOT "Grove - NOT")
+5.  1x [Grove - NOT](/cn/Grove-NOT "Grove - NOT")
 
-6.  1x [Grove - OR](/Grove-OR "Grove - OR")
+6.  1x [Grove - OR](/cn/Grove-OR "Grove - OR")
 
-7.  1x [Grove - AND](/Grove-AND "Grove - AND")
+7.  1x [Grove - AND](/cn/Grove-AND "Grove - AND")
 
-8.  1x [Grove - Buzzer](/Grove-Buzzer "Grove - Buzzer")
+8.  1x [Grove - Buzzer](/cn/Grove-Buzzer "Grove - Buzzer")
 
-9.  1x [Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor")
+9.  1x [Grove - Light Sensor](/cn/Grove-Light_Sensor "Grove - Light Sensor")
 
-10.  1x [Grove - Red LED](/Grove-Red_LED "Grove - Red LED")
+10.  1x [Grove - Red LED](/cn/Grove-Red_LED "Grove - Red LED")
 
-11.  1x [Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor")
+11.  1x [Grove - Sound Sensor](/cn/Grove-Sound_Sensor "Grove - Sound Sensor")
 
-12.  1x [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")
+12.  1x [Grove - Slide Potentiometer](/cn/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")
 
-13.  1x [Grove - Button](/Grove-Button "Grove - Button") -->
+13.  1x [Grove - Button](/cn/Grove-Button "Grove - Button") -->
 
 *   **Grove模块配件：**
 
-<!-- 1.  1x DC Motor to work with the [Grove - Mini Fan](/Grove-Mini_Fan "Grove - Mini Fan") module
+<!-- 1.  1x DC Motor to work with the [Grove - Mini Fan](/cn/Grove-Mini_Fan "Grove - Mini Fan") module
 
 2.  1x Colorful Fan that fits onto the DC Motor
 
-3.  1x Small Audio Speaker to work with the [Grove - Recorder](/Grove_Recorder "Grove - Recorder") module
+3.  1x Small Audio Speaker to work with the [Grove - Recorder](/cn/Grove_Recorder "Grove - Recorder") module
 
-4.  1x LED String Light to work with the [Grove - LED String Light](/Grove-LED_String_Light "Grove - LED String Light") module
+4.  1x LED String Light to work with the [Grove - LED String Light](/cn/Grove-LED_String_Light "Grove - LED String Light") module
 
-5.  7x [Grove Cables](/Grove_System/#grove-cables "GROVE System") (3x 200mm, 3x 50mm, 1x Branch Cable) -->
+5.  7x [Grove Cables](/cn/Grove_System/#grove-cables "GROVE System") (3x 200mm, 3x 50mm, 1x Branch Cable) -->
 
 ## 使用方法
 
@@ -124,7 +124,7 @@ last_update:
 
 - 步骤3
 
-<!-- You now have completed building your Grove circuit. Turn back ON the ON/OFF switch on the [Grove - DC Jack Power](/Grove-DC_Jack_Power "Grove - DC Jack Power") module now and watch your circuit come alive! -->
+<!-- You now have completed building your Grove circuit. Turn back ON the ON/OFF switch on the [Grove - DC Jack Power](/cn/Grove-DC_Jack_Power "Grove - DC Jack Power") module now and watch your circuit come alive! -->
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/Grove-momentarySwitch-RedLED.jpg)
 
@@ -143,7 +143,7 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/Grove-LightSensorNOT-RedLED-ON.jpg)
 
-<!-- Using [Grove - NOT](/Grove-NOT "Grove - NOT") logic gate -->
+<!-- Using [Grove - NOT](/cn/Grove-NOT "Grove - NOT") logic gate -->
 
 典型用法：_ 基于[LDR](https://en.wikipedia.org/wiki/Photoresistor)的光传感器模块，如Grove - 光传感器，在明亮光线下产生HIGH信号，在黑暗中产生LOW信号。因此，它可以用来在明亮光线下点亮LED，在黑暗中关闭LED。但是，您可能需要一个在黑暗中LED灯点亮，在明亮光线下保持关闭的电路。这可以通过在Grove - 光传感器输入模块和Grove - DC插孔电源模块之间添加一个Grove - NOT模块来实现。使用NOT门时，您会观察到在明亮光线下，当LDR表现出低电阻且光传感器模块产生的信号为HIGH时，NOT门将其反转为LOW信号，LED灯在明亮光线下**不再**点亮。另外，当环境黑暗且LDR表现出高电阻，光传感器模块产生的信号为LOW时，NOT门将LOW信号转换为HIGH信号，导致LED灯在黑暗中点亮。
 
@@ -154,9 +154,9 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/Grove-or-usage.jpg)
 
-<!-- Using [Grove - OR](/Grove-OR "Grove - OR") logic gate -->
+<!-- Using [Grove - OR](/cn/Grove-OR "Grove - OR") logic gate -->
 
-<!-- Typical Usage:_ Use this when you need one of two sensory inputs to trigger an output. For example, lets say you want to build a circuit that lights up some LED lights either on music OR when you manually switch them on. To build such a circuit, you will need two input modules - the [Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor") and the [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer"). These two input modules can then be connected to the left-side of the [Grove - OR](/Grove-OR "Grove - OR") gate module. The output from this logic gate module will connect to the left-side of the power module, while the right-side will be connected to the LED lights module ([Grove - Red LED](/Grove-Red_LED "Grove - Red LED") or [Grove - LED String Light](/Grove-LED_String_Light "Grove - LED String Light")). Now, when you switch ON the circuit, observe what happens. You will see that the LED lights turn ON either when there is some sound or music that is detected by the sound sensor OR when you manually move the slider on the [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") from minimum voltage (GND) to maximum (VCC). This also implies that if the [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") is supplying a HIGH signal to the LED lights, then no matter what the input from the sound sensor is, the LED lights will always stay ON. Alternatively, if the [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") is supplying a LOW signal to the LED lights, then the LED lights will flash based on whether the output from the sound sensor is HIGH or LOW. -->
+<!-- Typical Usage:_ Use this when you need one of two sensory inputs to trigger an output. For example, lets say you want to build a circuit that lights up some LED lights either on music OR when you manually switch them on. To build such a circuit, you will need two input modules - the [Grove - Sound Sensor](/cn/Grove-Sound_Sensor "Grove - Sound Sensor") and the [Grove - Slide Potentiometer](/cn/Grove-Slide_Potentiometer "Grove - Slide Potentiometer"). These two input modules can then be connected to the left-side of the [Grove - OR](/cn/Grove-OR "Grove - OR") gate module. The output from this logic gate module will connect to the left-side of the power module, while the right-side will be connected to the LED lights module ([Grove - Red LED](/cn/Grove-Red_LED "Grove - Red LED") or [Grove - LED String Light](/cn/Grove-LED_String_Light "Grove - LED String Light")). Now, when you switch ON the circuit, observe what happens. You will see that the LED lights turn ON either when there is some sound or music that is detected by the sound sensor OR when you manually move the slider on the [Grove - Slide Potentiometer](/cn/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") from minimum voltage (GND) to maximum (VCC). This also implies that if the [Grove - Slide Potentiometer](/cn/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") is supplying a HIGH signal to the LED lights, then no matter what the input from the sound sensor is, the LED lights will always stay ON. Alternatively, if the [Grove - Slide Potentiometer](/cn/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") is supplying a LOW signal to the LED lights, then the LED lights will flash based on whether the output from the sound sensor is HIGH or LOW. -->
 
 
 #### Grove - AND模块
@@ -165,9 +165,9 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/Grove-and-usage.jpg)
 
-<!-- Using [Grove - AND](/Grove-AND "Grove - AND") logic gate
+<!-- Using [Grove - AND](/cn/Grove-AND "Grove - AND") logic gate
 
-Typical Usage:_ Use this when you need two sensory inputs to trigger an output. For example, lets say you want to build a circuit that lights up some LED lights either on music but only in the dark. To build such a circuit, you will need two input modules - the [Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor") and the [Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor") (The [Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor") module will be used in conjunction with the [Grove - NOT](/Grove-NOT "Grove - NOT") logic gate so that lights switch ON only in the dark). These input side modules can then be connected to the left-side of the [Grove - AND](/Grove-AND "Grove - AND") gate module. The output from this logic gate module will connect to the left-side of the power module, while the right-side will be connected to the LED lights module ([Grove - Red LED](/Grove-Red_LED "Grove - Red LED") or [Grove - LED String Light](/Grove-LED_String_Light "Grove - LED String Light")). Now, when you switch ON the circuit, observe what happens. You will see that the LED lights turn ON when it is both dark AND there is some sound or music playing. This also implies that even if the [Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor") is supplying a HIGH signal to the LED lights when it detects sound or music, then unless the [Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor") detects darkness, the LED lights will always stay OFF. Only when it is dark AND there is sound or music detected by the sound sensor will the LED lights will flash. -->
+Typical Usage:_ Use this when you need two sensory inputs to trigger an output. For example, lets say you want to build a circuit that lights up some LED lights either on music but only in the dark. To build such a circuit, you will need two input modules - the [Grove - Sound Sensor](/cn/Grove-Sound_Sensor "Grove - Sound Sensor") and the [Grove - Light Sensor](/cn/Grove-Light_Sensor "Grove - Light Sensor") (The [Grove - Light Sensor](/cn/Grove-Light_Sensor "Grove - Light Sensor") module will be used in conjunction with the [Grove - NOT](/cn/Grove-NOT "Grove - NOT") logic gate so that lights switch ON only in the dark). These input side modules can then be connected to the left-side of the [Grove - AND](/cn/Grove-AND "Grove - AND") gate module. The output from this logic gate module will connect to the left-side of the power module, while the right-side will be connected to the LED lights module ([Grove - Red LED](/cn/Grove-Red_LED "Grove - Red LED") or [Grove - LED String Light](/cn/Grove-LED_String_Light "Grove - LED String Light")). Now, when you switch ON the circuit, observe what happens. You will see that the LED lights turn ON when it is both dark AND there is some sound or music playing. This also implies that even if the [Grove - Sound Sensor](/cn/Grove-Sound_Sensor "Grove - Sound Sensor") is supplying a HIGH signal to the LED lights when it detects sound or music, then unless the [Grove - Light Sensor](/cn/Grove-Light_Sensor "Grove - Light Sensor") detects darkness, the LED lights will always stay OFF. Only when it is dark AND there is sound or music detected by the sound sensor will the LED lights will flash. -->
 
 ## Grove 模块详情
 
@@ -223,19 +223,19 @@ Grove - 蜂鸣器模块以压电蜂鸣器作为主要组件。压电器可以连
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/Grove-Light_Sensor_photo.jpg)
 
-<!-- The [Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor") module incorporates a Light Dependent Resistor (LDR). Typically, the resistance of the light sensor will decrease when the ambient light intensity increases. -->
+<!-- The [Grove - Light Sensor](/cn/Grove-Light_Sensor "Grove - Light Sensor") module incorporates a Light Dependent Resistor (LDR). Typically, the resistance of the light sensor will decrease when the ambient light intensity increases. -->
 
 ### Grove - 红色 LED
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/Grove-LED_Photo.jpg)
 
-<!-- The [Grove - Red LED](/Grove-Red_LED "Grove - Red LED") module is similar to the Grove - LED module in that it houses an LED light source. In addition, it also has a potentiometer on-board to manage the input voltage to the LED and to adjust its brightness. The module also has mounting holes for the LED and the LED is not soldered onto the PCB. This means you can remove the Red LED that comes with the mixer pack and use any other LED of any other color or size as well. You can also use this module to add a pilot lamp for indicating power or signal presence for [Arduino](/Arduino "Arduino") or [Seeeduino](/Seeeduino "Seeeduino") based projects. -->
+<!-- The [Grove - Red LED](/cn/Grove-Red_LED "Grove - Red LED") module is similar to the Grove - LED module in that it houses an LED light source. In addition, it also has a potentiometer on-board to manage the input voltage to the LED and to adjust its brightness. The module also has mounting holes for the LED and the LED is not soldered onto the PCB. This means you can remove the Red LED that comes with the mixer pack and use any other LED of any other color or size as well. You can also use this module to add a pilot lamp for indicating power or signal presence for [Arduino](/cn/Arduino "Arduino") or [Seeeduino](/cn/Seeeduino "Seeeduino") based projects. -->
 
 ### Grove - 声音传感器
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/Grove-Sound_Sensor_photo1.jpg)
 
-<!-- The [Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor") module is based on using a simple [electret microphone](https://en.wikipedia.org/wiki/Electret_microphone) microphone as a sound sensor. It can be used to detect the sound strength of the environment. -->
+<!-- The [Grove - Sound Sensor](/cn/Grove-Sound_Sensor "Grove - Sound Sensor") module is based on using a simple [electret microphone](https://en.wikipedia.org/wiki/Electret_microphone) microphone as a sound sensor. It can be used to detect the sound strength of the environment. -->
 
 ### Grove - 滑动电位器
 
@@ -257,11 +257,11 @@ Grove Mixer Pack 模块和配件可用于构建许多有趣的项目。您随包
 
 <!-- *   Part list:
 
-        *   1x [Grove - DC Jack Power](/Grove-DC_Jack_Power "Grove - DC Jack Power")
+        *   1x [Grove - DC Jack Power](/cn/Grove-DC_Jack_Power "Grove - DC Jack Power")
 
-        *   1x [Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor")
+        *   1x [Grove - Light Sensor](/cn/Grove-Light_Sensor "Grove - Light Sensor")
 
-        *   1x [Grove - Red LED](/Grove-Red_LED "Grove - Red LED") -->
+        *   1x [Grove - Red LED](/cn/Grove-Red_LED "Grove - Red LED") -->
 
 **按照这些逐步图形说明来构建您的项目：**
 
@@ -281,13 +281,13 @@ Grove Mixer Pack 模块和配件可用于构建许多有趣的项目。您随包
 
 **零件清单：**
 
-<!-- - 1x [Grove - DC Jack Power](/Grove-DC_Jack_Power "Grove - DC Jack Power")
+<!-- - 1x [Grove - DC Jack Power](/cn/Grove-DC_Jack_Power "Grove - DC Jack Power")
 
-- 1x [Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor")
+- 1x [Grove - Light Sensor](/cn/Grove-Light_Sensor "Grove - Light Sensor")
 
-- 1x [Grove - NOT](/Grove-NOT "Grove - NOT")
+- 1x [Grove - NOT](/cn/Grove-NOT "Grove - NOT")
 
-- 1x [Grove - LED String Light](/Grove-LED_String_Light "Grove - LED String Light") module along with the LED String lights -->
+- 1x [Grove - LED String Light](/cn/Grove-LED_String_Light "Grove - LED String Light") module along with the LED String lights -->
 
 **按照这些逐步图形说明来构建您的项目：**
 
@@ -318,7 +318,7 @@ _提示：_ 使用声音和光线传感器与 LED 串灯的组合。您能猜出
 _提示：_ 此电路与上面显示的光敏灯项目相同。使用 9V 电池让您的项目便携！
 
 4.  **使用压电蜂鸣器作为自行车喇叭**
-<!-- _提示：_ 按下按钮发出尖锐的喇叭声！使用 9V 电池让您的项目便携。探索当您用 [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") 替换 [Grove - Button](/Grove-Button "Grove - Button") 时会发生什么。 -->
+<!-- _提示：_ 按下按钮发出尖锐的喇叭声！使用 9V 电池让您的项目便携。探索当您用 [Grove - Slide Potentiometer](/cn/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") 替换 [Grove - Button](/cn/Grove-Button "Grove - Button") 时会发生什么。 -->
 
 5.  **成为间谍！**
 _提示：_ 使用录音机秘密录制某人的声音并播放给他们听。

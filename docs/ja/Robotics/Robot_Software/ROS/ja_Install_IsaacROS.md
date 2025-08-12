@@ -26,7 +26,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 #### ソフトウェア環境:
 - JetPack 5.1.2
 - Ubuntu 20.04+
-- [ROS2 Humble](./ja_Install_ROS2_Humble.md)
+- [ROS2 Humble](/ja/install_ros2_humble)
 
 
 

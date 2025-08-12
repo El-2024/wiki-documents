@@ -12,7 +12,7 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/Grove-XBee_Carrier/img/Bee_Stem.jpg)
 
-Grove - XBee 承载板是一款为 Bee 系列和 Grove 单元设计的无线传感器网络 (WSN) 基板。它主要适用于独立的 Bee 节点，例如带有 ATMega328 的 RFBee、Wifi Bee，以及 XBee (Zigbee) 模块。它兼容 [RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")、[Wifi Bee](/Wifi_Bee "Wifi Bee")、[XBee](http://garden.seeedstudio.com/index.php?title=Bee_series#ZigBee "Bee_series#ZigBee") 和 Bluetooth Bee。除了一个 Bee 插座外，板上还有两个 Grove 连接器。该板可以通过锂电池或 USB 电缆供电。您可以使用无线充电器、太阳能板或 USB 电缆为电池充电。板载的 FT232RL 芯片可以直接帮助将程序下载到 Bee 模块。
+Grove - XBee 承载板是一款为 Bee 系列和 Grove 单元设计的无线传感器网络 (WSN) 基板。它主要适用于独立的 Bee 节点，例如带有 ATMega328 的 RFBee、Wifi Bee，以及 XBee (Zigbee) 模块。它兼容 [RFBee](/cn/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")、[Wifi Bee](/cn/Wifi_Bee "Wifi Bee")、[XBee](http://garden.seeedstudio.com/index.php?title=Bee_series#ZigBee "Bee_series#ZigBee") 和 Bluetooth Bee。除了一个 Bee 插座外，板上还有两个 Grove 连接器。该板可以通过锂电池或 USB 电缆供电。您可以使用无线充电器、太阳能板或 USB 电缆为电池充电。板载的 FT232RL 芯片可以直接帮助将程序下载到 Bee 模块。
 
 不带 ATMega328 的 Bee（例如 Bluetooth Bee）只能通过板载 FT232RL（USB 转 UART）进行配置。这些 Bee 不适合独立应用。
 
@@ -40,7 +40,7 @@ Grove - XBee 承载板是一款为 Bee 系列和 Grove 单元设计的无线传�
 
 ---
 
-* 使用独立 Bee 节点（如 [Wifi Bee](/Wifi_Bee "Wifi Bee")）的无线传感器网络。
+* 使用独立 Bee 节点（如 [Wifi Bee](/cn/Wifi_Bee "Wifi Bee")）的无线传感器网络。
 
 * 使用 FT232RL 配置 Bee 的辅助工具。
 
@@ -121,7 +121,7 @@ Grove - XBee 承载板是一款为 Bee 系列和 Grove 单元设计的无线传�
 
 #### 充电
 
-<!-- 现在您可以从 **SeeedStudio** [电池和充电器](/Solar_Charger_Shield_V2.2 "Solar_Charger_Shield_V2.2") 中选择适合您应用的电池 -->
+<!-- 现在您可以从 **SeeedStudio** [电池和充电器](/cn/Solar_Charger_Shield_V2.2 "Solar_Charger_Shield_V2.2") 中选择适合您应用的电池 -->
 
 * 将 3.7V LiPo 电池连接到 **BAT** JST 插座。
 
@@ -133,9 +133,9 @@ Grove - XBee 承载板是一款为 Bee 系列和 Grove 单元设计的无线传�
 
 #### 使用独立 Bee 节点
 
-Bee 节点是独立的 Arduino 兼容无线节点。**SeeedStudio** 有两个这样的节点 - [Wifi Bee](/Wifi_Bee "Wifi Bee") 和 [RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")。
+Bee 节点是独立的 Arduino 兼容无线节点。**SeeedStudio** 有两个这样的节点 - [Wifi Bee](/cn/Wifi_Bee "Wifi Bee") 和 [RFBee](/cn/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")。
 
-* 下图展示了 [WiFi Bee](/Wifi_Bee "Wifi Bee") 与 **Grove - XBee Carrier** 的连接。
+* 下图展示了 [WiFi Bee](/cn/Wifi_Bee "Wifi Bee") 与 **Grove - XBee Carrier** 的连接。
 
 * 任何 Grove 模块都可以连接到提供的 Grove 插座。
 
@@ -155,7 +155,7 @@ Bee Stem 连接到 RFBee 和两个 Twig.jpg
 
 本节介绍那些没有预编程 Arduino 引导程序的 MCU 的 Bee 模块。这些模块通常仅作为无线收发器使用。这些 **Bee 模块**（如 Bluetooth Bee 等）也可以与 PC 通信。在这种情况下，**Grove - XBee Carrier** 作为这些 Bee 的载体，提供必要的电源和通过 FT232RL USB 到 UART 的通信接口。
 
-<!-- *   在下面的示例中，[Bluetooth Bee](/Bluetooth_Bee "Bluetooth Bee") 连接到 **Grove - XBee Carrier** 并通过 USB-UART 配置 -->
+<!-- *   在下面的示例中，[Bluetooth Bee](/cn/Bluetooth_Bee "Bluetooth Bee") 连接到 **Grove - XBee Carrier** 并通过 USB-UART 配置 -->
 
 ![](https://files.seeedstudio.com/wiki/Grove-XBee_Carrier/img/Stem_XBee_Carrier_Connected_to_BluetoothBee.jpg)
 
@@ -167,7 +167,7 @@ Bee Stem 连接到 RFBee 和两个 Twig.jpg
 
 ![](https://files.seeedstudio.com/wiki/Grove-XBee_Carrier/img/Stem_XBee_Carrier_BluetoothBee_Commands.png)
 
-<!-- *   有关使用 [Bluetooth Bee](/Bluetooth_Bee "Bluetooth Bee") 的更多信息，请参考 [Bluetooth Bee 命令文档](/Bluetooth_Bee#Commands_to_change_default_configuration "Bluetooth Bee")。 -->
+<!-- *   有关使用 [Bluetooth Bee](/cn/Bluetooth_Bee "Bluetooth Bee") 的更多信息，请参考 [Bluetooth Bee 命令文档](/cn/Bluetooth_Bee#Commands_to_change_default_configuration "Bluetooth Bee")。 -->
 
 ### 编程
 

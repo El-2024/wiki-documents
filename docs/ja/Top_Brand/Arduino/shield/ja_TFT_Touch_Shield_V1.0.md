@@ -168,7 +168,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ---
 
-TFTタッチシールドは[Adafruit Touch Screen Library](https://github.com/adafruit/Touch-Screen-Library)を使用します。抵抗膜タッチスクリーンの原理を理解するには、[外部リンク](/2.8inch_TFT_Touch_Shield_v2.0#resources)を参照してください。簡単に言えば、4線式抵抗膜タッチスクリーンは、X軸とY軸それぞれに電圧分圧器を提供します。各軸に適切な電圧を適用し、ADC値をスキャンすることでタッチ位置を検出できます。これらの値は常にノイズの影響を受けやすいため、デジタルフィルタが使用されます。
+TFTタッチシールドは[Adafruit Touch Screen Library](https://github.com/adafruit/Touch-Screen-Library)を使用します。抵抗膜タッチスクリーンの原理を理解するには、[外部リンク](/ja/2.8inch_TFT_Touch_Shield_v2.0#resources)を参照してください。簡単に言えば、4線式抵抗膜タッチスクリーンは、X軸とY軸それぞれに電圧分圧器を提供します。各軸に適切な電圧を適用し、ADC値をスキャンすることでタッチ位置を検出できます。これらの値は常にノイズの影響を受けやすいため、デジタルフィルタが使用されます。
 
 - TouchScreenライブラリを使用するには、まずTouchScreenオブジェクトを作成します。
 

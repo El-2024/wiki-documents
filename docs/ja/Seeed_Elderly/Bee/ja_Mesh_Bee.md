@@ -311,13 +311,13 @@ Mesh BeeはSeeed Studioが提供する2.4GHzのワイヤレストランシーバ
 ### 5.1 ハードウェアのインストール
 
 Mesh Bee は一般的な Bee ソケットを備えています。そのため、XBee や RFBee などと同じように使用できます。ただし、一部のピンを除いて、ピンは完全には互換性がありません。
-Bee シリーズに不慣れな場合は、[このリンク](/Grove_Cape_for_BeagleBone_Series "Grove_Cape_for_BeagleBone_Series")で Bee シリーズについて学び、[このリンク](/RFbee_V1.1-Wireless_Arduino_compatible_node#Usage "RFbee V1.1 - Wireless Arduino compatible node")で他のハードウェアと Bee をインストールする方法を確認してください。
+Bee シリーズに不慣れな場合は、[このリンク](/ja/Grove_Cape_for_BeagleBone_Series "Grove_Cape_for_BeagleBone_Series")で Bee シリーズについて学び、[このリンク](/ja/RFbee_V1.1-Wireless_Arduino_compatible_node#Usage "RFbee V1.1 - Wireless Arduino compatible node")で他のハードウェアと Bee をインストールする方法を確認してください。
 
 ### 5.2 ファームウェアの更新方法
 
 Mesh Bee にプリフラッシュされているデフォルトのファームウェアは、製造および販売の都合上、コーディネーターファームウェアです。ルーター/エンドデバイスのファームウェアは自分でフラッシュする必要があります。ただし、これはメイカーにとって十分簡単です。
 
-JN516x には UART とその他のピンを備えた特定のファームウェアダウンロードインターフェースがあります。そのため、**プログラマー**が必要です。これには [UartSBee v5](/UartSBee_v5 "UartSBee v5") を提供しています。UartSBee v5 は v4 のほとんどの機能を備えており、さらに Mesh Bee 用のプログラマーが追加されています。
+JN516x には UART とその他のピンを備えた特定のファームウェアダウンロードインターフェースがあります。そのため、**プログラマー**が必要です。これには [UartSBee v5](/ja/UartSBee_v5 "UartSBee v5") を提供しています。UartSBee v5 は v4 のほとんどの機能を備えており、さらに Mesh Bee 用のプログラマーが追加されています。
 
 ![](https://files.seeedstudio.com/wiki/Mesh_Bee/img/UartSBee_V05.jpg)
 
@@ -325,7 +325,7 @@ JN516x には UART とその他のピンを備えた特定のファームウェ�
 
 * ステップ 1: 最新のファームウェアを GitHub からダウンロードします;
 
-  * [Mesh_Bee#9.1_Firmware_Downloads](/Mesh_Bee#91-firmware-downloads "Mesh Bee")
+  * [Mesh_Bee#9.1_Firmware_Downloads](/ja/Mesh_Bee#91-firmware-downloads "Mesh Bee")
 
 * ステップ 2: FT_Prog を使用して UartSBee v5 を設定します;
 
@@ -429,13 +429,13 @@ Mesh Beeはファームウェアのオーバーザエア（OTA）更新をサポ
 
 <big>ステップ1: 新しいファームウェアをコーディネーターの外部フラッシュにフラッシュする。</big>
 
-このステップを達成するには、[5.2 ファームウェアの更新方法](/Mesh_Bee#52-how-to-update-firmware "Mesh Bee")と非常に似ています。唯一の違いは、「Flash Select」で「External」を選択することです。
+このステップを達成するには、[5.2 ファームウェアの更新方法](/ja/Mesh_Bee#52-how-to-update-firmware "Mesh Bee")と非常に似ています。唯一の違いは、「Flash Select」で「External」を選択することです。
 
 ![](https://files.seeedstudio.com/wiki/Mesh_Bee/img/Flash_External.jpg)
 
 <big>ステップ2: ネットワークが正しく設定され、ノードが互いに通信できることを確認する。</big>
 
-[5.3.2_Configuration](/Mesh_Bee#53-at-commands--configuration "Mesh Bee")で説明されているようにネットワークノードを設定します。「ATLA」コマンドを送信してネットワーク上のノードを確認します。
+[5.3.2_Configuration](/ja/Mesh_Bee#53-at-commands--configuration "Mesh Bee")で説明されているようにネットワークノードを設定します。「ATLA」コマンドを送信してネットワーク上のノードを確認します。
 
 <big>ステップ3: OTAプロセスをトリガーする。</big>
 
@@ -477,7 +477,7 @@ Mesh Beeはファームウェアのオーバーザエア（OTA）更新をサポ
 
 <big>ステップ2: Mesh Beeノードを設定する</big>
 
-[5.3.2_Configuration](/Mesh_Bee#532-configuration "Mesh Bee")を参照してポイントツーポイント接続を設定します。
+[5.3.2_Configuration](/ja/Mesh_Bee#532-configuration "Mesh Bee")を参照してポイントツーポイント接続を設定します。
 
 <big>ステップ3: サーボ側（制御される側）を組み立てる</big>
 

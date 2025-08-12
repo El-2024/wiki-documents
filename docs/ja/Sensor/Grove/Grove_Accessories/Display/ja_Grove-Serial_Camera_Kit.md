@@ -55,7 +55,7 @@ Grove - Serial Camera Kitは、1つのコントロールボードと2つの交�
 ## デモンストレーション
 
 ---
-このデモでは、Grove - Serial Camera Kitの使用方法を紹介します。必要なものは、[Seeeduino](https://www.seeedstudio.com/seeeduino-v30-atmega-328p-p-669.html?cPath=6_7)、[SD Card Shield](https://www.seeedstudio.com/sd-card-shield-v40-p-1381.html?cPath=105)、および[Grove - Button](/Grove-Button)です。ボタンを押すと写真を撮影し、SDカードに保存します。
+このデモでは、Grove - Serial Camera Kitの使用方法を紹介します。必要なものは、[Seeeduino](https://www.seeedstudio.com/seeeduino-v30-atmega-328p-p-669.html?cPath=6_7)、[SD Card Shield](https://www.seeedstudio.com/sd-card-shield-v40-p-1381.html?cPath=105)、および[Grove - Button](/ja/Grove-Button)です。ボタンを押すと写真を撮影し、SDカードに保存します。
 
 以下の手順に従って進めれば、簡単にGrove - Serial Camera Kitを動作させることができます。それでは始めましょう。
 

@@ -173,25 +173,25 @@ LaunchPad 是德州仪器（Texas Instruments）推出的一系列评估套件�
 ---
 ###   Grove 列表
 
-<!-- *   [1. 蜂鸣器](/Grove-Buzzer#With_TI_LaunchPad)
+<!-- *   [1. 蜂鸣器](/cn/Grove-Buzzer#With_TI_LaunchPad)
 
-*   [2. 继电器](/Grove-Relay#With_TI_LaunchPad)
+*   [2. 继电器](/cn/Grove-Relay#With_TI_LaunchPad)
 
-*   [3. 四位数字显示屏 ](/Grove-4-Digit_Display#With_TI_LaunchPad)
+*   [3. 四位数字显示屏 ](/cn/Grove-4-Digit_Display#With_TI_LaunchPad)
 
-*   [4. 旋转角度传感器 ](/Grove-Rotary_Angle_Sensor#With_TI_LaunchPad)
+*   [4. 旋转角度传感器 ](/cn/Grove-Rotary_Angle_Sensor#With_TI_LaunchPad)
 
-*   [5. 光传感器](/Grove-Light_Sensor#With_TI_LaunchPad)
+*   [5. 光传感器](/cn/Grove-Light_Sensor#With_TI_LaunchPad)
 
-*   [6. 声音传感器 ](/Grove-Sound_Sensor#With_TI_LaunchPad)
+*   [6. 声音传感器 ](/cn/Grove-Sound_Sensor#With_TI_LaunchPad)
 
-*   [7. PIR 动作传感器 ](/Grove-PIR_Motion_Sensor#With_TI_LaunchPad)
+*   [7. PIR 动作传感器 ](/cn/Grove-PIR_Motion_Sensor#With_TI_LaunchPad)
 
-*   [8. 湿度传感器](/Grove-Moisture_Sensor#With_TI_LaunchPad)
+*   [8. 湿度传感器](/cn/Grove-Moisture_Sensor#With_TI_LaunchPad)
 
-*   [9. 超声波测距传感器](/Grove-Ultrasonic_Ranger#With_TI_LaunchPad)
+*   [9. 超声波测距传感器](/cn/Grove-Ultrasonic_Ranger#With_TI_LaunchPad)
 
-*   [10. 温湿度传感器 ](/Grove-TemperatureAndHumidity_Sensor) -->
+*   [10. 温湿度传感器 ](/cn/Grove-TemperatureAndHumidity_Sensor) -->
 
 
 ## 在线原理图查看器

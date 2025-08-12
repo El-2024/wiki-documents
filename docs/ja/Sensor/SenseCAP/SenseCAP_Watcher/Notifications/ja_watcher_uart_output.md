@@ -340,7 +340,7 @@ XIAO ESP32 シリーズボードにコードをアップロードするには、
 
    - **Seeed Studio XIAO ESP32C3** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started#software-setup)** を参照して追加を完了してください。
 
-   - **Seeed Studio XIAO ESP32S3** を使用する場合は、**[このチュートリアル](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
+   - **Seeed Studio XIAO ESP32S3** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
 
    - **Seeed Studio XIAO ESP32C6** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32c6_getting_started/)** を参照して追加を完了してください。
 

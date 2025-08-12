@@ -52,7 +52,7 @@ Grove - 串口蓝牙是一个易于使用的模块，兼容现有的 Grove Base 
 ![](https://files.seeedstudio.com/wiki/Grove-Serial_Bluetooth_v3.0/img/Grove_serial_bluetooth_4_.jpg.png)
 
 1. 打开 Arduino IDE，打开 File -> Examples -> Bluetooth_Shield_V2_Demo_Code -> Slave_led，然后您打开 Slave 的代码，同样按照上面的方式修改代码。
-2. 保存修改并点击 Upload 上传代码，如果您在如何启动 Arduino 方面有任何问题，请点击<a href="/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}> 这里 </font></span></a>获取帮助。
+2. 保存修改并点击 Upload 上传代码，如果您在如何启动 Arduino 方面有任何问题，请点击<a href="/cn/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}> 这里 </font></span></a>获取帮助。
 
 ### 检查结果
 

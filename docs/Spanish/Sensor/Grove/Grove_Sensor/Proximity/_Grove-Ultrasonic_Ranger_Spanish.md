@@ -46,7 +46,7 @@ No conectar el Módulo Grove - Ultrasónico en un lugar caliente, o podría ser 
 | Señal de Eco           | TTL                |
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Plataformas Compatibles
 
@@ -60,7 +60,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 ## Primeros Pasos
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
 
 ### Jugando con Arduino
 
@@ -92,8 +92,8 @@ Si no tienes la Shield Base - Grove, puedes conectar directamente el módulo Gro
 #### Software
 
 - **Paso 1.** Descarga la [ Librería UltrasonicRanger](https://github.com/Seeed-Studio/Grove_Ultrasonic_Ranger/archive/master.zip) desde GitHub.
-- **Paso 2.** Revisa [How to install library](http://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar la librería en Arduino.
-- **Paso 3.** Copia el código en el Arduino IDE y subelo. Si no sabes como cargar un código, por favor revisa [how to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 2.** Revisa [How to install library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar la librería en Arduino.
+- **Paso 3.** Copia el código en el Arduino IDE y subelo. Si no sabes como cargar un código, por favor revisa [how to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 ```
 #include "Ultrasonic.h"
@@ -150,7 +150,7 @@ La distancia al obstaculo de enfrente es:
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega soporte para Arduino, y arrastra un <em>main procedure</em> al área de trabajo.
 
 ¡Nota!:
-Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra bloques como en la siguiente imagen, o abre el archivo cdc que puede ser descargado al final de esta página.
 
@@ -183,7 +183,7 @@ Para el paso 3, puedes conectar el Grove - Ultrasónico a **cualquier puerto GPI
 
 #### Software
 
-- **Paso 1**. Sigue [Setting Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Sigue [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 - **Paso 2**. Descarga el archivo fuente clonando la librería grove.py.
 
 ```

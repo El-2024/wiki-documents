@@ -233,7 +233,7 @@ mS
 :::
 1. 您需要拥有一个 Raspberry Pi 和一个 GrovePi 或 GrovePi+。
 
-2. 您需要完成开发环境的配置，否则请参考 [这里](/GrovePi_Plus)。
+2. 您需要完成开发环境的配置，否则请参考 [这里](/cn/GrovePi_Plus)。
 
 3. 连接
 

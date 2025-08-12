@@ -7,7 +7,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/sensecraft-app/overview
 aliases:
-  - /sensecraft_app
+  - /cn/sensecraft_app
 last_update:
   date: 7/26/2024
   author: Jessie

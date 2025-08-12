@@ -990,7 +990,7 @@ reComputer R1000 メインボードには 2 つの Mini-PCIe スロットが搭�
 reComputer R1000-10 は、オンボード Wi-Fi/BLE バージョンを備えた CM4 によって駆動されており、CM4 と同じ Wi-Fi/BLE パラメータを提供します。詳細なパラメータ情報については、Raspberry Pi の公式ウェブサイトを参照してください。
 
 :::note
-reComputer R1000 の金属製ケースのため、Wi-Fi/BLE 信号が金属外装を通過するのが難しい場合があります。Wi-Fi/BLE 機能が必要な場合は、外部アンテナを購入し、[こちらの組み立て手順](/recomputer_r1000_assembly_guide/#assemble-wi-fible-antenna)を参照することをお勧めします。
+reComputer R1000 の金属製ケースのため、Wi-Fi/BLE 信号が金属外装を通過するのが難しい場合があります。Wi-Fi/BLE 機能が必要な場合は、外部アンテナを購入し、[こちらの組み立て手順](/ja/recomputer_r1000_assembly_guide/#assemble-wi-fible-antenna)を参照することをお勧めします。
 :::
 
 #### Wi-Fi に接続する
@@ -1088,12 +1088,12 @@ exit
 reComputer R1000 メインボードには 2 つの Mini-PCIe スロットが搭載されており、Mini-PCIe スロット 1 は USB プロトコルを使用する 4G モジュールをサポートします。Quectel の EC25 4G モジュールは、reComputer R1000 との互換性が完全にテストされています。
 
 :::note
-4G 機能が必要な場合は、対応する 4G モジュールと外部アンテナを購入する必要があります。[こちらの組み立て手順](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna)を参照してください。
+4G 機能が必要な場合は、対応する 4G モジュールと外部アンテナを購入する必要があります。[こちらの組み立て手順](/ja/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna)を参照してください。
 :::
 
 AT コマンドを使用して minicom 経由で 4G モジュールと対話するには、以下の手順に従ってください：
 
-**ステップ 1.** システムの電源を入れる前に、4G 対応の SIM カードを [SIM カードスロット](/recomputer_r/#sim-slot) に挿入してください。
+**ステップ 1.** システムの電源を入れる前に、4G 対応の SIM カードを [SIM カードスロット](/ja/recomputer_r/#sim-slot) に挿入してください。
 
 **ステップ 2.** ```lsusb``` を使用して EC25-EUX が検出されるか確認します。
 
@@ -1172,7 +1172,7 @@ import TabItem from '@theme/TabItem';
 
 <br />
 
-**ステップ 1.** [LoraWAN® Module Hardware assembly](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) ガイドを参照して、`WM1302 SPI LoraWAN® Module` を `LoraWAN® Mini PCIe スロット` に取り付けてください。このスロットには *`Lora`* のシルクスクリーンが見えるはずです。
+**ステップ 1.** [LoraWAN® Module Hardware assembly](/ja/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) ガイドを参照して、`WM1302 SPI LoraWAN® Module` を `LoraWAN® Mini PCIe スロット` に取り付けてください。このスロットには *`Lora`* のシルクスクリーンが見えるはずです。
 
 **ステップ 2.** コマンドラインで `sudo raspi-config` を入力して Raspberry Pi ソフトウェア設定ツールを開きます：
 
@@ -1246,7 +1246,7 @@ cd ~/sx1302_hal/packet_forwarder
     </a>
 </div>
 
-**ステップ 1.** [LoraWAN® Module Hardware assembly](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) ガイドを参照して、`WM1302 USB LoraWAN® Module` を `4G Mini PCIe スロット` に取り付けてください。このスロットには *`4G`* のシルクスクリーンが見えるはずです。
+**ステップ 1.** [LoraWAN® Module Hardware assembly](/ja/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) ガイドを参照して、`WM1302 USB LoraWAN® Module` を `4G Mini PCIe スロット` に取り付けてください。このスロットには *`4G`* のシルクスクリーンが見えるはずです。
 
 **ステップ 2.** コマンドラインで `sudo raspi-config` を入力して Raspberry Pi ソフトウェア設定ツールを開きます：
 
@@ -1321,7 +1321,7 @@ Mini-PCIe スロットは USB プロトコルを利用する Zigbee モジュー
 
 :::note
 Zigbee 機能が必要な場合は、対応する Zigbee モジュールと外部アンテナを購入する必要があることにご注意ください。
-[組み立て手順はこちらをクリックしてください](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna)。
+[組み立て手順はこちらをクリックしてください](/ja/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna)。
 :::
 
 #### Zigbee コーディネーターとして Zigbee モジュールを使用して reComputer R1000 をセットアップする：
@@ -1385,14 +1385,14 @@ sudo apt-get install cutecom
 reComputer R1000は、PoE電源モジュールを追加することでIEEE 802.3af標準をサポートする給電デバイスとして動作します。PoE機能を使用するには、デバイスを分解してPoEモジュールを取り付ける必要があります。
 
 :::note
-reComputer R1000はPoE電源供給をサポートしていますが、標準製品にはPoEモジュールがデフォルトで含まれていません。Seeedはバッチカスタマイズ注文向けにPoEのはんだ付けおよび組み立てサービスを提供できます。ただし、顧客がサンプルをテストする場合は、[PoEモジュールを自分ではんだ付けおよび組み立てる必要があります](/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module)。
+reComputer R1000はPoE電源供給をサポートしていますが、標準製品にはPoEモジュールがデフォルトで含まれていません。Seeedはバッチカスタマイズ注文向けにPoEのはんだ付けおよび組み立てサービスを提供できます。ただし、顧客がサンプルをテストする場合は、[PoEモジュールを自分ではんだ付けおよび組み立てる必要があります](/ja/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module)。
 :::
 
 ### M.2スロット
 
 reComputer R1000は、基板上の2つのMini-PCIeスロットの下にあるPCIeスロット（J62）を使用して、2280 NVMe SSDおよびAIアクセラレータ（Hailo）をサポートします。CM4のPCIeはGen2.0で、理論上の最大速度は5Gbpsです。Gen3.0以上のSSDを使用する場合、SSDの最大速度を達成できない可能性があります。テストの結果、SSDを搭載したreTerminal DMは、最大書き込み速度230MB/s、最大読み取り速度370MB/sを達成しました。どのSSDが互換性があるかわからない場合は、以下のアクセサリリストに従って購入できます。
 
-[組み立て手順はこちらをクリックしてください](/recomputer_r1000_assembly_guide/#assemble-ssd)。
+[組み立て手順はこちらをクリックしてください](/ja/recomputer_r1000_assembly_guide/#assemble-ssd)。
 
 <div class="table-center">
 
@@ -1435,7 +1435,7 @@ SSDカードには主に2つの用途があります：<br />
 TPMには、Trusted Computing Group (TCG) TPM 2.0仕様に準拠したInfineonのOPTIGA™ TPM SLB9670が搭載されています。この暗号化チップは、reComputer R1000に推奨されており、SPIインターフェースを備え、ボード上のJ13ポートに適用されます。これにより、プラットフォームの整合性のルートオブトラスト、リモート認証、および暗号化サービスが可能になります。
 
 :::note
-[組み立て手順はこちらをクリックしてください](/recomputer_r1000_assembly_guide/#assemble-tpm-20-module)。
+[組み立て手順はこちらをクリックしてください](/ja/recomputer_r1000_assembly_guide/#assemble-tpm-20-module)。
 :::
 
 TPM 2.0モジュールをデバイスに接続した場合、以下のコードを使用してTPM接続を確認できます。
@@ -1463,7 +1463,7 @@ UPSによって提供されるバックアップ時間は、システム負荷�
 
 :::note
 UPS機能については、詳細情報をお問い合わせください。アラーム信号はアクティブLOWです。
-[組み立て手順はこちらをクリックしてください](/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module)。
+[組み立て手順はこちらをクリックしてください](/ja/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module)。
 :::
 
 CPUとDC/AC電源間のGPIO25は、5V電源がダウンした際にCPUに警告を送るために使用されます。その後、CPUはスーパーキャパシタのエネルギーが枯渇する前にスクリプトで緊急処理を行い、`$ shutdown`を実行する必要があります。

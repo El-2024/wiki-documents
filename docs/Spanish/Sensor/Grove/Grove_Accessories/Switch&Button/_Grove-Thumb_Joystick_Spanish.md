@@ -32,7 +32,7 @@ Grove - Joystick de Pulgar es un módulo compatible con la linea Grove, el cual 
 | Valores de Salida Analógica（Coordenada Y） | 203  | 507     | 797  | \      |
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Plataformas Compatibles
 
@@ -46,7 +46,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 ## Primeros Pasos
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
 
 ### Jugando con Arduino
 
@@ -130,7 +130,7 @@ El valor de salidad del puerto analógico del Arduino puede ser transformado al 
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega soporte para Arduino, y arrastra un <em>main procedure</em> al área de trabajo.
 
 ¡Nota!:
-Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra bloques como en la siguiente imagen, o abre el archivo cdc que puede ser descargado al final de esta página.
 
@@ -163,7 +163,7 @@ Para el Paso 3, puedes conectar eFor step 3 you are able to connect the the thum
 
 #### Software
 
-- **Paso 1**. Sigue [Setting Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de Desarrollo.
+- **Paso 1**. Sigue [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de Desarrollo.
 - **Step 2**. Descarga el archivo fuente clonando la librería grove.py.
 
 ```

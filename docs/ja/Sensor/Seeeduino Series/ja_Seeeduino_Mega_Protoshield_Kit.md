@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://www.seeedstudio.com/images/large/product/protomega_LRG.jpg)
 
-これは、<a href="/Seeeduino_Mega" ><span><font size={"3"}> Seeeduino Mega</font></span></a>用の初めてのProtoshieldであり、<a href="/Seeeduino_V2.2" ><span><font size={"3"}> Seeeduino </font></span></a>、さらには<a href="/Arduino" ><span><font size={"3"}> Arduino </font></span></a>のすべてのピンをトップに引き出しました！このProtoshieldを使用することで、ユーザーは広いプロトタイピングエリアを見つけることができ、Xbeeをこのボードで使用してXbeeシールドにすることも可能です。
+これは、<a href="/ja/Seeeduino_Mega" ><span><font size={"3"}> Seeeduino Mega</font></span></a>用の初めてのProtoshieldであり、<a href="/ja/Seeeduino_V2.2" ><span><font size={"3"}> Seeeduino </font></span></a>、さらには<a href="/ja/Arduino" ><span><font size={"3"}> Arduino </font></span></a>のすべてのピンをトップに引き出しました！このProtoshieldを使用することで、ユーザーは広いプロトタイピングエリアを見つけることができ、Xbeeをこのボードで使用してXbeeシールドにすることも可能です。
 
 [画像の説明を入力](https://www.seeedstudio.com/seeeduino-mega-protoshield-kit-p-597.html?cPath=132_134)
 

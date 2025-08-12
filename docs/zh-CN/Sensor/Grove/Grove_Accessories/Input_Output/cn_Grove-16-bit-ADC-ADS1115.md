@@ -91,13 +91,13 @@ sku: 109020041
 #### 软件
 
 :::caution
-如果这是您第一次使用Arduino，我们强烈建议您在开始之前查看[Arduino入门指南](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/)。
+如果这是您第一次使用Arduino，我们强烈建议您在开始之前查看[Arduino入门指南](https://wiki.seeedstudio.com/cn/Getting_Started_with_Arduino/)。
 :::
 
 - **步骤1.** 从Github下载[Seeed Arduino ADS1115](https://github.com/Seeed-Studio/Seeed_Arduino_ADS1115)库。
 
 :::note
-参考如何安装库以[安装Arduino库](http://wiki.seeedstudio.com/How_to_install_Arduino_Library/)。
+参考如何安装库以[安装Arduino库](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/)。
 :::
 
 - **步骤2.** 重启Arduino IDE。通过以下路径打开**Seeed_Arduino_ADS1115**示例：**文件** → **示例** → **Grove - ADS1115** → **single_ended**。
@@ -162,7 +162,7 @@ void loop(void)
 }
 ```
 
-- **步骤 3.** 上传示例代码。如果您不知道如何上传代码，请查看 [如何上传代码](http://wiki.seeedstudio.com/Upload_Code/)。
+- **步骤 3.** 上传示例代码。如果您不知道如何上传代码，请查看 [如何上传代码](https://wiki.seeedstudio.com/cn/Upload_Code/)。
 
 - **步骤 4.** 打开 Arduino IDE 的 **串口监视器**，点击 **工具->串口监视器**，或者同时按下 ++ctrl+shift+m++ 键。将波特率设置为 **115200**。
 
@@ -212,7 +212,7 @@ Grove - 16-bit ADC(ADS1115) 的使用方法与 Raspberry Pi 的 4-Channel 16-Bit
 
 - **步骤 2.** 在 [**此处**](https://github.com/Seeed-Studio/Seeed_Arduino_Sketchbook/tree/master/examples/WioTerminal-ADS1115) 下载示例代码。
 
-- **步骤 3.** 上传示例代码。如果您不知道如何上传代码，请查看 [如何上传代码](http://wiki.seeedstudio.com/Upload_Code/)。
+- **步骤 3.** 上传示例代码。如果您不知道如何上传代码，请查看 [如何上传代码](https://wiki.seeedstudio.com/cn/Upload_Code/)。
 
 - **步骤 4.** 调整旋转角度传感器，您将在 Wio Terminal 的 LCD 屏幕上看到对应的电压：
 

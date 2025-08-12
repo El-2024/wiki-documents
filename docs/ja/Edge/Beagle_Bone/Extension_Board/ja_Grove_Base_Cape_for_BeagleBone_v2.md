@@ -104,7 +104,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### 推奨読書
 
-* [BeagleBone® Green](/BeagleBone_Green)
+* [BeagleBone® Green](/ja/BeagleBone_Green)
 
 * [BeagleBone® コミュニティ](https://beagleboard.org/)
 
@@ -172,7 +172,7 @@ function checkButton(x) {
 
 * [EAGLE回路図＆PCBファイルおよびPDF形式の回路図](https://files.seeedstudio.com/wiki/Grove_Base_Cape_for_BeagleBone_v2/res/Grove_Base_Cape_for_BeagleBone_v2.0_Schematics.zip)
 
-* [BeagleBone® Green](/BeagleBone_Green)
+* [BeagleBone® Green](/ja/BeagleBone_Green)
 
 * [BeagleBone® コミュニティ](https://beagleboard.org/)
 

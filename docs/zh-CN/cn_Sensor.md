@@ -56,24 +56,24 @@ last_update:
     </div>
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP 探头</font></div>
-            <a href="./Sensor/SenseCAP/SenseCAP_Probe/cn_Liquid-Level-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 液位检测</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 液位检测</font></span></a>
             <br/>
-            <a href="./Sensor/SenseCAP/SenseCAP_Probe/cn_Water-Leak-Detector" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 漏水报警</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Probe/Water-Leak-Detector" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 漏水报警</font></span></a>
             <br/>
-            <a href="./Sensor/SenseCAP/SenseCAP_Probe/cn_Industrial-ph-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 用于土壤条件和水质的pH计</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Probe/Industrial-ph-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 用于土壤条件和水质的pH计</font></span></a>
             <br/>
-            <a href="./Sensor/SenseCAP/SenseCAP_Probe/cn_Soil-Moisture-Temperature-EC-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 土壤湿度和温度探头</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Probe/Soil-Moisture-Temperature-EC-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 土壤湿度和温度探头</font></span></a>
             <br/>
-            <a href="./Sensor/SenseCAP/SenseCAP_Probe/cn_Soil-Moisture-Temperature-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 土壤湿度、温度和EC探头</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Probe/Soil-Moisture-Temperature-Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 土壤湿度、温度和EC探头</font></span></a>
             <br/>
-            <a href="./Sensor/SenseCAP/SenseCAP_Probe/cn_RS485_500cm_Ultrasonic_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> RS485 500cm 超声波液位传感器</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Probe/RS485_500cm_Ultrasonic_Sensor" target="_blank"><span><font color={'FFFFFF'} size={"2"}> RS485 500cm 超声波液位传感器</font></span></a>
     </div>
 </div>
 
 <div class="intro_container">
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP 多合一传感器</font></div>
-            <a href="/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/ORCH-S4-Weather-Station" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SenseCAP ORCH S4 - 温度、湿度、大气压力和光照</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/ORCH-S4-Weather-Station" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SenseCAP ORCH S4 - 温度、湿度、大气压力和光照</font></span></a>
             <br/>
             <a href="https://files.seeedstudio.com/products/101990784/SenseCAP%20ONE%20Compact%20Weather%20Sensor%20User%20Guide-v2.0.pdf" target="_blank"><span><font color={'FFFFFF'} size={"2"}> SenseCAP ONE 气象传感器系列用户指南 PDF 下载</font></span></a>
             <br/>
@@ -123,20 +123,20 @@ last_update:
 <div class="independent_container">
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP S2100 数据记录器</font></div>
-            <a href="./Sensor/SenseCAP/SenseCAP_Data_Logger/cn_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP S2100 LoRaWAN® 数据记录器介绍</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Data_Logger/Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP S2100 LoRaWAN® 数据记录器介绍</font></span></a>
             <br/>
-            <a href="./Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/cn_How_to_Configure_the_12V_RS485_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>为S2100数据记录器配置12V RS485传感器</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_12V_RS485_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>为S2100数据记录器配置12V RS485传感器</font></span></a>
             <br/>
-            <a href="./Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/cn_How_to_Configure_the_Analog_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>为S2100数据记录器配置模拟传感器</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_Analog_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>为S2100数据记录器配置模拟传感器</font></span></a>
             <br/>
-            <a href="./Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/cn_How_to_Configure_the_Counter&GPIO_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>为S2100数据记录器配置计数器和GPIO传感器</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_Counter&GPIO_Sensor_for_S2100_Data_Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>为S2100数据记录器配置计数器和GPIO传感器</font></span></a>
             <br/>
             <a href="/cn/Build-LoRaWAN-Sensors-SenseCAP-XIAO-Controller-Data-Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>使用SenseCAP S2110传感器构建器和SenseCAP数据记录器构建LoRaWAN®传感器</font></span></a>
             <br/>
     </div>
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP Sensor Hub 4G</font></div>
-            <a href="./Sensor/SenseCAP/SenseCAP_Data_Logger/cn_SenseCAP-Sensor-Hub-Data-Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP Sensor Hub 4G 数据记录器介绍</font></span></a>
+            <a href="/cn/Sensor/SenseCAP/SenseCAP_Data_Logger/SenseCAP-Sensor-Hub-Data-Logger" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP Sensor Hub 4G 数据记录器介绍</font></span></a>
             <br/>
             <a href="https://files.seeedstudio.com/products/114992170/Sensor%20Hub%204G%20Data%20Logger%20User%20Guide.pdf" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP Sensor Hub 4G 用户指南PDF下载</font></span></a>
             <br/>
@@ -159,28 +159,28 @@ last_update:
 <div class="independent_container">
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>Helium 平台网关</font></div>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/cn_SenseCAP_M1_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M1 快速入门</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M1 快速入门</font></span></a>
             <br/>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/cn_SenseCAP_M1_Local_Console" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M1 本地控制台</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Local_Console" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M1 本地控制台</font></span></a>
             <br/>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/cn_SenseCAP_M2_Data_Only_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 Data Only 快速入门</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 Data Only 快速入门</font></span></a>
             <br/>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/cn_M2_Local_Console" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 Data Only 本地控制台</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/M2_Local_Console" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 Data Only 本地控制台</font></span></a>
             <br/>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/cn_SenseCAP_M2_Light_Gateway_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 Light Gateway 快速入门</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 Light Gateway 快速入门</font></span></a>
             <br/>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/cn_SenseCAP_M2_Light_Gateway_FAQ" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 Light Gateway 常见问题</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_FAQ" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 Light Gateway 常见问题</font></span></a>
             <br/>
     </div>
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>多平台网关</font></div>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/cn_SenseCAP_M2_Multi_Platform_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 多平台网关概述</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M2 多平台网关概述</font></span></a>
             <br/>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/cn_Connect-M2-Multi-Platform-Gateway-to-AWS-IoT" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 连接 AWS 平台 </font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-AWS-IoT" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 连接 AWS 平台 </font></span></a>
             <br/>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/cn_Connect-M2-Multi-Platform-Gateway-to-The-Things-Network" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 连接 TTN 平台 </font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-The-Things-Network" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 连接 TTN 平台 </font></span></a>
             <br/>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/cn_Connect-M2-Multi-Platform-Gateway-to-ChirpStack" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 连接 ChirpStack 平台 </font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack" target="_blank"><span><font color={'FFFFFF'} size={"2"}> 连接 ChirpStack 平台 </font></span></a>
             <br/>
     </div>
 </div>
@@ -188,16 +188,16 @@ last_update:
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'left'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>Flux 平台网关</font></div>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/cn_SenseCAP_M4_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 Square 概述</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 Square 概述</font></span></a>
             <br/>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/cn_SenseCAP_M4_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 Square 快速入门</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Quick_Start" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 Square 快速入门</font></span></a>
             <br/>
-            <a href="./Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/cn_SenseCAP_M4_FAQ" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 Square 常见问题</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_FAQ" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP M4 Square 常见问题</font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'left'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>室外 / 室内网关</font></div>
-            <a href="./Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/cn_SenseCAP_LoRaWAN_Outdoor_Gateway_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP LoRaWAN® 室外网关</font></span></a>
+            <a href="/cn/Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/SenseCAP_LoRaWAN_Outdoor_Gateway_Overview" target="_blank"><span><font color={'FFFFFF'} size={"2"}>SenseCAP LoRaWAN® 室外网关</font></span></a>
             <br/>
             <a href="/cn/The-Things-Indoor-Gateway" target="_blank"><span><font color={'FFFFFF'} size={"2"}>The Things 室内网关</font></span></a>
             <br/>

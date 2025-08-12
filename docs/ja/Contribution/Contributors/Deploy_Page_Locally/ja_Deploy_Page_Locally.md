@@ -69,5 +69,5 @@ yarn start
 
 ### 7. 変更を加えたりファイルを追加したりできます！
 
-- [PRの完全な手順](/full_steps_pull_request)
-- [PRの簡易手順](/quick_pull_request)
+- [PRの完全な手順](/ja/full_steps_pull_request)
+- [PRの簡易手順](/ja/quick_pull_request)

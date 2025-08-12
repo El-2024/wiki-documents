@@ -819,7 +819,7 @@ Base64文字列をツールに貼り付けるだけで、デコードされた�
 
 SDK開発に興味のあるユーザーは、[sdio_app](https://github.com/Seeed-Studio/sscma-example-we2/tree/main/EPII_CM55M_APP_S/app/scenario_app/sdio_app)のような既存の例を参照できます。この例では、直接的なSDIO操作を示しており、カスタムプロジェクトを修正および実装するための出発点として役立ちます。
 
-SDKの力を活用することで、ユーザーはGrove Vision AI V2の可能性を最大限に引き出し、特定のニーズに合わせたソリューションを作成できます。詳細なガイダンスについては、[前のWikiページ](/grove_vision_ai_v2_himax_sdk)を参照してください。
+SDKの力を活用することで、ユーザーはGrove Vision AI V2の可能性を最大限に引き出し、特定のニーズに合わせたソリューションを作成できます。詳細なガイダンスについては、[前のWikiページ](/ja/grove_vision_ai_v2_himax_sdk)を参照してください。
 
 ## FAQとトラブルシューティング
 

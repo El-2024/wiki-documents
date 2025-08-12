@@ -372,7 +372,7 @@ Bug追踪是您提交在使用过程中发现的任何问题的地方。请写�
 
 ## 参见  
 
-[Bluetooth Bee 文档](/Bluetooth_Bee "Bluetooth_Bee") 展示了 **XBee®_Shield** 的使用方法。
+[Bluetooth Bee 文档](/cn/Bluetooth_Bee "Bluetooth_Bee") 展示了 **XBee®_Shield** 的使用方法。
 
 ## 外部链接  
 

@@ -15,13 +15,13 @@ last_update:
 本演示需要以下组件：
 
 <!-- 
-*   [Xadow 主板](/Xadow_Main_Board/)
+*   [Xadow 主板](/cn/Xadow_Main_Board/)
 
-*   [Xadow OLED](/Xado_OLED_128multiply64)
+*   [Xadow OLED](/cn/Xado_OLED_128multiply64)
 
 *   [Xadow 振动电机](https://wiki.seeedstudio.com/cn/Xadow_Vibrator_Motor/)
 
-*   [Xadow 加速度计](/Xadow_3_Aixs_Accelerometer/) 
+*   [Xadow 加速度计](/cn/Xadow_3_Aixs_Accelerometer/) 
 -->
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Acceleration_Detector/img/Untitled2.jpg)
@@ -30,7 +30,7 @@ last_update:
 
 *   使用 FFC 电缆将 Xadow 主板、Xadow OLED、Xadow 振动器和 Xadow 加速度计按相同方向连接。
 
-<!-- *   使用 Micro USB 电缆将 Xadow 主板连接到 PC。在上传代码之前，您需要安装 Xadow 驱动程序。请点击[这里](/Xadow_Main_Board#Get_Start_with_Xadow_Main_Board)了解具体操作。 -->
+<!-- *   使用 Micro USB 电缆将 Xadow 主板连接到 PC。在上传代码之前，您需要安装 Xadow 驱动程序。请点击[这里](/cn/Xadow_Main_Board#Get_Start_with_Xadow_Main_Board)了解具体操作。 -->
 
 *   当您看到“现在，您可以像使用其他 Arduino 板一样编程和使用 Xadow”时，表示您已完成准备工作。
 

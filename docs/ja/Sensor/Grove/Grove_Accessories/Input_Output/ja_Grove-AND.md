@@ -44,7 +44,7 @@ Grove-Mixer_Pack
 
 このGroveモジュールは以下のGroveキットシリーズの一部として提供されています：
 
-<!-- * [Grove Mixer Pack V2](/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
+<!-- * [Grove Mixer Pack V2](/ja/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
 
 なお、このGrove - ANDモジュールは上記のパックの一部としてのみ販売されており、Seeed Studio Bazaarでは単体での販売は行われていません。
 

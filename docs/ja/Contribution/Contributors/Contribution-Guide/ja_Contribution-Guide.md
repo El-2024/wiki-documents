@@ -20,20 +20,20 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## オプション 1: プルリクエストの完全な手順
 
-1. まず、[wikiプラットフォームページをローカルで構築する](/Deploy_Page_Locally)ことができることを確認してください。
+1. まず、[wikiプラットフォームページをローカルで構築する](/ja/Deploy_Page_Locally)ことができることを確認してください。
 2. その後、ローカルで変更を確認しながら、変更を加えたりファイルを追加したりできます。そして、私たちのリポジトリにプルリクエストを送信してください。
 
-- [プルリクエストの完全な手順](/full_steps_pull_request)
+- [プルリクエストの完全な手順](/ja/full_steps_pull_request)
 
 ## オプション 2: プルリクエストの簡易手順
 
 必要なファイルをすべてダウンロードし、Markdownファイルや画像を追加して、直接リポジトリにプルリクエストを送信することができます。
 
-- [プルリクエストの簡易手順](/quick_pull_request)
+- [プルリクエストの簡易手順](/ja/quick_pull_request)
 
 ## 有用なリンク:
 
-- [貢献者プログラムの紹介](/Contributor)
+- [貢献者プログラムの紹介](/ja/Contributor)
 - [貢献者の紹介ページ](/contributors)
 - [GitHubでのアサインメント](https://github.com/orgs/Seeed-Studio/projects/6)
 

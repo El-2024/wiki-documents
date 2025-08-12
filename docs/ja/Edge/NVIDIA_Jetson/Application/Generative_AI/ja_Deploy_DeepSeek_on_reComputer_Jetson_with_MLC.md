@@ -24,7 +24,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 DeepSeekは、効率性、精度、リアルタイム処理に最適化された最先端のAIモデルスイートです。エッジコンピューティング向けに高度に最適化されており、Jetsonデバイス上で高速で低遅延のAI推論を直接実現し、クラウドコンピューティングへの依存を減らしながら性能を最大化します。
 
-[以前のWiki](/deploy_deepseek_on_jetson)では、Jetson上でDeepSeekを展開するための簡単なガイドを提供しました。しかし、展開されたモデルは最適な推論速度を達成できませんでした。
+[以前のWiki](/ja/deploy_deepseek_on_jetson)では、Jetson上でDeepSeekを展開するための簡単なガイドを提供しました。しかし、展開されたモデルは最適な推論速度を達成できませんでした。
 
 このWikiでは、[DeepSeek](https://www.deepseek.com/)をreComputer Jetsonデバイス上で[MLC](https://llm.mlc.ai/)を使用して効率的なエッジAI推論を実現するためのステップバイステップガイドを提供します。
 

@@ -106,31 +106,31 @@ Starter bundle harness 是一块用于保护 Grove Starter Bundle 组件免受�
 
 *   2轴指南针模块
 
-*   [Grove - I2C 3轴加速度计](/Grove-3-Axis_Digital_Accelerometer-400g/ "Grove - I2C 3-axis Accelerometer")
+*   [Grove - I2C 3轴加速度计](/cn/Grove-3-Axis_Digital_Accelerometer-400g/ "Grove - I2C 3-axis Accelerometer")
 
-*   [Grove - 3轴陀螺仪](/Grove-3-Axis_Digital_Gyro/ "Grove - 3-axis Gyro")
+*   [Grove - 3轴陀螺仪](/cn/Grove-3-Axis_Digital_Gyro/ "Grove - 3-axis Gyro")
 
-*   [Grove - 3轴指南针](/Grove-3-Axis_Compass_V1.0/ "Grove_-_3-axis_Compass")
+*   [Grove - 3轴指南针](/cn/Grove-3-Axis_Compass_V1.0/ "Grove_-_3-axis_Compass")
 
-*   [Grove - 光传感器](/Grove-Light_Sensor/ "Grove - Light Sensor")
+*   [Grove - 光传感器](/cn/Grove-Light_Sensor/ "Grove - Light Sensor")
 
-*   [Grove - 触摸传感器](/Grove-Touch_Sensor/ "Grove - Touch Sensor")
+*   [Grove - 触摸传感器](/cn/Grove-Touch_Sensor/ "Grove - Touch Sensor")
 
-*   [Grove - 温湿度传感器](/Grove-TemperatureAndHumidity_Sensor/ "Grove - Temperature and Humidity Sensor")
+*   [Grove - 温湿度传感器](/cn/Grove-TemperatureAndHumidity_Sensor/ "Grove - Temperature and Humidity Sensor")
 
-<!-- *   [Grove - 磁性开关](/Grove-Magnetic_Switch "Grove - Magnetic Switch") -->
+<!-- *   [Grove - 磁性开关](/cn/Grove-Magnetic_Switch "Grove - Magnetic Switch") -->
 
-*   [Grove - 酒精传感器](/Grove-Alcohol_Sensor/ "Grove - Alcohol Sensor")
+*   [Grove - 酒精传感器](/cn/Grove-Alcohol_Sensor/ "Grove - Alcohol Sensor")
 
-*   [Grove - 串口LCD](/Grove-Serial_LCD_V1.0/ "Grove - Serial LCD")
+*   [Grove - 串口LCD](/cn/Grove-Serial_LCD_V1.0/ "Grove - Serial LCD")
 
-*   [Grove - RTC](/Grove-RTC/ "Grove - RTC")
+*   [Grove - RTC](/cn/Grove-RTC/ "Grove - RTC")
 
-*   [Grove - 电流传感器](/Grove-Electricity_Sensor/ "Grove - Electricity Sensor")
+*   [Grove - 电流传感器](/cn/Grove-Electricity_Sensor/ "Grove - Electricity Sensor")
 
-*   [Grove - 声音传感器](/Grove-Sound_Sensor/    "Grove - Sound Sensor")
+*   [Grove - 声音传感器](/cn/Grove-Sound_Sensor/    "Grove - Sound Sensor")
 
-*   [Grove - 基础扩展板](/Base_Shield_V2/ "Grove - Base Shield")
+*   [Grove - 基础扩展板](/cn/Base_Shield_V2/ "Grove - Base Shield")
 
 ## 技术支持与产品讨论
 

@@ -30,11 +30,11 @@ Groveは適度に調整された、すぐに使えるツールセットです。
 
 これがあなたにとって初めてのArduinoの使用である場合、以下の手順を完了する必要があります：
 
-<!-- *   [Getting Started with Arduino](/Getting_Started_with_Arduino)
+<!-- *   [Getting Started with Arduino](/ja/Getting_Started_with_Arduino)
 
-*   [Install your microcontroller](/Getting_Started_with_Seeeduino)
+*   [Install your microcontroller](/ja/Getting_Started_with_Seeeduino)
 
-*   [Download and import the Grove - Starter Kit Sketchbook](/How_To_Use_Sketchbook) -->
+*   [Download and import the Grove - Starter Kit Sketchbook](/ja/How_To_Use_Sketchbook) -->
 
 Grove - Starter Kit Sketchbookのダウンロードアドレスは[こちら](https://github.com/Seeed-Studio/Sketchbook_Starter_Kit_V2.0)です。
 
@@ -83,7 +83,7 @@ Groveベースシールドボードから始めましょう。「Grove - Base Sh
 
 デジタルポートの下には4つのI2C Groveポートがあります。I2Cは、SCLとSDAの2本のワイヤーを介してデータを転送する低速バスプロトコルです。SCLはI2Cバス上でのデータ転送を同期するためのクロックラインです。SDAはデータラインです。
 
-<!-- For detailed information on how to use your Grove – Base Shield, go to [Base Shield V2](/Base_Shield_V2). -->
+<!-- For detailed information on how to use your Grove – Base Shield, go to [Base Shield V2](/ja/Base_Shield_V2). -->
 
 ####  Grove - LCD RGB バックライト
 
@@ -127,7 +127,7 @@ File -&gt; Sketchbook -&gt; Grove_RGB_Backlight_LCD -&gt; HelloWorld
 主電源電圧を扱う際は十分にご注意ください - 疑問がある場合は、ライセンスを持つ電気技師などの専門家に助けを求めてください。
 </font>
 
-<!-- For detailed information on how to use your Grove – Relay, you can go to [Grove – Relay page](/Grove-Relay). -->
+<!-- For detailed information on how to use your Grove – Relay, you can go to [Grove – Relay page](/ja/Grove-Relay). -->
 
 ####  Grove – ブザー
 
@@ -147,7 +147,7 @@ Grove – Buttonのコードを使用して、ボタンを押すとブザーが�
 
 圧電ブザーは実際にどのように動作するのでしょうか？通常、各圧電ブザーには2つのセラミックウェーハがあります。異なる電圧が与えられると、それらは引き合ったり反発したりします。これらのウェーハの動きが空気の振動（つまり、音）を引き起こします。振動の周波数が変わると、音の周波数もそれに応じて変わります。
 
-<!-- For detailed information on how to use your Grove - Buzzer, go to [Grove - Buzzer page](/Grove-Buzzer) -->
+<!-- For detailed information on how to use your Grove - Buzzer, go to [Grove - Buzzer page](/ja/Grove-Buzzer) -->
 
 ####   Grove - サウンドセンサー
 
@@ -165,7 +165,7 @@ File -&gt; Sketchbook -&gt; Grove_Sound_Sensor
 
 エレクトレットマイクロフォンはすべての周波数の音の強度を収集しますが、ポテンショメーターがドアマンの役割を果たすことができます。例えば、シャフトを完全に時計回りに回転させると、ポテンショメーターはすべてを通すことができます。完全に反時計回りに回転させると、何も通さなくなります。
 
-<!-- For a detailed information on how to use your Grove - Sound Sensor, go to [Grove - Sound Sensor page](/Grove-Sound_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Sound Sensor, go to [Grove - Sound Sensor page](/ja/Grove-Sound_Sensor) -->
 
 ####   Grove - タッチセンサー
 
@@ -183,7 +183,7 @@ Grove – Buttonのコードがこのモジュールで動作します。次の�
 
 これは瞬間接触ボタンの代替品です。Grove – Touch Sensorは底部の円形（非塗装）領域の静電容量の変化を検出します。指がこの領域に近いほど、静電容量の変化が大きくなります。指とセンサーの間に紙があっても、依然として確実に機能します。
 
-<!-- For detailed information on how to use your Grove - Touch Sensor, go to [Grove - Touch Sensor page](/Grove-Touch_Sensor). -->
+<!-- For detailed information on how to use your Grove - Touch Sensor, go to [Grove - Touch Sensor page](/ja/Grove-Touch_Sensor). -->
 
 ####   Grove - 回転角度センサー
 
@@ -203,7 +203,7 @@ File -&gt; Sketchbook -&gt; Grove_Rotary_Angle_Sensor
 
 回転ポテンショメーターは回転エンコーダーと非常に似て見えますが、同じものではありません。回転ポテンショメーターは本質的に、円形形状で構成されたスライドポテンショメーターです。スライド接触によって使用されている抵抗要素の割合を、アナログ方式で報告します。
 
-<!-- For a detailed information on how to use your Grove - Rotary Angle Sensor,you can go to [Grove - Rotary Angle Sensor page](/Grove-Rotary_Angle_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Rotary Angle Sensor,you can go to [Grove - Rotary Angle Sensor page](/ja/Grove-Rotary_Angle_Sensor) -->
 
 ####   Grove – 温度センサー
 
@@ -223,7 +223,7 @@ File -&gt; Sketchbook -&gt; Grove_Temperature_Sensor。
 
 Grove – Temperature Sensorは環境温度を検出するために使用されます。
 
-<!-- For a detailed information on how to use your Grove - Temperature Sensor,you can go to [Grove - Temperature Sensor](/Grove-Temperature_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Temperature Sensor,you can go to [Grove - Temperature Sensor](/ja/Grove-Temperature_Sensor) -->
 
 ####   Grove - LED
 
@@ -243,7 +243,7 @@ File -&gt; Sketchbook -&gt; Grove_LED
 
 3色のLED電球をご用意していますので、小さなGrove – LED SocketのLEDを交換することで、お望みの色を得ることができます。LEDは電球の平坦な側にカソードがあり、丸い側にアノードがあります。LEDが正常に動作するためには、アノードがソケットの「+」サインに対応するように取り付ける必要があります。
 
-<!-- For a detailed information on how to use your Grove - LED,you can go to [Grove - Red LED](/Grove-Red_LED) -->
+<!-- For a detailed information on how to use your Grove - LED,you can go to [Grove - Red LED](/ja/Grove-Red_LED) -->
 
 ####   Grove - 光センサー
 
@@ -263,7 +263,7 @@ File -&gt; Sketchbook -&gt; Grove_Light_Sensor
 
 アナログ光センサーの出力は0から1023の範囲ですが、出力は周囲光強度に対して線形ではありません。
 
-<!-- For a detailed information on how to use your Grove - Light Sensor,you can go to [Grove - Light Sensor](/Grove-Light_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Light Sensor,you can go to [Grove - Light Sensor](/ja/Grove-Light_Sensor) -->
 
 ####   Grove – ボタン
 

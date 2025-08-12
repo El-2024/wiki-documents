@@ -104,7 +104,7 @@ XIAO向けに設計された高度な**mmWaveセンサーモジュール**を紹
 
 :::info 注意
 
-MR60BHA2はデフォルトで[XIAO ESP32C6](/xiao_esp32c6_getting_started)にプリインストールされていますが、他の様々なマイクロコントローラーとも通信および統合が可能です。
+MR60BHA2はデフォルトで[XIAO ESP32C6](/ja/xiao_esp32c6_getting_started)にプリインストールされていますが、他の様々なマイクロコントローラーとも通信および統合が可能です。
 
 :::
 

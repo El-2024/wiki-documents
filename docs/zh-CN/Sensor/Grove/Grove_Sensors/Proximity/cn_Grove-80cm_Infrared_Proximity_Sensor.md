@@ -186,7 +186,7 @@ last_update:
 1.你应该有一个树莓派和一个grovepi或grovepi+。
 
 2.你应该已经完成了开发环境的配置。
-否则请参考[这里](/GrovePi_Plus/)。
+否则请参考[这里](/cn/GrovePi_Plus/)。
 
 3.连接
 

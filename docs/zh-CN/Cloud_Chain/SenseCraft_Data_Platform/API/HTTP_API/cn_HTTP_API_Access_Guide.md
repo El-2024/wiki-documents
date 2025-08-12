@@ -7,7 +7,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/sensecraft-data-platform/api/http-api/http-api-access-guide
 aliases:
-  - /Cloud_Chain/SenseCAP_API/HTTP_API/HTTP_API_Access_Guide
+  - /cn/Cloud_Chain/SenseCAP_API/HTTP_API/HTTP_API_Access_Guide
 last_update:
   date: 1/13/2023
   author: shuxu hu

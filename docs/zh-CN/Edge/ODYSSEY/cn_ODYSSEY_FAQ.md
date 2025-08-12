@@ -12,35 +12,35 @@ last_update:
 
 #### Q1: BIOS 相关问题排查（包括 WiFi/蓝牙/风扇/自动开机/启动保护/GPIO）
 
-详情请点击 [这里](/Troubleshooting_BIOS-Related_Issues)
+详情请点击 [这里](/cn/Troubleshooting_BIOS-Related_Issues)
 
 #### Q2: Arduino IDE 无法识别 ODYSSEY - X86J4105/X86J4125 的板载微控制器
 
-详情请点击 [这里](/not_recognize-onboard-microcontroller)
+详情请点击 [这里](/cn/not_recognize-onboard-microcontroller)
 
 #### Q3: 重新安装原始 Windows 系统
 
-详情请点击 [这里](/reinstall_the_Original_Windows)
+详情请点击 [这里](/cn/reinstall_the_Original_Windows)
 
 #### Q4: ODYSSEY - X86J4105 电源按钮的不同状态
 
-详情请点击 [这里](/Power_button)
+详情请点击 [这里](/cn/Power_button)
 
 #### Q5: 风扇未启动
 
-详情请点击 [这里](/Turn_on_the_Fan)
+详情请点击 [这里](/cn/Turn_on_the_Fan)
 
 #### Q6: 风扇针脚定义
 
-详情请点击 [这里](/Fan_Pinout)
+详情请点击 [这里](/cn/Fan_Pinout)
 
 #### Q7: ODYSSEY - X86J4105 无法启动
 
-详情请点击 [这里](/power_up)
+详情请点击 [这里](/cn/power_up)
 
 #### Q8: Odyssey 是否支持 TPM？
 
-详情请点击 [这里](/TPM)
+详情请点击 [这里](/cn/TPM)
 
 # 技术支持
 

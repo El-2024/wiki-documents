@@ -165,7 +165,7 @@ RePhone を**デフォルト**にリセットするには：
 
     [![](https://files.seeedstudio.com/wiki/Arduino_IDE_for_RePhone_Kit/img/RePhone_Kit_Create_VXP.png)](https://github.com/WayenWeng/RePhone_Create_Kit_VXP/)
 
-<!-- 3. [RePhone Mass Storage Mode](/Xadow_GSMPlusBLE#Mass_Storage_Mode) に入ります -->
+<!-- 3. [RePhone Mass Storage Mode](/ja/Xadow_GSMPlusBLE#Mass_Storage_Mode) に入ります -->
 
 4. "RePhone Create Kit VXP" という名前のファイル内のすべてを RePhone の 5MB マスストレージにコピーします。
 

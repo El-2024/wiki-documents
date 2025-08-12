@@ -846,7 +846,7 @@ USB 2.0 Type-A ポートが2つあり、フラッシュドライブ、ウェブ�
 
 <div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/usb-c.png" /></div>
 
-USB Type-C は USB 2.0 ポートで、シリアルデバッグまたは OS イメージのフラッシュに使用されます（ブートスイッチの位置に依存します）。OS のフラッシュについては、[Flashing OS Wiki ページ](/reterminal-dm-flash-OS) を参照してください。
+USB Type-C は USB 2.0 ポートで、シリアルデバッグまたは OS イメージのフラッシュに使用されます（ブートスイッチの位置に依存します）。OS のフラッシュについては、[Flashing OS Wiki ページ](/ja/reterminal-dm-flash-OS) を参照してください。
 
 ### SIMカードスロット
 
@@ -1188,7 +1188,7 @@ reTerminal DM のメインボードには CSI カメラインターフェース�
 - EC25-EUX 4G モジュール x1
 - SIM カード x1
 
-**ステップ 1.** [EC25 4G モジュールのハードウェア組み立て](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) ガイドを参照して、`EC25 4G モジュール` を `4G/LTE PCIe スロット` にインストールしてください。このスロットには *`4G/LTE`* のシルクスクリーンが表示されます。また、システムを起動する前に [SIM カードスロット](/reterminal-dm/#sim-card-slot) に 4G 対応の SIM カードを挿入してください。
+**ステップ 1.** [EC25 4G モジュールのハードウェア組み立て](/ja/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) ガイドを参照して、`EC25 4G モジュール` を `4G/LTE PCIe スロット` にインストールしてください。このスロットには *`4G/LTE`* のシルクスクリーンが表示されます。また、システムを起動する前に [SIM カードスロット](/ja/reterminal-dm/#sim-card-slot) に 4G 対応の SIM カードを挿入してください。
 
 **ステップ 2.** EC25-EUX が検出されるかどうかを以下のコマンドで確認してください。
 
@@ -1263,7 +1263,7 @@ import TabItem from '@theme/TabItem';
     </a>
 </div>
 
-**ステップ 1.** [LoraWAN® モジュールのハードウェア組み立て](/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna)ガイドを参照して、`WM1302 SPI LoraWAN® モジュール`を`LoraWAN® Mini PCIeスロット`に取り付けます。このスロットには*`Lora`*のシルクスクリーンが表示されます。必要なパッケージ（build-essential: DEBパッケージをソースコードから作成するために必要なツールを含むDebianパッケージ）をインストールします。
+**ステップ 1.** [LoraWAN® モジュールのハードウェア組み立て](/ja/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna)ガイドを参照して、`WM1302 SPI LoraWAN® モジュール`を`LoraWAN® Mini PCIeスロット`に取り付けます。このスロットには*`Lora`*のシルクスクリーンが表示されます。必要なパッケージ（build-essential: DEBパッケージをソースコードから作成するために必要なツールを含むDebianパッケージ）をインストールします。
 
 ```sh
 sudo apt update
@@ -1325,7 +1325,7 @@ $ ./lora_pkt_fwd -c global_conf.json.sx1250.US915
     </a>
 </div>
 
-**ステップ 1.** [LoraWAN® モジュールのハードウェア組み立て](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna)ガイドを参照して、`WM1302 USB LoraWAN® モジュール`を`4G Mini PCIeスロット`に取り付けます。このスロットには*`4G`*のシルクスクリーンが表示されます。
+**ステップ 1.** [LoraWAN® モジュールのハードウェア組み立て](/ja/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna)ガイドを参照して、`WM1302 USB LoraWAN® モジュール`を`4G Mini PCIeスロット`に取り付けます。このスロットには*`4G`*のシルクスクリーンが表示されます。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/dmlora.png"/></div>
 

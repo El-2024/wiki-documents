@@ -25,21 +25,21 @@ last_update:
     </tr>
     <tr className="even">
       <td><div style={{}}>
-          <a href="/Grove-Mini_I2C_Motor_Driver_v1.0" title="Grove - I2C 电机驱动 V1.0">Grove - I2C 电机驱动 V1.0</a>
+          <a href="/cn/Grove-Mini_I2C_Motor_Driver_v1.0" title="Grove - I2C 电机驱动 V1.0">Grove - I2C 电机驱动 V1.0</a>
         </div></td>
       <td><div style={{}}>
-          <a href="/Grove-I2C_Motor_Driver_V1.2" title="Grove - I2C 电机驱动 V1.2">Grove - I2C 电机驱动 V1.2</a>
+          <a href="/cn/Grove-I2C_Motor_Driver_V1.2" title="Grove - I2C 电机驱动 V1.2">Grove - I2C 电机驱动 V1.2</a>
         </div></td>
       <td><div style={{}}>
-          <a href="/Grove-I2C_Motor_Driver_V1.3" title="Grove - I2C 电机驱动 V1.3">Grove - I2C 电机驱动 V1.3</a>
+          <a href="/cn/Grove-I2C_Motor_Driver_V1.3" title="Grove - I2C 电机驱动 V1.3">Grove - I2C 电机驱动 V1.3</a>
         </div></td>
     </tr>
   </tbody>
 </table> -->
 
 <!-- 此 Markdown 文件来源于 https://www.seeedstudio.com/wiki/Grove_-_I2C_Motor_Driver -->
-- [Grove-I2C 电机驱动 V1.2](/Grove-I2C_Motor_Driver_V1.2)
-- [Grove-I2C 电机驱动 V1.3](/Grove-I2C_Motor_Driver_V1.3)
+- [Grove-I2C 电机驱动 V1.2](/cn/Grove-I2C_Motor_Driver_V1.2)
+- [Grove-I2C 电机驱动 V1.3](/cn/Grove-I2C_Motor_Driver_V1.3)
 
 ## 技术支持与产品讨论
 

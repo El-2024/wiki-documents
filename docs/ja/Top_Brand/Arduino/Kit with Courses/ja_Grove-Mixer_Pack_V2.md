@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/U8GUZNb9TVZ14lLRW6ialXEV.jpg)
 
-<!-- [Grove - Mixer Pack V2](https://www.seeedstudio.com/depot/Mixer-Pack-V2Electronic-blockswithout-Arduinoplug-and-play-system-p-1867.html?cPath=14) は、[Seeed Studio](https://www.seeedstudio.com/depot/) によって開発された [Grove System](/Grove_System "GROVE System") の13種類の選りすぐりのGroveモジュールで構成された、スタンドアロンでレゴのような電子キットです。これらのミニモジュールは、[Seeeduino](/Seeeduino "Seeeduino") や [Arduino](/Arduino "Main Page") のようなマイクロコントローラーボードを必ずしも使用せずに、電子回路やプロトタイプを非常に迅速に作成するためのビルディングブロックとして使用できます。 -->
+<!-- [Grove - Mixer Pack V2](https://www.seeedstudio.com/depot/Mixer-Pack-V2Electronic-blockswithout-Arduinoplug-and-play-system-p-1867.html?cPath=14) は、[Seeed Studio](https://www.seeedstudio.com/depot/) によって開発された [Grove System](/ja/Grove_System "GROVE System") の13種類の選りすぐりのGroveモジュールで構成された、スタンドアロンでレゴのような電子キットです。これらのミニモジュールは、[Seeeduino](/ja/Seeeduino "Seeeduino") や [Arduino](/ja/Arduino "Main Page") のようなマイクロコントローラーボードを必ずしも使用せずに、電子回路やプロトタイプを非常に迅速に作成するためのビルディングブロックとして使用できます。 -->
 
 この13種類のGroveモジュールは、センサーモジュール、アクチュエータ、ロジックおよび電源モジュールの組み合わせで、非常に使いやすく、作業が楽しいものです。数分で新しい回路を設計し、機能的なプロトタイプを組み立てることができます。
 
@@ -39,43 +39,43 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 - **13種類のGroveモジュール：**
 
-<!-- 1.  1x [Grove - DC Jack Power](/Grove-DC_Jack_Power "Grove - DC Jack Power")
+<!-- 1.  1x [Grove - DC Jack Power](/ja/Grove-DC_Jack_Power "Grove - DC Jack Power")
 
-2.  1x [Grove - Recorder](/Grove_Recorder "Grove - Recorder")
+2.  1x [Grove - Recorder](/ja/Grove_Recorder "Grove - Recorder")
 
-3.  1x [Grove - LED String Light](/Grove-LED_String_Light "Grove - LED String Light")
+3.  1x [Grove - LED String Light](/ja/Grove-LED_String_Light "Grove - LED String Light")
 
-4.  1x [Grove - Mini Fan](/Grove-Mini_Fan "Grove - Mini Fan")
+4.  1x [Grove - Mini Fan](/ja/Grove-Mini_Fan "Grove - Mini Fan")
 
-5.  1x [Grove - NOT](/Grove-NOT "Grove - NOT")
+5.  1x [Grove - NOT](/ja/Grove-NOT "Grove - NOT")
 
-6.  1x [Grove - OR](/Grove-OR "Grove - OR")
+6.  1x [Grove - OR](/ja/Grove-OR "Grove - OR")
 
-7.  1x [Grove - AND](/Grove-AND "Grove - AND")
+7.  1x [Grove - AND](/ja/Grove-AND "Grove - AND")
 
-8.  1x [Grove - Buzzer](/Grove-Buzzer "Grove - Buzzer")
+8.  1x [Grove - Buzzer](/ja/Grove-Buzzer "Grove - Buzzer")
 
-9.  1x [Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor")
+9.  1x [Grove - Light Sensor](/ja/Grove-Light_Sensor "Grove - Light Sensor")
 
-10.  1x [Grove - Red LED](/Grove-Red_LED "Grove - Red LED")
+10.  1x [Grove - Red LED](/ja/Grove-Red_LED "Grove - Red LED")
 
-11.  1x [Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor")
+11.  1x [Grove - Sound Sensor](/ja/Grove-Sound_Sensor "Grove - Sound Sensor")
 
-12.  1x [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")
+12.  1x [Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")
 
-13.  1x [Grove - Button](/Grove-Button "Grove - Button") -->
+13.  1x [Grove - Button](/ja/Grove-Button "Grove - Button") -->
 
 *   **Groveモジュールアクセサリー：**
 
-<!-- 1.  1x DCモーター（[Grove - Mini Fan](/Grove-Mini_Fan "Grove - Mini Fan") モジュールと一緒に使用）
+<!-- 1.  1x DCモーター（[Grove - Mini Fan](/ja/Grove-Mini_Fan "Grove - Mini Fan") モジュールと一緒に使用）
 
 2.  1x カラフルファン（DCモーターに取り付け可能）
 
-3.  1x 小型オーディオスピーカー（[Grove - Recorder](/Grove_Recorder "Grove - Recorder") モジュールと一緒に使用）
+3.  1x 小型オーディオスピーカー（[Grove - Recorder](/ja/Grove_Recorder "Grove - Recorder") モジュールと一緒に使用）
 
-4.  1x LEDストリングライト（[Grove - LED String Light](/Grove-LED_String_Light "Grove - LED String Light") モジュールと一緒に使用）
+4.  1x LEDストリングライト（[Grove - LED String Light](/ja/Grove-LED_String_Light "Grove - LED String Light") モジュールと一緒に使用）
 
-5.  7x [Groveケーブル](/Grove_System/#grove-cables "GROVE System")（3x 200mm、3x 50mm、1x ブランチケーブル） -->
+5.  7x [Groveケーブル](/ja/Grove_System/#grove-cables "GROVE System")（3x 200mm、3x 50mm、1x ブランチケーブル） -->
 
 ## 使用方法
 
@@ -150,9 +150,9 @@ Groveモジュールを使用してGrove回路を構築するには、以下の3
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/Grove-or-usage.jpg)
 
-<!-- [Grove - OR](/Grove-OR "Grove - OR") ロジックゲートの使用 -->
+<!-- [Grove - OR](/ja/Grove-OR "Grove - OR") ロジックゲートの使用 -->
 
-<!-- 典型的な使用例：_ 2つのセンサー入力のうち1つが出力をトリガーする必要がある場合に使用します。例えば、音楽が流れているとき**または**手動でスイッチをオンにしたときにLEDライトを点灯させる回路を作りたいとします。このような回路を作るには、[Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor")と[Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")という2つの入力モジュールが必要です。これらの入力モジュールを[Grove - OR](/Grove-OR "Grove - OR")ゲートモジュールの左側に接続します。このロジックゲートモジュールの出力は電源モジュールの左側に接続し、右側はLEDライトモジュール（[Grove - Red LED](/Grove-Red_LED "Grove - Red LED")または[Grove - LED String Light](/Grove-LED_String_Light "Grove - LED String Light")）に接続します。回路をオンにすると、音楽や音がサウンドセンサーによって検出された場合**または**[Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")のスライダーを最小電圧（GND）から最大電圧（VCC）に手動で動かした場合にLEDライトが点灯することがわかります。さらに、[Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")がLEDライトにHIGH信号を供給している場合、サウンドセンサーからの入力が何であれ、LEDライトは常に点灯し続けます。一方、[Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")がLEDライトにLOW信号を供給している場合、LEDライトはサウンドセンサーの出力がHIGHまたはLOWであるかに基づいて点滅します。 -->
+<!-- 典型的な使用例：_ 2つのセンサー入力のうち1つが出力をトリガーする必要がある場合に使用します。例えば、音楽が流れているとき**または**手動でスイッチをオンにしたときにLEDライトを点灯させる回路を作りたいとします。このような回路を作るには、[Grove - Sound Sensor](/ja/Grove-Sound_Sensor "Grove - Sound Sensor")と[Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")という2つの入力モジュールが必要です。これらの入力モジュールを[Grove - OR](/ja/Grove-OR "Grove - OR")ゲートモジュールの左側に接続します。このロジックゲートモジュールの出力は電源モジュールの左側に接続し、右側はLEDライトモジュール（[Grove - Red LED](/ja/Grove-Red_LED "Grove - Red LED")または[Grove - LED String Light](/ja/Grove-LED_String_Light "Grove - LED String Light")）に接続します。回路をオンにすると、音楽や音がサウンドセンサーによって検出された場合**または**[Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")のスライダーを最小電圧（GND）から最大電圧（VCC）に手動で動かした場合にLEDライトが点灯することがわかります。さらに、[Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")がLEDライトにHIGH信号を供給している場合、サウンドセンサーからの入力が何であれ、LEDライトは常に点灯し続けます。一方、[Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")がLEDライトにLOW信号を供給している場合、LEDライトはサウンドセンサーの出力がHIGHまたはLOWであるかに基づいて点滅します。 -->
 
 #### Grove - ANDモジュール
 
@@ -160,9 +160,9 @@ Groveモジュールを使用してGrove回路を構築するには、以下の3
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mixer_Pack_V2/img/Grove-and-usage.jpg)
 
-<!-- [Grove - AND](/Grove-AND "Grove - AND") ロジックゲートの使用 -->
+<!-- [Grove - AND](/ja/Grove-AND "Grove - AND") ロジックゲートの使用 -->
 
-<!-- 典型的な使用例：_ 2つのセンサー入力が出力をトリガーする必要がある場合に使用します。例えば、音楽が流れているとき**かつ**暗闇でのみLEDライトを点灯させる回路を作りたいとします。このような回路を作るには、[Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor")と[Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor")という2つの入力モジュールが必要です（[Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor")モジュールは、暗闇でのみライトを点灯させるために[Grove - NOT](/Grove-NOT "Grove - NOT")ロジックゲートと組み合わせて使用します）。これらの入力モジュールを[Grove - AND](/Grove-AND "Grove - AND")ゲートモジュールの左側に接続します。このロジックゲートモジュールの出力は電源モジュールの左側に接続し、右側はLEDライトモジュール（[Grove - Red LED](/Grove-Red_LED "Grove - Red LED")または[Grove - LED String Light](/Grove-LED_String_Light "Grove - LED String Light")）に接続します。回路をオンにすると、暗闇で**かつ**音楽や音がサウンドセンサーによって検出された場合にLEDライトが点灯することがわかります。さらに、[Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor")が音楽や音を検出してLEDライトにHIGH信号を供給している場合でも、[Grove - Light Sensor](/Grove-Light_Sensor "Grove - Light Sensor")が暗闇を検出しない限り、LEDライトは常に消灯したままです。暗闇で**かつ**サウンドセンサーが音楽や音を検出した場合にのみ、LEDライトが点滅します。 -->
+<!-- 典型的な使用例：_ 2つのセンサー入力が出力をトリガーする必要がある場合に使用します。例えば、音楽が流れているとき**かつ**暗闇でのみLEDライトを点灯させる回路を作りたいとします。このような回路を作るには、[Grove - Sound Sensor](/ja/Grove-Sound_Sensor "Grove - Sound Sensor")と[Grove - Light Sensor](/ja/Grove-Light_Sensor "Grove - Light Sensor")という2つの入力モジュールが必要です（[Grove - Light Sensor](/ja/Grove-Light_Sensor "Grove - Light Sensor")モジュールは、暗闇でのみライトを点灯させるために[Grove - NOT](/ja/Grove-NOT "Grove - NOT")ロジックゲートと組み合わせて使用します）。これらの入力モジュールを[Grove - AND](/ja/Grove-AND "Grove - AND")ゲートモジュールの左側に接続します。このロジックゲートモジュールの出力は電源モジュールの左側に接続し、右側はLEDライトモジュール（[Grove - Red LED](/ja/Grove-Red_LED "Grove - Red LED")または[Grove - LED String Light](/ja/Grove-LED_String_Light "Grove - LED String Light")）に接続します。回路をオンにすると、暗闇で**かつ**音楽や音がサウンドセンサーによって検出された場合にLEDライトが点灯することがわかります。さらに、[Grove - Sound Sensor](/ja/Grove-Sound_Sensor "Grove - Sound Sensor")が音楽や音を検出してLEDライトにHIGH信号を供給している場合でも、[Grove - Light Sensor](/ja/Grove-Light_Sensor "Grove - Light Sensor")が暗闇を検出しない限り、LEDライトは常に消灯したままです。暗闇で**かつ**サウンドセンサーが音楽や音を検出した場合にのみ、LEDライトが点滅します。 -->
 
 ## Grove モジュール詳細
 
@@ -296,7 +296,7 @@ _ヒント:_ サウンドセンサーとライトセンサーを LED ストリ�
 _ヒント:_ この回路は上記の光感知ライトプロジェクトと同じです。9V バッテリーを使用してプロジェクトをポータブルにしましょう！
 
 4. **自転車のホーンとして圧電ブザーを使用**  
-_ヒント:_ ボタンを押してキュートなホーンを鳴らします！9V バッテリーを使用してプロジェクトをポータブルにします。[Grove - Button](/Grove-Button "Grove - Button") を [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") に置き換えた場合に何が起こるかを探ってみてください。
+_ヒント:_ ボタンを押してキュートなホーンを鳴らします！9V バッテリーを使用してプロジェクトをポータブルにします。[Grove - Button](/ja/Grove-Button "Grove - Button") を [Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer "Grove - Slide Potentiometer") に置き換えた場合に何が起こるかを探ってみてください。
 
 5. **スパイになろう！**  
 _ヒント:_ サウンドレコーダーを使用して誰かの声を秘密裏に録音し、それを再生してみましょう。

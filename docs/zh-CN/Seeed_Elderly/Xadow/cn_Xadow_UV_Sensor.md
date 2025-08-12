@@ -29,7 +29,7 @@ Xadow 紫外线传感器适用于测量阳光中的紫外线辐射。它可以�
 ---
 Xadow 紫外线传感器可以输出与紫外线指数对应的电压值。由于输出电压与紫外线指数之间存在线性关系，您还可以通过公式直接查看紫外线指数。接下来我们展示如何使用紫外线传感器获取紫外线指数并将其显示在 OLED 屏幕上。
 
-<!-- 所需的 Xadow 模块：[Xadow - 主板](/Xadow_Main_Board/)、[Xadow - OLED 128*64](/Xado_OLED_128multiply64/)、**Xadow - 紫外线传感器** -->
+<!-- 所需的 Xadow 模块：[Xadow - 主板](/cn/Xadow_Main_Board/)、[Xadow - OLED 128*64](/cn/Xado_OLED_128multiply64/)、**Xadow - 紫外线传感器** -->
 
 **硬件安装**
 
@@ -39,7 +39,7 @@ Xadow 紫外线传感器可以输出与紫外线指数对应的电压值。由�
 
 **下载代码**
 
-<!-- *   首先，您需要确保 Arduino 库中有 [OLED_Display12864](https://files.seeedstudio.com/wiki/Xadow_UV_Sensor/res/OLED_Display12864.zip)。如果没有，请点击 [这里](https://github.com/Seeed-Studio/Grove_OLED_Display_128X64) 下载并添加到 Arduino 库中。参考 wiki 页面中的 [如何安装 Arduino 库](/How_to_install_Arduino_Library/)，您将熟悉操作。 -->
+<!-- *   首先，您需要确保 Arduino 库中有 [OLED_Display12864](https://files.seeedstudio.com/wiki/Xadow_UV_Sensor/res/OLED_Display12864.zip)。如果没有，请点击 [这里](https://github.com/Seeed-Studio/Grove_OLED_Display_128X64) 下载并添加到 Arduino 库中。参考 wiki 页面中的 [如何安装 Arduino 库](/cn/How_to_install_Arduino_Library/)，您将熟悉操作。 -->
 
 *   现在您可以将代码上传到 Xadow 主板，只需将代码复制并粘贴到 Arduino IDE 中。
 

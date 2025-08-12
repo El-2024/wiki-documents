@@ -58,7 +58,7 @@ MQTT 是 Node-RED 支持的众多协议之一，使其成为构建基于 MQTT �
 
 在本节中，我们将安装 [Eclipse Mosquitto](https://mosquitto.org/)，它是一个广泛应用于物联网 (IoT) 和机器对机器 (M2M) 应用的开源 MQTT Broker。Mosquitto 由 Eclipse 基金会开发，并以 Eclipse 公共许可证发布。Mosquitto 设计轻量高效，非常适合在低功耗设备和网络带宽有限的环境中使用。它支持最新的 MQTT 5.0 协议以及早期版本（如 MQTT 3.1.1）。
 
-首先，请复习通过 SSH 访问 reTerminal DM 的知识，具体步骤请参考[这里](/reterminal-dm-flash-OS#install-drivers)。
+首先，请复习通过 SSH 访问 reTerminal DM 的知识，具体步骤请参考[这里](/cn/reterminal-dm-flash-OS#install-drivers)。
 
 一旦通过 SSH 访问了 reTerminal DM，您可以按照以下步骤操作：
 
@@ -348,8 +348,8 @@ mosquitto_pub -h localhost -t test -m "Hello, world!"
 
 # 在 reTerminal DM 上探索更多 Node-RED 节点
 
-* [reTerminal DM RS485 端口与 Node-RED](/reTerminal-DM-Node-Red-RS485)
-* [reTerminal DM CAN 总线与 Node-RED](/reTerminal-DM-Node-Red-canbus)
+* [reTerminal DM RS485 端口与 Node-RED](/cn/reTerminal-DM-Node-Red-RS485)
+* [reTerminal DM CAN 总线与 Node-RED](/cn/reTerminal-DM-Node-Red-canbus)
 
 ## 技术支持与产品讨论
 

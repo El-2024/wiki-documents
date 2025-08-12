@@ -5,7 +5,7 @@ title: 作为传感器
 image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/uart_connection.png
 slug: /cn/sensecraft-ai/tutorials/sensecraft-ai-output-libraries-xiao
 aliases:
-  - /sensecraft_ai_output_libraries_xiao
+  - /cn/sensecraft_ai_output_libraries_xiao
 last_update:
   date: 12/04/2024
   author: Citric

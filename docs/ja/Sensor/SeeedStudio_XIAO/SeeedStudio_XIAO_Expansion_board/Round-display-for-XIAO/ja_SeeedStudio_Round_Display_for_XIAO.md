@@ -190,7 +190,7 @@ Arduino を初めて使用する場合は、[Arduino の使い方](https://wiki.
 
 - **Seeed Studio XIAO ESP32C6** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32c6_getting_started/#software-preparation)** を参照して設定を完了してください。
 
-- **Seeed Studio XIAO ESP32S3** を使用する場合は、**[このチュートリアル](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** を参照して設定を完了してください。
+- **Seeed Studio XIAO ESP32S3** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started#software-preparation)** を参照して設定を完了してください。
 
 #### ステップ 4. ラウンドディスプレイのライブラリを Arduino に追加します。
 

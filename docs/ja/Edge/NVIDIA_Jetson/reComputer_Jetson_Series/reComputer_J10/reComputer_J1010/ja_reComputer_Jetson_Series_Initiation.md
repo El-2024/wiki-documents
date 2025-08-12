@@ -161,7 +161,7 @@ reComputer でプロジェクトを開始していない場合、このオプシ
 
 - reComputer にシステムをインストールする方法は一般的に 2 つあります。2 つ目は **コマンドライン** を使用する方法です。
 
-- **A20X キャリアボード** を使用している場合、コマンドラインを使用してシステムをインストールする方法は [コマンドラインを使用した eMMC へのフラッシュ](/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line) に記載されています。
+- **A20X キャリアボード** を使用している場合、コマンドラインを使用してシステムをインストールする方法は [コマンドラインを使用した eMMC へのフラッシュ](/ja/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line) に記載されています。
 
 - **reComputer J1010 キャリアボード** を使用している場合、コマンドラインを使用してシステムをインストールする方法は [コマンドラインを使用した JetPack OS のフラッシュ](/ja/reComputer_J1010_J101_Flash_Jetpack#flashing-jetpack-os-via-command-line) に記載されています。
 

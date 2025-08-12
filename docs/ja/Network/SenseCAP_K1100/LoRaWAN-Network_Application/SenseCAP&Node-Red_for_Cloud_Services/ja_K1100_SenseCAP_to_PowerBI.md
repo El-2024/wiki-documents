@@ -150,7 +150,7 @@ Power BI と Azure Synapse Analytics や Azure Data Lake Storage を含む Azure
 - ポート: 1883
 - プロトコル: MQTT V3.1.1
 - クライアント ID: フォーマットは `org-<Organization ID>-<Random ID>`
-  - `<Organization ID>`: 組織 ID。これは [SenseCAP API を取得する](/K1100_sensecap_node-red#get-the-sensecap-api) で取得済みです。
+  - `<Organization ID>`: 組織 ID。これは [SenseCAP API を取得する](/ja/K1100_sensecap_node-red#get-the-sensecap-api) で取得済みです。
   - `<Random ID>`: ランダムに生成された数字または小文字の英字を使用します。
 
 - トピック形式: `/device_sensor_data/<OrgID>/<DeviceEUI>/<Channel>/<Reserved>/<MeasurementID>`
