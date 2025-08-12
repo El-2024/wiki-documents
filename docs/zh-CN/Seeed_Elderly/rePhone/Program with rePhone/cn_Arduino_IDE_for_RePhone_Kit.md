@@ -159,7 +159,7 @@ LinkIt Assist 2502 SDK 2.0.46 还提供了驱动安装程序。
 
     [![](https://files.seeedstudio.com/wiki/Arduino_IDE_for_RePhone_Kit/img/RePhone_Kit_Create_VXP.png)](https://github.com/WayenWeng/RePhone_Create_Kit_VXP/)
 
-<!-- 3. 进入 [RePhone Mass Storage Mode](/Xadow_GSMPlusBLE#Mass_Storage_Mode) -->
+<!-- 3. 进入 [RePhone Mass Storage Mode](/cn/Xadow_GSMPlusBLE#Mass_Storage_Mode) -->
 
 4. 将文件夹 "RePhone Create Kit VXP" 中的所有内容复制到 RePhone 的 5MB 大容量存储中。
 

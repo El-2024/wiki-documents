@@ -12,7 +12,7 @@ last_update:
 ---
 ![](https://files.seeedstudio.com/wiki/Wireless_Sensor_Node-Solar_Kit/img/Wireless_Sensor_Node-Solar_Kit.jpg)
 
-**无线传感器节点 - 太阳能套件**是一个易于使用的套件，专为实验 XBee 和 **XBee** 兼容的独立无线模块（如 RFBee 和 [Wifi Bee](/Wifi_Bee "Wifi Bee")）而设计。每个**创客**在构建**无线传感器节点**时都会面临选择合适组件的问题，而**无线传感器节点 - 太阳能套件**非常适合填补这一空缺。Grove - XBee Carrier 提供 LDO 电源、LiPo 电池充电器以及用于 **XBee** 兼容模块的编程端口。**太阳能板**在偏远地区提供所需的充电电压，而**500 mAH LiPo 电池**则在没有阳光时提供备用电源。一个设计合理且配置正确的无线模块可以提供非常长的使用时间。为此，在不传输传感器数据时让节点进入休眠状态。该套件配备了一个完美制作的**透明盒子**、一套**螺丝**和**塑料铆钉**。
+**无线传感器节点 - 太阳能套件**是一个易于使用的套件，专为实验 XBee 和 **XBee** 兼容的独立无线模块（如 RFBee 和 [Wifi Bee](/cn/Wifi_Bee "Wifi Bee")）而设计。每个**创客**在构建**无线传感器节点**时都会面临选择合适组件的问题，而**无线传感器节点 - 太阳能套件**非常适合填补这一空缺。Grove - XBee Carrier 提供 LDO 电源、LiPo 电池充电器以及用于 **XBee** 兼容模块的编程端口。**太阳能板**在偏远地区提供所需的充电电压，而**500 mAH LiPo 电池**则在没有阳光时提供备用电源。一个设计合理且配置正确的无线模块可以提供非常长的使用时间。为此，在不传输传感器数据时让节点进入休眠状态。该套件配备了一个完美制作的**透明盒子**、一套**螺丝**和**塑料铆钉**。
 
 * 我们建议您购买多个套件，以创建分布式传感器节点阵列。
 
@@ -175,9 +175,9 @@ last_update:
 
 有关设置/编程 Bee 模块的信息，请参考以下链接：
 
-* [Grove - XBee_Carrier](/Grove-XBee_Carrier "Grove - XBee Carrier")
+* [Grove - XBee_Carrier](/cn/Grove-XBee_Carrier "Grove - XBee Carrier")
 
-* [Wifi Bee 页面](/Wifi_Bee "Wifi Bee")
+* [Wifi Bee 页面](/cn/Wifi_Bee "Wifi Bee")
 
 ## 图片库
 
@@ -188,19 +188,19 @@ last_update:
 
 ## 相关链接
 
-* [Grove - XBee_Carrier](/Grove-XBee_Carrier "Grove - XBee Carrier")
+* [Grove - XBee_Carrier](/cn/Grove-XBee_Carrier "Grove - XBee Carrier")
 
-* [Bees Shield](/Bees_Shield "Bees Shield")
+* [Bees Shield](/cn/Bees_Shield "Bees Shield")
 
-* [XBee](/XBee_Shield_V2.0 "XBee_Shield_V2.0")
+* [XBee](/cn/XBee_Shield_V2.0 "XBee_Shield_V2.0")
 
-* [Wifi Bee](/Wifi_Bee "Wifi Bee")
+* [Wifi Bee](/cn/Wifi_Bee "Wifi Bee")
 
-* [RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee_V1.1-Wireless_Arduino_compatible_node")
+* [RFBee](/cn/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee_V1.1-Wireless_Arduino_compatible_node")
 
-* [UartSBee](/UartSBee_V3.1 "UartSBee_V3.1")
+* [UartSBee](/cn/UartSBee_V3.1 "UartSBee_V3.1")
 
-* <a href="/Seeeduino_V2.2" ><span><font color={'000000'} size={"3"}> Seeeduino V2.2</font></span></a>
+* <a href="/cn/Seeeduino_V2.2" ><span><font color={'000000'} size={"3"}> Seeeduino V2.2</font></span></a>
 
 ## 技术支持与产品讨论
 

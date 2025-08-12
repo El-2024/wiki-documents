@@ -300,7 +300,7 @@ NuttX RTOSに関する詳細情報は、[NuttX Documentation](https://nuttx.apac
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。
-- 特に [Rodrigo](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=92947609) さんの献身的な努力に感謝します。あなたの成果は[展示](https://wiki.seeedstudio.com/ja/contributors/)される予定です。
+- 特に [Rodrigo](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=92947609) さんの献身的な努力に感謝します。あなたの成果は[展示](https://wiki.seeedstudio.com/contributors/)される予定です。
 
 ## 技術サポートと製品ディスカッション
 

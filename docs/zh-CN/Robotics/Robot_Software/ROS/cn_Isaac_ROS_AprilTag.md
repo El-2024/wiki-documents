@@ -15,7 +15,7 @@ last_update:
 # Isaac ROS AprilTag  
 
 ## 前置条件  
-在部署 AprilTag 之前，请确保 Isaac ROS 基础环境已在您的 reComputer 上成功设置完成 [安装指南](/docs/Robotics/Robot_Software/ROS/Install_IsaacROS.md)。如果尚未安装 ROS2，请参考 [此文档](/docs/Robotics/Robot_Software/ROS/Install_ROS2_Humble.md)。  
+在部署 AprilTag 之前，请确保 Isaac ROS 基础环境已在您的 reComputer 上成功设置完成 [安装指南](/cn/docs/Robotics/Robot_Software/ROS/Install_IsaacROS.md)。如果尚未安装 ROS2，请参考 [此文档](/cn/docs/Robotics/Robot_Software/ROS/Install_ROS2_Humble.md)。  
 
 ### Isaac ROS AprilTag 包的主题  
 **订阅的主题：**  

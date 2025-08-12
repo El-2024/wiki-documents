@@ -19,7 +19,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/xiao_w5500_ethernet_adapter">
+    <a class="get_one_now_item" href="/cn/xiao_w5500_ethernet_adapter">
     <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 </a></div>
 
@@ -192,7 +192,7 @@ XIAO W5500 以太网适配器使用 ESP32 Arduino 以太网库进行网络连接
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="/xiao_w5500_ethernet_adapter">
+				<a class="get_one_now_item" href="/cn/xiao_w5500_ethernet_adapter">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>

@@ -83,9 +83,9 @@ MR60FDA2 是一款 60GHz 毫米波跌倒检测传感器模块，专为与 XIAO E
 :::tip 安装 Home Assistant
 我们还为一些 Seeed Studio 产品编写了如何安装 Home Assistant 的教程，请参考它们。
 
-- [在 ODYSSEY-X86 上开始使用 Home Assistant](/ODYSSEY-X86-Home-Assistant)
-- [在 reTerminal 上开始使用 Home Assistant](/reTerminal_Home_Assistant)
-- [在 LinkStar H68K/reRouter CM4 上开始使用 Home Assistant](/h68k-ha-esphome)
+- [在 ODYSSEY-X86 上开始使用 Home Assistant](/cn/ODYSSEY-X86-Home-Assistant)
+- [在 reTerminal 上开始使用 Home Assistant](/cn/reTerminal_Home_Assistant)
+- [在 LinkStar H68K/reRouter CM4 上开始使用 Home Assistant](/cn/h68k-ha-esphome)
 :::
 
 ### 步骤 2：准备套件

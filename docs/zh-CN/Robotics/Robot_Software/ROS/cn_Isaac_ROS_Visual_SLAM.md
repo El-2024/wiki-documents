@@ -16,7 +16,7 @@ last_update:
 # Isaac ROS Visual SLAM 部署指南  
 
 ## 前置条件  
-在部署 Visual SLAM 之前，请确保 Isaac ROS 环境已在您的 ReComputer 上正确设置 [安装指南](/docs/Robotics/Robot_Software/ROS/Install_IsaacROS.md)。如果尚未安装 ROS2，请参考[此文档](/docs/Robotics/Robot_Software/ROS/Install_ROS2_Humble.md)。  
+在部署 Visual SLAM 之前，请确保 Isaac ROS 环境已在您的 ReComputer 上正确设置 [安装指南](/cn/docs/Robotics/Robot_Software/ROS/Install_IsaacROS.md)。如果尚未安装 ROS2，请参考[此文档](/cn/docs/Robotics/Robot_Software/ROS/Install_ROS2_Humble.md)。  
 
 
 ## 1. 环境配置  

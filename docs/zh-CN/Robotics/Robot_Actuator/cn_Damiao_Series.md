@@ -247,7 +247,7 @@ last_update:
 电机将开始旋转
 您也可以复制CAN数据使用串口调试工具驱动电机
 
-## 使用[reComputer Mini Jetson Orin](/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md)控制电机
+## 使用[reComputer Mini Jetson Orin](/cn/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md)控制电机
 
 目前市场上电机最常用的CAN通信接口采用XT30(2+2)和JST连接器。我们的**reComputer Mini Jetson Orin** 和**reComptuer Robotics**设备配备了双XT30(2+2)端口和基于JST的CAN接口，提供无缝兼容性。
 

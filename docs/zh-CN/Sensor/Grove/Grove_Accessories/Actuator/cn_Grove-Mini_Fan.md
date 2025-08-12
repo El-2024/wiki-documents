@@ -38,7 +38,7 @@ last_update:
 ![](https://files.seeedstudio.com/wiki/Grove-Mini_Fan/img/Mini_fan.jpg)
 
 <dl>
-  <dt>① UartSBee接口：使用此接口更改微控制器代码。使用一个 [UartSBee](/UartSBee_V4) 模块通过Uart接口连接到微控制器。</dt>
+  <dt>① UartSBee接口：使用此接口更改微控制器代码。使用一个 [UartSBee](/cn/UartSBee_V4) 模块通过Uart接口连接到微控制器。</dt>
   <dt>② JST 2.0接口：用于连接3.3伏直流电机（仅限3.3伏）。</dt>
   <dt>③ Grove接口</dt>
   <dt>④ ICSP接口</dt>
@@ -53,22 +53,22 @@ last_update:
 
 1. 首先使用JST2.0两线接口将直流电机连接到**Grove - 迷你风扇**模块。
 
-2. 将迷你风扇模块连接到电路的输出端（电源模块的右侧）。在电路的输入端，您可以使用一系列基于传感器的输入模块（如[Grove - 光传感器](/Grove-Light_Sensor "Grove - 光传感器")、[Grove - 声音传感器](/Grove-Sound_Sensor "Grove - 声音传感器")、[Grove - 按钮](/Grove-Button "Grove - 按钮")或[Grove - 滑动电位器](/Grove-Slide_Potentiometer "Grove - 滑动电位器")）。
+2. 将迷你风扇模块连接到电路的输出端（电源模块的右侧）。在电路的输入端，您可以使用一系列基于传感器的输入模块（如[Grove - 光传感器](/cn/Grove-Light_Sensor "Grove - 光传感器")、[Grove - 声音传感器](/cn/Grove-Sound_Sensor "Grove - 声音传感器")、[Grove - 按钮](/cn/Grove-Button "Grove - 按钮")或[Grove - 滑动电位器](/cn/Grove-Slide_Potentiometer "Grove - 滑动电位器")）。
 
 3. 给电路供电。
 
 4. 当输入模块提供触发信号时，直流电机开始旋转：
 
-* 如果使用类似[Grove - 按钮](/Grove-Button "Grove - 按钮")模块上的瞬时开关，只需按下按钮即可启动电机。
+* 如果使用类似[Grove - 按钮](/cn/Grove-Button "Grove - 按钮")模块上的瞬时开关，只需按下按钮即可启动电机。
 
-* 如果使用[Grove - 滑动电位器](/Grove-Slide_Potentiometer "Grove - 滑动电位器")，将滑块从GND位置移动到VCC位置，您会看到随着提供电压的增加，电机速度也会增加。连接软叶风扇，您就拥有了一个可调速的个人风扇，可以根据需要调节速度来应对炎热！
+* 如果使用[Grove - 滑动电位器](/cn/Grove-Slide_Potentiometer "Grove - 滑动电位器")，将滑块从GND位置移动到VCC位置，您会看到随着提供电压的增加，电机速度也会增加。连接软叶风扇，您就拥有了一个可调速的个人风扇，可以根据需要调节速度来应对炎热！
 
-* 如果使用[Grove - 光传感器](/Grove-Light_Sensor "Grove - 光传感器")直接连接到电路的输入端，您会发现电机在明亮的光线下运行，而在黑暗中停止：
+* 如果使用[Grove - 光传感器](/cn/Grove-Light_Sensor "Grove - 光传感器")直接连接到电路的输入端，您会发现电机在明亮的光线下运行，而在黑暗中停止：
 
 ![](https://files.seeedstudio.com/wiki/Grove-Mini_Fan/img/Light_Sensitive_Fan.gif)
 
 * 如果您希望电机仅在黑暗中运行，可以在光传感器和电源模块之间添加一个Grove - NOT模块。
-* 如果使用[Grove - 声音传感器](/Grove-Sound_Sensor "Grove - 声音传感器")，您会发现电机在检测到声音时运行。同样，如果您希望反转功能，换句话说，如果您希望电机始终处于开启状态，除非有声音，可以在声音传感器和电源模块之间添加一个Grove - NOT模块。
+* 如果使用[Grove - 声音传感器](/cn/Grove-Sound_Sensor "Grove - 声音传感器")，您会发现电机在检测到声音时运行。同样，如果您希望反转功能，换句话说，如果您希望电机始终处于开启状态，除非有声音，可以在声音传感器和电源模块之间添加一个Grove - NOT模块。
 
 您可以使用Grove - USB电源模块或Grove - DC插孔电源模块为Grove电路供电。
 

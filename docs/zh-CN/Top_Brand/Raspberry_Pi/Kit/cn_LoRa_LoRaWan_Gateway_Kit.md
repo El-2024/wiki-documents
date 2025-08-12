@@ -640,7 +640,7 @@ chmod +x loriot-gw
 
 - **[PDF]** [下载 Wiki PDF](https://files.seeedstudio.com/wiki/LoRaWAN_Gateway-868MHz_Kit_with_Raspberry_Pi_3/res/LoRa_LoRaWan_Gateway_Kit.pdf)
 - **[用户手册]** [用户手册](https://files.seeedstudio.com/wiki/LoRaWAN_Gateway-868MHz_Kit_with_Raspberry_Pi_3/res/%5BRHF-UM01649%5DIoT%20Discovery%20User%20Manual%20-%20v3.2.pdf)。<!-- 源文件链接有误 -->
-- **[更多阅读]** <a href="/Seeeduino_LoRAWAN" ><span><font size={"3"}> Seeeduino LoRaWAN 的 Wiki </font></span></a>
+- **[更多阅读]** <a href="/cn/Seeeduino_LoRAWAN" ><span><font size={"3"}> Seeeduino LoRaWAN 的 Wiki </font></span></a>
 - **[更多阅读]** [RisingHF 网站](http://www.risinghf.com/product/risinghf-iot-dicovery/?lang=en)
 - **[Azure IoT Edge LoRaWAN]** [Azure IoT Edge LoRaWAN](https://github.com/Azure/iotedge-lorawan-starterkit/)
 

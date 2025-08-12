@@ -34,7 +34,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## 有用なリンク:
 
 - [貢献者プログラムの紹介](/ja/Contributor)
-- [貢献者の紹介ページ](/ja/contributors)
+- [貢献者の紹介ページ](/contributors)
 - [GitHubでのアサインメント](https://github.com/orgs/Seeed-Studio/projects/6)
 
 ## FAQ

@@ -86,7 +86,7 @@ last_update:
 
 1. 您需要准备一个 Raspberry Pi 和一个 GrovePi 或 GrovePi+。
 
-2. 您需要完成开发环境的配置，否则请按照 [这里](/GrovePi_Plus/) 的说明进行操作。
+2. 您需要完成开发环境的配置，否则请按照 [这里](/cn/GrovePi_Plus/) 的说明进行操作。
 
 3. 连接
 

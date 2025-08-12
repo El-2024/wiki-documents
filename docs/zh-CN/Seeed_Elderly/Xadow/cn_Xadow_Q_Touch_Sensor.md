@@ -81,7 +81,7 @@ AT42QT1070以扩频方式调制其脉冲，以强力抑制外部噪声的影响�
 
 *   [AT42QT107数据手册](https://files.seeedstudio.com/wiki/Xadow_Q_Touch_Sensor/res/AT42QT1070-MMH.pdf)
 
-<!-- *   [如何检测手指触摸？](/How_to_detect_finger_touch) -->
+<!-- *   [如何检测手指触摸？](/cn/How_to_detect_finger_touch) -->
 
 ## 技术支持与产品讨论
 

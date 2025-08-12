@@ -137,7 +137,7 @@ Grove - 红外反射传感器用于检测特定范围内物体的存在。该传
 
 ##### 软件
 
-- **步骤 1.** 下载库文件 [Arduino timer1 *库*](https://files.seeedstudio.com/wiki/Grove-Infrared_Reflective_Sensor/res/TimerOne-ArduinoLib.zip) 并将其添加到 Arduino IDE 的库文件中。关于如何运行我们的演示代码的[指南](/Guide_to_use_demos_downloaded_from_Seeed-s_Github/)。
+- **步骤 1.** 下载库文件 [Arduino timer1 *库*](https://files.seeedstudio.com/wiki/Grove-Infrared_Reflective_Sensor/res/TimerOne-ArduinoLib.zip) 并将其添加到 Arduino IDE 的库文件中。关于如何运行我们的演示代码的[指南](/cn/Guide_to_use_demos_downloaded_from_Seeed-s_Github/)。
 
 - **步骤 2.** 参考[如何安装库](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library)为 Arduino 安装库。
 

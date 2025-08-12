@@ -100,7 +100,7 @@ last_update:
 
 ### 推荐阅读
 
-* [BeagleBone® Green](/BeagleBone_Green)
+* [BeagleBone® Green](/cn/BeagleBone_Green)
 
 * [BeagleBone® 社区](https://beagleboard.org/)
 
@@ -168,7 +168,7 @@ function checkButton(x) {
 
 * [EAGLE 原理图和 PCB 文件及 PDF 格式原理图](https://files.seeedstudio.com/wiki/Grove_Base_Cape_for_BeagleBone_v2/res/Grove_Base_Cape_for_BeagleBone_v2.0_Schematics.zip)
 
-* [BeagleBone® Green](/BeagleBone_Green)
+* [BeagleBone® Green](/cn/BeagleBone_Green)
 
 * [BeagleBone® 社区](https://beagleboard.org/)
 

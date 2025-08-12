@@ -11,7 +11,7 @@ last_update:
 ---
 ![](https://files.seeedstudio.com/wiki/Grove_Base_Shield_for_Photon/img/Grove_Base_Shield_for_Photon_product_view_1200_s.jpg)
 
-<!-- **Grove 基础扩展板用于 Photon** 是一款扩展板，它集成了 [Grove](/Grove_System) 接口，您可以使用丰富且经济实惠的 Grove 功能模块构建更强大、更智能的应用程序。它拥有三个数字端口、两个模拟端口、两个 I<sup>2</sup>C 端口和一个 UART 端口。这是一种即插即用的扩展板，可以显著加速您的原型开发过程。 -->
+<!-- **Grove 基础扩展板用于 Photon** 是一款扩展板，它集成了 [Grove](/cn/Grove_System) 接口，您可以使用丰富且经济实惠的 Grove 功能模块构建更强大、更智能的应用程序。它拥有三个数字端口、两个模拟端口、两个 I<sup>2</sup>C 端口和一个 UART 端口。这是一种即插即用的扩展板，可以显著加速您的原型开发过程。 -->
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Particle-Photon-Base-Shield-p-2598.html?cPath=98_106_57)
 
@@ -140,7 +140,7 @@ void loop() {
 ---
 *   [原理图文件](https://files.seeedstudio.com/wiki/Grove_Base_Shield_for_Photon/res/Schematic_files_for_Grove_Base_Shield_for_Photon.zip)
 
-<!-- *   [Grove_System](/Grove_System) -->
+<!-- *   [Grove_System](/cn/Grove_System) -->
 
 ## 技术支持与产品讨论
 

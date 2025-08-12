@@ -10,7 +10,7 @@ last_update:
   author: shuxu hu
 ---
 
-<!-- 1. 本教程是一个分步指南，旨在帮助用户学习如何使用 XBee ZB 模块与 [Seeeduino](/Seeeduino_V2.2 "Seeeduino V2.2") / Arduino、[XBee® Shield](/XBee_Shield "XBee® Shield")、[UartSBee_V3.1](/UartSBee_V3.1 "UartSBee_V3.1")、[《Grove》 - XBee Carrier](/Grove-XBee_Carrier "Grove - XBee Carrier")、Seeeduino Stalker v2.0。这些产品让使用 XBee ZB 模块的工作变得更加轻松。 -->
+<!-- 1. 本教程是一个分步指南，旨在帮助用户学习如何使用 XBee ZB 模块与 [Seeeduino](/cn/Seeeduino_V2.2 "Seeeduino V2.2") / Arduino、[XBee® Shield](/cn/XBee_Shield "XBee® Shield")、[UartSBee_V3.1](/cn/UartSBee_V3.1 "UartSBee_V3.1")、[《Grove》 - XBee Carrier](/cn/Grove-XBee_Carrier "Grove - XBee Carrier")、Seeeduino Stalker v2.0。这些产品让使用 XBee ZB 模块的工作变得更加轻松。 -->
 
 2. XBee ZB 模块可以以多种不同的方式使用，并提供许多配置参数。在本教程中，我们尝试通过简单的步骤展示基本配置。
 
@@ -178,7 +178,7 @@ last_update:
 
 此演示配置两个 XBee 模块，使其在上电后自动连接并持续进行数据收发。此设置可用作无线 UART，将任意两台 PC 或带串口的 MCU 连接起来。
 
-<!-- *   使用两个 [UartSBee_V3.1](/UartSBee_V3.1 "UartSBee_V3.1") 或两个 [Grove - XBee Carrier](/Grove-XBee_Carrier "Grove - XBee Carrier") 搭配两个 XBee ZB 模块。 -->
+<!-- *   使用两个 [UartSBee_V3.1](/cn/UartSBee_V3.1 "UartSBee_V3.1") 或两个 [Grove - XBee Carrier](/cn/Grove-XBee_Carrier "Grove - XBee Carrier") 搭配两个 XBee ZB 模块。 -->
 
 *   将这些模块连接到 PC 的串口，并确保驱动程序已安装。
 
@@ -213,11 +213,11 @@ last_update:
 
 ## 使用 XBee ZB 模块的无线传感器网络（WSN）演示
 
-<!-- ### 使用 XBee ZB 模块和 [Grove - XBee Carrier](/Grove-XBee_Carrier "Grove - XBee Carrier") 配置独立传感器节点
+<!-- ### 使用 XBee ZB 模块和 [Grove - XBee Carrier](/cn/Grove-XBee_Carrier "Grove - XBee Carrier") 配置独立传感器节点
 
-### 使用 XBee ZB 模块、Seeeduino 和 [XBee® Shield](/XBee_Shield "XBee® Shield") 配置 Zigbee 协调器 -->
+### 使用 XBee ZB 模块、Seeeduino 和 [XBee® Shield](/cn/XBee_Shield "XBee® Shield") 配置 Zigbee 协调器 -->
 
-<!-- ### 使用 XBee ZB 模块、[Wifi Bee](/Wifi_Bee "Wifi Bee") 和 [Bees Shield](/Bees_Shield "Bees Shield") 将 Seeeduino 用作互联网网关 -->
+<!-- ### 使用 XBee ZB 模块、[Wifi Bee](/cn/Wifi_Bee "Wifi Bee") 和 [Bees Shield](/cn/Bees_Shield "Bees Shield") 将 Seeeduino 用作互联网网关 -->
 
 ## 参考资料
 
@@ -231,7 +231,7 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products/img/Xbee_iot.JPG)
 
-<!-- 这是一个由 XBee 和 [Grove](/Grove_System "Grove System") 制作的有趣演示。 -->
+<!-- 这是一个由 XBee 和 [Grove](/cn/Grove_System "Grove System") 制作的有趣演示。 -->
 
 该项目使用 Zigbee 网状网络和 GPRS SIM900 卡与服务器通信。服务器对数据进行分析，并为用户提供实时信息以及预测功能。
 
@@ -241,7 +241,7 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products/img/Xbee_iot1.JPG)
 
-<!-- 这是一个由 XBee 和 [Grove](/Grove_System "Grove System") 制作的物联网演示。 -->
+<!-- 这是一个由 XBee 和 [Grove](/cn/Grove_System "Grove System") 制作的物联网演示。 -->
 
 太阳能锅炉非常棒，因为它利用免费的太阳能为您提供热水，但如果阳光不足或者热水已经被用完怎么办？这个项目可以帮助您做出正确的决定。它会在您热水耗尽时发出警告，并允许您打开电加热器。它还会告诉您什么时候可以洗澡或淋浴！
 

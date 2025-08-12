@@ -12,7 +12,7 @@ last_update:
 
 ## 使用 dfu-util 更新固件
 
-您需要 dfu-util 0.5 或更高版本才能将 dfu 文件下载到 [DSO Nano](/DSO_Nano "DSO Nano")。
+您需要 dfu-util 0.5 或更高版本才能将 dfu 文件下载到 [DSO Nano](/cn/DSO_Nano "DSO Nano")。
 较旧版本的 dfu-util 将无法正常工作。DSO Nano 和许多其他基于 ST Micro 微控制器的设备使用 ST Micro 自己的 DFU 扩展 (DfuSe)，这些扩展与 DFU 标准不兼容。
 
 您可以在 [Tormod 的 PPA](https://launchpad.net/~tormodvolden/+archive/ppa/+packages?field.series_filter=lucid) 中找到适用于 Ubuntu 10.04 的 dfu-util 0.8 包。只需下载并安装正确的 .deb 包即可。该包在任何后续版本的 Ubuntu 或 Debian 不稳定版中也应该可以正常安装。对于其他操作系统，您可能需要按照 dfu-util 官方主页上的说明自行构建 dfu-util。

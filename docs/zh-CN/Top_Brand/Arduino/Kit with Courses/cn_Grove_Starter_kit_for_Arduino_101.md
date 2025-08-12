@@ -94,17 +94,17 @@ Grove 系统旨在通过不同的传感器（如传感器和电机）、扩展�
     <tr>
       <td>Grove - 旋转角度传感器(P)</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor](/Grove-Rotary_Angle_Sensor)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor](/cn/Grove-Rotary_Angle_Sensor)</td>
     </tr>
     <tr>
       <td>Grove – 按钮</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Button](/Grove-Button)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Button](/cn/Grove-Button)</td>
     </tr>
     <tr>
       <td>Grove - 触摸传感器</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Touch_Sensor](/Grove-Touch_Sensor)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Touch_Sensor](/cn/Grove-Touch_Sensor)</td>
     </tr>
     <tr>
       <td>Grove LED</td>
@@ -114,42 +114,42 @@ Grove 系统旨在通过不同的传感器（如传感器和电机）、扩展�
     <tr>
       <td>Grove - 蜂鸣器</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Buzzer](/Grove-Buzzer)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Buzzer](/cn/Grove-Buzzer)</td>
     </tr>
     <tr>
       <td>Grove - 声音传感器</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Sound_Sensor](/Grove-Sound_Sensor)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Sound_Sensor](/cn/Grove-Sound_Sensor)</td>
     </tr>
     <tr>
       <td>Grove - 光线传感器</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Light_Sensor_v1.2](/Grove-Light_Sensor)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Light_Sensor_v1.2](/cn/Grove-Light_Sensor)</td>
     </tr>
     <tr>
       <td>Grove - 温度传感器</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Temperature_Sensor](/Grove-Temperature_Sensor)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Temperature_Sensor](/cn/Grove-Temperature_Sensor)</td>
     </tr>
     <tr>
       <td>Grove - 继电器</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Relay](/Grove-Relay)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Relay](/cn/Grove-Relay)</td>
     </tr>
     <tr>
       <td>Grove - 舵机</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Servo](/Grove-Servo)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Servo](/cn/Grove-Servo)</td>
     </tr>
     <tr>
       <td>Grove - LCD RGB 背光</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_LCD_RGB_Backlight](/Grove-LCD_RGB_Backlight)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_LCD_RGB_Backlight](/cn/Grove-LCD_RGB_Backlight)</td>
     </tr>
     <tr>
       <td>底板扩展板 V2.0</td>
       <td>1 个</td>
-      <td>[https://www.seeedstudio.com/wiki/Base_Shield_v2](/Base_Shield_V2)</td>
+      <td>[https://www.seeedstudio.com/wiki/Base_Shield_v2](/cn/Base_Shield_V2)</td>
     </tr>
     <tr>
       <td>用户手册（印刷版）</td>

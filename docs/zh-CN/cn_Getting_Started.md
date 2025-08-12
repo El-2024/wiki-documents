@@ -16,7 +16,7 @@ last_update:
 
 我们的 wiki 文档平台是一个综合性的信息交流和知识分享平台，旨在为用户提供详尽的产品说明、使用指南和应用项目文档。我们会不断努力，提供清晰、准确且易于理解的文档，以帮助您更好地了解和使用我们的产品。
 
-{/* We here also present you our current accomplishments and <strong><a href="/Solutions"><span style={{color: '8DC215', fontSize: '1.2em'}}>  Solution </span></a></strong> and we are looking for your contributions. */}
+{/* We here also present you our current accomplishments and <strong><a href="/cn/Solutions"><span style={{color: '8DC215', fontSize: '1.2em'}}>  Solution </span></a></strong> and we are looking for your contributions. */}
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/New_Wiki_Platform/example/showcase2.png" alt="pir" width={1000} height="auto" /></p>
 
@@ -161,7 +161,7 @@ last_update:
 
 ### 更多介绍
 
-<strong><a href="/Contributor"><span style={{color: '8DC215', fontSize: '1.2em'}}>点击这里了解更多关于贡献者计划的信息！</span></a></strong>
+<strong><a href="/cn/Contributor"><span style={{color: '8DC215', fontSize: '1.2em'}}>点击这里了解更多关于贡献者计划的信息！</span></a></strong>
 
 ## 技术支持与产品讨论
 

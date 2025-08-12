@@ -28,27 +28,27 @@ Grove 智能植物护理套件是一个易于使用的高级工具包，可帮�
 ---
 <!-- Please refer to each modules' specifications:
 
-*   [Grove - Temp &amp; Humidity Sensor](/Grove-TemperatureAndHumidity_Sensor/#specifications)
+*   [Grove - Temp &amp; Humidity Sensor](/cn/Grove-TemperatureAndHumidity_Sensor/#specifications)
 
-*   [Grove - Sunlight Sensor V1.0](/Grove-Sunlight_Sensor)
+*   [Grove - Sunlight Sensor V1.0](/cn/Grove-Sunlight_Sensor)
 
-*   [Grove - Water Sensor](/Grove-Water_Sensor)
+*   [Grove - Water Sensor](/cn/Grove-Water_Sensor)
 
 *   [Grove - Moisture Sensor](https://wiki.seeedstudio.com/cn/Grove-Moisture_Sensor/#specification)
 
-*   [Grove – Encoder](/Grove-Encoder#Specification)
+*   [Grove – Encoder](/cn/Grove-Encoder#Specification)
 
-*   [Grove-OLED Display 1.12](/Grove-OLED_Display_1.12inch#Specification)
+*   [Grove-OLED Display 1.12](/cn/Grove-OLED_Display_1.12inch#Specification)
 
-*   [Grove - Button](/Grove-Button#Introduction)
+*   [Grove - Button](/cn/Grove-Button#Introduction)
 
-*   [Grove - Relay](/Grove-Relay#Specifications)
+*   [Grove - Relay](/cn/Grove-Relay#Specifications)
 
 *   12V DC Water Pump
 
 *   12V Power connector
 
-*   [Base Shield V2](/Base_Shield_V2) -->
+*   [Base Shield V2](/cn/Base_Shield_V2) -->
 
 ##  应用创意
 ---
@@ -131,9 +131,9 @@ Grove 智能植物护理套件是一个易于使用的高级工具包，可帮�
 
 [在Arduino UNO上构建IDE的指南。](https://www.arduino.cc/en/Guide/HomePage)
 
-[在Seeeduino V4.2上构建IDE的指南（与Arduino兼容）](/Seeeduino_v4.2)
+[在Seeeduino V4.2上构建IDE的指南（与Arduino兼容）](/cn/Seeeduino_v4.2)
 
-**注意**，您可以使用[Base shield](/Base_Shield_V2 "Base_Shield_V2")快速连接模块。 -->
+**注意**，您可以使用[Base shield](/cn/Base_Shield_V2 "Base_Shield_V2")快速连接模块。 -->
 
 ## 技术支持与产品讨论
 

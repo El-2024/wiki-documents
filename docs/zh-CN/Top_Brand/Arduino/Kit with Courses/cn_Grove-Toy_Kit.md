@@ -14,19 +14,19 @@ Grove 玩具套件为您提供了一种简单的方式来改装和升级玩具�
 
 Grove 玩具套件包含：
 
-<!-- *   1 x [Grove - Base_Shield_V2](/Base_Shield_V2 "Grove - Base Shield")
+<!-- *   1 x [Grove - Base_Shield_V2](/cn/Base_Shield_V2 "Grove - Base Shield")
 
-*   1 x [Grove - OLED Display 128*64](/Grove-OLED_Display_0.96inch "Grove - OLED Display 128*64")
+*   1 x [Grove - OLED Display 128*64](/cn/Grove-OLED_Display_0.96inch "Grove - OLED Display 128*64")
 
-*   1 x [Grove - Sound Sensor](/Grove-Sound_Sensor "Grove - Sound Sensor")
+*   1 x [Grove - Sound Sensor](/cn/Grove-Sound_Sensor "Grove - Sound Sensor")
 
-*   1 x [Grove - Chainable RGB LED](/Grove-Chainable_RGB_LED "Grove - Chainable RGB LED")
+*   1 x [Grove - Chainable RGB LED](/cn/Grove-Chainable_RGB_LED "Grove - Chainable RGB LED")
 
-*   1 x [Grove - Buzzer](/Grove_Starter_Kit_Plus/#7-grove-buzzer)
+*   1 x [Grove - Buzzer](/cn/Grove_Starter_Kit_Plus/#7-grove-buzzer)
 
-*   1 x [Grove - PIR Motion Sensor](/Grove-PIR_Motion_Sensor "Grove - PIR Motion Sensor")
+*   1 x [Grove - PIR Motion Sensor](/cn/Grove-PIR_Motion_Sensor "Grove - PIR Motion Sensor")
 
-*   1 x [Grove - 3-Axis Analog Accelerometer](/Grove-3-Axis_Analog_Accelerometer "Grove-3-Axis_Analog_Accelerometer")
+*   1 x [Grove - 3-Axis Analog Accelerometer](/cn/Grove-3-Axis_Analog_Accelerometer "Grove-3-Axis_Analog_Accelerometer")
 
 *   10 x Grove - Universal 4 pin Cable
 

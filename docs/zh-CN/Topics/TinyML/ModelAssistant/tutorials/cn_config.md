@@ -103,7 +103,7 @@ model=dict(
 
 需要设置数据集和数据管道来构建数据加载器。由于这部分的复杂性，我们使用中间变量来简化数据加载器配置的编写。更复杂的数据增强方法可以在 `sscma/datasets/pipelines` 路径中找到。
 
-我们将在这里演示 FOMO 的训练和测试管道，它使用 [自定义 COCO_MASK 数据集](/ModelAssistant_Tutorials_Datasets)：
+我们将在这里演示 FOMO 的训练和测试管道，它使用 [自定义 COCO_MASK 数据集](/cn/ModelAssistant_Tutorials_Datasets)：
 
 ```python
 dataset_type='FomoDatasets'   # 数据集类型，这将用于定义数据集

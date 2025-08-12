@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # ✨ Contributor Program ✨ 
 
-Seeedでは、Seeedersコミュニティを非常に大切にしています。[Seeed Studio Contributor Program](/ja/contributors)は、世界中の親愛なる友人たちと協力して革新的なソリューションを共に構築するために開始された共同プログラムです。
+Seeedでは、Seeedersコミュニティを非常に大切にしています。[Seeed Studio Contributor Program](/contributors)は、世界中の親愛なる友人たちと協力して革新的なソリューションを共に構築するために開始された共同プログラムです。
 
 <p style={{textAlign: 'center'}}><img src="http://files.seeedstudio.com/wiki/wiki-platform/contributor/contributors.png" alt="pir" width={800} height="auto" /></p>
 
@@ -37,7 +37,7 @@ Seeedでは、Seeedersコミュニティを非常に大切にしています。[
 
 ![](http://files.seeedstudio.com/wiki/wiki-platform/contributor/github_assignment_2.png)
 
-### [オープンコール - 小さな一歩が大きな成果に！](https://wiki.seeedstudio.com/ja/contributors/)
+### [オープンコール - 小さな一歩が大きな成果に！](https://wiki.seeedstudio.com/contributors/)
 
 また、継続的なタスクやトピックに関連するタスクも用意しています。例えば：
 
@@ -47,7 +47,7 @@ Seeedでは、Seeedersコミュニティを非常に大切にしています。[
 
 ![](http://files.seeedstudio.com/wiki/wiki-platform/contributor/open_call.png)
 
-### [アイデアを共有 - 実現 - 報酬を獲得](https://wiki.seeedstudio.com/ja/contributors/)
+### [アイデアを共有 - 実現 - 報酬を獲得](https://wiki.seeedstudio.com/contributors/)
 
 さらに多くのアイデアを歓迎します！トピック関連、シナリオ関連、あなたの希望など...
 

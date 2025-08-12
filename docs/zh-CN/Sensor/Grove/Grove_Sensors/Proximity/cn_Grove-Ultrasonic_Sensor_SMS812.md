@@ -16,7 +16,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/ultrasonic-sms812/1.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/grove_ultrasonic_sensor_sms812">
+    <a class="get_one_now_item" href="/cn/grove_ultrasonic_sensor_sms812">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     </a>
 </div>
@@ -120,7 +120,7 @@ Grove 超声波传感器 (SMS812) 是一款小型化、超低功耗的测距传�
 				</a>
 			</div></td>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="/grove_ultrasonic_sensor_sms812">
+				<a class="get_one_now_item" href="/cn/grove_ultrasonic_sensor_sms812">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>

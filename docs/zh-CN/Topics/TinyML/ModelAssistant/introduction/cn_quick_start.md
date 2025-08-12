@@ -11,7 +11,7 @@ last_update:
 ---
 # 快速入门
 
-在[概述](/ModelAssistant_Introduce_Overview)中，我们已经介绍了 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 提供的功能和特性。考虑到 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 分为多个不同的模块，每个模块完成其相应的任务，我们建议按照以下步骤快速入门。
+在[概述](/cn/ModelAssistant_Introduce_Overview)中，我们已经介绍了 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 提供的功能和特性。考虑到 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 分为多个不同的模块，每个模块完成其相应的任务，我们建议按照以下步骤快速入门。
 
 :::tip
 我们建议所有 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 的初学者从[入门指南](#入门指南)开始学习，如果您熟悉 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) 或 [OpenMMLab](https://github.com/open-mmlab)，并且想要尝试在边缘计算设备上部署、修改现有神经网络或在用户定义的数据集上训练，您可以直接参考[进阶](#进阶)。
@@ -21,7 +21,7 @@ last_update:
 
 ### 模型部署
 
-如果您想在设备上部署模型，请参考[部署](/ModelAssistant_Deploy_Overview)部分，了解如何部署模型。
+如果您想在设备上部署模型，请参考[部署](/cn/ModelAssistant_Deploy_Overview)部分，了解如何部署模型。
 
 ### 模型训练
 
@@ -53,20 +53,20 @@ last_update:
 
 ## 高级
 
-1. 首先，参考[安装指南](/ModelAssistant_Introduce_Installation)来配置[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)的运行环境。
+1. 首先，参考[安装指南](/cn/ModelAssistant_Introduce_Installation)来配置[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)的运行环境。
 
 2. 然后，熟悉[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)的基本使用方法：
 
-   - **模型训练**，请参考[模型训练](/ModelAssistant_Tutorials_Training_Overview)来学习如何使用[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)训练模型。我们建议您从示例中选择一个模型进行训练。
+   - **模型训练**，请参考[模型训练](/cn/ModelAssistant_Tutorials_Training_Overview)来学习如何使用[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)训练模型。我们建议您从示例中选择一个模型进行训练。
 
-   - **模型导出**。完成模型训练后，为了在边缘计算设备上部署，需要首先导出模型。有关模型导出的教程，请参考[模型导出](/ModelAssistant_Tutorials_Export_Overview)。
+   - **模型导出**。完成模型训练后，为了在边缘计算设备上部署，需要首先导出模型。有关模型导出的教程，请参考[模型导出](/cn/ModelAssistant_Tutorials_Export_Overview)。
 
    - **模型验证**。模型验证可以在训练后或导出后进行。前者验证神经网络和训练结果的正确性，而后者主要验证导出模型的正确性，便于后续在边缘计算设备上的部署和调试。在上述两个步骤的文档中已经提供了一些模型验证的方法。
 
-- **模型部署**。如果您想在边缘计算设备上部署导出的训练模型，请参考[部署](/ModelAssistant_Deploy_Overview)
-- **自定义数据集**。如果您想在自定义数据集上进行训练，请参考[数据集](/ModelAssistant_Tutorials_Datasets)。
+- **模型部署**。如果您想在边缘计算设备上部署导出的训练模型，请参考[部署](/cn/ModelAssistant_Deploy_Overview)
+- **自定义数据集**。如果您想在自定义数据集上进行训练，请参考[数据集](/cn/ModelAssistant_Tutorials_Datasets)。
 
-- **自定义模型**。如果您想修改现有的神经网络或设计自己的神经网络，请参考[模型配置](/ModelAssistant_Tutorials_Config)。
+- **自定义模型**。如果您想修改现有的神经网络或设计自己的神经网络，请参考[模型配置](/cn/ModelAssistant_Tutorials_Config)。
 
 ## 必要知识
 

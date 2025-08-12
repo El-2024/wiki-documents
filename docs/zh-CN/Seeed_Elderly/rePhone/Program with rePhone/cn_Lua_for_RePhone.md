@@ -18,10 +18,10 @@ RePhone 可以作为一个学习工具，帮助您开始有趣的项目。目前
 安装驱动和更新固件
 --------------------
 
-<!-- -   要**安装驱动**，请参考 **[Arduino_IDE_for_RePhone_Kit](/Arduino_IDE_for_RePhone_Kit "Arduino IDE for RePhone Kit")** 的第 2 节 -->
+<!-- -   要**安装驱动**，请参考 **[Arduino_IDE_for_RePhone_Kit](/cn/Arduino_IDE_for_RePhone_Kit "Arduino IDE for RePhone Kit")** 的第 2 节 -->
 
 <!-- 
--   要**更新固件**，请参考 **[Arduino_IDE_for_RePhone_Kit](/Arduino_IDE_for_RePhone_Kit "Arduino IDE for RePhone Kit")** 的第 3 节 -->
+-   要**更新固件**，请参考 **[Arduino_IDE_for_RePhone_Kit](/cn/Arduino_IDE_for_RePhone_Kit "Arduino IDE for RePhone Kit")** 的第 3 节 -->
 
 下载 Lua for RePhone 应用
 -------------------------

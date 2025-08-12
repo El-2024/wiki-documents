@@ -15,7 +15,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/grove-vision-ai-v2/0.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/grove_vision_ai_v2">
+    <a class="get_one_now_item" href="/cn/grove_vision_ai_v2">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
     </a>
 </div>
@@ -323,7 +323,7 @@ SenseCraft 是由 Seeed Studio 开发的一系列软件服务，旨在为用户�
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="/grove_vision_ai_v2">
+				<a class="get_one_now_item" href="/cn/grove_vision_ai_v2">
 				<strong><span><font color={'FFFFFF'} size={"4"}>立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>

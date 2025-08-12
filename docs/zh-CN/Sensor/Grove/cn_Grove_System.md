@@ -76,9 +76,9 @@ Grove系统还包括网络模块，这些模块能够在您的项目中实现通
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
 </div>
 
-<!-- - [Grove Sensor](/Grove_Sensor_Intro)
-- [Grove Network Module](/Grove_network_module_intro)
-- [Grove Accessories](/Grove_Accessories_Intro) -->
+<!-- - [Grove Sensor](/cn/Grove_Sensor_Intro)
+- [Grove Network Module](/cn/Grove_network_module_intro)
+- [Grove Accessories](/cn/Grove_Accessories_Intro) -->
 
 <!-- ## Grove选择指南
 
@@ -182,7 +182,7 @@ Grove接口设计为兼容多种开发板和微控制器。
 </div>
 
 <!-- <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki 平台</font></span></strong>
+    <a class="get_one_now_item" href="/cn/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki 平台</font></span></strong>
     </a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong>
     </a>

@@ -16,10 +16,10 @@ Grove - 气体传感器模块对于气体泄漏检测（家庭和工业）非常
 
 每个 Grove - 气体传感器套件包含一个气体传感器底座和四个检测器。您可以根据特定的目标气体在底座上切换检测器。
 
--   [Grove - 气体传感器(MQ2)](/Grove-Gas_Sensor-MQ2)：可燃气体、烟雾
--   [Grove - 气体传感器(MQ3)](/Grove-Gas_Sensor-MQ3)：酒精蒸汽
--   [Grove - 气体传感器(MQ5)](/Grove-Gas_Sensor-MQ5)：液化石油气、天然气、城市煤气
--   [Grove - 气体传感器(MQ9)](/Grove-Gas_Sensor-MQ9)：一氧化碳、煤气、液化气
+-   [Grove - 气体传感器(MQ2)](/cn/Grove-Gas_Sensor-MQ2)：可燃气体、烟雾
+-   [Grove - 气体传感器(MQ3)](/cn/Grove-Gas_Sensor-MQ3)：酒精蒸汽
+-   [Grove - 气体传感器(MQ5)](/cn/Grove-Gas_Sensor-MQ5)：液化石油气、天然气、城市煤气
+-   [Grove - 气体传感器(MQ9)](/cn/Grove-Gas_Sensor-MQ9)：一氧化碳、煤气、液化气
 
 规格参数
 -------------
