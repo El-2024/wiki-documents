@@ -111,7 +111,7 @@ last_update:
 这是一个典型的双向电平转换电路，用于连接 I^2^C 总线的两个不同电压部分。该传感器的 I<sup>2</sup>C 总线使用 3.3V，如果 Arduino 的 I<sup>2</sup>C 总线使用 5V，则需要此电路。在上面的原理图中，**Q17** 和 **Q18** 是 N-Channel MOSFET [2N7002A](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/2N7002A_datasheet.pdf)，它们充当双向开关。为了更好地理解这一部分，您可以参考 [AN10441](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/AN10441.pdf)。
 
 :::note
-        在本节中我们仅展示了部分原理图，完整文档请参考 [资源](/cn/#resources)
+        在本节中我们仅展示了部分原理图，完整文档请参考 [资源](#资源)
 :::
 
 ## 支持的平台

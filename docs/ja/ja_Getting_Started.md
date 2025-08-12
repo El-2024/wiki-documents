@@ -164,7 +164,7 @@ Seeedでは、Seeedersコミュニティを非常に大切にしています。S
 
 ## ウィークリーワイキ
 
-[Seeed Studio ウィークリーワイキ](/ja/weekly_wiki)は毎週月曜日に公開され、最新のコンテンツ（新製品、Seeedersチームによる興味深いプロジェクト、チュートリアル、ガイド、紹介、その他興味深く関連性のある内容）を紹介します！
+[Seeed Studio ウィークリーワイキ](/weekly_wiki)は毎週月曜日に公開され、最新のコンテンツ（新製品、Seeedersチームによる興味深いプロジェクト、チュートリアル、ガイド、紹介、その他興味深く関連性のある内容）を紹介します！
 
 ![](https://files.seeedstudio.com/wiki/IndexWiki/logo.png)
 

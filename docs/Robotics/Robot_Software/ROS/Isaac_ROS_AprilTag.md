@@ -15,7 +15,7 @@ last_update:
 # Isaac ROS AprilTag  
 
 ## Prerequisites  
-Before deploying AprilTag, ensure that the Isaac ROS basic environment has been successfully set up on your reComputer [Installation Guide](/docs/Robotics/Robot_Software/ROS/Install_IsaacROS.md). If ROS2 is not installed, refer to [this document](/docs/Robotics/Robot_Software/ROS/Install_ROS2_Humble.md).  
+Before deploying AprilTag, ensure that the Isaac ROS basic environment has been successfully set up on your reComputer [Installation Guide](/install_isaacros). If ROS2 is not installed, refer to [this document](/install_ros2_humble).  
 
 ### Isaac ROS AprilTag Package Topics  
 **Subscribed Topics:**  

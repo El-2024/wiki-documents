@@ -21,7 +21,7 @@ last_update:
 #### Software Environment:
 - JetPack 5.1.2
 - Ubuntu 20.04+
-- [ROS2 Humble](/docs/Robotics/Robot_Software/ROS/Install_ROS2_Humble.md)
+- [ROS2 Humble](/install_ros2_humble)
 
 
 

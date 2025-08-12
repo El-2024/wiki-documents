@@ -102,7 +102,7 @@ C++控制需要额外的CAN-USB驱动板，请参考[livelybot_hardware_sdk](htt
 
 
 
-## 使用[reComputer Mini Jetson Orin](/cn/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md)控制电机
+## 使用[reComputer Mini Jetson Orin](/cn/recomputer_jetson_mini_getting_started)控制电机
 
 目前市场上电机最常用的CAN通信接口采用XT30(2+2)和JST连接器。我们的**reComputer Mini Jetson Orin**和**reComputer Robotics**设备配备了双XT30(2+2)端口和基于JST的CAN接口，提供无缝兼容性。
 
