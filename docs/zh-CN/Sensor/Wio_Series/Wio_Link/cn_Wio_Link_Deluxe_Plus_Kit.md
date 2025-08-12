@@ -35,16 +35,16 @@ last_update:
 
 | 零件名称                                                                                                                   | 数量|
 |------------------------------------------------------------------------------------------------------------------------------|---------|
-| [Grove - 按钮](/Grove-Button/)                                                                                              | 1个     |
+| [Grove - 按钮](/cn/Grove-Button/)                                                                                              | 1个     |
 | [Grove - 继电器](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products)                                                     | 1个     |
-| [Grove - 湿度传感器](/Grove-Moisture_Sensor/)                                                                            | 1个     |
+| [Grove - 湿度传感器](/cn/Grove-Moisture_Sensor/)                                                                            | 1个     |
 | [Grove - 温湿度传感器](https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temp-Humi-Sensor-SHT35.html?queryID=ea8d1729f76e80d6b1b53c492c74fcdb&objectID=35&indexName=bazaar_retailer_products)                   | 1个     |
 | [Grove - 数字光传感器](https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.html?queryID=c7822737fbcac80a47232a5fb1ac1e1d&objectID=1594&indexName=bazaar_retailer_products)         | 1个     |
 | [Grove - 旋转角度传感器](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html?queryID=09e4592dcda53bdc593ca0f2267ef1a6&objectID=1803&indexName=bazaar_retailer_products)             | 1个     |
 | [Grove - 原型扩展板](https://www.seeedstudio.com/Grove-Protoshield.html?queryID=6572c65d6d57e7c36173ff5c91363ef7&objectID=1801&indexName=bazaar_retailer_products)                             | 1个     |
 | [Grove - 磁性开关](https://www.seeedstudio.com/Grove-Magnetic-Switch.html?queryID=d18ad991c05de7f74bbabc475ad4f905&objectID=1827&indexName=bazaar_retailer_products)                     | 1个     |
-| [Grove - 3轴数字加速度计(±1.5g)](/Grove-3-Axis_Digital_Accelerometer-1.5g/)                                      | 1个     |
-| [Grove - 红外距离中断器](/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F)                                                         | 1个     |
+| [Grove - 3轴数字加速度计(±1.5g)](/cn/Grove-3-Axis_Digital_Accelerometer-1.5g/)                                      | 1个     |
+| [Grove - 红外距离中断器](/cn/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F)                                                         | 1个     |
 | [Grove - 气压传感器 (BMP180)](https://www.seeedstudio.com/Grove-Barometer-Sensor-BMP18-p-1840.html?queryID=88bfef2ed146542948bba61263640b3d&objectID=1105&indexName=bazaar_retailer_products) | 1个     |
 | [Grove - 空气质量传感器 v1.3](https://www.seeedstudio.com/Grove-Air-Quality-Sensor-v1-3-Arduino-Compatible.html?queryID=c98f1d7e388efeeee92d1815abe557cb&objectID=700&indexName=bazaar_retailer_products)    | 1个     |
 | [Grove - 手势识别](https://www.seeedstudio.com/Grove-Gesture-PAJ7620U2.html?queryID=e667328d3efe4bffe1ffde38dfda3d2e&objectID=677&indexName=bazaar_retailer_products)                                    | 1个     |
@@ -55,7 +55,7 @@ last_update:
 | [Grove - 舵机](https://www.seeedstudio.com/Grove-Servo.html?queryID=0320acd9fad8e0fe780d097b1745a149&objectID=1626&indexName=bazaar_retailer_products)                                                    | 1个     |
 | [Grove - OLED 显示屏 0.96"](https://www.seeedstudio.com/Grove-OLED-Display-0-96-SSD1315-p-4294.html?queryID=a6a80f29464c842d09d9e5a1216b19c9&objectID=4294&indexName=bazaar_retailer_products)                             | 1个     |
 | [Grove - 超声波测距仪](https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html?queryID=2850f95a573b6446b793a79631d30d7e&objectID=2281&indexName=bazaar_retailer_products)                             | 1个     |
-| [Wio Link](/Wio_Link/)                                                                                                        | 2个    |
+| [Wio Link](/cn/Wio_Link/)                                                                                                        | 2个    |
 
 一个简单的演示
 -------------
@@ -65,11 +65,11 @@ last_update:
 ### 初步指南
 
 -   [Travis CI](https://travis-ci.org/)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/cn/Wio_Link/)
 ### 所需材料
 
 -   [Wio Link APP](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/cn/Wio_Link/)
 -   [Grove 继电器](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   一个 Travis CI 账户
 -   一个 GitHub 账户

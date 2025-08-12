@@ -11,9 +11,9 @@ last_update:
 ---
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Cloud_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/Aws_seeeduino_wiki_cover.JPG)
 
-*主要文章：从这里开始 <a href="/Grove_IoT_Starter_Kits_Powered_by_AWS" ><span><font size={"3"}> Grove IoT 入门套件，由 AWS 提供支持 </font></span></a> , <a href="/Seeeduino_Cloud" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a>*
+*主要文章：从这里开始 <a href="/cn/Grove_IoT_Starter_Kits_Powered_by_AWS" ><span><font size={"3"}> Grove IoT 入门套件，由 AWS 提供支持 </font></span></a> , <a href="/cn/Seeeduino_Cloud" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a>*
 
-**<a href="/Seeeduino_Cloud" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a>** 是一款基于 Dragino WiFi IoT 模块 [HE](http://www.dragino.com/products/linux-module/item/87-he.html) 和 ATmega32u4 的微控制器开发板。**HE** 是一个高性能、低成本的 150M、2.4G WiFi 模块，内置开源 OpenWrt 系统。Seeeduino Cloud 也是一款与 [Arduino Yun](https://www.arduino.cc/en/Main/ArduinoBoardYun) 兼容的开发板。该套件包含最常用的传感器和执行器，帮助您将想法转化为基于 AWS 云计算的实际应用。
+**<a href="/cn/Seeeduino_Cloud" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a>** 是一款基于 Dragino WiFi IoT 模块 [HE](http://www.dragino.com/products/linux-module/item/87-he.html) 和 ATmega32u4 的微控制器开发板。**HE** 是一个高性能、低成本的 150M、2.4G WiFi 模块，内置开源 OpenWrt 系统。Seeeduino Cloud 也是一款与 [Arduino Yun](https://www.arduino.cc/en/Main/ArduinoBoardYun) 兼容的开发板。该套件包含最常用的传感器和执行器，帮助您将想法转化为基于 AWS 云计算的实际应用。
 
 [![enter image description here](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://wwww.amazon.com/dp/B01669BB60)
 
@@ -33,18 +33,18 @@ last_update:
 
 | 开发板/零件                                                                                                                                            | 数量 | 文档                                                                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|-----|-------------------------------------------------------------------------------|
-| [Seeeduino Cloud 开发板](https://www.seeedstudio.com/Seeeduino-Cloud-Arduino-Yun-compatible-openWRT-controller-p-2123.html?cPath=6_7) | 1   | <a href="/Seeeduino_Cloud" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a>                               |
-| [Base Shield](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html?cPath=98_16)                                                                | 1   | [点击阅读](/Base_Shield_V2/ "Base shield v2")                                 |
-| [Grove - LCD RGB 背光](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html?cPath=34_36)                                         | 1   | [点击阅读](/Grove-LCD_RGB_Backlight "Grove - LCD RGB Backlight")             |
-| [Grove - 继电器](https://www.seeedstudio.com/Grove-Relay-p-769.html?cPath=39_42)                                                                  | 1   | [点击阅读](/Grove-Relay "Grove - Relay")                                     |
-| [Grove - 蜂鸣器](https://www.seeedstudio.com/Grove-Buzzer-p-768.html?cPath=38)                                                                   | 1   | [点击阅读](/Grove-Buzzer "Grove - Buzzer")                                   |
-| [Grove - 声音传感器](https://www.seeedstudio.com/Grove-Sound-Sensor-p-752.html?cPath=25_128)                                                   | 1   | [点击阅读](/Grove-Sound_Sensor "Grove - Sound Sensor")                       |
-| [Grove - 触摸传感器](https://www.seeedstudio.com/Grove-Touch-Sensor-p-747.html?cPath=85_94)                                                    | 1   | [点击阅读](/Grove-Touch_Sensor "Grove - Touch Sensor")                       |
-| [Grove - 旋转角度传感器](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor-p-770.html?cPath=85_52)                                      | 1   | [点击阅读](/Grove-Rotary_Angle_Sensor "Grove - Rotary Angle Sensor")         |
-| [Grove - 温度传感器](https://www.seeedstudio.com/Grove-Temperature-Sensor-p-774.html?cPath=25_125)                                       | 1   | [点击阅读](/Grove-Temperature_Sensor_V1.2 "Grove - Temperature Sensor V1.2") |
-| [Grove - LED](https://www.seeedstudio.com/Grove-LED-p-767.html)                                                                                  | 1   | [点击阅读](/Grove-Red_LED "Grove-Red_LED")                                         |
-| [Grove - 光线传感器](https://www.seeedstudio.com/Grove-Light-Sensor-p-746.html?cPath=25_27)                                                    | 1   | [点击阅读](/Grove-Light_Sensor "Grove - Light Sensor")                       |
-| [Grove – 按钮](https://www.seeedstudio.com/Grove-Button-p-766.html?cPath=85_50)                                                                | 1   | [点击阅读](/Grove-Button "Grove - Button")                                   |
+| [Seeeduino Cloud 开发板](https://www.seeedstudio.com/Seeeduino-Cloud-Arduino-Yun-compatible-openWRT-controller-p-2123.html?cPath=6_7) | 1   | <a href="/cn/Seeeduino_Cloud" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a>                               |
+| [Base Shield](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html?cPath=98_16)                                                                | 1   | [点击阅读](/cn/Base_Shield_V2/ "Base shield v2")                                 |
+| [Grove - LCD RGB 背光](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html?cPath=34_36)                                         | 1   | [点击阅读](/cn/Grove-LCD_RGB_Backlight "Grove - LCD RGB Backlight")             |
+| [Grove - 继电器](https://www.seeedstudio.com/Grove-Relay-p-769.html?cPath=39_42)                                                                  | 1   | [点击阅读](/cn/Grove-Relay "Grove - Relay")                                     |
+| [Grove - 蜂鸣器](https://www.seeedstudio.com/Grove-Buzzer-p-768.html?cPath=38)                                                                   | 1   | [点击阅读](/cn/Grove-Buzzer "Grove - Buzzer")                                   |
+| [Grove - 声音传感器](https://www.seeedstudio.com/Grove-Sound-Sensor-p-752.html?cPath=25_128)                                                   | 1   | [点击阅读](/cn/Grove-Sound_Sensor "Grove - Sound Sensor")                       |
+| [Grove - 触摸传感器](https://www.seeedstudio.com/Grove-Touch-Sensor-p-747.html?cPath=85_94)                                                    | 1   | [点击阅读](/cn/Grove-Touch_Sensor "Grove - Touch Sensor")                       |
+| [Grove - 旋转角度传感器](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor-p-770.html?cPath=85_52)                                      | 1   | [点击阅读](/cn/Grove-Rotary_Angle_Sensor "Grove - Rotary Angle Sensor")         |
+| [Grove - 温度传感器](https://www.seeedstudio.com/Grove-Temperature-Sensor-p-774.html?cPath=25_125)                                       | 1   | [点击阅读](/cn/Grove-Temperature_Sensor_V1.2 "Grove - Temperature Sensor V1.2") |
+| [Grove - LED](https://www.seeedstudio.com/Grove-LED-p-767.html)                                                                                  | 1   | [点击阅读](/cn/Grove-Red_LED "Grove-Red_LED")                                         |
+| [Grove - 光线传感器](https://www.seeedstudio.com/Grove-Light-Sensor-p-746.html?cPath=25_27)                                                    | 1   | [点击阅读](/cn/Grove-Light_Sensor "Grove - Light Sensor")                       |
+| [Grove – 按钮](https://www.seeedstudio.com/Grove-Button-p-766.html?cPath=85_50)                                                                | 1   | [点击阅读](/cn/Grove-Button "Grove - Button")                                   |
 | DIP LED 蓝色-蓝色                                                                                                                                     | 1   |                                                                               |
 | DIP LED 绿色-绿色                                                                                                                                   | 1   |                                                                               |
 | DIP LED 红色-红色                                                                                                                                       | 1   |                                                                               |
@@ -103,7 +103,7 @@ last_update:
 
 ### Seeeduino Cloud (Arduino Yun) 入门
 
-如果这是您第一次使用 Seeeduino Cloud 或 Arduino Yun，您可以点击 <a href="/Seeeduino_Cloud" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a> 开始使用。在进行以下步骤之前，请确保您的计算机上已安装 **expect** 并正确安装了 [Arduino IDE](https://www.arduino.cc/en/Main/OldSoftwareReleases)。
+如果这是您第一次使用 Seeeduino Cloud 或 Arduino Yun，您可以点击 <a href="/cn/Seeeduino_Cloud" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a> 开始使用。在进行以下步骤之前，请确保您的计算机上已安装 **expect** 并正确安装了 [Arduino IDE](https://www.arduino.cc/en/Main/OldSoftwareReleases)。
 
 ### 下载 AWS-IoT-Arduino-Yún-SDK
 
@@ -123,7 +123,7 @@ last_update:
 
 #### 设置开发板
 
-- 步骤 1. 设置 Arduino Yún 开发板并将其连接到 WiFi。获取其 IP 地址和密码。如果您不知道如何操作，可以按照这个 <a href="/Seeeduino_Cloud#getting-started" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a> 教程。
+- 步骤 1. 设置 Arduino Yún 开发板并将其连接到 WiFi。获取其 IP 地址和密码。如果您不知道如何操作，可以按照这个 <a href="/cn/Seeeduino_Cloud#getting-started" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a> 教程。
 - 步骤 2. 确保您的计算机连接到同一网络（本地 IP 地址范围）。
 - 步骤 3. 从[这里](https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem)下载 AWS IoT CA 文件。并将其保存为 *root-CA.crt*。
 - 步骤 4. 将您的 AWS IoT CA 文件、私钥和证书放入 AWS-IoT-Arduino-Yun-SDK/AWS-IoT-Python-Runtime/certs。
@@ -145,7 +145,7 @@ last_update:
 
 在进行以下步骤之前，请确保您的 PC 上已安装 Putty 和 WinSCP。如果您更喜欢使用其他工具通过 SSH 连接到您的 Arduino Yún 开发板和传输文件，您需要根据您的工具调整以下步骤。Putty 可以从[这里](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)下载。WinSCP 可以从[这里](http://winscp.net/eng/download.php)下载。设置开发板。
 
-- 步骤 1. 设置 Arduino Yún Cloud 开发板并将其连接到 WiFi。获取其 IP 地址和密码。如果您不知道如何操作，请按照这个 <a href="/Seeeduino_Cloud#getting-started" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a>。
+- 步骤 1. 设置 Arduino Yún Cloud 开发板并将其连接到 WiFi。获取其 IP 地址和密码。如果您不知道如何操作，请按照这个 <a href="/cn/Seeeduino_Cloud#getting-started" ><span><font size={"3"}>Seeeduino Cloud 开发板</font></span></a>。
 
 - 步骤 2. 确保您的 PC 连接到同一网络（本地 IP 地址范围）。
 
@@ -223,7 +223,7 @@ pip install AWSIoTPythonSDK==1.0.0
 ---------
 
 - [AWS IoT 文档](http://aws.amazon.com/documentation/iot/)
-- <a href="/Seeeduino_Cloud" ><span><font size={"3"}>Seeeduino Cloud wiki 页面</font></span></a>
+- <a href="/cn/Seeeduino_Cloud" ><span><font size={"3"}>Seeeduino Cloud wiki 页面</font></span></a>
 - [AWS IoT Arduino Yún SDK](https://github.com/aws/aws-iot-device-sdk-arduino-yun)
 
 ## 技术支持与产品讨论

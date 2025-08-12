@@ -174,7 +174,7 @@ dd if=$\* of=/Volumes/CRP\\ DISABLD/firmware.bin conv=notrunc
 
 **関連情報**
 
-- [SIM900 GPRS モジュール情報](/GPRS_Shield_V2.0)
+- [SIM900 GPRS モジュール情報](/ja/GPRS_Shield_V2.0)
 
 <!-- この Markdown ファイルは https://www.seeedstudio.com/wiki/Arch_GPRS_V2 から作成されました -->
 

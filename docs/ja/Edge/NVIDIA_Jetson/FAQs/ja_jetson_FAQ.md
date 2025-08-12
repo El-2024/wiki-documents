@@ -16,27 +16,27 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### Q1: インストールのトラブルシューティング
 
-詳細については、[こちら](/Troubleshooting_Installation)をクリックしてください。
+詳細については、[こちら](/ja/Troubleshooting_Installation)をクリックしてください。
 
 #### Q2: 受け取ったreComputerのeMMCの残り容量が約2GBしかありません。容量不足の問題をどのように解決しますか？
 
-詳細については、[こちら](/solution_of_insufficient_space)をクリックしてください。
+詳細については、[こちら](/ja/solution_of_insufficient_space)をクリックしてください。
 
 #### Q3: reComputerとVEYEカメラの互換性の問題をどのように解決しますか？
 
-詳細については、[こちら](/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera)をクリックしてください。
+詳細については、[こちら](/ja/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera)をクリックしてください。
 
 #### Q4: IMX477カメラとA603キャリアボードの互換性の問題をどのように解決しますか？
 
-詳細については、[こちら](/Use_IMX477_Camera_with_A603_Jetson_Carrier_Board)をクリックしてください。
+詳細については、[こちら](/ja/Use_IMX477_Camera_with_A603_Jetson_Carrier_Board)をクリックしてください。
 
 #### Q5: reComputer J30/J40のシステムログをどのように取得しますか？
 
-詳細については、[こちら](/get_the_system_log_of_recomputer_j30_and_j40)をクリックしてください。
+詳細については、[こちら](/ja/get_the_system_log_of_recomputer_j30_and_j40)をクリックしてください。
 
 #### Q6: Jetpackのフラッシュ中にタイムアウトの問題が発生しました。
 
-詳細については、[こちら](/usb_timeout_during_flash)をクリックしてください。
+詳細については、[こちら](/ja/usb_timeout_during_flash)をクリックしてください。
 
 #### Q7: デバイスをフラッシュした後、USB-Aポート、イーサネットポートが使用できない、またはHDMIディスプレイが表示されません。
 **A:** ファイルの整合性を確認してください（例：SHA256チェックサムを提供しています）。一部のキャリアボード（特にA60Xシリーズ）では、ドライバーパッチが**Linux_for_tegra**ディレクトリに正常にコピー/適用されていることを確認してください。いくつかのファイルには**sudo**権限が必要であり、ディレクトリをコピーする際には、コマンドに**-r**パラメータが含まれていることを確認してください。
@@ -46,15 +46,15 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### Q9: apt upgradeを実行できないと言われましたが、ソフトウェアパッケージをどのようにアップグレードできますか？ソフトウェアをアップグレードしないとセキュリティリスクが発生しますか？
 
-詳細については、[こちら](/upgrade_software_packages_for_jetson)をクリックしてください。
+詳細については、[こちら](/ja/upgrade_software_packages_for_jetson)をクリックしてください。
 
 <!-- #### Q10: JetsonデバイスのシステムバージョンをOTA（Over-the-Air）方式でアップグレードする方法 -->
 
-<!-- 詳細については、[こちら](/updating_jetpack_with_ota)をクリックしてください。 -->
+<!-- 詳細については、[こちら](/ja/updating_jetpack_with_ota)をクリックしてください。 -->
 
 #### Q11: SeeedはNVIDIAのJetson BSPにどのような変更を加えていますか？
 
-詳細については、[こちら](/differences_of_l4t_between_seeed_and_nvidia)をクリックしてください。
+詳細については、[こちら](/ja/differences_of_l4t_between_seeed_and_nvidia)をクリックしてください。
 
 # 技術サポート
 

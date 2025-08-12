@@ -57,7 +57,7 @@ OpenWrtをミニルーターで使用する前に、以下のハードウェア�
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Mini_Router/mini_router_overview2.png" alt="pir" width="650" height="auto"/></p>
 
 ## FAQ
-詳細については、[**こちら**](/FAQs_For_openWrt)をクリックしてください。
+詳細については、[**こちら**](/ja/FAQs_For_openWrt)をクリックしてください。
 
 ## リソース
 

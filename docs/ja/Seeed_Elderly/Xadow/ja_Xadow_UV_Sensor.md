@@ -34,7 +34,7 @@ Xadow UV センサーは、日光中の紫外線放射を測定するのに適�
 ---
 Xadow UV センサーは、UV 指数に対応する電圧値を出力します。出力電圧と UV 指数の間には線形関係があるため、数式を使用して直接 UV 指数を確認することもできます。次に、UV センサーを使用して UV 指数を取得し、それを OLED 画面に表示する方法を示します。
 
-<!-- 必要な Xadow モジュール: [Xadow - Main Board](/Xadow_Main_Board/), [Xadow - OLED 128*64](/Xado_OLED_128multiply64/), **Xadow - UV Sensor** -->
+<!-- 必要な Xadow モジュール: [Xadow - Main Board](/ja/Xadow_Main_Board/), [Xadow - OLED 128*64](/ja/Xado_OLED_128multiply64/), **Xadow - UV Sensor** -->
 
 **ハードウェアのインストール**
 
@@ -44,7 +44,7 @@ Xadow UV センサーは、UV 指数に対応する電圧値を出力します�
 :::
 **コードのダウンロード**
 
-<!-- *   まず、Arduino ライブラリに [OLED_Display12864 ライブラリ](https://files.seeedstudio.com/wiki/Xadow_UV_Sensor/res/OLED_Display12864.zip) があることを確認してください。ない場合は、[こちら](https://github.com/Seeed-Studio/Grove_OLED_Display_128X64) をクリックしてダウンロードし、Arduino ライブラリに追加してください。操作に慣れるために、wiki ページの [Arduino ライブラリのインストール方法](/How_to_install_Arduino_Library/) を参照してください。 -->
+<!-- *   まず、Arduino ライブラリに [OLED_Display12864 ライブラリ](https://files.seeedstudio.com/wiki/Xadow_UV_Sensor/res/OLED_Display12864.zip) があることを確認してください。ない場合は、[こちら](https://github.com/Seeed-Studio/Grove_OLED_Display_128X64) をクリックしてダウンロードし、Arduino ライブラリに追加してください。操作に慣れるために、wiki ページの [Arduino ライブラリのインストール方法](/ja/How_to_install_Arduino_Library/) を参照してください。 -->
 
 *   次に、以下のコードを Arduino IDE にコピーして貼り付け、Xadow メインボードにアップロードします。
 ```

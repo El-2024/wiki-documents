@@ -16,7 +16,7 @@ last_update:
 
 **连接**
 
-<!-- *   [Grove - Light_Sensor](/Grove-Light_Sensor "Grove - Light Sensor") connect to A0. -->
+<!-- *   [Grove - Light_Sensor](/cn/Grove-Light_Sensor "Grove - Light Sensor") connect to A0. -->
 
 *   GSM 天线
 

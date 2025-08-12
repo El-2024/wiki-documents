@@ -48,7 +48,7 @@ last_update:
 
 此 Grove 模块可作为以下 Grove 套件系列的一部分提供：
 
-<!-- * [Grove Mixer Pack V2](/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
+<!-- * [Grove Mixer Pack V2](/cn/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
 
 请注意，DC 插孔电源 Grove 模块仅作为上述套件的一部分出售，Seeed Studio Bazaar 不单独提供。
 

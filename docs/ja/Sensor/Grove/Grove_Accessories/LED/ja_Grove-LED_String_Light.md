@@ -49,7 +49,7 @@ Grove - LED String Light モジュールは、パックに含まれる LED ス�
 
 1.  まず、JST2.0 二線式インターフェースを使用して **Grove - LED String Light** モジュールに LED ストリングライトを接続します。
 
-2.  LED ストリングライトモジュールを回路の出力側（電源モジュールの右側）に接続します。回路の入力側には、センサーをベースとした入力モジュール（[Grove - Light Sensor](/Grove-Light_Sensor/)、[Grove - Sound Sensor](/Grove-Sound_Sensor/)、[Grove - Button](/Grove-Button/) または [Grove - Slide Potentiometer](/Grove-Slide_Potentiometer/)）を使用できます。
+2.  LED ストリングライトモジュールを回路の出力側（電源モジュールの右側）に接続します。回路の入力側には、センサーをベースとした入力モジュール（[Grove - Light Sensor](/ja/Grove-Light_Sensor/)、[Grove - Sound Sensor](/ja/Grove-Sound_Sensor/)、[Grove - Button](/ja/Grove-Button/) または [Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer/)）を使用できます。
 
 3.  回路に電源を供給します。
 
@@ -59,7 +59,7 @@ Grove - LED String Light モジュールは、パックに含まれる LED ス�
 
 音センサーを使用する場合、音を検知すると LED が点灯するのが見えるはずです。逆に、常時ライトを点灯させたい場合（音があるときだけ消灯させたい場合）は、音センサーと電源モジュールの間に Grove - NOT モジュールを追加してください。
 
-[Grove - Button](/Grove-Button/) モジュールのようなモーメンタリースイッチを使用する場合、ボタンを押すだけでストリングライトが点灯します。
+[Grove - Button](/ja/Grove-Button/) モジュールのようなモーメンタリースイッチを使用する場合、ボタンを押すだけでストリングライトが点灯します。
 
 * スライドポテンショメーターを使用する場合、スライダーを GND 位置から VCC 位置に移動すると、供給電圧が増加するにつれてライトの明るさが増加するのが見えます。
 <!-- </dd></dl>
@@ -77,7 +77,7 @@ Grove - USB Power モジュールがない場合は、代わりに Grove - DC Ja
 ---
 この Grove モジュールは、以下の Grove キットシリーズの一部として利用可能です。
 
-<!-- 链接有问题*   [Grove Mixer Pack V2](/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
+<!-- 链接有问题*   [Grove Mixer Pack V2](/ja/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
 
 または、Seeed Studio バザールで単体購入することもできます。
 

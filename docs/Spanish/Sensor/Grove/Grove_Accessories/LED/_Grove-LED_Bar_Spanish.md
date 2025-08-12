@@ -34,7 +34,7 @@ El Grove - Barra LED es un compuesto de 10 segmentos LED en forma de barra medid
 - Suli-compatible Library
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Especificaciones
 
@@ -63,7 +63,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 ## Primeros Pasos
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
 
 ### Jugando con Arduino
 
@@ -96,13 +96,13 @@ Si no tienes la Shield Base - Grove, puedes conectar directamente el módulo Gro
 
 - **Paso 1.** Descarga la librería [Grove - LED Bar Library](https://github.com/Seeed-Studio/Grove_LED_Bar) desde GitHub.
 
-- **Paso 2.** Refiere a [How to install library](http://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar la librería para Arduino.
+- **Paso 2.** Refiere a [How to install library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar la librería para Arduino.
 
 - **Paso 3.** Reinica el Arduino IDE. Abre el ejemplo "Level" usando el path: **Archivo --> Ejemplos --> Grove LED Bar --> Level**.
 
 ![](https://github.com/SeeedDocument/Grove-LED_Bar/raw/master/img/code.png)
 
-- **Paso 4.** Sube la demostración. Si no sabe como hacerlo, por favor revisa [how to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 4.** Sube la demostración. Si no sabe como hacerlo, por favor revisa [how to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 Deberás ver algo así:
 

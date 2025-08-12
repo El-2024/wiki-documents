@@ -58,7 +58,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ---
 
 * Bluetooth通信を備えたArduino互換モジュール
-<!-- *   Bluetooth Serial Port for PC when connected with [UartSBee](/UartSBee_V4) and uploading SoftSerial program to **ATMEGA168**. -->
+<!-- *   Bluetooth Serial Port for PC when connected with [UartSBee](/ja/UartSBee_V4) and uploading SoftSerial program to **ATMEGA168**. -->
 
 :::caution
     *3.3V電源が必要です。
@@ -82,7 +82,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## 使用方法
 
 ---
-<!-- 例: Bluetooth Bee-Standalone を使用して XBee キャリアで [Grove-Red_LED](/Grove-Red_LED) を制御します。 -->
+<!-- 例: Bluetooth Bee-Standalone を使用して XBee キャリアで [Grove-Red_LED](/ja/Grove-Red_LED) を制御します。 -->
 
 * ステップ 1
 
@@ -215,7 +215,7 @@ XBee キャリアから USB ケーブルを取り外し、3.7V バッテリー�
 
 * ステップ 5
 
-<!-- 別の Bluetooth Bee を使用して Bluetooth Bee-Standalone に接続します。接続方法については [Bluetooth Bee](/Bluetooth_Bee) を参照してください。接続が完了すると、別の Bluetooth Bee を使用して LED を制御できます。"ON" を Bluetooth Bee-Standalone に送信すると LED が動作し、"SH"（SHUT の略）を送信すると LED がオフになります。 -->
+<!-- 別の Bluetooth Bee を使用して Bluetooth Bee-Standalone に接続します。接続方法については [Bluetooth Bee](/ja/Bluetooth_Bee) を参照してください。接続が完了すると、別の Bluetooth Bee を使用して LED を制御できます。"ON" を Bluetooth Bee-Standalone に送信すると LED が動作し、"SH"（SHUT の略）を送信すると LED がオフになります。 -->
 
 ![](https://files.seeedstudio.com/wiki/Bluetooth_Bee_Standalone/img/Bluetooth_Bee-Standalone1.jpg)
 

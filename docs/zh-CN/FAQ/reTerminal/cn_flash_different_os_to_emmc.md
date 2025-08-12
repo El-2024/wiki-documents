@@ -43,7 +43,7 @@ Windows 将自动检测硬件并安装必要的驱动程序
 - **步骤 4.** 打开 **文件资源管理器**，您将看到 CM4 的 eMMC 显示为 **USB 大容量存储设备**
 
 :::caution
-如果您要刷入 **reTerminal 原装的 Raspberry Pi OS**，请返回此 [Wiki](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)。  
+如果您要刷入 **reTerminal 原装的 Raspberry Pi OS**，请返回此 [Wiki](/cn/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)。  
 否则，请继续以下步骤。
 :::
 
@@ -77,7 +77,7 @@ Windows 将自动检测硬件并安装必要的驱动程序
 
 - **步骤 11.** 将 **启动模式开关** 翻回原始位置，并重新组装 reTerminal 的外壳
 
-现在您可以跳转到 **[这里](/log_rpios_use_ssh_over_wifi_ethernet)**
+现在您可以跳转到 **[这里](/cn/log_rpios_use_ssh_over_wifi_ethernet)**
 
 ### 对于 MAC
 
@@ -120,7 +120,7 @@ sudo ./rpiboot
 - **步骤 6.** 使用 USB Type-C 数据线将 reTerminal 连接到您的 Mac 电脑
 
 :::caution
-如果您要刷入 **reTerminal 原装的 Raspberry Pi OS**，请返回此 [Wiki](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)。  
+如果您要刷入 **reTerminal 原装的 Raspberry Pi OS**，请返回此 [Wiki](/cn/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)。  
 否则，请继续以下步骤。
 :::
 
@@ -202,7 +202,7 @@ sudo ./rpiboot
 - **步骤 7.** 通过 USB Type-C 数据线将 reTerminal 连接到 PC
 
 :::caution
-如果你刷写的是 **reTerminal 原装的 Raspberry Pi OS**，请返回此 [Wiki](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)。<br/>
+如果你刷写的是 **reTerminal 原装的 Raspberry Pi OS**，请返回此 [Wiki](/cn/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)。<br/>
 否则，请继续以下步骤。
 :::
 

@@ -17,7 +17,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/Wireless_Sensor_Node-Solar_Kit/img/Wireless_Sensor_Node-Solar_Kit.jpg)
 
-**ワイヤレスセンサーノード - ソーラーキット**は、XBeeおよび**XBee**互換のスタンドアロン型ワイヤレスモジュール（RFBeeや[Wifi Bee](/Wifi_Bee "Wifi Bee")など）を使った実験のために作られた使いやすいバンドルです。すべての**メーカー**は、**ワイヤレスセンサーノード**を構築するために適切なコンポーネントセットを選択するという課題に直面します。**ワイヤレスセンサーノード - ソーラーキット**は、このニーズを非常に適切に満たします。Grove - XBee Carrierは、LDO電源供給、LiPoバッテリーの充電器、および**XBee**互換モジュールのプログラミングポートを提供します。**ソーラーパネル**は、遠隔地で必要な充電電圧を提供します。**500mAH LiPoバッテリー**は、太陽がないときのバックアップを提供します。適切に設計および構成されたワイヤレスモジュールは、非常に長時間の使用を可能にします。そのためには、センサー値を送信していないときにノードをスリープ状態にする必要があります。このキットには、完璧に作られた**透明ボックス**、**ネジ**セット、および**プラスチックリベット**が付属しています。
+**ワイヤレスセンサーノード - ソーラーキット**は、XBeeおよび**XBee**互換のスタンドアロン型ワイヤレスモジュール（RFBeeや[Wifi Bee](/ja/Wifi_Bee "Wifi Bee")など）を使った実験のために作られた使いやすいバンドルです。すべての**メーカー**は、**ワイヤレスセンサーノード**を構築するために適切なコンポーネントセットを選択するという課題に直面します。**ワイヤレスセンサーノード - ソーラーキット**は、このニーズを非常に適切に満たします。Grove - XBee Carrierは、LDO電源供給、LiPoバッテリーの充電器、および**XBee**互換モジュールのプログラミングポートを提供します。**ソーラーパネル**は、遠隔地で必要な充電電圧を提供します。**500mAH LiPoバッテリー**は、太陽がないときのバックアップを提供します。適切に設計および構成されたワイヤレスモジュールは、非常に長時間の使用を可能にします。そのためには、センサー値を送信していないときにノードをスリープ状態にする必要があります。このキットには、完璧に作られた**透明ボックス**、**ネジ**セット、および**プラスチックリベット**が付属しています。
 
 * 分散型センサーノードの配列を作成するために、複数のキットを購入することをお勧めします。
 
@@ -168,9 +168,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 Bee モジュールのセットアップおよびプログラミング方法についての情報は以下をご覧ください：
 
-* [Grove - XBee_Carrier](/Grove-XBee_Carrier "Grove - XBee Carrier")
+* [Grove - XBee_Carrier](/ja/Grove-XBee_Carrier "Grove - XBee Carrier")
 
-* [Wifi Bee ページ](/Wifi_Bee "Wifi Bee")
+* [Wifi Bee ページ](/ja/Wifi_Bee "Wifi Bee")
 
 ## 画像ギャラリー
 
@@ -181,19 +181,19 @@ Bee モジュールのセットアップおよびプログラミング方法に�
 
 ## 関連情報
 
-* [Grove - XBee_Carrier](/Grove-XBee_Carrier "Grove - XBee Carrier")
+* [Grove - XBee_Carrier](/ja/Grove-XBee_Carrier "Grove - XBee Carrier")
 
-* [Bees Shield](/Bees_Shield "Bees Shield")
+* [Bees Shield](/ja/Bees_Shield "Bees Shield")
 
-* [XBee](/XBee_Shield_V2.0 "XBee_Shield_V2.0")
+* [XBee](/ja/XBee_Shield_V2.0 "XBee_Shield_V2.0")
 
-* [Wifi Bee](/Wifi_Bee "Wifi Bee")
+* [Wifi Bee](/ja/Wifi_Bee "Wifi Bee")
 
-* [RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee_V1.1-Wireless_Arduino_compatible_node")
+* [RFBee](/ja/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee_V1.1-Wireless_Arduino_compatible_node")
 
-* [UartSBee](/UartSBee_V3.1 "UartSBee_V3.1")
+* [UartSBee](/ja/UartSBee_V3.1 "UartSBee_V3.1")
 
-* <a href="/Seeeduino_V2.2" ><span><font color={'000000'} size={"3"}> Seeeduino V2.2</font></span></a>
+* <a href="/ja/Seeeduino_V2.2" ><span><font color={'000000'} size={"3"}> Seeeduino V2.2</font></span></a>
 
 ## 技術サポートと製品ディスカッション
 

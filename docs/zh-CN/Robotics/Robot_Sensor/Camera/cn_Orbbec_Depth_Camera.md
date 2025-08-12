@@ -26,7 +26,7 @@ last_update:
 </div>
 
 ## 前置条件
-- __[reComputer J30/40 系列](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__：我们基于 [JetPack 5.x 系统](/reComputer_J4012_Flash_Jetpack) 和 [ROS Noetic 环境](/installing_ros1) 进行教程。
+- __[reComputer J30/40 系列](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__：我们基于 [JetPack 5.x 系统](/cn/reComputer_J4012_Flash_Jetpack) 和 [ROS Noetic 环境](/cn/installing_ros1) 进行教程。
 
 - 安装依赖项（请根据您的 ROS 发行版选择）：
   
@@ -39,7 +39,7 @@ last_update:
 
 ## 入门指南
 ### 连接相机
-通过 USB Type-C 将 Orbbec 深度相机连接到 Jetson，并确保您的系统上已经[安装了 ROS](/installing_ros1)。
+通过 USB Type-C 将 Orbbec 深度相机连接到 Jetson，并确保您的系统上已经[安装了 ROS](/cn/installing_ros1)。
 
 <div align="center">
       <img width={700} 

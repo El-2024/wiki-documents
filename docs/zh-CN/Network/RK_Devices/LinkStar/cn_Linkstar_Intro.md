@@ -14,8 +14,8 @@ last_update:
 
 ## Linkstar 入门指南
 
-- [硬件概览与介绍](/Linkstar_Datasheet)
-- [原始操作系统安装](/linkstar-install-system)
+- [硬件概览与介绍](/cn/Linkstar_Datasheet)
+- [原始操作系统安装](/cn/linkstar-install-system)
 
 ## Seeed Studio 提供的 Linkstar 应用案例
 

@@ -70,14 +70,14 @@ last_update:
 ---
 ###   通过 Uart Bee 将蓝牙连接到 PC
 
-<!-- 蓝牙提供了一个标准的 XBee 插座。在这里我们使用 [UartSBee V5](/UartSBee_v5) 将蓝牙连接到 PC，确保通过滑块选择供电电压为 3.3V。 -->
+<!-- 蓝牙提供了一个标准的 XBee 插座。在这里我们使用 [UartSBee V5](/cn/UartSBee_v5) 将蓝牙连接到 PC，确保通过滑块选择供电电压为 3.3V。 -->
 
 |![](https://files.seeedstudio.com/wiki/Bluetooth_Bee_v2.0/img/Bluetooth_Bee_v2.0_ConnectToPC.jpg)|![](https://files.seeedstudio.com/wiki/Bluetooth_Bee_v2.0/img/Bluetooth_Bee_v2.0_ConnectToPCSet.jpg)
 |---|---|
 
 ###   将蓝牙连接到 Arduino
 
-<!-- 在这里我们使用 [XBee Shield](/XBee_Shield_V2.0) 作为蓝牙和 [Seeeduino Lotus](/Seeeduino_Lotus) 之间的桥梁。 -->
+<!-- 在这里我们使用 [XBee Shield](/cn/XBee_Shield_V2.0) 作为蓝牙和 [Seeeduino Lotus](/cn/Seeeduino_Lotus) 之间的桥梁。 -->
 
 由于 Seeeduino 的硬件 UART 用于与 PC 的调试，我们选择 D2 和 D3 来模拟软件 UART 与蓝牙通信。请参考下图中的跳线设置。
 

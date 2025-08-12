@@ -336,7 +336,7 @@ void loop() {
 
    - 如果您想在例程中使用 **Seeed Studio XIAO ESP32C3**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/XIAO_ESP32C3_Getting_Started#software-setup)** 完成添加。
 
-   - 如果您想在例程中使用 **Seeed Studio XIAO ESP32S3**，请参考 **[此教程](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
+   - 如果您想在例程中使用 **Seeed Studio XIAO ESP32S3**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
 
    - 如果您想在例程中使用 **Seeed Studio XIAO ESP32C6**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32c6_getting_started/)** 完成添加。
 

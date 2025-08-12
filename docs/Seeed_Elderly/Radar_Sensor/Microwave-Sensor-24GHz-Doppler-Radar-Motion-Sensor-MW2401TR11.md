@@ -243,7 +243,7 @@ void loop() {
 
 ## Resource
 
-- **[PDF]** [Microwave Sensor - 24GHz Doppler Radar Motion Sensor - MW2401TR11](http://wiki.seeedstudio.com/Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11/MW2401TR11_datasheet.zip)
+- **[PDF]** [Microwave Sensor - 24GHz Doppler Radar Motion Sensor - MW2401TR11](https://wiki.seeedstudio.com/Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11/MW2401TR11_datasheet.zip)
 
 ## Tech Support & Product Discussion
 

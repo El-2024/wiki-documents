@@ -12,4 +12,4 @@ last_update:
 
 根据 [github.com/Seeed-Studio/pi-gen-expand/commit/8affb3b](https://github.com/Seeed-Studio/pi-gen-expand/commit/8affb3b)，此问题的修复已集成到驱动程序中，因此您无需手动执行额外步骤。
 
-对于较早版本，请考虑从 [github.com/Seeed-Studio/seeed-linux-dtoverlays](https://github.com/Seeed-Studio/seeed-linux-dtoverlays) 重新安装驱动程序。详细步骤请参阅 [在刷新新的Raspbian OS后安装reTerminal驱动程序](/reterminal-dm-flash-OS/#install-reterminal-drivers-after-flashing-new-raspbian-os)。
+对于较早版本，请考虑从 [github.com/Seeed-Studio/seeed-linux-dtoverlays](https://github.com/Seeed-Studio/seeed-linux-dtoverlays) 重新安装驱动程序。详细步骤请参阅 [在刷新新的Raspbian OS后安装reTerminal驱动程序](/cn/reterminal-dm-flash-OS/#install-reterminal-drivers-after-flashing-new-raspbian-os)。

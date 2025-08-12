@@ -16,13 +16,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### Seeed Studio ファイルへの貢献をご検討いただきありがとうございます！
 
-この効率的な貢献プロセスは、ファイルをプルリクエストするための完全な手順を提供することを目的としています。Markdown ファイルや画像を追加するだけの場合は、[こちら](/quick_pull_request)をご確認ください。
+この効率的な貢献プロセスは、ファイルをプルリクエストするための完全な手順を提供することを目的としています。Markdown ファイルや画像を追加するだけの場合は、[こちら](/ja/quick_pull_request)をご確認ください。
 
 ## リポジトリへのファイル提出手順
 
 ### 前提条件: リポジトリを `git clone` し、ウェブサイトをローカルでデプロイする
 
-<strong><a href="/Deploy_Page_Locally"><span><font color={'8DC215'} size={"4"}>こちらをクリックしてウェブサイトをローカルでデプロイし、変更を確認できます！</font></span></a></strong>
+<strong><a href="/ja/Deploy_Page_Locally"><span><font color={'8DC215'} size={"4"}>こちらをクリックしてウェブサイトをローカルでデプロイし、変更を確認できます！</font></span></a></strong>
 
 ### 1. フォークしたブランチを最新の状態にする
 

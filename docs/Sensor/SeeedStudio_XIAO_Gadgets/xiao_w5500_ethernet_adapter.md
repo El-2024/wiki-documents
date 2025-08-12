@@ -175,7 +175,7 @@ Now that you have installed the required libraries and understand the basic func
 
 **Step 2.** Select your development board model and add it to the Arduino IDE.
 
-- To use **Seeed Studio XIAO ESP32-S3 Plus** for the later routines, please refer to **[this tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
+- To use **Seeed Studio XIAO ESP32-S3 Plus** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
 
 **Step 3.** Materials Required
 

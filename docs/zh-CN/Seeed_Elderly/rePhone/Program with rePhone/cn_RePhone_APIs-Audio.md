@@ -484,9 +484,9 @@ unsigned int task_uart_key()
 资源
 ---------
 
-<!-- -   [RePhone 主页面](/RePhone)
--   [Xadow - Audio](/Xadow_Audio)
--   [RePhone APIs 主页面](/RePhone) -->
+<!-- -   [RePhone 主页面](/cn/RePhone)
+-   [Xadow - Audio](/cn/Xadow_Audio)
+-   [RePhone APIs 主页面](/cn/RePhone) -->
 
 
 <!-- 此 Markdown 文件来源于 https://www.seeedstudio.com/wiki/RePhone_APIs_-_Audio -->

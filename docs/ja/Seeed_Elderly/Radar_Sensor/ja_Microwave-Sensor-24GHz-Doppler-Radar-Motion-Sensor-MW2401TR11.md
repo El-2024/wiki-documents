@@ -226,7 +226,7 @@ void loop() {
 
 ## リソース
 
-- **[PDF]** [マイクロ波センサー - 24GHzドップラー・レーダー・モーションセンサー - MW2401TR11](http://wiki.seeedstudio.com/Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11/MW2401TR11_datasheet.zip)
+- **[PDF]** [マイクロ波センサー - 24GHzドップラー・レーダー・モーションセンサー - MW2401TR11](https://wiki.seeedstudio.com/ja/Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11/MW2401TR11_datasheet.zip)
 
 ## 技術サポートと製品ディスカッション
 

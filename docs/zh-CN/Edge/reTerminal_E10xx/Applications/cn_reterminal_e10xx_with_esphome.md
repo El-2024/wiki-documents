@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/reterminal_e10xx_with_esphome"><strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong></a>
+    <a class="get_one_now_item" href="/cn/reterminal_e10xx_with_esphome"><strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong></a>
 </div>
 
 
@@ -82,7 +82,7 @@ ESPHome 是专为 ESP8266/ESP32 设备设计的开源固件创建工具。它允
     </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="/reterminal_e10xx_with_esphome">
+        <a class="get_one_now_item" href="/cn/reterminal_e10xx_with_esphome">
         <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
       </div></td>

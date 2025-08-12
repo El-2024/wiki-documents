@@ -137,7 +137,7 @@ void loop()
 
 ### カラーセンサーの例/応用
 
-この例では、Grove - I2C カラーセンサーの機能を使用し、[Chainable RGB LED Grove](/Grove-Chainable_RGB_LED/) を使用して検出された色を表示する方法を示します。
+この例では、Grove - I2C カラーセンサーの機能を使用し、[Chainable RGB LED Grove](/ja/Grove-Chainable_RGB_LED/) を使用して検出された色を表示する方法を示します。
 
 :::note
 Arduino IDE に <a href="https://github.com/Seeed-Studio/Grove_Chainable_RGB_LED">Grove-Chainable RGB LED ライブラリ</a> をまだダウンロードしていない場合は、まずライブラリをダウンロードしてセットアップしてください。

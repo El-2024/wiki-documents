@@ -19,11 +19,11 @@ last_update:
 :::success快速浏览
 以下是针对各种 XIAO 型号的上传失败、程序异常或设备端口未找到问题的故障排除方法。您可以通过以下链接快速索引：
 
-- [**XIAO SAMD21**](/noport_upload_fails/#for-xiao-samd21)
-- [**XIAO RP2040**](/noport_upload_fails/#for-xiao-rp2040)
-- [**XIAO nRF52840(Sense)**](/noport_upload_fails/#for-xiao-nrf52840-sense)
-- [**XIAO ESP32C3**](/noport_upload_fails/#for-xiao-esp32c3)
-- [**XIAO ESP32S3(Sense)**](/noport_upload_fails/#for-xiao-esp32s3-sense)
+- [**XIAO SAMD21**](/cn/noport_upload_fails/#for-xiao-samd21)
+- [**XIAO RP2040**](/cn/noport_upload_fails/#for-xiao-rp2040)
+- [**XIAO nRF52840(Sense)**](/cn/noport_upload_fails/#for-xiao-nrf52840-sense)
+- [**XIAO ESP32C3**](/cn/noport_upload_fails/#for-xiao-esp32c3)
+- [**XIAO ESP32S3(Sense)**](/cn/noport_upload_fails/#for-xiao-esp32s3-sense)
 :::
 
 ## **针对 XIAO SAMD21**

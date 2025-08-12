@@ -488,9 +488,9 @@ unsigned int task_uart_key()
 リソース
 ---------
 
-<!-- -   [RePhone のメイン Wiki](/RePhone)
--   [Xadow - Audio](/Xadow_Audio)
--   [RePhone API メインページ](/RePhone) -->
+<!-- -   [RePhone のメイン Wiki](/ja/RePhone)
+-   [Xadow - Audio](/ja/Xadow_Audio)
+-   [RePhone API メインページ](/ja/RePhone) -->
 
 
 <!-- この Markdown ファイルは https://www.seeedstudio.com/wiki/RePhone_APIs_-_Audio から作成されました -->

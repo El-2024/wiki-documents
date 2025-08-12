@@ -17,7 +17,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ![](https://files.seeedstudio.com/wiki/Grove-Bee_Socket/img/Bee_Socket_01.jpg)
 
 Grove - Bee Socket は、Xbee シリーズのアダプタであり、WIFI Bee、RF Bee、Bluetooth Bee などのワイヤレスモジュールを Arduino に接続することができます。Arduino 互換であり、ワイヤレスモジュールによって実行されるピアツーピアおよびメッシュネットワークの操作をより効果的に行うことができます。レギュレータ CJT1117 は、Xbee に安定した 3.3V の電圧を保証します。LED は、Grove の動作モードを明確に表示することができます。
-<!-- Grove-Bee Socket は [XBee Shield](/XBee_Shield_V2.0) と同じ機能を持っています。Grove-Bee Socket と Arduino はケーブルで接続され、XB Shield は Arduino に直接差し込むことができる標準アダプタです。 -->
+<!-- Grove-Bee Socket は [XBee Shield](/ja/XBee_Shield_V2.0) と同じ機能を持っています。Grove-Bee Socket と Arduino はケーブルで接続され、XB Shield は Arduino に直接差し込むことができる標準アダプタです。 -->
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Grove-Bee-Socket-p-1449.html)
 

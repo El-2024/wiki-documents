@@ -33,9 +33,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - コンピュータにインストールされた [ESP-IDF](https://github.com/espressif/esp-idf) ツールチェーン
 
 :::tip
-ユーザーインターフェース（UI）の変更方法を学びたい場合は、以下のガイドを参照してください: [独自のUIを作成する方法](/SenseCAP_Indicator_How_to_Create_your_own_UI)
+ユーザーインターフェース（UI）の変更方法を学びたい場合は、以下のガイドを参照してください: [独自のUIを作成する方法](/ja/SenseCAP_Indicator_How_to_Create_your_own_UI)
 
-まだIDFツールチェーンをインストールしていない場合は、以下のガイドに従ってください: [デフォルトファームウェアをフラッシュする方法](/SenseCAP_Indicator_How_To_Flash_The_Default_Firmware)
+まだIDFツールチェーンをインストールしていない場合は、以下のガイドに従ってください: [デフォルトファームウェアをフラッシュする方法](/ja/SenseCAP_Indicator_How_To_Flash_The_Default_Firmware)
 :::
 
 ## 始めましょう
@@ -64,7 +64,7 @@ SenseCAP Indicator x ChatGPT x DALL·E アプリケーションはMVC（モデ�
 
 - Model（モデル）: Modelには`indicator_openai.c`ファイルが含まれており、`indicator_openai_init()`関数が含まれています。この関数はModelエントリで実行されると、OpenAIにリクエストを送信し、レスポンスを受信して解析し、Viewを通じて画面に表示します。
 
-以下はModelの主要な機能とワークフローです（[APIキー](/Sensor/SenseCAP/SenseCAP_Indicator/Set_An_API_Key)が保存された後）:
+以下はModelの主要な機能とワークフローです（[APIキー](/ja/Sensor/SenseCAP/SenseCAP_Indicator/Set_An_API_Key)が保存された後）:
 
 #### **ChatGPTフローチャート**
 
@@ -870,10 +870,10 @@ int indicator_openai_init(void)
 
 ## リソース
 
-1. [SenseCAP Indicator X ChatGPT](/SenseCAP_Indicator_ChatGPT)
-2. [SenseCAP Indicator X DALL·E](/SenseCAP_Indicator_DALL·E)
+1. [SenseCAP Indicator X ChatGPT](/ja/SenseCAP_Indicator_ChatGPT)
+2. [SenseCAP Indicator X DALL·E](/ja/SenseCAP_Indicator_DALL·E)
 3. **デモ SDK**: SenseCAP Indicator のデモ SDK は [GitHub](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32) で利用可能です。
-4. **SenseCAP Indicator ユーザーガイド**: このユーザーガイドでは、SenseCAP Indicator ボードのソフトウェアとハードウェアに関する詳細情報を提供しています。[こちら](/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator)からご覧いただけます。
+4. **SenseCAP Indicator ユーザーガイド**: このユーザーガイドでは、SenseCAP Indicator ボードのソフトウェアとハードウェアに関する詳細情報を提供しています。[こちら](/ja/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator)からご覧いただけます。
 5. **Chat completions OpenAI ガイド**: Chat API を初めて使用する場合、このガイドが導入をサポートします。[こちら](https://platform.openai.com/docs/guides/chat/chat-completions-beta)で確認できます。
 6. **`indicator_openai.c` ファイル**: このファイルには、`ChatGPT` および `DALL·E` 統合の主要な関数が含まれています。[こちら](https://raw.githubusercontent.com/Seeed-Solution/SenseCAP_Indicator_ESP32/main/examples/indicator_openai/main/model/indicator_openai.c)で閲覧できます。
 7. **ESP-IDF の入門ガイド**: このガイドでは、ESP-IDF を構成してプロジェクトを構築するための完全な手順を提供しています。[こちら](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html)からアクセスできます。

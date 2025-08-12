@@ -118,7 +118,7 @@ GPS 接收器具有极高的灵敏度，支持 22 个跟踪通道和 66 个捕�
 
 ### 使用 AT 指令入门
 
-该模块通过串口使用 AT 指令进行控制，这里我们使用 Arduino 作为 USB 转串口工具。将以下代码上传到 Arduino 并打开串口监视器。如果您使用其他 USB 转串口工具，可以使用 [AT Command Tester](/AT_Command_Tester_Application) 或 [SSCOM32](https://files.seeedstudio.com/wiki/LoNet_808-Mini_GSM_GPRS_Plus_GPS_Breakout/res/Sscom32E.zip) 测试 AT 指令。
+该模块通过串口使用 AT 指令进行控制，这里我们使用 Arduino 作为 USB 转串口工具。将以下代码上传到 Arduino 并打开串口监视器。如果您使用其他 USB 转串口工具，可以使用 [AT Command Tester](/cn/AT_Command_Tester_Application) 或 [SSCOM32](https://files.seeedstudio.com/wiki/LoNet_808-Mini_GSM_GPRS_Plus_GPS_Breakout/res/Sscom32E.zip) 测试 AT 指令。
 
 ```arduino
 // 此代码用于使用 Arduino 测试 LoNet

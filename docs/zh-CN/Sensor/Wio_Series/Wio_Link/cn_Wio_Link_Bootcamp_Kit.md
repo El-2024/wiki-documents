@@ -35,11 +35,11 @@ last_update:
 
 | 零件名称                                                                                               | 数量 |
 |----------------------------------------------------------------------------------------------------------|----------|
-| [Grove - 继电器](/Grove-Relay/)                                                                            | 1个     |
-| [Grove - 录音器](/Grove-Recorder_v2.0/)                                                                 | 1个     |
+| [Grove - 继电器](/cn/Grove-Relay/)                                                                            | 1个     |
+| [Grove - 录音器](/cn/Grove-Recorder_v2.0/)                                                                 | 1个     |
 | Grove - WS2812 防水LED灯带 - 30颗LED 1米                                                    | 1个     |
-| [Grove - 蜂鸣器](/Grove-Buzzer/)                                                                          | 1个     |
-| [Wio Link](/Wio_Link/)                                                                                    | 1个     |
+| [Grove - 蜂鸣器](/cn/Grove-Buzzer/)                                                                          | 1个     |
+| [Wio Link](/cn/Wio_Link/)                                                                                    | 1个     |
 | [Micro USB线缆 - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html?queryID=39d1b009a50fc3dc9e5a02a476ecb407&objectID=1405&indexName=bazaar_retailer_products) | 1个     |
 | [Grove - 舵机](https://www.seeedstudio.com/Grove-Servo.html?queryID=ef605ab9a8a236dec86d63eec8c17796&objectID=1626&indexName=bazaar_retailer_products)                                | 1个     |
 
@@ -51,12 +51,12 @@ last_update:
 ### 初步指南
 
 -   Travis CI
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/cn/Wio_Link/)
 
 ### 先决条件
 
 -   [Wio Link APP](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/cn/Wio_Link/)
 -   [Grove 继电器](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   一个Travis CI账户
 -   一个GitHub账户

@@ -177,7 +177,7 @@ Grove - スライドポテンショメータモジュールは、最大抵抗値
 
 スライドポテンショメーターモジュールを電圧分割器として機能させるために、以下の簡単な手順に従ってください：
 
-1. モジュールを[Arduino](/Arduino "Arduino")または[Seeeduino](/Seeeduino_v4.2 "Seeeduino")と組み合わせて使用する場合、Grove - ベースシールドを使用し、指定されたGroveインターフェース（例：アナログポート0）を使用してGrove - スライドポテンショメーターモジュールをシールドに接続します。
+1. モジュールを[Arduino](/ja/Arduino "Arduino")または[Seeeduino](/ja/Seeeduino_v4.2 "Seeeduino")と組み合わせて使用する場合、Grove - ベースシールドを使用し、指定されたGroveインターフェース（例：アナログポート0）を使用してGrove - スライドポテンショメーターモジュールをシールドに接続します。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Slide_Potentiometer/img/Sliding2.JPG" alt="pir" width={600} height="auto" /></p>
 
@@ -368,7 +368,7 @@ KeyboardInterrupt
 
 1. Raspberry Pi と GrovePi または GrovePi+ を準備します。
 
-<!-- 链接有问题2.You should have completed configuring the development enviroment, otherwise follow [here](/GrovePi_Plus). -->
+<!-- 链接有问题2.You should have completed configuring the development enviroment, otherwise follow [here](/ja/GrovePi_Plus). -->
 
 3. 接続
 

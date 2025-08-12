@@ -40,20 +40,20 @@ last_update:
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP MX 仪表板</font></div>
-            <a href="/sensecraft-blockchain/blockchain-dashboard/dashboard-basics" target="_blank"><span><font color={'FFFFFF'} size={"2"}>仪表板基础</font></span></a>
+            <a href="/cn/sensecraft-blockchain/blockchain-dashboard/dashboard-basics" target="_blank"><span><font color={'FFFFFF'} size={"2"}>仪表板基础</font></span></a>
             <br/>
-            <a href="/sensecraft-blockchain/blockchain-dashboard/dashboard-registration" target="_blank"><span><font color={'FFFFFF'} size={"2"}>仪表板注册</font></span></a>
+            <a href="/cn/sensecraft-blockchain/blockchain-dashboard/dashboard-registration" target="_blank"><span><font color={'FFFFFF'} size={"2"}>仪表板注册</font></span></a>
             <br/>
-            <a href="/sensecraft-blockchain/blockchain-dashboard/hotspot-registration" target="_blank"><span><font color={'FFFFFF'} size={"2"}>热点注册</font></span></a>
+            <a href="/cn/sensecraft-blockchain/blockchain-dashboard/hotspot-registration" target="_blank"><span><font color={'FFFFFF'} size={"2"}>热点注册</font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCraft 数据管理</font></div>
-            <a href="/sensecraft-data-platform/tutorials/data-management#table" target="_blank"><span><font color={'FFFFFF'} size={"2"}>表格视图中的详细数据</font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/data-management#table" target="_blank"><span><font color={'FFFFFF'} size={"2"}>表格视图中的详细数据</font></span></a>
             <br/>
-            <a href="/sensecraft-data-platform/tutorials/data-management#graph" target="_blank"><span><font color={'FFFFFF'} size={"2"}>图表视图中的图形数据</font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/data-management#graph" target="_blank"><span><font color={'FFFFFF'} size={"2"}>图表视图中的图形数据</font></span></a>
             <br/>
-            <a href="/sensecraft-data-platform/tutorials/data-management#check-account-info" target="_blank"><span><font color={'FFFFFF'} size={"2"}>账户信息</font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/data-management#check-account-info" target="_blank"><span><font color={'FFFFFF'} size={"2"}>账户信息</font></span></a>
             <br/>
     </div>
 </div>
@@ -61,23 +61,23 @@ last_update:
 <div class="independent_container">
     <div class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCraft 设备管理</font></div>
-            <a href="/sensecraft-data-platform/tutorials/device-management#gateway" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>SenseCAP 网关</strong> - 查看 EUI、名称、状态等。</font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/device-management#gateway" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>SenseCAP 网关</strong> - 查看 EUI、名称、状态等。</font></span></a>
             <br/>
-            <a href="/sensecraft-data-platform/tutorials/device-management#node-group-management" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>SenseCAP 节点组</strong> - 按组便捷管理设备。</font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/device-management#node-group-management" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>SenseCAP 节点组</strong> - 按组便捷管理设备。</font></span></a>
             <br/>
-            <a href="/sensecraft-data-platform/tutorials/device-management#sensor-node-management" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>SenseCAP 传感器节点</strong> - 查看 EUI、名称、状态、数据类型等。</font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/device-management#sensor-node-management" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>SenseCAP 传感器节点</strong> - 查看 EUI、名称、状态、数据类型等。</font></span></a>
             <br/>
-            <a href="/sensecraft-data-platform/tutorials/device-management#general-information" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>通用设备信息</strong> - 电池状态、最近在线记录等。</font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/device-management#general-information" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>通用设备信息</strong> - 电池状态、最近在线记录等。</font></span></a>
             <br/>
-            <a href="/sensecraft-data-platform/tutorials/device-management#settings" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>设置</strong> - 调整数据收集频率和其他设置。</font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/device-management#settings" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>设置</strong> - 调整数据收集频率和其他设置。</font></span></a>
             <br/>
-            <a href="/sensecraft-data-platform/tutorials/device-management#location" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>设备位置</strong></font></span></a> 
+            <a href="/cn/sensecraft-data-platform/tutorials/device-management#location" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>设备位置</strong></font></span></a> 
             /
-            <a href="/sensecraft-data-platform/tutorials/device-management#bind-device" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>设备绑定</strong></font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/device-management#bind-device" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>设备绑定</strong></font></span></a>
             /
-            <a href="/sensecraft-data-platform/tutorials/device-management#channel" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>设备通道</strong></font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/device-management#channel" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>设备通道</strong></font></span></a>
             /
-            <a href="/sensecraft-data-platform/tutorials/device-management#data" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>设备数据</strong></font></span></a>
+            <a href="/cn/sensecraft-data-platform/tutorials/device-management#data" target="_blank"><span><font color={'FFFFFF'} size={"2"}><strong>设备数据</strong></font></span></a>
     </div>
 </div>
 
@@ -88,7 +88,7 @@ last_update:
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCAP MX Blockchain App</font></div>
             <p>SenseCAP HotSpot App 用于在手机上管理 LoRaWAN 热点。</p>
             <br/>
-            > <a href="/sensecraft-blockchain/sensecraft-hotspot-app/download-app" target="_blank"><span><font color={'FFFFFF'} size={"3"}>下载</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/hotspot-management" target="_blank"><span><font color={'FFFFFF'} size={"3"}>热点管理</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/remote-reboot" target="_blank"><span><font color={'FFFFFF'} size={"3"}>远程重启</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/hotspot-onboarding" target="_blank"><span><font color={'FFFFFF'} size={"3"}>热点入网</font></span></a>
+            > <a href="/cn/sensecraft-blockchain/sensecraft-hotspot-app/download-app" target="_blank"><span><font color={'FFFFFF'} size={"3"}>下载</font></span></a> / <a href="/cn/sensecraft-blockchain/sensecraft-hotspot-app/hotspot-management" target="_blank"><span><font color={'FFFFFF'} size={"3"}>热点管理</font></span></a> / <a href="/cn/sensecraft-blockchain/sensecraft-hotspot-app/remote-reboot" target="_blank"><span><font color={'FFFFFF'} size={"3"}>远程重启</font></span></a> / <a href="/cn/sensecraft-blockchain/sensecraft-hotspot-app/hotspot-onboarding" target="_blank"><span><font color={'FFFFFF'} size={"3"}>热点入网</font></span></a>
     </div>
 </div>
 
@@ -99,7 +99,7 @@ last_update:
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCraft App</font></div>
             <p>SenseCraft App 用于在手机上配置、构建和管理传感器，并显示来自 SenseCraft 数据平台的数据。</p>
             <br/>
-            > <a href="/sensecraft-app/overview#download" target="_blank"><span><font color={'FFFFFF'} size={"3"}>下载</font></span></a> / <a href="/sensecraft-app/overview#config" target="_blank"><span><font color={'FFFFFF'} size={"3"}>绑定设备</font></span></a> / <a href="/sensecraft-app/overview#account" target="_blank"><span><font color={'FFFFFF'} size={"3"}>账户</font></span></a> / <a href="/sensecraft-app/overview#user" target="_blank"><span><font color={'FFFFFF'} size={"3"}>用户</font></span></a>
+            > <a href="/cn/sensecraft-app/overview#download" target="_blank"><span><font color={'FFFFFF'} size={"3"}>下载</font></span></a> / <a href="/cn/sensecraft-app/overview#config" target="_blank"><span><font color={'FFFFFF'} size={"3"}>绑定设备</font></span></a> / <a href="/cn/sensecraft-app/overview#account" target="_blank"><span><font color={'FFFFFF'} size={"3"}>账户</font></span></a> / <a href="/cn/sensecraft-app/overview#user" target="_blank"><span><font color={'FFFFFF'} size={"3"}>用户</font></span></a>
     </div>
 </div>
 
@@ -110,8 +110,8 @@ last_update:
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCraft AI</font></div>
             <p>SenseCraft AI 可以在 SenseCraft 数据平台和 SenseCraft App 上访问。</p>
             <br/>
-            > <a href="/sensecraft-data-platform/applications/ai-advisor" target="_blank"><span><font color={'FFFFFF'} size={"3"}>入门指南</font></span></a> 
-            > <a href="/sensecraft-data-platform/applications/planting-advice" target="_blank"><span><font color={'FFFFFF'} size={"3"}>连接 XIAO ESP32C3</font></span></a>
+            > <a href="/cn/sensecraft-data-platform/applications/ai-advisor" target="_blank"><span><font color={'FFFFFF'} size={"3"}>入门指南</font></span></a> 
+            > <a href="/cn/sensecraft-data-platform/applications/planting-advice" target="_blank"><span><font color={'FFFFFF'} size={"3"}>连接 XIAO ESP32C3</font></span></a>
     </div>
 </div>
 
@@ -122,6 +122,6 @@ last_update:
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCraft Data Platform - API</font></div>
             <p>SenseCraft 数据平台 API 支持设备和数据管理。</p>
             <br/>
-            > <a href="https://sensecap-docs.seeed.cc/pdf/sensecap_opanapi_document_en.pdf" target="_blank"><span><font color={'FFFFFF'} size={"3"}>下载 PDF</font></span></a> / <a href="/sensecraft-data-platform/sensecraft-data-platform-api/sensecraft-data-platform-api" target="_blank"><span><font color={'FFFFFF'} size={"3"}>API 介绍</font></span></a> / <a href="/sensecraft-fee/sensecraft-data-platform-api-pricing" target="_blank"><span><font color={'FFFFFF'} size={"3"}>API 定价</font></span></a>
+            > <a href="https://sensecap-docs.seeed.cc/pdf/sensecap_opanapi_document_en.pdf" target="_blank"><span><font color={'FFFFFF'} size={"3"}>下载 PDF</font></span></a> / <a href="/cn/sensecraft-data-platform/sensecraft-data-platform-api/sensecraft-data-platform-api" target="_blank"><span><font color={'FFFFFF'} size={"3"}>API 介绍</font></span></a> / <a href="/cn/sensecraft-fee/sensecraft-data-platform-api-pricing" target="_blank"><span><font color={'FFFFFF'} size={"3"}>API 定价</font></span></a>
     </div>
 </div>

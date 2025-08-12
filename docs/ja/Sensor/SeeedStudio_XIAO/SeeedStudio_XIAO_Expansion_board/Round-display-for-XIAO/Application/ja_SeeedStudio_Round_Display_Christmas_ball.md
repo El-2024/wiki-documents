@@ -448,7 +448,7 @@ void loop() {
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio の [Contributor Project](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。
-- [Bruno Santos](https://github.com/orgs/Seeed-Studio/projects/6/views/1?sliceBy%5Bvalue%5D=feiticeir0&pane=issue&itemId=90657934&issue=Seeed-Studio%7Cwiki-documents%7C1993) さんに感謝します。あなたの作品は [展示](https://wiki.seeedstudio.com/ja/contributors/) されます。
+- [Bruno Santos](https://github.com/orgs/Seeed-Studio/projects/6/views/1?sliceBy%5Bvalue%5D=feiticeir0&pane=issue&itemId=90657934&issue=Seeed-Studio%7Cwiki-documents%7C1993) さんに感謝します。あなたの作品は [展示](https://wiki.seeedstudio.com/contributors/) されます。
 
 ## 技術サポート & 製品ディスカッション
 

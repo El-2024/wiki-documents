@@ -99,7 +99,7 @@ sku:  113030013
 
 ![](https://files.seeedstudio.com/wiki/Seeed_BLE_Shield/img/BLE_Shield.png)
 
-* HM-11：基础模块是 HM-11，更多信息您可以参考 [HM-11](/Bluetooth_V4.0_HM_11_BLE_Module) 的 wiki。
+* HM-11：基础模块是 HM-11，更多信息您可以参考 [HM-11](/cn/Bluetooth_V4.0_HM_11_BLE_Module) 的 wiki。
 
 * 信号灯：如果没有连接 BLE，灯会闪烁，但在 BLE 连接后，灯会保持常亮。
 
@@ -245,7 +245,7 @@ void loop()
 
 ---
 
-* [Seeed BLE Shield 常见问题](/Seeed_BLE_Shield)。_您也可以通过点击产品wiki页面右侧的"FAQ"按钮进入常见问题页面。_
+* [Seeed BLE Shield 常见问题](/cn/Seeed_BLE_Shield)。_您也可以通过点击产品wiki页面右侧的"FAQ"按钮进入常见问题页面。_
 
 ## 原理图在线查看器
 

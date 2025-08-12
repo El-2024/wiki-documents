@@ -108,7 +108,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 :::info 注意
 
-デフォルトでは、MR60BHA2は[XIAO ESP32C6](/xiao_esp32c6_getting_started)と事前に組み立てられていますが、通信および統合のために他のさまざまなマイクロコントローラーと互換性があります。
+デフォルトでは、MR60BHA2は[XIAO ESP32C6](/ja/xiao_esp32c6_getting_started)と事前に組み立てられていますが、通信および統合のために他のさまざまなマイクロコントローラーと互換性があります。
 
 :::
 

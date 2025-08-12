@@ -34,11 +34,11 @@ Wio Link 事件套件是一个事件监控套件，包含一些典型的事件�
 
 | 零件名称                                                                                               | 数量 |
 |----------------------------------------------------------------------------------------------------------|----------|
-| [Grove - 红外距离中断传感器](/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F)                                     | 1个     |
-| [Grove - 按钮](/Grove-Button/)                                                                          | 1个     |
+| [Grove - 红外距离中断传感器](/cn/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F)                                     | 1个     |
+| [Grove - 按钮](/cn/Grove-Button/)                                                                          | 1个     |
 | [Grove - 磁性开关](https://www.seeedstudio.com/Grove-Magnetic-Switch.html?queryID=d18ad991c05de7f74bbabc475ad4f905&objectID=1827&indexName=bazaar_retailer_products)                                                        | 1个     |
-| [Grove - 3轴数字加速度计(±1.5g)](/Grove-3-Axis_Digital_Accelerometer-1.5g/)                  | 1个     |
-| [Wio Link](/Wio_Link/)                                                                                    | 1个     |
+| [Grove - 3轴数字加速度计(±1.5g)](/cn/Grove-3-Axis_Digital_Accelerometer-1.5g/)                  | 1个     |
+| [Wio Link](/cn/Wio_Link/)                                                                                    | 1个     |
 | [Micro USB 数据线 - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html?queryID=a8b80828fdcd52ad1ae49daa5ed97191&objectID=1405&indexName=bazaar_retailer_products) | 1根     |
 
 一个简单的演示
@@ -49,12 +49,12 @@ Wio Link 事件套件是一个事件监控套件，包含一些典型的事件�
 ### 预备指南
 
 -   [Travis CI](https://travis-ci.org/)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/cn/Wio_Link/)
 
 ### 所需材料
 
 -   [Wio Link APP](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/cn/Wio_Link/)
 -   [Grove 继电器](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   一个 Travis CI 账户
 -   一个 GitHub 账户

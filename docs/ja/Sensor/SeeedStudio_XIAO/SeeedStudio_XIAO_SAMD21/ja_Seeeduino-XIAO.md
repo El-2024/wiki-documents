@@ -41,7 +41,7 @@ Seeed Studio XIAO SAMD21 には 14 本のピンがあり、11 のデジタルイ
 
 ### **Seeed Studio XIAO SAMD21 での CircuitPython**
 
-- [**Seeed Studio XIAO SAMD21 での CircuitPython の使い方**](http://wiki.seeedstudio.com/Seeeduino-XIAO-CircuitPython) をご覧ください。
+- [**Seeed Studio XIAO SAMD21 での CircuitPython の使い方**](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO-CircuitPython) をご覧ください。
 
 ## **特徴**
 

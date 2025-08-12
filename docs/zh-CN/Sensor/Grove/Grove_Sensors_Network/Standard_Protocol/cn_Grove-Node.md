@@ -186,7 +186,7 @@ Grove - 节点是一个简单灵活的电子模块，用于连接物理对象。
     </table>
 
 
-例如，我们打算创建一个在环境黑暗时自动点亮、否则熄灭的灯，那么我们选择一个 [Grove-光传感器](/Grove-Light_Sensor "Grove - 光传感器") 和一个 Grove-红色LED。
+例如，我们打算创建一个在环境黑暗时自动点亮、否则熄灭的灯，那么我们选择一个 [Grove-光传感器](/cn/Grove-Light_Sensor "Grove - 光传感器") 和一个 Grove-红色LED。
 
 
 第三，教 Grove 节点一个逻辑。

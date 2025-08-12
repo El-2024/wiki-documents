@@ -791,7 +791,7 @@ OK+LSTA ========= 除断开外，模块将在 500 毫秒后重置。
 
 初始化完成后，中央和外围将执行不同的任务。中央会间隔发送消息给外围，并打印从外围接收到的内容，而外围仅响应中央。
 
-<!-- 点击 [这里](https://github.com/Seeed-Studio/HM-13_SW) 下载测试代码，并使用 Arduino IDE 打开 HM-13_SW.ino，编译并下载到 Arduino Uno。记得通过修改开头的宏配置蓝牙模块为不同的角色。如果您对如何开始使用 Arduino 有任何问题，请点击 [这里](/Getting_Started_with_Seeeduino) 获取帮助。 -->
+<!-- 点击 [这里](https://github.com/Seeed-Studio/HM-13_SW) 下载测试代码，并使用 Arduino IDE 打开 HM-13_SW.ino，编译并下载到 Arduino Uno。记得通过修改开头的宏配置蓝牙模块为不同的角色。如果您对如何开始使用 Arduino 有任何问题，请点击 [这里](/cn/Getting_Started_with_Seeeduino) 获取帮助。 -->
 
 下载程序后，打开两个串口终端窗口，蓝牙模块上的 LED 将闪烁，几秒钟后，它们停止闪烁并保持常亮，这表明它们已成功连接。根据程序的编写，中央会持续向外围发送消息并每次获得反馈。
 

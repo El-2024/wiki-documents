@@ -105,7 +105,7 @@ pH传感器可以帮助您检测pH值。pH测量的成功与否取决于PH传感
 在这张图片中，使用pH 9.18[缓冲溶液](http://www.chemguide.co.uk/physical/acidbaseeqia/buffers.html)作为参考溶液，这有助于我们了解测量值是否准确。
 现在让我们看看测量值是多少。
 
-* 上传演示代码。如果您不知道如何上传，请点击[这里](/Upload_Code)
+* 上传演示代码。如果您不知道如何上传，请点击[这里](/cn/Upload_Code)
 
 ```
 //功能：PH传感器输出电压值，

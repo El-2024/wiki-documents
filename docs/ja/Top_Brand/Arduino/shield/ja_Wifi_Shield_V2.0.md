@@ -1221,7 +1221,7 @@ RealTermプログラムの「Port」タブで、シールドのIPアドレスと
 
 WiFiシールドを介して情報を送受信する方法を理解した今、ウェブを通じてどのようなデバイスでも簡単に制御できることがわかるでしょう。
 
-デスクランプ、モーター、または水ポンプなどの高出力デバイスをウェブページや電話アプリケーションを介して制御したい場合は、[Relay Shield V2.0](/Relay_Shield_v3)をお勧めします。
+デスクランプ、モーター、または水ポンプなどの高出力デバイスをウェブページや電話アプリケーションを介して制御したい場合は、[Relay Shield V2.0](/ja/Relay_Shield_v3)をお勧めします。
 
 Relay Shield V2.0はピン4、5、6、7を使用するため、このページの例のコードと完全に互換性があります。
 
@@ -1270,7 +1270,7 @@ A3: アンテナにプラスチックやその他の誘電材料を接触させ�
 - [RN-171データシート](https://files.seeedstudio.com/wiki/Wifi_Shield_V2.0/res/WiFly-RN-171.pdf)
 - [WiFiシールドライブラリ](https://github.com/Seeed-Studio/WiFi_Shield)
 - [WiFiモジュールユーザーマニュアル](https://files.seeedstudio.com/wiki/Wifi_Shield_V2.0/res/WiFly-RN-UM.pdf) *-- シールド内のRN-171モジュールのすべてのコマンドが記載されています。*
-- [Seeeduinoとは](/Seeeduino_v4.2)
+- [Seeeduinoとは](/ja/Seeeduino_v4.2)
 - [w3schools](http://www.w3schools.com/) HTML、Javascript、JQueryを学ぶのに最適なウェブサイト
 
 <!-- このMarkdownファイルはhttps://www.seeedstudio.com/wiki/Wifi_Shield_V2.0から作成されました -->
