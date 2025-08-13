@@ -143,11 +143,12 @@ sudo apt-get update
 sudo pip install pyusb click
 git clone https://github.com/respeaker/usb_4_mic_array.git
 cd usb_4_mic_array
-sudo python dfu.py --download MicArrayV3_firmware/6_channels_firmware.bin  # The 6 channels version 
+sudo python dfu.py --download MicArrayV3_firmware/6_channels_dfu_4.0.0_firmware.bin # The 6 channels version 
 
 # if you want to use 1 channel,then the command should be like:
 
-sudo python dfu.py --download MicArrayV3_firmware/1_channel_firmware.bin
+sudo python dfu.py --download MicArrayV3_firmware/1_channel_dfu_4.0.0_firmware.bin
+
 
 ```
 
@@ -468,7 +469,7 @@ nano get_index.py
 - Step 2, copy below code and paste on [get_index.py](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array_V2/res/get_index.py).
 
 :::note
-If you are using Python 3, this file is suitable for use [VAD.py](https://github.com/KasunThushara/xvf3000/blob/main/get_index.py)
+If you are using Python 3, this file is suitable for use [get_index.py](https://github.com/KasunThushara/xvf3000/blob/main/get_index.py)
 :::
 
 ```python
