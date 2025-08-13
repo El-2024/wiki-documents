@@ -29,7 +29,7 @@ Este sensor de temperatura y humedad proporciona una salida digital precalibrada
 - Bajo consumo de energía
 
 Consejo:
-Para más información sobre los módulos Grove, visita [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/)
+Para más información sobre los módulos Grove, visita [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/)
 
 ## Ideas de uso
 
@@ -335,7 +335,7 @@ Tarda 5ms para comunicarse una vez. El bit de datos de alto orden se envía prim
     +8bits suma de comprobación.
 
 Nota:
-Si es la primera vez que usas Arduino, visita [Empezando con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de empezar.
+Si es la primera vez que usas Arduino, visita [Empezando con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de empezar.
 
 ### Juega con Arduino
 
@@ -370,14 +370,14 @@ Si no tienes el Shield Base - Grove, puedes conectar directamente el sensor al S
 
 - **Paso 1.** Descarga la [ librería Seeed DHT](https://github.com/Seeed-Studio/Grove_Temperature_And_Humidity_Sensor) de Github.
 
-- **Paso 2.** Visita [Cómo instalar una librería](http://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar la librería en Arduino.
+- **Paso 2.** Visita [Cómo instalar una librería](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar la librería en Arduino.
 
 - **Paso 3.** Reinicia el IDE de Arduino. Abre el ejemplo “DHTtester” siguiendo: **File --> Examples --> Grove_Humidity_Temperature_Sensor-master --> DHTtester**. Con este demo se puede obtener información sobre la temperatura y humedad del ambiente.
 
 ![](https://github.com/SeeedDocument/Grove-Temperature_and_Humidity_Sensor_Pro/raw/master/img/path.png)
 
 Nota:
-Este Sensor de temperatura y humedad - Grove y [Sensor de temperatura y humedad pro - Grove](http://wiki.seeedstudio.com/Grove-Temperature_and_Humidity_Sensor_Pro/) comparten la librería. No importa qué producto estés usando, asegúrate de haber hecho efectiva la línea de definición del sensor de la placa, y de haber comentado las líneas de definición de otras especificaciones. Por ejemplo, el sensor que utilizamos para el Sensor de temperatura y humedad - Grove es DHT 11. Por lo tanto, la parte de definición de la especificación del sensor debería ser:
+Este Sensor de temperatura y humedad - Grove y [Sensor de temperatura y humedad pro - Grove](https://wiki.seeedstudio.com/Grove-Temperature_and_Humidity_Sensor_Pro/) comparten la librería. No importa qué producto estés usando, asegúrate de haber hecho efectiva la línea de definición del sensor de la placa, y de haber comentado las líneas de definición de otras especificaciones. Por ejemplo, el sensor que utilizamos para el Sensor de temperatura y humedad - Grove es DHT 11. Por lo tanto, la parte de definición de la especificación del sensor debería ser:
 
 ```
 #define DHTTYPE DHT11   // DHT 11
@@ -387,7 +387,7 @@ Este Sensor de temperatura y humedad - Grove y [Sensor de temperatura y humedad 
 
 La configuración predeterminada de la biblioteca es `DHT 22`, así que debes cambiarla a `DHT 11` manualmente.
 
-- **Paso 4.** Carga el demo. Si no sabes cómo hacerlo, visita [cómo cargar un código](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 4.** Carga el demo. Si no sabes cómo hacerlo, visita [cómo cargar un código](https://wiki.seeedstudio.com/Upload_Code/).
 
 - **Paso 5.** Abre el **Monitor Serie** del IDE de Arduino **Herramientas-> Monitor Serie**. O teclea ctrl + shift + m al mismo tiempo. Si todo sale bien, podrás ver la temperatura.
 
@@ -410,7 +410,7 @@ El resultado debe verse así:
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), añade soporte para Arduino, y arrastra un procedimiento principal al área de trabajo.
 
 Nota:
-Si es la primera vez que usas Codecraft, visita [Guía para Codecraft usando Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es la primera vez que usas Codecraft, visita [Guía para Codecraft usando Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra los bloques como se muestra en la imagen o descarga el archivo cdc que se encuentra al final de esta página.
 
@@ -443,7 +443,7 @@ Para el paso 3, puedes conectar el sensor a **cualquier puerto GPIO** pero asegu
 
 #### Software
 
-- **Paso 1**. Visita [Configuración de Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Visita [Configuración de Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 - **Paso 2**. Descarga el archivo fuente clonando la librería grove.py
 
 ```
@@ -460,7 +460,7 @@ python grove_temperature_humidity_sensor.py 11 12
 
 ```
 
-Nota: 1. Para correr el código, la línea de comando debe ser +++python grove_temperature_humidity_sensor.py DHT type pin+++. En cuanto a este módulo, El DHT es 11 y conectamos el sensor de temperatura y humedad al pin 12 en el caso de arriba. 2. Este sensor de temperatura y humedad - Grove y el [Sensor de temperatura y humedad pro - Grove](http://wiki.seeedstudio.com/Grove-Temperature_and_Humidity_Sensor_Pro/) comparten el código de python, llamado 'grove_temperature_humidity_sensor.py'. La única diferencia es el DTH 22 del sensor pro y DTH 11 de este sensor.
+Nota: 1. Para correr el código, la línea de comando debe ser +++python grove_temperature_humidity_sensor.py DHT type pin+++. En cuanto a este módulo, El DHT es 11 y conectamos el sensor de temperatura y humedad al pin 12 en el caso de arriba. 2. Este sensor de temperatura y humedad - Grove y el [Sensor de temperatura y humedad pro - Grove](https://wiki.seeedstudio.com/Grove-Temperature_and_Humidity_Sensor_Pro/) comparten el código de python, llamado 'grove_temperature_humidity_sensor.py'. La única diferencia es el DTH 22 del sensor pro y DTH 11 de este sensor.
 
 A continuación se muestra el código grove_temperature_humidity_sensor.py
 

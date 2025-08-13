@@ -78,7 +78,7 @@ Datacake 是一个多用途的低代码 IoT 平台，无需编程技能，只需
 - 端口：1883
 - 协议：MQTT V3.1.1
 - 客户端 ID：格式为 `org-<Organization ID>-<Random ID>`
-  - `<Organization ID>`：您的组织 ID。我们已在 [获取 SenseCAP API](/K1100_sensecap_node-red#get-the-sensecap-api) 中获取。
+  - `<Organization ID>`：您的组织 ID。我们已在 [获取 SenseCAP API](/cn/K1100_sensecap_node-red#get-the-sensecap-api) 中获取。
   - `<Random ID>`：使用您自己随机生成的数字或小写字母。
 
 - 主题格式：`/device_sensor_data/<OrgID>/<DeviceEUI>/<Channel>/<Reserved>/<MeasurementID>`

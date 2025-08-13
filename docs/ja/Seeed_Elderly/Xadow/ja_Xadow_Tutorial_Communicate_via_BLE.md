@@ -32,9 +32,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 次に、BLE_Slave INO ファイルを開き、コンパイルしてアップロードします。
 
-<!-- 初めて使用する場合は、[こちら](/Xadow_Main_Board#Get_Start_with_Xadow_Main_Board)を参照して Xadow ドライバをインストールしてください。また、ライブラリ [DigitalAccelerometer_ADX345](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Communicate_via_BLE/res/DigitalAccelerometer_ADXL345.zip) と [sleep_FromArduino](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Communicate_via_BLE/res/Sleep_FromArduino.zip) をダウンロードし、解凍後に Arduino IDE のライブラリフォルダ（..\arduino-1.0.1\libraries）に配置してください。 -->
+<!-- 初めて使用する場合は、[こちら](/ja/Xadow_Main_Board#Get_Start_with_Xadow_Main_Board)を参照して Xadow ドライバをインストールしてください。また、ライブラリ [DigitalAccelerometer_ADX345](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Communicate_via_BLE/res/DigitalAccelerometer_ADXL345.zip) と [sleep_FromArduino](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Communicate_via_BLE/res/Sleep_FromArduino.zip) をダウンロードし、解凍後に Arduino IDE のライブラリフォルダ（..\arduino-1.0.1\libraries）に配置してください。 -->
 
-<!-- 次に、スマートフォンの Bluetooth をオンにしてデータを観察できます。加速度計の値が変化すると、Bluetooth シリアルがリアルタイムデータを表示します。なお、スマートフォンの Bluetooth は Bluetooth 4.0（iPhone 4S 以上）である必要があり、Bluetooth シリアルツールをダウンロードする必要があります。詳細については、[Xadow BLE スレーブの使用方法](/Xadow_BLE_Slave#Usage)を参照してください。 -->
+<!-- 次に、スマートフォンの Bluetooth をオンにしてデータを観察できます。加速度計の値が変化すると、Bluetooth シリアルがリアルタイムデータを表示します。なお、スマートフォンの Bluetooth は Bluetooth 4.0（iPhone 4S 以上）である必要があり、Bluetooth シリアルツールをダウンロードする必要があります。詳細については、[Xadow BLE スレーブの使用方法](/ja/Xadow_BLE_Slave#Usage)を参照してください。 -->
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Communicate_via_BLE/img/Phone_and_BLE_Slave_Communicate.jpg)
 

@@ -149,7 +149,7 @@ JetPack のフラッシュに関する詳細は、この [Wiki ページ](/ja/re
 
 :::info
 reComputer J20 は J202 キャリアボードによって駆動されています。このインターフェースは J30/J40 と同じ設計を使用しています。  
-インターフェースの使用に関する詳細は、この [Wiki ページ](/J401_carrierboard_Hardware_Interfaces_Usage) を参照してください。
+インターフェースの使用に関する詳細は、この [Wiki ページ](/ja/J401_carrierboard_Hardware_Interfaces_Usage) を参照してください。
 :::
 
 ## リソース

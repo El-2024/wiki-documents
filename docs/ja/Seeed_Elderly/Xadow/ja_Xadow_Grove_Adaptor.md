@@ -125,7 +125,7 @@ Grove - デジタル光センサーを例に、その使用方法を学びまし
 
 **コードをダウンロード：**
 
-<!-- *   Grove - デジタル光センサーの[Digital_Light_Library](https://github.com/Seeed-Studio/Grove_Digital_Light_Sensor)をGithubからダウンロードし、Arduino ライブラリにインストールしてください。インストール方法については、wiki ページの[Arduino ライブラリのインストール方法](/How_to_install_Arduino_Library)を参照してください。
+<!-- *   Grove - デジタル光センサーの[Digital_Light_Library](https://github.com/Seeed-Studio/Grove_Digital_Light_Sensor)をGithubからダウンロードし、Arduino ライブラリにインストールしてください。インストール方法については、wiki ページの[Arduino ライブラリのインストール方法](/ja/How_to_install_Arduino_Library)を参照してください。
 *   インストールが完了したらコードを開きます。 -->
 
 ```
@@ -159,7 +159,7 @@ void loop()
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Grove_Adaptor/img/Digital_Light_Sensor_Score_Picture.jpg)
 
-<!-- Xadow Grove アダプタで使用されている ADC IC ADC121C021 は、Grove - I2C ADC にも採用されています。もちろん、I2C アドレスを変更する方法は同じです。Grove - I2C ADC の[参考部分](/Grove-I2C_ADC#Reference)を参照して、変更方法を確認してください。また、基板上の「0」と「1」は A0 インターフェースのアドレス変更エリア、「2」と「3」は A1 インターフェースのアドレス変更エリアです。 -->
+<!-- Xadow Grove アダプタで使用されている ADC IC ADC121C021 は、Grove - I2C ADC にも採用されています。もちろん、I2C アドレスを変更する方法は同じです。Grove - I2C ADC の[参考部分](/ja/Grove-I2C_ADC#Reference)を参照して、変更方法を確認してください。また、基板上の「0」と「1」は A0 インターフェースのアドレス変更エリア、「2」と「3」は A1 インターフェースのアドレス変更エリアです。 -->
 
 ## 回路図オンラインビューア
 

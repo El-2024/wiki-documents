@@ -20,7 +20,7 @@ LinkIt ONEとGrove - Light Sensorを箱に入れます。箱が開けられる�
 
 **接続**
 
-<!-- *   [Grove - Light_Sensor](/Grove-Light_Sensor "Grove - Light Sensor") connect to A0. -->
+<!-- *   [Grove - Light_Sensor](/ja/Grove-Light_Sensor "Grove - Light Sensor") connect to A0. -->
 
 *   GSMアンテナ
 

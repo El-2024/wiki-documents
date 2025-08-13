@@ -81,7 +81,7 @@ Grove - 3軸デジタルジャイロモジュールは、ITG 3200をベースに
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digital_Gyro/img/ITG3200_gyro_ArduinoIde.jpg" alt="pir" width={600} height="auto" /></p>
 
 
-<!-- コードをアップロードするには、Uploadをクリックしてください。Arduinoの使い方について問題がある場合は、[こちら](/Getting_Started_with_Seeeduino)をクリックしてヘルプをご覧ください。 -->
+<!-- コードをアップロードするには、Uploadをクリックしてください。Arduinoの使い方について問題がある場合は、[こちら](/ja/Getting_Started_with_Seeeduino)をクリックしてヘルプをご覧ください。 -->
 
 
 

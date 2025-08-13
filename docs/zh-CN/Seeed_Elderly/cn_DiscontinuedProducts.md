@@ -37,25 +37,25 @@ last_update:
 
 以下是我们所有已退役产品的列表：
 
-* <a href="/ReSpeaker" font color={'8DC215'}>reSpeaker</a>  
+* <a href="/cn/ReSpeaker" font color={'8DC215'}>reSpeaker</a>  
 <br />
-* <a href="/RePhone" font color={'8DC215'}>rePhone</a> 
+* <a href="/cn/RePhone" font color={'8DC215'}>rePhone</a> 
 <br />
-* <a href="/Mesh_Bee" font color={'8DC215'}>Bee</a>
+* <a href="/cn/Mesh_Bee" font color={'8DC215'}>Bee</a>
 <br /> 
-* <a href="/Xadow_3_Aixs_Accelerometer" font color={'8DC215'}>Xadow</a>
+* <a href="/cn/Xadow_3_Aixs_Accelerometer" font color={'8DC215'}>Xadow</a>
 <br /> 
-* <a href="/Rainbowduino" font color={'8DC215'}>RainbowDuino</a>
+* <a href="/cn/Rainbowduino" font color={'8DC215'}>RainbowDuino</a>
 <br /> 
-* <a href="/Air602_WiFi_Development_Board" font color={'8DC215'}>Air Serial</a>
+* <a href="/cn/Air602_WiFi_Development_Board" font color={'8DC215'}>Air Serial</a>
 <br /> 
-* <a href="/How-to-build-a-home-soft-router-and-NAS-With-ReComputer" font color={'8DC215'}>reComputer Alpha</a>
+* <a href="/cn/How-to-build-a-home-soft-router-and-NAS-With-ReComputer" font color={'8DC215'}>reComputer Alpha</a>
 <br /> 
-* <a href="/W600_Module" font color={'8DC215'}>W600</a>
+* <a href="/cn/W600_Module" font color={'8DC215'}>W600</a>
 <br /> 
-* <a href="/Artik" font color={'8DC215'}>Artik</a>
+* <a href="/cn/Artik" font color={'8DC215'}>Artik</a>
 <br /> 
-* <a href="/Tiny_BLE" font color={'8DC215'}>其他</a> 
+* <a href="/cn/Tiny_BLE" font color={'8DC215'}>其他</a> 
 
 
 

@@ -6,7 +6,7 @@ keywords:
 - reSpeaker
 - Voice AI
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /ReSpeaker
+slug: /respeaker
 last_update:
   date: 8/12/2023
   author: Kasun Thushara

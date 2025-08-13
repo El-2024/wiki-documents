@@ -11,7 +11,7 @@ last_update:
 ---
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_V3-Waterproof_Solar_Kit.JPG)
 
-Stalker 套件是一个基于 <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a> 的**无线传感器网络**节点**数据记录器**。Seeeduino Stalker v3 是一个功能丰富的 Arduino 兼容无线传感器网络节点。它的模块化结构和板载外设如 RTC、SD 卡接口使其能够方便地定期记录带有精确时间戳的传感器数值。Seeeduino Stalker 是您所有跟踪、监控和控制项目的理想选择。
+Stalker 套件是一个基于 <a href="/cn/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a> 的**无线传感器网络**节点**数据记录器**。Seeeduino Stalker v3 是一个功能丰富的 Arduino 兼容无线传感器网络节点。它的模块化结构和板载外设如 RTC、SD 卡接口使其能够方便地定期记录带有精确时间戳的传感器数值。Seeeduino Stalker 是您所有跟踪、监控和控制项目的理想选择。
 
 Stalker 套件包含与 Seeeduino Stalker v3.0 配合使用的所有必要组件。Stalker 套件可以在户外使用，因为它配有塑料防水外壳。因此，如果您有一些特殊想法，甚至可以将其放入水中。该套件配有太阳能电池板和锂聚合物电池。它们可以在沙漠或丛林等偏远地区使用，仅依靠收集并存储在锂聚合物电池中的太阳能工作。
 
@@ -27,7 +27,7 @@ Stalker 套件包含与 Seeeduino Stalker v3.0 配合使用的所有必要组件
 <th>数量</th>
 </tr>
 <tr>
-<td><a href="/Seeeduino-Stalker_v3"><span><font size={"3"}>Seeeduino-Stalker_v3</font></span></a></td>
+<td><a href="/cn/Seeeduino-Stalker_v3"><span><font size={"3"}>Seeeduino-Stalker_v3</font></span></a></td>
 <td>Arduino 兼容的 WSN 节点</td>
 <td>1</td>
 </tr>
@@ -96,45 +96,45 @@ Stalker 套件包含与 Seeeduino Stalker v3.0 配合使用的所有必要组件
 
 * Wireless Sensor Network (using XBee - bought separately)
 
-* GPS Logging (using [GPSBee](/GPS_Bee_kit "GPS_Bee_kit") - bought separately)
+* GPS Logging (using [GPSBee](/cn/GPS_Bee_kit "GPS_Bee_kit") - bought separately)
 
-* Data Acquisition System capable of communicating with an App running on iPhone/Android Phone/Windows Phone (using [BluetoothBee](/Bluetooth_Bee "Bluetooth Bee") - bought seperately)
+* Data Acquisition System capable of communicating with an App running on iPhone/Android Phone/Windows Phone (using [BluetoothBee](/cn/Bluetooth_Bee "Bluetooth Bee") - bought seperately)
 
-* RF Remote Control (using [RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node") - bought separately)
+* RF Remote Control (using [RFBee](/cn/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node") - bought separately)
 
-* As a simple standalone Arduino compatible physical computing platform ([UartSBee_V4](/UartSBee_V4 "UartSBee_V4") must be bought separately for programming)
+* As a simple standalone Arduino compatible physical computing platform ([UartSBee_V4](/cn/UartSBee_V4 "UartSBee_V4") must be bought separately for programming)
 
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/700px-Stalker_v3.0_and_the_Bees.jpg)
 
-poly 441 45 508 17 567 79 505 120 [UartSBee_V4](/UartSBee_V4 "UartSBee_V4")
+poly 441 45 508 17 567 79 505 120 [UartSBee_V4](/cn/UartSBee_V4 "UartSBee_V4")
 
-poly 75 0 353 0 353 102 75 99 [WiFiBee](/Wifi_Bee "Wifi_Bee")
+poly 75 0 353 0 353 102 75 99 [WiFiBee](/cn/Wifi_Bee "Wifi_Bee")
 
-poly 18 105 294 107 295 203 18 203 [BluetoothBee](/Bluetooth_Bee "Bluetooth Bee")
+poly 18 105 294 107 295 203 18 203 [BluetoothBee](/cn/Bluetooth_Bee "Bluetooth Bee")
 
-poly 2 212 274 212 275 327 2 326 [XBee](/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products "Zigbee Networking with XBee Series_2 and Seeeds Products")
+poly 2 212 274 212 275 327 2 326 [XBee](/cn/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products "Zigbee Networking with XBee Series_2 and Seeeds Products")
 
-poly 18 337 303 338 303 448 15 447 [GPSBee](/GPS_Bee_kit "GPS_Bee_kit")
+poly 18 337 303 338 303 448 15 447 [GPSBee](/cn/GPS_Bee_kit "GPS_Bee_kit")
 
-poly 38 459 379 459 379 570 37 571 [RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")
+poly 38 459 379 459 379 570 37 571 [RFBee](/cn/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")
 
-poly 400 55 477 106 424 147 354 97 [WiFiBee](/Wifi_Bee "Wifi_Bee")
+poly 400 55 477 106 424 147 354 97 [WiFiBee](/cn/Wifi_Bee "Wifi_Bee")
 
-poly 307 143 336 136 398 140 392 189 333 187 318 174 302 176 [BluetoothBee](/Bluetooth_Bee "Bluetooth Bee")
+poly 307 143 336 136 398 140 392 189 333 187 318 174 302 176 [BluetoothBee](/cn/Bluetooth_Bee "Bluetooth Bee")
 
-poly 290 238 308 221 394 214 396 271 306 283 290 265 [XBee](/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products "Zigbee Networking with XBee Series_2 and Seeeds Products")
+poly 290 238 308 221 394 214 396 271 306 283 290 265 [XBee](/cn/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products "Zigbee Networking with XBee Series_2 and Seeeds Products")
 
-poly 321 353 333 330 395 306 427 364 359 393 335 380 [GPSBee](/GPS_Bee_kit "GPS_Bee_kit")
+poly 321 353 333 330 395 306 427 364 359 393 335 380 [GPSBee](/cn/GPS_Bee_kit "GPS_Bee_kit")
 
-poly 409 464 417 432 488 389 537 445 463 498 426 491 [RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")
+poly 409 464 417 432 488 389 537 445 463 498 426 491 [RFBee](/cn/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")
 
-poly 455 280 454 215 490 186 683 184 724 211 740 297 706 331 494 333 489 278 [Seeeduino-Stalker v3](/Seeeduino-Stalker_v3 "Seeeduino-Stalker v3")
+poly 455 280 454 215 490 186 683 184 724 211 740 297 706 331 494 333 489 278 [Seeeduino-Stalker v3](/cn/Seeeduino-Stalker_v3 "Seeeduino-Stalker v3")
 
-poly 570 132 573 13 802 16 803 131 [UartSBee_V4](/UartSBee_V4 "UartSBee_V4")
+poly 570 132 573 13 802 16 803 131 [UartSBee_V4](/cn/UartSBee_V4 "UartSBee_V4")
 &lt;/imagemap&gt; -->
 
 :::note
-请注意，[UartSBee_V4](/UartSBee_V4 "UartSBee_V4") 无法插入到 Seeeduino Stalker 上的 Bee 系列插座中。[UartSBee_V4](/UartSBee_V4 "UartSBee_V4") 用于将其他 Bee 模块（如上图所示）连接到计算机，本身不能插入到为这些其他 Bee 模块设计的插座中。UartSBee_V4 和 Seeeduino Stalker 上都有一个单独的 5 针排针用于相互连接。这个排针包含：VCC（为 Stalker 供电）、TXD、RXD、DTR（用于控制 Stalker 的复位信号）和 GND。**
+请注意，[UartSBee_V4](/cn/UartSBee_V4 "UartSBee_V4") 无法插入到 Seeeduino Stalker 上的 Bee 系列插座中。[UartSBee_V4](/cn/UartSBee_V4 "UartSBee_V4") 用于将其他 Bee 模块（如上图所示）连接到计算机，本身不能插入到为这些其他 Bee 模块设计的插座中。UartSBee_V4 和 Seeeduino Stalker 上都有一个单独的 5 针排针用于相互连接。这个排针包含：VCC（为 Stalker 供电）、TXD、RXD、DTR（用于控制 Stalker 的复位信号）和 GND。**
 :::
 
 ## 使用方法
@@ -142,7 +142,7 @@ poly 570 132 573 13 802 16 803 131 [UartSBee_V4](/UartSBee_V4 "UartSBee_V4")
 ---
 <big>入门指南</big>
 
-如果您是"物理计算"世界的新手，并且 Seeeduino Stalker 是您想要开始使用的第一个物理计算平台，那么我们建议您从 <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino </font></span></a> 开始。
+如果您是"物理计算"世界的新手，并且 Seeeduino Stalker 是您想要开始使用的第一个物理计算平台，那么我们建议您从 <a href="/cn/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino </font></span></a> 开始。
 
 以下步骤将帮助您组装硬件和软件资源，让您开始使用 Seeeduino Stalker v3
 
@@ -160,7 +160,7 @@ poly 570 132 573 13 802 16 803 131 [UartSBee_V4](/UartSBee_V4 "UartSBee_V4")
 
 **步骤 2：安装驱动程序并连接硬件**
 
-1. [UartSBee_V4](/UartSBee_V4 "UartSBee_V4") 就像物理计算世界的多功能瑞士军刀。[这里](/UartSBee_V4 "UartSBee_V4")有针对 Windows 和 GNU/Linux 用户使用 UartSBee_V4 的详细程序。在我们的情况下，它将执行三个功能：
+1. [UartSBee_V4](/cn/UartSBee_V4 "UartSBee_V4") 就像物理计算世界的多功能瑞士军刀。[这里](/cn/UartSBee_V4 "UartSBee_V4")有针对 Windows 和 GNU/Linux 用户使用 UartSBee_V4 的详细程序。在我们的情况下，它将执行三个功能：
     * 允许我们对 Seeeduino Stalker 进行编程。
     * 允许我们与 Seeeduino Stalker 通信。
     * 为 Seeeduino Stalker（包括连接到它的任何外设）提供电源（来自计算机的 USB 电源）。
@@ -207,8 +207,8 @@ Seeeduino Stalker v3 &lt;---&gt; UartSBee v4.0 连接
 
 <big>连接注意事项 </big>
 
-* **Bee系列插座** - 2*10针脚2.0mm间距（可以与任何一个[无线模块](/Wifi_Bee "Wifi_Bee")配合使用 - 一次一个：[XBee](/XBee_Shield "Zigbee Networking with XBee Series_2 and Seeeds Products")、[BluetoothBee](/Bluetooth_Bee "Bluetooth Bee")、[GPSBee](/GPS_Bee_kit "GPS_Bee_kit")或[RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")。）与这些模块的通信通过UART完成。
-* **串行接口** – 为了节省空间和降低成本，默认情况下不提供USB&lt;-&gt;串行连接。您可以使用基于FT232的[UartSBee_V4](/UartSBee_V4 "UartSBee_V4")或其他USB转串行适配器板来进行编程或与PC通信。
+* **Bee系列插座** - 2*10针脚2.0mm间距（可以与任何一个[无线模块](/cn/Wifi_Bee "Wifi_Bee")配合使用 - 一次一个：[XBee](/cn/XBee_Shield "Zigbee Networking with XBee Series_2 and Seeeds Products")、[BluetoothBee](/cn/Bluetooth_Bee "Bluetooth Bee")、[GPSBee](/cn/GPS_Bee_kit "GPS_Bee_kit")或[RFBee](/cn/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")。）与这些模块的通信通过UART完成。
+* **串行接口** – 为了节省空间和降低成本，默认情况下不提供USB&lt;-&gt;串行连接。您可以使用基于FT232的[UartSBee_V4](/cn/UartSBee_V4 "UartSBee_V4")或其他USB转串行适配器板来进行编程或与PC通信。
 * **用户LED** – 板载提供了一个LED，可根据需要在您的应用中使用。
 * **I<sup>2</sup>C接口**：板载I<sup>2</sup>C电平转换IC提供3.3V和5V设备之间的电压转换。这允许您在微控制器工作在3.3V时连接5.0V的I<sup>2</sup>C IC。
 
@@ -232,7 +232,7 @@ Seeeduino Stalker v3 &lt;---&gt; UartSBee v4.0 连接
 
     * **例如：** `DateTime dt(2015, 10, 1, 11, 43, 0, 4);`
 
-* 编译并上传到<a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>。
+* 编译并上传到<a href="/cn/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>。
 
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_v3_adjust.png)
 
@@ -250,7 +250,7 @@ Seeeduino Stalker v3 &lt;---&gt; UartSBee v4.0 连接
 
   * **例如：`DateTime now = RTC.now();`**
 
-* 编译并上传到<a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>
+* 编译并上传到<a href="/cn/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>
 
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_v3_now.png)
 
@@ -268,7 +268,7 @@ DS1337中断
 
 * 从DS1337库打开**interrupts.ino**示例
 
-* 编译并上传到<a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>
+* 编译并上传到<a href="/cn/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>
 
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_v3_interrupt.png)
 **interrupts.ino输出**

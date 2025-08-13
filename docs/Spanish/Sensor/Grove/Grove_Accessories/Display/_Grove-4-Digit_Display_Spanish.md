@@ -30,7 +30,7 @@ El Display de 4 Segmentos - Grove es un módulo de 12 pines. En este, utilizamos
 - 8 niveles de luminancia ajustables
 
 ¡Consejo!
-Para más información sobre módulos Grove, visita [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/)
+Para más información sobre módulos Grove, visita [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/)
 
 ## Especificaciones
 
@@ -128,7 +128,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 ## Primeros pasos
 
 Nota:
-Si es tu primera vez utilizando Arduino, te recomendamos visitar [Comenzando con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de empezar.
+Si es tu primera vez utilizando Arduino, te recomendamos visitar [Comenzando con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de empezar.
 
 ### Juega con Arduino
 
@@ -163,8 +163,8 @@ El Display de 4 Dígitos - Grove tiene 4 pines, GND, VCC, DIO, CLK. Se pueden co
 **Software**
 
 - **Paso 1.** Descarga [Grove-4-Digit Display Librería](https://github.com/Seeed-Studio/Grove_4Digital_Display/archive/master.zip) y [TimerOne Librería](https://code.google.com/p/arduino-timerone/downloads/detail?name=TimerOne-v9.zip&can=2&q=).
-- **Paso 2.** Revisa [cómo instalar librerías](http://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar librerías de Arduino.
-- **Paso 3.** Sigue las instrucciones a continuación para seleccionar un código en el IDE de Arduino y cárgalo. Si no sabes cómo cargar el código, revisa [cómo cargar código](http://wiki.seeedstudio.com/Upload_Code/). Ahí hay tres ejemplos como los de abajo.
+- **Paso 2.** Revisa [cómo instalar librerías](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar librerías de Arduino.
+- **Paso 3.** Sigue las instrucciones a continuación para seleccionar un código en el IDE de Arduino y cárgalo. Si no sabes cómo cargar el código, revisa [cómo cargar código](https://wiki.seeedstudio.com/Upload_Code/). Ahí hay tres ejemplos como los de abajo.
   - Pantalla de reloj
   - Flujo numérico
   - Cronómetro
@@ -188,7 +188,7 @@ El Display de 4 Dígitos - Grove tiene 4 pines, GND, VCC, DIO, CLK. Se pueden co
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), añade soporte para Arduino y arrastra un procedimiento principal al área de trabajo.
 
 Nota:
-Si es tu primera vez usando Codecraft, ve también [Guía para Codecraft usando Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía para Codecraft usando Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra los bloques como se muestra en la imagen o abre el archivo cdc que puedes descargar al final de esta página.
 
@@ -221,7 +221,7 @@ Para el paso 3, puedes conectar el Display a **cualquier puerto GPIO** pero debe
 
 #### Software
 
-- **Paso 1**. Revisa [Configuración de Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Revisa [Configuración de Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 - **Paso 2**. Descarga el archivo fuente clonando la librería grove.py.
 
 ```

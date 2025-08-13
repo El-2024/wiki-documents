@@ -186,14 +186,14 @@ reComputer J30/40 基于 Jetson Orin 构建，是一款强大且紧凑的智能�
 
 :::info
 reComputer J30/40 搭载 J401 承载板。  
-请参考此 [wiki 页面](/reComputer_J4012_Flash_Jetpack) 了解更多关于刷写 JetPack 的信息。
+请参考此 [wiki 页面](/cn/reComputer_J4012_Flash_Jetpack) 了解更多关于刷写 JetPack 的信息。
 :::
 
 ## 接口使用
 
 :::info
 reComputer J30/40 搭载 J401 承载板。  
-请参考此 [wiki 页面](/J401_carrierboard_Hardware_Interfaces_Usage) 了解更多关于接口使用的信息。
+请参考此 [wiki 页面](/cn/J401_carrierboard_Hardware_Interfaces_Usage) 了解更多关于接口使用的信息。
 :::
 
 ## 资源

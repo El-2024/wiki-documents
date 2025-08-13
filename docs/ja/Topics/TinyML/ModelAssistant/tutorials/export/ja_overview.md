@@ -24,12 +24,12 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 デフォルトでは、ONNX と TFLite の両方のモデルがエクスポートされます。どちらか一方のみをエクスポートする場合は、`--targets` パラメータを使用してエクスポートするモデルの種類を指定できます。例: `--targets onnx` または `--targets tflite`。
 :::
 
-- [PyTorch から ONNX への変換](/ModelAssistant_Tutorials_Export_PyTorch_2_ONNX): PyTorch モデルと `.pth` 重みを ONNX モデル `.onnx` に変換
+- [PyTorch から ONNX への変換](/ja/ModelAssistant_Tutorials_Export_PyTorch_2_ONNX): PyTorch モデルと `.pth` 重みを ONNX モデル `.onnx` に変換
 
 - [PyTorch から TFLite への変換](/ja/ModelAssistant_Tutorials_Export_PyTorch_2_TFLite): PyTorch モデルと `.pth` 重みを TFLite モデル `.tflite` に変換
 
 :::tip
-モデルのエクスポートを開始する前に、[トレーニング](/ModelAssistant_Tutorials_Training_Overview) セクションを完了し、モデルの重み `.pth` ファイルを取得する必要があります。
+モデルのエクスポートを開始する前に、[トレーニング](/ja/ModelAssistant_Tutorials_Training_Overview) セクションを完了し、モデルの重み `.pth` ファイルを取得する必要があります。
 :::
 
 ## パラメータの説明

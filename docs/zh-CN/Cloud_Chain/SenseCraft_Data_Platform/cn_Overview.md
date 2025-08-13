@@ -7,7 +7,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
 slug: /cn/cloud/sensecraft-data/sensecraft-data-platform/overview
 aliases:
-  - /Cloud_Chain/SenseCAP_Portal/QuickStart
+  - /cn/Cloud_Chain/SenseCAP_Portal/QuickStart
 last_update:
   date: 06/06/2025
   author: Matthew

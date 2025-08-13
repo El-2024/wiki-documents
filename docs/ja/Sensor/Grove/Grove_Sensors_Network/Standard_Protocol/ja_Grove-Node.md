@@ -182,7 +182,7 @@ Grove 互換でない他のアナログセンサーは、少し調整が必要�
       <td colspan="3" rowspan="1"> 他の回路のオン/オフ切り替え</td>
     </tr></tbody></table>
 
-例えば、暗い環境で自動的に点灯し、それ以外では消灯するライトを作成する場合、[Grove-Light_Sensor](/Grove-Light_Sensor "Grove - Light Sensor") と Grove-Red_LED を選択します。
+例えば、暗い環境で自動的に点灯し、それ以外では消灯するライトを作成する場合、[Grove-Light_Sensor](/ja/Grove-Light_Sensor "Grove - Light Sensor") と Grove-Red_LED を選択します。
 
 次に、Grove Node にロジックを教えます。
 

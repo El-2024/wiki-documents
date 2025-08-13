@@ -64,7 +64,7 @@ last_update:
 
 **Grove 接口**
 
-<!-- 连接丰富的 [Grove](/Grove_System) 接口功能模块。通过这种接口，您无需跳线或焊接工作，可以使用这些功能模块制作更强大的应用。 -->
+<!-- 连接丰富的 [Grove](/cn/Grove_System) 接口功能模块。通过这种接口，您无需跳线或焊接工作，可以使用这些功能模块制作更强大的应用。 -->
 
 :::note
     **注意** 我们将在下一版本的产品中为该扩展板添加音频录制功能。
@@ -109,7 +109,7 @@ last_update:
 
 ### 播放音乐
 
-<!-- 1.参考 [这里](/LinkIt_Smart_7688#Getting_Started) 将您的 LinkIt Smart 7688 连接到互联网。
+<!-- 1.参考 [这里](/cn/LinkIt_Smart_7688#Getting_Started) 将您的 LinkIt Smart 7688 连接到互联网。
  -->
 
 :::note
@@ -137,7 +137,7 @@ last_update:
 
 * [原理图文件](https://files.seeedstudio.com/wiki/Breakout_for_LinkIt_Smart_7688/res/Breakout_for_LinkIt_Smart_7688_v2.0_schematic_files.zip)
 
-<!-- * [LinkIt Smart 7688](/LinkIt_Smart_7688) -->
+<!-- * [LinkIt Smart 7688](/cn/LinkIt_Smart_7688) -->
 
 * [OpenWrt](http://wiki.openwrt.org/doc/howto/user.beginner)
 

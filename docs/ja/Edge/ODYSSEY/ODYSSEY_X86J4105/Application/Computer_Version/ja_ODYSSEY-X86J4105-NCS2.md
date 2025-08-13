@@ -21,7 +21,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## ソフトウェア環境のセットアップ
 
-Intel NCS2を使用するには、まず[ODYSSEY - X86J41x5用Intel® Distribution of OpenVINO™ toolkitのインストール](/ODYSSEY-X86J4105-NCS2)を完了し、すべての依存ソフトウェア環境を構成してください。
+Intel NCS2を使用するには、まず[ODYSSEY - X86J41x5用Intel® Distribution of OpenVINO™ toolkitのインストール](/ja/ODYSSEY-X86J4105-NCS2)を完了し、すべての依存ソフトウェア環境を構成してください。
 <!-- 上述リンク有誤 -->
 
 チュートリアルをすでに完了している場合は、以下の手順に従ってください。

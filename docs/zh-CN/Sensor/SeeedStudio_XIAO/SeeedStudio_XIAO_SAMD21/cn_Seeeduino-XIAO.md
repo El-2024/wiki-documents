@@ -37,7 +37,7 @@ Seeed Studio XIAO SAMD21 有 14 个引脚，通过引脚复用可用作 11 个�
 
 ### **Seeed Studio XIAO SAMD21 上的 CircuitPython**
 
-- 开始使用 [**Seeed Studio XIAO SAMD21 上的 CircuitPython**](http://wiki.seeedstudio.com/Seeeduino-XIAO-CircuitPython)。
+- 开始使用 [**Seeed Studio XIAO SAMD21 上的 CircuitPython**](https://wiki.seeedstudio.com/cn/Seeeduino-XIAO-CircuitPython)。
 
 ## **特性**
 

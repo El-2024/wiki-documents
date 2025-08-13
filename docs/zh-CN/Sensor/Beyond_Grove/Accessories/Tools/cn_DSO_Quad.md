@@ -260,13 +260,13 @@ DSO Quad，也被称为DSO203，是一款口袋大小的四通道数字示波器
 ## 升级固件
 
 ---
-请注意，此过程目前仅适用于 Windows。[Linux 的说明在这里](/DSO_Quad#upgrading-firmware "DSO_Quad/#upgrading-firmware")。(2011-04-29) 如果我们能够让升级磁盘在 Linux 和 Mac 上运行，那么为经验较少的用户编写一个自动化应用程序将会非常容易。甚至可能让升级程序检查硬件版本，以防止上传错误的固件。
+请注意，此过程目前仅适用于 Windows。[Linux 的说明在这里](/cn/DSO_Quad#upgrading-firmware "DSO_Quad/#upgrading-firmware")。(2011-04-29) 如果我们能够让升级磁盘在 Linux 和 Mac 上运行，那么为经验较少的用户编写一个自动化应用程序将会非常容易。甚至可能让升级程序检查硬件版本，以防止上传错误的固件。
 
 ### 固件获取位置
 
 这是[最新的固件](https://files.seeedstudio.com/wiki/DSO_Quad/res/PA1_V113.zip)。
 
-您也可以[从源码构建固件](/DSO_Quad-Building_Firmware "DSO Quad:Building Firmware")。
+您也可以[从源码构建固件](/cn/DSO_Quad-Building_Firmware "DSO Quad:Building Firmware")。
 
 ### 版本警告
 
@@ -280,7 +280,7 @@ DSO Quad，也被称为DSO203，是一款口袋大小的四通道数字示波器
 
 完成所有固件文件上传后，关闭设备以完成升级。当您再次启动设备时，固件版本应该已经更新。如果启动画面出现错误，请重新上传固件，并仔细按照上述说明操作。
 
-更多详细信息和 Linux 说明请参见：[DSO_Quad:Upgrading_Firmware](/DSO_Quad#upgrading-firmware "DSO_Quad/#upgrading-firmware")
+更多详细信息和 Linux 说明请参见：[DSO_Quad:Upgrading_Firmware](/cn/DSO_Quad#upgrading-firmware "DSO_Quad/#upgrading-firmware")
 
 ### 文件描述
 

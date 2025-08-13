@@ -72,11 +72,11 @@ Node-RED 还提供了一系列其他节点和插件，可用于扩展其功能�
 
 ## 安装 Modbus 节点
 
-在本节中，我们将安装 `node-red-contrib-modbus` 节点，请参考如何[安装节点](/reTerminal-DM-Getting-Started-with-Node-Red#install-nodes)。
+在本节中，我们将安装 `node-red-contrib-modbus` 节点，请参考如何[安装节点](/cn/reTerminal-DM-Getting-Started-with-Node-Red#install-nodes)。
 
 ### 选项 1：命令行
 
-首先，请复习如何通过 SSH 访问 reTerminal DM 的知识，具体步骤请查看[这里](/reterminal-dm-flash-OS#install-drivers)。
+首先，请复习如何通过 SSH 访问 reTerminal DM 的知识，具体步骤请查看[这里](/cn/reterminal-dm-flash-OS#install-drivers)。
 
 一旦通过 SSH 访问了 reTerminal DM，您可以按照以下步骤操作：
 
@@ -365,8 +365,8 @@ java -jar ModbusMechanic.jar
 
 # 在 reTerminal DM 上探索更多 Node-RED 节点
 
-* [reTerminal DM MQTT 与 Node-RED](/reTerminal-DM-Node-Red-mqtt)
-* [reTerminal DM CAN 总线与 Node-RED](/reTerminal-DM-Node-Red-canbus)
+* [reTerminal DM MQTT 与 Node-RED](/cn/reTerminal-DM-Node-Red-mqtt)
+* [reTerminal DM CAN 总线与 Node-RED](/cn/reTerminal-DM-Node-Red-canbus)
 
 ## 技术支持与产品讨论
 

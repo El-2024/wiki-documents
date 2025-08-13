@@ -16,20 +16,20 @@ last_update:
 
 ## 选项 1：完整的 PR 步骤
 
-1. 首先，请确保您可以[在本地构建 Wiki 平台页面](/Deploy_Page_Locally)。
+1. 首先，请确保您可以[在本地构建 Wiki 平台页面](/cn/Deploy_Page_Locally)。
 2. 现在，您可以在本地查看更改的同时进行修改或添加文件。然后将 PR 提交到我们的仓库。
 
-- [完整的 PR 步骤](/full_steps_pull_request)
+- [完整的 PR 步骤](/cn/full_steps_pull_request)
 
 ## 选项 2：快速 PR 步骤
 
 您可以直接下载所有必需的文件，添加 md 文件和图片，然后直接将 PR 提交到我们的仓库。
 
-- [快速 PR 步骤](/quick_pull_request)
+- [快速 PR 步骤](/cn/quick_pull_request)
 
 ## 有用的链接：
 
-- [贡献者计划介绍](/Contributor)
+- [贡献者计划介绍](/cn/Contributor)
 - [贡献者展示页面](/contributors)
 - [GitHub 上的任务分配](https://github.com/orgs/Seeed-Studio/projects/6)
 

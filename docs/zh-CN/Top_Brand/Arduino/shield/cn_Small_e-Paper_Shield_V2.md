@@ -158,7 +158,7 @@ sku:   104030019
 
 <pre>#define SCREEN_SIZE 200 // choose screen size: 144, 200, 270</pre>
 
-* 将代码上传到您的微控制器。如果您不知道如何操作，请点击[这里](/Upload_Code)。
+* 将代码上传到您的微控制器。如果您不知道如何操作，请点击[这里](/cn/Upload_Code)。
 
 * 现在您可以看到这个：
 

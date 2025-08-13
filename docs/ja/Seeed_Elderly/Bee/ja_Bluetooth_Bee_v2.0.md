@@ -74,13 +74,13 @@ c;;;
 ---
 ### UART Beeを介してPCにBluetoothを接続する
 
-<!-- Bluetoothは標準のXBeeソケットを提供します。ここでは、[UartSBee V5](/UartSBee_v5)を使用してBluetoothとPCを接続し、スライダーで供給電圧を3.3Vに設定してください。 -->
+<!-- Bluetoothは標準のXBeeソケットを提供します。ここでは、[UartSBee V5](/ja/UartSBee_v5)を使用してBluetoothとPCを接続し、スライダーで供給電圧を3.3Vに設定してください。 -->
 
 |![](https://files.seeedstudio.com/wiki/Bluetooth_Bee_v2.0/img/Bluetooth_Bee_v2.0_ConnectToPC.jpg)|![](https://files.seeedstudio.com/wiki/Bluetooth_Bee_v2.0/img/Bluetooth_Bee_v2.0_ConnectToPCSet.jpg)
 |---|---|
 ### ArduinoにBluetoothを接続する
 
-<!-- ここでは、[XBee Shield](/XBee_Shield_V2.0)をBluetoothと[Seeeduino Lotus](/Seeeduino_Lotus)の間のブリッジとして使用します。 -->
+<!-- ここでは、[XBee Shield](/ja/XBee_Shield_V2.0)をBluetoothと[Seeeduino Lotus](/ja/Seeeduino_Lotus)の間のブリッジとして使用します。 -->
 
 SeeedinoのハードウェアUARTはPCとのデバッグに使用されるため、D2とD3を選択してソフトウェアUARTをシミュレートし、Bluetoothと通信します。以下の画像のジャンパー設定を参照してください。
 
@@ -825,7 +825,7 @@ PCに接続された2つのBluetoothを使用し、1つを中央（Central）と
 
 初期化後、中央（Central）と周辺（Peripheral）は異なる動作をします。中央は一定間隔で周辺にメッセージを送信し、周辺から受信した内容を出力します。一方、周辺は中央に応答するだけです。
 
-<!-- [こちら](https://github.com/Seeed-Studio/HM-13_SW)をクリックしてテストコードをダウンロードし、HM-13_SW.inoをArduino IDEで開き、コンパイルしてArduino Unoにダウンロードしてください。プログラムの冒頭でマクロを変更してBluetoothを異なる役割に設定することを忘れないでください。Arduinoの使い方に関する問題がある場合は、[こちら](/Getting_Started_with_Seeeduino)をクリックしてヘルプを参照してください。 -->
+<!-- [こちら](https://github.com/Seeed-Studio/HM-13_SW)をクリックしてテストコードをダウンロードし、HM-13_SW.inoをArduino IDEで開き、コンパイルしてArduino Unoにダウンロードしてください。プログラムの冒頭でマクロを変更してBluetoothを異なる役割に設定することを忘れないでください。Arduinoの使い方に関する問題がある場合は、[こちら](/ja/Getting_Started_with_Seeeduino)をクリックしてヘルプを参照してください。 -->
 
 プログラムをダウンロードした後、2つのシリアルターミナルウィンドウを開きます。BluetoothのLEDが点滅し、数秒後に点滅が停止して点灯し続けます。これは、互いに接続されたことを示します。プログラムに従って、中央は周辺に継続的にメッセージを送信し、毎回フィードバックを受け取ります。
 

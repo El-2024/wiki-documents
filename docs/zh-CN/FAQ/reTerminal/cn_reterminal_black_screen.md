@@ -23,15 +23,15 @@ reTerminal 出厂时已预装必要的驱动程序，因此您无需安装任何
 
 ### 如果两个灯都亮
 
-  此情况是由于控制 LCD 屏幕的驱动程序问题引起的。此时，请按照[**第二步**](/reterminal_black_screen/#second-confirm-whether-you-have-installed-a-new-system)提供的故障排除步骤逐步执行。
+  此情况是由于控制 LCD 屏幕的驱动程序问题引起的。此时，请按照[**第二步**](/cn/reterminal_black_screen/#second-confirm-whether-you-have-installed-a-new-system)提供的故障排除步骤逐步执行。
 
 ## 第二步：确认是否安装了新系统
 
 :::caution
 
-- 如果您自行刷写了新的操作系统并且 LCD 屏幕无法正常显示，您需要单独[**安装必要的 reTerminal 驱动程序**](/reterminal_black_screen/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)。
+- 如果您自行刷写了新的操作系统并且 LCD 屏幕无法正常显示，您需要单独[**安装必要的 reTerminal 驱动程序**](/cn/reterminal_black_screen/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)。
 
-- 如果您没有刷写自己的操作系统但屏幕仍然黑屏，请直接跳转到[**刷写原厂随附的 Raspberry Pi OS**](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)。
+- 如果您没有刷写自己的操作系统但屏幕仍然黑屏，请直接跳转到[**刷写原厂随附的 Raspberry Pi OS**](/cn/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)。
 
 - 如果您尝试安装 **Raspbian OS**，我们已进行测试，发现 **Bullseye** 的 *32 位和 64 位*版本在 reTerminal 上运行良好，没有遇到任何**黑屏问题**。此外，我们还测试了新的 **Bookworm** *64 位*版本，它在 reTerminal 上运行顺畅。
 
@@ -89,9 +89,9 @@ sudo reboot
 如果您已刷写到其他操作系统并希望切换回随附的默认 Raspberry Pi OS，可以按照以下步骤操作。
 :::
 
-我们可以将 **Raspberry Pi OS / 64 位 Ubuntu OS 或其他操作系统**刷写到 reTerminal 上 CM4 的 **eMMC 存储**中。如果您之前从未在 reTerminal 上刷写过系统，我们强烈建议您遵循[刷写 Raspberry Pi OS/ 64 位 Ubuntu OS 或其他操作系统到 eMMC](/flash_different_os_to_emmc)的步骤，以准备系统刷写，包括**安装必要的驱动程序**。
+我们可以将 **Raspberry Pi OS / 64 位 Ubuntu OS 或其他操作系统**刷写到 reTerminal 上 CM4 的 **eMMC 存储**中。如果您之前从未在 reTerminal 上刷写过系统，我们强烈建议您遵循[刷写 Raspberry Pi OS/ 64 位 Ubuntu OS 或其他操作系统到 eMMC](/cn/flash_different_os_to_emmc)的步骤，以准备系统刷写，包括**安装必要的驱动程序**。
 
-安装完[必要的驱动程序](/flash_different_os_to_emmc)后，您只需将 reTerminal 的 USB Type-C 端口连接到您的电脑。当您打开文件资源管理器并看到 Compute Module 4 的 eMMC 显示为 USB 大容量存储设备时，可以执行以下步骤：
+安装完[必要的驱动程序](/cn/flash_different_os_to_emmc)后，您只需将 reTerminal 的 USB Type-C 端口连接到您的电脑。当您打开文件资源管理器并看到 Compute Module 4 的 eMMC 显示为 USB 大容量存储设备时，可以执行以下步骤：
 
 - **1.** 通过以下链接下载 Raspberry Pi OS
 

@@ -137,7 +137,7 @@ Grove - Joint 有两个 Grove 插座，用于连接上述两个模块：
 
 点击[这里](https://files.seeedstudio.com/wiki/Grove-Joint_v2.0/res/Grove-Joint_demo.rar)下载测试代码，并将其解压到任意文件夹（例如 D 盘或桌面）。
 
-<!-- 现在您需要为 Arduino [配置草图文件夹](/How_To_Use_Sketchbook)。 -->
+<!-- 现在您需要为 Arduino [配置草图文件夹](/cn/How_To_Use_Sketchbook)。 -->
 
 启动 Arduino IDE，点击 File&gt;Preferences，并在 Sketchbook 位置添加下载的测试代码的绝对路径。
 
@@ -149,7 +149,7 @@ Grove - Joint 有两个 Grove 插座，用于连接上述两个模块：
 
 点击 Tools&gt;Board 选择 Arduino Fio，并选择相应的串口。
 
-<!-- 现在点击 Upload(CTRL+U) 上传测试代码。如有错误提示，请参考[这里](/Arduino_Common_Error "Arduino 常见错误")，您也可以在[论坛](http://forum.seeedstudio.com/)上发表评论。 -->
+<!-- 现在点击 Upload(CTRL+U) 上传测试代码。如有错误提示，请参考[这里](/cn/Arduino_Common_Error "Arduino 常见错误")，您也可以在[论坛](http://forum.seeedstudio.com/)上发表评论。 -->
 
 ### 查看结果
 

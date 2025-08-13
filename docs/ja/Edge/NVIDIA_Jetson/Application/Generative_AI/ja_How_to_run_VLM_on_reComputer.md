@@ -48,7 +48,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
   sudo apt-get install nvidia-jetpack
   sudo apt install nvidia-jetson-services
   ```
-- IP カメラまたはローカル動画は RTSP を介してストリーミング可能です。（RTSP ストリーミングには、提供されている [NVStreamer チュートリアル](/getting_started_with_nvstreamer) の使用を推奨します。）
+- IP カメラまたはローカル動画は RTSP を介してストリーミング可能です。（RTSP ストリーミングには、提供されている [NVStreamer チュートリアル](/ja/getting_started_with_nvstreamer) の使用を推奨します。）
 
 ## はじめに
 
@@ -98,7 +98,7 @@ sudo docker ps
 </div>
 
 ## RTSPストリーム入力を追加する
-以下のcurlコマンドを使用して、VLMモデルで使用するRTSPストリームを最初に追加できます。ストリーミングには[NVStreamerチュートリアル](/getting_started_with_nvstreamer)を使用することを推奨します。
+以下のcurlコマンドを使用して、VLMモデルで使用するRTSPストリームを最初に追加できます。ストリーミングには[NVStreamerチュートリアル](/ja/getting_started_with_nvstreamer)を使用することを推奨します。
 - **ステップ1**: `0.0.0.0`をJetsonのIPアドレスに置き換え、`liveStreamUrl`リンクをRTSPリンクに置き換えた後、以下のコマンドをターミナルに入力してください:
     ```bash
     curl --location 'http://0.0.0.0:5010/api/v1/live-stream' \

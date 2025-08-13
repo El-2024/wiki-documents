@@ -121,7 +121,7 @@ Si no tienes la Shield Base - Grove, puedes conectar directamente el módulo Gro
 #### Software
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar. .
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar. .
 
 - **Paso 1.** Abre el IDE Arduino y crea un archivo nuevo, copía el siguiente código en el archivo nuevo.
 
@@ -214,7 +214,7 @@ void loop() {
 ¡Consejo!
 En esta demostracióñn, hemos elejido el modo 1 el cual es el modo de alternar, puedes cambiar la linea 4 <mark>#define LED_MODE 1</mark> a <mark>#define LED_MODE 2</mark> para usar el modo de siguimiento.
 
-- **Paso 2.** Sube la demostración. Si no sabes como hacerlo, por favor revisa [How to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 2.** Sube la demostración. Si no sabes como hacerlo, por favor revisa [How to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 - **Paso 3.** Ahora, intenta rpesionar el botón, verás el LED desvanecer desde el encendido, así como desde el apagado. Este es el efecto esperado.
 
@@ -244,7 +244,7 @@ Para el paso 3, puedes conectar el botón a **Cualquier puerto GPIO** pero asegu
 
 #### Software
 
-- **Paso 1**. Sigue [Setting Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Sigue [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 - **Paso 2**. Descarga el archivo funte clonando la librería grove.py.
 
 ```

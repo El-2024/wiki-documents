@@ -77,7 +77,7 @@ Grove - 三轴数字陀螺仪模块基于 ITG 3200。它是全球首款单芯片
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-3-Axis_Digital_Gyro/img/ITG3200_gyro_ArduinoIde.jpg" alt="pir" width={600} height="auto" /></p>
 
 
-<!-- 点击 Upload 上传代码，如果您对如何开始使用 Arduino 有任何问题，请点击 [这里](/Getting_Started_with_Seeeduino) 获取帮助。 -->
+<!-- 点击 Upload 上传代码，如果您对如何开始使用 Arduino 有任何问题，请点击 [这里](/cn/Getting_Started_with_Seeeduino) 获取帮助。 -->
 
 
 

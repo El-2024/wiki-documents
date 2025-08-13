@@ -184,7 +184,7 @@ sudo udevadm trigger
 
 ### 问题 2：Grove Vision AI V2 支持哪些摄像头？是否仅支持 OV5647-62？
 
-您可以在[这里](/Grove-vision-ai-v2-camera-supported)查看。目前我们已经为 OV5642 系列摄像头编写了驱动，因此 Grove Vision AI V2 支持全系列的 Raspberry Pi OV5647 摄像头，例如 OV5647-62、OV5647-67 和 OV5647-160。其他 CSI 摄像头理论上是支持的，但由于某些摄像头没有编写驱动程序或自身没有颜色处理单元，因此可能会出现颜色仅为绿色的问题，缺失全彩可能会对识别的准确性产生影响。
+您可以在[这里](/cn/Grove-vision-ai-v2-camera-supported)查看。目前我们已经为 OV5642 系列摄像头编写了驱动，因此 Grove Vision AI V2 支持全系列的 Raspberry Pi OV5647 摄像头，例如 OV5647-62、OV5647-67 和 OV5647-160。其他 CSI 摄像头理论上是支持的，但由于某些摄像头没有编写驱动程序或自身没有颜色处理单元，因此可能会出现颜色仅为绿色的问题，缺失全彩可能会对识别的准确性产生影响。
 
 ## 资源
 

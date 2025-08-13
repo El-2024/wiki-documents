@@ -158,9 +158,9 @@ ms
 
 我们建议您在使用气体传感器之前阅读以下内容，这将帮助您更好地了解 Arduino 和我们的产品，同时也能让您更轻松地使用开源硬件。
 
-<!-- - [Getting Started with Arduino](/Getting_Started_with_Seeeduino)
-- [What is Grove system](/Grove_System)
-- [Why i need a Base shield?](/Base_Shield_V2) -->
+<!-- - [Getting Started with Arduino](/cn/Getting_Started_with_Seeeduino)
+- [What is Grove system](/cn/Grove_System)
+- [Why i need a Base shield?](/cn/Base_Shield_V2) -->
 
 - Arduino 入门指南
 - 什么是 Grove 系统
@@ -247,7 +247,7 @@ void loop()
 
 1. 您需要准备一个 Raspberry Pi 和一个 GrovePi 或 GrovePi+。
 
-2. 您需要完成开发环境的配置，否则请参考[这里](/GrovePi_Plus)。
+2. 您需要完成开发环境的配置，否则请参考[这里](/cn/GrovePi_Plus)。
 
 3. 连接
 

@@ -74,14 +74,14 @@ BLE (dual) Bee v1.0は、ATコマンドをサポートするARMアーキテク�
 ---
 ###   Uart BeeでBluetoothをPCに接続
 
-<!-- Bluetoothは標準のXBeeソケットを提供します。ここでは[UartSBee V5](/UartSBee_v5)を使用してBluetoothとPCを接続し、スライダーで供給電圧を3.3Vに選択していることを確認します。 -->
+<!-- Bluetoothは標準のXBeeソケットを提供します。ここでは[UartSBee V5](/ja/UartSBee_v5)を使用してBluetoothとPCを接続し、スライダーで供給電圧を3.3Vに選択していることを確認します。 -->
 
 |![](https://files.seeedstudio.com/wiki/BLE_dual_Bee_v1.0/img/Editing_BLE-dual-Bee_v1.0_ConnectToPC.jpg)|![](https://files.seeedstudio.com/wiki/BLE_dual_Bee_v1.0/img/Editing_BLE-dual-Bee_v1.0_ConnectToPCSet.jpg)
 |---|---|
 
 ###   BluetoothをArduinoに接続
 
-<!-- ここでは[XBee Shield](/XBee_Shield_V2.0)をBluetoothと[Seeeduino Lotus](/Seeeduino_Lotus)の間のブリッジとして使用します。 -->
+<!-- ここでは[XBee Shield](/ja/XBee_Shield_V2.0)をBluetoothと[Seeeduino Lotus](/ja/Seeeduino_Lotus)の間のブリッジとして使用します。 -->
 
 SeeedのハードウェアUARTはPCとのデバッグに使用されているため、D2とD3を選択してソフトウェアUARTを模擬してBluetoothと通信します。下の図のジャンパー設定を参照してください。
 
@@ -826,7 +826,7 @@ Bluetoothをペリフェラルロールとして設定し電源を入れます�
 
 初期化後、セントラルとペリフェラルは異なることを行います。セントラルは定期的にペリフェラルにメッセージを送信し、ペリフェラルから受信したものを印刷しますが、ペリフェラルはセントラルにのみ応答します。
 
-<!-- [ここ](https://github.com/Seeed-Studio/HM-13_SW)をクリックしてテストコードをダウンロードし、Arduino IDEでHM-13_SW.inoを開き、コンパイルしてArduino Unoにダウンロードします。最初のマクロを変更してBluetoothを異なるロールに設定することを忘れないでください。Arduinoの開始方法について問題がある場合は、[ここ](/Getting_Started_with_Seeeduino)をクリックしてヘルプを参照してください。 -->
+<!-- [ここ](https://github.com/Seeed-Studio/HM-13_SW)をクリックしてテストコードをダウンロードし、Arduino IDEでHM-13_SW.inoを開き、コンパイルしてArduino Unoにダウンロードします。最初のマクロを変更してBluetoothを異なるロールに設定することを忘れないでください。Arduinoの開始方法について問題がある場合は、[ここ](/ja/Getting_Started_with_Seeeduino)をクリックしてヘルプを参照してください。 -->
 
 プログラムをダウンロード後、2つのシリアルターミナルウィンドウを開くと、BluetoothのLEDが点滅し、数秒後に点滅が止まって点灯し続けます。これは互いに接続されたことを示しています。プログラムが書かれているとおり、セントラルは継続的にペリフェラルにメッセージを送信し、毎回フィードバックを受け取ります。
 

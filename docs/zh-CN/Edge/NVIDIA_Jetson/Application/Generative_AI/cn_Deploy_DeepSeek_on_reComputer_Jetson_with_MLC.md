@@ -21,7 +21,7 @@ last_update:
 
 DeepSeek 是一套前沿的 AI 模型套件，专为高效、准确和实时处理而优化。通过针对边缘计算的高级优化，DeepSeek 能够直接在 Jetson 设备上实现快速、低延迟的 AI 推理，减少对云计算的依赖，同时最大化性能。
 
-在[之前的维基](/deploy_deepseek_on_jetson)中，我们提供了在 Jetson 上部署 DeepSeek 的快速指南。然而，成功部署的模型并未达到最佳推理速度。
+在[之前的维基](/cn/deploy_deepseek_on_jetson)中，我们提供了在 Jetson 上部署 DeepSeek 的快速指南。然而，成功部署的模型并未达到最佳推理速度。
 
 本维基提供了使用 [MLC](https://llm.mlc.ai/) 在 reComputer Jetson 设备上部署 [DeepSeek](https://www.deepseek.com/) 的分步指南，以实现高效的边缘 AI 推理。
 

@@ -10,7 +10,7 @@ last_update:
   author: shuxu hu
 ---
 
-我们将很快更新此页面。请参考[这里](/Contribution-Guide)
+我们将很快更新此页面。请参考[这里](/cn/Contribution-Guide)
 
 本教程将向您展示如何编辑我们 Wiki 系统中的文档。如果您有任何想法并愿意作为贡献者更新文档，我们在此提前表示感谢。在本教程中，您将访问我们 Wiki 系统的 GitHub 仓库，其中包含数百个以 Markdown 格式编写的文档，并且随着我们仍在进行文档迁移，这个数字还在不断增加。
 

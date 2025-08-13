@@ -62,9 +62,9 @@ Quad DSOのキャリブレーション手順はすでに記述されています
 
 ## 関連情報
 
-* [DSO Quad](/DSO_Quad "DSO Quad")
+* [DSO Quad](/ja/DSO_Quad "DSO Quad")
 
-* [DSO Quad:ファームウェアのアップグレード](/DSO_Quad-Building_Firmware "DSO Quad:ファームウェアのアップグレード")
+* [DSO Quad:ファームウェアのアップグレード](/ja/DSO_Quad-Building_Firmware "DSO Quad:ファームウェアのアップグレード")
 
 ## 技術サポートと製品ディスカッション
 

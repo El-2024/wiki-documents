@@ -110,13 +110,13 @@ Mesh Bee 是来自 Seeed Studio 的一款 2.4GHz 无线收发器。它基于 NXP
 ### 5.1 硬件安装
 
 Mesh Bee具有通用的Bee插座。因此，您可以像使用XBee或RFBee等一样使用它。需要注意的是，除了部分引脚外，它们的引脚并不是100%兼容。
-如果您是Bee系列的新手，请访问[此链接](/Grove_Cape_for_BeagleBone_Series "Grove_Cape_for_BeagleBone_Series")了解Bee系列，并访问[此链接](/RFbee_V1.1-Wireless_Arduino_compatible_node#Usage "RFbee V1.1 - Wireless Arduino compatible node")了解如何将Bee与其他硬件安装。
+如果您是Bee系列的新手，请访问[此链接](/cn/Grove_Cape_for_BeagleBone_Series "Grove_Cape_for_BeagleBone_Series")了解Bee系列，并访问[此链接](/cn/RFbee_V1.1-Wireless_Arduino_compatible_node#Usage "RFbee V1.1 - Wireless Arduino compatible node")了解如何将Bee与其他硬件安装。
 
 ### 5.2 如何更新固件
 
 Mesh Bee默认预装了协调器固件，这是由于制造和销售的便利性。您需要自行刷入路由器/终端设备固件。这对像您这样的创客来说非常简单。
 
-JN516x具有一个特定的固件下载接口，包括UART和一些其他引脚，因此您需要一个**编程器**来刷固件。我们提供了[UartSBee v5](/UartSBee_v5 "UartSBee v5")。UartSBee v5具有v4的大部分功能，并额外支持Mesh Bee的编程。
+JN516x具有一个特定的固件下载接口，包括UART和一些其他引脚，因此您需要一个**编程器**来刷固件。我们提供了[UartSBee v5](/cn/UartSBee_v5 "UartSBee v5")。UartSBee v5具有v4的大部分功能，并额外支持Mesh Bee的编程。
 
 ![](https://files.seeedstudio.com/wiki/Mesh_Bee/img/UartSBee_V05.jpg)
 
@@ -124,7 +124,7 @@ JN516x具有一个特定的固件下载接口，包括UART和一些其他引脚�
 
 * 第一步：从GitHub下载最新固件；
 
-  * [Mesh_Bee#9.1_Firmware_Downloads](/Mesh_Bee#91-firmware-downloads "Mesh Bee")
+  * [Mesh_Bee#9.1_Firmware_Downloads](/cn/Mesh_Bee#91-firmware-downloads "Mesh Bee")
 
 * 第二步：使用FT_Prog配置UartSBee v5；
 
@@ -228,13 +228,13 @@ Mesh Bee 支持通过空中更新固件。一旦完成网络配置，路由器/�
 
 <big>步骤 1：将新固件刷入协调器的外部闪存</big>
 
-完成此步骤的方法与 [5.2 如何更新固件](/Mesh_Bee#52-how-to-update-firmware "Mesh Bee") 非常相似，唯一的区别是选择 "External" 作为 "Flash Select"。
+完成此步骤的方法与 [5.2 如何更新固件](/cn/Mesh_Bee#52-how-to-update-firmware "Mesh Bee") 非常相似，唯一的区别是选择 "External" 作为 "Flash Select"。
 
 ![](https://files.seeedstudio.com/wiki/Mesh_Bee/img/Flash_External.jpg)
 
 <big>步骤 2：确保网络已正确配置且节点可以相互通信</big>
 
-按照 [5.3.2_Configuration](/Mesh_Bee#53-at-commands--configuration "Mesh Bee") 描述配置网络节点。发送 "ATLA" 命令查看网络上的节点。
+按照 [5.3.2_Configuration](/cn/Mesh_Bee#53-at-commands--configuration "Mesh Bee") 描述配置网络节点。发送 "ATLA" 命令查看网络上的节点。
 
 <big>步骤 3：触发 OTA 过程</big>
 
@@ -276,7 +276,7 @@ Mesh Bee 支持通过空中更新固件。一旦完成网络配置，路由器/�
 
 <big>步骤 2：配置 Mesh Bee 节点</big>
 
-参考 [5.3.2_Configuration](/Mesh_Bee#532-configuration "Mesh Bee") 配置点对点连接。
+参考 [5.3.2_Configuration](/cn/Mesh_Bee#532-configuration "Mesh Bee") 配置点对点连接。
 
 <big>步骤 3：组装舵机端（被控制）</big>
 

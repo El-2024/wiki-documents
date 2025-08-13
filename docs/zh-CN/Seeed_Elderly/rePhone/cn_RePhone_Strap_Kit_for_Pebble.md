@@ -26,7 +26,7 @@ RePhone（Xadow）模块的引入让您的智能手表更加智能。基于 [Peb
 
 ###   Xadow GPS v2
 ---
-<!-- 有关此模块的更多信息，请查看 [**Xadow GPS V2 Wiki 页面**](/Xadow_GPS_V2)。 -->
+<!-- 有关此模块的更多信息，请查看 [**Xadow GPS V2 Wiki 页面**](/cn/Xadow_GPS_V2)。 -->
 
 <table>
 <tr>
@@ -117,7 +117,7 @@ RePhone（Xadow）模块的引入让您的智能手表更加智能。基于 [Peb
 
 ###   Xadow NFC v2
 
-<!-- 有关此模块的更多信息，请查看 [**Xadow NFC v2 Wiki 页面**](/Xadow_NFC_v2)。 -->
+<!-- 有关此模块的更多信息，请查看 [**Xadow NFC v2 Wiki 页面**](/cn/Xadow_NFC_v2)。 -->
 
 <table>
 <tr>

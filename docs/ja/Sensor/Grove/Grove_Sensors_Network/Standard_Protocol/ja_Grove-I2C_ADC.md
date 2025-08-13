@@ -163,7 +163,7 @@ void loop()
 
 <div class="admonition note">
 <p class="admonition-title">注意</p>
-Grove - I2C ADCのアドレスは変更可能であり、再定義することができます。これには基板上でのハードウェア改造が必要です。同時に複数のI2C ADCを使用する場合は、以下のリファレンス部分の指示に従ってください。同時に使用可能なI2C ADCの最大数は9ですが、Grove - Base Shield V1.2にはI2Cソケットが4つしかありません。4つ以上のI2C ADCを使用する場合は、<a href="/Grove-I2C_Hub">Grove - I2C Hub</a>を使用してI2Cソケットを増やしてください。
+Grove - I2C ADCのアドレスは変更可能であり、再定義することができます。これには基板上でのハードウェア改造が必要です。同時に複数のI2C ADCを使用する場合は、以下のリファレンス部分の指示に従ってください。同時に使用可能なI2C ADCの最大数は9ですが、Grove - Base Shield V1.2にはI2Cソケットが4つしかありません。4つ以上のI2C ADCを使用する場合は、<a href="/ja/Grove-I2C_Hub">Grove - I2C Hub</a>を使用してI2Cソケットを増やしてください。
 </div>
 
 ### Beaglebone Greenを使用する場合
@@ -171,7 +171,7 @@ Grove - I2C ADCのアドレスは変更可能であり、再定義すること�
 BBG上でプログラムを編集するには、Cloud9 IDEを使用できます。
 Cloud9 IDEに慣れるための簡単な演習として、BeagleBoneの4つのユーザープログラム可能なLEDの1つを点滅させる簡単なアプリケーションを作成するのが良いでしょう。
 
-Cloud9 IDEを初めて使用する場合は、この[**リンク**](/BeagleBone_Green)を参照してください。
+Cloud9 IDEを初めて使用する場合は、この[**リンク**](/ja/BeagleBone_Green)を参照してください。
 
 **ステップ1:** Grove - UARTソケットをGrove - GPIOソケットとして設定します。この[**リンク**](https://www.seeedstudio.com/recipe/362-how-to-use-the-grove-uart-port-as-a-gpio-on-bbg.html)に従ってください。
 

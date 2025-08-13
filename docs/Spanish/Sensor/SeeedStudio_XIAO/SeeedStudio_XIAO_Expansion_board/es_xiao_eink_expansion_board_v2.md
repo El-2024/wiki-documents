@@ -156,7 +156,7 @@ Si es la primera vez que usas Arduino, te recomendamos encarecidamente consultar
 
 - Si deseas usar **Seeed Studio XIAO ESP32C3** para los siguientes procedimientos, consulta **[este tutorial](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)** para agregarlo correctamente.
 
-- Si deseas usar **Seeed Studio XIAO ESP32S3** para los siguientes procedimientos, consulta **[este tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** para agregarlo correctamente.
+- Si deseas usar **Seeed Studio XIAO ESP32S3** para los siguientes procedimientos, consulta **[este tutorial](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** para agregarlo correctamente.
 
 Para otros modelos de XIAO, consulta la página de inicio de ese XIAO para agregarlo correctamente.
 

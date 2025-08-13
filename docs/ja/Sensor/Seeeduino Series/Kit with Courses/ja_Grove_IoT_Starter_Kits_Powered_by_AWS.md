@@ -44,7 +44,7 @@ _**注意:**_ AWS IoT とキットに付属する開発ボードには多くの�
 
 ![画像をここに入力](https://files.seeedstudio.com/wiki/Grove_IoT_Starter_Kits_Powered_by_AWS/img/Aws_kit_seeeduino_cloud.JPG)
 
-**[Seeeduino Cloud](/Sensor/Seeeduino Series/Seeeduino_Cloud "Seeeduino Cloud")** は、Dragino WiFi IoT モジュール [HE](http://www.dragino.com/products/linux-module/item/87-he.html) と ATmega32u4 をベースにしたマイクロコントローラボードです。**HE** は、オープンソースの OpenWrt システムを内蔵した高性能で低コストの 150M、2.4G WiFi モジュールです。Seeeduino Cloud は [Arduino Yun](https://www.arduino.cc/en/Main/ArduinoBoardYun) 互換のボードでもあります。Grove IoT スターターキットには、AWS クラウドコンピューティングを使用してアイデアを具体的なアプリケーションに変えるために最も頻繁に使用されるセンサーとアクチュエータが含まれています。
+**[Seeeduino Cloud](/ja/Sensor/Seeeduino Series/Seeeduino_Cloud "Seeeduino Cloud")** は、Dragino WiFi IoT モジュール [HE](http://www.dragino.com/products/linux-module/item/87-he.html) と ATmega32u4 をベースにしたマイクロコントローラボードです。**HE** は、オープンソースの OpenWrt システムを内蔵した高性能で低コストの 150M、2.4G WiFi モジュールです。Seeeduino Cloud は [Arduino Yun](https://www.arduino.cc/en/Main/ArduinoBoardYun) 互換のボードでもあります。Grove IoT スターターキットには、AWS クラウドコンピューティングを使用してアイデアを具体的なアプリケーションに変えるために最も頻繁に使用されるセンサーとアクチュエータが含まれています。
 
 _**ユーザーマニュアル**_ については、以下をご覧ください：
 Seeeduino Cloud と AWS に対応した Grove IoT スターターキット
@@ -138,7 +138,7 @@ _メイン記事: [Intel Edison](https://software.intel.com/en-us/iot/library/ed
 
 [![画像をここに挿入](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://wwww.amazon.com/dp/B0168KU5FK)
 
-_**ユーザーマニュアル**_については、[Intel® Edison と Grove IoT スターターキット Powered by AWS](/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS) のWikiページをご覧ください。
+_**ユーザーマニュアル**_については、[Intel® Edison と Grove IoT スターターキット Powered by AWS](/ja/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS) のWikiページをご覧ください。
 
 **部品リスト**
 
@@ -216,13 +216,13 @@ _**ユーザーマニュアル**_については、[Intel® Edison と Grove IoT
 
 ![画像をここに挿入](https://files.seeedstudio.com/wiki/Grove_IoT_Starter_Kits_Powered_by_AWS/img/Aws_kit_bbg.JPG)
 
-_メイン記事: [BeagleBone Green](/BeagleBone_Green "BeagleBone Green")_
+_メイン記事: [BeagleBone Green](/ja/BeagleBone_Green "BeagleBone Green")_
 
-**[BeagleBone Green](/BeagleBone_Green "BeagleBone Green")** (BBG) は、BeagleBoard.org と Seeed Studio の共同開発による製品です。オープンソースハードウェア設計の [BeagleBone Black](https://beagleboard.org/BLACK) を基にしており、2つのGroveコネクタが追加されています。このキットには新しいBBG、10個のGroveモジュール、およびそれらを迅速に接続するためのステップバイステップのチュートリアルが含まれています。
+**[BeagleBone Green](/ja/BeagleBone_Green "BeagleBone Green")** (BBG) は、BeagleBoard.org と Seeed Studio の共同開発による製品です。オープンソースハードウェア設計の [BeagleBone Black](https://beagleboard.org/BLACK) を基にしており、2つのGroveコネクタが追加されています。このキットには新しいBBG、10個のGroveモジュール、およびそれらを迅速に接続するためのステップバイステップのチュートリアルが含まれています。
 
 [![画像をここに挿入](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://wwww.amazon.com/dp/B0168L6B0C)
 
-_**ユーザーマニュアル**_については、[Beagle Bone Green と Grove IoT スターターキット Powered by AWS](/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS) のWikiページをご覧ください。
+_**ユーザーマニュアル**_については、[Beagle Bone Green と Grove IoT スターターキット Powered by AWS](/ja/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS) のWikiページをご覧ください。
 
 **部品リスト**
 
@@ -294,7 +294,7 @@ _メイン記事: [LinkIt ONE](https://wiki.seeedstudio.com/ja/LinkIt_ONE/ "Link
 [![enter image description here](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://wwww.amazon.com/dp/B0168LBYWC)
 
 _**ユーザーマニュアル**_については、以下のリンクをご覧ください：  
-[LinkIT One と Grove IoT スターターキット（AWS 対応）の Wiki ページ](/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS)
+[LinkIT One と Grove IoT スターターキット（AWS 対応）の Wiki ページ](/ja/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS)
 
 **部品リスト**
 
@@ -354,13 +354,13 @@ _**ユーザーマニュアル**_については、以下のリンクをご覧�
 
 * [Amazon Web Services](https://en.wikipedia.org/wiki/Amazon_Web_Services)
 
-* <a href="/Grove_IoT_Starter_Kits_Powered_by_AWS" ><span><font size={"3"}> Seeeduino Cloud と Grove IoT スターターキット（AWS 対応）の Wiki </font></span></a>
+* <a href="/ja/Grove_IoT_Starter_Kits_Powered_by_AWS" ><span><font size={"3"}> Seeeduino Cloud と Grove IoT スターターキット（AWS 対応）の Wiki </font></span></a>
 
-* <a href="/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}>Intel® Edison と Grove IoT スターターキット（AWS 対応）の Wiki</font></span></a>
+* <a href="/ja/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}>Intel® Edison と Grove IoT スターターキット（AWS 対応）の Wiki</font></span></a>
 
-* <a href="/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}> Beagle Bone Green と Grove IoT スターターキット（AWS 対応）の Wiki </font></span></a>
+* <a href="/ja/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}> Beagle Bone Green と Grove IoT スターターキット（AWS 対応）の Wiki </font></span></a>
 
-* <a href="/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}> LinkIT One と Grove IoT スターターキット（AWS 対応）の Wiki </font></span></a>
+* <a href="/ja/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}> LinkIT One と Grove IoT スターターキット（AWS 対応）の Wiki </font></span></a>
 
 ## 技術サポートと製品ディスカッション
 

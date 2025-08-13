@@ -26,11 +26,11 @@ Grove 是一个模块化的、即用型工具集。就像乐高一样，它采�
 
 如果这是您第一次使用 Arduino，您需要完成以下步骤：
 
-<!-- *   [Getting Started with Arduino](/Getting_Started_with_Arduino)
+<!-- *   [Getting Started with Arduino](/cn/Getting_Started_with_Arduino)
 
-*   [Install your microcontroller](/Getting_Started_with_Seeeduino)
+*   [Install your microcontroller](/cn/Getting_Started_with_Seeeduino)
 
-*   [Download and import the Grove - Starter Kit Sketchbook](/How_To_Use_Sketchbook) -->
+*   [Download and import the Grove - Starter Kit Sketchbook](/cn/How_To_Use_Sketchbook) -->
 
 Grove - Starter Kit Sketchbook 的下载地址在[这里](https://github.com/Seeed-Studio/Sketchbook_Starter_Kit_V2.0)。
 
@@ -79,7 +79,7 @@ Grove - Starter Kit Sketchbook 的下载地址在[这里](https://github.com/See
 
 数字端口下方是四个 I2C Grove 端口。I2C 是一种低速总线协议，通过两根线传输数据：SCL 和 SDA。SCL 是用于同步 I2C 总线上数据传输的时钟线；SDA 是数据线。
 
-<!-- For detailed information on how to use your Grove – Base Shield, go to [Base Shield V2](/Base_Shield_V2). -->
+<!-- For detailed information on how to use your Grove – Base Shield, go to [Base Shield V2](/cn/Base_Shield_V2). -->
 
 ####  Grove - LCD RGB 背光
 
@@ -123,7 +123,7 @@ File -&gt; Sketchbook -&gt; Grove_RGB_Backlight_LCD -&gt; HelloWorld
 在处理市电电压时请格外小心——如有疑问，请联系专业人员，如持证电工寻求帮助。
 </font>
 
-<!-- For detailed information on how to use your Grove – Relay, you can go to [Grove – Relay page](/Grove-Relay). -->
+<!-- For detailed information on how to use your Grove – Relay, you can go to [Grove – Relay page](/cn/Grove-Relay). -->
 
 ####  Grove – 蜂鸣器
 
@@ -143,7 +143,7 @@ File -&gt; Sketchbook -&gt; Grove_RGB_Backlight_LCD -&gt; HelloWorld
 
 压电蜂鸣器实际上是如何工作的？通常，每个压电蜂鸣器中有两个陶瓷片。当给它们施加不同的电压时，它们会相互吸引或排斥。这些陶瓷片的运动引起空气振动（即声音）。当振动频率改变时，声音频率也会相应改变。
 
-<!-- For detailed information on how to use your Grove - Buzzer, go to [Grove - Buzzer page](/Grove-Buzzer) -->
+<!-- For detailed information on how to use your Grove - Buzzer, go to [Grove - Buzzer page](/cn/Grove-Buzzer) -->
 
 ####   Grove - 声音传感器
 
@@ -161,7 +161,7 @@ File -&gt; Sketchbook -&gt; Grove_Sound_Sensor
 
 驻极体麦克风收集所有频率的声音强度，但电位器可以充当门卫。例如，当您将轴完全顺时针旋转时，电位器可以让一切通过。当您将其完全逆时针旋转时，什么都不会通过。
 
-<!-- For a detailed information on how to use your Grove - Sound Sensor, go to [Grove - Sound Sensor page](/Grove-Sound_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Sound Sensor, go to [Grove - Sound Sensor page](/cn/Grove-Sound_Sensor) -->
 
 ####   Grove - 触摸传感器
 
@@ -179,7 +179,7 @@ Grove – 按钮的代码适用于此模块。通过以下路径找到示例：F
 
 这是瞬时接触按钮的替代方案。Grove – 触摸传感器检测底部圆形（未涂漆）区域的电容变化；您的手指越靠近这个区域，电容变化就越大。即使您的手指和传感器之间有纸张，它仍然能可靠地工作。
 
-<!-- For detailed information on how to use your Grove - Touch Sensor, go to [Grove - Touch Sensor page](/Grove-Touch_Sensor). -->
+<!-- For detailed information on how to use your Grove - Touch Sensor, go to [Grove - Touch Sensor page](/cn/Grove-Touch_Sensor). -->
 
 ####   Grove - 旋转角度传感器
 
@@ -199,7 +199,7 @@ File -&gt; Sketchbook -&gt; Grove_Rotary_Angle_Sensor
 
 旋转电位器看起来与旋转编码器非常相似，但它们不是同一个东西。旋转电位器本质上是一个滑动电位器，构造成圆形形状。它以模拟方式报告滑动触点正在使用的电阻元件的比例。
 
-<!-- For a detailed information on how to use your Grove - Rotary Angle Sensor,you can go to [Grove - Rotary Angle Sensor page](/Grove-Rotary_Angle_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Rotary Angle Sensor,you can go to [Grove - Rotary Angle Sensor page](/cn/Grove-Rotary_Angle_Sensor) -->
 
 ####   Grove – 温度传感器
 
@@ -219,7 +219,7 @@ File -&gt; Sketchbook -&gt; Grove_Temperature_Sensor.
 
 Grove – 温度传感器用于检测环境温度。
 
-<!-- For a detailed information on how to use your Grove - Temperature Sensor,you can go to [Grove - Temperature Sensor](/Grove-Temperature_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Temperature Sensor,you can go to [Grove - Temperature Sensor](/cn/Grove-Temperature_Sensor) -->
 
 ####   Grove - LED
 
@@ -239,7 +239,7 @@ File -&gt; Sketchbook -&gt; Grove_LED
 
 我们为您准备了三种颜色的 LED 灯泡，您可以通过更换小型 Grove – LED 插座上的 LED 来获得您想要的颜色。LED 在灯泡的平面侧有一个阴极，在灯泡的圆形侧有一个阳极。阳极需要安装在对应插座上的 '+' 标志处，LED 才能正常工作。
 
-<!-- For a detailed information on how to use your Grove - LED,you can go to [Grove - Red LED](/Grove-Red_LED) -->
+<!-- For a detailed information on how to use your Grove - LED,you can go to [Grove - Red LED](/cn/Grove-Red_LED) -->
 
 ####   Grove - 光传感器
 
@@ -259,7 +259,7 @@ File -&gt; Sketchbook -&gt; Grove_Light_Sensor
 
 模拟光传感器的输出范围从 0 到 1023，但输出与环境光强度不是线性关系。
 
-<!-- For a detailed information on how to use your Grove - Light Sensor,you can go to [Grove - Light Sensor](/Grove-Light_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Light Sensor,you can go to [Grove - Light Sensor](/cn/Grove-Light_Sensor) -->
 
 ####   Grove – 按钮
 

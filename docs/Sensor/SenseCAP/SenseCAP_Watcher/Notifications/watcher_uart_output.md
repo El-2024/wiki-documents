@@ -336,7 +336,7 @@ To upload the code to your XIAO ESP32 Series board, follow these steps:
 
    - If you want to use **Seeed Studio XIAO ESP32C3** for the routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)** to finish adding.
 
-   - If you want to use **Seeed Studio XIAO ESP32S3** for the routines, please refer to **[this tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
+   - If you want to use **Seeed Studio XIAO ESP32S3** for the routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
 
    - If you want to use **Seeed Studio XIAO ESP32C6** for the routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)** to finish adding.
 

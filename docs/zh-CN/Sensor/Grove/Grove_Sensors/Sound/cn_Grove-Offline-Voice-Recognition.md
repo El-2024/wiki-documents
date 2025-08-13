@@ -66,7 +66,7 @@ Grove - 离线语音识别模块适用于低功耗纯离线语音识别，基于
 
 - [Seeed Studio XIAO RP2040](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html)
 - [Grove Base for XIAO](https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html)
-- [Grove - 离线语音识别器](/Grove-Offline-Voice-Recognition)
+- [Grove - 离线语音识别器](/cn/Grove-Offline-Voice-Recognition)
 - [扬声器](https://www.seeedstudio.com/Mono-Enclosed-Speaker-2W-6-Ohm-p-2832.html)
 
 

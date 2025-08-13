@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /cn/sensecraft-data-platform/applications/planting-advice
 aliases:
-  - /xiao_esp32c3_sensecapai
+  - /cn/xiao_esp32c3_sensecapai
 last_update:
   date: 06/06/2025
   author: Jancee

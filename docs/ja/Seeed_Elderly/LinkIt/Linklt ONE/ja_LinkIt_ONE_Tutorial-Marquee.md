@@ -104,25 +104,25 @@ _File -> Examples -> Starter Kit for LinkIt -> Extend_Lesson -> L4_Control_LEDs_
 
 **参考**
 
-<!-- *   [The Basics](/LinkIt_ONE_Tutorial-The_Basics)
+<!-- *   [The Basics](/ja/LinkIt_ONE_Tutorial-The_Basics)
 
-*   [Hello World](/LinkIt_ONE_Tutorial-Hello_World)
+*   [Hello World](/ja/LinkIt_ONE_Tutorial-Hello_World)
 
-*   [Push Button](/LinkIt_ONE_Tutorial-Push_Button)
+*   [Push Button](/ja/LinkIt_ONE_Tutorial-Push_Button)
 
-*   [Marquee](/LinkIt_ONE_Tutorial-Marquee)
+*   [Marquee](/ja/LinkIt_ONE_Tutorial-Marquee)
 
-*   [Colorful World](/LinkIt_ONE_Tutorial-Colorful_World)
+*   [Colorful World](/ja/LinkIt_ONE_Tutorial-Colorful_World)
 
-*   [Analog Interface](/LinkIt_ONE_Tutorial-Analog_Interface)
+*   [Analog Interface](/ja/LinkIt_ONE_Tutorial-Analog_Interface)
 
-*   [Mini Servo](/LinkIt-ONE-Tutorial---Mini-Servo)
+*   [Mini Servo](/ja/LinkIt-ONE-Tutorial---Mini-Servo)
 
-*   [Light Sensor](/LinkIt_ONE_Tutorial-Light-Sensor)
+*   [Light Sensor](/ja/LinkIt_ONE_Tutorial-Light-Sensor)
 
-*   [SMS Control the LED](/LinkIt_ONE_Tutorial-SMS_control_the_LED)
+*   [SMS Control the LED](/ja/LinkIt_ONE_Tutorial-SMS_control_the_LED)
 
-*   [Get Temperature with Webpage](/LinkIt_ONE_Tutorial-Get_temperature_with_Webpage) -->
+*   [Get Temperature with Webpage](/ja/LinkIt_ONE_Tutorial-Get_temperature_with_Webpage) -->
 
 ## 技術サポートと製品ディスカッション
 

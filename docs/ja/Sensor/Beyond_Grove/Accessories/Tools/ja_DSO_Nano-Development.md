@@ -13,13 +13,13 @@ last_update:
 https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
-[DSO Nano](/DSO_Nano "DSO Nano")の開発（または開発に関する）リソース。
+[DSO Nano](/ja/DSO_Nano "DSO Nano")の開発（または開発に関する）リソース。
 
 ## ファームウェア開発
 
 * ソースコードを取得してビルドする
 
-[Building the source with gcc](/DSO_Nano-gcc "DSO Nano/gcc")をご覧ください。IARでビルドする場合は、以下のリンクセクションを参照してください。
+[Building the source with gcc](/ja/DSO_Nano-gcc "DSO Nano/gcc")をご覧ください。IARでビルドする場合は、以下のリンクセクションを参照してください。
 
 * パッチを提供する
 
@@ -27,9 +27,9 @@ DSO Nanoフォーラムであなたの変更を共有してください。最適
 
 ## デバッグ
 
-* [qemuエミュレータを使用してgdbで動作中のarmコードをデバッグする](/DSO_Nano-Qemu_gdb "DSO Nano/Qemu gdb")
+* [qemuエミュレータを使用してgdbで動作中のarmコードをデバッグする](/ja/DSO_Nano-Qemu_gdb "DSO Nano/Qemu gdb")
 
-* [OpenOCDとgdbを使用してJTAGでボード上のarmコードをデバッグする](/DSO_Nano-OpenOCD_gdb "DSO Nano/OpenOCD gdb")
+* [OpenOCDとgdbを使用してJTAGでボード上のarmコードをデバッグする](/ja/DSO_Nano-OpenOCD_gdb "DSO Nano/OpenOCD gdb")
 
 ## リンク
 

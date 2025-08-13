@@ -54,7 +54,7 @@ OpenWrt 是一个运行在嵌入式设备/路由器上的开源 Linux 操作系�
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Mini_Router/mini_router_overview2.png" alt="pir" width="650" height="auto"/></p>
 
 ## 常见问题解答
-有关详细信息，请点击 [**这里**](/FAQs_For_openWrt)
+有关详细信息，请点击 [**这里**](/cn/FAQs_For_openWrt)
 
 ## 资源
 

@@ -39,7 +39,7 @@ Seeeduino Lotus 1.0 仅适用于 Windows 操作系统。Seeeduino Lotus 1.1 适�
 |轨迹球控制小车|FM 接收器|制作木制枪|
 |-------|-------|-------|
 |![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Lotus/img/example_1.png)|![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Lotus/img/Fm%20demo.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Lotus/img/gun.jpg)|
-|[立即制作](https://community.seeedstudio.com/A-Car-Controlled-by-Track-Ball-p-1132.html)|<a href="/FM_Receiver" ><span><font size={"3"}> 立即制作 </font></span></a>|[立即制作](https://www.instructables.com/id/DIY-a-Wooden-Laser-Gun-As-a-Xmas-Present-for-Your-/)|
+|[立即制作](https://community.seeedstudio.com/A-Car-Controlled-by-Track-Ball-p-1132.html)|<a href="/cn/FM_Receiver" ><span><font size={"3"}> 立即制作 </font></span></a>|[立即制作](https://www.instructables.com/id/DIY-a-Wooden-Laser-Gun-As-a-Xmas-Present-for-Your-/)|
 
 ## 特性
 

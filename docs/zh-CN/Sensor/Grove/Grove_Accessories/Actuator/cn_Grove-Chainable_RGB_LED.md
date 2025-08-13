@@ -54,7 +54,7 @@ last_update:
 
 要完成此演示，您可以使用一个或多个 Grove - 可串联 RGB LED。请注意，一个 Grove - 可串联 RGB LED 的 IN 接口应连接到 Grove - 基础扩展板的 D7/D8，其 OUT 接口连接到另一个 Grove - 可串联 RGB LED 的 IN 接口，以这种方式串联更多 LED。
 
-- 下载 [Chainable LED Library](https://github.com/pjpmarques/ChainableLED) 并安装到 Arduino 库中。关于 [如何安装 Arduino 库](/How_to_install_Arduino_Library) 的教程可以在 Wiki 页面中找到。
+- 下载 [Chainable LED Library](https://github.com/pjpmarques/ChainableLED) 并安装到 Arduino 库中。关于 [如何安装 Arduino 库](/cn/How_to_install_Arduino_Library) 的教程可以在 Wiki 页面中找到。
 - 打开示例 CycleThroughColors，路径为：File->Examples->ChainableLED_master，并将其上传到 Seeeduino。
 
 ```
@@ -203,7 +203,7 @@ void loop()
 :::
 1. 您需要准备一个 Raspberry Pi 和一个 GrovePi 或 GrovePi+。
 
-2. 您需要完成开发环境的配置，否则请按照 [这里](/GrovePi_Plus) 的步骤进行。
+2. 您需要完成开发环境的配置，否则请按照 [这里](/cn/GrovePi_Plus) 的步骤进行。
 
 3. 连接
 
@@ -629,7 +629,7 @@ void loop()
 
 作为一个简单的练习，可以创建一个简单的应用程序来闪烁 BeagleBone 上的 4 个用户可编程 LED 之一，以熟悉 Cloud9 IDE。
 
-如果这是您第一次使用 Cloud9 IDE，请访问此 [**链接**](/BeagleBone_Green)。
+如果这是您第一次使用 Cloud9 IDE，请访问此 [**链接**](/cn/BeagleBone_Green)。
 
 **步骤1：** 将 Grove - UART 插座设置为 Grove - GPIO 插座，请按照此 [**链接**](https://www.seeedstudio.com/recipe/362-how-to-use-the-grove-uart-port-as-a-gpio-on-bbg.html)。
 

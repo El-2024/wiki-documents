@@ -141,7 +141,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 
 ##### ソフトウェア
 
-- **ステップ 1.** [Arduino timer1 *ライブラリ*](https://files.seeedstudio.com/wiki/Grove-Infrared_Reflective_Sensor/res/TimerOne-ArduinoLib.zip) をダウンロードし、Arduino IDE のライブラリフォルダに追加します。デモコードの実行方法については[ガイド](/Guide_to_use_demos_downloaded_from_Seeed-s_Github/)を参照してください。
+- **ステップ 1.** [Arduino timer1 *ライブラリ*](https://files.seeedstudio.com/wiki/Grove-Infrared_Reflective_Sensor/res/TimerOne-ArduinoLib.zip) をダウンロードし、Arduino IDE のライブラリフォルダに追加します。デモコードの実行方法については[ガイド](/ja/Guide_to_use_demos_downloaded_from_Seeed-s_Github/)を参照してください。
 
 - **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino 用のライブラリをインストールします。
 

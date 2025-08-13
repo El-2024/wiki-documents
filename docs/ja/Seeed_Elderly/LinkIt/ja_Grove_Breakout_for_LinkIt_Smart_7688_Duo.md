@@ -58,7 +58,7 @@ Grove Breakout for LinkIt Smart 7688 Duoは、Groveポートが統合されたLi
 :::
 **Groveインターフェース**
 
-<!-- 豊富な[Grove](/Grove_System/)インターフェース付き機能モジュールを接続します。このようなポートを使用することで、ジャンパーワイヤやはんだ付け作業が不要になり、これらの機能モジュールを使用してより強力なアプリケーションを作成できます。 -->
+<!-- 豊富な[Grove](/ja/Grove_System/)インターフェース付き機能モジュールを接続します。このようなポートを使用することで、ジャンパーワイヤやはんだ付け作業が不要になり、これらの機能モジュールを使用してより強力なアプリケーションを作成できます。 -->
 
 ## 始め方
 
@@ -72,7 +72,7 @@ Grove Breakout for LinkIt Smart 7688 Duoは、Groveポートが統合されたLi
 
 **Grove Buzzerで音を鳴らす**
 
-<!-- 1.[LinkIt Smart 7688 Duoのwiki](/LinkIt_Smart_7688_Duo/)を参照して、LinkIt Smart 7688 Duoをインターネットに接続します。 -->
+<!-- 1.[LinkIt Smart 7688 Duoのwiki](/ja/LinkIt_Smart_7688_Duo/)を参照して、LinkIt Smart 7688 Duoをインターネットに接続します。 -->
 
 :::note
     1. Pin 8、Pin 9、およびPin GNDは、LinkIt Smart 7688に接続するポートの近くにあります。
@@ -87,9 +87,9 @@ Grove Breakout for LinkIt Smart 7688 Duoは、Groveポートが統合されたLi
 :::note
     Grove - BuzzerをポートD4に差し込んでください。
 :::
-<!-- 4.[LinkIt Smart 7688 Duoのwiki](/LinkIt_Smart_7688_Duo/)を参照して、ホストコンピュータ上でLinkIt Smart 7688 DuoプラットフォームのArduino環境を構築します。 -->
+<!-- 4.[LinkIt Smart 7688 Duoのwiki](/ja/LinkIt_Smart_7688_Duo/)を参照して、ホストコンピュータ上でLinkIt Smart 7688 DuoプラットフォームのArduino環境を構築します。 -->
 
-<!-- 5.[firmata](https://files.seeedstudio.com/wiki/Grove-Breakout_for_LinkIt_Smart_7688_Duo/res/Firmata_to_build_Arduino_IDE_for.zip)をダウンロードします。[LinkIt Smart 7688 Duoのwiki](/LinkIt_Smart_7688_Duo/)を参照して、LinkIt Smart 7688プラットフォーム用のArduino IDEをインストールし、開発ボードにfirmataファイルをフラッシュします。 -->
+<!-- 5.[firmata](https://files.seeedstudio.com/wiki/Grove-Breakout_for_LinkIt_Smart_7688_Duo/res/Firmata_to_build_Arduino_IDE_for.zip)をダウンロードします。[LinkIt Smart 7688 Duoのwiki](/ja/LinkIt_Smart_7688_Duo/)を参照して、LinkIt Smart 7688プラットフォーム用のArduino IDEをインストールし、開発ボードにfirmataファイルをフラッシュします。 -->
 
 :::note
     以下の手順は組み込みOS(OpenWRT)上で実行されます。

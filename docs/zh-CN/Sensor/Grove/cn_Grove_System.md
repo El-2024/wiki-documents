@@ -52,7 +52,7 @@ Grove生态系统提供了多种传感器，可以轻松集成到您的电子项
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/GroveSystem/images/grove_cover.png" style={{width:1000, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Sensor_Intro/"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
+    <a class="get_one_now_item" href="/cn/Grove_Sensor_Intro/"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
 </div>
 
@@ -63,7 +63,7 @@ Grove系统还包括网络模块，这些模块能够在您的项目中实现通
 通过Grove网络模块，您可以轻松为您的项目添加无线功能，实现数据传输、远程控制或与其他设备及互联网的交互。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_network_module_intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
+    <a class="get_one_now_item" href="/cn/Grove_network_module_intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
 </div>
 
@@ -72,13 +72,13 @@ Grove系统还包括网络模块，这些模块能够在您的项目中实现通
 除了传感器和网络模块，Grove生态系统还提供了各种配件，以补充和增强您的电子项目。这些配件包括LCD显示屏、LED矩阵、电机驱动器、继电器模块等组件。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
+    <a class="get_one_now_item" href="/cn/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
 </div>
 
-<!-- - [Grove Sensor](/Grove_Sensor_Intro)
-- [Grove Network Module](/Grove_network_module_intro)
-- [Grove Accessories](/Grove_Accessories_Intro) -->
+<!-- - [Grove Sensor](/cn/Grove_Sensor_Intro)
+- [Grove Network Module](/cn/Grove_network_module_intro)
+- [Grove Accessories](/cn/Grove_Accessories_Intro) -->
 
 <!-- ## Grove选择指南
 
@@ -182,7 +182,7 @@ Grove接口设计为兼容多种开发板和微控制器。
 </div>
 
 <!-- <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki 平台</font></span></strong>
+    <a class="get_one_now_item" href="/cn/Grove_Accessories_Intro"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki 平台</font></span></strong>
     </a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong>
     </a>
@@ -205,7 +205,7 @@ Grove Arduino 初学者套件是最适合初学者的 Arduino 初学者套件之
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/Grove-Beginner-Kit-For-Arduino"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/cn/Grove-Beginner-Kit-For-Arduino"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -230,7 +230,7 @@ Grove Arduino 初学者套件是最适合初学者的 Arduino 初学者套件之
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/Grove_Base_Kit_for_Raspberry_Pi"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/cn/Grove_Base_Kit_for_Raspberry_Pi"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -254,7 +254,7 @@ Grove Arduino 初学者套件是最适合初学者的 Arduino 初学者套件之
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/XIAO-Kit-Courses"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/cn/XIAO-Kit-Courses"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -278,7 +278,7 @@ Grove Arduino 初学者套件是最适合初学者的 Arduino 初学者套件之
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/Wio-Terminal-TinyML-Kit-Course"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/cn/Wio-Terminal-TinyML-Kit-Course"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -433,7 +433,7 @@ Grove 是一个方便的即插即用系统，具有专用接口，但这并不�
 
 以下信息由Seeed Studio提供，可能已经过时。如果需要更新，我们欢迎社区提供更新内容！
 
-有关如何贡献的更多信息，请点击<strong><a href="/Contributor"><span><font color={'8DC215'} size={"4"}>这里！</font></span></a></strong>
+有关如何贡献的更多信息，请点击<strong><a href="/cn/Contributor"><span><font color={'8DC215'} size={"4"}>这里！</font></span></a></strong>
 
 ### Grove模块的接口
 

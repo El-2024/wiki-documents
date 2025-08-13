@@ -79,25 +79,25 @@ BoosterPackは、「内側の20ピン」[21-40]を活用するように設計さ
 ---
 ### Grove リスト
 
-<!-- * [1. ブザー](/Grove-Buzzer#With_TI_LaunchPad)
+<!-- * [1. ブザー](/ja/Grove-Buzzer#With_TI_LaunchPad)
 
-* [2. リレー](/Grove-Relay#With_TI_LaunchPad)
+* [2. リレー](/ja/Grove-Relay#With_TI_LaunchPad)
 
-* [3. 4桁デジタルディスプレイ](/Grove-4-Digit_Display#With_TI_LaunchPad)
+* [3. 4桁デジタルディスプレイ](/ja/Grove-4-Digit_Display#With_TI_LaunchPad)
 
-* [4. 回転角センサー](/Grove-Rotary_Angle_Sensor#With_TI_LaunchPad)
+* [4. 回転角センサー](/ja/Grove-Rotary_Angle_Sensor#With_TI_LaunchPad)
 
-* [5. 光センサー](/Grove-Light_Sensor#With_TI_LaunchPad)
+* [5. 光センサー](/ja/Grove-Light_Sensor#With_TI_LaunchPad)
 
-* [6. 音センサー](/Grove-Sound_Sensor#With_TI_LaunchPad)
+* [6. 音センサー](/ja/Grove-Sound_Sensor#With_TI_LaunchPad)
 
-* [7. PIRモーションセンサー](/Grove-PIR_Motion_Sensor#With_TI_LaunchPad)
+* [7. PIRモーションセンサー](/ja/Grove-PIR_Motion_Sensor#With_TI_LaunchPad)
 
-* [8. 湿度センサー](/Grove-Moisture_Sensor#With_TI_LaunchPad)
+* [8. 湿度センサー](/ja/Grove-Moisture_Sensor#With_TI_LaunchPad)
 
-* [9. 超音波レンジャーセンサー](/Grove-Ultrasonic_Ranger#With_TI_LaunchPad)
+* [9. 超音波レンジャーセンサー](/ja/Grove-Ultrasonic_Ranger#With_TI_LaunchPad)
 
-* [10. 温湿度センサー](/Grove-TemperatureAndHumidity_Sensor) -->
+* [10. 温湿度センサー](/ja/Grove-TemperatureAndHumidity_Sensor) -->
 
 ## 回路図オンラインビューア
 

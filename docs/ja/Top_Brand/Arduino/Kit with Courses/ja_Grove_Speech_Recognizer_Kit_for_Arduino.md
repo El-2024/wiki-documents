@@ -35,15 +35,15 @@ Grove Speech Recognizer Kit for Arduinoは、スマートホームのプロト�
 
 1. Grove - Speech Recognizer  SKU:101020232
 
-2. [Grove - MP3 v2.0](/Grove-MP3_v2.0)
+2. [Grove - MP3 v2.0](/ja/Grove-MP3_v2.0)
 
-3. [Grove – RTC](/Grove-RTC)
+3. [Grove – RTC](/ja/Grove-RTC)
 
-4. [Base Shield](/Base_Shield_V2)
+4. [Base Shield](/ja/Base_Shield_V2)
 
-5. [Grove - Infrared Receiver](/Grove-Infrared_Receiver)
+5. [Grove - Infrared Receiver](/ja/Grove-Infrared_Receiver)
 
-6. [Grove - Infrared Emitter](/Grove-Infrared_Emitter)
+6. [Grove - Infrared Emitter](/ja/Grove-Infrared_Emitter)
 
 ## 応用例
 
@@ -441,7 +441,7 @@ void loop()
 
 必要なライブラリをGitHubからダウンロードしてください：
 [Grove_Serial_MP3_Player_V2.0](https://github.com/Seeed-Studio/Seeed_Serial_MP3_Player.git);
-ライブラリ、[Grove - MP3 v2.0](/Grove-MP3_v2.0)、<font color="Red">ライブラリのパスに注意してください：.../arduino/libraries </font>。
+ライブラリ、[Grove - MP3 v2.0](/ja/Grove-MP3_v2.0)、<font color="Red">ライブラリのパスに注意してください：.../arduino/libraries </font>。
 
 **Grove - MP3 v2に関する便利な関数**
 
@@ -592,7 +592,7 @@ Grove - MP3を使用してリアルタイム放送を行ったことはありま
 
 **リアルタイムの調整**
 
-必要なライブラリをGitHubからダウンロードしてください：<font color="Red">[RTC_DS1307](https://github.com/Seeed-Studio/RTC_DS1307);[library, Grove - RTC](/Grove-RTC); ライブラリのパスに注意してください: .../arduino/libraries</font> 。
+必要なライブラリをGitHubからダウンロードしてください：<font color="Red">[RTC_DS1307](https://github.com/Seeed-Studio/RTC_DS1307);[library, Grove - RTC](/ja/Grove-RTC); ライブラリのパスに注意してください: .../arduino/libraries</font> 。
 
 * "SetTimeAndDisplay"のサンプルファイルを開きます：File --&gt; Sketchbook --&gt; libraries --&gt; RTC_DS1307 --&gt; SetTimeAndDisplay。
 
