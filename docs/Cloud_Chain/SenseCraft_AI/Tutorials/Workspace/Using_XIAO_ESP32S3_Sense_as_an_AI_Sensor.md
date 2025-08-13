@@ -1,7 +1,7 @@
 ---
 sidebar_position: 10
 description: This article describes how to use SenseCraft AI's libraries on XIAO.
-title: As a Sensor
+title: Using XIAO_ESP32S3_Sense as an AI Sensor
 image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/uart_connection.png
 slug: /sensecraft-ai/tutorials/sensecraft-ai-output-libraries-xiao
 aliases:
