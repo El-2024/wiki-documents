@@ -2022,6 +2022,7 @@ const sidebars = {
         collapsed: true,
         collapsible: true,
         items: [
+          'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Mic_Array_v3.0',
           'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Mic_Array_v2.0',
           'Seeed_Elderly/reSpeaker/ReSpeaker-USB-Mic-Array',
         ],
