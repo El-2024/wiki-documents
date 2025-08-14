@@ -7,7 +7,7 @@ keywords:
   - reComputer r2130
   - Object detecton
   - Frigate
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer/Application/Firearm_Detection_With_Frigate_NVR_on_R2130/setting_3.webp
 slug: /firearm_detection_with_frigate_nvr_on_r2000
 last_update:
   date: 08/12/2025
