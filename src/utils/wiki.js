@@ -1,6 +1,20 @@
 const docList = [
   [
     {
+      "path": "/sensecraft_hmi_ai_generation",
+      "image": "https://files.seeedstudio.com/wiki/SenseCraft/SenseCraft_AI/Intro_image_title.webp",
+      "title": "Vibration Anomaly Detection",
+      "date": "08/14/2025"
+    },
+    {
+      "path": "/respeaker_xvf3800_xiao_i2s",
+      "image": "https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/6-ReSpeaker-XVF3800-4-Mic-Array-With-XIAO-ESP32S3.jpg",
+      "title": "reSpeaker XVF3800 USB Mic Array with XIAO ESP32S3 I2S Test",
+      "date": "8/11/2025"
+    }
+  ],
+  [
+    {
       "path": "/lerobot_lekiwi",
       "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.webp",
       "title": "How to use the Lekiwi in Lerobot",
@@ -23,7 +37,7 @@ const docList = [
     {
       "path": "/respeaker_xvf3800_xiao_edge_impulse",
       "image": "https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array-with-xiao-esp32s3.webp",
-      "title": "Edge Impulse-Based Speech Recognition Using TinyML on ReSpeaker XVF3800 with XIAO ESP32S3",
+      "title": "TinyML Speech Recognition with Edge Impulse",
       "date": "8/7/2025"
     }
   ],
@@ -59,7 +73,7 @@ const docList = [
     {
       "path": "/respeaker_xvf3800_xiao_home_assistant",
       "image": "https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array-with-xiao-esp32s3.webp",
-      "title": "Voice-Controlled Smart Home with ReSpeaker XVF3800 and Home Assistant",
+      "title": "Smart Home Voice Control with Home Assistant",
       "date": "7/30/2025"
     },
     {
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/YOLOv8_AI_Box/recompuer_ai_box.webp",
       "title": "YOLOv8 AI Box: Fall, Climb & Track",
       "date": "07/29/2025"
-    }
-  ],
-  [
-    {
-      "path": "/respeaker_xvf3800_xiao_mqtt_audio_stream",
-      "image": "https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/front-xiao.webp",
-      "title": "reSpeaker XVF3800 USB Mic Array with XIAO ESP32S3 MQTT Audio Streaming",
-      "date": "7/29/2025"
-    },
-    {
-      "path": "/lerobot_so100m_new",
-      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp",
-      "title": "How to use the SO-ARM100 and SO-ARM101 robotic arm in the latest version of Lerobot",
-      "date": "7/26/2025"
     }
   ]
 ];
