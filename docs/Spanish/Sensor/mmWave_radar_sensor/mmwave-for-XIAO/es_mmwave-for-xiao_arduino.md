@@ -315,7 +315,7 @@ Ahora que ya tenemos la librería instalada y comprendemos las funciones básica
 - Si vas a usar **Seeed Studio XIAO RP2040**, sigue [este tutorial](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/#software-setup).
 - Si vas a usar **Seeed Studio XIAO nRF52840**, sigue [este tutorial](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup).
 - Si vas a usar **Seeed Studio XIAO ESP32C3**, sigue [este tutorial](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup).
-- Si vas a usar **Seeed Studio XIAO ESP32S3**, sigue [este tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation).
+- Si vas a usar **Seeed Studio XIAO ESP32S3**, sigue [este tutorial](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation).
 
 :::tip
 Este tutorial usará como ejemplo el XIAO ESP32C3.

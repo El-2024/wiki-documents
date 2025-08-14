@@ -14,7 +14,7 @@ last_update:
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-IMU_10DOF/img/main.jpg" alt="pir" width={600} height="auto" /></p>
 
 
-Grove - IMU 10DOF 是 Grove - IMU 9DOF 和 [Grove - Barometer Sensor (BMP180)](/Grove-Barometer_Sensor-BMP180/ "Grove - Barometer Sensor (BMP180)") 的组合。该模块基于 MPU-9250 和 BMP180，MPU-9250 是一个 9 轴运动跟踪设备，集成了 3 轴陀螺仪、3 轴加速度计、3 轴磁力计和数字运动处理器 (DMP)，而 BMP180 是一种高精度、超低功耗的数字压力传感器，适用于消费类应用。该模块非常适合智能手机、平板电脑和可穿戴设备的应用。
+Grove - IMU 10DOF 是 Grove - IMU 9DOF 和 [Grove - Barometer Sensor (BMP180)](/cn/Grove-Barometer_Sensor-BMP180/ "Grove - Barometer Sensor (BMP180)") 的组合。该模块基于 MPU-9250 和 BMP180，MPU-9250 是一个 9 轴运动跟踪设备，集成了 3 轴陀螺仪、3 轴加速度计、3 轴磁力计和数字运动处理器 (DMP)，而 BMP180 是一种高精度、超低功耗的数字压力传感器，适用于消费类应用。该模块非常适合智能手机、平板电脑和可穿戴设备的应用。
 
 [<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-IMU-10DOF-p-2386.html)
 

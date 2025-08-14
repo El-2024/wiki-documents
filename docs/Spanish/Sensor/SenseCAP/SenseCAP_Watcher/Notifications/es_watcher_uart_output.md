@@ -331,7 +331,7 @@ Para cargar el código en tu placa XIAO ESP32 Series, sigue estos pasos:
 
    - Si deseas usar **Seeed Studio XIAO ESP32C3**, consulta **[este tutorial](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)** para completar la configuración.
 
-   - Si deseas usar **Seeed Studio XIAO ESP32S3**, consulta **[este tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)**.
+   - Si deseas usar **Seeed Studio XIAO ESP32S3**, consulta **[este tutorial](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)**.
 
    - Si deseas usar **Seeed Studio XIAO ESP32C6**, consulta **[este tutorial](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)**.
 

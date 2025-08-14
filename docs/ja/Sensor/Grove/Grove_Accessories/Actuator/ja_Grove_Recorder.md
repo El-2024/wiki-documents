@@ -84,12 +84,12 @@ Grove - RecorderはISD1820Pチップをベースにしており、8～20秒間�
 ---
 以下の手順に従って、**Grove - Recorder**モジュールを使用したサンプル回路を構築してください:
 
-1. 録音モジュールをGrove回路の出力側（電源モジュールの右側）に接続します。回路の入力側には、[Grove - Button](/Grove-Button "Grove - Button")または[Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")モジュールを使用できます。
+1. 録音モジュールをGrove回路の出力側（電源モジュールの右側）に接続します。回路の入力側には、[Grove - Button](/ja/Grove-Button "Grove - Button")または[Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")モジュールを使用できます。
 2. 回路に電源を供給します。
 
 3. 録音モジュールのRECボタンを押し続けて音声を録音します。オンボードの赤色LEDが点灯します。赤色LEDが消灯するまで録音を続けます。LEDが消灯することで録音時間が終了したことを示します。
 
-4. 録音した音声を再生するには、[Grove - Button](/Grove-Button "Grove - Button")を押し続けます。録音した音声が再生されるのを聞くことができます。[Grove - Button](/Grove-Button "Grove - Button")を押し続けている間、録音モジュールの赤色LEDが点滅します。この点滅は音声再生が完了したことを示します。[Grove - Button](/Grove-Button "Grove - Button)の代わりに[Grove - Slide Potentiometer](/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")を使用している場合は、スライダーをGNDからVCCの位置に移動することでいつでも再生を聞くことができます。
+4. 録音した音声を再生するには、[Grove - Button](/ja/Grove-Button "Grove - Button")を押し続けます。録音した音声が再生されるのを聞くことができます。[Grove - Button](/ja/Grove-Button "Grove - Button")を押し続けている間、録音モジュールの赤色LEDが点滅します。この点滅は音声再生が完了したことを示します。[Grove - Button](/ja/Grove-Button "Grove - Button)の代わりに[Grove - Slide Potentiometer](/ja/Grove-Slide_Potentiometer "Grove - Slide Potentiometer")を使用している場合は、スライダーをGNDからVCCの位置に移動することでいつでも再生を聞くことができます。
 
 5. 録音した音声を上書きするには、上記の手順3を繰り返してください。新しいメッセージが古いメッセージを上書きします。
 
@@ -106,7 +106,7 @@ Grove - USB Powerモジュールを持っていない場合は、代わりにGro
 ---
 この Grove モジュールは、以下の Grove キットシリーズの一部として利用可能です。
 
-<!-- * [Grove Mixer Pack V2](/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
+<!-- * [Grove Mixer Pack V2](/ja/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
 
 または、Seeed Studio バザールで単体購入することもできます。
 

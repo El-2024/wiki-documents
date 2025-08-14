@@ -28,7 +28,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 設定ファイルの選択
 
-トレーニングタスクの種類に応じて適切な設定ファイルを選択します。設定ファイルの機能、構造、原則については、[Config](/ModelAssistant_Tutorials_Config)で既に紹介しています。
+トレーニングタスクの種類に応じて適切な設定ファイルを選択します。設定ファイルの機能、構造、原則については、[Config](/ja/ModelAssistant_Tutorials_Config)で既に紹介しています。
 
 Swfit-YOLOモデルの例では、`swift_yolo_tiny_1xb16_300e_coco.py`を設定ファイルとして使用します。このファイルはSSCMAのルートディレクトリの`configs/swift_yolo`フォルダ内にあり、さらに`base_arch.py`設定ファイルを継承しています。
 
@@ -136,4 +136,4 @@ python3 tools/inference.py \
 
 ### デプロイ
 
-モデルをエクスポートした後、エッジコンピューティングデバイスにモデルをデプロイしてテストおよび評価を行うことができます。モデルのデプロイ方法については、[Deploy](/ModelAssistant_Deploy_Overview)セクションを参照してください。
+モデルをエクスポートした後、エッジコンピューティングデバイスにモデルをデプロイしてテストおよび評価を行うことができます。モデルのデプロイ方法については、[Deploy](/ja/ModelAssistant_Deploy_Overview)セクションを参照してください。

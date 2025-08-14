@@ -366,7 +366,7 @@ void sendBlueToothCommand(char command[])
 
 ## 関連情報  
 
-[Bluetooth Bee documentation](/Bluetooth_Bee "Bluetooth_Bee") **XBee®_Shield**の使用例を示しています。
+[Bluetooth Bee documentation](/ja/Bluetooth_Bee "Bluetooth_Bee") **XBee®_Shield**の使用例を示しています。
 
 ## 外部リンク  
 

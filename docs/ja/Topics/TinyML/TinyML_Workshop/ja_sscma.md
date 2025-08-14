@@ -23,7 +23,7 @@ Seeed Studio [SenseCraft AI プラットフォーム](https://sensecraft.seeed.c
 このプラットフォームは、ユーザーが公開されている膨大なAIモデルライブラリをエッジデバイスに簡単にデプロイできるようにし、**数回のクリック**で公開AIモデルを直接エッジデバイスにデプロイできるシームレスで使いやすい体験を提供します。
 
 :::info
-そのコアはオープンソースプロジェクトであり、[GitHub](https://github.com/Seeed-Studio/ModelAssistant) で共有しています。また、[開発方法](/ModelAssistant_Introduce_Overview) も提供しています。
+そのコアはオープンソースプロジェクトであり、[GitHub](https://github.com/Seeed-Studio/ModelAssistant) で共有しています。また、[開発方法](/ja/ModelAssistant_Introduce_Overview) も提供しています。
 :::
 
 #### ユーザーアカウント

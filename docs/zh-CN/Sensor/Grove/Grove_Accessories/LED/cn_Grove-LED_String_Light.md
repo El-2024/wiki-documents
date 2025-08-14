@@ -46,7 +46,7 @@ Grove - LED灯串模块本质上是一个LED驱动器，用于驱动包装中包
 
 1. 首先使用JST2.0两线接口将LED灯串连接到**Grove - LED灯串**模块。
 
-2. 将LED灯串模块连接到电路的输出端（电源模块的右侧）。在电路的输入端，您可以使用一系列基于传感器的输入模块（如[Grove - 光传感器](/Grove-Light_Sensor/)、[Grove - 声音传感器](/Grove-Sound_Sensor/)、[Grove - 按钮](/Grove-Button/)或[Grove - 滑动电位器](/Grove-Slide_Potentiometer/)）。
+2. 将LED灯串模块连接到电路的输出端（电源模块的右侧）。在电路的输入端，您可以使用一系列基于传感器的输入模块（如[Grove - 光传感器](/cn/Grove-Light_Sensor/)、[Grove - 声音传感器](/cn/Grove-Sound_Sensor/)、[Grove - 按钮](/cn/Grove-Button/)或[Grove - 滑动电位器](/cn/Grove-Slide_Potentiometer/)）。
 
 3. 给电路供电。
 
@@ -56,7 +56,7 @@ Grove - LED灯串模块本质上是一个LED驱动器，用于驱动包装中包
 
    如果使用声音传感器，您会看到在检测到声音时LED灯会点亮。同样，如果您希望反转功能，或者换句话说，您希望灯始终点亮，除非有声音，可以在声音传感器和电源模块之间添加一个Grove - NOT模块。
 
-   如果使用像[Grove - 按钮](/Grove-Button/)模块上的瞬时开关，只需按下按钮即可点亮灯串。
+   如果使用像[Grove - 按钮](/cn/Grove-Button/)模块上的瞬时开关，只需按下按钮即可点亮灯串。
 
    * 如果使用滑动电位器，将滑块从GND位置移动到VCC，您会看到灯的亮度随着提供的电压增加而增加。
 
@@ -75,7 +75,7 @@ Grove - LED灯串模块本质上是一个LED驱动器，用于驱动包装中包
 ---
 此 Grove 模块可作为以下 Grove 套件系列的一部分提供：
 
-<!-- 链接有问题*   [Grove Mixer Pack V2](/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
+<!-- 链接有问题*   [Grove Mixer Pack V2](/cn/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
 
 或者，它也可以在 Seeed Studio Bazaar 单独购买。
 

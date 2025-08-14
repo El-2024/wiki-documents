@@ -32,27 +32,27 @@ Grove Smart Plant Care Kitは、植物のためのスマートシステムを開
 ---
 <!-- 各モジュールの仕様については以下を参照してください：
 
-*   [Grove - Temp &amp; Humidity Sensor](/Grove-TemperatureAndHumidity_Sensor/#specifications)
+*   [Grove - Temp &amp; Humidity Sensor](/ja/Grove-TemperatureAndHumidity_Sensor/#specifications)
 
-*   [Grove - Sunlight Sensor V1.0](/Grove-Sunlight_Sensor)
+*   [Grove - Sunlight Sensor V1.0](/ja/Grove-Sunlight_Sensor)
 
-*   [Grove - Water Sensor](/Grove-Water_Sensor)
+*   [Grove - Water Sensor](/ja/Grove-Water_Sensor)
 
 *   [Grove - Moisture Sensor](https://wiki.seeedstudio.com/ja/Grove-Moisture_Sensor/#specification)
 
-*   [Grove – Encoder](/Grove-Encoder#Specification)
+*   [Grove – Encoder](/ja/Grove-Encoder#Specification)
 
-*   [Grove-OLED Display 1.12](/Grove-OLED_Display_1.12inch#Specification)
+*   [Grove-OLED Display 1.12](/ja/Grove-OLED_Display_1.12inch#Specification)
 
-*   [Grove - Button](/Grove-Button#Introduction)
+*   [Grove - Button](/ja/Grove-Button#Introduction)
 
-*   [Grove - Relay](/Grove-Relay#Specifications)
+*   [Grove - Relay](/ja/Grove-Relay#Specifications)
 
 *   12V DC Water Pump
 
 *   12V Power connector
 
-*   [Base Shield V2](/Base_Shield_V2) -->
+*   [Base Shield V2](/ja/Base_Shield_V2) -->
 
 ## アプリケーションアイデア
 ---
@@ -135,9 +135,9 @@ Grove Smart Plant Care Kitは、植物のためのスマートシステムを開
 
 [Arduino UNOでのIDE構築ガイド](https://www.arduino.cc/en/Guide/HomePage)
 
-[Seeeduino V4.2（Arduino互換）でのIDE構築ガイド](/Seeeduino_v4.2)
+[Seeeduino V4.2（Arduino互換）でのIDE構築ガイド](/ja/Seeeduino_v4.2)
 
-**注意** [Base shield](/Base_Shield_V2 "Base_Shield_V2")を使用すると、モジュールを迅速に接続できます。 -->
+**注意** [Base shield](/ja/Base_Shield_V2 "Base_Shield_V2")を使用すると、モジュールを迅速に接続できます。 -->
 
 ## 技術サポートと製品ディスカッション
 

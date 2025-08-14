@@ -161,8 +161,8 @@ Arch Link 用ファームウェア v0203 2015-06-04
 関連リンク
 --------
 
-- [Arch BLE](/Arch_BLE)
-- [W5500 Ethernet Shield](/W5500_Ethernet_Shield_v1.0)
+- [Arch BLE](/ja/Arch_BLE)
+- [W5500 Ethernet Shield](/ja/W5500_Ethernet_Shield_v1.0)
 
 <!-- この Markdown ファイルは https://www.seeedstudio.com/wiki/Arch_Link から作成されました -->
 

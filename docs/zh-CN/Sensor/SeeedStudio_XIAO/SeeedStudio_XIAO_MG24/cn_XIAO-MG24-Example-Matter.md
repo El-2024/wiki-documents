@@ -49,7 +49,7 @@ Matter 在本地网络上高效运行，提供可靠、低延迟的通信，无�
 所需软件包括**带有 Silicon Labs Arduino 核心的 Arduino IDE**：
 
 - 如果尚未安装，请下载并设置 [Silicon Labs Arduino 核心](https://github.com/SiliconLabs/arduino)以与 XIAO MG24 兼容。
-- 有关详细设置说明，请参考[入门指南](/xiao_mg24_getting_started/#add-board)。
+- 有关详细设置说明，请参考[入门指南](/cn/xiao_mg24_getting_started/#add-board)。
 
 确保选择 Matter 协议栈：
 
@@ -180,7 +180,7 @@ void loop()
 - **[Matter 开发者之旅](https://www.silabs.com/wireless/matter/matter-developer-journey)**：Matter 开发过程的综合指南，包括有效实施所需的工具、资源和最佳实践。
 - **[Matter 规范](https://csa-iot.org/developer-resource/specifications-download-request/)**：Matter 协议及其组件的技术规范。这是了解协议功能和操作细节的主要资源。
 - **[设备数据模型 - Google Home 开发者](https://developers.home.google.com/matter/primer/device-data-model)**：对设备数据模型的深入解释，该模型标准化了设备功能和能力在 Matter 生态系统中的表示方式。
-- **[Matter 开发框架概述](/matter_development_framework)**：专门为 XIAO ESP32C6 的 Matter 开发框架量身定制的指南，为 Matter 设备开发提供了另一种方法。
+- **[Matter 开发框架概述](/cn/matter_development_framework)**：专门为 XIAO ESP32C6 的 Matter 开发框架量身定制的指南，为 Matter 设备开发提供了另一种方法。
 
 ## 技术支持与产品讨论
 

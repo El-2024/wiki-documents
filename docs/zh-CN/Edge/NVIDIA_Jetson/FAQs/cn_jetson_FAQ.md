@@ -12,27 +12,27 @@ last_update:
 
 #### Q1: 安装故障排查
 
-详情请点击[这里](/Troubleshooting_Installation)
+详情请点击[这里](/cn/Troubleshooting_Installation)
 
 #### Q2: 收到的 reComputer 中 eMMC 的剩余空间只有大约 2GB，如何解决空间不足的问题？
 
-详情请点击[这里](/solution_of_insufficient_space)
+详情请点击[这里](/cn/solution_of_insufficient_space)
 
 #### Q3: 如何解决 reComputer 和 VEYE 摄像头之间的兼容性问题？
 
-详情请点击[这里](/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera)
+详情请点击[这里](/cn/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera)
 
 #### Q4: 如何解决 IMX477 摄像头和 A603 承载板之间的兼容性问题？
 
-详情请点击[这里](/Use_IMX477_Camera_with_A603_Jetson_Carrier_Board)
+详情请点击[这里](/cn/Use_IMX477_Camera_with_A603_Jetson_Carrier_Board)
 
 #### Q5: 如何获取 reComputer J30/J40 的系统日志？
 
-详情请点击[这里](/get_the_system_log_of_recomputer_j30_and_j40)
+详情请点击[这里](/cn/get_the_system_log_of_recomputer_j30_and_j40)
 
 #### Q6: 闪存 Jetpack 时出现超时问题。
 
-详情请点击[这里](/usb_timeout_during_flash)
+详情请点击[这里](/cn/usb_timeout_during_flash)
 
 #### Q7: 闪存设备后无法使用 USB-A 接口、以太网接口或没有 HDMI 显示。
 **答：** 请检查文件完整性（例如，我们提供了 SHA256 校验和）。对于某些承载板（尤其是 A60X 系列），请确保驱动补丁已成功复制/应用到 **Linux_for_tegra** 目录中。有些文件需要 **sudo** 权限，在复制目录时，请确保命令中包含 **-r** 参数。
@@ -42,15 +42,15 @@ last_update:
 
 #### Q9: 如果不能执行 apt upgrade，我该如何升级软件包？如果不升级软件会有安全风险吗？
 
-详情请点击[这里](/upgrade_software_packages_for_jetson)
+详情请点击[这里](/cn/upgrade_software_packages_for_jetson)
 
 <!-- #### Q10: 如何使用 OTA（空中下载）方法升级 Jetson 设备的系统版本。 -->
 
-<!-- 详情请点击[这里](/updating_jetpack_with_ota) -->
+<!-- 详情请点击[这里](/cn/updating_jetpack_with_ota) -->
 
 #### Q11: Seeed 对 NVIDIA 的 Jetson BSP 做了哪些修改？
 
-详情请点击[这里](/differences_of_l4t_between_seeed_and_nvidia)
+详情请点击[这里](/cn/differences_of_l4t_between_seeed_and_nvidia)
 
 
 # 技术支持

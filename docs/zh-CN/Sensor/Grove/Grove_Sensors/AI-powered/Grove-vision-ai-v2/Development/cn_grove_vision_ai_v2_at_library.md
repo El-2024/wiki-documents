@@ -814,7 +814,7 @@ Base64 编码用于避免通过文本协议（如 HTTP、JSON、XML）直接传�
 
 对 SDK 开发感兴趣的用户可以参考现有示例，例如 [sdio_app](https://github.com/Seeed-Studio/sscma-example-we2/tree/main/EPII_CM55M_APP_S/app/scenario_app/sdio_app)，该示例展示了直接进行 SDIO 操作。这些示例可以作为修改和实现自定义项目的起点。
 
-通过利用 SDK 的强大功能，用户可以充分发挥 Grove Vision AI V2 的潜力，为其特定需求创建量身定制的解决方案。请参考[之前的 Wiki 页面](/grove_vision_ai_v2_himax_sdk)以获取更多指导。
+通过利用 SDK 的强大功能，用户可以充分发挥 Grove Vision AI V2 的潜力，为其特定需求创建量身定制的解决方案。请参考[之前的 Wiki 页面](/cn/grove_vision_ai_v2_himax_sdk)以获取更多指导。
 
 ## 常见问题与故障排除
 

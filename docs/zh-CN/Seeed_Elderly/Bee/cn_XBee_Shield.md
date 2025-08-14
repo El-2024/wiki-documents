@@ -158,7 +158,7 @@ XBee® 扩展板的尺寸为 3.1cm X 4.1cm。
 //计算机连接到硬件 UART
 //Bee 扩展板连接到软件 UART
 
-#include &lt;NewSoftSerial.h&gt;
+#include <NewSoftSerial.h>
 #define RxD 11
 #define TxD 12
 
@@ -196,7 +196,7 @@ void loop()
 /*
 来自 Arduino SoftwareSerial 教程的示例
  */
-#include &lt;SoftwareSerial.h&gt;
+#include <SoftwareSerial.h>
 
 SoftwareSerial mySerial(11, 12); // RX, TX
 
@@ -372,7 +372,7 @@ Bug追踪是您提交在使用过程中发现的任何问题的地方。请写�
 
 ## 参见  
 
-[Bluetooth Bee 文档](/Bluetooth_Bee "Bluetooth_Bee") 展示了 **XBee®_Shield** 的使用方法。
+[Bluetooth Bee 文档](/cn/Bluetooth_Bee "Bluetooth_Bee") 展示了 **XBee®_Shield** 的使用方法。
 
 ## 外部链接  
 

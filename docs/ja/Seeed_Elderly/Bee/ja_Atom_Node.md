@@ -509,7 +509,7 @@ Atom Node は、複数の Grove センサーやアクチュエータをサポー
 
 IFTTT モードで動作する Atom Node を使用して、以下の手順に従ってください:
 
-<!-- *   Grove - Temperature を ADC ポートに接続し、Grove - Buzzer を PWM ポートに [Grove - Universal 4 Pin ケーブル](/Grove_System/#grove-cables) を使用して接続します。 -->
+<!-- *   Grove - Temperature を ADC ポートに接続し、Grove - Buzzer を PWM ポートに [Grove - Universal 4 Pin ケーブル](/ja/Grove_System/#grove-cables) を使用して接続します。 -->
 
 *   RFBee を Bee ソケットに差し込みます。
 *   Atom Node の片側にあるボタンを押して電源を入れます。反対側の LED が点灯します。その後、もう一度ボタンを押して Atom Node を設定モードにします。同時に、ユーザーインジケータが赤色に点灯します。
@@ -539,7 +539,7 @@ IFTTT モードで動作する Atom Node を使用して、以下の手順に従
 *   Android デバイスの画面に配置します。このとき、光センサーが画面に向いていることを確認してください。画面の明るさは約 35% に設定するのが望ましいです。
 ![](https://files.seeedstudio.com/wiki/Atom_Node/img/Node_Interface3.jpg)
 
-<!-- *   "Submit" をクリックすると、設定が開始されます。<font color="red">設定が成功すると、ユーザーインジケータが緑色に点灯して点滅します。</font>設定に失敗した場合は、"Again" をクリックしてください。それでも失敗する場合は、[FAQ](/Atom_Node) を参照してください。 -->
+<!-- *   "Submit" をクリックすると、設定が開始されます。<font color="red">設定が成功すると、ユーザーインジケータが緑色に点灯して点滅します。</font>設定に失敗した場合は、"Again" をクリックしてください。それでも失敗する場合は、[FAQ](/ja/Atom_Node) を参照してください。 -->
 
 ![](https://files.seeedstudio.com/wiki/Atom_Node/img/Node_Interface4.jpg)
 

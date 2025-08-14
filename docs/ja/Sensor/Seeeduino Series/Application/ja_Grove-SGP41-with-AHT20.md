@@ -303,7 +303,7 @@ void loop()
 ## リソース
 
 - [SGP41](https://wiki.seeedstudio.com/ja/grove-smart-air-quality-sensor-sgp41#resources)
-- [AHT20](https://wiki.seeedstudio.com/ja/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor//#resources)
+- [AHT20](https://wiki.seeedstudio.com/ja/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor/#resources)
 
 ## ✨ コントリビュータープロジェクト
 

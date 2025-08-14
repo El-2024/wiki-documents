@@ -18,22 +18,17 @@ last_update:
 ---
 
 import { Tweet } from 'react-tweet'
-import Steppers from '@site/src/components/utils/Stepper';
 import LoomEmbed from '@site/src/components/utils/LoomEmbed';
 
-:::info Imagine this
-In the early morning, you whisper to the SenseCAP Watcher by your bedside: "Jarvis, good morning, what's the weather like today? And please, turn on the coffee machine." (You can also change the wake word to "Xiaozhi").
+:::info Build a voice-controlled AI assistant for your smart home.
+Imagine being able to start your day by simply whispering to a bedside device: "Jarvis, good morning. What's the weather like today? And please, turn on the coffee machine." In response, your AI assistant confirms the weather forecast as your coffee maker starts brewing in the kitchen.
 
-Your AI assistant responds immediately: "Good morning! The weather is clear today, with an expected temperature between 18 and 25 degrees Celsius. The coffee machine has been turned on and will have your aromatic coffee ready for you shortly." Simultaneously, the smart lights in the living room slowly brighten, and the coffee machine begins to operate.
-
-In the evening, you return home and say tiredly: "Jarvis, I'm back. Dim the living room lights a bit and play some soft music."
-
-The AI assistant understands your command, gently adjusts the living room lighting, and controls the speakers via Home Assistant to play soothing music. If you're curious about the temperature and humidity at home, just ask another question: "What are the current indoor temperature and humidity?" and it will report the information instantly.
-
-Furthermore, when you want to catch up on the latest current events, you can ask: "Jarvis, is there any recent news that might interest me?"
-
-If your Dify application is configured with relevant knowledge bases (such as web crawlers, Notion, etc.), the AI assistant can retrieve the required information from these sources and inform you of the latest updates, news, or content you care about in a concise manner. This not only allows you to get timely updates but also enables personalized information delivery, enhancing the interactive experience of your smart home.
+This isn't just a concept from a movie; it's a practical application you can build and deploy yourself. This guide provides a step-by-step solution to integrate a local AI assistant with your smart home devices. By the end of this tutorial, you will have a fully functional, voice-activated smart home hub.
 :::
+
+<center>
+<Tweet id="1910315965675712738" /> 
+</center>
 
 This article will provide a step-by-step guide on how to use Dify, the Xiaozhi backend service, and the SenseCAP Watcher to integrate an AI assistant—capable of contextual understanding, device control, status queries, and even knowledge-based Q&A—into your Home Assistant smart home system. You will learn how to make AI a truly effective assistant in your smart life through simple voice interactions.
 
@@ -50,7 +45,7 @@ Please have the following items and conditions ready:
 
 In addition, a stable network connection is required.
 
-## Step 1: Installation and Deployment
+## Ⅰ. Installation and Deployment
 
 In this section, we will install and configure the core components in three steps:
 
@@ -73,7 +68,6 @@ For users in mainland China, you may need to update the Docker image source:
 Note: This script is provided by a [third party](https://linuxmirrors.cn/). This reference is for example purposes only. Please assess its suitability and risks yourself.
 
 :::
-
 
 Execute the following commands to install Dify. For details, please see [Dify Install](https://docs.dify.ai/en/getting-started/install-self-hosted/docker-compose):
 
@@ -193,7 +187,7 @@ Now, you can visit `http://localhost:8002` to log into the control console and r
 
 <details>
 
-<summary>Docker Port 8000 Conflict</summary>
+<summary>Resolve Docker service port conflicts</summary>
 
 The Xiaozhi backend service uses several network ports by default (for example, the WebSocket service maps port 8000 of the host machine to port 8000 of the container by default). If these ports are already in use by other programs on your computer, the `docker compose up -d` command may fail with a port conflict error.
 
@@ -215,9 +209,7 @@ xiaozhi-esp32-server-web:
 
 </details>
 
-<Steppers>
-
-#### Parameter Management
+#### Step 1: Parameter Management
 
 After logging in with the super administrator account, navigate to "Parameter Management" in the top menu of the control console. Find the first item in the list, which has the parameter code `server.secret`, and copy its "Parameter Value".
 
@@ -230,7 +222,7 @@ manager-api:
   secret: 12345678-xxxx-xxxx-xxxx-123456789000 # Please replace this with your server.secret value
 ```
 
-#### Configure Inter-Container Communication
+#### Step 2: Configure Inter-Container Communication
 
 Since Dify and the Xiaozhi backend service are started separately via Docker, they may be in different "virtual networks" by default and cannot communicate directly. We need to connect the Dify API service container to the Xiaozhi service's network.
 
@@ -240,11 +232,15 @@ docker network connect xiaozhi-server_default docker-api-1
 
 After this command, the Xiaozhi service can access the Dify API service at the address `http://dify-api-1:5001/v1`.
 
-:::details Why not use host.docker.internal?
-You might consider using `host.docker.internal` (a special DNS name for accessing the host from within a Docker container) as a connection solution. However, note that if the `docker-api-1` service (the Dify API container) does not map its port to the host, or if the service itself does not listen directly on the host's network interface, the `xiaozhi-server` container will not be able to successfully access `docker-api-1` via `host.docker.internal:5001`. Therefore, ensuring both containers are on the same Docker network and communicating via service names is the more recommended and reliable configuration method, especially when the `docker-api-1` service primarily operates within the container network.
-:::
+<details>
 
-#### Restart xiaozhi-esp32-server
+<summary>Why not use host.docker.internal?</summary>
+
+You might consider using `host.docker.internal` (a special DNS name for accessing the host from within a Docker container) as a connection solution. However, note that if the `docker-api-1` service (the Dify API container) does not map its port to the host, or if the service itself does not listen directly on the host's network interface, the `xiaozhi-server` container will not be able to successfully access `docker-api-1` via `host.docker.internal:5001`. Therefore, ensuring both containers are on the same Docker network and communicating via service names is the more recommended and reliable configuration method, especially when the `docker-api-1` service primarily operates within the container network.
+
+</details>
+
+#### Step 3: Restart xiaozhi-esp32-server
 
 After configuring the above information, you need to restart the Xiaozhi backend service for the changes to take effect. This is because the installation process uses the `server.secret` to connect to the service.
 
@@ -287,7 +283,7 @@ ws://192.168.101.109:8000/xiaozhi/v1/
 
 > Remember to replace `192.168.101.109` with the IP address where your Xiaozhi service is running.
 
-#### Configure the Service to Connect to Dify
+#### Step 4: Configure the Service to Connect to Dify
 
 We need to tell the Xiaozhi backend service how to find and use the AI app we created in Dify. This involves routing all LLM requests to Dify by modifying the large language model configuration.
 
@@ -296,7 +292,7 @@ Log in to the Xiaozhi backend service's control console again. In the top menu, 
 > [\!tip]
 > You can also create multiple Dify apps and then configure multiple Dify large language models in the control console.
 
-#### Add Agent
+#### Step 5: Add Agent
 
 Click "Agents" in the top menu, then click "Add Agent". Enter any name, for example, `Dify_Agent`.
 
@@ -304,9 +300,7 @@ For the newly added `Dify_Agent`, click "Configure Role" to enter the role confi
 
 We will use this in the next section when configuring the Watcher assistant.
 
-</Steppers>
-
-## Step 2: Configure SenseCAP Watcher
+## Ⅱ. Configure SenseCAP Watcher
 
 Now, we need to configure the SenseCAP Watcher device, so it knows where to connect to the Xiaozhi backend service we just set up.
 
@@ -345,11 +339,11 @@ After completing the configuration as described above, the Watcher will be able 
 
 🎉 At this point, all software installation and basic hardware configuration are complete\! Next, we will focus on "orchestrating" our AI application on the Dify platform, enabling it to understand and respond to our smart home control commands.
 
-## Step 3: Dify App Orchestration {#dify-app}
+## Ⅲ. Dify App Orchestration {#dify-app}
 
 Let's return to the Dify platform and configure the Agent app we created earlier to enable it to communicate with Home Assistant and understand our commands.
 
-### Add the MCP Tool
+### Ⅰ. Add the MCP Tool
 
 To allow Dify to control devices in Home Assistant, we need to add a "Tool" to it. This tool is based on the MCP (Meta Control Protocol).
 
@@ -375,8 +369,6 @@ After installation, click on this tool again. It will prompt you to provide MCP 
 ```
 
 ![](https://files.seeedstudio.com/wiki/solution/application/dify-ha-mcp/Dify-MCP-authorize.png)
-
-<Steppers>
 
 ##### Get the Home Assistant IP Address (`your_ha_ip`)
 
@@ -426,11 +418,9 @@ Assuming your Home Assistant IP is `192.168.101.160` and the token you obtained 
 
 Copy this completed JSON configuration and paste it into the authorization configuration input box for the MCP tool in Dify (replacing the original template content in the input box). Then, click "Save" or "OK". If the configuration is correct, you should see a notification indicating successful authorization or that the tool is available.
 
-</Steppers>
-
 This will allow you to call the MCP tool in the app you created.
 
-### Writing the Prompt
+### Ⅱ. Writing the Prompt
 
 A prompt is the instruction you give to the AI Agent, telling it what role to play, how to work, and what its capabilities and limitations are.
 
@@ -476,7 +466,9 @@ Now, pick up your SenseCAP Watcher, try speaking to it, and see if your AI smart
 
 For example, you can try saying: "Turn on the living room light," or "What is the temperature in the bedroom right now?" (This assumes you have already configured these devices in Home Assistant and that your prompt and Dify Agent can correctly understand and process these commands).
 
+<center>
 <Tweet id="1910315965675712738" /> 
+</center>
 
 ## References
 

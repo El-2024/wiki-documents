@@ -27,7 +27,7 @@ MID360 LiDAR 传感器为各种应用提供高精度的 3D 点云数据。本指
 
 
 ## 前置条件
-- __[reComputer J30/40 系列](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__：已根据教程完成 [JetPack 5.x 系统的安装](/reComputer_J4012_Flash_Jetpack) 和 [ROS Noetic 环境的安装](/installing_ros1)。
+- __[reComputer J30/40 系列](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__：已根据教程完成 [JetPack 5.x 系统的安装](/cn/reComputer_J4012_Flash_Jetpack) 和 [ROS Noetic 环境的安装](/cn/installing_ros1)。
 
 - __MID360 LIDAR__
 

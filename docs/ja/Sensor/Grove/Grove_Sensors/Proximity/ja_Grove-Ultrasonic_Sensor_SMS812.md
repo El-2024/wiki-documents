@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/ultrasonic-sms812/1.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/grove_ultrasonic_sensor_sms812">
+    <a class="get_one_now_item" href="/ja/grove_ultrasonic_sensor_sms812">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
@@ -124,7 +124,7 @@ Grove 超音波センサー (SMS812) は、小型で超低消費電力の距離�
 				</a>
 			</div></td>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="/grove_ultrasonic_sensor_sms812">
+				<a class="get_one_now_item" href="/ja/grove_ultrasonic_sensor_sms812">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -207,7 +207,7 @@ ZIP形式のライブラリをダウンロードしたら、Arduino IDEを開き
 
 - **XIAO ESP32C3** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/#software-setup)** を参照して追加を完了してください。
 
-- **XIAO ESP32S3** を使用する場合は、**[このチュートリアル](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
+- **XIAO ESP32S3** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
 
 :::caution
 **XIAO nRF52840** を使用する場合は、**Seeed nRF52 mbed-enabled Boards** を選択してください。そうしないと、プログラム実行時にエラーが報告される可能性があります。

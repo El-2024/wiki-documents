@@ -96,7 +96,7 @@ The validity period of the verification code is 10min, please complete the reset
 
 ## Pretrained Models
 
-The Pretrained Models section of the SenseCraft AI website is a comprehensive repository of AI models that users can easily access and deploy on their devices. The model repository currently houses an impressive collection of 30000+ models, with more being added continuously.
+The Pretrained Models section of the SenseCraft AI website is a comprehensive repository of AI models that users can easily access and deploy on their devices. The model repository currently houses an impressive collection of 400+ models, with more being added continuously.
 
 ### Model Categories
 

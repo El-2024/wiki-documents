@@ -193,11 +193,11 @@ NFC 示例使用三个 NFC 标签作为钥匙来打开 LED 灯条，但首先您
 **代码详情**
 
 ```
-#include &lt;Wire.h&gt;
-#include &lt;PN532_I2C.h&gt;
-#include &lt;PN532.h&gt;
-#include &lt;NfcAdapter.h&gt;
-#include &lt;TimerOne.h&gt;
+#include <Wire.h>
+#include <PN532_I2C.h>
+#include <PN532.h>
+#include <NfcAdapter.h>
+#include <TimerOne.h>
 #include "Seeed_QTouch.h"
 #include "Seeed_ws2812.h"
 
@@ -260,10 +260,10 @@ void loop() {
 **代码详情**
 
 ```
-#include &lt;Wire.h&gt;
-#include &lt;SeeedOLED.h&gt;
+#include <Wire.h>
+#include <SeeedOLED.h>
 #include "Barometer.h"
-#include &lt;Seeed_ws2812.h&gt;
+#include <Seeed_ws2812.h>
 
 #define LEDN 5
 #define SIG_PIN 12
@@ -352,14 +352,14 @@ void loop()
 **代码详情**
 
 ```
-#include &lt;Wire.h&gt;
-#include &lt;SeeedOLED.h&gt;
-#include &lt;Wire.h&gt;
-#include &lt;ADXL345.h&gt;
+#include <Wire.h>
+#include <SeeedOLED.h>
+#include <Wire.h>
+#include <ADXL345.h>
 #include "pedometer.h"
-#include &lt;SPI.h&gt;
-#include &lt;WiFi.h&gt;
-#include &lt;TimerOne.h&gt;
+#include <SPI.h>
+#include <WiFi.h>
+#include <TimerOne.h>
 
 #define MINUTES_TO_ALARM  (60) // 如果在 MINUTES_TO_ALARM 分钟内未走足够步数，蜂鸣器将响 0.5 秒。
 unsigned long curtime = 0;
@@ -398,7 +398,7 @@ void setup() {
     curtime = millis();              // 获取当前时间
     cursteps = pedometer.stepCount;  // 获取当前步数
 
-    Timer1.initialize(200000); // 设置一个长度为 100000 微秒的定时器（或 0.1 秒 - 或 10Hz =&gt; LED 每秒闪烁 5 次，5 个开关循环）
+    Timer1.initialize(200000); // 设置一个长度为 100000 微秒的定时器（或 0.1 秒 - 或 10Hz => LED 每秒闪烁 5 次，5 个开关循环）
     Timer1.attachInterrupt( TimerISR ); // 在此处附加服务例程
 }
 
@@ -415,7 +415,7 @@ void loop() {
     }
 
     // 如果在 MINUTES_TO_ALARM 分钟内未走足够步数，蜂鸣器将响 0.5 秒。
-    if((millis()-curtime &gt; MINUTES_TO_ALARM * 60000) &amp;&amp; (pedometer.stepCount - cursteps &lt; MINUTES_TO_ALARM*60/2)){
+    if((millis()-curtime > MINUTES_TO_ALARM * 60000) && (pedometer.stepCount - cursteps < MINUTES_TO_ALARM*60/2)){
         buzzer_on(500);
         curtime = millis();
         cursteps = pedometer.stepCount;

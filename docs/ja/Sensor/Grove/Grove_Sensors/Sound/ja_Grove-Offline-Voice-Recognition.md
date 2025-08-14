@@ -70,7 +70,7 @@ Grove - オフライン音声認識モジュールは、VC-02モジュールを�
 
 - [Seeed Studio XIAO RP2040](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html)
 - [Grove Base for XIAO](https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html)
-- [Grove - オフライン音声認識モジュール](/Grove-Offline-Voice-Recognition)
+- [Grove - オフライン音声認識モジュール](/ja/Grove-Offline-Voice-Recognition)
 - [スピーカー](https://www.seeedstudio.com/Mono-Enclosed-Speaker-2W-6-Ohm-p-2832.html)
 
 

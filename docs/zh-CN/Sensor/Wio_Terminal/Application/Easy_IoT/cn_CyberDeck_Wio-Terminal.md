@@ -14,10 +14,6 @@ last_update:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/CyberDesk_Wio-Terminal/CyberDesk_Wio-Terminal.gif" style={{width:500, height:'auto'}}/></div>
 
-:::info
-请点击此处查看[中文版本](/cn/CyberDeck_Wio-Terminal)
-:::
-
 ## 项目概览 {#jump1}
 
 使用 Wio Terminal 作为显示终端创建赛博朋克风格的 PC 监控系统，实时监控计算机的各种性能指标。

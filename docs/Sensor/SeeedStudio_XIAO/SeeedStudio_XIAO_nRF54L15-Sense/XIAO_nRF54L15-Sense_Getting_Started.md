@@ -390,7 +390,7 @@ To configure your board for nRF Connect in VS Code, you can follow these steps:
 <!-- <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/config1.jpg" style={{width:600, height:'auto'}}/></div> -->
 
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/addboard.jpg" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/guider.jpg" style={{width:600, height:'auto'}}/></div>
 
 - In the application view, click Add Build Configuration below the application name .
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/config3.png" style={{width:600, height:'auto'}}/></div>
@@ -698,7 +698,7 @@ It is required to download the [Segger](https://www.segger.com/downloads/jlink/)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/j_link3.jpg" alt="pir" width={700} height="auto" /></p>
 
-- **Step 4.** Draw the bin or [hex file](ttps://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/zephyr.hex) to software. Then press F4 and F5 in that order. The reflashing is done.
+- **Step 4.** Draw the bin or [hex file](https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/zephyr.hex) to software. Then press F4 and F5 in that order. The reflashing is done.
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/j_link2.jpg" alt="pir" width={700} height="auto" /></p>
 
 

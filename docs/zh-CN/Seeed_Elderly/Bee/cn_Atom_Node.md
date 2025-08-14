@@ -483,7 +483,7 @@ Atom Node 是一个开源的物联网硬件解决方案，可以支持多个 Gro
 
 现在使用一个处于 IFTTT 模式的 Atom Node，按照以下步骤操作：
 
-<!-- * 使用 [Grove - 通用 4 针电缆](/Grove_System/#grove-cables) 将 Grove - 温度传感器连接到 ADC 端口，将 Grove - 蜂鸣器连接到 PWM 端口。 -->
+<!-- * 使用 [Grove - 通用 4 针电缆](/cn/Grove_System/#grove-cables) 将 Grove - 温度传感器连接到 ADC 端口，将 Grove - 蜂鸣器连接到 PWM 端口。 -->
 
 * 将 RFBee 插入 Bee 插座。
 * 按下 Atom Node 一侧的按钮以打开设备。另一侧的 LED 会亮起。然后再次按下按钮，使 Atom Node 进入配置模式。同时，用户指示灯变为红色。
@@ -513,7 +513,7 @@ Atom Node 是一个开源的物联网硬件解决方案，可以支持多个 Gro
 * 将设备放置在 Android 设备屏幕上。注意光传感器面向屏幕。屏幕亮度最好设置为大约 35%。
 ![](https://files.seeedstudio.com/wiki/Atom_Node/img/Node_Interface3.jpg)
 
-<!-- * 点击 "Submit"。它将开始配置。<font color="red">配置成功后，用户指示灯会变为绿色并闪烁。</font>如果配置失败，请点击 "Again"。如果持续失败，可以参考 [FAQ](/Atom_Node)。 -->
+<!-- * 点击 "Submit"。它将开始配置。<font color="red">配置成功后，用户指示灯会变为绿色并闪烁。</font>如果配置失败，请点击 "Again"。如果持续失败，可以参考 [FAQ](/cn/Atom_Node)。 -->
 
 ![](https://files.seeedstudio.com/wiki/Atom_Node/img/Node_Interface4.jpg)
 

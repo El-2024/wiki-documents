@@ -11,7 +11,7 @@ last_update:
 ---
 # 如何使用 gcc 构建 DSO Nano 固件
 
-[DSO Nano](/DSO_Nano "DSO Nano") 固件可以使用 gcc 工具链进行构建。与 gcc 相关的文件位于固件源代码树的 project/gcc 文件夹中。
+[DSO Nano](/cn/DSO_Nano "DSO Nano") 固件可以使用 gcc 工具链进行构建。与 gcc 相关的文件位于固件源代码树的 project/gcc 文件夹中。
 
 ## 获取 ARM 交叉编译 gcc 工具链
 
@@ -65,7 +65,7 @@ make
 
 ## 测试
 
-使用 [Dfu-util](/Dfu-util "Dfu-util") 将 dso-lib.bin 和 dso-app.bin 文件下载到你的 Nano V1 或 V2。对于 Nano V3 型号，将 dso-lib.hex 和 dso-app.hex 文件逐个复制到 DFU 虚拟 USB 驱动器。
+使用 [Dfu-util](/cn/Dfu-util "Dfu-util") 将 dso-lib.bin 和 dso-app.bin 文件下载到你的 Nano V1 或 V2。对于 Nano V3 型号，将 dso-lib.hex 和 dso-app.hex 文件逐个复制到 DFU 虚拟 USB 驱动器。
 
 ## 技术支持与产品讨论
 

@@ -75,12 +75,12 @@ BLE 传输速度比 SPP 传输慢，所以我们在设计中选择了较低的�
 
 ### 通过 UART Bee 将蓝牙连接到 PC
 
-蓝牙提供了一个带有标准 Grove 插座的串口，大多数 USB-UART 转换器都可以使用。这里我们使用 [UartSBee V5](/UartSBee_v5) 来连接蓝牙和 PC。
+蓝牙提供了一个带有标准 Grove 插座的串口，大多数 USB-UART 转换器都可以使用。这里我们使用 [UartSBee V5](/cn/UartSBee_v5) 来连接蓝牙和 PC。
 ![](https://files.seeedstudio.com/wiki/Grove-BLE-dual_model-v1.0/img/Grove-BLE-dual_model-v1.0_ConnectToPC.jpg)
 
 ### 将蓝牙连接到 Arduino
 
-由于 Arduino Uno 没有 Grove 插座，我们使用 <a href="/Seeeduino_Lotus"><span><font color={'8DC215'} size={"3"}> Seeeduino Lotus </font></span></a> 代替。您也可以使用带有 **Grove Base Shield V2** 的 Arduino。
+由于 Arduino Uno 没有 Grove 插座，我们使用 <a href="/cn/Seeeduino_Lotus"><span><font color={'8DC215'} size={"3"}> Seeeduino Lotus </font></span></a> 代替。您也可以使用带有 **Grove Base Shield V2** 的 Arduino。
 作为示例，D2 和 D3 用作软件 UART。因此，将 Grove 线缆插入"D2"插座
 
 ![](https://files.seeedstudio.com/wiki/Grove-BLE-dual_model-v1.0/img/Grove-BLE-dual_model-v1.0_ConnectToArduino.jpg)
@@ -1140,7 +1140,7 @@ AT+VERR?<br />
 
 初始化后，中心和外围将做不同的事情，中心将间隔向外围发送消息并打印从外围接收到的内容，而外围只响应中心。
 
-点击[这里](https://github.com/Seeed-Studio/HM-13_SW)下载测试代码并用Arduino IDE打开HM-13/_SW.ino，编译并下载到Arduino Uno。记住通过修改开头的宏来配置蓝牙为不同角色。如果您对如何开始使用Arduino有任何问题，请点击<a href="/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}>这里</font></span></a>获取帮助。
+点击[这里](https://github.com/Seeed-Studio/HM-13_SW)下载测试代码并用Arduino IDE打开HM-13/_SW.ino，编译并下载到Arduino Uno。记住通过修改开头的宏来配置蓝牙为不同角色。如果您对如何开始使用Arduino有任何问题，请点击<a href="/cn/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}>这里</font></span></a>获取帮助。
 
 下载程序后，打开两个串口终端窗口，蓝牙上的LED将闪烁，几秒钟后，它们停止闪烁并保持常亮，这表明它们已相互连接。
 根据编写的程序，中心持续向外围发送消息并每次获得反馈。

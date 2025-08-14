@@ -149,7 +149,7 @@ last_update:
 </tr>
 <tr>
 <th scope="row"> 15</th>
-<td> [赫拉克勒斯双15A 6-20V电机控制器](/Hercules_Dual_15A_6-20V_Motor_Controller)</td>
+<td> [赫拉克勒斯双15A 6-20V电机控制器](/cn/Hercules_Dual_15A_6-20V_Motor_Controller)</td>
 <td></td>
 <td></td>
 <td> 1 个</td>

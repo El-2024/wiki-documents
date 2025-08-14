@@ -71,5 +71,5 @@ SenseCAP Indicator のネイティブファームウェアのUIは、すべて�
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_13.png"/></div>
 
 :::tip ChatGPT x DALL·E をお探しですか？
-[SenseCAP Indicator X OpenAI](/SenseCAP_Indicator_OpenAI_X_Overview) にアクセスしてください。
+[SenseCAP Indicator X OpenAI](/ja/SenseCAP_Indicator_OpenAI_X_Overview) にアクセスしてください。
 :::

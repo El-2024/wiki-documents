@@ -25,7 +25,7 @@ import TabItem from '@theme/TabItem';
 
 ### 環境構成
 
-[トレーニング](/ModelAssistant_Tutorials_Training_Overview)のステップと同様に、モデルエクスポートの段階では**仮想環境**で作業することを推奨します。`sscma`仮想環境内で、[インストール - 前提条件 - 追加依存関係のインストール](/ModelAssistant_Introduce_Installation#step-4-install-extra-dependencies-optional)のステップが完了していることを確認してください。
+[トレーニング](/ja/ModelAssistant_Tutorials_Training_Overview)のステップと同様に、モデルエクスポートの段階では**仮想環境**で作業することを推奨します。`sscma`仮想環境内で、[インストール - 前提条件 - 追加依存関係のインストール](/ja/ModelAssistant_Introduce_Installation#step-4-install-extra-dependencies-optional)のステップが完了していることを確認してください。
 
 :::tip
 
@@ -39,9 +39,9 @@ conda activate sscma
 
 ### モデルと重み
 
-モデルをエクスポートする前に、PyTorchモデルとその重みを準備する必要があります。モデルについては、[Config](/ModelAssistant_Tutorials_Datasets)セクションで事前に設定されています。重みについては、以下の手順を参考にしてモデルの重みを取得してください。
+モデルをエクスポートする前に、PyTorchモデルとその重みを準備する必要があります。モデルについては、[Config](/ja/ModelAssistant_Tutorials_Datasets)セクションで事前に設定されています。重みについては、以下の手順を参考にしてモデルの重みを取得してください。
 
-- [トレーニング](/ModelAssistant_Tutorials_Training_Overview)セクションを参照し、モデルを選択してトレーニングを行い、モデルの重みを取得します。
+- [トレーニング](/ja/ModelAssistant_Tutorials_Training_Overview)セクションを参照し、モデルを選択してトレーニングを行い、モデルの重みを取得します。
 
 - または、[SSCMA](https://github.com/Seeed-Studio/ModelAssistant)公式の事前トレーニング済みの重みを[GitHub Releases - Model Zoo](https://github.com/Seeed-Studio/ModelAssistantreleases/tag/model_zoo)からダウンロードします。
 

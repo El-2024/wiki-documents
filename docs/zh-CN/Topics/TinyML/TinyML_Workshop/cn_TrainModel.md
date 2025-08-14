@@ -19,7 +19,7 @@ Seeed Studio [SenseCraft AI平台](https://sensecraft.seeed.cc/ai/#/model)是一
 它使用户能够轻松地训练和部署自己的模型到边缘设备上，提供无缝且用户友好的体验，让您只需**几次点击**就能直接在边缘设备上训练和部署自己的模型。
 
 :::info
-它的核心是一个开源项目，我们已经在[GitHub](https://github.com/Seeed-Studio/ModelAssistant)上分享了它，并且也提供了[开发方法](/ModelAssistant_Introduce_Overview)。
+它的核心是一个开源项目，我们已经在[GitHub](https://github.com/Seeed-Studio/ModelAssistant)上分享了它，并且也提供了[开发方法](/cn/ModelAssistant_Introduce_Overview)。
 :::
 
 ## 开始训练模型

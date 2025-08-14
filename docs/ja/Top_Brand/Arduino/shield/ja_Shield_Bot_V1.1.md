@@ -27,7 +27,7 @@ sku: 110060010
 
 前バージョンと比較して、Shield Bot V1.1はPCのUSBポートを使用してバッテリーを充電することができます。また、回路を最適化したことで充電効率が大幅に向上しました。さらに、Arduino/SeeeduinoのVinピンを使用して高速充電が可能です。
 
-注意: 互換性のあるArduinoボードは含まれていません。[Seeeduino](/Seeeduino "Seeeduino")を試してください。
+注意: 互換性のあるArduinoボードは含まれていません。[Seeeduino](/ja/Seeeduino "Seeeduino")を試してください。
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Shield-Bot-p-1380.html)
 

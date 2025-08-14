@@ -25,8 +25,8 @@ last_update:
 
 现在你可以打开 BLE_Slave INO 文件，编译并上传。
 
-<!-- 如果你刚开始使用，请参考 [这里](/Xadow_Main_Board#Get_Start_with_Xadow_Main_Board) 安装 Xadow 驱动程序。并准备下载库：[DigitalAccelerometer_ADX345](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Communicate_via_BLE/res/DigitalAccelerometer_ADXL345.zip) 和 [sleep_FromArduino](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Communicate_via_BLE/res/Sleep_FromArduino.zip)，解压后将它们放到 Arduino IDE 的库文件夹路径：..\arduino-1.0.1\libraries。 -->
-<!-- 现在你可以打开手机的蓝牙来观察数据。当加速度计的值发生变化时，蓝牙串口会显示实时数据。注意你的手机蓝牙需要支持蓝牙 4.0（iPhone4S 或以上），并且需要下载蓝牙串口工具。更多信息请参考 [Xadow BLE 从机的使用方法](/Xadow_BLE_Slave#Usage)。 -->
+<!-- 如果你刚开始使用，请参考 [这里](/cn/Xadow_Main_Board#Get_Start_with_Xadow_Main_Board) 安装 Xadow 驱动程序。并准备下载库：[DigitalAccelerometer_ADX345](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Communicate_via_BLE/res/DigitalAccelerometer_ADXL345.zip) 和 [sleep_FromArduino](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Communicate_via_BLE/res/Sleep_FromArduino.zip)，解压后将它们放到 Arduino IDE 的库文件夹路径：..\arduino-1.0.1\libraries。 -->
+<!-- 现在你可以打开手机的蓝牙来观察数据。当加速度计的值发生变化时，蓝牙串口会显示实时数据。注意你的手机蓝牙需要支持蓝牙 4.0（iPhone4S 或以上），并且需要下载蓝牙串口工具。更多信息请参考 [Xadow BLE 从机的使用方法](/cn/Xadow_BLE_Slave#Usage)。 -->
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Communicate_via_BLE/img/Phone_and_BLE_Slave_Communicate.jpg)
 

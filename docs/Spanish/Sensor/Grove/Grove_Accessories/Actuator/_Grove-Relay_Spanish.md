@@ -32,7 +32,7 @@ El Grove - Módulo Relevador es un interruptor digital normalmente-abierto. Con 
 | Max Corriente de Switcheo         | 5A                   | 5A                  |
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Plaformas Compatibles
 
@@ -48,7 +48,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 ### Jugando con Arduino
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) before the start.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) before the start.
 
 #### Materiales requeridos
 
@@ -125,7 +125,7 @@ void loop()
 
 ```
 
-- **Paso 2.** Carga la demostración. Si no sabes como subir el código, por favor revisa [How to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 2.** Carga la demostración. Si no sabes como subir el código, por favor revisa [How to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 Subido con éxito, si presionas el botón #1 el relevador deberá encender; si presionas el segundo, el relevador se apagará.
 
@@ -144,7 +144,7 @@ Subido con éxito, si presionas el botón #1 el relevador deberá encender; si p
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega Soporte Arduino, y desplaza un <em>main procedure</em> al área de trabajo.
 
 Nota:
-Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Agrega bloques hasta obtener el siguiente diagrama o abre el archivo cdc que puedes descargar al final de esta página.
 
@@ -177,7 +177,7 @@ Para el paso 3, puedes conectar el módulo relevador a **cualquier puerto GPIO**
 
 #### Software
 
-- **Paso 1**. Sigue [Setting Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el ambiente de desarrollo.
+- **Paso 1**. Sigue [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el ambiente de desarrollo.
 - **Paso 2**. Descarga el archivo fuente clonando la librería grove.py.
 
 ```

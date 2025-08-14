@@ -111,12 +111,12 @@ Grove - 录音模块基于 ISD1820P 芯片，可录制 8-20 秒的音频。它�
 ---
 按照以下步骤使用 **Grove - 录音模块** 构建一个示例电路：
 
-1. 将录音模块连接到 Grove 电路的输出端（电源模块右侧）。在电路的输入端，您可以使用 [Grove - 按钮](/Grove-Button "Grove - 按钮") 或 [Grove - 滑动电位器](/Grove-Slide_Potentiometer "Grove - 滑动电位器") 模块。
+1. 将录音模块连接到 Grove 电路的输出端（电源模块右侧）。在电路的输入端，您可以使用 [Grove - 按钮](/cn/Grove-Button "Grove - 按钮") 或 [Grove - 滑动电位器](/cn/Grove-Slide_Potentiometer "Grove - 滑动电位器") 模块。
 2. 给电路供电。
 
 3. 按住录音模块上的 REC 按钮开始录音。板载红色 LED 将亮起。继续录音，直到红色 LED 熄灭。LED 熄灭表示录音时间已结束。
 
-4. 要播放录制的音频片段，请按住 [Grove - 按钮](/Grove-Button "Grove - 按钮")。您现在应该可以听到录制的音频片段。继续按住 [Grove - 按钮](/Grove-Button "Grove - 按钮")，直到看到录音模块上的红色 LED 闪烁。闪烁表示音频播放已完成。如果您使用的是 [Grove - 滑动电位器](/Grove-Slide_Potentiometer "Grove - 滑动电位器")，只需将滑块从 GND 移动到 VCC 位置即可随时播放。
+4. 要播放录制的音频片段，请按住 [Grove - 按钮](/cn/Grove-Button "Grove - 按钮")。您现在应该可以听到录制的音频片段。继续按住 [Grove - 按钮](/cn/Grove-Button "Grove - 按钮")，直到看到录音模块上的红色 LED 闪烁。闪烁表示音频播放已完成。如果您使用的是 [Grove - 滑动电位器](/cn/Grove-Slide_Potentiometer "Grove - 滑动电位器")，只需将滑块从 GND 移动到 VCC 位置即可随时播放。
 
 5. 要覆盖录制的音频，只需重复上述第 3 步。新录制的消息将覆盖旧消息。
 
@@ -133,7 +133,7 @@ Grove - 录音模块基于 ISD1820P 芯片，可录制 8-20 秒的音频。它�
 ---
 此 Grove 模块可作为以下 Grove 套件系列的一部分使用：
 
-<!-- * [Grove Mixer Pack V2](/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
+<!-- * [Grove Mixer Pack V2](/cn/Grove-Mixer_Pack_V2 "GROVE MIXER PACK V2") -->
 
 或者，也可以在 Seeed Studio Bazaar 单独购买。
 

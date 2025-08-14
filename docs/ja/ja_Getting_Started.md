@@ -14,7 +14,7 @@ last_update:
 
 2008年以来、信頼されるIoT（Internet of Things）ハードウェアパートナーとして、Seeed Studioは物理的な世界のインタラクティブなデジタルレプリカの実現に尽力しています。このウェブサイトは、Seeed Studioが現在公開しているすべてのWikiを収集したオープンソースプラットフォームであり、毎週更新され、製品ラインナップや研究成果を紹介しています。その内容には自然環境のデジタル化も含まれます。
 
-<!-- ここでは現在の成果と<strong><a href="/Solutions"><span><font color={'8DC215'} size={"4"}>  ソリューション </font></span></a></strong>を紹介し、皆様の貢献をお待ちしています。 -->
+<!-- ここでは現在の成果と<strong><a href="/ja/Solutions"><span><font color={'8DC215'} size={"4"}>  ソリューション </font></span></a></strong>を紹介し、皆様の貢献をお待ちしています。 -->
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/New_Wiki_Platform/example/showcase2.png" alt="pir" width={1000} height="auto" /></p>
 

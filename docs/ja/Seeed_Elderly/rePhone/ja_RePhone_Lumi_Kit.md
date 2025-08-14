@@ -158,7 +158,7 @@ Xadow GSM+BLEはXadow 36ピンコネクタとXadow 11ピンコネクタを統合
 ---
 以下は、RePhoneにメッセージを送信してRGB LEDを制御する例です。
 
-<!-- まず、**[Arduino IDE for RePhone Kit](/Arduino_IDE_for_RePhone_Kit "Arduino IDE for RePhone Kit")** の指示に従い、RePhone Kit用のArduino IDEをダウンロードし、ドライバーをインストールしてください。 -->
+<!-- まず、**[Arduino IDE for RePhone Kit](/ja/Arduino_IDE_for_RePhone_Kit "Arduino IDE for RePhone Kit")** の指示に従い、RePhone Kit用のArduino IDEをダウンロードし、ドライバーをインストールしてください。 -->
 次に、以下のコードをRePhone用のArduino IDEにコピーしてください。**ボードを「RePhone」と選択**し、**「MTK USB Debug Port」でダウンロード**してください。
 ```
 #include <LCheckSIM.h>
@@ -298,7 +298,7 @@ RePhone コミュニティでよくある質問を収集し、トピック**["Fr
 
 ## リソース
 ---
-<!-- 詳細については、Wikiページ [Xadow Duino](/Xadow_Duino) をご覧ください。 -->
+<!-- 詳細については、Wikiページ [Xadow Duino](/ja/Xadow_Duino) をご覧ください。 -->
 
 ## 技術サポート & 製品ディスカッション
 

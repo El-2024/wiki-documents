@@ -55,7 +55,7 @@ El Acelerómetro Digital de 3-Ejes es una parte clave en proyectos de detección
 - Biblioteca compatible con Suli
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Plataformas Compatibles
 

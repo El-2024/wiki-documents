@@ -102,7 +102,7 @@ last_update:
 
 :::info 注意
 
-默认情况下，MR60BHA2预装了[XIAO ESP32C6](/xiao_esp32c6_getting_started)，但它兼容各种其他微控制器进行通信和集成。
+默认情况下，MR60BHA2预装了[XIAO ESP32C6](/cn/xiao_esp32c6_getting_started)，但它兼容各种其他微控制器进行通信和集成。
 
 :::
 

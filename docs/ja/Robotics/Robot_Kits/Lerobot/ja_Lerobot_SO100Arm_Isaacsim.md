@@ -73,7 +73,7 @@ SO-ARM100 と reComputer Jetson AI インテリジェントロボットキット
 
 ## 前提条件
 
-1. [Lerobot SO100Armの基本使用チュートリアルに精通していること](/lerobot_so100m)。
+1. [Lerobot SO100Armの基本使用チュートリアルに精通していること](/ja/lerobot_so100m)。
 2. [チュートリアルに従ってIsaac Simをインストールする](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_workstation.html)。
 3. [チュートリアルに従ってROS2のインストールと設定を完了する](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_ros.html)。
 
@@ -87,7 +87,7 @@ git clone https://github.com/ZhuYaoHui1998/lerobot.git
 cd lerobot
 ```
 
-[チュートリアルに従ってLerobot環境をインストールしていることを確認してください](/lerobot_so100m)。
+[チュートリアルに従ってLerobot環境をインストールしていることを確認してください](/ja/lerobot_so100m)。
 
 ## URDFをIsaac Simにインポートする
 

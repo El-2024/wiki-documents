@@ -133,7 +133,7 @@ reComputer J1010 是一款紧凑型边缘计算机，内置 NVIDIA Jetson Nano 4
 ## 为 reComputer J1010 刷入 JetPack
 
 :::info
-请参考此 [wiki](/reComputer_J1010_J101_Flash_Jetpack) 页面获取更多信息，因为 J1010 使用 J101 载板。
+请参考此 [wiki](/cn/reComputer_J1010_J101_Flash_Jetpack) 页面获取更多信息，因为 J1010 使用 J101 载板。
 :::
 
 ## 资源

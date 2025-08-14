@@ -58,9 +58,9 @@ Quad DSO 的校准过程已经描述，例如在这里：[[2]](http://neophob.co
 
 ## 另请参阅
 
-* [DSO Quad](/DSO_Quad "DSO Quad")
+* [DSO Quad](/cn/DSO_Quad "DSO Quad")
 
-* [DSO Quad：升级固件](/DSO_Quad-Building_Firmware "DSO Quad：升级固件")
+* [DSO Quad：升级固件](/cn/DSO_Quad-Building_Firmware "DSO Quad：升级固件")
 
 ## 技术支持与产品讨论
 

@@ -189,8 +189,13 @@ last_update:
 
 **PX4**  
 <div className="card-container">
-<a href="/install_isaaclab/" className="nav-item">
+<a href="/control_px4_with_recomputer_jetson/" className="nav-item">
   <span className="text">PX4 with Jetson</span>
+  <span className="tag recommended">New</span>
+</a>
+
+<a href="/object_tracking_with_reComputer_jetson_and_pX4/" className="nav-item">
+  <span className="text">Object Tracking with PX4</span>
   <span className="tag recommended">New</span>
 </a>
 

@@ -113,11 +113,11 @@ last_update:
 
 发射模块和接收模块都需要三根线：Vcc、Ground 和信号线。套件的两个部分的 Pin 2 均未连接。
 
-* 将发射模块连接到 Arduino 上用于传输的 [Grove_-_Base_Shield](/Base_Shield_V2 "Grove - Base Shield") 的数字 I/O 2。
+* 将发射模块连接到 Arduino 上用于传输的 [Grove_-_Base_Shield](/cn/Base_Shield_V2 "Grove - Base Shield") 的数字 I/O 2。
 Grove-433MHz_Simple_RF_Link_Kit
-* 将接收模块连接到接收 Arduino 上 [Grove_-_Base_Shield](/Base_Shield_V2 "Grove - Base Shield") 的数字 I/O 2。
+* 将接收模块连接到接收 Arduino 上 [Grove_-_Base_Shield](/cn/Base_Shield_V2 "Grove - Base Shield") 的数字 I/O 2。
 
-**注意：** 硬件安装可以参考 [Grove - 433MHz 简易无线通信套件的使用方法](/Grove-433MHz_Simple_RF_Link_Kit "Grove-433MHz_Simple_RF_Link_Kit")。
+**注意：** 硬件安装可以参考 [Grove - 433MHz 简易无线通信套件的使用方法](/cn/Grove-433MHz_Simple_RF_Link_Kit "Grove-433MHz_Simple_RF_Link_Kit")。
 
 * 下载 [VirtualWire 库文件](https://files.seeedstudio.com/wiki/315MHz_Simple_RF_Link_Kit/res/VirtualWire_Library.zip)，并将其解压到 Arduino IDE 的库文件路径：..\arduino-1.0\libraries。请参考 [这里](http://www.pjrc.com/teensy/td_libs_VirtualWire.html)。
 * 上传以下代码到发射模块：

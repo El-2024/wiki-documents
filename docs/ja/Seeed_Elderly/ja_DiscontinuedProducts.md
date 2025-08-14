@@ -41,25 +41,25 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 以下は廃止された製品の一覧です：
 
-* <a href="/ReSpeaker" font color={'8DC215'}>reSpeaker</a>  
+* <a href="/ja/ReSpeaker" font color={'8DC215'}>reSpeaker</a>  
 <br />
-* <a href="/RePhone" font color={'8DC215'}>rePhone</a> 
+* <a href="/ja/RePhone" font color={'8DC215'}>rePhone</a> 
 <br />
-* <a href="/Mesh_Bee" font color={'8DC215'}>Bee</a>
+* <a href="/ja/Mesh_Bee" font color={'8DC215'}>Bee</a>
 <br /> 
-* <a href="/Xadow_3_Aixs_Accelerometer" font color={'8DC215'}>Xadow</a>
+* <a href="/ja/Xadow_3_Aixs_Accelerometer" font color={'8DC215'}>Xadow</a>
 <br /> 
-* <a href="/Rainbowduino" font color={'8DC215'}>RainbowDuino</a>
+* <a href="/ja/Rainbowduino" font color={'8DC215'}>RainbowDuino</a>
 <br /> 
-* <a href="/Air602_WiFi_Development_Board" font color={'8DC215'}>Air Serial</a>
+* <a href="/ja/Air602_WiFi_Development_Board" font color={'8DC215'}>Air Serial</a>
 <br /> 
-* <a href="/How-to-build-a-home-soft-router-and-NAS-With-ReComputer" font color={'8DC215'}>reComputer Alpha</a>
+* <a href="/ja/How-to-build-a-home-soft-router-and-NAS-With-ReComputer" font color={'8DC215'}>reComputer Alpha</a>
 <br /> 
-* <a href="/W600_Module" font color={'8DC215'}>W600</a>
+* <a href="/ja/W600_Module" font color={'8DC215'}>W600</a>
 <br /> 
-* <a href="/Artik" font color={'8DC215'}>Artik</a>
+* <a href="/ja/Artik" font color={'8DC215'}>Artik</a>
 <br /> 
-* <a href="/Tiny_BLE" font color={'8DC215'}>その他</a> 
+* <a href="/ja/Tiny_BLE" font color={'8DC215'}>その他</a> 
 
 
 

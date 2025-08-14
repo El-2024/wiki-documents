@@ -38,13 +38,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 | 部品名                                                                                                           | 数量 |
 |----------------------------------------------------------------------------------------------------------------------|----------|
-| [Grove - Button](/Grove-Button/)                                                                                      | 1個     |
+| [Grove - Button](/ja/Grove-Button/)                                                                                      | 1個     |
 | [Grove - Relay](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products)                                             | 1個     |
 | [Grove - Temp&Humi Sensor](https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temp-Humi-Sensor-SHT35.html?queryID=ea8d1729f76e80d6b1b53c492c74fcdb&objectID=35&indexName=bazaar_retailer_products)           | 1個     |
 | [Grove - Digital Light Sensor](https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.html?queryID=c7822737fbcac80a47232a5fb1ac1e1d&objectID=1594&indexName=bazaar_retailer_products) | 1個     |
 | Grove - WS2812 防水 LED ストリップ - 30 LEDs 1メートル                                                                | 1個     |
 | [Grove - 3-Axis Digital Accelerometer(±1.5g)](//Grove-3-Axis_Digital_Accelerometer-1.5g/)                              | 1個     |
-| [Wio Link](/Wio_Link/)                                                                                                | 1個     |
+| [Wio Link](/ja/Wio_Link/)                                                                                                | 1個     |
 | [Micro USB Cable - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html?queryID=a8b80828fdcd52ad1ae49daa5ed97191&objectID=1405&indexName=bazaar_retailer_products)             | 1個     |
 
 簡単なデモ
@@ -55,11 +55,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ### 予備ガイド
 
 -   [Travis CI](https://travis-ci.org/)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/ja/Wio_Link/)
 ### 必要な材料
 
 -   [Wio Link APP](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/ja/Wio_Link/)
 -   [Grove Relay](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   Travis CI アカウント
 -   GitHub アカウント

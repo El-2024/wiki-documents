@@ -302,7 +302,7 @@ Note that the first ten SRAW_NOx values are zero due to conditioning.
 ## Resources
 
 - [SGP41](https://wiki.seeedstudio.com/grove-smart-air-quality-sensor-sgp41#resources)
-- [AHT20](https://wiki.seeedstudio.com/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor//#resources)
+- [AHT20](https://wiki.seeedstudio.com/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor/#resources)
 
 ## ✨ Contributor Project
 

@@ -985,7 +985,7 @@ reComputer R1000 主板配备了两个 Mini-PCIe 插槽。Mini-PCIe 插槽 1 支
 reComputer R1000-10 由带有板载 Wi-Fi/BLE 版本的 CM4 提供支持，提供与 CM4 相同的 Wi-Fi/BLE 参数。有关详细的参数信息，请参考 Raspberry Pi 官方网站。
 
 :::note
-需要注意的是，由于 reComputer R1000 的金属外壳，Wi-Fi/BLE 信号可能难以穿透金属外壳。如果您需要 Wi-Fi/BLE 功能，建议购买外部天线，并[点击此处查看安装说明](/recomputer_r1000_assembly_guide/#assemble-wi-fible-antenna)。
+需要注意的是，由于 reComputer R1000 的金属外壳，Wi-Fi/BLE 信号可能难以穿透金属外壳。如果您需要 Wi-Fi/BLE 功能，建议购买外部天线，并[点击此处查看安装说明](/cn/recomputer_r1000_assembly_guide/#assemble-wi-fible-antenna)。
 :::
 
 #### 连接 Wi-Fi
@@ -1083,12 +1083,12 @@ exit
 reComputer R1000 主板配备了两个 Mini-PCIe 插槽，其中 Mini-PCIe 插槽 1 支持使用 USB 协议的 4G 模块。Quectel 的 EC25 4G 模块已完全测试与 reComputer R1000 兼容。
 
 :::note
-请注意，如果您需要 4G 功能，则需要购买相应的 4G 模块和外部天线。[请点击此处查看安装说明](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna)。
+请注意，如果您需要 4G 功能，则需要购买相应的 4G 模块和外部天线。[请点击此处查看安装说明](/cn/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna)。
 :::
 
 通过 minicom 使用 AT 命令与 4G 模块交互，请按照以下步骤操作：
 
-**步骤 1.** 在系统上电之前，请将支持 4G 的 SIM 卡插入 [SIM 卡插槽](/recomputer_r/#sim-slot)。
+**步骤 1.** 在系统上电之前，请将支持 4G 的 SIM 卡插入 [SIM 卡插槽](/cn/recomputer_r/#sim-slot)。
 
 **步骤 2.** 使用 ```lsusb``` 检查是否检测到 EC25-EUX。
 
@@ -1167,7 +1167,7 @@ import TabItem from '@theme/TabItem';
 
 <br />
 
-**步骤 1.** 请参考 [LoraWAN® 模块硬件组装](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) 指南，将 `WM1302 SPI LoraWAN® 模块` 安装到 `LoraWAN® Mini PCIe 插槽` 中，您应该能看到 *`Lora`* 丝印。
+**步骤 1.** 请参考 [LoraWAN® 模块硬件组装](/cn/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) 指南，将 `WM1302 SPI LoraWAN® 模块` 安装到 `LoraWAN® Mini PCIe 插槽` 中，您应该能看到 *`Lora`* 丝印。
 
 **步骤 2.** 在命令行中输入 `sudo raspi-config` 打开 Raspberry Pi 软件配置工具：
 
@@ -1241,7 +1241,7 @@ cd ~/sx1302_hal/packet_forwarder
     </a>
 </div>
 
-**步骤 1.** 请参考 [LoraWAN® 模块硬件组装](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) 指南，将 `WM1302 USB LoraWAN® 模块` 安装到 `4G Mini PCIe 插槽` 中，您应该能看到 *`4G`* 丝印。
+**步骤 1.** 请参考 [LoraWAN® 模块硬件组装](/cn/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) 指南，将 `WM1302 USB LoraWAN® 模块` 安装到 `4G Mini PCIe 插槽` 中，您应该能看到 *`4G`* 丝印。
 
 **步骤 2.** 在命令行中输入 `sudo raspi-config` 打开 Raspberry Pi 软件配置工具：
 
@@ -1344,7 +1344,7 @@ Mini-PCIe 插槽支持使用 USB 协议的 Zigbee 模块，从而实现 Zigbee �
 
 :::note
 请注意，如果需要 Zigbee 功能，必须购买相应的 Zigbee 模块和外部天线。
-[点击此处查看组装说明](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna)。
+[点击此处查看组装说明](/cn/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna)。
 :::
 
 #### 将 reComputer R1000 配置为 Zigbee 协调器：
@@ -1408,14 +1408,14 @@ sudo apt-get install cutecom
 作为受电设备的 reComputer R1000 可通过添加 PoE 电源模块支持 IEEE 802.3af 标准。用户需要拆卸设备以安装 PoE 模块以实现以太网 PoE 功能。
 
 :::note
-reComputer R1000 支持 PoE 电源，但标准产品默认不包含 PoE 模块。Seeed 可为批量定制订单提供 PoE 焊接和组装服务。然而，如果客户正在测试样品，则需要 [自行焊接和组装 PoE 模块](/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module)。
+reComputer R1000 支持 PoE 电源，但标准产品默认不包含 PoE 模块。Seeed 可为批量定制订单提供 PoE 焊接和组装服务。然而，如果客户正在测试样品，则需要 [自行焊接和组装 PoE 模块](/cn/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module)。
 :::
 
 ### M.2 插槽
 
 reComputer R1000 支持通过主板上两个 Mini-PCIe 插槽下方的 PCIe 插槽（J62）使用 2280 NVMe SSD 和 AI 加速器（Hailo）。需要注意的是，CM4 的 PCIe 为 Gen2.0，最大理论速度为 5Gbps。如果使用 Gen3.0 或更高版本的 SSD，可能无法达到 SSD 的最大速度。经过测试，安装 SSD 的 reTerminal DM 可实现最大写入速度 230MB/s 和最大读取速度 370MB/s。如果不确定哪些 SSD 兼容，可以根据以下配件列表购买。
 
-[点击此处查看组装说明](/recomputer_r1000_assembly_guide/#assemble-ssd)。
+[点击此处查看组装说明](/cn/recomputer_r1000_assembly_guide/#assemble-ssd)。
 
 <div class="table-center">
 
@@ -1458,7 +1458,7 @@ SSD 卡主要有两种用途：<br />
 TPM 采用 Infineon 的 OPTIGA™ TPM SLB9670 芯片，该芯片符合 Trusted Computing Group (TCG) TPM 2.0 规范，推荐作为 reComputer R1000 的加密芯片。该芯片具有 SPI 接口，应用于板载的 J13 端口，以实现平台完整性的信任根、远程认证和加密服务。
 
 :::note
-[请点击此处查看组装说明](/recomputer_r1000_assembly_guide/#assemble-tpm-20-module)。
+[请点击此处查看组装说明](/cn/recomputer_r1000_assembly_guide/#assemble-tpm-20-module)。
 :::
 
 如果您将 TPM 2.0 模块连接到设备，可以使用以下代码检查 TPM 连接。
@@ -1485,7 +1485,7 @@ UPS 提供的备份时长在很大程度上取决于系统负载。以下是使�
 
 :::note
 有关 UPS 功能的更多信息，请联系我们，警报信号为低电平有效。
-[请点击此处查看组装说明](/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module)。
+[请点击此处查看组装说明](/cn/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module)。
 :::
 
 CPU 和 DC/AC 电源之间的 GPIO25 用于在 5V 电源断电时向 CPU 发出警报。然后，CPU 应在超级电容器能量耗尽之前通过脚本执行紧急操作并运行 `$ shutdown`。

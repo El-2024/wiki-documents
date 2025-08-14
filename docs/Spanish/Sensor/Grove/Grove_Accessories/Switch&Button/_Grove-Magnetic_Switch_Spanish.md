@@ -26,7 +26,7 @@ Este es un módulo de Interruptor Magnético compatible con la plataforma Grove.
 - Encapsulación resistente
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Ideas de Aplicaciones
 
@@ -176,7 +176,7 @@ AT
 </table>
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Platforms Compatibles
 
@@ -190,7 +190,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 ## Primeros Pasos
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
 
 ### Jugando con Arduino
 
@@ -224,7 +224,7 @@ Si no cuantas con un Grove - Shield Base, puedes conectarlo directamente el Grov
 
 #### Software
 
-- **Paso 1.** Copia el código en el IDE de Arduino y carguelo. Si no sabes como cargar un código, por favor revisa [how to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 1.** Copia el código en el IDE de Arduino y carguelo. Si no sabes como cargar un código, por favor revisa [how to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 ```c
 /*******************************************************************************/
@@ -296,7 +296,7 @@ void turnOffLED()
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega suporte para Arduino, y arrastra un <em>main procedure</em> al área de trabajo.
 
 ¡Nota!
-Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra bloques como se muestra en la siguiente imagen, o abre el archivo cdc que puede ser descargado al final de esta página.
 

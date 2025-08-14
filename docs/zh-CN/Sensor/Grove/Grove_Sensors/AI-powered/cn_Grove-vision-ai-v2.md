@@ -15,7 +15,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/grove-vision-ai-v2/0.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/grove_vision_ai_v2">
+    <a class="get_one_now_item" href="/cn/grove_vision_ai_v2">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
     </a>
 </div>
@@ -323,7 +323,7 @@ SenseCraft 是由 Seeed Studio 开发的一系列软件服务，旨在为用户�
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="/grove_vision_ai_v2">
+				<a class="get_one_now_item" href="/cn/grove_vision_ai_v2">
 				<strong><span><font color={'FFFFFF'} size={"4"}>立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -368,7 +368,7 @@ SenseCraft 是由 Seeed Studio 开发的一系列软件服务，旨在为用户�
 
 - 如果您希望使用 **Seeed Studio XIAO ESP32C3** 进行后续操作，请参考 **[此教程](https://wiki.seeedstudio.com/cn/XIAO_ESP32C3_Getting_Started#software-setup)** 完成添加。
 
-- 如果您希望使用 **Seeed Studio XIAO ESP32S3** 进行后续操作，请参考 **[此教程](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
+- 如果您希望使用 **Seeed Studio XIAO ESP32S3** 进行后续操作，请参考 **[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
 
 - 如果您希望使用 **Seeeduino V4.3** 进行后续操作，请参考 **[此教程](https://wiki.seeedstudio.com/cn/Seeeduino_v4.2/)** 完成添加。
 

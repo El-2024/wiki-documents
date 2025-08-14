@@ -248,7 +248,7 @@ void vm_main(void)
 
 [![](https://files.seeedstudio.com/wiki/Eclipse_IDE_for_RePhone_Kit/img/RePhone_Kit_Create_VXP.png)](https://github.com/WayenWeng/RePhone_Create_Kit_VXP/)
 
-<!-- 3. 进入 [RePhone Mass Storage Mode](/Xadow_GSMPlusBLE#Operating_Mode) -->
+<!-- 3. 进入 [RePhone Mass Storage Mode](/cn/Xadow_GSMPlusBLE#Operating_Mode) -->
 
 4. 将文件夹 "RePhone Create Kit VXP" 中的所有内容复制到 RePhone 的 5MB 大容量存储中。
 

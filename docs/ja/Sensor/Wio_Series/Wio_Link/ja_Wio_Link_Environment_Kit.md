@@ -39,7 +39,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 | 部品名                                                                                                                | 数量 |
 |---------------------------------------------------------------------------------------------------------------------------|----------|
-| [Grove - Moisture Sensor](/Grove-Moisture_Sensor/)                                                                         | 1個     |
+| [Grove - Moisture Sensor](/ja/Grove-Moisture_Sensor/)                                                                         | 1個     |
 | [Grove - Temp&Humi Sensor](https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temp-Humi-Sensor-SHT35.html?queryID=ea8d1729f76e80d6b1b53c492c74fcdb&objectID=35&indexName=bazaar_retailer_products)                | 1個     |
 | [Grove - Digital Light Sensor](https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.html?queryID=c7822737fbcac80a47232a5fb1ac1e1d&objectID=1594&indexName=bazaar_retailer_products)      | 1個     |
 | [Grove - Air quality sensor v1.3](https://www.seeedstudio.com/Grove-Air-Quality-Sensor-v1-3-Arduino-Compatible.html?queryID=c98f1d7e388efeeee92d1815abe557cb&objectID=700&indexName=bazaar_retailer_products) | 1個     |
@@ -54,12 +54,12 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ### 初期ガイド
 
 -   [Travis CI](https://travis-ci.org/)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/ja/Wio_Link/)
 
 ### 必要な材料
 
 -   [Wio Link APP](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/ja/Wio_Link/)
 -   [Grove Relay](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   Travis CI アカウント
 -   GitHub アカウント

@@ -83,7 +83,7 @@ Bluetooth Shield 集成了一个串行蓝牙模块。它可以轻松与 Arduino/
 
 3.  打开 Arduino IDE，打开 File -> Examples -> Bluetooth_Shield_V2_Demo_Code -> Slave_led，然后您可以打开从设备的代码
 
-4.  点击 Upload 上传代码，如果您在如何开始使用 Arduino 方面有任何问题，请点击[这里](/Getting_Started_with_Seeeduino)获取帮助。
+4.  点击 Upload 上传代码，如果您在如何开始使用 Arduino 方面有任何问题，请点击[这里](/cn/Getting_Started_with_Seeeduino)获取帮助。
 
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Bluetooth_Shield_V2/img/Bluetooth_ide_1.jpg" alt="pir" width={600} height="auto" /></p>

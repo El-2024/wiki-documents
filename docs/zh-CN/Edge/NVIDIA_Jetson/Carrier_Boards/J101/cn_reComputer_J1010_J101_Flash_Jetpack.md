@@ -101,7 +101,7 @@ no_comments: false # 用于 Disqus
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/5.png" /></div>
 
 :::caution
-Jetson-Nano 上的 SPI 接口默认与 GPIO 复用，且未启用。请参考 [**本指南**](/enable_spi_interface_on_jetsonnano) 了解如何启用它。
+Jetson-Nano 上的 SPI 接口默认与 GPIO 复用，且未启用。请参考 [**本指南**](/cn/enable_spi_interface_on_jetsonnano) 了解如何启用它。
 :::
 
 ## 通过 NVIDIA SDK Manager 刷写 JetPack 操作系统

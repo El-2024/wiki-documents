@@ -21,7 +21,7 @@ sku:
 --- -->
 ![](https://files.seeedstudio.com/wiki/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/Aws_linkit_cover.JPG)
 
-_主要参考：[Grove IoT 入门套件，由 AWS 提供支持](/Grove_IoT_Starter_Kits_Powered_by_AWS"Grove IoT Starter Kits Powered by AWS")，[LinkIt ONE](https://wiki.seeedstudio.com/cn/LinkIt_ONE/ "LinkIt ONE")，[MediaTek AWS IoT 指南](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit/hdk_intro/aws_kit/index.gsp)_
+_主要参考：[Grove IoT 入门套件，由 AWS 提供支持](/cn/Grove_IoT_Starter_Kits_Powered_by_AWS"Grove IoT Starter Kits Powered by AWS")，[LinkIt ONE](https://wiki.seeedstudio.com/cn/LinkIt_ONE/ "LinkIt ONE")，[MediaTek AWS IoT 指南](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit/hdk_intro/aws_kit/index.gsp)_
 
 **LinkIt ONE** 开发板是一款开源、高性能的开发板，专为可穿戴设备和物联网产品原型设计。它基于 MT2502（ARM7EJ-S™ MCU），在单个开发板上集成了 GSM、GPRS、Wi-Fi、蓝牙 BR/EDR/BLE、GPS、音频解码器和 SD 卡连接器。该套件使您能够构建涉及智慧城市、交通运输和物流通信的云计算连接项目。
 
@@ -200,15 +200,15 @@ LinkIt ONE 开发板的 AWS IoT 服务支持可在智能项目和亚马逊的 Io
 
 所需材料：
 
-* [Base Shield v2.0](/Base_Shield_V2)，设置为 3V3（Base shield 板的最角落部分）
+* [Base Shield v2.0](/cn/Base_Shield_V2)，设置为 3V3（Base shield 板的最角落部分）
 
-* [Grove - Touch Sensor](/Grove-Touch_Sensor) 连接到 D6
+* [Grove - Touch Sensor](/cn/Grove-Touch_Sensor) 连接到 D6
 
-* [Grove - LED Bar](/Grove-LED_Bar) 连接到 D2
+* [Grove - LED Bar](/cn/Grove-LED_Bar) 连接到 D2
 
 ### 上传代码
 
-**提示：** 如果出现任何库文件（或头文件）缺失错误，请参考[这里](/Guide_to_use_demos_downloaded_from_Seeed-s_Github)。
+**提示：** 如果出现任何库文件（或头文件）缺失错误，请参考[这里](/cn/Guide_to_use_demos_downloaded_from_Seeed-s_Github)。
 将您的 LinkIt ONE 连接到 PC，记住要先插入 Wi-Fi 天线。打开设备管理器，您会发现有 2 个 COM 端口：
 
 ![](https://files.seeedstudio.com/wiki/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/AWS_LinkIt_starter_kit_find_COM_port.jpg)

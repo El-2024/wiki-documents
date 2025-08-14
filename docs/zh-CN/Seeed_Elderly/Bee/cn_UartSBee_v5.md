@@ -18,7 +18,7 @@ last_update:
 
 **UartSBee v5 是基于 UartSBee v4 的 Mesh Bee 编程器版本。**
 
-请参考 [UartSBee v4 的 wiki 页面](/UartSBee_V4 "UartSBee V4") 了解常规帮助主题。在本 wiki 中，我们将重点介绍 v4 和 v5 之间的区别。
+请参考 [UartSBee v4 的 wiki 页面](/cn/UartSBee_V4 "UartSBee V4") 了解常规帮助主题。在本 wiki 中，我们将重点介绍 v4 和 v5 之间的区别。
 
 新增功能
 --------------
@@ -41,7 +41,7 @@ last_update:
 ---------
 
 - [UartSBee v5 的 Eagle 文件](https://files.seeedstudio.com/wiki/UartSBee_v5/res/UartSBee_v5_eagle_file.zip)
-- [如何编程 Mesh Bee](/Mesh_Bee "Mesh Bee")
+- [如何编程 Mesh Bee](/cn/Mesh_Bee "Mesh Bee")
 
 <!-- 此 Markdown 文件来源于 https://www.seeedstudio.com/wiki/UartSBee_v5 -->
 

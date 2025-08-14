@@ -13,7 +13,7 @@ last_update:
 ![](https://www.seeedstudio.com/blog/wp-content/uploads/2023/03/edge@2x.png)
 
 <div class="embedded_world_container">
-    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/reComputer_J4012_Flash_Jetpack">
+    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/cn/reComputer_J4012_Flash_Jetpack">
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>reComputer J4012, Orin NX 16GB</font></div>
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'FFFFFF'} size={"3"}>经典设计，长期可用，100 TOPS AI 性能，开源载板设计</font></div>
     </a>

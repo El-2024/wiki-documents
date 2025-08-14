@@ -39,7 +39,7 @@ El valor del sensor de luz solamente refleja un aproximado de la intensidad de l
 - Reconoce un amplio espectro
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ### Plataformas Compatibles
 
@@ -100,7 +100,7 @@ Si no tienes la Shield Base - Grove, puedes conectar directamente el módulo Gro
 #### Software
 
 - Paso 1. Descarga la librería [ Grove - LED Bar](https://github.com/Seeed-Studio/Grove_LED_Bar/archive/master.zip) desde GitHub.
-- Paso 2. Refierete a [How to install library](http://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar la librería para el Seeeduino.
+- Paso 2. Refierete a [How to install library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar la librería para el Seeeduino.
 - Paso 3. Copia el código en tu IDE de Arduino y cargalo.
 
 ```c
@@ -144,7 +144,7 @@ void loop()
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega soporte para Arduino, y arrastra un <em>main procedure</em> al área de trabajo.
 
 ¡Nota!:
-Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra bloques como en la siguiente imagen, o abre el archivo cdc que puede ser descargado al final de esta página.
 
@@ -177,7 +177,7 @@ Para el paso 3, puedes conectar el sensor de luz a cualquier **Puerto Analógico
 
 #### Software
 
-- **Paso 1**. Sigue [Setting Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Sigue [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 - **Paso 2**. Descarga el Archivo fuente clonando la librería grove.py.
 
 ```

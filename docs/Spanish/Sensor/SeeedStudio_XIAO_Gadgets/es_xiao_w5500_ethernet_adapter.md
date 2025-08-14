@@ -185,7 +185,7 @@ Una vez que tengas las librerías necesarias instaladas y comprendas las funcion
 
 **Paso 2.** Selecciona el modelo de placa y agrégalo al IDE de Arduino.
 
-- Para usar **Seeed Studio XIAO ESP32-S3 Plus** en los siguientes ejemplos, consulta **[este tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** para completar la configuración.
+- Para usar **Seeed Studio XIAO ESP32-S3 Plus** en los siguientes ejemplos, consulta **[este tutorial](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** para completar la configuración.
 
 **Paso 3.** Materiales necesarios
 

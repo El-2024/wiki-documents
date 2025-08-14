@@ -51,7 +51,7 @@ void loop()
     PORTB |= 0x04;
     delay(1000);
     //关闭振动马达
-    PORTF &amp;= ~(0x01);
+    PORTF &= ~(0x01);
     PORTB |= 0x04;
     delay(1000);
     //打开振动马达
@@ -60,15 +60,15 @@ void loop()
     delay(1000);
     //关闭振动马达
     PORTF |= 0x01;
-    PORTB &amp;= ~(0x04);
+    PORTB &= ~(0x04);
     delay(1000);
     //打开振动马达
     PORTF |= 0x01;
     PORTB |= 0x04;
     delay(1000);
     //关闭振动马达
-    PORTF &amp;= ~(0x01);
-    PORTB &amp;= ~(0x04);
+    PORTF &= ~(0x01);
+    PORTB &= ~(0x04);
     delay(1000);
 }</pre>
 ```

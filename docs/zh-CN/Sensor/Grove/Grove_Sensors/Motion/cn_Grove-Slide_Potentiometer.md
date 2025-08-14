@@ -173,13 +173,13 @@ Grove - 滑动电位器模块集成了一个线性可变电阻器，最大阻值
 
 在选择电源模块方面，您可以使用Grove - USB电源模块或Grove - DC插孔电源模块来构建独立的Grove电路。
 
-<!-- 链接有问题### With [Arduino](/Arduino "Arduino") -->
+<!-- 链接有问题### With [Arduino](/cn/Arduino "Arduino") -->
 
 #### 作为分压器
 
 按照以下简单步骤使滑动电位器模块作为分压器工作：
 
-<!-- 链接有问题1.When using the module in conjunction with an [Arduino](/Arduino "Arduino") or a [Seeeduino](/Seeeduino_v4.2 "Seeeduino"), use the Grove - Base Shield and connect the Grove - Slide Potentiometer module to the shield using a designated Grove Interface (e.g. Analog Port 0 as shown below). -->
+<!-- 链接有问题1.When using the module in conjunction with an [Arduino](/cn/Arduino "Arduino") or a [Seeeduino](/cn/Seeeduino_v4.2 "Seeeduino"), use the Grove - Base Shield and connect the Grove - Slide Potentiometer module to the shield using a designated Grove Interface (e.g. Analog Port 0 as shown below). -->
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove-Slide_Potentiometer/img/Sliding2.JPG) -->
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Slide_Potentiometer/img/Sliding2.JPG" alt="pir" width={600} height="auto" /></p>
@@ -202,7 +202,7 @@ void loop()
 {
     // read the value from the sensor:
     adcIn = analogRead(adcPin);
-    if(adcIn &gt;= 500) digitalWrite(ledPin,HIGH);  // if adc in &gt; 500, led light
+    if(adcIn >= 500) digitalWrite(ledPin,HIGH);  // if adc in > 500, led light
     else digitalWrite(ledPin, LOW);
     Serial.println(adcIn);
     delay(100);
@@ -380,7 +380,7 @@ KeyboardInterrupt
 
 1.您应该有一个树莓派和一个 grovepi 或 grovepi+。
 
-<!-- 链接有问题2.You should have completed configuring the development enviroment, otherwise follow [here](/GrovePi_Plus). -->
+<!-- 链接有问题2.You should have completed configuring the development enviroment, otherwise follow [here](/cn/GrovePi_Plus). -->
 
 3.连接
 

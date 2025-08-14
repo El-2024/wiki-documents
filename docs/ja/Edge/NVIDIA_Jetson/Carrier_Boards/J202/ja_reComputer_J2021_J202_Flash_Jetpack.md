@@ -523,7 +523,7 @@ sudo ./nvmflash.sh --showlogs
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/35.jpg" /></div>
 
 :::note
-より多くのストレージスペースが必要な場合、SDカードを使用して容量を拡張するか、システムをSDカードに書き込むことができます。推奨ソリューションについては、[Flash System on SD card](/J101_Enable_SD_Card) を参照してください。
+より多くのストレージスペースが必要な場合、SDカードを使用して容量を拡張するか、システムをSDカードに書き込むことができます。推奨ソリューションについては、[Flash System on SD card](/ja/J101_Enable_SD_Card) を参照してください。
 :::
 
 ## リソース

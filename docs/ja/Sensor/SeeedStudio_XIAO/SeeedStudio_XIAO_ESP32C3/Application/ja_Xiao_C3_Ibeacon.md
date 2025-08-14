@@ -805,7 +805,7 @@ BLEアドバタイズが検出されない場合：
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio の [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。  
-- 特に [Priyanshu Roy](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=106309063&issue=Seeed-Studio%7Cwiki-documents%7C2422) 氏の献身的な努力に感謝します。あなたの作業は [展示](https://wiki.seeedstudio.com/ja/contributors/) されます。
+- 特に [Priyanshu Roy](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=106309063&issue=Seeed-Studio%7Cwiki-documents%7C2422) 氏の献身的な努力に感謝します。あなたの作業は [展示](https://wiki.seeedstudio.com/contributors/) されます。
 
 ## 技術サポート & 製品ディスカッション
 

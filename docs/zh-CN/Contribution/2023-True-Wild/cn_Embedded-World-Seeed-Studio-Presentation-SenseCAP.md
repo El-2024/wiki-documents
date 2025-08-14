@@ -27,7 +27,7 @@ last_update:
 </div>
 
 <div class="embedded_world_container">
-    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/K1100-Getting-Started">
+    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/cn/K1100-Getting-Started">
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP K1100 - 带有 LoRa® 和 AI 的传感器原型套件</font></div>
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'FFFFFF'} size={"3"}>一个即插即用的工具包，可快速实现世界数字化并释放 AIoT 的潜力</font></div>
     </a>
