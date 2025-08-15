@@ -234,7 +234,7 @@ The nRF Connect SDK (NCS) is an extensible, unified software development kit fro
 
 NCS provides a rich ecosystem of off-the-shelf sample applications, protocol stacks, libraries and hardware drivers designed to simplify the development process and accelerate time-to-market. Its modular and configurable nature gives developers the flexibility to build size-optimized software for memory-constrained devices, as well as powerful functionality for more advanced and complex applications.NCS is an open-source project hosted on GitHub and offers excellent support for integrated development environments such as Visual Studio Code.
 
-### Install With Vsocde
+### Install With Vscode
 
 <details>
 
@@ -395,7 +395,7 @@ To configure your board for nRF Connect in VS Code, you can follow these steps:
 - In the application view, click Add Build Configuration below the application name .
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/config3.png" style={{width:600, height:'auto'}}/></div>
 
-- We can select the model of XIAO nRF54L15 in the Board target, and select the default prj.config file in the Base configuartion files, and finally click `Generate and Build` to build the file.
+- We can select the model of XIAO nRF54L15 in the Board target, and select the default prj.config file in the Base configuration files, and finally click `Generate and Build` to build the file.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/config2.jpg" style={{width:600, height:'auto'}}/></div>
 
@@ -404,7 +404,7 @@ To configure your board for nRF Connect in VS Code, you can follow these steps:
 <Tabs>
 <TabItem  value="window" label="Window" default>
 
-**Aditional Plugins:**
+**Additional Plugins:**
 
 On Windows, we'll use the Chocolatey package manager to install OpenOCD.
 
@@ -443,7 +443,7 @@ choco install openocd
 
 <TabItem value="mac" label="Mac OS" default>
 
-**Aditional Plugins:**
+**Additional Plugins:**
 
 On macOS, we'll use the Homebrew package manager to install the necessary tools.
 
@@ -542,7 +542,7 @@ Please be careful not to short-circuit the positive and negative terminals and b
 :::
 
 
-### Battery Voltage Detectio
+### Battery Voltage Detection
 
 The XIAO nRF54L15 integrates a battery voltage detection feature that centers on efficiently managing battery power measurements using the TPS22916CYFPR load switch. This guide will focus on analyzing the software implementation of the battery detection **(especially the main.c code)** and guide you on how to easily deploy and use this feature in a PlatformIO environment, avoiding the complexity of the Zephyr NCS SDK.
 
@@ -761,7 +761,7 @@ The light comes on once every time you press a key
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/button.gif" style={{width:400, height:'auto'}}/></div>
 
 
-## Power-Consumpitons Code Example for XIAO nRF54L15 (PlatformIO)
+## Power-Consumptions Code Example for XIAO nRF54L15 (PlatformIO)
 
 The following sample code is designed for PlatformIO, but it is also compatible with the nRF Connect SDK.
 
