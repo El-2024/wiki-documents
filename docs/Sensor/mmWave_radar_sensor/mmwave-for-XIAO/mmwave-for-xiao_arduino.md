@@ -108,6 +108,10 @@ After confirming that the connection direction is correct, you can connect the U
 
 Since the default baud rate used by the sensor is 256000, and the baud rate of the soft serial port designed by XIAO may not be able to satisfy such a high speed baud rate data transmission, we need to use software to adjust the baud rate of the sensor before using the sensor. Then, please download the corresponding APP according to the mobile phone system you are using.
 
+:::note
+The APP cannot read the baud rate. Even after modification, the APP still displays the default baud rate.
+:::
+
 - [Download HLKRadarTool from the Google Play](https://play.google.com/store/apps/details?id=com.hlk.hlkradartool).
 
 - [Download HLKRadarTool from the App Store](https://apps.apple.com/us/app/hlkradartool/id1638651152).
