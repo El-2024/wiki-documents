@@ -97,7 +97,7 @@ Seeed Studio 仅对硬件本身的质量负责。教程严格按照官方文档�
 **对于 Jetson Orin:**
 - Jetson JetPack 6.2  
 - Python 3.10  
-- Torch 2.6  
+- Torch 2.3+  
 
 **对于树莓派:**
 - 树莓派5 4G~16G
