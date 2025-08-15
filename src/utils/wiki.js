@@ -1,9 +1,23 @@
 const docList = [
   [
     {
+      "path": "/solutions/jetson-crowd-tracking",
+      "image": "https://files.seeedstudio.com/wiki/solution/crowd_tracking/crowd%20tracking.webp",
+      "title": "🚀 SenseCraft AI Server - Jetson Deployment Guide",
+      "date": "08/15/2025"
+    },
+    {
       "path": "/sensecraft-ai/tutorials/workspace/abnormal-vibration-detection",
       "image": "https://files.seeedstudio.com/wiki/SenseCraft/SenseCraft_AI/Intro_image_title.webp",
       "title": "Vibration Anomaly Detection",
+      "date": "08/14/2025"
+    }
+  ],
+  [
+    {
+      "path": "/deploy_gptoss_on_jetson",
+      "image": "https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png",
+      "title": "GPT-OSS Running Live on reComputer Jetson!",
       "date": "08/14/2025"
     },
     {
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/image-_J4011-3.webp",
       "title": "reComputer Robotics Hardware and Interfaces Usage",
       "date": "08/06/2025"
-    }
-  ],
-  [
-    {
-      "path": "/starai_arm_ros_moveit",
-      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.webp",
-      "title": "Starai Arm Manipulator - ROS2 MoveIt Guide",
-      "date": "8/1/2025"
-    },
-    {
-      "path": "/simulate_soarm101_by_leisaac",
-      "image": "https://files.seeedstudio.com/wiki/robotics/isaac_lab/simulate_soarm101_by_leisaac.webp",
-      "title": "Get started with Lightwheel LeIsaac — Open-source workflow combining Hugging Face LeRobot x GR00T N1.5 x Isaac Sim!",
-      "date": "8/1/2025"
     }
   ]
 ];

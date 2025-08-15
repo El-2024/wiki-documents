@@ -4290,7 +4290,7 @@ const sidebars = {
       ],
     },
     {
-      type: 'category',
+      type: 'category', 
       label: 'Mission Pack',
       items:[
         {
@@ -4299,6 +4299,7 @@ const sidebars = {
         }
       ],
     },
+    'Solutions/Jetson_Crowd_Tracking',
     // END OF Solution
 
     {

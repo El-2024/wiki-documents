@@ -1,15 +1,14 @@
 ---
 description: Introduces an AI demo of Jetson crowd tracking
 title: Jetson Crowd Tracking
-image: https://files.seeedstudio.com/wiki/SenseCraft/SenseCraft_AI/Intro_image_title.webp
+image: https://files.seeedstudio.com/wiki/solution/crowd_tracking/crowd%20tracking.webp
 slug: /solutions/jetson-crowd-tracking
-sidebar_position: 1
 last_update:
   date: 08/15/2025
   author: lian
 ---
 
-# 🚀 SenseCraft AI Server - Jetson Deployment Guide
+# SenseCraft AI Server - Jetson Deployment Guide
 
 This guide is for **NVIDIA Jetson Ubuntu 22 + JetPack 6.x** environments, helping you quickly complete the deployment.
 
@@ -175,3 +174,17 @@ rm -rf ~/sensecraft-ai_server
 - [SenseCraft-AI\_Server Source Repository](https://github.com/Seeed-Studio/SenseCraft-AI_Server/tree/jetson)
 - [NVIDIA Jetson Docker Guide](https://www.jetson-ai-lab.com/tips_ssd-docker.html)
 - [Mosquitto Official Documentation](https://mosquitto.org/man/mosquitto-conf-5.html)
+
+## Tech Support & Product Discussion
+
+Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+
+<div class="button_tech_support_container">
+<a href="https://discord.com/invite/QqMgVwHT3X" class="button_tech_support_sensecap"></a>
+<a href="https://support.sensecapmx.com/portal/en/home" class="button_tech_support_sensecap3"></a>
+</div>
+
+<div class="button_tech_support_container">
+<a href="mailto:support@sensecapmx.com" class="button_tech_support_sensecap2"></a>
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+</div>
