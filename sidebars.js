@@ -4091,7 +4091,7 @@ const sidebars = {
                   'Robotics/Robot_Sensor/Lidar/MID360',
                   'Robotics/Robot_Sensor/Lidar/A_Loam',
                   'Robotics/Robot_Sensor/Lidar/SLAMTEC',
-                    ]},
+                ]},
             {
               type: 'category',
               label: 'Camera',
@@ -4101,8 +4101,9 @@ const sidebars = {
                 // },
                 items: [
                   'Robotics/Robot_Sensor/Camera/Orbbec_Depth_Camera',
+                  'Robotics/Robot_Sensor/Camera/Orbbec_Gemini_335Lg',
                   'Robotics/Robot_Sensor/Camera/CSI_Camera'
-                    ]},
+                ]},
             {
               type: 'category',
               label: 'IMU',
