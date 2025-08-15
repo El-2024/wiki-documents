@@ -10711,6 +10711,10 @@
   "/mission_pack_features_v3":[
     "cn",
     "en",
+  ],
+  "/solutions/jetson-crowd-tracking":[
+    "cn",
+    "en",
   ]
 };
 
