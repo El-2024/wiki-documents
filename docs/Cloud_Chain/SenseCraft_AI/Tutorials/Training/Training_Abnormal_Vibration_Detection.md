@@ -3,7 +3,7 @@ description: Introduces the use of abnormal vibration detection.
 title: Abnormal Vibration Detection
 image: https://files.seeedstudio.com/wiki/SenseCraft/SenseCraft_AI/Intro_image_title.webp
 slug: /sensecraft-ai/tutorials/workspace/abnormal-vibration-detection
-sidebar_position: 2
+sidebar_position: 1
 last_update:
   date: 08/14/2025
   author: lian

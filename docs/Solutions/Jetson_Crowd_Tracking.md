@@ -83,6 +83,8 @@ The script automatically performs the following steps:
 ### 📷 Command Line Output (Example)
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Command%20Line%20Output%20%28Example%29.png"/></div>
 
+
+
 2. **Access the main page**  
    - In your browser:  
      ```
