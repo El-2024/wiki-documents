@@ -1,6 +1,6 @@
 ---
 description: Introduces an AI demo of Jetson crowd tracking
-title: Jetson Crowd Tracking
+title: Crowd Tracking & Counting
 image: https://files.seeedstudio.com/wiki/solution/crowd_tracking/crowd%20tracking.webp
 slug: /solutions/jetson-crowd-tracking
 last_update:
@@ -8,11 +8,7 @@ last_update:
   author: lian
 ---
 
-# SenseCraft AI Server - Jetson Deployment Guide
-
 This guide is for **NVIDIA Jetson Ubuntu 22 + JetPack 6.x** environments, helping you quickly complete the deployment.
-
----
 
 ## 📋 Environment Requirements
 
@@ -22,9 +18,7 @@ This guide is for **NVIDIA Jetson Ubuntu 22 + JetPack 6.x** environments, helpin
 - **Permissions**: `sudo` privileges
 
 > If your device is not yet installed with the proper system environment, please refer to the official flashing guide for system installation and environment preparation:  
-> [JetPack Flashing Tutorial (Seeed Studio)](https://wiki.seeedstudio.com/flash/jetpack_to_selected_product/)
-
----
+> [JetPack Flashing Tutorial (Seeed Studio)](/flash/jetpack_to_selected_product/)
 
 ## ⚡ One-Click Deployment
 
@@ -35,8 +29,6 @@ curl -fsSL https://raw.githubusercontent.com/Seeed-Studio/SenseCraft-AI_Server/r
 ```
 
 > 💡 The script supports **idempotent execution**, meaning it is safe to run multiple times.
-
----
 
 ## 🔍 Deployment Process
 
@@ -52,7 +44,7 @@ The script automatically performs the following steps:
    - Install `mosquitto` and `mosquitto-clients`  
    - Configure to allow external access:  
 
-     ```
+     ```shell
      listener 1883 0.0.0.0
      allow_anonymous true
      ```
@@ -76,62 +68,74 @@ The script automatically performs the following steps:
 ## 🖥 Starting & Accessing the Service
 
 1. **Start the service**  
+
    ```bash
    cd ~/sensecraft-ai_server
    sudo bash scripts/run.sh
    ```
+
 ### 📷 Command Line Output (Example)
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Command%20Line%20Output%20%28Example%29.png"/></div>
 
-
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Command%20Line%20Output%20%28Example%29.png" alt="Command"/></div>
 
 2. **Access the main page**  
    - In your browser:  
-     ```
+
+     ```bash
      http://<JETSON_IP>:46654
      ```
+
    - Default parameters are preconfigured; start to see results
 
 ### 📷 Web Interface (Example)
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Web%20Interface%20%28Example%29.png"/></div>
 
 3. **Access the configuration page**  
    - In your browser:  
-     ```
+
+     ```bash
      http://<JETSON_IP>:46654/config.html
      ```
+
    - Here you can adjust video sources, models, inference parameters, etc., and save them to the server
 
----
-
 ## ⚙ Configuration Page Overview
+
 ### 📷 Configuration Page (Example)
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Configuration%20Page%20%28Example%29.png"/></div>
+
+<div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Configuration%20Page%20%28Example%29.png"/></div>
 
 ### Video Source
+
 - Supports **local video files**, **USB cameras** (default first device), **RTSP streams**
 - Supports MP4, AVI, MOV, MKV uploads
 - View and delete uploaded video sources
 
 ### AI Model
+
 - Select from available AI inference models
 - Supports `.pt`, `.pth`, `.onnx`, `.engine` formats
 - View and delete uploaded models
 
 ### Inference Parameters
+
 - **Confidence threshold**: 0.1–1.0
 - **Max detections**: 1–1000
 - **Half-precision inference**: boosts speed (minimal difference for small models)
 
 ### Display
+
 - Show detection boxes (customizable color, default orange)
 - Timestamp & FPS always enabled
 
 ### Tracking
+
 - Enable multi-object tracking
 - Show trajectory lines with customizable length, thickness, and color
 
 ### Tripwire Detection
+
 - Supports horizontal or vertical tripwire (vertical recommended)
 - Draw start/end points; enable display for real-time debugging
 - Tolerance: 1–20 pixels
@@ -139,6 +143,7 @@ The script automatically performs the following steps:
 - Show/hide and reset counter (resets when service restarts)
 
 ### Configuration Management
+
 - Save current config to the server (loaded at runtime)
 - Export/import configuration files
 - Restore default settings
@@ -172,7 +177,7 @@ rm -rf ~/sensecraft-ai_server
 
 ## 📚 References
 
-- [Jetson Flashing Guide](https://wiki.seeedstudio.com/flash/jetpack_to_selected_product/)
+- [Jetson Flashing Guide](/flash/jetpack_to_selected_product/)
 - [SenseCraft-AI\_Server Source Repository](https://github.com/Seeed-Studio/SenseCraft-AI_Server/tree/jetson)
 - [NVIDIA Jetson Docker Guide](https://www.jetson-ai-lab.com/tips_ssd-docker.html)
 - [Mosquitto Official Documentation](https://mosquitto.org/man/mosquitto-conf-5.html)

@@ -4299,7 +4299,7 @@ const sidebars = {
         }
       ],
     },
-    'Solutions/Jetson_Crowd_Tracking',
+    'Solutions/jetson-crowd-tracking',
     // END OF Solution
 
     {
@@ -8838,6 +8838,7 @@ const sidebars = {
         }
       ],
     },
+    'zh-CN/Solutions/jetson-crowd-tracking',
     // END OF Solutions
 
     {

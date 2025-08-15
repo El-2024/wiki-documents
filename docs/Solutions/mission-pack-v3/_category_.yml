@@ -1,5 +1,5 @@
-position: 3
-label: 'Mission Pack'
+position: 9
+label: 'Hazard Response'
 collapsible: true
 collapsed: true
-className: _mission-pack
+className: _mission-pack-v3
