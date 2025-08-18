@@ -192,8 +192,8 @@ esphome:
   friendly_name: respeaker-lite-new
   project: 
     name: formatbce.Respeaker Lite Satellite
-    version: 2025.2.2
-  min_version: 2025.2.0
+    version: 2025.7.0
+  min_version: 2025.6.2
   on_boot:
     - priority: 375
       then:
