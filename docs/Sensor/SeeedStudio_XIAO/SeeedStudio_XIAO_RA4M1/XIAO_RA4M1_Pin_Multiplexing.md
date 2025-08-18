@@ -522,7 +522,7 @@ Overall, this code demonstrates how to use the U8g2 library to control an OLED d
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/15.png" style={{width:700, height:'auto'}}/></div>
 
 
-## CAN
+## CAN(XIAO CAN Bus Expansion Board)
 
 ### Hadware Preparation
 
@@ -769,6 +769,149 @@ In this example , you need to solder one of the CAN Bus Breakout Board terminal 
 :::
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/30.png" style={{width:600, height:'auto'}}/></div>
+
+
+## CAN(Other transceiver)
+We would like to thank [Arduino](https://docs.arduino.cc/tutorials/uno-r4-minima/can/) for providing the tutorials and code.
+
+### Hardware Preparation
+The CAN protocol requires that the sending end must receive the message it sends. Simply connecting TX and RX is not enough to complete communication; a transceiver must be connected for communication. Here, we use the official Arduino **SN65HVD230 splitter module**.
+
+<table>
+    <thead>
+        <tr>
+            <th>3.3 V</th>
+            <th>GND</th>
+            <th>D9(CANRX0)</th>
+            <th>D10 (CANTX0)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>VCC</th>
+            <td>GND</td>
+            <th>CANRX</th>
+            <td>CANTX</td>
+        </tr>
+    </tbody>
+</table>
+
+
+### Software Preparation
+**CAN Write Code**
+```cpp
+/*
+  CANWrite
+
+  Write and send CAN Bus messages
+
+  See the full documentation here:
+  https://docs.arduino.cc/tutorials/uno-r4-wifi/can
+*/
+
+/**************************************************************************************
+ * INCLUDE
+ **************************************************************************************/
+
+#include <Arduino_CAN.h>
+
+/**************************************************************************************
+ * CONSTANTS
+ **************************************************************************************/
+
+static uint32_t const CAN_ID = 0x20;
+
+/**************************************************************************************
+ * SETUP/LOOP
+ **************************************************************************************/
+
+void setup()
+{
+  Serial.begin(115200);
+  while (!Serial) { }
+
+  if (!CAN.begin(CanBitRate::BR_250k))
+  {
+    Serial.println("CAN.begin(...) failed.");
+    for (;;) {}
+  }
+}
+
+static uint32_t msg_cnt = 0;
+
+void loop()
+{
+  /* Assemble a CAN message with the format of
+   * 0xCA 0xFE 0x00 0x00 [4 byte message counter]
+   */
+  uint8_t const msg_data[] = {0xCA,0xFE,0,0,0,0,0,0};
+  memcpy((void *)(msg_data + 4), &msg_cnt, sizeof(msg_cnt));
+  CanMsg const msg(CanStandardId(CAN_ID), sizeof(msg_data), msg_data);
+
+  /* Transmit the CAN message, capture and display an
+   * error core in case of failure.
+   */
+  if (int const rc = CAN.write(msg); rc < 0)
+  {
+    Serial.print  ("CAN.write(...) failed with error code ");
+    Serial.println(rc);
+    for (;;) { }
+  }
+
+  /* Increase the message counter. */
+  msg_cnt++;
+
+  /* Only send one message per second. */
+  delay(1000);
+}
+
+```
+
+**CAN Read Code**
+```cpp
+/*
+  CANRead
+
+  Receive and read CAN Bus messages
+
+  See the full documentation here:
+  https://docs.arduino.cc/tutorials/uno-r4-wifi/can
+*/
+
+/**************************************************************************************
+ * INCLUDE
+ **************************************************************************************/
+
+#include <Arduino_CAN.h>
+
+/**************************************************************************************
+ * SETUP/LOOP
+ **************************************************************************************/
+
+void setup()
+{
+  Serial.begin(115200);
+  while (!Serial) { }
+
+  if (!CAN.begin(CanBitRate::BR_250k))
+  {
+    Serial.println("CAN.begin(...) failed.");
+    for (;;) {}
+  }
+}
+
+void loop()
+{
+  if (CAN.available())
+  {
+    CanMsg const msg = CAN.read();
+    Serial.println(msg);
+  }
+}
+
+```
+
+
 
 ***When do I need to connect the terminal resistor?***
 - 1. Long distance communication: If the CAN bus is long (e.g. more than 1 meter), terminal resistors must be connected at both ends of the bus to avoid communication problems caused by signal reflection.
