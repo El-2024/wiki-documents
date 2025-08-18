@@ -318,7 +318,7 @@ To control the ePaper display, we'll use the Seeed_GFX library, which provides c
 If you have previously installed the TFT_eSPI library, you may need to temporarily remove or rename it from your Arduino libraries folder to avoid conflicts, as Seeed_GFX is a fork of TFT_eSPI with additional features.
 :::
 
-**Step 3.** Open the example sketch from the Seeed_GFX library: **File > Examples > Seeed_GFX > ePaper > Basic > Clock**
+**Step 3.** Open the example sketch from the Seeed_GFX library: **File > Seeed_GFX > Examples > ePaper > Basic > Clock**
 
 **Step 4.** Create a new file named `driver.h` in the same folder as your Arduino sketch by clicking on the arrow next to the example tab and selecting "New Tab".
 
