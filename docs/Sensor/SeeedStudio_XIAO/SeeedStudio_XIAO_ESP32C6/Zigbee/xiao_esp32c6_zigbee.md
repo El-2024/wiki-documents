@@ -43,7 +43,7 @@ In this tutorial we will use **two** XIAO ESP32C6s as examples to explain Zigbee
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
-        " target="_blank" rel="noopener noreferrer">
+        " target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 				</a>
 			</div></td>

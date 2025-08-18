@@ -32,12 +32,12 @@ Seeed Studio XIAO ESP32S3 是一款功能强大的开发板，支持蓝牙 5、B
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank" rel="noopener noreferrer">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a>
       </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a>
       </div></td>
@@ -513,22 +513,22 @@ pAdvertising->start();
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>

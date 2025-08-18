@@ -37,7 +37,7 @@ Grove is a modular, standardized connector prototyping system. Compared to syste
 The Base unit, generally a microprocessor, allows for easy connection of any input or output from the Grove modules. Each Grove module typically addresses a single function, such as a simple button or a more complex heart rate sensor. You don't need a Base unit to connect to others Grove modules. You can use a cable (Grove to Pin Header Converter) to run from the pins on the Raspberry Pi or Arduino to the Grove connectors.
 
 <!-- <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> Grow Your Idea</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> Grow Your Idea</font></span></strong>
     </a>
 </div> -->
 
@@ -53,7 +53,7 @@ The Grove ecosystem offers a wide range of sensors that can be easily integrated
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/Grove_Sensor_Intro/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong></a>
 </div>
 
 ### <span id="jump4"> Grove Network Modules</span>
@@ -64,7 +64,7 @@ With Grove network modules, you can easily add wireless capabilities to your pro
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/Grove_network_module_intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong></a>
 </div>
 
 ### <span id="jump5"> Grove Accessories </span>
@@ -73,7 +73,7 @@ In addition to sensors and network modules, the Grove ecosystem offers a variety
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/Grove_Accessories_Intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong></a>
 </div>
 
 <!-- - [Grove Sensor](/Grove_Sensor_Intro)
@@ -113,9 +113,9 @@ The Grove interface is designed to be compatible with a wide range of developmen
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Base-Shield-V2.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/CH-BitMaker-V2-p-5330.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Base-Shield-V2.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/CH-BitMaker-V2-p-5330.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -184,7 +184,7 @@ For more acknowledged boards supporting Grove interfaces, like Raspberry Pi, Pi 
 <!-- <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/Grove_Accessories_Intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong>
     </a>
 </div> -->
 
@@ -296,7 +296,7 @@ Seeed Studio Fusion has launched a Grove Sensor Co-brand Campaign to help engine
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Apply Now</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 More Information</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 More Information</font></span></strong></a>
 </div>
 
 ### <span id="jump9"> Grove Cables </span>

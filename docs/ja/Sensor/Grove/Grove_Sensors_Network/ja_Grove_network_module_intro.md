@@ -50,7 +50,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove_LoRa_E5_New_Version/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -70,7 +70,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Blueseeed-Dual-model-HM13.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Blueseeed-Dual-model-HM13.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-BLE-dual_model-v1.0/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -88,7 +88,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Serial-Blueseeed-CSR-BC417.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Serial-Blueseeed-CSR-BC417.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-Serial_Bluetooth_v3.0/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -106,7 +106,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Blueseeed-HM11.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Blueseeed-HM11.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-BLE_v1/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -126,7 +126,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-UART-WiFi-V2-ESP8285.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-UART-WiFi-V2-ESP8285.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-UART_Wifi_V2/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -146,7 +146,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC-ST25DV64KC-p-5688.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC-ST25DV64KC-p-5688.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/grove-nfc-st25dv64/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -164,7 +164,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove_NFC/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -182,7 +182,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC-Tag-p-1866.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC-Tag-p-1866.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove_NFC_Tag/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -202,7 +202,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GPS-Module.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GPS-Module.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-GPS/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -220,7 +220,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-GPS-Air530/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -244,7 +244,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-125KHz-RFID-Reader.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-125KHz-RFID-Reader.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-125KHz_RFID_Reader/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -262,7 +262,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-315MHz-Simple-RF-Link-Kit.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-315MHz-Simple-RF-Link-Kit.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-315MHz_RF_Kit/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -280,7 +280,7 @@ Groveネットワークモジュールには、IoTプロジェクト、ワイヤ
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-433MHz-Simple-RF-link-kit-p-1062.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-433MHz-Simple-RF-link-kit-p-1062.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-433MHz_Simple_RF_Link_Kit/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -302,8 +302,8 @@ Groveは、Seeed Studioによって開発された非常に強力なプラット
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-Radio-433MHz-p-2777.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a></div></td>
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-Radio-868MHz.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-Radio-433MHz-p-2777.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-Radio-868MHz.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -327,7 +327,7 @@ Groveは、Seeed Studioによって開発された非常に強力なプラット
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Serial-RF-Pro.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Serial-RF-Pro.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-Serial_RF_Pro/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -348,7 +348,7 @@ Groveは、Seeed Studioによって開発された非常に強力なプラット
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-DMX512.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-DMX512.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-DMX512/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -368,7 +368,7 @@ Groveは、Seeed Studioによって開発された非常に強力なプラット
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-ADC.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-ADC.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-I2C_ADC/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -389,8 +389,8 @@ Grove - I2C FM Receiverは広帯域FM受信モジュールで、このモジュ�
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-FM-Receiver.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a></div></td>
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-FM-Receiver-v1-1.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-FM-Receiver.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-FM-Receiver-v1-1.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -414,7 +414,7 @@ Grove - I2C FM Receiverは広帯域FM受信モジュールで、このモジュ�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Protoshield.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Protoshield.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-Protoshield/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -432,7 +432,7 @@ Grove - I2C FM Receiverは広帯域FM受信モジュールで、このモジュ�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RJ45-Adapter.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RJ45-Adapter.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="/ja/Grove-RJ45_Adapter/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -447,7 +447,7 @@ Seeed Studio Fusionは、エンジニアが自身のGroveデザインを実際�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ申し込む</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細情報</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細情報</font></span></strong></a>
 </div>
 
 

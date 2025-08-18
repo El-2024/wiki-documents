@@ -42,7 +42,7 @@ SenseCAP S2110 传感器构建器是一个突破性的解决方案，能够融�
 
 该产品配有 IP66 工业级外壳以及安装垫和螺丝套件，使您能够轻松安全地在户外部署传感器。
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong></a> <a class="get_one_now_item" href="https://www.seeedstudio.com/sensecap-outdoor-lorawan-sensor-kit-based-on-grove-p-5503.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 获取 LoRaWAN 套件 🖱️</font></span></strong></a> </div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong></a> <a class="get_one_now_item" href="https://www.seeedstudio.com/sensecap-outdoor-lorawan-sensor-kit-based-on-grove-p-5503.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 获取 LoRaWAN 套件 🖱️</font></span></strong></a> </div>
 
 ## 使用不同方式开始使用 Builder
 
@@ -54,7 +54,7 @@ SenseCAP S2110 传感器构建器是一个突破性的解决方案，能够融�
 
 您可以使用 Grove 传感器构建一个定制的、经济高效的工业级 LoRaWAN 传感器，通过 SenseCAP Data Logger 连接到 SenseCAP Cloud，实现长距离无线数据传输。
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即获取 </font></span></strong></a> </div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即获取 </font></span></strong></a> </div>
 
 ### 添加更多工业级 LoRaWAN Grove 传感器
 

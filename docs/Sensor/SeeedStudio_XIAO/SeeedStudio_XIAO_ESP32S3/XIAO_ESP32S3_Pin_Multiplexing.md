@@ -27,12 +27,12 @@ last_update:
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
@@ -108,22 +108,22 @@ The XIAO ESP32S3 has up to 11 regular GPIO pins and 9 analog pins. In this examp
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
@@ -210,12 +210,12 @@ For the actual circuit schematic, please refer to the following diagram:
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
@@ -271,22 +271,22 @@ All GPIO pins on XIAO ESP32S3 support PWM output. Therefore, you can use any pin
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Variable-Color-LED-p-852.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Variable-Color-LED-p-852.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
@@ -351,22 +351,22 @@ On XIAO ESP32S3, among the 11 built-in GPIO pins, except for D6 and D7 pins used
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Oxygen-Sensor-ME2-O2-f20.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Oxygen-Sensor-ME2-O2-f20.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
@@ -672,17 +672,17 @@ Please be prepared for the following.
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/60GHz-mmWave-Radar-Sensor-Breathing-and-Heartbeat-Module-p-5305.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/60GHz-mmWave-Radar-Sensor-Breathing-and-Heartbeat-Module-p-5305.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
@@ -811,17 +811,17 @@ XIAO ESP32S3 has an I2C interface that can be used for data transmission and par
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
@@ -894,17 +894,17 @@ The ESP32-S3 chip integrates multiple peripherals, including an SPI interface th
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>

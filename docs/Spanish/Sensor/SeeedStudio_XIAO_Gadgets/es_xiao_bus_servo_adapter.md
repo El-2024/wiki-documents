@@ -33,12 +33,12 @@ Consulta el resto de esta guía para detalles sobre configuración y uso de ambo
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html" target="_blank" rel="noopener noreferrer">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
           </a>
       </div></td>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-Bus-Servo-Adapter-for-XIAO-p-6397.html" target="_blank" rel="noopener noreferrer">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-Bus-Servo-Adapter-for-XIAO-p-6397.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
           </a>
       </div></td>

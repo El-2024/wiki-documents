@@ -46,7 +46,7 @@ SenseCAP S2110 センサービルダーは、産業用モジュールとメー�
 
 この製品はIP66産業用エンクロージャに加え、取り付けパッドとネジセットが付属しており、センサーを屋外に簡単かつ安全に展開することができます。
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a> <a class="get_one_now_item" href="https://www.seeedstudio.com/sensecap-outdoor-lorawan-sensor-kit-based-on-grove-p-5503.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> LoRaWAN キットを購入 🖱️</font></span></strong></a> </div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a> <a class="get_one_now_item" href="https://www.seeedstudio.com/sensecap-outdoor-lorawan-sensor-kit-based-on-grove-p-5503.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> LoRaWAN キットを購入 🖱️</font></span></strong></a> </div>
 
 ## Builder をさまざまな方法で始める
 
@@ -58,7 +58,7 @@ SenseCAP S2110 センサービルダーは、産業用モジュールとメー�
 
 Grove センサーを使用して、カスタムでコスト効率の高い産業用グレードの LoRaWAN センサーを構築し、SenseCAP データロガーを使用して SenseCAP Cloud に接続することで、長距離のワイヤレスデータ伝送を可能にします。
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a> </div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a> </div>
 
 ### 産業用グレードの LoRaWAN Grove センサーを追加
 

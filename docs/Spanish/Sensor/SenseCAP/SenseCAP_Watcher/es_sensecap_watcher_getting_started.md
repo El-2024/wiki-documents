@@ -14,7 +14,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/watcherKS.jpg" style={{width:1000, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Watcher-W1-A-p-5979.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Watcher-W1-A-p-5979.html" target="_blank">
         <strong><span><font color={'FFFFFF'} size={"4"}> Comprar Ahora</font></span></strong>
     </a>
     <a class="get_one_now_item" href="https://www.youtube.com/watch?v=ny22Z0cAIqE" target="_blank" rel="noopener noreferrer">
@@ -61,7 +61,7 @@ Por favor usa un adaptador de corriente compatible con Watcher; el Watcher debe 
 La tabla muestra las especificaciones recomendadas del adaptador. Si no sabes dónde comprar el adaptador correcto, puedes adquirirlo directamente en el siguiente enlace:
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/USB-Power-Adapter-for-Raspberry-Pi-4-5V-3A-p-4089.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/USB-Power-Adapter-for-Raspberry-Pi-4-5V-3A-p-4089.html" target="_blank">
         <strong><span><font color={'FFFFFF'} size={"4"}> Comprar Ahora 🖱️</font></span></strong>
     </a>
 </div>

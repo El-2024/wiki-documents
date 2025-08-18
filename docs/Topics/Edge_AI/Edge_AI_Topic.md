@@ -23,7 +23,7 @@ We are looking forward to leveraging local and global resources to accelerate ne
 
 <br/>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/nvidia-jetson.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>🖱️ Products Purchase</font></span></strong></a>  <a class="get_one_now_item" href="https://files.seeedstudio.com/products/NVIDIA/NVIDIA-Jetson-Devices-and-carrier-boards-comparision.pdf" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Comparison</font></span></strong></a></div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/nvidia-jetson.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>🖱️ Products Purchase</font></span></strong></a>  <a class="get_one_now_item" href="https://files.seeedstudio.com/products/NVIDIA/NVIDIA-Jetson-Devices-and-carrier-boards-comparision.pdf" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Comparison</font></span></strong></a></div>
 
 
 ----
@@ -253,7 +253,7 @@ We are looking forward to leveraging local and global resources to accelerate ne
 
 <br/>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/raspberrypi.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>🖱️ Products Purchase</font></span></strong></a>  <a class="get_one_now_item" href="https://wiki.seeedstudio.com/CVEDIA-Jetson-Getting-Started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Comparison</font></span></strong></a></div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/raspberrypi.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>🖱️ Products Purchase</font></span></strong></a>  <a class="get_one_now_item" href="https://wiki.seeedstudio.com/CVEDIA-Jetson-Getting-Started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Comparison</font></span></strong></a></div>
 
 ----
 

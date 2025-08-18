@@ -36,17 +36,17 @@ import TabItem from '@theme/TabItem';
   </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
@@ -112,17 +112,17 @@ XIAO MG24(Sense)上的所有GPIO引脚都支持PWM输出。因此，您可以使
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Variable-Color-LED-V1-1.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Variable-Color-LED-V1-1.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
@@ -193,22 +193,22 @@ XIAO MG24(Sense) 开发板具有 12 位 ADC，可高分辨率读取模拟传感�
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Variable-Color-LED-V1-1.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Variable-Color-LED-V1-1.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
@@ -430,12 +430,12 @@ XIAO MG24(Sense) 具有一个 I2C 接口，可用于许多传感器的数据传�
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     		</a>
 		</div></td>
@@ -548,12 +548,12 @@ XIAO MG24(Sense) 芯片集成了多个外设，包括一个 SPI 接口，可用�
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank" rel="noopener noreferrer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-MG24-Sense-p-6248.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/1-69inch-240-280-Resolution-IPS-LCD-Display-Module-p-5755.html" target="_blank" rel="noopener noreferrer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/1-69inch-240-280-Resolution-IPS-LCD-Display-Module-p-5755.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>

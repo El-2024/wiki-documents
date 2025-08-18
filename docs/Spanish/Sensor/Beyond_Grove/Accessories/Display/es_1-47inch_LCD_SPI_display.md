@@ -15,7 +15,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/lcd_spi_display/1.png" style={{width:500, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/1-47inch-172x320-Resolution-LCD-Display-Module-p-5756.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/1-47inch-172x320-Resolution-LCD-Display-Module-p-5756.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
     </a>
 </div><br />
@@ -97,12 +97,12 @@ Aquí te mostraremos cómo utilizar la placa XIAO nRF52840, que cuenta con IMU d
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html" target="_blank" rel="noopener noreferrer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/1-47inch-172x320-Resolution-LCD-Display-Module-p-5756.html" target="_blank" rel="noopener noreferrer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/1-47inch-172x320-Resolution-LCD-Display-Module-p-5756.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
 				</a>
 			</div></td>

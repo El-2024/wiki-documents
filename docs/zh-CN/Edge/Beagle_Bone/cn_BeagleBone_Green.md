@@ -17,7 +17,7 @@ Seeed Studio BeagleBone® Green 是一个低成本、开源、社区支持的开
 在不到 10 秒内启动 Linux，并通过一根 USB 数据线在不到 5 分钟内开始开发。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-p-2504.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-p-2504.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
     </a>
 </div>

@@ -44,17 +44,17 @@ Mientras tanto, por favor reemplaza este archivo yendo a **Arduino15/packages/rp
   </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
@@ -110,17 +110,17 @@ Todos los pines GPIO en el XIAO RP2350 soportan salida PWM. Por lo tanto, puedes
   </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
@@ -186,17 +186,17 @@ A continuación, elegiremos dos sensores para reflejar las características del 
   </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Loudness-Sensor.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Loudness-Sensor.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
@@ -329,17 +329,17 @@ El XIAO RP2350 tiene una interfaz I2C que se puede usar para la transmisión de 
   </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
         </a>
     </div></td>
@@ -465,12 +465,12 @@ El chip XIAO RP2350 integra múltiples periféricos, incluyendo una interfaz SPI
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
     		</a>
 		</div></td>

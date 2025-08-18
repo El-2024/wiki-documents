@@ -30,7 +30,7 @@ last_update:
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
           </a>
       </div></td>
@@ -61,7 +61,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/ov5640.gif" style={{width:500, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/OV5640-Camera-for-XIAO-ESP32S3-Sense-With-Heat-Sink-p-5739.html" target="_blank" rel="noopener noreferrer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/OV5640-Camera-for-XIAO-ESP32S3-Sense-With-Heat-Sink-p-5739.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 </div>
@@ -680,12 +680,12 @@ if(camera_sign && sd_sign){
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
           </a>
       </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-Round-Display-for-XIAO-p-5638.html" target="_blank" rel="noopener noreferrer">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-Round-Display-for-XIAO-p-5638.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
           </a>
       </div></td>
@@ -1345,7 +1345,7 @@ XIAO ESP32S3 如果您长时间执行此项目，请注意散热，XIAO会变得
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/OV5640-Camera-for-XIAO-ESP32S3-Sense-With-Heat-Sink-p-5739.html?qid=UXYOXT_08tfc9pt_1746512260418" target="_blank" rel="noopener noreferrer">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/OV5640-Camera-for-XIAO-ESP32S3-Sense-With-Heat-Sink-p-5739.html?qid=UXYOXT_08tfc9pt_1746512260418" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
           </a>
       </div></td>

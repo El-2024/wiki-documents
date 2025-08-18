@@ -46,7 +46,7 @@ Wild IoT se refiere a la tecnología de desplegar redes de sensores en ambientes
 [**SenseCAP T1000**](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html) es un tracker compacto LoRaWAN® que utiliza GNSS/Wi-Fi/Bluetooth para localización precisa en interiores y exteriores. Cuenta con auto-adaptación geográfica, almacenamiento local de datos y batería de larga duración (meses). Está equipado con sensores de temperatura, luz y movimiento, ideal para aplicaciones basadas en localización.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecap_t1000_tracker/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Más Información</font></span></strong></a>
 </div>
 
@@ -79,7 +79,7 @@ SenseCAP S210X es una serie de sensores inalámbricos LoRaWAN® que cubren hasta
 [SenseCAP LoRaWAN S2120](https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html) recoge y envía datos de temperatura, humedad, velocidad/dirección del viento, intensidad de lluvia, intensidad lumínica, índice UV y presión barométrica mediante redes LoRaWAN globales. Ideal para jardines, agricultura, meteorología y monitoreo urbano, con bajo mantenimiento y Bluetooth incorporado para configuración OTA y gestión remota.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/sensecap-s2120-lorawan-8-in-1-weather-sensor-p-5436.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor_Introduction/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Más Información</font></span></strong></a>
 </div>
 
@@ -90,7 +90,7 @@ SenseCAP S210X es una serie de sensores inalámbricos LoRaWAN® que cubren hasta
 [SenseCAP A1101](https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html) es un sensor inteligente TinyML Edge AI habilitado para visión. Soporta varios modelos de IA como reconocimiento de imagen, conteo de personas, detección de objetivos y reconocimiento de medidores. Permite entrenamiento de modelos con TensorFlow Lite.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP-Vision-AI-Get-Started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Más Información</font></span></strong></a>
 </div>
 

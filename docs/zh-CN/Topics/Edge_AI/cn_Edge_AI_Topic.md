@@ -23,7 +23,7 @@ last_update:
 
 <br/>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/nvidia-jetson.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>🖱️ 产品购买</font></span></strong></a>  <a class="get_one_now_item" href="https://files.seeedstudio.com/products/NVIDIA/NVIDIA-Jetson-Devices-and-carrier-boards-comparision.pdf" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 产品对比</font></span></strong></a></div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/nvidia-jetson.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>🖱️ 产品购买</font></span></strong></a>  <a class="get_one_now_item" href="https://files.seeedstudio.com/products/NVIDIA/NVIDIA-Jetson-Devices-and-carrier-boards-comparision.pdf" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 产品对比</font></span></strong></a></div>
 
 
 ----
@@ -252,7 +252,7 @@ last_update:
 
 <br/>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/raspberrypi.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>🖱️ 产品购买</font></span></strong></a>  <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/CVEDIA-Jetson-Getting-Started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 对比</font></span></strong></a></div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/raspberrypi.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>🖱️ 产品购买</font></span></strong></a>  <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/CVEDIA-Jetson-Getting-Started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 对比</font></span></strong></a></div>
 
 ----
 

@@ -13,7 +13,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/0.jpg" style={{width:600, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM6180-Wi-Fi-Halow-mini-PCIe-Module-p-6394.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM6180-Wi-Fi-Halow-mini-PCIe-Module-p-6394.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
     </a>
 </div><br />
@@ -111,12 +111,12 @@ A continuación, se enlistan los materiales requeridos para seguir este tutorial
         </tr>
         <tr>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-4-Computer-Model-B-4GB-p-4077.html" target="_blank" rel="noopener noreferrer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-4-Computer-Model-B-4GB-p-4077.html" target="_blank">
                 <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
                 </a>
             </div></td>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM6180-Wi-Fi-Halow-mini-PCIe-Module-p-6394.html" target="_blank" rel="noopener noreferrer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM6180-Wi-Fi-Halow-mini-PCIe-Module-p-6394.html" target="_blank">
                 <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
                 </a>
             </div></td>
@@ -148,12 +148,12 @@ Además, necesitarás los siguientes elementos:
         </tr>
         <tr>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRa-Indoor-Antenna-Kit-860-930MHz-3dBi-295mm-p-5434.html" target="_blank" rel="noopener noreferrer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRa-Indoor-Antenna-Kit-860-930MHz-3dBi-295mm-p-5434.html" target="_blank">
                 <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
                 </a>
             </div></td>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/External-Antenna-915MHZ-2-6dBi-SMA-L195mm-p-5047.html" target="_blank" rel="noopener noreferrer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/External-Antenna-915MHZ-2-6dBi-SMA-L195mm-p-5047.html" target="_blank">
                 <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
                 </a>
             </div></td>
@@ -173,7 +173,7 @@ Para conectar la antena al módulo Wi-Fi HaLow, también podrías necesitar adqu
         </tr>
         <tr>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/UF-L-SMA-K-1-13-120mm-p-5046.html" target="_blank" rel="noopener noreferrer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/UF-L-SMA-K-1-13-120mm-p-5046.html" target="_blank">
                 <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
                 </a>
             </div></td>

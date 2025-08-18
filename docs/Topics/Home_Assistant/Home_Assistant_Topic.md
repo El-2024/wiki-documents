@@ -45,7 +45,7 @@ Home Assistant has evolved beyond home automation, expanding its reach into **sm
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://green.home-assistant.io/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 Getting Started Page</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -73,14 +73,14 @@ Home Assistant has evolved beyond home automation, expanding its reach into **sm
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Yellow-Kit-with-selectable-CM4-p-5680.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Yellow-Kit-with-selectable-CM4-p-5680.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
         <td class="table-trnobg"></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://yellow.home-assistant.io/power-supply/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 Getting Started Page</font></span></strong></a></div></td>
      </tr>
      <tr class="table-trnobg"></tr>
     <tr class="table-trnobg">
      <td class="table-trnobg"></td>
-     <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2024/07/23/home-assistant-green-vs-yellow-vs-blue/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖥️ Comparison</font></span></strong></a></div></td>
+     <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2024/07/23/home-assistant-green-vs-yellow-vs-blue/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖥️ Comparison</font></span></strong></a></div></td>
       <td class="table-trnobg"></td>
     </tr>
 	</table>
@@ -109,7 +109,7 @@ Home Assistant has evolved beyond home automation, expanding its reach into **sm
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-SkyConnect-p-5479.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-SkyConnect-p-5479.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://skyconnect.home-assistant.io/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 Getting Started Page</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -168,7 +168,7 @@ The [**SenseCraft-HomeAssistant plugin**](https://github.com/Seeed-Solution/Sens
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-CM4108032-p-5712.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-CM4108032-p-5712.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/reTerminal_Home_Assistant/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚Getting Started Page </font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -195,7 +195,7 @@ The [**SenseCraft-HomeAssistant plugin**](https://github.com/Seeed-Solution/Sens
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/ODYSSEY-X86J4125864-v2-p-5536.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/ODYSSEY-X86J4125864-v2-p-5536.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚Getting Started Page</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -224,7 +224,7 @@ The [**SenseCraft-HomeAssistant plugin**](https://github.com/Seeed-Solution/Sens
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/LinkStar-H68K-1432-p-5501.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/LinkStar-H68K-1432-p-5501.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/h68k-ha-esphome/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚Getting Started Page</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -253,7 +253,7 @@ The [**SenseCraft-HomeAssistant plugin**](https://github.com/Seeed-Solution/Sens
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-ESP32C3-for-ESPHome-Support/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 Getting Started Page</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -278,7 +278,7 @@ The [**SenseCraft-HomeAssistant plugin**](https://github.com/Seeed-Solution/Sens
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/mmWave-Human-Detection-Sensor-Kit-p-5773.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/mmWave-Human-Detection-Sensor-Kit-p-5773.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/mmwave_human_detection_kit/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 Getting Started Page</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -305,7 +305,7 @@ The [**SenseCraft-HomeAssistant plugin**](https://github.com/Seeed-Solution/Sens
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html?" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html?" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP_Indicator_Application_Home_Assistant/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 Getting Started Page</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -332,7 +332,7 @@ The [**SenseCraft-HomeAssistant plugin**](https://github.com/Seeed-Solution/Sens
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/connect_vision_ai_v2_to_ha/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 Getting Started Page</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -488,7 +488,7 @@ Explore inspiring projects featuring Seeed Studios products, where the versatili
 		<tr class="table-trnobg">
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/reTerminal-Home-Assistant-Customize/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
       <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.hackster.io/Pistachio9to5/tango-with-home-assistant-and-sensecap-sensors-1ee587" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2023/09/13/customize-your-smart-home-experience-add-ons-and-integrations-for-home-assistant/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2023/09/13/customize-your-smart-home-experience-add-ons-and-integrations-for-home-assistant/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
         </tr>
     </table>
     </div>

@@ -59,7 +59,7 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBone-Blue-p-2809.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBone-Blue-p-2809.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/BeagleBone_Blue/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -78,7 +78,7 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/BeagleBone_Green/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -97,7 +97,7 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green-Wireless-Development-Board-TI-AM335x-WiFi-BT.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green-Wireless-Development-Board-TI-AM335x-WiFi-BT.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/BeagleBone_Green_Wireless/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -117,7 +117,7 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-Gateway-p-4586.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-Gateway-p-4586.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/BeagleBone-Green-Gateway/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 
@@ -136,7 +136,7 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBoner-Case.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBoner-Case.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Beaglebone_Case/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong></a>
 </div>
 

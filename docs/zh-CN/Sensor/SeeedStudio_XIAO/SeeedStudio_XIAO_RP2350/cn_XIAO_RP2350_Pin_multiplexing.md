@@ -44,17 +44,17 @@ Seeed Studio XIAO RP2350 具有丰富的接口。它有 **19 个数字 I/O** 可
   </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
@@ -111,17 +111,17 @@ XIAO RP2350上的所有GPIO引脚都支持PWM输出。因此，您可以使用�
   </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
@@ -188,17 +188,17 @@ XIAO MG24(Sense) 开发板具有 12 位 ADC，可高分辨率读取模拟传感�
   </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Loudness-Sensor.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Loudness-Sensor.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
@@ -332,17 +332,17 @@ XIAO RP2350 具有 I2C 接口，可用于许多传感器的数据传输和解析
   </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
     </div></td>
@@ -468,12 +468,12 @@ XIAO RP2350 芯片集成了多个外设，包括一个 SPI 接口，可用于连
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html" target="_blank" rel="noopener noreferrer">
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     		</a>
 		</div></td>

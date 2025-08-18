@@ -26,7 +26,7 @@ TinyML是机器学习和嵌入式系统领域的一个研究方向，它探索�
 
 机器学习是计算机系统的一个领域，旨在开发自我改进的算法和统计模型。这是通过大量数据完成的，模型分析这些数据并从中提取模式，以便学习和改进给定任务。这个看似简单的范式已经在预测、异常检测和计算机视觉等复杂任务中带来了突破性的进展！
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/06/14/everything-about-tinyml-basics-courses-projects-more/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/06/14/everything-about-tinyml-basics-courses-projects-more/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div>
 
 ## 支持TinyML的推荐开发板
 
@@ -54,7 +54,7 @@ TinyML是机器学习和嵌入式系统领域的一个研究方向，它探索�
 <br /> <br /> <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 快速入门</font></span></strong></a>
 </div>
 
@@ -80,7 +80,7 @@ TinyML是机器学习和嵌入式系统领域的一个研究方向，它探索�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/XIAO_BLE/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 快速入门</font></span></strong></a>
 </div>
 
@@ -111,7 +111,7 @@ TinyML是机器学习和嵌入式系统领域的一个研究方向，它探索�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/XIAO-RP2040/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 快速入门</font></span></strong></a>
 </div>
 
@@ -141,7 +141,7 @@ TinyML是机器学习和嵌入式系统领域的一个研究方向，它探索�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Seeeduino-XIAO/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 快速入门</font></span></strong></a>
 </div>
 
@@ -167,7 +167,7 @@ TinyML是机器学习和嵌入式系统领域的一个研究方向，它探索�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-p-4509.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-p-4509.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Wio-Terminal-Getting-Started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 快速入门</font></span></strong></a>
 </div>
 
@@ -191,7 +191,7 @@ TinyML是机器学习和嵌入式系统领域的一个研究方向，它探索�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-p-5457.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-p-5457.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Grove-Vision-AI-Module/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 快速入门</font></span></strong></a>
 </div>
 
@@ -215,7 +215,7 @@ TinyML是机器学习和嵌入式系统领域的一个研究方向，它探索�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/grove_vision_ai_v2/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 快速入门</font></span></strong></a>
 </div>
 
@@ -237,7 +237,7 @@ TinyML是机器学习和嵌入式系统领域的一个研究方向，它探索�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-LoRaWAN-Dev-Kit-p-5370.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-LoRaWAN-Dev-Kit-p-5370.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/K1100-quickstart/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 快速入门</font></span></strong></a>
 </div>
 
@@ -260,7 +260,7 @@ TinyML是机器学习和嵌入式系统领域的一个研究方向，它探索�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 了解更多 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/SenseCAP-Vision-AI-Get-Started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 快速入门</font></span></strong></a>
 </div>
 
@@ -680,7 +680,7 @@ Wio Terminal 支持多种编程语言，包括 Arduino、MicroPython、CircuitPy
   <tr class="table-trnobg"></tr>
   <tr class="table-trnobg">
    <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://makergram.com/blog/play-chromes-dino-game-physically/?fbclid=IwAR3h19XxXITb4jh6Ot1pvc7yDXJ5g8gvNAOPA7DYTs8rpQ1DaiHmd_WsGFo" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
-   <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/03/02/handwriting-recognition-with-wio-terminal-edge-impulse/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+   <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/03/02/handwriting-recognition-with-wio-terminal-edge-impulse/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
   </tr>
  </table>
 </div>
@@ -771,7 +771,7 @@ TinyML 技术可以应用于零售行业的销售预测、客户行为分析、�
   <tr class="table-trnobg">
    <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.hackster.io/rahulkhanna/vision-based-sand-depletion-prevention-kit-vsdp-bde664" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
    <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.hackster.io/kutluhan-aktar/irrigation-level-assessment-by-thermal-imaging-w-tensorflow-c60b2c" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/03/18/learn-tinyml-using-wio-terminal-and-arduino-ide-4-weather-prediction-with-tensorflow-lite-for-microcontrollers-a-k-a-i-just-like-data/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/03/18/learn-tinyml-using-wio-terminal-and-arduino-ide-4-weather-prediction-with-tensorflow-lite-for-microcontrollers-a-k-a-i-just-like-data/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
   </tr>
     <tr></tr>
     <tr class="table-trnobg">

@@ -49,7 +49,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove_LoRa_E5_New_Version/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -71,7 +71,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Blueseeed-Dual-model-HM13.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Blueseeed-Dual-model-HM13.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-BLE-dual_model-v1.0/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -91,7 +91,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Serial-Blueseeed-CSR-BC417.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Serial-Blueseeed-CSR-BC417.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-Serial_Bluetooth_v3.0/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -109,7 +109,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Blueseeed-HM11.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Blueseeed-HM11.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-BLE_v1/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -132,7 +132,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-UART-WiFi-V2-ESP8285.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-UART-WiFi-V2-ESP8285.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-UART_Wifi_V2/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -153,7 +153,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC-ST25DV64KC-p-5688.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC-ST25DV64KC-p-5688.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/grove-nfc-st25dv64/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -172,7 +172,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove_NFC/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -191,7 +191,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC-Tag-p-1866.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC-Tag-p-1866.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove_NFC_Tag/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -211,7 +211,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GPS-Module.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GPS-Module.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-GPS/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -229,7 +229,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-GPS-Air530/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -253,7 +253,7 @@ We have various types of Grove network modules that can be applied to different 
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-125KHz-RFID-Reader.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-125KHz-RFID-Reader.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-125KHz_RFID_Reader/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -271,7 +271,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-315MHz-Simple-RF-Link-Kit.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-315MHz-Simple-RF-Link-Kit.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-315MHz_RF_Kit/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -289,7 +289,7 @@ We have various types of Grove network modules that can be applied to different 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-433MHz-Simple-RF-link-kit-p-1062.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-433MHz-Simple-RF-link-kit-p-1062.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-433MHz_Simple_RF_Link_Kit/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -311,8 +311,8 @@ Grove is a very powerful platform developed by Seeed Studio to simplify your IoT
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-Radio-433MHz-p-2777.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a></div></td>
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-Radio-868MHz.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-Radio-433MHz-p-2777.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-Radio-868MHz.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -336,7 +336,7 @@ Grove is a very powerful platform developed by Seeed Studio to simplify your IoT
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Serial-RF-Pro.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Serial-RF-Pro.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-Serial_RF_Pro/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -357,7 +357,7 @@ Grove is a very powerful platform developed by Seeed Studio to simplify your IoT
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-DMX512.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-DMX512.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-DMX512/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -377,7 +377,7 @@ Grove is a very powerful platform developed by Seeed Studio to simplify your IoT
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-ADC.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-ADC.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-I2C_ADC/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -398,8 +398,8 @@ Grove - I2C FM Receiver is a wideband FM receiver module, this module is based o
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-FM-Receiver.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a></div></td>
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-FM-Receiver-v1-1.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-FM-Receiver.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-FM-Receiver-v1-1.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -423,7 +423,7 @@ Grove - I2C FM Receiver is a wideband FM receiver module, this module is based o
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Protoshield.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Protoshield.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-Protoshield/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -441,7 +441,7 @@ Grove - I2C FM Receiver is a wideband FM receiver module, this module is based o
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RJ45-Adapter.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RJ45-Adapter.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong></a>
     <a class="get_one_now_item" href="/Grove-RJ45_Adapter/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong></a>
 </div>
 
@@ -456,7 +456,7 @@ Seeed Studio Fusion has launched a Grove Sensor Co-brand Campaign to help engine
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Apply Now</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 More Information</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 More Information</font></span></strong></a>
 </div>
 
 

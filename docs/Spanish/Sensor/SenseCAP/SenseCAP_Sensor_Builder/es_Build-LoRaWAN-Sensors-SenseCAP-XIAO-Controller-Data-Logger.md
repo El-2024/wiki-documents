@@ -42,7 +42,7 @@ Para aplicaciones inalámbricas de largo alcance (LoRaWAN®), los desarrolladore
 
 El producto incluye una carcasa IP66 de grado industrial, además de pads y tornillos de montaje para un despliegue fácil y seguro en exteriores.
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> Consíguelo ahora 🖱️</font></span></strong></a> <a class="get_one_now_item" href="https://www.seeedstudio.com/sensecap-outdoor-lorawan-sensor-kit-based-on-grove-p-5503.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> Kit LoRaWAN 🖱️</font></span></strong></a> </div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> Consíguelo ahora 🖱️</font></span></strong></a> <a class="get_one_now_item" href="https://www.seeedstudio.com/sensecap-outdoor-lorawan-sensor-kit-based-on-grove-p-5503.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> Kit LoRaWAN 🖱️</font></span></strong></a> </div>
 
 ## Primeros Pasos con el Builder de diferentes maneras
 
@@ -54,7 +54,7 @@ Siendo una solución innovadora que fusiona módulos industriales y de nivel mak
 
 Puedes construir un sensor LoRaWAN personalizado, rentable y de grado industrial usando sensores Grove, conectarlo a SenseCAP Cloud con SenseCAP Data Logger, y habilitar la transmisión de datos inalámbrica de largo alcance.
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Consíguelo ahora </font></span></strong></a> </div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Consíguelo ahora </font></span></strong></a> </div>
 
 ### Añadir más sensores Grove industriales LoRaWAN
 

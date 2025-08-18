@@ -17,7 +17,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/0.jpg" style={{width:600, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM6180-Wi-Fi-Halow-mini-PCIe-Module-p-6394.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM6180-Wi-Fi-Halow-mini-PCIe-Module-p-6394.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div><br />
@@ -115,12 +115,12 @@ OpenWrtとWi-Fi HaLowの組み合わせにより、小規模な導入から大�
         </tr>
         <tr>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-4-Computer-Model-B-4GB-p-4077.html" target="_blank" rel="noopener noreferrer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-4-Computer-Model-B-4GB-p-4077.html" target="_blank">
                 <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
                 </a>
             </div></td>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM6180-Wi-Fi-Halow-mini-PCIe-Module-p-6394.html" target="_blank" rel="noopener noreferrer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM6180-Wi-Fi-Halow-mini-PCIe-Module-p-6394.html" target="_blank">
                 <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
                 </a>
             </div></td>
@@ -151,12 +151,12 @@ OpenWrtとWi-Fi HaLowの組み合わせにより、小規模な導入から大�
         </tr>
         <tr>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRa-Indoor-Antenna-Kit-860-930MHz-3dBi-295mm-p-5434.html" target="_blank" rel="noopener noreferrer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRa-Indoor-Antenna-Kit-860-930MHz-3dBi-295mm-p-5434.html" target="_blank">
                 <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
                 </a>
             </div></td>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/External-Antenna-915MHZ-2-6dBi-SMA-L195mm-p-5047.html" target="_blank" rel="noopener noreferrer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/External-Antenna-915MHZ-2-6dBi-SMA-L195mm-p-5047.html" target="_blank">
                 <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
                 </a>
             </div></td>
@@ -176,7 +176,7 @@ WiFi-HaLowモジュールにアンテナを接続するには、**SMA to I-PEX �
         </tr>
         <tr>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/UF-L-SMA-K-1-13-120mm-p-5046.html" target="_blank" rel="noopener noreferrer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/UF-L-SMA-K-1-13-120mm-p-5046.html" target="_blank">
                 <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
                 </a>
             </div></td>

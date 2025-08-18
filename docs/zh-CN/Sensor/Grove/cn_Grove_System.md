@@ -37,7 +37,7 @@ Grove是一个模块化、标准化连接器的原型系统。与使用跳线或
 基础单元通常是一个微处理器，允许轻松连接任何来自Grove模块的输入或输出。每个Grove模块通常实现单一功能，例如一个简单的按钮或一个更复杂的心率传感器。您不需要基础单元即可连接其他Grove模块。您可以使用一根线（Grove到针脚头转换器）从Raspberry Pi或Arduino的针脚连接到Grove连接器。
 
 <!-- <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> Grow Your Idea</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> Grow Your Idea</font></span></strong>
     </a>
 </div> -->
 
@@ -53,7 +53,7 @@ Grove生态系统提供了多种传感器，可以轻松集成到您的电子项
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/cn/Grove_Sensor_Intro/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
 </div>
 
 ### <span id="jump4"> Grove网络模块</span>
@@ -64,7 +64,7 @@ Grove系统还包括网络模块，这些模块能够在您的项目中实现通
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/cn/Grove_network_module_intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
 </div>
 
 ### <span id="jump5"> Grove配件 </span>
@@ -73,7 +73,7 @@ Grove系统还包括网络模块，这些模块能够在您的项目中实现通
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/cn/Grove_Accessories_Intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki平台</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong></a>
 </div>
 
 <!-- - [Grove Sensor](/cn/Grove_Sensor_Intro)
@@ -113,9 +113,9 @@ Grove接口设计为兼容多种开发板和微控制器。
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Base-Shield-V2.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/CH-BitMaker-V2-p-5330.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Base-Shield-V2.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/CH-BitMaker-V2-p-5330.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -184,7 +184,7 @@ Grove接口设计为兼容多种开发板和微控制器。
 <!-- <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/cn/Grove_Accessories_Intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki 平台</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 购买</font></span></strong>
     </a>
 </div> -->
 
@@ -296,7 +296,7 @@ Seeed Studio Fusion 推出了 Grove 传感器联合品牌活动，帮助工程�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即申请</font></span></strong></a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 更多信息</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 更多信息</font></span></strong></a>
 </div>
 
 ### <span id="jump9"> Grove 电缆 </span>

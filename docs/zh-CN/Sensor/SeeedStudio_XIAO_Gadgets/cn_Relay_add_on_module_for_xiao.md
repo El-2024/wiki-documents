@@ -48,12 +48,12 @@ XIAO 继电器扩展模块是 Seeed Studio 设计的智能模块，用于控制�
  </tr>
  <tr>
     <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" target="_blank">
         <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
         </a>
     </div></td>
     <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Relay-add-on-module-for-XIAO-p-6310.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Relay-add-on-module-for-XIAO-p-6310.html" target="_blank">
         <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
         </a>
     </div></td>

@@ -43,7 +43,7 @@ Zigbee 是一种广泛采用的无线通信协议，在家庭自动化、智能�
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
-        " target="_blank" rel="noopener noreferrer">
+        " target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>

@@ -41,7 +41,7 @@ Groveは、モジュール式で標準化されたコネクタプロトタイピ
 ベースユニット（通常はマイクロプロセッサ）は、Groveモジュールの任意の入力または出力を簡単に接続できるようにします。各Groveモジュールは、シンプルなボタンやより複雑な心拍センサーなど、通常1つの機能を担当します。他のGroveモジュールに接続するために必ずしもベースユニットが必要なわけではありません。Raspberry PiやArduinoのピンからGroveコネクタに接続するためのケーブル（Grove to Pin Header Converter）を使用することもできます。
 
 <!-- <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> アイデアを育てよう</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> アイデアを育てよう</font></span></strong>
     </a>
 </div> -->
 
@@ -59,7 +59,7 @@ Groveエコシステムは、電子プロジェクトに簡単に統合できる
     <a class="get_one_now_item" href="/ja/Grove_Sensor_Intro/" target="_blank" rel="noopener noreferrer">
         <strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank">
         <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
     </a>
 </div>
@@ -74,7 +74,7 @@ Groveネットワークモジュールを使用すると、プロジェクトに
     <a class="get_one_now_item" href="/ja/Grove_network_module_intro" target="_blank" rel="noopener noreferrer">
         <strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank">
         <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
     </a>
 </div>
@@ -87,7 +87,7 @@ Groveネットワークモジュールを使用すると、プロジェクトに
     <a class="get_one_now_item" href="/ja/Grove_Accessories_Intro" target="_blank" rel="noopener noreferrer">
         <strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wikiプラットフォーム</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank">
         <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
     </a>
 </div>
@@ -129,9 +129,9 @@ Groveインターフェースは、さまざまな開発ボードやマイクロ
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Base-Shield-V2.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/CH-BitMaker-V2-p-5330.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/Base-Shield-V2.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/CH-BitMaker-V2-p-5330.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -200,7 +200,7 @@ Raspberry Pi、Pi Zero、またはその他のボードのような Grove イン
 <!-- <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/ja/Grove_Accessories_Intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki プラットフォーム</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 購入</font></span></strong>
     </a>
 </div> -->
 
@@ -312,7 +312,7 @@ Seeed Studio Fusionは、エンジニアが自分のGroveデザインを実際�
     <a class="get_one_now_item" href="https://docs.google.com/forms/d/e/1FAIpQLSe3A7_rIbn2OLO4JyJd_poGZodItCaRy6M6-3FtdqL3xG1Usg/viewform" target="_blank" rel="noopener noreferrer">
         <strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ申し込む</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/co-create.html" target="_blank">
         <strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細情報</font></span></strong>
     </a>
 </div>

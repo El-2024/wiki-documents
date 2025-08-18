@@ -481,7 +481,7 @@ Seeed Studios製品を活用した魅力的なプロジェクトを探索しま�
 		<tr class="table-trnobg">
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/reTerminal-Home-Assistant-Customize/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しくはこちら</font></span></strong></a></div></td>
       <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.hackster.io/Pistachio9to5/tango-with-home-assistant-and-sensecap-sensors-1ee587" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しくはこちら</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2023/09/13/customize-your-smart-home-experience-add-ons-and-integrations-for-home-assistant/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しくはこちら</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2023/09/13/customize-your-smart-home-experience-add-ons-and-integrations-for-home-assistant/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しくはこちら</font></span></strong></a></div></td>
         </tr>
     </table>
     </div>

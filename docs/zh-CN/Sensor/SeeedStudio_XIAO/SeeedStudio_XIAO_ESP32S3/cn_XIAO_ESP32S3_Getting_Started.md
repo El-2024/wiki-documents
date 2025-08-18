@@ -32,17 +32,17 @@ import TabItem from '@theme/TabItem';
 	</tr>
 	<tr>
 		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-			<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank" rel="noopener noreferrer">
+			<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html" target="_blank">
 			<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 			</a>
 		</div></td>
 		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-			<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+			<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
 			<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 			</a>
 		</div></td>
 		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-			<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Plus-p-6361.html" target="_blank" rel="noopener noreferrer">
+			<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Plus-p-6361.html" target="_blank">
 			<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 			</a>
 		</div></td>
@@ -326,7 +326,7 @@ XIAO ESP32S3默认不带排针出货，您需要准备自己的排针并将其�
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/ov5640.gif" style={{width:500, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/OV5640-Camera-for-XIAO-ESP32S3-Sense-With-Heat-Sink-p-5739.html" target="_blank" rel="noopener noreferrer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/OV5640-Camera-for-XIAO-ESP32S3-Sense-With-Heat-Sink-p-5739.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 </div>

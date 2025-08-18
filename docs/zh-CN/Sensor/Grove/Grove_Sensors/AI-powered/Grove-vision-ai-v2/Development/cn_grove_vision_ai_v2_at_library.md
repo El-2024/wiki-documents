@@ -27,7 +27,7 @@ toc_max_heading_level: 3
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html" target="_blank" rel="noopener noreferrer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}>立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>

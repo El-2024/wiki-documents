@@ -61,7 +61,7 @@ FluxNodes 分布在全球各地，因此开发者可以确保他们的应用在�
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M4-Sqaure-Bundle.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M4-Sqaure-Bundle.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 </font></span></strong>
     </a>
 </div>

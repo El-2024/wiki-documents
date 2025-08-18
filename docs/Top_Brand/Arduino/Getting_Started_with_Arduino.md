@@ -121,7 +121,7 @@ and educators. If you're a maker, you can take advantage of its rich community r
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/catalogsearch/result/?q=xiao" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Get One Know </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/catalogsearch/result/?q=xiao" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Get One Know </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Know More</font></span></strong></a>
 </div>
 
@@ -141,7 +141,7 @@ and educators. If you're a maker, you can take advantage of its rich community r
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-p-4509.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Get One Know </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-p-4509.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Get One Know </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Wio Terminal</font></span></strong></a>
 </div>
 
@@ -161,7 +161,7 @@ and educators. If you're a maker, you can take advantage of its rich community r
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Get One Know </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Get One Know </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Develop_with_SenseCAP_Indicator/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚SenseCAP Indicator</font></span></strong></a>
 </div>
 

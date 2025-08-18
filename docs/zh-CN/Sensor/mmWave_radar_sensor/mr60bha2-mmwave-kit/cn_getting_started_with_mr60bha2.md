@@ -20,7 +20,7 @@ last_update:
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/MR60BHA2-60GHz-mmWave-Sensor-Breathing-and-Heartbeat-Module-p-5945.html?utm_source=wiki" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/MR60BHA2-60GHz-mmWave-Sensor-Breathing-and-Heartbeat-Module-p-5945.html?utm_source=wiki" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong></a>
 </div><br />
 
 介绍我们先进的 XIAO **毫米波传感器模块**，专为提供尖端的监测解决方案而设计，支持[跌倒检测](https://wiki.seeedstudio.com/cn/getting_started_with_mr60fda2_mmwave_kit/)和心跳监测。该模块由强大的 XIAO ESP32 微控制器驱动，内置 Wi-Fi 和蓝牙连接功能，提供精确可靠的检测能力。无论您需要实时监测跌倒还是以敏感精度跟踪心跳，我们的模块都配备了最先进的技术，包括可定制的 RGB LED 和环境光感应。通过 Grove GPIO 端口的便捷扩展选项，这些多功能模块非常适合广泛的应用场景，从智能家居集成到医疗保健监测。

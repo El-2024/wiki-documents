@@ -45,7 +45,7 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://green.home-assistant.io/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 入门页面</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -72,14 +72,14 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Yellow-Kit-with-selectable-CM4-p-5680.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Yellow-Kit-with-selectable-CM4-p-5680.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
         <td class="table-trnobg"></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://yellow.home-assistant.io/power-supply/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 入门页面</font></span></strong></a></div></td>
      </tr>
      <tr class="table-trnobg"></tr>
     <tr class="table-trnobg">
      <td class="table-trnobg"></td>
-     <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2024/07/23/home-assistant-green-vs-yellow-vs-blue/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖥️ 对比</font></span></strong></a></div></td>
+     <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2024/07/23/home-assistant-green-vs-yellow-vs-blue/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖥️ 对比</font></span></strong></a></div></td>
       <td class="table-trnobg"></td>
     </tr>
 	</table>
@@ -106,7 +106,7 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-SkyConnect-p-5479.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-SkyConnect-p-5479.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://skyconnect.home-assistant.io/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 入门指南页面</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -163,7 +163,7 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-CM4108032-p-5712.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-CM4108032-p-5712.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/reTerminal_Home_Assistant/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚入门指南页面 </font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -189,7 +189,7 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/ODYSSEY-X86J4125864-v2-p-5536.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/ODYSSEY-X86J4125864-v2-p-5536.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/ODYSSEY-X86-Home-Assistant/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚入门指南页面</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -218,7 +218,7 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/LinkStar-H68K-1432-p-5501.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/LinkStar-H68K-1432-p-5501.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/h68k-ha-esphome/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚入门指南页面</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -247,7 +247,7 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/XIAO-ESP32C3-for-ESPHome-Support/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 入门指南页面</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -272,7 +272,7 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/mmWave-Human-Detection-Sensor-Kit-p-5773.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/mmWave-Human-Detection-Sensor-Kit-p-5773.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/mmwave_human_detection_kit/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 入门指南页面</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -299,7 +299,7 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html?" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html?" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/SenseCAP_Indicator_Application_Home_Assistant/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 入门指南页面</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -326,7 +326,7 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 				</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
+        <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}> <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买 </font></span></strong></a></div></td>
 		<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/connect_vision_ai_v2_to_ha/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"3"}>📚 入门指南页面</font></span></strong></a></div></td>
     </tr>
 	</table>
@@ -481,7 +481,7 @@ Home Assistant 已经超越了家庭自动化，将其影响力扩展到**智能
 		<tr class="table-trnobg">
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/reTerminal-Home-Assistant-Customize/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
       <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.hackster.io/Pistachio9to5/tango-with-home-assistant-and-sensecap-sensors-1ee587" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2023/09/13/customize-your-smart-home-experience-add-ons-and-integrations-for-home-assistant/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2023/09/13/customize-your-smart-home-experience-add-ons-and-integrations-for-home-assistant/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
         </tr>
     </table>
     </div>

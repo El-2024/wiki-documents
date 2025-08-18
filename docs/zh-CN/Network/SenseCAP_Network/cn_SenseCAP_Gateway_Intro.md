@@ -68,7 +68,7 @@ LoRa（Long Range）是一种低功耗广域网 (LPWAN) 协议，专为区域、
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
@@ -91,7 +91,7 @@ LoRa（Long Range）是一种低功耗广域网 (LPWAN) 协议，专为区域、
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M1-LoRaWAN-Indoor-Gateway-EU868-p-5022.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M1-LoRaWAN-Indoor-Gateway-EU868-p-5022.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Overview/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
@@ -111,7 +111,7 @@ LoRa（Long Range）是一种低功耗广域网 (LPWAN) 协议，专为区域、
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M2-Data-Only-LoRaWAN-Indoor-Gateway-SX1302-EU868-p-5339.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M2-Data-Only-LoRaWAN-Indoor-Gateway-SX1302-EU868-p-5339.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_Overview/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
@@ -131,7 +131,7 @@ LoRa（Long Range）是一种低功耗广域网 (LPWAN) 协议，专为区域、
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M2-Light-Hotspot-and-Software-License.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M2-Light-Hotspot-and-Software-License.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_Overview/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
@@ -154,7 +154,7 @@ LoRa（Long Range）是一种低功耗广域网 (LPWAN) 协议，专为区域、
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M4-Sqaure-Bundle.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-M4-Sqaure-Bundle.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Overview/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
@@ -174,7 +174,7 @@ LoRa（Long Range）是一种低功耗广域网 (LPWAN) 协议，专为区域、
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRaWAN-Gateway-EU868-p-4305.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/LoRaWAN-Gateway-EU868-p-4305.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/SenseCAP_LoRaWAN_Outdoor_Gateway_Overview/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 

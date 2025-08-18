@@ -31,7 +31,7 @@ Seeed Studio XIAO ESP32C6 は、ESP32-C6 SoC を基盤とした強力で多用�
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
-        " target="_blank" rel="noopener noreferrer">
+        " target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
 				</a>
 			</div></td>

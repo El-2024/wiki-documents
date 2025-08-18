@@ -35,7 +35,7 @@ SenseCraft AI 是一个强大的平台，提供了与各种设备兼容的大量
     </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
         <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
         </a>
       </div></td>

@@ -55,7 +55,7 @@ BeagleBone® 系列包括多个型号，每个型号都有独特的规格以满�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBone-Blue-p-2809.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBone-Blue-p-2809.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/BeagleBone_Blue/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
@@ -74,7 +74,7 @@ BeagleBone® 系列包括多个型号，每个型号都有独特的规格以满�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/BeagleBone_Green/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
@@ -93,7 +93,7 @@ BeagleBone® 系列包括多个型号，每个型号都有独特的规格以满�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green-Wireless-Development-Board-TI-AM335x-WiFi-BT.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green-Wireless-Development-Board-TI-AM335x-WiFi-BT.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/BeagleBone_Green_Wireless/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
@@ -113,7 +113,7 @@ BeagleBone® 系列包括多个型号，每个型号都有独特的规格以满�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-Gateway-p-4586.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-Gateway-p-4586.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/BeagleBone-Green-Gateway/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 
@@ -132,7 +132,7 @@ BeagleBone® 系列包括多个型号，每个型号都有独特的规格以满�
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBoner-Case.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBoner-Case.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 立即购买</font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/Beaglebone_Case/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 了解更多</font></span></strong></a>
 </div>
 

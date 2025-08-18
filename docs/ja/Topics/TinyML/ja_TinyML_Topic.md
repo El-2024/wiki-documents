@@ -30,7 +30,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 
 マシンラーニングは、自己改善型のアルゴリズムや統計モデルを開発することを目的としたコンピュータシステムの分野です。これは、大量のデータを使用してモデルが分析し、パターンを抽出することで、特定のタスクを学習し改善することを可能にします。この一見単純なパラダイムは、予測、異常検出、コンピュータビジョンなどの複雑なタスクにおいて画期的な進歩をもたらしました！
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/06/14/everything-about-tinyml-basics-courses-projects-more/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/06/14/everything-about-tinyml-basics-courses-projects-more/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div>
 
 
 ## TinyML をサポートする推奨ボード
@@ -59,7 +59,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 <br /> <br /> <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
@@ -85,7 +85,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO_BLE/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
@@ -117,7 +117,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO-RP2040/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
@@ -147,7 +147,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
@@ -173,7 +173,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-p-4509.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-p-4509.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
@@ -197,7 +197,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-p-5457.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-p-5457.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Grove-Vision-AI-Module/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
@@ -221,7 +221,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/grove_vision_ai_v2/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
@@ -243,7 +243,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-LoRaWAN-Dev-Kit-p-5370.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-LoRaWAN-Dev-Kit-p-5370.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/K1100-quickstart/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
@@ -266,7 +266,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/SenseCAP-Vision-AI-Get-Started/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
@@ -686,7 +686,7 @@ TinyML 技術を使用すると、センサーデータを機械学習モデル�
 		<tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://makergram.com/blog/play-chromes-dino-game-physically/?fbclid=IwAR3h19XxXITb4jh6Ot1pvc7yDXJ5g8gvNAOPA7DYTs8rpQ1DaiHmd_WsGFo" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/03/02/handwriting-recognition-with-wio-terminal-edge-impulse/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/03/02/handwriting-recognition-with-wio-terminal-edge-impulse/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
 		</tr>
 	</table>
 </div>
@@ -780,7 +780,7 @@ TinyML技術を使用することで、センサーデータを機械学習モ�
 		<tr class="table-trnobg">
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.hackster.io/rahulkhanna/vision-based-sand-depletion-prevention-kit-vsdp-bde664" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.hackster.io/kutluhan-aktar/irrigation-level-assessment-by-thermal-imaging-w-tensorflow-c60b2c" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/03/18/learn-tinyml-using-wio-terminal-and-arduino-ide-4-weather-prediction-with-tensorflow-lite-for-microcontrollers-a-k-a-i-just-like-data/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2021/03/18/learn-tinyml-using-wio-terminal-and-arduino-ide-4-weather-prediction-with-tensorflow-lite-for-microcontrollers-a-k-a-i-just-like-data/" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
 		</tr>
     <tr></tr>
     <tr class="table-trnobg">

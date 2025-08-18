@@ -15,7 +15,7 @@ last_update:
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Watcher-W1-A-p-5979.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Watcher-W1-A-p-5979.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买</font></span></strong>
     </a>
     <a class="get_one_now_item" href="https://www.youtube.com/watch?v=ny22Z0cAIqE" target="_blank" rel="noopener noreferrer">
@@ -62,7 +62,7 @@ Watcher配有独特的包装，可兼作时尚的日历式支架。通过将Watc
 上图显示了推荐的适配器规格。如果您不知道在哪里可以购买合适的适配器，可以选择通过以下链接直接购买。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/USB-Power-Adapter-for-Raspberry-Pi-4-5V-3A-p-4089.html" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/USB-Power-Adapter-for-Raspberry-Pi-4-5V-3A-p-4089.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
     </a>
 </div>

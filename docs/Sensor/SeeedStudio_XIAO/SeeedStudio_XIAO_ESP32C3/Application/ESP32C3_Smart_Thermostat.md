@@ -34,12 +34,12 @@ If you want to follow this tutorial through everything, you will need to prepare
     </tr>
     <tr>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" target="_blank" rel="noopener noreferrer">
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank" rel="noopener noreferrer">
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now🖱️</font></span></strong>
             </a>
         </div></td>
@@ -70,22 +70,22 @@ If you want to follow this tutorial through everything, you will need to prepare
     </tr>
     <tr>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-Pro-AM2302-DHT22.html" target="_blank" rel="noopener noreferrer">
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-Pro-AM2302-DHT22.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Channel-SPDT-Relay.html" target="_blank" rel="noopener noreferrer">
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Channel-SPDT-Relay.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html" target="_blank" rel="noopener noreferrer">
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-96-SSD1315-p-4294.html" target="_blank" rel="noopener noreferrer">
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-96-SSD1315-p-4294.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
             </a>
         </div></td>
