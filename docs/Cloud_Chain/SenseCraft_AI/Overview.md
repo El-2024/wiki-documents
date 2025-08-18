@@ -21,7 +21,7 @@ last_update:
 SenseCraft AI is an all-in-one platform designed to empower developers and creators in building and deploying AI projects with ease. The website offers a wide range of tools and features to streamline the AI development process, making it accessible to users with varying levels of expertise. In this wiki, we will explore the main sections of the SenseCraft AI website, providing an overview of their key features and functionalities.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://sensecraft.seeed.cc/ai/#/home">
+    <a class="get_one_now_item" href="https://sensecraft.seeed.cc/ai/#/home" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}>One-Click Direct 🖱️</font></span></strong>
     </a>
 </div>

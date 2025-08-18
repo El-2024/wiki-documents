@@ -37,7 +37,7 @@ SO-ARM10x 和 reComputer Jetson AI 智能机器人套件无缝结合了高精度
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://s.click.taobao.com/j6b5cCs">
+<a class="get_one_now_item" href="https://s.click.taobao.com/j6b5cCs" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> 淘宝来一单 🖱️</font></span></strong>
 </a></div>
 
