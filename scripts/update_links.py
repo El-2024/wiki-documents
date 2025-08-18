@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 使用以下命令执行：python scripts/link_fix.py ./docs
 
 import os
 import re
