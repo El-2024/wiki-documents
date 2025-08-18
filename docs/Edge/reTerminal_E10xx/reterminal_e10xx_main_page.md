@@ -23,10 +23,10 @@ Unlike traditional displays that consume power continuously, the reTerminal E10x
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/24.png" style={{width:500, height:'auto'}}/></div><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-  <a class="get_one_now_item" href="https://wiki.seeedstudio.com/getting_started_with_reterminal_e1001">
+  <a class="get_one_now_item" href="https://wiki.seeedstudio.com/getting_started_with_reterminal_e1001" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}>reTerminal E1001 Wiki</font></span></strong>
   </a>
-  <a class="get_one_now_item" href="/reterminal_e10xx_main_page">
+  <a class="get_one_now_item" href="/reterminal_e10xx_main_page" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}>Get One Now</font></span></strong>
   </a>
 </div><br />
@@ -47,10 +47,10 @@ The reTerminal E1001 features a 7.5-inch monochrome ePaper display with 4-level 
 The reTerminal E1002 features a vibrant 7.3-inch full-color ePaper display with ACeP (Advanced Color ePaper) technology. This color display offers the same power efficiency benefits of ePaper technology while allowing for more visually engaging content with multiple colors, making it ideal for applications where visual distinction and aesthetic appeal are important.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-  <a class="get_one_now_item" href="https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002">
+  <a class="get_one_now_item" href="https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}>reTerminal E1002 Wiki</font></span></strong>
   </a>
-  <a class="get_one_now_item" href="/reterminal_e10xx_main_page">
+  <a class="get_one_now_item" href="/reterminal_e10xx_main_page" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}>Get One Now</font></span></strong>
   </a>
 </div><br />
@@ -67,10 +67,10 @@ The reTerminal E1002 features a vibrant 7.3-inch full-color ePaper display with 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/23.png" style={{width:1000, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://sensecraft.seeed.cc/hmi">
+    <a class="get_one_now_item" href="https://sensecraft.seeed.cc/hmi" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> SenseCraft HMI 🖱️</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_hmi_overview">
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecraft_hmi_overview" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> SenseCraft HMI Wiki</font></span></strong>
   </a>
 </div><br />

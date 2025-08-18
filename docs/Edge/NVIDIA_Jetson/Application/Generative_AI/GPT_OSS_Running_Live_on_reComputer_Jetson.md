@@ -39,7 +39,7 @@ In this wiki, we will accomplish the following tasks using the [reComputer Super
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Super-J4012-p-6443.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Super-J4012-p-6443.html" target="_blank" rel="noopener noreferrer">
         <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>

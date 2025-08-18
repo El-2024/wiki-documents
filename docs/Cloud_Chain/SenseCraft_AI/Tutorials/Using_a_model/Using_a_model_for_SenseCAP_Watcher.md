@@ -22,7 +22,7 @@ Before you begin using custom models from the SenseCraft AI model repository, en
 - **SenseCraft APP**: Install the SenseCraft APP on your mobile device. The app is available for both iOS and Android platforms and can be downloaded from the respective app stores.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://sensecraft-app-download.seeed.cc">
+    <a class="get_one_now_item" href="https://sensecraft-app-download.seeed.cc" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> Download APP 🖱️</font></span></strong>
     </a>
 </div>
@@ -37,13 +37,13 @@ Before you begin using custom models from the SenseCraft AI model repository, en
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Watcher-W1-A-p-5979.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Watcher-W1-A-p-5979.html" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://www.youtube.com/watch?v=ny22Z0cAIqE">
+    <a class="get_one_now_item" href="https://www.youtube.com/watch?v=ny22Z0cAIqE" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> Watcher's Video</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://github.com/Seeed-Studio/OSHW-SenseCAP-Watcher">
+    <a class="get_one_now_item" href="https://github.com/Seeed-Studio/OSHW-SenseCAP-Watcher" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> Github Repository</font></span></strong>
     </a>
 </div>

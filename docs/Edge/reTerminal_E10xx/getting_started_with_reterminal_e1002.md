@@ -146,7 +146,7 @@ The reTerminal E10xx series only supports 2.4GHz WiFi networks, not 5GHz or othe
 **Step 1.** Visit [SenseCraft HMI](https://sensecraft.seeed.cc/hmi) in your web browser and create an account or sign in.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://sensecraft.seeed.cc/hmi">
+    <a class="get_one_now_item" href="https://sensecraft.seeed.cc/hmi" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> SenseCraft HMI 🖱️</font></span></strong>
     </a>
 </div><br />
