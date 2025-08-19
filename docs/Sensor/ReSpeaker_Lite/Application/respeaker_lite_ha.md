@@ -189,9 +189,9 @@ substitutions:
 
 esphome:
   name: respeaker-lite
-  friendly_name: respeaker-lite-new
+  friendly_name: respeaker-lite
   project: 
-    name: formatbce.Respeaker Lite Satellite
+    name: seeed.Respeaker Lite 
     version: 2025.7.0
   min_version: 2025.6.2
   on_boot:
@@ -1202,7 +1202,7 @@ respeaker_lite:
     internal: false
     id: firmware_version
   firmware:
-    url: https://github.com/formatBCE/Respeaker-Lite-ESPHome-integration/raw/refs/heads/main/respeaker_lite_i2s_dfu_firmware_48k_v1.1.0.bin
+    url: https://github.com/KasunThushara/Respeaker-Lite-ESPHome-integration/raw/refs/heads/main/respeaker_lite_i2s_dfu_firmware_48k_v1.1.0.bin
     version: "1.1.0"
     md5: 9297155d1bf3eb21a9d4db52a89ea0c6
     on_begin:
@@ -1239,14 +1239,14 @@ respeaker_lite:
 external_components:
   - source:
       type: git
-      url: https://github.com/formatBCE/esphome
+      url: https://github.com/KasunThushara/esphome
       ref: respeaker_microphone
     components:
       - i2s_audio
     refresh: 0s
   - source:
       type: git
-      url: https://github.com/formatBCE/Respeaker-Lite-ESPHome-integration
+      url: https://github.com/KasunThushara/Respeaker-Lite-ESPHome-integration
       ref: main
     components: 
       - respeaker_lite
@@ -1268,7 +1268,7 @@ micro_wake_word:
     - model: https://github.com/kahrendt/microWakeWord/releases/download/okay_nabu_20241226.3/okay_nabu.json
       # probability_cutoff: 0.8
       id: okay_nabu
-    - model: https://raw.githubusercontent.com/formatBCE/Respeaker-Lite-ESPHome-integration/refs/heads/main/microwakeword/models/v2/kenobi.json
+    - model: https://raw.githubusercontent.com/KasunThushara/Respeaker-Lite-ESPHome-integration/refs/heads/main/microwakeword/models/v2/kenobi.json
       id: kenobi
     - model: hey_jarvis
       id: hey_jarvis
@@ -1522,7 +1522,7 @@ button:
 
 debug:
   update_interval: 5s
-```
+  ```
 </details>
 
 
