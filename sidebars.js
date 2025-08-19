@@ -3687,6 +3687,7 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/Quickly_Deploy_DeepSeek_on_reComputer_Jetson',
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/Deploy_DeepSeek_on_reComputer_Jetson_with_MLC',
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/GPT_OSS_Running_Live_on_reComputer_Jetson',
+                'Edge/NVIDIA_Jetson/Application/Generative_AI/Control_Motor_by_Voice_LLM_on_Jetson',
               ]
             },
             {
