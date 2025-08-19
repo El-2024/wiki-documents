@@ -8,23 +8,20 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/build_balenaOS_for_reComputer_r1000
 last_update:
-  date: 05/15/2025
+  date: 2024/10/8
   author: ShuishengPeng
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## 什么是 balena？
 
-[balena](https://www.balena.io/) 是一个物联网 (IoT) 平台，旨在帮助开发人员构建、部署和管理跨设备群的 IoT 应用程序。它支持多种设备架构，并包含容器化应用程序部署功能，使您能够轻松更新 IoT 软件和 HostOS，修复错误并在 IoT 应用程序中引入新功能。balena 提供了一种统一的方式来推送代码更新、管理设备配置，并确保设备在现场可靠、安全地运行，无论其位置或网络条件如何。
+[balena](https://www.balena.io/) 是一个物联网 (IoT) 平台，旨在帮助开发人员构建、部署和管理跨设备群的 IoT 应用程序。它支持多种设备架构，并包含用于容器化应用程序部署的功能，使您能够轻松更新 IoT 软件和 HostOS，修复错误并为 IoT 应用程序引入新功能。balena 提供了一种统一的方式来推送代码更新、管理设备配置，并确保设备无论在何处或网络条件如何，都能可靠且安全地运行。
 
 本教程将向您展示如何为 R1000 编译、配置和烧录 balenaOS。
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Edge_Box/balena/balena.png" alt="pir" width="700" height="auto" /></div>
 
-## 开始准备
+## 开始之前
 
-在开始这个项目之前，您可能需要提前准备好硬件和软件，如下所述。
+在开始此项目之前，您可能需要按照以下说明提前准备好硬件和软件。
 
 ### 硬件准备
 
@@ -39,7 +36,7 @@ last_update:
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html">
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a></div></td>
         </tr>
@@ -65,7 +62,7 @@ last_update:
 
 </div>
 
-**步骤 2**：请使用 USB Type-C 数据线将 reComputer R1000 连接到您的电脑。
+**步骤 2**：请使用 USB Type-C 数据线将 reComputer R1000 连接到您的计算机。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/balena/type-cport.png" alt="pir" width="250" height="auto" /></div>
 
@@ -88,14 +85,14 @@ last_update:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/balena/0_build_balenaOS.gif" alt="pir" width="700" height="auto" /></div>
 
-**步骤 3**：编译后的镜像名为 `balena-image-seeed-recomputer-r100x.balenaos-img`，位于 `build/tmp/deploy/images/seeed-recomputer-r100x` 目录中。至此，镜像编译完成，下一步是进行配置。
+**步骤 3**：编译后的镜像名为 `balena-image-seeed-recomputer-r100x.balenaos-img`，位于 `build/tmp/deploy/images/seeed-recomputer-r100x` 目录中。至此，镜像编译完成，下一步是配置它。
 
 :::note
 此仓库的默认 balenaOS 版本为 5.3.27+rev1。版本信息位于 `VERSION` 文件中。如果需要编译其他版本的 balenaOS，请更改 `VERSION` 文件中的内容。
 :::
 
 ### 配置 R1000-balenaOS
-**步骤 1**：进入编译镜像所在目录，然后进入命令行界面，输入 `balena login`，登录到 `balena Cloud`。
+**步骤 1**：进入编译镜像所在的目录，然后进入命令行界面，输入 `balena login` 并登录到 `balena Cloud`。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/balena/1_login_balena.gif" alt="pir" width="700" height="auto" /></div>
 
@@ -110,7 +107,7 @@ last_update:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/balena/2_preload_image.gif" alt="pir" width="700" height="auto" /></div>
 
-**步骤 4**：将新设备注册到 Fleet，并生成设备 ID。
+**步骤 4**：将新设备注册到 Fleet 并生成设备 ID。
 ```shell
 balena device register [fleet name]
 ```
@@ -131,7 +128,7 @@ balena os configure balena-image-seeed-recomputer-r100x.balenaos-img --config co
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/balena/5_config_image.gif" alt="pir" width="700" height="auto" /></div>
 
-**步骤 7**：复制最终的镜像文件，此镜像可以烧录到 reComputer R1000。
+**步骤 7**：复制最终的镜像文件，该镜像可以烧录到 reComputer R1000。
 ```shell
 cp balena-image-seeed-recomputer-r100x.balenaos-img recomputer_balenaos-dev.img
 ```
@@ -146,7 +143,7 @@ cp balena-image-seeed-recomputer-r100x.balenaos-img recomputer_balenaos-dev.img
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/balena/burn_image.gif" alt="pir" width="700" height="auto" /></div>
 
-**步骤 3**：烧录完成后，重启 R1000。一段时间后，您将在 balena Cloud 上看到新设备成功上线。
+**步骤 3**：烧录完成后，重启 R1000。稍等片刻后，您将在 balena Cloud 上看到新设备成功上线。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/balena/7_online.png" alt="pir" width="700" height="auto" /></div>
 
@@ -155,7 +152,7 @@ cp balena-image-seeed-recomputer-r100x.balenaos-img recomputer_balenaos-dev.img
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们将为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供了多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们为您提供多种支持渠道，确保您使用我们的产品时体验顺畅。我们提供多种沟通方式，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

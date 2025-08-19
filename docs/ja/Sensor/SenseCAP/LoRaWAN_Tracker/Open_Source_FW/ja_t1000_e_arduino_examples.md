@@ -200,7 +200,7 @@ Application ID を入力し、「Create application」をクリックして変�
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。
-- 特に [Frederik](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=Support+Arduino+to+our+new+open-source+LoRaWAN+device%2C+the+new+T1000-E+for+LoRaWAN&pane=issue&itemId=94352679&issue=Seeed-Studio%7Cwiki-documents%7C2144) さんに感謝します。彼の献身的な努力により、あなたの作業は[展示](https://wiki.seeedstudio.com/ja/contributors/)される予定です。
+- 特に [Frederik](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=Support+Arduino+to+our+new+open-source+LoRaWAN+device%2C+the+new+T1000-E+for+LoRaWAN&pane=issue&itemId=94352679&issue=Seeed-Studio%7Cwiki-documents%7C2144) さんに感謝します。彼の献身的な努力により、あなたの作業は[展示](https://wiki.seeedstudio.com/contributors/)される予定です。
 
 ## 技術サポートと製品ディスカッション
 

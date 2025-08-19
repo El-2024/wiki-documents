@@ -21,7 +21,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-  <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J401B-optional-accessories.html"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
+  <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J401B-optional-accessories.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
 </div>
 
 ## はじめに
@@ -846,7 +846,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 ## インターフェースの使用方法
 
 :::info
-インターフェースの使用方法については、この [Wiki ページ](/recomputer_j401b_interfaces_usage) を参照してください。
+インターフェースの使用方法については、この [Wiki ページ](/ja/recomputer_j401b_interfaces_usage) を参照してください。
 :::
 
 ## リソース

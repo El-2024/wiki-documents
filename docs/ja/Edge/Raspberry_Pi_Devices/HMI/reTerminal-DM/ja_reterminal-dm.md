@@ -29,7 +29,7 @@ CANバス、RS485、RS232、ギガビットイーサネットポートなどの�
 > [4Gバンドル](https://www.seeedstudio.com/reTerminal-DM-LTE-Cat-4-EC25-Bundle-p-5675.html)
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-DM-p-5616.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-DM-p-5616.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
@@ -846,7 +846,7 @@ USB 2.0 Type-A ポートが2つあり、フラッシュドライブ、ウェブ�
 
 <div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/usb-c.png" /></div>
 
-USB Type-C は USB 2.0 ポートで、シリアルデバッグまたは OS イメージのフラッシュに使用されます（ブートスイッチの位置に依存します）。OS のフラッシュについては、[Flashing OS Wiki ページ](/reterminal-dm-flash-OS) を参照してください。
+USB Type-C は USB 2.0 ポートで、シリアルデバッグまたは OS イメージのフラッシュに使用されます（ブートスイッチの位置に依存します）。OS のフラッシュについては、[Flashing OS Wiki ページ](/ja/reterminal-dm-flash-OS) を参照してください。
 
 ### SIMカードスロット
 
@@ -1177,7 +1177,7 @@ reTerminal DM のメインボードには CSI カメラインターフェース�
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/2/-/2-113991135--lte-cat-4-ec25-eux-mini-pcie-font_1.jpg" alt="pir" width={600} height="auto" /></p>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/LTE-Cat-4-EC25-EUX-mini-PCIe-p-5669.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/LTE-Cat-4-EC25-EUX-mini-PCIe-p-5669.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
@@ -1188,7 +1188,7 @@ reTerminal DM のメインボードには CSI カメラインターフェース�
 - EC25-EUX 4G モジュール x1
 - SIM カード x1
 
-**ステップ 1.** [EC25 4G モジュールのハードウェア組み立て](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) ガイドを参照して、`EC25 4G モジュール` を `4G/LTE PCIe スロット` にインストールしてください。このスロットには *`4G/LTE`* のシルクスクリーンが表示されます。また、システムを起動する前に [SIM カードスロット](/reterminal-dm/#sim-card-slot) に 4G 対応の SIM カードを挿入してください。
+**ステップ 1.** [EC25 4G モジュールのハードウェア組み立て](/ja/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) ガイドを参照して、`EC25 4G モジュール` を `4G/LTE PCIe スロット` にインストールしてください。このスロットには *`4G/LTE`* のシルクスクリーンが表示されます。また、システムを起動する前に [SIM カードスロット](/ja/reterminal-dm/#sim-card-slot) に 4G 対応の SIM カードを挿入してください。
 
 **ステップ 2.** EC25-EUX が検出されるかどうかを以下のコマンドで確認してください。
 
@@ -1258,12 +1258,12 @@ import TabItem from '@theme/TabItem';
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/114992967-spi-us915.jpg" alt="pir" width={600} height="auto" /></p>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM1302-LoRaWAN-Gateway-Module-SPI-US-915-p-5454.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM1302-LoRaWAN-Gateway-Module-SPI-US-915-p-5454.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
 
-**ステップ 1.** [LoraWAN® モジュールのハードウェア組み立て](/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna)ガイドを参照して、`WM1302 SPI LoraWAN® モジュール`を`LoraWAN® Mini PCIeスロット`に取り付けます。このスロットには*`Lora`*のシルクスクリーンが表示されます。必要なパッケージ（build-essential: DEBパッケージをソースコードから作成するために必要なツールを含むDebianパッケージ）をインストールします。
+**ステップ 1.** [LoraWAN® モジュールのハードウェア組み立て](/ja/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna)ガイドを参照して、`WM1302 SPI LoraWAN® モジュール`を`LoraWAN® Mini PCIeスロット`に取り付けます。このスロットには*`Lora`*のシルクスクリーンが表示されます。必要なパッケージ（build-essential: DEBパッケージをソースコードから作成するために必要なツールを含むDebianパッケージ）をインストールします。
 
 ```sh
 sudo apt update
@@ -1320,12 +1320,12 @@ $ ./lora_pkt_fwd -c global_conf.json.sx1250.US915
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-114992991-wio-wm1302-lorawan-gateway-module-_spi_---us915-m---first.jpg" alt="pir" width={600} height="auto" /></p>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-Without-SX1262-USB-US915-p-5602.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-Without-SX1262-USB-US915-p-5602.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
 
-**ステップ 1.** [LoraWAN® モジュールのハードウェア組み立て](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna)ガイドを参照して、`WM1302 USB LoraWAN® モジュール`を`4G Mini PCIeスロット`に取り付けます。このスロットには*`4G`*のシルクスクリーンが表示されます。
+**ステップ 1.** [LoraWAN® モジュールのハードウェア組み立て](/ja/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna)ガイドを参照して、`WM1302 USB LoraWAN® モジュール`を`4G Mini PCIeスロット`に取り付けます。このスロットには*`4G`*のシルクスクリーンが表示されます。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/dmlora.png"/></div>
 

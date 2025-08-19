@@ -30,7 +30,7 @@ import TabItem from '@theme/TabItem';
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-  <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html?utm_source=seeed&utm_medium=wiki">
+  <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-RP2350-p-5944.html?utm_source=seeed&utm_medium=wiki" target="_blank">
   <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
   </a>
 </div><br></br>
@@ -165,7 +165,7 @@ RP2350 を搭載した XIAO RP2350 は、Raspberry Pi が提供する MicroPytho
 ## はじめに▶️
 
 :::info 注意
-このページは主に MicroPython ユーザー向けです。SDKプログラミングを学びたい方や上級ユーザー向けには、[Raspberry Pi Picoシリーズ C/C++ SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf)をお勧めします。このガイドでは環境のセットアップ方法とサンプルコードの使用方法を説明します。また、XIAO RP2350に関連する具体的な指示については、[XIAO RP2350 with C/C++ SDK](/xiao-rp2350-c-cpp-sdk)をご覧ください。
+このページは主に MicroPython ユーザー向けです。SDKプログラミングを学びたい方や上級ユーザー向けには、[Raspberry Pi Picoシリーズ C/C++ SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf)をお勧めします。このガイドでは環境のセットアップ方法とサンプルコードの使用方法を説明します。また、XIAO RP2350に関連する具体的な指示については、[XIAO RP2350 with C/C++ SDK](/ja/xiao-rp2350-c-cpp-sdk)をご覧ください。
 :::
 
 :::warning MicroPython ファームウェアの問題
@@ -432,7 +432,7 @@ while True:
 
 ### バッテリーと電源管理
 
-追加のコンポーネントなしでバッテリー電圧を読み取ることは可能ですか？はい、XIAO RP2350 ではこれがこれまで以上に簡単になりました。以前の XIAO ファミリー（例：[XIAO ESP32C3](/XIAO_ESP32C3_Getting_Started/#check-the-battery-voltage)）では、抵抗を使用して *A0* に手動で接続する必要がありました。
+追加のコンポーネントなしでバッテリー電圧を読み取ることは可能ですか？はい、XIAO RP2350 ではこれがこれまで以上に簡単になりました。以前の XIAO ファミリー（例：[XIAO ESP32C3](/ja/XIAO_ESP32C3_Getting_Started/#check-the-battery-voltage)）では、抵抗を使用して *A0* に手動で接続する必要がありました。
 
 しかし、XIAO RP2350 では、このプロセスが簡略化されています。`A3/GPIO29` ピンを直接使用してバッテリー電圧レベルを読み取ることができ、設計と開発が効率化されます。バッテリーレベルを読み取るには、`GPIO19` ピンを高レベルに設定する必要があることを忘れないでください。
 
@@ -536,11 +536,11 @@ XIAO RP2350はRaspberry Pi RP2350のパワーを活用し、Raspberry Piコミ�
 
 ### 拡張と応用
 
-[XIAOシリーズ](/xiao_topic_page)は、学習や使用のための幅広い周辺機器とアクセサリを提供しています。カラフルな画面で完璧なインタラクションを可能にするものや、明るくシンプルなRGBライトを備えた統合ボードなど、さまざまなオプションが用意されています。
+[XIAOシリーズ](/ja/xiao_topic_page)は、学習や使用のための幅広い周辺機器とアクセサリを提供しています。カラフルな画面で完璧なインタラクションを可能にするものや、明るくシンプルなRGBライトを備えた統合ボードなど、さまざまなオプションが用意されています。
 
 XIAOファミリーの一員として、XIAO RP2350も同様です。もちろん、引き出された追加ピンをより良く活用するために、新しい*周辺機器とボード*が続々と登場し、その性能を最大限に活用できるようになります。
 
-- 🌟 **[アクセサリで拡張](/SeeedStudio_XIAO_Series_Introduction/#seeed-studio-xiao-series-compatible-accessories)**  
+- 🌟 **[アクセサリで拡張](/ja/SeeedStudio_XIAO_Series_Introduction/#seeed-studio-xiao-series-compatible-accessories)**  
   ディスプレイやLEDマトリックスからGroveモジュールやセンサーまで、XIAOファミリーと互換性のある幅広いアドオンやモジュールを発見し、それらがプロジェクトをどのように強化できるかを学びましょう。
 
 ### コミュニティと学習

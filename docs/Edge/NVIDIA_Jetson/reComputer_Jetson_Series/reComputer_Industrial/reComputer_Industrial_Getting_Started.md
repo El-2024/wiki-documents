@@ -21,7 +21,7 @@ reComputer industrial comes with a passive heatsink and a fanless design, making
 reComputer industrial has 2 RJ45 GbE ports, one of which is a PoE PSE port for providing power over Ethernet to devices like IP cameras. This eliminates the need for a separate power source and makes it easier to deploy network devices in areas without readily available power outlets. The other GbE port is used to connect to a network switch or router, enabling communication with other devices on the network and access to the Internet.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Industrial-J4011-p-5681.html">
+<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Industrial-J4011-p-5681.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 </a></div>
 
@@ -567,7 +567,7 @@ sudo apt install nvidia-jetpack -y
     </tr>
     <tr>
       <td>reComputer Industrial J3010</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXK1GomjByJKnmt3OdE5Vq8BSqzYZm1MY_yD18YjmRplLw?e=dIWPKA" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EeC0UJ66ZKFHi71CnyHPS5gBxEXQE9yVVB9-Kt6P_flA0A?e=Pxid2b" target="_blank" rel="noopener noreferrer">Download</a></td>
       <th>A238C5229219CCF1F6AC2B2E4D93A914E6B2E471F56C975990CC03BEEFC5F9DD</th>
     </tr>
         <tr>

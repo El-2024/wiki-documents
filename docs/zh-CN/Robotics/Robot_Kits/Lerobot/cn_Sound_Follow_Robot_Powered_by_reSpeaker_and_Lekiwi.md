@@ -46,21 +46,21 @@ Lekiwi机器人套件结合ReSpeaker Mic Array v2.0，获得了语音交互和�
     <tr>
         <td>
             <div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/SO-ARM101-Low-Cost-AI-Arm-Kit-Pro-p-6427.html">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/SO-ARM101-Low-Cost-AI-Arm-Kit-Pro-p-6427.html" target="_blank">
                     <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
                 </a>
             </div>
         </td>
         <td>
             <div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/ReSpeaker-Mic-Array-v2-0.html?___store=retailer">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/ReSpeaker-Mic-Array-v2-0.html?___store=retailer" target="_blank">
                     <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
                 </a>
             </div>
         </td>
         <td>
             <div class="get_one_now_container" style={{textAlign: 'center'}}>
-                <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Mini-J4012-with-Extension-p-6353.html">
+                <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Mini-J4012-with-Extension-p-6353.html" target="_blank">
                     <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
                 </a>
             </div>
@@ -81,7 +81,7 @@ Lekiwi机器人套件结合ReSpeaker Mic Array v2.0，获得了语音交互和�
 
 ## 硬件连接
 
-1. 请参考[此维基](https://wiki.seeedstudio.com/lerobot_lekiwi/) 准备Lekiwi机器人，包括机械结构的组装和电机的配置。
+1. 请参考[此维基](https://wiki.seeedstudio.com/cn/lerobot_lekiwi/) 准备Lekiwi机器人，包括机械结构的组装和电机的配置。
 2. 使用3D打印的连接器将reSpeaker安装到Lekiwi上。
 3. 使用USB线将reSpeaker和伺服控制器连接到reComputer。
 
@@ -419,7 +419,7 @@ python -m lerobot.common.robots.lekiwi.sound_follow
 
 ## 参考文档
 
-- https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/#version 
+- https://wiki.seeedstudio.com/cn/ReSpeaker_Mic_Array_v2.0/#version 
 - https://github.com/respeaker/usb_4_mic_array 
 
 ## 技术支持与产品讨论

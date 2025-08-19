@@ -16,16 +16,16 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### Q1: デフォルトゲートウェイ IP が 192.168.2.1 の既存のルーターに OpenWrt ルーターを接続した場合はどうなりますか？
 
-詳細については、[**こちら**](/change_default_gateway_IP)をクリックしてください。
+詳細については、[**こちら**](/ja/change_default_gateway_IP)をクリックしてください。
 
 #### Q2: eMMC を搭載していない CM4 を Dual Gigabit Ethernet Carrier Board の非 CM4 バージョンに接続した場合はどうなりますか？
 
-詳細については、[**こちら**](/use_a_CM4_witout_eMMC)をクリックしてください。
+詳細については、[**こちら**](/ja/use_a_CM4_witout_eMMC)をクリックしてください。
 
 #### Q3: Web UI から Rclone を正常にセットアップできません
 
-詳細については、[**こちら**](/set_up_Rclone_from_web_UI)をクリックしてください。
+詳細については、[**こちら**](/ja/set_up_Rclone_from_web_UI)をクリックしてください。
 
 #### Q4: "Read Only Root filesystem" の問題が発生した場合、デバイスをどのように修正すればよいですか？
 
-詳細については、[**こちら**](/fix_device_ReadOnlyRootFilesystem)をクリックしてください。
+詳細については、[**こちら**](/ja/fix_device_ReadOnlyRootFilesystem)をクリックしてください。

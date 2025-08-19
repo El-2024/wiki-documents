@@ -170,7 +170,7 @@ last_update:
 
 有关更多详细功能，请参考包含在 [MYACTUATOR_Setup Software_V4.0.zip](https://www.myactuator.com/_files/archives/cab28a_b3f2a1c77d4645a08052a923690b40fc.zip?dn=MYACTUATOR_Setup%20Software_V4.0_20250206.zip) 文件中的 **Setup Software Instruction Manual - V3.0.pdf**。
 
-## 使用 [​reComputer Mini Jetson Orin](/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md) 控制电机
+## 使用 [​reComputer Mini Jetson Orin](/cn/recomputer_jetson_mini_getting_started) 控制电机
 
 目前市场上电机最常见的 CAN 通信接口使用 **XT30 (2+2)** 和 **JST 接头**。我们的 **reComputer Mini Jetson Orin** 和**reComputer Robotics**设备配备了 **双 XT30 (2+2) 接口** 和 **基于 JST 的 CAN 接口**，提供无缝兼容性。
 
@@ -185,7 +185,7 @@ last_update:
 </div>
 
 
-有关 CAN 使用的更多详细信息，请参考此 [wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can)。
+有关 CAN 使用的更多详细信息，请参考此 [wiki](https://wiki.seeedstudio.com/cn/recomputer_jetson_mini_hardware_interfaces_usage/#can)。
 
 ### 启用 CAN 接口
 

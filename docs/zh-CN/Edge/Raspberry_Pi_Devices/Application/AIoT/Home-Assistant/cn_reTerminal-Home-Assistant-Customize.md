@@ -7,39 +7,35 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reTerminal-Home-Assistant-Customize
 last_update:
-  date: 05/15/2025
+  date: 2023/1/31
   author: jianjing Huang
 ---
 
 # 如何自定义 Home Assistant
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/105.png"/></div>
 
-## 简介
+## 介绍
 
-在之前的文档中，我们已经解释了如何在 [reTerminal](https://wiki.seeedstudio.com/reTerminal_Home_Assistant)、[ODYSSEY-X86](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant) 上安装 Home Assistant，并在 PC、智能手机、平板电脑以及 reTerminal LCD 的 Kiosk 模式下显示仪表盘界面。
+在之前的文档中，我们已经讲解了如何在 [reTerminal](https://wiki.seeedstudio.com/cn/reTerminal_Home_Assistant)、[ODYSSEY-X86](https://wiki.seeedstudio.com/cn/ODYSSEY-X86-Home-Assistant) 上安装 Home Assistant，并在 PC、智能手机、平板电脑以及 reTerminal LCD 的 Kiosk 模式下显示仪表板界面。
 
-本篇文档将逐步讲解如何通过必要的配置来构建仪表盘，以及如何使用 Home Assistant 提供的一些重要附加组件。让我们开始吧！
+本篇文档将逐步讲解如何通过必要的配置来构建仪表板，以及如何使用 Home Assistant 提供的一些重要附加组件。那么让我们开始吧！
 
 ## 附加组件、HACS 和集成
 
-Home Assistant 提供了三种主要方式来扩展其功能：
+Home Assistant 主要通过以下三种方式扩展其功能：
 
 - 附加组件
 - 集成
-- HACS (Home Assistant 社区商店)
+- HACS（Home Assistant 社区商店）
 
-[附加组件](https://www.home-assistant.io/addons) 允许通过安装额外的应用程序来扩展 Home Assistant 的功能。例如，与 ESPHome 智能传感器连接、将 Home Assistant 自动备份到 Google Drive 等。
+[附加组件](https://www.home-assistant.io/addons) 允许通过安装额外的应用程序来扩展 Home Assistant 的功能。例如，使用 ESPHome 连接智能传感器、将 Home Assistant 自动备份到 Google Drive 等。
 
-[集成](https://www.home-assistant.io/integrations) 允许将 Home Assistant 与其他服务连接。例如，与智能灯、CCTV 摄像头等连接。
+[集成](https://www.home-assistant.io/integrations) 允许将 Home Assistant 与其他服务连接。例如，连接智能灯、监控摄像头等。
 
-[HACS (Home Assistant 社区商店)](https://hacs.xyz/) 允许您为 Home Assistant 添加自定义前端集成的组件。例如，支持新的硬件/传感器、新主题等。
+[HACS（Home Assistant 社区商店）](https://hacs.xyz/) 允许您为 Home Assistant 添加自定义前端集成组件。例如，支持新的硬件/传感器、新主题等。
 
-本篇文档将简要介绍上述功能。如果您想了解更多，有大量关于 Home Assistant 的在线资源，以下是一些可以很好地指导您的 YouTube 频道：
+本篇文档将简要介绍上述功能。如果您想了解更多，网上有大量关于 Home Assistant 的资源，以下是一些可以很好地指导您的 YouTube 频道：
 
 - [EverythingSmartHome](https://www.youtube.com/c/EverythingSmartHome)
 - [TheHookUp](https://www.youtube.com/c/TheHookUp)
@@ -70,26 +66,26 @@ Home Assistant 提供了三种主要方式来扩展其功能：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/20.png"/></div>
 
-除了 Home Assistant 提供的默认附加组件，您还可以添加由社区开发的 **第三方附加组件**。然而，这些组件并非由 Home Assistant 开发者维护。稍后我们将展示如何添加这些第三方附加组件。
+除了 Home Assistant 提供的默认附加组件外，您还可以添加社区开发的 **第三方附加组件**。不过，这些组件并非由 Home Assistant 开发者维护。稍后我们将展示如何添加这些第三方附加组件。
 
 ### 开始使用附加组件
 
 现在让我们设置一些附加组件。这里我们将展示如何设置以下附加组件：
 
-- Terminal & SSH
+- 终端和 SSH
 - 文件编辑器
 - Glances
 - Google Drive 备份
 
-您还可以设置其他附加组件，例如 **Node-RED、ESPHome、Adguard Home、BitWarden、Samba Share、Mosquitto broker、BookStack、Uptime Kuma、Cloudflared Tunnel 等**。
+您还可以设置其他附加组件，例如 **Node-RED、ESPHome、Adguard Home、BitWarden、Samba Share、Mosquitto broker、BookStack、Uptime Kuma、Cloudflared Tunnel 等**
 
 #### 安装附加组件
 
-安装附加组件的过程对所有附加组件都是通用的。因此，我们将在这里进行说明。
+安装附加组件的过程对所有附加组件都是通用的，因此我们将在这里进行说明。
 
 - **步骤 1.** 按照之前的说明访问 **附加组件商店**
 
-- **步骤 2.** 选择一个附加组件或在搜索栏中输入。例如，这里我们选择 **Terminal & SSH** 附加组件。
+- **步骤 2.** 选择一个附加组件或在搜索栏中输入。例如，这里我们选择 **终端和 SSH** 附加组件。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/21.png"/></div>
 
@@ -97,11 +93,11 @@ Home Assistant 提供了三种主要方式来扩展其功能：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/22.png"/></div>
 
-- **步骤 4.** 配置更多设置，例如 **开机启动、看门狗、自动更新和在侧边栏显示**。如果您愿意，可以全部启用，然后点击 **启动**。
+- **步骤 4.** 配置更多设置，例如 **开机启动、看门狗、自动更新和在侧边栏显示**。您可以根据需要全部启用，然后点击 **启动**
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/23.png"/></div>
 
-如果附加组件已启动并运行，您将看到这个 **绿色圆点**。
+如果附加组件已启动并运行，您将看到这个 **绿色点**
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/25.png"/></div>
 
@@ -111,7 +107,7 @@ Home Assistant 提供了三种主要方式来扩展其功能：
 
 #### 文件编辑器附加组件
 
-虽然您可以直接从 **设置** 下的用户界面配置大部分 Home Assistant，但某些部分需要您编辑一些文件，例如 **configuration.yaml**，其中包含要加载的集成及其配置。您可以向此配置文件添加代码片段以启用特定功能。
+虽然您可以直接从用户界面下的 **设置** 配置大部分 Home Assistant，但有些部分需要您编辑一些文件，例如 **configuration.yaml**，其中包含要加载的集成及其配置。您可以向此配置文件添加代码片段以启用特定功能。
 
 然而，为了访问这些配置文件，我们需要一个文件编辑器。这就是 **文件编辑器** 附加组件的用途。
 
@@ -125,11 +121,11 @@ Home Assistant 提供了三种主要方式来扩展其功能：
 
 #### Glances 附加组件
 
-在安装 Home Assistant 后，您可能希望检查主机设备上的硬件资源使用情况。**Glances** 插件可以提供所有硬件资源使用情况的概览。
+在安装了 Home Assistant 之后，您可能希望检查主机设备上的硬件资源使用情况。**Glances** 插件可以提供所有硬件资源使用情况的概览。
 
 - **步骤 1.** 在 **插件商店** 中查找 **Glances** 插件，点击 **安装** 并 **启动**。
 
-- **步骤 2.** 您可以点击 **打开 Web 界面** 或在左侧导航栏中点击 **Glances** 来访问它。
+- **步骤 2.** 您可以点击 **打开 Web UI** 或左侧导航栏中的 **Glances** 来访问它。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/28.png"/></div>
 
@@ -139,13 +135,13 @@ Home Assistant 提供了三种主要方式来扩展其功能：
 
 #### Google Drive Backup 插件
 
-如前所述，您可以为 Home Assistant 安装第三方插件，**Google Drive Backup** 就是其中之一。在花费大量时间和精力设置 Home Assistant 以满足您的需求后，如果系统崩溃，所有努力都将付诸东流。这时备份功能可以拯救您。
+如前所述，您可以为 Home Assistant 安装第三方插件，**Google Drive Backup** 就是其中之一。在花费大量时间和精力设置 Home Assistant 以满足您的需求后，如果系统崩溃，所有努力都将付诸东流。这时，备份功能可以拯救您。
 
-默认情况下，Home Assistant 具有备份功能，并可以将备份离线保存到运行 Home Assistant 的主机设备上。然而，如果主机设备无法响应，您甚至无法访问它时，该如何从之前的备份中恢复呢？
+默认情况下，Home Assistant 具有备份功能，并可以将备份离线保存到运行 Home Assistant 的主机设备上。然而，如果主机设备无法响应，甚至无法访问，您将如何从之前的备份中恢复？
 
 Google Drive Backup 插件允许您配置自动备份功能，它会每天将备份上传到您的 Google Drive。因此，如果您无法访问主机设备，可以从 Google Drive 下载保存的备份并在设备上恢复。
 
-- **步骤 1.** 访问 **插件商店**，点击右上角的 **三个点**，然后点击 **Repositories（存储库）**。
+- **步骤 1.** 访问 **插件商店**，点击右上角的 **三个点**，然后点击 **Repositories**。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/30.png"/></div>
 
@@ -153,7 +149,7 @@ Google Drive Backup 插件允许您配置自动备份功能，它会每天将备
 
 <div align="center"><img width={450} src="https://files.seeedstudio.com/wiki/Home-Assistant/31.png"/></div>
 
-如果添加成功，您将看到如下界面：
+如果成功添加，您将看到以下内容：
 
 <div align="center"><img width={450} src="https://files.seeedstudio.com/wiki/Home-Assistant/32.png"/></div>
 
@@ -163,11 +159,11 @@ Google Drive Backup 插件允许您配置自动备份功能，它会每天将备
 
 - **步骤 4.** 访问 **插件商店**，查找 **Home Assistant Google Drive Backup** 插件，点击 **安装** 并 **启动**。
 
-- **步骤 5.** 您可以点击 **打开 Web 界面** 或在左侧导航栏中点击 **备份** 来访问它。
+- **步骤 5.** 您可以点击 **打开 Web UI** 或左侧导航栏中的 **Backups** 来访问它。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/34.png"/></div>
 
-- **步骤 6.** 点击 **使用 Google Drive 进行身份验证**，它将打开一个新窗口。使用您的 Google 账户登录并允许访问。
+- **步骤 6.** 点击 **Authenticate with Google Drive**，它将打开一个新窗口。使用您的 Google 账户登录并允许访问。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/36.png"/></div>
 
@@ -189,7 +185,7 @@ Google Drive Backup 插件允许您配置自动备份功能，它会每天将备
 
 ## 集成
 
-现在让我们来探索 Home Assistant 上的集成功能！在这里，我们将向您展示如何设置以下集成。
+现在让我们在 Home Assistant 上探索集成功能！在这里，我们将向您展示如何设置以下集成：
 
 - 智能灯光控制
 - CCTV 摄像头流媒体
@@ -208,7 +204,7 @@ Google Drive Backup 插件允许您配置自动备份功能，它会每天将备
 
 ### 智能灯光集成
 
-让我们添加 **小米智能灯光集成**，以便我们可以打开/关闭智能灯。在继续之前，请确保您拥有一个小米智能灯。如果您有其他智能灯，例如 **Philips Hue**，您可以添加 **Philips Hue 集成**，步骤几乎相同。
+让我们添加 **小米智能灯光集成**，以便我们可以打开/关闭智能灯。在继续之前，请确保您可以访问小米智能灯。如果您有其他智能灯，例如 **Philips Hue**，您可以添加 **Philips Hue 集成**，步骤几乎相同。
 
 - **步骤 1.** 搜索 **Yeelight** 并选择它
 
@@ -222,11 +218,11 @@ Google Drive Backup 插件允许您配置自动备份功能，它会每天将备
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/Home-Assistant/45.png"/></div>
 
-- **步骤 4.** 在 **概览** 页面，点击左上角的三点图标，然后点击 **编辑 仪表板**
+- **步骤 4.** 在 **概览** 页面，点击左上角的三点图标，然后点击 **编辑仪表板**
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/46.png"/></div>
 
-- **步骤 5.** 在这里我们不需要带有用户名的卡片。因此，点击 **三点图标** 并选择 **删除卡片** 来删除它。
+- **步骤 5.** 这里我们不需要带有用户名的卡片，因此点击 **三点图标** 并选择 **删除卡片** 将其删除
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/47.png"/></div>
 
@@ -238,7 +234,7 @@ Google Drive Backup 插件允许您配置自动备份功能，它会每天将备
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/49.png"/></div>
 
-- **步骤 8.** 更改 **名称** 并点击 **保存**
+- **步骤 8.** 修改 **名称** 并点击 **保存**
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/50.png"/></div>
 
@@ -250,19 +246,19 @@ Google Drive Backup 插件允许您配置自动备份功能，它会每天将备
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/Home-Assistant/52.png"/></div>
 
-- **步骤 11.** 如果您点击 **三点图标**，您可以获得更多灯光控制功能，例如更改颜色和色温的能力。
+- **步骤 11.** 如果您点击 **三点图标**，您可以获得更多灯光控制选项，例如更改颜色和色温。
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/Home-Assistant/53.png"/></div>
 
 ### CCTV IP 摄像头集成
 
-在这里我们将添加一个摄像头集成，以便能够通过 RTSP 协议查看 CCTV 摄像头的实时视频流！在继续之前，请确保您拥有一个支持 IP 功能并能够通过 RTSP 进行流媒体的 CCTV 摄像头。
+在这里，我们将添加一个摄像头集成，以便能够通过 RTSP 协议查看 CCTV 摄像头的实时视频流！在继续之前，请确保您可以访问具有 IP 功能并支持 RTSP 流媒体的 CCTV 摄像头。
 
 - **步骤 1.** 在 **集成** 页面下的 **设置新集成** 中，搜索 **通用摄像头** 并选择它。
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/Home-Assistant/54.png"/></div>
 
-- **步骤 2.** 添加 **RTSP 流 URL**，如果需要，输入 **用户名、密码**，更改 **帧率**，然后点击 **提交**
+- **步骤 2.** 添加 **RTSP 流 URL**，输入 **用户名、密码**（如果需要），更改 **帧率**，然后点击 **提交**
 
 <div align="center"><img width={350} src="https://files.seeedstudio.com/wiki/Home-Assistant/55.png"/></div>
 
@@ -274,20 +270,20 @@ Google Drive Backup 插件允许您配置自动备份功能，它会每天将备
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/Home-Assistant/57.png"/></div>
 
-- **步骤 5.** 更改 **名称**，将 **摄像头视图** 更改为 **实时**，然后点击 **保存**
+- **步骤 5.** 修改 **名称**，将 **摄像头视图** 更改为 **实时**，然后点击 **保存**
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/58.png"/></div>
 
-现在您将在仪表板上看到实时视频流！
+现在，您将在仪表板上看到实时视频流！
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/59.png"/></div>
 
-## HACS (Home Assistant Community Store)
+## HACS (Home Assistant 社区商店)
 
-现在让我们在 Home Assistant 上探索 HACS！HACS 提供了许多集成和前端自定义选项。这里我们将向您展示如何设置以下内容：
+现在让我们在 Home Assistant 上探索 HACS！HACS 提供了许多集成和前端定制选项。以下是我们将展示如何设置的内容：
 
 - 更改 Home Assistant 主题
-- 向仪表板添加天气卡片
+- 在仪表板上添加天气卡片
 
 ### 安装 HACS
 
@@ -333,21 +329,21 @@ ha ha restart
 
 <div align="center"><img width={350} src="https://files.seeedstudio.com/wiki/Home-Assistant/68.png"/></div>
 
-HACS 现在已安装！
+HACS 现已安装！
 
-- **步骤 10.** 最好现在通过导航到 **Settings > System > Hardware**，点击右上角的 **3-dots**，然后点击 **Reboot Host** 来重启系统。
+- **步骤 10.** 最好现在重启系统，导航到 **Settings > System > Hardware**，点击右上角的 **3-dots**，然后点击 **Reboot Host**
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/69.png"/></div>
 
-- **步骤 11.** 系统重启后，您将在左侧导航栏中看到 **HACS**
+- **步骤 11.** 系统重启后，您将在左侧导航栏看到 **HACS**
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Home-Assistant/73.png"/></div>
 
 ### 更改 Home Assistant 主题
 
-现在让我们使用 HACS 更改默认主题！开箱即用，Home Assistant 仅提供一个深色模式主题。然而，如果您想自定义它，请按照以下步骤操作：
+现在让我们使用 HACS 更改默认主题！默认情况下，Home Assistant 仅提供一个深色模式主题。如果您想自定义主题，请按照以下步骤操作：
 
-- **步骤 1.** 在安装自定义主题之前，我们需要在 **configuration.yaml** 文件中添加一些代码。打开 **File editor** 并点击 **Folder icon** 浏览文件系统。
+- **步骤 1.** 在安装自定义主题之前，我们需要在 **configuration.yaml** 文件中添加一些代码。打开 **File editor** 并点击 **Folder icon** 浏览文件系统
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/Home-Assistant/76.jpg"/></div>
 
@@ -355,7 +351,7 @@ HACS 现在已安装！
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/Home-Assistant/77.png"/></div>
 
-- **步骤 3.** 在文件末尾添加以下内容：
+- **步骤 3.** 在文件末尾添加以下内容
 
 ```sh
 frontend:
@@ -410,7 +406,7 @@ frontend:
 
 **注意：** 如果您无法正确加载主题，请重新启动 Home Assistant。
 
-### 向仪表板添加天气卡片
+### 在仪表板上添加天气卡片
 
 现在我们将使用 HACS 安装一个天气卡片并将其添加到仪表板！
 
@@ -432,7 +428,7 @@ frontend:
 
 <div align="center"><img width={650} src="https://files.seeedstudio.com/wiki/Home-Assistant/99.png"/></div>
 
-现在我们将添加这个 API 密钥
+现在我们将添加此 API 密钥
 
 - **步骤 6.** 在 Home Assistant 中，导航到 **Settings > Devices & Services > Integrations > + ADD INTEGRATION**，搜索 **OpenWeathermap** 并点击它
 

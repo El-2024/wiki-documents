@@ -2,23 +2,20 @@
 description: XIAO ESP32C3 ESPHome 智能恒温器
 title: Xiao ESP32C3 ESPHome 智能恒温器
 keywords:
-- 贡献
+- Contribution
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/esp32c3_smart_thermostat
 last_update:
-  date: 05/15/2025
+  date: 12/1/2023
   author: Chris (Echo7394)
 ---
 
 # Xiao ESP32C3 ESPHome 智能恒温器
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/9.jpg" alt="pir" width={500} height="auto" /></p>
 
-本教程将逐步指导您如何制作一个 Xiao ESP32C3 ESPHome 智能恒温器。现在让我们开始吧！
+
+本教程将逐步介绍如何制作一个 Xiao ESP32C3 ESPHome 智能恒温器。现在让我们开始吧！
 
 ## 硬件准备
 
@@ -28,7 +25,7 @@ last_update:
   <tbody><tr>
       <th>Seeed Studio XIAO ESP32C3</th>
       <th>Seeed Studio 扩展板</th>
-      <th>Home Assistant 设备 <br /> 例如 Seeed Studio Home Assistant Yellow</th>
+      <th>Home Assistant 设备 <br /> 例如 Seeed Studio Home assistant Yellow</th>
     </tr>
     <tr>
       <td><div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/board-pic.png" style={{width:100, height:'auto'}}/></div></td>
@@ -37,17 +34,17 @@ last_update:
     </tr>
     <tr>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" target="_blank">
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" target="_blank">
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-">
+            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/home_assistant_topic/#-devices-for-home-assistant-" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> 查看更多 🖱️</font></span></strong>
             </a>
         </div></td>
@@ -59,10 +56,10 @@ last_update:
 <table align="center">
   <tbody><tr>
       <th>Grove - 温湿度传感器 Pro (DHT22/AM2302)</th>
-      <th>Grove - 双通道 SPDT 继电器</th>
-      <th>Grove - 高电流继电器 5V/10A</th>
+      <th>Grove - 2通道 SPDT 继电器</th>
+      <th>Grove - 大电流继电器 5V/10A</th>
       <th>Grove - OLED 显示屏 0.96" (SSD1315)</th>
-      <th>瞬时按钮 (任何类型均可)</th>
+      <th>瞬时按钮（任何类型都可以）</th>
     </tr>
     <tr>
       <td><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/2.jpg" alt="pir" width={210} height="auto" /></p></td>
@@ -73,84 +70,100 @@ last_update:
     </tr>
     <tr>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-Pro-AM2302-DHT22.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-Pro-AM2302-DHT22.html" target="_blank">
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Channel-SPDT-Relay.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Channel-SPDT-Relay.html" target="_blank">
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html" target="_blank">
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-96-SSD1315-p-4294.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-96-SSD1315-p-4294.html" target="_blank">
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
             </a>
         </div></td>
     </tr>
   </tbody></table>
 
-### Grove 单通道继电器
 
-<!-- ![image4](./4.jpg) -->
+<!-- ### 1. Items Used
+
+a. Seed Studio Xiao ESP32C3
+
+<!-- ![image1](./1.jpg)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/1.jpg" alt="pir" width={1000} height="auto" /></p>
+
+b. Grove DHT22 Sensor
+
+<!-- ![image2](./2.jpg)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/2.jpg" alt="pir" width={1000} height="auto" /></p>
+
+c. Grove 2 Channel Relay
+
+<!-- ![image3](./3.jpg) 
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/3.jpg" alt="pir" width={1000} height="auto" /></p>
+
+d. Grove 单通道继电器
+
+<!-- ![image4](./4.jpg)
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/4.jpg" alt="pir" width={1000} height="auto" /></p>
 
-### Grove SSD1315 模块
+e. Grove SSD1315 模块
 
-<!-- ![image5](./5.jpg) -->
+<!-- ![image5](./5.jpg) 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/5.jpg" alt="pir" width={1000} height="auto" /></p>
 
-### （可选）Seeed Studio 扩展板
+f. （可选）Seeed Studio 扩展板
 
-<!-- ![image6](./6.jpg) -->
+<!-- ![image6](./6.jpg) 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/6.jpg" alt="pir" width={1000} height="auto" /></p>
 
-### （可选）[Seeed Studio Home Assistant Yellow](https://www.seeedstudio.com/Home-Assistant-Yellow-Kit-with-selectable-CM4-p-5680.html) 或其他设备
+d. （可选）[Seeed Studio Home Assistant Yellow](https://www.seeedstudio.com/Home-Assistant-Yellow-Kit-with-selectable-CM4-p-5680.html)，或您选择的设备
 
-<!-- ![image7](./7.jpg) -->
+<!-- ![image7](./7.jpg) 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/7.jpg" alt="pir" width={1000} height="auto" /></p>
 
-### 按钮（任何类型的按钮均可）
+e. 瞬时按钮（任何类型都可以）
 
-<!-- ![image8](./8.jpg) -->
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/8.jpg" alt="pir" width={1000} height="auto" /></p>
-
----
+<!-- ![image8](./8.jpg)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/8.jpg" alt="pir" width={1000} height="auto" /></p> -->
 
 ## 软件准备
 
 ### 安装 Home Assistant
 
-确保您已经安装并运行了 Home Assistant。这里有多个 Wiki 介绍如何将 Home Assistant 刷入 [相关产品](https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-)。我使用的是由 Raspberry Pi CM4 驱动的 Home Assistant Yellow，因此我可以[直接使用官方方法将操作系统刷入 Home Assistant Yellow](https://yellow.home-assistant.io/power-supply/)。
+确保您已经安装并运行了 Home Assistant。这里有多个介绍如何将 Home Assistant 刷入[产品](https://wiki.seeedstudio.com/cn/home_assistant_topic/#-devices-for-home-assistant-)的 wiki。我使用的是由 Raspberry Pi CM4 供电的 Home Assistant Yellow，所以我可以[直接使用官方方法将操作系统刷入 Home Assistant Yellow](https://yellow.home-assistant.io/power-supply/)。
 
 ### 在 Home Assistant 上安装 ESPHome
 
-ESPHome 可作为 **Home Assistant 插件**，可以通过插件商店轻松安装。
+ESPHome 作为 **Home Assistant 插件**提供，可以通过插件商店简单安装。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/esphome.jpg" alt="pir" width={1000} height="auto" /></p>
 
 - **步骤 1.** 点击 **INSTALL**
 
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-img/2.png" style={{width:900, height:'auto'}}/></div>
 
-- **步骤 2.** 启用所有选项，然后点击 **START**
+- **步骤 2.** 启用所有选项并点击 **START**
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-img/3.png" style={{width:900, height:'auto'}}/></div>
 
-如果 ESPHome 成功加载，您将看到以下窗口：
+如果 ESPHome 成功加载，您将看到以下窗口
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-img/4.png" style={{width:900, height:'auto'}}/></div>
 
----
 
-## 入门
+## 开始使用
 
-当所有的软件和硬件都准备好后，我们就可以开始了。
+一旦所有软件和硬件都准备就绪，我们现在就可以开始了。
 
 ### 1. 将 Seeed Studio XIAO ESP32C3 添加到 ESPHome
 
@@ -158,11 +171,11 @@ ESPHome 可作为 **Home Assistant 插件**，可以通过插件商店轻松安�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-img/5.png" style={{width:900, height:'auto'}}/></div>
 
-- **步骤 2.** 点击 **CONTINUE**
+- **步骤 2.** 点击 CONTINUE
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-img/6.png" style={{width:900, height:'auto'}}/></div>
 
-- **步骤 3.** 输入设备的 **Name**，以及 WiFi 的 **Network name** 和 **Password**，然后点击 **NEXT**
+- **步骤 3.** 为设备输入**名称**，并输入 WiFi 凭据，如**网络名称**和**密码**。然后点击 **NEXT**
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-img/7.png" style={{width:900, height:'auto'}}/></div>
 
@@ -174,7 +187,6 @@ ESPHome 可作为 **Home Assistant 插件**，可以通过插件商店轻松安�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-full_function/14.png" style={{width:400, height:'auto'}}/></div>
 
----
 
 ### 2. 创建并上传 YAML 配置
 
@@ -182,71 +194,78 @@ ESPHome 可作为 **Home Assistant 插件**，可以通过插件商店轻松安�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-img/9.png" style={{width:900, height:'auto'}}/></div>
 
----
+<!-- ### 2. 安装 Home Assistant 和 ESPHome
 
-### 创建并上传 YAML 配置
+- 在您选择的设备上安装 Home Assistant。根据您尝试安装 Home Assistant 的设备类型，有很多信息丰富的指南。设备类型将决定哪种风格的 Home Assistant 最能满足您的需求。
 
-以下代码的解释：
+- ESPHome 的安装很简单，只需在 Supervisor/Add-Ons/Extensions 选项卡中搜索"ESPHome"并点击安装即可。
 
-- **名称：** "thermostat"
+<!-- ![image9](./esphome.jpg)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/esphome.jpg" alt="pir" width={1000} height="auto" /></p> -->
 
-- **板配置：**  
-  Flash 模式设置为 DIO。  
-  板指定为 "seeed_xiao_esp32c3"，使用 Arduino 框架。
+- **步骤 7.** 创建并上传 YAML 配置
 
-- **启动时的操作：**  
-  显示日志消息："Booting thermostat."  
-  关闭三个继电器：加热、冷却和风扇。  
-  延迟 500 毫秒。  
-  执行名为 "boot_beep" 的脚本。
+  下面代码的说明：
 
-- **脚本配置：**  
-  启动蜂鸣脚本：  
-  打开蜂鸣器，设置频率以产生蜂鸣声，并在 300 毫秒后关闭。
+  - **名称：** "thermostat"
 
-- **API 和 OTA 配置：**  
-  API：  
-  指定加密密钥。  
-  OTA：  
-  设置密码为 "13371337" 以进行 OTA 更新。
+  - **板配置：** <br />
+  闪存模式设置为 DIO。<br />
+  板指定为"seeed_xiao_esp32c3"，使用 Arduino 框架。
 
-- **蜂鸣器输出：**  
-  使用 LEDC 平台配置，使用引脚 5。
+  - **启动时操作：**<br />
+  显示日志消息："Booting thermostat."<br />
+  关闭三个继电器：加热、制冷和风扇。<br />
+  延迟 500 毫秒。<br />
+  执行名为"boot_beep"的脚本。
 
-- **WiFi 配置：**  
-  指定用于连接 Wi-Fi 的 SSID 和密码。  
-  配置备用热点（捕获门户），SSID 为 "Xiao-Esp32C3"，密码为 "13371337"。
+  - **脚本配置：**<br />
+  启动蜂鸣脚本：<br />
+  打开蜂鸣器，设置其频率以产生蜂鸣声，并在 300 毫秒后关闭。
+
+  - **API 和 OTA 配置：**<br />
+  API：<br />
+  指定加密密钥。<br />
+  OTA：<br />
+  为无线更新设置密码为"13371337"。
+
+  - **蜂鸣器输出：**<br />
+  使用 LEDC 平台配置，引脚为 5。
+
+  - **WiFi 配置：**<br />
+  指定连接到 Wi-Fi 的 SSID 和密码。<br />
+  配置后备热点（强制门户），SSID 为"Xiao-Esp32C3"，密码为"13371337"。
 
 - **I2C 配置：**<br />
-  配置 I2C 通信，使用 SDA 引脚 6 和 SCL 引脚 7。
+  配置 I2C 通信，SDA 引脚为 6，SCL 引脚为 7。
 
-- **字体配置：**<br />
+  - **字体配置：**<br />
   为显示屏定义两种不同大小的字体。
 
-- **显示配置：**<br />
-  使用 SSD1315 I2C 显示屏，并通过 lambda 函数格式化和显示信息。<br />
+  - **显示屏配置：**<br />
+  使用 SSD1315 I2C 显示屏，通过 lambda 函数格式化和显示信息。<br />
   显示华氏温度、湿度、Wi-Fi 信号强度和 IP 地址。
 
-- **传感器配置：**<br />
-  使用 DHT22 传感器进行温度和湿度读取，更新间隔为 10 秒。<br />
-  包括一个 Wi-Fi 信号传感器，更新间隔为 20 秒。
+  - **传感器配置：**<br />
+  使用 DHT22 传感器读取温度和湿度，更新间隔为 10 秒。<br />
+  包含 Wi-Fi 信号传感器，更新间隔为 20 秒。
 
-- **文本传感器配置：**<br />
+  - **文本传感器配置：**<br />
   显示恒温器的 IP 地址和 ESPHome 版本。
 
-- **开关配置：**<br />
-  配置三个 GPIO 开关，分别用于 relay_heat、relay_cooling 和 relay_fan。
+  - **开关配置：**<br />
+  为 relay_heat、relay_cooling 和 relay_fan 配置三个 GPIO 开关。
 
-- **二进制传感器配置：**<br />
-  配置一个二进制传感器，用于检测循环风扇按钮按下。<br />
-  按下时控制气候系统的风扇模式。
+  - **二进制传感器配置：**<br />
+  为循环风扇按钮按压配置二进制传感器。<br />
+  按下时，控制气候系统的风扇模式。
 
-- **气候配置：**<br />
+  - **气候配置：**<br />
   使用指定的温度传感器实现恒温器控制。<br />
-  定义加热、制冷、风扇模式和空闲的操作。<br />
+  定义加热、制冷、风扇模式和空闲的动作。<br />
   设置温度限制、步长和默认预设。
 
-将此内容粘贴到您的 ESPHome 设备配置 yaml 文件中。您也可以在 [这里](https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/esp32c3config.yaml) 下载完整的 .yaml 文件。
+  将此内容粘贴到您的 ESPHome 设备配置 yaml 文件中。您也可以在[这里](https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/esp32c3config.yaml)下载完整的 .yaml 文件
 
 ```yaml
 esphome:
@@ -256,7 +275,7 @@ esphome:
   on_boot:
     priority: 750
     then:
-      - logger.log: "Booting EcoStat"
+      - logger.log: "启动 EcoStat"
       - delay: 500ms
       - lambda: |-
           id(relay_heat).turn_off();
@@ -286,7 +305,7 @@ ota:
 script:
 - id: boot_beep
   then:
-    # First ^E
+    # 第一个 ^E
     - output.turn_on: buzzer
     - output.ledc.set_frequency:
         id: buzzer
@@ -314,7 +333,7 @@ wifi:
   ssid: YOURWIFINAME
   password: YOURWIFIPASS
 
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  # 如果wifi连接失败，启用备用热点（强制门户）
   ap:
     ssid: "Xiao-Esp32C3 Fallback Hotspot"
     password: "13371337"
@@ -342,8 +361,8 @@ display:
     lambda: |-
       float temp_celsius = id(temp).state;
       float temp_fahrenheit = (temp_celsius * 9.0 / 5.0) + 32.0;
-      char temp_str[6]; // Buffer for temperature string
-      dtostrf(temp_celsius, 4, 1, temp_str); // Convert Celsius to string with 1 decimal place
+      char temp_str[6]; // 温度字符串缓冲区
+      dtostrf(temp_celsius, 4, 1, temp_str); // 将摄氏度转换为字符串，保留1位小数
 
       it.print(28, 0, id(inter), id(ip_address).state.c_str());
       it.printf(0, 18, id(roboto), "T: %.1f  ", temp_fahrenheit);
@@ -352,7 +371,7 @@ display:
 
 climate:
   - platform: thermostat
-    name: "EcoStat Heating"
+    name: "EcoStat 加热"
     id: ecostat_control_heat
     sensor: temp
     heat_deadband: 2 °F
@@ -378,7 +397,7 @@ climate:
 
 
   - platform: thermostat
-    name: "EcoStat Cooling"
+    name: "EcoStat 制冷"
     id: ecostat_control_cooling
     sensor: temp
     cool_deadband: 2 °F
@@ -413,23 +432,23 @@ sensor:
     model: DHT22
     update_interval: 10s
     temperature:
-      name: "EcoStat Temperature"
+      name: "EcoStat 温度"
       id: temp
     humidity:
-      name: "EcoStat Humidity"
+      name: "EcoStat 湿度"
       id: humidity
   - platform: wifi_signal
-    name: "Wi-Fi Signal Strength"
+    name: "Wi-Fi 信号强度"
     id: rssi
     update_interval: 20s
 
 text_sensor:
   - platform: wifi_info
     ip_address:
-      name: "EcoStat IP Address"
+      name: "EcoStat IP 地址"
       id: ip_address
   - platform: version
-    name: "EcoStat ESPHome Version"
+    name: "EcoStat ESPHome 版本"
 
 switch:
   - platform: gpio
@@ -538,75 +557,77 @@ binary_sensor:
                   fan_mode: "off"
 ```
 
-### 3. 选择组装外壳（可选）
+### 3. 组装可选外壳
 
-以下是我为本项目使用的外壳的 STL 文件。
+这里是我在这个项目中使用的外壳的STL文件。
 
 [EcoStatV2 ecostatcase](https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/EcoStatV2-ecostatcase.stl)
 
 [EcoStatV2 ecostatlid](https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/EcoStatV2-ecostatlid.stl)
 
-您可以随意使用或修改这些文件。如果您没有 3D 打印机，可以使用许多在线服务，这些服务可以根据您的需求打印这些文件，并选择任何材料。
+请随意使用或修改它们。如果您个人没有3D打印机，网上有很多服务可以用您想要的任何材料打印这些文件。
 
 <!-- ![image10](./3dfile.png) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/3dfile.png" alt="pir" width={1000} height="auto" /></p>
 
+
 ### 4. 安装组件
 
-#### 步骤 1 将所有列出的组件安装到外壳中
+#### 步骤1 将所有列出的组件安装到外壳中
 
-使用 M2x4 和 M2x6 螺丝，将之前列出的所有组件安装到外壳中的对应位置。<br />
-（DHT22 传感器可以直接按压固定到位）。
+使用M2x4和M2x6螺丝，将所有之前列出的组件安装到外壳内相应的位置。<br />
+（DHT22传感器只需压入到位即可）。
 
 <!-- ![image11](./11.jpg) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/11.jpg" alt="pir" width={500} height="auto" /></p>
 
-#### 步骤 2 将所有传感器和外设连接到 YAML 文件中指定的对应引脚
+#### 步骤2. 将所有传感器和外设连接到前述YAML中相应的引脚
 
 以下是我在连接过程中使用的方法：
 
-- **DHT22/SSD1315 - 使用 JST 连接器：** 将 DHT22 和 SSD1315 的连接器从其 PCB 上焊接并翻转到另一侧，以确保正确安装。
+- **DHT22/SSD1315 - 使用JST连接器：** 将DHT22和SSD1315的连接器拆焊并翻转到其PCB的另一面，以便正确安装。
 
-<!-- 我使用了包含的 JST -->
-<!-- 连接器和杜邦连接的组合。对于 DHT22 和 SSD1315，我使用了 JST。 -->
-<!-- 对于继电器，我在一侧使用 JST，另一侧使用杜邦连接器连接到扩展板上的 GPIO 引脚。如下图所示，我还将一个 3.7V 锂电池插入扩展板的电池连接器，以便在主电源丢失时作为备用电池使用。 -->
+<!-- I used a combination of the included JST -->
+<!-- connectors and DuPont style connections as well. for the DHT22 and SSD1315 I used JST.  -->
+<!-- For the relays I used JST on one side and for the other side I used DuPont connectors for GPIO breakout headers on the expansion board. As you can see in the photo below. I also have a 3.7V Lithium cell plugged into the expansion boards battery connection for use as a backup battery in case of main supply power loss. -->
 
-- **两种类型的继电器 - 使用 JST/杜邦连接器：** 对于继电器，我在一侧使用 JST，另一侧使用杜邦连接器连接到扩展板上的 GPIO 引脚。
+- **两种类型的继电器 - 使用JST/DuPont连接器：** 对于继电器，我在一侧使用JST，另一侧使用DuPont连接器连接到扩展板上的GPIO分线头。
 
-- **电池连接：** 我还将一个 3.7V 锂电池插入扩展板的电池连接器，以便在主电源丢失时作为备用电池使用。
+- **电池连接：** 我还将一个3.7V锂电池插入扩展板的电池连接器，用作主电源断电时的备用电池。
 
 <!-- ![image12](./10.jpg) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/10.jpg" alt="pir" width={500} height="auto" /></p>
 
-#### 步骤 3 将所需样式的瞬时按钮连接到外壳的内部前部
+#### 步骤3. 将所需样式的瞬时按钮连接到外壳前面的内侧
 
-我通过使用少量热胶将按钮固定到位来完成此步骤。然后，我将电线焊接到瞬时按钮的对角引脚上，并在电线的另一端安装杜邦连接器，以连接到扩展板上的正确 GPIO 引脚。
+我通过用一点热熔胶固定按钮来完成这项工作。然后我将导线焊接到瞬时按钮的对角相对引脚上，并在导线的另一端放置DuPont连接器，以连接到扩展板上正确的GPIO分线头。
 
 <!-- ![image13](./12.jpg) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/12.jpg" alt="pir" width={1000} height="auto" /></p>
 
-#### 步骤 4 将屏幕组装到前盖的后部
+#### 步骤4. 将屏幕组装到前盖的后面
 
-将屏幕组装到前盖的后部（用少量热胶固定）。然后使用 3 个 M4x6 螺丝将前盖固定到外壳上，如下图所示。
+将屏幕组装到前盖的后面（用少量热熔胶固定到位）。然后用3个M4x6螺丝将前盖固定到外壳上，如下所示。
 
 <!-- ![image14](./9.jpg) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/9.jpg" alt="pir" width={500} height="auto" /></p>
 
-### 5. 将线缆连接到 EcoStat 上的对应继电器
+### 5. 将导线连接到EcoStat上相应的继电器
 
-智能恒温器完成！只需拆下您家现有的恒温器，并使用下图将正确的线缆连接到 EcoStat 上的对应继电器！
+智能恒温器完成！只需拆除您家中现有的恒温器，并使用下图将正确的导线连接到EcoStat上相应的继电器！
 
 <!-- ![image15](./13.jpg) -->
 <img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/XIAO_ESP32C3_ESPHome_Smart_ThermoStat/13.jpg" alt="pir" width={500} height="auto" />
 
+
 ## ✨ 贡献者项目
 
-- 本项目由 Seeed Studio [贡献者项目](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) 支持。
-- 感谢 Chris 的努力，您的作品将被 [展示](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- 此项目由Seeed Studio [贡献者项目](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479)支持。
+- 感谢Chris的努力，您的工作将被[展示](https://wiki.seeedstudio.com/cn/Honorary-Contributors/)。
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们为您提供不同的支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

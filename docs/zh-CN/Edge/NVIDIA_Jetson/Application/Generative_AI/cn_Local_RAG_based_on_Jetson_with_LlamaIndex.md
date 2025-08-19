@@ -1,5 +1,5 @@
 ---
-description: 基于 Jetson 和 LlamaIndex 的本地 RAG
+description: 基于 Jetson 的本地 RAG 和 LlamaIndex
 title: 使用 LlamaIndex 的 RAG
 keywords:
   - Edge
@@ -10,21 +10,18 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Local_RAG_based_on_Jetson_with_LlamaIndex
 last_update:
-  date: 05/15/2025
+  date: 05/15/2024
   author: Jiahao
+
 no_comments: false # 用于 Disqus
 
 ---
 
-# 基于 Jetson 和 LlamaIndex 的本地 RAG
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+# 基于 Jetson 的本地 RAG 和 LlamaIndex
 
 ## 简介
 
-如今，越来越多的人开始使用大型语言模型来解决日常问题。然而，大型语言模型在回答某些问题时可能会出现幻觉，并向用户提供错误的信息。然而，[RAG 技术](https://www.seeedstudio.com/blog/2024/04/25/build-a-local-rag-chatbot-on-jetson-orin-for-your-knowledge-base/)可以通过向大型语言模型提供相关数据来减少幻觉的发生。因此，使用 RAG 技术来减少大型语言模型生成幻觉已经成为一种趋势。
+如今，越来越多的人开始使用大型语言模型来解决日常问题。然而，大型语言模型在回答某些问题时可能会出现幻觉，并向用户提供错误的信息。然而，[RAG 技术](https://www.seeedstudio.com/blog/2024/04/25/build-a-local-rag-chatbot-on-jetson-orin-for-your-knowledge-base/) 通过向大型语言模型提供相关数据，可以减少幻觉的发生。因此，使用 RAG 技术来减少大型语言模型中幻觉的生成已成为一种趋势。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/RAG-MLC-Jetson.gif" alt="pir" width={800} height="auto"/></p>
 
@@ -42,8 +39,8 @@ no_comments: false # 用于 Disqus
     </tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html">
-				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html" target="_blank">
+				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>
 		</tr>
@@ -54,7 +51,7 @@ no_comments: false # 用于 Disqus
 ### 第一步：安装 MLC Jetson 容器
 
 ```shell
-# 安装 jetson-container 及其依赖项
+# 安装 jetson-container 及其依赖
 git clone --depth=1 https://github.com/dusty-nv/jetson-containers
 cd jetson-containers 
 pip install -r requirements.txt 
@@ -75,7 +72,7 @@ sudo apt-get install git-lfs
 cd RAG_based_on_Jetson
 git clone https://huggingface.co/JiahaoLi/llama2-7b-MLC-q4f16-jetson-containers 
 ```
-### 第四步：运行 Docker 并安装依赖项
+### 第四步：运行 Docker 并安装依赖
 
 ```shell
 cd ../../
@@ -91,7 +88,7 @@ pip install chromadb==0.3.29
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/RAG_Install_ChromaDB.png" alt="pir" width={1000} height="auto"/></p>
 
 :::note
-可以忽略错误提示。
+可以忽略错误信息。
 :::
 
 ## 运行项目

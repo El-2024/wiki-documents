@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div align="center"><img width ="800" src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/110061363_preview-07_1.jpg"/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/Jetson-20-1-H2-p-5329.html">
+<a class="get_one_now_item" href="https://www.seeedstudio.com/Jetson-20-1-H2-p-5329.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
 </a></div>
 
@@ -149,7 +149,7 @@ JetPack のフラッシュに関する詳細は、この [Wiki ページ](/ja/re
 
 :::info
 reComputer J20 は J202 キャリアボードによって駆動されています。このインターフェースは J30/J40 と同じ設計を使用しています。  
-インターフェースの使用に関する詳細は、この [Wiki ページ](/J401_carrierboard_Hardware_Interfaces_Usage) を参照してください。
+インターフェースの使用に関する詳細は、この [Wiki ページ](/ja/J401_carrierboard_Hardware_Interfaces_Usage) を参照してください。
 :::
 
 ## リソース

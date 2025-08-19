@@ -31,7 +31,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
   <tr>
    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
-        ">
+        " target="_blank">
     <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
    </div></td>
@@ -329,7 +329,7 @@ XIAO にバッテリーを接続するには、認定された充電可能な 3.
 
 :::tip 赤色インジケータライト
 
-XIAO ESP32C6 にはバッテリー充電用の赤色インジケータライトがあり、[XIAO ESP32S3](/xiao_esp32s3_getting_started/#battery-usage) と同様です。
+XIAO ESP32C6 にはバッテリー充電用の赤色インジケータライトがあり、[XIAO ESP32S3](/ja/xiao_esp32s3_getting_started/#battery-usage) と同様です。
 
 XIAO ESP32C6 の赤色ライトの動作は以下の通りです：
 
@@ -344,7 +344,7 @@ XIAO ESP32C6 の赤色ライトの動作は以下の通りです：
 
 ## バッテリー電圧の読み取り
 
-XIAO ESP32C6 のバッテリー電圧を監視するには、[XIAO ESP32C3](/XIAO_ESP32C3_Getting_Started/#check-the-battery-voltage) と同様に、200kΩ の抵抗を 1:2 の構成ではんだ付けする必要があります。この設定により電圧が半分に減少し、A0 アナログポートを介して安全に監視することができます。
+XIAO ESP32C6 のバッテリー電圧を監視するには、[XIAO ESP32C3](/ja/XIAO_ESP32C3_Getting_Started/#check-the-battery-voltage) と同様に、200kΩ の抵抗を 1:2 の構成ではんだ付けする必要があります。この設定により電圧が半分に減少し、A0 アナログポートを介して安全に監視することができます。
 
 ### サンプルコード
 

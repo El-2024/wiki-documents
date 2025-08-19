@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # gcc を使用して DSO Nano ファームウェアをビルドする方法
 
-[DSO Nano](/DSO_Nano "DSO Nano") ファームウェアは、gcc ツールチェーンを使用してビルドできます。gcc 固有のファイルは、ファームウェアソースコードツリーの project/gcc フォルダーにあります。
+[DSO Nano](/ja/DSO_Nano "DSO Nano") ファームウェアは、gcc ツールチェーンを使用してビルドできます。gcc 固有のファイルは、ファームウェアソースコードツリーの project/gcc フォルダーにあります。
 
 ## ARM クロスビルド gcc ツールチェーンを取得する
 
@@ -70,7 +70,7 @@ make
 
 ## テスト
 
-[Nano V1 または V2](/Dfu-util "Dfu-util") に dso-lib.bin と dso-app.bin ファイルをダウンロードするには、Dfu-util を使用してください。Nano V3 モデルの場合、dso-lib.hex と dso-app.hex を DFU 仮想 USB ドライブに一度に 1 つずつコピーしてください。
+[Nano V1 または V2](/ja/Dfu-util "Dfu-util") に dso-lib.bin と dso-app.bin ファイルをダウンロードするには、Dfu-util を使用してください。Nano V3 モデルの場合、dso-lib.hex と dso-app.hex を DFU 仮想 USB ドライブに一度に 1 つずつコピーしてください。
 
 ## 技術サポートと製品ディスカッション
 

@@ -8,7 +8,7 @@ tags:
   - reComputer
   - reComputer Robotics
   - Hardware and Interfaces Usage
-image: https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer_robotics1.webp
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/image-_J4011-3.webp
 slug: /recomputer_robotics_j401_hardware_interfaces_usage
 last_update:
   date: 08/06/2025
@@ -24,7 +24,7 @@ This wiki introduces the various different hardware and interfaces on the reComp
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Robotics-J4012-p-6505.html">
+<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Robotics-J4012-p-6505.html" target="_blank">
 <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 </a></div>
 

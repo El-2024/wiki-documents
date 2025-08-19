@@ -14,7 +14,7 @@ last_update:
 https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
-<!-- 1. このステップバイステップのチュートリアルは、[Seeeduino](/Seeeduino_V2.2 "Seeeduino V2.2") / Arduino、[XBee® Shield](/XBee_Shield "XBee® Shield")、[UartSBee_V3.1](/UartSBee_V3.1 "UartSBee_V3.1")、[Grove - XBee Carrier](/Grove-XBee_Carrier "Grove - XBee Carrier")、Seeeduino Stalker v2.0といった製品を使用してXBee ZBモジュールを活用する方法を学ぶために作成されました。これらの製品は、XBee ZBモジュールを扱う際の作業を簡単にします。 -->
+<!-- 1. このステップバイステップのチュートリアルは、[Seeeduino](/ja/Seeeduino_V2.2 "Seeeduino V2.2") / Arduino、[XBee® Shield](/ja/XBee_Shield "XBee® Shield")、[UartSBee_V3.1](/ja/UartSBee_V3.1 "UartSBee_V3.1")、[Grove - XBee Carrier](/ja/Grove-XBee_Carrier "Grove - XBee Carrier")、Seeeduino Stalker v2.0といった製品を使用してXBee ZBモジュールを活用する方法を学ぶために作成されました。これらの製品は、XBee ZBモジュールを扱う際の作業を簡単にします。 -->
 
 2. XBee ZBモジュールはさまざまな方法で使用できます。また、多くの設定パラメータを提供します。このチュートリアルでは、基本的な設定を簡単な手順で紹介しています。
 3. <font color="darkred"> アプリケーションにどの設定を使用するかを決定する前に、チュートリアル全体を少なくとも一度は通読してください。 </font>
@@ -180,7 +180,7 @@ Zigbeeデバイス間でデータを送信する際には、16ビットのネッ
 
 このデモでは、2つのXBeeモジュールを設定し、電源投入時に自動的に接続し、データを継続的に送受信するようにします。このセットアップは、2台のPCまたはシリアルポートを持つ2つのMCUを接続するためのワイヤレスUARTとして使用できます。
 
-<!-- *   2つの [UartSBee_V3.1](/UartSBee_V3.1 "UartSBee_V3.1") または2つの [Grove - XBee Carrier](/Grove-XBee_Carrier "Grove - XBee Carrier") と2つのXBee ZBモジュールを使用します。 -->
+<!-- *   2つの [UartSBee_V3.1](/ja/UartSBee_V3.1 "UartSBee_V3.1") または2つの [Grove - XBee Carrier](/ja/Grove-XBee_Carrier "Grove - XBee Carrier") と2つのXBee ZBモジュールを使用します。 -->
 
 * これらのモジュールをPCのシリアルポートに接続し、ドライバがインストールされていることを確認します。
 
@@ -215,11 +215,11 @@ Zigbeeデバイス間でデータを送信する際には、16ビットのネッ
 
 ## XBee ZBモジュールを使用したワイヤレスセンサーネットワーク(WSN)デモ
 
-<!-- ### XBee ZBモジュールと[Grove - XBee Carrier](/Grove-XBee_Carrier "Grove - XBee Carrier")を使用したスタンドアロンセンサーノードの設定 -->
+<!-- ### XBee ZBモジュールと[Grove - XBee Carrier](/ja/Grove-XBee_Carrier "Grove - XBee Carrier")を使用したスタンドアロンセンサーノードの設定 -->
 
-<!-- ### XBee ZBモジュール、Seeeduino、および[XBee® Shield](/XBee_Shield "XBee® Shield")を使用したZigbeeコーディネーターの設定 -->
+<!-- ### XBee ZBモジュール、Seeeduino、および[XBee® Shield](/ja/XBee_Shield "XBee® Shield")を使用したZigbeeコーディネーターの設定 -->
 
-<!-- ### XBee ZBモジュール、[Wifi Bee](/Wifi_Bee "Wifi Bee")、および[Bees Shield](/Bees_Shield "Bees Shield")を使用してSeeeduinoをインターネットゲートウェイとして使用 -->
+<!-- ### XBee ZBモジュール、[Wifi Bee](/ja/Wifi_Bee "Wifi Bee")、および[Bees Shield](/ja/Bees_Shield "Bees Shield")を使用してSeeeduinoをインターネットゲートウェイとして使用 -->
 
 ## 参考文献
 
@@ -233,7 +233,7 @@ XBeeを使用して素晴らしいプロジェクトを作りたい場合、以�
 
 ![](https://files.seeedstudio.com/wiki/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products/img/Xbee_iot.JPG)
 
-<!-- これはXBeeと[Grove](/Grove_System "Grove System")によって作られた興味深いデモです。 -->
+<!-- これはXBeeと[Grove](/ja/Grove_System "Grove System")によって作られた興味深いデモです。 -->
 
 このプロジェクトでは、ZigbeeメッシュとGPRS SIM900カードを使用してサーバーと通信します。サーバーはデータを分析し、ユーザーにリアルタイム情報と予測を提供します。
 
@@ -243,7 +243,7 @@ XBeeを使用して素晴らしいプロジェクトを作りたい場合、以�
 
 ![](https://files.seeedstudio.com/wiki/Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products/img/Xbee_iot1.JPG)
 
-<!-- これはXBeeと[Grove](/Grove_System "Grove System")によって作られたIoTデモです。 -->
+<!-- これはXBeeと[Grove](/ja/Grove_System "Grove System")によって作られたIoTデモです。 -->
 
 太陽熱温水ボイラーは、無料の太陽エネルギーを使用してお湯を提供するため素晴らしいですが、太陽が十分でない場合や、すでに誰かがお湯を使い切ってしまった場合はどうでしょうか？このプロジェクトは、適切な判断を下すのに役立ちます。お湯がなくなったときに警告し、電気加熱をオンにすることができます。また、いつお風呂やシャワーを浴びることができるかも教えてくれます！
 

@@ -78,8 +78,8 @@ Baidu Speechには、STT（音声からテキストへの変換）、TTS（テ�
 
 以下は音声インタラクションのチュートリアルリストです。
 
-<!-- - [ReSpeaker Core V2 & Wio Link](/ReSpeaker_Core_V2_&_Wio_Link/)
-- [Google Assistant](/Google_Assistant) -->
+<!-- - [ReSpeaker Core V2 & Wio Link](/ja/ReSpeaker_Core_V2_&_Wio_Link/)
+- [Google Assistant](/ja/Google_Assistant) -->
 弊社の製品をお選びいただきありがとうございます！製品の使用体験がスムーズになるよう、さまざまなサポートを提供しています。お客様の好みやニーズに応じた複数のコミュニケーションチャネルをご用意しています。
 
 <div class="button_tech_support_container">

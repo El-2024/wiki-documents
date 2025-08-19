@@ -47,7 +47,7 @@ Grove - Temperature Sensor は、[サーミスタ](http://www.legacydistribution
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Temperature_Sensor/img/Tempreture_Sensor_Connector.jpg" /></div>
 
-4. 以下のコードをアップロードします。アップロード方法がわからない場合は[こちら](/Upload_Code/)をクリックしてください。
+4. 以下のコードをアップロードします。アップロード方法がわからない場合は[こちら](/ja/Upload_Code/)をクリックしてください。
 
 ```
 /*
@@ -87,11 +87,11 @@ void loop()
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Temperature_Sensor/img/Twig-Temperature-Sensor-value.jpg" /></div>
 
-### [Raspberry Pi](/GrovePi_Plus/ "GrovePi+") を使用する場合
+### [Raspberry Pi](/ja/GrovePi_Plus/ "GrovePi+") を使用する場合
 
 1. Raspberry Pi と GrovePi または GrovePi+ を用意してください。
 
-2. 開発環境の設定を完了している必要があります。設定がまだの場合は[こちら](/GrovePi_Plus/#Introducing_the_GrovePi.2B)を参照してください。
+2. 開発環境の設定を完了している必要があります。設定がまだの場合は[こちら](/ja/GrovePi_Plus/#Introducing_the_GrovePi.2B)を参照してください。
 
 3. 接続
 
@@ -141,7 +141,7 @@ BBG 上でプログラムを編集するには、Cloud9 IDE を使用できま�
 
 Cloud9 IDE に慣れるための簡単な演習として、BeagleBone の4つのユーザープログラム可能なLEDの1つを点滅させる簡単なアプリケーションを作成するのが良いスタートです。
 
-Cloud9 IDE を初めて使用する場合は、[**こちら**](/BeagleBone_Green/#getting-started)を参照してください。
+Cloud9 IDE を初めて使用する場合は、[**こちら**](/ja/BeagleBone_Green/#getting-started)を参照してください。
 
 **ステップ1:** 右上の "+" をクリックして新しいファイルを作成します。
 

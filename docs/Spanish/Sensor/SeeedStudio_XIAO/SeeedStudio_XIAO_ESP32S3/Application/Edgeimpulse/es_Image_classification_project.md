@@ -61,7 +61,7 @@ Ahora tenemos una nueva cámara potente totalmente compatible con el XIAO ESP32S
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/ov5640.gif" style={{width:500, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/OV5640-Camera-for-XIAO-ESP32S3-Sense-With-Heat-Sink-p-5739.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/OV5640-Camera-for-XIAO-ESP32S3-Sense-With-Heat-Sink-p-5739.html" target="_blank">
     <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
     </a>
 </div>
@@ -359,8 +359,8 @@ void loop()
                 result.timing.dsp, result.timing.classification, result.timing.anomaly);
 
 #if EI_CLASSIFIER_OBJECT_DETECTION == 1
-    bool bb_found = result.bounding_boxes[0].value &gt; 0;
-    for (size_t ix = 0; ix &lt; result.bounding_boxes_count; ix++) {
+    bool bb_found = result.bounding_boxes[0].value > 0;
+    for (size_t ix = 0; ix < result.bounding_boxes_count; ix++) {
         auto bb = result.bounding_boxes[ix];
         if (bb.value == 0) {
             continue;
@@ -371,7 +371,7 @@ void loop()
         ei_printf("    No se encontraron objetos\n");
     }
 #else
-    for (size_t ix = 0; ix &lt; EI_CLASSIFIER_LABEL_COUNT; ix++) {
+    for (size_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
         ei_printf("    %s: %.5f\n", result.classification[ix].label,
                                     result.classification[ix].value);
     }
@@ -509,7 +509,7 @@ static int ei_camera_get_data(size_t offset, size_t length, float *out_ptr)
     size_t out_ptr_ix = 0;
 
     while (pixels_left != 0) {
-        out_ptr[out_ptr_ix] = (snapshot_buf[pixel_ix] &lt;&lt; 16) + (snapshot_buf[pixel_ix + 1] &lt;&lt; 8) + snapshot_buf[pixel_ix + 2];
+        out_ptr[out_ptr_ix] = (snapshot_buf[pixel_ix] << 16) + (snapshot_buf[pixel_ix + 1] << 8) + snapshot_buf[pixel_ix + 2];
 
         // ir al siguiente píxel
         out_ptr_ix++;

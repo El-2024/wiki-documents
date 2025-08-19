@@ -32,7 +32,7 @@ SenseCAP Indicator はタッチスクリーンを備えており、強力なホ�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
@@ -50,7 +50,7 @@ SenseCAP Indicator を Matter と連携させるには、以下の主要な手�
 
 ## 前提条件
 
-始める前に、SenseCAP Indicator ボードの [ユーザーガイド](/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator) を読んで、そのソフトウェアおよびハードウェア情報に慣れておいてください。
+始める前に、SenseCAP Indicator ボードの [ユーザーガイド](/ja/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator) を読んで、そのソフトウェアおよびハードウェア情報に慣れておいてください。
 
 ## ESP IDF と ESP Matter のインストール {#install_sdks}
 
@@ -142,7 +142,7 @@ UI は [LVGL](https://lvgl.io/) を使用して構築されています。LVGL �
 ## リソース
 
 1. **デモ SDK**: SenseCAP Indicator 用のデモ SDK は [GitHub](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32) で利用可能です。
-2. **ユーザーガイド**: ユーザーガイドには、SenseCAP Indicator ボードのソフトウェアおよびハードウェアに関する詳細情報が記載されています。[こちら](/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator)からご覧いただけます。
+2. **ユーザーガイド**: ユーザーガイドには、SenseCAP Indicator ボードのソフトウェアおよびハードウェアに関する詳細情報が記載されています。[こちら](/ja/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator)からご覧いただけます。
 3. **ESP-IDF の入門ガイド**: このガイドでは、ESP-IDF を設定してプロジェクトを構築するための完全な手順を提供しています。[こちら](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html)からアクセスできます。
 4. **Matter インストールガイド**: ESP-Matter を初めて使用する場合、このガイドがインストールとセットアップをサポートします。[こちら](https://docs.espressif.com/projects/esp-matter/en/latest/esp32/developing.html)をご覧ください。
 

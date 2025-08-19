@@ -41,7 +41,7 @@ MR60FDA2 は、XIAO ESP32C6 マイクロコントローラーとの統合を目�
       <tr>
          <td>
             <div class="get_one_now_container" style={{textAlign: 'center'}}>
-               <a class="get_one_now_item" href="https://www.seeedstudio.com/MR60FDA2-60GHz-mmWave-Sensor-Fall-Detection-Module-p-5946.html?utm_source=wiki"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
+               <a class="get_one_now_item" href="https://www.seeedstudio.com/MR60FDA2-60GHz-mmWave-Sensor-Fall-Detection-Module-p-5946.html?utm_source=wiki" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
             </div>
          </td>
       </tr>
@@ -87,9 +87,9 @@ MR60FDA2 mmWaveセンサーをHome Assistantと統合するには、以下のコ
 :::tip Home Assistantのインストール
 Seeed Studio製品向けにHome Assistantのインストール方法を記載した記事もありますので、参考にしてください。
 
-- [ODYSSEY-X86でのHome Assistantの始め方](/ODYSSEY-X86-Home-Assistant)
-- [reTerminalでのHome Assistantの始め方](/reTerminal_Home_Assistant)
-- [LinkStar H68K/reRouter CM4でのHome Assistantの始め方](/h68k-ha-esphome)
+- [ODYSSEY-X86でのHome Assistantの始め方](/ja/ODYSSEY-X86-Home-Assistant)
+- [reTerminalでのHome Assistantの始め方](/ja/reTerminal_Home_Assistant)
+- [LinkStar H68K/reRouter CM4でのHome Assistantの始め方](/ja/h68k-ha-esphome)
 :::
 
 ### ステップ2: キットの準備

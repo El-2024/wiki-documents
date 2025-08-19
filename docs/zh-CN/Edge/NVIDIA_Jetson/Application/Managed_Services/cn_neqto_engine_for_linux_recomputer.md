@@ -1,21 +1,18 @@
 ---
-description: 在 reComputer J30 上开始使用 NEQTO Engine for Linux
-title: 在 reComputer J30 上开始使用 NEQTO Engine for Linux
+description: 在 reComputer J30 上开始使用适用于 Linux 的 NEQTO 引擎
+title: 在 reComputer J30 上开始使用适用于 Linux 的 NEQTO 引擎
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/neqto_engine_for_linux_recomputer
 last_update:
-  date: 05/15/2025
+  date: 2024/03/14
   author: Kazuhiro Ozuchi
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
-## 简介
+## 介绍
 
 NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配置其边缘设备上的软件。通过即插即用的平台连接器和内置的软件生命周期管理，NEQTO 使企业能够为终端用户提供改进的软件服务。
 
-安装了 NEQTO 的设备可以通过 API 或现成的 NEQTO 控制台进行管理，控制台包括数据存储、警报和看门狗监控的可选服务。企业可以通过几乎即时的安装在任何 Linux 设备上启用 AIoT，并与任何本地或云服务器实现无缝数据集成。
+安装了 NEQTO 的设备可以通过 API 或现成的 NEQTO 控制台进行管理，控制台包括数据存储、警报和看门狗监控的可选服务。企业可以在任何 Linux 设备上快速安装 NEQTO，并与任何本地或云服务器无缝集成数据，从而实现 AIoT。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/header-img_2x.png" alt="pir" width={600} height="auto" /></p>
 
@@ -37,12 +34,12 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J3011-p-5590.html">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J3011-p-5590.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a>
       </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4011-p-5585.html">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4011-p-5585.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a>
       </div></td>
@@ -53,14 +50,14 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 - （任何 Linux 机器）
 
 :::tip
-- 支持的架构：armv6l（32 位）、armv7l（32 位）、aarch64（64 位）、x86_64（64 位）
+- 支持的架构：armv6l（32位）、armv7l（32位）、aarch64（64位）、x86_64（64位）
 - 所需磁盘空间：≥ 32 MB
-- 所需 RAM 空间：≥ 4MB（默认设置下）
-- 网络通信接口：设备上必须有一个物理网络适配器。
+- 所需内存空间：≥ 4MB（默认设置下）
+- 网络通信接口：必须配备物理网络适配器
 - 显示器、键盘、鼠标（可选）
 :::
 
-## 入门指南
+## 入门
 
 ### 注册 NEQTO 账户：
 
@@ -86,13 +83,13 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <!--<div style="page-break-before:always"></div>-->
 
-3. 使用 curl 或 wget 下载 `NEQTO Engine Linux Installer`。
+3. 通过 curl 或 wget 下载 `NEQTO Engine Linux Installer`。
 
-    本次使用 wget 命令。
+    此处使用 wget 命令。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65eeeaa3ccae06004c6d945d.png" alt="pir" width={600} height="auto" /></p>
 
-复制 `Installer of NEQTO Engine for Linux` 的 `下载链接`，并将其粘贴到 "wget␣" 后面。
+复制 `Installer of NEQTO Engine for Linux` 的 `下载链接`，并将其粘贴到 "wget␣" 后。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f00259ccae06004c6d94a8.png" alt="pir" width={600} height="auto" /></p>
 
@@ -104,9 +101,10 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f00369ccae06004c6d94ab.png" alt="pir" width={600} height="auto" /></p>
 
+
 <!--<div style="page-break-before:always"></div>-->
 
-5. 从 NEQTO 控制台的 `API Keys for NEQTO Engine for Linux` 中复制 `API Key`，并将其粘贴到 `sudo . /neqto-daemon-install.sh␣-k␣` 后面。
+5. 从 NEQTO 控制台的 `API Keys for NEQTO Engine for Linux` 中复制 `API Key`，并将其粘贴到 `sudo . /neqto-daemon-install.sh␣-k␣` 后。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f00476ccae06004c6d94ae.png" alt="pir" width={600} height="auto" /></p>
 
@@ -114,7 +112,7 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f00529ccae06004c6d94af.png" alt="pir" width={600} height="auto" /></p>
 
-7. 执行后，将显示重要提示信息。请检查并输入“agree”以表示同意。随后将执行设备注册，并继续进行软件安装。
+7. 执行后，将显示重要说明。请检查并在同意后输入“agree”。随后将执行设备注册，并继续软件安装。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f005c1ccae06004c6d94b1.png" alt="pir" width={600} height="auto" /></p>
 
@@ -136,7 +134,7 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65eef7b9ccae06004c6d947b.png" alt="pir" width={600} height="auto" /></p>
 
-2. 在 `Name` 中输入 `reComputer J30` 并点击 `SAVE`。
+2. 在 `Name` 中输入 `reComputer J30`，然后点击 `SAVE`。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65eef7d6ccae06004c6d947c.png" alt="pir" width={600} height="auto" /></p>
 
@@ -144,7 +142,7 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <!--<div style="page-break-before:always"></div>-->
 
-3. 选择你创建的 `reComputer J30` 并点击 `SCRIPTS`。
+3. 选择你创建的 `reComputer J30`，然后点击 `SCRIPTS`。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f0392accae06004c6d9518.png" alt="pir" width={600} height="auto" /></p>
 
@@ -152,11 +150,11 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f0379fccae06004c6d9512.png" alt="pir" width={600} height="auto" /></p>
 
-5. 在 `Name` 字段中输入 `Hello World` 并点击 `SAVE`。
+5. 在 `Name` 字段中输入 `Hello World`，然后点击 `SAVE`。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f03861ccae06004c6d9515.png" alt="pir" width={600} height="auto" /></p>
 
-6. 将 [示例代码](https://docs.neqto.com/docs/en/getting-started/tutorial-step1#sample-code) 从 `Getting Started` 复制并粘贴到 NEQTO Console 的脚本编辑器中，然后点击 `Save`。
+6. 从 [Getting Started](https://docs.neqto.com/docs/en/getting-started/tutorial-step1#sample-code) 中复制示例代码，并粘贴到 NEQTO Console 脚本编辑器中，然后点击 `Save`。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f036f4ccae06004c6d950f.png" alt="pir" width={600} height="auto" /></p>
 
@@ -170,7 +168,7 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f03451ccae06004c6d950a.png" alt="pir" width={600} height="auto" /></p>
 
-8. 设置 `DEVICE INFORMATION` 如下：
+8. 将 `DEVICE INFORMATION` 设置如下：
 
     - 在 `Name` 字段中输入 `reComputer J30 Template`
 
@@ -182,7 +180,7 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <!--<div style="page-break-before:always"></div>-->
 
-9. 对于 `OPTIONS`，在 `Script` 字段中选择 `Hello World` 并点击 `SAVE`。
+9. 对于 `OPTIONS`，在 `Script` 字段中选择 `Hello World`，然后点击 `SAVE`。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f03261ccae06004c6d9501.png" alt="pir" width={600} height="auto" /></p>
 
@@ -196,7 +194,7 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <!--<div style="page-break-before:always"></div>-->
 
-11. 设置 `META DATA` 如下：
+11. 将 `META DATA` 设置如下：
 
     - 将 `Name` 字段设置为 `reComputer J30`
 
@@ -204,7 +202,7 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f02f56ccae06004c6d94f8.png" alt="pir" width={600} height="auto" /></p>
 
-12. 在 `DEVICE INFORMATION` 中选择刚刚注册的设备并点击 `SAVE`。
+12. 在 `DEVICE INFORMATION` 中选择刚刚注册的设备，然后点击 `SAVE`。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f02e10ccae06004c6d94f5.png" alt="pir" width={600} height="auto" /></p>
 
@@ -216,13 +214,13 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <!--<div style="page-break-before:always"></div>-->
 
-14. 在 NEQTO Console 上运行 `Reload Script` 后，您可以在 reComputer J30 的终端上看到 `Hello World!!!`
+14. 在 NEQTO 控制台上运行 `Reload Script` 后，您可以在 reComputer J30 的终端上看到 `Hello World!!!`
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f02b89ccae06004c6d94ef.png" alt="pir" width={600} height="auto" /></p>
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_recomputer/65f00bf7ccae06004c6d94cd.png" alt="pir" width={600} height="auto" /></p>
 
-## 更多内容 / 故障排查
+## 更多信息 / 故障排查
 
 - [NEQTO 支持](https://support.neqto.com/hc/en-us)
 - [支持指南](https://docs.neqto.com/docs/en/neqto/support-guidelines)
@@ -233,7 +231,7 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供了多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

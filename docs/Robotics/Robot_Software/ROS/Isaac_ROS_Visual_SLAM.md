@@ -16,7 +16,7 @@ last_update:
 # Isaac ROS Visual SLAM Deployment  
 
 ## Prerequisites  
-Before deploying Visual SLAM, ensure the Isaac ROS environment is properly set up on your ReComputer [Installation Guide](/docs/Robotics/Robot_Software/ROS/Install_IsaacROS.md). If ROS2 is not installed, refer to [this document](/docs/Robotics/Robot_Software/ROS/Install_ROS2_Humble.md).  
+Before deploying Visual SLAM, ensure the Isaac ROS environment is properly set up on your ReComputer [Installation Guide](/install_isaacros). If ROS2 is not installed, refer to [this document](/install_ros2_humble).  
 
 
 ## 1. Environment Configuration  

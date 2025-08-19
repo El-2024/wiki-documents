@@ -53,7 +53,7 @@ nointro:
 - [W5500 Ethernet Shield v1.0](https://wiki.seeedstudio.com/ja/W5500_Ethernet_Shield_v1.0/)
 - [Wifi Shield (Fi250) V1.1](https://wiki.seeedstudio.com/ja/Wifi_Shield_Fi250_V1.1/)
 - [Wifi Shield V2.0](https://wiki.seeedstudio.com/ja/Wifi_Shield_V2.0/)
-- [XBee Shield V2.0](/XBee_Shield_V2.0)
+- [XBee Shield V2.0](/ja/XBee_Shield_V2.0)
 
 私たちの製品を選んでいただきありがとうございます！製品の使用体験がスムーズになるよう、さまざまなサポートを提供しています。異なる好みやニーズに対応するため、いくつかのコミュニケーションチャネルを用意しています。
 

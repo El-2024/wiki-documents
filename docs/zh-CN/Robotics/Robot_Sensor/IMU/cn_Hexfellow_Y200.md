@@ -101,7 +101,7 @@ Y200是一款专为机器人开发的9轴陀螺仪。该设备支持最高60V的
 
 :::tip
 重要提示：  
-我们设备的CAN_H和CAN_L引脚定义与市面上大多数电机和传感器**位置相反**。因此接线时必须**对调H和L的连接顺序**以确保正常通信。更多设备的CAN使用教程请参考[此链接](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can)。  
+我们设备的CAN_H和CAN_L引脚定义与市面上大多数电机和传感器**位置相反**。因此接线时必须**对调H和L的连接顺序**以确保正常通信。更多设备的CAN使用教程请参考[此链接](https://wiki.seeedstudio.com/cn/recomputer_jetson_mini_hardware_interfaces_usage/#can)。  
 :::
 
 ### 连接XT30 2+2线缆

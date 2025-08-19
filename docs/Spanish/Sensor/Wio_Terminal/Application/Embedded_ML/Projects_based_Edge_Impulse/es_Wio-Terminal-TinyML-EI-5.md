@@ -171,4 +171,4 @@ void ei_printf(const char *format, ...) {
 
 * [Artificial nose project](https://twitter.com/kartben/status/1258791793073815552)
 * [Edge Impulse Public project](https://studio.edgeimpulse.com/public/37392/latest)
-* [Wiki oficial del proyecto](http://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse)
+* [Wiki oficial del proyecto](https://wiki.seeedstudio.com/Wio-Terminal-Edge-Impulse)

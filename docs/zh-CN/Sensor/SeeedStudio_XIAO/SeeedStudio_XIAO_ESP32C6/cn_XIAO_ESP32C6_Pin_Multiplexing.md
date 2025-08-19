@@ -4,20 +4,16 @@ title: 使用 Seeed Studio XIAO ESP32C6 进行引脚复用
 keywords:
   - esp32c6
   - xiao
-  - 引脚复用
+  - pin multiple
 image: https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6.jpg
 slug: /cn/xiao_pin_multiplexing_esp33c6
-last_update:
-  date: 05/15/2025
-  author: Spencer
 sidebar_position: 2
+last_update:
+  date: 04/10/2024
+  author: Spencer
 ---
 
 # 使用 Seeed Studio XIAO ESP32C6 进行 Arduino 编程
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 <div class="table-center">
 	<table>
@@ -30,7 +26,7 @@ sidebar_position: 2
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
-        ">
+        " target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -38,13 +34,13 @@ sidebar_position: 2
 	</table>
 </div>
 
-Seeed Studio XIAO ESP32C6 由高度集成的 [ESP32-C6 SoC](https://www.espressif.com/en/products/socs/esp32-c6) 提供支持，基于**两个 32 位 RISC-V 处理器**构建，其中高性能 (HP) 处理器**运行频率高达 160 MHz**，低功耗 (LP) 32 位 RISC-V 处理器的时钟频率可达 20 MHz。芯片内置**512KB SRAM 和 4 MB Flash**，提供了更大的编程空间，为物联网控制场景带来了更多可能性。
+Seeed Studio XIAO ESP32C6 由高度集成的 [ESP32-C6 SoC](https://www.espressif.com/en/products/socs/esp32-c6) 驱动，基于**两个 32 位 RISC-V 处理器**构建，其中高性能 (HP) 处理器**运行频率高达 160 MHz**，以及一个低功耗 (LP) 32 位 RISC-V 处理器，时钟频率可达 20 MHz。芯片上有 **512KB SRAM 和 4 MB Flash**，提供更多编程空间，为物联网控制场景带来更多可能性。
 
 ## 入门指南
 
 ### 引脚概览
 
-在开始之前，让我们通过以下示意图了解 XIAO ESP32C6 的所有引脚及其功能。
+在开始之前，让我们通过以下原理图回顾 XIAO ESP32C6 的所有引脚及其功能。
 
 <table align="center">
 	<tr>
@@ -54,25 +50,26 @@ Seeed Studio XIAO ESP32C6 由高度集成的 [ESP32-C6 SoC](https://www.espressi
 	    <td><div style={{textAlign:'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1Nzc0ODUwMjM3NA_556525_Slxs4ARdyuXRrJK-_1711096256?w=9854&h=3367&type=image/png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
     <tr>
-	    <th>XIAO ESP32C6/XIAO ESP32C6 引脚列表</th>
+	    <th>XIAO ESP32C6/XIAO ESP32C6 Sense 引脚列表</th>
 	</tr>
     <tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1Nzc0ODUwMjM3NA_318648_dMoXitoaQiq2N3-a_1711678067?w=1486&h=1228" style={{width:1000, height:'auto'}}/></div></td>
 	</tr>
 </table>
 
-- 5V - 这是 USB 端口的 5V 输出。您也可以将其用作电压输入，但必须在外部电源和此引脚之间使用某种二极管（肖特基、信号或功率二极管），阳极连接到电池，阴极连接到 5V 引脚。
-- 3V3 - 这是板载稳压器的输出，您可以从中获取 700mA 电流。
+
+- 5V - 这是来自 USB 端口的 5v 输出。您也可以将其用作电压输入，但必须在外部电源和此引脚之间使用某种二极管（肖特基、信号、功率），阳极连接电池，阴极连接 5V 引脚。
+- 3V3 - 这是板载稳压器的稳压输出。您可以提取 700mA 电流
 - GND - 电源/数据/信号地 <!-- 需要确认 -->
 
 ## 串行通信
 
-XIAO ESP32C6 提供两种串行通信方式：`软件串口`和`硬件串口`。软件串口通常用于灵活性，而硬件串口则提供更好的性能。
+XIAO ESP32C6 有两种串行通信方法：`软件串口`和`硬件串口`。软件串口通常用于灵活性，而硬件串口提供更好的性能。
 
-### 硬件连接
+### 硬件设置
 
-1. 将外部设备的 **TX 引脚** 连接到 XIAO ESP32C6 的 RX 引脚（`D7`）。
-2. 将外部设备的 **RX 引脚** 连接到 XIAO ESP32C6 的 TX 引脚（`D6`）。
+1. 将外部设备的 **TX 引脚**连接到 XIAO ESP32C6 的 RX 引脚 (`D7`)。
+2. 将外部设备的 **RX 引脚**连接到 XIAO ESP32C6 的 TX 引脚 (`D6`)。
 
 ### 代码示例
 
@@ -81,7 +78,7 @@ XIAO ESP32C6 提供两种串行通信方式：`软件串口`和`硬件串口`。
 要使用软件串口，请安装 [EspSoftwareSerial](https://github.com/plerup/espsoftwareserial) 库。
 
 :::tip
-目前我们推荐使用 **7.0.0** 版本的 EspSoftwareSerial 库。其他版本可能会存在不同程度的问题，导致软件串口无法正常工作。
+目前我们推荐使用 EspSoftwareSerial 库的 **7.0.0** 版本。其他版本可能存在不同程度的问题，导致软串口无法正常工作。
 :::
 
 ```cpp
@@ -97,23 +94,23 @@ void setup() {
 void loop() {
   if (mySerial.available()) {
     char data = mySerial.read();
-    Serial.print("通过软件串口接收: ");
+    Serial.print("Received via software serial: ");
     Serial.println(data);
   }
 
   if (Serial.available()) {
     char data = Serial.read();
-    mySerial.print("通过硬件串口接收: ");
+    mySerial.print("Received via hardware serial: ");
     mySerial.println(data);
   }
 }
 ```
 
-此示例在引脚 `D7 (RX)` 和 `D6 (TX)` 上以 9600 波特率设置了软件串口。它同时监控硬件串口（USB）和软件串口，并在它们之间回显接收到的数据。
+此示例在引脚 `D7 (RX)` 和 `D6 (TX)` 上以 9600 波特率设置软件串口。它监控硬件串口（USB）和软件串口端口，在它们之间回显接收到的数据。
 
 #### 硬件串口
 
-XIAO ESP32C6 提供一个硬件 UART（UART0）用于串行通信，对应引脚 D7/D6。
+XIAO ESP32C6 具有用于串行通信的硬件 UART (UART0)，对应引脚 D7/D6。
 
 ```cpp
 #include <HardwareSerial.h>
@@ -128,37 +125,37 @@ void setup() {
 void loop() {
   if (Serial.available()) {
     char data = Serial.read();
-    Serial.print("通过 USB 接收: ");
+    Serial.print("Received on USB: ");
     Serial.println(data);
   }
   
   if (mySerial.available()) {
     char data = mySerial.read();
-    Serial.print("通过 UART0 接收: ");
+    Serial.print("Received on UART0: ");
     Serial.println(data);
   }
 }
 ```
 
-此示例使用硬件 UART0 (Serial0) 进行通信。它初始化了 USB 串口和 UART0，然后监控两个端口的输入数据，并将接收到的消息打印到 USB 串口。
+此示例使用硬件 UART0 (Serial0) 进行通信。它初始化 USB 串口和 UART0，然后监控两个端口的传入数据，将接收到的消息打印到 USB 串口。
 
-#### 使用 Serial1
+#### Serial1 使用方法
 
-根据上述 XIAO ESP32C6 引脚图，我们可以看到有 TX 和 RX 引脚。  
-这与普通串行通信不同，但使用方法非常相似，只需添加一些参数即可。  
+根据上述 XIAO ESP32C6 引脚图的具体参数，我们可以观察到有 TX 引脚和 RX 引脚。
+这与串行通信不同，但使用方法也非常相似，只是需要添加一些参数。
 接下来，我们将使用芯片引出的引脚进行串行通信。
 
 需要包含的核心函数：
 
-- `Serial1.begin(BAUD,SERIAL_8N1,RX_PIN,TX_PIN);` -- 启用 Serial1，函数原型为：`<Serial.Type>.begin(unsigned long baud, uint32_t config, int8_t rxPin, int8_t txPin);`
+- `Serial1.begin(BAUD,SERIAL_8N1,RX_PIN,TX_PIN);` -- 启用 Serial1，函数原型：`<Serial.Type>.begin(unsigned long baud, uint32_t config, int8_t rxPin, int8_t txPin);`
   - `baud`：波特率
   - `config`：配置位
   - `rxPin`：接收引脚
   - `txPin`：发送引脚
 
-值得注意的是，如果我们使用数字引脚端口进行定义，此处应为 `#define RX_PIN D7`、`#define TX_PIN D6`，具体参数请参考不同 XIAO 系列的引脚图。
+值得注意的是，如果我们使用数字引脚端口来定义，这里应该是 `#define RX_PIN D7`、`#define TX_PIN D6`，具体参数请参考不同 XIAO 系列的引脚图。
 
-以下是一个示例程序：
+以下是示例程序：
 
 ```c
 #define RX_PIN D7
@@ -173,160 +170,156 @@ void loop() {
   if(Serial1.available() > 0)
   {
     char incominByte = Serial1.read();
-    Serial1.print("我接收到: ");
+    Serial1.print("I received : ");
     Serial1.println(incominByte);
   }
   delay(1000);
 }
 ```
 
-上传程序后，在 Arduino IDE 中打开串口监视器并将波特率设置为 115200。然后，您可以通过串口监视器向 XIAO ESP32C6 发送内容，XIAO 将打印出您发送的每个字节。在这里，我输入的内容是 "Hello Everyone"，我的结果如下图所示。
+上传程序后，在Arduino IDE中打开串口监视器并将波特率设置为115200。然后，您可以通过串口监视器向XIAO ESP32C6发送您想要的内容，XIAO将打印出您发送内容的每个字节。在这里，我输入的内容是"Hello Everyone"，我的结果图表如下所示
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/114.png" style={{width:600, height:'auto'}}/></div>
 
-## 数字 I/O
+## 数字I/O
 
-XIAO ESP32C6 具有 12 个 GPIO 引脚，可配置为输入或输出。
+XIAO ESP32C6有12个GPIO引脚，您可以将其配置为输入或输出。
 
 ### 硬件准备
 
-1. 将按钮连接到引脚 `D1`：
+1. 将按钮连接到引脚`D1`：
    - 使用外部上拉电阻（如果使用内部上拉电阻则可选）。
-2. 将 LED 连接到引脚 `D10`：
-   - 在 LED 串联一个限流电阻。
+2. 将LED连接到引脚`D10`：
+   - 在LED串联中包含一个限流电阻。
 
 ### 软件实现
 
-GPIO API 提供了配置和操作 GPIO 引脚的功能。有关详细信息，请参考 [GPIO API](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/gpio.html) 文档。
+GPIO API提供了配置和与GPIO引脚交互的函数。有关更多详细信息，请参阅[GPIO API](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/gpio.html)文档。
 
 ```cpp
 const int buttonPin = D1; // 按钮引脚
-const int ledPin = D10; // LED 引脚
+const int ledPin = D10; // LED引脚
 
 void setup() {
-  pinMode(ledPin, OUTPUT); // 设置 LED 引脚为输出
-  pinMode(buttonPin, INPUT); // 设置按钮引脚为输入
+  pinMode(ledPin, OUTPUT); // 将LED引脚设置为输出
+  pinMode(buttonPin, INPUT); // 将按钮引脚设置为输入
   // 如果不使用外部上拉电阻
   pinMode(buttonPin, INPUT_PULLUP); // 启用内部上拉电阻
 }
 
 void loop() {
   int buttonState = digitalRead(buttonPin); // 读取按钮状态
-  digitalWrite(ledPin, buttonState); // 将按钮状态写入 LED
+  digitalWrite(ledPin, buttonState); // 将按钮状态写入LED
 }
 ```
 
 #### 中断方法
 
-您也可以使用中断更高效地处理按钮按下事件。
+您也可以使用中断来更高效地处理按钮按压。
 
 ```cpp
-// 定义按钮和 LED 的引脚编号
+// 定义按钮和LED的引脚号
 const int buttonPin = D1;
 const int ledPin = D10;
 
 // 定义一个结构体来保存按钮相关数据
 struct Button {
-    const uint8_t PIN; // 按钮的引脚编号
-    uint32_t numberKeyPresses; // 按钮按下次数计数器
-    bool pressed; // 标志按钮当前是否被按下
+    const uint8_t PIN; // 按钮的引脚号
+    uint32_t numberKeyPresses; // 按钮按压次数的计数器
+    bool pressed; // 指示按钮当前是否被按下的标志
 };
 
-// 为按钮创建一个结构体实例
+// 为按钮创建Button结构体的实例
 Button my_button = {buttonPin, 0, false};
 
-// 中断服务程序 (ISR) 用于处理按钮按下事件
+// 中断服务程序(ISR)来处理按钮按压
 void ARDUINO_ISR_ATTR isr(void* arg) {
-    Button* s = static_cast<Button*>(arg); // 将参数转换为 Button 指针
-    s->numberKeyPresses += 1; // 增加按钮按下次数
-    s->pressed = true; // 设置按下标志
+    Button* s = static_cast<Button*>(arg); // 将参数转换为Button指针
+    s->numberKeyPresses += 1; // 增加按钮按压次数
+    s->pressed = true; // 设置按压标志
 }
 
 void setup() {
     Serial.begin(115200);
-    pinMode(my_button.PIN, INPUT_PULLUP); // 设置按钮引脚为输入并启用内部上拉电阻
-    attachInterruptArg(my_button.PIN, isr, &my_button, FALLING); // 将 ISR 附加到按钮引脚，触发方式为下降沿
+    pinMode(my_button.PIN, INPUT_PULLUP); // 将按钮引脚设置为带内部上拉电阻的输入
+    attachInterruptArg(my_button.PIN, isr, &my_button, FALLING); // 将ISR附加到按钮引脚，在下降沿触发
 }
 
 void loop() {
     if (my_button.pressed) { // 检查按钮是否被按下
-        Serial.printf("按钮 1 已被按下 %lu 次\n", my_button.numberKeyPresses); // 打印按钮按下次数
-        my_button.pressed = false; // 重置按下标志
+        Serial.printf("Button 1 has been pressed %lu times\n", my_button.numberKeyPresses); // 打印按钮按压次数
+        my_button.pressed = false; // 重置按压标志
     }
 
-    static uint32_t lastMillis = 0; // 存储上次中断分离时间的变量
-    if (millis() - lastMillis > 10000) { // 检查是否经过了 10 秒
+    static uint32_t lastMillis = 0; // 存储上次分离中断时间的变量
+    if (millis() - lastMillis > 10000) { // 检查是否已过去10秒
         lastMillis = millis(); // 更新上次分离时间
         detachInterrupt(my_button.PIN); // 从按钮引脚分离中断
     }
 }
 ```
 
-在此示例中，我们使用一个 `Button` 结构体来保存按钮相关数据，包括引脚编号、按键次数和标志按钮当前是否被按下。
+在这个例子中，我们使用`Button`结构体来保存按钮相关数据，包括引脚号、按键按压次数和指示按钮当前是否被按下的标志。
 
-`isr` 函数是一个中断服务程序 (ISR)，用于处理按钮按下事件。它会增加按钮按下次数并将按下标志设置为 true。
+`isr`函数是一个中断服务程序(ISR)，用于处理按钮按压。它增加按钮按压次数并将按压标志设置为true。
 
-在 `setup` 函数中，我们初始化串行通信，将按钮引脚设置为输入并启用内部上拉电阻，并将 `isr` 函数附加到按钮引脚作为中断处理程序，触发方式为下降沿（按钮按下）。
+在`setup`函数中，我们初始化串口通信，将按钮引脚设置为带内部上拉电阻的输入，并将`isr`函数作为中断处理程序附加到按钮引脚，在下降沿（按钮按压）时触发。
 
-在 `loop` 函数中，我们检查按钮是否被按下。如果是，则将按钮按下次数打印到串行监视器，并重置按下标志。此外，我们还包含一个部分，每隔 10 秒从按钮引脚分离中断，可能是为了进行其他操作或防止意外中断。
+在`loop`函数中，我们检查按钮是否被按下。如果是，我们将按钮按压次数打印到串口监视器并重置按压标志。此外，我们还包含一个每10秒从按钮引脚分离中断的部分，可能是为了允许其他操作或防止意外中断。
 
----
+## ADC - 模拟数字转换器
 
-## ADC - 模拟到数字转换器
+XIAO ESP32C6 有几个模拟输入引脚，允许读取模拟电压。
 
-XIAO ESP32C6 具有多个模拟输入引脚，可用于读取模拟电压。
-
-有关详细信息，请参考 [ADC API](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html) 文档。
+请参考 [ADC API](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html) 文档了解更多详情。
 
 ### 硬件设置
 
-1. 将一个电位器连接到引脚 A0，一端连接到 3.3V，另一端连接到 GND。
+1. 将电位器连接到引脚 A0，一端连接到 3.3V，另一端连接到 GND。
 
 ### 软件实现
 
-以下是一个读取模拟值的 Arduino 示例代码：
+以下是读取模拟值的 Arduino 代码：
 
 ```cpp
 const int analogPin = A0; 
 
 void setup() {
-  // 初始化串行通信，速率为 115200 位/秒
+  // Initialize serial communication at 115200 bits per second
   Serial.begin(115200);
   
-  // 设置分辨率为 12 位（0-4095）
+  // Set the resolution to 12 bits (0-4095)
   analogReadResolution(12);
 }
 
 void loop() {
-  // 读取模拟值和模拟电压值
+  // Read the analog value and millivolts for the analogPin
   int analogValue = analogRead(analogPin);
   int analogVolts = analogReadMilliVolts(analogPin);
   
-  // 将值打印到串行监视器
-  Serial.printf("ADC 模拟值 = %d\n", analogValue);
-  Serial.printf("ADC 毫伏值 = %d\n", analogVolts);
+  // Print the values to the Serial Monitor
+  Serial.printf("ADC analog value = %d\n", analogValue);
+  Serial.printf("ADC millivolts value = %d\n", analogVolts);
   
-  delay(100); // 延迟以便串行读取清晰
+  delay(100); // Delay for clear reading from serial
 }
 ```
 
 此代码从指定引脚读取模拟值，并将其与毫伏值一起打印到串行监视器。
 
----
-
 ## PWM 信号 / LED 控制
 
-XIAO ESP32-C6 具有 6 个 LEDC 通道，可生成独立波形，例如用于驱动 RGB LED 设备。
+XIAO ESP32-C6 有 6 个 LEDC 通道，可以生成独立的波形，例如可用于驱动 RGB LED 设备。
 
-有关详细信息，请参考 [LEDC API](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html) 文档。
+请参考 [LEDC API](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html) 文档了解更多详情。
 
 ### 硬件设置
 
-1. 将一个 LED 连接到引脚 `D2`，并串联一个限流电阻。
+1. 将 LED 连接到引脚 `D2`，并串联一个限流电阻。
 
 ### 软件实现
 
-以下是一些演示 PWM 输出的 Arduino 示例代码：
+以下是演示 PWM 输出的 Arduino 代码：
 
 #### 通用 PWM
 
@@ -345,83 +338,84 @@ void loop() {
 }
 ```
 
-此代码通过 PWM 逐渐增加 LED 的亮度。
+此代码使用 PWM 逐渐增加 LED 亮度。
 
 #### LED 控制
 
 ```cpp
 /*
- LEDC 软件渐变
+ LEDC Software Fade
 
- 此示例演示如何使用 ledcWrite 函数实现 LED 的软件渐变。
+ This example shows how to software fade an LED
+ using the ledcWrite function.
 
- 代码改编自原始 Arduino 渐变示例：
+ Code adapted from the original Arduino Fade example:
  https://www.arduino.cc/en/Tutorial/Fade
 
- 此示例代码属于公共领域。
+ This example code is in the public domain.
  */
 
-// 使用 12 位精度作为 LEDC 定时器
+// Use 12-bit precision for the LEDC timer
 #define LEDC_TIMER_12_BIT  12
 
-// 使用 5000 Hz 作为 LEDC 基频
+// Use 5000 Hz as the LEDC base frequency
 #define LEDC_BASE_FREQ     5000
 
-// 渐变 LED 引脚（替换为 LED_BUILTIN 常量以使用内置 LED）
+// Fade LED PIN (replace with LED_BUILTIN constant for the built-in LED)
 #define LED_PIN            D5
 
-int brightness = 0;    // LED 的亮度
-int fadeAmount = 5;    // LED 渐变的增量
+int brightness = 0;    // How bright the LED is
+int fadeAmount = 5;    // How many points to fade the LED by
 
-// Arduino 类似的 analogWrite
-// 值必须在 0 到 valueMax 之间
+// Arduino-like analogWrite
+// Value has to be between 0 and valueMax
 void ledcAnalogWrite(uint8_t pin, uint32_t value, uint32_t valueMax = 255) {
-  // 计算占空比，4095 来自 2 ^ 12 - 1
+  // Calculate duty, 4095 from 2 ^ 12 - 1
   uint32_t duty = (4095 / valueMax) * min(value, valueMax);
 
-  // 将占空比写入 LEDC
+  // Write duty to LEDC
   ledcWrite(pin, duty);
 }
 
 void setup() {
-  // 设置定时器并将定时器附加到 LED 引脚
+  // Setup timer and attach timer to the LED pin
   ledcAttach(LED_PIN, LEDC_BASE_FREQ, LEDC_TIMER_12_BIT);
 }
 
 void loop() {
-  // 在 LEDC 通道上设置亮度
+  // Set the brightness on the LEDC channel
   ledcAnalogWrite(LED_PIN, brightness);
 
-  // 更改亮度以进行下一次循环迭代
+  // Change the brightness for the next loop iteration
   brightness = brightness + fadeAmount;
 
-  // 在渐变的两端反转方向
+  // Reverse the direction of the fading at the ends of the fade
   if (brightness <= 0 || brightness >= 255) {
     fadeAmount = -fadeAmount;
   }
-  // 等待 30 毫秒以观察渐变效果
+  // Wait for 30 milliseconds to see the dimming effect
   delay(30);
 }
 ```
 
-此代码演示了如何使用 `ledcWrite` 函数使 LED 渐变。LED 的亮度在一个连续循环中逐渐增加和减少。
+此代码演示了如何使用 ledcWrite 函数淡化 LED。LED 亮度在连续循环中逐渐增加和减少。
 
 ## I2C
 
 XIAO ESP32C6 具有硬件 I2C 接口，用于与 I2C 设备通信。
 
-有关更多详细信息，请参考 [I2C API](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/i2c.html) 文档。
+有关更多详细信息，请参阅 [I2C API](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/i2c.html) 文档。
 
 ### 硬件准备
 
-1. 将 I2C 设备的 SDA 引脚连接到 XIAO 的 SDA 引脚 (`D4`)。
-2. 将 I2C 设备的 SCL 引脚连接到 XIAO 的 SCL 引脚 (`D5`)。
+1. 将 I2C 设备的 SDA 引脚连接到 XIAO 的 SDA 引脚（`D4`）。
+2. 将 I2C 设备的 SCL 引脚连接到 XIAO 的 SCL 引脚（`D5`）。
 
 ### 软件实现
 
-#### 主模式
+#### 主机模式
 
-以下是一个演示如何从 I2C 传感器读取数据的 Arduino 示例代码：
+以下是一个演示从 I2C 传感器读取数据的 Arduino 示例：
 
 ```cpp
 #include <Wire.h>
@@ -435,7 +429,7 @@ void setup() {
 
 void loop() {
   Wire.beginTransmission(sensorAddress);
-  Wire.write(0x01);  // 寄存器地址
+  Wire.write(0x01);  // Register address
   Wire.endTransmission();
 
   Wire.requestFrom(sensorAddress, 2);
@@ -450,9 +444,9 @@ void loop() {
 
 此代码从 I2C 传感器的寄存器 `0x01` 读取一个 16 位值。
 
-#### 从模式
+#### 从机模式
 
-以下是一个演示如何将 XIAO ESP32C6 配置为 I2C *从设备* 的 Arduino 示例代码：
+以下是一个演示将 XIAO ESP32C6 用作 I2C *从设备*的 Arduino 示例：
 
 ```cpp
 #include "Wire.h"
@@ -490,72 +484,72 @@ void setup() {
 }
 
 void loop() {
-  // 从设备代码在此处编写
+  // Slave device code here
 }
 ```
 
-在此从模式示例中，XIAO ESP32C6 被配置为地址为 `0x55` 的 I2C 从设备。`onReceive` 回调函数在从设备接收到主设备的数据时被调用，而 `onRequest` 回调函数在主设备请求从设备的数据时被调用。
+在此从机模式示例中，XIAO ESP32C6 被配置为地址为 `0x55` 的 I2C 从设备。当从设备接收到来自主设备的数据时，会调用 `onReceive` 回调函数；当主设备请求从设备的数据时，会调用 `onRequest` 回调函数。
 
 ## SPI
 
-XIAO ESP32C6 微控制器板具有内置 SPI 接口，可实现与其他支持 SPI 的设备之间的快速数据交换。这在需要设备间快速通信的项目中非常有用。
+XIAO ESP32C6 微控制器板具有内置的 SPI 接口，便于与其他 SPI 兼容设备进行快速数据交换。这在需要多个设备之间快速通信的项目中特别有用。
 
-- 有关详细技术规格，请参考 [XIAO ESP32C6 Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)。
-- 了解如何使用 XIAO ESP32C6 的 SPI 接口，请参考 [SPI API Documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/spi.html#)。
+- 有关详细的技术规格，请参阅 [XIAO ESP32C6 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)。
+- 通过查阅 [SPI API 文档](https://docs.espressif.com/projects/arduino-esp32/en/latest/api/spi.html#)，了解更多关于如何在 XIAO ESP32C6 上使用 SPI 接口的信息。
 
 ### 硬件准备
 
-要将 XIAO ESP32C6 连接到另一个 SPI 设备，请按照以下步骤操作：
+要将您的 XIAO ESP32C6 连接到另一个 SPI 设备，请按照以下步骤操作：
 
-1. **MOSI (主输出从输入):** 将 SPI 设备的 `MOSI` 引脚连接到 XIAO 的引脚 `D10`。
-2. **MISO (主输入从输出):** 将 SPI 设备的 `MISO` 引脚连接到 XIAO 的引脚 `D9`。
-3. **SCK (串行时钟):** 将 SPI 设备的 `SCK` 引脚连接到 XIAO 的引脚 `D8`。
-4. **CS (片选):** 将 SPI 设备的 `CS` 引脚连接到 XIAO 的一个数字引脚（例如 `D3`）。
+1. **MOSI（主出从入）：** 将 SPI 设备的 `MOSI` 引脚连接到 XIAO 的 `D10` 引脚。
+2. **MISO（主入从出）：** 将 SPI 设备的 `MISO` 引脚连接到 XIAO 的 `D9` 引脚。
+3. **SCK（串行时钟）：** 将 SPI 设备的 `SCK` 引脚连接到 XIAO 的 `D8` 引脚。
+4. **CS（片选）：** 将 SPI 设备的 `CS` 引脚连接到 XIAO 的数字引脚（例如 `D3`）。
 
 ```
 MOSI -> D10
 MISO -> D9
 SCK -> D8
-CS -> D3 (示例)
+CS -> D3 (作为示例)
 ```
 
 ### 软件实现
 
-以下是一个简化的 Arduino 示例代码，演示了使用 XIAO ESP32C6 与 SPI 设备进行基本 SPI 通信。此代码向 SPI 设备发送命令并读取响应数据。
+以下是一个简化的 Arduino 示例，演示了使用 XIAO ESP32C6 与 SPI 设备进行基本 SPI 通信。此示例向 SPI 设备发送命令并读取响应（从 SPI 设备读取数据）。
 
 ```cpp
 #include <SPI.h>
 
-const int csPin = 3;  // 使用引脚 D3 作为片选 (CS)
+const int csPin = 3;  // Use pin D3 for Chip Select (CS)
 
 void setup() {
-  // 初始化 SPI 通信
+  // Initialize SPI communication
   SPI.begin();            
-  // 将 CS 引脚设置为输出
+  // Set the CS pin as an output
   pinMode(csPin, OUTPUT); 
-  // 将 CS 引脚设置为高电平，表示没有活动通信
+  // Set the CS pin high to indicate no active communication
   digitalWrite(csPin, HIGH);
 }
 
 void loop() {
-  // 开始与设备通信
+  // Start communication with the device
   digitalWrite(csPin, LOW);
-  SPI.transfer(0x01);  // 向设备发送命令
-  int data = SPI.transfer(0);  // 读取响应数据
-  digitalWrite(csPin, HIGH);  // 结束通信
+  SPI.transfer(0x01);  // Send a command to the device
+  int data = SPI.transfer(0);  // Read the response
+  digitalWrite(csPin, HIGH);  // End communication
 
-  // 打印接收到的数据
+  // Print the received data
   Serial.println(data);       
-  delay(100);  // 等待短时间
+  delay(100);  // Wait for a short period
 }
 ```
 :::note
-确保代码中的引脚分配与硬件设置中的实际连接相匹配。上述示例使用了基于 XIAO ESP32-C6 的 `pin_arduino.h` 文件中预定义的引脚号，并额外定义了 CS 引脚。
+确保您的示例中的引脚分配与硬件设置中的物理连接匹配。上述示例使用基于 XIAO ESP32-C6 的 `pin_arduino.h` 文件的预定义引脚编号，并为 CS 引脚添加了额外的定义。
 :::
 
 ## 资源
 
-- [XIAO ESP32C6 文档](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)
+- [XIAO ESP32C6 文档](https://wiki.seeedstudio.com/cn/xiao_esp32c6_getting_started/)
 - [ESP32-C6 数据手册](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)
 - [Arduino 参考](https://www.arduino.cc/reference/en/)
 - [Arduino ESP32 参考](https://docs.espressif.com/projects/arduino-esp32/en/latest/index.html)

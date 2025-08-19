@@ -27,7 +27,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
           </a>
       </div></td>
@@ -233,7 +233,7 @@ LNS（LoRaWANネットワークサーバー）が正しく設定されている�
 3. [Grove - Wio-E5 Helium デモ](https://wiki.seeedstudio.com/ja/Grove_Wio_E5_Helium_Demo/) Grove - Wio-E5モジュールとSeeeduino XIAOモジュールを使用してHelium IoTネットワークに接続
 4. [Grove - Wio-E5 Arduino Uno R4と使用するデモ](https://wiki.seeedstudio.com/ja/Grove_Wio_E5_SenseCAP_Cloud_Demo/)
 5. [Grove - Wio-E5 XIAO ESP32S3と使用するデモ](https://wiki.seeedstudio.com/ja/Grove_Wio_E5_SenseCAP_XIAO_ESP32S3/)
-6. [Wio-E5とXIAO ESP32S3を使用してPlatformIO(Arduino)でLoRaWANネットワークにアクセス](/platformio_wio_e5/) 実践ガイド。PlatformIOを使用してArduino互換ボードとWio-E5を統合し、効率的なLoRaWAN接続を実現する詳細な手順を提供。
+6. [Wio-E5とXIAO ESP32S3を使用してPlatformIO(Arduino)でLoRaWANネットワークにアクセス](/ja/platformio_wio_e5/) 実践ガイド。PlatformIOを使用してArduino互換ボードとWio-E5を統合し、効率的なLoRaWAN接続を実現する詳細な手順を提供。
 
 ## リソース
 

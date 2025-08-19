@@ -30,7 +30,7 @@ RePhone（Xadow）モジュールの導入により、スマートウォッチ�
 
 ###   Xadow GPS v2
 ---
-<!-- このモジュールの詳細については、[**Xadow GPS V2 Wikiページ**](/Xadow_GPS_V2)をご確認ください。 -->
+<!-- このモジュールの詳細については、[**Xadow GPS V2 Wikiページ**](/ja/Xadow_GPS_V2)をご確認ください。 -->
 
 <table>
 <tr>
@@ -121,7 +121,7 @@ RePhone（Xadow）モジュールの導入により、スマートウォッチ�
 
 ###   Xadow NFC v2
 
-<!-- このモジュールの詳細については、[**Xadow NFC v2 Wikiページ**](/Xadow_NFC_v2)をご確認ください。 -->
+<!-- このモジュールの詳細については、[**Xadow NFC v2 Wikiページ**](/ja/Xadow_NFC_v2)をご確認ください。 -->
 
 <table>
 <tr>

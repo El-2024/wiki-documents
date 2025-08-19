@@ -10,31 +10,25 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reTerminal-DM_intro_FUXA
 last_update:
-  date: 05/15/2025
+  date: 1/27/2024
   author: Kasun Thushara
 ---
-
-# 技术支持
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## 什么是 SCADA？
 
 <center><img width={1000} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/fuxa-demo.gif" /></center>
 
-**监督控制与数据采集系统 (SCADA)** 是工业环境中的关键系统，用于监控和控制流程。它作为一个**集中化平台，从工业网络中的各种传感器和设备收集实时数据**。SCADA 使操作员能够**可视化、分析并响应这些数据，从而促进高效的决策**。此外，它提供了**远程访问和控制功能，使操作员能够从中央位置管理流程**。SCADA 的集成通过提供对整个系统的全面概览和控制，提升了工业操作的整体效率、安全性和可靠性。
+**监控与数据采集系统（Supervisory Control and Data Acquisition，简称 SCADA）** 是工业环境中的关键系统，用于监控和控制流程。它作为一个**集中化平台，从工业网络中的各种传感器和设备收集实时数据**。SCADA 使操作员能够**可视化、分析并响应这些数据，从而促进高效的决策**。此外，它还提供**远程访问和控制功能，使操作员能够从中央位置管理流程**。通过 SCADA 的集成，可以通过提供对整个系统的全面概览和控制，提升工业操作的整体效率、安全性和可靠性。
 
 <center><img width={1000} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/fuxa-editor.png" /></center>
 
 ## FUXA
 
-FUXA 是一个强大的基于 Web 的软件，能够快速创建和部署可扩展的 SCADA、HMI、Dashboard 或 IIoT 系统。通过 FUXA，您可以为您的机器定制现代化的流程可视化，展示实时数据并控制自动化工业工厂中的仪器。
+FUXA 是一个强大的基于 Web 的软件，能够快速创建和部署可扩展的 SCADA、HMI、仪表盘或工业物联网（IIoT）系统。借助 FUXA，您可以为您的机器定制现代化的流程可视化，展示实时数据并控制自动化工业设备中的仪器。
 
 ## 入门指南
 
-在开始此项目之前，您可能需要提前准备好硬件和软件，如下所述。
+在开始此项目之前，您需要提前准备好硬件和软件，如下所述。
 
 ### 硬件准备
 
@@ -49,7 +43,7 @@ FUXA 是一个强大的基于 Web 的软件，能够快速创建和部署可扩�
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-DM-p-5616.html">
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-DM-p-5616.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a></div></td>
         </tr>
@@ -58,13 +52,13 @@ FUXA 是一个强大的基于 Web 的软件，能够快速创建和部署可扩�
 
 ### 软件准备
 
-我们推荐从官方网站安装 **Raspberry Pi 64 位 OS 的 Bullseye 版本**。如果您希望安装新的 Raspbian OS，请按照此[**指南**](https://wiki.seeedstudio.com/reterminal-dm-flash-OS/)中的步骤操作。
+我们推荐从官方网站安装 **Raspberry Pi 64 位 OS 的 Bullseye 版本**。如果您希望安装新的 Raspbian OS，请按照此[**指南**](https://wiki.seeedstudio.com/cn/reterminal-dm-flash-OS/)中的步骤操作。
 
 ## 在 reTerminal DM 上安装 FUXA
 
 :::note
 
-需要安装 Node 版本 18。请在终端中逐条执行以下命令。
+需要安装 Node.js 18 版本。请在终端中逐条执行以下命令。
 
 :::
 
@@ -91,6 +85,7 @@ sudo npm install -g --unsafe-perm @frangoteam/fuxa-min
 sudo fuxa
 
 ```
+
 FUXA 的用户界面可以通过以下 URL 访问：**http://localhost:1881** 。
 
 FUXA Web 服务器主要提供两个页面：
@@ -120,7 +115,7 @@ FUXA Web 服务器主要提供两个页面：
 
 **了解更多详情** [点击这里](https://github.com/frangoteam/FUXA/wiki/HowTo-Devices-and-Tags)
 
-选择设备类型，将轮询间隔设置为您期望的秒数，并启用它。然后，向服务器提供必要的凭据，包括地址、客户端 ID、用户名和密码。
+选择设备类型，将轮询间隔设置为您希望的秒数，并启用它。然后，向服务器提供必要的凭据，包括地址、客户端 ID、用户名和密码。
 
 <center><img width={400} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/mqqtdevice.PNG" /></center>
 
@@ -148,7 +143,7 @@ FUXA Web 服务器主要提供两个页面：
 
 <center><img width={1000} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/publishmqqt.png" /></center>
 
-之后，您将看到一个主题列表，允许您选择是发布还是订阅。
+之后，您将拥有一个主题列表，允许您选择是发布还是订阅。
 
 ## 使用滑块调整发送到终端设备的值
 
@@ -158,17 +153,17 @@ FUXA Web 服务器主要提供两个页面：
 
 ## 显示设备数据
 
-在您的系统中，可能会有传感器值需要展示。为此，您可以使用 Circular Gauge（圆形仪表）、Bar Gauge（条形仪表）等工具。在本次演示中，我们将使用 Circular Gauge，它可以在 Controls 选项卡下找到。
+在您的系统中，可能需要展示传感器值。为此，您可以使用 Circular Gauge、Bar Gauge 等工具。在本次演示中，我们将使用 Circular Gauge，它可以在 Controls 选项卡下找到。
 
 <center><img width={300} img height={350} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/gauge.png" /></center>
 
-接下来，您将看到一个交互式用户界面，用于修改您的圆形仪表。选择标签并根据您的偏好进行自定义。您可以将其分为多个子区段，为这些区段分配颜色，甚至更改文本位置等其他自定义功能。
+接下来，您将看到一个交互式用户界面，用于修改您的 Circular Gauge。选择标签并根据您的偏好进行自定义。您可以将其分为多个子部分，为这些部分分配颜色，甚至更改文本位置，以及其他自定义功能。
 
 <center><img width={1000} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/bar.gif" /></center>
 
 ## 添加工艺工程组件
 
-在本节中，您将发现丰富的工艺工程组件，例如 **泵、马达、鼓风机、罐体、搅拌器** 等。作为演示，我们将重点展示如何为泵设置开启和关闭的颜色。只需选择相关的标签，并为开启和关闭状态指定颜色。
+在本节中，您将发现丰富的工艺工程组件，例如 **泵、马达、鼓风机、储罐、搅拌器** 等。作为演示，我们将重点展示如何为泵设置开启和关闭的颜色。只需选择相关的标签，并为开启和关闭状态指定颜色即可。
 
 <center><img width={1000} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/processengineer.gif" /></center>
 
@@ -186,11 +181,11 @@ FUXA Web 服务器主要提供两个页面：
 
 ## 如何添加报警
 
-要添加报警，您需要导航到编辑器窗口中的设置并选择 **Alarms**。
+要添加报警，您需要在编辑器窗口中导航到设置并选择 **Alarms**。
 
 <center><img width={400} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/setup-alarms.png" /></center>
 
-接下来，有几种设置报警的选项：高高（High-High）、高（High）、低（Low）和消息（Messages）。在 **High-High** 中，我们可以设置阈值并配置报警。在 **High** 中，当值超出某个范围时，我们可以在两个关键点之间设置报警。**Message** 是一种通知，当值达到某个阈值时会弹出并消失。**Low** 则在传感器数据低于某个水平时触发，例如当罐体液位较低时。在这种情况下，我们还可以为两个关键设定点设置报警。在本示例中，我们将演示 **High-High** 和 **Message** 报警的出色功能。
+接下来，有几种设置报警的选项：高高限、高限、低限和消息。在 **高高限** 中，我们可以设置阈值并配置报警。在 **高限** 中，当值超出某个范围时，我们可以在两个关键点之间设置报警。**消息** 是一种通知，当值达到某个阈值时会弹出并消失。**低限** 则在传感器数据低于某个水平时触发，例如当储罐液位较低时。在这种情况下，我们还可以为两个关键设定点设置报警。在本示例中，我们将演示 **高高限** 和 **消息** 报警的出色功能。
 
 <center><img width={1000} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/fuxa-alarms.gif" /></center>
 
@@ -198,7 +193,7 @@ FUXA Web 服务器主要提供两个页面：
 
 <center><img width={400} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/Layout1.PNG" /></center>
 
-然后，确保 **Alarms notification mode** 设置为 **fixed**，并且 **Info notification mode** 也设置为 **fixed**。此配置允许您在操作 SCADA 系统时查看报警通知。
+然后，确保将 **Alarms notification mode** 设置为 **fixed**，并将 **Info notification mode** 也设置为 **fixed**。此配置允许您在操作 SCADA 系统时查看报警通知。
 
 <center><img width={650} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/layoutalarms.PNG" /></center>
 
@@ -206,18 +201,20 @@ FUXA Web 服务器主要提供两个页面：
 
 ## 演示
 
-在这个全面的演示中，设置包括三个罐体，其中两个装有不同的溶液。此外，还有两个独立的阀门和泵，用于将溶液输送到混合罐中。在混合过程完成后，另一个阀门用于获取最终的混合溶液。在整个操作过程中，混合罐的温度会被持续监控。
+在这一全面的演示中，设置包括三个储罐，其中两个储罐装有不同的溶液。此外，还有两个独立的阀门和泵，用于将溶液输送到混合罐中。在混合过程完成后，另一个阀门用于获取混合后的溶液。在整个操作过程中，混合罐的温度会被持续监控。
 
 <center><img width={1000} src="https://files.seeedstudio.com/wiki/reTerminalDM/FUXA/demo-fuxa.gif" /></center>
 
-我们对 **frangoteam** 在本 Wiki 创建过程中提供的支持和指导表示诚挚的感谢。有关 FUXA 项目的更多详细信息，请参阅下方的资源选项卡。
+我们向 **frangoteam** 表示诚挚的感谢，感谢他们在本 Wiki 创建过程中提供的支持和指导。有关 FUXA 项目的更多详细信息，请参阅下方的资源标签。
 
 ## 资源
 
 - **[网页]** [FUXA 官方文档](https://github.com/frangoteam/FUXA/wiki)
 
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+# 技术支持
+
+感谢您选择我们的产品！我们将为您提供多种支持，确保您在使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

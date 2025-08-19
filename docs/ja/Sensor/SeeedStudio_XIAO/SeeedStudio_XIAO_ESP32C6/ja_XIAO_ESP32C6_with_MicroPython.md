@@ -34,7 +34,7 @@ MicroPythonは、Python 3プログラミング言語の軽量で効率的な実�
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
           </a>
       </div></td>
@@ -54,12 +54,12 @@ MicroPythonは、Python 3プログラミング言語の軽量で効率的な実�
     </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://thonny.org/">
+          <a class="get_one_now_item" href="https://thonny.org/" target="_blank" rel="noopener noreferrer">
               <strong><span><font color={'FFFFFF'} size={"4"}> ダウンロード ⏬</font></span></strong>
           </a>
       </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/ESP32C6-MicroPy/XIAO_ESP32C6_Micropython.zip">
+          <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/ESP32C6-MicroPy/XIAO_ESP32C6_Micropython.zip" target="_blank" rel="noopener noreferrer">
               <strong><span><font color={'FFFFFF'} size={"4"}> ダウンロード ⏬</font></span></strong>
           </a>
       </div></td>
@@ -154,7 +154,7 @@ COMXXをPC上のCOMポート番号に置き換えてください。
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトはSeeed Studio [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479)によってサポートされています。
-- [Hendraとshariltuminの努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=c6&pane=issue&itemId=59874459&issue=Seeed-Studio%7Cwiki-documents%7C1117)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/ja/contributors/)。
+- [Hendraとshariltuminの努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=c6&pane=issue&itemId=59874459&issue=Seeed-Studio%7Cwiki-documents%7C1117)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/contributors/)。
 
 ## 技術サポートと製品ディスカッション
 

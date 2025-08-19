@@ -83,7 +83,7 @@ AT42QT1070は、バーストをスプレッドスペクトラム方式で変調�
 
 *   [AT42QT107データシート](https://files.seeedstudio.com/wiki/Xadow_Q_Touch_Sensor/res/AT42QT1070-MMH.pdf)
 
-<!-- *   [指タッチを検出する方法](/How_to_detect_finger_touch) -->
+<!-- *   [指タッチを検出する方法](/ja/How_to_detect_finger_touch) -->
 
 ## 技術サポートと製品ディスカッション
 

@@ -21,7 +21,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 このミニルーターは、デュアルギガビットイーサネットポートとデュアルUSB 3.0ポートを備えており、ソフトルーターアプリケーションに適していますが、ハードウェアは最小限に抑えられています。4GB RAMと32GB eMMCを搭載したRaspberry Pi Compute Module 4を事前にインストールしており、高速な起動時間とスムーズな全体的な体験を実現します。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Dual-GbE-Carrier-Board-with-4GB-RAM-32GB-eMMC-RPi-CM4-Case-p-5029.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Dual-GbE-Carrier-Board-with-4GB-RAM-32GB-eMMC-RPi-CM4-Case-p-5029.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
@@ -57,7 +57,7 @@ OpenWrtをミニルーターで使用する前に、以下のハードウェア�
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Mini_Router/mini_router_overview2.png" alt="pir" width="650" height="auto"/></p>
 
 ## FAQ
-詳細については、[**こちら**](/FAQs_For_openWrt)をクリックしてください。
+詳細については、[**こちら**](/ja/FAQs_For_openWrt)をクリックしてください。
 
 ## リソース
 

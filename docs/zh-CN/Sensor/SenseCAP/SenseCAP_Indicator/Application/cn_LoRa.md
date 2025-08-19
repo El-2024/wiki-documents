@@ -1,59 +1,53 @@
 ---
-description: LoRa 演示用法
-title: LoRa 通信 - SenseCAP 指示器
+description: LoRa 演示使用方法
+title: LoRa 通信 - SenseCAP Indicator
 keywords:
-- SenseCAP 指示器
+- SenseCAP Indicator
 - LoRa
 - ESP32S3
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/SenseCAP_Indicator_LoRa
-last_update:
-  date: 05/15/2025
-  author: Spencer
 toc_max_heading_level: 4
 sidebar_position: 3
+last_update:
+  date: 11/17/2023
+  author: Spencer
 ---
-
-# SenseCAP 指示器 - LoRa 应用开发
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+# SenseCAP Indicator - LoRa 应用开发
 
-## 简介
+## 介绍
 
-LoRa® 是一种远距离无线通信技术，优化用于在远距离传输少量数据。它通过一种称为 Chirp Spread Spectrum (CSS) 的方法调制子 GHz 频段的无线电信号。
+LoRa® 是一种长距离无线通信技术，专为在远距离传输少量数据而优化。它通过使用称为啁啾扩频（CSS）的方法在亚GHz频谱中调制无线电信号来工作。
 
-Seeed Studio 的 SenseCAP 指示器（版本 D1L 和 D1Pro）内置了 LoRa 收发模块（Semtech SX1262 LoRa® 芯片），使得为您的项目添加低功耗无线连接变得简单。在本文中，我们将介绍如何在两个 SenseCAP 指示器板之间设置 LoRa 通信。
+Seeed Studio 的 SenseCAP Indicator（版本 D1L 和 D1Pro）包含内置的 LoRa 收发器模块（Semtech SX1262 LoRa® 芯片），使您的项目能够轻松添加低功耗无线连接。在这篇文章中，我们将介绍如何在两个 SenseCAP Indicator 板之间建立 LoRa 通信。
 
 ### 概述
 
-此[演示](https://github.com/Seeed-Solution/indicator_lora_commu)展示了如何在 SenseCAP 指示器和 XIAO 板之间通过 Wio-E5 作为中介建立基本的 LoRa 通信。SenseCAP 指示器从 XIAO 获取传感器数据，然后通过 Wio-E5 进行传输。传输的有效载荷随后由 SenseCAP 指示器接收，解码并输出结果，并在其屏幕上显示数据。
+这个[演示](https://github.com/Seeed-Solution/indicator_lora_commu)展示了如何在 SenseCAP Indicator 和 XIAO 板之间建立基本的 LoRa 通信，使用 Wio-E5 作为中介。SenseCAP Indicator 从 XIAO 获取传感器数据，然后通过 Wio-E5 传输。传输的有效载荷随后被 SenseCAP Indicator 接收，解密并输出结果，并在其屏幕上显示数据。
 
 无 LVGL 代码：[代码 · GitHub](https://github.com/Seeed-Solution/indicator_lora_commu/tree/29624d10643a41ae5e1e24124b81e93b5e3cd3bb)
 
 ## 硬件
 
-### SenseCAP 指示器
+### SenseCAP Indicator
 
-从页面 [Dive_into_the_Hardware](/SenseCAP_Indicator_Dive_into_the_Hardware/#hardware-diagram) 可以看到，LoRa 收发器通过 SPI 接口连接到 ESP32-S3 MCU。
+从页面 [深入了解硬件](/cn/SenseCAP_Indicator_Dive_into_the_Hardware/#hardware-diagram) 中，我们可以看到 LoRa 收发器通过 SPI 接口连接到 ESP32-S3 MCU。
 
 <div align="center"><img width={680} src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_6.png
 "/></div>
 
 关键组件包括：
-- Semtech SX1262 无线前端
+- Semtech SX1262 射频前端
 - ESP32-S3 MCU
 
-LoRa 收发器处理所有 LoRa 信号的低级调制和解调。我们可以通过 ESP32-S3 的 SPI 接口与其通信。
+LoRa 收发器处理所有 LoRa 信号的低级调制和解调。我们可以使用 ESP32-S3 的 SPI 接口与其通信。
 
 ### XIAO
 
-在此演示中，XIAO 用于收集传感器数据并通过 Wio-E5 将其传输到 SenseCAP 指示器。XIAO 通过 UART 接口连接到 Wio-E5。
+此演示中的 XIAO 需要收集传感器数据并通过 Wio-E5 将其传输到 SenseCAP Indicator。XIAO 通过 UART 接口连接到 Wio-E5。
 
 - XIAO
 - Wio-E5
@@ -61,40 +55,40 @@ LoRa 收发器处理所有 LoRa 信号的低级调制和解调。我们可以通
 
 ## 软件
 
-由于 [SenseCAP_Indicator_ESP32](https://github.com/Seeed-Solution/sensecap_indicator_esp32) SDK 已经提供了 LoRa 库，我们可以直接使用它。您可以快速查看页面 [LoRa®](/SenseCAP_Indicator_ESP32_LoRa) 了解如何使用 LoRa 库。
+由于 [SenseCAP_Indicator_ESP32](https://github.com/Seeed-Solution/sensecap_indicator_esp32) SDK 已经提供了 LoRa 库，我们可以直接使用它，您可以快速查看页面 [LoRa®](/cn/SenseCAP_Indicator_ESP32_LoRa) 了解如何使用 LoRa 库。
 
-## 入门
+## 入门指南
 
-此演示展示了如何设置本地 LoRa® 集线器以实现物联网连接。
+此演示展示了如何为物联网连接设置本地 LoRa® 集线器。
 
-### 前置条件
+### 先决条件
 
-请按照[说明](/SenseCAP_Indicator_How_To_Flash_The_Default_Firmware)设置开发环境。
+请按照[说明](/cn/SenseCAP_Indicator_How_To_Flash_The_Default_Firmware)设置开发环境。
 
-### 第 1 步：下载演示代码
+### 步骤 1：下载演示代码
 
-从[此链接](https://github.com/Seeed-Solution/indicator_lora_commu)克隆或下载演示代码。此代码将作为您 LoRa 应用的起点。
+从[此链接](https://github.com/Seeed-Solution/indicator_lora_commu)克隆或下载演示代码。此代码将作为您的 LoRa 应用程序的起点。
 
-### 第 2 步：实现有效载荷编码器（XIAO;Arduino）
+### 步骤 2：实现有效载荷编码器（XIAO；Arduino）
 
-#### 第 2.1 步：实现您的有效载荷结构和编码器
+#### 步骤 2.1：实现您的有效载荷结构和编码器
 
 <Tabs>
 
   <TabItem value="XIAO/include/Frame.h">
 
-  ```cpp
+```cpp
   #ifndef _FRAME_H
   #define _FRAME_H
   #include <Arduino.h>
   #include <vector>
 
-  /** 有效载荷格式
-  * | 主题 | 数据长度 | 数据有效载荷 | CRC |
-  * | 1字节 | 1字节    | n 字节       | 2字节 |
+  /** 载荷格式
+  * | 主题 | 数据长度 | 数据载荷 | CRC |
+  * | 1字节 | 1字节      | n字节       | 2字节 |
   * 示例:
-  * | 0x01 | 0x0E | 14 字节 | 2字节 | 用于 SEN54
-  * | 0x01 | 0x10 | 16 字节 | 2字节 | 用于 SEN55
+  * | 0x01 | 0x0E | 14字节 | 2字节 | 用于 SEN54
+  * | 0x01 | 0x10 | 16字节 | 2字节 | 用于 SEN55
   */
 
   #pragma pack(1)
@@ -105,15 +99,15 @@ LoRa 收发器处理所有 LoRa 信号的低级调制和解调。我们可以通
   };
 
   #pragma pack(1)
-  /* 高亮开始 */
+  /* highlight-start */
   typedef struct
   {
-      enum topics topic;         /* 消息类型 */
+      enum topics topic;         /*消息类型*/
       uint8_t dataLength;
-      std::vector<uint8_t> data; /* 有效载荷的实际数据 */
+      std::vector<uint8_t> data; /*载荷的实际数据*/
       uint16_t crc;
   } Frame_t;
-  /* 高亮结束 */
+  /* highlight-end */
   String packFrame(Frame_t frame);
   void deleteFrame(Frame_t *frame);
   uint16_t crc16_ccitt(const uint8_t *data, size_t length);
@@ -133,25 +127,25 @@ LoRa 收发器处理所有 LoRa 信号的低级调制和解调。我们可以通
       // 打包帧主题
       packedData[0] = frame.topic;
       packedData[1] = frame.dataLength;
-      // 高亮开始
-      // 打包数据有效载荷
+      // highlight-start
+      // 打包数据载荷
       for (size_t i = 0; i < frame.dataLength; i++) {
           packedData[2 + i] = frame.data[i];
       }
-      // 高亮结束
-      // 计算 CRC（为简单起见，我们假设 CRC 是所有字节的总和）
+      // highlight-end
+      // 计算CRC（为简单起见，我们假设CRC只是所有字节的总和）
       frame.crc = crc16_ccitt(packedData, 2 + frame.dataLength);
 
-      // 打包 CRC
+      // 打包CRC
       packedData[2 + frame.dataLength]     = (frame.crc & 0xFF00) >> 8;
       packedData[2 + frame.dataLength + 1] = frame.crc & 0x00FF;
-      // 高亮开始
-      // 字符串打包帧；将打包数据序列化为字符串
+      // highlight-start
+      // String packedFrame; 将打包的数据序列化为字符串
       char packedFrameBuffer[(2 + frame.dataLength + 2) * 2];
       for (size_t i = 0; i < 2 + frame.dataLength + 2; i++) {
-          snprintf(&packedFrameBuffer[i * 2], 3, "%02X", packedData[i]); // 3 包括空终止符
+          snprintf(&packedFrameBuffer[i * 2], 3, "%02X", packedData[i]); // 3 包含空终止符
       }
-      // 高亮结束
+      // highlight-end
       free(packedData);
 
       return String(packedFrameBuffer);
@@ -181,150 +175,149 @@ LoRa 收发器处理所有 LoRa 信号的低级调制和解调。我们可以通
   </TabItem>
 </Tabs>
 
-#### 第 2.2 步：实现传感器数据结构并适配到有效载荷编码器
+
+#### 步骤 2.2: 实现传感器数据结构并适配载荷编码器
 <Tabs>
   <TabItem value="XIAO/include/sensor_sen5x.h">
 
-```cpp
-#ifndef PAYLOAD_SEN5X_H
-#define PAYLOAD_SEN5X_H
-#include "Frame.h"
-#include "SensorPayload.h"
-#include <SensirionI2CSen5x.h>
+  ```cpp
+  #ifndef PAYLOAD_SEN5X_H
+  #define PAYLOAD_SEN5X_H
+  #include "Frame.h"
+  #include "SensorPayload.h"
+  #include <SensirionI2CSen5x.h>
 
-#define DEVICE_SEN54
+  #define DEVICE_SEN54
 
-#if defined(DEVICE_SEN54)
-#elif defined(DEVICE_SEN55)
-#else
-#error "请在编译器选项中定义一个设备。"
-#endif
+  #if defined(DEVICE_SEN54)
+  #elif defined(DEVICE_SEN55)
+  #else
+  #error "请在编译器选项中定义设备。"
+  #endif
 
-class PayloadSEN5x : public SensorPayload<SensirionI2CSen5x> {
-  public:
-    PayloadSEN5x(SensirionI2CSen5x handler);
-    uint16_t init() override;
-    String toPayloadString() override;
+  class PayloadSEN5x : public SensorPayload<SensirionI2CSen5x> {
+    public:
+      PayloadSEN5x(SensirionI2CSen5x handler);
+      uint16_t init() override;
+      String toPayloadString() override;
 
-  private:
+    private:
     //highlight-start
-    uint16_t massConcentrationPm1p0; // PM1.0 质量浓度
-    uint16_t massConcentrationPm2p5; // PM2.5 质量浓度
-    uint16_t massConcentrationPm4p0; // PM4.0 质量浓度
-    uint16_t massConcentrationPm10p0; // PM10 质量浓度
-    int16_t ambientHumidity; // 环境湿度
-    int16_t ambientTemperature; // 环境温度
-    int16_t vocIndex; // 挥发性有机化合物指数
-#ifdef DEVICE_SEN55
-    // int16_t noxIndex; // 传感器 SEN54 不支持 NOx
-#endif
-    //highlight-end
-    SensirionI2CSen5x _sen5x;
-};
-#endif // PAYLOAD_SEN5X_H
-```
+      uint16_t massConcentrationPm1p0;
+      uint16_t massConcentrationPm2p5;
+      uint16_t massConcentrationPm4p0;
+      uint16_t massConcentrationPm10p0;
+      int16_t ambientHumidity;
+      int16_t ambientTemperature;
+      int16_t vocIndex;
+  #ifdef DEVICE_SEN55
+  // int16_t noxIndex; // 传感器 SEN54 不支持 NOx
+  #endif
+      //highlight-end
+      SensirionI2CSen5x _sen5x;
+  };
+  #endif // PAYLOAD_SEN5X_H
+  ```
+  </TabItem>
+  <TabItem value="XIAO/src/sensor_sen5x.cpp">
 
-</TabItem>
-<TabItem value="XIAO/src/sensor_sen5x.cpp">
+  ```cpp
+  #include "sensor_sen5x.h"
+  #include "main.h"
 
-```cpp
-#include "sensor_sen5x.h"
-#include "main.h"
+  PayloadSEN5x::PayloadSEN5x(SensirionI2CSen5x handler)
+      : SensorPayload<SensirionI2CSen5x>(handler), _sen5x(handler) {
+      // 在此处初始化 SEN5X 的特定数据成员（如果需要）
+      _sen5x.begin(Wire);
+  }
 
-PayloadSEN5x::PayloadSEN5x(SensirionI2CSen5x handler)
-    : SensorPayload<SensirionI2CSen5x>(handler), _sen5x(handler) {
-    // 在此初始化 SEN5X 的特定数据成员（如果需要）
-    _sen5x.begin(Wire);
-}
+  uint16_t PayloadSEN5x::init() {
+      // 在此处实现 SEN5X 的初始化逻辑
+      uint16_t error;
+      char errorMessage[256];
+      error = _sen5x.deviceReset();
+      if (error) {
+          Serial.print("尝试执行 deviceReset() 时出错: ");
+          errorToString(error, errorMessage, 256);
+          Serial.println(errorMessage);
+      }
+      float tempOffset = 0.0;
+      error            = _sen5x.setTemperatureOffsetSimple(tempOffset);
+      if (error) {
+          Serial.print("尝试执行 setTemperatureOffsetSimple() 时出错: ");
+          errorToString(error, errorMessage, 256);
+          Serial.println(errorMessage);
+      } else {
+          Serial.print("温度偏移设置为 ");
+          Serial.print(tempOffset);
+          Serial.println(" 摄氏度 (仅限 SEN54/SEN55)");
+      }
 
-uint16_t PayloadSEN5x::init() {
-    // 在此实现 SEN5X 的初始化逻辑
-    uint16_t error;
-    char errorMessage[256];
-    error = _sen5x.deviceReset();
-    if (error) {
-        Serial.print("尝试执行 deviceReset() 时出错: ");
-        errorToString(error, errorMessage, 256);
-        Serial.println(errorMessage);
-    }
-    float tempOffset = 0.0;
-    error = _sen5x.setTemperatureOffsetSimple(tempOffset);
-    if (error) {
-        Serial.print("尝试执行 setTemperatureOffsetSimple() 时出错: ");
-        errorToString(error, errorMessage, 256);
-        Serial.println(errorMessage);
-    } else {
-        Serial.print("温度偏移设置为 ");
-        Serial.print(tempOffset);
-        Serial.println(" 摄氏度 (仅适用于 SEN54/SEN55)");
-    }
+      // 开始测量
+      error = _sen5x.startMeasurement();
+      if (error) {
+          Serial.print("尝试执行 startMeasurement() 时出错: ");
+          errorToString(error, errorMessage, 256);
+          Serial.println(errorMessage);
+      }
+      return 0;
+  }
 
-    // 开始测量
-    error = _sen5x.startMeasurement();
-    if (error) {
-        Serial.print("尝试执行 startMeasurement() 时出错: ");
-        errorToString(error, errorMessage, 256);
-        Serial.println(errorMessage);
-    }
-    return 0;
-}
+  String PayloadSEN5x::toPayloadString() {
+  // 在此处添加将数据转换为载荷字符串的代码
+  #ifdef DEVICE_SEN55
+      _sen5x.readMeasuredValuesAsIntegers(massConcentrationPm1p0, massConcentrationPm2p5, massConcentrationPm4p0, massConcentrationPm10p0, ambientHumidity, ambientTemperature, vocIndex, noxIndex);
+      _frame.dataLength = 16;
+  #else
+      int16_t __noxIndex;
+      _sen5x.readMeasuredValuesAsIntegers(massConcentrationPm1p0, massConcentrationPm2p5, massConcentrationPm4p0, massConcentrationPm10p0, ambientHumidity, ambientTemperature, vocIndex, __noxIndex);
+      _frame.dataLength = 14;
+  #endif
 
-String PayloadSEN5x::toPayloadString() {
-    // 在此添加代码以将数据转换为有效负载字符串
-#ifdef DEVICE_SEN55
-    _sen5x.readMeasuredValuesAsIntegers(massConcentrationPm1p0, massConcentrationPm2p5, massConcentrationPm4p0, massConcentrationPm10p0, ambientHumidity, ambientTemperature, vocIndex, noxIndex);
-    _frame.dataLength = 16;
-#else
-    int16_t __noxIndex;
-    _sen5x.readMeasuredValuesAsIntegers(massConcentrationPm1p0, massConcentrationPm2p5, massConcentrationPm4p0, massConcentrationPm10p0, ambientHumidity, ambientTemperature, vocIndex, __noxIndex);
-    _frame.dataLength = 14;
-#endif
+      _frame.topic = TOPICS_SEN5x;
 
-    _frame.topic = TOPICS_SEN5x;
+      // 清空数据向量
+      _frame.data.clear();
+      //highlight-start
+      // 将值转换为十六进制载荷字符串
+      _frame.data.push_back((uint8_t)(massConcentrationPm1p0 >> 8));
+      _frame.data.push_back((uint8_t)(massConcentrationPm1p0 & 0xFF));
+      _frame.data.push_back((uint8_t)(massConcentrationPm2p5 >> 8));
+      _frame.data.push_back((uint8_t)(massConcentrationPm2p5 & 0xFF));
+      _frame.data.push_back((uint8_t)(massConcentrationPm4p0 >> 8));
+      _frame.data.push_back((uint8_t)(massConcentrationPm4p0 & 0xFF));
+      _frame.data.push_back((uint8_t)(massConcentrationPm10p0 >> 8));
+      _frame.data.push_back((uint8_t)(massConcentrationPm10p0 & 0xFF));
+      _frame.data.push_back((uint8_t)(ambientHumidity >> 8));
+      _frame.data.push_back((uint8_t)(ambientHumidity & 0xFF));
+      _frame.data.push_back((uint8_t)(ambientTemperature >> 8));
+      _frame.data.push_back((uint8_t)(ambientTemperature & 0xFF));
+      _frame.data.push_back((uint8_t)(vocIndex >> 8));
+      _frame.data.push_back((uint8_t)(vocIndex & 0xFF));
+  #ifdef DEVICE_SEN55
+  // _frame.data.push_back((uint8_t)(noxIndex >> 8));
+  // _frame.data.push_back((uint8_t)(noxIndex & 0xFF));
+  #endif
+      //highlight-end
+      char data[256];
+      sprintf(data, "%d,%d,%d,%d,%d,%d,%d", massConcentrationPm1p0, massConcentrationPm2p5, massConcentrationPm4p0, massConcentrationPm10p0, ambientHumidity, ambientTemperature, vocIndex);
+      Serial.println("字符串: " + String(data));
 
-    // 清空数据向量
-    _frame.data.clear();
-    //highlight-start
-    // 将值转换为十六进制有效负载字符串
-    _frame.data.push_back((uint8_t)(massConcentrationPm1p0 >> 8));
-    _frame.data.push_back((uint8_t)(massConcentrationPm1p0 & 0xFF));
-    _frame.data.push_back((uint8_t)(massConcentrationPm2p5 >> 8));
-    _frame.data.push_back((uint8_t)(massConcentrationPm2p5 & 0xFF));
-    _frame.data.push_back((uint8_t)(massConcentrationPm4p0 >> 8));
-    _frame.data.push_back((uint8_t)(massConcentrationPm4p0 & 0xFF));
-    _frame.data.push_back((uint8_t)(massConcentrationPm10p0 >> 8));
-    _frame.data.push_back((uint8_t)(massConcentrationPm10p0 & 0xFF));
-    _frame.data.push_back((uint8_t)(ambientHumidity >> 8));
-    _frame.data.push_back((uint8_t)(ambientHumidity & 0xFF));
-    _frame.data.push_back((uint8_t)(ambientTemperature >> 8));
-    _frame.data.push_back((uint8_t)(ambientTemperature & 0xFF));
-    _frame.data.push_back((uint8_t)(vocIndex >> 8));
-    _frame.data.push_back((uint8_t)(vocIndex & 0xFF));
-#ifdef DEVICE_SEN55
-    // _frame.data.push_back((uint8_t)(noxIndex >> 8));
-    // _frame.data.push_back((uint8_t)(noxIndex & 0xFF));
-#endif
-    //highlight-end
-    char data[256];
-    sprintf(data, "%d,%d,%d,%d,%d,%d,%d", massConcentrationPm1p0, massConcentrationPm2p5, massConcentrationPm4p0, massConcentrationPm10p0, ambientHumidity, ambientTemperature, vocIndex);
-    Serial.println("字符串: " + String(data));
+      for (int i = 0; i < _frame.dataLength; i++) {
+          Serial.print(_frame.data[i], HEX);
+          Serial.print(" ");
+      }
+      Serial.println();
 
-    for (int i = 0; i < _frame.dataLength; i++) {
-        Serial.print(_frame.data[i], HEX);
-        Serial.print(" ");
-    }
-    Serial.println();
-
-    return packFrame(_frame);
-}
-```
-
-</TabItem>
+      return packFrame(_frame);
+  }
+  ```
+  </TabItem>
 </Tabs>
 
-函数 `toPayloadString` 将数据序列化为字符串，并通过 Wio-E5 发送到 SenseCAP 指示器。
+函数 `toPayloadString` 将把数据序列化为字符串，该字符串将通过 Wio-E5 发送到 SenseCAP Indicator。
 
-#### 第 2.3 步：编译并上传代码到 XIAO
+#### 步骤 2.3: 编译代码并上传到 XIAO
 
 ```cpp
 #include "sensor_sen5x.h"
@@ -366,13 +359,13 @@ void loop() {
 }
 ```
 
-完成有效负载后，我们将深入 SenseCAP 指示器以编写有效负载解码器。
+完成载荷后，现在我们将深入 SenseCAP Indicator 来编程载荷解码器。
 
-### 第 3 步：实现有效负载解码器（SenseCAP 指示器；ESP-IDF）
+### 步骤 3：实现载荷解码器（SenseCAP Indicator；ESP-IDF）
 
-> 有效负载解码器是一个将从 LoRa 收发器接收到的二进制有效负载转换为人类可读格式的函数。有效负载解码器是特定于您的应用程序的，必须由您实现。本演示的有效负载解码器已在演示代码中提供。
+> 载荷解码器是一个将从 LoRa 收发器接收到的二进制载荷转换为人类可读格式的函数。载荷解码器特定于您的应用程序，必须由您实现。此演示的载荷解码器在演示代码中提供。
 
-#### 第 3.1 步：实现你的 Payload 解码器
+#### 步骤 3.1：实现您的载荷解码器
 
 <Tabs>
   <TabItem value="Indicator/main/Frame/frame.h">
@@ -384,12 +377,12 @@ void loop() {
     #include <stdio.h>
     #include <stdlib.h>
 
-    /** payload 格式
-    * | topic | dataLength | Data Payload | CRC |
+    /** 载荷格式
+    * | 主题 | 数据长度 | 数据载荷 | CRC |
     * | 1字节 | 1字节      | n 字节       | 2字节 |
     * 示例:
-    * | 0x01 | 0x0E | 14 字节 | 2字节 | 对于 SEN54
-    * | 0x01 | 0x10 | 16 字节 | 2字节 | 对于 SEN55
+    * | 0x01 | 0x0E | 14 字节 | 2字节 | 用于 SEN54
+    * | 0x01 | 0x10 | 16 字节 | 2字节 | 用于 SEN55
     */
 
     #pragma pack(1)
@@ -400,10 +393,10 @@ void loop() {
     };
     typedef struct
     {
-        enum topics topic; /*消息类型或 DataId*/
+        enum topics topic; /*消息类型或数据ID*/
         uint8_t dataLength;
     /* highlight-start */
-        uint8_t *data;     /*payload 的实际数据*/
+        uint8_t *data;     /*载荷的实际数据*/
     /* highlight-end */
         uint16_t crc;
     } Frame_t;
@@ -424,7 +417,7 @@ void loop() {
     {
         Frame_t *frame = (Frame_t *)malloc( sizeof( Frame_t ) );
         if ( frame == NULL ) {
-            ESP_LOGE( "parsePayload", "分配 frame 内存失败" );
+            ESP_LOGE( "parsePayload", "为帧分配内存失败" );
             return NULL;
         }
 
@@ -434,7 +427,7 @@ void loop() {
         /* highlight-start */
         frame->data = (uint8_t *)malloc( frame->dataLength );
         if ( frame->data == NULL ) {
-            ESP_LOGE( "parsePayload", "分配 frame 数据内存失败" );
+            ESP_LOGE( "parsePayload", "为帧数据分配内存失败" );
             free( frame ); // 清理之前分配的内存
             return NULL;
         }
@@ -444,7 +437,7 @@ void loop() {
         frame->crc = (uint16_t)payload[length - 2] << 8 | (uint16_t)payload[length - 1];
 
         if ( frame->crc != crc16_ccitt( payload, length - 2 ) ) {
-            ESP_LOGE( "parsePayload", "CRC 校验失败" );
+            ESP_LOGE( "parsePayload", "CRC 不匹配" );
             free( frame->data );
             free( frame );
             return NULL;
@@ -480,7 +473,7 @@ void loop() {
   </TabItem>
 </Tabs>
 
-#### 第 3.2 步：实现传感器数据结构
+#### 步骤 3.2：实现传感器数据结构
 
 <Tabs>
   <TabItem value="Indicator/main/Sensors/sen5x.h">
@@ -495,7 +488,7 @@ void loop() {
     #if defined( DEVICE_SEN54 )
     #elif defined( DEVICE_SEN55 )
     #else
-    #error "请在编译器选项中定义一个设备。"
+    #error "请在编译器选项中定义设备。"
     #endif
     // highlight-start
     #pragma pack(push, 1)
@@ -558,19 +551,19 @@ void loop() {
   </TabItem>
 </Tabs>
 
-#### 第 3.3 步：配置 LoRa
+#### 步骤 3.3：配置 LoRa
 
 ##### 设置 LoRa 参数
 
-设置必要的 LoRa 参数，例如频率、扩频因子和带宽。这些设置必须在两个 LoRa 通道之间匹配，以确保通信成功。
+设置必要的 LoRa 参数，如频率、扩频因子和带宽。这些设置必须在两个 LoRa 通道之间匹配才能成功通信。
 
 ```cpp
 #define RF_FREQUENCY               868000000 // Hz
-#define LORA_BANDWIDTH             0         // [0: 125 kHz, 1: 250 kHz, 2: 500 kHz, 3: 保留]
+#define LORA_BANDWIDTH             0         // [0: 125 kHz, 1: 250 kHz, 2: 500 kHz, 3: Reserved]
 #define LORA_SPREADING_FACTOR      12        // [SF7..SF12]
 #define LORA_CODINGRATE            1         // [1: 4/5, 2: 4/6, 3: 4/7, 4: 4/8]
-#define LORA_PREAMBLE_LENGTH       15        // 发送和接收相同
-#define LORA_SYMBOL_TIMEOUT        5         // 符号
+#define LORA_PREAMBLE_LENGTH       15        // Same for Tx and Rx
+#define LORA_SYMBOL_TIMEOUT        5         // Symbols
 #define LORA_FIX_LENGTH_PAYLOAD_ON false
 #define LORA_IQ_INVERSION_ON       false
 ```
@@ -585,7 +578,7 @@ void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
     Frame_t *frame = parsePayload( payload, size );
     // highlight-end
     if ( frame == NULL ) {
-        ESP_LOGE( TAG, "parsePayload 错误" );
+        ESP_LOGE( TAG, "parsePayload error" );
         return;
     }
     ESP_LOGI( TAG, "frame->type: %s", dataIDToString( frame->topic ) );
@@ -617,10 +610,11 @@ Radio.SetRxConfig( MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR,
                     0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
 Radio.SetMaxPayloadLength( MODEM_LORA, 255 );
 
-Radio.Rx( 0 ); // 连续接收模式
+Radio.Rx( 0 ); // Continuous Rx
+
 ```
 
-#### 第 3.4 步：编译并烧录代码到 SenseCAP 指示器
+#### 步骤 3.4：编译代码并烧录到 SenseCAP Indicator
 
 ```cpp
 /**
@@ -648,11 +642,11 @@ static const char *TAG = "app_main";
 "
 
 #define RF_FREQUENCY               868000000 // Hz
-#define LORA_BANDWIDTH             0         // [0: 125 kHz, 1: 250 kHz, 2: 500 kHz, 3: 保留]
+#define LORA_BANDWIDTH             0         // [0: 125 kHz, 1: 250 kHz, 2: 500 kHz, 3: Reserved]
 #define LORA_SPREADING_FACTOR      12        // [SF7..SF12]
 #define LORA_CODINGRATE            1         // [1: 4/5, 2: 4/6, 3: 4/7, 4: 4/8]
-#define LORA_PREAMBLE_LENGTH       15        // 发送和接收相同
-#define LORA_SYMBOL_TIMEOUT        5         // 符号
+#define LORA_PREAMBLE_LENGTH       15        // Same for Tx and Rx
+#define LORA_SYMBOL_TIMEOUT        5         // Symbols
 #define LORA_FIX_LENGTH_PAYLOAD_ON false
 #define LORA_IQ_INVERSION_ON       false
 
@@ -706,19 +700,20 @@ void app_main( void ) {
                        0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
     Radio.SetMaxPayloadLength( MODEM_LORA, 255 );
 
-    Radio.Rx( 0 ); // 连续接收模式
+    Radio.Rx( 0 ); // Continuous Rx
 
     while ( 1 ) {
         vTaskDelay( pdMS_TO_TICKS( 10000 ) );
     }
 }
+
 ```
 
-### 第 4 步：测试通信
+### 步骤 4：测试通信
 
-启动两个 SenseCAP 指示器板并打开串口监视器。您应该可以看到两个板之间发送和接收的消息。恭喜！您已经成功使用 SenseCAP 指示器设置了 LoRa 通信。
+给两个 SenseCAP Indicator 开发板上电并打开串口监视器。您应该能看到两个开发板之间发送和接收的消息。恭喜！您已经成功使用 SenseCAP Indicator 建立了 LoRa 通信。
 
-```sh title="XIAO 的串口监视器"
+```sh title="XIAO 串口监视器"
 String: 76,80,81,81,5389,5990,980
 0 4C 0 50 0 51 0 51 15 D 17 66 3 D4
 CRC: 629
@@ -726,11 +721,12 @@ CRC: 629
 >>>+TEST: TX DONE
 +TEST: TXLRPKT
 
-发送载荷成功
-发送数据 1
+Send payload successfully
+Send data 1
+
 ```
 
-```sh title="SenseCAP 指示器的串口监视器"
+```sh title="SenseCAP Indicator 串口监视器"
 I (95490) app_main: rssi:-22 dBm, snr:5 dB, len:18, payload:
 0x1 0xe 0x0 0x4c 0x0 0x50 0x0 0x51 0x0 0x51 0x15 0xd 0x17 0x66 0x3 0xd4 0x6 0x29
 W (95541) parsePayload: topic: 1
@@ -777,17 +773,17 @@ I (95641) sen5x_: vocIndex: 980
   </tr>
   <tr>
     <td> <a href="https://github.com/Seeed-Solution/indicator_lora_commu"><span> 多传感器数据上传 </span></a></td>
-    <td> XIAOS3 收集数据并利用 Wio-E5（带 LoRa 模块和 AT 命令）将传感器数据上传到指示器。</td>
+    <td> XIAOS3 收集数据并利用 Wio-E5（带有 LoRa 模块和 AT 命令）将传感器数据上传到 Indicator。</td>
   </tr>
  </table>
 </div>
 
-有关更多详细信息，请参阅 [README](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/blob/main/examples/indicator_lora/README.md) 文件。
+更多详细信息，请参阅 [README](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/blob/main/examples/indicator_lora/README.md) 文件。
 
 ## 技术支持
 
-**需要帮助解决您的 SenseCAP 指示器问题？我们随时为您提供支持！**
+**需要 SenseCAP Indicator 的帮助？我们随时为您提供协助！**
 
-如果您在遵循本教程时遇到任何问题或有任何疑问，请随时联系我们的技术支持团队。我们随时为您提供帮助！
+如果您在学习本教程时遇到任何问题或有任何疑问，请随时联系我们的技术支持。我们随时为您提供帮助！
 
-访问我们的 [Seeed 官方 Discord 频道](https://discord.gg/kpY74apCWj) 提问，或者前往 [GitHub 讨论区](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/discussions) 分享您的想法！
+访问我们的 [Seeed 官方 Discord 频道](https://discord.gg/kpY74apCWj) 提出您的问题，或访问 [GitHub 讨论区](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32/discussions) 分享您想要的一切！

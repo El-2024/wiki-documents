@@ -7,7 +7,7 @@ keywords:
 - LLM
 - GPT-OSS
 - llamacpp
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/gpt_oss/gptoss-running-live.webp
 slug: /deploy_gptoss_on_jetson
 last_update:
   date: 08/14/2025
@@ -39,7 +39,7 @@ In this wiki, we will accomplish the following tasks using the [reComputer Super
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Super-J4012-p-6443.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Super-J4012-p-6443.html" target="_blank">
         <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
@@ -172,7 +172,7 @@ Go to ⚙️ Admin Settings → Connections → OpenAI Connections to set the ur
 
 Finally, I will demonstrate the actual inference performance of the GPT-OSS-20B model on an NVIDIA Jetson Orin NX through a video demonstration.
 
-<div align="center">
+<div class="video-container">
     <iframe width="800" height="450" src="https://www.youtube.com/embed/kcN731Jyce4" title="GPT-OSS Running Live on NVIDIA Jetson Orin NX!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 

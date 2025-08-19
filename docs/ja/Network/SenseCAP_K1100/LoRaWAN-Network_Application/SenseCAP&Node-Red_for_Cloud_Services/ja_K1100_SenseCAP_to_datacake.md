@@ -90,7 +90,7 @@ Datacakeは、プログラミングスキルを必要とせず、最小限の時
 - ポート: 1883
 - プロトコル: MQTT V3.1.1
 - クライアントID: フォーマットは`org-<Organization ID>-<Random ID>`
-  - `<Organization ID>` あなたの組織ID。これは[SenseCAP APIを取得する](/K1100_sensecap_node-red#get-the-sensecap-api)で取得済みです。
+  - `<Organization ID>` あなたの組織ID。これは[SenseCAP APIを取得する](/ja/K1100_sensecap_node-red#get-the-sensecap-api)で取得済みです。
   - `<Random ID>` 自分でランダムに生成した数字または小文字の英字を使用します。
 
 - トピック形式: `/device_sensor_data/<OrgID>/<DeviceEUI>/<Channel>/<Reserved>/<MeasurementID>`

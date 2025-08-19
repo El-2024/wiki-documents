@@ -31,7 +31,6 @@ the necessary steps for your particular LNA based on the two existing examples h
 
 Log into your [Helium console](https://console.helium.com), then go to `Devices` section and click on `Add device` button.
 
-
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/add-new-helium.png" alt="pir" width={800} height="auto" /></p>
 
 Fill the required fields such as the device name**,** the LoRaWAN credentials, etc. <br/>
@@ -47,7 +46,6 @@ Head to `Function` tab on the panel at the left side. Then click the `Add New Fu
 <p style={{textAlign: 'center'}}><img src="https://downloads.intercomcdn.com/i/o/788631256/c066827c0eaebdc9dbf629d3/Group+3%282%29.png" alt="pir" width={800} height="auto" /></p>
 
 Copy the following code and then save the changes.
-
 
 <details>
 
@@ -902,6 +900,7 @@ function loraWANV2PositiveDataFormat (str, divisor = 1) {
     return parseInt(str2, 2) / divisor
 }
 ```
+
 </details>
 
 ### Check the data
@@ -926,19 +925,15 @@ Given the [1% duty cycle](https://www.thethingsnetwork.org/docs/lorawan/duty-cyc
 
 So if the upload interval you set is less than 4 minutes, real-time data will be temporarily stored in RAM and held until the Helium network triggers data rate and power corrections before uploading.
 
-
-
 ## ChirpStack LNS
-
 
 For new users, to receive the data from a device on the Helium network it must be associated with an LNS (LoraWAN Network Server), typically use one of the [public LNSs](https://docs.helium.com/iot/find-a-lns-provider/), many of which use
 **ChirpStack**, but it's also possible to connect one's own LNS to Helium.
 
-
 For those familiar with the general process the TL;DR; is:
 
-- create an device profile with the appropriate region and the codec (see source below)<br/>
-- create device with `devEUI`, `appKey`, and a `app_eui` variable with the AppEUI, all three values coming from the `SenseCraft` App
+* create an device profile with the appropriate region and the codec (see source below)<br/>
+* create device with `devEUI`, `appKey`, and a `app_eui` variable with the AppEUI, all three values coming from the `SenseCraft` App
 
 ### Add device profile
 
@@ -1001,8 +996,6 @@ Once this happens, you should see something like this:
 
 Once the join process has been performed the T1000 sends data. The LNS responds back with some information about the network
 frequencies and such, but subsequent to that there should only be uplinks with data.
-
-
 
 ## Resource
 

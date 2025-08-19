@@ -1,5 +1,5 @@
 ---
-description: 本维基介绍了 J501 扩展板的功能，并解释如何将 Jetpack 系统刷入 J501 扩展板。
+description: 本维基介绍了 J501 载板的功能，并解释如何将 Jetpack 系统刷入 J501 载板。
 title: 刷入 Jetpack
 keywords:
 - reServer
@@ -7,36 +7,32 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/reserver_j501_getting_started
 last_update:
-  date: 05/15/2025
+  date: 08/19/2024
   author: Youjiang
 ---
 
 # reServer J501 入门指南
-
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 <div align="center">
   <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/reServer_J501.png"/>
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-  <a class="get_one_now_item" href="https://www.seeedstudio.com/reServer-Industrial-J501-Carrier-Board-Add-on.html">
+  <a class="get_one_now_item" href="https://www.seeedstudio.com/reServer-Industrial-J501-Carrier-Board-Add-on.html" target="_blank">
     <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
   </a>
 </div>
 
-J501 扩展板是一款强大的扩展板，支持 NVIDIA Jetson AGX Orin 模块。它具有丰富的数据端口和扩展接口，完全释放 AGX Orin 模块的全部性能。此外，它支持添加 GMSL 扩展以连接最多 8 个 GMSL 摄像头。
+J501 载板是一款强大的扩展板，支持 NVIDIA Jetson AGX Orin 模块。它具有丰富的数据端口和扩展接口，完全释放了 AGX Orin 模块的全部性能。此外，它支持添加 GMSL 扩展以连接最多 8 个 GMSL 摄像头。
 
 ## 特性
 
-- **打造最强大的边缘计算 AI 计算机：** 专为集成 Jetson AGX Orin 模块设计，提供高达 275 TOPS 的 AI 性能，是 Jetson AGX Xavier 的 8 倍 AI 性能。功耗可配置在 15W 至 60W 之间。
-- **支持多传感器的高速接口：** 提供 22 条 PCIe Gen4 通道、1 个 10GbE 接口、1 个 Display Port、16 条 MIPI CSI-2 通道、USB 3.2 接口以及一个 40 针接头。
-- **支持多 IO 的低速接口：** 包括 4x DI、4x DO、3x GND_DI、2x GND_DO、1x GND_ISO、1x CAN、1x RS232/RS422/RS485。
-<!-- - **BSP 准备开发：** 支持 Jetpack 6 的板载 BSP，方便开发自定义系统镜像。 -->
+- **打造最强大的边缘计算 AI 计算机：** 专为集成 Jetson AGX Orin 模块设计，提供高达 275 TOPS 的 AI 性能，比 Jetson AGX Xavier 提高 8 倍。功耗可配置在 15W 至 60W 之间。
+- **支持多传感器的高速接口：** 提供 22 条 PCIe Gen4 通道、1 个 10GbE、一个 Display Port、16 条 MIPI CSI-2 通道、USB 3.2 接口以及一个 40 针接头。
+- **支持多 IO 的低速接口：** 提供 4x DI、4x DO、3x GND_DI、2x GND_DO、1x GND_ISO、1x CAN、1x RS232/RS422/RS485。
+<!-- - **支持 BSP 开发：** 支持 Jetpack 6 的板级 BSP，方便开发自定义系统镜像。 -->
 
-## 规格参数
+## 规格
 
 <div class="table-center">
 <table>
@@ -48,7 +44,7 @@ J501 扩展板是一款强大的扩展板，支持 NVIDIA Jetson AGX Orin 模块
     </tr>
     <tr>
       <td>USB</td>
-      <td> 3x USB3.1, <br /> 1x USB3.1 Type C(主机模式), <br /> 1x USB2.0 Type C(设备模式) </td>
+      <td> 3x USB3.1, <br /> 1x USB3.1 Type C（主机模式）, <br /> 1x USB2.0 Type C（设备模式） </td>
     </tr>
     <tr>
       <td>DI/DO</td>
@@ -98,11 +94,11 @@ J501 扩展板是一款强大的扩展板，支持 NVIDIA Jetson AGX Orin 模块
     </tr>
     <tr>
       <td> RTC </td>
-      <td> 1x RTC 插座 (包含 CR1220), <br />1x RTC 2 针 </td>
+      <td> 1x RTC 插座（包含 CR1220）, <br />1x RTC 2 针 </td>
     </tr>
     <tr>
       <td> 摄像头 </td>
-      <td> 2x 扩展连接器（每个连接器 8 通道） </td>
+      <td> 2x 扩展连接器（每个连接器 8 条通道） </td>
     </tr>
     <tr>
       <td> PCIE </td>
@@ -111,10 +107,10 @@ J501 扩展板是一款强大的扩展板，支持 NVIDIA Jetson AGX Orin 模块
     <tr>
       <td> 电源 </td>
       <td> 电源供应 </td>
-      <td> DC 12V-36V 端子块 2 针（包含 24V/5A 电源适配器）</td>
+      <td> DC 12V-36V 接线端子 2 针（包含 24V/5A 电源适配器）</td>
     </tr>
     <tr>
-      <td rowSpan={3}> 机械参数 </td>
+      <td rowSpan={3}>机械规格</td>
       <td> 尺寸 (宽 x 深) </td>
       <td> 176 x 163mm（不包含模块）</td>
     </tr>
@@ -136,9 +132,9 @@ J501 扩展板是一款强大的扩展板，支持 NVIDIA Jetson AGX Orin 模块
   <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/hardware_overview.jpeg"/>
 </div>
 
-## 将 JetPack OS 刷入 J501 扩展板
+## 将 JetPack 操作系统刷写到 J501 承载板
 
-在这里，我们将展示如何将 [Jetpack](https://developer.nvidia.com/embedded/jetson-linux-archive) 刷入连接到 reServer J501 的 NVMe SSD。
+在这里，我们将向您展示如何将 [Jetpack](https://developer.nvidia.com/embedded/jetson-linux-archive) 刷写到连接到 reServer J501 的 NVMe SSD 上。
 
 ### 支持的模块
 - [NVIDIA® Jetson AGX Orin™ 模块 32GB](https://www.seeedstudio.com/NVIDIA-Jetson-AGX-Orin-Module-32GB-p-5458.html) 
@@ -147,7 +143,7 @@ J501 扩展板是一款强大的扩展板，支持 NVIDIA Jetson AGX Orin 模块
 ### 前置条件
 
 - Ubuntu 主机电脑
-- reServer J501 扩展板
+- reServer J501 承载板
 - NVIDIA® Jetson AGX Orin™ 模块 32GB/64GB
 - AGX Orin 主动风扇
 - NVMe M.2 2280 内部 SSD
@@ -155,9 +151,9 @@ J501 扩展板是一款强大的扩展板，支持 NVIDIA Jetson AGX Orin 模块
 
 :::info
 
-我们建议使用物理 Ubuntu 主机设备，而不是虚拟机。
+我们建议您使用物理 Ubuntu 主机设备，而不是虚拟机。
 请参考下表准备主机设备。
-        
+
 <table style={{textAlign: 'center'}}>
   <tbody>
     <tr>
@@ -188,7 +184,7 @@ J501 扩展板是一款强大的扩展板，支持 NVIDIA Jetson AGX Orin 模块
 
 ### 准备 Jetpack 镜像
 
-在这里，我们需要根据所使用的 Jetson 模块下载对应的系统镜像到 Ubuntu PC：
+在这里，我们需要根据所使用的 Jetson 模块将系统镜像下载到我们的 Ubuntu 电脑上：
 
 <div class="table-center">
 <table style={{textAlign: 'center'}}>
@@ -299,15 +295,15 @@ Jetpack5 镜像文件大小约为 **4.5GB**，下载大约需要 15 分钟。Jet
 :::
 
 :::info
-为了验证下载固件的完整性，您可以比较 SHA256 哈希值。
+为了验证下载的固件完整性，您可以比较 SHA256 哈希值。
 
-在 Ubuntu 主机上，打开终端并运行命令 `sha256sum <File>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 Wiki 中提供的 SHA256 哈希值一致，则说明您下载的固件是完整且未损坏的。
+在 Ubuntu 主机上，打开终端并运行命令 `sha256sum <File>` 来获取下载文件的 SHA256 哈希值。如果生成的哈希值与 Wiki 中提供的 SHA256 哈希值匹配，则说明您下载的固件是完整且无损的。
 :::
 
 ### 进入强制恢复模式
 
 :::info
-在继续安装步骤之前，我们需要确保开发板处于强制恢复模式。
+在进行安装步骤之前，我们需要确保开发板处于强制恢复模式。
 :::
 
 <div align="center">
@@ -328,9 +324,9 @@ Jetpack5 镜像文件大小约为 **4.5GB**，下载大约需要 15 分钟。Jet
 
 **步骤 3.** 松开强制恢复按钮。
 
-**步骤 4.** 使用 USB Type-C 数据传输线将开发板连接到 Ubuntu 主机 PC。
+**步骤 4.** 使用 USB Type-C 数据传输线将开发板连接到 Ubuntu 主机。
 
-**步骤 5.** 在 Linux 主机 PC 上，打开终端窗口并输入命令 `lsusb`。如果返回的内容中包含以下输出之一（根据您使用的 Jetson SoM），则说明开发板已进入强制恢复模式。
+**步骤 5.** 在 Linux 主机上，打开终端窗口并输入命令 `lsusb`。如果返回的内容中包含以下输出之一（根据您使用的 Jetson SoM），则说明开发板已进入强制恢复模式。
 
 - 对于 AGX Orin 32GB: **0955:7223 NVidia Corp**
 - 对于 AGX Orin 64GB: **0955:7423 NVidia Corp**
@@ -381,7 +377,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 
 **步骤 4（可选）:** 安装 Nvidia Jetpack SDK
 
-请在 Jetson 设备上打开终端并执行以下命令：
+请在 Jetson 设备的终端中执行以下命令：
 
 ```bash
 sudo apt update
@@ -390,17 +386,19 @@ sudo apt install nvidia-jetpack
 
 ## 资源
 
-- [reServer 工业 J501 载板数据手册](https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/reServer_Industrial_J501_Carrier_Board_Datasheet.pdf)
-- [reServer 工业 J501 原理图](https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/202003906_reServer_Industrial_J501_Carrier_Board_v1.0_SCH_PDF_20240529.pdf)
-- [reServer 工业 J501 3D 文件](https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/RESERVER_AGX_ORIN_CARRIER_BOARD.stp)
-- [Seeed Jetson 系列目录](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
+- [reServer Industrial J501 承载板数据手册](https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/reServer_Industrial_J501_Carrier_Board_Datasheet.pdf)
+- [reServer Industrial J501 原理图](https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/202003906_reServer_Industrial_J501_Carrier_Board_v1.0_SCH_PDF_20240529.pdf)
+- [reServer Industrial J501 3D 文件](https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/RESERVER_AGX_ORIN_CARRIER_BOARD.stp)
+- [Seeed Jetson 系列产品目录](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
 - [Seeed Studio 边缘 AI 成功案例](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
-- [Seeed Jetson 系列对比](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
+- [Seeed Jetson 系列比较](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
 - [Seeed Jetson 设备一览](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
+
+
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们为您提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多种沟通方式，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时获得最佳体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

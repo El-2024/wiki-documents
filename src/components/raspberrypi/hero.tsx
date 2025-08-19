@@ -10,6 +10,12 @@ const RpiPage = ({ lang = 'en' }) => {
       paragraph2:
         'At Seeed Studio, we offer the entire Raspberry Pi family of boards as well as complementary accessories and starter kits that can help you create projects centered around the product. Additionally, we have created many tutorials in Seeed’s Raspberry Pi community where you can easily find references to build your own circuits or write your own applications.',
     },
+    cn: {
+      paragraph1:
+        '树莓派（又名"RPi"）最初由一个非营利组织设计和创建，旨在以低廉的成本促进计算机科学教育。现在已经发布了几代不同型号的树莓派，扩展了它们的应用范围、性能和用途。',
+      paragraph2:
+        '在Seeed Studio，我们提供完整的树莓派系列开发板以及配套的配件和入门套件，这些可以帮助您创建以该产品为核心的项目。此外，我们在Seeed的树莓派社区中创建了许多教程，您可以轻松找到参考资料来构建自己的电路或编写自己的应用程序。',
+    },
     ja: {
       paragraph1:
         'Raspberry Pi（別名「RPi」）は、非営利団体によって手頃な価格でコンピュータサイエンスの教育を促進するために設計・作成されました。これまでに複数の世代やモデルがリリースされており、その性能や用途は拡大しています。',

@@ -1,25 +1,25 @@
 ---
-description: Overview
+description: 概述
 title: 概述
 keywords:
 - Wio_terminal USB_Client
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Wio-Terminal-USBCLIENT-Overview
 last_update:
-  date: 3/07/2024
-  author: jessie
+  date: 1/17/2023
+  author: jianjing Huang
 ---
 
 # 概述
 
-该存储库介绍了如何将Wio Terminal用作USB客户端，包括将其用作人机界面设备（HID），如键盘、鼠标等。它还支持音乐仪器数字接口（MIDI）。
+本仓库介绍如何将 Wio Terminal 用作 USB 客户端，包括将其用于人机接口设备(HID)，如键盘、鼠标等。它还支持乐器数字接口(MIDI)。
 
-这个功能依赖于 [为Arduino设计的Adafruit TinyUSB库](https://github.com/adafruit/Adafruit_TinyUSB_Arduino)。 该库已经在Wio Terminal（SAMD51）上进行了测试，并且正常工作。
+此功能依赖于 [Adafruit TinyUSB Library for Arduino](https://github.com/adafruit/Adafruit_TinyUSB_Arduino)。该库已在 Wio Terminal(SAMD51) 上测试并正常工作。
 
-## 给Arduino安装Adafruit TinyUSB 库
+## 安装 Adafruit TinyUSB Library for Arduino
 
-1. 访问 [为Arduino设计的Adafruit TinyUSB库](https://github.com/adafruit/Adafruit_TinyUSB_Arduino) 存储库，并将整个存储库下载到本地驱动器。
+1. 访问 [Adafruit TinyUSB Library for Arduino](https://github.com/adafruit/Adafruit_TinyUSB_Arduino) 仓库，并将整个仓库下载到您的本地驱动器。
 
-2. 现在，可以将该库安装到Arduino IDE中。打开Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`, 然后选择刚刚下载的 `Adafruit_TinyUSB_Arduino` 文件。
+2. 现在，可以将该库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，然后选择您刚刚下载的 `Adafruit_TinyUSB_Arduino` 文件。
 
 ![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg)

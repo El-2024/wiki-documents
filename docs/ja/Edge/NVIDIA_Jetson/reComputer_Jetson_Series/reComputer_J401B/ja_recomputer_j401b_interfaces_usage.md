@@ -23,7 +23,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 このWikiでは、reComputer J401Bのさまざまなハードウェアおよびインターフェースを紹介し、それらを使用してプロジェクトアイデアを拡張する方法を説明します。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-  <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J401B-optional-accessories.html"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
+  <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J401B-optional-accessories.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
 </div>
 
 
@@ -986,7 +986,7 @@ i2cdetect -y -r 7
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/J401-I2C-test.png"/></div>
 
 :::info
-汎用IOピンをロジック制御に使用したい場合は、[このWiki](/reComputer_Jetson_GPIO)を参照してください。
+汎用IOピンをロジック制御に使用したい場合は、[このWiki](/ja/reComputer_Jetson_GPIO)を参照してください。
 :::
 
 ## 技術サポートと製品ディスカッション

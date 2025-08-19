@@ -29,7 +29,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </div>
 
 ## 前提条件
-- __[reComputer J30/40シリーズ](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__: 提供されたチュートリアルに従って[JetPack 5.x](/reComputer_J4012_Flash_Jetpack)システムと[ROS Noetic環境](/installing_ros1)のインストールを完了してください。
+- __[reComputer J30/40シリーズ](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__: 提供されたチュートリアルに従って[JetPack 5.x](/ja/reComputer_J4012_Flash_Jetpack)システムと[ROS Noetic環境](/ja/installing_ros1)のインストールを完了してください。
 
 - __サポートされているカメラは以下の通りです:__
 
@@ -55,7 +55,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## はじめに
 ### カメラの接続
-このチュートリアルに従って[CSIカメラの接続とテスト](/J401_carrierboard_Hardware_Interfaces_Usage)を完了し、システムに[ROSがすでにインストールされている](/installing_ros1)ことを確認してください。
+このチュートリアルに従って[CSIカメラの接続とテスト](/ja/J401_carrierboard_Hardware_Interfaces_Usage)を完了し、システムに[ROSがすでにインストールされている](/ja/installing_ros1)ことを確認してください。
 
 <div align="center">
       <img width={700} 

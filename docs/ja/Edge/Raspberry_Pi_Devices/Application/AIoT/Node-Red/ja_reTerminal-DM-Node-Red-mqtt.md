@@ -23,7 +23,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/3/-/3--114070201-reterminal-dm---font.jpg" alt="pir" width="600" height="auto"/></p>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-DM-p-5616.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-DM-p-5616.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
@@ -67,7 +67,7 @@ MQTTノードはNode-REDに組み込まれているため、ノードをイン�
 
 このセクションでは、[Eclipse Mosquitto](https://mosquitto.org/) をインストールします。これは、IoTやM2Mアプリケーションで広く使用されているオープンソースのMQTTブローカーです。Eclipse Foundationによって開発されており、Eclipse Public Licenseの下で利用可能です。Mosquittoは軽量で効率的に設計されており、低消費電力デバイスやネットワーク帯域幅が限られた環境での使用に適しています。最新のMQTT 5.0プロトコルだけでなく、MQTT 3.1.1などの以前のバージョンもサポートしています。
 
-まず、SSHを使用してreTerminal DMにアクセスする方法を復習してください。手順は[こちら](/reterminal-dm-flash-OS#install-drivers)をご覧ください。
+まず、SSHを使用してreTerminal DMにアクセスする方法を復習してください。手順は[こちら](/ja/reterminal-dm-flash-OS#install-drivers)をご覧ください。
 
 SSHでreTerminal DMにアクセスできたら、以下の手順を進めてください：
 
@@ -357,8 +357,8 @@ STEP 4-2-5: `inject`ノードを`mqtt out`ノードに接続し、`Deploy`をク
 
 # reTerminal DMでNode-REDを使用したさらなるノードの探索
 
-* [reTerminal DM RS485ポートとNode-RED](/reTerminal-DM-Node-Red-RS485)
-* [reTerminal DM CAN BUSとNode-RED](/reTerminal-DM-Node-Red-canbus)
+* [reTerminal DM RS485ポートとNode-RED](/ja/reTerminal-DM-Node-Red-RS485)
+* [reTerminal DM CAN BUSとNode-RED](/ja/reTerminal-DM-Node-Red-canbus)
 
 ## 技術サポートと製品ディスカッション
 

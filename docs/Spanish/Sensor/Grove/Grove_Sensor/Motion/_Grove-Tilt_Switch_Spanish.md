@@ -24,7 +24,7 @@ El Grove - Interruptor de Inclinación (Grove-Tilt Switch) es equivalente a un b
 - Módulo Grove Simple
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Especificaciones
 
@@ -167,7 +167,7 @@ void loop()
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega suporte para Arduino, y arrastra un <em>main procedure</em> al área de trabajo.
 
 ¡Nota!
-Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra bloques como se muestra en la siguiente imagen, o abre el archivo cdc que puede ser descargado al final de esta página.
 

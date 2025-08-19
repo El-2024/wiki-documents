@@ -6,38 +6,35 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor
 last_update:
-  date: 05/15/2025
+  date: 1/16/2023
   author: jianjing Huang
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ![液位传感器](https://files.seeedstudio.com/wiki/Liquid_Level_Sensor/img/01_14_4.png)
 
 ## 产品描述
 
-液位传感器用于测量水或其他液体的高度，并将其转换为电压信号。它可以与数据记录器或其他具有模拟电压输入端口的设备配合使用。
+液位传感器测量水或其他液体的高度并将其转换为电压信号。它可与数据记录器或其他具有模拟电压输入端口的设备配合使用。
 
-液位传感器内置硅压阻核心，具有高灵敏度。内部芯片将毫伏信号转换为标准电压信号，可连接到计算机、控制仪器或PLC。
+液位传感器内置硅压阻式核心，具有高灵敏度特性。内部芯片将毫伏信号转换为标准电压信号，可连接到计算机、控制仪表或PLC。
 
-它体积小、重量轻，易于安装。采用密封的不锈钢探头，可在水、油和轻度腐蚀性环境中工作。传感器具有高抗振动和抗冲击性能，可广泛应用于过程控制、航空、航天、汽车、医疗设备、暖通空调等领域。
+它体积小、重量轻，易于安装。采用密封不锈钢探头，可在水、油和轻腐蚀性环境中工作。该传感器具有高抗振动和抗冲击性能。可广泛应用于过程控制、航空、航天、汽车、医疗设备、暖通空调等应用领域。
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Liquid-Level-Sensor-p-4619.html)
 
-## 特点
+## 特性
 
 * **高性能**：抗干扰和长期稳定性
-* **坚固耐用**：抗腐蚀、耐用且稳定
-* **用户友好**：防堵设计，易于清洁
-* **广泛适用**：0.5~4.5V传输输出，可与数字显示器、PLC、变频器、记录仪及其他仪器配合使用
-* **工业级**：IP68等级，耐用防水，适用于户外恶劣环境
+* **坚固耐用**：防腐蚀、耐用且稳定
+* **用户友好**：防堵塞设计，易于清洁
+* **广泛适用**：0.5~4.5V传输输出，可与数字显示器、PLC、变频器、记录仪和其他仪器配合使用
+* **工业级**：IP68防护等级，耐用防水，适用于户外恶劣环境
 * **认证**：FCC、CE和RoHS
 
-## 应用场景
+## 应用
 
 * 水库检测
-* 泳池泵站
+* 泵站水池
 * 河流监测
 * 海洋监测
 * 湖泊监测
@@ -45,27 +42,19 @@ last_update:
 * 深井液位监测
 * 储罐液位监测
 
-![应用场景](https://files.seeedstudio.com/wiki/Liquid_Level_Sensor/img/92d658aefc90480a607588f72f6f138.png)
+![应用](https://files.seeedstudio.com/wiki/Liquid_Level_Sensor/img/92d658aefc90480a607588f72f6f138.png)
 
-## 技术规格
-<!-- <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-2fdn{border-color:#9b9b9b;text-align:left;vertical-align:top}
-.tg .tg-e2cz{background-color:#9b9b9b;border-color:#9b9b9b;color:#ffffff;text-align:left;vertical-align:top}
-</style> -->
+## 规格参数
+
 <table class="tg" data-data-style="undefined;table-layout: fixed; width: 640px;">
 <tbody>
 <tr>
 <td class="tg-h2xt"><span data-style="color: #000000;">测量范围</span></td>
-<td class="tg-h2xt"><span data-style="color: #000000;" data-data-style="font-size: small;">0 ~ 5米</span></td>
+<td class="tg-h2xt"><span data-style="color: #000000;" data-data-style="font-size: small;">0 ~ 5 米</span></td>
 </tr>
 <tr>
 <td class="tg-h2xt"><span data-style="color: #000000;" data-data-style="font-size: small;">电缆长度</span></td>
-<td class="tg-h2xt"><span data-style="color: #000000;" data-data-style="font-size: small;">5.3米</span></td>
+<td class="tg-h2xt"><span data-style="color: #000000;" data-data-style="font-size: small;">5.3 米</span></td>
 </tr>
 <tr>
 <td class="tg-h2xt"><span data-style="color: #000000;">输出信号</span></td>
@@ -92,11 +81,11 @@ last_update:
 <td class="tg-h2xt"><span data-style="color: #000000;">5ms( (≤90%F.S)</span></td>
 </tr>
 <tr>
-<td class="tg-h2xt"><span data-style="color: #000000;">测量液体</span></td>
-<td class="tg-h2xt"><span data-style="color: #000000;">轻度腐蚀性液体（水、食用油等）</span></td>
+<td class="tg-h2xt"><span data-style="color: #000000;">测量液体 </span></td>
+<td class="tg-h2xt"><span data-style="color: #000000;">轻腐蚀性液体（水、食用油等）</span></td>
 </tr>
 <tr>
-<td class="tg-h2xt"><span data-style="color: #000000;">电源</span></td>
+<td class="tg-h2xt"><span data-style="color: #000000;">电源供应</span></td>
 <td class="tg-h2xt"><span data-style="color: #000000;">5V DC</span></td>
 </tr>
 <tr>
@@ -108,7 +97,7 @@ last_update:
 <td class="tg-h2xt"><span data-style="color: #000000;">-10℃ ~ +70℃</span></td>
 </tr>
 <tr>
-<td class="tg-h2xt"><span data-style="color: #000000;">介质温度</span></td>
+<td class="tg-h2xt"><span data-style="color: #000000;">介质温度 </span></td>
 <td class="tg-h2xt"><span data-style="color: #000000;">-40℃ ~ +80℃</span></td>
 </tr>
 <tr>
@@ -118,13 +107,13 @@ last_update:
 <tr>
 <td class="tg-h2xt"><span data-style="color: #000000;">材料</span></td>
 <td class="tg-h2xt">
-<p><span data-style="color: #000000;">304不锈钢外壳,</span></p>
-<p><span data-style="color: #000000;">316L不锈钢核心,</span></p>
+<p><span data-style="color: #000000;">304不锈钢外壳，</span></p>
+<p><span data-style="color: #000000;">316L不锈钢芯体，</span></p>
 <p><span data-style="color: #000000;">特殊橡胶绝缘电缆。</span></p>
 </td>
 </tr>
 <tr>
-<td class="tg-h2xt"><span data-style="color: #000000;">IP等级</span></td>
+<td class="tg-h2xt"><span data-style="color: #000000;">防护等级</span></td>
 <td class="tg-h2xt"><span data-style="color: #000000;">IP68</span></td>
 </tr>
 <tr>
@@ -132,8 +121,8 @@ last_update:
 <td class="tg-h2xt"><span data-style="color: #000000;">670g</span></td>
 </tr>
 <tr>
-<td class="tg-h2xt"><span data-style="color: #000000;">认证</span></td>
-<td class="tg-h2xt"><span data-style="color: #000000;">CE, FCC, RoHS</span></td>
+<td class="tg-h2xt"><span data-style="color: #000000;">认证 </span></td>
+<td class="tg-h2xt"><span data-style="color: #000000;">CE、FCC、RoHS</span></td>
 </tr>
 </tbody>
 </table>

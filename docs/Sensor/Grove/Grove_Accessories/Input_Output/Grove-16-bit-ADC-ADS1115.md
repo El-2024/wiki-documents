@@ -27,7 +27,7 @@ For microcontrollers without an analog-to-digital converter, or when you need a 
 The module also contains a Grove port that is internally connected to its channel 0 and channel 1, of which makes it easier to use with Grove Ecosystem.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-ADS1115-16-bit-ADC-p-4599.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-ADS1115-16-bit-ADC-p-4599.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
@@ -91,13 +91,13 @@ The platforms mentioned above as supported is/are an indication of the module's 
 #### Software
 
 :::caution
-If this is the first time you work with Arduino, we strongly recommend you to see [Getting Started with Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) before the start.
+If this is the first time you work with Arduino, we strongly recommend you to see [Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) before the start.
 :::
 
 - **Step 1.** Download the [Seeed Arduino ADS1115](https://github.com/Seeed-Studio/Seeed_Arduino_ADS1115) Library from Github.
 
 :::note
-Refer How to install library to [install library](http://wiki.seeedstudio.com/How_to_install_Arduino_Library/) for Arduino.
+Refer How to install library to [install library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) for Arduino.
 :::
 
 - **Step 2.** Restart the Arduino IDE. Open **Seeed_Arduino_ADS1115** example via the path: **File** → **Examples** → **Grove - ADS1115** → **single_ended**.
@@ -162,7 +162,7 @@ void loop(void)
 }
 ```
 
-- **Step 3.** Upload the demo. If you do not know how to upload the code, please check [How to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Step 3.** Upload the demo. If you do not know how to upload the code, please check [How to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 - **Step 4.** Open the **Serial Monitor** of Arduino IDE by click **Tool-> Serial Monitor**. Or tap the ++ctrl+shift+m++ key at the same time. Set the baud rate to **115200**.
 
@@ -212,7 +212,7 @@ Follow [Wio Terminal's get started](https://wiki.seeedstudio.com/Wio-Terminal-Ge
 
 - **Step 2.** Download the [**example code**](https://github.com/Seeed-Studio/Seeed_Arduino_Sketchbook/tree/master/examples/WioTerminal-ADS1115) here.
 
-- **Step 3.** Upload the demo. If you do not know how to upload the code, please check [How to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Step 3.** Upload the demo. If you do not know how to upload the code, please check [How to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 - **Step 4.** Adjust the rotary sensor and you will see the corresponding voltage on Wio Terminal's LCD screen:
 

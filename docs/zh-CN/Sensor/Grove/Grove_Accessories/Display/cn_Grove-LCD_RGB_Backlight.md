@@ -1,165 +1,162 @@
 ---
-description: Grove - RGB背光液晶显示屏
-title: Grove - RGB背光液晶显示屏
+description: Grove - LCD RGB 背光
+title: Grove - LCD RGB 背光
 keywords:
 - Grove
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Grove-LCD_RGB_Backlight
 last_update:
-  date: 03/23/2024
-  author: WuFeifei
+  date: 1/7/2023
+  author: shuxu hu
 ---
 
 <!-- ![enter image description here](https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/images/intro.jpg) -->
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/images/intro.jpg" alt="pir" width={600} height="auto" /></p>
 
-厌倦了单调的单色背光吗？这款 Grove 显示器让你能够通过简洁的 Grove 界面将其设置成你喜欢的任何颜色。它采用 I2C 作为与你的微控制器的通信方式。因此，用于数据交换和背光控制所需的引脚数量从大约 10 个减少到 2 个，从而为其他具有挑战性的任务释放了 IO 端口。此外，Grove - LCD RGB 背光还支持用户自定义字符。想要一个爱心或其他外国字符吗？只要利用这个功能来设计就可以了！
-这款产品是 Grove - Serial LCD 的替代品。如果你正在寻找原始的 16x2 LCD 模块，我们也有绿色黄色背光版本和蓝色背光版本在售。
+厌倦了单调的单色背光？这个 Grove 模块让您可以通过简单明了的 Grove 接口设置任意您喜欢的颜色。它使用 I2C 作为与微控制器的通信方式。因此，数据交换和背光控制所需的引脚数量从约 10 个减少到 2 个，为其他具有挑战性的任务释放了 IO 资源。此外，Grove - LCD RGB 背光支持用户定义字符。想要显示一个爱心或其他特殊字符？只需利用此功能并设计它即可！该产品是 Grove - 串行 LCD 的替代品。如果您正在寻找传统的 16x2 LCD 模块，我们也有绿色黄色背光版本和蓝色背光版本出售。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html" target="_blank">
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
     </a>
 </div>
 
-:::注意
-Grove-LCD RGB 背光已经从 V4.0 更新到 V5.0，代码也进行了升级以确保兼容性。现在，您可以使用新的兼容代码来驱动更加强大的 Grove-LCD RGB 背光 V5.0。
+:::note
+Grove-LCD RGB 背光已从 V4.0 升级到 V5.0，代码也已升级以实现兼容性。现在，您可以使用新的兼容代码来驱动更强大的 Grove-LCD RGB 背光 V5.0。
 
-以下是变更日志：
+以下是更新日志：
 
-- 新增 5v/3.3v 兼容性。
+- 新增 5V/3.3V 兼容性。
 - RGB I2C 地址从 0x62 更改为 0x30。
 - RGB 驱动芯片从 PCA9632 更新为 SGM31323。
-- PCB 丝印从“Grove-LCD RGB Backlight V4.0”更新为“Grove-LCD RGB Backlight V5.0”。
-- 修复了其他已知问题
+- PCB 丝印从 "Grove-LCD RGB Backlight V4.0" 更新为 "Grove-LCD RGB Backlight V5.0"。
+- 修复了其他已知问题。
 
-新代码（兼容 v4.0 和 v5.0）：https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/
+新代码（兼容 V4.0 和 V5.0）：https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/
 :::
 
 ## 版本
 
-| 产品版本          | 变更内容      | 发布日期   |
+| 产品版本                     | 变更内容                                   | 发布日期     |
 |------------------------------|-------------------------------------------|---------------|
-| Grove-LCD RGB 背光 V1.0 | 初始版本      | 2012年6月  |
-| Grove-LCD RGB 背光 V2.0 | 优化 PCB 布局 | 2013年11月 |
-| Grove-LCD RGB 背光 V4.0 | 优化 PCB 布局              | 2016年9月 |
+| Grove-LCD RGB 背光 V1.0 | 初始版本                                   | 2012年6月     |
+| Grove-LCD RGB 背光 V2.0 | 优化 PCB 布局                              | 2013年11月    |
+| Grove-LCD RGB 背光 V4.0 | 优化 PCB 布局                              | 2016年9月     |
 
-## 功能
+## 特性
 
 * RGB 背光
 * I2C 通信
 * 内置英文字体
 * 16x2 LCD
 
-:::提示
-    更多关于 Grove 模块的信息，请参考 [Grove 系统](https://wiki.seeedstudio.com/Grove_System/)
+:::tip
+    更多关于 Grove 模块的详细信息，请参考 [Grove 系统](https://wiki.seeedstudio.com/cn/Grove_System/)
 :::
 
 ## 规格
 
-|项目|值|
+| 项目 | 参数 |
 |------|----------|
-| 输入电压 |5V|
-| 工作电流 | \<60mA |
-|CGROM | 10880 位 |
+| 输入电压 | 5V |
+| 工作电流 | &lt;60mA |
+| CGROM | 10880 位 |
 | CGRAM | 64x8 位 |
 | LCD I2C 地址 | 0X3E |
 | RGB I2C 地址 | 0X62 |
 
-:::注意
-    有4个I2C地址，我们为LCD和RGB各使用了2个I2C地址。
+:::note
+    共有 4 个 I2C 地址，我们使用其中 2 个 I2C 地址用于 LCD 和 RGB。
 :::
 
 ## 支持的平台
 
-<!-- | Arduino                                                                                             | Raspberry Pi                                                                                             |                                                                                                 |                                                                                                          |                                                                                                    |
-|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo_n.jpg) | -->
-
-|Arduino|树莓派|
+|Arduino|Raspberry Pi|
 |---|---|
 |<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg" alt="pir" width={200} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg" alt="pir" width={200} height="auto" /></p>|
-|:::警告||
-    上述提到的支持平台是指模块的软件或理论兼容性。在大多数情况下，我们只针对Arduino平台提供软件库或代码示例。由于无法为所有可能的MCU平台提供软件库/示例代码，因此用户需要自行编写软件库。
+
+:::caution
+    上述提到的支持平台仅表示模块的软件或理论兼容性。我们通常仅为 Arduino 平台提供软件库或代码示例。不可能为所有可能的 MCU 平台提供软件库或演示代码。因此，用户需要自行编写软件库。
 :::
-## 应用构想
+
+## 应用创意
 
 * 人机界面
 * 智能家居
-* 传感器中心
+* 传感器集线器
 
-以下是一些项目供你参考。
+以下是一些项目供您参考。
 
-|爱迪生 Wi-Fi 地址|WiFi 智能温室|Grove 幸运汤圆|
+|Edison Wi-Fi 地址|WiFi 智能温室|Grove 幸运饺子|
 |------------------------|-------------------|--------------------|
 |<p><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/images/project1.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/images/project2.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/images/project3.jpg" alt="pir" width={600} height="auto" /></p>|
-|[现在就动手制作吧！](https://www.instructables.com/id/Show-the-Intel-Edison-WiFi-IP-Address-on-a-Grove-L/)|[现在就动手制作吧！](https://www.instructables.com/id/Arduino-Grove-Greenhouse/)|[现在就动手制作吧！](https://www.instructables.com/id/Grove-Lucky-Dumpling/)|
+|[立即制作！](https://www.instructables.com/id/Show-the-Intel-Edison-WiFi-IP-Address-on-a-Grove-L/)|[立即制作！](https://www.instructables.com/id/Arduino-Grove-Greenhouse/)|[立即制作！](https://www.instructables.com/id/Grove-Lucky-Dumpling/)|
 
-
-|刷牙指导员|LinkIt ONE 手册|LinkIt ONE 物联网演示|
+|刷牙指导器|LinkIt ONE Pager|LinkIt ONE IoT 演示|
 |------------------------|-------------------|--------------------|
 |<p><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/images/project4.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/images/project5.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/images/project6.jpg" alt="pir" width={600} height="auto" /></p>|
-|[现在就动手制作吧！](https://www.instructables.com/id/Toothbrushing-Instructor/)|[现在就动手制作吧！](https://www.instructables.com/id/LinkIt-ONE-Pager/)|[现在就动手制作吧！](https://community.seeedstudio.com/project_detail.html?id=78)|
+|[立即制作！](https://www.instructables.com/id/Toothbrushing-Instructor/)|[立即制作！](https://www.instructables.com/id/LinkIt-ONE-Pager/)|[立即制作！](https://community.seeedstudio.com/project_detail.html?id=78)|
 
-## 开始使用
+## 入门指南
 
-:::注意
-    如果你是第一次使用Arduino，我们强烈建议你在开始前先阅读[Arduino入门指南](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)。
+:::note
+    如果这是您第一次使用 Arduino，我们强烈建议您在开始之前查看 [Arduino 入门指南](https://wiki.seeedstudio.com/cn/Getting_Started_with_Arduino/)。
 :::
 
-### 与Arduino互动
+### 使用 Arduino
 
 **硬件**
 
+- **步骤 1.** 准备以下物品：
 
-- **步骤 1.**  准备以下物品：
-
-| Seeeduino V4.2 | 基础底板 | Grove-LCD RGB背光 |
-|--------------|-------------|-----------------|
+| Seeeduino V4.2 | Base Shield | Grove-LCD RGB 背光 |
+|----------------|-------------|-------------------------|
 |<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/rgb.jpg" alt="pir" width={600} height="auto" /></p>|
-|[立即获取](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[立即获取](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html)|[立即获取](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html)|
+|[立即购买](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[立即购买](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html)|[立即购买](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html)|
 
-- **步骤2.** 将Grove-LCD RGB背光连接到Grove基础底板的**I2C**端口。
-- **步骤3.** 将Grove基础底板插入Seeeduino。
-- **步骤4.** 通过USB线将Seeeduino连接到电脑。
+- **步骤 2.** 将 Grove-LCD RGB 背光连接到 Grove-Base Shield 的 **I2C** 端口。
+- **步骤 3.** 将 Grove-Base Shield 插入 Seeeduino。
+- **步骤 4.** 使用 USB 数据线将 Seeeduino 连接到电脑。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/seeeduino_rgb.jpg) -->
-  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/seeeduino_rgb.jpg" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/seeeduino_rgb.jpg" alt="pir" width={600} height="auto" /></p>
 
-:::注意
-	如果没有Grove基础底板，我们也可以直接按照以下方式将Grove-LCD RGB背光连接到Seeeduino。
+:::note
+    如果没有 Grove Base Shield，我们也可以直接将 Grove-LCD RGB 背光连接到 Seeeduino，如下所示。
 :::
 
-| Seeeduino       | Grove-LCD RGB  背光 |
-|---------------|-------------------------|
-| 5V            | 红色                   |
-| GND           | 黑色                 |
-| SDA           | 白色                 |
-| SCL           | 黄色                |
+| Seeeduino       | Grove-LCD RGB 背光 |
+|-----------------|-------------------------|
+| 5V              | 红色                   |
+| GND             | 黑色                   |
+| SDA             | 白色                   |
+| SCL             | 黄色                   |
 
 **软件**
 
-- **步骤1.** 从Github下载[Grove-LCD RGB背光库](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/archive/master.zip)。
-- **步骤2.** 参考[如何安装库](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)来为Arduino安装库。
-- **步骤3.** 库中有以下12个示例：
-    - 自动滚动
-    - 闪烁
-    - 光标
-    - 自定义字符
-    - 显示
-    - 渐变
+- **步骤 1.** 从 Github 下载 [Grove-LCD RGB 背光库](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/archive/master.zip)。
+- **步骤 2.** 参考 [如何安装库](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library) 为 Arduino 安装库。
+- **步骤 3.** 库中包含以下 12 个示例：
+
+    - Autoscroll
+    - Blink
+    - Cursor
+    - CustomCharacter
+    - Display
+    - fade
     - HelloWorld
-    - 滚动
+    - Scroll
     - SerialDisplay
-    - 设置颜色
-    - 设置光标
-    - 文本方向
-- **步骤 4.** 请按照下面的图片选择示例**HelloWorld**并上传Arduino代码。如果你不知道如何上传代码，请查看[如何上传代码](https://wiki.seeedstudio.com/Upload_Code/)。
+    - setColor
+    - setCursor
+    - TextDirection
+
+- **步骤 4.** 请按照下图选择示例 **HelloWorld** 并上传到 Arduino。如果您不知道如何上传代码，请查看 [如何上传代码](https://wiki.seeedstudio.com/cn/Upload_Code/)。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/example.jpg) -->
-  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/example.jpg" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/example.jpg" alt="pir" width={600} height="auto" /></p>
 
-以下是HelloWorld.ino的代码：
+以下是 HelloWorld.ino 的代码：
 
 ```cpp
 #include <Wire.h>
@@ -173,12 +170,12 @@ const int colorB = 0;
 
 void setup() 
 {
-    // set up the LCD's number of columns and rows:
+    // 设置 LCD 的列数和行数：
     lcd.begin(16, 2);
     
     lcd.setRGB(colorR, colorG, colorB);
     
-    // Print a message to the LCD.
+    // 在 LCD 上打印消息。
     lcd.print("hello, world!");
 
     delay(1000);
@@ -186,71 +183,71 @@ void setup()
 
 void loop() 
 {
-    // set the cursor to column 0, line 1
-    // (note: line 1 is the second row, since counting begins with 0):
+    // 将光标设置到第 0 列，第 1 行
+    // （注意：第 1 行是第二行，因为计数从 0 开始）：
     lcd.setCursor(0, 1);
-    // print the number of seconds since reset:
+    // 打印自复位以来的秒数：
     lcd.print(millis()/1000);
 
     delay(100);
 }
 ```
 
-- **步骤4.** 我们将在LCD上看到"Hello, World!"。
+- **步骤 5.** 我们将在 LCD 上看到 "hello, world"。
 
-### 使用Codecraft编程
+### 使用 Codecraft
 
 #### 硬件
 
-**步骤1.** 使用Grove线缆将Grove - LCD RGB背光连接到Seeeduino的I2C端口。如果你使用的是Arduino，请利用Base Shield。
+**步骤 1.** 使用 Grove 电缆将 Grove-LCD RGB 背光连接到 Seeeduino 的 I2C 端口。如果您使用的是 Arduino，请使用 Base Shield。
 
-**步骤2.** 通过USB线缆将Seeeduino/Arduino连接到你的电脑。
+**步骤 2.** 使用 USB 数据线将 Seeeduino/Arduino 连接到电脑。
 
 #### 软件
 
-**步骤1.** 打开[Codecraft](https://ide.chmakered.com/)，添加Arduino支持，并将一个主程序拖到工作区域。
+**步骤 1.** 打开 [Codecraft](https://ide.chmakered.com/)，添加 Arduino 支持，并将主程序拖到工作区。
 
-:::注意
-    如果你是第一次使用Codecraft，也请查看[Codecraft使用Arduino指南](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)。
+:::note
+    如果这是您第一次使用 Codecraft，请参阅 [Codecraft 使用 Arduino 指南](https://wiki.seeedstudio.com/cn/Guide_for_Codecraft_using_Arduino/)。
 :::
-**步骤2.** 按照下面的图片拖动代码块，或者打开可以在本页面末尾下载的cdc文件。
+
+**步骤 2.** 按下图拖动模块或打开页面底部提供的 cdc 文件。
 
 <!-- ![cc](https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/cc_LCD_RGB_Backlight.png) -->
-  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/cc_LCD_RGB_Backlight.png" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/cc_LCD_RGB_Backlight.png" alt="pir" width={600} height="auto" /></p>
 
-将程序上传到你的Arduino/Seeeduino。
+将程序上传到您的 Arduino/Seeeduino。
 
-:::成功
-    当代码上传完成后，你将在LCD上看到"hello, world!"和系统运行时间。
+:::success
+    当代码上传完成后，您将在 LCD 上看到 "hello, world!" 和系统运行时间。
 :::
 
-### 使用树莓派
+### 使用 Raspberry Pi
 
 **硬件**
 
-- **步骤1.** 准备以下物品：
+- **步骤 1.** 准备以下物品：
 
-| Raspberry pi | GrovePi_Plus | Grove-LCD RGB Backlight |
-|--------------|-------------|-----------------|
+| Raspberry Pi | GrovePi_Plus | Grove-LCD RGB 背光 |
+|--------------|--------------|-------------------------|
 |<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/rasp.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/Grovepi%2B.jpg" alt="pir" width={600} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/rgb.jpg" alt="pir" width={600} height="auto" /></p>|
-|[Get One Now](https://www.seeedstudio.com/Raspberry-Pi-3-Model-B-p-2625.html)|[Get One Now](https://www.seeedstudio.com/GrovePi%2B-p-2241.html)|[Get One Now](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html)|
+|[立即购买](https://www.seeedstudio.com/Raspberry-Pi-3-Model-B-p-2625.html)|[立即购买](https://www.seeedstudio.com/GrovePi%2B-p-2241.html)|[立即购买](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html)|
 
-
-- **步骤2.** 将GrovePi_Plus插入Raspberry Pi中。
-- **步骤3.** 将Grove-LCD RGB背光连接到GrovePi_Plus的**I2C**端口。
-- **步骤4.** 通过USB线缆将Raspberry Pi连接到电脑。
+- **步骤 2.** 将 GrovePi_Plus 插入 Raspberry Pi。
+- **步骤 3.** 将 Grove-LCD RGB 背光连接到 GrovePi_Plus 的 **I2C** 端口。
+- **步骤 4.** 使用 USB 数据线将 Raspberry Pi 连接到电脑。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/rpi_rgb.jpg) -->
-  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/rpi_rgb.jpg" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/rpi_rgb.jpg" alt="pir" width={600} height="auto" /></p>
 
 **软件**
 
-:::注意
-     如果你使用的是**带有Raspberrypi OS >= Bullseye的Raspberry Pi**，你必须**仅使用Python3**来执行此命令行。
+:::note
+    如果您使用的是 **Raspberry Pi 且 Raspberry Pi OS >= Bullseye**，您必须仅使用 Python3 执行以下命令行。
 :::
 
-- **步骤1.** 按照[设置软件](https://www.dexterindustries.com/GrovePi/get-started-with-the-grovepi/setting-software/)的说明配置开发环境。
-- **步骤2.** 从Github克隆仓库。
+- **步骤 1.** 按照 [设置软件](https://www.dexterindustries.com/GrovePi/get-started-with-the-grovepi/setting-software/) 配置开发环境。
+- **步骤 2.** Git 克隆 Github 仓库。
 
 ```
 cd ~
@@ -258,15 +255,14 @@ git clone https://github.com/DexterInd/GrovePi.git
 
 ```
 
--	**步骤3.** 执行以下命令以使用Grove-LCD RGB背光进行显示。
-
+- **步骤 3.** 执行以下命令，使用 Grove-LCD RGB 背光显示。
 
 ```python
 cd ~/GrovePi/Software/Python/grove_rgb_lcd
 python3 grove_rgb_lcd.py
 ```
 
-下面是grove_rgb_lcd.py的代码。
+以下是 grove_rgb_lcd.py 的代码。
 
 ```python
 import time,sys
@@ -283,11 +279,11 @@ else:
     else:
         bus = smbus.SMBus(0)
 
-# this device has two I2C addresses
+# 该设备有两个 I2C 地址
 DISPLAY_RGB_ADDR = 0x62
 DISPLAY_TEXT_ADDR = 0x3e
 
-# set backlight to (R,G,B) (values from 0..255 for each)
+# 设置背光颜色为 (R,G,B) (每个值范围为 0..255)
 def setRGB(r,g,b):
     bus.write_byte_data(DISPLAY_RGB_ADDR,0,0)
     bus.write_byte_data(DISPLAY_RGB_ADDR,1,0)
@@ -296,16 +292,16 @@ def setRGB(r,g,b):
     bus.write_byte_data(DISPLAY_RGB_ADDR,3,g)
     bus.write_byte_data(DISPLAY_RGB_ADDR,2,b)
 
-# send command to display (no need for external use)    
+# 发送命令到显示屏 (无需外部使用)    
 def textCommand(cmd):
     bus.write_byte_data(DISPLAY_TEXT_ADDR,0x80,cmd)
 
-# set display text \n for second line(or auto wrap)     
+# 设置显示文本 \n 表示第二行(或自动换行)     
 def setText(text):
-    textCommand(0x01) # clear display
+    textCommand(0x01) # 清除显示
     time.sleep(.05)
-    textCommand(0x08 | 0x04) # display on, no cursor
-    textCommand(0x28) # 2 lines
+    textCommand(0x08 | 0x04) # 打开显示，无光标
+    textCommand(0x28) # 两行显示
     time.sleep(.05)
     count = 0
     row = 0
@@ -321,16 +317,16 @@ def setText(text):
         count += 1
         bus.write_byte_data(DISPLAY_TEXT_ADDR,0x40,ord(c))
 
-#Update the display without erasing the display
+# 更新显示内容而不清除显示
 def setText_norefresh(text):
-    textCommand(0x02) # return home
+    textCommand(0x02) # 返回首页
     time.sleep(.05)
-    textCommand(0x08 | 0x04) # display on, no cursor
-    textCommand(0x28) # 2 lines
+    textCommand(0x08 | 0x04) # 打开显示，无光标
+    textCommand(0x28) # 两行显示
     time.sleep(.05)
     count = 0
     row = 0
-    while len(text) < 32: #clears the rest of the screen
+    while len(text) < 32: # 清除屏幕剩余部分
         text += ' '
     for c in text:
         if c == '\n' or count == 16:
@@ -344,7 +340,7 @@ def setText_norefresh(text):
         count += 1
         bus.write_byte_data(DISPLAY_TEXT_ADDR,0x40,ord(c))
 
-# example code
+# 示例代码
 if __name__=="__main__":
     setText("Hello world\nThis is an LCD test")
     setRGB(0,128,64)
@@ -357,15 +353,15 @@ if __name__=="__main__":
     setText("Bye bye, this should wrap onto next line")
 ```
 
-- **步骤4.** 我们将看到Grove-LCD RGB背光显示"Going to sleep in 1..."。
+- **步骤 4.** 我们将看到 Grove-LCD RGB 背光显示内容为 Going to sleep in 1...
 
 ## 常见问题
 
-- Q1: 如何使用多个Grove-LCD RGB背光？
-    - A1: 请参考[Arduino Software I2C用户指南](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/)。
+- 问题 1: 如何使用多个 Grove-LCD RGB 背光？
+    - 答案 1: 请参考 [Arduino 软件 I2C 用户指南](https://wiki.seeedstudio.com/cn/Arduino_Software_I2C_user_guide/)。
 
-- Q2: 如何使用按钮来切换Grove RGB LCD以显示不同的页面？
-    - A2: 以下是相关代码。
+- 问题 2: 如何使用按钮切换 Grove RGB LCD 显示不同页面？
+    - 答案 2: 以下是代码。
 
 ```cpp
 
@@ -435,15 +431,15 @@ delay(500);
 
 ## 资源
 
-- [**库**] [Software Library](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/archive/master.zip)
-- **[文档]** [本文档的Github 页面](https://github.com/SeeedDocument/Grove_LCD_RGB_Backlight)
+- **[库]** [软件库](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/archive/master.zip)
+- **[文档]** [此文档的 Github 页面](https://github.com/SeeedDocument/Grove_LCD_RGB_Backlight)
 - **[Codecraft]** [CDC 文件](https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/res/Grove_LCD_RGB_Backlight_CDC_File.zip)
 - **[数据手册]** [PCA9633](https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/res/PCA9633.pdf)
 - **[数据手册]** [JHD1313](https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/res/JHD1313%20FP-RGB-1%201.4.pdf)
 
 ## 项目
 
-**Particle + Grove LCD RGB Backlight = 实时时钟**：使用I2C将Grove LCD RGB背光连接到Particle，以显示时间。
+**Particle + Grove LCD RGB 背光 = 实时时钟**：使用 I2C 将 Grove LCD RGB 背光连接到 Particle，以显示时间。
 
 <iframe frameborder='0' height='327.5' scrolling='no' src='https://www.hackster.io/peacemoon/particle-grove-lcd-rgb-backlight-realtime-clock-42151f/embed' width='350'></iframe>
 
@@ -454,8 +450,7 @@ delay(500);
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tbdTTC3Jmgk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## 技术支持与产品讨论
-
-感谢您选择我们的产品！我们在这里为您提供各种支持，以确保您在使用我们的产品时能够尽可能地顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

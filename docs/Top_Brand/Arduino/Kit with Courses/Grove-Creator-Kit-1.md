@@ -11,15 +11,13 @@ last_update:
 ---
 
 
-## Grove Creator Kit - Learn, Build & Explore!
+## Grove Creator Kit - Learn, Build & Explore
 
 We have been cooking electronics kits for quite a while now and Grove Creator Kit is one of the very important kits that we have made so far. That is because we wanted to help developing countries by designing a kit that is very cost effective, fits the market needs and thereby allowing everyone with a passionate mind about electronics to get access to open-source electronics.
 
 ![](https://files.seeedstudio.com/wiki/Bazaar_Document/Grove-Creator-Kit.jpg)
 
-
 The Grove - Creator Kit is one of the best kits for creators of any age, whether you are complete beginners or have prior experience in electronics. This kit will help you get rid of traditional soldering and complicated wiring and thereby opening doors into the Grove ecosystem. Learn more about Grove <a href="https://www.seeedstudio.com/grove.html">here!</a>.
-
 
 <!-- <a href="https://www.seeedstudio.com/grove.html"><img src="https://files.seeedstudio.com/wiki/Bazaar_Document/banner.jpg"></a> -->
 
@@ -27,17 +25,14 @@ The Grove - Creator Kit is one of the best kits for creators of any age, whether
 Here is an introductory video of the Grove Creator Kit! -->
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Creator-Kit-g-p-5192.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Creator-Kit-g-p-5192.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
 
-
-
-
-
 ## Three different kits
-This kit comes in three different flavors, namely, α, β and γ which includes 20, 30, 40 electronics modules respectively. This will allow you to have a never-ending session of creativity. 
+
+This kit comes in three different flavors, namely, α, β and γ which includes 20, 30, 40 electronics modules respectively. This will allow you to have a never-ending session of creativity.
 
 ### Grove Creator Kit - α
 
@@ -47,12 +42,9 @@ This kit comes in three different flavors, namely, α, β and γ which includes 
 
 ![](https://files.seeedstudio.com/wiki/Bazaar_Document/beta-2.jpg)
 
-
 ### Grove Creator Kit - γ
 
 ![](https://files.seeedstudio.com/wiki/Bazaar_Document/gamma-2.jpg)
-
-
 
 ## Modules included in these kits
 
@@ -99,14 +91,11 @@ This kit comes in three different flavors, namely, α, β and γ which includes 
 |  <a href="https://wiki.seeedstudio.com/Grove-LED_Bar/">Grove LED Bar v2.0</a>        |                |        | &#10003; |
 | <a href="https://wiki.seeedstudio.com/Grove-RGB_LED_Stick-10-WS2813_Mini/">Grove - RGB LED Stick (10 - WS2813 Mini)</a>       |               |        | &#10003; |
 
-
-
 ## Platforms Supported
 
-| Arduino                                                                                             | Raspberry Pi                                                                                             | Micro:bit                                                                                     
+| Arduino                                                                                             | Raspberry Pi                                                                                             | Micro:bit
 |-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg) | ![](https://files.seeedstudio.com/wiki/Bazaar_Document/microbit-logo-stacked-2.png) | 
-
+| ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg) | ![](https://files.seeedstudio.com/wiki/Bazaar_Document/microbit-logo-stacked-2.png) |
 
 ## Cables Included in these kits
 
@@ -118,39 +107,28 @@ We have provided four different cables in these kits for your own flexibilty whe
 
 ![](https://files.seeedstudio.com/wiki/Bazaar_Document/Untitled-2.png)
 
-
 ## Step-by-step Tutorial book
 
 We have also provided a step-by-step tutorial book along with all these three kits to help you get started with the kits quickly and easily. You can follow along the book to build your next exciting electronics projects!
 
-
 <img src="https://files.seeedstudio.com/wiki/Bazaar_Document/book%20with%20contents.png" />
-
 
 If you want to have access to a PDF version of this book, please refer to <a href="https://www.youtube.com/redirect?v=QwY91NMWCK4&event=video_description&redir_token=h9KHwwW0l9Qj8n3ykMUp56Y8i2d8MTU3NTEwODI4NUAxNTc1MDIxODg1&q=https%3A%2F%2Fgithub.com%2FSeeed-Studio%2FSeeed_Learning_Space%2Fblob%2Fmaster%2FSeeed_Creator_Kit%2FGrove%2520Creator%2520Kit%2520Manual%2520Final%2520Edition%2520V1.0.pdf">this link.</a>
 
+## Getting Started Videos
 
-## Getting Started Videos 
-
-We have not limited the learning process only to a book. We have also provided a video series on YouTube that explains how to get started with these kits in an interactive way. 
+We have not limited the learning process only to a book. We have also provided a video series on YouTube that explains how to get started with these kits in an interactive way.
 
 <a href="https://www.youtube.com/playlist?list=PLpH_4mf13-A1XN_EDUVUaLCr3i2P89dbf"><img src="https://files.seeedstudio.com/wiki/Bazaar_Document/Capture.PNG" /></a>
 
-
-
 Feel free to have a look at the videos through <a href="https://www.youtube.com/playlist?list=PLpH_4mf13-A1XN_EDUVUaLCr3i2P89dbf">this link</a>
 
-
-
 So, all you have to do is follow the tutorials, plug the modules into the development board and start your journey in open-source electronics!
-
 
 ## Buy Creator Kit
 
 You can have access to the Grove Creator Kit through our country distributors.
 <i>Click the <b>blue</b> rectangles with the distributor names to visit the corresponding distributors.</i>
-
-
 
 <!-- <img src="https://files.seeedstudio.com/wiki/Bazaar_Document/india.jpg" alt="India" width="500" height="599" usemap="#India"> -->
 
@@ -164,24 +142,13 @@ You can have access to the Grove Creator Kit through our country distributors.
 <map name="Malaysia">
   <area shape="rect" coords="83, 258, 197, 312" href="https://my.cytron.io/grove-seeedstudio?">
 
-
 <img src="https://files.seeedstudio.com/wiki/Bazaar_Document/Philippines.jpg" alt="Philippines" width="500" height="599" usemap="#Philippines">
 
 <map name="Philippines">
   <area shape="rect" coords="122, 178, 269, 232" href="http://www.makerlab-electronics.com"> -->
 
-
-##  Tech Support 
+## Tech Support
 
 <div>
   Please submit any technical issue into our <a href="https://forum.seeedstudio.com/">forum</a> .
 </div>
-
-
-
-
-
-
-
-
- 

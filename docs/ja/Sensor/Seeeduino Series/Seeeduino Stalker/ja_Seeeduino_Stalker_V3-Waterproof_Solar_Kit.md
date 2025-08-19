@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![画像説明を入力してください](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_V3-Waterproof_Solar_Kit.JPG)
 
-Stalker Kitは、<a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a>をベースにした**ワイヤレスセンサーネットワーク**ノードの**データロガー**です。Seeeduino Stalker v3は、機能が豊富なArduino互換のワイヤレスセンサーネットワークノードです。そのモジュール構造とRTCやSDカードインターフェースなどのオンボード周辺機器により、センサー値を正確なタイムスタンプとともに定期的に記録することができます。Seeeduino Stalkerは、追跡、監視、制御プロジェクトに最適な候補です。
+Stalker Kitは、<a href="/ja/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a>をベースにした**ワイヤレスセンサーネットワーク**ノードの**データロガー**です。Seeeduino Stalker v3は、機能が豊富なArduino互換のワイヤレスセンサーネットワークノードです。そのモジュール構造とRTCやSDカードインターフェースなどのオンボード周辺機器により、センサー値を正確なタイムスタンプとともに定期的に記録することができます。Seeeduino Stalkerは、追跡、監視、制御プロジェクトに最適な候補です。
 
 Stalker Kitには、Seeeduino Stalker v3.0を使用するために必要なすべてのコンポーネントが含まれています。Stalker Kitは防水性のプラスチックケースが付属しているため、屋外で使用することができます。そのため、特別なアイデアがある場合には水中に置くことも可能です。このキットにはソーラーパネルとLiPoバッテリーが付属しており、砂漠やジャングルなどの遠隔地で、収集した太陽エネルギーをLiPoバッテリーに蓄えて動作させることができます。
 
@@ -32,7 +32,7 @@ Stalker Kitには、Seeeduino Stalker v3.0を使用するために必要なす�
 <th> 数量 </th>
 </tr>
 <tr>
-<td> <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a> </td>
+<td> <a href="/ja/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a> </td>
 <td> Arduino互換のWSNノード </td>
 <td> 1 </td>
 </tr>
@@ -96,7 +96,7 @@ Stalker Kitには、Seeeduino Stalker v3.0を使用するために必要なす�
 |---|---|
 
 :::note
-[UartSBee_V4](/UartSBee_V4 "UartSBee_V4")は、Seeeduino Stalkerに搭載されているBeeシリーズソケットに挿入することはできません。[UartSBee_V4](/UartSBee_V4 "UartSBee_V4")は、上記の写真に示されている他のBeeモジュールをコンピュータに接続するために設計されており、これらのBeeモジュール用のソケットに直接挿入することはできません。Seeeduino StalkerとUartSBee_V4には、それぞれ別の5ピンヘッダーがあり、これらを相互に接続することができます。このピンヘッダーは以下の構成になっています：VCC（Stalkerへの電源供給）、TXD、RXD、DTR（Stalkerのリセット信号を制御するため）、およびGND。
+[UartSBee_V4](/ja/UartSBee_V4 "UartSBee_V4")は、Seeeduino Stalkerに搭載されているBeeシリーズソケットに挿入することはできません。[UartSBee_V4](/ja/UartSBee_V4 "UartSBee_V4")は、上記の写真に示されている他のBeeモジュールをコンピュータに接続するために設計されており、これらのBeeモジュール用のソケットに直接挿入することはできません。Seeeduino StalkerとUartSBee_V4には、それぞれ別の5ピンヘッダーがあり、これらを相互に接続することができます。このピンヘッダーは以下の構成になっています：VCC（Stalkerへの電源供給）、TXD、RXD、DTR（Stalkerのリセット信号を制御するため）、およびGND。
 :::
 
 
@@ -105,7 +105,7 @@ Stalker Kitには、Seeeduino Stalker v3.0を使用するために必要なす�
 ---
 <big>はじめに</big>
 
-もし「フィジカルコンピューティング」の世界に初めて触れる場合、または Seeeduino Stalker が初めてのフィジカルコンピューティングプラットフォームである場合は、<a href="/Seeeduino-Stalker_v3"><span><font size={"3"}>Seeeduino</font></span></a>から始めることをお勧めします。
+もし「フィジカルコンピューティング」の世界に初めて触れる場合、または Seeeduino Stalker が初めてのフィジカルコンピューティングプラットフォームである場合は、<a href="/ja/Seeeduino-Stalker_v3"><span><font size={"3"}>Seeeduino</font></span></a>から始めることをお勧めします。
 
 以下の手順は、Seeeduino Stalker v3 を使い始めるために必要なハードウェアおよびソフトウェアリソースを準備するのに役立ちます。
 
@@ -123,7 +123,7 @@ Stalker Kitには、Seeeduino Stalker v3.0を使用するために必要なす�
 
 **ステップ 2: ドライバのインストールとハードウェアの接続**
 
-1. [UartSBee_V4](/UartSBee_V4 "UartSBee_V4") は、フィジカルコンピューティングの世界における多目的なスイスアーミーナイフのようなものです。Windows および GNU/Linux ユーザー向けに非常に詳細な使用手順が[こちら](/UartSBee_V4 "UartSBee_V4")にあります。今回のケースでは、以下の 3 つの機能を果たします：
+1. [UartSBee_V4](/ja/UartSBee_V4 "UartSBee_V4") は、フィジカルコンピューティングの世界における多目的なスイスアーミーナイフのようなものです。Windows および GNU/Linux ユーザー向けに非常に詳細な使用手順が[こちら](/ja/UartSBee_V4 "UartSBee_V4")にあります。今回のケースでは、以下の 3 つの機能を果たします：
     * Seeeduino Stalker のプログラミングを可能にします。
     * Seeeduino Stalker との通信を可能にします。
     * コンピュータの USB 電源から Seeeduino Stalker（および接続された周辺機器）に電力を供給します。
@@ -170,8 +170,8 @@ Seeeduino Stalker v3 &lt;---&gt; UartSBee v4.0 接続
 
 <big>接続に関する注意事項</big>
 
-* **Bee シリーズソケット** - 2*10 ピン 2.0mm ピッチ（[ワイヤレスモジュール](/Wifi_Bee "Wifi_Bee")のいずれか：[XBee](/XBee_Shield "Zigbee Networking with XBee Series_2 and Seeeds Products"), [BluetoothBee](/Bluetooth_Bee "Bluetooth Bee"), [GPSBee](/GPS_Bee_kit "GPS_Bee_kit"), [RFBee](/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")と一度に接続可能）。これらのモジュールとの通信は UART を通じて行われます。
-* **シリアルインターフェース** – スペースを節約しコストを削減するため、USB&lt;-&gt;シリアル接続はデフォルトでは提供されていません。FT232 ベースの [UartSBee_V4](/UartSBee_V4 "UartSBee_V4") または他の USB からシリアルアダプタボードを使用してプログラミングや PC との通信を行うことができます。
+* **Bee シリーズソケット** - 2*10 ピン 2.0mm ピッチ（[ワイヤレスモジュール](/ja/Wifi_Bee "Wifi_Bee")のいずれか：[XBee](/ja/XBee_Shield "Zigbee Networking with XBee Series_2 and Seeeds Products"), [BluetoothBee](/ja/Bluetooth_Bee "Bluetooth Bee"), [GPSBee](/ja/GPS_Bee_kit "GPS_Bee_kit"), [RFBee](/ja/RFbee_V1.1-Wireless_Arduino_compatible_node "RFbee V1.1 - Wireless Arduino compatible node")と一度に接続可能）。これらのモジュールとの通信は UART を通じて行われます。
+* **シリアルインターフェース** – スペースを節約しコストを削減するため、USB&lt;-&gt;シリアル接続はデフォルトでは提供されていません。FT232 ベースの [UartSBee_V4](/ja/UartSBee_V4 "UartSBee_V4") または他の USB からシリアルアダプタボードを使用してプログラミングや PC との通信を行うことができます。
 * **ユーザー LED** – 必要に応じてアプリケーションで使用できる LED がオンボードに提供されています。
 * **I<sup>2</sup>C インターフェース** – オンボードの I<sup>2</sup>C レベルシフタ IC は、3.3V と 5V デバイス間の電圧変換を提供します。これにより、マイクロコントローラが 3.3 ボルトで動作している場合でも、5.0 ボルトの I<sup>2</sup>C IC を接続できます。
 
@@ -195,7 +195,7 @@ Seeeduino Stalker v3 &lt;---&gt; UartSBee v4.0 接続
 
     * **例：** `DateTime dt(2015, 10, 1, 11, 43, 0, 4);`
 
-* コンパイルして <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a> にアップロードしてください。
+* コンパイルして <a href="/ja/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a> にアップロードしてください。
 
 ![画像をここに挿入](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_v3_adjust.png)
 
@@ -213,7 +213,7 @@ Seeeduino Stalker v3 &lt;---&gt; UartSBee v4.0 接続
 
   * **例：** `DateTime now = RTC.now();`
 
-* コンパイルして <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a> にアップロードしてください。
+* コンパイルして <a href="/ja/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a> にアップロードしてください。
 
 ![画像をここに挿入](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_v3_now.png)
 
@@ -231,7 +231,7 @@ DS1337 の割り込み
 
 * DS1337 ライブラリから **interrupts.ino** の例を開いてください。
 
-* コンパイルして <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a> にアップロードしてください。
+* コンパイルして <a href="/ja/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a> にアップロードしてください。
 
 ![画像をここに挿入](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_v3_interrupt.png)
 **interrupts.ino の出力**

@@ -33,7 +33,7 @@ balenaCloudは、IoTデバイス群を管理するための中央ダッシュボ
 EdgeBox-RPI-200シリーズは、複数の産業用途を組み合わせた、Raspberry Piベースのオールインワン産業用エッジコンピューティングコントローラーです。高い拡張性と堅牢な産業用ハードウェアとして設計され、豊富なIOリソースを搭載し、優れたRaspberry Pi産業用ソフトウェアエコシステムによってサポートされています。スマートオートメーションや産業用IoT（IIoT）ソリューションに最適な選択肢です。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/EdgeBox-RPi-200-CM4104016-p-5486.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/EdgeBox-RPi-200-CM4104016-p-5486.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
@@ -58,7 +58,7 @@ EdgeBox-RPI-200シリーズは、複数の産業用途を組み合わせた、Ra
 
 EdgeBox-RPI-200 に balenaOS をフラッシュするには、デバイスを分解して Raspberry Pi Compute Module 4 を取り出す必要があります。
 
-**STEP 1:** EdgeBox-RPI-200 から取り出した CM4 を [Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html) に設置します。[wikiページ](/Raspberry_pi_CM4_update_eeprom/#put-cm4-emmc-storage-into-usb-mass-storage-mode) を参照して、[Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html) を使用して CM4 eMMC ストレージを USB マスストレージモードに設定する方法を確認してください。
+**STEP 1:** EdgeBox-RPI-200 から取り出した CM4 を [Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html) に設置します。[wikiページ](/ja/Raspberry_pi_CM4_update_eeprom/#put-cm4-emmc-storage-into-usb-mass-storage-mode) を参照して、[Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html) を使用して CM4 eMMC ストレージを USB マスストレージモードに設定する方法を確認してください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/102110497/latest-board/boot-pins.png" alt="pir" width={600} height="auto" /></p>
 

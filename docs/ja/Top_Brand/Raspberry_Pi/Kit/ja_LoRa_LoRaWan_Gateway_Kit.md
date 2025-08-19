@@ -636,7 +636,7 @@ chmod +x loriot-gw
 
 - **[PDF]** [Wiki PDFをダウンロード](https://files.seeedstudio.com/wiki/LoRaWAN_Gateway-868MHz_Kit_with_Raspberry_Pi_3/res/LoRa_LoRaWan_Gateway_Kit.pdf)
 - **[ユーザーマニュアル]** [ユーザーマニュアル](https://files.seeedstudio.com/wiki/LoRaWAN_Gateway-868MHz_Kit_with_Raspberry_Pi_3/res/%5BRHF-UM01649%5DIoT%20Discovery%20User%20Manual%20-%20v3.2.pdf).<!-- 源文件链接有误 -->
-- **[さらに読む]** <a href="/Seeeduino_LoRAWAN" ><span><font size={"3"}> Seeeduino LoRaWAN のWiki </font></span></a>
+- **[さらに読む]** <a href="/ja/Seeeduino_LoRAWAN" ><span><font size={"3"}> Seeeduino LoRaWAN のWiki </font></span></a>
 - **[さらに読む]** [RisingHFウェブサイト](http://www.risinghf.com/product/risinghf-iot-dicovery/?lang=en)
 - **[Azure IoT Edge LoRaWAN]** [Azure IoT Edge LoRaWAN](https://github.com/Azure/iotedge-lorawan-starterkit/)
 

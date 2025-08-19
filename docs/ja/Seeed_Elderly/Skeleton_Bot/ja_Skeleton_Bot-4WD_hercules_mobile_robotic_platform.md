@@ -153,7 +153,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </tr>
 <tr>
 <td>15</td>
-<td><a href="/Hercules_Dual_15A_6-20V_Motor_Controller">ヘラクレスデュアル15A 6-20Vモーターコントローラー</a></td>
+<td><a href="/ja/Hercules_Dual_15A_6-20V_Motor_Controller">ヘラクレスデュアル15A 6-20Vモーターコントローラー</a></td>
 <td></td>
 <td></td>
 <td>1 個</td>

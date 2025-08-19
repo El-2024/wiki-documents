@@ -35,7 +35,7 @@ SO-ARM100 和 reComputer Jetson AI 智能机器人套件将高精度机械臂控
   </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html">
+<a class="get_one_now_item" href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 </a></div>
 
@@ -70,7 +70,7 @@ SO-ARM100 和 reComputer Jetson AI 智能机器人套件将高精度机械臂控
 
 ## 前置条件
 
-  1. [熟悉我们的 Lerobot SO100Arm 基本使用教程](/lerobot_so100m)。
+  1. [熟悉我们的 Lerobot SO100Arm 基本使用教程](/cn/lerobot_so100m)。
   2. [根据教程安装 Isaac Sim](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_workstation.html)
   3. [根据教程完成 ROS2 的安装和配置](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_ros.html)
 
@@ -84,7 +84,7 @@ SO-ARM100 和 reComputer Jetson AI 智能机器人套件将高精度机械臂控
     cd lerobot
   ```
 
-  确保您已根据教程安装了 [Lerobot 环境](/lerobot_so100m)
+  确保您已根据教程安装了 [Lerobot 环境](/cn/lerobot_so100m)
   
 ## 将 URDF 导入 Isaac Sim
 

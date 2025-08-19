@@ -1,41 +1,43 @@
 ---
 title: Grove - 差分放大器 v1.2
-description: Grove - 差分放大器 v1.2
+nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Differential_Amplifier_v1.2/
+image: https://wiki.seeedstudio.com/cn/Grove-Differential_Amplifier_v1.2/
 slug: /cn/Grove-Differential_Amplifier_v1.2
 last_update:
-  date: 03/22/2024
+  date: 01/09/2022
   author: gunengyu
 ---
 
-
 ![](https://files.seeedstudio.com/wiki/Grove-Differential_Amplifier_v1.2/img/Grove-Differential_Amplifier_v1.2.jpg)
 
-这款 Grove 模块专为精确差分输入放大而设计。您可以通过公头引脚将传感器的差分信号输入到该模块中，然后您的 Arduino 将从 Grove 接口获得精确放大的输出。增益比例因子是可选择的。您可以通过板上的开关选择 35 倍或 1085 倍的放大倍数。
+此 Grove 模块专为精确的差分输入放大设计。通过公针将传感器的差分信号输入到该模块，然后 Arduino 将通过 Grove 接口获得精确放大的输出。增益比例因子可选择。通过板上的开关，您可以选择 35 倍或 1085 倍的放大。
 
 [![](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://www.seeedstudio.com/Grove-Differential-Amplifier-p-1284.html)
 
-## 特点
+特点
+-------
 
-- 高放大精度
-- 可选比例因子
+- 高精度放大
+- 可选择的比例因子
 - 可方便地被 Arduino 读取
 
-:::提示
-    更多关于 Grove 模块的信息，请参考[Grove 系统](https://wiki.seeedstudio.com/Grove_System/)
+:::tip
+    有关 Grove 模块的更多详细信息，请参考 [Grove 系统](https://wiki.seeedstudio.com/cn/Grove_System/)
 :::
 
-## 应用领域
+应用
+-----------
 
 - 数据采集
 - 电池供电系统
-- 压力和温度桥式放大器
-- 通用仪表
+- 压力和温度桥放大器
+- 通用仪器
 
-## 规格
+规格
+-------------
 
 <table border="1" cellspacing="0" width="80%">
 <tr>
@@ -111,7 +113,7 @@ mV
 增益
 </th>
 <td>
-选择35
+选择 35
 </td>
 <td>
 /
@@ -128,7 +130,7 @@ mV
 </tr>
 <tr align="center">
 <td>
-选择1085
+选择 1085
 </td>
 <td>
 /
@@ -142,39 +144,39 @@ mV
 </tr>
 </table>
 
-
 支持的平台
 -------------------
 
-| Arduino                                                      | 树莓派                                                       |                                                              |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Arduino                                                                                             | Raspberry Pi                                                                                             |                                                                                                 |                                                                                                          |                                                                                                    |
+|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo.jpg) |
 
-:::警告
-    上述提到的支持平台是模块软件或理论兼容性的指示。在大多数情况下，我们只针对 Arduino 平台提供软件库或代码示例。由于无法为所有可能的 MCU 平台提供软件库/示例代码，因此用户需要编写自己的软件库。
+:::caution
+    上述提到的支持平台仅表示模块的软件或理论兼容性。我们通常仅为 Arduino 平台提供软件库或代码示例。不可能为所有可能的 MCU 平台提供软件库或演示代码。因此，用户需要自行编写软件库。
 :::
 
-## 使用方法
+使用方法
+-----
 
 **1. 传感器选择**
 
-该放大器可以将 mA 级别的信号放大到 A 级别。在使用之前，请确保您的传感器输出范围在 mA 级别。例如，[重量传感器（称重模块 0-500g）](https://yiyan.baidu.com/Weight_Sensor_Load_Cell_0-500g) 就是其中的一种。
+放大器可以将 mA 级别的信号放大到 A 级别。在使用之前，请确保传感器的输出范围在 mA 级别。例如，[重量传感器](/cn/Weight_Sensor_Load_Cell_0-500g) 就是其中之一。
 
-**2. 连接器改造**
+**2. 接头改造**
 
-为了将重量传感器与放大器上的公头引脚配对，需要在传感器的导线上焊接母头连接器。
+为了将重量传感器与放大器上的公针配对，需要在传感器的线缆上焊接母接头。
 
 ![](https://files.seeedstudio.com/wiki/Grove-Differential_Amplifier_v1.2/img/Solder.jpg)
 
 **3. 硬件连接**
 
-按照下面的图片所示，将重量传感器连接到放大器上。
+按照下图所示，将重量传感器连接到放大器。
 
 ![](https://files.seeedstudio.com/wiki/Grove-Differential_Amplifier_v1.2/img/Connect5.jpg)
 
 **4. 测量**
 
-将下面的示例代码复制并粘贴到 Arduino IDE 中，然后上传。
+将以下示例代码复制并粘贴到 Arduino IDE 中并上传。
 
 ```
     void setup()
@@ -209,17 +211,19 @@ mV
 
 <div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-Differential_Amplifier_v1.2/res/Grove-Differential_Amplifier_v1.2_eagle.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
-## 资源
+
+资源
+--------
 
 - [v1.2 Eagle 文件](https://files.seeedstudio.com/wiki/Grove-Differential_Amplifier_v1.2/res/Grove-Differential_Amplifier_v1.2_eagle.zip)
 - [v1.2 原理图](https://files.seeedstudio.com/wiki/Grove-Differential_Amplifier_v1.2/res/Grove-Differential_Amplifier_v1.2.pdf)
 - [INA132 数据手册](https://files.seeedstudio.com/wiki/Grove-Differential_Amplifier_v1.2/res/Ina132.pdf)
 
-<!-- This Markdown file was created from https://www.seeedstudio.com/wiki/Grove_-_Differential_Amplifier_v1.2 -->
+<!-- 此 Markdown 文件来源于 https://www.seeedstudio.com/wiki/Grove_-_Differential_Amplifier_v1.2 -->
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供不同形式的支持，以确保您在使用我们产品时的体验尽可能顺畅。我们提供了多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

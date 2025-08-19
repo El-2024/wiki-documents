@@ -22,7 +22,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 **UartSBee v5は、UartSBee v4をベースにしたMesh Beeプログラマーバージョンです。**
 
-一般的なヘルプトピックについては、[UartSBee v4のWikiページ](/UartSBee_V4 "UartSBee V4")を参照してください。このWikiでは、v4とv5の違いに焦点を当てています。
+一般的なヘルプトピックについては、[UartSBee v4のWikiページ](/ja/UartSBee_V4 "UartSBee V4")を参照してください。このWikiでは、v4とv5の違いに焦点を当てています。
 
 追加された機能
 --------------
@@ -45,7 +45,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ---------
 
 - [UartSBee v5用Eagleファイル](https://files.seeedstudio.com/wiki/UartSBee_v5/res/UartSBee_v5_eagle_file.zip)
-- [Mesh Beeのプログラミング方法](/Mesh_Bee "Mesh Bee")
+- [Mesh Beeのプログラミング方法](/ja/Mesh_Bee "Mesh Bee")
 
 <!-- このMarkdownファイルはhttps://www.seeedstudio.com/wiki/UartSBee_v5から作成されました -->
 

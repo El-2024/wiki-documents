@@ -36,7 +36,7 @@ CLIP のような生成型 AI ビジョントランスフォーマーにより�
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/reComputer/Application/reComputer_J4012.png">
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/reComputer/Application/reComputer_J4012.png" target="_blank" rel="noopener noreferrer">
       <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
@@ -48,7 +48,7 @@ CLIP のような生成型 AI ビジョントランスフォーマーにより�
   sudo apt-get install nvidia-jetpack
   sudo apt install nvidia-jetson-services
   ```
-- IP カメラまたはローカルビデオは RTSP を介してストリーミング可能です。（RTSP ストリーミングには、提供されている [NVStreamer チュートリアル](/getting_started_with_nvstreamer) の使用を推奨します。）
+- IP カメラまたはローカルビデオは RTSP を介してストリーミング可能です。（RTSP ストリーミングには、提供されている [NVStreamer チュートリアル](/ja/getting_started_with_nvstreamer) の使用を推奨します。）
 
 ## 始めるにあたって
 
@@ -91,7 +91,7 @@ sudo docker ps
 </div>
 
 ## RTSPストリーム入力を追加する
-以下のcurlコマンドを使用して、ゼロショット検出モデルで使用するRTSPストリームを最初に追加できます。ストリーミングには[NVStreamerチュートリアル](/getting_started_with_nvstreamer)を使用することを推奨します。
+以下のcurlコマンドを使用して、ゼロショット検出モデルで使用するRTSPストリームを最初に追加できます。ストリーミングには[NVStreamerチュートリアル](/ja/getting_started_with_nvstreamer)を使用することを推奨します。
 - **ステップ1**: `0.0.0.0`をJetsonのIPアドレスに置き換え、`liveStreamUrl`リンクをRTSPリンクに置き換えた後、以下のコマンドをターミナルに入力してください:
     ```bash
     curl --location 'http://0.0.0.0:5010/api/v1/live-stream' \

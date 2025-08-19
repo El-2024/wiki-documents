@@ -1,7 +1,7 @@
 ---
 description: 本文主要介绍如何使用 fuxa 进行 ModbusRTU/TCP 通信。
 
-title: reComputer R1000 使用 fuxa 实现 Modbus RTU/TCP
+title: 使用 fuxa 在 reComputer R1000 上实现 Modbus RTU/TCP
 keywords:
   - 边缘控制器
   - reComputer R1000
@@ -10,21 +10,18 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png
 slug: /cn/reComputer_r1000_fuxa_modbus_rtu_and_tcp
 last_update:
-  date: 05/15/2025
+  date: 2024/10/8
   author: ShuishengPeng
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
-## 简介
-FUXA 是一个基于 Web 的过程可视化 (SCADA/HMI/Dashboard) 软件。通过 FUXA，您可以为您的设备创建现代化的过程可视化界面，并实时显示数据。它支持 Modbus RTU/TCP、Siemens S7 协议、OPC-UA、BACnet IP、MQTT 和其他协议。
+## 介绍
+FUXA 是一款基于 Web 的过程可视化（SCADA/HMI/Dashboard）软件。通过 FUXA，您可以为机器创建现代化的过程可视化界面，并实时显示数据。它支持 Modbus RTU/TCP、Siemens S7 协议、OPC-UA、BACnet IP、MQTT 以及其他协议。
 
 本文主要介绍如何使用 fuxa 进行 ModbusRTU/TCP 通信。
 
-## 入门
+## 开始
 
-在开始此项目之前，您需要按照以下说明提前准备好硬件和软件。
+在开始此项目之前，您可能需要提前准备好硬件和软件，如下所述。
 
 ### 硬件准备
 
@@ -39,7 +36,7 @@ FUXA 是一个基于 Web 的过程可视化 (SCADA/HMI/Dashboard) 软件。通�
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html">
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a></div></td>
         </tr>
@@ -62,10 +59,10 @@ FUXA 是一个基于 Web 的过程可视化 (SCADA/HMI/Dashboard) 软件。通�
     sudo npm install -g --unsafe-perm @frangoteam/fuxa
     sudo fuxa
   ```
-* 关于如何使用 reComputer R1000 的 Modbus 功能，您可以参考此 [wiki](https://wiki.seeedstudio.com/reComputer_r1000_use_rs485_modbus_rtu/)。
+* 关于如何使用 reComputer R1000 的 Modbus 功能，您可以参考此 [wiki](https://wiki.seeedstudio.com/cn/reComputer_r1000_use_rs485_modbus_rtu/)。
 
 ### 硬件配置
-对于 ModbusRTU，我们使用了一个 RS485 转 USB 模块，将 reComputer R1000 与 W10 PC 连接起来。
+对于 ModbusRTU，我们使用了一个 rs485 转 USB 模块，将 reComputer R1000 与 W10 PC 连接起来。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/RS485_fix/hardwareconnection.png" alt="pir" width="700" height="auto" /></div>
 
@@ -75,21 +72,21 @@ FUXA 是一个基于 Web 的过程可视化 (SCADA/HMI/Dashboard) 软件。通�
 
 ## ModbusRTU 通信步骤
 
-**步骤 1**：在 Win10 PC 上打开 ModbusMechanic，选择对应的串口和波特率，然后点击右上角的 `Tools`，选择 `Start Slave Simulator`，接着选择 `RTU`，输入 `slave ID`，然后可以在从机的数据字段中进行设置。我们添加了三个线圈和一个 `Holding Register`，以便后续从 Modbus 主机读取数据。
+**步骤 1**：在 Win10 PC 上打开 ModbusMechanic，选择相应的串口和波特率，然后点击右上角的 `Tools`，选择 `Start Slave Simulator`，接着选择 `RTU`，输入 `slave ID`，然后可以在从机的数据字段中设置数据。我们添加了三个线圈和一个 `Holding Register`，以便后续从 Modbus 主机读取。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fuxa/ModbusRTU_slva_data.gif" /></center>
 
-**步骤 2**：在 `fuxa` 中，点击右下角的 `+` 按钮，输入模块名称，在 `Type` 中选择 `modbusRTU`，在 `Connection options` 中选择 `SeriaPort`，然后选择需要使用的串口号并设置对应的波特率和其他参数，最后点击 `OK`。
+**步骤 2**：在 `fuxa` 中，点击右下角的 `+` 按钮，输入模块名称，在 `Type` 中选择 `modbusRTU`，在 `Connection options` 中选择 `SeriaPort`，然后选择需要使用的串口号并设置相应的波特率和其他参数，最后点击 `OK`。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fuxa/first_configure.png" /></center>
 
-**步骤 3**：之后，我们进入 `Devices settings` 页面，点击左上角的 `+` 按钮，设置需要读取的数据字段。设置对应的参数后点击 `OK`，可以看到 `fuxa` 成功获取了 Modbus 从机数据。
+**步骤 3**：之后，进入 `Devices settings` 页面，点击左上角的 `+` 按钮，设置需要读取的数据字段。设置相应的参数并点击 `OK`，即可看到 `fuxa` 成功获取了 Modbus 从机数据。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fuxa/ModbusRTU_master.gif" /></center>
 
 ## ModbusTCP 通信步骤
 
-**步骤 1**：在 Win10 PC 上打开 ModbusMechanic，然后点击右上角的 `Tools`，选择 `Start Slave Simulator`，接着选择 `TCP`，输入 `slave ID`，并设置从机的数据字段。我们添加了两个线圈和一个 `holding register`，以便后续从 Modbus 主机读取数据。
+**步骤 1**：在 Win10 PC 上打开 ModbusMechanic，点击右上角的 `Tools`，选择 `Start Slave Simulator`，然后选择 `TCP`，输入 `slave ID`，并设置从机的数据字段。我们添加了两个线圈和一个 `holding register`，以便后续从 Modbus 主机读取。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fuxa/ModbusTcp_slava_data.gif" /></center>
 
@@ -97,13 +94,13 @@ FUXA 是一个基于 Web 的过程可视化 (SCADA/HMI/Dashboard) 软件。通�
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fuxa/modbustcp_first_configure.png" /></center>
 
-**步骤 3**：之后，我们进入 `Devices settings` 页面，点击左上角的 `+` 按钮，设置需要读取的数据字段。设置对应的参数后点击 `OK`，可以看到 `fuxa` 成功获取了 Modbus 从机数据。
+**步骤 3**：之后，进入 `Devices settings` 页面，点击左上角的 `+` 按钮，设置需要读取的数据字段。设置相应的参数并点击 `OK`，即可看到 `fuxa` 成功获取了 Modbus 从机数据。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fuxa/ModbusTcp_master.gif" /></center>
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

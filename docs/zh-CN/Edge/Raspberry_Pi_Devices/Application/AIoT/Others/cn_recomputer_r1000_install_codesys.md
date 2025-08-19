@@ -1,5 +1,5 @@
 ---
-description: 本文主要介绍如何安装 CODESYS 以及如何在 R1000 上部署新项目
+description: 本文主要介绍如何在 R1000 上安装 CODESYS 以及如何部署新项目
 
 title: 如何为 reComputer R1000 安装 CODESYS
 keywords:
@@ -9,18 +9,15 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png
 slug: /cn/recomputer_r1000_install_codesys
 last_update:
-  date: 05/15/2025
+  date: 2024/10/8
   author: ShuishengPeng
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## 简介
 CODESYS 是一个广泛应用于工业控制和自动化系统的流行自动化软件开发平台。其全称为控制器开发系统（Controller Development System），最初由德国公司 3S-Smart Software Solutions 开发。
-本文主要介绍如何下载和安装 CODESYS，并最终将 CODESYS 项目部署到 reComputer R1000。
+本文主要介绍如何下载和安装 CODESYS，最后将 CODESYS 项目部署到 reComputer R1000。
 
-在开始这个项目之前，您可能需要提前准备好硬件和软件，如下所述。
+在开始本项目之前，您可能需要提前准备好硬件和软件，如下所述。
 
 ## 硬件准备
 
@@ -35,7 +32,7 @@ CODESYS 是一个广泛应用于工业控制和自动化系统的流行自动化
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html">
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a></div></td>
         </tr>
@@ -60,7 +57,7 @@ CODESYS 是一个广泛应用于工业控制和自动化系统的流行自动化
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/install_codesys/3.png" /></center>
 
-**步骤 3**：下载完成后，`InstallShield Wizard` 将自动弹出。点击 `Next` 开始安装 `CODESYS`。
+**步骤 3**：`CODESYS Installer` 下载完成后，`InstallShield Wizard` 将自动弹出。点击 `Next` 开始安装 `CODESYS`。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/install_codesys/4.png" /></center>
 
@@ -72,7 +69,7 @@ CODESYS 是一个广泛应用于工业控制和自动化系统的流行自动化
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/install_codesys/6.png" /></center>
 
-**步骤 6**：修改安装目录，完成修改后点击 `Next`。
+**步骤 6**：修改安装目录，修改完成后点击 `Next`。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/install_codesys/7.png" /></center>
 
@@ -84,7 +81,7 @@ CODESYS 是一个广泛应用于工业控制和自动化系统的流行自动化
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/install_codesys/10.png" /></center>
 
-**步骤 8**：点击 `Install` 开始安装。安装过程需要一些时间，请耐心等待安装完成。
+**步骤 8**：点击 `Install` 开始安装。安装需要一些时间，请耐心等待安装完成。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/install_codesys/11.png" /></center>
 
@@ -108,7 +105,7 @@ CODESYS 是一个广泛应用于工业控制和自动化系统的流行自动化
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/install_package/p5.png" /></center>
 
-**步骤 4**：弹出窗口会提示您关闭 `CODESYS V3.5 SP20 Patch 3`。关闭 CODESYS 后点击 `OK`。CODESYS 将开始安装新包。
+**步骤 4**：弹出窗口提示您关闭 `CODESYS V3.5 SP20 Patch 3`。关闭 CODESYS 后点击 `OK`。CODESYS 将开始安装新包。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/install_package/p6.png" /></center>
 
@@ -125,66 +122,66 @@ CODESYS Runtime 指的是 CODESYS 运行时系统，它是一种安装在目标�
 
 **步骤 1**：确保 reComputer R1000 和主机电脑处于同一网络段
 
-**步骤 2**：点击 `Tools`--->`Update Raspberry Pi`
+**步骤 2**：点击 `工具`--->`更新 Raspberry Pi`
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_run_time/r1.png" /></center>
 
-**步骤 3**：输入 reComputer R1000 的用户名和密码、IP 地址，然后点击 Install 下载 `run time` 到 reComputer R1000，最后点击 `Start` 启动 `run time`
+**步骤 3**：输入 reComputer R1000 的用户名、密码和 IP 地址，然后点击安装以将 `运行时` 下载到 reComputer R1000，最后点击 `启动` 以启动 `运行时`
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_run_time/r2.png" /></center>
 
-**步骤 4**：当消息栏中出现以下信息时，表示 reComputer R1000 已成功运行 `run time`
+**步骤 4**：当消息栏中出现以下消息时，表示 reComputer R1000 已成功运行 `运行时`
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_run_time/r3.png" /></center>
 
 
-### 部署一个新项目
+### 部署新项目
 
-**步骤 1**：点击 `File`--->`New project` 创建一个新项目
+**步骤 1**：点击 `文件`--->`新建项目` 创建一个新项目
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n1.png" /></center>
 
-**步骤 2**：输入项目名称，选择 `Project`--->`Standard project`，最后点击 `OK`
+**步骤 2**：输入项目名称，选择 `项目`--->`标准项目`，最后点击 `确定`
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n2.png" /></center>
 
-**步骤 3**：在 `Device` 栏中选择 `CODESYS Control for Raspberry Pi 64 SL (CODESYS)`，在 `PLC_PRG in` 中选择 `Structured Text (ST)`，最后点击 `OK`。一个新项目就创建完成了。稍后我们将演示如何部署该项目。
+**步骤 3**：在 `设备` 列中选择 `CODESYS Control for Raspberry Pi 64 SL (CODESYS)`，在 `PLC_PRG in` 中选择 `结构化文本 (ST)`，最后点击 `确定`。一个新项目就创建完成了。稍后我们将演示如何部署该项目。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n3.png" /></center>
 
-**步骤 4**：创建项目后，双击它。在新弹出的窗口中，点击 `Scan Network`，可以找到同一网络段中的 reComputer R1000。
+**步骤 4**：创建项目后，双击它。在新弹出的窗口中，点击 `扫描网络`，可以找到同一网络段中的 reComputer R1000。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n4.png" /></center>
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n5.png" /></center>
 
-**步骤 5**：选择 R1000 并点击 `OK`
+**步骤 5**：选择 R1000 并点击 `确定`
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n6.png" /></center>
 
-**步骤 6**：在 `Add Device User` 窗口中，填写 reComputer R1000 的用户名和密码，最后点击 `OK`
+**步骤 6**：在 `添加设备用户` 窗口中，填写 reComputer R1000 的用户名和密码，最后点击 `确定`
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n7.png" /></center>
 
-**步骤 7**：随后会弹出 `Device User Login` 窗口，再次填写 reComputer R1000 的用户名和密码，最后点击 `OK`
+**步骤 7**：然后会弹出 `设备用户登录` 窗口，再次填写 reComputer R1000 的用户名和密码，最后点击 `确定`
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n8.png" /></center>
 
-**步骤 8**：连接成功后，可以看到状态指示灯全部为绿色
+**步骤 8**：连接成功后，可以看到状态指示灯全部变为绿色
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n9.png" /></center>
 
-**步骤 9**：点击工具栏上的 Deploy 按钮，如图所示，将当前项目编译并部署到 reComputer R1000
+**步骤 9**：点击工具栏上的部署按钮，如图所示，将当前项目编译并部署到 reComputer R1000
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n10.png" /></center>
 
-**步骤 10**：点击工具栏上的 Start 按钮，在 reComputer R1000 中启动当前项目
+**步骤 10**：点击工具栏上的启动按钮，在 reComputer R1000 中启动当前项目
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/CODESYS/deploy_new_project/n11.png" /></center>
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

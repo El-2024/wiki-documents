@@ -26,7 +26,7 @@ last_update:
 </div>
 
 ## 前提条件
-- __[reComputer J30/40 系列](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__：确保您已按照提供的教程完成 [JetPack 5.x 的安装](/reComputer_J4012_Flash_Jetpack) 和 [ROS Noetic 环境的安装](/installing_ros1)。
+- __[reComputer J30/40 系列](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__：确保您已按照提供的教程完成 [JetPack 5.x 的安装](/cn/reComputer_J4012_Flash_Jetpack) 和 [ROS Noetic 环境的安装](/cn/installing_ros1)。
 
 - __支持的摄像头如下：__
 
@@ -52,7 +52,7 @@ last_update:
 
 ## 入门指南
 ### 连接摄像头
-请按照本教程完成 [CSI 摄像头的连接和测试](/J401_carrierboard_Hardware_Interfaces_Usage)，并确保您的系统上已安装 [ROS](/installing_ros1)。
+请按照本教程完成 [CSI 摄像头的连接和测试](/cn/J401_carrierboard_Hardware_Interfaces_Usage)，并确保您的系统上已安装 [ROS](/cn/installing_ros1)。
 
 <div align="center">
       <img width={700} 

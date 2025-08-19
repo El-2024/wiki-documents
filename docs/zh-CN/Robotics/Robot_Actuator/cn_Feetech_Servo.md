@@ -23,7 +23,7 @@ last_update:
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item"  href="https://www.seeedstudio.com/STS3215-19kg-cm-7-4V-Serial-Servo-p-6338.html">
+    <a class="get_one_now_item"  href="https://www.seeedstudio.com/STS3215-19kg-cm-7-4V-Serial-Servo-p-6338.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 购买链接 🖱</font></span></strong>
     </a>
 </div>
@@ -81,7 +81,7 @@ last_update:
 
 ## 控制案例
 
-  <a href="https://wiki.seeedstudio.com/bus_servo_driver_board/" className="nav-item">
+  <a href="https://wiki.seeedstudio.com/cn/bus_servo_driver_board/" className="nav-item">
     <span className="text">XIAO总线舵机驱动板控制STS3215</span>
   </a>
 

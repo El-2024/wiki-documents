@@ -1,14 +1,14 @@
 ---
-description: 本文档展示了在 Raspberry Pi 5 和 Raspberry Pi Compute Module 4 上运行 YOLOv8s 的姿态估计和目标检测基准测试。
+description: 本文档展示了在 Raspberry Pi 5 和 Raspberry Pi Compute Module 4 上运行 YOLOv8s 进行姿态估计和目标检测的基准测试。
 title: 使用 Raspberry Pi AI Kit 在 RPi5 和 CM4 上运行 YOLOv8s 的基准测试
 keywords:
-  - Edge
+  - 边缘计算
   - reComputer r1000
   - 目标检测
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit
 last_update:
-  date: 05/15/2025
+  date: 07/17/2024
   author: Jiahao
 
 no_comments: false # 用于 Disqus
@@ -16,15 +16,11 @@ no_comments: false # 用于 Disqus
 
 # 使用 Raspberry Pi AI Kit 在 RPi5 和 CM4 上运行 YOLOv8s 的基准测试
 
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
-
 ## 简介
 
-[YOLOv8](https://github.com/ultralytics/ultralytics)（You Only Look Once 第 8 版）是 YOLO 系列中最受欢迎的实时姿态估计和目标检测模型。它在前几代的基础上，通过引入多项改进，在速度、准确性和灵活性方面表现出色。[Raspberry-pi-AI-kit](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html) 用于加速推理速度，其核心是基于 Hailo-8L 芯片的 13 TOPS 神经网络推理加速器。
+[YOLOv8](https://github.com/ultralytics/ultralytics)（You Only Look Once 第 8 版）是 YOLO 系列中最受欢迎的实时姿态估计和目标检测模型。它在前代的基础上，通过在速度、精度和灵活性方面的多项改进，进一步提升了性能。[Raspberry-pi-AI-kit](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html) 被用于加速推理速度，该套件配备了基于 Hailo-8L 芯片构建的 13 TOPS 神经网络推理加速器。
 
-本文档展示了在 Raspberry Pi 5 和 Raspberry Pi Compute Module 4 上运行 YOLOv8s 的姿态估计和目标检测基准测试。所有测试均使用相同的模型（YOLOv8s），量化为 int8，输入分辨率为 640x640，批量大小设置为 1，输入为 240 FPS 的同一视频。
+本文档展示了在 Raspberry Pi 5 和 Raspberry Pi Compute Module 4 上运行 YOLOv8s 进行姿态估计和目标检测的基准测试。所有测试均使用相同的模型（YOLOv8s），量化为 int8，输入分辨率为 640x640，批量大小设置为 1，输入为 240 FPS 的同一视频。
 
 ## 准备硬件
 
@@ -42,12 +38,12 @@ no_comments: false # 用于 Disqus
     </tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1000-Series-Optional-Accessories.html">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1000-Series-Optional-Accessories.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -69,12 +65,12 @@ no_comments: false # 用于 Disqus
     </tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html" target="_blank">
 				<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -92,7 +88,7 @@ import TabItem from '@theme/TabItem';
 <TabItem value="Method 1" label="Pi5 基准测试">
 
 ### 在 RPi5 上安装 AI 套件
-请参考 [此处](https://www.raspberrypi.com/documentation/accessories/ai-kit.html)
+请参考 [此文档](https://www.raspberrypi.com/documentation/accessories/ai-kit.html)
 
 ### 安装 Hailo 软件并验证安装
 
@@ -108,11 +104,11 @@ sudo apt full-upgrade
 在 ```/boot/firmware/config.txt``` 文件中添加以下内容：
 
 ```
-#启用 PCIe 外部连接器
+# 启用 PCIe 外部连接器
 
 dtparam=pciex1
 
-#强制使用 Gen 3.0 速度
+# 强制使用 Gen 3.0 速度
 
 dtparam=pciex1_gen=3
 
@@ -123,7 +119,7 @@ dtparam=pciex1_gen=3
 
 #### 安装 hailo-all 并重启：
 
-在 Raspberry Pi5 的终端中打开，并输入以下命令以安装 Hailo 软件。
+在 Raspberry Pi5 上打开终端，输入以下命令以安装 Hailo 软件。
 
 ```
 sudo apt install hailo-all
@@ -131,7 +127,7 @@ sudo reboot
 ```
 #### 检查软件和硬件：
 
-在 Raspberry Pi5 的终端中打开，并输入以下命令以检查是否已安装 hailo-all。
+在 Raspberry Pi5 上打开终端，输入以下命令以检查是否已安装 hailo-all。
 
 ```
 hailortcli fw-control identify
@@ -140,7 +136,7 @@ hailortcli fw-control identify
 正确的结果如下所示：
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/check_software.png" alt="pir" width={1000} height="auto"/></p>
 
-在 Raspberry Pi5 的终端中打开，并输入以下命令以检查是否已连接 hailo-8L。
+在 Raspberry Pi5 上打开终端，输入以下命令以检查是否已连接 hailo-8L。
 
 ```
 lspci | grep Hailo
@@ -213,10 +209,10 @@ bash run.sh object-detection
 <TabItem value="Method 2" label="CM4 基准测试">
 
 有关目标检测，请参考以下 Wiki：
-[yolov8_object_detection_on_recomputer_r1000_with_hailo_8l](https://wiki.seeedstudio.com/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l/)
+[yolov8_object_detection_on_recomputer_r1000_with_hailo_8l](https://wiki.seeedstudio.com/cn/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l/)
 
 有关姿态估计，请参考以下 Wiki：
-[yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l](https://wiki.seeedstudio.com/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l/)
+[yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l](https://wiki.seeedstudio.com/cn/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l/)
 </TabItem>
 
 </Tabs>
@@ -244,7 +240,7 @@ bash run.sh object-detection
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时拥有尽可能顺畅的体验。我们提供多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您在使用我们的产品时拥有尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

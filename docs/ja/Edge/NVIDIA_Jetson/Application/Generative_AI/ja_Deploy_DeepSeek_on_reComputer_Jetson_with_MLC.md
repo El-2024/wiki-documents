@@ -24,7 +24,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 DeepSeekは、効率性、精度、リアルタイム処理に最適化された最先端のAIモデルスイートです。エッジコンピューティング向けに高度に最適化されており、Jetsonデバイス上で高速で低遅延のAI推論を直接実現し、クラウドコンピューティングへの依存を減らしながら性能を最大化します。
 
-[以前のWiki](/deploy_deepseek_on_jetson)では、Jetson上でDeepSeekを展開するための簡単なガイドを提供しました。しかし、展開されたモデルは最適な推論速度を達成できませんでした。
+[以前のWiki](/ja/deploy_deepseek_on_jetson)では、Jetson上でDeepSeekを展開するための簡単なガイドを提供しました。しかし、展開されたモデルは最適な推論速度を達成できませんでした。
 
 このWikiでは、[DeepSeek](https://www.deepseek.com/)をreComputer Jetsonデバイス上で[MLC](https://llm.mlc.ai/)を使用して効率的なエッジAI推論を実現するためのステップバイステップガイドを提供します。
 
@@ -43,7 +43,7 @@ DeepSeekは、効率性、精度、リアルタイム処理に最適化された
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?qid=eyJjX3NlYXJjaF9xdWVyeSI6InJlQ29tcHV0ZXIgSjQwMTIiLCJjX3NlYXJjaF9yZXN1bHRfcG9zIjo0LCJjX3RvdGFsX3Jlc3VsdHMiOjUyLCJjX3NlYXJjaF9yZXN1bHRfdHlwZSI6IlByb2R1Y3QiLCJjX3NlYXJjaF9maWx0ZXJzIjoic3RvcmVDb2RlOltyZXRhaWxlcl0gJiYgcXVhbnRpdHlfYW5kX3N0b2NrX3N0YXR1czpbMV0ifQ%3D%3D"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J4012-p-5586.html?qid=eyJjX3NlYXJjaF9xdWVyeSI6InJlQ29tcHV0ZXIgSjQwMTIiLCJjX3NlYXJjaF9yZXN1bHRfcG9zIjo0LCJjX3RvdGFsX3Jlc3VsdHMiOjUyLCJjX3NlYXJjaF9yZXN1bHRfdHlwZSI6IlByb2R1Y3QiLCJjX3NlYXJjaF9maWx0ZXJzIjoic3RvcmVDb2RlOltyZXRhaWxlcl0gJiYgcXVhbnRpdHlfYW5kX3N0b2NrX3N0YXR1czpbMV0ifQ%3D%3D" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong></a>
 </div>
 
 ## 始めるにあたって

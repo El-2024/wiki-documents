@@ -37,7 +37,7 @@ last_update:
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html">
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
           </a></div></td>
         </tr>
@@ -67,6 +67,7 @@ ThingsBoard requires Java 17 to run.Open Terminal.
 4. Verify the installation:
    ```bash
    java -version
+   ```
 
 
 ## Step 2: Install ThingsBoard Service
@@ -78,6 +79,7 @@ ThingsBoard requires Java 17 to run.Open Terminal.
 2. Install ThingsBoard as a service:
    ```bash
    sudo dpkg -i thingsboard-3.8.deb
+   ```
 
 ## Step 3: Install PostgreSQL Database
 

@@ -38,7 +38,7 @@ SO-ARM10xとreComputer Jetson AIインテリジェントロボットキットは
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html">
+<a class="get_one_now_item" href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
 </a></div>
 
@@ -156,29 +156,29 @@ Seeed Studioはハードウェア自体の品質にのみ責任を負います�
 - Torch 2.6  
 
 ## 目次
-  [A. 3Dプリントガイド](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot)
+  [A. 3Dプリントガイド](https://wiki.seeedstudio.com/ja/lerobot_so100m/#install-lerobot)
 
-  [B. LeRobotのインストール](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot)
+  [B. LeRobotのインストール](https://wiki.seeedstudio.com/ja/lerobot_so100m/#install-lerobot)
 
-  [C. モーターの設定](https://wiki.seeedstudio.com/lerobot_so100m/#configure-the-motors)
+  [C. モーターの設定](https://wiki.seeedstudio.com/ja/lerobot_so100m/#configure-the-motors)
 
-  [D. 組み立て](https://wiki.seeedstudio.com/lerobot_so100m/#assembly)
+  [D. 組み立て](https://wiki.seeedstudio.com/ja/lerobot_so100m/#assembly)
 
-  [E. キャリブレーション](https://wiki.seeedstudio.com/lerobot_so100m/#calibrate)
+  [E. キャリブレーション](https://wiki.seeedstudio.com/ja/lerobot_so100m/#calibrate)
 
-  [F. 遠隔操作](https://wiki.seeedstudio.com/lerobot_so100m/#teleoperate)
+  [F. 遠隔操作](https://wiki.seeedstudio.com/ja/lerobot_so100m/#teleoperate)
 
-  [G. カメラの追加](https://wiki.seeedstudio.com/lerobot_so100m/#add-cameras)
+  [G. カメラの追加](https://wiki.seeedstudio.com/ja/lerobot_so100m/#add-cameras)
 
-  [H. データセットの記録](https://wiki.seeedstudio.com/lerobot_so100m/#record-the-dataset)
+  [H. データセットの記録](https://wiki.seeedstudio.com/ja/lerobot_so100m/#record-the-dataset)
 
-  [I. データセットの可視化](https://wiki.seeedstudio.com/lerobot_so100m/#visualize-the-dataset)
+  [I. データセットの可視化](https://wiki.seeedstudio.com/ja/lerobot_so100m/#visualize-the-dataset)
 
-  [J. エピソードの再生](https://wiki.seeedstudio.com/lerobot_so100m/#replay-an-episode)
+  [J. エピソードの再生](https://wiki.seeedstudio.com/ja/lerobot_so100m/#replay-an-episode)
 
-  [K. ポリシーのトレーニング](https://wiki.seeedstudio.com/lerobot_so100m/#train-a-policy)
+  [K. ポリシーのトレーニング](https://wiki.seeedstudio.com/ja/lerobot_so100m/#train-a-policy)
 
-  [L. ポリシーの評価](https://wiki.seeedstudio.com/lerobot_so100m/#evaluate-your-policy)
+  [L. ポリシーの評価](https://wiki.seeedstudio.com/ja/lerobot_so100m/#evaluate-your-policy)
 
 ## 3Dプリントガイド
 
@@ -1181,7 +1181,7 @@ python lerobot/scripts/control_robot.py \
   conda install libtiff==4.5.0  # Ubuntu 22.04の場合はlibtiff==4.5.1
   ```
 
-- [Lerobotのインストール](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot)を実行した後、GPUバージョンのpytorchが自動的にアンインストールされる可能性があるため、手動でtorch-gpuをインストールする必要があります。
+- [Lerobotのインストール](https://wiki.seeedstudio.com/ja/lerobot_so100m/#install-lerobot)を実行した後、GPUバージョンのpytorchが自動的にアンインストールされる可能性があるため、手動でtorch-gpuをインストールする必要があります。
 
 - Jetsonの場合、`conda install -y -c conda-forge ffmpeg`を実行する前に、まず[PytorchとTorchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)をインストールしてください。そうしないと、torchvisionのコンパイル時にffmpegのバージョン不一致の問題が発生する可能性があります。
 
@@ -1191,7 +1191,7 @@ python lerobot/scripts/control_robot.py \
   [vost#0:0 @ 0x13207240] Unknown encoder 'libsvtav1' [vost#0:0 @ 0x13207240] Error selecting an encoder Error opening output file /home/han/.cache/huggingface/lerobot/lyhhan/so100_test/videos/chunk-000/observation.images.laptop/episode_000000.mp4. Error opening output files: Encoder not found
   ``` 
 
-- 重要!!! 実行中にサーボのケーブルが緩んだ場合は、サーボを初期位置に戻してからサーボケーブルを再接続してください。また、[サーボ初期化コマンド](https://wiki.seeedstudio.com/lerobot_so100m/#configure-the-motors)を使用して個別にサーボをキャリブレーションすることもできます。この際、個別キャリブレーション中はサーボとドライバーボードの間に1本のケーブルのみを接続してください。以下のようなエラーがロボットアームのキャリブレーションプロセス中に発生した場合、この方法は依然として有効です。
+- 重要!!! 実行中にサーボのケーブルが緩んだ場合は、サーボを初期位置に戻してからサーボケーブルを再接続してください。また、[サーボ初期化コマンド](https://wiki.seeedstudio.com/ja/lerobot_so100m/#configure-the-motors)を使用して個別にサーボをキャリブレーションすることもできます。この際、個別キャリブレーション中はサーボとドライバーボードの間に1本のケーブルのみを接続してください。以下のようなエラーがロボットアームのキャリブレーションプロセス中に発生した場合、この方法は依然として有効です。
   ```bash
   Auto-correct calibration of motor 'wrist roll' by shifting value by 1 full turns, from '-270 < -312.451171875 < 270degrees' to'-270<-312.451171875 < 270 degrees'.
   ```
@@ -1210,7 +1210,7 @@ python lerobot/scripts/control_robot.py \
 
 ## 引用
 
-[中文文档](https://wiki.seeedstudio.com/cn/lerobot_so100m/)
+[中文文档](https://wiki.seeedstudio.com/ja/cn/lerobot_so100m/)
 
 TheRobotStudio プロジェクト: [SO-ARM10x](https://github.com/TheRobotStudio/SO-ARM100)
 

@@ -22,7 +22,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/GPS_Module/L76K/1-L76K-GNSS-Module-for-Seeed-Studio-XIAO-45font.jpg" style={{width:600, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/L76K-GNSS-Module-for-Seeed-Studio-XIAO-p-5864.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/L76K-GNSS-Module-for-Seeed-Studio-XIAO-p-5864.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
@@ -119,27 +119,27 @@ L76K GNSS モジュールの機能を最大限に活用するために、XIAO �
  </tr>
  <tr>
   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-      <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html">
+      <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
       </a>
   </div></td>
   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-      <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html">
+      <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
       </a>
   </div></td>
   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-      <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html">
+      <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
       </a>
   </div></td>
   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-      <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html">
+      <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
       </a>
   </div></td>
   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-      <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
+      <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
       </a>
   </div></td>
@@ -159,7 +159,7 @@ L76K GNSS モジュールの機能を最大限に活用するために、XIAO �
 SeeedStudio XIAO 用 L76K GNSS モジュールを使用するには、XIAO シリーズをプログラムする必要があります。推奨されるプログラミングツールは Arduino IDE であり、XIAO 用に Arduino 環境を設定し、オンボードパッケージを追加する必要があります。
 
 :::tip
-Arduino を初めて使用する場合は、[Arduino の使い方](/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、[Arduino の使い方](/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 #### ステップ 1. お使いのオペレーティングシステムに応じて安定版の Arduino IDE をダウンロードしてインストール
@@ -172,15 +172,15 @@ Arduino を初めて使用する場合は、[Arduino の使い方](/Getting_Star
 
 #### ステップ 3. 使用する XIAO に応じて Arduino IDE を設定
 
-- **Seeed Studio XIAO SAMD21** を使用する場合は、**[このチュートリアル](/Seeeduino-XIAO/#software)** を参照して設定を完了してください。
+- **Seeed Studio XIAO SAMD21** を使用する場合は、**[このチュートリアル](/ja/Seeeduino-XIAO/#software)** を参照して設定を完了してください。
 
-- **Seeed Studio XIAO RP2040** を使用する場合は、**[このチュートリアル](/XIAO-RP2040-with-Arduino/#software-setup)** を参照して設定を完了してください。
+- **Seeed Studio XIAO RP2040** を使用する場合は、**[このチュートリアル](/ja/XIAO-RP2040-with-Arduino/#software-setup)** を参照して設定を完了してください。
 
-- **Seeed Studio XIAO nRF52840** を使用する場合は、**[このチュートリアル](/XIAO_BLE/#software-setup)** を参照して設定を完了してください。
+- **Seeed Studio XIAO nRF52840** を使用する場合は、**[このチュートリアル](/ja/XIAO_BLE/#software-setup)** を参照して設定を完了してください。
 
-- **Seeed Studio XIAO ESP32C3** を使用する場合は、**[このチュートリアル](/XIAO_ESP32C3_Getting_Started#software-setup)** を参照して設定を完了してください。
+- **Seeed Studio XIAO ESP32C3** を使用する場合は、**[このチュートリアル](/ja/XIAO_ESP32C3_Getting_Started#software-setup)** を参照して設定を完了してください。
 
-- **Seeed Studio XIAO ESP32S3** を使用する場合は、**[このチュートリアル](/xiao_esp32s3_getting_started#software-preparation)** を参照して設定を完了してください。
+- **Seeed Studio XIAO ESP32S3** を使用する場合は、**[このチュートリアル](/ja/xiao_esp32s3_getting_started#software-preparation)** を参照して設定を完了してください。
 
 #### ステップ 4. TinyGPSPlus ライブラリを Arduino に追加
 

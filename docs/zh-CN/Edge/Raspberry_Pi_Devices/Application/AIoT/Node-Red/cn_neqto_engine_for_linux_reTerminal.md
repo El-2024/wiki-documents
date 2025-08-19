@@ -4,18 +4,15 @@ title: 在 reTerminal 上开始使用 NEQTO Engine for Linux
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/neqto_engine_for_linux_reTerminal
 last_update:
-  date: 05/15/2025
+  date: 04/17/2024
   author: Kazuhiro Ozuchi
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 ## 简介
 
 NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配置其边缘设备上的软件。通过即插即用的平台连接器和内置的软件生命周期管理，NEQTO 能够帮助企业为终端用户提供改进的软件服务。
 
-安装了 NEQTO 的设备可以通过 API 或现成的 NEQTO 控制台进行管理，控制台包括数据存储、警报和看门狗监控的可选服务。企业可以通过几乎即时的安装在任何 Linux 设备上启用 AIoT，并与任何本地或云服务器实现无缝数据集成。
+安装了 NEQTO 的设备可以通过 API 或现成的 NEQTO 控制台进行管理，控制台包括数据存储、警报和看门狗监控的可选服务。企业可以通过几乎即时的安装将 AIoT 启用到任何 Linux 设备上，并与任何本地或云服务器实现无缝数据集成。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/header-img_2x.png" alt="pir" width={600} height="auto" /></p>
 
@@ -34,7 +31,7 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html?queryID=26220f25bcce77bc420c9c03059787c0&objectID=4904&indexName=bazaar_retailer_products">
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html?queryID=26220f25bcce77bc420c9c03059787c0&objectID=4904&indexName=bazaar_retailer_products" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a></div></td>
         </tr>
@@ -46,14 +43,14 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 :::tip
 - 支持的架构：armv6l（32 位）、armv7l（32 位）、aarch64（64 位）、x86_64（64 位）
 - 所需磁盘空间：≥ 32 MB
-- 所需 RAM 空间：≥ 4MB（默认设置下）
-- 网络通信接口：设备上必须有一个物理网络适配器。
+- 所需 RAM 空间：≥ 4 MB（默认设置下）
+- 网络通信接口：设备必须配备物理网络适配器。
 - 显示器、键盘、鼠标（可选）
 :::
 
 ## 入门指南
 ### 硬件连接
-请参考 reTerminal 的入门指南 (https://wiki.seeedstudio.com/reTerminal/)
+请参考 [Getting Started with reTerminal](https://wiki.seeedstudio.com/cn/reTerminal/)
 
 ### 注册 NEQTO 账户：
 - 第 1 步：访问此页面 (https://console.neqto.com/register) 注册 NEQTO 账户
@@ -72,18 +69,17 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/65efff89ccae06004c6d94a6.png" alt="pir" width={600} height="auto" /></p>
 
-然后 API Key 将会显示出来
+然后 API 密钥将会显示
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/65efff33ccae06004c6d94a5.png" alt="pir" width={600} height="auto" /></p>
 
-
 3. 使用 curl 或 wget 下载 `NEQTO Engine Linux Installer`。
 
-    这里使用 wget 命令。
+    本次使用 wget 命令。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/65eeeaa3ccae06004c6d945d.png" alt="pir" width={600} height="auto" /></p>
 
-复制 `Installer of NEQTO Engine for Linux` 的 `下载链接`，并将其粘贴到 "wget " 后面。
+复制 `Installer of NEQTO Engine for Linux` 的 `下载链接`，并将其粘贴到 "wget " 后。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/660fbce4ccae06004c6d9812.png" alt="pir" width={600} height="auto" /></p>
 
@@ -95,13 +91,11 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/660fbd27ccae06004c6d9814.png" alt="pir" width={600} height="auto" /></p>
 
-
 <!--<div style="page-break-before:always"></div>-->
 
-5. 从 NEQTO 控制台的 `API Keys for NEQTO Engine for Linux` 中复制 `API Key`，并将其粘贴到 `sudo ./neqto-daemon-install.latest.sh -k ` 后面。
+5. 从 NEQTO 控制台的 `API Keys for NEQTO Engine for Linux` 中复制 `API Key`，并将其粘贴到 `sudo ./neqto-daemon-install.latest.sh -k ` 后。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/660fbd4dccae06004c6d9815.png" alt="pir" width={600} height="auto" /></p>
-
 
 6. 执行后，将显示重要注意事项。请检查并在同意后输入 "agree"。随后将执行设备注册，并继续软件安装。
 
@@ -145,7 +139,7 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/660fbe19ccae06004c6d981c.png" alt="pir" width={600} height="auto" /></p>
 
-6. 将 [示例代码](https://docs.neqto.com/docs/en/getting-started/tutorial-step1#sample-code) 从 `Getting Started` 页面复制并粘贴到 NEQTO 控制台的脚本编辑器中，然后点击 `Save`。
+6. 从 `Getting Started` 中复制并粘贴 [示例代码](https://docs.neqto.com/docs/en/getting-started/tutorial-step1#sample-code) 到 NEQTO 控制台脚本编辑器中，然后点击 `Save`。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/660fbe2bccae06004c6d981d.png" alt="pir" width={600} height="auto" /></p>
 
@@ -161,11 +155,11 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 8. 设置 `DEVICE INFORMATION` 如下：
 
-    - 在 `Name` 字段中输入 `reTerminal Template`。
+    - 在 `Name` 字段中输入 `reTerminal Template`
 
-    - 在 `Firmware Type` 字段中选择 `Linux-based device`。
+    - 在 `Firmware Type` 字段中选择 `Linux-based device`
 
-    - 在 `Firmware Version` 字段中选择最新版本。
+    - 在 `Firmware Version` 字段中选择最新版本
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/660fbe7cccae06004c6d9820.png" alt="pir" width={600} height="auto" /></p>
 
@@ -187,13 +181,13 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 11. 设置 `META DATA` 如下：
 
-    - 将 `Name` 字段设置为 `reTerminal`。
+    - 将 `Name` 字段设置为 `reTerminal`
 
-    - 将 `Template` 字段设置为 `reTerminal Template`。
+    - 将 `Template` 字段设置为 `reTerminal Template`
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/660fbec5ccae06004c6d9825.png" alt="pir" width={600} height="auto" /></p>
 
-12. 在 `DEVICE INFORMATION` 中选择你刚刚注册的设备，然后点击 `SAVE`。
+12. 在 `DEVICE INFORMATION` 中选择刚刚注册的设备，然后点击 `SAVE`。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/660fca55ccae06004c6d982a.png" alt="pir" width={600} height="auto" /></p>
 
@@ -211,18 +205,18 @@ NEQTO 是一个轻量级且安全的软件包，允许企业远程安装和配�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/neqto_engine_for_linux_reTerminal/660fa3e0ccae06004c6d97e8.png" alt="pir" width={600} height="auto" /></p>
 
-## 更多信息 / 故障排除
+## 更多信息 / 故障排查
 
-- [NEQTO 支持](https://support.neqto.com/hc/en-us)
-- [支持指南](https://docs.neqto.com/docs/en/neqto/support-guidelines)
+- [NEQTO 支持](https://support.neqto.com/hc/zh-cn)
+- [支持指南](https://docs.neqto.com/docs/zh/neqto/support-guidelines)
 
 ## 资源
 
-- [NEQTO 资源中心](https://docs.neqto.com/docs/en/linux/software/requirements)
+- [NEQTO 资源中心](https://docs.neqto.com/docs/zh/linux/software/requirements)
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时获得尽可能顺畅的体验。我们提供多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

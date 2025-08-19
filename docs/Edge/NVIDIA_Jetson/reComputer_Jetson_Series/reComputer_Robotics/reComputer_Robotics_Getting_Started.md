@@ -7,7 +7,7 @@ tags:
   - Robotics
   - reComputer
   - reComputer Robotics
-image: https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer_robotics1.webp
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer-robotics_2.webp
 slug: /recomputer_robotics_j401_getting_started
 last_update:
   date: 08/06/2025
@@ -24,7 +24,7 @@ The reComputer Robotics J401 is a compact, high-performance edge AI carrier boar
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Robotics-J4012-p-6505.html">
+<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Robotics-J4012-p-6505.html" target="_blank">
 <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 </a></div>
 

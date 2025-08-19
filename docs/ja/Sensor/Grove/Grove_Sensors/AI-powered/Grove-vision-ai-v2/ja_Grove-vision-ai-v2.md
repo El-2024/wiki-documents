@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/grove-vision-ai-v2/00.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
     </a>
 </div>
@@ -188,7 +188,7 @@ Grove Vision AI V2 をコンピュータに接続する前に、BOOT ボタン�
 
 ### Q2: Grove Vision AI V2 はどのカメラをサポートしていますか？OV5647-62 のみですか？
 
-[こちら](/Grove-vision-ai-v2-camera-supported)をご確認ください。現在、OV5642 シリーズのカメラ用ドライバが記述されているため、Grove Vision AI V2 は Raspberry Pi OV5647 カメラ全シリーズ（例: OV5647-62、OV5647-67、OV5647-160）をサポートしています。他の CSI カメラも理論上サポートされていますが、一部のカメラにはドライバが記述されていない、またはカラー処理ユニットが内蔵されていないため、色が緑のみになる問題が発生する可能性があります。このため、フルカラーが失われることで認識精度に影響を及ぼす可能性があります。
+[こちら](/ja/Grove-vision-ai-v2-camera-supported)をご確認ください。現在、OV5642 シリーズのカメラ用ドライバが記述されているため、Grove Vision AI V2 は Raspberry Pi OV5647 カメラ全シリーズ（例: OV5647-62、OV5647-67、OV5647-160）をサポートしています。他の CSI カメラも理論上サポートされていますが、一部のカメラにはドライバが記述されていない、またはカラー処理ユニットが内蔵されていないため、色が緑のみになる問題が発生する可能性があります。このため、フルカラーが失われることで認識精度に影響を及ぼす可能性があります。
 
 ## リソース
 

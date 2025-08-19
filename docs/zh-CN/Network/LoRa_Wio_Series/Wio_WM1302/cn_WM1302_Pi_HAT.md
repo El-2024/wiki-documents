@@ -1,18 +1,15 @@
 ---
-description: 使用 WM1302 Pi Hat 和 Raspberry Pi 快速入门。
-title: WM1302 Pi Hat for Raspberry Pi
+description: 使用 WM1302 Pi Hat 和树莓派快速入门。
+title: WM1302 树莓派扩展板
 keywords:
   - wio 
   - docusaurus
-image: https://wiki.seeedstudio.com/wio_gps_board/
+image: https://wiki.seeedstudio.com/cn/wio_gps_board/
 slug: /cn/WM1302_Pi_HAT
 last_update:
-  date: 05/15/2025
+  date: 01/30/2023
   author: hushuxu
 ---
-:::note
-本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
 <!-- ![](https://media-cdn.seeedstudio.com/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/w/m/wm1302_pihat_preview-16_1.png) -->
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/w/m/wm1302_pihat_preview-16_1.png" alt="pir" width={600} height="auto" /></p>
@@ -22,26 +19,26 @@ last_update:
 ## 产品介绍：
 
 :::note
-我们最近发布了 [WM1302 LoRaWAN 网关模块](https://wiki.seeedstudio.com/WM1302_module/) 和基于 LoRa-E5 模块的 LoRa-E5 系列。点击[这里](https://www.seeedstudio.com/lora-c-755.html?product_list_stock=3)了解 LoRa-E5 家族的新成员，包括 [Grove 模块](https://wiki.seeedstudio.com/Grove_LoRa_E5_New_Version/)、[迷你开发板](https://wiki.seeedstudio.com/LoRa_E5_mini/) 和 [开发套件](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/)。要了解更多关于使用 STM32Cube MCU Package for STM32WL 系列 (SDK) 创建 LoRaWAN 终端节点、加入并发送数据到 LoRaWAN 网络的信息，请参阅 [迷你开发板](https://wiki.seeedstudio.com/LoRa_E5_mini/) 和 [开发套件](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/) 的 Wiki 页面。
+我们最近发布了基于 LoRa-E5 模块的 [WM1302 LoRaWAN 网关模块](https://wiki.seeedstudio.com/cn/WM1302_module/) 和 LoRa-E5 系列产品。点击[这里](https://www.seeedstudio.com/lora-c-755.html?product_list_stock=3)了解 LoRa-E5 系列的新成员，包括 [Grove 模块](https://wiki.seeedstudio.com/cn/Grove_LoRa_E5_New_Version/)、[迷你开发板](https://wiki.seeedstudio.com/cn/LoRa_E5_mini/) 和 [开发套件](https://wiki.seeedstudio.com/cn/LoRa_E5_Dev_Board/)。如果想了解更多关于使用 STM32Cube MCU Package for STM32WL 系列 (SDK) 创建 LoRaWAN 终端节点、加入并发送数据到 LoRaWAN 网络的信息，请阅读 [迷你开发板](https://wiki.seeedstudio.com/cn/LoRa_E5_mini/) 和 [开发套件](https://wiki.seeedstudio.com/cn/LoRa_E5_Dev_Board/) 的 Wiki 页面。
 :::
 
-WM1302 Pi HAT 是一款专为将基于 SX1302 的 WM1302 LoRaWAN 网关模块连接到 Raspberry Pi（支持至 Raspberry Pi 4B）而设计的扩展板。它还集成了 LoRaWAN 认证芯片和 GPS 模块。
+WM1302 Pi HAT 是一款专为将基于 SX1302 的 WM1302 LoRaWAN 网关模块连接到树莓派（支持至树莓派 4B 版本）而设计的扩展板。它还集成了 LoRaWAN 认证芯片和 GPS 模块。
 
-[WM1302 模块](https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-SPI-EU868-p-4889.html) 是一款采用 mini-PCIe 形式的新一代 LoRaWAN 网关模块。基于 Semtech® SX1302 基带 LoRaWAN® 芯片，WM1302 为网关产品释放了更大的长距离无线传输潜力。与之前的 SX1301 和 SX1308 LoRa® 芯片相比，它具有更高的灵敏度、更低的功耗和更低的工作温度。
+[WM1302 模块](https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-SPI-EU868-p-4889.html) 是一款采用 mini-PCIe 形式的新一代 LoRaWAN 网关模块。基于 Semtech® SX1302 LoRaWAN® 基带芯片，WM1302 为网关产品解锁了更大的长距离无线传输潜力。与之前的 SX1301 和 SX1308 LoRa® 芯片相比，它具有更高的灵敏度、更低的功耗和更低的工作温度。
 
-WM1302 Pi HAT 支持 WM1302 模块的 mini-PCIe 形式，并可自动将标准的 52 针金手指配置为与 Raspberry Pi GPIO 接口兼容的 40 针连接器。这简化了用户与 Raspberry Pi 集成的开发过程。WM1302 Pi HAT 作为扩展板工作，帮助 Raspberry Pi 添加 SX1302 的功能，以支持 LoRaWAN 和 LoRa 协议的长距离无线传输。集成的 GPS 模块还增强了 WM1302 模块的时间和位置精度。
+WM1302 Pi HAT 支持 WM1302 模块的 mini-PCIe 形式，并可自动将标准的 52 针金手指配置到树莓派的 40 针兼容 GPIO 接口。这简化了用户与树莓派集成的开发过程。WM1302 Pi HAT 作为扩展板工作，帮助在树莓派上添加 SX1302 的功能，以支持 LoRaWAN 和 LoRa 协议的长距离无线传输。集成的 GPS 模块还增强了 WM1302 模块的时间和位置精度。
 
-WM1302 Pi HAT 与 WM1302 网关模块和 Raspberry Pi 一起，可以帮助构建支持智能农业、智慧城市和其他物联网场景的完整紧凑的 LoRaWAN 无线通信网关。
+WM1302 Pi HAT 与 WM1302 网关模块和树莓派结合使用，可以帮助构建一个非常完整且紧凑的 LoRaWAN 无线通信网关，支持智能农业、智慧城市和其他物联网场景。
 
 ## 特性
 
-- 标准 Pi Hat 形式，带 40 针母头针脚
+- 标准 Pi Hat 形状，带有 40 针母针排
 
 - 兼容 Raspberry Pi 3 Model B+/ Raspberry 4
 
-- 集成 GPS 模块
+- 内嵌 GPS 模块
 
-- 集成 LoRaWAN 认证芯片
+- 内嵌 LoRaWAN 认证芯片
 
 ## 硬件概览
 
@@ -80,10 +77,10 @@ WM1302 Pi HAT 与 WM1302 网关模块和 Raspberry Pi 一起，可以帮助构�
   </tr>
   <tr>
     <td>电源接口</td>
-    <td>40 针针脚或 USB</td>
+    <td>40 针针排或 USB</td>
   </tr>
   <tr>
-    <td>Raspberry Pi 40 针针脚</td>
+    <td>Raspberry Pi 40 针针排</td>
     <td>支持 Raspberry Pi 4 B / 支持 Raspberry Pi 3 A+/B/B+ / 支持 Raspberry Pi 2 B / 支持 Raspberry Pi A+/B+ / 支持 Raspberry Pi Zero/Zero W</td>
   </tr>
   <tr>
@@ -92,7 +89,7 @@ WM1302 Pi HAT 与 WM1302 网关模块和 Raspberry Pi 一起，可以帮助构�
   </tr>
   <tr>
     <td>GNSS</td>
-    <td>支持 GPS L1、GLONASS L1、北斗 B1</td>
+    <td>支持 GPS L1, GLONASS L1, 北斗 B1</td>
   </tr>
   <tr>
     <td>电池</td>
@@ -103,7 +100,7 @@ WM1302 Pi HAT 与 WM1302 网关模块和 Raspberry Pi 一起，可以帮助构�
 
 <table class="tg">
 <thead>
-  <tr><th class="tg-f2tp" colspan="2">配件清单：</th></tr>
+  <tr><th class="tg-f2tp" colspan="2">部件清单：</th></tr>
 </thead>
 <tbody>
   <tr>
@@ -130,7 +127,7 @@ WM1302 Pi HAT 与 WM1302 网关模块和 Raspberry Pi 一起，可以帮助构�
 
 请将任何技术问题提交到我们的 [论坛](http://forum.seeedstudio.com/)。 
 
-感谢您选择我们的产品！我们致力于为您提供不同的支持，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时获得顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

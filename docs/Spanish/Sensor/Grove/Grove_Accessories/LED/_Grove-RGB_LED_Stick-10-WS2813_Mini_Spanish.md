@@ -120,11 +120,11 @@ Si no cuentas con el Grove Shield Base, es posible conectar de igual manera el m
 #### Software
 
 ¡Atención!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
 
 - **Paso 1.** Descarga la librería [Led_Strip](https://github.com/Seeed-Studio/Seeed_Led_Strip) de GitHub.
 
-- **Paso 2.** Ve a [How to install library](http://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar una librería para Arduino.
+- **Paso 2.** Ve a [How to install library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) para instalar una librería para Arduino.
 
 - **Paso 3.** Reinicia el IDE de Arduino. Abre el ejemplo, puedes hacerlo de cualquiera las siguientes tres maneras:
   1. Abrir directamente del IDE de Arduino por medio del path: **Archivo --> Ejemplos --> Grove - LCD RGB Backlight --> HelloWorld**.
@@ -184,7 +184,7 @@ void loop() {
 ¡Atención!
 1\*\* El archivo de la librería puede ser actualizado. Este código podría no ser aplicable para actualizar los archivos de la librería, por ello, recomendamos usar los dos primeros métodos.
 
-- **Paso 4.** Carga la demostración. Si no sabes cómo hacerlo, por favor revisa [How to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 4.** Carga la demostración. Si no sabes cómo hacerlo, por favor revisa [How to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 ¡Éxito!
 Sí todo sale bien, ahora podrás ver tu barra LED brillando:

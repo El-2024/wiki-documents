@@ -46,7 +46,7 @@ Tenemos otro producto, Grove - Sensor de Ángulo Rotatorio (P), ¿Qué significa
 - Módulo Base Grove
 
 ¡Consejo!:
-Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/).
+Para más detalles sobre los módulos Grove, por favor consulte [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/).
 
 ## Especificaciones
 
@@ -127,7 +127,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 ## Primero Pasos
 
 ¡Nota!
-Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
+Si es la primera vez que utilizas Arduino, ampliamente te recomendamos ver [Primeros pasos con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de comenzar.
 
 ### Jugando con Arduino
 
@@ -159,7 +159,7 @@ If we don't have Grove Base Shield, We also can directly connect Grove-Rotary An
 
 **Software**
 
-- **Paso 1.** Por favor, copia el siguiente código en el IDE de Arduino y subelo al Arduino. Si no sabes como hacerlo, revisa [how to upload code](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 1.** Por favor, copia el siguiente código en el IDE de Arduino y subelo al Arduino. Si no sabes como hacerlo, revisa [how to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 ```cpp
 /*Macro definiciones del Sensor de Ángulo Rotatorio y pin LED*/
@@ -212,7 +212,7 @@ void loop()
 **Paso 1.** Abre [Codecraft](https://ide.chmakered.com/), agrega soporte para Arduino, y arrastra un <em>main procedure</em> al área de trabajo.
 
 ¡Nota!:
-Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](http://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
+Si es tu primera vez usando Codecraft, ve también [Guía de Codecraft para Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/).
 
 **Paso 2.** Arrastra bloques como en la siguiente imagen, o abre el archivo cdc que puede ser descargado al final de esta página.
 ![cc](https://raw.githubusercontent.com/SeeedDocument/Grove-Rotary_Angle_Sensor/master/img/cc_Rotary_Angle_Sensor.png)
@@ -244,7 +244,7 @@ Para el paso 3, puedes coenctar el sensor rotatorio a **Cualquier Puerto Analóg
 
 #### Software
 
-- **Paso 1**. Sigue [Setting Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Sigue [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 
 - **Paso 2**. Descarga el archivo fuente clonando la librería grove.py.
 

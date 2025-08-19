@@ -16,13 +16,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 こんにちは、Seeed Studioの技術トピックに関するナレッジベースをご訪問いただきありがとうございます。このリソースは、スマートハードウェアやコンピューティングデバイスの習得をサポートするために作成されています。
 
-- **[TinyML](/tinyml_topic)** は、低消費電力のマイクロコントローラーでもローカルで機械学習を実行できるようにします。
-  - [**TinyML WorkShop**](/tinyml_workshop_course_new)（無料コース）を開始し、組み込みMLの包括的な理解を提供します。必要なのは、強力なMCUボードであるXIAO ESP32S3 Sense([wikiページ](/xiao_esp32s3_getting_started))だけです。
-  - 組み込みデバイスでより高速かつ正確な推論を実現するための組み込みAIツール - [**SenseCraft Model Assistant**](/ModelAssistant_Introduce_Overview) を提供しています。
-- [**Home Assistant**](/home_assistant_topic) は、ホームオートメーションにおいて高度なプライバシー、汎用性、持続可能性を実現するために設計されています。
-  - [**SenseCAP**](/home_assistant_sensecap)、[**LoRaWAN**](/ha_xiao_esp32)、[**SenseCraft**](/sensecraft_homeassistant_userguide) など、Home Assistant向けの複数のすぐに使える統合を開発しました。
-- [**オープンソース**](/open_source_topic) の動きは、ハードウェアとソフトウェアにおける草の根イノベーションを促進します。
-- [**Edge AI**](/edge_ai_topic) はさらに進化し、データが生成される場所に近いエッジに知能を押し進め、リアルタイムの自動化された意思決定を可能にします。
+- **[TinyML](/ja/tinyml_topic)** は、低消費電力のマイクロコントローラーでもローカルで機械学習を実行できるようにします。
+  - [**TinyML WorkShop**](/ja/tinyml_workshop_course_new)（無料コース）を開始し、組み込みMLの包括的な理解を提供します。必要なのは、強力なMCUボードであるXIAO ESP32S3 Sense([wikiページ](/ja/xiao_esp32s3_getting_started))だけです。
+  - 組み込みデバイスでより高速かつ正確な推論を実現するための組み込みAIツール - [**SenseCraft Model Assistant**](/ja/ModelAssistant_Introduce_Overview) を提供しています。
+- [**Home Assistant**](/ja/home_assistant_topic) は、ホームオートメーションにおいて高度なプライバシー、汎用性、持続可能性を実現するために設計されています。
+  - [**SenseCAP**](/ja/home_assistant_sensecap)、[**LoRaWAN**](/ja/ha_xiao_esp32)、[**SenseCraft**](/ja/sensecraft_homeassistant_userguide) など、Home Assistant向けの複数のすぐに使える統合を開発しました。
+- [**オープンソース**](/ja/open_source_topic) の動きは、ハードウェアとソフトウェアにおける草の根イノベーションを促進します。
+- [**Edge AI**](/ja/edge_ai_topic) はさらに進化し、データが生成される場所に近いエッジに知能を押し進め、リアルタイムの自動化された意思決定を可能にします。
 
 これらの技術を総合的に活用することで、個人にコントロールを取り戻し、プライバシーと自律性を保ちながら、ローカルニーズに合わせた自動化およびインテリジェントシステムを実現します。
 
@@ -32,11 +32,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <div style={{display: 'flex'}}>
 
-  <a href="/tinyml_topic" rel="noopener noreferrer">
+  <a href="/ja/tinyml_topic" rel="noopener noreferrer">
     <img src="https://files.seeedstudio.com/wiki/tinyml-topic/main.jpg" style={{width: '98%', marginRight: '2%', marginBottom: '1rem', pointerEvents: 'none' }} alt="画像1" />
   </a>
 
-  <a href="/home_assistant_topic" rel="noopener noreferrer">
+  <a href="/ja/home_assistant_topic" rel="noopener noreferrer">
     <img src="https://files.seeedstudio.com/wiki/HomeAsssitant_collection/HAbanner1.jpg" style={{width: '98%', marginRight: '2%', marginBottom: '1rem', pointerEvents: 'none' }} alt="画像1" />
   </a>
 </div>
@@ -44,11 +44,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <div style={{display: 'flex'}}>
 
-  <a href="/open_source_topic" rel="noopener noreferrer">
+  <a href="/ja/open_source_topic" rel="noopener noreferrer">
     <img src="https://files.seeedstudio.com/wiki/open_source_topic/open_source_topic.png" style={{width: '98%', marginRight: '2%', marginBottom: '1rem', pointerEvents: 'none' }} alt="画像1" />
   </a>
 
-  <a href="/edge_ai_topic" rel="noopener noreferrer">
+  <a href="/ja/edge_ai_topic" rel="noopener noreferrer">
     <img src="https://files.seeedstudio.com/wiki/Edge_AI_Topic/Edge_AI_Topic.png" style={{width: '98%', marginRight: '2%', marginBottom: '1rem', pointerEvents: 'none' }} alt="画像1" />
   </a>
 </div>

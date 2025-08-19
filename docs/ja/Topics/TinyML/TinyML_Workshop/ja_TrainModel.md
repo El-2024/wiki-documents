@@ -23,7 +23,7 @@ Seeed Studio [SenseCraft AIプラットフォーム](https://sensecraft.seeed.cc
 ユーザーが簡単に独自のモデルをトレーニングしてエッジデバイスにデプロイできるようにし、シームレスで使いやすい体験を提供します。**数回クリックするだけで**、独自のモデルをトレーニングしてエッジデバイスにデプロイすることができます。
 
 :::info
-このプラットフォームの核となる部分はオープンソースプロジェクトであり、[GitHub](https://github.com/Seeed-Studio/ModelAssistant)で共有しています。また、[開発方法](/ModelAssistant_Introduce_Overview)も提供しています。
+このプラットフォームの核となる部分はオープンソースプロジェクトであり、[GitHub](https://github.com/Seeed-Studio/ModelAssistant)で共有しています。また、[開発方法](/ja/ModelAssistant_Introduce_Overview)も提供しています。
 :::
 
 ## モデルのトレーニングを開始する
@@ -45,7 +45,7 @@ Seeed Studio [SenseCraft AIプラットフォーム](https://sensecraft.seeed.cc
 以下のボタンをクリックしてSenseCraft AIプラットフォームのホームページにアクセスします。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-	<a class="get_one_now_item" href="https://sensecraft.seeed.cc/ai/#/home"><strong><span><font color={'FFFFFF'} size={"2"}>SenseCraft AIプラットフォーム</font></span></strong></a>
+	<a class="get_one_now_item" href="https://sensecraft.seeed.cc/ai/#/home" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"2"}>SenseCraft AIプラットフォーム</font></span></strong></a>
 </div><br />
 
 #### ステップ4. モデルのトレーニングを開始する

@@ -1,35 +1,36 @@
 ---
 title: Grove - 干簧继电器
-description: Grove - 干簧继电器
+nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Dry-Reed_Relay/
+image: https://wiki.seeedstudio.com/cn/Grove-Dry-Reed_Relay/
 slug: /cn/Grove-Dry-Reed_Relay
 last_update:
-  date: 03/20/2024
-  author: WuFeifei
+  date: 01/09/2022
+  author: gunengyu
 ---
 
 ![](https://files.seeedstudio.com/wiki/Grove-Dry-Reed_Relay/img/DryReed_Relay_01.jpg)
 
-**Grove 干簧管继电器**是一款继电器模块，它通过线圈中的电流磁化振动簧片来工作。与电磁继电器相比，干簧管继电器的触点完全密封是其最大的特点。此外，它还具有结构简单、紧凑、速度快、寿命长等特点，因此被广泛应用于微电子检测、自动控制等多个领域。
+**Grove-干簧继电器**是一种通过线圈中的电流磁化振动簧片来工作的继电器模块。与电磁继电器相比，干簧继电器最大的特点是触点完全密封。此外，它还具有结构简单、体积小、速度快、寿命长等特点，使其广泛应用于微电子检测、自动控制等多个领域。
 
 [![](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://www.seeedstudio.com/Grove-Dry-Reed-Relay-p-1412.html)
 
-## 特性
+特点
+-------
 
 - Grove 接口
-- 高速度
+- 高速
 - 稳定性好
 - 触点寿命长
 - 触点完全密封
 
-:::提示
-    更多关于Grove模块的信息，请参考 [Grove 系统](https://wiki.seeedstudio.com/Grove_System/)
+:::tip
+    更多关于 Grove 模块的详细信息，请参考 [Grove 系统](https://wiki.seeedstudio.com/cn/Grove_System/)
 :::
 
-规格
+规格参数
 -------------
 
 <table border="1" cellspacing="0" width="80%">
@@ -97,7 +98,7 @@ VDC
 </tr>
 <tr align="center">
 <th scope="row">
-切换电流（最大）
+最大切换电流
 </th>
 <td colspan="3">
 0.5
@@ -108,7 +109,7 @@ A
 </tr>
 <tr align="center">
 <th scope="row">
-切换电压（最大）
+最大切换电压
 </th>
 <td colspan="3">
 120 VAC/60VDC
@@ -119,7 +120,7 @@ A
 </tr>
 <tr align="center">
 <th scope="row">
-负载电流（最大）
+最大承载电流
 </th>
 <td colspan="3">
 1.0
@@ -130,7 +131,7 @@ A
 </tr>
 <tr align="center">
 <th scope="row">
-操作时间（最大）
+最大操作时间
 </th>
 <td colspan="3">
 1.0
@@ -141,7 +142,7 @@ mS
 </tr>
 <tr align="center">
 <th scope="row">
-释放时间（最大）
+最大释放时间
 </th>
 <td colspan="3">
 0.5
@@ -155,7 +156,7 @@ mS
 机械寿命（无负载）
 </th>
 <td colspan="3">
-1×108 operations
+1×10⁸ 次操作
 </td>
 <td>
 -
@@ -180,82 +181,81 @@ mS
 </tr>
 </table>
 
-
 支持的平台
 -------------------
 
-| Arduino                                                      | 树莓派                                                       |                                                              |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Arduino                                                                                             | Raspberry Pi                                                                                             |                                                                                                 |                                                                                                          |                                                                                                    |
+|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo.jpg) |
 
-:::警告
-    上述提及的支持平台是模块软件或理论兼容性的一个指示。在大多数情况下，我们只提供适用于Arduino平台的软件库或代码示例。由于无法为所有可能的MCU平台提供软件库/演示代码，因此用户必须编写自己的软件库。
+:::caution
+    上述提到的支持平台仅表示模块的软件或理论兼容性。在大多数情况下，我们仅为 Arduino 平台提供软件库或代码示例。不可能为所有可能的 MCU 平台提供软件库或演示代码，因此用户需要自行编写软件库。
 :::
 
-## 使用说明
+使用方法
+-----
 
-### 配合Arduino使用
+### 使用 Arduino
 
-干簧管继电器可以支持高达60VDC 1A的负载。你可以使用它来控制电阻负载<font color="red"> **但不适用于电感负载（如电机）**</font>.
+干簧继电器最多支持 60VDC 1A 负载。您可以使用它来控制电阻负载，<font color="red">**但不适用于感性负载（如电机）**</font>。
 
-干簧管继电器的使用方式与常规继电器非常相似。
+干簧继电器的使用方法与普通继电器非常相似。
 
-- 将电灯连接到Grove - 干簧管继电器，并为电灯供电。
-- 将Grove - 干簧管继电器连接到Grove - 基础屏蔽板的D2端口，并将其插入Arduino/Seeeduino。
+- 将电灯连接到 Grove - 干簧继电器，并为电灯供电。
+- 将 Grove - 干簧继电器连接到 Grove - 基础扩展板的 D2 端口，并插入 Arduino/Seeeduino。
 
 - 上传以下代码。
-
 
 ```
     int Relay = 2;
 
-    // the setup routine runs once when you press reset:
+    // setup 函数在按下复位时运行一次：
     void setup() {                
-      // initialize the digital pin as an output.
+      // 将数字引脚初始化为输出。
       pinMode(Relay, OUTPUT);     
     }
 
-    // the loop routine runs over and over again forever:
+    // loop 函数会不断重复运行：
     void loop() {
-      digitalWrite(Relay, HIGH);   //the Relay close(HIGH is the voltage level)
-      delay(5000);               // wait for five seconds
-      digitalWrite(Relay, LOW);    //the Relay normally open by making the voltage LOW
-      delay(5000);               // wait for five seconds
+      digitalWrite(Relay, HIGH);   // 继电器闭合（HIGH 是电压电平）
+      delay(5000);               // 等待五秒
+      digitalWrite(Relay, LOW);    // 继电器打开，通过使电压为 LOW
+      delay(5000);               // 等待五秒
     }
 ```
 
-- 电灯会亮起几秒钟，然后熄灭几秒钟，如此反复。对于特殊应用，您可能需要自己编写代码。
+- 电灯会亮起几秒钟，然后熄灭几秒钟，重复循环。对于特殊应用，您可能需要自行编写代码。
 
-### 配合Raspberry Pi使用
+### 使用 Raspberry Pi
 
-:::注意
-     如果你正在使用**带有Raspberry Pi OS >= Bullseye的Raspberry Pi**，你必须**仅使用Python3**来执行此命令行。
+:::note
+     如果您使用的是 **Raspberry Pi 且 Raspberrypi OS >= Bullseye**，您必须仅使用 Python3 执行以下命令。
 :::
-1.你应该已经拥有了一个树莓派（Raspberry Pi）以及一个GrovePi或GrovePi+。
+1. 您需要拥有一个 Raspberry Pi 和一个 GrovePi 或 GrovePi+。
 
-2.你应该已经完成了开发环境的配置，否则请按照[这里](https://yiyan.baidu.com/GrovePi_Plus)的说明进行操作。
+2. 您需要完成开发环境的配置，否则请参考 [这里](/cn/GrovePi_Plus)。
 
-3.连接
+3. 连接
 
-- 使用Grove线缆将传感器连接到GrovePi的D4插槽。
+- 使用 Grove 电缆将传感器插入 GrovePi 的 D4 插座。
 
-4.导航到示例目录：
+4. 导航到示例代码目录：
 
 ```
     cd yourpath/GrovePi/Software/Python/
 ```
 
-- 要查看代码
+- 查看代码
 
 ```
-    nano grove_relay.py   # "Ctrl+x" to exit #
+    nano grove_relay.py   # 按 "Ctrl+x" 退出 #
 ```
 
 ```
     import time
     import grovepi
 
-    # Connect the Grove Relay to digital port D4
+    # 将 Grove 继电器连接到数字端口 D4
     # SIG,NC,VCC,GND
     relay = 4
 
@@ -263,12 +263,12 @@ mS
 
     while True:
         try:
-            # switch on for 5 seconds
+            # 打开继电器 5 秒
             grovepi.digitalWrite(relay,1)
             print "on"
             time.sleep(5)
 
-            # switch off for 5 seconds
+            # 关闭继电器 5 秒
             grovepi.digitalWrite(relay,0)
             print "off"
             time.sleep(5)
@@ -280,7 +280,7 @@ mS
             print "Error"
 ```
 
-5.运行示例程序。
+5.运行演示程序。
 
 ```
     sudo python3 grove_relay.py
@@ -294,14 +294,14 @@ mS
 资源
 --------
 
-- [Grove - 干簧管继电器 Eagle 文件](https://files.seeedstudio.com/wiki/Grove-Dry-Reed_Relay/res/Grove-Dry-Reed_Relay_Eagle_File.zip)
-- [干簧管继电器数据手册](https://files.seeedstudio.com/wiki/Grove-Dry-Reed_Relay/res/Dry-Reed_Relay_Datasheet.pdf)
+- [Grove - 干簧继电器 Eagle 文件](https://files.seeedstudio.com/wiki/Grove-Dry-Reed_Relay/res/Grove-Dry-Reed_Relay_Eagle_File.zip)
+- [干簧继电器数据手册](https://files.seeedstudio.com/wiki/Grove-Dry-Reed_Relay/res/Dry-Reed_Relay_Datasheet.pdf)
 
-<!-- This Markdown file was created from https://www.seeedstudio.com/wiki/Grove_-_Dry-Reed_Relay -->
+<!-- 此 Markdown 文件来源于 https://www.seeedstudio.com/wiki/Grove_-_Dry-Reed_Relay -->
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在这里为您提供全方位的支持，以确保您在使用我们的产品时能够获得最顺畅的体验。我们提供多种沟通渠道，以满足您不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时拥有顺畅的体验。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

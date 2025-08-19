@@ -32,7 +32,7 @@ La "P" en este producto significa "montaje en panel".
 - Elemento básico Grove
 
 Consejo:
-Para más detalles sobre módulos Grove, visita [Sistema Grove](http://wiki.seeedstudio.com/Grove_System/)
+Para más detalles sobre módulos Grove, visita [Sistema Grove](https://wiki.seeedstudio.com/Grove_System/)
 
 ## Especificaciones
 
@@ -56,7 +56,7 @@ Las plataformas mencionadas arriba como compatibles, cuentan con software para e
 ## Primeros pasos
 
 Nota:
-Si es la primera vez que usas Arduino, te recomendamos visitar [Comenzando con Arduino](http://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de empezar.
+Si es la primera vez que usas Arduino, te recomendamos visitar [Comenzando con Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) antes de empezar.
 
 ### Juega con Arduino
 
@@ -88,7 +88,7 @@ Si no tienes el Shield Base - Grove, también puedes conectar el Switch (P) - Gr
 
 **Software**
 
-- **Paso 1.** Copia el siguiente código en el IDE de Arduino y cárgalo. Si no sabes cómo hacerlo, revisa [cómo cargar un código](http://wiki.seeedstudio.com/Upload_Code/).
+- **Paso 1.** Copia el siguiente código en el IDE de Arduino y cárgalo. Si no sabes cómo hacerlo, revisa [cómo cargar un código](https://wiki.seeedstudio.com/Upload_Code/).
 
 ```
 const int switchPin = 2;     // número del pin del switch
@@ -152,7 +152,7 @@ En el paso 3, puedes conectar el switch a **cualquier puerto GPIO** pero debes a
 
 #### Software
 
-- **Paso 1**. Sigue [Configuración de Software](http://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
+- **Paso 1**. Sigue [Configuración de Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) para configurar el entorno de desarrollo.
 - **Paso 2**. Descarga el archivo fuente clonando la librería grove.py
 
 ```

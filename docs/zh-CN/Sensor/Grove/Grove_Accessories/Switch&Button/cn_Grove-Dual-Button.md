@@ -6,71 +6,61 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Grove-Dual-Button
 last_update:
-  date: 03/23/2024
-  author: WuFeifei
+  date: 2/22/2023
+  author: jianjing Huang
 ---
-<!-- ---
-name: Grove Dual Button
-category: Grove Inputs
-bzurl: 
-oldwikiname: 
-prodimagename:
-surveyurl: 
-sku: 111020103
-tags:
---- -->
 
 ![](https://files.seeedstudio.com/products/111020103/img/111020103wiki.png)
 
-Grove - 双按钮包含两个按钮，使用一个Grove模块就能控制两个信号通道。提供4种不同颜色的键帽，您可以根据需要自由调整颜色组合。
+Grove - 双按钮包含两个按钮，允许您通过一个 Grove 模块控制两个信号通道。提供了四种不同颜色的按键帽，您可以根据需要自由调整颜色组合。
 
-按钮是通过GPIO数字引脚驱动的。当按钮被按下时，引脚可以从按钮接收到一个低电平信号；另一方面，当按钮处于未按下状态时，引脚将始终保持高电平信号，直到它被按下。
+按钮通过 GPIO 数字引脚简单驱动。当按钮被按下时，引脚会从按钮接收到低电平信号；另一方面，当按钮处于松开状态时，引脚将始终保持高电平信号，直到按钮被按下。
 
 <p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/Grove-Dual-Button-p-4529.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/get_one_now_small.png" width="200" height="38"  border={0} /></a></p>
 
-## 特点
+## 特性
 
-- 紧凑的模块化设计，一个Grove模块中包含两个按钮，减少了接线数量
-- 提供不同颜色的键帽，可根据需要自由调整颜色组合
+- 紧凑的模块化设计，减少了线缆连接，将两个按钮集成到一个 Grove 模块中
+- 提供不同颜色的按键帽，可根据需要自由调整颜色组合
 
 ## 规格
 
-| 项目     | 值          |
+|项目|值|
 |---|---|
-| 电压范围 | 3V–5V       |
-| 接口     | Grove       |
-| 尺寸     | 20mm * 40mm |
-| 电池     | 不包含      |
+|电压范围|3V–5V|
+|接口|Grove|
+|尺寸|20mm * 40mm|
+|电池|不包含|
 
 ## 支持的平台
 
-| Arduino                                                      | 树莓派                                                       |                                                              |                                                              |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Arduino                                                                                             | Raspberry Pi                                                                                             |                                                                                                 |                                                                                                          |                                                                                                    |
+|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo_n.jpg) |
 
 ## 入门指南
 
-### Arduino入门
+### 使用 Arduino 入门
 
 #### 所需材料
 
-|Seeeduino Nano|Arduino Nano的Grove Shield|Grove 无源蜂鸣器|Grove LED 套件|Grove 双按钮|
+|Seeeduino Nano|Grove Arduino Nano 扩展板|Grove 无源蜂鸣器|Grove LED 套件|Grove 双按钮|
 |--------|-------|----|-------|----------------|
 |![](https://files.seeedstudio.com/products/102010268/img/seeeduino-Nano-thumbnail.png)|![](https://files.seeedstudio.com/products/103100124/img/Grove-Shoeld-for-Arduino-Nano-thumbnail.png)|![](https://files.seeedstudio.com/products/107020109/img/107020109wiki210x157.jpg)|![](https://files.seeedstudio.com/products/104020228/img/Grove-LED-Pack-thumbnail.jpg)|![](https://files.seeedstudio.com/products/111020103/img/111020103thumbnail.jpg)|
-|[立即获取](https://www.seeedstudio.com/Seeeduino-Nano-p-4111.html)|[立即获取](https://www.seeedstudio.com/Grove-Shield-for-Arduino-Nano-p-4112.html)|[立即获取](https://www.seeedstudio.com/Grove-Passive-Buzzer-p-4525.html)|[立即获取](https://www.seeedstudio.com/Grove-LED-Pack-p-4364.html)|[立即获取](https://www.seeedstudio.com/Grove-Dual-Button-p-4529.html)|
+|[立即购买](https://www.seeedstudio.com/Seeeduino-Nano-p-4111.html)|[立即购买](https://www.seeedstudio.com/Grove-Shield-for-Arduino-Nano-p-4112.html)|[立即购买](https://www.seeedstudio.com/Grove-Passive-Buzzer-p-4525.html)|[立即购买](https://www.seeedstudio.com/Grove-LED-Pack-p-4364.html)|[立即购买](https://www.seeedstudio.com/Grove-Dual-Button-p-4529.html)|
 
 #### 硬件连接
 
 ![](https://files.seeedstudio.com/products/111020103/img/wiki_nano_button.jpg)
 
-Grove双按钮与Grove Shield上的“D2”接口连接，Grove无源蜂鸣器与“D4”接口连接，Grove LED套件与“D6”接口连接。
+Grove 双按钮连接到 Grove 扩展板的 "D2" 接口，Grove 无源蜂鸣器连接到 "D4" 接口，Grove LED 套件连接到 "D6" 接口。
 
 #### 软件
 
-- **步骤1** 将以下代码复制到Arduino IDE并上传。如果您不知道如何更新代码，请查看[如何上传代码](https://wiki.seeedstudio.com/Upload_Code/)。
+- **步骤1** 将以下代码复制到 Arduino IDE 并上传。如果您不知道如何上传代码，请查看 [如何上传代码](https://wiki.seeedstudio.com/cn/Upload_Code/)。
 
 ```cpp
- //set the corresponding notes with frequency
+ //设置对应频率的音符
  #define NOTE_D0 0
  #define NOTE_D1 294
  #define NOTE_D2 330
@@ -102,7 +92,7 @@ Grove双按钮与Grove Shield上的“D2”接口连接，Grove无源蜂鸣器�
  #define EIGHTH 0.25
  #define SIXTEENTH 0.625
  
- //the note part of the whole song
+ //整首歌的音符部分
  int tune[] =
  {
    NOTE_DH1, NOTE_D6, NOTE_D5, NOTE_D6, NOTE_D0,
@@ -130,7 +120,7 @@ Grove双按钮与Grove Shield上的“D2”接口连接，Grove无源蜂鸣器�
    NOTE_D6,
  };
  
- //the duration time of each note
+ //每个音符的持续时间
  float duration[] =
  {
    1, 1, 0.5, 0.5, 1,
@@ -158,20 +148,20 @@ Grove双按钮与Grove Shield上的“D2”接口连接，Grove无源蜂鸣器�
    1 + 1 + 1 + 1
  };
  
- int length;//define the number of notes
- int tonePin = 4; //set the buzzer Pin
- int button1 = 2; //set the button1 pin
- int button2 = 3; //set the button2 pin
- int LED = 6;  //set the LED pin
- bool state1 = 1; //set button1 state
- bool state2 = 1; //set button2 state
+ int length;//定义音符数量
+ int tonePin = 4; //设置蜂鸣器引脚
+ int button1 = 2; //设置按钮1引脚
+ int button2 = 3; //设置按钮2引脚
+ int LED = 6;  //设置LED引脚
+ bool state1 = 1; //设置按钮1状态
+ bool state2 = 1; //设置按钮2状态
  void setup()
  {
-   pinMode(tonePin, OUTPUT); // set the buzzer as output mode
+   pinMode(tonePin, OUTPUT); // 设置蜂鸣器为输出模式
    pinMode(button1,INPUT);
    pinMode(button2,INPUT);
    pinMode(LED,OUTPUT);
-   length = sizeof(tune) / sizeof(tune[0]); //count the number of note
+   length = sizeof(tune) / sizeof(tune[0]); //计算音符数量
  }
  
  void loop()
@@ -188,11 +178,11 @@ Grove双按钮与Grove Shield上的“D2”接口连接，Grove无源蜂鸣器�
     } 
   if (state2 == 0)
   {
-       for (int x = 0; x < length; x++) //"sing" the note one by one
+       for (int x = 0; x < length; x++) //"逐个播放"音符
      {
-     tone(tonePin, tune[x]); //output the "x" note
-     delay(400 * duration[x]); //rythem of the music,it can be tuned fast and slow by change the number"400"
-     noTone(tonePin);//stop the current note and go to the next note
+     tone(tonePin, tune[x]); //输出当前音符
+     delay(400 * duration[x]); //音乐节奏，可以通过改变数字"400"调整快慢
+     noTone(tonePin);//停止当前音符并播放下一个音符
     } 
   } 
   else
@@ -203,39 +193,39 @@ Grove双按钮与Grove Shield上的“D2”接口连接，Grove无源蜂鸣器�
  }
 ```
 
-- **步骤2** 按下每个按钮来控制LED和蜂鸣器。
+- **步骤2** 按下每个按钮以控制 LED 和蜂鸣器。
 
-### Raspberry Pi入门
+### 使用 Raspberry Pi 入门
 
 #### 所需材料
 
-|Raspberry Pi 4B(4GB)|树莓派用Grove Base Hat|Grove 无源蜂鸣器|Grove LED 套件|Grove 双按钮|
+|Raspberry Pi 4B(4GB)|Grove 树莓派底座扩展板|Grove 无源蜂鸣器|Grove LED 套件|Grove 双按钮|
 |--------|-----|------|------|-----|
 |![](https://files.seeedstudio.com/products/102110301/img/raspberry-pi-thumbnail.jpg)|![](https://files.seeedstudio.com/products/103030275/img/thumbnail.jpg)|![](https://files.seeedstudio.com/products/107020109/img/107020109wiki210x157.jpg)|![](https://files.seeedstudio.com/products/104020228/img/Grove-LED-Pack-thumbnail.jpg))|![](https://files.seeedstudio.com/products/111020103/img/111020103thumbnail.jpg)|
-|[立即获取](https://www.seeedstudio.com/Raspberry-Pi-4-Computer-Model-B-4GB-p-4077.html)|[立即获取](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi.html)|[立即获取](https://www.seeedstudio.com/Grove-Passive-Buzzer-p-4525.html)|[立即获取](https://www.seeedstudio.com/Grove-LED-Pack-p-4364.html)|[立即获取](https://www.seeedstudio.com/Grove-Dual-Button-p-4529.html)|
+|[立即购买](https://www.seeedstudio.com/Raspberry-Pi-4-Computer-Model-B-4GB-p-4077.html)|[立即购买](https://www.seeedstudio.com/Grove-Base-Hat-for-Raspberry-Pi.html)|[立即购买](https://www.seeedstudio.com/Grove-Passive-Buzzer-p-4525.html)|[立即购买](https://www.seeedstudio.com/Grove-LED-Pack-p-4364.html)|[立即购买](https://www.seeedstudio.com/Grove-Dual-Button-p-4529.html)|
 
 #### 硬件连接
 
 ![](https://files.seeedstudio.com/products/111020103/img/wiki_raspberry_button.jpg)
 
-将无源蜂鸣器连接到PWM引脚“12”，按钮连接到“D5”，LED连接到“D16”。
+将无源蜂鸣器连接到 PWM 引脚 "12"，按钮连接到 "D5"，LED 连接到 "D16"。
 
 #### 代码
 
-- **步骤1** 在您的Raspberry上安装Grove.py。
+- **步骤1** 在你的 Raspberry Pi 上安装 Grove.py。
 
-一键安装，快速开始，无论您怎么称呼，只需使用下面的单条命令，我们就可以安装/更新所有依赖项和最新的grove.py。
+只需一条命令即可完成一键安装或更新所有依赖项和最新的 grove.py。
 
-:::注意
-如果您使用的是**带有Raspberrypi OS >= Bullseye的Raspberry Pi**，则**无法使用此命令行**。
+:::caution
+如果你使用的是 **Raspberry Pi 且 Raspberrypi OS >= Bullseye**，你 **不能使用此命令行**。
 :::
 
 ```
 curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo bash -s -
 ```
 
-:::提示成功
-如果一切顺利，您将会看到以下通知。
+:::tip
+如果一切顺利，你将看到以下提示：
 
 ```
     Successfully installed grove.py-0.5
@@ -246,10 +236,10 @@ curl -sL https://github.com/Seeed-Studio/grove.py/raw/master/install.sh | sudo b
 
 :::
 <br />
-除了使用一键安装，您还可以逐步安装所有依赖项和最新版的grove.py。
+除了上述一键安装方法，你还可以逐步安装所有依赖项和最新的 grove.py。
 
-:::注意
-如果您使用的是**带有Raspberrypi OS >= Bullseye的Raspberry Pi**，则**只能使用Python3**来执行此命令行。
+:::caution
+如果你使用的是 **Raspberry Pi 且 Raspberrypi OS >= Bullseye**，你必须 **仅使用 Python3** 执行以下命令。
 :::
 
 ```python
@@ -261,14 +251,14 @@ sudo pip install .
 sudo pip3 install .
 ```
 
-- **步骤2** 为代码创建一个Python文件。
+- **步骤2** 为代码创建一个 Python 文件。
 
 ```
 cd grove.py
 nano button.py
 ```
 
-- **步骤3** 将以下代码复制到Python文件中。
+- **步骤3** 将以下代码复制到 Python 文件中
 
 ```python
 #!/usr/bin/env python
@@ -299,7 +289,7 @@ sudo chmod +x button.py
 sudo ./button.py
 ```
 
-如果一切顺利，您就可以通过双按钮来控制LED和蜂鸣器了。
+如果一切顺利，你可以通过双按钮控制 LED 和蜂鸣器。
 
 ## 在线原理图查看器
 
@@ -312,7 +302,8 @@ sudo ./button.py
 
 ## 技术支持与产品讨论
 
-<br /> 感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们的产品时能够拥有尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
+<br />
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时拥有顺畅的体验。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
