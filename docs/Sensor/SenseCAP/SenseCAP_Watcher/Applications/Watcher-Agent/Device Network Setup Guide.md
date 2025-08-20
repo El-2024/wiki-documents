@@ -11,8 +11,8 @@ keywords:
 image: http://files.seeedstudio.com/wiki/Watcher_Agent/Watcher_Agent.webp
 slug: /device_network_setup
 last_update:
-  date: 04/25/2024
-  author: Zeke
+  date: 08/20/2025
+  author: Twelve
 ---
 
 # Device Network Setup Guide
