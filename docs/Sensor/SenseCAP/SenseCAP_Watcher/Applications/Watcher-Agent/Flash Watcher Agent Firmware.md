@@ -11,8 +11,8 @@ keywords:
 image: http://files.seeedstudio.com/wiki/Watcher_Agent/Watcher_Agent.webp
 slug: /flash_watcher_agent_firmware
 last_update:
-  date: 2024/04/25
-  author: Zeke
+  date: 2025/08/20
+  author: Twelve
 ---
 
 # Flash Watcher Agent Firmware
