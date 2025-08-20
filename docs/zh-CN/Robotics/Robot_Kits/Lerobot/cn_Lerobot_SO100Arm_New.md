@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp
 slug: /cn/lerobot_so100m_new
 last_update:
-  date: 7/29/2025
+  date: 8/20/2025
   author: LiShanghang
 ---
 
