@@ -11,7 +11,7 @@ keywords:
 image: http://files.seeedstudio.com/wiki/Watcher_Agent/Watcher_Agent.webp
 slug: /flash_watcher_agent_firmware
 last_update:
-  date: 2025/04/25
+  date: 2024/04/25
   author: Zeke
 ---
 
@@ -23,6 +23,10 @@ Special thanks to [XiaoZhi AI Chatbot](https://github.com/78/xiaozhi-esp32) for 
 
 This guide provides instructions for flashing the Watcher Agent firmware to your SenseCAP Watcher device using Espressif's Flash Download Tool.
 
+:::danger Note
+The firmware provided in this guide may require authentication information. If needed, please contact [sensecap@seeed.cc](mailto:sensecap@seeed.cc).
+:::
+
 ## Prerequisites
 
 ### Required Hardware
@@ -32,7 +36,7 @@ This guide provides instructions for flashing the Watcher Agent firmware to your
 
 ### Required Software
 - [Flash Download Tool](https://www.espressif.com/sites/default/files/tools/flash_download_tool_3.9.6.zip) (3.9.6 or later)
-- [Watcher Agent firmware binary file]
+- [Watcher Agent firmware binary file](http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/watcher_agent_firmware.bin)
 
 ## Flashing Process
 
