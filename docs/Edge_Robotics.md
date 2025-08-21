@@ -135,6 +135,14 @@ last_update:
     <a href="/orbbec_depth_camera_on_ros/" className="nav-item">
       <span className="text">Orbbec Depth Camera</span>
     </a>
+    <a href="/orbbec_gemini_335lg" className="nav-item">
+      <span className="text">Orbbec Gemini 335Lg Stereo Camera</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/sensing_gmsl_cameras" className="nav-item">
+      <span className="text">SENSING GMSL2 Cameras</span>
+      <span className="tag recommended">New</span>
+    </a>
     <a href="/csi_camera_on_ros/" className="nav-item">
       <span className="text">CSI Camera</span>
     </a>
