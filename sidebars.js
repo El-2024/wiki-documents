@@ -4104,6 +4104,7 @@ const sidebars = {
                 items: [
                   'Robotics/Robot_Sensor/Camera/Orbbec_Depth_Camera',
                   'Robotics/Robot_Sensor/Camera/Orbbec_Gemini_335Lg',
+                  'Robotics/Robot_Sensor/Camera/Sensing_GMSL_Camera',
                   'Robotics/Robot_Sensor/Camera/CSI_Camera'
                 ]},
             {
