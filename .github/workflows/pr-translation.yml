@@ -4,6 +4,9 @@ on:
   pull_request:
     types: [opened, synchronize, labeled, closed]
     paths: ['docs/**']
+  pull_request_target:
+    types: [opened, synchronize, labeled]
+    paths: ['docs/**']
   issue_comment:
     types: [created]
 
@@ -166,6 +169,69 @@ jobs:
               repo,
               issue_number: pull_number,
               body: comment
+            });
+
+  add-translation-comment-target:
+    if: github.event_name == 'pull_request_target'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Comment with stats (safe for forks)
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const pull_number = context.payload.pull_request.number;
+
+            // 用 API 获取变更文件，不 checkout PR 代码（安全）
+            const files = await github.paginate(
+              github.rest.pulls.listFiles,
+              { owner, repo, pull_number, per_page: 100 }
+            );
+
+            // 只统计 docs/** 下的 md/mdx/_category_.yml 且排除 zh-CN/ja/Spanish
+            const wanted = files.filter(f => {
+              const p = f.filename;
+              const inDocs = p.startsWith('docs/');
+              const langExcluded = /(^|\/)(zh-CN|ja|Spanish)(\/|$)/.test(p);
+              const okExt = /\.(md|mdx)$/.test(p) || /_category_\.yml$/.test(p);
+              return inDocs && !langExcluded && okExt;
+            });
+
+            let added=0, modified=0, deleted=0, renamed=0, renamedModified=0;
+            for (const f of wanted) {
+              // f.status: 'added' | 'modified' | 'removed' | 'renamed'
+              if (f.status === 'added') added++;
+              else if (f.status === 'modified') modified++;
+              else if (f.status === 'removed') deleted++;
+              else if (f.status === 'renamed') {
+                // API 不直接给相似度，统一算到 renamed
+                renamed++;
+              }
+            }
+            const total = added + modified + deleted + renamed + renamedModified;
+            const summary = `新增:${added} 修改:${modified} 删除:${deleted} 移动:${renamed} 移动+修改:${renamedModified}`;
+
+            let body = `## 🌍 检测到文档变更 - 可进行多语言翻译\n\n`;
+            body += `**统计信息:** 共 ${total} 个文件需要处理\n`;
+            body += `**操作类型:** ${summary}\n\n`;
+            body += `### 🚀 开始翻译\n在此评论回复以下命令之一：\n\n`;
+            body += `- \`/translate all\` - 翻译所有变更到所有语言 (中文、日文、西班牙语)\n`;
+            body += `- \`/translate zh\` - 仅翻译到中文\n`;
+            body += `- \`/translate ja\` - 仅翻译到日文\n`;
+            body += `- \`/translate es\` - 仅翻译到西班牙语\n`;
+            body += `- \`/translate zh ja\` - 翻译到中文和日文\n`;
+            body += `- \`/translate zh es\` - 翻译到中文和西班牙语\n\n`;
+            body += `### 🔄 撤回翻译\n如果对翻译结果不满意，可以使用：\n- \`/rollback translation\` - 撤回最近一次的翻译提交\n\n`;
+            body += `### ⚠️ 注意事项\n- 只有仓库管理员和维护者可以触发翻译和撤回\n- 撤回操作会恢复到翻译前的状态\n- 每次操作后会自动触发构建检查\n\n`;
+            body += `> 💡 **提示:** 翻译大约需要 ${Math.ceil(total * 1)} 分钟完成`;
+
+            await github.rest.issues.createComment({
+              owner, repo, issue_number: pull_number, body
             });
 
   # 手动触发翻译
@@ -754,7 +820,7 @@ jobs:
             const pr_number = pr.number;
             const author = pr.user.login;
 
-            const body = `❤️ Great PR @${author} ❤️;
+            const body = `❤️ Great PR @${author} ❤️`;
 
             await github.rest.issues.createComment({
               owner,
