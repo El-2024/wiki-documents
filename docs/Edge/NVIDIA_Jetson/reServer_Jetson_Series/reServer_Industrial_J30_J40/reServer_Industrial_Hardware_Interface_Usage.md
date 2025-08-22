@@ -21,7 +21,6 @@ import TabItem from '@theme/TabItem';
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reServer-Industrial/3.jpg"/></div>
 
 
-To learn more about how to use all the hardware and interfaces on the reServer Industrial board, we recommend you to follow the below section of the wiki.
 
 reServer Industrial features 2x 2.5" SATA HDD/ SSD drive bays to easily store hundreds of local video footages in a video analytics application. Also it enables multiple connectivity options including 5 RJ-45 Ethernet ports, 1 RS232/422/485, 4x Isolated DI/DO, 1x CAN, 4× USB3.1. Fanless design with versatile mounting options allows deployment from -20 to 60 ℃, which is ideal for more harsh environments and heavier loads.
 
@@ -37,7 +36,7 @@ reServer industrial has 5 RJ45 GbE ports, 4 of which are PoE PSE ports for provi
 - **Certifications:** FCC, CE, UKCA, ROHS, KC
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/reServer-industrial-J4012-p-5747.html" target="_blank">
+<a class="get_one_now_item" href="https://www.seeedstudio.com/reServer-industrial-J4012-p-5747.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 </a></div>
 
