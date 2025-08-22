@@ -10,14 +10,18 @@ on:
   issue_comment:
     types: [created]
 
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
 jobs:
-  # 检测 PR 中的文档变更
+  # -------- 评论提示：非 fork 统计 + 评论 --------
   detect-docs-changes:
     if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     outputs:
       has-docs-changes: ${{ steps.changes.outputs.any_changed }}
-      changed-files: ${{ steps.analyze.outputs.changed_files }}
       total-files: ${{ steps.analyze.outputs.total_files }}
       operation-summary: ${{ steps.analyze.outputs.operation_summary }}
       skip-comment: ${{ steps.check-skip.outputs.skip }}
@@ -27,38 +31,25 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const { owner, repo } = context.repo;
-            const sha = context.payload.after;
-            
+            const sha = context.payload.pull_request?.head?.sha;
             try {
-              const { data: commit } = await github.rest.repos.getCommit({
-                owner,
-                repo,
-                ref: sha,
-              });
-              const message = commit.commit.message;
-              
-              if (message.includes('🌍 自动翻译文档')) {
-                console.log('检测到翻译commit，跳过文档变更检测和评论');
-                core.setOutput('skip', 'true');
-                return;
+              if (sha) {
+                const { data: commit } = await github.rest.repos.getCommit({ ...context.repo, ref: sha });
+                const msg = commit.commit.message || '';
+                if (msg.includes('🌍 自动翻译文档') || msg.includes('🔄 撤回翻译')) {
+                  core.setOutput('skip', 'true'); return;
+                }
               }
-              if (message.includes('🔄 撤回翻译')) {
-                console.log('检测到撤回commit，跳过文档变更检测和评论');
-                core.setOutput('skip', 'true');
-                return;
-              }
-            } catch (error) {
-              console.error('检查commit失败:', error);
-            }
-            
+            } catch(e) { core.warning(`check commit failed: ${e.message}`); }
             core.setOutput('skip', 'false');
-      
+
       - uses: actions/checkout@v4
         if: steps.check-skip.outputs.skip != 'true'
         with:
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
-      
+          # filter: blob:none
+
       - name: Check for docs changes
         id: changes
         if: steps.check-skip.outputs.skip != 'true'
@@ -71,104 +62,59 @@ jobs:
             docs/zh-CN/**
             docs/ja/**
             docs/Spanish/**
-      
+
       - name: Analyze changes
         id: analyze
         if: steps.changes.outputs.any_changed == 'true' && steps.check-skip.outputs.skip != 'true'
         run: |
-          echo "📊 分析文档变更..."
-          
           base_sha="${{ github.event.pull_request.base.sha }}"
-          echo "🔍 基础SHA: $base_sha"
-          
-          # 统计变更
-          added_count=0
-          modified_count=0
-          deleted_count=0
-          renamed_count=0
-          renamed_modified_count=0
-          all_files=""
-          
+          added=0; modified=0; deleted=0; renamed=0; renamed_mod=0
           if operations=$(git diff --name-status --find-renames=90 $base_sha..HEAD -- docs/ 2>/dev/null); then
-            filtered_operations=$(echo "$operations" | grep -E '\.(md|mdx)$|_category_\.yml$' | grep -v -E '(zh-CN|ja|Spanish)' || true)
-            
-            if [[ -n "$filtered_operations" ]]; then
-              while IFS=$'\t' read -r status file rest || [[ -n "$status" ]]; do
-                [[ -z "$status" ]] && continue
-                
-                case "$status" in
-                  A*) added_count=$((added_count + 1)); all_files="$all_files$file " ;;
-                  M*) modified_count=$((modified_count + 1)); all_files="$all_files$file " ;;
-                  D*) deleted_count=$((deleted_count + 1)); all_files="$all_files$file " ;;
-                  R[0-9][0-9])
-                    similarity=${status#R}
-                    if [ "$similarity" -lt 100 ]; then
-                      renamed_modified_count=$((renamed_modified_count + 1))
-                    else
-                      renamed_count=$((renamed_count + 1))
-                    fi
-                    all_files="$all_files$file "
-                    [[ -n "$rest" ]] && all_files="$all_files$rest "
-                    ;;
-                  R*) renamed_count=$((renamed_count + 1)); all_files="$all_files$file "; [[ -n "$rest" ]] && all_files="$all_files$rest " ;;
+            filtered=$(echo "$operations" | grep -E '\.(md|mdx)$|_category_\.yml$' | grep -v -E '(zh-CN|ja|Spanish)' || true)
+            if [[ -n "$filtered" ]]; then
+              while IFS=$'\t' read -r st file rest || [[ -n "$st" ]]; do
+                [[ -z "$st" ]] && continue
+                case "$st" in
+                  A*) ((added++)) ;;
+                  M*) ((modified++)) ;;
+                  D*) ((deleted++)) ;;
+                  R[0-9][0-9]) sim=${st#R}; if [ "$sim" -lt 100 ]; then ((renamed_mod++)); else ((renamed++)); fi ;;
+                  R*) ((renamed++)) ;;
                 esac
-              done <<< "$filtered_operations"
+              done <<< "$filtered"
             fi
           fi
-          
-          total_count=$((added_count + modified_count + deleted_count + renamed_count + renamed_modified_count))
-          
-          echo "changed_files=$all_files" >> $GITHUB_OUTPUT
-          echo "total_files=$total_count" >> $GITHUB_OUTPUT
-          echo "operation_summary=新增:$added_count 修改:$modified_count 删除:$deleted_count 移动:$renamed_count 移动+修改:$renamed_modified_count" >> $GITHUB_OUTPUT
+          total=$((added+modified+deleted+renamed+renamed_mod))
+          echo "total_files=$total" >> $GITHUB_OUTPUT
+          echo "operation_summary=新增:$added 修改:$modified 删除:$deleted 移动:$renamed 移动+修改:$renamed_mod" >> $GITHUB_OUTPUT
 
-  # 添加翻译提示评论（只在非翻译commit时添加）
   add-translation-comment:
     needs: detect-docs-changes
     if: |
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.head.repo.fork == false &&
       needs.detect-docs-changes.outputs.has-docs-changes == 'true' &&
       needs.detect-docs-changes.outputs.skip-comment != 'true'
     runs-on: ubuntu-latest
     steps:
-      - name: Add translation comment
+      - name: Add translation comment (internal PR)
         uses: actions/github-script@v7
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo } = context.repo;
-            const pull_number = context.payload.pull_request.number;
-            
-            const totalFiles = '${{ needs.detect-docs-changes.outputs.total-files }}';
-            const operationSummary = '${{ needs.detect-docs-changes.outputs.operation-summary }}';
-            
-            let comment = `## 🌍 检测到文档变更 - 可进行多语言翻译\n\n`;
-            comment += `**统计信息:** 共 ${totalFiles} 个文件需要处理\n`;
-            comment += `**操作类型:** ${operationSummary}\n\n`;
-            
-            comment += `### 🚀 开始翻译\n`;
-            comment += `在此评论回复以下命令之一：\n\n`;
-            comment += `- \`/translate all\` - 翻译所有变更到所有语言 (中文、日文、西班牙语)\n`;
-            comment += `- \`/translate zh\` - 仅翻译到中文\n`;
-            comment += `- \`/translate ja\` - 仅翻译到日文\n`;
-            comment += `- \`/translate es\` - 仅翻译到西班牙语\n`;
-            comment += `- \`/translate zh ja\` - 翻译到中文和日文\n`;
-            comment += `- \`/translate zh es\` - 翻译到中文和西班牙语\n\n`;
-            
-            comment += `### 🔄 撤回翻译\n`;
-            comment += `如果对翻译结果不满意，可以使用：\n`;
-            comment += `- \`/rollback translation\` - 撤回最近一次的翻译提交\n\n`;
-            
-            comment += `### ⚠️ 注意事项\n`;
-            comment += `- 只有仓库管理员和维护者可以触发翻译和撤回\n`;
-            comment += `- 撤回操作会恢复到翻译前的状态\n`;
-            comment += `- 每次操作后会自动触发构建检查\n\n`;
-            
-            github.rest.issues.createComment({
-              owner,
-              repo,
-              issue_number: pull_number,
-              body: comment
-            });
+            const pr = context.payload.pull_request;
+            const total = '${{ needs.detect-docs-changes.outputs.total-files }}';
+            const summary = '${{ needs.detect-docs-changes.outputs.operation-summary }}';
+            let body = `## 🌍 检测到文档变更 - 可进行多语言翻译\n\n`;
+            body += `**统计信息:** 共 ${total} 个文件需要处理\n`;
+            body += `**操作类型:** ${summary}\n\n`;
+            body += `### 🚀 开始翻译\n回复：\`/translate all|zh|ja|es ...\`\n\n`;
+            body += `### 🔄 撤回翻译\n回复：\`/rollback translation\`\n\n`;
+            body += `> 💡 提示: 翻译耗时与文件数近似线性`;
+            await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
 
+  # -------- 评论提示：fork PR（安全，不 checkout PR 代码） --------
   add-translation-comment-target:
     if: github.event_name == 'pull_request_target'
     runs-on: ubuntu-latest
@@ -177,651 +123,295 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - name: Comment with stats (safe for forks)
+      - name: Comment with stats (fork-safe; no checkout)
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo } = context.repo;
-            const pull_number = context.payload.pull_request.number;
-
-            // 用 API 获取变更文件，不 checkout PR 代码（安全）
-            const files = await github.paginate(
-              github.rest.pulls.listFiles,
-              { owner, repo, pull_number, per_page: 100 }
-            );
-
-            // 只统计 docs/** 下的 md/mdx/_category_.yml 且排除 zh-CN/ja/Spanish
+            const pr = context.payload.pull_request;
+            const files = await github.paginate(github.rest.pulls.listFiles, { owner, repo, pull_number: pr.number, per_page: 100 });
             const wanted = files.filter(f => {
-              const p = f.filename;
-              const inDocs = p.startsWith('docs/');
-              const langExcluded = /(^|\/)(zh-CN|ja|Spanish)(\/|$)/.test(p);
-              const okExt = /\.(md|mdx)$/.test(p) || /_category_\.yml$/.test(p);
-              return inDocs && !langExcluded && okExt;
+              const p=f.filename, inDocs=p.startsWith('docs/'),
+                    okExt=/\.(md|mdx)$/.test(p)||/_category_\.yml$/.test(p),
+                    ex=/(^|\/)(zh-CN|ja|Spanish)(\/|$)/.test(p);
+              return inDocs && okExt && !ex;
             });
-
-            let added=0, modified=0, deleted=0, renamed=0, renamedModified=0;
-            for (const f of wanted) {
-              // f.status: 'added' | 'modified' | 'removed' | 'renamed'
-              if (f.status === 'added') added++;
-              else if (f.status === 'modified') modified++;
-              else if (f.status === 'removed') deleted++;
-              else if (f.status === 'renamed') {
-                // API 不直接给相似度，统一算到 renamed
-                renamed++;
-              }
-            }
-            const total = added + modified + deleted + renamed + renamedModified;
-            const summary = `新增:${added} 修改:${modified} 删除:${deleted} 移动:${renamed} 移动+修改:${renamedModified}`;
-
+            let a=0,m=0,d=0,r=0; wanted.forEach(f=>{ if(f.status==='added')a++; else if(f.status==='modified')m++; else if(f.status==='removed')d++; else if(f.status==='renamed')r++; });
+            const total=a+m+d+r;
+            const summary=`新增:${a} 修改:${m} 删除:${d} 移动:${r} 移动+修改:0`;
             let body = `## 🌍 检测到文档变更 - 可进行多语言翻译\n\n`;
             body += `**统计信息:** 共 ${total} 个文件需要处理\n`;
             body += `**操作类型:** ${summary}\n\n`;
-            body += `### 🚀 开始翻译\n在此评论回复以下命令之一：\n\n`;
-            body += `- \`/translate all\` - 翻译所有变更到所有语言 (中文、日文、西班牙语)\n`;
-            body += `- \`/translate zh\` - 仅翻译到中文\n`;
-            body += `- \`/translate ja\` - 仅翻译到日文\n`;
-            body += `- \`/translate es\` - 仅翻译到西班牙语\n`;
-            body += `- \`/translate zh ja\` - 翻译到中文和日文\n`;
-            body += `- \`/translate zh es\` - 翻译到中文和西班牙语\n\n`;
-            body += `### 🔄 撤回翻译\n如果对翻译结果不满意，可以使用：\n- \`/rollback translation\` - 撤回最近一次的翻译提交\n\n`;
-            body += `### ⚠️ 注意事项\n- 只有仓库管理员和维护者可以触发翻译和撤回\n- 撤回操作会恢复到翻译前的状态\n- 每次操作后会自动触发构建检查\n\n`;
+            body += `### 🚀 开始翻译\n回复：\`/translate all|zh|ja|es ...\`\n（来自 fork 的 PR 将由维护者机器人直接推到你的 PR 分支，需要勾选 **Allow edits by maintainers**）\n\n`;
+            body += `### 🔄 撤回翻译\n回复：\`/rollback translation\`\n\n`;
+            await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
 
-            await github.rest.issues.createComment({
-              owner, repo, issue_number: pull_number, body
-            });
-
-  # 手动触发翻译
-  manual-translate:
+  # -------- 手动翻译（同仓库分支） --------
+  manual-translate-internal:
     if: |
-      github.event_name == 'issue_comment' && 
+      github.event_name == 'issue_comment' &&
       github.event.issue.pull_request &&
       startsWith(github.event.comment.body, '/translate')
     runs-on: ubuntu-latest
-    timeout-minutes: 60
-    outputs:
-      translation-completed: ${{ steps.check-completion.outputs.completed }}
-      has-changes: ${{ steps.check-completion.outputs.has_changes }}
     steps:
+      - name: Get PR info
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const { data: pr } = await github.rest.pulls.get({ owner, repo, pull_number: context.payload.issue.number });
+            core.setOutput('is_fork', String(pr.head.repo.full_name !== `${owner}/${repo}`));
+            core.setOutput('base_ref', pr.base.ref);
+            core.setOutput('head_ref', pr.head.ref);
+      - name: Stop if this is a fork (handled by separate job)
+        if: steps.pr.outputs.is_fork == 'true'
+        run: echo "Fork PR will be handled by manual-translate-fork" && exit 0
+
+      - name: Check permission of commenter
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo, user=context.payload.comment.user.login;
+            const { data: p } = await github.rest.repos.getCollaboratorPermissionLevel({ owner, repo, username:user });
+            if (!['admin','maintain'].includes(p.permission)) {
+              await github.rest.issues.createComment({ owner, repo, issue_number: context.payload.issue.number, body:`❌ @${user} 权限不足（需要 admin/maintain）`});
+              core.setFailed('no permission');
+            }
+
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-          clean: true  # 确保工作区干净
-      
-      - name: Add start comment
-        id: start-comment
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { owner, repo } = context.repo;
-            const issue_number = context.payload.issue.number;
-            const username = context.payload.comment.user.login;
-            
-            const comment = `## 🔄 开始翻译任务\n\n` +
-              `**触发者:** @${username}\n` +
-              `**开始时间:** ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}\n` +
-              `**命令:** \`${context.payload.comment.body.trim()}\`\n\n` +
-              `⏳ 正在检查权限和初始化翻译环境...\n\n` +
-              `> 🔍 翻译完成后会在此更新详细报告`;
-            
-            const response = await github.rest.issues.createComment({
-              owner,
-              repo,
-              issue_number,
-              body: comment
-            });
-            
-            return response.data.id;
-      
-      - name: Check user permissions
-        id: check-permissions
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { owner, repo } = context.repo;
-            const username = context.payload.comment.user.login;
-            
-            console.log(`检查用户权限: ${username}`);
-            
-            try {
-              const { data: permission } = await github.rest.repos.getCollaboratorPermissionLevel({
-                owner,
-                repo,
-                username
-              });
-              
-              const allowedRoles = ['admin', 'maintain'];
-              const hasPermission = allowedRoles.includes(permission.permission);
-              
-              console.log(`用户 ${username} 的权限级别: ${permission.permission}`);
-              console.log(`是否有翻译权限: ${hasPermission}`);
-              
-              if (!hasPermission) {
-                await github.rest.issues.createComment({
-                  owner,
-                  repo,
-                  issue_number: context.payload.issue.number,
-                  body: `## ❌ 权限不足\n\n` +
-                    `@${username} 权限不足，只有仓库管理员和维护者可以触发翻译。\n\n` +
-                    `**当前权限级别:** \`${permission.permission}\`\n` +
-                    `**需要权限级别:** \`admin\` 或 \`maintain\`\n\n` +
-                    `请联系仓库管理员获取相应权限。`
-                });
-                
-                core.setFailed(`用户 ${username} 权限不足`);
-                return;
-              }
-              
-              core.setOutput('has_permission', 'true');
-              
-            } catch (error) {
-              console.error('权限检查失败:', error);
-              
-              await github.rest.issues.createComment({
-                owner,
-                repo,
-                issue_number: context.payload.issue.number,
-                body: `## ❌ 权限检查失败\n\n` +
-                  `无法验证 @${username} 的权限。请确保用户是仓库的协作者。\n\n` +
-                  `**错误信息:** ${error.message}\n\n` +
-                  `请联系仓库管理员解决此问题。`
-              });
-              
-              core.setFailed(`权限检查失败: ${error.message}`);
-            }
-      
-      - name: Checkout PR
-        if: steps.check-permissions.outputs.has_permission == 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
-          GH_TOKEN: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
-        run: |
-          echo "📄 切换到PR分支..."
-          gh pr checkout ${{ github.event.issue.number }}
-          
-          # 记录翻译前的commit SHA，用于潜在的撤回操作
-          BEFORE_TRANSLATION_SHA=$(git rev-parse HEAD)
-          echo "BEFORE_TRANSLATION_SHA=$BEFORE_TRANSLATION_SHA" >> $GITHUB_ENV
-          echo "📌 记录翻译前的SHA: $BEFORE_TRANSLATION_SHA"
-      
+
       - name: Setup Node.js
-        if: steps.check-permissions.outputs.has_permission == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-      
+
       - name: Parse translation command
-        if: steps.check-permissions.outputs.has_permission == 'true'
         id: parse
         run: |
-          comment="${{ github.event.comment.body }}"
-          echo "🔍 解析翻译命令: $comment"
-          
-          if [[ "$comment" == *"/translate all"* ]]; then
-            languages="zh-CN ja es"
-            echo "🌍 翻译到所有语言: 中文、日文、西班牙语"
-          else
-            languages=""
-            [[ "$comment" == *" zh"* ]] && languages="$languages zh-CN" && echo "🇨🇳 添加中文翻译"
-            [[ "$comment" == *" ja"* ]] && languages="$languages ja" && echo "🇯🇵 添加日文翻译"
-            [[ "$comment" == *" es"* ]] && languages="$languages es" && echo "🇪🇸 添加西班牙语翻译"
+          c="${{ github.event.comment.body }}"
+          if [[ "$c" == *"/translate all"* ]]; then L="zh-CN ja es"; else
+            L=""; [[ "$c" == *" zh"* ]] && L="$L zh-CN"; [[ "$c" == *" ja"* ]] && L="$L ja"; [[ "$c" == *" es"* ]] && L="$L es"
           fi
-          
-          languages=$(echo $languages | xargs)
-          echo "languages=$languages" >> $GITHUB_OUTPUT
-          echo "🎯 最终翻译语言: $languages"
-      
-      - name: Get PR base SHA
-        if: steps.check-permissions.outputs.has_permission == 'true'
-        id: pr-info
-        env:
-          GH_TOKEN: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
-        run: |
-          echo "📊 获取PR基础信息..."
-          base_sha=$(gh pr view ${{ github.event.issue.number }} --json baseRefOid --jq '.baseRefOid')
-          echo "base_sha=$base_sha" >> $GITHUB_OUTPUT
-          echo "🔍 基础SHA: $base_sha"
-      
-      - name: Install dependencies
-        if: steps.check-permissions.outputs.has_permission == 'true'
-        run: |
-          echo "📦 安装翻译依赖..."
-          npm install @anthropic-ai/sdk --no-save --legacy-peer-deps
-      
-      - name: Run translation
-        if: steps.check-permissions.outputs.has_permission == 'true'
+          L=$(echo $L | xargs); echo "languages=$L" >> $GITHUB_OUTPUT
+
+      - name: Install deps for translator
+        run: npm install @anthropic-ai/sdk --no-save --legacy-peer-deps
+
+      - name: Run translation (internal)
         env:
           TRANSLATION_API_KEY: ${{ secrets.TRANSLATION_API_KEY }}
           TARGET_LANGUAGES: ${{ steps.parse.outputs.languages }}
-          BASE_SHA: ${{ steps.pr-info.outputs.base_sha }}
         run: |
-          echo "🚀 开始翻译任务..."
-          echo "目标语言: $TARGET_LANGUAGES"
-          echo "基础SHA: $BASE_SHA"
-          
-          if [ -z "$TRANSLATION_API_KEY" ]; then
-            echo "❌ 错误: 缺少TRANSLATION_API_KEY，请在仓库Settings > Secrets中配置"
-            exit 1
-          fi
-          
+          [ -z "$TRANSLATION_API_KEY" ] && echo "missing key" && exit 1
           node .github/scripts/translate.js
-      
-      - name: Commit and push changes
-        if: steps.check-permissions.outputs.has_permission == 'true'
+
+      - name: Commit & push
+        run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action Bot"
+          if [ -n "$(git status --porcelain docs/)" ]; then
+            git add docs/
+            git commit -m "🌍 自动翻译文档" -m "Triggered by @${{ github.event.comment.user.login }}"
+            git push
+          else
+            echo "No changes."
+          fi
+
+  # -------- 手动翻译（fork 分支，方案 B：直接 push 到贡献者分支） --------
+  manual-translate-fork:
+    if: |
+      github.event_name == 'issue_comment' &&
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/translate')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read PR info
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const num = context.payload.issue.number;
+            const { data: pr } = await github.rest.pulls.get({ owner, repo, pull_number: num });
+            core.setOutput('is_fork', String(pr.head.repo.full_name !== `${owner}/${repo}`));
+            core.setOutput('fork_full_name', pr.head.repo.full_name);
+            core.setOutput('fork_owner', pr.head.repo.owner.login);
+            core.setOutput('fork_repo', pr.head.repo.name);
+            core.setOutput('fork_ref', pr.head.ref);
+            core.setOutput('maintainer_can_modify', String(!!pr.maintainer_can_modify));
+
+      - name: Only run for fork PR
+        if: steps.pr.outputs.is_fork != 'true'
+        run: echo "Not a fork PR, skip (handled by internal job)" && exit 0
+
+      - name: Check commenter permission
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo, user=context.payload.comment.user.login;
+            const { data: p } = await github.rest.repos.getCollaboratorPermissionLevel({ owner, repo, username:user });
+            if (!['admin','maintain'].includes(p.permission)) {
+              await github.rest.issues.createComment({ owner, repo, issue_number: context.payload.issue.number, body:`❌ @${user} 权限不足（需要 admin/maintain）`});
+              core.setFailed('no permission');
+            }
+
+      - name: Ensure "Allow edits by maintainers" is enabled
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            if ('${{ steps.pr.outputs.maintainer_can_modify }}' !== 'true') {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: context.payload.issue.number,
+                body: '⚠️ 需要作者在 PR 勾选 **Allow edits by maintainers**，否则无法将翻译结果推回你的分支。'
+              });
+              core.setFailed('maintainer_can_modify is false');
+            }
+
+      # 1) 检出你自己的仓库（只为获取受信任的脚本）
+      - name: Checkout base repo (trusted code only)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          path: base
+
+      # 2) 准备一个临时工作树，用 PAT 拉取贡献者 fork 的该分支
+      - name: Prepare fork worktree
         env:
           TRANSLATION_PAT: ${{ secrets.TRANSLATION_PAT }}
-          LANGUAGES: ${{ steps.parse.outputs.languages }}
-          TRIGGERED_BY: ${{ github.event.comment.user.login }}
         run: |
-          echo "🔄 提交翻译结果..."
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action Bot"
-          
-          # 显示当前状态（用于调试）
-          echo "📋 当前git状态："
-          git status --short
-          
-          # 重置不需要的文件修改（如yarn.lock）
-          git checkout -- yarn.lock package-lock.json 2>/dev/null || true
-          
-          # 检查docs目录是否有变更
+          set -e
+          [ -z "$TRANSLATION_PAT" ] && echo "❌ TRANSLATION_PAT missing" && exit 1
+          mkdir -p fork
+          cd fork
+          git init
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action Bot"
+          git remote add origin https://${TRANSLATION_PAT}@github.com/${{ steps.pr.outputs.fork_full_name }}.git
+          git fetch --depth=1 origin ${{ steps.pr.outputs.fork_ref }}
+          git checkout -b pr-branch FETCH_HEAD
+          # 仅作为文件载体，不运行任何 fork 里的脚本
+
+      - name: Setup Node.js (run trusted translator)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Parse translation command
+        id: parse
+        run: |
+          c="${{ github.event.comment.body }}"
+          if [[ "$c" == *"/translate all"* ]]; then L="zh-CN ja es"; else
+            L=""; [[ "$c" == *" zh"* ]] && L="$L zh-CN"; [[ "$c" == *" ja"* ]] && L="$L ja"; [[ "$c" == *" es"* ]] && L="$L es"
+          fi
+          L=$(echo $L | xargs); echo "languages=$L" >> $GITHUB_OUTPUT
+
+      - name: Install deps for translator
+        working-directory: base
+        run: npm install @anthropic-ai/sdk --no-save --legacy-peer-deps
+
+      - name: Run translation against fork worktree
+        env:
+          TRANSLATION_API_KEY: ${{ secrets.TRANSLATION_API_KEY }}
+          TARGET_LANGUAGES: ${{ steps.parse.outputs.languages }}
+          WORKTREE_DIR: ${{ github.workspace }}/fork
+        run: |
+          set -e
+          [ -z "$TRANSLATION_API_KEY" ] && echo "❌ 缺少 TRANSLATION_API_KEY" && exit 1
+          # 进入可信代码目录执行脚本，但把 fork 工作树路径作为输入/输出位置
+          cd base
+          node .github/scripts/translate.js "$WORKTREE_DIR"
+
+      - name: Commit & push back to contributor branch (PAT)
+        env:
+          TRANSLATION_PAT: ${{ secrets.TRANSLATION_PAT }}
+        run: |
+          set -e
+          cd fork
           if [ -n "$(git status --porcelain docs/)" ]; then
-            echo "📝 检测到文档变更，准备提交..."
-            
-            # 添加docs目录的更改
             git add docs/
-            
-            # 创建commit message
-            COMMIT_MSG="🌍 自动翻译文档"
-            COMMIT_DETAILS="Translation Languages: ${LANGUAGES}
-          Before Translation SHA: ${BEFORE_TRANSLATION_SHA}
-          Triggered by: @${TRIGGERED_BY}
-          Time: $(date '+%Y-%m-%d %H:%M:%S')"
-            
-            # 提交更改
-            git commit -m "$COMMIT_MSG" -m "$COMMIT_DETAILS"
-            
-            # 使用PAT推送以触发其他工作流
-            if [ -n "$TRANSLATION_PAT" ]; then
-              echo "使用PAT推送..."
-              git push https://${TRANSLATION_PAT}@github.com/${{ github.repository }}.git HEAD
-            else
-              echo "使用默认token推送..."
-              git push origin HEAD
-            fi
-            
-            echo "HAS_CHANGES=true" >> $GITHUB_ENV
-            echo "TRANSLATION_COMMIT_SHA=$(git rev-parse HEAD)" >> $GITHUB_ENV
-            echo "✅ 翻译结果已提交并推送"
+            git commit -m "🌍 自动翻译文档" -m "Triggered by @${{ github.event.comment.user.login }}"
+            git push origin HEAD:${{ steps.pr.outputs.fork_ref }}
+            echo "✅ Changes pushed to ${{ steps.pr.outputs.fork_full_name }}:${{ steps.pr.outputs.fork_ref }}"
           else
-            echo "ℹ️ 没有翻译内容需要提交"
-            echo "HAS_CHANGES=false" >> $GITHUB_ENV
+            echo "ℹ️ No docs changes to commit."
           fi
-      
-      - name: Save translation metadata
-        if: steps.check-permissions.outputs.has_permission == 'true' && env.HAS_CHANGES == 'true'
+
+      - name: Leave result comment
         uses: actions/github-script@v7
         with:
           script: |
             const { owner, repo } = context.repo;
-            const pr_number = context.payload.issue.number;
-            
-            // 保存翻译元数据到PR的comment中（隐藏的metadata）
-            const metadata = {
-              before_sha: process.env.BEFORE_TRANSLATION_SHA,
-              after_sha: process.env.TRANSLATION_COMMIT_SHA,
-              languages: '${{ steps.parse.outputs.languages }}',
-              timestamp: new Date().toISOString(),
-              triggered_by: '${{ github.event.comment.user.login }}'
-            };
-            
-            const metadataComment = `<!-- TRANSLATION_METADATA
-            ${JSON.stringify(metadata)}
-            -->`;
-            
             await github.rest.issues.createComment({
-              owner,
-              repo,
-              issue_number: pr_number,
-              body: metadataComment
-            });
-      
-      - name: Check completion status
-        id: check-completion
-        if: always() && steps.check-permissions.outputs.has_permission == 'true'
-        run: |
-          if [ "${{ job.status }}" = "success" ] && [ "$HAS_CHANGES" = "true" ]; then
-            echo "completed=true" >> $GITHUB_OUTPUT
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "✅ 翻译完成且有内容变更"
-          else
-            echo "completed=false" >> $GITHUB_OUTPUT
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "ℹ️ 翻译未完成或无内容变更"
-          fi
+              owner, repo, issue_number: context.payload.issue.number,
+              body: '✅ 已将翻译结果直接推送到你的 PR 分支（fork）。如需撤回请告知维护者。'
+            })
 
-      - name: Update completion comment
-        if: always() && steps.check-permissions.outputs.has_permission == 'true'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { owner, repo } = context.repo;
-            const issue_number = context.payload.issue.number;
-            const commentId = '${{ steps.start-comment.outputs.result }}';
-            
-            const success = '${{ job.status }}' === 'success';
-            const languages = '${{ steps.parse.outputs.languages }}';
-            const hasChanges = process.env.HAS_CHANGES === 'true';
-            const translationSha = process.env.TRANSLATION_COMMIT_SHA || 'N/A';
-            const beforeSha = process.env.BEFORE_TRANSLATION_SHA || 'N/A';
-            
-            let status, statusIcon;
-            if (success && hasChanges) {
-              status = '翻译完成';
-              statusIcon = '✅';
-            } else if (success && !hasChanges) {
-              status = '无需翻译';
-              statusIcon = 'ℹ️';
-            } else {
-              status = '翻译失败';
-              statusIcon = '❌';
-            }
-            
-            let comment = `## ${statusIcon} ${status}\n\n`;
-            comment += `**翻译语言:** ${languages || '无'}\n`;
-            comment += `**完成时间:** ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}\n`;
-            comment += `**触发者:** @${{ github.event.comment.user.login }}\n`;
-            
-            if (success && hasChanges) {
-              comment += `**翻译前SHA:** \`${beforeSha}\`\n`;
-              comment += `**翻译后SHA:** \`${translationSha}\`\n\n`;
-              
-              comment += `### 🎉 翻译成功！\n\n`;
-              comment += `翻译文件已自动提交到当前PR分支。\n\n`;
-              
-              comment += `### 🔄 后续操作\n`;
-              comment += `- 如果对翻译结果不满意，可以使用 \`/rollback translation\` 撤回此次翻译\n`;
-              comment += `- 撤回后可以重新翻译或手动修改\n\n`;
-              
-            } else if (success && !hasChanges) {
-              comment += `### 🔍 没有检测到需要翻译的内容\n\n`;
-              comment += `可能的原因：\n`;
-              comment += `- 目标语言的翻译文件已经是最新的\n`;
-              comment += `- 没有检测到有效的文档变更\n\n`;
-            } else {
-              comment += `### 💔 翻译失败\n\n`;
-              comment += `请查看 [工作流日志](https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }}) 了解详细错误信息。\n\n`;
-            }
-            
-            // 读取详细报告（如果存在）
-            try {
-              const fs = require('fs');
-              if (fs.existsSync('/tmp/translation-report.md')) {
-                const report = fs.readFileSync('/tmp/translation-report.md', 'utf8');
-                comment += `### 📊 详细报告\n\n${report}`;
-              }
-            } catch (error) {
-              console.log('无法读取详细报告:', error.message);
-            }
-            
-            comment += `\n---\n> 🤖 由 GitHub Actions 自动生成 | [查看工作流](https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }})`;
-            
-            // 更新原始评论
-            try {
-              await github.rest.issues.updateComment({
-                owner,
-                repo,
-                comment_id: commentId,
-                body: comment
-              });
-            } catch (error) {
-              console.log('更新评论失败，创建新评论:', error.message);
-              await github.rest.issues.createComment({
-                owner,
-                repo,
-                issue_number,
-                body: comment
-              });
-            }
-
-  # 撤回翻译操作
+  # -------- 撤回（只针对同仓库分支；fork 的撤回通常由作者自行处理） --------
   rollback-translation:
     if: |
-      github.event_name == 'issue_comment' && 
+      github.event_name == 'issue_comment' &&
       github.event.issue.pull_request &&
       contains(github.event.comment.body, '/rollback translation')
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
-      
-      - name: Check user permissions
-        id: check-permissions
+      - name: Get PR info
+        id: pr
         uses: actions/github-script@v7
         with:
           script: |
             const { owner, repo } = context.repo;
-            const username = context.payload.comment.user.login;
-            
-            console.log(`检查用户权限: ${username}`);
-            
-            try {
-              const { data: permission } = await github.rest.repos.getCollaboratorPermissionLevel({
-                owner,
-                repo,
-                username
-              });
-              
-              const allowedRoles = ['admin', 'maintain'];
-              const hasPermission = allowedRoles.includes(permission.permission);
-              
-              if (!hasPermission) {
-                await github.rest.issues.createComment({
-                  owner,
-                  repo,
-                  issue_number: context.payload.issue.number,
-                  body: `## ❌ 权限不足\n\n` +
-                    `@${username} 没有撤回翻译的权限。只有管理员和维护者可以执行此操作。`
-                });
-                core.setFailed('权限不足');
-                return;
-              }
-              
-              core.setOutput('has_permission', 'true');
-              
-            } catch (error) {
-              console.error('权限检查失败:', error);
-              core.setFailed(`权限检查失败: ${error.message}`);
-            }
-      
-      - name: Find translation metadata
-        id: find-metadata
-        if: steps.check-permissions.outputs.has_permission == 'true'
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { owner, repo } = context.repo;
-            const issue_number = context.payload.issue.number;
-            
-            // 获取所有评论
-            const comments = await github.rest.issues.listComments({
-              owner,
-              repo,
-              issue_number,
-              per_page: 100
-            });
-            
-            // 查找最新的翻译元数据
-            let latestMetadata = null;
-            const metadataRegex = /<!-- TRANSLATION_METADATA\s+(.*?)\s+-->/s;
-            
-            for (const comment of comments.data.reverse()) {
-              const match = comment.body.match(metadataRegex);
-              if (match) {
-                try {
-                  latestMetadata = JSON.parse(match[1]);
-                  console.log('找到翻译元数据:', latestMetadata);
-                  break;
-                } catch (e) {
-                  console.error('解析元数据失败:', e);
-                }
-              }
-            }
-            
-            if (!latestMetadata) {
-              await github.rest.issues.createComment({
-                owner,
-                repo,
-                issue_number,
-                body: `## ⚠️ 未找到翻译记录\n\n没有找到可以撤回的翻译操作。`
-              });
-              core.setFailed('未找到翻译元数据');
-              return;
-            }
-            
-            core.setOutput('before_sha', latestMetadata.before_sha);
-            core.setOutput('after_sha', latestMetadata.after_sha);
-            core.setOutput('languages', latestMetadata.languages);
-            core.setOutput('has_metadata', 'true');
-      
-      - name: Checkout PR and rollback
-        if: steps.find-metadata.outputs.has_metadata == 'true'
-        env:
-          GITHUB_TOKEN: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
-          GH_TOKEN: ${{ secrets.TRANSLATION_PAT || secrets.GITHUB_TOKEN }}
-          TRANSLATION_PAT: ${{ secrets.TRANSLATION_PAT }}
-        run: |
-          echo "📄 切换到PR分支..."
-          gh pr checkout ${{ github.event.issue.number }}
-          
-          BEFORE_SHA="${{ steps.find-metadata.outputs.before_sha }}"
-          AFTER_SHA="${{ steps.find-metadata.outputs.after_sha }}"
-          
-          echo "🔄 准备撤回翻译..."
-          echo "  翻译前SHA: $BEFORE_SHA"
-          echo "  翻译后SHA: $AFTER_SHA"
-          echo "  当前SHA: $(git rev-parse HEAD)"
-          
-          # 检查当前commit是否是翻译commit
-          CURRENT_SHA=$(git rev-parse HEAD)
-          if [ "$CURRENT_SHA" != "$AFTER_SHA" ]; then
-            echo "⚠️ 警告：当前HEAD不是最后一次翻译的commit，可能有其他更改"
-            echo "继续撤回到翻译前的状态..."
-          fi
-          
-          # 执行撤回
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action Bot"
-          
-          # 使用reset --hard回到翻译前的状态
-          git reset --hard $BEFORE_SHA
-          
-          # 强制推送（需要PAT）
-          if [ -n "$TRANSLATION_PAT" ]; then
-            echo "使用PAT强制推送..."
-            git push --force https://${TRANSLATION_PAT}@github.com/${{ github.repository }}.git HEAD
-          else
-            echo "使用默认token强制推送..."
-            git push --force origin HEAD
-          fi
-          
-          echo "✅ 已撤回到翻译前的状态"
+            const { data: pr } = await github.rest.pulls.get({ owner, repo, pull_number: context.payload.issue.number });
+            core.setOutput('is_fork', String(pr.head.repo.full_name !== `${owner}/${repo}`));
+            core.setOutput('head_ref', pr.head.ref);
 
-      - name: Add rollback marker commit
-        if: steps.find-metadata.outputs.has_metadata == 'true'
-        env:
-          TRANSLATION_PAT: ${{ secrets.TRANSLATION_PAT }}
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action Bot"
-          
-          # 新建一个空 commit 作为标记
-          git commit --allow-empty -m "🔄 撤回翻译"
-          
-          if [ -n "$TRANSLATION_PAT" ]; then
-            echo "使用PAT推送 rollback 标记 commit..."
-            git push https://${TRANSLATION_PAT}@github.com/${{ github.repository }}.git HEAD
-          else
-            git push origin HEAD
-          fi
-      
-      - name: Post rollback comment
-        if: steps.find-metadata.outputs.has_metadata == 'true'
+      - name: Stop for fork PR (ask author to rollback)
+        if: steps.pr.outputs.is_fork == 'true'
         uses: actions/github-script@v7
         with:
           script: |
             const { owner, repo } = context.repo;
-            const issue_number = context.payload.issue.number;
-            const username = context.payload.comment.user.login;
-            
-            const beforeSha = '${{ steps.find-metadata.outputs.before_sha }}';
-            const afterSha = '${{ steps.find-metadata.outputs.after_sha }}';
-            const languages = '${{ steps.find-metadata.outputs.languages }}';
-            
-            let comment = `## ✅ 翻译已撤回\n\n`;
-            comment += `**操作者:** @${username}\n`;
-            comment += `**撤回时间:** ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}\n\n`;
-            
-            comment += `### 📋 撤回详情\n`;
-            comment += `- **撤回的翻译语言:** ${languages}\n`;
-            comment += `- **恢复到的SHA:** \`${beforeSha}\`\n`;
-            comment += `- **撤回的SHA:** \`${afterSha}\`\n\n`;
-            
-            comment += `### 🔄 后续操作\n`;
-            comment += `- 现在可以重新进行翻译或手动修改文档\n`;
-            comment += `- 使用 \`/translate [语言]\` 重新翻译\n\n`;
-            
-            comment += `---\n> 🤖 由 GitHub Actions 自动生成`;
-            
             await github.rest.issues.createComment({
-              owner,
-              repo,
-              issue_number,
-              body: comment
+              owner, repo, issue_number: context.payload.issue.number,
+              body: '⚠️ 当前为 fork PR，撤回请由作者在其分支上执行或关闭 PR。'
             });
-            
-            // 删除旧的元数据comment
-            const comments = await github.rest.issues.listComments({
-              owner,
-              repo,
-              issue_number,
-              per_page: 100
-            });
-            
-            const metadataRegex = /<!-- TRANSLATION_METADATA/;
-            for (const comment of comments.data) {
-              if (metadataRegex.test(comment.body)) {
-                await github.rest.issues.deleteComment({
-                  owner,
-                  repo,
-                  comment_id: comment.id
-                });
-                console.log(`删除了旧的元数据comment: ${comment.id}`);
-                break;
-              }
-            }
 
+      - name: Checkout (internal PR)
+        if: steps.pr.outputs.is_fork != 'true'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rollback commit (internal PR)
+        if: steps.pr.outputs.is_fork != 'true'
+        run: |
+          set -e
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action Bot"
+          # 这里可以根据你的元数据实现精准回滚；简化示例：撤销最近一次翻译提交
+          last=$(git log --grep="🌍 自动翻译文档" --format=%H -n 1 || true)
+          if [ -n "$last" ]; then
+            git revert --no-edit "$last"
+            git push
+            echo "✅ Reverted $last"
+          else
+            echo "ℹ️ 未找到翻译提交，跳过"
+          fi
+
+  # -------- 合并后的小评论 --------
   post-merge-comment:
     if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-      - name: Comment after merge (mimic Issue Auto Comment)
+      - name: Comment after merge
         uses: actions/github-script@v7
         with:
           script: |
             const { owner, repo } = context.repo;
             const pr = context.payload.pull_request;
-            const pr_number = pr.number;
-            const author = pr.user.login;
-
-            const body = `❤️ Great PR @${author} ❤️`;
-
-            await github.rest.issues.createComment({
-              owner,
-              repo,
-              issue_number: pr_number,
-              body
-            });
+            const body = `❤️ Great PR @${pr.user.login} ❤️`;
+            await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
