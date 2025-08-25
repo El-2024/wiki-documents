@@ -17,6 +17,9 @@ const excludedPaths = [
 
   // 排除指定文档
   path.join(docsDirectory, 'Robotics', 'Robot_Kits', 'Lerobot', 'Lerobot_Starai_Arm.md'), //8.15
+  path.join(docsDirectory, 'Sensor', 'SenseCAP', 'SenseCAP_Watcher', 'Applications', 'Watcher-Agent', 'Web Control Panel.md'), //8.20
+  path.join(docsDirectory, 'Sensor', 'SenseCAP', 'SenseCAP_Watcher', 'Applications', 'Watcher-Agent', 'Flash Watcher Agent Firmware.md'), //8.20
+  path.join(docsDirectory, 'Sensor', 'SenseCAP', 'SenseCAP_Watcher', 'Applications', 'Watcher-Agent', 'Device Network Setup Guide.md'), //8.20
 ];
 
 // 递归函数，用于遍历多层文件夹
