@@ -52,6 +52,7 @@ const PRESERVE_TERMS = {
 // 文档保护列表
 const PROTECTED_PATHS = [
   'docs/Getting_Started.md',
+  'docs/weekly_wiki.md',
   'docs/LICENSE.md',
   'docs/Seeed_Elderly/weekly_wiki',
 ];
