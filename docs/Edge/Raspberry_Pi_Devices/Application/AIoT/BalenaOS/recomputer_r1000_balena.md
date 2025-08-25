@@ -1,6 +1,5 @@
 ---
 description: balena is a versatile IoT platform that enables developers to build, deploy, and manage IoT applications across various device architectures with ease, leveraging containerized deployment for seamless updates and robust device management. The reComputer R1000 edge IoT controller, powered by the Raspberry Pi CM4, offers high-performance capabilities for demanding edge computing tasks. Together, balena and reComputer R1000 provide a powerful and scalable solution for efficient and secure IoT application deployment and management in diverse environments.
-
 title: reComputer R1000 with balena
 keywords:
   - Edge
