@@ -132,6 +132,9 @@ last_update:
 **カメラ**  
 
 <div className="card-container">
+    <a href="/ja/orbbec_gemini2/" className="nav-item">
+      <span className="text">Orbbec Gemini2 3Dカメラ入門</span>
+    </a>
     <a href="/ja/orbbec_depth_camera_on_ros/" className="nav-item">
       <span className="text">Orbbec デプスカメラ</span>
     </a>
@@ -142,6 +145,9 @@ last_update:
     <a href="/ja/sensing_gmsl_cameras" className="nav-item">
       <span className="text">SENSING GMSL2 カメラ</span>
       <span className="tag recommended">New</span>
+    </a>
+    <a href="/ja/orb_slam3_orbbec_gemini2/" className="nav-item">
+      <span className="text">ORB-SLAM3 with Orbbec Gemini2</span>
     </a>
     <a href="/ja/csi_camera_on_ros/" className="nav-item">
       <span className="text">CSI カメラ</span>
@@ -203,7 +209,7 @@ last_update:
 </a>
 
 <a href="/ja/object_tracking_with_reComputer_jetson_and_pX4/" className="nav-item">
-  <span className="text">PX4 でのオブジェクトトラッキング</span>
+  <span className="text">Object Tracking with PX4</span>
   <span className="tag recommended">New</span>
 </a>
 
@@ -225,7 +231,7 @@ last_update:
 **VLA**  
 <div className="card-container">
 <a href="/ja/control_robotic_arm_via_gr00t" className="nav-item">
-  <span className="text">NVIDIA の GR00T</span>
+  <span className="text">NVIDIA's GR00T</span>
 </a>
 </div>
 
@@ -239,7 +245,7 @@ last_update:
 
 
 <style>{`
-/* 导航容器 */
+/* 導航容器 */
 .quick-nav-container {
   margin: 2rem 0;
   padding: 1rem;
@@ -251,7 +257,7 @@ last_update:
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-/* Dark模式 - 导航容器 */
+/* Dark模式 - 導航容器 */
 html[data-theme='dark'] .quick-nav-container {
   background: 
     radial-gradient(at 10% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
@@ -262,14 +268,14 @@ html[data-theme='dark'] .quick-nav-container {
     inset 0 0 12px rgba(99, 102, 241, 0.1); /* 内发光增强深度 */
 }
 
-/* 导航主体 */
+/* 導航主体 */
 .quick-nav {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
 }
 
-/* 导航项 */
+/* 導航項 */
 .nav-item {
   position: relative;
   padding: 0.8rem 1.5rem;
@@ -286,27 +292,27 @@ html[data-theme='dark'] .quick-nav-container {
   z-index: 1;
 }
 
-/* Dark模式 - 导航项 */
+/* Dark模式 - 導航項 */
 html[data-theme='dark'] .nav-item {
   color: #e5e7eb;
   background:rgb(47, 50, 57);
   box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
-/* 图标样式 */
+/* 図標様式 */
 .nav-item .icon {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   transition: transform 0.3s;
 }
 
-/* 文字样式 */
+/* 文字様式 */
 .nav-item .text {
   font-size: 0.95rem;
   white-space: nowrap;
 }
 
-/* 悬浮特效 */
+/* 悬浮特効 */
 .nav-item .hover-effect {
   position: absolute;
   bottom: 0;
@@ -319,14 +325,14 @@ html[data-theme='dark'] .nav-item {
   z-index: -1;
 }
 
-/* 悬浮动画 */
+/* 悬浮動画 */
 .nav-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   color: white;
 }
 
-/* Dark模式 - 悬浮动画 */
+/* Dark模式 - 悬浮動画 */
 html[data-theme='dark'] .nav-item:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.6);
   color: white;
@@ -340,7 +346,7 @@ html[data-theme='dark'] .nav-item:hover {
   height: 100%;
 }
 
-/* 响应式设计 */
+/* 響応式設計 */
 @media (max-width: 768px) {
   .quick-nav {
     flex-direction: column;
@@ -360,7 +366,7 @@ html[data-theme='dark'] .nav-item:hover {
 
 
 <style>{`
-/* 内容卡片增强版样式 */
+/* 内容卡片増強版様式 */
 .nav-grid {
   display: block;
   gap: 2rem;
@@ -390,7 +396,7 @@ html[data-theme='dark'] .category-card {
   margin-bottom: 2rem;
 }
 
-/* 分类色标 */
+/* 分類色標 */
 .category-card::before {
   content: "";
   position: absolute;
@@ -405,13 +411,13 @@ html[data-theme='dark'] .category-card {
 .sensors::before { background: linear-gradient(to bottom, #ff6b6b, #ff8e8e); }
 .software::before { background: linear-gradient(to bottom, #f5a623, #f5c623); }
 
-/* 悬浮特效 */
+/* 悬浮特効 */
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
-/* Dark模式 - 悬浮特效 */
+/* Dark模式 - 悬浮特効 */
 html[data-theme='dark'] .category-card:hover {
   box-shadow: 0 12px 20px rgba(0,0,0,0.6);
 }

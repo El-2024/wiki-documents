@@ -132,6 +132,9 @@ last_update:
 **Cámara**  
 
 <div className="card-container">
+    <a href="/es/orbbec_gemini2/" className="nav-item">
+      <span className="text">Comenzando con la Cámara 3D Orbbec Gemini2</span>
+    </a>
     <a href="/es/orbbec_depth_camera_on_ros/" className="nav-item">
       <span className="text">Cámara de Profundidad Orbbec</span>
     </a>
@@ -142,6 +145,9 @@ last_update:
     <a href="/es/sensing_gmsl_cameras" className="nav-item">
       <span className="text">Cámaras SENSING GMSL2</span>
       <span className="tag recommended">Nuevo</span>
+    </a>
+    <a href="/es/orb_slam3_orbbec_gemini2/" className="nav-item">
+      <span className="text">ORB-SLAM3 con Orbbec Gemini2</span>
     </a>
     <a href="/es/csi_camera_on_ros/" className="nav-item">
       <span className="text">Cámara CSI</span>
@@ -423,17 +429,16 @@ html[data-theme='dark'] .category-card:hover {
   left: 0;
   width: 100%;
   height: 100%;
-
   background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
   z-index: -1;
 }
 
-/* Modo Dark - efecto de luz flotante */
+/* Dark模式 - 悬浮光效 */
 html[data-theme='dark'] .category-card:hover::after {
   background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
 }
 
-/* Animación de enlaces */
+/* 链接动画 */
 .category-card a {
   position: relative;
   display: inline-block;
@@ -442,7 +447,7 @@ html[data-theme='dark'] .category-card:hover::after {
   color: #333;
 }
 
-/* Modo Dark - enlaces */
+/* Dark模式 - 链接 */
 html[data-theme='dark'] .category-card a {
   color: #d1d5db;
 }
@@ -452,7 +457,7 @@ html[data-theme='dark'] .category-card a {
   transform: translateX(5px);
 }
 
-/* Modo Dark - hover de enlaces */
+/* Dark模式 - 链接悬浮 */
 html[data-theme='dark'] .category-card a:hover {
   color: #60a5fa;
 }
@@ -468,7 +473,7 @@ html[data-theme='dark'] .category-card a:hover {
   transition: width 0.3s;
 }
 
-/* Modo Dark - subrayado de enlaces */
+/* Dark模式 - 链接下划线 */
 html[data-theme='dark'] .category-card a::after {
   background: #60a5fa;
 }
@@ -478,10 +483,10 @@ html[data-theme='dark'] .category-card a::after {
 }
 
 .card-container {
-  margin-bottom: 1.5rem; /* originalmente era 0.1rem */
+  margin-bottom: 1.5rem; /* 原为0.1rem */
 }
 
-/* Mejora de estilos de etiquetas */
+/* 标签样式增强 */
 .tag {
   font-size: 0.75rem;
   padding: 2px 8px;
@@ -496,7 +501,7 @@ html[data-theme='dark'] .category-card a::after {
   box-shadow: 0 2px 4px rgba(0,100,0,0.1);
 }
 
-/* Modo Dark - etiqueta Stable */
+/* Dark模式 - Stable标签 */
 html[data-theme='dark'] .stable {
   background: #065f46;
   color: #a7f3d0;
@@ -509,7 +514,7 @@ html[data-theme='dark'] .stable {
   box-shadow: 0 2px 4px rgba(200,0,0,0.1);
 }
 
-/* Modo Dark - etiqueta Recommended */
+/* Dark模式 - Recommended标签 */
 html[data-theme='dark'] .recommended {
   background: #7f1d1d;
   color: #fca5a5;
@@ -521,12 +526,12 @@ html[data-theme='dark'] .recommended {
   box-shadow: 0 6px 10px rgba(0,0,0,0.1);
 }
 
-/* Modo Dark - efecto de clic */
+/* Dark模式 - 点击效果 */
 html[data-theme='dark'] .category-card:active {
   box-shadow: 0 6px 10px rgba(0,0,0,0.4);
 }
 
-/* Optimización responsiva */
+/* 响应式优化 */
 @media (max-width: 768px) {
   .nav-grid {
     grid-template-columns: 1fr;
@@ -534,11 +539,11 @@ html[data-theme='dark'] .category-card:active {
 
   .category-card {
     width: 100%;
-    margin-top: 0.5rem; /* tarjeta pegada al título */
+    margin-top: 0.5rem; /* 卡片紧贴标题 */
   }
 }
 
-/* Modo Dark - texto de títulos */
+/* Dark模式 - 标题文字 */
 html[data-theme='dark'] h1,
 html[data-theme='dark'] h2,
 html[data-theme='dark'] h3,
@@ -548,14 +553,14 @@ html[data-theme='dark'] h6 {
   color: #f9fafb;
 }
 
-/* Modo Dark - texto del cuerpo */
+/* Dark模式 - 正文文字 */
 html[data-theme='dark'] p,
 html[data-theme='dark'] li,
 html[data-theme='dark'] strong {
   color: #e5e7eb;
 }
 
-/* Modo Dark - bloques de cita */
+/* Dark模式 - 引用块 */
 html[data-theme='dark'] blockquote {
   color: #9ca3af;
   border-left-color: #4b5563;
