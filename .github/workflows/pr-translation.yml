@@ -244,8 +244,6 @@ jobs:
             comment += `- 撤回操作会恢复到翻译前的状态\n`;
             comment += `- 每次操作后会自动触发构建检查\n\n`;
 
-            comment += `> 💡 **提示:** 翻译大约需要 ${Math.ceil(parseInt(totalFiles) * 1)} 分钟完成`;
-
             await github.rest.issues.createComment({
               owner,
               repo,
