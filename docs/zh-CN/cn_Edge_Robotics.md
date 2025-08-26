@@ -55,30 +55,30 @@ last_update:
 <div className="card-container">
     <a href="/cn/lerobot_starai_arm/" className="nav-item">
       <span className="text">Starai 机械臂</span>
-      <span className="tag recommended">新</span>
+      <span className="tag recommended">New</span>
     </a>
     <a href="/cn/starai_arm_ros_moveit/" className="nav-item">
       <span className="text">Starai 机械臂 Moveit</span>
-      <span className="tag recommended">新</span>
+      <span className="tag recommended">New</span>
     </a>
     <a href="/cn/lerobot_so100m_new/" className="nav-item">
       <span className="text">SO100/101 机械臂</span>
-      <span className="tag stable">更新</span>
+      <span className="tag stable">Update</span>
     </a>
     <a href="/cn/simulate_soarm101_by_leisaac/" className="nav-item">
       <span className="text">SO100 机械臂与 IsaacSim</span>
-      <span className="tag recommended">新</span>
+      <span className="tag recommended">New</span>
     </a>
     <a href="/cn/lerobot_lekiwi/" className="nav-item">
       <span className="text">Lekiwi 移动底盘</span>
-       <span className="tag recommended">新</span>
+       <span className="tag recommended">New</span>
     </a>
     <a href="/cn/sound_follow_robot/" className="nav-item">
       <span className="text">Lekiwi 声音跟随</span>
     </a>
     <a href="/cn/control_robotic_arm_via_phospho/" className="nav-item">
       <span className="text">Phospho Lerobot</span>
-       <span className="tag recommended">新</span>
+       <span className="tag recommended">New</span>
     </a>
 </div>
 
@@ -140,11 +140,12 @@ last_update:
     </a>
     <a href="/cn/orbbec_gemini_335lg" className="nav-item">
       <span className="text">奥比中光 Gemini 335Lg 立体摄像头</span>
-      <span className="tag recommended">新</span>
+      <span className="tag recommended">New</span>
     </a>
     <a href="/cn/sensing_gmsl_cameras" className="nav-item">
       <span className="text">SENSING GMSL2 摄像头</span>
-      <span className="tag recommended">新</span>
+      <span className="tag recommended">New</span>
+    </a>
     <a href="/cn/orb_slam3_orbbec_gemini2/" className="nav-item">
       <span className="text">ORB-SLAM3 与奥比中光 Gemini2</span>
     </a>
@@ -204,12 +205,12 @@ last_update:
 <div className="card-container">
 <a href="/cn/control_px4_with_recomputer_jetson/" className="nav-item">
   <span className="text">PX4 与 Jetson</span>
-  <span className="tag recommended">新</span>
+  <span className="tag recommended">New</span>
 </a>
 
 <a href="/cn/object_tracking_with_reComputer_jetson_and_pX4/" className="nav-item">
   <span className="text">PX4 目标跟踪</span>
-  <span className="tag recommended">新</span>
+  <span className="tag recommended">New</span>
 </a>
 
 </div>
@@ -222,7 +223,7 @@ last_update:
 </a>
 <a href="/cn/simulate_soarm101_by_leisaac/" className="nav-item">
   <span className="text">SO100 机械臂与 IsaacSim</span>
-  <span className="tag recommended">新</span>
+  <span className="tag recommended">New</span>
 </a>
 </div>
 
@@ -417,6 +418,7 @@ html[data-theme='dark'] .category-card {
 }
 
 /* Dark 模式 - 悬浮特效 */
+
 html[data-theme='dark'] .category-card:hover {
   box-shadow: 0 12px 20px rgba(0,0,0,0.6);
 }
@@ -428,7 +430,6 @@ html[data-theme='dark'] .category-card:hover {
   left: 0;
   width: 100%;
   height: 100%;
-
   background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
   z-index: -1;
 }
