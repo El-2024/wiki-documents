@@ -138,6 +138,14 @@ last_update:
     <a href="/es/orbbec_depth_camera_on_ros/" className="nav-item">
       <span className="text">Cámara de Profundidad Orbbec</span>
     </a>
+    <a href="/es/orbbec_gemini_335lg" className="nav-item">
+      <span className="text">Cámara Estéreo Orbbec Gemini 335Lg</span>
+      <span className="tag recommended">Nuevo</span>
+    </a>
+    <a href="/es/sensing_gmsl_cameras" className="nav-item">
+      <span className="text">Cámaras SENSING GMSL2</span>
+      <span className="tag recommended">Nuevo</span>
+    </a>
     <a href="/es/orb_slam3_orbbec_gemini2/" className="nav-item">
       <span className="text">ORB-SLAM3 con Orbbec Gemini2</span>
     </a>
@@ -426,7 +434,6 @@ html[data-theme='dark'] .category-card:hover {
 }
 
 /* Dark模式 - 悬浮光效 */
-
 html[data-theme='dark'] .category-card:hover::after {
   background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
 }

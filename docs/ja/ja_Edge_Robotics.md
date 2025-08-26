@@ -138,6 +138,14 @@ last_update:
     <a href="/ja/orbbec_depth_camera_on_ros/" className="nav-item">
       <span className="text">Orbbec デプスカメラ</span>
     </a>
+    <a href="/ja/orbbec_gemini_335lg" className="nav-item">
+      <span className="text">Orbbec Gemini 335Lg ステレオカメラ</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/ja/sensing_gmsl_cameras" className="nav-item">
+      <span className="text">SENSING GMSL2 カメラ</span>
+      <span className="tag recommended">New</span>
+    </a>
     <a href="/ja/orb_slam3_orbbec_gemini2/" className="nav-item">
       <span className="text">ORB-SLAM3 with Orbbec Gemini2</span>
     </a>
@@ -257,7 +265,7 @@ html[data-theme='dark'] .quick-nav-container {
     linear-gradient(135deg,rgb(42, 44, 49) 0%,rgb(32, 32, 33) 100%);
   box-shadow: 
     0 4px 6px rgba(0, 0, 0, 0.3),
-    inset 0 0 12px rgba(99, 102, 241, 0.1); /* 内発光増強深度 */
+    inset 0 0 12px rgba(99, 102, 241, 0.1); /* 内发光增强深度 */
 }
 
 /* 導航主体 */
@@ -421,12 +429,12 @@ html[data-theme='dark'] .category-card:hover {
   left: 0;
   width: 100%;
   height: 100%;
+
   background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
   z-index: -1;
 }
 
 /* Dark模式 - 悬浮光効 */
-
 html[data-theme='dark'] .category-card:hover::after {
   background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
 }
@@ -440,7 +448,7 @@ html[data-theme='dark'] .category-card:hover::after {
   color: #333;
 }
 
-/* Darkモード - リンク */
+/* Dark模式 - リンク */
 html[data-theme='dark'] .category-card a {
   color: #d1d5db;
 }
@@ -450,7 +458,7 @@ html[data-theme='dark'] .category-card a {
   transform: translateX(5px);
 }
 
-/* Darkモード - リンクホバー */
+/* Dark模式 - リンクホバー */
 html[data-theme='dark'] .category-card a:hover {
   color: #60a5fa;
 }
@@ -466,7 +474,7 @@ html[data-theme='dark'] .category-card a:hover {
   transition: width 0.3s;
 }
 
-/* Darkモード - リンク下線 */
+/* Dark模式 - リンク下線 */
 html[data-theme='dark'] .category-card a::after {
   background: #60a5fa;
 }
@@ -494,7 +502,7 @@ html[data-theme='dark'] .category-card a::after {
   box-shadow: 0 2px 4px rgba(0,100,0,0.1);
 }
 
-/* Darkモード - Stableタグ */
+/* Dark模式 - Stableタグ */
 html[data-theme='dark'] .stable {
   background: #065f46;
   color: #a7f3d0;
@@ -507,7 +515,7 @@ html[data-theme='dark'] .stable {
   box-shadow: 0 2px 4px rgba(200,0,0,0.1);
 }
 
-/* Darkモード - Recommendedタグ */
+/* Dark模式 - Recommendedタグ */
 html[data-theme='dark'] .recommended {
   background: #7f1d1d;
   color: #fca5a5;
@@ -519,7 +527,7 @@ html[data-theme='dark'] .recommended {
   box-shadow: 0 6px 10px rgba(0,0,0,0.1);
 }
 
-/* Darkモード - クリック効果 */
+/* Dark模式 - クリック効果 */
 html[data-theme='dark'] .category-card:active {
   box-shadow: 0 6px 10px rgba(0,0,0,0.4);
 }
@@ -536,7 +544,7 @@ html[data-theme='dark'] .category-card:active {
   }
 }
 
-/* Darkモード - タイトル文字 */
+/* Dark模式 - タイトル文字 */
 html[data-theme='dark'] h1,
 html[data-theme='dark'] h2,
 html[data-theme='dark'] h3,
@@ -546,14 +554,14 @@ html[data-theme='dark'] h6 {
   color: #f9fafb;
 }
 
-/* Darkモード - 本文文字 */
+/* Dark模式 - 本文文字 */
 html[data-theme='dark'] p,
 html[data-theme='dark'] li,
 html[data-theme='dark'] strong {
   color: #e5e7eb;
 }
 
-/* Darkモード - 引用ブロック */
+/* Dark模式 - 引用ブロック */
 html[data-theme='dark'] blockquote {
   color: #9ca3af;
   border-left-color: #4b5563;
