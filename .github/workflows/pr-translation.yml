@@ -71,7 +71,7 @@ jobs:
           fetch-depth: 2
           fetch-tags: false
           sparse-checkout: |
-            docs/**
+            docs
           sparse-checkout-cone-mode: true
 
       - name: Check for docs changes
@@ -349,8 +349,8 @@ jobs:
           fetch-depth: 2
           fetch-tags: false
           sparse-checkout: |
-            docs/**
-            .github/scripts/**
+            docs
+            .github/scripts
           sparse-checkout-cone-mode: true
           filter: blob:none
 
@@ -685,8 +685,8 @@ jobs:
           fetch-depth: 2
           fetch-tags: false
           sparse-checkout: |
-            docs/**
-            .github/scripts/**
+            docs
+            .github/scripts
           sparse-checkout-cone-mode: true
           filter: blob:none
 
