@@ -132,8 +132,22 @@ last_update:
 **Camera**  
 
 <div className="card-container">
+    <a href="/orbbec_gemini2/" className="nav-item">
+      <span className="text">Getting Start with Orbbec Gemini2 3D Camera</span>
+    </a>
     <a href="/orbbec_depth_camera_on_ros/" className="nav-item">
       <span className="text">Orbbec Depth Camera</span>
+    </a>
+    <a href="/orbbec_gemini_335lg" className="nav-item">
+      <span className="text">Orbbec Gemini 335Lg Stereo Camera</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/sensing_gmsl_cameras" className="nav-item">
+      <span className="text">SENSING GMSL2 Cameras</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/orb_slam3_orbbec_gemini2/" className="nav-item">
+      <span className="text">ORB-SLAM3 with Orbbec Gemini2</span>
     </a>
     <a href="/csi_camera_on_ros/" className="nav-item">
       <span className="text">CSI Camera</span>

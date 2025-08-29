@@ -375,7 +375,7 @@ Our first application will be based on the Blinky example. The Blinky example is
 </div>
 
 
-To get started, **clone the repository from the GitHub link**`git clone https://github.com/Seeed-Studio/platform-seeedboards.git` into your preferred local folder. Once cloned, navigate to the `platform-seeedboards/zephyr/boards` directory. **Remember this `boards` folder Path**;
+To get started, **clone the repository from the GitHub link**`git clone https://github.com/Seeed-Studio/platform-seeedboards.git` into your preferred local folder. Once cloned, navigate to the `platform-seeedboards/zephyr/` directory. **Remember this `zephyr` folder Path**;
 
 To configure your board for nRF Connect in VS Code, you can follow these steps:
 
@@ -385,7 +385,7 @@ To configure your board for nRF Connect in VS Code, you can follow these steps:
 
 - Find the Board Roots settings item and click Edit in settings.json.
 
-- Add the path of the downloaded XIAO nRF54L15 board file to the boardRoots array.
+- Add the `zephyr` path of the downloaded XIAO nRF54L15 board file to the boardRoots array.
 
 <!-- <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/config1.jpg" style={{width:600, height:'auto'}}/></div> -->
 
@@ -745,7 +745,7 @@ If you want to use XIAO nRF54L15 in PlatformIO, please refer to this tutorial to
 
 Using the XIAO nRF54L15 in the nRF Connect SDK 
 To use this code in the nRF Connect SDK, you need to port the following three files `main.c`,`prj.conf`,`app.overlay`
-[XIAO nRF54L15 PlatformIO Configuration](http://localhost:3000/xiao_nrf54l15_sense_getting_started/#power-consumpitons-code-example-for-xiao-nrf54l15-platformio)
+[XIAO nRF54L15 PlatformIO Configuration](http://wiki.seeedstudio.com/xiao_nrf54l15_sense_getting_started/#power-consumpitons-code-example-for-xiao-nrf54l15-platformio)
 :::
 
 

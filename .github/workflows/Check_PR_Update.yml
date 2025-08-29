@@ -34,6 +34,23 @@ on:
       - "SECURITY.md"
       - "README.md"
       - "README_zh-CN.md"
+  
+  # 添加workflow_dispatch，允许从其他工作流触发
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to test'
+        required: true
+        type: string
+      ref:
+        description: 'Branch or commit to test'
+        required: true
+        type: string
+      trigger_source:
+        description: 'What triggered this test'
+        required: false
+        type: string
+        default: 'manual'
 
 env:
   NODE_OPTIONS: --max_old_space_size=20480
@@ -41,10 +58,36 @@ env:
 jobs:
   test-deploy:
     name: Test deployment
-    # 正常运行，不跳过任何检查
     runs-on: ubuntu-latest
     steps:
+      - name: Get PR info (for workflow_dispatch)
+        if: github.event_name == 'workflow_dispatch'
+        id: pr-info
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const pr_number = '${{ inputs.pr_number }}';
+            
+            try {
+              const { data: pr } = await github.rest.pulls.get({
+                owner,
+                repo,
+                pull_number: parseInt(pr_number)
+              });
+              
+              core.setOutput('sha', pr.head.sha);
+              core.setOutput('ref', pr.head.ref);
+              console.log(`PR #${pr_number}: branch=${pr.head.ref}, sha=${pr.head.sha}`);
+            } catch (error) {
+              console.error('Failed to get PR info:', error);
+              core.setOutput('sha', '${{ inputs.ref }}');
+              core.setOutput('ref', '${{ inputs.ref }}');
+            }
+      
       - uses: actions/checkout@v3
+        with:
+          ref: ${{ steps.pr-info.outputs.ref || github.ref }}
       
       - uses: actions/setup-node@v3
         with:
@@ -57,46 +100,48 @@ jobs:
       - name: Test build website
         run: yarn docusaurus build
         
+      # 报告状态到PR（不添加评论）
       - name: Report status to PR
-        if: github.event_name == 'push'
+        if: always()
+        continue-on-error: true
         uses: actions/github-script@v7
         with:
           script: |
-            // 获取相关的PR
             const { owner, repo } = context.repo;
-            const branch = context.ref.replace('refs/heads/', '');
+            const success = '${{ job.status }}' === 'success';
+            
+            // 获取正确的SHA和context
+            let sha, statusContext;
+            
+            if ('${{ github.event_name }}' === 'workflow_dispatch') {
+              sha = '${{ steps.pr-info.outputs.sha }}';
+              const triggerSource = '${{ inputs.trigger_source }}';
+              
+              if (triggerSource === 'translation') {
+                statusContext = 'Test deployment (post-translation)';
+              } else if (triggerSource === 'rollback') {
+                statusContext = 'Test deployment (post-rollback)';
+              } else {
+                statusContext = 'Test deployment (manual)';
+              }
+            } else {
+              sha = context.sha;
+              statusContext = 'Test deployment';
+            }
             
             try {
-              // 查找与这个分支关联的PR
-              const { data: prs } = await github.rest.pulls.list({
+              // 创建commit status（只显示在PR的checks中，不添加评论）
+              await github.rest.repos.createCommitStatus({
                 owner,
                 repo,
-                head: `${owner}:${branch}`,
-                state: 'open'
+                sha: sha,
+                state: success ? 'success' : 'failure',
+                target_url: `https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }}`,
+                description: success ? '✅ Build succeeded' : '❌ Build failed',
+                context: statusContext
               });
               
-              if (prs.length > 0) {
-                const pr = prs[0];
-                const success = '${{ job.status }}' === 'success';
-                
-                // 创建一个check run来显示状态
-                await github.rest.checks.create({
-                  owner,
-                  repo,
-                  name: 'Docusaurus Build Check',
-                  head_sha: context.sha,
-                  status: 'completed',
-                  conclusion: success ? 'success' : 'failure',
-                  output: {
-                    title: success ? 'Build Successful' : 'Build Failed',
-                    summary: success ? 
-                      '✅ The documentation build completed successfully.' : 
-                      '❌ The documentation build failed. Please check the logs.'
-                  }
-                });
-                
-                console.log(`Status reported for PR #${pr.number}`);
-              }
+              console.log(`Status reported: ${statusContext} - ${success ? 'success' : 'failure'}`);
             } catch (error) {
-              console.error('Failed to report status:', error);
+              console.error('Failed to report status:', error.message);
             }
