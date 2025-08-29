@@ -3441,7 +3441,6 @@ const sidebars = {
             items:[
               'Edge/Raspberry_Pi_Devices/Application/Large_language_Model/deploy_deepseek_on_raspberry_pi_ai_box',
               'Edge/Raspberry_Pi_Devices/Application/Large_language_Model/distributed_inference_of_deepseek_model_on_raspberrypi'
-
             ]
           },
           {
@@ -3449,7 +3448,7 @@ const sidebars = {
             label: 'Tools',
             items:[
               'Edge/Raspberry_Pi_Devices/Application/Development_Tools/recomputer_use_uv_to_build_package',
-
+              'Edge/Raspberry_Pi_Devices/Application/Development_Tools/recomputer_use_docker'
             ]
           }
         ]

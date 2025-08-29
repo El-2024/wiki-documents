@@ -5,7 +5,7 @@ keywords:
   - Edge
   - RasberryPi 5
   - python
-image: https://files.seeedstudio.com/wiki/AI_Sensing/Application/uv/uv_speed.webp
+image: https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_speed.webp
 slug: /use_uv_to_build_package_on_recomputer
 last_update:
   date: 08/21/2025
@@ -20,7 +20,7 @@ no_comments: false # for Disqus
 
 This wiki explains how to use the [uv](https://github.com/astral-sh/uv) on reComputer box. uv is a fast, modern, and lightweight package manager and resolver for Python. It is designed to be a drop-in replacement for traditional Python package management tools like ```pip``` and ```pip-tools```, offering significant improvements in speed, efficiency, and usability.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Sensing/Application/uv/uv_speed.png" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_speed.png" style={{width:600, height:'auto'}}/></div>
 
 
 ## Prepare Hardware
@@ -89,7 +89,7 @@ Check the structure of the project
 ls -la
 tree
 ```
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Sensing/Application/uv/uv_tree.png" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_tree.png" style={{width:600, height:'auto'}}/></div>
 
 ### Creat a python environment
 
@@ -98,7 +98,7 @@ Here you can creat a python environmet
 uv venv 
 source .venv/bin/activate
 ```
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Sensing/Application/uv/uv_environment.png" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_environment.png" style={{width:600, height:'auto'}}/></div>
 
 ### Add dependencies
 
@@ -151,7 +151,7 @@ if __name__ == "__main__":
 
 The results are as follows:
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Sensing/Application/uv/pytest.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/pytest.png" style={{width:800, height:'auto'}}/></div>
 
 ### Build the package
 
@@ -165,7 +165,7 @@ ls -a
 ```
 The results are as follows：
 
- <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Sensing/Application/uv/uv_build.png" style={{width:800, height:'auto'}}/></div>
+ <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_build.png" style={{width:800, height:'auto'}}/></div>
 
 ### Test the package
 
@@ -175,7 +175,7 @@ Install the package as below:
 uv pip install dist/uv_test-0.1.0-py3-none-any.whl 
 ```
 
- <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Sensing/Application/uv/uv_install.png" style={{width:800, height:'auto'}}/></div>
+ <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_install.png" style={{width:800, height:'auto'}}/></div>
 
 Use `python` script to test the packag:
 
@@ -202,13 +202,13 @@ uv publish
 
 The result is like as below, and input your token:
 
- <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Sensing/Application/uv/uv_pubilsh.png" style={{width:800, height:'auto'}}/></div>
+ <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_pubilsh.png" style={{width:800, height:'auto'}}/></div>
 
 ## Result
 
 Finally, you can see your uploaded project on PyPI.
 
- <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Sensing/Application/uv/uv_result.png" style={{width:800, height:'auto'}}/></div>
+ <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_result.png" style={{width:800, height:'auto'}}/></div>
 
 
 ## Tech Support & Product Discussion
