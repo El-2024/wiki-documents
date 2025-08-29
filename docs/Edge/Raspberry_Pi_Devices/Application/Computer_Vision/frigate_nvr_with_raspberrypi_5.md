@@ -286,7 +286,7 @@ services:
         container_name: frigate-hailo
         privileged: true
         restart: unless-stopped
-        image: frigate_seeed:latest
+        image: mjqx2023/frigate_seeed:latest
         shm_size: 1024mb
         environment:
             - HAILO_MONITOR=1
