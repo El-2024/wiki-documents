@@ -318,7 +318,7 @@ Remember that for storing more than 3 images, you'll need a properly formatted M
 ## Resources
 
 - [SenseCraft HMI Platform](https://sensecraft.seeed.cc/hmi)
-- [Compatible Devices - reTerminal E10xx](https://wiki.seeedstudio.com/reterminal_e10xx_main_page/)
+- [Compatible Devices - reTerminal E Series](https://wiki.seeedstudio.com/reterminal_e10xx_main_page/)
 
 ## Tech Support & Product Discussion
 
