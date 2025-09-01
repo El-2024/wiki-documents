@@ -1,12 +1,12 @@
 ---
-description: This wiki will show you how to use uv to manange your python object
-title: Use uv on reComputer
+description: 本 wiki 将向您展示如何使用 uv 来管理您的 python 对象
+title: 在 reComputer 上使用 uv
 keywords:
   - Edge
   - RasberryPi 5
   - python
 image: https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/recomputer_r2145.webp
-slug: /use_uv_to_build_package_on_recomputer
+slug: /cn/use_uv_to_build_package_on_recomputer
 last_update:
   date: 08/21/2025
   author: Jiahao
@@ -14,16 +14,16 @@ last_update:
 no_comments: false # for Disqus
 ---
 
-# Use uv on reComputer
+# 在 reComputer 上使用 uv
 
-## Introduction
+## 介绍
 
-This wiki explains how to use the [uv](https://github.com/astral-sh/uv) on reComputer box. uv is a fast, modern, and lightweight package manager and resolver for Python. It is designed to be a drop-in replacement for traditional Python package management tools like ```pip``` and ```pip-tools```, offering significant improvements in speed, efficiency, and usability.
+本 wiki 解释了如何在 reComputer 盒子上使用[uv](https://github.com/astral-sh/uv)。uv 是一个快速、现代且轻量级的 Python 包管理器和解析器。它被设计为传统 Python 包管理工具如```pip```和```pip-tools```的直接替代品，在速度、效率和可用性方面提供了显著的改进。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_speed.png" style={{width:600, height:'auto'}}/></div>
 
 
-## Prepare Hardware
+## 准备硬件
 
 <div class="table-center">
 	<table align="center">
@@ -40,26 +40,26 @@ This wiki explains how to use the [uv](https://github.com/astral-sh/uv) on reCom
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1125-10-p-6256.html" target="_blank">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-AI-R2130-12-p-6368.html" target="_blank">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-AI-Industrial-R2145-12-p-6486.html" target="_blank">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				<strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 				</a>
 			</div></td>
 		</tr>
 	</table>
 </div>
 
-## Prepare software
+## 准备软件
 
-### update the system:
+### 更新系统：
 
 ```bash
 sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
@@ -67,23 +67,23 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-### Install uv
+### 安装 uv
 
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-## Use uv 
-###  Init the project
+## 使用 uv
+### 初始化项目
 
-Here, we use `uv_test` as an example to demonstrate the usage of `uv`.
-> **Note:** Please make different project name make sure it is different from any package on PyPI.
+这里，我们使用`uv_test`作为示例来演示`uv`的用法。
+> **注意：** 请使用不同的项目名称，确保它与 PyPI 上的任何包都不同。
 
 ```bash
 uv init uv_test --package
 cd uv_test
 ```
-Check the structure of the project
+检查项目的结构
 
 ```bash
 ls -la
@@ -91,26 +91,26 @@ tree
 ```
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_tree.png" style={{width:600, height:'auto'}}/></div>
 
-### Creat a python environment
+### 创建 python 环境
 
-Here you can creat a python environmet
+这里您可以创建一个 python 环境
 ```bash
 uv venv 
 source .venv/bin/activate
 ```
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_environment.png" style={{width:600, height:'auto'}}/></div>
 
-### Add dependencies
+### 添加依赖项
 
-Use `numpy` to build funcation:
+使用`numpy`来构建功能：
 
 ```bash
 uv add numpy
 ```
 
-### Creat funcation
+### 创建功能
 
-Use NumPy to write an `add` function on `add.py` as an example:
+使用 NumPy 在`add.py`上编写一个`add`函数作为示例：
 
 <details>
   <summary>add.py</summary>
@@ -137,7 +137,7 @@ def add(arr1: np.ndarray, arr2: np.ndarray) -> np.ndarray:
         result = np.add(arr1, arr2)
     except ValueError:
         raise ValueError("Input arrays have incompatible shapes for element-wise addition.")
-    
+
     return result
 
 if __name__ == "__main__":
@@ -149,27 +149,27 @@ if __name__ == "__main__":
 ```
 </details> 
 
-The results are as follows:
+结果如下：
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/pytest.png" style={{width:800, height:'auto'}}/></div>
 
-### Build the package
+### 构建包
 
-To build the project into a usable `.whl` file, modify the `toml` file as follow:
+要将项目构建为可用的`.whl`文件，请按如下方式修改`toml`文件：
 
-Build the package:
+构建包：
 
 ```bash
 uv build
 ls -a
 ```
-The results are as follows：
+结果如下：
 
  <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_build.png" style={{width:800, height:'auto'}}/></div>
 
-### Test the package
+### 测试包
 
-Install the package as below:
+按如下方式安装包：
 
 ```
 uv pip install dist/uv_test-0.1.0-py3-none-any.whl 
@@ -177,7 +177,7 @@ uv pip install dist/uv_test-0.1.0-py3-none-any.whl
 
  <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_install.png" style={{width:800, height:'auto'}}/></div>
 
-Use `python` script to test the packag:
+使用`python`脚本测试包：
 
 <details>
   <summary>add.py</summary>
@@ -193,27 +193,27 @@ if __name__ == "__main__":
 </details>
 
 
-### Push the package to PyPi
-If you don't have a PyPI account, please register an [account](https://pypi.org/account/register/) and get creat [token](https://pypi.org/manage/account/token/).
+### 将包推送到 PyPi
+如果您没有 PyPI 账户，请注册一个[账户](https://pypi.org/account/register/)并创建[令牌](https://pypi.org/manage/account/token/)。
 
 ```
 uv publish
 ```
 
-The result is like as below, and input your token:
+结果如下所示，输入您的令牌：
 
  <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_pubilsh.png" style={{width:800, height:'auto'}}/></div>
 
-## Result
+## 结果
 
-Finally, you can see your uploaded project on PyPI.
+最后，您可以在 PyPI 上看到您上传的项目。
 
  <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_result.png" style={{width:800, height:'auto'}}/></div>
 
 
-## Tech Support & Product Discussion
+## 技术支持与产品讨论
 
-Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

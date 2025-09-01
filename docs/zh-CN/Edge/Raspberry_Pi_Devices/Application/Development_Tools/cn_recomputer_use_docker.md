@@ -1,12 +1,12 @@
 ---
-description: This wiki will show you how to use docker on recomputer
-title: Use docker on reComputer
+description: 这个 wiki 将向您展示如何在 reComputer 上使用 docker
+title: 在 reComputer 上使用 docker
 keywords:
   - Edge
   - RasberryPi 5
   - Docker
 image: https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/recomputer_use_docker.webp
-slug: /use_docekr_on_recomputer
+slug: /cn/use_docekr_on_recomputer
 last_update:
   date: 08/25/2025
   author: Jiahao
@@ -14,15 +14,15 @@ last_update:
 no_comments: false # for Disqus
 ---
 
-# Use docker on reComputer
+# 在 reComputer 上使用 docker
 
-## Introduction
+## 介绍
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker.png" style={{width:300, height:'auto'}}/></div>
 
-This wiki explains how to use the [docker](https://www.docker.com) on reComputer box. Docker is an open-source platform used to automate the deployment, scaling, and management of applications inside lightweight, portable containers. Containers allow developers to package applications and their dependencies together in a consistent environment, ensuring that they run smoothly across different computing environments.
+这个 wiki 解释了如何在 reComputer 盒子上使用[docker](https://www.docker.com)。Docker 是一个开源平台，用于在轻量级、可移植的容器内自动化应用程序的部署、扩展和管理。容器允许开发人员将应用程序及其依赖项打包在一个一致的环境中，确保它们在不同的计算环境中平稳运行。
 
-## Prepare Hardware
+## 准备硬件
 
 <div class="table-center">
 	<table align="center">
@@ -56,9 +56,9 @@ This wiki explains how to use the [docker](https://www.docker.com) on reComputer
 	</table>
 </div>
 
-## Prepare software
+## 准备软件
 
-### update the system:
+### 更新系统：
 
 ```bash
 sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
@@ -66,38 +66,38 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-### Install docker
+### 安装 docker
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
 
-### Add the current user to the docker group
+### 将当前用户添加到 docker 组
 
 ```bash
 sudo usermod -aG docker $USER
 reboot
 ```
-### Check docker version
+### 检查 docker 版本
 
 ```bash
 docker --version
 ```
-The result is as follow:
+结果如下：
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker_version.png" style={{width:600, height:'auto'}}/></div>
 
-## Use docker 
-###  Creat your project
-Here, we use `my_app` as an example to demonstrate the usage of `docker`.
+## 使用 docker
+### 创建您的项目
+在这里，我们使用`my_app`作为示例来演示`docker`的使用。
 
 ```bash
 mkdir my_app
 cd my_app
 ```
 
-### Creat `src` folder and creat `main.py`
+### 创建`src`文件夹并创建`main.py`
 
 ```bash
 mkdir src && cd src
@@ -137,7 +137,7 @@ async def read_item(item_id: int, q: str = None):
 ```
 </details>
 
-### Creat `static` folder
+### 创建`static`文件夹
 
 ```bash
 cd .. && mkdir static
@@ -145,7 +145,7 @@ cd static
 mkdir css && mkdir js
 ```
 
-Creat `css` file:
+创建`css`文件：
 
 ```bash
 cd css 
@@ -274,7 +274,7 @@ footer i {
 </details>
 
 
-Then creat `js` file:
+然后创建`js`文件：
 
 ```bash
 cd .. && mkdir js
@@ -299,14 +299,14 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 100);
         });
     }
-    
+
     // Add a hover effect to the cards
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-5px)';
         });
-        
+
         card.addEventListener('mouseleave', function() {
             this.style.transform = '';
         });
@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 </details>
 
-### Creat `html` file
+### 创建`html`文件
 
 ```bash
 cd ../../
@@ -395,12 +395,12 @@ nano index.html
     <div class="container">
         <h1>FastAPI Application</h1>
         <p>A modern, high-performance web application</p>
-        
+
         <div class="card">
             <h2>About This App</h2>
             <p>This is a simple yet elegant web application built with FastAPI. It demonstrates how to create a beautiful UI with minimal code.</p>
         </div>
-        
+
         <div class="card">
             <h2>Features</h2>
             <ul>
@@ -410,17 +410,17 @@ nano index.html
                 <li>RESTful API endpoints</li>
             </ul>
         </div>
-        
+
         <div class="card">
             <h2>Try the API</h2>
             <p>You can access the API endpoints directly:</p>
             <div class="endpoint">
                 <code>GET /items/{item_id}</code>
-                <a href="/items/42" class="button">Try it</a>
+                <a href="/cn/items/42" class="button">Try it</a>
             </div>
         </div>
     </div>
-    
+
     <script src="/static/js/main.js"></script>
 </body>
 </html>
@@ -428,7 +428,7 @@ nano index.html
 </details>
 
 
-### Creat `Dockerfile`
+### 创建`Dockerfile`
 
 ```bash
 cd ..
@@ -465,11 +465,12 @@ EXPOSE 8000
 
 # Define the command to run the application
 CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
 ```
 
 </details>
 
-### Creat `requirements.txt`
+### 创建 `requirements.txt`
 
 ```bash
 nano  requirements.txt
@@ -485,7 +486,7 @@ jinja2
 ```
 </details>
 
-### The project directory is as follows
+### 项目目录结构如下
 
 ```bash
 tree
@@ -493,11 +494,11 @@ tree
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker_tree.png" style={{width:600, height:'auto'}}/></div>
 
-## Build and pubilsh image
+## 构建和发布镜像
 
-### Build image
+### 构建镜像
 
->Note:If you have no account for the [dockerhub](https://hub.docker.com/), please register an account.`xxx`is username of you docker hub.
+>注意：如果您没有 [dockerhub](https://hub.docker.com/) 账户，请注册一个账户。`xxx` 是您的 docker hub 用户名。
 
 ```bash
 docker build -t xxx/fastapi_app_ui:latest .
@@ -506,7 +507,7 @@ docker build -t xxx/fastapi_app_ui:latest .
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker_image.png" style={{width:1000, height:'auto'}}/></div>
 
 
-### Test the image
+### 测试镜像
 
 ```bash
 docker image ls -a
@@ -519,22 +520,22 @@ docker image ls -a
 docker run -d -p 8000:8000 jiahaoxyz/fastapi_app_ui
 ```
 
-The result is show as below ：
+结果如下所示：
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker_2.png" style={{width:1000, height:'auto'}}/></div>
 
-### Publish the image
+### 发布镜像
 
-and creat your own [token](https://app.docker.com/settings). 
+并创建您自己的 [token](https://app.docker.com/settings)。
 
->Note: `xxx` is your own username of dockerhub
+>注意：`xxx` 是您自己的 dockerhub 用户名
 
 ```sh
 docker login -u xxx
 ```
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/dockerhub.png" style={{width:1000, height:'auto'}}/></div>
 
->Note: `xxx` is your own username of dockerhub
+>注意：`xxx` 是您自己的 dockerhub 用户名
 
 ```sh
 docker push xxx/fastapi_app_ui:latest
@@ -542,21 +543,21 @@ docker push xxx/fastapi_app_ui:latest
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker_3.png" style={{width:1000, height:'auto'}}/></div>
 
 
-## Result 
+## 结果
 
-You can see that the image packaged using Docker has been uploaded to Docker Hub, and it is available for anyone to use.
+您可以看到使用 Docker 打包的镜像已经上传到 Docker Hub，任何人都可以使用它。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker_result.png" style={{width:1000, height:'auto'}}/></div>
 
-You can use my images as below, and here is the project [github page](https://github.com/LJ-Hao/Use_Docker_on_reComputer_Raspberrypi)：
+您可以使用我的镜像，如下所示，这里是项目的 [github 页面](https://github.com/LJ-Hao/Use_Docker_on_reComputer_Raspberrypi)：
 
 ```sh
 docker pull jiahaoxyz/fastapi_app_ui
 ```
 
-## Tech Support & Product Discussion
+## 技术支持与产品讨论
 
-Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
