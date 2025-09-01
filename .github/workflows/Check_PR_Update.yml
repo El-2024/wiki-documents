@@ -1,5 +1,9 @@
 name: Test deployment
 
+permissions:
+  contents: read
+  statuses: write
+
 on:
   pull_request:
     paths-ignore:
@@ -46,6 +50,10 @@ on:
         description: 'Branch or commit to test'
         required: true
         type: string
+      head_repo:
+        description: 'Head repo full_name (owner/repo)'
+        required: false
+        type: string
       trigger_source:
         description: 'What triggered this test'
         required: false
@@ -68,25 +76,27 @@ jobs:
           script: |
             const { owner, repo } = context.repo;
             const pr_number = '${{ inputs.pr_number }}';
-            
+            const inputRef = '${{ inputs.ref }}';
+            const inputHeadRepo = '${{ inputs.head_repo }}';
+
             try {
               const { data: pr } = await github.rest.pulls.get({
-                owner,
-                repo,
-                pull_number: parseInt(pr_number)
+                owner, repo, pull_number: parseInt(pr_number)
               });
-              
               core.setOutput('sha', pr.head.sha);
               core.setOutput('ref', pr.head.ref);
-              console.log(`PR #${pr_number}: branch=${pr.head.ref}, sha=${pr.head.sha}`);
+              core.setOutput('head-repo', pr.head.repo.full_name);
+              core.info(`PR #${pr_number}: head=${pr.head.repo.full_name} ref=${pr.head.ref} sha=${pr.head.sha}`);
             } catch (error) {
-              console.error('Failed to get PR info:', error);
-              core.setOutput('sha', '${{ inputs.ref }}');
-              core.setOutput('ref', '${{ inputs.ref }}');
+              core.warning('Failed to get PR via API, fallback to inputs: ' + error.message);
+              core.setOutput('sha', inputRef);        // 只是占位；稍后 checkout 后我们不会用它
+              core.setOutput('ref', inputRef);
+              core.setOutput('head-repo', inputHeadRepo || '');
             }
       
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
+          repository: ${{ github.event_name == 'workflow_dispatch' && steps.pr-info.outputs['head-repo'] || github.repository }}
           ref: ${{ steps.pr-info.outputs.ref || github.ref }}
       
       - uses: actions/setup-node@v3
@@ -109,39 +119,29 @@ jobs:
           script: |
             const { owner, repo } = context.repo;
             const success = '${{ job.status }}' === 'success';
-            
-            // 获取正确的SHA和context
-            let sha, statusContext;
-            
-            if ('${{ github.event_name }}' === 'workflow_dispatch') {
-              sha = '${{ steps.pr-info.outputs.sha }}';
-              const triggerSource = '${{ inputs.trigger_source }}';
-              
-              if (triggerSource === 'translation') {
-                statusContext = 'Test deployment (post-translation)';
-              } else if (triggerSource === 'rollback') {
-                statusContext = 'Test deployment (post-rollback)';
-              } else {
-                statusContext = 'Test deployment (manual)';
-              }
+
+            let sha;
+            if (context.eventName === 'pull_request') {
+              sha = context.payload.pull_request.head.sha;
+            } else if (context.eventName === 'workflow_dispatch') {
+              sha = '${{ steps.pr-info.outputs.sha }}' || '${{ inputs.ref }}';
             } else {
               sha = context.sha;
-              statusContext = 'Test deployment';
             }
-            
+
+            const statusContext = 'Test deployment (required)';
+
             try {
-              // 创建commit status（只显示在PR的checks中，不添加评论）
               await github.rest.repos.createCommitStatus({
                 owner,
                 repo,
-                sha: sha,
+                sha,
                 state: success ? 'success' : 'failure',
                 target_url: `https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }}`,
                 description: success ? '✅ Build succeeded' : '❌ Build failed',
                 context: statusContext
               });
-              
-              console.log(`Status reported: ${statusContext} - ${success ? 'success' : 'failure'}`);
+              core.info(`Status reported on ${sha}: ${statusContext} = ${success ? 'success' : 'failure'}`);
             } catch (error) {
-              console.error('Failed to report status:', error.message);
+              core.warning('Failed to report status: ' + error.message);
             }
