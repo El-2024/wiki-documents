@@ -11,14 +11,17 @@ last_update:
 
 # Getting Started with reTerminal E1002
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/132.jpg" style={{width:700, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/132.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/getting_started_with_reterminal_e1002" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
-</div>
+</div><br />
 
+:::caution
+We recommend that you **[complete your product's firmware update](#preliminary)** as soon as you receive it for the best experience.
+:::
 
 ## Introduction
 
@@ -63,7 +66,7 @@ The reTerminal E1002 hardware includes:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/133.jpg" style={{width:700, height:'auto'}}/></div>
 
 :::note
-The reTerminal E10xx only supports MicroSD cards up to 64GB in Fat32 format.
+The reTerminal E Series only supports MicroSD cards up to 64GB in Fat32 format.
 :::
 
 **Step 3.** (Optional) Install USB drivers if needed:
@@ -147,7 +150,7 @@ So, we need to complete the next steps of configuring the network during this ti
 **Step 3.** Select your local Wi-Fi network and enter the password, then click "Connect".
 
 :::note
-The reTerminal E10xx series only supports 2.4GHz WiFi networks, not 5GHz or other bands.
+The reTerminal E Series only supports 2.4GHz WiFi networks, not 5GHz or other bands.
 :::
 
 **Step 4.** Upon successful connection, the device will emit a confirmation beep and display a pairing code screen.
@@ -407,8 +410,8 @@ The stand allows the device to be placed on desks, countertops, or shelves, maki
 
 ## Resources
 
-- [reTerminal E1002 Schematic (PDF)](/getting_started_with_reterminal_e1002)
-- [ESP32S3 Datasheet](/getting_started_with_reterminal_e1002)
+- [reTerminal E1002 Schematic (PDF)](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/202004321_reTerminal_E1002_V1.0_SCH_250805.pdf)
+- [ESP32-S3 Datasheet](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/esp32-s3_datasheet.pdf)
 - [SenseCraft HMI Platform Documentation](https://wiki.seeedstudio.com/sensecraft_hmi_overview)
 - [GitHub Repository](/getting_started_with_reterminal_e1002)
 

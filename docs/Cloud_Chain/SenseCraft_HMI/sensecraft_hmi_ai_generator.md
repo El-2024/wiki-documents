@@ -242,7 +242,7 @@ Whether you're generating custom images in Gallery or complete interactive inter
 ## Resources
 
 - [SenseCraft HMI Platform](https://sensecraft.seeed.cc/hmi)
-- [Compatible Devices - reTerminal E10xx](https://wiki.seeedstudio.com/reterminal_e10xx_main_page/)
+- [Compatible Devices - reTerminal E Series](https://wiki.seeedstudio.com/reterminal_e10xx_main_page/)
 
 ## Tech Support & Product Discussion
 
