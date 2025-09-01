@@ -1,6 +1,6 @@
 ---
-description: This article describes how to utilise the hardware capabilities of the reTerminal E10xx series on ESPHome.
-title: Advanced ESPHome Usage of reTerminal E10xx in Home Assistant
+description: This article describes how to utilise the hardware capabilities of the reTerminal E Series on ESPHome.
+title: Advanced ESPHome Usage of reTerminal E Series in Home Assistant
 image: https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.webp
 slug: /reterminal_e10xx_with_esphome_advanced
 sidebar_position: 3
@@ -9,15 +9,15 @@ last_update:
   author: Citric
 ---
 
-# Advanced ESPHome Usage of reTerminal E10xx in Home Assistant
+# Advanced ESPHome Usage of reTerminal E Series in Home Assistant
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.jpg" style={{width:700, height:'auto'}}/></div><br />
 
-This article explores advanced ESPHome configurations for your reTerminal E10xx device, building upon the foundational concepts covered in our [Basic ESPHome Usage guide](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome). If you're new to ESPHome or the reTerminal E10xx, we recommend starting with the basic guide before diving into these advanced applications.
+This article explores advanced ESPHome configurations for your reTerminal E Series device, building upon the foundational concepts covered in our [Basic ESPHome Usage guide](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome). If you're new to ESPHome or the reTerminal E Series, we recommend starting with the basic guide before diving into these advanced applications.
 
 ## Hardware Capabilities
 
-The reTerminal E10xx includes several hardware components that can be leveraged in Home Assistant through ESPHome:
+The reTerminal E Series includes several hardware components that can be leveraged in Home Assistant through ESPHome:
 
 - Three programmable buttons (GPIO3, GPIO4, GPIO5)
 
@@ -31,13 +31,13 @@ The reTerminal E10xx includes several hardware components that can be leveraged 
 
 Let's explore how to use each of these components in practical applications.
 
-## reTerminal E10xx Hardware Component Control
+## reTerminal E Series Hardware Component Control
 
-Let's explore how to use each of the hardware components on the reTerminal E10xx in Home Assistant.
+Let's explore how to use each of the hardware components on the reTerminal E Series in Home Assistant.
 
 ### Buttons and LED
 
-This example demonstrates how to use the three buttons on your reTerminal E10xx to control functions and provide visual feedback with the on-board LED.
+This example demonstrates how to use the three buttons on your reTerminal E Series to control functions and provide visual feedback with the on-board LED.
 
 You can use this example by copying the code below and pasting it after the `captive_portal` code line in your Yaml file.
 
@@ -115,7 +115,7 @@ This configuration:
 
 ### Buzzer Control
 
-The reTerminal E10xx includes a buzzer on GPIO45 that can be used to provide audible feedback. Here's how to configure it:
+The reTerminal E Series includes a buzzer on GPIO45 that can be used to provide audible feedback. Here's how to configure it:
 
 You can use this example by copying the code below and pasting it after the `captive_portal` code line in your Yaml file.
 
@@ -180,7 +180,7 @@ You can adjust the `frequency` parameter to change the tone of the buzzer. Highe
 
 ### Battery Monitoring
 
-The reTerminal E10xx can monitor its battery level through the analog input on GPIO1. Here's how to set it up:
+The reTerminal E Series can monitor its battery level through the analog input on GPIO1. Here's how to set it up:
 
 ```yaml
 esphome:
@@ -279,7 +279,7 @@ To measure the battery level, you need to enable the **GPIO21** pin. Otherwise i
 
 ## Demo 2. Take the Home Assistant Dashboard as a Screenshot
 
-This example demonstrates how to capture screenshots of your Home Assistant dashboard and display them on your reTerminal E10xx.
+This example demonstrates how to capture screenshots of your Home Assistant dashboard and display them on your reTerminal E Series.
 
 ### Installing the [Puppet](https://github.com/balloob/home-assistant-addons) Add-on
 
@@ -327,7 +327,7 @@ The Puppet add-on launches a server on port 10000 that generates screenshots of 
 http://homeassistant.local:10000/lovelace/0?viewport=800x480
 ```
 
-This URL will capture a screenshot of your default dashboard at 800x480 resolution (perfect for reTerminal E10xx).
+This URL will capture a screenshot of your default dashboard at 800x480 resolution (perfect for reTerminal E Series).
 
 #### E-Paper Optimization:
 
@@ -405,7 +405,7 @@ display:
 Replace `homeassistant.local` with your Home Assistant's actual IP address if local DNS resolution doesn't work in your network.
 :::
 
-When your configuration is successfully uploaded and running, your reTerminal E10xx will display a screenshot of your Home Assistant dashboard:
+When your configuration is successfully uploaded and running, your reTerminal E Series will display a screenshot of your Home Assistant dashboard:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/54.jpg" style={{width:600, height:'auto'}}/></div>
 
@@ -415,7 +415,7 @@ When your configuration is successfully uploaded and running, your reTerminal E1
 If you start using the Deep Sleep program, we recommend that you use it preferably with the white button on the right side and set the white button on the right side as the Sleep Wake button. This way, when you want to update the program, you won't encounter the awkward situation where the device is sleeping and you can't upload the program through the serial port.
 :::
 
-This example demonstrates how to use deep sleep mode to significantly reduce power consumption, making your reTerminal E10xx suitable for battery-powered applications.
+This example demonstrates how to use deep sleep mode to significantly reduce power consumption, making your reTerminal E Series suitable for battery-powered applications.
 
 You can use this example by copying the code below and pasting it after the `captive_portal` code line in your Yaml file.
 
@@ -488,7 +488,7 @@ When running, you'll see a counter increment each time the device wakes from sle
 For a better understanding, we strongly recommend that you run the basic examples above first before trying this comprehensive example.
 :::
 
-This advanced example combines multiple features into a complete dashboard solution for the reTerminal E10xx. It demonstrates:
+This advanced example combines multiple features into a complete dashboard solution for the reTerminal E Series. It demonstrates:
 
 1. Weather and indoor climate display
 2. Battery monitoring with icons
@@ -820,7 +820,7 @@ display:
 
 </details>
 
-When your configuration is successfully uploaded and running, your reTerminal E10xx will display a comprehensive dashboard with environment data, time, and battery status:
+When your configuration is successfully uploaded and running, your reTerminal E Series will display a comprehensive dashboard with environment data, time, and battery status:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/55.gif" style={{width:800, height:'auto'}}/></div>
 
