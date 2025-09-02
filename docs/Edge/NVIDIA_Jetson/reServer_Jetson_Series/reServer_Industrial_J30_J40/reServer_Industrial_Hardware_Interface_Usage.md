@@ -825,7 +825,12 @@ You can make the connection for DI by following the diagram below. It is better 
 
 ### Usage for DI
 
-You need to input a voltage of 12V on the DI line in order to get detected as an input
+You need to input a voltage of 12V on the DI line in order to get detected as an input. The command to enable DI / DO is different between Jetpack 5 and Jetpack 6. 
+
+
+
+<Tabs>
+<TabItem value="Jetpack 5" label="Jetpack 5">
 
 - **Step 1:** Make the connetions as shown above to **DI1 pin** and input **12V**
 
@@ -850,6 +855,37 @@ cat value
 
 If it outputs 0, that means there is 12V input. If it outputs 1, that means there is no input voltage.
 
+</TabItem>
+<TabItem value="Jetpack 6" label="Jetpack 6">
+
+- **Step 1:** Make the connetions as shown above to **DI1 pin** and input **12V**
+
+- **Step 2:** Check the **line offset** of DI1 on chip0, :
+
+```sh
+gpioinfo gpiochip0
+```
+Find the corresponding **line offset** based on the BGA number. The **line offset** of DI1 is `105`.
+
+<div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reServer-Industrial/reserver-di.jpg"/></div>
+
+
+:::note
+You can refer the **DI/ DO Pin Assignment Table** to find the GPIO number and BGA number. In the above example, for DI1 pin, GPIO number is 453 and BGA number is PQ.05	
+:::
+
+- **Step 3:**
+To read **line offset 105** in gpiochip0, corresponding to DI1:
+```sh
+sudo gpioget gpiochip0 105
+```
+An output of 0 indicates a low level. An output of 1 indicates a high level.  
+The command format is as follows `sudo gpioset <gpiochip> <line>`.
+
+</TabItem>
+</Tabs>
+
+
 ### Connection Overview for DO
 
 You can make the connection for DO by following the diagram below. It is better to add a resistor in series for the DO line. Here we have tested with a 4.7kΩ resistor
@@ -858,7 +894,11 @@ You can make the connection for DO by following the diagram below. It is better 
 
 ### Usage for DO
 
-Here you need to connect a load as mentioned in the above diagram. The easiest way to test this would be to connect a multimeter if you have access to one, or else connect a load that requires less than 40V maximum voltage
+Here you need to connect a load as mentioned in the above diagram. The easiest way to test this would be to connect a multimeter if you have access to one, or else connect a load that requires less than 40V maximum voltage. The command to enable DI / DO is different between Jetpack 5 and Jetpack 6. 
+
+
+<Tabs>
+<TabItem value="Jetpack 5" label="Jetpack 5">
 
 - **Step 1:** Make the connetions as shown above to **DO1 pin** and input **40V as max**
 
@@ -881,6 +921,40 @@ You can refer the **DI/ DO Pin Assignment Table** to find the GPIO number and BG
 ```sh
 echo 1 > value
 ```
+
+</TabItem>
+<TabItem value="Jetpack 6" label="Jetpack 6">
+
+- **Step 1:** Make the connetions as shown above to **DO1 pin** and input **40V as max**
+
+- **Step 2:** Check the **line offset** of DO1 on chip0, :
+
+```sh
+gpioinfo gpiochip0
+```
+Find the corresponding **line offset** based on the BGA number. The **line offset** of DO1 is `51`.
+
+<div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reServer-Industrial/reserver-do.jpg"/></div>
+
+
+
+:::note
+You can refer the **DI/ DO Pin Assignment Table** to find the GPIO number and BGA number. In the above example, for DO1 pin, GPIO number is 399 and BGA number is PI.00
+:::
+
+- **Step 3:**
+Use the following command to control the state of DO1:
+```sh
+# set to 12v
+sudo gpioset --mode=wait gpiochip0 51=0
+
+# set to 0v
+sudo gpioset --mode=wait gpiochip0 51=1
+```
+The command format is as follows `sudo gpioset <gpiochip> <line>=<value>`.
+
+</TabItem>
+</Tabs>
 
 If the load is turned on or the multimeter outputs the voltage that you have input, the test it is functioning properly.
 
