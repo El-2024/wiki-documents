@@ -54,7 +54,7 @@ const PROTECTED_PATHS = [
   'docs/Getting_Started.md',
   'docs/weekly_wiki.md',
   'docs/LICENSE.md',
-  'docs/Seeed_Elderly/weekly_wiki',
+  'docs/Seeed_Elderly/weekly_wiki/',
 ];
 
 // 翻译状态跟踪

@@ -9,6 +9,10 @@ on:
 env:
   NODE_OPTIONS: --max_old_space_size=20480
 
+permissions:
+  contents: read
+  statuses: write
+
 jobs:
   test-deploy:
     if: github.event_name != 'push'
@@ -23,6 +27,31 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Test build website
         run: yarn docusaurus build
+      - name: Report status to PR
+        if: always()
+        continue-on-error: true
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const success = '${{ job.status }}' === 'success';
+            const sha = context.payload.pull_request?.head?.sha || context.sha;
+            const statusContext = 'Test deployment (required)';
+            try {
+              await github.rest.repos.createCommitStatus({
+                owner,
+                repo,
+                sha,
+                state: success ? 'success' : 'failure',
+                target_url: `https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }}`,
+                description: success ? '✅ Build succeeded' : '❌ Build failed',
+                context: statusContext
+              });
+              core.info(`Status reported on ${sha}: ${statusContext} = ${success ? 'success' : 'failure'}`);
+            } catch (error) {
+              core.warning('Failed to report status: ' + error.message);
+            }
+
   deploy:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
