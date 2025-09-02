@@ -92,7 +92,7 @@ jobs:
           files_ignore: |
             docs/zh-CN/**
             docs/ja/**
-            docs/Spanish/**
+            docs/es/**
 
       - name: Ensure base commit is available
         if: steps.changes.outputs.any_changed == 'true' && steps.check-skip.outputs.skip != 'true'
@@ -115,7 +115,7 @@ jobs:
           all_files=""
 
           if operations=$(git diff --name-status --find-renames=90 $base_sha..HEAD -- docs/ 2>/dev/null); then
-            filtered_operations=$(echo "$operations" | grep -E '\.(md|mdx)$|_category_\.yml$' | grep -v -E '(zh-CN|ja|Spanish)' || true)
+            filtered_operations=$(echo "$operations" | grep -E '\.(md|mdx)$|_category_\.yml$' | grep -v -E '(zh-CN|ja|es)' || true)
             if [[ -n "$filtered_operations" ]]; then
               while IFS=$'\t' read -r status file rest || [[ -n "$status" ]]; do
                 [[ -z "$status" ]] && continue
@@ -213,7 +213,7 @@ jobs:
 
             const isDocs = f =>
               /^docs\//.test(f.filename) &&
-              !/^docs\/(zh-CN|ja|Spanish)\//.test(f.filename) &&
+              !/^docs\/(zh-CN|ja|es)\//.test(f.filename) &&
               (/\.(md|mdx)$/.test(f.filename) || /_category_\.yml$/.test(f.filename));
 
             const picked = files.filter(isDocs);
