@@ -19,7 +19,7 @@ last_update:
     </a>
 </div><br />
 
-:::caution
+:::caution Update Firmware Tips
 We recommend that you **[complete your product's firmware update](#preliminary)** as soon as you receive it for the best experience.
 :::
 
