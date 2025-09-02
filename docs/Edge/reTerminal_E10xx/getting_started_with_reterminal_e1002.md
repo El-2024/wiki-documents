@@ -19,8 +19,16 @@ last_update:
     </a>
 </div><br />
 
-:::caution
+:::caution Update Firmware Tips
 We recommend that you **[complete your product's firmware update](#preliminary)** as soon as you receive it for the best experience.
+:::
+
+:::danger Screen life warning
+1. If your reTerminal has been idle for a long time, you can long press the green button on the device for 5 seconds to clear the screen content (using the factory firmware), which can effectively prevent the residual shadow and increase the screen life.
+
+2. Whenever possible, do not display a screen for a long period of time (more than 1 day), as this may create a residual image, and it is recommended that the screen's image be refreshed at least once a day. If the device is not used for a long time, it is recommended to clear the device display content.
+
+3. Please refresh the screen as infrequently as possible when using and debugging the program. Refreshing the screen at high speed for a long period of time may also reduce the service life of the screen.
 :::
 
 ## Introduction
