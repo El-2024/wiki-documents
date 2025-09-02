@@ -202,7 +202,7 @@ Step 3. Use the properties panel to customize:
 
 ## Device Components
 
-The Device section contains components that automatically display data from your connected Seeed reTerminal E Series device sensors:
+The Device section contains components that automatically display data from your connected Seeed reTerminal E Series ePaper Display device sensors:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/95.png" style={{width:400, height:'auto'}}/></div>
 
@@ -939,7 +939,7 @@ For successful deployment to Seeed devices:
 
 3. **Data Components**: If using data components (Weather, Stock, etc.), ensure your device has internet connectivity
 
-4. **Device Sensors**: Components like Battery, Temperature, and Humidity will only work with compatible Seeed reTerminal E Series devices that have the appropriate sensors
+4. **Device Sensors**: Components like Battery, Temperature, and Humidity will only work with compatible Seeed reTerminal E Series ePaper Display devices that have the appropriate sensors
 
 5. **Refresh Rate**: Set an appropriate interval time based on how frequently your data needs updating and your device's capabilities
 

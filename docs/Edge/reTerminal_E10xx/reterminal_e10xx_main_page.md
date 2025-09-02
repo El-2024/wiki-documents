@@ -9,13 +9,13 @@ last_update:
   author: Citric
 ---
 
-# reTerminal E Series Overview
+# reTerminal E Series ePaper Display Overview
 
 ## Introduction
 
-The reTerminal E Series represents Seeed Studio's family of ePaper display terminals designed for low-power information display applications. These devices combine the power efficiency of ePaper technology with wireless connectivity to create versatile displays for smart homes, retail environments, office spaces, and more.
+The reTerminal E Series ePaper Display represents Seeed Studio's family of ePaper display terminals designed for low-power information display applications. These devices combine the power efficiency of ePaper technology with wireless connectivity to create versatile displays for smart homes, retail environments, office spaces, and more.
 
-Unlike traditional displays that consume power continuously, the reTerminal E Series only uses power when changing content, making them ideal for applications requiring extended battery life and always-on information display.
+Unlike traditional displays that consume power continuously, the reTerminal E Series ePaper Display only uses power when changing content, making them ideal for applications requiring extended battery life and always-on information display.
 
 
 ## reTerminal E1001
@@ -76,7 +76,7 @@ The reTerminal E1002 features a vibrant 7.3-inch full-color ePaper display with 
   </a>
 </div><br />
 
-All reTerminal E Series devices are designed to work with the SenseCraft HMI platform, providing an intuitive web interface for creating and deploying content to your devices. Key features include:
+All reTerminal E Series ePaper Display devices are designed to work with the SenseCraft HMI platform, providing an intuitive web interface for creating and deploying content to your devices. Key features include:
 
 - **AI Generator**: Create dashboards using text prompts
 - **Gallery**: Display images and slideshows
@@ -86,17 +86,17 @@ All reTerminal E Series devices are designed to work with the SenseCraft HMI pla
 
 ## Applications
 
-The reTerminal E Series supports multiple development platforms and frameworks:
+The reTerminal E Series ePaper Display supports multiple development platforms and frameworks:
 
-- [reTerminal E Series Work with ESPHome for Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome)
+- [reTerminal E Series ePaper Display Work with ESPHome for Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome)
 
-  Explains how to plug the reTerminal E Series into Home Assistant and write simple programs to draw simple graphs in ESPHome via YAML.
+  Explains how to plug the reTerminal E Series ePaper Display into Home Assistant and write simple programs to draw simple graphs in ESPHome via YAML.
 
-- [Advanced ESPHome Usage of reTerminal E Series in Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome_advanced)
+- [Advanced ESPHome Usage of reTerminal E Series ePaper Display in Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome_advanced)
 
   Explains how to use reTerminal's hardware and advanced features such as deep sleep and comprehensive use cases in Home Assistant.
 
-- [reTerminal E Series Works with TRMNL](https://wiki.seeedstudio.com/reterminal_e10xx_trmnl)
+- [reTerminal E Series ePaper Display Works with TRMNL](https://wiki.seeedstudio.com/reterminal_e10xx_trmnl)
 
   Utilize the dedicated TRMNL framework for simplified development and rapid deployment.
 

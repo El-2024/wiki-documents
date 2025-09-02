@@ -1,6 +1,6 @@
 ---
-description: This article describes how to use the reTerminal E Series with TRMNL.
-title: reTerminal E Series Works with TRMNL
+description: This article describes how to use the reTerminal E Series ePaper Display with TRMNL.
+title: reTerminal E Series ePaper Display Works with TRMNL
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /reterminal_e10xx_trmnl
 sidebar_position: 1
@@ -13,7 +13,7 @@ last_update:
 The Wiki content is under development and is not available at this time.
 :::
 
-# reTerminal E Series Works with TRMNL
+# reTerminal E Series ePaper Display Works with TRMNL
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/140.jpg" style={{width:700, height:'auto'}}/></div>
 
@@ -33,7 +33,7 @@ The integration of TRMNL will bring several compelling benefits:
 - **Regular Updates**: TRMNL's active development means new features and integrations are added weekly, continuously expanding the possibilities for your display
 - **Developer-Friendly**: With TRMNL's open API and developer tools, you can create custom plugins and integrations for your specific needs
 
-By combining TRMNL's powerful platform with our high-quality E Ink® reTerminal E Series display, we're offering users an elegant solution for creating personalized, low-power information dashboards that respect both their attention and their time.
+By combining TRMNL's powerful platform with our high-quality E Ink® reTerminal E Series ePaper Display display, we're offering users an elegant solution for creating personalized, low-power information dashboards that respect both their attention and their time.
 
 ## Getting Started with TRMNL
 
@@ -125,7 +125,7 @@ There are times when we update our code and need to submit PR to TRMNL and revie
 
 5. **Connect Your Device**
 
-   - Plug in your reTerminal E Series device.
+   - Plug in your reTerminal E Series ePaper Display device.
 
 6. **Build and Upload**
 
@@ -142,7 +142,7 @@ There are times when we update our code and need to submit PR to TRMNL and revie
 
 ## Configure Wi-Fi and Send Playlists to TRMNL
 
-To use your reTerminal E Series with TRMNL and send playlists, you first need to connect the device to your Wi-Fi network. This process is called "WiFi pairing mode" and is done through a simple captive portal. Please follow the steps below:
+To use your reTerminal E Series ePaper Display with TRMNL and send playlists, you first need to connect the device to your Wi-Fi network. This process is called "WiFi pairing mode" and is done through a simple captive portal. Please follow the steps below:
 
 > 💡 **Troubleshooting Wi-Fi?** If you encounter issues connecting your device to Wi-Fi, please refer to the [TRMNL Device Wi-Fi Troubleshooting Guide](https://help.usetrmnl.com/en/articles/10193157-device-wifi-troubleshooting) for solutions to common networking and router compatibility issues.
 
@@ -167,7 +167,7 @@ To use your reTerminal E Series with TRMNL and send playlists, you first need to
 ### Enter Your Wi-Fi Credentials
 
 - On the configuration page, you will see a list of available Wi-Fi networks.
-- **Select your 2.4GHz Wi-Fi network** (reTerminal E Series does not support 5GHz networks).
+- **Select your 2.4GHz Wi-Fi network** (reTerminal E Series ePaper Display does not support 5GHz networks).
 - Enter your Wi-Fi password.
 - Click **Save** or **Connect**.
 
@@ -192,7 +192,7 @@ To use your reTerminal E Series with TRMNL and send playlists, you first need to
 
 ### Access the TRMNL Web Interface
 
-After your reTerminal E Series is connected to your Wi-Fi and you have recorded its MAC address (Device ID), you can add it to your TRMNL account:
+After your reTerminal E Series ePaper Display is connected to your Wi-Fi and you have recorded its MAC address (Device ID), you can add it to your TRMNL account:
 
 1. **Open the TRMNL Web Interface**  
    - On your computer or mobile device, open a browser and go to the [TRMNL web interface](https://trmnl.app).
@@ -211,18 +211,18 @@ After your reTerminal E Series is connected to your Wi-Fi and you have recorded 
 
    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/212.png" style={{width:700, height:'auto'}}/></div>
 
-5. **Register reTerminal E Series MAC Address**
+5. **Register reTerminal E Series ePaper Display MAC Address**
 
-   In order to build a connection between the reTerminal E Series and TRMNL, we need to bind the correct device MAC address inside the TRMNL settings page.
+   In order to build a connection between the reTerminal E Series ePaper Display and TRMNL, we need to bind the correct device MAC address inside the TRMNL settings page.
 
    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/223.png" style={{width:900, height:'auto'}}/></div>
 
    - You can retrieve the MAC address during the PlatformIO upload process (check the upload logs), or from the provisioning portal (it will be displayed after Wi-Fi setup).
    - Adding your MAC address early helps ensure a smooth onboarding process and device management.
 
-   - Then you can set a custom name for your reTerminal E Series and adjust other settings as needed.
+   - Then you can set a custom name for your reTerminal E Series ePaper Display and adjust other settings as needed.
 
-Your reTerminal E Series is now linked to your TRMNL account! You can now send playlists, images, or other content to your display directly from the TRMNL interface.
+Your reTerminal E Series ePaper Display is now linked to your TRMNL account! You can now send playlists, images, or other content to your display directly from the TRMNL interface.
 
 > 💡 **Tip:** If you have multiple reTerminal E Series, repeat the above steps for each device using their unique Device IDs.
 
@@ -240,7 +240,7 @@ Always keep both options disabled to ensure stable operation of your reTerminal 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/221.png" style={{width:1000, height:'auto'}}/></div>
 
-The TRMNL Playlist feature allows you to control exactly what is displayed on your reTerminal E Series and when. Here's a breakdown of the main sections and controls, as shown in the screenshot above:
+The TRMNL Playlist feature allows you to control exactly what is displayed on your reTerminal E Series ePaper Display and when. Here's a breakdown of the main sections and controls, as shown in the screenshot above:
 
 ### Playlist Overview
 - **Playlist Title**: At the top, you see the name of your TRMNL device (e.g., "MengDu's TRMNL").
@@ -249,7 +249,7 @@ The TRMNL Playlist feature allows you to control exactly what is displayed on yo
 - **Add a Group / Add a Plugin**: Use these buttons to organize your playlist into groups or add new content plugins (such as weather, calendar, or custom text).
 
 ### Playlist Items
-Each row in the playlist represents a screen or widget that will be shown on your reTerminal E Series (for reference only):
+Each row in the playlist represents a screen or widget that will be shown on your reTerminal E Series ePaper Display (for reference only):
 
 1. **Weather**
    - Shows current weather information for your selected location.
@@ -276,7 +276,7 @@ This flexible playlist system lets you fully customize what your reTerminal E Se
 
 ## Exploring TRMNL Plugins
 
-TRMNL's plugin system is what makes your reTerminal E Series truly powerful and customizable. Plugins are modular apps or widgets that you can add to your device to display a wide variety of information and content.
+TRMNL's plugin system is what makes your reTerminal E Series ePaper Display truly powerful and customizable. Plugins are modular apps or widgets that you can add to your device to display a wide variety of information and content.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/222.png" style={{width:900, height:'auto'}}/></div>
 
@@ -313,7 +313,7 @@ If you have any questions about using TRMNL or want to explore more advanced fea
 
 Special thanks to the entire **TRMNL team** for their strong support and invaluable help with this project. In particular, we would like to thank **Bogdan**, **Ryan Kulp**, **Fr3d** and all other team members for their dedication and assistance throughout the development and documentation process.
 
-Your expertise and commitment have made this integration possible and greatly improved the user experience for the reTerminal E Series community.
+Your expertise and commitment have made this integration possible and greatly improved the user experience for the reTerminal E Series ePaper Display community.
 
 
 ## Tech Support & Product Discussion

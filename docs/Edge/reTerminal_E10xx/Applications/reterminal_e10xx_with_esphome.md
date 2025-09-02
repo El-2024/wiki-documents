@@ -1,6 +1,6 @@
 ---
-description: This article describes how to get the reTerminal E Series to work with Home Assistant and ESPHome.
-title: reTerminal E Series Work with ESPHome for Home Assistant
+description: This article describes how to get the reTerminal E Series ePaper Display to work with Home Assistant and ESPHome.
+title: reTerminal E Series ePaper Display Work with ESPHome for Home Assistant
 image: https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.webp
 slug: /reterminal_e10xx_with_esphome
 sidebar_position: 2
@@ -12,7 +12,7 @@ last_update:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# reTerminal E Series Work with ESPHome for Home Assistant
+# reTerminal E Series ePaper Display Work with ESPHome for Home Assistant
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.jpg" style={{width:700, height:'auto'}}/></div><br />
 
@@ -42,9 +42,9 @@ Home Assistant is a powerful open-source home automation platform that allows yo
     <a class="get_one_now_item" href="https://www.home-assistant.io/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> Learn More 🖱️</font></span></strong></a>
 </div>
 
-### Why reTerminal E Series with Home Assistant?
+### Why reTerminal E Series ePaper Display with Home Assistant?
 
-The reTerminal E Series is an excellent companion for Home Assistant for several reasons:
+The reTerminal E Series ePaper Display is an excellent companion for Home Assistant for several reasons:
 
 1. **Energy Efficiency**: The e-paper display only consumes power when updating content, making it perfect for displaying persistent information like weather forecasts, calendar events, or system status.
 
@@ -54,7 +54,7 @@ The reTerminal E Series is an excellent companion for Home Assistant for several
 
 4. **Flexible Integration**: Through ESPHome, the display seamlessly integrates with Home Assistant, allowing you to show any data from your smart home system in an elegant, always-visible format.
 
-These advantages make the reTerminal E Series an ideal choice for creating an energy-efficient, always-on information display for your Home Assistant setup.
+These advantages make the reTerminal E Series ePaper Display an ideal choice for creating an energy-efficient, always-on information display for your Home Assistant setup.
 
 ### ESPHome Integration
 
@@ -330,7 +330,7 @@ Wait a moment and you will see the feedback like the following image. If it fail
 
 ### Drawing Simple Graphics
 
-This example YAML code configures the SPI interface and the reTerminal E Series for an ESPHome project. The `lambda` section contains drawing commands that render simple shapes on the screen:
+This example YAML code configures the SPI interface and the reTerminal E Series ePaper Display for an ESPHome project. The `lambda` section contains drawing commands that render simple shapes on the screen:
 
 - Two rectangles (one at position (10, 10) with size 100x50, and another at (150, 10) with size 50x50)
 - One circle at (250, 35) with a radius of 25
@@ -438,7 +438,7 @@ Due to space constraints, we will not elaborate too much on the drawing methods 
 
 ### Getting values from Home Assistant for display
 
-To display weather data on your reTerminal E Series device, you'll need to access temperature, weather conditions, and wind speed data from Home Assistant. The Open-Meteo integration provides reliable weather data that can be accessed through Developer Tools.
+To display weather data on your reTerminal E Series ePaper Display device, you'll need to access temperature, weather conditions, and wind speed data from Home Assistant. The Open-Meteo integration provides reliable weather data that can be accessed through Developer Tools.
 
 #### Installing Open-Meteo Integration
 
@@ -497,7 +497,7 @@ sensor:
     internal: true
 ```
 
-This configuration creates sensor entities in your ESPHome device that pull data from the Home Assistant weather integration. You can then use these sensors to update your reTerminal E Series display with the current weather information.
+This configuration creates sensor entities in your ESPHome device that pull data from the Home Assistant weather integration. You can then use these sensors to update your reTerminal E Series ePaper Display display with the current weather information.
 
 :::tip
 For forecast data, you'll need to use the `weather.open_meteo_forecast` entities which contain predicted values for future days.
@@ -641,19 +641,19 @@ display:
 
 After compiling the above code and uploading it to your device, you may first see **NaN** displayed on the screen, please don't worry, this is normal. This is due to the fact that the device has not yet been added to the Home Assistant environment, so reTerminal has not yet been able to acquire Home Assistant data. We just need to follow the steps below to add the device.
 
-#### Adding reTerminal E Series to Home Assistant
+#### Adding reTerminal E Series ePaper Display to Home Assistant
 
 Step 1. After flashing your device, return to Home Assistant and navigate to **Settings → Devices & Services**.
 
-Step 3. Home Assistant should automatically discover your reTerminal E Series device via mDNS. If it appears in the discovered devices section, click Configure to add it.
+Step 3. Home Assistant should automatically discover your reTerminal E Series ePaper Display device via mDNS. If it appears in the discovered devices section, click Configure to add it.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/41.png" style={{width:1000, height:'auto'}}/></div>
 
 Step 4. If the device isn't automatically discovered, click Add Integration and search for "ESPHome".
 
-Step 5. Enter the IP address of your reTerminal E Series device and the API encryption key if you set one.
+Step 5. Enter the IP address of your reTerminal E Series ePaper Display device and the API encryption key if you set one.
 
-Step 6. Once connected, your reTerminal E Series will appear as a device in Home Assistant with all its sensors and components available.
+Step 6. Once connected, your reTerminal E Series ePaper Display will appear as a device in Home Assistant with all its sensors and components available.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/40.jpg" style={{width:600, height:'auto'}}/></div>
 
@@ -665,7 +665,7 @@ Here's the enhanced Demo 3 content with improved formatting, image placement, an
 
 ### Drawing TrueType fonts
 
-This example demonstrates how to display custom icons on your reTerminal E Series using TrueType fonts. Material Design Icons provide a wide range of scalable symbols perfect for e-paper displays.
+This example demonstrates how to display custom icons on your reTerminal E Series ePaper Display using TrueType fonts. Material Design Icons provide a wide range of scalable symbols perfect for e-paper displays.
 
 #### Installing Required Tools
 
@@ -851,7 +851,7 @@ By combining these icons with the weather data from Home Assistant that we set u
 
 ### Displaying Custom Images
 
-This example demonstrates how to display custom images on your reTerminal E Series e-paper display. You can use this feature to show logos, icons, or any graphics that enhance your dashboard experience.
+This example demonstrates how to display custom images on your reTerminal E Series ePaper Display e-paper display. You can use this feature to show logos, icons, or any graphics that enhance your dashboard experience.
 
 #### Preparation
 
@@ -1024,7 +1024,7 @@ By combining images with text and other display elements covered in previous exa
 
 ## Continue Reading
 
-Due to space constraints, this article only covers some basic use cases and drawing examples of the device. We will cover the use of reTerminal's hardware on ESPHome in more detail in the [Advanced ESPHome Usage of reTerminal E Series in Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome_advanced)'s Wiki, which you can read on.
+Due to space constraints, this article only covers some basic use cases and drawing examples of the device. We will cover the use of reTerminal's hardware on ESPHome in more detail in the [Advanced ESPHome Usage of reTerminal E Series ePaper Display in Home Assistant](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome_advanced)'s Wiki, which you can read on.
 
 ## FAQ
 
@@ -1041,7 +1041,7 @@ In this case, you should go to Settings -> Devices & Services -> Integrations to
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/41.png" style={{width:1000, height:'auto'}}/></div>
 
 
-### Q3: reTerminal E Series can't connect to you computer?
+### Q3: reTerminal E Series ePaper Display can't connect to you computer?
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/68.png" style={{width:600, height:'auto'}}/></div>
 

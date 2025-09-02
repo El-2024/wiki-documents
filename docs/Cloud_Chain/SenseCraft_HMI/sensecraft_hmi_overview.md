@@ -45,7 +45,7 @@ SenseCraft HMI currently supports the following Seeed Studio devices:
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/25.jpg" style={{width:500, height:'auto'}}/></div>
 </div><br />
 
-The reTerminal E Series combines powerful computing capabilities with ePaper display technology, making it perfect for digital signage, information dashboards, and interactive displays. The series includes two models with different display capabilities:
+The reTerminal E Series ePaper Display combines powerful computing capabilities with ePaper display technology, making it perfect for digital signage, information dashboards, and interactive displays. The series includes two models with different display capabilities:
 
 #### [reTerminal E1001](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1001/)
 
