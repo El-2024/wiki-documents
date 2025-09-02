@@ -279,7 +279,6 @@ To measure the battery level, you need to enable the **GPIO21** pin. Otherwise i
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/46.png" style={{width:1000, height:'auto'}}/></div>
 
-
 ## Demo 2. Take the Home Assistant Dashboard as a Screenshot
 
 This example demonstrates how to capture screenshots of your Home Assistant dashboard and display them on your reTerminal E Series.
@@ -324,7 +323,7 @@ Step 7. Save the configuration and restart the Puppet add-on.
 
 The Puppet add-on launches a server on port 10000 that generates screenshots of any Home Assistant page. Here's how to use it:
 
-#### Basic Screenshot URL Format:
+#### Basic Screenshot URL Format
 
 ```
 http://homeassistant.local:10000/lovelace/0?viewport=800x480
@@ -332,7 +331,7 @@ http://homeassistant.local:10000/lovelace/0?viewport=800x480
 
 This URL will capture a screenshot of your default dashboard at 800x480 resolution (perfect for reTerminal E Series).
 
-#### E-Paper Optimization:
+#### E-Paper Optimization
 
 For e-paper displays, add the `eink` parameter to reduce the color palette:
 
@@ -342,7 +341,7 @@ http://homeassistant.local:10000/lovelace/0?viewport=800x480&eink=2
 
 The value `2` represents a 2-color (black and white) palette.
 
-#### Inverting Colors:
+#### Inverting Colors
 
 Add the `invert` parameter to invert black and white:
 
@@ -350,7 +349,7 @@ Add the `invert` parameter to invert black and white:
 http://homeassistant.local:10000/lovelace/0?viewport=800x480&eink=2&invert
 ```
 
-#### Capturing Different Pages:
+#### Capturing Different Pages
 
 You can capture any Home Assistant page by changing the URL path:
 
@@ -1326,12 +1325,12 @@ Thank you for choosing our products! We are here to provide you with different s
 
 <div class="table-center">
   <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+  <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
   <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
   </div>
 
   <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>

@@ -37,8 +37,6 @@ reTerminal E1001 is a 7.5 inch open-source monochrome ePaper display with except
 
 ## Hardware Overview
 
-
-
 The reTerminal E1001 hardware includes:
 
 1. **7.5-inch ePaper Display**: Monochrome display with 800×480 resolution
@@ -47,7 +45,7 @@ The reTerminal E1001 hardware includes:
 4. **Power Switch**: Located on the back for powering the device on/off
 5. **USB-C Port**: For charging and firmware updates
 6. **Battery Connector**: JST 3-pin connector for optional lithium battery
-7. **Status LEDs**: 
+7. **Status LEDs**:
    - Charge indicator (red)
    - User indicator (green)
 8. **MicroSD Card Slot**: For expandable storage
@@ -59,6 +57,7 @@ The reTerminal E1001 hardware includes:
 ### Preliminary
 
 **Step 1.** Unbox your reTerminal E1001 and ensure all components are included:
+
 - reTerminal E1001 device
 - USB-C cable
 - Quick start guide
@@ -77,7 +76,7 @@ Depending on your operating system, you may need to install USB drivers to ensur
 
 - **For Mac computers**: Download and install the CH34X driver from [WCH official website](https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html)
 
-- **For Windows computers**: 
+- **For Windows computers**:
   - Windows 11 systems typically include the driver by default
   - For Windows 10 and earlier versions, you may need to download and install the CH341 driver from [WCH official website](https://www.wch-ic.com/downloads/CH341SER_ZIP.html)
 
@@ -116,9 +115,11 @@ Depending on your operating system, you may need to install USB drivers to ensur
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/10.png" style={{width:800, height:'auto'}}/></div>
 
 :::note
+
 1. Updating the firmware ensures optimal performance and access to the latest features. It's recommended to perform this update before using your device for the first time.
 
 2. It is not possible to flash the firmware properly when the device is in the shutdown or sleep state. If you select the correct port for your device but never see the flash firmware progress, then you may need to wake up the device by pressing the green button on the top of the unit and try again.
+
 :::
 
 ### Power On
@@ -167,7 +168,6 @@ The reTerminal E Series ePaper Display only supports 2.4GHz WiFi networks, not 5
     </a>
 </div><br />
 
-
 **Step 2.** Navigate to the **Workspace** section and click **Add Device**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/7.png" style={{width:1000, height:'auto'}}/></div>
@@ -201,6 +201,7 @@ Transform your reTerminal E1001 into a digital photo frame with the Gallery feat
 **Canvas**
 
 Design your dashboard from scratch with Canvas, a drag-and-drop interface offering various elements:
+
 - Text blocks with customizable fonts and sizes
 - Image placeholders
 - Widgets for time, date, and weather
@@ -292,71 +293,71 @@ The reTerminal E1001 features an 8-pin expansion header (J2) that provides conne
 The 8-pin expansion header (J2) has the following pinout:
 
 <div class="table-center">
-	<table align="center">
-		<tr>
-			<th>Pin (from top to bottom)</th>
-			<th>Label</th>
-			<th>ESP32-S3 Pin</th>
-			<th>Function</th>
-			<th>Description</th>
-		</tr>
-		<tr>
-			<td>1</td>
-			<td>HEADER_3V3</td>
-			<td>-</td>
-			<td>Power</td>
-			<td>3.3V power supply for external devices</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>GND</td>
-			<td>-</td>
-			<td>Ground</td>
-			<td>Common ground reference</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>ESP_IO46</td>
-			<td>GPIO46</td>
-			<td>GPIO/ADC</td>
-			<td>General purpose I/O with analog input capability</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>ESP_IO2/ADC1_CH4</td>
-			<td>GPIO2</td>
-			<td>GPIO/ADC</td>
-			<td>General purpose I/O with analog input capability (ADC1 channel 4)</td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td>ESP_IO17/TX1</td>
-			<td>GPIO17</td>
-			<td>GPIO/UART TX</td>
-			<td>GPIO or UART transmit (TX) signal</td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td>ESP_IO18/RX1</td>
-			<td>GPIO18</td>
-			<td>GPIO/UART RX</td>
-			<td>GPIO or UART receive (RX) signal</td>
-		</tr>
-		<tr>
-			<td>7</td>
-			<td>ESP_IO20/I2C0_SCL</td>
-			<td>GPIO20</td>
-			<td>GPIO/I2C SCL</td>
-			<td>GPIO or I2C clock signal</td>
-		</tr>
-		<tr>
-			<td>8</td>
-			<td>ESP_IO19/I2C0_SDA</td>
-			<td>GPIO19</td>
-			<td>GPIO/I2C SDA</td>
-			<td>GPIO or I2C data signal</td>
-		</tr>
-	</table>
+ <table align="center">
+  <tr>
+   <th>Pin (from top to bottom)</th>
+   <th>Label</th>
+   <th>ESP32-S3 Pin</th>
+   <th>Function</th>
+   <th>Description</th>
+  </tr>
+  <tr>
+   <td>1</td>
+   <td>HEADER_3V3</td>
+   <td>-</td>
+   <td>Power</td>
+   <td>3.3V power supply for external devices</td>
+  </tr>
+  <tr>
+   <td>2</td>
+   <td>GND</td>
+   <td>-</td>
+   <td>Ground</td>
+   <td>Common ground reference</td>
+  </tr>
+  <tr>
+   <td>3</td>
+   <td>ESP_IO46</td>
+   <td>GPIO46</td>
+   <td>GPIO/ADC</td>
+   <td>General purpose I/O with analog input capability</td>
+  </tr>
+  <tr>
+   <td>4</td>
+   <td>ESP_IO2/ADC1_CH4</td>
+   <td>GPIO2</td>
+   <td>GPIO/ADC</td>
+   <td>General purpose I/O with analog input capability (ADC1 channel 4)</td>
+  </tr>
+  <tr>
+   <td>5</td>
+   <td>ESP_IO17/TX1</td>
+   <td>GPIO17</td>
+   <td>GPIO/UART TX</td>
+   <td>GPIO or UART transmit (TX) signal</td>
+  </tr>
+  <tr>
+   <td>6</td>
+   <td>ESP_IO18/RX1</td>
+   <td>GPIO18</td>
+   <td>GPIO/UART RX</td>
+   <td>GPIO or UART receive (RX) signal</td>
+  </tr>
+  <tr>
+   <td>7</td>
+   <td>ESP_IO20/I2C0_SCL</td>
+   <td>GPIO20</td>
+   <td>GPIO/I2C SCL</td>
+   <td>GPIO or I2C clock signal</td>
+  </tr>
+  <tr>
+   <td>8</td>
+   <td>ESP_IO19/I2C0_SDA</td>
+   <td>GPIO19</td>
+   <td>GPIO/I2C SDA</td>
+   <td>GPIO or I2C data signal</td>
+  </tr>
+ </table>
 </div>
 
 ## Device Placement
@@ -415,19 +416,18 @@ The stand allows the device to be placed on desks, countertops, or shelves, maki
 - [SenseCraft HMI Platform Documentation](https://wiki.seeedstudio.com/sensecraft_hmi_overview)
 - [GitHub Repository](/getting_started_with_reterminal_e1001)
 
-
 ## Tech Support & Product Discussion
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="table-center">
   <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+  <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
   <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
   </div>
 
   <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>
