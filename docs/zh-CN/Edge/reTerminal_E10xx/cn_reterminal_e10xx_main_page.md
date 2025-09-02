@@ -1,6 +1,6 @@
 ---
-description: 本文是 reTerminal E Series 系列的汇总页面。
-title: reTerminal E Series 系列
+description: 本文是 reTerminal E Series ePaper Display 系列的汇总页面。
+title: reTerminal E Series ePaper Display 系列
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /cn/reterminal_e10xx_main_page
 sidebar_position: 1
@@ -9,13 +9,13 @@ last_update:
   author: Citric
 ---
 
-# reTerminal E Series 系列概述
+# reTerminal E Series ePaper Display 系列概述
 
 ## 简介
 
-reTerminal E Series 系列代表了 Seeed Studio 的电子纸显示终端产品系列，专为低功耗信息显示应用而设计。这些设备将电子纸技术的功耗效率与无线连接相结合，为智能家居、零售环境、办公空间等创造了多功能显示器。
+reTerminal E Series ePaper Display 系列代表了 Seeed Studio 的电子纸显示终端产品系列，专为低功耗信息显示应用而设计。这些设备将电子纸技术的功耗效率与无线连接相结合，为智能家居、零售环境、办公空间等创造了多功能显示器。
 
-与持续消耗电力的传统显示器不同，reTerminal E Series 系列仅在更改内容时才使用电力，使其成为需要延长电池寿命和始终显示信息的应用的理想选择。
+与持续消耗电力的传统显示器不同，reTerminal E Series ePaper Display 系列仅在更改内容时才使用电力，使其成为需要延长电池寿命和始终显示信息的应用的理想选择。
 
 
 ## reTerminal E1001
@@ -75,7 +75,7 @@ reTerminal E1002 配备鲜艳的 7.3 英寸六色电子纸显示屏，采用 ACe
   </a>
 </div><br />
 
-所有 reTerminal E Series 设备都设计为与 SenseCraft HMI 平台配合使用，提供直观的 Web 界面来创建和部署内容到您的设备。主要功能包括：
+所有 reTerminal E Series ePaper Display 设备都设计为与 SenseCraft HMI 平台配合使用，提供直观的 Web 界面来创建和部署内容到您的设备。主要功能包括：
 
 - **AI 生成器**：使用文本提示创建仪表板
 - **图库**：显示图片和幻灯片
@@ -85,17 +85,17 @@ reTerminal E1002 配备鲜艳的 7.3 英寸六色电子纸显示屏，采用 ACe
 
 ## 应用
 
-reTerminal E Series 系列支持多种开发平台和框架：
+reTerminal E Series ePaper Display 系列支持多种开发平台和框架：
 
-- [reTerminal E Series 与 ESPHome 配合用于 Home Assistant](https://wiki.seeedstudio.com/cn/reterminal_e10xx_with_esphome)
+- [reTerminal E Series ePaper Display 与 ESPHome 配合用于 Home Assistant](https://wiki.seeedstudio.com/cn/reterminal_e10xx_with_esphome)
 
-  解释如何将 reTerminal E Series 插入 Home Assistant 并编写简单程序，通过 YAML 在 ESPHome 中绘制简单图形。
+  解释如何将 reTerminal E Series ePaper Display 插入 Home Assistant 并编写简单程序，通过 YAML 在 ESPHome 中绘制简单图形。
 
-- [reTerminal E Series 在 Home Assistant 中的高级 ESPHome 用法](https://wiki.seeedstudio.com/cn/reterminal_e10xx_with_esphome_advanced)
+- [reTerminal E Series ePaper Display 在 Home Assistant 中的高级 ESPHome 用法](https://wiki.seeedstudio.com/cn/reterminal_e10xx_with_esphome_advanced)
 
   解释如何使用 reTerminal 的硬件和高级功能，如深度睡眠以及在 Home Assistant 中的综合用例。
 
-- [reTerminal E Series 与 TRMNL 配合使用](https://wiki.seeedstudio.com/cn/reterminal_e10xx_trmnl)
+- [reTerminal E Series ePaper Display 与 TRMNL 配合使用](https://wiki.seeedstudio.com/cn/reterminal_e10xx_trmnl)
 
   利用专用的 TRMNL 框架进行简化开发和快速部署。
 

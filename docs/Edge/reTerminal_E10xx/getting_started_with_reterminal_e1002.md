@@ -74,7 +74,7 @@ The reTerminal E1002 hardware includes:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/133.jpg" style={{width:700, height:'auto'}}/></div>
 
 :::note
-The reTerminal E Series only supports MicroSD cards up to 64GB in Fat32 format.
+The reTerminal E Series ePaper Display only supports MicroSD cards up to 64GB in Fat32 format.
 :::
 
 **Step 3.** (Optional) Install USB drivers if needed:
@@ -158,7 +158,7 @@ So, we need to complete the next steps of configuring the network during this ti
 **Step 3.** Select your local Wi-Fi network and enter the password, then click "Connect".
 
 :::note
-The reTerminal E Series only supports 2.4GHz WiFi networks, not 5GHz or other bands.
+The reTerminal E Series ePaper Display only supports 2.4GHz WiFi networks, not 5GHz or other bands.
 :::
 
 **Step 4.** Upon successful connection, the device will emit a confirmation beep and display a pairing code screen.

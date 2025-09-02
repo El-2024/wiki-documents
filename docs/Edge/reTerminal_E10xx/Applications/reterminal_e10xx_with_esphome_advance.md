@@ -1,6 +1,6 @@
 ---
-description: This article describes how to utilise the hardware capabilities of the reTerminal E Series on ESPHome.
-title: Advanced ESPHome Usage of reTerminal E Series in Home Assistant
+description: This article describes how to utilise the hardware capabilities of the reTerminal E Series ePaper Display on ESPHome.
+title: Advanced ESPHome Usage of reTerminal E Series ePaper Display in Home Assistant
 image: https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.webp
 slug: /reterminal_e10xx_with_esphome_advanced
 sidebar_position: 3
@@ -12,15 +12,15 @@ last_update:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Advanced ESPHome Usage of reTerminal E Series in Home Assistant
+# Advanced ESPHome Usage of reTerminal E Series ePaper Display in Home Assistant
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.jpg" style={{width:700, height:'auto'}}/></div><br />
 
-This article explores advanced ESPHome configurations for your reTerminal E Series device, building upon the foundational concepts covered in our [Basic ESPHome Usage guide](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome). If you're new to ESPHome or the reTerminal E Series, we recommend starting with the basic guide before diving into these advanced applications.
+This article explores advanced ESPHome configurations for your reTerminal E Series ePaper Display device, building upon the foundational concepts covered in our [Basic ESPHome Usage guide](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome). If you're new to ESPHome or the reTerminal E Series, we recommend starting with the basic guide before diving into these advanced applications.
 
 ## Hardware Capabilities
 
-The reTerminal E Series includes several hardware components that can be leveraged in Home Assistant through ESPHome:
+The reTerminal E Series ePaper Display includes several hardware components that can be leveraged in Home Assistant through ESPHome:
 
 - Three programmable buttons (GPIO3, GPIO4, GPIO5)
 
@@ -34,13 +34,13 @@ The reTerminal E Series includes several hardware components that can be leverag
 
 Let's explore how to use each of these components in practical applications.
 
-## reTerminal E Series Hardware Component Control
+## reTerminal E Series ePaper Display Hardware Component Control
 
-Let's explore how to use each of the hardware components on the reTerminal E Series in Home Assistant.
+Let's explore how to use each of the hardware components on the reTerminal E Series ePaper Display in Home Assistant.
 
 ### Buttons and LED
 
-This example demonstrates how to use the three buttons on your reTerminal E Series to control functions and provide visual feedback with the on-board LED.
+This example demonstrates how to use the three buttons on your reTerminal E Series ePaper Display to control functions and provide visual feedback with the on-board LED.
 
 You can use this example by copying the code below and pasting it after the `captive_portal` code line in your Yaml file.
 
@@ -118,7 +118,7 @@ This configuration:
 
 ### Buzzer Control
 
-The reTerminal E Series includes a buzzer on GPIO45 that can be used to provide audible feedback. Here's how to configure it:
+The reTerminal E Series ePaper Display includes a buzzer on GPIO45 that can be used to provide audible feedback. Here's how to configure it:
 
 You can use this example by copying the code below and pasting it after the `captive_portal` code line in your Yaml file.
 
@@ -183,7 +183,7 @@ You can adjust the `frequency` parameter to change the tone of the buzzer. Highe
 
 ### Battery Monitoring
 
-The reTerminal E Series can monitor its battery level through the analog input on GPIO1. Here's how to set it up:
+The reTerminal E Series ePaper Display can monitor its battery level through the analog input on GPIO1. Here's how to set it up:
 
 ```yaml
 esphome:
@@ -455,7 +455,7 @@ display:
 Replace `homeassistant.local` with your Home Assistant's actual IP address if local DNS resolution doesn't work in your network.
 :::
 
-When your configuration is successfully uploaded and running, your reTerminal E Series will display a screenshot of your Home Assistant dashboard:
+When your configuration is successfully uploaded and running, your reTerminal E Series ePaper Display will display a screenshot of your Home Assistant dashboard:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/54.jpg" style={{width:600, height:'auto'}}/></div>
 
@@ -465,7 +465,7 @@ When your configuration is successfully uploaded and running, your reTerminal E 
 If you start using the Deep Sleep program, we recommend that you use it preferably with the white button on the right side and set the white button on the right side as the Sleep Wake button. This way, when you want to update the program, you won't encounter the awkward situation where the device is sleeping and you can't upload the program through the serial port.
 :::
 
-This example demonstrates how to use deep sleep mode to significantly reduce power consumption, making your reTerminal E Series suitable for battery-powered applications.
+This example demonstrates how to use deep sleep mode to significantly reduce power consumption, making your reTerminal E Series ePaper Display suitable for battery-powered applications.
 
 You can use this example by copying the code below and pasting it after the `captive_portal` code line in your Yaml file.
 
@@ -1263,7 +1263,7 @@ display:
 
 </details>
 
-When your configuration is successfully uploaded and running, your reTerminal E Series will display a comprehensive dashboard with environment data, time, and battery status:
+When your configuration is successfully uploaded and running, your reTerminal E Series ePaper Display will display a comprehensive dashboard with environment data, time, and battery status:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/55.gif" style={{width:800, height:'auto'}}/></div>
 
