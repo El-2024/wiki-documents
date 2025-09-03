@@ -1,53 +1,53 @@
 ---
-description: El ReSpeaker XVF3800 USB 4-Mic Array es un arreglo de micrófonos circular profesional con AEC, formación de haz, supresión de ruido y captura de voz de 360°. Emparejado con el XIAO ESP32S3, permite control de voz avanzado para dispositivos inteligentes, robótica y aplicaciones IoT. Descubre la integración perfecta y flexibilidad de modo dual.
+description: ReSpeaker XVF3800 USB 4-Mic Arrayは、AEC、ビームフォーミング、ノイズ抑制、360°音声キャプチャを備えたプロフェッショナルな円形マイクロフォンアレイです。XIAO ESP32S3と組み合わせることで、スマートデバイス、ロボティクス、IoTアプリケーション向けの高度な音声制御を実現します。シームレスな統合とデュアルモードの柔軟性を発見してください。
 
-title: Controlando GPIO del reSpeaker XVF3800 a través del XIAO ESP32-S3
+title: XIAO ESP32-S3を使用したreSpeaker XVF3800 GPIOの制御
 
 keywords:
 - reSpeaker
 - XIAO
 - ESP32S3
 image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/6-ReSpeaker-XVF3800-4-Mic-Array-With-XIAO-ESP32S3.jpg
-slug: /es/respeaker_xvf3800_xiao_gpio
+slug: /ja/respeaker_xvf3800_xiao_gpio
 last_update:
   date: 9/3/2025
   author: Kasun Thushara
 ---
 
-## Controlando GPIO del reSpeaker XVF3800 a través del XIAO ESP32-S3
+## XIAO ESP32-S3を使用したreSpeaker XVF3800 GPIOの制御
 
-## Objetivo
+## 目的
 
-Esta guía explica cómo **leer y controlar pines GPIO** en el procesador de voz XVF3800 usando la interfaz I2C. Aprenderás cómo:
-- **Leer estados de pines GPI y GPO**
-- **Controlar pines de salida (ej., silenciar micrófono, controlar LED, amplificador)**
-- **Entender mapeos GPIO y su propósito**
+このガイドでは、I2Cインターフェースを使用してXVF3800音声プロセッサの**GPIOピンの読み取りと制御**方法について説明します。以下の内容を学習できます：
+- **GPIおよびGPOピンの状態読み取り**
+- **出力ピンの制御（例：マイクミュート、LED制御、アンプ制御）**
+- **GPIOマッピングとその目的の理解**
 
-## Descripción General de GPIO
+## GPIO概要
 
 
-El reSpeaker XVF3800 expone 3 pines de entrada (GPI) y 5 pines de salida (GPO) para control externo. Puedes usarlos para leer estados de botones o controlar hardware como el LED de silencio, amplificador o LEDs.
+reSpeaker XVF3800は、外部制御用に3つの入力ピン（GPI）と5つの出力ピン（GPO）を公開しています。これらを使用してボタンの状態を読み取ったり、ミュートLED、アンプ、LEDなどのハードウェアを制御したりできます。
 
-| **Nombre del Pin** | **Dirección** | **Función**                                         |
-|-------------------|---------------|-----------------------------------------------------|
-| X1D09             | Entrada (RO)  | Estado del botón de silencio (alto cuando se libera) |
-| X1D13             | Entrada (RO)  | Flotante                                            |
-| X1D34             | Entrada (RO)  | Flotante                                            |
-| X0D11             | Salida (RW)   | Flotante                                            |
-| X0D30             | Salida (RW)   | LED de silencio + control de silencio de micrófono (alto = silencio) |
-| X0D31             | Salida (RW)   | Habilitación de amplificador (bajo = habilitado)    |
-| X0D33             | Salida (RW)   | Control de alimentación LED WS2812 (alto = encendido) |
-| X0D39             | Salida (RW)   | Flotante                                            |
+| **ピン名** | **方向** | **機能**                                         |
+|--------------|---------------|------------------------------------------------------|
+| X1D09        | 入力 (RO)    | ミュートボタンの状態（リリース時にHigh）              |
+| X1D13        | 入力 (RO)    | フローティング                                             |
+| X1D34        | 入力 (RO)    | フローティング                                             |
+| X0D11        | 出力 (RW)   | フローティング                                             |
+| X0D30        | 出力 (RW)   | ミュートLED + マイクミュート制御（High = ミュート）            |
+| X0D31        | 出力 (RW)   | アンプ有効化（Low = 有効）                     |
+| X0D33        | 出力 (RW)   | WS2812 LED電源制御（High = オン）                 |
+| X0D39        | 出力 (RW)   | フローティング                                             |
 
-## Leer Estados de Pines GPO
+## GPOピン状態の読み取り
 
-**Objetivo**: Verificar niveles lógicos de todos los **GPIOs capaces de salida (GPOs)**.
-**Aspectos Destacados del Código**:
-- Envía una solicitud de lectura usando:
-    - ID de Recurso: 20 (GPO)
-    - ID de Comando: 0 (GPO_READ_VALUES)
-- Lee estados de 5 pines GPO en orden: X0D11 → X0D30 → X0D31 → X0D33 → X0D39
-- Incluye un byte de estado para validar la respuesta
+**目標**：すべての**出力対応GPIO（GPO）**の論理レベルを確認する。
+**コードのハイライト**：
+- 以下を使用して読み取りリクエストを送信：
+    - リソースID：20（GPO）
+    - コマンドID：0（GPO_READ_VALUES）
+- 5つのGPOピンの状態を順番に読み取り：X0D11 → X0D30 → X0D31 → X0D33 → X0D39
+- レスポンスを検証するためのステータスバイトを含む
 
 ```c
 #include <Wire.h>
@@ -127,14 +127,14 @@ bool read_gpo_values(uint8_t *buffer, uint8_t *status) {
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/GPO.PNG" alt="pir" width={600} height="auto" /></p>
 
-## Leer Estados de Pines GPI
+## GPIピン状態の読み取り
 
-**Objetivo**: Verificar estados de **GPIOs capaces de entrada** (ej., estado del botón de silencio).
-**Aspectos Destacados del Código**:
-- Envía comando a:
-    - ID de Recurso: 36 (IO_CONFIG)
-    - ID de Comando: 6 (GPI_VALUE_ALL)
-- Recibe 3 GPI representando el estado de X1D09, X1D13, y X1D34
+**目標**：**入力対応GPIO**の状態を確認する（例：ミュートボタンの状態）。
+**コードのハイライト**：
+- 以下にコマンドを送信：
+    - リソースID：36（IO_CONFIG）
+    - コマンドID：6（GPI_VALUE_ALL）
+- X1D09、X1D13、X1D34の状態を表す3つのGPIを受信
 
 
 ```bash
@@ -213,18 +213,18 @@ bool read_gpi_values(uint8_t *buffer, uint8_t *status) {
 ```
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/GPI.PNG" alt="pir" width={600} height="auto" /></p>
 
-## Escribir a Pin GPO – Ejemplo de Silenciar Micrófono
+## GPOピンへの書き込み – マイクミュートの例
 
-**Objetivo**: Controlar un GPIO de salida, ej., silenciar micrófono alternando GPIO 30 (X0D30).
-**Aspectos Destacados del Código**:
-- Envía un comando de escritura a:
-    - ID de Recurso: 20
-    - ID de Comando: 1 (GPO_WRITE_VALUE)
-    - Carga útil: número de pin, valor `ej., {30, 1} para silenciar`
+**目標**：出力GPIOを制御する、例：GPIO 30（X0D30）を切り替えてマイクをミュートする。
+**コードのハイライト**：
+- 以下に書き込みコマンドを送信：
+    - リソースID：20
+    - コマンドID：1（GPO_WRITE_VALUE）
+    - ペイロード：ピン番号、値 `例：{30, 1}でミュート`
 
-**Funciones de Conveniencia:**
-- muteMic() → establece GPIO 30 en ALTO para **silenciar micrófono y encender LED rojo**
-- unmuteMic() → establece GPIO 30 en BAJO para **activar micrófono y apagar LED**
+**便利な関数：**
+- muteMic() → GPIO 30をHIGHに設定して**マイクをミュートし、赤色LEDを点灯**
+- unmuteMic() → GPIO 30をLOWに設定して**マイクのミュートを解除し、LEDを消灯**
 
 ```bash
 #include <Wire.h>
@@ -332,9 +332,9 @@ void readGPIOStatus() {
 }
 
 ```
-## Soporte Técnico y Discusión de Productos
+## 技術サポート & 製品ディスカッション
 
-¡Gracias por elegir nuestros productos! Estamos aquí para brindarle diferentes tipos de soporte para asegurar que su experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para satisfacer diferentes preferencias y necesidades.
+弊社製品をお選びいただき、ありがとうございます！お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。異なる好みやニーズに対応するため、複数のコミュニケーションチャネルをご用意しています。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
