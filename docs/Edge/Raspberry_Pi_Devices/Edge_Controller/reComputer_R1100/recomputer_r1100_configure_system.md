@@ -259,8 +259,6 @@ ATD<phone_number>;
 - Replace `<phone_number>` with the desired phone number you want to dial.  
 - Make sure to include a **semicolon (;)** at the end of the command to indicate the end of the phone number.  
 
-Here’s the corrected and well-structured version with improved grammar, readability, and formatting:  
-
 
 
 ## Zigbee over Mini-PCIe
