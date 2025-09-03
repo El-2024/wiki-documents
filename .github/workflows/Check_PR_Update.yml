@@ -108,7 +108,7 @@ jobs:
         run: yarn install --frozen-lockfile
         
       - name: Test build website
-        run: yarn docusaurus build
+        run: yarn docusaurus build --no-minify
         
       # 报告状态到PR（不添加评论）
       - name: Report status to PR
