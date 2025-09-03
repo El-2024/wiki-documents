@@ -3441,7 +3441,14 @@ const sidebars = {
             items:[
               'Edge/Raspberry_Pi_Devices/Application/Large_language_Model/deploy_deepseek_on_raspberry_pi_ai_box',
               'Edge/Raspberry_Pi_Devices/Application/Large_language_Model/distributed_inference_of_deepseek_model_on_raspberrypi'
-
+            ]
+          },
+          {
+            type: 'category',
+            label: 'Tools',
+            items:[
+              'Edge/Raspberry_Pi_Devices/Application/Development_Tools/recomputer_use_uv_to_build_package',
+              'Edge/Raspberry_Pi_Devices/Application/Development_Tools/recomputer_use_docker'
             ]
           }
         ]
@@ -3997,7 +4004,7 @@ const sidebars = {
 
     {
       type: 'category',
-      label: 'reTerminal E10xx',
+      label: 'reTerminal E Series',
       collapsed: true,
       collapsible: true,
       link: {
@@ -4102,8 +4109,11 @@ const sidebars = {
                 //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
                 // },
                 items: [
+                  'Robotics/Robot_Sensor/Camera/Getting_Start_with_Orbbec_Gemini2_3D_Camera',
                   'Robotics/Robot_Sensor/Camera/Orbbec_Depth_Camera',
+                  'Robotics/Robot_Sensor/Camera/ORB_SLAM3_with_Orbbec_Gemini2',
                   'Robotics/Robot_Sensor/Camera/Orbbec_Gemini_335Lg',
+                  'Robotics/Robot_Sensor/Camera/Sensing_GMSL_Camera',
                   'Robotics/Robot_Sensor/Camera/CSI_Camera'
                 ]},
             {
@@ -8616,7 +8626,7 @@ const sidebars = {
 
     {
       type: 'category',
-      label: 'reTerminal E10xx',
+      label: 'reTerminal E Series',
       collapsed: true,
       collapsible: true,
       link: {
