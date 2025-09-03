@@ -27,9 +27,9 @@ This wiki explains how to use the [docker](https://www.docker.com) on reComputer
 <div class="table-center">
 	<table align="center">
 	<tr>
-		<th>reComputer AI R1125</th>
+		<th>reComputer R1125</th>
 		<th>reComputer AI R2130</th>
-		<th>reComputer AI R2145</th>
+		<th>reComputer AI Industrial R2145</th>
 	</tr>
     <tr>
       <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-113991334.jpg" style={{width:600, height:'auto'}}/></div></td>
