@@ -75,12 +75,12 @@ Instalación del Hardware
 
 ### Conectando Bluetooth a PC a través de UART Bee
 
-El Bluetooth proporciona un puerto serie con socket Grove estándar, se puede usar la mayoría de convertidores USB-UART. Aquí usamos un [UartSBee V5](/UartSBee_v5) para conectar Bluetooth y PC.
+El Bluetooth proporciona un puerto serie con socket Grove estándar, se puede usar la mayoría de convertidores USB-UART. Aquí usamos un [UartSBee V5](/es/UartSBee_v5) para conectar Bluetooth y PC.
 ![](https://files.seeedstudio.com/wiki/Grove-BLE-dual_model-v1.0/img/Grove-BLE-dual_model-v1.0_ConnectToPC.jpg)
 
 ### Conectando Bluetooth a Arduino
 
-Dado que Arduino Uno no tiene socket Grove, usamos <a href="/Seeeduino_Lotus"><span><font color={'8DC215'} size={"3"}> Seeeduino Lotus </font></span></a> en su lugar. También podrías usar Arduino con **Grove Base Shield V2**.
+Dado que Arduino Uno no tiene socket Grove, usamos <a href="/es/Seeeduino_Lotus"><span><font color={'8DC215'} size={"3"}> Seeeduino Lotus </font></span></a> en su lugar. También podrías usar Arduino con **Grove Base Shield V2**.
 Como ejemplo, D2 y D3 se usan como UART por software. Entonces, conecta el cable Grove en el socket "D2"
 
 ![](https://files.seeedstudio.com/wiki/Grove-BLE-dual_model-v1.0/img/Grove-BLE-dual_model-v1.0_ConnectToArduino.jpg)
@@ -1140,7 +1140,7 @@ El flujo del programa de inicialización por favor refiérase al siguiente diagr
 
 Después de la inicialización, el Central y Periférico harán cosas diferentes, el Central enviará mensaje al Periférico por intervalos e imprimirá lo que recibió del Periférico mientras el Periférico solo responde al Central.
 
-Haga clic [aquí](https://github.com/Seeed-Studio/HM-13_SW) para descargar el código de prueba y abrir HM-13/_SW.ino con Arduino IDE, compilar y descargar a Arduino Uno. Recuerde configurar el Bluetooth a diferente rol modificando la macro al comienzo. Si tiene algún problema sobre cómo iniciar Arduino, por favor haga clic <a href="/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}> aquí </font></span></a> para obtener ayuda.
+Haga clic [aquí](https://github.com/Seeed-Studio/HM-13_SW) para descargar el código de prueba y abrir HM-13/_SW.ino con Arduino IDE, compilar y descargar a Arduino Uno. Recuerde configurar el Bluetooth a diferente rol modificando la macro al comienzo. Si tiene algún problema sobre cómo iniciar Arduino, por favor haga clic <a href="/es/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}> aquí </font></span></a> para obtener ayuda.
 
 Después de descargar el programa, abra dos ventanas de terminal serial, los LEDs en Bluetooth parpadearán, varios segundos después, dejan de parpadear y se mantienen encendidos, esto indica que se conectaron entre sí.
 Según el programa está escrito, el Central envía mensaje al Periférico continuamente y obtiene retroalimentación cada vez.

@@ -10,7 +10,7 @@ last_update:
   author: shuxu hu
 ---
 
-Cambiaremos esta página muy pronto. Por favor consulte [aquí](/Contribution-Guide)
+Cambiaremos esta página muy pronto. Por favor consulte [aquí](/es/Contribution-Guide)
 
 Este tutorial te mostrará cómo editar un documento de nuestro sistema wiki. Nos gustaría agradecerte de antemano si tienes alguna idea y estás dispuesto a actualizar el documento como colaborador. En este tutorial, vas a visitar el repositorio de github de nuestro sistema wiki, en el cual hay cientos de documentos que fueron escritos en formato markdown y el número está aumentando ya que aún estamos en el proceso de migración de documentos.
 

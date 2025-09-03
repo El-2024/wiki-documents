@@ -39,7 +39,7 @@ Tenemos varios tipos de accesorios Grove que pueden aplicarse a diferentes escen
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-1-2-Inch-IPS-Display-p-5699.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove_1.2inch_ips_display/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/grove_1.2inch_ips_display/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Pantalla de 4 Dígitos
@@ -57,7 +57,7 @@ Tenemos varios tipos de accesorios Grove que pueden aplicarse a diferentes escen
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-4-Digit-Display.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-4-Digit_Display/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-4-Digit_Display/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Pantalla Alfanumérica Roja de 0.54 pulgadas
@@ -84,7 +84,7 @@ Este módulo es una pantalla alfanumérica con alto brillo y retroiluminación r
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove-0.54_inch_Red_Dual_Alphanumeric_Display/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-0.54_inch_Red_Dual_Alphanumeric_Display/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - 16x2 LCD
@@ -114,7 +114,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove-16x2_LCD_Series/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-16x2_LCD_Series/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - LCD RGB Backlight
@@ -132,7 +132,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LCD-RGB-Backlight.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-LCD_RGB_Backlight/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-LCD_RGB_Backlight/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - OLED Display 0.66" (SSD1306)
@@ -150,7 +150,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-66-SSD1306-v1-0-p-5096.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-OLED-Display-0.66-SSD1306_v1.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-OLED-Display-0.66-SSD1306_v1.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - OLED Display 0.96" (SSD1315)
@@ -168,7 +168,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-96-SSD1315-p-4294.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-OLED-Display-0.96-SSD1315/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-OLED-Display-0.96-SSD1315/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - OLED Yellow&Blue Display 0.96(SSD1315) - SPI/IIC -3.3V/5V
@@ -186,7 +186,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Yellow-Blue-Display-0-96-SSD1315-V1-0-p-5010.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-OLED-Yellow&Blue-Display-0.96-SSD1315_V1.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-OLED-Yellow&Blue-Display-0.96-SSD1315_V1.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - OLED Display 1.12&#34
@@ -204,7 +204,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-V2.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-OLED_Display_1.12inch/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-OLED_Display_1.12inch/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - OLED Display 1.12 (SH1107) V3.0 - SPI/IIC -3.3V/5V
@@ -222,7 +222,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-1-12-SH1107-V3-0-p-5011.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-OLED-Display-1.12-SH1107_V3.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-OLED-Display-1.12-SH1107_V3.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Actuador
@@ -242,7 +242,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Coil-Latching-Relay.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-2-Coil_Latching_Relay/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-2-Coil_Latching_Relay/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Zumbador
@@ -260,7 +260,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Buzzer.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Buzzer/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Buzzer/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Zumbador Pasivo
@@ -278,7 +278,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Passive-Buzzer-p-4525.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Passive-Buzzer/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Passive-Buzzer/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove – LED RGB Encadenable V2.0
@@ -296,7 +296,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Chainable-RGB-Led-V2-0.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Chainable_RGB_LED/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Chainable_RGB_LED/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Controlador de Motor I2C V1.3
@@ -314,7 +314,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Motor-Driver-with-L298.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C_Motor_Driver_V1.3/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-I2C_Motor_Driver_V1.3/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - I2C Motor Driver (L298P)
@@ -332,7 +332,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Motor-Driver-L298P-p-4534.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C-Motor-Driver-L298P/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-I2C-Motor-Driver-L298P/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Infrared Emitter
@@ -350,7 +350,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Emitter.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Infrared_Emitter/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Infrared_Emitter/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - MP3 v4.0
@@ -368,7 +368,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-MP3-V4-p-5862.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove_mp3_v4/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/grove_mp3_v4/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Mini Fan
@@ -386,7 +386,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Mini-Fan-v1-1.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Mini_Fan/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Mini_Fan/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Recorder V3
@@ -404,7 +404,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Recorder-v3-0.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Recorder_v3.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Recorder_v3.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Relay
@@ -422,7 +422,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Relay.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Relay/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Relay/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Relé SPDT de 2 Canales
@@ -440,7 +440,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Channel-SPDT-Relay.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-2-Channel_SPDT_Relay/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-2-Channel_SPDT_Relay/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Relé SPDT de 4 Canales
@@ -458,7 +458,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-4-Channel-SPDT-Relay-p-3119.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-4-Channel_SPDT_Relay/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-4-Channel_SPDT_Relay/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Relé de Estado Sólido de 8 Canales
@@ -476,7 +476,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-8-Channel-Solid-State-Relay.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-8-Channel_Solid_State_Relay/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-8-Channel_Solid_State_Relay/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Relé Optoacoplador (M281)
@@ -494,7 +494,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Optocoupler-Relay-M281-p-2923.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Optocoupler_Relay-M281/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Optocoupler_Relay-M281/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Servo
@@ -512,7 +512,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Servo.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Servo/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Servo/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Altavoz
@@ -530,7 +530,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Speaker-p-1445.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Speaker/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Speaker/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Altavoz Plus
@@ -548,7 +548,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Speaker-Plus-p-4592.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Speaker-Plus/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Speaker-Plus/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Motor de Vibración
@@ -566,7 +566,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vibration-Motor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Vibration_Motor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Vibration_Motor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Atomización de Agua
@@ -584,7 +584,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Water-Atomization-v1-0.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Water_Atomization/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Water_Atomization/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Controlador PWM de 16 Canales (PCA9685)
@@ -602,7 +602,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-16-Channel-PWM-Driver-PCA9685.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-16-Channel_PWM_Driver-PCA9685/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-16-Channel_PWM_Driver-PCA9685/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Controlador de Motor I2C (TB6612FNG)
@@ -620,7 +620,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Motor-Driver-TB6612FNG-p-3220.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C_Motor_Driver-TB6612FNG/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-I2C_Motor_Driver-TB6612FNG/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor Hall
@@ -638,7 +638,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Hall-Sensor-p-965.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Hall_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Hall_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Divisor de Voltaje
@@ -656,7 +656,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Voltage-Divider.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Voltage_Divider/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Voltage_Divider/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Tiempo
@@ -676,7 +676,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RTC-DS1307.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-RTC/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-RTC/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - RTC de Alta Precisión (Reloj de Tiempo Real)
@@ -694,7 +694,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-High-Precision-RTC.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove_High_Precision_RTC/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove_High_Precision_RTC/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Corriente
@@ -714,7 +714,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-10A-DC-Current-Sensor-ACS725-p-2927.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-10A_DC_Current_Sensor-ACS725/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-10A_DC_Current_Sensor-ACS725/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Corriente DC/AC ±5A (ACS70331)
@@ -732,7 +732,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-5A-DC-AC-Current-Sensor-ACS70331-p-2928.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-5A_DC_AC_Current_Sensor-ACS70331/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-5A_DC_AC_Current_Sensor-ACS70331/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Corriente DC de 2.5A (ACS70331)
@@ -750,7 +750,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-5A-DC-Current-Sensor-ACS70331-p-2929.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-2.5A-DC-Current-Sensor-ACS70331/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-2.5A-DC-Current-Sensor-ACS70331/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Electricidad
@@ -768,7 +768,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Electricity-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Electricity_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Electricity_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Contador de Coulomb 3.3V a 5V (LTC2941)
@@ -786,7 +786,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Coulomb-Counter-3-3V-to-5V-LTC2941.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Coulomb_Counter_3.3V_to_5V-LTC2941/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Coulomb_Counter_3.3V_to_5V-LTC2941/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - MOSFET
@@ -804,7 +804,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-MOSFET.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-MOSFET/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-MOSFET/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Relé SPDT(30A)
@@ -822,7 +822,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-SPDT-Relay-30A.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-SPDT_Relay_30A/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-SPDT_Relay_30A/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Terminal de Tornillo
@@ -840,7 +840,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Screw-Terminal.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Screw_Terminal/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Screw_Terminal/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Electroimán
@@ -858,7 +858,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Electromagnet.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Electromagnet/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Electromagnet/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### LED
@@ -878,7 +878,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Red_LED/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Red_LED/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - LED Circular
@@ -896,7 +896,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Circular-LED.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Circular_LED/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Circular_LED/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Barra LED RGB (10 - WS2813 Mini)
@@ -914,7 +914,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RGB-LED-Stick-10-WS2813-Mini.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-RGB_LED_Stick-10-WS2813_Mini/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-RGB_LED_Stick-10-WS2813_Mini/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Anillo LED RGB (20 - WS2813 Mini)
@@ -932,7 +932,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RGB-LED-Ring-20-WS2813-Mini.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-LED_ring/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-LED_ring/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Cadena de Luces LED
@@ -950,7 +950,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LED-String-Light.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-LED_String_Light/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-LED_String_Light/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Controlador de Tira LED
@@ -968,7 +968,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LED-Strip-Driver.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-LED_Strip_Driver/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-LED_Strip_Driver/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Matriz LED RGB con Driver
@@ -986,7 +986,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RGB-LED-Matrix-w-Driver.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-RGB_LED_Matrix_w-Driver/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-RGB_LED_Matrix_w-Driver/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Driver de Matriz LED (HT16K33)
@@ -1004,7 +1004,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LED-Matrix-Driver-HT16K33.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-LED_Matrix_Driver-HT16K33/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-LED_Matrix_Driver-HT16K33/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Matriz LED Roja con Driver
@@ -1022,7 +1022,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Red-LED-Matrix-w-Driver.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Red_LED_Matrix_w_Driver/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Red_LED_Matrix_w_Driver/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Interruptor y Botón
@@ -1042,7 +1042,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Button.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Button/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Button/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Interruptor(P)
@@ -1060,7 +1060,7 @@ Grove - 16 x 2 LCD es una pantalla LCD I2C perfecta para Arduino y Raspberry Pi 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Switch-P.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Switch-P/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Switch-P/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove-LED Button
@@ -1090,7 +1090,7 @@ El Grove - LED Button está compuesto por Grove - Yellow Button, Grove - Blue LE
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove-LED_Button/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-LED_Button/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove Botón Dual
@@ -1108,7 +1108,7 @@ El Grove - LED Button está compuesto por Grove - Yellow Button, Grove - Blue LE
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Dual-Button-p-4529.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Dual-Button/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Dual-Button/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove-Tecla mecánica
@@ -1126,7 +1126,7 @@ El Grove - LED Button está compuesto por Grove - Yellow Button, Grove - Blue LE
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Mech-Keycap.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Mech_Keycap/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Mech_Keycap/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Joystick de Pulgar
@@ -1144,7 +1144,7 @@ El Grove - LED Button está compuesto por Grove - Yellow Button, Grove - Blue LE
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Thumb-Joystick.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Thumb_Joystick/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Thumb_Joystick/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Interruptor Magnético
@@ -1162,7 +1162,7 @@ El Grove - LED Button está compuesto por Grove - Yellow Button, Grove - Blue LE
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Magnetic-Switch.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Magnetic_Switch/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Magnetic_Switch/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 ### Entrada Salida
@@ -1182,7 +1182,7 @@ El Grove - LED Button está compuesto por Grove - Yellow Button, Grove - Blue LE
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Hub.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C_Hub/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-I2C_Hub/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Hub I2C (6 Puertos)
@@ -1200,7 +1200,7 @@ El Grove - LED Button está compuesto por Grove - Yellow Button, Grove - Blue LE
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Hub-6-Port-p-4349.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C-Hub-6Port/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-I2C-Hub-6Port/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Multiplexor I2C de 8 Canales/Hub I2C (TCA9548A)
@@ -1218,7 +1218,7 @@ El Grove - LED Button está compuesto por Grove - Yellow Button, Grove - Blue LE
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-8-Channel-I2C-Hub-TCA9548A-p-4398.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - ADC de 4 Canales de 16 bits (ADS1115)
@@ -1236,7 +1236,7 @@ El Grove - LED Button está compuesto por Grove - Yellow Button, Grove - Blue LE
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-ADS1115-16-bit-ADC-p-4599.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-16-bit-ADC-ADS1115/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-16-bit-ADC-ADS1115/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Carcasa
@@ -1256,7 +1256,7 @@ El Grove - LED Button está compuesto por Grove - Yellow Button, Grove - Blue LE
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/catalogsearch/result/index/?q=Grove%20-%20Wrapper" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Wrapper/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Wrapper/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ## Co-Crear sensores Grove con Seeed Studio Fusion

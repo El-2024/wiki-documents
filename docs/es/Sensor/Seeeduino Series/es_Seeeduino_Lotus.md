@@ -39,7 +39,7 @@ Aquí tienes algunos proyectos divertidos para tu referencia.
 |Auto Controlado por Track Ball|Receptor FM|Hacer una Pistola de Madera|
 |-------|-------|-------|
 |![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Lotus/img/example_1.png)|![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Lotus/img/Fm%20demo.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Lotus/img/gun.jpg)|
-|[Hazlo Ahora](https://community.seeedstudio.com/A-Car-Controlled-by-Track-Ball-p-1132.html)|<a href="/FM_Receiver" ><span><font size={"3"}> Hazlo Ahora </font></span></a>|[Hazlo Ahora](https://www.instructables.com/id/DIY-a-Wooden-Laser-Gun-As-a-Xmas-Present-for-Your-/)|
+|[Hazlo Ahora](https://community.seeedstudio.com/A-Car-Controlled-by-Track-Ball-p-1132.html)|<a href="/es/FM_Receiver" ><span><font size={"3"}> Hazlo Ahora </font></span></a>|[Hazlo Ahora](https://www.instructables.com/id/DIY-a-Wooden-Laser-Gun-As-a-Xmas-Present-for-Your-/)|
 
 ## Característica
 

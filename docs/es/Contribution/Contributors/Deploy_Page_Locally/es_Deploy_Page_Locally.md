@@ -64,5 +64,5 @@ yarn start
 
 ### 7. Ahora Puedes Hacer los Cambios o Agregar los Archivos
 
-- [Pasos completos para PR](/full_steps_pull_request)
-- [Pasos rápidos para PR](/quick_pull_request)
+- [Pasos completos para PR](/es/full_steps_pull_request)
+- [Pasos rápidos para PR](/es/quick_pull_request)

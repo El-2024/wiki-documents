@@ -43,7 +43,7 @@ Windows ahora encontrará el hardware e instalará los controladores necesarios
 - **Paso 4.** Abre el **explorador de archivos** y verás el eMMC del Computer Module 4 mostrado como un **dispositivo de almacenamiento masivo USB**
 
 :::caution
-Si flasheas **el Raspberry Pi OS que originalmente venía con reTerminal**, por favor regresa a este [Wiki](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal). <br/>
+Si flasheas **el Raspberry Pi OS que originalmente venía con reTerminal**, por favor regresa a este [Wiki](/es/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal). <br/>
 De lo contrario, por favor procede con los siguientes pasos.
 :::
 
@@ -77,7 +77,7 @@ Por favor espera unos minutos hasta que el proceso de flasheo esté completo.
 
 - **Paso 11.** Voltea el **interruptor de Modo de Arranque** de vuelta a la posición original y ensambla la carcasa del reTerminal
 
-Ahora puedes saltar a **[aquí](/log_rpios_use_ssh_over_wifi_ethernet)**
+Ahora puedes saltar a **[aquí](/es/log_rpios_use_ssh_over_wifi_ethernet)**
 
 ### Para MAC
 
@@ -120,7 +120,7 @@ sudo ./rpiboot
 - **Paso 6.** Conecta reTerminal a tu computadora Mac mediante un cable USB Type-C
 
 :::caution
-Si flasheas **el Raspberry Pi OS que originalmente venía con reTerminal**, por favor regresa a esta [Wiki](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal). <br/>
+Si flasheas **el Raspberry Pi OS que originalmente venía con reTerminal**, por favor regresa a esta [Wiki](/es/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal). <br/>
 De lo contrario, por favor continúa con los siguientes pasos.
 :::
 
@@ -202,7 +202,7 @@ sudo ./rpiboot
 - **Paso 7.** Conecta reTerminal a la PC mediante cable USB Type-C
 
 :::caution
-Si flasheas **el Raspberry Pi OS que originalmente venía con reTerminal**, por favor regresa a este [Wiki](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal).<br/>
+Si flasheas **el Raspberry Pi OS que originalmente venía con reTerminal**, por favor regresa a este [Wiki](/es/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal).<br/>
 De lo contrario, por favor procede con los siguientes pasos.
 :::
 

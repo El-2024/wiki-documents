@@ -24,7 +24,7 @@ Este tutorial proporciona una guía paso a paso sobre cómo leer datos de imagen
 </div>
 
 ## Prerrequisitos
-- __[Serie reComputer J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__: Asegúrate de haber completado la [instalación del sistema JetPack 5.x](/reComputer_J4012_Flash_Jetpack) y el [entorno ROS Noetic](/installing_ros1) según los tutoriales proporcionados.
+- __[Serie reComputer J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__: Asegúrate de haber completado la [instalación del sistema JetPack 5.x](/es/reComputer_J4012_Flash_Jetpack) y el [entorno ROS Noetic](/es/installing_ros1) según los tutoriales proporcionados.
 
 - __Las cámaras compatibles son las siguientes:__
 
@@ -50,7 +50,7 @@ Este tutorial proporciona una guía paso a paso sobre cómo leer datos de imagen
 
 ## Comenzando
 ### Conectando las Cámaras
-Por favor, sigue este tutorial para completar la [Conexión y prueba de las cámaras CSI](/J401_carrierboard_Hardware_Interfaces_Usage), y asegúrate de que [ROS ya esté instalado](/installing_ros1) en tu sistema.
+Por favor, sigue este tutorial para completar la [Conexión y prueba de las cámaras CSI](/es/J401_carrierboard_Hardware_Interfaces_Usage), y asegúrate de que [ROS ya esté instalado](/es/installing_ros1) en tu sistema.
 
 <div align="center">
       <img width={700} 

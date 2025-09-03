@@ -43,7 +43,7 @@ Aquí hay un ejemplo para mostrarte cómo leer información de temperatura del s
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Temperature_Sensor/img/Tempreture_Sensor_Connector.jpg" /></div>
 
-4. Sube el código de abajo. Por favor haz clic [aquí](/Upload_Code/) si no sabes cómo subir código.
+4. Sube el código de abajo. Por favor haz clic [aquí](/es/Upload_Code/) si no sabes cómo subir código.
 
 ```
 /*
@@ -87,7 +87,7 @@ Como referencia, la siguiente es la curva de resistencia del TTC3A103*39H, el te
 
 1.Deberías tener una raspberry pi y un grovepi o grovepi+.
 
-2.Deberías haber completado la configuración del entorno de desarrollo, de lo contrario sigue [aquí](/GrovePi_Plus/#Introducing_the_GrovePi.2B).
+2.Deberías haber completado la configuración del entorno de desarrollo, de lo contrario sigue [aquí](/es/GrovePi_Plus/#Introducing_the_GrovePi.2B).
 
 3.Conexión
 
@@ -137,7 +137,7 @@ Para comenzar a editar programas que residen en BBG, puedes usar el IDE Cloud9.
 
 Como un ejercicio simple para familiarizarse con el IDE Cloud9, crear una aplicación simple para hacer parpadear uno de los 4 LEDs programables por el usuario en el BeagleBone es un buen comienzo.
 
-Si esta es tu primera vez usando el IDE Cloud9, por favor sigue este [**enlace**](/BeagleBone_Green/#getting-started).
+Si esta es tu primera vez usando el IDE Cloud9, por favor sigue este [**enlace**](/es/BeagleBone_Green/#getting-started).
 
 **Paso1:** Haz clic en el "+" en la parte superior derecha para crear un nuevo archivo.
 

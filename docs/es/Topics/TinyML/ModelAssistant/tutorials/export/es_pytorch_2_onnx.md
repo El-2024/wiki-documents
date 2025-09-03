@@ -21,7 +21,7 @@ Este capítulo describirá cómo convertir y exportar modelos PyTorch a modelos 
 
 ### Configuración del Entorno
 
-Como en el paso de [Entrenamiento](/ModelAssistant_Tutorials_Training_Overview), recomendamos que lo hagas en un **entorno virtual** durante la fase de exportación del modelo. En el entorno virtual `sscma`, asegúrate de que el paso [Instalación - Prerrequisitos - Instalar Dependencias Adicionales](/ModelAssistant_Introduce_Installation#step-4-install-extra-dependencies-optional) haya sido completado.
+Como en el paso de [Entrenamiento](/es/ModelAssistant_Tutorials_Training_Overview), recomendamos que lo hagas en un **entorno virtual** durante la fase de exportación del modelo. En el entorno virtual `sscma`, asegúrate de que el paso [Instalación - Prerrequisitos - Instalar Dependencias Adicionales](/es/ModelAssistant_Introduce_Installation#step-4-install-extra-dependencies-optional) haya sido completado.
 
 :::tip
 
@@ -35,9 +35,9 @@ conda activate sscma
 
 ### Modelos y Pesos
 
-También necesitas preparar el modelo PyTorch y sus pesos antes de exportar el modelo. Para el modelo, puedes encontrarlo en la sección [Config](/ModelAssistant_Tutorials_Datasets), ya lo hemos preconfigurado. Para los pesos, puedes referirte a los siguientes pasos para obtener los pesos del modelo.
+También necesitas preparar el modelo PyTorch y sus pesos antes de exportar el modelo. Para el modelo, puedes encontrarlo en la sección [Config](/es/ModelAssistant_Tutorials_Datasets), ya lo hemos preconfigurado. Para los pesos, puedes referirte a los siguientes pasos para obtener los pesos del modelo.
 
-- Consulta la sección [Entrenamiento](/ModelAssistant_Tutorials_Training_Overview) y elige un modelo, y entrénalo para obtener los pesos del modelo.
+- Consulta la sección [Entrenamiento](/es/ModelAssistant_Tutorials_Training_Overview) y elige un modelo, y entrénalo para obtener los pesos del modelo.
 
 - O descarga los pesos preentrenados oficiales de [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) desde nuestro [GitHub Releases - Model Zoo](https://github.com/Seeed-Studio/ModelAssistantreleases/tag/model_zoo).
 

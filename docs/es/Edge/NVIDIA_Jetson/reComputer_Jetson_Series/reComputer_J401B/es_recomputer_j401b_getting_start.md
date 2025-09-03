@@ -843,7 +843,7 @@ Por favor, completa la **Configuración del Sistema** según tus necesidades.
 ## Uso de Interfaces
 
 :::info
-Por favor, consulta esta [página wiki](/recomputer_j401b_interfaces_usage) para más información sobre el uso de interfaces.
+Por favor, consulta esta [página wiki](/es/recomputer_j401b_interfaces_usage) para más información sobre el uso de interfaces.
 :::
 
 

@@ -99,7 +99,7 @@ Este Seeed BLE Shield utiliza un módulo HM-11 para proporcionar a tu Arduino/Se
 
 ![](https://files.seeedstudio.com/wiki/Seeed_BLE_Shield/img/BLE_Shield.png)
 
-* HM-11: El módulo básico es HM-11, para más información puedes consultar este wiki de [HM-11](/Bluetooth_V4.0_HM_11_BLE_Module).
+* HM-11: El módulo básico es HM-11, para más información puedes consultar este wiki de [HM-11](/es/Bluetooth_V4.0_HM_11_BLE_Module).
 
 * Lámpara indicadora: La lámpara parpadeará si nadie se conecta al BLE, pero la lámpara se mantendrá encendida después de que el BLE haya sido conectado.
 
@@ -245,7 +245,7 @@ Para más información sobre los Comandos AT, consulta la hoja de datos del mód
 
 ---
 
-* [FAQ sobre Seeed BLE Shield](/Seeed_BLE_Shield). _También puedes acceder a la página de FAQ haciendo clic en el botón "FAQ" que está en el lado derecho de la página wiki del producto._
+* [FAQ sobre Seeed BLE Shield](/es/Seeed_BLE_Shield). _También puedes acceder a la página de FAQ haciendo clic en el botón "FAQ" que está en el lado derecho de la página wiki del producto._
 
 ## Visor de Esquemas en Línea
 

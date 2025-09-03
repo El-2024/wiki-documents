@@ -23,15 +23,15 @@ Sin embargo, si tu pantalla no se muestra correctamente y permanece negra, sigue
 
 ### Si ambas luces están encendidas
 
-  Esta situación ocurre debido a problemas con el controlador que controla la pantalla LCD. En este punto, sigue los pasos de solución de problemas proporcionados en el [**segundo paso**](/reterminal_black_screen/#second-confirm-whether-you-have-installed-a-new-system) y ejecútalos paso a paso.
+  Esta situación ocurre debido a problemas con el controlador que controla la pantalla LCD. En este punto, sigue los pasos de solución de problemas proporcionados en el [**segundo paso**](/es/reterminal_black_screen/#second-confirm-whether-you-have-installed-a-new-system) y ejecútalos paso a paso.
 
 ## Paso 2: Confirmar si has instalado un nuevo sistema
 
 :::caution
 
-- Si flasheas un nuevo SO por tu cuenta y la pantalla LCD no se muestra correctamente, necesitas [**instalar los controladores necesarios de reTerminal**](/reterminal_black_screen/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os) por separado.
+- Si flasheas un nuevo SO por tu cuenta y la pantalla LCD no se muestra correctamente, necesitas [**instalar los controladores necesarios de reTerminal**](/es/reterminal_black_screen/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os) por separado.
 
-- Si no has flasheado tu propio SO pero la pantalla permanece negra, procede directamente a [**Flashear Raspberry Pi OS que originalmente viene con reTerminal**](/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal).
+- Si no has flasheado tu propio SO pero la pantalla permanece negra, procede directamente a [**Flashear Raspberry Pi OS que originalmente viene con reTerminal**](/es/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal).
 
 - Si estás intentando instalar **Raspbian OS**, hemos realizado pruebas y encontrado que tanto las versiones de *32 bits como de 64 bits* de **Bulleseye** funcionan bien con reTerminal sin encontrar ningún **problema de pantalla negra**. Además, también hemos probado la nueva versión **Bookworm** de *64 bits*, y funciona sin problemas en reTerminal.
 
@@ -89,9 +89,9 @@ Finalmente, puedes usar la pantalla LCD normalmente en el nuevo sistema.
 Si has flasheado a un OS diferente y quieres volver al Raspberry Pi OS predeterminado que se envía con reTerminal, puedes seguir los pasos a continuación
 :::
 
-Podemos flashear **Raspberry Pi OS / Ubuntu OS de 64 bits u otro OS** en el **almacenamiento eMMC** del CM4 en el reTerminal. Si nunca has flasheado un sistema en reTerminal antes, te recomendamos encarecidamente que sigas [Flashear Raspberry Pi OS/ Ubuntu OS de 64 bits u Otro OS a eMMC](/flash_different_os_to_emmc) para prepararte para el flasheo del sistema, lo cual incluye **instalar los controladores necesarios**.
+Podemos flashear **Raspberry Pi OS / Ubuntu OS de 64 bits u otro OS** en el **almacenamiento eMMC** del CM4 en el reTerminal. Si nunca has flasheado un sistema en reTerminal antes, te recomendamos encarecidamente que sigas [Flashear Raspberry Pi OS/ Ubuntu OS de 64 bits u Otro OS a eMMC](/es/flash_different_os_to_emmc) para prepararte para el flasheo del sistema, lo cual incluye **instalar los controladores necesarios**.
 
-Una vez que los [controladores necesarios](/flash_different_os_to_emmc) estén instalados, solo tienes que conectar el puerto USB Type-C del reTerminal a tu PC. Cuando abras el Explorador de Archivos y veas que el eMMC del Compute Module 4 se muestra como un dispositivo de almacenamiento masivo USB, puedes realizar los siguientes pasos:
+Una vez que los [controladores necesarios](/es/flash_different_os_to_emmc) estén instalados, solo tienes que conectar el puerto USB Type-C del reTerminal a tu PC. Cuando abras el Explorador de Archivos y veas que el eMMC del Compute Module 4 se muestra como un dispositivo de almacenamiento masivo USB, puedes realizar los siguientes pasos:
 
 - **1.** Descarga el Raspberry Pi OS visitando los enlaces a continuación
 

@@ -54,7 +54,7 @@ Verás la interfaz web Luci de OpenWrt aquí. La imagen OpenWrt compilada por Se
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Mini_Router/mini_router_overview2.png" alt="pir" width="650" height="auto"/></p>
 
 ## FAQ
-Para detalles, por favor haz clic [**aquí**](/FAQs_For_openWrt)
+Para detalles, por favor haz clic [**aquí**](/es/FAQs_For_openWrt)
 
 ## Recursos
 

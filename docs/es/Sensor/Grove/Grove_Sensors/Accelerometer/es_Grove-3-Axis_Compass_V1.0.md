@@ -84,7 +84,7 @@ Ahora empecemos a ejecutar tu brújula.
 
 1.Deberías tener una raspberry pi y un grovepi o grovepi+.
 
-2.Deberías haber completado la configuración del entorno de desarrollo, de lo contrario sigue [aquí](/GrovePi_Plus/).
+2.Deberías haber completado la configuración del entorno de desarrollo, de lo contrario sigue [aquí](/es/GrovePi_Plus/).
 
 3.Conexión
 

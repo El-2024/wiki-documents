@@ -101,7 +101,7 @@ Antes de que podamos continuar con los pasos de instalación, necesitamos asegur
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/5.png" /></div>
 
 :::caution
-La interfaz SPI en el Jetson-Nano está multiplexada con GPIO por defecto y no está habilitada. Por favor consulta [**esta guía**](/enable_spi_interface_on_jetsonnano) para instrucciones sobre cómo habilitarla.
+La interfaz SPI en el Jetson-Nano está multiplexada con GPIO por defecto y no está habilitada. Por favor consulta [**esta guía**](/es/enable_spi_interface_on_jetsonnano) para instrucciones sobre cómo habilitarla.
 :::
 
 ## Flashear SO JetPack vía NVIDIA SDK Manager

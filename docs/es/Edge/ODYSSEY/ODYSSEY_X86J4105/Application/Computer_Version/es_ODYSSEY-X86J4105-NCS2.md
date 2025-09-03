@@ -17,7 +17,7 @@ El **Intel Neural Compute Stick 2 (NCS2)** es un dispositivo USB que te ofrece a
 
 ## Configurar el Entorno de Software
 
-Para usar el Intel NCS2, por favor primero completa la [Instalación del kit de herramientas Intel® Distribution of OpenVINO™ para ODYSSEY - X86J41x5](/ODYSSEY-X86J4105-NCS2) y configura todo el entorno de software dependiente.
+Para usar el Intel NCS2, por favor primero completa la [Instalación del kit de herramientas Intel® Distribution of OpenVINO™ para ODYSSEY - X86J41x5](/es/ODYSSEY-X86J4105-NCS2) y configura todo el entorno de software dependiente.
 <!-- 上述链接有误 -->
 
 Si ya has completado el tutorial, por favor sigue las instrucciones a continuación.

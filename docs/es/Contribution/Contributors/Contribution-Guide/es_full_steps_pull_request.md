@@ -12,14 +12,14 @@ last_update:
 
 ### ¡Gracias por considerar contribuir a nuestros archivos de seeed-studio!
 
-Este proceso de contribución simplificado, es para poder ofrecer pasos completos para hacer PR de los archivos. Si solo quieres agregar archivo md e imágenes, puedes revisar [aquí](/quick_pull_request).
+Este proceso de contribución simplificado, es para poder ofrecer pasos completos para hacer PR de los archivos. Si solo quieres agregar archivo md e imágenes, puedes revisar [aquí](/es/quick_pull_request).
 
 
 ## Paso a paso enviar los archivos al repositorio
 
 ### Prerrequisito: `git clone` repo y desplegar los sitios web localmente
 
-<strong><a href="/Deploy_Page_Locally"><span><font color={'8DC215'} size={"4"}>¡Puedes desplegar el sitio web localmente y ver los cambios haciendo clic aquí!</font></span></a></strong>
+<strong><a href="/es/Deploy_Page_Locally"><span><font color={'8DC215'} size={"4"}>¡Puedes desplegar el sitio web localmente y ver los cambios haciendo clic aquí!</font></span></a></strong>
 
 ### 1. Actualiza tu rama bifurcada
 

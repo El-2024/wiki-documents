@@ -34,7 +34,7 @@ Sin Código LVGL: [Código · GitHub](https://github.com/Seeed-Solution/indicato
 
 ### SenseCAP Indicator
 
-Desde la página, [Dive_into_the_Hardware](/SenseCAP_Indicator_Dive_into_the_Hardware/#hardware-diagram), podemos ver que el transceptor LoRa está conectado al MCU ESP32-S3 a través de la interfaz SPI.
+Desde la página, [Dive_into_the_Hardware](/es/SenseCAP_Indicator_Dive_into_the_Hardware/#hardware-diagram), podemos ver que el transceptor LoRa está conectado al MCU ESP32-S3 a través de la interfaz SPI.
 
 <div align="center"><img width={680} src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_6.png
 "/></div>
@@ -56,7 +56,7 @@ El XIAO en esta demostración es necesario para recopilar datos de sensores y tr
 
 ## Software
 
-Como el SDK [SenseCAP_Indicator_ESP32](https://github.com/Seeed-Solution/sensecap_indicator_esp32) ya ha proporcionado la biblioteca LoRa, podemos usarla directamente, puedes revisar rápidamente la página [LoRa®](/SenseCAP_Indicator_ESP32_LoRa) para ver cómo usar la biblioteca LoRa.
+Como el SDK [SenseCAP_Indicator_ESP32](https://github.com/Seeed-Solution/sensecap_indicator_esp32) ya ha proporcionado la biblioteca LoRa, podemos usarla directamente, puedes revisar rápidamente la página [LoRa®](/es/SenseCAP_Indicator_ESP32_LoRa) para ver cómo usar la biblioteca LoRa.
 
 ## Comenzando
 
@@ -64,7 +64,7 @@ esta demostración muestra cómo configurar un Hub LoRa® Local para Conectivida
 
 ### Prerrequisitos
 
-Por favor sigue las [instrucciones](/SenseCAP_Indicator_How_To_Flash_The_Default_Firmware) proporcionadas para configurar el entorno de desarrollo.
+Por favor sigue las [instrucciones](/es/SenseCAP_Indicator_How_To_Flash_The_Default_Firmware) proporcionadas para configurar el entorno de desarrollo.
 
 ### Paso 1: Descargar el Código de Demostración
 

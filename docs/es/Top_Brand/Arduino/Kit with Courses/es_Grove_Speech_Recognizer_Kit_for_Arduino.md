@@ -31,15 +31,15 @@ El Kit Reconocedor de Voz Grove para Arduino está diseñado para prototipos de 
 
 1. Grove - Reconocedor de Voz  SKU:101020232
 
-2. [Grove - MP3 v2.0](/Grove-MP3_v2.0)
+2. [Grove - MP3 v2.0](/es/Grove-MP3_v2.0)
 
-3. [Grove – RTC](/Grove-RTC)
+3. [Grove – RTC](/es/Grove-RTC)
 
-4. [Base Shield](/Base_Shield_V2)
+4. [Base Shield](/es/Base_Shield_V2)
 
-5. [Grove - Receptor Infrarrojo](/Grove-Infrared_Receiver)
+5. [Grove - Receptor Infrarrojo](/es/Grove-Infrared_Receiver)
 
-6. [Grove - Emisor Infrarrojo](/Grove-Infrared_Emitter)
+6. [Grove - Emisor Infrarrojo](/es/Grove-Infrared_Emitter)
 
 ## Aplicación
 
@@ -439,7 +439,7 @@ Observa los comandos del Reconocedor de Voz, hay muchos comandos que están rela
 
 Descarga las librerías necesarias desde github:
 [Grove_Serial_MP3_Player_V2.0](https://github.com/Seeed-Studio/Seeed_Serial_MP3_Player.git);
-librería, [Grove - MP3 v2.0](/Grove-MP3_v2.0), <font color="Red">presta atención a la ruta de tus librerías: .../arduino/libraries </font>.
+librería, [Grove - MP3 v2.0](/es/Grove-MP3_v2.0), <font color="Red">presta atención a la ruta de tus librerías: .../arduino/libraries </font>.
 
 **Funciones útiles sobre Grove - MP3 v2**
 
@@ -596,7 +596,7 @@ void loop()
 
 **Ajustar el tiempo real**
 
-Descarga las librerías necesarias desde github: <font color="Red">[RTC_DS1307](https://github.com/Seeed-Studio/RTC_DS1307);[library, Grove - RTC](/Grove-RTC);, presta atención a la ruta de tus librerías: .../arduino/libraries</font> .
+Descarga las librerías necesarias desde github: <font color="Red">[RTC_DS1307](https://github.com/Seeed-Studio/RTC_DS1307);[library, Grove - RTC](/es/Grove-RTC);, presta atención a la ruta de tus librerías: .../arduino/libraries</font> .
 
 - Abre el archivo de ejemplo de "SetTimeAndDisplay" : File --&gt; Sketchbook --&gt; libraries --&gt; RTC_DS1307 --&gt; SetTimeAndDisplay.
 

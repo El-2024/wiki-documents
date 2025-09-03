@@ -19,9 +19,9 @@ Este wiki es una Guía de Usuario para ayudarte a comenzar tu proyecto RePhone c
 Instalar Controlador y Actualizar Firmware
 ------------------------------------------
 
-- Para **Instalar el Controlador**, por favor consulta la **sección 2 de <a href="/JavaScript_for_RePhone" ><span><font color={'000000'} size={"3"}> Arduino IDE para RePhone Kit</font></span></a>**
+- Para **Instalar el Controlador**, por favor consulta la **sección 2 de <a href="/es/JavaScript_for_RePhone" ><span><font color={'000000'} size={"3"}> Arduino IDE para RePhone Kit</font></span></a>**
 
-- Para **Actualizar Firmware**, por favor consulta la **sección 3 de <a href="/JavaScript_for_RePhone" ><span><font color={'000000'} size={"3"}> Arduino IDE para RePhone Kit</font></span></a>**
+- Para **Actualizar Firmware**, por favor consulta la **sección 3 de <a href="/es/JavaScript_for_RePhone" ><span><font color={'000000'} size={"3"}> Arduino IDE para RePhone Kit</font></span></a>**
 
 Descargar Aplicación JavaScript para RePhone
 --------------------------------------------

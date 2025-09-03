@@ -70,11 +70,11 @@ Si estás usando Senscraft Edge OS puedes omitir los pasos de instalación del n
 
 ## Instalar el Nodo Modbus
 
-En esta sección vamos a instalar el nodo `node-red-contrib-modbus`, así que por favor revisa cómo [instalar nodos](/reTerminal-DM-Getting-Started-with-Node-Red#install-nodes).
+En esta sección vamos a instalar el nodo `node-red-contrib-modbus`, así que por favor revisa cómo [instalar nodos](/es/reTerminal-DM-Getting-Started-with-Node-Red#install-nodes).
 
 ### Opción 1: Línea de comandos
 
-Primero que todo, por favor procede a refrescar tu conocimiento sobre acceder al reTerminal DM vía SSH, por favor revisa los pasos [aquí](/reterminal-dm-flash-OS#install-drivers)
+Primero que todo, por favor procede a refrescar tu conocimiento sobre acceder al reTerminal DM vía SSH, por favor revisa los pasos [aquí](/es/reterminal-dm-flash-OS#install-drivers)
 
 Una vez que hayas accedido al reTerminal DM con SSH puedes proceder a los pasos siguientes:
 
@@ -367,8 +367,8 @@ Puedes copiar el siguiente código JSON para importar los Nodos
 
 # Explora más nodos en reTerminal DM con node-RED
 
-* [reTerminal DM MQTT con Node-RED](/reTerminal-DM-Node-Red-mqtt)
-* [reTerminal DM CAN BUS con Node-RED](/reTerminal-DM-Node-Red-canbus)
+* [reTerminal DM MQTT con Node-RED](/es/reTerminal-DM-Node-Red-mqtt)
+* [reTerminal DM CAN BUS con Node-RED](/es/reTerminal-DM-Node-Red-canbus)
 * 
 ## Soporte Técnico y Discusión de Productos
 

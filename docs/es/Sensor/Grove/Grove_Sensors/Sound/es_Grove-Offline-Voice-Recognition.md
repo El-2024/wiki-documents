@@ -65,7 +65,7 @@ Necesitas preparar lo siguiente:
 
 - [Seeed Studio XIAO RP2040](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html)
 - [Base Grove para XIAO](https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html)
-- [Grove - Reconocedor de Voz Offline](/Grove-Offline-Voice-Recognition)
+- [Grove - Reconocedor de Voz Offline](/es/Grove-Offline-Voice-Recognition)
 - [Altavoz](https://www.seeedstudio.com/Mono-Enclosed-Speaker-2W-6-Ohm-p-2832.html)
 
 

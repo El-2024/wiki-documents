@@ -52,7 +52,7 @@ El ecosistema Grove ofrece una amplia gama de sensores que pueden ser fácilment
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/GroveSystem/images/grove_cover.png" style={{width:1000, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Sensor_Intro/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Plataforma Wiki</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove_Sensor_Intro/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Plataforma Wiki</font></span></strong></a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar</font></span></strong></a>
 </div>
 
@@ -63,7 +63,7 @@ El sistema Grove también incluye módulos de red que habilitan comunicación y 
 Con los módulos de red Grove, puedes agregar fácilmente capacidades inalámbricas a tus proyectos, habilitando transmisión de datos, control remoto, o interacción con otros dispositivos e internet.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_network_module_intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Plataforma Wiki</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove_network_module_intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Plataforma Wiki</font></span></strong></a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar</font></span></strong></a>
 </div>
 
@@ -72,13 +72,13 @@ Con los módulos de red Grove, puedes agregar fácilmente capacidades inalámbri
 Además de sensores y módulos de red, el ecosistema Grove ofrece una variedad de accesorios que complementan y mejoran tus proyectos electrónicos. Estos accesorios incluyen componentes como pantallas LCD, matrices LED, controladores de motor, módulos de relé, y más.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Accessories_Intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Plataforma Wiki</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove_Accessories_Intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Plataforma Wiki</font></span></strong></a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar</font></span></strong></a>
 </div>
 
-<!-- - [Grove Sensor](/Grove_Sensor_Intro)
-- [Grove Network Module](/Grove_network_module_intro)
-- [Grove Accessories](/Grove_Accessories_Intro) -->
+<!-- - [Grove Sensor](/es/Grove_Sensor_Intro)
+- [Grove Network Module](/es/Grove_network_module_intro)
+- [Grove Accessories](/es/Grove_Accessories_Intro) -->
 
 <!-- ## Grove Selection Guides
 
@@ -182,7 +182,7 @@ Para más placas reconocidas que soportan interfaces Grove, como Raspberry Pi, P
 </div>
 
 <!-- <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_Accessories_Intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong>
+    <a class="get_one_now_item" href="/es/Grove_Accessories_Intro" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📖 Wiki Platform</font></span></strong>
     </a>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/grove.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Purchase</font></span></strong>
     </a>
@@ -205,7 +205,7 @@ Grove Beginner Kit for Arduino es uno de los mejores Kits para Principiantes de 
   </tr>
     <tr class="table-trnobg"></tr>
   <tr class="table-trnobg">
-   <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/Grove-Beginner-Kit-For-Arduino" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Aprende Más</font></span></strong></a></div></td>
+   <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/es/Grove-Beginner-Kit-For-Arduino" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Aprende Más</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -229,7 +229,7 @@ En Seeed, diseñamos 8 tutoriales para que comiences a experimentar con algunos 
   </tr>
     <tr class="table-trnobg"></tr>
   <tr class="table-trnobg">
-   <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/Grove_Base_Kit_for_Raspberry_Pi" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Aprende Más</font></span></strong></a></div></td>
+   <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/es/Grove_Base_Kit_for_Raspberry_Pi" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Aprende Más</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -253,7 +253,7 @@ La audiencia principal de "XIAO: Gran Potencia, Placa Pequeña" abarca aficionad
   </tr>
     <tr class="table-trnobg"></tr>
   <tr class="table-trnobg">
-   <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/XIAO-Kit-Courses" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Aprende Más</font></span></strong></a></div></td>
+   <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/es/XIAO-Kit-Courses" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Aprende Más</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -277,7 +277,7 @@ Este kit viene con Wio Terminal y un curso en la caja. Este libro está diseñad
   </tr>
     <tr class="table-trnobg"></tr>
   <tr class="table-trnobg">
-   <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/Wio-Terminal-TinyML-Kit-Course" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Aprende Más</font></span></strong></a></div></td>
+   <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="/es/Wio-Terminal-TinyML-Kit-Course" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Aprende Más</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
@@ -426,7 +426,7 @@ Aquí hay algunos proyectos hechos con Grove para tu referencia. Para más proye
 
 La siguiente información es presentada por Seeed Studio y puede estar desactualizada. ¡Damos la bienvenida a actualizaciones de la comunidad para renovar el contenido aquí si es necesario!
 
-Para más información sobre cómo contribuir, por favor haz clic <strong><a href="/Contributor"><span><font color={'8DC215'} size={"4"}>¡aquí!</font></span></a></strong>
+Para más información sobre cómo contribuir, por favor haz clic <strong><a href="/es/Contributor"><span><font color={'8DC215'} size={"4"}>¡aquí!</font></span></a></strong>
 
 ### Interfaz de los módulos Grove
 

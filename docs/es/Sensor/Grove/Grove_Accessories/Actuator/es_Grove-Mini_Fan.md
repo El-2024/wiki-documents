@@ -38,7 +38,7 @@ El módulo **Grove - Mini Fan** es un controlador de motor DC basado en el micro
 ![](https://files.seeedstudio.com/wiki/Grove-Mini_Fan/img/Mini_fan.jpg)
 
 <dl>
-  <dt>① Interfaz UartSBee: Usa esta interfaz para cambiar el código del microcontrolador. Usa un módulo [UartSBee](/UartSBee_V4) para conectar al microcontrolador usando la interfaz Uart.</dt>
+  <dt>① Interfaz UartSBee: Usa esta interfaz para cambiar el código del microcontrolador. Usa un módulo [UartSBee](/es/UartSBee_V4) para conectar al microcontrolador usando la interfaz Uart.</dt>
   <dt>② Interfaz JST 2.0: Usada para conectar a un motor DC de 3.3 voltios (solo 3.3 voltios)</dt>
   <dt>③ Interfaz Grove</dt>
   <dt>④ Interfaz ICSP</dt>

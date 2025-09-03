@@ -19,7 +19,7 @@ La [Plataforma SenseCraft AI](https://sensecraft.seeed.cc/ai/#/model) de Seeed S
 Permite a los usuarios entrenar y desplegar sin esfuerzo sus propios modelos en sus dispositivos edge, proporcionando una experiencia fluida y fácil de usar, permitiéndote entrenar y desplegar tus propios modelos directamente en tus dispositivos edge con **solo unos pocos clics**.
 
 :::info
-El núcleo de esto es un proyecto de código abierto y lo hemos compartido en [GitHub](https://github.com/Seeed-Studio/ModelAssistant) y también ofrecemos el [método de desarrollo](/ModelAssistant_Introduce_Overview).
+El núcleo de esto es un proyecto de código abierto y lo hemos compartido en [GitHub](https://github.com/Seeed-Studio/ModelAssistant) y también ofrecemos el [método de desarrollo](/es/ModelAssistant_Introduce_Overview).
 :::
 
 ## Comenzar a Entrenar el Modelo

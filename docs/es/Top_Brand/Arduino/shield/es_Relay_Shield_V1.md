@@ -61,7 +61,7 @@ El Relay Shield es un módulo inteligente compatible con Arduino que cuenta con 
 ## Precauciones ##
 
 **
-Coloca 2 capas de cinta aislante en la parte superior del conector usb del [Arduino](/Arduino) (title=undefined). Esto evitará que el relay shield haga contacto.
+Coloca 2 capas de cinta aislante en la parte superior del conector usb del [Arduino](/es/Arduino) (title=undefined). Esto evitará que el relay shield haga contacto.
 No operes con voltaje superior a 35V DC.
 **
 

@@ -52,30 +52,30 @@ last_update:
 ## 🤗 Lerobot
 
 <div className="card-container">
-    <a href="/lerobot_starai_arm/" className="nav-item">
+    <a href="/es/lerobot_starai_arm/" className="nav-item">
       <span className="text">Brazo Robótico Starai</span>
       <span className="tag recommended">New</span>
     </a>
-    <a href="/starai_arm_ros_moveit/" className="nav-item">
+    <a href="/es/starai_arm_ros_moveit/" className="nav-item">
       <span className="text">Brazo Robótico Starai Moveit</span>
       <span className="tag recommended">New</span>
     </a>
-    <a href="/lerobot_so100m_new/" className="nav-item">
+    <a href="/es/lerobot_so100m_new/" className="nav-item">
       <span className="text">Brazo SO100/101</span>
       <span className="tag stable">Update</span>
     </a>
-    <a href="/simulate_soarm101_by_leisaac/" className="nav-item">
+    <a href="/es/simulate_soarm101_by_leisaac/" className="nav-item">
       <span className="text">Brazo SO100 con IsaacSim</span>
       <span className="tag recommended">New</span>
     </a>
-    <a href="/lerobot_lekiwi/" className="nav-item">
+    <a href="/es/lerobot_lekiwi/" className="nav-item">
       <span className="text">Base Móvil Lekiwi</span>
        <span className="tag recommended">New</span>
     </a>
-    <a href="/sound_follow_robot/" className="nav-item">
+    <a href="/es/sound_follow_robot/" className="nav-item">
       <span className="text">Seguimiento de Sonido Lekiwi</span>
     </a>
-    <a href="/control_robotic_arm_via_phospho/" className="nav-item">
+    <a href="/es/control_robotic_arm_via_phospho/" className="nav-item">
       <span className="text">Phospho Lerobot</span>
        <span className="tag recommended">New</span>
     </a>
@@ -90,16 +90,16 @@ last_update:
 <div className="category-card actuators">
 
 <div className="card-container">
-    <a href="/myactuator_series/" className="nav-item">
+    <a href="/es/myactuator_series/" className="nav-item">
       <span className="text">MyActuator Serie X</span>
     </a>
-    <a href="/damiao_series/" className="nav-item">
+    <a href="/es/damiao_series/" className="nav-item">
       <span className="text">Damiao Serie DM43</span>
     </a>
-    <a href="/feetech_servo/" className="nav-item">
+    <a href="/es/feetech_servo/" className="nav-item">
       <span className="text">Motor Servo Feetech STS3215</span>
     </a>
-    <a href="/hightorque_series/" className="nav-item">
+    <a href="/es/hightorque_series/" className="nav-item">
       <span className="text">Serie HighTorque</span>
     </a>
 </div>
@@ -115,16 +115,16 @@ last_update:
 **LiDAR**  
 
 <div className="card-container">
-    <a href="/robosense_lidar/" className="nav-item">
+    <a href="/es/robosense_lidar/" className="nav-item">
       <span className="text">Robosense</span>
     </a>
-    <a href="/mid360/" className="nav-item">
+    <a href="/es/mid360/" className="nav-item">
       <span className="text">MID360</span>
     </a>
-    <a href="/a_loam/" className="nav-item">
+    <a href="/es/a_loam/" className="nav-item">
       <span className="text">Algoritmo A-LOAM</span>
     </a>
-    <a href="/slamtec/" className="nav-item">
+    <a href="/es/slamtec/" className="nav-item">
       <span className="text">Serie Slamtec</span>
     </a>
 </div>
@@ -132,24 +132,24 @@ last_update:
 **Cámara**  
 
 <div className="card-container">
-    <a href="/orbbec_gemini2/" className="nav-item">
+    <a href="/es/orbbec_gemini2/" className="nav-item">
       <span className="text">Primeros Pasos con Cámara 3D Orbbec Gemini2</span>
     </a>
-    <a href="/orbbec_depth_camera_on_ros/" className="nav-item">
+    <a href="/es/orbbec_depth_camera_on_ros/" className="nav-item">
       <span className="text">Cámara de Profundidad Orbbec</span>
     </a>
-    <a href="/orbbec_gemini_335lg" className="nav-item">
+    <a href="/es/orbbec_gemini_335lg" className="nav-item">
       <span className="text">Cámara Estéreo Orbbec Gemini 335Lg</span>
       <span className="tag recommended">New</span>
     </a>
-    <a href="/sensing_gmsl_cameras" className="nav-item">
+    <a href="/es/sensing_gmsl_cameras" className="nav-item">
       <span className="text">Cámaras SENSING GMSL2</span>
       <span className="tag recommended">New</span>
     </a>
-    <a href="/orb_slam3_orbbec_gemini2/" className="nav-item">
+    <a href="/es/orb_slam3_orbbec_gemini2/" className="nav-item">
       <span className="text">ORB-SLAM3 con Orbbec Gemini2</span>
     </a>
-    <a href="/csi_camera_on_ros/" className="nav-item">
+    <a href="/es/csi_camera_on_ros/" className="nav-item">
       <span className="text">Cámara CSI</span>
     </a>
 </div>
@@ -157,10 +157,10 @@ last_update:
 **Voz**  
 
 <div className="card-container">
-    <a href="/ReSpeaker_Core_v2.0/" className="nav-item">
+    <a href="/es/ReSpeaker_Core_v2.0/" className="nav-item">
       <span className="text">ReSpeaker Core v2.0</span>
     </a>
-    <a href="/ReSpeaker_Mic_Array_v2.0/" className="nav-item">
+    <a href="/es/ReSpeaker_Mic_Array_v2.0/" className="nav-item">
       <span className="text">ReSpeaker Mic Array v2.0</span>
     </a>
 </div>
@@ -168,7 +168,7 @@ last_update:
 **IMU**  
 
 <div className="card-container">
-    <a href="/hexfellow_y200/" className="nav-item">
+    <a href="/es/hexfellow_y200/" className="nav-item">
       <span className="text">HEXFELLOW Y200</span>
     </a>
 </div>
@@ -184,31 +184,31 @@ last_update:
 **Ecosistema ROS**  
 
 <div className="card-container">
-    <a href="/installing_ros1/" className="nav-item">
+    <a href="/es/installing_ros1/" className="nav-item">
       <span className="text">Instalación de ROS1</span>
     </a>
-    <a href="/install_ros2_humble/" className="nav-item">
+    <a href="/es/install_ros2_humble/" className="nav-item">
       <span className="text">Instalación de ROS2</span>
     </a>
-    <a href="/install_isaacros/" className="nav-item">
+    <a href="/es/install_isaacros/" className="nav-item">
       <span className="text">Instalación de IsaacROS</span>
     </a>
-    <a href="/isaac_ros_apriltag/" className="nav-item">
+    <a href="/es/isaac_ros_apriltag/" className="nav-item">
       <span className="text">AprilTag</span>
     </a>
-    <a href="/isaac_ros_visual_slam/" className="nav-item">
+    <a href="/es/isaac_ros_visual_slam/" className="nav-item">
       <span className="text">SLAM Visual</span>
     </a>
 </div>
 
 **PX4**  
 <div className="card-container">
-<a href="/control_px4_with_recomputer_jetson/" className="nav-item">
+<a href="/es/control_px4_with_recomputer_jetson/" className="nav-item">
   <span className="text">PX4 con Jetson</span>
   <span className="tag recommended">New</span>
 </a>
 
-<a href="/object_tracking_with_reComputer_jetson_and_pX4/" className="nav-item">
+<a href="/es/object_tracking_with_reComputer_jetson_and_pX4/" className="nav-item">
   <span className="text">Seguimiento de Objetos con PX4</span>
   <span className="tag recommended">New</span>
 </a>
@@ -217,10 +217,10 @@ last_update:
 
 **NVIDIA Isaac**  
 <div className="card-container">
-<a href="/install_isaaclab/" className="nav-item">
+<a href="/es/install_isaaclab/" className="nav-item">
   <span className="text">Instalación de Isaac Lab</span>
 </a>
-<a href="/simulate_soarm101_by_leisaac/" className="nav-item">
+<a href="/es/simulate_soarm101_by_leisaac/" className="nav-item">
   <span className="text">Brazo SO100 con IsaacSim</span>
   <span className="tag recommended">Nuevo</span>
 </a>
@@ -228,7 +228,7 @@ last_update:
 
 **VLA**  
 <div className="card-container">
-<a href="/control_robotic_arm_via_gr00t" className="nav-item">
+<a href="/es/control_robotic_arm_via_gr00t" className="nav-item">
   <span className="text">GR00T de NVIDIA</span>
 </a>
 </div>

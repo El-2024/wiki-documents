@@ -106,7 +106,7 @@ El sensor de pH puede ayudarte a detectar el valor de pH. El éxito o fracaso de
 En esta imagen, se usa una [solución tampón](http://www.chemguide.co.uk/physical/acidbaseeqia/buffers.html) de pH 9.18 como solución de referencia, que nos ayuda a saber si el valor medido es preciso.
 Ahora veamos cuál es el valor medido.
 
-* Sube el código de demostración. Por favor haz clic [aquí](/Upload_Code) si no sabes cómo subir
+* Sube el código de demostración. Por favor haz clic [aquí](/es/Upload_Code) si no sabes cómo subir
 
 ```
 //Function: The PH sensor output voltage value,

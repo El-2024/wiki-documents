@@ -952,7 +952,7 @@ Verás el resultado como se muestra a continuación, antes de conectar al I2C, n
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/J401-I2C-test.png"/></div>
 
 :::info
-Si quieres usar pines IO generales para control lógico, por favor consulta [este wiki](/reComputer_Jetson_GPIO).
+Si quieres usar pines IO generales para control lógico, por favor consulta [este wiki](/es/reComputer_Jetson_GPIO).
 :::
 
 

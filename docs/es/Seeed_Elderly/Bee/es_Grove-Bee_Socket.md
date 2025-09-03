@@ -13,7 +13,7 @@ last_update:
 ![](https://files.seeedstudio.com/wiki/Grove-Bee_Socket/img/Bee_Socket_01.jpg)
 
 Grove - Bee Socket es un adaptador de las series Xbee que puede conectar módulos inalámbricos con Arduino, como WIFI Bee, RF Bee, Bluetooth Bee, etc. Es compatible con Arduino y más efectivo para realizar operaciones de punto a punto y redes de malla ejecutadas por módulos inalámbricos. El regulador CJT1117 garantiza un voltaje estable de 3.3V para Xbee. Los LEDs pueden mostrar claramente los modos de trabajo del grove.
-<!-- Grove-Bee Socket tiene las mismas funciones que [XBee Shield](/XBee_Shield_V2.0). Grove-Bee Socket y Arduino se conectan por cables, y XB Shield es un adaptador estándar que se puede conectar a Arduino. -->
+<!-- Grove-Bee Socket tiene las mismas funciones que [XBee Shield](/es/XBee_Shield_V2.0). Grove-Bee Socket y Arduino se conectan por cables, y XB Shield es un adaptador estándar que se puede conectar a Arduino. -->
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Grove-Bee-Socket-p-1449.html)
 

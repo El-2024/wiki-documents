@@ -48,7 +48,7 @@ Antes de proceder con el proceso de configuración, asegúrese de que su sistema
   sudo apt install nvidia-jetson-services
   ```
 
-- Cámaras IP o videos locales pueden ser transmitidos vía RTSP. (Recomendamos usar nuestro [tutorial de NVStreamer](/getting_started_with_nvstreamer) proporcionado para transmisión RTSP.)
+- Cámaras IP o videos locales pueden ser transmitidos vía RTSP. (Recomendamos usar nuestro [tutorial de NVStreamer](/es/getting_started_with_nvstreamer) proporcionado para transmisión RTSP.)
 
 ## Comenzando
 
@@ -106,7 +106,7 @@ sudo docker ps
 
 ## Agregar la entrada de flujo RTSP
 
-Primero puede agregar un flujo RTSP para que el modelo VLM lo use con el siguiente comando curl. Se recomienda usar el [tutorial de NVStreamer](/getting_started_with_nvstreamer) para transmisión.
+Primero puede agregar un flujo RTSP para que el modelo VLM lo use con el siguiente comando curl. Se recomienda usar el [tutorial de NVStreamer](/es/getting_started_with_nvstreamer) para transmisión.
 
 - **Paso 1**: Reemplace `0.0.0.0` con la IP de su Jetson y el enlace `liveStreamUrl` con su enlace RTSP, luego ingrese el siguiente comando en la terminal:
 

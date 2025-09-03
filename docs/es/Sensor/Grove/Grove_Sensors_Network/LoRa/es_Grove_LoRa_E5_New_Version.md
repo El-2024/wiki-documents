@@ -232,7 +232,7 @@ Asegúrate de que tu LNS (Servidor de Red LoRaWAN) esté configurado correctamen
 3. [Grove - Wio-E5 Helium Demo](https://wiki.seeedstudio.com/es/Grove_Wio_E5_Helium_Demo/) Conectándose a la red IoT Helium usando el módulo Grove - Wio-E5 y el módulo Seeeduino XIAO
 4. [Grove - Wio-E5 Used with Arduino Uno R4 Demo](https://wiki.seeedstudio.com/es/Grove_Wio_E5_SenseCAP_Cloud_Demo/)
 5. [Grove - Wio-E5 Used with XIAO ESP32S3 Demo](https://wiki.seeedstudio.com/es/Grove_Wio_E5_SenseCAP_XIAO_ESP32S3/)
-6. [Using Wio-E5 and XIAO ESP32S3 on PlatformIO(Arduino) to access LoRaWAN network](/platformio_wio_e5/) Una guía práctica. Detalla la integración de Wio-E5 con placas compatibles con Arduino usando PlatformIO para una conectividad LoRaWAN eficiente.
+6. [Using Wio-E5 and XIAO ESP32S3 on PlatformIO(Arduino) to access LoRaWAN network](/es/platformio_wio_e5/) Una guía práctica. Detalla la integración de Wio-E5 con placas compatibles con Arduino usando PlatformIO para una conectividad LoRaWAN eficiente.
 
 ## Recursos
 

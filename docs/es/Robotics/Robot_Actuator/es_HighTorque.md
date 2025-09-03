@@ -622,7 +622,7 @@ El control en C++ requiere una placa controladora CAN-USB adicional. Por favor c
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/hightorque/USB-CAN.png" />
 </div>
 
-## Controlando Motores con [reComputer Mini Jetson Orin](/recomputer_jetson_mini_getting_started)
+## Controlando Motores con [reComputer Mini Jetson Orin](/es/recomputer_jetson_mini_getting_started)
 
 Actualmente, las interfaces de comunicación CAN más comúnmente utilizadas para motores en el mercado son los conectores XT30(2+2) y JST. Nuestros dispositivos **reComputer Mini Jetson Orin** y **reComputer Robotics** están equipados con puertos XT30(2+2) duales e interfaces CAN basadas en JST, proporcionando compatibilidad perfecta.
 

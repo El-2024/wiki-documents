@@ -34,7 +34,7 @@ Expresamos nuestra gratitud a los contribuidores ofreciendo una gama de recompen
 
 ![](http://files.seeedstudio.com/wiki/wiki-platform/contributor/github_assignment_2.png)
 
-### [Convocatorias Abiertas - ¡Cada Pequeño Paso Cuenta!](https://wiki.seeedstudio.com/es/contributors/)
+### [Convocatorias Abiertas - ¡Cada Pequeño Paso Cuenta!](https://wiki.seeedstudio.com/contributors/)
 
 También tenemos una serie de tareas continuas, las temáticas. Tales como:
 
@@ -44,7 +44,7 @@ También tenemos una serie de tareas continuas, las temáticas. Tales como:
 
 ![](http://files.seeedstudio.com/wiki/wiki-platform/contributor/open_call.png)
 
-### [Comparte Tus Ideas - Logra Realizarlas - Obtén Recompensas](https://wiki.seeedstudio.com/es/contributors/)
+### [Comparte Tus Ideas - Logra Realizarlas - Obtén Recompensas](https://wiki.seeedstudio.com/contributors/)
 
 ¡Damos la bienvenida a más ideas! Las relacionadas con temas, las relacionadas con escenarios, tus deseos...
 

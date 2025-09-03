@@ -181,7 +181,7 @@ Aquí, necesitas proporcionar una fuente de alimentación de 24V separada para e
 
 Para más características detalladas, consulte el **Manual de Instrucciones del Software de Configuración - V3.0.pdf** incluido en el archivo [MYACTUATOR_Setup Software_V4.0.zip](https://www.myactuator.com/_files/archives/cab28a_b3f2a1c77d4645a08052a923690b40fc.zip?dn=MYACTUATOR_Setup%20Software_V4.0_20250206.zip).
 
-## Controlar el Motor Usando el [​reComputer Mini Jetson Orin.](/recomputer_jetson_mini_getting_started)
+## Controlar el Motor Usando el [​reComputer Mini Jetson Orin.](/es/recomputer_jetson_mini_getting_started)
 
 Actualmente, las interfaces de comunicación CAN más comunes para motores en el mercado utilizan **XT30 (2+2)** y **conectores JST**. Nuestro dispositivo **reComputer Mini Jetson Orin** y **reComputer Robotics** está equipado con **puertos XT30 (2+2) duales** e **interfaces CAN basadas en JST**, proporcionando compatibilidad perfecta.
 

@@ -134,7 +134,7 @@ Diseñado para makers expertos, emprendedores y empresas de IoT industrial, el m
 
 [![enter image description here](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://wwww.amazon.com/dp/B0168KU5FK)
 
-Para el _**Manual de Usuario**_, por favor ve a: [Intel® Edison y Kit de Inicio IoT Grove Alimentado por AWS](/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS) página wiki
+Para el _**Manual de Usuario**_, por favor ve a: [Intel® Edison y Kit de Inicio IoT Grove Alimentado por AWS](/es/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS) página wiki
 
 **Lista de Partes**
 
@@ -218,7 +218,7 @@ _Artículo principal: [BeagleBone Green](/BeagleBone_Green "BeagleBone Green")_
 [![enter image description here](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://wwww.amazon.com/dp/B0168L6B0C)
 
 Para el _**Manual de Usuario**_, por favor ve a:
-[Beagle Bone Green y Kit de Inicio IoT Grove Alimentado por AWS](/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS) página wiki.
+[Beagle Bone Green y Kit de Inicio IoT Grove Alimentado por AWS](/es/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS) página wiki.
 
 **Lista de Partes**
 
@@ -289,7 +289,7 @@ La placa de desarrollo **[LinkIt ONE](https://wiki.seeedstudio.com/es/LinkIt_ONE
 [![enter image description here](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://wwww.amazon.com/dp/B0168LBYWC)
 
 Para el _**Manual de Usuario**_, por favor ve a:
-[Wiki para LinkIT One y Kit de Inicio IoT Grove Alimentado por AWS](/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS) página wiki
+[Wiki para LinkIT One y Kit de Inicio IoT Grove Alimentado por AWS](/es/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS) página wiki
 
 **Lista de Partes**
 
@@ -349,13 +349,13 @@ Para el _**Manual de Usuario**_, por favor ve a:
 
 * [Amazon Web Services](https://en.wikipedia.org/wiki/Amazon_Web_Services)
 
-* <a href="/Grove_IoT_Starter_Kits_Powered_by_AWS" ><span><font size={"3"}> Wiki para Seeeduino Cloud y Kit de Inicio IoT Grove Powered by AW </font></span></a>
+* <a href="/es/Grove_IoT_Starter_Kits_Powered_by_AWS" ><span><font size={"3"}> Wiki para Seeeduino Cloud y Kit de Inicio IoT Grove Powered by AW </font></span></a>
 
-* <a href="/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}>Wiki para Intel® Edison y Kit de Inicio IoT Grove Powered by AWS</font></span></a>
+* <a href="/es/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}>Wiki para Intel® Edison y Kit de Inicio IoT Grove Powered by AWS</font></span></a>
 
-* <a href="/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}> Wiki para Beagle Bone Green y Kit de Inicio IoT Grove Powered by AWS </font></span></a>
+* <a href="/es/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}> Wiki para Beagle Bone Green y Kit de Inicio IoT Grove Powered by AWS </font></span></a>
 
-* <a href="/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}> Wiki para LinkIT One y Kit de Inicio IoT Grove Powered by AWS </font></span></a>
+* <a href="/es/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS" ><span><font size={"3"}> Wiki para LinkIT One y Kit de Inicio IoT Grove Powered by AWS </font></span></a>
 
 ## Soporte Técnico y Discusión de Productos
 

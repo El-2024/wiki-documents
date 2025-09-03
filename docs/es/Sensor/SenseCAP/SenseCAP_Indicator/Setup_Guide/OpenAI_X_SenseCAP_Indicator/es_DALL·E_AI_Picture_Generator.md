@@ -31,7 +31,7 @@ Haz clic en la imagen para vista completa, haz clic nuevamente para regresar.
 <div align="center"><img width={480} src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/dall2.png"/></div>
 
 
-Además de la funcionalidad demostrada, SenseCAP proporciona código completamente de código abierto y tutoriales detallados, haz clic [aquí](/SenseCAP_Indicator_ChatGPT) para más detalles.
+Además de la funcionalidad demostrada, SenseCAP proporciona código completamente de código abierto y tutoriales detallados, haz clic [aquí](/es/SenseCAP_Indicator_ChatGPT) para más detalles.
 
 
 # **FAQ**

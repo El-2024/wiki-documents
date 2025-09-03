@@ -504,7 +504,7 @@ Ahora puedes usar tus propias imágenes para crear una Bola de Navidad mágica.
 ## ✨ Proyecto de Colaborador
 
 - Este proyecto está respaldado por el [Proyecto de Colaborador](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) de Seeed Studio.
-- Gracias [Bruno Santos](https://github.com/orgs/Seeed-Studio/projects/6/views/1?sliceBy%5Bvalue%5D=feiticeir0&pane=issue&itemId=90657934&issue=Seeed-Studio%7Cwiki-documents%7C1993) y tu trabajo será [exhibido](https://wiki.seeedstudio.com/es/contributors/).
+- Gracias [Bruno Santos](https://github.com/orgs/Seeed-Studio/projects/6/views/1?sliceBy%5Bvalue%5D=feiticeir0&pane=issue&itemId=90657934&issue=Seeed-Studio%7Cwiki-documents%7C1993) y tu trabajo será [exhibido](https://wiki.seeedstudio.com/contributors/).
 
 ## Soporte Técnico y Discusión de Productos
 

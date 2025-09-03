@@ -18,7 +18,7 @@ Esta guía es para entornos **NVIDIA Jetson Ubuntu 22 + JetPack 6.x**, ayudándo
 - **Permisos**: Privilegios `sudo`
 
 > Si tu dispositivo aún no tiene instalado el entorno del sistema adecuado, consulta la guía oficial de flasheo para la instalación del sistema y preparación del entorno:  
-> [Tutorial de Flasheo de JetPack (Seeed Studio)](/flash/jetpack_to_selected_product/)
+> [Tutorial de Flasheo de JetPack (Seeed Studio)](/es/flash/jetpack_to_selected_product/)
 
 ## ⚡ Despliegue con Un Solo Clic
 
@@ -175,7 +175,7 @@ rm -rf ~/sensecraft-ai_server
 
 ## 📚 Referencias
 
-- [Guía de Flasheo de Jetson](/flash/jetpack_to_selected_product/)
+- [Guía de Flasheo de Jetson](/es/flash/jetpack_to_selected_product/)
 - [Repositorio Fuente de SenseCraft-AI\_Server](https://github.com/Seeed-Studio/SenseCraft-AI_Server/tree/jetson)
 - [Guía de NVIDIA Jetson Docker](https://www.jetson-ai-lab.com/tips_ssd-docker.html)
 - [Documentación Oficial de Mosquitto](https://mosquitto.org/man/mosquitto-conf-5.html)

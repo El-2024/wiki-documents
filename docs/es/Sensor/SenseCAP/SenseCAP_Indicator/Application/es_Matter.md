@@ -46,7 +46,7 @@ Para que tu SenseCAP Indicator funcione con Matter, necesitas seguir algunos pas
 
 ## Prerrequisitos
 
-Antes de comenzar, asegúrate de haber leído la [Guía del Usuario](/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator) de la Placa SenseCAP Indicator para familiarizarte con su información de software y hardware.
+Antes de comenzar, asegúrate de haber leído la [Guía del Usuario](/es/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator) de la Placa SenseCAP Indicator para familiarizarte con su información de software y hardware.
 
 ## Instalar ESP IDF y ESP Matter {#install_sdks}
 
@@ -139,7 +139,7 @@ En general las siguientes consideraciones deben hacerse al actualizar la UI y pe
 ## Recursos
 
 1. **SDK de Demostración**: El SDK de Demostración para el SenseCAP Indicator está disponible en [GitHub](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32).
-2. **Guía del Usuario**: La Guía del Usuario proporciona información detallada sobre el software y hardware de la Placa SenseCAP Indicator. Puedes leerla [aquí](/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator).
+2. **Guía del Usuario**: La Guía del Usuario proporciona información detallada sobre el software y hardware de la Placa SenseCAP Indicator. Puedes leerla [aquí](/es/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator).
 3. **Guía de Introducción para ESP-IDF**: Esta guía proporciona pasos completos para configurar y usar ESP-IDF para construir proyectos. Puedes acceder a ella [aquí](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html).
 4. **Guía de Instalación de Matter**: Si eres nuevo en ESP-Matter, esta guía te ayudará a instalarlo y configurarlo. Puedes encontrarla [aquí](https://docs.espressif.com/projects/esp-matter/en/latest/esp32/developing.html).
 

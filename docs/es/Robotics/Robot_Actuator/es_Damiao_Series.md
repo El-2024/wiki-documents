@@ -266,7 +266,7 @@ También puedes copiar los datos CAN (en formato hexadecimal) y usar una herrami
 El motor empezará a girar.  
 También puedes copiar los datos CAN (en formato hexadecimal) y usar una herramienta de depuración por puerto serie para accionar el motor.
 
-## Controlar el motor usando el [​reComputer Mini Jetson Orin.](/recomputer_jetson_mini_getting_started)
+## Controlar el motor usando el [​reComputer Mini Jetson Orin.](/es/recomputer_jetson_mini_getting_started)
 
 Actualmente, las interfaces de comunicación CAN más comunes para motores en el mercado usan **XT30 (2+2)** y **conectores JST**. Nuestros dispositivos **reComputer Mini Jetson Orin** y **reComputer Robotics** están equipados con **puertos XT30 (2+2) dobles** e **interfaces CAN basadas en JST**, proporcionando compatibilidad sin fisuras.  
 

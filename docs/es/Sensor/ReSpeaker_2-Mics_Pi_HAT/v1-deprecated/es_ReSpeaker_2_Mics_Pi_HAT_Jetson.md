@@ -11,7 +11,7 @@ last_update:
 ---
 
 :::caution
-Esta wiki está escrita para ReSpeaker 2-Mics Pi HAT **v1**, para distinguir los dispositivos v1 y v2, consulte [Cómo distinguir las revisiones de hardware de ReSpeaker 2-Mics Pi HAT](/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions).
+Esta wiki está escrita para ReSpeaker 2-Mics Pi HAT **v1**, para distinguir los dispositivos v1 y v2, consulte [Cómo distinguir las revisiones de hardware de ReSpeaker 2-Mics Pi HAT](/es/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions).
 :::
 
 ### Instalación y configuración del controlador

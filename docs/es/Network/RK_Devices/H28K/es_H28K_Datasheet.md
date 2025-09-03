@@ -70,7 +70,7 @@ Esta es la descripción general del hardware del H28K, aquí te presentaremos lo
 
 ## Inicio Rápido
 
-El router H28K no viene con un sistema preinstalado. Necesitas seguir el tutorial a continuación para instalar manualmente el sistema operativo.[H28K-install-system](/H28K-install-system)
+El router H28K no viene con un sistema preinstalado. Necesitas seguir el tutorial a continuación para instalar manualmente el sistema operativo.[H28K-install-system](/es/H28K-install-system)
 
 
 <div class="button_tech_support_container">

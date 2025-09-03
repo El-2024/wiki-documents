@@ -325,7 +325,7 @@ Cuando uses alimentación por batería, no habrá voltaje presente en el pin de 
 
 :::tip Luz Indicadora Roja
 
-El XIAO ESP32C6 tiene una luz indicadora roja para la carga de la batería, similar al [XIAO ESP32S3](/xiao_esp32s3_getting_started/#battery-usage):
+El XIAO ESP32C6 tiene una luz indicadora roja para la carga de la batería, similar al [XIAO ESP32S3](/es/xiao_esp32s3_getting_started/#battery-usage):
 
 El comportamiento de la luz roja para el XIAO ESP32C6 es el siguiente:
 
@@ -340,7 +340,7 @@ El comportamiento de la luz roja para el XIAO ESP32C6 es el siguiente:
 
 ## Lectura del Voltaje de la Batería
 
-Para monitorear el voltaje de la batería en el XIAO ESP32C6, similar al [XIAO ESP32C3](/XIAO_ESP32C3_Getting_Started/#check-the-battery-voltage), necesitarás soldar una resistencia de 200k en una configuración 1:2. Esta configuración reduce el voltaje a la mitad, permitiendo un monitoreo seguro a través del puerto analógico A0.
+Para monitorear el voltaje de la batería en el XIAO ESP32C6, similar al [XIAO ESP32C3](/es/XIAO_ESP32C3_Getting_Started/#check-the-battery-voltage), necesitarás soldar una resistencia de 200k en una configuración 1:2. Esta configuración reduce el voltaje a la mitad, permitiendo un monitoreo seguro a través del puerto analógico A0.
 
 ### Código de Ejemplo
 

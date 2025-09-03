@@ -142,7 +142,7 @@ Temporizador Pomodoro AskLou.io - Productividad enfocada, solo pídela.
 ## ✨ Proyecto Colaborador
 
 - Este proyecto está respaldado por el [Proyecto Colaborador](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) de Seeed Studio.
-- Un agradecimiento especial a [Peter Machona](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=92639112&issue=Seeed-Studio%7Cwiki-documents%7C2074) por sus esfuerzos dedicados. Tu trabajo será [exhibido](https://wiki.seeedstudio.com/es/contributors/).
+- Un agradecimiento especial a [Peter Machona](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=92639112&issue=Seeed-Studio%7Cwiki-documents%7C2074) por sus esfuerzos dedicados. Tu trabajo será [exhibido](https://wiki.seeedstudio.com/contributors/).
 
 ## Soporte Técnico y Discusión de Productos
 

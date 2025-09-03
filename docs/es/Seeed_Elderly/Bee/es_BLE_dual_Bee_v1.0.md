@@ -794,7 +794,7 @@ El flujo del programa de inicialización por favor consulta el siguiente diagram
 
 Después de la inicialización, el Central y Periférico harán cosas diferentes, el Central enviará mensaje al Periférico por intervalos e imprimirá lo que recibió del Periférico mientras que el Periférico solo responde al Central.
 
-<!-- Haz clic [aquí](https://github.com/Seeed-Studio/HM-13_SW) para descargar el código de prueba y abrir HM-13_SW.ino con Arduino IDE, compilar y descargar a Arduino Uno. Recuerda configurar el Bluetooth a diferente rol modificando la macro al comienzo. Si tienes algún problema sobre cómo iniciar Arduino, por favor haz clic [aquí](/Getting_Started_with_Seeeduino) para obtener ayuda. -->
+<!-- Haz clic [aquí](https://github.com/Seeed-Studio/HM-13_SW) para descargar el código de prueba y abrir HM-13_SW.ino con Arduino IDE, compilar y descargar a Arduino Uno. Recuerda configurar el Bluetooth a diferente rol modificando la macro al comienzo. Si tienes algún problema sobre cómo iniciar Arduino, por favor haz clic [aquí](/es/Getting_Started_with_Seeeduino) para obtener ayuda. -->
 
 Después de descargar el programa, abre dos ventanas de terminal serie, los LEDs en el Bluetooth parpadearán, varios segundos después, dejan de parpadear y se mantienen encendidos, esto indica que se conectaron entre sí. Según está escrito el programa, el Central envía mensaje al Periférico continuamente y obtiene retroalimentación cada vez.
 

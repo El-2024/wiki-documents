@@ -155,7 +155,7 @@ Por favor presta especial atención a la dirección de instalación del módulo,
 Para usar el Módulo GNSS L76K para SeeedStudio XIAO, necesitamos programar la serie XIAO. La herramienta de programación recomendada es el IDE de Arduino, y necesitas configurar el entorno de Arduino para el XIAO y añadir el paquete de la placa.
 
 :::tip
-Si esta es tu primera vez usando Arduino, te recomendamos encarecidamente que consultes [Comenzando con Arduino](/Getting_Started_with_Arduino/).
+Si esta es tu primera vez usando Arduino, te recomendamos encarecidamente que consultes [Comenzando con Arduino](/es/Getting_Started_with_Arduino/).
 :::
 
 #### Paso 1. Descarga e Instala la versión estable del IDE de Arduino según tu sistema operativo
@@ -168,15 +168,15 @@ Si esta es tu primera vez usando Arduino, te recomendamos encarecidamente que co
 
 #### Paso 3. Configura el IDE de Arduino para el XIAO que estés usando
 
-- Si quieres usar **Seeed Studio XIAO SAMD21** para las rutinas posteriores, por favor consulta **[este tutorial](/Seeeduino-XIAO/#software)** para terminar de añadirlo.
+- Si quieres usar **Seeed Studio XIAO SAMD21** para las rutinas posteriores, por favor consulta **[este tutorial](/es/Seeeduino-XIAO/#software)** para terminar de añadirlo.
 
-- Si quieres usar **Seeed Studio XIAO RP2040** para las rutinas posteriores, por favor consulta **[este tutorial](/XIAO-RP2040-with-Arduino/#software-setup)** para terminar de añadirlo.
+- Si quieres usar **Seeed Studio XIAO RP2040** para las rutinas posteriores, por favor consulta **[este tutorial](/es/XIAO-RP2040-with-Arduino/#software-setup)** para terminar de añadirlo.
 
-- Si quieres usar **Seeed Studio XIAO nRF52840** para las rutinas posteriores, por favor consulta **[este tutorial](/XIAO_BLE/#software-setup)** para terminar de añadirlo.
+- Si quieres usar **Seeed Studio XIAO nRF52840** para las rutinas posteriores, por favor consulta **[este tutorial](/es/XIAO_BLE/#software-setup)** para terminar de añadirlo.
 
-- Si quieres usar **Seeed Studio XIAO ESP32C3** para las rutinas posteriores, por favor consulta **[este tutorial](/XIAO_ESP32C3_Getting_Started#software-setup)** para terminar de añadirlo.
+- Si quieres usar **Seeed Studio XIAO ESP32C3** para las rutinas posteriores, por favor consulta **[este tutorial](/es/XIAO_ESP32C3_Getting_Started#software-setup)** para terminar de añadirlo.
 
-- Si quieres usar **Seeed Studio XIAO ESP32S3** para las rutinas posteriores, por favor consulta **[este tutorial](/xiao_esp32s3_getting_started#software-preparation)** para terminar de añadirlo.
+- Si quieres usar **Seeed Studio XIAO ESP32S3** para las rutinas posteriores, por favor consulta **[este tutorial](/es/xiao_esp32s3_getting_started#software-preparation)** para terminar de añadirlo.
 
 #### Paso 4. Añade la biblioteca TinyGPSPlus a Arduino
 

@@ -11,7 +11,7 @@ last_update:
 ---
 
 :::caution
-Esta wiki está escrita para ReSpeaker 2-Mics Pi HAT **v2**, para distinguir los dispositivos v1 y v2, consulte [Cómo Distinguir las Revisiones de Hardware de ReSpeaker 2-Mics Pi HAT](/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions).
+Esta wiki está escrita para ReSpeaker 2-Mics Pi HAT **v2**, para distinguir los dispositivos v1 y v2, consulte [Cómo Distinguir las Revisiones de Hardware de ReSpeaker 2-Mics Pi HAT](/es/how-to-distinguish-respeaker_2-mics_pi_hat-hardware-revisions).
 :::
 
 En el último Raspberry Pi OS, el método tradicional de instalación de controladores (para dispositivos v1) ya no está disponible y puede llevar a los siguientes problemas conocidos:

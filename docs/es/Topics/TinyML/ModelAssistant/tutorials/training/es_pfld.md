@@ -16,15 +16,15 @@ Esta sección describe cómo entrenar el modelo PFLD en el conjunto de datos de 
 
 ## Preparar Conjuntos de Datos
 
-SSCMA utiliza [Conjuntos de Datos de Medidores Personalizados](/ModelAssistant_Tutorials_Datasets#SSCMA) por defecto para entrenar el modelo PFLD, por favor consulte los siguientes pasos para completar la preparación de los conjuntos de datos.
+SSCMA utiliza [Conjuntos de Datos de Medidores Personalizados](/es/ModelAssistant_Tutorials_Datasets#SSCMA) por defecto para entrenar el modelo PFLD, por favor consulte los siguientes pasos para completar la preparación de los conjuntos de datos.
 
-1. Por favor consulte [Conjuntos de Datos de Internet - SSCMA - Conjunto de Datos de Medidores Personalizados](/ModelAssistant_Tutorials_Datasets#SSCMA) para descargar y descomprimir el conjunto de datos.
+1. Por favor consulte [Conjuntos de Datos de Internet - SSCMA - Conjunto de Datos de Medidores Personalizados](/es/ModelAssistant_Tutorials_Datasets#SSCMA) para descargar y descomprimir el conjunto de datos.
 
 2. Recuerde la **ruta de la carpeta** (ej. `datasets\meter`) de los conjuntos de datos descomprimidos, puede que necesite usar esta ruta de carpeta más adelante.
 
 ## Elegir una Configuración
 
-Elegiremos un archivo de configuración apropiado dependiendo del tipo de tarea de entrenamiento que necesitemos realizar, lo cual ya hemos introducido en [Config](/ModelAssistant_Tutorials_Config), para una breve descripción de las funciones, estructura y principios del archivo de configuración.
+Elegiremos un archivo de configuración apropiado dependiendo del tipo de tarea de entrenamiento que necesitemos realizar, lo cual ya hemos introducido en [Config](/es/ModelAssistant_Tutorials_Config), para una breve descripción de las funciones, estructura y principios del archivo de configuración.
 
 Para el ejemplo del modelo PFLD de medidores, usamos `pfld_mbv2n_112.py` como archivo de configuración, que se encuentra en la carpeta bajo el directorio raíz de SSCMA `configs/pfld` y adicionalmente hereda el archivo de configuración `default_runtime_pose.py`.
 
@@ -128,7 +128,7 @@ param_scheduler=[
 
 ## Modelo de Entrenamiento
 
-El entrenamiento del modelo requiere usar nuestro entorno de trabajo SSCMA previamente configurado. Si sigues nuestra guía de [Instalación](/ModelAssistant_Introduce_Installation) usando Conda para instalar SSCMA en un entorno virtual llamado `sscma`, por favor asegúrate primero de que estás actualmente en el entorno virtual.
+El entrenamiento del modelo requiere usar nuestro entorno de trabajo SSCMA previamente configurado. Si sigues nuestra guía de [Instalación](/es/ModelAssistant_Introduce_Installation) usando Conda para instalar SSCMA en un entorno virtual llamado `sscma`, por favor asegúrate primero de que estás actualmente en el entorno virtual.
 
 Luego, en el directorio raíz del proyecto SSCMA, ejecutamos el siguiente comando para entrenar un modelo PFLD de medidor de extremo a extremo.
 
@@ -180,8 +180,8 @@ Si quieres una vista previa en tiempo real mientras realizas pruebas, puedes agr
 
 ### Evaluación
 
-Para probar y evaluar más a fondo el modelo en un dispositivo de computación en el borde realista, necesitas exportar el modelo. En el proceso de exportar el modelo, SSCMA realizará algunas optimizaciones en el modelo, como poda del modelo, destilación, etc. Puedes consultar la sección [Exportar](/ModelAssistant_Tutorials_Export_Overview) para aprender más sobre cómo exportar modelos.
+Para probar y evaluar más a fondo el modelo en un dispositivo de computación en el borde realista, necesitas exportar el modelo. En el proceso de exportar el modelo, SSCMA realizará algunas optimizaciones en el modelo, como poda del modelo, destilación, etc. Puedes consultar la sección [Exportar](/es/ModelAssistant_Tutorials_Export_Overview) para aprender más sobre cómo exportar modelos.
 
 ### Despliegue
 
-Después de exportar el modelo, puedes desplegar el modelo en el dispositivo de computación en el borde para pruebas y evaluación. Puedes consultar la sección [Desplegar](/ModelAssistant_Deploy_Overview) para aprender más sobre cómo desplegar modelos.
+Después de exportar el modelo, puedes desplegar el modelo en el dispositivo de computación en el borde para pruebas y evaluación. Puedes consultar la sección [Desplegar](/es/ModelAssistant_Deploy_Overview) para aprender más sobre cómo desplegar modelos.

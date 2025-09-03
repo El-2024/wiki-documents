@@ -138,14 +138,14 @@ El sistema completo incluye un módulo de producción NVIDIA Jetson Xavier NX, u
 
 :::info  
 reComputer J20 con la placa portadora J202.  
-Por favor, consulta esta [página wiki](/reComputer_J2021_J202_Flash_Jetpack) para más información sobre cómo flashear JetPack.  
+Por favor, consulta esta [página wiki](/es/reComputer_J2021_J202_Flash_Jetpack) para más información sobre cómo flashear JetPack.  
 :::  
 
 ## Uso de Interfaces  
 
 :::info  
 reComputer J20 con la placa portadora J202. La interfaz utiliza el mismo diseño que J30/J40.  
-Por favor, consulta esta [página wiki](/J401_carrierboard_Hardware_Interfaces_Usage) para más información sobre el uso de interfaces.  
+Por favor, consulta esta [página wiki](/es/J401_carrierboard_Hardware_Interfaces_Usage) para más información sobre el uso de interfaces.  
 :::  
 
 

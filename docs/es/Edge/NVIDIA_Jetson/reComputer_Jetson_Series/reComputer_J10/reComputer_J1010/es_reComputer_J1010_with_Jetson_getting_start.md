@@ -133,7 +133,7 @@ Nota: Recibimos consultas de clientes que necesitan más almacenamiento que los 
 ## Flashear JetPack al reComputer J1010
 
 :::info
-Por favor, consulta esta página de [wiki](/reComputer_J1010_J101_Flash_Jetpack) para más información, ya que J1010 utiliza la placa portadora J101.
+Por favor, consulta esta página de [wiki](/es/reComputer_J1010_J101_Flash_Jetpack) para más información, ya que J1010 utiliza la placa portadora J101.
 :::
 
 

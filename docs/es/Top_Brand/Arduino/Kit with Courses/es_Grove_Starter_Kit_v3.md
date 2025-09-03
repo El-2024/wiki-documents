@@ -26,11 +26,11 @@ El shield base permite la conexión fácil de cualquier entrada o salida de micr
 
 Si esta es tu primera vez usando un Arduino, necesitarás completar los siguientes pasos:
 
-<!-- *   [Getting Started with Arduino](/Getting_Started_with_Arduino)
+<!-- *   [Getting Started with Arduino](/es/Getting_Started_with_Arduino)
 
-*   [Install your microcontroller](/Getting_Started_with_Seeeduino)
+*   [Install your microcontroller](/es/Getting_Started_with_Seeeduino)
 
-*   [Download and import the Grove - Starter Kit Sketchbook](/How_To_Use_Sketchbook) -->
+*   [Download and import the Grove - Starter Kit Sketchbook](/es/How_To_Use_Sketchbook) -->
 
 La dirección de descarga del Grove - Starter Kit Sketchbook está [aquí](https://github.com/Seeed-Studio/Sketchbook_Starter_Kit_V2.0).
 
@@ -79,7 +79,7 @@ En el lado izquierdo hay cuatro puertos Grove para tomar lecturas analógicas. L
 
 Debajo de los puertos digitales hay cuatro puertos Grove I2C. I2C es un protocolo de bus de baja velocidad que transfiere datos vía dos cables: SCL y SDA. SCL es la línea de reloj para sincronizar la transferencia de datos sobre el bus I2C; SDA es la línea de datos.
 
-<!-- For detailed information on how to use your Grove – Base Shield, go to [Base Shield V2](/Base_Shield_V2). -->
+<!-- For detailed information on how to use your Grove – Base Shield, go to [Base Shield V2](/es/Base_Shield_V2). -->
 
 ####  Grove - LCD RGB Backlight
 
@@ -123,7 +123,7 @@ El Relé es un interruptor mecánico controlado electrónicamente. El tamaño de
 Por favor, tenga mucho cuidado al trabajar con voltajes de red: si tiene dudas, contacte a un profesional como un electricista licenciado para obtener ayuda.
 </font>
 
-<!-- For detailed information on how to use your Grove – Relay, you can go to [Grove – Relay page](/Grove-Relay). -->
+<!-- For detailed information on how to use your Grove – Relay, you can go to [Grove – Relay page](/es/Grove-Relay). -->
 
 ####  Grove – Buzzer
 
@@ -143,7 +143,7 @@ Encuentra el ejemplo a través de la ruta siguiente: File -&gt; Sketchbook -&gt;
 
 ¿Cómo funciona realmente el buzzer Piezo? Usualmente, hay dos obleas cerámicas en cada buzzer Piezo. Cuando se les dan diferentes voltajes, se atraen o se repelen entre sí. El movimiento de estas obleas causa vibraciones del aire (es decir, sonido). Cuando la frecuencia de la vibración cambia, la frecuencia del sonido cambiará en consecuencia.
 
-<!-- For detailed information on how to use your Grove - Buzzer, go to [Grove - Buzzer page](/Grove-Buzzer) -->
+<!-- For detailed information on how to use your Grove - Buzzer, go to [Grove - Buzzer page](/es/Grove-Buzzer) -->
 
 ####   Grove - Sound Sensor
 
@@ -161,7 +161,7 @@ File -&gt; Sketchbook -&gt; Grove_Sound_Sensor
 
 El micrófono electret recolecta la intensidad del sonido para todas las frecuencias, pero un potenciómetro puede actuar como el portero. Por ejemplo, cuando giras el eje completamente en sentido horario, el potenciómetro podría dejar pasar todo. Cuando lo giras completamente en sentido antihorario, nada pasaría.
 
-<!-- For a detailed information on how to use your Grove - Sound Sensor, go to [Grove - Sound Sensor page](/Grove-Sound_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Sound Sensor, go to [Grove - Sound Sensor page](/es/Grove-Sound_Sensor) -->
 
 ####   Grove - Touch Sensor
 
@@ -179,7 +179,7 @@ El código de Grove – Button funciona con este módulo. Encuentra el ejemplo a
 
 Esta es una alternativa al botón de contacto momentáneo. El Grove – Touch Sensor detecta el cambio en capacitancia en la región circular (sin pintar) en la parte inferior; cuanto más cerca esté tu dedo de esta región, mayor será el cambio en capacitancia. Incluso si hay papel entre tu dedo y el sensor, seguirá funcionando de manera confiable.
 
-<!-- For detailed information on how to use your Grove - Touch Sensor, go to [Grove - Touch Sensor page](/Grove-Touch_Sensor). -->
+<!-- For detailed information on how to use your Grove - Touch Sensor, go to [Grove - Touch Sensor page](/es/Grove-Touch_Sensor). -->
 
 ####   Grove - Rotary Angle Sensor
 
@@ -199,7 +199,7 @@ File -&gt; Sketchbook -&gt; Grove_Rotary_Angle_Sensor
 
 Un potenciómetro rotatorio se ve muy similar a un codificador rotatorio, pero no son lo mismo. Un potenciómetro rotatorio es esencialmente un potenciómetro deslizante, construido en forma circular. Reporta, de manera analógica, la fracción del elemento resistivo que está siendo usado por el contacto deslizante.
 
-<!-- For a detailed information on how to use your Grove - Rotary Angle Sensor,you can go to [Grove - Rotary Angle Sensor page](/Grove-Rotary_Angle_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Rotary Angle Sensor,you can go to [Grove - Rotary Angle Sensor page](/es/Grove-Rotary_Angle_Sensor) -->
 
 ####   Grove – Temperature Sensor
 
@@ -219,7 +219,7 @@ File -&gt; Sketchbook -&gt; Grove_Temperature_Sensor.
 
 Grove – Temperature Sensor se usa para detectar la temperatura del ambiente.
 
-<!-- For a detailed information on how to use your Grove - Temperature Sensor,you can go to [Grove - Temperature Sensor](/Grove-Temperature_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Temperature Sensor,you can go to [Grove - Temperature Sensor](/es/Grove-Temperature_Sensor) -->
 
 ####   Grove - LED
 
@@ -239,7 +239,7 @@ File -&gt; Sketchbook -&gt; Grove_LED
 
 Preparamos tres colores de bombillas LED para ti, puedes obtener el color que desees cambiando el LED en el pequeño Grove – LED Socket. Los LEDs tienen un cátodo en el lado plano de la bombilla, y un ánodo en el lado redondo de la bombilla. El ánodo necesita ser instalado correspondiendo al signo '+' en el asiento para que el LED funcione correctamente.
 
-<!-- For a detailed information on how to use your Grove - LED,you can go to [Grove - Red LED](/Grove-Red_LED) -->
+<!-- For a detailed information on how to use your Grove - LED,you can go to [Grove - Red LED](/es/Grove-Red_LED) -->
 
 ####   Grove - Light Sensor
 
@@ -259,7 +259,7 @@ File -&gt; Sketchbook -&gt; Grove_Light_Sensor
 
 La salida del sensor de luz analógico varía de 0 a 1023, pero la salida no es lineal con respecto a la intensidad de luz ambiental.
 
-<!-- For a detailed information on how to use your Grove - Light Sensor,you can go to [Grove - Light Sensor](/Grove-Light_Sensor) -->
+<!-- For a detailed information on how to use your Grove - Light Sensor,you can go to [Grove - Light Sensor](/es/Grove-Light_Sensor) -->
 
 ####   Grove – Button
 

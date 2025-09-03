@@ -125,7 +125,7 @@ Las asignaciones de pines ​CAN_H​ y ​CAN_L​ en nuestros dispositivos est
 
 ### Instalar ROS en Jetson
 
-Consulta el tutorial sobre [Instalar ROS2 Humble](/install_ros2_humble) o [Instalar ROS1](/installing_ros1) en reComptuer Jetson
+Consulta el tutorial sobre [Instalar ROS2 Humble](/es/install_ros2_humble) o [Instalar ROS1](/es/installing_ros1) en reComptuer Jetson
 
 ### Habilitar Función CAN
 

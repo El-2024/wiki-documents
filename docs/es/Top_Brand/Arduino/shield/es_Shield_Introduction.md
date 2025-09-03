@@ -45,7 +45,7 @@ Aquí está la lista de las Placas Seeeduino que puedes encontrar en el Seeed Wi
 - [W5500 Ethernet Shield v1.0](https://wiki.seeedstudio.com/es/W5500_Ethernet_Shield_v1.0/)
 - [Wifi Shield (Fi250) V1.1](https://wiki.seeedstudio.com/es/Wifi_Shield_Fi250_V1.1/)
 - [Wifi Shield V2.0](https://wiki.seeedstudio.com/es/Wifi_Shield_V2.0/)
-<!-- - [XBee Shield V2.0](/https://wiki.seeedstudio.comXBee_Shield_V2.0/) -->
+<!-- - [XBee Shield V2.0](/es/https://wiki.seeedstudio.comXBee_Shield_V2.0/) -->
 
 ¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes tipos de soporte para asegurar que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para satisfacer diferentes preferencias y necesidades.
 

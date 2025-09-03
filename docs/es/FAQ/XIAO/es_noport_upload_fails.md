@@ -20,11 +20,11 @@ En este Wiki, puedes encontrar soluciones. Diferentes modelos de XIAO tienen dif
 :::success Navegación rápida
 Aquí están los métodos de solución de problemas para fallos de carga, comportamiento anormal del programa, o errores de puerto de dispositivo no encontrado para varios tipos de XIAO. Puedes indexar rápidamente a través del enlace de abajo:
 
-- [**XIAO SAMD21**](/noport_upload_fails/#for-xiao-samd21)
-- [**XIAO RP2040**](/noport_upload_fails/#for-xiao-rp2040)
-- [**XIAO nRF52840(Sense)**](/noport_upload_fails/#for-xiao-nrf52840-sense)
-- [**XIAO ESP32C3**](/noport_upload_fails/#for-xiao-esp32c3)
-- [**XIAO ESP32S3(Sense)**](/noport_upload_fails/#for-xiao-esp32s3-sense)
+- [**XIAO SAMD21**](/es/noport_upload_fails/#for-xiao-samd21)
+- [**XIAO RP2040**](/es/noport_upload_fails/#for-xiao-rp2040)
+- [**XIAO nRF52840(Sense)**](/es/noport_upload_fails/#for-xiao-nrf52840-sense)
+- [**XIAO ESP32C3**](/es/noport_upload_fails/#for-xiao-esp32c3)
+- [**XIAO ESP32S3(Sense)**](/es/noport_upload_fails/#for-xiao-esp32s3-sense)
 :::
 
 ## **Para XIAO SAMD21**

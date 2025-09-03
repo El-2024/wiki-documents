@@ -140,7 +140,7 @@ Para proveedores de soluciones, reComputer J1020 v2 viene preinstalado con Jetpa
 ## Flashear JetPack al reComputer J1020v2
 
 :::info
-Por favor, consulta esta página de [wiki](/reComputer_J2021_J202_Flash_Jetpack) para más información, ya que J1020v2 utiliza la placa portadora J202.
+Por favor, consulta esta página de [wiki](/es/reComputer_J2021_J202_Flash_Jetpack) para más información, ya que J1020v2 utiliza la placa portadora J202.
 :::
 
 ## Recursos

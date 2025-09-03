@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.jpg" style={{width:700, height:'auto'}}/></div><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/reterminal_e10xx_with_esphome" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> Obtener Uno Ahora 🖱️</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/reterminal_e10xx_with_esphome" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> Obtener Uno Ahora 🖱️</font></span></strong></a>
 </div>
 
 ## Introducción a [Home Assistant](https://www.home-assistant.io/)
@@ -80,7 +80,7 @@ Antes de que comience el contenido del tutorial de este artículo, es posible qu
     </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="/reterminal_e10xx_with_esphome" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="/es/reterminal_e10xx_with_esphome" target="_blank" rel="noopener noreferrer">
         <strong><span><font color={'FFFFFF'} size={"4"}> Obtener Uno Ahora 🖱️</font></span></strong>
         </a>
       </div></td>

@@ -29,9 +29,9 @@ Esta guía te proporcionará información sobre cómo organizar la Demo de OpenA
 - La cadena de herramientas [ESP-IDF](https://github.com/espressif/esp-idf) instalada en tu computadora
 
 :::tip
-Si quieres aprender cómo cambiar la interfaz de usuario (UI), puedes consultar la guía: [Cómo Crear tu propia UI](/SenseCAP_Indicator_How_to_Create_your_own_UI)
+Si quieres aprender cómo cambiar la interfaz de usuario (UI), puedes consultar la guía: [Cómo Crear tu propia UI](/es/SenseCAP_Indicator_How_to_Create_your_own_UI)
 
-Si aún no has instalado la cadena de herramientas IDF, puedes seguir las instrucciones en la guía: [Cómo_Flashear_El_Firmware_Por_Defecto](/SenseCAP_Indicator_How_To_Flash_The_Default_Firmware)
+Si aún no has instalado la cadena de herramientas IDF, puedes seguir las instrucciones en la guía: [Cómo_Flashear_El_Firmware_Por_Defecto](/es/SenseCAP_Indicator_How_To_Flash_The_Default_Firmware)
 :::
 
 ## Comenzar
@@ -61,7 +61,7 @@ Para construir rápidamente la interfaz de usuario (UI), puedes usar [SquareLine
 
 - Modelo: El Modelo contiene el archivo `indicator_openai.c`, que incluye la función `indicator_openai_init()`. Cuando se ejecuta en la entrada del Modelo, esta función envía solicitudes a OpenAI, recibe respuestas y las analiza para mostrarlas en la pantalla a través de la Vista.
 
-Aquí están las funciones clave y el flujo de trabajo del Modelo (una vez que [la Clave API](/Sensor/SenseCAP/SenseCAP_Indicator/Set_An_API_Key) está guardada):
+Aquí están las funciones clave y el flujo de trabajo del Modelo (una vez que [la Clave API](/es/Sensor/SenseCAP/SenseCAP_Indicator/Set_An_API_Key) está guardada):
 
 #### **Diagrama de flujo de ChatGPT**
 
@@ -882,10 +882,10 @@ int indicator_openai_init(void)
 
 ## Recursos
 
-1. [SenseCAP Indicator X ChatGPT](/SenseCAP_Indicator_ChatGPT)
-2. [SenseCAP Indicator X DALL·E](/SenseCAP_Indicator_DALL·E)
+1. [SenseCAP Indicator X ChatGPT](/es/SenseCAP_Indicator_ChatGPT)
+2. [SenseCAP Indicator X DALL·E](/es/SenseCAP_Indicator_DALL·E)
 3. **SDK de Demostración**: El SDK de Demostración para el SenseCAP Indicator está disponible en [GitHub](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32).
-4. **Guía de Usuario del SenseCAP Indicator**: La Guía de Usuario proporciona información detallada sobre el software y hardware de la Placa SenseCAP Indicator. Puedes leerla [aquí](/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator).
+4. **Guía de Usuario del SenseCAP Indicator**: La Guía de Usuario proporciona información detallada sobre el software y hardware de la Placa SenseCAP Indicator. Puedes leerla [aquí](/es/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator).
 5. **Guía de Chat completions de OpenAI**: Si eres nuevo en la API de Chat, esta guía te ayudará a comenzar. Puedes encontrarla [aquí](https://platform.openai.com/docs/guides/chat/chat-completions-beta).
 6. **Archivo `indicator_openai.c`**: Este archivo contiene las funciones principales para la integración de `ChatGPT` y `DALL·E`. Puedes verlo [aquí](https://raw.githubusercontent.com/Seeed-Solution/SenseCAP_Indicator_ESP32/main/examples/indicator_openai/main/model/indicator_openai.c).
 7. **Guía de Introducción para ESP-IDF**: Esta guía proporciona pasos completos para configurar y usar ESP-IDF para construir proyectos. Puedes acceder a ella [aquí](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html).

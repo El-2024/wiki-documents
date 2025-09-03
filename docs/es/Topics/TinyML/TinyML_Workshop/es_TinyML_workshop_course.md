@@ -77,13 +77,13 @@ Para completar el taller, necesitamos seguir las instrucciones a continuación, 
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "/sscma" class="getting_started_label2">1.1 Introducción a la Plataforma SenseCraft AI</a>
+          <a href= "/es/sscma" class="getting_started_label2">1.1 Introducción a la Plataforma SenseCraft AI</a>
           <br/>Familiarízate con las herramientas que estamos usando.
       </div>
   </div>
     <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "/sscma/#the-ai-blink-quickly-using-ai" class="getting_started_label2">1.2 El "Parpadeo" de IA </a>
+          <a href= "/es/sscma/#the-ai-blink-quickly-using-ai" class="getting_started_label2">1.2 El "Parpadeo" de IA </a>
           <br/>Aprende cómo desplegar fácilmente bibliotecas de modelos de IA públicos en dispositivos edge, XIAO ESP32S3 Sense.
       </div>
   </div>
@@ -94,7 +94,7 @@ Para completar el taller, necesitamos seguir las instrucciones a continuación, 
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "/train_and_deploy_model" class="getting_started_label2">2. Construye Tu propio proyecto </a>
+          <a href= "/es/train_and_deploy_model" class="getting_started_label2">2. Construye Tu propio proyecto </a>
           <br/>Aprende cómo entrenar y desplegar fácilmente tus propios modelos.  
       </div>
   </div>
@@ -105,7 +105,7 @@ Para completar el taller, necesitamos seguir las instrucciones a continuación, 
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "/train_and_deploy_model/#optional-federate-transmit-data-wide-away" class="getting_started_label2">3. Transmitir datos a gran distancia </a>
+          <a href= "/es/train_and_deploy_model/#optional-federate-transmit-data-wide-away" class="getting_started_label2">3. Transmitir datos a gran distancia </a>
           <br/>Aprende cómo federar tus modelos a gran distancia en SenseCraft.
       </div>
   </div>

@@ -165,7 +165,7 @@ Dibuja una cadena de texto comenzando desde (poX,poY) usando la fuente incorpora
 
 ---
 
-TFT Touch Shield usa la [Biblioteca de Pantalla Táctil Adafruit](https://github.com/adafruit/Touch-Screen-Library). Para entender el principio detrás de la pantalla táctil resistiva consulte [Enlaces Externos](/2.8inch_TFT_Touch_Shield_v2.0#resources). En resumen, una pantalla táctil resistiva de 4 hilos proporciona dos divisores de voltaje cada uno para el eje X e Y. Al aplicar voltajes apropiados para cada eje y escanear los valores ADC se puede detectar la posición del toque. Estos valores siempre son propensos al ruido. Por lo tanto se usa un filtro digital.
+TFT Touch Shield usa la [Biblioteca de Pantalla Táctil Adafruit](https://github.com/adafruit/Touch-Screen-Library). Para entender el principio detrás de la pantalla táctil resistiva consulte [Enlaces Externos](/es/2.8inch_TFT_Touch_Shield_v2.0#resources). En resumen, una pantalla táctil resistiva de 4 hilos proporciona dos divisores de voltaje cada uno para el eje X e Y. Al aplicar voltajes apropiados para cada eje y escanear los valores ADC se puede detectar la posición del toque. Estos valores siempre son propensos al ruido. Por lo tanto se usa un filtro digital.
 
 - Para usar la Biblioteca TouchScreen primero cree un objeto TouchScreen mediante
 

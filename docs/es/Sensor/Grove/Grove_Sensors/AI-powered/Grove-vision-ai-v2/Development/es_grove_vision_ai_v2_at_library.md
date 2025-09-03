@@ -818,7 +818,7 @@ Para usuarios que requieren más personalización y funcionalidad avanzada, el G
 
 Los usuarios interesados en el desarrollo de SDK pueden consultar los ejemplos existentes, como [sdio_app](https://github.com/Seeed-Studio/sscma-example-we2/tree/main/EPII_CM55M_APP_S/app/scenario_app/sdio_app), que demuestra operaciones SDIO directas. Estos ejemplos sirven como punto de partida para modificar e implementar proyectos personalizados.
 
-Al aprovechar el poder del SDK, los usuarios pueden desbloquear todo el potencial del Grove Vision AI V2 y crear soluciones adaptadas a sus necesidades específicas. Sigue [la página wiki anterior](/grove_vision_ai_v2_himax_sdk) para tener más orientación.
+Al aprovechar el poder del SDK, los usuarios pueden desbloquear todo el potencial del Grove Vision AI V2 y crear soluciones adaptadas a sus necesidades específicas. Sigue [la página wiki anterior](/es/grove_vision_ai_v2_himax_sdk) para tener más orientación.
 
 ## FAQ y solución de problemas
 

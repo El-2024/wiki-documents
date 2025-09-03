@@ -147,7 +147,7 @@ Si no has comenzado un proyecto con reComputer, podrías considerar usar esta op
 
 - Generalmente hay dos formas de instalar un sistema para reComputer, la primera es usar el **NVIDIA SDK Manager**.
 
-Si estás en un **reComputer J2011** o **reComputer J2012**, en el **paso 12** de [Flasheo a eMMC con SDK Manager](/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line), puedes expandir la capacidad cambiando la ubicación de la grabación del sistema.
+Si estás en un **reComputer J2011** o **reComputer J2012**, en el **paso 12** de [Flasheo a eMMC con SDK Manager](/es/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line), puedes expandir la capacidad cambiando la ubicación de la grabación del sistema.
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/52.png" /></div>
 
@@ -157,9 +157,9 @@ Este método no es aplicable al módulo Jetson Nano.
 
 - Generalmente hay dos formas de instalar un sistema para reComputer, la segunda es usar las **líneas de comandos**.
 
-- Si estás usando una **placa portadora A20X**, el método para instalar el sistema usando la línea de comandos está en [Flasheo a eMMC con línea de comandos](/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line).
+- Si estás usando una **placa portadora A20X**, el método para instalar el sistema usando la línea de comandos está en [Flasheo a eMMC con línea de comandos](/es/reComputer_J2021_J202_Flash_Jetpack#flashing-to-emmc-with-command-line).
 
-- Si estás usando la **Placa Portadora reComputer J1010**, entonces usa la línea de comandos para instalar el sistema en [Flasheo a eMMC con línea de comandos](/reComputer_J1010_J101_Flash_Jetpack#flashing-jetpack-os-via-command-line).
+- Si estás usando la **Placa Portadora reComputer J1010**, entonces usa la línea de comandos para instalar el sistema en [Flasheo a eMMC con línea de comandos](/es/reComputer_J1010_J101_Flash_Jetpack#flashing-jetpack-os-via-command-line).
 
 Ambos esencialmente completan la instalación del sistema usando el siguiente comando.
 

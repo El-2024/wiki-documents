@@ -345,7 +345,7 @@ Puedes salir de este programa simplemente presionando ++ctrl+c++.
 :::
 1.Deberías tener una Raspberry Pi y un Grovepi o Grovepi+.
 
-2.Deberías haber completado la configuración del entorno de desarrollo, de lo contrario sigue [aquí](/GrovePi_Plus/).
+2.Deberías haber completado la configuración del entorno de desarrollo, de lo contrario sigue [aquí](/es/GrovePi_Plus/).
 
 3.Conexión
 

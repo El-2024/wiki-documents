@@ -93,7 +93,7 @@ Visite la [consola de AWS](http://console.aws.amazon.com) de Amazon, regístrese
 
 6.Crear una cosa
 
-En esta sección también puede consultar la [wiki de Beagle Bone](/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS) para otra forma de crear una cosa y terminar las tareas restantes. La diferencia es que Beagle Bone no usó la herramienta CLI de AWS para Obtener Certificaciones.
+En esta sección también puede consultar la [wiki de Beagle Bone](/es/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS) para otra forma de crear una cosa y terminar las tareas restantes. La diferencia es que Beagle Bone no usó la herramienta CLI de AWS para Obtener Certificaciones.
 
 ![](https://files.seeedstudio.com/wiki/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/AWS_Edison_starter_kit_create_a_thing1.png)
 
@@ -440,7 +440,7 @@ function sendData(){
 
 * **[PDF]** [Guía del Desarrollador de AWS IoT](https://files.seeedstudio.com/wiki/Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS/res/AWS_IoT_Developer_Guide.pdf)
 
-* [Wiki]<a href="/Grove_IoT_Starter_Kits_Powered_by_AWS" target="_blank"><span><font color={'000000'} size={"3"}> Página Principal para Kits de Inicio IoT Grove Powered by AWS </font></span></a>
+* [Wiki]<a href="/es/Grove_IoT_Starter_Kits_Powered_by_AWS" target="_blank"><span><font color={'000000'} size={"3"}> Página Principal para Kits de Inicio IoT Grove Powered by AWS </font></span></a>
 
 * [Comenzando con Edison](https://software.intel.com/en-us/iot/library/edison-getting-started)
 

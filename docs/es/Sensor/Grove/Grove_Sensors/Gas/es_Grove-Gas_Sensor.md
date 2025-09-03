@@ -16,10 +16,10 @@ El módulo Grove - Sensor de Gas es útil para detectar fugas de gas (en el hoga
 
 Cada Kit de Sensor de Gas Grove consiste en una base de sensor de gas y cuatro detectores. Puedes cambiar el detector en la base según los gases objetivo específicos.
 
--   [Grove - Sensor de Gas(MQ2)](/Grove-Gas_Sensor-MQ2)：Gas Combustible, Humo
--   [Grove - Sensor de Gas(MQ3)](/Grove-Gas_Sensor-MQ3)：Vapor de Alcohol
--   [Grove - Sensor de Gas(MQ5)](/Grove-Gas_Sensor-MQ5)：GLP, Gas Natural, Gas de Ciudad
--   [Grove - Sensor de Gas(MQ9)](/Grove-Gas_Sensor-MQ9)：Monóxido de Carbono, Gas de Carbón, Gas Licuado
+-   [Grove - Sensor de Gas(MQ2)](/es/Grove-Gas_Sensor-MQ2)：Gas Combustible, Humo
+-   [Grove - Sensor de Gas(MQ3)](/es/Grove-Gas_Sensor-MQ3)：Vapor de Alcohol
+-   [Grove - Sensor de Gas(MQ5)](/es/Grove-Gas_Sensor-MQ5)：GLP, Gas Natural, Gas de Ciudad
+-   [Grove - Sensor de Gas(MQ9)](/es/Grove-Gas_Sensor-MQ9)：Monóxido de Carbono, Gas de Carbón, Gas Licuado
 
 Especificaciones
 -------------

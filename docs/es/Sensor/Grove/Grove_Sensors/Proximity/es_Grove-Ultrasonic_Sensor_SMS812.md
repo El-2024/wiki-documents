@@ -16,7 +16,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/ultrasonic-sms812/1.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/grove_ultrasonic_sensor_sms812" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="/es/grove_ultrasonic_sensor_sms812" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> Obtener Uno Ahora 🖱️</font></span></strong>
     </a>
 </div>
@@ -120,7 +120,7 @@ Esta rutina introducirá el uso de este radar ultrasónico utilizando el XIAO SA
     </a>
    </div></td>
             <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/grove_ultrasonic_sensor_sms812" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="/es/grove_ultrasonic_sensor_sms812" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> Obtener Uno Ahora 🖱️</font></span></strong>
     </a>
    </div></td>

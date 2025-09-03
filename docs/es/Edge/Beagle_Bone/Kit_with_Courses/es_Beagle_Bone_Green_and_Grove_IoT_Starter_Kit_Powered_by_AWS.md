@@ -113,7 +113,7 @@ Ahora, este paso está terminado. Pasemos al siguiente paso.
 
 ### Configurar tu BeagleBone Green
 
-<!-- Conectar BBG a tu PC mediante cable micro USB, y permitir que BBG acceda a Internet. Si esta es tu primera vez usando BBG/BBB, tal vez puedas seguir [aquí](/BeagleBone_Green) para comenzar. -->
+<!-- Conectar BBG a tu PC mediante cable micro USB, y permitir que BBG acceda a Internet. Si esta es tu primera vez usando BBG/BBB, tal vez puedas seguir [aquí](/es/BeagleBone_Green) para comenzar. -->
 
 Conectar los módulos Grove al BBG como muestra la imagen a continuación.
 
@@ -657,18 +657,18 @@ Recursos
 <!-- - [Página Principal para Kits de Inicio IoT Grove Powered by AWS](/Main Page for Grove IoT Starter Kits Powered by AWS) -->
 - [【Github】SDK de AWS para kit BeagleBone Green](https://github.com/Seeed-Studio/AWS_SDK_for_BBG)
 - [【Github】Librerías para kit BeagleBone Green](https://github.com/Seeed-Studio/Grove_Starter_Kit_for_BBG)
-<!-- - [BeagleBone Green](/BeagleBone_Green) -->
+<!-- - [BeagleBone Green](/es/BeagleBone_Green) -->
 - [Página principal de Beagleboard](https://beagleboard.org/getting-started)
-<!-- - [Grove - I2C ADC](/Grove_Sensors_Network/Standard_Protocol) -->
-- [Grove - I2C Hub](/Grove-I2C_Hub)
-<!-- - [Grove - Relay](/Grove-Relay) -->
-<!-- - [Grove - Buzzer](/Grove-Buzzer) -->
-- [Grove - OLED Display 96\*96](/Grove-OLED_Display_0.96inch)
-- [Grove - Button](/Grove-Button)
-- [Grove - Temperature sensor v1.2](/Grove-Temperature_Sensor_V1.2)
-- [Grove - Sound sensor](/Grove-Sound_Sensor)
-- [Grove - 3-Axis Digital Accelerometer ADXL345](/Grove-3-Axis_Digital_Accelerometer-16g)
-<!-- - [Grove - Chainable RGB LED](/Grove-Chainable_RGB_LED) -->
+<!-- - [Grove - I2C ADC](/es/Grove_Sensors_Network/Standard_Protocol) -->
+- [Grove - I2C Hub](/es/Grove-I2C_Hub)
+<!-- - [Grove - Relay](/es/Grove-Relay) -->
+<!-- - [Grove - Buzzer](/es/Grove-Buzzer) -->
+- [Grove - OLED Display 96\*96](/es/Grove-OLED_Display_0.96inch)
+- [Grove - Button](/es/Grove-Button)
+- [Grove - Temperature sensor v1.2](/es/Grove-Temperature_Sensor_V1.2)
+- [Grove - Sound sensor](/es/Grove-Sound_Sensor)
+- [Grove - 3-Axis Digital Accelerometer ADXL345](/es/Grove-3-Axis_Digital_Accelerometer-16g)
+<!-- - [Grove - Chainable RGB LED](/es/Grove-Chainable_RGB_LED) -->
 <!-- 上述链接缺失 -->
 
 <!-- This Markdown file was created from https://www.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS -->

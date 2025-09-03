@@ -75,8 +75,8 @@ Baidu Speech incluye STT, TTS, interacción de voz, activación sin conexión.
 
 Aquí está la lista de tutoriales de interacción de voz.
 
-<!-- - [ReSpeaker Core V2 & Wio Link](/ReSpeaker_Core_V2_&_Wio_Link/)
-- [Google Assistant](/Google_Assistant) -->
+<!-- - [ReSpeaker Core V2 & Wio Link](/es/ReSpeaker_Core_V2_&_Wio_Link/)
+- [Google Assistant](/es/Google_Assistant) -->
 ¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes tipos de soporte para asegurar que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para atender diferentes preferencias y necesidades.
 
 <div class="button_tech_support_container">

@@ -67,5 +67,5 @@ Haz clic en el sensor específico para entrar a la página de información detal
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_13.png"/></div>
 
 :::tip ¿Buscas ChatGPT x DALL·E?
-Ve a [SenseCAP Indicator X OpenAI](/SenseCAP_Indicator_OpenAI_X_Overview)
+Ve a [SenseCAP Indicator X OpenAI](/es/SenseCAP_Indicator_OpenAI_X_Overview)
 :::

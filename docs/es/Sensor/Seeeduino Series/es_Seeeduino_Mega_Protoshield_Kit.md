@@ -11,7 +11,7 @@ last_update:
 ---
 ![](https://www.seeedstudio.com/images/large/product/protomega_LRG.jpg)
 
-Este es el primer Protoshield para <a href="/Seeeduino_Mega" ><span><font size={"3"}> Seeeduino Mega</font></span></a>, que trae todos los pines desde <a href="/Seeeduino_V2.2" ><span><font size={"3"}> Seeeduino </font></span></a>, incluso <a href="/Arduino" ><span><font size={"3"}> Arduino </font></span></a> hacia la parte superior! Con este protoshield, los usuarios encontrarán un área de prototipado grande, incluso puedes usar Xbee con esta placa para convertirla en un shield Xbee.
+Este es el primer Protoshield para <a href="/es/Seeeduino_Mega" ><span><font size={"3"}> Seeeduino Mega</font></span></a>, que trae todos los pines desde <a href="/es/Seeeduino_V2.2" ><span><font size={"3"}> Seeeduino </font></span></a>, incluso <a href="/es/Arduino" ><span><font size={"3"}> Arduino </font></span></a> hacia la parte superior! Con este protoshield, los usuarios encontrarán un área de prototipado grande, incluso puedes usar Xbee con esta placa para convertirla en un shield Xbee.
 
 [enter image description here](https://www.seeedstudio.com/seeeduino-mega-protoshield-kit-p-597.html?cPath=132_134)
 

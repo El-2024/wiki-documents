@@ -11,7 +11,7 @@ last_update:
 ---
 ![](https://files.seeedstudio.com/wiki/Grove_Base_Shield_for_Photon/img/Grove_Base_Shield_for_Photon_product_view_1200_s.jpg)
 
-<!-- **Grove Base Shield para Photon** es una placa shield de expansión que incorpora puerto [Grove](/Grove_System) sobre el cual puedes construir aplicaciones más potentes e inteligentes con módulos funcionales Grove mucho más ricos y rentables. Tiene tres puertos digitales, dos puertos analógicos, dos puertos I<sup>2</sup>C y un puerto UART. Es un tipo de placa plug-and-play que acelerará dramáticamente tu proceso de prototipado. -->
+<!-- **Grove Base Shield para Photon** es una placa shield de expansión que incorpora puerto [Grove](/es/Grove_System) sobre el cual puedes construir aplicaciones más potentes e inteligentes con módulos funcionales Grove mucho más ricos y rentables. Tiene tres puertos digitales, dos puertos analógicos, dos puertos I<sup>2</sup>C y un puerto UART. Es un tipo de placa plug-and-play que acelerará dramáticamente tu proceso de prototipado. -->
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Particle-Photon-Base-Shield-p-2598.html?cPath=98_106_57)
 
@@ -141,7 +141,7 @@ void loop() {
 ---
 *   [Archivos de esquemas](https://files.seeedstudio.com/wiki/Grove_Base_Shield_for_Photon/res/Schematic_files_for_Grove_Base_Shield_for_Photon.zip)
 
-<!-- *   [Grove_System](/Grove_System) -->
+<!-- *   [Grove_System](/es/Grove_System) -->
 
 ## Soporte Técnico y Discusión del Producto
 

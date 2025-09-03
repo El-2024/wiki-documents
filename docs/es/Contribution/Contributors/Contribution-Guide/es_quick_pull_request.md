@@ -13,7 +13,7 @@ last_update:
 
 ### ¡Gracias por considerar contribuir a nuestros archivos de seeed-studio!
 
-Este proceso de contribución simplificado, es para poder hacer PR de archivos rápidamente (no necesitas desplegar sitios web localmente). Si quieres verificar los cambios o la página agregada localmente, puedes hacer clic [aquí](/full_steps_pull_request).
+Este proceso de contribución simplificado, es para poder hacer PR de archivos rápidamente (no necesitas desplegar sitios web localmente). Si quieres verificar los cambios o la página agregada localmente, puedes hacer clic [aquí](/es/full_steps_pull_request).
 
 
 ## Código TODO EN UNO

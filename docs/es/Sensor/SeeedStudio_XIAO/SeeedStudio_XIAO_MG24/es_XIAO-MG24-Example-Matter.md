@@ -49,7 +49,7 @@ Por defecto, se asume que tienes al menos un [Hub de Matter](https://en.wikipedi
 El software requerido incluye el **IDE de Arduino con el Core de Arduino de Silicon Labs**:
 
 - Si no está instalado aún, descarga y configura el [Core de Arduino de Silicon Labs](https://github.com/SiliconLabs/arduino) para compatibilidad con el XIAO MG24.
-- Para instrucciones detalladas de configuración, consulta la [Guía de Inicio](/xiao_mg24_getting_started/#add-board).
+- Para instrucciones detalladas de configuración, consulta la [Guía de Inicio](/es/xiao_mg24_getting_started/#add-board).
 
 Asegúrate de optar por la pila de protocolo Matter:
 
@@ -180,7 +180,7 @@ Si eres nuevo en Matter, los siguientes recursos proporcionan conocimiento funda
 - **[Viaje del Desarrollador Matter](https://www.silabs.com/wireless/matter/matter-developer-journey)**: Una guía completa a través del proceso de desarrollo Matter, incluyendo herramientas necesarias, recursos y mejores prácticas para una implementación efectiva.
 - **[Especificaciones Matter](https://csa-iot.org/developer-resource/specifications-download-request/)**: Especificaciones técnicas para el protocolo Matter y sus componentes. Este es el recurso principal para entender las capacidades del protocolo y detalles operacionales.
 - **[El Modelo de Datos del Dispositivo - Google Home Developers](https://developers.home.google.com/matter/primer/device-data-model)**: Una explicación detallada del modelo de datos del dispositivo, que estandariza cómo las características y capacidades del dispositivo se representan en el ecosistema Matter.
-- **[Descripción General del Framework de Desarrollo Matter](/matter_development_framework)**: Una guía específicamente adaptada al Framework de Desarrollo Matter para el XIAO ESP32C6, ofreciendo un enfoque alternativo para el desarrollo de dispositivos Matter.
+- **[Descripción General del Framework de Desarrollo Matter](/es/matter_development_framework)**: Una guía específicamente adaptada al Framework de Desarrollo Matter para el XIAO ESP32C6, ofreciendo un enfoque alternativo para el desarrollo de dispositivos Matter.
 
 ## Soporte Técnico y Discusión de Productos
 

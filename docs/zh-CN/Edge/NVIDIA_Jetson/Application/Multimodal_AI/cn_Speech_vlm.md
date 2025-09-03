@@ -50,7 +50,7 @@ TTS 模型是一种用于文字转语音任务的高性能深度学习模型。�
 
 - 配备 16GB 或以上内存的 reComputer Jetson AGX Orin 64G 或 reComputer Jetson J4012 16G 设备。
 - USB 即插即用扬声器麦克风。
-- 一台能够输出 RTSP 流地址的 IP 摄像头。我们还提供了使用 [NVIDIA Nvstreamer](/getting_started_with_nvstreamer) 工具将本地视频转换为 RTSP 流的说明。
+- 一台能够输出 RTSP 流地址的 IP 摄像头。我们还提供了使用 [NVIDIA Nvstreamer](/cn/getting_started_with_nvstreamer) 工具将本地视频转换为 RTSP 流的说明。
 
 :::note
 我们已经在 reComputer [Orin NX 16GB](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) 和 [AGX Orin 64GB](https://www.seeedstudio.com/NVIDIArJetson-AGX-Orintm-64GB-Developer-Kit-p-5641.html) 开发套件上测试了本教程的可行性。
@@ -88,7 +88,7 @@ TTS 模型是一种用于文字转语音任务的高性能深度学习模型。�
 
 ### 安装 VLM
 
-本项目的核心功能是视觉语言模型（VLM）。我们提供了[如何在 reComputer Nvidia Jetson 上运行 VLM 的指南](/run_vlm_on_recomputer)。请参考此链接获取安装和使用说明。在继续以下步骤之前，请确保您完全理解如何使用 VLM 进行文本描述推理。
+本项目的核心功能是视觉语言模型（VLM）。我们提供了[如何在 reComputer Nvidia Jetson 上运行 VLM 的指南](/cn/run_vlm_on_recomputer)。请参考此链接获取安装和使用说明。在继续以下步骤之前，请确保您完全理解如何使用 VLM 进行文本描述推理。
 
 ### 安装 Pytorch 和 Torchaudio
 

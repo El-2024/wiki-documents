@@ -34,11 +34,11 @@ Lista de partes
 
 | Nombre de las partes                                                                                               | Cantidad |
 |----------------------------------------------------------------------------------------------------------|----------|
-| [Grove - Relé](/Grove-Relay/)                                                                            | 1PC     |
-| [Grove - Grabadora](/Grove-Recorder_v2.0/)                                                                 | 1PC     |
+| [Grove - Relé](/es/Grove-Relay/)                                                                            | 1PC     |
+| [Grove - Grabadora](/es/Grove-Recorder_v2.0/)                                                                 | 1PC     |
 | Grove - Tira LED Impermeable WS2812 - 30 LEDs 1 metro                                                    | 1PC     |
-| [Grove - Zumbador](/Grove-Buzzer/)                                                                          | 1PC     |
-| [Wio Link](/Wio_Link/)                                                                                    | 1PC     |
+| [Grove - Zumbador](/es/Grove-Buzzer/)                                                                          | 1PC     |
+| [Wio Link](/es/Wio_Link/)                                                                                    | 1PC     |
 | [Cable Micro USB - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html?queryID=39d1b009a50fc3dc9e5a02a476ecb407&objectID=1405&indexName=bazaar_retailer_products) | 1PC     |
 | [Grove - Servo](https://www.seeedstudio.com/Grove-Servo.html?queryID=ef605ab9a8a236dec86d63eec8c17796&objectID=1626&indexName=bazaar_retailer_products)                                | 1PC     |
 
@@ -50,12 +50,12 @@ Esta demostración puede usarse como un indicador de resultado de compilación.
 ### Guía Preliminar
 
 -   Travis CI
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/es/Wio_Link/)
 
 ### Prerrequisitos
 
 -   [APP Wio Link](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/es/Wio_Link/)
 -   [Relé Grove](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   Una Cuenta de Travis CI
 -   Una Cuenta de GitHub

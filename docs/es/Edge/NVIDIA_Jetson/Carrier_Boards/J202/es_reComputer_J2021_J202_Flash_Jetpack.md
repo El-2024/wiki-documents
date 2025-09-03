@@ -217,7 +217,7 @@ Antes de poder continuar con los pasos de instalación, necesitamos asegurarnos 
 :::
 
 :::caution
-La interfaz SPI en el Jetson-Nano está multiplexada con GPIO por defecto y no está habilitada. Por favor consulte [**esta guía**](/enable_spi_interface_on_jetsonnano) para instrucciones sobre cómo habilitarla.
+La interfaz SPI en el Jetson-Nano está multiplexada con GPIO por defecto y no está habilitada. Por favor consulte [**esta guía**](/es/enable_spi_interface_on_jetsonnano) para instrucciones sobre cómo habilitarla.
 :::
 
 ### Flashear a Jetson
@@ -605,7 +605,7 @@ Si no puedes entrar al sistema en **Flasheo a eMMC con línea de comandos -- Pas
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/35.jpg" /></div>
 
 :::note
-Si se necesita más espacio de almacenamiento, podemos usar tarjeta SD para expandir la capacidad, o grabar el sistema en tarjeta SD, puedes consultar nuestra solución recomendada [Flash System on SD card](/J101_Enable_SD_Card)
+Si se necesita más espacio de almacenamiento, podemos usar tarjeta SD para expandir la capacidad, o grabar el sistema en tarjeta SD, puedes consultar nuestra solución recomendada [Flash System on SD card](/es/J101_Enable_SD_Card)
 :::
 
 ## Recursos

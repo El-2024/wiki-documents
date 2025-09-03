@@ -153,7 +153,7 @@ Si el programa no se puede grabar, por favor intenta usar el botón BOOT y el bo
 ## ✨ Proyecto de Colaborador
 
 - Este proyecto está respaldado por el [Proyecto de Colaborador](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) de Seeed Studio.
-- Gracias a [los esfuerzos de Hendra y shariltumin](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=c6&pane=issue&itemId=59874459&issue=Seeed-Studio%7Cwiki-documents%7C1117) y tu trabajo será [exhibido](https://wiki.seeedstudio.com/es/contributors/).
+- Gracias a [los esfuerzos de Hendra y shariltumin](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=c6&pane=issue&itemId=59874459&issue=Seeed-Studio%7Cwiki-documents%7C1117) y tu trabajo será [exhibido](https://wiki.seeedstudio.com/contributors/).
 
 ## Soporte Técnico y Discusión de Productos
 

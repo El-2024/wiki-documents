@@ -118,7 +118,7 @@ Además de la antena, puede necesitar los siguientes accesorios para usar con Lo
 
 ### Comenzando con Comandos AT
 
-El módulo se controla mediante comandos AT a través del puerto serie, aquí usamos Arduino como herramienta USB a serie. Sube el siguiente código a Arduino y abre el monitor serie. Si usas otras herramientas USB a serie, puedes usar [AT Command Tester](/AT_Command_Tester_Application) o [SSCOM32](https://files.seeedstudio.com/wiki/LoNet_808-Mini_GSM_GPRS_Plus_GPS_Breakout/res/Sscom32E.zip) para probar comandos AT.
+El módulo se controla mediante comandos AT a través del puerto serie, aquí usamos Arduino como herramienta USB a serie. Sube el siguiente código a Arduino y abre el monitor serie. Si usas otras herramientas USB a serie, puedes usar [AT Command Tester](/es/AT_Command_Tester_Application) o [SSCOM32](https://files.seeedstudio.com/wiki/LoNet_808-Mini_GSM_GPRS_Plus_GPS_Breakout/res/Sscom32E.zip) para probar comandos AT.
 
 ```arduino
 // this sketch is used for testing LoNet with Arduino

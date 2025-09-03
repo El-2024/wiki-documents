@@ -50,7 +50,7 @@ Grove - Kit de Cámara Serial incluye una placa de control y dos lentes intercam
 ## Demostración
 
 ---
-Esta demostración te mostrará cómo usar Grove - Kit de Cámara Serial. Necesitamos un [Seeeduino](https://www.seeedstudio.com/seeeduino-v30-atmega-328p-p-669.html?cPath=6_7), un [Shield de Tarjeta SD](https://www.seeedstudio.com/sd-card-shield-v40-p-1381.html?cPath=105) y un [Grove - Button](/Grove-Button). Cuando se presiona el botón, tomamos una foto y la guardamos en la Tarjeta SD.
+Esta demostración te mostrará cómo usar Grove - Kit de Cámara Serial. Necesitamos un [Seeeduino](https://www.seeedstudio.com/seeeduino-v30-atmega-328p-p-669.html?cPath=6_7), un [Shield de Tarjeta SD](https://www.seeedstudio.com/sd-card-shield-v40-p-1381.html?cPath=105) y un [Grove - Button](/es/Grove-Button). Cuando se presiona el botón, tomamos una foto y la guardamos en la Tarjeta SD.
 
 Sigue los pasos a continuación paso a paso, puedes ejecutar fácilmente tu Grove - Kit de Cámara Serial. Entonces vamos.
 

@@ -29,7 +29,7 @@ El Sensor UV Xadow es adecuado para medir la radiación UV en la luz solar. Pued
 ---
 El Sensor UV Xadow puede emitir un valor de voltaje correspondiente al índice UV. Debido a que existe una relación lineal entre el voltaje de salida y el índice UV, también puedes ver directamente el índice UV con una fórmula. A continuación mostramos cómo usar el sensor UV para conocer el índice UV y mostrarlo en la pantalla OLED.
 
-<!-- Módulo Xadow requerido: [Xadow - Main Board](/Xadow_Main_Board/), [Xadow - OLED 128*64](/Xado_OLED_128multiply64/), **Xadow - UV Sensor** -->
+<!-- Módulo Xadow requerido: [Xadow - Main Board](/es/Xadow_Main_Board/), [Xadow - OLED 128*64](/es/Xado_OLED_128multiply64/), **Xadow - UV Sensor** -->
 
 **Instalación de Hardware**
 
@@ -39,7 +39,7 @@ El Sensor UV Xadow puede emitir un valor de voltaje correspondiente al índice U
 :::
 **Descargar Código**
 
-<!-- *   Primero, debes asegurarte de que esté [la librería:OLED_Display12864](https://files.seeedstudio.com/wiki/Xadow_UV_Sensor/res/OLED_Display12864.zip) en tu Librería de Arduino. Si no, por favor haz clic [aquí](https://github.com/Seeed-Studio/Grove_OLED_Display_128X64) para descargar y añadirla a la Librería de Arduino. Consulta [Cómo instalar la Librería de Arduino](/How_to_install_Arduino_Library/) en la página wiki, te familiarizarás con la operación. -->
+<!-- *   Primero, debes asegurarte de que esté [la librería:OLED_Display12864](https://files.seeedstudio.com/wiki/Xadow_UV_Sensor/res/OLED_Display12864.zip) en tu Librería de Arduino. Si no, por favor haz clic [aquí](https://github.com/Seeed-Studio/Grove_OLED_Display_128X64) para descargar y añadirla a la Librería de Arduino. Consulta [Cómo instalar la Librería de Arduino](/es/How_to_install_Arduino_Library/) en la página wiki, te familiarizarás con la operación. -->
 
 *   Ahora puedes subirlo a la Placa Principal Xadow copiando y pegándolo en el IDE de Arduino.
 

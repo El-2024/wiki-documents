@@ -15,7 +15,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/grove-vision-ai-v2/0.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/grove_vision_ai_v2" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="/es/grove_vision_ai_v2" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> Obtener Uno Ahora 🖱️</font></span></strong>
     </a>
 </div>
@@ -325,7 +325,7 @@ En este tutorial, usaremos el XIAO ESP32S3 como ejemplo para introducir el uso d
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="/grove_vision_ai_v2" target="_blank" rel="noopener noreferrer">
+				<a class="get_one_now_item" href="/es/grove_vision_ai_v2" target="_blank" rel="noopener noreferrer">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
 				</a>
 			</div></td>

@@ -13,14 +13,14 @@ last_update:
 ![](https://www.seeedstudio.com/blog/wp-content/uploads/2023/03/sensor@2x.png)
 
 <div class="embedded_world_container">
-    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/LoRa-E5_STM32WLE5JC_Module">
+    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/es/LoRa-E5_STM32WLE5JC_Module">
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>Módulo Inalámbrico Wio-E5</font></div>
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'FFFFFF'} size={"3"}>La primera combinación mundial de RF LoRa y chip MCU en un solo chip diminuto </font></div>
     </a>
 </div>
 
 <div class="embedded_world_container">
-    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/LoRa_E5_Dev_Board">
+    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/es/LoRa_E5_Dev_Board">
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>Kit de Desarrollo Wio-E5</font></div>
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'FFFFFF'} size={"3"}>Kit de desarrollo Wio-E5 que proporciona todos los GPIOs del Wio-E5 e interfaces Grove </font></div>
     </a>

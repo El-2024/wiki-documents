@@ -160,14 +160,14 @@ Después, abre el monitor serie y lee los valores:
 
 <div class="admonition note">
 <p class="admonition-title">note</p>
-La dirección del Grove - I2C ADC es cambiable, lo que significa que puedes redefinir su dirección. Eso requiere alguna modificación de hardware en la placa. Si estás pensando en usar más de un ADC I2C al mismo tiempo, sigue las instrucciones en la parte de Referencia a continuación para hacerlo. El número máximo de ADCs I2C que se pueden usar simultáneamente es 9, pero solo hay 4 conectores I2C en el Grove - Base Shield V1.2, así que si quieres usar más de 4 ADC I2C, toma un <a href="/Grove-I2C_Hub">Grove - I2C Hub</a> para crear más conectores I2C.
+La dirección del Grove - I2C ADC es cambiable, lo que significa que puedes redefinir su dirección. Eso requiere alguna modificación de hardware en la placa. Si estás pensando en usar más de un ADC I2C al mismo tiempo, sigue las instrucciones en la parte de Referencia a continuación para hacerlo. El número máximo de ADCs I2C que se pueden usar simultáneamente es 9, pero solo hay 4 conectores I2C en el Grove - Base Shield V1.2, así que si quieres usar más de 4 ADC I2C, toma un <a href="/es/Grove-I2C_Hub">Grove - I2C Hub</a> para crear más conectores I2C.
 </div>
 ### Con Beaglebone Green
 
 Para comenzar a editar programas que residen en BBG, puedes usar el IDE Cloud9.
 Como un ejercicio simple para familiarizarse con el IDE Cloud9, crear una aplicación simple para hacer parpadear uno de los 4 LEDs programables por el usuario en el BeagleBone es un buen comienzo.
 
-Si esta es tu primera vez usando el IDE Cloud9, por favor sigue este [**enlace**](/BeagleBone_Green).
+Si esta es tu primera vez usando el IDE Cloud9, por favor sigue este [**enlace**](/es/BeagleBone_Green).
 
 **Paso1:** Configura el conector Grove - UART como un conector Grove - GPIO, solo sigue este [**enlace**](https://www.seeedstudio.com/recipe/362-how-to-use-the-grove-uart-port-as-a-gpio-on-bbg.html).
 

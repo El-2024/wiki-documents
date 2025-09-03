@@ -26,7 +26,7 @@ Este tutorial proporciona una guía paso a paso sobre cómo usar la Cámara de P
 
 ## Prerrequisitos
 
-- __[reComputer serie J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__:  Realizamos tutoriales basados en el [sistema JetPack 5.x](/reComputer_J4012_Flash_Jetpack) y el [entorno ROS Noetic](/installing_ros1).
+- __[reComputer serie J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__:  Realizamos tutoriales basados en el [sistema JetPack 5.x](/es/reComputer_J4012_Flash_Jetpack) y el [entorno ROS Noetic](/es/installing_ros1).
 
 - Instalar dependencias (ten cuidado con tu distribución de ROS):
   
@@ -41,7 +41,7 @@ Este tutorial proporciona una guía paso a paso sobre cómo usar la Cámara de P
 
 ### Conectando las Cámaras
 
-Conecta la Cámara de Profundidad Orbbec al Jetson vía USB Type-C, y asegúrate de que [ROS ya esté instalado](/installing_ros1) en tu sistema.
+Conecta la Cámara de Profundidad Orbbec al Jetson vía USB Type-C, y asegúrate de que [ROS ya esté instalado](/es/installing_ros1) en tu sistema.
 
 <div align="center">
       <img width={700}

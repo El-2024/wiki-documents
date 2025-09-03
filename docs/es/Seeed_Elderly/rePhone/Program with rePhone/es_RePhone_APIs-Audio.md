@@ -484,9 +484,9 @@ unsigned int task_uart_key()
 Recursos
 --------
 
-<!-- -   [Wiki principal para RePhone](/RePhone)
--   [Xadow - Audio](/Xadow_Audio)
--   [Página principal de APIs de RePhone](/RePhone) -->
+<!-- -   [Wiki principal para RePhone](/es/RePhone)
+-   [Xadow - Audio](/es/Xadow_Audio)
+-   [Página principal de APIs de RePhone](/es/RePhone) -->
 
 
 <!-- Este archivo Markdown fue creado desde https://www.seeedstudio.com/wiki/RePhone_APIs_-_Audio -->

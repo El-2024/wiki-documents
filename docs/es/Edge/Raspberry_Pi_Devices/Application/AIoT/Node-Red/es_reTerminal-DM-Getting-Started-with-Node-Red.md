@@ -41,7 +41,7 @@ Aquí está la guía de primeros pasos sobre cómo configurar, así como familia
 
 ## Instalar y Configurar Node-RED en Raspbian OS
 
-Una vez que hayas completado la configuración de un nuevo Sistema Operativo con reTerminal DM siguiendo [Instalar OS en reTerminal DM](/reterminal-dm-flash-OS/), por favor sigue los pasos a continuación para configurar Node-RED.
+Una vez que hayas completado la configuración de un nuevo Sistema Operativo con reTerminal DM siguiendo [Instalar OS en reTerminal DM](/es/reterminal-dm-flash-OS/), por favor sigue los pasos a continuación para configurar Node-RED.
 
 ### Instalar Node-RED
 
@@ -217,9 +217,9 @@ PASO 6: deberías ver los nodos Modbus en la barra lateral
 
 # Nodos Compatibles con reTerminal DM
 
-- [Puerto RS485 de reTerminal DM con Node-RED](/reTerminal-DM-Node-Red-RS485)
-- [MQTT de reTerminal DM con Node-RED](/reTerminal-DM-Node-Red-mqtt)
-- [CAN BUS de reTerminal DM con Node-RED](/reTerminal-DM-Node-Red-canbus)
+- [Puerto RS485 de reTerminal DM con Node-RED](/es/reTerminal-DM-Node-Red-RS485)
+- [MQTT de reTerminal DM con Node-RED](/es/reTerminal-DM-Node-Red-mqtt)
+- [CAN BUS de reTerminal DM con Node-RED](/es/reTerminal-DM-Node-Red-canbus)
   
 ## Soporte Técnico y Discusión de Productos
 

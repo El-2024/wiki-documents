@@ -125,7 +125,7 @@ Recursos
 - [Biblioteca del Sensor Táctil I2C](https://github.com/Seeed-Studio/Grove_I2C_Touch_Sensor)
 - [Archivos eagle del Sensor Táctil I2C(v1.1).zip](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/I2C_Touch_Sensor_eagle_files-v1.1-.zip)
 - [PDF del Sensor Táctil I2C](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/Grove-I2C_Color_sensor_v1.2.pdf)
-- [¿Cómo detectar el toque del dedo?](/How_to_detect_finger_touch)
+- [¿Cómo detectar el toque del dedo?](/es/How_to_detect_finger_touch)
 - [Hoja de Datos del Sensor Táctil I2C](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/Freescale_Semiconductor;MPR121QR2.pdf)
 - [Archivo CDC de Codecraft](https://files.seeedstudio.com/wiki/Grove-I2C_Touch_Sensor/res/Grove_I2C_Touch_Sensor_CDC_File.zip)
 

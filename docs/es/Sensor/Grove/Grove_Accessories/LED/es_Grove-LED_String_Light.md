@@ -45,7 +45,7 @@ Sigue estos pasos para construir un circuito de muestra usando este módulo:
 
 1.  Primero conecta las tiras de luces LED al módulo **Grove - Tira de Luces LED** usando la interfaz de dos cables JST2.0.
 
- 2.  Conecta el módulo de tiras de luces LED al lado de salida de tu circuito (a la derecha del módulo de alimentación). En el lado de entrada del circuito, puedes usar una gama de módulos de entrada basados en sensores ([Grove - Sensor de Luz](/Grove-Light_Sensor/), [Grove - Sensor de Sonido](/Grove-Sound_Sensor/), [Grove - Botón](/Grove-Button/) o [Grove - Potenciómetro Deslizante](/Grove-Slide_Potentiometer/)).
+ 2.  Conecta el módulo de tiras de luces LED al lado de salida de tu circuito (a la derecha del módulo de alimentación). En el lado de entrada del circuito, puedes usar una gama de módulos de entrada basados en sensores ([Grove - Sensor de Luz](/es/Grove-Light_Sensor/), [Grove - Sensor de Sonido](/es/Grove-Sound_Sensor/), [Grove - Botón](/es/Grove-Button/) o [Grove - Potenciómetro Deslizante](/es/Grove-Slide_Potentiometer/)).
 
 3.  Enciende el circuito.
 
@@ -56,7 +56,7 @@ Sigue estos pasos para construir un circuito de muestra usando este módulo:
 
 Si usas con un sensor de sonido, deberías ver los LEDs encenderse al detectar sonido. De nuevo, si quieres invertir la función, o en otras palabras, si quieres que las luces estén ENCENDIDAS en todo momento excepto cuando hay sonido, añade un módulo Grove - NOT entre el sensor de sonido y el módulo de alimentación.
 
-Si usas con un interruptor momentáneo como el del módulo [Grove - Botón](/Grove-Button/), simplemente presiona el botón para encender las tiras de luces.
+Si usas con un interruptor momentáneo como el del módulo [Grove - Botón](/es/Grove-Button/), simplemente presiona el botón para encender las tiras de luces.
 
 *   Si usas con un potenciómetro deslizante, mueve el deslizador desde la posición GND a VCC y observa cómo aumenta el brillo de las luces a medida que aumenta el voltaje suministrado.
 <!-- </dd></dl>

@@ -26,7 +26,7 @@ Las series EdgeBox-RPi-200 son controladores de computación de borde industrial
 </div>
 
 :::tipAntes de Proceder:
-Dado que hemos actualizado la EEPROM del Raspberry Pi Compute Module 4 desde el lote lanzado después del 30/03/2023, el orden de arranque ha cambiado a `NVME > USB-MSD > BCM-USB-MSD > SD CARD/eMMC > NETWORK > RESTART`, para más información por favor visite la página [Actualizar EEPROM para Compute Module 4](/Raspberry_pi_CM4_update_eeprom/).
+Dado que hemos actualizado la EEPROM del Raspberry Pi Compute Module 4 desde el lote lanzado después del 30/03/2023, el orden de arranque ha cambiado a `NVME > USB-MSD > BCM-USB-MSD > SD CARD/eMMC > NETWORK > RESTART`, para más información por favor visite la página [Actualizar EEPROM para Compute Module 4](/es/Raspberry_pi_CM4_update_eeprom/).
 
 **Si ha comprado el Edgebox-RPI-200 antes del 30/03/2023, y desea seguir la guía para actualizar EEPROM o para Flashear el Sistema Operativo en Edgebox-RPI-200, necesitará obtener una placa de desarrollo mínima que contenga la función para seleccionar el modo de arranque para Raspberry Pi CM4, donde la [Placa Portadora Dual Gigabit Ethernet NICs](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html) es perfecta para esto.**
 
@@ -135,7 +135,7 @@ Asegúrate de que la Unidad NVMe esté formateada y no contenga ninguna partici�
 
 por favor conecta la alimentación y espera a que el dispositivo arranque.
 
-Luego por favor usa SSH para acceder al EdgeBox-RPI-200, Aquí está [la guía](/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh).
+Luego por favor usa SSH para acceder al EdgeBox-RPI-200, Aquí está [la guía](/es/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh).
 
 Una vez que obtengas el acceso SSH, puedes seguir los pasos a continuación:
 

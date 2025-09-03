@@ -19,7 +19,7 @@ Una placa de desarrollo PoE compacta que incluye el XIAO ESP32S3 Plus, con un m�
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="/es/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
 </a></div>
 
@@ -185,7 +185,7 @@ Para completar los siguientes ejemplos, necesitarás el hardware listado a conti
   </tr>
   <tr>
    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="/es/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> Obtener Uno Ahora 🖱️</font></span></strong>
     </a>
    </div></td>

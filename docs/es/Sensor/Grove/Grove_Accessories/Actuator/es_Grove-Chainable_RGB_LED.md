@@ -54,7 +54,7 @@ Cuando obtienes Grove - Chainble RGB LED, puedes pensar cómo puedo encenderlo. 
 
 Para completar esta demostración, puedes usar uno o más Grove - Chainable RGB LED. Ten en cuenta que la interfaz IN de un Grove - Chainable RGB LED debe conectarse a D7/D8 del Grove - Base Shield y su interfaz OUT conectarse a la interfaz IN de otro Grove - Chainable RGB LED, encadenando más LED de esta manera.
 
-- Descarga [Chainable LED Library](https://github.com/pjpmarques/ChainableLED) e instálala en la Biblioteca de Arduino. Está el curso sobre [cómo instalar la Biblioteca de Arduino](/How_to_install_Arduino_Library) en la página wiki.
+- Descarga [Chainable LED Library](https://github.com/pjpmarques/ChainableLED) e instálala en la Biblioteca de Arduino. Está el curso sobre [cómo instalar la Biblioteca de Arduino](/es/How_to_install_Arduino_Library) en la página wiki.
 - Abre el ejemplo CycleThroughColors por la ruta:File->Examples->ChainableLED_master y súbelo a Seeeduino.
 
 ```
@@ -207,7 +207,7 @@ Sube el programa a tu Arduino/Seeeduino.
 :::
 1.Deberías tener una raspberry pi y un grovepi o grovepi+.
 
-2.Deberías haber completado la configuración del entorno de desarrollo, de lo contrario sigue [aquí](/GrovePi_Plus).
+2.Deberías haber completado la configuración del entorno de desarrollo, de lo contrario sigue [aquí](/es/GrovePi_Plus).
 
 3.Conexión
 
@@ -633,7 +633,7 @@ Para comenzar a editar programas que residen en BBG, puedes usar el IDE Cloud9.
 
 Como un ejercicio simple para familiarizarse con el IDE Cloud9, crear una aplicación simple para hacer parpadear uno de los 4 LEDs programables por el usuario en el BeagleBone es un buen comienzo.
 
-Si esta es tu primera vez usando el IDE Cloud9, por favor sigue este [**enlace**](/BeagleBone_Green).
+Si esta es tu primera vez usando el IDE Cloud9, por favor sigue este [**enlace**](/es/BeagleBone_Green).
 
 **Paso1:** Configura el socket Grove - UART como un Socket Grove - GPIO, simplemente sigue este [**enlace**](https://www.seeedstudio.com/recipe/362-how-to-use-the-grove-uart-port-as-a-gpio-on-bbg.html).
 

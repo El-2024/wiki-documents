@@ -48,7 +48,7 @@ LoRaWAN se describe como un protocolo de red de Baja Potencia y Área Amplia (LP
 
 ## Sistema de Percepción Avanzada
 
-El "Sistema de Percepción Avanzada" de Seeed Studio es una [solución IoT](/SenseCAP_introduction) que proporciona una gama integral de herramientas de detección, redes, computación de borde y nube diseñadas para mejorar la conciencia ambiental en diversas industrias. Este sistema, equipado con una variedad diversa de módulos y dispositivos[^2], actúa como los "ojos y oídos" digitales, facilitando una comprensión transformadora del mundo real.
+El "Sistema de Percepción Avanzada" de Seeed Studio es una [solución IoT](/es/SenseCAP_introduction) que proporciona una gama integral de herramientas de detección, redes, computación de borde y nube diseñadas para mejorar la conciencia ambiental en diversas industrias. Este sistema, equipado con una variedad diversa de módulos y dispositivos[^2], actúa como los "ojos y oídos" digitales, facilitando una comprensión transformadora del mundo real.
 
 <div style={{ textAlign: 'center' }}>
 
@@ -104,7 +104,7 @@ La [Guía de Programación ESP-IDF](https://docs.espressif.com/projects/esp-idf/
 
 ### 1.2 Flashear el Firmware
 
-Para flashear el firmware en el SenseCAP Indicator, descárgalo primero y luego usa esptool (o `esptool.py` si tienes un entorno ESP-IDF) para flashearlo (para una guía completa, consulta las [instrucciones](/SenseCAP_Indicator_Application_LoRaWAN)).
+Para flashear el firmware en el SenseCAP Indicator, descárgalo primero y luego usa esptool (o `esptool.py` si tienes un entorno ESP-IDF) para flashearlo (para una guía completa, consulta las [instrucciones](/es/SenseCAP_Indicator_Application_LoRaWAN)).
 
 **Flasheando firmware en Windows usando esptool:**
 

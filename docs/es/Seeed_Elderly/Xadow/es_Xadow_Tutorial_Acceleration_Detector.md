@@ -14,13 +14,13 @@ Hemos creado un detector de aceleración que detecta la aceleración y recuerda 
 Esta demostración requiere:
 
 <!-- 
-*   [Xadow Main Board](/Xadow_Main_Board/)
+*   [Xadow Main Board](/es/Xadow_Main_Board/)
 
-*   [Xadow OLED](/Xado_OLED_128multiply64)
+*   [Xadow OLED](/es/Xado_OLED_128multiply64)
 
 *   [Xadow Vibrator Motor](https://wiki.seeedstudio.com/es/Xadow_Vibrator_Motor/)
 
-*   [Xadow Accelerometer](/Xadow_3_Aixs_Accelerometer/) -->
+*   [Xadow Accelerometer](/es/Xadow_3_Aixs_Accelerometer/) -->
 
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Tutorial_Acceleration_Detector/img/Untitled2.jpg)
@@ -29,7 +29,7 @@ Para completar la demostración, necesitas:
 
 *   Conectar Xadow Main Board, Xadow OLED, Xadow Vibrator y Xadow Accelerometer en la misma dirección con cables FFC.
 
-<!-- *   Connect Xadow Main Board to PC with a Micro USB cable. Before uploading code, you need to install Xadow driver. Please click [here](/Xadow_Main_Board#Get_Start_with_Xadow_Main_Board) to learn the specific operation. -->
+<!-- *   Connect Xadow Main Board to PC with a Micro USB cable. Before uploading code, you need to install Xadow driver. Please click [here](/es/Xadow_Main_Board#Get_Start_with_Xadow_Main_Board) to learn the specific operation. -->
 
 *   Cuando veas "Ahora, puedes programar y usar el Xadow como usas otras placas Arduino", significa que has terminado los preparativos.
 

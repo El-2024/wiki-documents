@@ -34,11 +34,11 @@ Lista de partes
 
 | Nombre de las partes                                                                                     | Cantidad |
 |----------------------------------------------------------------------------------------------------------|----------|
-| [Grove - Interruptor de Distancia IR](/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F)                                     | 1PC     |
-| [Grove - Botón](/Grove-Button/)                                                                          | 1PC     |
+| [Grove - Interruptor de Distancia IR](/es/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F)                                     | 1PC     |
+| [Grove - Botón](/es/Grove-Button/)                                                                          | 1PC     |
 | [Grove - Interruptor Magnético](https://www.seeedstudio.com/Grove-Magnetic-Switch.html?queryID=d18ad991c05de7f74bbabc475ad4f905&objectID=1827&indexName=bazaar_retailer_products)                                                        | 1PC     |
-| [Grove - Acelerómetro Digital de 3 Ejes(±1.5g)](/Grove-3-Axis_Digital_Accelerometer-1.5g/)                  | 1PC     |
-| [Wio Link](/Wio_Link/)                                                                                    | 1PC     |
+| [Grove - Acelerómetro Digital de 3 Ejes(±1.5g)](/es/Grove-3-Axis_Digital_Accelerometer-1.5g/)                  | 1PC     |
+| [Wio Link](/es/Wio_Link/)                                                                                    | 1PC     |
 | [Cable Micro USB - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html?queryID=a8b80828fdcd52ad1ae49daa5ed97191&objectID=1405&indexName=bazaar_retailer_products) | 1PC     |
 
 Una demostración simple
@@ -49,12 +49,12 @@ Esta demostración puede usarse como un indicador de resultado de compilación.
 ### Guía Preliminar
 
 -   [Travis CI](https://travis-ci.org/)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/es/Wio_Link/)
 
 ### Material requerido
 
 -   [APP Wio Link](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/es/Wio_Link/)
 -   [Grove Relé](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   Una Cuenta de Travis CI
 -   Una Cuenta de GitHub

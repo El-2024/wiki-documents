@@ -66,12 +66,12 @@ La computadora host debe poder tener conexión a internet con el reTerminal DM p
 
 ##### Instalar Nodo Socketcan
 
-En este tutorial de Wiki vamos a usar el nodo `node-red-contrib-socketcan`, así que por favor instala el `node-red-contrib-socketcan` siguiendo la guía [instalar nodos](/reTerminal-DM-Getting-Started-with-Node-Red#install-nodes).
+En este tutorial de Wiki vamos a usar el nodo `node-red-contrib-socketcan`, así que por favor instala el `node-red-contrib-socketcan` siguiendo la guía [instalar nodos](/es/reTerminal-DM-Getting-Started-with-Node-Red#install-nodes).
 
 ##### Configurar CAN BUS en reTerminal DM
 
 :::note
-Se asume que tienes acceso directo a la aplicación `Terminal` en el reTerminal DM o acceso al reTerminal DM vía SSH. Si no es así, por favor sigue el primer paso [aquí](/reTerminal-DM-Getting-Started-with-Node-Red#install-node-red) para familiarizarte con cómo hacerlo.
+Se asume que tienes acceso directo a la aplicación `Terminal` en el reTerminal DM o acceso al reTerminal DM vía SSH. Si no es así, por favor sigue el primer paso [aquí](/es/reTerminal-DM-Getting-Started-with-Node-Red#install-node-red) para familiarizarte con cómo hacerlo.
 :::
 
 Por favor, ingresa los siguientes comandos uno por uno para habilitar un dispositivo CAN virtual llamado can0 con el puerto CAN BUS en reTerminal DM.
@@ -369,8 +369,8 @@ Para que la Computadora Host Reciba datos del Bus CAN y el reTerminal DM Envíe:
 
 # Explora más nodos en reTerminal DM con node-RED
 
-- [Puerto RS485 de reTerminal DM con Node-RED](/reTerminal-DM-Node-Red-RS485)
-- [MQTT de reTerminal DM con Node-RED](/reTerminal-DM-Node-Red-mqtt)
+- [Puerto RS485 de reTerminal DM con Node-RED](/es/reTerminal-DM-Node-Red-RS485)
+- [MQTT de reTerminal DM con Node-RED](/es/reTerminal-DM-Node-Red-mqtt)
 
 ## Soporte Técnico y Discusión de Productos
 

@@ -489,7 +489,7 @@ Para usar el dispositivo, necesitas al menos un RFBee/Xbee (cuando uses solo un 
 
 Ahora usando un Atom Node trabajando en modo IFTTT, sigue los pasos a continuación:
 
-<!-- *   Conecta un Grove - Temperature al puerto ADC y Grove - Buzzer al puerto PWM usando [cables universales de 4 pines Grove](/Grove_System/#grove-cables). -->
+<!-- *   Conecta un Grove - Temperature al puerto ADC y Grove - Buzzer al puerto PWM usando [cables universales de 4 pines Grove](/es/Grove_System/#grove-cables). -->
 
 - Conecta el RFBee en el Socket Bee.
 - Presiona el botón en un lado del Atom Node para encenderlo. El LED en el otro lado se encenderá. Luego presiona el botón nuevamente para hacer que el Atom Node entre en modo de configuración. Mientras tanto, el indicador de usuario está rojo.
@@ -519,7 +519,7 @@ Ahora configurémoslo y establecemos el nombre del dispositivo como "temp".
 - Colócalo en la pantalla del dispositivo Android. Nota que el sensor de luz está mirando hacia la pantalla. Es mejor que el brillo de la pantalla esté configurado alrededor del 35%.
 ![](https://files.seeedstudio.com/wiki/Atom_Node/img/Node_Interface3.jpg)
 
-<!-- *   Haz clic en "Submit". Comenzará la configuración. <font color="red">Después de una configuración exitosa, el indicador de usuario se enciende en verde y parpadea.</font>Si la configuración falla, haz clic en Again. Si sigue fallando, puedes consultar [FAQ](/Atom_Node). -->
+<!-- *   Haz clic en "Submit". Comenzará la configuración. <font color="red">Después de una configuración exitosa, el indicador de usuario se enciende en verde y parpadea.</font>Si la configuración falla, haz clic en Again. Si sigue fallando, puedes consultar [FAQ](/es/Atom_Node). -->
 
 ![](https://files.seeedstudio.com/wiki/Atom_Node/img/Node_Interface4.jpg)
 

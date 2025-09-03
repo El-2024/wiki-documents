@@ -158,9 +158,9 @@ Antes del uso
 
 Te sugerimos leer esos conocimientos antes de usar el sensor de gas, te ayudará a aprender más sobre Arduino y nuestros productos, y también te permitirá usar hardware de código abierto más fácilmente.
 
-<!-- - [Getting Started with Arduino](/Getting_Started_with_Seeeduino)
-- [What is Grove system](/Grove_System)
-- [Why i need a Base shield?](/Base_Shield_V2) -->
+<!-- - [Getting Started with Arduino](/es/Getting_Started_with_Seeeduino)
+- [What is Grove system](/es/Grove_System)
+- [Why i need a Base shield?](/es/Base_Shield_V2) -->
 
 - Comenzando con Arduino
 - Qué es el sistema Grove
@@ -247,7 +247,7 @@ El relé está en estado "reset" cuando se libera del stock.
 
 1.Deberías tener una raspberry pi y un grovepi o grovepi+.
 
-2.Deberías haber completado la configuración del entorno de desarrollo, de lo contrario sigue [aquí](/GrovePi_Plus).
+2.Deberías haber completado la configuración del entorno de desarrollo, de lo contrario sigue [aquí](/es/GrovePi_Plus).
 
 3.Conexión
 

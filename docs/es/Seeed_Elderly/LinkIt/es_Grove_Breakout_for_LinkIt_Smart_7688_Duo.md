@@ -55,7 +55,7 @@ Grove Breakout para LinkIt Smart 7688 Duo es una placa de expansión de caracter
 :::
 **Interfaz Grove**
 
-<!-- Conecta módulos funcionales con interfaz [Grove](/Grove_System/) ricos. Con este tipo de puertos, nunca necesitas cables puente o trabajo de soldadura, y puedes hacer aplicaciones más poderosas con esos módulos funcionales. -->
+<!-- Conecta módulos funcionales con interfaz [Grove](/es/Grove_System/) ricos. Con este tipo de puertos, nunca necesitas cables puente o trabajo de soldadura, y puedes hacer aplicaciones más poderosas con esos módulos funcionales. -->
 
 ## Primeros pasos
 
@@ -69,7 +69,7 @@ Grove Breakout para LinkIt Smart 7688 Duo es una placa de expansión de caracter
 
 **Hacer algo de sonido con un Grove Buzzer**
 
-<!-- 1.Consulta [wiki de LinkIt Smart 7688 Duo](/LinkIt_Smart_7688_Duo/) para conectar tu LinkIt Smart 7688 Duo a internet. -->
+<!-- 1.Consulta [wiki de LinkIt Smart 7688 Duo](/es/LinkIt_Smart_7688_Duo/) para conectar tu LinkIt Smart 7688 Duo a internet. -->
 
 :::note
     1. Puedes encontrar Pin 8, Pin 9 y Pin GND cerca del puerto a ser conectado LinkIt Smart 7688.
@@ -84,9 +84,9 @@ Grove Breakout para LinkIt Smart 7688 Duo es una placa de expansión de caracter
 :::note
     Conecta Grove - Buzzer en el puerto D4.
 :::
-<!-- 4.Consulta [wiki de LinkIt Smart 7688 Duo](/LinkIt_Smart_7688_Duo/)para construir el entorno Arduino para la plataforma LinkIt Smart 7688 Duo en la computadora host. -->
+<!-- 4.Consulta [wiki de LinkIt Smart 7688 Duo](/es/LinkIt_Smart_7688_Duo/)para construir el entorno Arduino para la plataforma LinkIt Smart 7688 Duo en la computadora host. -->
 
-<!-- 5.Descarga [firmata](https://files.seeedstudio.com/wiki/Grove-Breakout_for_LinkIt_Smart_7688_Duo/res/Firmata_to_build_Arduino_IDE_for.zip). Consulta [wiki de LinkIt Smart 7688 Duo](/LinkIt_Smart_7688_Duo/) para instalar Arduino IDE para la plataforma LinkIt Smart 7688, y flashea el archivo firmata a la placa de desarrollo. -->
+<!-- 5.Descarga [firmata](https://files.seeedstudio.com/wiki/Grove-Breakout_for_LinkIt_Smart_7688_Duo/res/Firmata_to_build_Arduino_IDE_for.zip). Consulta [wiki de LinkIt Smart 7688 Duo](/es/LinkIt_Smart_7688_Duo/) para instalar Arduino IDE para la plataforma LinkIt Smart 7688, y flashea el archivo firmata a la placa de desarrollo. -->
 
 :::note
     Los siguientes pasos se realizan en el SO embebido (OpenWRT).

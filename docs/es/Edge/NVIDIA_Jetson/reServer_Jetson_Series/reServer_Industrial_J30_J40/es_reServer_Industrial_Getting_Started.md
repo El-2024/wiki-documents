@@ -667,7 +667,7 @@ sudo apt install nvidia-jetpack -y
 ## Uso del hardware e interfaces
 
 :::info
-  Para aprender más sobre cómo usar todo el hardware y las interfaces en la placa reServer Industrial, debe seguir este [**wiki**](/reserver_industrial_hardware_interface_usage):
+  Para aprender más sobre cómo usar todo el hardware y las interfaces en la placa reServer Industrial, debe seguir este [**wiki**](/es/reserver_industrial_hardware_interface_usage):
 :::
 
 ## Recursos

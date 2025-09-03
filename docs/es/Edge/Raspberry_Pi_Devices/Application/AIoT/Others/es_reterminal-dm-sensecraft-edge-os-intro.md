@@ -106,9 +106,9 @@ Puedes descargar el [Default Flow](https://files.seeedstudio.com/wiki/reTerminal
 
 Para obtener más información sobre cómo usar Node-RED con reTerminal DM, visite las páginas Wiki de Node-RED:
 
-* [reTerminal DM RS485 Port con Node-RED](/reTerminal-DM-Node-Red-RS485)
-* [reTerminal DM MQTT con Node-RED](/reTerminal-DM-Node-Red-mqtt)
-* [reTerminal DM CAN BUS con Node-RED](/reTerminal-DM-Node-Red-canbus)
+* [reTerminal DM RS485 Port con Node-RED](/es/reTerminal-DM-Node-Red-RS485)
+* [reTerminal DM MQTT con Node-RED](/es/reTerminal-DM-Node-Red-mqtt)
+* [reTerminal DM CAN BUS con Node-RED](/es/reTerminal-DM-Node-Red-canbus)
 
 ### Pestaña de Configuración del Sistema
 

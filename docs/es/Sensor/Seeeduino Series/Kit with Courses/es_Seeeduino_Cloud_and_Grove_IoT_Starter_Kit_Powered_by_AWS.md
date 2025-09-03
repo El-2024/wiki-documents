@@ -11,9 +11,9 @@ last_update:
 ---
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Cloud_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/Aws_seeeduino_wiki_cover.JPG)
 
-*Artículos principales: Comienza aquí <a href="/Grove_IoT_Starter_Kits_Powered_by_AWS" ><span><font size={"3"}> Kits de Inicio IoT Grove Powered by AWS </font></span></a> , <a href="/Seeeduino_Cloud" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a>*
+*Artículos principales: Comienza aquí <a href="/es/Grove_IoT_Starter_Kits_Powered_by_AWS" ><span><font size={"3"}> Kits de Inicio IoT Grove Powered by AWS </font></span></a> , <a href="/es/Seeeduino_Cloud" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a>*
 
-**<a href="/Seeeduino_Cloud" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a>** es una placa microcontroladora basada en el módulo WiFi IoT Dragino [HE](http://www.dragino.com/products/linux-module/item/87-he.html) y ATmega32u4. **HE** es un módulo WiFi de 150M, 2.4G de alto rendimiento y bajo costo que incluye un sistema OpenWrt de código abierto. Seeeduino Cloud también es una placa compatible con [Arduino Yun](https://www.arduino.cc/en/Main/ArduinoBoardYun). Este kit incluye los sensores y actuadores más utilizados para convertir tus ideas en aplicaciones tangibles con computación en la nube de AWS.
+**<a href="/es/Seeeduino_Cloud" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a>** es una placa microcontroladora basada en el módulo WiFi IoT Dragino [HE](http://www.dragino.com/products/linux-module/item/87-he.html) y ATmega32u4. **HE** es un módulo WiFi de 150M, 2.4G de alto rendimiento y bajo costo que incluye un sistema OpenWrt de código abierto. Seeeduino Cloud también es una placa compatible con [Arduino Yun](https://www.arduino.cc/en/Main/ArduinoBoardYun). Este kit incluye los sensores y actuadores más utilizados para convertir tus ideas en aplicaciones tangibles con computación en la nube de AWS.
 
 [![enter image description here](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://wwww.amazon.com/dp/B01669BB60)
 
@@ -33,7 +33,7 @@ last_update:
 
 | Placa/Componente                                                                                                                                            | Cant | Documentación                                                                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|-----|-------------------------------------------------------------------------------|
-| [Placa de desarrollo Seeeduino Cloud](https://www.seeedstudio.com/Seeeduino-Cloud-Arduino-Yun-compatible-openWRT-controller-p-2123.html?cPath=6_7) | 1   | <a href="/Seeeduino_Cloud" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a>                               |
+| [Placa de desarrollo Seeeduino Cloud](https://www.seeedstudio.com/Seeeduino-Cloud-Arduino-Yun-compatible-openWRT-controller-p-2123.html?cPath=6_7) | 1   | <a href="/es/Seeeduino_Cloud" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a>                               |
 | [Base Shield](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html?cPath=98_16)                                                                | 1   | [Leer Aquí](/Base_Shield_V2/ "Base shield v2")                                 |
 | [Grove - LCD RGB Backlight](https://www.seeedstudio.com/Grove-LCD-RGB-Backlight-p-1643.html?cPath=34_36)                                         | 1   | [Leer Aquí](/Grove-LCD_RGB_Backlight "Grove - LCD RGB Backlight")             |
 | [Grove - Relay](https://www.seeedstudio.com/Grove-Relay-p-769.html?cPath=39_42)                                                                  | 1   | [Leer Aquí](/Grove-Relay "Grove - Relay")                                     |
@@ -103,7 +103,7 @@ Hacer clic en el certificado que creamos previamente.
 
 ### Comenzando con Seeeduino Cloud (Arduino Yun)
 
-Si esta es tu primera vez usando Seeeduino Cloud o Arduino Yun, puedes hacer clic en <a href="/Seeeduino_Cloud" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a> para comenzar. Antes de proceder a los siguientes pasos, por favor asegúrate de que tienes **expect** instalado en tu computadora y correctamente instalado el [Arduino IDE](https://www.arduino.cc/en/Main/OldSoftwareReleases).
+Si esta es tu primera vez usando Seeeduino Cloud o Arduino Yun, puedes hacer clic en <a href="/es/Seeeduino_Cloud" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a> para comenzar. Antes de proceder a los siguientes pasos, por favor asegúrate de que tienes **expect** instalado en tu computadora y correctamente instalado el [Arduino IDE](https://www.arduino.cc/en/Main/OldSoftwareReleases).
 
 ### Descargar AWS-IoT-Arduino-Yún-SDK
 
@@ -123,7 +123,7 @@ Para la instalación del Arduino IDE en Linux, por favor visita [aquí](http://p
 
 #### Configurar placa de desarrollo
 
-- Paso 1. Configurar la placa Arduino Yún y conectarla a WiFi. Obtener su dirección IP y contraseña. Si no sabes cómo hacerlo puedes seguir esta <a href="/Seeeduino_Cloud#getting-started" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a>.
+- Paso 1. Configurar la placa Arduino Yún y conectarla a WiFi. Obtener su dirección IP y contraseña. Si no sabes cómo hacerlo puedes seguir esta <a href="/es/Seeeduino_Cloud#getting-started" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a>.
 - Paso 2. Asegúrate de que tu computadora esté conectada a la misma red (rango de direcciones IP locales).
 - Paso 3. Descargar el archivo CA de AWS IoT desde [aquí](https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem). Y guardarlo como *root-CA.crt*.
 - Paso 4. Poner tu archivo CA de AWS IoT, clave privada y certificado en AWS-IoT-Arduino-Yun-SDK/AWS-IoT-Python-Runtime/certs.
@@ -145,7 +145,7 @@ Para la instalación del Arduino IDE en Linux, por favor visita [aquí](http://p
 
 Antes de proceder con los siguientes pasos, asegúrese de que tiene Putty y WinSCP instalados en su PC. Si prefiere usar otras herramientas para conectarse por SSH a su placa Arduino Yún y transferir archivos, tendrá que ajustar los pasos siguientes según sus herramientas. Putty se puede descargar desde [aquí](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). WinSCP se puede descargar desde [aquí](http://winscp.net/eng/download.php). Configure la placa.
 
-- Paso 1. Configure la placa Arduino Yún Cloud y conéctela a WiFi. Obtenga su dirección IP y contraseña. Si no sabe cómo hacerlo, siga esto <a href="/Seeeduino_Cloud#getting-started" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a>.
+- Paso 1. Configure la placa Arduino Yún Cloud y conéctela a WiFi. Obtenga su dirección IP y contraseña. Si no sabe cómo hacerlo, siga esto <a href="/es/Seeeduino_Cloud#getting-started" ><span><font size={"3"}>Placas Seeeduino Cloud</font></span></a>.
 
 - Paso 2. Asegúrese de que su PC esté conectado a la misma red (rango de direcciones IP locales).
 
@@ -223,7 +223,7 @@ Ejecutar ejemplos
 ---------
 
 - [Documentación de AWS IoT](http://aws.amazon.com/documentation/iot/)
-- <a href="/Seeeduino_Cloud" ><span><font size={"3"}>Página wiki de Seeeduino Cloud</font></span></a>
+- <a href="/es/Seeeduino_Cloud" ><span><font size={"3"}>Página wiki de Seeeduino Cloud</font></span></a>
 - [SDK de AWS IoT Arduino Yún](https://github.com/aws/aws-iot-device-sdk-arduino-yun)
 
 ## Soporte Técnico y Discusión de Productos

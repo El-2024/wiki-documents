@@ -405,7 +405,7 @@ Aquí puedes ver que la velocidad está cerca de 1Gbps
 
 ## FAQ
 
-Para más detalles, por favor haz clic [**aquí**](/FAQs_For_openWrt)
+Para más detalles, por favor haz clic [**aquí**](/es/FAQs_For_openWrt)
 
 ## Recursos
 

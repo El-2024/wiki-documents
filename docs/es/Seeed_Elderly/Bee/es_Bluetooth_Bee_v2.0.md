@@ -72,14 +72,14 @@ Utiliza CSR Bluecore 04-External sistema Bluetooth de chip único con tecnologí
 
 ### Conectando Bluetooth a PC a través de Uart Bee
 
-<!-- El Bluetooth proporciona un socket XBee estándar. Aquí usamos un [UartSBee V5](/UartSBee_v5) para conectar Bluetooth y PC, asegurar que el voltaje de alimentación fue seleccionado como 3.3V por el deslizador. -->
+<!-- El Bluetooth proporciona un socket XBee estándar. Aquí usamos un [UartSBee V5](/es/UartSBee_v5) para conectar Bluetooth y PC, asegurar que el voltaje de alimentación fue seleccionado como 3.3V por el deslizador. -->
 
 |![](https://files.seeedstudio.com/wiki/Bluetooth_Bee_v2.0/img/Bluetooth_Bee_v2.0_ConnectToPC.jpg)|![](https://files.seeedstudio.com/wiki/Bluetooth_Bee_v2.0/img/Bluetooth_Bee_v2.0_ConnectToPCSet.jpg)
 |---|---|
 
 ### Conectando Bluetooth a Arduino
 
-<!-- Aquí usamos [XBee Shield](/XBee_Shield_V2.0) como puente entre Bluetooth y [Seeeduino Lotus](/Seeeduino_Lotus). -->
+<!-- Aquí usamos [XBee Shield](/es/XBee_Shield_V2.0) como puente entre Bluetooth y [Seeeduino Lotus](/es/Seeeduino_Lotus). -->
 
 Dado que el UART de hardware de Seeedino fue usado como depuración con PC, elegimos D2 y D3 para simular UART de software para comunicarse con Bluetooth. por favor refiérase a la configuración del jumper en la imagen de abajo
 

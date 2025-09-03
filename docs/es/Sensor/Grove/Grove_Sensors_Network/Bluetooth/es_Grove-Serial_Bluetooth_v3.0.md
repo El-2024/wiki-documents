@@ -52,7 +52,7 @@ Dos módulos Bluetooth funcionan como se muestra a continuación:
 ![](https://files.seeedstudio.com/wiki/Grove-Serial_Bluetooth_v3.0/img/Grove_serial_bluetooth_4_.jpg.png)
 
 1. Abre Arduino IDE, abre File -> Examples -> Bluetooth_Shield_V2_Demo_Code -> Slave_led, entonces abres el código de Slave y modifica el código también como arriba.
-2. Guarda la modificación y haz clic en Upload para Cargar el código, si tienes algún problema sobre cómo iniciar Arduino, por favor haz clic <a href="/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}> aquí </font></span></a> para obtener ayuda.
+2. Guarda la modificación y haz clic en Upload para Cargar el código, si tienes algún problema sobre cómo iniciar Arduino, por favor haz clic <a href="/es/Getting_Started_with_Seeeduino"><span><font color={'8DC215'} size={"3"}> aquí </font></span></a> para obtener ayuda.
 
 ### Verificar El Resultado
 

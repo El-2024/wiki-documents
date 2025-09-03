@@ -149,7 +149,7 @@ Hercules es una suite de plataforma abierta. Es conveniente para los usuarios in
 </tr>
 <tr>
 <th scope="row"> 15</th>
-<td> [Controlador de Motor Dual Hercules 15A 6-20V](/Hercules_Dual_15A_6-20V_Motor_Controller)</td>
+<td> [Controlador de Motor Dual Hercules 15A 6-20V](/es/Hercules_Dual_15A_6-20V_Motor_Controller)</td>
 <td></td>
 <td></td>
 <td> 1 pzs</td>

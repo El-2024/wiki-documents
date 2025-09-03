@@ -186,14 +186,14 @@ Si está buscando la versión sin adaptador de corriente, por favor consulte [re
 
 :::info  
 reComputer J30/40 con la placa portadora J401.  
-Por favor, consulta esta [página wiki](/reComputer_J4012_Flash_Jetpack) para más información sobre cómo flashear JetPack.  
+Por favor, consulta esta [página wiki](/es/reComputer_J4012_Flash_Jetpack) para más información sobre cómo flashear JetPack.  
 :::  
 
 ## Uso de Interfaces  
 
 :::info  
 reComputer J30/40 con la placa portadora J401.  
-Por favor, consulta esta [página wiki](/J401_carrierboard_Hardware_Interfaces_Usage) para más información sobre el uso de interfaces.  
+Por favor, consulta esta [página wiki](/es/J401_carrierboard_Hardware_Interfaces_Usage) para más información sobre el uso de interfaces.  
 :::  
 
 

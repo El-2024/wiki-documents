@@ -37,7 +37,7 @@ El Hub I2C Grove es un módulo de extensión Grove para conectar múltiples disp
 
 Se puede usar con cable Universal de 4 Pines a X2 4 Pines y conecta hasta 7 dispositivos I2C lo cual puede cubrir la mayoría de propósitos de desarrollo.
 
-Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/Grove-I2C_Hub).
+Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/es/Grove-I2C_Hub).
 
 ### Grove - Botón
 
@@ -60,7 +60,7 @@ Te ayuda a aumentar la precisión del valor recolectado del sensor analógico pr
 Debido a que su dirección es cambiable, puedes usar hasta 9 ADC I2C al mismo tiempo como máximo.
 
 Por otro lado, este módulo proporciona función de suspensión automática que reduce considerablemente el consumo de energía.
-<!-- Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/Grove-I2C_ADC). -->
+<!-- Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/es/Grove-I2C_ADC). -->
 
 ### Grove - Sensor de Temperatura
 
@@ -75,7 +75,7 @@ Es esta característica la que usamos para calcular la temperatura ambiente.
 El rango detectable de este sensor es -40 - 125ºC, y la precisión es ±1.5ºC.
 
 Y debes conectarlo al Puerto J2 del Grove - ADC I2C.
-Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/Grove-Temperature_Sensor_V1.2).
+Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/es/Grove-Temperature_Sensor_V1.2).
 
 ### Grove - Sensor de Sonido
 
@@ -86,7 +86,7 @@ Grove - Sensor de Sonido puede detectar la intensidad del sonido del ambiente.
 El componente principal del módulo es un micrófono simple, que está basado en el amplificador LM358 y un micrófono electret.
 
 La salida de este módulo es analógica y debes conectarlo al Puerto J2 del Grove - ADC I2C.
-Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/Grove-Sound_Sensor).
+Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/es/Grove-Sound_Sensor).
 
 ### Grove - Acelerómetro Digital de 3 Ejes(±16g)
 
@@ -98,7 +98,7 @@ Está basado en un IC avanzado de 3 ejes ADXL345. No te preocupes por implementa
 
 Mientras tanto, es lo suficientemente ágil para detectar toques simples y dobles. Es ideal para detección de movimiento, detección de gestos así como robótica.
 
-Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/Grove-3-Axis_Digital_Accelerometer-16g).
+Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/es/Grove-3-Axis_Digital_Accelerometer-16g).
 
 ### Grove - Relé
 
@@ -140,7 +140,7 @@ El LED RGB Encadenable está basado en el chip P9813 que es un chip controlador 
 
 Transmisión por cable (DATA y CLK), reciclaje incorporado, puede mejorar la distancia de transmisión.
 
-<!-- Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/Grove-Chainable_RGB_LED/). -->
+<!-- Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/es/Grove-Chainable_RGB_LED/). -->
 
 ### Grove - Pantalla OLED 0.96"
 
@@ -152,7 +152,7 @@ Grove - OLED 96 x 96 está construido con el módulo OLED de matriz de puntos 96
 
 Comparando con LCD, las pantallas OLED son más competitivas, las cuales tienen una serie de ventajas como alto brillo, auto-emisión, alta relación de contraste, contorno delgado/fino, amplio ángulo de visión, amplio rango de temperatura y bajo consumo de energía.
 
-Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/Grove-OLED_Display_0.96inch).
+Si quieres saber más información sobre este módulo por favor haz clic [**aquí**](/es/Grove-OLED_Display_0.96inch).
 
 :::tip
 Más detalles sobre los módulos Grove por favor consulta [Sistema Grove](https://wiki.seeedstudio.com/es/Grove_System/)
@@ -164,7 +164,7 @@ Ejemplos
 Para comenzar a editar programas que residen en tu placa, puedes usar el IDE Cloud9.
 Como un ejercicio simple para familiarizarse con el IDE Cloud9, crear una aplicación simple para hacer parpadear uno de los 4 LEDs programables por el usuario en el BeagleBone® es un buen comienzo.
 
-Si esta es tu primera vez usando el IDE Cloud9, por favor sigue este [**enlace**](/BeagleBone_Green).
+Si esta es tu primera vez usando el IDE Cloud9, por favor sigue este [**enlace**](/es/BeagleBone_Green).
 
 ### Cómo usar Grove - Button en BBG
 

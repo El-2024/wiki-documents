@@ -275,7 +275,7 @@ Algunas preguntas frecuentes en la Comunidad RePhone son recopiladas y respondid
 
 ##  Recursos
 ---
-<!-- Please go the Wiki page [Xadow Duino](/Xadow_Duino) for more info. -->
+<!-- Please go the Wiki page [Xadow Duino](/es/Xadow_Duino) for more info. -->
 
 ## Soporte Técnico y Discusión de Productos
 

@@ -102,7 +102,7 @@ Por favor use este módulo en un espacio abierto, y manténgase fuera de los sig
 
 :::info Atención
 
-Por defecto, el MR60BHA2 viene preensamblado con el [XIAO ESP32C6](/xiao_esp32c6_getting_started), pero es compatible con varios otros microcontroladores para comunicación e integración.
+Por defecto, el MR60BHA2 viene preensamblado con el [XIAO ESP32C6](/es/xiao_esp32c6_getting_started), pero es compatible con varios otros microcontroladores para comunicación e integración.
 
 :::
 

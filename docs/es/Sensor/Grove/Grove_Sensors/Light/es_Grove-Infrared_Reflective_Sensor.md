@@ -137,7 +137,7 @@ Implementemos un codificador óptico simple para detectar la velocidad de un mot
 
 ##### Software
 
-- **Paso 1.** Descarga la biblioteca [Arduino timer1 *library*](https://files.seeedstudio.com/wiki/Grove-Infrared_Reflective_Sensor/res/TimerOne-ArduinoLib.zip) y agrégala al archivo de bibliotecas del Arduino IDE. Una [guía](/Guide_to_use_demos_downloaded_from_Seeed-s_Github/) sobre cómo ejecutar nuestro código de demostración.
+- **Paso 1.** Descarga la biblioteca [Arduino timer1 *library*](https://files.seeedstudio.com/wiki/Grove-Infrared_Reflective_Sensor/res/TimerOne-ArduinoLib.zip) y agrégala al archivo de bibliotecas del Arduino IDE. Una [guía](/es/Guide_to_use_demos_downloaded_from_Seeed-s_Github/) sobre cómo ejecutar nuestro código de demostración.
 
 - **Paso 2.** Consulta [Cómo instalar biblioteca](https://wiki.seeedstudio.com/es/How_to_install_Arduino_Library) para instalar la biblioteca para Arduino.
 

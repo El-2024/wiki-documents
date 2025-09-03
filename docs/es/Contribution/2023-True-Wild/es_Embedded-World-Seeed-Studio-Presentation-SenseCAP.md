@@ -27,7 +27,7 @@ last_update:
 </div>
 
 <div class="embedded_world_container">
-    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/K1100-Getting-Started">
+    <a class="embedded_world_item" style={{textAlign: 'center'}} href="/es/K1100-Getting-Started">
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP K1100 - El Kit de Prototipo de Sensores con LoRa® e IA</font></div>
             <div class="embedded_world_title" style={{textAlign: 'center'}}><font color={'FFFFFF'} size={"3"}>Un kit de herramientas plug-and-play para digitalizar rápidamente el mundo y desbloquear el potencial del AIoT </font></div>
     </a>

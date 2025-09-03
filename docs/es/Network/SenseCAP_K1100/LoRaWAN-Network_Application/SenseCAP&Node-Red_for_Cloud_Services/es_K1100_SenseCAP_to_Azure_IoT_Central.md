@@ -114,7 +114,7 @@ Usamos el nodo **Network -> mqtt in** y configuramos mqtt en el formato de la AP
 - Port: 1883
 - Protocol: MQTT V3.1.1
 - Client ID: El formato es `org-<Organization ID>-<Random ID>`
-  - `<Orgnization ID>` Tu ID de organización. Lo hemos obtenido en [Obtener la API de SenseCAP](/K1100_sensecap_node-red#get-the-sensecap-api).
+  - `<Orgnization ID>` Tu ID de organización. Lo hemos obtenido en [Obtener la API de SenseCAP](/es/K1100_sensecap_node-red#get-the-sensecap-api).
 
   - `<Random ID>` usa tus propios números generados aleatoriamente o letras minúsculas.
 

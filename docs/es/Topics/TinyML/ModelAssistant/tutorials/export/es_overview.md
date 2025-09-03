@@ -22,15 +22,15 @@ exportar uno de ellos, puedes usar el parámetro `--targets` para especificar el
 tipo de modelo exportado, por ejemplo `--targets onnx` o `--targets tflite`.
 :::
 
-- [PyTorch a ONNX](/ModelAssistant_Tutorials_Export_PyTorch_2_ONNX): Convierte modelo PyTorch y pesos `.pth`
+- [PyTorch a ONNX](/es/ModelAssistant_Tutorials_Export_PyTorch_2_ONNX): Convierte modelo PyTorch y pesos `.pth`
   a modelo ONNX `.onnx`
 
-- [PyTorch a TFLite](/ModelAssistant_Tutorials_Export_PyTorch_2_TFLite): Convierte modelo PyTorch y pesos `.pth`
+- [PyTorch a TFLite](/es/ModelAssistant_Tutorials_Export_PyTorch_2_TFLite): Convierte modelo PyTorch y pesos `.pth`
   a modelo TFLite `.tflite`
 
 :::tip
 Antes de poder comenzar a exportar modelos, necesitas completar la
-sección de [Entrenamiento](/ModelAssistant_Tutorials_Training_Overview) y obtener el archivo de pesos del modelo `.pth`
+sección de [Entrenamiento](/es/ModelAssistant_Tutorials_Training_Overview) y obtener el archivo de pesos del modelo `.pth`
 antes de comenzar la exportación.
 
 :::

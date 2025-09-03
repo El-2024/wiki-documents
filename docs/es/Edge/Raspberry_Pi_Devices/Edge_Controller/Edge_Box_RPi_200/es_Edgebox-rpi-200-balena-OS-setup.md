@@ -55,7 +55,7 @@ En este documento aprenderás cómo flashear balenaOS al Seeed Studio EdgeBox-RP
 
 Para flashear balenaOS en el EdgeBox-RPI-200 necesitarás desarmar el dispositivo y obtener el Raspberry Pi Compute Module 4.
 
-**PASO 1:** Coloca el CM4 del EdgeBox-RPI-200 en la [Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html). Por favor sigue [la página wiki](/Raspberry_pi_CM4_update_eeprom/#put-cm4-emmc-storage-into-usb-mass-storage-mode) sobre cómo poner el almacenamiento eMMC del CM4 en modo de almacenamiento masivo USB con la [Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html).
+**PASO 1:** Coloca el CM4 del EdgeBox-RPI-200 en la [Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html). Por favor sigue [la página wiki](/es/Raspberry_pi_CM4_update_eeprom/#put-cm4-emmc-storage-into-usb-mass-storage-mode) sobre cómo poner el almacenamiento eMMC del CM4 en modo de almacenamiento masivo USB con la [Dual Gigabit Ethernet NICs Carrier Board](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html).
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/102110497/latest-board/boot-pins.png" alt="pir" width={600} height="auto" /></p>
 

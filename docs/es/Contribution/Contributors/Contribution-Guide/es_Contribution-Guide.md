@@ -16,20 +16,20 @@ last_update:
 
 ## Opción 1: Pasos completos para PR
 
-1. Primero, por favor asegúrate de que puedes [construir la página de la plataforma wiki localmente](/Deploy_Page_Locally)
+1. Primero, por favor asegúrate de que puedes [construir la página de la plataforma wiki localmente](/es/Deploy_Page_Locally)
 2. Ahora puedes hacer los cambios o agregar los archivos, mientras ves los cambios localmente. Luego PR a nuestro repositorio.
 
-- [Pasos completos para PR](/full_steps_pull_request)
+- [Pasos completos para PR](/es/full_steps_pull_request)
 
 ## Opción 2: Pasos rápidos para PR
 
 Puedes simplemente descargar todos los archivos requeridos y agregar el archivo md así como las imágenes, luego PR directo a nuestro repositorio.
 
-- [Pasos rápidos para PR](/quick_pull_request)
+- [Pasos rápidos para PR](/es/quick_pull_request)
 
 ## Enlaces Útiles:
 
-- [Introducción al Programa de Contribuidores](/Contributor)
+- [Introducción al Programa de Contribuidores](/es/Contributor)
 - [Página de Presentación de Contribuidores](/contributors)
 - [Asignaciones en GitHub](https://github.com/orgs/Seeed-Studio/projects/6)
 

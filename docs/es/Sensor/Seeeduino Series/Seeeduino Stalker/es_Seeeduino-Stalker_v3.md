@@ -419,7 +419,7 @@ Antes de la modificación
 
 Después de la modificación
 
-2.Ahora aplica el procedimiento mencionado en <a href="/Seeeduino-Stalker_v3#pcb-jumper-pads" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a> (es decir) corta el jumper y solda el pad central del Jumper P5 a PD7.
+2.Ahora aplica el procedimiento mencionado en <a href="/es/Seeeduino-Stalker_v3#pcb-jumper-pads" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a> (es decir) corta el jumper y solda el pad central del Jumper P5 a PD7.
 
 ## Diseño de la placa
 

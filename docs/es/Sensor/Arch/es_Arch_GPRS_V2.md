@@ -171,7 +171,7 @@ Recursos
 
 **Ver también**
 
-- [Información del Módulo SIM900 GPRS](/GPRS_Shield_V2.0)
+- [Información del Módulo SIM900 GPRS](/es/GPRS_Shield_V2.0)
 
 <!-- Este archivo Markdown fue creado desde https://www.seeedstudio.com/wiki/Arch_GPRS_V2 -->
 

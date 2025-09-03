@@ -101,7 +101,7 @@ En esta sección, te mostraremos un ejemplo básico para usar esta placa. Puedes
 
 ### Lectura sugerida
 
-* [BeagleBone® Green](/BeagleBone_Green)
+* [BeagleBone® Green](/es/BeagleBone_Green)
 
 * [Comunidad BeagleBone®](https://beagleboard.org/)
 
@@ -169,7 +169,7 @@ function checkButton(x) {
 
 * [Archivos de Esquemáticos y PCB de EAGLE y Esquemático en formato PDF](https://files.seeedstudio.com/wiki/Grove_Base_Cape_for_BeagleBone_v2/res/Grove_Base_Cape_for_BeagleBone_v2.0_Schematics.zip)
 
-* [BeagleBone® Green](/BeagleBone_Green)
+* [BeagleBone® Green](/es/BeagleBone_Green)
 
 * [Comunidad BeagleBone®](https://beagleboard.org/)
 

@@ -11,7 +11,7 @@ last_update:
 ---
 # Inicio Rápido
 
-En [Descripción General](/ModelAssistant_Introduce_Overview) hemos introducido las funciones y características proporcionadas por [SSCMA](https://github.com/Seeed-Studio/ModelAssistant). Considerando que [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) se divide en múltiples módulos diferentes, cada módulo completando sus tareas correspondientes, sugerimos seguir los pasos a continuación para comenzar rápidamente.
+En [Descripción General](/es/ModelAssistant_Introduce_Overview) hemos introducido las funciones y características proporcionadas por [SSCMA](https://github.com/Seeed-Studio/ModelAssistant). Considerando que [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) se divide en múltiples módulos diferentes, cada módulo completando sus tareas correspondientes, sugerimos seguir los pasos a continuación para comenzar rápidamente.
 
 :::tip
 Sugerimos que todos los principiantes de [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) comiencen a aprender desde [Primeros Pasos](#primeros-pasos), si estás familiarizado con [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) o [OpenMMLab](https://github.com/open-mmlab), y quieres intentar desplegar en dispositivos de computación en el borde, modificar redes neuronales existentes, o entrenar en conjuntos de datos definidos por el usuario, puedes referirte directamente a [Avanzado](#avanzado).
@@ -21,7 +21,7 @@ Sugerimos que todos los principiantes de [SSCMA](https://github.com/Seeed-Studio
 
 ### Despliegue de Modelos
 
-Si quieres desplegar el modelo en el dispositivo, por favor consulta la sección [Desplegar](/ModelAssistant_Deploy_Overview) para aprender cómo desplegar el modelo.
+Si quieres desplegar el modelo en el dispositivo, por favor consulta la sección [Desplegar](/es/ModelAssistant_Deploy_Overview) para aprender cómo desplegar el modelo.
 
 ### Entrenamiento de Modelos
 
@@ -53,20 +53,20 @@ Si quieres entrenar un modelo, recomendamos encarecidamente que primero intentes
 
 ## Avanzado
 
-1. Primero, consulta la [Guía de Instalación](/ModelAssistant_Introduce_Installation) para configurar el entorno de ejecución de [SSCMA](https://github.com/Seeed-Studio/ModelAssistant).
+1. Primero, consulta la [Guía de Instalación](/es/ModelAssistant_Introduce_Installation) para configurar el entorno de ejecución de [SSCMA](https://github.com/Seeed-Studio/ModelAssistant).
 
 2. Luego, familiarízate con los métodos básicos de uso de [SSCMA](https://github.com/Seeed-Studio/ModelAssistant):
 
-   - **Entrenamiento de Modelos**, consulta [Entrenamiento de Modelos](/ModelAssistant_Tutorials_Training_Overview) para aprender cómo usar [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) para entrenar un modelo. Sugerimos que selecciones un modelo de un ejemplo para el entrenamiento.
+   - **Entrenamiento de Modelos**, consulta [Entrenamiento de Modelos](/es/ModelAssistant_Tutorials_Training_Overview) para aprender cómo usar [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) para entrenar un modelo. Sugerimos que selecciones un modelo de un ejemplo para el entrenamiento.
 
-   - **Exportación de Modelos**. Después de completar el entrenamiento del modelo, para desplegarlo en el dispositivo de computación en el borde, es necesario primero exportar el modelo. Para el tutorial de exportación del modelo, consulta [Exportación de Modelos](/ModelAssistant_Tutorials_Export_Overview).
+   - **Exportación de Modelos**. Después de completar el entrenamiento del modelo, para desplegarlo en el dispositivo de computación en el borde, es necesario primero exportar el modelo. Para el tutorial de exportación del modelo, consulta [Exportación de Modelos](/es/ModelAssistant_Tutorials_Export_Overview).
 
    - **Verificación de Modelos**. La verificación de modelos se puede realizar después del entrenamiento o la exportación. La primera verifica la corrección de la red neuronal y los resultados del entrenamiento, mientras que la segunda verifica principalmente la corrección del modelo exportado, facilitando el despliegue y la depuración en dispositivos de computación en el borde más adelante. Se han proporcionado algunos métodos para la validación de modelos en los documentos de los dos pasos anteriores.
 
-- **Despliegue de Modelos**. Si quieres desplegar el modelo entrenado exportado en dispositivos de computación en el borde, consulta [Despliegue](/ModelAssistant_Deploy_Overview)
-- **Conjuntos de Datos Personalizados**. Si quieres entrenar en un conjunto de datos personalizado, consulta [Conjuntos de Datos](/ModelAssistant_Tutorials_Datasets).
+- **Despliegue de Modelos**. Si quieres desplegar el modelo entrenado exportado en dispositivos de computación en el borde, consulta [Despliegue](/es/ModelAssistant_Deploy_Overview)
+- **Conjuntos de Datos Personalizados**. Si quieres entrenar en un conjunto de datos personalizado, consulta [Conjuntos de Datos](/es/ModelAssistant_Tutorials_Datasets).
 
-- **Modelo Personalizado**. Si quieres modificar una red neuronal existente o diseñar tu propia red neuronal, consulta [Configuración de Modelos](/ModelAssistant_Tutorials_Config).
+- **Modelo Personalizado**. Si quieres modificar una red neuronal existente o diseñar tu propia red neuronal, consulta [Configuración de Modelos](/es/ModelAssistant_Tutorials_Config).
 
 ## Conocimientos Necesarios
 

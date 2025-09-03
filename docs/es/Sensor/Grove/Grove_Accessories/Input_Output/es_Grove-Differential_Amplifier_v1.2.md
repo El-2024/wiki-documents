@@ -161,7 +161,7 @@ Uso
 
 **1. Selección del Sensor**
 
-El amplificador puede convertir señales en escala de mA hasta escala de A. Antes de usarlo, asegúrate de que el rango de salida de tu sensor esté en escala de mA. Por ejemplo, [Sensor de Peso](/Weight_Sensor_Load_Cell_0-500g) es uno de ellos.
+El amplificador puede convertir señales en escala de mA hasta escala de A. Antes de usarlo, asegúrate de que el rango de salida de tu sensor esté en escala de mA. Por ejemplo, [Sensor de Peso](/es/Weight_Sensor_Load_Cell_0-500g) es uno de ellos.
 
 **2. Reformado del Conector**
 

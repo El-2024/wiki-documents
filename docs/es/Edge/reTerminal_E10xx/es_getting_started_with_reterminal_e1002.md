@@ -14,7 +14,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/132.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/getting_started_with_reterminal_e1002" target="_blank">
+    <a class="get_one_now_item" href="/es/getting_started_with_reterminal_e1002" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Obtener Uno Ahora 🖱️</font></span></strong>
     </a>
 </div>
@@ -406,10 +406,10 @@ El soporte permite que el dispositivo se coloque en escritorios, encimeras o est
 
 ## Recursos
 
-- [Esquemático del reTerminal E1002 (PDF)](/getting_started_with_reterminal_e1002)
-- [Hoja de Datos del ESP32S3](/getting_started_with_reterminal_e1002)
+- [Esquemático del reTerminal E1002 (PDF)](/es/getting_started_with_reterminal_e1002)
+- [Hoja de Datos del ESP32S3](/es/getting_started_with_reterminal_e1002)
 - [Documentación de la Plataforma SenseCraft HMI](https://wiki.seeedstudio.com/es/sensecraft_hmi_overview)
-- [Repositorio de GitHub](/getting_started_with_reterminal_e1002)
+- [Repositorio de GitHub](/es/getting_started_with_reterminal_e1002)
 
 ## Soporte Técnico y Discusión del Producto
 

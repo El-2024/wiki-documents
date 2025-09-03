@@ -68,25 +68,25 @@ Si quieres controlar el LinkIt One con web. ¿Cómo puede ser el control del tra
 
 **Referencia**
 <!-- 
-*   [The Basics](/LinkIt_ONE_Tutorial-The_Basics)
+*   [The Basics](/es/LinkIt_ONE_Tutorial-The_Basics)
 
-*   [Hello World](/LinkIt_ONE_Tutorial-Hello_World)
+*   [Hello World](/es/LinkIt_ONE_Tutorial-Hello_World)
 
-*   [Push Button](/LinkIt_ONE_Tutorial-Push_Button)
+*   [Push Button](/es/LinkIt_ONE_Tutorial-Push_Button)
 
-*   [Marquee](/LinkIt_ONE_Tutorial-Marquee)
+*   [Marquee](/es/LinkIt_ONE_Tutorial-Marquee)
 
-*   [Colorful World](/LinkIt_ONE_Tutorial-Colorful_World)
+*   [Colorful World](/es/LinkIt_ONE_Tutorial-Colorful_World)
 
-*   [Analog Interface](/LinkIt_ONE_Tutorial-Analog_Interface)
+*   [Analog Interface](/es/LinkIt_ONE_Tutorial-Analog_Interface)
 
-*   [Mini Servo](/LinkIt-ONE-Tutorial---Mini-Servo)
+*   [Mini Servo](/es/LinkIt-ONE-Tutorial---Mini-Servo)
 
-*   [Light Sensor](/LinkIt_ONE_Tutorial-Light-Sensor)
+*   [Light Sensor](/es/LinkIt_ONE_Tutorial-Light-Sensor)
 
-*   [SMS Control the LED](/LinkIt_ONE_Tutorial-SMS_control_the_LED)
+*   [SMS Control the LED](/es/LinkIt_ONE_Tutorial-SMS_control_the_LED)
 
-*   [Get Temperature with Webpage](/LinkIt_ONE_Tutorial-Get_temperature_with_Webpage) -->
+*   [Get Temperature with Webpage](/es/LinkIt_ONE_Tutorial-Get_temperature_with_Webpage) -->
 
 ## Soporte Técnico y Discusión del Producto
 

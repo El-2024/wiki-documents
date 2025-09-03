@@ -18,24 +18,24 @@ Seeed Studio ha adoptado y trabajado con una amplia gama de plataformas para sat
 <br />
 
 ### NVIDIA Jetson
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-platform/collection_page/NVIDIA_Jetson_collection_front.jpg" alt="pir" width={1000} height="auto" /></p>NVIDIA® Jetson™ lleva el rendimiento de IA acelerada al Edge en un factor de forma eficiente en energía y compacto. La familia de módulos Jetson utiliza el mismo software NVIDIA CUDA-X™, y soporta cloud-native para construir, desplegar y gestionar IA en el edge a través de todas las industrias. Seeed es el distribuidor autorizado de los Kits de Desarrollador NVIDIA Jetson y Socio Elite del ecosistema NVIDIA Jetson. Puedes hacer clic <a href="/NVIDIA_Jetson"><span><font color={'8DC215'} size={"4"}>¡aquí!</font></span></a>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-platform/collection_page/NVIDIA_Jetson_collection_front.jpg" alt="pir" width={1000} height="auto" /></p>NVIDIA® Jetson™ lleva el rendimiento de IA acelerada al Edge en un factor de forma eficiente en energía y compacto. La familia de módulos Jetson utiliza el mismo software NVIDIA CUDA-X™, y soporta cloud-native para construir, desplegar y gestionar IA en el edge a través de todas las industrias. Seeed es el distribuidor autorizado de los Kits de Desarrollador NVIDIA Jetson y Socio Elite del ecosistema NVIDIA Jetson. Puedes hacer clic <a href="/es/NVIDIA_Jetson"><span><font color={'8DC215'} size={"4"}>¡aquí!</font></span></a>
 
 ### Arduino
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-platform/popular_platform/arduino.png" alt="pir" width={1000} height="auto" /></p>
-Entre estas plataformas, Arduino se destaca como una solución versátil y adaptable, ofreciendo múltiples facetas que sirven varios roles en el desarrollo y despliegue de hardware y software para una amplia gama de proyectos. Para obtener más información sobre los productos y guías de Arduino ofrecidos por Seeed, por favor haz clic <a href="/Arduino"><span><font color={'8DC215'} size={"4"}>¡aquí!</font></span></a>
+Entre estas plataformas, Arduino se destaca como una solución versátil y adaptable, ofreciendo múltiples facetas que sirven varios roles en el desarrollo y despliegue de hardware y software para una amplia gama de proyectos. Para obtener más información sobre los productos y guías de Arduino ofrecidos por Seeed, por favor haz clic <a href="/es/Arduino"><span><font color={'8DC215'} size={"4"}>¡aquí!</font></span></a>
 <br />
 <br />
 
 ### Raspberry Pi
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-platform/popular_platform/raspberry-pi.jpg" alt="pir" width={1000} height="auto" /></p>
-La Raspberry Pi (RPi), por otro lado, fue inicialmente concebida por una organización sin fines de lucro con la noble intención de promover la educación en ciencias de la computación a un costo asequible, y sus generaciones posteriores han expandido sus capacidades, potencia y aplicaciones. Aquí en Seeed, proporcionamos la gama completa de placas RPi para la venta así como accesorios complementarios para ayudarte a comenzar con tu proyecto! Para obtener más información sobre nuestra gama de productos y accesorios Raspberry Pi, por favor haz clic <a href="/Raspberry_Pi"><span><font color={'8DC215'} size={"4"}>¡aquí!</font></span></a>
+La Raspberry Pi (RPi), por otro lado, fue inicialmente concebida por una organización sin fines de lucro con la noble intención de promover la educación en ciencias de la computación a un costo asequible, y sus generaciones posteriores han expandido sus capacidades, potencia y aplicaciones. Aquí en Seeed, proporcionamos la gama completa de placas RPi para la venta así como accesorios complementarios para ayudarte a comenzar con tu proyecto! Para obtener más información sobre nuestra gama de productos y accesorios Raspberry Pi, por favor haz clic <a href="/es/Raspberry_Pi"><span><font color={'8DC215'} size={"4"}>¡aquí!</font></span></a>
 
 <br />
 <br />
 
 ### Micro:bit
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-platform/popular_platform/Microbit.jpg" alt="pir" width={1000} height="auto" /></p>
-Seeed también ha trabajado con micro:bit, una plataforma fácil de usar diseñada específicamente para que los niños aprendan sobre la intrincada interacción entre software y hardware, fomentando una comprensión más profunda de estos dos dominios desde una edad temprana. Para obtener más información, por favor haz clic <a href="/microbit_wiki_page"><span><font color={'8DC215'} size={"4"}>¡aquí!</font></span></a>
+Seeed también ha trabajado con micro:bit, una plataforma fácil de usar diseñada específicamente para que los niños aprendan sobre la intrincada interacción entre software y hardware, fomentando una comprensión más profunda de estos dos dominios desde una edad temprana. Para obtener más información, por favor haz clic <a href="/es/microbit_wiki_page"><span><font color={'8DC215'} size={"4"}>¡aquí!</font></span></a>
 
 <br />
 

@@ -178,25 +178,25 @@ Con la ayuda de estos diagramas de pines, sabes qué pin tiene la función que n
 
 ### Lista Grove
 
-<!-- *   [1. Buzzer](/Grove-Buzzer#With_TI_LaunchPad)
+<!-- *   [1. Buzzer](/es/Grove-Buzzer#With_TI_LaunchPad)
 
-*   [2. Relay](/Grove-Relay#With_TI_LaunchPad)
+*   [2. Relay](/es/Grove-Relay#With_TI_LaunchPad)
 
-*   [3. 4-Digital Display ](/Grove-4-Digit_Display#With_TI_LaunchPad)
+*   [3. 4-Digital Display ](/es/Grove-4-Digit_Display#With_TI_LaunchPad)
 
-*   [4. Rotary Angle Sensor ](/Grove-Rotary_Angle_Sensor#With_TI_LaunchPad)
+*   [4. Rotary Angle Sensor ](/es/Grove-Rotary_Angle_Sensor#With_TI_LaunchPad)
 
-*   [5. Light Sensor](/Grove-Light_Sensor#With_TI_LaunchPad)
+*   [5. Light Sensor](/es/Grove-Light_Sensor#With_TI_LaunchPad)
 
-*   [6. Sound Sensor ](/Grove-Sound_Sensor#With_TI_LaunchPad)
+*   [6. Sound Sensor ](/es/Grove-Sound_Sensor#With_TI_LaunchPad)
 
-*   [7. PIR Motion Sensor ](/Grove-PIR_Motion_Sensor#With_TI_LaunchPad)
+*   [7. PIR Motion Sensor ](/es/Grove-PIR_Motion_Sensor#With_TI_LaunchPad)
 
-*   [8. Moisture Sensor](/Grove-Moisture_Sensor#With_TI_LaunchPad)
+*   [8. Moisture Sensor](/es/Grove-Moisture_Sensor#With_TI_LaunchPad)
 
-*   [9. Ultrasonic Ranger Sensor](/Grove-Ultrasonic_Ranger#With_TI_LaunchPad)
+*   [9. Ultrasonic Ranger Sensor](/es/Grove-Ultrasonic_Ranger#With_TI_LaunchPad)
 
-*   [10. Temperature Humidity Sensor ](/Grove-TemperatureAndHumidity_Sensor) -->
+*   [10. Temperature Humidity Sensor ](/es/Grove-TemperatureAndHumidity_Sensor) -->
 
 ## Visor de Esquemas en Línea
 

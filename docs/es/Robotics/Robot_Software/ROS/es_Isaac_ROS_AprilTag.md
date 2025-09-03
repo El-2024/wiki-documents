@@ -15,7 +15,7 @@ last_update:
 # Isaac ROS AprilTag  
 
 ## Prerrequisitos  
-Antes de desplegar AprilTag, asegúrate de que el entorno básico de Isaac ROS se haya configurado exitosamente en tu reComputer [Guía de Instalación](/install_isaacros). Si ROS2 no está instalado, consulta [este documento](/install_ros2_humble).  
+Antes de desplegar AprilTag, asegúrate de que el entorno básico de Isaac ROS se haya configurado exitosamente en tu reComputer [Guía de Instalación](/es/install_isaacros). Si ROS2 no está instalado, consulta [este documento](/es/install_ros2_humble).  
 
 ### Temas del Paquete Isaac ROS AprilTag  
 **Temas Suscritos:**  

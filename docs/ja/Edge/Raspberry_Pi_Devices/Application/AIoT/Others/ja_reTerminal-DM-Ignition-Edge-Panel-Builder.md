@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 :::note
 このドキュメントは、すでにネットワーク上で稼働している Ignition Edge Gateway を持っていることを前提としています。
-これらの手順を試す前に、必要に応じて [Getting Started with Ignition Edge](/reTerminal-DM-Getting-Started-with-Ignition-Edge) を参照してください。
+これらの手順を試す前に、必要に応じて [Getting Started with Ignition Edge](/ja/reTerminal-DM-Getting-Started-with-Ignition-Edge) を参照してください。
 :::
 
 ## ハードウェアの前提条件

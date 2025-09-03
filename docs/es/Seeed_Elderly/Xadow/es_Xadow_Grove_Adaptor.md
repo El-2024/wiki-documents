@@ -121,7 +121,7 @@ Tomando como ejemplo el Sensor de Luz Digital Grove, aprendamos su uso.
 
 **Descargar el código：**
 
-<!-- *   Descarga la [Digital_Light_Library](https://github.com/Seeed-Studio/Grove_Digital_Light_Sensor) del Sensor de Luz Digital Grove desde el sitio web de Github e instálala en tu Librería de Arduino. Consulta [Cómo instalar la Librería de Arduino](/How_to_install_Arduino_Library) en la página wiki, te familiarizarás con la instalación.
+<!-- *   Descarga la [Digital_Light_Library](https://github.com/Seeed-Studio/Grove_Digital_Light_Sensor) del Sensor de Luz Digital Grove desde el sitio web de Github e instálala en tu Librería de Arduino. Consulta [Cómo instalar la Librería de Arduino](/es/How_to_install_Arduino_Library) en la página wiki, te familiarizarás con la instalación.
 *   Abre el código después de terminar la instalación. -->
 
 ```
@@ -155,7 +155,7 @@ void loop()
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Grove_Adaptor/img/Digital_Light_Sensor_Score_Picture.jpg)
 
-<!-- El IC ADC ADC121C021 usado en Xadow Grove Adaptor ha sido adoptado en Grove - I2C ADC. Por supuesto, la forma de cambiar la dirección I2C es la misma. Por favor consulta la [parte de Referencia](/Grove-I2C_ADC#Reference) de Grove - I2C ADC sobre el método de variación. Además, "0" y "1" en la placa son el área de variación de dirección de la interfaz A0, "2" y "3" son el área de variación de dirección de la interfaz A1. -->
+<!-- El IC ADC ADC121C021 usado en Xadow Grove Adaptor ha sido adoptado en Grove - I2C ADC. Por supuesto, la forma de cambiar la dirección I2C es la misma. Por favor consulta la [parte de Referencia](/es/Grove-I2C_ADC#Reference) de Grove - I2C ADC sobre el método de variación. Además, "0" y "1" en la placa son el área de variación de dirección de la interfaz A0, "2" y "3" son el área de variación de dirección de la interfaz A1. -->
 
 
 ## Visor de Esquemático en Línea

@@ -1207,7 +1207,7 @@ Por ejemplo, para alternar el pin 13 ingresa "2" y presiona "Send ASCII", luego 
 
 Ahora que sabes cómo enviar y recibir información hacia y desde el shield WiFi puedes ver qué tan fácil sería controlar cualquier tipo de dispositivo vía web.
 
-Si deseas controlar dispositivos de alta potencia como tu lámpara de escritorio, un motor, o una bomba de agua vía una página web o aplicación de teléfono recomendamos nuestro [Relay Shield V2.0](/Relay_Shield_v3).
+Si deseas controlar dispositivos de alta potencia como tu lámpara de escritorio, un motor, o una bomba de agua vía una página web o aplicación de teléfono recomendamos nuestro [Relay Shield V2.0](/es/Relay_Shield_v3).
 
 El Relay Shield V2.0 usa los pines 4, 5, 6, y 7 por lo que es completamente compatible con el código en los ejemplos de esta página.
 
@@ -1256,7 +1256,7 @@ R3: No coloques plástico o cualquier otro material dieléctrico en contacto con
 - [Hoja de Datos RN-171](https://files.seeedstudio.com/wiki/Wifi_Shield_V2.0/res/WiFly-RN-171.pdf)
 - [Biblioteca Wifi Shield](https://github.com/Seeed-Studio/WiFi_Shield)
 - [Manual de Usuario del Módulo WiFi](https://files.seeedstudio.com/wiki/Wifi_Shield_V2.0/res/WiFly-RN-UM.pdf) *-- Aquí es donde encontrarás todos los comandos para el módulo RN-171 en el shield.*
-- [¿Qué es un Seeeduino?](/Seeeduino_v4.2)
+- [¿Qué es un Seeeduino?](/es/Seeeduino_v4.2)
 - [w3schools](http://www.w3schools.com/) Excelente sitio web para aprender HTML, Javascript y JQuery
 
 <!-- This Markdown file was created from https://www.seeedstudio.com/wiki/Wifi_Shield_V2.0 -->

@@ -47,7 +47,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove_LoRa_E5_New_Version/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove_LoRa_E5_New_Version/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Bluetooth
@@ -68,7 +68,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Blueseeed-Dual-model-HM13.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-BLE-dual_model-v1.0/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-BLE-dual_model-v1.0/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Serial Bluetooth v3.0
@@ -86,7 +86,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Serial-Blueseeed-CSR-BC417.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Serial_Bluetooth_v3.0/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Serial_Bluetooth_v3.0/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - BLE v1
@@ -104,7 +104,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Blueseeed-HM11.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-BLE_v1/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-BLE_v1/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Wi-Fi
@@ -124,7 +124,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-UART-WiFi-V2-ESP8285.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-UART_Wifi_V2/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-UART_Wifi_V2/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### NFC
@@ -143,7 +143,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC-ST25DV64KC-p-5688.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove-nfc-st25dv64/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/grove-nfc-st25dv64/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - NFC(PN532)
@@ -161,7 +161,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove_NFC/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove_NFC/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - NFC_tag
@@ -179,7 +179,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-NFC-Tag-p-1866.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove_NFC_Tag/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove_NFC_Tag/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### GPS
@@ -199,7 +199,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GPS-Module.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-GPS/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-GPS/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - GPS (Air530)
@@ -217,7 +217,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-GPS-Air530/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-GPS-Air530/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### RF
@@ -237,7 +237,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-125KHz-RFID-Reader.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-125KHz_RFID_Reader/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-125KHz_RFID_Reader/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Kit RF de 315MHz
@@ -255,7 +255,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-315MHz-Simple-RF-Link-Kit.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-315MHz_RF_Kit/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-315MHz_RF_Kit/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Kit de Enlace RF Simple de 433MHz
@@ -273,7 +273,7 @@ Tenemos varios tipos de módulos de red Grove que pueden aplicarse a diferentes 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-433MHz-Simple-RF-link-kit-p-1062.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-433MHz_Simple_RF_Link_Kit/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-433MHz_Simple_RF_Link_Kit/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Largo Alcance
@@ -300,7 +300,7 @@ Grove es una plataforma muy poderosa desarrollada por Seeed Studio para simplifi
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove_LoRa_Radio/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove_LoRa_Radio/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Serial RF Pro
@@ -318,7 +318,7 @@ Grove es una plataforma muy poderosa desarrollada por Seeed Studio para simplifi
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Serial-RF-Pro.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Serial_RF_Pro/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Serial_RF_Pro/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 ### Otros Protocolos Estándar
@@ -338,7 +338,7 @@ Grove es una plataforma muy poderosa desarrollada por Seeed Studio para simplifi
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-DMX512.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-DMX512/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-DMX512/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove- I2C ADC
@@ -356,7 +356,7 @@ Grove es una plataforma muy poderosa desarrollada por Seeed Studio para simplifi
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-ADC.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C_ADC/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-I2C_ADC/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - I2C FM Receiver
@@ -383,7 +383,7 @@ Grove - I2C FM Receiver es un módulo receptor FM de banda ancha, este módulo e
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove-I2C_FM_Receiver/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-I2C_FM_Receiver/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Protoshield
@@ -401,7 +401,7 @@ Grove - I2C FM Receiver es un módulo receptor FM de banda ancha, este módulo e
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Protoshield.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Protoshield/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Protoshield/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - RJ45 Adapter
@@ -419,7 +419,7 @@ Grove - I2C FM Receiver es un módulo receptor FM de banda ancha, este módulo e
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-RJ45-Adapter.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-RJ45_Adapter/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-RJ45_Adapter/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 ## Co-Crear sensores Grove con Seeed Studio Fusion

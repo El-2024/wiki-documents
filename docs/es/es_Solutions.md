@@ -68,18 +68,18 @@ Puedes descubrir esta página con dos grandes porciones.
 <div class="independent_container">
     <a class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}> Guía de Contribución </font></div>
-            <a href="/Contribution-Guide" target="_blank"><span><font color={'FFFFFF'} size={"3"}> Guía de Contribución </font></span></a>
+            <a href="/es/Contribution-Guide" target="_blank"><span><font color={'FFFFFF'} size={"3"}> Guía de Contribución </font></span></a>
             <br/>
-            <a href="/Honorary-Contributors" target="_blank"><span><font color={'FFFFFF'} size={""}> Contribuyentes Honorarios </font></span></a>
+            <a href="/es/Honorary-Contributors" target="_blank"><span><font color={'FFFFFF'} size={""}> Contribuyentes Honorarios </font></span></a>
             <br/>
     </a>
     <a class="independent_item" style={{textAlign: 'left'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}> Escala tu Creación con Fusion</font></div>
-            <a href="/Scale-up-Your-Creation-with-Fusion#licensed-product-program" target="_blank"><span><font color={'FFFFFF'} size={"3"}> Programa de Producto Licenciado </font></span></a>
+            <a href="/es/Scale-up-Your-Creation-with-Fusion#licensed-product-program" target="_blank"><span><font color={'FFFFFF'} size={"3"}> Programa de Producto Licenciado </font></span></a>
             <br/>
-            <a href="/Scale-up-Your-Creation-with-Fusion#licensed-products-were-looking-for" target="_blank"><span><font color={'FFFFFF'} size={"3"}> Productos Licenciados que Estamos Buscando</font></span></a>
+            <a href="/es/Scale-up-Your-Creation-with-Fusion#licensed-products-were-looking-for" target="_blank"><span><font color={'FFFFFF'} size={"3"}> Productos Licenciados que Estamos Buscando</font></span></a>
             <br/>
-            <a href="/Scale-up-Your-Creation-with-Fusion#user-cases" target="_blank"><span><font color={'FFFFFF'} size={"3"}> Casos de Usuario </font></span></a>
+            <a href="/es/Scale-up-Your-Creation-with-Fusion#user-cases" target="_blank"><span><font color={'FFFFFF'} size={"3"}> Casos de Usuario </font></span></a>
             <br/>
     </a>
 </div>

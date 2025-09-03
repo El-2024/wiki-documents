@@ -45,7 +45,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-AHT20-I2C-Industrial-grade-temperature-and-humidity-sensor-p-4497.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temp y Humedad(SHT31)
@@ -63,7 +63,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-SHT31.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-TempAndHumi_Sensor-SHT31/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-TempAndHumi_Sensor-SHT31/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor I2C de Alta Precisión Temp&Humedad(SHT35)
@@ -81,7 +81,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temp-Humi-Sensor-SHT35.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C_High_Accuracy_Temp%26Humi_Sensor-SHT35/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-I2C_High_Accuracy_Temp%26Humi_Sensor-SHT35/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temperatura y Humedad Pro(DHT22)
@@ -99,7 +99,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-Pro-AM2302-DHT22.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Temperature_and_Humidity_Sensor_Pro/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Temperature_and_Humidity_Sensor_Pro/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temperatura y Humedad (DHT11)
@@ -117,7 +117,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-TemperatureAndHumidity_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-TemperatureAndHumidity_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temperatura y Humedad(DHT20)
@@ -135,7 +135,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Temperature-Humidity-Sensor-DH20/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Temperature-Humidity-Sensor-DH20/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temperatura y Humedad (Alta Precisión y Mini) v1.0
@@ -153,7 +153,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-High-Accuracy-Mini.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temperatura y Humedad
@@ -171,7 +171,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temp-Humi-Sensor-SHT40-p-5384.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-SHT4x/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-SHT4x/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Temperatura
@@ -191,7 +191,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-1-Wire-Thermocouple-Amplifier-MAX31850K.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-1-Wire_Thermocouple_Amplifier-MAX31850K/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-1-Wire_Thermocouple_Amplifier-MAX31850K/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Amplificador de Termopar I2C (MCP9600)
@@ -209,7 +209,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-Thermocouple-Amplifier-MCP9600.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C_Thermocouple_Amplifier-MCP9600/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-I2C_Thermocouple_Amplifier-MCP9600/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Sensor de Temperatura One Wire DS18B20
@@ -227,7 +227,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/One-Wire-Temperature-Sensor-p-1235.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/One-Wire-Temperature-Sensor-DS18B20/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/One-Wire-Temperature-Sensor-DS18B20/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Alta Temperatura
@@ -245,7 +245,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-High-Temperature-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-High_Temperature_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-High_Temperature_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Cámara de Imagen Térmica IR-Array MLX90641
@@ -263,7 +263,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Thermal-Imaging-Camera-IR-Array-MLX90641-110-degree-p-4612.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Thermal-Imaging-Camera-IR-Array/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Thermal-Imaging-Camera-IR-Array/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temperatura Infrarrojo Digital
@@ -281,7 +281,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Digital-Infrared-Temperature-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Digital_Infrared_Temperature_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Digital_Infrared_Temperature_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temperatura Infrarrojo
@@ -299,7 +299,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Temperature-Sensor-p-1058.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Infrared_Temperature_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Infrared_Temperature_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Matriz de Sensores de Temperatura Infrarrojo(AMG8833)
@@ -317,7 +317,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Temperature-Sensor-Array-AMG8833.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Infrared_Temperature_Sensor_Array-AMG8833/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Infrared_Temperature_Sensor_Array-AMG8833/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove-Sensor_de_Temperatura
@@ -335,7 +335,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Temperature_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Temperature_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temperatura V1.2
@@ -353,7 +353,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Temperature_Sensor_V1.2/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Temperature_Sensor_V1.2/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temperatura I2C de Alta Precisión(MCP9808)
@@ -371,7 +371,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temperature-Sensor-MCP9808.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Múltiples en uno
@@ -391,7 +391,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-All-in-one-Environmental-Sensor-SEN54-p-5374.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove_SEN5X_All_in_One/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove_SEN5X_All_in_One/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Temperatura Humedad Presión Gas (BME680)
@@ -409,7 +409,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Pressure-and-Gas-Sensor-for-Arduino-BME680.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de CO2 y Temperatura y Humedad (SCD41)
@@ -427,7 +427,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD41-p-5025.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-CO2_&_Temperature_&_Humidity_Sensor-SCD41/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-CO2_&_Temperature_&_Humidity_Sensor-SCD41/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de CO2 y Temperatura y Humedad (SCD30)
@@ -445,7 +445,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-CO2-Temperature-Humidity-Sensor-SCD30-p-2911.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-CO2_Temperature_Humidity_Sensor-SCD30/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-CO2_Temperature_Humidity_Sensor-SCD30/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Luz Gesto Color Proximidad (TMG39931)
@@ -463,7 +463,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Light-Color-Proximity-Sensor-TMG39931-p-2879.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Potenciado por IA
@@ -483,7 +483,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-p-5457.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Vision-AI-Module/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Vision-AI-Module/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Módulo Grove Vision AI V2
@@ -501,7 +501,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-V2-p-5851.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove_vision_ai_v2/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/grove_vision_ai_v2/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Sensor de Gestos IR Inteligente Grove (PAJ7660)
@@ -519,7 +519,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Smart-IR-Gesture-Sensor-p-5721.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove_gesture_paj7660/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/grove_gesture_paj7660/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Humedad del Suelo
@@ -539,7 +539,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Capacitive-Moisture-Sensor-Corrosion-Resistant-p-2580.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Capacitive_Moisture_Sensor-Corrosion-Resistant/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Capacitive_Moisture_Sensor-Corrosion-Resistant/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Humedad
@@ -557,7 +557,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Moisture-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Moisture_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Moisture_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Proximidad
@@ -577,7 +577,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Ultrasonic_Ranger/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Ultrasonic_Ranger/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - IR Distance Interrupter v1.2
@@ -595,7 +595,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-IR-Distance-Interrupter-p-1278.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-IR_Distance_Interrupter_v1.2/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-IR_Distance_Interrupter_v1.2/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - TF Mini LiDAR
@@ -613,7 +613,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeedstudio-Grove-TF-Mini-LiDAR.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-TF_Mini_LiDAR/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-TF_Mini_LiDAR/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove-Doppler-Radar
@@ -631,7 +631,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Doppler-Radar-BGT24LTR11-p-4572.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Doppler-Radar/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Doppler-Radar/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Time of Flight Distance Sensor VL53L0X
@@ -649,7 +649,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Time-of-Flight-Distance-Sensor-VL53L0X.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Time_of_Flight_Distance_Sensor-VL53L0X/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Time_of_Flight_Distance_Sensor-VL53L0X/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - 80cm Infrared Proximity Sensor
@@ -667,7 +667,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-80cm-Infrared-Proximity-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-80cm_Infrared_Proximity_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-80cm_Infrared_Proximity_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Gesture V1.0
@@ -685,7 +685,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Gesture-PAJ7620U2.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Gesture_v1.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Gesture_v1.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Adjustable PIR Motion Sensor
@@ -703,7 +703,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Adjustable-PIR-Motion-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Adjustable_PIR_Motion_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Adjustable_PIR_Motion_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Calidad del Aire
@@ -723,7 +723,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Laser-PM2-5-Sensor-HM3301.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Laser_PM2.5_Sensor-HM3301/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Laser_PM2.5_Sensor-HM3301/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Dust Sensor
@@ -741,7 +741,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Dust-Sensor-PPD42NS.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Dust_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Dust_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Air Quality Sensor v1.3
@@ -759,7 +759,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Air-Quality-Sensor-v1-3-Arduino-Compatible.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Air_Quality_Sensor_v1.3/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Air_Quality_Sensor_v1.3/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de formaldehído
@@ -777,7 +777,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Formaldehyde-Sensor-SFA30-p-5204.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Formaldehyde-Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Formaldehyde-Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Gas
@@ -797,7 +797,7 @@ Tenemos varios tipos de sensores Grove, incluyendo pero no limitándose a sensor
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor-v2-p-4569.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Multichannel-Gas-Sensor-V2/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Multichannel-Gas-Sensor-V2/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Módulo de sensor de gas
@@ -843,7 +843,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove-Gas_Sensor-MQ2/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Gas_Sensor-MQ2/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Gas(O₂)
@@ -861,7 +861,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Oxygen-Sensor-ME2-O2-f20.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Gas_Sensor-O2/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Gas_Sensor-O2/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Gas O₂(MIX8410)
@@ -879,7 +879,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Oxygen-Sensor-MIX8410-p-4697.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Gas_Sensor-O2-MIX8410/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Gas_Sensor-O2-MIX8410/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Oxígeno Pro(GGC2330-O2)
@@ -897,7 +897,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Oxygen-Sensor-Pro-Pre-calibration-p-4896.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Oxygen-Sensor-Pro/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Oxygen-Sensor-Pro/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Alcohol
@@ -915,7 +915,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Alcohol-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Alcohol_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Alcohol_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de CO2
@@ -933,7 +933,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Carbon-Dioxide-Sensor-MH-Z16.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-CO2_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-CO2_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor Inteligente de Calidad del Aire (SGP41)
@@ -951,7 +951,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Air-Quality-Sensor-SGP41-p-5687.html?queryID=3ac9c3a1ed9e1a56a66b142e8282868a&objectID=5687&indexName=bazaar_retailer_products" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove-smart-air-quality-sensor-sgp41/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/grove-smart-air-quality-sensor-sgp41/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove-Sensor de Gas VOC y eCO2 (SGP30)
@@ -969,7 +969,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-VOC-and-eCO2-Gas-Sensor-for-Arduino-SGP30.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Gas VOC (SGP40)
@@ -987,7 +987,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Air-Quality-Sensor-SGP40-p-5700.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove_voc_gas_sensor_sgp40/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/grove_voc_gas_sensor_sgp40/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor HCHO
@@ -1005,7 +1005,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-HCHO-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-HCHO_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-HCHO_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Gas Multicanal
@@ -1023,7 +1023,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Multichannel_Gas_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Multichannel_Gas_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Barómetro
@@ -1043,7 +1043,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Barometer-High-Accuracy.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Barometer-High-Accuracy/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Barometer-High-Accuracy/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Barómetro (BME280)
@@ -1061,7 +1061,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-BME280-Environmental-Sensor-Temperature-Humidity-Barometer.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Barometer_Sensor-BME280/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Barometer_Sensor-BME280/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Barómetro (BMP280)
@@ -1079,7 +1079,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Barometer-Sensor-BMP280.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Barometer_Sensor-BMP280/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Barometer_Sensor-BMP280/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Presión Barométrica de Alta Precisión DPS310
@@ -1097,7 +1097,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-High-Precision-Barometer-Sensor-DPS310-p-4397.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-High-Precision-Barometric-Pressure-Sensor-DPS310/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-High-Precision-Barometric-Pressure-Sensor-DPS310/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Kit de Sensor de Presión Integrado
@@ -1115,7 +1115,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Integrated-Pressure-Sensor-Kit-MPX5700AP-p-4295.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Integrated-Pressure-Sensor-Kit/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Integrated-Pressure-Sensor-Kit/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Acelerómetro
@@ -1135,7 +1135,7 @@ El módulo Grove - Sensor de Gas es útil para la detección de fugas de gas (en
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-D7S-Vibration-Sensor-p-5701.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove-d7s-vibration-sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/grove-d7s-vibration-sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Acelerómetro Digital de 3 Ejes
@@ -1162,14 +1162,14 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove-Gas_Sensor-MQ2/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Gas_Sensor-MQ2/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 <br /><br /><br /><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-3-Axis_Digital_Accelerometer-16g/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-3-Axis_Digital_Accelerometer-16g/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Acelerómetro Digital de 3 Ejes (LIS3DHTR)
@@ -1187,7 +1187,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR-p-4533.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Acelerómetro Analógico de 3 Ejes
@@ -1205,7 +1205,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-3-Axis-Analog-Accelerometer-ADXL335.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-3-Axis_Analog_Accelerometer/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-3-Axis_Analog_Accelerometer/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Brújula Digital de 3 Ejes v2.0
@@ -1223,7 +1223,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-3-Axis-Digital-Compass-V2.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-3-Axis_Digitial_Compass_v2.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-3-Axis_Digitial_Compass_v2.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Acelerómetro Digital de 3 Ejes ±16g Ultra-bajo Consumo (BMA400)
@@ -1241,7 +1241,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-16g-Ultra-low-Power-BMA400.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-3-Axis_Digital_Accelerometer±16g_Ultra-low_Power-BMA400/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-3-Axis_Digital_Accelerometer±16g_Ultra-low_Power-BMA400/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprende Más</font></span></strong></a>
 </div>
 
 #### Grove - Acelerómetro y Giroscopio de 6 Ejes
@@ -1259,7 +1259,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-6-Axis-Accelerometer-Gyroscope.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-6-Axis_AccelerometerAndGyroscope/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-6-Axis_AccelerometerAndGyroscope/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Acelerómetro y Giroscopio de 6 Ejes (BMI088)
@@ -1277,7 +1277,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-6-Axis-Accelerometer-Gyroscope-BMI088.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-6-Axis_Accelerometer&Gyroscope_BMI088/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-6-Axis_Accelerometer&Gyroscope_BMI088/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - IMU 9DOF(lcm20600+AK09918)
@@ -1295,7 +1295,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-IMU-9DOF-ICM20600-AK09918.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-IMU_9DOF-lcm20600+AK09918/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-IMU_9DOF-lcm20600+AK09918/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Luz
@@ -1315,7 +1315,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Lightning-Sensor-AS3935-p-5603.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove-lightning-sensor-as3935/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/grove-lightning-sensor-as3935/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Luz Digital
@@ -1333,7 +1333,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Digital_Light_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Digital_Light_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Luz
@@ -1351,7 +1351,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Light-Sensor-v1-2-LS06-S-phototransistor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Light_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Light_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Luz Solar
@@ -1369,7 +1369,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Sunlight-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Sunlight_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Sunlight_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor UV
@@ -1387,7 +1387,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-UV-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-UV_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-UV_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Receptor Infrarrojo
@@ -1405,7 +1405,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Receiver.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Infrared_Receiver/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Infrared_Receiver/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Detector de Líneas V1.1
@@ -1423,7 +1423,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Line-Finder-v1-1.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Line_Finder/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Line_Finder/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Llama
@@ -1441,7 +1441,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Flame-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Flame_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Flame_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor Reflectivo Infrarrojo
@@ -1459,7 +1459,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Infrared-Reflective-Sensor-v1-2.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Infrared_Reflective_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Infrared_Reflective_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Biométrico
@@ -1479,7 +1479,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Finger-clip-Heart-Rate-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Finger-clip_Heart_Rate_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Finger-clip_Heart_Rate_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Detector EMG
@@ -1497,7 +1497,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-EMG-Detector-p-1737.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-EMG_Detector/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-EMG_Detector/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Frecuencia Cardíaca con Clip para Oreja
@@ -1515,7 +1515,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Ear-clip-Heart-Rate-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Ear-clip_Heart_Rate_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Ear-clip_Heart_Rate_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor GSR
@@ -1533,7 +1533,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-GSR-sensor-p-1614.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-GSR_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-GSR_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Sonido
@@ -1553,7 +1553,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Sound-Sensor-Based-on-LM358-amplifier-Arduino-Compatible.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Sound_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Sound_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Volumen
@@ -1571,7 +1571,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Loudness-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Loudness_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Loudness_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Micrófono Analógico
@@ -1589,7 +1589,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Analog-Microphone-p-4593.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Analog-Microphone/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Analog-Microphone/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Grabadora v2.0
@@ -1607,7 +1607,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Recorder-v2-0-p-4552.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Recorder_v2.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Recorder_v2.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove Reconocimiento de Voz Offline
@@ -1625,7 +1625,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Offline-Voice-Recognition-Module-p-5861.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Offline-Voice-Recognition/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Offline-Voice-Recognition/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Táctil
@@ -1645,7 +1645,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Touch-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Touch_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Touch_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Ángulo Rotatorio
@@ -1663,7 +1663,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Rotary_Angle_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Rotary_Angle_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Grove - Sensor de Fuerza Redondo FSR402
@@ -1681,7 +1681,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Round-Force-Sensor-FSR402.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Round_Force_Sensor_FSR402/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Round_Force_Sensor_FSR402/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor Inductivo de 2 Canales(LDC1612)
@@ -1699,7 +1699,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-2-Channel-Inductive-Sensor-LDC1612.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-2_Channel_Inductive_Sensor-LDC1612/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-2_Channel_Inductive_Sensor-LDC1612/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor Táctil Capacitivo I2C de 12 Teclas V3 (MPR121)
@@ -1717,7 +1717,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121-p-4694.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove Teclado Táctil Capacitivo de 12 Canales (ATtiny1616)
@@ -1735,7 +1735,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616-p-4068.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616-/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616-/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Líquido
@@ -1755,7 +1755,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-ORP-Sensor-Kit-Pro-p-5570.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-ORP-Sensor-Pro/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-ORP-Sensor-Pro/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Agua
@@ -1773,7 +1773,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Water-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Water_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Water_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Nivel de Agua
@@ -1791,7 +1791,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Water-Level-Sensor-10CM-p-4443.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Water-Level-Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Water-Level-Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor TDS
@@ -1809,7 +1809,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-TDS-Sensor-p-4400.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-TDS-Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-TDS-Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Medidor de Sensor de Turbidez para Arduino V1.0
@@ -1827,7 +1827,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Turbidity-Sensor-p-4399.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Turbidity-Sensor-Meter-for-Arduino-V1.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Turbidity-Sensor-Meter-for-Arduino-V1.0/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Movimiento
@@ -1847,7 +1847,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-PIR-Motion-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-PIR_Motion_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-PIR_Motion_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor PIR Digital
@@ -1865,7 +1865,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Digital-PIR-Motion-Sensor-p-4524.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Digital-PIR-Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Digital-PIR-Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Interruptor de Inclinación
@@ -1883,7 +1883,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Tilt-Switch.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Tilt_Switch/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Tilt_Switch/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Vibración Piezoeléctrico
@@ -1901,7 +1901,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Piezo-Vibration-Sensor.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Piezo_Vibration_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Piezo_Vibration_Sensor/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Potenciómetro Deslizante
@@ -1919,7 +1919,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Slide-Potentiometer.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Slide_Potentiometer/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Slide_Potentiometer/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Codificador Rotatorio Óptico (TCUT1600X01)
@@ -1937,7 +1937,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Optical-Rotary-Encoder-TCUT1600X01.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Optical_Rotary_Encoder-TCUT1600X01/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Optical_Rotary_Encoder-TCUT1600X01/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Sensor de Posición Rotatorio Magnético de 12 bits / Codificador (AS5600)
@@ -1955,7 +1955,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-12-bit-Magnetic-Rotary-Position-Sensor-AS5600-p-4192.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-12-bit-Magnetic-Rotary-Position-Sensor-AS5600/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-12-bit-Magnetic-Rotary-Position-Sensor-AS5600/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove-Codificador
@@ -1973,7 +1973,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Encoder.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Encoder/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Encoder/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 #### Grove - Contador de Pasos(BMA456)
@@ -1991,7 +1991,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Step-Counter-BMA456.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/Grove-Step_Counter-BMA456/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/Grove-Step_Counter-BMA456/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ### Peso
@@ -2011,7 +2011,7 @@ El Grove - 3-Axis Digital Accelerometer es un acelerómetro digital de 3 ejes qu
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-ADC-for-Load-Cell-HX711-p-4361.html" target="_blank"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Comprar Ahora</font></span></strong></a>
-    <a class="get_one_now_item" href="/grove_adc_for_load_cell_hx711/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
+    <a class="get_one_now_item" href="/es/grove_adc_for_load_cell_hx711/"  target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Aprender Más</font></span></strong></a>
 </div>
 
 ## Co-Crear sensores Grove con Seeed Studio Fusion

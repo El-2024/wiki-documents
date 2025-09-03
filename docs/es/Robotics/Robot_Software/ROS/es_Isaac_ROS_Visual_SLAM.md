@@ -16,7 +16,7 @@ last_update:
 # Despliegue de Isaac ROS Visual SLAM  
 
 ## Prerrequisitos  
-Antes de desplegar Visual SLAM, asegúrate de que el entorno Isaac ROS esté configurado correctamente en tu ReComputer [Guía de Instalación](/install_isaacros). Si ROS2 no está instalado, consulta [este documento](/install_ros2_humble).  
+Antes de desplegar Visual SLAM, asegúrate de que el entorno Isaac ROS esté configurado correctamente en tu ReComputer [Guía de Instalación](/es/install_isaacros). Si ROS2 no está instalado, consulta [este documento](/es/install_ros2_humble).  
 
 
 ## 1. Configuración del Entorno  

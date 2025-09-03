@@ -13,7 +13,7 @@ last_update:
 
 **Esta no es la versión más reciente de Seeeduino Stalker y ha sido descontinuada.
 La versión más reciente se puede encontrar aquí: [Seeeduino Stalker v2.1](https://seeeddoc.github.io/Seeeduino_Stalker_v2.1/)
-Consulta <a href="/Seeeduino_Stalker#Comparison_between_various_versions_of_Seeeduino_Stalker" ><span><font size={"3"}> Arduino </font></span></a> para comparación entre v1.0, v2.0 y v2.1.**
+Consulta <a href="/es/Seeeduino_Stalker#Comparison_between_various_versions_of_Seeeduino_Stalker" ><span><font size={"3"}> Arduino </font></span></a> para comparación entre v1.0, v2.0 y v2.1.**
 
 Enlace a la página del producto para este dispositivo (sigue este enlace para comprar):
 **Seeeduino Stalker Atmega 168P v1.0 Modelo: [ARD125B5P](https://www.seeedstudio.com/depot/seeeduino-stalker-atmega-168-p-639.html?cPath=79_80)**

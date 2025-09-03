@@ -25,17 +25,17 @@ Después de LinkIt ONE, lanzamos LinkIt Smart 7688 y LinkIt Smart 7688 Duo, ambo
 
 Aquí está la lista de las placas LinkIt que puedes encontrar en la Wiki de Seeed. La lista se actualizará constantemente.
 
-- [Arduino Breakout para LinkIt Smart 7688 Duo](/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
-- [Breakout para LinkIt Smart 7688](/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
-- [Breakout para LinkIt Smart 7688 v2.0](/Breakout_for_LinkIt_Smart_7688_v2.0/)
-<!-- - [Grove - Starter Kit for LinkIt ONE](/_Grove-Starter_Kit_for_LinkIt_ONE/) -->
-<!-- - [Grove Breakout for LinkIt Smart 7688 Duo](/_Grove_Breakout_for_LinkIt_Smart_7688_Duo/) -->
-- [Kit de inicio Grove para LinkIt Smart7688 Duo](/Grove_Starter_kit_for_LinkIt_Smart7688_Duo/)
-<!-- - [LinkIt ONE](/LinkIt_ONE/) -->
-<!-- - [LinkIt Smart 7688](/LinkIt_Smart_7688/) -->
-<!-- - [LinkIt Smart 7688 Duo](/LinkIt_Smart_7688_Duo/) -->
-<!-- - [Linkit Connect 7681](/Linkit_Connect_7681/) -->
-<!-- - [Sidekick Basic Kit for LinkIt ONE](/Sidekick_Basic_Kit_for_LinkIt_ONE/) -->
+- [Arduino Breakout para LinkIt Smart 7688 Duo](/es/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
+- [Breakout para LinkIt Smart 7688](/es/Arduino_Breakout_for_LinkIt_Smart_7688_Duo/)
+- [Breakout para LinkIt Smart 7688 v2.0](/es/Breakout_for_LinkIt_Smart_7688_v2.0/)
+<!-- - [Grove - Starter Kit for LinkIt ONE](/es/_Grove-Starter_Kit_for_LinkIt_ONE/) -->
+<!-- - [Grove Breakout for LinkIt Smart 7688 Duo](/es/_Grove_Breakout_for_LinkIt_Smart_7688_Duo/) -->
+- [Kit de inicio Grove para LinkIt Smart7688 Duo](/es/Grove_Starter_kit_for_LinkIt_Smart7688_Duo/)
+<!-- - [LinkIt ONE](/es/LinkIt_ONE/) -->
+<!-- - [LinkIt Smart 7688](/es/LinkIt_Smart_7688/) -->
+<!-- - [LinkIt Smart 7688 Duo](/es/LinkIt_Smart_7688_Duo/) -->
+<!-- - [Linkit Connect 7681](/es/Linkit_Connect_7681/) -->
+<!-- - [Sidekick Basic Kit for LinkIt ONE](/es/Sidekick_Basic_Kit_for_LinkIt_ONE/) -->
 
 ¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes tipos de soporte para asegurar que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para atender diferentes preferencias y necesidades.
 

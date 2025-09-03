@@ -14,8 +14,8 @@ last_update:
 
 ## Comenzando con Linkstar
 
-- [Introducción con Descripción General del Hardware](/Linkstar_Datasheet)
-- [Instalación del Sistema Operativo Original](/linkstar-install-system)
+- [Introducción con Descripción General del Hardware](/es/Linkstar_Datasheet)
+- [Instalación del Sistema Operativo Original](/es/linkstar-install-system)
 
 ## Aplicaciones de Linkstar presentadas por Seeed Studio
 

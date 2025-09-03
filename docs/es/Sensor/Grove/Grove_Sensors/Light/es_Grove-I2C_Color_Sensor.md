@@ -134,7 +134,7 @@ void loop()
 
 ### Ejemplos/Aplicaciones del Sensor de Color
 
-Este ejemplo muestra cómo usar las características del Grove - Sensor de Color I2C y mostrar el color detectado con un [LED RGB Encadenable Grove](/Grove-Chainable_RGB_LED/).
+Este ejemplo muestra cómo usar las características del Grove - Sensor de Color I2C y mostrar el color detectado con un [LED RGB Encadenable Grove](/es/Grove-Chainable_RGB_LED/).
 
 :::note
 Si no has descargado la <a href="https://github.com/Seeed-Studio/Grove_Chainable_RGB_LED">biblioteca del LED RGB Encadenable Grove</a> a tu Arduino IDE antes, por favor descarga y configura la biblioteca primero.

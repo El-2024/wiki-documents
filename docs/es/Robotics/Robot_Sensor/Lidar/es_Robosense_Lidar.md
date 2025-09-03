@@ -26,7 +26,7 @@ Esta wiki proporciona una guía paso a paso para instalar y configurar RoboSense
 
 
 ## Prerrequisitos
-- __[reComputer serie J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__: Ya completó la [instalación del sistema JetPack 5.x](/reComputer_J4012_Flash_Jetpack) y el [entorno ROS Noetic](/installing_ros1) según el tutorial. 
+- __[reComputer serie J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__: Ya completó la [instalación del sistema JetPack 5.x](/es/reComputer_J4012_Flash_Jetpack) y el [entorno ROS Noetic](/es/installing_ros1) según el tutorial. 
 
 - __RoboSense toda la serie lidar__
 

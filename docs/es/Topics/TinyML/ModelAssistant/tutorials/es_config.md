@@ -103,7 +103,7 @@ model=dict(
 
 El dataset y el pipeline de datos necesitan ser configurados para construir el dataloader. Debido a la complejidad de esta parte, utilizamos variables intermedias para simplificar la escritura de las configuraciones del dataloader. Métodos de argumentación de datos más complejos se pueden encontrar en la ruta `sscma/datasets/pipelines`.
 
-Demostraremos aquí el pipeline de entrenamiento y prueba para FOMO, que utiliza el [Custom COCO_MASK Dataset](/ModelAssistant_Tutorials_Datasets):
+Demostraremos aquí el pipeline de entrenamiento y prueba para FOMO, que utiliza el [Custom COCO_MASK Dataset](/es/ModelAssistant_Tutorials_Datasets):
 
 ```python
 dataset_type='FomoDatasets'   # Dataset type, this will be used to define the dataset

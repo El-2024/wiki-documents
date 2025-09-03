@@ -14,7 +14,7 @@ last_update:
 
 Siendo un socio confiable de hardware de Internet de las Cosas (IOT) desde 2008, Seeed Studio se dedica a realizar réplicas digitales interactivas de nuestro mundo físico. Este sitio web es una plataforma de código abierto con una colección de todos los wikis actualmente publicados por Seeed Studio y actualizado semanalmente para mostrar nuestra gama de productos e investigación, que incluye la digitalización del entorno natural.
 
-{/*We here also present you our current accomplishments and <strong><a href="/Solutions"><span style={{color: '8DC215', fontSize: '1.2em'}}>  Solution </span></a></strong> and we are looking for your contributions.*/}
+{/*We here also present you our current accomplishments and <strong><a href="/es/Solutions"><span style={{color: '8DC215', fontSize: '1.2em'}}>  Solution </span></a></strong> and we are looking for your contributions.*/}
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/New_Wiki_Platform/example/showcase2.png" alt="pir" width={1000} height="auto" /></p>
 
@@ -22,13 +22,13 @@ Siendo un socio confiable de hardware de Internet de las Cosas (IOT) desde 2008,
 
 - Esta plataforma se enfocará en los temas principales como se muestra en la barra lateral, con información actualizada sobre todos nuestros productos.
 
-  - <strong><a href="/Sensor_Network"><span style={{color: '8DC215', fontSize: '1.2em'}}> Sensores y Detección</span></a></strong>
-  - <strong><a href="/Network"><span style={{color: '8DC215', fontSize: '1.2em'}}> Redes</span></a></strong>
-  - <strong><a href="/Edge_Computing"><span style={{color: '8DC215', fontSize: '1.2em'}}>  Computación en el Borde </span></a></strong>
-  - <strong><a href="/Cloud"><span style={{color: '8DC215', fontSize: '1.2em'}}>  Servicios en la Nube</span></a></strong>
-  - <strong><a href="/topicintroduction"><span style={{color: '8DC215', fontSize: '1.2em'}}>Temas de Tecnología</span></a></strong>
-  - <strong><a href="/Contributor"><span style={{color: '8DC215', fontSize: '1.2em'}}> Programa de Contribuidores</span></a></strong>
-  - <strong><a href="/weekly_wiki"><span style={{color: '8DC215', fontSize: '1.2em'}}> Wiki Semanal </span></a></strong>
+  - <strong><a href="/es/Sensor_Network"><span style={{color: '8DC215', fontSize: '1.2em'}}> Sensores y Detección</span></a></strong>
+  - <strong><a href="/es/Network"><span style={{color: '8DC215', fontSize: '1.2em'}}> Redes</span></a></strong>
+  - <strong><a href="/es/Edge_Computing"><span style={{color: '8DC215', fontSize: '1.2em'}}>  Computación en el Borde </span></a></strong>
+  - <strong><a href="/es/Cloud"><span style={{color: '8DC215', fontSize: '1.2em'}}>  Servicios en la Nube</span></a></strong>
+  - <strong><a href="/es/topicintroduction"><span style={{color: '8DC215', fontSize: '1.2em'}}>Temas de Tecnología</span></a></strong>
+  - <strong><a href="/es/Contributor"><span style={{color: '8DC215', fontSize: '1.2em'}}> Programa de Contribuidores</span></a></strong>
+  - <strong><a href="/es/weekly_wiki"><span style={{color: '8DC215', fontSize: '1.2em'}}> Wiki Semanal </span></a></strong>
 
 - Podrás encontrar documentación detallada de nuestros productos para **uso práctico** y **solución de problemas**, escenarios de IoT industrial, así como guías sobre herramientas de desarrollo abierto para ayudarte a comenzar con tus propios proyectos.
 
@@ -158,11 +158,11 @@ Continuaremos lanzando nuestros proyectos deseados, o los presentados por nuestr
 
 ### Más Introducción
 
-<strong><a href="/Contributor"><span style={{color: '8DC215', fontSize: '1.2em'}}>¡Descubre más sobre el Programa de Contribuidores haciendo clic aquí!</span></a></strong>
+<strong><a href="/es/Contributor"><span style={{color: '8DC215', fontSize: '1.2em'}}>¡Descubre más sobre el Programa de Contribuidores haciendo clic aquí!</span></a></strong>
 
 ## Wiki Semanal
 
-[Seeed Studio Weekly Wiki](/weekly_wiki) se publicará cada lunes y te presentará nuestro contenido más reciente, como nuestros nuevos productos, proyectos interesantes realizados por nuestro equipo de Seeeders, tutoriales, guías, introducciones y ¡cualquier cosa interesante y relevante!
+[Seeed Studio Weekly Wiki](/es/weekly_wiki) se publicará cada lunes y te presentará nuestro contenido más reciente, como nuestros nuevos productos, proyectos interesantes realizados por nuestro equipo de Seeeders, tutoriales, guías, introducciones y ¡cualquier cosa interesante y relevante!
 
 ![](https://files.seeedstudio.com/wiki/IndexWiki/logo.png)
 

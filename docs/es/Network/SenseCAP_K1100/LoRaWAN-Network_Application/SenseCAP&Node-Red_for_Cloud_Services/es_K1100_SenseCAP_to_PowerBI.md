@@ -138,7 +138,7 @@ Usamos el nodo **Network -> mqtt in** y configuramos mqtt en el formato de la AP
 - Puerto: 1883
 - Protocolo: MQTT V3.1.1
 - ID de Cliente: El formato es `org-<Organization ID>-<Random ID>`
-  - `<Orgnization ID>` Tu ID de organización. Lo hemos obtenido en [Obtener la API de SenseCAP](/K1100_sensecap_node-red#get-the-sensecap-api).
+  - `<Orgnization ID>` Tu ID de organización. Lo hemos obtenido en [Obtener la API de SenseCAP](/es/K1100_sensecap_node-red#get-the-sensecap-api).
   - `<Random ID>` usa tus propios números generados aleatoriamente o letras minúsculas.
 
 - Formato del Tema: `/device_sensor_data/<OrgID>/<DeviceEUI>/<Channel>/<Reserved>/<MeasurementID>`

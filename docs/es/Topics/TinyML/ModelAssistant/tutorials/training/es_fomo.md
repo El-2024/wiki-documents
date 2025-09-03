@@ -18,15 +18,15 @@ Para más información sobre MobileNet, consulta el artículo [MobileNets: Effic
 
 ## Preparar Conjuntos de Datos
 
-[SSCMA](https://github.com/Seeed-Studio/ModelAssistant) utiliza por defecto [COCO_MASK Datasets](/ModelAssistant_Tutorials_Datasets#SSCMA) para entrenar el modelo FOMO, consulta los siguientes pasos para completar la preparación de los conjuntos de datos.
+[SSCMA](https://github.com/Seeed-Studio/ModelAssistant) utiliza por defecto [COCO_MASK Datasets](/es/ModelAssistant_Tutorials_Datasets#SSCMA) para entrenar el modelo FOMO, consulta los siguientes pasos para completar la preparación de los conjuntos de datos.
 
-1. Consulta [Internet Datasets](/ModelAssistant_Tutorials_Datasets#SSCMA) para descargar y descomprimir el conjunto de datos.
+1. Consulta [Internet Datasets](/es/ModelAssistant_Tutorials_Datasets#SSCMA) para descargar y descomprimir el conjunto de datos.
 
 2. Recuerda su **ruta de carpeta** (ej. `datasets\mask`) de los conjuntos de datos descomprimidos, es posible que necesites usar esta ruta de carpeta más adelante.
 
 ## Elegir una Configuración
 
-Elegiremos un archivo de configuración apropiado dependiendo del tipo de tarea de entrenamiento que necesitemos realizar, lo cual ya hemos introducido en [Config](/ModelAssistant_Tutorials_Config), para una breve descripción de las funciones, estructura y principios del archivo de configuración.
+Elegiremos un archivo de configuración apropiado dependiendo del tipo de tarea de entrenamiento que necesitemos realizar, lo cual ya hemos introducido en [Config](/es/ModelAssistant_Tutorials_Config), para una breve descripción de las funciones, estructura y principios del archivo de configuración.
 
 Para el ejemplo del modelo FOMO, usamos `fomo_mobnetv2_0.35_x8_abl_coco.py` como archivo de configuración, que se encuentra en la carpeta bajo el directorio raíz de [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) `configs/fomo` y adicionalmente hereda el archivo de configuración `default_runtime_det.py`.
 
@@ -133,7 +133,7 @@ param_scheduler=[
 
 ## Entrenamiento del Modelo
 
-El entrenamiento del modelo requiere usar nuestro entorno de trabajo de [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) previamente configurado. Si siguió nuestra guía de [Instalación](/ModelAssistant_Introduce_Installation) usando Conda para instalar [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) en un entorno virtual llamado `sscma`, por favor asegúrese primero de que se encuentra actualmente en el entorno virtual.
+El entrenamiento del modelo requiere usar nuestro entorno de trabajo de [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) previamente configurado. Si siguió nuestra guía de [Instalación](/es/ModelAssistant_Introduce_Installation) usando Conda para instalar [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) en un entorno virtual llamado `sscma`, por favor asegúrese primero de que se encuentra actualmente en el entorno virtual.
 
 Luego, en el directorio raíz del proyecto [SSCMA](https://github.com/Seeed-Studio/ModelAssistant), ejecutamos el siguiente comando para entrenar un modelo de detección de mascarillas FOMO.
 
@@ -185,8 +185,8 @@ Si quieres una vista previa en tiempo real mientras realizas pruebas, puedes agr
 
 ### Evaluación
 
-Para probar y evaluar más a fondo el modelo en un dispositivo de computación de borde realista, necesitas exportar el modelo. En el proceso de exportar el modelo, [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) realizará algunas optimizaciones en el modelo, como poda del modelo, destilación, etc. Puedes consultar la sección [Exportar](/ModelAssistant_Tutorials_Export_Overview) para aprender más sobre cómo exportar modelos.
+Para probar y evaluar más a fondo el modelo en un dispositivo de computación de borde realista, necesitas exportar el modelo. En el proceso de exportar el modelo, [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) realizará algunas optimizaciones en el modelo, como poda del modelo, destilación, etc. Puedes consultar la sección [Exportar](/es/ModelAssistant_Tutorials_Export_Overview) para aprender más sobre cómo exportar modelos.
 
 ### Despliegue
 
-Después de exportar el modelo, puedes desplegar el modelo en el dispositivo de computación de borde para pruebas y evaluación. Puedes consultar la sección [Desplegar](/ModelAssistant_Deploy_Overview) para aprender más sobre cómo desplegar modelos.
+Después de exportar el modelo, puedes desplegar el modelo en el dispositivo de computación de borde para pruebas y evaluación. Puedes consultar la sección [Desplegar](/es/ModelAssistant_Deploy_Overview) para aprender más sobre cómo desplegar modelos.

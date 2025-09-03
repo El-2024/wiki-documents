@@ -851,7 +851,7 @@ Hay dos puertos USB 2.0 Tipo-A, a los cuales puedes conectar dispositivos USB co
 
 <div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/usb-c.png" /></div>
 
-USB Tipo-C es un puerto USB 2.0 utilizado para depuración serie o flasheo de imagen del SO dependiendo de la posición del interruptor de arranque. Para flashear el SO, consulta la [página Wiki de Flasheo de SO](/reterminal-dm-flash-OS)
+USB Tipo-C es un puerto USB 2.0 utilizado para depuración serie o flasheo de imagen del SO dependiendo de la posición del interruptor de arranque. Para flashear el SO, consulta la [página Wiki de Flasheo de SO](/es/reterminal-dm-flash-OS)
 
 ### Ranura para Tarjeta SIM
 
@@ -1205,7 +1205,7 @@ Tenga en cuenta que la versión estándar del reTerminal DM no viene con una abe
 - Módulo 4G EC25-EUX x1
 - Tarjeta SIM x1
 
-**Paso 1.** Por favor consulte la guía de [ensamblaje de hardware del módulo 4G EC25](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) para instalar el `Módulo 4G EC25` en la `ranura PCIe 4G/LTE` donde debería ver la serigrafía *`4G/LTE`*, y por favor también inserte la tarjeta sim habilitada para 4G en la [ranura de tarjeta sim](/reterminal-dm/#sim-card-slot), antes de encender el sistema.
+**Paso 1.** Por favor consulte la guía de [ensamblaje de hardware del módulo 4G EC25](/es/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) para instalar el `Módulo 4G EC25` en la `ranura PCIe 4G/LTE` donde debería ver la serigrafía *`4G/LTE`*, y por favor también inserte la tarjeta sim habilitada para 4G en la [ranura de tarjeta sim](/es/reterminal-dm/#sim-card-slot), antes de encender el sistema.
 
 **Paso 2.** Verifique si el EC25-EUX es detectado usando ```lsusb```
 
@@ -1280,7 +1280,7 @@ import TabItem from '@theme/TabItem';
     </a>
 </div>
 
-**Paso 1.** Por favor consulta la guía de [ensamblaje de hardware del Módulo LoraWAN®](/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna) para instalar el `Módulo LoraWAN® WM1302 SPI` en la `ranura Mini PCIe LoraWAN®` donde deberías ver la serigrafía *`Lora`*.
+**Paso 1.** Por favor consulta la guía de [ensamblaje de hardware del Módulo LoraWAN®](/es/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna) para instalar el `Módulo LoraWAN® WM1302 SPI` en la `ranura Mini PCIe LoraWAN®` donde deberías ver la serigrafía *`Lora`*.
 Instala los paquetes necesarios build-essential (el paquete build essential es un paquete Debian que contiene las herramientas necesarias para crear un paquete DEB desde código fuente) instalando el módulo.
 
 ```sh
@@ -1343,7 +1343,7 @@ Por favor, elige tu servidor de red Lora® preferido y usa el `EUI ID` como se m
     </a>
 </div>
 
-**Paso 1.** Por favor, consulta la guía de [ensamblaje de hardware del módulo LoraWAN®](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) para instalar el `Módulo LoraWAN® USB WM1302` en la `ranura Mini PCIe 4G` donde deberías ver la serigrafía *`4G`*.
+**Paso 1.** Por favor, consulta la guía de [ensamblaje de hardware del módulo LoraWAN®](/es/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) para instalar el `Módulo LoraWAN® USB WM1302` en la `ranura Mini PCIe 4G` donde deberías ver la serigrafía *`4G`*.
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/dmlora.png"/></div>
 

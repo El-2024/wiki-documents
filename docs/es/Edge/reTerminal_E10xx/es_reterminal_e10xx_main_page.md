@@ -26,7 +26,7 @@ A diferencia de las pantallas tradicionales que consumen energía continuamente,
   <a class="get_one_now_item" href="https://wiki.seeedstudio.com/es/getting_started_with_reterminal_e1001" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}>Wiki reTerminal E1001</font></span></strong>
   </a>
-  <a class="get_one_now_item" href="/reterminal_e10xx_main_page" target="_blank" rel="noopener noreferrer">
+  <a class="get_one_now_item" href="/es/reterminal_e10xx_main_page" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}>Obtener uno ahora</font></span></strong>
   </a>
 </div><br />
@@ -50,7 +50,7 @@ El reTerminal E1002 cuenta con una vibrante pantalla ePaper a todo color de 7.3 
   <a class="get_one_now_item" href="https://wiki.seeedstudio.com/es/getting_started_with_reterminal_e1002" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}>Wiki reTerminal E1002</font></span></strong>
   </a>
-  <a class="get_one_now_item" href="/reterminal_e10xx_main_page" target="_blank" rel="noopener noreferrer">
+  <a class="get_one_now_item" href="/es/reterminal_e10xx_main_page" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}>Obtener uno ahora</font></span></strong>
   </a>
 </div><br />
@@ -107,9 +107,9 @@ Create rich graphical interfaces using LVGL and the visual SquareLine Studio des
 
 ## Recursos
 
-- [Documentación de SenseCraft HMI](/reterminal_e10xx_main_page)
-- [Hoja de Datos del ESP32S3](/reterminal_e10xx_main_page)
-- [Repositorio de GitHub](/reterminal_e10xx_main_page)
+- [Documentación de SenseCraft HMI](/es/reterminal_e10xx_main_page)
+- [Hoja de Datos del ESP32S3](/es/reterminal_e10xx_main_page)
+- [Repositorio de GitHub](/es/reterminal_e10xx_main_page)
 
 ## Aviso de la FCC
 

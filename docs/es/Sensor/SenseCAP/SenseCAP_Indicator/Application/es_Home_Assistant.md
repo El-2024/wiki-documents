@@ -69,7 +69,7 @@ Ahora, comencemos con el proceso de integración. Sigue estos tres pasos princip
 
 ## Prerrequisitos
 
-Antes de comenzar, asegúrate de haber leído la [Guía del Usuario](/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator) de la placa SenseCAP Indicator para familiarizarte con su información de software y hardware.
+Antes de comenzar, asegúrate de haber leído la [Guía del Usuario](/es/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator) de la placa SenseCAP Indicator para familiarizarte con su información de software y hardware.
 
 ## Instalar el SO de Home Assistant {#install_HA}
 
@@ -562,7 +562,7 @@ Esta configuración YAML es específicamente para el panel de control y no debe 
 
 1. **SDK de Demostración**: El SDK de Demostración para el SenseCAP Indicator está disponible en [GitHub](https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32).
 2. **Archivo `indicator_ha.c`**: Este archivo contiene las funciones principales para la integración con Home Assistant. Puedes verlo [aquí](https://raw.githubusercontent.com/Seeed-Solution/SenseCAP_Indicator_ESP32/main/examples/indicator_ha/main/model/indicator_ha.c).
-3. **Guía del Usuario**: La Guía del Usuario proporciona información detallada sobre el software y hardware de la Placa SenseCAP Indicator. Puedes leerla [aquí](/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator).
+3. **Guía del Usuario**: La Guía del Usuario proporciona información detallada sobre el software y hardware de la Placa SenseCAP Indicator. Puedes leerla [aquí](/es/Sensor/SenseCAP/SenseCAP_Indicator/Get_started_with_SenseCAP_Indicator).
 4. **Guía de Instalación de Home Assistant**: Si eres nuevo en Home Assistant, esta guía te ayudará a instalarlo y configurarlo. Puedes encontrarla [aquí](https://www.home-assistant.io/installation/).
 5. **Guía de Introducción para ESP-IDF**: Esta guía proporciona pasos completos para configurar y usar ESP-IDF para construir proyectos. Puedes acceder a ella [aquí](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html).
 6. [Conceptos y terminología de Home Assistant](https://www.home-assistant.io/getting-started/concepts-terminology/)

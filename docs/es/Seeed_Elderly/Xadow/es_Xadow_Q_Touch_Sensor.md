@@ -80,7 +80,7 @@ Puedes ver:
 
 *   [Hoja de datos AT42QT107](https://files.seeedstudio.com/wiki/Xadow_Q_Touch_Sensor/res/AT42QT1070-MMH.pdf)
 
-<!-- *   [How to detect finger touch?](/How_to_detect_finger_touch) -->
+<!-- *   [How to detect finger touch?](/es/How_to_detect_finger_touch) -->
 
 ## Soporte Técnico y Discusión del Producto
 

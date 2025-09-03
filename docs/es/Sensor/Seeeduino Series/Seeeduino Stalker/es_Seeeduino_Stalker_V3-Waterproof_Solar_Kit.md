@@ -11,7 +11,7 @@ last_update:
 ---
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_V3-Waterproof_Solar_Kit.JPG)
 
-El Kit Stalker es un **registrador de datos** de nodo de **Red de Sensores Inalámbricos** basado en <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a>. El Seeeduino Stalker v3 es un nodo de Red de Sensores Inalámbricos compatible con Arduino rico en características. Su estructura modular y periféricos integrados como RTC, interfaz de tarjeta SD lo hacen conveniente para registrar valores de sensores con marca de tiempo precisa periódicamente. El Seeeduino Stalker es un candidato para todos sus proyectos de seguimiento, monitoreo y control.
+El Kit Stalker es un **registrador de datos** de nodo de **Red de Sensores Inalámbricos** basado en <a href="/es/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker_v3 </font></span></a>. El Seeeduino Stalker v3 es un nodo de Red de Sensores Inalámbricos compatible con Arduino rico en características. Su estructura modular y periféricos integrados como RTC, interfaz de tarjeta SD lo hacen conveniente para registrar valores de sensores con marca de tiempo precisa periódicamente. El Seeeduino Stalker es un candidato para todos sus proyectos de seguimiento, monitoreo y control.
 
 El Kit Stalker incluye todos los componentes necesarios para trabajar con Seeeduino Stalker v3.0. El Kit Stalker puede usarse al aire libre ya que viene con una carcasa de plástico impermeable. Por lo tanto, incluso puedes ponerlo en el agua si tienes alguna idea especial. El kit viene con un Panel Solar y una Batería LiPo. Pueden usarse en áreas remotas como desierto o selva trabajando solo con la energía solar recolectada y almacenada en la Batería LiPo.
 
@@ -27,7 +27,7 @@ El Kit Stalker incluye todos los componentes necesarios para trabajar con Seeedu
 <th>Cantidad</th>
 </tr>
 <tr>
-<td><a href="/Seeeduino-Stalker_v3"><span><font size={"3"}>Seeeduino-Stalker_v3</font></span></a></td>
+<td><a href="/es/Seeeduino-Stalker_v3"><span><font size={"3"}>Seeeduino-Stalker_v3</font></span></a></td>
 <td>El Nodo WSN Compatible con Arduino</td>
 <td>1</td>
 </tr>
@@ -142,7 +142,7 @@ Ten en cuenta que [UartSBee_V4](/UartSBee_V4 "UartSBee_V4") no se puede insertar
 ---
 <big>Primeros Pasos</big>
 
-Si eres nuevo en el mundo de la "Computación Física" y si Seeeduino Stalker es la primera plataforma de computación física con la que quieres comenzar, entonces te sugerimos que empieces con <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino </font></span></a>.
+Si eres nuevo en el mundo de la "Computación Física" y si Seeeduino Stalker es la primera plataforma de computación física con la que quieres comenzar, entonces te sugerimos que empieces con <a href="/es/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino </font></span></a>.
 
 Los siguientes pasos te ayudarán a ensamblar los recursos de hardware y software para comenzar con Seeeduino Stalker v3
 
@@ -232,7 +232,7 @@ Conexión Seeeduino Stalker v3 &lt;---&gt; UartSBee v4.0
 
     * **Ej:-** `DateTime dt(2015, 10, 1, 11, 43, 0, 4);`
 
-* compila y sube a <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>.
+* compila y sube a <a href="/es/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>.
 
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_v3_adjust.png)
 
@@ -250,7 +250,7 @@ Obtener Fecha/Hora Actual
 
   * **Ej:- `DateTime now = RTC.now();`**
 
-* compila y sube a <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>
+* compila y sube a <a href="/es/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>
 
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_v3_now.png)
 
@@ -268,7 +268,7 @@ Este ejemplo es una demostración de detección de interrupción desde la salida
 
 * Abre el ejemplo **interrupts.ino** de la biblioteca DS1337
 
-* compila y sube a <a href="/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>
+* compila y sube a <a href="/es/Seeeduino-Stalker_v3" ><span><font size={"3"}> Seeeduino-Stalker v3 </font></span></a>
 
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Stalker_V3-Waterproof_Solar_Kit/img/Seeeduino_Stalker_v3_interrupt.png)
 **salida de interrupts.ino**

@@ -996,7 +996,7 @@ No se pueden conectar 2 módulos LoRa® en la placa.
 El reComputer R1000-10 está alimentado por el CM4 con una versión Wi-Fi/BLE integrada, proporcionando los mismos parámetros Wi-Fi/BLE que el CM4. Para información detallada de parámetros, por favor consulte el sitio web oficial de Raspberry Pi.
 
 :::note
-Es importante tener en cuenta que debido a la carcasa metálica del reComputer R1000, las señales Wi-Fi/BLE pueden tener dificultades para penetrar el exterior metálico. Si requiere funcionalidad Wi-Fi/BLE, se recomienda comprar una antena externa y [haga clic aquí para las instrucciones de ensamblaje](/recomputer_r1000_assembly_guide/#assemble-wi-fible-antenna).
+Es importante tener en cuenta que debido a la carcasa metálica del reComputer R1000, las señales Wi-Fi/BLE pueden tener dificultades para penetrar el exterior metálico. Si requiere funcionalidad Wi-Fi/BLE, se recomienda comprar una antena externa y [haga clic aquí para las instrucciones de ensamblaje](/es/recomputer_r1000_assembly_guide/#assemble-wi-fible-antenna).
 :::
 
 #### Conectar wifi
@@ -1096,12 +1096,12 @@ exit
 La placa base del reComputer R1000 cuenta con dos ranuras Mini-PCIe, donde la ranura Mini-PCIe 1 soporta un módulo 4G usando el protocolo USB. El módulo 4G EC25 de Quectel ha sido completamente probado para ser compatible con el reComputer R1000.
 
 :::note
-Tenga en cuenta que si requiere funcionalidad 4G, es necesario comprar el módulo 4G correspondiente y la antena externa. [Por favor haga clic aquí para las instrucciones de ensamblaje](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna).
+Tenga en cuenta que si requiere funcionalidad 4G, es necesario comprar el módulo 4G correspondiente y la antena externa. [Por favor haga clic aquí para las instrucciones de ensamblaje](/es/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna).
 :::
 
 Para interactuar con un módulo 4G usando comandos AT a través de minicom, siga estos pasos:
 
-**Paso 1.** Por favor inserte la tarjeta SIM habilitada para 4G en la [ranura de tarjeta SIM](/recomputer_r/#sim-slot), antes de encender el sistema.
+**Paso 1.** Por favor inserte la tarjeta SIM habilitada para 4G en la [ranura de tarjeta SIM](/es/recomputer_r/#sim-slot), antes de encender el sistema.
 
 **Paso 2.** Verifique si el EC25-EUX es detectado usando ```lsusb```
 
@@ -1180,7 +1180,7 @@ import TabItem from '@theme/TabItem';
 
 <br />
 
-**Paso 1.** Por favor consulta la guía de [ensamblaje de hardware del Módulo LoraWAN®](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) para instalar el `Módulo LoraWAN® WM1302 SPI` en la `ranura Mini PCIe LoraWAN®` donde deberías ver la serigrafía *`Lora`*.
+**Paso 1.** Por favor consulta la guía de [ensamblaje de hardware del Módulo LoraWAN®](/es/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) para instalar el `Módulo LoraWAN® WM1302 SPI` en la `ranura Mini PCIe LoraWAN®` donde deberías ver la serigrafía *`Lora`*.
 
 **Paso 2.** escribe `sudo raspi-config` en la línea de comandos para abrir la Herramienta de Configuración de Software de Raspberry Pi:
 
@@ -1254,7 +1254,7 @@ cd ~/sx1302_hal/packet_forwarder
     </a>
 </div>
 
-**Paso 1.** Por favor, consulte la guía de [ensamblaje de hardware del módulo LoraWAN®](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) para instalar el `Módulo LoraWAN® USB WM1302` en la `ranura Mini PCIe 4G` donde debería ver la serigrafía *`4G`*.
+**Paso 1.** Por favor, consulte la guía de [ensamblaje de hardware del módulo LoraWAN®](/es/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna) para instalar el `Módulo LoraWAN® USB WM1302` en la `ranura Mini PCIe 4G` donde debería ver la serigrafía *`4G`*.
 
 **Paso 2.** escriba `sudo raspi-config` en la línea de comandos para abrir la Herramienta de Configuración de Software de Raspberry Pi:
 
@@ -1357,7 +1357,7 @@ Las ranuras Mini-PCIe ofrecen soporte para módulos Zigbee que utilizan el proto
 
 :::note
 Tenga en cuenta que si requiere funcionalidad Zigbee, es necesario comprar el módulo Zigbee correspondiente y la antena externa.
-[Haga clic aquí para las instrucciones de ensamblaje](/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna).
+[Haga clic aquí para las instrucciones de ensamblaje](/es/recomputer_r1000_assembly_guide/#assemble-4glorazigbee-module-and-antenna).
 :::
 
 #### Configurar reComputer R1000 con módulo Zigbee como Coordinador Zigbee
@@ -1424,14 +1424,14 @@ Luego puede conectar el dispositivo Zigbee al reComputer R1000 a través de ZHA,
 El reComputer R1000 funcionando como dispositivo alimentado puede soportar el estándar IEEE 802.3af agregando un módulo de fuente de alimentación PoE. Los usuarios necesitan desarmar el dispositivo para instalar el módulo PoE para la función Ethernet PoE.
 
 :::note
-El reComputer R1000 soporta alimentación PoE, pero el producto estándar no incluye un módulo PoE por defecto. Seeed puede proporcionar servicios de soldadura y ensamblaje PoE para pedidos de personalización por lotes. Sin embargo, si un cliente está probando una muestra, necesitará [soldar y ensamblar el módulo PoE por sí mismo](/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module).
+El reComputer R1000 soporta alimentación PoE, pero el producto estándar no incluye un módulo PoE por defecto. Seeed puede proporcionar servicios de soldadura y ensamblaje PoE para pedidos de personalización por lotes. Sin embargo, si un cliente está probando una muestra, necesitará [soldar y ensamblar el módulo PoE por sí mismo](/es/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module).
 :::
 
 ### Ranura M.2
 
 El reComputer R1000 soporta SSD NVMe 2280 y acelerador de IA (Hailo) mediante el uso de una ranura PCIe (J62) debajo de dos ranuras Mini-PCIe en la placa. Es importante notar que el PCIe del CM4 es gen2.0 con una velocidad teórica máxima de 5Gbps. Si está usando un SSD Gen3.0 o superior, puede no ser capaz de alcanzar la velocidad máxima del SSD. Después de las pruebas, el reTerminal DM con SSD instalado puede alcanzar una velocidad máxima de escritura de 230MB/s y una velocidad máxima de lectura de 370MB/s. Si no está seguro de qué SSDs son compatibles, puede comprar siguiendo la lista de accesorios a continuación.
 
-[Por favor haga clic aquí para instrucciones de ensamblaje](/recomputer_r1000_assembly_guide/#assemble-ssd).
+[Por favor haga clic aquí para instrucciones de ensamblaje](/es/recomputer_r1000_assembly_guide/#assemble-ssd).
 
 <div class="table-center">
 
@@ -1473,7 +1473,7 @@ Es importante tener en cuenta que no todas las tarjetas SSD disponibles en el me
 El TPM cuenta con el OPTIGA™ TPM SLB9670 de Infineon que cumple con la especificación TPM 2.0 del Trusted Computing Group (TCG) y se recomienda como chip de cifrado para el reComputer R1000. El chip cuenta con una interfaz SPI aplicada para el puerto J13 en la placa, para habilitar una raíz de confianza para la integridad de la plataforma, atestación remota y servicios criptográficos.
 
 :::note
-[Por favor haz clic aquí para las instrucciones de ensamblaje](/recomputer_r1000_assembly_guide/#assemble-tpm-20-module).
+[Por favor haz clic aquí para las instrucciones de ensamblaje](/es/recomputer_r1000_assembly_guide/#assemble-tpm-20-module).
 :::
 
 Si conectas el módulo TPM 2.0 al dispositivo, el siguiente código puede ayudar a verificar la conexión TPM.
@@ -1500,7 +1500,7 @@ La duración de respaldo proporcionada por el UPS depende en gran medida de la c
 
 :::note
 Para la función UPS, por favor contáctanos para más información, y la señal de alarma está activa en BAJO.
-[Por favor haz clic aquí para las instrucciones de ensamblaje](/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module).
+[Por favor haz clic aquí para las instrucciones de ensamblaje](/es/recomputer_r1000_assembly_guide/#assemble-ups-and-poe-module).
 :::
 
 Se utiliza un GPIO25 entre la CPU y la entrada de alimentación DC/AC para alertar a la CPU cuando la fuente de alimentación de 5V se desconecta. Entonces la CPU debe hacer algo urgente en un script antes del agotamiento de energía del supercondensador y ejecutar un `$ shutdown`

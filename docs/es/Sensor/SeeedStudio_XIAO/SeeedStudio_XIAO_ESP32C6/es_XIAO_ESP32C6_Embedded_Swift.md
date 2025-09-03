@@ -75,7 +75,7 @@ Para comenzar con Embedded Swift en el Seeed Studio XIAO-C6, necesitarás las si
 **Instalación de ESP-IDF:**
 
 - Sigue la página de [Linux y macOS](https://docs.espressif.com/projects/esp-idf/en/release-v5.2/esp32/get-started/linux-macos-setup.html) para instalar ESP-IDF
-- Sigue la [guía de Desarrollo en XIAO usando Espressif ESP-IDF](/xiao_idf) para pasos detallados.
+- Sigue la [guía de Desarrollo en XIAO usando Espressif ESP-IDF](/es/xiao_idf) para pasos detallados.
 
 **Instalación de Swift Toolchain:**
 

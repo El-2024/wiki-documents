@@ -34,11 +34,11 @@ Lista de partes
 
 | Nombre de las partes                                                                                                                | Cantidad |
 |---------------------------------------------------------------------------------------------------------------------------|----------|
-| [Grove - Sensor de Humedad](/Grove-Moisture_Sensor/)                                                                         | 1PC     |
+| [Grove - Sensor de Humedad](/es/Grove-Moisture_Sensor/)                                                                         | 1PC     |
 | [Grove - Sensor de Temp&Humedad](https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temp-Humi-Sensor-SHT35.html?queryID=ea8d1729f76e80d6b1b53c492c74fcdb&objectID=35&indexName=bazaar_retailer_products)                | 1PC     |
 | [Grove - Sensor de Luz Digital](https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.html?queryID=c7822737fbcac80a47232a5fb1ac1e1d&objectID=1594&indexName=bazaar_retailer_products)      | 1PC     |
 | [Grove - Sensor de calidad del aire v1.3](https://www.seeedstudio.com/Grove-Air-Quality-Sensor-v1-3-Arduino-Compatible.html?queryID=c98f1d7e388efeeee92d1815abe557cb&objectID=700&indexName=bazaar_retailer_products) | 1PC     |
-| [Wio Link](/Wio_Link/)                                                                                                     | 1PC     |
+| [Wio Link](/es/Wio_Link/)                                                                                                     | 1PC     |
 | [Cable Micro USB - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html?queryID=a8b80828fdcd52ad1ae49daa5ed97191&objectID=1405&indexName=bazaar_retailer_products)                  | 1PC     |
 
 Una demostración simple
@@ -49,12 +49,12 @@ Esta demostración puede usarse como indicador de resultado de compilación.
 ### Guía Preliminar
 
 -   [Travis CI](https://travis-ci.org/)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/es/Wio_Link/)
 
 ### Material requerido
 
 -   [Wio Link APP](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/es/Wio_Link/)
 -   [Grove Relay](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   Una Cuenta de Travis CI
 -   Una Cuenta de GitHub

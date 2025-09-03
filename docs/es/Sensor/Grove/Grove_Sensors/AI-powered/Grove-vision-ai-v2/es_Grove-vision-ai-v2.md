@@ -149,7 +149,7 @@ Antes de conectar el Grove Vision AI V2 a tu computadora, mantén presionado el 
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "/grove_vision_ai_v2_software_support/#-arduino-library-introduction-" class="getting_started_label2"> Arduino(Seeed Studio XIAO) </a>
+          <a href= "/es/grove_vision_ai_v2_software_support/#-arduino-library-introduction-" class="getting_started_label2"> Arduino(Seeed Studio XIAO) </a>
           <br/>Reconocimiento de objetos o comunicación serie
       </div>
   </div>
@@ -160,7 +160,7 @@ Antes de conectar el Grove Vision AI V2 a tu computadora, mantén presionado el 
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "/grove_vision_ai_v2_software_support/#-no-code-getting-started-with-sensecraft-ai-" class="getting_started_label2"> SenseCraft AI Model Assistant</a>
+          <a href= "/es/grove_vision_ai_v2_software_support/#-no-code-getting-started-with-sensecraft-ai-" class="getting_started_label2"> SenseCraft AI Model Assistant</a>
           <br/>Despliegue y observación de modelos de IA sin experiencia en código
       </div>
   </div>
@@ -171,7 +171,7 @@ Antes de conectar el Grove Vision AI V2 a tu computadora, mantén presionado el 
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "/sensecraft-ai/application/application-for-homeassistant" class="getting_started_label2"> Conectando a Home Assistant</a>
+          <a href= "/es/sensecraft-ai/application/application-for-homeassistant" class="getting_started_label2"> Conectando a Home Assistant</a>
           <br/>Integrando Grove Vision AI V2 en Home Assistant
       </div>
   </div>
@@ -185,7 +185,7 @@ No es posible. Considerando la velocidad de fotogramas o la velocidad de inferen
 
 ### P2: ¿Qué cámaras admite Grove Vision AI V2? ¿Solo admite la OV5647-62?
 
-Puedes verificar [aquí](/Grove-vision-ai-v2-camera-supported). Actualmente hemos escrito controladores para la serie de cámaras OV5642, por lo que Grove Vision AI V2 admite toda la gama de cámaras Raspberry Pi OV5647, por ejemplo, la OV5647-62, OV5647-67 y OV5647-160. Las otras cámaras CSI son teóricamente compatibles, pero debido al hecho de que algunas de las cámaras no tienen controladores escritos para ellas o no tienen una unidad de procesamiento de color propia, puede haber un problema de que el color sea solo verde, y la pérdida de color completo tendrá un posible impacto en la precisión del reconocimiento.
+Puedes verificar [aquí](/es/Grove-vision-ai-v2-camera-supported). Actualmente hemos escrito controladores para la serie de cámaras OV5642, por lo que Grove Vision AI V2 admite toda la gama de cámaras Raspberry Pi OV5647, por ejemplo, la OV5647-62, OV5647-67 y OV5647-160. Las otras cámaras CSI son teóricamente compatibles, pero debido al hecho de que algunas de las cámaras no tienen controladores escritos para ellas o no tienen una unidad de procesamiento de color propia, puede haber un problema de que el color sea solo verde, y la pérdida de color completo tendrá un posible impacto en la precisión del reconocimiento.
 
 
 ## Recursos

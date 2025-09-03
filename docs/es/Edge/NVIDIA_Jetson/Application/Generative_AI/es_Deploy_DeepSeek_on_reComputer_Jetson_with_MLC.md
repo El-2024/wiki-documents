@@ -21,7 +21,7 @@ last_update:
 
 DeepSeek es una suite de modelos de IA de vanguardia optimizada para eficiencia, precisión y procesamiento en tiempo real. Con optimización avanzada para computación en el edge, DeepSeek permite inferencia de IA rápida y de baja latencia directamente en dispositivos Jetson, reduciendo la dependencia de la computación en la nube mientras maximiza el rendimiento.
 
-En un [wiki anterior](/deploy_deepseek_on_jetson), hemos proporcionado una guía rápida para desplegar DeepSeek en Jetson. Sin embargo, el modelo desplegado exitosamente no logró una velocidad de inferencia óptima.
+En un [wiki anterior](/es/deploy_deepseek_on_jetson), hemos proporcionado una guía rápida para desplegar DeepSeek en Jetson. Sin embargo, el modelo desplegado exitosamente no logró una velocidad de inferencia óptima.
 
 Este wiki proporciona una guía paso a paso para desplegar [DeepSeek](https://www.deepseek.com/) en dispositivos reComputer Jetson con [MLC](https://llm.mlc.ai/) para inferencia de IA eficiente en el edge.
 

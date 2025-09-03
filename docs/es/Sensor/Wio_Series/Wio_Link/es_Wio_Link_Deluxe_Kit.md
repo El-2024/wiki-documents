@@ -34,16 +34,16 @@ Lista de partes
 
 | Nombre de las partes                                                                                                                   | Cantidad |
 |------------------------------------------------------------------------------------------------------------------------------|----------|
-| [Grove - Button](/Grove-Button/)                                                                                              | 1PC     |
+| [Grove - Button](/es/Grove-Button/)                                                                                              | 1PC     |
 | [Grove - Relay](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products)                                                     | 1PC     |
-| [Grove - Moisture Sensor](/Grove-Moisture_Sensor/)                                                                            | 1PC     |
+| [Grove - Moisture Sensor](/es/Grove-Moisture_Sensor/)                                                                            | 1PC     |
 | [Grove - Temp&Humi Sensor](https://www.seeedstudio.com/Grove-I2C-High-Accuracy-Temp-Humi-Sensor-SHT35.html?queryID=ea8d1729f76e80d6b1b53c492c74fcdb&objectID=35&indexName=bazaar_retailer_products)                   | 1PC     |
 | [Grove - Digital Light Sensor](https://www.seeedstudio.com/Grove-Digital-Light-Sensor-TSL2561.html?queryID=c7822737fbcac80a47232a5fb1ac1e1d&objectID=1594&indexName=bazaar_retailer_products)         | 1PC     |
 | [Grove - Rotary Angle Sensor](https://www.seeedstudio.com/Grove-Rotary-Angle-Sensor.html?queryID=09e4592dcda53bdc593ca0f2267ef1a6&objectID=1803&indexName=bazaar_retailer_products)             | 1PC     |
 | [Grove - Protoshield](https://www.seeedstudio.com/Grove-Protoshield.html?queryID=6572c65d6d57e7c36173ff5c91363ef7&objectID=1801&indexName=bazaar_retailer_products)                             | 1PC     |
 | [Grove - Magnetic Switch](https://www.seeedstudio.com/Grove-Magnetic-Switch.html?queryID=d18ad991c05de7f74bbabc475ad4f905&objectID=1827&indexName=bazaar_retailer_products)                     | 1PC     |
-| [Grove - 3-Axis Digital Accelerometer(±1.5g)](/Grove-3-Axis_Digital_Accelerometer-1.5g/)                                      | 1PC     |
-| [Grove - IR Distance Interrupt](/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F)                                                         | 1PC     |
+| [Grove - 3-Axis Digital Accelerometer(±1.5g)](/es/Grove-3-Axis_Digital_Accelerometer-1.5g/)                                      | 1PC     |
+| [Grove - IR Distance Interrupt](/es/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F)                                                         | 1PC     |
 | [Grove - Barometer Sensor (BMP180)](https://www.seeedstudio.com/Grove-Barometer-Sensor-BMP18-p-1840.html?queryID=88bfef2ed146542948bba61263640b3d&objectID=1105&indexName=bazaar_retailer_products) | 1PC     |
 | [Grove - Air quality sensor v1.3](https://www.seeedstudio.com/Grove-Air-Quality-Sensor-v1-3-Arduino-Compatible.html?queryID=c98f1d7e388efeeee92d1815abe557cb&objectID=700&indexName=bazaar_retailer_products)    | 1PC     |
 | [Grove - Gesture](https://www.seeedstudio.com/Grove-Gesture-PAJ7620U2.html?queryID=e667328d3efe4bffe1ffde38dfda3d2e&objectID=677&indexName=bazaar_retailer_products)                                    | 1PC     |
@@ -52,7 +52,7 @@ Lista de partes
 | Grove - WS2812 Waterproof LED Strip - 30 LEDs 1 metro                                                                        | 1PC     |
 | [Micro USB Cable - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html?queryID=a8b80828fdcd52ad1ae49daa5ed97191&objectID=1405&indexName=bazaar_retailer_products)                     | 2PCS    |
 | [Grove - Servo](https://www.seeedstudio.com/Grove-Servo.html?queryID=0320acd9fad8e0fe780d097b1745a149&objectID=1626&indexName=bazaar_retailer_products)                                                    | 1PC     |
-| [Wio Link](/Wio_Link/)                                                                                                        | 2PCS    |
+| [Wio Link](/es/Wio_Link/)                                                                                                        | 2PCS    |
 
 Una demostración simple
 ------------------
@@ -62,12 +62,12 @@ Esta demostración puede usarse como indicador de resultados de compilación.
 ### Guía Preliminar
 
 -   [Travis CI](https://travis-ci.org/)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/es/Wio_Link/)
 
 ### Material requerido
 
 -   [Wio Link APP](https://www.seeedstudio.com/Wio-Link-Event-Kit-p-2611.html?queryID=3ab174447ce3813d2105c3db0e9e783a&objectID=537&indexName=bazaar_retailer_products)
--   [Wio Link](/Wio_Link/)
+-   [Wio Link](/es/Wio_Link/)
 -   [Grove Relay](https://www.seeedstudio.com/Grove-Relay.html?queryID=f15824e61eef2f0aa449144b0da3587c&objectID=1804&indexName=bazaar_retailer_products) × 3
 -   Una cuenta de Travis CI
 -   Una cuenta de GitHub

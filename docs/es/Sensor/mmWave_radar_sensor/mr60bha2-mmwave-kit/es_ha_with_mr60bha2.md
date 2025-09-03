@@ -50,7 +50,7 @@ Esta integración permite a los usuarios mejorar sus sistemas de hogar inteligen
 Para integrar efectivamente el Sensor MR60BHA2 mmWave con Home Assistant usando el XIAO ESP32C6, sigue estos pasos esenciales:
 
 :::caution
-Por favor asegúrate de haber [actualizado el firmware](/getting_started_with_mr60bha2_mmwave_kit#module-firmware-upgrade) del módulo MR60BHA2 a la versión más reciente.  
+Por favor asegúrate de haber [actualizado el firmware](/es/getting_started_with_mr60bha2_mmwave_kit#module-firmware-upgrade) del módulo MR60BHA2 a la versión más reciente.  
 El firmware más reciente añade la función de detección de presencia humana y detección de personal.
 :::
 
@@ -93,9 +93,9 @@ Al reunir los componentes necesarios y configurar Home Assistant con el compleme
 :::tip instalar Home Assistant
 También hemos escrito cómo instalar Home Assistant para algunos de los productos de Seeed Studio, por favor consúltalos.
 
-- [Comenzando con Home Assistant en ODYSSEY-X86](/ODYSSEY-X86-Home-Assistant)
-- [Comenzando con Home Assistant en reTerminal](/reTerminal_Home_Assistant)
-- [Comenzando con Home Assistant en LinkStar H68K/reRouter CM4](/h68k-ha-esphome)
+- [Comenzando con Home Assistant en ODYSSEY-X86](/es/ODYSSEY-X86-Home-Assistant)
+- [Comenzando con Home Assistant en reTerminal](/es/reTerminal_Home_Assistant)
+- [Comenzando con Home Assistant en LinkStar H68K/reRouter CM4](/es/h68k-ha-esphome)
 :::
 
 ### Paso 2: Preparando el Kit

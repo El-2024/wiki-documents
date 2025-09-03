@@ -82,7 +82,7 @@ asegúrate de la conexión correcta de los jumpers
 
 3. Abre Arduino IDE, abre File -&gt; Examples -&gt; Bluetooth_Shield_V2_Demo_Code -&gt; Slave_led, entonces puedes abrir el código del Esclavo
 
-4. Haz clic en Upload para Subir el código, si tienes algún problema sobre cómo iniciar Arduino, por favor haz clic [aquí](/Getting_Started_with_Seeeduino) para obtener ayuda.
+4. Haz clic en Upload para Subir el código, si tienes algún problema sobre cómo iniciar Arduino, por favor haz clic [aquí](/es/Getting_Started_with_Seeeduino) para obtener ayuda.
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Bluetooth_Shield_V2/img/Bluetooth_ide_1.jpg" alt="pir" width={600} height="auto" /></p>
 

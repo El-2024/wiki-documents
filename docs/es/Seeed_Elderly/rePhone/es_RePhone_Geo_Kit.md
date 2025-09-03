@@ -19,7 +19,7 @@ La combinación del módulo GSM y el módulo GPS es lo que hace brillante al ReP
 ---
 ### Xadow GSM+BLE
 
-<!-- Para más información sobre este módulo, por favor consulta la [**Página Wiki de Xadow GSM+BLE**](/Xadow_GSMPlusBLE). -->
+<!-- Para más información sobre este módulo, por favor consulta la [**Página Wiki de Xadow GSM+BLE**](/es/Xadow_GSMPlusBLE). -->
 
 <table>
 <tr>
@@ -74,7 +74,7 @@ La combinación del módulo GSM y el módulo GPS es lo que hace brillante al ReP
 
 ###   Xadow GPS v2
 
-<!-- For more info about this module please check on [**Xadow GPS V2 Wiki Page**](/Xadow_GPS_V2). -->
+<!-- For more info about this module please check on [**Xadow GPS V2 Wiki Page**](/es/Xadow_GPS_V2). -->
 
 <table>
 <tr>
@@ -165,7 +165,7 @@ La combinación del módulo GSM y el módulo GPS es lo que hace brillante al ReP
 
 ###   Xadow GSM Breakout
 
-<!-- For more info about this module please check on [**Xadow GSM Breakout Wiki Page**](/Xadow_GSM_Breakout). -->
+<!-- For more info about this module please check on [**Xadow GSM Breakout Wiki Page**](/es/Xadow_GSM_Breakout). -->
 
 <table>
 <tr>
@@ -275,7 +275,7 @@ Algunas preguntas frecuentes en la Comunidad RePhone son recopiladas y respondid
 
 ##  Recursos
 
-<!-- Please go the Wiki page [Xadow GPS V2](/Xadow_GPS_V2) for more info. -->
+<!-- Please go the Wiki page [Xadow GPS V2](/es/Xadow_GPS_V2) for more info. -->
 
 ## Soporte Técnico y Discusión de Productos
 

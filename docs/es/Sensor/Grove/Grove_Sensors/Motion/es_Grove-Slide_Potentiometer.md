@@ -379,7 +379,7 @@ Puedes salir de este programa simplemente presionando ++ctrl+c++.
 
 1.Deberías tener una raspberry pi y un grovepi o grovepi+.
 
-<!-- 链接有问题2.You should have completed configuring the development enviroment, otherwise follow [here](/GrovePi_Plus). -->
+<!-- 链接有问题2.You should have completed configuring the development enviroment, otherwise follow [here](/es/GrovePi_Plus). -->
 
 3.Conexión
 

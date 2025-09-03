@@ -70,8 +70,8 @@ Si no estás satisfecho con una imagen generada, puedes hacer clic en el botón 
 
 ¿Necesitas información más detallada para saber cómo usar los modelos ChatGPT y DALL·E?
 
-- [SenseCAP_Indicator_ChatGPT Chat Completions](/SenseCAP_Indicator_ChatGPT)
-- [SenseCAP_Indicator_DALL·E Image Generation](/SenseCAP_Indicator_DALL·E)
+- [SenseCAP_Indicator_ChatGPT Chat Completions](/es/SenseCAP_Indicator_ChatGPT)
+- [SenseCAP_Indicator_DALL·E Image Generation](/es/SenseCAP_Indicator_DALL·E)
 
 # **Soporte Técnico**
 **¿Necesitas ayuda con tu SenseCAP Indicator? ¡Estamos aquí para asistirte!**

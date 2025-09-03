@@ -61,7 +61,7 @@ Este proceso requiere poner el almacenamiento eMMC del CM4 en modo 'almacenamien
 
 **Para reTerminal**
 
-- **Paso 1:** Abre la carcasa y retira el disipador de calor del reTerminal para acceder al interruptor de selección de arranque. Por favor sigue los pasos de la [página Wiki de Introducción a reTerminal](/reTerminal) hasta que hayas cambiado el interruptor de modo de arranque.
+- **Paso 1:** Abre la carcasa y retira el disipador de calor del reTerminal para acceder al interruptor de selección de arranque. Por favor sigue los pasos de la [página Wiki de Introducción a reTerminal](/es/reTerminal) hasta que hayas cambiado el interruptor de modo de arranque.
 
 **Para reRouter**
 

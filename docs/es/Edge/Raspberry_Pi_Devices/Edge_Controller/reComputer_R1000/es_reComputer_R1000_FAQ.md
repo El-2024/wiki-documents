@@ -12,7 +12,7 @@ Este documento contiene todas las preguntas frecuentes relacionadas con la serie
 
 #### P1: ¿Cuál es la contraseña del usuario predeterminado "recomputer"?
 
-Para más detalles, haz clic [**aquí**](/R1000_default_username_password).
+Para más detalles, haz clic [**aquí**](/es/R1000_default_username_password).
 
 ## Soporte Técnico
 

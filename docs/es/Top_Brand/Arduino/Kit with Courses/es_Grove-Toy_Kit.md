@@ -21,7 +21,7 @@ El Kit de Juguetes Grove incluye:
 
 *   1 x [Grove - Chainable RGB LED](/Grove-Chainable_RGB_LED "Grove - Chainable RGB LED")
 
-*   1 x [Grove - Buzzer](/Grove_Starter_Kit_Plus/#7-grove-buzzer)
+*   1 x [Grove - Buzzer](/es/Grove_Starter_Kit_Plus/#7-grove-buzzer)
 
 *   1 x [Grove - PIR Motion Sensor](/Grove-PIR_Motion_Sensor "Grove - PIR Motion Sensor")
 

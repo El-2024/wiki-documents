@@ -44,7 +44,7 @@ Antes de proceder con el proceso de configuración, asegúrese de que su sistema
   sudo apt-get install nvidia-jetpack
   sudo apt install nvidia-jetson-services
   ```
-- Las cámaras IP o videos locales pueden ser transmitidos vía RTSP. (Recomendamos usar nuestro tutorial proporcionado de [NVStreamer](/getting_started_with_nvstreamer) para transmisión RTSP.)
+- Las cámaras IP o videos locales pueden ser transmitidos vía RTSP. (Recomendamos usar nuestro tutorial proporcionado de [NVStreamer](/es/getting_started_with_nvstreamer) para transmisión RTSP.)
 
 ## Comenzando
 
@@ -87,7 +87,7 @@ sudo docker ps
 </div>
 
 ## Agregar la entrada de transmisión RTSP
-Primero puede agregar una transmisión RTSP para que el modelo de detección zero-shot la use con el siguiente comando curl. Se recomienda usar el [tutorial de NVStreamer](/getting_started_with_nvstreamer) para transmisión.
+Primero puede agregar una transmisión RTSP para que el modelo de detección zero-shot la use con el siguiente comando curl. Se recomienda usar el [tutorial de NVStreamer](/es/getting_started_with_nvstreamer) para transmisión.
 - **Paso 1**: Reemplace `0.0.0.0` con la IP de su Jetson y el enlace `liveStreamUrl` con su enlace RTSP, luego ingrese el siguiente comando en la terminal:
     ```bash
     curl --location 'http://0.0.0.0:5010/api/v1/live-stream' \

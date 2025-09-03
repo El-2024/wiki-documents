@@ -54,7 +54,7 @@ Ahorra ese Arduino extra que tienes por ahí para otro proyecto, este dispositiv
 ---
 
 * Módulo compatible con Arduino con comunicación Bluetooth.
-<!-- *   Puerto Serie Bluetooth para PC cuando se conecta con [UartSBee](/UartSBee_V4) y se carga el programa SoftSerial al **ATMEGA168**. -->
+<!-- *   Puerto Serie Bluetooth para PC cuando se conecta con [UartSBee](/es/UartSBee_V4) y se carga el programa SoftSerial al **ATMEGA168**. -->
 
 :::caution
     *Se necesita alimentación de 3.3 V.
@@ -77,7 +77,7 @@ Vista inferior:
 ## Uso
 
 ---
-<!-- Ejemplo : Usar Bluetooth Bee-Standalone para controlar un [Grove-Red_LED](/Grove-Red_LED) con XBee carrier. -->
+<!-- Ejemplo : Usar Bluetooth Bee-Standalone para controlar un [Grove-Red_LED](/es/Grove-Red_LED) con XBee carrier. -->
 
 * Paso 1
 
@@ -218,7 +218,7 @@ Retira el cable USB del portador XBee y conecta la batería de 3.7 voltios al po
 
 * Paso 5
 
-<!-- Use another Bluetooth Bee connect to the Bluetooth Bee-Standalone.How to connect? You can refer to [Bluetooth Bee](/Bluetooth_Bee).When you are connected,you can control the LED by another Bluetooth Bee.The LED will work when you send "ON" to Bluetooth Bee-Standalone and it will be off when you send "SH"(short for SHUT). -->
+<!-- Use another Bluetooth Bee connect to the Bluetooth Bee-Standalone.How to connect? You can refer to [Bluetooth Bee](/es/Bluetooth_Bee).When you are connected,you can control the LED by another Bluetooth Bee.The LED will work when you send "ON" to Bluetooth Bee-Standalone and it will be off when you send "SH"(short for SHUT). -->
 
 ![](https://files.seeedstudio.com/wiki/Bluetooth_Bee_Standalone/img/Bluetooth_Bee-Standalone1.jpg)
 

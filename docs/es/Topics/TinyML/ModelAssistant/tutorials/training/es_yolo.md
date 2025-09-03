@@ -24,7 +24,7 @@ Esta sección describe cómo entrenar el modelo de medidor digital en los conjun
 
 ## Elegir una Configuración
 
-Elegiremos un archivo de configuración apropiado dependiendo del tipo de tarea de entrenamiento que necesitemos realizar, lo cual ya hemos introducido en [Config](/ModelAssistant_Tutorials_Config), para una breve descripción de las funciones, estructura y principios del archivo de configuración.
+Elegiremos un archivo de configuración apropiado dependiendo del tipo de tarea de entrenamiento que necesitemos realizar, lo cual ya hemos introducido en [Config](/es/ModelAssistant_Tutorials_Config), para una breve descripción de las funciones, estructura y principios del archivo de configuración.
 
 Para el ejemplo del modelo Swfit-YOLO, usamos `swift_yolo_tiny_1xb16_300e_coco.py` como archivo de configuración, que se encuentra en la carpeta bajo el directorio raíz de SSCMA `configs/swift_yolo` y adicionalmente hereda el archivo de configuración `base_arch.py`.
 
@@ -75,7 +75,7 @@ model = dict(
 
 ## Entrenar Modelo
 
-Entrenar el modelo requiere usar nuestro entorno de trabajo SSCMA previamente configurado, si siguió nuestra guía de [Instalación](/ModelAssistant_Introduce_Installation) usando Conda para instalar [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) en un entorno virtual llamado `sscma`, por favor primero asegúrese de que actualmente está en el entorno virtual.
+Entrenar el modelo requiere usar nuestro entorno de trabajo SSCMA previamente configurado, si siguió nuestra guía de [Instalación](/es/ModelAssistant_Introduce_Installation) usando Conda para instalar [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) en un entorno virtual llamado `sscma`, por favor primero asegúrese de que actualmente está en el entorno virtual.
 
 Luego, en el directorio raíz del proyecto [SSCMA](https://github.com/Seeed-Studio/ModelAssistant), ejecutamos el siguiente comando para entrenar un modelo de detección de medidor digital Swfit-YOLO.
 
@@ -128,8 +128,8 @@ Si desea una vista previa en tiempo real mientras prueba, puede agregar un pará
 
 ### Evaluación
 
-Para probar y evaluar más el modelo en un dispositivo de computación de borde realista, necesita exportar el modelo. En el proceso de exportar el modelo, [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) hará algunas optimizaciones en el modelo, como poda de modelo, destilación, etc. Puede consultar la sección [Exportar](/ModelAssistant_Tutorials_Export_Overview) para aprender más sobre cómo exportar modelos.
+Para probar y evaluar más el modelo en un dispositivo de computación de borde realista, necesita exportar el modelo. En el proceso de exportar el modelo, [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) hará algunas optimizaciones en el modelo, como poda de modelo, destilación, etc. Puede consultar la sección [Exportar](/es/ModelAssistant_Tutorials_Export_Overview) para aprender más sobre cómo exportar modelos.
 
 ### Despliegue
 
-Después de exportar el modelo, puede desplegar el modelo al dispositivo de computación de borde para pruebas y evaluación. Puede consultar la sección [Desplegar](/ModelAssistant_Deploy_Overview) para aprender más sobre cómo desplegar modelos.
+Después de exportar el modelo, puede desplegar el modelo al dispositivo de computación de borde para pruebas y evaluación. Puede consultar la sección [Desplegar](/es/ModelAssistant_Deploy_Overview) para aprender más sobre cómo desplegar modelos.

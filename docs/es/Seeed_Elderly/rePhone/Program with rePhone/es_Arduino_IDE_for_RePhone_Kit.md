@@ -159,7 +159,7 @@ Para restablecer tu RePhone a **VALORES PREDETERMINADOS**:
 
     [![](https://files.seeedstudio.com/wiki/Arduino_IDE_for_RePhone_Kit/img/RePhone_Kit_Create_VXP.png)](https://github.com/WayenWeng/RePhone_Create_Kit_VXP/)
 
-<!-- 3. Enter the [RePhone Mass Storage Mode](/Xadow_GSMPlusBLE#Mass_Storage_Mode) -->
+<!-- 3. Enter the [RePhone Mass Storage Mode](/es/Xadow_GSMPlusBLE#Mass_Storage_Mode) -->
 
 4. Copia todo lo que está bajo el archivo llamado "RePhone Create Kit VXP" en el almacenamiento masivo de 5MB del RePhone.
 

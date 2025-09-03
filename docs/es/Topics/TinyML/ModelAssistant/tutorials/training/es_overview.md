@@ -14,15 +14,15 @@ last_update:
 
 [SSCMA](https://github.com/Seeed-Studio/ModelAssistant) actualmente soporta los siguientes modelos. Puedes consultar los tutoriales correspondientes para completar el entrenamiento de los modelos y obtener los pesos del modelo.
 
-- [Detección de Objetos - SWIFT-YOLO](/ModelAssistant_Tutorials_Training_YOLO): lectura de medidores digitales
+- [Detección de Objetos - SWIFT-YOLO](/es/ModelAssistant_Tutorials_Training_YOLO): lectura de medidores digitales
 
-- [Detección de Objetos - FOMO](/ModelAssistant_Tutorials_Training_FOMO): Detección de mascarillas faciales
+- [Detección de Objetos - FOMO](/es/ModelAssistant_Tutorials_Training_FOMO): Detección de mascarillas faciales
 
-- [Detección de Puntos Clave PFLD](/ModelAssistant_Tutorials_Training_PFLD): Lectura de medidores de aguja
+- [Detección de Puntos Clave PFLD](/es/ModelAssistant_Tutorials_Training_PFLD): Lectura de medidores de aguja
 
 :::tip
 
-Antes de comenzar el entrenamiento, recomendamos que leas primero las secciones [Config](/ModelAssistant_Tutorials_Config) y [Datasets](/ModelAssistant_Tutorials_Datasets).
+Antes de comenzar el entrenamiento, recomendamos que leas primero las secciones [Config](/es/ModelAssistant_Tutorials_Config) y [Datasets](/es/ModelAssistant_Tutorials_Datasets).
 
 :::
 
@@ -62,4 +62,4 @@ python3 tools/train.py --help
 
 ### Despliegue
 
-Después de exportar el modelo, puedes desplegar el modelo en un dispositivo de computación en el borde para pruebas y evaluación. Puedes consultar la sección [Deploy](/ModelAssistant_Deploy_Overview) para aprender más sobre cómo desplegar el modelo.
+Después de exportar el modelo, puedes desplegar el modelo en un dispositivo de computación en el borde para pruebas y evaluación. Puedes consultar la sección [Deploy](/es/ModelAssistant_Deploy_Overview) para aprender más sobre cómo desplegar el modelo.

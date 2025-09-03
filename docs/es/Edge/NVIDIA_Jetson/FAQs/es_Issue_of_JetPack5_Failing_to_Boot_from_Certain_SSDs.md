@@ -72,7 +72,7 @@ Consulta este [wiki](https://wiki.seeedstudio.com/es/flash/jetpack_to_selected_p
 ###  Opción B
 
 
-Consulta este [wiki](/how_to_build_the_source_code_project_for_seeed_jetson_bsp) para preparar el proyecto de código fuente para flashear.
+Consulta este [wiki](/es/how_to_build_the_source_code_project_for_seeed_jetson_bsp) para preparar el proyecto de código fuente para flashear.
 
 Al ejecutar `./tools/kernel_flash/l4t_initrd_flash.sh` con el parámetro `--erase-all`, la unidad de estado sólido será completamente borrada durante el proceso de flasheo.
 

@@ -13,27 +13,27 @@ Este documento contiene todas las preguntas frecuentes relacionadas con los prod
 
 #### P1: Solución de Problemas de Instalación
 
-Para más detalles, por favor haz clic [aquí](/Troubleshooting_Installation)
+Para más detalles, por favor haz clic [aquí](/es/Troubleshooting_Installation)
 
 #### P2: El espacio restante en la eMMC en la reComputer recibida es solo de aproximadamente 2GB, ¿cómo resolver el problema de espacio insuficiente?
 
-Para más detalles, por favor haz clic [aquí](/solution_of_insufficient_space)
+Para más detalles, por favor haz clic [aquí](/es/solution_of_insufficient_space)
 
 #### P3: ¿Cómo resolver el problema de compatibilidad entre reComputer y la cámara VEYE?
 
-Para más detalles, por favor haz clic [aquí](/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera)
+Para más detalles, por favor haz clic [aquí](/es/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera)
 
 #### P4: ¿Cómo resolver el problema de compatibilidad entre la Cámara IMX477 y la placa portadora A603?
 
-Para más detalles, por favor haz clic [aquí](/Use_IMX477_Camera_with_A603_Jetson_Carrier_Board)
+Para más detalles, por favor haz clic [aquí](/es/Use_IMX477_Camera_with_A603_Jetson_Carrier_Board)
 
 #### P5: ¿Cómo obtener el registro del sistema de reComputer J30/J40?
 
-Para más detalles, por favor haz clic [aquí](/get_the_system_log_of_recomputer_j30_and_j40)
+Para más detalles, por favor haz clic [aquí](/es/get_the_system_log_of_recomputer_j30_and_j40)
 
 #### P6: Problema de tiempo de espera durante el flasheo de Jetpack.
 
-Para más detalles, por favor haz clic [aquí](/usb_timeout_during_flash)
+Para más detalles, por favor haz clic [aquí](/es/usb_timeout_during_flash)
 
 #### P7: No puedo usar el puerto USB-A, puerto Ethernet o no hay pantalla HDMI después de flashear el dispositivo.
 **R:** Por favor verifica la integridad del archivo (por ejemplo, proporcionamos las sumas de verificación SHA256), para algunas placas portadoras (especialmente la serie A60X), asegúrate de que el parche del controlador fue copiado/aplicado exitosamente al directorio **Linux_for_tegra**. Hay archivos que requieren permisos **sudo**, y cuando copies directorios, asegúrate de que el parámetro **-r** esté incluido en tu comando.
@@ -43,24 +43,24 @@ Para más detalles, por favor haz clic [aquí](/usb_timeout_during_flash)
 
 #### P9: ¿Cómo puedo actualizar los paquetes de software si me dijiste que no puedo ejecutar apt upgrade? ¿Habrá riesgos de seguridad si no actualizo el software?
 
-Para más detalles, por favor haz clic [aquí](/upgrade_software_packages_for_jetson)
+Para más detalles, por favor haz clic [aquí](/es/upgrade_software_packages_for_jetson)
 
 <!-- #### P10: Cómo usar el método OTA (Over-the-Air) para actualizar la versión del sistema del dispositivo Jetson. -->
 
-<!-- Para más detalles, por favor haz clic [aquí](/updating_jetpack_with_ota) -->
+<!-- Para más detalles, por favor haz clic [aquí](/es/updating_jetpack_with_ota) -->
 
 #### P11: Qué modificaciones hace Seeed al BSP de Jetson de NVIDIA.
 
-Para más detalles, por favor haz clic [aquí](/differences_of_l4t_between_seeed_and_nvidia)
+Para más detalles, por favor haz clic [aquí](/es/differences_of_l4t_between_seeed_and_nvidia)
 
 #### P12: ¿Cómo habilitar la interfaz SPI en Jetson-nano?
-Para más detalles, por favor haz clic [aquí](/enable_spi_interface_on_jetsonnano)
+Para más detalles, por favor haz clic [aquí](/es/enable_spi_interface_on_jetsonnano)
 
 #### P13: ¿Por qué a veces después de completar el proceso de flasheo en Jetson, el sistema falla al arrancar desde el SSD?
-Este problema ocurre actualmente al flashear JetPack 5, y NVIDIA lo ha documentado oficialmente. Para la solución, por favor haz clic [aquí.](/issue_of_jetpack5_failing_to_boot_from_certain_ssd)
+Este problema ocurre actualmente al flashear JetPack 5, y NVIDIA lo ha documentado oficialmente. Para la solución, por favor haz clic [aquí.](/es/issue_of_jetpack5_failing_to_boot_from_certain_ssd)
 
 #### P14: ¿Cómo Construir el Proyecto de Código Fuente para el BSP de Jetson de Seeed?
-Para más detalles, por favor haz clic [aquí](/how_to_build_the_source_code_project_for_seeed_jetson_bsp)
+Para más detalles, por favor haz clic [aquí](/es/how_to_build_the_source_code_project_for_seeed_jetson_bsp)
 
 ## Soporte Técnico
 

@@ -86,7 +86,7 @@ Seguir estos pasos debería ayudarle a desensamblar el dispositivo sin ningún p
 
 <div align="left"><img width={700} src="https://files.seeedstudio.com/wiki/reComputer-R1000/Assembly_Guide/Wifi_and_ble.gif" /></div>
 
-**PASO 1:** Desensamble todo el dispositivo siguiendo la sección [Guía de Desensamblaje](/recomputer_r1000_assembly_guide/#assembly--disassembly-guide).
+**PASO 1:** Desensamble todo el dispositivo siguiendo la sección [Guía de Desensamblaje](/es/recomputer_r1000_assembly_guide/#assembly--disassembly-guide).
 
 **PASO 2:** Conecte la línea de alimentación del módulo CM4 al agujero de la antena siguiendo las ilustraciones a continuación.
 

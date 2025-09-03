@@ -200,15 +200,15 @@ Y modifica IP_ADDRESS (línea 40) a esta línea de números. (Aquí es 54.164.10
 
 Material requerido:
 
-* [Base Shield v2.0](/Base_Shield_V2), Configurado a 3V3 (sección más esquinera de la placa Base shield)
+* [Base Shield v2.0](/es/Base_Shield_V2), Configurado a 3V3 (sección más esquinera de la placa Base shield)
 
-* [Grove - Touch Sensor](/Grove-Touch_Sensor) conectar a D6
+* [Grove - Touch Sensor](/es/Grove-Touch_Sensor) conectar a D6
 
-* [Grove - LED Bar](/Grove-LED_Bar) conectar a D2
+* [Grove - LED Bar](/es/Grove-LED_Bar) conectar a D2
 
 ### Subir código
 
-**Consejo:** consulta [aquí](/Guide_to_use_demos_downloaded_from_Seeed-s_Github) para cualquier error de archivo de biblioteca (o archivo de cabecera) faltante que se muestre.
+**Consejo:** consulta [aquí](/es/Guide_to_use_demos_downloaded_from_Seeed-s_Github) para cualquier error de archivo de biblioteca (o archivo de cabecera) faltante que se muestre.
 Conecta tu LinkIt ONE a la PC, y recuerda insertar primero la antena Wi-Fi. Abre tu Administrador de Dispositivos, encontrarás que hay 2 Puertos COM:
 
 ![](https://files.seeedstudio.com/wiki/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/AWS_LinkIt_starter_kit_find_COM_port.jpg)

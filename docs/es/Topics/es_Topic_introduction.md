@@ -13,13 +13,13 @@ last_update:
 
 Hola y gracias por visitar la Base de Conocimientos de Temas Tecnológicos de Seeed Studio. Este recurso está diseñado para apoyarte en el dominio de nuestra gama de hardware inteligente y dispositivos de computación.
 
-- **[TinyML](/tinyml_topic)** permite que incluso los microcontroladores de bajo consumo ejecuten aprendizaje automático localmente. 
-  - Lanzamos [**TinyML WorkShop**](/tinyml_workshop_course_new) (curso gratuito) para brindarte una comprensión integral del ML embebido, solo requiriendo un XIAO ESP32S3 Sense([página wiki](/xiao_esp32s3_getting_started)), la potente placa MCU.
-  - Proporcionamos con honor una herramienta de IA embebida - [**SenseCraft Model Assistant**](/ModelAssistant_Introduce_Overview) para lograr inferencias más rápidas y precisas en dispositivos embebidos.
-- [**Home Assistant**](/home_assistant_topic) está diseñado para alcanzar niveles avanzados de privacidad, versatilidad y sostenibilidad en la automatización del hogar.
-  - Hemos desarrollado múltiples integraciones listas para usar como [**SenseCAP**](/home_assistant_sensecap), [**LoRaWAN**](/ha_xiao_esp32), [**SenseCraft**](/sensecraft_homeassistant_userguide) para Home Assistant
-- El movimiento [**Open Source**](/open_source_topic) impulsa la innovación de base a través del hardware y software.
-- Y la [**Edge AI**](/edge_ai_topic) lleva las cosas más lejos al empujar la inteligencia al borde, más cerca de donde se originan los datos, habilitando decisiones automatizadas en tiempo real.
+- **[TinyML](/es/tinyml_topic)** permite que incluso los microcontroladores de bajo consumo ejecuten aprendizaje automático localmente. 
+  - Lanzamos [**TinyML WorkShop**](/es/tinyml_workshop_course_new) (curso gratuito) para brindarte una comprensión integral del ML embebido, solo requiriendo un XIAO ESP32S3 Sense([página wiki](/es/xiao_esp32s3_getting_started)), la potente placa MCU.
+  - Proporcionamos con honor una herramienta de IA embebida - [**SenseCraft Model Assistant**](/es/ModelAssistant_Introduce_Overview) para lograr inferencias más rápidas y precisas en dispositivos embebidos.
+- [**Home Assistant**](/es/home_assistant_topic) está diseñado para alcanzar niveles avanzados de privacidad, versatilidad y sostenibilidad en la automatización del hogar.
+  - Hemos desarrollado múltiples integraciones listas para usar como [**SenseCAP**](/es/home_assistant_sensecap), [**LoRaWAN**](/es/ha_xiao_esp32), [**SenseCraft**](/es/sensecraft_homeassistant_userguide) para Home Assistant
+- El movimiento [**Open Source**](/es/open_source_topic) impulsa la innovación de base a través del hardware y software.
+- Y la [**Edge AI**](/es/edge_ai_topic) lleva las cosas más lejos al empujar la inteligencia al borde, más cerca de donde se originan los datos, habilitando decisiones automatizadas en tiempo real.
 
 Colectivamente, estas tecnologías devuelven el control a los individuos, habilitando sistemas automatizados e inteligentes adaptados a las necesidades locales mientras protegen la privacidad y autonomía.
 
@@ -28,11 +28,11 @@ Colectivamente, estas tecnologías devuelven el control a los individuos, habili
 
   <div style={{display: 'flex'}}>
 
-  <a href="/tinyml_topic" rel="noopener noreferrer">
+  <a href="/es/tinyml_topic" rel="noopener noreferrer">
     <img src="https://files.seeedstudio.com/wiki/tinyml-topic/main.jpg" style={{width: '98%', marginRight: '2%', marginBottom: '1rem', pointerEvents: 'none' }} alt="Image 1" />
   </a>
 
-  <a href="/home_assistant_topic" rel="noopener noreferrer">
+  <a href="/es/home_assistant_topic" rel="noopener noreferrer">
     <img src="https://files.seeedstudio.com/wiki/HomeAsssitant_collection/HAbanner1.jpg" style={{width: '98%', marginRight: '2%', marginBottom: '1rem', pointerEvents: 'none' }} alt="Image 1" />
   </a>
 </div>
@@ -40,11 +40,11 @@ Colectivamente, estas tecnologías devuelven el control a los individuos, habili
 
 <div style={{display: 'flex'}}>
 
-  <a href="/open_source_topic" rel="noopener noreferrer">
+  <a href="/es/open_source_topic" rel="noopener noreferrer">
     <img src="https://files.seeedstudio.com/wiki/open_source_topic/open_source_topic.png" style={{width: '98%', marginRight: '2%', marginBottom: '1rem', pointerEvents: 'none' }} alt="Image 1" />
   </a>
 
-  <a href="/edge_ai_topic" rel="noopener noreferrer">
+  <a href="/es/edge_ai_topic" rel="noopener noreferrer">
     <img src="https://files.seeedstudio.com/wiki/Edge_AI_Topic/Edge_AI_Topic.png" style={{width: '98%', marginRight: '2%', marginBottom: '1rem', pointerEvents: 'none' }} alt="Image 1" />
   </a>
 </div>

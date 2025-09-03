@@ -30,29 +30,29 @@ El Kit de Ambiente Interior Grove para Edison facilita la creación de aplicacio
 
 ---
 
-* [Base Shield V2](/Base_Shield_V2)  x1
+* [Base Shield V2](/es/Base_Shield_V2)  x1
 
-* [Grove - Sensor de Temperatura y Humedad (Alta Precisión y Mini)](/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0)  x1
+* [Grove - Sensor de Temperatura y Humedad (Alta Precisión y Mini)](/es/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0)  x1
 
-* [Grove - Sensor de humedad](/Grove-Moisture_Sensor)  x1
+* [Grove - Sensor de humedad](/es/Grove-Moisture_Sensor)  x1
 
-* [Grove - Sensor de luz](/Grove-Light_Sensor)  x1
+* [Grove - Sensor de luz](/es/Grove-Light_Sensor)  x1
 
-* [Grove - Sensor UV](/Grove-UV_Sensor)  x1
+* [Grove - Sensor UV](/es/Grove-UV_Sensor)  x1
 
-* [Grove - Sensor de movimiento PIR](/Grove-PIR_Motion_Sensor)  x1
+* [Grove - Sensor de movimiento PIR](/es/Grove-PIR_Motion_Sensor)  x1
 
-* [Grove - Encoder](/Grove-Encoder)  x1
+* [Grove - Encoder](/es/Grove-Encoder)  x1
 
-* [Grove - Botón](/Grove-Button)  x1
+* [Grove - Botón](/es/Grove-Button)  x1
 
-* [Grove - LCD con retroiluminación RGB](/Grove-LCD_RGB_Backlight)  x1
+* [Grove - LCD con retroiluminación RGB](/es/Grove-LCD_RGB_Backlight)  x1
 
-* [Grove - Relé](/Grove-Relay)  x1
+* [Grove - Relé](/es/Grove-Relay)  x1
 
-* [Grove - Servo](/Grove-Servo)  x1
+* [Grove - Servo](/es/Grove-Servo)  x1
 
-* [Grove - Zumbador](/Grove-Buzzer)  x1
+* [Grove - Zumbador](/es/Grove-Buzzer)  x1
 
 * [Adaptador de 9V a conector cilíndrico](https://www.seeedstudio.com/depot/9V-to-Barrel-Jack-Adapter-p-1481.html)  x1
 

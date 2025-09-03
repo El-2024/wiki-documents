@@ -158,7 +158,7 @@ Aquí seleccionamos la pantalla de 2.0 pulgadas como ejemplo para mostrar sus fu
 
 <pre>#define SCREEN_SIZE 200 // choose screen size: 144, 200, 270</pre>
 
-* Sube el código a tu microcontrolador. Por favor haz clic [aquí](/Upload_Code) si no sabes cómo hacerlo.
+* Sube el código a tu microcontrolador. Por favor haz clic [aquí](/es/Upload_Code) si no sabes cómo hacerlo.
 
 * Ahora puedes ver esto:
 

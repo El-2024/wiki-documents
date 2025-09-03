@@ -25,7 +25,7 @@ Los 'GND' y 'PWR' en el marco posterior significan que puedes cargar tu Pebble T
 
 ###   Xadow GPS v2
 ---
-<!-- Para más información sobre este módulo, consulta la [**Página Wiki de Xadow GPS V2**](/Xadow_GPS_V2). -->
+<!-- Para más información sobre este módulo, consulta la [**Página Wiki de Xadow GPS V2**](/es/Xadow_GPS_V2). -->
 
 <table>
 <tr>
@@ -116,7 +116,7 @@ Los 'GND' y 'PWR' en el marco posterior significan que puedes cargar tu Pebble T
 
 ###   Xadow NFC v2
 
-<!-- For more info about this module please check on [**Xadow NFC v2 Wiki Page**](/Xadow_NFC_v2). -->
+<!-- For more info about this module please check on [**Xadow NFC v2 Wiki Page**](/es/Xadow_NFC_v2). -->
 
 <table>
 <tr>

@@ -27,7 +27,7 @@ Para usar el puerto A/D configurable Grove como puerto analógico, simplemente d
 
 ## **Código de ejemplo**:
 
-Este código de ejemplo presenta cómo conectar el [sensor de luz](/Grove-Light_Sensor) en la interfaz ADC grove.
+Este código de ejemplo presenta cómo conectar el [sensor de luz](/es/Grove-Light_Sensor) en la interfaz ADC grove.
 La señal de salida es un valor analógico, cuanto más brillante es la luz, mayor es el valor.
 
 ```cpp

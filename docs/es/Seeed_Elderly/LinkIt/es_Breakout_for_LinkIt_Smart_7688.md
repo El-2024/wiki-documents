@@ -64,7 +64,7 @@ Debido al cierre de MediaTek Labs, todos los enlaces relacionados se han vuelto 
 
 **Interfaz Grove**
 
-<!-- Connect rich [Grove](/Grove_System) interfaced functional modules. With this kind of ports, you never need jumper wire or soldering work, and you can make more powerful applications with those functional modules. -->
+<!-- Connect rich [Grove](/es/Grove_System) interfaced functional modules. With this kind of ports, you never need jumper wire or soldering work, and you can make more powerful applications with those functional modules. -->
 
 :::note
     **Nota** que añadiremos la función de grabación de audio para esta placa en la próxima versión de este producto.
@@ -112,7 +112,7 @@ Esta sección mostrará a esos clientes avanzados cómo añadir la función de g
 
 ###  Reproducir música
 
-<!-- 1.Refer [here](/LinkIt_Smart_7688#Getting_Started) to connect your LinkIt Smart 7688 to internet.
+<!-- 1.Refer [here](/es/LinkIt_Smart_7688#Getting_Started) to connect your LinkIt Smart 7688 to internet.
  -->
 
 :::note
@@ -143,7 +143,7 @@ Esta sección mostrará a esos clientes avanzados cómo añadir la función de g
 
 *   [Archivos esquemáticos](https://files.seeedstudio.com/wiki/Breakout_for_LinkIt_Smart_7688/res/Breakout_for_LinkIt_Smart_7688_v2.0_schematic_files.zip)
 
-<!-- *   [LinkIt smart 7688](/LinkIt_Smart_7688) -->
+<!-- *   [LinkIt smart 7688](/es/LinkIt_Smart_7688) -->
 
 *   [OpenWrt](http://wiki.openwrt.org/doc/howto/user.beginner)
 

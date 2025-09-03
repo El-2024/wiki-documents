@@ -12,7 +12,7 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/Grove-Starter_Kit_for_LinkIt_ONE/img/Grove_Starter_Kit_for_LinkIt_ONE_530x397.jpg)
 
-<!-- Grove - Starter Kit for LinkIt ONE is a toolkit for building your applications quicker and easier with LinkIt ONE development platform. With this kit, you can concentrate just on design process for your projects which will save you lots for time or expenses. It consist of the most popular modules for build IoT (Internet of Things) applications such as [Base Shield](/Base_Shield_V2). -->
+<!-- Grove - Starter Kit for LinkIt ONE is a toolkit for building your applications quicker and easier with LinkIt ONE development platform. With this kit, you can concentrate just on design process for your projects which will save you lots for time or expenses. It consist of the most popular modules for build IoT (Internet of Things) applications such as [Base Shield](/es/Base_Shield_V2). -->
 
 [![](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://www.seeedstudio.com/depot/Grove-Starter-Kit-for-LinkIt-ONE-p-2028.html)
 
@@ -32,22 +32,22 @@ Especificaciones
 
 Consulta las especificaciones de cada módulo:
 
-<!-- -   [Grove - Dust Sensor](/Grove-Dust_Sensor#Specification)
--   [Grove - Temperature and Humidity Sensor Pro](/Grove-Temperature_and_Humidity_Sensor_Pro#specifications)
--   [Grove - Sound Sensor](/Grove-Sound_Sensor#Specifications)
--   [Grove - UV Sensor](/Grove-UV_Sensor#specifications)
--   [Grove - Barometer Sensor (BMP280)](/Grove-Barometer_Sensor-BMP280#specifications)
--   [Grove - Light Sensor v1.2](/Grove-Light_Sensor)
--   [Grove - 3-Axis Digital Accelerometer(±16g)](/Grove-3-Axis_Digital_Accelerometer-16g)
--   [Grove - LED Bar](/Grove-LED_Bar)
--   [Grove - Servo](/Grove-Servo#Specification)
--   [Grove - Touch Sensor](/Grove-Touch_Sensor#specifications)
--   [Grove - Base shield v2](/Base_Shield_V2) -->
+<!-- -   [Grove - Dust Sensor](/es/Grove-Dust_Sensor#Specification)
+-   [Grove - Temperature and Humidity Sensor Pro](/es/Grove-Temperature_and_Humidity_Sensor_Pro#specifications)
+-   [Grove - Sound Sensor](/es/Grove-Sound_Sensor#Specifications)
+-   [Grove - UV Sensor](/es/Grove-UV_Sensor#specifications)
+-   [Grove - Barometer Sensor (BMP280)](/es/Grove-Barometer_Sensor-BMP280#specifications)
+-   [Grove - Light Sensor v1.2](/es/Grove-Light_Sensor)
+-   [Grove - 3-Axis Digital Accelerometer(±16g)](/es/Grove-3-Axis_Digital_Accelerometer-16g)
+-   [Grove - LED Bar](/es/Grove-LED_Bar)
+-   [Grove - Servo](/es/Grove-Servo#Specification)
+-   [Grove - Touch Sensor](/es/Grove-Touch_Sensor#specifications)
+-   [Grove - Base shield v2](/es/Base_Shield_V2) -->
 
 Ideas de aplicación
 -----------------
 
-<!-- You can build [secret box](/Secret_Box) and other funny applications. -->
+<!-- You can build [secret box](/es/Secret_Box) and other funny applications. -->
 
 Ten en cuenta que las ideas listadas en esta sección son solo algunas pistas de las aplicaciones masivas de este kit.
 
@@ -110,14 +110,14 @@ Comenzar
 
 Ten en cuenta que esta sección solo te muestra cómo construir el entorno de desarrollo básico.
 
-<!-- [Guide on build basic development environment](/LinkIt_ONE) for LinkIt ONE. -->
+<!-- [Guide on build basic development environment](/es/LinkIt_ONE) for LinkIt ONE. -->
 
 Demos
 -----
 
 Ten en cuenta que esta sección te mostrará una demo que implementa algunas funciones realistas.
 
-<!-- Find the complete recipe here: [Secret_Box](/Secret_Box) -->
+<!-- Find the complete recipe here: [Secret_Box](/es/Secret_Box) -->
 
 Recursos
 ---------

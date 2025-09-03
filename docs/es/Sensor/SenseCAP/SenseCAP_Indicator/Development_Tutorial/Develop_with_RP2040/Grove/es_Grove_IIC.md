@@ -24,7 +24,7 @@ A diferencia de los sensores integrados, solo necesitas definir las conexiones d
 
 ## **Código de Ejemplo**
 
-Este código de ejemplo introduce cómo conectar un [sensor TH Grove](/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor):
+Este código de ejemplo introduce cómo conectar un [sensor TH Grove](/es/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor):
 
 [Biblioteca del sensor de temperatura y humedad AHT20](https://github.com/Seeed-Studio/Seeed_Arduino_AHT20/)
 

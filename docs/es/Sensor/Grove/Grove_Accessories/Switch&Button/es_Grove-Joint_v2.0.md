@@ -138,7 +138,7 @@ Conecta Grove - Joint a la computadora usando un cable micro USB, si el LED de e
 
 Haz clic [aquí](https://files.seeedstudio.com/wiki/Grove-Joint_v2.0/res/Grove-Joint_demo.rar) para descargar el código de prueba y descomprímelo en cualquier carpeta (ej. Unidad D o escritorio)
 
-<!-- Now you need simple [configurations for Arduino](/How_To_Use_Sketchbook) sketchbook. -->
+<!-- Now you need simple [configurations for Arduino](/es/How_To_Use_Sketchbook) sketchbook. -->
 
 Inicia Arduino IDE y haz clic en File&gt;Preferences y agrega la ubicación absoluta para el código de prueba descargado en la ubicación Sketchbook.
 

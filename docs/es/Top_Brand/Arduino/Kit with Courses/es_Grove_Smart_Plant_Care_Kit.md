@@ -28,27 +28,27 @@ El kit implementa dos funciones. Una es detectar factores ambientales que afecta
 ---
 <!-- Please refer to each modules' specifications:
 
-*   [Grove - Temp &amp; Humidity Sensor](/Grove-TemperatureAndHumidity_Sensor/#specifications)
+*   [Grove - Temp &amp; Humidity Sensor](/es/Grove-TemperatureAndHumidity_Sensor/#specifications)
 
-*   [Grove - Sunlight Sensor V1.0](/Grove-Sunlight_Sensor)
+*   [Grove - Sunlight Sensor V1.0](/es/Grove-Sunlight_Sensor)
 
-*   [Grove - Water Sensor](/Grove-Water_Sensor)
+*   [Grove - Water Sensor](/es/Grove-Water_Sensor)
 
 *   [Grove - Moisture Sensor](https://wiki.seeedstudio.com/es/Grove-Moisture_Sensor/#specification)
 
-*   [Grove – Encoder](/Grove-Encoder#Specification)
+*   [Grove – Encoder](/es/Grove-Encoder#Specification)
 
-*   [Grove-OLED Display 1.12](/Grove-OLED_Display_1.12inch#Specification)
+*   [Grove-OLED Display 1.12](/es/Grove-OLED_Display_1.12inch#Specification)
 
-*   [Grove - Button](/Grove-Button#Introduction)
+*   [Grove - Button](/es/Grove-Button#Introduction)
 
-*   [Grove - Relay](/Grove-Relay#Specifications)
+*   [Grove - Relay](/es/Grove-Relay#Specifications)
 
 *   12V DC Water Pump
 
 *   12V Power connector
 
-*   [Base Shield V2](/Base_Shield_V2) -->
+*   [Base Shield V2](/es/Base_Shield_V2) -->
 
 ##  Ideas de Aplicación
 ---
@@ -131,7 +131,7 @@ Lista de partes en [formato PDF](https://files.seeedstudio.com/wiki/Grove_Smart_
 
 [Guide of building IDE on Arduino UNO.](https://www.arduino.cc/en/Guide/HomePage)
 
-[Guide of building IDE on Seeeduino V4.2(compatible with Arduino)](/Seeeduino_v4.2)
+[Guide of building IDE on Seeeduino V4.2(compatible with Arduino)](/es/Seeeduino_v4.2)
 
 **Note** that you can use [Base shield](/Base_Shield_V2 "Base_Shield_V2") for connecting modules quickly. -->
 

@@ -69,7 +69,7 @@ Las partes impresas en 3D y las abrazaderas de mesa no están incluidas en el pr
 
 ## Prerrequisitos
 
-  1. [Familiarizarse con nuestro tutorial de uso básico del Lerobot SO100Arm](/lerobot_so100m).
+  1. [Familiarizarse con nuestro tutorial de uso básico del Lerobot SO100Arm](/es/lerobot_so100m).
   2. [Instalar Isaac Sim según el tutorial](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_workstation.html)
   3. [Completar la Instalación y Configuración de ROS2 Según el Tutorial](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_ros.html)
 
@@ -83,7 +83,7 @@ Las partes impresas en 3D y las abrazaderas de mesa no están incluidas en el pr
     cd lerobot
   ```
 
-  Asegúrate de haber instalado el [entorno Lerobot según el tutorial](/lerobot_so100m)
+  Asegúrate de haber instalado el [entorno Lerobot según el tutorial](/es/lerobot_so100m)
   
 ## Importar el URDF a Isaac Sim
 

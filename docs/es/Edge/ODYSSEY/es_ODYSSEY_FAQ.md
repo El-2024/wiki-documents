@@ -12,35 +12,35 @@ Este documento contiene todas las preguntas frecuentes relacionadas con los prod
 
 #### P1: Solución de Problemas Relacionados con BIOS (Incluye WiFi/Bluetooth/Ventilador/Encendido Automático/Boot Guard/GPIO)
 
-Para más detalles, haz clic [aquí](/Troubleshooting_BIOS-Related_Issues)
+Para más detalles, haz clic [aquí](/es/Troubleshooting_BIOS-Related_Issues)
 
 #### P2: Arduino IDE no reconoce el microcontrolador integrado en ODYSSEY - X86J4105/ X86J4125
 
-Para más detalles, haz clic [aquí](/not_recognize-onboard-microcontroller)
+Para más detalles, haz clic [aquí](/es/not_recognize-onboard-microcontroller)
 
 #### P3: Reinstalar el Windows Original
 
-Para más detalles, haz clic [aquí](/reinstall_the_Original_Windows)
+Para más detalles, haz clic [aquí](/es/reinstall_the_Original_Windows)
 
 #### P4: Diferentes estados del botón de encendido de ODYSSEY - X86J4105
 
-Para más detalles, haz clic [aquí](/Power_button)
+Para más detalles, haz clic [aquí](/es/Power_button)
 
 #### P5: El ventilador no se enciende
 
-Para más detalles, haz clic [aquí](/Turn_on_the_Fan)
+Para más detalles, haz clic [aquí](/es/Turn_on_the_Fan)
 
 #### P6: Pinout del Ventilador
 
-Para más detalles, haz clic [aquí](/Fan_Pinout)
+Para más detalles, haz clic [aquí](/es/Fan_Pinout)
 
 #### P7: ODYSSEY - X86J4105 no se enciende
 
-Para más detalles, haz clic [aquí](/power_up)
+Para más detalles, haz clic [aquí](/es/power_up)
 
 #### P8: ¿Tiene TPM el Odyssey?
 
-Para más detalles, haz clic [aquí](/TPM)
+Para más detalles, haz clic [aquí](/es/TPM)
 
 ## Soporte Técnico
 

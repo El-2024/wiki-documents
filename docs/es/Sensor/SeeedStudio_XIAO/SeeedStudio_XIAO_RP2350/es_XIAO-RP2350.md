@@ -161,7 +161,7 @@ El XIAO RP2350, alimentado por el RP2350, soporta MicroPython y el SDK de C/C++ 
 ## Comenzando▶️
 
 :::info atención
-Esta página se enfoca principalmente en usuarios de MicroPython. Para aquellos interesados en aprender programación con SDK o para usuarios avanzados, pueden comenzar con el [SDK de C/C++ para la serie Raspberry Pi Pico](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf). Esta guía te ayudará a configurar el entorno y comenzar con código de ejemplo. Además, puedes visitar [XIAO RP2350 con SDK de C/C++](/xiao-rp2350-c-cpp-sdk) para instrucciones más específicas relacionadas con el XIAO RP2350.
+Esta página se enfoca principalmente en usuarios de MicroPython. Para aquellos interesados en aprender programación con SDK o para usuarios avanzados, pueden comenzar con el [SDK de C/C++ para la serie Raspberry Pi Pico](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf). Esta guía te ayudará a configurar el entorno y comenzar con código de ejemplo. Además, puedes visitar [XIAO RP2350 con SDK de C/C++](/es/xiao-rp2350-c-cpp-sdk) para instrucciones más específicas relacionadas con el XIAO RP2350.
 :::
 
 :::tip
@@ -429,7 +429,7 @@ while True:
 
 ### Batería y Gestión de Energía
 
-¿Es posible leer el voltaje de la batería sin componentes adicionales? Sí, con el XIAO RP2350, es más fácil que nunca. En miembros anteriores de la familia XIAO, como el [XIAO ESP32C3](/XIAO_ESP32C3_Getting_Started/#check-the-battery-voltage), leer el voltaje de la batería requería conectar manualmente a *A0* con una resistencia.
+¿Es posible leer el voltaje de la batería sin componentes adicionales? Sí, con el XIAO RP2350, es más fácil que nunca. En miembros anteriores de la familia XIAO, como el [XIAO ESP32C3](/es/XIAO_ESP32C3_Getting_Started/#check-the-battery-voltage), leer el voltaje de la batería requería conectar manualmente a *A0* con una resistencia.
 
 Pero con el XIAO RP2350, este proceso se simplifica. Ahora puedes usar directamente el pin `A3/GPIO29` para leer el nivel de voltaje de la batería, optimizando tu diseño y desarrollo. Solo recuerda configurar el pin `GPIO19` en alto, ya que es necesario para habilitar la lectura del nivel de batería.
 
@@ -533,11 +533,11 @@ El XIAO RP2350 aprovecha el poder del Raspberry Pi RP2350, utilizando una gran c
 
 ### Expansión y Aplicaciones
 
-[La serie XIAO](/xiao_topic_page) tiene una amplia gama de periféricos y accesorios periféricos para que aprendas y uses, ya sea que quieras una pantalla colorida que permita una interacción perfecta, una placa integrada con luces RGB brillantes y simples, y así sucesivamente, solo esperando a ser explorados.
+[La serie XIAO](/es/xiao_topic_page) tiene una amplia gama de periféricos y accesorios periféricos para que aprendas y uses, ya sea que quieras una pantalla colorida que permita una interacción perfecta, una placa integrada con luces RGB brillantes y simples, y así sucesivamente, solo esperando a ser explorados.
 
 Como miembro de la familia XIAO, el XIAO RP2350 hace lo mismo. Por supuesto, para hacer un mejor uso de los pines adicionales extraídos, nuevos *periféricos y placas* seguirán llegando, utilizando completamente el rendimiento para el cual fue creado.
 
-- 🌟 **[Expandiendo con Accesorios](/SeeedStudio_XIAO_Series_Introduction/#seeed-studio-xiao-series-compatible-accessories)**  
+- 🌟 **[Expandiendo con Accesorios](/es/SeeedStudio_XIAO_Series_Introduction/#seeed-studio-xiao-series-compatible-accessories)**  
   Descubre la amplia gama de complementos y módulos compatibles con la Familia XIAO, desde pantallas y matrices LED hasta módulos Grove y sensores, y aprende cómo pueden mejorar tus proyectos.
 
 ### Comunidad y Aprendizaje

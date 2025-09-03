@@ -200,7 +200,7 @@ La información sobre cómo configurar / programar Módulos Bee está disponible
 
 - [UartSBee](/UartSBee_V3.1 "UartSBee_V3.1")
 
-- <a href="/Seeeduino_V2.2" ><span><font color={'000000'} size={"3"}> Seeeduino V2.2</font></span></a>
+- <a href="/es/Seeeduino_V2.2" ><span><font color={'000000'} size={"3"}> Seeeduino V2.2</font></span></a>
 
 ## Soporte Técnico y Discusión de Productos
 

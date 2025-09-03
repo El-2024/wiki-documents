@@ -94,17 +94,17 @@ Esta sección enumera las partes principales de este kit y enlaces para obtener 
     <tr>
       <td>Grove - Sensor de Ángulo Rotatorio(P)</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor](/Grove-Rotary_Angle_Sensor)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Rotary_Angle_Sensor](/es/Grove-Rotary_Angle_Sensor)</td>
     </tr>
     <tr>
       <td>Grove – Botón</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Button](/Grove-Button)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Button](/es/Grove-Button)</td>
     </tr>
     <tr>
       <td>Grove - Sensor Táctil</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Touch_Sensor](/Grove-Touch_Sensor)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Touch_Sensor](/es/Grove-Touch_Sensor)</td>
     </tr>
     <tr>
       <td>Grove LEDs</td>
@@ -114,42 +114,42 @@ Esta sección enumera las partes principales de este kit y enlaces para obtener 
     <tr>
       <td>Grove - Zumbador</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Buzzer](/Grove-Buzzer)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Buzzer](/es/Grove-Buzzer)</td>
     </tr>
     <tr>
       <td>Grove - Sensor de Sonido</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Sound_Sensor](/Grove-Sound_Sensor)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Sound_Sensor](/es/Grove-Sound_Sensor)</td>
     </tr>
     <tr>
       <td>Grove - Sensor de Luz</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Light_Sensor_v1.2](/Grove-Light_Sensor)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Light_Sensor_v1.2](/es/Grove-Light_Sensor)</td>
     </tr>
     <tr>
       <td>Grove - Sensor de Temperatura</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Temperature_Sensor](/Grove-Temperature_Sensor)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Temperature_Sensor](/es/Grove-Temperature_Sensor)</td>
     </tr>
     <tr>
       <td>Grove - Relé</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Relay](/Grove-Relay)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Relay](/es/Grove-Relay)</td>
     </tr>
     <tr>
       <td>Grove - Servo</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_Servo](/Grove-Servo)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_Servo](/es/Grove-Servo)</td>
     </tr>
     <tr>
       <td>Grove - LCD RGB Retroiluminado</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Grove_-_LCD_RGB_Backlight](/Grove-LCD_RGB_Backlight)</td>
+      <td>[https://www.seeedstudio.com/wiki/Grove_-_LCD_RGB_Backlight](/es/Grove-LCD_RGB_Backlight)</td>
     </tr>
     <tr>
       <td>Base Shield V2.0</td>
       <td>1 pieza</td>
-      <td>[https://www.seeedstudio.com/wiki/Base_Shield_v2](/Base_Shield_V2)</td>
+      <td>[https://www.seeedstudio.com/wiki/Base_Shield_v2](/es/Base_Shield_V2)</td>
     </tr>
     <tr>
       <td>Manual del Usuario (copia impresa)</td>

@@ -32,7 +32,7 @@ Selecciona el Wi-Fi, ingresa la contraseña y conéctalo.
 
 ## Paso 2. Configurar la Clave API
 
-Haz clic en "Set API Key" y escanea el código QR, luego configúralo según el [tutorial](/Sensor/SenseCAP/SenseCAP_Indicator/Set_An_API_Key).
+Haz clic en "Set API Key" y escanea el código QR, luego configúralo según el [tutorial](/es/Sensor/SenseCAP/SenseCAP_Indicator/Set_An_API_Key).
 
 <div align="center"><img width={480} src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/apikey.png"/></div>
 
@@ -46,7 +46,7 @@ Cuando hayas configurado Wi-Fi y APIKey, habrás terminado.
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/gpt.jpg"/></div>
 
 
-Además de la funcionalidad demostrada, SensecAP proporciona código completamente de código abierto y tutoriales detallados, haz clic [aquí](/SenseCAP_Indicator_ChatGPT) para más detalles.
+Además de la funcionalidad demostrada, SensecAP proporciona código completamente de código abierto y tutoriales detallados, haz clic [aquí](/es/SenseCAP_Indicator_ChatGPT) para más detalles.
 
 
 # **FAQ**

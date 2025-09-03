@@ -58,7 +58,7 @@ El ordenador host debe poder tener conexión a Internet con el reTerminal DM par
 
 En esta sección instalaremos [Eclipse Mosquitto](https://mosquitto.org/), que es un broker MQTT de código abierto ampliamente utilizado en aplicaciones IoT y M2M. Está desarrollado por la Eclipse Foundation y está disponible bajo la Licencia Pública de Eclipse. Mosquitto está diseñado para ser ligero y eficiente, lo que lo hace muy adecuado para su uso en dispositivos de bajo consumo y en entornos con ancho de banda de red limitado. Soporta el protocolo MQTT 5.0 más reciente, así como versiones anteriores como MQTT 3.1.1.
 
-En primer lugar, por favor procede a refrescar tu conocimiento sobre el acceso a reTerminal DM vía SSH, puedes consultar los pasos [aquí](/reterminal-dm-flash-OS#install-drivers)
+En primer lugar, por favor procede a refrescar tu conocimiento sobre el acceso a reTerminal DM vía SSH, puedes consultar los pasos [aquí](/es/reterminal-dm-flash-OS#install-drivers)
 
 Una vez que hayas accedido al reTerminal DM con SSH puedes proceder con los pasos a continuación:
 
@@ -343,8 +343,8 @@ Puedes copiar el siguiente código JSON para importar los Nodos
 
 # Explora más nodos en reTerminal DM con node-RED
 
-- [reTerminal DM RS485 Port con Node-RED](/reTerminal-DM-Node-Red-RS485)
-- [reTerminal DM CAN BUS con Node-RED](/reTerminal-DM-Node-Red-canbus)
+- [reTerminal DM RS485 Port con Node-RED](/es/reTerminal-DM-Node-Red-RS485)
+- [reTerminal DM CAN BUS con Node-RED](/es/reTerminal-DM-Node-Red-canbus)
 
 ## Soporte Técnico y Discusión de Productos
 

@@ -92,7 +92,7 @@ Ve al [proyecto mbed BLE de Seeedstudio](https://github.com/Seeed-Studio/mbed_bl
 
 Si estás familiarizado con Docker, hay [un contenedor Docker](https://registry.hub.docker.com/u/skyplabs/ble-micro/) creado por Paul para que configures la cadena de herramientas rápidamente. Puedes usar [el Dockerfile](https://github.com/SkypLabs/ble_micro_dockerfile) para comenzar.
 
-<!-- Si tienes un [Arch BLE](https://www.seeedstudio.com/depot/Arch-BLE-p-1998.html), también puedes usar [IDE basado en la nube ARM mbed](https://developer.mbed.org/compiler/). Ver también [wiki de Arch BLE](/Arch_BLE) -->
+<!-- Si tienes un [Arch BLE](https://www.seeedstudio.com/depot/Arch-BLE-p-1998.html), también puedes usar [IDE basado en la nube ARM mbed](https://developer.mbed.org/compiler/). Ver también [wiki de Arch BLE](/es/Arch_BLE) -->
 
 ## BLE UART
 ---

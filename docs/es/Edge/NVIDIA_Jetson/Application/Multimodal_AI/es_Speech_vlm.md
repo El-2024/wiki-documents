@@ -50,7 +50,7 @@ El modelo TTS es un modelo de aprendizaje profundo de alto rendimiento para tare
 
 - Dispositivo reComputer Jetson AGX Orin 64G o reComputer Jetson J4012 16G con más de 16GB de memoria.
 - Micrófono altavoz USB sin necesidad de controladores
-- Una cámara IP que pueda generar una dirección de flujo RTSP. También hemos incluido instrucciones sobre [cómo usar la herramienta NVIDIA Nvstreamer](/getting_started_with_nvstreamer) para convertir videos locales en flujos RTSP.
+- Una cámara IP que pueda generar una dirección de flujo RTSP. También hemos incluido instrucciones sobre [cómo usar la herramienta NVIDIA Nvstreamer](/es/getting_started_with_nvstreamer) para convertir videos locales en flujos RTSP.
 
 :::note
 Ya hemos probado la viabilidad de este wiki en reComputer [Orin NX 16GB](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) y [AGX Orin 64GB](https://www.seeedstudio.com/NVIDIArJetson-AGX-Orintm-64GB-Developer-Kit-p-5641.html) Developer Kit.
