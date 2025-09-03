@@ -68,7 +68,7 @@ El K1 está conectado al botón, cuando la tecla está abierta, el **SIG1** ser�
 Una vez que el botón es presionado, el K1 se cerrará y el **SIG1** se conectará a **VCC**, entonces la salida de **SIG1** se vuelve alta.
 
 :::note
-En esta sección solo te mostramos parte del esquemático, para el documento completo por favor consulta los [Recursos](/es/#resources)
+En esta sección solo te mostramos parte del esquemático, para el documento completo por favor consulta los [Recursos](#resources)
 :::
 
 ## Plataformas Soportadas
