@@ -25,40 +25,40 @@ This wiki explains how to use the [docker](https://www.docker.com) on reComputer
 ## Prepare Hardware
 
 <div class="table-center">
-	<table align="center">
-	<tr>
-		<th>reComputer R1125</th>
-		<th>reComputer AI R2130</th>
-		<th>reComputer AI Industrial R2145</th>
-	</tr>
+ <table align="center">
+ <tr>
+  <th>reComputer R1125</th>
+  <th>reComputer AI R2130</th>
+  <th>reComputer AI Industrial R2145</th>
+ </tr>
     <tr>
       <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-113991334.jpg" style={{width:600, height:'auto'}}/></div></td>
-	  <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_24_1.jpg" style={{width:600, height:'auto'}}/></div></td>
-	  <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/i/m/image-r2145.jpeg" style={{width:600, height:'auto'}}/></div></td>
+   <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_24_1.jpg" style={{width:600, height:'auto'}}/></div></td>
+   <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/i/m/image-r2145.jpeg" style={{width:600, height:'auto'}}/></div></td>
     </tr>
-		<tr>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1125-10-p-6256.html" target="_blank">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-				</a>
-			</div></td>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-AI-R2130-12-p-6368.html" target="_blank">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-				</a>
-			</div></td>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-AI-Industrial-R2145-12-p-6486.html" target="_blank">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-				</a>
-			</div></td>
-		</tr>
-	</table>
+  <tr>
+   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1125-10-p-6256.html" target="_blank">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+   </div></td>
+   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-AI-R2130-12-p-6368.html" target="_blank">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+   </div></td>
+   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-AI-Industrial-R2145-12-p-6486.html" target="_blank">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+   </div></td>
+  </tr>
+ </table>
 </div>
 
 ## Prepare software
 
-### update the system:
+### update the system
 
 ```bash
 sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
@@ -79,17 +79,21 @@ sudo sh get-docker.sh
 sudo usermod -aG docker $USER
 reboot
 ```
+
 ### Check docker version
 
 ```bash
 docker --version
 ```
+
 The result is as follow:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker_version.png" style={{width:600, height:'auto'}}/></div>
 
-## Use docker 
-###  Creat your project
+## Use docker
+
+### Creat your project
+
 Here, we use `my_app` as an example to demonstrate the usage of `docker`.
 
 ```bash
@@ -135,6 +139,7 @@ async def read_item(item_id: int, q: str = None):
     return {"item_id": item_id, "q": q}
 
 ```
+
 </details>
 
 ### Creat `static` folder
@@ -271,8 +276,8 @@ footer i {
     color: #ff6b6b;
 }
 ```
-</details>
 
+</details>
 
 Then creat `js` file:
 
@@ -323,6 +328,7 @@ cd ../../
 mkdir templates
 nano index.html
 ```
+
 <details>
   <summary>index.html</summary>
 
@@ -425,8 +431,8 @@ nano index.html
 </body>
 </html>
 ```
-</details>
 
+</details>
 
 ### Creat `Dockerfile`
 
@@ -434,6 +440,7 @@ nano index.html
 cd ..
 nano Dockerfile
 ```
+
 <details>
   <summary>Dockerfile</summary>
 
@@ -483,6 +490,7 @@ fastapi
 uvicorn[standard]
 jinja2
 ```
+
 </details>
 
 ### The project directory is as follows
@@ -505,7 +513,6 @@ docker build -t xxx/fastapi_app_ui:latest .
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker_image.png" style={{width:1000, height:'auto'}}/></div>
 
-
 ### Test the image
 
 ```bash
@@ -513,7 +520,6 @@ docker image ls -a
 ```
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker_0.png" style={{width:1000, height:'auto'}}/></div>
-
 
 ```bash
 docker run -d -p 8000:8000 jiahaoxyz/fastapi_app_ui
@@ -525,13 +531,14 @@ The result is show as below ：
 
 ### Publish the image
 
-and creat your own [token](https://app.docker.com/settings). 
+and creat your own [token](https://app.docker.com/settings).
 
 >Note: `xxx` is your own username of dockerhub
 
 ```sh
 docker login -u xxx
 ```
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/dockerhub.png" style={{width:1000, height:'auto'}}/></div>
 
 >Note: `xxx` is your own username of dockerhub
@@ -539,10 +546,10 @@ docker login -u xxx
 ```sh
 docker push xxx/fastapi_app_ui:latest
 ```
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/docker/docker_3.png" style={{width:1000, height:'auto'}}/></div>
 
-
-## Result 
+## Result
 
 You can see that the image packaged using Docker has been uploaded to Docker Hub, and it is available for anyone to use.
 
@@ -559,11 +566,11 @@ docker pull jiahaoxyz/fastapi_app_ui
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

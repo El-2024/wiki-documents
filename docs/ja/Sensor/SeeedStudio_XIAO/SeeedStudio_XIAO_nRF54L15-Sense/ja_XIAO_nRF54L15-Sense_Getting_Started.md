@@ -749,7 +749,7 @@ PlatformIOでXIAO nRF54L15を使用したい場合は、このチュートリア
 
 nRF Connect SDKでXIAO nRF54L15を使用する
 nRF Connect SDKでこのコードを使用するには、以下の3つのファイル`main.c`、`prj.conf`、`app.overlay`を移植する必要があります
-[XIAO nRF54L15 PlatformIO Configuration](http://wiki.seeedstudio.com/xiao_nrf54l15_sense_getting_started/#power-consumpitons-code-example-for-xiao-nrf54l15-platformio)
+[XIAO nRF54L15 PlatformIO Configuration](https://wiki.seeedstudio.com/xiao_nrf54l15_sense_getting_started/#power-consumpitons-code-example-for-xiao-nrf54l15-platformio)
 :::
 
 

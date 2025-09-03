@@ -50,7 +50,7 @@ The TTS model is a high-performance deep learning model for text-to-speech tasks
 
 - reComputer Jetson AGX Orin 64G or reComputer Jetson J4012 16G device with more than 16GB of memory.
 - USB driver-free speaker microphone
-- An IP camera that can output an RTSP stream address. We have also included instructions on [how to use the NVIDIA Nvstreamer](../Developer_Tools/NVStreamer_Getting_Started.md) tool to convert local videos into RTSP streams.
+- An IP camera that can output an RTSP stream address. We have also included instructions on [how to use the NVIDIA Nvstreamer](/getting_started_with_nvstreamer) tool to convert local videos into RTSP streams.
 
 :::note
 We have already tested the feasibility of this wiki on reComputer [Orin NX 16GB](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) and [AGX Orin 64GB](https://www.seeedstudio.com/NVIDIArJetson-AGX-Orintm-64GB-Developer-Kit-p-5641.html) Developer Kit.
@@ -87,7 +87,7 @@ We have already tested the feasibility of this wiki on reComputer [Orin NX 16GB]
 
 ### Install VLM
 
-The core functionality of this project is the visual language model (VLM). We have provided a guide on [how to use the VLM on the reComputer Nvidia Jetson](../Generative_AI/How_to_run_VLM_on_reComputer.md). Please refer to this link for installation and usage instructions. Make sure you fully understand how to perform inference using text descriptions in the VLM before proceeding with the following steps.
+The core functionality of this project is the visual language model (VLM). We have provided a guide on [how to use the VLM on the reComputer Nvidia Jetson](/run_vlm_on_recomputer). Please refer to this link for installation and usage instructions. Make sure you fully understand how to perform inference using text descriptions in the VLM before proceeding with the following steps.
 
 ### Install Pytorch Torchaudio
 

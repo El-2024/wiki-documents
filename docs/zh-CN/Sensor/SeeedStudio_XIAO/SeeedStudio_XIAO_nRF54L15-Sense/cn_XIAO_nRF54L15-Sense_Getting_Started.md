@@ -749,7 +749,7 @@ XIAO nRF54L15(Sense) 配备了两个重要的物理按键，它们在设备操�
 
 在 nRF Connect SDK 中使用 XIAO nRF54L15 
 要在 nRF Connect SDK 中使用此代码，您需要移植以下三个文件 `main.c`、`prj.conf`、`app.overlay`
-[XIAO nRF54L15 PlatformIO 配置](http://wiki.seeedstudio.com/xiao_nrf54l15_sense_getting_started/#power-consumpitons-code-example-for-xiao-nrf54l15-platformio)
+[XIAO nRF54L15 PlatformIO 配置](https://wiki.seeedstudio.com/xiao_nrf54l15_sense_getting_started/#power-consumpitons-code-example-for-xiao-nrf54l15-platformio)
 :::
 
 
