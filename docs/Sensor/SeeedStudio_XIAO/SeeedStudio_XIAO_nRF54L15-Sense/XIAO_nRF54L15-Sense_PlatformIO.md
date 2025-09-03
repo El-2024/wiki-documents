@@ -75,6 +75,26 @@ platform = https://github.com/Seeed-Studio/platform-seeedboards.git
 framework = zephyr
 board = seeed-xiao-nrf54l15
 ```
+<table align="center">
+  <tr>
+      <th>Operation four</th>
+  </tr>
+  <tr>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/platformiozephyr.jpg"/></div>
+  </tr>
+</table>
+
+You need to replace the content of cMakeLists.txt with the following configuration
+```
+set(BOARD_ROOT "$ENV{ZEPHYR_BASE}/../../platforms/Seeed Studio/zephyr")
+cmake_minimum_required(VERSION 3.13.1)
+
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+project(blinky)
+
+target_sources(app PRIVATE ../src/main.cpp) # If the main source file is.c, please change it to src/main.c
+```
+Then re-save the platformio.ini file (Ctrl+S or Cmd+S) and wait for it to load completely.
 
 :::tip
 If you previously downloaded other XIAO libraries, you must manually delete them before modifying the platform.ini file and re-downloading the required libraries.
@@ -163,7 +183,7 @@ Now, connect your XIAO nRF54L15 to your computer via USB. In VS Code:
 
 <table align="center">
   <tr>
-      <th>Operation four</th>
+      <th>Operation five</th>
   </tr>
   <tr>
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/blink.jpg" /></div>
