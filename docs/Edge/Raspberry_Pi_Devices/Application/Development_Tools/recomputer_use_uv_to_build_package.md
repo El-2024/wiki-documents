@@ -5,7 +5,7 @@ keywords:
   - Edge
   - RasberryPi 5
   - python
-image: https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/uv_speed.webp
+image: https://files.seeedstudio.com/wiki/00_AI_Sensing/Application/uv/recomputer_r2145.webp
 slug: /use_uv_to_build_package_on_recomputer
 last_update:
   date: 08/21/2025
@@ -28,9 +28,9 @@ This wiki explains how to use the [uv](https://github.com/astral-sh/uv) on reCom
 <div class="table-center">
 	<table align="center">
 	<tr>
-		<th>reComputer AI R1125</th>
+		<th>reComputer R1125</th>
 		<th>reComputer AI R2130</th>
-		<th>reComputer AI R2145</th>
+		<th>reComputer AI Industrial R2145</th>
 	</tr>
     <tr>
       <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-113991334.jpg" style={{width:600, height:'auto'}}/></div></td>
