@@ -8,10 +8,10 @@
 - zh-CN 目录 => /cn/ 或 https://wiki.seeedstudio.com/cn/...
 不会生成 .bak 备份。
 
-修复点：
+稳健性：
 - 代码块/行内代码使用不可见占位符并用字符串替换还原，避免漏还原。
 - 协议相对 URL（以 // 开头）视为外站链接，直接跳过。
-- 特殊保护：/contributors 保持原样，不加语言前缀。
+- 保护路径：/contributors 与 /contributors/（区分大小写，只有小写生效）不修改；但 /Contributor 会正常加语言前缀。
 """
 
 import argparse
@@ -23,18 +23,18 @@ from typing import Iterable, List, Tuple
 WIKI_HOST = "wiki.seeedstudio.com"
 MD_EXTS = {".md", ".mdx", ".markdown"}
 
-# 固定目录映射
+# 仅这三个目录
 DIR_LANG_MAP = {
     "es": "es",
     "ja": "ja",
     "zh-CN": "cn",  # 目录 zh-CN，但链接统一成 /cn/
 }
 
-# 正则：链接提取
+# 链接提取
 A_HREF_RE = re.compile(r'(<a\b[^>]*?\bhref\s*=\s*")(?P<url>[^"]*)(")', re.IGNORECASE)
 MD_LINK_RE = re.compile(r'(?<!\!)\[([^\]]*)\]\(\s*(?P<url>[^()\s]+)\s*\)', re.IGNORECASE)
 
-# 语言前缀（允许把 zh/zh-cn 也替换成 cn）
+# 可被替换的语言前缀（允许把 zh/zh-cn 也替换成 cn）
 LANG_PREFIX_RE = re.compile(r'^(cn|ja|es|zh|zh-cn)(/|$)', re.IGNORECASE)
 
 # 代码保护：围栏代码块（``` 或 ~~~），行内代码
@@ -42,8 +42,8 @@ FENCED_BACKTICKS_RE = re.compile(r"```[\s\S]*?```", re.MULTILINE)
 FENCED_TILDES_RE   = re.compile(r"~~~[\s\S]*?~~~", re.MULTILINE)
 INLINE_CODE_RE     = re.compile(r"`[^`\n]*`")  # 行内反引号，避免跨行
 
-# 需要保护的路径（保持原样，不加语言前缀），大小写敏感
-PROTECTED_PATHS = {"/contributors"}
+# 需要保护的路径（大小写敏感）；支持带或不带末尾斜杠
+PROTECTED_BASES = {"/contributors"}  # 只有小写 contributors 受保护
 
 
 def is_skippable_url(url: str) -> bool:
@@ -83,9 +83,20 @@ def needs_process(scheme_host: str, path: str) -> bool:
     return host == WIKI_HOST
 
 
+def is_protected_path(path: str) -> bool:
+    """
+    仅当去掉末尾斜杠后精确等于受保护基路径时返回 True。
+    区分大小写：/contributors 保护；/Contributor 不保护。
+    """
+    if not path.startswith("/"):
+        return False
+    base = path.rstrip("/")  # 支持 /contributors 与 /contributors/
+    return base in PROTECTED_BASES
+
+
 def inject_lang(path: str, lang: str) -> str:
     # 特殊保护：保持原样
-    if path in PROTECTED_PATHS:
+    if is_protected_path(path):
         return path
 
     rest = path.lstrip("/")
@@ -106,7 +117,13 @@ def transform_url(url: str, lang: str) -> str:
     scheme_host, path, suffix = split_url(url)
     if scheme_host is None or not needs_process(scheme_host, path):
         return url
-    new_path = inject_lang(path, lang)
+
+    # 保护绝对/相对到 wiki 主机上的 /contributors（含末尾 /）
+    if is_protected_path(path):
+        new_path = path  # 不改
+    else:
+        new_path = inject_lang(path, lang)
+
     return f"{scheme_host}{new_path}{suffix}" if scheme_host else f"{new_path}{suffix}"
 
 

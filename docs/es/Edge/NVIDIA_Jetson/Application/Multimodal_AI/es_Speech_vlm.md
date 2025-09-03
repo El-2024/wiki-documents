@@ -87,7 +87,7 @@ Ya hemos probado la viabilidad de este wiki en reComputer [Orin NX 16GB](https:/
 
 ### Instalar VLM
 
-La funcionalidad principal de este proyecto es el modelo de lenguaje visual (VLM). Hemos proporcionado una guía sobre [cómo usar el VLM en el reComputer Nvidia Jetson](../Generative_AI/How_to_run_VLM_on_reComputer.md). Por favor, consulta este enlace para instrucciones de instalación y uso. Asegúrate de entender completamente cómo realizar inferencia usando descripciones de texto en el VLM antes de proceder con los siguientes pasos.
+La funcionalidad principal de este proyecto es el modelo de lenguaje visual (VLM). Hemos proporcionado una guía sobre [cómo usar el VLM en el reComputer Nvidia Jetson](/es/run_vlm_on_recomputer). Por favor, consulta este enlace para instrucciones de instalación y uso. Asegúrate de entender completamente cómo realizar inferencia usando descripciones de texto en el VLM antes de proceder con los siguientes pasos.
 
 ### Instalar Pytorch Torchaudio
 
@@ -171,7 +171,7 @@ curl --location 'http://192.168.49.227:5010/api/v1/live-stream' \
 ```
 
 :::note
-Si no tienes una cámara RTSP, hemos proporcionado instrucciones sobre [cómo usar NVStreamer para transmitir videos locales como RTSP](../Developer_Tools/NVStreamer_Getting_Started.md) y [añadirlos al VLM](../Generative_AI/How_to_run_VLM_on_reComputer.md).
+Si no tienes una cámara RTSP, hemos proporcionado instrucciones sobre [cómo usar NVStreamer para transmitir videos locales como RTSP](/es/getting_started_with_nvstreamer) y [añadirlos al VLM](/es/run_vlm_on_recomputer).
 :::
 
 Ejecuta set_streamer_id.sh

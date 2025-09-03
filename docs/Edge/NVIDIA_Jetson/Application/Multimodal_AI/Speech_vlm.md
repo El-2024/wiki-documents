@@ -171,7 +171,7 @@ curl --location 'http://192.168.49.227:5010/api/v1/live-stream' \
 ```
 
 :::note
-If you don't have an RTSP camera, we have provided instructions on [how to use NVStreamer to stream local videos as RTSP](../Developer_Tools/NVStreamer_Getting_Started.md) and [add them to the VLM](../Generative_AI/How_to_run_VLM_on_reComputer.md).
+If you don't have an RTSP camera, we have provided instructions on [how to use NVStreamer to stream local videos as RTSP](/getting_started_with_nvstreamer) and [add them to the VLM](/run_vlm_on_recomputer).
 :::
 
 Run set_streamer_id.sh

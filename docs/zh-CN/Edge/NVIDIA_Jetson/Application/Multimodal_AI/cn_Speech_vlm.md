@@ -163,7 +163,7 @@ curl --location 'http://192.168.49.227:5010/api/v1/live-stream' \
 --data '{"liveStreamUrl": "rtsp://admin:IHFXnM8k@192.168.49.15:554//Streaming/Channels/1"}'
 ```
 :::note
-如果您没有 RTSP 摄像头，我们提供了[如何使用 NVStreamer 将本地视频流式传输为 RTSP](../Developer_Tools/cn_NVStreamer_Getting_Started.md)以及[将其添加到 VLM](../Generative_AI/cn_How_to_run_VLM_on_reComputer.md)的说明。
+如果您没有 RTSP 摄像头，我们提供了[如何使用 NVStreamer 将本地视频流式传输为 RTSP](/cn/getting_started_with_nvstreamer)以及[将其添加到 VLM](/cn/run_vlm_on_recomputer)的说明。
 :::
 
 运行 set_streamer_id.sh

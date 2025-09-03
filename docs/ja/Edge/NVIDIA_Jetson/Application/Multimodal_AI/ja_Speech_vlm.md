@@ -165,7 +165,7 @@ curl --location 'http://192.168.49.227:5010/api/v1/live-stream' \
 --data '{"liveStreamUrl": "rtsp://admin:IHFXnM8k@192.168.49.15:554//Streaming/Channels/1"}'
 ```
 :::note
-RTSPカメラを持っていない場合、[NVStreamerを使用してローカルビデオをRTSPとしてストリームする方法](../Developer_Tools/ja_NVStreamer_Getting_Started.md)と[それをVLMに追加する方法](../Generative_AI/ja_How_to_run_VLM_on_reComputer.md)についての説明を提供しています。
+RTSPカメラを持っていない場合、[NVStreamerを使用してローカルビデオをRTSPとしてストリームする方法](/ja/getting_started_with_nvstreamer)と[それをVLMに追加する方法](/ja/run_vlm_on_recomputer)についての説明を提供しています。
 :::
 
 `set_streamer_id.sh`を実行します：
