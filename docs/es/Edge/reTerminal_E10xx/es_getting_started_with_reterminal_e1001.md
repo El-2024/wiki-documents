@@ -14,10 +14,14 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/132.jpg" style={{width:700, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/es/getting_started_with_reterminal_e1001" target="_blank">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-E1001-p-6534.html" target="_blank">
             <strong><span><font color={'FFFFFF'} size={"4"}> Obtener Uno Ahora 🖱️</font></span></strong>
     </a>
 </div>
+
+:::caution Consejos para Actualizar el Firmware
+Le recomendamos que **[complete la actualización del firmware de su producto](#preliminar)** tan pronto como lo reciba para obtener la mejor experiencia.
+:::
 
 ## Introducción
 
@@ -33,20 +37,19 @@ reTerminal E1001 es una pantalla ePaper monocromática de código abierto de 7.5
 
 ## Descripción General del Hardware
 
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/150.png" style={{width:1000, height:'auto'}}/></div><br />
+
 El hardware del reTerminal E1001 incluye:
 
 1. **Pantalla ePaper de 7.5 pulgadas**: Pantalla monocromática con resolución de 800×480
-2. **Botón de Actualización**: Ubicado en la parte superior del dispositivo para actualización manual de pantalla
-3. **Botones de Navegación**: Botones izquierdo y derecho para navegación de páginas
-4. **Interruptor de Alimentación**: Ubicado en la parte posterior para encender/apagar el dispositivo
-5. **Puerto USB-C**: Para carga y actualizaciones de firmware
-6. **Conector de Batería**: Conector JST de 3 pines para batería de litio opcional
-7. **LEDs de Estado**:
-   - Indicador de carga (rojo)
-   - Indicador de usuario (verde)
-8. **Ranura para Tarjeta MicroSD**: Para almacenamiento expandible
-9. **Sensor de Temperatura y Humedad**: Sensor SHT40 integrado ubicado en la esquina inferior izquierda en la parte posterior del dispositivo para monitoreo ambiental
-10. **Pines de Expansión**: Cabecera de expansión de 8 pines que proporciona conexiones VDD, GND, I2C y GPIO
+2. **Botones**: Ubicados en la parte superior del dispositivo para el uso manual de la pantalla  
+3. **Micrófono**  
+4. **Ranura para Tarjeta MicroSD**: Para almacenamiento expandible  
+5. **Interruptor de Encendido**: Ubicado en la parte trasera para encender/apagar el dispositivo  
+6. **LED de Estado**: Indicador del usuario (verde)  
+7. **LED de Encendido**: Indicador de carga (rojo)  
+8. **Puerto USB-C**: Para carga y actualizaciones de firmware  
+9. **Puerto de Expansión**: Conector de expansión de 8 pines que proporciona VDD, GND, I2C y conexiones GPIO
 
 ## Comenzando
 
@@ -407,10 +410,10 @@ El soporte permite que el dispositivo se coloque en escritorios, encimeras o est
 
 ## Recursos
 
-- [Esquemático del reTerminal E1001 (PDF)](/es/getting_started_with_reterminal_e1001)
-- [Hoja de Datos del ESP32S3](/es/getting_started_with_reterminal_e1001)
+- [Esquemático del reTerminal E1001 (PDF)](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/202004307_reTerminal_E1001_V1.0_SCH_250805.pdf)
+- [Hoja de Datos del ESP32S3](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/esp32-s3_datasheet.pdf)
 - [Documentación de la Plataforma SenseCraft HMI](https://wiki.seeedstudio.com/es/sensecraft_hmi_overview)
-- [Repositorio de GitHub](/es/getting_started_with_reterminal_e1001)
+<!-- - [Repositorio de GitHub](/es/getting_started_with_reterminal_e1001) -->
 
 ## Soporte Técnico y Discusión del Producto
 
