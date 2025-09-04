@@ -279,7 +279,7 @@ jobs:
       github.event.issue.pull_request &&
       startsWith(github.event.comment.body, '/translate')
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
     permissions:
       contents: write
       pull-requests: write
