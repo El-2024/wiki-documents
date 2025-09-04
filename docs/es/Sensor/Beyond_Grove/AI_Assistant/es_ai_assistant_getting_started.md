@@ -11,14 +11,12 @@ last_update:
 
 # Introducción al Asistente de IA
 
-
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/1-114993645-Al-Assistant-v1.1.jpg" style={{width:600, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-	<a class="get_one_now_item" href="https://www.seeedstudio.com/AI-Assistant-p-6510.html">
-			<strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
-	</a>
+ <a class="get_one_now_item" href="https://www.seeedstudio.com/AI-Assistant-p-6510.html">
+   <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora 🖱️</font></span></strong>
+ </a>
 </div>
 
 ## Introducción
@@ -28,7 +26,7 @@ El kit de desarrollo del Asistente de IA, creado conjuntamente por Seeed Studio 
 ### Características
 
 - **Característica 1: Microcontrolador de IA Insignia**
-	Alimentado por el ST STM32N657, con un núcleo Arm® Cortex®-M55 de alto rendimiento y una NPU ST Neural-ART integrada que ofrece hasta 600 GOPS para una aceleración eficiente de modelos de IA.
+ Alimentado por el ST STM32N657, con un núcleo Arm® Cortex®-M55 de alto rendimiento y una NPU ST Neural-ART integrada que ofrece hasta 600 GOPS para una aceleración eficiente de modelos de IA.
 - **Característica 2: Sensor de Visión de Grado Profesional**
 Equipado con una cámara de obturador global ST VD55G1, proporcionando imágenes nítidas y sin distorsión de objetos en movimiento rápido, lo cual es crítico para tareas de visión por computadora de alta precisión.
 - **Característica 3: Detección Inteligente con ISPU**
@@ -41,7 +39,6 @@ Incluye un módulo Wi-Fi integrado para conectividad IoT sin problemas, junto co
 ## Descripción General del Hardware
 
 Antes de que todo comience, es bastante esencial tener algunos parámetros básicos del producto. La siguiente tabla proporciona información sobre las características del **Asistente de IA**.
-
 
 | Categoría            | Característica        | Especificación                                                                |
 |----------------------|------------------------|-------------------------------------------------------------------------------|
@@ -59,10 +56,10 @@ Antes de que todo comience, es bastante esencial tener algunos parámetros bási
 | **Mecánico y Energía**| Dimensiones (Carcasa)  | 130mm x 90mm                                                                  |
 |                      | Fuente de Alimentación | 5V vía USB-C o Puerto de Batería de Litio                                     |
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/Hardware_Overview.png" style={{width:800, height:'auto'}}/></div>
 
 ### Descripción General de la Capa Superior de la Placa
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/Top.png" style={{width:800, height:'auto'}}/></div>
 
 ### Descripción General de la Capa Inferior de la Placa
@@ -72,6 +69,7 @@ Antes de que todo comience, es bastante esencial tener algunos parámetros bási
 ***
 
 ## Comenzar con la Aplicación de Referencia del Asistente de IA
+
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/stm32-hotspot/STM32N6-AI-Assistant-People-Detection" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> Descargar las Librerías</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
@@ -85,7 +83,6 @@ Aplicación de Visión por Computadora para habilitar el despliegue de modelos d
 Esta aplicación está preconstruida con un modelo de detección de personas "TinyYOLOv2".
 
 Esta sección proporciona una descripción general de la aplicación. Documentación adicional está disponible en la [Documentación Adicional de la Aplicación](#documentación-adicional-de-la-aplicación).
-
 
 ### Características Demostradas en Este Ejemplo
 
@@ -105,17 +102,17 @@ Esta sección proporciona una descripción general de la aplicación. Documentac
 - Se soportan 3 cámaras:
   - MB1854B IMX335
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/3-114993645-Al-Assistant-v1.1.jpg" style={{width:800, height:'auto'}}/></div>
 Kit del Asistente de IA con Cámara VD55G1.
 
 ### Versión de Herramientas
+
 - STM32CubeIDE (**STM32CubeIDE 1.18.0**)
 - STM32CubeProgrammer (**v2.18.0**)
 - [STEdgeAI](https://www.st.com/en/development-tools/stedgeai-core.html) (**v2.1.0**)
 
-
 ### Conexión ST-Link
+
 **Conectores del Lado Derecho**
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/STLC1.PNG" style={{width:1000, height:'auto'}}/></div>
 
@@ -133,7 +130,8 @@ Kit del Asistente de IA con Cámara VD55G1.
 El STM32N6 no tiene flash interno. Para conservar tu firmware después de un reinicio, debes programarlo en el flash externo.
 Alternativamente, puedes cargar tu firmware directamente desde SRAM (modo de desarrollo). Sin embargo, en modo de desarrollo, si apagas la placa, tu programa se perderá.
 
-__Modos de arranque:__
+**Modos de arranque:**
+
 - Modo de desarrollo: cargar firmware desde sesión de depuración en RAM (interruptor de arranque hacia la derecha)
 - Arranque desde flash: Programar firmware en flash externo (interruptor de arranque hacia la izquierda)
 
@@ -177,18 +175,17 @@ STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -hardRst -w Binary/x-cub
 Antes de compilar y ejecutar la aplicación, tienes que programar `network_data.hex` (pesos y sesgos del modelo).
 
 Este paso solo debe realizarse una vez a menos que cambies el modelo de IA.
-Ver [Inicio Rápido Usando Binarios Precompilados](#inicio-rápido-usando-binarios-precompilados) para más detalles.
+Ver [Inicio Rápido Usando Binarios Preconstruidos](#inicio-rápido-usando-binarios-preconstruidos) para más detalles.
 
 Más información sobre los modos de arranque está disponible en [Resumen de Arranque](#resumen-de-arranque) .
 
 #### Compilación y Ejecución de la Aplicación - Modo Dev
 
-__Asegúrate de tener el interruptor hacia el lado derecho.__
+**Asegúrate de tener el interruptor hacia el lado derecho.**
 
 ##### STM32CubeIDE
 
 Haz doble clic en `STM32CubeIDE/.project` para abrir el proyecto en STM32CubeIDE. Compila y ejecuta con los botones de compilar y ejecutar.
-
 
 ##### Makefile
 
@@ -218,7 +215,7 @@ $ arm-none-eabi-gdb build/Project.elf
 
 #### Compilación y Ejecución de la Aplicación - Arranque desde Flash
 
-__Asegúrate de tener el interruptor en el lado derecho.__
+**Asegúrate de tener el interruptor en el lado derecho.**
 
 ##### STM32CubeIDE
 
@@ -331,6 +328,7 @@ Las cámaras permiten voltear la imagen a lo largo de dos ejes.
 1. Abre **app_config.h**.
 
 2. Cambia la definición `CAMERA_FLIP`:
+
 ```c
 /* Defines: CMW_MIRRORFLIP_NONE; CMW_MIRRORFLIP_FLIP; CMW_MIRRORFLIP_MIRROR; CMW_MIRRORFLIP_FLIP_MIRROR; */
 
@@ -340,6 +338,7 @@ Las cámaras permiten voltear la imagen a lo largo de dos ejes.
 ### Despliega Tu Modelo TFLite
 
 Para ejecutar tu propio modelo de detección de objetos, sigue estos pasos:
+
 - [1. Generar Modelo C desde Modelo TFLite](#1-generar-modelo-c-desde-modelo-tflite)
 - [2. Programar Tus Datos de Red](#2-programar-tus-datos-de-red)
 - [3. Proporcionar Información NN en `app_config.h`](#3-proporcionar-información-nn-en-app_configh)
@@ -402,9 +401,9 @@ Esta aplicación soporta cuatro tipos de post-procesamiento de detección de obj
 
 Edita tu `NN_WIDTH` y `NN_HEIGHT`.
 
-__ADVERTENCIA:__ `NN_WIDTH * NN_BPP` debe ser un múltiplo de 16.
+**ADVERTENCIA:** `NN_WIDTH * NN_BPP` debe ser un múltiplo de 16.
 
-__ADVERTENCIA:__ Solo el formato RGB888 ha sido probado.
+**ADVERTENCIA:** Solo el formato RGB888 ha sido probado.
 
 ##### Etiquetas de Clase
 
@@ -444,7 +443,6 @@ Ver la sección [Compilación y ejecución de aplicación](#compilación-y-ejecu
 
 Ver [Programar aplicación en flash externa](#compilación-y-ejecución-de-la-aplicación---arranque-desde-flash) para programar tu firmware.
 
-
 ### Cómo Programar Archivos Hex
 
 0. Asegúrese de que la placa esté en modo dev (interruptor de arranque en posición de modo dev).
@@ -463,10 +461,12 @@ Ver [Programar aplicación en flash externa](#compilación-y-ejecución-de-la-ap
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/flashHex.JPG" style={{width:1000, height:'auto'}}/></div>
 
 ## Recursos
- - **[PDF]** [Esquemático del AI Assistant](https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/res/SCH_AI%20ASSISTANT_V1-1%20RELEASE_20250314.pdf)
 
-## Soporte Técnico 
-Este producto está respaldado por **STMicroelectronics**. 
+- **[PDF]** [Esquemático del AI Assistant](https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/res/SCH_AI%20ASSISTANT_V1-1%20RELEASE_20250314.pdf)
+
+## Soporte Técnico
+
+Este producto está respaldado por **STMicroelectronics**.
 Para cualquier problema técnico o consulta, póngase en contacto con:
 **Contacto de Soporte Técnico:
  [[Haga clic aquí](https://ols.st.com/s/)]**

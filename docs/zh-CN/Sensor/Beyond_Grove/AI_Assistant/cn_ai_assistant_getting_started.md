@@ -11,14 +11,12 @@ last_update:
 
 # AI Assistant 入门指南
 
-
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/1-114993645-Al-Assistant-v1.1.jpg" style={{width:600, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-	<a class="get_one_now_item" href="https://www.seeedstudio.com/AI-Assistant-p-6510.html">
-			<strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
-	</a>
+ <a class="get_one_now_item" href="https://www.seeedstudio.com/AI-Assistant-p-6510.html">
+   <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
+ </a>
 </div>
 
 ## 介绍
@@ -28,7 +26,7 @@ AI Assistant 开发套件由 Seeed Studio 和 STMicroelectronics 联合打造。
 ### 特性
 
 - **特性 1：旗舰级 AI 微控制器**
-	采用 ST STM32N657，具有高性能 Arm® Cortex®-M55 内核和集成的 ST Neural-ART NPU，可提供高达 600 GOPS 的高效 AI 模型加速。
+ 采用 ST STM32N657，具有高性能 Arm® Cortex®-M55 内核和集成的 ST Neural-ART NPU，可提供高达 600 GOPS 的高效 AI 模型加速。
 - **特性 2：专业级视觉传感器**
 配备 ST VD55G1 全局快门相机，为快速移动物体提供清晰、无失真的图像，这对高精度计算机视觉任务至关重要。
 - **特性 3：带 ISPU 的智能感知**
@@ -41,7 +39,6 @@ AI Assistant 开发套件由 Seeed Studio 和 STMicroelectronics 联合打造。
 ## 硬件概述
 
 在开始之前，了解产品的一些基本参数是非常重要的。下表提供了 **AI Assistant** 特性的信息。
-
 
 | 类别             | 特性               | 规格                                                                 |
 |----------------------|------------------------|-------------------------------------------------------------------------------|
@@ -59,10 +56,10 @@ AI Assistant 开发套件由 Seeed Studio 和 STMicroelectronics 联合打造。
 | **机械和电源**| 尺寸（外壳）    | 130mm x 90mm                                                                  |
 |                      | 电源供应           | 5V 通过 USB-C 或锂电池端口                                          |
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/Hardware_Overview.png" style={{width:800, height:'auto'}}/></div>
 
 ### 电路板顶层概述
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/Top.png" style={{width:800, height:'auto'}}/></div>
 
 ### 电路板底层概述
@@ -72,6 +69,7 @@ AI Assistant 开发套件由 Seeed Studio 和 STMicroelectronics 联合打造。
 ***
 
 ## 开始使用 AI Assistant 参考应用
+
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/stm32-hotspot/STM32N6-AI-Assistant-People-Detection" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> 下载库文件</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
@@ -85,7 +83,6 @@ AI Assistant 开发套件由 Seeed Studio 和 STMicroelectronics 联合打造。
 此应用预构建了人员检测模型"TinyYOLOv2"。
 
 本节提供应用的概述。更多文档可在[应用的附加文档](#应用的附加文档)中找到。
-
 
 ### 此示例演示的特性
 
@@ -105,17 +102,17 @@ AI Assistant 开发套件由 Seeed Studio 和 STMicroelectronics 联合打造。
 - 支持 3 种相机：
   - MB1854B IMX335
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/3-114993645-Al-Assistant-v1.1.jpg" style={{width:800, height:'auto'}}/></div>
 带 VD55G1 相机的 AI Assistant 套件。
 
 ### 工具版本
+
 - STM32CubeIDE (**STM32CubeIDE 1.18.0**)
 - STM32CubeProgrammer (**v2.18.0**)
 - [STEdgeAI](https://www.st.com/en/development-tools/stedgeai-core.html) (**v2.1.0**)
 
-
 ### ST-Link 连接
+
 **右侧连接器**
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/STLC1.PNG" style={{width:1000, height:'auto'}}/></div>
 
@@ -133,7 +130,8 @@ AI Assistant 开发套件由 Seeed Studio 和 STMicroelectronics 联合打造。
 STM32N6 没有任何内部 flash。要在重启后保留固件，您必须将其编程到外部 flash 中。
 或者，您可以直接从 SRAM（开发模式）加载固件。但是，在开发模式下，如果您关闭板子，程序将丢失。
 
-__启动模式：__
+**启动模式：**
+
 - 开发模式：从调试会话在 RAM 中加载固件（启动开关向右）
 - 从 flash 启动：将固件编程到外部 flash（启动开关向左）
 
@@ -152,7 +150,7 @@ __启动模式：__
 
 #### 如何使用 STM32CubeProgrammer UI 编程 Hex 文件
 
-请参阅[如何编程 Hex 文件 STM32CubeProgrammer](#如何编程-hex-文件)。
+请参阅[如何编程 Hex 文件 STM32CubeProgrammer](#如何烧录 Hex 文件)。
 
 #### 如何使用命令行编程 Hex 文件
 
@@ -183,12 +181,11 @@ STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -hardRst -w Binary/x-cub
 
 #### 应用程序构建和运行 - 开发模式
 
-__确保将开关拨到右侧。__
+**确保将开关拨到右侧。**
 
 ##### STM32CubeIDE
 
 双击 `STM32CubeIDE/.project` 在 STM32CubeIDE 中打开项目。使用构建和运行按钮进行构建和运行。
-
 
 ##### Makefile
 
@@ -218,7 +215,7 @@ $ arm-none-eabi-gdb build/Project.elf
 
 #### 应用程序构建和运行 - 从闪存启动
 
-__确保将开关拨到右侧。__
+**确保将开关拨到右侧。**
 
 ##### STM32CubeIDE
 
@@ -331,6 +328,7 @@ STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -hardRst -w build/Projec
 1. 打开 **app_config.h**。
 
 2. 更改 `CAMERA_FLIP` 定义：
+
 ```c
 /* Defines: CMW_MIRRORFLIP_NONE; CMW_MIRRORFLIP_FLIP; CMW_MIRRORFLIP_MIRROR; CMW_MIRRORFLIP_FLIP_MIRROR; */
 
@@ -340,6 +338,7 @@ STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -hardRst -w build/Projec
 ### 部署您的 TFLite 模型
 
 要运行您自己的目标检测模型，请按照以下步骤操作：
+
 - [1. 从 TFLite 模型生成 C 模型](#1-从-tflite-模型生成-c-模型)
 - [2. 编程您的网络数据](#2-编程您的网络数据)
 - [3. 在 `app_config.h` 中提供 NN 信息](#3-在-app_configh-中提供-nn-信息)
@@ -402,9 +401,9 @@ STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -hardRst -w Model/networ
 
 编辑您的 `NN_WIDTH` 和 `NN_HEIGHT`。
 
-__警告：__ `NN_WIDTH * NN_BPP` 必须是 16 的倍数。
+**警告：** `NN_WIDTH * NN_BPP` 必须是 16 的倍数。
 
-__警告：__ 仅测试了 RGB888 格式。
+**警告：** 仅测试了 RGB888 格式。
 
 ##### 类别标签
 
@@ -444,7 +443,6 @@ __警告：__ 仅测试了 RGB888 格式。
 
 请参见[在外部闪存中编程应用程序](#应用程序构建和运行---从闪存启动)来编程您的固件。
 
-
 ### 如何烧录 Hex 文件
 
 0. 确保开发板处于开发模式（启动开关在开发模式位置）。
@@ -463,9 +461,11 @@ __警告：__ 仅测试了 RGB888 格式。
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/flashHex.JPG" style={{width:1000, height:'auto'}}/></div>
 
 ## 资源
- - **[PDF]** [AI Assistant 原理图](https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/res/SCH_AI%20ASSISTANT_V1-1%20RELEASE_20250314.pdf)
+
+- **[PDF]** [AI Assistant 原理图](https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/res/SCH_AI%20ASSISTANT_V1-1%20RELEASE_20250314.pdf)
 
 ## 技术支持
+
 本产品由 **STMicroelectronics** 提供支持。
 如有任何技术问题或咨询，请联系：
 **技术支持联系方式：

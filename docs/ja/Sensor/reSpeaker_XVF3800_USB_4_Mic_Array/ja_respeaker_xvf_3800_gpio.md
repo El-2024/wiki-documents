@@ -19,12 +19,12 @@ last_update:
 ## 目的
 
 このガイドでは、I2Cインターフェースを使用してXVF3800音声プロセッサの**GPIOピンの読み取りと制御**方法について説明します。以下の内容を学習できます：
+
 - **GPIおよびGPOピンの状態読み取り**
 - **出力ピンの制御（例：マイクミュート、LED制御、アンプ制御）**
 - **GPIOマッピングとその目的の理解**
 
 ## GPIO概要
-
 
 reSpeaker XVF3800は、外部制御用に3つの入力ピン（GPI）と5つの出力ピン（GPO）を公開しています。これらを使用してボタンの状態を読み取ったり、ミュートLED、アンプ、LEDなどのハードウェアを制御したりできます。
 
@@ -43,9 +43,10 @@ reSpeaker XVF3800は、外部制御用に3つの入力ピン（GPI）と5つの�
 
 **目標**：すべての**出力対応GPIO（GPO）**の論理レベルを確認する。
 **コードのハイライト**：
+
 - 以下を使用して読み取りリクエストを送信：
-    - リソースID：20（GPO）
-    - コマンドID：0（GPO_READ_VALUES）
+  - リソースID：20（GPO）
+  - コマンドID：0（GPO_READ_VALUES）
 - 5つのGPOピンの状態を順番に読み取り：X0D11 → X0D30 → X0D31 → X0D33 → X0D39
 - レスポンスを検証するためのステータスバイトを含む
 
@@ -131,11 +132,11 @@ bool read_gpo_values(uint8_t *buffer, uint8_t *status) {
 
 **目標**：**入力対応GPIO**の状態を確認する（例：ミュートボタンの状態）。
 **コードのハイライト**：
-- 以下にコマンドを送信：
-    - リソースID：36（IO_CONFIG）
-    - コマンドID：6（GPI_VALUE_ALL）
-- X1D09、X1D13、X1D34の状態を表す3つのGPIを受信
 
+- 以下にコマンドを送信：
+  - リソースID：36（IO_CONFIG）
+  - コマンドID：6（GPI_VALUE_ALL）
+- X1D09、X1D13、X1D34の状態を表す3つのGPIを受信
 
 ```bash
 #include <Wire.h>
@@ -211,18 +212,21 @@ bool read_gpi_values(uint8_t *buffer, uint8_t *status) {
 
 
 ```
+
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/GPI.PNG" alt="pir" width={600} height="auto" /></p>
 
 ## GPOピンへの書き込み – マイクミュートの例
 
 **目標**：出力GPIOを制御する、例：GPIO 30（X0D30）を切り替えてマイクをミュートする。
 **コードのハイライト**：
+
 - 以下に書き込みコマンドを送信：
-    - リソースID：20
-    - コマンドID：1（GPO_WRITE_VALUE）
-    - ペイロード：ピン番号、値 `例：{30, 1}でミュート`
+  - リソースID：20
+  - コマンドID：1（GPO_WRITE_VALUE）
+  - ペイロード：ピン番号、値 `例：{30, 1}でミュート`
 
 **便利な関数：**
+
 - muteMic() → GPIO 30をHIGHに設定して**マイクをミュートし、赤色LEDを点灯**
 - unmuteMic() → GPIO 30をLOWに設定して**マイクのミュートを解除し、LEDを消灯**
 
@@ -332,17 +336,17 @@ void readGPIOStatus() {
 }
 
 ```
+
 ## 技術サポート & 製品ディスカッション
 
 弊社製品をお選びいただき、ありがとうございます！お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。異なる好みやニーズに対応するため、複数のコミュニケーションチャネルをご用意しています。
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-

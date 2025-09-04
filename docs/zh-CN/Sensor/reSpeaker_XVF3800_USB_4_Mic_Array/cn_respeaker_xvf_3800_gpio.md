@@ -19,12 +19,12 @@ last_update:
 ## 目标
 
 本指南解释如何使用 I2C 接口**读取和控制 XVF3800 语音处理器上的 GPIO 引脚**。您将学习如何：
+
 - **读取 GPI 和 GPO 引脚状态**
 - **控制输出引脚（例如，静音麦克风、控制 LED、放大器）**
 - **了解 GPIO 映射及其用途**
 
 ## GPIO 概述
-
 
 reSpeaker XVF3800 提供 3 个输入引脚（GPI）和 5 个输出引脚（GPO）用于外部控制。您可以使用这些引脚读取按钮状态或控制硬件，如静音 LED、放大器或 LED。
 
@@ -43,9 +43,10 @@ reSpeaker XVF3800 提供 3 个输入引脚（GPI）和 5 个输出引脚（GPO�
 
 **目标**：检查所有**输出功能 GPIO（GPO）**的逻辑电平。
 **代码要点**：
+
 - 使用以下参数发送读取请求：
-    - 资源 ID：20（GPO）
-    - 命令 ID：0（GPO_READ_VALUES）
+  - 资源 ID：20（GPO）
+  - 命令 ID：0（GPO_READ_VALUES）
 - 按顺序读取 5 个 GPO 引脚状态：X0D11 → X0D30 → X0D31 → X0D33 → X0D39
 - 包含状态字节以验证响应
 
@@ -131,11 +132,11 @@ bool read_gpo_values(uint8_t *buffer, uint8_t *status) {
 
 **目标**：检查**输入功能 GPIO**的状态（例如，静音按钮状态）。
 **代码要点**：
-- 发送命令到：
-    - 资源 ID：36（IO_CONFIG）
-    - 命令 ID：6（GPI_VALUE_ALL）
-- 接收 3 个 GPI，表示 X1D09、X1D13 和 X1D34 的状态
 
+- 发送命令到：
+  - 资源 ID：36（IO_CONFIG）
+  - 命令 ID：6（GPI_VALUE_ALL）
+- 接收 3 个 GPI，表示 X1D09、X1D13 和 X1D34 的状态
 
 ```bash
 #include <Wire.h>
@@ -211,18 +212,21 @@ bool read_gpi_values(uint8_t *buffer, uint8_t *status) {
 
 
 ```
+
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/GPI.PNG" alt="pir" width={600} height="auto" /></p>
 
 ## 写入 GPO 引脚 – 静音麦克风示例
 
 **目标**：控制输出 GPIO，例如，通过切换 GPIO 30（X0D30）来静音麦克风。
 **代码要点**：
+
 - 发送写入命令到：
-    - 资源 ID：20
-    - 命令 ID：1（GPO_WRITE_VALUE）
-    - 载荷：引脚号，值 `例如，{30, 1} 来静音`
+  - 资源 ID：20
+  - 命令 ID：1（GPO_WRITE_VALUE）
+  - 载荷：引脚号，值 `例如，{30, 1} 来静音`
 
 **便利函数：**
+
 - muteMic() → 将 GPIO 30 设置为高电平以**静音麦克风并点亮红色 LED**
 - unmuteMic() → 将 GPIO 30 设置为低电平以**取消静音麦克风并关闭 LED**
 
@@ -332,17 +336,17 @@ void readGPIOStatus() {
 }
 
 ```
+
 ## 技术支持与产品讨论
 
 感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-
