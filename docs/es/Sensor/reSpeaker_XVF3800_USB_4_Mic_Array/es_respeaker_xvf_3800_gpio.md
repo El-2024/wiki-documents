@@ -19,12 +19,12 @@ last_update:
 ## Objetivo
 
 Esta guía explica cómo **leer y controlar pines GPIO** en el procesador de voz XVF3800 usando la interfaz I2C. Aprenderás cómo:
+
 - **Leer estados de pines GPI y GPO**
 - **Controlar pines de salida (ej., silenciar micrófono, controlar LED, amplificador)**
 - **Entender mapeos GPIO y su propósito**
 
 ## Descripción General de GPIO
-
 
 El reSpeaker XVF3800 expone 3 pines de entrada (GPI) y 5 pines de salida (GPO) para control externo. Puedes usarlos para leer estados de botones o controlar hardware como el LED de silencio, amplificador o LEDs.
 
@@ -43,9 +43,10 @@ El reSpeaker XVF3800 expone 3 pines de entrada (GPI) y 5 pines de salida (GPO) p
 
 **Objetivo**: Verificar niveles lógicos de todos los **GPIOs capaces de salida (GPOs)**.
 **Aspectos Destacados del Código**:
+
 - Envía una solicitud de lectura usando:
-    - ID de Recurso: 20 (GPO)
-    - ID de Comando: 0 (GPO_READ_VALUES)
+  - ID de Recurso: 20 (GPO)
+  - ID de Comando: 0 (GPO_READ_VALUES)
 - Lee estados de 5 pines GPO en orden: X0D11 → X0D30 → X0D31 → X0D33 → X0D39
 - Incluye un byte de estado para validar la respuesta
 
@@ -131,11 +132,11 @@ bool read_gpo_values(uint8_t *buffer, uint8_t *status) {
 
 **Objetivo**: Verificar estados de **GPIOs capaces de entrada** (ej., estado del botón de silencio).
 **Aspectos Destacados del Código**:
-- Envía comando a:
-    - ID de Recurso: 36 (IO_CONFIG)
-    - ID de Comando: 6 (GPI_VALUE_ALL)
-- Recibe 3 GPI representando el estado de X1D09, X1D13, y X1D34
 
+- Envía comando a:
+  - ID de Recurso: 36 (IO_CONFIG)
+  - ID de Comando: 6 (GPI_VALUE_ALL)
+- Recibe 3 GPI representando el estado de X1D09, X1D13, y X1D34
 
 ```bash
 #include <Wire.h>
@@ -211,18 +212,21 @@ bool read_gpi_values(uint8_t *buffer, uint8_t *status) {
 
 
 ```
+
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/GPI.PNG" alt="pir" width={600} height="auto" /></p>
 
 ## Escribir a Pin GPO – Ejemplo de Silenciar Micrófono
 
 **Objetivo**: Controlar un GPIO de salida, ej., silenciar micrófono alternando GPIO 30 (X0D30).
 **Aspectos Destacados del Código**:
+
 - Envía un comando de escritura a:
-    - ID de Recurso: 20
-    - ID de Comando: 1 (GPO_WRITE_VALUE)
-    - Carga útil: número de pin, valor `ej., {30, 1} para silenciar`
+  - ID de Recurso: 20
+  - ID de Comando: 1 (GPO_WRITE_VALUE)
+  - Carga útil: número de pin, valor `ej., {30, 1} para silenciar`
 
 **Funciones de Conveniencia:**
+
 - muteMic() → establece GPIO 30 en ALTO para **silenciar micrófono y encender LED rojo**
 - unmuteMic() → establece GPIO 30 en BAJO para **activar micrófono y apagar LED**
 
@@ -332,17 +336,17 @@ void readGPIOStatus() {
 }
 
 ```
+
 ## Soporte Técnico y Discusión de Productos
 
 ¡Gracias por elegir nuestros productos! Estamos aquí para brindarle diferentes tipos de soporte para asegurar que su experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para satisfacer diferentes preferencias y necesidades.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-

@@ -11,14 +11,12 @@ last_update:
 
 # AI Assistantの使用開始
 
-
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/1-114993645-Al-Assistant-v1.1.jpg" style={{width:600, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-	<a class="get_one_now_item" href="https://www.seeedstudio.com/AI-Assistant-p-6510.html">
-			<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-	</a>
+ <a class="get_one_now_item" href="https://www.seeedstudio.com/AI-Assistant-p-6510.html">
+   <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+ </a>
 </div>
 
 ## はじめに
@@ -28,7 +26,7 @@ AI Assistant開発キットは、Seeed StudioとSTMicroelectronicsが共同で�
 ### 特徴
 
 - **特徴1：フラッグシップAIマイクロコントローラー**
-	高性能Arm® Cortex®-M55コアと統合されたST Neural-ART NPUを搭載したST STM32N657により駆動され、効率的なAIモデルアクセラレーションのために最大600 GOPSを提供します。
+ 高性能Arm® Cortex®-M55コアと統合されたST Neural-ART NPUを搭載したST STM32N657により駆動され、効率的なAIモデルアクセラレーションのために最大600 GOPSを提供します。
 - **特徴2：プロフェッショナルグレードビジョンセンサー**
 ST VD55G1グローバルシャッターカメラを搭載し、高速移動物体の鮮明で歪みのない画像を提供し、高精度コンピュータビジョンタスクに重要です。
 - **特徴3：ISPUによるインテリジェントセンシング**
@@ -41,7 +39,6 @@ ST VD55G1グローバルシャッターカメラを搭載し、高速移動物�
 ## ハードウェア概要
 
 すべてが始まる前に、製品の基本的なパラメータを把握することが非常に重要です。以下の表は**AI Assistant**の特性に関する情報を提供します。
-
 
 | カテゴリ             | 機能               | 仕様                                                                 |
 |----------------------|------------------------|-------------------------------------------------------------------------------|
@@ -59,10 +56,10 @@ ST VD55G1グローバルシャッターカメラを搭載し、高速移動物�
 | **機械的・電源**| 寸法（ケーシング）    | 130mm x 90mm                                                                  |
 |                      | 電源           | USB-C経由5Vまたはリチウムバッテリーポート                                          |
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/Hardware_Overview.png" style={{width:800, height:'auto'}}/></div>
 
 ### ボード上層概要
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/Top.png" style={{width:800, height:'auto'}}/></div>
 
 ### ボード下層概要
@@ -72,6 +69,7 @@ ST VD55G1グローバルシャッターカメラを搭載し、高速移動物�
 ***
 
 ## AI Assistantリファレンスアプリケーションの開始
+
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/stm32-hotspot/STM32N6-AI-Assistant-People-Detection" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> Download the Libraries</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
@@ -85,7 +83,6 @@ AI Assistantボード上でオブジェクト検出モデルの展開を可能�
 このアプリケーションは人物検出モデル「TinyYOLOv2」で事前構築されています。
 
 このセクションではアプリケーションの概要を提供します。追加のドキュメントは[アプリケーションの追加ドキュメント](#アプリケーションの追加ドキュメント)で利用できます。
-
 
 ### この例で実証される機能
 
@@ -105,17 +102,17 @@ AI Assistantボード上でオブジェクト検出モデルの展開を可能�
 - 3つのカメラがサポートされています：
   - MB1854B IMX335
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/3-114993645-Al-Assistant-v1.1.jpg" style={{width:800, height:'auto'}}/></div>
 VD55G1カメラ付きAI Assistantキット。
 
 ### ツールバージョン
+
 - STM32CubeIDE（**STM32CubeIDE 1.18.0**）
 - STM32CubeProgrammer（**v2.18.0**）
 - [STEdgeAI](https://www.st.com/en/development-tools/stedgeai-core.html)（**v2.1.0**）
 
-
 ### ST-Link接続
+
 **右側コネクタ**
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/STLC1.PNG" style={{width:1000, height:'auto'}}/></div>
 
@@ -133,7 +130,8 @@ VD55G1カメラ付きAI Assistantキット。
 STM32N6には内部フラッシュがありません。再起動後にファームウェアを保持するには、外部フラッシュにプログラムする必要があります。
 または、SRAM（開発モード）から直接ファームウェアをロードできます。ただし、開発モードでは、ボードの電源を切ると、プログラムは失われます。
 
-__ブートモード：__
+**ブートモード：**
+
 - 開発モード：RAMのデバッグセッションからファームウェアをロード（ブートスイッチを右に）
 - フラッシュからブート：外部フラッシュにファームウェアをプログラム（ブートスイッチを左に）
 
@@ -177,18 +175,17 @@ STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -hardRst -w Binary/x-cub
 アプリケーションをビルドして実行する前に、`network_data.hex`（モデルの重みとバイアス）をプログラムする必要があります。
 
 この手順は、AIモデルを変更しない限り、一度だけ実行すれば十分です。
-詳細については、[プリビルドバイナリを使用したクイックスタート](#プリビルドバイナリを使用したクイックスタート)を参照してください。
+詳細については、[事前構築バイナリを使用したクイックスタート](#事前構築バイナリを使用したクイックスタート)を参照してください。
 
 ブートモードの詳細については、[ブート概要](#ブート概要)を参照してください。
 
 #### アプリケーションのビルドと実行 - 開発モード
 
-__スイッチが右側にあることを確認してください。__
+**スイッチが右側にあることを確認してください。**
 
 ##### STM32CubeIDE
 
 `STM32CubeIDE/.project`をダブルクリックして、STM32CubeIDEでプロジェクトを開きます。ビルドボタンと実行ボタンでビルドして実行します。
-
 
 ##### Makefile
 
@@ -218,7 +215,7 @@ $ arm-none-eabi-gdb build/Project.elf
 
 #### アプリケーションのビルドと実行 - フラッシュからのブート
 
-__スイッチが右側にあることを確認してください。__
+**スイッチが右側にあることを確認してください。**
 
 ##### STM32CubeIDE
 
@@ -331,6 +328,7 @@ DCMIPPの詳細については、STM32N6リファレンスマニュアルのDigi
 1. **app_config.h**を開きます。
 
 2. `CAMERA_FLIP`定義を変更します：
+
 ```c
 /* Defines: CMW_MIRRORFLIP_NONE; CMW_MIRRORFLIP_FLIP; CMW_MIRRORFLIP_MIRROR; CMW_MIRRORFLIP_FLIP_MIRROR; */
 
@@ -340,6 +338,7 @@ DCMIPPの詳細については、STM32N6リファレンスマニュアルのDigi
 ### TFLiteモデルのデプロイ
 
 独自の物体検出モデルを実行するには、以下の手順に従ってください：
+
 - [1. TFLiteモデルからCモデルを生成](#1-tfliteモデルからcモデルを生成)
 - [2. ネットワークデータをプログラム](#2-ネットワークデータをプログラム)
 - [3. `app_config.h`でNN情報を提供](#3-app_confighでnn情報を提供)
@@ -402,9 +401,9 @@ STM32_Programmer_CLI -c port=SWD mode=HOTPLUG -el $DKEL -hardRst -w Model/networ
 
 `NN_WIDTH`と`NN_HEIGHT`を編集してください。
 
-__警告:__ `NN_WIDTH * NN_BPP`は16の倍数である必要があります。
+**警告:** `NN_WIDTH * NN_BPP`は16の倍数である必要があります。
 
-__警告:__ RGB888フォーマットのみがテストされています。
+**警告:** RGB888フォーマットのみがテストされています。
 
 ##### クラスラベル
 
@@ -444,7 +443,6 @@ IOUしきい値、アンカー値、その他のパラメータを編集でき�
 
 ファームウェアをプログラムするには、[外部フラッシュでのアプリのプログラム](#アプリケーションのビルドと実行---フラッシュからのブート)を参照してください。
 
-
 ### Hexファイルのプログラム方法
 
 0. ボードが開発モード（ブートスイッチが開発モード位置）になっていることを確認してください。
@@ -463,9 +461,11 @@ IOUしきい値、アンカー値、その他のパラメータを編集でき�
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/img/flashHex.JPG" style={{width:1000, height:'auto'}}/></div>
 
 ## リソース
- - **[PDF]** [AI Assistant回路図](https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/res/SCH_AI%20ASSISTANT_V1-1%20RELEASE_20250314.pdf)
+
+- **[PDF]** [AI Assistant回路図](https://files.seeedstudio.com/wiki/AI_Assistant_V1.1/res/SCH_AI%20ASSISTANT_V1-1%20RELEASE_20250314.pdf)
 
 ## 技術サポート
+
 この製品は**STMicroelectronics**によってサポートされています。
 技術的な問題やお問い合わせについては、以下にご連絡ください：
 **技術サポート連絡先：
