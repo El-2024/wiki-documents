@@ -226,120 +226,7 @@ sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyACM1
 ```
 
-Open-file `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
-
-Use the Ctrl+F to search for starai and locate the following code. Then, you need to modify the port settings of follower_arms and leader_arms to match the actual port settings.
-
-```python
-@RobotConfig.register_subclass("starai")
-@dataclass
-class StaraiRobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/starai"
-    max_relative_target: int | None = None
-    
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB1",##### UPDATE HEARE
-                interval = 100,								
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB0",##### UPDATE HEARE
-                interval = 100,								
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
-```
-
-### Set Runtime Parameters
-
-Open-file `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
-
-Use the Ctrl + F to search for starai and locate the following code. Then, you need modify the interval setting of follower_arms.
-
-- Description: The faster the follower responds when the time interval becomes smaller, and more stable the follower runs when the time interval becomes larger.
-- Value Range: Integer, greater than 50 and less than 2000.
-
-It is recommended to set the interval to 100 (default value) during teleoperation for better responsiveness, and to 1000 during autonomous execution in evaluation phases to ensure more stable motion.
-
-```python
-@RobotConfig.register_subclass("starai")
-@dataclass
-class StaraiRobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/starai"
-    max_relative_target: int | None = None
-
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB1",
-                interval = 100,								
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB0",
-                interval = 100,	##### UPDATE HEARE
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
-
-```
-
-### Calibrate
-
-Normally, the robotic arm is pre-calibrated in factory and does not require recalibration. If a joint motor is found to remain at a limit position for a long period, please contact us to obtain the calibration file and perform recalibration again.
-
-<details>
-<summary> Note </summary>
+:::tip
 
 If the ttyUSB0 serial port cannot be identified, try the following solutions:
 
@@ -381,7 +268,120 @@ Finally，use chmod command.
 ```sh
 sudo chmod 666 /dev/ttyUSB0
 ```
-</details>
+:::
+
+
+Open-file `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
+
+Use the Ctrl+F to search for starai and locate the following code. Then, you need to modify the port settings of follower_arms and leader_arms to match the actual port settings.
+
+```python
+@RobotConfig.register_subclass("starai")
+@dataclass
+class StaraiRobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/starai"
+    max_relative_target: int | None = None
+    
+    leader_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "main": StaraiMotorsBusConfig(
+                port="/dev/ttyUSB1",  #<-------- UPDATE HEARE
+                interval = 100,								
+                motors={
+                    # name: (index, model)
+                    "joint1": [0, "rx8-u50"],
+                    "joint2": [1, "rx8-u50"],
+                    "joint3": [2, "rx8-u50"],
+                    "joint4": [3, "rx8-u50"],
+                    "joint5": [4, "rx8-u50"],
+                    "joint6": [5, "rx8-u50"],
+                    "gripper": [6, "rx8-u50"],
+                },
+            ),
+        }
+    )
+
+    follower_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "main": StaraiMotorsBusConfig(
+                port="/dev/ttyUSB0",  #<-------- UPDATE HEARE
+                interval = 100,								
+                motors={
+                    # name: (index, model)
+                    "joint1": [0, "rx8-u50"],
+                    "joint2": [1, "rx8-u50"],
+                    "joint3": [2, "rx8-u50"],
+                    "joint4": [3, "rx8-u50"],
+                    "joint5": [4, "rx8-u50"],
+                    "joint6": [5, "rx8-u50"],
+                    "gripper": [6, "rx8-u50"],
+                },
+            ),
+        }
+    )
+```
+
+### Set Runtime Parameters
+
+Open-file `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
+
+Use the Ctrl + F to search for starai and locate the following code. Then, you need modify the interval setting of follower_arms.
+
+- Description: The faster the follower responds when the time interval becomes smaller, and more stable the follower runs when the time interval becomes larger.
+- Value Range: Integer, greater than 50 and less than 2000.
+
+It is recommended to set the interval to 100 (default value) during teleoperation for better responsiveness, and to 1000 during autonomous execution in evaluation phases to ensure more stable motion.
+
+```python
+@RobotConfig.register_subclass("starai")
+@dataclass
+class StaraiRobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/starai"
+    max_relative_target: int | None = None
+
+    leader_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "main": StaraiMotorsBusConfig(
+                port="/dev/ttyUSB1",
+                interval = 100, 	#<-------- UPDATE HEARE							
+                motors={
+                    # name: (index, model)
+                    "joint1": [0, "rx8-u50"],
+                    "joint2": [1, "rx8-u50"],
+                    "joint3": [2, "rx8-u50"],
+                    "joint4": [3, "rx8-u50"],
+                    "joint5": [4, "rx8-u50"],
+                    "joint6": [5, "rx8-u50"],
+                    "gripper": [6, "rx8-u50"],
+                },
+            ),
+        }
+    )
+
+    follower_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "main": StaraiMotorsBusConfig(
+                port="/dev/ttyUSB0",
+                interval = 100, 	#<-------- UPDATE HEARE
+                motors={
+                    # name: (index, model)
+                    "joint1": [0, "rx8-u50"],
+                    "joint2": [1, "rx8-u50"],
+                    "joint3": [2, "rx8-u50"],
+                    "joint4": [3, "rx8-u50"],
+                    "joint5": [4, "rx8-u50"],
+                    "joint6": [5, "rx8-u50"],
+                    "gripper": [6, "rx8-u50"],
+                },
+            ),
+        }
+    )
+
+```
+
+### Calibrate
+
+Normally, the robotic arm is pre-calibrated in factory and does not require recalibration. If a joint motor is found to remain at a limit position for a long period, please contact us to obtain the calibration file and perform recalibration again.
 
 
 ## Teleoperate
@@ -459,13 +459,13 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
     cameras: dict[str, CameraConfig] = field(
         default_factory=*lambda*: {
             "laptop": OpenCVCameraConfig(
-                camera_index=2,             ##### UPDATE HEARE
+                camera_index=2,             #<------ UPDATE HEARE
                 fps=30,
                 width=640,
                 height=480,
             ),
             "phone": OpenCVCameraConfig(
-                camera_index=0,             ##### UPDATE HEARE
+                camera_index=0,             #<------ UPDATE HEARE
                 fps=30,
                 width=640,
                 height=480,
@@ -677,7 +677,7 @@ python lerobot/scripts/control_robot.py \
   --control.tags='["tutorial"]' \
   --control.warmup_time_s=5 \
   --control.episode_time_s=30 \
-  --control.reset_time_s=30 \
+  --control.reset_time_s=0 \#Set the reset time to 0 to skip the reset phase and ensure continuous operation.
   --control.num_episodes=10 \
   --control.push_to_hub=false \#Choose don't upload to Hub
   --control.policy.path=outputs/train/act_starai/checkpoints/last/pretrained_model
