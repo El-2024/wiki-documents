@@ -4163,6 +4163,7 @@ const sidebars = {
                 items: [
                   'Robotics/Robot_Software/Isaac_Lab/Install_Isaac_lab',
                   'Robotics/Robot_Software/Isaac_Lab/Simulate_SoArm101_by_LeIsaac',
+                  'Robotics/Robot_Software/Isaac_Lab/Training_SoARM101_Policy_with_IsaacLab',
                     ]},
 
             {
