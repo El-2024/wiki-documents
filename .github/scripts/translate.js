@@ -20,7 +20,7 @@ const LANGUAGE_CONFIG = {
     pathPrefix: '/ja'
   },
   'es': {
-    folder: 'Spanish',
+    folder: 'es',
     name: 'Español',
     pathPrefix: '/es'
   }
@@ -645,7 +645,7 @@ function processInternalLinks(content, targetLang) {
   
   // 处理各种链接格式
   content = content.replace(
-    /https:\/\/wiki\.seeedstudio\.com\/((?!zh-CN|ja|Spanish|cn)[^#\s"')]*)/gi,
+    /https:\/\/wiki\.seeedstudio\.com\/((?!zh-CN|ja|es|cn)[^#\s"')]*)/gi,
     (match, path) => {
       const cleanPath = path.startsWith('/') ? path.slice(1) : path;
       return `https://wiki.seeedstudio.com${pathPrefix}/${cleanPath}`;
@@ -917,7 +917,7 @@ async function detectFileOperations(baseSha) {
       const file = parts[1];
       
       if ((!file.match(/\.(md|mdx)$/) && !file.endsWith('_category_.yml')) || 
-          file.match(/\/(zh-CN|ja|Spanish)\//)) {
+          file.match(/\/(zh-CN|ja|es)\//)) {
         continue;
       }
       
