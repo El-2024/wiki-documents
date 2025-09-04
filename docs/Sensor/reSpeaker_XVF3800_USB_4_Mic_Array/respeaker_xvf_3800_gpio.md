@@ -10,7 +10,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/6-ReSpeaker-XVF3800-4-Mic-Array-With-XIAO-ESP32S3.jpg
 slug: /respeaker_xvf3800_xiao_gpio
 last_update:
-  date: 7/16/2025
+  date: 9/3/2025
   author: Kasun Thushara
 ---
 
@@ -49,7 +49,7 @@ The reSpeaker XVF3800 exposes 3 input pins (GPI) and 5 output pins (GPO) for ext
 - Reads 5 GPO pins statues in order: X0D11 → X0D30 → X0D31 → X0D33 → X0D39
 - Includes a status byte to validate the response
 
-```bash
+```c
 #include <Wire.h>
 
 #define XMOS_ADDR 0x2C  // I2C 7-bit address
@@ -91,14 +91,14 @@ void loop() {
 
 bool read_gpo_values(uint8_t *buffer, uint8_t *status) {
   const uint8_t resid = GPO_SERVICER_RESID;
-  const uint8_t cmd = GPO_SERVICER_RESID_GPO_READ_VALUES;
+  const uint8_t cmd = GPO_SERVICER_RESID_GPO_READ_VALUES | 0x80;
   const uint8_t read_len = GPO_GPO_READ_NUM_BYTES;
 
   // Step 1: Write command
   Wire.beginTransmission(XMOS_ADDR);
   Wire.write(resid);
   Wire.write(cmd);
-  Wire.write(read_len);
+  Wire.write(read_len + 1);
   uint8_t result = Wire.endTransmission();
 
   if (result != 0) {
@@ -121,6 +121,7 @@ bool read_gpo_values(uint8_t *buffer, uint8_t *status) {
 
   return true;
 }
+
 
 ```
 
