@@ -267,7 +267,7 @@ reTerminal E1001 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 **RSS 订阅集成**
 
-通过向您的仪表板添加 RSS 订阅，随时了解您最喜欢的新闻来源、博客或网站的最新信息。RSS 功能允许您显示来自多个来源的标题、摘要或完整文章。
+通过向您的仪表板添加 RSS 订阅，随时了解您最喜欢的新闻来源、博客或网站的最新动态。RSS 功能允许您显示来自多个来源的标题、摘要或完整文章。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/21.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -331,7 +331,7 @@ reTerminal E1001 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 ### 电池操作
 
-使用电池供电时：
+在电池供电时：
 
 - 设备将在刷新之间自动进入低功耗模式
 
@@ -423,7 +423,7 @@ reTerminal E1001 配有 3D 打印支撑架配件，允许您将设备直立放�
 
 **步骤 2.** 将支撑架放置在 reTerminal E1001 底部背面的指定安装区域，即嵌入螺母所在的位置。
 
-**步骤 3.** 使用长螺丝刀将螺钉拧入 reTerminal E1001 背面的嵌入螺母中，将支架固定到设备上。
+**步骤 3.** 使用长螺丝刀将螺丝拧入 reTerminal E1001 背面的嵌入螺母中，将支架固定到设备上。
 
 
 **步骤 4.** 一旦牢固连接后，将 reTerminal E1001 放置在平坦表面上，支架将支撑设备保持直立位置。
@@ -470,6 +470,7 @@ reTerminal E1001 配有 3D 打印支撑架配件，允许您将设备直立放�
 - [reTerminal E1001 原理图 (PDF)](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/202004307_reTerminal_E1001_V1.0_SCH_250805.pdf)
 - [ESP32-S3 数据手册](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/esp32-s3_datasheet.pdf)
 - [SenseCraft HMI 平台文档](https://wiki.seeedstudio.com/cn/sensecraft_hmi_overview)
+- [外观整体 3D 模型 STP 文件](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/reterminal_esp-250904.stp)
 <!-- - [GitHub Repository](/cn/getting_started_with_reterminal_e1001) -->
 
 ## 技术支持与产品讨论

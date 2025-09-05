@@ -81,7 +81,7 @@ reTerminal EシリーズePaperディスプレイは、Fat32形式の最大64GB�
 
 **ステップ3.** （オプション）必要に応じてUSBドライバーをインストールします：
 
-オペレーティングシステムによっては、reTerminal E1002との適切な通信を確保するためにUSBドライバーをインストールする必要がある場合があります：
+お使いのオペレーティングシステムによっては、reTerminal E1002との適切な通信を確保するためにUSBドライバーをインストールする必要がある場合があります：
 
 - **Macコンピューター用**：[WCH公式ウェブサイト](https://www.wch-ic.com/downloads/CH34XSER_MAC_ZIP.html)からCH34Xドライバーをダウンロードしてインストールします
 
@@ -156,7 +156,7 @@ reTerminal EシリーズePaperディスプレイは、Fat32形式の最大64GB�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/5.png" style={{width:400, height:'auto'}}/></div><br />
 
-**ステップ2.** 接続すると、電話は自動的にWi-Fi設定ページにリダイレクトされるはずです。そうでない場合は、ブラウザを開いて`192.168.4.1`に移動します。
+**ステップ2.** 接続すると、お使いの電話は自動的にWi-Fi設定ページにリダイレクトされるはずです。されない場合は、ブラウザを開いて`192.168.4.1`に移動します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/6.png" style={{width:700, height:'auto'}}/></div><br />
 
@@ -172,7 +172,7 @@ reTerminal EシリーズePaperディスプレイは2.4GHz WiFiネットワーク
 
 ### SenseCraftプラットフォームへの接続
 
-**ステップ1.** ウェブブラウザで[SenseCraft HMI](https://sensecraft.seeed.cc/hmi)にアクセスし、アカウントを作成するかサインインします。
+**ステップ1.** Webブラウザで[SenseCraft HMI](https://sensecraft.seeed.cc/hmi)にアクセスし、アカウントを作成するかサインインします。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://sensecraft.seeed.cc/hmi" target="_blank" rel="noopener noreferrer">
@@ -185,7 +185,7 @@ reTerminal EシリーズePaperディスプレイは2.4GHz WiFiネットワーク
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/7.png" style={{width:1000, height:'auto'}}/></div>
 
-**ステップ3.** デバイスに名前を付け、デバイス画面に表示されているペアリングコードを入力して**Create**をクリックします。
+**ステップ3.** デバイスに名前を付け、デバイスの画面に表示されているペアリングコードを入力して**Create**をクリックします。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/8.png" style={{width:600, height:'auto'}}/></div>
 
@@ -218,7 +218,7 @@ reTerminal EシリーズePaperディスプレイは2.4GHz WiFiネットワーク
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/153.png" style={{width:250, height:'auto'}}/></div><br />
 
-**ステップ 4.** Bluetooth 経由で接続されると、アプリは Wi-Fi 接続の設定を求めます。ドロップダウンリストからローカルの 2.4GHz Wi-Fi ネットワークを選択し、パスワードを入力して**次へ**をタップします。
+**ステップ 4.** Bluetooth 経由で接続されると、アプリが Wi-Fi 接続の設定を促します。ドロップダウンリストからローカルの 2.4GHz Wi-Fi ネットワークを選択し、パスワードを入力して**次へ**をタップします。
 
 :::note
 デバイスは 2.4G Wi-Fi ネットワーク経由でのみ設定できます。
@@ -226,7 +226,7 @@ reTerminal EシリーズePaperディスプレイは2.4GHz WiFiネットワーク
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/154.png" style={{width:250, height:'auto'}}/></div><br />
 
-**ステップ 5.** アプリは Wi-Fi 認証情報をデバイスに送信し、SenseCraft アカウントに追加します。完了すると「デバイスが正常に追加されました」というメッセージが表示されます。**探索を開始！**をタップして続行できます。
+**ステップ 5.** アプリが Wi-Fi 認証情報をデバイスに送信し、SenseCraft アカウントに追加します。完了すると「デバイスが正常に追加されました」というメッセージが表示されます。**探索を開始！**をタップして続行できます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/155.png" style={{width:250, height:'auto'}}/></div><br />
 
@@ -234,7 +234,7 @@ reTerminal EシリーズePaperディスプレイは2.4GHz WiFiネットワーク
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/156.png" style={{width:250, height:'auto'}}/></div><br />
 
-**ステップ 7.** リスト内のデバイスをタップして**デバイス詳細**ページを表示できます。ここからデバイスを管理し、写真をアップロードできます。より複雑なダッシュボードとキャンバスの設計については、SenseCraft のウェブブラウザ版の使用を求められます。
+**ステップ 7.** リスト内のデバイスをタップして**デバイス詳細**ページを表示できます。ここからデバイスを管理し、写真をアップロードできます。より複雑なダッシュボードとキャンバスの設計については、SenseCraft のウェブブラウザ版の使用を促されます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/157.png" style={{width:250, height:'auto'}}/></div><br />
 
@@ -261,7 +261,7 @@ reTerminal E1002 は SenseCraft HMI プラットフォームとシームレス�
 
 **キャンバス**
 
-キャンバスでダッシュボードをゼロからデザインしましょう。さまざまな要素を提供するドラッグアンドドロップインターフェースです：
+キャンバスでダッシュボードを一から設計しましょう。さまざまな要素を提供するドラッグアンドドロップインターフェースです：
 - カスタマイズ可能なフォントとサイズのテキストブロック
 - 画像プレースホルダー
 - 時刻、日付、天気のウィジェット
@@ -293,7 +293,7 @@ reTerminal E1002 は SenseCraft HMI プラットフォームとシームレス�
 - [RSS フィード設定](https://wiki.seeedstudio.com/ja/sensecraft_hmi_rss)
 - [ウェブコンテンツ表示](https://wiki.seeedstudio.com/ja/sensecraft_hmi_web)
 
-SenseCraft プラットフォームでダッシュボードを作成して保存したら、「デバイスにデプロイ」をクリックし、ペアリングした reTerminal E1002 を選択するだけで、カスタムコンテンツがデバイスにワイヤレスで送信されます。ePaper ディスプレイがダッシュボードを表示するように更新され、複数のページを作成した場合はナビゲーションボタンを使用してページを切り替えることができます。
+SenseCraft プラットフォームでダッシュボードを作成して保存したら、「デバイスにデプロイ」をクリックし、ペアリングした reTerminal E1002 を選択するだけで、カスタムコンテンツがワイヤレスでデバイスに送信されます。ePaper ディスプレイがダッシュボードを表示するように更新され、複数のページを作成した場合はナビゲーションボタンを使用してページを切り替えることができます。
 
 ## デバイスの操作
 
@@ -303,7 +303,7 @@ SenseCraft プラットフォームでダッシュボードを作成して保存
 
 デバイス上部のリフレッシュボタンには複数の機能があります：
 
-- **シングルプレス**：ディスプレイを手動でリフレッシュし、SenseCraft プラットフォームから新しいコンテンツをチェックします。ブザーが一度鳴ってアクションを確認します。このボタンはデバイスのウェイクアップにも一般的に使用されます。デバイスがスリープ状態になり、ダッシュボードのリフレッシュコマンドがデバイスにすぐに利用できない場合に、このボタンを使用してデバイスをウェイクアップできます。
+- **シングルプレス**：ディスプレイを手動でリフレッシュし、SenseCraft プラットフォームから新しいコンテンツをチェックします。ブザーが一度鳴ってアクションを確認します。このボタンはデバイスのウェイクアップにも一般的に使用されます。デバイスがスリープ状態になり、ダッシュボードのリフレッシュコマンドがすぐにデバイスで利用できない場合に、このボタンを使用してデバイスをウェイクアップできます。
 
 - **長押し**（将来の機能）：音声入力モードを有効にします。
 
@@ -342,7 +342,7 @@ SenseCraft プラットフォームでダッシュボードを作成して保存
 
 - バッテリー寿命はリフレッシュ頻度に依存します（デフォルト設定でフル充電から通常 3 ヶ月）
 
-- バッテリーレベルが 20% を下回ると、デバイスは右上角に低バッテリーアイコンを表示します
+- バッテリーレベルが 20% を下回ると、デバイスは右上隅に低バッテリーアイコンを表示します
 
 ### 拡張ピン
 
@@ -372,8 +372,8 @@ reTerminal E1002 は、外部センサー、モジュール、またはその他
 			<td>2</td>
 			<td>GND</td>
 			<td>-</td>
-			<td>グラウンド</td>
-			<td>共通グラウンド基準</td>
+			<td>グランド</td>
+			<td>共通グランド基準</td>
 		</tr>
 		<tr>
 			<td>3</td>
@@ -475,11 +475,12 @@ reTerminal E1002には、最適な視認性のためにデバイスを直立さ�
 - [reTerminal E1002 回路図（PDF）](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/202004321_reTerminal_E1002_V1.0_SCH_250805.pdf)
 - [ESP32-S3 データシート](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/esp32-s3_datasheet.pdf)
 - [SenseCraft HMI プラットフォーム ドキュメント](https://wiki.seeedstudio.com/ja/sensecraft_hmi_overview)
+- [外観全体3DモデルSTPファイル](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/reterminal_esp-250904.stp)
 <!-- - [GitHub Repository](/ja/getting_started_with_reterminal_e1002) -->
 
 ## 技術サポート & 製品ディスカッション
 
-弊社製品をお選びいただき、ありがとうございます！弊社製品での体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。さまざまな好みやニーズに対応するため、複数のコミュニケーションチャネルを提供しています。
+弊社製品をお選びいただき、ありがとうございます！弊社製品での体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
 
 <div class="table-center">
   <div class="button_tech_support_container">

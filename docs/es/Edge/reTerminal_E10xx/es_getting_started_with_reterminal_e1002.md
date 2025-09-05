@@ -113,7 +113,7 @@ Dependiendo de tu sistema operativo, es posible que necesites instalar controlad
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/9.png" style={{width:1000, height:'auto'}}/></div>
 
-6. Selecciona tu dispositivo reTerminal E1002 de la lista. Según este tutorial, debes elegir **reTerminal E1002 7.3" Full Color Display**.
+6. Selecciona tu dispositivo reTerminal E1002 de la lista. Según este tutorial, deberías elegir **reTerminal E1002 7.3" Full Color Display**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/11.png" style={{width:800, height:'auto'}}/></div>
 
@@ -141,7 +141,7 @@ Dependiendo de tu sistema operativo, es posible que necesites instalar controlad
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/17.png" style={{width:600, height:'auto'}}/></div><br />
 
 
-**Paso 3.** El LED verde del usuario se encenderá durante aproximadamente 30 segundos, indicando que el dispositivo está encendido e inicializándose. Después de 30 segundos sin operación del dispositivo, para asegurar la energía, el dispositivo entrará automáticamente en modo de suspensión y la luz LED se apagará automáticamente.
+**Paso 3.** El LED verde del usuario se encenderá durante aproximadamente 30 segundos, indicando que el dispositivo está encendido e inicializándose. Después de 30 segundos sin operación del dispositivo, para asegurar la energía, el dispositivo entrará automáticamente en modo de suspensión, y la luz LED se apagará automáticamente.
 
 :::tip
 Por lo tanto, necesitamos completar los siguientes pasos de configuración de red durante este tiempo. Cuando el dispositivo entre en suspensión, no podrás encontrar el punto de acceso del dispositivo. Si este es el caso, puedes despertar el dispositivo haciendo clic una vez en el botón verde Wake del dispositivo.
@@ -321,7 +321,7 @@ Los botones izquierdo y derecho te permiten navegar entre múltiples páginas si
 
 Si necesitas conectarte a una red Wi-Fi diferente:
 
-**Paso 1.** Mantén presionados ambos botones de navegación (izquierdo y derecho) simultáneamente durante 2 segundos.
+**Paso 1.** Mantén presionados ambos botones de navegación (izquierdo y derecho) simultáneamente por 2 segundos.
 
 **Paso 2.** El dispositivo entrará en modo de configuración Wi-Fi, y puedes seguir los pasos de [Configuración de Red](#configuración-de-red) nuevamente para conectarte a una nueva red.
 
@@ -332,7 +332,7 @@ Si necesitas conectarte a una red Wi-Fi diferente:
   - Siempre encendido: cargando
 
 - **LED Verde**:
-  - Encendido durante 30 segundos al arrancar: El dispositivo se está encendiendo
+  - Encendido por 30 segundos al arrancar: El dispositivo se está encendiendo
 
 ### Operación con Batería
 
@@ -348,9 +348,9 @@ Cuando opera con energía de batería:
 
 El reTerminal E1002 cuenta con un conector de expansión de 8 pines (J2) que proporciona opciones de conectividad para agregar sensores externos, módulos u otro hardware para extender la funcionalidad de tu dispositivo. Este conector de expansión expone varios pines GPIO del ESP32-S3 e interfaces de comunicación, convirtiéndolo en un punto de conexión versátil para tus proyectos DIY.
 
-#### Distribución de Pines del Conector de Expansión
+#### Pinout del Conector de Expansión
 
-El conector de expansión de 8 pines (J2) tiene la siguiente distribución de pines:
+El conector de expansión de 8 pines (J2) tiene el siguiente pinout:
 
 <div class="table-center">
 	<table align="center">
@@ -475,9 +475,10 @@ El soporte permite que el dispositivo se coloque en escritorios, encimeras o est
 - [Esquemático del reTerminal E1002 (PDF)](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/202004321_reTerminal_E1002_V1.0_SCH_250805.pdf)
 - [Hoja de Datos del ESP32-S3](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/esp32-s3_datasheet.pdf)
 - [Documentación de la Plataforma SenseCraft HMI](https://wiki.seeedstudio.com/es/sensecraft_hmi_overview)
+- [Archivo STP del modelo 3D exterior general](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/reterminal_esp-250904.stp)
 <!-- - [GitHub Repository](/es/getting_started_with_reterminal_e1002) -->
 
-## Soporte Técnico y Discusión del Producto
+## Soporte Técnico y Discusión de Productos
 
 ¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes tipos de soporte para asegurar que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para satisfacer diferentes preferencias y necesidades.
 
