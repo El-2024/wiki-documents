@@ -442,6 +442,7 @@ Search "indicator" and install "Raspberry Pi Pico/RP2040" in the Boards Manager
 - **Step 3**: Add Libraries
 
 :::note **Libraries for reference**
+
 - Sensirion Core: [Sensirion Arduino Core library](https://github.com/Sensirion/arduino-core)
 - PacketSerial : [Serial communication protoco](https://github.com/bakercp/PacketSerial)
 - Sensirion I2C SGP40 : [SGP40 TVOC sensor library](https://github.com/Sensirion/arduino-i2c-sgp40)
