@@ -40,7 +40,6 @@ last_update:
       </div></td>
     </tr>
   </table>
-
 </div>
 
 ## ステップ1. SenseCraft AI Vision Workspaceにアクセスし、XIAO ESP32S3 Senseを接続する
@@ -364,8 +363,8 @@ void loop()
 :::note
 SPI通信には以下のプロトコルを使用してください：
 
-- READ: バイト 0x10, 0x01, LEN << 8, LEN & 0xff を送信
-- WRITE: バイト 0x10, 0x02, LEN << 8, LEN & 0xff を送信
+- READ: バイト 0x10, 0x01, LEN &lt&lt 8, LEN & 0xff を送信
+- WRITE: バイト 0x10, 0x02, LEN &lt&lt 8, LEN & 0xff を送信
 - AVAIL（データ可用性チェック）: バイト 0x10, 0x03 を送信
 - RESET（バッファクリア）: バイト 0x10, 0x06 を送信
 

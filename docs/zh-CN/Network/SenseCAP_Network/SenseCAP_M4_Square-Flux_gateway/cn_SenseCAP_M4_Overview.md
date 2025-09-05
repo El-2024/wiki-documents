@@ -33,7 +33,7 @@ SenseCAP M4 Square 运行在四核 Intel® Celeron® J4125 和 RP2040 协处理�
 
 - **卓越性能**：由 Intel® Celeron® J4125（频率：2.0 - 2.7GHz）提供动力，具有 4 核 4 线程。
 
-- **低功耗**：10w 低功耗，每月 7.2 kWh，每月成本 $1.008（全球平均 kWh 价格为 $0.144/每 kWh）。
+- **低功耗**：10w 低功耗，每月 7.2 kWh，每月成本 \$1.008（全球平均 kWh 价格为 \$0.144/每 kWh）。
 
 ![](https://www.sensecapmx.com/wp-content/uploads/2022/12/Pasted-into-Overview-1.png)
 
