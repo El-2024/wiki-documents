@@ -1,8 +1,8 @@
 ---
-description: Este artículo describe cómo hacer funcionar la pantalla ePaper de la serie reTerminal E con Arduino.
-title: Pantalla ePaper de la serie reTerminal E funcionando con Arduino
+description: この記事では、reTerminal E シリーズ ePaper ディスプレイを Arduino で動作させる方法について説明します。
+title: reTerminal E シリーズ ePaper ディスプレイを Arduino で動作させる
 image: https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.webp
-slug: /es/reterminal_e10xx_with_arduino
+slug: /ja/reterminal_e10xx_with_arduino
 sidebar_position: 4
 last_update:
   date: 08/21/2025
@@ -12,17 +12,17 @@ last_update:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Comenzando con la pantalla ePaper de la serie reTerminal E en Arduino
+# Arduino での reTerminal E シリーズ ePaper ディスプレイの使用開始
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/147.png" style={{width:800, height:'auto'}}/></div>
 
-## Introducción
+## はじめに
 
-La serie reTerminal E representa el último avance de Seeed Studio en soluciones HMI industriales, con ESP32-S3 como controlador principal y pantallas ePaper integradas. Esta guía te llevará a través de la programación de la pantalla ePaper en dispositivos de la serie reTerminal E usando Arduino IDE, permitiéndote crear interfaces y aplicaciones personalizadas con excelente visibilidad y consumo de energía ultra bajo.
+reTerminal E シリーズは、ESP32-S3 をメインコントローラーとし、統合された ePaper ディスプレイを特徴とする、Seeed Studio の産業用 HMI ソリューションの最新の進歩を表しています。このガイドでは、Arduino IDE を使用して reTerminal E シリーズデバイスの ePaper ディスプレイをプログラミングし、優れた視認性と超低消費電力でカスタムインターフェースとアプリケーションを作成する方法を説明します。
 
-### Materiales requeridos
+### 必要な材料
 
-Para completar este tutorial, por favor prepara uno de los siguientes dispositivos de la serie reTerminal E:
+このチュートリアルを完了するには、以下の reTerminal E シリーズデバイスのいずれかを準備してください：
 
 <div class="table-center">
   <table align="center">
@@ -37,168 +37,168 @@ Para completar este tutorial, por favor prepara uno de los siguientes dispositiv
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
         <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-E1001-p-6534.html" target="_blank" rel="noopener noreferrer">
-        <strong><span><font color={'FFFFFF'} size={"4"}> Obtener uno ahora 🖱️</font></span></strong>
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
         </a>
       </div></td>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
         <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-E1002-p-6533.html" target="_blank" rel="noopener noreferrer">
-        <strong><span><font color={'FFFFFF'} size={"4"}> Obtener uno ahora 🖱️</font></span></strong>
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
         </a>
       </div></td>
     </tr>
   </table>
 </div>
 
-### Preparación del entorno
+### 環境準備
 
-Para programar la pantalla ePaper de la serie reTerminal E con Arduino, necesitarás configurar el Arduino IDE con soporte para ESP32.
+reTerminal E シリーズ ePaper ディスプレイを Arduino でプログラミングするには、ESP32 サポート付きの Arduino IDE をセットアップする必要があります。
 
 :::tip
-Si esta es tu primera vez usando Arduino, te recomendamos encarecidamente que consultes [Comenzando con Arduino](https://wiki.seeedstudio.com/es/Getting_Started_with_Arduino/).
+Arduino を初めて使用する場合は、[Arduino の使用開始](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
-#### Configuración del Arduino IDE
+#### Arduino IDE セットアップ
 
-**Paso 1.** Descarga e instala el [Arduino IDE](https://www.arduino.cc/en/software) y ejecuta la aplicación Arduino.
+**ステップ 1.** [Arduino IDE](https://www.arduino.cc/en/software) をダウンロードしてインストールし、Arduino アプリケーションを起動します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
     <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
-      <strong><span><font color={'FFFFFF'} size={"4"}>Descargar Arduino IDE</font></span></strong>
+      <strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
     </a>
 </div><br />
 
-**Paso 2.** Añade soporte para placas ESP32 al Arduino IDE.
+**ステップ 2.** Arduino IDE に ESP32 ボードサポートを追加します。
 
-En Arduino IDE, ve a **Archivo > Preferencias** y añade la siguiente URL al campo "URLs adicionales del gestor de placas":
+Arduino IDE で、**ファイル > 環境設定** に移動し、「追加のボードマネージャーの URL」フィールドに以下の URL を追加します：
 
 ```
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 ```
 
-**Paso 3.** Instala el paquete de placas ESP32.
+**ステップ 3.** ESP32 ボードパッケージをインストールします。
 
-Navega a **Herramientas > Placa > Gestor de placas**, busca "esp32" e instala el paquete ESP32 de Espressif Systems.
+**ツール > ボード > ボードマネージャー** に移動し、「esp32」を検索して、Espressif Systems による ESP32 パッケージをインストールします。
 
-**Paso 4.** Selecciona la placa correcta.
+**ステップ 4.** 正しいボードを選択します。
 
-Ve a **Herramientas > Placa > ESP32 Arduino** y selecciona **XIAO_ESP32S3**.
+**ツール > ボード > ESP32 Arduino** に移動し、**XIAO_ESP32S3** を選択します。
 
-**Paso 5.** Conecta tu pantalla ePaper de la serie reTerminal E a tu computadora usando un cable USB-C.
+**ステップ 5.** USB-C ケーブルを使用して reTerminal E シリーズ ePaper ディスプレイをコンピューターに接続します。
 
-**Paso 6.** Selecciona el puerto correcto desde **Herramientas > Puerto**.
+**ステップ 6.** **ツール > ポート** から正しいポートを選択します。
 
-## Programación de la pantalla ePaper
+## ePaper ディスプレイプログラミング
 
-El **reTerminal E1001 cuenta con una pantalla ePaper de 7.5 pulgadas en blanco y negro**, mientras que el **reTerminal E1002 está equipado con una pantalla ePaper a todo color de 7.3 pulgadas**. Ambas pantallas proporcionan excelente visibilidad en varias condiciones de iluminación con consumo de energía ultra bajo, haciéndolas ideales para aplicaciones industriales que requieren pantallas siempre encendidas con uso mínimo de energía.
+**reTerminal E1001 は 7.5 インチの白黒 ePaper ディスプレイを搭載**し、**reTerminal E1002 は 7.3 インチのフルカラー ePaper ディスプレイを搭載**しています。両方のディスプレイは、さまざまな照明条件で優れた視認性と超低消費電力を提供し、最小限の電力使用で常時表示が必要な産業用アプリケーションに最適です。
 
-### Usando la librería Seeed_GFX
+### Seeed_GFX ライブラリの使用
 
-Para controlar la pantalla ePaper, usaremos la librería Seeed_GFX, que proporciona soporte integral para varios dispositivos de pantalla de Seeed Studio.
+ePaper ディスプレイを制御するために、さまざまな Seeed Studio ディスプレイデバイスの包括的なサポートを提供する Seeed_GFX ライブラリを使用します。
 
-**Paso 1.** Descarga la librería Seeed_GFX desde GitHub:
+**ステップ 1.** GitHub から Seeed_GFX ライブラリをダウンロードします：
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/Seeed_GFX" target="_blank" rel="noopener noreferrer">
-    <strong><span><font color={'FFFFFF'} size={"4"}>Descargar la librería</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    <strong><span><font color={'FFFFFF'} size={"4"}>Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
     </a>
 </div><br />
 
-**Paso 2.** Instala la librería añadiendo el archivo ZIP en Arduino IDE. Ve a **Programa > Incluir librería > Añadir librería .ZIP** y selecciona el archivo ZIP descargado.
+**ステップ 2.** Arduino IDE で ZIP ファイルを追加してライブラリをインストールします。**スケッチ > ライブラリをインクルード > .ZIP 形式のライブラリをインストール** に移動し、ダウンロードした ZIP ファイルを選択します。
 
 :::note
-Si has instalado previamente la librería TFT_eSPI, puede que necesites removerla temporalmente o renombrarla desde tu carpeta de librerías de Arduino para evitar conflictos, ya que Seeed_GFX es un fork de TFT_eSPI con características adicionales para pantallas de Seeed Studio.
+以前に TFT_eSPI ライブラリをインストールしている場合は、競合を避けるために Arduino ライブラリフォルダから一時的に削除または名前を変更する必要がある場合があります。Seeed_GFX は TFT_eSPI のフォークで、Seeed Studio ディスプレイ用の追加機能があります。
 :::
 
 <Tabs>
-<TabItem value="Programming reTerminal E1001" label="Programando reTerminal E1001" default>
+<TabItem value="Programming reTerminal E1001" label="reTerminal E1001 のプログラミング" default>
 
-#### Programando reTerminal E1001 (ePaper de 7.5 pulgadas en blanco y negro)
+#### reTerminal E1001 のプログラミング（7.5 インチ白黒 ePaper）
 
-Exploremos un ejemplo simple que demuestra operaciones básicas de dibujo en la pantalla ePaper en blanco y negro.
+白黒 ePaper ディスプレイでの基本的な描画操作を実演する簡単な例を見てみましょう。
 
-**Paso 1.** Abre el sketch de ejemplo de la librería Seeed_GFX: **Archivo > Ejemplos > Seeed_GFX > ePaper > Basic > HelloWorld**
+**ステップ 1.** Seeed_GFX ライブラリからサンプルスケッチを開きます：**ファイル > スケッチ例 > Seeed_GFX > ePaper > Basic > HelloWorld**
 
-**Paso 2.** Crea un nuevo archivo llamado `driver.h` en la misma carpeta que tu sketch. Puedes hacer esto haciendo clic en el botón de flecha en el Arduino IDE y seleccionando "Nueva pestaña", luego nombrándola `driver.h`.
+**ステップ 2.** スケッチと同じフォルダに `driver.h` という名前の新しいファイルを作成します。Arduino IDE の矢印ボタンをクリックして「新しいタブ」を選択し、`driver.h` と名前を付けることでこれを行うことができます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/select.jpg" style={{width:1000, height:'auto'}}/></div>
 
-**Paso 3.** Ve a la [Herramienta de configuración Seeed GFX](https://seeed-studio.github.io/Seeed_GFX/) y selecciona **reTerminal E1001** de la lista de dispositivos.
+**ステップ 3.** [Seeed GFX 設定ツール](https://seeed-studio.github.io/Seeed_GFX/)に移動し、デバイスリストから **reTerminal E1001** を選択します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/gfx.jpg" style={{width:900, height:'auto'}}/></div>
 
-**Paso 4.** Copia el código de configuración generado y pégalo en el archivo `driver.h`. El código debería verse así:
+**ステップ 4.** 生成された設定コードをコピーして、`driver.h` ファイルに貼り付けます。コードは次のようになります：
 
 ```cpp
 #define BOARD_SCREEN_COMBO 520 // reTerminal E1001 (UC8179)
 ```
 
-**Paso 5.** Sube el sketch a tu reTerminal E1001. Deberías ver la pantalla mostrando varios gráficos incluyendo líneas, texto y formas demostrando las capacidades básicas de dibujo.
+**ステップ 5.** スケッチを reTerminal E1001 にアップロードします。基本的な描画機能を実演する線、テキスト、図形を含むさまざまなグラフィックスがディスプレイに表示されるはずです。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/148.jpg" style={{width:500, height:'auto'}}/></div>
 
 </TabItem>
-<TabItem value="Programming reTerminal E1002" label="Programando reTerminal E1002">
+<TabItem value="Programming reTerminal E1002" label="reTerminal E1002 のプログラミング">
 
-#### Programando reTerminal E1002 (ePaper a todo color de 7.3 pulgadas)
+#### reTerminal E1002 のプログラミング（7.3 インチフルカラー ePaper）
 
-La pantalla ePaper a todo color soporta colores rojo, negro y blanco, permitiendo interfaces visualmente más ricas.
+フルカラー ePaper ディスプレイは赤、黒、白の色をサポートし、より視覚的に豊かなインターフェースを可能にします。
 
-**Paso 1.** Abre el sketch de ejemplo a color de la librería Seeed_GFX: **Archivo > Ejemplos > Seeed_GFX > ePaper > Colorful > HelloWorld**
+**ステップ 1.** Seeed_GFX ライブラリからカラーサンプルスケッチを開きます：**ファイル > スケッチ例 > Seeed_GFX > ePaper > Colorful > HelloWorld**
 
-**Paso 2.** Crea un nuevo archivo llamado `driver.h` en la misma carpeta que tu sketch, siguiendo el mismo proceso que antes.
+**ステップ 2.** 前と同じプロセスに従って、スケッチと同じフォルダに `driver.h` という名前の新しいファイルを作成します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/select2.jpg" style={{width:1000, height:'auto'}}/></div>
 
-**Paso 3.** Ve a la [Herramienta de configuración Seeed GFX](https://seeed-studio.github.io/Seeed_GFX/) y selecciona **reTerminal E1002** de la lista de dispositivos.
+**ステップ 3.** [Seeed GFX 設定ツール](https://seeed-studio.github.io/Seeed_GFX/)に移動し、デバイスリストから **reTerminal E1002** を選択します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/gfx2.jpg" style={{width:900, height:'auto'}}/></div>
 
-**Paso 4.** Copia el código de configuración generado y pégalo en el archivo `driver.h`. El código debería verse así:
+**ステップ 4.** 生成された設定コードをコピーして、`driver.h` ファイルに貼り付けます。コードは次のようになります：
 
 ```cpp
 #define BOARD_SCREEN_COMBO 521 // reTerminal E1002 (UC8179C)
 ```
 
-**Paso 5.** Sube el sketch a tu reTerminal E1002. La pantalla mostrará gráficos coloridos demostrando las capacidades a todo color de la pantalla ePaper.
+**ステップ 5.** スケッチを reTerminal E1002 にアップロードします。ディスプレイには ePaper ディスプレイのフルカラー機能を実演するカラフルなグラフィックスが表示されます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/149.jpg" style={{width:500, height:'auto'}}/></div>
 
 </TabItem>
 </Tabs>
 
-### Usando la librería GxEPD2
+### GxEPD2 ライブラリの使用
 
-Además de Seeed_GFX, también puedes usar la librería `GxEPD2` para controlar la pantalla ePaper del reTerminal. `GxEPD2` es una librería poderosa y popular que soporta una amplia gama de pantallas e-paper.
+Seeed_GFX の他に、`GxEPD2` ライブラリを使用して reTerminal の ePaper ディスプレイを駆動することもできます。`GxEPD2` は、幅広い e-paper ディスプレイをサポートする強力で人気のあるライブラリです。
 
-**Instalando la librería GxEPD2**
+**GxEPD2 ライブラリのインストール**
 
-Para asegurar que tienes las últimas características y soporte de dispositivos, es mejor instalar la librería `GxEPD2` manualmente desde su repositorio de GitHub.
+最新の機能とデバイスサポートを確実に利用するために、GitHub リポジトリから `GxEPD2` ライブラリを手動でインストールするのが最適です。
 
-**Paso 1.** Ve al repositorio de GitHub de GxEPD2. Haz clic en el botón "Code" y luego selecciona "Download ZIP" para guardar la librería en tu computadora.
+**ステップ 1.** GxEPD2 GitHub リポジトリに移動します。「Code」ボタンをクリックし、「Download ZIP」を選択してライブラリをコンピューターに保存します。
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/ZinggJM/GxEPD2" target="_blank" rel="noopener noreferrer">
 
-    <strong><span><font color={'FFFFFF'} size={"4"}>Descargar la Biblioteca</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    <strong><span><font color={'FFFFFF'} size={"4"}>ライブラリをダウンロード</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
     </a>
 </div><br />
 
-**Paso 2.** En el IDE de Arduino, instala la biblioteca desde el archivo descargado. Navega a **Sketch > Incluir Biblioteca > Agregar Biblioteca .ZIP...** y selecciona el archivo ZIP que acabas de descargar.
+**ステップ 2.** Arduino IDEで、ダウンロードしたファイルからライブラリをインストールします。**スケッチ > ライブラリをインクルード > .ZIP形式のライブラリをインストール...** に移動し、先ほどダウンロードしたZIPファイルを選択します。
 
-**Paso 3.** La biblioteca `GxEPD2` requiere la `Adafruit GFX Library` para funcionar, que también debes instalar. La forma más fácil de hacer esto es a través del Administrador de Bibliotecas: ve a **Herramientas > Administrar Bibliotecas...**, busca "Adafruit GFX Library" y haz clic en "Instalar".
+**ステップ 3.** `GxEPD2`ライブラリが機能するには`Adafruit GFX Library`が必要で、これもインストールする必要があります。最も簡単な方法はライブラリマネージャーを使用することです：**ツール > ライブラリを管理...** に移動し、「Adafruit GFX Library」を検索して「インストール」をクリックします。
 
 :::note
-Aunque `GxEPD2` está disponible en el Administrador de Bibliotecas de Arduino por conveniencia, la versión que se encuentra allí puede estar desactualizada con frecuencia. El repositorio de GitHub es la fuente definitiva para la versión más reciente, que incluye las características más nuevas, correcciones de errores y soporte para las pantallas de papel electrónico más recientes. Por lo tanto, descargar la biblioteca directamente desde GitHub es el enfoque recomendado para asegurar que tengas el código más actual.
+`GxEPD2`は便宜上Arduino Library Managerで利用できますが、そこにあるバージョンは古い場合があります。GitHubリポジトリは最新バージョンの決定的なソースであり、最新の機能、バグ修正、最新のe-paperディスプレイのサポートが含まれています。したがって、最新のコードを確実に入手するために、GitHubから直接ライブラリをダウンロードすることが推奨されるアプローチです。
 :::
 
 <Tabs>
-<TabItem value="Programming reTerminal E1001 GxEPD2" label="Programando reTerminal E1001" default>
+<TabItem value="Programming reTerminal E1001 GxEPD2" label="Programming reTerminal E1001" default>
 
-#### Programando reTerminal E1001 (Pantalla en Blanco y Negro)
+#### reTerminal E1001のプログラミング（白黒画面）
 
-Aquí está el código de ejemplo para mostrar "¡Hola Mundo!" en la pantalla ePaper en blanco y negro del reTerminal E1001 usando la biblioteca `GxEPD2`. Establece `EPD_SELECT` en `0` para seleccionar el controlador para el E1001.
+以下は、`GxEPD2`ライブラリを使用してreTerminal E1001の白黒ePaperディスプレイに「Hello World!」を表示するサンプルコードです。E1001用のドライバーを選択するために`EPD_SELECT`を`0`に設定します。
 
 ```cpp
 #include <GxEPD2_BW.h>
@@ -284,11 +284,11 @@ void loop() {};
 ```
 
 </TabItem>
-<TabItem value="Programming reTerminal E1002 GxEPD2" label="Programando reTerminal E1002">
+<TabItem value="Programming reTerminal E1002 GxEPD2" label="Programming reTerminal E1002">
 
-#### Programando reTerminal E1002 (Pantalla a Todo Color)
+#### reTerminal E1002のプログラミング（フルカラー画面）
 
-Para el reTerminal E1002, simplemente necesitas cambiar el valor de `EPD_SELECT` a `1`. Esto seleccionará el controlador apropiado para la pantalla ePaper a todo color de 7.3 pulgadas. El resto del código permanece igual.
+reTerminal E1002の場合、`EPD_SELECT`の値を`1`に変更するだけです。これにより、7.3インチフルカラーePaperディスプレイ用の適切なドライバーが選択されます。コードの残りの部分は同じです。
 
 ```cpp
 #include <GxEPD2_BW.h>
@@ -378,16 +378,16 @@ void loop() {};
 </Tabs>
 
 :::note
-Las pantallas ePaper tienen una velocidad de actualización relativamente lenta (típicamente 1-3 segundos para una actualización completa). Este es un comportamiento normal y es un compromiso por el consumo de energía ultra bajo y la excelente visibilidad sin retroiluminación.
+ePaperディスプレイは比較的遅いリフレッシュレート（フルリフレッシュで通常1〜3秒）を持ちます。これは正常な動作であり、超低消費電力とバックライトなしでの優れた視認性とのトレードオフです。
 :::
 
-## Rutinas de uso para el hardware reTerminal
+## reTerminalハードウェアの使用ルーチン
 
-Ahora exploremos las características principales de la Serie reTerminal E con ejemplos de código Arduino.
+それでは、Arduinoコードの例を使ってreTerminal Eシリーズの主要機能を探ってみましょう。
 
-### Control de LED
+### LED制御
 
-La Serie reTerminal E tiene un LED integrado que puede ser controlado a través de GPIO6. Ten en cuenta que la lógica del LED está invertida (LOW = ENCENDIDO, HIGH = APAGADO).
+reTerminal EシリーズにはGPIO6経由で制御できるオンボードLEDがあります。LEDロジックは反転していることに注意してください（LOW = ON、HIGH = OFF）。
 
 ```cpp
 // reTerminal E Series - LED Control Example
@@ -421,9 +421,9 @@ void loop() {
 }
 ```
 
-### Control del Zumbador
+### ブザー制御
 
-La Serie reTerminal E incluye un zumbador en GPIO7 que puede producir varios tonos y sonidos de alerta.
+reTerminal EシリーズにはGPIO7にブザーが含まれており、さまざまなトーンやアラート音を生成できます。
 
 ```cpp
 // reTerminal E Series - Buzzer Control Example
@@ -468,7 +468,7 @@ void loop() {
 }
 ```
 
-**Zumbador con Tonos**
+**トーン付きブザー**
 
 ```cpp
 #define SERIAL_RX 44
@@ -640,86 +640,86 @@ All buttons are active-low, meaning they read LOW when pressed and HIGH when rel
 This example demonstrates how to detect button presses and print messages to the serial monitor.
 
 ```cpp
-// reTerminal E Series - Prueba de Botones
-// Basado en el esquema de hardware
+// reTerminal E Series - ボタンテスト
+// ハードウェア回路図に基づく
 
-// Definir pines de botones según el esquema
+// 回路図に従ってボタンピンを定義
 const int BUTTON_KEY0 = 3;   // KEY0 - GPIO3
 const int BUTTON_KEY1 = 4;   // KEY1 - GPIO4
 const int BUTTON_KEY2 = 5;   // KEY2 - GPIO5
 
-// Variables de estado de botones
+// ボタン状態変数
 bool lastKey0State = HIGH;
 bool lastKey1State = HIGH;
 bool lastKey2State = HIGH;
 
 void setup() {
-  // Inicializar comunicación serie
+  // シリアル通信を初期化
   Serial1.begin(115200, SERIAL_8N1, 44, 43);
   while (!Serial1) {
-    delay(10); // Esperar a que se conecte el puerto serie
+    delay(10); // シリアルポートの接続を待機
   }
 
   Serial1.println("=================================");
-  Serial1.println("reTerminal E Series - Prueba de Botones");
+  Serial1.println("reTerminal E Series - ボタンテスト");
   Serial1.println("=================================");
-  Serial1.println("Presiona cualquier botón para ver la salida");
+  Serial1.println("任意のボタンを押して出力を確認してください");
   Serial1.println();
 
-  // Configurar pines de botones como entradas
-  // El hardware ya tiene resistencias pull-up, así que usar modo INPUT
+  // ボタンピンを入力として設定
+  // ハードウェアには既にプルアップ抵抗があるため、INPUTモードを使用
   pinMode(BUTTON_KEY0, INPUT);
   pinMode(BUTTON_KEY1, INPUT);
   pinMode(BUTTON_KEY2, INPUT);
 
-  // Leer estados iniciales
+  // 初期状態を読み取り
   lastKey0State = digitalRead(BUTTON_KEY0);
   lastKey1State = digitalRead(BUTTON_KEY1);
   lastKey2State = digitalRead(BUTTON_KEY2);
 
-  Serial1.println("Configuración completa. Listo para detectar pulsaciones de botones...");
+  Serial1.println("セットアップ完了。ボタン押下の検出準備完了...");
 }
 
 void loop() {
-  // Leer estados actuales de botones
+  // 現在のボタン状態を読み取り
   bool key0State = digitalRead(BUTTON_KEY0);
   bool key1State = digitalRead(BUTTON_KEY1);
   bool key2State = digitalRead(BUTTON_KEY2);
 
-  // Verificar KEY0
+  // KEY0をチェック
   if (key0State != lastKey0State) {
     if (key0State == LOW) {
-      Serial1.println("KEY0 (GPIO3) presionado!");
+      Serial1.println("KEY0 (GPIO3) が押されました！");
     } else {
-      Serial1.println("KEY0 (GPIO3) liberado!");
+      Serial1.println("KEY0 (GPIO3) が離されました！");
     }
     lastKey0State = key0State;
-    delay(50); // Retardo de antirrebote
+    delay(50); // デバウンス遅延
   }
 
-  // Verificar KEY1
+  // KEY1をチェック
   if (key1State != lastKey1State) {
     if (key1State == LOW) {
-      Serial1.println("KEY1 (GPIO4) presionado!");
+      Serial1.println("KEY1 (GPIO4) が押されました！");
     } else {
-      Serial1.println("KEY1 (GPIO4) liberado!");
+      Serial1.println("KEY1 (GPIO4) が離されました！");
     }
     lastKey1State = key1State;
-    delay(50); // Retardo de antirrebote
+    delay(50); // デバウンス遅延
   }
 
-  // Verificar KEY2
+  // KEY2をチェック
   if (key2State != lastKey2State) {
     if (key2State == LOW) {
-      Serial1.println("KEY2 (GPIO5) presionado!");
+      Serial1.println("KEY2 (GPIO5) が押されました！");
     } else {
-      Serial1.println("KEY2 (GPIO5) liberado!");
+      Serial1.println("KEY2 (GPIO5) が離されました！");
     }
     lastKey2State = key2State;
-    delay(50); // Retardo de antirrebote
+    delay(50); // デバウンス遅延
   }
 
-  delay(10); // Pequeño retardo para evitar uso excesivo de CPU
+  delay(10); // CPU使用率の過度な上昇を防ぐための小さな遅延
 }
 ```
 
@@ -749,16 +749,16 @@ Expected output when pressing buttons:
 
 ```
 =================================
-reTerminal E Series - Prueba de Botones
+reTerminal E Series - ボタンテスト
 =================================
-Presiona cualquier botón para ver la salida
+任意のボタンを押して出力を確認してください
 
-KEY0 (GPIO3) presionado!
-KEY0 (GPIO3) liberado!
-KEY1 (GPIO4) presionado!
-KEY1 (GPIO4) liberado!
-KEY2 (GPIO5) presionado!
-KEY2 (GPIO5) liberado!
+KEY0 (GPIO3) が押されました！
+KEY0 (GPIO3) が離されました！
+KEY1 (GPIO4) が押されました！
+KEY1 (GPIO4) が離されました！
+KEY2 (GPIO5) が押されました！
+KEY2 (GPIO5) が離されました！
 ```
 
 ### Environmental Sensor (SHT4x)
@@ -775,50 +775,50 @@ Install two libraries via Arduino Library Manager (**Tools > Manage Libraries...
 #### Basic Temperature and Humidity Example
 
 ```cpp
-// reTerminal E Series - Ejemplo de Sensor de Temperatura y Humedad SHT40
+// reTerminal E Series - SHT40 温度・湿度センサーの例
 
 #include <Wire.h>
 #include <SensirionI2cSht4x.h>
 
-// Configuración serie para reTerminal E Series
+// reTerminal E Series のシリアル設定
 #define SERIAL_RX 44
 #define SERIAL_TX 43
 
-// Pines I2C para reTerminal E Series
+// reTerminal E Series の I2C ピン
 #define I2C_SDA 19
 #define I2C_SCL 20
 
-// Crear objeto sensor
+// センサーオブジェクトを作成
 SensirionI2cSht4x sht4x;
 
 void setup() {
-    // Inicializar Serial1 para reTerminal E Series
+    // reTerminal E Series 用に Serial1 を初期化
     Serial1.begin(115200, SERIAL_8N1, SERIAL_RX, SERIAL_TX);
     while (!Serial1) {
         delay(10);
     }
 
-    Serial1.println("Ejemplo Básico SHT4x");
+    Serial1.println("SHT4x 基本例");
 
-    // Inicializar I2C con pines personalizados
+    // カスタムピンで I2C を初期化
     Wire.begin(I2C_SDA, I2C_SCL);
 
     uint16_t error;
     char errorMessage[256];
 
-    // Inicializar el sensor
+    // センサーを初期化
     sht4x.begin(Wire, 0x44);
 
-    // Leer e imprimir número de serie
+    // シリアル番号を読み取って印刷
     uint32_t serialNumber;
     error = sht4x.serialNumber(serialNumber);
 
     if (error) {
-        Serial1.print("Error al intentar ejecutar serialNumber(): ");
+        Serial1.print("serialNumber() の実行中にエラーが発生しました: ");
         errorToString(error, errorMessage, 256);
         Serial1.println(errorMessage);
     } else {
-        Serial1.print("Número de Serie: ");
+        Serial1.print("シリアル番号: ");
         Serial1.println(serialNumber);
         Serial1.println();
     }
@@ -828,23 +828,23 @@ void loop() {
     uint16_t error;
     char errorMessage[256];
 
-    delay(5000);  // Esperar 5 segundos entre mediciones
+    delay(5000);  // 測定間隔を5秒待機
 
     float temperature;
     float humidity;
 
-    // Medir temperatura y humedad con alta precisión
+    // 高精度で温度と湿度を測定
     error = sht4x.measureHighPrecision(temperature, humidity);
 
     if (error) {
-        Serial1.print("Error al intentar ejecutar measureHighPrecision(): ");
+        Serial1.print("measureHighPrecision() の実行中にエラーが発生しました: ");
         errorToString(error, errorMessage, 256);
         Serial1.println(errorMessage);
     } else {
-        Serial1.print("Temperatura: ");
+        Serial1.print("温度: ");
         Serial1.print(temperature);
         Serial1.print("°C\t");
-        Serial1.print("Humedad: ");
+        Serial1.print("湿度: ");
         Serial1.print(humidity);
         Serial1.println("%");
     }
@@ -868,12 +868,12 @@ void loop() {
 **Expected Output**
 
 ```
-Ejemplo Básico SHT4x
-Número de Serie: 331937553
+SHT4x 基本例
+シリアル番号: 331937553
 
-Temperatura: 27.39°C Humedad: 53.68%
-Temperatura: 27.40°C Humedad: 53.51%
-Temperatura: 27.38°C Humedad: 53.37%
+温度: 27.39°C 湿度: 53.68%
+温度: 27.40°C 湿度: 53.51%
+温度: 27.38°C 湿度: 53.37%
 ```
 
 ### Battery Management System
@@ -883,52 +883,52 @@ The reTerminal E Series includes battery voltage monitoring capability through a
 #### Simple Battery Voltage Monitoring
 
 ```cpp
-// reTerminal E Series - Lectura Simple de Voltaje de Batería
+// reTerminal E Series - シンプルなバッテリー電圧読み取り
 
-// Configuración serie
+// シリアル設定
 #define SERIAL_RX 44
 #define SERIAL_TX 43
 
-// Pines de monitoreo de batería
-#define BATTERY_ADC_PIN 1      // GPIO1 - ADC de voltaje de batería
-#define BATTERY_ENABLE_PIN 21  // GPIO21 - Habilitación de monitoreo de batería
+// バッテリー監視ピン
+#define BATTERY_ADC_PIN 1      // GPIO1 - バッテリー電圧 ADC
+#define BATTERY_ENABLE_PIN 21  // GPIO21 - バッテリー監視有効化
 
 void setup() {
-  // Inicializar serie
+  // シリアルを初期化
   Serial1.begin(115200, SERIAL_8N1, SERIAL_RX, SERIAL_TX);
   while (!Serial1) {
     delay(10);
   }
 
-  Serial1.println("Monitor de Voltaje de Batería");
+  Serial1.println("バッテリー電圧モニター");
 
-  // Configurar pin de habilitación de monitoreo de batería
+  // バッテリー監視有効化ピンを設定
   pinMode(BATTERY_ENABLE_PIN, OUTPUT);
-  digitalWrite(BATTERY_ENABLE_PIN, HIGH);  // Habilitar monitoreo de batería
+  digitalWrite(BATTERY_ENABLE_PIN, HIGH);  // バッテリー監視を有効化
 
-  // Configurar ADC
-  analogReadResolution(12);  // Resolución de 12 bits
+  // ADC を設定
+  analogReadResolution(12);  // 12ビット解像度
   analogSetPinAttenuation(BATTERY_ADC_PIN, ADC_11db);
 
-  delay(100);  // Permitir que el circuito se estabilice
+  delay(100);  // 回路の安定化を待機
 }
 
 void loop() {
-  // Habilitar monitoreo de batería
+  // バッテリー監視を有効化
   digitalWrite(BATTERY_ENABLE_PIN, HIGH);
   delay(5);
 
-  // Leer voltaje en milivoltios
+  // 電圧をミリボルト単位で読み取り
   int mv = analogReadMilliVolts(BATTERY_ADC_PIN);
 
-  // Deshabilitar monitoreo de batería
+  // バッテリー監視を無効化
   digitalWrite(BATTERY_ENABLE_PIN, LOW);
 
-  // Calcular voltaje real de batería (2x debido al divisor de voltaje)
+  // 実際のバッテリー電圧を計算（分圧回路により2倍）
   float batteryVoltage = (mv / 1000.0) * 2;
 
-  // Imprimir voltaje
-  Serial1.print("Batería: ");
+  // 電圧を印刷
+  Serial1.print("バッテリー: ");
   Serial1.print(batteryVoltage, 2);
   Serial1.println(" V");
 
@@ -947,11 +947,11 @@ void loop() {
 **Expected Output**
 
 ```
-Monitor de Voltaje de Batería
+バッテリー電圧モニター
 
-Batería: 4.18 V
-Batería: 4.19 V
-Batería: 4.18 V
+バッテリー: 4.18 V
+バッテリー: 4.19 V
+バッテリー: 4.18 V
 ```
 
 ### Using the MicroSD Card
@@ -971,7 +971,7 @@ The reTerminal E Series only supports MicroSD cards up to 64GB formatted with th
 This example demonstrates how to initialize the SD card, detect when it is inserted or removed, and list all the files and directories in its root. The code is identical for both the **reTerminal E1001** and **reTerminal E1002**.
 
 
-Copia el siguiente código en tu sketch del Arduino IDE.
+以下のコードをArduino IDEスケッチにコピーしてください。
 
 ```cpp
 #include <SD.h>
@@ -1138,27 +1138,27 @@ void loop() {
 }
 ```
 
-##### Explicación del Código
+##### コードの説明
 
-- **Definiciones de Pines:** El código comienza definiendo los pines GPIO utilizados para la ranura de la tarjeta MicroSD. Ten en cuenta que los pines SPI (`MOSI`, `SCK`) se comparten con la pantalla e-paper, pero un Chip Select separado (`SD_CS_PIN`) y una instancia SPI dedicada (`spiSD`) aseguran que puedan usarse independientemente.
-- **Inicialización SPI:** Instanciamos un nuevo objeto SPI, `spiSD(HSPI)`, para usar el segundo controlador SPI por hardware del ESP32 (HSPI). Esta es la mejor práctica para evitar conflictos con otros dispositivos SPI.
-- **Detección de Tarjeta:** La función `isCardInserted()` lee el `SD_DET_PIN`. En el hardware reTerminal, este pin se pone en LOW cuando hay una tarjeta presente.
-- **Montar/Desmontar:** La función `mountSD()` habilita la alimentación a la tarjeta, configura el bus HSPI con los pines correctos, y llama a `SD.begin()` para inicializar el sistema de archivos. `unmountSD()` libera los recursos.
-- **Listado de Archivos:** `listRoot()` abre el directorio raíz (`/`), y `listDir()` es una función recursiva que recorre el sistema de archivos, imprimiendo los nombres de todos los archivos y directorios.
-- **`setup()`:** Inicializa `Serial1` para la salida, configura el pin de detección de tarjeta, y realiza una verificación inicial para ver si ya hay una tarjeta insertada cuando el dispositivo se enciende.
-- **`loop()`:** En lugar de verificar constantemente la tarjeta, el código usa un temporizador no bloqueante (`millis()`) para verificar un cambio en el estado de la tarjeta una vez por segundo. Si se detecta un cambio (tarjeta insertada o removida), monta o desmonta la tarjeta e imprime el estado en el monitor serie.
+- **ピン定義：** コードはMicroSDカードスロットに使用されるGPIOピンを定義することから始まります。SPIピン（`MOSI`、`SCK`）はe-paperディスプレイと共有されていますが、独立したチップセレクト（`SD_CS_PIN`）と専用のSPIインスタンス（`spiSD`）により、独立して使用できることに注意してください。
+- **SPI初期化：** ESP32の2番目のハードウェアSPIコントローラー（HSPI）を使用するために、新しいSPIオブジェクト`spiSD(HSPI)`をインスタンス化します。これは他のSPIデバイスとの競合を避けるためのベストプラクティスです。
+- **カード検出：** `isCardInserted()`関数は`SD_DET_PIN`を読み取ります。reTerminalハードウェアでは、カードが挿入されているときにこのピンはLOWにプルされます。
+- **マウント/アンマウント：** `mountSD()`関数はカードへの電源を有効にし、正しいピンでHSPIバスを設定し、`SD.begin()`を呼び出してファイルシステムを初期化します。`unmountSD()`はリソースを解放します。
+- **ファイル一覧：** `listRoot()`はルートディレクトリ（`/`）を開き、`listDir()`はファイルシステムを再帰的に走査し、すべてのファイルとディレクトリの名前を出力する再帰関数です。
+- **`setup()`：** 出力用に`Serial1`を初期化し、カード検出ピンを設定し、デバイスの電源投入時にカードがすでに挿入されているかどうかの初期チェックを実行します。
+- **`loop()`：** カードを常にチェックする代わりに、コードは非ブロッキングタイマー（`millis()`）を使用して、1秒に1回カードのステータスの変化をチェックします。変化が検出された場合（カードの挿入または取り外し）、カードをマウントまたはアンマウントし、ステータスをシリアルモニターに出力します。
 
-##### Resultados Esperados
+##### 期待される結果
 
-1. Sube el código a tu reTerminal.
-2. Abre el Monitor Serie del Arduino IDE (**Herramientas > Monitor Serie**).
-3. Asegúrate de que la velocidad de baudios esté configurada en **115200**.
+1. コードをreTerminalにアップロードします。
+2. Arduino IDEのシリアルモニターを開きます（**ツール > シリアルモニター**）。
+3. ボーレートが**115200**に設定されていることを確認します。
 
-Verás una salida correspondiente a las siguientes acciones:
+以下のアクションに対応する出力が表示されます：
 
-- **Al iniciar sin tarjeta:** El monitor imprimirá `[SD] No card detected at startup...`
-- **Cuando insertes una tarjeta:** El monitor imprimirá `[SD] Card inserted.`, seguido de un listado completo de todos los archivos y directorios en la tarjeta.
-- **Cuando remuevas la tarjeta:** El monitor imprimirá `[SD] Card removed.`
+- **カードなしでの起動時：** モニターに`[SD] No card detected at startup...`と表示されます
+- **カードを挿入したとき：** モニターに`[SD] Card inserted.`と表示され、続いてカード上のすべてのファイルとディレクトリの完全な一覧が表示されます。
+- **カードを取り外したとき：** モニターに`[SD] Card removed.`と表示されます
 
 ```
 [FILE] live.0.shadowIndexGroups  6 bytes
@@ -1175,70 +1175,70 @@ Verás una salida correspondiente a las siguientes acciones:
 [FILE] live.1.indexPostings  4096 bytes
 ```
 
-### Ejemplo Avanzado: Mostrar Imágenes BMP desde Tarjeta SD
+### 高度な例：SDカードからのBMP画像表示
 
-Este ejemplo integral combina las funcionalidades de las secciones anteriores. Escribiremos un programa que lee un archivo de imagen Bitmap (`.bmp`) desde una tarjeta MicroSD y lo muestra en la pantalla e-paper del reTerminal. Esto demuestra una aplicación práctica del mundo real para el dispositivo.
+この包括的な例は、前のセクションの機能を組み合わせたものです。MicroSDカードからビットマップ（`.bmp`）画像ファイルを読み取り、reTerminalのe-paperスクリーンに表示するプログラムを作成します。これは、デバイスの実用的で現実的なアプリケーションを実演します。
 
-El programa buscará un archivo llamado `test.bmp` en el directorio raíz de la tarjeta SD.
+プログラムは、SDカードのルートディレクトリにある`test.bmp`という名前のファイルを探します。
 
-#### Preparación
+#### 準備
 
-Antes de ejecutar el código, debes preparar correctamente tanto la tarjeta MicroSD como el archivo de imagen. Este es el paso más crítico para asegurar que la imagen se muestre correctamente.
+コードを実行する前に、MicroSDカードと画像ファイルの両方を正しく準備する必要があります。これは、画像が正しく表示されることを保証するための最も重要なステップです。
 
-**1. Formatear la Tarjeta MicroSD**
+**1. MicroSDカードのフォーマット**
 
-Prepara una tarjeta MicroSD (se recomienda 64GB o menor) y formatéala usando el sistema de archivos **FAT32**.
+MicroSDカード（64GB以下を推奨）を準備し、**FAT32**ファイルシステムでフォーマットします。
 
-**2. Preparar el Archivo de Imagen**
+**2. 画像ファイルの準備**
 
-El método para preparar la imagen difiere ligeramente dependiendo de tu modelo de reTerminal. Sigue la guía que coincida con tu dispositivo.
+画像を準備する方法は、reTerminalモデルによって若干異なります。お使いのデバイスに合ったガイドに従ってください。
 
 <Tabs>
-<TabItem value="For reTerminal E1001 (B&W Screen)" label="Para reTerminal E1001 (Pantalla B&N)" default>
+<TabItem value="For reTerminal E1001 (B&W Screen)" label="reTerminal E1001（白黒スクリーン）用" default>
 
-La pantalla en blanco y negro solo puede mostrar píxeles blancos y negros. Aunque nuestro código puede convertir una imagen a color a escala de grises en tiempo real, obtendrás mucho mejor contraste y detalle **pre-convirtiendo la imagen a una imagen en escala de grises de alta calidad en tu computadora**.
+白黒スクリーンは白と黒のピクセルのみを表示できます。コードはカラー画像をリアルタイムでグレースケールに変換できますが、**コンピューター上で画像を高品質のグレースケール画像に事前変換する**ことで、はるかに良いコントラストと詳細を得ることができます。
 
-1. **Redimensionar la Imagen:** Redimensiona tu imagen a **800x480 píxeles**.
+1. **画像のリサイズ：** 画像を**800x480ピクセル**にリサイズします。
 
-2. **Convertir a Escala de Grises (Recomendado):** En tu editor de imágenes, convierte primero la imagen a escala de grises. En **GIMP**:
-    - Ve al menú **Colores > Desaturar > Desaturar...**. Elige un modo como "Luminosidad" para obtener los mejores resultados.
+2. **グレースケールに変換（推奨）：** 画像エディターで、まず画像をグレースケールに変換します。**GIMP**では：
+    - メニューの**色 > 脱色 > 脱色...**に移動します。最良の結果を得るために「輝度」などのモードを選択します。
 
-3. **Guardar como BMP Estándar:** Sigue los mismos pasos que la guía de pantalla a color para guardar el archivo. Aunque la imagen esté en escala de grises, guardarla como BMP de 24 bits asegura la máxima compatibilidad con el código.
-    - Ve a **Archivo > Exportar Como...**, nómbralo `test.bmp`.
-    - En el diálogo de exportación, bajo **Opciones Avanzadas**, selecciona **"24 bits: R8 G8 B8"**.
-    - Haz clic en **Exportar**.
+3. **標準BMPとして保存：** カラースクリーンガイドと同じ手順に従ってファイルを保存します。画像がグレースケールであっても、24ビットBMPとして保存することで、コードとの最大の互換性が保証されます。
+    - **ファイル > エクスポート...**に移動し、`test.bmp`と名前を付けます。
+    - エクスポートダイアログで、**詳細オプション**の下で**「24ビット：R8 G8 B8」**を選択します。
+    - **エクスポート**をクリックします。
 
-4. **Copiar a la Tarjeta SD:** Copia el archivo final `test.bmp` al directorio raíz de tu tarjeta MicroSD.
+4. **SDカードにコピー：** 最終的な`test.bmp`ファイルをMicroSDカードのルートディレクトリにコピーします。
 
 </TabItem>
-<TabItem value="For reTerminal E1002 (Color Screen)" label="Para reTerminal E1002 (Pantalla a Color)">
+<TabItem value="For reTerminal E1002 (Color Screen)" label="reTerminal E1002（カラースクリーン）用">
 
-La pantalla a color puede mostrar 6 colores: Negro, Blanco, Rojo, Amarillo, Azul y Verde. El código proporcionado incluye un algoritmo de "color más cercano" que mapea inteligentemente cualquier color de tu imagen fuente al mejor color disponible en la pantalla. Para obtener resultados óptimos, sigue estos pasos:
+カラースクリーンは6色を表示できます：黒、白、赤、黄、青、緑。提供されたコードには、ソース画像の任意の色をスクリーン上で利用可能な最適な色にインテリジェントにマッピングする「最近色」アルゴリズムが含まれています。最適な結果を得るには、以下の手順に従ってください：
 
-1. **Redimensionar la Imagen:** Usando cualquier editor de imágenes, redimensiona tu imagen a **800x480 píxeles**.
+1. **画像のリサイズ：** 任意の画像エディターを使用して、画像を**800x480ピクセル**にリサイズします。
 
-2. **Guardar como BMP Estándar:** El código está diseñado para leer archivos BMP **sin comprimir** de 24 bits o 32 bits. Usar un editor de imágenes profesional es la mejor manera de asegurar que el formato sea correcto. Recomendamos el software gratuito y de código abierto **GIMP**:
-    - Abre tu imagen redimensionada en GIMP.
-    - Ve al menú **Archivo > Exportar Como...**.
-    - Nombra el archivo `test.bmp` y haz clic en **Exportar**.
-    - En el diálogo "Exportar Imagen como BMP" que aparece, expande las **Opciones Avanzadas**.
-    - Selecciona **"24 bits: R8 G8 B8"**. Este es el formato sin comprimir más compatible.
-    - Haz clic en **Exportar**.
+2. **標準BMPとして保存：** コードは**非圧縮**の24ビットまたは32ビットBMPファイルを読み取るように設計されています。プロフェッショナルな画像エディターを使用することが、フォーマットが正しいことを保証する最良の方法です。無料でオープンソースのソフトウェア**GIMP**をお勧めします：
+    - リサイズした画像をGIMPで開きます。
+    - メニューの**ファイル > エクスポート...**に移動します。
+    - ファイルに`test.bmp`と名前を付けて**エクスポート**をクリックします。
+    - 表示される「BMPとして画像をエクスポート」ダイアログで、**詳細オプション**を展開します。
+    - **「24ビット：R8 G8 B8」**を選択します。これは最も互換性のある非圧縮フォーマットです。
+    - **エクスポート**をクリックします。
 
 
-3. **Copiar a la tarjeta SD:** Copia el archivo final `test.bmp` al directorio raíz de tu tarjeta MicroSD.
+3. **SDカードにコピー:** 最終的な`test.bmp`ファイルをMicroSDカードのルートディレクトリにコピーします。
 
 </TabItem>
 </Tabs>
 
-Si quieres usar imágenes listas para pruebas, puedes usar las [imágenes de ejemplo](https://github.com/ZinggJM/GxEPD2/tree/master/examples/GxEPD2_SD_Example/bitmaps) proporcionadas por GxEPD2.
+テスト用の既製画像を使用したい場合は、GxEPD2が提供する[サンプル画像](https://github.com/ZinggJM/GxEPD2/tree/master/examples/GxEPD2_SD_Example/bitmaps)を使用できます。
 
-#### El Código
+#### コード
 
-Este es el código final y validado. Incluye todas las verificaciones necesarias y el algoritmo avanzado de coincidencia de colores. Simplemente establece la macro `EPD_SELECT` en `0` para el E1001 (B&N) o `1` para el E1002 (Color).
+これは最終的な検証済みコードです。必要なチェックと高度な色マッチングアルゴリズムがすべて含まれています。E1001（白黒）の場合は`EPD_SELECT`マクロを`0`に、E1002（カラー）の場合は`1`に設定するだけです。
 
 <Tabs>
-<TabItem value="For reTerminal E1001 (B&W Screen)" label="Para reTerminal E1001 (Pantalla B&N)" default>
+<TabItem value="For reTerminal E1001 (B&W Screen)" label="For reTerminal E1001 (B&W Screen)" default>
 
 ```cpp
 #include <SD.h>
@@ -1515,7 +1515,7 @@ void loop() {
 ```
 
 </TabItem>
-<TabItem value="For reTerminal E1002 (Color Screen)" label="Para reTerminal E1002 (Pantalla a Color)">
+<TabItem value="For reTerminal E1002 (Color Screen)" label="For reTerminal E1002 (Color Screen)">
 
 ```cpp
 #include <SD.h>
@@ -1823,7 +1823,7 @@ The screen refresh speed may be slow, sometimes the screen will not respond unti
 This issue may occur if you have inserted a MicroSD card into the reTerminal. The reason is that the MicroSD card and the ePaper display share the same SPI bus on the reTerminal. If a MicroSD card is inserted but its enable (chip select) pin is not properly managed, it can cause a conflict on the SPI bus. Specifically, the MicroSD card may hold the BUSY line high, which prevents the ePaper display from functioning correctly—resulting in no display updates or refreshes.
 
 ```cpp
-// Inicializar tarjeta SD
+// SDカードを初期化
 pinMode(SD_EN_PIN, OUTPUT);
 digitalWrite(SD_EN_PIN, HIGH);
 pinMode(SD_DET_PIN, INPUT_PULLUP);
