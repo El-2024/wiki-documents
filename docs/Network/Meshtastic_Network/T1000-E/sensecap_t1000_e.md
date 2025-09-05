@@ -351,9 +351,7 @@ pip3 install -r requirements.txt
 python3 setup.py install
 ```
 
-If you get permission errors when running `pip3 install`, your `pip3` is older
-or is set to try to install in the system directories. In that case use the
-`--user` flag:
+If you get permission errors when running `pip3 install`, your `pip3` is older or is set to try to install in the system directories. In that case use the `--user` flag:
 
 ```
 pip3 install -r --user requirements.txt
