@@ -249,7 +249,7 @@ reTerminal E1002 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 **AI 生成器**
 
-让人工智能为您设计仪表板！只需描述您想要显示的信息，AI 生成器将自动创建一个美观、实用的布局。这非常适合快速生成天气显示、日历、待办事项列表或信息面板，无需手动设计工作。
+让人工智能设计您的仪表板！只需描述您想要显示的信息，AI 生成器将自动创建一个美观、实用的布局。这非常适合快速生成天气显示、日历、待办事项列表或信息面板，无需手动设计工作。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/12.png" style={{width:300, height:'auto'}}/></div>
 
@@ -278,7 +278,7 @@ reTerminal E1002 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 **网页内容显示**
 
-在您的设备上捕获和显示特定的网页内容。网页功能可以渲染网站的选定部分，允许您显示交通时刻表、股票行情或其他在线数据源等信息。
+在您的设备上捕获和显示特定的网页内容。网页功能可以渲染网站的选定部分，允许您显示诸如交通时刻表、股票行情或其他在线数据源等信息。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/22.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -338,7 +338,7 @@ reTerminal E1002 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 使用电池供电时：
 
-- 设备将在刷新间隔自动进入低功耗模式
+- 设备将在刷新之间自动进入低功耗模式
 
 - 电池寿命取决于刷新频率（在默认设置下，满电通常可使用 3 个月）
 
@@ -346,7 +346,7 @@ reTerminal E1002 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 ### 扩展引脚
 
-reTerminal E1002 具有一个 8 引脚扩展接头（J2），提供连接选项，用于添加外部传感器、模块或其他硬件来扩展设备功能。此扩展接头暴露了几个 ESP32-S3 GPIO 引脚和通信接口，使其成为您 DIY 项目的多功能连接点。
+reTerminal E1002 具有一个 8 引脚扩展接头（J2），提供连接选项，用于添加外部传感器、模块或其他硬件来扩展设备的功能。此扩展接头暴露了几个 ESP32-S3 GPIO 引脚和通信接口，使其成为您 DIY 项目的多功能连接点。
 
 #### 扩展接头引脚定义
 
@@ -429,16 +429,16 @@ reTerminal E1002 配备了一个 3D 打印支撑架配件，可让您将设备�
 
 **步骤 2.** 将支撑架放置在 reTerminal E1002 底部背面的指定安装区域，该区域有嵌入式螺母。
 
-**步骤 3.** 使用长螺丝刀将支撑架固定到设备上，将螺丝拧入 reTerminal E1002 背面的嵌入式螺母中。
+**步骤 3.** 使用长螺丝刀将支架固定到设备上，将螺丝拧入 reTerminal E1002 背面的嵌入式螺母中。
 
-**步骤 4.** 牢固连接后，将 reTerminal E1002 放置在平坦表面上，支撑架将支撑设备保持直立位置。
+**步骤 4.** 牢固连接后，将 reTerminal E1002 放置在平坦表面上，支架将支撑设备保持直立位置。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/139.jpg" style={{width:600, height:'auto'}}/></div>
 
 :::note
-支撑架提供固定的观看角度，无法调节。这种固定定位设计旨在在大多数使用场景中提供最佳可见性。
+支架提供固定的观看角度，无法调节。这种固定定位设计旨在在大多数使用场景中提供最佳可见性。
 
-支撑架允许设备放置在桌子、台面或架子上，使其非常适合在各种环境中用作信息显示器、控制面板或数字相框。
+支架允许设备放置在桌子、台面或架子上，使其非常适合在各种环境中用作信息显示器、控制面板或数字相框。
 :::
 
 ## 故障排除
@@ -450,12 +450,12 @@ reTerminal E1002 配备了一个 3D 打印支撑架配件，可让您将设备�
 - 检查红色 LED 是否常亮（表示正在充电）
 - 如果使用电池供电，确保电池正确连接且已充电
 
-### Q2：无法连接到 Wi-Fi
+### Q2：无法连接 Wi-Fi
 
 - 验证您输入的 Wi-Fi 密码是否正确
 - 确保您的 Wi-Fi 网络正常运行
 - 检查您的 Wi-Fi 路由器是否支持 2.4GHz 网络（不支持 5GHz）
-- 尝试将设备放置在更靠近 Wi-Fi 路由器的位置
+- 尝试将设备移近 Wi-Fi 路由器
 
 ### Q3：显示不更新
 
@@ -475,6 +475,7 @@ reTerminal E1002 配备了一个 3D 打印支撑架配件，可让您将设备�
 - [reTerminal E1002 原理图 (PDF)](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/202004321_reTerminal_E1002_V1.0_SCH_250805.pdf)
 - [ESP32-S3 数据手册](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/esp32-s3_datasheet.pdf)
 - [SenseCraft HMI 平台文档](https://wiki.seeedstudio.com/cn/sensecraft_hmi_overview)
+- [外观整体 3D 模型 STP 文件](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/reterminal_esp-250904.stp)
 <!-- - [GitHub Repository](/cn/getting_started_with_reterminal_e1002) -->
 
 ## 技术支持与产品讨论
