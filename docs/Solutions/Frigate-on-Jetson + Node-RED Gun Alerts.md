@@ -651,4 +651,5 @@ http://JETSON_IP:1880/dashboard/frigate
 ---
 
 📦 **Project Repository:**  
-GitHub - Seeed-Studio/frigate-on-jetson
+[GitHub - Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
+
