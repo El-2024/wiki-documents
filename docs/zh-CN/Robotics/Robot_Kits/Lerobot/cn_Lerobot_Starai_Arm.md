@@ -214,120 +214,7 @@ python lerobot/scripts/find_motors_bus_port.py
 1. 识别Leader时端口的示例输出（例如，在 Mac 上为 `/dev/tty.usbmodem575E0031751`，或在 Linux 上可能为 `/dev/ttyUSB0`） 
 2. 识别Reader时端口的示例输出（例如，在 Mac 上为 `/dev/tty.usbmodem575E0032081`，或在 Linux 上可能为 `/dev/ttyUSB1`）
 
-打开文件 `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
-
-使用ctrl+F搜索快捷键搜索 starai ，可以定位到如下代码，修改fallower_arms和leader_arms下的port参数与实际一致。
-
-```py
-@RobotConfig.register_subclass("starai")
-@dataclass
-class StaraiRobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/starai"
-    max_relative_target: int | None = None
-    
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB1",##### UPDATE HEARE
-                interval = 100,								
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB0",##### UPDATE HEARE
-                interval = 100,								
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
-```
-
-### 运行效果设置
-
-打开文件 `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
-
-使用ctrl+F搜索快捷键搜索 starai ，可以定位到如下代码，修改fallower_arms下的interval参数。
-
-- 参数含义：运动指令中的时间间隔，可以简单理解为当数值越小，follower跟随的实时性越高。数值越大，follower的运行平稳性越好。
-- 数值范围：整数，> 50 且 < 2000。
-
-建议在遥操作的时候将intervel设置为100（默认值），而在评估阶段自动运行时设置为1000以确保运动平稳。
-
-```PY
-@RobotConfig.register_subclass("starai")
-@dataclass
-class StaraiRobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/starai"
-    max_relative_target: int | None = None
-
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB1",
-                interval = 100,								
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB0",
-                interval = 100,	##### UPDATE HEARE
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
-
-```
-
-### 校准文件设置
-
-通常情况下,机械臂出厂时已经完成校准，无须再次校准。如发现某关节电机长期处于限位处，可与厂家联系获取校准文件再次校准。
-
-<details>
-<summary> Note </summary>
+:::tip
 
 如果识别不到ttyUSB0串口信息。尝试以下方法:
 
@@ -369,7 +256,120 @@ sudo apt remove brltty
 ```sh
 sudo chmod 666 /dev/ttyUSB0
 ```
-</details>
+:::
+
+打开文件 `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
+
+使用ctrl+F搜索快捷键搜索 starai ，可以定位到如下代码，修改fallower_arms和leader_arms下的port参数与实际一致。
+
+```py
+@RobotConfig.register_subclass("starai")
+@dataclass
+class StaraiRobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/starai"
+    max_relative_target: int | None = None
+    
+    leader_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "main": StaraiMotorsBusConfig(
+                port="/dev/ttyUSB1",  #<-------- UPDATE HEARE
+                interval = 100,								
+                motors={
+                    # name: (index, model)
+                    "joint1": [0, "rx8-u50"],
+                    "joint2": [1, "rx8-u50"],
+                    "joint3": [2, "rx8-u50"],
+                    "joint4": [3, "rx8-u50"],
+                    "joint5": [4, "rx8-u50"],
+                    "joint6": [5, "rx8-u50"],
+                    "gripper": [6, "rx8-u50"],
+                },
+            ),
+        }
+    )
+
+    follower_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "main": StaraiMotorsBusConfig(
+                port="/dev/ttyUSB0",  #<-------- UPDATE HEARE
+                interval = 100,								
+                motors={
+                    # name: (index, model)
+                    "joint1": [0, "rx8-u50"],
+                    "joint2": [1, "rx8-u50"],
+                    "joint3": [2, "rx8-u50"],
+                    "joint4": [3, "rx8-u50"],
+                    "joint5": [4, "rx8-u50"],
+                    "joint6": [5, "rx8-u50"],
+                    "gripper": [6, "rx8-u50"],
+                },
+            ),
+        }
+    )
+```
+
+### 运行效果设置
+
+打开文件 `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
+
+使用ctrl+F搜索快捷键搜索 starai ，可以定位到如下代码，修改fallower_arms下的interval参数。
+
+- 参数含义：运动指令中的时间间隔，可以简单理解为当数值越小，follower跟随的实时性越高。数值越大，follower的运行平稳性越好。
+- 数值范围：整数，> 50 且 < 2000。
+
+建议在遥操作的时候将intervel设置为100（默认值），而在评估阶段自动运行时设置为1000以确保运动平稳。
+
+```PY
+@RobotConfig.register_subclass("starai")
+@dataclass
+class StaraiRobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/starai"
+    max_relative_target: int | None = None
+
+    leader_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "main": StaraiMotorsBusConfig(
+                port="/dev/ttyUSB1",
+                interval = 100, 	#<-------- UPDATE HEARE							
+                motors={
+                    # name: (index, model)
+                    "joint1": [0, "rx8-u50"],
+                    "joint2": [1, "rx8-u50"],
+                    "joint3": [2, "rx8-u50"],
+                    "joint4": [3, "rx8-u50"],
+                    "joint5": [4, "rx8-u50"],
+                    "joint6": [5, "rx8-u50"],
+                    "gripper": [6, "rx8-u50"],
+                },
+            ),
+        }
+    )
+
+    follower_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "main": StaraiMotorsBusConfig(
+                port="/dev/ttyUSB0",
+                interval = 100, 	#<-------- UPDATE HEARE
+                motors={
+                    # name: (index, model)
+                    "joint1": [0, "rx8-u50"],
+                    "joint2": [1, "rx8-u50"],
+                    "joint3": [2, "rx8-u50"],
+                    "joint4": [3, "rx8-u50"],
+                    "joint5": [4, "rx8-u50"],
+                    "joint6": [5, "rx8-u50"],
+                    "gripper": [6, "rx8-u50"],
+                },
+            ),
+        }
+    )
+
+```
+
+### 校准文件设置
+
+通常情况下,机械臂出厂时已经完成校准，无须再次校准。如发现某关节电机长期处于限位处，可与厂家联系获取校准文件再次校准。
+
 
 ## 遥控操作
 
@@ -435,7 +435,7 @@ Images have been saved to outputs/images_from_opencv_cameras
 </div>
 
 
-```
+```python
 @RobotConfig.register_subclass("starai")
 @dataclass
 class StaraiRobotConfig(ManipulatorRobotConfig):
@@ -444,13 +444,13 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
     cameras: dict[str, CameraConfig] = field(
         default_factory=*lambda*: {
             "laptop": OpenCVCameraConfig(
-                camera_index=2,             ##### UPDATE HEARE
+                camera_index=2,             #<------ UPDATE HEARE
                 fps=30,
                 width=640,
                 height=480,
             ),
             "phone": OpenCVCameraConfig(
-                camera_index=0,             ##### UPDATE HEARE
+                camera_index=0,             #<------ UPDATE HEARE
                 fps=30,
                 width=640,
                 height=480,
@@ -642,7 +642,7 @@ python lerobot/scripts/train.py \
 
 4. 我们提供了`wandb.enable=true`使用权重和偏差[Weights and Biases](https://docs.wandb.ai/quickstart)来可视化训练图。这是可选的，但如果您使用它，请确保您已通过运行`wandb login`登录。
 
-如果要在本地数据集上进行训练，请确保`repo_id`与数据收集期间使用的数据集匹配。培训应该需要几个小时。您可以在`outputs/train/act_starai/checkpoints`中找到检查点。
+如果要在本地数据集上进行训练，请确保`repo_id`与数据收集期间使用的数据集匹配。训练应该需要几个小时。您可以在`outputs/train/act_starai/checkpoints`中找到检查点。
 
 要从某个检查点恢复训练，下面是一个示例命令，用于从`act_starai`策略的最后一个检查点恢复：
 
@@ -666,7 +666,7 @@ python lerobot/scripts/control_robot.py \
   --control.tags='["tutorial"]' \
   --control.warmup_time_s=5 \
   --control.episode_time_s=30 \
-  --control.reset_time_s=30 \
+  --control.reset_time_s=0 \#环境重置时间可选择0，让机器人跳过重置阶段来保证动作连续
   --control.num_episodes=10 \
   --control.push_to_hub=false \#这里选择不上传Hub
   --control.policy.path=outputs/train/act_starai/checkpoints/last/pretrained_model

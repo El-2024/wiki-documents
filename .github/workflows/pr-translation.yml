@@ -264,7 +264,6 @@ jobs:
             comment += `- 只有仓库管理员和维护者可以触发翻译和撤回\n`;
             comment += `- 若 PR 来自 fork，请确保作者勾选 **Allow edits from maintainers**，否则机器人无法把翻译推回 PR 分支\n`;
             comment += `- 撤回操作会恢复到翻译前的状态\n`;
-            comment += `- 每次操作后会自动触发构建检查\n\n`;
 
             await github.rest.issues.createComment({
               owner,
@@ -280,7 +279,7 @@ jobs:
       github.event.issue.pull_request &&
       startsWith(github.event.comment.body, '/translate')
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
     permissions:
       contents: write
       pull-requests: write
