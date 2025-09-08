@@ -339,6 +339,10 @@ When operating on battery power:
 
 - The device will display a low battery icon in the top-right corner when the battery level is below 20%
 
+:::tip
+If you want to write some code by yourself to read battery voltage, it will be more precise to add 10ms delay before analogRead() function.
+:::
+
 ### Expansion Pins
 
 The reTerminal E1001 features an 8-pin expansion header (J2) that provides connectivity options for adding external sensors, modules, or other hardware to extend the functionality of your device. This expansion header exposes several ESP32-S3 GPIO pins and communication interfaces, making it a versatile connection point for your DIY projects.
