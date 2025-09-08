@@ -101,9 +101,9 @@ reTerminal E 系列电子纸显示器仅支持最大 64GB 的 Fat32 格式 Micro
     </a>
 </div><br />
 
-4. 导航到 **工作区** 部分
+4. 导航到 **Workspace** 部分
 
-5. 点击右上角的 **设备刷写器**
+5. 点击右上角的 **Device Flasher**
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/9.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -113,7 +113,7 @@ reTerminal E 系列电子纸显示器仅支持最大 64GB 的 Fat32 格式 Micro
 
 7. 从下拉菜单中选择最新的固件版本
 
-8. 点击 **刷写** 并等待更新过程完成
+8. 点击 **Flash** 并等待更新过程完成
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/10.png" style={{width:800, height:'auto'}}/></div>
 
@@ -135,7 +135,7 @@ reTerminal E 系列电子纸显示器仅支持最大 64GB 的 Fat32 格式 Micro
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/1.png" style={{width:600, height:'auto'}}/></div><br />
 
-**步骤 3.** 绿色用户 LED 将亮起约 30 秒，表示设备已开机并正在初始化。设备 30 秒无操作后，为了确保电源，设备将自动进入睡眠模式，LED 灯将自动关闭。
+**步骤 3.** 绿色用户 LED 将亮起约 30 秒，表示设备已开机并正在初始化。设备无操作 30 秒后，为了确保电源，设备将自动进入睡眠模式，LED 灯将自动关闭。
 
 :::tip
 因此，我们需要在此期间完成配置网络的后续步骤。当设备进入睡眠状态时，您将无法找到设备的热点。如果出现这种情况，您可以通过单击设备的绿色唤醒按钮来唤醒设备。
@@ -154,7 +154,7 @@ reTerminal E 系列电子纸显示器仅支持最大 64GB 的 Fat32 格式 Micro
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/6.png" style={{width:700, height:'auto'}}/></div><br />
 
-**步骤 3.** 选择您的本地 Wi-Fi 网络并输入密码，然后点击"连接"。
+**步骤 3.** 选择您的本地 Wi-Fi 网络并输入密码，然后点击"Connect"。
 
 :::note
 reTerminal E 系列电子纸显示器仅支持 2.4GHz WiFi 网络，不支持 5GHz 或其他频段。
@@ -174,11 +174,11 @@ reTerminal E 系列电子纸显示器仅支持 2.4GHz WiFi 网络，不支持 5G
     </a>
 </div><br />
 
-**步骤 2.** 导航到 **工作区** 部分并点击 **添加设备**。
+**步骤 2.** 导航到 **Workspace** 部分并点击 **Add Device**。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/7.png" style={{width:1000, height:'auto'}}/></div>
 
-**步骤 3.** 为您的设备命名，输入设备屏幕上显示的配对码，然后点击 **创建**。
+**步骤 3.** 为您的设备命名，输入设备屏幕上显示的配对码，然后点击 **Create**。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/8.png" style={{width:600, height:'auto'}}/></div>
 
@@ -191,15 +191,15 @@ reTerminal E 系列电子纸显示器仅支持 2.4GHz WiFi 网络，不支持 5G
 
 此方法使用 SenseCraft 移动应用程序通过蓝牙配置设备的网络并将其添加到您的 SenseCraft 账户。
 
-首先，下载 SenseCraft 应用程序。您可以在 Google Play 商店或 Apple App Store 中搜索"SenseCraft"找到它。或者，您可以从此网站下载。
+首先，下载 SenseCraft App。您可以在 Google Play Store 或 Apple App Store 中搜索"SenseCraft"找到它。或者，您可以从此网站下载。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://sensecraft-app-download.seeed.cc" target="_blank" rel="noopener noreferrer">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 下载应用 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 下载 APP 🖱️</font></span></strong>
     </a>
 </div><br />
 
-**步骤 1.** 打开 SenseCraft 应用程序，登录您的账户，并导航到 **用户** 选项卡。点击 **设备蓝牙配置** 开始该过程。
+**步骤 1.** 打开 SenseCraft App，登录您的账户，并导航到 **User** 选项卡。点击 **Device Bluetooth Configuration** 开始该过程。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/151.png" style={{width:250, height:'auto'}}/></div><br />
 
@@ -207,7 +207,7 @@ reTerminal E 系列电子纸显示器仅支持 2.4GHz WiFi 网络，不支持 5G
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/152.png" style={{width:250, height:'auto'}}/></div><br />
 
-**步骤 3.** 按照屏幕上的说明将您的设备置于蓝牙广播模式。这通常通过同时按下**向上**和**向下**翻页按钮来完成。确保您手机的蓝牙已启用。点击**扫描**，应用程序将发现附近的设备。从列表中选择您的设备进行连接。
+**步骤 3.** 按照屏幕上的说明将您的设备置于蓝牙广播模式。通常通过同时按下**向上**和**向下**翻页按钮来完成。确保您手机的蓝牙已启用。点击**扫描**，应用程序将发现附近的设备。从列表中选择您的设备进行连接。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/153.png" style={{width:250, height:'auto'}}/></div><br />
 
@@ -267,13 +267,13 @@ reTerminal E1001 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 **RSS 订阅集成**
 
-通过向您的仪表板添加 RSS 订阅，随时了解您最喜欢的新闻来源、博客或网站的最新动态。RSS 功能允许您显示来自多个来源的标题、摘要或完整文章。
+通过向您的仪表板添加 RSS 订阅，随时了解您最喜欢的新闻来源、博客或网站的最新信息。RSS 功能允许您显示来自多个来源的标题、摘要或完整文章。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/21.png" style={{width:1000, height:'auto'}}/></div>
 
 **网页内容显示**
 
-在您的设备上捕获和显示特定的网页内容。网页功能可以渲染网站的选定部分，允许您显示诸如交通时刻表、股票行情或其他在线数据源等信息。
+捕获并在您的设备上显示特定的网页内容。网页功能可以渲染网站的选定部分，允许您显示诸如交通时刻表、股票行情或其他在线数据源等信息。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/16.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -331,13 +331,17 @@ reTerminal E1001 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 ### 电池操作
 
-在电池供电时：
+使用电池供电时：
 
 - 设备将在刷新之间自动进入低功耗模式
 
 - 电池寿命取决于刷新频率（在默认设置下，满电通常可使用 3 个月）
 
 - 当电池电量低于 20% 时，设备将在右上角显示低电量图标
+
+:::tip
+如果您想自己编写代码来读取电池电压，在 analogRead() 函数之前添加 10ms 延迟会更精确。
+:::
 
 ### 扩展引脚
 
@@ -423,10 +427,10 @@ reTerminal E1001 配有 3D 打印支撑架配件，允许您将设备直立放�
 
 **步骤 2.** 将支撑架放置在 reTerminal E1001 底部背面的指定安装区域，即嵌入螺母所在的位置。
 
-**步骤 3.** 使用长螺丝刀将螺丝拧入 reTerminal E1001 背面的嵌入螺母中，将支架固定到设备上。
 
+**步骤 3.** 使用长螺丝刀将支架固定到设备上，将螺丝拧入 reTerminal E1001 背面的嵌入式螺母中。
 
-**步骤 4.** 一旦牢固连接后，将 reTerminal E1001 放置在平坦表面上，支架将支撑设备保持直立位置。
+**步骤 4.** 牢固连接后，将 reTerminal E1001 放置在平坦表面上，支架将支撑设备保持直立位置。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/139.jpg" style={{width:600, height:'auto'}}/></div>
 
@@ -445,7 +449,7 @@ reTerminal E1001 配有 3D 打印支撑架配件，允许您将设备直立放�
 - 检查红色 LED 是否常亮（表示正在充电）
 - 如果使用电池供电，确保电池正确连接且已充电
 
-### Q2: 无法连接 Wi-Fi
+### Q2: 无法连接到 Wi-Fi
 
 - 验证您输入的 Wi-Fi 密码是否正确
 - 确保您的 Wi-Fi 网络正常运行
