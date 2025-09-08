@@ -270,9 +270,9 @@ Diseña tu tablero desde cero con Lienzo, una interfaz de arrastrar y soltar que
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/14.png" style={{width:1000, height:'auto'}}/></div>
 
-**Integración de Fuentes RSS**
+**Integración de Feeds RSS**
 
-Mantente actualizado con tus fuentes de noticias, blogs o sitios web favoritos agregando fuentes RSS a tu tablero. La función RSS te permite mostrar titulares, resúmenes o artículos completos de múltiples fuentes.
+Mantente actualizado con tus fuentes de noticias, blogs o sitios web favoritos agregando feeds RSS a tu tablero. La función RSS te permite mostrar titulares, resúmenes o artículos completos de múltiples fuentes.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/15.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -290,7 +290,7 @@ Después de emparejar tu dispositivo con la plataforma SenseCraft como se descri
 - [Guía del Generador AI](https://wiki.seeedstudio.com/es/sensecraft_hmi_ai_generation)
 - [Guía de Uso de Galería](https://wiki.seeedstudio.com/es/sensecraft_hmi_gallery)
 - [Herramientas de Diseño de Lienzo](https://wiki.seeedstudio.com/es/sensecraft_hmi_canvas)
-- [Configuración de Fuentes RSS](https://wiki.seeedstudio.com/es/sensecraft_hmi_rss)
+- [Configuración de Feed RSS](https://wiki.seeedstudio.com/es/sensecraft_hmi_rss)
 - [Visualización de Contenido Web](https://wiki.seeedstudio.com/es/sensecraft_hmi_web)
 
 Una vez que hayas creado y guardado tu tablero en la plataforma SenseCraft, simplemente haz clic en "Desplegar al Dispositivo", selecciona tu reTerminal E1002 emparejado, y tu contenido personalizado será transmitido inalámbricamente al dispositivo. La pantalla ePaper se actualizará para mostrar tu tablero, y puedes usar los botones de navegación para cambiar entre múltiples páginas si las has creado.
@@ -344,6 +344,10 @@ Cuando opera con energía de batería:
 
 - El dispositivo mostrará un ícono de batería baja en la esquina superior derecha cuando el nivel de batería esté por debajo del 20%
 
+:::tip
+Si quieres escribir algo de código por ti mismo para leer el voltaje de la batería, será más preciso agregar un retraso de 10ms antes de la función analogRead().
+:::
+
 ### Pines de Expansión
 
 El reTerminal E1002 cuenta con un conector de expansión de 8 pines (J2) que proporciona opciones de conectividad para agregar sensores externos, módulos u otro hardware para extender la funcionalidad de tu dispositivo. Este conector de expansión expone varios pines GPIO del ESP32-S3 e interfaces de comunicación, convirtiéndolo en un punto de conexión versátil para tus proyectos DIY.
@@ -390,6 +394,7 @@ El conector de expansión de 8 pines (J2) tiene el siguiente pinout:
 			<td>E/S de propósito general con capacidad de entrada analógica (canal 4 de ADC1)</td>
 		</tr>
 		<tr>
+
 			<td>5</td>
 			<td>ESP_IO17/TX1</td>
 			<td>GPIO17</td>
@@ -398,11 +403,10 @@ El conector de expansión de 8 pines (J2) tiene el siguiente pinout:
 		</tr>
 		<tr>
 			<td>6</td>
-
 			<td>ESP_IO18/RX1</td>
 			<td>GPIO18</td>
 			<td>GPIO/UART RX</td>
-			<td>GPIO o señal de recepción (RX) UART</td>
+			<td>GPIO o señal de recepción UART (RX)</td>
 		</tr>
 		<tr>
 			<td>7</td>
@@ -478,7 +482,7 @@ El soporte permite que el dispositivo se coloque en escritorios, encimeras o est
 - [Archivo STP del modelo 3D exterior general](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/reterminal_esp-250904.stp)
 <!-- - [GitHub Repository](/es/getting_started_with_reterminal_e1002) -->
 
-## Soporte Técnico y Discusión de Productos
+## Soporte Técnico y Discusión del Producto
 
 ¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes tipos de soporte para asegurar que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para satisfacer diferentes preferencias y necesidades.
 
