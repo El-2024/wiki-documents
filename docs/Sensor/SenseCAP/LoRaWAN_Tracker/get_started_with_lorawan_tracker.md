@@ -411,6 +411,7 @@ Check [SenseCAP Portal User Guide](https://sensecap-docs.seeed.cc/quickstart.htm
 ## SenseCAP API
 
 SenseCAP API is for users to manage IoT devices and data. It includes 3 types of API methods: HTTP protocol, MQTT protocol, and Websocket protocol.
+
 - With HTTP API, users can manage LoRa devices, to get raw data or historical data.
 - With MQTT API, users can subscribe to the sensor's real-time measurement data through the MQTT protocol.
 - With Websocket API, users can get real-time measurement data of sensors through Websocket protocol.

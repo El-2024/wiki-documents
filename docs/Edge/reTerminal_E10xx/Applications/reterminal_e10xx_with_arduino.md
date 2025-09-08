@@ -1811,6 +1811,23 @@ void loop() {
 The screen refresh speed may be slow, sometimes the screen will not respond until 2~3 minutes after uploading the program.
 :::
 
+## Troubleshooting
+
+### Q1: Why does the reTerminal's ePaper display not show anything or refresh when running the code above?
+
+This issue may occur if you have inserted a MicroSD card into the reTerminal. The reason is that the MicroSD card and the ePaper display share the same SPI bus on the reTerminal. If a MicroSD card is inserted but its enable (chip select) pin is not properly managed, it can cause a conflict on the SPI bus. Specifically, the MicroSD card may hold the BUSY line high, which prevents the ePaper display from functioning correctly—resulting in no display updates or refreshes.
+
+```cpp
+// Initialize SD Card
+pinMode(SD_EN_PIN, OUTPUT);
+digitalWrite(SD_EN_PIN, HIGH);
+pinMode(SD_DET_PIN, INPUT_PULLUP);
+```
+
+To resolve this, you must ensure that the MicroSD card is properly enabled using the code provided above. The code initializes and enables the MicroSD card by setting the correct pin states, which prevents SPI bus conflicts and allows both the SD card and the ePaper display to work together. Always use the recommended initialization code when using a MicroSD card with the reTerminal to avoid such issues.
+
+If the MicroSD card is not used inside your project, we recommend powering down the device and removing the card before running the display program. If the card has been inserted into the reTerminal, you will need to add the above code to ensure that you can get the screen to display properly, regardless of whether you are using a MicroSD card or not.
+
 ## Tech Support & Product Discussion
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
