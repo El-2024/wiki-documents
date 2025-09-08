@@ -1,8 +1,8 @@
 ---
 description: This project provides real-time gun detection capabilities via Frigate-on-Jetson
-title: Frigate-on-Jetson + Node-RED Gun Alerts
+title: Frigate_on_Jetson_NodeRED_Gun_Alerts
 image: https://files.seeedstudio.com/wiki/solution/crowd_tracking/Node-RED%20Gun%20Alerts1.webp
-slug: /solutions/nodered gun alerts
+slug: /solutions/nodered-gun-alerts
 last_update:
   date: 09/05/2025
   author: lian
