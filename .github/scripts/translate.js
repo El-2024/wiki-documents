@@ -250,9 +250,13 @@ function intelligentSplit(lines, maxSize) {
   let inTable = false;
   let lastHeaderIndex = -1;
   
+  // PATCH: 将换行字节也计入阈值，避免边界误差
+  const NL_BYTES = Buffer.byteLength('\n', 'utf8');
+  
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
-    const lineSize = Buffer.byteLength(line, 'utf8');
+    // PATCH: 统计“行+换行”的字节数
+    const lineSize = Buffer.byteLength(line, 'utf8') + NL_BYTES;
     
     // 检测代码块
     if (line.trim().startsWith('```')) {
@@ -273,10 +277,10 @@ function intelligentSplit(lines, maxSize) {
     
     // 决定是否分割
     let shouldSplit = false;
+    // 仅在不处于代码块/表格时考虑切割（原逻辑保留）
     if (currentSize + lineSize > maxSize && !inCodeBlock && !inTable) {
-      // 寻找最佳分割点
+      // 空行是理想分割点
       if (line.trim() === '') {
-        // 空行是理想的分割点
         shouldSplit = true;
       } else if (lastHeaderIndex > 0 && currentChunk.length - lastHeaderIndex > 10) {
         // 在最近的标题处分割（但要确保标题后有足够内容）
@@ -873,14 +877,17 @@ async function translateDocumentChunks(chunks, targetLang, filePath) {
     
     if (frontMatterMatch) {
       const frontMatter = frontMatterMatch[0];
-      const firstContent = firstChunk.replace(frontMatterMatch[0], '').trim();
+      // PATCH: 不再 trim，避免吞掉空行导致行号错位
+      const firstContent = firstChunk.replace(frontMatterMatch[0], '');
       
-      finalContent = frontMatter + '\n' + firstContent;
+      // PATCH: 直接拼接，不额外插入空行，保持逐行对齐
+      finalContent = frontMatter + firstContent;
       if (otherChunks.length > 0) {
-        finalContent += '\n\n' + otherChunks.join('\n\n');
+        finalContent += otherChunks.join('');
       }
     } else {
-      finalContent = translatedChunks.join('\n\n');
+      // PATCH: 多块直接无缝拼接，避免 \n\n 造成偏移
+      finalContent = translatedChunks.join('');
     }
   }
   
