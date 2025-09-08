@@ -29,13 +29,19 @@ last_update:
 
 3.  **Abundant Learning Resources**
     We offer comprehensive open-source learning resources, including environment setup, installation and debugging guides, and custom grasping task examples to help users quickly get started and develop robotic applications.
-
+ 
 4.  **Nvidia Platform Compatibility**
     Deployment is supported via the reComputer Mini J4012 Orin NX 16GB platform.
 
 <div class="video-container">
-<iframe width="900" height="600" src="https://www.youtube.com/embed/pAKqP_vReNY?si=AaZQ_DBQyY2p0YMf" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/IJKTeBYAG7k?si=iS-jqT27fDjeI6yX" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+<a class="get_one_now_item" href="https://www.seeedstudio.com/Fashionstar-Star-Arm-Viola-Violin-p-6497.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now!!! 🖱️</font></span></strong>
+</a></div>
+
 
 ## Key Features
 
