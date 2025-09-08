@@ -6,7 +6,7 @@ keywords:
 - Reinforcement Learning
 - Robotic Arm
 - SOARM100
-image: https://files.seeedstudio.com/wiki/reComputer-Jetson/lerobot/so_arm_100.webp
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/isaaclab_rl/cube_play.webp
 slug: /training_soarm101_policy_with_isaacLab
 last_update:
   date: 9/4/2025
@@ -14,14 +14,16 @@ last_update:
 ---
 
 ## Introduction
+
 This wiki introduces how to use Isaac Lab to train and test SO-ARM100/101 robotic arm policies with reinforcement learning.
 
 <div align="center">
-    <img width={900} 
+    <img width={900}
     src="https://files.seeedstudio.com/wiki/reComputer-Jetson/isaaclab_rl/cube_play.gif" />
 </div>
 
 ## 📌Prerequisites
+
 - An Ubuntu PC with Nvidia GPU
 
 :::info
@@ -31,6 +33,7 @@ If you don’t have CUDA drivers or Conda installed, please set them up first.
 ## Getting Started
 
 ### 🚀 Step 1. Install Isaac Lab
+
 NVIDIA Isaac™ Lab is an open-source unified framework for [robot learning](https://www.nvidia.com/en-us/glossary/robot-learning/) that helps researchers and developers efficiently train robotic policies.
 
 Run the following commands in the Ubuntu PC terminal:
@@ -69,12 +72,10 @@ Run the following command to verify installation:
 
 If successful, an empty Isaac Sim window should appear.
 
-
 <div align="center">
-    <img width={900} 
+    <img width={900}
     src="https://files.seeedstudio.com/wiki/reComputer-Jetson/isaaclab_rl/create_empty.png" />
 </div>
-
 
 ### 🤖 Step 2. Install isaac_so_arm101 Project
 
@@ -99,7 +100,7 @@ python scripts/list_envs.py
 If the isaac_so_arm101 project is successfully installed, the terminal window will print the following log:
 
 <div align="center">
-    <img width={900} 
+    <img width={900}
     src="https://files.seeedstudio.com/wiki/reComputer-Jetson/isaaclab_rl/install.png" />
 </div>
 
@@ -117,11 +118,11 @@ This will open an Isaac Sim window where you can observe the training process in
     <iframe width="900" height="540" src="https://www.youtube.com/embed/J9JpmeXeKKE" title="Training SoArm100 with IsaacLab" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-After training, the model weights will be saved under: 
+After training, the model weights will be saved under:
 `~/Documents/isaac_so_arm101/logs/rsl_rl/so_arm100_reach`
 
 <div align="center">
-    <img width={900} 
+    <img width={900}
     src="https://files.seeedstudio.com/wiki/reComputer-Jetson/isaaclab_rl/models.png" />
 </div>
 
@@ -152,11 +153,11 @@ During testing, target positions are randomly generated within a defined range, 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
