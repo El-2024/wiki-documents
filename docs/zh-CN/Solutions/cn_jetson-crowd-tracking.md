@@ -1,120 +1,120 @@
 ---
-description: Jetsonの群衆追跡AIデモを紹介します
-title: 群衆追跡・カウント
+description: 介绍 Jetson 人群跟踪的 AI 演示
+title: 人群跟踪与计数
 image: https://files.seeedstudio.com/wiki/solution/crowd_tracking/crowd%20tracking.webp
-slug: /ja/solutions/jetson-crowd-tracking
+slug: /cn/solutions/jetson-crowd-tracking
 last_update:
   date: 08/15/2025
   author: lian
 ---
 
-このガイドは**NVIDIA Jetson Ubuntu 22 + JetPack 6.x**環境向けで、迅速なデプロイメントの完了をサポートします。
+本指南适用于 **NVIDIA Jetson Ubuntu 22 + JetPack 6.x** 环境，帮助您快速完成部署。
 
-## 📋 環境要件
+## 📋 环境要求
 
-- **デバイス**: NVIDIA Jetsonシリーズ（Nano、Xavier、Orinなど）
-- **システム**: Ubuntu 22.x + JetPack 6.x
-- **ネットワーク**: GitHubとDocker Hubにアクセス可能
-- **権限**: `sudo`権限
+- **设备**: NVIDIA Jetson 系列（Nano、Xavier、Orin 等）
+- **系统**: Ubuntu 22.x + JetPack 6.x
+- **网络**: 能够访问 GitHub 和 Docker Hub
+- **权限**: `sudo` 权限
 
-> デバイスに適切なシステム環境がまだインストールされていない場合は、システムインストールと環境準備について公式フラッシュガイドを参照してください：  
-> [JetPackフラッシュチュートリアル（Seeed Studio）](/ja/flash/jetpack_to_selected_product/)
+> 如果您的设备尚未安装合适的系统环境，请参考官方刷机指南进行系统安装和环境准备：  
+> [JetPack 刷机教程（Seeed Studio）](/cn/flash/jetpack_to_selected_product/)
 
-## ⚡ ワンクリックデプロイメント
+## ⚡ 一键部署
 
-Jetsonデバイスのターミナルで以下のコマンドを実行してください：
+在您的 Jetson 设备终端中运行以下命令：
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Seeed-Studio/SenseCraft-AI_Server/refs/heads/jetson/scripts/install.sh | bash
 ```
 
-> 💡 スクリプトは**冪等実行**をサポートしており、複数回実行しても安全です。
+> 💡 脚本支持**幂等执行**，意味着多次运行是安全的。
 
-## 🔍 デプロイメントプロセス
+## 🔍 部署过程
 
-スクリプトは以下のステップを自動的に実行します：
+脚本自动执行以下步骤：
 
-1. **Docker（27.x）のインストール**  
-   - Dockerがインストールされているかチェック  
-   - インストール済みだがバージョン27.xでない場合 → 自動的にアンインストールして再インストール  
-   - NVIDIA Container Toolkitの設定  
-   - Dockerのデフォルトランタイムを`nvidia`に設定
+1. **安装 Docker (27.x)**  
+   - 检查是否已安装 Docker  
+   - 如果已安装但不是 27.x 版本 → 自动卸载并重新安装  
+   - 配置 NVIDIA Container Toolkit  
+   - 设置 Docker 默认运行时为 `nvidia`
 
-2. **MQTTブローカーのインストール**  
-   - `mosquitto`と`mosquitto-clients`をインストール  
-   - 外部アクセスを許可するよう設定：  
+2. **安装 MQTT Broker**  
+   - 安装 `mosquitto` 和 `mosquitto-clients`  
+   - 配置允许外部访问：  
 
      ```shell
      listener 1883 0.0.0.0
      allow_anonymous true
      ```
 
-3. **SenseCraft AI Serverのデプロイ**  
-   - 指定されたブランチを`~/sensecraft-ai_server`にクローン  
-   - `scripts/run.sh`を実行してサービスを開始  
-   - YOLOv11モデルを`~/sensecraft-ai_server/models/yolo11n.pt`にダウンロード
+3. **部署 SenseCraft AI Server**  
+   - 克隆指定分支到 `~/sensecraft-ai_server`  
+   - 运行 `scripts/run.sh` 启动服务  
+   - 下载 YOLOv11 模型到 `~/sensecraft-ai_server/models/yolo11n.pt`
 
 ---
 
-## 🛡 例外処理
+## 🛡 异常处理
 
-- **冪等実行**：  
-  - **ほとんどの問題**（ネットワーク中断、部分的なインストール失敗など）は**単純にスクリプトを再実行する**ことで修正できます  
-  - スクリプトはソフトウェアのバージョンと設定をチェックし、不足または不正確な部分のみをインストールします  
-- **稀な問題**（永続的なaptソースの失敗、外部リポジトリへの到達不可など）は手動介入が必要です
+- **幂等执行**：  
+  - **大多数问题**（如网络中断、部分安装失败）可以通过**简单地重新运行脚本**来修复  
+  - 脚本检查软件版本和配置，只安装缺失或不正确的部分  
+- **罕见问题**（如永久性 apt 源故障、无法访问外部仓库）需要手动干预
 
 ---
 
-## 🖥 サービスの開始とアクセス
+## 🖥 启动和访问服务
 
-1. **サービスの開始**  
+1. **启动服务**  
 
    ```bash
    cd ~/sensecraft-ai_server
    sudo bash scripts/run.sh
    ```
 
-### 📷 コマンドライン出力（例）
+### 📷 命令行输出（示例）
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Command%20Line%20Output%20%28Example%29.png" alt="Command"/></div>
 
-2. **メインページへのアクセス**  
-   - ブラウザで：  
+2. **访问主页面**  
+   - 在浏览器中：  
 
      ```bash
      http://<JETSON_IP>:46654
      ```
 
-   - デフォルトパラメータが事前設定されています；開始して結果を確認してください
+   - 默认参数已预配置；启动即可看到结果
 
-### 📷 Webインターフェース（例）
+### 📷 Web 界面（示例）
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Web%20Interface%20%28Example%29.png"/></div>
 
-3. **設定ページへのアクセス**  
-   - ブラウザで：  
+3. **访问配置页面**  
+   - 在浏览器中：  
 
      ```bash
      http://<JETSON_IP>:46654/config.html
      ```
 
-   - ここでビデオソース、モデル、推論パラメータなどを調整し、サーバーに保存できます
+   - 在这里您可以调整视频源、模型、推理参数等，并将其保存到服务器
 
-## ⚙ 設定ページ概要
+## ⚙ 配置页面概览
 
-### 📷 設定ページ（例）
+### 📷 配置页面（示例）
 
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Configuration%20Page%20%28Example%29.png"/></div>
 
-## ✨ 検出結果の取得
-サービスをデプロイする際、ローカルMQTTブローカーがインストールされます。そのため、認識結果はローカルMQTTを通じて取得できます。
+## ✨ 检测结果获取
+部署服务时会安装本地 MQTT broker。因此，可以通过本地 MQTT 获取识别结果。
 
-### 📡 MQTTメッセージプッシュトピック
+### 📡 MQTT 消息推送主题
 
 ```bash
 edgeai/result
 ```
-### 🧩 MQTTメッセージデータ構造
+### 🧩 MQTT 消息数据结构
 ```json
 {
   "uuid": "0c7ef3d9-617d-4e6b-83f6-467f89b28d78", // result's uuid
@@ -127,14 +127,14 @@ edgeai/result
   }
 }
 ```
-### 🔧 Node-RED設定
-MQTTブローカーのIPを調整する必要がある場合があります。
-この場合、Node-REDはコンテナにデプロイされているため、docker0アドレスが使用されます。
+### 🔧 Node-RED 配置
+可能需要校准 MQTT broker 的 IP。
+在这种情况下，Node-RED 部署在容器中，因此使用 docker0 地址。
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/nodered.png"/></div>
-## 🔧 Node-RED設定（完全フロー）
+## 🔧 Node-RED 配置（完整流程）
 
-MQTTブローカーのIPを調整する必要がある場合があります。  
-この場合、Node-REDはコンテナにデプロイされているため、`docker0`アドレスが使用されます。
+可能需要校准 MQTT broker 的 IP。  
+在这种情况下，Node-RED 部署在容器中，因此使用 `docker0` 地址。
 
 ```json
 [{
@@ -279,66 +279,66 @@ MQTTブローカーのIPを調整する必要がある場合があります。
   }
 }]
 ```
-### 📊 Node-REDダッシュボードプレビュー
+### 📊 Node-RED 仪表板预览
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/nodered%20preview.png"/></div>
 
 
-### ビデオソース
+### 视频源
 
-- **ローカルビデオファイル**、**USBカメラ**（デフォルトは最初のデバイス）、**RTSPストリーム**をサポート
-- MP4、AVI、MOV、MKVのアップロードをサポート
-- アップロードされたビデオソースの表示と削除
+- 支持**本地视频文件**、**USB 摄像头**（默认第一个设备）、**RTSP 流**
+- 支持 MP4、AVI、MOV、MKV 上传
+- 查看和删除已上传的视频源
 
-### AIモデル
+### AI 模型
 
-- 利用可能なAI推論モデルから選択
-- `.pt`、`.pth`、`.onnx`、`.engine`形式をサポート
-- アップロードされたモデルの表示と削除
+- 从可用的 AI 推理模型中选择
+- 支持 `.pt`、`.pth`、`.onnx`、`.engine` 格式
+- 查看和删除已上传的模型
 
-### 推論パラメータ
+### 推理参数
 
-- **信頼度閾値**: 0.1–1.0
-- **最大検出数**: 1–1000
-- **半精度推論**: 速度向上（小さなモデルでは最小限の差）
+- **置信度阈值**: 0.1–1.0
+- **最大检测数**: 1–1000
+- **半精度推理**: 提升速度（对小模型差异很小）
 
-### 表示
+### 显示
 
-- 検出ボックスの表示（カスタマイズ可能な色、デフォルトはオレンジ）
-- タイムスタンプとFPSは常に有効
+- 显示检测框（可自定义颜色，默认橙色）
+- 时间戳和 FPS 始终启用
 
-### 追跡
+### 跟踪
 
-- マルチオブジェクト追跡を有効化
-- カスタマイズ可能な長さ、太さ、色の軌跡線を表示
+- 启用多目标跟踪
+- 显示轨迹线，可自定义长度、粗细和颜色
 
 
-### トリップワイヤー検出
+### 绊线检测
 
-- 水平または垂直トリップワイヤーをサポート（垂直推奨）
-- 開始/終了点を描画；リアルタイムデバッグ用の表示を有効化
-- 許容値：1〜20ピクセル
-- カスタマイズ可能な色と太さ
-- カウンターの表示/非表示とリセット（サービス再起動時にリセット）
+- 支持水平或垂直绊线（推荐垂直）
+- 绘制起始/结束点；启用显示进行实时调试
+- 容差：1–20 像素
+- 可自定义颜色和粗细
+- 显示/隐藏和重置计数器（服务重启时重置）
 
-### 設定管理
+### 配置管理
 
-- 現在の設定をサーバーに保存（実行時に読み込み）
-- 設定ファイルのエクスポート/インポート
-- デフォルト設定の復元
+- 将当前配置保存到服务器（运行时加载）
+- 导出/导入配置文件
+- 恢复默认设置
 
 ---
 
-## 🛠 よくある問題
+## 🛠 常见问题
 
-| 問題                        | 原因                      | 解決方法                                                              |
+| 问题                        | 原因                      | 解决方案                                                              |
 | ---------------------------- | -------------------------- | --------------------------------------------------------------------- |
-| `Dockerインストール失敗` | ネットワーク不安定またはソース | ネットワークを確認してスクリプトを再実行                                   |
-| Mosquittoに接続できない     | ファイアウォール/設定問題      | `/etc/mosquitto/mosquitto.conf`に`listener 1883 0.0.0.0`が含まれていることを確認 |
-| YOLOモデルがダウンロードされない    | ネットワーク中断       | `~/sensecraft-ai_server/models/yolo11n.pt`を削除してスクリプトを再実行 |
+| `Docker 安装失败` | 网络不稳定或源问题 | 检查网络并重新运行脚本                                   |
+| Mosquitto 无法连接     | 防火墙/配置问题      | 确保 `/etc/mosquitto/mosquitto.conf` 包含 `listener 1883 0.0.0.0` |
+| YOLO 模型未下载    | 网络中断       | 删除 `~/sensecraft-ai_server/models/yolo11n.pt` 并重新运行脚本 |
 
 ---
 
-## 📦 サービスのアンインストール
+## 📦 卸载服务
 
 ```bash
 # Uninstall MQTT
@@ -353,16 +353,16 @@ rm -rf ~/sensecraft-ai_server
 
 ---
 
-## 📚 参考資料
+## 📚 参考资料
 
-- [Jetsonフラッシュガイド](/ja/flash/jetpack_to_selected_product/)
-- [SenseCraft-AI\_Serverソースリポジトリ](https://github.com/Seeed-Studio/SenseCraft-AI_Server/tree/jetson)
-- [NVIDIA Jetson Dockerガイド](https://www.jetson-ai-lab.com/tips_ssd-docker.html)
-- [Mosquitto公式ドキュメント](https://mosquitto.org/man/mosquitto-conf-5.html)
+- [Jetson 刷机指南](/cn/flash/jetpack_to_selected_product/)
+- [SenseCraft-AI\_Server 源代码仓库](https://github.com/Seeed-Studio/SenseCraft-AI_Server/tree/jetson)
+- [NVIDIA Jetson Docker 指南](https://www.jetson-ai-lab.com/tips_ssd-docker.html)
+- [Mosquitto 官方文档](https://mosquitto.org/man/mosquitto-conf-5.html)
 
-## 技術サポートと製品ディスカッション
+## 技术支持与产品讨论
 
-弊社製品をお選びいただき、ありがとうございます！弊社製品での体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。さまざまな好みやニーズに対応するため、複数のコミュニケーションチャンネルを用意しています。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://discord.com/invite/QqMgVwHT3X" class="button_tech_support_sensecap"></a>
