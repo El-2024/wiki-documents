@@ -69,12 +69,13 @@ const translationStatus = {
 };
 
 // 预处理文档，添加行号标记（保留缩进）
-function preprocessDocument(content) {
+// PATCH: 新增 startsInsideCodeBlock/endsInsideCodeBlock，用于跨分块延续代码块状态
+function preprocessDocument(content, startsInsideCodeBlock = false) {
   const lines = content.split('\n');
   const processedLines = [];
   const lineMetadata = [];
 
-  let inCodeBlock = false;
+  let inCodeBlock = startsInsideCodeBlock;
 
   lines.forEach((line, index) => {
     // 计算缩进（空格和制表符）
@@ -121,7 +122,8 @@ function preprocessDocument(content) {
   return {
     processed: processedLines.join('\n'),
     lineMetadata: lineMetadata,
-    totalLines: lines.length
+    totalLines: lines.length,
+    endsInsideCodeBlock: inCodeBlock // PATCH: 返回块末状态
   };
 }
 
@@ -509,7 +511,8 @@ function validateTranslation(original, translated) {
 }
 
 // Claude翻译函数
-async function translateWithClaude(text, targetLang, maxRetries = 2, isChunk = false, chunkInfo = null, isCategory = false) {
+// PATCH: 新增 startsInsideCodeBlock 形参，并在 markdown 路径返回 { text, endsInsideCodeBlock }
+async function translateWithClaude(text, targetLang, maxRetries = 2, isChunk = false, chunkInfo = null, isCategory = false, startsInsideCodeBlock = false) {
   const langConfig = LANGUAGE_CONFIG[targetLang];
   if (!langConfig) {
     throw new Error(`不支持的语言: ${targetLang}`);
@@ -531,7 +534,8 @@ async function translateWithClaude(text, targetLang, maxRetries = 2, isChunk = f
           ]
         });
 
-        return response.content[0].text;
+        // 为了保持调用点一致，这里也返回对象
+        return { text: response.content[0].text, endsInsideCodeBlock: false };
       } catch (error) {
         console.error(`❌ Category翻译失败 (尝试 ${attempt}/${maxRetries}): ${error.message}`);
         if (attempt === maxRetries) throw error;
@@ -541,7 +545,7 @@ async function translateWithClaude(text, targetLang, maxRetries = 2, isChunk = f
   }
 
   // 对于markdown文件，使用改进的流程
-  const { processed, lineMetadata, totalLines } = preprocessDocument(text);
+  const { processed, lineMetadata, totalLines, endsInsideCodeBlock: preEnd } = preprocessDocument(text, startsInsideCodeBlock);
   const systemPrompt = generateEnhancedPrompt(targetLang, langConfig.pathPrefix, isChunk, chunkInfo);
 
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
@@ -599,7 +603,7 @@ async function translateWithClaude(text, targetLang, maxRetries = 2, isChunk = f
       }
 
       console.log(`✅ 翻译成功 (尝试 ${attempt})`);
-      return translatedContent;
+      return { text: translatedContent, endsInsideCodeBlock: preEnd };
 
     } catch (error) {
       console.error(`❌ 翻译失败 (尝试 ${attempt}/${maxRetries}): ${error.message}`);
@@ -797,7 +801,7 @@ async function translateCategoryFile(filePath, targetLang) {
     
     const content = await fs.readFile(filePath, 'utf8');
     
-    const translatedContent = await translateWithClaude(
+    const translatedObj = await translateWithClaude(
       content, 
       targetLang, 
       3, 
@@ -805,6 +809,7 @@ async function translateCategoryFile(filePath, targetLang) {
       null, 
       true
     );
+    const translatedContent = translatedObj.text || translatedObj; // 向后兼容
     
     const targetPath = generateTargetPath(filePath, targetLang);
     
@@ -829,6 +834,9 @@ async function translateDocumentChunks(chunks, targetLang, filePath) {
   
   console.log(`📚 开始翻译文档 ${filePath} 到 ${langConfig.name} (共${chunks.length}块)`);
   
+  // PATCH: 跨块延续代码块状态
+  let carryInCode = false;
+  
   for (let i = 0; i < chunks.length; i++) {
     const chunk = chunks[i];
     const chunkInfo = { index: i, total: chunks.length };
@@ -844,15 +852,19 @@ async function translateDocumentChunks(chunks, targetLang, filePath) {
         contentToTranslate = chunk.content;
       }
       
-      const translatedContent = await translateWithClaude(
+      const translatedResult = await translateWithClaude(
         contentToTranslate, 
         targetLang, 
         3, 
         chunks.length > 1, 
-        chunkInfo
+        chunkInfo,
+        false,
+        carryInCode
       );
       
-      translatedChunks.push(translatedContent);
+      translatedChunks.push(translatedResult.text);
+      // 将本块结束时的代码块状态传给下一块
+      carryInCode = translatedResult.endsInsideCodeBlock;
       
       // API限流延迟
       if (i < chunks.length - 1) {
@@ -929,7 +941,7 @@ async function translateFile(filePath, targetLang) {
     return { success: true, path: targetPath };
     
   } catch (error) {
-    console.error(`❌ 文件翻译失败 ${filePath}:`, error.message);
+    console.error(`❌ 文件翻译失败 ${filePath}: ${error.message}`);
     translationStatus.failed++;
     return { success: false, error: error.message, path: filePath };
   }
