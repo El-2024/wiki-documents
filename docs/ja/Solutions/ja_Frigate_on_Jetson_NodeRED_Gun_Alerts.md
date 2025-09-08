@@ -1,6 +1,6 @@
 ---
 description: このプロジェクトは、Frigate-on-Jetsonを介したリアルタイム銃器検出機能を提供します
-title: Frigate_on_Jetson_NodeRED_Gun_Alerts
+title: Jetson 上の Frigate と Node-RED 銃警報
 image: https://files.seeedstudio.com/wiki/solution/crowd_tracking/Node-RED%20Gun%20Alerts1.webp
 slug: /ja/solutions/nodered-gun-alerts
 last_update:
@@ -23,12 +23,12 @@ last_update:
 - ハードウェアプラットフォーム：NVIDIA Jetsonシリーズ（Nano、Xavier、Orin）  
 
 ## 🏗️ 2. システムアーキテクチャ  
+
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Architecture%20Diagram.png"/></div>
 - Frigateはリアルタイムビデオストリームを分析し、銃器検出イベントをMQTTトピックに公開します。  
 - Node-REDは`frigate/reviews`などのトピックを購読し、銃器イベントを解析、ログ記録、転送します。  
 - フロントエンドDashboardは最新のアラートフレームと履歴記録を表示します。  
 - Webhookは任意のプラットフォームへの即座のメッセージプッシュを提供します。  
-
 
 ## ⚙️ 3. インストールとデプロイメント
 
@@ -37,21 +37,26 @@ last_update:
 **GitHubリポジトリ：** [Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
 
 ### 3.1.1 環境要件
+
 - NVIDIA Jetsonデバイス（Nano、Xavier、Orin）  
 - Ubuntu 22.04 + JetPack 6.x  
 
 ### 3.1.2 ワンクリックインストール
+
 ```bash
 curl -sSL https://raw.githubusercontent.com/Seeed-Studio/frigate-on-jetson/main/install.sh | bash
 ```
 
 ### 3.1.3 Webインターフェースへのアクセス
+
 ```cpp
 http://<JETSON_IP>:5000
 ```
 
 ### 3.1.4 実行効果のスクリーンショット
+
 - ホームページビュー：デフォルト設定にはデモンストレーション用の2つのローカルビデオが含まれています
+
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/homepage%20demo.png"/></div>
 - 検出効果を示すデバッグインターフェース
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/test%20demo.png"/></div>
@@ -59,16 +64,19 @@ http://<JETSON_IP>:5000
 ## 🟢 3.2 Node-REDインストール
 
 ### 3.2.1 Dockerデプロイメント
+
 ```bash
 sudo docker run -d --restart=always -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
 ```
 
 ### 3.2.2 Webインターフェースへのアクセス
+
 ```cpp
 http://<JETSON_IP>:1880/
 ```
 
 ### 3.2.3 Dashboardプラグインのインストール
+>
 > 💡 **ヒント：** 以下の手順により、シンプルなWebインターフェースが有効になります。
 
 - 設定ページ  
@@ -612,6 +620,7 @@ Access the following URL in your browser:
 ```cpp
 http://JETSON_IP:1880/dashboard/frigate
 ```
+
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/frigateevents.png"/></div>
 
 # 🟣 4. Function Description
@@ -653,4 +662,3 @@ http://JETSON_IP:1880/dashboard/frigate
 
 📦 **Project Repository:**  
 [GitHub - Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
-

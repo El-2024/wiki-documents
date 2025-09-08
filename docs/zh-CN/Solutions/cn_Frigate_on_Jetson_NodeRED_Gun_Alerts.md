@@ -1,6 +1,6 @@
 ---
 description: 该项目通过 Frigate-on-Jetson 提供实时枪支检测功能
-title: Frigate_on_Jetson_NodeRED_Gun_Alerts
+title: 在 Jetson 上使用 Frigate 与 Node-RED 枪支警报
 image: https://files.seeedstudio.com/wiki/solution/crowd_tracking/Node-RED%20Gun%20Alerts1.webp
 slug: /cn/solutions/nodered-gun-alerts
 last_update:
@@ -23,12 +23,12 @@ last_update:
 - 硬件平台：NVIDIA Jetson 系列（Nano、Xavier、Orin）
 
 ## 🏗️ 2. 系统架构
+
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Architecture%20Diagram.png"/></div>
 - Frigate 分析实时视频流并将枪支检测事件发布到 MQTT 主题。
 - Node-RED 订阅 `frigate/reviews` 等主题，解析、记录并转发枪支事件。
 - 前端 Dashboard 显示最新警报帧和历史记录。
 - Webhook 提供即时消息推送到任何平台。
-
 
 ## ⚙️ 3. 安装与部署
 
@@ -37,21 +37,26 @@ last_update:
 **GitHub 仓库：** [Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
 
 ### 3.1.1 环境要求
+
 - NVIDIA Jetson 设备（Nano、Xavier、Orin）
 - Ubuntu 22.04 + JetPack 6.x
 
 ### 3.1.2 一键安装
+
 ```bash
 curl -sSL https://raw.githubusercontent.com/Seeed-Studio/frigate-on-jetson/main/install.sh | bash
 ```
 
 ### 3.1.3 访问 Web 界面
+
 ```cpp
 http://<JETSON_IP>:5000
 ```
 
 ### 3.1.4 运行效果截图
+
 - 主页视图：默认配置包含两个本地视频用于演示
+
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/homepage%20demo.png"/></div>
 - 调试界面显示检测效果
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/test%20demo.png"/></div>
@@ -59,16 +64,19 @@ http://<JETSON_IP>:5000
 ## 🟢 3.2 Node-RED 安装
 
 ### 3.2.1 Docker 部署
+
 ```bash
 sudo docker run -d --restart=always -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
 ```
 
 ### 3.2.2 访问 Web 界面
+
 ```cpp
 http://<JETSON_IP>:1880/
 ```
 
 ### 3.2.3 安装 Dashboard 插件
+>
 > 💡 **提示：** 以下步骤将启用简单的 Web 界面。
 
 - 设置页面
@@ -612,6 +620,7 @@ Access the following URL in your browser:
 ```cpp
 http://JETSON_IP:1880/dashboard/frigate
 ```
+
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/frigateevents.png"/></div>
 
 # 🟣 4. Function Description
@@ -653,4 +662,3 @@ http://JETSON_IP:1880/dashboard/frigate
 
 📦 **Project Repository:**  
 [GitHub - Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
-

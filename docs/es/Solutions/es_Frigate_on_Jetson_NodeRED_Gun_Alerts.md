@@ -1,6 +1,6 @@
 ---
 description: Este proyecto proporciona capacidades de detección de armas en tiempo real a través de Frigate-on-Jetson
-title: Frigate_on_Jetson_NodeRED_Gun_Alerts
+title: Frigate en Jetson con alertas de armas mediante Node-RED
 image: https://files.seeedstudio.com/wiki/solution/crowd_tracking/Node-RED%20Gun%20Alerts1.webp
 slug: /es/solutions/nodered-gun-alerts
 last_update:
@@ -23,12 +23,12 @@ Este proyecto proporciona capacidades de detección de armas en tiempo real a tr
 - Plataforma de Hardware: Serie NVIDIA Jetson (Nano, Xavier, Orin)
 
 ## 🏗️ 2. Arquitectura del Sistema
+
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Architecture%20Diagram.png"/></div>
 - Frigate analiza flujos de video en tiempo real y publica eventos de detección de armas a temas MQTT.
 - Node-RED se suscribe a temas como `frigate/reviews`, analiza, registra y reenvía eventos de armas.
 - El Dashboard frontend muestra los marcos de alerta más recientes y registros históricos.
 - Webhook proporciona envío instantáneo de mensajes a cualquier plataforma.
-
 
 ## ⚙️ 3. Instalación y Despliegue
 
@@ -37,21 +37,26 @@ Este proyecto proporciona capacidades de detección de armas en tiempo real a tr
 **Repositorio GitHub:** [Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
 
 ### 3.1.1 Requisitos del Entorno
+
 - Dispositivos NVIDIA Jetson (Nano, Xavier, Orin)
 - Ubuntu 22.04 + JetPack 6.x
 
 ### 3.1.2 Instalación con Un Clic
+
 ```bash
 curl -sSL https://raw.githubusercontent.com/Seeed-Studio/frigate-on-jetson/main/install.sh | bash
 ```
 
 ### 3.1.3 Acceder a la Interfaz Web
+
 ```cpp
 http://<JETSON_IP>:5000
 ```
 
 ### 3.1.4 Capturas de Pantalla del Efecto de Ejecución
+
 - Vista de la página principal: La configuración predeterminada incluye dos videos locales para demostración
+
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/homepage%20demo.png"/></div>
 - Interfaz de depuración mostrando el efecto de detección
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/test%20demo.png"/></div>
@@ -59,16 +64,19 @@ http://<JETSON_IP>:5000
 ## 🟢 3.2 Instalación de Node-RED
 
 ### 3.2.1 Despliegue con Docker
+
 ```bash
 sudo docker run -d --restart=always -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
 ```
 
 ### 3.2.2 Acceder a la Interfaz Web
+
 ```cpp
 http://<JETSON_IP>:1880/
 ```
 
 ### 3.2.3 Instalar Plugin Dashboard
+>
 > 💡 **Consejo:** Los siguientes pasos habilitarán una interfaz web simple.
 
 - Página de configuración
@@ -612,6 +620,7 @@ Access the following URL in your browser:
 ```cpp
 http://JETSON_IP:1880/dashboard/frigate
 ```
+
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/frigateevents.png"/></div>
 
 # 🟣 4. Function Description
@@ -653,4 +662,3 @@ http://JETSON_IP:1880/dashboard/frigate
 
 📦 **Project Repository:**  
 [GitHub - Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
-
