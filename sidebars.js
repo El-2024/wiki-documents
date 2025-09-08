@@ -4179,6 +4179,7 @@ const sidebars = {
                     ]},
             'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
             'Robotics/Robot_Software/control_robotic_arm_via_phospho',
+            'Robotics/Robot_Software/Implement_Ethercat_communication_on_reComputer',
           ]
 
     },
