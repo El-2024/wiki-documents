@@ -1099,7 +1099,7 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/Seeeduino-XIAO-by-Nanase',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/Seeeduino-XIAO-CircuitPython',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/XIAO-SAMD21-MicroPython',
-
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/MicroBlocks_XIAO_SAMD21',
               ],
             },
             {
@@ -1153,6 +1153,7 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-Arduino',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-MicroPython',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-CircuitPython',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/MicroBlocks_XIAO_RP2040',
               ],
             },
             {
@@ -1201,6 +1202,7 @@ const sidebars = {
               label: 'Programming Language',
               items: [
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO-BLE_CircutPython',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/MicroBlocks_XIAO_nRF52840',
               ],
             },
             {
@@ -1300,8 +1302,9 @@ const sidebars = {
               type: 'category',
               label: 'Programming Language',
               items: [
-            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_with_CircuitPython',
-            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_with_MicroPython',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_with_CircuitPython',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_with_MicroPython',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/MicroBlocks_XIAO_ESP32_C3',
               ],
             },
             {
@@ -1382,9 +1385,9 @@ const sidebars = {
           type: 'category',
           label: 'XIAO ESP32S3 Series',
           items: [
-            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started',
-            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Pin_Multiplexing',
-            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Sense_Consumption',
+              'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started',
+              'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Pin_Multiplexing',
+              'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Sense_Consumption',
             {
               type: 'category',
               label: 'Wireless Connection',
@@ -1399,6 +1402,7 @@ const sidebars = {
               items: [
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_with_MicroPython',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_CircuitPython',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/MicroBlocks_XIAO_ESP32_S3',
                 // 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Micropython',
               ],
             },
