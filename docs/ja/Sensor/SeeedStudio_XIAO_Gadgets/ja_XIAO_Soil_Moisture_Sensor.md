@@ -638,7 +638,8 @@ wifi:
     ssid: "Xiao-Soil-Moisture-Monitor"
     password: ""
 
-captive_portal:```
+captive_portal:
+```
 
 </details>
 

@@ -362,9 +362,10 @@ last_update:
 
 <div class="table-center">
  <table align="center">
-  <tr>   <th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/cn/xiao-esp32-swift/" target="_blank">XIAO ESP32C6</a></th>
-   <th style={{width:333, height:'auto'}}><a href="" target="_blank"></a></th>
-            <th style={{width:333, height:'auto'}}><a href="" target="_blank"></a></th>
+  <tr>
+    <th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/cn/xiao-esp32-swift/" target="_blank">XIAO ESP32C6</a></th>
+    <th style={{width:333, height:'auto'}}><a href="" target="_blank"></a></th>
+    <th style={{width:333, height:'auto'}}><a href="" target="_blank"></a></th>
   </tr>
  </table>
 </div>

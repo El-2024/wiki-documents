@@ -189,6 +189,7 @@ Home Assistant Green 是自动化家居最简单、最注重隐私的方式。�
 ## 高级用法
 
 您可以修改原始固件逻辑，并直接通过 Home Assistant 刷写您的自定义版本土壤传感器。
+
 ### 步骤 1. 安装 ESPHome
 
 请参阅上面步骤 1 中的安装指南。
@@ -638,7 +639,8 @@ wifi:
     ssid: "Xiao-Soil-Moisture-Monitor"
     password: ""
 
-captive_portal:```
+captive_portal:
+```
 
 </details>
 
