@@ -7,7 +7,7 @@ keywords:
   - Zoneminder
   - video surveillance system
 image: https://files.seeedstudio.com/wiki/reComputer/Application/Firearm_Detection_With_Frigate_NVR_on_R2130/setting_3.webp
-slug: /Zoneminder_on_reComputer 
+slug: /zoneminder_on_recomputer 
 last_update:
   date: 09/05/2025
   author: Jiahao
