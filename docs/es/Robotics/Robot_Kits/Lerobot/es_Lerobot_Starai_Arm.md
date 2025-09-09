@@ -1,5 +1,5 @@
 ---
-description: Este wiki proporciona el tutorial de depuración para el Brazo Robótico StarAI y realiza la recolección de datos y entrenamiento dentro del marco de trabajo Lerobot.
+description: Este wiki proporciona el tutorial de depuración para el Brazo Robótico StarAI y realiza la recolección de datos y entrenamiento dentro del framework Lerobot.
 title: Comenzando con el Brazo Robótico StarAI con LeRobot
 keywords:
 - Lerobot
@@ -15,67 +15,71 @@ last_update:
 
 # Comenzando con el Brazo Robótico StarAI con LeRobot
 
-:::tip
- [LeRobot](https://github.com/huggingface/lerobot/tree/main) está comprometido a proporcionar modelos, conjuntos de datos y herramientas para robótica del mundo real en PyTorch. Su objetivo es reducir la barrera de entrada de la robótica, permitiendo que todos contribuyan y se beneficien del intercambio de conjuntos de datos y modelos preentrenados. LeRobot integra metodologías de vanguardia validadas para aplicaciones del mundo real, centrándose en el aprendizaje por imitación. Ha proporcionado un conjunto de modelos preentrenados, conjuntos de datos con demostraciones recopiladas por humanos y entornos de simulación, permitiendo a los usuarios comenzar sin la necesidad de ensamblar robots. En las próximas semanas, la intención es aumentar el soporte para robótica del mundo real en los robots más rentables y competentes actualmente accesibles.
-:::
-
-## Introducción del Producto
-
-1.  **Código Abierto y Fácil para Desarrollo Secundario**
-    Esta serie de servomotores, proporcionada por [Fashion Robotics](https://fashionrobo.com/), ofrece una solución de brazo robótico de código abierto y fácilmente personalizable de 6+1 grados de libertad.
-
-2.  **Soporte de Integración con la Plataforma LeRobot**
-    Está específicamente diseñado para integración con la [plataforma LeRobot](https://github.com/huggingface/lerobot). Esta plataforma proporciona modelos PyTorch, conjuntos de datos y herramientas para aprendizaje por imitación en tareas de robótica del mundo real, incluyendo recolección de datos, simulación, entrenamiento y despliegue.
-
-3.  **Abundantes Recursos de Aprendizaje**
-    Ofrecemos recursos de aprendizaje de código abierto integrales, incluyendo configuración de entorno, guías de instalación y depuración, y ejemplos de tareas de agarre personalizadas para ayudar a los usuarios a comenzar rápidamente y desarrollar aplicaciones robóticas.
-
-4.  **Compatibilidad con Plataforma Nvidia**
-    El despliegue es compatible a través de la plataforma reComputer Mini J4012 Orin NX 16GB.
-
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/IJKTeBYAG7k?si=iS-jqT27fDjeI6yX" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+| **Seguidor Viola** | **Líder Violin** | **Seguidor Cello** |
+|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/viola.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/violin.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/cello.png) |
+
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/Fashionstar-Star-Arm-Viola-Violin-p-6497.html">
+<a class="get_one_now_item" href="https://www.seeedstudio.com/Fashionstar-Star-Arm-Viola-Violin-p-6497.html" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> ¡Consigue Uno Ahora! 🖱️</font></span></strong>
 </a></div>
 
+## Introducción del Producto
 
-## Características Clave
+1.  **Código Abierto y Fácil para Desarrollo Secundario**
+    Esta serie de servomotores, proporcionada por [Fashion Star Robotics](https://fashionrobo.com/), ofrece una solución de brazo robótico de código abierto y fácilmente personalizable de 6+1 grados de libertad.
 
-- Listo para Usar -- Sin Ensamblaje Requerido. Solo Desempaca y Sumérgete en el Mundo de la IA.
-- 6+1 Grados de Libertad y un Alcance de 470mm -- Construido para Versatilidad y Precisión.
-- Alimentado por Servos de Bus Sin Escobillas Duales -- Suave, Silencioso y Fuerte con hasta 300g de Carga Útil.
-- Pinza Paralela con Apertura Máxima de 66mm -- Puntas de Dedos Modulares para Flexibilidad de Reemplazo Rápido.
-- Tecnología Exclusiva de Bloqueo Flotante -- Congela Instantáneamente el Brazo Líder en Cualquier Posición con una Sola Presión.
+2. **Sistemas de Doble Brazo con Varias Cargas Útiles** 
+    El Violin sirve como el brazo robótico líder. Cuando está al 70% de su alcance del brazo, el brazo seguidor Viola tiene una carga útil operativa de 300g, mientras que el brazo seguidor Cello tiene una carga útil operativa de 750g.
+
+3. **Compatible con ROS2, Moveit2 e Isaac Sim**
+    Soporta ROS2 para publicar y suscribirse a temas de datos del brazo robótico y controlar el brazo robótico, y también soporta MoveIt2 para cálculo de cinemática inversa, así como simulación en Isaac Sim.
+
+4.  **Soporte de Integración con la Plataforma LeRobot**
+    Está específicamente diseñado para integración con la [plataforma LeRobot](https://github.com/huggingface/lerobot). Esta plataforma proporciona modelos PyTorch, conjuntos de datos y herramientas para aprendizaje por imitación en tareas robóticas del mundo real, incluyendo recolección de datos, simulación, entrenamiento y despliegue.
+
+5. **SDK de Código Abierto**
+     Soporta desarrollo de SDK en Python y C++
+
+6. **Botón de Flotación**
+    Simula compensación de gravedad, permitiendo que el brazo robótico flote en cualquier posición mediante un botón.
+
+7. **Efector Final Modular** 
+    Permite reemplazo DIY rápido.
+
+8.  **Abundantes Recursos de Aprendizaje**
+    Ofrecemos recursos de aprendizaje de código abierto integrales, incluyendo configuración de entorno, guías de instalación y depuración, y ejemplos de tareas de agarre personalizadas para ayudar a los usuarios a comenzar rápidamente y desarrollar aplicaciones robóticas.
+
+9.  **Compatibilidad con Plataforma Nvidia**
+    El despliegue es compatible a través de la plataforma Nvidia Jetson.
+
+
 
 ## Especificaciones
 
-  <div align="center">
-      <img width={800}
-      src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Specifications.png" />
-  </div>
 
-| Elemento             | Brazo Seguidor \| Viola                           | Brazo Líder \|Violin                              |
-| -------------------- | ------------------------------------------------- | ------------------------------------------------- |
-| Grados de Libertad   | 6                                                 | 6+1                                               |
-| Alcance              | 470mm                                             | 470mm                                             |
-| Envergadura          | 940mm                                             | 940mm                                             |
-| Repetibilidad        | 2mm                                               | -                                                 |
-| Carga Útil de Trabajo| 300g (con 70% de Alcance)                        | -                                                 |
-| Servos               | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 |
-| Kit de Pinza Paralela| ✅                                                 | -                                                 |
-| Rotación de Muñeca   | Sí                                                | Sí                                                |
-| Mantener en Cualquier Posición | Sí                                      | Sí (con botón de mango)                           |
-| Montaje de Cámara en Muñeca | ✅                                          | -                                                 |
-| Funciona con LeRobot | ✅                                                 | ✅                                                 |
-| Funciona con ROS 2   | ✅                                                 | /                                                 |
-| Funciona con MoveIt  | ✅                                                 | /                                                 |
-| Funciona con Gazebo  | ✅                                                 | /                                                 |
-| Hub de Comunicación  | UC-01                                             | UC-01                                             |
-| Fuente de Alimentación | 12v/120w                                        | 12v/120w                                          |
+| Elemento                 | Brazo Seguidor \| Viola                             | Brazo Líder \|Violin                                |    Brazo Seguidor \|Cello    |
+| -------------------- | ------------------------------------------------- | ------------------------------------------------- |-----------------|
+| Grados de Libertad   | 6+1                                               | 6+1                                               | 6+1             |
+| Alcance                | 470mm                                             | 470mm                                             | 670mm |
+| Envergadura                 | 940mm                                             | 940mm                                             | 1340mm |
+| Repetibilidad        | 2mm                                               | -                                                 | 1mm  |
+| Carga Útil de Trabajo      | 300g (con 70% de Alcance)                            | -                                                 |  750g (con 70% de Alcance)   |
+| Servos               | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 |RX18-U100H-M x3<br/> RX8-U50H-M x3<br/> RX8-U51H-M x1|
+| Kit de Pinza Paralela  | ✅                                                 | -                                                 | ✅   |
+| Rotación de Muñeca         | Sí                                               | Sí                                               | Sí |
+| Mantener en Cualquier Posición | Sí                                               | Sí (con botón de mango)                          |  Sí|
+| Montaje de Cámara en Muñeca   |Proporciona archivos de referencia de impresión 3D | | Proporciona archivos de referencia de impresión 3D
+| Funciona con LeRobot   | ✅                                                 | ✅                                                 | ✅|
+| Funciona con ROS 2     | ✅                                                 | ✅                                                | ✅|
+| Funciona con MoveIt2    | ✅                                                 | ✅                                               |✅ |
+| Funciona con Gazebo    | ✅                                                 |✅                                              |✅ |
+| Hub de Comunicación    | UC-01                                             | UC-01                                             |	UC-01 |
+| Fuente de Alimentación         | 12V10A/120w XT30                                   | 12V10A/120w XT30                                 |12V25A/300w XT60  |
 
 Para más información sobre servomotores, por favor visita el siguiente enlace.
 
@@ -84,6 +88,8 @@ Para más información sobre servomotores, por favor visita el siguiente enlace.
 [RX18-U100H-M](https://fashionrobo.com/actuator-u100/22853/)
 
 [RX8-U50H-M](https://fashionrobo.com/actuator-u50/136/)
+
+
 
 
 ## Configuración inicial del entorno
@@ -149,7 +155,7 @@ Esto usualmente instala ffmpeg 7.X para tu plataforma compilado con el codificad
 ```bash
 conda install ffmpeg=7.1.1 -c conda-forge
 ```
-- [Solo en Linux] Instalar dependencias de construcción de ffmpeg y compilar ffmpeg desde el código fuente con libsvtav1, y asegúrate de usar el binario ffmpeg correspondiente a tu instalación con which ffmpeg.
+- [Solo en Linux] Instalar dependencias de compilación de ffmpeg y compilar ffmpeg desde el código fuente con libsvtav1, y asegúrate de usar el binario ffmpeg correspondiente a tu instalación con which ffmpeg.
 
 :::
 
@@ -188,7 +194,7 @@ Si estás usando un dispositivo Jetson, instala Pytorch y Torchvision según [es
 
 
 
-### Desempacando el Brazo Robótico
+### Desempaquetado del Brazo Robótico 
 
 El Kit de Brazo Robótico Incluye
 
@@ -198,7 +204,7 @@ El Kit de Brazo Robótico Incluye
 - Pinza paralela
 - Herramientas de instalación (tornillos, llave hexagonal)
 - Fuente de alimentación ×2
-- Abrazadera en C ×2
+- Abrazadera C ×2
 - Placa de depuración UC-01 ×2
 
 Interruptor de la placa de depuración UC-01：
@@ -223,7 +229,7 @@ Recuerda quitar el usb, de lo contrario la interfaz no será detectada.
 Por ejemplo：
 
 1. Salida de ejemplo al identificar el puerto del brazo líder (ej., `/dev/tty.usbmodem575E0031751` en Mac, o posiblemente `/dev/ttyACM0` en Linux):
-2. Salida de ejemplo al identificar el puerto del brazo seguidor (ej., `/dev/tty.usbmodem575E0032081` en Mac, o posiblemente `/dev/ttyACM1` en Linux):
+2. Salida de ejemplo al identificar el puerto del brazo seguidor (ej., `/dev/tty.usbmodem575E0032081`en Mac, o posiblemente `/dev/ttyACM1` en Linux):
 Es posible que necesites dar acceso a los puertos USB ejecutando:
 
 ```bash
@@ -584,7 +590,7 @@ Parameter Explanations
 
 :::tip
 
-- **De nuevo**: "Si quieres guardar los datos localmente (`--control.push_to_hub=false`), reemplaza `--control.repo_id=${HF_USER}/starai` con un nombre de carpeta local personalizado, como `--control.repo_id=starai/starai`. Entonces se almacenará en el directorio home del sistema en `~/.cache/huggingface/lerobot`."
+- **Nuevamente**: "Si quieres guardar los datos localmente (`--control.push_to_hub=false`), reemplaza `--control.repo_id=${HF_USER}/starai` con un nombre de carpeta local personalizado, como `--control.repo_id=starai/starai`. Entonces se almacenará en el directorio home del sistema en `~/.cache/huggingface/lerobot`."
 
 - Nota: Puedes reanudar la grabación agregando `--control.resume=true`. También si aún no has subido tu conjunto de datos, agrega `--control.local_files_only=true`. Necesitarás eliminar manualmente el directorio del conjunto de datos si quieres empezar a grabar desde cero.
 
@@ -602,7 +608,7 @@ Parameter Explanations
 
 - Evita agregar demasiada variación muy rápidamente, ya que puede obstaculizar tus resultados.
 
-- En Linux, si las teclas de flecha izquierda y derecha y la tecla escape no tienen efecto durante la grabación de datos, asegúrate de haber configurado la variable de entorno $DISPLAY. Ver [limitaciones de pynput](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
+- En Linux, si las teclas de flecha izquierda y derecha y la tecla escape no tienen ningún efecto durante la grabación de datos, asegúrate de haber configurado la variable de entorno $DISPLAY. Ver [limitaciones de pynput](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
 
 :::
 
