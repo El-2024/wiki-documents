@@ -1,5 +1,5 @@
 ---
-description: Este wiki proporciona el tutorial de depuración para el Brazo Robótico StarAI y realiza la recolección de datos y entrenamiento dentro del framework Lerobot.
+description: Este wiki proporciona el tutorial de depuración para el Brazo Robótico StarAI y realiza la recolección de datos y entrenamiento dentro del marco de trabajo Lerobot.
 title: Comenzando con el Brazo Robótico StarAI con LeRobot
 keywords:
 - Lerobot
@@ -16,7 +16,7 @@ last_update:
 # Comenzando con el Brazo Robótico StarAI con LeRobot
 
 :::tip
- [LeRobot](https://github.com/huggingface/lerobot/tree/main) se compromete a proporcionar modelos, conjuntos de datos y herramientas para robótica del mundo real en PyTorch. Su objetivo es reducir la barrera de entrada de la robótica, permitiendo que todos contribuyan y se beneficien del intercambio de conjuntos de datos y modelos preentrenados. LeRobot integra metodologías de vanguardia validadas para aplicaciones del mundo real, centrándose en el aprendizaje por imitación. Ha proporcionado un conjunto de modelos preentrenados, conjuntos de datos con demostraciones recopiladas por humanos y entornos de simulación, permitiendo a los usuarios comenzar sin la necesidad de ensamblar robots. En las próximas semanas, la intención es aumentar el soporte para robótica del mundo real en los robots más rentables y competentes actualmente accesibles.
+ [LeRobot](https://github.com/huggingface/lerobot/tree/main) está comprometido a proporcionar modelos, conjuntos de datos y herramientas para robótica del mundo real en PyTorch. Su objetivo es reducir la barrera de entrada de la robótica, permitiendo que todos contribuyan y se beneficien del intercambio de conjuntos de datos y modelos preentrenados. LeRobot integra metodologías de vanguardia validadas para aplicaciones del mundo real, centrándose en el aprendizaje por imitación. Ha proporcionado un conjunto de modelos preentrenados, conjuntos de datos con demostraciones recopiladas por humanos y entornos de simulación, permitiendo a los usuarios comenzar sin la necesidad de ensamblar robots. En las próximas semanas, la intención es aumentar el soporte para robótica del mundo real en los robots más rentables y competentes actualmente accesibles.
 :::
 
 ## Introducción del Producto
@@ -25,17 +25,23 @@ last_update:
     Esta serie de servomotores, proporcionada por [Fashion Robotics](https://fashionrobo.com/), ofrece una solución de brazo robótico de código abierto y fácilmente personalizable de 6+1 grados de libertad.
 
 2.  **Soporte de Integración con la Plataforma LeRobot**
-    Está específicamente diseñado para la integración con la [plataforma LeRobot](https://github.com/huggingface/lerobot). Esta plataforma proporciona modelos PyTorch, conjuntos de datos y herramientas para el aprendizaje por imitación en tareas de robótica del mundo real, incluyendo recolección de datos, simulación, entrenamiento y despliegue.
+    Está específicamente diseñado para integración con la [plataforma LeRobot](https://github.com/huggingface/lerobot). Esta plataforma proporciona modelos PyTorch, conjuntos de datos y herramientas para aprendizaje por imitación en tareas de robótica del mundo real, incluyendo recolección de datos, simulación, entrenamiento y despliegue.
 
 3.  **Abundantes Recursos de Aprendizaje**
-    Ofrecemos recursos de aprendizaje de código abierto integrales, incluyendo configuración del entorno, guías de instalación y depuración, y ejemplos de tareas de agarre personalizadas para ayudar a los usuarios a comenzar rápidamente y desarrollar aplicaciones robóticas.
+    Ofrecemos recursos de aprendizaje de código abierto integrales, incluyendo configuración de entorno, guías de instalación y depuración, y ejemplos de tareas de agarre personalizadas para ayudar a los usuarios a comenzar rápidamente y desarrollar aplicaciones robóticas.
 
 4.  **Compatibilidad con Plataforma Nvidia**
     El despliegue es compatible a través de la plataforma reComputer Mini J4012 Orin NX 16GB.
 
 <div class="video-container">
-<iframe width="900" height="600" src="https://www.youtube.com/embed/pAKqP_vReNY?si=AaZQ_DBQyY2p0YMf" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="600" src="https://www.youtube.com/embed/IJKTeBYAG7k?si=iS-jqT27fDjeI6yX" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+<a class="get_one_now_item" href="https://www.seeedstudio.com/Fashionstar-Star-Arm-Viola-Violin-p-6497.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> ¡Consigue Uno Ahora! 🖱️</font></span></strong>
+</a></div>
+
 
 ## Características Clave
 
@@ -52,7 +58,7 @@ last_update:
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Specifications.png" />
   </div>
 
-| Elemento             | Brazo Seguidor \| Viola                          | Brazo Líder \|Violin                              |
+| Elemento             | Brazo Seguidor \| Viola                           | Brazo Líder \|Violin                              |
 | -------------------- | ------------------------------------------------- | ------------------------------------------------- |
 | Grados de Libertad   | 6                                                 | 6+1                                               |
 | Alcance              | 470mm                                             | 470mm                                             |
@@ -71,7 +77,7 @@ last_update:
 | Hub de Comunicación  | UC-01                                             | UC-01                                             |
 | Fuente de Alimentación | 12v/120w                                        | 12v/120w                                          |
 
-Para más información sobre los servomotores, visite el siguiente enlace.
+Para más información sobre servomotores, por favor visita el siguiente enlace.
 
 [RA8-U25H-M](https://fashionrobo.com/actuator-u25/23396/)
 
@@ -97,7 +103,7 @@ Para más información sobre los servomotores, visite el siguiente enlace.
 
 ### Instalar LeRobot
 
-Los entornos como pytorch y torchvision necesitan ser instalados basándose en su CUDA.
+Entornos como pytorch y torchvision necesitan ser instalados basándose en tu CUDA.
 1. Instalar Miniconda:
 Para Jetson:
 
@@ -131,19 +137,19 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 git clone https://github.com/servodevelop/lerobot-starai.git
 ```
 
-4. Cuando use miniconda, instale ffmpeg en su entorno:
+4. Cuando uses miniconda, instala ffmpeg en tu entorno:
 
 ```bash
 conda install ffmpeg -c conda-forge
 ```
 
 :::tip
-Esto usualmente instala ffmpeg 7.X para su plataforma compilado con el codificador libsvtav1. Si libsvtav1 no es compatible (verifique los codificadores compatibles con ffmpeg -encoders), puede:
+Esto usualmente instala ffmpeg 7.X para tu plataforma compilado con el codificador libsvtav1. Si libsvtav1 no es compatible (verifica codificadores compatibles con ffmpeg -encoders), puedes:
 - [En cualquier plataforma] Instalar explícitamente ffmpeg 7.X usando:
 ```bash
 conda install ffmpeg=7.1.1 -c conda-forge
 ```
-- [Solo en Linux] Instalar dependencias de compilación de ffmpeg y compilar ffmpeg desde el código fuente con libsvtav1, y asegúrese de usar el binario ffmpeg correspondiente a su instalación con which ffmpeg.
+- [Solo en Linux] Instalar dependencias de construcción de ffmpeg y compilar ffmpeg desde el código fuente con libsvtav1, y asegúrate de usar el binario ffmpeg correspondiente a tu instalación con which ffmpeg.
 
 :::
 
@@ -154,7 +160,7 @@ cd ~/lerobot-starai && pip install -e ".[feetech]"
 ```
 
 
-Para dispositivos Jetson Jetpack (asegúrese de instalar [Pytorch-gpu y Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) desde el paso 5 antes de ejecutar este paso):
+Para dispositivos Jetson Jetpack (por favor asegúrate de instalar [Pytorch-gpu y Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) desde el paso 5 antes de ejecutar este paso):
 
 ```bash
 conda install -y -c conda-forge "opencv>=4.10.0.84"  # Install OpenCV and other dependencies through conda, this step is only for Jetson Jetpack 6.0+
@@ -168,16 +174,16 @@ pip3 install numpy==1.26.0  # This should match torchvision
 
 6. Verificar Pytorch y Torchvision
 
-Dado que instalar el entorno lerobot a través de pip desinstalará el Pytorch y Torchvision originales e instalará las versiones CPU de Pytorch y Torchvision, necesita realizar una verificación en Python.
+Dado que instalar el entorno lerobot vía pip desinstalará el Pytorch y Torchvision originales e instalará las versiones CPU de Pytorch y Torchvision, necesitas realizar una verificación en Python.
 
 ```python
 import torch
 print(torch.cuda.is_available())
 ```
 
-Si el resultado impreso es False, necesita reinstalar Pytorch y Torchvision según el [tutorial del sitio web oficial](https://pytorch.org/index.html).
+Si el resultado impreso es False, necesitas reinstalar Pytorch y Torchvision según el [tutorial del sitio web oficial](https://pytorch.org/index.html).
 
-Si está usando un dispositivo Jetson, instale Pytorch y Torchvision según [este tutorial](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson).
+Si estás usando un dispositivo Jetson, instala Pytorch y Torchvision según [este tutorial](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson).
 
 
 
@@ -204,22 +210,21 @@ Interruptor de la placa de depuración UC-01：
 
 ### Configurar Puerto del Brazo
 
-Ejecute el siguiente comando en la terminal para encontrar puertos USB asociados a sus brazos：
+Ejecuta el siguiente comando en la terminal para encontrar puertos USB asociados a tus brazos：
 
 ```bash
 python lerobot/scripts/find_motors_bus_port.py
 ```
 
 :::tip
-Recuerde quitar el usb, de lo contrario la interfaz no será detectada.
+Recuerda quitar el usb, de lo contrario la interfaz no será detectada.
 :::
 
 Por ejemplo：
 
 1. Salida de ejemplo al identificar el puerto del brazo líder (ej., `/dev/tty.usbmodem575E0031751` en Mac, o posiblemente `/dev/ttyACM0` en Linux):
-2. Salida de ejemplo al identificar el puerto del brazo seguidor (ej., `/dev/tty.usbmodem575E0032081`en Mac, o posiblemente `/dev/ttyACM1` en Linux):
-
-Podría necesitar dar acceso a los puertos USB ejecutando:
+2. Salida de ejemplo al identificar el puerto del brazo seguidor (ej., `/dev/tty.usbmodem575E0032081` en Mac, o posiblemente `/dev/ttyACM1` en Linux):
+Es posible que necesites dar acceso a los puertos USB ejecutando:
 
 ```bash
 sudo chmod 666 /dev/ttyACM0
@@ -228,9 +233,9 @@ sudo chmod 666 /dev/ttyACM1
 
 :::tip
 
-Si el puerto serie ttyUSB0 no puede ser identificado, pruebe las siguientes soluciones:
+Si no se puede identificar el puerto serie ttyUSB0, prueba las siguientes soluciones:
 
-Listar todos los puertos USB.
+Lista todos los puertos USB.
 
 ```sh
 lsusb
@@ -241,7 +246,7 @@ lsusb
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Calibrate1.png" />
 </div>
 
-Una vez identificado, verifique la información del ttyusb.
+Una vez identificado, verifica la información del ttyusb.
 
 ```sh
 sudo dmesg | grep ttyUSB
@@ -249,7 +254,6 @@ sudo dmesg | grep ttyUSB
 
 <div align="center">
     <img width={800}
-
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Calibrate2.png" />
 </div>
 
@@ -511,8 +515,7 @@ pip3 install rerun-sdk==0.23
 
 Una vez que estés familiarizado con la teleoperación, puedes grabar tu primer conjunto de datos.
 
-Si quieres usar las funciones del hub de Hugging Face para subir tu conjunto de datos y no lo has hecho previamente, asegúrate de haber iniciado sesión usando un token de acceso de escritura, que puede ser generado desde la [configuración de Hugging Face](https://huggingface.co/settings/tokens):
-
+Si quieres usar las funciones del hub de Hugging Face para subir tu conjunto de datos y no lo has hecho previamente, asegúrate de haber iniciado sesión usando un token de acceso de escritura, que se puede generar desde la [configuración de Hugging Face](https://huggingface.co/settings/tokens):
 ```bash
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
@@ -544,11 +547,10 @@ python lerobot/scripts/control_robot.py \
   --control.num_episodes=20 \
   --control.display_data=true \
   --control.push_to_hub=ture
-
 ```
 
-Don't upload to Hub:
-**(Recommended, the following tutorials will mainly focus on local data)** 
+No subir al Hub:
+**(Recomendado, los siguientes tutoriales se enfocarán principalmente en datos locales)** 
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -556,69 +558,69 @@ python lerobot/scripts/control_robot.py \
   --control.type=record \
   --control.fps=30 \
   --control.single_task="Grasp a lego block and put it in the bin." \
-  --control.repo_id=starai/starai \#Asigna un nombre al archivo de almacenamiento local tú mismo
+  --control.repo_id=starai/starai \#Assign a name to the local storage file yourself
   --control.tags='["starai","tutorial"]' \
   --control.warmup_time_s=5 \
   --control.episode_time_s=30 \
   --control.reset_time_s=30 \
   --control.num_episodes=20 \
   --control.display_data=true \
-  --control.push_to_hub=false #establece push_to_hub en false
+  --control.push_to_hub=false #set push_to_hub to false
 ```
 
-You will see data similar to the following:
+Verás datos similares a los siguientes:
 ```bash
 INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5hz) dtWfoll: 0.25 (3963.7hz) dtRfoll: 6.22 (160.7hz) dtRlaptop: 32.57 (30.7hz) dtRphone: 33.84 (29.5hz)
 ```
 
 ```markdown
-Explicaciones de Parámetros
-- wormup-time-s: Se refiere al tiempo de inicialización.
-- episode-time-s: Representa el tiempo para recopilar datos cada vez.
-- reset-time-s: Es el tiempo de preparación entre cada recopilación de datos.
-- num-episodes: Indica cuántos grupos de datos se espera recopilar.
-- push-to-hub: Determina si subir los datos al HuggingFace Hub.
+Parameter Explanations
+- wormup-time-s: It refers to the initialization time.
+- episode-time-s: It represents the time for collecting data each time.
+- reset-time-s: It is the preparation time between each data collection.
+- num-episodes: It indicates how many groups of data are expected to be collected.
+- push-to-hub: It determines whether to upload the data to the HuggingFace Hub. 
 ```
 
 :::tip
 
-- **Again**: "If you want to save the data locally (`--control.push_to_hub=false`), replace `--control.repo_id=${HF_USER}/starai` with a custom local folder name, such as `--control.repo_id=starai/starai`. It will then be stored in the system's home directory at `~/.cache/huggingface/lerobot`."
+- **De nuevo**: "Si quieres guardar los datos localmente (`--control.push_to_hub=false`), reemplaza `--control.repo_id=${HF_USER}/starai` con un nombre de carpeta local personalizado, como `--control.repo_id=starai/starai`. Entonces se almacenará en el directorio home del sistema en `~/.cache/huggingface/lerobot`."
 
-- Note: You can resume recording by adding `--control.resume=true`. Also if you didn't push your dataset yet, add `--control.local_files_only=true`. You will need to manually delete the dataset directory if you want to start recording from scratch.
+- Nota: Puedes reanudar la grabación agregando `--control.resume=true`. También si aún no has subido tu conjunto de datos, agrega `--control.local_files_only=true`. Necesitarás eliminar manualmente el directorio del conjunto de datos si quieres empezar a grabar desde cero.
 
-- If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
+- Si subiste tu conjunto de datos al hub con `--control.push_to_hub=true`, puedes [visualizar tu conjunto de datos en línea](https://huggingface.co/spaces/lerobot/visualize_dataset) copiando y pegando tu repo id dado por:
 
-- Press right arrow → at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
+- Presiona la flecha derecha → en cualquier momento durante la grabación del episodio para detener temprano e ir al reinicio. Lo mismo durante el reinicio, para detener temprano e ir a la grabación del siguiente episodio.
 
-- Press left arrow ← at any time during episode recording or resetting to early stop, cancel the current episode, and re-record it.
+- Presiona la flecha izquierda ← en cualquier momento durante la grabación del episodio o reinicio para detener temprano, cancelar el episodio actual y volver a grabarlo.
 
-- Press escape ESC at any time during episode recording to end the session early and go straight to video encoding and dataset uploading.
+- Presiona escape ESC en cualquier momento durante la grabación del episodio para terminar la sesión temprano e ir directamente a la codificación de video y carga del conjunto de datos.
 
-- Once you're comfortable with data recording, you can create a larger dataset for training. A good starting task is grasping an object at different locations and placing it in a bin. We suggest recording at least 50 episodes, with 10 episodes per location. Keep the cameras fixed and maintain consistent grasping behavior throughout the recordings. Also make sure the object you are manipulating is visible on the camera's. A good rule of thumb is you should be able to do the task yourself by only looking at the camera images.
+- Una vez que te sientas cómodo con la grabación de datos, puedes crear un conjunto de datos más grande para entrenamiento. Una buena tarea inicial es agarrar un objeto en diferentes ubicaciones y colocarlo en un contenedor. Sugerimos grabar al menos 50 episodios, con 10 episodios por ubicación. Mantén las cámaras fijas y mantén un comportamiento de agarre consistente durante las grabaciones. También asegúrate de que el objeto que estás manipulando sea visible en las cámaras. Una buena regla general es que deberías poder hacer la tarea tú mismo solo mirando las imágenes de la cámara.
 
-- In the following sections, you’ll train your neural network. After achieving reliable grasping performance, you can start introducing more variations during data collection, such as additional grasp locations, different grasping techniques, and altering camera positions.
+- En las siguientes secciones, entrenarás tu red neuronal. Después de lograr un rendimiento de agarre confiable, puedes comenzar a introducir más variaciones durante la recolección de datos, como ubicaciones de agarre adicionales, diferentes técnicas de agarre y alterar las posiciones de la cámara.
 
-- Avoid adding too much variation too quickly, as it may hinder your results.
+- Evita agregar demasiada variación muy rápidamente, ya que puede obstaculizar tus resultados.
 
-- On Linux, if the left and right arrow keys and escape key don't have any effect during data recording, make sure you've set the $DISPLAY environment variable. See [pynput limitations](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
+- En Linux, si las teclas de flecha izquierda y derecha y la tecla escape no tienen efecto durante la grabación de datos, asegúrate de haber configurado la variable de entorno $DISPLAY. Ver [limitaciones de pynput](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
 
 :::
 
 
-## Visualize the dataset
+## Visualizar el conjunto de datos
 
-The dataset is saved locally. You can visualize it locally with:
+El conjunto de datos se guarda localmente. Puedes visualizarlo localmente con:
 
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id starai/starai \
 ```
 
-Here, `starai/starai` is the custom `repo_id` name defined when collecting data.
+Aquí, `starai/starai` es el nombre personalizado de `repo_id` definido al recopilar datos.
 
-## Replay an episode
+## Reproducir un episodio
 
-Now try to replay the first episode on your robot:
+Ahora intenta reproducir el primer episodio en tu robot:
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -626,17 +628,17 @@ python lerobot/scripts/control_robot.py \
   --control.type=replay \
   --control.fps=30 \
   --control.repo_id=starai/starai \
-  --control.episode=0 \# 0 es el primer episodio
+  --control.episode=0 \# 0 is the first episode
   --control.local_files_only=true
 ```
 
 :::tip
-The parameter `--control.local_files_only=true` is used to instruct the program to utilize local datasets rather than those from the Hub.
+El parámetro `--control.local_files_only=true` se usa para instruir al programa a utilizar conjuntos de datos locales en lugar de los del Hub.
 :::
 
-## Train a policy
+## Entrenar una política
 
-To train a policy to control your robot, use the `python lerobot/scripts/train.py` script. A few arguments are required. Here is an example command:
+Para entrenar una política para controlar tu robot, usa el script `python lerobot/scripts/train.py`. Se requieren algunos argumentos. Aquí hay un comando de ejemplo:
 
 ```bash
 python lerobot/scripts/train.py \
@@ -648,16 +650,16 @@ python lerobot/scripts/train.py \
   --wandb.enable=false
 ```
 
-Let's explain it:
+Vamos a explicarlo:
 
-1. We use our local dataset as argument `--dataset.repo_id=starai/starai`.
-2. We provide the policy using `policy.type=act`, which will load the configuration from [`lerobot-starai/lerobot/common/policies/act/configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/common/policies/act/configuration_act.py). Currently, ACT has been tested, but you can also try other policies such as diffusion, pi0, pi0fast, tdmpc, and vqbet.
-3. We provided policy.device=cuda since we are training on a Nvidia GPU, but you could use policy.device=mps to train on Apple silicon.
-4. We provided `wandb.enable=true` to use [Weights and Biases](https://docs.wandb.ai/quickstart) for visualizing training plots. This is optional but if you use it, make sure you are logged in by running `wandb login`.
+1. Usamos nuestro conjunto de datos local como argumento `--dataset.repo_id=starai/starai`.
+2. Proporcionamos la política usando `policy.type=act`, que cargará la configuración desde [`lerobot-starai/lerobot/common/policies/act/configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/common/policies/act/configuration_act.py). Actualmente, ACT ha sido probado, pero también puedes probar otras políticas como diffusion, pi0, pi0fast, tdmpc y vqbet.
+3. Proporcionamos policy.device=cuda ya que estamos entrenando en una GPU Nvidia, pero podrías usar policy.device=mps para entrenar en silicio de Apple.
+4. Proporcionamos `wandb.enable=true` para usar [Weights and Biases](https://docs.wandb.ai/quickstart) para visualizar gráficos de entrenamiento. Esto es opcional pero si lo usas, asegúrate de estar conectado ejecutando `wandb login`.
 
-If you want to train on a local dataset, make sure the `repo_id` matches the one used during data collection. Training should take several hours. You will find checkpoints in`outputs/train/act_starai/checkpoints` .
+Si quieres entrenar en un conjunto de datos local, asegúrate de que el `repo_id` coincida con el usado durante la recolección de datos. El entrenamiento debería tomar varias horas. Encontrarás checkpoints en `outputs/train/act_starai/checkpoints`.
 
-To resume training from a checkpoint, below is an example command to resume from last checkpoint of the `act_starai` :
+Para reanudar el entrenamiento desde un checkpoint, a continuación hay un comando de ejemplo para reanudar desde el último checkpoint del `act_starai`:
 
 ```bash
 python lerobot/scripts/train.py \
@@ -665,9 +667,9 @@ python lerobot/scripts/train.py \
   --resume=true
 ```
 
-## Evaluate your policy
+## Evaluar tu política
 
-You can use the `record` function from [`lerobot/scripts/control_robot.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/scripts/control_robot.py) , but with a policy checkpoint as input. For instance, run this command to record 10 evaluation episodes:
+Puedes usar la función `record` de [`lerobot/scripts/control_robot.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/scripts/control_robot.py), pero con un checkpoint de política como entrada. Por ejemplo, ejecuta este comando para grabar 10 episodios de evaluación:
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -679,47 +681,45 @@ python lerobot/scripts/control_robot.py \
   --control.tags='["tutorial"]' \
   --control.warmup_time_s=5 \
   --control.episode_time_s=30 \
-  --control.reset_time_s=0 \#Establece el tiempo de reinicio en 0 para omitir la fase de reinicio y asegurar operación continua.
+  --control.reset_time_s=0 \#Set the reset time to 0 to skip the reset phase and ensure continuous operation.
   --control.num_episodes=10 \
-  --control.push_to_hub=false \#Elige no subir al Hub
+  --control.push_to_hub=false \#Choose don't upload to Hub
   --control.policy.path=outputs/train/act_starai/checkpoints/last/pretrained_model
 ```
 
-As you can see, this is almost identical to the command previously used to record the training dataset. There are only two differences:
+Como puedes ver, esto es casi idéntico al comando usado previamente para grabar el conjunto de datos de entrenamiento. Solo hay dos diferencias:
 
-1. The `--control.policy.path` parameter has been added to indicate the path of your policy checkpoint (for example, `outputs/train/act_starai/checkpoints/last/pretrained_model`).
-2. The name of the evaluation dataset **must** start with `eval` to reflect that you are running inference (for example, `--control.repo_id=starai/eval_act_starai`). This operation will record videos and data specifically during evaluation and save them to `eval_act_starai`.
+1. Se ha agregado el parámetro `--control.policy.path` para indicar la ruta de tu checkpoint de política (por ejemplo, `outputs/train/act_starai/checkpoints/last/pretrained_model`).
+2. El nombre del conjunto de datos de evaluación **debe** comenzar con `eval` para reflejar que estás ejecutando inferencia (por ejemplo, `--control.repo_id=starai/eval_act_starai`). Esta operación grabará videos y datos específicamente durante la evaluación y los guardará en `eval_act_starai`.
 
 :::warning
-If an error occurs when you run the evaluation command for the second time, you need to delete the corresponding `eval_act_starai` file to ensure that there are no files with the same name under the directory `~/.cache/huggingface/lerobot/starai/`.
+Si ocurre un error cuando ejecutas el comando de evaluación por segunda vez, necesitas eliminar el archivo correspondiente `eval_act_starai` para asegurar que no haya archivos con el mismo nombre bajo el directorio `~/.cache/huggingface/lerobot/starai/`.
 :::
 
 :::tip
-If you upload your model checkpoint to the Hub, you can also use the model repository (for example, `--control.repo_id=${HF_USER}/eval_act_starai`), while setting `--control.push_to_hub=true`.
+Si subes tu checkpoint de modelo al Hub, también puedes usar el repositorio del modelo (por ejemplo, `--control.repo_id=${HF_USER}/eval_act_starai`), mientras configuras `--control.push_to_hub=true`.
 :::
 
 ## FAQ
 
-- If you are following this documentation/tutorial, please git clone the recommended GitHub repository `git clone https://github.com/servodevelop/lerobot-starai.git`.
+- Si estás siguiendo esta documentación/tutorial, por favor clona el repositorio de GitHub recomendado `git clone https://github.com/servodevelop/lerobot-starai.git`.
 
-- If you encounter the following error, you need to check whether the robotic arm connected to the corresponding port is powered on and whether the bus servos have any loose or disconnected cables.
+- Si encuentras el siguiente error, necesitas verificar si el brazo robótico conectado al puerto correspondiente está encendido y si los servos del bus tienen cables sueltos o desconectados.
   ```bash
   ConnectionError: Read failed due to comunication eror on port /dev/ttyACM0 for group key Present_Position_Shoulder_pan_Shoulder_lift_elbow_flex_wrist_flex_wrist_roll_griper: [TxRxResult] There is no status packet!
   ```
 
-- If you have repaired or replaced any parts of the robotic arm, please completely delete the `~/lerobot/.cache/huggingface/calibration/so100` folder and recalibrate the robotic arm.
+- Si has reparado o reemplazado cualquier parte del brazo robótico, por favor elimina completamente la carpeta `~/lerobot/.cache/huggingface/calibration/so100` y recalibra el brazo robótico.
+- Si el control remoto funciona normalmente pero el control remoto con cámara no logra mostrar la interfaz de imagen, puedes encontrar [aquí](https://github.com/huggingface/lerobot/pull/757/files)
 
-- If the remote control functions normally but the remote control with Camera fails to display the image interface, you can find [here](https://github.com/huggingface/lerobot/pull/757/files)
-
-- If you encounter libtiff issues during dataset remote operation, please update the libtiff version.
+- Si encuentras problemas con libtiff durante la operación remota del conjunto de datos, por favor actualiza la versión de libtiff.
   ```bash
-  conda install libtiff==4.5.0  #para Ubuntu 22.04 es libtiff==4.5.1
+  conda install libtiff==4.5.0  #for Ubuntu 22.04 is libtiff==4.5.1
   ```
 
-- After executing the [Lerobot Installation](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot), the GPU version of pytorch may be automatically uninstalled, so you need to manually install torch-gpu.
+- Después de ejecutar la [Instalación de Lerobot](https://wiki.seeedstudio.com/es/lerobot_so100m/#install-lerobot), la versión GPU de pytorch puede desinstalarse automáticamente, por lo que necesitas instalar manualmente torch-gpu.
 
-- For Jetson, please first install [Pytorch and Torchvsion](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) before executing `conda install -y -c conda-forge ffmpeg`, otherwise, when compiling torchvision, an ffmpeg version mismatch issue may occur.
-
+- Para Jetson, por favor instala primero [Pytorch y Torchvsion](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) antes de ejecutar `conda install -y -c conda-forge ffmpeg`, de lo contrario, al compilar torchvision, puede ocurrir un problema de incompatibilidad de versión de ffmpeg.
 
 - Si ocurre el siguiente problema, significa que tu computadora no soporta este formato de códec de video. Necesitas modificar la línea 134 en el archivo `lerobot-starai/lerobot/common/datasets/video_utils.py` cambiando el valor de `vcodec: str = "libsvtav1"` a `libx264` o `libopenh264`. Diferentes computadoras pueden requerir diferentes parámetros, así que puedes probar varias opciones. [Issues 705](https://github.com/huggingface/lerobot/issues/705)
 
@@ -735,9 +735,9 @@ If you upload your model checkpoint to the Hub, you can also use the model repos
 
 - Entrenar 50 conjuntos de datos ACT en una laptop 3060 de 8G toma aproximadamente 6 horas, mientras que en una computadora 4090 o A100, entrenar 50 conjuntos de datos toma alrededor de 2–3 horas.
 
-- Durante la recolección de datos, asegúrate de que la posición de la cámara, el ángulo y la iluminación ambiental permanezcan estables, y minimiza capturar fondos inestables excesivos y peatones; de lo contrario, cambios ambientales significativos durante el despliegue pueden causar que el brazo robótico falle al agarrar correctamente.
+- Durante la recolección de datos, asegúrate de que la posición, ángulo e iluminación ambiental de la cámara permanezcan estables, y minimiza capturar fondos inestables excesivos y peatones; de lo contrario, cambios ambientales significativos durante el despliegue pueden causar que el brazo robótico falle al agarrar correctamente.
 
-- Asegúrate de que el parámetro `num-episodes` en el comando de recolección de datos esté configurado para recolectar datos suficientes, y no hagas pausa manual a la mitad. Esto es porque la media y varianza de los datos se calculan solo después de que la recolección de datos esté completa, lo cual es necesario para el entrenamiento.
+- Asegúrate de que el parámetro `num-episodes` en el comando de recolección de datos esté configurado para recolectar datos suficientes, y no hagas pausa manual a mitad de camino. Esto es porque la media y varianza de los datos se calculan solo después de que la recolección de datos esté completa, lo cual es necesario para el entrenamiento.
 
 - Si el programa indica que no puede leer los datos de imagen de la cámara USB, por favor asegúrate de que la cámara USB no esté conectada a un hub. La cámara USB debe estar conectada directamente al dispositivo para asegurar una velocidad de transmisión de imagen rápida.
 
@@ -748,7 +748,7 @@ pip3 install rerun-sdk==0.23
 ```
 
 :::tip
-Si encuentras problemas de software o problemas de dependencias del entorno que no se pueden resolver, además de revisar la sección de FAQ al final de este tutorial, por favor reporta el problema oportunamente a la [plataforma LeRobot](https://github.com/huggingface/lerobot) o al [canal Discord de LeRobot](https://discord.gg/8TnwDdjFGU).
+Si encuentras problemas de software o problemas de dependencias del entorno que no se pueden resolver, además de revisar la sección FAQ al final de este tutorial, por favor reporta el problema oportunamente a la [plataforma LeRobot](https://github.com/huggingface/lerobot) o al [canal Discord de LeRobot](https://discord.gg/8TnwDdjFGU).
 :::
 
 
