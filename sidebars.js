@@ -8865,7 +8865,7 @@ const sidebars = {
         }
       ],
     },
-    'zh-CN/Solutions/jetson-crowd-tracking',
+    'zh-CN/Solutions/cn_jetson-crowd-tracking',
     // END OF Solutions
 
     {
@@ -13882,7 +13882,7 @@ const sidebars = {
         }
       ],
     },
-    'Solutions/jetson-crowd-tracking',
+    'es/Solutions/es_jetson-crowd-tracking',
     // END OF Solution
 
     {
