@@ -102,5 +102,3 @@ MicroBlocks 支持并发。最多可以同时运行十个脚本。
 - [库参考](https://wiki.microblocks.fun/en/libraries)
 
 - [学习指南](https://learn.microblocks.fun)
-
-- [Learning Guides](https://learn.microblocks.fun)
