@@ -1,13 +1,13 @@
 ---
-description: Primeros Pasos con el Sensor de Humedad del Suelo XIAO
-title: Primeros Pasos con el Sensor de Humedad del Suelo XIAO
+description: XIAO 土壌水分センサーの使用開始
+title: XIAO 土壌水分センサーの使用開始
 keywords:
   - XIAO
-  - Sensor de Humedad del Suelo
+  - Soil Moisture Sensor
   - ESP32-C6
-  - Humedad
+  - Moisture
 image: https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/img/1.webp
-slug: /es/xiao_soil_moisture_sensor
+slug: /ja/xiao_soil_moisture_sensor
 last_update:
   date: 05/26/2025
   author: Robben
@@ -20,69 +20,69 @@ import TabItem from '@theme/TabItem';
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-Soil-Sensor-p-6452.html" target="_blank">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Consíguelo Ahora 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
 
-## Introducción
+## はじめに
 
-El Sensor de Humedad del Suelo XIAO es un monitor ambiental compacto y de bajo consumo alimentado por el [XIAO ESP32-C6](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html). Funcionando con una sola batería AA, ofrece operación de larga duración y actualizaciones en tiempo real de las condiciones del suelo. Cuenta con Detección Adaptativa de Humedad del Suelo Pre-Calibrada para un monitoreo preciso del suelo. Además, permite intervalos de monitoreo dinámicos y lecturas instantáneas para datos precisos y responsivos. Totalmente compatible con Home Assistant, es ideal para jardinería inteligente y agricultura de precisión: eficiente, confiable y diseñado para el cuidado sostenible de plantas.
+XIAO 土壌水分センサーは、[XIAO ESP32-C6](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html)を搭載したコンパクトで低消費電力の環境モニターです。単三電池1本で動作し、長時間の運用とリアルタイムの土壌状態更新を提供します。精密な土壌監視のための事前校正済み適応型土壌水分センシング機能を備えています。また、正確で応答性の高いデータのための動的監視間隔とインスタント読み取りを可能にします。Home Assistantと完全に互換性があり、スマートガーデニングと精密農業に最適です—効率的で信頼性が高く、持続可能な植物ケアのために作られています。
 
-## Características
+## 特徴
 
-**1.Monitoreo de Humedad del Suelo de Tres Niveles**  
+**1.三段階土壌水分監視**  
 
-- 🌿 **Normal:** La humedad del suelo es óptima, no se necesita riego.  
-- 🌤 **Casi Seco:** La humedad está disminuyendo, prepárate para regar pronto.  
-- 🌵 **Seco:** Críticamente bajo, riega inmediatamente.
+- 🌿 **正常:** 土壌水分が最適で、水やりは不要です。  
+- 🌤 **ほぼ乾燥:** 水分が減少中、まもなく水やりの準備をしてください。  
+- 🌵 **乾燥:** 危険なほど低い、すぐに水やりしてください。
 
-Umbrales predeterminados:
+デフォルトの閾値：
 
-- **60%** → Transición de Verde a Amarillo.
-- **20%** → Transición de Amarillo a Rojo.
+- **60%** → 緑から黄色への移行。
+- **20%** → 黄色から赤への移行。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/img/feature_1.jpg" style={{width:800, height:'auto'}}/></div>
 
-**2.Plug-and-Play con Home Assistant**  
-Precargado con ESPHome: funciona inmediatamente con Home Assistant, permitiéndote monitorear y automatizar directamente desde tu panel de control de hogar inteligente.
+**2.Home Assistantとのプラグアンドプレイ**  
+ESPHomeがプリロードされており、Home Assistantですぐに動作し、スマートホームダッシュボードから直接監視と自動化が可能です。
 
-**3.Monitoreo Adaptativo y Lectura Instantánea**  
+**3.適応型監視とインスタント読み取り**  
 
-- Ajusta automáticamente los intervalos de verificación (8h → 1h → 15min) dependiendo del nivel de humedad.  
-- Presiona el botón una vez para obtener una lectura instantánea de humedad en cualquier momento.
+- 水分レベルに応じてチェック間隔を自動調整（8時間 → 1時間 → 15分）。  
+- ボタンを一度押すといつでもインスタント水分読み取りが可能。
 
-**4.Calibración Simple (Opcional)**  
-Presiona rápidamente el botón tres veces para recalibrar para tu suelo específico: lectura seca + lectura húmeda → el sistema se ajusta automáticamente.
+**4.簡単な校正（オプション）**  
+ボタンを素早く3回押すことで、特定の土壌に対して再校正：乾燥読み取り + 湿潤読み取り → システムが自動調整。
 
-- Triple presión corta → Entrar al modo de calibración:
-  - LED rojo parpadea → Dentro de 10 segundos, inserta el sensor en suelo completamente seco.
-  - Espera hasta que el LED rojo deje de parpadear, luego espera 3 segundos.
-  - LED verde parpadea → Dentro de 10 segundos, inserta el sensor en suelo completamente húmedo.
-  - Espera hasta que el LED verde deje de parpadear, luego espera 3 segundos.
-  - Resultado de calibración:
-    - Dos parpadeos verdes rápidos → Éxito.
-    - Dos parpadeos rojos rápidos → Fallo (probablemente debido a lecturas seca/húmeda intercambiadas).
+- 3回短押し → 校正モードに入る：
+  - 赤色LEDが点滅 → 10秒以内に、センサーを完全に乾燥した土壌に挿入。
+  - 赤色LEDの点滅が止まるまで待ち、その後3秒待つ。
+  - 緑色LEDが点滅 → 10秒以内に、センサーを完全に湿った土壌に挿入。
+  - 緑色LEDの点滅が止まるまで待ち、その後3秒待つ。
+  - 校正結果：
+    - 2回の素早い緑色点滅 → 成功。
+    - 2回の素早い赤色点滅 → 失敗（乾燥/湿潤読み取りが入れ替わった可能性）。
 
-Nota: Durante la calibración, las lecturas iniciales pueden ser inestables si el sensor no se inserta rápidamente. El sistema tomará múltiples muestras, aplicará filtrado y promediará las lecturas para una calibración confiable.
+注意：校正中、センサーが迅速に挿入されない場合、初期読み取りが不安定になる可能性があります。システムは複数のサンプルを取得し、フィルタリングを適用し、信頼性の高い校正のために読み取りを平均化します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/img/feature_4.jpg" style={{width:800, height:'auto'}}/></div>
 
-## Descripción del Hardware
+## ハードウェア概要
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/img/hardware.jpg" style={{width:800, height:'auto'}}/></div>
 
-## Primeros Pasos
+## 使用開始
 
-Esta sección te guiará a través de la configuración de tu Sensor de Humedad del Suelo XIAO por primera vez.
+このセクションでは、XIAO 土壌水分センサーを初めて設定する方法をガイドします。
 
-### Materiales Requeridos
+### 必要な材料
 
-Antes de que comience el contenido del tutorial de este artículo, es posible que necesites tener el siguiente hardware listo.
+この記事のチュートリアル内容を始める前に、以下のハードウェアを準備する必要があります。
 
 <div class="table-center">
   <table align="center">
     <tr>
-      <th>Sensor de Humedad del Suelo XIAO</th>
+      <th>XIAO 土壌水分センサー</th>
       <th>Home Assistant Green</th>
     </tr>
     <tr>
@@ -92,114 +92,114 @@ Antes de que comience el contenido del tutorial de este artículo, es posible qu
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
         <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html" target="_blank">
-        <strong><span><font color={'FFFFFF'} size={"4"}> Consíguelo Ahora 🖱️</font></span></strong>
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
         </a>
       </div></td>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
         <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html" target="_blank">
-        <strong><span><font color={'FFFFFF'} size={"4"}> Consíguelo Ahora 🖱️</font></span></strong>
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
         </a>
       </div></td>
     </tr>
   </table>
 </div>
 
-Home Assistant Green es la forma más fácil y centrada en la privacidad de automatizar tu hogar. Ofrece una configuración sin esfuerzo y te permite controlar todos los dispositivos inteligentes con un solo sistema, donde todos los datos se almacenan localmente por defecto. Esta placa se beneficia del próspero ecosistema de Home Assistant y será mejorada cada mes por código abierto.
+Home Assistant Greenは、ホームオートメーションの最も簡単でプライバシーに焦点を当てた方法です。簡単なセットアップを提供し、すべてのスマートデバイスを1つのシステムで制御でき、すべてのデータはデフォルトでローカルに保存されます。このボードは繁栄するHome Assistantエコシステムの恩恵を受け、オープンソースによって毎月改善されます。
 
-Recomendamos usar Home Assistant Green como el host de Home Assistant para este tutorial, o puedes usar cualquier host de Home Assistant con un Supervisor.
+このチュートリアルでは、Home Assistant GreenをHome Assistantホストとして使用することをお勧めしますが、Supervisorを備えた任意のHome Assistantホストを使用することもできます。
 
-:::tip instalar Home Assistant
-También hemos escrito cómo instalar Home Assistant para algunos productos de Seeed Studio, por favor consúltalos.
+:::tip Home Assistantのインストール
+Seeed Studio製品の一部にHome Assistantをインストールする方法も書いていますので、参考にしてください。
 
-- **[Primeros Pasos con Home Assistant en ODYSSEY-X86](https://wiki.seeedstudio.com/es/ODYSSEY-X86-Home-Assistant/)**
-- **[Primeros Pasos con Home Assistant en reTerminal](https://wiki.seeedstudio.com/es/reTerminal_Home_Assistant/)**
-- **[Primeros Pasos con Home Assistant en LinkStar H68K/reRouter CM4](https://wiki.seeedstudio.com/es/h68k-ha-esphome/)**
+- **[ODYSSEY-X86でのHome Assistant使用開始](https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant/)**
+- **[reTerminalでのHome Assistant使用開始](https://wiki.seeedstudio.com/ja/reTerminal_Home_Assistant/)**
+- **[LinkStar H68K/reRouter CM4でのHome Assistant使用開始](https://wiki.seeedstudio.com/ja/h68k-ha-esphome/)**
 
-Si no estás usando un producto de Seeed Studio, también puedes verificar y aprender cómo instalar Home Assistant para otros productos en el sitio web oficial de Home Assistant.
+Seeed Studio製品を使用していない場合は、Home Assistant公式ウェブサイトで他の製品にHome Assistantをインストールする方法を確認して学習することもできます。
 
-- **[Instalación de Home Assistant](https://www.home-assistant.io/installation/)**
+- **[Home Assistantインストール](https://www.home-assistant.io/installation/)**
 :::
 
-### Paso 1. Instalar ESPHome
+### ステップ1. ESPHomeのインストール
 
-Si ya has instalado ESPHome, puedes omitir este paso.
+すでにESPHomeをインストールしている場合は、このステップをスキップできます。
 
-Ve a **Configuración** -> **Complementos** -> **TIENDA DE COMPLEMENTOS**
+**Settings** -> **Add-ons** -> **ADD-ON STORE**に移動
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/01.png" style={{width:800, height:'auto'}}/></div>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/02.png" style={{width:800, height:'auto'}}/></div>
 
-Busca ESPHome y haz clic en él. Haz clic en **INSTALAR** e **INICIAR**.
+ESPHomeを検索してクリックします。**INSTALL**と**START**をクリックします。
 
 :::tip
-Si no puedes encontrar ESPHome en la tienda de complementos, asegúrate de estar usando una instalación de Home Assistant que soporte complementos (como Home Assistant OS o instalaciones supervisadas). Para otros tipos de instalación (como Home Assistant Container), es posible que necesites ejecutar el Constructor de Dispositivos ESPHome independientemente usando Docker. Consulta la [documentación oficial de ESPHome](https://esphome.io/guides/getting_started_hassio) para más detalles.
+アドオンストアでESPHomeが見つからない場合は、アドオンをサポートするHome Assistantインストール（Home Assistant OSまたは監視付きインストールなど）を使用していることを確認してください。他のインストールタイプ（Home Assistant Containerなど）の場合、DockerでESPHome Device Builderを独立して実行する必要がある場合があります。詳細については、[公式ESPHomeドキュメント](https://esphome.io/guides/getting_started_hassio)を参照してください。
 :::
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/03.png" style={{width:800, height:'auto'}}/></div>
 
-Y luego, ESPHome Builder aparecerá en la barra lateral.
+その後、ESPHome Builderがサイドバーに表示されます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/04.png" style={{width:800, height:'auto'}}/></div>
 
-### Paso 2: Preparando el Sensor de Humedad del Suelo
+### ステップ2: 土壌水分センサーの準備
 
-Por defecto, tu dispositivo (XIAO ESP32C6) viene pre-flasheado con firmware para el Sensor de Humedad del Suelo XIAO. Sin embargo, si necesitas modificar o actualizar el firmware predeterminado, un archivo de configuración YAML de fábrica está disponible en la sección de Recursos a continuación. Puedes personalizar la lógica según sea necesario y flashearlo a través de Home Assistant.
+デフォルトでは、デバイス（XIAO ESP32C6）にはXIAO 土壌水分センサー用のファームウェアが事前にフラッシュされています。ただし、デフォルトファームウェアを変更またはアップグレードする必要がある場合は、工場出荷時のYAML設定ファイルが以下のリソースセクションで利用できます。必要に応じてロジックをカスタマイズし、Home Assistantを介してフラッシュできます。
 
 :::tip
-Para asegurar lecturas precisas, simplemente realiza una calibración rápida del sensor antes del uso.
+正確な読み取りを確保するため、使用前にセンサーの簡単な校正を実行してください。
 :::
 
-### Paso 3: Configuración de Red
+### ステップ3: ネットワーク設定
 
-1. **Habilitar Punto de Acceso**:
-   - Al encender por primera vez, el módulo creará una red Wi-Fi (SSID: `Xiao-Soil-Moisture-Monitor`).
+1. **アクセスポイントの有効化**:
+   - 初回電源投入時、モジュールはWi-Fiネットワーク（SSID: `Xiao-Soil-Moisture-Monitor`）を作成します。
 
-2. **Acceder a la Configuración**:
-   - Conéctate a la red usando un teléfono o PC.
-   - Abre un navegador y navega a `http://192.168.4.1`.
-   - Ingresa el SSID y la contraseña de tu red Wi-Fi doméstica.
+2. **設定へのアクセス**:
+   - 電話またはPCを使用してネットワークに接続します。
+   - ブラウザを開き、`http://192.168.4.1`に移動します。
+   - ホームWi-FiネットワークのSSIDとパスワードを入力します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/ap_wireless_setting_page.png" style={{width:'auto', height:650, "border-radius": '15px'}}/></div>
 
-3. **Integración con Home Assistant**:
-   - Una vez conectado a la red doméstica, el módulo será descubrible en Home Assistant bajo `Configuración -> Dispositivos y Servicios`.
+3. **Home Assistant統合**:
+   - ホームネットワークに接続すると、モジュールは`Settings -> Devices & Services`の下でHome Assistantで発見可能になります。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/ha_new_device_discovered.png" style={{width:400, height:'auto', "border-radius": '15px'}}/></div>
 
-De esta manera, puedes conectar el módulo a tu red de Home Assistant y permitir que Home Assistant lo descubra.
+この方法で、モジュールをHome Assistantネットワークに接続し、Home Assistantに発見させることができます。
 
-### Paso 4: Agregar el dispositivo del módulo
+### ステップ4: モジュールデバイスの追加
 
-1. **Descubrimiento Automático**:
-   - Asegúrate de que **ESPHome** esté instalado en Home Assistant.
-   - Navega a `Configuración -> Dispositivos y Servicios -> Integraciones` y busca el dispositivo.
+1. **自動発見**:
+   - **ESPHome**がHome Assistantにインストールされていることを確認します。
+   - `Settings -> Devices & Services -> Integrations`に移動し、デバイスを探します。
 
-2. **Configuración Manual**:
-   - Si no se descubre automáticamente, agrega manualmente el dispositivo especificando su dirección IP.
+2. **手動設定**:
+   - 自動的に発見されない場合は、IPアドレスを指定してデバイスを手動で追加します。
 
-Después de agregar el dispositivo, verás una nueva tarjeta de sensor llamada Solid_sensor en la página de Resumen de Home Assistant, mostrando tanto la medición de la batería como el estado actual de humedad del suelo.
+デバイスを追加した後、Home AssistantのOverviewページにSolid_sensorという名前の新しいセンサーカードが表示され、バッテリー測定と現在の土壌水分状態の両方が表示されます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/img/View_in_HA.png" style={{width:400, height:'auto', "border-radius": '15px'}}/></div>
 
-Ahora que tu sensor de suelo está funcionando, ¡adelante y diviértete monitoreando tus plantas!
+土壌センサーが稼働しているので、植物の監視を楽しんでください！
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/img/feature_2.jpg" style={{width:800, height:'auto'}}/></div>
 
-## Uso Avanzado
+## 高度な使用法
 
-Puedes modificar la lógica del firmware original y flashear tu versión personalizada del sensor de suelo directamente a través de Home Assistant.
-### Paso 1. Instalar ESPHome
+元のファームウェアロジックを変更し、Home Assistantを通じて土壌センサーのカスタマイズされたバージョンを直接フラッシュできます。
+### ステップ 1. ESPHome をインストール
 
-Consulta la guía de instalación en el Paso 1 anterior.
+上記のステップ 1 のインストールガイドを参照してください。
 
-### Paso 2. Agregar un nuevo dispositivo
+### ステップ 2. 新しいデバイスを追加
 
-Ve a ESPHome y haz clic en **NUEVO DISPOSITIVO**.
+ESPHome に移動し、**NEW DEVICE** をクリックします。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/06.png" style={{width:800, height:'auto'}}/></div>
 
-Dale al dispositivo un nombre que te guste y haz clic en **SIGUIENTE**.
+お好みのデバイス名を付けて、**NEXT** をクリックします。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/1.png" style={{width:800, height:'auto'}}/></div>
 
@@ -208,23 +208,23 @@ Dale al dispositivo un nombre que te guste y haz clic en **SIGUIENTE**.
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/3.png" style={{width:'100%', height:'auto'}}/></div>
 </div>
 
-Después de crear un nuevo dispositivo, haz clic en **EDITAR**.
+新しいデバイスを作成した後、**EDIT** をクリックします。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/4.png" style={{width:800, height:'auto'}}/></div>
 
-### Paso 3. Instalar firmware
+### ステップ 3. ファームウェアをインストール
 
-Aquí está el firmware de fábrica：
+こちらがファクトリーファームウェアです：
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/xiao-esphome-projects/tree/main/projects/xiao-soil-moisture-monitor" target="_blank" rel="noopener noreferrer">
-    <strong><span><font color={'FFFFFF'} size={"4"}> Descargar la Biblioteca</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    <strong><span><font color={'FFFFFF'} size={"4"}> ライブラリをダウンロード</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
     </a>
 </div><br />
 
-Aquí tienes una configuración YAML de `ESPHome` lista para usar con Home Assistant:
+こちらは Home Assistant 用のすぐに使える `ESPHome` YAML 設定です：
 <details>
 
-<summary>Haz clic aquí para previsualizar el código completo</summary>
+<summary>完全なコードをプレビューするにはここをクリック</summary>
 
 ```yaml
 esphome:
@@ -643,101 +643,101 @@ captive_portal:```
 </details>
 
 <details>
-<summary>Aquí tienes una descripción general de las funciones clave y la lógica utilizada en la configuración YAML.</summary>
+<summary>YAML設定で使用される主要な関数とロジックの概要です。</summary>
 
-`on_boot` – Define lo que sucede cuando el dispositivo se inicia.
+`on_boot` – デバイス起動時の動作を定義します。
 
-- **Parámetros de entrada**: Ninguno.
-- **Acción**: Enciende GPIO 14, establece el brillo del LED PWM, verifica el estado del Wi-Fi y activa la primera verificación de humedad.
+- **入力パラメータ**: なし。
+- **動作**: GPIO 14をオンにし、PWM LED輝度を設定し、Wi-Fiステータスをチェックし、最初の水分チェックをトリガーします。
 
-`scripts (red_led_blink, green_led_blink, fast_blink_green, fast_blink_red, etc.)` – Patrones de parpadeo de LED predefinidos.
+`scripts (red_led_blink, green_led_blink, fast_blink_green, fast_blink_red, etc.)` – 事前定義されたLED点滅パターン。
 
-- **Parámetros de entrada**: Ninguno.
-- **Acción**: Hace parpadear los LEDs en varios patrones para indicar estado o pasos de calibración.
+- **入力パラメータ**: なし。
+- **動作**: ステータスやキャリブレーション手順を示すために、様々なパターンでLEDを点滅させます。
 
-`do_calibration` – Ejecuta el proceso de calibración para suelo seco y húmedo.
+`do_calibration` – 乾燥土壌と湿潤土壌のキャリブレーションプロセスを実行します。
 
-- **Parámetros de entrada**: Ninguno.
-- **Acción**: Hace parpadear el LED rojo, espera la lectura en seco; luego hace parpadear el LED verde, espera la lectura húmeda; almacena valores promedio y confirma éxito o fallo.
+- **入力パラメータ**: なし。
+- **動作**: 赤色LEDを点滅させ、乾燥読み取り値を待機；その後緑色LEDを点滅させ、湿潤読み取り値を待機；平均値を保存し、成功または失敗を確認します。
 
-`check_moisture_once` – Lee y evalúa los niveles de humedad del suelo.
+`check_moisture_once` – 土壌水分レベルを読み取り、評価します。
 
-- **Parámetros de entrada**: Ninguno.
-- **Acción**: Toma múltiples lecturas ADC, las promedia, las compara con umbrales calibrados, decide el estado de humedad, activa LED y configuraciones de sueño profundo en consecuencia.
+- **入力パラメータ**: なし。
+- **動作**: 複数のADC読み取り値を取得し、平均化し、キャリブレーションされた閾値と比較し、水分状態を決定し、それに応じてLEDとディープスリープ設定をトリガーします。
 
-`binary_sensor (GPIO2)` – Maneja la lógica de presión del botón físico.
+`binary_sensor (GPIO2)` – 物理ボタン押下ロジックを処理します。
 
-- **Parámetros de entrada**: Ninguno.
-- **Acción**: Cuenta las presiones del botón; una sola presión activa una verificación de humedad, triple presión activa la calibración.
+- **入力パラメータ**: なし。
+- **動作**: ボタン押下回数をカウント；1回押しで水分チェックをトリガー、3回押しでキャリブレーションをトリガーします。
 
-`globals` – Almacena el estado del sistema y datos de calibración.
+`globals` – システム状態とキャリブレーションデータを保存します。
 
-- **Variables**:
-  - `button_press_count`: Rastrea el conteo de presiones del botón.
-  - `dry_value`, `wet_value`: Almacena valores ADC calibrados seco/húmedo.
-  - `wifi_net_status`: Rastrea el estado de conexión Wi-Fi.
-  - `ref_dry`, `ref_wet`: Factores de escala de referencia para cálculos de umbral.
+- **変数**:
+  - `button_press_count`: ボタン押下回数を追跡します。
+  - `dry_value`, `wet_value`: キャリブレーションされた乾燥/湿潤ADC値を保存します。
+  - `wifi_net_status`: Wi-Fi接続状態を追跡します。
+  - `ref_dry`, `ref_wet`: 閾値計算用の参照スケーリング係数。
 
-`deep_sleep` – Gestiona los ciclos de sueño para ahorro de energía.
+`deep_sleep` – 省電力スリープサイクルを管理します。
 
-- **Parámetros de entrada**: Ninguno.
-- **Acción**: Funciona durante 120 segundos, luego duerme hasta 180 minutos; se despierta con presión del botón o intervalo.
+- **入力パラメータ**: なし。
+- **動作**: 120秒間実行し、その後最大180分間スリープ；ボタン押下または間隔でウェイクアップします。
 
-`sensor (ADC)` – Lee valores analógicos del sensor de suelo y batería.
+`sensor (ADC)` – 土壌センサーとバッテリーからアナログ値を読み取ります。
 
-- **Parámetros de entrada**: Ninguno.
-- **Acción**: Mide la humedad del suelo y voltaje de la batería; la batería se escala para mostrar porcentaje.
+- **入力パラメータ**: なし。
+- **動作**: 土壌水分とバッテリー電圧を測定；バッテリーはパーセンテージ表示にスケーリングされます。
 
-`text_sensor` – Publica el estado de humedad del suelo legible para humanos.
+`text_sensor` – 人間が読める土壌水分ステータスを公開します。
 
-- **Parámetros de entrada**: Ninguno.
-- **Acción**: Muestra "Seco", "Casi Seco", o "Humedad Normal" en Home Assistant.
+- **入力パラメータ**: なし。
+- **動作**: Home Assistantで「Dry」、「Almost Dry」、または「Normal Moisture」を表示します。
 
-`wifi` + `api` + `ota` – Gestiona la conexión de red, integración con Home Assistant y actualizaciones de firmware por aire.
+`wifi` + `api` + `ota` – ネットワーク接続、Home Assistant統合、およびOTAファームウェア更新を管理します。
 
-- **Parámetros de entrada**: SSID y contraseña de Wi-Fi.
-- **Acción**: Conecta el dispositivo a la red, expone su API y habilita actualizaciones remotas.
+- **入力パラメータ**: Wi-Fi SSIDとパスワード。
+- **動作**: デバイスをネットワークに接続し、APIを公開し、リモート更新を有効にします。
 
 </details>
 
-Haz clic en **INSTALL** para instalar el código en el dispositivo y verás la siguiente imagen.
+**INSTALL**をクリックしてデバイスにコードをインストールすると、以下の画像が表示されます。
 
 <Tabs>
 <TabItem value='Install through browser'>
 
 :::tip
-Si tu Host de Home Assistant (Raspberry PI/Green/Yellow etc.) está lejos de ti, recomendamos usar este método. Puedes instalarlo con la computadora que tengas a mano.
+Home Assistantホスト（Raspberry PI/Green/Yellowなど）が遠くにある場合は、この方法をお勧めします。手元にあるコンピューターでインストールできます。
 :::
 
-Primero, necesitas hacer clic en **Manual download** para descargar el firmware compilado.
+まず、**Manual download**をクリックしてコンパイル済みファームウェアをダウンロードする必要があります。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/62.png" style={{width:500, height:'auto'}}/></div>
 
-Abre este sitio web donde subiremos el firmware al panel ePaper.
+ePaperパネルにファームウェアをアップロードするこのウェブサイトを開きます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/63.png" style={{width:800, height:'auto'}}/></div>
 
-Regresa a ESPHome para descargar el firmware.
+ESPHomeに戻ってファームウェアをダウンロードします。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/64.png" style={{width:800, height:'auto'}}/></div>
 
-Selecciona Factory format.
+Factory formatを選択します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/65.png" style={{width:500, height:'auto'}}/></div>
 
-Usa un cable USB para **conectar el panel ePaper a tu computadora** y haz clic en **CONNECT**.
+USBケーブルを使用して**ePaperパネルをコンピューターに接続**し、**CONNECT**をクリックします。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/66.png" style={{width:800, height:'auto'}}/></div>
 
-Selecciona usbmodemxxx(Windows es COMxxx) y haz clic en connect.
+usbmodemxxx（WindowsはCOMxxx）を選択し、connectをクリックします。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/67.png" style={{width:800, height:'auto'}}/></div>
 
-Haz clic en **INSTALL** y selecciona el firmware que acabas de descargar.
+**INSTALL**をクリックし、先ほどダウンロードしたファームウェアを選択します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/69.png" style={{width:650, height:'auto'}}/></div>
 
-Tu firmware se flasheará en breve ～
+ファームウェアがまもなくフラッシュされます～
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/71.png" style={{width:650, height:'auto'}}/></div>
 
@@ -746,19 +746,19 @@ Tu firmware se flasheará en breve ～
 <TabItem value='Install through host'>
 
 :::tip
-Si tu Host de Home Assistant (Raspberry PI/Green/Yellow etc.) está cerca, recomendamos usar este método ya que es más simple.
+Home Assistantホスト（Raspberry PI/Green/Yellowなど）が近くにある場合は、より簡単なのでこの方法をお勧めします。
 :::
 
-Antes de instalar el código en el dispositivo, necesitas usar un cable USB para **conectar este dispositivo a tu Raspberry Pi o HA Green(Yellow) etc** que esté ejecutando Home Assistant.
+デバイスにコードをインストールする前に、USBケーブルを使用して**このデバイスをHome Assistantを実行しているRaspberry PiまたはHA Green（Yellow）などに接続**する必要があります。
 
-Haz clic en las opciones siguiendo la imagen para instalar el código en el dispositivo.
+画像に従ってオプションをクリックし、デバイスにコードをインストールします。
 
 <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/6.png" style={{width:'70%', height:'auto'}}/></div>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/7.png" style={{width:'100%', height:'auto'}}/></div>
 </div>
 
-Espera un momento y verás la retroalimentación como la siguiente imagen. Significa que el código se está ejecutando exitosamente.
+しばらく待つと、以下の画像のようなフィードバックが表示されます。これはコードが正常に実行されていることを意味します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/9.png" style={{width:650, height:'auto'}}/></div>
 
@@ -767,31 +767,31 @@ Espera un momento y verás la retroalimentación como la siguiente imagen. Signi
 <TabItem value='Install through Wi-Fi'>
 
 :::tip
-Esta es la forma más simple, pero con la premisa de que al instalar el programa por primera vez, primero debes subir el programa al Panel ePaper usando el método de la izquierda. Después de eso, puedes subirlo vía wifi. También, asegúrate de que tu configuración YAML incluya secciones `ota` y `api` configuradas correctamente con claves de encriptación válidas para que este método funcione.
+これは最も簡単な方法ですが、初回プログラムインストール時は、まず左の方法を使用してePaperパネルにプログラムをアップロードする必要があります。その後、wifiでアップロードできます。また、この方法が機能するためには、YAML設定に適切に設定された`ota`と`api`セクションと有効な暗号化キーが含まれていることを確認してください。
 :::
 
-De esta manera, no necesitas conectar el panel ePaper a nada, solo asegúrate de que esté en línea.
+この方法では、ePaperパネルを何にも接続する必要がなく、オンラインであることを確認するだけです。
 
-Haz clic en la opción y luego el firmware se instalará en el panel ePaper automáticamente.
+オプションをクリックすると、ファームウェアが自動的にePaperパネルにインストールされます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/72.png" style={{width:500, height:'auto'}}/></div>
 
-Espera un momento y verás la retroalimentación como la siguiente imagen. Si falla, puede ser debido a una señal débil. Por favor mueve el dispositivo más cerca de tu router.
+しばらく待つと、以下の画像のようなフィードバックが表示されます。失敗した場合は、信号が弱い可能性があります。デバイスをルーターに近づけてください。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/73.png" style={{width:650, height:'auto'}}/></div>
 
 </TabItem>
 </Tabs>
 
-## Restablecer
+## リセット
 
-Si el firmware necesita ser reflasheado, puedes usar el siguiente enlace para restaurar el firmware predeterminado:  
+ファームウェアを再フラッシュする必要がある場合は、以下のリンクを使用してデフォルトファームウェアを復元できます：  
 [https://gadgets.seeed.cc/](https://gadgets.seeed.cc/)
 
-Conecta tu dispositivo a tu computadora primero.  
-Luego, encuentra **XIAO Soil Moisture Monitor** en la página y haz clic en **Connect** para proceder con el reflasheo.
+まずデバイスをコンピューターに接続します。  
+次に、ページで**XIAO Soil Moisture Monitor**を見つけ、**Connect**をクリックして再フラッシュを進めます。
 
-## Recursos
+## リソース
 
 - **[PDF]** [XIAO Soil Moisture Sensor SCH](https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/res/SCH.pdf)
 - **[Kicad]** [XIAO Soil Moisture Sensor PCB](https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/res/Kicad.kicad_pcb)
@@ -800,9 +800,9 @@ Luego, encuentra **XIAO Soil Moisture Monitor** en la página y haz clic en **Co
 - **[LINK]** [XIAO Soil Moisture Sensor 3D file Printtables](https://www.printables.com/model/1260595-3d-enclosure-for-seeed-studio-xiao-75-epaper-panel/edit)
 - **[LINK]** [XIAO Soil Moisture Sensor 3D file Thingiverse](https://www.thingiverse.com/thing:7039325)
 
-## Soporte Técnico y Discusión del Producto
+## 技術サポート & 製品ディスカッション
 
-¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes tipos de soporte para asegurar que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para atender diferentes preferencias y necesidades.
+私たちの製品をお選びいただき、ありがとうございます！私たちは、お客様の製品体験ができるだけスムーズになるよう、さまざまなサポートを提供しています。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
 
 <div class="table-center">
   <div class="button_tech_support_container">
