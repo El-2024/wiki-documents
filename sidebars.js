@@ -4319,7 +4319,7 @@ const sidebars = {
       ],
     },
     'Solutions/jetson-crowd-tracking',
-    'Slutions/frigate-on-jetson-nodered-gun-alerts',
+    'Solutions/frigate-on-jetson-nodered-gun-alerts',
     // END OF Solution
 
     {
