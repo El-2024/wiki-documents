@@ -435,6 +435,7 @@ The final step is to turn on your tracker and see it on the map.
   <source src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/indoor-position-tracker-configuration.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
+<p><em>Opt for `Other Platform`, When using ChirpStack.</em></p>
 <p><em>Retain the default platform settings (SenseCAP for The Things Network), When using SenseCraft Data.</em></p>
 </div>
 
