@@ -1,8 +1,8 @@
 ---
 description: 该项目通过 Frigate-on-Jetson 提供实时枪支检测功能
-title: 在 Jetson 上使用 Frigate 与 Node-RED 枪支警报
+title: 基于 Jetson 的 Frigate 与 Node-RED 枪支警报系统
 image: https://files.seeedstudio.com/wiki/solution/crowd_tracking/Node-RED%20Gun%20Alerts1.webp
-slug: /cn/solutions/nodered-gun-alerts
+slug: /cn/solutions/frigate-on-jetson-nodered-gun-alerts
 last_update:
   date: 09/05/2025
   author: lian
@@ -85,7 +85,7 @@ http://<JETSON_IP>:1880/
 - → 搜索 `@flowfuse/node-red-dashboard`  # 【用于提供简单界面】
 - → 点击安装
 
-## 🟠 3.3 Frigate 和 Node-RED 集成
+## 🟠 3.3 Frigate 与 Node-RED 集成
 
 ### 3.3.1 预检查
 
@@ -604,18 +604,16 @@ http://<JETSON_IP>:1880/
   "modules": {
     "@flowfuse/node-red-dashboard": "1.26.0"
   }
-}]
+}]```
 
-```
+- **MQTT Broker 地址** (默认: `172.17.0.1:1883`)  
+- **Frigate 服务地址** (默认: `http://192.168.118.111:5000`)  
 
-- **MQTT Broker Address** (default: `172.17.0.1:1883`)  
-- **Frigate Service Address** (default: `http://192.168.118.111:5000`)  
+> ⚠️ **提醒：** 请务必修改为与您自己机器的 `JETSON_IP` 匹配。  
 
-> ⚠️ **Reminder:** Be sure to modify to match your own machine’s `JETSON_IP`.  
+## 🔵 3.4 运行效果
 
-## 🔵 3.4 Running Effect
-
-Access the following URL in your browser:
+在浏览器中访问以下 URL：
 
 ```cpp
 http://JETSON_IP:1880/dashboard/frigate
@@ -623,42 +621,42 @@ http://JETSON_IP:1880/dashboard/frigate
 
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/frigateevents.png"/></div>
 
-# 🟣 4. Function Description
+# 🟣 4. 功能说明
 
-## 4.1 Real-time Gun Detection
+## 4.1 实时枪支检测
 
-- Frigate detects guns in camera footage based on the YOLOv4-tiny-288 model  
-- Detection threshold: `0.3`  
-- Detection categories: Person (0), Gun (1)  
+- Frigate 基于 YOLOv4-tiny-288 模型检测摄像头画面中的枪支  
+- 检测阈值：`0.3`  
+- 检测类别：人员 (0)、枪支 (1)  
 
-> 📖 **Reference:** For more details, see related configuration files in GitHub:  
+> 📖 **参考：** 更多详情请参见 GitHub 中的相关配置文件：  
 > `frigate-on-jetson/config/config.yml at main · Seeed-Studio/frigate-on-jetson · GitHub`  
 
 ---
 
-## 4.2 Alerts and Notifications
+## 4.2 警报和通知
 
-- Display the latest captured frame  
-- Historical alert records (including time, camera, screenshot)  
-- Real-time Webhook push (this wiki uses Enterprise WeChat as an example)  
-- Supports integration with other Webhooks  
-
----
-
-## 4.3 History Records and Counting
-
-- Record the latest 10 alert events  
-- Accumulative counting of alerts  
-- One-click data clearing  
-
-# 🟤 5. Application Scenarios
-
-- Campus security area gun threat monitoring  
-- Protection in shopping malls / subways / transportation hubs  
-- Perimeter defense and boundary control  
-- Security for temporary events  
+- 显示最新捕获的画面  
+- 历史警报记录（包括时间、摄像头、截图）  
+- 实时 Webhook 推送（本 wiki 以企业微信为例）  
+- 支持与其他 Webhook 集成  
 
 ---
 
-📦 **Project Repository:**  
+## 4.3 历史记录和计数
+
+- 记录最新的 10 个警报事件  
+- 警报累计计数  
+- 一键数据清除  
+
+# 🟤 5. 应用场景
+
+- 校园安全区域枪支威胁监控  
+- 商场/地铁/交通枢纽防护  
+- 周界防御和边界控制  
+- 临时活动安全保障  
+
+---
+
+📦 **项目仓库：**  
 [GitHub - Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
