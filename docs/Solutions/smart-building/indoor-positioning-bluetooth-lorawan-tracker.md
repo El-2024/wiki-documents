@@ -274,7 +274,7 @@ The video below shows how you will use this list to add your beacons to the appl
 </video>
 </div>
 
-**Pro Tip:** For easier management, you can use the **SenseCraft app** to give all your beacons a consistent **UUID**. This helps ensure the tracker only listens to your devices and ignores others. Check out [Feature 4: Filter by Beacon UUID](https://www.google.com/search?q=%23feature-4-filter-by-beacon-uuid) for more details.
+**Pro Tip:** For easier management, you can use the **SenseCraft app** to give all your beacons a consistent **UUID**. This helps ensure the tracker only listens to your devices and ignores others. Check out [Feature 4: Filter by Beacon UUID](#feature-4-filter-by-beacon-uuid) for more details.
 
 <details>
 <summary>Quick view of the parameters of BC01 beacon</summary>
@@ -377,7 +377,7 @@ In the dashboard, you can enable one or both of the following MQTT sources to co
 
 1. Enable the **SenseCAP OpenStream MQTT** toggle.
 2. Enter your **Username** and **API Key**.
-      - You can generate these credentials by following the [Data OpenStream API Quickstart guide](https://www.google.com/search?q=/sensecraft-data-platform/api/data-openstream-api/data_openstream_api_quickstart/).
+      - You can generate these credentials by following the [Data OpenStream API Quickstart guide](/sensecraft-data-platform/api/data-openstream-api/data_openstream_api_quickstart/).
 
 ##### To Connect to ChirpStack
 
