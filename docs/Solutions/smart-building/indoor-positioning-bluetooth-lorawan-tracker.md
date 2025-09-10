@@ -426,13 +426,13 @@ This is an advanced setting that fine-tunes location accuracy. It helps the syst
 
 The final step is to turn on your tracker and see it on the map.
 
+<div align="center">
+<img class='img-responsive' width="680" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/tracker-visualize-on-map.png" alt="tracker-visualize-on-map"/>
+</div>
+
 1. **Activate the SenseCAP T1000 Tracker** and onboard it to your LoRaWAN Network Server. Ensure your gateway is online and the tracker devices is 'registered' on the LNS server. check [Step 1b](#1b-set-up-the-gateway) for details.
 2. **Ensure it is set to BLE scanning mode** so it can detect the beacons. Check the video below for help.
 3. **Visualize:** As the tracker moves through your facility, it will detect the nearest beacons and report its location. You will see its icon moving across the map on your dashboard.
-
-<div align="center">
-<img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/tracker-visualize-on-map.png" alt="tracker-visualize-on-map"/>
-</div>
 
 <div style={{ textAlign: 'center' }}>
 <video width="480" height="640" controls>
@@ -561,13 +561,47 @@ The system supports two positioning methods:
 1. **Trilateration:** When the tracker detects **three or more** beacons, it calculates a precise (x, y) coordinate. This is the default and most accurate mode.
 2. **Proximity (Area Positioning):** If you enable this and the tracker can only detect **one** beacon, it will report its position as being "near" that beacon within a calculated radius. This is useful for ensuring coverage in all areas.
 
+*Trilateration*
+
+<table align="center">
+<tr>
+    <th>Trilateration</th>
+    <th>Trilateration(SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
+
+*Area Positioning*
+
+<table align="center">
+<tr>
+    <th>Area Positioning</th>
+    <th>Area Positioning(SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
+
 ### Feature 3: Viewing Alert History
 
 You can view the alert history (e.g., SOS button presses) for any tracker by clicking on its icon on the map. The system logs each new alert and will continue to push notifications for an active alert until it is resolved.
 
+<div align="center">
+<img class='img-responsive' width="680" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/alert-history-records.png" alt="alert-history-records"/>
+</div>
+
 ### Feature 4: Filter by Beacon UUID
 
 You can filter the displayed trackers on the map by their associated beacon UUIDs. This allows for more focused monitoring of specific areas or assets. it is valued not to be hacked.
+
+<div align="center">
+<img class='img-responsive' width="360" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/sensecraft-ble-filter.png" alt="sensecraft-ble-filter"/>
+</div>
 
 ## Reference & Resource
 
