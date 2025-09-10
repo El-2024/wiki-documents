@@ -133,7 +133,8 @@ last_update:
     <div class="card-body">
         <ul class="features-list">
             <li class="feature-item">
-                <div class="feature-icon">                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                     </svg>
                 </div>
@@ -259,6 +260,7 @@ c30000564b31,"Main Entrance",01
 c30000564b32,"Warehouse Zone A",02
 c30000564b33,"Corner Office",03
 ```
+
 以下の動画は、後でアプリケーションのマップにビーコンを追加する際に、このリストをどのように使用するかを示しています。今正確な記録を作成することで、ソフトウェアのセットアップがはるかに簡単になります。
 
 <div style={{ textAlign: 'center' }}>
@@ -432,7 +434,8 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 <video width="480" height="640" controls>
   <source src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/indoor-position-tracker-configuration.mp4" type="video/mp4" />
   Your browser does not support the video tag.
-</video><p><em>SenseCraft Dataを使用する場合は、デフォルトのプラットフォーム設定（SenseCAP for The Things Network）を保持してください。</em></p>
+</video>
+<p><em>SenseCraft Dataを使用する場合は、デフォルトのプラットフォーム設定（SenseCAP for The Things Network）を保持してください。</em></p>
 </div>
 
 ## アプリケーション機能概要

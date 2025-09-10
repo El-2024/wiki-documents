@@ -133,7 +133,8 @@ last_update:
     <div class="card-body">
         <ul class="features-list">
             <li class="feature-item">
-                <div class="feature-icon">                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                     </svg>
                 </div>
@@ -259,6 +260,7 @@ c30000564b31,"Main Entrance",01
 c30000564b32,"Warehouse Zone A",02
 c30000564b33,"Corner Office",03
 ```
+
 下面的视频展示了您稍后如何使用此列表将信标添加到应用程序地图中。现在创建准确的记录将使软件设置变得更加容易。
 
 <div style={{ textAlign: 'center' }}>
@@ -432,7 +434,8 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 <video width="480" height="640" controls>
   <source src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/indoor-position-tracker-configuration.mp4" type="video/mp4" />
   Your browser does not support the video tag.
-</video><p><em>使用 SenseCraft Data 时，保留默认平台设置（SenseCAP for The Things Network）。</em></p>
+</video>
+<p><em>使用 SenseCraft Data 时，保留默认平台设置（SenseCAP for The Things Network）。</em></p>
 </div>
 
 ## 应用功能概述

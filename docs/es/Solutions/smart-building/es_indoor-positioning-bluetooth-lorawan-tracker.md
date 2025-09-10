@@ -133,7 +133,8 @@ Antes de comenzar, asegúrate de tener lo siguiente:
     <div class="card-body">
         <ul class="features-list">
             <li class="feature-item">
-                <div class="feature-icon">                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                     </svg>
                 </div>
@@ -259,6 +260,7 @@ c30000564b31,"Main Entrance",01
 c30000564b32,"Warehouse Zone A",02
 c30000564b33,"Corner Office",03
 ```
+
 El video a continuación muestra cómo utilizarás esta lista para agregar tus beacons al mapa de la aplicación más adelante. Crear un registro preciso ahora hará que la configuración del software sea mucho más fácil.
 
 <div style={{ textAlign: 'center' }}>
@@ -432,7 +434,8 @@ El paso final es encender tu rastreador y verlo en el mapa.
 <video width="480" height="640" controls>
   <source src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/indoor-position-tracker-configuration.mp4" type="video/mp4" />
   Your browser does not support the video tag.
-</video><p><em>Conserva la configuración predeterminada de la plataforma (SenseCAP for The Things Network), cuando uses SenseCraft Data.</em></p>
+</video>
+<p><em>Conserva la configuración predeterminada de la plataforma (SenseCAP for The Things Network), cuando uses SenseCraft Data.</em></p>
 </div>
 
 ## Resumen de Características de la Aplicación
