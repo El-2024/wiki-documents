@@ -1,8 +1,8 @@
 ---
 description: 'Esta página es la página de navegación para el panel de papel electrónico XIAO de 7.5".'
-title: Primeros Pasos con el Panel de Papel Electrónico XIAO de 7.5"
+title: Primeros Pasos con el Panel ePaper XIAO de 7.5"
 image: https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/100.webp
-slug: /es/xiao_7_5_inch_epaper_panel_main_page
+slug: /es/xiao_075inch_epaper_panel
 sidebar_position: 1
 last_update:
   date: 05/19/2025
@@ -17,7 +17,7 @@ last_update:
 
 ## Introducción
 
-Alimentado por XIAO ESP32-C3, esta pantalla de papel electrónico de 7.5 pulgadas es una pantalla inteligente E Ink® versátil y eficiente en energía que soporta una amplia gama de aplicaciones populares de la comunidad incluyendo [Home Assistant](https://www.home-assistant.io/), [TRMNL](https://trmnl.app/), Arduino, y más. Esta solución de pantalla flexible es perfecta para mostrar datos de tablero, actualizaciones del clima, horarios e información personalizada. Con visuales nítidos, excepcional duración de batería de 3 meses (2000mAh) en modo de sueño profundo, y extensas posibilidades de personalización, este dispositivo compacto se adapta a diversos casos de uso. Perfecto para espacios de vida modernos y entornos de proyectos, combina funcionalidad con diseño elegante para una experiencia visual mejorada a través de múltiples plataformas.
+Alimentado por XIAO ESP32-C3, esta pantalla ePaper de 7.5 pulgadas es una pantalla inteligente E Ink® versátil y eficiente en energía que soporta una amplia gama de aplicaciones comunitarias populares incluyendo [Home Assistant](https://www.home-assistant.io/), [TRMNL](https://trmnl.app/), Arduino, y más. Esta solución de pantalla flexible es perfecta para mostrar datos de tablero, actualizaciones del clima, horarios e información personalizada. Con visuales nítidos, duración excepcional de batería de 3 meses (2000mAh) en modo de sueño profundo, y amplias posibilidades de personalización, este dispositivo compacto se adapta a diversos casos de uso. Perfecto para espacios de vida modernos y entornos de proyectos, combina funcionalidad con diseño elegante para una experiencia visual mejorada a través de múltiples plataformas.
 
 ### Características
 
@@ -42,7 +42,7 @@ Alimentado por XIAO ESP32-C3, esta pantalla de papel electrónico de 7.5 pulgada
 		</tr>
 		<tr>
 			<td>Pantalla</td>
-			<td>Pantalla de Papel Electrónico Monocromática de 7.5"</td>
+			<td>Pantalla ePaper Monocromática de 7.5"</td>
 		</tr>
 		<tr>
 			<td>Resolución</td>
@@ -77,7 +77,7 @@ Alimentado por XIAO ESP32-C3, esta pantalla de papel electrónico de 7.5 pulgada
 
 ## Descripción General del Hardware
 
-El Panel ePaper XIAO de 7.5" consta de varios componentes clave como se muestra en el diagrama de vista explosionada:
+El Panel ePaper XIAO de 7.5" consiste en varios componentes clave como se muestra en el diagrama de vista explosionada:
 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/207.jpg" style={{width:800, height:'auto'}}/></div>
@@ -85,20 +85,20 @@ El Panel ePaper XIAO de 7.5" consta de varios componentes clave como se muestra 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/208.jpg" style={{width:800, height:'auto'}}/></div>
 
-- **Pantalla ePaper Monocromática de 7.5"**: Pantalla de resolución 800 × 480 que mantiene la imagen sin consumo de energía después de la actualización
+- **Pantalla ePaper Monocromática de 7.5"**: Pantalla de resolución 800 × 480 que mantiene la imagen sin consumo de energía después del refresco
 - **Placa Controladora ePaper**: Controla la pantalla y maneja la comunicación con el microcontrolador
 - **XIAO ESP32-C3**: Microcontrolador principal que ejecuta el firmware y gestiona la conectividad
-- **Batería de 2000 mAh**: Proporciona energía para operación extendida, especialmente durante los modos de suspensión
-- **Puerto USB Type-C**: Para suministro de energía y programación
+- **Batería de 2000 mAh**: Proporciona energía para operación extendida, especialmente durante modos de sueño
+- **Puerto USB Tipo-C**: Para suministro de energía y programación
 - **Carcasa**: Caja impresa en 3D de PLA que aloja todos los componentes
 
-El dispositivo utiliza un diseño interno en capas que coloca la pantalla ePaper en el frente, con la placa controladora, la batería y el XIAO ESP32-C3 apilados detrás de ella dentro de la carcasa.
+El dispositivo utiliza un diseño interno en capas que coloca la pantalla ePaper en el frente, con la placa controladora, batería y XIAO ESP32-C3 apilados detrás de ella dentro de la carcasa.
 
 ## Primeros Pasos
 
 Para comenzar con tu Panel ePaper XIAO de 7.5":
 
-1. **Abrir el Soporte**: Levanta suavemente la pantalla usando la muesca en la parte inferior para revelar el soporte integrado. Coloca el dispositivo en una superficie plana con el soporte extendido.
+1. **Abrir el Soporte**: Levanta suavemente la pantalla usando la muesca en la parte inferior para revelar el soporte incorporado. Coloca el dispositivo en una superficie plana con el soporte extendido.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/206.gif" style={{width:500, height:'auto'}}/></div>
 
@@ -114,13 +114,13 @@ Después de completar estos pasos, tu Panel ePaper estará listo para configurac
 
 El Panel ePaper XIAO de 7.5" incluye dos botones esenciales ubicados detrás del soporte que ayudan con la programación y resolución de problemas:
 
-- **Botón Boot**: Se usa cuando el dispositivo no tiene conexión serie o está en modo de suspensión y no puede cargar programas. Para entrar al modo Bootloader:
+- **Botón Boot**: Se usa cuando el dispositivo no tiene conexión serie o está en modo de sueño y no puede cargar programas. Para entrar al modo Bootloader:
   1. Conecta el cable USB
   2. Mantén presionado el botón Boot
   3. Presiona el botón Reset una vez mientras mantienes Boot
   4. Suelta Reset, luego suelta Boot
   5. Desconecta y vuelve a conectar el cable de alimentación
-    
+
 - **Botón Reset**: Se usa para reiniciar el programa. Simplemente presiona una vez para reiniciar.
 
 Estos botones son críticos para la programación del dispositivo, actualizaciones de firmware y recuperación cuando el dispositivo no responde.
@@ -133,18 +133,18 @@ Las siguientes páginas Wiki proporcionan información detallada sobre diferente
 
 * [**Funciona con Arduino**](https://wiki.seeedstudio.com/es/xiao_075inch_epaper_panel_arduino/) - Programa tu dispositivo usando Arduino IDE con nuestra biblioteca y ejemplos para aplicaciones personalizadas.
 
-* [**Funciona con TRMNL**](https://wiki.seeedstudio.com/es/xiao_7_5_inch_epaper_panel_with_trmnl) - Controla tu pantalla con trmnl, una plataforma de código abierto para gestión inteligente de tableros visuales.
+* [**Funciona con TRMNL**](https://wiki.seeedstudio.com/es/xiao_7_5_inch_epaper_panel_with_trmnl) - Controla tu pantalla con trmnl, una plataforma de código abierto para gestión de tableros visuales inteligentes.
 
 ## Recursos
 
-- **[STP]**: [Carcasa modelo 3D](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/3D_model.zip)
-- **[PDF]**: [PDF esquemático de la placa controladora ePaper](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/ePaper_Driver_Board.pdf)
-- **[BAMBU]** [Jonathan Thomson - Soporte de pared para panel ePaper XIAO 7.5"](https://makerworld.com/en/models/1487711-seeed-studio-xiao-7-5-epaper-panel-wall-mount#profileId-1554538)
+- **[STP]**: [Carcasa Modelo 3D](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/3D_model.zip)
+- **[PDF]**: [PDF SCH Placa Controladora ePaper](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/ePaper_Driver_Board.pdf)
+- **[BAMBU]** [Jonathan Thomson - Montaje de Pared Panel ePaper XIAO de 7.5"](https://makerworld.com/en/models/1487711-seeed-studio-xiao-7-5-epaper-panel-wall-mount#profileId-1554538)
 
 
-## Soporte técnico y discusión de productos
+## Soporte Técnico y Discusión de Productos
 
-¡Gracias por elegir nuestros productos! Estamos aquí para brindarle diferentes tipos de soporte para asegurar que su experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para satisfacer diferentes preferencias y necesidades.
+¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes tipos de soporte para asegurar que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para atender diferentes preferencias y necesidades.
 
 <div class="table-center">
   <div class="button_tech_support_container">
@@ -157,5 +157,6 @@ Las siguientes páginas Wiki proporcionan información detallada sobre diferente
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>
+
 
 
