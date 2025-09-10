@@ -1,115 +1,115 @@
 ---
-description: This project provides real-time gun detection capabilities via Frigate-on-Jetson
-title: Frigate on Jetson with Node-RED Gun Alerts
+description: 该项目通过 Frigate-on-Jetson 提供实时枪支检测功能
+title: 在 Jetson 上使用 Frigate 与 Node-RED 枪支警报
 image: https://files.seeedstudio.com/wiki/solution/crowd_tracking/Node-RED%20Gun%20Alerts1.webp
-slug: /solutions/frigate-on-jetson-nodered-gun-alerts
+slug: /cn/solutions/nodered-gun-alerts
 last_update:
   date: 09/05/2025
   author: lian
 ---
 
-This project provides real-time gun detection capabilities via Frigate-on-Jetson, combined with Node-RED to build a visual alert and notification system, enabling automatic threat detection, event alerts, and historical traceability in secured areas.  
+该项目通过 Frigate-on-Jetson 提供实时枪支检测功能，结合 Node-RED 构建可视化警报和通知系统，实现安全区域的自动威胁检测、事件警报和历史追溯。
 
-> ⚠️ **Compliance Notice**  
-> This system is only intended for defensive security purposes. Users must ensure compliance with local laws and regulations and obtain relevant monitoring permits.  
+> ⚠️ **合规声明**  
+> 该系统仅用于防御性安全目的。用户必须确保遵守当地法律法规并获得相关监控许可。
 
 ---
 
-## 📘 1. System Overview  
+## 📘 1. 系统概述
 
-- Detection Engine: Frigate-on-Jetson (based on YOLOv4-tiny-288 gun detection model, accelerated by TensorRT)  
-- Event Flow: MQTT message push → Node-RED processing  
-- Alert Channels: Node-RED Dashboard real-time alert panel + Webhook push  
-- Hardware Platform: NVIDIA Jetson series (Nano, Xavier, Orin)  
+- 检测引擎：Frigate-on-Jetson（基于 YOLOv4-tiny-288 枪支检测模型，TensorRT 加速）
+- 事件流：MQTT 消息推送 → Node-RED 处理
+- 警报渠道：Node-RED Dashboard 实时警报面板 + Webhook 推送
+- 硬件平台：NVIDIA Jetson 系列（Nano、Xavier、Orin）
 
-## 🏗️ 2. System Architecture  
+## 🏗️ 2. 系统架构
 
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Architecture%20Diagram.png"/></div>
-- Frigate analyzes real-time video streams and publishes gun detection events to MQTT topics.  
-- Node-RED subscribes to topics such as `frigate/reviews`, parses, logs, and forwards gun events.  
-- The frontend Dashboard displays the latest alert frames and historical records.  
-- Webhook provides instant message push to any platform.  
+- Frigate 分析实时视频流并将枪支检测事件发布到 MQTT 主题。
+- Node-RED 订阅 `frigate/reviews` 等主题，解析、记录并转发枪支事件。
+- 前端 Dashboard 显示最新警报帧和历史记录。
+- Webhook 提供即时消息推送到任何平台。
 
-## ⚙️ 3. Installation & Deployment
+## ⚙️ 3. 安装与部署
 
-## 3.1 Frigate-on-Jetson Installation
+## 3.1 Frigate-on-Jetson 安装
 
-**GitHub Repository:** [Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
+**GitHub 仓库：** [Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
 
-### 3.1.1 Environment Requirements
+### 3.1.1 环境要求
 
-- NVIDIA Jetson devices (Nano, Xavier, Orin)  
-- Ubuntu 22.04 + JetPack 6.x  
+- NVIDIA Jetson 设备（Nano、Xavier、Orin）
+- Ubuntu 22.04 + JetPack 6.x
 
-### 3.1.2 One-Click Installation
+### 3.1.2 一键安装
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/Seeed-Studio/frigate-on-jetson/main/install.sh | bash
 ```
 
-### 3.1.3 Access Web Interface
+### 3.1.3 访问 Web 界面
 
 ```cpp
 http://<JETSON_IP>:5000
 ```
 
-### 3.1.4 Running Effect Screenshots
+### 3.1.4 运行效果截图
 
-- Homepage view:Default configuration includes two local videos for demonstration
+- 主页视图：默认配置包含两个本地视频用于演示
 
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/homepage%20demo.png"/></div>
-- Debugging interface showing detection effect
+- 调试界面显示检测效果
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/test%20demo.png"/></div>
 
-## 🟢 3.2 Node-RED Installation
+## 🟢 3.2 Node-RED 安装
 
-### 3.2.1 Docker Deployment
+### 3.2.1 Docker 部署
 
 ```bash
 sudo docker run -d --restart=always -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
 ```
 
-### 3.2.2 Access Web Interface
+### 3.2.2 访问 Web 界面
 
 ```cpp
 http://<JETSON_IP>:1880/
 ```
 
-### 3.2.3 Install Dashboard Plugin
+### 3.2.3 安装 Dashboard 插件
 >
-> 💡 **Tip:** The following steps will enable a simple web interface.
+> 💡 **提示：** 以下步骤将启用简单的 Web 界面。
 
-- Settings page  
-- → Control Panel  
-- → Install  
-- → Search `@flowfuse/node-red-dashboard`  # 【Used to provide a simple interface】  
-- → Click Install
+- 设置页面
+- → 控制面板
+- → 安装
+- → 搜索 `@flowfuse/node-red-dashboard`  # 【用于提供简单界面】
+- → 点击安装
 
-## 🟠 3.3 Integration of Frigate and Node-RED
+## 🟠 3.3 Frigate 和 Node-RED 集成
 
-### 3.3.1 Pre-checks
+### 3.3.1 预检查
 
-- Ensure that Frigate can be accessed normally  
-- Ensure that the MQTT service is enabled and accessible  
-- Ensure that the Node-RED service is running normally and can be accessed  
-
----
-
-### 3.3.2 Node-RED Workflow Introduction
-
-- MQTT listening (`frigate/reviews`) → Parse gun detection events  
-- Event extraction (Extract Gun Event) → Determine whether it contains gun objects  
-- Alert information construction → Thumbnail path concatenation, time formatting, counter accumulation  
-- Dashboard update → Latest image, history table, counter  
-- Webhook push → Enterprise WeChat bot  
-
-> 💡 **Tip:** The Webhook URL can be replaced with your own notification system as needed.  
+- 确保 Frigate 可以正常访问
+- 确保 MQTT 服务已启用且可访问
+- 确保 Node-RED 服务正常运行且可访问
 
 ---
 
-### 3.3.3 Node-RED Workflow JSON (Part 1/3)
+### 3.3.2 Node-RED 工作流介绍
 
-> ⚠️ **Important:** After importing, be sure to adjust the corresponding parameters according to the actual situation.
+- MQTT 监听（`frigate/reviews`）→ 解析枪支检测事件
+- 事件提取（Extract Gun Event）→ 判断是否包含枪支对象
+- 警报信息构建 → 缩略图路径拼接、时间格式化、计数器累加
+- Dashboard 更新 → 最新图像、历史表格、计数器
+- Webhook 推送 → 企业微信机器人
+
+> 💡 **提示：** Webhook URL 可根据需要替换为您自己的通知系统。
+
+---
+
+### 3.3.3 Node-RED 工作流 JSON（第 1/3 部分）
+
+> ⚠️ **重要：** 导入后，请务必根据实际情况调整相应参数。
 
 ```json
 [{
@@ -605,6 +605,7 @@ http://<JETSON_IP>:1880/
     "@flowfuse/node-red-dashboard": "1.26.0"
   }
 }]
+
 ```
 
 - **MQTT Broker Address** (default: `172.17.0.1:1883`)  

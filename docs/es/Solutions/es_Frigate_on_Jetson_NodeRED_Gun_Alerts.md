@@ -1,115 +1,115 @@
 ---
-description: This project provides real-time gun detection capabilities via Frigate-on-Jetson
-title: Frigate on Jetson with Node-RED Gun Alerts
+description: Este proyecto proporciona capacidades de detección de armas en tiempo real a través de Frigate-on-Jetson
+title: Frigate en Jetson con alertas de armas mediante Node-RED
 image: https://files.seeedstudio.com/wiki/solution/crowd_tracking/Node-RED%20Gun%20Alerts1.webp
-slug: /solutions/frigate-on-jetson-nodered-gun-alerts
+slug: /es/solutions/nodered-gun-alerts
 last_update:
   date: 09/05/2025
   author: lian
 ---
 
-This project provides real-time gun detection capabilities via Frigate-on-Jetson, combined with Node-RED to build a visual alert and notification system, enabling automatic threat detection, event alerts, and historical traceability in secured areas.  
+Este proyecto proporciona capacidades de detección de armas en tiempo real a través de Frigate-on-Jetson, combinado con Node-RED para construir un sistema visual de alertas y notificaciones, permitiendo detección automática de amenazas, alertas de eventos y trazabilidad histórica en áreas seguras.
 
-> ⚠️ **Compliance Notice**  
-> This system is only intended for defensive security purposes. Users must ensure compliance with local laws and regulations and obtain relevant monitoring permits.  
+> ⚠️ **Aviso de Cumplimiento**  
+> Este sistema está destinado únicamente para propósitos de seguridad defensiva. Los usuarios deben asegurar el cumplimiento con las leyes y regulaciones locales y obtener los permisos de monitoreo relevantes.
 
 ---
 
-## 📘 1. System Overview  
+## 📘 1. Descripción General del Sistema
 
-- Detection Engine: Frigate-on-Jetson (based on YOLOv4-tiny-288 gun detection model, accelerated by TensorRT)  
-- Event Flow: MQTT message push → Node-RED processing  
-- Alert Channels: Node-RED Dashboard real-time alert panel + Webhook push  
-- Hardware Platform: NVIDIA Jetson series (Nano, Xavier, Orin)  
+- Motor de Detección: Frigate-on-Jetson (basado en el modelo de detección de armas YOLOv4-tiny-288, acelerado por TensorRT)
+- Flujo de Eventos: Envío de mensajes MQTT → Procesamiento Node-RED
+- Canales de Alerta: Panel de alertas en tiempo real Node-RED Dashboard + Envío Webhook
+- Plataforma de Hardware: Serie NVIDIA Jetson (Nano, Xavier, Orin)
 
-## 🏗️ 2. System Architecture  
+## 🏗️ 2. Arquitectura del Sistema
 
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Architecture%20Diagram.png"/></div>
-- Frigate analyzes real-time video streams and publishes gun detection events to MQTT topics.  
-- Node-RED subscribes to topics such as `frigate/reviews`, parses, logs, and forwards gun events.  
-- The frontend Dashboard displays the latest alert frames and historical records.  
-- Webhook provides instant message push to any platform.  
+- Frigate analiza flujos de video en tiempo real y publica eventos de detección de armas a temas MQTT.
+- Node-RED se suscribe a temas como `frigate/reviews`, analiza, registra y reenvía eventos de armas.
+- El Dashboard frontend muestra los marcos de alerta más recientes y registros históricos.
+- Webhook proporciona envío instantáneo de mensajes a cualquier plataforma.
 
-## ⚙️ 3. Installation & Deployment
+## ⚙️ 3. Instalación y Despliegue
 
-## 3.1 Frigate-on-Jetson Installation
+## 3.1 Instalación de Frigate-on-Jetson
 
-**GitHub Repository:** [Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
+**Repositorio GitHub:** [Seeed-Studio/frigate-on-jetson](https://github.com/Seeed-Studio/frigate-on-jetson)
 
-### 3.1.1 Environment Requirements
+### 3.1.1 Requisitos del Entorno
 
-- NVIDIA Jetson devices (Nano, Xavier, Orin)  
-- Ubuntu 22.04 + JetPack 6.x  
+- Dispositivos NVIDIA Jetson (Nano, Xavier, Orin)
+- Ubuntu 22.04 + JetPack 6.x
 
-### 3.1.2 One-Click Installation
+### 3.1.2 Instalación con Un Clic
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/Seeed-Studio/frigate-on-jetson/main/install.sh | bash
 ```
 
-### 3.1.3 Access Web Interface
+### 3.1.3 Acceder a la Interfaz Web
 
 ```cpp
 http://<JETSON_IP>:5000
 ```
 
-### 3.1.4 Running Effect Screenshots
+### 3.1.4 Capturas de Pantalla del Efecto de Ejecución
 
-- Homepage view:Default configuration includes two local videos for demonstration
+- Vista de la página principal: La configuración predeterminada incluye dos videos locales para demostración
 
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/homepage%20demo.png"/></div>
-- Debugging interface showing detection effect
+- Interfaz de depuración mostrando el efecto de detección
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/test%20demo.png"/></div>
 
-## 🟢 3.2 Node-RED Installation
+## 🟢 3.2 Instalación de Node-RED
 
-### 3.2.1 Docker Deployment
+### 3.2.1 Despliegue con Docker
 
 ```bash
 sudo docker run -d --restart=always -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
 ```
 
-### 3.2.2 Access Web Interface
+### 3.2.2 Acceder a la Interfaz Web
 
 ```cpp
 http://<JETSON_IP>:1880/
 ```
 
-### 3.2.3 Install Dashboard Plugin
+### 3.2.3 Instalar Plugin Dashboard
 >
-> 💡 **Tip:** The following steps will enable a simple web interface.
+> 💡 **Consejo:** Los siguientes pasos habilitarán una interfaz web simple.
 
-- Settings page  
-- → Control Panel  
-- → Install  
-- → Search `@flowfuse/node-red-dashboard`  # 【Used to provide a simple interface】  
-- → Click Install
+- Página de configuración
+- → Panel de Control
+- → Instalar
+- → Buscar `@flowfuse/node-red-dashboard`  # 【Usado para proporcionar una interfaz simple】
+- → Hacer clic en Instalar
 
-## 🟠 3.3 Integration of Frigate and Node-RED
+## 🟠 3.3 Integración de Frigate y Node-RED
 
-### 3.3.1 Pre-checks
+### 3.3.1 Verificaciones Previas
 
-- Ensure that Frigate can be accessed normally  
-- Ensure that the MQTT service is enabled and accessible  
-- Ensure that the Node-RED service is running normally and can be accessed  
-
----
-
-### 3.3.2 Node-RED Workflow Introduction
-
-- MQTT listening (`frigate/reviews`) → Parse gun detection events  
-- Event extraction (Extract Gun Event) → Determine whether it contains gun objects  
-- Alert information construction → Thumbnail path concatenation, time formatting, counter accumulation  
-- Dashboard update → Latest image, history table, counter  
-- Webhook push → Enterprise WeChat bot  
-
-> 💡 **Tip:** The Webhook URL can be replaced with your own notification system as needed.  
+- Asegurar que Frigate pueda ser accedido normalmente
+- Asegurar que el servicio MQTT esté habilitado y accesible
+- Asegurar que el servicio Node-RED esté ejecutándose normalmente y pueda ser accedido
 
 ---
 
-### 3.3.3 Node-RED Workflow JSON (Part 1/3)
+### 3.3.2 Introducción al Flujo de Trabajo de Node-RED
 
-> ⚠️ **Important:** After importing, be sure to adjust the corresponding parameters according to the actual situation.
+- Escucha MQTT (`frigate/reviews`) → Analizar eventos de detección de armas
+- Extracción de eventos (Extract Gun Event) → Determinar si contiene objetos de armas
+- Construcción de información de alerta → Concatenación de ruta de miniatura, formato de tiempo, acumulación de contador
+- Actualización de Dashboard → Imagen más reciente, tabla de historial, contador
+- Envío Webhook → Bot de WeChat empresarial
+
+> 💡 **Consejo:** La URL del Webhook puede ser reemplazada con su propio sistema de notificaciones según sea necesario.
+
+---
+
+### 3.3.3 JSON del Flujo de Trabajo de Node-RED (Parte 1/3)
+
+> ⚠️ **Importante:** Después de importar, asegúrese de ajustar los parámetros correspondientes según la situación real.
 
 ```json
 [{
@@ -605,6 +605,7 @@ http://<JETSON_IP>:1880/
     "@flowfuse/node-red-dashboard": "1.26.0"
   }
 }]
+
 ```
 
 - **MQTT Broker Address** (default: `172.17.0.1:1883`)  
