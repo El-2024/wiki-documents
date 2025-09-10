@@ -7,7 +7,7 @@ keywords:
   - Jetson
   - whisper
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /ja/jaWhisper_on_Jetson_for_Real_Time_Speech_to_Text
+slug: /ja/Whisper_on_Jetson_for_Real_Time_Speech_to_Text
 
 last_update:
   date: 05/15/2025
