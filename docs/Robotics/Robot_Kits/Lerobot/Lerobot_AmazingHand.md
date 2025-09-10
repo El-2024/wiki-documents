@@ -11,7 +11,7 @@ keywords:
 - Humanoid Robot
 - Arduino
 - Python
-slug: /lerobot_AmazingHand
+slug: /lerobot_amazinghand
 last_update:
   date: 9/10/2025
   author: TienjuiWong
