@@ -12,7 +12,7 @@ keywords:
 slug: /es/solutions/indoor-positioning-bluetooth-lorawan-tracker
 sidebar_position: 1
 last_update:
-  date: 08/11/2025
+  date: 09/10/2025
   author: Spencer
 ---
 
@@ -20,11 +20,15 @@ last_update:
 
 ### Descripción General
 
-El posicionamiento interior es un desafío común para muchas industrias. Aunque soluciones como Wi-Fi o UWB ofrecen alta precisión, pueden ser costosas y complejas de instalar. Esta solución proporciona una alternativa rentable y fácil de desplegar para **posicionamiento basado en zonas**. Combina dos poderosas tecnologías inalámbricas: **Bluetooth Low Energy (BLE)** para determinar presencia dentro de un área específica, y **LoRaWAN** para transmisión de datos de largo alcance y bajo consumo.
+El posicionamiento interior es un desafío común para muchas industrias. Aunque existen sistemas de alta precisión como UWB, pueden ser costosos y complejos. Esta solución ofrece una alternativa flexible y rentable al combinar dos poderosas tecnologías inalámbricas: **Bluetooth Low Energy (BLE)** para detección de ubicación y **LoRaWAN** para transmisión de datos de largo alcance y bajo consumo.
 
-En su núcleo, este sistema utiliza dispositivos como el **SenseCAP T1000 Tracker** para determinar su proximidad al beacon BLE más cercano. El método principal es confirmar presencia dentro de una zona específica, lo cual es excelente para casos de uso como check-ins automatizados o verificar que un activo está en una habitación designada.
+El sistema está construido alrededor del [SenseCAP T1000 Tracker](/es/SenseCAP_T1000_tracker/Introduction) y soporta dos modos distintos de posicionamiento, permitiéndote equilibrar precisión con duración de batería según tus necesidades:
 
-Aunque técnicamente es posible usar la intensidad de señal de múltiples beacons (una técnica llamada trilateración) para estimar coordenadas X-Y, este enfoque a menudo intercambia confiabilidad y duración de batería por precisión. La intensidad de señal puede ser inestable y verse afectada por factores ambientales, y transmitir datos desde múltiples beacons consume más energía. Por lo tanto, esta solución está optimizada para **detección de presencia** confiable y de larga duración de batería en lugar de seguimiento de coordenadas de alta precisión.
+1.  **Seguimiento de Alta Precisión (Trilateración):** Cuando un tracker detecta señales de **tres o más** beacons BLE, puede calcular sus coordenadas precisas (x, y) en un mapa. Este modo es ideal para rastrear el movimiento de activos o personal, proporcionando actualizaciones de ubicación precisas periódicamente o cuando ocurre movimiento.
+
+2.  **Posicionamiento Basado en Zonas (Proximidad):** Cuando un tracker está al alcance de solo uno o dos beacons, identifica su ubicación basándose en la proximidad al beacon más cercano. Este modo es perfecto para casos de uso más simples como check-ins automatizados, confirmar que un activo está en una habitación designada, o conservar batería reportando ubicación con menos frecuencia.
+
+Al soportar ambos métodos, esta solución proporciona un sistema versátil y fácil de desplegar para una amplia gama de aplicaciones de seguimiento interior, desde detección simple de presencia hasta monitoreo más detallado basado en coordenadas.
 
 :::tip Navega a nuestra página de paquete
 
@@ -36,8 +40,8 @@ Consulta nuestra página de paquete [Posicionamiento Integrado Interior y Exteri
 
 - **Rentable y Escalable**: Aprovecha beacons BLE asequibles y evita la necesidad de instalaciones costosas de gateway en cada habitación.
 - **Transmisión de Datos de Largo Alcance**: Un solo gateway LoRaWAN puede cubrir un edificio completo o campus, reduciendo drásticamente los costos de infraestructura.
-- **Alerta SOS Instantánea**: Los trackers incluyen un botón de pánico que, al presionarse, envía inmediatamente una alerta SOS vía LoRaWAN para respuesta de emergencia rápida.
-- **Gestión Inteligente de Energía**: Al usar un acelerómetro integrado, el tracker puede reportar solo cuando se detecta movimiento y enviar señales de "latido" periódicas de lo contrario. Esto extiende dramáticamente la duración de la batería a más de un año para muchas aplicaciones de seguimiento de activos.
+- **Alerta SOS Instantánea**: Los trackers incluyen un botón de pánico que, al presionarse, envía inmediatamente una alerta SOS vía LoRaWAN para respuesta rápida de emergencia.
+- **Gestión Inteligente de Energía**: Al usar un acelerómetro incorporado, el tracker puede reportar solo cuando se detecta movimiento y enviar señales periódicas de "latido" de lo contrario. Esto extiende dramáticamente la duración de la batería hasta 6 meses con configuraciones óptimas para muchas aplicaciones de seguimiento de activos.
 - **Despliegue Simple**: Configurar beacons BLE y gateways LoRaWAN es sencillo, poniendo tu sistema de posicionamiento en línea rápidamente.
 - **Software de Código Abierto**: El proyecto es completamente de código abierto, permitiéndote construir y personalizar tu propio servidor backend usando nuestro [repositorio de GitHub.](https://github.com/Seeed-Solution/Solution_IndoorPositioning_H5)
 
@@ -49,8 +53,8 @@ Consulta nuestra página de paquete [Posicionamiento Integrado Interior y Exteri
         <p>Esta solución es ideal para una amplia gama de aplicaciones de seguimiento basado en zonas y seguridad:</p>
     </div>
     <ul class="info-list">
-        <li class="info-item"><div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg></div><div class="info-content"><h3>Seguridad de Campus y Escuela</h3><p>Proporciona a estudiantes y personal un tracker portátil. El botón SOS integrado les permite enviar instantáneamente una alerta de emergencia con su última ubicación conocida desde cualquier lugar del campus, brindando tranquilidad y permitiendo tiempos de respuesta más rápidos.</p></div></li>
-        <li class="info-item"><div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg></div><div class="info-content"><h3>Gestión de Activos</h3><p>Rastrea la ubicación de activos valiosos, tanto en interiores como exteriores (ej., vehículos en un estacionamiento). Configura el tracker para reportar solo cuando se mueve, conservando batería mientras aseguras ser alertado de movimientos no autorizados.</p></div></li>
+        <li class="info-item"><div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg></div><div class="info-content"><h3>Seguridad de Campus y Escuela</h3><p>Proporciona a estudiantes y personal un tracker portátil. El botón SOS incorporado les permite enviar instantáneamente una alerta de emergencia con su última ubicación conocida desde cualquier lugar del campus, brindando tranquilidad y permitiendo tiempos de respuesta más rápidos.</p></div></li>
+        <li class="info-item"><div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg></div><div class="info-content"><h3>Gestión de Activos</h3><p>Rastrea la ubicación de activos valiosos, tanto en interiores como exteriores (ej., vehículos en un estacionamiento). Configura el tracker para reportar solo cuando se mueve, conservando batería mientras aseguras ser alertado de movimiento no autorizado.</p></div></li>
         <li class="info-item"><div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.542 2.72c.266.059.537.1.82.118m7.542 2.72a3 3 0 01-4.682-2.72m0 0a3 3 0 013.741-.479m-.479 3.742a9.094 9.094 0 01-3.742.479m-12 .482c.266.059.537.1.82.118a9.094 9.094 0 013.742-.479m0 0a3 3 0 01-3.741.479m5.421 2.053a3 3 0 01-4.682-2.72m0 0c.266.059.537.1.82.118a9.094 9.094 0 013.742-.479M12 12a3 3 0 01-3-3m0 0a3 3 0 013-3m0 0a3 3 0 013 3m0 0a3 3 0 01-3 3z" /></svg></div><div class="info-content"><h3>Check-In Automatizado y Gestión de Personal</h3><p>Al ajustar la intensidad de señal de un beacon BLE, puedes crear una zona de "check-in" para oficinas o hogares de ancianos. Cuando una persona que lleva un tracker entra a la zona, su presencia se registra automáticamente.</p></div></li>
     </ul>
 </div>
@@ -66,9 +70,9 @@ El sistema opera bajo un principio simple pero poderoso. Los trackers móviles e
 Los componentes principales son:
 
 1. **Beacons BLE**: Estos son pequeños transmisores fijos colocados en ubicaciones conocidas (ej., entradas de habitaciones, zonas clave). Transmiten continuamente un ID único.
-2. **SenseCAP T1000 Tracker**: Este es el dispositivo móvil adjunto al activo o persona que quieres rastrear. Escanea beacons BLE cercanos e identifica el que tiene la señal más fuerte.
+2. **SenseCAP T1000 Tracker**: Este es el dispositivo móvil conectado al activo o persona que quieres rastrear. Escanea beacons BLE cercanos e identifica el que tiene la señal más fuerte.
 3. **Gateway LoRaWAN**: El tracker envía un paquete de datos conteniendo el ID del beacon BLE más cercano al gateway vía LoRaWAN.
-4. **Servidor de Red y Aplicación**: El gateway reenvía los datos a un Servidor de Red LoRaWAN([SenseCAP Data](https://sensecap.seeed.cc/portal)), que luego los enruta a un servidor de aplicación. El servidor de aplicación mantiene un mapa de los IDs de beacon y sus ubicaciones del mundo real, permitiéndole determinar la posición del tracker (ej., "Tracker #58 está cerca del Beacon #12, que está en la Sala de Conferencias 3").
+4. **Servidor de Red y Aplicación**: El gateway reenvía los datos a un Servidor de Red LoRaWAN([SenseCraft Data](https://sensecap.seeed.cc/portal)), que luego los enruta a un servidor de aplicación. El servidor de aplicación mantiene un mapa de los IDs de beacon y sus ubicaciones del mundo real, permitiéndole determinar la posición del tracker (ej., "Tracker #58 está cerca del Beacon #12, que está en la Sala de Conferencias 3").
 
 Antes de comenzar, asegúrate de tener lo siguiente:
 
@@ -110,7 +114,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
                           <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
                   </div>
-                  <p><span class="highlight">Detección de Movimiento:</span> Acelerómetro integrado para detección en tiempo real de movimiento y estado estacionario.</p>
+                  <p><span class="highlight">Detección de Movimiento:</span> Acelerómetro incorporado para detección en tiempo real de movimiento y estado estacionario.</p>
               </li>
               <li class="feature-item">
                   <div class="feature-icon">
@@ -127,8 +131,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
   <!-- Card 2: BLE Beacons -->
   <div class="seeed-feature-card">
     <div class="card-header">
-        <h2><a href="https://www.seeedstudio.com/BC01-Indoor-Bluetooth-Beacon-p-5791.html">Beacons BLE</a></h2>
-        <p>Transmisión Regular de Bluetooth</p>
+        <h2><a href="https://www.seeedstudio.com/BC01-Indoor-Bluetooth-Beacon-p-5791.html">Beacons BLE</a></h2>        <p>Transmisión Bluetooth Regular</p>
     </div>
     <div class="card-body">
         <ul class="features-list">
@@ -138,7 +141,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                     </svg>
                 </div>
-                <p><span class="highlight">Compatible con Protocolo:</span> Bluetooth® LE 5.0 | Soporte completo para formatos iBeacon y Eddystone.</p>
+                <p><span class="highlight">Compatible con Protocolos:</span> Bluetooth® LE 5.0 | Soporte completo para formatos iBeacon y Eddystone.</p>
             </li>
             <li class="feature-item">
                 <div class="feature-icon">
@@ -178,7 +181,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
   <!-- Card 3: SenseCAP M2 Multi-Platform Gateway -->
   <div class="seeed-feature-card">
     <div class="card-header">
-        <h2><a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html">SenseCAP M2 Multi-Platform Gateway</a></h2>
+        <h2><a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html">SenseCAP M2 Gateway Multi-Plataforma</a></h2>
         <p>Infraestructura de Red LoRaWAN®</p>
     </div>
     <div class="card-body">
@@ -214,7 +217,7 @@ Antes de comenzar, asegúrate de tener lo siguiente:
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 17.25v-.228a4.5 4.5 0 00-.12-1.03l-2.268-9.64a3.375 3.375 0 00-3.285-2.602H7.923a3.375 3.375 0 00-3.285 2.602l-2.268 9.64a4.5 4.5 0 00-.12 1.03v.228m19.5 0a3 3 0 01-3 3H5.25a3 3 0 01-3-3m19.5 0a3 3 0 00-3-3H5.25a3 3 0 00-3 3m16.5 0h.008v.008h-.008v-.008z" />
                     </svg>
                 </div>
-                <p><span class="highlight">Solución Integrada:</span> Capacidades de servidor LoRaWAN local integrado para simplificar el despliegue y gestión de red.</p>
+                <p><span class="highlight">Solución Integrada:</span> Capacidades integradas de servidor LoRaWAN local para simplificar el despliegue y gestión de red.</p>
             </li>
         </ul>
     </div>
@@ -258,8 +261,7 @@ A continuación, cree una lista (plantilla) para registrar la **Dirección MAC �
 MAC Address,Location,Beacon ID
 c30000564b31,"Main Entrance",01
 c30000564b32,"Warehouse Zone A",02
-c30000564b33,"Corner Office",03
-```
+c30000564b33,"Corner Office",03```
 
 El video a continuación muestra cómo utilizarás esta lista para agregar tus beacons al mapa de la aplicación más adelante. Crear un registro preciso ahora hará que la configuración del software sea mucho más fácil.
 
@@ -346,7 +348,7 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 
 - Descarga e inicia la aplicación SenseCraft Indoor Positioning.
 - `-p 5173:5173` hace que el panel web sea accesible en el puerto `5173`.
-- `-v /data/indoor-positioning/db/:/app/db/` le dice a la aplicación que almacene su base de datos y mapas en la carpeta `/data/indoor-positioning/db/` en tu máquina.
+- `-v /data/indoor-positioning/db/:/app/db/` le dice a la aplicación que almacene su base de datos y mapas en la carpeta `/data/indoor-positioning/db/` de tu máquina.
 - `-d` ejecuta la aplicación en segundo plano.
 
 Después de ejecutar el comando, puedes acceder al panel abriendo un navegador web y yendo a `http://<tu_ip_del_servidor>:5173`.
@@ -379,7 +381,7 @@ En el panel, puedes habilitar una o ambas de las siguientes fuentes MQTT para co
 
 1. Habilita el interruptor **ChirpStack MQTT**.
 2. Ingresa la **dirección del servidor** de ChirpStack y el **ID de Aplicación**.
-      - El campo de tópico MQTT se actualizará automáticamente. Puedes encontrar el **ID de Aplicación** en la página principal de tu aplicación dentro de ChirpStack.
+      - El campo de tema MQTT se actualizará automáticamente. Puedes encontrar el **ID de Aplicación** en la página principal de tu aplicación dentro de ChirpStack.
 
 <div align="center">
 <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/chirpstack-application-id.png" alt="chirpstack-application-id"/>
@@ -413,7 +415,7 @@ Primero, ve al menú de configuración y sube una imagen de tu plano de planta. 
 2. Agrega Tus Beacons
 Ve a la sección "Beacons". Usando la lista que creaste en el [Paso 1a](#1a-desplegar-beacons), agrega la información de cada beacon (como su dirección MAC). La forma más fácil de hacer esto es hacer clic directamente en la ubicación del beacon en el mapa que acabas de subir.
 3. Ajusta el Factor Ambiental (Opcional)
-Esta es una configuración avanzada que ajusta finamente la precisión de ubicación. Ayuda al sistema a convertir la intensidad de señal (RSSI) en una distancia más precisa al tener en cuenta tu entorno específico.
+Esta es una configuración avanzada que ajusta finamente la precisión de ubicación. Ayuda al sistema a convertir la intensidad de señal (RSSI) en una distancia más precisa teniendo en cuenta tu entorno específico.
     - Para espacios abiertos, el valor predeterminado de ~2.0 es usualmente suficiente.
     - Para áreas interiores complejas con muchas paredes y obstáculos, puede que necesites ajustar el valor entre 1.8 y 4.0.
     - **Recomendación:** Es mejor dejar esto en la configuración predeterminada para empezar. Puedes volver y ajustarlo más tarde si necesitas mejorar la precisión del posicionamiento.
@@ -435,7 +437,7 @@ El paso final es encender tu rastreador y verlo en el mapa.
   <source src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/indoor-position-tracker-configuration.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
-<p><em>Conserva la configuración predeterminada de la plataforma (SenseCAP for The Things Network), cuando uses SenseCraft Data.</em></p>
+<p><em>Opta por `Other Platform`, cuando uses ChirpStack.</em></p><p><em>Conserva la configuración predeterminada de la plataforma (SenseCAP for The Things Network), cuando uses SenseCraft Data.</em></p>
 </div>
 
 ## Resumen de Características de la Aplicación
@@ -556,7 +558,7 @@ El sistema soporta dos métodos de posicionamiento:
 1. **Trilateración:** Cuando el rastreador detecta **tres o más** beacons, calcula una coordenada precisa (x, y). Este es el modo predeterminado y más preciso.
 2. **Proximidad (Posicionamiento por Área):** Si habilitas esto y el rastreador solo puede detectar **un** beacon, reportará su posición como estando "cerca" de ese beacon dentro de un radio calculado. Esto es útil para asegurar cobertura en todas las áreas.
 
-### Característica 3: Visualización del Historial de Alertas
+### Característica 3: Ver Historial de Alertas
 
 Puedes ver el historial de alertas (ej., presiones del botón SOS) para cualquier rastreador haciendo clic en su icono en el mapa. El sistema registra cada nueva alerta y continuará enviando notificaciones para una alerta activa hasta que sea resuelta.
 
@@ -566,7 +568,7 @@ Puedes filtrar los rastreadores mostrados en el mapa por sus UUIDs de beacon aso
 
 ## Referencia y Recursos
 
-- **Página de Inicio**: [SenseCraft Indoor Positioning Solution](https://sensecraft.seeed.cc/solution/indoor-positioning-solution/)
+- **Página de Inicio**: [Solución de Posicionamiento Interior SenseCraft](https://cc.seeedstudio.com/solutions/campus-safety-management)
 - **Imagen Docker**: [seeedcloud/sensecraft-indoor-positioning - Docker Hub](https://hub.docker.com/r/seeedcloud/sensecraft-indoor-positioning)
 - **Sitio de Demo en Vivo**: [IndoorPositioning](https://indoorpositioning-demo.seeed.cc/)
 
@@ -617,7 +619,7 @@ Puedes filtrar los rastreadores mostrados en el mapa por sus UUIDs de beacon aso
 
 Puedes usar la **app SenseCraft** para configurar el beacon BC01.
 
-1. Instala la app SenseCraft desde [Google Play Store](https://play.google.com/store/apps/details?id=com.seeed.sensecraft) o [Apple App Store](https://apps.apple.com/us/app/sensecraft/id1476154572).
+1. Instala la app SenseCraft desde [Google Play Store](https://play.google.com/store/apps/details?id=cc.seeed.sensecapmate) o [Apple App Store](https://apps.apple.com/us/app/sensecraft/id1619944834).
 2. Abre la app y habilita Bluetooth en tu teléfono.
 3. Escanea beacons cercanos y selecciona el que deseas configurar.
 4. Ingresa la contraseña predeterminada "**seeed123**" para acceder a la configuración.
