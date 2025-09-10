@@ -23,7 +23,7 @@ import TabItem from '@theme/TabItem';
 </div><br />
 
 :::caution Consejos de Actualización de Firmware
-Recomendamos que **[completes la actualización del firmware de tu producto](#preliminar)** tan pronto como lo recibas para obtener la mejor experiencia.
+Recomendamos que **[completes la actualización del firmware de tu producto](#preliminary)** tan pronto como lo recibas para obtener la mejor experiencia.
 :::
 
 ## Introducción
@@ -160,7 +160,7 @@ Por lo tanto, necesitamos completar los siguientes pasos de configuración de re
 La Pantalla ePaper reTerminal E Series solo soporta redes WiFi de 2.4GHz, no 5GHz u otras bandas.
 :::
 
-**Paso 4.** Al conectarse exitosamente, el dispositivo emitirá un pitido de confirmación y mostrará una pantalla con código de emparejamiento.
+**Paso 4.** Al conectarse exitosamente, el dispositivo emitirá un pitido de confirmación y mostrará una pantalla de código de emparejamiento.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/136.png" style={{width:600, height:'auto'}}/></div>
 
@@ -227,7 +227,7 @@ El dispositivo solo puede configurarse a través de una red Wi-Fi de 2.4G.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/156.png" style={{width:250, height:'auto'}}/></div><br />
 
-**Paso 7.** Puedes tocar el dispositivo en la lista para ver su página **Device Detail**. Desde aquí, puedes gestionar el dispositivo y subir fotos. Para diseños de dashboard y canvas más complejos, se te pedirá usar la versión de navegador web de SenseCraft.
+**Paso 7.** Puedes tocar el dispositivo en la lista para ver su página **Device Detail**. Desde aquí, puedes gestionar el dispositivo y subir fotos. Para diseño de dashboard y canvas más complejos, se te pedirá usar la versión de navegador web de SenseCraft.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/157.png" style={{width:250, height:'auto'}}/></div><br />
 
@@ -339,6 +339,10 @@ Cuando opera con energía de batería:
 
 - El dispositivo mostrará un ícono de batería baja en la esquina superior derecha cuando el nivel de batería esté por debajo del 20%
 
+:::tip
+Si quieres escribir algo de código por ti mismo para leer el voltaje de la batería, será más preciso agregar un retraso de 10ms antes de la función analogRead().
+:::
+
 ### Pines de Expansión
 
 El reTerminal E1001 cuenta con un conector de expansión de 8 pines (J2) que proporciona opciones de conectividad para agregar sensores externos, módulos u otro hardware para extender la funcionalidad de tu dispositivo. Este conector de expansión expone varios pines GPIO del ESP32-S3 e interfaces de comunicación, convirtiéndolo en un punto de conexión versátil para tus proyectos DIY.
@@ -382,7 +386,7 @@ El conector de expansión de 8 pines (J2) tiene el siguiente pinout:
    <td>ESP_IO2/ADC1_CH4</td>
    <td>GPIO2</td>
    <td>GPIO/ADC</td>
-   <td>E/S de propósito general con capacidad de entrada analógica (canal 4 de ADC1)</td>
+   <td>E/S de propósito general con capacidad de entrada analógica (canal 4 ADC1)</td>
   </tr>
   <tr>
    <td>5</td>
@@ -421,33 +425,33 @@ El reTerminal E1001 viene con un accesorio de soporte impreso en 3D que te permi
 
 **Paso 1.** Localiza el soporte impreso en 3D incluido en el paquete.
 
-**Paso 2.** Posiciona el soporte contra el área de montaje designada en la parte inferior trasera del reTerminal E1001 donde están ubicadas las tuercas empotradas.
-
-**Paso 3.** Usa un destornillador largo para asegurar el soporte al dispositivo apretando los tornillos en las tuercas empotradas en la parte trasera del reTerminal E1001.
+**Paso 2.** Posiciona el soporte contra el área de montaje designada en la parte posterior inferior del reTerminal E1001 donde se encuentran las tuercas empotradas.
 
 
-**Paso 4.** Una vez fijado de forma segura, coloque el reTerminal E1001 en una superficie plana donde el soporte lo mantenga en posición vertical.
+**Paso 3.** Use un destornillador largo para asegurar el soporte al dispositivo apretando los tornillos en las tuercas empotradas en la parte posterior del reTerminal E1001.
+
+**Paso 4.** Una vez asegurado firmemente, coloque el reTerminal E1001 en una superficie plana donde el soporte lo mantenga en posición vertical.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/139.jpg" style={{width:600, height:'auto'}}/></div>
 
 :::note
 El soporte proporciona un ángulo de visualización fijo y no se puede ajustar. Este posicionamiento fijo está diseñado para ofrecer una visibilidad óptima en la mayoría de los escenarios de uso.
 
-El soporte permite colocar el dispositivo en escritorios, encimeras o estantes, lo que lo hace ideal para usar como pantalla de información, panel de control o marco de fotos digital en varios entornos.
+El soporte permite colocar el dispositivo en escritorios, encimeras o estantes, haciéndolo ideal para usar como pantalla de información, panel de control o marco de fotos digital en varios entornos.
 :::
 
 ## Solución de Problemas
 
 ### P1: El Dispositivo No Se Enciende
 
-- Asegúrese de que el interruptor de alimentación esté en la posición ON
+- Asegúrese de que el interruptor de encendido esté en la posición ON
 - Conecte el cable USB-C para cargar el dispositivo
 - Verifique si el LED rojo está siempre encendido (indicando carga)
-- Si usa alimentación por batería, asegúrese de que la batería esté correctamente conectada y cargada
+- Si usa energía de batería, asegúrese de que la batería esté correctamente conectada y cargada
 
 ### P2: No Se Puede Conectar a Wi-Fi
 
-- Verifique que está ingresando la contraseña de Wi-Fi correcta
+- Verifique que esté ingresando la contraseña de Wi-Fi correcta
 - Asegúrese de que su red Wi-Fi esté operativa
 - Verifique si su router Wi-Fi soporta redes de 2.4GHz (5GHz no es compatible)
 - Intente posicionar el dispositivo más cerca de su router Wi-Fi
@@ -463,7 +467,7 @@ El soporte permite colocar el dispositivo en escritorios, encimeras o estantes, 
 
 - El dispositivo intentará automáticamente reconectarse a redes conocidas
 - Cuando se reconecte, el icono de desconexión Wi-Fi desaparecerá
-- Si no puede reconectarse, siga el procedimiento de Reinicio de Red mencionado anteriormente
+- Si no puede reconectarse, siga el procedimiento de Reinicio de Red anterior
 
 ## Recursos
 
@@ -473,7 +477,7 @@ El soporte permite colocar el dispositivo en escritorios, encimeras o estantes, 
 - [Archivo STP del modelo 3D exterior completo](https://files.seeedstudio.com/wiki/reterminal_e10xx/res/reterminal_esp-250904.stp)
 <!-- - [GitHub Repository](/es/getting_started_with_reterminal_e1001) -->
 
-## Soporte Técnico y Discusión del Producto
+## Soporte Técnico y Discusión de Productos
 
 ¡Gracias por elegir nuestros productos! Estamos aquí para brindarle diferentes tipos de soporte para asegurar que su experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para satisfacer diferentes preferencias y necesidades.
 

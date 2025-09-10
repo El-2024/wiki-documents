@@ -107,6 +107,7 @@ curl -fsSL https://raw.githubusercontent.com/Seeed-Studio/SenseCraft-AI_Server/r
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/Configuration%20Page%20%28Example%29.png"/></div>
 
 ## ✨ 检测结果获取
+
 部署服务时会安装本地 MQTT broker。因此，可以通过本地 MQTT 获取识别结果。
 
 ### 📡 MQTT 消息推送主题
@@ -114,7 +115,9 @@ curl -fsSL https://raw.githubusercontent.com/Seeed-Studio/SenseCraft-AI_Server/r
 ```bash
 edgeai/result
 ```
+
 ### 🧩 MQTT 消息数据结构
+
 ```json
 {
   "uuid": "0c7ef3d9-617d-4e6b-83f6-467f89b28d78", // result's uuid
@@ -127,7 +130,9 @@ edgeai/result
   }
 }
 ```
+
 ### 🔧 Node-RED 配置
+
 可能需要校准 MQTT broker 的 IP。
 在这种情况下，Node-RED 部署在容器中，因此使用 docker0 地址。
 <div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/nodered.png"/></div>
@@ -279,9 +284,10 @@ edgeai/result
   }
 }]
 ```
-### 📊 Node-RED 仪表板预览
-<div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/nodered%20preview.png"/></div>
 
+### 📊 Node-RED 仪表板预览
+
+<div style={{textAlign:'center'}}><img  alt="Configuration" src="https://files.seeedstudio.com/wiki/solution/crowd_tracking/nodered%20preview.png"/></div>
 
 ### 视频源
 
@@ -310,7 +316,6 @@ edgeai/result
 
 - 启用多目标跟踪
 - 显示轨迹线，可自定义长度、粗细和颜色
-
 
 ### 绊线检测
 

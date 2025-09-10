@@ -206,7 +206,7 @@ reTerminal E 系列电子纸显示器仅支持 2.4GHz WiFi 网络，不支持 5G
     </a>
 </div><br />
 
-**步骤 1.** 打开 SenseCraft 应用程序，登录您的账户，并导航到**用户**选项卡。点击**设备蓝牙配置**开始配置过程。
+**步骤 1.** 打开 SenseCraft 应用程序，登录您的账户，并导航到**用户**选项卡。点击**设备蓝牙配置**开始该过程。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/151.png" style={{width:250, height:'auto'}}/></div><br />
 
@@ -272,7 +272,7 @@ reTerminal E1002 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 **RSS 订阅集成**
 
-通过向您的仪表板添加 RSS 订阅，随时了解您最喜欢的新闻来源、博客或网站的最新动态。RSS 功能允许您显示来自多个来源的标题、摘要或完整文章。
+通过向您的仪表板添加 RSS 订阅，随时了解您最喜欢的新闻来源、博客或网站的最新信息。RSS 功能允许您显示来自多个来源的标题、摘要或完整文章。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/15.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -284,7 +284,7 @@ reTerminal E1002 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 ### SenseCraft HMI 入门
 
-按照上一节中描述的方法将您的设备与 SenseCraft 平台配对后，您就可以创建您的第一个仪表板了。有关使用每个功能的详细说明，请参考相应的 Wiki 页面：
+按照上一节中描述的方式将您的设备与 SenseCraft 平台配对后，您就可以创建您的第一个仪表板了。有关使用每个功能的详细说明，请参考相应的 Wiki 页面：
 
 - [SenseCraft HMI 概述](https://wiki.seeedstudio.com/cn/sensecraft_hmi_overview)
 - [AI 生成器指南](https://wiki.seeedstudio.com/cn/sensecraft_hmi_ai_generation)
@@ -295,7 +295,7 @@ reTerminal E1002 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 在 SenseCraft 平台中创建并保存您的仪表板后，只需点击"部署到设备"，选择您配对的 reTerminal E1002，您的自定义内容将无线传输到设备。电子纸显示屏将更新以显示您的仪表板，如果您创建了多个页面，您可以使用导航按钮在它们之间切换。
 
-## 设备操作
+## 操作设备
 
 ### 刷新按钮
 
@@ -303,7 +303,7 @@ reTerminal E1002 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 设备顶部的刷新按钮具有多种功能：
 
-- **单击**：手动刷新显示屏并检查来自 SenseCraft 平台的新内容。蜂鸣器将响一声以确认操作。此按钮也常用于唤醒设备。当设备进入睡眠状态且仪表板刷新命令无法立即传达到设备时，您可以使用此按钮唤醒设备。
+- **单击**：手动刷新显示屏并检查来自 SenseCraft 平台的新内容。蜂鸣器将响一次以确认操作。此按钮也常用于唤醒设备。当设备进入睡眠状态且仪表板刷新命令无法立即传达到设备时，您可以使用此按钮唤醒设备。
 
 - **长按**（未来功能）：将激活语音输入模式。
 
@@ -344,9 +344,13 @@ reTerminal E1002 与 SenseCraft HMI 平台无缝集成，该平台为您的设�
 
 - 当电池电量低于 20% 时，设备将在右上角显示低电量图标
 
+:::tip
+如果您想自己编写代码来读取电池电压，在 analogRead() 函数之前添加 10ms 延迟会更精确。
+:::
+
 ### 扩展引脚
 
-reTerminal E1002 具有一个 8 引脚扩展接头（J2），提供连接选项，用于添加外部传感器、模块或其他硬件来扩展设备的功能。此扩展接头暴露了几个 ESP32-S3 GPIO 引脚和通信接口，使其成为您 DIY 项目的多功能连接点。
+reTerminal E1002 具有一个 8 引脚扩展接头（J2），为添加外部传感器、模块或其他硬件以扩展设备功能提供连接选项。此扩展接头暴露了几个 ESP32-S3 GPIO 引脚和通信接口，使其成为您 DIY 项目的多功能连接点。
 
 #### 扩展接头引脚定义
 
@@ -390,15 +394,15 @@ reTerminal E1002 具有一个 8 引脚扩展接头（J2），提供连接选项�
 			<td>具有模拟输入功能的通用 I/O（ADC1 通道 4）</td>
 		</tr>
 		<tr>
+
 			<td>5</td>
 			<td>ESP_IO17/TX1</td>
 			<td>GPIO17</td>
 			<td>GPIO/UART TX</td>
-			<td>GPIO 或 UART 发送（TX）信号</td>
+			<td>GPIO 或 UART 发送 (TX) 信号</td>
 		</tr>
 		<tr>
 			<td>6</td>
-
 			<td>ESP_IO18/RX1</td>
 			<td>GPIO18</td>
 			<td>GPIO/UART RX</td>
@@ -429,16 +433,16 @@ reTerminal E1002 配备了一个 3D 打印支撑架配件，可让您将设备�
 
 **步骤 2.** 将支撑架放置在 reTerminal E1002 底部背面的指定安装区域，该区域有嵌入式螺母。
 
-**步骤 3.** 使用长螺丝刀将支架固定到设备上，将螺丝拧入 reTerminal E1002 背面的嵌入式螺母中。
+**步骤 3.** 使用长螺丝刀将支撑架固定到设备上，将螺丝拧入 reTerminal E1002 背面的嵌入式螺母中。
 
-**步骤 4.** 牢固连接后，将 reTerminal E1002 放置在平坦表面上，支架将支撑设备保持直立位置。
+**步骤 4.** 牢固连接后，将 reTerminal E1002 放置在平坦表面上，支撑架将支撑设备保持直立位置。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/139.jpg" style={{width:600, height:'auto'}}/></div>
 
 :::note
-支架提供固定的观看角度，无法调节。这种固定定位设计旨在在大多数使用场景中提供最佳可见性。
+支撑架提供固定的观看角度，无法调节。这种固定定位设计旨在在大多数使用场景中提供最佳可见性。
 
-支架允许设备放置在桌子、台面或架子上，使其非常适合在各种环境中用作信息显示器、控制面板或数字相框。
+支撑架允许设备放置在桌子、台面或架子上，使其非常适合在各种环境中用作信息显示器、控制面板或数字相框。
 :::
 
 ## 故障排除
@@ -450,17 +454,17 @@ reTerminal E1002 配备了一个 3D 打印支撑架配件，可让您将设备�
 - 检查红色 LED 是否常亮（表示正在充电）
 - 如果使用电池供电，确保电池正确连接且已充电
 
-### Q2：无法连接 Wi-Fi
+### Q2：无法连接到 Wi-Fi
 
 - 验证您输入的 Wi-Fi 密码是否正确
 - 确保您的 Wi-Fi 网络正常运行
 - 检查您的 Wi-Fi 路由器是否支持 2.4GHz 网络（不支持 5GHz）
 - 尝试将设备移近 Wi-Fi 路由器
 
-### Q3：显示不更新
+### Q3：显示屏不更新
 
 - 按下刷新按钮手动触发更新
-- 验证设备已连接到 Wi-Fi（角落没有断开连接图标）
+- 验证设备是否连接到 Wi-Fi（角落没有断开连接图标）
 - 检查您的 SenseCraft 账户以确保仪表板已正确部署
 - 如果问题持续存在，尝试重启设备
 
