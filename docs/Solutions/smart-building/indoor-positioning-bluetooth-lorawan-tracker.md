@@ -16,9 +16,9 @@ last_update:
   author: Spencer
 ---
 
-### Introduction
+## Introduction
 
-#### Overview
+### Overview
 
 Indoor positioning is a common challenge for many industries. While solutions like Wi-Fi or UWB offer high precision, they can be costly and complex to install. This solution provides a cost-effective and easy-to-deploy alternative for **zone-based positioning**. It combines two powerful wireless technologies: **Bluetooth Low Energy (BLE)** for determining presence within a specific area, and **LoRaWAN** for long-range, low-power data transmission.
 
@@ -32,7 +32,7 @@ Check out our [Indoor & Outdoor Integrated Positioning](https://www.seeedstudio.
 
 :::
 
-#### Key Features & Benefits
+### Key Features & Benefits
 
 - **Cost-Effective & Scalable**: Leverages affordable BLE beacons and avoids the need for expensive gateway installations in every room.
 - **Long-Range Data Transmission**: A single LoRaWAN gateway can cover an entire building or campus, drastically reducing infrastructure costs.
@@ -41,7 +41,7 @@ Check out our [Indoor & Outdoor Integrated Positioning](https://www.seeedstudio.
 - **Simple Deployment**: Setting up BLE beacons and LoRaWAN gateways is straightforward, getting your positioning system online quickly.
 - **Open-Source Software**: The project is fully open-source, allowing you to build and customize your own backend server using our [GitHub repository.](https://github.com/Seeed-Solution/Solution_IndoorPositioning_H5)
 
-#### Use Cases
+### Use Cases
 
 <div class="info-section">
     <div class="section-header">
@@ -55,11 +55,13 @@ Check out our [Indoor & Outdoor Integrated Positioning](https://www.seeedstudio.
     </ul>
 </div>
 
-#### System Architecture
+### System Architecture
 
 The system operates on a simple yet powerful principle. Mobile trackers listen for signals from fixed beacons and report what they hear to a central server.
 
 ![System Architecture Diagram](https://media-cdn.seeedstudio.com/media/wysiwyg/IoT_Device/_163.png)
+
+### Prerequisites
 
 The main components are:
 
@@ -67,10 +69,6 @@ The main components are:
 2. **SenseCAP T1000 Tracker**: This is the mobile device attached to the asset or person you want to track. It scans for nearby BLE beacons and identifies the one with the strongest signal.
 3. **LoRaWAN Gateway**: The tracker sends a data packet containing the ID of the nearest BLE beacon to the gateway via LoRaWAN.
 4. **Network & Application Server**: The gateway forwards the data to a LoRaWAN Network Server([SenseCAP Data](https://sensecap.seeed.cc/portal)), which then routes it to an application server. The application server holds a map of the beacon IDs and their real-world locations, allowing it to determine the tracker's position (e.g., "Tracker #58 is near Beacon #12, which is in Conference Room 3").
-
-### Getting Started Guide
-
-### Prerequisites
 
 Before you begin, make sure you have the following:
 
@@ -224,7 +222,7 @@ Before you begin, make sure you have the following:
 </div>
 </div>
 
-### Getting Started Guide
+## Getting Started Guide
 
 <div align="center">
 <img class='img-responsive' width="1280" src="https://mermaid.ink/img/pako:eNo9jk9vwjAMxb9K5HOp2tE_JIdJQDcuO41phzUcotYtFW0SpYkYVHz3BSrmk9_Pz_aboFI1AoOmV-fqKIwlH59cEl_rcm-9PpDF4pVsygJ1ry5kg6JScpzpttyjdZrshMWzuMyweFrXWs_krdwq2XStM0i-jKhOaObBe_ndjU703RVnsPPOQfdo8cAlBNCargZmjcMABjSDuEuY7gE52CMOyIH5thbmxIHLm9_RQv4oNTzXjHLtEVgj-tErp2uftehEa8TwTw3KGs1WOWmB0Sh9HAE2wS-wLA6XeULzlyyL0piuaBLABVgc0ZBmeZymyTJa0SjJbgFcH3-jcJWntz-sxGvR?type=png" alt="Indoor positioning 2d map"/>
@@ -236,11 +234,11 @@ Before you begin, make sure you have the following:
 4. **Configure the Tracker**: Activate the SenseCAP T1000 and onboard it to your LoRaWAN Network Server. Ensure it is configured for BLE scanning mode.
 5. **Visualize**: As the tracker moves through the facility, it will report the nearest beacon, and your application can display its location on a dashboard or map.
 
-## Step 1: Set Up Your Hardware
+### Step 1: Set Up Your Hardware
 
 First, you need to set up the physical devices in your facility.
 
-### **1a. Deploy Beacons**
+#### **1a. Deploy Beacons**
 
 :::info
 For complete technical details, refer to the **[BC01 Indoor Bluetooth Beacon documentation](/bluetooth_beacon_for_SenseCAP_Traker/)**.
@@ -291,7 +289,7 @@ The video below shows how you will use this list to add your beacons to the appl
 
 </details>
 
-### 1b. Set Up the Gateway
+#### 1b. Set Up the Gateway
 
 First, power on your **LoRaWAN gateway** and connect it to the internet. From here, the steps depend on which network server you're using.
 
@@ -328,7 +326,7 @@ If you're using a self-hosted **ChirpStack** server, you'll need to re-point the
   </TabItem>
 </Tabs>
 
-## Step 2: Install the Positioning Application
+### Step 2: Install the Positioning Application
 
 Next, you will install the main application on your server using Docker. Or you can have a view of [the demo](https://indoorpositioning-demo.seeed.cc/) first.
 
@@ -336,7 +334,7 @@ Next, you will install the main application on your server using Docker. Or you 
 <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/app-preview.png" alt="Indoor positioning application preview"/>
 </div>
 
-### Run the Installation Command
+#### Run the Installation Command
 
 Open a terminal on your server and run the following command:
 
@@ -353,7 +351,7 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 
 After running the command, you can access the dashboard by opening a web browser and going to `http://<your_server_ip>:5173`.
 
-## Step 3: Configure the Application
+### Step 3: Configure the Application
 
 <div align="center">
 <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/app-configuration-management.png" alt="app-configuration-management"/>
@@ -361,7 +359,7 @@ After running the command, you can access the dashboard by opening a web browser
 
 Now, open the application dashboard in your browser to configure the system settings.
 
-### 3a. Runtime Configuration (Connecting to LoRaWAN)
+#### 3a. Runtime Configuration (Connecting to LoRaWAN)
 
 This setting connects the application to your LoRaWAN Network Server to receive tracker data. A key feature is that **the application supports simultaneous connections to both the SenseCraft Data platform and a ChirpStack server.**
 
@@ -371,13 +369,13 @@ This setting connects the application to your LoRaWAN Network Server to receive 
 
 In the dashboard, you can enable one or both of the following MQTT sources to connect to your network servers.
 
-#### To Connect to SenseCraft Data
+##### To Connect to SenseCraft Data
 
 1. Enable the **SenseCAP OpenStream MQTT** toggle.
 2. Enter your **Username** and **API Key**.
       - You can generate these credentials by following the [Data OpenStream API Quickstart guide](https://www.google.com/search?q=/sensecraft-data-platform/api/data-openstream-api/data_openstream_api_quickstart/).
 
-#### To Connect to ChirpStack
+##### To Connect to ChirpStack
 
 1. Enable the **ChirpStack MQTT** toggle.
 2. Enter your ChirpStack **server address** and **Application ID**.
@@ -393,7 +391,7 @@ In the dashboard, you can enable one or both of the following MQTT sources to co
 
 **Important:** After enabling or changing any of these settings, you must **restart the application** (the Docker container) for them to take effect.
 
-#### Other Settings
+##### Other Settings
 
 The following settings can be changed at any time without restarting the application:
 
@@ -402,7 +400,7 @@ The following settings can be changed at any time without restarting the applica
 - **Tracker Access Control:** Configure which devices are allowed to send data to the application. You can either allow data from any device or create a specific list of authorized trackers.
 - **Webhook:** Enable this to push location results to your own service using an HTTP POST request.
 
-### 3b. Map and Beacon Configuration
+#### 3b. Map and Beacon Configuration
 
 In this step, you will use the application's dashboard to upload your floor plan and add the beacons you physically deployed earlier.
 
@@ -420,7 +418,7 @@ This is an advanced setting that fine-tunes location accuracy. It helps the syst
     - For complex indoor areas with many walls and obstacles, you may need to adjust the value between 1.8 and 4.0.
     - **Recommendation:** It's best to leave this at the default setting to start. You can come back and adjust it later if you need to improve positioning accuracy.
 
-## Step 4: Activate and Visualize Your Tracker
+### Step 4: Activate and Visualize Your Tracker
 
 The final step is to turn on your tracker and see it on the map.
 
