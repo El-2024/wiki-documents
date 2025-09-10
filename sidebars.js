@@ -15340,7 +15340,7 @@ const sidebars = {
               'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Get_Started',
               'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Payload',
            'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Tracker_WiFi_Geolocation',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_E5_Bluetooth_Location_Beacon',
+           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_BC01_Indoor_Bluetooth_Beacon',
            'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Indoor_Positioning_Guide',
                    ],
           },
