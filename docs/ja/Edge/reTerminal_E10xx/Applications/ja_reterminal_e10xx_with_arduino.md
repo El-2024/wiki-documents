@@ -1,5 +1,5 @@
 ---
-description: この記事では、reTerminal E シリーズ ePaper ディスプレイを Arduino で動作させる方法について説明します。
+description: この記事では、reTerminal E シリーズの ePaper ディスプレイを Arduino で動作させる方法について説明します。
 title: reTerminal E シリーズ ePaper ディスプレイを Arduino で動作させる
 image: https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.webp
 slug: /ja/reterminal_e10xx_with_arduino
@@ -18,11 +18,11 @@ import TabItem from '@theme/TabItem';
 
 ## はじめに
 
-reTerminal E シリーズは、ESP32-S3 をメインコントローラーとし、統合された ePaper ディスプレイを特徴とする、Seeed Studio の産業用 HMI ソリューションの最新の進歩を表しています。このガイドでは、Arduino IDE を使用して reTerminal E シリーズデバイスの ePaper ディスプレイをプログラミングし、優れた視認性と超低消費電力でカスタムインターフェースとアプリケーションを作成する方法を説明します。
+reTerminal E シリーズは、ESP32-S3 をメインコントローラーとし、ePaper ディスプレイを統合した Seeed Studio の最新の産業用 HMI ソリューションです。このガイドでは、Arduino IDE を使用して reTerminal E シリーズデバイスの ePaper ディスプレイをプログラミングする方法を説明し、優れた視認性と超低消費電力を備えたカスタムインターフェースとアプリケーションの作成を可能にします。
 
 ### 必要な材料
 
-このチュートリアルを完了するには、以下の reTerminal E シリーズデバイスのいずれかを準備してください：
+このチュートリアルを完了するには、以下の reTerminal E シリーズデバイスのいずれかをご用意ください：
 
 <div class="table-center">
   <table align="center">
@@ -54,7 +54,7 @@ reTerminal E シリーズは、ESP32-S3 をメインコントローラーとし�
 reTerminal E シリーズ ePaper ディスプレイを Arduino でプログラミングするには、ESP32 サポート付きの Arduino IDE をセットアップする必要があります。
 
 :::tip
-Arduino を初めて使用する場合は、[Arduino の使用開始](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) を参照することを強くお勧めします。
 :::
 
 #### Arduino IDE セットアップ
@@ -65,7 +65,7 @@ Arduino を初めて使用する場合は、[Arduino の使用開始](https://wi
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
     <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
-      <strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+      <strong><span><font color={'FFFFFF'} size={"4"}>Arduino IDE をダウンロード</font></span></strong>
     </a>
 </div><br />
 
@@ -77,27 +77,27 @@ Arduino IDE で、**File > Preferences** に移動し、「Additional Boards Man
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 ```
 
-**ステップ 3.** ESP32 ボードパッケージをインストールします。
+**ステップ3.** ESP32ボードパッケージをインストールします。
 
-**Tools > Board > Boards Manager** に移動し、「esp32」を検索して、Espressif Systems による ESP32 パッケージをインストールします。
+**Tools > Board > Boards Manager**に移動し、「esp32」を検索してEspressif SystemsのESP32パッケージをインストールします。
 
-**ステップ 4.** 正しいボードを選択します。
+**ステップ4.** 正しいボードを選択します。
 
-**Tools > Board > ESP32 Arduino** に移動し、**XIAO_ESP32S3** を選択します。
+**Tools > Board > ESP32 Arduino**に移動し、**XIAO_ESP32S3**を選択します。
 
-**ステップ 5.** USB-C ケーブルを使用して reTerminal E シリーズ ePaper ディスプレイをコンピューターに接続します。
+**ステップ5.** reTerminal E SeriesのePaperディスプレイをUSB-Cケーブルでコンピュータに接続します。
 
-**ステップ 6.** **Tools > Port** から正しいポートを選択します。
+**ステップ6.** **Tools > Port**から正しいポートを選択します。
 
-## ePaper ディスプレイプログラミング
+## ePaperディスプレイプログラミング
 
-**reTerminal E1001 は 7.5 インチの白黒 ePaper ディスプレイを搭載**し、**reTerminal E1002 は 7.3 インチのフルカラー ePaper ディスプレイを搭載**しています。両方のディスプレイは、さまざまな照明条件で優れた視認性と超低消費電力を提供し、最小限の電力使用で常時オンディスプレイが必要な産業用アプリケーションに最適です。
+**reTerminal E1001は7.5インチの白黒ePaperディスプレイを搭載**し、**reTerminal E1002は7.3インチのフルカラーePaperディスプレイを搭載**しています。両方のディスプレイは、超低消費電力でさまざまな照明条件下で優れた視認性を提供し、最小限の電力使用で常時表示が必要な産業用アプリケーションに最適です。
 
-### Seeed_GFX ライブラリの使用
+### Seeed_GFXライブラリの使用
 
-ePaper ディスプレイを制御するために、さまざまな Seeed Studio ディスプレイデバイスの包括的なサポートを提供する Seeed_GFX ライブラリを使用します。
+ePaperディスプレイを制御するために、さまざまなSeeed Studioディスプレイデバイスの包括的なサポートを提供するSeeed_GFXライブラリを使用します。
 
-**ステップ 1.** GitHub から Seeed_GFX ライブラリをダウンロードします：
+**ステップ1.** GitHubからSeeed_GFXライブラリをダウンロードします：
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/Seeed_GFX" target="_blank" rel="noopener noreferrer">
@@ -105,78 +105,78 @@ ePaper ディスプレイを制御するために、さまざまな Seeed Studio
     </a>
 </div><br />
 
-**ステップ 2.** Arduino IDE で ZIP ファイルを追加してライブラリをインストールします。**Sketch > Include Library > Add .ZIP Library** に移動し、ダウンロードした ZIP ファイルを選択します。
+**ステップ2.** Arduino IDEでZIPファイルを追加してライブラリをインストールします。**Sketch > Include Library > Add .ZIP Library**に移動し、ダウンロードしたZIPファイルを選択します。
 
 :::note
-以前に TFT_eSPI ライブラリをインストールしている場合、Seeed_GFX は Seeed Studio ディスプレイ用の追加機能を持つ TFT_eSPI のフォークであるため、競合を避けるために Arduino ライブラリフォルダから一時的に削除または名前を変更する必要がある場合があります。
+以前にTFT_eSPIライブラリをインストールしている場合、競合を避けるためにArduinoライブラリフォルダから一時的に削除または名前を変更する必要がある場合があります。Seeed_GFXはTFT_eSPIのフォークで、Seeed Studioディスプレイ用の追加機能を備えています。
 :::
 
 <Tabs>
-<TabItem value="Programming reTerminal E1001" label="reTerminal E1001 のプログラミング" default>
+<TabItem value="Programming reTerminal E1001" label="Programming reTerminal E1001" default>
 
-#### reTerminal E1001 のプログラミング（7.5 インチ白黒 ePaper）
+#### reTerminal E1001のプログラミング（7.5インチ白黒ePaper）
 
-白黒 ePaper ディスプレイでの基本的な描画操作を実演する簡単な例を見てみましょう。
+白黒ePaperディスプレイでの基本的な描画操作を実演する簡単な例を見てみましょう。
 
-**ステップ 1.** Seeed_GFX ライブラリからサンプルスケッチを開きます：**File > Examples > Seeed_GFX > ePaper > Basic > HelloWorld**
+**ステップ1.** Seeed_GFXライブラリからサンプルスケッチを開きます：**File > Examples > Seeed_GFX > ePaper > Basic > HelloWorld**
 
-**ステップ 2.** スケッチと同じフォルダに `driver.h` という名前の新しいファイルを作成します。Arduino IDE の矢印ボタンをクリックして「New Tab」を選択し、`driver.h` と名前を付けることでこれを行うことができます。
+**ステップ2.** スケッチと同じフォルダに`driver.h`という名前の新しいファイルを作成します。Arduino IDEの矢印ボタンをクリックして「New Tab」を選択し、`driver.h`と名前を付けることでこれを行うことができます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/select.jpg" style={{width:1000, height:'auto'}}/></div>
 
-**ステップ 3.** [Seeed GFX Configuration Tool](https://seeed-studio.github.io/Seeed_GFX/) に移動し、デバイスリストから **reTerminal E1001** を選択します。
+**ステップ3.** [Seeed GFX Configuration Tool](https://seeed-studio.github.io/Seeed_GFX/)に移動し、デバイスリストから**reTerminal E1001**を選択します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/gfx.jpg" style={{width:900, height:'auto'}}/></div>
 
-**ステップ 4.** 生成された設定コードをコピーして、`driver.h` ファイルに貼り付けます。コードは次のようになります：
+**ステップ4.** 生成された設定コードをコピーして`driver.h`ファイルに貼り付けます。コードは次のようになります：
 
 ```cpp
 #define BOARD_SCREEN_COMBO 520 // reTerminal E1001 (UC8179)
 ```
 
-**ステップ 5.** スケッチを reTerminal E1001 にアップロードします。基本的な描画機能を実演する線、テキスト、図形を含むさまざまなグラフィックスがディスプレイに表示されるはずです。
+**ステップ5.** スケッチをreTerminal E1001にアップロードします。ディスプレイに線、テキスト、図形など、基本的な描画機能を実演する様々なグラフィックが表示されるはずです。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/148.jpg" style={{width:500, height:'auto'}}/></div>
 
 </TabItem>
-<TabItem value="Programming reTerminal E1002" label="reTerminal E1002 のプログラミング">
+<TabItem value="Programming reTerminal E1002" label="Programming reTerminal E1002">
 
-#### reTerminal E1002 のプログラミング（7.3 インチフルカラー ePaper）
+#### reTerminal E1002のプログラミング（7.3インチフルカラーePaper）
 
-フルカラー ePaper ディスプレイは赤、黒、白の色をサポートし、より視覚的に豊かなインターフェースを可能にします。
+フルカラーePaperディスプレイは赤、黒、白の色をサポートし、より視覚的に豊かなインターフェースを可能にします。
 
-**ステップ 1.** Seeed_GFX ライブラリからカラーサンプルスケッチを開きます：**File > Examples > Seeed_GFX > ePaper > Colorful > HelloWorld**
+**ステップ1.** Seeed_GFXライブラリからカラーサンプルスケッチを開きます：**File > Examples > Seeed_GFX > ePaper > Colorful > HelloWorld**
 
-**ステップ 2.** 前と同じプロセスに従って、スケッチと同じフォルダに `driver.h` という名前の新しいファイルを作成します。
+**ステップ2.** スケッチと同じフォルダに`driver.h`という新しいファイルを作成します。前回と同じプロセスに従ってください。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/select2.jpg" style={{width:1000, height:'auto'}}/></div>
 
-**ステップ 3.** [Seeed GFX Configuration Tool](https://seeed-studio.github.io/Seeed_GFX/) に移動し、デバイスリストから **reTerminal E1002** を選択します。
+**ステップ3.** [Seeed GFX Configuration Tool](https://seeed-studio.github.io/Seeed_GFX/)にアクセスし、デバイスリストから**reTerminal E1002**を選択します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/gfx2.jpg" style={{width:900, height:'auto'}}/></div>
 
-**ステップ 4.** 生成された設定コードをコピーして、`driver.h` ファイルに貼り付けます。コードは次のようになります：
+**ステップ4.** 生成された設定コードをコピーして、`driver.h`ファイルに貼り付けます。コードは次のようになります：
 
 ```cpp
 #define BOARD_SCREEN_COMBO 521 // reTerminal E1002 (UC8179C)
 ```
 
-**ステップ 5.** スケッチを reTerminal E1002 にアップロードします。ディスプレイには ePaper ディスプレイのフルカラー機能を実演するカラフルなグラフィックスが表示されます。
+**ステップ5.** スケッチをreTerminal E1002にアップロードします。ディスプレイにはカラフルなグラフィックが表示され、ePaperディスプレイのフルカラー機能がデモンストレーションされます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/149.jpg" style={{width:500, height:'auto'}}/></div>
 
 </TabItem>
 </Tabs>
 
-### GxEPD2 ライブラリの使用
+### GxEPD2ライブラリの使用
 
-Seeed_GFX の他に、`GxEPD2` ライブラリを使用して reTerminal の ePaper ディスプレイを駆動することもできます。`GxEPD2` は、幅広い e-paper ディスプレイをサポートする強力で人気のあるライブラリです。
+Seeed_GFXの他に、`GxEPD2`ライブラリを使用してreTerminalのePaperディスプレイを駆動することもできます。`GxEPD2`は強力で人気のあるライブラリで、幅広いe-paperディスプレイをサポートしています。
 
-**GxEPD2 ライブラリのインストール**
+**GxEPD2ライブラリのインストール**
 
-最新の機能とデバイスサポートを確実に利用するために、GitHub リポジトリから `GxEPD2` ライブラリを手動でインストールするのが最適です。
+最新の機能とデバイスサポートを確実に利用するため、GitHubリポジトリから`GxEPD2`ライブラリを手動でインストールするのが最適です。
 
-**ステップ 1.** GxEPD2 GitHub リポジトリに移動します。「Code」ボタンをクリックし、「Download ZIP」を選択してライブラリをコンピューターに保存します。
+**ステップ1.** GxEPD2 GitHubリポジトリにアクセスします。「Code」ボタンをクリックし、「Download ZIP」を選択してライブラリをコンピューターに保存します。
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/ZinggJM/GxEPD2" target="_blank" rel="noopener noreferrer">
@@ -184,12 +184,12 @@ Seeed_GFX の他に、`GxEPD2` ライブラリを使用して reTerminal の ePa
     </a>
 </div><br />
 
-**ステップ 2.** Arduino IDEで、ダウンロードしたファイルからライブラリをインストールします。**スケッチ > ライブラリをインクルード > .ZIP形式のライブラリをインストール...** に移動し、先ほどダウンロードしたZIPファイルを選択します。
+**ステップ2.** Arduino IDEで、ダウンロードしたファイルからライブラリをインストールします。**スケッチ > ライブラリをインクルード > .ZIP形式のライブラリをインストール...**に移動し、ダウンロードしたZIPファイルを選択します。
 
-**ステップ 3.** `GxEPD2`ライブラリが機能するには`Adafruit GFX Library`が必要で、これもインストールする必要があります。最も簡単な方法はライブラリマネージャーを使用することです：**ツール > ライブラリを管理...** に移動し、「Adafruit GFX Library」を検索して「インストール」をクリックします。
+**ステップ3.** `GxEPD2`ライブラリが機能するには`Adafruit GFX Library`も必要で、これもインストールする必要があります。最も簡単な方法はライブラリマネージャーを使用することです：**ツール > ライブラリを管理...**に移動し、「Adafruit GFX Library」を検索して「インストール」をクリックします。
 
 :::note
-`GxEPD2`は便宜上Arduino Library Managerで利用できますが、そこにあるバージョンは古い場合があります。GitHubリポジトリは最新バージョンの決定的なソースであり、最新の機能、バグ修正、最新のe-paperディスプレイのサポートが含まれています。したがって、最新のコードを確実に入手するために、GitHubから直接ライブラリをダウンロードすることが推奨されるアプローチです。
+`GxEPD2`は便宜上Arduino Library Managerでも利用できますが、そこで見つかるバージョンは古いことがよくあります。GitHubリポジトリは最新バージョンの決定的なソースであり、最新の機能、バグ修正、最新のe-paperディスプレイのサポートが含まれています。したがって、最新のコードを確実に入手するため、GitHubから直接ライブラリをダウンロードすることが推奨されるアプローチです。
 :::
 
 <Tabs>
@@ -197,7 +197,7 @@ Seeed_GFX の他に、`GxEPD2` ライブラリを使用して reTerminal の ePa
 
 #### reTerminal E1001のプログラミング（白黒画面）
 
-以下は、`GxEPD2`ライブラリを使用してreTerminal E1001の白黒ePaperディスプレイに「Hello World!」を表示するサンプルコードです。E1001用のドライバーを選択するために`EPD_SELECT`を`0`に設定します。
+以下は、`GxEPD2`ライブラリを使用してreTerminal E1001の白黒ePaperディスプレイに「Hello World!」を表示するサンプルコードです。E1001用のドライバーを選択するため、`EPD_SELECT`を`0`に設定します。
 
 ```cpp
 #include <GxEPD2_BW.h>
@@ -263,11 +263,11 @@ void helloWorld()
   display.setTextColor(GxEPD_BLACK);
   int16_t tbx, tby; uint16_t tbw, tbh;
   display.getTextBounds(HelloWorld, 0, 0, &tbx, &tby, &tbw, &tbh);
-
+  
   // center the bounding box by transposition of the origin:
   uint16_t x = ((display.width() - tbw) / 2) - tbx;
   uint16_t y = ((display.height() - tbh) / 2) - tby;
-
+  
   display.setFullWindow();
   display.firstPage();
   do
@@ -285,9 +285,9 @@ void loop() {};
 </TabItem>
 <TabItem value="Programming reTerminal E1002 GxEPD2" label="Programming reTerminal E1002">
 
-#### reTerminal E1002のプログラミング（フルカラー画面）
+#### reTerminal E1002のプログラミング（フルカラースクリーン）
 
-reTerminal E1002の場合、`EPD_SELECT`の値を`1`に変更するだけです。これにより7.3インチフルカラーePaperディスプレイ用の適切なドライバーが選択されます。コードの残りの部分は同じです。
+reTerminal E1002の場合、`EPD_SELECT`の値を`1`に変更するだけです。これにより、7.3インチフルカラーePaperディスプレイ用の適切なドライバが選択されます。コードの残りの部分は同じままです。
 
 ```cpp
 #include <GxEPD2_BW.h>
@@ -354,11 +354,11 @@ void helloWorld()
   display.setTextColor(GxEPD_GREEN);
   int16_t tbx, tby; uint16_t tbw, tbh;
   display.getTextBounds(HelloWorld, 0, 0, &tbx, &tby, &tbw, &tbh);
-
+  
   // center the bounding box by transposition of the origin:
   uint16_t x = ((display.width() - tbw) / 2) - tbx;
   uint16_t y = ((display.height() - tbh) / 2) - tby;
-
+  
   display.setFullWindow();
   display.firstPage();
   do
@@ -377,12 +377,12 @@ void loop() {};
 </Tabs>
 
 :::note
-ePaperディスプレイは比較的遅いリフレッシュレート（フルリフレッシュで通常1-3秒）を持ちます。これは正常な動作であり、超低消費電力とバックライトなしでの優れた視認性とのトレードオフです。
+ePaperディスプレイは比較的遅いリフレッシュレート（通常、フルリフレッシュで1-3秒）を持ちます。これは正常な動作であり、超低消費電力とバックライトなしでの優れた視認性とのトレードオフです。
 :::
 
 ## reTerminalハードウェアの使用ルーチン
 
-それでは、Arduinoコードの例を使ってreTerminal Eシリーズの主要機能を探ってみましょう。
+それでは、Arduinoコード例を使ってreTerminal Eシリーズの主要機能を探ってみましょう。
 
 ### LED制御
 
@@ -400,9 +400,9 @@ void setup() {
   while (!Serial1) {
     delay(10);
   }
-
+  
   Serial1.println("LED Control Example");
-
+  
   // Configure LED pin
   pinMode(LED_PIN, OUTPUT);
 }
@@ -412,7 +412,7 @@ void loop() {
   digitalWrite(LED_PIN, LOW);
   Serial1.println("LED ON");
   delay(1000);
-
+  
   // Turn LED OFF (HIGH because it's inverted)
   digitalWrite(LED_PIN, HIGH);
   Serial1.println("LED OFF");
@@ -420,9 +420,9 @@ void loop() {
 }
 ```
 
-### ブザー制御
+### Buzzer Control
 
-reTerminal EシリーズにはGPIO7にブザーが含まれており、様々なトーンやアラート音を生成できます。
+The reTerminal E Series includes a buzzer on GPIO7 that can produce various tones and alert sounds.
 
 ```cpp
 // reTerminal E Series - Buzzer Control Example
@@ -436,7 +436,7 @@ void setup() {
   while (!Serial1) {
     delay(10);
   }
-
+  
   Serial1.println("Buzzer Control Example");
 }
 
@@ -444,18 +444,18 @@ void loop() {
   Serial1.println("Simple beep");
   tone(BUZZER_PIN, 1000, 100);  // 1kHz for 100ms
   delay(1000);
-
+  
   Serial1.println("Double beep");
   for (int i = 0; i < 2; i++) {
     tone(BUZZER_PIN, 2000, 50);  // 2kHz for 50ms
     delay(100);
   }
   delay(900);
-
+  
   Serial1.println("Long beep");
   tone(BUZZER_PIN, 800, 500);  // 800Hz for 500ms
   delay(1500);
-
+  
   Serial1.println("Alarm sound");
   for (int i = 0; i < 5; i++) {
     tone(BUZZER_PIN, 1500, 100);
@@ -467,7 +467,7 @@ void loop() {
 }
 ```
 
-**トーン付きブザー**
+**Buzzer with Tones**
 
 ```cpp
 #define SERIAL_RX 44
@@ -592,9 +592,9 @@ void setup() {
   while (!Serial1) {
     delay(10);
   }
-
+  
   Serial1.println("Buzzer Control Example");
-
+  
   // Configure buzzer pin
   pinMode(BUZZER_PIN, OUTPUT);
 }
@@ -605,12 +605,13 @@ void loop() {
   buzzer_tone(NOTE_G5, 80, 20);
   buzzer_tone(NOTE_C6, 150, 0);
   delay(30000);
-}```
+}
+```
 
-**ブザー関数:**
+**ブザー機能:**
 
 - `digitalWrite()`: 基本的なビープ音のためのシンプルなON/OFF制御
-- `tone(pin, frequency, duration)`: メロディやアラートのための特定の周波数を生成
+- `tone(pin, frequency, duration)`: メロディーやアラートのための特定の周波数を生成
 - `noTone(pin)`: トーン生成を停止
 
 **一般的なアラートパターン:**
@@ -624,7 +625,7 @@ void loop() {
 
 reTerminal Eシリーズには、様々な制御目的に使用できる3つのユーザープログラマブルボタンが搭載されています。このセクションでは、Arduinoを使用してボタンの状態を読み取り、ボタンの押下に応答する方法を説明します。
 
-reTerminal EシリーズにはESP32-S3に接続された3つのボタンがあります：
+reTerminal EシリーズにはESP32-S3に接続された3つのボタンがあります:
 
 - **KEY0** (GPIO3): 右ボタン（緑ボタン）
 - **KEY1** (GPIO4): 中央ボタン
@@ -632,7 +633,7 @@ reTerminal EシリーズにはESP32-S3に接続された3つのボタンがあ�
 
 すべてのボタンはアクティブローで、押されたときにLOWを読み取り、離されたときにHIGHを読み取ります。
 
-#### 基本的なボタン読み取り例
+#### 基本的なボタン読み取りの例
 
 この例では、ボタンの押下を検出し、シリアルモニターにメッセージを出力する方法を説明します。
 
@@ -656,24 +657,24 @@ void setup() {
   while (!Serial1) {
     delay(10); // Wait for serial port to connect
   }
-
+  
   Serial1.println("=================================");
   Serial1.println("reTerminal E Series - Button Test");
   Serial1.println("=================================");
   Serial1.println("Press any button to see output");
   Serial1.println();
-
+  
   // Configure button pins as inputs
   // Hardware already has pull-up resistors, so use INPUT mode
   pinMode(BUTTON_KEY0, INPUT);
   pinMode(BUTTON_KEY1, INPUT);
   pinMode(BUTTON_KEY2, INPUT);
-
+  
   // Read initial states
   lastKey0State = digitalRead(BUTTON_KEY0);
   lastKey1State = digitalRead(BUTTON_KEY1);
   lastKey2State = digitalRead(BUTTON_KEY2);
-
+  
   Serial1.println("Setup complete. Ready to detect button presses...");
 }
 
@@ -682,7 +683,7 @@ void loop() {
   bool key0State = digitalRead(BUTTON_KEY0);
   bool key1State = digitalRead(BUTTON_KEY1);
   bool key2State = digitalRead(BUTTON_KEY2);
-
+  
   // Check KEY0
   if (key0State != lastKey0State) {
     if (key0State == LOW) {
@@ -693,7 +694,7 @@ void loop() {
     lastKey0State = key0State;
     delay(50); // Debounce delay
   }
-
+  
   // Check KEY1
   if (key1State != lastKey1State) {
     if (key1State == LOW) {
@@ -704,7 +705,7 @@ void loop() {
     lastKey1State = key1State;
     delay(50); // Debounce delay
   }
-
+  
   // Check KEY2
   if (key2State != lastKey2State) {
     if (key2State == LOW) {
@@ -715,12 +716,12 @@ void loop() {
     lastKey2State = key2State;
     delay(50); // Debounce delay
   }
-
+  
   delay(10); // Small delay to prevent excessive CPU usage
 }
 ```
 
-**コードの動作原理:**
+**コードの動作原理：**
 
 1. **ピン定義**: 各ボタンのGPIOピン番号の定数を定義します。
 
@@ -730,7 +731,7 @@ void loop() {
 
 4. **デバウンス**: 各ボタン押下後の200msの簡単な遅延により、機械的なバウンスによる単一押下からの複数検出を防ぎます。
 
-5. **シリアル出力**: 各ボタン押下により、デバッグと検証のためのメッセージがシリアルモニターに送信されます。
+5. **シリアル出力**: 各ボタン押下により、デバッグと検証のためにシリアルモニターにメッセージが送信されます。
 
 ---
 
@@ -758,18 +759,18 @@ KEY2 (GPIO5) pressed!
 KEY2 (GPIO5) released!
 ```
 
-### 環境センサー（SHT4x）
+### 環境センサー (SHT4x)
 
-reTerminal EシリーズにはI2C経由で接続された統合SHT4x温湿度センサーが含まれています。
+reTerminal E シリーズには、I2C 経由で接続された統合 SHT4x 温度・湿度センサーが含まれています。
 
 #### 必要なライブラリのインストール
 
-Arduinoライブラリマネージャー（**ツール > ライブラリを管理...**）から2つのライブラリをインストールします：
+Arduino ライブラリマネージャー（**Tools > Manage Libraries...**）経由で2つのライブラリをインストールします：
 
-1. "**Sensirion I2C SHT4x**"を検索してインストール
-2. "**Sensirion Core**"を検索してインストール（依存関係）
+1. "**Sensirion I2C SHT4x**" を検索してインストール
+2. "**Sensirion Core**" を検索してインストール（依存関係）
 
-#### 基本的な温湿度の例
+#### 基本的な温度・湿度の例
 
 ```cpp
 // reTerminal E Series - SHT40 Temperature & Humidity Sensor Example
@@ -796,10 +797,10 @@ void setup() {
     }
 
     Serial1.println("SHT4x Basic Example");
-
+    
     // Initialize I2C with custom pins
     Wire.begin(I2C_SDA, I2C_SCL);
-
+    
     uint16_t error;
     char errorMessage[256];
 
@@ -829,10 +830,10 @@ void loop() {
 
     float temperature;
     float humidity;
-
+    
     // Measure temperature and humidity with high precision
     error = sht4x.measureHighPrecision(temperature, humidity);
-
+    
     if (error) {
         Serial1.print("Error trying to execute measureHighPrecision(): ");
         errorToString(error, errorMessage, 256);
@@ -850,7 +851,7 @@ void loop() {
 
 **セットアップ関数:**
 
-1. **シリアル初期化**: reTerminal Eシリーズ専用のピン44（RX）と43（TX）で`Serial1`を使用
+1. **シリアル初期化**: reTerminal Eシリーズ専用のピン44（RX）と43（TX）を使用して`Serial1`を使用
 2. **I2C初期化**: ピン19（SDA）と20（SCL）でI2Cを設定
 3. **センサー初期化**: `sht4x.begin(Wire, 0x44)`を呼び出してアドレス0x44でSHT4xセンサーを初期化
 4. **シリアル番号読み取り**: 検証のためにセンサーの固有シリアル番号を読み取り表示
@@ -860,7 +861,7 @@ void loop() {
 1. **遅延**: オーバーサンプリングを避けるため測定間に5秒待機
 2. **測定**: 正確な読み取りのために`measureHighPrecision()`を使用（約8.3ms要）
 3. **エラーハンドリング**: エラーをチェックし、`errorToString()`を使用して読み取り可能なメッセージに変換
-4. **結果表示**: 摂氏温度と相対湿度パーセンテージを出力
+4. **結果表示**: 摂氏温度と相対湿度パーセンテージを印刷
 
 **期待される出力**
 
@@ -875,7 +876,7 @@ Temperature: 27.38°C Humidity: 53.37%
 
 ### バッテリー管理システム
 
-reTerminal Eシリーズには、電圧分割回路を備えたADCピンを通じたバッテリー電圧監視機能が含まれています。
+reTerminal Eシリーズには、分圧回路を備えたADCピンを通じてバッテリー電圧監視機能が含まれています。
 
 #### シンプルなバッテリー電圧監視
 
@@ -896,17 +897,17 @@ void setup() {
   while (!Serial1) {
     delay(10);
   }
-
+  
   Serial1.println("Battery Voltage Monitor");
-
+  
   // Configure battery monitoring enable pin
   pinMode(BATTERY_ENABLE_PIN, OUTPUT);
   digitalWrite(BATTERY_ENABLE_PIN, HIGH);  // Enable battery monitoring
-
+  
   // Configure ADC
   analogReadResolution(12);  // 12-bit resolution
   analogSetPinAttenuation(BATTERY_ADC_PIN, ADC_11db);
-
+  
   delay(100);  // Allow circuit to stabilize
 }
 
@@ -914,31 +915,31 @@ void loop() {
   // Enable battery monitoring
   digitalWrite(BATTERY_ENABLE_PIN, HIGH);
   delay(5);
-
+  
   // Read voltage in millivolts
   int mv = analogReadMilliVolts(BATTERY_ADC_PIN);
-
+  
   // Disable battery monitoring
   digitalWrite(BATTERY_ENABLE_PIN, LOW);
-
+  
   // Calculate actual battery voltage (2x due to voltage divider)
   float batteryVoltage = (mv / 1000.0) * 2;
-
+  
   // Print voltage
   Serial1.print("Battery: ");
   Serial1.print(batteryVoltage, 2);
   Serial1.println(" V");
-
+  
   delay(2000);
 }
 ```
 
-**コードの説明:**
+**コード説明:**
 
-- GPIO1はADCを通じて分割されたバッテリー電圧を読み取ります
+- GPIO1はADCを通じて分圧されたバッテリー電圧を読み取ります
 - GPIO21はバッテリー監視回路を有効にします
-- 電圧分割器により、実際のバッテリー電圧は測定電圧の2倍になります
-- フル充電されたLiPoバッテリーでは約4.2Vが期待されます
+- 電圧分圧器により、実際のバッテリー電圧は測定電圧の2倍になります
+- フル充電されたLiPoバッテリーでは、約4.2Vが期待されます
 - バッテリーが低下すると、電圧は約3.3Vまで下がります
 
 **期待される出力**
@@ -953,18 +954,19 @@ Battery: 4.18 V
 
 ### MicroSDカードの使用
 
-デジタルフォトフレームやデータロギングなど、追加ストレージが必要なアプリケーションのために、reTerminal EシリーズにはMicroSDカードスロットが含まれています。
+デジタルフォトフレームやデータロギングなど、追加のストレージが必要なアプリケーションのために、reTerminal Eシリーズには MicroSDカードスロットが含まれています。
 
-デバイスをデジタルフォトフレームとして使用する予定がある場合や、追加ストレージが必要な場合は、microSDカードを挿入してください。
+デバイスをデジタルフォトフレームとして使用する予定がある場合や、追加のストレージが必要な場合は、microSDカードを挿入してください。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/133.jpg" style={{width:700, height:'auto'}}/></div>
+
 :::note
-reTerminal Eシリーズは、**Fat32**ファイルシステムでフォーマットされた64GBまでのMicroSDカードのみをサポートしています。
+reTerminal Eシリーズは、**Fat32**ファイルシステムでフォーマットされた最大64GBまでのMicroSDカードのみをサポートしています。
 :::
 
-#### 基本的なSDカード操作：ファイル一覧表示
+#### 基本的なSDカード操作：ファイルの一覧表示
 
-この例では、SDカードを初期化し、挿入または取り外しを検出し、ルートディレクトリ内のすべてのファイルとディレクトリを一覧表示する方法を示します。コードは**reTerminal E1001**と**reTerminal E1002**の両方で同じです。
+この例では、SDカードを初期化し、挿入または取り外しを検出し、ルートディレクトリ内のすべてのファイルとディレクトリを一覧表示する方法を示します。このコードは**reTerminal E1001**と**reTerminal E1002**の両方で同じです。
 
 以下のコードをArduino IDEスケッチにコピーしてください。
 
@@ -1133,27 +1135,27 @@ void loop() {
 }
 ```
 
-##### コードの説明
+##### コード説明
 
-- **ピン定義：** コードは、MicroSDカードスロットに使用されるGPIOピンを定義することから始まります。SPIピン（`MOSI`、`SCK`）はe-paperディスプレイと共有されていますが、別のチップセレクト（`SD_CS_PIN`）と専用のSPIインスタンス（`spiSD`）により、独立して使用できることに注意してください。
-- **SPI初期化：** ESP32の2番目のハードウェアSPIコントローラー（HSPI）を使用するために、新しいSPIオブジェクト`spiSD(HSPI)`をインスタンス化します。これは他のSPIデバイスとの競合を避けるためのベストプラクティスです。
-- **カード検出：** `isCardInserted()`関数は`SD_DET_PIN`を読み取ります。reTerminalハードウェアでは、カードが存在するときにこのピンがLOWにプルされます。
-- **マウント/アンマウント：** `mountSD()`関数はカードへの電源を有効にし、正しいピンでHSPIバスを設定し、`SD.begin()`を呼び出してファイルシステムを初期化します。`unmountSD()`はリソースを解放します。
-- **ファイル一覧：** `listRoot()`はルートディレクトリ（`/`）を開き、`listDir()`はファイルシステムを再帰的に走査し、すべてのファイルとディレクトリの名前を出力する再帰関数です。
-- **`setup()`：** 出力用に`Serial1`を初期化し、カード検出ピンを設定し、デバイスの電源投入時にカードがすでに挿入されているかどうかの初期チェックを実行します。
-- **`loop()`：** カードを常にチェックする代わりに、コードは非ブロッキングタイマー（`millis()`）を使用して、1秒に1回カードのステータスの変化をチェックします。変化が検出された場合（カードの挿入または取り外し）、カードをマウントまたはアンマウントし、ステータスをシリアルモニターに出力します。
+- **ピン定義:** コードは、MicroSDカードスロットに使用されるGPIOピンの定義から始まります。SPIピン（`MOSI`、`SCK`）はe-paperディスプレイと共有されていますが、独立したチップセレクト（`SD_CS_PIN`）と専用のSPIインスタンス（`spiSD`）により、それらを独立して使用できることに注意してください。
+- **SPI初期化:** ESP32の2番目のハードウェアSPIコントローラー（HSPI）を使用するために、新しいSPIオブジェクト`spiSD(HSPI)`をインスタンス化します。これは他のSPIデバイスとの競合を避けるためのベストプラクティスです。
+- **カード検出:** `isCardInserted()`関数は`SD_DET_PIN`を読み取ります。reTerminalハードウェアでは、カードが挿入されているときにこのピンはLOWにプルされます。
+- **マウント/アンマウント:** `mountSD()`関数はカードへの電源を有効にし、正しいピンでHSPIバスを設定し、`SD.begin()`を呼び出してファイルシステムを初期化します。`unmountSD()`はリソースを解放します。
+- **ファイル一覧:** `listRoot()`はルートディレクトリ（`/`）を開き、`listDir()`はファイルシステムを再帰的に走査し、すべてのファイルとディレクトリの名前を出力する再帰関数です。
+- **`setup()`:** 出力用に`Serial1`を初期化し、カード検出ピンを設定し、デバイスの電源投入時にカードがすでに挿入されているかどうかを確認する初期チェックを実行します。
+- **`loop()`:** カードを常時チェックする代わりに、コードはノンブロッキングタイマー（`millis()`）を使用して、1秒に1回カードの状態変化をチェックします。変化が検出された場合（カードの挿入または取り外し）、カードをマウントまたはアンマウントし、シリアルモニターにステータスを出力します。
 
 ##### 期待される結果
 
 1. コードをreTerminalにアップロードします。
-2. Arduino IDEのシリアルモニター（**ツール > シリアルモニター**）を開きます。
+2. Arduino IDEのシリアルモニター（**Tools > Serial Monitor**）を開きます。
 3. ボーレートが**115200**に設定されていることを確認します。
 
 以下のアクションに対応する出力が表示されます：
 
-- **カードなしでの起動時：** モニターに`[SD] No card detected at startup...`と表示されます
-- **カードを挿入したとき：** モニターに`[SD] Card inserted.`と表示され、続いてカード上のすべてのファイルとディレクトリの完全な一覧が表示されます。
-- **カードを取り外したとき：** モニターに`[SD] Card removed.`と表示されます
+- **カードなしでの起動時:** モニターに`[SD] No card detected at startup...`が出力されます
+- **カードを挿入したとき:** モニターに`[SD] Card inserted.`が出力され、続いてカード上のすべてのファイルとディレクトリの完全な一覧が表示されます。
+- **カードを取り外したとき:** モニターに`[SD] Card removed.`が出力されます
 
 ```
 [FILE] live.0.shadowIndexGroups  6 bytes
@@ -1172,7 +1174,7 @@ void loop() {
 
 ### 高度な例：SDカードからのBMP画像表示
 
-この包括的な例では、前のセクションの機能を組み合わせます。MicroSDカードからビットマップ（`.bmp`）画像ファイルを読み取り、reTerminalのe-paperスクリーンに表示するプログラムを作成します。これは、デバイスの実用的で現実的なアプリケーションを示しています。
+この包括的な例は、前のセクションの機能を組み合わせたものです。MicroSDカードからBitmap（`.bmp`）画像ファイルを読み取り、reTerminalのe-paperスクリーンに表示するプログラムを作成します。これは、デバイスの実用的で現実的なアプリケーションを実演します。
 
 プログラムは、SDカードのルートディレクトリにある`test.bmp`という名前のファイルを探します。
 
@@ -1189,42 +1191,43 @@ MicroSDカード（64GB以下を推奨）を準備し、**FAT32**ファイルシ
 画像を準備する方法は、reTerminalモデルによって若干異なります。お使いのデバイスに合ったガイドに従ってください。
 
 <Tabs>
-<TabItem value="For reTerminal E1001 (B&W Screen)" label="reTerminal E1001（白黒スクリーン）用" default>
+<TabItem value="For reTerminal E1001 (B&W Screen)" label="For reTerminal E1001 (B&W Screen)" default>
 
-白黒スクリーンは黒と白のピクセルのみを表示できます。コードはカラー画像をリアルタイムでグレースケールに変換できますが、**コンピューター上で画像を高品質のグレースケール画像に事前変換する**ことで、はるかに良いコントラストと詳細を得ることができます。
+白黒スクリーンは白と黒のピクセルのみを表示できます。私たちのコードはカラー画像をリアルタイムでグレースケールに変換できますが、**コンピューター上で画像を高品質のグレースケール画像に事前変換する**ことで、はるかに良いコントラストと詳細を得ることができます。
 
 1. **画像のリサイズ：** 画像を**800x480ピクセル**にリサイズします。
 
 2. **グレースケールに変換（推奨）：** 画像エディターで、まず画像をグレースケールに変換します。**GIMP**では：
-    - メニューの**色 > 脱色 > 脱色...**に移動します。最良の結果を得るために「輝度」などのモードを選択します。
+    - メニュー**Colors > Desaturate > Desaturate...**に移動します。最良の結果を得るために「Luminosity」などのモードを選択します。
 
-3. **標準BMPとして保存：** カラースクリーンガイドと同じ手順に従ってファイルを保存します。画像がグレースケールであっても、24ビットBMPとして保存することで、コードとの最大の互換性が確保されます。
-    - **ファイル > エクスポート...**に移動し、`test.bmp`と名前を付けます。
-    - エクスポートダイアログで、**詳細オプション**の下で**「24ビット：R8 G8 B8」**を選択します。
-    - **エクスポート**をクリックします。
+3. **標準BMPとして保存：** カラースクリーンガイドと同じ手順に従ってファイルを保存します。画像がグレースケールであっても、24ビットBMPとして保存することで、コードとの最大限の互換性が確保されます。
+    - **File > Export As...**に移動し、`test.bmp`と名前を付けます。
+    - エクスポートダイアログで、**Advanced Options**の下で**"24 bits: R8 G8 B8"**を選択します。
+    - **Export**をクリックします。
 
 4. **SDカードにコピー：** 最終的な`test.bmp`ファイルをMicroSDカードのルートディレクトリにコピーします。
 
 </TabItem>
-<TabItem value="For reTerminal E1002 (Color Screen)" label="reTerminal E1002（カラースクリーン）用">
+<TabItem value="For reTerminal E1002 (Color Screen)" label="For reTerminal E1002 (Color Screen)">
 
-カラースクリーンは6色を表示できます：黒、白、赤、黄、青、緑。提供されたコードには、ソース画像の任意の色をスクリーン上で利用可能な最適な色にインテリジェントにマッピングする「最近色」アルゴリズムが含まれています。最適な結果を得るには、以下の手順に従ってください：
+カラースクリーンは6色を表示できます：黒、白、赤、黄、青、緑。提供されたコードには、ソース画像の任意の色をスクリーン上で利用可能な最適な色にインテリジェントにマッピングする「最近色」アルゴリズムが含まれています。最適な結果を得るために、以下の手順に従ってください：
 
 1. **画像のリサイズ：** 任意の画像エディターを使用して、画像を**800x480ピクセル**にリサイズします。
-2. **標準BMPとして保存：** このコードは**非圧縮**の24ビットまたは32ビットBMPファイルを読み取るように設計されています。プロフェッショナルな画像エディタを使用することが、正しい形式を確保する最良の方法です。無料でオープンソースのソフトウェア**GIMP**をお勧めします：
+
+2. **標準BMPとして保存：** コードは**非圧縮**の24ビットまたは32ビットBMPファイルを読み取るように設計されています。プロフェッショナルな画像エディターを使用することが、フォーマットが正しいことを確実にする最良の方法です。無料でオープンソースのソフトウェア**GIMP**をお勧めします：
     - リサイズした画像をGIMPで開きます。
-    - メニューの**ファイル > エクスポート...**に移動します。
-    - ファイル名を`test.bmp`にして**エクスポート**をクリックします。
-    - 表示される「BMPとして画像をエクスポート」ダイアログで、**詳細オプション**を展開します。
-    - **「24 bits: R8 G8 B8」**を選択します。これは最も互換性のある非圧縮形式です。
-    - **エクスポート**をクリックします。
+    - メニュー**File > Export As...**に移動します。
+    - ファイルに`test.bmp`と名前を付け、**Export**をクリックします。
+    - 表示される「Export Image as BMP」ダイアログで、**Advanced Options**を展開します。
+    - **"24 bits: R8 G8 B8"**を選択します。これは最も互換性のある非圧縮フォーマットです。
+    - **Export**をクリックします。
 
 3. **SDカードにコピー：** 最終的な`test.bmp`ファイルをMicroSDカードのルートディレクトリにコピーします。
 
 </TabItem>
 </Tabs>
 
-テスト用の既製の画像を使用したい場合は、GxEPD2が提供する[サンプル画像](https://github.com/ZinggJM/GxEPD2/tree/master/examples/GxEPD2_SD_Example/bitmaps)を使用できます。
+テスト用に既製の画像を使用したい場合は、GxEPD2が提供する[サンプル画像](https://github.com/ZinggJM/GxEPD2/tree/master/examples/GxEPD2_SD_Example/bitmaps)を使用できます。
 
 #### コード
 
@@ -1380,13 +1383,13 @@ void drawBmp(const char *filename, int16_t x, int16_t y) {
   read32(bmpFile);
   bmpWidth = read32(bmpFile);
   bmpHeight = read32(bmpFile);
-
+  
   if (read16(bmpFile) != 1) {
     Serial1.println("Unsupported BMP format (planes)");
     bmpFile.close();
     return;
   }
-
+  
   bmpDepth = read16(bmpFile);
   uint32_t compression = read32(bmpFile);
 
@@ -1432,16 +1435,16 @@ void drawBmp(const char *filename, int16_t x, int16_t y) {
         uint8_t b = sdbuffer[col * bytesPerPixel];
         uint8_t g = sdbuffer[col * bytesPerPixel + 1];
         uint8_t r = sdbuffer[col * bytesPerPixel + 2];
-
+        
         uint16_t GxEPD_Color;
-
+        
         #if (EPD_SELECT == 1) // Color Display
           GxEPD_Color = findNearestColor(r, g, b);
         #else // Black and White Display
           if ((r * 0.299 + g * 0.587 + b * 0.114) < 128) GxEPD_Color = GxEPD_BLACK;
           else GxEPD_Color = GxEPD_WHITE;
         #endif
-
+        
         display.drawPixel(x + col, y + row, GxEPD_Color);
       }
     }
@@ -1508,7 +1511,7 @@ void loop() {
 ```
 
 </TabItem>
-<TabItem value="For reTerminal E1002 (Color Screen)" label="For reTerminal E1002 (Color Screen)">
+<TabItem value="For reTerminal E1002 (カラー画面)" label="For reTerminal E1002 (カラー画面)">
 
 ```cpp
 #include <SD.h>
@@ -1657,13 +1660,13 @@ void drawBmp(const char *filename, int16_t x, int16_t y) {
   read32(bmpFile);
   bmpWidth = read32(bmpFile);
   bmpHeight = read32(bmpFile);
-
+  
   if (read16(bmpFile) != 1) {
     Serial1.println("Unsupported BMP format (planes)");
     bmpFile.close();
     return;
   }
-
+  
   bmpDepth = read16(bmpFile);
   uint32_t compression = read32(bmpFile);
 
@@ -1709,16 +1712,16 @@ void drawBmp(const char *filename, int16_t x, int16_t y) {
         uint8_t b = sdbuffer[col * bytesPerPixel];
         uint8_t g = sdbuffer[col * bytesPerPixel + 1];
         uint8_t r = sdbuffer[col * bytesPerPixel + 2];
-
+        
         uint16_t GxEPD_Color;
-
+        
         #if (EPD_SELECT == 1) // Color Display
           GxEPD_Color = findNearestColor(r, g, b);
         #else // Black and White Display
           if ((r * 0.299 + g * 0.587 + b * 0.114) < 128) GxEPD_Color = GxEPD_BLACK;
           else GxEPD_Color = GxEPD_WHITE;
         #endif
-
+        
         display.drawPixel(x + col, y + row, GxEPD_Color);
       }
     }
@@ -1793,26 +1796,26 @@ void loop() {
 - **`drawBmp()`**: これがコア関数です。BMPファイルを開き、ヘッダーを解析してその寸法とプロパティを読み取り、重要な検証チェックを実行します。特にサポートされていない圧縮タイプをチェックし、見つかった場合は有用なエラーメッセージを提供します。
 - **描画ループ**: この関数は、SDカードから画像を一行ずつ読み取ります。行内の各ピクセルについて、赤、緑、青の色値を抽出します。
 - **色処理**: ここで`EPD_SELECT`マクロに基づいてロジックが分岐します：
-  - **カラー用（E1002）**: `findNearestColor(r, g, b)`を呼び出します。この関数は、ピクセルの色と画面のパレットの6色それぞれとの「距離」を計算します。最も小さい距離のパレット色を返し、可能な限り正確な色表現を保証します。
+  - **カラー用（E1002）**: `findNearestColor(r, g, b)`を呼び出します。この関数は、ピクセルの色と画面のパレットの6色それぞれとの「距離」を計算します。最小距離のパレット色を返し、可能な限り正確な色表現を保証します。
   - **白黒用（E1001）**: 標準的な輝度式（`r * 0.299 + g * 0.587 + b * 0.114`）を使用してRGB色を単一の明度値に変換します。この値が閾値（128）を下回る場合、ピクセルは黒として描画され、そうでなければ白として描画されます。
 
 #### アップロードと実行
 
 1. Arduino IDEで、正しいボード（`XIAO_ESP32S3`）が選択されていることを確認してください。
-2. コードの上部にある`EPD_SELECT`マクロを、reTerminal E1002の場合は`1`、E1001の場合は`0`に設定してください。
+2. コードの上部にある`EPD_SELECT`マクロを、reTerminal E1002の場合は`1`に、E1001の場合は`0`に設定してください。
 3. 準備したMicroSDカードをreTerminalに挿入してください。
 4. コードをアップロードしてください。
-5. ボーレート`115200`でシリアルモニターを開いてください。進行状況ログが表示され、数分後に画像がe-paperディスプレイに描画されます。
+5. ボーレート`115200`でシリアルモニターを開いてください。進行状況ログが表示され、しばらくすると画像がe-paperディスプレイにレンダリングされます。
 
 :::tip リフレッシュ速度について
-画面のリフレッシュ速度は遅い場合があり、プログラムをアップロードしてから2〜3分経つまで画面が応答しないことがあります。
+画面のリフレッシュ速度が遅い場合があり、プログラムをアップロードしてから2〜3分経つまで画面が応答しないことがあります。
 :::
 
 ## トラブルシューティング
 
 ### Q1: 上記のコードを実行してもreTerminalのePaperディスプレイに何も表示されない、またはリフレッシュされないのはなぜですか？
 
-この問題は、reTerminalにMicroSDカードを挿入している場合に発生する可能性があります。理由は、MicroSDカードとePaperディスプレイがreTerminal上で同じSPIバスを共有しているためです。MicroSDカードが挿入されているが、そのイネーブル（チップセレクト）ピンが適切に管理されていない場合、SPIバス上で競合が発生する可能性があります。具体的には、MicroSDカードがBUSYラインをハイに保持し、ePaperディスプレイが正常に機能することを妨げ、ディスプレイの更新やリフレッシュが行われない結果となります。
+この問題は、reTerminalにMicroSDカードを挿入している場合に発生する可能性があります。理由は、MicroSDカードとePaperディスプレイがreTerminal上で同じSPIバスを共有しているためです。MicroSDカードが挿入されているが、そのイネーブル（チップセレクト）ピンが適切に管理されていない場合、SPIバス上で競合が発生する可能性があります。具体的には、MicroSDカードがBUSYラインをハイに保持し、ePaperディスプレイが正常に機能することを妨げ、結果として表示の更新やリフレッシュが行われなくなります。
 
 ```cpp
 // Initialize SD Card
@@ -1821,23 +1824,23 @@ digitalWrite(SD_EN_PIN, HIGH);
 pinMode(SD_DET_PIN, INPUT_PULLUP);
 ```
 
-これを解決するには、上記のコードを使用してMicroSDカードが適切に有効化されていることを確認する必要があります。このコードは、正しいピン状態を設定してMicroSDカードを初期化し、有効化することで、SPIバスの競合を防ぎ、SDカードとePaperディスプレイの両方が連携して動作できるようにします。reTerminalでMicroSDカードを使用する際は、このような問題を避けるために、常に推奨される初期化コードを使用してください。
+この問題を解決するには、上記で提供されたコードを使用してMicroSDカードが適切に有効化されていることを確認する必要があります。このコードは、正しいピン状態を設定することでMicroSDカードを初期化し有効化し、SPIバスの競合を防ぎ、SDカードとePaperディスプレイの両方が連携して動作できるようにします。reTerminalでMicroSDカードを使用する際は、このような問題を回避するために、常に推奨される初期化コードを使用してください。
 
 プロジェクト内でMicroSDカードを使用しない場合は、デバイスの電源を切ってディスプレイプログラムを実行する前にカードを取り外すことをお勧めします。カードがreTerminalに挿入されている場合は、MicroSDカードを使用するかどうかに関係なく、画面が適切に表示されるように上記のコードを追加する必要があります。
 
 ### Q2: reTerminalにプログラムをアップロードできないのはなぜですか？
 
-reTerminalにプログラムをアップロードする際に以下のエラーが発生する場合。
+reTerminalにプログラムをアップロードする際に以下のエラーが発生した場合。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/158.png" style={{width:1000, height:'auto'}}/></div>
 
-その場合、Arduino IDEのアップロード速度が過度に高く設定されている可能性があります。この問題を解決するために115200ボーに変更してください。
+Arduino IDEのアップロード速度が過度に高く設定されている可能性があります。この問題を解決するために115200ボーに変更してください。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/159.png" style={{width:400, height:'auto'}}/></div>
 
 ## 技術サポート & 製品ディスカッション
 
-弊社製品をお選びいただきありがとうございます！弊社製品での体験が可能な限りスムーズになるよう、さまざまなサポートを提供しています。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
+弊社製品をお選びいただき、ありがとうございます！弊社製品での体験が可能な限りスムーズになるよう、さまざまなサポートを提供しています。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
 
 <div class="table-center">
   <div class="button_tech_support_container">
