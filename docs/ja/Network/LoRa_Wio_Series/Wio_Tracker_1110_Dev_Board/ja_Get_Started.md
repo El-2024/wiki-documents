@@ -26,7 +26,6 @@ SenseCAP Mate APPをダウンロードします。
 登録時は**Global**バージョンを選択してください。
 :::
 
-
 `+` -> `Add Device`をクリックします。
 
 次に、ボードラベルのQRコードをスキャンします。
@@ -41,9 +40,7 @@ SenseCAP Mate APPをダウンロードします。
 
 `Device`ページに戻ると、開発ボードがバインドされていることが確認できます。
 
-
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/wio_tracker/bind-done.png" alt="pir" width={300} height="auto" /></p>
-
 
 `Configuration Now`をクリックします。
 
@@ -71,38 +68,39 @@ SenseCAP Mate APPをダウンロードします。
 
 <div style={{textAlign: 'center'}}>
 <h2>プラットフォーム</h2>
-<table>
-  <tbody>
-    <tr>
-      <td><h4>プラットフォーム</h4></td>
-      <td><h4>説明</h4></td>
-    </tr>
-    <tr>
-      <td>SenseCAP for The Things Network</td>
-      <td>デフォルトプラットフォーム。
-SenseCAP Gatewayと組み合わせて使用する必要があります。SenseCAPは独自のTTNサーバーを構築し、SenseCAPゲートウェイとペアリングした際にセンサーをすぐに使用できるようにします。<br />
-      <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCAP Outdoor Gateway</span></a><br />
-      <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCAP Indoor Gateway</span></a></td>
-    </tr>
-    <tr>
-      <td>SenseCAP for Helium</td>
-      <td>Heliumネットワークのカバレッジがある場合、Helium経由でデータをアップロードできます。デバイスはSenseCAPのプライベートHeliumコンソールで動作します。ユーザーはHeliumコンソールでデバイスを作成する必要がなく、SenseCAP Mate AppとPortalですぐに使用できます。<br />
-      <a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a></td>
-    </tr>
-    <tr>
-      <td>Helium</td>
-      <td>デバイスをパブリックHeliumコンソールに接続</td>
-    </tr>
-    <tr>
-      <td>The Things Network</td>
-      <td>デバイスをTTN(TTS)サーバーに接続</td>
-    </tr>
-    <tr>
-      <td>Other Platform</td>
-      <td>その他のLoRaWANネットワークサーバー</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <tbody>
+      <tr>
+        <td><h4>プラットフォーム</h4></td>
+        <td><h4>説明</h4></td>
+      </tr>
+      <tr>
+        <td>SenseCAP for The Things Network</td>
+        <td>デフォルトプラットフォーム。
+  SenseCAP Gatewayと組み合わせて使用する必要があります。SenseCAPは独自のTTNサーバーを構築し、SenseCAPゲートウェイとペアリングした際にセンサーをすぐに使用できるようにします。<br />
+        <a href="https://www.seeedstudio.com/LoRaWAN-Gateway-US915-p-4306.html" target="_blank"><span>SenseCAP Outdoor Gateway</span></a><br />
+        <a href="https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-US915-p-5472.html" target="_blank"><span>SenseCAP Indoor Gateway</span></a></td>
+      </tr>
+      <tr>
+        <td>SenseCAP for Helium</td>
+        <td>Heliumネットワークのカバレッジがある場合、Helium経由でデータをアップロードできます。デバイスはSenseCAPのプライベートHeliumコンソールで動作します。ユーザーはHeliumコンソールでデバイスを作成する必要がなく、SenseCAP Mate AppとPortalですぐに使用できます。<br />
+        <a href="https://explorer.helium.com/" target="_blank"><span>Helium Coverage</span></a></td>
+      </tr>
+      <tr>
+        <td>Helium</td>
+        <td>デバイスをパブリックHeliumコンソールに接続</td>
+      </tr>
+      <tr>
+        <td>The Things Network</td>
+        <td>デバイスをTTN(TTS)サーバーに接続</td>
+      </tr>
+      <tr>
+        <td>Other Platform</td>
+        <td>その他のLoRaWANネットワークサーバー</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 `Frequency Plan`を選択してください。
 
@@ -125,7 +123,6 @@ SenseCAP Gatewayと組み合わせて使用する必要があります。SenseCA
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/products/SenseCAP/Wio-Tracker/Wio-1110getstart/8.jpeg" alt="pir" width={500} height="auto" /></p>
 
-
 ### データの確認
 
 開発ボードの電源を入れ、近くにネットワークカバレッジがあることを確認してください。開発ボードがネットワークに正常に接続されると、`Device`ページに`online`と表示されます。
@@ -135,7 +132,6 @@ SenseCAP Gatewayと組み合わせて使用する必要があります。SenseCA
 お住まいの地域で信号が弱い場合は、LoRaWANゲートウェイを設置するだけで解決できます。Wi-Fiルーターの設定と同じくらい簡単です。LoRaの美しさは、その柔軟性とネットワーク拡張の容易さにあります。この信頼性の高いソリューションは費用対効果も優れています。例えば、[SenseCAP M2 Indoor LoRaWAN Gateway](https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-EU868-p-5471.html)は、最大10kmまでカバレッジを拡張できます！
 
 <p style={{textAlign: 'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1NTkyNTI4NTI1MQ_873855_RPfBjpKfW2xWddri_1693817031?w=680&h=446&type=image/png" alt="pir" width={600} height="auto" /></p>
-
 
 :::tip
 開発ボードを窓際や障害物のない場所に置いてください。そうすることで、より良いGPS信号を受信でき、ボードが位置データを正常に取得できます。
@@ -186,12 +182,9 @@ SenseCAP Mate appインターフェースでは、SOS信号とデータパケッ
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/products/SenseCAP/Wio-Tracker/Wio-1110getstart/sos-app.JPG" alt="pir" width={300} height="auto" /></p>
 
-
 ### Groveセンサーの追加（オプション）
 
-
 オンボードセンサーに加えて、Wio tracker 1110開発ボードでは無限の可能性があります。工場出荷時のファームウェアでは、以下のGroveセンサーもこのボードにアクセスして自動的に認識されます。
-
 
 <table align="center">
   <caption> <h2>Groveモジュール</h2> </caption>
@@ -235,12 +228,11 @@ GroveセンサーをWio Tracker開発ボードの対応するGroveポートに�
 
 [Grove-I2Cハブ](https://www.seeedstudio.com/Grove-I2C-Hub.html)を使用して、複数のI2Cセンサーをボードに接続することもできます。
 
-
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/wio_tracker/WM1110-A-Grove.jpg" alt="pir" width={800} height="auto" /></p>
 
 ## ファームウェアの書き込み
 
-* [最新ファームウェア](https://files.seeedstudio.com/wiki/SenseCAP/wio_tracker/wio_tracker_app_release_sw_0.5_2024-06-06.uf2)
+- [最新ファームウェア](https://files.seeedstudio.com/wiki/SenseCAP/wio_tracker/wio_tracker_app_release_sw_0.5_2024-06-06.uf2)
 
 `Reset`ボタンをダブルクリックすると、PC上に`WM1110_BOOT`ドライバが表示されます。
 
@@ -248,13 +240,12 @@ GroveセンサーをWio Tracker開発ボードの対応するGroveポートに�
 
 `.uf2`ファイルをドライバにドラッグしてください。ダウンロードが自動的に実行され、その後ドライバがログアウトします。
 
-
 ## SenseCAP API
 
 SenseCAP APIは、ユーザーがIoTデバイスとデータを管理するためのものです。HTTPプロトコル、MQTTプロトコル、Websocketプロトコルの3種類のAPIメソッドが含まれています。
-* HTTP APIを使用すると、ユーザーはLoRaデバイスを管理し、生データや履歴データを取得できます。
-* MQTT APIを使用すると、ユーザーはMQTTプロトコルを通じてセンサーのリアルタイム測定データを購読できます。
-* Websocket APIを使用すると、ユーザーはWebsocketプロトコルを通じてセンサーのリアルタイム測定データを取得できます。
+- HTTP APIを使用すると、ユーザーはLoRaデバイスを管理し、生データや履歴データを取得できます。
+- MQTT APIを使用すると、ユーザーはMQTTプロトコルを通じてセンサーのリアルタイム測定データを購読できます。
+- Websocket APIを使用すると、ユーザーはWebsocketプロトコルを通じてセンサーのリアルタイム測定データを取得できます。
 
 詳細については、[APIユーザーガイド](https://sensecap-docs.seeed.cc/)をご確認ください。
 

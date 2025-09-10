@@ -389,7 +389,7 @@ reTerminal DMには、マシンの動作状態を示すための3つのLEDイン
 | 4 | 6 | 電源障害タイプ A|
 |4 | 7 | 電源障害タイプ B |
 
-</div></div>
+</div>
 
 :::note
 ACT LEDが規則的な4回点滅パターンで点滅する場合、bootcode（start.elf）が見つかりません<br/>

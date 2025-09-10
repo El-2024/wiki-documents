@@ -139,7 +139,7 @@ LoRa Basics™ Stationの詳細情報は、[Semtechの開発者ポータル](htt
 サーバーの詳細については、前のステップを確認してください。
 
 3. **URL:**
-CUPSはURI: https://server-address:443を使用し、LNSはURI: wss://server-address:8887を使用します
+CUPSはURI: https://server-address:443 を使用し、LNSはURI: wss://server-address:8887を使用します
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/url.png" alt="pir" width={600} height="auto" /></p>
 

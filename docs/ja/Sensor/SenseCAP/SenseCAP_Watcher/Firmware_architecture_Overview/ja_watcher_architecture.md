@@ -287,9 +287,9 @@ esp_err_t tf_event_handler_unregister(int32_t event_id,
 
 #### 1.4.1 イベントパイプラインで送信されるメッセージタイプ
 
-2つのモジュールを接続できることは、それらのデータタイプが一致していることを示します。データタイプと対応するデータ構造を[tf\_module\_data\_type.h](https://github.com/Seeed-Studio/SenseCAP-Watcher-Firmware/blob/main/examples/factory_firmware/main/task_flow_module/common/tf_module_data_type.h)ファイルで定義しています。一般的に、データタイプは**TF\_DATA\_TYPE\_**プレフィックスで定義され、データ構造は**tf\_data\_**プレフィックスで定義されます。
+2つのモジュールを接続できることは、それらのデータタイプが一致していることを示します。データタイプと対応するデータ構造を[tf_module_data_type.h](https://github.com/Seeed-Studio/SenseCAP-Watcher-Firmware/blob/main/examples/factory_firmware/main/task_flow_module/common/tf_module_data_type.h)ファイルで定義しています。一般的に、データタイプは**TF_DATA_TYPE_**プレフィックスで定義され、データ構造は**tf_data_**プレフィックスで定義されます。
 
-例えば、タイプ列挙構造で**TF\_DATA\_TYPE\_BUFFER**タイプを定義し、対応する構造は以下の通りです。最初のフィールドtypeはデータタイプを示し、残りのフィールドは送信されるデータを示します。
+例えば、タイプ列挙構造で**TF_DATA_TYPE_BUFFER**タイプを定義し、対応する構造は以下の通りです。最初のフィールドtypeはデータタイプを示し、残りのフィールドは送信されるデータを示します。
 
 ```cpp
 typedef struct {
@@ -346,7 +346,7 @@ typedef struct {
 
 idfの`esp_event`コンポーネントを使用してメッセージ伝送を行う場合、エンキュー時にメモリコピーが発生します（詳細については`esp_event`のソースコードをお読みください）。これは画像やオーディオなどの大きなデータを伝送する際には非常に不適切です。
 
-そのため、ポインタのみを伝送する効率的な伝送方法を採用しています。例えば、**TF\_DATA\_TYPE\_BUFFER**タイプでは、伝送するデータは以下のように定義されます。最初のフィールド`p_buf`はデータバッファの開始アドレスで、2番目のフィールドlenはデータの長さです。
+そのため、ポインタのみを伝送する効率的な伝送方法を採用しています。例えば、**TF_DATA_TYPE_BUFFER**タイプでは、伝送するデータは以下のように定義されます。最初のフィールド`p_buf`はデータバッファの開始アドレスで、2番目のフィールドlenはデータの長さです。
 
 ```cpp
 struct tf_data_buf
@@ -357,7 +357,7 @@ struct tf_data_buf
 ```
 
 データプロデューサーモジュールでは、`p_buf`のメモリ割り当てを担当します。次のレベルのデータコンシューマーモジュールは、使用後にメモリを解放する責任があります。
-一般的なデータコピーと解放関数は、[tf\_module\_util.h](https://github.com/Seeed-Studio/SenseCAP-Watcher-Firmware/blob/main/examples/factory_firmware/main/task_flow_module/common/tf_module_util.h)ファイルで定義されています。例えば、受信したイベントデータタイプが望むものでない場合、**tf\_data\_free()**関数を直接呼び出してメモリを解放できます（この関数はすべてのデータタイプの解放を実装しています）。以下に示します：
+一般的なデータコピーと解放関数は、[tf_module_util.h](https://github.com/Seeed-Studio/SenseCAP-Watcher-Firmware/blob/main/examples/factory_firmware/main/task_flow_module/common/tf_module_util.h)ファイルで定義されています。例えば、受信したイベントデータタイプが望むものでない場合、**tf_data_free()**関数を直接呼び出してメモリを解放できます（この関数はすべてのデータタイプの解放を実装しています）。以下に示します：
 
 ```cpp
 static void __event_handler(void *handler_args, esp_event_base_t base, int32_t id, void *p_event_data)
@@ -374,7 +374,7 @@ static void __event_handler(void *handler_args, esp_event_base_t base, int32_t i
 
 ### 1.5 モジュールのベースクラス
 
-モジュールのベースクラスを [tf\_module.h](https://github.com/Seeed-Studio/SenseCAP-Watcher-Firmware/blob/main/examples/factory_firmware/main/task_flow_engine/include/tf_module.h) で定義しています。タスクフローエンジンはモデルの具体的な実装には関与せず、モジュールの関連インターフェースを呼び出してそれらを操作するだけです。各具体的なモジュールは、操作関数と管理関数を実装するだけで済みます。
+モジュールのベースクラスを [tf_module.h](https://github.com/Seeed-Studio/SenseCAP-Watcher-Firmware/blob/main/examples/factory_firmware/main/task_flow_engine/include/tf_module.h) で定義しています。タスクフローエンジンはモデルの具体的な実装には関与せず、モジュールの関連インターフェースを呼び出してそれらを操作するだけです。各具体的なモジュールは、操作関数と管理関数を実装するだけで済みます。
 
 ```cpp
 struct tf_module_ops
@@ -561,9 +561,9 @@ ai cameraブロックは主にHimaxとの通信、モデルOTA、画像と推論
 
 paramsパラメータの各フィールドの意味は以下の通りです：
 
-- **model\_type**: モデルタイプ、0はクラウドモデル（modelフィールドからモデルURLを抽出してダウンロード・使用）、1、2、3はHimax内蔵モデルを示します。
+- **model_type**: モデルタイプ、0はクラウドモデル（modelフィールドからモデルURLを抽出してダウンロード・使用）、1、2、3はHimax内蔵モデルを示します。
 - **model**: モデルの具体的な情報。
-  - **model\_id**: モデルの一意識別子。
+  - **model_id**: モデルの一意識別子。
   - **version**: モデルバージョン。
   - **arguments**: モデルパラメータ設定。
     - **size**: モデルのサイズ。
@@ -574,9 +574,9 @@ paramsパラメータの各フィールドの意味は以下の通りです：
     - **updatedAt**: モデル更新のタイムスタンプ。
     - **iou**: IOU（Intersection over Union）閾値。
     - **conf**: 信頼度閾値。
-  - **model\_name**: モデル名、"General Object Detection"。
-  - **model\_format**: モデル形式、"TensorRT"。
-  - **ai\_framework**: 使用されるAIフレームワーク。
+  - **model_name**: モデル名、"General Object Detection"。
+  - **model_format**: モデル形式、"TensorRT"。
+  - **ai_framework**: 使用されるAIフレームワーク。
   - **author**: モデルの作成者、"SenseCraft AI"。
   - **algorithm**: アルゴリズムの説明、"Object Detect(TensorRT, SMALL, COCO)"。
   - **classes**: モデルが検出できるカテゴリ、"person"を含みます。
@@ -587,14 +587,14 @@ paramsパラメータの各フィールドの意味は以下の通りです：
   - **mode**: 検出モード、0は存在検出、1は数値比較、2は数量変化を示します。
   - **type**: 比較タイプ、0は未満、1は等しい、2は超過、3は等しくない（mode=1の場合のみ有効）。
   - **num**: 比較値（mode=1の場合のみ有効）。
-- **conditions\_combo**: 複数条件検出の関係、0はAND、1はORを示します。
-- **silent\_period**: サイレント期間設定。
-  - **time\_period**: 時間期間設定。
+- **conditions_combo**: 複数条件検出の関係、0はAND、1はORを示します。
+- **silent_period**: サイレント期間設定。
+  - **time_period**: 時間期間設定。
     - **repeat**: 日曜日から土曜日までの繰り返し時間期間、1は有効を示します。
-    - **time\_start**: サイレント期間の開始時刻。
-    - **time\_end**: サイレント期間の終了時刻。
-  - **silence\_duration**: サイレンス継続時間、秒単位。
-- **output\_type**: 出力画像タイプ、0は小画像のみ（412x412）、1は大画像と小画像の両方（640x480; 412x412）。
+    - **time_start**: サイレント期間の開始時刻。
+    - **time_end**: サイレント期間の終了時刻。
+  - **silence_duration**: サイレンス継続時間、秒単位。
+- **output_type**: 出力画像タイプ、0は小画像のみ（412x412）、1は大画像と小画像の両方（640x480; 412x412）。
 - **shutter**: シャッターモード、0は連続開放、1はUIによるトリガー、2は入力イベントによるトリガー、3は1回シャッター。
 
 端子接続説明：
@@ -694,7 +694,7 @@ image analyzerブロックは、AIカメラの次レベルブロックである�
   - **body**: リクエストボディの内容を含むオブジェクト。
     - **prompt**: リクエストに含めるプロンプト、画像解析のための追加情報を提供。
     - **type**: リクエストのタイプ、1は監視を示す。
-    - **audio\_txt**: リクエストに含める音声テキスト情報。監視シーンがトリガーされると、インターフェースサービスはこのフィールドをTTSに変換し、インターフェースで返す。
+    - **audio_txt**: リクエストに含める音声テキスト情報。監視シーンがトリガーされると、インターフェースサービスはこのフィールドをTTSに変換し、インターフェースで返す。
 
 端子接続の説明：
 
@@ -789,7 +789,7 @@ sensecraft alarmブロックはアラームブロックで、主にSenseCraftプ
 設定パラメータは以下の通りです：
 
 - **params**: デバイスパラメータを含むオブジェクト。
-  - **silence\_duration**: 無音継続時間（秒）、ここでは60秒で、最小レポート間隔が60秒であることを示します。
+  - **silence_duration**: 無音継続時間（秒）、ここでは60秒で、最小レポート間隔が60秒であることを示します。
   - **text**: プラットフォームアラーム通知のテキスト。
 
 端子接続の説明：

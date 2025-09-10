@@ -54,7 +54,7 @@ ChirpStackはLoRaWANネットワーク用のオープンソースコンポーネ
 **ADR algorithm**: Default ADR algorithm( LoRa only)
 
 :::note
-デバイスに応じてMAC version/Regional parameters revision/ADR algorithmを選択してください。詳細については、https://lora-alliance.org/resource\_hub/ を参照してください。
+デバイスに応じてMAC version/Regional parameters revision/ADR algorithmを選択してください。詳細については、https://lora-alliance.org/resource_hub/ を参照してください。
 :::
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/wps_doc_4.png" alt="pir" width={800} height="auto" /></p>

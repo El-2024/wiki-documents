@@ -107,7 +107,7 @@ sudo cp /path/to/your/folder/ libssl.so1.1 /lib
 
 - **ステップ1**: N3uronインターフェースへのアクセス
 
-Webブラウザでhttp://localhost:8003にアクセスします。
+Webブラウザで`http://localhost:8003`にアクセスします。
 
 - **ステップ2**: 設定への移動
 

@@ -184,6 +184,7 @@ Raspberry Pi CM4を搭載したreComputer R1000エッジIoTコントローラー
    <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/recomputer_r1000_n3uron_aws/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div></td>
   </tr>
  </table>
+</div>
 
 <div class="table-center">
  <table class="table-nobg">

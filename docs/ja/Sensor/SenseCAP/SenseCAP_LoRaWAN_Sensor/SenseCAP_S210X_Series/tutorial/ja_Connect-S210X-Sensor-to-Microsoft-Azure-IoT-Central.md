@@ -56,7 +56,7 @@ Windowsを使用している場合は、コマンドを「sudo」で開始しな
 node-red
 ```
 
-![IMG\_258](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/003.png)
+![IMG_258](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/003.png)
 
 その後、ブラウザで [http://localhost:1880](http://localhost:1880/) にアクセスすることで、Node-REDエディタにアクセスできます。
 
@@ -66,25 +66,25 @@ node-red
 
 [**SenseCAP コンソール**](https://sensecap.seeed.cc/portal/#/dashboard)にログインします。ダッシュボード上部のユーザー名の右側にあるドロップダウンバーで、**Organization Information**を見つけることができます。これを選択して**Organization ID**を取得してください。
 
-![IMG\_259](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/004.png)
+![IMG_259](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/004.png)
 
 次に、SenseCAP用のAPIキーも取得する必要があります。ダッシュボードの左側にある**Security -> Access API keys**をクリックしてください。その後、Access Keyを作成します。
 
-![IMG\_260](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/005.png)
+![IMG_260](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/005.png)
 
 作成した**API ID**をクリックすると、**Access API keys**が取得できます。これと**Organization ID**をコピーしてください。後の手順で使用します。
 
-![IMG\_261](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/006.png)
+![IMG_261](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/006.png)
 
 ### Node-RED設定
 
-![IMG\_262](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/007.png)
+![IMG_262](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/007.png)
 
 - **ステップ 1.** 新しいmqtt-brokerノードを追加
 
 **mqtt in**ノードをドラッグし、ダブルクリックして設定ページに入り、**Add new mqtt-broker**の後にある編集ボタンをクリックします。
 
-![IMG\_263](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/008.png)
+![IMG_263](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/008.png)
 
 mqtt-brokerの設定は以下のように入力する必要があります：
 
@@ -102,7 +102,7 @@ Client ID format：**org-"Organization ID" "Random ID"**
 
 例：org-43243\*\*\*23-test
 
-![IMG\_264](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/009.png)
+![IMG_264](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/009.png)
 
 次に、**Security**オプションフィールドにUsernameとPasswordを入力します：
 
@@ -111,7 +111,7 @@ Username: **org-"Organization ID"**
 **Organization ID:** あなたの組織ID。これは以前に取得しました
 
 Password: 以前に取得した**Access API keys**を入力します。
-` `![IMG\_265](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/010.png)
+` `![IMG_265](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/010.png)
 
 **Topic**を追加
 
@@ -131,17 +131,17 @@ Topic: 特定の形式でトピックを設定することで、受信するデ�
 "+"は、このフィールドにフィルター条件がなく、すべてにマッチできることを示します。"/+/+/+/+"は、すべての"DeviceEUI"、"Channel"、"Reserved"、"MeasurementID"をリッスンすることを意味します
 :::
 
-例：/device\_sensor\_data/424988\*\*\*\*44/2CF7F\*\*\*0002/+/+/+
+例：/device_sensor_data/424988\*\*\*\*44/2CF7F\*\*\*0002/+/+/+
 
 このトピックは、現在のデバイスのすべてのリモートセンシングデータを受信することを意味します。
 
-![IMG\_266](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/011.png)
+![IMG_266](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/011.png)
 
 - **ステップ2.** デバッグノードを追加
 
 **debug**ノードをドラッグし、**mqtt-in**ノードに接続してから、**Deploy**をクリックします
 
-デプロイが成功すると、**mqtt in**ビルディングブロックの下に"**Connected**"が表示されます。データレポート間隔は接続したセンサーによって決まります。データを受信すると、右側のデバッグウィンドウに生データが表示されます。![IMG\_267](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/012.png)
+デプロイが成功すると、**mqtt in**ビルディングブロックの下に"**Connected**"が表示されます。データレポート間隔は接続したセンサーによって決まります。データを受信すると、右側のデバッグウィンドウに生データが表示されます。![IMG_267](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/012.png)
 
 ## **SenseCAP & Node-RED & Azure IoT Central**
 
@@ -153,57 +153,57 @@ Topic: 特定の形式でトピックを設定することで、受信するデ�
 
 - **ステップ1.** Azure IoT Centralにログイン。
 
-[**Azure IoT Central**](https://apps.azureiotcentral.com/home)ウェブサイトにアクセスし、左側のナビゲーションメニューから**Build**をクリックし、**Custom apps**をクリックします。![IMG\_268](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/013.png)
+[**Azure IoT Central**](https://apps.azureiotcentral.com/home)ウェブサイトにアクセスし、左側のナビゲーションメニューから**Build**をクリックし、**Custom apps**をクリックします。![IMG_268](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/013.png)
 
 - **ステップ2.** **Application name**を入力し、**Pricing plan**を選択します。アプリケーション名を入力すると、Application URLが自動的に作成されます。
 
-![IMG\_269](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/014.png)
+![IMG_269](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/014.png)
 
 注意：Azure IoT Centralの新規ユーザーの場合、料金が発生しないため、Freeを選択することをお勧めします。
 
-![IMG\_270](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/015.png)
+![IMG_270](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/015.png)
 
 - **ステップ3.** **Create**をクリックして新しいアプリケーションを作成します。これでAzure IoT Centralのセットアップが正常に完了しました！
 
-![IMG\_271](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/016.png)
+![IMG_271](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/016.png)
 
 - **ステップ4.** デバイステンプレートを作成
 
 左側のメニューバーの**Device templates**をクリックして、新しいデバイステンプレートを作成してください。
 
-![IMG\_272](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/017.png)
+![IMG_272](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/017.png)
 
 デバイステンプレートに名前を付けて、**create**をクリックします
 
-![IMG\_273](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/018.png)
+![IMG_273](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/018.png)
 
-![IMG\_274](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/019.png)
+![IMG_274](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/019.png)
 
 - **ステップ5.** デバイスを作成
 
-左側のメニューバーの**Devices -> S2103**をクリックします。![IMG\_275](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/020.png)
+左側のメニューバーの**Devices -> S2103**をクリックします。![IMG_275](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/020.png)
 
-![IMG\_276](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/021.png)
+![IMG_276](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/021.png)
 
 デバイスを作成すると、**Device**の下に作成したばかりのデバイスが表示されます。デバイスをタップして、左上の**Connect**ボタンをクリックしてください。
 
 この情報をメモしてください。次のステップで使用します。
 
-![IMG\_277](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/022.png)
+![IMG_277](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/022.png)
 
 ### **Node-RED設定**
 
 - **ステップ1.** Azure IoT Palettsをインストール
 
-右上のメニューバーをクリックし、Settingsを選択します![IMG\_278](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/023.png)
+右上のメニューバーをクリックし、Settingsを選択します![IMG_278](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/023.png)
 
-**Paletts - Install**で"node-red-contrib-azure-iot-central"を検索してインストールします![IMG\_279](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/024.png)
+**Paletts - Install**で"node-red-contrib-azure-iot-central"を検索してインストールします![IMG_279](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/024.png)
 
 - **ステップ2.** Azure IoT Centralノードを設定
 
 左側の**function**バーから**Azure IoT Central**ノードをドラッグし、ダブルクリックして設定ページに入り、編集ボタンをクリックして**Azure IoT Central**ノードを編集します
 
-![IMG\_280](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/025.png)
+![IMG_280](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/025.png)
 
 設定は以下のように入力する必要があります：
 
@@ -213,7 +213,7 @@ Authentication: SAS
 
 Scope ID/Device ID/Primary Key: 以前に取得しました
 
-![IMG\_281](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/026.png)
+![IMG_281](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/026.png)
 
 - **ステップ3.** functionノードを設定
 
@@ -221,7 +221,7 @@ Azure IoT Centralへのデータレポートは特定のデータ形式に従う
 
 左側のfunctionバーから**function**ノードをドラッグし、ダブルクリックして編集ページに入り、**On Message**にコードをコピーします。
 
-![IMG\_282](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/027.png)
+![IMG_282](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/027.png)
 
 **Code**:
 
@@ -250,7 +250,7 @@ Azure IoT Centralへのデータレポートは特定のデータ形式に従う
 
 データのログ情報を確認したい場合は、functionノードの後にdebugノードを追加できます。
 
-![IMG\_283](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/028.png)
+![IMG_283](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/028.png)
 
 S210Xセンサーが電源を入れて動作を開始し、SenseCAP PaaSサーバーにデータを送信し始めると、Azure IoT Centralでデータを確認できます。
 
@@ -260,32 +260,32 @@ S210Xセンサーが電源を入れて動作を開始し、SenseCAP PaaSサー�
 
 必要な機能を追加し、**save**をクリックして**publish**します
 
-![IMG\_284](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/029.png)
+![IMG_284](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/029.png)
 
-![IMG\_285](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/030.png)
+![IMG_285](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/030.png)
 
-これで、センサーによってアップロードされた生データを明確に確認できます。![IMG\_286](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/031.png)
+これで、センサーによってアップロードされた生データを明確に確認できます。![IMG_286](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/031.png)
 
 データダッシュボードページを充実させたい場合は、Overviewに表示されるように設定することもできます。
 
 左側のナビゲーションメニューで**Overview**をクリックします。
 
-![IMG\_287](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/032.png)
+![IMG_287](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/032.png)
 
 **starts with devices**ドロップダウンメニューを展開し、視覚化したいテレメトリを選択します。
 
-![IMG\_288](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/033.png)
+![IMG_288](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/033.png)
 
 **Add tile**をクリックすると、Azure IoT Central Dashboardにタイルが追加されます。
 
-![IMG\_289](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/034.png)
+![IMG_289](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/034.png)
 
 それでは次に、お好みに合わせてセンサーデータ監視ダッシュボードをカスタマイズしましょう！
 
 変更を完了したら、**save**をクリックして**publish**します
 
-![IMG\_290](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/035.png)
+![IMG_290](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/035.png)
 
-![IMG\_291](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/036.png)
+![IMG_291](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/036.png)
 
-カスタムダッシュボードを通じてセンサーデータを表示できるようになりました！![IMG\_292](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/037.png)
+カスタムダッシュボードを通じてセンサーデータを表示できるようになりました！![IMG_292](https://files.seeedstudio.com/wiki/SenseCAPS210X/Azure_IoT_Central/037.png)

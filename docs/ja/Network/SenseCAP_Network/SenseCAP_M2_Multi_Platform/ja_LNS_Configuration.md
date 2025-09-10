@@ -144,7 +144,7 @@ MQTTインテグレーションは、イベントタイプで文書化されて�
 デフォルトのイベントトピックは：
 
 ```cpp
-application/APPLICATION\_ID/device/DEV\_EUI/event/EVENT
+application/APPLICATION_ID/device/DEV_EUI/event/EVENT
 ```
 
 [Event Types](https://www.chirpstack.io/docs/chirpstack/integrations/events.html) で詳細を確認してください。
@@ -174,7 +174,7 @@ application/APPLICATION\_ID/device/DEV\_EUI/event/EVENT
 - 特定のゲートウェイ下のすべてのデバイスからアップリンクメッセージを受信するには：
 
 ```cpp
-gateway/<GATEWAY\_EUI>/device/+/event/up
+gateway/<GATEWAY_EUI>/device/+/event/up
 ```
 
 - アプリケーション配下のすべてのデバイスからのすべてのメッセージを受信するには：
@@ -203,12 +203,12 @@ object.valid が true の場合、データ解析が成功したことを意味�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/M2-MP21.png" alt="pir" width={800} height="auto" /></p>
 
-- `upload\_battery`: バッテリー
-- `upload\_interval`: アップロード間隔、単位：秒
-- `upload\_version`: ハードウェア/ファームウェアバージョン
-- `report\_telemetry`: 測定値
+- `upload_battery`: バッテリー
+- `upload_interval`: アップロード間隔、単位：秒
+- `upload_version`: ハードウェア/ファームウェアバージョン
+- `report_telemetry`: 測定値
 
-'report\_telemetry' メッセージ内の `measurementId` については、詳細は [SenseCAP Measurement ID](https://sensecap-statics.seeed.cn/hardware/lorapp/httpserver/src/constants/sensor-name-lang-dictionary.json) を確認してください。
+'report_telemetry' メッセージ内の `measurementId` については、詳細は [SenseCAP Measurement ID](https://sensecap-statics.seeed.cn/hardware/lorapp/httpserver/src/constants/sensor-name-lang-dictionary.json) を確認してください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/M2-MP22.png" alt="pir" width={800} height="auto" /></p>
 
@@ -216,7 +216,7 @@ object.valid が true の場合、データ解析が成功したことを意味�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/M2-MP23.png" alt="pir" width={600} height="auto" /></p>
 
-'report\_telemetry' メッセージ内の `measurementId` については、詳細は [SenseCAP Measurement ID](https://sensecap-statics.seeed.cn/hardware/lorapp/httpserver/src/constants/sensor-name-lang-dictionary.json) を確認してください。
+'report_telemetry' メッセージ内の `measurementId` については、詳細は [SenseCAP Measurement ID](https://sensecap-statics.seeed.cn/hardware/lorapp/httpserver/src/constants/sensor-name-lang-dictionary.json) を確認してください。
 
 ### HTTP
 
@@ -245,11 +245,11 @@ HTTP インテグレーションは [Event Type](https://www.chirpstack.io/docs/
 ```cpp
 from http.server import HTTPServer, BaseHTTPRequestHandler 
 
-from urllib.parse import urlparse, parse\_qs 
+from urllib.parse import urlparse, parse_qs 
 
-from chirpstack\_api import integration 
+from chirpstack_api import integration 
 
-from google.protobuf.json\_format import Parse 
+from google.protobuf.json_format import Parse 
 
 class Handler(BaseHTTPRequestHandler): 
 
@@ -259,41 +259,41 @@ class Handler(BaseHTTPRequestHandler):
 
 json = False 
 
-def do\_POST(self): 
+def do_POST(self): 
 
-self.send\_response(200) 
+self.send_response(200) 
 
-self.end\_headers() 
+self.end_headers() 
 
-query\_args = parse\_qs(urlparse(self.path).query) 
+query_args = parse_qs(urlparse(self.path).query) 
 
-content\_len = int(self.headers.get('Content-Length', 0)) 
+content_len = int(self.headers.get('Content-Length', 0)) 
 
-body = self.rfile.read(content\_len) 
+body = self.rfile.read(content_len) 
 
-if query\_args["event"][0] == "up": 
+if query_args["event"][0] == "up": 
 
 self.up(body) 
 
-elif query\_args["event"][0] == "join": 
+elif query_args["event"][0] == "join": 
 
 self.join(body) 
 
 else:
 
-print("handler for event %s is not implemented" % query\_args["event"][0]) 
+print("handler for event %s is not implemented" % query_args["event"][0]) 
 
 def up(self, body): 
 
 up = self.unmarshal(body, integration.UplinkEvent()) 
 
-print("Uplink received from: %s with payload: %s" % (up.device\_info.dev\_eui, up.data.hex())) 
+print("Uplink received from: %s with payload: %s" % (up.device_info.dev_eui, up.data.hex())) 
 
 def join(self, body): 
 
 join = self.unmarshal(body, integration.JoinEvent()) 
 
-print("Device: %s joined with DevAddr: %s" % (join.device\_info.dev\_eui, join.dev\_addr)) 
+print("Device: %s joined with DevAddr: %s" % (join.device_info.dev_eui, join.dev_addr)) 
 
 def unmarshal(self, body, pl): 
 
@@ -307,7 +307,7 @@ return pl
 
 httpd = HTTPServer(('', 8090), Handler) 
 
-httpd.serve\_forever() 
+httpd.serve_forever() 
 ```
 
 ### ダウンリンク
@@ -318,11 +318,11 @@ httpd.serve\_forever()
 ダウンリンクを保持済みとしてマークすることを推奨します。これにより、コマンドが繰り返し実行されることがなくなります。
 :::
 
-デフォルトのTopicは：`application/APPLICATION\_ID/device/DEV\_EUI/command/down`
+デフォルトのTopicは：`application/APPLICATION_ID/device/DEV_EUI/command/down`
 
 `command`：詳細については、**デバイスユーザーマニュアル**のダウンリンクコマンドを確認してください。
 
-|Topic|application/APPLICATION\_ID/device/DEV\_EUI/command/down|
+|Topic|application/APPLICATION_ID/device/DEV_EUI/command/down|
 | - | :- |
 |devEUI|デバイスEUI|
 |confirmed|true/false（ペイロードを確認済みデータダウンとして送信する必要があるかどうか）|

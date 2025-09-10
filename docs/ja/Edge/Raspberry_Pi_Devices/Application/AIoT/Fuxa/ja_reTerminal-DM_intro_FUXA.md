@@ -86,12 +86,12 @@ sudo fuxa
 
 ```
 
-FUXA UIは以下のURLで利用できます：**http://localhost:1881**。
+FUXA UIは以下のURLで利用できます：**`http://localhost:1881`**。
 
 基本的にFUXA Webサーバーは2つのページを提供します：
 
-- エンドユーザー向けの可視化 **http://localhost:1881/home**
-- プロジェクトと設計のためのエディター **http://localhost:1881/editor**
+- エンドユーザー向けの可視化 **`http://localhost:1881/home`**
+- プロジェクトと設計のためのエディター **`http://localhost:1881/editor`**
 
 ## デバイスとタグの追加方法
 

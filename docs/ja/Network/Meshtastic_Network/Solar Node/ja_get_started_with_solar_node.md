@@ -117,8 +117,8 @@ import TabItem from '@theme/TabItem';
 |**地域コード**|**説明**|**周波数範囲 (MHz)**|**デューティサイクル (%)**|**電力制限 (dBm)**|
 | :-: | :-: | :-: | :-: | :-: |
 |UNSET|未設定|N/A|N/A|N/A|
-|US|アメリカ合衆国|902\.0 - 928.0|100|30|
-|EU\_868|欧州連合 868MHz|869\.4 - 869.65|10|27|
+|US|アメリカ合衆国|902.0 - 928.0|100|30|
+|EU_868|欧州連合 868MHz|869.4 - 869.65|10|27|
 
 より包括的なリストについては、[LoRa Region by Country](https://meshtastic.org/docs/configuration/region-by-country/)を参照してください。
 

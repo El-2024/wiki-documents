@@ -48,7 +48,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">1TOPS@Int8</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">SOC</span></p>
             </td>
@@ -56,7 +56,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">SG2002</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">CPU</span></p>
             </td>
@@ -64,7 +64,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">C906@1GHz + C906@700MHz</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">MCU</span></p>
             </td>
@@ -72,7 +72,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">8051@8KB SRAM</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">メモリ</span></p>
             </td>
@@ -80,7 +80,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">256MB</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">ビデオエンコード</span></p>
             </td>
@@ -88,7 +88,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">5MP @ 30Fps</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '35.3932%'}} colspan="2" rowspan="1" width="208">
                 <p><span data-font-family="Montserrat">カメラセンサー</span></p>
             </td>
@@ -96,7 +96,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">OV5647</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '16.528%'}} colspan="1" rowspan="2" width="97">
                 <p><span data-font-family="Montserrat">ストレージ</span></p>
             </td>
@@ -107,7 +107,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">(バージョン1) 8GB (バージョン2) 64GB</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">拡張</span></p>
             </td>
@@ -115,7 +115,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">取り外し可能なTFカード（最大2TB、別売り）</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '16.528%'}} colspan="1" rowspan="6" width="97">
                 <p><span data-font-family="Montserrat">I/O</span></p>
             </td>
@@ -126,7 +126,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">100Mbps</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">ワイヤレス</span></p>
             </td>
@@ -137,7 +137,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">WIFI2.4G/5G BT4.2/5.0</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">USB</span></p>
             </td>
@@ -145,7 +145,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">USB Type-C(2.0)</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">ボタン</span></p>
             </td>
@@ -153,7 +153,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">1個のリセットボタン、1個のブートボタン</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">補助光</span></p>
             </td>
@@ -161,7 +161,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">0.3w 白色光</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">ステータスライト</span></p>
             </td>
@@ -169,7 +169,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">1つの電源インジケータ、2つのIOプログラマブル</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '16.528%'}} colspan="1" rowspan="2" width="97">
                 <p><span data-font-family="Montserrat">オーディオ</span></p>
             </td>
@@ -180,7 +180,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">オンボードマイク</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '18.8653%'}} colspan="1" rowspan="1" width="111">
                 <p><span data-font-family="Montserrat">スピーカー</span></p>
             </td>
@@ -188,7 +188,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">外部スピーカー</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '35.3932%'}} colspan="2" rowspan="1" width="208">
                 <p><span data-font-family="Montserrat">寸法</span></p>
             </td>
@@ -196,7 +196,7 @@ reCameraは、オープンソースで小型のAIカメラです。プログラ�
                 <p><span data-font-family="Montserrat">40x40x36.5mm</span></p>
             </td>
         </tr>
-        <tr>>
+        <tr>
             <td style={{width: '35.3932%'}} colspan="2" rowspan="1" width="208">
                 <p><span data-font-family="Montserrat">電源</span></p>
             </td>

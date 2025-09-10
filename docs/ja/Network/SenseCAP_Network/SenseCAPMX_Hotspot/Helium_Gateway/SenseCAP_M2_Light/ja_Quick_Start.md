@@ -56,7 +56,7 @@ SenseCAP Hotspot Appのアカウントを作成します。
 
 - ホットスポットの場所を設定・確認し、ホットスポットをブロックチェーンに追加します。
 
-**注意:** SenseCAP M2 Light Hotspotは、購入価格に$40のHeliumネットワーク有効化手数料と最初の位置アサート手数料$10（合計$50相当）が含まれています。場所を設定し、必要に応じて別の場所に変更できますが、ホットスポットを新しい場所に移動するたびに$10の位置アサート手数料を再度支払う必要があります。
+**注意:** SenseCAP M2 Light Hotspotは、購入価格に\$40のHeliumネットワーク有効化手数料と最初の位置アサート手数料\$10（合計\$50相当）が含まれています。場所を設定し、必要に応じて別の場所に変更できますが、ホットスポットを新しい場所に移動するたびに\$10の位置アサート手数料を再度支払う必要があります。
 
 ![](https://files.seeedstudio.com/wiki/wiki-platform/sensor_network/M2_Light_Hotspot/image10.png)![](https://files.seeedstudio.com/wiki/wiki-platform/sensor_network/M2_Light_Hotspot/image11.png)![](https://files.seeedstudio.com/wiki/wiki-platform/sensor_network/M2_Light_Hotspot/image12.png)
 

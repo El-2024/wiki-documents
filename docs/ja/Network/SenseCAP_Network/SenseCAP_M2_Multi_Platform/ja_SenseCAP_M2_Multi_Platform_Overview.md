@@ -58,8 +58,8 @@ SenseCAP M2 Multi-Platform LoRaWAN® Gateway は、スマート農業、スマ�
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/wysiwyg/_0129.jpg" alt="pir" width={800} height="auto" /></p>
 
 SenseCAP M2 Multi-Platform LoRaWAN® Gateway は 2 つの方法で設定できます：  
-1\. Wi-Fi/ Ethernet アクセスで SenseCAP Local Console にアクセス  
-2\. SenseCAP Portal 経由でリモートから SenseCAP Local Console にアクセス
+1. Wi-Fi/ Ethernet アクセスで SenseCAP Local Console にアクセス  
+2. SenseCAP Portal 経由でリモートから SenseCAP Local Console にアクセス
 
 さらに、SenseCAP M2 Multi-Platform LoRaWAN® Gateway を屋外に展開したい場合は、屋外展開の要件を満たすためにシェルアクセサリを適用する必要があるかもしれません。迅速な展開のための高い堅牢性を持つ **[SenseCAP Outdoor Enclosure](https://www.seeedstudio.com/SenseCAP-Outdoor-Enclosure-p-5353.html)** をご確認ください。
 

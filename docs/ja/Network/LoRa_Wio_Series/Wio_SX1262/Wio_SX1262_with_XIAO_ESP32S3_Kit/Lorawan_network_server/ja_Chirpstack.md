@@ -25,7 +25,7 @@ Loraの入門ガイドに従って、Wio-SX1262とXIAO ESP32S3を1チャンネ�
 
 Chirpstackをローカルにインストールするには、[こちらの手順](https://learn.semtech.com/mod/book/view.php?id=223&chapterid=266#:~:text=Enter%20the%20following%20to%20clone%20the%20ChirpStack%20Docker,Share%20it%20on%20any%20security%20popups%20you%20see.)を参照してください。
 
-1. ブラウザを開いてhttp://localhost:8080にアクセスします。
+1. ブラウザを開いてhttp://localhost:8080 にアクセスします。
 
 ChirpStackのログインページが表示されます。
 

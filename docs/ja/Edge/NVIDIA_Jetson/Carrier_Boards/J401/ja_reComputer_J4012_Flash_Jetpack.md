@@ -370,9 +370,6 @@ NVIDIAはモジュールで使用されるDRAMを更新しました。新しい�
 
 **ステップ2:** **Jetson_Linux_R35.3.1_aarch64**と**Tegra_Linux_Sample-Root-Filesystem_R35.3.1_aarch64**を、これらのファイルが含まれるフォルダに移動して展開し、変更を適用して必要な前提条件をインストールします
 
-</TabItem>
-</Tabs>
-
 ```sh
 tar xf Jetson_Linux_R35.3.1_aarch64
 sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R35.3.1_aarch64 -C Linux_for_Tegra/rootfs/

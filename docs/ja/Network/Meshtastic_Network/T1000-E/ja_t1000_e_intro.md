@@ -59,7 +59,7 @@ Meshtastic向けに設計された高性能トラッカーで、クレジット�
 | :- | :- |
 |**バッテリー残量監視**|定期的なアップリンクバッテリーレベル|
 |<p>**充電ケーブル**</p><p>**(アダプター別売)**</p>|USB磁気充電ケーブル、1メートル|
-|**電源入力電圧**|4\.7 to 5.5V DC|
+|**電源入力電圧**|4.7 to 5.5V DC|
 |**充電温度制限**|0 to +45℃|
 
 ### ハードウェア概要
@@ -80,7 +80,7 @@ Meshtastic向けに設計された高性能トラッカーで、クレジット�
 |ブザー有効化|P1.05|GPIO|
 |ボタン|P0.6|GPIO|
 |センサー電源|P1.6|GPIO|
-|LR1110|P1.08: SPI MISO<br/>P1.09: SPI MOSI<br/>P0.11: SPI Clock<br/>P0.12: SPI NSS<br/>P1.10: LoRa Reset<br/>P1.01: LoRa DIO1<br/>P0.07: LoRa DIO2<br/>LR11X0\_DIO3\_TCXO\_VOLT<br/>AGE 1.6V|SPI|
+|LR1110|P1.08: SPI MISO<br/>P1.09: SPI MOSI<br/>P0.11: SPI Clock<br/>P0.12: SPI NSS<br/>P1.10: LoRa Reset<br/>P1.01: LoRa DIO1<br/>P0.07: LoRa DIO2<br/>LR11X0_DIO3_TCXO_VOLT<br/>AGE 1.6V|SPI|
 |GPS|RX: P0.14<br/>TX: P0.13|Serial1 <br/>BAUDRATE:115200|
 
 ### ボタン

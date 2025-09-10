@@ -604,7 +604,7 @@ sudo ./tools/l4t_flash_prerequisites.sh
   </tbody>
 </table>
 
-- **手順 2:** ダウンロードした周辺機能ドライバを **Linux\_For\_Tegra** ディレクトリと同じフォルダに移動します
+- **手順 2:** ダウンロードした周辺機能ドライバを **Linux_For_Tegra** ディレクトリと同じフォルダに移動します
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reServer-Industrial/29.jpg"/></div>
 
@@ -621,7 +621,7 @@ sudo unzip xxxx.zip # xxxx はドライバファイル名に置き換え
 
 #### Jetson へフラッシュ
 
-- **手順 1:** **Linux\_for\_Tegra** ディレクトリに移動し、以下のフラッシュコマンドを実行します
+- **手順 1:** **Linux_for_Tegra** ディレクトリに移動し、以下のフラッシュコマンドを実行します
 
 ```sh
 cd Linux_for_Tegra
