@@ -419,9 +419,7 @@ Environment used in the preparation of this tutorial:
 
 1. **[Seeed_GFX library](https://github.com/Seeed-Studio/Seeed_GFX)** by Bodmer, modified by Seeed Studio.
 
-2. **[LVGL library](https://github.com/lvgl/lvgl/releases/tag/v8.3.11)** by kisvegabor, embeddedt, pete-pjb, version: **8.3.11**
-
-The **LVGL** libraries can be downloaded as version 8.3.11 by searching directly through the Library Version Manager. The **Seeed_GFX** library needs to be downloaded from Github and added to the Arduino IDE environment.
+2. **[SeeedStudio_lvgl library](https://github.com/Seeed-Projects/SeeedStudio_lvgl)** by kisvegabor, embeddedt, pete-pjb, modified by Seeed Studio.
 :::
 
 #### Step1. Download the SuqareLine Studio
