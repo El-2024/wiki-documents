@@ -12,7 +12,41 @@ last_update:
   author: Jason
 ---
 
-For ease of use, all of the following examples of pin multiplexing are on PlatformIO. Please click on this link for a configuration and usage guide for the [XIAO nRF54L5](https://wiki.seeedstudio.com/xiao_nrf54l15_with_platform_io/)
+For ease of use, all of the following examples of pin multiplexing are on **PlatformIO**. Please click on this link for a configuration and usage guide for the [XIAO nRF54L5](https://wiki.seeedstudio.com/xiao_nrf54l15_with_platform_io/)
+
+:::tip
+Based on VS Code, if you want to use the following case on the nRF Connect SDK, please refer to the provided connection, add the app.overlay file and modify the contents in prj.conf
+
+[XIAO nRF54L15 Add overlay file and modify conf file](http://192.168.31.44:3000/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/).
+
+:::
+
+## Onboard Keys
+
+XIAO nRF54L15(Sense) comes equipped with two important physical buttons that play crucial roles in device operation and firmware programming: the **Reset Button** and the **User Button**. Understanding their functions is essential for daily use and firmware updates.
+
+---
+
+### Reset Button
+
+The Reset button is used to perform a hard reset operation on the device.
+
+- **Functionality:**
+  - **Forced Restart:** Pressing this button immediately interrupts all current device operations and causes it to restart, similar to a power cycle.
+  - **Resolving Stuck Programs:** When the device's running program crashes, enters an infinite loop, or becomes unresponsive, pressing the Reset button is the quickest way to force it back to a normal operating state.
+  - **No Firmware Impact:** A reset operation does not erase or alter the firmware already programmed into the device. It simply restarts the currently running application.
+
+---
+
+### User Button
+
+The User button is a versatile, programmable input that offers flexible control within your applications.
+
+**Functionality:**
+
+- Customizable Input：Unlike the fixed function of the Reset button, the User button's action is entirely defined by your programmed firmware.
+
+- Event Triggering： It can be programmed to trigger specific events, control different functionalities, or act as a general-purpose input for your applications.
 
 ## Digital
 
@@ -27,7 +61,7 @@ For ease of use, all of the following examples of pin multiplexing are on Platfo
   <tr>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>
         <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style={{width:500, height:'auto'}}/></div></td>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Relay/img/Twig-Relay.jpg" style={{width:600, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Relay/img/Twig-Relay.jpg" style={{width:500, height:'auto'}}/></div></td>
   </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -436,6 +470,10 @@ The core logic of the code runs within an infinite while (1) loop:
     <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
     </a>
 </div><br />
+
+<details>
+
+<summary>Software</summary>
 
 ```c
 #include <zephyr/kernel.h>
@@ -915,6 +953,8 @@ static Coordinates transform(Coordinates gps)
 }
 ```
 
+</details>
+
 **GPS Module Configuration and Initialization**
 
 - `gps_app` Log Module:
@@ -1156,7 +1196,7 @@ int main(void) {
     }
 
     x_res = cfb_get_display_parameter(dev, CFB_DISPLAY_WIDTH);
-    y_res = cfb_get_display_parameter(dev, CFB_DISPLAY_HEIGH);
+    y_res = cfb_get_display_parameter(dev, CFB_DISPLAY_HEIGHT);
     LOG_INF("Display resolution: %dx%d", x_res, y_res);
     cfb_set_kerning(dev, 0);
 
