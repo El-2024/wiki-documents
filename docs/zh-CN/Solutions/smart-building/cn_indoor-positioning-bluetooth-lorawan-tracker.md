@@ -131,7 +131,8 @@ last_update:
   <!-- Card 2: BLE Beacons -->
   <div class="seeed-feature-card">
     <div class="card-header">
-        <h2><a href="https://www.seeedstudio.com/BC01-Indoor-Bluetooth-Beacon-p-5791.html">BLE 信标</a></h2>        <p>常规蓝牙广播</p>
+        <h2><a href="https://www.seeedstudio.com/BC01-Indoor-Bluetooth-Beacon-p-5791.html">BLE 信标</a></h2>
+        <p>常规蓝牙广播</p>
     </div>
     <div class="card-body">
         <ul class="features-list">
@@ -261,7 +262,8 @@ last_update:
 MAC Address,Location,Beacon ID
 c30000564b31,"Main Entrance",01
 c30000564b32,"Warehouse Zone A",02
-c30000564b33,"Corner Office",03```
+c30000564b33,"Corner Office",03
+```
 
 下面的视频展示了您稍后如何使用此列表将信标添加到应用程序地图中。现在创建准确的记录将使软件设置变得更加容易。
 
@@ -424,20 +426,21 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 
 最后一步是打开您的跟踪器并在地图上查看它。
 
-1. **激活 SenseCAP T1000 跟踪器** 并将其加入到您的 LoRaWAN 网络服务器。确保您的网关在线且跟踪器设备已在 LNS 服务器上"注册"。详情请查看 [步骤 1b](#1b-设置网关)。
-2. **确保它设置为 BLE 扫描模式** 以便它可以检测信标。查看下面的视频获取帮助。
-3. **可视化：** 当跟踪器在您的设施中移动时，它将检测最近的信标并报告其位置。您将在仪表板上看到其图标在地图上移动。
-
 <div align="center">
 <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/tracker-visualize-on-map.png" alt="tracker-visualize-on-map"/>
 </div>
+
+1. **激活 SenseCAP T1000 跟踪器** 并将其加入到您的 LoRaWAN 网络服务器。确保您的网关在线且跟踪器设备已在 LNS 服务器上"注册"。详情请查看 [步骤 1b](#1b-设置网关)。
+2. **确保它设置为 BLE 扫描模式** 以便它可以检测信标。查看下面的视频获取帮助。
+3. **可视化：** 当跟踪器在您的设施中移动时，它将检测最近的信标并报告其位置。您将在仪表板上看到其图标在地图上移动。
 
 <div style={{ textAlign: 'center' }}>
 <video width="480" height="640" controls>
   <source src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/indoor-position-tracker-configuration.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
-<p><em>使用 ChirpStack 时，选择 `Other Platform`。</em></p><p><em>使用 SenseCraft Data 时，保留默认平台设置（SenseCAP for The Things Network）。</em></p>
+<p><em>使用 ChirpStack 时，选择 `Other Platform`。</em></p>
+<p><em>使用 SenseCraft Data 时，保留默认平台设置（SenseCAP for The Things Network）。</em></p>
 </div>
 
 ## 应用功能概述
@@ -555,75 +558,109 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 
 系统支持两种定位方法：
 
-1. **三边测量：** 当追踪器检测到**三个或更多**信标时，它会计算精确的 (x, y) 坐标。这是默认且最准确的模式。
-2. **邻近（区域定位）：** 如果您启用此功能且追踪器只能检测到**一个**信标，它将报告其位置为在计算半径内"靠近"该信标。这对于确保所有区域的覆盖很有用。
+1. **三边测量（Trilateration）：** 当追踪器检测到**三个或更多**信标时，它会计算出精确的 (x, y) 坐标。这是默认且最准确的模式。
+2. **邻近定位（区域定位）：** 如果启用此功能并且追踪器只能检测到**一个**信标，它将报告自己的位置为“接近”该信标，并给出计算半径。这对于确保所有区域的覆盖非常有用。
 
-### 功能 3：查看警报历史
+*三边测量*
 
-您可以通过点击地图上的图标来查看任何追踪器的警报历史（例如，SOS 按钮按下）。系统会记录每个新警报，并将继续推送活动警报的通知，直到问题得到解决。
+<table align="center">
+<tr>
+    <th>三边测量</th>
+    <th>三边测量 (SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
 
-### 功能 4：按信标 UUID 过滤
+*区域定位*
 
-您可以根据关联的信标 UUID 过滤地图上显示的追踪器。这允许对特定区域或资产进行更有针对性的监控。它的价值在于不被黑客攻击。
+<table align="center">
+<tr>
+    <th>区域定位</th>
+    <th>区域定位 (SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
 
-## 参考资料
+### 功能 3：查看告警历史
 
-- **产品页面**：[SenseCraft 室内定位解决方案](https://cc.seeedstudio.com/solutions/campus-safety-management)
-- **Docker 镜像**：[seeedcloud/sensecraft-indoor-positioning - Docker Hub](https://hub.docker.com/r/seeedcloud/sensecraft-indoor-positioning)
-- **在线演示站点**：[IndoorPositioning](https://indoorpositioning-demo.seeed.cc/)
+你可以通过点击地图上任意追踪器的图标来查看其告警历史（例如 SOS 按钮的按下记录）。系统会记录每次新的告警，并会持续推送该告警的通知，直到其被解决。
 
-## 常见问题
+<div align="center">
+<img class='img-responsive' width="680" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/alert-history-records.png" alt="alert-history-records"/>
+</div>
+
+### 功能 4：按 Beacon UUID 筛选
+
+你可以通过 Beacon UUID 筛选地图上显示的追踪器。这允许对特定区域或资产进行更有针对性的监控，并且能提高安全性防止被攻击。
+
+<div align="center">
+<img class='img-responsive' width="360" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/sensecraft-ble-filter.png" alt="sensecraft-ble-filter"/>
+</div>
+
+## 参考与资源
+
+- **落地页**: [SenseCraft 室内定位解决方案](https://cc.seeedstudio.com/solutions/campus-safety-management)
+- **Docker 镜像**: [seeedcloud/sensecraft-indoor-positioning - Docker Hub](https://hub.docker.com/r/seeedcloud/sensecraft-indoor-positioning)
+- **在线演示站点**: [IndoorPositioning](https://indoorpositioning-demo.seeed.cc/)
+
+## 常见问题 FAQ
 
 <details>
-<summary>为什么我的追踪器没有报告其位置？</summary>
+<summary>为什么我的追踪器没有报告位置？</summary>
 
 - **可能原因：** LoRaWAN 连接可能存在问题。
-- **解决方案：** 检查您的 LoRaWAN 网关状态，确保它在线并已连接。同时，验证追踪器的设备 EUI 是否在您的网络服务器上正确注册。
+- **解决方案：** 检查 LoRaWAN 网关状态，确保其在线并已连接。同时确认追踪器的 Device EUI 已正确注册到你的网络服务器。
 
 </details>
 
 <details>
 <summary>为什么追踪器的位置不准确？</summary>
 
-- **可能原因：** 您的 BLE 信标的放置可能导致干扰或信号覆盖较弱。
-- **解决方案：** 尝试调整信标的传输功率。您可能还需要重新放置它们以减少墙壁或机械设备的信号阻挡。
+- **可能原因：** 你的 BLE 信标的放置可能导致干扰或信号覆盖不足。
+- **解决方案：** 尝试调整信标的发射功率。也可以重新安置信标以减少墙壁或机器造成的信号阻挡。
 
 </details>
 
 <details>
-<summary>为什么追踪器的电池消耗如此之快？</summary>
+<summary>为什么追踪器的电池耗电这么快？</summary>
 
-- **可能原因：** 报告频率设置过高，导致设备传输数据的频率超过必要。
-- **解决方案：** 优化运动检测设置，仅在追踪器移动时报告。您还可以增加报告间隔（位置更新之间的时间）以节省电力。
-
-</details>
-
-<details>
-<summary>为什么位置数据丢失或不显示？</summary>
-
-- **可能原因：** 数据库或 API 可能存在问题，通常与数据载荷的解释方式有关。
-- **解决方案：** 首先，验证应用服务器上的载荷解码器是否正确且正常工作。如果解码器正确，请检查应用服务器日志是否有任何错误或连接问题。
+- **可能原因：** 报告频率设置过高，导致设备过于频繁地传输数据。
+- **解决方案：** 优化运动检测设置，仅在追踪器移动时报告。也可以增加报告间隔（位置更新之间的时间）以节省电量。
 
 </details>
 
 <details>
-<summary>为什么 SOS 警报没有及时收到？</summary>
+<summary>为什么位置数据缺失或没有显示？</summary>
 
-- **可能原因：** LoRaWAN 网络可能拥塞，或设备类别不适合紧急消息。
-- **解决方案：** 对于像 SOS 警报这样的时间关键应用，确保您的追踪器配置为使用 **Class C 模式**。这会保持设备的接收器持续开启，允许立即接收来自服务器的消息。
+- **可能原因：** 数据库或 API 可能存在问题，通常与数据负载的解析方式有关。
+- **解决方案：** 首先检查应用服务器上的负载解码器是否正确工作。如果解码器没问题，再检查应用服务器日志是否有错误或连接问题。
 
 </details>
 
 <details>
-<summary>如何调整 BC01 信标的广播间隔和传输功率？</summary>
+<summary>为什么 SOS 告警没有及时接收到？</summary>
 
-您可以使用 **SenseCraft 应用**来配置 BC01 信标。
+- **可能原因：** LoRaWAN 网络可能拥塞，或设备类别不适用于紧急消息。
+- **解决方案：** 对于像 SOS 告警这样的时效性强的应用，确保追踪器配置为 **Class C 模式**。该模式会让设备的接收器持续开启，可以立即接收来自服务器的消息。
 
-1. 从 [Google Play 商店](https://play.google.com/store/apps/details?id=cc.seeed.sensecapmate) 或 [Apple App Store](https://apps.apple.com/us/app/sensecraft/id1619944834) 安装 SenseCraft 应用。
-2. 打开应用并启用手机的蓝牙。
-3. 扫描附近的信标并选择您要配置的信标。
-4. 输入默认密码"**seeed123**"以访问设置。
-5. 根据需要调整广播间隔（100ms 到 10s）和传输功率（-30dBm 到 +4dBm）。
+</details>
+
+<details>
+<summary>如何调整 BC01 信标的广播间隔和发射功率？</summary>
+
+你可以使用 **SenseCraft 应用** 来配置 BC01 信标。
+
+1. 从 [Google Play 商店](https://play.google.com/store/apps/details?id=cc.seeed.sensecapmate) 或 [苹果应用商店](https://apps.apple.com/us/app/sensecraft/id1619944834) 安装 SenseCraft 应用。
+2. 打开应用并开启手机蓝牙。
+3. 扫描附近的信标并选择要配置的信标。
+4. 输入默认密码“**seeed123**”进入设置。
+5. 根据需求调整广播间隔（100ms 到 10s）和发射功率（-30dBm 到 +4dBm）。
 6. 保存更改。
 
 </details>

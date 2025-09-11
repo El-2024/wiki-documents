@@ -24,9 +24,9 @@ last_update:
 
 このシステムは[SenseCAP T1000 Tracker](/ja/SenseCAP_T1000_tracker/Introduction)を中心に構築されており、2つの異なる測位モードをサポートし、ニーズに基づいて精度とバッテリー寿命のバランスを取ることができます：
 
-1.  **高精度追跡（三角測量）：** トラッカーが**3つ以上**のBLEビーコンからの信号を検出すると、マップ上の正確な(x, y)座標を計算できます。このモードは、資産や人員の移動を追跡するのに理想的で、定期的または移動が発生するたびに正確な位置更新を提供します。
+1. **高精度追跡（三角測量）：** トラッカーが**3つ以上**のBLEビーコンからの信号を検出すると、マップ上の正確な(x, y)座標を計算できます。このモードは、資産や人員の移動を追跡するのに理想的で、定期的または移動が発生するたびに正確な位置更新を提供します。
 
-2.  **ゾーンベース測位（近接）：** トラッカーが1つまたは2つのビーコンの範囲内にある場合、最も近いビーコンへの近接性に基づいて位置を特定します。このモードは、自動チェックイン、資産が指定された部屋にあることの確認、または位置報告の頻度を下げてバッテリー寿命を節約するなど、よりシンプルな用途に最適です。
+2. **ゾーンベース測位（近接）：** トラッカーが1つまたは2つのビーコンの範囲内にある場合、最も近いビーコンへの近接性に基づいて位置を特定します。このモードは、自動チェックイン、資産が指定された部屋にあることの確認、または位置報告の頻度を下げてバッテリー寿命を節約するなど、よりシンプルな用途に最適です。
 
 両方の方法をサポートすることで、このソリューションは、シンプルな存在検知からより詳細な座標ベースの監視まで、幅広い屋内追跡アプリケーションに対応する汎用性があり、導入しやすいシステムを提供します。
 
@@ -131,7 +131,8 @@ last_update:
   <!-- Card 2: BLE Beacons -->
   <div class="seeed-feature-card">
     <div class="card-header">
-        <h2><a href="https://www.seeedstudio.com/BC01-Indoor-Bluetooth-Beacon-p-5791.html">BLEビーコン</a></h2>        <p>通常のBluetooth放送</p>
+        <h2><a href="https://www.seeedstudio.com/BC01-Indoor-Bluetooth-Beacon-p-5791.html">BLEビーコン</a></h2>
+        <p>通常のBluetooth放送</p>
     </div>
     <div class="card-body">
         <ul class="features-list">
@@ -261,7 +262,8 @@ last_update:
 MAC Address,Location,Beacon ID
 c30000564b31,"Main Entrance",01
 c30000564b32,"Warehouse Zone A",02
-c30000564b33,"Corner Office",03```
+c30000564b33,"Corner Office",03
+```
 
 以下の動画は、後でアプリケーションのマップにビーコンを追加する際にこのリストをどのように使用するかを示しています。今正確な記録を作成することで、ソフトウェアのセットアップがはるかに簡単になります。
 
@@ -424,20 +426,21 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 
 最後のステップは、トラッカーの電源を入れてマップ上で確認することです。
 
-1. **SenseCAP T1000トラッカーをアクティベート**し、LoRaWAN Network Serverにオンボードします。ゲートウェイがオンラインで、トラッカーデバイスがLNSサーバーに「登録」されていることを確認してください。詳細は[ステップ1b](#1b-ゲートウェイのセットアップ)をご確認ください。
-2. **BLEスキャンモードに設定されていることを確認**して、ビーコンを検出できるようにします。ヘルプについては以下の動画をご確認ください。
-3. **可視化：** トラッカーが施設内を移動すると、最寄りのビーコンを検出してその位置を報告します。ダッシュボードのマップ上でアイコンが移動するのを確認できます。
-
 <div align="center">
 <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/tracker-visualize-on-map.png" alt="tracker-visualize-on-map"/>
 </div>
+
+1. **SenseCAP T1000トラッカーをアクティベート**し、LoRaWAN Network Serverにオンボードします。ゲートウェイがオンラインで、トラッカーデバイスがLNSサーバーに「登録」されていることを確認してください。詳細は[ステップ1b](#1b-ゲートウェイのセットアップ)をご確認ください。
+2. **BLEスキャンモードに設定されていることを確認**して、ビーコンを検出できるようにします。ヘルプについては以下の動画をご確認ください。
+3. **可視化：** トラッカーが施設内を移動すると、最寄りのビーコンを検出してその位置を報告します。ダッシュボードのマップ上でアイコンが移動するのを確認できます。
 
 <div style={{ textAlign: 'center' }}>
 <video width="480" height="640" controls>
   <source src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/indoor-position-tracker-configuration.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
-<p><em>ChirpStackを使用する場合は、`Other Platform`を選択してください。</em></p><p><em>SenseCraft Dataを使用する場合は、デフォルトのプラットフォーム設定（SenseCAP for The Things Network）を保持してください。</em></p>
+<p><em>ChirpStackを使用する場合は、`Other Platform`を選択してください。</em></p>
+<p><em>SenseCraft Dataを使用する場合は、デフォルトのプラットフォーム設定（SenseCAP for The Things Network）を保持してください。</em></p>
 </div>
 
 ## アプリケーション機能概要
@@ -551,79 +554,113 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 </TabItem>
 </Tabs>
 
-### 機能2：2つの測位モード
+### 特徴 2: 2つの位置決めモード
 
-システムは2つの測位方法をサポートしています：
+システムは2つの位置決め方法をサポートしています：
 
-1. **三角測量：** トラッカーが**3つ以上**のビーコンを検出すると、正確な(x, y)座標を計算します。これはデフォルトで最も正確なモードです。
-2. **近接（エリア測位）：** これを有効にしてトラッカーが**1つ**のビーコンしか検出できない場合、計算された半径内でそのビーコンの「近く」にいると位置を報告します。これはすべてのエリアでカバレッジを確保するのに便利です。
+1. **三辺測量 (Trilateration):** トラッカーが **3つ以上** のビーコンを検出したとき、正確な (x, y) 座標を計算します。これがデフォルトで最も正確なモードです。
+2. **近接（エリア位置決め）:** これを有効にし、トラッカーが **1つ** のビーコンしか検出できない場合、そのビーコンの近くにいると計算された半径内で位置を報告します。すべてのエリアをカバーするために便利です。
 
-### 機能3：アラート履歴の表示
+*三辺測量*
 
-マップ上のトラッカーアイコンをクリックすることで、任意のトラッカーのアラート履歴（例：SOSボタンの押下）を表示できます。システムは各新しいアラートをログに記録し、解決されるまでアクティブなアラートの通知をプッシュし続けます。
+<table align="center">
+<tr>
+    <th>三辺測量</th>
+    <th>三辺測量 (SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
 
-### 機能4：ビーコンUUIDによるフィルタリング
+*エリア位置決め*
 
-関連するビーコンUUIDによってマップ上に表示されるトラッカーをフィルタリングできます。これにより、特定のエリアや資産をより集中的に監視できます。ハッキングされないよう価値があります。
+<table align="center">
+<tr>
+    <th>エリア位置決め</th>
+    <th>エリア位置決め (SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
 
-## 参考資料とリソース
+### 特徴 3: アラート履歴の表示
 
-- **ランディングページ**: [SenseCraft屋内測位ソリューション](https://cc.seeedstudio.com/solutions/campus-safety-management)
-- **Dockerイメージ**: [seeedcloud/sensecraft-indoor-positioning - Docker Hub](https://hub.docker.com/r/seeedcloud/sensecraft-indoor-positioning)
+地図上のトラッカーアイコンをクリックすると、そのトラッカーのアラート履歴（例：SOSボタン押下履歴）を確認できます。システムは新しいアラートを記録し、解決されるまで通知を送り続けます。
+
+<div align="center">
+<img class='img-responsive' width="680" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/alert-history-records.png" alt="alert-history-records"/>
+</div>
+
+### 特徴 4: ビーコンUUIDによるフィルタリング
+
+地図上に表示されるトラッカーを、関連するビーコンUUIDでフィルタリングできます。これにより特定のエリアや資産を集中監視できます。ハッキング対策としても有効です。
+
+<div align="center">
+<img class='img-responsive' width="360" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/sensecraft-ble-filter.png" alt="sensecraft-ble-filter"/>
+</div>
+
+## 参考 & リソース
+
+- **ランディングページ**: [SenseCraft 室内位置決めソリューション](https://cc.seeedstudio.com/solutions/campus-safety-management)
+- **Docker イメージ**: [seeedcloud/sensecraft-indoor-positioning - Docker Hub](https://hub.docker.com/r/seeedcloud/sensecraft-indoor-positioning)
 - **ライブデモサイト**: [IndoorPositioning](https://indoorpositioning-demo.seeed.cc/)
 
 ## FAQ
 
 <details>
-<summary>なぜトラッカーが位置を報告しないのですか？</summary>
+<summary>トラッカーが位置を報告しないのはなぜですか？</summary>
 
-- **考えられる原因：** LoRaWAN接続に問題がある可能性があります。
-- **解決策：** LoRaWANゲートウェイのステータスを確認して、オンラインで接続されていることを確認してください。また、トラッカーのDevice EUIがネットワークサーバーに正しく登録されていることを確認してください。
-
-</details>
-
-<details>
-<summary>なぜトラッカーの位置が不正確なのですか？</summary>
-
-- **考えられる原因：** BLEビーコンの配置が干渉や弱い信号カバレッジを引き起こしている可能性があります。
-- **解決策：** ビーコンの送信電力を調整してみてください。壁や機械による信号の遮蔽を減らすために、ビーコンを移動する必要がある場合もあります。
+- **考えられる原因:** LoRaWAN 接続に問題がある可能性があります。
+- **解決策:** LoRaWAN ゲートウェイがオンラインで接続されているか確認してください。また、トラッカーの Device EUI がネットワークサーバーに正しく登録されていることを確認してください。
 
 </details>
 
 <details>
-<summary>なぜトラッカーのバッテリーがこんなに早く消耗するのですか？</summary>
+<summary>トラッカーの位置が不正確なのはなぜですか？</summary>
 
-- **考えられる原因：** 報告頻度が高すぎて、デバイスが必要以上に頻繁にデータを送信している可能性があります。
-- **解決策：** トラッカーが動いているときのみ報告するように動作検出設定を最適化してください。電力を節約するために報告間隔（位置更新間の時間）を長くすることもできます。
-
-</details>
-
-<details>
-<summary>なぜ位置データが欠落または表示されないのですか？</summary>
-
-- **考えられる原因：** データベースやAPIに問題がある可能性があり、多くの場合データペイロードの解釈方法に関連しています。
-- **解決策：** まず、アプリケーションサーバーのペイロードデコーダーが正しく動作していることを確認してください。デコーダーが正しい場合は、エラーや接続の問題がないかアプリケーションサーバーのログを確認してください。
+- **考えられる原因:** BLEビーコンの設置場所が干渉や信号カバー不足を引き起こしている可能性があります。
+- **解決策:** ビーコンの送信出力を調整してみてください。また、壁や機械による信号遮蔽を避けるために設置場所を変更する必要があるかもしれません。
 
 </details>
 
 <details>
-<summary>なぜSOSアラートが迅速に受信されないのですか？</summary>
+<summary>トラッカーのバッテリーがすぐに減るのはなぜですか？</summary>
 
-- **考えられる原因：** LoRaWANネットワークが混雑しているか、デバイスクラスが緊急メッセージに適していない可能性があります。
-- **解決策：** SOSアラートのような時間が重要なアプリケーションでは、トラッカーが**クラスCモード**を使用するように設定されていることを確認してください。これによりデバイスの受信機が継続的にオンになり、サーバーからのメッセージを即座に受信できます。
+- **考えられる原因:** 報告頻度が高すぎ、必要以上にデータを送信している可能性があります。
+- **解決策:** モーション検出設定を最適化して、トラッカーが移動しているときだけ報告するようにしてください。また、報告間隔（位置更新の時間間隔）を延長して電力を節約できます。
 
 </details>
 
 <details>
-<summary>BC01ビーコンのアドバタイジング間隔と送信電力を調整するにはどうすればよいですか？</summary>
+<summary>位置データが表示されない、または欠落しているのはなぜですか？</summary>
 
-**SenseCraftアプリ**を使用してBC01ビーコンを設定できます。
+- **考えられる原因:** データベースや API に問題がある可能性があります。特にデータペイロードの解釈方法に関連します。
+- **解決策:** まずアプリケーションサーバー上のペイロードデコーダーが正しく動作しているか確認してください。正しければ、アプリケーションサーバーのログでエラーや接続問題を確認してください。
 
-1. [Google Play Store](https://play.google.com/store/apps/details?id=cc.seeed.sensecapmate)または[Apple App Store](https://apps.apple.com/us/app/sensecraft/id1619944834)からSenseCraftアプリをインストールします。
-2. アプリを開き、スマートフォンのBluetoothを有効にします。
-3. 近くのビーコンをスキャンし、設定したいビーコンを選択します。
-4. デフォルトパスワード「**seeed123**」を入力して設定にアクセスします。
-5. アドバタイジング間隔（100ms〜10s）と送信電力（-30dBm〜+4dBm）を必要に応じて調整します。
-6. 変更を保存します。
+</details>
+
+<details>
+<summary>SOSアラートが迅速に届かないのはなぜですか？</summary>
+
+- **考えられる原因:** LoRaWAN ネットワークが混雑している、またはデバイスクラスが緊急メッセージに適していない可能性があります。
+- **解決策:** SOS アラートのような時間に敏感なアプリケーションでは、トラッカーを **クラスCモード** に設定してください。これにより受信機が常時オンとなり、サーバーからのメッセージを即座に受信できます。
+
+</details>
+
+<details>
+<summary>BC01ビーコンの広告間隔と送信出力を調整するには？</summary>
+
+**SenseCraft アプリ**を使用して BC01 ビーコンを設定できます。
+
+1. [Google Play Store](https://play.google.com/store/apps/details?id=cc.seeed.sensecapmate) または [Apple App Store](https://apps.apple.com/us/app/sensecraft/id1619944834) から SenseCraft アプリをインストールします。
+2. アプリを開き、スマートフォンの Bluetooth を有効にします。
+3. 近くのビーコンをスキャンして、設定したいものを選択します。
+4. デフォルトのパスワード "**seeed123**" を入力して設定画面に入ります。
+5. 広告間隔（100ms〜10s）と送信出力（-30dBm〜+4dBm）をニーズに合わせて調整します。
+6. 設定を保存します。
 
 </details>

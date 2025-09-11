@@ -24,9 +24,9 @@ Indoor positioning is a common challenge for many industries. While high-precisi
 
 The system is built around the [SenseCAP T1000 Tracker](/SenseCAP_T1000_tracker/Introduction) and supports two distinct positioning modes, allowing you to balance precision with battery life based on your needs:
 
-1.  **High-Precision Tracking (Trilateration):** When a tracker detects signals from **three or more** BLE beacons, it can calculate its precise (x, y) coordinates on a map. This mode is ideal for tracking the movement of assets or personnel, providing accurate location updates periodically or whenever movement occurs.
+1. **High-Precision Tracking (Trilateration):** When a tracker detects signals from **three or more** BLE beacons, it can calculate its precise (x, y) coordinates on a map. This mode is ideal for tracking the movement of assets or personnel, providing accurate location updates periodically or whenever movement occurs.
 
-2.  **Zone-Based Positioning (Proximity):** When a tracker is in range of only one or two beacons, it identifies its location based on proximity to the nearest beacon. This mode is perfect for simpler use cases like automated check-ins, confirming an asset is in a designated room, or conserving battery life by reporting location less frequently.
+2. **Zone-Based Positioning (Proximity):** When a tracker is in range of only one or two beacons, it identifies its location based on proximity to the nearest beacon. This mode is perfect for simpler use cases like automated check-ins, confirming an asset is in a designated room, or conserving battery life by reporting location less frequently.
 
 By supporting both methods, this solution provides a versatile and easy-to-deploy system for a wide range of indoor tracking applications, from simple presence detection to more detailed coordinate-based monitoring.
 

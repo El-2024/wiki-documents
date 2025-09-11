@@ -131,7 +131,8 @@ Antes de comenzar, asegúrate de tener lo siguiente:
   <!-- Card 2: BLE Beacons -->
   <div class="seeed-feature-card">
     <div class="card-header">
-        <h2><a href="https://www.seeedstudio.com/BC01-Indoor-Bluetooth-Beacon-p-5791.html">Beacons BLE</a></h2>        <p>Transmisión Bluetooth Regular</p>
+        <h2><a href="https://www.seeedstudio.com/BC01-Indoor-Bluetooth-Beacon-p-5791.html">Beacons BLE</a></h2>
+        <p>Transmisión Bluetooth Regular</p>
     </div>
     <div class="card-body">
         <ul class="features-list">
@@ -261,7 +262,8 @@ A continuación, cree una lista (plantilla) para registrar la **Dirección MAC �
 MAC Address,Location,Beacon ID
 c30000564b31,"Main Entrance",01
 c30000564b32,"Warehouse Zone A",02
-c30000564b33,"Corner Office",03```
+c30000564b33,"Corner Office",03
+```
 
 El video a continuación muestra cómo utilizarás esta lista para agregar tus beacons al mapa de la aplicación más adelante. Crear un registro preciso ahora hará que la configuración del software sea mucho más fácil.
 
@@ -424,20 +426,21 @@ Esta es una configuración avanzada que ajusta finamente la precisión de ubicac
 
 El paso final es encender tu rastreador y verlo en el mapa.
 
-1. **Activa el Rastreador SenseCAP T1000** e incorpóralo a tu Servidor de Red LoRaWAN. Asegúrate de que tu gateway esté en línea y que el dispositivo rastreador esté 'registrado' en el servidor LNS. consulta el [Paso 1b](#1b-configurar-el-gateway) para detalles.
-2. **Asegúrate de que esté configurado en modo de escaneo BLE** para que pueda detectar los beacons. Consulta el video a continuación para ayuda.
-3. **Visualizar:** Mientras el rastreador se mueve por tu instalación, detectará los beacons más cercanos e informará su ubicación. Verás su ícono moviéndose por el mapa en tu panel.
-
 <div align="center">
 <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/tracker-visualize-on-map.png" alt="tracker-visualize-on-map"/>
 </div>
+
+1. **Activa el Rastreador SenseCAP T1000** e incorpóralo a tu Servidor de Red LoRaWAN. Asegúrate de que tu gateway esté en línea y que el dispositivo rastreador esté 'registrado' en el servidor LNS. consulta el [Paso 1b](#1b-configurar-el-gateway) para detalles.
+2. **Asegúrate de que esté configurado en modo de escaneo BLE** para que pueda detectar los beacons. Consulta el video a continuación para ayuda.
+3. **Visualizar:** Mientras el rastreador se mueve por tu instalación, detectará los beacons más cercanos e informará su ubicación. Verás su ícono moviéndose por el mapa en tu panel.
 
 <div style={{ textAlign: 'center' }}>
 <video width="480" height="640" controls>
   <source src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/indoor-position-tracker-configuration.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
-<p><em>Opta por `Other Platform`, cuando uses ChirpStack.</em></p><p><em>Conserva la configuración predeterminada de la plataforma (SenseCAP for The Things Network), cuando uses SenseCraft Data.</em></p>
+<p><em>Opta por `Other Platform`, cuando uses ChirpStack.</em></p>
+<p><em>Conserva la configuración predeterminada de la plataforma (SenseCAP for The Things Network), cuando uses SenseCraft Data.</em></p>
 </div>
 
 ## Resumen de Características de la Aplicación
@@ -553,77 +556,111 @@ Puedes obtener datos en tiempo real del sistema de dos maneras:
 
 ### Característica 2: Dos Modos de Posicionamiento
 
-El sistema soporta dos métodos de posicionamiento:
+El sistema admite dos métodos de posicionamiento:
 
-1. **Trilateración:** Cuando el rastreador detecta **tres o más** beacons, calcula una coordenada precisa (x, y). Este es el modo predeterminado y más preciso.
-2. **Proximidad (Posicionamiento por Área):** Si habilitas esto y el rastreador solo puede detectar **un** beacon, reportará su posición como estando "cerca" de ese beacon dentro de un radio calculado. Esto es útil para asegurar cobertura en todas las áreas.
+1. **Trilateración:** Cuando el rastreador detecta **tres o más** balizas, calcula una coordenada precisa (x, y). Este es el modo predeterminado y el más preciso.
+2. **Proximidad (Posicionamiento por Área):** Si habilitas esta opción y el rastreador solo puede detectar **una** baliza, informará su posición como "cerca" de esa baliza dentro de un radio calculado. Esto es útil para garantizar la cobertura en todas las áreas.
 
-### Característica 3: Ver Historial de Alertas
+*Trilateración*
 
-Puedes ver el historial de alertas (ej., presiones del botón SOS) para cualquier rastreador haciendo clic en su icono en el mapa. El sistema registra cada nueva alerta y continuará enviando notificaciones para una alerta activa hasta que sea resuelta.
+<table align="center">
+<tr>
+    <th>Trilateración</th>
+    <th>Trilateración (SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
 
-### Característica 4: Filtrar por UUID de Beacon
+*Posicionamiento por Área*
 
-Puedes filtrar los rastreadores mostrados en el mapa por sus UUIDs de beacon asociados. Esto permite un monitoreo más enfocado de áreas o activos específicos. se valora que no sea hackeado.
+<table align="center">
+<tr>
+    <th>Posicionamiento por Área</th>
+    <th>Posicionamiento por Área (SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
 
-## Referencia y Recursos
+### Característica 3: Ver el Historial de Alertas
 
-- **Página de Inicio**: [Solución de Posicionamiento Interior SenseCraft](https://cc.seeedstudio.com/solutions/campus-safety-management)
-- **Imagen Docker**: [seeedcloud/sensecraft-indoor-positioning - Docker Hub](https://hub.docker.com/r/seeedcloud/sensecraft-indoor-positioning)
-- **Sitio de Demo en Vivo**: [IndoorPositioning](https://indoorpositioning-demo.seeed.cc/)
+Puedes ver el historial de alertas (por ejemplo, pulsaciones del botón SOS) de cualquier rastreador haciendo clic en su ícono en el mapa. El sistema registra cada nueva alerta y continuará enviando notificaciones mientras la alerta esté activa hasta que se resuelva.
 
-## FAQ
+<div align="center">
+<img class='img-responsive' width="680" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/alert-history-records.png" alt="alert-history-records"/>
+</div>
+
+### Característica 4: Filtrar por UUID de Baliza
+
+Puedes filtrar los rastreadores mostrados en el mapa según los UUID de baliza asociados. Esto permite un monitoreo más enfocado de áreas o activos específicos. Es importante para evitar manipulaciones no autorizadas.
+
+<div align="center">
+<img class='img-responsive' width="360" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/sensecraft-ble-filter.png" alt="sensecraft-ble-filter"/>
+</div>
+
+## Referencias y Recursos
+
+- **Página Principal**: [SenseCraft Indoor Positioning Solution](https://cc.seeedstudio.com/solutions/campus-safety-management)
+- **Imagen de Docker**: [seeedcloud/sensecraft-indoor-positioning - Docker Hub](https://hub.docker.com/r/seeedcloud/sensecraft-indoor-positioning)
+- **Sitio de Demostración en Vivo**: [IndoorPositioning](https://indoorpositioning-demo.seeed.cc/)
+
+## Preguntas Frecuentes
 
 <details>
-<summary>¿Por qué mi rastreador no está reportando su ubicación?</summary>
+<summary>¿Por qué mi rastreador no informa su ubicación?</summary>
 
-- **Causa Probable:** Puede haber un problema con la conectividad LoRaWAN.
-- **Solución:** Verifica el estado de tu gateway LoRaWAN para asegurar que esté en línea y conectado. También, verifica que el Device EUI del rastreador esté correctamente registrado en tu servidor de red.
+- **Causa probable:** Puede haber un problema con la conectividad LoRaWAN.
+- **Solución:** Verifica el estado de tu puerta de enlace LoRaWAN para asegurarte de que esté en línea y conectada. También confirma que el Device EUI del rastreador esté correctamente registrado en tu servidor de red.
 
 </details>
 
 <details>
 <summary>¿Por qué la posición del rastreador es inexacta?</summary>
 
-- **Causa Probable:** La ubicación de tus beacons BLE podría estar causando interferencia o cobertura de señal débil.
-- **Solución:** Intenta ajustar la potencia de transmisión de los beacons. También podrías necesitar reubicarlos para reducir la obstrucción de señal por paredes o maquinaria.
+- **Causa probable:** La ubicación de tus balizas BLE podría estar causando interferencia o cobertura de señal débil.
+- **Solución:** Intenta ajustar la potencia de transmisión de las balizas. También puede que necesites reubicarlas para reducir la obstrucción de señal por paredes o maquinaria.
 
 </details>
 
 <details>
-<summary>¿Por qué la batería del rastreador se agota tan rápidamente?</summary>
+<summary>¿Por qué la batería del rastreador se agota tan rápido?</summary>
 
-- **Causa Probable:** La frecuencia de reporte está configurada demasiado alta, causando que el dispositivo transmita datos más a menudo de lo necesario.
-- **Solución:** Optimiza la configuración de detección de movimiento para reportar solo cuando el rastreador se esté moviendo. También puedes aumentar el intervalo de reporte (el tiempo entre actualizaciones de ubicación) para conservar energía.
+- **Causa probable:** La frecuencia de informes está configurada demasiado alta, lo que hace que el dispositivo transmita datos con más frecuencia de la necesaria.
+- **Solución:** Optimiza la configuración de detección de movimiento para informar solo cuando el rastreador esté en movimiento. También puedes aumentar el intervalo de informe (el tiempo entre actualizaciones de ubicación) para ahorrar energía.
 
 </details>
 
 <details>
 <summary>¿Por qué faltan datos de ubicación o no se muestran?</summary>
 
-- **Causa Probable:** Podría haber un problema con la base de datos o API, a menudo relacionado con cómo se está interpretando la carga útil de datos.
-- **Solución:** Primero, verifica que el decodificador de carga útil en tu servidor de aplicación sea correcto y esté funcionando. Si el decodificador es correcto, revisa los logs del servidor de aplicación para cualquier error o problema de conectividad.
+- **Causa probable:** Podría haber un problema con la base de datos o la API, a menudo relacionado con cómo se interpreta la carga útil de datos.
+- **Solución:** Primero, verifica que el decodificador de carga útil en tu servidor de aplicaciones sea correcto y esté funcionando. Si el decodificador es correcto, revisa los registros del servidor de aplicaciones para detectar errores o problemas de conectividad.
 
 </details>
 
 <details>
-<summary>¿Por qué las alertas SOS no se reciben prontamente?</summary>
+<summary>¿Por qué las alertas SOS no se reciben rápidamente?</summary>
 
-- **Causa Probable:** La red LoRaWAN puede estar congestionada, o la clase del dispositivo no es adecuada para mensajes urgentes.
-- **Solución:** Para aplicaciones críticas en tiempo como alertas SOS, asegúrate de que tu rastreador esté configurado para usar **modo Clase C**. Esto mantiene el receptor del dispositivo encendido continuamente, permitiendo la recepción inmediata de mensajes del servidor.
+- **Causa probable:** La red LoRaWAN puede estar congestionada o la clase de dispositivo no es adecuada para mensajes urgentes.
+- **Solución:** Para aplicaciones críticas como alertas SOS, asegúrate de que tu rastreador esté configurado para usar **modo Clase C**. Esto mantiene el receptor del dispositivo encendido de forma continua, lo que permite la recepción inmediata de mensajes desde el servidor.
 
 </details>
 
 <details>
-<summary>¿Cómo ajusto el intervalo de publicidad y la potencia de transmisión de un beacon BC01?</summary>
+<summary>¿Cómo ajusto el intervalo de publicidad y la potencia de transmisión de una baliza BC01?</summary>
 
-Puedes usar la **app SenseCraft** para configurar el beacon BC01.
+Puedes usar la **aplicación SenseCraft** para configurar la baliza BC01.
 
-1. Instala la app SenseCraft desde [Google Play Store](https://play.google.com/store/apps/details?id=cc.seeed.sensecapmate) o [Apple App Store](https://apps.apple.com/us/app/sensecraft/id1619944834).
-2. Abre la app y habilita Bluetooth en tu teléfono.
-3. Escanea beacons cercanos y selecciona el que deseas configurar.
-4. Ingresa la contraseña predeterminada "**seeed123**" para acceder a la configuración.
-5. Ajusta el intervalo de publicidad (100ms a 10s) y la potencia de transmisión (-30dBm a +4dBm) según tus necesidades.
+1. Instala la aplicación SenseCraft desde [Google Play Store](https://play.google.com/store/apps/details?id=cc.seeed.sensecapmate) o [Apple App Store](https://apps.apple.com/us/app/sensecraft/id1619944834).
+2. Abre la aplicación y habilita el Bluetooth en tu teléfono.
+3. Escanea las balizas cercanas y selecciona la que deseas configurar.
+4. Introduce la contraseña predeterminada "**seeed123**" para acceder a la configuración.
+5. Ajusta el intervalo de publicidad (100 ms a 10 s) y la potencia de transmisión (-30 dBm a +4 dBm) según tus necesidades.
 6. Guarda los cambios.
 
 </details>
