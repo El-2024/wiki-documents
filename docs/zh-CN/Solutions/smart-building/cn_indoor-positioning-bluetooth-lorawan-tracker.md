@@ -12,7 +12,7 @@ keywords:
 slug: /cn/solutions/indoor-positioning-bluetooth-lorawan-tracker
 sidebar_position: 1
 last_update:
-  date: 08/11/2025
+  date: 09/10/2025
   author: Spencer
 ---
 
@@ -20,11 +20,15 @@ last_update:
 
 ### 概述
 
-室内定位是许多行业面临的共同挑战。虽然 Wi-Fi 或 UWB 等解决方案提供高精度，但它们可能成本高昂且安装复杂。此解决方案为**基于区域的定位**提供了一种经济高效且易于部署的替代方案。它结合了两种强大的无线技术：**低功耗蓝牙（BLE）**用于确定特定区域内的存在，**LoRaWAN**用于长距离、低功耗数据传输。
+室内定位是许多行业面临的共同挑战。虽然像 UWB 这样的高精度系统存在，但它们可能成本高昂且复杂。此解决方案通过结合两种强大的无线技术提供了一个灵活且经济高效的替代方案：**低功耗蓝牙（BLE）**用于位置感知，**LoRaWAN**用于长距离、低功耗数据传输。
 
-该系统的核心是使用**SenseCAP T1000 Tracker**等设备来确定它们与最近 BLE 信标的接近程度。主要方法是确认在特定区域内的存在，这对于自动签到或验证资产是否在指定房间等用例非常有效。
+该系统围绕[SenseCAP T1000 Tracker](/cn/SenseCAP_T1000_tracker/Introduction)构建，支持两种不同的定位模式，让您可以根据需要在精度和电池寿命之间取得平衡：
 
-虽然技术上可以使用来自多个信标的信号强度（称为三边测量的技术）来估计 X-Y 坐标，但这种方法通常会以可靠性和电池寿命为代价来换取精度。信号强度可能不稳定并受环境因素影响，从多个信标传输数据会消耗更多电力。因此，此解决方案针对可靠的、长电池寿命的**存在检测**进行了优化，而不是高精度坐标跟踪。
+1.  **高精度跟踪（三角测量）：** 当跟踪器检测到来自**三个或更多**BLE 信标的信号时，它可以计算出其在地图上的精确（x，y）坐标。此模式非常适合跟踪资产或人员的移动，定期或在发生移动时提供准确的位置更新。
+
+2.  **基于区域的定位（邻近性）：** 当跟踪器仅在一个或两个信标的范围内时，它根据与最近信标的邻近性来识别其位置。此模式非常适合更简单的用例，如自动签到、确认资产在指定房间内，或通过较少频率的位置报告来节省电池寿命。
+
+通过支持这两种方法，此解决方案为广泛的室内跟踪应用提供了一个多功能且易于部署的系统，从简单的存在检测到更详细的基于坐标的监控。
 
 :::tip 导航到我们的套装页面
 
@@ -37,7 +41,7 @@ last_update:
 - **经济高效且可扩展**：利用经济实惠的 BLE 信标，避免在每个房间安装昂贵网关的需要。
 - **长距离数据传输**：单个 LoRaWAN 网关可以覆盖整栋建筑或校园，大幅降低基础设施成本。
 - **即时 SOS 警报**：跟踪器包含紧急按钮，按下时立即通过 LoRaWAN 发送 SOS 警报，实现快速应急响应。
-- **智能电源管理**：通过使用内置加速度计，跟踪器可以仅在检测到运动时报告，否则发送周期性"心跳"信号。这大大延长了电池寿命，许多资产跟踪应用可超过一年。
+- **智能电源管理**：通过使用内置加速度计，跟踪器可以仅在检测到移动时报告，否则发送定期"心跳"信号。这大大延长了电池寿命，在许多资产跟踪应用的最佳设置下可达 6 个月。
 - **简单部署**：设置 BLE 信标和 LoRaWAN 网关非常简单，让您的定位系统快速上线。
 - **开源软件**：该项目完全开源，允许您使用我们的[GitHub 仓库](https://github.com/Seeed-Solution/Solution_IndoorPositioning_H5)构建和定制自己的后端服务器。
 
@@ -46,12 +50,12 @@ last_update:
 <div class="info-section">
     <div class="section-header">
         <h2>使用案例</h2>
-        <p>此解决方案非常适合各种基于区域的跟踪和安全应用：</p>
+        <p>此解决方案非常适合广泛的基于区域的跟踪和安全应用：</p>
     </div>
     <ul class="info-list">
         <li class="info-item"><div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg></div><div class="info-content"><h3>校园和学校安全</h3><p>为学生和教职员工提供可穿戴跟踪器。内置 SOS 按钮允许他们从校园任何地方立即发送带有最后已知位置的紧急警报，提供安心感并实现更快的响应时间。</p></div></li>
-        <li class="info-item"><div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg></div><div class="info-content"><h3>资产管理</h3><p>跟踪贵重资产的位置，包括室内和室外（例如停车场中的车辆）。配置跟踪器仅在移动时报告，节省电池同时确保您收到未经授权移动的警报。</p></div></li>
-        <li class="info-item"><div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.542 2.72c.266.059.537.1.82.118m7.542 2.72a3 3 0 01-4.682-2.72m0 0a3 3 0 013.741-.479m-.479 3.742a9.094 9.094 0 01-3.742.479m-12 .482c.266.059.537.1.82.118a9.094 9.094 0 013.742-.479m0 0a3 3 0 01-3.741.479m5.421 2.053a3 3 0 01-4.682-2.72m0 0c.266.059.537.1.82.118a9.094 9.094 0 013.742-.479M12 12a3 3 0 01-3-3m0 0a3 3 0 013-3m0 0a3 3 0 013 3m0 0a3 3 0 01-3 3z" /></svg></div><div class="info-content"><h3>自动签到和人员管理</h3><p>通过调整 BLE 信标的信号强度，您可以为办公室或养老院创建"签到"区域。当佩戴跟踪器的人员进入该区域时，他们的存在会自动记录。</p></div></li>
+        <li class="info-item"><div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg></div><div class="info-content"><h3>资产管理</h3><p>跟踪有价值资产的位置，包括室内和室外（例如停车场中的车辆）。配置跟踪器仅在移动时报告，节省电池同时确保您收到未经授权移动的警报。</p></div></li>
+        <li class="info-item"><div class="info-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.542 2.72c.266.059.537.1.82.118m7.542 2.72a3 3 0 01-4.682-2.72m0 0a3 3 0 013.741-.479m-.479 3.742a9.094 9.094 0 01-3.742.479m-12 .482c.266.059.537.1.82.118a9.094 9.094 0 013.742-.479m0 0a3 3 0 01-3.741.479m5.421 2.053a3 3 0 01-4.682-2.72m0 0c.266.059.537.1.82.118a9.094 9.094 0 013.742-.479M12 12a3 3 0 01-3-3m0 0a3 3 0 013-3m0 0a3 3 0 013 3m0 0a3 3 0 01-3 3z" /></svg></div><div class="info-content"><h3>自动签到和人员管理</h3><p>通过调整 BLE 信标的信号强度，您可以为办公室或养老院创建"签到"区域。当佩戴跟踪器的人进入该区域时，他们的存在会自动记录。</p></div></li>
     </ul>
 </div>
 
@@ -68,7 +72,7 @@ last_update:
 1. **BLE 信标**：这些是放置在已知位置（例如房间入口、关键区域）的小型固定发射器。它们持续广播唯一 ID。
 2. **SenseCAP T1000 Tracker**：这是附加到您想要跟踪的资产或人员的移动设备。它扫描附近的 BLE 信标并识别信号最强的那个。
 3. **LoRaWAN 网关**：跟踪器通过 LoRaWAN 向网关发送包含最近 BLE 信标 ID 的数据包。
-4. **网络和应用服务器**：网关将数据转发到 LoRaWAN 网络服务器（[SenseCAP Data](https://sensecap.seeed.cc/portal)），然后将其路由到应用服务器。应用服务器保存信标 ID 及其真实世界位置的映射，使其能够确定跟踪器的位置（例如，"跟踪器#58 靠近信标#12，该信标位于会议室 3"）。
+4. **网络和应用服务器**：网关将数据转发到 LoRaWAN 网络服务器（[SenseCraft Data](https://sensecap.seeed.cc/portal)），然后将其路由到应用服务器。应用服务器保存信标 ID 及其真实世界位置的地图，使其能够确定跟踪器的位置（例如，"跟踪器#58 在信标#12 附近，该信标位于会议室 3"）。
 
 开始之前，请确保您具备以下条件：
 
@@ -102,7 +106,7 @@ last_update:
                           <path stroke-linecap="round" stroke-linejoin="round" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071a10 10 0 0114.142 0M1.394 9.393a15 15 0 0121.213 0" />
                       </svg>
                   </div>
-                  <p><span class="highlight">广域网络：</span>LoRaWAN® Class A(v1.0.4)连接，实现长距离、低功耗通信。</p>
+                  <p><span class="highlight">广域网络：</span>LoRaWAN® Class A（v1.0.4）连接，实现长距离、低功耗通信。</p>
               </li>
               <li class="feature-item">
                   <div class="feature-icon">
@@ -198,7 +202,7 @@ last_update:
                         <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.542 2.72c.266.059.537.1.82.118m7.542 2.72a3 3 0 01-4.682-2.72m0 0a3 3 0 013.741-.479m-.479 3.742a9.094 9.094 0 01-3.742.479m-12 .482c.266.059.537.1.82.118a9.094 9.094 0 013.742-.479m0 0a3 3 0 01-3.741.479m5.421 2.053a3 3 0 01-4.682-2.72m0 0c.266.059.537.1.82.118a9.094 9.094 0 013.742-.479M12 12a3 3 0 01-3-3m0 0a3 3 0 013-3m0 0a3 3 0 013 3m0 0a3 3 0 01-3 3z" />
                     </svg>
                 </div>
-                <p><span class="highlight">大规模连接：</span> 支持超过 <span class="highlight">200</span> 台设备并发，性能卓越。</p>
+                <p><span class="highlight">大规模连接：</span> 支持超过 <span class="highlight">200</span> 台设备同时连接，性能卓越。</p>
             </li>
             <li class="feature-item">
                 <div class="feature-icon">
@@ -206,7 +210,7 @@ last_update:
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5.636 5.636a9 9 0 1012.728 0M12 3v9" />
                     </svg>
                 </div>
-                <p><span class="highlight">多种回传：</span> 提供多种网络回传选项，包括以太网、Wi-Fi 和 4G。</p>
+                <p><span class="highlight">多种回传方式：</span> 提供多种网络回传选项，包括以太网、Wi-Fi 和 4G。</p>
             </li>
             <li class="feature-item">
                 <div class="feature-icon">
@@ -230,8 +234,8 @@ last_update:
 
 1. **部署信标**：在设施的关键位置放置 BLE 信标。创建地图或列表，记录每个信标的唯一 ID 及其物理位置（例如，`Beacon_ID_01: "主入口"`，`Beacon_ID_02: "仓库 A 区"`）。
 2. **设置网关**：将 LoRaWAN 网关连接到互联网，并配置其将数据包转发到您选择的 LoRaWAN 网络服务器。
-3. **部署应用程序**：在应用服务器上，创建逻辑将报告的信标 ID 映射回您在步骤 3 中记录的物理位置。
-4. **配置追踪器**：激活 SenseCAP T1000 并将其加入到您的 LoRaWAN 网络服务器。确保其配置为 BLE 扫描模式。
+3. **部署应用程序**：在应用服务器上，创建逻辑将报告的信标 ID 映射回您在第 3 步中记录的物理位置。
+4. **配置追踪器**：激活 SenseCAP T1000 并将其接入您的 LoRaWAN 网络服务器。确保其配置为 BLE 扫描模式。
 5. **可视化**：当追踪器在设施中移动时，它将报告最近的信标，您的应用程序可以在仪表板或地图上显示其位置。
 
 ### 步骤 1：设置硬件
@@ -305,7 +309,7 @@ import TabItem from '@theme/TabItem';
 2. 完成后，您可以 **继续进行步骤 2**。
 
   </TabItem>
-  <TabItem value="chirpstack" label="ChirpStack (本地 LoRaWAN 服务器)">
+  <TabItem value="chirpstack" label="ChirpStack（本地 LoRaWAN 服务器）">
 
 如果您使用自托管的 **ChirpStack** 服务器，您需要重新指向网关并准备解码器脚本。
 
@@ -379,7 +383,7 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 
 1. 启用 **ChirpStack MQTT** 开关。
 2. 输入您的 ChirpStack **服务器地址** 和 **应用程序 ID**。
-      - MQTT 主题字段将自动更新。您可以在 ChirpStack 中应用程序的主页面上找到 **应用程序 ID**。
+      - MQTT 主题字段将自动更新。您可以在 ChirpStack 中应用程序的主页面找到 **应用程序 ID**。
 
 <div align="center">
 <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/chirpstack-application-id.png" alt="chirpstack-application-id"/>
@@ -422,19 +426,20 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 
 最后一步是打开您的跟踪器并在地图上查看它。
 
-1. **激活 SenseCAP T1000 跟踪器** 并将其加入到您的 LoRaWAN 网络服务器。确保您的网关在线且跟踪器设备已在 LNS 服务器上"注册"。详情请查看 [步骤 1b](#1b-设置网关)。
-2. **确保它设置为 BLE 扫描模式** 以便它可以检测信标。查看下面的视频获取帮助。
-3. **可视化：** 当跟踪器在您的设施中移动时，它将检测最近的信标并报告其位置。您将在仪表板上看到其图标在地图上移动。
-
 <div align="center">
 <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/tracker-visualize-on-map.png" alt="tracker-visualize-on-map"/>
 </div>
+
+1. **激活 SenseCAP T1000 跟踪器** 并将其加入到您的 LoRaWAN 网络服务器。确保您的网关在线且跟踪器设备已在 LNS 服务器上"注册"。详情请查看 [步骤 1b](#1b-设置网关)。
+2. **确保它设置为 BLE 扫描模式** 以便它可以检测信标。查看下面的视频获取帮助。
+3. **可视化：** 当跟踪器在您的设施中移动时，它将检测最近的信标并报告其位置。您将在仪表板上看到其图标在地图上移动。
 
 <div style={{ textAlign: 'center' }}>
 <video width="480" height="640" controls>
   <source src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/indoor-position-tracker-configuration.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
+<p><em>使用 ChirpStack 时，选择 `Other Platform`。</em></p>
 <p><em>使用 SenseCraft Data 时，保留默认平台设置（SenseCAP for The Things Network）。</em></p>
 </div>
 
@@ -553,75 +558,109 @@ docker run -p 5173:5173 -p 8022:8022 --name indoor-positioning --restart unless-
 
 系统支持两种定位方法：
 
-1. **三边测量：** 当追踪器检测到**三个或更多**信标时，它会计算精确的 (x, y) 坐标。这是默认且最准确的模式。
-2. **邻近（区域定位）：** 如果您启用此功能且追踪器只能检测到**一个**信标，它将报告其位置为在计算半径内"靠近"该信标。这对于确保所有区域的覆盖很有用。
+1. **三边测量（Trilateration）：** 当追踪器检测到**三个或更多**信标时，它会计算出精确的 (x, y) 坐标。这是默认且最准确的模式。
+2. **邻近定位（区域定位）：** 如果启用此功能并且追踪器只能检测到**一个**信标，它将报告自己的位置为“接近”该信标，并给出计算半径。这对于确保所有区域的覆盖非常有用。
 
-### 功能 3：查看警报历史
+*三边测量*
 
-您可以通过点击地图上的图标来查看任何追踪器的警报历史（例如，SOS 按钮按下）。系统会记录每个新警报，并将继续推送活动警报的通知，直到问题得到解决。
+<table align="center">
+<tr>
+    <th>三边测量</th>
+    <th>三边测量 (SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
 
-### 功能 4：按信标 UUID 过滤
+*区域定位*
 
-您可以根据关联的信标 UUID 过滤地图上显示的追踪器。这允许对特定区域或资产进行更有针对性的监控。它的价值在于不被黑客攻击。
+<table align="center">
+<tr>
+    <th>区域定位</th>
+    <th>区域定位 (SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
 
-## 参考资料
+### 功能 3：查看告警历史
 
-- **产品页面**：[SenseCraft 室内定位解决方案](https://sensecraft.seeed.cc/solution/indoor-positioning-solution/)
-- **Docker 镜像**：[seeedcloud/sensecraft-indoor-positioning - Docker Hub](https://hub.docker.com/r/seeedcloud/sensecraft-indoor-positioning)
-- **在线演示站点**：[IndoorPositioning](https://indoorpositioning-demo.seeed.cc/)
+你可以通过点击地图上任意追踪器的图标来查看其告警历史（例如 SOS 按钮的按下记录）。系统会记录每次新的告警，并会持续推送该告警的通知，直到其被解决。
 
-## 常见问题
+<div align="center">
+<img class='img-responsive' width="680" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/alert-history-records.png" alt="alert-history-records"/>
+</div>
+
+### 功能 4：按 Beacon UUID 筛选
+
+你可以通过 Beacon UUID 筛选地图上显示的追踪器。这允许对特定区域或资产进行更有针对性的监控，并且能提高安全性防止被攻击。
+
+<div align="center">
+<img class='img-responsive' width="360" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/sensecraft-ble-filter.png" alt="sensecraft-ble-filter"/>
+</div>
+
+## 参考与资源
+
+- **落地页**: [SenseCraft 室内定位解决方案](https://cc.seeedstudio.com/solutions/campus-safety-management)
+- **Docker 镜像**: [seeedcloud/sensecraft-indoor-positioning - Docker Hub](https://hub.docker.com/r/seeedcloud/sensecraft-indoor-positioning)
+- **在线演示站点**: [IndoorPositioning](https://indoorpositioning-demo.seeed.cc/)
+
+## 常见问题 FAQ
 
 <details>
-<summary>为什么我的追踪器没有报告其位置？</summary>
+<summary>为什么我的追踪器没有报告位置？</summary>
 
 - **可能原因：** LoRaWAN 连接可能存在问题。
-- **解决方案：** 检查您的 LoRaWAN 网关状态，确保它在线并已连接。同时，验证追踪器的设备 EUI 是否在您的网络服务器上正确注册。
+- **解决方案：** 检查 LoRaWAN 网关状态，确保其在线并已连接。同时确认追踪器的 Device EUI 已正确注册到你的网络服务器。
 
 </details>
 
 <details>
 <summary>为什么追踪器的位置不准确？</summary>
 
-- **可能原因：** 您的 BLE 信标的放置可能导致干扰或信号覆盖较弱。
-- **解决方案：** 尝试调整信标的传输功率。您可能还需要重新放置它们以减少墙壁或机械设备的信号阻挡。
+- **可能原因：** 你的 BLE 信标的放置可能导致干扰或信号覆盖不足。
+- **解决方案：** 尝试调整信标的发射功率。也可以重新安置信标以减少墙壁或机器造成的信号阻挡。
 
 </details>
 
 <details>
-<summary>为什么追踪器的电池消耗如此之快？</summary>
+<summary>为什么追踪器的电池耗电这么快？</summary>
 
-- **可能原因：** 报告频率设置过高，导致设备传输数据的频率超过必要。
-- **解决方案：** 优化运动检测设置，仅在追踪器移动时报告。您还可以增加报告间隔（位置更新之间的时间）以节省电力。
-
-</details>
-
-<details>
-<summary>为什么位置数据丢失或不显示？</summary>
-
-- **可能原因：** 数据库或 API 可能存在问题，通常与数据载荷的解释方式有关。
-- **解决方案：** 首先，验证应用服务器上的载荷解码器是否正确且正常工作。如果解码器正确，请检查应用服务器日志是否有任何错误或连接问题。
+- **可能原因：** 报告频率设置过高，导致设备过于频繁地传输数据。
+- **解决方案：** 优化运动检测设置，仅在追踪器移动时报告。也可以增加报告间隔（位置更新之间的时间）以节省电量。
 
 </details>
 
 <details>
-<summary>为什么 SOS 警报没有及时收到？</summary>
+<summary>为什么位置数据缺失或没有显示？</summary>
 
-- **可能原因：** LoRaWAN 网络可能拥塞，或设备类别不适合紧急消息。
-- **解决方案：** 对于像 SOS 警报这样的时间关键应用，确保您的追踪器配置为使用 **Class C 模式**。这会保持设备的接收器持续开启，允许立即接收来自服务器的消息。
+- **可能原因：** 数据库或 API 可能存在问题，通常与数据负载的解析方式有关。
+- **解决方案：** 首先检查应用服务器上的负载解码器是否正确工作。如果解码器没问题，再检查应用服务器日志是否有错误或连接问题。
 
 </details>
 
 <details>
-<summary>如何调整 BC01 信标的广播间隔和传输功率？</summary>
+<summary>为什么 SOS 告警没有及时接收到？</summary>
 
-您可以使用 **SenseCraft 应用**来配置 BC01 信标。
+- **可能原因：** LoRaWAN 网络可能拥塞，或设备类别不适用于紧急消息。
+- **解决方案：** 对于像 SOS 告警这样的时效性强的应用，确保追踪器配置为 **Class C 模式**。该模式会让设备的接收器持续开启，可以立即接收来自服务器的消息。
 
-1. 从 [Google Play 商店](https://play.google.com/store/apps/details?id=com.seeed.sensecraft) 或 [Apple App Store](https://apps.apple.com/us/app/sensecraft/id1476154572) 安装 SenseCraft 应用。
-2. 打开应用并启用手机的蓝牙。
-3. 扫描附近的信标并选择您要配置的信标。
-4. 输入默认密码"**seeed123**"以访问设置。
-5. 根据需要调整广播间隔（100ms 到 10s）和传输功率（-30dBm 到 +4dBm）。
+</details>
+
+<details>
+<summary>如何调整 BC01 信标的广播间隔和发射功率？</summary>
+
+你可以使用 **SenseCraft 应用** 来配置 BC01 信标。
+
+1. 从 [Google Play 商店](https://play.google.com/store/apps/details?id=cc.seeed.sensecapmate) 或 [苹果应用商店](https://apps.apple.com/us/app/sensecraft/id1619944834) 安装 SenseCraft 应用。
+2. 打开应用并开启手机蓝牙。
+3. 扫描附近的信标并选择要配置的信标。
+4. 输入默认密码“**seeed123**”进入设置。
+5. 根据需求调整广播间隔（100ms 到 10s）和发射功率（-30dBm 到 +4dBm）。
 6. 保存更改。
 
 </details>

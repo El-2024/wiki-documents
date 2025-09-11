@@ -12,7 +12,7 @@ keywords:
 slug: /solutions/indoor-positioning-bluetooth-lorawan-tracker
 sidebar_position: 1
 last_update:
-  date: 08/11/2025
+  date: 09/10/2025
   author: Spencer
 ---
 
@@ -20,11 +20,15 @@ last_update:
 
 ### Overview
 
-Indoor positioning is a common challenge for many industries. While solutions like Wi-Fi or UWB offer high precision, they can be costly and complex to install. This solution provides a cost-effective and easy-to-deploy alternative for **zone-based positioning**. It combines two powerful wireless technologies: **Bluetooth Low Energy (BLE)** for determining presence within a specific area, and **LoRaWAN** for long-range, low-power data transmission.
+Indoor positioning is a common challenge for many industries. While high-precision systems like UWB exist, they can be costly and complex. This solution offers a flexible and cost-effective alternative by combining two powerful wireless technologies: **Bluetooth Low Energy (BLE)** for location sensing and **LoRaWAN** for long-range, low-power data transmission.
 
-At its core, this system uses devices like the **SenseCAP T1000 Tracker** to determine their proximity to the nearest BLE beacon. The primary method is to confirm presence within a specific zone, which is excellent for use cases like automated check-ins or verifying an asset is in a designated room.
+The system is built around the [SenseCAP T1000 Tracker](/SenseCAP_T1000_tracker/Introduction) and supports two distinct positioning modes, allowing you to balance precision with battery life based on your needs:
 
-While it is technically possible to use signal strength from multiple beacons (a technique called trilateration) to estimate X-Y coordinates, this approach often trades reliability and battery life for precision. Signal strength can be unstable and affected by environmental factors, and transmitting data from multiple beacons consumes more power. Therefore, this solution is optimized for dependable, long-battery-life **presence detection** rather than high-precision coordinate tracking.
+1. **High-Precision Tracking (Trilateration):** When a tracker detects signals from **three or more** BLE beacons, it can calculate its precise (x, y) coordinates on a map. This mode is ideal for tracking the movement of assets or personnel, providing accurate location updates periodically or whenever movement occurs.
+
+2. **Zone-Based Positioning (Proximity):** When a tracker is in range of only one or two beacons, it identifies its location based on proximity to the nearest beacon. This mode is perfect for simpler use cases like automated check-ins, confirming an asset is in a designated room, or conserving battery life by reporting location less frequently.
+
+By supporting both methods, this solution provides a versatile and easy-to-deploy system for a wide range of indoor tracking applications, from simple presence detection to more detailed coordinate-based monitoring.
 
 :::tip Navigate to our bundle page
 
@@ -37,7 +41,7 @@ Check out our [Indoor & Outdoor Integrated Positioning](https://www.seeedstudio.
 - **Cost-Effective & Scalable**: Leverages affordable BLE beacons and avoids the need for expensive gateway installations in every room.
 - **Long-Range Data Transmission**: A single LoRaWAN gateway can cover an entire building or campus, drastically reducing infrastructure costs.
 - **Instant SOS Alert**: Trackers include a panic button that, when pressed, immediately sends an SOS alert via LoRaWAN for rapid emergency response.
-- **Intelligent Power Management**: By using a built-in accelerometer, the tracker can report only when movement is detected and send periodic "heartbeat" signals otherwise. This dramatically extends battery life to over a year for many asset tracking applications.
+- **Intelligent Power Management**: By using a built-in accelerometer, the tracker can report only when movement is detected and send periodic "heartbeat" signals otherwise. This dramatically extends battery life to up to 6 months with optimal settings for many asset tracking applications.
 - **Simple Deployment**: Setting up BLE beacons and LoRaWAN gateways is straightforward, getting your positioning system online quickly.
 - **Open-Source Software**: The project is fully open-source, allowing you to build and customize your own backend server using our [GitHub repository.](https://github.com/Seeed-Solution/Solution_IndoorPositioning_H5)
 
@@ -68,7 +72,7 @@ The main components are:
 1. **BLE Beacons**: These are small, fixed transmitters placed at known locations (e.g., room entrances, key zones). They continuously broadcast a unique ID.
 2. **SenseCAP T1000 Tracker**: This is the mobile device attached to the asset or person you want to track. It scans for nearby BLE beacons and identifies the one with the strongest signal.
 3. **LoRaWAN Gateway**: The tracker sends a data packet containing the ID of the nearest BLE beacon to the gateway via LoRaWAN.
-4. **Network & Application Server**: The gateway forwards the data to a LoRaWAN Network Server([SenseCAP Data](https://sensecap.seeed.cc/portal)), which then routes it to an application server. The application server holds a map of the beacon IDs and their real-world locations, allowing it to determine the tracker's position (e.g., "Tracker #58 is near Beacon #12, which is in Conference Room 3").
+4. **Network & Application Server**: The gateway forwards the data to a LoRaWAN Network Server([SenseCraft Data](https://sensecap.seeed.cc/portal)), which then routes it to an application server. The application server holds a map of the beacon IDs and their real-world locations, allowing it to determine the tracker's position (e.g., "Tracker #58 is near Beacon #12, which is in Conference Room 3").
 
 Before you begin, make sure you have the following:
 
@@ -270,7 +274,7 @@ The video below shows how you will use this list to add your beacons to the appl
 </video>
 </div>
 
-**Pro Tip:** For easier management, you can use the **SenseCraft app** to give all your beacons a consistent **UUID**. This helps ensure the tracker only listens to your devices and ignores others. Check out [Feature 4: Filter by Beacon UUID](https://www.google.com/search?q=%23feature-4-filter-by-beacon-uuid) for more details.
+**Pro Tip:** For easier management, you can use the **SenseCraft app** to give all your beacons a consistent **UUID**. This helps ensure the tracker only listens to your devices and ignores others. Check out [Feature 4: Filter by Beacon UUID](#feature-4-filter-by-beacon-uuid) for more details.
 
 <details>
 <summary>Quick view of the parameters of BC01 beacon</summary>
@@ -373,7 +377,7 @@ In the dashboard, you can enable one or both of the following MQTT sources to co
 
 1. Enable the **SenseCAP OpenStream MQTT** toggle.
 2. Enter your **Username** and **API Key**.
-      - You can generate these credentials by following the [Data OpenStream API Quickstart guide](https://www.google.com/search?q=/sensecraft-data-platform/api/data-openstream-api/data_openstream_api_quickstart/).
+      - You can generate these credentials by following the [Data OpenStream API Quickstart guide](/sensecraft-data-platform/api/data-openstream-api/data_openstream_api_quickstart/).
 
 ##### To Connect to ChirpStack
 
@@ -422,19 +426,20 @@ This is an advanced setting that fine-tunes location accuracy. It helps the syst
 
 The final step is to turn on your tracker and see it on the map.
 
+<div align="center">
+<img class='img-responsive' width="680" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/tracker-visualize-on-map.png" alt="tracker-visualize-on-map"/>
+</div>
+
 1. **Activate the SenseCAP T1000 Tracker** and onboard it to your LoRaWAN Network Server. Ensure your gateway is online and the tracker devices is 'registered' on the LNS server. check [Step 1b](#1b-set-up-the-gateway) for details.
 2. **Ensure it is set to BLE scanning mode** so it can detect the beacons. Check the video below for help.
 3. **Visualize:** As the tracker moves through your facility, it will detect the nearest beacons and report its location. You will see its icon moving across the map on your dashboard.
-
-<div align="center">
-<img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/tracker-visualize-on-map.png" alt="tracker-visualize-on-map"/>
-</div>
 
 <div style={{ textAlign: 'center' }}>
 <video width="480" height="640" controls>
   <source src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/indoor-position-tracker-configuration.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
+<p><em>Opt for `Other Platform`, When using ChirpStack.</em></p>
 <p><em>Retain the default platform settings (SenseCAP for The Things Network), When using SenseCraft Data.</em></p>
 </div>
 
@@ -556,17 +561,51 @@ The system supports two positioning methods:
 1. **Trilateration:** When the tracker detects **three or more** beacons, it calculates a precise (x, y) coordinate. This is the default and most accurate mode.
 2. **Proximity (Area Positioning):** If you enable this and the tracker can only detect **one** beacon, it will report its position as being "near" that beacon within a calculated radius. This is useful for ensuring coverage in all areas.
 
+*Trilateration*
+
+<table align="center">
+<tr>
+    <th>Trilateration</th>
+    <th>Trilateration(SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/Trilateration-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
+
+*Area Positioning*
+
+<table align="center">
+<tr>
+    <th>Area Positioning</th>
+    <th>Area Positioning(SOS)</th>
+</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-normal.png" alt="area-positioning-normal" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/area-positioning-sos.png" alt="area-positioning-sos" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
+</table>
+
 ### Feature 3: Viewing Alert History
 
 You can view the alert history (e.g., SOS button presses) for any tracker by clicking on its icon on the map. The system logs each new alert and will continue to push notifications for an active alert until it is resolved.
+
+<div align="center">
+<img class='img-responsive' width="680" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/alert-history-records.png" alt="alert-history-records"/>
+</div>
 
 ### Feature 4: Filter by Beacon UUID
 
 You can filter the displayed trackers on the map by their associated beacon UUIDs. This allows for more focused monitoring of specific areas or assets. it is valued not to be hacked.
 
+<div align="center">
+<img class='img-responsive' width="360" src="https://files.seeedstudio.com/wiki/solution/smart-building/indoor-positioning-bluetooth-lorawan-tracker/sensecraft-ble-filter.png" alt="sensecraft-ble-filter"/>
+</div>
+
 ## Reference & Resource
 
-- **Landing Page**: [SenseCraft Indoor Positioning Solution](https://sensecraft.seeed.cc/solution/indoor-positioning-solution/)
+- **Landing Page**: [SenseCraft Indoor Positioning Solution](https://cc.seeedstudio.com/solutions/campus-safety-management)
 - **Docker Image**: [seeedcloud/sensecraft-indoor-positioning - Docker Hub](https://hub.docker.com/r/seeedcloud/sensecraft-indoor-positioning)
 - **Live Demo Site**: [IndoorPositioning](https://indoorpositioning-demo.seeed.cc/)
 
@@ -617,7 +656,7 @@ You can filter the displayed trackers on the map by their associated beacon UUID
 
 You can use the **SenseCraft app** to configure the BC01 beacon.
 
-1. Install the SenseCraft app from the [Google Play Store](https://play.google.com/store/apps/details?id=com.seeed.sensecraft) or [Apple App Store](https://apps.apple.com/us/app/sensecraft/id1476154572).
+1. Install the SenseCraft app from the [Google Play Store](https://play.google.com/store/apps/details?id=cc.seeed.sensecapmate) or [Apple App Store](https://apps.apple.com/us/app/sensecraft/id1619944834).
 2. Open the app and enable Bluetooth on your phone.
 3. Scan for nearby beacons and select the one you wish to configure.
 4. Enter the default password "**seeed123**" to access the settings.
