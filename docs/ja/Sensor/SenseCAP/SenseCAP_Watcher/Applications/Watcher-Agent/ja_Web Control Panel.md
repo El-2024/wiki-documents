@@ -1,102 +1,102 @@
 ---
-description: SenseCAP Watcher AgentのWebコントロールパネルの使用ガイド
-title: Webコントロールパネル(β)
+description: SenseCAP Watcher Agent の Web コントロールパネルの使用ガイド
+title: Web コントロールパネル(β)
 sidebar_position: 3
 keywords:
 - SenseCAP
 - Watcher
-- Webコントロールパネル
-- エージェント設定
-- デバイス管理
+- Web Control Panel
+- Agent Configuration
+- Device Management
 image: http://files.seeedstudio.com/wiki/Watcher_Agent/Watcher_Agent.webp
 slug: /ja/watcher_web_control_panel
 last_update:
-  date: 05/15/2025
-  author: Tony
+  date: 2025/09/11
+  author: Twelve
 ---
-:::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
-:::
 
-# Webコントロールパネル ベータ版ガイド
+# Web コントロールパネル ベータ版ガイド
 
 ## 概要
 
-SenseCAP Watcher Webコントロールパネル（ベータ版）は、Watcherデバイスの管理およびエージェント設定の構成を行うためのウェブベースのインターフェースを提供します。このベータ版には、デバイス管理とエージェントカスタマイズのための基本的な機能が含まれています。
+SenseCAP Watcher Web コントロールパネル（ベータ版）は、Watcher デバイスの管理と Agent 設定の構成を行うための Web ベースのインターフェースを提供します。このベータ版には、デバイス管理と Agent カスタマイズのための基本機能が含まれています。
+
+以下の動画は、Web コントロールパネルを使用してデバイスを設定する方法のステップバイステップチュートリアルです。
+<div class="table-center"> <iframe width="560" height="315" src="https://www.youtube.com/embed/6UDVsv953Tw?si=0yD96_pQq1cMjjAG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
 
 ## 現在の機能
 
-ベータ版のWebコントロールパネルには以下の主要な機能が含まれています：
+Web コントロールパネルのベータ版には、以下の主要機能が含まれています：
 
-1. デバイスのバインディング
-2. エージェント設定
-3. LLMモデル選択
+1. デバイスバインディング
+2. Agent 設定
+3. LLM モデル選択
 4. チャット履歴管理
 5. デバイス情報表示
 
-## デバイスのバインディング
+## デバイスバインディング
 
 ### バインディングプロセス
-1. [SenseCraft AI Platform](https://sensecraft.seeed.cc/ai/home)にアクセスします。
-2. コントロールパネルにアクセスするには、ページ右上のWatcher Agentをクリックします。
+1. [SenseCraft AI Platform](https://sensecraft.seeed.cc/ai/home) にアクセスします
+2. コントロールパネルにアクセスするには、ページの右上角にある Watcher Agent をクリックします。
    <div style={{textAlign:'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/Panel/navigate.jpg" style={{width:800, height:'auto'}}/></div>
-3. 「Bind Device」ボタンをクリックします。
+3. 「Bind Device」ボタンをクリックします
    <div style={{textAlign:'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/Panel/page1.jpg" style={{width:300, height:'auto'}}/></div> 
-4. 画面の指示に従い、デバイスに表示される6桁の認証コードを入力します。
+4. 画面の指示に従い、デバイスに表示される6桁の認証コードを入力します
+
+
 
 <div style={{textAlign:'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/activation.jpg" style={{width:300, height:'auto'}}/></div> 
 
-## エージェント設定
+## Agent 設定
 
    <div style={{textAlign:'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/Panel/agent%20conf.jpg" style={{width:300, height:'auto'}}/></div> 
 
 ### ロールテンプレート
-- プリセットテンプレートを提供しています。独自のテンプレートを作成したり、プリセットテンプレートを変更することもできます。
+- プリセットテンプレートを提供しており、独自のテンプレートを作成したり、プリセットテンプレートを変更したりすることもできます。
 
-### アシスタントのニックネーム
-- エージェントの名前をカスタマイズできます。
+### アシスタントニックネーム
+- Agent の名前をカスタマイズします。
 :::note
-この機能はエージェントのウェイクワードを変更するものではありません。
-エージェントのウェイクワードはファームウェアをコンパイルする際にのみ変更可能です。
-デフォルトのウェイクワードは「Jarvis」です。
+この機能は Agent のウェイクワードを変更しません。
+Agent のウェイクワードは、ファームウェアをコンパイルする際にのみ変更できます。
+デフォルトのウェイクアップワードは「Jarvis」です。
 :::
 
+
 ### キャラクターボイス
-- 異なる声を選択できます。
+- 異なる音声を選択します
 
 ### ロール紹介/プロンプト
-1. 定義済みのロールテンプレートから選択
+1. 事前定義されたロールテンプレートから選択
 2. カスタムロールテンプレートを作成
 3. 既存のテンプレートを変更
 :::note
-上記で設定したアシスタントのニックネームは、`{assistant_nickname}`がロール紹介に追加されている場合のみ機能します。
-現在時刻を取得するには、__DATE__を追加する必要があります。
+上記で設定したアシスタントニックネームは、ロール紹介に `assistant nickname` が追加された場合にのみ機能します。
+現在の時刻を取得するには、__DATE__ を追加する必要があります。
 :::
 
-### 履歴の閲覧と管理
+
+### 履歴の表示
 - チャットログにアクセス
-- 個々のメッセージを削除
+- 個別のメッセージを表示
   <div style={{textAlign:'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/Panel/history%20del.jpg" style={{width:600, height:'auto'}}/></div> 
 
 ## デバイス情報
 
    <div style={{textAlign:'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/Panel/device%20list.jpg" style={{width:800, height:'auto'}}/></div> 
 
-コントロールパネルには以下の重要なデバイス情報が表示されます：
+コントロールパネルには、以下の重要なデバイス情報が表示されます：
 
-- デバイスモデル
-- チップモデル
-- ファームウェアバージョン
-- MACアドレス
-- バインディング時間
-- オンラインステータス
-- メモ
-- OTAアップグレードスイッチ
-- バインド解除
+- ボード名
+- MAC アドレス
+- APP バージョン
+- 最終接続時刻
+- 自動アップグレードスイッチ
+- 操作
 
 :::note
-これはWebコントロールパネルのベータ版であり、将来のリリースで機能が更新または変更される可能性があります。最新の機能を確認するために定期的に更新をチェックしてください。
+これは Web コントロールパネルのベータ版であり、機能は将来のリリースで更新または変更される可能性があります。最新の機能については、定期的にアップデートを確認してください。
 :::
 
 ## 技術サポート
