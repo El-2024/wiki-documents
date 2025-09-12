@@ -36,7 +36,6 @@ EtherCAT (Ethernet for Control Automation Technology) is a high-performance, ope
 - Ethernet cable
 - EtherCAT Slave Device
 
-
 ## Real-time Performance Verification
 
 Before implementing EtherCAT communication, it's crucial to verify that your reComputer system meets real-time performance requirements for industrial automation.
@@ -62,9 +61,11 @@ sudo cyclictest -t 6 -p 80
 </div>
 
 Before enable the `jetson_clocks`,you can observe that the latency of some threads is relatively high.So,we need to enable the `jetson_clocks` by fllowing command:
+
 ```bash
 sudo jetson_clocks
 ```
+
 <div align="center">
     <img width={1000}
     src="https://files.seeedstudio.com/wiki/robotics/software/ethercat/cyc2.png" />
@@ -106,7 +107,6 @@ Connect your EtherCAT network using the following setup:
     src="https://files.seeedstudio.com/wiki/robotics/software/ethercat/hc.jpg" />
 </div>
 
-
 ## Installing SOEM Library
 
 **Step 1.** Clone SOEM Repository
@@ -137,6 +137,7 @@ sudo make install
 ## Testing EtherCAT Communication
 
 **Step 1.** Identify Network Interface:
+
 ```bash
 # Check available network interfaces
 ifconfig
@@ -165,9 +166,11 @@ sudo ./slaveinfo enP8p1s0
 :::success
 **Verification Success:**
 If you see "slave found" in the output, it confirms that:
+
 - SOEM software stack is working correctly
 - EtherCAT slave device is properly connected
 - Communication link is established
+
 :::
 
 ## Basic Communication Examples
@@ -178,6 +181,7 @@ Create a simple C program to demonstrate basic EtherCAT communication:
 
 <details>
 <summary> ethercat_communication_test.c </summary>
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -187,7 +191,8 @@ Create a simple C program to demonstrate basic EtherCAT communication:
 #include <sys/time.h>
 
 // EtherCAT includes
-#include "ethercat.h"
+
+# include "ethercat.h"
 
 // Function prototypes
 void print_state_info(const char* state_name, int success);
@@ -200,8 +205,8 @@ void sleep_ms(int milliseconds);
 int main(int argc, char *argv[])
 {
     int ret;
-    char *ifname = "enP8p1s0";  // Network interface name
-    
+    char*ifname = "enP8p1s0";  // Network interface name
+
     printf("EtherCAT Communication Test - C Version\n");
     printf("=======================================\n\n");
     
@@ -301,7 +306,7 @@ void set_control_mode(int mode)
 {
     uint8_t mode_data = (uint8_t)mode;
     int ret;
-    
+
     // Write control mode to object 0x6060
     ret = ec_SDOwrite(1, 0x6060, 0, FALSE, sizeof(mode_data), &mode_data, EC_TIMEOUTRXM);
     
@@ -346,7 +351,7 @@ void read_control_mode(void)
     int ret;
     uint8_t mode_data;
     int wkc;
-    
+
     ret = ec_SDOread(1, 0x6060, 0, FALSE, &wkc, &mode_data, sizeof(mode_data), EC_TIMEOUTRXM);
     
     if (ret > 0) {
@@ -361,7 +366,7 @@ void set_servo_parameters(void)
     int ret;
     uint32_t param_value;
     int wkc;
-    
+
     // Set maximum position range (0x607F)
     param_value = 1000000;
     ret = ec_SDOwrite(1, 0x607F, 0, FALSE, sizeof(param_value), &param_value, EC_TIMEOUTRXM);
@@ -416,7 +421,7 @@ void configure_pdo_mapping(void)
     uint8_t mapping_count;
     uint32_t mapping_data;
     int wkc;
-    
+
     // Configure receive PDO mapping (1600h) - Master to slave
     printf("Configuring receive PDO mapping (1600h)...\n");
     
@@ -476,6 +481,7 @@ void sleep_ms(int milliseconds)
 }
 
 ```
+
 </details>
 
 Create a Makefile file to compile this program:
@@ -485,6 +491,7 @@ Replace `SOEM_PATH` to your own installation path!
 
 <details>
 <summary> Makefile </summary>
+
 ```Makefile
 # Makefile for EtherCAT Communication Test with Local SOEM Library
 
@@ -521,91 +528,93 @@ full: $(TARGET_FULL)
 
 # Build the simple executable
 $(TARGET_SIMPLE): $(OBJECTS_SIMPLE)
-	$(CC) $(OBJECTS_SIMPLE) -o $(TARGET_SIMPLE) $(LIBS) $(LDFLAGS)
-	@echo "✅ Simple version build completed successfully!"
-	@echo "Run with: sudo ./$(TARGET_SIMPLE)"
+ $(CC) $(OBJECTS_SIMPLE) -o $(TARGET_SIMPLE) $(LIBS) $(LDFLAGS)
+ @echo "✅ Simple version build completed successfully!"
+ @echo "Run with: sudo ./$(TARGET_SIMPLE)"
 
 # Build the full executable
 $(TARGET_FULL): $(OBJECTS_FULL)
-	$(CC) $(OBJECTS_FULL) -o $(TARGET_FULL) $(LIBS) $(LDFLAGS)
-	@echo "✅ Full version build completed successfully!"
-	@echo "Run with: sudo ./$(TARGET_FULL)"
+ $(CC) $(OBJECTS_FULL) -o $(TARGET_FULL) $(LIBS) $(LDFLAGS)
+ @echo "✅ Full version build completed successfully!"
+ @echo "Run with: sudo ./$(TARGET_FULL)"
 
 # Compile source files
 %.o: %.c
-	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+ $(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 # Clean build files
 clean:
-	rm -f $(OBJECTS_FULL) $(OBJECTS_SIMPLE) $(TARGET_FULL) $(TARGET_SIMPLE)
-	@echo "🧹 Cleaned build files"
+ rm -f $(OBJECTS_FULL) $(OBJECTS_SIMPLE) $(TARGET_FULL) $(TARGET_SIMPLE)
+ @echo "🧹 Cleaned build files"
 
 # Check local SOEM installation
 check-soem:
-	@echo "Checking local SOEM installation..."
-	@if [ -f "$(SOEM_PATH)/build/install/include/soem/soem.h" ]; then \
-		echo "✅ SOEM headers found at $(SOEM_PATH)/build/install/include/soem/soem.h"; \
-	else \
-		echo "❌ SOEM headers not found"; \
-	fi
-	@if [ -f "$(SOEM_PATH)/build/libsoem.a" ]; then \
-		echo "✅ SOEM library found at $(SOEM_PATH)/build/libsoem.a"; \
-	else \
-		echo "❌ SOEM library not found"; \
-	fi
+ @echo "Checking local SOEM installation..."
+ @if [ -f "$(SOEM_PATH)/build/install/include/soem/soem.h" ]; then \
+  echo "✅ SOEM headers found at $(SOEM_PATH)/build/install/include/soem/soem.h"; \
+ else \
+  echo "❌ SOEM headers not found"; \
+ fi
+ @if [ -f "$(SOEM_PATH)/build/libsoem.a" ]; then \
+  echo "✅ SOEM library found at $(SOEM_PATH)/build/libsoem.a"; \
+ else \
+  echo "❌ SOEM library not found"; \
+ fi
 
 # Test compilation
 test-compile: check-soem
-	@echo "Testing compilation..."
-	@make clean
-	@make simple
-	@echo "✅ Compilation test successful!"
+ @echo "Testing compilation..."
+ @make clean
+ @make simple
+ @echo "✅ Compilation test successful!"
 
 # Manual compilation commands for reference
 manual-compile:
-	@echo "Manual compilation commands:"
-	@echo "Simple version:"
-	@echo "  gcc -Wall -Wextra -std=c99 -O2 \\"
-	@echo "      -I$(SOEM_PATH)/build/install/include \\"
-	@echo "      ethercat_simple_test.c \\"
-	@echo "      -o ethercat_simple_test \\"
-	@echo "      -L$(SOEM_PATH)/build -lsoem -lrt -lpthread"
-	@echo ""
-	@echo "Full version:"
-	@echo "  gcc -Wall -Wextra -std=c99 -O2 \\"
-	@echo "      -I$(SOEM_PATH)/build/install/include \\"
-	@echo "      ethercat_communication_test.c \\"
-	@echo "      -o ethercat_communication_test \\"
-	@echo "      -L$(SOEM_PATH)/build -lsoem -lrt -lpthread"
+ @echo "Manual compilation commands:"
+ @echo "Simple version:"
+ @echo "  gcc -Wall -Wextra -std=c99 -O2 \\"
+ @echo "      -I$(SOEM_PATH)/build/install/include \\"
+ @echo "      ethercat_simple_test.c \\"
+ @echo "      -o ethercat_simple_test \\"
+ @echo "      -L$(SOEM_PATH)/build -lsoem -lrt -lpthread"
+ @echo ""
+ @echo "Full version:"
+ @echo "  gcc -Wall -Wextra -std=c99 -O2 \\"
+ @echo "      -I$(SOEM_PATH)/build/install/include \\"
+ @echo "      ethercat_communication_test.c \\"
+ @echo "      -o ethercat_communication_test \\"
+ @echo "      -L$(SOEM_PATH)/build -lsoem -lrt -lpthread"
 
 # Help target
 help:
-	@echo "Available targets:"
-	@echo "  all           - Build the simple version (default)"
-	@echo "  simple        - Build the simple version"
-	@echo "  full          - Build the full version"
-	@echo "  clean         - Remove build files"
-	@echo "  check-soem    - Check local SOEM installation"
-	@echo "  test-compile  - Test compilation"
-	@echo "  manual-compile - Show manual compilation commands"
-	@echo "  help          - Show this help message"
-	@echo ""
-	@echo "Quick start:"
-	@echo "  make          # Build the program"
-	@echo "  sudo ./ethercat_simple_test  # Run the program"
-	@echo ""
-	@echo "SOEM library location: $(SOEM_PATH)"
+ @echo "Available targets:"
+ @echo "  all           - Build the simple version (default)"
+ @echo "  simple        - Build the simple version"
+ @echo "  full          - Build the full version"
+ @echo "  clean         - Remove build files"
+ @echo "  check-soem    - Check local SOEM installation"
+ @echo "  test-compile  - Test compilation"
+ @echo "  manual-compile - Show manual compilation commands"
+ @echo "  help          - Show this help message"
+ @echo ""
+ @echo "Quick start:"
+ @echo "  make          # Build the program"
+ @echo "  sudo ./ethercat_simple_test  # Run the program"
+ @echo ""
+ @echo "SOEM library location: $(SOEM_PATH)"
 
 ```
 
 </details>
 
 Compile and run the program:
+
 ```bash
 make gcc -Wall -Wextra -std=c99 -O2 -I/home/seeed/ethercat/SOEM/build/install/include -c ethercat_simple_test.c -o ethercat_simple_test.o
 
 sudo ./ethercat_simple_test
 ```
+
 <div align="center">
     <img width={1000}
     src="https://files.seeedstudio.com/wiki/robotics/software/ethercat/conmunicate.png" />
@@ -626,62 +635,74 @@ For Python-based applications, you can use the pysoem library:
 
 <details>
 <summary> conmunicate_test.py </summary>
-```python
-import pysoem          
-import time           
-import struct         
 
+```python
+import pysoem
+import time
+import struct
 
 # Initialize EtherCAT communication
+
 # Network interface name
+
 interface_name = "enP8p1s0"
 
 # Create EtherCAT master object
+
 master = pysoem.Master()
 
 # Open EtherCAT master connection
+
 master.open(interface_name)
 
 # Initialize slaves
+
 master.config_init()
 
 slaver = master.slaves[0]
 
 print(f"Found slave: {slaver.name}, state: {slaver.state}")
 
-print("📡 Entering PRE-OP state (SDO communication allowed)...") 
+print("📡 Entering PRE-OP state (SDO communication allowed)...")
+
 # Set master state to PREOP_STATE
+
 master.state = pysoem.PREOP_STATE
+
 # Write state to EtherCAT network
+
 master.write_state()
 
 # Check if entered successfully
+
 if master.state == pysoem.PREOP_STATE:
     print("📡 Successfully entered PRE-OP state")
 else:
     print("📡 Failed to enter PRE-OP state")
 
-
 # Enter SAFE-OP state (safe PDO communication allowed)
+
 master.state = pysoem.SAFEOP_STATE
 master.write_state()
 
 # Check if entered successfully
+
 if master.state == pysoem.SAFEOP_STATE:
     print("📡 Successfully entered SAFE-OP state")
 else:
     print("📡 Failed to enter SAFE-OP state")
 
 # Enter OP state (full PDO communication allowed)
+
 master.state = pysoem.OP_STATE
 master.write_state()
 
 # Check if entered successfully
+
 if master.state == pysoem.OP_STATE:
     print("📡 Master successfully entered OP state")
 else:
     print("📡 Failed to enter OP state")
-
 
 # Switch between different control modes
 
@@ -689,7 +710,6 @@ slaver.sdo_write(0x6060, 0, struct.pack('<B', 1))  # Set mode to position contro
 print("✅ Successfully set position control mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
-
 
 slaver.sdo_write(0x6060, 0, struct.pack('<B', 3))  # Set mode to velocity control
 print("✅ Successfully set velocity control mode")
@@ -701,48 +721,45 @@ print("✅ Successfully set torque control mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
 
-
 slaver.sdo_write(0x6060, 0, struct.pack('<B', 6))  # Set mode to homing
 print("✅ Successfully set homing mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
-
 
 slaver.sdo_write(0x6060, 0, struct.pack('<B', 7))  # Set mode to interpolated position mode
 print("✅ Successfully set interpolated position mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
 
-
 slaver.sdo_write(0x6060, 0, struct.pack('<B', 8))  # Set mode to cyclic synchronous position mode
 print("✅ Successfully set cyclic synchronous position mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
-
 
 slaver.sdo_write(0x6060, 0, struct.pack('<B', 0))  # Set mode to no mode
 print("✅ Successfully set no mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
 
-
 # Set necessary parameters for control configuration
+
 slaver.sdo_write(0x607F, 0, struct.pack('<I', 1000000))  # Maximum position range
-print(f"Position range: {slaver.sdo_read(0x607F, 0)[0]}")
+print(f"Position range: {slaver.sdo_read[0x607F, 0](0)}")
 slaver.sdo_write(0x6081, 0, struct.pack('<I', 1000000))  # Maximum velocity
-print(f"Maximum velocity: {slaver.sdo_read(0x6081, 0)[0]}")
+print(f"Maximum velocity: {slaver.sdo_read[0x6081, 0](0)}")
 slaver.sdo_write(0x6083, 0, struct.pack('<I', 1000))     # Maximum acceleration
-print(f"Maximum acceleration: {slaver.sdo_read(0x6083, 0)[0]}")
+print(f"Maximum acceleration: {slaver.sdo_read[0x6083, 0](0)}")
 print("✅ Successfully set servo parameters")
 
-
 # Configure receive PDO mapping (1600h) - Master to slave
+
 slaver.sdo_write(0x1600, 0, struct.pack('<B', 0))  # Clear existing mapping
 slaver.sdo_write(0x1600, 1, struct.pack('<I', 0x60400010))  # Control word (6040h, 16-bit)
 slaver.sdo_write(0x1600, 2, struct.pack('<I', 0x607A0020))  # Target position (607Ah, 32-bit)
 slaver.sdo_write(0x1600, 0, struct.pack('<B', 2))  # Set mapping count
 
 # Configure transmit PDO mapping (1A00h) - Slave to master
+
 slaver.sdo_write(0x1A00, 0, struct.pack('<B', 0))  # Clear existing mapping
 slaver.sdo_write(0x1A00, 1, struct.pack('<I', 0x60410010))  # Status word (6041h, 16-bit)
 slaver.sdo_write(0x1A00, 2, struct.pack('<I', 0x60640020))  # Actual position (6064h, 32-bit)
@@ -752,7 +769,9 @@ print("✅ PDO mapping configuration completed")
 print(f"Slave state: {slaver.state}")
 
 print("EtherCAT communication test completed")
+
 ```
+
 </details>
 
 <div align="center">
@@ -760,9 +779,9 @@ print("EtherCAT communication test completed")
     src="https://files.seeedstudio.com/wiki/robotics/software/ethercat/python.png" />
 </div>
 
-
 :::info
 Before running the Python script, you need to install the pysoem library:
+
 ```bash
 pip3 install pysoem
 

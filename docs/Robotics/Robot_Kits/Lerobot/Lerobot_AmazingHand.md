@@ -28,10 +28,10 @@ Its design is inspired by the "ILDA hand" research project but simplified to low
 
 :::tip[What You'll Learn]
 
-  * The key features and architecture of the AmazingHand.
-  * Where to find all the resources to build your own hand (BOM, CAD, Guides).
-  * How to set up control using either Python or Arduino.
-  * How to run basic demos and where to find more advanced examples.
+- The key features and architecture of the AmazingHand.
+- Where to find all the resources to build your own hand (BOM, CAD, Guides).
+- How to set up control using either Python or Arduino.
+- How to run basic demos and where to find more advanced examples.
 
 :::
 
@@ -63,30 +63,28 @@ Each finger is actuated by two motors in parallel. This clever design allows for
 
 Everything you need to build your own AmazingHand is available on the project's GitHub repository.
 
-  * **Bill of Materials (BOM):** A complete list of all required electronic and hardware components can be found here:
+- **Bill of Materials (BOM):** A complete list of all required electronic and hardware components can be found here:
 
-      * [**AmazingHand BOM**](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342)
+  - [**AmazingHand BOM**](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342)
 
-  * **CAD Files and 3D Printing:** All STL and STEP files are provided. Note that while the finger design is universal, some palm components are specific for right or left hands.
+- **CAD Files and 3D Printing:** All STL and STEP files are provided. Note that while the finger design is universal, some palm components are specific for right or left hands.
 
-      * **CAD Files:** [**Link to CAD Folder**](https://github.com/pollen-robotics/AmazingHand/tree/main/cad)
-      * **3D Printing Guide:** [**Instructions for Printing Parts**](https://raw.githubusercontent.com/pollen-robotics/AmazingHand/main/docs/AmazingHand_3DprintingTips.pdf)
+  - **CAD Files:** [**Link to CAD Folder**](https://github.com/pollen-robotics/AmazingHand/tree/main/cad)
+  - **3D Printing Guide:** [**Instructions for Printing Parts**](https://raw.githubusercontent.com/pollen-robotics/AmazingHand/main/docs/AmazingHand_3DprintingTips.pdf)
 
-  * **Assembly Guide:** A detailed, step-by-step guide to assemble the hand.
+- **Assembly Guide:** A detailed, step-by-step guide to assemble the hand.
 
-      * [**Assembly Guide PDF**](https://raw.githubusercontent.com/pollen-robotics/AmazingHand/main/docs/AmazingHand_Assembly.pdf)
-
+  - [**Assembly Guide PDF**](https://raw.githubusercontent.com/pollen-robotics/AmazingHand/main/docs/AmazingHand_Assembly.pdf)
 
 ## Control Methods
 
 You have two primary options for controlling the hand's servos over the serial bus.
 
-1.  **MPU:** Use a Python script on a host computer (like a Raspberry Pi or PC) connected via a serial bus driver (e.g., [Bus Servo Driver Board ](https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html) ). This is great for integration with larger robotics frameworks like ROS.
+1. **MPU:** Use a Python script on a host computer (like a Raspberry Pi or PC) connected via a serial bus driver (e.g., [Bus Servo Driver Board](https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html) ). This is great for integration with larger robotics frameworks like ROS.
 
-2.  **MCU:** Use an microcontroller like Arduino with a  [Bus Servo Driver Board ](https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html). This is ideal for standalone projects or when a dedicated microcontroller is preferred for handling real-time control.
+2. **MCU:** Use an microcontroller like Arduino with a  [Bus Servo Driver Board](https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html). This is ideal for standalone projects or when a dedicated microcontroller is preferred for handling real-time control.
 
 Calibration scripts are provided for both methods to help you set up the fingers correctly during assembly.
-
 
 ## Running the Demos
 
@@ -95,7 +93,6 @@ Once assembled, you can test your AmazingHand with the provided demo programs.
 :::caution[External Power Required]
 The eight servos in the hand require a stable power source. A simple 5V / 2A DC adapter with a jack connector is sufficient. **Do not try to power the servos directly from your computer's USB port.**
 :::
-
 
 ### Basic Demos
 
@@ -114,10 +111,10 @@ The eight servos in the hand require a stable power source. A simple 5V / 2A DC 
 
 The `PythonExample` directory contains several useful scripts for testing and control. Navigate into this directory (`cd PythonExample`) to run them.
 
-  * **`AmazingHand_Demo.py`**: This is the main demo. It cycles the hand through several pre-programmed gestures. It's the perfect first test to ensure everything is working correctly.
-  * **`AmazingHand_Demo_Both.py`**: A specific demo for controlling both a right and a left hand connected to the same serial bus.
-  * **`AmazingHand_FingerTest.py`**: A script to test the movement of a single finger, which is very useful for debugging during assembly.
-  * **`AmazingHand_Hand_FingerMiddlePos.py`**: A utility script used for calibration to set fingers to their neutral, middle position.
+- **`AmazingHand_Demo.py`**: This is the main demo. It cycles the hand through several pre-programmed gestures. It's the perfect first test to ensure everything is working correctly.
+- **`AmazingHand_Demo_Both.py`**: A specific demo for controlling both a right and a left hand connected to the same serial bus.
+- **`AmazingHand_FingerTest.py`**: A script to test the movement of a single finger, which is very useful for debugging during assembly.
+- **`AmazingHand_Hand_FingerMiddlePos.py`**: A utility script used for calibration to set fingers to their neutral, middle position.
 
 To run the main demo, execute the following command from within the `PythonExample` folder:
 
@@ -129,8 +126,8 @@ python3 AmazingHand_Demo.py
 
 For standalone control, the `ArduinoExample` directory contains sketches you can upload directly to your microcontroller.
 
-  * **`Amazing_Hand_Demo.ino`**: The main demo sketch that cycles the hand through the same gestures as the Python version.
-  * **`Amazing_Hand-Finger_Test.ino`**: A simple sketch to test a single finger, useful for calibration and debugging hardware connections.
+- **`Amazing_Hand_Demo.ino`**: The main demo sketch that cycles the hand through the same gestures as the Python version.
+- **`Amazing_Hand-Finger_Test.ino`**: A simple sketch to test a single finger, useful for calibration and debugging hardware connections.
 
 To use these, open the `.ino` file in the Arduino IDE, ensure you have the required `SCServo` library installed, then compile and upload it to your Arduino board.
 
@@ -151,12 +148,12 @@ The core of this demo is to create a data glove that translates your finger move
   borderRadius: '8px',
   overflow: 'hidden'
 }}>
-  <iframe 
-    src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7359424679310233601?compact=1" 
-    height="399" 
-    width="504" 
-    frameborder="0" 
-    allowfullscreen="" 
+  <iframe
+    src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7359424679310233601?compact=1"
+    height="399"
+    width="504"
+    frameborder="0"
+    allowfullscreen=""
     title="Embedded post"
     style={{
       display: 'block',
@@ -168,15 +165,15 @@ The core of this demo is to create a data glove that translates your finger move
 
 The workflow is as follows:
 
-1.  **Sensing Finger Bending**: We attach strain gauges to a glove or fingers. When you bend your fingers, the strain gauges bend with them, causing a measurable change in their electrical resistance.
+1. **Sensing Finger Bending**: We attach strain gauges to a glove or fingers. When you bend your fingers, the strain gauges bend with them, causing a measurable change in their electrical resistance.
 
-2.  **Data Acquisition**: A **Seeed Studio XIAO ESP32-S3** microcontroller is used to read these resistance changes. Each strain gauge circuit is connected to one of the ESP32's **Analog-to-Digital Converter (ADC)** pins, which converts the analog resistance signal into a digital number (typically from 0 to 4095).
+2. **Data Acquisition**: A **Seeed Studio XIAO ESP32-S3** microcontroller is used to read these resistance changes. Each strain gauge circuit is connected to one of the ESP32's **Analog-to-Digital Converter (ADC)** pins, which converts the analog resistance signal into a digital number (typically from 0 to 4095).
 
-3.  **Serial Communication**: The ESP32 continuously sends these digital ADC readings over a USB serial port to a host computer.
+3. **Serial Communication**: The ESP32 continuously sends these digital ADC readings over a USB serial port to a host computer.
 
-4.  **Processing and Mapping**: A Python script running on the host computer listens to the serial port, receiving the raw ADC values. It then maps these values from the ADC's range (0-4095) to the AmazingHand's desired servo angle range.
+4. **Processing and Mapping**: A Python script running on the host computer listens to the serial port, receiving the raw ADC values. It then maps these values from the ADC's range (0-4095) to the AmazingHand's desired servo angle range.
 
-5.  **Hand Control**: Finally, the script sends the calculated target angles to the AmazingHand's controller, causing the robotic fingers to mirror the movements of your own fingers in real-time.
+5. **Hand Control**: Finally, the script sends the calculated target angles to the AmazingHand's controller, causing the robotic fingers to mirror the movements of your own fingers in real-time.
 
 This creates a complete closed-loop system where your physical hand gestures directly command the robotic hand.
 
@@ -257,7 +254,7 @@ void loop() {
 
 2. Python Control Server
 
-```python3 title="control.py"
+```python title="control.py"
 import time
 import numpy as np
 import serial  # <--- Added import for serial library
@@ -429,8 +426,8 @@ To get this demo running, you will need two files: `index.html` for the browser 
 
 First, create the two required files in the same directory. Copy the HTML code into a file named `index.html`, and copy the Python code into a file named `backend.py`.
 
-  * **`index.html`**: This file creates the simple web page that requests access to your webcam and streams the video to the backend.
-  * **`backend.py`**: This script launches a local WebSocket server. It receives the video stream, uses the MediaPipe library to detect hand landmarks in each frame, and then translates those landmark positions into motor commands for the AmazingHand.
+- **`index.html`**: This file creates the simple web page that requests access to your webcam and streams the video to the backend.
+- **`backend.py`**: This script launches a local WebSocket server. It receives the video stream, uses the MediaPipe library to detect hand landmarks in each frame, and then translates those landmark positions into motor commands for the AmazingHand.
 
 **Step 2: Run the Backend Server**
 
@@ -449,7 +446,8 @@ Finally, navigate to the same directory in your file explorer and double-click t
 Once the page loads, you will see your camera feed. The Python script will begin processing the video, and you can control the AmazingHand by moving your hand in front of the camera.
 
 <Details>
-```python3 title="backend.py"
+
+```python title="backend.py"
 import asyncio
 import websockets
 import serial
@@ -459,7 +457,9 @@ import numpy as np
 from rustypot import Scs0009PyController
 
 # --- 1. Configuration ---
+
 # Dexterous hand finger configuration (Pinky finger is not controlled)
+
 FINGERS = [
     {'name': 'Index',  'm1_id': 1, 'm2_id': 2},
     {'name': 'Middle', 'm1_id': 3, 'm2_id': 4},
@@ -468,21 +468,29 @@ FINGERS = [
 ]
 
 # Servo motion range definition
+
 CLOSE_ANGLE_OFFSET = 90
 OPEN_ANGLE_OFFSET = -30
 
 # Gesture recognition angle input range (set based on actual values observed from the front-end)
-# Approximately 10-20 degrees when extended, 140-160 degrees when flexed.
-# We are setting a relatively tolerant range.
+
+# Approximately 10-20 degrees when extended, 140-160 degrees when flexed
+
+# We are setting a relatively tolerant range
+
 GESTURE_ANGLE_MIN = 20  # Corresponds to OPEN_ANGLE_OFFSET
 GESTURE_ANGLE_MAX = 160 # Corresponds to CLOSE_ANGLE_OFFSET
 
-# !!! NOTE: Please ensure the serial port for the hand controller is correct !!!
-# On Windows, it might be "COM3", "COM4", etc.
-# On Linux/Mac, it might be "/dev/ttyACM0", etc.
+# !!! NOTE: Please ensure the serial port for the hand controller is correct
+
+# On Windows, it might be "COM3", "COM4", etc
+
+# On Linux/Mac, it might be "/dev/ttyACM0", etc
+
 SERVO_CONTROLLER_PORT = "/dev/ttyACM0"
 
 # --- 2. Initialize Controller ---
+
 try:
     c = Scs0009PyController(
         serial_port=SERVO_CONTROLLER_PORT,
@@ -530,7 +538,7 @@ async def handler(websocket, controller):
             try:
                 # 1. Parse the JSON data received from the front-end
                 data = json.loads(message)
-                
+
                 # 2. Calculate the target angle offset for each finger
                 thumb_offset = map_value(data.get('thumb', 0), GESTURE_ANGLE_MIN, GESTURE_ANGLE_MAX, OPEN_ANGLE_OFFSET, CLOSE_ANGLE_OFFSET)
                 index_offset = map_value(data.get('index', 0), GESTURE_ANGLE_MIN, GESTURE_ANGLE_MAX, OPEN_ANGLE_OFFSET, CLOSE_ANGLE_OFFSET)
@@ -571,7 +579,7 @@ async def main():
     """Main function: Initializes servos and starts the WebSocket server."""
     # 'c' is the controller instance initialized in the global scope
     all_servo_ids = setup_servos(c, FINGERS)
-    
+
     # Use a lambda function to pass the controller instance 'c' to the handler
     handler_with_controller = lambda ws, path: handler(ws, c)
     
@@ -591,9 +599,11 @@ async def main():
             c.sync_write_torque_enable(all_servo_ids, disable_values)
         print("Torque disabled. Program terminated.")
 
-if __name__ == '__main__':
+if **name** == '**main**':
     asyncio.run(main())
+
 ```
+
 </Details>
 
 <Details>
@@ -945,11 +955,11 @@ if __name__ == '__main__':
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
