@@ -220,7 +220,7 @@ The 3D printed parts and table clamps are not included in the product. However, 
   thread.join()
   ```
 
-  </details>
+</details>
 
 **`lerobot_publisher.py` implements continuously sending action commands to the servos.**
 

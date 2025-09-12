@@ -15,61 +15,68 @@ last_update:
 
 # Getting started with StarAI Robot Arm with LeRobot
 
-:::tip
- [LeRobot](https://github.com/huggingface/lerobot/tree/main) is committed to providing models, datasets and tools for real-world robotics in PyTorch. Its aim is to reduce the entry barrier of robotics, enabling everyone to contribute and benefit from sharing datasets and pretrained models. LeRobot integrates cutting-edge methodologies validated for real-world application, centering on imitation learning. It has furnished a suite of pre-trained models, datasets featuring human-gathered demonstrations, and simulation environments, enabling users to commence without the necessity of robot assembly. In the forthcoming weeks, the intention is to augment support for real-world robotics on the most cost-effective and competent robots presently accessible.
-:::
+<div class="video-container">
+<iframe width="900" height="600" src="https://www.youtube.com/embed/IJKTeBYAG7k?si=iS-jqT27fDjeI6yX" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+| **Follower Viola** | **Leader Violin** | **Follower Cello** |
+|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/viola.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/violin.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/cello.png) |
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+<a class="get_one_now_item" href="https://www.seeedstudio.com/Fashionstar-Star-Arm-Viola-Violin-p-6497.html" target="_blank" rel="noopener noreferrer">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now!!! 🖱️</font></span></strong>
+</a></div>
 
 ## Product Introduction
 
-1.  **Open-Source & Easy for Secondary Development**
-    This series of servo motors, provided by [Fashion Robotics](https://fashionrobo.com/), offers an open-source, easily customizable 6+1 degrees of freedom robotic arm solution.
+1. **Open-Source & Easy for Secondary Development**
+    This series of servo motors, provided by [Fashion Star Robotics](https://fashionrobo.com/), offers an open-source, easily customizable 6+1 degrees of freedom robotic arm solution.
 
-2.  **LeRobot Platform Integration Support**
+2. **Dual-Arm Systems with Various Payloads**
+    The Violin serves as the leader robotic arm. When at 70% of its arm span, the follower arm Viola has an operating payload of 300g, while the follower arm Cello has an operating payload of 750g.
+
+3. **Supported ROS2, Moveit2 and Isaac Sim**
+    It supports ROS2 for publishing and subscribing to robotic arm data topics and controlling the robotic arm, and also supports MoveIt2 for inverse kinematics calculation, as well as simulation in Isaac Sim.
+
+4. **LeRobot Platform Integration Support**
     It's specifically designed for integration with the [LeRobot platform](https://github.com/huggingface/lerobot). This platform provides PyTorch models, datasets, and tools for imitation learning in real-world robotics tasks, including data collection, simulation, training, and deployment.
 
-3.  **Abundant Learning Resources**
+5. **Open-Source SDK**
+     Supports Python and C++ SDK Development
+
+6. **Button Hover**
+    Simulates gravity compensation, allowing the robotic arm to hover at any position via a button.
+
+7. **Modular End Effector**
+    Enables quick DIY replacement.
+
+8. **Abundant Learning Resources**
     We offer comprehensive open-source learning resources, including environment setup, installation and debugging guides, and custom grasping task examples to help users quickly get started and develop robotic applications.
 
-4.  **Nvidia Platform Compatibility**
-    Deployment is supported via the reComputer Mini J4012 Orin NX 16GB platform.
-
-<div class="video-container">
-<iframe width="900" height="600" src="https://www.youtube.com/embed/pAKqP_vReNY?si=AaZQ_DBQyY2p0YMf" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-## Key Features
-
-- Ready to Go -- No Assembly Required. Just Unbox and Dive into the World of AI.
-- 6+1 Degrees of Freedom and a 470mm Reach -- Built for Versatility and Precision.
-- Powered by Dual Brushless Bus Servos -- Smooth, Silent, and Strong with up to 300g Payload.
-- Parallel Gripper with 66mm Maximum Opening -- Modular Fingertips for Quick-Replace Flexibility.
-- Exclusive Hover Lock Technology -- Instantly Freeze Leader Arm at Any Position with a Single Press.
+9. **Nvidia Platform Compatibility**
+    Deployment is supported via the Nvidia Jetson platform.
 
 ## Specifications
 
-  <div align="center">
-      <img width={800}
-      src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Specifications.png" />
-  </div>
-
-| Item                 | Follower Arm \| Viola                             | Leder Arm \|Violin                                |
-| -------------------- | ------------------------------------------------- | ------------------------------------------------- |
-| Degrees of Freedom   | 6                                                 | 6+1                                               |
-| Reach                | 470mm                                             | 470mm                                             |
-| Span                 | 940mm                                             | 940mm                                             |
-| Repeatability        | 2mm                                               | -                                                 |
-| Working Payload      | 300g (with 70% Reach)                            | -                                                 |
-| Servos               | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 |
-| Parallel Gripper Ki  | ✅                                                 | -                                                 |
-| Wrist Rotate         | Yes                                               | Yes                                               |
-| Hold at any Position | Yes                                               | Yes (with handle button)                          |
-| Wrist Camera Mount   | ✅                                                 | -                                                 |
-| Works with LeRobot   | ✅                                                 | ✅                                                 |
-| Works with ROS 2     | ✅                                                 | /                                                 |
-| Works with MoveIt    | ✅                                                 | /                                                 |
-| Works with Gazebo    | ✅                                                 | /                                                 |
-| Communication Hub    | UC-01                                             | UC-01                                             |
-| Power Supply         | 12v/120w                                          | 12v/120w                                          |
+| Item                 | Follower Arm \| Viola                             | Leder Arm \|Violin                                |    Follower Arm \|Cello    |
+| -------------------- | ------------------------------------------------- | ------------------------------------------------- |-----------------|
+| Degrees of Freedom   | 6+1                                               | 6+1                                               | 6+1             |
+| Reach                | 470mm                                             | 470mm                                             | 670mm |
+| Span                 | 940mm                                             | 940mm                                             | 1340mm |
+| Repeatability        | 2mm                                               | -                                                 | 1mm  |
+| Working Payload      | 300g (with 70% Reach)                            | -                                                 |  750g (with 70% Reach)   |
+| Servos               | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 |RX18-U100H-M x3<br/> RX8-U50H-M x3<br/> RX8-U51H-M x1|
+| Parallel Gripper Ki  | ✅                                                 | -                                                 | ✅   |
+| Wrist Rotate         | Yes                                               | Yes                                               | Yes |
+| Hold at any Position | Yes                                               | Yes (with handle button)                          |  Yes|
+| Wrist Camera Mount   |Provides reference 3D printing files | | Provides reference 3D printing files
+| Works with LeRobot   | ✅                                                 | ✅                                                 | ✅|
+| Works with ROS 2     | ✅                                                 | ✅                                                | ✅|
+| Works with MoveIt2    | ✅                                                 | ✅                                               |✅ |
+| Works with Gazebo    | ✅                                                 |✅                                              |✅ |
+| Communication Hub    | UC-01                                             | UC-01                                             | UC-01 |
+| Power Supply         | 12V10A/120w XT30                                   | 12V10A/120w XT30                                 |12V25A/300w XT60  |
 
 For more information about servo motors, please visit the following link.
 
@@ -79,16 +86,17 @@ For more information about servo motors, please visit the following link.
 
 [RX8-U50H-M](https://fashionrobo.com/actuator-u50/136/)
 
-
 ## Initial environment setup
 
 **For Ubuntu x86:**
+
 - Ubuntu 22.04  
 - CUDA 12+  
 - Python 3.10  
 - Torch 2.6  
 
 **For Jetson Orin:**
+
 - Jetson JetPack 6.0+  
 - Python 3.10  
 - Torch 2.6  
@@ -98,6 +106,7 @@ For more information about servo motors, please visit the following link.
 ### Install LeRobot
 
 Environments such as pytorch and torchvision need to be installed based on your CUDA.
+
 1. Install Miniconda:
 For Jetson:
 
@@ -109,6 +118,7 @@ source ~/.bashrc
 ```
 
 Or, For X86 Ubuntu 22.04:
+
 ```bash
 mkdir -p ~/miniconda3
 cd miniconda3
@@ -139,10 +149,13 @@ conda install ffmpeg -c conda-forge
 
 :::tip
 This usually installs ffmpeg 7.X for your platform compiled with the libsvtav1 encoder. If libsvtav1 is not supported (check supported encoders with ffmpeg -encoders), you can:
+
 - [On any platform] Explicitly install ffmpeg 7.X using:
+
 ```bash
 conda install ffmpeg=7.1.1 -c conda-forge
 ```
+
 - [On Linux only] Install ffmpeg build dependencies and compile ffmpeg from source with libsvtav1, and make sure you use the corresponding ffmpeg binary to your install with which ffmpeg.
 
 :::
@@ -152,7 +165,6 @@ conda install ffmpeg=7.1.1 -c conda-forge
 ```bash
 cd ~/lerobot-starai && pip install -e ".[feetech]"
 ```
-
 
 For Jetson Jetpack devices (please make sure to install [Pytorch-gpu and Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) from step 5 before executing this step):
 
@@ -164,7 +176,6 @@ conda install -y -c conda-forge ffmpeg
 conda uninstall numpy
 pip3 install numpy==1.26.0  # This should match torchvision
 ```
-
 
 6. Check Pytorch and Torchvision
 
@@ -179,10 +190,7 @@ If the printed result is False, you need to reinstall Pytorch and Torchvision ac
 
 If you are using a Jetson device, install Pytorch and Torchvision according to [this tutorial](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson).
 
-
-
-
-### Unboxing the Robotic Arm 
+### Unboxing the Robotic Arm
 
 Robotic Arm Kit Includes
 
@@ -268,8 +276,8 @@ Finally，use chmod command.
 ```sh
 sudo chmod 666 /dev/ttyUSB0
 ```
-:::
 
+:::
 
 Open-file `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
 
@@ -286,7 +294,7 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
         default_factory=lambda: {
             "main": StaraiMotorsBusConfig(
                 port="/dev/ttyUSB1",  #<-------- UPDATE HEARE
-                interval = 100,								
+                interval = 100,        
                 motors={
                     # name: (index, model)
                     "joint1": [0, "rx8-u50"],
@@ -305,7 +313,7 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
         default_factory=lambda: {
             "main": StaraiMotorsBusConfig(
                 port="/dev/ttyUSB0",  #<-------- UPDATE HEARE
-                interval = 100,								
+                interval = 100,        
                 motors={
                     # name: (index, model)
                     "joint1": [0, "rx8-u50"],
@@ -343,7 +351,7 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
         default_factory=lambda: {
             "main": StaraiMotorsBusConfig(
                 port="/dev/ttyUSB1",
-                interval = 100, 	#<-------- UPDATE HEARE							
+                interval = 100,  #<-------- UPDATE HEARE       
                 motors={
                     # name: (index, model)
                     "joint1": [0, "rx8-u50"],
@@ -362,7 +370,7 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
         default_factory=lambda: {
             "main": StaraiMotorsBusConfig(
                 port="/dev/ttyUSB0",
-                interval = 100, 	#<-------- UPDATE HEARE
+                interval = 100,  #<-------- UPDATE HEARE
                 motors={
                     # name: (index, model)
                     "joint1": [0, "rx8-u50"],
@@ -382,7 +390,6 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
 ### Calibrate
 
 Normally, the robotic arm is pre-calibrated in factory and does not require recalibration. If a joint motor is found to remain at a limit position for a long period, please contact us to obtain the calibration file and perform recalibration again.
-
 
 ## Teleoperate
 
@@ -408,8 +415,6 @@ python lerobot/scripts/control_robot.py \
 ```
 
 After the program starts, the Hold button remains functional.
-
-
 
 ## Add cameras
 
@@ -448,7 +453,6 @@ You can find the pictures taken by each camera in the `outputs/images_from_openc
     <img width={400}
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/camera.png" />
 </div>
-
 
 ```python
 @RobotConfig.register_subclass("starai")
@@ -546,7 +550,7 @@ python lerobot/scripts/control_robot.py \
 ```
 
 Don't upload to Hub:
-**(Recommended, the following tutorials will mainly focus on local data)** 
+**(Recommended, the following tutorials will mainly focus on local data)**
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -565,6 +569,7 @@ python lerobot/scripts/control_robot.py \
 ```
 
 You will see data similar to the following:
+
 ```bash
 INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5hz) dtWfoll: 0.25 (3963.7hz) dtRfoll: 6.22 (160.7hz) dtRlaptop: 32.57 (30.7hz) dtRphone: 33.84 (29.5hz)
 ```
@@ -601,7 +606,6 @@ Parameter Explanations
 - On Linux, if the left and right arrow keys and escape key don't have any effect during data recording, make sure you've set the $DISPLAY environment variable. See [pynput limitations](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
 
 :::
-
 
 ## Visualize the dataset
 
@@ -701,6 +705,7 @@ If you upload your model checkpoint to the Hub, you can also use the model repos
 - If you are following this documentation/tutorial, please git clone the recommended GitHub repository `git clone https://github.com/servodevelop/lerobot-starai.git`.
 
 - If you encounter the following error, you need to check whether the robotic arm connected to the corresponding port is powered on and whether the bus servos have any loose or disconnected cables.
+
   ```bash
   ConnectionError: Read failed due to comunication eror on port /dev/ttyACM0 for group key Present_Position_Shoulder_pan_Shoulder_lift_elbow_flex_wrist_flex_wrist_roll_griper: [TxRxResult] There is no status packet!
   ```
@@ -710,6 +715,7 @@ If you upload your model checkpoint to the Hub, you can also use the model repos
 - If the remote control functions normally but the remote control with Camera fails to display the image interface, you can find [here](https://github.com/huggingface/lerobot/pull/757/files)
 
 - If you encounter libtiff issues during dataset remote operation, please update the libtiff version.
+
   ```bash
   conda install libtiff==4.5.0  #for Ubuntu 22.04 is libtiff==4.5.1
   ```
@@ -722,12 +728,14 @@ If you upload your model checkpoint to the Hub, you can also use the model repos
   
   ```bash
   [vost#0:0 @ 0x13207240] Unknown encoder 'libsvtav1' [vost#0:0 @ 0x13207240] Error selecting an encoder Error opening output file /home/han/.cache/huggingface/lerobot/lyhhan/so100_test/videos/chunk-000/observation.images.laptop/episode_000000.mp4. Error opening output files: Encoder not found
-  ``` 
+  ```
 
 - Important!!! If during execution the servo's cable becomes loose, please restore the servo to its initial position and then reconnect the servo cable. You can also individually calibrate a servo using the [Servo Initialization Command](https://wiki.seeedstudio.com/lerobot_so100m/#configure-the-motors), ensuring that only one cable is connected between the servo and the driver board during individual calibration. If you encounter
+
   ```bash
   Auto-correct calibration of motor 'wrist roll' by shifting value by 1 full turns, from '-270 < -312.451171875 < 270degrees' to'-270<-312.451171875 < 270 degrees'.
   ```
+
   or other errors during the robotic arm calibration process related to angles and exceeding limit values, this method is still applicable.
 
 - Training 50 sets of ACT data on an 8G 3060 laptop takes approximately 6 hours, while on a 4090 or A100 computer, training 50 sets of data takes about 2–3 hours.
@@ -747,7 +755,6 @@ pip3 install rerun-sdk==0.23
 :::tip
 If you encounter software issues or environment dependency problems that cannot be resolved, in addition to checking the FAQ section at the end of this tutorial, please promptly report the issue to the [LeRobot platform](https://github.com/huggingface/lerobot) or the [LeRobot Discord channel](https://discord.gg/8TnwDdjFGU).
 :::
-
 
 ## Citation
 
@@ -771,7 +778,6 @@ Diffusion Policy: [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/)
 
 TD-MPC: [TD-MPC](https://www.nicklashansen.com/td-mpc/)
 
-
 ## Tech Support & Product Discussion
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
@@ -785,5 +791,3 @@ Thank you for choosing our products! We are here to provide you with different s
 <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-
-
