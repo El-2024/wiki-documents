@@ -1,6 +1,6 @@
 ---
-description: このウィキでは、Damiao シリーズモーターのチュートリアルを提供します。
-title: Damiao シリーズモーター入門
+description: このwikiはDamiaoシリーズモーターのチュートリアルを提供します。
+title: Damiaoシリーズモーター
 keywords:
 - actuator
 - motor
@@ -13,9 +13,9 @@ last_update:
   author: ZhuYaoHui
 ---
 
-# Damiao 43 シリーズモーター入門
+# Damiao 43シリーズモーター入門
 
-本記事では、Damiao 43 シリーズモーターの使い始め方と、reComputer Mini Jetson Orin 上で C++ と Python を用いて制御する方法を紹介します。
+この記事では、Damiao 43シリーズモーターの使い方と、reComputer Mini Jetson OrinでC++とPythonを使用する方法を紹介します。
 
 <div align="center">
     <img width={400}
@@ -24,7 +24,7 @@ last_update:
 
 ## 仕様
 
-以下は、すべてのモーターモデルについてパラメータを埋めた完成版の表です。
+以下は、すべてのモーターモデルのパラメータを記載した完成版の表です：
 
  Motor Model | Rated Torque (Nm) | Peak Torque (Nm) | No-load Speed (rpm) | Rated Speed (rpm) | Reduction Ratio | Size Diameter*Height (mm) | Weight (g) | Supply Voltage (V) | Recommended Voltage Range (V) | Rated Phase Current (A) | Peak Phase Current (A) | Rated Power (W) | Pole Pairs | Communication Method | Encoder Type | Installation | Phase Resistance (Ω) | Phase Inductance (uH) | Flux Linkage (Wb) | Rotational Inertia (Kg*m²) | Torque Constant (Nm/A) | Drive Max Current (A) | Speed Loop KP | Default PMAX (rad) | Default VMAX (rad/s) | Default TMAX (Nm) | Speed Constant |
 ------------|------------------|-----------------|---------------------|------------------|----------------|--------------------------|-----------|-------------------|-----------------------------|------------------------|----------------------|----------------|-----------|---------------------|-------------|-------------|----------------------|---------------------|------------------|--------------------------|----------------------|---------------------|--------------|------------------|------------------|----------------|---------------|
@@ -35,117 +35,117 @@ J4340-2EC(48V) | 9 | 27 | 100 | 36 | 40 | 57 * 53.3 | ~362 | 48 | 15-52 | 2.5 | 
 J4340P-2EC | 9 | 27 | 52.5 | 36 | 40 | 57 * 56.5 | ~375 | 24 | 15-32 | 3 | 8 | 33.929201 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261194 | 9.59E-05 | 12.5 | 8 | 28 | 81.197186 |
 J4340P-2EC(48V) | 9 | 27 | 100 | 36 | 40 | 57 * 56.5 | ~375 | 48 | 15-52 | 2.5 | 9 | 33.929201 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261194 | 9.59E-05 | 12.5 | 8 | 28 | 81.197186 |
 
-## 主な特長
+## 主な特徴
 
-1. **CAN BUS & CANFD 対応**
-2. **デュアルエンコーダ**
+1. **CAN BUS & CANFD**
+2. **デュアルエンコーダー**
 3. **高トルク密度**
 4. **高精度**
-5. **中空構造**
+5. **中空設計**
 
-## はじめに
+## 入門
 
 ### 使用前の環境準備
 
-**PC（Windows）**
+**PCのWindowsシステム**
 
-- [Damiao Debugging Tools をダウンロード](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/Debugging_Tools_v.1.6.8.8.exe)
-- [USB2CAN ツールをダウンロード](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/USB2CAN_2.0.0.3.exe)
+- [Damiaoデバッグツール](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/Debugging_Tools_v.1.6.8.8.exe)をダウンロードしてください。
+- [USB2CANツール](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/USB2CAN_2.0.0.3.exe)をダウンロードしてください。
 
-### PC への配線・接続
+### 回路をPCに接続
 
-本記事では CAN 通信を使用します。Windows 上位機でのデバッグには **USB-CAN インターフェース**が別途必要です。
+CAN通信方式を使用するため、WindowsのホストコンピューターでデバッグするためにUSB-CANインターフェースが追加で必要です。
 
 <div align="center">
     <img width={500}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/circcuit.jpg" />
 </div>
 
-モーターには独立した **24V 電源**を供給し、USB を PC に接続してください。
+ここでは、モーター用に別途24V電源を提供し、USBをコンピューターに接続する必要があります。
 
-### `Debugging_Tools_v.1.6.8.8.exe` を用いたモーターのテスト
+### `Debugging_Tools_v.1.6.8.8.exe`を使用してモーターをテスト
 
-アプリ下部で **中国語／英語**の切り替えが可能です。
+アプリの下部で中国語と英語を切り替えることができます。
 
-| **シリアル接続パラメータ設定** | **モーターへ接続** | **Read Param** | **CAN ID 設定** | **Write Param** |
+| **シリアルポート接続パラメータの設定** | **モーターに接続** | **パラメータ読み取り** | **CAN ID設定** |**パラメータ書き込み** |
 |:---------:|:---------:|:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/1.png) | ![fig2](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/2.png) | ![fig3](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/3.png) | ![fig4](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/4.png) |![fig5](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/5.png) |
-| シリアルポートは PC が自動認識したポートを選び、他の設定はデフォルトのままにします。 | 「Open Port」を押すと上位機に自動接続します。初回接続時はダイアログにモーター情報が表示されます。 | 「Set Parameters」の **Read Param** で、現在の詳細情報と動作モードを読み出します。 | ここで **CAN ID** を設定します。 | 設定後、**Write Param** を押してパラメータを書き込みます。 |
+| シリアルポートには、コンピューターが自動認識したポートを使用し、その他の設定はすべてデフォルトのままにします。 | 「ポートを開く」ボタンをクリックすると、ホストコンピューターに自動的に接続されます。初回接続の場合、ダイアログボックスにモーター情報が印刷されます。|「パラメータ設定」セクションで「パラメータ読み取り」をクリックすると、モーターの現在の詳細情報と動作モードが表示されます。|ここで、まずCAN IDを設定してください。 |設定後、「パラメータ書き込み」をクリックしてパラメータを更新します。 |
 
 :::tip
 
-**CAN_ID**：ドライブが **CAN コマンドを受信**するためのフレーム ID（16進）。
+**​CAN_ID**: ドライブがCANコマンドを受信するために使用するフレームID（16進数）。
 
-**Master ID**：ドライブが**フィードバック送信**に使用するフレーム ID（16進）。
+**​Master ID**: ドライブがフィードバックを送信するために使用するフレームID（16進数）。
 
-Master ID はホスト側の ID です。各モーターで **重複しない**値を設定してください。
+​Master IDはホストIDです。各モーターに​固有のMaster IDを設定することをお勧めします。
 
-実運用では **`Master ID = CAN_ID + 0x10`**（例：CAN_ID = 0x01 のとき Master ID = 0x11）が推奨です。
+良い慣行は、​Master IDを​CAN_IDより​0x10高く設定することです（例：CAN_ID = 0x01の場合、Master ID = 0x11）。
 
-例：
+​例：
 
-モーター 1：CAN_ID = 0x01, Master ID = 0x11 
+​モーター1: CAN_ID = 0x01, Master ID = 0x11
 
-モーター 2：CAN_ID = 0x02, Master ID = 0x12
+​モーター2: CAN_ID = 0x02, Master ID = 0x12
 
-Master ID を 0x00 に設定しないでください！
+​Master IDを0x00に設定しないでください！！！
 :::
 
-#### **(1) 基本パラメータ**
+#### **(1) 基本パラメータ**  
 
-- **NPP**：極対数。キャリブレーションで自動判定。  
-- **UV**：電源電圧が閾値（最小 **15V**）を下回るとドライブを停止。  
-- **OV**：上限電圧。起動時にチェックし、超過で無効化（起動時のみ判定）。  
-- **Acc/Dec**：**非 MIT モード**で速度変化率を制限。  
-- **GR（減速比）**：出力の速度／位置に影響し、間接的にトルクフィードバックにも影響。浮動小数可。  
-- **OT**：コイル温度しきい値（**100°C 以下推奨**）。超過でフォルト（モーター無効化＆エラー通知）。  
-- **CAN_ID**：CAN コマンド受信用フレーム ID。  
-- **Master ID**：フィードバック送信用フレーム ID。推奨設定は `MasterID = CAN_ID + 0x10`。**0x00 禁止**。  
-- **CAN Timeout**：32bit 整数。タイムアウト時間（単位：**50µs**）。この時間内に CAN コマンドが無い場合は保護モードへ。  
-- **Speed Limit**（速度モードのみ）：減速開始前の最大速度（**rad/s**）。  
-- **Overcurrent**：最大相電流の上限（%）。  
+- **NPP**: モーターの極対数、キャリブレーションによって自動決定されます。  
+- **UV**: 供給電圧がしきい値（最小**15V**）を下回ると、ドライブは動作を停止します。  
+- **OV**: 上限電圧を設定します。ドライブは起動時に供給電圧をチェックし、超過した場合は動作を無効にします（起動時に一度だけチェック）。  
+- **Acc/Dec**: **非MITモード**で速度変化の割合を制限するために使用されます。  
+- **GR(Gear Ratio)**: 出力速度/位置に影響し、間接的にトルクフィードバックに影響します。浮動小数点値をサポートします。  
+- **OT**: コイル温度しきい値（**100°C**以下を推奨）。これを超えると故障モードがトリガーされます（モーターを無効にしてエラーを報告）。  
+- **CAN_ID**: CANコマンドを受信するためのフレームID（16進数）。  
+- **Master ID**: ドライブフィードバック用のフレームID（16進数）。ベストプラクティス：`MasterID = CAN_ID + 0x10`に設定（例：`0x01` → `0x11`）。**`0x00`に設定しないでください。**  
+- **CAN Timeout**: タイムアウト期間を定義する32ビット整数（単位：50µsサイクル）。この間隔内にCANコマンドが検出されない場合、モーターは保護モードに入ります。  
+- **Speed Limit** (*速度モードのみ*): 減速前の最大速度（単位：**rad/s**）。  
+- **Overcurrent**: 最大相電流制限（パーセンテージ）。  
 
-#### **(2) モーターパラメータ**
+#### **(2) モーターパラメータ**  
 
-- ドライブが自動同定します。**ドライブ基板交換時は再キャリブレーション必須**。値はドライブに永続保存。  
+- ドライブによって自動識別されます。**ドライブボードを交換する際は再キャリブレーションが必要です**。ドライブに永続的に保存されます。  
 
-#### **(3) 指令スケーリング（振幅設定）**
+#### **(3) コマンドスケーリング（振幅設定）**  
 
-- **PMAX**：**MIT モード**では入力指令のスケール、他モードではフィードバックのスケール。マッピングは CAN プロトコル参照。  
-- **VMAX**：PMAX と同様。  
-- **TMAX**：PMAX と同様。  
-- **KT_OUT**：モーターのトルク定数。**パラメータが正確に同定されている場合は 0 を推奨**。  
-- **Gear Ratio Coefficient**：ギアのトルク伝達比。  
+- **PMAX**: **MITモード**ではコマンド入力をスケール、その他のモードではフィードバック出力をスケールします。マッピングルールについてはCANプロトコルを参照してください。  
+- **VMAX**: PMAXと同じ。  
+- **TMAX**: PMAXと同じ。  
+- **KT_OUT**: モータートルク定数。モーターパラメータが正確に識別されている場合は**0**に設定します。  
+- **Gear Ratio Coefficient**: ギアのトルク伝達比。  
 
-> **注**：ドライブは **MIT 通信プロトコル形式**を使用します。
+> **注意**: ドライブは**MIT通信プロトコル形式**を使用します。  
 
-#### **(4) 制御設定**
+#### **(4) 制御設定**  
 
-- **制御モード**：  
-  - **MIT モード**  
-  - **位置・速度モード**（台形加減速）  
+- **制御モード**:  
+  - **MITモード**  
+  - **位置-速度モード**（台形加減速）  
   - **速度モード**  
-- **Current Bandwidth**：電流ループゲイン（既定：`1000`）。  
-- **Speed KP/KI, Position KP/KI**：速度・位置ループの PID。  
+- **Current Bandwidth**: 電流ループゲイン（デフォルト：`1000`）。  
+- **Speed KP/KI, Position KP/KI**: 速度および位置ループのPIDパラメータ。  
 
-### MIT 制御モード
+### MIT制御モード
 
-**1. MIT トルク制御：**
+**1. MITトルク制御モード:**
 
-1. 「Set Parameters」で **Read Param** をクリックし、現在値を表示。  
-2. **Control Mode** を **MIT Mode** に設定。  
-3. **CAN ID** を確認。  
-4. **Write Param** で保存。  
+1. パラメータ設定セクションで、​パラメータ読み取りをクリックして現在のモーターパラメータを表示します。
+2. ​制御モードをMITモードに設定します。
+3. 設定された​CAN IDを確認します。
+4. ​パラメータ書き込みをクリックしてすべての設定を保存します。
 
 <div align="center">
     <img width={800}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/7.png" />
 </div>
 
-5. 「Test」タブで **Enable Motor（Ente）** をクリック。  
-6. 「MIT Control」セクションで：  
-   - **Torque (Nm)** に **1** を設定  
-   - **Update** → **Send**  
+5. ​テストタブで、​**「モーター有効」**ボタン（Ente）をクリックします。
+6. ​MIT制御セクションで：
+    - ​トルク（Nm）を​1に設定します。
+    - ​更新 → ​送信をクリックします。
 
 モーターが回転を開始します。
 
@@ -154,97 +154,96 @@ Master ID を 0x00 に設定しないでください！
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/6.png" />
 </div>
 
-16進の **CAN データ**をコピーして、シリアルデバッグツールから駆動することもできます。
+CANデータ（16進数形式）をコピーして、シリアルポートデバッグツールを使用してモーターを駆動することもできます。
 
 <div align="center">
     <img width={400}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/8.png" />
 </div>
 
-**2. MIT 速度制御：**
+**2. MIT速度制御モード:**
 
-1. 「Test」タブで **Enable Motor（Ente）** をクリック。  
-2. 「MIT Control」セクションで：  
-   - **Vel (rad/s)** に **5**  
-   - **KD (N*s/r)** に **1**  
-   - **Update** → **Send**  
+1. ​テストタブで、​**「モーター有効」**ボタン（Ente）をクリックします。
+2. ​MIT制御セクションで：
+    - Vel（rad/s）を​5に設定します。
+    - KD（N*s/r）を​1に設定します。
+    - ​更新 → ​送信をクリックします。
 
 <div align="center">
     <img width={800}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/9.png" />
 </div>
 
-モーターが回転を開始します。16進 CAN データをコピーしての制御も可能です。
+モーターが回転を開始します。CANデータ（16進数形式）をコピーして、シリアルポートデバッグツールを使用してモーターを駆動することもできます。
 
-**3. MIT 位置制御：**
+**3. MIT位置制御モード:**
 
-1. 「Test」タブで **Enable Motor（Ente）** をクリック。  
-2. **SaveZero** で現在位置をゼロ点に設定可能。  
-3. 「MIT Control」セクションで：  
-   - **Pos (rad)** を **3.14**  
-   - **KP (N/r)** を **2**  
-   - **KD (N*s/r)** を **1**  
-   - **Update** → **Send**  
+1. ​テストタブで、​**「モーター有効」**ボタン（Ente）をクリックします。
+2. ​**「SaveZero」**を使用して現在の位置をゼロ点として設定できます。
+3. ​MIT制御セクションで：
+    - Pos（rad）を3.14に設定します。
+    - KP（N/r）を​2に設定します。
+    - KD（N*s/r）を​1に設定します。
+    - ​更新 → ​送信をクリックします。
 
 <div align="center">
     <img width={800}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/10.png" />
 </div>
 
-モーターが回転を開始します。16進 CAN データでの制御も可能です。
-
+モーターが回転を開始します。CANデータ（16進数形式）をコピーして、シリアルポートデバッグツールを使用してモーターを駆動することもできます。
 ### 速度制御モード
 
-1. 「Set Parameters」で **Read Param** をクリック。  
-2. **Control Mode** を **Vel Mode** に設定。  
-3. **CAN ID** を確認。  
-4. **Write Param** で保存。  
+1. パラメータ設定セクションで、​Read Param をクリックして現在のモーターパラメータを表示します。
+2. ​Control Mode を Vel Mode に設定します。
+3. 設定された ​CAN ID を確認します。
+4. ​Write Param をクリックしてすべての設定を保存します。
 
 <div align="center">
     <img width={800}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/11.png" />
 </div>
 
-5. 「Test」タブで **Enable Motor（Ente）** をクリック。  
-6. 「Vel Control」セクションで：  
-   - **Vel (rad/s)** に **5**  
-   - **Update** → **Send**  
+5. ​Test タブで、​**"Enable Motor"** ボタン（Ente）をクリックします。
+6. Vel Control セクションで：
+    - Vel (rad/s) を 5 に設定します。
+    - ​Update → ​Send をクリックします。
 
 <div align="center">
     <img width={800}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/12.png" />
 </div>
 
-モーターが回転を開始します。16進 CAN データでの制御も可能です。
+モーターが回転を開始します。CAN データ（16進形式）をコピーして、シリアルポートデバッグツールを使用してモーターを駆動することもできます。
 
 ### 位置制御モード
 
-1. 「Set Parameters」で **Read Param** をクリック。  
-2. **Control Mode** を **Pos Mode** に設定。  
-3. **CAN ID** を確認。  
-4. **Write Param** で保存。  
+1. パラメータ設定セクションで、​Read Param をクリックして現在のモーターパラメータを表示します。
+2. ​Control Mode を Pos Mode に設定します。
+3. 設定された ​CAN ID を確認します。
+4. ​Write Param をクリックしてすべての設定を保存します。
 
 <div align="center">
     <img width={800}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/13.png" />
 </div>
 
-5. 「Test」タブで **Enable Motor（Ente）** をクリック。  
-6. 「Pos Control」セクションで：  
-   - **Pos** を **3.14**  
-   - **Vel (rad/s)** を **5**  
-   - **Update** → **Send**  
+5. ​Test タブで、​**"Enable Motor"** ボタン（Ente）をクリックします。
+6. Pos Control セクションで：
+    - Pos を 3.14 に設定します。
+    - Vel (rad/s) を 5 に設定します。
+    - ​Update → ​Send をクリックします。
 
 <div align="center">
     <img width={800}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/14.png" />
 </div>
 
-モーターが回転を開始します。16進 CAN データでの制御も可能です。
+モーターが回転を開始します。CAN データ（16進形式）をコピーして、シリアルポートデバッグツールを使用してモーターを駆動することもできます。
 
-## [reComputer Mini Jetson Orin](/recomputer_jetson_mini_getting_started) でモーターを制御する
+## [​reComputer Mini Jetson Orin](/ja/recomputer_jetson_mini_getting_started) を使用したモーター制御
 
-現在一般的なモーター用 CAN 通信インターフェースは **XT30（2+2）** と **JST** です。**reComputer Mini Jetson Orin** および **reComputer Robotics** は **デュアル XT30（2+2）** と **JST ベースの CAN** を備え、シームレスな互換性を提供します。
+現在、市場でモーター用の最も一般的な CAN 通信インターフェースは **XT30 (2+2)** と **JST コネクタ** を使用しています。私たちの **reComputer Mini Jetson Orin** と **reComputer Robotics** デバイスは **デュアル XT30 (2+2) ポート** と **JST ベースの CAN インターフェース** を搭載しており、シームレスな互換性を提供します。
 
 **reComputer Mini:**
 <div align="center">
@@ -256,21 +255,21 @@ Master ID を 0x00 に設定しないでください！
   <img width ="800" src="https://files.seeedstudio.com/wiki/robotics/Sensor/IMU/hexfellow/fig5.jpg"/>  
 </div>
 
-CAN の詳細は、こちらの [wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can) を参照してください。
+CAN の使用に関する詳細については、この [wiki](https://wiki.seeedstudio.com/ja/recomputer_jetson_mini_hardware_interfaces_usage/#can ) を参照してください。
 
-### CAN インターフェースを有効化
+### CAN インターフェースの有効化
 
-**手順 1：** CAN0/CAN1 を使用する前に、底面カバーを外し、2 つの **120Ω 終端抵抗**を **ON** に設定してください。
+**ステップ1:** CAN0 と CAN1 を使用する前に、底面カバーを取り外し、両方の 120Ω 終端抵抗を ​ON 位置に設定してください。
 
 <div align="center">
     <img width={300}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/7.png" />
 </div>
 
-**手順 2：** XT30（2+2）インターフェースでモーターを reComputer Mini の **CAN0** に直接接続します。
+**ステップ2:** XT30 (2+2) インターフェースを介してモーターを reComputer Mini CAN0 に直接接続します。
 
 :::tip
-reComputer Mini 側の CAN の **H/L ピン極性がモーター側と逆**です。XT30 2+2 のケーブルで **H/L を入れ替えて**接続してください。
+reComputer Mini の CAN インターフェースでは、H/L ピンがモーターの H/L と比較して反転しています。そのため、XT30 2+2 ケーブルハーネスで H/L 接続を逆にする必要があります。
 :::
 
 <div align="center">
@@ -283,24 +282,24 @@ reComputer Mini 側の CAN の **H/L ピン極性がモーター側と逆**で�
 </div>
 
 :::danger
-この電源構成は **単体モーターの学習・テスト用**です。複数台のモーターを動かす場合は、**専用の電源基板を設計**し、**Jetson 用電源とモーター用電源を絶縁**してください。大電流が Jetson を直接流れないようにするためです。
+この電源は単一モーターの学習とテスト専用です。複数のモーターの場合は、別途電源ボードを設計し、Jetson の電源をモーター電源から分離して、高電流が Jetson を直接通過することを避けてください。
 :::
 
-#### Jetson の CAN 通信を有効化
+#### Jetson CAN 通信の有効化
 
-ターミナルで次を実行し、GPIO を High にして **CAN0** を有効化します。
+ターミナルを開き、以下のコマンドを入力して GPIO ピンをハイにプルし、CAN0 を有効化します：
 
 ```bash
 gpioset --mode=wait 0 43=0
 ```
 
-**JST（CAN1）** を使う場合は **106 番ピン**を High にします。
+JST インターフェース CAN1 を使用している場合は、ピン 106 をハイにプルします。
 
 ```bash
 gpioset --mode=wait 0 106=0
 ```
 
-このターミナルは開いたままにし、新しいターミナルで CAN0 を設定します。
+このターミナルを開いたまま、新しいターミナルを起動し、CAN0 を設定します。
 
 ```bash
 sudo modprobe mttcan
@@ -310,30 +309,30 @@ sudo ip link set can0 up
 
 ### C++ の例
 
-#### インストールとビルド
+#### インストールとコンパイル
 
-- **CMake をインストール**
+- **CMake のインストール**
 
 ```shell
 sudo apt update  
 sudo apt install cmake  
-```
+```  
 
-- **CAN ツールをインストール**
+- **CAN ツールのインストール**
 
 ```shell
 sudo apt install can-utils  
-```
+```  
 
-- **プログラムの取得とビルド**
+- **プログラムのダウンロードとコンパイル**
 
-1. ワークスペースを作成し、リポジトリを取得：
+1. ワークスペースを作成してリポジトリをクローンします：
 
 ```shell
 mkdir -p ~/orin_ws/src  
 cd ~/orin_ws/src  
 git clone https://gitee.com/xauter/orin-control.git  
-```
+```  
 
 2. コンパイル：
 
@@ -343,30 +342,30 @@ mkdir build
 cd build  
 cmake ..  
 make  
-```
+```  
 
-#### 使い方
+#### 使用方法
 
-1. **CAN デバイスを確認**
+1. **CAN デバイスの確認**
 
-ターミナルを開いて次を実行します：
+ターミナルを開いて実行します：
 
 ```shell
 ip -brief link | grep can  
-```
+```  
 
-2. **プログラムを実行**
+2. **プログラムの実行**
 
-`build` フォルダーで次を実行します：
+`build` フォルダで実行します：
 
 ```shell
 cd ~/orin_ws/src/orin-control/dm_hw/build  
 ./dm_main  
-```
+```  
 
-モーターの **LED が緑**に点灯し、**正弦波速度**で回転します。
+モーターが **緑色** に点灯し、**正弦波速度** で回転します。
 
-### Python での制御
+### Python を使用した制御
 
 - **Python 環境のインストール**
 
@@ -374,20 +373,20 @@ cd ~/orin_ws/src/orin-control/dm_hw/build
 pip install python-can numpy
 ```
 
-- **スクリプト用のフォルダを作成（`~/damiao/scripts`）**
+- **`~/damiao/scripts` ディレクトリの下に scripts という名前のフォルダを作成して、Python スクリプトを保存します。**
 
 ```bash
 mkdir -p ~/damiao/scripts
 ```
 
-- **damiao_motor.py ファイルを作成します**
+- **damiao_motor.py ファイルの作成**
 
 ```bash
 cd ~/damiao/scripts
 touch damiao_motor.py
 ```
 
-以下のコードを `damiao_motor.py` にコピーします。
+以下のコードを damiao_motor.py にコピーします
 
 <details>
 
@@ -494,7 +493,7 @@ class MotorControl:
         self.canbus = can.interface.Bus(channel=channel, interface='socketcan', bitrate=bitrate)
 
         #print("can is open")
-        
+
 
     def controlMIT(self, DM_Motor, kp: float, kd: float, q: float, dq: float, tau: float):
         """
@@ -658,7 +657,7 @@ class MotorControl:
         #     CANID = (packet[6] << 24) | (packet[5] << 16) | (packet[4] << 8) | packet[3]
         #     CMD = packet[1]
         #     self.__process_packet(data, CANID, CMD)
-        
+
         data_recv = self.canbus.recv(0.1)
 
         if data_recv is not None:
@@ -691,7 +690,7 @@ class MotorControl:
         #     CANID = (packet[6] << 24) | (packet[5] << 16) | (packet[4] << 8) | packet[3]
         #     CMD = packet[1]
         #     self.__process_set_param_packet(data, CANID, CMD)
-        
+
         data_recv = self.canbus.recv(0.1)
 
 
@@ -803,7 +802,7 @@ class MotorControl:
         can_id_h = (Motor.SlaveID >> 8)& 0xff  #id high 8 bits
         data_buf = np.array([np.uint8(can_id_l), np.uint8(can_id_h), 0x33, np.uint8(RID), 0x00, 0x00, 0x00, 0x00], np.uint8)
         self.__send_data(0x7FF, data_buf)
-        
+
 
 
     def __write_motor_param(self, Motor, RID, data):             # 飯田：修正の必要あり?
@@ -1227,18 +1226,17 @@ class DamiaoPort:
     def controlMIT(self, motor, kp, kd, q, dq, tau):
         self.control.controlMIT(self.motors[motor], kp, kd, q, dq, tau)
 
-
 ```
 
 </details>
 
-- **`damiao_test.py` を作成**
+- **damiao_test.pyファイルを作成する**
 
-以下のコードを `damiao_test.py` にコピーします。
+以下のコードをdamiao_test.pyにコピーしてください
 
 <details>
 
-<summary>damiao_test.py</summary>
+<summary>damiao_motor.py</summary>
 
 ```python
 #!/usr/bin/env python3
@@ -1263,7 +1261,7 @@ DURATION = 60.0  # Operation duration (s)
 def main():
     # Create motor controller object
     control = MotorControl(CAN_INTERFACE, bitrate=CAN_BITRATE)
-    
+
     # Create and add motors
     motors = []
     for i in range(NUM_MOTORS):
@@ -1272,15 +1270,15 @@ def main():
         motors.append(motor)
         control.enable(motor)
         print(f"Motor {i + 1} enabled")
-    
+
     try:
         start_time = time.time()
         while time.time() - start_time < DURATION:
             current_time = time.time() - start_time
-            
+
             # Calculate sine wave position
             position = AMPLITUDE * math.sin(2 * math.pi * FREQUENCY * current_time)
-            
+
             # Control all motors
             for motor in motors:
                 control.controlMIT(
@@ -1291,10 +1289,10 @@ def main():
                     dq=0.0,   # Target velocity
                     tau=0.0   # Feedforward torque
                 )
-            
+
             # Control frequency
             time.sleep(0.001)  # 1kHz control frequency
-            
+
     except KeyboardInterrupt:
         print("\nProgram interrupted by user")
     finally:
@@ -1310,7 +1308,7 @@ if __name__ == "__main__":
 
 </details>
 
-- **`damiao_test.py` を実行**
+- **damiao_test.pyを実行する**
 
 ```bash
 python damiao_test.py
@@ -1318,11 +1316,11 @@ python damiao_test.py
 
 <iframe width="960" height="640" src="https://www.youtube.com/embed/e5hajjlaXAM?si=mTwNAeU5cfQEIuOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-モーターの **LED が緑**に点灯し、**正弦波速度**で回転します。
+モーターは**緑色**に点灯し、**正弦波速度**で回転します。
 
 ## 技術サポート & 製品ディスカッション
 
-当社製品をお選びいただきありがとうございます。スムーズにご利用いただけるよう、複数のサポートチャネルをご用意しています。
+弊社製品をお選びいただきありがとうございます！弊社製品での体験ができるだけスムーズになるよう、さまざまなサポートを提供いたします。さまざまな好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>

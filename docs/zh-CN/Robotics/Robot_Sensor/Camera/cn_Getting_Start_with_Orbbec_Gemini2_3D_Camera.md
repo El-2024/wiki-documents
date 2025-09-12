@@ -1,6 +1,6 @@
 ---
 description: 展示如何在 reComputer Jetson 平台上使用 Orbbec Gemini 335Lg。
-title: Orbbec Gemini2 3D 相机入门指南
+title: Orbbec Gemini2 3D 相机
 keywords:
 - Jetson
 - reComputer Robotics
@@ -20,12 +20,12 @@ last_update:
 ---
 
 <div align="center">
-    <img width={400} 
+    <img width={400}
     src="https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini2/orbbec-gemini-2-3d-camera.png" />
 </div>
 
 <div style={{ textAlign: "justify" }}>
-紧凑型 Gemini 2 3D 相机基于主动立体红外技术，配备 Orbbec 最新的定制 ASIC 芯片，用于高质量深度处理、IMU 和单线 USB 3.0 供电+连接。宽视场角和宽深度感知范围使 Gemini 2 适用于许多应用，特别是机器人技术。它易于设置和操作，配合 Orbbec SDK 使用，在从完全黑暗到半户外的各种光照条件下都能提供极其准确和可靠的数据。
+紧凑的 Gemini 2 3D 相机基于主动立体红外技术，配备了 Orbbec 最新的定制 ASIC，用于高质量深度处理、IMU 和单线 USB 3.0 供电 + 连接。宽视场角和宽深度感知范围使 Gemini 2 适用于许多应用，特别是机器人技术。它易于设置和操作，配合 Orbbec SDK 使用，在从漆黑到半户外的各种光照条件下都能提供极其准确和可靠的数据。
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -33,8 +33,8 @@ last_update:
 <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 </a></div>
 
-
 ## 特性
+
 - **主动立体红外** 采用主动立体红外技术进行深度输出，在各种光照条件下实现准确可靠的数据输出
 - **宽感知范围** 提供从 0.15m 到 10m 的高质量深度数据输出
 - **宽视场角** 提供 91 度水平和 66 度垂直的宽视场角数据
@@ -42,6 +42,7 @@ last_update:
 - **USB 连接** 使用单根 USB 3.0 Type-C 线缆进行供电和连接
 
 ## 规格参数
+
 <div className="table-center">
   <table style={{ height: "700px" }}>
     <tbody>
@@ -120,17 +121,17 @@ last_update:
 ## 硬件概述
 
 <div align="center">
-    <img width={700} 
+    <img width={700}
      src="https://media-cdn.seeedstudio.com/media/wysiwyg/upload/image-101090144-1.png" />
 </div>
 
 <div align="center">
-    <img width={700} 
+    <img width={700}
      src="https://media-cdn.seeedstudio.com/media/wysiwyg/upload/image-101090144-2.png" />
 </div>
 
 <div align="center">
-    <img width={700} 
+    <img width={700}
      src="https://media-cdn.seeedstudio.com/media/wysiwyg/upload/image-101090144-3.png" />
 </div>
 
@@ -147,6 +148,7 @@ unzip OrbbecSDK_v2.4.11_202508040936_058db73_linux_aarch64.zip
 ```
 
 **步骤 2.** 构建示例并测试：
+
 ```bash
 # Install udev rules
 cd OrbbecSDK_v2.4.11_202508040936_058db73_linux_aarch64/shared/
@@ -159,9 +161,8 @@ cd ..
 ./setup.sh
 ```
 
-
 <div align="center">
-    <img width={1000} 
+    <img width={1000}
     src="https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini2/test_sdk.png" />
 </div>
 
@@ -178,15 +179,14 @@ Orbbec Gemini2 是一款紧凑、高性能的深度相机，非常适合机器�
 [距离测量](https://wiki.seeedstudio.com/cn/yolov11_with_depth_camera/)
 
 <div align="center">
-    <img width={800} 
+    <img width={800}
     src="https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini2/distance.png" />
 </div>
-
 
 [无人机物体跟踪](https://wiki.seeedstudio.com/cn/object_tracking_with_reComputer_jetson_and_pX4/)
 
 <div align="center">
-    <img width={800} 
+    <img width={800}
     src="https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini2/px4.png" />
 </div>
 
@@ -203,11 +203,11 @@ Orbbec Gemini2 是一款紧凑、高性能的深度相机，非常适合机器�
 感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
