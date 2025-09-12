@@ -167,7 +167,7 @@ jobs:
             } catch (e) {
               core.warning('读取 PR 提交信息失败：' + e.message);
             }
-            core.setOutput('skip', 'false');
+            core.setOutput('skip', 'false')
 
       - name: Analyze docs changes (fast via API)
         id: analyze
@@ -397,14 +397,17 @@ jobs:
           fi
           node _trusted/.github/scripts/translate.js
 
-      # ✅ 仅收集本次翻译真正改动的文件，避免并发 PR 互相覆盖
+      # ✅ 收集新增/修改（空格路径安全，排除删除/旧路径）
       - name: Collect changed translation files
         id: collect-changes
         run: |
           set -e
-          CHANGED="$(git status --porcelain | awk '{print $2}' | grep -E '^docs/(zh-CN|ja|es)/' || true)"
-          echo "$CHANGED" | tr '\n' ' ' > /tmp/translation_changed_files.txt
-          COUNT=$(echo "$CHANGED" | wc -w | tr -d ' ')
+          git ls-files -z --others --modified --exclude-standard -- \
+            docs/zh-CN docs/ja docs/es \
+            | tr '\0' '\n' \
+            > /tmp/translation_changed_files.txt || true
+
+          COUNT=$(wc -l < /tmp/translation_changed_files.txt | tr -d ' ')
           echo "count=$COUNT" >> $GITHUB_OUTPUT
           if [ "${COUNT:-0}" -eq 0 ]; then
             echo "HAS_CHANGES=false" >> $GITHUB_ENV
@@ -412,7 +415,70 @@ jobs:
             echo "HAS_CHANGES=true" >> $GITHUB_ENV
           fi
 
-      # ⭐ 将译文推送到 base 仓库独立分支（只提交改动的文件），并创建/更新翻译 PR
+      # 🆕 收集需要删除的译文（来自源 PR 的 rename/delete）
+      - name: Collect deleted/renamed old translation files
+        id: collect-deletes
+        env:
+          BASE_SHA: ${{ steps.pr-info.outputs.base-sha }}
+          HEAD_SHA: ${{ steps.pr-info.outputs.head-sha }}
+          LANGUAGES: ${{ steps.parse.outputs.languages }}
+        run: |
+          set -e
+          DIFF="$(git -C "$GITHUB_WORKSPACE" diff --name-status --find-renames=90 "$BASE_SHA..$HEAD_SHA" -- docs/ || true)"
+
+          lang_prefix() {
+            case "$1" in
+              zh-CN) echo "cn_";;
+              ja)    echo "ja_";;
+              es)    echo "es_";;
+              *)     echo "";;
+            esac
+          }
+
+          is_doc() {
+            case "$1" in
+              *.md|*.mdx|*_category_.yml) return 0;;
+              *) return 1;;
+            esac
+          }
+
+          to_target_path() {
+            local src="$1" lang="$2"
+            local rel="${src#docs/}"
+            if [[ "$src" =~ _category_\.yml$ ]]; then
+              echo "docs/$lang/$rel"
+            else
+              local dir base pref
+              dir="$(dirname "$rel")"
+              base="$(basename "$rel")"
+              pref="$(lang_prefix "$lang")"
+              echo "docs/$lang/$dir/${pref}${base}"
+            fi
+          }
+
+          : > /tmp/translation_deleted_files.txt
+          if [ -n "$DIFF" ]; then
+            # 只取 D 和 R（旧路径）
+            while IFS=$'\t' read -r status a b; do
+              [ -z "$status" ] && continue
+              case "$status" in
+                D*) old="$a" ;;
+                R*) old="$a" ;;   # rename 的旧路径
+                *) continue ;;
+              esac
+              is_doc "$old" || continue
+
+              for lang in $LANGUAGES; do
+                tp="$(to_target_path "$old" "$lang")"
+                echo "$tp"
+              done
+            done <<< "$DIFF" | sort -u > /tmp/translation_deleted_files.txt
+          fi
+
+          DEL_COUNT=$(wc -l < /tmp/translation_deleted_files.txt | tr -d ' ')
+          echo "delete_count=$DEL_COUNT" >> $GITHUB_OUTPUT
+
+      # ⭐ 将译文推送到 base 仓库独立分支（删除旧的，再复制新增/修改）
       - name: Prepare translation branch in base repo
         if: steps.check-permissions.outputs.has_permission == 'true'
         id: prep-branch
@@ -427,14 +493,8 @@ jobs:
           BRANCH="auto-translate/pr-${PR_NUMBER}"
           echo "BRANCH=$BRANCH" >> $GITHUB_OUTPUT
 
-          if [ "${HAS_CHANGES}" != "true" ]; then
-            echo "ℹ️ 无翻译改动，无需创建/更新翻译分支"
-            exit 0
-          fi
-
-          CHANGED_FILES=$(cat /tmp/translation_changed_files.txt || true)
-          if [ -z "$CHANGED_FILES" ]; then
-            echo "ℹ️ 未发现改动文件"
+          if [ "${HAS_CHANGES}" != "true" ] && [ ! -s /tmp/translation_deleted_files.txt ]; then
+            echo "ℹ️ 无翻译增量且无需删除，跳过"
             exit 0
           fi
 
@@ -452,22 +512,44 @@ jobs:
           git fetch --depth=1 origin "$BASE_REF"
           git checkout "$BASE_REF"
 
-          # 创建/复用翻译分支（始终基于最新 base）
+          # 创建/复用翻译分支
           if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
             git checkout -B "$BRANCH"
           else
             git switch -c "$BRANCH"
           fi
 
-          # 只复制改动文件，避免全量覆盖/删除
-          for p in $CHANGED_FILES; do
-            mkdir -p "$(dirname "$p")"
-            cp -f "$GITHUB_WORKSPACE/$p" "$p"
-          done
+          git config core.quotePath false
+
+          # 先删除：源 PR 中被删除/重命名掉的译文旧路径
+          if [ -s /tmp/translation_deleted_files.txt ]; then
+            while IFS= read -r p; do
+              [ -z "$p" ] && continue
+              if [ -f "$p" ]; then
+                echo "🗑️ 删除旧译文: $p"
+                git rm -f -- "$p" || true
+              fi
+            done < /tmp/translation_deleted_files.txt
+          fi
+
+          # 再复制：新增/修改的译文
+          if [ -s /tmp/translation_changed_files.txt ]; then
+            while IFS= read -r p; do
+              [ -z "$p" ] && continue
+              if [ -f "$GITHUB_WORKSPACE/$p" ]; then
+                mkdir -p "$(dirname "$p")"
+                cp -f "$GITHUB_WORKSPACE/$p" "$p"
+              else
+                echo "⚠️ 跳过不存在的文件: $p"
+              fi
+            done < /tmp/translation_changed_files.txt
+
+            # 用清单添加，空格路径安全
+            git add --pathspec-from-file="/tmp/translation_changed_files.txt" || true
+          fi
 
           git config user.email "action@github.com"
           git config user.name "GitHub Action Bot"
-          git add -- $CHANGED_FILES || true
 
           if git diff --cached --quiet; then
             echo "ℹ️ 同步后无变化"
@@ -482,7 +564,7 @@ jobs:
           fi
 
       - name: Create or update translation PR
-        if: steps.check-permissions.outputs.has_permission == 'true' && env.HAS_CHANGES == 'true'
+        if: steps.check-permissions.outputs.has_permission == 'true'
         id: create-pr
         uses: actions/github-script@v7
         with:
@@ -490,7 +572,7 @@ jobs:
             const { owner, repo } = context.repo;
             const issue_number = context.payload.issue.number;
             const base = '${{ steps.pr-info.outputs.base-ref }}';
-            const head = '${{ steps.prep-branch.outputs.BRANCH }}'; // auto-translate/pr-<PR号>
+            const head = '${{ steps.prep-branch.outputs.BRANCH }}';
             const title = `🌍 Docs translations for #${issue_number}`;
             const body = [
               `This PR contains machine translations for docs changed in #${issue_number}.`,
@@ -502,28 +584,23 @@ jobs:
               `> Created by GitHub Actions (branch: \`${head}\`)`
             ].join('\n');
 
-            // 复用已存在的翻译 PR，否则新建
-            const list = await github.rest.pulls.list({
-              owner, repo, state: 'open', head: `${owner}:${head}`, base
-            });
-
+            // 复用或创建
+            const list = await github.rest.pulls.list({ owner, repo, state: 'open', head: `${owner}:${head}`, base });
             let prNumber;
             if (list.data.length > 0) {
               const pr = list.data[0];
               prNumber = pr.number;
               await github.rest.issues.update({ owner, repo, issue_number: pr.number, title });
               try { await github.rest.issues.addLabels({ owner, repo, issue_number: pr.number, labels: ['auto-translation'] }); } catch {}
-              core.info(`Updated existing translation PR #${pr.number}`);
             } else {
               const pr = await github.rest.pulls.create({ owner, repo, base, head, title, body, maintainer_can_modify: true });
               prNumber = pr.data.number;
               try { await github.rest.issues.addLabels({ owner, repo, issue_number: pr.data.number, labels: ['auto-translation'] }); } catch {}
-              core.info(`Created translation PR #${pr.data.number}`);
             }
             core.setOutput('pr-number', String(prNumber));
 
       - name: Save translation metadata to source PR
-        if: steps.check-permissions.outputs.has_permission == 'true' && env.HAS_CHANGES == 'true'
+        if: steps.check-permissions.outputs.has_permission == 'true'
         uses: actions/github-script@v7
         with:
           script: |
@@ -558,7 +635,7 @@ jobs:
             const branch = '${{ steps.prep-branch.outputs.BRANCH }}' || 'N/A';
 
             let status, icon;
-            if (success && hasChanges) { status='翻译完成'; icon='✅'; }
+            if (success && (hasChanges || true)) { status='翻译完成'; icon='✅'; }
             else if (success && !hasChanges) { status='无需翻译'; icon='ℹ️'; }
             else { status='翻译失败'; icon='❌'; }
 
@@ -567,27 +644,24 @@ jobs:
             comment += `**完成时间:** ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}\n`;
             comment += `**触发者:** @${{ github.event.comment.user.login }}\n`;
             comment += `**翻译分支:** \`${branch}\`\n`;
-            if (success && hasChanges && prNum !== 'N/A') {
+            if (prNum !== 'N/A') {
               comment += `**翻译 PR:** #${prNum}\n`;
               comment += `**翻译前SHA:** \`${beforeSha}\`\n\n`;
-              comment += `### 🎉 翻译成功！\n\n译文已提交到独立 PR（见上），可独立审核与合并。\n`;
-            } else if (success && !hasChanges) {
-              comment += `### 🔍 没有检测到需要翻译的内容\n\n可能原因：目标语言已最新，或无有效文档变更。\n`;
-            } else {
-              comment += `### 💔 翻译失败\n\n请查看 [工作流日志](https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }})。\n`;
             }
-            comment += `\n---\n> 🤖 由 GitHub Actions 自动生成 | [查看工作流](https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }})`;
-            try {
-              await github.rest.issues.updateComment({ owner, repo, comment_id: commentId, body: comment });
-            } catch {
-              await github.rest.issues.createComment({ owner, repo, issue_number: issue_number, body: comment });
-            }
+            comment += `---\n> 🤖 由 GitHub Actions 自动生成 | 查看本次运行日志`;
+            await (async () => {
+              try {
+                await github.rest.issues.updateComment({ owner, repo, comment_id: commentId, body: comment });
+              } catch {
+                await github.rest.issues.createComment({ owner, repo, issue_number: issue_number, body: comment });
+              }
+            })();
 
       - name: Check completion status
         id: check-completion
         if: always() && steps.check-permissions.outputs.has_permission == 'true'
         run: |
-          if [ "${{ job.status }}" = "success" ] && [ "$HAS_CHANGES" = "true" ]; then
+          if [ "${{ job.status }}" = "success" ]; then
             echo "completed=true" >> $GITHUB_OUTPUT
             echo "has_changes=true" >> $GITHUB_OUTPUT
           else
