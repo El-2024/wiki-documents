@@ -17,7 +17,7 @@ last_update:
 :::tip
 VS Code をベースに、nRF Connect SDK で以下のケースを使用したい場合は、提供された接続を参照し、app.overlay ファイルを追加して prj.conf の内容を変更してください。
 
-[XIAO nRF54L15 オーバーレイファイルの追加と conf ファイルの変更](http://192.168.31.44:3000/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
+[XIAO nRF54L15 オーバーレイファイルの追加と conf ファイルの変更](https://wiki.seeedstudio.com/ja/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
 
 :::
 
@@ -32,7 +32,7 @@ XIAO nRF54L15(Sense) には、デバイスの動作とファームウェアプ�
 リセットボタンは、デバイスでハードリセット操作を実行するために使用されます。
 
 - **機能：**
-  - **強制再起動：** このボタンを押すと、現在のデバイス操作がすべて即座に中断され、電源サイクルと同様にデバイスが再起動されます。
+  - **強制再起動：** このボタンを押すと、現在のデバイス操作がすべて即座に中断され、電源サイクルと同様に再起動します。
   - **スタックしたプログラムの解決：** デバイスで実行中のプログラムがクラッシュ、無限ループに入る、または応答しなくなった場合、リセットボタンを押すことが正常な動作状態に強制的に戻す最も迅速な方法です。
   - **ファームウェアへの影響なし：** リセット操作は、デバイスにすでにプログラムされているファームウェアを消去または変更しません。現在実行中のアプリケーションを単純に再起動するだけです。
 
@@ -188,11 +188,11 @@ int main(void)
 
 `int button_state = gpio_pin_get_dt(&button);:` 各ループで、プログラムはボタンピンの現在のレベル状態を読み取ります。
 
-`if (button_state == 0):` このロジックは、ボタンが押されているかどうかをチェックします。多くの回路設計では、ボタンを押すとピンがグランド（GND）に接続され、レベルが 0（つまり、ロー）になります。
+`if (button_state == 0):` このロジックは、ボタンが押されているかどうかをチェックします。多くの回路設計では、ボタンを押すとピンがグランド（GND）に接続され、レベル 0（つまり、ロー）になります。
 
-`gpio_pin_set_dt(&relay, 1);:` ボタンの状態が 0（押されている）の場合、リレーピンが 1（ハイ）に設定され、リレーが閉じて接続されているデバイス（例：ランプ）がオンになります。
+`gpio_pin_set_dt(&relay, 1);:` ボタンの状態が 0（押されている）の場合、リレーピンを 1（ハイ）に設定し、リレーを閉じて接続されているデバイス（例：ランプ）をオンにします。
 
-`else:` ボタンが押されていない場合（状態が 1）、`gpio_pin_set_dt(&relay, 0);` を実行してリレーピンを 0（ロー）に設定し、リレーが閉じて接続されているデバイスがオフになります。
+`else:` ボタンが押されていない場合（状態が 1）、`gpio_pin_set_dt(&relay, 0);` を実行してリレーピンを 0（ロー）に設定し、リレーを閉じて接続されているデバイスをオフにします。
 
 `k_msleep(10);:` コードは各ループの最後に 10 ミリ秒の短い遅延を追加して、CPU がビジー状態になることを避けます。これは簡単なアンチジッター処理です。これは、ボタンの物理的なジッターによる複数のトリガーを防ぎ、消費電力も削減する簡単なアンチジッター処理です。
 
@@ -212,8 +212,7 @@ int main(void)
      <th>Seeed Studio Grove Base for XIAO </th>
  </tr>
  <tr>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/rotary.png" style={{width:500, height:'auto'}}/></div></td>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:500, height:'auto'}}/></div></td>
  </tr>
@@ -409,7 +408,7 @@ int main(void)
 コードの中核ロジックは無限のwhile (1)ループ内で実行されます：
 
 - ADC読み取り：
-  - adc_sequence_init_dt(): ADCシーケンスを初期化して、各読み取りで正しい設定が使用されることを確保します。
+  - adc_sequence_init_dt(): ADCシーケンスが初期化され、各読み取りで正しい設定が使用されることを保証します。
 
   - adc_read(): これはADC変換をトリガーして、ポテンショメータからアナログ値を読み取ります。読み取りが失敗した場合、エラーがログに記録され、プログラムは100ミリ秒間一時停止してから続行します。
 
@@ -427,7 +426,7 @@ int main(void)
 
 - 遅延:
 
-  - k_msleep(100): プログラムは各ループの後に100ミリ秒間一時停止します。これはADC読み取りとPWM更新の頻度を制御し、過度のCPU負荷を防ぎ、安定したユーザーエクスペリエンスを提供します。
+  - k_msleep(100): プログラムは各ループ後に100ミリ秒間一時停止します。これはADC読み取りとPWM更新の頻度を制御し、過度のCPU負荷を防ぎ、安定したユーザーエクスペリエンスを提供します。
 
 ### 結果グラフ
 
@@ -949,8 +948,7 @@ static Coordinates transform(Coordinates gps)
  gg.Lat = gps.Lat + dLat;
  gg.Lon = gps.Lon + dLon;
  return gg;
-}
-```
+}```
 
 </details>
 
@@ -964,13 +962,13 @@ static Coordinates transform(Coordinates gps)
 
  -`UBYTE`, `UWORD`, `UDOUBLE:`これらは、変数の期待されるサイズを明確にすることでコードの可読性を向上させるカスタム符号なし整数型エイリアスです。
 
-  - `SENTENCE_SIZE, BUFFSIZE:` これらは NMEA センテンスとより大きなデータバッファを格納するために使用されるバッファの固定サイズを定義します。
+  - `SENTENCE_SIZE, BUFFSIZE:` これらは NMEA センテンスと大きなデータバッファを格納するために使用されるバッファの固定サイズを定義します。
 
   - `HOT_START, SET_NMEA_OUTPUT:`などのマクロ：これらのマクロは、L76X GPS モジュールに送信される様々な NMEA プロトコルコマンドを定義し、動作モード、出力頻度、ボーレートなどを設定します。
 
 - 構造体定義：
 
-  - `GNRMC:` この構造体は、GNRMC（GPS Recommended Minimum Specific data）NMEA センテンスから解析された主要情報（経度、緯度、時刻、ステータス、方位）を格納するために使用されます。
+  - `GNRMC:` この構造体は、GNRMC（GPS Recommended Minimum Specific data）NMEA センテンスから解析された主要情報（経度、緯度、時刻、ステータス、方位など）を格納するために使用されます。
 
   - `Coordinates:` 地理座標の経度と緯度を格納するシンプルな構造体です。
 
@@ -988,13 +986,13 @@ static Coordinates transform(Coordinates gps)
 
   - これは UART がデータを受信したときにトリガーされる UART 割り込みコールバック関数です。
 
-  - この関数は UART FIFO からバイト単位でデータを読み取り、改行文字 \n に遭遇したときに完全なセンテンスとしてデータを処理します。
+  - この関数は UART FIFO からバイト単位でデータを読み取り、改行文字 \n が検出されたときに完全なセンテンスとしてデータを処理します。
 
 **メイン関数 main()**
 
 - システム初期化：
 
-  - `nrfx_power_constlat_mode_request():` 電源管理がリアルタイム動作を妨げないように、定常レイテンシモードを要求します。
+  - `nrfx_power_constlat_mode_request():` 電源管理がリアルタイム動作を妨げないように、一定レイテンシモードを要求します。
 
   - `uart_dev = DEVICE_DT_GET:` UART デバイスハンドルを取得し、device_is_ready() を使用してデバイスが準備完了かどうかを確認します。
 
@@ -1010,13 +1008,13 @@ static Coordinates transform(Coordinates gps)
 
   - ループは無限に実行され、new_gnrmc_available フラグを継続的にチェックします。
 
-  - フラグが true の場合、latest_gnrmc から buff_t に最新の GPS センテンスをコピーし、その後 L76X_Gat_GNRMC() を呼び出してデータを解析します。
+  - フラグが true の場合、latest_gnrmc から最新の GPS センテンスを buff_t にコピーし、その後 L76X_Gat_GNRMC() を呼び出してデータを解析します。
 
   - 解析結果に基づいて、時刻、WGS-84 経度・緯度、および変換された百度・Google 座標を出力します。
 
   - GPS.Status が 0 の場合、「測位失敗」メッセージを出力します。
 
-  - 新しいデータが利用できない場合、「新しい GNRMC データが利用できません。」を出力します。
+  - 新しいデータが利用できない場合、「新しい GNRMC データが利用できません」と出力します。
 
   - k_msleep(2000): プログラムは各ループ後に 2 秒間一時停止して出力頻度を制御します。
 
@@ -1257,7 +1255,7 @@ int main(void) {
 **メインループ**
 コードのコアロジックは無限の `while (1)`ループ内で実行されます：
 
-- 画面のクリア：`cfb_framebuffer_clear(dev, false):` 各ループの開始時に、これはディスプレイを即座に更新することなくフレームバッファをクリアします。これにより、複数の要素を一度に描画でき、画面のちらつきを防ぎます。
+- 画面のクリア：`cfb_framebuffer_clear(dev, false):` 各ループの開始時に、これはディスプレイを即座にリフレッシュすることなくフレームバッファをクリアします。これにより、複数の要素を一度に描画でき、画面のちらつきを防ぎます。
 
 - テキストの印刷：
 
@@ -1265,7 +1263,7 @@ int main(void) {
 
   - print_text_by_row_col(): カスタム関数を使用して、これら2行のテキストを画面上の指定された行と列の位置に印刷します。最初の行は `(1, 2)` に、2番目の行は `(2, 1)` に印刷されます。
 
-  - ディスプレイの更新：`cfb_framebuffer_finalize(dev)`: この関数は、フレームバッファからディスプレイに保留中のすべての描画コマンドを一度に送信し、すべてのコンテンツを同時に表示させます。
+  - ディスプレイのリフレッシュ：`cfb_framebuffer_finalize(dev)`: この関数は、フレームバッファからディスプレイに保留中のすべての描画コマンドを一度に送信し、すべてのコンテンツを同時に表示させます。
 
   - 遅延：`k_sleep(K_MSEC(1000)):` 各ループの後、プログラムは1000ミリ秒（1秒）一時停止します。これは画面更新頻度を制御し、時計やセンサーデータなどの静的情報を安定した方法で表示するアプリケーションに適しています。
 
@@ -1421,8 +1419,7 @@ int main(void)
         k_sleep(K_MSEC(1000)); // Lower refresh rate, suitable for ePaper
     }
     return 0;
-}
-```
+}```
 
 **デバイス初期化:**
 
@@ -1458,7 +1455,7 @@ int main(void)
 
   - `lv_obj_set_style_text_color()`とlv_obj_set_style_text_font()を使用してテキストの色とフォントサイズを設定します。
 
-- `lv_obj_align()`関数は、各ラベルを画面上の特定の場所（中央、右上、左下、右下など）に配置します。
+- `lv_obj_align()`関数は各ラベルを画面上の特定の位置（中央、右上、左下、右下など）に配置します。
 
 四角形: forループを使用して4つの小さな四角形オブジェクトを作成します。それらのサイズ、スタイル（黒い境界線付きの白い塗りつぶし）、位置を順次設定し、画面の左上隅に水平に配置します。
 
@@ -1476,7 +1473,7 @@ int main(void)
 
 ## 技術サポート & 製品ディスカッション
 
-弊社製品をお選びいただき、ありがとうございます！弊社製品での体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。さまざまな好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
+弊社製品をお選びいただきありがとうございます！弊社製品での体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。さまざまな好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>

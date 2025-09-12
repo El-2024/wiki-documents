@@ -14,18 +14,18 @@ sidebar_position: 1
 
 # Seeed Studio XIAO nRF54L15 Sense 内蔵センサーの使用方法
 
-以下のサンプルコードは PlatformIO 用に設計されていますが、nRF Connect SDK とも互換性があります。
+以下のサンプルコードはPlatformIO用に設計されていますが、nRF Connect SDKとも互換性があります。
 
 :::tip
-VS Code をベースに、nRF Connect SDK で以下のケースを使用したい場合は、提供されたリンクを参照して、app.overlay ファイルを追加し、prj.conf の内容を変更してください
+VS Codeベースで、nRF Connect SDKで以下のケースを使用したい場合は、提供されたリンクを参照し、app.overlayファイルを追加してprj.confの内容を変更してください
 
-[XIAO nRF54L15 オーバーレイファイルの追加と conf ファイルの変更](http://192.168.31.44:3000/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
+[XIAO nRF54L15 オーバーレイファイルの追加とconfファイルの変更](https://wiki.seeedstudio.com/ja/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
 
 :::
 
 ## XIAO nRF54L15 Sense IMU
 
-**6軸 IMU（慣性測定ユニット）** **LSM6DS3TR-C** のようなセンサーは、加速度計とジャイロスコープを統合して、3次元空間における物体の動きと方向を測定します。具体的に、LSM6DS3TR-C には以下の機能があります：
+**6軸IMU（慣性測定ユニット）**センサーである**LSM6DS3TR-C**のようなセンサーは、加速度計とジャイロスコープを統合して、3次元空間における物体の動きと方向を測定します。具体的に、LSM6DS3TR-Cには以下の機能があります：
 
 **加速度計機能：**
 
@@ -41,17 +41,17 @@ VS Code をベースに、nRF Connect SDK で以下のケースを使用した�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/xyz2.0.jpg" style={{width:320, height:'auto'}}/></div>
 
-- **X軸角度（ロール）** は、X軸周りの回転方向の角度です。
-- **Y軸角度（ピッチ）** は、Y軸周りの回転方向の角度です。
-- **Z軸角度（ヨー）** は、Z軸周りの回転方向の角度です。
+- **X軸角度（ロール）**は、X軸周りの回転方向の角度です。
+- **Y軸角度（ピッチ）**は、Y軸周りの回転方向の角度です。
+- **Z軸角度（ヨー）**は、Z軸周りの回転方向の角度です。
 
 ### IMU ドライバー
 
-開発体験を簡素化し、この IMU プログラムでの迅速なスタートを確保するため、必要なドライバーコードの作成に PlatformIO プラットフォームを活用しました。PlatformIO は組み込み開発のための包括的で効率的な環境を提供し、XIAO nRF54L15 Sense にとって理想的な選択肢となっています。
+開発体験を簡素化し、このIMUプログラムでの迅速なスタートを確実にするため、必要なドライバーコードの記述にPlatformIOプラットフォームを活用しました。PlatformIOは組み込み開発のための包括的で効率的な環境を提供し、XIAO nRF54L15 Senseにとって理想的な選択肢となっています。
 
-進める前に、開発環境が正しく設定されていることを確認してください。まだ Seeed Studio XIAO nRF54L15 開発ボードを PlatformIO 設定に追加していない場合は、設定方法の詳細な手順について、この[リンク](http://localhost:3000/xiao_nrf54l15_with_platform_io/)を参照してください。この重要なステップにより、PlatformIO がボードを適切に認識し、コードをコンパイルできるようになります。
+続行する前に、開発環境が正しく設定されていることを確認してください。まだSeeed Studio XIAO nRF54L15開発ボードをPlatformIO設定に追加していない場合は、設定方法の詳細な手順について、この[リンク](http://localhost:3000/xiao_nrf54l15_with_platform_io/)を参照してください。この重要なステップにより、PlatformIOがボードを適切に認識し、コードをコンパイルできるようになります。
 
-- 環境の準備ができたら、IMU ドライバーを使用して LSM6DS3TR-C から生のセンサーデータを読み取ることができます。このデータには以下が含まれます：
+- 環境の準備ができたら、IMUドライバーによってLSM6DS3TR-Cから生のセンサーデータを読み取ることができます。このデータには以下が含まれます：
 
 - 加速度計の生の値（accel raw）：X、Y、Z軸に沿った加速度を表します。
 
@@ -59,11 +59,11 @@ VS Code をベースに、nRF Connect SDK で以下のケースを使用した�
 
 トリガーカウント（trig_cnt）：新しいデータサンプルごとに増加するカウンター。
 
-以下は、PlatformIO Device Monitor に表示される IMU からのシリアル出力の例です。この出力は、デバイスの動きと方向を理解するための基本となる加速度計とジャイロスコープデータのリアルタイム読み取り値を提供します。
+以下は、PlatformIO Device Monitorに表示されるIMUからのシリアル出力の例です。この出力は、デバイスの動きと方向を理解するための基本となる加速度計とジャイロスコープデータのリアルタイム読み取り値を提供します。
 
 <div style={{textAlign:'center'}}>
     <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/imu_display.png" alt="XIAO nRF54L15 BLE Advertising Power Consumption" style={{width:1000, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
-    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em> PlatformIO Device Monitor からのリアルタイム IMU データ出力、生の加速度計とジャイロスコープの読み取り値を表示。</em></p>
+    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em> PlatformIO Device Monitorからのリアルタイム IMU データ出力、生の加速度計とジャイロスコープの読み取り値を表示。</em></p>
 </div>
 
 この生データは、適切なアルゴリズム（例：フィルタリング、センサーフュージョン）を適用することで、単純な動き検出から複雑な方向追跡まで、さまざまなアプリケーションの基礎となります。
@@ -264,8 +264,7 @@ int main(void)
     }
 
     return 0;
-}
-```
+}```
 
 ## XIAO nRF54L15 Sense MIC
 
@@ -532,8 +531,7 @@ int main(void)
     }
 
     return 0;
-}
-```
+}```
 
 次に、プログラムが既に書き込まれていることを前提として、scriptsフォルダディレクトリでターミナルを開き、以下の操作を実行します。
 
