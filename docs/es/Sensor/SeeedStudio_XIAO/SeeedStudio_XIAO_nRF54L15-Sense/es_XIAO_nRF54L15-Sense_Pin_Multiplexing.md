@@ -212,7 +212,8 @@ int main(void)
      <th>Seeed Studio Grove Base for XIAO </th>
  </tr>
  <tr>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/rotary.png" style={{width:500, height:'auto'}}/></div></td>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:500, height:'auto'}}/></div></td>
  </tr>
@@ -948,7 +949,8 @@ static Coordinates transform(Coordinates gps)
  gg.Lat = gps.Lat + dLat;
  gg.Lon = gps.Lon + dLon;
  return gg;
-}```
+}
+```
 
 </details>
 
@@ -962,9 +964,9 @@ static Coordinates transform(Coordinates gps)
 
  -`UBYTE`, `UWORD`, `UDOUBLE:` Estos son alias de tipos enteros sin signo personalizados que mejoran la legibilidad del código al aclarar el tamaño esperado de las variables.
 
-  - `SENTENCE_SIZE, BUFFSIZE:` Estos definen tamaños fijos para buffers utilizados para almacenar sentencias NMEA y buffers de datos más grandes.
+- `SENTENCE_SIZE, BUFFSIZE:` Estos definen tamaños fijos para buffers utilizados para almacenar sentencias NMEA y buffers de datos más grandes.
 
-  - Macros como `HOT_START, SET_NMEA_OUTPUT:` Estas macros definen varios comandos del protocolo NMEA enviados al módulo GPS L76X para configurar su modo de operación, frecuencia de salida, velocidad de baudios, etc.
+- Macros como `HOT_START, SET_NMEA_OUTPUT:` Estas macros definen varios comandos del protocolo NMEA enviados al módulo GPS L76X para configurar su modo de operación, frecuencia de salida, velocidad de baudios, etc.
 
 - Definiciones de Estructuras:
 
@@ -978,9 +980,9 @@ static Coordinates transform(Coordinates gps)
 
  -` GPS: `Una instancia global de estructura GNRMC utilizada para contener los datos GPS analizados.
 
-  - `uart_dev:` Un puntero a la estructura del dispositivo UART, utilizado para comunicación UART.
+- `uart_dev:` Un puntero a la estructura del dispositivo UART, utilizado para comunicación UART.
 
-  - `new_gnrmc_available:` Una bandera booleana volátil que se establece en verdadero cuando se recibe una nueva sentencia GNRMC válida, notificando al bucle principal que hay nuevos datos disponibles para procesamiento.
+- `new_gnrmc_available:` Una bandera booleana volátil que se establece en verdadero cuando se recibe una nueva sentencia GNRMC válida, notificando al bucle principal que hay nuevos datos disponibles para procesamiento.
 
 - Función `uart_callback()`:
 
@@ -1250,7 +1252,7 @@ int main(void) {
 
  -` int pixel_x = col * font_width; `y `int pixel_y = row * font_height;:` Esta función convierte las coordenadas de fila y columna del texto (en unidades de caracteres) a coordenadas de píxeles, haciendo el posicionamiento del texto más intuitivo.
 
-  - `cfb_print():` Esta es la función principal de la biblioteca CFB utilizada para imprimir texto en la ubicación de píxel especificada.
+- `cfb_print():` Esta es la función principal de la biblioteca CFB utilizada para imprimir texto en la ubicación de píxel especificada.
 
 **Bucle Principal**
 La lógica principal del código se ejecuta dentro de un bucle infinito `while (1)`:
@@ -1419,7 +1421,8 @@ int main(void)
         k_sleep(K_MSEC(1000)); // Lower refresh rate, suitable for ePaper
     }
     return 0;
-}```
+}
+```
 
 **Inicialización del Dispositivo:**
 

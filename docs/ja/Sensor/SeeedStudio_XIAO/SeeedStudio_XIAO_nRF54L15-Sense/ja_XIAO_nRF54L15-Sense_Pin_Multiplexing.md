@@ -212,7 +212,8 @@ int main(void)
      <th>Seeed Studio Grove Base for XIAO </th>
  </tr>
  <tr>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/rotary.png" style={{width:500, height:'auto'}}/></div></td>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:500, height:'auto'}}/></div></td>
  </tr>
@@ -948,7 +949,8 @@ static Coordinates transform(Coordinates gps)
  gg.Lat = gps.Lat + dLat;
  gg.Lon = gps.Lon + dLon;
  return gg;
-}```
+}
+```
 
 </details>
 
@@ -962,9 +964,9 @@ static Coordinates transform(Coordinates gps)
 
  -`UBYTE`, `UWORD`, `UDOUBLE:`これらは、変数の期待されるサイズを明確にすることでコードの可読性を向上させるカスタム符号なし整数型エイリアスです。
 
-  - `SENTENCE_SIZE, BUFFSIZE:` これらは NMEA センテンスと大きなデータバッファを格納するために使用されるバッファの固定サイズを定義します。
+- `SENTENCE_SIZE, BUFFSIZE:` これらは NMEA センテンスと大きなデータバッファを格納するために使用されるバッファの固定サイズを定義します。
 
-  - `HOT_START, SET_NMEA_OUTPUT:`などのマクロ：これらのマクロは、L76X GPS モジュールに送信される様々な NMEA プロトコルコマンドを定義し、動作モード、出力頻度、ボーレートなどを設定します。
+- `HOT_START, SET_NMEA_OUTPUT:`などのマクロ：これらのマクロは、L76X GPS モジュールに送信される様々な NMEA プロトコルコマンドを定義し、動作モード、出力頻度、ボーレートなどを設定します。
 
 - 構造体定義：
 
@@ -978,9 +980,9 @@ static Coordinates transform(Coordinates gps)
 
  -` GPS: `解析された GPS データを保持するために使用されるグローバル GNRMC 構造体インスタンスです。
 
-  - `uart_dev:` UART 通信に使用される UART デバイス構造体へのポインタです。
+- `uart_dev:` UART 通信に使用される UART デバイス構造体へのポインタです。
 
-  - `new_gnrmc_available:` 新しい有効な GNRMC センテンスが受信されたときに true に設定される volatile ブール型フラグで、メインループに新しいデータが処理可能であることを通知します。
+- `new_gnrmc_available:` 新しい有効な GNRMC センテンスが受信されたときに true に設定される volatile ブール型フラグで、メインループに新しいデータが処理可能であることを通知します。
 
 - `uart_callback() 関数:`
 
@@ -1250,7 +1252,7 @@ int main(void) {
 
  -` int pixel_x = col * font_width; `と `int pixel_y = row * font_height;:` この関数は、テキストの行と列の座標（文字単位）をピクセル座標に変換し、テキストの配置をより直感的にします。
 
-  - `cfb_print():` これは CFB ライブラリのコア関数で、指定されたピクセル位置にテキストを印刷するために使用されます。
+- `cfb_print():` これは CFB ライブラリのコア関数で、指定されたピクセル位置にテキストを印刷するために使用されます。
 
 **メインループ**
 コードのコアロジックは無限の `while (1)`ループ内で実行されます：
@@ -1419,7 +1421,8 @@ int main(void)
         k_sleep(K_MSEC(1000)); // Lower refresh rate, suitable for ePaper
     }
     return 0;
-}```
+}
+```
 
 **デバイス初期化:**
 

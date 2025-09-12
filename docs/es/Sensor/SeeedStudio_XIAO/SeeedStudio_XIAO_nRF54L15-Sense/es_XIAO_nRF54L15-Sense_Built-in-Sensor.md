@@ -264,7 +264,8 @@ int main(void)
     }
 
     return 0;
-}```
+}
+```
 
 ## XIAO nRF54L15 Sense MIC
 
@@ -531,7 +532,8 @@ int main(void)
     }
 
     return 0;
-}```
+}
+```
 
 A continuación, abra la terminal en el directorio de la carpeta scripts y realice las siguientes operaciones, siempre que el programa ya haya sido grabado.
 
