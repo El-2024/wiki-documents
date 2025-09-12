@@ -68,14 +68,11 @@ const translationStatus = {
   errors: []
 };
 
-// ——新增：围栏检测工具，仅当整行是围栏时才识别为代码块围栏——
+// 围栏识别：只要“行首”是 ≥3 个反引号即视为围栏；
 function countFencesIfLineIsFence(line) {
-  const s = line.replace(/^\s+|\s+$/g, '');
-  // 仅匹配整行均为反引号围栏，可带语言标识
-  if (/^```+[a-zA-Z0-9._+-]*$/.test(s)) {
-    return (s.match(/```+/) || [''])[0].length;
-  }
-  return 0;
+  const s = line.trim();
+  const m = s.match(/^```+/);   // 行首三反引号（含四个以上也可）
+  return m ? m[0].length : 0;
 }
 
 // 预处理文档，添加行号标记（保留缩进）
