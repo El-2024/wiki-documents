@@ -212,7 +212,8 @@ int main(void)
      <th>Seeed Studio Grove Base for XIAO </th>
  </tr>
  <tr>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/rotary.png" style={{width:500, height:'auto'}}/></div></td>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:500, height:'auto'}}/></div></td>
  </tr>
@@ -366,67 +367,68 @@ int main(void)
 
 - Módulo de Registro pot_pwm_example:
 
- 	- LOG_MODULE_REGISTER(pot_pwm_example, CONFIG_LOG_DEFAULT_LEVEL): Esto registra un módulo de registro llamado pot_pwm_example y establece su nivel de registro a la configuración predeterminada del sistema, lo que facilita la depuración.
+  - LOG_MODULE_REGISTER(pot_pwm_example, CONFIG_LOG_DEFAULT_LEVEL): Esto registra un módulo de registro llamado pot_pwm_example y establece su nivel de registro a la configuración predeterminada del sistema, lo que facilita la depuración.
 
 - Configuración ADC:
 
- 	- #if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) ... #endif: Esta directiva de preprocesador es una verificación del Device Tree que asegura que existe un archivo de superposición válido que contiene definiciones de canales ADC. Esto obliga a que el usuario debe proporcionar la configuración correcta para el hardware específico.
+  - #if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) ... #endif: Esta directiva de preprocesador es una verificación del Device Tree que asegura que existe un archivo de superposición válido que contiene definiciones de canales ADC. Esto obliga a que el usuario debe proporcionar la configuración correcta para el hardware específico.
 
- 	- static const struct adc_dt_spec adc_channels[];: Esta parte del código aprovecha el Device Tree de Zephyr para recuperar automáticamente información para todos los canales ADC configurados. Este enfoque hace que el código sea flexible y portable entre diferentes hardware sin cambios manuales de configuración.
+  - static const struct adc_dt_spec adc_channels[];: Esta parte del código aprovecha el Device Tree de Zephyr para recuperar automáticamente información para todos los canales ADC configurados. Este enfoque hace que el código sea flexible y portable entre diferentes hardware sin cambios manuales de configuración.
 
- 	- #define POTENTIOMETER_ADC_CHANNEL_IDX 1: Se define una macro para especificar a qué canal en el array adc_channels está conectado el potenciómetro.
+  - #define POTENTIOMETER_ADC_CHANNEL_IDX 1: Se define una macro para especificar a qué canal en el array adc_channels está conectado el potenciómetro.
 
 - Configuración PWM:
 
- 	- static const struct pwm_dt_spec led = PWM_DT_SPEC_GET(DT_ALIAS(pwm_led));: Esta línea recupera la información del dispositivo PWM para el alias pwm_led del Device Tree. Esta es una práctica estándar de Zephyr para buscar y referenciar dispositivos de hardware.
+  - static const struct pwm_dt_spec led = PWM_DT_SPEC_GET(DT_ALIAS(pwm_led));: Esta línea recupera la información del dispositivo PWM para el alias pwm_led del Device Tree. Esta es una práctica estándar de Zephyr para buscar y referenciar dispositivos de hardware.
 
- 	- #define PWM_PERIOD_NS 1000000UL: Esto define el período de la señal PWM como 1 milisegundo (1,000,000 nanosegundos), lo que corresponde a una frecuencia de 1 kHz. Esta frecuencia es adecuada para el atenuado de LED ya que es lo suficientemente alta para prevenir el parpadeo visible.
+  - #define PWM_PERIOD_NS 1000000UL: Esto define el período de la señal PWM como 1 milisegundo (1,000,000 nanosegundos), lo que corresponde a una frecuencia de 1 kHz. Esta frecuencia es adecuada para el atenuado de LED ya que es lo suficientemente alta para prevenir el parpadeo visible.
 
 **Inicialización y Configuración**
 
 - Información de Registro:
 
- 	- LOG_INF("Starting Zephyr Potentiometer to PWM example...");: Se imprime un mensaje de registro informativo al inicio del programa para notificar al usuario que el ejemplo ha comenzado.
+  - LOG_INF("Starting Zephyr Potentiometer to PWM example...");: Se imprime un mensaje de registro informativo al inicio del programa para notificar al usuario que el ejemplo ha comenzado.
 
 - Inicialización ADC:
 
- 	- !adc_is_ready_dt(): Antes de intentar usar el dispositivo ADC, se realiza una verificación para confirmar que está listo. Si el dispositivo no está listo, se registra un error y el programa sale.
+  - !adc_is_ready_dt(): Antes de intentar usar el dispositivo ADC, se realiza una verificación para confirmar que está listo. Si el dispositivo no está listo, se registra un error y el programa sale.
 
- 	- adc_channel_setup_dt(): Esta función configura el canal ADC específico conectado al potenciómetro, incluyendo su resolución y ganancia.
+  - adc_channel_setup_dt(): Esta función configura el canal ADC específico conectado al potenciómetro, incluyendo su resolución y ganancia.
 
 - Inicialización PWM:
 
- 	- !device_is_ready(led.dev): Similar al ADC, esta línea verifica si el dispositivo PWM está listo. Si no, se registra un error y el programa sale.
+  - !device_is_ready(led.dev): Similar al ADC, esta línea verifica si el dispositivo PWM está listo. Si no, se registra un error y el programa sale.
 
- 	- LOG_INF(...): La información del período PWM y la frecuencia se imprimen para ayudar al usuario a confirmar la configuración.
+  - LOG_INF(...): La información del período PWM y la frecuencia se imprimen para ayudar al usuario a confirmar la configuración.
 
 - Configuración de Secuencia ADC:
 
- 	- struct adc_sequence sequence: Se define una estructura adc_sequence para describir una sola operación de conversión ADC. Especifica el buffer (adc_raw_value) para almacenar el resultado, su tamaño (sizeof(adc_raw_value)), y la resolución ADC a usar.
+  - struct adc_sequence sequence: Se define una estructura adc_sequence para describir una sola operación de conversión ADC. Especifica el buffer (adc_raw_value) para almacenar el resultado, su tamaño (sizeof(adc_raw_value)), y la resolución ADC a usar.
 
 **Bucle Principal**
 La lógica central del código se ejecuta dentro de un bucle infinito while (1):
 
 - Lectura ADC:
- 	- adc_sequence_init_dt(): La secuencia ADC se inicializa para asegurar que se use la configuración correcta para cada lectura.
 
- 	- adc_read(): Esto activa una conversión ADC para leer el valor analógico del potenciómetro. Si la lectura falla, se registra un error y el programa pausa por 100 milisegundos antes de continuar.
+  - adc_sequence_init_dt(): La secuencia ADC se inicializa para asegurar que se use la configuración correcta para cada lectura.
 
- 	- int sensor_value = adc_raw_value;: El valor ADC crudo se asigna a la variable sensor_value.
+  - adc_read(): Esto activa una conversión ADC para leer el valor analógico del potenciómetro. Si la lectura falla, se registra un error y el programa pausa por 100 milisegundos antes de continuar.
+
+  - int sensor_value = adc_raw_value;: El valor ADC crudo se asigna a la variable sensor_value.
 
 - Mapeo del Valor ADC al Ciclo de Trabajo PWM:
 
- 	- uint32_t max_adc_raw: Esto calcula el valor ADC crudo máximo posible.
+  - uint32_t max_adc_raw: Esto calcula el valor ADC crudo máximo posible.
 
- 	- uint32_t output_duty_ns = (PWM_PERIOD_NS * sensor_value) / max_adc_raw;: Esta es la lógica de mapeo central. Escala el valor ADC crudo (sensor_value) proporcionalmente al rango del período PWM (PWM_PERIOD_NS) para obtener un valor de ciclo de trabajo que ajuste el brillo del LED.
+  - uint32_t output_duty_ns = (PWM_PERIOD_NS * sensor_value) / max_adc_raw;: Esta es la lógica de mapeo central. Escala el valor ADC crudo (sensor_value) proporcionalmente al rango del período PWM (PWM_PERIOD_NS) para obtener un valor de ciclo de trabajo que ajuste el brillo del LED.
 
 - Configuración del Ciclo de Trabajo PWM:
 
- 	- pwm_set_dt(): Esta función aplica el ciclo de trabajo recién calculado (output_duty_ns) al dispositivo PWM, cambiando instantáneamente el brillo del LED.
+  - pwm_set_dt(): Esta función aplica el ciclo de trabajo recién calculado (output_duty_ns) al dispositivo PWM, cambiando instantáneamente el brillo del LED.
 
 - Retraso:
 
- 	- k_msleep(100): El programa pausa por 100 milisegundos después de cada bucle. Esto controla la frecuencia de las lecturas ADC y actualizaciones PWM, previniendo carga excesiva de CPU y proporcionando una experiencia de usuario estable.
+  - k_msleep(100): El programa pausa por 100 milisegundos después de cada bucle. Esto controla la frecuencia de las lecturas ADC y actualizaciones PWM, previniendo carga excesiva de CPU y proporcionando una experiencia de usuario estable.
 
 ### Gráfico de resultados
 
@@ -948,7 +950,8 @@ static Coordinates transform(Coordinates gps)
  gg.Lat = gps.Lat + dLat;
  gg.Lon = gps.Lon + dLon;
  return gg;
-}```
+}
+```
 
 </details>
 
@@ -962,61 +965,61 @@ static Coordinates transform(Coordinates gps)
 
  -`UBYTE`, `UWORD`, `UDOUBLE:` Estos son alias de tipos enteros sin signo personalizados que mejoran la legibilidad del código al aclarar el tamaño esperado de las variables.
 
- 	- `SENTENCE_SIZE, BUFFSIZE:` Estos definen tamaños fijos para buffers utilizados para almacenar sentencias NMEA y buffers de datos más grandes.
+- `SENTENCE_SIZE, BUFFSIZE:` Estos definen tamaños fijos para buffers utilizados para almacenar sentencias NMEA y buffers de datos más grandes.
 
- 	- Macros como `HOT_START, SET_NMEA_OUTPUT:` Estas macros definen varios comandos del protocolo NMEA enviados al módulo GPS L76X para configurar su modo de operación, frecuencia de salida, velocidad de baudios, etc.
+- Macros como `HOT_START, SET_NMEA_OUTPUT:` Estas macros definen varios comandos del protocolo NMEA enviados al módulo GPS L76X para configurar su modo de operación, frecuencia de salida, velocidad de baudios, etc.
 
 - Definiciones de Estructuras:
 
- 	- `GNRMC:` Esta estructura se utiliza para almacenar información clave analizada de una sentencia NMEA GNRMC (GPS Recommended Minimum Specific data), incluyendo longitud, latitud, tiempo, estado y direcciones cardinales.
+  - `GNRMC:` Esta estructura se utiliza para almacenar información clave analizada de una sentencia NMEA GNRMC (GPS Recommended Minimum Specific data), incluyendo longitud, latitud, tiempo, estado y direcciones cardinales.
 
- 	- `Coordinates:` Una estructura simple para almacenar la longitud y latitud de una coordenada geográfica.
+  - `Coordinates:` Una estructura simple para almacenar la longitud y latitud de una coordenada geográfica.
 
 - Variables Globales y Constantes:
 
- 	- `buff_t:` Un buffer global de tamaño BUFFSIZE utilizado para almacenar datos UART sin procesar.
+  - `buff_t:` Un buffer global de tamaño BUFFSIZE utilizado para almacenar datos UART sin procesar.
 
  -` GPS: `Una instancia global de estructura GNRMC utilizada para contener los datos GPS analizados.
 
- 	- `uart_dev:` Un puntero a la estructura del dispositivo UART, utilizado para comunicación UART.
+- `uart_dev:` Un puntero a la estructura del dispositivo UART, utilizado para comunicación UART.
 
- 	- `new_gnrmc_available:` Una bandera booleana volátil que se establece en verdadero cuando se recibe una nueva sentencia GNRMC válida, notificando al bucle principal que hay nuevos datos disponibles para procesamiento.
+- `new_gnrmc_available:` Una bandera booleana volátil que se establece en verdadero cuando se recibe una nueva sentencia GNRMC válida, notificando al bucle principal que hay nuevos datos disponibles para procesamiento.
 
 - Función `uart_callback()`:
 
- 	- Esta es una función de callback de interrupción UART que se activa cuando el UART recibe datos.
+  - Esta es una función de callback de interrupción UART que se activa cuando el UART recibe datos.
 
- 	- La función lee el FIFO UART byte por byte y procesa los datos como una sentencia completa cuando se encuentra un carácter de nueva línea \n.
+  - La función lee el FIFO UART byte por byte y procesa los datos como una sentencia completa cuando se encuentra un carácter de nueva línea \n.
 
 **Función Principal main()**
 
 - Inicialización del Sistema:
 
- 	- `nrfx_power_constlat_mode_request():` Solicita un modo de latencia constante para asegurar que la gestión de energía no interfiera con las operaciones en tiempo real.
+  - `nrfx_power_constlat_mode_request():` Solicita un modo de latencia constante para asegurar que la gestión de energía no interfiera con las operaciones en tiempo real.
 
- 	- `uart_dev = DEVICE_DT_GET:` Obtiene el manejador del dispositivo UART y utiliza device_is_ready() para verificar si el dispositivo está listo.
+  - `uart_dev = DEVICE_DT_GET:` Obtiene el manejador del dispositivo UART y utiliza device_is_ready() para verificar si el dispositivo está listo.
 
- 	- `uart_irq_callback_user_data_set()` y `uart_irq_rx_enable():` Estos configuran y habilitan la interrupción de recepción UART, registrando la función uart_callback como el manejador de interrupción para asegurar la recepción asíncrona de datos GPS.
+  - `uart_irq_callback_user_data_set()` y `uart_irq_rx_enable():` Estos configuran y habilitan la interrupción de recepción UART, registrando la función uart_callback como el manejador de interrupción para asegurar la recepción asíncrona de datos GPS.
 
 - Inicialización del Módulo GPS:
 
- 	- `L76X_Send_Command(SET_NMEA_OUTPUT):` Se envía un comando para configurar el módulo GPS para que genere solo sentencias NMEA especificadas como GNRMC, reduciendo el tráfico de datos innecesario.
+  - `L76X_Send_Command(SET_NMEA_OUTPUT):` Se envía un comando para configurar el módulo GPS para que genere solo sentencias NMEA especificadas como GNRMC, reduciendo el tráfico de datos innecesario.
 
  -` L76X_Send_Command(SET_POS_FIX_1S): `Establece la frecuencia de actualización de posición del módulo GPS a 1 segundo.
 
 - Bucle Principal:
 
- 	- El bucle se ejecuta indefinidamente, verificando continuamente la bandera new_gnrmc_available.
+  - El bucle se ejecuta indefinidamente, verificando continuamente la bandera new_gnrmc_available.
 
- 	- Si la bandera es verdadera, copia la última sentencia GPS de latest_gnrmc a buff_t, y luego llama a L76X_Gat_GNRMC() para analizar los datos.
+  - Si la bandera es verdadera, copia la última sentencia GPS de latest_gnrmc a buff_t, y luego llama a L76X_Gat_GNRMC() para analizar los datos.
 
- 	- Basándose en el resultado del análisis, imprime la hora, longitud y latitud WGS-84, y las coordenadas convertidas de Baidu y Google.
+  - Basándose en el resultado del análisis, imprime la hora, longitud y latitud WGS-84, y las coordenadas convertidas de Baidu y Google.
 
- 	- Si GPS.Status es 0, imprime un mensaje de "posicionamiento fallido".
+  - Si GPS.Status es 0, imprime un mensaje de "posicionamiento fallido".
 
- 	- Si no hay nuevos datos disponibles, imprime "No hay nuevos datos GNRMC disponibles."
+  - Si no hay nuevos datos disponibles, imprime "No hay nuevos datos GNRMC disponibles."
 
- 	- k_msleep(2000): El programa hace una pausa de 2 segundos después de cada bucle para controlar la frecuencia de salida.
+  - k_msleep(2000): El programa hace una pausa de 2 segundos después de cada bucle para controlar la frecuencia de salida.
 
 ### Gráfico de resultados
 
@@ -1214,43 +1217,44 @@ int main(void) {
 
     return 0;
 }
+
 ```
 
 **Configuración e Inicialización del Dispositivo de Pantalla**
 
 - Módulo de Log `main_app`:
 
- 	- #define LOG_LEVEL CONFIG_LOG_DEFAULT_LEVEL y LOG_MODULE_REGISTER(main_app, LOG_LEVEL) registran un módulo de log llamado main_app y establecen su nivel de log a la configuración predeterminada del sistema. Esto permite a los desarrolladores depurar fácilmente y generar información a través del sistema de logging de Zephyr.
+  - #define LOG_LEVEL CONFIG_LOG_DEFAULT_LEVEL y LOG_MODULE_REGISTER(main_app, LOG_LEVEL) registran un módulo de log llamado main_app y establecen su nivel de log a la configuración predeterminada del sistema. Esto permite a los desarrolladores depurar fácilmente y generar información a través del sistema de logging de Zephyr.
 
 - Función `display_init()`:
 
- 	- `*dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));:` Esta línea recupera el dispositivo de pantalla elegido del Device Tree de Zephyr. Este enfoque asegura que el código sea independiente del hardware.
+  - `*dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));:` Esta línea recupera el dispositivo de pantalla elegido del Device Tree de Zephyr. Este enfoque asegura que el código sea independiente del hardware.
 
- 	- `display_set_pixel_format(*dev, PIXEL_FORMAT_MONO10):`El código intenta establecer el formato de píxel de la pantalla a PIXEL_FORMAT_MONO10. Si esto falla, entonces intenta PIXEL_FORMAT_MONO01. Esto asegura que la pantalla opere en modo monocromo, lo cual es necesario para algunas tecnologías de pantalla (por ejemplo, OLED o e-Paper).
+  - `display_set_pixel_format(*dev, PIXEL_FORMAT_MONO10):`El código intenta establecer el formato de píxel de la pantalla a PIXEL_FORMAT_MONO10. Si esto falla, entonces intenta PIXEL_FORMAT_MONO01. Esto asegura que la pantalla opere en modo monocromo, lo cual es necesario para algunas tecnologías de pantalla (por ejemplo, OLED o e-Paper).
 
 - Función `framebuffer_setup()`:
 
- 	- `cfb_framebuffer_init(dev):`Esto inicializa el Compact Framebuffer (CFB). CFB es una biblioteca gráfica ligera en Zephyr utilizada para dibujar texto y gráficos simples en pantallas.
+  - `cfb_framebuffer_init(dev):`Esto inicializa el Compact Framebuffer (CFB). CFB es una biblioteca gráfica ligera en Zephyr utilizada para dibujar texto y gráficos simples en pantallas.
 
- 	- `cfb_framebuffer_clear(dev, true):`Esto limpia el framebuffer e inmediatamente escribe su contenido a la pantalla, asegurando una pantalla limpia.
+  - `cfb_framebuffer_clear(dev, true):`Esto limpia el framebuffer e inmediatamente escribe su contenido a la pantalla, asegurando una pantalla limpia.
 
- 	- `display_blanking_off(dev):`Esto desactiva la función de blanking de la pantalla, que típicamente es una señal de que la pantalla está lista para recibir datos y mostrar una imagen.
+  - `display_blanking_off(dev):`Esto desactiva la función de blanking de la pantalla, que típicamente es una señal de que la pantalla está lista para recibir datos y mostrar una imagen.
 
 - Función `select_font()`:
 
- 	- `cfb_get_font_size():`Esta función recorre las fuentes disponibles para encontrar una adecuada.
+  - `cfb_get_font_size():`Esta función recorre las fuentes disponibles para encontrar una adecuada.
 
- 	- El código prioriza una fuente de píxeles` 8x8 `, ya que es una fuente pequeña común y fácil de leer.
+  - El código prioriza una fuente de píxeles` 8x8 `, ya que es una fuente pequeña común y fácil de leer.
 
- 	- Si no se encuentra una fuente `8x8`, selecciona la primera fuente disponible de tamaño no cero como respaldo.
+  - Si no se encuentra una fuente `8x8`, selecciona la primera fuente disponible de tamaño no cero como respaldo.
 
- 	- `cfb_framebuffer_set_font(dev, chosen_font_idx):` Una vez que se encuentra una fuente adecuada, se establece como la fuente actual para el framebuffer.
+  - `cfb_framebuffer_set_font(dev, chosen_font_idx):` Una vez que se encuentra una fuente adecuada, se establece como la fuente actual para el framebuffer.
 
 - Función `print_text_by_row_col()`:
 
  -` int pixel_x = col * font_width; `y `int pixel_y = row * font_height;:` Esta función convierte las coordenadas de fila y columna del texto (en unidades de caracteres) a coordenadas de píxeles, haciendo el posicionamiento del texto más intuitivo.
 
- 	- `cfb_print():` Esta es la función principal de la biblioteca CFB utilizada para imprimir texto en la ubicación de píxel especificada.
+- `cfb_print():` Esta es la función principal de la biblioteca CFB utilizada para imprimir texto en la ubicación de píxel especificada.
 
 **Bucle Principal**
 La lógica central del código se ejecuta dentro de un bucle infinito `while (1)`:
@@ -1259,13 +1263,13 @@ La lógica central del código se ejecuta dentro de un bucle infinito `while (1)
 
 - Imprimiendo Texto:
 
- 	- Se definen dos cadenas, `line1_text` y `line2_text`.
+  - Se definen dos cadenas, `line1_text` y `line2_text`.
 
- 	- print_text_by_row_col(): La función personalizada se utiliza para imprimir estas dos líneas de texto en posiciones específicas de fila y columna en la pantalla. La primera línea se imprime en `(1, 2)` y la segunda línea en `(2, 1).`
+  - print_text_by_row_col(): La función personalizada se utiliza para imprimir estas dos líneas de texto en posiciones específicas de fila y columna en la pantalla. La primera línea se imprime en `(1, 2)` y la segunda línea en `(2, 1).`
 
- 	- Refrescando la Pantalla: `cfb_framebuffer_finalize(dev)`: Esta función envía todos los comandos de dibujo pendientes del framebuffer a la pantalla de una vez, haciendo que todo el contenido aparezca simultáneamente.
+  - Refrescando la Pantalla: `cfb_framebuffer_finalize(dev)`: Esta función envía todos los comandos de dibujo pendientes del framebuffer a la pantalla de una vez, haciendo que todo el contenido aparezca simultáneamente.
 
- 	- Retraso: `k_sleep(K_MSEC(1000)):` Después de cada bucle, el programa hace una pausa de 1000 milisegundos (1 segundo). Esto controla la frecuencia de actualización de la pantalla, lo cual es adecuado para aplicaciones que muestran información estática, como un reloj o datos de sensores, de manera estable.
+  - Retraso: `k_sleep(K_MSEC(1000)):` Después de cada bucle, el programa hace una pausa de 1000 milisegundos (1 segundo). Esto controla la frecuencia de actualización de la pantalla, lo cual es adecuado para aplicaciones que muestran información estática, como un reloj o datos de sensores, de manera estable.
 
 ### Gráfico de resultado
 
@@ -1419,7 +1423,8 @@ int main(void)
         k_sleep(K_MSEC(1000)); // Lower refresh rate, suitable for ePaper
     }
     return 0;
-}```
+}
+```
 
 **Inicialización del Dispositivo:**
 
@@ -1449,11 +1454,11 @@ int main(void)
 
 - Etiquetas:
 
- 	- `lv_label_create()` se usa para crear etiquetas de texto.
+  - `lv_label_create()` se usa para crear etiquetas de texto.
 
- 	- `lv_label_set_text()` establece el contenido de texto de las etiquetas.
+  - `lv_label_set_text()` establece el contenido de texto de las etiquetas.
 
- 	- `lv_obj_set_style_text_color()` y lv_obj_set_style_text_font() se usan para establecer el color del texto y el tamaño de fuente.
+  - `lv_obj_set_style_text_color()` y lv_obj_set_style_text_font() se usan para establecer el color del texto y el tamaño de fuente.
 
 - La función `lv_obj_align()` coloca cada etiqueta en una ubicación específica en la pantalla, como centro, arriba-derecha, abajo-izquierda, y abajo-derecha.
 

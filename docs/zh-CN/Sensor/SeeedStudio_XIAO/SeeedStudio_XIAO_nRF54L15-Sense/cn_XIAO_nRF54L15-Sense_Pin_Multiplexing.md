@@ -212,7 +212,8 @@ int main(void)
      <th>Seeed Studio Grove Base for XIAO </th>
  </tr>
  <tr>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/rotary.png" style={{width:500, height:'auto'}}/></div></td>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:500, height:'auto'}}/></div></td>
  </tr>
@@ -948,7 +949,8 @@ static Coordinates transform(Coordinates gps)
  gg.Lat = gps.Lat + dLat;
  gg.Lon = gps.Lon + dLon;
  return gg;
-}```
+}
+```
 
 </details>
 
@@ -1419,7 +1421,8 @@ int main(void)
         k_sleep(K_MSEC(1000)); // Lower refresh rate, suitable for ePaper
     }
     return 0;
-}```
+}
+```
 
 **设备初始化：**
 

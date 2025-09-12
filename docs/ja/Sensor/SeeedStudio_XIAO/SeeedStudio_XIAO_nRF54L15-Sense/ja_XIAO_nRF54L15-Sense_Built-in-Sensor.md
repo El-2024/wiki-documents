@@ -264,7 +264,8 @@ int main(void)
     }
 
     return 0;
-}```
+}
+```
 
 ## XIAO nRF54L15 Sense MIC
 
@@ -531,7 +532,8 @@ int main(void)
     }
 
     return 0;
-}```
+}
+```
 
 次に、プログラムが既に書き込まれていることを前提として、scriptsフォルダディレクトリでターミナルを開き、以下の操作を実行します。
 

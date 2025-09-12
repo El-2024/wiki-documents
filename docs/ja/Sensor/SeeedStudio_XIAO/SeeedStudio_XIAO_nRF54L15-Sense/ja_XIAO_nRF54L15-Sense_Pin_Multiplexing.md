@@ -212,7 +212,8 @@ int main(void)
      <th>Seeed Studio Grove Base for XIAO </th>
  </tr>
  <tr>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/2-101991422-XIAO-nRF54L15-Sense.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/10.jpg" style={{width:500, height:'auto'}}/></div></td>
      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/rotary.png" style={{width:500, height:'auto'}}/></div></td>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:500, height:'auto'}}/></div></td>
  </tr>
@@ -366,67 +367,67 @@ int main(void)
 
 - pot_pwm_example ログモジュール：
 
- 	- LOG_MODULE_REGISTER(pot_pwm_example, CONFIG_LOG_DEFAULT_LEVEL)：これはpot_pwm_exampleという名前のログモジュールを登録し、そのログレベルをシステムのデフォルト設定に設定します。これによりデバッグが容易になります。
+  - LOG_MODULE_REGISTER(pot_pwm_example, CONFIG_LOG_DEFAULT_LEVEL)：これはpot_pwm_exampleという名前のログモジュールを登録し、そのログレベルをシステムのデフォルト設定に設定します。これによりデバッグが容易になります。
 
 - ADC設定：
 
- 	- #if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) ... #endif：このプリプロセッサディレクティブは、ADCチャンネル定義を含む有効なオーバーレイファイルが存在することを確認するDevice Treeチェックです。これにより、ユーザーは特定のハードウェアに対して正しい設定を提供する必要があります。
+  - #if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) ... #endif：このプリプロセッサディレクティブは、ADCチャンネル定義を含む有効なオーバーレイファイルが存在することを確認するDevice Treeチェックです。これにより、ユーザーは特定のハードウェアに対して正しい設定を提供する必要があります。
 
- 	- static const struct adc_dt_spec adc_channels[];：このコードの部分は、ZephyrのDevice Treeを活用して、設定されたすべてのADCチャンネルの情報を自動的に取得します。このアプローチにより、コードは柔軟性があり、手動設定変更なしに異なるハードウェア間で移植可能になります。
+  - static const struct adc_dt_spec adc_channels[];：このコードの部分は、ZephyrのDevice Treeを活用して、設定されたすべてのADCチャンネルの情報を自動的に取得します。このアプローチにより、コードは柔軟性があり、手動設定変更なしに異なるハードウェア間で移植可能になります。
 
- 	- #define POTENTIOMETER_ADC_CHANNEL_IDX 1：ポテンショメータが接続されているadc_channels配列内のチャンネルを指定するマクロが定義されています。
+  - #define POTENTIOMETER_ADC_CHANNEL_IDX 1：ポテンショメータが接続されているadc_channels配列内のチャンネルを指定するマクロが定義されています。
 
 - PWM設定：
 
- 	- static const struct pwm_dt_spec led = PWM_DT_SPEC_GET(DT_ALIAS(pwm_led));：この行は、Device Treeからエイリアスpwm_ledのPWMデバイス情報を取得します。これは、ハードウェアデバイスを検索および参照するための標準的なZephyrの手法です。
+  - static const struct pwm_dt_spec led = PWM_DT_SPEC_GET(DT_ALIAS(pwm_led));：この行は、Device Treeからエイリアスpwm_ledのPWMデバイス情報を取得します。これは、ハードウェアデバイスを検索および参照するための標準的なZephyrの手法です。
 
- 	- #define PWM_PERIOD_NS 1000000UL：これはPWM信号周期を1ミリ秒（1,000,000ナノ秒）として定義し、これは1 kHzの周波数に対応します。この周波数は、目に見えるちらつきを防ぐのに十分高いため、LED調光に適しています。
+  - #define PWM_PERIOD_NS 1000000UL：これはPWM信号周期を1ミリ秒（1,000,000ナノ秒）として定義し、これは1 kHzの周波数に対応します。この周波数は、目に見えるちらつきを防ぐのに十分高いため、LED調光に適しています。
 
 **初期化とセットアップ**
 
 - ログ情報：
 
- 	- LOG_INF("Starting Zephyr Potentiometer to PWM example...");：プログラムの開始時に情報ログメッセージが出力され、例が開始されたことをユーザーに通知します。
+  - LOG_INF("Starting Zephyr Potentiometer to PWM example...");：プログラムの開始時に情報ログメッセージが出力され、例が開始されたことをユーザーに通知します。
 
 - ADC初期化：
 
- 	- !adc_is_ready_dt()：ADCデバイスを使用する前に、デバイスが準備完了であることを確認するチェックが実行されます。デバイスが準備できていない場合、エラーがログに記録され、プログラムが終了します。
+  - !adc_is_ready_dt()：ADCデバイスを使用する前に、デバイスが準備完了であることを確認するチェックが実行されます。デバイスが準備できていない場合、エラーがログに記録され、プログラムが終了します。
 
- 	- adc_channel_setup_dt()：この関数は、ポテンショメータに接続された特定のADCチャンネルを、その解像度とゲインを含めて設定します。
+  - adc_channel_setup_dt()：この関数は、ポテンショメータに接続された特定のADCチャンネルを、その解像度とゲインを含めて設定します。
 
 - PWM初期化：
 
- 	- !device_is_ready(led.dev)：ADCと同様に、この行はPWMデバイスが準備完了かどうかをチェックします。準備できていない場合、エラーがログに記録され、プログラムが終了します。
+  - !device_is_ready(led.dev)：ADCと同様に、この行はPWMデバイスが準備完了かどうかをチェックします。準備できていない場合、エラーがログに記録され、プログラムが終了します。
 
- 	- LOG_INF(...)：PWM周期と周波数情報が出力され、ユーザーが設定を確認できるようになります。
+  - LOG_INF(...)：PWM周期と周波数情報が出力され、ユーザーが設定を確認できるようになります。
 
 - ADCシーケンス設定：
 
- 	- struct adc_sequence sequence：単一のADC変換操作を記述するためのadc_sequence構造体が定義されます。これは結果を格納するバッファ（adc_raw_value）、そのサイズ（sizeof(adc_raw_value)）、および使用するADC解像度を指定します。
+  - struct adc_sequence sequence：単一のADC変換操作を記述するためのadc_sequence構造体が定義されます。これは結果を格納するバッファ（adc_raw_value）、そのサイズ（sizeof(adc_raw_value)）、および使用するADC解像度を指定します。
 
 **メインループ**
 コードの中核ロジックは無限のwhile (1)ループ内で実行されます：
 
 - ADC読み取り：
- 	- adc_sequence_init_dt(): ADCシーケンスを初期化して、各読み取りで正しい設定が使用されることを確保します。
+  - adc_sequence_init_dt(): ADCシーケンスを初期化して、各読み取りで正しい設定が使用されることを確保します。
 
- 	- adc_read(): これはADC変換をトリガーして、ポテンショメータからアナログ値を読み取ります。読み取りが失敗した場合、エラーがログに記録され、プログラムは100ミリ秒間一時停止してから続行します。
+  - adc_read(): これはADC変換をトリガーして、ポテンショメータからアナログ値を読み取ります。読み取りが失敗した場合、エラーがログに記録され、プログラムは100ミリ秒間一時停止してから続行します。
 
- 	- int sensor_value = adc_raw_value;: 生のADC値がsensor_value変数に割り当てられます。
+  - int sensor_value = adc_raw_value;: 生のADC値がsensor_value変数に割り当てられます。
 
 - ADC値のPWMデューティサイクルへのマッピング:
 
- 	- uint32_t max_adc_raw: これは可能な最大生ADC値を計算します。
+  - uint32_t max_adc_raw: これは可能な最大生ADC値を計算します。
 
- 	- uint32_t output_duty_ns = (PWM_PERIOD_NS * sensor_value) / max_adc_raw;: これがコアマッピングロジックです。生ADC値（sensor_value）をPWM周期（PWM_PERIOD_NS）の範囲に比例してスケールし、LEDの明るさを調整するデューティサイクル値を取得します。
+  - uint32_t output_duty_ns = (PWM_PERIOD_NS * sensor_value) / max_adc_raw;: これがコアマッピングロジックです。生ADC値（sensor_value）をPWM周期（PWM_PERIOD_NS）の範囲に比例してスケールし、LEDの明るさを調整するデューティサイクル値を取得します。
 
 - PWMデューティサイクルの設定:
 
- 	- pwm_set_dt(): この関数は新しく計算されたデューティサイクル（output_duty_ns）をPWMデバイスに適用し、LEDの明るさを即座に変更します。
+  - pwm_set_dt(): この関数は新しく計算されたデューティサイクル（output_duty_ns）をPWMデバイスに適用し、LEDの明るさを即座に変更します。
 
 - 遅延:
 
- 	- k_msleep(100): プログラムは各ループの後に100ミリ秒間一時停止します。これはADC読み取りとPWM更新の頻度を制御し、過度のCPU負荷を防ぎ、安定したユーザーエクスペリエンスを提供します。
+  - k_msleep(100): プログラムは各ループの後に100ミリ秒間一時停止します。これはADC読み取りとPWM更新の頻度を制御し、過度のCPU負荷を防ぎ、安定したユーザーエクスペリエンスを提供します。
 
 ### 結果グラフ
 
@@ -948,7 +949,8 @@ static Coordinates transform(Coordinates gps)
  gg.Lat = gps.Lat + dLat;
  gg.Lon = gps.Lon + dLon;
  return gg;
-}```
+}
+```
 
 </details>
 
@@ -962,61 +964,61 @@ static Coordinates transform(Coordinates gps)
 
  -`UBYTE`, `UWORD`, `UDOUBLE:`これらは、変数の期待されるサイズを明確にすることでコードの可読性を向上させるカスタム符号なし整数型エイリアスです。
 
- 	- `SENTENCE_SIZE, BUFFSIZE:` これらは NMEA センテンスとより大きなデータバッファを格納するために使用されるバッファの固定サイズを定義します。
+  - `SENTENCE_SIZE, BUFFSIZE:` これらは NMEA センテンスとより大きなデータバッファを格納するために使用されるバッファの固定サイズを定義します。
 
- 	- `HOT_START, SET_NMEA_OUTPUT:`などのマクロ：これらのマクロは、L76X GPS モジュールに送信される様々な NMEA プロトコルコマンドを定義し、動作モード、出力頻度、ボーレートなどを設定します。
+  - `HOT_START, SET_NMEA_OUTPUT:`などのマクロ：これらのマクロは、L76X GPS モジュールに送信される様々な NMEA プロトコルコマンドを定義し、動作モード、出力頻度、ボーレートなどを設定します。
 
 - 構造体定義：
 
- 	- `GNRMC:` この構造体は、GNRMC（GPS Recommended Minimum Specific data）NMEA センテンスから解析された主要情報（経度、緯度、時刻、ステータス、方位）を格納するために使用されます。
+  - `GNRMC:` この構造体は、GNRMC（GPS Recommended Minimum Specific data）NMEA センテンスから解析された主要情報（経度、緯度、時刻、ステータス、方位）を格納するために使用されます。
 
- 	- `Coordinates:` 地理座標の経度と緯度を格納するシンプルな構造体です。
+  - `Coordinates:` 地理座標の経度と緯度を格納するシンプルな構造体です。
 
 - グローバル変数と定数：
 
- 	- `buff_t:` 生の UART データを格納するために使用される BUFFSIZE サイズのグローバルバッファです。
+  - `buff_t:` 生の UART データを格納するために使用される BUFFSIZE サイズのグローバルバッファです。
 
  -` GPS: `解析された GPS データを保持するために使用されるグローバル GNRMC 構造体インスタンスです。
 
- 	- `uart_dev:` UART 通信に使用される UART デバイス構造体へのポインタです。
+  - `uart_dev:` UART 通信に使用される UART デバイス構造体へのポインタです。
 
- 	- `new_gnrmc_available:` 新しい有効な GNRMC センテンスが受信されたときに true に設定される volatile ブール型フラグで、メインループに新しいデータが処理可能であることを通知します。
+  - `new_gnrmc_available:` 新しい有効な GNRMC センテンスが受信されたときに true に設定される volatile ブール型フラグで、メインループに新しいデータが処理可能であることを通知します。
 
 - `uart_callback() 関数:`
 
- 	- これは UART がデータを受信したときにトリガーされる UART 割り込みコールバック関数です。
+  - これは UART がデータを受信したときにトリガーされる UART 割り込みコールバック関数です。
 
- 	- この関数は UART FIFO からバイト単位でデータを読み取り、改行文字 \n に遭遇したときに完全なセンテンスとしてデータを処理します。
+  - この関数は UART FIFO からバイト単位でデータを読み取り、改行文字 \n に遭遇したときに完全なセンテンスとしてデータを処理します。
 
 **メイン関数 main()**
 
 - システム初期化：
 
- 	- `nrfx_power_constlat_mode_request():` 電源管理がリアルタイム動作を妨げないように、定常レイテンシモードを要求します。
+  - `nrfx_power_constlat_mode_request():` 電源管理がリアルタイム動作を妨げないように、定常レイテンシモードを要求します。
 
- 	- `uart_dev = DEVICE_DT_GET:` UART デバイスハンドルを取得し、device_is_ready() を使用してデバイスが準備完了かどうかを確認します。
+  - `uart_dev = DEVICE_DT_GET:` UART デバイスハンドルを取得し、device_is_ready() を使用してデバイスが準備完了かどうかを確認します。
 
- 	- `uart_irq_callback_user_data_set()`と `uart_irq_rx_enable():`これらは UART 受信割り込みを設定・有効化し、uart_callback 関数を割り込みハンドラとして登録して GPS データの非同期受信を確保します。
+  - `uart_irq_callback_user_data_set()`と `uart_irq_rx_enable():`これらは UART 受信割り込みを設定・有効化し、uart_callback 関数を割り込みハンドラとして登録して GPS データの非同期受信を確保します。
 
 - GPS モジュール初期化：
 
- 	- `L76X_Send_Command(SET_NMEA_OUTPUT):`GPS モジュールが GNRMC などの指定された NMEA センテンスのみを出力するように設定するコマンドを送信し、不要なデータトラフィックを削減します。
+  - `L76X_Send_Command(SET_NMEA_OUTPUT):`GPS モジュールが GNRMC などの指定された NMEA センテンスのみを出力するように設定するコマンドを送信し、不要なデータトラフィックを削減します。
 
  -` L76X_Send_Command(SET_POS_FIX_1S): `GPS モジュールの位置更新頻度を 1 秒に設定します。
 
 - メインループ：
 
- 	- ループは無限に実行され、new_gnrmc_available フラグを継続的にチェックします。
+  - ループは無限に実行され、new_gnrmc_available フラグを継続的にチェックします。
 
- 	- フラグが true の場合、latest_gnrmc から buff_t に最新の GPS センテンスをコピーし、その後 L76X_Gat_GNRMC() を呼び出してデータを解析します。
+  - フラグが true の場合、latest_gnrmc から buff_t に最新の GPS センテンスをコピーし、その後 L76X_Gat_GNRMC() を呼び出してデータを解析します。
 
- 	- 解析結果に基づいて、時刻、WGS-84 経度・緯度、および変換された百度・Google 座標を出力します。
+  - 解析結果に基づいて、時刻、WGS-84 経度・緯度、および変換された百度・Google 座標を出力します。
 
- 	- GPS.Status が 0 の場合、「測位失敗」メッセージを出力します。
+  - GPS.Status が 0 の場合、「測位失敗」メッセージを出力します。
 
- 	- 新しいデータが利用できない場合、「新しい GNRMC データが利用できません。」を出力します。
+  - 新しいデータが利用できない場合、「新しい GNRMC データが利用できません。」を出力します。
 
- 	- k_msleep(2000): プログラムは各ループ後に 2 秒間一時停止して出力頻度を制御します。
+  - k_msleep(2000): プログラムは各ループ後に 2 秒間一時停止して出力頻度を制御します。
 
 ### 結果グラフ
 
@@ -1220,37 +1222,37 @@ int main(void) {
 
 - `main_app` ログモジュール：
 
- 	- #define LOG_LEVEL CONFIG_LOG_DEFAULT_LEVEL と LOG_MODULE_REGISTER(main_app, LOG_LEVEL) は、main_app という名前のログモジュールを登録し、そのログレベルをシステムのデフォルト設定に設定します。これにより、開発者は Zephyr のログシステムを通じて簡単にデバッグと情報出力を行うことができます。
+  - #define LOG_LEVEL CONFIG_LOG_DEFAULT_LEVEL と LOG_MODULE_REGISTER(main_app, LOG_LEVEL) は、main_app という名前のログモジュールを登録し、そのログレベルをシステムのデフォルト設定に設定します。これにより、開発者は Zephyr のログシステムを通じて簡単にデバッグと情報出力を行うことができます。
 
 - `display_init()` 関数：
 
- 	- `*dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));:` この行は、Zephyr Device Tree から選択されたディスプレイデバイスを取得します。このアプローチにより、コードがハードウェアに依存しないことが保証されます。
+  - `*dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));:` この行は、Zephyr Device Tree から選択されたディスプレイデバイスを取得します。このアプローチにより、コードがハードウェアに依存しないことが保証されます。
 
- 	- `display_set_pixel_format(*dev, PIXEL_FORMAT_MONO10):`コードはディスプレイのピクセル形式を PIXEL_FORMAT_MONO10 に設定しようとします。これが失敗した場合、PIXEL_FORMAT_MONO01 を試します。これにより、ディスプレイがモノクロームモードで動作することが保証され、一部のディスプレイ技術（例：OLED や e-Paper）に必要です。
+  - `display_set_pixel_format(*dev, PIXEL_FORMAT_MONO10):`コードはディスプレイのピクセル形式を PIXEL_FORMAT_MONO10 に設定しようとします。これが失敗した場合、PIXEL_FORMAT_MONO01 を試します。これにより、ディスプレイがモノクロームモードで動作することが保証され、一部のディスプレイ技術（例：OLED や e-Paper）に必要です。
 
 - `framebuffer_setup()` 関数：
 
- 	- `cfb_framebuffer_init(dev):`これは Compact Framebuffer（CFB）を初期化します。CFB は Zephyr の軽量グラフィックスライブラリで、ディスプレイにテキストと簡単なグラフィックスを描画するために使用されます。
+  - `cfb_framebuffer_init(dev):`これは Compact Framebuffer（CFB）を初期化します。CFB は Zephyr の軽量グラフィックスライブラリで、ディスプレイにテキストと簡単なグラフィックスを描画するために使用されます。
 
- 	- `cfb_framebuffer_clear(dev, true):`これはフレームバッファをクリアし、その内容を即座にディスプレイに書き込み、クリーンな画面を保証します。
+  - `cfb_framebuffer_clear(dev, true):`これはフレームバッファをクリアし、その内容を即座にディスプレイに書き込み、クリーンな画面を保証します。
 
- 	- `display_blanking_off(dev):`これはディスプレイのブランキング機能をオフにします。これは通常、ディスプレイがデータを受信して画像を表示する準備ができたことを示す信号です。
+  - `display_blanking_off(dev):`これはディスプレイのブランキング機能をオフにします。これは通常、ディスプレイがデータを受信して画像を表示する準備ができたことを示す信号です。
 
 - `select_font()` 関数：
 
- 	- `cfb_get_font_size():`この関数は利用可能なフォントをループして適切なものを見つけます。
+  - `cfb_get_font_size():`この関数は利用可能なフォントをループして適切なものを見つけます。
 
- 	- コードは` 8x8 `ピクセルフォントを優先します。これは一般的で読みやすい小さなフォントだからです。
+  - コードは` 8x8 `ピクセルフォントを優先します。これは一般的で読みやすい小さなフォントだからです。
 
- 	- `8x8` フォントが見つからない場合、フォールバックとして最初に利用可能な非ゼロサイズのフォントを選択します。
+  - `8x8` フォントが見つからない場合、フォールバックとして最初に利用可能な非ゼロサイズのフォントを選択します。
 
- 	- `cfb_framebuffer_set_font(dev, chosen_font_idx):` 適切なフォントが見つかると、それがフレームバッファの現在のフォントとして設定されます。
+  - `cfb_framebuffer_set_font(dev, chosen_font_idx):` 適切なフォントが見つかると、それがフレームバッファの現在のフォントとして設定されます。
 
 - `print_text_by_row_col()` 関数：
 
  -` int pixel_x = col * font_width; `と `int pixel_y = row * font_height;:` この関数は、テキストの行と列の座標（文字単位）をピクセル座標に変換し、テキストの配置をより直感的にします。
 
- 	- `cfb_print():` これは CFB ライブラリのコア関数で、指定されたピクセル位置にテキストを印刷するために使用されます。
+  - `cfb_print():` これは CFB ライブラリのコア関数で、指定されたピクセル位置にテキストを印刷するために使用されます。
 
 **メインループ**
 コードのコアロジックは無限の `while (1)`ループ内で実行されます：
@@ -1259,13 +1261,13 @@ int main(void) {
 
 - テキストの印刷：
 
- 	- 2つの文字列、`line1_text` と `line2_text` が定義されます。
+  - 2つの文字列、`line1_text` と `line2_text` が定義されます。
 
- 	- print_text_by_row_col(): カスタム関数を使用して、これら2行のテキストを画面上の指定された行と列の位置に印刷します。最初の行は `(1, 2)` に、2番目の行は `(2, 1)` に印刷されます。
+  - print_text_by_row_col(): カスタム関数を使用して、これら2行のテキストを画面上の指定された行と列の位置に印刷します。最初の行は `(1, 2)` に、2番目の行は `(2, 1)` に印刷されます。
 
- 	- ディスプレイの更新：`cfb_framebuffer_finalize(dev)`: この関数は、フレームバッファからディスプレイに保留中のすべての描画コマンドを一度に送信し、すべてのコンテンツを同時に表示させます。
+  - ディスプレイの更新：`cfb_framebuffer_finalize(dev)`: この関数は、フレームバッファからディスプレイに保留中のすべての描画コマンドを一度に送信し、すべてのコンテンツを同時に表示させます。
 
- 	- 遅延：`k_sleep(K_MSEC(1000)):` 各ループの後、プログラムは1000ミリ秒（1秒）一時停止します。これは画面更新頻度を制御し、時計やセンサーデータなどの静的情報を安定した方法で表示するアプリケーションに適しています。
+  - 遅延：`k_sleep(K_MSEC(1000)):` 各ループの後、プログラムは1000ミリ秒（1秒）一時停止します。これは画面更新頻度を制御し、時計やセンサーデータなどの静的情報を安定した方法で表示するアプリケーションに適しています。
 
 ### 結果グラフ
 
@@ -1419,7 +1421,8 @@ int main(void)
         k_sleep(K_MSEC(1000)); // Lower refresh rate, suitable for ePaper
     }
     return 0;
-}```
+}
+```
 
 **デバイス初期化:**
 
@@ -1449,11 +1452,11 @@ int main(void)
 
 - ラベル:
 
- 	- `lv_label_create()`を使用してテキストラベルを作成します。
+  - `lv_label_create()`を使用してテキストラベルを作成します。
 
- 	- `lv_label_set_text()`でラベルのテキスト内容を設定します。
+  - `lv_label_set_text()`でラベルのテキスト内容を設定します。
 
- 	- `lv_obj_set_style_text_color()`とlv_obj_set_style_text_font()を使用してテキストの色とフォントサイズを設定します。
+  - `lv_obj_set_style_text_color()`とlv_obj_set_style_text_font()を使用してテキストの色とフォントサイズを設定します。
 
 - `lv_obj_align()`関数は、各ラベルを画面上の特定の場所（中央、右上、左下、右下など）に配置します。
 

@@ -68,6 +68,16 @@ const translationStatus = {
   errors: []
 };
 
+// ——新增：围栏检测工具，仅当整行是围栏时才识别为代码块围栏——
+function countFencesIfLineIsFence(line) {
+  const s = line.replace(/^\s+|\s+$/g, '');
+  // 仅匹配整行均为反引号围栏，可带语言标识
+  if (/^```+[a-zA-Z0-9._+-]*$/.test(s)) {
+    return (s.match(/```+/) || [''])[0].length;
+  }
+  return 0;
+}
+
 // 预处理文档，添加行号标记（保留缩进）
 // PATCH: 新增 startsInsideCodeBlock/endsInsideCodeBlock，用于跨分块延续代码块状态
 function preprocessDocument(content, startsInsideCodeBlock = false) {
@@ -83,19 +93,18 @@ function preprocessDocument(content, startsInsideCodeBlock = false) {
     const indent = indentMatch ? indentMatch[1] : '';
     const trimmedContent = line.slice(indent.length);
 
-    // 是否为围栏行（```、```js 等）
-    const isFence = trimmedContent.trim().startsWith('```');
+    // 仅将整行围栏视为代码块围栏（避免误伤行内多反引号）
+    const fenceLen = countFencesIfLineIsFence(trimmedContent);
     // 保存每行的元数据
     const meta = {
       originalLine: line,
       indent: indent,
       content: trimmedContent,
       isEmpty: line.trim() === '',
-      inCodeBlockLine: false, // 新增：标记该行是否属于代码块（含围栏行）
+      inCodeBlockLine: false, // 标记该行是否属于代码块（含围栏行）
     };
 
-    // 根据围栏切换代码块状态，并标记当前行
-    if (isFence) {
+    if (fenceLen >= 3) {
       meta.inCodeBlockLine = true;
       inCodeBlock = !inCodeBlock;
     } else if (inCodeBlock) {
@@ -127,67 +136,46 @@ function preprocessDocument(content, startsInsideCodeBlock = false) {
   };
 }
 
-// 后处理移除标记并恢复缩进
-function postprocessDocument(translatedContent, lineMetadata, totalLines) {
-  const translatedLines = translatedContent.split('\n');
-  const finalLines = [];
+// 后处理移除标记并恢复缩进（严格按 [LINE_i] 对齐）
+function postprocessDocument_strict(translatedContent, lineMetadata, totalLines) {
+  const out = new Array(totalLines);
+  const lines = translatedContent.split('\n');
 
-  for (let i = 0; i < totalLines; i++) {
-    const metadata = lineMetadata[i];
+  for (const line of lines) {
+    const m = line.match(/^\[LINE_(\d+)\](.*)$/);
+    if (!m) continue; // 没有行号的译文行直接忽略（防御性）
+    const idx = Number(m[1]);
+    if (Number.isNaN(idx) || idx < 0 || idx >= totalLines) continue;
 
-    if (i >= translatedLines.length) {
-      // 如果译文行数不够，使用原文
-      console.log(`⚠️ 第${i+1}行缺失，使用原文`);
-      finalLines.push(metadata.originalLine);
-      continue;
-    }
-
-    let translatedLine = translatedLines[i];
-
-    // 移除行号标记
-    translatedLine = translatedLine.replace(/^\[LINE_\d+\]/, '');
+    let payload = m[2];
 
     // 处理空行
-    if (translatedLine.includes('[EMPTY_LINE]')) {
-      finalLines.push('');
+    if (payload.includes('[EMPTY_LINE]')) {
+      out[idx] = '';
       continue;
     }
+
+    const meta = lineMetadata[idx];
 
     // 代码块内的行：无条件使用原文整行
-    if (metadata.inCodeBlockLine) {
-      finalLines.push(metadata.originalLine);
+    if (meta.inCodeBlockLine) {
+      out[idx] = meta.originalLine;
       continue;
     }
 
-    // 恢复原始缩进
-    if (metadata.indent) {
-      // 移除译文中可能存在的缩进（避免双重缩进）
-      const translatedTrimmed = translatedLine.trimStart();
-      // 添加原始缩进
-      finalLines.push(metadata.indent + translatedTrimmed);
-    } else {
-      finalLines.push(translatedLine);
+    // 恢复原始缩进（移除译文可能存在的前导空白，再加回原始缩进）
+    const translatedTrimmed = payload.replace(/^\s+/, '');
+    out[idx] = (meta.indent || '') + translatedTrimmed;
+  }
+
+  // 回填缺失行：用原文
+  for (let i = 0; i < totalLines; i++) {
+    if (typeof out[i] === 'undefined') {
+      out[i] = lineMetadata[i]?.originalLine ?? '';
     }
   }
 
-  // 确保行数完全一致
-  if (finalLines.length !== totalLines) {
-    console.log(`⚠️ 行数修复: 期望 ${totalLines} 行，实际 ${finalLines.length} 行`);
-
-    // 强制修正行数
-    while (finalLines.length < totalLines) {
-      const missingIndex = finalLines.length;
-      const metadata = lineMetadata[missingIndex];
-      finalLines.push(metadata ? metadata.originalLine : '');
-    }
-
-    // 如果行数过多，截断
-    if (finalLines.length > totalLines) {
-      finalLines.length = totalLines;
-    }
-  }
-
-  return finalLines.join('\n');
+  return out.join('\n');
 }
 
 // 智能分块，避免在关键位置切断
@@ -243,6 +231,17 @@ function smartChunkDocument(content, maxChunkSize = 10000) {
   }));
 }
 
+// 辅助：更稳的表格行判定
+function isLikelyTableLine(line) {
+  const s = line.trim();
+  if (!s.includes('|')) return false;
+  // 表头分隔行: |:---|---:|---|
+  const isSeparator = /^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/.test(s);
+  // 普通行：至少两根竖线且非代码围栏
+  const isRow = (s.match(/\|/g) || []).length >= 2 && !s.includes('```');
+  return isSeparator || isRow;
+}
+
 // 智能分割，保持段落和代码块完整性
 function intelligentSplit(lines, maxSize) {
   const chunks = [];
@@ -250,6 +249,7 @@ function intelligentSplit(lines, maxSize) {
   let currentSize = 0;
   let inCodeBlock = false;
   let inTable = false;
+  let tableStreak = 0;
   let lastHeaderIndex = -1;
   
   // PATCH: 将换行字节也计入阈值，避免边界误差
@@ -260,16 +260,27 @@ function intelligentSplit(lines, maxSize) {
     // PATCH: 统计“行+换行”的字节数
     const lineSize = Buffer.byteLength(line, 'utf8') + NL_BYTES;
     
-    // 检测代码块
-    if (line.trim().startsWith('```')) {
+    // 代码块围栏识别（仅整行围栏才翻转）
+    const fenceLen = countFencesIfLineIsFence(line);
+    if (fenceLen >= 3) {
       inCodeBlock = !inCodeBlock;
     }
     
-    // 检测表格
-    if (!inCodeBlock && line.includes('|') && line.trim().startsWith('|')) {
-      inTable = true;
-    } else if (inTable && !line.includes('|')) {
-      inTable = false;
+    // 表格状态维护（不在代码块内才考虑）
+    if (!inCodeBlock) {
+      if (isLikelyTableLine(line)) {
+        tableStreak++;
+        inTable = true;
+      } else {
+        if (inTable) {
+          if (line.trim() === '') {
+            tableStreak++; // 空行算弱表格粘连
+          } else {
+            inTable = false;
+            tableStreak = 0;
+          }
+        }
+      }
     }
     
     // 检测标题
@@ -417,7 +428,7 @@ function validateTranslation(original, translated) {
     });
   }
 
-  // 检查代码块标记
+  // 检查代码块标记（粗略计数）
   const originalCodeBlocks = (original.match(/```/g) || []).length;
   const translatedCodeBlocks = (translated.match(/```/g) || []).length;
 
@@ -433,8 +444,8 @@ function validateTranslation(original, translated) {
   let inCode = false;
   for (let i = 0; i < originalLines.length; i++) {
     const trimmed = originalLines[i].replace(/^\s*/, '');
-    const isFence = trimmed.startsWith('```');
-    if (isFence) {
+    const fenceLen = countFencesIfLineIsFence(trimmed);
+    if (fenceLen >= 3) {
       inCodeFlags[i] = true;
       inCode = !inCode;
     } else {
@@ -510,6 +521,19 @@ function validateTranslation(original, translated) {
   return issues;
 }
 
+// 额外：检查译文中缺失的行号（用于日志/重试策略）
+function validateLineMarkers(translatedContent, totalLines) {
+  const seen = new Set();
+  const lines = translatedContent.split('\n');
+  for (const line of lines) {
+    const m = line.match(/^\[LINE_(\d+)\]/);
+    if (m) seen.add(Number(m[1]));
+  }
+  const missing = [];
+  for (let i = 0; i < totalLines; i++) if (!seen.has(i)) missing.push(i);
+  return missing;
+}
+
 // Claude翻译函数
 // PATCH: 新增 startsInsideCodeBlock 形参，并在 markdown 路径返回 { text, endsInsideCodeBlock }
 async function translateWithClaude(text, targetLang, maxRetries = 2, isChunk = false, chunkInfo = null, isCategory = false, startsInsideCodeBlock = false) {
@@ -571,8 +595,14 @@ async function translateWithClaude(text, targetLang, maxRetries = 2, isChunk = f
         translatedContent = addChineseEnglishSpacing(translatedContent);
       }
 
-      // ✅ 最后一步再恢复行号/缩进，并把代码块整行原样回写
-      translatedContent = postprocessDocument(translatedContent, lineMetadata, totalLines);
+      // 日志：缺失的行标记
+      const missing = validateLineMarkers(translatedContent, totalLines);
+      if (missing.length > 0) {
+        console.log(`⚠️ 缺失的行标记: ${missing.slice(0, 20).join(', ')}${missing.length > 20 ? ' ...' : ''}`);
+      }
+
+      // ✅ 最后一步再严格按 [LINE_i] 对齐，并把代码块整行原样回写
+      translatedContent = postprocessDocument_strict(translatedContent, lineMetadata, totalLines);
 
       // 验证翻译结果（针对最终文本）
       const issues = validateTranslation(text, translatedContent);
@@ -793,6 +823,35 @@ function generateTargetPath(originalPath, targetLang) {
   return targetPath;
 }
 
+// ——新增：_category_.yml 的 link.id 语言化重写 —— //
+function getLangFilePrefix(lang) {
+  return lang === 'zh-CN' ? 'cn_' : lang === 'ja' ? 'ja_' : lang === 'es' ? 'es_' : '';
+}
+
+function buildLocalizedId(origId, targetLang) {
+  const folder = LANGUAGE_CONFIG[targetLang]?.folder;
+  if (!folder) return origId;
+  const filePrefix = getLangFilePrefix(targetLang);
+
+  const clean = String(origId).replace(/^\/+/, '');
+  const parts = clean.split('/');
+  if (parts.length === 0) return `${folder}/${filePrefix}${clean}`;
+
+  const base = parts.pop();
+  const newBase = base.startsWith(filePrefix) ? base : filePrefix + base;
+  return `${folder}/${parts.join('/')}/${newBase}`.replace(/\/+/g, '/');
+}
+
+// 仅在 link.type == doc 的块中替换 id
+function rewriteCategoryDocId(yamlText, targetLang) {
+  const re = /(link:\s*\n(?:\s{2,}.*\n)*?\s{2,}type:\s*["']?doc["']?\s*\n(?:\s{2,}.*\n)*?\s{2,}id:\s*['"]?)([^'"\n]+)(['"]?)/g;
+  return yamlText.replace(re, (m, p1, id, p3) => {
+    const newId = buildLocalizedId(id, targetLang);
+    return `${p1}${newId}${p3}`;
+  });
+}
+// ——新增结束—— //
+
 // 翻译_category.yml文件
 async function translateCategoryFile(filePath, targetLang) {
   try {
@@ -809,7 +868,10 @@ async function translateCategoryFile(filePath, targetLang) {
       null, 
       true
     );
-    const translatedContent = translatedObj.text || translatedObj; // 向后兼容
+    let translatedContent = translatedObj.text || translatedObj; // 向后兼容
+
+    // 新增：重写 link.doc 的 id 到对应语言路径 + 文件前缀
+    translatedContent = rewriteCategoryDocId(translatedContent, targetLang);
     
     const targetPath = generateTargetPath(filePath, targetLang);
     

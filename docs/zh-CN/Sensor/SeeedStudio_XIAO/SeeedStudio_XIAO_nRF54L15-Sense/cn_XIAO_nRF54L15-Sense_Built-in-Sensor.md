@@ -264,7 +264,8 @@ int main(void)
     }
 
     return 0;
-}```
+}
+```
 
 ## XIAO nRF54L15 Sense 麦克风
 
@@ -531,7 +532,8 @@ int main(void)
     }
 
     return 0;
-}```
+}
+```
 
 接下来，在 scripts 文件夹目录中打开终端并执行以下操作，前提是程序已经烧录完成。
 
