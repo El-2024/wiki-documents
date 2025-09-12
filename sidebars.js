@@ -3926,6 +3926,7 @@ const sidebars = {
         'Edge/Beagle_Bone/BeagleBone_Blue',
         'Edge/Beagle_Bone/BeagleBone_Green',
         'Edge/Beagle_Bone/BeagleBone_Green_Wireless',
+        'Edge/Beagle_Bone/BeagleBone_Green_Eco',
         'Edge/Beagle_Bone/BeagleBone-Green-Gateway',
         'Edge/Beagle_Bone/Beaglebone_Case',
         {
