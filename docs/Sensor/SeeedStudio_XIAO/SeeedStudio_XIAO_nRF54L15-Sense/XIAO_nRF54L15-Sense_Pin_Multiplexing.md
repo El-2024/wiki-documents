@@ -367,68 +367,68 @@ int main(void)
 
 - pot_pwm_example Log Module:
 
- 	- LOG_MODULE_REGISTER(pot_pwm_example, CONFIG_LOG_DEFAULT_LEVEL): This registers a log module named pot_pwm_example and sets its log level to the system's default configuration, which facilitates debugging.
+  - LOG_MODULE_REGISTER(pot_pwm_example, CONFIG_LOG_DEFAULT_LEVEL): This registers a log module named pot_pwm_example and sets its log level to the system's default configuration, which facilitates debugging.
 
 - ADC Configuration:
 
- 	- #if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) ... #endif: This preprocessor directive is a Device Tree check that ensures a valid overlay file containing ADC channel definitions exists. This mandates that the user must provide the correct configuration for the specific hardware.
+  - #if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) ... #endif: This preprocessor directive is a Device Tree check that ensures a valid overlay file containing ADC channel definitions exists. This mandates that the user must provide the correct configuration for the specific hardware.
 
- 	- static const struct adc_dt_spec adc_channels[];: This part of the code leverages Zephyr's Device Tree to automatically retrieve information for all configured ADC channels. This approach makes the code flexible and portable across different hardware without manual configuration changes.
+  - static const struct adc_dt_spec adc_channels[];: This part of the code leverages Zephyr's Device Tree to automatically retrieve information for all configured ADC channels. This approach makes the code flexible and portable across different hardware without manual configuration changes.
 
- 	- #define POTENTIOMETER_ADC_CHANNEL_IDX 1: A macro is defined to specify which channel in the adc_channels array the potentiometer is connected to.
+  - #define POTENTIOMETER_ADC_CHANNEL_IDX 1: A macro is defined to specify which channel in the adc_channels array the potentiometer is connected to.
 
 - PWM Configuration:
 
- 	- static const struct pwm_dt_spec led = PWM_DT_SPEC_GET(DT_ALIAS(pwm_led));: This line retrieves the PWM device information for the alias pwm_led from the Device Tree. This is a standard Zephyr practice for looking up and referencing hardware devices.
+  - static const struct pwm_dt_spec led = PWM_DT_SPEC_GET(DT_ALIAS(pwm_led));: This line retrieves the PWM device information for the alias pwm_led from the Device Tree. This is a standard Zephyr practice for looking up and referencing hardware devices.
 
- 	- #define PWM_PERIOD_NS 1000000UL: This defines the PWM signal period as 1 millisecond (1,000,000 nanoseconds), which corresponds to a frequency of 1 kHz. This frequency is well-suited for LED dimming as it's high enough to prevent visible flickering.
+  - #define PWM_PERIOD_NS 1000000UL: This defines the PWM signal period as 1 millisecond (1,000,000 nanoseconds), which corresponds to a frequency of 1 kHz. This frequency is well-suited for LED dimming as it's high enough to prevent visible flickering.
 
 **Initialization and Setup**
 
 - Logging Information:
 
- 	- LOG_INF("Starting Zephyr Potentiometer to PWM example...");: An informational log message is printed at the start of the program to notify the user that the example has begun.
+  - LOG_INF("Starting Zephyr Potentiometer to PWM example...");: An informational log message is printed at the start of the program to notify the user that the example has begun.
 
 - ADC Initialization:
 
- 	- !adc_is_ready_dt(): Before attempting to use the ADC device, a check is performed to confirm that it's ready. If the device is not ready, an error is logged and the program exits.
+  - !adc_is_ready_dt(): Before attempting to use the ADC device, a check is performed to confirm that it's ready. If the device is not ready, an error is logged and the program exits.
 
- 	- adc_channel_setup_dt(): This function configures the specific ADC channel connected to the potentiometer, including its resolution and gain.
+  - adc_channel_setup_dt(): This function configures the specific ADC channel connected to the potentiometer, including its resolution and gain.
 
 - PWM Initialization:
 
- 	- !device_is_ready(led.dev): Similar to the ADC, this line checks if the PWM device is ready. If not, an error is logged and the program exits.
+  - !device_is_ready(led.dev): Similar to the ADC, this line checks if the PWM device is ready. If not, an error is logged and the program exits.
 
- 	- LOG_INF(...): The PWM period and frequency information are printed to help the user confirm the configuration.
+  - LOG_INF(...): The PWM period and frequency information are printed to help the user confirm the configuration.
 
 - ADC Sequence Configuration:
 
- 	- struct adc_sequence sequence: An adc_sequence struct is defined to describe a single ADC conversion operation. It specifies the buffer (adc_raw_value) for storing the result, its size (sizeof(adc_raw_value)), and the ADC resolution to be used.
+  - struct adc_sequence sequence: An adc_sequence struct is defined to describe a single ADC conversion operation. It specifies the buffer (adc_raw_value) for storing the result, its size (sizeof(adc_raw_value)), and the ADC resolution to be used.
 
 **Main Loop**
 The core logic of the code runs within an infinite while (1) loop:
 
 - ADC Reading:
 
- 	- adc_sequence_init_dt(): The ADC sequence is initialized to ensure the correct configuration is used for each read.
+  - adc_sequence_init_dt(): The ADC sequence is initialized to ensure the correct configuration is used for each read.
 
- 	- adc_read(): This triggers an ADC conversion to read the analog value from the potentiometer. If the read fails, an error is logged, and the program pauses for 100 milliseconds before continuing.
+  - adc_read(): This triggers an ADC conversion to read the analog value from the potentiometer. If the read fails, an error is logged, and the program pauses for 100 milliseconds before continuing.
 
- 	- int sensor_value = adc_raw_value;: The raw ADC value is assigned to the sensor_value variable.
+  - int sensor_value = adc_raw_value;: The raw ADC value is assigned to the sensor_value variable.
 
 - Mapping ADC Value to PWM Duty Cycle:
 
- 	- uint32_t max_adc_raw: This calculates the maximum possible raw ADC value.
+  - uint32_t max_adc_raw: This calculates the maximum possible raw ADC value.
 
- 	- uint32_t output_duty_ns = (PWM_PERIOD_NS * sensor_value) / max_adc_raw;: This is the core mapping logic. It scales the raw ADC value (sensor_value) proportionally to the range of the PWM period (PWM_PERIOD_NS) to get a duty cycle value that adjusts the LED's brightness.
+  - uint32_t output_duty_ns = (PWM_PERIOD_NS * sensor_value) / max_adc_raw;: This is the core mapping logic. It scales the raw ADC value (sensor_value) proportionally to the range of the PWM period (PWM_PERIOD_NS) to get a duty cycle value that adjusts the LED's brightness.
 
 - Setting the PWM Duty Cycle:
 
- 	- pwm_set_dt(): This function applies the newly calculated duty cycle (output_duty_ns) to the PWM device, instantly changing the LED's brightness.
+  - pwm_set_dt(): This function applies the newly calculated duty cycle (output_duty_ns) to the PWM device, instantly changing the LED's brightness.
 
 - Delay:
 
- 	- k_msleep(100): The program pauses for 100 milliseconds after each loop. This controls the frequency of ADC reads and PWM updates, preventing excessive CPU load and providing a stable user experience.
+  - k_msleep(100): The program pauses for 100 milliseconds after each loop. This controls the frequency of ADC reads and PWM updates, preventing excessive CPU load and providing a stable user experience.
 
 ### Result graph
 
@@ -965,61 +965,61 @@ static Coordinates transform(Coordinates gps)
 
  -`UBYTE`, `UWORD`, `UDOUBLE:`These are custom unsigned integer type aliases that improve code readability by clarifying the expected size of the variables.
 
- 	- `SENTENCE_SIZE, BUFFSIZE:` These define fixed sizes for buffers used to store NMEA sentences and larger data buffers.
+  - `SENTENCE_SIZE, BUFFSIZE:` These define fixed sizes for buffers used to store NMEA sentences and larger data buffers.
 
- 	- Macros like `HOT_START, SET_NMEA_OUTPUT:`These macros define various NMEA protocol commands sent to the L76X GPS module to configure its operating mode, output frequency, baud rate, and so on.
+  - Macros like `HOT_START, SET_NMEA_OUTPUT:`These macros define various NMEA protocol commands sent to the L76X GPS module to configure its operating mode, output frequency, baud rate, and so on.
 
 - Struct Definitions:
 
- 	- `GNRMC:` This struct is used to store key information parsed from a GNRMC (GPS Recommended Minimum Specific data) NMEA sentence, including longitude, latitude, time, status, and cardinal directions.
+  - `GNRMC:` This struct is used to store key information parsed from a GNRMC (GPS Recommended Minimum Specific data) NMEA sentence, including longitude, latitude, time, status, and cardinal directions.
 
- 	- `Coordinates:` A simple struct to store the longitude and latitude of a geographic coordinate.
+  - `Coordinates:` A simple struct to store the longitude and latitude of a geographic coordinate.
 
 - Global Variables and Constants:
 
- 	- `buff_t:` A global buffer of size BUFFSIZE used to store raw UART data.
+  - `buff_t:` A global buffer of size BUFFSIZE used to store raw UART data.
 
  -` GPS: `A global GNRMC struct instance used to hold the parsed GPS data.
 
- 	- `uart_dev:` A pointer to the UART device struct, used for UART communication.
+  - `uart_dev:` A pointer to the UART device struct, used for UART communication.
 
- 	- `new_gnrmc_available:` A volatile boolean flag that is set to true when a new valid GNRMC sentence is received, notifying the main loop that new data is available for processing.
+  - `new_gnrmc_available:` A volatile boolean flag that is set to true when a new valid GNRMC sentence is received, notifying the main loop that new data is available for processing.
 
 - `uart_callback() Function:`
 
- 	- This is a UART interrupt callback function that is triggered when the UART receives data.
+  - This is a UART interrupt callback function that is triggered when the UART receives data.
 
- 	- The function reads the UART FIFO byte by byte and processes the data as a complete sentence when a newline character \n is encountered.
+  - The function reads the UART FIFO byte by byte and processes the data as a complete sentence when a newline character \n is encountered.
 
 **Main Function main()**
 
 - System Initialization:
 
- 	- `nrfx_power_constlat_mode_request():` Requests a constant latency mode to ensure power management does not interfere with real-time operations.
+  - `nrfx_power_constlat_mode_request():` Requests a constant latency mode to ensure power management does not interfere with real-time operations.
 
- 	- `uart_dev = DEVICE_DT_GET:` Retrieves the UART device handle and uses device_is_ready() to check if the device is ready.
+  - `uart_dev = DEVICE_DT_GET:` Retrieves the UART device handle and uses device_is_ready() to check if the device is ready.
 
- 	- `uart_irq_callback_user_data_set()`and `uart_irq_rx_enable():`These configure and enable the UART receive interrupt, registering the uart_callback function as the interrupt handler to ensure asynchronous reception of GPS data.
+  - `uart_irq_callback_user_data_set()`and `uart_irq_rx_enable():`These configure and enable the UART receive interrupt, registering the uart_callback function as the interrupt handler to ensure asynchronous reception of GPS data.
 
 - GPS Module Initialization:
 
- 	- `L76X_Send_Command(SET_NMEA_OUTPUT):`A command is sent to configure the GPS module to output only specified NMEA sentences like GNRMC, reducing unnecessary data traffic.
+  - `L76X_Send_Command(SET_NMEA_OUTPUT):`A command is sent to configure the GPS module to output only specified NMEA sentences like GNRMC, reducing unnecessary data traffic.
 
  -` L76X_Send_Command(SET_POS_FIX_1S): `Sets the GPS module's position update frequency to 1 second.
 
 - Main Loop:
 
- 	- The loop runs indefinitely, continuously checking the new_gnrmc_available flag.
+  - The loop runs indefinitely, continuously checking the new_gnrmc_available flag.
 
- 	- If the flag is true, it copies the latest GPS sentence from latest_gnrmc to buff_t, and then calls L76X_Gat_GNRMC() to parse the data.
+  - If the flag is true, it copies the latest GPS sentence from latest_gnrmc to buff_t, and then calls L76X_Gat_GNRMC() to parse the data.
 
- 	- Based on the parsing result, it prints the time, WGS-84 longitude and latitude, and the converted Baidu and Google coordinates.
+  - Based on the parsing result, it prints the time, WGS-84 longitude and latitude, and the converted Baidu and Google coordinates.
 
- 	- If GPS.Status is 0, it prints a "positioning failed" message.
+  - If GPS.Status is 0, it prints a "positioning failed" message.
 
- 	- If no new data is available, it prints "No new GNRMC data available."
+  - If no new data is available, it prints "No new GNRMC data available."
 
- 	- k_msleep(2000): The program pauses for 2 seconds after each loop to control the output frequency.
+  - k_msleep(2000): The program pauses for 2 seconds after each loop to control the output frequency.
 
 ### Result graph
 
@@ -1224,37 +1224,37 @@ int main(void) {
 
 - `main_app` Log Module:
 
- 	- #define LOG_LEVEL CONFIG_LOG_DEFAULT_LEVEL and LOG_MODULE_REGISTER(main_app, LOG_LEVEL) register a log module named main_app and set its log level to the system's default configuration. This allows developers to easily debug and output information through Zephyr's logging system.
+  - #define LOG_LEVEL CONFIG_LOG_DEFAULT_LEVEL and LOG_MODULE_REGISTER(main_app, LOG_LEVEL) register a log module named main_app and set its log level to the system's default configuration. This allows developers to easily debug and output information through Zephyr's logging system.
 
 - `display_init()` Function:
 
- 	- `*dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));:` This line retrieves the chosen display device from the Zephyr Device Tree. This approach ensures the code is hardware-agnostic.
+  - `*dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));:` This line retrieves the chosen display device from the Zephyr Device Tree. This approach ensures the code is hardware-agnostic.
 
- 	- `display_set_pixel_format(*dev, PIXEL_FORMAT_MONO10):`The code attempts to set the display's pixel format to PIXEL_FORMAT_MONO10. If this fails, it then tries PIXEL_FORMAT_MONO01. This ensures the display operates in a monochrome mode, which is necessary for some display technologies (e.g., OLED or e-Paper).
+  - `display_set_pixel_format(*dev, PIXEL_FORMAT_MONO10):`The code attempts to set the display's pixel format to PIXEL_FORMAT_MONO10. If this fails, it then tries PIXEL_FORMAT_MONO01. This ensures the display operates in a monochrome mode, which is necessary for some display technologies (e.g., OLED or e-Paper).
 
 - `framebuffer_setup()` Function:
 
- 	- `cfb_framebuffer_init(dev):`This initializes the Compact Framebuffer (CFB). CFB is a lightweight graphics library in Zephyr used for drawing text and simple graphics on displays.
+  - `cfb_framebuffer_init(dev):`This initializes the Compact Framebuffer (CFB). CFB is a lightweight graphics library in Zephyr used for drawing text and simple graphics on displays.
 
- 	- `cfb_framebuffer_clear(dev, true):`This clears the framebuffer and immediately writes its content to the display, ensuring a clean screen.
+  - `cfb_framebuffer_clear(dev, true):`This clears the framebuffer and immediately writes its content to the display, ensuring a clean screen.
 
- 	- `display_blanking_off(dev):`This turns off the display's blanking feature, which is typically a signal that the display is ready to receive data and show an image.
+  - `display_blanking_off(dev):`This turns off the display's blanking feature, which is typically a signal that the display is ready to receive data and show an image.
 
 - `select_font()` Function:
 
- 	- `cfb_get_font_size():`This function loops through available fonts to find a suitable one.
+  - `cfb_get_font_size():`This function loops through available fonts to find a suitable one.
 
- 	- The code prioritizes a` 8x8 `pixel font, as it is a common and easy-to-read small font.
+  - The code prioritizes a` 8x8 `pixel font, as it is a common and easy-to-read small font.
 
- 	- If an `8x8` font is not found, it selects the first available non-zero-sized font as a fallback.
+  - If an `8x8` font is not found, it selects the first available non-zero-sized font as a fallback.
 
- 	- `cfb_framebuffer_set_font(dev, chosen_font_idx):` Once a suitable font is found, it is set as the current font for the framebuffer.
+  - `cfb_framebuffer_set_font(dev, chosen_font_idx):` Once a suitable font is found, it is set as the current font for the framebuffer.
 
 - `print_text_by_row_col()` Function:
 
  -` int pixel_x = col * font_width; `and `int pixel_y = row * font_height;:` This function converts the text's row and column coordinates (in character units) to pixel coordinates, making text positioning more intuitive.
 
- 	- `cfb_print():` This is the core function of the CFB library used to print text at the specified pixel location.
+  - `cfb_print():` This is the core function of the CFB library used to print text at the specified pixel location.
 
 **Main Loop**
 The core logic of the code runs within an infinite `while (1)`loop:
@@ -1262,14 +1262,14 @@ The core logic of the code runs within an infinite `while (1)`loop:
 - Clearing the Screen: `cfb_framebuffer_clear(dev, false):` At the beginning of each loop, this clears the framebuffer without immediately refreshing the display. This allows multiple elements to be drawn at once, preventing screen flickering.
 
 - Printing Text:
- 
- 	- Two strings, `line1_text` and `line2_text`, are defined.
 
- 	- print_text_by_row_col(): The custom function is used to print these two lines of text at specified row and column positions on the screen. The first line is printed at `(1, 2)` and the second line at `(2, 1).`
+  - Two strings, `line1_text` and `line2_text`, are defined.
 
- 	- Refreshing the Display: `cfb_framebuffer_finalize(dev)`: This function sends all pending drawing commands from the framebuffer to the display at once, making all the content appear simultaneously.
+  - print_text_by_row_col(): The custom function is used to print these two lines of text at specified row and column positions on the screen. The first line is printed at `(1, 2)` and the second line at `(2, 1).`
 
- 	- Delay: `k_sleep(K_MSEC(1000)):` After each loop, the program pauses for 1000 milliseconds (1 second). This controls the screen update frequency, which is suitable for applications that display static information, such as a clock or sensor data, in a stable manner.
+  - Refreshing the Display: `cfb_framebuffer_finalize(dev)`: This function sends all pending drawing commands from the framebuffer to the display at once, making all the content appear simultaneously.
+
+  - Delay: `k_sleep(K_MSEC(1000)):` After each loop, the program pauses for 1000 milliseconds (1 second). This controls the screen update frequency, which is suitable for applications that display static information, such as a clock or sensor data, in a stable manner.
 
 ### Result graph
 
@@ -1454,11 +1454,11 @@ int main(void)
 
 - Labels:
 
- 	- `lv_label_create()` is used to create text labels.
+  - `lv_label_create()` is used to create text labels.
 
- 	- `lv_label_set_text()` sets the text content of the labels.
+  - `lv_label_set_text()` sets the text content of the labels.
 
- 	- `lv_obj_set_style_text_color()`and lv_obj_set_style_text_font() are used to set the text color and font size.
+  - `lv_obj_set_style_text_color()`and lv_obj_set_style_text_font() are used to set the text color and font size.
 
 - The `lv_obj_align()`function places each label in a specific location on the screen, such as center, top-right, bottom-left, and bottom-right.
 
