@@ -16,11 +16,9 @@ import TabItem from '@theme/TabItem';
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.jpg" style={{width:700, height:'auto'}}/></div><br />
 
-
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/reterminal_e10xx_with_esphome" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
 </div>
-
 
 ## Introduction to [Home Assistant](https://www.home-assistant.io/)
 
@@ -73,16 +71,23 @@ Before the tutorial content of this article begins, you may need to have the fol
 <div class="table-center">
   <table align="center">
     <tr>
-      <th>reTerminal E Series</th>
+      <th>reTerminal E1001</th>
+      <th>reTerminal E1002</th>
       <th>Home Assistant Green</th>
     </tr>
     <tr>
-      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.jpg" style={{width:250, height:'auto'}}/></div></td>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/145.jpg" style={{width:250, height:'auto'}}/></div></td>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/146.jpg" style={{width:250, height:'auto'}}/></div></td>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/visionai-v2-ha/ha.png" style={{width:210, height:'auto'}}/></div></td>
     </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="/reterminal_e10xx_with_esphome" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-E1001-p-6534.html" target="_blank" rel="noopener noreferrer">
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+        </a>
+      </div></td>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-E1002-p-6533.html" target="_blank" rel="noopener noreferrer">
         <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
         </a>
       </div></td>
@@ -431,10 +436,7 @@ When you see the feedback like the following image, it means the code is running
 </TabItem>
 </Tabs>
 
-
-
 Due to space constraints, we will not elaborate too much on the drawing methods and principles of other patterns, if necessary, the reader is recommended to read [ESPHome in this part of the detailed examples](https://esphome.io/components/display/).
-
 
 ### Getting values from Home Assistant for display
 
@@ -794,9 +796,11 @@ display:
 </Tabs>
 
 :::note
+
 1. The `glyphs` section defines which icons to load from the font file. Loading only the icons you need saves memory on your device.
 
 2. The program may take 2~3 minutes from the completion of burning to the final display.
+
 :::
 
 Step 7. Save your configuration and upload it to your reTerminal E Series. When you see feedback like the following image, it means the code is running successfully.
@@ -822,6 +826,7 @@ Step 2. Search for an icon you want to use in your project. You can browse by ca
 Step 3. When you find an icon you like, click on it to view its details. Look for the Unicode value, which will be in the format `F0595`.
 
 Step 4. Add the Unicode value to your ESPHome configuration by:
+
 - Adding it to the `glyphs` list in your font configuration
 - Updating the display code to use the new icon
 
@@ -1040,7 +1045,6 @@ In this case, you should go to Settings -> Devices & Services -> Integrations to
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/41.png" style={{width:1000, height:'auto'}}/></div>
 
-
 ### Q3: reTerminal E Series ePaper Display can't connect to you computer?
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/68.png" style={{width:600, height:'auto'}}/></div>
@@ -1053,19 +1057,12 @@ Thank you for choosing our products! We are here to provide you with different s
 
 <div class="table-center">
   <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+  <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
   <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
   </div>
 
   <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>
-
-
-
-
-
-
-

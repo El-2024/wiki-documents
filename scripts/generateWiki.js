@@ -11,7 +11,7 @@ const excludedPaths = [
   path.join(docsDirectory, 'Seeed_Elderly', 'weekly_wiki'), // weekly wiki 的历史目录
   path.join(docsDirectory, 'zh-CN'), // 排除中文文档的目录
   path.join(docsDirectory, 'ja'), // 排除日文文档的目录
-  path.join(docsDirectory, 'Spanish'), // 排除西班牙语文档的目录
+  path.join(docsDirectory, 'es'), // 排除西班牙语文档的目录
   path.join(docsDirectory, 'weekly_wiki.md'), // 排除 weekly wiki 的文件
 
 

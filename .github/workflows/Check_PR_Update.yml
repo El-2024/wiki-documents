@@ -61,7 +61,7 @@ on:
         default: 'manual'
 
 env:
-  NODE_OPTIONS: --max_old_space_size=20480
+  NODE_OPTIONS: --max_old_space_size=8192
   
 jobs:
   test-deploy:
@@ -103,6 +103,19 @@ jobs:
         with:
           node-version: 20
           cache: yarn
+
+      # ==== 新增：观测与加 swap（放在安装依赖前） ====
+      - name: Show runner memory
+        run: node -v && free -h && df -h
+
+      - name: Add swap (8G)
+        run: |
+          sudo fallocate -l 8G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          free -h
+      # ==== 新增结束 ====
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile

@@ -700,7 +700,7 @@ It is required to download the [Segger](https://www.segger.com/downloads/jlink/)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/j_link.png" alt="pir" width={250} height="auto" /></p>
 
-- **Step 2.** Start the J-Flash and search nRF54L15, creating a new project:
+- **Step 2.** Start the J-Flash and search nRF54L15_M33, creating a new project:
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/j_link4.jpg" alt="pir" width={700} height="auto" /></p>
 
@@ -754,7 +754,7 @@ If you want to use XIAO nRF54L15 in PlatformIO, please refer to this tutorial to
 
 Using the XIAO nRF54L15 in the nRF Connect SDK
 To use this code in the nRF Connect SDK, you need to port the following three files `main.c`,`prj.conf`,`app.overlay`
-[XIAO nRF54L15 PlatformIO Configuration](http://wiki.seeedstudio.com/xiao_nrf54l15_sense_getting_started/#power-consumpitons-code-example-for-xiao-nrf54l15-platformio)
+[XIAO nRF54L15 PlatformIO Configuration](https://wiki.seeedstudio.com/xiao_nrf54l15_sense_getting_started/#power-consumpitons-code-example-for-xiao-nrf54l15-platformio)
 :::
 
 <div class="github_container" style={{textAlign: 'center'}}>
