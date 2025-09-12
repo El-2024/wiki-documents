@@ -1,5 +1,5 @@
 ---
-title: XIAO nRF54L15の消費電力例（PlatformIO）
+title: XIAO nRF54L15の消費電力例 (PlatformIO)
 description: |
 image: https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/top.jpg
 slug: /ja/xiao_nrf54l15_sense_power_consumptions
@@ -16,24 +16,24 @@ last_update:
 以下のサンプルコードはPlatformIO用に設計されていますが、nRF Connect SDKとも互換性があります。
 
 :::tip
-VS Codeベースで、nRF Connect SDKで以下のケースを使用したい場合は、提供されたリンクを参照し、app.overlayファイルを追加してprj.confの内容を変更してください
+VS Codeベースで、nRF Connect SDKで以下のケースを使用したい場合は、提供されている接続を参照し、app.overlayファイルを追加してprj.confの内容を変更してください
 
-[XIAO nRF54L15 オーバーレイファイルの追加とconfファイルの変更](http://192.168.31.44:3000/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
+[XIAO nRF54L15 オーバーレイファイルの追加とconfファイルの変更](https://wiki.seeedstudio.com/ja/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
 
 :::
 
 ## Bluetooth接続
 
-このセクションでは、デバイスがBluetooth Low Energy（BLE）ペリフェラルとしてアクティブにアドバタイジングしている間の消費電力特性について詳しく説明します。デバイスはカスタムBLEサービスを実装し、他のセントラルデバイスが接続して相互作用できるようにします。
+このセクションでは、デバイスがBluetooth Low Energy (BLE) ペリフェラルとしてアクティブにアドバタイジングしている間の消費電力特性について詳しく説明します。デバイスはカスタムBLEサービスを実装し、他のセントラルデバイスが接続して相互作用できるようにします。
 
 以下のグラフは、デバイスが継続的にアドバタイジングしている際の典型的な消費電力プロファイルを示しています：
 
 <div style={{textAlign:'center'}}>
-    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/new/7.png" alt="XIAO nRF54L15 BLEアドバタイジング消費電力" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
+    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/new/7.png" alt="XIAO nRF54L15 BLE Advertising Power Consumption" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
     <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>BLEアドバタイジング中のデバイス消費電力</em></p>
 </div>
 
-グラフに示されているように、デバイスは各アドバタイジングイベントに対応する周期的な電流ピークを示し、その後により低い電流消費期間が続きます。アドバタイジング中の平均消費電力は、システムオフモードよりも高く、ブロードキャストに必要なアクティブな無線操作を反映しています。
+グラフに示されているように、デバイスは各アドバタイジングイベントに対応する周期的な電流ピークを示し、その後に低い電流消費期間が続きます。アドバタイジング中の平均消費電力は、システムオフモードよりも高く、ブロードキャストに必要なアクティブな無線操作を反映しています。
 
 ---
 
@@ -232,7 +232,7 @@ int main(void)
 以下のグラフは、デバイスがシステムオフモードに入った後の典型的な消費電力カーブを示しています：
 
 <div style={{textAlign:'center'}}>
-    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/new/6.png" alt="XIAO nRF54L15 システムオフモードでの超低消費電力" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
+    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/new/6.png" alt="XIAO nRF54L15 Ultra-low Power Consumption in System Off Mode" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
     <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>システムオフモードでのデバイス消費電力</em></p>
 </div>
 グラフに示されているように、System Offモードに入った後、消費電力は大幅に削減され、マイクロアンペアレベルのみを維持し、バッテリー寿命を大幅に延長します。`sw0`ボタンが押されると、デバイスはSystem Offモードから復帰し、再起動します。
