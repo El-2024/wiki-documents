@@ -1,0 +1,183 @@
+---
+description: "想要可视化空间中的人流情况？您可以通过 Home Assistant 结合平面图热力图轻松实现这一点。该解决方案允许您在平面图上叠加人时数据，让您一目了然地了解空间利用情况。"
+keywords:
+    - Home Assistant
+    - 流量统计
+    - 热力图
+image: https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/result_visualize.png
+slug: /cn/crowd-flow-monitoring
+sidebar_position: 4
+last_update:
+  date: 08/11/2025
+  author: Spencer
+---
+
+import Steppers from '@site/src/components/utils/Stepper';
+
+# 使用 Home Assistant 的人群流量热力图
+
+想要清楚地了解人们如何在空间中移动？通过 **Home Assistant** 和 **平面图热力图**，您就可以做到这一点。该解决方案让您可以将人时数据叠加到平面图上，轻松一目了然地查看空间的使用情况。
+
+Home Assistant 不仅可以收集和管理来自各种设备的数据，还可以通过其强大的集成功能与其他平台无缝连接。通过集成热力图插件，您可以**直接使用现有的设备数据。**如果您的设备已经连接到 Home Assistant，您可以轻松地将它们的数据整合到可视化图表中。这简化了设置过程，并最大化了现有智能家居生态系统的实用性。
+
+:::note
+
+平面图热力图是一种在建筑平面图或室内布局上可视化数据的技术。它使用从冷色（如蓝色、绿色）到暖色（如黄色、红色）的颜色比例来显示特定区域中数据的强度、密度或频率。例如，它可以显示房间被占用的频率或特定区域的温度分布。
+
+:::
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/result_visualize.png" alt="热力图可视化"/>
+</div>
+
+## 人时统计示例
+
+您需要：
+
+- 一个 Node-RED 平台
+- 一个 Home Assistant 系统
+- 一个 [Grove Vision AI V2](https://www.seeedstudio.com/XIAO-Vision-AI-Camera-p-6450.html) 摄像头套件
+
+### Grove Vision AI V2
+
+1. 前往 [SenseCraft AI](https://sensecraft.seeed.cc/) 平台，登录，在"Vision Workspace"下，点击"Grove Vision AI V2"并选择**连接**。
+2. 在弹出窗口中，选择您要连接的 Grove Vision AI V2 设备。
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/connect-grove-vision-v2.png" alt="连接 Grove Vision V2"/>
+</div>
+
+### 刷写模型
+
+选择合适的模型。如果您不是在进行人脸或人员检测，您可能需要刷写一个能够识别人体特征的模型。例如，选择**人脸检测**并确认部署。
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/sensecraft-model-face-detection.png" alt="SenseCraft AI 模型人脸检测"/>
+</div>
+
+双击模型并确认刷写和部署。
+
+### 配置网络信息
+
+1. 在主面板上，点击右侧的**网络配置**。
+2. 输入您的 Home Assistant 的 Wi-Fi 信息和 MQTT 服务器地址（通常是 *HA 地址*:1883）。
+3. 点击**保存**。
+
+:::note
+
+请务必记下客户端 ID（您可以自定义），以备后用。
+
+:::
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/sensecraft-wifi-configuration.png" alt="SenseCraft Wi-Fi 配置"/>
+</div>
+
+## Node-RED
+
+由于 Grove Vision AI V2 是非标准设备，我们目前需要使用 Node-RED 来处理设备注册和数据显示。
+
+首先，您需要将 [person-hour-statistics.json](https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/vision-v2-crowd-flow.json) 文件导入到 Node-RED 中，然后继续以下步骤：
+
+<Steppers>
+
+### 确认 MQTT 配置
+
+在"**Publish HA Data & Discovery**"节点中修改服务信息为您的 Home Assistant 地址（例如，`192.168.101.160`）。如果您使用的是 Home Assistant 内置的 Node-RED 插件，请连接到 `mqtt://localhost`。
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/nodered-mqtt-out-config.png" alt="Node-RED MQTT 输出配置"/>
+</div>
+
+### 修改设备 ID
+
+在"**Know Camera IDs**"节点中，修改载荷 JSON，如果您有多个设备，请添加多个客户端 ID。
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/nodered-heatmap-device-ids.png" alt="Node-RED 热力图设备 ID"/>
+</div>
+
+### 注册设备
+
+点击"**Trigger HA Discovery for Known Devices**"来注册设备。然后您应该在概览页面上看到一个不可用的设备实体。
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/ha-heatmap-device-added.png" alt="Home Assistant 热力图设备已添加"/>
+</div>
+
+### 查看数据
+
+将"**Start**"节点的 `msg.topic` 设置为 `grove_vision_ai_v2_61003e7c`，然后点击**开始**。完成后，您可以在 Home Assistant 中查看数据。
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/ha-heatmap-device-worked.png" alt="Home Assistant 热力图设备工作正常"/>
+</div>
+
+</Steppers>
+
+## Home Assistant
+
+### 安装插件 (HACS)
+
+前往您的 HACS 页面，例如，[http://homeassistant.local:8123/hacs/dashboard](http://homeassistant.local:8123/hacs/dashboard)：
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/hacs-custom-repositories.png" alt="HACS 自定义仓库"/>
+</div>
+
+在 HACS 中，添加一个 `自定义仓库` 并输入以下地址：
+
+```shell
+https://github.com/Seeed-Solution/lovelace-heatmap-card
+```
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/hacs-add-repositories.png" alt="HACS 添加仓库"/>
+</div>
+
+搜索"**Heatmap Card**"并下载插件：
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/hacs-search-download.png" alt="HACS 搜索和下载"/>
+</div>
+
+安装后，您需要重新加载浏览器。在提示中点击 `重新加载`。
+
+### 将卡片添加到仪表板
+
+在任何仪表板中，添加您的热力图卡片。例如，让我们编辑一个名为 `人时统计` 的仪表板。
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/ha-edit-panel.png" alt="Home Assistant 编辑面板"/>
+</div>
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/ha-add-card.png" alt="Home Assistant 添加卡片"/>
+</div>
+
+点击"添加卡片"，向下滚动到自定义卡片部分，找到 `Heatmap Card`，然后点击添加。
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/ha-choose-card.png" alt="Home Assistant 选择卡片"/>
+</div>
+
+### 连接数据
+
+<div align="center">
+  <img class='img-responsive' width="480" src="https://files.seeedstudio.com/wiki/solution/application/ha-heatmap/lovelace-heatmap-card-config.png" alt="Lovelace 热力图卡片配置"/>
+</div>
+
+该插件有四个配置部分：
+
+- 颜色样式（半径、模糊）
+- 点 - 不同点的坐标和信息
+- 显示选项 - 显示数据图例
+- 显示点标签 - 显示每个点的标签
+
+在卡片配置中，将其中一个点的 `entity_id` 设置为您的设备实体 ID（例如，`sensor.grove_vision_ai_v2_61003e7c_current_people_count`）。
+
+完成后，点击保存。
+
+---
+
+完成这些步骤后，您将能够在 Home Assistant 中看到热力图数据的动态显示。
