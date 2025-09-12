@@ -9,8 +9,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /using_lvgl_and_tft_on_round_display
 last_update:
-  date: 01/17/2024
-  author: Spencer
+  date: 09/12/2024
+  author: Citric
 ---
 
 # Using LVGL and TFT on the Seeed Studio Round Display for all XIAO series
@@ -25,12 +25,8 @@ last_update:
 
 <br></br>
 
-<<<<<<< HEAD
 
 Thank you for purchased Seeed Studio Round Display products. In this section of the tutorial, we will focus on how to use the `Seeed_GFX` library and `LVGL` library to draw various rich and interesting dial patterns on the Round Display, and introduce the usage of some common functions of these two useful but complex libraries from simple to deep. Through the content of this tutorial, I hope you can use this product to draw your ideal dial pattern. Have a great learning experience!
-=======
-Thank you for purchased Seeed Studio Round Display products. In this section of the tutorial, we will focus on how to use the `TFT_eSPI` library and `LVGL` library to draw various rich and interesting dial patterns on the Round Display, and introduce the usage of some common functions of these two useful but complex libraries from simple to deep. Through the content of this tutorial, I hope you can use this product to draw your ideal dial pattern. Have a great learning experience!
->>>>>>> 402d5229e0056a6e31f30879a038064283fe4f8e
 
 ## Getting Started
 
