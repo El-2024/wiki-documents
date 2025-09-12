@@ -1,6 +1,6 @@
 ---
-description: Build and control the AmazingHand, a low-cost, open-source, 8-DOF, 3D-printable robotic hand.
-title: Getting Started with the AmazingHand Robotic Hand
+description: AmazingHand を組み立てて制御しよう。低コスト・オープンソース・8自由度・3Dプリント可能なロボットハンド。
+title: AmazingHand ロボットハンド入門
 keywords:
 - Lerobot
 - Huggingface
@@ -11,45 +11,45 @@ keywords:
 - Humanoid Robot
 - Arduino
 - Python
-slug: /lerobot_amazinghand
+slug: /ja/lerobot_amazinghand
 last_update:
   date: 9/10/2025
   author: TienjuiWong
 
 ---
 
-The **AmazingHand** is an open-source robotic hand project designed to make research and experimentation with humanoid manipulation accessible and affordable. Traditional robotic hands are often prohibitively expensive and rely on complex, bulky forearm actuators. The AmazingHand solves this by integrating all its motors directly into a compact, 3D-printable design.
+**AmazingHand** は、ヒューマノイドのマニピュレーション研究と実験を誰でも手頃に始められるよう設計された、オープンソースのロボットハンドプロジェクトです。従来のロボットハンドは価格が高く、前腕部に大型で複雑なアクチュエータを必要とすることが多いですが、AmazingHand はすべてのモーターをコンパクトで3Dプリント可能な設計に直接統合することでこれを解決します。
 
-Its design is inspired by the "ILDA hand" research project but simplified to lower the barrier to entry for students, hobbyists, and researchers. The wrist interface is designed for the Reachy2 robot but can be easily adapted for any platform.
+本設計は研究プロジェクト「ILDA hand」から着想を得ていますが、学生・ホビイスト・研究者が取り組みやすいように簡素化されています。手首インターフェースは Reachy2 ロボット向けに設計されていますが、任意のプラットフォームに容易に適合させられます。
 
 <div align="center">
   <img width ="600" src="https://raw.githubusercontent.com/pollen-robotics/AmazingHand/main/assets/Patterns_Overview.jpg"/>  
 </div>
 
-:::tip[What You'll Learn]
+:::tip[学べること]
 
-- The key features and architecture of the AmazingHand.
-- Where to find all the resources to build your own hand (BOM, CAD, Guides).
-- How to set up control using either Python or Arduino.
-- How to run basic demos and where to find more advanced examples.
+- AmazingHand の主な機能とアーキテクチャ
+- 自作のためのすべてのリソース（BOM、CAD、ガイド）の場所
+- Python または Arduino を用いた制御のセットアップ方法
+- 基本デモの実行方法と、より高度なサンプルの見つけ方
 
 :::
 
-## Key Features & Specifications
+## 主な機能と仕様
 
-The AmazingHand packs impressive capabilities into a lightweight and accessible package.
+AmazingHand は軽量で扱いやすいパッケージに驚くほどの性能を詰め込んでいます。
 
-| Feature               | Specification                                                              |
-| :-------------------- | :------------------------------------------------------------------------- |
-| **Degrees of Freedom**| **8-DOF** (4 fingers, 2-DOF per finger)                                    |
-| **Actuation** | Parallel mechanism with 2x Feetech SCS0009 servos per finger               |
-| **Motion** | Flexion/Extension & Abduction/Adduction via differential motor movement    |
-| **Construction** | Fully 3D printable with rigid "bones" and flexible TPU shells              |
-| **Weight** | \~400g                                                                      |
-| **Control Interface** | Serial bus           |
-| **License** | Code: **Apache 2.0**, Mechanical Design: **CC BY 4.0** |
+| 機能                   | 仕様                                                                         |
+| :-------------------- | :--------------------------------------------------------------------------- |
+| **自由度**            | **8-DOF**（4本指、各指 2-DOF）                                              |
+| **アクチュエーション** | 各指に Feetech SCS0009 サーボ×2 の並列機構                                   |
+| **運動**              | サーボの差動駆動による屈曲/伸展 & 外転/内転                                   |
+| **構造**              | 硬質な「骨」と柔軟な TPU シェルを用いたフル 3D プリント                        |
+| **重量**              | \~400g                                                                       |
+| **制御インターフェース** | シリアルバス                                                                  |
+| **ライセンス**        | コード：**Apache 2.0**、機械設計：**CC BY 4.0**                              |
 
-Each finger is actuated by two motors in parallel. This clever design allows for both curling (flexion/extension) and side-to-side (abduction/adduction) movements by controlling the differential motion of the servos. The palm is also a flexible part, allowing for safer and more compliant grasping of objects.
+各指は2つのモーターを並列に用いて駆動されます。この巧妙な設計により、サーボの差動動作を制御することで、指の丸め（屈曲/伸展）と左右の動き（外転/内転）の両方を実現します。手のひらも柔軟な部品で構成されており、物体をより安全かつコンプライアントに把持できます。
 
 <div align="center">
   <img width ="600" src="https://raw.githubusercontent.com/pollen-robotics/AmazingHand/main/assets/Hand_Overview.jpg"/>  
@@ -59,87 +59,87 @@ Each finger is actuated by two motors in parallel. This clever design allows for
   <img width ="600" src="https://raw.githubusercontent.com/pollen-robotics/AmazingHand/main/assets/Both_Hands-IDs.jpg"/>  
 </div>
 
-## Build Resources 🛠️
+## 組み立てリソース 🛠️
 
-Everything you need to build your own AmazingHand is available on the project's GitHub repository.
+AmazingHand を自作するために必要なものはすべて、プロジェクトの GitHub リポジトリで入手できます。
 
-- **Bill of Materials (BOM):** A complete list of all required electronic and hardware components can be found here:
+- **部品表（BOM）:** 必要な電子部品とハードウェアの完全なリストはこちら：
 
   - [**AmazingHand BOM**](https://docs.google.com/spreadsheets/d/1QH2ePseqXjAhkWdS9oBYAcHPrxaxkSRCgM_kOK0m52E/edit?gid=1269903342#gid=1269903342)
 
-- **CAD Files and 3D Printing:** All STL and STEP files are provided. Note that while the finger design is universal, some palm components are specific for right or left hands.
+- **CAD と 3D プリント:** すべての STL / STEP ファイルを提供しています。指の設計は共通ですが、手のひらの一部は右手/左手で専用部品になります。
 
-  - **CAD Files:** [**Link to CAD Folder**](https://github.com/pollen-robotics/AmazingHand/tree/main/cad)
-  - **3D Printing Guide:** [**Instructions for Printing Parts**](https://raw.githubusercontent.com/pollen-robotics/AmazingHand/main/docs/AmazingHand_3DprintingTips.pdf)
+  - **CAD ファイル:** [**CAD フォルダへのリンク**](https://github.com/pollen-robotics/AmazingHand/tree/main/cad)
+  - **3D プリントガイド:** [**プリント手順**](https://raw.githubusercontent.com/pollen-robotics/AmazingHand/main/docs/AmazingHand_3DprintingTips.pdf)
 
-- **Assembly Guide:** A detailed, step-by-step guide to assemble the hand.
+- **組み立てガイド:** 手順を追って詳細に説明した組み立てガイド。
 
   - [**Assembly Guide PDF**](https://raw.githubusercontent.com/pollen-robotics/AmazingHand/main/docs/AmazingHand_Assembly.pdf)
 
-## Control Methods
+## 制御方法
 
-You have two primary options for controlling the hand's servos over the serial bus.
+シリアルバス経由でハンドのサーボを制御する主要な選択肢は2つあります。
 
-1. **MPU:** Use a Python script on a host computer (like a Raspberry Pi or PC) connected via a serial bus driver (e.g., [Bus Servo Driver Board](https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html) ). This is great for integration with larger robotics frameworks like ROS.
+1. **MPU:** ホストコンピュータ（Raspberry Pi や PC など）で Python スクリプトを使用し、シリアルバスドライバ（例：[Bus Servo Driver Board](https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html)）経由で接続します。ROS などの大規模なロボティクスフレームワークへの統合に最適です。
 
-2. **MCU:** Use an microcontroller like Arduino with a  [Bus Servo Driver Board](https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html). This is ideal for standalone projects or when a dedicated microcontroller is preferred for handling real-time control.
+2. **MCU:** Arduino のようなマイコンと [Bus Servo Driver Board](https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html) を使用します。スタンドアロンのプロジェクトや、リアルタイム制御を専用マイコンに任せたい場合に適しています。
 
-Calibration scripts are provided for both methods to help you set up the fingers correctly during assembly.
+どちらの方法にも、組み立て時に各指を正しくセットアップするためのキャリブレーションスクリプトが用意されています。
 
-## Running the Demos
+## デモの実行
 
-Once assembled, you can test your AmazingHand with the provided demo programs.
+組み立てが完了したら、提供されているデモプログラムで AmazingHand をテストできます。
 
-:::caution[External Power Required]
-The eight servos in the hand require a stable power source. A simple 5V / 2A DC adapter with a jack connector is sufficient. **Do not try to power the servos directly from your computer's USB port.**
+:::caution[外部電源が必要]
+ハンドの8個のサーボには安定した電源が必要です。ジャックコネクタ付きのシンプルな 5V / 2A DC アダプタで十分です。**コンピュータの USB ポートから直接サーボに給電しないでください。**
 :::
 
-### Basic Demos
+### 基本デモ
 
-Once assembled, you can test your AmazingHand with the provided demo programs. First, clone the project repository to your computer to get all the necessary code:
+組み立てが完了したら、提供のデモプログラムで AmazingHand をテストできます。まず、必要なコード一式を取得するため、プロジェクトリポジトリをコンピュータにクローンします：
 
 ```bash
 git clone https://github.com/pollen-robotics/AmazingHand
 cd AmazingHand
 ```
 
-:::caution[External Power Required]
-The eight servos in the hand require a stable power source. A simple 5V / 2A DC adapter with a jack connector is sufficient. **Do not try to power the servos directly from your computer's USB port.**
+:::caution[外部電源が必要]
+手の中の8つのサーボは安定した電源を必要とします。ジャックコネクタ付きのシンプルな 5V / 2A DC アダプタで十分です。**サーボを直接コンピュータのUSBポートから給電しないでください。**
 :::
 
-#### Python Examples
+#### Python 例
 
-The `PythonExample` directory contains several useful scripts for testing and control. Navigate into this directory (`cd PythonExample`) to run them.
+`PythonExample` ディレクトリには、テストと制御に有用なスクリプトが複数含まれています。このディレクトリ（`cd PythonExample`）に移動して実行してください。
 
-- **`AmazingHand_Demo.py`**: This is the main demo. It cycles the hand through several pre-programmed gestures. It's the perfect first test to ensure everything is working correctly.
-- **`AmazingHand_Demo_Both.py`**: A specific demo for controlling both a right and a left hand connected to the same serial bus.
-- **`AmazingHand_FingerTest.py`**: A script to test the movement of a single finger, which is very useful for debugging during assembly.
-- **`AmazingHand_Hand_FingerMiddlePos.py`**: A utility script used for calibration to set fingers to their neutral, middle position.
+- **`AmazingHand_Demo.py`**: メインデモです。あらかじめ用意された複数のジェスチャを順番に実行します。すべてが正しく動作しているか確認する最初のテストに最適です。
+- **`AmazingHand_Demo_Both.py`**: 同じシリアルバスに接続された右手と左手の両方を制御するための特定デモです。
+- **`AmazingHand_FingerTest.py`**: 単一の指の動作をテストするスクリプトで、組み立て中のデバッグにとても有用です。
+- **`AmazingHand_Hand_FingerMiddlePos.py`**: 指をニュートラルな中立位置に設定する、キャリブレーション用のユーティリティスクリプトです。
 
-To run the main demo, execute the following command from within the `PythonExample` folder:
+メインデモを実行するには、`PythonExample` フォルダ内で次のコマンドを実行します：
 
 ```bash
 python3 AmazingHand_Demo.py
 ```
 
-#### Arduino Examples
+#### Arduino 例
 
-For standalone control, the `ArduinoExample` directory contains sketches you can upload directly to your microcontroller.
+スタンドアロン制御には、`ArduinoExample` ディレクトリにあるスケッチをマイコンへ直接書き込めます。
 
-- **`Amazing_Hand_Demo.ino`**: The main demo sketch that cycles the hand through the same gestures as the Python version.
-- **`Amazing_Hand-Finger_Test.ino`**: A simple sketch to test a single finger, useful for calibration and debugging hardware connections.
+- **`Amazing_Hand_Demo.ino`**: Python 版と同じジェスチャを順次実行するメインのデモスケッチ。
+- **`Amazing_Hand-Finger_Test.ino`**: 単一の指をテストするシンプルなスケッチで、キャリブレーションやハードウェア接続のデバッグに便利です。
 
-To use these, open the `.ino` file in the Arduino IDE, ensure you have the required `SCServo` library installed, then compile and upload it to your Arduino board.
+使用するには、Arduino IDE で `.ino` ファイルを開き、必要な `SCServo` ライブラリがインストールされていることを確認し、コンパイルしてボードに書き込みます。
 
-### Strain Gauge Remote Control Demo
+### ひずみゲージ遠隔操作デモ
 
-:::info 🖐️ Intuitive, Force-based Control
-This advanced demo allows for intuitive, force-based control of the hand's grip and gestures.
-:::
+\:::info 🖐️ 直感的な力ベースの制御
+この高度なデモでは、把持力やジェスチャを直感的に制御できます。
+\:::
 
-**Principle of Operation**
+**動作原理**
 
-The core of this demo is to create a data glove that translates your finger movements into commands for the **AmazingHand**. We achieve this by leveraging the electrical property of **strain gauges**, which change their resistance when bent.
+このデモの核は、あなたの指の動きを **AmazingHand** へのコマンドに変換するデータグローブを作ることです。曲げられると抵抗値が変化する **ひずみゲージ** の電気的特性を活用します。
 
 <div style={{
   maxWidth: '504px',
@@ -163,28 +163,28 @@ The core of this demo is to create a data glove that translates your finger move
   </iframe>
 </div>
 
-The workflow is as follows:
+ワークフローは次のとおりです：
 
-1. **Sensing Finger Bending**: We attach strain gauges to a glove or fingers. When you bend your fingers, the strain gauges bend with them, causing a measurable change in their electrical resistance.
+1. **指の曲げの検知**: 手袋や指にひずみゲージを取り付けます。指を曲げると、ひずみゲージも一緒に曲がり、その電気抵抗が測定可能な変化を示します。
 
-2. **Data Acquisition**: A **Seeed Studio XIAO ESP32-S3** microcontroller is used to read these resistance changes. Each strain gauge circuit is connected to one of the ESP32's **Analog-to-Digital Converter (ADC)** pins, which converts the analog resistance signal into a digital number (typically from 0 to 4095).
+2. **データ取得**: **Seeed Studio XIAO ESP32-S3** マイコンでこれらの抵抗変化を読み取ります。各ひずみゲージ回路は ESP32 の **ADC（アナログ-デジタルコンバータ）** ピンに接続され、アナログ抵抗信号をデジタル値（通常 0〜4095）へ変換します。
 
-3. **Serial Communication**: The ESP32 continuously sends these digital ADC readings over a USB serial port to a host computer.
+3. **シリアル通信**: ESP32 はこれらのデジタル ADC 読み取り値を USB シリアルポート経由でホストコンピュータに連続送信します。
 
-4. **Processing and Mapping**: A Python script running on the host computer listens to the serial port, receiving the raw ADC values. It then maps these values from the ADC's range (0-4095) to the AmazingHand's desired servo angle range.
+4. **処理とマッピング**: ホストコンピュータ上で動作する Python スクリプトがシリアルポートを監視し、生の ADC 値を受信します。次に、ADC の範囲（0〜4095）を AmazingHand の望ましいサーボ角度範囲にマッピングします。
 
-5. **Hand Control**: Finally, the script sends the calculated target angles to the AmazingHand's controller, causing the robotic fingers to mirror the movements of your own fingers in real-time.
+5. **ハンド制御**: 最後に、算出された目標角度が AmazingHand のコントローラに送られ、ロボットの指があなた自身の指の動きをリアルタイムに追従します。
 
-This creates a complete closed-loop system where your physical hand gestures directly command the robotic hand.
+この一連の流れにより、あなたの手のジェスチャがロボットハンドを直接指令するクローズドループシステムが完成します。
 
 <details>
-<summary><strong>Click to expand code and setup instructions</strong></summary>
+<summary><strong>コードとセットアップ手順を表示</strong></summary>
 
-To run this demo, you need to flash the data acquisition firmware onto the ESP32 and run the Python control script on your host computer.
+このデモを実行するには、ESP32 にデータ取得用ファームウェアを書き込み、ホストコンピュータで Python 制御スクリプトを実行します。
 
-1. XIAO ESP32-S3 Firmware
+1. XIAO ESP32-S3 ファームウェア
 
-This firmware is responsible for reading the values from the strain gauges connected to the ADC pins and sending them over the serial port in the format "value1,value2".
+このファームウェアは、ADC ピンに接続されたひずみゲージから値を読み取り、"value1,value2" 形式でシリアルポートに送信します。
 
 ```cpp title="XIAO_ESP32_S3_C3_Firmware.ino"
 /**
@@ -252,7 +252,7 @@ void loop() {
 }
 ```
 
-2. Python Control Server
+2. Python コントロールサーバ
 
 ```python title="control.py"
 import time
@@ -394,9 +394,9 @@ if __name__ == '__main__':
 
 </details>
 
-### MediaPipe Hand Tracking Demo
+### MediaPipe 手指トラッキングデモ
 
-Control the robotic hand in real-time by mirroring the movements of your own hand, tracked using a simple webcam and Google's MediaPipe framework. This advanced demo uses a Python backend to run the complex hand-tracking AI model, while a simple HTML frontend captures your camera feed. The two communicate over a WebSocket, allowing for smooth, low-latency control of the AmazingHand just by showing your hand to the camera.
+ウェブカメラと Google の MediaPipe を使って自分の手の動きをトラッキングし、ロボットハンドをリアルタイムでミラー制御します。この高度なデモでは、複雑な手トラッキング AI モデルは Python バックエンドで実行し、カメラ映像の取得はシンプルな HTML フロントエンドが行います。両者は WebSocket で通信し、カメラに手をかざすだけで滑らかで低遅延な制御が可能です。
 
 <div style={{
   position: 'relative',
@@ -420,30 +420,30 @@ Control the robotic hand in real-time by mirroring the movements of your own han
   </iframe>
 </div>
 
-To get this demo running, you will need two files: `index.html` for the browser interface and `backend.py` for the server-side processing.
+このデモを動かすには、`index.html`（ブラウザインターフェース）と `backend.py`（サーバ側処理）の2つのファイルが必要です。
 
-**Step 1: Save the Code Files**
+**ステップ 1: コードファイルを保存**
 
-First, create the two required files in the same directory. Copy the HTML code into a file named `index.html`, and copy the Python code into a file named `backend.py`.
+同じディレクトリに2つのファイルを作成します。HTML コードを `index.html` に、Python コードを `backend.py` にそれぞれコピーしてください。
 
-- **`index.html`**: This file creates the simple web page that requests access to your webcam and streams the video to the backend.
-- **`backend.py`**: This script launches a local WebSocket server. It receives the video stream, uses the MediaPipe library to detect hand landmarks in each frame, and then translates those landmark positions into motor commands for the AmazingHand.
+- **`index.html`**: ウェブカメラへのアクセス許可を要求し、映像をバックエンドへ送るシンプルなウェブページを作成します。
+- **`backend.py`**: ローカルの WebSocket サーバを起動します。映像ストリームを受け取り、MediaPipe で各フレームの手のランドマークを検出し、その位置を AmazingHand のモータコマンドへ変換します。
 
-**Step 2: Run the Backend Server**
+**ステップ 2: バックエンドサーバの起動**
 
-Open a terminal or command prompt, navigate to the directory where you saved the files, and run the following command to start the Python server:
+ターミナル（またはコマンドプロンプト）でファイル保存先ディレクトリへ移動し、以下のコマンドで Python サーバを起動します：
 
 ```bash
 python backend.py
 ```
 
-You should see a message in the terminal indicating that the server has started and is waiting for a connection, for example: `WebSocket server started on ws://localhost:8765`.
+ターミナルに `WebSocket server started on ws://localhost:8765` のように、サーバが起動して接続待機している旨のメッセージが表示されます。
 
-**Step 3: Launch the Frontend**
+**ステップ 3: フロントエンドの起動**
 
-Finally, navigate to the same directory in your file explorer and double-click the `index.html` file. It will open in your default web browser. The browser will likely ask for permission to use your webcam; please allow it.
+ファイルエクスプローラで同じディレクトリを開き、`index.html` をダブルクリックします。既定のブラウザが開き、カメラの使用許可を求められるので許可してください。
 
-Once the page loads, you will see your camera feed. The Python script will begin processing the video, and you can control the AmazingHand by moving your hand in front of the camera.
+ページが読み込まれるとカメラ映像が表示されます。Python スクリプトが映像の処理を開始し、カメラの前で手を動かすだけで AmazingHand を制御できます。
 
 <Details>
 
@@ -950,9 +950,9 @@ if **name** == '**main**':
 
 </Details>
 
-## Tech Support & Product Discussion
+## テクニカルサポート & 製品ディスカッション
 
-Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+当社製品をお選びいただきありがとうございます！製品をスムーズにご利用いただけるよう、さまざまなサポート手段をご用意しています。ご希望やニーズに合わせて以下の窓口をご利用ください。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
