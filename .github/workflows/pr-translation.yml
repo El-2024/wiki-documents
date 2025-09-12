@@ -402,11 +402,13 @@ jobs:
         id: collect-changes
         run: |
           set -e
-          # 使用 NUL 分隔，安全处理含空格/特殊字符的路径
-          git status --porcelain -z -- docs/zh-CN docs/ja docs/es \
-            | sed -z 's/^[ MADRCU?][ MADRCU?] //' \
+          # 只收集当前工作区真实存在的改动文件：
+          #  - 新增（others）
+          #  - 已修改（modified）
+          # 不包含：已删除、已重命名的“旧路径”
+          git ls-files -z --others --modified --exclude-standard -- \
+            docs/zh-CN docs/ja docs/es \
             | tr '\0' '\n' \
-            | grep -E '^docs/(zh-CN|ja|es)/' \
             > /tmp/translation_changed_files.txt || true
 
           COUNT=$(wc -l < /tmp/translation_changed_files.txt | tr -d ' ')
@@ -464,11 +466,15 @@ jobs:
             git switch -c "$BRANCH"
           fi
 
-          # 逐行复制改动文件，安全处理含空格路径
+          # 逐行复制改动文件，安全处理含空格路径；缺文件则跳过避免失败
           while IFS= read -r p; do
             [ -z "$p" ] && continue
-            mkdir -p "$(dirname "$p")"
-            cp -f "$GITHUB_WORKSPACE/$p" "$p"
+            if [ -f "$GITHUB_WORKSPACE/$p" ]; then
+              mkdir -p "$(dirname "$p")"
+              cp -f "$GITHUB_WORKSPACE/$p" "$p"
+            else
+              echo "⚠️ 跳过不存在的文件: $p"
+            fi
           done < "$CHANGED_FILES"
 
           git config user.email "action@github.com"
