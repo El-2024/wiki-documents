@@ -139,39 +139,54 @@ function preprocessDocument(content, startsInsideCodeBlock = false) {
 // 后处理移除标记并恢复缩进（严格按 [LINE_i] 对齐）
 function postprocessDocument_strict(translatedContent, lineMetadata, totalLines) {
   const out = new Array(totalLines);
-  const lines = translatedContent.split('\n');
 
-  for (const line of lines) {
-    const m = line.match(/^\[LINE_(\d+)\](.*)$/);
-    if (!m) continue; // 没有行号的译文行直接忽略（防御性）
-    const idx = Number(m[1]);
-    if (Number.isNaN(idx) || idx < 0 || idx >= totalLines) continue;
+  // 全局扫描所有行标记，逐段切分： [LINE_n]<payload直到下一个[LINE_m]或文本末尾>
+  const markerRE = /\[LINE_(\d+)\]/g;
+  let match;
+  let lastEnd = 0;
+  let lastIdx = null;
 
-    let payload = m[2];
+  // 为了覆盖译文最前端如果没有以 [LINE_0] 开头的噪声，这里忽略 lastEnd 到第一个标记的区间
+  while ((match = markerRE.exec(translatedContent)) !== null) {
+    const idx = Number(match[1]);
+    const start = match.index + match[0].length;
 
-    // 处理空行
-    if (payload.includes('[EMPTY_LINE]')) {
-      out[idx] = '';
-      continue;
+    // 找到下一个标记，确定本段 payload 结束位置
+    const next = markerRE.exec(translatedContent);
+    const end = next ? next.index : translatedContent.length;
+
+    // 由于我们前面多读了一次 next，这里把游标回退一格，保证外层循环还能处理 next
+    if (next) markerRE.lastIndex = next.index;
+
+    if (!Number.isNaN(idx) && idx >= 0 && idx < totalLines) {
+      let payload = translatedContent.slice(start, end);
+
+      // 处理空行占位
+      if (payload.includes('[EMPTY_LINE]')) {
+        out[idx] = '';
+      } else {
+        const meta = lineMetadata[idx];
+
+        // 代码块相关行：无条件使用原文整行
+        if (meta && meta.inCodeBlockLine) {
+          out[idx] = meta.originalLine;
+        } else {
+          // 恢复缩进：去掉译文前导空白，再加回原始缩进
+          const translatedTrimmed = payload.replace(/^\s+/, '');
+          out[idx] = (meta?.indent || '') + translatedTrimmed;
+        }
+      }
     }
 
-    const meta = lineMetadata[idx];
-
-    // 代码块内的行：无条件使用原文整行
-    if (meta.inCodeBlockLine) {
-      out[idx] = meta.originalLine;
-      continue;
-    }
-
-    // 恢复原始缩进（移除译文可能存在的前导空白，再加回原始缩进）
-    const translatedTrimmed = payload.replace(/^\s+/, '');
-    out[idx] = (meta.indent || '') + translatedTrimmed;
+    lastEnd = end;
+    lastIdx = idx;
   }
 
-  // 回填缺失行：用原文
+  // 回填缺失行：一律用原文（包括模型漏掉的行号）
   for (let i = 0; i < totalLines; i++) {
     if (typeof out[i] === 'undefined') {
-      out[i] = lineMetadata[i]?.originalLine ?? '';
+      const meta = lineMetadata[i];
+      out[i] = meta ? meta.originalLine : '';
     }
   }
 
