@@ -17,7 +17,7 @@ Para facilitar su uso, todos los siguientes ejemplos de multiplexación de pines
 :::tip
 Basado en VS Code, si desea usar el siguiente caso en el nRF Connect SDK, consulte la conexión proporcionada, agregue el archivo app.overlay y modifique el contenido en prj.conf
 
-[XIAO nRF54L15 Agregar archivo overlay y modificar archivo conf](http://192.168.31.44:3000/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/).
+[XIAO nRF54L15 Agregar archivo overlay y modificar archivo conf](https://wiki.seeedstudio.com/es/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/).
 
 :::
 
@@ -166,7 +166,7 @@ int main(void)
 
 - Nuevamente, esta línea de código obtiene información sobre el dispositivo GPIO del relé llamado relay0.
 
-**Verificación de disponibilidad del dispositivo**
+**Verificación de preparación del dispositivo**
 
 `if (!gpio_is_ready_dt(&button))` y `if (!gpio_is_ready_dt(&relay))`
 
@@ -373,7 +373,7 @@ int main(void)
 
   - #if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) ... #endif: Esta directiva de preprocesador es una verificación del Device Tree que asegura que existe un archivo de superposición válido que contiene definiciones de canales ADC. Esto obliga a que el usuario debe proporcionar la configuración correcta para el hardware específico.
 
-  - static const struct adc_dt_spec adc_channels[];: Esta parte del código aprovecha el Device Tree de Zephyr para recuperar automáticamente información para todos los canales ADC configurados. Este enfoque hace que el código sea flexible y portable entre diferentes hardware sin cambios manuales de configuración.
+  - static const struct adc_dt_spec adc_channels[];: Esta parte del código aprovecha el Device Tree de Zephyr para recuperar automáticamente información de todos los canales ADC configurados. Este enfoque hace que el código sea flexible y portable entre diferentes hardware sin cambios manuales de configuración.
 
   - #define POTENTIOMETER_ADC_CHANNEL_IDX 1: Se define una macro para especificar a qué canal en el array adc_channels está conectado el potenciómetro.
 
@@ -391,13 +391,13 @@ int main(void)
 
 - Inicialización ADC:
 
-  - !adc_is_ready_dt(): Antes de intentar usar el dispositivo ADC, se realiza una verificación para confirmar que está listo. Si el dispositivo no está listo, se registra un error y el programa sale.
+  - !adc_is_ready_dt(): Antes de intentar usar el dispositivo ADC, se realiza una verificación para confirmar que está listo. Si el dispositivo no está listo, se registra un error y el programa termina.
 
   - adc_channel_setup_dt(): Esta función configura el canal ADC específico conectado al potenciómetro, incluyendo su resolución y ganancia.
 
 - Inicialización PWM:
 
-  - !device_is_ready(led.dev): Similar al ADC, esta línea verifica si el dispositivo PWM está listo. Si no, se registra un error y el programa sale.
+  - !device_is_ready(led.dev): Similar al ADC, esta línea verifica si el dispositivo PWM está listo. Si no, se registra un error y el programa termina.
 
   - LOG_INF(...): La información del período PWM y la frecuencia se imprimen para ayudar al usuario a confirmar la configuración.
 
@@ -409,10 +409,9 @@ int main(void)
 La lógica central del código se ejecuta dentro de un bucle infinito while (1):
 
 - Lectura ADC:
-
   - adc_sequence_init_dt(): La secuencia ADC se inicializa para asegurar que se use la configuración correcta para cada lectura.
 
-  - adc_read(): Esto activa una conversión ADC para leer el valor analógico del potenciómetro. Si la lectura falla, se registra un error y el programa pausa por 100 milisegundos antes de continuar.
+  - adc_read(): Esto activa una conversión ADC para leer el valor analógico del potenciómetro. Si la lectura falla, se registra un error y el programa pausa durante 100 milisegundos antes de continuar.
 
   - int sensor_value = adc_raw_value;: El valor ADC crudo se asigna a la variable sensor_value.
 
@@ -428,7 +427,7 @@ La lógica central del código se ejecuta dentro de un bucle infinito while (1):
 
 - Retraso:
 
-  - k_msleep(100): El programa pausa por 100 milisegundos después de cada bucle. Esto controla la frecuencia de las lecturas ADC y actualizaciones PWM, previniendo carga excesiva de CPU y proporcionando una experiencia de usuario estable.
+  - k_msleep(100): El programa pausa durante 100 milisegundos después de cada bucle. Esto controla la frecuencia de las lecturas ADC y actualizaciones PWM, evitando una carga excesiva de CPU y proporcionando una experiencia de usuario estable.
 
 ### Gráfico de resultados
 
@@ -436,7 +435,7 @@ La lógica central del código se ejecuta dentro de un bucle infinito while (1):
 
 ## UART
 
-### Preparación de Hardware
+### Preparación del Hardware
 
 <div class="table-center">
  <table align="center">
@@ -463,7 +462,7 @@ La lógica central del código se ejecuta dentro de un bucle infinito while (1):
  </table>
 </div>
 
-### Implementación de Software
+### Implementación del Software
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/platform-seeedboards/tree/main/examples/zephyr-gps" target="_blank" rel="noopener noreferrer">
@@ -1217,7 +1216,6 @@ int main(void) {
 
     return 0;
 }
-
 ```
 
 **Configuración e Inicialización del Dispositivo de Pantalla**
@@ -1234,7 +1232,7 @@ int main(void) {
 
 - Función `framebuffer_setup()`:
 
-  - `cfb_framebuffer_init(dev):`Esto inicializa el Compact Framebuffer (CFB). CFB es una biblioteca gráfica ligera en Zephyr utilizada para dibujar texto y gráficos simples en pantallas.
+  - `cfb_framebuffer_init(dev):`Esto inicializa el Compact Framebuffer (CFB). CFB es una biblioteca de gráficos ligera en Zephyr utilizada para dibujar texto y gráficos simples en pantallas.
 
   - `cfb_framebuffer_clear(dev, true):`Esto limpia el framebuffer e inmediatamente escribe su contenido a la pantalla, asegurando una pantalla limpia.
 
@@ -1257,17 +1255,17 @@ int main(void) {
 - `cfb_print():` Esta es la función principal de la biblioteca CFB utilizada para imprimir texto en la ubicación de píxel especificada.
 
 **Bucle Principal**
-La lógica central del código se ejecuta dentro de un bucle infinito `while (1)`:
+La lógica principal del código se ejecuta dentro de un bucle infinito `while (1)`:
 
-- Limpiando la Pantalla: `cfb_framebuffer_clear(dev, false):` Al comienzo de cada bucle, esto limpia el framebuffer sin refrescar inmediatamente la pantalla. Esto permite que múltiples elementos se dibujen a la vez, previniendo el parpadeo de la pantalla.
+- Limpieza de la Pantalla: `cfb_framebuffer_clear(dev, false):` Al comienzo de cada bucle, esto limpia el framebuffer sin refrescar inmediatamente la pantalla. Esto permite que múltiples elementos se dibujen a la vez, previniendo el parpadeo de la pantalla.
 
-- Imprimiendo Texto:
+- Impresión de Texto:
 
   - Se definen dos cadenas, `line1_text` y `line2_text`.
 
   - print_text_by_row_col(): La función personalizada se utiliza para imprimir estas dos líneas de texto en posiciones específicas de fila y columna en la pantalla. La primera línea se imprime en `(1, 2)` y la segunda línea en `(2, 1).`
 
-  - Refrescando la Pantalla: `cfb_framebuffer_finalize(dev)`: Esta función envía todos los comandos de dibujo pendientes del framebuffer a la pantalla de una vez, haciendo que todo el contenido aparezca simultáneamente.
+  - Refrescado de la Pantalla: `cfb_framebuffer_finalize(dev)`: Esta función envía todos los comandos de dibujo pendientes del framebuffer a la pantalla de una vez, haciendo que todo el contenido aparezca simultáneamente.
 
   - Retraso: `k_sleep(K_MSEC(1000)):` Después de cada bucle, el programa hace una pausa de 1000 milisegundos (1 segundo). Esto controla la frecuencia de actualización de la pantalla, lo cual es adecuado para aplicaciones que muestran información estática, como un reloj o datos de sensores, de manera estable.
 
@@ -1438,7 +1436,7 @@ int main(void)
 
 **Limpieza de Pantalla:**
 
-- Se llama a la función `display_blanking_off()`. Para pantallas E-Paper, esto típicamente activa una actualización completa para limpiar cualquier contenido anterior en la pantalla.
+- Se llama a la función `display_blanking_off()`. Para pantallas E-Paper, esto típicamente activa una actualización completa para limpiar cualquier contenido antiguo en la pantalla.
 
 - Para asegurar aún más un lienzo limpio, el código usa `lv_scr_act()` para obtener la pantalla activa actual y establece su color de fondo a blanco usando `lv_obj_set_style_bg_color()`, cubriendo toda el área de la pantalla.
 
@@ -1470,13 +1468,13 @@ Cuadrados: Se usa un bucle for para crear cuatro objetos cuadrados pequeños. Su
 
 - `lv_task_handler()` se llama continuamente dentro del bucle para procesar todas las tareas internas de LVGL, como actualizar elementos de UI y manejar eventos.
 
-- `k_sleep(K_MSEC(1000))` pausa el hilo por 1000 milisegundos. Para pantallas estáticas
+- `k_sleep(K_MSEC(1000))` pausa el hilo por 1000 milisegundos. Para d
 
 ### Gráfico de resultado
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/epaper_nrf54.jpg" style={{width:600, height:'auto'}}/></div>
 
-## Soporte Técnico y Discusión de Productos
+## Soporte Técnico y Discusión del Producto
 
 ¡Gracias por elegir nuestros productos! Estamos aquí para brindarle diferentes tipos de soporte para asegurar que su experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para satisfacer diferentes preferencias y necesidades.
 
