@@ -397,16 +397,15 @@ jobs:
           fi
           node _trusted/.github/scripts/translate.js
 
-      # ✅ 仅收集本次翻译真正改动的文件，避免并发 PR 互相覆盖
+      # ✅ 仅收集本次翻译真正改动的文件，避免并发 PR 互相覆盖（空格路径安全）
       - name: Collect changed translation files
         id: collect-changes
         run: |
           set -e
-          # 使用 NUL 安全模式，避免空格路径被截断
-          git status --porcelain -z -- docs/zh-CN docs/ja docs/es \
-            | sed -z 's/^[ MADRCU?][ MADRCU?] //' \
+          # 仅收集当前工作区真实存在的改动文件（新增/已修改），排除删除与旧路径
+          git ls-files -z --others --modified --exclude-standard -- \
+            docs/zh-CN docs/ja docs/es \
             | tr '\0' '\n' \
-            | grep -E '^docs/(zh-CN|ja|es)/' \
             > /tmp/translation_changed_files.txt || true
 
           COUNT=$(wc -l < /tmp/translation_changed_files.txt | tr -d ' ')
@@ -464,16 +463,21 @@ jobs:
             git switch -c "$BRANCH"
           fi
 
-          # 逐行复制改动文件，安全处理含空格路径
+          # 逐行复制改动文件，安全处理含空格路径；不存在则跳过
+          git config core.quotePath false
           while IFS= read -r p; do
             [ -z "$p" ] && continue
-            mkdir -p "$(dirname "$p")"
-            cp -f "$GITHUB_WORKSPACE/$p" "$p"
+            if [ -f "$GITHUB_WORKSPACE/$p" ]; then
+              mkdir -p "$(dirname "$p")"
+              cp -f "$GITHUB_WORKSPACE/$p" "$p"
+            else
+              echo "⚠️ 跳过不存在的文件: $p"
+            fi
           done < "$CHANGED_FILES"
 
           git config user.email "action@github.com"
           git config user.name "GitHub Action Bot"
-          # 从文件读取 pathspec，避免空格路径问题
+          # 从清单读取 pathspec，彻底规避空格路径问题
           git add --pathspec-from-file="$CHANGED_FILES" || true
 
           if git diff --cached --quiet; then
@@ -581,7 +585,7 @@ jobs:
             } else if (success && !hasChanges) {
               comment += `### 🔍 没有检测到需要翻译的内容\n\n可能原因：目标语言已最新，或无有效文档变更。\n`;
             } else {
-              comment += `### 💔 翻译失败\n\n请查看 [工作流日志](https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }}).\n`;
+              comment += `### 💔 翻译失败\n\n请查看 [工作流日志](https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }})。\n`;
             }
             comment += `\n---\n> 🤖 由 GitHub Actions 自动生成 | [查看工作流](https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }})`;
             try {
