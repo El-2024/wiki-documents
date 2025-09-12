@@ -397,21 +397,6 @@ jobs:
           fi
           node _trusted/.github/scripts/translate.js
 
-      # ✅ 仅收集本次翻译真正改动的文件，避免并发 PR 互相覆盖
-      - name: Collect changed translation files
-        id: collect-changes
-        run: |
-          set -e
-          CHANGED="$(git status --porcelain | awk '{print $2}' | grep -E '^docs/(zh-CN|ja|es)/' || true)"
-          echo "$CHANGED" | tr '\n' ' ' > /tmp/translation_changed_files.txt
-          COUNT=$(echo "$CHANGED" | wc -w | tr -d ' ')
-          echo "count=$COUNT" >> $GITHUB_OUTPUT
-          if [ "${COUNT:-0}" -eq 0 ]; then
-            echo "HAS_CHANGES=false" >> $GITHUB_ENV
-          else
-            echo "HAS_CHANGES=true" >> $GITHUB_ENV
-          fi
-
       # ⭐ 将译文推送到 base 仓库独立分支（只提交改动的文件），并创建/更新翻译 PR
       - name: Prepare translation branch in base repo
         if: steps.check-permissions.outputs.has_permission == 'true'
@@ -424,19 +409,22 @@ jobs:
           LANGUAGES: ${{ steps.parse.outputs.languages }}
         run: |
           set -e
+          echo "🔧 准备在 base 仓库创建/更新翻译分支..."
           BRANCH="auto-translate/pr-${PR_NUMBER}"
           echo "BRANCH=$BRANCH" >> $GITHUB_OUTPUT
 
-          if [ "${HAS_CHANGES}" != "true" ]; then
-            echo "ℹ️ 无翻译改动，无需创建/更新翻译分支"
+          # 如果工作区 docs/ 三个语言目录都没有任何变化，则直接判断是否需要继续
+          # 这里不依赖 collect-changes 的清单，统一从工作区检测
+          if ! git -C "$GITHUB_WORKSPACE" status --porcelain | grep -E '^ [AMDR] ' | grep -E ' docs/(zh-CN|ja|es)/' >/dev/null 2>&1; then
+            echo "ℹ️ 未检测到目标语言目录的改动（可能 translate.js 内部也无变动）"
+            echo "HAS_CHANGES=false" >> $GITHUB_ENV
             exit 0
           fi
+          echo "HAS_CHANGES=true" >> $GITHUB_ENV
 
-          CHANGED_FILES=$(cat /tmp/translation_changed_files.txt || true)
-          if [ -z "$CHANGED_FILES" ]; then
-            echo "ℹ️ 未发现改动文件"
-            exit 0
-          fi
+          WORKDIR=$(mktemp -d)
+          echo "WORKDIR=$WORKDIR"
+          cd "$WORKDIR"
 
           TOKEN="${TRANSLATION_PAT:-${GITHUB_TOKEN}}"
           if [ -z "$TOKEN" ]; then
@@ -445,32 +433,28 @@ jobs:
           fi
           REMOTE_URL="https://${TOKEN}@github.com/${BASE_REPO}.git"
 
-          WORKDIR=$(mktemp -d)
           git config --global init.defaultBranch main
-          git clone --depth=1 "$REMOTE_URL" "$WORKDIR/repo"
-          cd "$WORKDIR/repo"
+          git clone --depth=1 "$REMOTE_URL" repo
+          cd repo
           git fetch --depth=1 origin "$BASE_REF"
           git checkout "$BASE_REF"
 
-          # 创建/复用翻译分支（始终基于最新 base）
-          if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
-            git checkout -B "$BRANCH"
-          else
-            git switch -c "$BRANCH"
-          fi
-
-          # 只复制改动文件，避免全量覆盖/删除
-          for p in $CHANGED_FILES; do
-            mkdir -p "$(dirname "$p")"
-            cp -f "$GITHUB_WORKSPACE/$p" "$p"
-          done
+          # ✅ 只镜像三种语言目录，移动/删除由 --delete 保证同步
+          # 如果某个语言目录不存在也没关系，rsync 会忽略
+          rsync -a --delete \
+            --include='docs/' \
+            --include='docs/zh-CN/***' \
+            --include='docs/ja/***' \
+            --include='docs/es/***' \
+            --exclude='*' \
+            "$GITHUB_WORKSPACE/" .
 
           git config user.email "action@github.com"
           git config user.name "GitHub Action Bot"
-          git add -- $CHANGED_FILES || true
+          git add docs/zh-CN docs/ja docs/es 2>/dev/null || true
 
           if git diff --cached --quiet; then
-            echo "ℹ️ 同步后无变化"
+            echo "ℹ️ 镜像后无变化"
           else
             git commit \
               -m "🌍 自动翻译文档 for #${PR_NUMBER}" \
