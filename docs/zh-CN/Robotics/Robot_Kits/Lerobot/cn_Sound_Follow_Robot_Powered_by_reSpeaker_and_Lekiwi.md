@@ -1,6 +1,6 @@
 ---
-description: 本 wiki 提供了一个全面的实现框架，用于为 Lekiwi 机器人套件配备声音跟随功能，使用 ReSpeaker Mic Array v2.0 和 reComputer Jetson Mini，涵盖硬件集成、环境配置和软件适配，同时演示实时音频源跟踪功能。
-title: Lekiwi 声音跟随机器人
+description: 本wiki提供了一个全面的实现框架，用于为Lekiwi机器人套件配备声音追踪功能，使用ReSpeaker Mic Array v2.0和reComputer Jetson Mini。内容涵盖硬件集成、环境配置和软件适配，并演示实时音频源追踪功能。
+title: 由reSpeaker和Lekiwi驱动的声音追踪机器人
 keywords:
 - Lerobot
 - Huggingface
@@ -12,18 +12,17 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.webp
 slug: /cn/sound_follow_robot
 last_update:
-  date: 6/24/2025
-  author: Youjiang
+  date: 8/4/2025
+  author: LiShanghang
 ---
 
-## 介绍
-
-Lewiki 机器人套件与 ReSpeaker Mic Array v2.0 集成后，获得了语音交互和声音导航功能。本指南详细介绍了配置硬件和软件环境以实现机器人声音跟随功能的分步过程。
+## 简介
+Lekiwi机器人套件结合ReSpeaker Mic Array v2.0，获得了语音交互和声音导航功能。本指南详细介绍了配置机器人的硬件和软件环境以实现声音追踪功能的逐步过程。
 
 <div class="table-center">
   <table align="center">
     <tr>
-        <th>Lekiwi 机器人套件</th>
+        <th>Lekiwi Robot Kit</th>
         <th>ReSpeaker Mic Array v2.0</th>
         <th>reComputer Mini J4012</th>
     </tr>
@@ -70,35 +69,36 @@ Lewiki 机器人套件与 ReSpeaker Mic Array v2.0 集成后，获得了语音�
   </table>
 </div>
 
-## 前提条件
 
-- Lewiki 机器人套件
-- ReSpeaker Mic Array v2.0
+## 硬件准备
+
+- Lekiwi 机器人套件
+- ReSpeaker 麦克风阵列 v2.0
 
 :::note
-考虑到未来的功能扩展，本 wiki 使用`reComputer Jetson Mini J4012`作为机器人的主控设备。您也可以使用`Raspberry Pi 5`实现本 wiki 中描述的所有功能。
+考虑到未来功能扩展，本wiki使用`reComputer Jetson Mini J4012`作为机器人的主控设备。您也可以使用`Raspberry Pi 5`实现本维基中描述的所有功能。
 :::
 
 ## 硬件连接
 
-1. 请参考[此 wiki](https://wiki.seeedstudio.com/cn/lerobot_lekiwi/)来准备 Lekiwi 机器人，包括机械结构的组装和电机的配置。
-2. 使用 3D 打印连接器将 reSpeaker 安装到 Lekiwi 上。
-3. 使用 USB 线缆将 reSpeaker 和舵机控制器连接到 reComputer。
+1. 请参考[此维基](https://wiki.seeedstudio.com/cn/lerobot_lekiwi/) 准备Lekiwi机器人，包括机械结构的组装和电机的配置。
+2. 使用3D打印的连接器将reSpeaker安装到Lekiwi上。
+3. 使用USB线将reSpeaker和伺服控制器连接到reComputer。
 
 <div align="center">
     <img width={1000}
     src="https://files.seeedstudio.com/wiki/reComputer-Jetson/sound_follow/robot.jpg" />
 </div>
 
-## 准备软件环境
+## 软件准备环境
 
 ### Lerobot 虚拟环境
 
-如果您在 Lekiwi 组装过程中已经在 reComputer 上设置了 Lerobot 虚拟环境，可以跳到下一节。
-否则，您可以使用以下命令配置 Lerobot 虚拟环境：
+如果您在Lekiwi组装过程中已经在您的reComputer上设置了Lerobot虚拟环境，您可以跳至下一节。
 
-**步骤 1.** 安装 Miniconda
+否则，您需要使用以下命令配置Lerobot虚拟环境:
 
+**步骤1.** 安装Miniconda
 ```bash
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda3/miniconda.sh
@@ -106,9 +106,7 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 source ~/.bashrc
 ```
-
-**步骤 2.** 为 lerobot 创建 conda 环境
-
+**步骤2.** 为lerobot创建conda环境
 ```bash
 conda create -y -n lerobot python=3.10
 conda activate lerobot
@@ -119,15 +117,15 @@ cd ~/lerobot && pip install -e ".[feetech]"
 
 ### reSpeaker 依赖项
 
-在 lerobot 虚拟环境中安装 reSpeaker 依赖项。
+在 lerobot 虚拟环境中安装 reSpeaker 的依赖项。
 
-**步骤 1.** 安装`pyusb`
+**步骤1.** 安装 `pyusb`
 
 ```bash
 pip install pyusb==1.0.2
 ```
 
-**步骤 2.** 配置 USB 设备访问权限
+**步骤2.** 配置USB设备访问权限。
 
 ```bash
 echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="2886", MODE="0666"' | sudo tee /etc/udev/rules.d/51-mic-usb.rules
@@ -135,10 +133,10 @@ sudo chmod +x /etc/udev/rules.d/51-mic-usb.rules
 sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
-## 安装应用软件
+## 部署应用程序软件
 
-导航到`lerobot/lerobot/common/robots/lekiwi/`目录，在此位置创建一个名为`sound_follow.py`的新 Python 脚本。
-然后，将以下内容复制到 sound_follow.py 中。
+转到 `lerobot/lerobot/common/robots/lekiwi` 目录，并在此位置创建一个名为 `sound_follow.py` 的新Python脚本。
+然后，将以下内容复制到 `sound_follow.py` 中。
 
 <details>
 
@@ -299,10 +297,10 @@ class SoundFollowingRobot:
             return
 
         return Tuning(dev)
-
+    
     def get_sound_direction(self):
         return self.mic.read("DOAANGLE")
-
+        
     def robot_turn(self, speed):
         data = {'x.vel': 0.0, 'y.vel': 0.0, 'theta.vel': int(speed/self.scale_factor)}
         _action_sent = self.robot.send_action(data)
@@ -332,7 +330,7 @@ class SoundFollowingRobot:
             print(f"Exception occurred: {e}")
         finally:
             self.close()
-
+    
     def close(self):
         self.robot_turn(0)
         self.robot.disconnect()
@@ -342,11 +340,12 @@ class SoundFollowingRobot:
 if __name__ == "__main__":
     robot = SoundFollowingRobot()
     robot.run()
+
 ```
 
 </details>
 
-由于我们的硬件设置不使用摄像头或 SOArm101 机械臂，我们需要注释掉相关的配置。
+由于我们的硬件设置不使用摄像头或SOArm101机器人手臂，我们需要注释掉相关的配置。
 
 `lerobot/lerobot/common/robots/lekiwi/config_lekiwi.py`
 
@@ -382,7 +381,7 @@ motors={
 },
 ```
 
-修改 send_action 函数以禁用/移除机械臂相关的代码部分。
+将“send_action”函数中的机械臂相关代码部分禁用或移除。
 
 `lerobot/lerobot/common/robots/lekiwi/lekiwi.py`
 
@@ -402,7 +401,7 @@ def send_action(self, action: dict[str, Any]) -> dict[str, Any]:
 
 ## 启动应用程序
 
-运行以下命令启动机器人：
+运行以下命令以启动机器人：
 
 ```bash
 conda activate lerobot
@@ -412,20 +411,20 @@ python -m lerobot.common.robots.lekiwi.sound_follow
 
 ## 效果演示
 
-启动程序后，机器人将朝向声源旋转，持续将其"头部"对准传入音频的方向。
+启动程序后，机器人将朝向声音源旋转，持续调整其“头部”方向以对准传入音频的方向。
 
 <div align="center">
 <iframe width="800" height="450" src="https://www.youtube.com/embed/uI_leYm_m-w" title="A Sound Follow Robot Powered by reSpeaker and Lekiwi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-## 参考资料
+## 参考文档
 
-- https://wiki.seeedstudio.com/cn/ReSpeaker_Mic_Array_v2.0/#version
-- https://github.com/respeaker/usb_4_mic_array
+- https://wiki.seeedstudio.com/cn/ReSpeaker_Mic_Array_v2.0/#version 
+- https://github.com/respeaker/usb_4_mic_array 
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您对我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>

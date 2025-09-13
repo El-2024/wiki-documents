@@ -1,19 +1,21 @@
 ---
-description: 本 wiki 提供 Feetech 舵机的教程。
-title: Feetech 舵机
+description: This wiki provides tutorial for Feetech Servo motors.
+title: 飞特舵机使用文档
 keywords:
 - actuator
 - motor
 - arm
 - robotics
-image: https://files.seeedstudio.com/wiki/robotics/Actuator/feetech/Feetech-ST3215-Servo.webp
+image:   https://media-cdn.seeedstudio.com/media/catalog/pr…5d/1/-/1-108090023-feetech-st-3215-c001-servo.jpg
 slug: /cn/feetech_servo
 last_update:
   date: 06/24/2025
   author: ZhuYaoHui
 ---
 
-# Feetech 舵机文档中心
+# 飞特STS系列舵机文档中心
+
+
 
 <div align="center">
 
@@ -21,15 +23,17 @@ last_update:
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/STS3215-19kg-cm-7-4V-Serial-Servo-p-6338.html" target="_blank">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱</font></span></strong>
+    <a class="get_one_now_item"  href="https://www.seeedstudio.com/STS3215-19kg-cm-7-4V-Serial-Servo-p-6338.html" target="_blank">
+            <strong><span><font color={'FFFFFF'} size={"4"}> 购买链接 🖱</font></span></strong>
     </a>
 </div>
+
+
 
 <div class="category-group">
   <div class="category-card robot-kits">
 
-## 数据手册
+## 产品手册
 
   <a href="https://files.seeedstudio.com/products/Feetech/108090003_FEETECH_ST-3215-C047-Datasheet.pdf" className="nav-item">
     <span className="text">ST3215-C047 12V 1:345</span>
@@ -43,6 +47,7 @@ last_update:
   <a href="https://files.seeedstudio.com/products/Feetech/108090023_STS3215-C001_Datasheet.pdf" className="nav-item">
     <span className="text">ST3215-C001 7.4v 1:345</span>
   </a>
+
 
 ## SDK
 
@@ -58,42 +63,43 @@ last_update:
   <a href="https://gitee.com/ftservo/FTServo_stm32HAL" className="nav-item">
     <span className="text">Stm32HAL</span>
   </a>
-  <a href="https://files.seeedstudio.com/wiki/robotics/Actuator/feetech/Analysis_of_SCS_Memory_Table.xlsx" className="nav-item">
-    <span className="text">SCS 内存表分析</span>
+  <a href="http://doc.feetech.cn/#/prodinfodownload?srcType=FT-SMS-STS-emanual-229f4476422d4059abfb1cb0" className="nav-item">
+    <span className="text">内存表</span>
   </a>
-  <a href="https://files.seeedstudio.com/wiki/robotics/Actuator/feetech/Communication_Protocol_Manual.pdf" className="nav-item">
-    <span className="text">通信协议手册</span>
+  <a href="http://doc.feetech.cn/#/prodinfodownload?srcType=FT-SCS-Protocol-41ad23fe8a244712ba160b93" className="nav-item">
+    <span className="text">通信协议</span>
   </a>
-  <a href="https://files.seeedstudio.com/wiki/robotics/Actuator/feetech/Hexadecimal_instructions_generate_tables.xlsx" className="nav-item">
-    <span className="text">十六进制指令生成表</span>
+  <a href="http://md.feetech.cn/wenjian-maxbase-100001/pub/%E4%BA%A7%E5%93%81%E8%A7%84%E6%A0%BC/MD%E6%96%87%E6%A1%A3/202505/5af0e85ab1cb45f596d7cc2b-%E7%A3%81%E7%BC%96%E7%A0%81SMS&STS&HTS-%E5%8D%81%E5%85%AD%E8%BF%9B%E5%88%B6%E6%8C%87%E4%BB%A4%E7%94%9F%E6%88%90%E8%A1%A8-250508.xlsx" className="nav-item">
+    <span className="text">十六进制指令生成集</span>
   </a>
 
-## 调试软件
+## 上位机
 
   <a href="https://gitee.com/ftservo/fddebug" className="nav-item">
     <span className="text">FDServo</span>
   </a>
 
-## 示例
+## 控制案例
 
   <a href="https://wiki.seeedstudio.com/cn/bus_servo_driver_board/" className="nav-item">
-    <span className="text">总线舵机驱动板 / XIAO 总线舵机适配器入门指南</span>
+    <span className="text">XIAO总线舵机驱动板控制STS3215</span>
   </a>
 
 </div>
 </div>
 
-## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+## 技术支持
+
+感谢您选择我们的产品！我们将为您提供全方位的支持，确保您获得顺畅的产品使用体验。我们开通了多种沟通渠道，以满足不同用户的需求和偏好。
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
 
@@ -153,7 +159,7 @@ last_update:
   }
 }
 
-/* Dark 模式样式 */
+/* Dark模式样式 */
 html[data-theme='dark'] {
   .quick-nav-container {
     background: #1f2937;
@@ -170,6 +176,10 @@ html[data-theme='dark'] {
 
 `}</style>
 
+
+
+
+
 <style>{`
 
 /* 内容卡片增强版样式 */
@@ -180,7 +190,7 @@ html[data-theme='dark'] {
   margin-top: 2rem;
 }
 
-/* Dark 模式 - 内容卡片 */
+/* Dark模式 - 内容卡片 */
 html[data-theme='dark'] .category-card {
   background: #374151;
   box-shadow: 0 4px 6px rgba(0,0,0,0.4);
@@ -212,7 +222,7 @@ html[data-theme='dark'] .category-card {
   box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
-/* Dark 模式 - 悬浮特效 */
+/* Dark模式 - 悬浮特效 */
 html[data-theme='dark'] .category-card:hover {
   box-shadow: 0 12px 20px rgba(0,0,0,0.6);
 }
@@ -228,7 +238,7 @@ html[data-theme='dark'] .category-card:hover {
   z-index: -1;
 }
 
-/* Dark 模式 - 悬浮光效 */
+/* Dark模式 - 悬浮光效 */
 html[data-theme='dark'] .category-card:hover::after {
   background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
 }
@@ -242,7 +252,7 @@ html[data-theme='dark'] .category-card:hover::after {
   color: #333;
 }
 
-/* Dark 模式 - 链接 */
+/* Dark模式 - 链接 */
 html[data-theme='dark'] .category-card a {
   color: #d1d5db;
 }
@@ -252,7 +262,7 @@ html[data-theme='dark'] .category-card a {
   transform: translateX(5px);
 }
 
-/* Dark 模式 - 链接悬浮 */
+/* Dark模式 - 链接悬浮 */
 html[data-theme='dark'] .category-card a:hover {
   color: #60a5fa;
 }
@@ -268,7 +278,7 @@ html[data-theme='dark'] .category-card a:hover {
   transition: width 0.3s;
 }
 
-/* Dark 模式 - 链接下划线 */
+/* Dark模式 - 链接下划线 */
 html[data-theme='dark'] .category-card a::after {
   background: #60a5fa;
 }
@@ -286,26 +296,26 @@ html[data-theme='dark'] .category-card a::after {
   transition: all 0.3s;
 }
 
-.stable {
-  background: #e6f4ea;
+.stable { 
+  background: #e6f4ea; 
   color: #137333;
   box-shadow: 0 2px 4px rgba(0,100,0,0.1);
 }
 
-/* Dark 模式 - Stable 标签 */
+/* Dark模式 - Stable标签 */
 html[data-theme='dark'] .stable {
   background: #065f46;
   color: #a7f3d0;
   box-shadow: 0 2px 4px rgba(0,100,0,0.3);
 }
 
-.recommended {
-  background: #fce8e6;
+.recommended { 
+  background: #fce8e6; 
   color: #a50e0e;
   box-shadow: 0 2px 4px rgba(200,0,0,0.1);
 }
 
-/* Dark 模式 - Recommended 标签 */
+/* Dark模式 - Recommended标签 */
 html[data-theme='dark'] .recommended {
   background: #7f1d1d;
   color: #fca5a5;
@@ -317,7 +327,7 @@ html[data-theme='dark'] .recommended {
   box-shadow: 0 6px 10px rgba(0,0,0,0.1);
 }
 
-/* Dark 模式 - 点击效果 */
+/* Dark模式 - 点击效果 */
 html[data-theme='dark'] .category-card:active {
   box-shadow: 0 6px 10px rgba(0,0,0,0.4);
 }
@@ -327,14 +337,14 @@ html[data-theme='dark'] .category-card:active {
   .nav-grid {
     grid-template-columns: 1fr;
   }
-
+  
   .category-card {
     width: 100%;
     margin-top: 0.5rem; /* 卡片紧贴标题 */
   }
 }
 
-/* Dark 模式 - 标题文字 */
+/* Dark模式 - 标题文字 */
 html[data-theme='dark'] h1,
 html[data-theme='dark'] h2,
 html[data-theme='dark'] h3,
@@ -344,14 +354,14 @@ html[data-theme='dark'] h6 {
   color: #f9fafb;
 }
 
-/* Dark 模式 - 正文文字 */
+/* Dark模式 - 正文文字 */
 html[data-theme='dark'] p,
 html[data-theme='dark'] li,
 html[data-theme='dark'] strong {
   color: #e5e7eb;
 }
 
-/* Dark 模式 - 引用块 */
+/* Dark模式 - 引用块 */
 html[data-theme='dark'] blockquote {
   color: #9ca3af;
   border-left-color: #4b5563;

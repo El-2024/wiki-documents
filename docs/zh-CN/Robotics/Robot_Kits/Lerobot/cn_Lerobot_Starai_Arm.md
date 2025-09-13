@@ -1,6 +1,6 @@
 ---
-description: 本 wiki 提供了 StarAI 机械臂的调试教程，并在 Lerobot 框架内实现数据收集和训练。
-title: LeRobot 中的 StarAI 机械臂
+description: 本维基提供华馨京 StarAI 机械臂的调试教程，并在 Lerobot 框架内实现数据收集和训练。
+title: 基于 LeRobot 的华馨京 StarAI 机械臂入门教程
 keywords:
 - Lerobot
 - Huggingface
@@ -13,72 +13,75 @@ last_update:
   author: LiShanghang
 ---
 
-# 开始使用 StarAI 机械臂与 LeRobot
+# 基于 LeRobot 的华馨京 StarAI 机械臂入门教程
 
 <div class="video-container">
-<iframe width="900" height="600" src="https://www.youtube.com/embed/IJKTeBYAG7k?si=iS-jqT27fDjeI6yX" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="600" src="//player.bilibili.com/player.html?isOutside=true&aid=115064656956649&bvid=BV1wJYDzEE2s&cid=32243908802&p=1" title="bilibili video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-| **从动臂 Viola** | **主动臂 Violin** | **从动臂 Cello** |
+| **跟随臂 Viola** | **领导臂 Violin** | **跟随臂 Cello** |
 |:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/viola.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/violin.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/cello.png) |
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/Fashionstar-Star-Arm-Viola-Violin-p-6497.html" target="_blank" rel="noopener noreferrer">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买!!! 🖱️</font></span></strong>
+<a class="get_one_now_item" href="https://detail.tmall.com/item.htm?abbucket=14&id=877820346195&pisk=g1g-PB_1NKvkMpXPwvxD-sHz71ADnncPlYl1-J2lAxHxOAnoqpyuOwMZe8qQKb4p9xymr8cuPJUK_AHuEkjokrNgOa_QOWabGWymKwcoJm7K_XukayAzzbzURdvMSwhrayr0KlOKysGbsj_CAwt0lVl6JA9MSFcvV7znGd0h1yvLM5bQRuZCGEw4TgNIdu6bh-PUOTaQFIhb3-_5PWw7GENaNJsIdw6fh7P3dawQOrTbs-wQRyMIGIF3hJaQRvGjpu-8H_NAJ0MtvojDMR_CRqF8cnc7h9qxl7U0BbgRRw1UwuesN-p59m_4cXrK867LFbiZL5M5FdqrOmHYwyLcVPGxAAFqPFX8g0cjs-GO1NGuyc3TP0pV0zD-lrgSX6_IMzezc4qAeKeszjgaloY66jgqEbuxt6TQiA2ja4ap5Cz8P8aYg2vVPJnjA4qz8T9g4XixH7U141giWbKGIRFhVIdAYMr7g17h2CC0e5U4MRA8wMSUASPYIIdAYMr7gSeMwgSFYkNV.&rn=acacff6fbd3de1ee202eac8643c0e445&spm=a1z10.5-b-s.w4011-22390330418.50.1c211a1b6fFWjc&skuId=5898337868110" target="_blank" rel="noopener noreferrer" >
+            <strong><span><font color={'FFFFFF'} size={"4"}> 淘宝来一单 🖱️</font></span></strong>
 </a></div>
 
-## 产品介绍
+##  产品介绍
 
-1. **开源且易于二次开发**
-    这一系列舵机由[Fashion Star Robotics](https://fashionrobo.com/)提供，提供开源、易于定制的 6+1 自由度机械臂解决方案。
+1.  **开源设计，便于二次开发**  
+    本系列伺服电机由[华馨京科技](https://fashionrobo.com/)提供，可打造开源且易于定制的6+1自由度机械臂解决方案。
 
-2. **具有不同载荷的双臂系统**
-    Violin 作为主动机械臂。当处于 70%臂展时，从动臂 Viola 的工作载荷为 300g，而从动臂 Cello 的工作载荷为 750g。
+2.  **多负载双臂系统**  
+    Violin作为主机械臂（Leader），在其臂展的70%伸展状态下，从机械臂（Follower）Viola的工作负载为300克，从机械臂（Follower）Cello的工作负载则为750克, Cello最大支持1000克。
 
-3. **支持 ROS2、Moveit2 和 Isaac Sim**
-    它支持 ROS2 用于发布和订阅机械臂数据主题以及控制机械臂，还支持 MoveIt2 进行逆运动学计算，以及在 Isaac Sim 中进行仿真。
+3.  **支持ROS2、MoveIt2与Isaac Sim**  
+    支持通过ROS2（机器人操作系统2）发布和订阅机械臂数据话题并实现对机械臂的控制，同时支持通过MoveIt2完成运动学逆解计算，也可在Isaac Sim（NVIDIA机器人仿真平台）中进行仿真操作。
 
-4. **LeRobot 平台集成支持**
-    它专门设计用于与[LeRobot 平台](https://github.com/huggingface/lerobot)集成。该平台为现实世界机器人任务中的模仿学习提供 PyTorch 模型、数据集和工具，包括数据收集、仿真、训练和部署。
+4.  **支持LeRobot平台集成**  
+    本产品专为集成[LeRobot平台](https://github.com/huggingface/lerobot)设计。该平台提供PyTorch模型、数据集及工具，可用于现实世界机器人任务中的模仿学习，涵盖数据采集、仿真、训练与部署等环节。
 
-5. **开源 SDK**
-     支持 Python 和 C++ SDK 开发
+5.  **开源软件开发工具包（SDK）**  
+    支持Python与C++语言的SDK开发。
 
-6. **按钮悬停**
-    模拟重力补偿，允许机械臂通过按钮在任何位置悬停。
+6.  **按键悬停功能**  
+    模仿重力补偿原理，可通过按键控制机械臂在任意位置悬停。
 
-7. **模块化末端执行器**
-    支持快速 DIY 更换。
+7.  **模块化末端执行器**  
+    支持用户自行DIY，实现快速替换。
 
-8. **丰富的学习资源**
-    我们提供全面的开源学习资源，包括环境设置、安装和调试指南，以及自定义抓取任务示例，帮助用户快速入门并开发机器人应用。
+8.  **丰富的学习资源**  
+    我们提供全面的开源学习资源，包括环境搭建指南、安装调试教程及自定义抓取任务示例，助力用户快速上手并开发机器人应用。
 
-9. **Nvidia 平台兼容性**
-    支持通过 Nvidia Jetson 平台进行部署。
+9.  **兼容NVIDIA平台**  
+    支持通过NVIDIA Jetson平台进行部署。
+
 
 ## 规格参数
 
-| 项目                 | 从动臂 \| Viola                             | 主动臂 \|Violin                                |    从动臂 \|Cello    |
-| -------------------- | ------------------------------------------------- | ------------------------------------------------- |-----------------|
-| 自由度   | 6+1                                               | 6+1                                               | 6+1             |
-| 臂展                | 470mm                                             | 470mm                                             | 670mm |
-| 跨度                 | 940mm                                             | 940mm                                             | 1340mm |
-| 重复精度        | 2mm                                               | -                                                 | 1mm  |
-| 工作载荷      | 300g (70%臂展时)                            | -                                                 |  750g (70%臂展时)   |
-| 舵机               | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 |RX18-U100H-M x3<br/> RX8-U50H-M x3<br/> RX8-U51H-M x1|
-| 平行夹爪套件  | ✅                                                 | -                                                 | ✅   |
-| 腕部旋转         | 是                                               | 是                                               | 是 |
-| 任意位置保持 | 是                                               | 是 (带手柄按钮)                          |  是|
-| 腕部相机安装   |提供参考 3D 打印文件 | | 提供参考 3D 打印文件
-| 兼容 LeRobot   | ✅                                                 | ✅                                                 | ✅|
-| 兼容 ROS 2     | ✅                                                 | ✅                                                | ✅|
-| 兼容 MoveIt2    | ✅                                                 | ✅                                               |✅ |
-| 兼容 Gazebo    | ✅                                                 |✅                                              |✅ |
-| 通信集线器    | UC-01                                             | UC-01                                             | UC-01 |
-| 电源供应         | 12V10A/120w XT30                                   | 12V10A/120w XT30                                 |12V25A/300w XT60  |
+| 项目（Item）               | 跟随臂 \| Viola                          | 领导臂 \| Violin                        | 跟随臂 \| Cello                        |
+| -------------------------- | ------------------------------------------ | ----------------------------------------- | ---------------------------------------- |
+| 自由度（Degrees of Freedom） | 6+1                                        | 6+1                                       | 6+1                                      |
+| 最大工作半径（Reach）       | 470毫米                                    | 470毫米                                   | 670毫米                                  |
+| 最大臂展（Span）           | 940毫米                                    | 940毫米                                   | 1340毫米                                 |
+| 重复定位精度（Repeatability） | 2毫米                                      | -                                         | 1毫米                                    |
+| 工作负载（Working Payload） | 300克（在70%工作半径下）                   | -                                         | 750克（在70%工作半径下）                 |
+| 伺服电机（Servos）         | RX8-U50H-M × 2<br/>RA8-U25H-M × 4<br/>RA8-U26H-M × 1 | RX8-U50H-M × 2<br/>RA8-U25H-M × 4<br/>RA8-U26H-M × 1 | RX18-U100H-M × 3<br/>RX8-U50H-M × 3<br/>RX8-U51H-M × 1 |
+| 平行夹爪套件（Parallel Gripper Kit） | ✅（支持）                                  | -                                         | ✅（支持）                                |
+| 腕部旋转（Wrist Rotate）    | 支持（Yes）                                | 支持（Yes）                               | 支持（Yes）                              |
+| 任意位置悬停（Hold at any Position） | 支持（Yes）                          | 支持（Yes，带手柄按键）                   | 支持（Yes）                              |
+| 腕部相机安装座（Wrist Camera Mount） | 提供参考3D打印文件              | -                                         | 提供参考3D打印文件                       |
+| 兼容LeRobot（Works with LeRobot） | ✅（兼容）                          | ✅（兼容）                                 | ✅（兼容）                                |
+| 兼容ROS 2（Works with ROS 2） | ✅（兼容）                              | ✅（兼容）                                 | ✅（兼容）                                |
+| 兼容MoveIt2（Works with MoveIt2） | ✅（兼容）                          | ✅（兼容）                                 | ✅（兼容）                                |
+| 兼容Gazebo（Works with Gazebo） | ✅（兼容）                          | ✅（兼容）                                 | ✅（兼容）                                |
+| 通信集线器（Communication Hub） | UC-01                                  | UC-01                                     | UC-01                                    |
+| 电源适配器（Power Supply）  | 12伏10安/120瓦，XT30接口                   | 12伏10安/120瓦，XT30接口                  | 12伏25安/300瓦，XT60接口                 |
 
-有关舵机的更多信息，请访问以下链接。
+
+
+有关舵机更多资讯，请访问以下链接。
 
 [RA8-U25H-M](https://fashionrobo.com/actuator-u25/23396/)
 
@@ -86,29 +89,28 @@ last_update:
 
 [RX8-U50H-M](https://fashionrobo.com/actuator-u50/136/)
 
-## 初始环境设置
 
-**对于 Ubuntu x86：**
+## 初始环境搭建
 
+**对于 Ubuntu x86:**
 - Ubuntu 22.04  
 - CUDA 12+  
 - Python 3.10  
 - Torch 2.6  
 
-**对于 Jetson Orin：**
-
-- Jetson JetPack 6.0+  
+**对于 Jetson Orin:**
+- Jetson JetPack 6.0+
 - Python 3.10  
 - Torch 2.6  
 
-## 安装和调试
 
-### 安装 LeRobot
+## 安装与调试
 
-需要根据您的 CUDA 版本安装 pytorch 和 torchvision 等环境。
+### 安装LeRobot
 
-1. 安装 Miniconda：
-对于 Jetson：
+需要根据你的 CUDA 版本安装 pytorch 和 torchvision 等环境。
+
+1. 安装 Miniconda： 对于 Jetson：
 
 ```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
@@ -129,115 +131,105 @@ source ~/miniconda3/bin/activate
 conda init --all
 ```
 
-2. 为 lerobot 创建并激活一个新的 conda 环境
+2.创建并激活一个新的 conda 环境用于 LeRobot
 
 ```bash
 conda create -y -n lerobot python=3.10 && conda activate lerobot
 ```
 
-3. 克隆 Lerobot：
+3.克隆 LeRobot 仓库：
 
 ```bash
 git clone https://github.com/servodevelop/lerobot-starai.git
 ```
 
-4. 使用 miniconda 时，在您的环境中安装 ffmpeg：
+4.使用 miniconda 时，在环境中安装 ffmpeg：
 
 ```bash
 conda install ffmpeg -c conda-forge
 ```
-
 :::tip
-这通常会为您的平台安装使用 libsvtav1 编码器编译的 ffmpeg 7.X。如果不支持 libsvtav1（使用 ffmpeg -encoders 检查支持的编码器），您可以：
-
-- [在任何平台上] 使用以下命令显式安装 ffmpeg 7.X：
-
+这通常会为你的平台安装使用 libsvtav1 编码器编译的 ffmpeg 7.X。如果不支持 libsvtav1（可以通过 ffmpeg -encoders 查看支持的编码器），你可以：
+- 【适用于所有平台】显式安装 ffmpeg 7.X：
 ```bash
 conda install ffmpeg=7.1.1 -c conda-forge
 ```
-
-- [仅在 Linux 上] 安装 ffmpeg 构建依赖项并使用 libsvtav1 从源代码编译 ffmpeg，并确保使用 which ffmpeg 对应您安装的 ffmpeg 二进制文件。
-
+- 【仅限 Linux】安装 ffmpeg 的构建依赖并从源码编译支持 libsvtav1 的 ffmpeg，并确保使用的 ffmpeg 可执行文件是正确的，可以通过 `which ffmpeg` 确认。
 :::
 
-5. 安装带有 feetech 电机依赖项的 LeRobot：
+5.安装带有 fashionstar 电机依赖的 LeRobot：
 
 ```bash
-cd ~/lerobot-starai && pip install -e ".[feetech]"
+cd ~/lerobot-starai && pip install -e ".[starai]"
 ```
 
-对于 Jetson Jetpack 设备（请确保在执行此步骤之前从第 5 步安装[Pytorch-gpu 和 Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)）：
+对于 Jetson Jetpack 6.2 设备（请确保在执行此步骤前按照[此链接教程](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)第 5 步安装了 Pytorch-gpu 和 Torchvision）：
 
 ```bash
-conda install -y -c conda-forge "opencv>=4.10.0.84"  # Install OpenCV and other dependencies through conda, this step is only for Jetson Jetpack 6.0+
-conda remove opencv   # Uninstall OpenCV 
-pip3 install opencv-python==4.10.0.84  # Then install opencv-python via pip3
+conda install -y -c conda-forge "opencv>=4.10.0.84"  # 通过 conda 安装 OpenCV 和其他依赖，仅适用于 Jetson Jetpack 6.0+
+conda remove opencv   # 卸载 OpenCV
+pip3 install opencv-python==4.10.0.84  # 使用 pip3 安装指定版本 OpenCV
 conda install -y -c conda-forge ffmpeg
 conda uninstall numpy
-pip3 install numpy==1.26.0  # This should match torchvision
+pip3 install numpy==1.26.0  # 该版本需与 torchvision 兼容
 ```
 
-6. 检查 Pytorch 和 Torchvision
+6.检查 Pytorch 和 Torchvision
 
-由于通过 pip 安装 lerobot 环境会卸载原有的 Pytorch 和 Torchvision 并安装 CPU 版本的 Pytorch 和 Torchvision，您需要在 Python 中进行检查。
+由于通过 pip 安装 LeRobot 环境时会卸载原有的 Pytorch 和 Torchvision 并安装 CPU 版本，因此需要在 Python 中进行检查。
 
 ```python
 import torch
 print(torch.cuda.is_available())
 ```
 
-如果打印结果为 False，您需要根据[官方网站教程](https://pytorch.org/index.html)重新安装 Pytorch 和 Torchvision。
+如果输出结果为 False，需要根据[官网教程](https://pytorch.org/index.html)重新安装 Pytorch 和 Torchvision。
 
-如果您使用的是 Jetson 设备，请根据[此教程](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)安装 Pytorch 和 Torchvision。
+如果你使用的是 Jetson 设备，请根据[此教程](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)安装 Pytorch 和 Torchvision。
+
 
 ### 机械臂开箱
 
-机械臂套件包含
+机械臂套装内包含
 
-- 主动臂
-- 从动臂
-- 控制器（手柄）
+- Leader arm 主体
+- Follower arm 主体
+- 手柄
 - 平行夹爪
 - 安装工具（螺丝、内六角扳手）
-- 电源 ×2
-- C 型夹具 ×2
-- UC-01 调试板 ×2
+- 电源 x2
+- C型夹具 x2
+- UC-01 转接板 x2
 
-UC-01 调试板开关：
+UC-01 转接板 开关：
 
 <div align="center">
     <img width={800}
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/UC-01 debuging board switch.png" />
 </div>
 
-### 配置机械臂端口
+### 手臂端口设置
 
-在终端中运行以下命令来查找与您的机械臂关联的 USB 端口：
+在终端输入以下指令来找到两个机械臂对应的端口号：
 
 ```bash
 python lerobot/scripts/find_motors_bus_port.py
 ```
 
 :::tip
-记住要拔掉 usb，否则无法检测到接口。
+需要拔出USB，否则将无法检测到接口。
 :::
 
 例如：
 
-1. 识别主动臂端口时的示例输出（例如，Mac 上的`/dev/tty.usbmodem575E0031751`，或 Linux 上可能的`/dev/ttyACM0`）：
-2. 识别从动臂端口时的示例输出（例如，Mac 上的`/dev/tty.usbmodem575E0032081`，或 Linux 上可能的`/dev/ttyACM1`）：
-
-您可能需要通过运行以下命令来授予 USB 端口访问权限：
-
-```bash
-sudo chmod 666 /dev/ttyACM0
-sudo chmod 666 /dev/ttyACM1```
+1. 识别Leader时端口的示例输出（例如，在 Mac 上为 `/dev/tty.usbmodem575E0031751`，或在 Linux 上可能为 `/dev/ttyUSB0`） 
+2. 识别Reader时端口的示例输出（例如，在 Mac 上为 `/dev/tty.usbmodem575E0032081`，或在 Linux 上可能为 `/dev/ttyUSB1`）
 
 :::tip
 
-如果无法识别 ttyUSB0 串口，请尝试以下解决方案：
+如果识别不到ttyUSB0串口信息。尝试以下方法:
 
-列出所有 USB 端口。
+列出所有usb口。
 
 ```sh
 lsusb
@@ -248,7 +240,7 @@ lsusb
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Calibrate1.png" />
 </div>
 
-识别后，检查 ttyusb 的信息。
+识别成功，查看ttyusb的信息。
 
 ```sh
 sudo dmesg | grep ttyUSB
@@ -259,7 +251,7 @@ sudo dmesg | grep ttyUSB
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Calibrate2.png" />
 </div>
 
-最后一行显示断开连接，因为 brltty 正在占用 USB。移除 brltty 将解决此问题。
+最后一行显示断连，因为brltty在占用该USB设备号，移除掉就可以了。
 
 ```sh
 sudo apt remove brltty
@@ -270,30 +262,29 @@ sudo apt remove brltty
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Calibrate3.png" />
 </div>
 
-最后，使用 chmod 命令。
+最后，赋予权限。
 
 ```sh
 sudo chmod 666 /dev/ttyUSB0
 ```
-
 :::
 
 打开文件 `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
 
-使用 Ctrl+F 搜索 starai 并定位到以下代码。然后，您需要修改 follower_arms 和 leader_arms 的端口设置以匹配实际的端口设置。
+使用ctrl+F搜索快捷键搜索 starai ，可以定位到如下代码，修改fallower_arms和leader_arms下的port参数与实际一致。
 
-```python
+```py
 @RobotConfig.register_subclass("starai")
 @dataclass
 class StaraiRobotConfig(ManipulatorRobotConfig):
     calibration_dir: str = ".cache/calibration/starai"
     max_relative_target: int | None = None
-
+    
     leader_arms: dict[str, MotorsBusConfig] = field(
         default_factory=lambda: {
             "main": StaraiMotorsBusConfig(
                 port="/dev/ttyUSB1",  #<-------- UPDATE HEARE
-                interval = 100,        
+                interval = 100,								
                 motors={
                     # name: (index, model)
                     "joint1": [0, "rx8-u50"],
@@ -312,7 +303,7 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
         default_factory=lambda: {
             "main": StaraiMotorsBusConfig(
                 port="/dev/ttyUSB0",  #<-------- UPDATE HEARE
-                interval = 100,        
+                interval = 100,								
                 motors={
                     # name: (index, model)
                     "joint1": [0, "rx8-u50"],
@@ -328,18 +319,18 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
     )
 ```
 
-### 设置运行时参数
+### 运行效果设置
 
 打开文件 `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
 
-使用 Ctrl + F 搜索 starai 并定位到以下代码。然后，您需要修改 follower_arms 的 interval 设置。
+使用ctrl+F搜索快捷键搜索 starai ，可以定位到如下代码，修改fallower_arms下的interval参数。
 
-- 描述：时间间隔越小，跟随器响应越快；时间间隔越大，跟随器运行越稳定。
-- 取值范围：整数，大于 50 且小于 2000。
+- 参数含义：运动指令中的时间间隔，可以简单理解为当数值越小，follower跟随的实时性越高。数值越大，follower的运行平稳性越好。
+- 数值范围：整数，> 50 且 < 2000。
 
-建议在遥操作期间将间隔设置为 100（默认值）以获得更好的响应性，在评估阶段的自主执行期间设置为 1000 以确保更稳定的运动。
+建议在遥操作的时候将intervel设置为100（默认值），而在评估阶段自动运行时设置为1000以确保运动平稳。
 
-```python
+```PY
 @RobotConfig.register_subclass("starai")
 @dataclass
 class StaraiRobotConfig(ManipulatorRobotConfig):
@@ -350,7 +341,7 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
         default_factory=lambda: {
             "main": StaraiMotorsBusConfig(
                 port="/dev/ttyUSB1",
-                interval = 100,  #<-------- UPDATE HEARE       
+                interval = 100, 	#<-------- UPDATE HEARE							
                 motors={
                     # name: (index, model)
                     "joint1": [0, "rx8-u50"],
@@ -369,7 +360,7 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
         default_factory=lambda: {
             "main": StaraiMotorsBusConfig(
                 port="/dev/ttyUSB0",
-                interval = 100,  #<-------- UPDATE HEARE
+                interval = 100, 	#<-------- UPDATE HEARE
                 motors={
                     # name: (index, model)
                     "joint1": [0, "rx8-u50"],
@@ -386,25 +377,25 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
 
 ```
 
-### 校准
+### 校准文件设置
 
-通常，机械臂在出厂时已经预校准，不需要重新校准。如果发现关节电机长时间保持在极限位置，请联系我们获取校准文件并重新执行校准。
+通常情况下,机械臂出厂时已经完成校准，无须再次校准。如发现某关节电机长期处于限位处，可与厂家联系获取校准文件再次校准。
 
-## 遥操作
+
+## 遥控操作
 
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/Uz-x-2P2xaE?si=HJTjALt5yFntR6-s" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-将机械臂移动到图中所示位置并设置为待机状态。
+将手臂移动至图上位置待机。
 
 <div align="center">
     <img width={800}
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Specifications.png" />
 </div>
 
-**简单遥操作**
-然后您就可以遥操作您的机器人了！运行这个简单的脚本（它不会连接和显示摄像头）：
+您已准备好遥操作您的机器人（不包括摄像头）！运行以下简单脚本：
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -413,7 +404,8 @@ python lerobot/scripts/control_robot.py \
   --control.type=teleoperate
 ```
 
-程序启动后，Hold 按钮保持功能正常。
+程序启动后，悬停按钮依旧生效。
+
 
 ## 添加摄像头
 
@@ -421,14 +413,14 @@ python lerobot/scripts/control_robot.py \
 <iframe width="900" height="600" src="https://www.youtube.com/embed/-p8K_-XxW8U?si=UmYWvEyKNPpTRxDC" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-插入两个 USB 摄像头后，运行以下脚本检查摄像头的端口号。重要的是要记住，摄像头不能连接到 USB 集线器；相反，它应该直接插入设备。USB 集线器的较慢速度可能导致无法读取图像数据。
+在插入您的两个 USB 摄像头后，运行以下脚本以检查摄像头的端口号，切记摄像头避免插在USB Hub上，USB Hub速率太慢会导致读不到图像数据。
 
 ```bash
 python lerobot/common/robot_devices/cameras/opencv.py \
     --images-dir outputs/images_from_opencv_cameras
 ```
 
-终端将打印出以下信息。例如，笔记本电脑摄像头是 `index 0`，USB 摄像头是 `index 2`。
+终端将打印出以下信息。以我的笔记本为例，笔记本摄像头为index0，外接的USB摄像头为index2。
 
 ```markdown
 Mac or X86 Ubuntu detected. Finding available camera indices through scanning all indices from 0 to 60
@@ -446,12 +438,13 @@ Frame: 0046 Latency (ms): 40.07
 Images have been saved to outputs/images_from_opencv_cameras
 ```
 
-您可以在 `outputs/images_from_opencv_cameras` 目录中找到每个摄像头拍摄的图片，并确认不同位置摄像头对应的端口索引信息。然后在 `lerobot-starai/lerobot/common/robot_devices/robots/configs.py` 文件中完成摄像头参数的对齐。
+您可以在 `outputs/images_from_opencv_cameras` 目录中找到每个摄像头拍摄的图片，并确认不同位置摄像头对应的端口索引信息。然后，完成 `lerobot-starai/lerobot/common/robot_devices/robots/configs.py` 文件中摄像头参数的对齐。
 
 <div align="center">
     <img width={400}
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/camera.png" />
 </div>
+
 
 ```python
 @RobotConfig.register_subclass("starai")
@@ -477,10 +470,10 @@ class StaraiRobotConfig(ManipulatorRobotConfig):
     )
 
 ​    mock: bool = False
-
+  
 ```
 
-然后您就能够在遥操作时在计算机上显示摄像头：
+然后，您将能够在遥操作时在计算机上显示摄像头：
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -490,14 +483,15 @@ python lerobot/scripts/control_robot.py \
 ```
 
 :::tip
-如果您发现这样的错误。
+
+如果遇到此错误 `AttributeError: module 'rerun' has no attribute 'scalar'. Did you mean: 'scalars'?`。
 
 <div align="center">
     <img width={800}
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/rerun-version.png" />
 </div>
 
-您可以降级 rerun 版本来解决此问题。
+你可以降低rerun版本来解决。
 
 ```bash
 pip3 install rerun-sdk==0.23
@@ -505,20 +499,21 @@ pip3 install rerun-sdk==0.23
 
 :::
 
-## 记录数据集
+## 数据集制作采集
 
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/OpaC0CA3-Mc?si=rbNhJJRkG9zngQB-" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-一旦您熟悉了遥操作，就可以记录您的第一个数据集。
+一旦您熟悉了遥操作，您就可以开始您的第一个数据集。
 
-如果您想使用 Hugging Face hub 功能上传数据集，并且之前没有这样做过，请确保您已使用写入访问令牌登录，该令牌可以从 [Hugging Face 设置](https://huggingface.co/settings/tokens) 生成：
+如果您想使用 Hugging Face Hub 的功能来上传您的数据集，并且您之前尚未这样做，请确保您已使用具有写入权限的令牌登录，该令牌可以从 [Hugging Face 设置](https://huggingface.co/settings/tokens) 中生成：
+
 ```bash
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
 ```
 
-将您的 Hugging Face 仓库名称存储在变量中以运行这些命令：
+将您的 Hugging Face 仓库名称存储在一个变量中，以运行以下命令：
 
 ```bash
 HF_USER=$(huggingface-cli whoami | head -n 1)
@@ -526,10 +521,10 @@ echo $HF_USER
 ```
 
 :::tip
-如果您不希望使用 Hugging Face Hub 的数据集上传功能，可以选择 `--control.push_to_hub=false`。此外，将 `--control.repo_id=${HF_USER}/starai` 替换为自定义的本地文件夹名称，例如 `--control.repo_id=starai/starai`。数据将存储在系统主目录下的 `~/.cache/huggingface/lerobot` 目录中。
+如果你不想使用 Hugging Face Hub 的上传数据集功能，可以选择 `--control.push_to_hub=false`。同时将 `--control.repo_id=${HF_USER}/starai` 替换为一个自定义的本地文件夹名称，例如 `--control.repo_id=starai/starai`。数据将存储在系统主目录下的 `~/.cache/huggingface/lerobot`。
 :::
 
-记录 20 个片段并将您的数据集上传到 hub：
+记录 20 个回合并上传数据集到 Hub：
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -547,8 +542,8 @@ python lerobot/scripts/control_robot.py \
   --control.push_to_hub=ture
 ```
 
-不上传到 Hub：
-**（推荐，以下教程将主要关注本地数据）**
+不上传到Hub:
+**（推荐，下文的教程会以本地数据为主）** 
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -556,69 +551,68 @@ python lerobot/scripts/control_robot.py \
   --control.type=record \
   --control.fps=30 \
   --control.single_task="Grasp a lego block and put it in the bin." \
-  --control.repo_id=starai/starai \#Assign a name to the local storage file yourself
+  --control.repo_id=starai/starai \#给本地存储文件自己取一个名字
   --control.tags='["starai","tutorial"]' \
   --control.warmup_time_s=5 \
   --control.episode_time_s=30 \
   --control.reset_time_s=30 \
   --control.num_episodes=20 \
   --control.display_data=true \
-  --control.push_to_hub=false #set push_to_hub to false
+  --control.push_to_hub=false #修改push_to_hub为false
 ```
 
-您将看到类似以下的数据：
-
+你会看到类似如下数据:
 ```bash
 INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5hz) dtWfoll: 0.25 (3963.7hz) dtRfoll: 6.22 (160.7hz) dtRlaptop: 32.57 (30.7hz) dtRphone: 33.84 (29.5hz)
 ```
 
 ```markdown
-Parameter Explanations
-- wormup-time-s: It refers to the initialization time.
-- episode-time-s: It represents the time for collecting data each time.
-- reset-time-s: It is the preparation time between each data collection.
-- num-episodes: It indicates how many groups of data are expected to be collected.
-- push-to-hub: It determines whether to upload the data to the HuggingFace Hub. 
-```
+参数说明
+- warmup-time-s: 指初始化时间。
+- episode-time-s: 表示每次收集数据的时间。
+- reset-time-s: 是每次数据收集之间的准备时间。
+- num-episodes: 表示预期收集多少组数据。
+- push-to-hub: 决定是否将数据上传到 HuggingFace Hub。
+``` 
 
 :::tip
 
-- **再次提醒**："如果您想在本地保存数据（`--control.push_to_hub=false`），请将 `--control.repo_id=${HF_USER}/starai` 替换为自定义的本地文件夹名称，例如 `--control.repo_id=starai/starai`。然后它将存储在系统主目录的 `~/.cache/huggingface/lerobot` 中。"
+- **再次提醒**: 如果你希望将数据保存在本地（`--control.push_to_hub=false`），请将 `--control.repo_id=${HF_USER}/starai` 替换为一个自定义的本地文件夹名称，例如 `--control.repo_id=starai/starai`。数据将存储在系统主目录下的 `~/.cache/huggingface/lerobot`。
 
-- 注意：您可以通过添加 `--control.resume=true` 来恢复记录。如果您还没有推送数据集，请添加 `--control.local_files_only=true`。如果您想从头开始记录，需要手动删除数据集目录。
+- 如果你通过 `--control.push_to_hub=true` 将数据集上传到了 Hugging Face Hub，可以通过 [在线可视化你的数据集](https://huggingface.co/spaces/lerobot/visualize_dataset)，只需复制粘贴你的 repo id。
 
-- 如果您使用 `--control.push_to_hub=true` 将数据集上传到 hub，您可以通过复制粘贴您的仓库 ID 来[在线可视化您的数据集](https://huggingface.co/spaces/lerobot/visualize_dataset)：
+- 注意：你可以通过添加 `--control.resume=true` 来继续录制。如果你还没有上传数据集，还需要添加 `--control.local_files_only=true`。
 
-- 在片段记录期间的任何时候按右箭头 → 可以提前停止并进入重置。在重置期间也是如此，可以提前停止并进入下一个片段记录。
+- 在回合记录过程中任何时候按下右箭头 → 可提前停止并进入重置状态。重置过程中同样，可提前停止并进入下一个回合记录。
 
-- 在片段记录或重置期间的任何时候按左箭头 ← 可以提前停止，取消当前片段，并重新记录。
+- 在录制或重置到早期阶段时，随时按左箭头 ← 可提前停止当前剧集，并重新录制。
 
-- 在片段记录期间的任何时候按 ESC 键可以提前结束会话，直接进入视频编码和数据集上传。
+- 在录制过程中随时按 ESCAPE ESC 可提前结束会话，直接进入视频编码和数据集上传。
 
-- 一旦您熟悉了数据记录，就可以创建一个更大的数据集用于训练。一个好的起始任务是在不同位置抓取物体并将其放入容器中。我们建议记录至少 50 个片段，每个位置 10 个片段。保持摄像头固定，在整个记录过程中保持一致的抓取行为。还要确保您操作的物体在摄像头中可见。一个好的经验法则是，您应该能够仅通过查看摄像头图像来完成任务。
+- 一旦你熟悉了数据记录，你就可以创建一个更大的数据集进行训练。一个不错的起始任务是在不同的位置抓取物体并将其放入箱子中。我们建议至少记录 50 个场景，每个位置 10 个场景。保持相机固定，并在整个录制过程中保持一致的抓取行为。同时确保你正在操作的物体在相机视野中可见。一个很好的经验法则是，你应该仅通过查看相机图像就能完成这项任务。
 
-- 在接下来的章节中，您将训练您的神经网络。在实现可靠的抓取性能后，您可以开始在数据收集期间引入更多变化，例如额外的抓取位置、不同的抓取技术和改变摄像头位置。
+- 在接下来的章节中，你将训练你的神经网络。在实现可靠的抓取性能后，你可以在数据收集过程中引入更多变化，例如增加抓取位置、不同的抓取技巧以及改变相机位置。
 
-- 避免过快添加太多变化，因为这可能会影响您的结果。
+- 避免快速添加过多变化，因为这可能会阻碍您的结果。
 
-- 在 Linux 上，如果左右箭头键和 ESC 键在数据记录期间没有任何效果，请确保您已设置 $DISPLAY 环境变量。请参阅 [pynput 限制](https://pynput.readthedocs.io/en/latest/limitations.html#linux)。
+- 在 Linux 上，如果在数据记录期间左右箭头键和 Esc 键没有效果，请确保您已设置 $DISPLAY 环境变量。参见 [pynput 限制](https://pynput.readthedocs.io/en/latest/limitations.html#linux)。
 
 :::
 
 ## 可视化数据集
 
-数据集保存在本地。您可以使用以下命令在本地可视化它：
+数据集保存在本地后，您可以使用以下命令在本地进行可视化：
 
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id starai/starai \
 ```
 
-这里，`starai/starai` 是收集数据时定义的自定义 `repo_id` 名称。
+这里的`starai/starai`为采集数据时候自定义的`repo_id`名。
 
-## 重放片段
+## 重播一个回合
 
-现在尝试在您的机器人上重放第一个片段：
+现在尝试在您的机器人上重播第一个回合:
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -626,17 +620,18 @@ python lerobot/scripts/control_robot.py \
   --control.type=replay \
   --control.fps=30 \
   --control.repo_id=starai/starai \
-  --control.episode=0 \# 0 is the first episode
+  --control.episode=0 \0 表示第一个回合
   --control.local_files_only=true
 ```
 
 :::tip
-参数 `--control.local_files_only=true` 用于指示程序使用本地数据集而不是 Hub 中的数据集。
+这个参数 `--control.local_files_only=true` 是告知程序使用本地的数据集而非Hub的。
 :::
 
-## 训练策略
 
-要训练控制机器人的策略，请使用 `python lerobot/scripts/train.py` 脚本。需要一些参数。以下是示例命令：
+## 训练
+
+要训练一个控制您机器人策略，使用 `python lerobot/scripts/train.py` 脚本。需要一些参数。以下是一个示例命令：
 
 ```bash
 python lerobot/scripts/train.py \
@@ -648,16 +643,19 @@ python lerobot/scripts/train.py \
   --wandb.enable=false
 ```
 
-让我们解释一下：
+解释：
 
-1. 我们使用本地数据集作为参数 `--dataset.repo_id=starai/starai`。
-2. 我们使用 `policy.type=act` 提供策略，这将从 [`lerobot-starai/lerobot/common/policies/act/configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/common/policies/act/configuration_act.py) 加载配置。目前，ACT 已经过测试，但您也可以尝试其他策略，如 diffusion、pi0、pi0fast、tdmpc 和 vqbet。
-3. 我们提供了 policy.device=cuda，因为我们在 Nvidia GPU 上训练，但您可以使用 policy.device=mps 在 Apple silicon 上训练。
-4. 我们提供了 `wandb.enable=true` 来使用 [Weights and Biases](https://docs.wandb.ai/quickstart) 可视化训练图表。这是可选的，但如果您使用它，请确保通过运行 `wandb login` 登录。
+1. 我们使用本地数据集`--dataset.repo_id=starai/starai`作为参数 。
 
-如果您想在本地数据集上训练，请确保 `repo_id` 与数据收集期间使用的匹配。训练应该需要几个小时。您将在 `outputs/train/act_starai/checkpoints` 中找到检查点。
+2. 我们使用 `policy.type=act` 提供了策略。这将从 [`lerobot-starai/lerobot/common/policies/act/configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/common/policies/act/configuration_act.py) 加载配置。目前测试了ACT，你也可以选择diffusion、pi0、pi0fast、tdmpc、vqbet等策略进行尝试。
 
-要从检查点恢复训练，以下是从 `act_starai` 的最后一个检查点恢复的示例命令：
+3. 我们提供了 `device=cuda`，因为我们在 Nvidia GPU 上训练，但如果您使用的是带有 Apple Silicon 的 Mac，可以使用 `device=mps`，否则使用 `device=cpu`。
+
+4. 我们提供了`wandb.enable=true`使用权重和偏差[Weights and Biases](https://docs.wandb.ai/quickstart)来可视化训练图。这是可选的，但如果您使用它，请确保您已通过运行`wandb login`登录。
+
+如果要在本地数据集上进行训练，请确保`repo_id`与数据收集期间使用的数据集匹配。训练应该需要几个小时。您可以在`outputs/train/act_starai/checkpoints`中找到检查点。
+
+要从某个检查点恢复训练，下面是一个示例命令，用于从`act_starai`策略的最后一个检查点恢复：
 
 ```bash
 python lerobot/scripts/train.py \
@@ -665,9 +663,9 @@ python lerobot/scripts/train.py \
   --resume=true
 ```
 
-## 评估您的策略
+## 评估
 
-您可以使用 [`lerobot/scripts/control_robot.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/scripts/control_robot.py) 中的 `record` 函数，但以策略检查点作为输入。例如，运行此命令记录 10 个评估片段：
+您可以使用 [`lerobot/scripts/control_robot.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/scripts/control_robot.py) 中的 `record` 功能，但需要将策略训练结果权重作为输入。例如，运行以下命令记录 10 个评估回合：
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -679,83 +677,70 @@ python lerobot/scripts/control_robot.py \
   --control.tags='["tutorial"]' \
   --control.warmup_time_s=5 \
   --control.episode_time_s=30 \
-  --control.reset_time_s=0 \#Set the reset time to 0 to skip the reset phase and ensure continuous operation.
+  --control.reset_time_s=0 \#环境重置时间可选择0，让机器人跳过重置阶段来保证动作连续
   --control.num_episodes=10 \
-  --control.push_to_hub=false \#Choose don't upload to Hub
+  --control.push_to_hub=false \#这里选择不上传Hub
   --control.policy.path=outputs/train/act_starai/checkpoints/last/pretrained_model
 ```
 
-如您所见，这与之前用于记录训练数据集的命令几乎相同。只有两个区别：
+如您所见，这几乎与之前用于记录训练数据集的命令相同。只有两处变化：
 
-1. 添加了 `--control.policy.path` 参数来指示策略检查点的路径（例如，`outputs/train/act_starai/checkpoints/last/pretrained_model`）。
-2. 评估数据集的名称**必须**以 `eval` 开头，以反映您正在运行推理（例如，`--control.repo_id=starai/eval_act_starai`）。此操作将专门在评估期间记录视频和数据，并将它们保存到 `eval_act_starai`。
+1. 增加了 `--control.policy.path` 参数，指示您的策略检查点的路径（例如`outputs/train/act_starai/checkpoints/last/pretrained_model`）。
+2. 评估数据集的名称 **必须** 以 `eval` 开头，以反映您正在运行推理（例如 `--control.repo_id=starai/eval_act_starai`）。该操作会在你评估的时候，为你单独录制评估时候的视频和数据，并保存至`eval_act_starai`。
 
 :::warning
-如果您第二次运行评估命令时出现错误，您需要删除相应的 `eval_act_starai` 文件，以确保在目录 `~/.cache/huggingface/lerobot/starai/` 下没有同名文件。
+若第二次执行评估命令报错，需要删除对应的`eval_act_starai`文件，保证`~/.cache/huggingface/lerobot/starai/`目录下没有相同命名的文件。
 :::
 
 :::tip
-如果您将模型检查点上传到 Hub，您也可以使用模型仓库（例如，`--control.repo_id=${HF_USER}/eval_act_starai`），同时设置 `--control.push_to_hub=true`。
+如果您将模型检查点上传到 Hub，也可以使用模型仓库（例如 `--control.repo_id=${HF_USER}/eval_act_starai`），同时修改`--control.push_to_hub=true`。
 :::
 
-## 常见问题
+## FAQ
 
-- 如果您正在遵循此文档/教程，请 git clone 推荐的 GitHub 仓库 `git clone https://github.com/servodevelop/lerobot-starai.git`。
+- 如果你正在按照这份文档/教程操作，请克隆推荐的GitHub仓库：`git clone https://github.com/servodevelop/lerobot-starai.git`。
 
-- 如果您遇到以下错误，您需要检查连接到相应端口的机械臂是否已通电，以及总线舵机是否有松动或断开的电缆。
+- 如果遇到以下报错，需要检查对应端口号的机械臂是否接通电源，总线舵机是否出现数据线松动或者脱落。
 
   ```bash
   ConnectionError: Read failed due to comunication eror on port /dev/ttyACM0 for group key Present_Position_Shoulder_pan_Shoulder_lift_elbow_flex_wrist_flex_wrist_roll_griper: [TxRxResult] There is no status packet!
   ```
 
-- 如果您已修复或更换了机械臂的任何部件，请完全删除 `~/lerobot/.cache/huggingface/calibration/so100` 文件夹并重新校准机械臂。
-- 如果遥控器功能正常但带摄像头的遥控器无法显示图像界面，您可以在[这里](https://github.com/huggingface/lerobot/pull/757/files)找到解决方案
+- 如果遥操作正常，而带Camera的遥操作无法显示图像界面，请参考[这里](https://github.com/huggingface/lerobot/pull/757/files)
 
-- 如果在数据集远程操作过程中遇到 libtiff 问题，请更新 libtiff 版本。
+- 如果在数据集遥操作过程中出现libtiff的问题，请更新libtiff版本。
 
   ```bash
   conda install libtiff==4.5.0  #for Ubuntu 22.04 is libtiff==4.5.1
   ```
 
-- 执行[Lerobot 安装](https://wiki.seeedstudio.com/cn/lerobot_so100m/#install-lerobot)后，pytorch 的 GPU 版本可能会被自动卸载，因此您需要手动安装 torch-gpu。
+- 执行完安装LeRobot可能会自动卸载gpu版本的pytorch，所以需要在手动安装torch-gpu。
 
-- 对于 Jetson，请在执行`conda install -y -c conda-forge ffmpeg`之前先安装[Pytorch 和 Torchvsion](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)，否则在编译 torchvision 时可能会出现 ffmpeg 版本不匹配的问题。
+- 对于Jetson，请先安装[Pytorch和Torchvsion](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)再执行`conda install -y -c conda-forge ffmpeg`,否则编译torchvision的时候会出现ffmpeg版本不匹配的问题。
 
-- 如果出现以下问题，说明您的计算机不支持此视频编解码器格式。您需要修改文件`lerobot-starai/lerobot/common/datasets/video_utils.py`中的第 134 行，将`vcodec: str = "libsvtav1"`的值更改为`libx264`或`libopenh264`。不同的计算机可能需要不同的参数，因此您可以尝试各种选项。[Issues 705](https://github.com/huggingface/lerobot/issues/705)
+- 如果出现如下问题，是电脑的不支持此格式的视频编码，需要修改`lerobot-starai/lerobot/common/datasets/video_utils.py`文件134行`vcodec: str = "libsvtav1"`的值修改为`libx264`或者`libopenh264`,不同电脑参数不同，可以进行尝试。 [Issues 705](https://github.com/huggingface/lerobot/issues/705)
 
   ```bash
   [vost#0:0 @ 0x13207240] Unknown encoder 'libsvtav1' [vost#0:0 @ 0x13207240] Error selecting an encoder Error opening output file /home/han/.cache/huggingface/lerobot/lyhhan/so100_test/videos/chunk-000/observation.images.laptop/episode_000000.mp4. Error opening output files: Encoder not found
   ```
 
-- 重要！！！如果在执行过程中舵机的电缆松动，请将舵机恢复到初始位置，然后重新连接舵机电缆。您也可以使用[舵机初始化命令](https://wiki.seeedstudio.com/cn/lerobot_so100m/#configure-the-motors)单独校准舵机，确保在单独校准期间舵机和驱动板之间只连接一根电缆。如果您遇到
+- 在3060的8G笔记本上训练ACT的50组数据的时间大概为6小时，在4090和A100的电脑上训练50组数据时间大概为2~3小时。
 
-  ```bash
-  Auto-correct calibration of motor 'wrist roll' by shifting value by 1 full turns, from '-270 < -312.451171875 < 270degrees' to'-270<-312.451171875 < 270 degrees'.
-  ```
+- 数据采集过程中要确保摄像头位置和角度和环境光线的稳定，并且减少摄像头采集到过多的不稳定背景和行人，否则部署的环境变化过大会导致机械臂无法正常抓取。
 
-  或在机械臂校准过程中遇到与角度和超出限制值相关的其他错误，此方法仍然适用。
+- 数据采集命令的num-episodes要确保采集数据足够，不可中途手动暂停，因为在数据采集结束后才会计算数据的均值和方差，这在训练中是必要的数据。
 
-- 在 8G 3060 笔记本电脑上训练 50 组 ACT 数据大约需要 6 小时，而在 4090 或 A100 计算机上，训练 50 组数据大约需要 2-3 小时。
+- 如果程序提示无法读取USB摄像头图像数据，请确保USB摄像头不是接在Hub上的，USB摄像头必须直接接入设备，确保图像传输速率快。
 
-- 在数据收集过程中，确保摄像头的位置、角度和环境光照保持稳定，并尽量减少捕获过多不稳定的背景和行人；否则，在部署期间显著的环境变化可能会导致机械臂无法正确抓取。
-
-- 确保数据收集命令中的`num-episodes`参数设置为收集足够的数据，并且不要中途手动暂停。这是因为数据的均值和方差只有在数据收集完成后才会计算，这对训练是必需的。
-
-- 如果程序提示无法读取 USB 摄像头图像数据，请确保 USB 摄像头没有连接到集线器。USB 摄像头必须直接连接到设备以确保快速的图像传输速率。
-
-- 如果您发现类似`AttributeError: module 'rerun' has no attribute 'scalar'. Did you mean: 'scalars'?`的错误，您可以降级 rerun 版本来解决此问题。
+- 如果遇到此错误 `AttributeError: module 'rerun' has no attribute 'scalar'. Did you mean: 'scalars'?`, 你可以降低rerun版本来解决.
 
 ```bash
 pip3 install rerun-sdk==0.23
 ```
 
-:::tip
-如果您遇到无法解决的软件问题或环境依赖问题，除了查看本教程末尾的 FAQ 部分外，请及时向[LeRobot 平台](https://github.com/huggingface/lerobot)或[LeRobot Discord 频道](https://discord.gg/8TnwDdjFGU)报告问题。
-:::
+## 参考文档
 
-## 引用
-
-Seeedstudio 英文 Wiki 文档：[如何在最新版本的 Lerobot 中使用 SO10xArm 机械臂](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/)
+矽递科技中文Wiki文档：[如何在最新版Lerobot中使用SO10xArm机械臂](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/)
 
 lerobot-starai github: [lerobot-starai](https://github.com/Welt-liu/lerobot-starai)
 
@@ -763,11 +748,11 @@ STEP: [STEP](https://github.com/Welt-liu/star-arm-moveit2/tree/main/hardware)
 
 URDF: [URDF](https://github.com/Welt-liu/star-arm-moveit2/tree/main/src/cello_description)
 
-StarAI 机械臂 moveit2: [star-arm-moveit2](https://github.com/Welt-liu/star-arm-moveit2)
+StarAI Robot Arm moveit2: [star-arm-moveit2](https://github.com/Welt-liu/star-arm-moveit2)
 
-Huggingface 项目: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
+Huggingface Project: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
 
-ACT 或 ALOHA: [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](https://tonyzhaozh.github.io/aloha/)
+ACT or ALOHA: [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](https://tonyzhaozh.github.io/aloha/)
 
 VQ-BeT: [VQ-BeT: Behavior Generation with Latent Actions](https://sjlee.cc/vq-bet/)
 
@@ -775,9 +760,10 @@ Diffusion Policy: [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/)
 
 TD-MPC: [TD-MPC](https://www.nicklashansen.com/td-mpc/)
 
+
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您使用我们的产品时获得尽可能顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
@@ -788,3 +774,5 @@ TD-MPC: [TD-MPC](https://www.nicklashansen.com/td-mpc/)
 <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
+
+
