@@ -1,6 +1,6 @@
 ---
-description: reComputer Jetsonプラットフォーム上でOrbbec Gemini 335Lgを使用する方法を紹介します。
-title: Orbbec Gemini2 3Dカメラの使用開始
+description: reComputer Jetsonプラットフォームでの Orbbec Gemini 335Lg の使用方法を説明します。
+title: Orbbec Gemini2 3Dカメラ
 keywords:
 - Jetson
 - reComputer Robotics
@@ -25,12 +25,12 @@ last_update:
 </div>
 
 <div style={{ textAlign: "justify" }}>
-コンパクトなGemini 2 3Dカメラは、Active Stereo IR技術をベースとし、高品質な深度処理のためのOrbbecの最新カスタムASIC、IMU、および単一ケーブルUSB 3.0電源+接続を搭載しています。広いFOVと広い深度センシング範囲により、Gemini 2は多くのアプリケーション、特にロボティクスに適応できます。Orbbec SDKで簡単にセットアップ・操作でき、真っ暗闇から半屋外まで、様々な照明条件で極めて正確で信頼性の高いデータを提供します。
+コンパクトなGemini 2 3Dカメラは、Active Stereo IR技術をベースとし、高品質な深度処理、IMU、および単一ケーブルUSB 3.0電源+接続のためのOrbbecの最新カスタムASICを搭載しています。広いFOVと広い深度センシング範囲により、Gemini 2は多くのアプリケーション、特にロボティクスに適応できます。Orbbec SDKで簡単にセットアップ・操作でき、真っ暗闇から半屋外まで、様々な照明条件で極めて正確で信頼性の高いデータを提供します。
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
 <a class="get_one_now_item" href="https://www.seeedstudio.com/Orbbec-Gemini-2-3D-Camera-p-6464.html" target="_blank">
-<strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
+<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 </a></div>
 
 ## 特徴
@@ -97,12 +97,12 @@ last_update:
 
       <tr style={{ height: "46px" }}>
         <td style={{ height: "46px", width: "132px" }}>深度解像度</td>
-        <td style={{ height: "46px", width: "491px" }}>最大1280x800 @ 30fps</td>
+        <td style={{ height: "46px", width: "491px" }}>最大 1280x800 @ 30fps</td>
       </tr>
 
       <tr style={{ height: "46px" }}>
         <td style={{ height: "46px", width: "132px" }}>RGB解像度</td>
-        <td style={{ height: "46px", width: "491px" }}>最大1920x1080 @ 30fps</td>
+        <td style={{ height: "46px", width: "491px" }}>最大 1920x1080 @ 30fps</td>
       </tr>
 
       <tr style={{ height: "46px" }}>
@@ -147,7 +147,7 @@ wget https://github.com/orbbec/OrbbecSDK_v2/releases/download/v2.4.11/OrbbecSDK_
 unzip OrbbecSDK_v2.4.11_202508040936_058db73_linux_aarch64.zip
 ```
 
-**ステップ 2.** サンプルをビルドしてテストする：
+**ステップ 2.** サンプルをビルドしてテストします：
 
 ```bash
 # Install udev rules
@@ -176,14 +176,14 @@ NVIDIA Jetsonプラットフォームなどの組み込みAIやエッジコン�
 :::info
 Gemini2を使用して私たちが開発したケースチュートリアルがいくつかあります：
 
-[距離測定](https://wiki.seeedstudio.com/yolov11_with_depth_camera/)
+[距離測定](https://wiki.seeedstudio.com/ja/yolov11_with_depth_camera/)
 
 <div align="center">
     <img width={800}
     src="https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini2/distance.png" />
 </div>
 
-[ドローンでのオブジェクトトラッキング](https://wiki.seeedstudio.com/object_tracking_with_reComputer_jetson_and_pX4/)
+[ドローンでのオブジェクトトラッキング](https://wiki.seeedstudio.com/ja/object_tracking_with_reComputer_jetson_and_pX4/)
 
 <div align="center">
     <img width={800}
@@ -200,7 +200,7 @@ Gemini2を使用して私たちが開発したケースチュートリアルが�
 
 ## 技術サポート & 製品ディスカッション
 
-私たちの製品をお選びいただき、ありがとうございます！私たちは、お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供しています。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
+私たちの製品をお選びいただき、ありがとうございます！私たちは、お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供しています。さまざまな好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
