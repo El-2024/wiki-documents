@@ -249,7 +249,8 @@ void loop() {
 
   // 5. Add a short delay to maintain a stable data stream and allow time for processing on the receiver.
   delay(50); 
-}```
+}
+```
 
 2. Python制御サーバー
 
@@ -943,7 +944,8 @@ if **name** == '**main**':
         main();
     </script>
 </body>
-</html>```
+</html>
+```
 
 </Details>
 

@@ -227,7 +227,7 @@ SO-ARM100 と reComputer Jetson AI インテリジェントロボットキット
 <details>
 <summary>lerobot_publisher.py</summary>
 
-  ```python
+```python
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
@@ -297,9 +297,10 @@ def main(args=None):
 
 
 if __name__ == "__main__":
-    main()  ```
+    main()
+```
 
-  </details>
+</details>
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/buiqdmNQKwY?si=3CizpKK3Nhj4Vlp9&amp;start=232" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
