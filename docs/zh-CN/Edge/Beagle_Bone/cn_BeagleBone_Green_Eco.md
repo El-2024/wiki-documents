@@ -1,20 +1,20 @@
 ---
 description: SeeedStudio BeagleBone® Green Eco 入门指南
-title: BeagleBone® Green Eco
+title: Seeed Studio BeagleBone® Green Eco
 keywords:
-- Beagle_Bone
+- Beagle_Bone_Green_Eco
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/getting_started_with_seeedstudio_beaglebone_green_eco
 last_update:
-  date: 10/9/2025
+  date: 9/12/2025
   author: Atom Yang
 ---
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/BeagleBone_Green_Eco/img/1-102111198-Seeed-Studio-BeagleBoneR-Green-Eco.jpg" /></div>
 
-**Seeed Studio BeagleBone® Green Eco** 是一款工业级开源单板计算机，与 BeagleBoard.org® 基金会共同开发，采用强大的 **TI AM3358 SoC** 供电。这款"Eco"版本专为高效率而设计，集成了先进的 TI 电源管理芯片 (TPS6521403)，确保优化的能耗。它配备了丰富的 16GB 板载 eMMC 存储和千兆以太网端口，可满足高速网络连接的严苛应用需求。为了实现无缝硬件原型设计，它集成了两个标志性的 Grove 连接器，提供对 Seeed 广泛的 Grove 传感器和模块生态系统的直接、免焊接访问。
+**Seeed Studio BeagleBone® Green Eco** 是一款工业级开源单板计算机，与 BeagleBoard.org® 基金会共同开发，采用强大的 **TI AM3358 SoC** 供电。这款"Eco"版本专为高效率而设计，集成了先进的 TI 电源管理芯片 (TPS6521403)，确保优化的能耗。它配备了丰富的 16GB 板载 eMMC 存储和千兆以太网端口，可提供高速网络连接，非常适合要求苛刻的应用。为了实现无缝硬件原型设计，它集成了两个标志性的 Grove 连接器，提供对 Seeed 广泛的 Grove 传感器和模块生态系统的直接、免焊接访问。
 
-在 10 秒内启动 Linux，仅需一根 USB 线缆即可在 5 分钟内开始开发。
+在不到 10 秒内启动 Linux，仅用一根 USB 线缆即可在 5 分钟内开始开发。
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -27,7 +27,7 @@ last_update:
 
 **特性 1：强大的核心与实时处理**
 
-* 集成 TI AM3358 1GHz ARM® Cortex-A8 处理器，配备 NEON™ SIMD 协处理器以实现加速处理。还包括双核可编程实时单元 (PRU-ICSS)，用于确定性、低延迟控制，这对工业自动化和机器人技术至关重要。
+* 集成 TI AM3358 1GHz ARM® Cortex-A8 处理器，配备 NEON™ SIMD 协处理器以加速处理。还包括双核可编程实时单元 (PRU-ICSS)，用于确定性、低延迟控制，这对工业自动化和机器人技术至关重要。
 
 **特性 2：环保电源管理**
 
@@ -39,7 +39,7 @@ last_update:
 
 **特性 4：丰富的现代连接性**
 
-* 配备升级的高速接口，包括千兆以太网端口和现代 USB Type-C 端口，用于电源和数据传输。为了快速原型设计，还包括两个内置 Grove 连接器（I2C 和 UART）Grove - Seeed Studio，可轻松、免焊接地连接到 Seeed Studio 广泛的传感器和执行器生态系统。
+* 配备升级的高速接口，包括千兆以太网端口和现代 USB Type-C 端口，用于供电和数据传输。为了快速原型设计，还包括两个内置 Grove 连接器（I2C 和 UART）Grove - Seeed Studio，可轻松、免焊接地连接到 Seeed Studio 广泛的传感器和执行器生态系统。
 
 **特性 5：开发就绪**
 
@@ -365,7 +365,7 @@ Grove 是一个模块化、标准化的连接器原型系统。Grove 采用积�
 
 ## 参考资料
 
-有许多参考资料可以帮助您获取有关该开发板的更多信息。
+有许多参考资料可以帮助您获取有关开发板的更多信息。
 
 * [BeagleBoard 主页](https://beagleboard.org/)
 * [BeagleBoard 入门指南](https://beagleboard.org/getting-started)

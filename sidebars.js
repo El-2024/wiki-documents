@@ -3866,6 +3866,8 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/Roboflow-Jetson-Getting-Started',
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/Install_torch_on_reComputer',
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/vnc_for_reComputer',
+                'Edge/NVIDIA_Jetson/Application/Developer_Tools/Implement_Ethercat_communication_on_reComputer',
+
                 
                 
 
@@ -4244,7 +4246,7 @@ const sidebars = {
                     ]},
             'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
             'Robotics/Robot_Software/control_robotic_arm_via_phospho',
-            'Robotics/Robot_Software/Implement_Ethercat_communication_on_reComputer',
+            
           ]
 
     },
