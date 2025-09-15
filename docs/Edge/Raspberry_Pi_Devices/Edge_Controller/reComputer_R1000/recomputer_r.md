@@ -7,8 +7,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/113991274-2_3.webp
 slug: /recomputer_r
 last_update:
-  date: 07/17/2025
-  author: Jiahao
+  date: 09/15/2025
+  author: Kasun Thushara
 ---
 
 <!-- ---
@@ -1202,6 +1202,10 @@ sudo vim ./libloragw/inc/loragw_i2c.h
 
 Change `#define I2C_DEVICE "/dev/i2c-1"` to `#define I2C_DEVICE "/dev/i2c-3"`.
 
+:::important
+If you are using version 1.1 reComputer R1000 please change to `#define I2C_DEVICE "/dev/i2c-6"`
+:::
+
 ```bash
 sudo make
 ```
@@ -1233,6 +1237,10 @@ vim global_conf.json.sx1250.EU868
 ```
 
 Change `"com_path": "/dev/spidev0.0"` to `"com_path": "/dev/spidev0.1"`
+
+:::important
+If you are using version 1.1 reComputer R1000 please change to `"com_path": "/dev/spidev1.1"`
+:::
 
 **Step 6.** Start LoraWAN® Module
 
