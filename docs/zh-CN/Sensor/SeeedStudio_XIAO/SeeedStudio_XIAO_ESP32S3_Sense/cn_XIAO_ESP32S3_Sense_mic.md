@@ -12,7 +12,7 @@ last_update:
 
 # Seeed Studio XIAO ESP32S3 麦克风的使用
 
-在本教程中，我们将为您介绍如何使用 XIAO ESP32S3 Sense 扩展板的麦克风。首先是 I2S 引脚的基本使用，我们将通过使用 I2S 和麦克风获取当前环境的响度，并在串口波形图中显示。然后我们将解释如何录制声音并将录制的声音保存到 SD 卡中。
+在本教程中，我们将为您介绍如何使用 XIAO ESP32S3 Sense 扩展板的麦克风。首先是 I2S 引脚的基本使用，我们将通过使用 I2S 和麦克风获取当前环境的音量，并在串口波形图中显示。然后我们将解释如何录制声音并将录制的声音保存到 SD 卡。
 
 <div class="table-center">
   <table align="center">
@@ -38,9 +38,9 @@ last_update:
 
 ## 入门指南
 
-在开始教程内容之前，您可能需要提前准备以下硬件和软件。
+在开始本教程内容之前，您可能需要提前准备以下硬件和软件。
 
-### 扩展板的安装（适用于 Sense）
+### 安装扩展板（适用于 Sense）
 
 安装扩展板非常简单，您只需要将扩展板上的连接器与 XIAO ESP32S3 上的 B2B 连接器对齐，用力按下并听到"咔嗒"声，安装就完成了。
 
@@ -48,13 +48,13 @@ last_update:
 
 ### 准备 microSD 卡
 
-在进行保存录音的项目时，您可能需要一张 MicroSD 卡。
+在进行需要保存录音的项目时，您可能需要一张 MicroSD 卡。
 
-XIAO ESP32S3 Sense 支持最大 **32GB** 的 microSD 卡，所以如果您准备为 XIAO 购买 microSD 卡，请参考此规格。在使用 microSD 卡之前，请将 microSD 卡格式化为 **FAT32** 格式。
+XIAO ESP32S3 Sense 支持最大 **32GB** 的 microSD 卡，因此如果您准备为 XIAO 购买 microSD 卡，请参考此规格。在使用 microSD 卡之前，请将 microSD 卡格式化为 **FAT32** 格式。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/67.png" style={{width:250, height:'auto'}}/></div>
 
-格式化后，您可以将 microSD 卡插入 microSD 卡槽。请注意插入方向，金手指一面应朝内。
+格式化后，您可以将 microSD 卡插入 microSD 卡槽。请注意插入方向，有金手指的一面应朝内。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/66.jpg" style={{width:500, height:'auto'}}/></div>
 
@@ -65,7 +65,7 @@ XIAO ESP32S3 Sense 支持最大 **32GB** 的 microSD 卡，所以如果您准备
 以下是完整的示例程序。
 
 :::tip
-检查并确认您使用的是哪个版本的 `esp32`，以下示例适用于 2.0.x，下面的示例适用于 3.0.x 及更高版本
+检查并确认您使用的是哪个版本的 `esp32`，以下示例适用于 2.0.x 版本，下面的示例适用于 3.0.x 及更高版本
 :::
 
 ```cpp
@@ -153,7 +153,7 @@ void loop() {
 I2S.setAllPins(-1, 42, 41, -1, -1);
 ```
 
-在这个特定的代码中，`-1` 值表示相应的引脚未使用，而 `42` 和 `41` 值分别代表连接到字选择和数据输入线的 GPIO 引脚。数据输出和通道选择线在此配置中未使用，设置为 `-1`。
+在这个特定的代码中，`-1` 值表示相应的引脚未被使用，而 `42` 和 `41` 值分别代表连接到字选择和数据输入线的 GPIO 引脚。在此配置中，数据输出和通道选择线未被使用，设置为 `-1`。
 
 ```c
 if (!I2S.begin(PDM_MONO_MODE, 16000, 16)) {
@@ -162,7 +162,7 @@ if (!I2S.begin(PDM_MONO_MODE, 16000, 16)) {
 }
 ```
 
-`begin()` 函数在 I2S 对象上被调用，用指定的参数初始化 I2S 接口：`PDM_MONO_MODE`、`16000` Hz 采样率和 `16-bit` 分辨率。
+`begin()` 函数在 I2S 对象上被调用，用于使用指定参数初始化 I2S 接口：`PDM_MONO_MODE`、`16000` Hz 采样率和 `16-bit` 分辨率。
 
 :::tip
 需要注意的是，对于当前的 ESP32-S3 芯片，我们只能使用 `PDM_MONO_MODE`，采样位宽只能是 `16bit`。只有采样率可以修改，但经过测试，16kHz 的采样率相对稳定。
@@ -176,14 +176,13 @@ if (sample && sample != -1 && sample != 1) {
 }
 ```
 
-`read()` 函数在 I2S 对象上被调用，用于从 I2S 接口读取单个音频样本。if 语句检查 sample 变量的值。如果样本值不是 0、-1 或 1，则被认为是有效的音频样本，if 块内的代码将被执行。在这种情况下，样本值使用 `Serial.println()` 函数打印到串行控制台。
-
+`read()` 函数在 I2S 对象上被调用，用于从 I2S 接口读取单个音频采样。if 语句检查 sample 变量的值。如果采样值不是 0、-1 或 1，则被认为是有效的音频采样，if 块内的代码将被执行。在这种情况下，采样值使用 `Serial.println()` 函数打印到串行控制台。
 
 ## 将录制的声音保存到 microSD 卡
 
 在下一个项目中，我们将指导您如何结合 microSD 卡的功能，将录制的声音保存到 microSD 卡中。对于这个项目，请提前准备 microSD 卡并将其格式化为 **FAT32** 格式。
 
-如果这是您第一次在 XIAO ESP32S3 上使用 microSD 卡，您可以阅读[文件系统 Wiki](https://wiki.seeedstudio.com/cn/xiao_esp32s3_sense_filesystem/#prepare-the-microsd-card) 内容来了解 microSD 卡的安装和准备。
+如果这是您第一次在 XIAO ESP32S3 上使用 microSD 卡，您可以阅读[文件系统 Wiki](https://wiki.seeedstudio.com/xiao_esp32s3_sense_filesystem/#prepare-the-microsd-card) 内容来了解 microSD 卡的安装和准备。
 
 以下是此项目的 Arduino 程序。
 :::tip
@@ -192,7 +191,7 @@ if (sample && sample != -1 && sample != 1) {
 
 ```cpp
 /* 
- * 适用于 Seeed XIAO ESP32S3 Sense 的 WAV 录音器
+ * WAV Recorder for Seeed XIAO ESP32S3 Sense 
 */
 
 #include <I2S.h>
@@ -200,11 +199,11 @@ if (sample && sample != -1 && sample != 1) {
 #include "SD.h"
 #include "SPI.h"
 
-// 根据需要进行更改
-#define RECORD_TIME   20  // 秒，最大值为 240
+// make changes as needed
+#define RECORD_TIME   20  // seconds, The maximum value is 240
 #define WAV_FILE_NAME "arduino_rec"
 
-// 为了获得最佳效果，请勿更改
+// do not change for best
 #define SAMPLE_RATE 16000U
 #define SAMPLE_BITS 16
 #define WAV_HEADER_SIZE 44
@@ -215,11 +214,11 @@ void setup() {
   while (!Serial) ;
   I2S.setAllPins(-1, 42, 41, -1, -1);
   if (!I2S.begin(PDM_MONO_MODE, SAMPLE_RATE, SAMPLE_BITS)) {
-    Serial.println("初始化 I2S 失败！");
+    Serial.println("Failed to initialize I2S!");
     while (1) ;
   }
   if(!SD.begin(21)){
-    Serial.println("挂载 SD 卡失败！");
+    Serial.println("Failed to mount SD Card!");
     while (1) ;
   }
   record_wav();
@@ -235,48 +234,48 @@ void record_wav()
   uint32_t sample_size = 0;
   uint32_t record_size = (SAMPLE_RATE * SAMPLE_BITS / 8) * RECORD_TIME;
   uint8_t *rec_buffer = NULL;
-  Serial.printf("准备开始录音...\n");
+  Serial.printf("Ready to start recording ...\n");
 
   File file = SD.open("/"WAV_FILE_NAME".wav", FILE_WRITE);
-  // 将头部写入 WAV 文件
+  // Write the header to the WAV file
   uint8_t wav_header[WAV_HEADER_SIZE];
   generate_wav_header(wav_header, record_size, SAMPLE_RATE);
   file.write(wav_header, WAV_HEADER_SIZE);
 
-  // 为录音分配 PSRAM 内存
+  // PSRAM malloc for recording
   rec_buffer = (uint8_t *)ps_malloc(record_size);
   if (rec_buffer == NULL) {
-    Serial.printf("内存分配失败！\n");
+    Serial.printf("malloc failed!\n");
     while(1) ;
   }
-  Serial.printf("缓冲区：%d 字节\n", ESP.getPsramSize() - ESP.getFreePsram());
+  Serial.printf("Buffer: %d bytes\n", ESP.getPsramSize() - ESP.getFreePsram());
 
-  // 开始录音
+  // Start recording
   esp_i2s::i2s_read(esp_i2s::I2S_NUM_0, rec_buffer, record_size, &sample_size, portMAX_DELAY);
   if (sample_size == 0) {
-    Serial.printf("录音失败！\n");
+    Serial.printf("Record Failed!\n");
   } else {
-    Serial.printf("录制了 %d 字节\n", sample_size);
+    Serial.printf("Record %d bytes\n", sample_size);
   }
 
-  // 增加音量
+  // Increase volume
   for (uint32_t i = 0; i < sample_size; i += SAMPLE_BITS/8) {
     (*(uint16_t *)(rec_buffer+i)) <<= VOLUME_GAIN;
   }
 
-  // 将数据写入 WAV 文件
-  Serial.printf("正在写入文件...\n");
+  // Write data to the WAV file
+  Serial.printf("Writing to the file ...\n");
   if (file.write(rec_buffer, record_size) != record_size)
-    Serial.printf("写入文件失败！\n");
+    Serial.printf("Write file Failed!\n");
 
   free(rec_buffer);
   file.close();
-  Serial.printf("录音结束。\n");
+  Serial.printf("The recording is over.\n");
 }
 
 void generate_wav_header(uint8_t *wav_header, uint32_t wav_size, uint32_t sample_rate)
 {
-  // 参考资料请见：http://soundfile.sapp.org/doc/WaveFormat/
+  // See this for reference: http://soundfile.sapp.org/doc/WaveFormat/
   uint32_t file_size = wav_size + WAV_HEADER_SIZE - 8;
   uint32_t byte_rate = SAMPLE_RATE * SAMPLE_BITS / 8;
   const uint8_t set_wav_header[] = {
@@ -284,13 +283,13 @@ void generate_wav_header(uint8_t *wav_header, uint32_t wav_size, uint32_t sample
     file_size, file_size >> 8, file_size >> 16, file_size >> 24, // ChunkSize
     'W', 'A', 'V', 'E', // Format
     'f', 'm', 't', ' ', // Subchunk1ID
-    0x10, 0x00, 0x00, 0x00, // Subchunk1Size (PCM 为 16)
-    0x01, 0x00, // AudioFormat (PCM 为 1)
-    0x01, 0x00, // NumChannels (1 声道)
+    0x10, 0x00, 0x00, 0x00, // Subchunk1Size (16 for PCM)
+    0x01, 0x00, // AudioFormat (1 for PCM)
+    0x01, 0x00, // NumChannels (1 channel)
     sample_rate, sample_rate >> 8, sample_rate >> 16, sample_rate >> 24, // SampleRate
     byte_rate, byte_rate >> 8, byte_rate >> 16, byte_rate >> 24, // ByteRate
     0x02, 0x00, // BlockAlign
-    0x10, 0x00, // BitsPerSample (16 位)
+    0x10, 0x00, // BitsPerSample (16 bits)
     'd', 'a', 't', 'a', // Subchunk2ID
     wav_size, wav_size >> 8, wav_size >> 16, wav_size >> 24, // Subchunk2Size
   };
@@ -308,63 +307,63 @@ void generate_wav_header(uint8_t *wav_header, uint32_t wav_size, uint32_t sample
 #include "SD.h"
 
 void setup() {
-  // 创建 I2SClass 的实例
+  // Create an instance of the I2SClass
   I2SClass i2s;
 
-  // 创建变量来存储音频数据
+  // Create variables to store the audio data
   uint8_t *wav_buffer;
   size_t wav_size;
 
-  // 初始化串口
+  // Initialize the serial port
   Serial.begin(115200);
   while (!Serial) {
     delay(10);
   }
 
-  Serial.println("正在初始化 I2S 总线...");
+  Serial.println("Initializing I2S bus...");
 
-  // 设置用于音频输入的引脚
+  // Set up the pins used for audio input
   i2s.setPinsPdmRx(42, 41);
 
-  // 以 16 kHz 采样率和 16 位采样深度启动 I2S
+  // start I2S at 16 kHz with 16-bits per sample
   if (!i2s.begin(I2S_MODE_PDM_RX, 16000, I2S_DATA_BIT_WIDTH_16BIT, I2S_SLOT_MODE_MONO)) {
-    Serial.println("初始化 I2S 失败！");
-    while (1); // 什么都不做
+    Serial.println("Failed to initialize I2S!");
+    while (1); // do nothing
   }
 
-  Serial.println("I2S 总线已初始化。");
-  Serial.println("正在初始化 SD 卡...");
+  Serial.println("I2S bus initialized.");
+  Serial.println("Initializing SD card...");
 
-  // 设置用于 SD 卡访问的引脚
+  // Set up the pins used for SD card access
   if(!SD.begin(21)){
-    Serial.println("挂载 SD 卡失败！");
+    Serial.println("Failed to mount SD Card!");
     while (1) ;
   }
-  Serial.println("SD 卡已初始化。");
-  Serial.println("正在录制 20 秒音频数据...");
+  Serial.println("SD card initialized.");
+  Serial.println("Recording 20 seconds of audio data...");
 
-  // 录制 20 秒音频数据
+  // Record 20 seconds of audio data
   wav_buffer = i2s.recordWAV(20, &wav_size);
 
-  // 在 SD 卡上创建文件
+  // Create a file on the SD card
   File file = SD.open("/arduinor_rec.wav", FILE_WRITE);
   if (!file) {
-    Serial.println("打开文件进行写入失败！");
+    Serial.println("Failed to open file for writing!");
     return;
   }
 
-  Serial.println("正在将音频数据写入文件...");
+  Serial.println("Writing audio data to file...");
 
-  // 将音频数据写入文件
+  // Write the audio data to the file
   if (file.write(wav_buffer, wav_size) != wav_size) {
-    Serial.println("将音频数据写入文件失败！");
+    Serial.println("Failed to write audio data to file!");
     return;
   }
 
-  // 关闭文件
+  // Close the file
   file.close();
 
-  Serial.println("应用程序完成。");
+  Serial.println("Application complete.");
 }
 
 void loop() {
@@ -373,10 +372,9 @@ void loop() {
 }
 ```
 
-要执行此示例，我们需要使用 ESP-32 芯片的 PSRAM 功能，因此请在上传前将其打开。
+要执行此示例，我们需要使用 ESP-32 芯片的 PSRAM 功能，因此请在上传之前将其打开。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/94.png" style={{width:700, height:'auto'}}/></div>
-
 
 此程序仅在用户**打开串口监视器**后执行一次，录制 20 秒并将录制文件保存到 microSD 卡中，文件名为"arduino_rec.wav"。
 
@@ -418,29 +416,26 @@ void loop() {
 
 ## 故障排除
 
-### 为什么无法播放录制的音频文件？
+### 为什么我无法播放录制的音频文件？
 
-如果您遇到无法播放的情况，请检查串口监视器打印的调试信息中是否有关于读写卡的错误消息。如果有，请更换 microSD 卡或检查卡和扩展板连接是否松动或不稳定。如果卡没有问题，那么音频文件应该有大小，如果录制有问题，可能会显示录制的音频文件大小只有 0KB。
+如果您遇到无法播放的情况，请检查串行监视器打印的调试信息，查看是否有关于读写卡的错误消息。如果有，请更换microSD卡或检查卡和扩展板连接是否松动或不稳定。如果卡没有问题，那么应该检查音频文件的大小，如果录制有问题，可能会显示录制的音频文件大小只有0KB。
 
-例如，在下图中，读写卡存在问题。
+例如，在下图中，卡的读写存在问题。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/103.png" style={{width:600, height:'auto'}}/></div>
 
-如果卡没有问题且录制相当成功。那么您需要检查软件是否支持 WAV 格式的音频播放。我们建议使用专门的音乐播放软件来播放音频，尽量不要使用视频播放器来播放。经过实际测试，有许多视频播放器（虽然它们支持 WAV 格式）无法播放。
-
+如果卡没有问题且录制相当成功。那么您需要检查软件是否支持WAV格式的音频播放。我们建议使用专门的音乐播放软件来播放音频，尽量不要使用视频播放器来播放。经过实际测试，有很多视频播放器（虽然它们支持WAV格式）无法播放。
 
 ## 技术支持与产品讨论
-
-.
 
 感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

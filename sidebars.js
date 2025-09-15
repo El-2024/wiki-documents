@@ -1257,6 +1257,7 @@ const sidebars = {
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_Getting_Started',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_Pin_Multiplexing',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_Built-in-Sensor',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_Power_Consumptions',
             {
               type: 'category',
               label: 'Wireless Connection',
@@ -3865,6 +3866,8 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/Roboflow-Jetson-Getting-Started',
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/Install_torch_on_reComputer',
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/vnc_for_reComputer',
+                'Edge/NVIDIA_Jetson/Application/Developer_Tools/Implement_Ethercat_communication_on_reComputer',
+
                 
                 
 
@@ -3925,6 +3928,7 @@ const sidebars = {
         'Edge/Beagle_Bone/BeagleBone_Blue',
         'Edge/Beagle_Bone/BeagleBone_Green',
         'Edge/Beagle_Bone/BeagleBone_Green_Wireless',
+        'Edge/Beagle_Bone/BeagleBone_Green_Eco',
         'Edge/Beagle_Bone/BeagleBone-Green-Gateway',
         'Edge/Beagle_Bone/Beaglebone_Case',
         {
@@ -4130,8 +4134,18 @@ const sidebars = {
                   //'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_Lekiwi',
                   'Robotics/Robot_Kits/Lerobot/Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
-                  'Robotics/Robot_Kits/Lerobot/Lerobot_AmazingHand',
                     ]},
+
+                    {
+                      type: 'category',
+                      label: 'Hand',
+                        // link: {
+                        //   type: "doc",
+                        //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+                        // },
+                        items: [
+                          'Robotics/Robot_Kits/Hand/AmazingHand',
+                            ]},
 
           ]
         },
@@ -4242,7 +4256,7 @@ const sidebars = {
                     ]},
             'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
             'Robotics/Robot_Software/control_robotic_arm_via_phospho',
-            'Robotics/Robot_Software/Implement_Ethercat_communication_on_reComputer',
+            
           ]
 
     },

@@ -397,7 +397,7 @@ jobs:
           fi
           node _trusted/.github/scripts/translate.js
 
-      # ⭐ 将译文推送到 base 仓库的独立分支，并创建/更新翻译 PR
+      # ⭐ 将译文推送到 base 仓库独立分支（只提交改动的文件），并创建/更新翻译 PR
       - name: Prepare translation branch in base repo
         if: steps.check-permissions.outputs.has_permission == 'true'
         id: prep-branch
@@ -413,8 +413,10 @@ jobs:
           BRANCH="auto-translate/pr-${PR_NUMBER}"
           echo "BRANCH=$BRANCH" >> $GITHUB_OUTPUT
 
-          if [ -z "$(git status --porcelain docs/)" ]; then
-            echo "ℹ️ 没有需要提交的 docs/ 更改"
+          # 如果工作区 docs/ 三个语言目录都没有任何变化，则直接判断是否需要继续
+          # 这里不依赖 collect-changes 的清单，统一从工作区检测
+          if ! git -C "$GITHUB_WORKSPACE" status --porcelain | grep -E '^ [AMDR] ' | grep -E ' docs/(zh-CN|ja|es)/' >/dev/null 2>&1; then
+            echo "ℹ️ 未检测到目标语言目录的改动（可能 translate.js 内部也无变动）"
             echo "HAS_CHANGES=false" >> $GITHUB_ENV
             exit 0
           fi
@@ -437,25 +439,25 @@ jobs:
           git fetch --depth=1 origin "$BASE_REF"
           git checkout "$BASE_REF"
 
-          if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
-            git checkout -B "$BRANCH"
-          else
-            git switch -c "$BRANCH"
-          fi
-
-          rsync -a --delete "$GITHUB_WORKSPACE/docs/" docs/
+          # ✅ 只镜像三种语言目录，移动/删除由 --delete 保证同步
+          # 如果某个语言目录不存在也没关系，rsync 会忽略
+          rsync -a --delete \
+            --include='docs/' \
+            --include='docs/zh-CN/***' \
+            --include='docs/ja/***' \
+            --include='docs/es/***' \
+            --exclude='*' \
+            "$GITHUB_WORKSPACE/" .
 
           git config user.email "action@github.com"
           git config user.name "GitHub Action Bot"
-          git add docs/
+          git add docs/zh-CN docs/ja docs/es 2>/dev/null || true
 
-          COMMIT_MSG="🌍 自动翻译文档 for #${PR_NUMBER}"
-          # ✅ 用多条 -m 追加提交说明，避免 YAML/heredoc 解析问题
           if git diff --cached --quiet; then
-            echo "ℹ️ 同步后无变化"
+            echo "ℹ️ 镜像后无变化"
           else
             git commit \
-              -m "$COMMIT_MSG" \
+              -m "🌍 自动翻译文档 for #${PR_NUMBER}" \
               -m "Languages: ${LANGUAGES}" \
               -m "Base: ${BASE_REF}" \
               -m "Source PR: #${PR_NUMBER}" \

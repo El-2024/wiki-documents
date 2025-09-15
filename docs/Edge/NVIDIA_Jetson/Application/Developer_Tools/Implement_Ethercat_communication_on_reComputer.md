@@ -1,16 +1,16 @@
 ---
-description: このwikiでは、リアルタイム産業オートメーション制御アプリケーション向けにreComputer JetsonでEtherCAT通信を実装する詳細な手順を提供します。
-title: reComputerでEthercat通信を実装する
+description: This wiki provides detailed steps to implement EtherCAT communication on reComputer Jetson for real-time industrial automation control applications.
+title: Implement Ethercat Communication on reComputer
 keywords:
 - EtherCAT
 - reComputer
 - Jetson
-- リアルタイム通信
-- 産業オートメーション
+- Real-time communication
+- Industrial automation
 - SOEM
-- ロボティクス制御
+- Robotics control
 image: https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer-robotics_2.webp
-slug: /ja/recomputer_ethercat_communication
+slug: /recomputer_ethercat_communication
 last_update:
   date: 2025-09-05
   author: Zibo
@@ -22,26 +22,25 @@ last_update:
 </div>
 
 <div style={{ textAlign: "justify" }}>
-EtherCAT（Ethernet for Control Automation Technology）は、オートメーション、ロボティクス、モーションシステムにおけるリアルタイムオートメーション制御用に設計された高性能でオープンソースの産業用Ethernetプロトコルです。このwikiでは、reComputer Jetsonシリーズでの EtherCat通信の実行方法を説明します。
+EtherCAT (Ethernet for Control Automation Technology) is a high-performance, open-source industrial Ethernet protocol designed for real-time automation control in automation, robotics, and motion systems. This wiki will show you how to conduct EtherCat communication on the reComputer Jetson Series.
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
 <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Robotics-J4012-with-GMSL-extension-board-p-6537.html" target="_blank">
-<strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ入手 🖱️</font></span></strong>
+<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 </a></div>
 
-## 前提条件
+## Prerequisites
 
-- reComputer（Jetpack 6.2プリインストール）
-- Ethernetケーブル
-- EtherCATスレーブデバイス
+- reComputer(preinstalled Jetpack 6.2)
+- Ethernet cable
+- EtherCAT Slave Device
 
+## Real-time Performance Verification
 
-## リアルタイム性能の検証
+Before implementing EtherCAT communication, it's crucial to verify that your reComputer system meets real-time performance requirements for industrial automation.
 
-EtherCAT通信を実装する前に、reComputerシステムが産業オートメーション用のリアルタイム性能要件を満たしていることを確認することが重要です。
-
-### リアルタイムテストツールのインストール
+### Install Real-time Testing Tools
 
 ```bash
 # Install rt-tests package for real-time latency measurement
@@ -49,7 +48,7 @@ sudo apt update
 sudo apt install rt-tests -y
 ```
 
-### Cyclictestの実行
+### Run Cyclictest
 
 ```bash
 # Run cyclictest with 6 threads and priority 80
@@ -61,55 +60,56 @@ sudo cyclictest -t 6 -p 80
     src="https://files.seeedstudio.com/wiki/robotics/software/ethercat/cyc1.png" />
 </div>
 
-`jetson_clocks`を有効にする前は、一部のスレッドのレイテンシが比較的高いことが観察できます。そのため、以下のコマンドで`jetson_clocks`を有効にする必要があります：
+Before enable the `jetson_clocks`,you can observe that the latency of some threads is relatively high.So,we need to enable the `jetson_clocks` by fllowing command:
+
 ```bash
 sudo jetson_clocks
 ```
+
 <div align="center">
     <img width={1000}
     src="https://files.seeedstudio.com/wiki/robotics/software/ethercat/cyc2.png" />
 </div>
 :::info
-**リアルタイム性能分析：**
-- 最大レイテンシ：34マイクロ秒
-- 平均レイテンシ：2-6マイクロ秒
-- 6つのテストスレッドすべてが9-34マイクロ秒の範囲内で安定したレイテンシを示している
-- システム負荷：0.00
-- レイテンシ分布は均一で一貫している
+**Real-time Performance Analysis:**
+- Maximum latency: 34 microseconds
+- Average latency: 2-6 microseconds  
+- All 6 test threads show stable latency within 9-34 microseconds range
+- System load: 0.00
+- Latency distribution is uniform and consistent
 
-この性能は100マイクロ秒未満のハードリアルタイムアプリケーション要件を満たしており、ロボティクス制御や産業オートメーションアプリケーションに適しています。
+This performance meets the hard real-time application requirement of under 100 microseconds, making it suitable for robotics control and industrial automation applications.
 :::
 
-## SOEMライブラリの概要
+## SOEM Library Overview
 
 <div style={{ textAlign: "justify" }}>
-SOEM（Simple Open EtherCAT Master）は、開発者にリアルタイムEtherCAT通信を確立するためのポータブルで柔軟な方法を提供する軽量でオープンソースのEtherCATマスターライブラリです。NVIDIA JetsonにはネイティブなEtherCATハードウェアインターフェースがありませんが、SOEMは標準ネットワークインターフェースを通じて生のEthernetフレームを使用して、完全にソフトウェアでEtherCAT通信を可能にします。
+SOEM (Simple Open EtherCAT Master) is a lightweight, open-source EtherCAT master library that provides developers with a portable and flexible way to establish real-time EtherCAT communication. While NVIDIA Jetson doesn't have native EtherCAT hardware interface, SOEM enables EtherCAT communication entirely in software using raw Ethernet frames through standard network interfaces.
 </div>
 
-### 主な機能
+### Key Features
 
-- **ソフトウェアベースの実装** - 特別なハードウェアは不要
-- **リアルタイム対応** - 低レイテンシ通信に最適化
-- **クロスプラットフォーム** - Linux、Windows、組み込みシステムで動作
-- **オープンソース** - 自由に使用・変更可能
-- **複数スレーブサポート** - 多数のEtherCATデバイスを制御可能
+- **Software-based implementation** - No special hardware required
+- **Real-time capable** - Optimized for low-latency communication
+- **Cross-platform** - Works on Linux, Windows, and embedded systems
+- **Open source** - Free to use and modify
+- **Multiple slave support** - Can control numerous EtherCAT devices
 
-## ハードウェア接続
+## Hardware Connection
 
-以下のセットアップを使用してEtherCATネットワークを接続します：
+Connect your EtherCAT network using the following setup:
 
-1. **標準Ethernetケーブルを使用**（Cat5e以上を推奨）
-2. **reComputer（マスター）**を**EtherCATスレーブデバイス**に接続
+1. **Use a standard Ethernet cable** (Cat5e or higher recommended)
+2. **Connect reComputer (Master)** to **EtherCAT Slave Device**
 
 <div align="center">
     <img width={1000}
     src="https://files.seeedstudio.com/wiki/robotics/software/ethercat/hc.jpg" />
 </div>
 
+## Installing SOEM Library
 
-## SOEMライブラリのインストール
-
-**ステップ1.** SOEMリポジトリのクローン
+**Step 1.** Clone SOEM Repository
 
 ```bash
 # Clone the SOEM library from GitHub
@@ -117,7 +117,7 @@ git clone https://github.com/OpenEtherCATsociety/SOEM
 cd SOEM
 ```
 
-**ステップ2.** ビルドとインストール
+**Step 2.** Build and Install
 
 ```bash
 # Create build directory
@@ -134,9 +134,10 @@ make -j4
 sudo make install
 ```
 
-## EtherCAT通信のテスト
+## Testing EtherCAT Communication
 
-**ステップ1.** ネットワークインターフェースの識別：
+**Step 1.** Identify Network Interface:
+
 ```bash
 # Check available network interfaces
 ifconfig
@@ -147,7 +148,7 @@ ifconfig
     src="https://files.seeedstudio.com/wiki/robotics/software/ethercat/ifname.png" />
 </div>
 
-**ステップ2.** slaveinfoサンプルに移動して検出プログラムを実行：
+**Step 2.** Navigate to the slaveinfo sample and run the detection program:
 
 ```bash
 # Navigate to slaveinfo sample
@@ -163,21 +164,24 @@ sudo ./slaveinfo enP8p1s0
 </div>
 
 :::success
-**検証成功：**
-出力に「slave found」が表示された場合、以下が確認されます：
-- SOEMソフトウェアスタックが正常に動作している
-- EtherCATスレーブデバイスが適切に接続されている
-- 通信リンクが確立されている
+**Verification Success:**
+If you see "slave found" in the output, it confirms that:
+
+- SOEM software stack is working correctly
+- EtherCAT slave device is properly connected
+- Communication link is established
+
 :::
 
-## 基本通信例
+## Basic Communication Examples
 
-### C言語の例
+### C Example
 
-基本的なEtherCAT通信を実演するシンプルなCプログラムを作成します：
+Create a simple C program to demonstrate basic EtherCAT communication:
 
 <details>
 <summary> ethercat_communication_test.c </summary>
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -187,7 +191,8 @@ sudo ./slaveinfo enP8p1s0
 #include <sys/time.h>
 
 // EtherCAT includes
-#include "ethercat.h"
+
+# include "ethercat.h"
 
 // Function prototypes
 void print_state_info(const char* state_name, int success);
@@ -200,14 +205,14 @@ void sleep_ms(int milliseconds);
 int main(int argc, char *argv[])
 {
     int ret;
-    char *ifname = "enP8p1s0";  // Network interface name
+    char*ifname = "enP8p1s0";  // Network interface name
 
     printf("EtherCAT Communication Test - C Version\n");
     printf("=======================================\n\n");
-
+    
     // Initialize EtherCAT communication
     printf("Initializing EtherCAT communication...\n");
-
+    
     // Initialize EtherCAT master
     if (ec_init(ifname)) {
         printf("✅ EtherCAT master initialized successfully\n");
@@ -215,7 +220,7 @@ int main(int argc, char *argv[])
         printf("❌ Failed to initialize EtherCAT master\n");
         return -1;
     }
-
+    
     // Find and configure slaves
     if (ec_config_init(FALSE) > 0) {
         printf("✅ Found %d slaves\n", ec_slavecount);
@@ -224,11 +229,11 @@ int main(int argc, char *argv[])
         ec_close();
         return -1;
     }
-
+    
     // Print slave information
     printf("Found slave: %s, state: %d\n", 
            ec_slave[1].name, ec_slave[1].state);
-
+    
     // Enter PRE-OP state (SDO communication allowed)
     printf("\n📡 Entering PRE-OP state (SDO communication allowed)...\n");
     ec_statecheck(0, EC_STATE_PRE_OP, EC_TIMEOUTSTATE);
@@ -238,7 +243,7 @@ int main(int argc, char *argv[])
     } else {
         print_state_info("PRE-OP", 0);
     }
-
+    
     // Enter SAFE-OP state (safe PDO communication allowed)
     printf("\n📡 Entering SAFE-OP state (safe PDO communication allowed)...\n");
     ec_statecheck(0, EC_STATE_SAFE_OP, EC_TIMEOUTSTATE);
@@ -248,7 +253,7 @@ int main(int argc, char *argv[])
     } else {
         print_state_info("SAFE-OP", 0);
     }
-
+    
     // Enter OP state (full PDO communication allowed)
     printf("\n📡 Entering OP state (full PDO communication allowed)...\n");
     ec_statecheck(0, EC_STATE_OPERATIONAL, EC_TIMEOUTSTATE);
@@ -258,10 +263,10 @@ int main(int argc, char *argv[])
     } else {
         print_state_info("OP", 0);
     }
-
+    
     // Switch between different control modes
     printf("\n=== Control Mode Testing ===\n");
-
+    
     set_control_mode(1);  // Position control
     set_control_mode(3);  // Velocity control
     set_control_mode(4);  // Torque control
@@ -269,20 +274,20 @@ int main(int argc, char *argv[])
     set_control_mode(7);  // Interpolated position mode
     set_control_mode(8);  // Cyclic synchronous position mode
     set_control_mode(0);  // No mode
-
+    
     // Set servo parameters
     printf("\n=== Setting Servo Parameters ===\n");
     set_servo_parameters();
-
+    
     // Configure PDO mapping
     printf("\n=== Configuring PDO Mapping ===\n");
     configure_pdo_mapping();
-
+    
     // Print final slave state
     printf("\nSlave state: %d\n", ec_slave[1].state);
-
+    
     printf("\nEtherCAT communication test completed\n");
-
+    
     // Cleanup
     ec_close();
     return 0;
@@ -304,7 +309,7 @@ void set_control_mode(int mode)
 
     // Write control mode to object 0x6060
     ret = ec_SDOwrite(1, 0x6060, 0, FALSE, sizeof(mode_data), &mode_data, EC_TIMEOUTRXM);
-
+    
     if (ret > 0) {
         switch(mode) {
             case 1:
@@ -335,7 +340,7 @@ void set_control_mode(int mode)
     } else {
         printf("❌ Failed to set control mode %d\n", mode);
     }
-
+    
     // Read back the current mode
     read_control_mode();
     sleep_ms(1000);
@@ -348,7 +353,7 @@ void read_control_mode(void)
     int wkc;
 
     ret = ec_SDOread(1, 0x6060, 0, FALSE, &wkc, &mode_data, sizeof(mode_data), EC_TIMEOUTRXM);
-
+    
     if (ret > 0) {
         printf("Current mode: %d\n", mode_data);
     } else {
@@ -370,13 +375,13 @@ void set_servo_parameters(void)
     } else {
         printf("❌ Failed to set position range\n");
     }
-
+    
     // Read back position range
     ret = ec_SDOread(1, 0x607F, 0, FALSE, &wkc, &param_value, sizeof(param_value), EC_TIMEOUTRXM);
     if (ret > 0) {
         printf("Position range: %u\n", param_value);
     }
-
+    
     // Set maximum velocity (0x6081)
     param_value = 1000000;
     ret = ec_SDOwrite(1, 0x6081, 0, FALSE, sizeof(param_value), &param_value, EC_TIMEOUTRXM);
@@ -385,13 +390,13 @@ void set_servo_parameters(void)
     } else {
         printf("❌ Failed to set velocity\n");
     }
-
+    
     // Read back velocity
     ret = ec_SDOread(1, 0x6081, 0, FALSE, &wkc, &param_value, sizeof(param_value), EC_TIMEOUTRXM);
     if (ret > 0) {
         printf("Maximum velocity: %u\n", param_value);
     }
-
+    
     // Set maximum acceleration (0x6083)
     param_value = 1000;
     ret = ec_SDOwrite(1, 0x6083, 0, FALSE, sizeof(param_value), &param_value, EC_TIMEOUTRXM);
@@ -400,13 +405,13 @@ void set_servo_parameters(void)
     } else {
         printf("❌ Failed to set acceleration\n");
     }
-
+    
     // Read back acceleration
     ret = ec_SDOread(1, 0x6083, 0, FALSE, &wkc, &param_value, sizeof(param_value), EC_TIMEOUTRXM);
     if (ret > 0) {
         printf("Maximum acceleration: %u\n", param_value);
     }
-
+    
     printf("✅ Successfully set servo parameters\n");
 }
 
@@ -419,54 +424,54 @@ void configure_pdo_mapping(void)
 
     // Configure receive PDO mapping (1600h) - Master to slave
     printf("Configuring receive PDO mapping (1600h)...\n");
-
+    
     // Clear existing mapping
     mapping_count = 0;
     ret = ec_SDOwrite(1, 0x1600, 0, FALSE, sizeof(mapping_count), &mapping_count, EC_TIMEOUTRXM);
-
+    
     // Set control word mapping (6040h, 16-bit)
     mapping_data = 0x60400010;
     ret = ec_SDOwrite(1, 0x1600, 1, FALSE, sizeof(mapping_data), &mapping_data, EC_TIMEOUTRXM);
-
+    
     // Set target position mapping (607Ah, 32-bit)
     mapping_data = 0x607A0020;
     ret = ec_SDOwrite(1, 0x1600, 2, FALSE, sizeof(mapping_data), &mapping_data, EC_TIMEOUTRXM);
-
+    
     // Set mapping count
     mapping_count = 2;
     ret = ec_SDOwrite(1, 0x1600, 0, FALSE, sizeof(mapping_count), &mapping_count, EC_TIMEOUTRXM);
-
+    
     if (ret > 0) {
         printf("✅ Receive PDO mapping configured\n");
     } else {
         printf("❌ Failed to configure receive PDO mapping\n");
     }
-
+    
     // Configure transmit PDO mapping (1A00h) - Slave to master
     printf("Configuring transmit PDO mapping (1A00h)...\n");
-
+    
     // Clear existing mapping
     mapping_count = 0;
     ret = ec_SDOwrite(1, 0x1A00, 0, FALSE, sizeof(mapping_count), &mapping_count, EC_TIMEOUTRXM);
-
+    
     // Set status word mapping (6041h, 16-bit)
     mapping_data = 0x60410010;
     ret = ec_SDOwrite(1, 0x1A00, 1, FALSE, sizeof(mapping_data), &mapping_data, EC_TIMEOUTRXM);
-
+    
     // Set actual position mapping (6064h, 32-bit)
     mapping_data = 0x60640020;
     ret = ec_SDOwrite(1, 0x1A00, 2, FALSE, sizeof(mapping_data), &mapping_data, EC_TIMEOUTRXM);
-
+    
     // Set mapping count
     mapping_count = 2;
     ret = ec_SDOwrite(1, 0x1A00, 0, FALSE, sizeof(mapping_count), &mapping_count, EC_TIMEOUTRXM);
-
+    
     if (ret > 0) {
         printf("✅ Transmit PDO mapping configured\n");
     } else {
         printf("❌ Failed to configure transmit PDO mapping\n");
     }
-
+    
     printf("✅ PDO mapping configuration completed\n");
 }
 
@@ -476,6 +481,7 @@ void sleep_ms(int milliseconds)
 }
 
 ```
+
 </details>
 
 Create a Makefile file to compile this program:
@@ -485,127 +491,130 @@ Replace `SOEM_PATH` to your own installation path!
 
 <details>
 <summary> Makefile </summary>
-```Makefile
-# ローカルSOEMライブラリを使用したEtherCAT通信テスト用Makefile
 
-# コンパイラとフラグ
+```Makefile
+# Makefile for EtherCAT Communication Test with Local SOEM Library
+
+# Compiler and flags
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99 -O2
 LDFLAGS = -lrt -lpthread
 
-# ローカルSOEMライブラリのパス
+# Local SOEM library paths
 SOEM_PATH = /home/seeed/ethercat/SOEM
 INCLUDES = -I$(SOEM_PATH)/build/install/include
 LIBS = -L$(SOEM_PATH)/build -lsoem
 
-# ターゲット実行ファイル
+# Target executables
 TARGET_FULL = ethercat_communication_test
 TARGET_SIMPLE = ethercat_simple_test
 
-# ソースファイル
+# Source files
 SOURCES_FULL = ethercat_communication_test.c
 SOURCES_SIMPLE = ethercat_simple_test.c
 
-# オブジェクトファイル
+# Object files
 OBJECTS_FULL = $(SOURCES_FULL:.c=.o)
 OBJECTS_SIMPLE = $(SOURCES_SIMPLE:.c=.o)
 
-# デフォルトターゲット
+# Default target
 all: $(TARGET_SIMPLE)
 
-# シンプル版をビルド（推奨）
+# Build the simple version (recommended)
 simple: $(TARGET_SIMPLE)
 
-# フル版をビルド
+# Build the full version
 full: $(TARGET_FULL)
 
-# シンプル実行ファイルをビルド
+# Build the simple executable
 $(TARGET_SIMPLE): $(OBJECTS_SIMPLE)
-	$(CC) $(OBJECTS_SIMPLE) -o $(TARGET_SIMPLE) $(LIBS) $(LDFLAGS)
-	@echo "✅ シンプル版のビルドが正常に完了しました！"
-	@echo "実行方法: sudo ./$(TARGET_SIMPLE)"
+ $(CC) $(OBJECTS_SIMPLE) -o $(TARGET_SIMPLE) $(LIBS) $(LDFLAGS)
+ @echo "✅ Simple version build completed successfully!"
+ @echo "Run with: sudo ./$(TARGET_SIMPLE)"
 
-# フル実行ファイルをビルド
+# Build the full executable
 $(TARGET_FULL): $(OBJECTS_FULL)
-	$(CC) $(OBJECTS_FULL) -o $(TARGET_FULL) $(LIBS) $(LDFLAGS)
-	@echo "✅ フル版のビルドが正常に完了しました！"
-	@echo "実行方法: sudo ./$(TARGET_FULL)"
+ $(CC) $(OBJECTS_FULL) -o $(TARGET_FULL) $(LIBS) $(LDFLAGS)
+ @echo "✅ Full version build completed successfully!"
+ @echo "Run with: sudo ./$(TARGET_FULL)"
 
-# ソースファイルをコンパイル
+# Compile source files
 %.o: %.c
-	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+ $(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
-# ビルドファイルをクリーン
+# Clean build files
 clean:
-	rm -f $(OBJECTS_FULL) $(OBJECTS_SIMPLE) $(TARGET_FULL) $(TARGET_SIMPLE)
-	@echo "🧹 ビルドファイルをクリーンしました"
+ rm -f $(OBJECTS_FULL) $(OBJECTS_SIMPLE) $(TARGET_FULL) $(TARGET_SIMPLE)
+ @echo "🧹 Cleaned build files"
 
-# ローカルSOEMインストールをチェック
+# Check local SOEM installation
 check-soem:
-	@echo "ローカルSOEMインストールをチェック中..."
-	@if [ -f "$(SOEM_PATH)/build/install/include/soem/soem.h" ]; then \
-		echo "✅ SOEMヘッダーが見つかりました: $(SOEM_PATH)/build/install/include/soem/soem.h"; \
-	else \
-		echo "❌ SOEMヘッダーが見つかりません"; \
-	fi
-	@if [ -f "$(SOEM_PATH)/build/libsoem.a" ]; then \
-		echo "✅ SOEMライブラリが見つかりました: $(SOEM_PATH)/build/libsoem.a"; \
-	else \
-		echo "❌ SOEMライブラリが見つかりません"; \
-	fi
+ @echo "Checking local SOEM installation..."
+ @if [ -f "$(SOEM_PATH)/build/install/include/soem/soem.h" ]; then \
+  echo "✅ SOEM headers found at $(SOEM_PATH)/build/install/include/soem/soem.h"; \
+ else \
+  echo "❌ SOEM headers not found"; \
+ fi
+ @if [ -f "$(SOEM_PATH)/build/libsoem.a" ]; then \
+  echo "✅ SOEM library found at $(SOEM_PATH)/build/libsoem.a"; \
+ else \
+  echo "❌ SOEM library not found"; \
+ fi
 
-# コンパイルテスト
+# Test compilation
 test-compile: check-soem
-	@echo "コンパイルをテスト中..."
-	@make clean
-	@make simple
-	@echo "✅ コンパイルテストが成功しました！"
+ @echo "Testing compilation..."
+ @make clean
+ @make simple
+ @echo "✅ Compilation test successful!"
 
-# 参考用の手動コンパイルコマンド
+# Manual compilation commands for reference
 manual-compile:
-	@echo "手動コンパイルコマンド:"
-	@echo "シンプル版:"
-	@echo "  gcc -Wall -Wextra -std=c99 -O2 \\"
-	@echo "      -I$(SOEM_PATH)/build/install/include \\"
-	@echo "      ethercat_simple_test.c \\"
-	@echo "      -o ethercat_simple_test \\"
-	@echo "      -L$(SOEM_PATH)/build -lsoem -lrt -lpthread"
-	@echo ""
-	@echo "フル版:"
-	@echo "  gcc -Wall -Wextra -std=c99 -O2 \\"
-	@echo "      -I$(SOEM_PATH)/build/install/include \\"
-	@echo "      ethercat_communication_test.c \\"
-	@echo "      -o ethercat_communication_test \\"
-	@echo "      -L$(SOEM_PATH)/build -lsoem -lrt -lpthread"
+ @echo "Manual compilation commands:"
+ @echo "Simple version:"
+ @echo "  gcc -Wall -Wextra -std=c99 -O2 \\"
+ @echo "      -I$(SOEM_PATH)/build/install/include \\"
+ @echo "      ethercat_simple_test.c \\"
+ @echo "      -o ethercat_simple_test \\"
+ @echo "      -L$(SOEM_PATH)/build -lsoem -lrt -lpthread"
+ @echo ""
+ @echo "Full version:"
+ @echo "  gcc -Wall -Wextra -std=c99 -O2 \\"
+ @echo "      -I$(SOEM_PATH)/build/install/include \\"
+ @echo "      ethercat_communication_test.c \\"
+ @echo "      -o ethercat_communication_test \\"
+ @echo "      -L$(SOEM_PATH)/build -lsoem -lrt -lpthread"
 
-# ヘルプターゲット
+# Help target
 help:
-	@echo "利用可能なターゲット:"
-	@echo "  all           - シンプル版をビルド（デフォルト）"
-	@echo "  simple        - シンプル版をビルド"
-	@echo "  full          - フル版をビルド"
-	@echo "  clean         - ビルドファイルを削除"
-	@echo "  check-soem    - ローカルSOEMインストールをチェック"
-	@echo "  test-compile  - コンパイルをテスト"
-	@echo "  manual-compile - 手動コンパイルコマンドを表示"
-	@echo "  help          - このヘルプメッセージを表示"
-	@echo ""
-	@echo "クイックスタート:"
-	@echo "  make          # プログラムをビルド"
-	@echo "  sudo ./ethercat_simple_test  # プログラムを実行"
-	@echo ""
-	@echo "SOEMライブラリの場所: $(SOEM_PATH)"
+ @echo "Available targets:"
+ @echo "  all           - Build the simple version (default)"
+ @echo "  simple        - Build the simple version"
+ @echo "  full          - Build the full version"
+ @echo "  clean         - Remove build files"
+ @echo "  check-soem    - Check local SOEM installation"
+ @echo "  test-compile  - Test compilation"
+ @echo "  manual-compile - Show manual compilation commands"
+ @echo "  help          - Show this help message"
+ @echo ""
+ @echo "Quick start:"
+ @echo "  make          # Build the program"
+ @echo "  sudo ./ethercat_simple_test  # Run the program"
+ @echo ""
+ @echo "SOEM library location: $(SOEM_PATH)"
 
 ```
 
 </details>
 
 Compile and run the program:
+
 ```bash
 make gcc -Wall -Wextra -std=c99 -O2 -I/home/seeed/ethercat/SOEM/build/install/include -c ethercat_simple_test.c -o ethercat_simple_test.o
 
 sudo ./ethercat_simple_test
 ```
+
 <div align="center">
     <img width={1000}
     src="https://files.seeedstudio.com/wiki/robotics/software/ethercat/conmunicate.png" />
@@ -626,133 +635,143 @@ For Python-based applications, you can use the pysoem library:
 
 <details>
 <summary> conmunicate_test.py </summary>
+
 ```python
-import pysoem          
-import time           
-import struct         
+import pysoem
+import time
+import struct
 
+# Initialize EtherCAT communication
 
-# EtherCAT通信を初期化
-# ネットワークインターフェース名
+# Network interface name
+
 interface_name = "enP8p1s0"
 
-# EtherCATマスターオブジェクトを作成
+# Create EtherCAT master object
+
 master = pysoem.Master()
 
-# EtherCATマスター接続を開く
+# Open EtherCAT master connection
+
 master.open(interface_name)
 
-# スレーブを初期化
+# Initialize slaves
+
 master.config_init()
 
 slaver = master.slaves[0]
 
 print(f"Found slave: {slaver.name}, state: {slaver.state}")
 
-print("📡 PRE-OP状態に移行中（SDO通信が許可されます）...") 
-# マスター状態をPREOP_STATEに設定
+print("📡 Entering PRE-OP state (SDO communication allowed)...")
+
+# Set master state to PREOP_STATE
+
 master.state = pysoem.PREOP_STATE
-# EtherCATネットワークに状態を書き込み
+
+# Write state to EtherCAT network
+
 master.write_state()
 
-# 正常に移行したかチェック
+# Check if entered successfully
+
 if master.state == pysoem.PREOP_STATE:
-    print("📡 PRE-OP状態への移行に成功しました")
+    print("📡 Successfully entered PRE-OP state")
 else:
-    print("📡 PRE-OP状態への移行に失敗しました")
+    print("📡 Failed to enter PRE-OP state")
 
+# Enter SAFE-OP state (safe PDO communication allowed)
 
-# SAFE-OP状態に移行（安全なPDO通信が許可されます）
 master.state = pysoem.SAFEOP_STATE
 master.write_state()
 
-# 正常に移行したかチェック
-if master.state == pysoem.SAFEOP_STATE:
-    print("📡 SAFE-OP状態への移行に成功しました")
-else:
-    print("📡 SAFE-OP状態への移行に失敗しました")
+# Check if entered successfully
 
-# OP状態に移行（完全なPDO通信が許可されます）
+if master.state == pysoem.SAFEOP_STATE:
+    print("📡 Successfully entered SAFE-OP state")
+else:
+    print("📡 Failed to enter SAFE-OP state")
+
+# Enter OP state (full PDO communication allowed)
+
 master.state = pysoem.OP_STATE
 master.write_state()
 
-# 正常に移行したかチェック
+# Check if entered successfully
+
 if master.state == pysoem.OP_STATE:
-    print("📡 マスターがOP状態への移行に成功しました")
+    print("📡 Master successfully entered OP state")
 else:
-    print("📡 OP状態への移行に失敗しました")
+    print("📡 Failed to enter OP state")
 
+# Switch between different control modes
 
-# 異なる制御モード間の切り替え
-
-slaver.sdo_write(0x6060, 0, struct.pack('<B', 1))  # モードを位置制御に設定
-print("✅ 位置制御モードの設定に成功しました")
+slaver.sdo_write(0x6060, 0, struct.pack('<B', 1))  # Set mode to position control
+print("✅ Successfully set position control mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
 
-
-slaver.sdo_write(0x6060, 0, struct.pack('<B', 3))  # モードを速度制御に設定
-print("✅ 速度制御モードの設定に成功しました")
+slaver.sdo_write(0x6060, 0, struct.pack('<B', 3))  # Set mode to velocity control
+print("✅ Successfully set velocity control mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
 
-slaver.sdo_write(0x6060, 0, struct.pack('<B', 4))  # モードをトルク制御に設定
-print("✅ トルク制御モードの設定に成功しました")
+slaver.sdo_write(0x6060, 0, struct.pack('<B', 4))  # Set mode to torque control
+print("✅ Successfully set torque control mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
 
-
-slaver.sdo_write(0x6060, 0, struct.pack('<B', 6))  # モードをホーミングに設定
-print("✅ ホーミングモードの設定に成功しました")
+slaver.sdo_write(0x6060, 0, struct.pack('<B', 6))  # Set mode to homing
+print("✅ Successfully set homing mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
 
-
-slaver.sdo_write(0x6060, 0, struct.pack('<B', 7))  # モードを補間位置モードに設定
-print("✅ 補間位置モードの設定に成功しました")
+slaver.sdo_write(0x6060, 0, struct.pack('<B', 7))  # Set mode to interpolated position mode
+print("✅ Successfully set interpolated position mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
 
-
-slaver.sdo_write(0x6060, 0, struct.pack('<B', 8))  # モードを周期同期位置モードに設定
-print("✅ 周期同期位置モードの設定に成功しました")
+slaver.sdo_write(0x6060, 0, struct.pack('<B', 8))  # Set mode to cyclic synchronous position mode
+print("✅ Successfully set cyclic synchronous position mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
 
-
-slaver.sdo_write(0x6060, 0, struct.pack('<B', 0))  # モードをモードなしに設定
-print("✅ モードなしの設定に成功しました")
+slaver.sdo_write(0x6060, 0, struct.pack('<B', 0))  # Set mode to no mode
+print("✅ Successfully set no mode")
 print(f"Current mode: {struct.unpack('<b', slaver.sdo_read(0x6060, 0))[0]}")
 time.sleep(1)
 
+# Set necessary parameters for control configuration
 
-# 制御設定に必要なパラメータを設定
-slaver.sdo_write(0x607F, 0, struct.pack('<I', 1000000))  # 最大位置範囲
-print(f"Position range: {slaver.sdo_read(0x607F, 0)[0]}")
-slaver.sdo_write(0x6081, 0, struct.pack('<I', 1000000))  # 最大速度
-print(f"Maximum velocity: {slaver.sdo_read(0x6081, 0)[0]}")
-slaver.sdo_write(0x6083, 0, struct.pack('<I', 1000))     # 最大加速度
-print(f"Maximum acceleration: {slaver.sdo_read(0x6083, 0)[0]}")
-print("✅ サーボパラメータの設定に成功しました")
+slaver.sdo_write(0x607F, 0, struct.pack('<I', 1000000))  # Maximum position range
+print(f"Position range: {slaver.sdo_read[0x607F, 0](0)}")
+slaver.sdo_write(0x6081, 0, struct.pack('<I', 1000000))  # Maximum velocity
+print(f"Maximum velocity: {slaver.sdo_read[0x6081, 0](0)}")
+slaver.sdo_write(0x6083, 0, struct.pack('<I', 1000))     # Maximum acceleration
+print(f"Maximum acceleration: {slaver.sdo_read[0x6083, 0](0)}")
+print("✅ Successfully set servo parameters")
 
+# Configure receive PDO mapping (1600h) - Master to slave
 
-# 受信PDOマッピング（1600h）を設定 - マスターからスレーブへ
-slaver.sdo_write(0x1600, 0, struct.pack('<B', 0))  # 既存のマッピングをクリア
-slaver.sdo_write(0x1600, 1, struct.pack('<I', 0x60400010))  # 制御ワード（6040h、16ビット）
-slaver.sdo_write(0x1600, 2, struct.pack('<I', 0x607A0020))  # 目標位置（607Ah、32ビット）
-slaver.sdo_write(0x1600, 0, struct.pack('<B', 2))  # マッピング数を設定
+slaver.sdo_write(0x1600, 0, struct.pack('<B', 0))  # Clear existing mapping
+slaver.sdo_write(0x1600, 1, struct.pack('<I', 0x60400010))  # Control word (6040h, 16-bit)
+slaver.sdo_write(0x1600, 2, struct.pack('<I', 0x607A0020))  # Target position (607Ah, 32-bit)
+slaver.sdo_write(0x1600, 0, struct.pack('<B', 2))  # Set mapping count
 
-# 送信PDOマッピング（1A00h）を設定 - スレーブからマスターへ
-slaver.sdo_write(0x1A00, 0, struct.pack('<B', 0))  # 既存のマッピングをクリア
-slaver.sdo_write(0x1A00, 1, struct.pack('<I', 0x60410010))  # ステータスワード（6041h、16ビット）
-slaver.sdo_write(0x1A00, 2, struct.pack('<I', 0x60640020))  # 実際の位置（6064h、32ビット）
-slaver.sdo_write(0x1A00, 0, struct.pack('<B', 2))  # マッピング数を設定
-print("✅ PDOマッピング設定が完了しました")
+# Configure transmit PDO mapping (1A00h) - Slave to master
+
+slaver.sdo_write(0x1A00, 0, struct.pack('<B', 0))  # Clear existing mapping
+slaver.sdo_write(0x1A00, 1, struct.pack('<I', 0x60410010))  # Status word (6041h, 16-bit)
+slaver.sdo_write(0x1A00, 2, struct.pack('<I', 0x60640020))  # Actual position (6064h, 32-bit)
+slaver.sdo_write(0x1A00, 0, struct.pack('<B', 2))  # Set mapping count
+print("✅ PDO mapping configuration completed")
 
 print(f"Slave state: {slaver.state}")
 
-print("EtherCAT通信テストが完了しました")
+print("EtherCAT communication test completed")
+
 ```
+
 </details>
 
 <div align="center">
@@ -760,13 +779,13 @@ print("EtherCAT通信テストが完了しました")
     src="https://files.seeedstudio.com/wiki/robotics/software/ethercat/python.png" />
 </div>
 
-
 :::info
 Before running the Python script, you need to install the pysoem library:
+
 ```bash
 pip3 install pysoem
 
-# sudoでPythonサンプルを実行
+# Run Python example with sudo
 sudo python3 ethercat_python.py
 ```
 
