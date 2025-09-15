@@ -6,7 +6,7 @@ keywords:
 - Thor
 - Robotics
 - Seeed
-image: https://files.seeedstudio.com/wiki/other/2025-10hackathon.png
+image: https://files.seeedstudio.com/wiki/other/cover1.png
 slug: /fine_tune_gr00t_n1.5_for_lerobot_so_arm_and_deploy_on_jetson_thor
 last_update:
   date: 2025-9-11
@@ -25,7 +25,13 @@ This wiki explains how to **fine-tune NVIDIA Isaac GR00T N1.5** for the **LeRobo
 - Example workflows for deploying the trained GR00T N1.5 policy (LeRobot + SO-101) on Jetson Thor  
 - Troubleshooting tips and common pitfalls  
 
-Detailed, step-by-step instructions and reference documentation are provided to help you go from initial setup to full deployment.
+<div align="center">
+  <img width ="1000" src="https://files.seeedstudio.com/wiki/other/cover1.png"/>
+</div>
+
+<p></p>
+
+**Detailed, step-by-step instructions and reference documentation are provided to help you go from initial setup to full deployment.**
 
 ## Getting Started with NVIDIA Jetson Thor Developer Kit
 
