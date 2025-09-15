@@ -25,7 +25,8 @@ no_comments: false # for Disqus
 
 ### 硬件要求
 
-<table align="center">
+<div class="table-center">
+ <table align="center">
  <tr>
   <th>reComputer R1125</th>
   <th>reComputer AI R2130</th>
@@ -53,7 +54,8 @@ no_comments: false # for Disqus
     </a>
    </div></td>
   </tr>
-</table>
+ </table>
+</div>
 
 ## 下载Zoneminder
 
