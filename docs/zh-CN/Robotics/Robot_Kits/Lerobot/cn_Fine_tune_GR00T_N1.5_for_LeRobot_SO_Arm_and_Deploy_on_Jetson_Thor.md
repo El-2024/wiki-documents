@@ -6,7 +6,7 @@ keywords:
 - Thor
 - Robotics
 - Seeed
-image: https://files.seeedstudio.com/wiki/other/2025-10hackathon.png
+image: https://files.seeedstudio.com/wiki/other/cover1.png
 slug: /cn/fine_tune_gr00t_n1.5_for_lerobot_so_arm_and_deploy_on_jetson_thor
 last_update:
   date: 2025-9-11
@@ -25,7 +25,13 @@ last_update:
 - 在 Jetson Thor 上部署训练好的 GR00T N1.5 策略（LeRobot + SO-101）的示例工作流程
 - 故障排除技巧和常见陷阱
 
-提供详细的分步说明和参考文档，帮助您从初始设置到完整部署。
+<div align="center">
+  <img width ="1000" src="https://files.seeedstudio.com/wiki/other/cover1.png"/>
+</div>
+
+<p></p>
+
+**提供详细的分步说明和参考文档，帮助您从初始设置到全面部署。**
 
 ## NVIDIA Jetson Thor 开发者套件入门
 
