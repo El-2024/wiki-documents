@@ -14,14 +14,14 @@ last_update:
   date: 7/2/2025
   author: Jason
 sidebar_position: 3
---- 
+---
 
 以下のサンプルコードはPlatformIO用に設計されていますが、nRF Connect SDKとも互換性があります。
 
 :::tip
 VS Codeベースで、nRF Connect SDKで以下のケースを使用したい場合は、提供されたリンクを参照して、app.overlayファイルを追加し、prj.confの内容を変更してください。
 
-[XIAO nRF54L15 オーバーレイファイルの追加とconfファイルの変更](http://192.168.31.44:3000/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
+[XIAO nRF54L15 オーバーレイファイルの追加とconfファイルの変更](https://wiki.seeedstudio.com/ja/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
 
 :::
 
@@ -29,7 +29,7 @@ VS Codeベースで、nRF Connect SDKで以下のケースを使用したい場�
 
 Bluetooth Low Energy Observerロール機能を実演するシンプルなアプリケーションです。アプリケーションは定期的に近くのデバイスをスキャンします。デバイスが見つかった場合、デバイスのアドレス、RSSI値、アドバタイジングタイプ、アドバタイジングデータ長をコンソールに出力します。
 
-使用するBluetooth Low Energyコントローラが拡張スキャンをサポートしている場合、プロジェクト設定ファイル`prj.conf`で`CONFIG_BT_EXT_ADV`を有効にできます。詳細については、プロジェクト設定ファイルを参照してください。
+使用するBluetooth Low Energy ControllerがExtended Scanningをサポートしている場合、プロジェクト設定ファイル`prj.conf`で`CONFIG_BT_EXT_ADV`を有効にできます。詳細については、プロジェクト設定ファイルを参照してください。
 
 <div style={{textAlign:'center'}}>
     <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/obersever.png" alt="XIAO nRF54L15 Observer" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
@@ -232,7 +232,7 @@ int observer_start(void)
 
 ### BLE Advertisingソフトウェアのインストール
 
-この例では、携帯電話に公式のBluetoothテスト[アプリ](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile)であるnRF Connectをダウンロードする必要があります。
+この例では、携帯電話に公式Bluetoothテスト[アプリ](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile)であるnRF Connectをダウンロードする必要があります。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/nrfconnect_app.png" style={{width:600, height:'auto'}}/></div>
 XIAO nRF54L15 Senseボードにプログラムをフラッシュした後、nRF Connectアプリのメインページを開いて操作できます。
@@ -846,9 +846,9 @@ int write_cmd(struct bt_conn *conn)
 
 :::note
 
-- `write_cmd_cb:` bt_gatt_write_without_response_cbのコールバック関数。書き込み回数、長さ、およびデータレート（bps）を計算して出力します。最後にデータを受信してから1秒を超えた場合、これらのメトリクスをリセットします。
+- `write_cmd_cb:` bt_gatt_write_without_response_cbのコールバック関数。書き込み回数、長さ、およびビット毎秒（bps）でのデータレートを計算して出力します。最後にデータが受信されてからの時間が1秒を超えた場合、これらのメトリクスをリセットします。
 
-- `mtu_exchange_cb:` MTU（Maximum Transmission Unit）交換手順後に呼び出されるコールバック関数。交換が成功したか失敗したかを出力し、新しいMTUサイズを表示します。
+- `mtu_exchange_cb:` MTU（最大転送単位）交換手順後に呼び出されるコールバック関数。交換が成功したか失敗したかを出力し、新しいMTUサイズを表示します。
 - `mtu_exchange:`MTU交換手順を開始します。まず現在のMTUを印刷し、その後mtu_exchange_cbをコールバックとして使用してMTU交換を試行します。
 
 - `connected:`接続が確立されたときに実行されるコールバック関数です。接続されたデバイスのアドレスとその役割を印刷します。その後、接続への参照を保存し、MTU交換を開始します。セキュリティが有効な場合、セキュリティレベルの設定を試行します。

@@ -14,44 +14,44 @@ sidebar_position: 1
 
 # Seeed Studio XIAO nRF54L15 Sense 内置传感器的使用
 
-以下示例代码是为 PlatformIO 设计的，但也与 nRF Connect SDK 兼容。
+以下示例代码专为 PlatformIO 设计，但也与 nRF Connect SDK 兼容。
 
 :::tip
 基于 VS Code，如果您想在 nRF Connect SDK 上使用以下案例，请参考提供的连接，添加 app.overlay 文件并修改 prj.conf 中的内容
 
-[XIAO nRF54L15 添加覆盖文件并修改配置文件](http://192.168.31.44:3000/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
+[XIAO nRF54L15 添加 overlay 文件并修改 conf 文件](https://wiki.seeedstudio.com/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
 
 :::
 
 ## XIAO nRF54L15 Sense IMU
 
-**6 轴 IMU（惯性测量单元）** 传感器如 **LSM6DS3TR-C** 集成了加速度计和陀螺仪，用于测量物体在三维空间中的运动和方向。具体来说，LSM6DS3TR-C 具有以下特性：
+**6轴 IMU（惯性测量单元）** 传感器如 **LSM6DS3TR-C** 集成了加速度计和陀螺仪，用于测量物体在三维空间中的运动和方向。具体来说，LSM6DS3TR-C 具有以下特性：
 
 **加速度计功能：**
 
-- 测量物体沿 X、Y 和 Z 轴的加速度。它能够感知物体运动（例如，静止、加速、减速）和倾斜变化（例如，物体的角度）。
+- 测量物体沿 X、Y 和 Z 轴的加速度。能够感知物体运动（例如，静止、加速、减速）和倾斜变化（例如，物体的角度）。
 - 可用于检测步态、位置变化、振动等。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/xyz1.5.jpg" style={{width:320, height:'auto'}}/></div>
 
-**陀螺仪功能（Gyroscope）：**
+**陀螺仪功能：**
 
 - 测量物体围绕 X、Y 和 Z 轴的角速度，即物体的旋转。
 - 可用于检测旋转、旋转速率和方向变化。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/xyz2.0.jpg" style={{width:320, height:'auto'}}/></div>
 
-- **X 轴角度（Roll）** 是围绕 X 轴旋转方向的角度。
-- **Y 轴角度（Pitch）** 是围绕 Y 轴旋转方向的角度。
-- **Z 轴角度（Yaw）** 是围绕 Z 轴旋转方向的角度。
+- **X轴角度（Roll）** 是围绕 X 轴旋转方向的角度。
+- **Y轴角度（Pitch）** 是围绕 Y 轴旋转方向的角度。
+- **Z轴角度（Yaw）** 是围绕 Z 轴旋转方向的角度。
 
 ### IMU 驱动程序
 
-为了简化您的开发体验并确保快速启动此 IMU 程序，我们利用了 PlatformIO 平台来编写必要的驱动程序代码。PlatformIO 为嵌入式开发提供了一个全面而高效的环境，使其成为 XIAO nRF54L15 Sense 的理想选择。
+为了简化您的开发体验并确保快速开始使用此 IMU 程序，我们利用了 PlatformIO 平台来编写必要的驱动程序代码。PlatformIO 为嵌入式开发提供了一个全面而高效的环境，使其成为 XIAO nRF54L15 Sense 的理想选择。
 
-在继续之前，请确保您的开发环境已正确设置。如果您尚未将 Seeed Studio XIAO nRF54L15 开发板添加到您的 PlatformIO 配置中，请参考此[链接](http://localhost:3000/xiao_nrf54l15_with_platform_io/)获取如何配置它的详细说明。这个关键步骤将使 PlatformIO 能够正确识别并为您的开发板编译代码。
+在继续之前，请确保您的开发环境已正确设置。如果您尚未将 Seeed Studio XIAO nRF54L15 开发板添加到您的 PlatformIO 配置中，请参考此[链接](http://localhost:3000/xiao_nrf54l15_with_platform_io/)获取如何配置的详细说明。这个关键步骤将使 PlatformIO 能够正确识别并为您的开发板编译代码。
 
-- 一旦您的环境准备就绪，IMU 驱动程序将允许您从 LSM6DS3TR-C 读取原始传感器数据。这些数据包括：
+- 一旦您的环境准备就绪，IMU 驱动程序将允许您从 LSM6DS3TR-C 读取原始传感器数据。此数据包括：
 
 - 加速度计原始值（accel raw）：表示沿 X、Y 和 Z 轴的加速度。
 
@@ -59,14 +59,14 @@ sidebar_position: 1
 
 触发计数（trig_cnt）：一个随每个新数据样本递增的计数器。
 
-以下是您可以从 IMU 看到的串行输出示例，如 PlatformIO 设备监视器中显示的那样。此输出提供加速度计和陀螺仪数据的实时读数，这对于理解设备的运动和方向至关重要。
+以下是您可以从 IMU 期望看到的串行输出示例，如 PlatformIO 设备监视器中显示的那样。此输出提供加速度计和陀螺仪数据的实时读数，这对于理解设备的运动和方向至关重要。
 
 <div style={{textAlign:'center'}}>
     <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/imu_display.png" alt="XIAO nRF54L15 BLE Advertising Power Consumption" style={{width:1000, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
-    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em> 来自 PlatformIO 设备监视器的实时 IMU 数据输出，显示原始加速度计和陀螺仪读数。</em></p>
+    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>来自 PlatformIO 设备监视器的实时 IMU 数据输出，显示原始加速度计和陀螺仪读数。</em></p>
 </div>
 
-这些原始数据通过应用适当的算法（例如，滤波、传感器融合）构成了各种应用的基础，从简单的运动检测到复杂的方向跟踪。
+这些原始数据通过应用适当的算法（例如，滤波、传感器融合），为各种应用奠定了基础，从简单的运动检测到复杂的方向跟踪。
 
 ---
 
@@ -269,29 +269,29 @@ int main(void)
 
 ## XIAO nRF54L15 Sense 麦克风
 
-**MSM261DGT006** 是一个数字麦克风（DMIC），输出脉冲密度调制（PDM）数据，使其适合与 XIAO nRF54L15 Sense 等微控制器直接进行数字接口连接。我们的 DMIC 驱动程序专门设计用于处理这种 PDM 输出，将其转换为可用的音频采样，并为各种应用进行处理。
+**MSM261DGT006** 是一个数字麦克风（DMIC），输出脉冲密度调制（PDM）数据，使其适合与 XIAO nRF54L15 Sense 等微控制器进行直接数字接口连接。我们的 DMIC 驱动程序专门设计用于处理这种 PDM 输出，将其转换为可用的音频采样，并为各种应用进行处理。
 
 驱动程序初始化麦克风，设置适当的采样率（例如，标准音频为 16000 Hz），并配置 PDM 时钟频率。然后它持续从麦克风读取采样缓冲区，允许实时音频捕获。
 
-在 PlatformIO 设备监视器中查看时，DMIC 驱动程序的输出提供了关于麦克风操作和传入音频数据的重要信息。您将观察到的关键消息包括：
+当在 PlatformIO 设备监视器中查看时，DMIC 驱动程序的输出提供了关于麦克风操作和传入音频数据的重要信息。您将观察到的关键消息包括：
 
 - `DMIC sample=:`：表示 DMIC 采样过程的开始。
 
-- `PCM output rate:` 16000, channels: 1：确认音频输出设置，通常为 16 kHz 的采样率和单声道音频。
+- `PCM output rate: 16000, channels: 1`：确认音频输出设置，通常为 16 kHz 的采样率和单声道音频。
 
-- `dmic_nrf_pdm:` PDM clock frequency: 1280000, actual PCM rate: 16000：显示内部 PDM 时钟频率和生成的 PCM 音频采样率。
+- `dmic_nrf_pdm: PDM clock frequency: 1280000, actual PCM rate: 16000`：显示内部 PDM 时钟频率和生成的 PCM 音频采样率。
 
-- `got buffer 0x... of 3200 bytes:`：确认驱动程序成功从麦克风接收到音频数据缓冲区。显示十六进制地址（例如，0x20004C8）和字节大小（例如，3200 字节）。这些缓冲区包含可以进行处理或分析的原始音频采样。
+- `got buffer 0x... of 3200 bytes:`：确认驱动程序成功从麦克风接收到音频数据缓冲区。显示十六进制地址（例如 0x20004C8）和字节大小（例如 3200 字节）。这些缓冲区包含可以进行处理或分析的原始音频采样。
 
 - `dmix_sample: Exiting:`：表示 DMIC 采样过程已停止。
 
-以下是在 DMIC 驱动程序运行时，您可以在 PlatformIO 设备监视器中看到的典型输出示例，说明了音频数据的成功捕获和缓冲。
+以下是当 DMIC 驱动程序运行时，您可以在 PlatformIO 设备监视器中看到的典型输出示例，说明了音频数据的成功捕获和缓冲。
 
 ### DMIC 驱动程序
 
-一旦捕获，这些原始音频数据可用于广泛的应用，包括语音命令、声音事件检测、环境噪声监测以及更复杂的音频处理任务。
+这些原始音频数据一旦被捕获，就可以用于广泛的应用，包括语音命令、声音事件检测、环境噪声监测以及更复杂的音频处理任务。
 
-以下代码示例演示了如何使用 XIAO nRF54L15 板上的按钮录制音频，并将录制的 WAV 文件保存到计算机上。
+以下代码示例演示了如何使用 XIAO nRF54L15 板上的按钮录制音频，并将录制的 WAV 文件保存在计算机上。
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/platform-seeedboards/tree/main/examples/zephyr-dmic-recorder">
@@ -394,10 +394,10 @@ void uart_writer_thread(void *p1, void *p2, void *p3)
             send_packet_poll(packet_end, sizeof(packet_end));
             continue;
         }
-
+        
         uart_tx(console_dev, buffer, CHUNK_SIZE_BYTES, SYS_FOREVER_US);
         k_sem_take(&tx_done_sem, K_FOREVER);
-
+        
         k_mem_slab_free(&mem_slab, buffer);
     }
 }
@@ -535,7 +535,7 @@ int main(void)
 }
 ```
 
-接下来，在 scripts 文件夹目录中打开终端并执行以下操作，前提是程序已经烧录完成。
+接下来，在 scripts 文件夹目录中打开终端并执行以下操作，前提是程序已经被烧录。
 
 **步骤 1:**
 
@@ -550,11 +550,11 @@ int main(void)
 :::
 **步骤 3:**
 
-- 执行命令后，系统会提示您按下按钮开始录音。
+- 执行命令后，系统将提示您按下按钮来录制声音。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/dmic_record1.jpg" style={{width:900, height:'auto'}}/></div>
 
-录制音频后，文件将保存在 scripts 文件夹中
+录制音频后，文件将保存在 scripts 中
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/dmic_record2.jpg" style={{width:500, height:'auto'}}/></div>
 
 ## 技术支持与产品讨论

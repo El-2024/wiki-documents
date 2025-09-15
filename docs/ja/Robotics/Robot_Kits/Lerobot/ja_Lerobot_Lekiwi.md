@@ -1,6 +1,6 @@
 ---
 description: このwikiは、LekiwiとLerobotフレームワーク内でのデータ収集とトレーニングを実現するための組み立てとデバッグのチュートリアルを提供します。
-title: LerobotでLekiwiを使用する方法
+title: LerobotでのLekiwi
 keywords:
 - Lerobot
 - Huggingface
@@ -17,13 +17,13 @@ last_update:
 
 :::tip
 
-このチュートリアルリポジトリは、2025年6月5日時点で検証済みの安定版Lerobotを維持しています。現在、​Hugging Face​はLerobotの​メジャーアップグレード​をリリースし、多くの新機能を導入しています。最新のチュートリアルを体験したい場合は、[​公式ドキュメント​のガイダンス](https://huggingface.co/docs/lerobot/index)に従ってください。
+このチュートリアルリポジトリは、2025年6月5日時点でのLerobotの検証済み安定版リリースを維持しています。現在、​Hugging Face​はLerobotの​メジャーアップグレード​をロールアウトし、多くの新機能を導入しています。最新のチュートリアルを体験したい場合は、[​公式ドキュメント​のガイダンス](https://huggingface.co/docs/lerobot/index)に従ってください。
 
 :::
 
-## 概要
+## はじめに
 
-[Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi)は、[SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC)によって開始された完全オープンソースのロボットカープロジェクトです。詳細な3Dプリントファイルと操作ガイドが含まれており、[LeRobot](https://github.com/huggingface/lerobot/tree/main)模倣学習フレームワークとの互換性を持つように設計されています。SO101ロボットアームをサポートして、完全な模倣学習パイプラインを実現します。
+[Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi)は、[SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC)によって開始された完全オープンソースのロボットカープロジェクトです。詳細な3Dプリントファイルと操作ガイドが含まれており、[LeRobot](https://github.com/huggingface/lerobot/tree/main)模倣学習フレームワークとの互換性を持つように設計されています。SO101ロボットアームをサポートして、完全な模倣学習パイプラインを可能にします。
 
   <div align="center">
       <img width={800}
@@ -36,20 +36,20 @@ last_update:
 
 ## 主な特徴
 
-1. **オープンソースで低コスト**: [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi)からのオープンソース、低コストのロボットカーソリューションです
-2. **LeRobotとの統合**: [LeRobotプラットフォーム](https://github.com/huggingface/lerobot)との統合を目的として設計されています
-3. **豊富な学習リソース**: 組み立てと校正ガイド、テスト、データ収集、トレーニング、デプロイメントのチュートリアルなど、包括的なオープンソース学習リソースを提供し、ユーザーが迅速に開始してロボットアプリケーションを開発できるよう支援します。
-4. **Nvidiaとの互換性**: このアームキットをreComputer Mini J4012 Orin NX 16 GBでデプロイします。
-5. **マルチシーンアプリケーション**: 教育、科学研究、自動化生産、ロボット工学などの分野に適用可能で、ユーザーが様々な複雑なタスクで効率的で精密なロボット操作を実現するのに役立ちます。
+1. **オープンソースで低コスト**：[Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi)からのオープンソース、低コストのロボットカーソリューションです
+2. **LeRobotとの統合**：[LeRobotプラットフォーム](https://github.com/huggingface/lerobot)との統合を目的として設計されています
+3. **豊富な学習リソース**：組み立てとキャリブレーションガイド、テスト、データ収集、トレーニング、デプロイメントのチュートリアルなど、包括的なオープンソース学習リソースを提供し、ユーザーが迅速に開始してロボットアプリケーションを開発できるよう支援します。
+4. **Nvidiaとの互換性**：reComputer Mini J4012 Orin NX 16 GBでこのアームキットをデプロイします。
+5. **マルチシーンアプリケーション**：教育、科学研究、自動化生産、ロボット工学などの分野に適用可能で、ユーザーが様々な複雑なタスクで効率的で精密なロボット操作を実現するのを支援します。
 
 :::caution
 
-Seeed Studioはハードウェア自体の品質についてのみ責任を負います。チュートリアルは公式ドキュメントに厳密に従って更新されます。解決できないソフトウェアの問題や環境依存の問題に遭遇した場合は、[LeRobotプラットフォーム](https://github.com/huggingface/lerobot)または[LeRobot Discordチャンネル](https://discord.gg/8TnwDdjFGU)に速やかに問題を報告してください。
+Seeed Studioは、ハードウェア自体の品質についてのみ責任を負います。チュートリアルは公式ドキュメントに厳密に従って更新されます。解決できないソフトウェアの問題や環境依存の問題に遭遇した場合は、[LeRobotプラットフォーム](https://github.com/huggingface/lerobot)または[LeRobot Discordチャンネル](https://discord.gg/8TnwDdjFGU)に速やかに問題を報告してください。
 :::
 
 :::danger
 
-- LeKiwiシャーシのすべてのサーボモーターには12V電源が必要です。5Vロボットアームをお持ちのユーザーには、12V-5V降圧コンバーターモジュールを提供します。回路の改造が必要になることにご注意ください。
+- LeKiwiシャーシのすべてのサーボモーターは12V電源を必要とします。5Vロボットアームをお持ちのユーザーには、12Vから5Vへの降圧コンバーターモジュールを提供します。回路の改造が必要になることにご注意ください。
 
 - 12V電源 - 必要に応じてチェックアウト時にこのオプションを選択できます。すでに12V電源をお持ちの場合は、このオプションをスキップして、電源の出力コネクタを5521 DCプラグに変換するだけで済みます。
 
@@ -75,13 +75,13 @@ Seeed Studioはハードウェア自体の品質についてのみ責任を負�
 | STS3215 1:345 12V サーボモーター | 3 | ✅ |
 | 全方向ホイール/ユニバーサルホイール | 3 | ✅ |
 | Lekiwi 3Dプリント筐体 | 1 | ✅ |
-| DC-DC降圧電源モジュール - 24V/12V to 5V | 1 | ✅ |
-| モーター制御基板 | 1 | ✅ |
-| DCオス to デュアルDCオス 5521 Yケーブル | 1 | ✅ |
-| USBケーブル;Type C 2.0 to Type C 2.0-ブラック;L150mm| 1 | ✅ |
-| USB 3.1 Type C to A ケーブル 0.5メートル | 1 | ✅ |
+| DC-DC降圧電源モジュール - 24V/12Vから5V | 1 | ✅ |
+| モーター制御ボード | 1 | ✅ |
+| DCオスからデュアルDCオス5521 Yケーブル | 1 | ✅ |
+| USBケーブル;Type C 2.0からType C 2.0-ブラック;L150mm| 1 | ✅ |
+| USB 3.1 Type CからAケーブル 0.5メートル | 1 | ✅ |
 | プラグ電源アダプター;ブラック-12V-2A AC/DC | 1 | ✅ |
-| M2 M3 M4 各種ネジ | 十分な量 | ✅ |
+| M2 M3 M4 各種ネジ | 十分 | ✅ |
 | Raspberry pi | 1 | オプション |
 | USBカメラ | 1 | オプション |
 | 深度カメラ | 2 | オプション |
@@ -107,32 +107,32 @@ Seeed Studioはハードウェア自体の品質についてのみ責任を負�
 
 - Raspberry Pi5 4G~16G
 
-## 3Dプリンティングガイド
+## 3Dプリントガイド
 
 ### パーツ
 
-以下の3Dプリント部品用のプリント可能なSTLファイルを提供しています。これらは一般的なPLAフィラメントを使用して、コンシューマーグレードのFDMプリンターで印刷できます。Bambu Lab P1Sプリンターでテストしました。すべてのコンポーネントについて、bambuslicer に読み込み、自動回転と自動配置を行い、推奨されるサポートを有効にして印刷するだけです。
+以下の3Dプリント部品用のプリント準備済みSTLファイルを提供しています。これらは一般的なPLAフィラメントを使用してコンシューマーグレードのFDMプリンターで印刷できます。Bambu Lab P1Sプリンターでテストしました。すべてのコンポーネントについて、bambuslicer に読み込み、自動回転と自動配置を行い、推奨されるサポートを有効にして印刷します。
 
-| アイテム | 数量 | 備考 |
+| アイテム | 数量 | 注記 |
 |:---|:---:|:---:|
 | [ベースプレート上部](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/base_plate_layer2.stl) | 1 | |
 | [ベースプレート下部](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/base_plate_layer1.stl) | 1 | |
-| [駆動モーターマウント](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/drive_motor_mount_v2.stl) | 3 | |
+| [ドライブモーターマウント](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/drive_motor_mount_v2.stl) | 3 | |
 | [サーボホイールハブ](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/servo_wheel_hub.stl) | 3 | サポートを使用|
 | [RasPiケース上部](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/pi_case_top.stl) | 1 | 2|
 | [RasPiケース下部](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/pi_case_bottom.stl) | 1 | |
-| Arducam [ベースマウント](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/base_camera_mount.stl) と [リストマウント](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/wrist_camera_mount.stl)| 1 | **[このカメラ](https://www.amazon.com/Arducam-Camera-Computer-Without-Microphone/dp/B0972KK7BC)と互換性あり** |
-| Webカメラ [ベースマウント](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/webcam_mount/webcam_mount.stl)、[グリッパーインサート](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/webcam_mount/so100_gripper_cam_mount_insert.stl)、および [リストマウント](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/webcam_mount/webcam_mount_wrist.stl) | 1 | **[このカメラ](https://www.amazon.fr/Vinmooog-equipement-Microphone-Enregistrement-conférences/dp/B0BG1YJWFN/)と互換性あり** |
+| Arducam [ベースマウント](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/base_camera_mount.stl)と[リストマウント](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/wrist_camera_mount.stl)| 1 | **[このカメラ](https://www.amazon.com/Arducam-Camera-Computer-Without-Microphone/dp/B0972KK7BC)と互換性あり** |
+| Webcam [ベースマウント](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/webcam_mount/webcam_mount.stl)、[グリッパーインサート](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/webcam_mount/so100_gripper_cam_mount_insert.stl)、[リストマウント](https://github.com/SIGRobotics-UIUC/LeKiwi/blob/main/3DPrintMeshes/webcam_mount/webcam_mount_wrist.stl) | 1 | **[このカメラ](https://www.amazon.fr/Vinmooog-equipement-Microphone-Enregistrement-conférences/dp/B0BG1YJWFN/)と互換性あり** |
 
-### 印刷パラメータ
+### プリントパラメータ
 
-提供されているSTLファイルは、多くのFDMプリンターで印刷できる状態になっています。以下はテスト済みで推奨される設定ですが、他の設定でも動作する可能性があります。
+提供されるSTLファイルは、多くのFDMプリンターでプリント準備ができています。以下はテスト済みで推奨される設定ですが、他の設定でも動作する可能性があります。
 
 - 材料: PLA+
 - ノズル径と精度: 0.2mmノズル径、0.2mmレイヤー高さ
 - インフィル密度: 15%  
-- 印刷速度: 150 mm/s
-- 必要に応じて、Gコード（スライスファイル）をプリンターにアップロードして印刷してください
+- プリント速度: 150 mm/s
+- 必要に応じて、Gコード（スライスファイル）をプリンターにアップロードしてプリント
 
 ## LeRobotのインストール
 
@@ -147,57 +147,9 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
 ```
 
-### 2. シェルを再起動
+### 2. シェルの再起動
 
-シェルに以下をコピー＆ペーストしてください：`source ~/.bashrc` または Mac の場合：`source ~/.bash_profile` または zshell を使用している場合は `source ~/.zshrc`
-
-### 3. lerobot 用の新しい conda 環境を作成してアクティベート
-
-```bash
-conda create -y -n lerobot python=3.10
-```
-
-次に、conda環境をアクティベートします（lerobotを使用するためにシェルを開くたびにこれを実行してください！）：
-
-```bash
-conda activate lerobot
-```
-
-### 4. LeRobotをクローンする
-
-```bash
-git clone https://github.com/huggingface/lerobot.git ~/lerobot
-```
-
-### 5. 環境にffmpegをインストールする
-
-`miniconda`を使用する場合、環境に`ffmpeg`をインストールします：
-
-```bash
-conda install ffmpeg -c conda-forge
-```
-
-### 6. feetechモーター用の依存関係を含むLeRobotをインストール
-
-```bash
-cd ~/lerobot && pip install -e ".[feetech]"
-```
-
-## ラップトップ（PC）にLeRobotをインストール
-
-すでにラップトップにLeRobotをインストールしている場合は、このステップをスキップできます。そうでない場合は、Piで行ったのと同じ手順に従ってください。
-
-:::tip
-コマンドプロンプト（cmd）をよく使用します。cmdの使用に慣れていない場合や、コマンドラインの使用方法を復習したい場合は、こちらを参照してください：[Command line crash course](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Command_line)
-:::
-
-お使いのコンピューターで：
-
-### 1. [Minicondaをインストール](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)
-
-### 2. シェルを再起動
-
-シェルに以下をコピー＆ペースト：`source ~/.bashrc` またはMacの場合：`source ~/.bash_profile` またはzshellを使用している場合は `source ~/.zshrc`
+シェルにコピー＆ペースト: `source ~/.bashrc` またはMacの場合: `source ~/.bash_profile` またはzshellを使用している場合は `source ~/.zshrc`
 
 ### 3. lerobot用の新しいconda環境を作成してアクティベート
 
@@ -205,19 +157,19 @@ cd ~/lerobot && pip install -e ".[feetech]"
 conda create -y -n lerobot python=3.10
 ```
 
-次に、conda環境をアクティベートします（lerobotを使用するためにシェルを開くたびにこれを実行してください！）：
+次にconda環境をアクティベートします（lerobotを使用するためにシェルを開くたびにこれを実行してください！）：
 
 ```bash
 conda activate lerobot
 ```
 
-### 4. LeRobotをクローンする
+### 4. LeRobotのクローン
 
 ```bash
-git clone https://github.com/ZhuYaoHui1998/lerobot ~/lerobot
+git clone https://github.com/huggingface/lerobot.git ~/lerobot
 ```
 
-### 5. 環境にffmpegをインストールする
+### 5. 環境にffmpegをインストール
 
 `miniconda`を使用する場合、環境に`ffmpeg`をインストールします：
 
@@ -225,7 +177,55 @@ git clone https://github.com/ZhuYaoHui1998/lerobot ~/lerobot
 conda install ffmpeg -c conda-forge
 ```
 
-### 6. feetechモーター用の依存関係を含むLeRobotをインストール
+### 6. feetechモーター用の依存関係を含むLeRobotのインストール
+
+```bash
+cd ~/lerobot && pip install -e ".[feetech]"
+```
+
+## ラップトップ(PC)にLeRobotをインストール
+
+すでにラップトップにLeRobotをインストールしている場合は、このステップをスキップできます。そうでなければ、Piで行ったのと同じステップに従ってください。
+
+:::tip
+コマンドプロンプト（cmd）をかなり多く使用します。cmdの使用に慣れていない場合や、コマンドラインの使用を復習したい場合は、こちらを参照してください：[コマンドラインクラッシュコース](https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Command_line)
+:::
+
+コンピューター上で：
+
+### 1. [Minicondaのインストール](https://docs.anaconda.com/miniconda/install/#quick-command-line-install)
+
+### 2. シェルの再起動
+
+シェルにコピー＆ペースト: `source ~/.bashrc` またはMacの場合: `source ~/.bash_profile` またはzshellを使用している場合は `source ~/.zshrc`
+
+### 3. lerobot用の新しいconda環境を作成してアクティベート
+
+```bash
+conda create -y -n lerobot python=3.10
+```
+
+次にconda環境をアクティベートします（lerobotを使用するためにシェルを開くたびにこれを実行してください！）：
+
+```bash
+conda activate lerobot
+```
+
+### 4. LeRobotのクローン
+
+```bash
+git clone https://github.com/ZhuYaoHui1998/lerobot ~/lerobot
+```
+
+### 5. 環境にffmpegをインストール
+
+`miniconda`を使用する場合、環境に`ffmpeg`をインストールします：
+
+```bash
+conda install ffmpeg -c conda-forge
+```
+
+### 6. feetechモーター用の依存関係を含むLeRobotのインストール
 
 ```bash
 cd ~/lerobot && pip install -e ".[feetech]"
@@ -234,7 +234,7 @@ cd ~/lerobot && pip install -e ".[feetech]"
 ## 組み立て
 
 <details>
-<summary>Lekiwiを組み立てる</summary>
+<summary>Lekiwiの組み立て</summary>
 
 ### ビデオチュートリアル
 
@@ -245,7 +245,6 @@ cd ~/lerobot && pip install -e ".[feetech]"
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/62_JWFpvJyA?si=0YCwKUJgy0YVL-A0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/r0LtrTidWdA?si=MEdIJ5XzI8-wbpDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
@@ -275,11 +274,11 @@ cd ~/lerobot && pip install -e ".[feetech]"
 
 **A. 12本のm2x6タップスクリューを使用して、駆動モーターをモーターマウントに取り付けます。**
 
-| **ステップ1** | **ステップ2** |
+| **ステップ 1** | **ステップ 2** |
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/2.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/3.jpg) |
 
-**B. 12本のm3x16機械ネジを使用して、ドライブモーターマウントをボトムベースプレートにネジ止めします。**
+**B. 12本のm3x16機械ねじを使用して、駆動モーターマウントを底面ベースプレートにねじ込みます。**
 
 :::tip
 ID配置を覚えておいてください：8は後輪を表し、7と9はそれぞれ左前輪と右前輪に対応します。
@@ -291,79 +290,79 @@ ID配置を覚えておいてください：8は後輪を表し、7と9はそれ
 
 **C. ホイールハブをオムニホイールに取り付けます。**
 
-**ステップ1とステップ2**：3本のネジを取り外します。
+**ステップ1とステップ2**：3本のねじを取り外します。
 
 | **ステップ 1** | **ステップ 2** |
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/6.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/7.jpg) |
 
-**ステップ3とステップ4**: 9本のm4x18機械ねじを使用して、ホイールハブをオムニホイールに取り付けます。
+**ステップ3とステップ4**：9本のm4x18機械ねじを使用して、ホイールハブをオムニホイールに取り付けます。
 
-| **ステップ3** | **ステップ4** |
+| **ステップ 3** | **ステップ 4** |
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/8.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/9.jpg) |
 
 **D. 6本のm3x16機械ねじを使用して、サーボホーンをホイールハブに取り付けます。**
 
-| **ステップ1** | **ステップ2** |**ステップ3** |
+| **ステップ 1** | **ステップ 2** |**ステップ 3** |
 |:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/10.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/11.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/12.jpg) |
 
-**E. 3本のm3x10機械ねじを使用して、サーボホーンをドライブモーターに取り付けます。**
+**E. 3本のm3x10機械ねじを使用して、サーボホーンを駆動モーターに取り付けます。**
 
-| **Step 1** | **Step 2** |**Step 3** |
+| **ステップ 1** | **ステップ 2** |**ステップ 3** |
 |:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/13.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/14.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/15.jpg) |
 
 **H. サーボドライバーを追加し、すべての回路を接続します。**
 
-| **Step 1** | **Step 2** |**Step 3** |**Step 4** |
+| **ステップ 1** | **ステップ 2** |**ステップ 3** |**ステップ 4** |
 |:---------:|:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/16.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/17.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/18.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/19.jpg) |
 
-| **Step 5** | **Step 6** |**Step 7** |**Step 8** |
+| **ステップ 5** | **ステップ 6** |**ステップ 7** |**ステップ 8** |
 |:---------:|:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/20.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/20-1.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/21.jpg) | ![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/22.jpg) |
 
-**Power IN** は電源に直接接続します（Step8と同様）。一方、**USB-C** ポートはRaspberry Piに5V電源を供給します。
+**Power IN**はステップ8のように電源に直接接続し、**USB-C**ポートはRaspberry Piに5V電源を供給します。
 
-追加の **2ピン端子（5V & 12V）** については：
+追加の**2ピン端子（5V & 12V）**について：
 
-- **7.4V SO10x ロボットアーム** を使用する場合は、**5V出力** から **サーボモーターボード** に電源を供給します。
-- **12V ロボットアーム** を使用する場合は、Step 8のように **DC電源スプリッター** から直接 **サーボモーターボード** に電源を供給します。
+- **7.4V SO10xロボットアーム**を使用する場合は、**5V出力**経由で**サーボモーターボード**に電源を供給します。
+- **12Vロボットアーム**を使用する場合は、ステップ8のように**DCパワースプリッター**から直接**サーボモーターボード**に電源を供給します。
 
 <div align="center">
     <img width={800}
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/23.jpg" />
 </div>
 
-**I. これで、Raspberry Piを車両の2層目トッププレートに取り付けることができます。取り付ける前に、**USB-C電源ケーブル** と **USB-Cサーボモーター通信ケーブル** の両方を接続し、車両のトップパネルから外に配線してください。**
+**I. これで、Raspberry Piを車両の2層目のトッププレートに取り付けることができます。その前に、**USB-C電源ケーブル**と**USB-Cサーボモーター通信ケーブル**の両方を接続し、車両のトップパネルから外に配線してください。**
 
-**Step 1** 電源ケーブルをRaspberry Piに接続し、トップパネルの中央開口部を通して配線します。
+**ステップ1** 電源ケーブルをRaspberry Piに接続し、トップパネルの中央開口部を通して配線します。
 
 |  |  |  |
 |:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/24.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/25.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/26.jpg) |
 
-**ステップ2** シャーシの3つのサーボモーターのうち、1つのサーボには1本のケーブルのみが接続されています。SO10xロボットアームを取り付ける必要がある場合は、以下の手順を実行してください：ロボットアームからID1ケーブルを取り外します。それをシャーシモーターに接続します。予備ケーブルとしてトップパネルを通して配線します
+**ステップ2** シャーシの3つのサーボモーターのうち、1つのサーボには1本のケーブルのみが接続されています。SO10xロボットアームを取り付ける必要がある場合は、以下を行ってください：ロボットアームからID1ケーブルを取り外します。それをシャーシモーターに接続します。予備ケーブルとしてトップパネルを通して配線します
 
 |  | | |
 |:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/27.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/28.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/29.jpg) |
 
-**Step 3** これで、サーボドライバーボードからのUSB-CをRaspberry PiのUSBポートに接続できます。
+**ステップ3** これで、サーボドライバーボードからのUSB-CをRaspberry PiのUSBポートに接続できます。
 
 |  | |
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/30.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/31.jpg) |
 
-**J. 次に、12本のM3×16ネジを使用してRaspberry Piとトッププレートの残りの部品を固定する必要があります。**
+**J. 12本のM3×16ねじを使用して、Raspberry Piとトッププレートの残りの部分を固定する必要があります。**
 
 |  |  |  |
 |:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/32.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/33.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/34.jpg) |
 
-**K. これで、1本のM3x16ネジと4本のM5×25ネジを使用してUSBカメラとFollower Armを取り付けることができます**
+**K. 1本のM3x16と4本のM5×25ねじを使用して、USBカメラとフォロワーアームを取り付けることができます**
 
 |  |  |  |
 |:---------:|:---------:|:---------:|
@@ -379,14 +378,14 @@ ID配置を覚えておいてください：8は後輪を表し、7と9はそれ
 </details>
 
 :::tip
-回路接続を確認してください。組み立て後、LekiwiはRaspberry Pi / Jetsonに接続されている必要があります。リーダーアームはPCに接続されている必要があります。
+回路接続を確認してください。組み立て後、Lekiwiは開発ボード（Raspberry Pi / Jetson）に接続する必要があります。リーダーアームはPCに接続する必要があります。
 
 | Lekiwi --> Raspberry Pi / Jetson |
 
 | リーダーアーム --> PC                |
 :::
 
-## モーターを設定する
+## モーターの設定
 
 ### リーダーアーム
 
@@ -409,9 +408,9 @@ The port of this MotorsBus is /dev/tty.usbmodem575E0032081
 Reconnect the USB cable.
 ```
 
-ポートを識別する際の出力例（例：Macでは `/dev/tty.usbmodem575E0031751`、Linuxでは `/dev/ttyACM0` の可能性があります）：
+ポートを識別する際の出力例（例：Macでは`/dev/tty.usbmodem575E0031751`、Linuxでは`/dev/ttyACM0`の可能性があります）：
 
-ポートを識別する際の出力例（例：`/dev/tty.usbmodem575E0032081`、またはLinuxでは `/dev/ttyACM1` の可能性があります）：
+ポートを識別する際の出力例（例：`/dev/tty.usbmodem575E0032081`、Linuxでは`/dev/ttyACM1`の可能性があります）：
 
 :::tip
 
@@ -421,7 +420,7 @@ Finding all available ports for the MotorBus.
 Remove the USB cable from your MotorsBus and press Enter when done.
 ```
 
-USBを取り外してからEnterキーを押してください。そうしないとインターフェースが検出されません。
+USBを取り外してからEnterキーを押すことを忘れないでください。そうしないとインターフェースが検出されません。
 :::
 
 トラブルシューティング：Linuxでは、以下を実行してUSBポートへのアクセス権を付与する必要がある場合があります：
@@ -430,8 +429,7 @@ USBを取り外してからEnterキーを押してください。そうしない
 sudo chmod 666 /dev/ttyACM0
 sudo chmod 666 /dev/ttyACM1
 ```
-
-コンピューターからリーダーアームのコントローラーボードにUSBケーブルと電源を接続します。その後、以下のコマンドを実行するか、前のステップで取得したポートでAPIの例を実行してください。また、`id`パラメータでリーダーアームに名前を付ける必要があります。
+コンピュータからリーダーアームのコントローラーボードにUSBケーブルと電源を接続します。次に、以下のコマンドを実行するか、前のステップで取得したポートでAPIサンプルを実行します。また、`id`パラメータでリーダーアームに名前を付ける必要があります。
 
 ```bash
 python -m lerobot.setup_motors \
@@ -445,27 +443,27 @@ python -m lerobot.setup_motors \
 Connect the controller board to the 'gripper' motor only and press enter.
 ```
 
-指示に従って、グリッパーのモーターを接続してください。ボードに接続されているモーターがそのモーターのみであること、そしてそのモーター自体がまだ他のモーターにデイジーチェーン接続されていないことを確認してください。[Enter]を押すと、スクリプトが自動的にそのモーターのIDとボーレートを設定します。
+指示に従って、グリッパーのモーターを接続します。ボードに接続されているモーターがそれだけであることを確認し、モーター自体がまだ他のモーターにデイジーチェーン接続されていないことを確認してください。[Enter]を押すと、スクリプトが自動的にそのモーターのIDとボーレートを設定します。
 
-その後、以下のメッセージが表示されるはずです：
+次のメッセージが表示されるはずです：
 
 ```bash
 'gripper' motor id set to 6
 ```
 
-次の指示に従ってください：
+続いて次の指示が表示されます：
 
 ```bash
 Connect the controller board to the 'wrist_roll' motor only and press enter.
 ```
 
-コントローラーボードから3ピンケーブルを取り外すことができますが、もう一方の端のグリッパーモーターには接続したままにしておくことができます。すでに正しい位置にあるためです。次に、別の3ピンケーブルを手首回転モーターに接続し、コントローラーボードに接続します。前のモーターと同様に、ボードに接続されているモーターがそのモーターのみであり、モーター自体が他のモーターに接続されていないことを確認してください。
+コントローラーボードから3ピンケーブルを取り外すことができますが、もう一方の端のグリッパーモーターには接続したままにしておくことができます。すでに正しい位置にあるためです。次に、別の3ピンケーブルを手首ロールモーターに接続し、コントローラーボードに接続します。前のモーターと同様に、ボードに接続されているモーターがそれだけであることを確認し、モーター自体が他のモーターに接続されていないことを確認してください。
 
 :::caution
 指示に従って各モーターに対してこの操作を繰り返してください。
 :::
 
-Enterキーを押す前に、各ステップでケーブル接続を確認してください。例えば、ボードを操作する際に電源ケーブルが外れる可能性があります。
+Enterを押す前に、各ステップでケーブル接続を確認してください。例えば、ボードを操作する際に電源ケーブルが外れる可能性があります。
 
 完了すると、スクリプトは単純に終了し、この時点でモーターが使用可能になります。これで、各モーターから次のモーターへ3ピンケーブルを接続し、最初のモーター（id=1の「ショルダーパン」）からコントローラーボードへケーブルを接続できます。コントローラーボードはアームのベースに取り付けることができます。
 
@@ -477,9 +475,9 @@ Enterキーを押す前に、各ステップでケーブル接続を確認して
 
 正しいUSBを見つけてモーターをセットアップするために、前のコマンドに従ってください。
 
-モーターの設定手順は、SO101の[ドキュメント](https://huggingface.co/docs/lerobot/so101#configure-the-motors)（リーダーアームと同じ）で確認できます。アームモーターのIDに加えて、モバイルベースのモーターIDも設定する必要があります。これらは動作するために特定の順序である必要があります。以下は、モバイルベースのモーターIDとモーター取り付け位置の画像です。LeKiwiでは1つのモーター制御ボードのみを使用することに注意してください。これは、ホイールのモーターIDが7、8、9であることを意味します。
+モーターの設定手順は、SO101の[ドキュメント](https://huggingface.co/docs/lerobot/so101#configure-the-motors)（リーダーアームと同じ）に記載されています。アームモーターのIDに加えて、モバイルベースのモーターIDも設定する必要があります。これらは動作するために特定の順序である必要があります。以下は、モバイルベースのモーターIDとモーター取り付け位置の画像です。LeKiwiでは1つのモーターコントロールボードのみを使用することに注意してください。これは、ホイールのモーターIDが7、8、9であることを意味します。
 
-このコマンドを実行してLeKiwiのモーターをセットアップできます。最初にアーム用のモーター（id 6..1）をセットアップし、次にホイール用のモーター（9,8,7）をセットアップします。
+LeKiwi用のモーターをセットアップするために、このコマンドを実行できます。最初にアーム用のモーター（id 6..1）をセットアップし、次にホイール用のモーター（9,8,7）をセットアップします。
 
 ```bash
 python -m lerobot.setup_motors \
@@ -494,11 +492,11 @@ python -m lerobot.setup_motors \
 
 ## キャリブレーション
 
-次に、リーダーアームとフォロワーアームをキャリブレーションする必要があります。ホイールモーターはキャリブレーションする必要がありません。キャリブレーションプロセスは非常に重要です。なぜなら、1つのロボットで訓練されたニューラルネットワークが別のロボットでも動作するようになるからです。
+次に、リーダーアームとフォロワーアームをキャリブレーションする必要があります。ホイールモーターはキャリブレーションする必要がありません。キャリブレーションプロセスは、1つのロボットで訓練されたニューラルネットワークが別のロボットで動作することを可能にするため、非常に重要です。
 
 ### フォロワーアーム（モバイルベース上）のキャリブレーション
 
-アームがRaspberry Piに接続されていることを確認し、このスクリプトまたはAPIの例を実行して（SSH経由でRaspberry Pi上で）フォロワーアームのキャリブレーションを開始します：
+アームがRaspberry Piに接続されていることを確認し、このスクリプトまたはAPIサンプル（SSH経由でRaspberry Pi上で）を実行してフォロワーアームのキャリブレーションを開始します：
 
 ```bash
 python -m lerobot.calibrate \
@@ -506,7 +504,7 @@ python -m lerobot.calibrate \
     --robot.id=my_awesome_kiwi # <- Give the robot a unique name
 ```
 
-ほとんどのロボットでキャリブレーション方法を統一したため、このSO100アームのキャリブレーション手順は、KochやSO101の手順と同じです。まず、各関節がその可動範囲の中央にある位置にロボットを移動させ、次に`Enter`を押します。次に、すべての関節を可動範囲全体にわたって動かします。SO101での同じプロセスの参考動画は[こちら](https://huggingface.co/docs/lerobot/en/so101#calibration-video)で見ることができます。
+ほとんどのロボットでキャリブレーション方法を統一したため、このSO100アームのキャリブレーション手順はKochやSO101の手順と同じです。まず、各関節がその範囲の中央にある位置にロボットを移動し、`Enter`を押します。次に、すべての関節を可動域全体で動かします。SO101での同じプロセスの参考動画は[こちら](https://huggingface.co/docs/lerobot/en/so101#calibration-video)で見ることができます。
 
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/22n6f5xH9Dk?si=2QTzn1CDbsSv6Y_H" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -514,11 +512,11 @@ python -m lerobot.calibrate \
 
 ### 有線版
 
-有線のLeKiwiバージョンをお持ちの場合は、ラップトップですべてのコマンドを実行してください。
+有線版のLeKiwiをお持ちの場合は、すべてのコマンドをラップトップで実行してください。
 
 ### リーダーアームのキャリブレーション
 
-次に、リーダーアーム（ラップトップ/PCに接続されている）をキャリブレートします。ラップトップで以下のAPIサンプルコマンドを実行してください：
+次に、リーダーアーム（ラップトップ/PCに接続されている）をキャリブレーションします。ラップトップで以下のコマンドまたはAPIサンプルを実行してください：
 
 ```bash
 python -m lerobot.calibrate \
@@ -527,19 +525,19 @@ python -m lerobot.calibrate \
     --teleop.id=my_awesome_leader_arm # <- Give the robot a unique name
 ```
 
-## LeKiwiの遠隔操作
+## LeKiwiのテレオペレーション
 
 :::tip
-Macを使用している場合、ターミナルにキーボードへのアクセス許可を与える必要があるかもしれません。システム環境設定 > セキュリティとプライバシー > 入力監視に移動し、ターミナルのチェックボックスにチェックを入れてください。
+Macを使用している場合、Terminalにキーボードへのアクセス許可を与える必要がある場合があります。システム環境設定 > セキュリティとプライバシー > 入力監視に移動し、Terminalのチェックボックスをオンにしてください。
 :::
 
-遠隔操作するには、Raspberry PiにSSHで接続し、`conda activate lerobot`を実行してから、このスクリプトを実行してください：
+テレオペレーションするには、Raspberry PiにSSHで接続し、`conda activate lerobot`を実行してからこのスクリプトを実行します：
 
 ```bash
 python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 ```
 
-ノートパソコンでも `conda activate lerobot` を実行し、API サンプルを実行してください。`examples/lekiwi/teleoperate.py` で正しい `remote_ip` と `port` を設定することを確認してください。
+次に、ラップトップでも`conda activate lerobot`を実行し、APIサンプルを実行します。`examples/lekiwi/teleoperate.py`で正しい`remote_ip`と`port`を設定してください。
 
 <div align="center">
       <img width={800}
@@ -550,67 +548,67 @@ python -m lerobot.robots.lekiwi.lekiwi_host --robot.id=my_awesome_kiwi
 python examples/lekiwi/teleoperate.py
 ```
 
-ラップトップで次のようなメッセージが表示されるはずです：```[INFO] Connected to remote robot at tcp://172.17.133.91:5555 and video stream at tcp://172.17.133.91:5556.``` これで、リーダーアームを動かし、キーボード（w,a,s,d）を使って前進、左、後退、右に移動できます。また、（z,x）を使って左右に回転できます。（r,f）を使ってモバイルロボットの速度を上げたり下げたりできます。3つの速度モードがあります。下の表を参照してください：
+ラップトップで次のようなメッセージが表示されるはずです：```[INFO] Connected to remote robot at tcp://172.17.133.91:5555 and video stream at tcp://172.17.133.91:5556.``` これで、リーダーアームを動かし、キーボード（w,a,s,d）を使用して前進、左、後退、右に運転できます。また、（z,x）を使用して左回転または右回転できます。（r,f）を使用してモバイルロボットの速度を上げたり下げたりできます。3つの速度モードがあります。以下の表を参照してください：
 
-| Speed Mode | Linear Speed (m/s) | Rotation Speed (deg/s) |
-| ---------- | ------------------ | ---------------------- |
-| Fast       | 0.4                | 90                     |
-| Medium     | 0.25               | 60                     |
-| Slow       | 0.1                | 30                     |
+| 速度モード | 直線速度 (m/s) | 回転速度 (deg/s) |
+| ---------- | -------------- | ---------------- |
+| 高速       | 0.4            | 90               |
+| 中速       | 0.25           | 60               |
+| 低速       | 0.1            | 30               |
 
-| Key | Action         |
-| --- | -------------- |
-| W   | 前進           |
-| A   | 左移動         |
-| S   | 後退           |
-| D   | 右移動         |
-| Z   | 左回転         |
-| X   | 右回転         |
-| R   | 速度を上げる   |
-| F   | 速度を下げる   |
+| キー | アクション |
+| ---- | ---------- |
+| W    | 前進       |
+| A    | 左移動     |
+| S    | 後退       |
+| D    | 右移動     |
+| Z    | 左回転     |
+| X    | 右回転     |
+| R    | 速度上昇   |
+| F    | 速度低下   |
 
 :::tip
-異なるキーボードを使用している場合は、`LeKiwiRobotConfig`で各コマンドのキーを変更できます。
+異なるキーボードを使用する場合は、`LeKiwiRobotConfig`で各コマンドのキーを変更できます。
 :::
 
 ### 有線版
 
-**有線**のLeKiwi版をお持ちの場合は、これらのテレオペレーションコマンドを含むすべてのコマンドをラップトップで実行してください。
+**有線**版のLeKiwiをお持ちの場合は、これらのテレオペレーションコマンドを含むすべてのコマンドをラップトップで実行してください。
 
 ## 通信のトラブルシューティング
 
-Mobile SO100への接続に問題がある場合は、以下の手順に従って問題を診断し、解決してください。
+Mobile SO100への接続に問題がある場合は、以下の手順に従って問題を診断し解決してください。
 
 ### 1. IPアドレス設定の確認
 
-設定ファイルにPi用の正しいIPが設定されていることを確認してください。Raspberry PiのIPアドレスを確認するには、（Piのコマンドラインで）以下を実行します：
+設定ファイルでPiの正しいIPが設定されていることを確認してください。Raspberry PiのIPアドレスを確認するには、（Piのコマンドラインで）以下を実行します：
 
 ```bash
 hostname -I
 ```
 
-### 2. Check if Pi is reachable from laptop/pc
+### 2. ラップトップ/PCからPiに到達可能かチェック
 
-Try pinging the Raspberry Pi from your laptop:
+ラップトップからRaspberry Piにpingしてみてください：
 
 ```bach
 ping <your_pi_ip_address>
 ```
 
-pingが失敗した場合：
+pingが失敗する場合：
 
 - Piの電源が入っており、同じネットワークに接続されていることを確認してください。
-- PiでSSHが有効になっているかを確認してください。
+- PiでSSHが有効になっているかチェックしてください。
 
 ### 3. SSH接続を試す
 
-PiにSSH接続できない場合、適切に接続されていない可能性があります。以下を使用してください：
+PiにSSHできない場合、適切に接続されていない可能性があります。以下を使用してください：
 
 ```bash
 ssh <your_pi_user_name>@<your_pi_ip_address>
 ```
 
-接続エラーが発生した場合：
+接続エラーが発生する場合：
 
 - 以下を実行してPiでSSHが有効になっていることを確認してください：
 
@@ -618,7 +616,7 @@ ssh <your_pi_user_name>@<your_pi_ip_address>
   sudo raspi-config
   ```
 
-  次に移動します：**Interfacing Options -> SSH** を選択して有効にします。
+  次に、**インターフェイシングオプション -> SSH**に移動して有効にしてください。
 
 ### 4. 同じ設定ファイル
 
@@ -630,7 +628,7 @@ ssh <your_pi_user_name>@<your_pi_ip_address>
 
 データセットのアップロードにはHugging Face hubの機能を使用します。以前にHubを使用したことがない場合は、書き込みアクセストークンを使用してCLI経由でログインできることを確認してください。このトークンは[Hugging Face設定](https://huggingface.co/settings/tokens)から生成できます。
 
-次のコマンドを実行してトークンをCLIに追加します：
+以下のコマンドを実行してCLIにトークンを追加してください：
 
 ```bash
 huggingface-cli login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
@@ -643,7 +641,7 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
 
-これで、データセットを記録できます。エピソードを記録してデータセットをハブにアップロードするには、LeKiwi用にカスタマイズされたこのAPIサンプルを実行してください。まず、スクリプト内の`remote_ip`、`repo_id`、`port`、`task`を適応させることを確認してください。スクリプトをより長時間実行したい場合は、`NB_CYCLES_CLIENT_CONNECTION`を増やすことができます。
+これでデータセットを記録できます。エピソードを記録してデータセットをhubにアップロードするには、LeKiwi用にカスタマイズされたこのAPIサンプルを実行してください。まず、スクリプト内の`remote_ip`、`repo_id`、`port`、`task`を適応させてください。スクリプトをより長時間実行したい場合は、`NB_CYCLES_CLIENT_CONNECTION`を増やすことができます。
 
 <div align="center">
       <img width={800}
@@ -656,23 +654,22 @@ python examples/lekiwi/record.py
 
 データセットのアップロード
 
-ローカルでは、データセットはこのフォルダに保存されます：`~/.cache/huggingface/lerobot/{repo-id}`。データ記録の終了時に、データセットはあなたのHugging Faceページ（例：https://huggingface.co/datasets/cadene/so101_test）にアップロードされます。このページは以下を実行することで取得できます：
+ローカルでは、データセットはこのフォルダに保存されます：`~/.cache/huggingface/lerobot/{repo-id}`。データ記録の終了時に、データセットはHugging Faceページ（例：https://huggingface.co/datasets/cadene/so101_test）にアップロードされます。これは以下を実行することで取得できます：
 
 ```bash
 echo https://huggingface.co/datasets/${HF_USER}/so101_test
 ```
+あなたのデータセットは、コミュニティが簡単に見つけられるように自動的に`LeRobot`でタグ付けされ、カスタムタグ（この場合は例として`tutorial`）も追加できます。
 
-あなたのデータセットは、コミュニティが簡単に見つけられるように自動的に `LeRobot` でタグ付けされ、カスタムタグ（この場合は例として `tutorial`）も追加できます。
-
-ハブ上の他のLeRobotデータセットは、`LeRobot` [タグ](https://huggingface.co/datasets?other=LeRobot)で検索することで見つけることができます。
+ハブで他のLeRobotデータセットを探すには、`LeRobot` [タグ](https://huggingface.co/datasets?other=LeRobot)で検索できます。
 
 :::tip
 
 ### データ収集のコツ
 
-データ記録に慣れたら、トレーニング用により大きなデータセットを作成できます。良い開始タスクは、異なる場所でオブジェクトを掴み、ビンに置くことです。少なくとも50エピソード、場所ごとに10エピソードを記録することをお勧めします。カメラを固定し、記録全体を通して一貫した掴み動作を維持してください。また、操作しているオブジェクトがカメラに映っていることを確認してください。良い経験則は、カメラ画像だけを見てタスクを自分で実行できることです。
+データ記録に慣れたら、トレーニング用のより大きなデータセットを作成できます。良い開始タスクは、異なる場所でオブジェクトを掴み、ビンに置くことです。少なくとも50エピソード、場所ごとに10エピソードを記録することをお勧めします。カメラを固定し、記録全体を通して一貫した掴み動作を維持してください。また、操作するオブジェクトがカメラに映っていることを確認してください。良い経験則は、カメラ画像だけを見てタスクを自分で実行できることです。
 
-以下のセクションでは、ニューラルネットワークをトレーニングします。信頼性の高い掴み性能を達成した後、追加の掴み場所、異なる掴み技術、カメラ位置の変更など、データ収集中により多くのバリエーションを導入し始めることができます。
+次のセクションでは、ニューラルネットワークをトレーニングします。信頼性の高い掴み性能を達成した後、データ収集中により多くのバリエーションを導入できます。例えば、追加の掴み場所、異なる掴み技術、カメラ位置の変更などです。
 
 結果に悪影響を与える可能性があるため、あまりにも早く多くのバリエーションを追加することは避けてください。
 
@@ -680,23 +677,23 @@ echo https://huggingface.co/datasets/${HF_USER}/so101_test
 
 ### トラブルシューティング
 
-Linuxで、データ記録中に左右の矢印キーとエスケープキーが効果がない場合は、`$DISPLAY` 環境変数が設定されていることを確認してください。[pynputの制限事項](https://pynput.readthedocs.io/en/latest/limitations.html#linux)を参照してください。
+Linuxで、データ記録中に左右の矢印キーとエスケープキーが効果がない場合は、`$DISPLAY`環境変数が設定されていることを確認してください。[pynputの制限](https://pynput.readthedocs.io/en/latest/limitations.html#linux)を参照してください。
 
 :::
 
 ### 有線版
 
-**有線**のLeKiwiバージョンをお持ちの場合は、これらのレコードデータセットコマンドを含むすべてのコマンドをラップトップで実行してください。
+**有線**LeKiwiバージョンをお持ちの場合は、これらのデータセット記録コマンドを含むすべてのコマンドをラップトップで実行してください。
 
 ## データセットの可視化
 
-`--dataset.push_to_hub=true` でデータセットをハブにアップロードした場合、以下で与えられるリポジトリIDをコピー＆ペーストして[データセットをオンラインで可視化](https://huggingface.co/spaces/lerobot/visualize_dataset)できます：
+`--dataset.push_to_hub=true`でデータセットをハブにアップロードした場合、以下で与えられるリポジトリIDをコピー＆ペーストして[データセットをオンラインで可視化](https://huggingface.co/spaces/lerobot/visualize_dataset)できます：
 
 ```bash
 echo ${HF_USER}/lekiwi_test
 ```
 
-`--dataset.push_to_hub=false` でアップロードしなかった場合、以下のコマンドでローカルでも可視化できます（ブラウザで `http://127.0.0.1:9090` のウィンドウが開き、可視化ツールが表示されます）：
+`--dataset.push_to_hub=false`でアップロードしなかった場合も、ローカルで可視化できます（可視化ツールでブラウザ`http://127.0.0.1:9090`にウィンドウを開くことができます）：
 
 ```bash
 python -m lerobot.scripts.visualize_dataset_html \
@@ -706,7 +703,7 @@ python -m lerobot.scripts.visualize_dataset_html \
 
 ## エピソードの再生
 
-エピソードを再生するには、以下のAPIサンプルを実行してください。`remote_ip`、`port`、LeRobotDatasetId、およびエピソードインデックスを必ず変更してください。ファイルは`examples/lekiwi/replay.py`のパスにあります。
+エピソードを再生するには、以下のAPI例を実行してください。`remote_ip`、`port`、LeRobotDatasetId、エピソードインデックスを変更することを確認してください。ファイルは`examples/lekiwi/replay.py`パスにあります。
 
 <div align="center">
       <img width={800}
@@ -719,9 +716,9 @@ python -m lerobot.scripts.visualize_dataset_html \
 python examples/lekiwi/replay.py
 ```
 
-## ポリシーの訓練
+## ポリシーのトレーニング
 
-ロボットを制御するポリシーを訓練するには、`python lerobot/scripts/train.py` スクリプトを使用します。いくつかの引数が必要です。以下はコマンドの例です：
+ロボットを制御するポリシーをトレーニングするには、`python lerobot/scripts/train.py`スクリプトを使用します。いくつかの引数が必要です。以下はコマンドの例です：
 
 ```bash
 python lerobot/scripts/train.py \
@@ -735,18 +732,18 @@ python lerobot/scripts/train.py \
 
 説明しましょう：
 
-1. `--dataset.repo_id=${HF_USER}/lekiwi_test` でデータセットを引数として提供しました。
-2. `policy.type=act` でポリシーを提供しました。これにより `configuration_act.py` から設定が読み込まれます。重要なことに、このポリシーはあなたのロボットのモーター状態数、モーターアクション数、カメラ数（例：`laptop` と `phone`）に自動的に適応し、これらはデータセットに保存されています。
-4. Nvidia GPU でトレーニングを行うため `policy.device=cuda` を提供しましたが、Apple silicon でトレーニングする場合は `policy.device=mps` を使用できます。
-5. トレーニングプロットの可視化に [Weights and Biases](https://docs.wandb.ai/quickstart) を使用するため `wandb.enable=true` を提供しました。これはオプションですが、使用する場合は `wandb login` を実行してログインしていることを確認してください。
+1. `--dataset.repo_id=${HF_USER}/lekiwi_test`でデータセットを引数として提供しました。
+2. `policy.type=act`でポリシーを提供しました。これは`configuration_act.py`から設定を読み込みます。重要なことに、このポリシーは、データセットに保存されているロボットのモーター状態数、モーターアクション数、カメラ数（例：`laptop`と`phone`）に自動的に適応します。
+4. Nvidia GPUでトレーニングしているため`policy.device=cuda`を提供しましたが、Apple siliconでトレーニングする場合は`policy.device=mps`を使用できます。
+5. トレーニングプロットを可視化するために[Weights and Biases](https://docs.wandb.ai/quickstart)を使用する`wandb.enable=true`を提供しました。これはオプションですが、使用する場合は`wandb login`を実行してログインしていることを確認してください。
 
-トレーニングには数時間かかります。チェックポイントは `outputs/train/act_lekiwi_test/checkpoints` に保存されます。
+トレーニングには数時間かかります。チェックポイントは`outputs/train/act_lekiwi_test/checkpoints`にあります。
 
 ## ポリシーの評価
 
-ポリシーを評価するには、`evaluate.py` API サンプルを実行してください。`remote_ip`、`port`、model などを変更することを忘れないでください。
+ポリシーを評価するには、`evaluate.py` API例を実行してください。`remote_ip`、`port`、モデルなどを変更することを確認してください。
 
-パスは `examples/lekiwi/evaluate.py` です。
+パスは`examples/lekiwi/evaluate.py`です。
 <div align="center">
       <img width={800}
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/evaluation.png" />
@@ -756,14 +753,14 @@ python lerobot/scripts/train.py \
 python examples/lekiwi/evaluate.py
 ```
 
-ご覧のとおり、これは以前にトレーニングデータセットを記録するために使用したコマンドとほぼ同じです。2つの点が変更されました：
+ご覧のとおり、これは以前にトレーニングデータセットを記録するために使用したコマンドとほぼ同じです。2つのことが変わりました：
 
-1. 追加の `policy` 引数があり、これはポリシーチェックポイントへのパスを示します（例：`outputs/train/eval_act_lekiwi_test/checkpoints/last/pretrained_model`）。モデルチェックポイントをハブにアップロードした場合は、モデルリポジトリも使用できます（例：`${HF_USER}/act_lekiwi_test`）。
-2. データセット名は推論を実行していることを反映するために `eval` で始まります（例：`${HF_USER}/eval_act_lekiwi_test`）。
+1. ポリシーチェックポイントへのパスを示す追加の`policy`引数があります（例：`outputs/train/eval_act_lekiwi_test/checkpoints/last/pretrained_model`）。モデルチェックポイントをハブにアップロードした場合は、モデルリポジトリも使用できます（例：`${HF_USER}/act_lekiwi_test`）。
+2. 推論を実行していることを反映するために、データセットの名前が`eval`で始まります（例：`${HF_USER}/eval_act_lekiwi_test`）。
 
 ## ヘルプ 🙋‍
 
-ハードウェアの問題については、カスタマーサービスにお問い合わせください。使用方法に関する質問については、Discordにご参加ください。
+ハードウェアの問題については、カスタマーサービスにお問い合わせください。使用方法に関する質問は、Discordにご参加ください。
 
 [LeRobotプラットフォーム](https://github.com/huggingface/lerobot)
 
