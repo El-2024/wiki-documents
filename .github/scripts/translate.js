@@ -43,7 +43,7 @@ const PRESERVE_TERMS = {
     'ReSpeaker': 'ReSpeaker',
     'LinkStar': 'LinkStar',
     'reTerminal': 'reTerminal',
-    'reserver': 'reserver',
+    'reServer': 'reServer',
     'BeagleBone': 'BeagleBone',
     'SenseCraft': 'SenseCraft',
     'Home Assistant': 'Home Assistant'
