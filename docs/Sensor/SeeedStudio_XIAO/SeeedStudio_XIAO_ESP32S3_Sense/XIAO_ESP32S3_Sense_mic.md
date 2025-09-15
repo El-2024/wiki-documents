@@ -58,6 +58,25 @@ After formatting, you can insert the microSD card into the microSD card slot. Pl
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/66.jpg" style={{width:500, height:'auto'}}/></div>
 
+### Understanding Pins
+
+<div class="table-center">
+	<table align="center">
+    <tr>
+			<th>Pin Number</th>
+			<th>Function Description</th>
+		</tr>
+		<tr>
+			<td align="center">GPIO 41</td>
+			<td align="center">PDM Microphone DATA</td>
+		</tr>
+		<tr>
+			<td align="center">GPIO 42</td>
+			<td align="center">PDM Microphone CLK</td>
+		</tr>
+	</table>
+</div>
+
 ## Detection of sound loudness
 
 For the first project case, let's detect the noise in the environment and show the ambient loudness detected by the microphone using the Arduino IDE's serial port waveform graph.
