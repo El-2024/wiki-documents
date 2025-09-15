@@ -45,8 +45,10 @@ Compared to the previous version, this new release updates certain discontinued 
 7. **[Grove - Sound](https://wiki.seeedstudio.com/Grove-Sound_Sensor/):** Detects surrounding sound intensity
 8. **[Grove - Temperature & Humidity Sensor](https://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor/):** Detects surrounding temperature and humidity values. The older version used the DHT11 sensor, while versions after 2025.10 use the DHT20 sensor.
 9. **Grove - Air Pressure Sensor:** Detects surrounding atmospheric pressure
-  - The previous version used the [BMP280](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BMP280/).
-  - The new version dated October 2025 uses [SPA06-003](https://wiki.seeedstudio.com/grove_barometer_sensor_spa06_003).
+
+- The previous version used the [BMP280](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BMP280/).
+- The new version dated October 2025 uses [SPA06-003](https://wiki.seeedstudio.com/grove_barometer_sensor_spa06_003).
+
 10. **[Grove - 3-Axis Accelerator](https://wiki.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR):** Detects object acceleration
 11. **[Seeeduino Lotus](https://wiki.seeedstudio.com/Seeeduino_Lotus/):** Arduino Compatible Board with Grove Ports
 
@@ -1395,7 +1397,8 @@ Hardware connection
 
 Software Code
 
-#### For BMP280 (Previous version before October 2025):
+#### For BMP280 (Previous version before October 2025)
+
     - Open Arduino IDE.
     - Install the **Grove Barometer Sensor library**: Navigate to **Sketch** -> **Include Library** -> **Manage Libraries...** and Search for the keyword "**Grove BMP280**" in the **Library Manager**, then install.
 
@@ -1527,8 +1530,7 @@ Breakout Guide
 
 Use Grove cable to connect Grove Air Pressure Sensor to Seeeduino Lotus's **I2C** interface using a Grove cable (note: I2C default address is 0x77 or 0x76).
 
-
-#### For SPA06-003 (New version After October 2025):
+#### For SPA06-003 (New version After October 2025)
 
 The SPA06-003 is a high-precision barometric pressure sensor that can measure both pressure and temperature. Here's how to use it with Arduino:
 
@@ -1602,8 +1604,6 @@ void loop() {
 
 }//loop()
 ```
-
-
 
 ### Lesson 10: Sensing Movement
 
@@ -2045,16 +2045,17 @@ Looking closely at the Grove Beginner Kit For Arduino you will see that there ar
 
 2. Schematic Design Files
 
-- [**Grove Beginner Kit for Arduino Schematic Design Files V1.0 Preview Version**](https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/res/Grove-Beginner-Kit-for-Arduino-SCH-PCB.zip)
+    - [**Grove Beginner Kit for Arduino Schematic Design Files V1.0 Preview Version**](https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/res/Grove-Beginner-Kit-for-Arduino-SCH-PCB.zip)
 
-- [**Grove Beginner Kit for Arduino Schematic Design Files V1.1 New Version**](https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/res/Grove_Beginner_Kit_for_Arduino_v2.3_SCH&PCB_250812.zip)
+    - [**Grove Beginner Kit for Arduino Schematic Design Files V1.1 New Version**](https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/res/Grove_Beginner_Kit_for_Arduino_v2.3_SCH&PCB_250812.zip)
 
 3. **Modules Libraries on Github:**
-  - [OLED Display](https://github.com/olikraus/U8g2_Arduino)
-  - [Temperature & Humidity Sensor](https://github.com/Seeed-Studio/Grove_Temperature_And_Humidity_Sensor)
-  - [Air Pressure Sensor (BMP280)](https://github.com/Seeed-Studio/Grove_BMP280)
-  - [Air Pressure Sensor (SPA06-003)](https://github.com/Seeed-Studio/Seeed_Arduino_SPA06)
-  - [3-Axis Accelerator](https://github.com/Seeed-Studio/Seeed_Arduino_LIS3DHTR)
+
+    - [OLED Display](https://github.com/olikraus/U8g2_Arduino)
+    - [Temperature & Humidity Sensor](https://github.com/Seeed-Studio/Grove_Temperature_And_Humidity_Sensor)
+    - [Air Pressure Sensor (BMP280)](https://github.com/Seeed-Studio/Grove_BMP280)
+    - [Air Pressure Sensor (SPA06-003)](https://github.com/Seeed-Studio/Seeed_Arduino_SPA06)
+    - [3-Axis Accelerator](https://github.com/Seeed-Studio/Seeed_Arduino_LIS3DHTR)
 
 4. [**Sensor Datasheet**](https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/res/Grove-beginner-kit-for-arduino-datasheet.zip)
 
@@ -2062,7 +2063,7 @@ Looking closely at the Grove Beginner Kit For Arduino you will see that there ar
 
 6. [**Grove Beginner Kit For Arduino Resources in one [20200401] (7z)**](https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/res/Grove-Beginner-Kit-For-Arduino-Resources-in-one(20200401).7z)
 
-8. [**Grove Beginner Kit For Arduino Codecraft Graphical Programming Course web v7**](https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/res/Grove-Beginner-Kit-For-Arduino-Codecraft-Graphical-Programming-Course-web-v7.pdf)
+7. [**Grove Beginner Kit For Arduino Codecraft Graphical Programming Course web v7**](https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/res/Grove-Beginner-Kit-For-Arduino-Codecraft-Graphical-Programming-Course-web-v7.pdf)
 
 ## More Learning
 

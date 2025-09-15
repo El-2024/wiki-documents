@@ -1,12 +1,12 @@
 ---
 description: Getting Started With SeeedStudio BeagleBone® Green Eco
-title: BeagleBone® Green Eco
+title: Seeed Studio BeagleBone® Green Eco
 keywords:
-- Beagle_Bone
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+- Beagle_Bone_Green_Eco
+image: https://files.seeedstudio.com/wiki/BeagleBone_Green_Eco/img/Seeed-Studio-BeagleBoneR-Green-Eco.webp
 slug: /getting_started_with_seeedstudio_beaglebone_green_eco
 last_update:
-  date: 10/9/2025
+  date: 9/12/2025
   author: Atom Yang
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: XIAO nRF54L15 功耗示例 (PlatformIO)
 description: |
-image: https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/top.jpg
+image: https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/1-101991422-XIAO-nRF54L15-Sense.webp
 slug: /cn/xiao_nrf54l15_sense_power_consumptions
 sidebar_position: 2
 keywords:
@@ -18,19 +18,19 @@ last_update:
 :::tip
 基于 VS Code，如果您想在 nRF Connect SDK 上使用以下案例，请参考提供的连接，添加 app.overlay 文件并修改 prj.conf 中的内容
 
-[XIAO nRF54L15 添加覆盖文件并修改配置文件](http://192.168.31.44:3000/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
+[XIAO nRF54L15 添加 overlay 文件并修改 conf 文件](https://wiki.seeedstudio.com/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
 
 :::
 
 ## 蓝牙连接
 
-本节详细介绍了设备作为蓝牙低功耗 (BLE) 外设主动广播时的功耗特性。设备实现了自定义 BLE 服务，允许其他中央设备连接并与其交互。
+本节详细介绍了设备作为蓝牙低功耗 (BLE) 外设主动广播时的功耗特性。设备实现了自定义 BLE 服务，允许其他中心设备连接并与其交互。
 
-以下图表展示了设备持续广播时的典型功耗曲线：
+以下图表展示了设备持续广播时的典型功耗配置文件：
 
 <div style={{textAlign:'center'}}>
-    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/new/7.png" alt="XIAO nRF54L15 BLE 广播功耗" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
-    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>设备在 BLE 广播期间的功耗</em></p>
+    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/new/7.png" alt="XIAO nRF54L15 BLE Advertising Power Consumption" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
+    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>BLE 广播期间的设备功耗</em></p>
 </div>
 
 如图所示，设备表现出与每个广播事件相对应的周期性电流峰值，随后是较低电流消耗的时期。广播期间的平均功耗高于系统关闭模式，反映了广播所需的主动无线电操作。
@@ -227,15 +227,16 @@ int main(void)
 
 ## 超低功耗状态
 
-为了实现设备的极低功耗，我们在**系统关闭**模式下进行了功耗测试。系统关闭模式是 Zephyr OS 提供的深度睡眠模式，其中大部分外设和 CPU 都被关闭，仅保留必要的唤醒源（如 GPIO 中断）以最小化功耗。
+为了实现设备的极低功耗，我们在 **System Off** 模式下进行了功耗测试。System Off 模式是 Zephyr 操作系统提供的深度睡眠模式，在此模式下大部分外设和 CPU 都会关闭，仅保留必要的唤醒源（如 GPIO 中断）以最小化功耗。
 
-以下图表展示了设备进入系统关闭模式后的典型功耗曲线：
+以下图表展示了设备进入 System Off 模式后的典型功耗曲线：
 
 <div style={{textAlign:'center'}}>
-    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/new/6.png" alt="XIAO nRF54L15 系统关闭模式下的超低功耗" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
-    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>设备在系统关闭模式下的功耗</em></p>
+    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/new/6.png" alt="XIAO nRF54L15 Ultra-low Power Consumption in System Off Mode" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
+    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>设备在 System Off 模式下的功耗</em></p>
 </div>
-如图所示，进入 System Off 模式后，功耗显著降低，仅保持微安级别，大大延长了电池寿命。当按下`sw0`按钮时，设备将从 System Off 模式唤醒并重新启动。
+
+如图所示，进入 System Off 模式后，功耗显著降低，仅维持在微安级别，这大大延长了电池寿命。当按下 `sw0` 按钮时，设备将从 System Off 模式唤醒并重新启动。
 
 ---
 
@@ -243,7 +244,7 @@ int main(void)
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/platform-seeedboards/tree/main/examples/zephyr-lowpower" target="_blank" rel="noopener noreferrer">
-    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    <strong><span><font color={'FFFFFF'} size={"4"}> 下载库文件</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
     </a>
 </div><br />
 
@@ -328,7 +329,7 @@ int main(void)
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您对我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们在这里为您提供不同的支持，确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

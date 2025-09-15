@@ -14,7 +14,7 @@ last_update:
   date: 7/2/2025
   author: Jason
 sidebar_position: 3
---- 
+---
 
 The following sample code is designed for PlatformIO, but it is also compatible with the nRF Connect SDK.
 
