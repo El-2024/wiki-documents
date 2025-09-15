@@ -965,9 +965,9 @@ static Coordinates transform(Coordinates gps)
 
  -`UBYTE`, `UWORD`, `UDOUBLE:`These are custom unsigned integer type aliases that improve code readability by clarifying the expected size of the variables.
 
-  - `SENTENCE_SIZE, BUFFSIZE:` These define fixed sizes for buffers used to store NMEA sentences and larger data buffers.
+- `SENTENCE_SIZE, BUFFSIZE:` These define fixed sizes for buffers used to store NMEA sentences and larger data buffers.
 
-  - Macros like `HOT_START, SET_NMEA_OUTPUT:`These macros define various NMEA protocol commands sent to the L76X GPS module to configure its operating mode, output frequency, baud rate, and so on.
+- Macros like `HOT_START, SET_NMEA_OUTPUT:`These macros define various NMEA protocol commands sent to the L76X GPS module to configure its operating mode, output frequency, baud rate, and so on.
 
 - Struct Definitions:
 
@@ -981,9 +981,9 @@ static Coordinates transform(Coordinates gps)
 
  -` GPS: `A global GNRMC struct instance used to hold the parsed GPS data.
 
-  - `uart_dev:` A pointer to the UART device struct, used for UART communication.
+- `uart_dev:` A pointer to the UART device struct, used for UART communication.
 
-  - `new_gnrmc_available:` A volatile boolean flag that is set to true when a new valid GNRMC sentence is received, notifying the main loop that new data is available for processing.
+- `new_gnrmc_available:` A volatile boolean flag that is set to true when a new valid GNRMC sentence is received, notifying the main loop that new data is available for processing.
 
 - `uart_callback() Function:`
 
@@ -1254,7 +1254,7 @@ int main(void) {
 
  -` int pixel_x = col * font_width; `and `int pixel_y = row * font_height;:` This function converts the text's row and column coordinates (in character units) to pixel coordinates, making text positioning more intuitive.
 
-  - `cfb_print():` This is the core function of the CFB library used to print text at the specified pixel location.
+- `cfb_print():` This is the core function of the CFB library used to print text at the specified pixel location.
 
 **Main Loop**
 The core logic of the code runs within an infinite `while (1)`loop:
