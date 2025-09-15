@@ -14,7 +14,7 @@ last_update:
   date: 7/2/2025
   author: Jason
 sidebar_position: 3
---- 
+---
 
 以下のサンプルコードはPlatformIO用に設計されていますが、nRF Connect SDKとも互換性があります。
 
