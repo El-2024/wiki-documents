@@ -77,101 +77,101 @@ Seeed Studio XIAO ESP32S3 是一款功能强大且多功能的开发板，具有
 以下是 XIAO ESP32S3 功能引脚的概览。
 
 <div class="table-center">
-	<table align="center">
-		<tr>
-			<th>引脚编号</th>
-			<th>功能描述</th>
-		</tr>
+ <table align="center">
+  <tr>
+   <th>引脚编号</th>
+   <th>功能描述</th>
+  </tr>
     <tr>
-			<th colspan="2">-- PDM 麦克风引脚 --</th>
-		</tr>
-		<tr>
-			<td align="center">GPIO 41</td>
-			<td align="center">PDM 麦克风数据</td>
-		</tr>
-		<tr>
-			<td align="center">GPIO 42</td>
-			<td align="center">PDM 麦克风时钟</td>
-		</tr>
+   <th colspan="2">-- PDM 麦克风引脚 --</th>
+  </tr>
+  <tr>
+   <td align="center">GPIO 41</td>
+   <td align="center">PDM 麦克风数据</td>
+  </tr>
+  <tr>
+   <td align="center">GPIO 42</td>
+   <td align="center">PDM 麦克风时钟</td>
+  </tr>
     <tr>
-			<th colspan="2">-- MicroSD 卡 SPI 引脚 --</th>
-		</tr>
-		<tr>
-			<td align="center">GPIO 21</td>
-			<td align="center">MicroSD SPI CS</td>
-		</tr>
-		<tr>
-			<td align="center">D8 / A8 / Qt7 / GPIO7</td>
-			<td align="center">MicroSD SPI SCK</td>
-		</tr>
-		<tr>
-			<td align="center">D9 / A9 / Qt8 / GPIO8</td>
-			<td align="center">MicroSD SPI MISO</td>
-		</tr>
-		<tr>
-			<td align="center">D10 / A10 / Qt9 / GPIO9</td>
-			<td align="center">MicroSD SPI MOSI</td>
-		</tr>
+   <th colspan="2">-- MicroSD 卡 SPI 引脚 --</th>
+  </tr>
+  <tr>
+   <td align="center">GPIO 21</td>
+   <td align="center">MicroSD SPI CS</td>
+  </tr>
+  <tr>
+   <td align="center">D8 / A8 / Qt7 / GPIO7</td>
+   <td align="center">MicroSD SPI SCK</td>
+  </tr>
+  <tr>
+   <td align="center">D9 / A9 / Qt8 / GPIO8</td>
+   <td align="center">MicroSD SPI MISO</td>
+  </tr>
+  <tr>
+   <td align="center">D10 / A10 / Qt9 / GPIO9</td>
+   <td align="center">MicroSD SPI MOSI</td>
+  </tr>
     <tr>
-			<th colspan="2">-- 摄像头引脚 --</th>
-		</tr>
+   <th colspan="2">-- 摄像头引脚 --</th>
+  </tr>
     <tr>
-			<td align="center">GPIO 10</td>
-			<td align="center">XMCLK</td>
-		</tr>
+   <td align="center">GPIO 10</td>
+   <td align="center">XMCLK</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 11</td>
-			<td align="center">DVP_Y8</td>
-		</tr>
+   <td align="center">GPIO 11</td>
+   <td align="center">DVP_Y8</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 12</td>
-			<td align="center">DVP_Y7</td>
-		</tr>
+   <td align="center">GPIO 12</td>
+   <td align="center">DVP_Y7</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 13</td>
-			<td align="center">DVP_PCLK</td>
-		</tr>
+   <td align="center">GPIO 13</td>
+   <td align="center">DVP_PCLK</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 14</td>
-			<td align="center">DVP_Y6</td>
-		</tr>
+   <td align="center">GPIO 14</td>
+   <td align="center">DVP_Y6</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 15</td>
-			<td align="center">DVP_Y2</td>
-		</tr>
+   <td align="center">GPIO 15</td>
+   <td align="center">DVP_Y2</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 16</td>
-			<td align="center">DVP_Y5</td>
-		</tr>
+   <td align="center">GPIO 16</td>
+   <td align="center">DVP_Y5</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 17</td>
-			<td align="center">DVP_Y3</td>
-		</tr>
+   <td align="center">GPIO 17</td>
+   <td align="center">DVP_Y3</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 18</td>
-			<td align="center">DVP_Y4</td>
-		</tr>
+   <td align="center">GPIO 18</td>
+   <td align="center">DVP_Y4</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 38</td>
-			<td align="center">DVP_VSYNC</td>
-		</tr>
+   <td align="center">GPIO 38</td>
+   <td align="center">DVP_VSYNC</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 39</td>
-			<td align="center">摄像头 SCL</td>
-		</tr>
+   <td align="center">GPIO 39</td>
+   <td align="center">摄像头 SCL</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 40</td>
-			<td align="center">摄像头 SDA</td>
-		</tr>
+   <td align="center">GPIO 40</td>
+   <td align="center">摄像头 SDA</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 47</td>
-			<td align="center">DVP_HREF</td>
-		</tr>
+   <td align="center">GPIO 47</td>
+   <td align="center">DVP_HREF</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 48</td>
-			<td align="center">DVP_Y9</td>
-		</tr>
-	</table>
+   <td align="center">GPIO 48</td>
+   <td align="center">DVP_Y9</td>
+  </tr>
+ </table>
 </div>
 
 ### 焊接排针
@@ -259,7 +259,8 @@ void loop() {
     // turn Relay off:
     digitalWrite(relayPin, LOW);
   }
-}```
+}
+```
 
 如果一切顺利，上传程序后，您应该看到以下效果。
 
@@ -443,7 +444,8 @@ void loop() {
  </tr>
  <tr>
      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" style={{width:500, height:'auto'}}/></div></td>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3sense.jpg" style={{width:500, height:'auto'}}/></div></td>        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3sense.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style={{width:500, height:'auto'}}/></div></td>
         <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Gas_Sensor_O2/images/cover.jpg" style={{width:500, height:'auto'}}/></div></td>
  </tr>
     <tr>
@@ -656,7 +658,8 @@ void loop() {
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/plerup/espsoftwareserial" target="_blank" rel="noopener noreferrer">
-    <strong><span><font color={'FFFFFF'} size={"4"}> 下载库文件</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>    </a>
+    <strong><span><font color={'FFFFFF'} size={"4"}> 下载库文件</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    </a>
 </div><br />
 
 :::tip
@@ -879,7 +882,8 @@ void loop()
     }
   }
   delay(200);                       //Add time delay to avoid program jam
-}```
+}
+```
 
 请上传程序，然后打开串口监视器并将波特率设置为 115200。
 
@@ -1045,6 +1049,7 @@ void loop(void) {
 ```
 
 在 `setup()` 函数中，使用适当的构造函数参数实例化 `U8G2_SH1107_128X128_1_4W_HW_SPI` 类，这些参数指定了用于片选 (cs)、数据/命令 (dc) 和复位的引脚。然后，调用 `u8g2.begin()` 函数来初始化显示屏。
+
 在 `loop()` 函数中，使用 `u8g2.firstPage()`、`u8g2.setFont()` 和 `u8g2.drawStr()` 函数更新显示屏的新内容。`u8g2.firstPage()` 函数设置显示缓冲区以供写入，而 `u8g2.nextPage()` 显示更新的内容。do-while 循环确保内容持续显示，直到程序停止。
 
 总的来说，这段代码演示了如何使用 U8g2 库来控制 OLED 显示屏并在其上显示文本。
@@ -1180,6 +1185,7 @@ A：以下是 [ESP32](https://docs.espressif.com/projects/arduino-esp32/en/lates
 A：您可以尝试使用以下方法关闭调试信息的输出，在 Arduino IDE 中选择 **工具 -> 核心调试级别: -> 无**。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/90.png" style={{width:500, height:'auto'}}/></div>
+
 然而，这种方法并不总是有效，实际上，ESP32-S3 的调试信息总是从串口打印出来，这是无法改变的。请原谅它，它只是太急于让你知道它正在正常工作。
 
 ### Q4: 为什么我切断了 J3 的连接，但仍然测试到 D8 和 D9 引脚为高电平？写入 microSD 卡仍然有成功的概率？

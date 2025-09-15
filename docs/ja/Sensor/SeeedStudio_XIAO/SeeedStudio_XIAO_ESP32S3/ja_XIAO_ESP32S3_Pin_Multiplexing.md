@@ -77,101 +77,101 @@ Seeed Studio XIAO ESP32S3は、様々な周辺インターフェースとGPIOピ
 以下は、XIAO ESP32S3の機能ピンの概要です。
 
 <div class="table-center">
-	<table align="center">
-		<tr>
-			<th>ピン番号</th>
-			<th>機能説明</th>
-		</tr>
+ <table align="center">
+  <tr>
+   <th>ピン番号</th>
+   <th>機能説明</th>
+  </tr>
     <tr>
-			<th colspan="2">-- PDMマイクロフォンピン --</th>
-		</tr>
-		<tr>
-			<td align="center">GPIO 41</td>
-			<td align="center">PDMマイクロフォン DATA</td>
-		</tr>
-		<tr>
-			<td align="center">GPIO 42</td>
-			<td align="center">PDMマイクロフォン CLK</td>
-		</tr>
+   <th colspan="2">-- PDMマイクロフォンピン --</th>
+  </tr>
+  <tr>
+   <td align="center">GPIO 41</td>
+   <td align="center">PDMマイクロフォン DATA</td>
+  </tr>
+  <tr>
+   <td align="center">GPIO 42</td>
+   <td align="center">PDMマイクロフォン CLK</td>
+  </tr>
     <tr>
-			<th colspan="2">-- MicroSDカード SPIピン --</th>
-		</tr>
-		<tr>
-			<td align="center">GPIO 21</td>
-			<td align="center">MicroSD SPI CS</td>
-		</tr>
-		<tr>
-			<td align="center">D8 / A8 / Qt7 / GPIO7</td>
-			<td align="center">MicroSD SPI SCK</td>
-		</tr>
-		<tr>
-			<td align="center">D9 / A9 / Qt8 / GPIO8</td>
-			<td align="center">MicroSD SPI MISO</td>
-		</tr>
-		<tr>
-			<td align="center">D10 / A10 / Qt9 / GPIO9</td>
-			<td align="center">MicroSD SPI MOSI</td>
-		</tr>
+   <th colspan="2">-- MicroSDカード SPIピン --</th>
+  </tr>
+  <tr>
+   <td align="center">GPIO 21</td>
+   <td align="center">MicroSD SPI CS</td>
+  </tr>
+  <tr>
+   <td align="center">D8 / A8 / Qt7 / GPIO7</td>
+   <td align="center">MicroSD SPI SCK</td>
+  </tr>
+  <tr>
+   <td align="center">D9 / A9 / Qt8 / GPIO8</td>
+   <td align="center">MicroSD SPI MISO</td>
+  </tr>
+  <tr>
+   <td align="center">D10 / A10 / Qt9 / GPIO9</td>
+   <td align="center">MicroSD SPI MOSI</td>
+  </tr>
     <tr>
-			<th colspan="2">-- カメラピン --</th>
-		</tr>
+   <th colspan="2">-- カメラピン --</th>
+  </tr>
     <tr>
-			<td align="center">GPIO 10</td>
-			<td align="center">XMCLK</td>
-		</tr>
+   <td align="center">GPIO 10</td>
+   <td align="center">XMCLK</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 11</td>
-			<td align="center">DVP_Y8</td>
-		</tr>
+   <td align="center">GPIO 11</td>
+   <td align="center">DVP_Y8</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 12</td>
-			<td align="center">DVP_Y7</td>
-		</tr>
+   <td align="center">GPIO 12</td>
+   <td align="center">DVP_Y7</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 13</td>
-			<td align="center">DVP_PCLK</td>
-		</tr>
+   <td align="center">GPIO 13</td>
+   <td align="center">DVP_PCLK</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 14</td>
-			<td align="center">DVP_Y6</td>
-		</tr>
+   <td align="center">GPIO 14</td>
+   <td align="center">DVP_Y6</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 15</td>
-			<td align="center">DVP_Y2</td>
-		</tr>
+   <td align="center">GPIO 15</td>
+   <td align="center">DVP_Y2</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 16</td>
-			<td align="center">DVP_Y5</td>
-		</tr>
+   <td align="center">GPIO 16</td>
+   <td align="center">DVP_Y5</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 17</td>
-			<td align="center">DVP_Y3</td>
-		</tr>
+   <td align="center">GPIO 17</td>
+   <td align="center">DVP_Y3</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 18</td>
-			<td align="center">DVP_Y4</td>
-		</tr>
+   <td align="center">GPIO 18</td>
+   <td align="center">DVP_Y4</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 38</td>
-			<td align="center">DVP_VSYNC</td>
-		</tr>
+   <td align="center">GPIO 38</td>
+   <td align="center">DVP_VSYNC</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 39</td>
-			<td align="center">カメラ SCL</td>
-		</tr>
+   <td align="center">GPIO 39</td>
+   <td align="center">カメラ SCL</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 40</td>
-			<td align="center">カメラ SDA</td>
-		</tr>
+   <td align="center">GPIO 40</td>
+   <td align="center">カメラ SDA</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 47</td>
-			<td align="center">DVP_HREF</td>
-		</tr>
+   <td align="center">GPIO 47</td>
+   <td align="center">DVP_HREF</td>
+  </tr>
     <tr>
-			<td align="center">GPIO 48</td>
-			<td align="center">DVP_Y9</td>
-		</tr>
-	</table>
+   <td align="center">GPIO 48</td>
+   <td align="center">DVP_Y9</td>
+  </tr>
+ </table>
 </div>
 
 ### ヘッダーのはんだ付け
@@ -259,7 +259,8 @@ void loop() {
     // turn Relay off:
     digitalWrite(relayPin, LOW);
   }
-}```
+}
+```
 
 すべてが順調に進めば、プログラムをアップロードした後、以下のような効果が見られるはずです。
 
@@ -443,7 +444,8 @@ XIAO ESP32S3では、内蔵の11個のGPIOピンのうち、シリアル通信�
  </tr>
  <tr>
      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" style={{width:500, height:'auto'}}/></div></td>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3sense.jpg" style={{width:500, height:'auto'}}/></div></td>        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3sense.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style={{width:500, height:'auto'}}/></div></td>
         <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Gas_Sensor_O2/images/cover.jpg" style={{width:500, height:'auto'}}/></div></td>
  </tr>
     <tr>
@@ -656,7 +658,8 @@ ESP32シリーズチップ製品の場合、ソフトシリアルポートを使
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/plerup/espsoftwareserial" target="_blank" rel="noopener noreferrer">
-    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>    </a>
+    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    </a>
 </div><br />
 
 :::tip
@@ -879,7 +882,8 @@ void loop()
     }
   }
   delay(200);                       //Add time delay to avoid program jam
-}```
+}
+```
 
 プログラムをアップロードし、シリアルモニターを開いてボーレートを115200に設定してください。
 
@@ -1045,6 +1049,7 @@ void loop(void) {
 ```
 
 `setup()`関数では、チップセレクト（cs）、データ/コマンド（dc）、リセットに使用されるピンを指定する適切なコンストラクタ引数で`U8G2_SH1107_128X128_1_4W_HW_SPI`クラスがインスタンス化されます。その後、`u8g2.begin()`関数が呼び出されてディスプレイが初期化されます。
+
 `loop()`関数では、`u8g2.firstPage()`、`u8g2.setFont()`、`u8g2.drawStr()`関数を使用してディスプレイが新しいコンテンツで更新されます。`u8g2.firstPage()`関数は書き込み用のディスプレイバッファを設定し、`u8g2.nextPage()`は更新されたコンテンツを表示します。do-whileループは、プログラムが停止されるまでコンテンツが継続的に表示されることを保証します。
 
 全体的に、このコードはU8g2ライブラリを使用してOLEDディスプレイを制御し、テキストを表示する方法を示しています。
@@ -1180,6 +1185,7 @@ A: 以下は、[ESP32](https://docs.espressif.com/projects/arduino-esp32/en/late
 A: Arduino IDEで以下の方法を使用してデバッグメッセージの出力をオフにすることができます：**Tool -> Core Debug Level: -> None**。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/90.png" style={{width:500, height:'auto'}}/></div>
+s
 ただし、この方法は常に機能するとは限りません。実際、ESP32-S3のデバッグ情報は常にシリアルポートから出力され、これは変更できません。申し訳ございませんが、これは正常に動作していることをお知らせしたいという熱意の表れです。
 
 ### Q4: J3の接続を切断したのに、なぜD8とD9ピンがまだハイレベルになるのですか？microSDカードへの書き込みがまだ成功する可能性があるのはなぜですか？
