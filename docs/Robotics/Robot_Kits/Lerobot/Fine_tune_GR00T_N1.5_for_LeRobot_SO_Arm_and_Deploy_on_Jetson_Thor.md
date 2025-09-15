@@ -13,7 +13,7 @@ last_update:
   author: AI&Robotics Group
 ---
 
-# Fine-tune GR00T N1.5 for LeRobot SO-101 Arm and Deploy on Jetson AGX Thor 
+# Fine-tune GR00T N1.5 for LeRobot SO-101 Arm and Deploy on Jetson AGX Thor
 
 ## Introduction
 
@@ -28,9 +28,10 @@ This wiki explains how to **fine-tune NVIDIA Isaac GR00T N1.5** for the **LeRobo
 Detailed, step-by-step instructions and reference documentation are provided to help you go from initial setup to full deployment.
 
 ## Getting Started with NVIDIA Jetson Thor Developer Kit
-### Overview of Jetson Thor
-The **NVIDIA® Jetson AGX Thor™ Developer Kit** is a powerhouse for physical AI and humanoid robotics. It’s built around the NVIDIA Blackwell GPU and includes **128 GB high-speed memory**, delivering **up to 2,070 FP4 TFLOPS** of AI compute while operating within a **40-130 W** (common usage up to 130 W) power envelope.
 
+### Overview of Jetson Thor
+
+The **NVIDIA® Jetson AGX Thor™ Developer Kit** is a powerhouse for physical AI and humanoid robotics. It’s built around the NVIDIA Blackwell GPU and includes **128 GB high-speed memory**, delivering **up to 2,070 FP4 TFLOPS** of AI compute while operating within a **40-130 W** (common usage up to 130 W) power envelope.
 
 You can get the Jetson AGX Thor Developer Kit from Seeed Studio here: [Seeed – NVIDIA Jetson AGX Thor™ Developer Kit](https://www.seeedstudio.com/NVIDIA-Jetson-AGX-Thor-Developer-Kit-p-9965.html)
 <div align="center">
@@ -42,11 +43,11 @@ The hardware items included in the box are one Thor unit and a power adapter:
   <img width ="800" src="https://files.seeedstudio.com/wiki/other/physical.jpeg"/>
 </div>
 
-
 ### Flashing the Thor System Image
 
 As of **September 10, 2025**, the latest available system image version for Thor is **38.2**. If you need to re-flash the system for Thor, please follow the instructions in this section.
 Required Items for Flashing:
+
 - A host device with more than 25 GB of available disk space (Ubuntu or Windows OS supported)
 - A USB drive with a capacity of at least 16 GB
 - A monitor and DP/HDMI display cable
@@ -59,7 +60,6 @@ First, download the ISO-format system image for Thor from the official NVIDIA we
   <img width ="700" src="https://files.seeedstudio.com/wiki/other/38.2-iso.png"/>
 </div>
 
-
 Install Balena Etcher on the host machine. To download the installer, click [here](https://etcher.balena.io/#:~:text=DOWNLOAD-,Download%20Etcher,-ASSET) and select the appropriate version based on your host operating system:
 <div align="center">
   <img width ="700" src="https://files.seeedstudio.com/wiki/other/balena.jpg"/>
@@ -70,9 +70,7 @@ After downloading the ISO image file and successfully installing **Balena Etcher
 This process will format the USB drive. Please make sure to back up any important data beforehand.
 :::
 
-
-
-Select the downloaded ISO image file from your local storage, then choose the target device—i.e., your USB drive. 
+Select the downloaded ISO image file from your local storage, then choose the target device—i.e., your USB drive.
 <mark>Be sure to verify the target device name and mount directory carefully!</mark>  Click `Flash!` and wait for the process to complete. Once finished, the USB drive for flashing the system onto Thor is ready:
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/step1.png" width="300"/>
@@ -82,14 +80,12 @@ Select the downloaded ISO image file from your local storage, then choose the ta
 
 <p></p>
 
-
 Next, insert the prepared USB drive, keyboard, display cable (DP/HDMI), and power supply (Type-C) into the Thor board to begin the flashing process.
 <div align="center">
   <img width ="700" src="https://files.seeedstudio.com/wiki/other/flash-insert.jpg"/>
 </div>
 
 <p></p>
-
 
 Power on the Thor and enter the boot interface. Select `Boot Manager`, then choose the USB drive that was inserted into Thor (based on your USB drive name). Press Esc to return to the previous menu, and select `Continue`:
 <div align="center">
@@ -100,15 +96,12 @@ Power on the Thor and enter the boot interface. Select `Boot Manager`, then choo
 
 <p></p>
 
-
-
 After a brief black screen, the following interface will appear. Select `Jetson Thor options` and press Enter. Then, choose the option
 `Flash Jetson AGX Thor Developer Kit on NVMe 0.2.0-r38.2` to flash the system image onto Thor’s NVMe solid-state drive:
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/option.png" width="450"/>
   <img src="https://files.seeedstudio.com/wiki/other/flash-M2.png" width="450"/>
 </div>
-
 
 A large amount of log information will be displayed on the screen. Wait for approximately **15 minutes**. Once this stage is complete, the device will automatically reboot and proceed to the next interface. Wait until the **Update Progress** bar reaches 100%, which indicates the flashing process has been successfully completed:
 <div align="center">
@@ -125,9 +118,8 @@ After flashing, you can proceed with the initial system configuration:
 This system image does not include CUDA, TensorRT, or other SDK components from JetPack.
 :::
 
-
-
 ## Basic Development Environment Setup on Thor
+
 This section provides examples of how to install commonly used software dependencies on Thor for development purposes. These dependencies aim to facilitate subsequent development.
 
 Please note that the listed dependencies are **for reference only**—please install additional packages according to their individual project requirements.
@@ -145,13 +137,16 @@ sudo apt install nvidia-jetpack
 **Browser Installation**
 
 Firefox has been tested and verified to run stably on Ubuntu 24.04:
+
 ```bash
 sudo apt update
 sudo apt install firefox
 ```
+
 **Jtop Installation**
 
 To install jtop, refer to the following instructions.
+
 ```bash
 sudo apt update
 sudo apt install python3
@@ -164,6 +159,7 @@ sudo pip3 install jetson-stats
 **Miniconda Installation**
 
 Miniconda is used to isolate development environments. To install miniconda, refer to the following instructions：
+
 ```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
@@ -175,11 +171,8 @@ conda --version
 
 Compiling the GPU version of PyTorch from source on Thor may result in compatibility issues. For convenience, we provide a precompiled `.whl` file to help developers quickly set up a PyTorch-enabled development environment on Thor.
 
-
 Here, a pre-compiled wheel file is provided for installing PyTorch 2.9 on Thor. This file was compiled in a Python `3.10 + CUDA 13` environment.
 Click [**here**](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EVe_c8F4DR9CluC049HCYoMBP3UXta1kqLEDTvkcYU6s-A?e=d9VEzN) to download the `.whl` file.
-
-
 
 Other precompiled dependency `.whl` files for thor can be found [**here**](https://pypi.jetson-ai-lab.io/sbsa/cu130).
 
@@ -191,14 +184,14 @@ This document provides a reference Docker image to help developers quickly adapt
 <mark>This image is for reference only, and developers are free to choose whether to use it based on their specific needs.</mark>
 
 :::note
-Since the image size exceeds 40 GB, downloading it from the server is relatively slow. 
+Since the image size exceeds 40 GB, downloading it from the server is relatively slow.
 :::
 
 This Docker image can stably run GR00T N1.5 inference. The output of the `pip list` command in the image is as follows:
 
-
 <details>
 <summary> pip.list </summary>
+
 ```bash
 Package                   Version           Location         Installer                              Editable project location
 ------------------------- ----------------- ---------------- -------------------------------------- -------------------------
@@ -504,12 +497,14 @@ zipp                      3.23.0                             /opt/venv/lib/pytho
 
 </details>
 
-The image can be pulled directly from Docker Hub and includes commonly used dependencies such as `PyTorch`, `TensorRT`, and `FlashAttention`: 
+The image can be pulled directly from Docker Hub and includes commonly used dependencies such as `PyTorch`, `TensorRT`, and `FlashAttention`:
+
 ```bash
 docker pull johnnync/lerobot:r38.2.aarch64-cu130-24.04
 ```
 
-To run Docker on Thor, refer to the following command. Replace `your_docker_img:tag` with your Docker image name and tag, or use the image ID: 
+To run Docker on Thor, refer to the following command. Replace `your_docker_img:tag` with your Docker image name and tag, or use the image ID:
+
 ```bash
 sudo docker run --rm -it \
   --network=host \
@@ -522,10 +517,6 @@ sudo docker run --rm -it \
   -v /dev:/dev \
   your_docker_img:tag
 ```
-
-
-
-
 
 ## Data Collection Using the SO-ARM
 
@@ -548,7 +539,7 @@ To stream two USB cameras simultaneously on Thor, after connecting one camera to
 
 ### Lerobot Environment Setup
 
-**Miniconda Installation** 
+**Miniconda Installation**
 
 ```bash
 #Jetson 
@@ -585,14 +576,13 @@ conda install ffmpeg -c conda-forge
 :::
 
 To verify that your installed PyTorch is using GPU support, enter the following in the terminal:
+
 ```bash
 import torch
 print(torch.cuda.is_available())
 ```
 
 If you plan to collect data on a Jetson device, you can refer to the previous sections for installing PyTorch, or check this [article](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)
-
-
 
 Once PyTorch is confirmed to be properly installed, run the following in the terminal:
 
@@ -607,6 +597,7 @@ pip3 install numpy==1.26.0  # This should match torchvision
 ```
 
 ### Servo Calibration
+
 The servo calibration process is not elaborated in detail in this document. Please refer to the following article for more information:
 
 [click me](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/#%E6%A0%A1%E5%87%86%E8%88%B5%E6%9C%BA%E5%B9%B6%E7%BB%84%E8%A3%85%E6%9C%BA%E6%A2%B0%E8%87%82)
@@ -635,7 +626,6 @@ The port for the leader arm is likely`/dev/ttyACM0`. The port for the follower a
 :::note
 **When calibrating the robotic arms, please do NOT connect any USB cameras, as this may cause port conflicts or incorrect port assignments.**
 :::
-
 
 **After running the calibration script, manually move each joint of the robotic arm to ensure that it reaches its full range of motion! Failure to do so may result in a mismatch between the poses of the leader and follower arms during teleoperation.**
 
@@ -672,15 +662,12 @@ Use the leader arm to teleoperate the follower arm. Ensure that the two arms mir
 
 ### Camera Installation
 
-
 It is generally recommended to install one camera on the wrist joint of the robotic arm, and another camera on the desktop surface, to ensure proper coverage of the arm’s posture.
 <mark>The specific installation approach depends on your application scenario; the example shown below is for reference only.</mark>
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/camdata1.png" height="450"/>
   <img src="https://files.seeedstudio.com/wiki/other/camdata2.png" height="450"/>
 </div>
-
-
 
 Run the following script to ensure that the system correctly detects the connected USB cameras and that the cameras can be accessed properly:
 
@@ -709,7 +696,7 @@ Camera #0:
 
 The terminal will output a list of available camera IDs. Be sure to take note of the IDs to ensure that your program can correctly access the cameras!
 
-To test camera usage during teleoperation: 
+To test camera usage during teleoperation:
 
 ```bash
 python -m lerobot.teleoperate \
@@ -823,7 +810,6 @@ python -m lerobot.replay \
 The parameter `--dataset.episode=0` specifies which episode to replay on the follower arm.
 For example: running this script will cause the follower arm to execute the exact actions recorded during `episode_0`.
 
-
 ### Policy Training
 
 If you plan to train the policy locally, you may refer to the following command:
@@ -846,7 +832,6 @@ python -m lerobot.scripts.train \
 
 `--steps`: Number of training steps
 
-
 :::tip
 In the following sections, we will introduce a cloud-based training platform and demonstrate basic usage. You may choose to complete training more efficiently on the remote server.
 :::
@@ -855,19 +840,19 @@ In the following sections, we will introduce a cloud-based training platform and
 If you choose to train the policy in the cloud, make sure that your dataset is uploaded to the cloud server in advance, or downloaded from the Hugging Face Hub. However, due to potential network issues when downloading directly from the Hugging Face Hub, it is strongly recommended to manually upload the dataset to your cloud server.
 :::
 
-
 ## Use NVIDIA Brev for training policies
 
 NVIDIA Brev provides streamlined access to NVIDIA GPU instances on popular cloud platforms, automatic environment setup, and flexible deployment options, enabling developers to start experimenting instantly.
-
 
 Platform access URL:
 [https://login.brev.nvidia.com/signin](https://login.brev.nvidia.com/signin)
 
 You will need to register an account to use the platform. This section introduces the basic usage of the training platform.
+
 ### Enabling the Cloud-Based Training Platform
 
 **Step-by-Step Instructions**
+
 - Create a Cloud Server Instance -step 1
 
 <div align="center">
@@ -886,7 +871,6 @@ You will need to register an account to use the platform. This section introduce
   <img src="https://files.seeedstudio.com/wiki/other/train2.png" width="600"/>
 </div>
 
-
 **Launch the Web-Based Jupyter Notebook**：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/jnote0.png" width="600"/>
@@ -895,12 +879,11 @@ You will need to register an account to use the platform. This section introduce
   <img src="https://files.seeedstudio.com/wiki/other/jnote1.png" width="600"/>
 </div>
 
-
 ### Training the Model and Exporting from the Server
 
 **Developers can train models directly within the notebook terminal. Below is an example for training an act model and exporting it from the server afterward.**
 
-Install Conda on the server: 
+Install Conda on the server:
 
 ```bash
 mkdir -p ~/miniconda3
@@ -911,7 +894,8 @@ source ~/miniconda3/bin/activate
 conda init --all
 ```
 
-Install lerobot projectt: 
+Install lerobot projectt:
+
 ```bash
 conda create -y -n lerobot python=3.10 && conda activate lerobot
 git clone https://github.com/Seeed-Projects/lerobot.git ~/lerobot
@@ -931,6 +915,7 @@ python -m lerobot.scripts.train \
   --policy.push_to_hub=false\
   --steps=300000 
 ```
+
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/train4.png" width="600"/>
 </div>
@@ -946,8 +931,6 @@ Solution is that: First compress the target folder into a `.zip` or `.tar.gz` ar
   <img src="https://files.seeedstudio.com/wiki/other/train5.png" width="600"/>
 </div>
 
-
-
 ## Isaac GR00T N1.5 Inference on Thor
 
 Jetson AGX Thor, as a powerful edge computing and deployment platform, provides sufficient resources to support large-scale model inference. In this section, building upon the previously introduced content, we demonstrate how to run inference for GR00T N1.5 on Thor.
@@ -955,6 +938,7 @@ Jetson AGX Thor, as a powerful edge computing and deployment platform, provides 
 GR00T N1.5 is an open-source baseline system released by NVIDIA Research in the field of robot learning. It aims to provide a unified framework for embodied AI training and inference, particularly focusing on imitation learning and policy learning driven by large-scale models.
 
 ### Preparation
+
 The pre-trained models of GR00T N1.5 are available via **Hugging Faces**. You can download them from the following link:
 
 [https://huggingface.co/nvidia/GR00T-N1.5-3B/tree/main](https://huggingface.co/nvidia/GR00T-N1.5-3B/tree/main)
@@ -963,10 +947,10 @@ The pre-trained models of GR00T N1.5 are available via **Hugging Faces**. You ca
   <img src="https://files.seeedstudio.com/wiki/other/gr00tD.png" width="600"/>
 </div>
 
-
-All dependencies required for GR00T inference have been pre-configured in a dedicated Docker image. 
+All dependencies required for GR00T inference have been pre-configured in a dedicated Docker image.
 
 Use the following command to start the container:
+
 ```bash
 sudo docker run --rm -it \
   --network=host \
@@ -980,7 +964,8 @@ sudo docker run --rm -it \
   lerobot:r38.2.aarch64-cu130-24.04
 ```
 
-Git clone the source code of Gr00t,and install it: 
+Git clone the source code of Gr00t,and install it:
+
 ```bash
 git clone https://github.com/NVIDIA/Isaac-GR00T.git
 cd Isaac-GR00T
@@ -990,11 +975,12 @@ pip install -e .[thor]
 
 Gr00t is fully compatible with the datasets collected using the lerobot framework. Refer to the previous "**Data Collection**" section to prepare your dataset for fine-tuning the Gr00t model.
 
-
 ### Model Fine-Tuning
+
 **The fine-tuning process can be executed either on the provided cloud training platform or directly inside the Docker container on Thor**.
 
 If you have not downloaded any pretrained GR00T model and do not plan to use a custom version, you may use the following command to fine-tune based on the Hugging Face weights:
+
 ```bash
 python scripts/gr00t_finetune.py \
    --dataset-path ./demo_data/so101-table-cleanup/ \
@@ -1004,10 +990,11 @@ python scripts/gr00t_finetune.py \
    --data-config so100_dualcam \
    --video-backend torchvision_av
 ```
+
 This script will automatically download the pretrained GR00T model from Hugging Face and begin the fine-tuning process.
 
-
 If you wish to use a locally stored pretrained GR00T model, modify the command as follows:
+
 ```bash
 python scripts/gr00t_finetune.py \
    --dataset-path ./demo_data/so101-table-cleanup/ \
@@ -1018,12 +1005,12 @@ python scripts/gr00t_finetune.py \
    --video-backend torchvision_av \
    --base-model-path ./pretrained/GR00T-N1.5-3
 ```
+
 `--dataset-path` is the file path of collection data from SO-ARM.
 
 :::note
 The default fine-tuning settings require ~25G of VRAM. If you don't have that much VRAM, try adding the `--no-tune_diffusion_model` flag to the gr00t_finetune.py script.
 :::
-
 
 ### Running Inference with GR00T N1.5
 
@@ -1032,8 +1019,8 @@ To achieve optimal performance, it is recommended to replicate the real-world se
   <img src="https://files.seeedstudio.com/wiki/other/deploy.jpg" width="400"/>
 </div>
 
-
 Inside the Docker container, open a terminal and launch the GR00T inference service:
+
 ```bash
 python scripts/inference_service.py --server \
     --model_path ./so101-checkpoints \
@@ -1048,11 +1035,13 @@ Upon successful launch, the terminal should display logs similar to:
 </div>
 
 Open another terminal, and use the following command to enter the same container from a different shell:
+
 ```bash
 sudo docker exec -it <container id> /bin/bahs
 ```
 
 Then, in this second shell, start the inference client:
+
 ```bash
   python examples/eval_lerobot.py \
     --robot.type=so100_follower \
@@ -1086,15 +1075,12 @@ Q1: The Brev CLI tool doesn't work on the cloud training platform?
 This is often due to network issues.
 You may install and log in to Brev CLI on your local Ubuntu host, then attempt to connect to your cloud instance using SSH from your local terminal.
 
-
 Q2: How do I upload data to the training platform?
 
 Use the following command: `scp <local-file-path> <brev-instance-name>:<remote-file-path>`,例如`scp -r ./record_2_cameras/ gr00t-trainer:/home/ubuntu/Datasets`
 
-
-
-
 ## References
+
 - https://developer.nvidia.com/embedded/jetpack
 - https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning
 
@@ -1103,11 +1089,11 @@ Use the following command: `scp <local-file-path> <brev-instance-name>:<remote-f
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

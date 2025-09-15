@@ -28,9 +28,10 @@ last_update:
 提供详细的分步说明和参考文档，帮助您从初始设置到完整部署。
 
 ## NVIDIA Jetson Thor 开发者套件入门
-### Jetson Thor 概述
-**NVIDIA® Jetson AGX Thor™开发者套件**是物理 AI 和人形机器人的强大平台。它基于 NVIDIA Blackwell GPU 构建，包含**128 GB 高速内存**，在**40-130 W**（常用功耗高达 130 W）功耗范围内提供**高达 2,070 FP4 TFLOPS**的 AI 计算能力。
 
+### Jetson Thor 概述
+
+**NVIDIA® Jetson AGX Thor™开发者套件**是物理 AI 和人形机器人的强大平台。它基于 NVIDIA Blackwell GPU 构建，包含**128 GB 高速内存**，在**40-130 W**（常用功耗高达 130 W）功耗范围内提供**高达 2,070 FP4 TFLOPS**的 AI 计算能力。
 
 您可以从 Seeed Studio 获取 Jetson AGX Thor 开发者套件：[Seeed – NVIDIA Jetson AGX Thor™开发者套件](https://www.seeedstudio.com/NVIDIA-Jetson-AGX-Thor-Developer-Kit-p-9965.html)
 <div align="center">
@@ -42,11 +43,11 @@ last_update:
   <img width ="800" src="https://files.seeedstudio.com/wiki/other/physical.jpeg"/>
 </div>
 
-
 ### 刷写 Thor 系统镜像
 
 截至**2025 年 9 月 10 日**，Thor 可用的最新系统镜像版本是**38.2**。如果您需要为 Thor 重新刷写系统，请按照本节中的说明操作。
 刷写所需物品：
+
 - 一台具有超过 25 GB 可用磁盘空间的主机设备（支持 Ubuntu 或 Windows 操作系统）
 - 一个容量至少为 16 GB 的 USB 驱动器
 - 一台显示器和 DP/HDMI 显示线缆
@@ -59,7 +60,6 @@ last_update:
   <img width ="700" src="https://files.seeedstudio.com/wiki/other/38.2-iso.png"/>
 </div>
 
-
 在主机上安装 Balena Etcher。要下载安装程序，请点击[这里](https://etcher.balena.io/#:~:text=DOWNLOAD-,Download%20Etcher,-ASSET)并根据您的主机操作系统选择合适的版本：
 <div align="center">
   <img width ="700" src="https://files.seeedstudio.com/wiki/other/balena.jpg"/>
@@ -69,8 +69,6 @@ last_update:
 :::danger
 此过程将格式化 USB 驱动器。请确保事先备份任何重要数据。
 :::
-
-
 
 从本地存储中选择下载的 ISO 镜像文件，然后选择目标设备——即您的 USB 驱动器。
 <mark>请务必仔细验证目标设备名称和挂载目录！</mark>点击`Flash!`并等待过程完成。完成后，用于在 Thor 上刷写系统的 USB 驱动器就准备好了：
@@ -82,14 +80,12 @@ last_update:
 
 <p></p>
 
-
 接下来，将准备好的 USB 驱动器、键盘、显示线缆（DP/HDMI）和电源（Type-C）插入 Thor 板以开始刷写过程。
 <div align="center">
   <img width ="700" src="https://files.seeedstudio.com/wiki/other/flash-insert.jpg"/>
 </div>
 
 <p></p>
-
 
 启动 Thor 并进入启动界面。选择`Boot Manager`，然后选择插入 Thor 的 USB 驱动器（基于您的 USB 驱动器名称）。按 Esc 返回上一个菜单，然后选择`Continue`：
 <div align="center">
@@ -100,15 +96,12 @@ last_update:
 
 <p></p>
 
-
-
 经过短暂的黑屏后，将出现以下界面。选择`Jetson Thor options`并按 Enter。然后，选择选项
 `Flash Jetson AGX Thor Developer Kit on NVMe 0.2.0-r38.2`将系统镜像刷写到 Thor 的 NVMe 固态硬盘：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/option.png" width="450"/>
   <img src="https://files.seeedstudio.com/wiki/other/flash-M2.png" width="450"/>
 </div>
-
 
 屏幕上将显示大量日志信息。等待大约**15 分钟**。此阶段完成后，设备将自动重启并进入下一个界面。等待**更新进度**条达到 100%，这表示刷写过程已成功完成：
 <div align="center">
@@ -125,9 +118,8 @@ last_update:
 此系统镜像不包含 CUDA、TensorRT 或 JetPack 中的其他 SDK 组件。
 :::
 
-
-
 ## Thor 上的基本开发环境设置
+
 本节提供了如何在 Thor 上安装常用软件依赖项以用于开发目的的示例。这些依赖项旨在促进后续开发。
 
 请注意，列出的依赖项**仅供参考**——请根据各自项目的要求安装其他软件包。
@@ -145,13 +137,16 @@ sudo apt install nvidia-jetpack
 **浏览器安装**
 
 Firefox 已经过测试并验证可在 Ubuntu 24.04 上稳定运行：
+
 ```bash
 sudo apt update
 sudo apt install firefox
 ```
+
 **Jtop 安装**
 
 要安装 jtop，请参考以下说明。
+
 ```bash
 sudo apt update
 sudo apt install python3
@@ -164,6 +159,7 @@ sudo pip3 install jetson-stats
 **Miniconda 安装**
 
 Miniconda 用于隔离开发环境。要安装 miniconda，请参考以下说明：
+
 ```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
@@ -175,11 +171,8 @@ conda --version
 
 在 Thor 上从源代码编译 GPU 版本的 PyTorch 可能会导致兼容性问题。为了方便起见，我们提供了一个预编译的`.whl`文件，帮助开发者在 Thor 上快速设置支持 PyTorch 的开发环境。
 
-
 这里提供了一个预编译的 wheel 文件，用于在 Thor 上安装 PyTorch 2.9。此文件是在 Python `3.10 + CUDA 13`环境中编译的。
 点击[**这里**](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EVe_c8F4DR9CluC049HCYoMBP3UXta1kqLEDTvkcYU6s-A?e=d9VEzN)下载`.whl`文件。
-
-
 
 其他用于 thor 的预编译依赖项`.whl`文件可以在[**这里**](https://pypi.jetson-ai-lab.io/sbsa/cu130)找到。
 
@@ -196,9 +189,9 @@ conda --version
 
 此 Docker 镜像可以稳定运行 GR00T N1.5 推理。镜像中`pip list`命令的输出如下：
 
-
 <details>
 <summary> pip.list </summary>
+
 ```bash
 Package                   Version           Location         Installer                              Editable project location
 ------------------------- ----------------- ---------------- -------------------------------------- -------------------------
@@ -499,16 +492,19 @@ widgetsnbextension        4.0.14                             /opt/venv/lib/pytho
 wrapt                     1.17.3                             /opt/venv/lib/python3.12/site-packages pip
 xxhash                    3.5.0                              /opt/venv/lib/python3.12/site-packages pip
 yarl                      1.20.1                             /opt/venv/lib/python3.12/site-packages pip
-zipp                      3.23.0                             /opt/venv/lib/python3.12/site-packages pip```
+zipp                      3.23.0                             /opt/venv/lib/python3.12/site-packages pip
+```
 
 </details>
 
 镜像可以直接从 Docker Hub 拉取，包含常用的依赖项，如 `PyTorch`、`TensorRT` 和 `FlashAttention`：
+
 ```bash
 docker pull johnnync/lerobot:r38.2.aarch64-cu130-24.04
 ```
 
 要在 Thor 上运行 Docker，请参考以下命令。将 `your_docker_img:tag` 替换为您的 Docker 镜像名称和标签，或使用镜像 ID：
+
 ```bash
 sudo docker run --rm -it \
   --network=host \
@@ -521,10 +517,6 @@ sudo docker run --rm -it \
   -v /dev:/dev \
   your_docker_img:tag
 ```
-
-
-
-
 
 ## 使用 SO-ARM 进行数据收集
 
@@ -584,14 +576,13 @@ conda install ffmpeg -c conda-forge
 :::
 
 要验证您安装的 PyTorch 是否使用 GPU 支持，请在终端中输入以下内容：
+
 ```bash
 import torch
 print(torch.cuda.is_available())
 ```
 
 如果您计划在 Jetson 设备上收集数据，可以参考前面的章节来安装 PyTorch，或查看这篇[文章](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)
-
-
 
 确认 PyTorch 已正确安装后，在终端中运行以下命令：
 
@@ -606,6 +597,7 @@ pip3 install numpy==1.26.0  # This should match torchvision
 ```
 
 ### 舵机校准
+
 舵机校准过程在本文档中不详细阐述。请参考以下文章了解更多信息：
 
 [点击我](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/#%E6%A0%A1%E5%87%86%E8%88%B5%E6%9C%BA%E5%B9%B6%E7%BB%84%E8%A3%85%E6%9C%BA%E6%A2%B0%E8%87%82)
@@ -634,7 +626,6 @@ Reconnect the USB cable.
 :::note
 **校准机械臂时，请不要连接任何 USB 摄像头，因为这可能导致端口冲突或端口分配错误。**
 :::
-
 
 **运行校准脚本后，手动移动机械臂的每个关节，确保其达到完整的运动范围！否则可能导致遥操作期间主控臂和从动臂姿态不匹配。**
 
@@ -671,15 +662,12 @@ python -m lerobot.teleoperate \
 
 ### 摄像头安装
 
-
 通常建议在机械臂的腕关节上安装一个摄像头，在桌面表面安装另一个摄像头，以确保对臂的姿态有适当的覆盖。
 <mark>具体的安装方法取决于您的应用场景；下面显示的示例仅供参考。</mark>
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/camdata1.png" height="450"/>
   <img src="https://files.seeedstudio.com/wiki/other/camdata2.png" height="450"/>
 </div>
-
-
 
 运行以下脚本以确保系统正确检测到连接的 USB 摄像头，并且摄像头可以正常访问：
 
@@ -785,7 +773,8 @@ python -m lerobot.record \
     --dataset.single_task="Grab the black cube" \
     --dataset.push_to_hub=true \
     --dataset.episode_time_s=30 \
-    --dataset.reset_time_s=30 ```
+    --dataset.reset_time_s=30 
+```
 
 :::tip
 收集的数据将保存在本地的 `~/.cache/huggingface/lerobot` 目录下！
@@ -821,7 +810,6 @@ python -m lerobot.replay \
 参数 `--dataset.episode=0` 指定在从动臂上重放哪个片段。
 例如：运行此脚本将使从动臂执行在 `episode_0` 期间录制的确切动作。
 
-
 ### 策略训练
 
 如果您计划在本地训练策略，可以参考以下命令：
@@ -844,7 +832,6 @@ python -m lerobot.scripts.train \
 
 `--steps`：训练步数
 
-
 :::tip
 在以下章节中，我们将介绍基于云端的训练平台并演示基本用法。您可以选择在远程服务器上更高效地完成训练。
 :::
@@ -853,19 +840,19 @@ python -m lerobot.scripts.train \
 如果您选择在云端训练策略，请确保您的数据集已提前上传到云服务器，或从 Hugging Face Hub 下载。但是，由于直接从 Hugging Face Hub 下载时可能出现网络问题，强烈建议手动将数据集上传到您的云服务器。
 :::
 
-
 ## 使用 NVIDIA Brev 训练策略
 
 NVIDIA Brev 提供对流行云平台上 NVIDIA GPU 实例的简化访问、自动环境设置和灵活的部署选项，使开发者能够立即开始实验。
-
 
 平台访问 URL：
 [https://login.brev.nvidia.com/signin](https://login.brev.nvidia.com/signin)
 
 您需要注册一个账户来使用该平台。本节介绍训练平台的基本用法。
+
 ### 启用基于云端的训练平台
 
 **分步说明**
+
 - 创建云服务器实例 - 步骤 1
 
 <div align="center">
@@ -884,7 +871,6 @@ NVIDIA Brev 提供对流行云平台上 NVIDIA GPU 实例的简化访问、自�
   <img src="https://files.seeedstudio.com/wiki/other/train2.png" width="600"/>
 </div>
 
-
 **启动基于 Web 的 Jupyter Notebook**：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/jnote0.png" width="600"/>
@@ -892,7 +878,6 @@ NVIDIA Brev 提供对流行云平台上 NVIDIA GPU 实例的简化访问、自�
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/jnote1.png" width="600"/>
 </div>
-
 
 ### 训练模型并从服务器导出
 
@@ -910,6 +895,7 @@ conda init --all
 ```
 
 安装 lerobot 项目：
+
 ```bash
 conda create -y -n lerobot python=3.10 && conda activate lerobot
 git clone https://github.com/Seeed-Projects/lerobot.git ~/lerobot
@@ -929,6 +915,7 @@ python -m lerobot.scripts.train \
   --policy.push_to_hub=false\
   --steps=300000 
 ```
+
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/train4.png" width="600"/>
 </div>
@@ -944,8 +931,6 @@ python -m lerobot.scripts.train \
   <img src="https://files.seeedstudio.com/wiki/other/train5.png" width="600"/>
 </div>
 
-
-
 ## 在 Thor 上进行 Isaac GR00T N1.5 推理
 
 Jetson AGX Thor 作为强大的边缘计算和部署平台，提供了足够的资源来支持大规模模型推理。在本节中，基于之前介绍的内容，我们演示如何在 Thor 上运行 GR00T N1.5 的推理。
@@ -953,6 +938,7 @@ Jetson AGX Thor 作为强大的边缘计算和部署平台，提供了足够的�
 GR00T N1.5 是 NVIDIA Research 在机器人学习领域发布的开源基线系统。它旨在为具身 AI 训练和推理提供统一框架，特别专注于由大规模模型驱动的模仿学习和策略学习。
 
 ### 准备工作
+
 GR00T N1.5 的预训练模型可通过 **Hugging Faces** 获得。您可以从以下链接下载：
 
 [https://huggingface.co/nvidia/GR00T-N1.5-3B/tree/main](https://huggingface.co/nvidia/GR00T-N1.5-3B/tree/main)
@@ -961,10 +947,10 @@ GR00T N1.5 的预训练模型可通过 **Hugging Faces** 获得。您可以从�
   <img src="https://files.seeedstudio.com/wiki/other/gr00tD.png" width="600"/>
 </div>
 
-
 GR00T 推理所需的所有依赖项都已在专用的 Docker 镜像中预配置。
 
 使用以下命令启动容器：
+
 ```bash
 sudo docker run --rm -it \
   --network=host \
@@ -979,6 +965,7 @@ sudo docker run --rm -it \
 ```
 
 Git 克隆 Gr00t 的源代码并安装：
+
 ```bash
 git clone https://github.com/NVIDIA/Isaac-GR00T.git
 cd Isaac-GR00T
@@ -988,11 +975,12 @@ pip install -e .[thor]
 
 Gr00t 完全兼容使用 lerobot 框架收集的数据集。参考之前的"**数据收集**"部分来准备您的数据集以微调 Gr00t 模型。
 
-
 ### 模型微调
+
 **微调过程可以在提供的云训练平台上执行，也可以直接在 Thor 上的 Docker 容器内执行**。
 
 如果您尚未下载任何预训练的 GR00T 模型且不打算使用自定义版本，可以使用以下命令基于 Hugging Face 权重进行微调：
+
 ```bash
 python scripts/gr00t_finetune.py \
    --dataset-path ./demo_data/so101-table-cleanup/ \
@@ -1002,10 +990,11 @@ python scripts/gr00t_finetune.py \
    --data-config so100_dualcam \
    --video-backend torchvision_av
 ```
+
 此脚本将自动从 Hugging Face 下载预训练的 GR00T 模型并开始微调过程。
 
-
 如果您希望使用本地存储的预训练 GR00T 模型，请按如下方式修改命令：
+
 ```bash
 python scripts/gr00t_finetune.py \
    --dataset-path ./demo_data/so101-table-cleanup/ \
@@ -1016,12 +1005,12 @@ python scripts/gr00t_finetune.py \
    --video-backend torchvision_av \
    --base-model-path ./pretrained/GR00T-N1.5-3
 ```
+
 `--dataset-path` 是来自 SO-ARM 的收集数据的文件路径。
 
 :::note
 默认的微调设置需要约 25G 的显存。如果您没有那么多显存，请尝试在 gr00t_finetune.py 脚本中添加 `--no-tune_diffusion_model` 标志。
 :::
-
 
 ### 使用 GR00T N1.5 运行推理
 
@@ -1030,8 +1019,8 @@ python scripts/gr00t_finetune.py \
   <img src="https://files.seeedstudio.com/wiki/other/deploy.jpg" width="400"/>
 </div>
 
-
 在 Docker 容器内，打开终端并启动 GR00T 推理服务：
+
 ```bash
 python scripts/inference_service.py --server \
     --model_path ./so101-checkpoints \
@@ -1046,11 +1035,13 @@ python scripts/inference_service.py --server \
 </div>
 
 打开另一个终端，使用以下命令从不同的 shell 进入同一个容器：
+
 ```bash
 sudo docker exec -it <container id> /bin/bahs
 ```
 
 然后，在第二个 shell 中，启动推理客户端：
+
 ```bash
   python examples/eval_lerobot.py \
     --robot.type=so100_follower \
@@ -1068,6 +1059,7 @@ sudo docker exec -it <container id> /bin/bahs
 
 :::tip
 在首次运行客户端进程时，您必须校准机械臂的舵机。校准过程与之前描述的相同。
+
 确保每个关节都移动到其完整的运动范围，以确保正确的遥操作和推理行为。
 :::
 
@@ -1083,15 +1075,12 @@ Q1：Brev CLI 工具在云训练平台上不工作？
 这通常是由于网络问题。
 您可以在本地 Ubuntu 主机上安装并登录 Brev CLI，然后尝试从本地终端使用 SSH 连接到您的云实例。
 
-
 Q2：如何将数据上传到训练平台？
 
 使用以下命令：`scp <local-file-path> <brev-instance-name>:<remote-file-path>`，例如`scp -r ./record_2_cameras/ gr00t-trainer:/home/ubuntu/Datasets`
 
-
-
-
 ## 参考资料
+
 - https://developer.nvidia.com/embedded/jetpack
 - https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning
 
@@ -1100,11 +1089,11 @@ Q2：如何将数据上传到训练平台？
 感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
