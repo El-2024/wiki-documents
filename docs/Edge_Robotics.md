@@ -245,7 +245,7 @@ last_update:
 <a href="/install_isaaclab/" className="nav-item">
   <span className="text">Isaac Lab Installation</span>
 </a>
-<a href="//training_soarm101_policy_with_isaacLab/" className="nav-item">
+<a href="/training_soarm101_policy_with_isaacLab/" className="nav-item">
   <span className="text">So Arm Reinforcement Learning</span>
   <span className="tag recommended">New</span>
 </a>
