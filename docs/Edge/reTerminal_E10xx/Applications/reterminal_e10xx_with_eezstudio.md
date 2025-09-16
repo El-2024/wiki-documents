@@ -12,13 +12,11 @@ last_update:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
 # Getting Started with reTerminal E Series ePaper Display and EEZStudio
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/eez.jpg" style={{width:600, height:'auto'}}/></div>
 
 ## Introduction
-
 
 This guide will walk you through designing a professional user interface for the reTerminal E Series using the visual design tool **EEZStudio**. You will learn how to create UI elements, generate the necessary code, and finally deploy it to the device using the Arduino IDE. This process allows you to build custom interfaces with excellent visibility and ultra-low power consumption, ideal for HMI applications.
 
@@ -51,8 +49,8 @@ To complete this tutorial, please prepare one of the following reTerminal E Seri
   </table>
 </div>
 
-
 ### What is EEZ Studio?
+
 EEZ Studio is a modern visual programming and UI design environment primarily developed for building user interfaces for test and measurement instruments, embedded devices, and other interactive applications. It combines drag-and-drop GUI design, scripting capabilities, and device integration tools, allowing developers, engineers, and makers to quickly create professional interfaces without starting from scratch.
 
 In short, EEZ Studio acts as a bridge between hardware and software, enabling you to design, prototype, and deploy user experiences more efficiently.
@@ -125,7 +123,6 @@ Although EEZ Studio and SquareLine Studio are both GUI design tools, they focus 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/eez91.jpg" style={{width:1000, height:'auto'}}/></div>
 ### Creat Project
 
-
 At the top of the EEZ Studio interface, click the “CREATE” button.
 In the project template list on the left, locate and select the “LVGL” project.
 
@@ -135,8 +132,6 @@ In the project template list on the left, locate and select the “LVGL” proje
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/01.jpg" style={{width:900, height:'auto'}}/></div>
 
-
-
 ### Project Parameter Settings & UI Interface Design
 
 ### UI Interface Design
@@ -145,8 +140,8 @@ UI (User Interface) design is crucial in embedded product development, as it dir
 
 In EEZ Studio, you can rapidly assemble interfaces by dragging and dropping components. Utilize tools like Styles, Fonts, Bitmaps, and Themes to precisely control visual effects, crafting a professional and distinctive user experience.
 
-
 Below is an introduction to the recommended tools：
+
 - [Color](https://coolors.co/)
 - [Color Chart](https://peiseka.com/)
 - [Icon](https://www.iconfont.cn/?spm=a313x.search_index.i3.3.559b3a81C6d3Cl)
@@ -162,23 +157,23 @@ Below is an introduction to the recommended tools：
 - Themes: Define overall interface aesthetics, enabling quick toggles like light/dark mode.
 - Groups: Organize multiple widgets together for unified management and layout.
 
-
-
 In this tutorial, I'll guide you through designing the UI for a website or app's homepage. Once you master the core techniques, you'll be able to apply them to create any interface you desire with ease.
 
 This page is composed of five components:
+
 - Panel
 - Label
 - Line
 - Checkbox
 - Image
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/15.jpg" style={{width:900, height:'auto'}}/></div>
 
 Step 1 .Change the background color of the canvas
+
 - Select the canvas whose background color you need to change.
 - Check Color, then select your preferred hexadecimal color code.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a1.jpg" style={{width:900, height:'auto'}}/></div>
 
 Step 2 .Add Panel
@@ -192,7 +187,6 @@ Step 2 .Add Panel
 Step 3 .Add Bitmaps
 
 - Click the Bitmaps icon in the far-right sidebar to add an image.
-
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a3.jpg" style={{width:900, height:'auto'}}/></div>
 
@@ -213,12 +207,15 @@ Step 4 .Add Line
 Step 5 .Add Label
 
 - Drag the Label component from the Basic group onto the canvas, then select your font color and font format settings.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a7.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Click the Fonts box in the rightmost column to add your font formats.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a8.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Set the font name and size
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a9.jpg" style={{width:900, height:'auto'}}/></div>
 
 The above outlines the basic usage of these five components. You can arrange them according to the reference diagram or your own designed UI interface.
@@ -247,9 +244,6 @@ Click the Build icon (wrench button) to generate files such as UI code, image da
 **Step 4 .Confirming Successful Build**
 
 Upon completion, EEZ Studio displays a green prompt stating “Build successful,” indicating the code has been generated successfully.
-
-
-
 
 ## Environmental Preparation
 
@@ -357,6 +351,7 @@ The full color ePaper display supports red, black, and white colors, allowing fo
 ```cpp
 #define BOARD_SCREEN_COMBO 521 // reTerminal E1002 (UC8179C)
 ```
+
 </TabItem>
 </Tabs>
 
@@ -373,6 +368,7 @@ The `EEZ_UI file` is generated during the build process in EEZStudio. You need t
 
 Here is the main Arduino sketch to run the UI:
 Three buttons correspond to three different screens, starting with green: HOME\Workstation\Plant in sequence.
+
 ```cpp
 #include <TFT_eSPI.h>
 #include <lvgl.h>
@@ -496,7 +492,6 @@ void loop()
     </tr>
   </table>
 </div>
-
 
 ## Tech Support & Product Discussion
 
