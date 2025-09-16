@@ -69,6 +69,10 @@ last_update:
       <span className="text">Brazo SO100 con IsaacSim</span>
       <span className="tag recommended">Nuevo</span>
     </a>
+    <a href="/es/fine_tune_gr00t_n1.5_for_lerobot_so_arm_and_deploy_on_jetson_thor/" className="nav-item">
+        <span className="text">Brazo SO101 con GR00T de NVIDIA</span>
+        <span className="tag recommended">Nuevo</span>
+    </a>
 </div>
 
 ## 🚗 Lekiwi
@@ -118,10 +122,10 @@ last_update:
 
 <div className="card-container">
     <a href="/es/myactuator_series/" className="nav-item">
-      <span className="text">0️⃣Serie X de MyActuator</span>
+      <span className="text">0️⃣MyActuator Serie X</span>
     </a>
     <a href="/es/damiao_series/" className="nav-item">
-      <span className="text">1️⃣Serie Damiao DM43</span>
+      <span className="text">1️⃣Damiao Serie DM43</span>
     </a>
     <a href="/es/feetech_servo/" className="nav-item">
       <span className="text">2️⃣Motor Servo Feetech STS3215</span>
@@ -304,6 +308,7 @@ html[data-theme='dark'] .quick-nav-container {
   padding: 0.8rem 1.5rem;
   border-radius: 12px;
   display: flex;
+  margin: 6px 6px; /* 上下6px，左右6px */
   flex-direction: column;
   align-items: center;
   text-decoration: none !important;
@@ -371,8 +376,7 @@ html[data-theme='dark'] .nav-item:hover {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
-  .quick-nav {
-    flex-direction: column;
+  .quick-nav {    flex-direction: column;
     gap: 0.5rem;
   }
   .nav-item {
@@ -389,7 +393,8 @@ html[data-theme='dark'] .nav-item:hover {
 
 <style>{`
 /* 内容卡片增强版样式 */
-.nav-grid {  display: block;
+.nav-grid {
+  display: block;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 2rem;
@@ -406,7 +411,7 @@ html[data-theme='dark'] .nav-item:hover {
   z-index: 1;
 }
 
-/* Modo Dark - Tarjetas de contenido */
+/* Dark模式 - 内容卡片 */
 html[data-theme='dark'] .category-card {
   background:rgb(30, 30, 32);
   box-shadow: 0 4px 6px rgba(0,0,0,0.4);
@@ -417,7 +422,7 @@ html[data-theme='dark'] .category-card {
   margin-bottom: 2rem;
 }
 
-/* Marcador de color de categoría */
+/* 分类色标 */
 .category-card::before {
   content: "";
   position: absolute;
@@ -432,13 +437,13 @@ html[data-theme='dark'] .category-card {
 .sensors::before { background: linear-gradient(to bottom, #ff6b6b, #ff8e8e); }
 .software::before { background: linear-gradient(to bottom, #f5a623, #f5c623); }
 
-/* Efecto de flotación */
+/* 悬浮特效 */
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
-/* Modo Dark - Efecto de flotación */
+/* Dark模式 - 悬浮特效 */
 html[data-theme='dark'] .category-card:hover {
   box-shadow: 0 12px 20px rgba(0,0,0,0.6);
 }
@@ -454,12 +459,12 @@ html[data-theme='dark'] .category-card:hover {
   z-index: -1;
 }
 
-/* Modo Dark - Efecto de luz flotante */
+/* Dark模式 - 悬浮光效 */
 html[data-theme='dark'] .category-card:hover::after {
   background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
 }
 
-/* Animación de enlaces */
+/* 链接动画 */
 .category-card a {
   position: relative;
   display: inline-block;
@@ -468,7 +473,7 @@ html[data-theme='dark'] .category-card:hover::after {
   color: #333;
 }
 
-/* Modo Dark - Enlaces */
+/* Dark模式 - 链接 */
 html[data-theme='dark'] .category-card a {
   color: #d1d5db;
 }
@@ -478,7 +483,7 @@ html[data-theme='dark'] .category-card a {
   transform: translateX(5px);
 }
 
-/* Modo Dark - Flotación de enlaces */
+/* Dark模式 - 链接悬浮 */
 html[data-theme='dark'] .category-card a:hover {
   color: #60a5fa;
 }
@@ -494,7 +499,7 @@ html[data-theme='dark'] .category-card a:hover {
   transition: width 0.3s;
 }
 
-/* Modo Dark - Subrayado de enlaces */
+/* Dark模式 - 链接下划线 */
 html[data-theme='dark'] .category-card a::after {
   background: #60a5fa;
 }
@@ -504,10 +509,10 @@ html[data-theme='dark'] .category-card a::after {
 }
 
 .card-container {
-  margin-bottom: 1.5rem; /* Originalmente 0.1rem */
+  margin-bottom: 1.5rem; /* 原为0.1rem */
 }
 
-/* Mejora de estilos de etiquetas */
+/* 标签样式增强 */
 .tag {
   font-size: 0.75rem;
   padding: 2px 8px;
@@ -522,7 +527,7 @@ html[data-theme='dark'] .category-card a::after {
   box-shadow: 0 2px 4px rgba(0,100,0,0.1);
 }
 
-/* Modo Dark - Etiqueta Stable */
+/* Dark模式 - Stable标签 */
 html[data-theme='dark'] .stable {
   background: #065f46;
   color: #a7f3d0;
@@ -535,7 +540,7 @@ html[data-theme='dark'] .stable {
   box-shadow: 0 2px 4px rgba(200,0,0,0.1);
 }
 
-/* Modo Dark - Etiqueta Recommended */
+/* Dark模式 - Recommended标签 */
 html[data-theme='dark'] .recommended {
   background: #7f1d1d;
   color: #fca5a5;
@@ -547,12 +552,12 @@ html[data-theme='dark'] .recommended {
   box-shadow: 0 6px 10px rgba(0,0,0,0.1);
 }
 
-/* Modo Dark - Efecto de clic */
+/* Dark模式 - 点击效果 */
 html[data-theme='dark'] .category-card:active {
   box-shadow: 0 6px 10px rgba(0,0,0,0.4);
 }
 
-/* Optimización responsiva */
+/* 响应式优化 */
 @media (max-width: 768px) {
   .nav-grid {
     grid-template-columns: 1fr;
@@ -560,11 +565,11 @@ html[data-theme='dark'] .category-card:active {
 
   .category-card {
     width: 100%;
-    margin-top: 0.5rem; /* Tarjeta pegada al título */
+    margin-top: 0.5rem; /* 卡片紧贴标题 */
   }
 }
 
-/* Modo Dark - Texto de títulos */
+/* Dark模式 - 标题文字 */
 html[data-theme='dark'] h1,
 html[data-theme='dark'] h2,
 html[data-theme='dark'] h3,
@@ -574,14 +579,14 @@ html[data-theme='dark'] h6 {
   color: #f9fafb;
 }
 
-/* Modo Dark - Texto del cuerpo */
+/* Dark模式 - 正文文字 */
 html[data-theme='dark'] p,
 html[data-theme='dark'] li,
 html[data-theme='dark'] strong {
   color: #e5e7eb;
 }
 
-/* Modo Dark - Bloque de citas */
+/* Dark模式 - 引用块 */
 html[data-theme='dark'] blockquote {
   color: #9ca3af;
   border-left-color: #4b5563;
