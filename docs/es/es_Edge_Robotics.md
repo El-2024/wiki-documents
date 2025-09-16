@@ -61,7 +61,7 @@ last_update:
     <a href="/es/control_robotic_arm_via_phospho/" className="nav-item">
       <span className="text">Phospho Lerobot</span>
     </a>
-    <a href="/es//training_soarm101_policy_with_isaacLab/" className="nav-item">
+    <a href="/es/training_soarm101_policy_with_isaacLab/" className="nav-item">
     <span className="text">Aprendizaje por Refuerzo del Brazo So</span>
     <span className="tag recommended">Nuevo</span>
     </a>
@@ -249,7 +249,7 @@ last_update:
 <a href="/es/install_isaaclab/" className="nav-item">
   <span className="text">Instalación de Isaac Lab</span>
 </a>
-<a href="/es//training_soarm101_policy_with_isaacLab/" className="nav-item">
+<a href="/es/training_soarm101_policy_with_isaacLab/" className="nav-item">
   <span className="text">Aprendizaje por Refuerzo del Brazo So</span>
   <span className="tag recommended">Nuevo</span>
 </a>

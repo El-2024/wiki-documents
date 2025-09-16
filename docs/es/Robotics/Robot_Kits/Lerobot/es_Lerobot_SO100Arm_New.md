@@ -9,11 +9,11 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp
 slug: /es/lerobot_so100m_new
 last_update:
-  date: 8/20/2025
+  date: 9/15/2025
   author: LiShanghang
 ---
 
-# Cómo usar el brazo robótico SO-ARM100 y SO-ARM101 en la última versión de Lerobot
+# Comenzando con el brazo robótico SO-ARM100 y SO-ARM101 con LeRobot
 
 :::tip
 El mantenimiento de este tutorial ha sido actualizado a la última versión de [lerobot](https://huggingface.co/docs/lerobot/index), si deseas consultar el tutorial de la versión anterior, por favor haz clic [aquí](https://wiki.seeedstudio.com/es/lerobot_so100m/).
