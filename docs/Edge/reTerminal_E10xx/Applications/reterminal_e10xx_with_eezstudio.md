@@ -357,16 +357,8 @@ The full color ePaper display supports red, black, and white colors, allowing fo
 ```cpp
 #define BOARD_SCREEN_COMBO 521 // reTerminal E1002 (UC8179C)
 ```
-
-**Step 5.** Upload the sketch to your reTerminal E1002. The display will show colorful graphics demonstrating the full color capabilities of the ePaper display.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/149.jpg" style={{width:500, height:'auto'}}/></div>
-
 </TabItem>
 </Tabs>
-
-
-
 
 ## Deploying the EEZ Studio Project to Arduino
 
