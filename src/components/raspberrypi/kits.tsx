@@ -50,6 +50,31 @@ const items = [
 ];
 
 const Value = ({ lang = "en" }) => {
+  // 语言归一化：zh ≈ cn；保留 ja；新增 es
+  const norm =
+    lang === "zh" ? "cn" :
+    lang === "cn" ? "cn" :
+    lang === "ja" ? "ja" :
+    lang === "es" ? "es" : "en";
+
+  const isZH = norm === "cn";
+  const isJA = norm === "ja";
+  const isES = norm === "es";
+
+  // UI 文案
+  const ui = {
+    compatible: isZH ? "兼容型号" : isJA ? "対応機種" : isES ? "Compatible con" : "Compatible With",
+    buyNow:     isZH ? "🖱️ 立即购买" : isJA ? "🖱️ 今すぐ購入" : isES ? "🖱️ Comprar ahora" : "🖱️ Buy Now",
+    getting:    isZH ? "📚 快速入门" : isJA ? "📚 はじめに" : isES ? "📚 Primeros pasos" : "📚 Getting Started",
+  };
+
+  // 读取字段时按 norm 优先，缺失则回退到 en
+  const pick = (obj: Record<string, string>, base: string) => {
+    const key = `${base}_${norm}`;
+    const fallback = `${base}_en`;
+    return (obj as any)[key] ?? (obj as any)[fallback] ?? "";
+  };
+
   return (
     <div>
       <div className="rpi_item_container">
@@ -57,30 +82,30 @@ const Value = ({ lang = "en" }) => {
           <div key={item.id} className='rpi_item_grid'>
             <div className="rpi_item_vertical">
               <span className='rpi_item_description'>
-                <h2>{lang === "cn" ? item.name_cn : lang === "ja" ? item.name_ja : item.name_en}</h2>
-                <p>{lang === "cn" ? item.description_cn : lang === "ja" ? item.description_ja : item.description_en}</p>
+                <h2>{pick(item, "name")}</h2>
+                <p>{pick(item, "description")}</p>
               </span>
               <span className='rpi_item_compatible'>
-                <h3>{lang === "cn" ? "兼容型号" : lang === "ja" ? "対応機種" : "Compatible With"}</h3>
-                <p>{lang === "cn" ? item.compatibleWith_cn : lang === "ja" ? item.compatibleWith_ja : item.compatibleWith_en}</p>
+                <h3>{ui.compatible}</h3>
+                <p>{pick(item, "compatibleWith")}</p>
               </span>
             </div>
 
             <img
               className={"rpi_item_pic " + (item.id % 2 ? 'reverse' : '')}
               src={item.image}
-              alt={lang === "cn" ? item.name_cn : lang === "ja" ? item.name_ja : item.name_en}
+              alt={pick(item, "name")}
             />
 
             <span className='grid_item_center pagelink'>
               <a href={item.purchasePage} target="_blank" rel="noopener noreferrer">
-                {lang === "cn" ? "🖱️ 立即购买" : lang === "ja" ? "🖱️ 今すぐ購入" : "🖱️ Buy Now"}
+                {ui.buyNow}
               </a>
             </span>
 
             <span className='grid_item_center pagelink'>
               <a href={item.wikiPage} target="_blank" rel="noopener noreferrer">
-                {lang === "cn" ? "📚 快速入门" : lang === "ja" ? "📚 はじめに" : "📚 Getting Started"}
+                {ui.getting}
               </a>
             </span>
           </div>
