@@ -4,7 +4,7 @@ title: 适用于树莓派的 ReSpeaker 6-Mic 圆形阵列套件
 keywords:
 - reSpeaker
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /ReSpeaker_6-Mic_Circular_Array_kit_for_Raspberry_Pi
+slug: /cn/ReSpeaker_6-Mic_Circular_Array_kit_for_Raspberry_Pi
 last_update:
   date: 1/11/2023
   author: jianjing Huang

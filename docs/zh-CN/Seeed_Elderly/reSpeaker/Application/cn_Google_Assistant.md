@@ -4,7 +4,7 @@ title: reSpeaker 的 Google Assistant
 keywords:
 - Seeed_Elderly
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Google_Assistant
+slug: /cn/Google_Assistant
 last_update:
   date: 1/13/2023
   author: shuxu hu

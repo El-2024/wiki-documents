@@ -4,7 +4,7 @@ title: ReSpeaker Mic Array v3.0
 keywords:
 - reSpeaker
 image: https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array_V2/img/v3/ReSpeaker_Mic_Array_v3.0.webp
-slug: /respeaker_mic_array_v3.0
+slug: /cn/respeaker_mic_array_v3.0
 last_update:
   date: 8/13/2025
   author: Kasun Thushara

@@ -4,7 +4,7 @@ title: ReSpeaker ソリューション
 keywords:
 - reSpeaker
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /ReSpeaker_Solutions
+slug: /ja/ReSpeaker_Solutions
 last_update:
   date: 1/11/2023
   author: jianjing Huang

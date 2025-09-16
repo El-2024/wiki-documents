@@ -4,7 +4,7 @@ title: ReSpeaker Core
 keywords:
 - reSpeaker
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /ReSpeaker_Core
+slug: /cn/ReSpeaker_Core
 last_update:
   date: 1/11/2023
   author: jianjing Huang
