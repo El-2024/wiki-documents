@@ -19,7 +19,8 @@ import TabItem from '@theme/TabItem';
 
 ## Introduction
 
-The reTerminal E Series represents Seeed Studio's latest advancement in industrial HMI solutions, featuring ESP32-S3 as the main controller and integrated ePaper displays. This guide will walk you through programming the ePaper display on reTerminal E Series devices using Arduino IDE, enabling you to create custom interfaces and applications with excellent visibility and ultra-low power consumption.
+
+This guide will walk you through designing a professional user interface for the reTerminal E Series using the visual design tool **EEZStudio**. You will learn how to create UI elements, generate the necessary code, and finally deploy it to the device using the Arduino IDE. This process allows you to build custom interfaces with excellent visibility and ultra-low power consumption, ideal for HMI applications.
 
 ### Materials Required
 
@@ -119,11 +120,9 @@ Although EEZ Studio and SquareLine Studio are both GUI design tools, they focus 
 
 [EEZ Studio Install Link](https://www.envox.eu/studio/studio-introduction/) After accessing the download link, select the system version compatible with your computer to download.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/02.png" style={{width:800, height:'auto'}}/></div>
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/03.png" style={{width:800, height:'auto'}}/></div>
-
-
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/eez90.jpg" style={{width:1000, height:'auto'}}/></div>
+<br></br>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/eez91.jpg" style={{width:1000, height:'auto'}}/></div>
 ### Creat Project
 
 
@@ -180,7 +179,7 @@ This page is composed of five components:
 Step 1 .Change the background color of the canvas
 - Select the canvas whose background color you need to change.
 - Check Color, then select your preferred hexadecimal color code.
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a1.jpg" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a1.jpg" style={{width:900, height:'auto'}}/></div>
 
 Step 2 .Add Panel
 
@@ -188,39 +187,39 @@ Step 2 .Add Panel
 
 - Check Color, then select your preferred hexadecimal color code.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a2.jpg" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a2.jpg" style={{width:900, height:'auto'}}/></div>
 
 Step 3 .Add Bitmaps
 
 - Click the Bitmaps icon in the far-right sidebar to add an image.
 
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a3.jpg" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a3.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Name the images you select; you will need to choose images based on your naming convention later.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a4.jpg" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a4.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Drag the Image component from the Basic group onto the canvas, then select your image and set the size using Scale.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a5.jpg" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a5.jpg" style={{width:900, height:'auto'}}/></div>
 
 Step 4 .Add Line
 
 - Drag the Line component from the Visualiser group onto the canvas. Set the start and end points of the Points to determine the line's length and height.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a6.jpg" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a6.jpg" style={{width:900, height:'auto'}}/></div>
 
 Step 5 .Add Label
 
 - Drag the Label component from the Basic group onto the canvas, then select your font color and font format settings.
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a7.jpg" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a7.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Click the Fonts box in the rightmost column to add your font formats.
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a8.jpg" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a8.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Set the font name and size
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a9.jpg" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a9.jpg" style={{width:900, height:'auto'}}/></div>
 
 The above outlines the basic usage of these five components. You can arrange them according to the reference diagram or your own designed UI interface.
 
@@ -243,7 +242,7 @@ Click the Run icon (play button) in the toolbar to launch the simulator and inte
 Click the Compile icon (checkmark button) to check for syntax or logic errors in the project.
 Click the Build icon (wrench button) to generate files such as UI code, image data, and font data.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/17.jpg" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/17.jpg" style={{width:500, height:'auto'}}/></div>
 
 **Step 4 .Confirming Successful Build**
 
@@ -335,10 +334,6 @@ Let's explore a simple example that demonstrates basic drawing operations on the
 ```cpp
 #define BOARD_SCREEN_COMBO 520 // reTerminal E1001 (UC8179)
 ```
-
-**Step 5.** Upload the sketch to your reTerminal E1001. You should see the display showing various graphics including lines, text, and shapes demonstrating the basic drawing capabilities.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/148.jpg" style={{width:500, height:'auto'}}/></div>
 
 </TabItem>
 <TabItem value="Programming reTerminal E1002" label="Programming reTerminal E1002">
