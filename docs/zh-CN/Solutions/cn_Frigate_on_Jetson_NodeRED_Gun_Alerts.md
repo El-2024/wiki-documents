@@ -604,7 +604,8 @@ http://<JETSON_IP>:1880/
   "modules": {
     "@flowfuse/node-red-dashboard": "1.26.0"
   }
-}]```
+}]
+```
 
 - **MQTT Broker 地址** (默认: `172.17.0.1:1883`)  
 - **Frigate 服务地址** (默认: `http://192.168.118.111:5000`)  

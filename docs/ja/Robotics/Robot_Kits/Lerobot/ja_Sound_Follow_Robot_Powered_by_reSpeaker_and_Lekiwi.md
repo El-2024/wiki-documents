@@ -1,6 +1,6 @@
 ---
-description: このwikiは、ReSpeaker Mic Array v2.0とreComputer Jetson Miniを使用してLekiwi Robot Kitに音響追従機能を装備するための包括的な実装フレームワークを提供し、ハードウェア統合、環境設定、ソフトウェア適応をカバーしながら、リアルタイム音源追跡機能を実証します。
-title: reSpeakerとLekiwiによる音響追従ロボット
+description: このwikiは、ReSpeaker Mic Array v2.0とreComputer Jetson Miniを使用してLekiwi Robot Kitに音追従機能を装備するための包括的な実装フレームワークを提供し、ハードウェア統合、環境設定、ソフトウェア適応をカバーしながら、リアルタイム音源追跡機能を実演します。
+title: Lekiwi 音追従機能付き
 keywords:
 - Lerobot
 - Huggingface
@@ -18,7 +18,7 @@ last_update:
 
 ## はじめに
 
-ReSpeaker Mic Array v2.0と統合されたLewiki Robot Kitは、音声インタラクションと音響ナビゲーション機能を獲得します。このガイドでは、ロボットで音響追従機能を実現するためのハードウェアとソフトウェア環境の設定プロセスを段階的に詳しく説明します。
+ReSpeaker Mic Array v2.0と統合されたLewiki Robot Kitは、音声インタラクションと音響ナビゲーション機能を獲得します。このガイドでは、ロボットで音追従機能を実現するためのハードウェアとソフトウェア環境の設定プロセスを段階的に詳しく説明します。
 
 <div class="table-center">
   <table align="center">
@@ -76,13 +76,13 @@ ReSpeaker Mic Array v2.0と統合されたLewiki Robot Kitは、音声インタ�
 - ReSpeaker Mic Array v2.0
 
 :::note
-将来の機能拡張を考慮して、このwikiでは`reComputer Jetson Mini J4012`をロボットのメイン制御デバイスとして使用しています。`Raspberry Pi 5`を使用してもこのwikiで説明されているすべての機能を実現できます。
+将来の機能拡張を考慮して、このwikiではロボットのメイン制御デバイスとして`reComputer Jetson Mini J4012`を使用しています。`Raspberry Pi 5`を使用してもこのwikiで説明されているすべての機能を実現できます。
 :::
 
 ## ハードウェア接続
 
-1. [このwiki](https://wiki.seeedstudio.com/lerobot_lekiwi/)を参照してLekiwiロボットを準備してください。機械構造の組み立てとモーターの設定を含みます。
-2. 3Dプリント製のコネクタを使用してreSpeakerをLekiwiに取り付けます。
+1. [このwiki](https://wiki.seeedstudio.com/ja/lerobot_lekiwi/)を参照して、機械構造の組み立てとモーターの設定を含むLekiwiロボットを準備してください。
+2. 3Dプリントされたコネクタを使用してreSpeakerをLekiwiに取り付けます。
 3. USBケーブルを使用してreSpeakerとサーボコントローラーをreComputerに接続します。
 
 <div align="center">
@@ -97,7 +97,7 @@ ReSpeaker Mic Array v2.0と統合されたLewiki Robot Kitは、音声インタ�
 Lekiwiの組み立てプロセス中にreComputerでLerobot仮想環境をすでに設定している場合は、次のセクションにスキップできます。
 そうでない場合は、以下のコマンドを使用してLerobot仮想環境を設定できます：
 
-**Step1.** Minicondaのインストール
+**ステップ1.** Minicondaのインストール
 
 ```bash
 mkdir -p ~/miniconda3
@@ -107,7 +107,7 @@ rm ~/miniconda3/miniconda.sh
 source ~/.bashrc
 ```
 
-**Step2.** Create conda environment for lerobot
+**ステップ2.** lerobot用のconda環境の作成
 
 ```bash
 conda create -y -n lerobot python=3.10
@@ -117,17 +117,17 @@ conda install ffmpeg -c conda-forge
 cd ~/lerobot && pip install -e ".[feetech]"
 ```
 
-### reSpeaker 依存関係
+### reSpeaker依存関係
 
-lerobot 仮想環境に reSpeaker 依存関係をインストールします。
+lerobot仮想環境にreSpeaker依存関係をインストールします。
 
-**ステップ1.** `pyusb` をインストール
+**ステップ1.** `pyusb`のインストール
 
 ```bash
 pip install pyusb==1.0.2
 ```
 
-**ステップ2.** USBデバイスアクセス権限を設定する
+**ステップ2.** USBデバイスアクセス権限の設定
 
 ```bash
 echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="2886", MODE="0666"' | sudo tee /etc/udev/rules.d/51-mic-usb.rules
@@ -137,7 +137,7 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 
 ## アプリケーションソフトウェアのインストール
 
-`lerobot/lerobot/common/robots/lekiwi/` ディレクトリに移動し、この場所に `sound_follow.py` という名前の新しいPythonスクリプトを作成します。
+`lerobot/lerobot/common/robots/lekiwi/`ディレクトリに移動し、この場所に`sound_follow.py`という名前の新しいPythonスクリプトを作成します。
 次に、以下の内容をsound_follow.pyにコピーします。
 
 <details>
@@ -299,10 +299,10 @@ class SoundFollowingRobot:
             return
 
         return Tuning(dev)
-    
+
     def get_sound_direction(self):
         return self.mic.read("DOAANGLE")
-        
+
     def robot_turn(self, speed):
         data = {'x.vel': 0.0, 'y.vel': 0.0, 'theta.vel': int(speed/self.scale_factor)}
         _action_sent = self.robot.send_action(data)
@@ -332,7 +332,7 @@ class SoundFollowingRobot:
             print(f"Exception occurred: {e}")
         finally:
             self.close()
-    
+
     def close(self):
         self.robot_turn(0)
         self.robot.disconnect()
@@ -342,12 +342,11 @@ class SoundFollowingRobot:
 if __name__ == "__main__":
     robot = SoundFollowingRobot()
     robot.run()
-
 ```
 
 </details>
 
-ハードウェアセットアップではカメラやSOArm101ロボットアームを使用しないため、関連する設定をコメントアウトする必要があります。
+私たちのハードウェア設定ではカメラやSOArm101ロボットアームを使用しないため、関連する設定をコメントアウトする必要があります。
 
 `lerobot/lerobot/common/robots/lekiwi/config_lekiwi.py`
 
@@ -383,7 +382,7 @@ motors={
 },
 ```
 
-send_action関数を変更して、ロボットアーム関連のコードセクションを無効化/削除します。
+send_action関数を修正して、ロボットアーム関連のコードセクションを無効化/削除します。
 
 `lerobot/lerobot/common/robots/lekiwi/lekiwi.py`
 
@@ -411,7 +410,7 @@ sudo chmod 666 /dev/ttyACM*
 python -m lerobot.common.robots.lekiwi.sound_follow
 ```
 
-## 効果デモンストレーション
+## 効果のデモンストレーション
 
 プログラムを起動すると、ロボットは音源の方向に回転し、継続的に「頭」を入力音声の方向に合わせます。
 
@@ -421,12 +420,12 @@ python -m lerobot.common.robots.lekiwi.sound_follow
 
 ## 参考資料
 
-- https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/#version
+- https://wiki.seeedstudio.com/ja/ReSpeaker_Mic_Array_v2.0/#version
 - https://github.com/respeaker/usb_4_mic_array
 
 ## 技術サポート & 製品ディスカッション
 
-弊社製品をお選びいただき、ありがとうございます！お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルをご用意しています。
+私たちの製品をお選びいただき、ありがとうございます！私たちは、お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供しています。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルを用意しています。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>

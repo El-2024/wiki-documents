@@ -1,12 +1,12 @@
 ---
 description: Introducción a SeeedStudio BeagleBone® Green Eco
-title: BeagleBone® Green Eco
+title: Seeed Studio BeagleBone® Green Eco
 keywords:
-- Beagle_Bone
+- Beagle_Bone_Green_Eco
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /es/getting_started_with_seeedstudio_beaglebone_green_eco
 last_update:
-  date: 10/9/2025
+  date: 9/12/2025
   author: Atom Yang
 ---
 
@@ -50,7 +50,7 @@ Inicia Linux en menos de 10 segundos y comienza el desarrollo en menos de 5 minu
 | Categoría  | Elemento              | Seeed Studio BeagleBone® Green Eco                                                                                     | Seeed Studio BeagleBone® Green                                                                 |
 |------------|-----------------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | Procesador | Núcleo                | TI AM3358 1GHz ARM® Cortex-A8                                                                                          | TI AM3358 1GHz ARM® Cortex-A8                                                                 |
-|            | Aceleradores          | Unidad de punto flotante NEON y acelerador gráfico 3D                                                                  | Unidad de punto flotante NEON y acelerador gráfico 3D                                         |
+|            | Aceleradores          | Unidad de punto flotante NEON y acelerador de gráficos 3D                                                             | Unidad de punto flotante NEON y acelerador de gráficos 3D                                     |
 | Memoria    | RAM                   | 512MB DDR3L, 800MHz                                                                                                    | 512MB DDR3L, 800MHz                                                                           |
 |            | Almacenamiento Flash  | **16GB eMMC (Kingston EMMC16G-WW28)**                                                                                  | 4GB 8-bit eMMC                                                                                |
 |            | EEPRPM                | **32KB (FMD FT24C32A-ELRT)**                                                                                           | 4KB EEPROM                                                                                    |
@@ -62,8 +62,8 @@ Inicia Linux en menos de 10 segundos y comienza el desarrollo en menos de 5 minu
 |            | Red                   | **Gigabit Ethernet (10/100/1000Mbps)**                                                                                 | Ethernet (10/100Mbit)                                                                         |
 |            | Cabezales de Expansión| 2x cabezales de 46 pines                                                                                               | 2x cabezales de 46 pines                                                                      |
 |            | Grove                 | 1x I2C, 1x UART2                                                                                                       | 1x I2C, 1x UART2                                                                              |
-|            | Botones               | 1x botón Reset;1x botón Usuario(Boot)                                                                              | 1x botón Reset;1x botón Usuario(Boot);1x Botón de Encendido                           |
-|            | Indicadores           | 1x LED de energía, 4x LEDs programables por usuario                                                                     | 4x LEDs (latido, microSD, CPU, eMMC)                                                          |
+|            | Botones               | 1x botón Reset;1x botón Usuario(Boot)                                                                              | 1x botón Reset;1x botón Usuario(Boot);1x Botón de Encendido                            |
+|            | Indicadores           | 1x LED de energía, 4x LEDs programables por usuario                                                                    | 4x LEDs (latido, microSD, CPU, eMMC)                                                          |
 | Físico     | Dimensiones           | 86.4mm x 53.3mm x 18mm                                                                                                 | 86.4mm x 53.3mm x 18mm                                                                        |
 |            | Peso                  | 40g                                                                                                                    | 45g                                                                                           |
 |            | Temperatura Operativa | **-40 ~ 85℃**                                                                                                              | 0 ~ 75℃                                                                                       |
@@ -77,7 +77,7 @@ Inicia Linux en menos de 10 segundos y comienza el desarrollo en menos de 5 minu
 * Industrial
 * Automatización y Control de Procesos
 * Interfaz Humano-Máquina
-* Hub de Sensores
+* Centro de Sensores
 * Robot
 
 ## Descripción General del Hardware
@@ -91,8 +91,8 @@ BeagleBone® Green Eco está construido alrededor del procesador AM335x ARM Cort
 
 
 **Procesador**
-BeagleBone® Green Eco integra el procesador Texas Instruments AM335x 1GHz ARM® Cortex-A8 que combina procesamiento computacional, aceleración gráfica y funcionalidad de control en tiempo real dentro de un solo SoC. La arquitectura implementa ARMv7-A con motor NEON™ SIMD y unidad de punto flotante VFPv3 para ejecución eficiente de tareas computacionales complejas, mientras mantiene eficiencia energética para aplicaciones embebidas.
-Una característica distintiva es el Subsistema de Unidad Programable de Tiempo Real y Subsistema de Comunicación Industrial (PRU-ICSS), que comprende núcleos RISC de 32 bits duales que operan independientemente del procesador ARM principal. Estos PRUs permiten control determinístico en tiempo real con tiempos de respuesta sub-microsegundo e implementación de protocolos de comunicación industrial especializados. El AM335x soporta sistemas operativos de alto nivel incluyendo Linux y sistemas operativos de tiempo real a través del SDK de Procesador de TI y entornos de desarrollo.
+BeagleBone® Green Eco integra el procesador Texas Instruments AM335x 1GHz ARM® Cortex-A8 que combina procesamiento computacional, aceleración de gráficos y funcionalidad de control en tiempo real dentro de un solo SoC. La arquitectura implementa ARMv7-A con motor NEON™ SIMD y unidad de punto flotante VFPv3 para ejecución eficiente de tareas computacionales complejas, mientras mantiene eficiencia energética para aplicaciones embebidas.
+Una característica distintiva es el Subsistema de Unidad Programable de Tiempo Real y Subsistema de Comunicación Industrial (PRU-ICSS), que comprende núcleos RISC de 32 bits duales operando independientemente del procesador ARM principal. Estos PRUs permiten control determinístico en tiempo real con tiempos de respuesta sub-microsegundo e implementación de protocolos de comunicación industrial especializados. El AM335x soporta sistemas operativos de alto nivel incluyendo Linux y sistemas operativos de tiempo real a través del SDK de Procesador de TI y entornos de desarrollo.
 * Procesador AM335x 1GHz ARM® Cortex-A8, 15.0mm x 15.0mm, NFBGA (324)* Coprocesador NEON™ SIMD y unidad de punto flotante VFPv3 para procesamiento acelerado de medios y señales
 * Acelerador gráfico PowerVR SGX™ compatible con OpenGL ES 2.0
 * PRU-ICSS dual de 32 bits para comunicaciones y control industrial en tiempo real
@@ -311,7 +311,7 @@ Cuando el flasheo esté completo, todos los 4 LEDs USRx estarán **apagados**. L
 
 ## Grove para Seeed Studio BeagleBone® Green
 
-Grove es un sistema de prototipado con conectores modulares y estandarizados. Grove adopta un enfoque de bloques de construcción para ensamblar electrónicos. Comparado con el sistema basado en jumpers o soldadura, es más fácil de conectar, experimentar y construir, y simplifica el sistema de aprendizaje, pero no hasta el punto de volverse simplista. Algunos de los otros sistemas de prototipado que existen reducen el nivel a bloques de construcción. Es bueno aprender de esa manera, pero el sistema Grove te permite construir sistemas reales. Requiere algo de aprendizaje y experiencia para conectar las cosas.
+Grove es un sistema de prototipado con conectores modulares y estandarizados. Grove adopta un enfoque de bloques de construcción para ensamblar electrónicos. Comparado con el sistema basado en jumpers o soldadura, es más fácil de conectar, experimentar y construir, y simplifica el sistema de aprendizaje, pero no al punto de volverse simplista. Algunos de los otros sistemas de prototipado que existen reducen el nivel a bloques de construcción. Es bueno aprender de esa manera, pero el sistema Grove te permite construir sistemas reales. Requiere algo de aprendizaje y experiencia para conectar las cosas.
 
 A continuación se listan los módulos Grove que funcionan bien con Seeed Studio BeagleBone® Green.
 

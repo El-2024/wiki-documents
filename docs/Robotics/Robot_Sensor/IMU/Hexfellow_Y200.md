@@ -1,6 +1,6 @@
 ---
 description: This wiki provides tutorial for HEXFELLOW Y200 IMU Sensor.
-title: HEXFELLOW Y200 IMU Sensor Getting Start
+title: HEXFELLOW Y200 IMU Sensor
 keywords:
 - IMU
 - robotics
