@@ -12,13 +12,11 @@ last_update:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
 # reTerminal E Series ePaper Display と EEZStudio の入門ガイド
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/eez.jpg" style={{width:600, height:'auto'}}/></div>
 
 ## はじめに
-
 
 このガイドでは、ビジュアルデザインツール **EEZStudio** を使用して reTerminal E Series 用のプロフェッショナルなユーザーインターフェースを設計する方法を説明します。UI要素の作成、必要なコードの生成、そして最終的に Arduino IDE を使用してデバイスにデプロイする方法を学習します。このプロセスにより、優れた視認性と超低消費電力を持つカスタムインターフェースを構築でき、HMIアプリケーションに最適です。
 
@@ -51,8 +49,8 @@ import TabItem from '@theme/TabItem';
   </table>
 </div>
 
-
 ### EEZ Studio とは？
+
 EEZ Studio は、主にテスト・測定機器、組み込みデバイス、その他のインタラクティブアプリケーション用のユーザーインターフェース構築のために開発された、現代的なビジュアルプログラミングおよびUI設計環境です。ドラッグアンドドロップGUI設計、スクリプト機能、デバイス統合ツールを組み合わせ、開発者、エンジニア、メーカーがゼロから始めることなく、迅速にプロフェッショナルなインターフェースを作成できるようにします。
 
 簡単に言えば、EEZ Studio はハードウェアとソフトウェアの橋渡しとして機能し、ユーザーエクスペリエンスをより効率的に設計、プロトタイプ、デプロイできるようにします。
@@ -125,7 +123,6 @@ EEZ Studio と SquareLine Studio は両方ともGUI設計ツールですが、�
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/eez91.jpg" style={{width:1000, height:'auto'}}/></div>
 ### プロジェクトの作成
 
-
 EEZ Studio インターフェースの上部にある「CREATE」ボタンをクリックします。
 左側のプロジェクトテンプレートリストで「LVGL」プロジェクトを見つけて選択します。
 
@@ -135,8 +132,6 @@ EEZ Studio インターフェースの上部にある「CREATE」ボタンをク
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/01.jpg" style={{width:900, height:'auto'}}/></div>
 
-
-
 ### プロジェクトパラメータ設定とUIインターフェース設計
 
 ### UIインターフェース設計
@@ -145,8 +140,8 @@ UI（ユーザーインターフェース）設計は組み込み製品開発に
 
 EEZ Studio では、コンポーネントをドラッグアンドドロップすることで迅速にインターフェースを組み立てることができます。Styles、Fonts、Bitmaps、Themes などのツールを活用して視覚効果を正確に制御し、プロフェッショナルで独特なユーザーエクスペリエンスを作り上げます。
 
-
 以下は推奨ツールの紹介です：
+
 - [Color](https://coolors.co/)
 - [Color Chart](https://peiseka.com/)
 - [Icon](https://www.iconfont.cn/?spm=a313x.search_index.i3.3.559b3a81C6d3Cl)
@@ -162,23 +157,23 @@ EEZ Studio では、コンポーネントをドラッグアンドドロップす
 - Themes: 全体的なインターフェースの美学を定義し、ライト/ダークモードなどの迅速な切り替えを可能にします。
 - Groups: 複数のウィジェットを一緒に整理し、統一された管理とレイアウトを行います。
 
-
-
 このチュートリアルでは、ウェブサイトやアプリのホームページのUIを設計する方法をガイドします。コア技術をマスターすれば、簡単に任意のインターフェースを作成できるようになります。
 
 このページは5つのコンポーネントで構成されています：
+
 - Panel
 - Label
 - Line
 - Checkbox
 - Image
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/15.jpg" style={{width:900, height:'auto'}}/></div>
 
 ステップ 1. キャンバスの背景色を変更する
+
 - 背景色を変更したいキャンバスを選択します。
 - Color をチェックし、お好みの16進数カラーコードを選択します。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a1.jpg" style={{width:900, height:'auto'}}/></div>
 
 ステップ 2. Panel を追加する
@@ -193,7 +188,6 @@ EEZ Studio では、コンポーネントをドラッグアンドドロップす
 
 - 右端のサイドバーにある Bitmaps アイコンをクリックして画像を追加します。
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a3.jpg" style={{width:900, height:'auto'}}/></div>
 
 - 選択した画像に名前を付けます。後で命名規則に基づいて画像を選択する必要があります。
@@ -201,6 +195,7 @@ EEZ Studio では、コンポーネントをドラッグアンドドロップす
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a4.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Basic グループから Image コンポーネントをキャンバスにドラッグし、画像を選択して Scale を使用してサイズを設定します。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a5.jpg" style={{width:900, height:'auto'}}/></div>
 
 ステップ 4 .線を追加
@@ -212,12 +207,15 @@ EEZ Studio では、コンポーネントをドラッグアンドドロップす
 ステップ 5 .ラベルを追加
 
 - BasicグループからLabelコンポーネントをキャンバスにドラッグし、フォントの色とフォーマット設定を選択します。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a7.jpg" style={{width:900, height:'auto'}}/></div>
 
 - 右端の列にあるFontsボックスをクリックして、フォントフォーマットを追加します。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a8.jpg" style={{width:900, height:'auto'}}/></div>
 
 - フォント名とサイズを設定します
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a9.jpg" style={{width:900, height:'auto'}}/></div>
 
 以上がこれら5つのコンポーネントの基本的な使用方法です。参考図または独自に設計したUIインターフェースに従って配置することができます。
@@ -246,9 +244,6 @@ UI設計を完了した後、プロジェクトを保存してシミュレータ
 **ステップ 4 .ビルド成功の確認**
 
 完了すると、EEZ Studioは「Build successful」という緑色のプロンプトを表示し、コードが正常に生成されたことを示します。
-
-
-
 
 ## 環境準備
 
@@ -356,6 +351,7 @@ ePaper displayを制御するために、様々なSeeed Studioディスプレイ
 ```cpp
 #define BOARD_SCREEN_COMBO 521 // reTerminal E1002 (UC8179C)
 ```
+
 </TabItem>
 </Tabs>
 
@@ -372,6 +368,7 @@ ePaper displayを制御するために、様々なSeeed Studioディスプレイ
 
 以下はUIを実行するメインのArduinoスケッチです：
 3つのボタンが3つの異なる画面に対応し、緑から開始：HOME\Workstation\Plantの順序です。
+
 ```cpp
 #include <TFT_eSPI.h>
 #include <lvgl.h>
@@ -458,6 +455,7 @@ void loop()
 
     delay(10);
 }
+
 ```
 
 - `e1002_display_init():` e-inkディスプレイハードウェアを初期化し、動作パラメータを設定します。
@@ -494,7 +492,6 @@ void loop()
     </tr>
   </table>
 </div>
-
 
 ## 技術サポート & 製品ディスカッション
 

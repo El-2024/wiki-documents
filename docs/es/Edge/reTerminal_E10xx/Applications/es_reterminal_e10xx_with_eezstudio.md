@@ -12,13 +12,11 @@ last_update:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
 # Comenzando con la Pantalla ePaper de reTerminal E Series y EEZStudio
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/eez.jpg" style={{width:600, height:'auto'}}/></div>
 
 ## Introducción
-
 
 Esta guía te llevará a través del diseño de una interfaz de usuario profesional para la serie reTerminal E usando la herramienta de diseño visual **EEZStudio**. Aprenderás cómo crear elementos de UI, generar el código necesario y finalmente desplegarlo en el dispositivo usando el IDE de Arduino. Este proceso te permite construir interfaces personalizadas con excelente visibilidad y consumo de energía ultra bajo, ideal para aplicaciones HMI.
 
@@ -51,8 +49,8 @@ Para completar este tutorial, por favor prepara uno de los siguientes dispositiv
   </table>
 </div>
 
-
 ### ¿Qué es EEZ Studio?
+
 EEZ Studio es un entorno moderno de programación visual y diseño de UI desarrollado principalmente para construir interfaces de usuario para instrumentos de prueba y medición, dispositivos embebidos y otras aplicaciones interactivas. Combina diseño GUI de arrastrar y soltar, capacidades de scripting y herramientas de integración de dispositivos, permitiendo a desarrolladores, ingenieros y makers crear rápidamente interfaces profesionales sin empezar desde cero.
 
 En resumen, EEZ Studio actúa como un puente entre hardware y software, permitiéndote diseñar, prototipar y desplegar experiencias de usuario de manera más eficiente.
@@ -125,7 +123,6 @@ Aunque EEZ Studio y SquareLine Studio son ambas herramientas de diseño GUI, se 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/eez91.jpg" style={{width:1000, height:'auto'}}/></div>
 ### Crear Proyecto
 
-
 En la parte superior de la interfaz de EEZ Studio, haz clic en el botón "CREATE".
 En la lista de plantillas de proyecto a la izquierda, localiza y selecciona el proyecto "LVGL".
 
@@ -135,8 +132,6 @@ En la lista de plantillas de proyecto a la izquierda, localiza y selecciona el p
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/01.jpg" style={{width:900, height:'auto'}}/></div>
 
-
-
 ### Configuración de Parámetros del Proyecto y Diseño de Interfaz UI
 
 ### Diseño de Interfaz UI
@@ -145,8 +140,8 @@ El diseño de UI (Interfaz de Usuario) es crucial en el desarrollo de productos 
 
 En EEZ Studio, puedes ensamblar rápidamente interfaces arrastrando y soltando componentes. Utiliza herramientas como Styles, Fonts, Bitmaps y Themes para controlar precisamente los efectos visuales, creando una experiencia de usuario profesional y distintiva.
 
-
 A continuación se presenta una introducción a las herramientas recomendadas:
+
 - [Color](https://coolors.co/)
 - [Tabla de Colores](https://peiseka.com/)
 - [Ícono](https://www.iconfont.cn/?spm=a313x.search_index.i3.3.559b3a81C6d3Cl)
@@ -162,23 +157,23 @@ A continuación se presenta una introducción a las herramientas recomendadas:
 - Themes: Definen la estética general de la interfaz, permitiendo cambios rápidos como modo claro/oscuro.
 - Groups: Organizan múltiples widgets juntos para gestión y diseño unificados.
 
-
-
 En este tutorial, te guiaré a través del diseño de la UI para la página de inicio de un sitio web o aplicación. Una vez que domines las técnicas principales, podrás aplicarlas para crear cualquier interfaz que desees con facilidad.
 
 Esta página está compuesta por cinco componentes:
+
 - Panel
 - Label
 - Line
 - Checkbox
 - Image
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/15.jpg" style={{width:900, height:'auto'}}/></div>
 
 Paso 1. Cambiar el color de fondo del lienzo
+
 - Selecciona el lienzo cuyo color de fondo necesitas cambiar.
 - Marca Color, luego selecciona tu código de color hexadecimal preferido.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a1.jpg" style={{width:900, height:'auto'}}/></div>
 
 Paso 2. Agregar Panel
@@ -193,7 +188,6 @@ Paso 3. Agregar Bitmaps
 
 - Haz clic en el ícono Bitmaps en la barra lateral del extremo derecho para agregar una imagen.
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a3.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Nombra las imágenes que selecciones; necesitarás elegir imágenes basándote en tu convención de nomenclatura más tarde.
@@ -201,6 +195,7 @@ Paso 3. Agregar Bitmaps
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a4.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Arrastra el componente Image del grupo Basic al lienzo, luego selecciona tu imagen y establece el tamaño usando Scale.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a5.jpg" style={{width:900, height:'auto'}}/></div>
 
 Paso 4. Agregar Línea
@@ -212,12 +207,15 @@ Paso 4. Agregar Línea
 Paso 5. Agregar Etiqueta
 
 - Arrastra el componente Label del grupo Basic al lienzo, luego selecciona el color de fuente y la configuración del formato de fuente.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a7.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Haz clic en la caja Fonts en la columna más a la derecha para agregar tus formatos de fuente.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a8.jpg" style={{width:900, height:'auto'}}/></div>
 
 - Establece el nombre y tamaño de la fuente
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a9.jpg" style={{width:900, height:'auto'}}/></div>
 
 Lo anterior describe el uso básico de estos cinco componentes. Puedes organizarlos según el diagrama de referencia o tu propia interfaz de usuario diseñada.
@@ -246,9 +244,6 @@ Haz clic en el icono Construir (botón de llave inglesa) para generar archivos c
 **Paso 4. Confirmar Construcción Exitosa**
 
 Al completarse, EEZ Studio muestra un mensaje verde que dice "Build successful", indicando que el código se ha generado exitosamente.
-
-
-
 
 ## Preparación del Entorno
 
@@ -356,6 +351,7 @@ La pantalla ePaper a todo color soporta colores rojo, negro y blanco, permitiend
 ```cpp
 #define BOARD_SCREEN_COMBO 521 // reTerminal E1002 (UC8179C)
 ```
+
 </TabItem>
 </Tabs>
 
@@ -372,6 +368,7 @@ El `archivo EEZ_UI` se genera durante el proceso de construcción en EEZStudio. 
 
 Aquí está el sketch principal de Arduino para ejecutar la interfaz de usuario:
 Tres botones corresponden a tres pantallas diferentes, comenzando con verde: HOME\Workstation\Plant en secuencia.
+
 ```cpp
 #include <TFT_eSPI.h>
 #include <lvgl.h>
@@ -458,6 +455,7 @@ void loop()
 
     delay(10);
 }
+
 ```
 
 - `e1002_display_init():` Inicializa el hardware de la pantalla e-ink y establece sus parámetros de funcionamiento.
@@ -494,7 +492,6 @@ void loop()
     </tr>
   </table>
 </div>
-
 
 ## Soporte Técnico y Discusión de Productos
 

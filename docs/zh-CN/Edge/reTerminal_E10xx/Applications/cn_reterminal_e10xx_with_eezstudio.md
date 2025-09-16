@@ -12,13 +12,11 @@ last_update:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-
 # reTerminal E 系列 ePaper 显示屏与 EEZStudio 入门指南
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/eez.jpg" style={{width:600, height:'auto'}}/></div>
 
 ## 介绍
-
 
 本指南将引导您使用可视化设计工具**EEZStudio**为 reTerminal E 系列设计专业的用户界面。您将学习如何创建 UI 元素、生成必要的代码，并最终使用 Arduino IDE 将其部署到设备上。这个过程允许您构建具有出色可见性和超低功耗的自定义界面，非常适合 HMI 应用。
 
@@ -51,8 +49,8 @@ import TabItem from '@theme/TabItem';
   </table>
 </div>
 
-
 ### 什么是 EEZ Studio？
+
 EEZ Studio 是一个现代化的可视化编程和 UI 设计环境，主要用于构建测试测量仪器、嵌入式设备和其他交互式应用的用户界面。它结合了拖放式 GUI 设计、脚本功能和设备集成工具，使开发人员、工程师和创客能够快速创建专业界面，而无需从头开始。
 
 简而言之，EEZ Studio 充当硬件和软件之间的桥梁，使您能够更高效地设计、原型制作和部署用户体验。
@@ -125,7 +123,6 @@ EEZ Studio 是一个现代化的可视化编程和 UI 设计环境，主要用�
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/eez91.jpg" style={{width:1000, height:'auto'}}/></div>
 ### 创建项目
 
-
 在 EEZ Studio 界面顶部，点击"CREATE"按钮。
 在左侧的项目模板列表中，找到并选择"LVGL"项目。
 
@@ -135,8 +132,6 @@ EEZ Studio 是一个现代化的可视化编程和 UI 设计环境，主要用�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/01.jpg" style={{width:900, height:'auto'}}/></div>
 
-
-
 ### 项目参数设置和 UI 界面设计
 
 ### UI 界面设计
@@ -145,8 +140,8 @@ UI（用户界面）设计在嵌入式产品开发中至关重要，因为它直
 
 在 EEZ Studio 中，您可以通过拖放组件快速组装界面。利用样式、字体、位图和主题等工具精确控制视觉效果，打造专业且独特的用户体验。
 
-
 以下是推荐工具的介绍：
+
 - [Color](https://coolors.co/)
 - [Color Chart](https://peiseka.com/)
 - [Icon](https://www.iconfont.cn/?spm=a313x.search_index.i3.3.559b3a81C6d3Cl)
@@ -162,23 +157,23 @@ UI（用户界面）设计在嵌入式产品开发中至关重要，因为它直
 - Themes: 定义整体界面美学，支持快速切换如明/暗模式。
 - Groups: 将多个小部件组织在一起，便于统一管理和布局。
 
-
-
 在本教程中，我将指导您设计网站或应用程序主页的 UI。一旦您掌握了核心技术，您就能够轻松地应用它们来创建任何您想要的界面。
 
 此页面由五个组件组成：
+
 - Panel
 - Label
 - Line
 - Checkbox
 - Image
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/15.jpg" style={{width:900, height:'auto'}}/></div>
 
 步骤 1. 更改画布的背景颜色
+
 - 选择需要更改背景颜色的画布。
 - 勾选 Color，然后选择您喜欢的十六进制颜色代码。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a1.jpg" style={{width:900, height:'auto'}}/></div>
 
 步骤 2. 添加 Panel
@@ -193,7 +188,6 @@ UI（用户界面）设计在嵌入式产品开发中至关重要，因为它直
 
 - 点击最右侧边栏中的 Bitmaps 图标来添加图像。
 
-
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a3.jpg" style={{width:900, height:'auto'}}/></div>
 
 - 为您选择的图像命名；稍后您需要根据您的命名约定选择图像。
@@ -201,6 +195,7 @@ UI（用户界面）设计在嵌入式产品开发中至关重要，因为它直
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a4.jpg" style={{width:900, height:'auto'}}/></div>
 
 - 从 Basic 组中将 Image 组件拖到画布上，然后选择您的图像并使用 Scale 设置大小。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a5.jpg" style={{width:900, height:'auto'}}/></div>
 
 步骤 4 .添加线条
@@ -212,12 +207,15 @@ UI（用户界面）设计在嵌入式产品开发中至关重要，因为它直
 步骤 5 .添加标签
 
 - 从基础组中将标签组件拖拽到画布上，然后选择您的字体颜色和字体格式设置。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a7.jpg" style={{width:900, height:'auto'}}/></div>
 
 - 点击最右侧列中的字体框来添加您的字体格式。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a8.jpg" style={{width:900, height:'auto'}}/></div>
 
 - 设置字体名称和大小
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/EEZStudio/a9.jpg" style={{width:900, height:'auto'}}/></div>
 
 以上概述了这五个组件的基本用法。您可以根据参考图或您自己设计的 UI 界面来排列它们。
@@ -246,9 +244,6 @@ UI（用户界面）设计在嵌入式产品开发中至关重要，因为它直
 **步骤 4 .确认构建成功**
 
 完成后，EEZ Studio 显示绿色提示"Build successful"，表示代码已成功生成。
-
-
-
 
 ## 环境准备
 
@@ -356,6 +351,7 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 ```cpp
 #define BOARD_SCREEN_COMBO 521 // reTerminal E1002 (UC8179C)
 ```
+
 </TabItem>
 </Tabs>
 
@@ -372,6 +368,7 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 这是运行 UI 的主要 Arduino 代码：
 三个按钮对应三个不同的屏幕，从绿色开始：依次为 HOME\Workstation\Plant。
+
 ```cpp
 #include <TFT_eSPI.h>
 #include <lvgl.h>
@@ -458,6 +455,7 @@ void loop()
 
     delay(10);
 }
+
 ```
 
 - `e1002_display_init():` 初始化电子墨水显示屏硬件并设置其操作参数。
@@ -494,7 +492,6 @@ void loop()
     </tr>
   </table>
 </div>
-
 
 ## 技术支持与产品讨论
 
