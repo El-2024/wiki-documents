@@ -1,6 +1,6 @@
 ---
-description: 本文介绍如何在Home Assistant中利用reTerminal E系列电子纸显示器的硬件功能在ESPHome上。
-title: reTerminal E系列电子纸显示器在Home Assistant中的高级ESPHome使用方法
+description: 本文介绍如何在 ESPHome 中利用 reTerminal E 系列 ePaper 显示屏的硬件功能。
+title: reTerminal E 系列 ePaper 显示屏在 Home Assistant 中的高级 ESPHome 用法
 image: https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.webp
 slug: /cn/reterminal_e10xx_with_esphome_advanced
 sidebar_position: 3
@@ -12,37 +12,37 @@ last_update:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# reTerminal E系列电子纸显示器在Home Assistant中的高级ESPHome使用方法
+# reTerminal E 系列 ePaper 显示屏在 Home Assistant 中的高级 ESPHome 用法
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/27.jpg" style={{width:700, height:'auto'}}/></div><br />
 
-本文探讨了reTerminal E系列电子纸显示器设备的高级ESPHome配置，基于我们的[基础ESPHome使用指南](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome)中涵盖的基础概念。如果您是ESPHome或reTerminal E系列的新手，我们建议在深入了解这些高级应用之前先从基础指南开始。
+本文探讨了 reTerminal E 系列 ePaper 显示屏设备的高级 ESPHome 配置，基于我们的[基础 ESPHome 用法指南](https://wiki.seeedstudio.com/cn/reterminal_e10xx_with_esphome)中涵盖的基础概念。如果您是 ESPHome 或 reTerminal E 系列的新手，我们建议在深入这些高级应用之前先从基础指南开始。
 
 ## 硬件功能
 
-reTerminal E系列电子纸显示器包含几个硬件组件，可以通过ESPHome在Home Assistant中使用：
+reTerminal E 系列 ePaper 显示屏包含几个硬件组件，可以通过 ESPHome 在 Home Assistant 中使用：
 
 - 三个可编程按钮（GPIO3、GPIO4、GPIO5）
 
 - 蜂鸣器（GPIO45）
 
-- 电池电量监控（GPIO1用于电压）
+- 电池电量监控（GPIO1 用于电压）
 
-- 板载LED（GPIO6）
+- 板载 LED（GPIO6）
 
-- 温湿度传感器（I²C接口）
+- 温湿度传感器（I²C 接口）
 
-让我们探讨如何在实际应用中使用这些组件。
+让我们探索如何在实际应用中使用这些组件。
 
-## reTerminal E系列电子纸显示器硬件组件控制
+## reTerminal E 系列 ePaper 显示屏硬件组件控制
 
-让我们探讨如何在Home Assistant中使用reTerminal E系列电子纸显示器上的每个硬件组件。
+让我们探索如何在 Home Assistant 中使用 reTerminal E 系列 ePaper 显示屏上的每个硬件组件。
 
-### 按钮和LED
+### 按钮和 LED
 
-此示例演示了如何使用reTerminal E系列电子纸显示器上的三个按钮来控制功能，并通过板载LED提供视觉反馈。
+此示例演示如何使用 reTerminal E 系列 ePaper 显示屏上的三个按钮来控制功能，并通过板载 LED 提供视觉反馈。
 
-您可以通过复制下面的代码并将其粘贴到Yaml文件中`captive_portal`代码行之后来使用此示例。
+您可以通过复制下面的代码并将其粘贴到 Yaml 文件中的 `captive_portal` 代码行之后来使用此示例。
 
 ```yaml
 # Button configuration
@@ -59,7 +59,7 @@ binary_sensor:
         - light.turn_on: onboard_led
         - delay: 500ms
         - light.turn_off: onboard_led
-        
+
   - platform: gpio
     pin:
       number: GPIO4          # Right white button
@@ -76,7 +76,7 @@ binary_sensor:
         - light.turn_on: onboard_led
         - delay: 200ms
         - light.turn_off: onboard_led
-        
+
   - platform: gpio
     pin:
       number: GPIO5           # Left white button
@@ -114,9 +114,9 @@ light:
 
 ### 蜂鸣器控制
 
-reTerminal E 系列 ePaper 显示屏包含一个位于 GPIO45 的蜂鸣器，可用于提供声音反馈。以下是配置方法：
+reTerminal E 系列 ePaper 显示屏在 GPIO45 上包含一个蜂鸣器，可用于提供声音反馈。以下是配置方法：
 
-您可以通过复制下面的代码并将其粘贴到 Yaml 文件中 `captive_portal` 代码行之后来使用此示例。
+您可以通过复制下面的代码并将其粘贴到 Yaml 文件中的 `captive_portal` 代码行之后来使用此示例。
 
 ```yaml
 # This component creates a raw PWM (Pulse Width Modulation) output signal.
@@ -169,7 +169,7 @@ binary_sensor:
 
 - 将蜂鸣器设置为 PWM 输出
 - 创建一个灯光实体来控制蜂鸣器
-- 配置按钮 1 在按下时播放短促的蜂鸣模式
+- 配置按钮 1 在按下时播放短蜂鸣模式
 
 :::tip
 您可以调整 `frequency` 参数来改变蜂鸣器的音调。更高的值会产生更高音调的声音。
@@ -263,7 +263,7 @@ sensor:
 
 - 通过 ADC 读取电池电压
 - 使用校准曲线将电压转换为电池百分比
-- 使电池原始电压和百分比都可在 Home Assistant 中使用
+- 使原始电压和百分比都在 Home Assistant 中可用
 
 :::caution
 要测量电池电量，您需要启用 **GPIO21** 引脚。否则无法从 GPIO1 读取电池电压值。
@@ -273,11 +273,11 @@ sensor:
 
 ## 演示 2. 将 Home Assistant 仪表板截图
 
-此示例演示如何捕获您的 Home Assistant 仪表板截图并在您的 reTerminal E 系列上显示它们。
+此示例演示如何捕获 Home Assistant 仪表板的截图并在您的 reTerminal E 系列上显示它们。
 
 ### 安装 [Puppet](https://github.com/balloob/home-assistant-addons) 插件
 
-步骤 1. 首先，您需要安装 Puppet 插件。点击下面的按钮，它将直接带您到您的 Home Assistant 实例中的插件安装页面：
+步骤 1. 首先，您需要安装 Puppet 插件。点击下面的按钮，它将直接带您到 Home Assistant 实例中的插件安装页面：
 
 <div align="center">
 <a href="https://my.home-assistant.io/redirect/supervisor_addon/?addon=0f1cc410_puppet&repository_url=https%3A%2F%2Fgithub.com%2Fballoob%2Fhome-assistant-addons" target="_blank">
@@ -291,19 +291,18 @@ sensor:
 
 ### 创建访问令牌
 
-步骤 3. 安装完成后，转到 Puppet 插件的配置页面。如您所见，这里我们需要输入令牌。您需要为此插件创建一个访问令牌。
+步骤 3. 安装后，转到 Puppet 插件的配置页面。如您所见，这里我们需要输入令牌。您需要为此插件创建一个访问令牌。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/49.png" style={{width:800, height:'auto'}}/></div>
 
-步骤 4. 通过点击左下角的用户名导航到您在 Home Assistant 中的个人资料，然后在页面底部选择"Long-Lived Access Tokens"。
+步骤 4. 通过点击左下角的用户名导航到 Home Assistant 中的个人资料，然后在页面底部选择"长期访问令牌"。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/50.png" style={{width:1000, height:'auto'}}/></div>
 
-步骤 5. 创建一个新令牌，使用描述性名称如"Puppet Screenshot"并复制生成的令牌。
-
+步骤 5. 创建一个具有描述性名称的新令牌，如"Puppet Screenshot"，并复制生成的令牌。
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/51.png" style={{width:800, height:'auto'}}/></div>
 
-步骤 6. 返回 Puppet 插件配置并将令牌粘贴到"Long-Lived Access Token"字段中。
+步骤 6. 返回 Puppet 插件配置，将令牌粘贴到"Long-Lived Access Token"字段中。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/52.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -313,7 +312,7 @@ sensor:
 
 ### 了解截图 API
 
-Puppet 插件在端口 10000 上启动一个服务器，生成任何 Home Assistant 页面的截图。以下是使用方法：
+Puppet 插件在端口 10000 上启动一个服务器，可以生成任何 Home Assistant 页面的截图。使用方法如下：
 
 #### 基本截图 URL 格式
 
@@ -321,7 +320,7 @@ Puppet 插件在端口 10000 上启动一个服务器，生成任何 Home Assist
 http://homeassistant.local:10000/lovelace/0?viewport=800x480
 ```
 
-此 URL 将以 800x480 分辨率（非常适合 reTerminal E 系列）捕获您默认仪表板的屏幕截图。
+此 URL 将以 800x480 分辨率（完美适配 reTerminal E 系列）捕获默认仪表板的截图。
 
 #### 电子纸优化
 
@@ -341,15 +340,15 @@ http://homeassistant.local:10000/lovelace/0?viewport=800x480&eink=2
 http://homeassistant.local:10000/lovelace/0?viewport=800x480&eink=2&invert
 ```
 
-#### Capturing Different Pages
+#### 捕获不同页面
 
-You can capture any Home Assistant page by changing the URL path:
+您可以通过更改 URL 路径来捕获任何 Home Assistant 页面：
 
 ```
 http://homeassistant.local:10000/todo?viewport=800x480&eink=2&invert
 ```
 
-步骤 10. 通过在网页浏览器中输入截图 URL 来测试您的截图 URL。您应该能看到所选 Home Assistant 页面的截图。
+步骤 10. 通过在网络浏览器中输入截图 URL 来测试。您应该能看到所选 Home Assistant 页面的截图。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/92.jpg" style={{width:800, height:'auto'}}/></div>
 
@@ -402,6 +401,14 @@ display:
 <TabItem value="For E1002" label="For E1002">
 
 ```yaml
+# for model 7.3in-e
+external_components:
+  - source:
+      type: git
+      url: https://github.com/lublak/esphome
+      ref: dev
+    components: [ waveshare_epaper ]
+
 http_request:
   verify_ssl: false
   timeout: 10s
@@ -424,7 +431,7 @@ spi:
 
 display:
   - platform: waveshare_epaper
-    id: epaper_display
+    id: main_display
     model: 7.30in-e
     cs_pin: GPIO10
     dc_pin: GPIO11
@@ -443,25 +450,25 @@ display:
 </Tabs>
 
 :::caution
-如果本地DNS解析在您的网络中不起作用，请将 `homeassistant.local` 替换为您的 Home Assistant 的实际IP地址。
+如果您的网络中本地 DNS 解析不起作用，请将 `homeassistant.local` 替换为您的 Home Assistant 的实际 IP 地址。
 :::
 
-当您的配置成功上传并运行时，您的reTerminal E系列电子纸显示屏将显示您的 Home Assistant 仪表板的截图：
+当您的配置成功上传并运行时，您的 reTerminal E 系列电子纸显示器将显示 Home Assistant 仪表板的截图：
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/54.jpg" style={{width:600, height:'auto'}}/></div>
 
-## 演示3：深度睡眠模式
+## 演示 3：深度睡眠模式
 
 :::tip
 如果您开始使用深度睡眠程序，我们建议您优先使用右侧的白色按钮，并将右侧的白色按钮设置为睡眠唤醒按钮。这样，当您想要更新程序时，就不会遇到设备正在睡眠而无法通过串口上传程序的尴尬情况。
 :::
 
-此示例演示如何使用深度睡眠模式来显著降低功耗，使您的reTerminal E系列电子纸显示屏适用于电池供电的应用。
+此示例演示如何使用深度睡眠模式来显著降低功耗，使您的 reTerminal E 系列电子纸显示器适用于电池供电的应用。
 
-您可以通过复制下面的代码并将其粘贴到Yaml文件中 `captive_portal` 代码行之后来使用此示例。
+您可以通过复制下面的代码并将其粘贴到 Yaml 文件中的 `captive_portal` 代码行之后来使用此示例。
 
 <Tabs>
-<TabItem value="For E1001" label="适用于E1001" default>
+<TabItem value="For E1001" label="For E1001" default>
 
 ```yaml
 globals:
@@ -513,7 +520,7 @@ display:
 ```
 
 </TabItem>
-<TabItem value="For E1002" label="适用于 E1002">
+<TabItem value="For E1002" label="For E1002">
 
 ```yaml
 globals:
@@ -535,6 +542,15 @@ interval:
   - interval: 29s  # Schedule sleep just before run_duration ends
     then:
       - logger.log: "Entering deep sleep now..."
+
+# for model 7.3in-e
+external_components:
+  - source:
+      type: git
+      url: https://github.com/lublak/esphome
+      ref: dev
+    components: [ waveshare_epaper ]
+
 
 font:
   - file: "gfonts://Inter@700"
@@ -571,33 +587,33 @@ display:
 此配置：
 
 - 创建一个在睡眠周期中持续存在的计数器
-- 配置设备唤醒30秒，然后睡眠3分钟
+- 配置设备唤醒 30 秒，然后睡眠 3 分钟
 - 使用当前唤醒次数更新显示
 - 可选择配置按钮来唤醒设备
 
-运行时，您将看到计数器在设备每次从睡眠中唤醒时递增：
+运行时，您将看到每次设备从睡眠中唤醒时计数器都会递增：
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/53.jpg" style={{width:600, height:'auto'}}/></div>
 
 ## 演示 4：综合示例
 
 :::tip
-为了更好地理解，我们强烈建议您在尝试这个综合示例之前先运行上面的基础示例。
+为了更好地理解，我们强烈建议您在尝试此综合示例之前先运行上面的基本示例。
 :::
 
-这个高级示例将多个功能组合成一个完整的 reTerminal E 系列仪表板解决方案。它演示了：
+此高级示例将多个功能组合成 reTerminal E 系列的完整仪表板解决方案。它演示了：
 
 1. 天气和室内气候显示
 2. 带图标的电池监控
 3. 时间和日期显示
-4. 使用按钮进行页面切换
+4. 使用按钮切换页面
 5. 电池监控
 
 <details>
-<summary>点击这里查看完整代码</summary>
+<summary>点击此处查看完整代码</summary>
 
 <Tabs>
-<TabItem value="For E1001" label="适用于 E1001" default>
+<TabItem value="For E1001" label="For E1001" default>
 
 ```yaml
 esphome:
@@ -777,7 +793,7 @@ light:
     name: "Onboard LED"
     output: bsp_led
     id: onboard_led
-    
+
 binary_sensor:
   - platform: gpio    # Next page
     pin:
@@ -915,8 +931,7 @@ display:
 
         // Day of the week + date below the time
         it.printf(400, 280, id(mid_font), TextAlign::CENTER, "%s, %s", wday, dateStr);
-      }
-```
+      }```
 
 </TabItem>
 <TabItem value="For E1002" label="适用于 E1002">
@@ -978,6 +993,15 @@ spi:
 i2c:
   scl: GPIO20
   sda: GPIO19
+
+# for model 7.3in-e
+external_components:
+  - source:
+      type: git
+      url: https://github.com/lublak/esphome
+      ref: dev
+    components: [ waveshare_epaper ]
+
 
 # Fonts
 font:
@@ -1099,7 +1123,7 @@ light:
     name: "Onboard LED"
     output: bsp_led
     id: onboard_led
-    
+
 binary_sensor:
   - platform: gpio    # Next page
     pin:
@@ -1261,20 +1285,19 @@ display:
 
 1. **多页面**：显示屏在两个页面之间切换 - 气候仪表板和时间/日期显示
 2. **按钮导航**：使用 GPIO3 和 GPIO5 上的按钮在页面之间导航
-3. **电池监控**：显示电池电量，图标会根据充电水平变化
+3. **电池监控**：显示电池电量，并根据充电水平显示相应的图标
 4. **硬件初始化**：启动时启用 SD 卡和电池监控电路
 5. **温湿度显示**：通过 I²C 使用板载 SHT4x 传感器
 6. **动态图标**：Material Design 图标根据传感器值变化
-
 ## 常见问题
 
-### Q1：为什么没有数据？
+### Q1: 为什么没有数据？
 
 在这种情况下，您应该转到设置 -> 设备和服务 -> 集成来**重新配置**设备。没有找到您的 ePaper 面板？尝试重启 Home Assistant。
 
 <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/101.png" style={{width:'100%', height:'auto'}}/></div>
 
-### Q2：为什么我无法在 Home Assistant 中获取这些数据？ {#port}
+### Q2: 为什么我无法在 Home Assistant 中获取这些数据？ {#port}
 
 在这种情况下，您应该转到设置 -> 设备和服务 -> 集成来**添加**您的设备到 Home Assistant。
 
@@ -1297,11 +1320,11 @@ Step 3. Turn off the battery switch and unplug the power cable.
 
 Step 4. Finally, replug the cable and upload a new program. -->
 
-### Q3：Wi-Fi 上传程序失败？
+### Q3: Wi-Fi 上传程序失败？
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/74.png" style={{width:800, height:'auto'}}/></div>
 
-在这种情况下，您的设备要么离线，要么处于深度睡眠模式。请确保它已连接到您的网络，或在尝试上传之前将其从睡眠模式唤醒。
+在这种情况下，您的设备要么离线，要么处于深度睡眠模式。请确保它已连接到您的网络，或在尝试上传之前将其从睡眠模式中唤醒。
 
 ## 技术支持与产品讨论
 
