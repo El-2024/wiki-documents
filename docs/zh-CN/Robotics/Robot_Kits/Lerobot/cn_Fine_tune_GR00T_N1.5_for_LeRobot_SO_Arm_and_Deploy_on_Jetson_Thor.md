@@ -1,29 +1,29 @@
 ---
-description: This wiki introduces how to get started with NVIDIA Jetson Thor and provides example workflows for deploying AI and robotics projects on Thor. Detailed step-by-step instructions and reference documentation are also provided.
-title: Fine-tune Isaac GR00T N1.5 for LeRobot SO-101 Arm and Deploy on Jetson Thor 
+description: 本 wiki 介绍如何开始使用 NVIDIA Jetson Thor，并提供在 Thor 上部署 AI 和机器人项目的示例工作流程。还提供了详细的分步说明和参考文档。
+title: 为 LeRobot SO-101 机械臂微调 Isaac GR00T N1.5 并在 Jetson Thor 上部署
 
 keywords:
 - Thor
 - Robotics
 - Seeed
 image: https://files.seeedstudio.com/wiki/other/cover1.png
-slug: /fine_tune_gr00t_n1.5_for_lerobot_so_arm_and_deploy_on_jetson_thor
+slug: /cn/fine_tune_gr00t_n1.5_for_lerobot_so_arm_and_deploy_on_jetson_thor
 last_update:
   date: 2025-9-11
   author: AI&Robotics Group
 ---
 
-# Fine-tune GR00T N1.5 for LeRobot SO-101 Arm and Deploy on Jetson AGX Thor
+# 为 LeRobot SO-101 机械臂微调 GR00T N1.5 并在 NVIDIA Jetson AGX Thor 上部署
 
-## Introduction
+## 介绍
 
-This wiki explains how to **fine-tune NVIDIA Isaac GR00T N1.5** for the **LeRobot SO-101 arm** and deploy it on **NVIDIA Jetson Thor**. It covers:
+本 wiki 解释了如何为**LeRobot SO-101 机械臂**微调**NVIDIA Isaac GR00T N1.5**并在**NVIDIA Jetson Thor**上部署。内容包括：
 
-- Hardware preparation for **LeRobot SO-101** and **Jetson AGX Thor**  
-- Software environment setup for **GR00T N1.5** on Jetson Thor  
-- Using the **LeRobot training platform**: data collection, dataset formatting, and fine-tuning for the SO-101 arm  
-- Example workflows for deploying the trained GR00T N1.5 policy (LeRobot + SO-101) on Jetson Thor  
-- Troubleshooting tips and common pitfalls  
+- **LeRobot SO-101**和**Jetson AGX Thor**的硬件准备
+- 在 Jetson Thor 上设置**GR00T N1.5**的软件环境
+- 使用**LeRobot 训练平台**：数据收集、数据集格式化和 SO-101 机械臂的微调
+- 在 Jetson Thor 上部署训练好的 GR00T N1.5 策略（LeRobot + SO-101）的示例工作流程
+- 故障排除技巧和常见陷阱
 
 <div align="center">
   <img width ="1000" src="https://files.seeedstudio.com/wiki/other/cover1.png"/>
@@ -31,53 +31,53 @@ This wiki explains how to **fine-tune NVIDIA Isaac GR00T N1.5** for the **LeRobo
 
 <p></p>
 
-**Detailed, step-by-step instructions and reference documentation are provided to help you go from initial setup to full deployment.**
+**提供详细的分步说明和参考文档，帮助您从初始设置到全面部署。**
 
-## Getting Started with NVIDIA Jetson Thor Developer Kit
+## NVIDIA Jetson Thor 开发者套件入门
 
-### Overview of Jetson Thor
+### Jetson Thor 概述
 
-The **NVIDIA® Jetson AGX Thor™ Developer Kit** is a powerhouse for physical AI and humanoid robotics. It’s built around the NVIDIA Blackwell GPU and includes **128 GB high-speed memory**, delivering **up to 2,070 FP4 TFLOPS** of AI compute while operating within a **40-130 W** (common usage up to 130 W) power envelope.
+**NVIDIA® Jetson AGX Thor™开发者套件**是物理 AI 和人形机器人的强大平台。它基于 NVIDIA Blackwell GPU 构建，包含**128 GB 高速内存**，在**40-130 W**（常用功耗高达 130 W）功耗范围内提供**高达 2,070 FP4 TFLOPS**的 AI 计算能力。
 
-You can get the Jetson AGX Thor Developer Kit from Seeed Studio here: [Seeed – NVIDIA Jetson AGX Thor™ Developer Kit](https://www.seeedstudio.com/NVIDIA-Jetson-AGX-Thor-Developer-Kit-p-9965.html)
+您可以从 Seeed Studio 获取 Jetson AGX Thor 开发者套件：[Seeed – NVIDIA Jetson AGX Thor™开发者套件](https://www.seeedstudio.com/NVIDIA-Jetson-AGX-Thor-Developer-Kit-p-9965.html)
 <div align="center">
   <img width ="1000" src="https://files.seeedstudio.com/wiki/other/thor-post.png"/>
 </div>
 
-The hardware items included in the box are one Thor unit and a power adapter:
+包装盒中包含的硬件物品是一个 Thor 单元和一个电源适配器：
 <div align="center">
   <img width ="800" src="https://files.seeedstudio.com/wiki/other/physical.jpeg"/>
 </div>
 
-### Flashing the Thor System Image
+### 刷写 Thor 系统镜像
 
-As of **September 10, 2025**, the latest available system image version for Thor is **38.2**. If you need to re-flash the system for Thor, please follow the instructions in this section.
-Required Items for Flashing:
+截至**2025 年 9 月 10 日**，Thor 可用的最新系统镜像版本是**38.2**。如果您需要为 Thor 重新刷写系统，请按照本节中的说明操作。
+刷写所需物品：
 
-- A host device with more than 25 GB of available disk space (Ubuntu or Windows OS supported)
-- A USB drive with a capacity of at least 16 GB
-- A monitor and DP/HDMI display cable
-- A power supply environment capable of delivering over 240 W
-- A keyboard with USB interface
+- 一台具有超过 25 GB 可用磁盘空间的主机设备（支持 Ubuntu 或 Windows 操作系统）
+- 一个容量至少为 16 GB 的 USB 驱动器
+- 一台显示器和 DP/HDMI 显示线缆
+- 能够提供超过 240 W 功率的电源供应环境
+- 一个带 USB 接口的键盘
 
-First, download the ISO-format system image for Thor from the official NVIDIA website. Click [here](https://developer.nvidia.com/embedded/jetpack/downloads) to visit the download page:
+首先，从 NVIDIA 官方网站下载 Thor 的 ISO 格式系统镜像。点击[这里](https://developer.nvidia.com/embedded/jetpack/downloads)访问下载页面：
 
 <div align="center">
   <img width ="700" src="https://files.seeedstudio.com/wiki/other/38.2-iso.png"/>
 </div>
 
-Install Balena Etcher on the host machine. To download the installer, click [here](https://etcher.balena.io/#:~:text=DOWNLOAD-,Download%20Etcher,-ASSET) and select the appropriate version based on your host operating system:
+在主机上安装 Balena Etcher。要下载安装程序，请点击[这里](https://etcher.balena.io/#:~:text=DOWNLOAD-,Download%20Etcher,-ASSET)并根据您的主机操作系统选择合适的版本：
 <div align="center">
   <img width ="700" src="https://files.seeedstudio.com/wiki/other/balena.jpg"/>
 </div>
 
-After downloading the ISO image file and successfully installing **Balena Etcher**, insert the USB drive into the host machine. Then, launch **Balena Etcher** to create a bootable USB drive for flashing Thor:
+下载 ISO 镜像文件并成功安装**Balena Etcher**后，将 USB 驱动器插入主机。然后，启动**Balena Etcher**创建用于刷写 Thor 的可启动 USB 驱动器：
 :::danger
-This process will format the USB drive. Please make sure to back up any important data beforehand.
+此过程将格式化 USB 驱动器。请确保事先备份任何重要数据。
 :::
 
-Select the downloaded ISO image file from your local storage, then choose the target device—i.e., your USB drive.
-<mark>Be sure to verify the target device name and mount directory carefully!</mark>  Click `Flash!` and wait for the process to complete. Once finished, the USB drive for flashing the system onto Thor is ready:
+从本地存储中选择下载的 ISO 镜像文件，然后选择目标设备——即您的 USB 驱动器。
+<mark>请务必仔细验证目标设备名称和挂载目录！</mark>点击`Flash!`并等待过程完成。完成后，用于在 Thor 上刷写系统的 USB 驱动器就准备好了：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/step1.png" width="300"/>
   <img src="https://files.seeedstudio.com/wiki/other/target.png" width="300"/>
@@ -86,14 +86,14 @@ Select the downloaded ISO image file from your local storage, then choose the ta
 
 <p></p>
 
-Next, insert the prepared USB drive, keyboard, display cable (DP/HDMI), and power supply (Type-C) into the Thor board to begin the flashing process.
+接下来，将准备好的 USB 驱动器、键盘、显示线缆（DP/HDMI）和电源（Type-C）插入 Thor 板以开始刷写过程。
 <div align="center">
   <img width ="700" src="https://files.seeedstudio.com/wiki/other/flash-insert.jpg"/>
 </div>
 
 <p></p>
 
-Power on the Thor and enter the boot interface. Select `Boot Manager`, then choose the USB drive that was inserted into Thor (based on your USB drive name). Press Esc to return to the previous menu, and select `Continue`:
+启动 Thor 并进入启动界面。选择`Boot Manager`，然后选择插入 Thor 的 USB 驱动器（基于您的 USB 驱动器名称）。按 Esc 返回上一个菜单，然后选择`Continue`：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/BootM.png" width="300"/>
   <img src="https://files.seeedstudio.com/wiki/other/selectU.png" width="300"/>
@@ -102,56 +102,56 @@ Power on the Thor and enter the boot interface. Select `Boot Manager`, then choo
 
 <p></p>
 
-After a brief black screen, the following interface will appear. Select `Jetson Thor options` and press Enter. Then, choose the option
-`Flash Jetson AGX Thor Developer Kit on NVMe 0.2.0-r38.2` to flash the system image onto Thor’s NVMe solid-state drive:
+经过短暂的黑屏后，将出现以下界面。选择`Jetson Thor options`并按 Enter。然后，选择选项
+`Flash Jetson AGX Thor Developer Kit on NVMe 0.2.0-r38.2`将系统镜像刷写到 Thor 的 NVMe 固态硬盘：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/option.png" width="450"/>
   <img src="https://files.seeedstudio.com/wiki/other/flash-M2.png" width="450"/>
 </div>
 
-A large amount of log information will be displayed on the screen. Wait for approximately **15 minutes**. Once this stage is complete, the device will automatically reboot and proceed to the next interface. Wait until the **Update Progress** bar reaches 100%, which indicates the flashing process has been successfully completed:
+屏幕上将显示大量日志信息。等待大约**15 分钟**。此阶段完成后，设备将自动重启并进入下一个界面。等待**更新进度**条达到 100%，这表示刷写过程已成功完成：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/option.png" width="450"/>
   <img src="https://files.seeedstudio.com/wiki/other/flash-M2.png" width="450"/>
 </div>
 
-After flashing, you can proceed with the initial system configuration:
+刷写完成后，您可以继续进行初始系统配置：
 <div align="center">
   <img width ="700" src="https://files.seeedstudio.com/wiki/other/ubuntu24.png"/>
 </div>
 
 :::warning
-This system image does not include CUDA, TensorRT, or other SDK components from JetPack.
+此系统镜像不包含 CUDA、TensorRT 或 JetPack 中的其他 SDK 组件。
 :::
 
-## Basic Development Environment Setup on Thor
+## Thor 上的基本开发环境设置
 
-This section provides examples of how to install commonly used software dependencies on Thor for development purposes. These dependencies aim to facilitate subsequent development.
+本节提供了如何在 Thor 上安装常用软件依赖项以用于开发目的的示例。这些依赖项旨在促进后续开发。
 
-Please note that the listed dependencies are **for reference only**—please install additional packages according to their individual project requirements.
+请注意，列出的依赖项**仅供参考**——请根据各自项目的要求安装其他软件包。
 
-### Installing Essential Development Dependencies
+### 安装基本开发依赖项
 
-**JetPack SDK Installation**
+**JetPack SDK 安装**
 <p></p>
-Open the terminal and run the following command. After a short wait, CUDA, TensorRT, and other SDK components will be installed:
+打开终端并运行以下命令。稍等片刻后，CUDA、TensorRT 和其他 SDK 组件将被安装：
 ```bash
 sudo apt update
 sudo apt install nvidia-jetpack
 ```
 
-**Browser Installation**
+**浏览器安装**
 
-Firefox has been tested and verified to run stably on Ubuntu 24.04:
+Firefox 已经过测试并验证可在 Ubuntu 24.04 上稳定运行：
 
 ```bash
 sudo apt update
 sudo apt install firefox
 ```
 
-**Jtop Installation**
+**Jtop 安装**
 
-To install jtop, refer to the following instructions.
+要安装 jtop，请参考以下说明。
 
 ```bash
 sudo apt update
@@ -162,9 +162,9 @@ sudo pip3 install -U pip
 sudo pip3 install jetson-stats
 ```
 
-**Miniconda Installation**
+**Miniconda 安装**
 
-Miniconda is used to isolate development environments. To install miniconda, refer to the following instructions：
+Miniconda 用于隔离开发环境。要安装 miniconda，请参考以下说明：
 
 ```bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -173,27 +173,27 @@ source ~/.bashrc
 conda --version
 ```
 
-**Installing the GPU Version of PyTorch**
+**安装 GPU 版本的 PyTorch**
 
-Compiling the GPU version of PyTorch from source on Thor may result in compatibility issues. For convenience, we provide a precompiled `.whl` file to help developers quickly set up a PyTorch-enabled development environment on Thor.
+在 Thor 上从源代码编译 GPU 版本的 PyTorch 可能会导致兼容性问题。为了方便起见，我们提供了一个预编译的`.whl`文件，帮助开发者在 Thor 上快速设置支持 PyTorch 的开发环境。
 
-Here, a pre-compiled wheel file is provided for installing PyTorch 2.9 on Thor. This file was compiled in a Python `3.10 + CUDA 13` environment.
-Click [**here**](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EVe_c8F4DR9CluC049HCYoMBP3UXta1kqLEDTvkcYU6s-A?e=d9VEzN) to download the `.whl` file.
+这里提供了一个预编译的 wheel 文件，用于在 Thor 上安装 PyTorch 2.9。此文件是在 Python `3.10 + CUDA 13`环境中编译的。
+点击[**这里**](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EVe_c8F4DR9CluC049HCYoMBP3UXta1kqLEDTvkcYU6s-A?e=d9VEzN)下载`.whl`文件。
 
-Other precompiled dependency `.whl` files for thor can be found [**here**](https://pypi.jetson-ai-lab.io/sbsa/cu130).
+其他用于 thor 的预编译依赖项`.whl`文件可以在[**这里**](https://pypi.jetson-ai-lab.io/sbsa/cu130)找到。
 
-If the expected wheel file is not available, developer will need to build the required dependencies themselves to complete the setup of the development environment.
+如果没有可用的预期 wheel 文件，开发者需要自己构建所需的依赖项来完成开发环境的设置。
 
-### **Installing Additional Dependencies**
+### **安装其他依赖项**
 
-This document provides a reference Docker image to help developers quickly adapt to the Jetson AGX Thor development environment.
-<mark>This image is for reference only, and developers are free to choose whether to use it based on their specific needs.</mark>
+本文档提供了一个参考 Docker 镜像，帮助开发者快速适应 Jetson AGX Thor 开发环境。
+<mark>此镜像仅供参考，开发者可以根据具体需求自由选择是否使用。</mark>
 
 :::note
-Since the image size exceeds 40 GB, downloading it from the server is relatively slow.
+由于镜像大小超过 40 GB，从服务器下载相对较慢。
 :::
 
-This Docker image can stably run GR00T N1.5 inference. The output of the `pip list` command in the image is as follows:
+此 Docker 镜像可以稳定运行 GR00T N1.5 推理。镜像中`pip list`命令的输出如下：
 
 <details>
 <summary> pip.list </summary>
@@ -503,13 +503,13 @@ zipp                      3.23.0                             /opt/venv/lib/pytho
 
 </details>
 
-The image can be pulled directly from Docker Hub and includes commonly used dependencies such as `PyTorch`, `TensorRT`, and `FlashAttention`:
+镜像可以直接从 Docker Hub 拉取，包含常用的依赖项，如 `PyTorch`、`TensorRT` 和 `FlashAttention`：
 
 ```bash
 docker pull johnnync/lerobot:r38.2.aarch64-cu130-24.04
 ```
 
-To run Docker on Thor, refer to the following command. Replace `your_docker_img:tag` with your Docker image name and tag, or use the image ID:
+要在 Thor 上运行 Docker，请参考以下命令。将 `your_docker_img:tag` 替换为您的 Docker 镜像名称和标签，或使用镜像 ID：
 
 ```bash
 sudo docker run --rm -it \
@@ -524,28 +524,28 @@ sudo docker run --rm -it \
   your_docker_img:tag
 ```
 
-## Data Collection Using the SO-ARM
+## 使用 SO-ARM 进行数据收集
 
-Data collection for the lerobot robotic arm can be performed either on a PC or directly on a Jetson device.
+lerobot 机械臂的数据收集可以在 PC 上执行，也可以直接在 Jetson 设备上执行。
 
-- Method 1: Collect data using Jetson
-- Method 2: Collect data using an Ubuntu PC
+- 方法 1：使用 Jetson 收集数据
+- 方法 2：使用 Ubuntu PC 收集数据
 
-The data collection procedures are essentially the same for both methods.
+两种方法的数据收集程序基本相同。
 
 :::warning
-**Jetson may not be able to simultaneously stream two USB cameras with the same bandwidth requirements. If you connect two USB cameras, they must be attached to different USB hub chips!**
+**Jetson 可能无法同时流式传输两个具有相同带宽要求的 USB 摄像头。如果您连接两个 USB 摄像头，它们必须连接到不同的 USB 集线器芯片！**
 :::
 
-To stream two USB cameras simultaneously on Thor, after connecting one camera to the USB-A port, you’ll also need to use an **external USB hub connected via the USB Type-C port**. This ensures that the second USB camera is mounted to a different USB hub controller within Thor.
- An example of a compatible USB Type-C hub is shown below:
+要在 Thor 上同时流式传输两个 USB 摄像头，在将一个摄像头连接到 USB-A 端口后，您还需要使用**通过 USB Type-C 端口连接的外部 USB 集线器**。这确保第二个 USB 摄像头挂载到 Thor 内的不同 USB 集线器控制器。
+ 兼容的 USB Type-C 集线器示例如下所示：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/hub.png" height="400"/>
 </div>
 
-### Lerobot Environment Setup
+### Lerobot 环境设置
 
-**Miniconda Installation**
+**Miniconda 安装**
 
 ```bash
 #Jetson 
@@ -565,7 +565,7 @@ source ~/miniconda3/bin/activate
 conda init --all
 ```
 
-**Dependency Installation**
+**依赖项安装**
 
 ```bash
 conda create -y -n lerobot python=3.10 && conda activate lerobot
@@ -575,22 +575,22 @@ git clone https://github.com/Seeed-Projects/lerobot.git ~/lerobot
 conda install ffmpeg -c conda-forge
 ```
 
-**Installing lerobot**
+**安装 lerobot**
 
 :::note
-**Before running the installation command, make sure that the GPU-supported versions of PyTorch and TorchVision are already installed!**
+**在运行安装命令之前，请确保已安装支持 GPU 的 PyTorch 和 TorchVision 版本！**
 :::
 
-To verify that your installed PyTorch is using GPU support, enter the following in the terminal:
+要验证您安装的 PyTorch 是否使用 GPU 支持，请在终端中输入以下内容：
 
 ```bash
 import torch
 print(torch.cuda.is_available())
 ```
 
-If you plan to collect data on a Jetson device, you can refer to the previous sections for installing PyTorch, or check this [article](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)
+如果您计划在 Jetson 设备上收集数据，可以参考前面的章节来安装 PyTorch，或查看这篇[文章](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)
 
-Once PyTorch is confirmed to be properly installed, run the following in the terminal:
+确认 PyTorch 已正确安装后，在终端中运行以下命令：
 
 ```bash
 cd ~/lerobot && pip install -e ".[feetech]"
@@ -602,15 +602,15 @@ conda uninstall numpy
 pip3 install numpy==1.26.0  # This should match torchvision
 ```
 
-### Servo Calibration
+### 舵机校准
 
-The servo calibration process is not elaborated in detail in this document. Please refer to the following article for more information:
+舵机校准过程在本文档中不详细阐述。请参考以下文章了解更多信息：
 
-[click me](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/#%E6%A0%A1%E5%87%86%E8%88%B5%E6%9C%BA%E5%B9%B6%E7%BB%84%E8%A3%85%E6%9C%BA%E6%A2%B0%E8%87%82)
+[点击我](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/#%E6%A0%A1%E5%87%86%E8%88%B5%E6%9C%BA%E5%B9%B6%E7%BB%84%E8%A3%85%E6%9C%BA%E6%A2%B0%E8%87%82)
 
-### SO-ARM Calibration
+### SO-ARM 校准
 
-First, ensure that the connection is working properly and the ports corresponding to the robotic arms are correctly recognized.
+首先，确保连接正常工作，并且正确识别了机械臂对应的端口。
 
 ```bash
 python -m lerobot.find_port
@@ -627,13 +627,13 @@ The port of this MotorsBus is /dev/ttyACM0
 Reconnect the USB cable.
 ```
 
-The port for the leader arm is likely`/dev/ttyACM0`. The port for the follower arm is likely:：`/dev/ttyACM1`
+主控臂的端口可能是 `/dev/ttyACM0`。从动臂的端口可能是：`/dev/ttyACM1`
 
 :::note
-**When calibrating the robotic arms, please do NOT connect any USB cameras, as this may cause port conflicts or incorrect port assignments.**
+**校准机械臂时，请不要连接任何 USB 摄像头，因为这可能导致端口冲突或端口分配错误。**
 :::
 
-**After running the calibration script, manually move each joint of the robotic arm to ensure that it reaches its full range of motion! Failure to do so may result in a mismatch between the poses of the leader and follower arms during teleoperation.**
+**运行校准脚本后，手动移动机械臂的每个关节，确保其达到完整的运动范围！否则可能导致遥操作期间主控臂和从动臂姿态不匹配。**
 
 ```bash
 # Grant permission to access the serial ports
@@ -652,7 +652,7 @@ python -m lerobot.calibrate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-Once both the leader and follower arms are calibrated, run the teleoperation test script:
+主控臂和从动臂都校准完成后，运行遥操作测试脚本：
 
 ```bash
 python -m lerobot.teleoperate \
@@ -664,25 +664,25 @@ python -m lerobot.teleoperate \
     --teleop.id=my_awesome_leader_arm
 ```
 
-Use the leader arm to teleoperate the follower arm. Ensure that the two arms mirror each other’s pose correctly. If not, recalibration is required.
+使用主控臂遥操作从动臂。确保两个臂正确镜像彼此的姿态。如果不正确，需要重新校准。
 
-### Camera Installation
+### 摄像头安装
 
-It is generally recommended to install one camera on the wrist joint of the robotic arm, and another camera on the desktop surface, to ensure proper coverage of the arm’s posture.
-<mark>The specific installation approach depends on your application scenario; the example shown below is for reference only.</mark>
+通常建议在机械臂的腕关节上安装一个摄像头，在桌面表面安装另一个摄像头，以确保对臂的姿态有适当的覆盖。
+<mark>具体的安装方法取决于您的应用场景；下面显示的示例仅供参考。</mark>
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/camdata1.png" height="450"/>
   <img src="https://files.seeedstudio.com/wiki/other/camdata2.png" height="450"/>
 </div>
 
-Run the following script to ensure that the system correctly detects the connected USB cameras and that the cameras can be accessed properly:
+运行以下脚本以确保系统正确检测到连接的 USB 摄像头，并且摄像头可以正常访问：
 
 ```bash
 # Use 'opencv' for standard RGB cameras. For Intel Realsense cameras, replace 'opencv' with 'realsense'.
 python -m lerobot.find_cameras opencv
 ```
 
-If the cameras are correctly detected and accessible, the terminal will display:
+如果摄像头被正确检测并可访问，终端将显示：
 
 ```bash
 --- Detected Cameras ---
@@ -700,9 +700,9 @@ Camera #0:
 (more cameras ...)
 ```
 
-The terminal will output a list of available camera IDs. Be sure to take note of the IDs to ensure that your program can correctly access the cameras!
+终端将输出可用摄像头 ID 的列表。请务必记下这些 ID，以确保您的程序能够正确访问摄像头！
 
-To test camera usage during teleoperation:
+要在遥操作期间测试摄像头使用：
 
 ```bash
 python -m lerobot.teleoperate \
@@ -716,11 +716,11 @@ python -m lerobot.teleoperate \
     --display_data=true
 ```
 
-Here, `--robot.cameras`need the correct camera configuration and ID.
+这里，`--robot.cameras` 需要正确的摄像头配置和 ID。
 
-### Data Collection
+### 数据收集
 
-If the SO-ARM is intended to record data locally, refer to the following command-line parameters:
+如果 SO-ARM 打算在本地记录数据，请参考以下命令行参数：
 
 ```bash
 python -m lerobot.record \
@@ -740,21 +740,21 @@ python -m lerobot.record \
     --dataset.reset_time_s=30 
 ```
 
-`--dataset.repo_id`: Specifies the name of the dataset folder
+`--dataset.repo_id`：指定数据集文件夹的名称
 
-`--dataset.single_task`: Description of the task
+`--dataset.single_task`：任务描述
 
-`--dataset.num_episodes`: Number of samples to collect
+`--dataset.num_episodes`：要收集的样本数量
 
-`--dataset.episode_time_s`: Duration (in seconds) of each recorded sample
+`--dataset.episode_time_s`：每个记录样本的持续时间（秒）
 
-`--dataset.reset_time_s`: Time (in seconds) to reset the environment
+`--dataset.reset_time_s`：重置环境的时间（秒）
 
 :::note
-**If the data collection process is interrupted unexpectedly, you can re-run the data collection script with the `--resume=true` flag to continue from where it left off.**
+**如果数据收集过程意外中断，您可以使用 `--resume=true` 标志重新运行数据收集脚本，从中断处继续。**
 :::
 
-If you wish to sync the collected data to Hugging Face, you must configure your HUGGINGFACE_TOKEN before recording:
+如果您希望将收集的数据同步到 Hugging Face，必须在记录前配置您的 HUGGINGFACE_TOKEN：
 
 ```bash
 hf auth login --token ${HUGGINGFACE_TOKEN} --add-to-git-credential
@@ -783,26 +783,26 @@ python -m lerobot.record \
 ```
 
 :::tip
-The collected data will be saved locally under `~/.cache/huggingface/lerobot` directory!
+收集的数据将保存在本地的 `~/.cache/huggingface/lerobot` 目录下！
 :::
 
-### Visualizing Collected Data
+### 可视化收集的数据
 
-**Visualize Cloud-based Dataset**
+**可视化云端数据集**
 
 ```bash
 python -m lerobot.scripts.visualize_dataset_html \
   --repo-id ${HF_USER}/so101_test \
 ```
 
-**Visualize Local Dataset**
+**可视化本地数据集**
 
 ```bash
 python -m lerobot.scripts.visualize_dataset_html \
   --repo-id seeed_studio/so101_test \
 ```
 
-**Replay a Recorded Episode**
+**重放录制的片段**
 
 ```bash
 python -m lerobot.replay \
@@ -813,12 +813,12 @@ python -m lerobot.replay \
     --dataset.episode=0
 ```
 
-The parameter `--dataset.episode=0` specifies which episode to replay on the follower arm.
-For example: running this script will cause the follower arm to execute the exact actions recorded during `episode_0`.
+参数 `--dataset.episode=0` 指定在从动臂上重放哪个片段。
+例如：运行此脚本将使从动臂执行在 `episode_0` 期间录制的确切动作。
 
-### Policy Training
+### 策略训练
 
-If you plan to train the policy locally, you may refer to the following command:
+如果您计划在本地训练策略，可以参考以下命令：
 
 ```bash
 python -m lerobot.scripts.train \
@@ -832,52 +832,52 @@ python -m lerobot.scripts.train \
   --steps=300000 
 ```
 
-`--policy.type`: Specify the policy type to be trained
+`--policy.type`：指定要训练的策略类型
 
-`--policy.push_to_hub=false\`: Whether to upload the trained weights to the cloud (Hugging Face Hub)
+`--policy.push_to_hub=false\`：是否将训练好的权重上传到云端（Hugging Face Hub）
 
-`--steps`: Number of training steps
+`--steps`：训练步数
 
 :::tip
-In the following sections, we will introduce a cloud-based training platform and demonstrate basic usage. You may choose to complete training more efficiently on the remote server.
+在以下章节中，我们将介绍基于云端的训练平台并演示基本用法。您可以选择在远程服务器上更高效地完成训练。
 :::
 
 :::note
-If you choose to train the policy in the cloud, make sure that your dataset is uploaded to the cloud server in advance, or downloaded from the Hugging Face Hub. However, due to potential network issues when downloading directly from the Hugging Face Hub, it is strongly recommended to manually upload the dataset to your cloud server.
+如果您选择在云端训练策略，请确保您的数据集已提前上传到云服务器，或从 Hugging Face Hub 下载。但是，由于直接从 Hugging Face Hub 下载时可能出现网络问题，强烈建议手动将数据集上传到您的云服务器。
 :::
 
-## Use NVIDIA Brev for training policies
+## 使用 NVIDIA Brev 训练策略
 
-NVIDIA Brev provides streamlined access to NVIDIA GPU instances on popular cloud platforms, automatic environment setup, and flexible deployment options, enabling developers to start experimenting instantly.
+NVIDIA Brev 提供对流行云平台上 NVIDIA GPU 实例的简化访问、自动环境设置和灵活的部署选项，使开发者能够立即开始实验。
 
-Platform access URL:
+平台访问 URL：
 [https://login.brev.nvidia.com/signin](https://login.brev.nvidia.com/signin)
 
-You will need to register an account to use the platform. This section introduces the basic usage of the training platform.
+您需要注册一个账户来使用该平台。本节介绍训练平台的基本用法。
 
-### Enabling the Cloud-Based Training Platform
+### 启用基于云端的训练平台
 
-**Step-by-Step Instructions**
+**分步说明**
 
-- Create a Cloud Server Instance -step 1
+- 创建云服务器实例 - 步骤 1
 
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/train0.png" width="600"/>
 </div>
 
-- Create a Cloud Server Instance -step 2
+- 创建云服务器实例 - 步骤 2
 
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/train1.png" width="600"/>
 </div>
 
-- Create a Cloud Server Instance -step 3
+- 创建云服务器实例 - 步骤 3
 
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/train2.png" width="600"/>
 </div>
 
-**Launch the Web-Based Jupyter Notebook**：
+**启动基于 Web 的 Jupyter Notebook**：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/jnote0.png" width="600"/>
 </div>
@@ -885,11 +885,11 @@ You will need to register an account to use the platform. This section introduce
   <img src="https://files.seeedstudio.com/wiki/other/jnote1.png" width="600"/>
 </div>
 
-### Training the Model and Exporting from the Server
+### 训练模型并从服务器导出
 
-**Developers can train models directly within the notebook terminal. Below is an example for training an act model and exporting it from the server afterward.**
+**开发者可以直接在 notebook 终端中训练模型。以下是训练 act 模型并随后从服务器导出的示例。**
 
-Install Conda on the server:
+在服务器上安装 Conda：
 
 ```bash
 mkdir -p ~/miniconda3
@@ -900,7 +900,7 @@ source ~/miniconda3/bin/activate
 conda init --all
 ```
 
-Install lerobot projectt:
+安装 lerobot 项目：
 
 ```bash
 conda create -y -n lerobot python=3.10 && conda activate lerobot
@@ -908,7 +908,7 @@ git clone https://github.com/Seeed-Projects/lerobot.git ~/lerobot
 cd ~/lerobot && pip install -e ".[feetech]"
 ```
 
-Train the ACT model:
+训练 ACT 模型：
 
 ```bash
 python -m lerobot.scripts.train \
@@ -927,25 +927,25 @@ python -m lerobot.scripts.train \
 </div>
 
 :::note
-If you want to train or fine-tune Gr00t on a server, you can refer to this [link](https://github.com/NVIDIA/Isaac-GR00T).
+如果您想在服务器上训练或微调 Gr00t，可以参考此[链接](https://github.com/NVIDIA/Isaac-GR00T)。
 :::
 
-**After training is completed, you may want to download the model to your local machine. But he Jupyter Notebook sidebar does not support direct navigation into model training folders.**
+**训练完成后，您可能希望将模型下载到本地机器。但 Jupyter Notebook 侧边栏不支持直接导航到模型训练文件夹。**
 
-Solution is that: First compress the target folder into a `.zip` or `.tar.gz` archive, then download the archive file through the notebook interface. Refer to the figure below for an example.
+解决方案是：首先将目标文件夹压缩为 `.zip` 或 `.tar.gz` 归档文件，然后通过 notebook 界面下载归档文件。参考下图示例。
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/train5.png" width="600"/>
 </div>
 
-## Isaac GR00T N1.5 Inference on Thor
+## 在 Thor 上进行 Isaac GR00T N1.5 推理
 
-Jetson AGX Thor, as a powerful edge computing and deployment platform, provides sufficient resources to support large-scale model inference. In this section, building upon the previously introduced content, we demonstrate how to run inference for GR00T N1.5 on Thor.
+Jetson AGX Thor 作为强大的边缘计算和部署平台，提供了足够的资源来支持大规模模型推理。在本节中，基于之前介绍的内容，我们演示如何在 Thor 上运行 GR00T N1.5 的推理。
 
-GR00T N1.5 is an open-source baseline system released by NVIDIA Research in the field of robot learning. It aims to provide a unified framework for embodied AI training and inference, particularly focusing on imitation learning and policy learning driven by large-scale models.
+GR00T N1.5 是 NVIDIA Research 在机器人学习领域发布的开源基线系统。它旨在为具身 AI 训练和推理提供统一框架，特别专注于由大规模模型驱动的模仿学习和策略学习。
 
-### Preparation
+### 准备工作
 
-The pre-trained models of GR00T N1.5 are available via **Hugging Faces**. You can download them from the following link:
+GR00T N1.5 的预训练模型可通过 **Hugging Faces** 获得。您可以从以下链接下载：
 
 [https://huggingface.co/nvidia/GR00T-N1.5-3B/tree/main](https://huggingface.co/nvidia/GR00T-N1.5-3B/tree/main)
 
@@ -953,9 +953,9 @@ The pre-trained models of GR00T N1.5 are available via **Hugging Faces**. You ca
   <img src="https://files.seeedstudio.com/wiki/other/gr00tD.png" width="600"/>
 </div>
 
-All dependencies required for GR00T inference have been pre-configured in a dedicated Docker image.
+GR00T 推理所需的所有依赖项都已在专用的 Docker 镜像中预配置。
 
-Use the following command to start the container:
+使用以下命令启动容器：
 
 ```bash
 sudo docker run --rm -it \
@@ -970,7 +970,7 @@ sudo docker run --rm -it \
   lerobot:r38.2.aarch64-cu130-24.04
 ```
 
-Git clone the source code of Gr00t,and install it:
+Git 克隆 Gr00t 的源代码并安装：
 
 ```bash
 git clone https://github.com/NVIDIA/Isaac-GR00T.git
@@ -979,13 +979,13 @@ pip install --upgrade setuptools
 pip install -e .[thor]
 ```
 
-Gr00t is fully compatible with the datasets collected using the lerobot framework. Refer to the previous "**Data Collection**" section to prepare your dataset for fine-tuning the Gr00t model.
+Gr00t 完全兼容使用 lerobot 框架收集的数据集。参考之前的"**数据收集**"部分来准备您的数据集以微调 Gr00t 模型。
 
-### Model Fine-Tuning
+### 模型微调
 
-**The fine-tuning process can be executed either on the provided cloud training platform or directly inside the Docker container on Thor**.
+**微调过程可以在提供的云训练平台上执行，也可以直接在 Thor 上的 Docker 容器内执行**。
 
-If you have not downloaded any pretrained GR00T model and do not plan to use a custom version, you may use the following command to fine-tune based on the Hugging Face weights:
+如果您尚未下载任何预训练的 GR00T 模型且不打算使用自定义版本，可以使用以下命令基于 Hugging Face 权重进行微调：
 
 ```bash
 python scripts/gr00t_finetune.py \
@@ -997,9 +997,9 @@ python scripts/gr00t_finetune.py \
    --video-backend torchvision_av
 ```
 
-This script will automatically download the pretrained GR00T model from Hugging Face and begin the fine-tuning process.
+此脚本将自动从 Hugging Face 下载预训练的 GR00T 模型并开始微调过程。
 
-If you wish to use a locally stored pretrained GR00T model, modify the command as follows:
+如果您希望使用本地存储的预训练 GR00T 模型，请按如下方式修改命令：
 
 ```bash
 python scripts/gr00t_finetune.py \
@@ -1012,20 +1012,20 @@ python scripts/gr00t_finetune.py \
    --base-model-path ./pretrained/GR00T-N1.5-3
 ```
 
-`--dataset-path` is the file path of collection data from SO-ARM.
+`--dataset-path` 是来自 SO-ARM 的收集数据的文件路径。
 
 :::note
-The default fine-tuning settings require ~25G of VRAM. If you don't have that much VRAM, try adding the `--no-tune_diffusion_model` flag to the gr00t_finetune.py script.
+默认的微调设置需要约 25G 的显存。如果您没有那么多显存，请尝试在 gr00t_finetune.py 脚本中添加 `--no-tune_diffusion_model` 标志。
 :::
 
-### Running Inference with GR00T N1.5
+### 使用 GR00T N1.5 运行推理
 
-To achieve optimal performance, it is recommended to replicate the real-world setup used during data collection as closely as possible when deploying fine-tuned GR00T models. This is because the model's generalization capabilities are limited.
+为了获得最佳性能，建议在部署微调的 GR00T 模型时尽可能接近数据收集期间使用的真实世界设置。这是因为模型的泛化能力有限。
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/deploy.jpg" width="400"/>
 </div>
 
-Inside the Docker container, open a terminal and launch the GR00T inference service:
+在 Docker 容器内，打开终端并启动 GR00T 推理服务：
 
 ```bash
 python scripts/inference_service.py --server \
@@ -1035,18 +1035,18 @@ python scripts/inference_service.py --server \
     --denoising-steps 4
 ```
 
-Upon successful launch, the terminal should display logs similar to:
+成功启动后，终端应显示类似以下的日志：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/deploy1.png" width="600"/>
 </div>
 
-Open another terminal, and use the following command to enter the same container from a different shell:
+打开另一个终端，使用以下命令从不同的 shell 进入同一个容器：
 
 ```bash
 sudo docker exec -it <container id> /bin/bahs
 ```
 
-Then, in this second shell, start the inference client:
+然后，在第二个 shell 中，启动推理客户端：
 
 ```bash
   python examples/eval_lerobot.py \
@@ -1058,41 +1058,41 @@ Then, in this second shell, start the inference client:
     --lang_instruction="Grab pens and place into pen holder."
 ```
 
-When the client process starts successfully, the following output should appear:
+当客户端进程成功启动时，应出现以下输出：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/deploy2.png" width="600"/>
 </div>
 
 :::tip
-During the first run of the client process, you must calibrate the arm's servos. The calibration process is the same as described earlier.
+在首次运行客户端进程时，您必须校准机械臂的舵机。校准过程与之前描述的相同。
 
-Make sure each joint moves to its full range of motion to ensure proper teleoperation and inference behavior.
+确保每个关节都移动到其完整的运动范围，以确保正确的遥操作和推理行为。
 :::
 
-Once everything is set up, GR00T N1.5 can be successfully deployed on Jetson AGX Thor. The system and hardware environment are now verified to support full inference:
+一旦一切设置完成，GR00T N1.5 就可以成功部署在 Jetson AGX Thor 上。系统和硬件环境现在已经验证可以支持完整推理：
 <div align="center">
   <img src="https://files.seeedstudio.com/wiki/other/123.gif" width="600"/>
 </div>
 
-## FAQ
+## 常见问题
 
-Q1: The Brev CLI tool doesn't work on the cloud training platform?
+Q1：Brev CLI 工具在云训练平台上不工作？
 
-This is often due to network issues.
-You may install and log in to Brev CLI on your local Ubuntu host, then attempt to connect to your cloud instance using SSH from your local terminal.
+这通常是由于网络问题。
+您可以在本地 Ubuntu 主机上安装并登录 Brev CLI，然后尝试从本地终端使用 SSH 连接到您的云实例。
 
-Q2: How do I upload data to the training platform?
+Q2：如何将数据上传到训练平台？
 
-Use the following command: `scp <local-file-path> <brev-instance-name>:<remote-file-path>`,例如`scp -r ./record_2_cameras/ gr00t-trainer:/home/ubuntu/Datasets`
+使用以下命令：`scp <local-file-path> <brev-instance-name>:<remote-file-path>`，例如`scp -r ./record_2_cameras/ gr00t-trainer:/home/ubuntu/Datasets`
 
-## References
+## 参考资料
 
 - https://developer.nvidia.com/embedded/jetpack
 - https://huggingface.co/blog/nvidia/gr00t-n1-5-so101-tuning
 
-## Tech Support & Product Discussion
+## 技术支持与产品讨论
 
-Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
