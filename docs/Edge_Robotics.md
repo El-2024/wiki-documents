@@ -81,6 +81,16 @@ last_update:
     </a>
 </div>
 
+
+## 🦾 End Effectors
+
+<div className="card-container">
+    <a href="/dm_gripper/" className="nav-item">
+      <span className="text">DM Gripper</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
+
 </div>
 </div>
 

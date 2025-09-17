@@ -4133,6 +4133,16 @@ const sidebars = {
                   'Robotics/Robot_Kits/Lerobot/Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_AmazingHand',
                     ]},
+            {
+              type: 'category',
+              label: 'End_Effectors',
+                // link: {
+                //   type: "doc",
+                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+                // },
+                items: [
+                  'Robotics/Robot_Kits/End_Effectors/DM_Gripper',
+                    ]},
 
           ]
         },
