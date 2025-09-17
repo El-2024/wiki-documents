@@ -112,6 +112,32 @@ last_update:
 </div>
 
 
+## 🦀 エンドエフェクタ
+
+<div className="card-container">
+    <a href="/ja/dm_gripper/" className="nav-item">
+      <span className="text">DMグリッパー</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/ja/starai_arm_ros_moveit/" className="nav-item">
+      <span className="text">StaraiロボットアームMoveit2</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/ja/control_robotic_arm_via_gr00t" className="nav-item">
+  <span className="text">Star AI with NVIDIA's GR00T</span>
+  </a>
+</div>
+
+## 🖐️ ハンド
+
+<div className="card-container">
+    <a href="/ja/hand_amazinghand/" className="nav-item">
+      <span className="text">AmazingHand</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
+
+
 </div>
 </div>
 
@@ -335,12 +361,11 @@ html[data-theme='dark'] .nav-item {
 }
 
 /* 文字様式 */
-.nav-item .text {
-  font-size: 0.95rem;
+.nav-item .text {  font-size: 0.95rem;
   white-space: nowrap;
 }
 
-/* 悬浮特効 */
+/* ホバー効果 */
 .nav-item .hover-effect {
   position: absolute;
   bottom: 0;
@@ -353,14 +378,14 @@ html[data-theme='dark'] .nav-item {
   z-index: -1;
 }
 
-/* 悬浮動画 */
+/* ホバーアニメーション */
 .nav-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   color: white;
 }
 
-/* Dark模式 - 悬浮動画 */
+/* Darkモード - ホバーアニメーション */
 html[data-theme='dark'] .nav-item:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.6);
   color: white;
@@ -374,9 +399,10 @@ html[data-theme='dark'] .nav-item:hover {
   height: 100%;
 }
 
-/* 響応式設計 */
+/* レスポンシブデザイン */
 @media (max-width: 768px) {
-  .quick-nav {    flex-direction: column;
+  .quick-nav {
+    flex-direction: column;
     gap: 0.5rem;
   }
   .nav-item {
@@ -392,7 +418,7 @@ html[data-theme='dark'] .nav-item:hover {
 `}</style>
 
 <style>{`
-/* 内容卡片增強版样式 */
+/* コンテンツカード強化版スタイル */
 .nav-grid {
   display: block;
   gap: 2rem;
@@ -411,7 +437,7 @@ html[data-theme='dark'] .nav-item:hover {
   z-index: 1;
 }
 
-/* Darkモード - 内容卡片 */
+/* Darkモード - コンテンツカード */
 html[data-theme='dark'] .category-card {
   background:rgb(30, 30, 32);
   box-shadow: 0 4px 6px rgba(0,0,0,0.4);
@@ -422,7 +448,7 @@ html[data-theme='dark'] .category-card {
   margin-bottom: 2rem;
 }
 
-/* 分類色標 */
+/* カテゴリー色標 */
 .category-card::before {
   content: "";
   position: absolute;
@@ -437,13 +463,13 @@ html[data-theme='dark'] .category-card {
 .sensors::before { background: linear-gradient(to bottom, #ff6b6b, #ff8e8e); }
 .software::before { background: linear-gradient(to bottom, #f5a623, #f5c623); }
 
-/* ホバー特効 */
+/* ホバー効果 */
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
-/* Darkモード - ホバー特効 */
+/* Darkモード - ホバー効果 */
 html[data-theme='dark'] .category-card:hover {
   box-shadow: 0 12px 20px rgba(0,0,0,0.6);
 }
@@ -459,7 +485,7 @@ html[data-theme='dark'] .category-card:hover {
   z-index: -1;
 }
 
-/* Darkモード - ホバー光効 */
+/* Darkモード - ホバー光効果 */
 html[data-theme='dark'] .category-card:hover::after {
   background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
 }
@@ -509,7 +535,7 @@ html[data-theme='dark'] .category-card a::after {
 }
 
 .card-container {
-  margin-bottom: 1.5rem; /* 原為0.1rem */
+  margin-bottom: 1.5rem; /* 元は0.1rem */
 }
 
 /* タグスタイル強化 */
@@ -565,7 +591,7 @@ html[data-theme='dark'] .category-card:active {
 
   .category-card {
     width: 100%;
-    margin-top: 0.5rem; /* カード密着タイトル */
+    margin-top: 0.5rem; /* カードをタイトルに密着 */
   }
 }
 
@@ -592,3 +618,4 @@ html[data-theme='dark'] blockquote {
   border-left-color: #4b5563;
 }
 `}</style>
+
