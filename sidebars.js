@@ -9502,7 +9502,7 @@ const sidebars = {
           label: 'reSpeaker',
           items: [
             //'zh-CN/Seeed_Elderly/reSpeaker/cn_reSpeaker_Getting_Started',
-            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker',
+            // 'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker',
             'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_Product_Guide',
             {
               type: 'category',
@@ -19037,7 +19037,7 @@ const sidebars = {
           label: 'reSpeaker',
           items: [
             //'Seeed_Elderly/reSpeaker/reSpeaker_Getting_Started',
-            'ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker',
+            // 'ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker',
             'ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_Product_Guide',
             {
               type: 'category',
