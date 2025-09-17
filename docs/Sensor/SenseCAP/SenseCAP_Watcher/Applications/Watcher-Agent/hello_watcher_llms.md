@@ -122,7 +122,7 @@ Activate your Watcher in just three steps:
 3.  **Configure and Activate**: Access `192.168.4.1` in your browser to configure Wi-Fi for Watcher and follow the instructions on the SenseCraft AI platform to complete activation. | 「[Watcher Web Control Panel](/watcher_web_control_panel/)」
 
 :::info[Activation Tip]
-If activation fails, please confirm the activation code is correct and the device authentication information is not lost. The following actions typically cause loss of authentication information:
+If activation fails, please confirm the verification code is correct and the device authentication information is not lost. The following actions typically cause loss of authentication information:
 
 1.  The firmware was overwritten by another program.
 2.  A major firmware update was performed without backing up authentication information.
@@ -265,7 +265,7 @@ Say to Watcher:
 Here are some advanced resources to help you further expand the application boundaries of SenseCAP Watcher according to your needs, whether for on-premise deployment, privacy protection, or building personalized knowledge bases:
 
 - [AI Conversation-Driven Smart Home](/ha_dify_watcher_llms) - Control smart home devices like lights, AC, and curtains directly via voice through SenseCAP Watcher, saying goodbye to manual operation.
-- [Knowledge Based chatbots](/knowledge_watcher_llms) - Transform SenseCAP Watcher into a virtual exhibition secretary, automatically explaining products and solutions for businesses, with the ability to intelligently identify customer points of interest.
+<!--- [Knowledge Based chatbots](/knowledge_watcher_llms) - Transform SenseCAP Watcher into a virtual exhibition secretary, automatically explaining products and solutions for businesses, with the ability to intelligently identify customer points of interest.-->
 
 ## References
 
