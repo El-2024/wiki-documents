@@ -106,9 +106,9 @@ reTerminal DMと同じネットワーク上にある外部マシンでNode-RED�
 
 reTerminal DMでNode-REDを使用する方法の詳細については、Node-RED Wikiページをご覧ください：
 
-* [reTerminal DM RS485 Port with Node-RED](/reTerminal-DM-Node-Red-RS485)
-* [reTerminal DM MQTT with Node-RED](/reTerminal-DM-Node-Red-mqtt)
-* [reTerminal DM CAN BUS with Node-RED](/reTerminal-DM-Node-Red-canbus)
+* [reTerminal DM RS485 Port with Node-RED](/ja/reTerminal-DM-Node-Red-RS485)
+* [reTerminal DM MQTT with Node-RED](/ja/reTerminal-DM-Node-Red-mqtt)
+* [reTerminal DM CAN BUS with Node-RED](/ja/reTerminal-DM-Node-Red-canbus)
 
 ### システム設定タブ
 

@@ -66,12 +66,12 @@ CAN 总线具有许多优势，包括高可靠性、低成本以及在恶劣环�
 
 ##### 安装 Socketcan 节点
 
-在本 Wiki 教程中，我们将使用 `node-red-contrib-socketcan` 节点，因此请按照指南[安装节点](/reTerminal-DM-Getting-Started-with-Node-Red#install-nodes)安装 `node-red-contrib-socketcan`。
+在本 Wiki 教程中，我们将使用 `node-red-contrib-socketcan` 节点，因此请按照指南[安装节点](/cn/reTerminal-DM-Getting-Started-with-Node-Red#install-nodes)安装 `node-red-contrib-socketcan`。
 
 ##### 在 reTerminal DM 上配置 CAN BUS
 
 :::note
-假设您可以直接访问 reTerminal DM 上的 `Terminal` 应用程序或通过 SSH 访问 reTerminal DM，如果没有，请按照[这里](/reTerminal-DM-Getting-Started-with-Node-Red#install-node-red)的第一步来熟悉如何操作。
+假设您可以直接访问 reTerminal DM 上的 `Terminal` 应用程序或通过 SSH 访问 reTerminal DM，如果没有，请按照[这里](/cn/reTerminal-DM-Getting-Started-with-Node-Red#install-node-red)的第一步来熟悉如何操作。
 :::
 
 请逐一输入以下命令，以启用名为 can0 的虚拟 can 设备，该设备连接到 reTerminal DM 上的 CAN BUS 端口。
@@ -369,8 +369,8 @@ $ ./canusb -d /dev/ttyUSB0 -s 250000 -t -i 5 -j 00112233
 
 # 在 reTerminal DM 上使用 Node-RED 探索更多节点
 
-- [reTerminal DM RS485 端口与 Node-RED](/reTerminal-DM-Node-Red-RS485)
-- [reTerminal DM MQTT 与 Node-RED](/reTerminal-DM-Node-Red-mqtt)
+- [reTerminal DM RS485 端口与 Node-RED](/cn/reTerminal-DM-Node-Red-RS485)
+- [reTerminal DM MQTT 与 Node-RED](/cn/reTerminal-DM-Node-Red-mqtt)
 
 ## 技术支持与产品讨论
 

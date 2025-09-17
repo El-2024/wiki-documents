@@ -54,7 +54,7 @@ last_update:
 
 ### 软件
 
-我们建议从官方网站安装 **Bullesye** 版本的 Raspberry Pi 64 位操作系统。如果您希望安装新的 Raspbian 操作系统，请按照此[**指南**](https://wiki.seeedstudio.com/reterminal-dm-flash-OS/)中概述的步骤进行操作。
+我们建议从官方网站安装 **Bullesye** 版本的 Raspberry Pi 64 位操作系统。如果您希望安装新的 Raspbian 操作系统，请按照此[**指南**](https://wiki.seeedstudio.com/cn/reterminal-dm-flash-OS/)中概述的步骤进行操作。
 
 ## 安装
 
@@ -68,7 +68,7 @@ N3uron 可以通过我们的一步式自动安装脚本轻松安装。在继续�
 
 - SSH：使用安全外壳 (SSH) 进行远程连接。确保您的 reTerminal 可通过网络访问且 SSH 服务器已启用。
 
-更多信息，请访问：[在 reTerminal DM 上设置 SSH 服务器](https://wiki.seeedstudio.com/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh)。
+更多信息，请访问：[在 reTerminal DM 上设置 SSH 服务器](https://wiki.seeedstudio.com/cn/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh)。
 
 在您的终端中，输入命令：
 

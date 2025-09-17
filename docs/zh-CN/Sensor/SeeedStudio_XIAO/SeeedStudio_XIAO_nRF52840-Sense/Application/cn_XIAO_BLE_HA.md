@@ -333,7 +333,7 @@ Home Assistant 通过将不同的设备和服务组合在一个地方并将它�
 ## ✨ 贡献者项目
 
 - 此项目由 Seeed Studio [贡献者项目](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) 支持。
-- 感谢 [Bruno 的努力](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35979237)，您的工作将被[展示](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- 感谢 [Bruno 的努力](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35979237)，您的工作将被[展示](https://wiki.seeedstudio.com/cn/Honorary-Contributors/)。
 
 ## 技术支持与产品讨论
 

@@ -1,6 +1,6 @@
 // 语言切换器 - 生产环境优化版本
-// 生成时间: 2025-09-16 10:09:14 (北京时间)
-// 多语言页面: 2012 个
+// 生成时间: 2025-09-17 11:27:19 (北京时间)
+// 多语言页面: 2011 个
 
 (function() {
   'use strict';
@@ -2546,6 +2546,12 @@
     "es",
     "ja"
   ],
+  "/reterminal_e10xx_with_eezstudio": [
+    "cn",
+    "en",
+    "es",
+    "ja"
+  ],
   "/reterminal_e10xx_with_esphome": [
     "cn",
     "en",
@@ -3363,8 +3369,10 @@
     "ja"
   ],
   "/K1100-Getting-Started": [
+    "cn",
     "en",
-    "es"
+    "es",
+    "ja"
   ],
   "/Connect_AWS_via_helium": [
     "cn",
@@ -4743,8 +4751,10 @@
     "ja"
   ],
   "/respeaker_mic_array_v3.0": [
+    "cn",
     "en",
-    "es"
+    "es",
+    "ja"
   ],
   "/ReSpeaker-USB-Mic-Array": [
     "cn",

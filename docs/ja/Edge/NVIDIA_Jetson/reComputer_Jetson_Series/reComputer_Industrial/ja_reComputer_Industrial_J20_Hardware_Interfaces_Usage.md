@@ -934,7 +934,7 @@ reComputer IndustrialとreTerminal DMをCAN経由で接続するには、以下�
 
 ### reTerminal DMでの使用方法
 
-- **ステップ 1:** reTerminal DMを使用する前に、[このwiki](https://wiki.seeedstudio.com/reterminal-dm)を参照してreTerminal DMの使用を開始してください
+- **ステップ 1:** reTerminal DMを使用する前に、[このwiki](https://wiki.seeedstudio.com/ja/reterminal-dm)を参照してreTerminal DMの使用を開始してください
 
 - **ステップ 2:** reComputer Industrialでターミナルウィンドウを開き、以下のコマンドを実行してCANインターフェースを設定し、有効にします
 

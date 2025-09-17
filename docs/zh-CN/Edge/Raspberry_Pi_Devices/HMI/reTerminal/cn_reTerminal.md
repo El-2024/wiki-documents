@@ -296,7 +296,7 @@ reTerminal 开箱即用，预装了 Raspberry Pi OS。所以我们可以直接�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/wiki1/setup-7-new.png" alt="pir" width="400" height="auto"/></p>
 
-- **步骤 9.** **这一步非常重要。** 您应该确保按**跳过**来跳过软件更新。但是，如果您想更新软件，可以按照[此 wiki](https://wiki.seeedstudio.com/reTerminal-FAQ/#q3-how-to-upgrade-raspberry-pi-os-and-the-installed-packages)
+- **步骤 9.** **这一步非常重要。** 您应该确保按**跳过**来跳过软件更新。但是，如果您想更新软件，可以按照[此 wiki](https://wiki.seeedstudio.com/cn/reTerminal-FAQ/#q3-how-to-upgrade-raspberry-pi-os-and-the-installed-packages)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/wiki1/setup-8-new.png" alt="pir" width="400" height="auto"/></p>
 
@@ -376,7 +376,7 @@ Windows 现在将找到硬件并安装必要的驱动程序
 - **步骤 8.** 点击 **CHOOSE OS** 并选择您首选的操作系统
 
 :::note
-如果您尝试安装 Raspbian OS，我们已经进行了测试，发现 **Bullseye** 的 *32 位和 64 位*版本都能在 reTerminal 上正常工作，不会遇到任何[**黑屏问题**](https://wiki.seeedstudio.com/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)。此外，我们还测试了新的 **Bookworm** *64 位*版本，它在 reTerminal 上运行流畅。
+如果您尝试安装 Raspbian OS，我们已经进行了测试，发现 **Bullseye** 的 *32 位和 64 位*版本都能在 reTerminal 上正常工作，不会遇到任何[**黑屏问题**](https://wiki.seeedstudio.com/cn/reterminal_black_screen/#flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)。此外，我们还测试了新的 **Bookworm** *64 位*版本，它在 reTerminal 上运行流畅。
 :::
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/OS-select.png" alt="pir" width="600" height="auto"/></p>
@@ -714,7 +714,7 @@ sudo reboot
 
 ## 常见问题
 
-对于常见问题，[点击这里](https://wiki.seeedstudio.com/reTerminal-FAQ)访问 reTerminal 使用常见问题 wiki
+对于常见问题，[点击这里](https://wiki.seeedstudio.com/cn/reTerminal-FAQ)访问 reTerminal 使用常见问题 wiki
 
 ## 资源
 

@@ -25,7 +25,7 @@ p5.js 是一个 JavaScript 库，让艺术家和设计师能够轻松进行编�
 
 ### 步骤 1. 在 Watcher 中运行任务
 
-首先，您需要按照下面的视频在 Watcher 中运行一个任务。如果您想了解更多信息，[请点击这里](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)。
+首先，您需要按照下面的视频在 Watcher 中运行一个任务。如果您想了解更多信息，[请点击这里](https://wiki.seeedstudio.com/cn/getting_started_with_watcher_task/)。
 
 <div class="table-center">
 <iframe width="600" height="338" src="https://files.seeedstudio.com/wiki/watcher_to_open_interpreter_image/run_task.mp4?autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
@@ -37,7 +37,7 @@ p5.js 是一个 JavaScript 库，让艺术家和设计师能够轻松进行编�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_nodered_p5js_image/1.png" style={{width:800, height:'auto'}}/></div>
 
-1. **OpenStream：** 从 Watcher 获取数据到 Node-RED。[详细信息请点击这里](https://wiki.seeedstudio.com/watcher_to_node_red/)。
+1. **OpenStream：** 从 Watcher 获取数据到 Node-RED。[详细信息请点击这里](https://wiki.seeedstudio.com/cn/watcher_to_node_red/)。
 
 2. **function：** 处理来自 Watcher 的数据。**双击** function 模块并将以下代码粘贴到其中。
 

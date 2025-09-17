@@ -118,7 +118,7 @@ Select your new device entry and click **EDIT**.
 
 Replace the content with your custom **YAML configuration**
 
-### YAML description 
+### YAML description
 
 #### WiFi
 
@@ -129,14 +129,15 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
 ```
+
 - **ssid & password**: Taken from your secrets.yaml file so your password isn’t visible in plain text.
 - **Events**: Run actions when Wi-Fi connects or disconnects:
   - on_connect:
-      - Stops BLE improv setup.
-      - Runs control_leds script (LED effect for Wi-Fi connected).
+    - Stops BLE improv setup.
+    - Runs control_leds script (LED effect for Wi-Fi connected).
 
   - on_disconnect:
-      - Runs control_leds script (LED effect for Wi-Fi disconnected).
+    - Runs control_leds script (LED effect for Wi-Fi disconnected).
 
 #### I²C Bus
 
@@ -150,11 +151,11 @@ i2c:
   scan: true
   frequency: 100kHz
 ```
+
 - **id**: A name to reference this bus elsewhere.
 - **sda** / scl: Pins used for data and clock.
 - **scan**: Checks connected devices at startup.
 - **frequency**: Communication speed (100kHz is standard).
-
 
 #### Switches
 
@@ -177,27 +178,32 @@ Switches are software-controlled “buttons” in Home Assistant. They control f
 **Wake Word Sound Switch**: Controls wake word audio.
 
 **Timer Ringing Internal Switch**:
-  - Tracks if a timer is active.
-  - on_turn_on: Ducks other audio by -20dB, starts timer sound, updates LED, auto-stops after 15 min.
-  - on_turn_off: Stops timer, restores volume, updates LED.
+
+- Tracks if a timer is active.
+- on_turn_on: Ducks other audio by -20dB, starts timer sound, updates LED, auto-stops after 15 min.
+- on_turn_off: Stops timer, restores volume, updates LED.
 
 **Alarm On Switch**:
-  - Tracks alarm status.
-  - Runs LED script when on/off.
+
+- Tracks alarm status.
+- Runs LED script when on/off.
 
 **LED Ring Brightness**:
-  - Lets user adjust brightness with a slider.
-  - min_value / max_value define limits.
-  - restore_value keeps previous setting after restart.
+
+- Lets user adjust brightness with a slider.
+- min_value / max_value define limits.
+- restore_value keeps previous setting after restart.
 
 #### Sensors
 
 **Next Timer**
-  - Shows remaining time for the next timer.
-  - Updates only when a timer changes (saves resources).
+
+- Shows remaining time for the next timer.
+- Updates only when a timer changes (saves resources).
 
 **Alarm Time & Device Time**
-  - Displays current alarm and ESP32 system time.
+
+- Displays current alarm and ESP32 system time.
 
 #### LED Effects on interval
 
@@ -230,6 +236,7 @@ interval:
             id(update_led_beam_effect).execute();
           }
 ```
+
 - Intervals run code repeatedly in the background.
 - 50ms: Runs code 20 times per second.
 - Controls LED animations based on system state or selected effect.
@@ -283,7 +290,6 @@ interval:
     ......
 ```
 
-
 **Central Controller (led_set_effect)**
 
 - Manages all LED effects in one place.
@@ -312,7 +318,6 @@ interval:
 | Timer ringing          | Purple fast breathe   |
 | Volume change          | Temporary display     |
 
-
 #### Audio Configuration
 
 ```yml
@@ -328,17 +333,21 @@ i2s_audio:
 ```
 
 **I²S Input / Output**
-  - Handles microphone input and speaker output via I²S.
-  - i2s_input: Captures 48kHz, 32-bit stereo audio from mic/codec.
-  - i2s_output: Plays back 48kHz, 32-bit stereo audio to DAC/speaker.
+
+- Handles microphone input and speaker output via I²S.
+- i2s_input: Captures 48kHz, 32-bit stereo audio from mic/codec.
+- i2s_output: Plays back 48kHz, 32-bit stereo audio to DAC/speaker.
 
 **Mixer**
-  - Combines multiple audio streams (media + announcements) into one output.
+
+- Combines multiple audio streams (media + announcements) into one output.
 
 **Resamplers**
+
 - Ensures all audio sources match sample rate and bit depth.
 
 **Media Player**
+
 - Controls volume, mute, playback, and ducking (reduces media volume during announcements).
 - Preloaded sounds for events (timer, wake word, errors).
 
@@ -365,6 +374,7 @@ respeaker_xvf3800:
 - Firmware Management: Auto-flash XVF3800 firmware if needed.
 
 #### References / Repositories
+
 ```yml
 external_components:
   - source:
@@ -384,6 +394,7 @@ external_components:
     refresh: 0s
 
 ```
+
 - formatBCE/esphome: Custom I²S audio component.
 - formatBCE/Respeaker-XVF3800-ESPHome-integration:
 - XVF3800 driver
@@ -405,6 +416,7 @@ micro_wake_word:
 ```
 
 Detects your wake words (like “Okay Nabu”) and starts the voice assistant.
+
 - id: mww → Reference name.
 - microphone: i2s_mics, 1 channel.
 - stop_after_detection: false → Keeps listening continuously.
@@ -433,7 +445,6 @@ voice_assistant:
   ....
 ```
 
-
 Controls your voice assistant (VA) behavior and interactions.
 
 - **Microphone & media**: Uses i2s_mics and an external media player.
@@ -452,16 +463,15 @@ Controls your voice assistant (VA) behavior and interactions.
 - **on_end**: Stops VA, resets LEDs, ends ducking.
 
 ##### Timer events
+
 - on_timer_started / on_timer_updated / on_timer_cancelled / on_timer_finished / on_timer_tick:
-    - Updates timer states and names.
-    - Updates LEDs.
-    - Reduces LED updates to every 5 seconds for ticking timer.
+  - Updates timer states and names.
+  - Updates LEDs.
+  - Reduces LED updates to every 5 seconds for ticking timer.
 
 :::important
 You can Found the YAML file from [Here](https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration/tree/main/config)
 :::
-
-
 
 Once your YAML is saved, click **INSTALL**.
 
@@ -549,7 +559,7 @@ With the built-in **wake word**: “Okay Nabu”, you can effortlessly trigger v
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/HA/HA_voice_nabu.PNG" alt="pir" width={800} height="auto" /></p>
 
-## Special Thanks 
+## Special Thanks
 
 We would like to thank FormatBCE for creating this awesome YAML file for the Seeed Studio ReSpeaker XVF3800.
 Support him on his [GitHub](https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration)

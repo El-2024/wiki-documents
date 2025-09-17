@@ -26,7 +26,7 @@ last_update:
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/recam_OS_structure.png" /></div>
 
-该操作系统的[源代码](https://github.com/Seeed-Studio/reCamera-OS)可在 GitHub 上获取。我们的团队也在努力使操作系统更加用户友好和多功能，每次更新都会在[这里](https://github.com/Seeed-Studio/reCamera-OS/releases)发布。新版本可以通过 Web 界面进行 OTA 更新或[手动更新](https://wiki.seeedstudio.com/recamera_os_version_control)。
+该操作系统的[源代码](https://github.com/Seeed-Studio/reCamera-OS)可在 GitHub 上获取。我们的团队也在努力使操作系统更加用户友好和多功能，每次更新都会在[这里](https://github.com/Seeed-Studio/reCamera-OS/releases)发布。新版本可以通过 Web 界面进行 OTA 更新或[手动更新](https://wiki.seeedstudio.com/cn/recamera_os_version_control)。
 
 ### 🧩 Supervisor
 
@@ -90,7 +90,7 @@ Supervisor 是一个轻量级进程管理器，用于监控和管理其他服务
 
 #### node-red-sscma
 
-`node-red-contrib-sscma` 是 Node-RED 节点组件，旨在通过基于流的编程促进 AI 模型的快速部署。[源代码](https://github.com/Seeed-Studio/node-red-contrib-sscma)也在 Github 上，供任何开发者按照[协议](https://wiki.seeedstudio.com/node_red_protocol)进行扩展开发。这允许 AI 模型输出与其他设备无缝集成，实现智能自动化和智能工作流。
+`node-red-contrib-sscma` 是 Node-RED 节点组件，旨在通过基于流的编程促进 AI 模型的快速部署。[源代码](https://github.com/Seeed-Studio/node-red-contrib-sscma)也在 Github 上，供任何开发者按照[协议](https://wiki.seeedstudio.com/cn/node_red_protocol)进行扩展开发。这允许 AI 模型输出与其他设备无缝集成，实现智能自动化和智能工作流。
 
 下面显示了 `camera node` 和 `model node` 如何通信的示例：
 

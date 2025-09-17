@@ -17,8 +17,8 @@ last_update:
 :::tip
 本文是 Seeed Studio XIAO ESP32 开发 Matter 系列的第三个教程。如果您还没有阅读之前的教程，我们建议您先阅读它们，以检查您的设备是否已按要求配置。
 
-- **[在 XIAO 上使用 Espressif ESP-IDF 进行开发](https://wiki.seeedstudio.com/xiao_idf)**
-- **[使用 XIAO ESP32 系列快速入门 Matter](https://wiki.seeedstudio.com/getting_started_with_matter)**
+- **[在 XIAO 上使用 Espressif ESP-IDF 进行开发](https://wiki.seeedstudio.com/cn/xiao_idf)**
+- **[使用 XIAO ESP32 系列快速入门 Matter](https://wiki.seeedstudio.com/cn/getting_started_with_matter)**
 
 :::
 
@@ -138,7 +138,7 @@ Matter 的价值主张很明确：它为更加互联、用户友好和安全的�
 ## 逐步安装 ESP-Matter
 
 :::tip
-在开始安装 Matter 环境之前，请确保您已经[安装并访问了 ESP-IDF 编程环境](https://wiki.seeedstudio.com/xiao_idf/#step-5-set-up-environment-variables)。
+在开始安装 Matter 环境之前，请确保您已经[安装并访问了 ESP-IDF 编程环境](https://wiki.seeedstudio.com/cn/xiao_idf/#step-5-set-up-environment-variables)。
 :::
 
 ### 步骤 1. 安装依赖项
@@ -482,7 +482,7 @@ matter onboardingcodes onnetwork
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoc6-matter/9.png" style={{width:1000, height:'auto'}}/></div>
 
-这里显示的最后一项是设备配对二维码的链接。通过这个二维码，您可以在手机上扫描代码来绑定Matter设备，就像[入门指南](https://wiki.seeedstudio.com/getting_started_with_matter/#step-2-add-a-device-by-scanning-the-code-using-the-iphone-home-app)步骤中一样。
+这里显示的最后一项是设备配对二维码的链接。通过这个二维码，您可以在手机上扫描代码来绑定Matter设备，就像[入门指南](https://wiki.seeedstudio.com/cn/getting_started_with_matter/#step-2-add-a-device-by-scanning-the-code-using-the-iphone-home-app)步骤中一样。
 
 ## 使用 Chip-tool 远程调试Matter设备
 

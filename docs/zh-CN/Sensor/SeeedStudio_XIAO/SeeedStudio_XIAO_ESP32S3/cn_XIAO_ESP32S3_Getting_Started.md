@@ -286,7 +286,7 @@ GPIO0、GPIO45 和 GPIO46 在芯片复位时连接到芯片内部的弱上拉/�
 
 XIAO ESP32S3 Sense 出厂时预装了 WebCam 示例程序。您可以通过给 XIAO 安装好天线并通电来使用此程序。详细信息，您可以阅读关于此程序的 Wiki。
 
-- [视频流](https://wiki.seeedstudio.com/xiao_esp32s3_camera_usage#project-ii-video-streaming)
+- [视频流](https://wiki.seeedstudio.com/cn/xiao_esp32s3_camera_usage#project-ii-video-streaming)
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/98.png" style={{width:900, height:'auto'}}/></div>
 
@@ -425,7 +425,7 @@ Wiki 中所有关于摄像头的程序都兼容 OV5640、OV2640 和 OV3660 摄�
 XIAO ESP32S3的推荐编程工具是Arduino IDE，因此作为软件准备的一部分，您需要完成Arduino安装。
 
 :::tip
-如果这是您第一次使用Arduino，我们强烈建议您参考[Arduino入门指南](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)。
+如果这是您第一次使用Arduino，我们强烈建议您参考[Arduino入门指南](https://wiki.seeedstudio.com/cn/Getting_Started_with_Arduino/)。
 :::
 
 - **步骤1.** 根据您的操作系统下载并安装稳定版本的Arduino IDE。

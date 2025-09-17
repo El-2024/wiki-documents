@@ -14,7 +14,7 @@ last_update:
 
 ## Jetpack 5.1.2
 
-IMX477カメラを使用する必要がある場合は、[このドライバーパッケージ](https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ERJdh3pvdYZOqJWugsnMJKEBMkGXtU8ngY03kJeLDWSkLw?e=TuLWmL)をダウンロードし、[このチュートリアル](https://wiki.seeedstudio.com/reComputer_A603_Flash_System/)に従ってJetpackシステムを再フラッシュしてください。
+IMX477カメラを使用する必要がある場合は、[このドライバーパッケージ](https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ERJdh3pvdYZOqJWugsnMJKEBMkGXtU8ngY03kJeLDWSkLw?e=TuLWmL)をダウンロードし、[このチュートリアル](https://wiki.seeedstudio.com/ja/reComputer_A603_Flash_System/)に従ってJetpackシステムを再フラッシュしてください。
 
 :::caution
 [ **JP5.1.2** ](https://developer.nvidia.com/embedded/jetson-linux-r3541)用のBSPを使用する必要があることにご注意ください。
@@ -22,7 +22,7 @@ IMX477カメラを使用する必要がある場合は、[このドライバー�
 
 ## Jetpack 6.0
 
-IMX477カメラを使用する必要がある場合は、[このドライバーパッケージ](https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ETIsoZ25I69KsSiA6TweK4UBVfo7gBrvPyKX9pJ68J8oIA?e=a9uumE)をダウンロードし、[このチュートリアル](https://wiki.seeedstudio.com/reComputer_A603_Flash_System/)に従ってJetpackシステムを再フラッシュしてください。
+IMX477カメラを使用する必要がある場合は、[このドライバーパッケージ](https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/ETIsoZ25I69KsSiA6TweK4UBVfo7gBrvPyKX9pJ68J8oIA?e=a9uumE)をダウンロードし、[このチュートリアル](https://wiki.seeedstudio.com/ja/reComputer_A603_Flash_System/)に従ってJetpackシステムを再フラッシュしてください。
 
 :::caution
 [ **JP6.0** ](https://developer.nvidia.com/embedded/jetson-linux-r363)用のBSPを使用する必要があることにご注意ください。

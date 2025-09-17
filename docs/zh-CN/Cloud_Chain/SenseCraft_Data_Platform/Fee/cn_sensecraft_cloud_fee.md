@@ -49,7 +49,7 @@ SenseCaft 云服务基于使用 LoRaWAN 物联网低功耗通信协议的硬件�
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/sensecap_mate_app/fee_1.png" alt="pir" width={600} height="auto" /></p>
 
 :::tip
-APP 目前仅支持单设备购买，批量服务购买请参见 [SenseCAP Portal 订阅](https://wiki.seeedstudio.com/sensecraft_cloud_fee/#sensecap-portal-services-subscription)。
+APP 目前仅支持单设备购买，批量服务购买请参见 [SenseCAP Portal 订阅](https://wiki.seeedstudio.com/cn/sensecraft_cloud_fee/#sensecap-portal-services-subscription)。
 :::
 
 ### SenseCAP Portal 订阅
