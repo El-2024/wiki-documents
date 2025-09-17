@@ -300,6 +300,7 @@ sensor:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/50.png" style={{width:1000, height:'auto'}}/></div>
 
 ステップ5. 「Puppet Screenshot」のような説明的な名前で新しいトークンを作成し、生成されたトークンをコピーします。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/51.png" style={{width:800, height:'auto'}}/></div>
 
 ステップ 6. Puppet アドオンの設定に戻り、「Long-Lived Access Token」フィールドにトークンを貼り付けます。
@@ -357,7 +358,7 @@ http://homeassistant.local:10000/todo?viewport=800x480&eink=2&invert
 ステップ 11. `captive_portal` セクションの後に、以下のコードを ESPHome 設定に追加します：
 
 <Tabs>
-<TabItem value="For E1001" label="For E1001" default>
+<TabItem value="For E1001" label="E1001 用" default>
 
 ```yaml
 http_request:
@@ -398,7 +399,7 @@ display:
 ```
 
 </TabItem>
-<TabItem value="For E1002" label="For E1002">
+<TabItem value="For E1002" label="E1002 用">
 
 ```yaml
 # for model 7.3in-e
@@ -468,7 +469,7 @@ display:
 以下のコードをコピーして、Yaml ファイルの `captive_portal` コード行の後に貼り付けることで、この例を使用できます。
 
 <Tabs>
-<TabItem value="For E1001" label="For E1001" default>
+<TabItem value="For E1001" label="E1001 用" default>
 
 ```yaml
 globals:
@@ -520,7 +521,7 @@ display:
 ```
 
 </TabItem>
-<TabItem value="For E1002" label="For E1002">
+<TabItem value="For E1002" label="E1002 用">
 
 ```yaml
 globals:
@@ -613,7 +614,7 @@ display:
 <summary>完全なコードを表示するにはここをクリック</summary>
 
 <Tabs>
-<TabItem value="For E1001" label="For E1001" default>
+<TabItem value="For E1001" label="E1001 用" default>
 
 ```yaml
 esphome:
@@ -931,10 +932,11 @@ display:
 
         // Day of the week + date below the time
         it.printf(400, 280, id(mid_font), TextAlign::CENTER, "%s, %s", wday, dateStr);
-      }```
+      }
+```
 
 </TabItem>
-<TabItem value="For E1002" label="For E1002">
+<TabItem value="For E1002" label="E1002 用">
 
 ```yaml
 esphome:
@@ -1289,6 +1291,7 @@ display:
 4. **ハードウェア初期化**: 起動時にSDカードとバッテリー監視回路が有効になります
 5. **温度と湿度の表示**: I²C経由でオンボードSHT4xセンサーを使用します
 6. **動的アイコン**: Material Design Iconsがセンサー値に基づいて変化します
+
 ## FAQ
 
 ### Q1: データが表示されないのはなぜですか？

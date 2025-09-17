@@ -300,6 +300,7 @@ Paso 4. Navega a tu perfil en Home Assistant haciendo clic en tu nombre de usuar
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/50.png" style={{width:1000, height:'auto'}}/></div>
 
 Paso 5. Crea un nuevo token con un nombre descriptivo como "Puppet Screenshot" y copia el token generado.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/51.png" style={{width:800, height:'auto'}}/></div>
 
 Paso 6. Regresa a la configuración del complemento Puppet y pega el token en el campo "Long-Lived Access Token".
@@ -931,7 +932,8 @@ display:
 
         // Day of the week + date below the time
         it.printf(400, 280, id(mid_font), TextAlign::CENTER, "%s, %s", wday, dateStr);
-      }```
+      }
+```
 
 </TabItem>
 <TabItem value="For E1002" label="Para E1002">
@@ -1289,6 +1291,7 @@ Este ejemplo implementa:
 4. **Inicialización de Hardware**: La tarjeta SD y los circuitos de monitoreo de batería se habilitan al arrancar
 5. **Visualización de Temperatura y Humedad**: Usando el sensor SHT4x integrado vía I²C
 6. **Iconos Dinámicos**: Los iconos de Material Design cambian según los valores del sensor
+
 ## FAQ
 
 ### P1: ¿Por qué no hay datos?

@@ -313,7 +313,8 @@ void generate_wav_header(uint8_t *wav_header, uint32_t wav_size, uint32_t sample
     wav_size, wav_size >> 8, wav_size >> 16, wav_size >> 24, // Subchunk2Size
   };
   memcpy(wav_header, set_wav_header, sizeof(set_wav_header));
-}```
+}
+```
 
 :::tip
 上面的示例仅与 `esp32` 的 2.0.x 版本兼容，如果您使用的是最新版本（例如 3.0.x），请使用下面的示例

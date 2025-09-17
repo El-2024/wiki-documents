@@ -300,6 +300,7 @@ sensor:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/50.png" style={{width:1000, height:'auto'}}/></div>
 
 步骤 5. 创建一个具有描述性名称的新令牌，如"Puppet Screenshot"，并复制生成的令牌。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/51.png" style={{width:800, height:'auto'}}/></div>
 
 步骤 6. 返回 Puppet 插件配置，将令牌粘贴到"Long-Lived Access Token"字段中。
@@ -357,7 +358,7 @@ http://homeassistant.local:10000/todo?viewport=800x480&eink=2&invert
 步骤 11. 在 `captive_portal` 部分之后，将以下代码添加到您的 ESPHome 配置中：
 
 <Tabs>
-<TabItem value="For E1001" label="For E1001" default>
+<TabItem value="For E1001" label="适用于 E1001" default>
 
 ```yaml
 http_request:
@@ -398,7 +399,7 @@ display:
 ```
 
 </TabItem>
-<TabItem value="For E1002" label="For E1002">
+<TabItem value="For E1002" label="适用于 E1002">
 
 ```yaml
 # for model 7.3in-e
@@ -468,7 +469,7 @@ display:
 您可以通过复制下面的代码并将其粘贴到 Yaml 文件中的 `captive_portal` 代码行之后来使用此示例。
 
 <Tabs>
-<TabItem value="For E1001" label="For E1001" default>
+<TabItem value="For E1001" label="适用于 E1001" default>
 
 ```yaml
 globals:
@@ -520,7 +521,7 @@ display:
 ```
 
 </TabItem>
-<TabItem value="For E1002" label="For E1002">
+<TabItem value="For E1002" label="适用于 E1002">
 
 ```yaml
 globals:
@@ -613,7 +614,7 @@ display:
 <summary>点击此处查看完整代码</summary>
 
 <Tabs>
-<TabItem value="For E1001" label="For E1001" default>
+<TabItem value="For E1001" label="适用于 E1001" default>
 
 ```yaml
 esphome:
@@ -931,7 +932,8 @@ display:
 
         // Day of the week + date below the time
         it.printf(400, 280, id(mid_font), TextAlign::CENTER, "%s, %s", wday, dateStr);
-      }```
+      }
+```
 
 </TabItem>
 <TabItem value="For E1002" label="适用于 E1002">
@@ -1289,6 +1291,7 @@ display:
 4. **硬件初始化**：启动时启用 SD 卡和电池监控电路
 5. **温湿度显示**：通过 I²C 使用板载 SHT4x 传感器
 6. **动态图标**：Material Design 图标根据传感器值变化
+
 ## 常见问题
 
 ### Q1: 为什么没有数据？

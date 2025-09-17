@@ -313,7 +313,8 @@ void generate_wav_header(uint8_t *wav_header, uint32_t wav_size, uint32_t sample
     wav_size, wav_size >> 8, wav_size >> 16, wav_size >> 24, // Subchunk2Size
   };
   memcpy(wav_header, set_wav_header, sizeof(set_wav_header));
-}```
+}
+```
 
 :::tip
 上記の例は`esp32`の2.0.xとのみ互換性があります。最新版（例：3.0.x）を使用している場合は、以下のものを使用してください
