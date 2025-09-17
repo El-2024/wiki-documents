@@ -112,6 +112,32 @@ last_update:
 </div>
 
 
+## 🦀 End Effectors
+
+<div className="card-container">
+    <a href="/dm_gripper/" className="nav-item">
+      <span className="text">DM Gripper</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/starai_arm_ros_moveit/" className="nav-item">
+      <span className="text">Starai Robotic Arm Moveit2</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/control_robotic_arm_via_gr00t" className="nav-item">
+  <span className="text">Star AI with NVIDIA's GR00T</span>
+  </a>
+</div>
+
+## 🖐️ Hand
+
+<div className="card-container">
+    <a href="/hand_amazinghand/" className="nav-item">
+      <span className="text">AmazingHand</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
+
+
 </div>
 </div>
 
@@ -593,3 +619,4 @@ html[data-theme='dark'] blockquote {
   border-left-color: #4b5563;
 }
 `}</style>
+
