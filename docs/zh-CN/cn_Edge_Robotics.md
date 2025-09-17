@@ -70,6 +70,10 @@ last_update:
       <span className="text">SO100 Arm 导入Isaac Sim</span>
       <span className="tag recommended">New</span>
     </a>
+    <a href="/cn/fine_tune_gr00t_n1.5_for_lerobot_so_arm_and_deploy_on_jetson_thor/" className="nav-item">
+      <span className="text">在Jetson Thor上跑Isaac Gr00t N1.5</span>
+      <span className="tag recommended">New</span>
+    </a>
 </div>
 
 
