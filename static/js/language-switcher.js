@@ -12064,7 +12064,19 @@
     "cn",
     "es",
     "ja"
-  ]
+  ],
+  "/ABC": [
+    "cn",
+    "ja"
+  ],
+  "/ReSpeaker": [
+    "cn",
+    "ja"
+  ],
+  "/hello_watcher_llms": [
+    "cn",
+    "en"
+  ],
 };
 
   // 生产环境优化的状态管理
