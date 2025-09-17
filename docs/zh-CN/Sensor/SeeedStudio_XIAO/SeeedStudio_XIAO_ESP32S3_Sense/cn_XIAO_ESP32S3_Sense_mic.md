@@ -12,7 +12,7 @@ last_update:
 
 # Seeed Studio XIAO ESP32S3 麦克风的使用
 
-在本教程中，我们将为您介绍如何使用 XIAO ESP32S3 Sense 扩展板的麦克风。首先是 I2S 引脚的基本使用，我们将通过使用 I2S 和麦克风获取当前环境的音量，并在串口波形图中显示。然后我们将解释如何录制声音并将录制的声音保存到 SD 卡。
+在本教程中，我们将为您介绍如何使用 XIAO ESP32S3 Sense 扩展板的麦克风。首先是 I2S 引脚的基本使用，我们将通过使用 I2S 和麦克风获取当前环境的响度，并在串口波形图中显示。然后我们将解释如何录制声音并将录制的声音保存到 SD 卡中。
 
 <div class="table-center">
   <table align="center">
@@ -25,7 +25,7 @@ last_update:
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
           <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html" target="_blank">
-              <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
+              <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a>
       </div></td>
     </tr>
@@ -38,9 +38,9 @@ last_update:
 
 ## 入门指南
 
-在开始本教程内容之前，您可能需要提前准备以下硬件和软件。
+在开始教程内容之前，您可能需要提前准备以下硬件和软件。
 
-### 安装扩展板（适用于 Sense）
+### 扩展板的安装（适用于 Sense）
 
 安装扩展板非常简单，您只需要将扩展板上的连接器与 XIAO ESP32S3 上的 B2B 连接器对齐，用力按下并听到"咔嗒"声，安装就完成了。
 
@@ -48,15 +48,34 @@ last_update:
 
 ### 准备 microSD 卡
 
-在进行需要保存录音的项目时，您可能需要一张 MicroSD 卡。
+在进行保存录音的项目时，您可能需要一张 MicroSD 卡。
 
-XIAO ESP32S3 Sense 支持最大 **32GB** 的 microSD 卡，因此如果您准备为 XIAO 购买 microSD 卡，请参考此规格。在使用 microSD 卡之前，请将 microSD 卡格式化为 **FAT32** 格式。
+XIAO ESP32S3 Sense 支持最大 **32GB** 的 microSD 卡，所以如果您准备为 XIAO 购买 microSD 卡，请参考此规格。在使用 microSD 卡之前，请将 microSD 卡格式化为 **FAT32** 格式。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/67.png" style={{width:250, height:'auto'}}/></div>
 
 格式化后，您可以将 microSD 卡插入 microSD 卡槽。请注意插入方向，有金手指的一面应朝内。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/66.jpg" style={{width:500, height:'auto'}}/></div>
+
+### 了解引脚
+
+<div class="table-center">
+	<table align="center">
+    <tr>
+			<th>引脚编号</th>
+			<th>功能描述</th>
+		</tr>
+		<tr>
+			<td align="center">GPIO 41</td>
+			<td align="center">PDM 麦克风 DATA</td>
+		</tr>
+		<tr>
+			<td align="center">GPIO 42</td>
+			<td align="center">PDM 麦克风 CLK</td>
+		</tr>
+	</table>
+</div>
 
 ## 声音响度检测
 
@@ -65,7 +84,7 @@ XIAO ESP32S3 Sense 支持最大 **32GB** 的 microSD 卡，因此如果您准备
 以下是完整的示例程序。
 
 :::tip
-检查并确认您使用的是哪个版本的 `esp32`，以下示例适用于 2.0.x 版本，下面的示例适用于 3.0.x 及更高版本
+检查并确认您使用的 `esp32` 版本，以下示例适用于 2.0.x，下面的示例适用于 3.0.x 及更高版本
 :::
 
 ```cpp
@@ -99,7 +118,7 @@ void loop() {
 ```
 
 :::tip
-上面的示例仅与 `esp32` 的 2.0.x 版本兼容，如果您使用的是最新版本（例如 3.0.x），请使用下面的示例
+上面的示例仅与 `esp32` 的 2.0.x 兼容，如果您使用的是最新版本（例如 3.0.x），请使用下面的示例
 :::
 
 ```cpp
@@ -135,7 +154,7 @@ void loop() {
 }
 ```
 
-将此程序上传到 XIAO ESP32S3 Sense 并打开**串口绘图器**，您将看到声音的响度变化曲线。
+为 XIAO ESP32S3 Sense 上传此程序并打开 **串口绘图器**，您将看到声音的响度变化曲线。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/83.png" style={{width:600, height:'auto'}}/></div>
 
@@ -147,13 +166,13 @@ void loop() {
 #include <I2S.h>
 ```
 
-`setAllPins()` 函数在 I2S 对象上调用，用于配置 I2S 接口使用的引脚。该函数接受五个整数参数，分别代表连接到 I2S 接口的位时钟、字选择、数据输入、数据输出和通道选择线的 GPIO 引脚。
+在 I2S 对象上调用 `setAllPins()` 函数来配置用于 I2S 接口的引脚。该函数接受五个整数参数，分别表示连接到 I2S 接口的位时钟、字选择、数据输入、数据输出和通道选择线的 GPIO 引脚。
 
 ```c
 I2S.setAllPins(-1, 42, 41, -1, -1);
 ```
 
-在这个特定的代码中，`-1` 值表示相应的引脚未被使用，而 `42` 和 `41` 值分别代表连接到字选择和数据输入线的 GPIO 引脚。在此配置中，数据输出和通道选择线未被使用，设置为 `-1`。
+在这个特定的代码中，`-1` 值表示相应的引脚未使用，而 `42` 和 `41` 值分别表示连接到字选择和数据输入线的 GPIO 引脚。数据输出和通道选择线在此配置中未使用，设置为 `-1`。
 
 ```c
 if (!I2S.begin(PDM_MONO_MODE, 16000, 16)) {
@@ -162,7 +181,7 @@ if (!I2S.begin(PDM_MONO_MODE, 16000, 16)) {
 }
 ```
 
-`begin()` 函数在 I2S 对象上被调用，用于使用指定参数初始化 I2S 接口：`PDM_MONO_MODE`、`16000` Hz 采样率和 `16-bit` 分辨率。
+在 I2S 对象上调用 `begin()` 函数，使用指定参数初始化 I2S 接口：`PDM_MONO_MODE`、`16000` Hz 采样率和 `16 位` 分辨率。
 
 :::tip
 需要注意的是，对于当前的 ESP32-S3 芯片，我们只能使用 `PDM_MONO_MODE`，采样位宽只能是 `16bit`。只有采样率可以修改，但经过测试，16kHz 的采样率相对稳定。
@@ -176,17 +195,17 @@ if (sample && sample != -1 && sample != 1) {
 }
 ```
 
-`read()` 函数在 I2S 对象上被调用，用于从 I2S 接口读取单个音频采样。if 语句检查 sample 变量的值。如果采样值不是 0、-1 或 1，则被认为是有效的音频采样，if 块内的代码将被执行。在这种情况下，采样值使用 `Serial.println()` 函数打印到串行控制台。
+在 I2S 对象上调用 `read()` 函数从 I2S 接口读取单个音频样本。if 语句检查 sample 变量的值。如果样本值不是 0、-1 或 1，则被认为是有效的音频样本，if 块内的代码将被执行。在这种情况下，使用 `Serial.println()` 函数将样本值打印到串口控制台。
 
 ## 将录制的声音保存到 microSD 卡
 
 在下一个项目中，我们将指导您如何结合 microSD 卡的功能，将录制的声音保存到 microSD 卡中。对于这个项目，请提前准备 microSD 卡并将其格式化为 **FAT32** 格式。
 
-如果这是您第一次在 XIAO ESP32S3 上使用 microSD 卡，您可以阅读[文件系统 Wiki](https://wiki.seeedstudio.com/xiao_esp32s3_sense_filesystem/#prepare-the-microsd-card) 内容来了解 microSD 卡的安装和准备。
+如果这是您第一次在 XIAO ESP32S3 上使用 microSD 卡，您可以阅读[文件系统 Wiki](https://wiki.seeedstudio.com/cn/xiao_esp32s3_sense_filesystem/#prepare-the-microsd-card) 内容来了解 microSD 卡的安装和准备。
 
 以下是此项目的 Arduino 程序。
 :::tip
-检查并确认您使用的是哪个版本的 `esp32`，以下示例适用于 2.0.x，下面的示例适用于 3.0.x 及更高版本
+检查并确认您使用的 `esp32` 版本，以下示例适用于 2.0.x，下面的示例适用于 3.0.x 及更高版本
 :::
 
 ```cpp
@@ -378,7 +397,7 @@ void loop() {
 
 此程序仅在用户**打开串口监视器**后执行一次，录制 20 秒并将录制文件保存到 microSD 卡中，文件名为"arduino_rec.wav"。
 
-当串口监视器中每 1 秒输出一个"."时，程序执行完成，您可以借助读卡器播放录制的声音文件。
+当串口监视器每 1 秒输出一个"."时，程序执行完成，您可以借助读卡器播放录制的声音文件。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/102.png" style={{width:700, height:'auto'}}/></div>
 
@@ -388,9 +407,9 @@ void loop() {
 
 ### 程序注释
 
-在此程序中，我们为录音功能编写了两个函数，一个是 `record_wav()`，另一个是 `generate_wav_header()`。
+在这个程序中，我们为录音功能编写了两个函数，一个是 `record_wav()`，另一个是 `generate_wav_header()`。
 
-- `record_wav()`：录音函数。在此函数中，程序使用 I2S 接口从麦克风读取音频数据，并将其存储到 SD 卡中作为 WAV 音频文件。
+- `record_wav()`：录音函数。在此函数中，程序使用 I2S 接口从麦克风读取音频数据，并将其作为 WAV 音频文件存储到 SD 卡中。
 
   a. 初始化变量。程序定义了一个用于存储录制数据的缓冲区 `rec_buffer`，并设置录制时间 `RECORD_TIME`。
 
@@ -410,21 +429,21 @@ void loop() {
 
   a. 定义 WAV 文件头信息的常量。程序定义了一个包含 WAV 文件头信息的字节数组 `set_wav_header`，并定义了 WAV 文件规范的常量，包括 `NUM_CHANNELS`、`BITS_PER_SAMPLE`、`WAV_HEADER_SIZE` 和 `SUB_CHUNK_SIZE`。
 
-  b. 设置 WAV 文件头信息。程序使用步骤 a 中定义的常量设置 WAV 文件头信息，并根据 WAV 文件的规范计算一些字段的值，包括 `AUDIO_FORMAT`、`BYTE_RATE`、`BLOCK_ALIGN`、`SAMPLES_PER_CHANNEL` 和 `CHUNK_SIZE`。计算出的值存储在 `set_wav_header` 字节数组中。
+  b. 设置 WAV 文件头信息。程序使用步骤 a 中定义的常量设置 WAV 文件头信息，并根据 WAV 文件规范计算一些字段的值，包括 `AUDIO_FORMAT`、`BYTE_RATE`、`BLOCK_ALIGN`、`SAMPLES_PER_CHANNEL` 和 `CHUNK_SIZE`。计算出的值存储在 `set_wav_header` 字节数组中。
 
   c. 复制 WAV 文件头信息。程序将存储在 `set_wav_header` 中的头信息复制到字节数组 `wav_header` 中。
 
 ## 故障排除
 
-### 为什么我无法播放录制的音频文件？
+### 为什么无法播放录制的音频文件？
 
-如果您遇到无法播放的情况，请检查串行监视器打印的调试信息，查看是否有关于读写卡的错误消息。如果有，请更换microSD卡或检查卡和扩展板连接是否松动或不稳定。如果卡没有问题，那么应该检查音频文件的大小，如果录制有问题，可能会显示录制的音频文件大小只有0KB。
+如果您遇到无法播放的情况，请检查串口监视器打印的调试信息中是否有关于读写卡的错误消息。如果有，请更换 microSD 卡或检查卡与扩展板连接是否松动或不稳定。如果卡没有问题，那么音频文件应该有大小，如果录制有问题，可能会显示录制的音频文件大小只有 0KB。
 
-例如，在下图中，卡的读写存在问题。
+例如，在下图中，读写卡存在问题。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/103.png" style={{width:600, height:'auto'}}/></div>
 
-如果卡没有问题且录制相当成功。那么您需要检查软件是否支持WAV格式的音频播放。我们建议使用专门的音乐播放软件来播放音频，尽量不要使用视频播放器来播放。经过实际测试，有很多视频播放器（虽然它们支持WAV格式）无法播放。
+如果卡没有问题且录制相当成功。那么您需要检查软件是否支持 WAV 格式的音频播放。我们建议使用专门的音乐播放软件来播放音频，尽量不要使用视频播放器来播放。经过实际测试，有许多视频播放器（虽然它们支持 WAV 格式）无法播放。
 
 ## 技术支持与产品讨论
 

@@ -402,6 +402,14 @@ display:
 <TabItem value="For E1002" label="For E1002">
 
 ```yaml
+# for model 7.3in-e
+external_components:
+  - source:
+      type: git
+      url: https://github.com/lublak/esphome
+      ref: dev
+    components: [ waveshare_epaper ]
+
 http_request:
   verify_ssl: false
   timeout: 10s
@@ -424,7 +432,7 @@ spi:
 
 display:
   - platform: waveshare_epaper
-    id: epaper_display
+    id: main_display
     model: 7.30in-e
     cs_pin: GPIO10
     dc_pin: GPIO11
@@ -535,6 +543,15 @@ interval:
   - interval: 29s  # Schedule sleep just before run_duration ends
     then:
       - logger.log: "Entering deep sleep now..."
+
+# for model 7.3in-e
+external_components:
+  - source:
+      type: git
+      url: https://github.com/lublak/esphome
+      ref: dev
+    components: [ waveshare_epaper ]
+
 
 font:
   - file: "gfonts://Inter@700"
@@ -978,6 +995,15 @@ spi:
 i2c:
   scl: GPIO20
   sda: GPIO19
+
+# for model 7.3in-e
+external_components:
+  - source:
+      type: git
+      url: https://github.com/lublak/esphome
+      ref: dev
+    components: [ waveshare_epaper ]
+
 
 # Fonts
 font:
