@@ -40,7 +40,7 @@ last_update:
     Es compatible con ROS2 para publicar y suscribirse a temas de datos del brazo robótico y controlar el brazo robótico, y también es compatible con MoveIt2 para el cálculo de cinemática inversa, así como simulación en Isaac Sim.
 
 4. **Soporte de Integración con la Plataforma LeRobot**
-    Está específicamente diseñado para la integración con la [plataforma LeRobot](https://github.com/huggingface/lerobot). Esta plataforma proporciona modelos PyTorch, conjuntos de datos y herramientas para el aprendizaje por imitación en tareas de robótica del mundo real, incluyendo recolección de datos, simulación, entrenamiento y despliegue.
+    Está específicamente diseñado para la integración con la [plataforma LeRobot](https://github.com/huggingface/lerobot). Esta plataforma proporciona modelos PyTorch, conjuntos de datos y herramientas para el aprendizaje por imitación en tareas robóticas del mundo real, incluyendo recolección de datos, simulación, entrenamiento y despliegue.
 
 5. **SDK de Código Abierto**
      Compatible con desarrollo SDK de Python y C++
@@ -136,32 +136,100 @@ echo "source ~/starai_ws/install/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-## Script de Simulación MoveIt2 de Starai Arm
+
+## Viola
+### Script de Simulación MoveIt2 de Starai Arm (Opcional)
 
 ```bash
-ros2 launch viola_configure demo.launch.py 
+ros2 launch viola_moveit_config demo.launch.py 
 ```
 
-## Usando un Brazo Robótico Real
+### Usando un Brazo Robótico Real
 
-### Terminal 1: Iniciar el Nodo de Control del Brazo
+### Paso 1: Iniciar el Nodo de Control del Brazo
 
-El Brazo se Moverá a la Posición Cero.
+Iniciar el controlador de hardware del brazo, el Brazo se Moverá a la Posición Cero.
 
 ```bash
-ros2 run robo_driver driver
+ros2 launch viola_moveit_config driver.launch.py
 ```
 
-### Iniciar el Nodo del Controlador
+### Paso 2: Iniciar Moveit2
 
 ```bash
-ros2 run viola_controller controller
+ros2 launch viola_moveit_config moveit_write_read.launch.py
 ```
 
-### Iniciar el Moveit2
+### Demo de lectura/escritura de pose del efector final
 
 ```bash
-ros2 launch viola_configure actual_robot_demo.launch.py
+ros2 run arm_moveit_write topic_publisher 
+```
+
+## Cello
+### Script de Simulación MoveIt2 de Starai Arm (Opcional)
+
+```bash
+ros2 launch cello_moveit_config demo.launch.py 
+```
+
+### Usando un Brazo Robótico Real
+
+### Paso 1: Iniciar el Nodo de Control del Brazo
+
+Iniciar el controlador de hardware del brazo, el Brazo se Moverá a la Posición Cero.
+
+```bash
+ros2 launch cello_moveit_config driver.launch.py
+```
+
+### Paso 2: Iniciar Moveit2
+
+```bash
+ros2 launch cello_moveit_config actual_robot_demo.launch.py
+```
+
+### Demo de lectura/escritura de pose del efector final
+
+```bash
+ros2 launch cello_moveit_config moveit_write_read.launch.py
+```
+
+## Demo de nodo de envío de tema de posición y orientación
+
+actualizar aquí `src/arm_moveit_write/src/topic_publisher.cpp`
+
+```bash
+    // // viola
+    // dataset1_ = { 
+    //   {0.003, -0.204, 0.274},       // position
+    //   {0.014, 0.717, 0.017, 0.696}, // orientation
+    //   "open"                         // gripper_state
+    // };
+    // dataset2_ = {
+    //   {-0.00, -0.34, 0.177},        // position
+    //   {0.0, 0.7071, 0.0, 0.7071},   // orientation
+    //   "close"                        // gripper_state
+    // };
+
+    // cello
+    dataset1_ = {
+      {-0.278, 0.000, 0.438},       // position
+      {0.707, 0.000, -0.707, 0.000}, // orientation
+      "open"                         // gripper_state
+    };
+    dataset2_ = {
+      {-0.479, -0.000, 0.369},        // position
+      {0.707, -0.000, -0.707, 0.000},   // orientation
+      "close"                        // gripper_state
+    }
+
+```
+
+```bash
+colcon build
+source install/setup.sh
+ros2 run arm_moveit_write topic_publisher 
 ```
 
 <div class="video-container">
