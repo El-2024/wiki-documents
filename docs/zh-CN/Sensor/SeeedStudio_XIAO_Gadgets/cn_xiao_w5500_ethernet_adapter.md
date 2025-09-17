@@ -19,7 +19,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="/cn/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
 </a></div>
 
@@ -169,7 +169,7 @@ XIAO W5500 以太网适配器使用 ESP32 Arduino 以太网库进行网络连接
 
 **步骤 2.** 选择您的开发板型号并将其添加到 Arduino IDE 中。
 
-- 要在后续例程中使用 **Seeed Studio XIAO ESP32-S3 Plus**，请参考 **[此教程](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
+- 要在后续例程中使用 **Seeed Studio XIAO ESP32-S3 Plus**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
 
 **步骤 3.** 所需材料
 
@@ -185,7 +185,7 @@ XIAO W5500 以太网适配器使用 ESP32 Arduino 以太网库进行网络连接
   </tr>
   <tr>
    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="/cn/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
     </a>
    </div></td>

@@ -25,7 +25,7 @@ Jetson NanoはGPIOと多重化された2つのSPIインターフェースを備�
 ## SPIの変更とフラッシュ
 
 まず、Jetson Nanoの`REC`ピンと`GND`ピンをショートしてリカバリモードに入る必要があります。次に、ホストPC上で、フラッシュする予定のイメージを準備します。ただし、SPI変更を完了するまでは、Jetson Nanoにフラッシュしないでください。
-[**J101用JetPackフラッシュチュートリアル**](https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack/#:~:text=On%20the%20Linux%20host%20PC%2C%20we%20need%20to%20open%20a%20browser%20and%20go%20the%20Jetson%20Linux%20Archive.%20First%20we%20should%20check%20if%20the%20version%20of%20Jetson%20Linux%20is%20supported%20our%20reComputer%20Jetson%20module)を参照し、コマンドライン方法のみを使用してください。
+[**J101用JetPackフラッシュチュートリアル**](https://wiki.seeedstudio.com/ja/reComputer_J1010_J101_Flash_Jetpack/#:~:text=On%20the%20Linux%20host%20PC%2C%20we%20need%20to%20open%20a%20browser%20and%20go%20the%20Jetson%20Linux%20Archive.%20First%20we%20should%20check%20if%20the%20version%20of%20Jetson%20Linux%20is%20supported%20our%20reComputer%20Jetson%20module)を参照し、コマンドライン方法のみを使用してください。
 
   [NIVIDIA DEVELOPER](https://developer.nvidia.com/embedded/jetson-linux-archive#:~:text=Previous%20Jetson%20Linux%20Versions)から、**BSP**と**Simple Root Filesystem**を含む、お好みのバージョンをダウンロードしてください。
 このガイドでは、例として**L4T 32.7.2**を使用します。

@@ -51,7 +51,7 @@ last_update:
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-" target="_blank" rel="noopener noreferrer">
+            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/home_assistant_topic/#-devices-for-home-assistant-" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> Check More 🖱️</font></span></strong>
             </a>
         </div></td>
@@ -69,7 +69,7 @@ last_update:
 
 ### Home Assistantのインストール
 
-Home Assistantが既に稼働していることを確認してください。[製品](https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-)にHome Assistantをフラッシュする方法を紹介する複数のwikiがあります。私はRaspberry Pi CM4を搭載したreRouterを使用しているので、[公式のものを直接使用してOSをreRouterにフラッシュできます](https://www.home-assistant.io/installation/raspberrypi)。
+Home Assistantが既に稼働していることを確認してください。[製品](https://wiki.seeedstudio.com/ja/home_assistant_topic/#-devices-for-home-assistant-)にHome Assistantをフラッシュする方法を紹介する複数のwikiがあります。私はRaspberry Pi CM4を搭載したreRouterを使用しているので、[公式のものを直接使用してOSをreRouterにフラッシュできます](https://www.home-assistant.io/installation/raspberrypi)。
 
 ### Home AssistantにESPHomeをインストール
 
@@ -729,7 +729,7 @@ PIRセンサーは人の動きを検出するIRセンサーです。このGrove 
 
 ##### セットアップ設定
 
-- **ステップ1.** [Grove - Digital PIR Sensor](https://wiki.seeedstudio.com/Grove-Digital-PIR-Sensor/)をSeeed Studio Expansion Base for XIAOのD7コネクタに接続します
+- **ステップ1.** [Grove - Digital PIR Sensor](https://wiki.seeedstudio.com/ja/Grove-Digital-PIR-Sensor/)をSeeed Studio Expansion Base for XIAOのD7コネクタに接続します
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-full_function/42.jpg"style={{width:700, height:'auto'}}/></div>
 
@@ -904,7 +904,7 @@ binary_sensor:
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトはSeeed Studioの[コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479)によってサポートされています。
-- [Zacharyの努力](https://github.com/Seeed-Studio/wiki-documents/issues/603)に感謝し、あなたの作品は[展示](https://wiki.seeedstudio.com/Honorary-Contributors/)されます。
+- [Zacharyの努力](https://github.com/Seeed-Studio/wiki-documents/issues/603)に感謝し、あなたの作品は[展示](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)されます。
 
 ## 技術サポートと製品ディスカッション
 

@@ -30,7 +30,7 @@ GPS 已经证明了其在户外定位的能力。现在，我们也倾向于转�
 <p style={{textAlign: 'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1NTkyNTI4NTEwNA_594585_HptIoexn6zqh4-oS_1692694140?w=1424&h=328&type=image/png" alt="pir" width={800} height="auto" /></p>
 
 :::tip
-查看[室内定位系统](https://wiki.seeedstudio.com/IPS_For_SenseCAP_T1000_Traker)了解更多详情。
+查看[室内定位系统](https://wiki.seeedstudio.com/cn/IPS_For_SenseCAP_T1000_Traker)了解更多详情。
 :::
 
 ### 特性

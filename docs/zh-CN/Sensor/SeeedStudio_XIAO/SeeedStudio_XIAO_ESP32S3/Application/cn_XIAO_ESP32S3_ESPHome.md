@@ -12,7 +12,7 @@ last_update:
 
 # XIAO ESP32S3 sense 通过 ESPHome 连接 Home Assistant（支持所有端口）
 
-本教程将逐步介绍如何将 [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/) 与运行在 Home Assistant 上的 ESPHome 连接，并在将 Grove 模块连接到 XIAO ESP32S3 后发送传感器数据/控制设备。让我们开始吧！
+本教程将逐步介绍如何将 [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started/) 与运行在 Home Assistant 上的 ESPHome 连接，并在将 Grove 模块连接到 XIAO ESP32S3 后发送传感器数据/控制设备。让我们开始吧！
 
 ## 什么是 ESPHome 和 Home Assistant？
 
@@ -48,7 +48,7 @@ last_update:
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-" target="_blank" rel="noopener noreferrer">
+            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/home_assistant_topic/#-devices-for-home-assistant-" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> 查看更多 🖱️</font></span></strong>
             </a>
         </div></td>
@@ -65,7 +65,7 @@ last_update:
 
 ### 安装 Home Assistant
 
-确保您已经安装并运行了 Home Assistant。您可以按照[此 wiki](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant) 获取在 ODYSSEY-X86 单板计算机上安装 Home Assistant 的分步指南，或者按照此[链接](https://www.mbreviews.com/how-to-home-assistant-seeed-mini-router/)获取在 Seeed 迷你路由器上使用 Home Assistant 的详细说明。
+确保您已经安装并运行了 Home Assistant。您可以按照[此 wiki](https://wiki.seeedstudio.com/cn/ODYSSEY-X86-Home-Assistant) 获取在 ODYSSEY-X86 单板计算机上安装 Home Assistant 的分步指南，或者按照此[链接](https://www.mbreviews.com/how-to-home-assistant-seeed-mini-router/)获取在 Seeed 迷你路由器上使用 Home Assistant 的详细说明。
 
 ### 在 Home Assistant 上安装 ESPHome
 
@@ -287,7 +287,7 @@ wifi:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/2.jpg"style={{width:900, height:'auto'}}/></div>
 <br />
 
-例如，如果您想将 Grove 模块连接到 D0 端口，您需要在 ESPHome 上将引脚定义为 GPIO1。您可以通过[点击这里](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#resources)找到更多详细信息。
+例如，如果您想将 Grove 模块连接到 D0 端口，您需要在 ESPHome 上将引脚定义为 GPIO1。您可以通过[点击这里](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started/#resources)找到更多详细信息。
 
 #### Grove 与 ESPHome 兼容性列表
   
@@ -817,7 +817,7 @@ binary_sensor:
 
 ##### 设置配置
 
-- **步骤 1.** 首先您需要将6x10 RGB矩阵连接到XIAO，详细信息请参见[此Wiki](https://wiki.seeedstudio.com/rgb_matrix_for_xiao/#hardware-preparation)。
+- **步骤 1.** 首先您需要将6x10 RGB矩阵连接到XIAO，详细信息请参见[此Wiki](https://wiki.seeedstudio.com/cn/rgb_matrix_for_xiao/#hardware-preparation)。
 
 - **步骤 2.** 复制下面的.yaml信息并通过OTA推送到XIAO ESP32S3。
 
@@ -895,7 +895,7 @@ light:
 ## ✨ 贡献者项目
 
 - 此项目由 Seeed Studio [贡献者项目](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479)支持。
-- 感谢 **Zachary 的努力**，你的工作将被[展示](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- 感谢 **Zachary 的努力**，你的工作将被[展示](https://wiki.seeedstudio.com/cn/Honorary-Contributors/)。
 - 感谢 **python 的努力**，项目源码在[这里](https://community.home-assistant.io/t/seeed-studio-6x10-rgb-matrix-on-xiao-esp32s3/629867)分享。
 
 ## 技术支持与产品讨论

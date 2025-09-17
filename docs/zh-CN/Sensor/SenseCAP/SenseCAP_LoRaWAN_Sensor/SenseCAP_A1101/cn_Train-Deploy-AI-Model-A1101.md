@@ -17,7 +17,7 @@ last_update:
 在本教程中，我们将教您如何为特定应用训练自己的AI模型，然后轻松地将其部署到SenseCAP A1101 - LoRaWAN视觉AI传感器上。让我们开始吧！
 
 :::caution **注意：**
-我们当前的设备固件与[EI](https://wiki.seeedstudio.com/One-Stop-Model-Training-with-Edge-Impulse/)兼容。如果您在**2023年3月30日**之后购买了设备，您需要将设备刷回[默认固件](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101/#change-device-firmware-after-image-collection)来遵循本教程。
+我们当前的设备固件与[EI](https://wiki.seeedstudio.com/cn/One-Stop-Model-Training-with-Edge-Impulse/)兼容。如果您在**2023年3月30日**之后购买了设备，您需要将设备刷回[默认固件](https://wiki.seeedstudio.com/cn/Train-Deploy-AI-Model-A1101/#change-device-firmware-after-image-collection)来遵循本教程。
 :::
 
 ## 硬件介绍
@@ -54,17 +54,17 @@ YOLO是"You Only Look Once"的缩写。它是一种实时检测和识别图像�
 
 本 wiki 将分为三个主要部分
 
-1. [使用公共数据集训练您自己的 AI 模型](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#1-train-your-own-ai-model-with-a-public-dataset)
-2. [使用您自己的数据集训练您自己的 AI 模型](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#2-train-your-own-ai-model-with-your-own-dataset)
-3. [将训练好的 AI 模型部署到 SenseCAP A1101](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference)
+1. [使用公共数据集训练您自己的 AI 模型](https://wiki.seeedstudio.com/cn/Train-Deploy-AI-Model-A1101#1-train-your-own-ai-model-with-a-public-dataset)
+2. [使用您自己的数据集训练您自己的 AI 模型](https://wiki.seeedstudio.com/cn/Train-Deploy-AI-Model-A1101#2-train-your-own-ai-model-with-your-own-dataset)
+3. [将训练好的 AI 模型部署到 SenseCAP A1101](https://wiki.seeedstudio.com/cn/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference)
 
 第一部分将是以最少步骤构建您自己的 AI 模型的最快方法。第二部分需要花费一些时间和精力来构建您自己的 AI 模型，但绝对值得学习。第三部分关于部署 AI 模型可以在第一或第二部分之后进行。
 
 因此有两种方式来遵循本 wiki：
 
-1. 遵循[第一部分](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#1-train-your-own-ai-model-with-a-public-dataset)然后[第三部分](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference) - 快速遵循
+1. 遵循[第一部分](https://wiki.seeedstudio.com/cn/Train-Deploy-AI-Model-A1101#1-train-your-own-ai-model-with-a-public-dataset)然后[第三部分](https://wiki.seeedstudio.com/cn/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference) - 快速遵循
 
-2. 遵循[第二部分](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#2-train-your-own-ai-model-with-your-own-dataset)然后[第三部分](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference) - 缓慢遵循
+2. 遵循[第二部分](https://wiki.seeedstudio.com/cn/Train-Deploy-AI-Model-A1101#2-train-your-own-ai-model-with-your-own-dataset)然后[第三部分](https://wiki.seeedstudio.com/cn/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference) - 缓慢遵循
 
 但是，我们鼓励首先遵循第一种方式，然后再转向第二种方式。
 
@@ -127,7 +127,7 @@ YOLO是"You Only Look Once"的缩写。它是一种实时检测和识别图像�
 
 ### 部署和推理
 
-如果您想直接跳转到**第三部分**，该部分解释如何将训练好的 AI 模型部署到 SenseCAP A1101 并执行推理，[点击这里](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101/#3-deploy-the-trained-model-and-perform-inference)。
+如果您想直接跳转到**第三部分**，该部分解释如何将训练好的 AI 模型部署到 SenseCAP A1101 并执行推理，[点击这里](https://wiki.seeedstudio.com/cn/Train-Deploy-AI-Model-A1101/#3-deploy-the-trained-model-and-perform-inference)。
 
 ## 2. 使用自己的数据集训练自己的AI模型
 
@@ -333,7 +333,7 @@ Roboflow 有一个名为 **Label Assist** 的功能，它可以预先预测标�
 
 ### 在 Google Colab 上使用 YOLOv5 进行训练
 
-完成数据集标注后，我们需要训练数据集。跳转到[这一部分](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101/#train-using-yolov5-on-google-colab)，其中解释了如何使用在 Google Colab 上运行的 YOLOv5 训练 AI 模型。
+完成数据集标注后，我们需要训练数据集。跳转到[这一部分](https://wiki.seeedstudio.com/cn/Train-Deploy-AI-Model-A1101/#train-using-yolov5-on-google-colab)，其中解释了如何使用在 Google Colab 上运行的 YOLOv5 训练 AI 模型。
 
 ## 3. 部署训练好的模型并执行推理
 
