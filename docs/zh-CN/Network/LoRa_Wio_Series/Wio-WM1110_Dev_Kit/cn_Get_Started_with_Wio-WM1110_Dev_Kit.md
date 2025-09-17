@@ -359,7 +359,7 @@ Seeed 包包含有用的示例来引导您完成此示例项目，只需导入�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Wio-WM1110%20Dev%20Kit/configure_mqtt1.png" alt="pir" width={800} height="auto" /></p>
 
-您可以在[前面的步骤](https://wiki.seeedstudio.com/Wio-WM1110_Dev_Kit_Server_Configuration/#step-3-create-credentials:~:text=Copy%20the%20values%20from%20the%20following%20fields%3A%20Server%20Address%2C%20Username%2C%20and%20Password.)中找到服务器和端口。
+您可以在[前面的步骤](https://wiki.seeedstudio.com/cn/Wio-WM1110_Dev_Kit_Server_Configuration/#step-3-create-credentials:~:text=Copy%20the%20values%20from%20the%20following%20fields%3A%20Server%20Address%2C%20Username%2C%20and%20Password.)中找到服务器和端口。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Wio-WM1110%20Dev%20Kit/TTN_TLS.png" alt="pir" width={800} height="auto" /></p>
 
@@ -377,7 +377,7 @@ Seeed 包包含有用的示例来引导您完成此示例项目，只需导入�
 
 **调制解调器和地理定位服务配置**
 
-要配置服务器，需要使用[前面步骤](https://wiki.seeedstudio.com/Wio-WM1110_Dev_Kit_Server_Configuration/#step-2-get-a-token)中的 MGS URL 和 MGS TOKEN 值
+要配置服务器，需要使用[前面步骤](https://wiki.seeedstudio.com/cn/Wio-WM1110_Dev_Kit_Server_Configuration/#step-2-get-a-token)中的 MGS URL 和 MGS TOKEN 值
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Wio-WM1110%20Dev%20Kit/set_token.png" alt="pir" width={800} height="auto" /></p>
 

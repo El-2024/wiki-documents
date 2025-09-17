@@ -37,7 +37,7 @@ last_update:
   </tr>
   <tr>
    <td>MCU</td>
-   <td><a href="https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/">XIAO ESP32-C3</a></td>
+   <td><a href="https://wiki.seeedstudio.com/cn/XIAO_ESP32C3_Getting_Started/">XIAO ESP32-C3</a></td>
   </tr>
   <tr>
    <td>显示屏</td>
@@ -126,11 +126,11 @@ XIAO 7.5" 电子墨水屏面板包含两个位于支架后面的重要按钮，�
 
 以下 Wiki 页面提供了关于编程和使用 XIAO 7.5" 电子墨水屏面板的不同方法的详细信息：
 
-- [**与 ESPHome 在 Home Assistant 中配合使用**](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel_esphome) - 通过 ESPHome 集成配置和控制您的电子墨水屏面板，非常适合 Home Assistant 用户创建自定义仪表板。
+- [**与 ESPHome 在 Home Assistant 中配合使用**](https://wiki.seeedstudio.com/cn/xiao_075inch_epaper_panel_esphome) - 通过 ESPHome 集成配置和控制您的电子墨水屏面板，非常适合 Home Assistant 用户创建自定义仪表板。
 
-- [**与 Arduino 配合使用**](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel_arduino/) - 使用 Arduino IDE 和我们的库及示例为自定义应用程序编程您的设备。
+- [**与 Arduino 配合使用**](https://wiki.seeedstudio.com/cn/xiao_075inch_epaper_panel_arduino/) - 使用 Arduino IDE 和我们的库及示例为自定义应用程序编程您的设备。
 
-- [**与 TRMNL 配合使用**](https://wiki.seeedstudio.com/xiao_7_5_inch_epaper_panel_with_trmnl) - 使用 trmnl 控制您的显示屏，这是一个用于智能可视化仪表板管理的开源平台。
+- [**与 TRMNL 配合使用**](https://wiki.seeedstudio.com/cn/xiao_7_5_inch_epaper_panel_with_trmnl) - 使用 trmnl 控制您的显示屏，这是一个用于智能可视化仪表板管理的开源平台。
 
 ## 资源
 

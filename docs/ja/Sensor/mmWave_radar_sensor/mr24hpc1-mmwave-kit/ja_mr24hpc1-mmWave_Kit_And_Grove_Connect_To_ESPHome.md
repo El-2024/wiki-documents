@@ -53,7 +53,7 @@ mmWave Human Detection Sensor Kit は Seeed Studio XIAO ESP32C3 を搭載し、W
 
 ### Home Assistantのインストール
 
-Home Assistantが既に起動して動作していることを確認してください。[製品](https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-)にHome Assistantをフラッシュする方法を紹介する複数のwikiがあります。私はRaspberry Pi 4Bを使用しているので、[公式のものを直接使用してOSをRaspberry Pi 4Bにフラッシュできます](https://www.home-assistant.io/installation/raspberrypi)。
+Home Assistantが既に起動して動作していることを確認してください。[製品](https://wiki.seeedstudio.com/ja/home_assistant_topic/#-devices-for-home-assistant-)にHome Assistantをフラッシュする方法を紹介する複数のwikiがあります。私はRaspberry Pi 4Bを使用しているので、[公式のものを直接使用してOSをRaspberry Pi 4Bにフラッシュできます](https://www.home-assistant.io/installation/raspberrypi)。
 
 ### Home AssistantにESPHomeをインストール
 
@@ -146,7 +146,7 @@ mmwaveキットをType-Cケーブル経由でHomeAssistantに接続します。�
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave_kit_plus_grove/12.png" style={{width:1000, height:'auto'}}/></div>
 
 :::tip
-ESPHomeがConfiguredゾーンではなく、上のDiscoveredゾーンにある場合は、この[リンク](https://wiki.seeedstudio.com/XIAO-ESP32C3-for-ESPHome-Support/)のステップ15からステップ18に従ってください。
+ESPHomeがConfiguredゾーンではなく、上のDiscoveredゾーンにある場合は、この[リンク](https://wiki.seeedstudio.com/ja/XIAO-ESP32C3-for-ESPHome-Support/)のステップ15からステップ18に従ってください。
 :::
 
 3. **devices**をクリックします。ここでは2つのデバイスがありますが、おそらくあなたの状況では1つのデバイスだけでしょう。
