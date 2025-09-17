@@ -273,5 +273,5 @@ Coming Soon.
 - [SenseCAP Watcher 硬件概述](/cn/watcher_hardware_overview) - SenseCAP Watcher 的硬件资源、结构设计等
 - [SenseCAP Watcher 操作指南](/cn/watcher_operation_guideline) - SenseCAP Watcher 如何进行开机、关机的基本逻辑
 - [SenseCAP Watcher 端侧视觉模型训练](/cn/training_model_for_watcher) - SenseCAP Watcher 端侧视觉模型训练指南，包括数据准备、模型训练和部署等步骤。
-- [SenseCAP Watcher - 网页控制面板](cn/watcher_web_control_panel)
+- [SenseCAP Watcher - 网页控制面板](/cn/watcher_web_control_panel)
 - [SenseCAP Watcher - 设备网络设置指南](/cn/device_network_setup/)
