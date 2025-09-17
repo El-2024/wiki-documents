@@ -279,6 +279,7 @@ Finally，use chmod command.
 ```sh
 sudo chmod 777 /dev/ttyUSB*
 ```
+
 :::
 
 You might need to give access to the USB ports by running:
@@ -418,7 +419,6 @@ The remote operation command will automatically detect the following parameters:
 
 After the program starts, the Hover Lock Technology remains functional.
 
-
 ## Add cameras
 
 <div class="video-container">
@@ -494,6 +494,7 @@ python -m lerobot.teleoperate \
     --teleop.id=bi_starai_leader \
     --display_data=true
 ```
+
 </details>
 
 :::tip
@@ -675,7 +676,6 @@ On Linux, if the left and right arrow keys and the escape key have no effect dur
 Once you are familiar with data recording, you can create a larger dataset for training. A good starting task is to grasp an object at different positions and place it in a small box. We recommend recording at least 50 episodes, with 10 episodes per location. Keep the camera fixed and maintain consistent grasping behavior throughout the recording. Also, ensure that the object you are manipulating is visible in the camera. A good rule of thumb is that you should be able to complete the task by looking only at the camera image.
 :::
 
-
 ## Visualize the dataset
 
 :::tip
@@ -714,6 +714,7 @@ python -m lerobot.replay \
     --dataset.repo_id=starai/record-test \
     --dataset.episode=0 # choose the episode you want to replay
 ```
+
 <details>
 <summary> Dual-Arm </summary>
 
@@ -726,6 +727,7 @@ python -m lerobot.replay \
     --dataset.repo_id=starai/record-test_bi_arm \
     --dataset.episode=0 # choose the episode you want to replay
 ```
+
 </details>
 
 ## Train policy
@@ -756,6 +758,7 @@ python -m lerobot.scripts.train \
   --wandb.enable=False \
   --policy.repo_id=starai/my_policy
 ```
+
 </details>
 
 1. We provide the dataset as a parameter: `dataset.repo_id=starai/record-test`.
@@ -801,6 +804,7 @@ python -m lerobot.record  \
     --dataset.single_task="test" \
     --policy.path=outputs/train/act_bi_viola_test/checkpoints/last/pretrained_model
 ```
+
 </details>
 
 As you can see, this is almost the same as the command previously used to record the training dataset, with a few changes:
@@ -836,7 +840,6 @@ As you can see, this is almost the same as the command previously used to record
 - The `num-episodes` in the data collection command should ensure sufficient data collection and should not be manually paused midway. This is because the mean and variance of the data are calculated only after data collection is completed, which is necessary for training.
 
 - If the program prompts that it cannot read the USB camera image data, please ensure that the USB camera is not connected through a Hub. The USB camera must be directly connected to the device to ensure fast image transmission rates.
-
 
 ## Citation
 
