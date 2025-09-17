@@ -11,7 +11,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array-with-xiao-esp32s3.webp
 slug: /es/respeaker_xvf3800_xiao_home_assistant
 last_update:
-  date: 7/30/2025
+  date: 9/17/2025
   author: Kasun Thushara
 ---
 
@@ -129,14 +129,15 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
 ```
+
 - **ssid & password**: Tomados de tu archivo secrets.yaml para que tu contraseña no sea visible en texto plano.
 - **Eventos**: Ejecuta acciones cuando Wi-Fi se conecta o desconecta:
   - on_connect:
-      - Detiene la configuración BLE improv.
-      - Ejecuta el script control_leds (efecto LED para Wi-Fi conectado).
+    - Detiene la configuración BLE improv.
+    - Ejecuta el script control_leds (efecto LED para Wi-Fi conectado).
 
   - on_disconnect:
-      - Ejecuta el script control_leds (efecto LED para Wi-Fi desconectado).
+    - Ejecuta el script control_leds (efecto LED para Wi-Fi desconectado).
 
 #### Bus I²C
 
@@ -150,11 +151,11 @@ i2c:
   scan: true
   frequency: 100kHz
 ```
+
 - **id**: Un nombre para referenciar este bus en otro lugar.
 - **sda** / scl: Pines usados para datos y reloj.
 - **scan**: Verifica dispositivos conectados al inicio.
 - **frequency**: Velocidad de comunicación (100kHz es estándar).
-
 
 #### Interruptores
 
@@ -177,27 +178,32 @@ Los interruptores son "botones" controlados por software en Home Assistant. Cont
 **Interruptor de Sonido de Palabra de Activación**: Controla el audio de la palabra de activación.
 
 **Interruptor Interno de Timbre de Temporizador**:
-  - Rastrea si un temporizador está activo.
-  - on_turn_on: Reduce otro audio en -20dB, inicia sonido de temporizador, actualiza LED, se detiene automáticamente después de 15 min.
-  - on_turn_off: Detiene temporizador, restaura volumen, actualiza LED.
+
+- Rastrea si un temporizador está activo.
+- on_turn_on: Reduce otro audio en -20dB, inicia sonido de temporizador, actualiza LED, se detiene automáticamente después de 15 min.
+- on_turn_off: Detiene temporizador, restaura volumen, actualiza LED.
 
 **Interruptor de Alarma Activada**:
-  - Rastrea el estado de la alarma.
-  - Ejecuta script LED cuando está encendido/apagado.
+
+- Rastrea el estado de la alarma.
+- Ejecuta script LED cuando está encendido/apagado.
 
 **Brillo del Anillo LED**:
-  - Permite al usuario ajustar el brillo con un deslizador.
-  - min_value / max_value definen límites.
-  - restore_value mantiene la configuración anterior después del reinicio.
+
+- Permite al usuario ajustar el brillo con un deslizador.
+- min_value / max_value definen límites.
+- restore_value mantiene la configuración anterior después del reinicio.
 
 #### Sensores
 
 **Próximo Temporizador**
-  - Muestra el tiempo restante para el próximo temporizador.
-  - Se actualiza solo cuando un temporizador cambia (ahorra recursos).
+
+- Muestra el tiempo restante para el próximo temporizador.
+- Se actualiza solo cuando un temporizador cambia (ahorra recursos).
 
 **Hora de Alarma y Hora del Dispositivo**
-  - Muestra la alarma actual y la hora del sistema ESP32.
+
+- Muestra la alarma actual y la hora del sistema ESP32.
 
 #### Efectos LED en intervalo
 
@@ -230,6 +236,7 @@ interval:
             id(update_led_beam_effect).execute();
           }
 ```
+
 - Los intervalos ejecutan código repetidamente en segundo plano.
 - 50ms: Ejecuta código 20 veces por segundo.
 - Controla animaciones LED basadas en el estado del sistema o efecto seleccionado.
@@ -280,8 +287,8 @@ interval:
           float master_brightness = id(led_ring_brightness).state;
           float breath_brightness = 0.5f * (1.0f + sinf(phase * 2.0f * M_PI)) * master_brightness;
     ......
-    ......```
-
+    ......
+```
 
 **Controlador Central (led_set_effect)**
 
@@ -311,7 +318,6 @@ interval:
 | Temporizador sonando   | Respiración púrpura rápida |
 | Cambio de volumen      | Visualización temporal |
 
-
 #### Configuración de Audio
 
 ```yml
@@ -327,17 +333,21 @@ i2s_audio:
 ```
 
 **Entrada / Salida I²S**
-  - Maneja la entrada del micrófono y la salida del altavoz a través de I²S.
-  - i2s_input: Captura audio estéreo de 48kHz, 32 bits desde micrófono/códec.
-  - i2s_output: Reproduce audio estéreo de 48kHz, 32 bits al DAC/altavoz.
+
+- Maneja la entrada del micrófono y la salida del altavoz a través de I²S.
+- i2s_input: Captura audio estéreo de 48kHz, 32 bits desde micrófono/códec.
+- i2s_output: Reproduce audio estéreo de 48kHz, 32 bits al DAC/altavoz.
 
 **Mezclador**
-  - Combina múltiples flujos de audio (medios + anuncios) en una salida.
+
+- Combina múltiples flujos de audio (medios + anuncios) en una salida.
 
 **Remuestreadores**
+
 - Asegura que todas las fuentes de audio coincidan en frecuencia de muestreo y profundidad de bits.
 
 **Reproductor de Medios**
+
 - Controla volumen, silencio, reproducción y ducking (reduce el volumen de medios durante anuncios).
 - Sonidos precargados para eventos (temporizador, palabra de activación, errores).
 
@@ -364,6 +374,7 @@ respeaker_xvf3800:
 - Gestión de Firmware: Auto-flashea firmware XVF3800 si es necesario.
 
 #### Referencias / Repositorios
+
 ```yml
 external_components:
   - source:
@@ -383,6 +394,7 @@ external_components:
     refresh: 0s
 
 ```
+
 - formatBCE/esphome: Componente de audio I²S personalizado.
 - formatBCE/Respeaker-XVF3800-ESPHome-integration:
 - Controlador XVF3800
@@ -404,6 +416,7 @@ micro_wake_word:
 ```
 
 Detecta tus palabras de activación (como "Okay Nabu") e inicia el asistente de voz.
+
 - id: mww → Nombre de referencia.
 - microphone: i2s_mics, 1 canal.
 - stop_after_detection: false → Mantiene la escucha continua.
@@ -432,7 +445,6 @@ voice_assistant:
   ....
 ```
 
-
 Controla el comportamiento e interacciones de tu asistente de voz (VA).
 
 - **Micrófono y medios**: Utiliza i2s_mics y un reproductor de medios externo.
@@ -451,16 +463,15 @@ Controla el comportamiento e interacciones de tu asistente de voz (VA).
 - **on_end**: Detiene VA, reinicia LEDs, termina ducking.
 
 ##### Eventos de temporizador
+
 - on_timer_started / on_timer_updated / on_timer_cancelled / on_timer_finished / on_timer_tick:
-    - Actualiza estados y nombres de temporizadores.
-    - Actualiza LEDs.
-    - Reduce actualizaciones de LED a cada 5 segundos para temporizador en funcionamiento.
+  - Actualiza estados y nombres de temporizadores.
+  - Actualiza LEDs.
+  - Reduce actualizaciones de LED a cada 5 segundos para temporizador en funcionamiento.
 
 :::important
 Puedes encontrar el archivo YAML desde [Aquí](https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration/tree/main/config)
 :::
-
-
 
 Una vez que tu YAML esté guardado, haz clic en **INSTALAR**.
 
@@ -552,6 +563,7 @@ Con la **palabra de activación** incorporada: "Okay Nabu", puedes activar coman
 
 Queremos agradecer a FormatBCE por crear este increíble archivo YAML para el Seeed Studio ReSpeaker XVF3800.
 Apóyalo en su [GitHub](https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration)
+
 ## Soporte Técnico y Discusión de Productos
 
 ¡Gracias por elegir nuestros productos! Estamos aquí para brindarle diferentes tipos de soporte para asegurar que su experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para satisfacer diferentes preferencias y necesidades.

@@ -11,7 +11,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array-with-xiao-esp32s3.webp
 slug: /cn/respeaker_xvf3800_xiao_home_assistant
 last_update:
-  date: 7/30/2025
+  date: 9/17/2025
   author: Kasun Thushara
 ---
 
@@ -129,14 +129,15 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
 ```
+
 - **ssid & password**：从您的 secrets.yaml 文件中获取，因此您的密码不会以明文显示。
 - **事件**：在 Wi-Fi 连接或断开时运行操作：
   - on_connect:
-      - 停止 BLE improv 设置。
-      - 运行 control_leds 脚本（Wi-Fi 连接的 LED 效果）。
+    - 停止 BLE improv 设置。
+    - 运行 control_leds 脚本（Wi-Fi 连接的 LED 效果）。
 
   - on_disconnect:
-      - 运行 control_leds 脚本（Wi-Fi 断开的 LED 效果）。
+    - 运行 control_leds 脚本（Wi-Fi 断开的 LED 效果）。
 
 #### I²C 总线
 
@@ -150,11 +151,11 @@ i2c:
   scan: true
   frequency: 100kHz
 ```
+
 - **id**：在其他地方引用此总线的名称。
 - **sda** / scl：用于数据和时钟的引脚。
 - **scan**：在启动时检查连接的设备。
 - **frequency**：通信速度（100kHz 是标准）。
-
 
 #### 开关
 
@@ -177,27 +178,32 @@ switch:
 **唤醒词声音开关**：控制唤醒词音频。
 
 **定时器响铃内部开关**：
-  - 跟踪定时器是否处于活动状态。
-  - on_turn_on：将其他音频降低 -20dB，启动定时器声音，更新 LED，15 分钟后自动停止。
-  - on_turn_off：停止定时器，恢复音量，更新 LED。
+
+- 跟踪定时器是否处于活动状态。
+- on_turn_on：将其他音频降低 -20dB，启动定时器声音，更新 LED，15 分钟后自动停止。
+- on_turn_off：停止定时器，恢复音量，更新 LED。
 
 **闹钟开启开关**：
-  - 跟踪闹钟状态。
-  - 在开启/关闭时运行 LED 脚本。
+
+- 跟踪闹钟状态。
+- 在开启/关闭时运行 LED 脚本。
 
 **LED 环亮度**：
-  - 让用户使用滑块调整亮度。
-  - min_value / max_value 定义限制。
-  - restore_value 在重启后保持之前的设置。
+
+- 让用户使用滑块调整亮度。
+- min_value / max_value 定义限制。
+- restore_value 在重启后保持之前的设置。
 
 #### 传感器
 
 **下一个定时器**
-  - 显示下一个定时器的剩余时间。
-  - 仅在定时器更改时更新（节省资源）。
+
+- 显示下一个定时器的剩余时间。
+- 仅在定时器更改时更新（节省资源）。
 
 **闹钟时间和设备时间**
-  - 显示当前闹钟和 ESP32 系统时间。
+
+- 显示当前闹钟和 ESP32 系统时间。
 
 #### 间隔 LED 效果
 
@@ -230,6 +236,7 @@ interval:
             id(update_led_beam_effect).execute();
           }
 ```
+
 - 间隔在后台重复运行代码。
 - 50ms：每秒运行代码 20 次。
 - 根据系统状态或选定效果控制 LED 动画。
@@ -280,8 +287,8 @@ interval:
           float master_brightness = id(led_ring_brightness).state;
           float breath_brightness = 0.5f * (1.0f + sinf(phase * 2.0f * M_PI)) * master_brightness;
     ......
-    ......```
-
+    ......
+```
 
 **中央控制器 (led_set_effect)**
 
@@ -311,7 +318,6 @@ interval:
 | 定时器响铃          | 紫色快速呼吸   |
 | 音量变化          | 临时显示     |
 
-
 #### 音频配置
 
 ```yml
@@ -327,17 +333,21 @@ i2s_audio:
 ```
 
 **I²S 输入/输出**
-  - 通过 I²S 处理麦克风输入和扬声器输出。
-  - i2s_input：从麦克风/编解码器捕获 48kHz、32 位立体声音频。
-  - i2s_output：向 DAC/扬声器播放 48kHz、32 位立体声音频。
+
+- 通过 I²S 处理麦克风输入和扬声器输出。
+- i2s_input：从麦克风/编解码器捕获 48kHz、32 位立体声音频。
+- i2s_output：向 DAC/扬声器播放 48kHz、32 位立体声音频。
 
 **混音器**
-  - 将多个音频流（媒体+公告）合并为一个输出。
+
+- 将多个音频流（媒体+公告）合并为一个输出。
 
 **重采样器**
+
 - 确保所有音频源匹配采样率和位深度。
 
 **媒体播放器**
+
 - 控制音量、静音、播放和闪避（在公告期间降低媒体音量）。
 - 为事件预加载声音（定时器、唤醒词、错误）。
 
@@ -364,6 +374,7 @@ respeaker_xvf3800:
 - 固件管理：如需要自动刷写 XVF3800 固件。
 
 #### 参考/仓库
+
 ```yml
 external_components:
   - source:
@@ -383,6 +394,7 @@ external_components:
     refresh: 0s
 
 ```
+
 - formatBCE/esphome：自定义 I²S 音频组件。
 - formatBCE/Respeaker-XVF3800-ESPHome-integration：
 - XVF3800 驱动程序
@@ -404,6 +416,7 @@ micro_wake_word:
 ```
 
 检测您的唤醒词（如"Okay Nabu"）并启动语音助手。
+
 - id：mww → 引用名称。
 - microphone：i2s_mics，1 通道。
 - stop_after_detection：false → 持续监听。
@@ -432,7 +445,6 @@ voice_assistant:
   ....
 ```
 
-
 控制您的语音助手（VA）行为和交互。
 
 - **麦克风和媒体**：使用 i2s_mics 和外部媒体播放器。
@@ -451,16 +463,15 @@ voice_assistant:
 - **on_end**：停止 VA，重置 LED，结束闪避。
 
 ##### 定时器事件
+
 - on_timer_started / on_timer_updated / on_timer_cancelled / on_timer_finished / on_timer_tick：
-    - 更新定时器状态和名称。
-    - 更新 LED。
-    - 对于滴答定时器，将 LED 更新减少到每 5 秒一次。
+  - 更新定时器状态和名称。
+  - 更新 LED。
+  - 对于滴答定时器，将 LED 更新减少到每 5 秒一次。
 
 :::important
 您可以从[这里](https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration/tree/main/config)找到 YAML 文件
 :::
-
-
 
 保存 YAML 后，点击**安装**。
 
@@ -552,6 +563,7 @@ voice_assistant:
 
 我们要感谢 FormatBCE 为 Seeed Studio ReSpeaker XVF3800 创建了这个出色的 YAML 文件。
 在他的[GitHub](https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration)上支持他
+
 ## 技术支持与产品讨论
 
 感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。

@@ -11,7 +11,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array-with-xiao-esp32s3.webp
 slug: /ja/respeaker_xvf3800_xiao_home_assistant
 last_update:
-  date: 7/30/2025
+  date: 9/17/2025
   author: Kasun Thushara
 ---
 
@@ -129,14 +129,15 @@ wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
 ```
+
 - **ssid & password**: secrets.yamlファイルから取得されるため、パスワードが平文で表示されません。
 - **Events**: Wi-Fi接続時または切断時にアクションを実行：
   - on_connect:
-      - BLE improvセットアップを停止します。
-      - control_ledsスクリプトを実行します（Wi-Fi接続時のLED効果）。
+    - BLE improvセットアップを停止します。
+    - control_ledsスクリプトを実行します（Wi-Fi接続時のLED効果）。
 
   - on_disconnect:
-      - control_ledsスクリプトを実行します（Wi-Fi切断時のLED効果）。
+    - control_ledsスクリプトを実行します（Wi-Fi切断時のLED効果）。
 
 #### I²Cバス
 
@@ -150,11 +151,11 @@ i2c:
   scan: true
   frequency: 100kHz
 ```
+
 - **id**: 他の場所でこのバスを参照するための名前。
 - **sda** / scl: データとクロックに使用されるピン。
 - **scan**: 起動時に接続されたデバイスをチェックします。
 - **frequency**: 通信速度（100kHzが標準）。
-
 
 #### スイッチ
 
@@ -177,27 +178,32 @@ switch:
 **Wake Word Sound Switch**: ウェイクワードオーディオを制御します。
 
 **Timer Ringing Internal Switch**:
-  - タイマーがアクティブかどうかを追跡します。
-  - on_turn_on: 他のオーディオを-20dBダッキング、タイマー音開始、LED更新、15分後に自動停止。
-  - on_turn_off: タイマー停止、音量復元、LED更新。
+
+- タイマーがアクティブかどうかを追跡します。
+- on_turn_on: 他のオーディオを-20dBダッキング、タイマー音開始、LED更新、15分後に自動停止。
+- on_turn_off: タイマー停止、音量復元、LED更新。
 
 **Alarm On Switch**:
-  - アラーム状態を追跡します。
-  - オン/オフ時にLEDスクリプトを実行します。
+
+- アラーム状態を追跡します。
+- オン/オフ時にLEDスクリプトを実行します。
 
 **LED Ring Brightness**:
-  - ユーザーがスライダーで明度を調整できます。
-  - min_value / max_valueで制限を定義します。
-  - restore_valueで再起動後も前の設定を保持します。
+
+- ユーザーがスライダーで明度を調整できます。
+- min_value / max_valueで制限を定義します。
+- restore_valueで再起動後も前の設定を保持します。
 
 #### センサー
 
 **Next Timer**
-  - 次のタイマーの残り時間を表示します。
-  - タイマーが変更された時のみ更新します（リソース節約）。
+
+- 次のタイマーの残り時間を表示します。
+- タイマーが変更された時のみ更新します（リソース節約）。
 
 **Alarm Time & Device Time**
-  - 現在のアラームとESP32システム時刻を表示します。
+
+- 現在のアラームとESP32システム時刻を表示します。
 
 #### インターバルでのLED効果
 
@@ -230,6 +236,7 @@ interval:
             id(update_led_beam_effect).execute();
           }
 ```
+
 - インターバルはバックグラウンドでコードを繰り返し実行します。
 - 50ms: 1秒間に20回コードを実行します。
 - システム状態または選択された効果に基づいてLEDアニメーションを制御します。
@@ -280,8 +287,8 @@ interval:
           float master_brightness = id(led_ring_brightness).state;
           float breath_brightness = 0.5f * (1.0f + sinf(phase * 2.0f * M_PI)) * master_brightness;
     ......
-    ......```
-
+    ......
+```
 
 **中央コントローラー (led_set_effect)**
 
@@ -311,7 +318,6 @@ interval:
 | タイマー鳴動          | 紫高速ブリーズ   |
 | ボリューム変更          | 一時表示     |
 
-
 #### オーディオ設定
 
 ```yml
@@ -327,17 +333,21 @@ i2s_audio:
 ```
 
 **I²S入力/出力**
-  - I²S経由でマイク入力とスピーカー出力を処理します。
-  - i2s_input: マイク/コーデックから48kHz、32ビットステレオオーディオをキャプチャします。
-  - i2s_output: DAC/スピーカーに48kHz、32ビットステレオオーディオを再生します。
+
+- I²S経由でマイク入力とスピーカー出力を処理します。
+- i2s_input: マイク/コーデックから48kHz、32ビットステレオオーディオをキャプチャします。
+- i2s_output: DAC/スピーカーに48kHz、32ビットステレオオーディオを再生します。
 
 **ミキサー**
-  - 複数のオーディオストリーム（メディア + アナウンス）を1つの出力に結合します。
+
+- 複数のオーディオストリーム（メディア + アナウンス）を1つの出力に結合します。
 
 **リサンプラー**
+
 - すべてのオーディオソースがサンプルレートとビット深度に一致することを保証します。
 
 **メディアプレーヤー**
+
 - ボリューム、ミュート、再生、ダッキング（アナウンス中にメディアボリュームを下げる）を制御します。
 - イベント用のプリロードサウンド（タイマー、ウェイクワード、エラー）。
 
@@ -364,6 +374,7 @@ respeaker_xvf3800:
 - ファームウェア管理: 必要に応じてXVF3800ファームウェアを自動フラッシュ。
 
 #### 参考資料/リポジトリ
+
 ```yml
 external_components:
   - source:
@@ -383,6 +394,7 @@ external_components:
     refresh: 0s
 
 ```
+
 - formatBCE/esphome: カスタムI²Sオーディオコンポーネント。
 - formatBCE/Respeaker-XVF3800-ESPHome-integration:
 - XVF3800ドライバー
@@ -404,6 +416,7 @@ micro_wake_word:
 ```
 
 ウェイクワード（「Okay Nabu」など）を検出し、音声アシスタントを開始します。
+
 - id: mww → 参照名。
 - microphone: i2s_mics、1チャンネル。
 - stop_after_detection: false → 継続的に聞き続けます。
@@ -432,7 +445,6 @@ voice_assistant:
   ....
 ```
 
-
 音声アシスタント（VA）の動作と相互作用を制御します。
 
 - **マイクとメディア**: i2s_micsと外部メディアプレーヤーを使用します。
@@ -451,16 +463,15 @@ voice_assistant:
 - **on_end**: VAを停止、LEDをリセット、ダッキングを終了。
 
 ##### タイマーイベント
+
 - on_timer_started / on_timer_updated / on_timer_cancelled / on_timer_finished / on_timer_tick:
-    - タイマー状態と名前を更新。
-    - LEDを更新。
-    - ティッキングタイマーのLED更新を5秒ごとに削減。
+  - タイマー状態と名前を更新。
+  - LEDを更新。
+  - ティッキングタイマーのLED更新を5秒ごとに削減。
 
 :::important
 YAMLファイルは[こちら](https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration/tree/main/config)から見つけることができます
 :::
-
-
 
 YAMLが保存されたら、**INSTALL**をクリックします。
 
@@ -552,6 +563,7 @@ ChromeまたはEdgeで[**Web-ESPHome**](https://web.esphome.io/?dashboard_wizard
 
 Seeed Studio ReSpeaker XVF3800用のこの素晴らしいYAMLファイルを作成してくれたFormatBCEに感謝いたします。
 彼の[GitHub](https://github.com/formatBCE/Respeaker-XVF3800-ESPHome-integration)でサポートしてください
+
 ## 技術サポート & 製品ディスカッション
 
 弊社製品をお選びいただき、ありがとうございます！お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルをご用意しています。
