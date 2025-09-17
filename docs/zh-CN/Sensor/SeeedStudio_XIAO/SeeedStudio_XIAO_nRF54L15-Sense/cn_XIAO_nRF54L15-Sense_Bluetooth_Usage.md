@@ -1,7 +1,7 @@
 ---
 title: Seeed Studio XIAO nRF54L15 Sense BLE 使用指南
 description: |
-  使用 XIAO nRF54L15 Sense 进行蓝牙低功耗 (BLE) 开发的完整指南，包括广播、连接、GATT 服务和功耗优化。
+  XIAO nRF54L15 Sense 蓝牙低功耗 (BLE) 使用完整指南，包括广播、连接、GATT 服务和功耗优化。
 image: https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/1-101991422-XIAO-nRF54L15-Sense.webp
 slug: /cn/xiao_nrf54l15_sense_bluetooth_usage
 keywords:
@@ -14,20 +14,20 @@ last_update:
   date: 7/2/2025
   author: Jason
 sidebar_position: 3
---- 
+---
 
 以下示例代码专为 PlatformIO 设计，但也兼容 nRF Connect SDK。
 
 :::tip
 基于 VS Code，如果您想在 nRF Connect SDK 上使用以下案例，请参考提供的连接，添加 app.overlay 文件并修改 prj.conf 中的内容
 
-[XIAO nRF54L15 添加覆盖文件并修改配置文件](http://192.168.31.44:3000/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
+[XIAO nRF54L15 添加 overlay 文件并修改 conf 文件](https://wiki.seeedstudio.com/cn/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/)。
 
 :::
 
 ## BLE 观察者
 
-一个演示蓝牙低功耗观察者角色功能的简单应用程序。该应用程序将定期扫描附近的设备。如果发现任何设备，会将设备地址、RSSI 值、广播类型和广播数据长度打印到控制台。
+一个演示蓝牙低功耗观察者角色功能的简单应用程序。该应用程序将定期扫描附近的设备。如果发现任何设备，将设备地址、RSSI 值、广播类型和广播数据长度打印到控制台。
 
 如果使用的蓝牙低功耗控制器支持扩展扫描，您可以在项目配置文件 `prj.conf` 中启用 `CONFIG_BT_EXT_ADV`。有关更多详细信息，请参考项目配置文件。
 
@@ -205,45 +205,46 @@ int observer_start(void)
 
 :::note
 
-- `device_found:`在扫描过程中发现设备时调用的回调函数。它打印设备的地址、RSSI、类型和广告数据长度。
+- `device_found:`在扫描过程中发现设备时调用的回调函数。它打印设备的地址、RSSI、类型和AD数据长度。
 
-- `scan_recv:` 用于扩展广播的回调函数，打印接收到的广播数据包的详细信息，包括设备地址、发射功率、RSSI 和广播数据。
+- `scan_recv:` 用于扩展广播的回调函数，打印接收到的广播数据包的详细信息，包括设备地址、发射功率、RSSI和广播数据。
 
-- `data_cb:`由 bt_data_parse 使用的回调函数，用于从广播数据中提取设备名称。它处理缩短名称和完整名称。
+- `data_cb:`由bt_data_parse使用的回调函数，用于从广播数据中提取设备名称。它处理缩短名称和完整名称。
 
-- `phy2str:` 将 PHY（物理层）值转换为人类可读字符串的辅助函数（例如，"LE 1M"、"LE 2M" 等）。
+- `phy2str:` 将PHY（物理层）值转换为人类可读字符串（例如"LE 1M"、"LE 2M"等）的辅助函数。
 
 - `observer_start:`启动观察者的主函数。它定义扫描参数并启动扫描过程。
 
-- `bt_le_scan_start:` 使用指定参数和发现设备时的回调函数启动 BLE 扫描的函数。
+- `bt_le_scan_start:` 使用指定参数和发现设备时的回调函数启动BLE扫描的函数。
 
 :::
 
-## BLE 广播
+## BLE广播
 
-这个蓝牙广播教程基于官方[示例](https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/lessons/lesson-2-bluetooth-le-advertising/topic/blefund-lesson-2-exercise-1/)代码，经过修改以在 Nordic Connect SDK 上运行。结合我们的开发板和官方文档，您可以深入了解更多蓝牙[应用](https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/)。
+这个蓝牙广播教程基于官方[示例](https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/lessons/lesson-2-bluetooth-le-advertising/topic/blefund-lesson-2-exercise-1/)代码，经过修改以在Nordic Connect SDK上运行。结合我们的开发板和官方文档，您可以深入了解更多蓝牙[应用](https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/)。
 
-当手机未连接到 XIAO nRF54L15 时，板载指示灯将保持常亮。一旦手机成功连接，指示灯将开始闪烁，表示已建立连接。
+当手机未连接到XIAO nRF54L15时，板载指示灯将保持常亮。一旦手机成功连接，指示灯将开始闪烁，表示已建立连接。
 
 <div style={{textAlign:'center'}}>
     <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/BLE.gif" alt="XIAO nRF54L15 Ultra-low Power Consumption in System Off Mode" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
-    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>手机连接 XIAO nRF54L15</em></p>
+    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>手机连接XIAO nRF54L15</em></p>
 </div>
 
-### BLE 广播软件安装
+### BLE广播软件安装
 
-对于这个示例，您需要在手机上下载官方蓝牙测试[应用](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile) nRF Connect。
+对于这个示例，您需要在手机上下载官方蓝牙测试[应用](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile)nRF Connect。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/nrfconnect_app.png" style={{width:600, height:'auto'}}/></div>
-一旦您将程序刷写到 XIAO nRF54L15 Sense 开发板上，您就可以打开 nRF Connect 应用程序的主页面与其进行交互。
 
-- 步骤 1 . 在 nRF Connect 应用程序中，点击右上角的扫描按钮开始扫描蓝牙设备。
+将程序烧录到XIAO nRF54L15 Sense开发板后，您可以打开nRF Connect应用的主页面与其交互。
 
-- 步骤 2 . 接下来，在"名称"字段中输入您的 XIAO nRF54L15 Sense 设备的名称。这将帮助您过滤并快速定位您的设备。
+- 步骤1. 在nRF Connect应用中，点击右上角的扫描按钮开始扫描蓝牙设备。
 
-- 步骤 3 . 在扫描结果区域中，找到您的 XIAO nRF54L15 Sense 设备并点击旁边的"连接"按钮。
+- 步骤2. 接下来，在"Name"字段中输入您的XIAO nRF54L15 Sense设备名称。这将帮助您过滤并快速定位您的设备。
 
-连接成功后，您将被引导到设备详情页面。在此页面上，您可以观察不同时间段内的蓝牙信号强度（RSSI）分布，这有助于您了解设备连接的稳定性。
+- 步骤3. 在扫描结果区域，找到您的XIAO nRF54L15 Sense设备并点击旁边的"Connect"按钮。
+
+成功连接后，您将进入设备详情页面。在此页面上，您可以观察不同时间段内的蓝牙信号强度（RSSI）分布，这有助于您了解设备连接的稳定性。
 
 <div class="table-center">
  <table align="center">
@@ -256,7 +257,7 @@ int observer_start(void)
 
 ### 添加 XIAO nRF54L15 开发板
 
-要将 XIAO nRF54L15(Sense) 开发板添加到 NCS（nRF Connect SDK），您可以参考 Seeed Studio Wiki 上的["入门指南"](https://wiki.seeedstudio.com/cn/xiao_nrf54l15_sense_getting_started/)。该指南将提供详细的操作说明。
+要将 XIAO nRF54L15(Sense) 开发板添加到 NCS (nRF Connect SDK) 中，您可以参考 Seeed Studio Wiki 上的["入门指南"](https://wiki.seeedstudio.com/cn/xiao_nrf54l15_sense_getting_started/)。该指南将提供详细的操作步骤说明。
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Seeed-Studio/platform-seeedboards/tree/main/zephyr/boards" target="_blank" rel="noopener noreferrer">
@@ -382,7 +383,7 @@ int main(void)
 
 - `connected:` 当蓝牙设备成功连接时执行此回调函数。它将 device_connected 标志设置为 true。
 
-- `disconnected:` 当蓝牙设备断开连接时执行此回调函数。它将 device_connected 标志设置为 false 并重新启动广播以允许新的连接。
+- `disconnected:` 当蓝牙设备断开连接时执行此回调函数。它将 device_connected 标志设置为 false 并重新启动广播以允许新连接。
 
 - `conn_callbacks:` 定义连接回调的结构，将 connected 和 disconnected 函数分配给各自的事件。
 
@@ -408,11 +409,11 @@ int main(void)
 
 :::
 
-## BLE 中心设备/GATT 写入
+## BLE Central/GATT Write
 
-这些代码文件共同实现了一个蓝牙低功耗（BLE）中心设备。中心设备持续扫描附近的蓝牙外围设备，当找到特定设备（RSSI 大于 -50）时自动建立连接。连接建立后，它执行 GATT（通用属性配置文件）MTU（最大传输单元）交换以优化数据传输效率。
+这些代码文件共同实现了一个蓝牙低功耗（BLE）中央设备。中央设备持续扫描附近的蓝牙外围设备，当找到特定设备（RSSI 大于 -50）时自动建立连接。一旦建立连接，它会执行 GATT（通用属性配置文件）MTU（最大传输单元）交换以优化数据传输效率。
 
-程序的核心功能是持续向连接的外围设备发送 GATT 无响应写入命令。这通常用于性能测试，例如测量蓝牙连接的数据吞吐量或写入速率。
+程序的核心功能是持续向连接的外围设备发送 GATT Write Without Response 命令。这通常用于性能测试，例如测量蓝牙连接的数据吞吐量或写入速率。
 
 <div style={{textAlign:'center'}}>
     <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/gatt.png" alt="XIAO nRF54L15 gatt" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
@@ -429,13 +430,14 @@ int main(void)
     </a>
 </div>
 
-### BLE 中心设备/GATT 代码
+### BLE Central/GATT 代码
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/zephyrproject-rtos/zephyr/tree/main/samples/bluetooth/central_gatt_write" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> 下载库文件</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
     </a>
 </div>
+
 **Main.c**
 
 ```cpp
@@ -595,15 +597,15 @@ uint32_t central_gatt_write(uint32_t count)
 
 :::note
 
-- `device_found:` 在扫描过程中发现新设备时触发的回调函数。它打印找到的设备信息，并尝试连接既可连接又在近距离内（RSSI 大于 -50）的设备。在创建连接之前，它会停止扫描过程。
+- `device_found:` 在扫描过程中发现新设备时触发的回调函数。它打印找到的设备信息，并尝试连接既可连接又在近距离内的设备（RSSI 大于 -50）。在创建连接之前，它会停止扫描过程。
 
-- `start_scan:` 启动主动 BLE 扫描的函数，以 `device_found` 作为发现设备的回调。
+- `start_scan:` 启动主动 BLE 扫描的函数，使用 `device_found` 作为发现设备的回调函数。
 
 - `mtu_updated:` GATT MTU 更新的回调函数，打印新的 TX 和 RX MTU 大小。
 
-- `gatt_callbacks:` 一个结构体，将 `mtu_updated` 函数注册为 GATT 事件的回调。
+- `gatt_callbacks:` 注册 `mtu_updated` 函数作为 GATT 事件回调的结构体。
 
-- `central_gatt_write:` 中央设备应用程序的主函数。它初始化蓝牙子系统，注册 GATT 回调，并开始扫描设备。然后进入循环，等待连接并重复调用 write_cmd 执行 GATT 写入。循环可以配置为运行特定次数或无限期运行。
+- `central_gatt_write:` 中心设备应用程序的主函数。它初始化蓝牙子系统，注册 GATT 回调，并开始扫描设备。然后进入循环，等待连接并重复调用 write_cmd 来执行 GATT 写入。该循环可以配置为运行特定次数或无限期运行。
 
 :::
 
@@ -846,22 +848,23 @@ int write_cmd(struct bt_conn *conn)
 
 :::note
 
-- `write_cmd_cb:` bt_gatt_write_without_response_cb 的回调函数。它计算并打印写入计数、长度和数据速率（以每秒位数 bps 为单位）。如果自上次接收数据以来的时间超过一秒，它会重置这些指标。
+- `write_cmd_cb:`一个用于 bt_gatt_write_without_response_cb 的回调函数。它计算并打印写入次数、长度和数据速率（以每秒比特数 bps 为单位）。如果自上次接收数据以来的时间超过一秒，它会重置这些指标。
 
-- `mtu_exchange_cb:` 在 MTU（最大传输单元）交换过程后调用的回调函数。它打印交换是否成功或失败，并显示新的 MTU 大小。
-- `mtu_exchange:`启动 MTU 交换过程。它首先打印当前 MTU，然后尝试交换它，使用 mtu_exchange_cb 作为回调函数。
+- `mtu_exchange_cb:`一个在 MTU（最大传输单元）交换过程后调用的回调函数。它打印交换是否成功或失败，并显示新的 MTU 大小。
 
-- `connected:`建立连接时执行的回调函数。它打印已连接设备的地址及其角色。然后存储连接的引用并启动 MTU 交换。如果启用了安全性，它会尝试设置安全级别。
+- `mtu_exchange:`启动 MTU 交换过程。它首先打印当前 MTU，然后尝试进行交换，使用 mtu_exchange_cb 作为回调。
 
-- `disconnected:`连接终止时执行的回调函数。它打印断开连接设备的地址、其角色和断开连接的原因。它清除连接引用，如果设备是中心设备，则重新启动扫描。
+- `connected:`连接建立时执行的回调函数。它打印已连接设备的地址及其角色。然后存储连接的引用并启动 MTU 交换。如果启用了安全性，它会尝试设置安全级别。
 
-- `le_param_req:` 处理来自外围设备的 LE 连接参数更新请求的回调函数。它打印请求的参数（间隔、延迟和超时）。
+- `disconnected:`连接终止时执行的回调函数。它打印已断开连接设备的地址、其角色和断开连接的原因。它清除连接引用，如果设备是中心设备，则重新启动扫描。
+
+- `le_param_req:` 用于处理来自外围设备的 LE 连接参数更新请求的回调函数。它打印请求的参数（间隔、延迟和超时）。
 
 - `le_param_updated:` 连接参数成功更新时调用的回调函数。它打印新的间隔、延迟和超时值。
 
 - `security_changed:`连接的安全级别发生变化时调用的回调函数。
 
-- `write_cmd:` 准备并发送无响应的 GATT 写入命令的函数。它根据当前 MTU 确定最大数据长度，并将数据发送到句柄 0x0001。它使用 write_cmd_cb 作为回调函数。
+- `write_cmd:` 准备并发送不需要响应的 GATT 写入命令的函数。它根据当前 MTU 确定最大数据长度，并将数据发送到句柄 0x0001。它使用 write_cmd_cb 作为回调。
 
 :::
 

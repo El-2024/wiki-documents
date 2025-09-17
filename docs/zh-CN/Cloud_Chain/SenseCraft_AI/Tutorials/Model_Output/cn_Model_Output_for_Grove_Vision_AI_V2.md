@@ -63,12 +63,12 @@ last_update:
 
 在继续之前，请确保您的 Grove Vision AI V2 设备上已部署了训练好的模型。如果您尚未部署模型，请参考 SenseCraft AI 文档中关于如何训练和部署模型到设备的说明。
 
-- [为 Grove Vision AI V2 使用模型](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_grove_visionai_v2/)
+- [为 Grove Vision AI V2 使用模型](https://wiki.seeedstudio.com/cn/sensecraft_ai_pretrained_models_for_grove_visionai_v2/)
 
 如果您想使用自己训练的模型，可以参考以下两个 Wiki。
 
-- [训练类型 - 分类](https://wiki.seeedstudio.com/sensecraft_ai_training_classification/)
-- [训练类型 - 目标检测](https://wiki.seeedstudio.com/sensecraft_ai_training_object_detection/)
+- [训练类型 - 分类](https://wiki.seeedstudio.com/cn/sensecraft_ai_training_classification/)
+- [训练类型 - 目标检测](https://wiki.seeedstudio.com/cn/sensecraft_ai_training_object_detection/)
 
 ## 步骤 3. 访问输出配置设置
 
@@ -122,7 +122,7 @@ Grove Vision AI V2 现在将在满足指定条件时执行配置的触发动作�
 
 通过遵循这个分步指南，您已经学会了如何在 SenseCraft AI 平台上为 Grove Vision AI V2 设备配置模型输出设置和触发动作。您现在可以设置您的设备根据训练模型的输出执行特定动作，例如打开板载 LED 或保存捕获的图像。此功能使您能够使用 Grove Vision AI V2 和 SenseCraft AI 创建交互式应用程序和项目。请记住在网络平台和您的设备之间保持稳定连接以确保无缝操作。
 
-Grove Vision AI V2 本质上仍然是一个 AI 摄像头传感器，所以我们不能期望它做太多超出传感器功能的事情。如果您有额外的 MCU，您可以通过 Grove 接口或引脚对引脚接口做更有趣的项目，SenseCraft AI 只是传递模型的媒介，有关 Grove Vision AI V2 模型的更多 Arduino 例程，请参考 [Grove Vision AI V2 入门指南](https://wiki.seeedstudio.com/grove_vision_ai_v2_software_support/)。
+Grove Vision AI V2 本质上仍然是一个 AI 摄像头传感器，所以我们不能期望它做太多超出传感器功能的事情。如果您有额外的 MCU，您可以通过 Grove 接口或引脚对引脚接口做更有趣的项目，SenseCraft AI 只是传递模型的媒介，有关 Grove Vision AI V2 模型的更多 Arduino 例程，请参考 [Grove Vision AI V2 入门指南](https://wiki.seeedstudio.com/cn/grove_vision_ai_v2_software_support/)。
 
 ## 技术支持与产品讨论
 

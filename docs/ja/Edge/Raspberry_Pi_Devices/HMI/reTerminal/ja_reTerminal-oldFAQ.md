@@ -698,7 +698,7 @@ ICがしっかりと保護されるように、CM4のチップ周辺に特別に
 
 ## Q9: reTerminalドライバーをインストール後、ブザー、LED、ボタンが動作しないのはなぜですか？
 
-reTerminalには、I/O拡張チップの2つのバージョンが搭載されています。MCP23008の旧バージョンとPCA9554の新バージョンです。[reTerminalドライバーを手動でインストール](https://wiki.seeedstudio.com/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)した場合は、以下を確認してください。
+reTerminalには、I/O拡張チップの2つのバージョンが搭載されています。MCP23008の旧バージョンとPCA9554の新バージョンです。[reTerminalドライバーを手動でインストール](https://wiki.seeedstudio.com/ja/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)した場合は、以下を確認してください。
 
 まず、reTerminalにどのチップがインストールされているかを確認します。
 
@@ -726,7 +726,7 @@ MCP23008チップを搭載したreTerminalの場合、以下の操作が必要�
 
 - **ステップ 1.** [Ubuntu Server 21.10](https://ubuntu.com/download/raspberry-pi/thank-you?version=21.10&architecture=server-arm64+raspi)をreTerminal eMMCストレージにフラッシュします
 
-**注意:** フラッシュ手順は[こちら](https://wiki.seeedstudio.com/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)を参照してください。**Raspberry Pi Imager**を開いた後、`CHOOSE OS > Use custom`に移動し、上記のイメージを選択してフラッシュします
+**注意:** フラッシュ手順は[こちら](https://wiki.seeedstudio.com/ja/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)を参照してください。**Raspberry Pi Imager**を開いた後、`CHOOSE OS > Use custom`に移動し、上記のイメージを選択してフラッシュします
 
 - **ステップ 2.** reTerminalにSSH接続し、以下のコマンドを順番に実行します。ユーザー名として**ubuntu**、パスワードとして**ubuntu**を使用してください
 
@@ -758,7 +758,7 @@ sudo reboot
 
 ## Q11: Raspberry Pi OS Bullseyeをインストール後に画面の向きが正しくない
 
-- **Step 1.** **Raspberry Pi OS Bullseye**をreTerminal eMMCにフラッシュした後、[このガイド](https://wiki.seeedstudio.com/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)に従って必要なドライバーをインストールします
+- **Step 1.** **Raspberry Pi OS Bullseye**をreTerminal eMMCにフラッシュした後、[このガイド](https://wiki.seeedstudio.com/ja/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)に従って必要なドライバーをインストールします
 
 - **Step 2.** **.config**ディレクトリの下に**monitors.xml**という名前の新しいファイルを作成します
 

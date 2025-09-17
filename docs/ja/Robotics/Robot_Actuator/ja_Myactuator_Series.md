@@ -1,6 +1,6 @@
 ---
 description: このwikiはMyactuatorシリーズモーターのチュートリアルを提供します。
-title: MyActuatorシリーズモーター入門ガイド
+title: MyActuatorシリーズモーター
 keywords:
 - actuator
 - motor
@@ -13,9 +13,9 @@ last_update:
   author: ZhuYaoHui
 ---
 
-# MyActuator Xシリーズモーター入門ガイド
+# MyActuator Xシリーズモーター入門
 
-この記事では、MyActuatorシリーズモーターの使い方と、reComputer Mini Jetson OrinでC++およびPythonを使用する方法について紹介します。
+この記事では、MyActuatorシリーズモーターの使い方と、reComputer Mini Jetson OrinでC++およびPythonを使用する方法を紹介します。
 
 <div align="center">
     <img width={800}
@@ -24,13 +24,13 @@ last_update:
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Myactuator-X4-P36-Planetary-Actuator-p-6469.html" target="_blank">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font></span></strong>
     </a>
 </div>
 
 ## 仕様
 
-以下は、すべてのモーターモデルのパラメータを記載した完成版の表です：
+以下は、すべてのモーターモデルのパラメータを記載した完全な表です：
 
 <table>
   <thead>
@@ -56,20 +56,20 @@ last_update:
     <tr><td>ピークトルク (N.m)</td><td>7</td><td>10</td><td>34</td><td>120</td><td>320</td><td>450</td></tr>
     <tr><td>ピーク相電流 A(rms)</td><td>8.1</td><td>19.5</td><td>21.5</td><td>43.8</td><td>100</td><td>69.2</td></tr>
     <tr><td>効率 (%)</td><td>63</td><td>69.5</td><td>63.1</td><td>79</td><td>75</td><td>82.4</td></tr>
-    <tr><td>モータ逆起電力定数 (Vdc/Krpm)</td><td>4.3</td><td>6</td><td>6</td><td>19.2</td><td>17.9</td><td>29.9</td></tr>
+    <tr><td>モーター逆起電力定数 (Vdc/Krpm)</td><td>4.3</td><td>6</td><td>6</td><td>19.2</td><td>17.9</td><td>29.9</td></tr>
     <tr><td>モジュールトルク定数 (N.m/A)</td><td>0.8</td><td>0.8</td><td>1.9</td><td>2.4</td><td>3.3</td><td>5.8</td></tr>
-    <tr><td>モータ相抵抗 (Ω)</td><td>0.61</td><td>0.32</td><td>0.35</td><td>0.18</td><td>0.12</td><td>0.08</td></tr>
-    <tr><td>モータ相インダクタンス (mH)</td><td>0.13</td><td>0.14</td><td>0.17</td><td>0.31</td><td>0.05</td><td>0.14</td></tr>
+    <tr><td>モーター相抵抗 (Ω)</td><td>0.61</td><td>0.32</td><td>0.35</td><td>0.18</td><td>0.12</td><td>0.08</td></tr>
+    <tr><td>モーター相インダクタンス (mH)</td><td>0.13</td><td>0.14</td><td>0.17</td><td>0.31</td><td>0.05</td><td>0.14</td></tr>
     <tr><td>極対数</td><td>13</td><td>13</td><td>13</td><td>10</td><td>20</td><td>20</td></tr>
     <tr><td>3相接続</td><td colspan="6">Y</td></tr>
     <tr><td>バックドライブトルク (N.m)</td><td>0.4</td><td>0.8</td><td>1.14</td><td>3.21</td><td>3.8</td><td>4</td></tr>
     <tr><td>バックラッシュ (Arcmin)</td><td>12</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td></tr>
-    <tr><td>出力ベアリングタイプ</td><td colspan="2">深溝玉軸受</td><td colspan="4">クロスローラベアリング</td></tr>
-    <tr><td>軸方向耐荷重 (KN)</td><td>0.25</td><td>1.2</td><td>1.3</td><td>4</td><td>4.5</td><td>5.4</td></tr>
+    <tr><td>出力ベアリングタイプ</td><td colspan="2">深溝玉軸受</td><td colspan="4">クロスローラーベアリング</td></tr>
+    <tr><td>軸方向荷重 (KN)</td><td>0.25</td><td>1.2</td><td>1.3</td><td>4</td><td>4.5</td><td>5.4</td></tr>
     <tr><td>軸方向応力 (KN)</td><td>0.25</td><td>1.2</td><td>1.3</td><td>1</td><td>4.5</td><td>5.4</td></tr>
     <tr><td>ラジアル荷重 (KN)</td><td>1</td><td>1.2</td><td>1.5</td><td>4.5</td><td>5</td><td>6</td></tr>
-    <tr><td>慣性モーメント (Kg.cm²)</td><td>0.17</td><td>0.25</td><td>0.3</td><td>1.5</td><td>12.9</td><td>31.6</td></tr>
-    <tr><td>エンコーダタイプ・インターフェース</td><td colspan="6">デュアルエンコーダ ABS-17BIT (入力) / 17-18BIT (出力)</td></tr>
+    <tr><td>慣性 (Kg.cm²)</td><td>0.17</td><td>0.25</td><td>0.3</td><td>1.5</td><td>12.9</td><td>31.6</td></tr>
+    <tr><td>エンコーダータイプ・インターフェース</td><td colspan="6">デュアルエンコーダー ABS-17BIT (入力) / 17-18BIT (出力)</td></tr>
     <tr><td>制御精度 (度)</td><td colspan="6">&lt;0.01</td></tr>
     <tr><td>通信</td><td colspan="6">CAN BUS / EtherCAT</td></tr>
     <tr><td>重量 (Kg)</td><td>0.26</td><td>0.33</td><td>0.36</td><td>1.40</td><td>2.37</td><td>3.50</td></tr>
@@ -77,11 +77,11 @@ last_update:
   </tbody>
 </table>
 
-## RMD-X V4 シリーズ命名規則
+## RMD-X V4シリーズ命名規則
 
 - **RMD**: ブランド名 R-Reducer M-Motor D-Drive
-- **X2**: X はシリーズ名を表す：統合プラネタリアクチュエータ、2 はモーターモデル番号を表す 例：X2 X4 X6 X8 など
-- **P28**: プラネタリギア比 例：P12 P28 P32 など
+- **X2**: Xはシリーズ名を表す：統合プラネタリーアクチュエーター、2はモーターモデル番号を表す（例：X2 X4 X6 X8など）
+- **P28**: プラネタリーギア比（例：P12 P28 P32など）
 - **7**: ピークトルク 7N.m
 - **E**: 通信 E: CAN BUS & EtherCAT
 
@@ -89,27 +89,27 @@ last_update:
 
 1. **CAN BUS & EtherCAT**
 2. **クロスローラーベアリング**
-3. **デュアルエンコーダ**
+3. **デュアルエンコーダー**
 4. **高トルク密度**
 5. **高精度**
 6. **中空設計**
 
-## はじめに
+## 入門
 
 ### 使用前の環境準備
 
-**PC の Windows システム**
+**PCのWindowsシステム**
 
 - [対応する製品マニュアルをダウンロード](https://www.myactuator.com/_files/archives/cab28a_b3f2a1c77d4645a08052a923690b40fc.zip?dn=MYACTUATOR_Setup%20Software_V4.0_20250206.zip)してください。
-- [MYACTUATOR_Setup Software_V4.0.zip](https://www.myactuator.com/_files/archives/cab28a_b3f2a1c77d4645a08052a923690b40fc.zip?dn=MYACTUATOR_Setup%20Software_V4.0_20250206.zip) をダウンロードしてください
+- [MYACTUATOR_Setup Software_V4.0.zip](https://www.myactuator.com/_files/archives/cab28a_b3f2a1c77d4645a08052a923690b40fc.zip?dn=MYACTUATOR_Setup%20Software_V4.0_20250206.zip)をダウンロードしてください。
 
-- `MYACTUATOR_Setup Software_V4.0.zip` を展開し、以下をインストールしてください：
-  - `Required Runtime Environment\ZLGUSBCAN_Driver` ディレクトリにある `USBCAN_AllInOne_x86_x64_2.0.0.1.exe`
-  - `Required Microsoft Runtime Libraries` ディレクトリにある `MSVBCRT.AIO.2019.10.19.X86 X64.exe`
+- `MYACTUATOR_Setup Software_V4.0.zip`を展開し、以下をインストールしてください：
+  - `Required Runtime Environment\ZLGUSBCAN_Driver`ディレクトリにある`USBCAN_AllInOne_x86_x64_2.0.0.1.exe`
+  - `Required Microsoft Runtime Libraries`ディレクトリにある`MSVBCRT.AIO.2019.10.19.X86 X64.exe`
 
 ### 回路の接続
 
-ここでは X4-36 モーターを選択しており、そのインターフェース図を以下に示します。
+ここではX4-36モーターを選択し、そのインターフェース図を以下に示します。
 
 <div align="center">
     <img width={500}
@@ -131,19 +131,19 @@ last_update:
   </tr>
   <tr>
     <td>③ CAN_H</td>
-    <td>CAN_H ネットワーク信号端子</td>
+    <td>CAN_Hネットワーク信号端子</td>
   </tr>
   <tr>
     <td>④ CAN_L</td>
-    <td>CAN_L ネットワーク信号端子</td>
+    <td>CAN_Lネットワーク信号端子</td>
   </tr>
   <tr>
     <td>⑤ EtherCAT_IN</td>
-    <td>EtherCAT 入力端子</td>
+    <td>EtherCAT入力端子</td>
   </tr>
   <tr>
     <td>⑥ EtherCAT_OUT</td>
-    <td>EtherCAT 出力端子</td>
+    <td>EtherCAT出力端子</td>
   </tr>
   <tr>
     <td>⑦ T+</td>
@@ -163,7 +163,7 @@ last_update:
   </tr>
 </table>
 
-ここでは、CAN通信方式を使用します。これにはWindows上位機でのデバッグ用に追加のUSB-CANインターフェースが必要です。
+ここでは、CAN通信方式を使用します。これには、WindowsでのPC上でのデバッグ用に追加のUSB-CANインターフェースが必要です。
 
 <div align="center">
     <img width={500}
@@ -174,16 +174,16 @@ last_update:
 
 ### `MYACTUATOR Setup Software 250206.exe`を使用してモーターをテストする
 
-| **IDの設定と接続** | **モーター情報の読み取り** | **モーターのキャリブレーション** | **モーターのキャリブレーション** |**モーター回転テストの実行** |
+| **IDの設定と接続** | **モーター情報の読み取り** | **モーターの校正** | **モーターの校正** |**モーター回転テストの実行** |
 |:---------:|:---------:|:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/1.png) | ![fig2](https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/2.png) | ![fig3](https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/3.png) | ![fig4](https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/4.png) |![fig5](https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/5.png) |
-| デフォルトのモーターIDは1です。IDに1を入力し、「Connect」をクリックします。 | 接続後、「Read」をクリックしてモーターの現在の情報を取得します。|初回使用時は、「Calibrate Motor」をクリックしてキャリブレーションを実行します。|キャリブレーション後、「Read」と「Save」をクリックします。 |Motor Runningセクションで異なるモーター制御モードをテストできるようになります。 |
+| デフォルトのモーターIDは1です。IDに1を入力し、「Connect」をクリックします。 | 接続後、「Read」をクリックしてモーターの現在の情報を取得します。|初回使用時は、「Calibrate Motor」をクリックして校正を実行します。|校正後、「Read」と「Save」をクリックします。 |Motor Runningセクションで異なるモーター制御モードをテストできます。 |
 
-より詳細な機能については、[MYACTUATOR_Setup Software_V4.0.zip](https://www.myactuator.com/_files/archives/cab28a_b3f2a1c77d4645a08052a923690b40fc.zip?dn=MYACTUATOR_Setup%20Software_V4.0_20250206.zip) ファイルに含まれている **Setup Software Instruction Manual - V3.0.pdf** を参照してください。
+詳細な機能については、[MYACTUATOR_Setup Software_V4.0.zip](https://www.myactuator.com/_files/archives/cab28a_b3f2a1c77d4645a08052a923690b40fc.zip?dn=MYACTUATOR_Setup%20Software_V4.0_20250206.zip)ファイルに含まれている**Setup Software Instruction Manual - V3.0.pdf**を参照してください。
 
-## [reComputer Mini Jetson Orin](/recomputer_jetson_mini_getting_started) を使用してモーターを制御する
+## [reComputer Mini Jetson Orin](/ja/recomputer_jetson_mini_getting_started)を使用してモーターを制御する
 
-現在、市場でモーター用の最も一般的なCAN通信インターフェースは **XT30 (2+2)** と **JST コネクタ** を使用しています。私たちの **reComputer Mini Jetson Orin** と **reComputer Robotics** デバイスは **デュアル XT30 (2+2) ポート** と **JST ベースの CAN インターフェース** を搭載しており、シームレスな互換性を提供します。
+現在、市場で最も一般的なモーター用CAN通信インターフェースは**XT30 (2+2)**と**JSTコネクタ**を使用しています。私たちの**reComputer Mini Jetson Orin**と**reComputer Robotics**デバイスは**デュアルXT30 (2+2)ポート**と**JSTベースのCANインターフェース**を搭載し、シームレスな互換性を提供します。
 
 **reComputer Mini:**
 <div align="center">
@@ -195,20 +195,20 @@ last_update:
   <img width ="800" src="https://files.seeedstudio.com/wiki/robotics/Sensor/IMU/hexfellow/fig5.jpg"/>  
 </div>
 
-CAN使用の詳細については、この[wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can )を参照してください。
+CAN使用の詳細については、この[wiki](https://wiki.seeedstudio.com/ja/recomputer_jetson_mini_hardware_interfaces_usage/#can)を参照してください。
 
-### CANインターフェースを有効にする
+### CANインターフェースの有効化
 
-**Step1:** CAN0とCAN1を使用する前に、底面カバーを取り外し、両方の120Ω終端抵抗をON位置に設定してください。
+**ステップ1:** CAN0とCAN1を使用する前に、底面カバーを取り外し、両方の120Ω終端抵抗をON位置に設定してください。
 
 <div align="center">
     <img width={300}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/7.png" />
 </div>
 
-**Step2:** XT30 (2+2) インターフェースを介してモーターを reComputer Mini CAN0 に直接接続します。
+**ステップ2:** XT30 (2+2)インターフェースを介してモーターをreComputer Mini CAN0に直接接続します。
 
-これは reComputer Mini の CAN0 インターフェースです
+これはreComputer MiniのCAN0インターフェースです
 
 <div align="center">
   <img width ="800" src="https://files.seeedstudio.com/wiki/recomputer_mini/can0-datasheet.png"/>
@@ -219,25 +219,24 @@ CAN使用の詳細については、この[wiki](https://wiki.seeedstudio.com/re
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/8.jpg" />
 </div>
 
-:::danger
-この電源は単一モーターの学習とテスト用のみです。複数のモーターの場合は、別途電源ボードを設計し、Jetsonの電源をモーター電源から分離して、高電流がJetsonを直接通過することを避けてください。
+:::dangerこの電源は単一モーター学習およびテスト専用です。複数のモーターの場合は、別途電源ボードを設計し、Jetsonの電源をモーター電源から分離して、高電流がJetsonを直接通過することを避けてください。
 :::
 
 #### Jetson CAN通信を有効にする
 
-ターミナルを開き、以下のコマンドを入力してGPIOピンをハイにし、CAN0を有効にします：
+ターミナルを開き、以下のコマンドを入力してGPIOピンをハイにプルし、CAN0を有効にします：
 
 ```bash
 gpioset --mode=wait 0 43=0
 ```
 
-JST インターフェース CAN1 を使用している場合は、ピン 106 をハイにプルしてください。
+JST-インターフェースCAN1を使用している場合は、ピン106をハイにプルします。
 
 ```bash
 gpioset --mode=wait 0 106=0
 ```
 
-このターミナルを開いたままにして、新しいターミナルを起動し、CAN0を設定します。
+このターミナルを開いたまま、新しいターミナルを起動し、CAN0を設定します。
 
 ```bash
 sudo modprobe mttcan
@@ -253,24 +252,24 @@ sudo ip link set can0 up
 git clone https://github.com/ZhuYaoHui1998/myactuator_rmd.git
 ```
 
-**ステップ2:** このドライバーSDKには以下の依存関係のインストールが必要です。Debian Linuxでは、以下のようにaptを通じてインストールできます：
+**ステップ2:** このドライバーSDKには以下の依存関係のインストールが必要です。Debian Linuxの場合、aptを通じて以下のようにインストールできます：
 
 ```bash
 sudo apt-get install -y build-essential cmake
 sudo apt install linux-modules-extra-5.15.0-1025-nvidia-tegra # For Jetson Jetpack 6.0
 ```
 
-Python バインディングを使用したい場合は、追加で Python 3、pip、pybind11 をインストールする必要があります：
+Pythonバインディングを使用したい場合は、追加でPython 3、pip、pybind11をインストールする必要があります：
 
 ```bash
 sudo apt-get install -y python3 python3-pip python3-pybind11 python3-setuptools
 ```
 
-依存関係をインストールした後、以下の手順で説明するように、ドライバーSDKをC++ライブラリまたはPythonパッケージとしてインストールする必要があります。どちらもCMakeを使用してC++コードをコンパイルします。
+依存関係をインストールした後、以下のステップで説明するように、ドライバーSDKをC++ライブラリまたはPythonパッケージとしてインストールする必要があります。どちらもCMakeを使用してC++コードをコンパイルします。
 
 #### C++ライブラリのビルド
 
-C++ドライバーSDKをビルドするには、このフォルダ内で新しいターミナルを開き、以下のコマンドを実行してください。古いバージョンのLinuxでは、ビルドが `error: 'const struct can_frame' has no member named 'len'` というエラーメッセージで失敗する場合があり、その場合は[issue 5](https://github.com/2b-t/myactuator_rmd/issues/5)で議論されているコード修正を適用する必要があります。
+C++ドライバーSDKをビルドするには、このフォルダ内で新しいターミナルを開き、以下のコマンドを実行します。古いバージョンのLinuxでは、error: 'const struct can_frame' has no member named 'len'というエラーメッセージでビルドが失敗する場合があり、[issue 5](https://github.com/2b-t/myactuator_rmd/issues/5)で議論されているコード修正を適用する必要があります。
 
 ```bash
 cd ~/myactuator_rmd
@@ -281,25 +280,25 @@ make -j $(nproc)
 sudo make install
 ```
 
-フラグ PYTHON_BINDINGS（デフォルトはオフ）は、C++ライブラリに加えてPythonバインディングをビルドします。C++ライブラリの使用のみに興味がある場合は、オフのままにしておいて構いません。このようにPythonバインディングをビルドする場合、共有ライブラリとしてコンパイルされますが、インストールはされません。これは、ライブラリを手動でインストールするか、ビルドフォルダ内でローカルにのみインポートできることを意味します。
+フラグPYTHON_BINDINGS（デフォルトはオフ）は、C++ライブラリに加えてPythonバインディングもビルドします。C++ライブラリのみを使用したい場合は、オフのままにしておいてください。このようにPythonバインディングをビルドすると、共有ライブラリにコンパイルされますが、インストールはされません。つまり、ライブラリを手動でインストールするか、ビルドフォルダ内でローカルにのみインポートできます。
 
-パッケージを再度アンインストールするには、次のコマンドを使用できます：`xargs rm < install_manifest.txt`。
+パッケージを再度アンインストールするには、以下のコマンドを使用できます：`xargs rm < install_manifest.txt`。
 
 #### Pythonライブラリのビルド
 
-このSDKのPythonバインディングをビルドしてインストールするには、メインフォルダ内で新しいターミナルを開き、次のコマンドを実行してください：
+このSDKのPythonバインディングをビルドしてインストールするには、メインフォルダ内で新しいターミナルを開き、以下のコマンドを実行します：
 
 ```bash
 cd ~/myactuator_rmd
 pip3 install .
 ```
 
-これにより、setup.py を使用して CMake を呼び出し、バインディングを C++ ライブラリとしてインストールします。再度削除したい場合は、単純に `pip3 uninstall myactuator-rmd-py` を実行してください。
+これはsetup.pyを使用してCMakeを呼び出し、バインディングをC++ライブラリとしてインストールします。再度削除したい場合は、単純に`pip3 uninstall myactuator-rmd-py`を実行してください。
 
-### C++ を使用した制御
+### C++を使用した制御
 
 1. プロジェクトディレクトリ構造の作成  
-コードの src ディレクトリの下にプロジェクトディレクトリを作成します。例えば、`myactuator_example` という名前にして、サブディレクトリの下に src フォルダを作成します。
+コードsrcディレクトリの下にプロジェクトディレクトリを作成します。例えば、`myactuator_example`という名前にし、サブディレクトリの下にsrcフォルダを作成します。
 
 ```bash  
 cd ~/myactuator_rmd
@@ -307,8 +306,8 @@ mkdir -p ~/myactuator_rmd/src/myactuator_example/src
 cd ~/myactuator_rmd/src/myactuator_example  
 ```  
 
-2. CMakeLists.txtを書く  
-`~/myactuator_rmd/src/myactuator_example/CMakeLists.txt`ファイルに、以下の内容を書きます：
+2. CMakeLists.txtの作成  
+`~/myactuator_rmd/src/myactuator_example/CMakeLists.txt`ファイルに、以下の内容を記述します：
 
 ```bash
 touch CMakeLists.txt
@@ -337,8 +336,8 @@ myactuator_rmd::myactuator_rmd
 )  
 ```
 
-3. main.cpp を作成する  
-`~/myactuator_rmd/src/myactuator_example/src/main.cpp` ファイルに、以下のコードを記述します：  
+3. main.cppの作成  
+`~/myactuator_rmd/src/myactuator_example/src/main.cpp`ファイルに、以下のコードを記述します：  
 
 ```bash
 touch src/main.cpp
@@ -360,7 +359,7 @@ return EXIT_SUCCESS;
 }
 ```
 
-4. Build the project  
+4. プロジェクトのビルド  
 
 ```bash
 cd ~/myactuator_rmd/src/myactuator_example
@@ -369,7 +368,7 @@ cmake .. -DCMAKE_BUILD_TYPE=Release
 make
 ```
 
-5. プログラムを実行する  
+5. プログラムの実行  
 
 ```bash
 sudo ./myactuator_node
@@ -382,23 +381,23 @@ sudo ./myactuator_node
 
 **前提条件**  
 
-- CANインターフェース `can0` が適切に設定されている必要があります（モーターとCANバスが正しく接続されていることを確認してください）。  
-- `myactuator_rmd` ライブラリが適切にインストールされている必要があります（インストールされていない場合は、まずインストールしてください）。
+- CANインターフェース`can0`が適切に設定されている必要があります（モーターとCANバスが正しく接続されていることを確認してください）。  
+- `myactuator_rmd`ライブラリが適切にインストールされている必要があります（インストールされていない場合は、まずインストールしてください）。
 
-C++実装の詳細については、`myactuator_rmd.hpp` のすべての内容を参照してください。Pythonの使用方法について詳細に紹介します。
+C++実装の詳細については、`myactuator_rmd.hpp`のすべての内容を参照してください。Python使用方法について詳細な紹介を提供します。
 
 ### Pythonを使用した制御
 
-`~/myactuator_rmd/src/myactuator_example` ディレクトリの下に scripts という名前のフォルダを作成し、Pythonスクリプトを保存します。
+`~/myactuator_rmd/src/myactuator_example`ディレクトリの下にscriptsという名前のフォルダを作成し、Pythonスクリプトを保存します。
 
 ```bash
 cd ~/myactuator_rmd/src/myactuator_example
 mkdir scripts
 ```
 
-#### **バージョン番号を取得**
+#### **バージョン番号の取得**
 
-scriptsディレクトリの下に`test.py`という名前のカスタムPythonスクリプトを作成し、以下のコードを記入してください。
+scriptsディレクトリの下に`test.py`という名前のカスタムPythonスクリプトを作成し、以下のコードを記述します。
 
 ```python
 import myactuator_rmd_py as rmd
@@ -417,7 +416,7 @@ print("Version number:", actuator.getVersionDate())
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/8.png" />
 </div>
 
-ライブラリを読み込み、特定のネットワークインターフェース（ここではcan0）とドライブ（ここでは1、CAN-アドレス0x140 + 1 = 0x141に対応）のドライバーを作成し続けます。
+ライブラリをロードし、特定のネットワークインターフェース（ここではcan0）とドライブ（ここでは1、CANアドレス0x140 + 1 = 0x141に対応）のドライバーを作成し続けます。
 
 #### **モーターステータスの取得**
 
@@ -468,7 +467,7 @@ def get_normalized_torque(actuator):
     # Get current value
     status = actuator.getMotorStatus2()
     current = status.current
-    
+
     # Calculate normalized torque (current/rated)
     torque_ratio = current / X4_24.rated_current
     actual_torque = torque_ratio * X4_24.rated_torque
@@ -494,7 +493,7 @@ except KeyboardInterrupt:
 
 #### **制御モード**
 
-- **現在の制御モードを取得**
+- **現在の制御モードの取得**
 
 ```python
 # -*- coding: gbk -*-
@@ -589,8 +588,7 @@ angle = actuator.getMultiTurnAngle()
 print(f"Current position: {angle}°")
 
 mode = actuator.getControlMode()
-print(f"Current control mode: {mode}")
-```
+print(f"Current control mode: {mode}")```
 
 <div align="center">
     <img width={800}
@@ -642,12 +640,12 @@ feedback = actuator.sendPositionAbsoluteSetpoint(180.0, 100.0)
 time.sleep(5)
 print(feedback)
 
-    
+
 # Velocity control with feedback
 feedback = actuator.sendVelocitySetpoint(20.0)
 time.sleep(5)
 print(feedback)
-    
+
 # Torque control with feedback
 torque_constant = 0.32  # Set according to motor model
 feedback = actuator.sendTorqueSetpoint(1.5, torque_constant)
@@ -696,7 +694,7 @@ print("Motor powered off")
 
 #### エンコーダー機能
 
-- **マルチターンエンコーダー位置を取得**
+- **マルチターンエンコーダー位置の取得**
 
 ```python
 # -*- coding: gbk -*-
@@ -779,7 +777,7 @@ actuator.setAcceleration(1000, AccelerationType.VELOCITY_PLANNING_DECELERATION)
 
 ## 技術サポート & 製品ディスカッション
 
-弊社製品をお選びいただき、ありがとうございます！お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。異なる好みやニーズに対応するため、複数のコミュニケーションチャネルをご用意しています。
+私たちの製品をお選びいただき、ありがとうございます！私たちは、お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供しています。さまざまな好みやニーズに対応するため、複数のコミュニケーションチャンネルを用意しています。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>

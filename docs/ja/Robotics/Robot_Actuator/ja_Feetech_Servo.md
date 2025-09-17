@@ -1,6 +1,6 @@
 ---
 description: このwikiはFeetechサーボモーターのチュートリアルを提供します。
-title: Feetechサーボモーター入門ガイド
+title: Feetechサーボモーター
 keywords:
 - actuator
 - motor
@@ -13,7 +13,7 @@ last_update:
   author: ZhuYaoHui
 ---
 
-# Feetechサーボモータードキュメントハブ
+# Feetechサーボモーター ドキュメントハブ
 
 <div align="center">
 
@@ -22,7 +22,7 @@ last_update:
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/STS3215-19kg-cm-7-4V-Serial-Servo-p-6338.html" target="_blank">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font></span></strong>
     </a>
 </div>
 
@@ -76,8 +76,8 @@ last_update:
 
 ## 例
 
-  <a href="https://wiki.seeedstudio.com/bus_servo_driver_board/" className="nav-item">
-    <span className="text">バスサーボドライバーボード / XIAOバスサーボアダプター入門ガイド</span>
+  <a href="https://wiki.seeedstudio.com/ja/bus_servo_driver_board/" className="nav-item">
+    <span className="text">バスサーボドライバーボード / XIAOバスサーボアダプターの使用開始</span>
   </a>
 
 </div>
@@ -85,7 +85,7 @@ last_update:
 
 ## 技術サポート & 製品ディスカッション
 
-弊社製品をお選びいただき、ありがとうございます！お客様の製品体験を可能な限りスムーズにするため、さまざまなサポートを提供いたします。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルをご用意しております。
+私たちの製品をお選びいただき、ありがとうございます！私たちは、お客様の製品体験ができるだけスムーズになるよう、さまざまなサポートを提供しています。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
@@ -327,7 +327,7 @@ html[data-theme='dark'] .category-card:active {
   .nav-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .category-card {
     width: 100%;
     margin-top: 0.5rem; /* 卡片紧贴标题 */

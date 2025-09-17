@@ -14,22 +14,22 @@ last_update:
   date: 7/2/2025
   author: Jason
 sidebar_position: 3
---- 
+---
 
 El siguiente código de ejemplo está diseñado para PlatformIO, pero también es compatible con el nRF Connect SDK.
 
 :::tip
 Basado en VS Code, si deseas usar el siguiente caso en el nRF Connect SDK, consulta la conexión proporcionada, agrega el archivo app.overlay y modifica el contenido en prj.conf
 
-[XIAO nRF54L15 Agregar archivo overlay y modificar archivo conf](http://192.168.31.44:3000/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/).
+[XIAO nRF54L15 Agregar archivo overlay y modificar archivo conf](https://wiki.seeedstudio.com/es/xiao_nrf54l15_sense_getting_started/#/add-overlay-and-modify-the-conf-file/).
 
 :::
 
-## Observador BLE
+## BLE Oberver
 
-Una aplicación simple que demuestra la funcionalidad del rol de Observador de Bluetooth Low Energy. La aplicación escaneará periódicamente dispositivos cercanos. Si encuentra alguno, imprime la dirección del dispositivo, el valor RSSI, el tipo de publicidad y la longitud de los datos de publicidad en la consola.
+Una aplicación simple que demuestra la funcionalidad del rol Observer de Bluetooth Low Energy. La aplicación escaneará periódicamente dispositivos cercanos. Si encuentra alguno, imprime la dirección del dispositivo, el valor RSSI, el tipo de publicidad y la longitud de los datos de publicidad en la consola.
 
-Si el controlador Bluetooth Low Energy utilizado soporta Escaneo Extendido, puedes habilitar `CONFIG_BT_EXT_ADV` en el archivo de configuración del proyecto `prj.conf`. Consulta el archivo de configuración del proyecto para más detalles.
+Si el controlador Bluetooth Low Energy utilizado soporta escaneo extendido, puedes habilitar `CONFIG_BT_EXT_ADV` en el archivo de configuración del proyecto `prj.conf`. Consulta el archivo de configuración del proyecto para más detalles.
 
 <div style={{textAlign:'center'}}>
     <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/obersever.png" alt="XIAO nRF54L15 Observer" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
@@ -46,7 +46,7 @@ Para agregar la placa XIAO nRF54L15(Sense) al NCS (nRF Connect SDK), puedes cons
     </a>
 </div>
 
-### Código del Observador BLE
+### Código BLE Observer
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/zephyrproject-rtos/zephyr/tree/main/samples/bluetooth/observer" target="_blank" rel="noopener noreferrer">
@@ -83,11 +83,11 @@ int main(void)
 
 :::note
 
-- `main.c:` Inicializa el subsistema Bluetooth e inicia la demostración del observador.
+- `main.c:` Inicializa el subsistema Bluetooth e inicia la demostración del observer.
 
 - `bt_enable(NULL):` Inicializa el Subsistema Bluetooth.
 
-- `observer_start():` Llama a la función que inicia el observador.
+- `observer_start():` Llama a la función que inicia el observer.
 
 - `printk("Exiting %s thread.\n", __func__):` Imprime un mensaje cuando la función principal está saliendo.
 
@@ -213,24 +213,24 @@ int observer_start(void)
 
 - `phy2str:` Función auxiliar que convierte el valor PHY (Capa Física) a una cadena legible (ej. "LE 1M", "LE 2M", etc.).
 
-- `observer_start:`La función principal para iniciar el observador. Define los parámetros de escaneo e inicia el proceso de escaneo.
+- `observer_start:`La función principal para iniciar el observer. Define los parámetros de escaneo e inicia el proceso de escaneo.
 
 - `bt_le_scan_start:` Función que inicia el escaneo BLE con los parámetros especificados y una función de callback para cuando se encuentren dispositivos.
 
 :::
 
-## Publicidad BLE
+## BLE Advertising
 
 Este tutorial de publicidad Bluetooth está basado en el código de [ejemplo](https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/lessons/lesson-2-bluetooth-le-advertising/topic/blefund-lesson-2-exercise-1/) oficial modificado para ejecutarse en el Nordic Connect SDK. Con nuestra placa de desarrollo combinada con la documentación oficial, puedes profundizar en más [aplicaciones](https://academy.nordicsemi.com/courses/bluetooth-low-energy-fundamentals/) Bluetooth.
 
 Mientras el teléfono no esté conectado al XIAO nRF54L15, el indicador a bordo permanecerá encendido permanentemente. Una vez que el teléfono se conecte exitosamente, el indicador comenzará a parpadear para indicar que se ha establecido una conexión.
 
 <div style={{textAlign:'center'}}>
-    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/BLE.gif" alt="XIAO nRF54L15 Ultra-low Power Consumption in System Off Mode" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
-    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>Conexión del Teléfono Celular al XIAO nRF54L15</em></p>
+    <img src="https://files.seeedstudio.com/wiki/XIAO_nRF54L15/Getting_Start/BLE.gif" alt="XIAO nRF54L15 Consumo Ultra-bajo de Energía en Modo System Off" style={{width:900, height:'auto', border:'1px solid #ccc', borderRadius:5, boxShadow:'2px 2px 8px rgba(0,0,0,0.2)'}}/>
+    <p style={{fontSize:'0.9em', color:'#555', marginTop:10}}><em>Conexión de Teléfono Celular XIAO nRF54L15</em></p>
 </div>
 
-### Instalación de Software de Publicidad BLE
+### Instalación de Software BLE Advertising
 
 Para este ejemplo, necesitarás descargar la [aplicación](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile) oficial de pruebas Bluetooth, nRF Connect, en tu teléfono móvil.
 

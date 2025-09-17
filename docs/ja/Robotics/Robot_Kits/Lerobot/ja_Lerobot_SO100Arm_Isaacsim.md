@@ -1,6 +1,6 @@
 ---
 description: このwikiでは、SO100 Arm Kitロボットアームを NVIDIA の Isaac Sim シミュレーションプラットフォームにインポートし、ROS2 と Python スクリプトを使用して制御する方法について説明します。
-title: Isaac Sim で SO100Arm Kit をインポートして制御する方法
+title: Isaac Sim での SO100Arm Kit
 keywords:
 - Lerobot
 - Huggingface
@@ -13,11 +13,11 @@ last_update:
   author: ZhuYaoHui
 ---
 
-# Isaac Sim 4.2 で SO100Arm Kit をインポートして制御する方法（4.2のみ対応）
+# Isaac Sim 4.2 で SO100Arm Kit をインポートして制御する方法（4.2のみ）
 
 ## はじめに
 
-[SO-100ARM](https://github.com/TheRobotStudio/SO-ARM100) は、[TheRobotStudio](https://www.therobotstudio.com/) が開始した完全オープンソースのロボットアームプロジェクトです。フォロワーアームとリーダーロボットアームが含まれており、詳細な3Dプリントファイルと操作ガイドも提供されています。[LeRobot](https://github.com/huggingface/lerobot/tree/main) は、PyTorch で実世界のロボティクス向けのモデル、データセット、ツールを提供することに取り組んでいます。その目的は、ロボティクスの参入障壁を下げ、誰もがデータセットと事前訓練済みモデルの共有に貢献し、その恩恵を受けられるようにすることです。
+[SO-100ARM](https://github.com/TheRobotStudio/SO-ARM100) は、[TheRobotStudio](https://www.therobotstudio.com/) によって開始された完全オープンソースのロボットアームプロジェクトです。フォロワーアームとリーダーロボットアームが含まれており、詳細な3Dプリントファイルと操作ガイドも提供されています。[LeRobot](https://github.com/huggingface/lerobot/tree/main) は、PyTorch で実世界のロボティクス用のモデル、データセット、ツールを提供することに取り組んでいます。その目的は、ロボティクスの参入障壁を下げ、誰もがデータセットと事前訓練済みモデルの共有に貢献し、恩恵を受けられるようにすることです。
 
 このwikiでは、SO100 Arm Kitロボットアームを NVIDIA の Isaac Sim シミュレーションプラットフォームにインポートし、ROS2 と Python スクリプトを使用して制御する方法について説明します。
 
@@ -52,30 +52,30 @@ SO-ARM100 と reComputer Jetson AI インテリジェントロボットキット
 | 通信方式 | UART | UART |
 | 制御方式 | PC | PC |
 
-## 部品表(BOM)
+## 部品表（BOM）
 
-| 部品 | 数量 | 含まれているか|
+| 部品 | 数量 | 含まれる|
 |--|--|--|
-| STS3215 サーボ1 | 12 | ✅ |
+| STS3215 Servo1 | 12 | ✅ |
 | モーター制御ボード | 2 | ✅ |
-| USB-Cケーブル 2本 | 1 | ✅ |
+| USB-C ケーブル 2本 | 1 | ✅ |
 | 電源2 | 2 | ✅ |
 | テーブルクランプ| 1 | ❌ |
 | アームの3Dプリント部品 | 1 | ❌ |
 
 :::caution
-3Dプリント部品とテーブルクランプは製品に含まれていません。ただし、SO-100ARMは詳細な[3DプリントSTLファイル](https://github.com/TheRobotStudio/SO-ARM100/tree/main/stl_files_for_3dprinting)と印刷パラメータを提供しています。さらに、[テーブルクランプの3Dプリント部品](https://makerworld.com/zh/models/908660)も提供しています。
+3Dプリント部品とテーブルクランプは製品に含まれていません。ただし、SO-100ARM は詳細な[3Dプリント STL ファイル](https://github.com/TheRobotStudio/SO-ARM100/tree/main/stl_files_for_3dprinting)とプリントパラメーターを提供しています。さらに、[テーブルクランプの3Dプリント部品](https://makerworld.com/zh/models/908660)も提供しています。
 :::
 
 ## 前提条件
 
-  1. [Lerobot SO100Armの基本的な使用方法チュートリアルに慣れ親しんでください](/lerobot_so100m)。
-  2. [チュートリアルに従ってIsaac Simをインストールしてください](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_workstation.html)
-  3. [チュートリアルに従ってROS2のインストールと設定を完了してください](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_ros.html)
+  1. [Lerobot SO100Arm 基本使用チュートリアルに慣れる](/ja/lerobot_so100m)。
+  2. [チュートリアルに従って Isaac Sim をインストールする](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_workstation.html)
+  3. [チュートリアルに従って ROS2 のインストールと設定を完了する](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_ros.html)
 
-## Lerobot環境のインストール
+## Lerobot 環境のインストール
 
-  **ステップ1. Lerobotプロジェクトをクローンする**
+  **ステップ 1. Lerobot プロジェクトをクローンする**
 
   ```bash
     cd ~/
@@ -83,30 +83,30 @@ SO-ARM100 と reComputer Jetson AI インテリジェントロボットキット
     cd lerobot
   ```
 
-  [Lerobot環境がチュートリアルに従ってインストールされていることを確認してください](/lerobot_so100m)
-  
-## URDFをIsaac Simにインポートする
+  [チュートリアルに従って Lerobot 環境をインストール](/ja/lerobot_so100m)していることを確認してください
 
-  **ステップ1. Isaac Simを開く**
+## URDF を Isaac Sim にインポートする
 
-  **Isaac SimがNVIDIAの[公式チュートリアル](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_workstation.html)に従ってインストールされ、[ROS2がインストールされ、基本的な環境設定が完了している](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_ros.html)ことを確認してください。下図に示すパラメータでIsaac Simインターフェースを開きます。**
+  **ステップ 1. Isaac Sim を開く**
+
+  **NVIDIA の[公式チュートリアル](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_workstation.html)に従って Isaac Sim がインストールされ、[ROS2 がインストールされ、基本環境設定が完了している](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_ros.html)ことを確認してください。下図に示すパラメーターで Isaac Sim インターフェースを開きます。**
   <div align="center">
       <img width={600}
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/open_isaac_sim.png" />
   </div>
 
-  **ステップ2. URDF Importerを使用する**
+  **ステップ 2. URDF Importer を使用する**
 
-  **Isaac SimツールバーでIsaac Utils → Workflows → URDF Importerを開きます**
+  **Isaac Sim ツールバーで Isaac Utils → Workflows → URDF Importer を開く**
 
   <div align="center">
       <img width={800}
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/isaacsim_tooltab.png" />
   </div>
 
-  **ステップ3. URDFをインポートする**
+  **ステップ 3. URDF をインポートする**
 
-  **デフォルトパラメータを保持し、Inputでファイルを参照し、クローンしたLerobotリポジトリから`/lerobot/SO-ARM100/URDF/SO_5DOF_ARM100_8j_URDF.SLDASM/urdf/SO_5DOF_ARM100_8j_URDF.SLDASM.urdf`のURDFをインポートします**
+  **デフォルトパラメーターを保持し、Input でファイルを参照し、クローンした Lerobot リポジトリの `/lerobot/SO-ARM100/URDF/SO_5DOF_ARM100_8j_URDF.SLDASM/urdf/SO_5DOF_ARM100_8j_URDF.SLDASM.urdf` から URDF をインポートします**
 
   <div align="center">
       <img width={600}
@@ -118,48 +118,48 @@ SO-ARM100 と reComputer Jetson AI インテリジェントロボットキット
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/urdf_file.png" />
   </div>
 
-  **これで、SO100ロボットアームがIsaac Simにインポートされたことが確認できます。**
+  **これで SO100 ロボットアームが Isaac Sim にインポートされたことが確認できます。**
 
   <div align="center">
       <img width={800}
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Isaac_sim_import_success.png" />
   </div>
 
-  **ステップ4. Physics要素を追加する**
+  **ステップ 4. 物理要素を追加する**
 
-  **Isaac Simツールバーで、Create → Physicsに移動し、`Physics Scene`と`Ground Plane`の両方を追加して物理環境と地面を設定します。**
+  **Isaac Sim ツールバーで、Create → Physics に移動し、`Physics Scene` と `Ground Plane` の両方を追加して物理環境と地面を設定します。**
 
   <div align="center">
       <img width={800}
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/import_physics.png" />
   </div>
 
- **ステップ5. `root_joint`の`Articulation Root`を削除する**
+ **ステップ 5. `root_joint` の `Articulation Root` を削除する**
 
-  **右側のStageパネルで`root_joint`を見つけます。それをクリックし、下のPropertiesでPhysicsの下にある`Articulation Root`を見つけ、右側の×をクリックしてこのルートを削除します。**
+  **右側の Stage パネルで `root_joint` を見つけます。それをクリックし、下の Properties で Physics の下にある `Articulation Root` を見つけ、右側の × をクリックしてこのルートを削除します。**
   <div align="center">
       <img width={800}
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/delete_root.png" />
   </div>
 
- **ステップ6. `root_joint`の`Articulation Root`を追加する**
+ **ステップ 6. `root_joint` の `Articulation Root` を追加する**
 
-  **Stageパネルで、SO100をクリックし、右クリックして、Add → Physics → Articulation Rootを選択します。**
+  **Stage パネルで SO100 をクリックし、右クリックして Add → Physics → Articulation Root を選択します。**
   <div align="center">
       <img width={800}
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/add_root.png" />
   </div>
 
-## Action Graphを追加する
+## Action Graph を追加する
 
-  **ステップ1. ツールバーで、Create → Visual Scriptingに移動し、Action Graphを追加します。**
+  **ステップ 1. ツールバーで Create → Visual Scripting に移動し、Action Graph を追加します。**
 
   <div align="center">
       <img width={800}
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/add_graph.png" />
   </div>
 
-  **ステップ2. Actionコンポーネントを追加する。**
+  **ステップ 2. Action Components を追加する。**
 
   **検索ボックスで、順番に追加します：On Playback Tick、Isaac Read Simulation Time、ROS2 Publish Joint State、Articulation Controller、ROS2 Subscribe Joint State。**
   <div align="center">
@@ -167,23 +167,23 @@ SO-ARM100 と reComputer Jetson AI インテリジェントロボットキット
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/add_graph_action.png" />
   </div>
 
-**この部分をより明確に理解するために、ビデオコンテンツに従ってアクション接続と基本パラメータ設定を実行してください。**
+**この部分をより明確に理解するために、ビデオコンテンツに従ってアクション接続と基本パラメーター設定を実行してください。**
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/buiqdmNQKwY?si=sHjysqfqxPVz-r3T&amp;start=92" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-  **ステップ3. 再生**
+  **ステップ 3. 再生**
 
-  **右側のPlayボタンをクリックしてアクションを正常に開始します。この時点で、`ros2 topic list`コマンドを使用してトピック情報を表示します。**
+  **右側の Play ボタンをクリックしてアクションを正常に開始します。この時点で、`ros2 topic list` コマンドを使用してトピック情報を表示します。**
   <div align="center">
       <img width={800}
       src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/ros2topic.png" />
   </div>
 
-## **ROS2 Pythonによるロボットアーム動作制御**
+## **ROS2 Python によるロボットアーム動作制御**
 
-**これで、ROS2環境で以下のPythonスクリプトを実行してロボットアームを制御できます。スクリプトファイルは`lerobot/lerobot/scripts/`の下に`control_motor.py`と`lerobot_publisher.py`として配置されています。**
+**これで、ROS2 環境で以下の Python スクリプトを実行してロボットアームを制御できます。スクリプトファイルは `lerobot/lerobot/scripts/` の下に `control_motor.py` と `lerobot_publisher.py` として配置されています。**
 
-**`control_motor.py`では、特定のサーボの角度を個別に送信でき、角度値は-πとπの間の範囲です。**
+**`control_motor.py` では、特定のサーボの角度を個別に送信でき、角度値は -π と π の間の範囲です。**
 
 <details>
 <summary>control_motor.py</summary>
@@ -222,12 +222,12 @@ SO-ARM100 と reComputer Jetson AI インテリジェントロボットキット
 
 </details>
 
-**`lerobot_publisher.py` はサーボに対してアクションコマンドを継続的に送信することを実装しています。**
+**`lerobot_publisher.py` は、サーボに継続的にアクションコマンドを送信することを実装します。**
 
 <details>
 <summary>lerobot_publisher.py</summary>
 
-  ```python
+```python
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import JointState
@@ -298,17 +298,17 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
-  ```
+```
 
-  </details>
+</details>
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/buiqdmNQKwY?si=3CizpKK3Nhj4Vlp9&amp;start=232" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 引用
 
-TheRobotStudio プロジェクト: [SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)
+TheRobotStudio Project: [SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)
 
-Huggingface プロジェクト: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
+Huggingface Project: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
 
 Dnsty: [Jetson Containers](https://github.com/dusty-nv/jetson-containers/tree/master/packages/robots/lerobot)
 
@@ -324,7 +324,7 @@ Dnsty: [Jetson Containers](https://github.com/dusty-nv/jetson-containers/tree/ma
 
 ## 技術サポート & 製品ディスカッション
 
-弊社製品をお選びいただき、ありがとうございます！弊社では、お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供しています。さまざまな好みやニーズに対応するため、複数のコミュニケーションチャンネルをご用意しています。
+弊社製品をお選びいただき、ありがとうございます！私たちは、お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルを用意しています。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>

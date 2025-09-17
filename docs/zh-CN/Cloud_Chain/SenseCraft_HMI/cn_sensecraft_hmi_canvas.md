@@ -22,7 +22,7 @@ import TabItem from '@theme/TabItem';
 
 本综合指南将引导您使用 Canvas 功能为您的 Seeed 设备创建专业显示界面。从基本形状和文本到实时数据小部件和预制模板，您将学习构建满足特定需求的自定义界面所需的一切知识。
 
-本文将以 [reTerminal E1002](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002/) 为例，说明如何在 SenseCraft HMI 平台上使用此功能。
+本文将以 [reTerminal E1002](https://wiki.seeedstudio.com/cn/getting_started_with_reterminal_e1002/) 为例，说明如何在 SenseCraft HMI 平台上使用此功能。
 
 ## Canvas 入门
 
@@ -893,7 +893,7 @@ SenseCraft HMI Canvas 包含 AI 驱动的布局生成器：
 此功能非常适合快速创建布局而无需从头开始。
 
 :::tip
-有关使用此部分的详细说明，请参考**[在 SenseCraft HMI 中使用 AI 生成](https://wiki.seeedstudio.com/sensecraft_hmi_ai_generation/)**。
+有关使用此部分的详细说明，请参考**[在 SenseCraft HMI 中使用 AI 生成](https://wiki.seeedstudio.com/cn/sensecraft_hmi_ai_generation/)**。
 :::
 
 ## 部署到您的设备
@@ -981,7 +981,7 @@ SenseCraft HMI 中的画布功能为您的 Seeed 设备创建自定义界面和�
 ## 资源
 
 - [SenseCraft HMI 平台](https://sensecraft.seeed.cc/hmi)
-- [兼容设备 - reTerminal E 系列](https://wiki.seeedstudio.com/reterminal_e10xx_main_page/)
+- [兼容设备 - reTerminal E 系列](https://wiki.seeedstudio.com/cn/reterminal_e10xx_main_page/)
 
 ## 技术支持与产品讨论
 

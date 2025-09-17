@@ -11,7 +11,7 @@ last_update:
 ---
 # Seeed Studio XIAO SAMD 21 DAPLink
 
-现在，我们已经**开发了运行在您的 Arduino 开发板**（*SAMD 系列*）上的 DAPLink 固件，例如 [Wio Terminal](https://www.seeedstudio.com/Wio-Terminal-p-4509.html) 和 [Seeeduino Xiao](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html)，这样您就可以以最经济高效的方式上传和调试支持 DAPLink 的开发板！
+现在，我们已经**开发了运行在您的 Arduino 开发板**（*SAMD 系列*）上的 DAPLink 固件，例如 [Wio Terminal](https://www.seeedstudio.com/Wio-Terminal-p-4509.html) 和 [Seeeduino Xiao](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html)，这样您就可以以最具成本效益的方式上传和调试支持 DAPLink 的开发板！
 
 ## 特性
 
