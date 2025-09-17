@@ -702,7 +702,7 @@ sudo ./rpiboot -d recovery
 
 ## Q9: 为什么安装 reTerminal 驱动程序后蜂鸣器、LED 和按钮不工作？
 
-reTerminal 配备了 2 个版本的 I/O 扩展芯片。旧版本使用 MCP23008，新版本使用 PCA9554。如果您[手动安装了 reTerminal 驱动程序](https://wiki.seeedstudio.com/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)，请检查以下内容。
+reTerminal 配备了 2 个版本的 I/O 扩展芯片。旧版本使用 MCP23008，新版本使用 PCA9554。如果您[手动安装了 reTerminal 驱动程序](https://wiki.seeedstudio.com/cn/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)，请检查以下内容。
 
 首先检查您的 reTerminal 上安装了哪个芯片。
 
@@ -730,7 +730,7 @@ reTerminal 配备了 2 个版本的 I/O 扩展芯片。旧版本使用 MCP23008�
 
 - **步骤 1.** 将 [Ubuntu Server 21.10](https://ubuntu.com/download/raspberry-pi/thank-you?version=21.10&architecture=server-arm64+raspi) 刷写到 reTerminal eMMC 存储
 
-**注意：** 请参考[此处](https://wiki.seeedstudio.com/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)的刷写说明。打开 **Raspberry Pi Imager** 后，导航到 `CHOOSE OS > Use custom` 并选择上述镜像进行刷写
+**注意：** 请参考[此处](https://wiki.seeedstudio.com/cn/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)的刷写说明。打开 **Raspberry Pi Imager** 后，导航到 `CHOOSE OS > Use custom` 并选择上述镜像进行刷写
 
 - **步骤 2.** SSH 连接到 reTerminal 并逐一运行以下命令。确保使用 **ubuntu** 作为用户名，**ubuntu** 作为密码
 
@@ -762,7 +762,7 @@ sudo reboot
 
 ## Q11: 安装 Raspberry Pi OS Bullseye 后屏幕方向不正确
 
-- **步骤 1.** 将 **Raspberry Pi OS Bullseye** 刷写到 reTerminal eMMC 后，按照[此指南](https://wiki.seeedstudio.com/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)安装必要的驱动程序
+- **步骤 1.** 将 **Raspberry Pi OS Bullseye** 刷写到 reTerminal eMMC 后，按照[此指南](https://wiki.seeedstudio.com/cn/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)安装必要的驱动程序
 
 - **步骤 2.** 在 **.config** 目录下创建一个名为 **monitors.xml** 的新文件
 

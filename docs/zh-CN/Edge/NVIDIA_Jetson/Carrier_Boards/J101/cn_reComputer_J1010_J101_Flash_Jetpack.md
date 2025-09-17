@@ -101,7 +101,7 @@ no_comments: false # for Disqus
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/5.png" /></div>
 
 :::caution
-Jetson-Nano 上的 SPI 接口默认与 GPIO 复用且未启用。请参考[**此指南**](/enable_spi_interface_on_jetsonnano)了解如何启用它。
+Jetson-Nano 上的 SPI 接口默认与 GPIO 复用且未启用。请参考[**此指南**](/cn/enable_spi_interface_on_jetsonnano)了解如何启用它。
 :::
 
 ## 通过 NVIDIA SDK Manager 刷写 JetPack 操作系统
@@ -160,7 +160,7 @@ reComputer J1010 配备了 **NVIDIA Jetson Nano 4GB 模块**，所以我们可�
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/9.png" /></div>
     经过实际测试，安装完整套 SDK 组件后，eMMC 空间只剩下约 500MB。
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/10_1.jpg" /></div>
-    如果您想了解如何解决容量不足的问题，请参考[故障排除](https://wiki.seeedstudio.com/reComputer_Jetson_Series_Initiation/#q1-the-remaining-space-in-the-emmc-in-the-received-recomputer-jetson-is-only-about-2gb-how-can-i-solve-the-problem-of-insufficient-space)。
+    如果您想了解如何解决容量不足的问题，请参考[故障排除](https://wiki.seeedstudio.com/cn/reComputer_Jetson_Series_Initiation/#q1-the-remaining-space-in-the-emmc-in-the-received-recomputer-jetson-is-only-about-2gb-how-can-i-solve-the-problem-of-insufficient-space)。
 
 如果您希望 SDK Manager 将所有文件下载到默认路径以外的位置，请转到屏幕底部的下载和安装选项，然后选择您希望使用的路径。
 
@@ -370,7 +370,7 @@ sudo ./nvmflash.sh --showlogs
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/35.jpg" /></div>
 
 :::note
-如果需要更多存储空间，我们可以使用 SD 卡来扩展容量，或者将系统烧录到 SD 卡上，您可以参考我们推荐的解决方案[在 SD 卡上刷写系统](https://wiki.seeedstudio.com/J1010_Boot_From_SD_Card/)
+如果需要更多存储空间，我们可以使用 SD 卡来扩展容量，或者将系统烧录到 SD 卡上，您可以参考我们推荐的解决方案[在 SD 卡上刷写系统](https://wiki.seeedstudio.com/cn/J1010_Boot_From_SD_Card/)
 :::
 
 ## 资源

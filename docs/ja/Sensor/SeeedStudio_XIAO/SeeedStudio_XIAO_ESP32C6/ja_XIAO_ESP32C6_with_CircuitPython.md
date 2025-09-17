@@ -169,7 +169,7 @@ Run-->Configure Interpreterに移動し、Thonnyオプションのインター�
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c6_circuitpython/5.png" /></div>
 
-- 詳細については[ハードウェア概要](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/#hardware-overview)を参照してください
+- 詳細については[ハードウェア概要](https://wiki.seeedstudio.com/ja/xiao_esp32c6_getting_started/#hardware-overview)を参照してください
 - [Seeed Studio XIAO ESP32C6 回路図](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO-ESP32-C6_v1.0_SCH_PDF_24028.pdf)
 
 ## XIAO ESP32C6 での CircuitPython 入門

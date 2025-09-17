@@ -45,7 +45,7 @@ ReSpeakerシリーズは、音声インターフェースが日常的な人間�
 
 ### **ドキュメント**
 
-- [詳細なWikiドキュメント](https://wiki.seeedstudio.com/ReSpeaker/)
+- [詳細なWikiドキュメント](https://wiki.seeedstudio.com/ja/ReSpeaker/)
 - [GitHubリポジトリ](https://github.com/respeaker)
 - [コミュニティフォーラム](https://forum.seeedstudio.com/)
 

@@ -38,7 +38,7 @@ last_update:
 
 SenseCraft HMI 目前支持以下 Seeed Studio 设备：
 
-### [reTerminal E 系列](https://wiki.seeedstudio.com/reterminal_e10xx_main_page/)
+### [reTerminal E 系列](https://wiki.seeedstudio.com/cn/reterminal_e10xx_main_page/)
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/24.jpg" style={{width:500, height:'auto'}}/></div>
@@ -47,7 +47,7 @@ SenseCraft HMI 目前支持以下 Seeed Studio 设备：
 
 reTerminal E 系列电子纸显示器将强大的计算能力与电子纸显示技术相结合，非常适合数字标牌、信息仪表板和交互式显示应用。该系列包括两个具有不同显示能力的型号：
 
-#### [reTerminal E1001](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1001/)
+#### [reTerminal E1001](https://wiki.seeedstudio.com/cn/getting_started_with_reterminal_e1001/)
 
 reTerminal E1001 配备 7.5 英寸单色电子纸显示屏，具有 4 级灰度功能。凭借 800×480 分辨率，它提供清晰的文本和清楚的图像，同时消耗最少的电力。单色显示屏非常适合文本易读性和电池寿命是优先考虑的应用。
 
@@ -59,7 +59,7 @@ reTerminal E1001 配备 7.5 英寸单色电子纸显示屏，具有 4 级灰度�
 - **兼容流行的软件平台**
 - **灵活的硬件和软件定制**
 
-#### [reTerminal E1002](https://wiki.seeedstudio.com/getting_started_with_reterminal_e1002/)
+#### [reTerminal E1002](https://wiki.seeedstudio.com/cn/getting_started_with_reterminal_e1002/)
 
 reTerminal E1002 配备鲜艳的 7.3 英寸六色电子纸显示屏，采用 ACeP（高级彩色电子纸）技术。这款彩色显示屏提供与电子纸技术相同的功耗效率优势，同时允许使用多种颜色创建更具视觉吸引力的内容，使其非常适合视觉区分和美观外观很重要的应用。
 
@@ -91,23 +91,23 @@ reTerminal E1002 配备鲜艳的 7.3 英寸六色电子纸显示屏，采用 ACe
 
 SenseCraft HMI 提供多个专门的功能，每个功能都针对不同的显示需求而设计：
 
-### [AI 生成功能](https://wiki.seeedstudio.com/sensecraft_hmi_ai_generation/)
+### [AI 生成功能](https://wiki.seeedstudio.com/cn/sensecraft_hmi_ai_generation/)
 
 通过简单地用自然语言描述您想要的内容来创建美观的布局和图像，无需设计技能。
 
-### [图库功能](https://wiki.seeedstudio.com/sensecraft_hmi_gallery/)
+### [图库功能](https://wiki.seeedstudio.com/cn/sensecraft_hmi_gallery/)
 
 将您的设备转换为数字相框，具有可自定义的图像显示、过渡效果和视觉效果。
 
-### [画布功能](https://wiki.seeedstudio.com/sensecraft_hmi_canvas/)
+### [画布功能](https://wiki.seeedstudio.com/cn/sensecraft_hmi_canvas/)
 
 设计自定义界面和仪表板，将静态元素与来自各种来源的动态数据相结合。
 
-### [RSS 功能](https://wiki.seeedstudio.com/sensecraft_hmi_rss/)
+### [RSS 功能](https://wiki.seeedstudio.com/cn/sensecraft_hmi_rss/)
 
 使用 RSS 源显示来自新闻媒体、博客和其他信息来源的自动更新内容。
 
-### [网页功能](https://wiki.seeedstudio.com/sensecraft_hmi_web/)
+### [网页功能](https://wiki.seeedstudio.com/cn/sensecraft_hmi_web/)
 
 直接在您的设备上显示网页内容，非常适合仪表板、文档或监控系统。
 

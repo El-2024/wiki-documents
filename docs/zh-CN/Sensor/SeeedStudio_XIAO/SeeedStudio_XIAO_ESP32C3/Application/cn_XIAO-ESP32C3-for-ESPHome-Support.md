@@ -51,7 +51,7 @@ last_update:
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-" target="_blank" rel="noopener noreferrer">
+            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/home_assistant_topic/#-devices-for-home-assistant-" target="_blank" rel="noopener noreferrer">
             <strong><span><font color={'FFFFFF'} size={"4"}> 查看更多 🖱️</font></span></strong>
             </a>
         </div></td>
@@ -69,7 +69,7 @@ last_update:
 
 ### 安装 Home Assistant
 
-确保您已经安装并运行了 Home Assistant。这里有多个介绍如何将 Home Assistant 刷入[产品](https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-)的wiki。我使用的是由Raspberry Pi CM4供电的reRouter，所以我可以[直接使用官方版本将操作系统刷入reRouter](https://www.home-assistant.io/installation/raspberrypi)。
+确保您已经安装并运行了 Home Assistant。这里有多个介绍如何将 Home Assistant 刷入[产品](https://wiki.seeedstudio.com/cn/home_assistant_topic/#-devices-for-home-assistant-)的wiki。我使用的是由Raspberry Pi CM4供电的reRouter，所以我可以[直接使用官方版本将操作系统刷入reRouter](https://www.home-assistant.io/installation/raspberrypi)。
 
 ### 在 Home Assistant 上安装 ESPHome
 
@@ -730,7 +730,7 @@ PIR传感器是一种用于检测人体运动的红外传感器。这款Grove数
 
 ##### 设置配置
 
-- **步骤1.** 将[Grove - 数字PIR传感器](https://wiki.seeedstudio.com/Grove-Digital-PIR-Sensor/)连接到Seeed Studio XIAO扩展底板的D7连接器上
+- **步骤1.** 将[Grove - 数字PIR传感器](https://wiki.seeedstudio.com/cn/Grove-Digital-PIR-Sensor/)连接到Seeed Studio XIAO扩展底板的D7连接器上
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-full_function/42.jpg"style={{width:700, height:'auto'}}/></div>
 
@@ -905,7 +905,7 @@ binary_sensor:
 ## ✨ 贡献者项目
 
 - 本项目由 Seeed Studio [贡献者项目](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479)支持。
-- 感谢 [Zachary 的努力](https://github.com/Seeed-Studio/wiki-documents/issues/603)，您的工作将会被[展示](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- 感谢 [Zachary 的努力](https://github.com/Seeed-Studio/wiki-documents/issues/603)，您的工作将会被[展示](https://wiki.seeedstudio.com/cn/Honorary-Contributors/)。
 
 ## 技术支持与产品讨论
 

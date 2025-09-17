@@ -157,7 +157,7 @@ reComputer J1020 配备了 **NVIDIA Jetson Nano 4GB 模块**，所以我们可�
     经过实际测试，安装完整套 SDK 组件后，eMMC 空间只剩下约 500MB。
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/10_1.jpg" /></div>
 
-    如果您想了解如何解决容量不足的问题，请参考[故障排除](https://wiki.seeedstudio.com/reComputer_Jetson_Series_Initiation/#q1-the-remaining-space-in-the-emmc-in-the-received-recomputer-jetson-is-only-about-2gb-how-can-i-solve-the-problem-of-insufficient-space)。
+    如果您想了解如何解决容量不足的问题，请参考[故障排除](https://wiki.seeedstudio.com/cn/reComputer_Jetson_Series_Initiation/#q1-the-remaining-space-in-the-emmc-in-the-received-recomputer-jetson-is-only-about-2gb-how-can-i-solve-the-problem-of-insufficient-space)。
 
 如果您希望 SDK Manager 将所有文件下载到默认路径以外的位置，请转到屏幕底部的下载和安装选项，然后选择您希望使用的路径。
 
@@ -312,7 +312,7 @@ sudo ./flash.sh jetson-nano-devkit-emmc mmcblk0p1
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/35.jpg" /></div>
 
 !!!Note
-    如果需要更多存储空间，我们可以使用 SD 卡来扩展容量，或者将系统烧录到 SD 卡上，您可以参考我们推荐的解决方案 [在 SD 卡上刷写系统](https://wiki.seeedstudio.com/J101_Enable_SD_Card/)
+    如果需要更多存储空间，我们可以使用 SD 卡来扩展容量，或者将系统烧录到 SD 卡上，您可以参考我们推荐的解决方案 [在 SD 卡上刷写系统](https://wiki.seeedstudio.com/cn/J101_Enable_SD_Card/)
 
 ## 资源
 
