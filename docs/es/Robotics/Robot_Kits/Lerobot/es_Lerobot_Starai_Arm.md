@@ -234,6 +234,7 @@ Recuerda remover el usb, de lo contrario la interfaz no será detectada.
 :::
 
 Por ejemplo：
+
 1. Ejemplo de salida al identificar el puerto del brazo líder (por ejemplo, `/dev/tty.usbmodem575E0031751` en Mac, o posiblemente `/dev/ttyUSB0` en Linux):
 2. Ejemplo de salida al identificar el puerto del brazo seguidor (por ejemplo, `/dev/tty.usbmodem575E0032081` en Mac, o posiblemente `/dev/ttyUSB1` en Linux):
 
@@ -278,6 +279,7 @@ Finalmente, usa el comando chmod.
 ```sh
 sudo chmod 777 /dev/ttyUSB*
 ```
+
 :::
 
 Es posible que necesites dar acceso a los puertos USB ejecutando:
@@ -417,7 +419,6 @@ El comando de operación remota detectará automáticamente los siguientes pará
 
 Después de que el programa inicie, la Tecnología de Bloqueo Flotante permanece funcional.
 
-
 ## Agregar cámaras
 
 <div class="video-container">
@@ -491,7 +492,9 @@ python -m lerobot.teleoperate \
     --teleop.left_arm_port=/dev/ttyUSB0 \
     --teleop.right_arm_port=/dev/ttyUSB2 \
     --teleop.id=bi_starai_leader \
-    --display_data=true```
+    --display_data=true
+```
+
 </details>
 
 :::tip
@@ -673,7 +676,6 @@ En Linux, si las teclas de flecha izquierda y derecha y la tecla escape no tiene
 Una vez que estés familiarizado con la grabación de datos, puedes crear un conjunto de datos más grande para entrenamiento. Una buena tarea inicial es agarrar un objeto en diferentes posiciones y colocarlo en una caja pequeña. Recomendamos grabar al menos 50 episodios, con 10 episodios por ubicación. Mantén la cámara fija y mantén un comportamiento de agarre consistente durante toda la grabación. Además, asegúrate de que el objeto que estás manipulando sea visible en la cámara. Una buena regla general es que deberías poder completar la tarea mirando solo la imagen de la cámara.
 :::
 
-
 ## Visualizar el conjunto de datos
 
 :::tip
@@ -712,6 +714,7 @@ python -m lerobot.replay \
     --dataset.repo_id=starai/record-test \
     --dataset.episode=0 # choose the episode you want to replay
 ```
+
 <details>
 <summary> Brazo Dual </summary>
 
@@ -724,6 +727,7 @@ python -m lerobot.replay \
     --dataset.repo_id=starai/record-test_bi_arm \
     --dataset.episode=0 # choose the episode you want to replay
 ```
+
 </details>
 
 ## Entrenar política
@@ -754,10 +758,12 @@ python -m lerobot.scripts.train \
   --wandb.enable=False \
   --policy.repo_id=starai/my_policy
 ```
+
 </details>
 
 1. Proporcionamos el conjunto de datos como parámetro: `dataset.repo_id=starai/record-test`.
-2. Cargaremos la configuración desde [`configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py). Importante, esta política se adaptará automáticamente a los estados del motor del robot, las acciones del motor y el número de cámaras, y se guardará en tu conjunto de datos.3. Proporcionamos `wandb.enable=true` para usar [Weights and Biases](https://docs.wandb.ai/quickstart) para visualizar gráficos de entrenamiento. Esto es opcional, pero si lo usas, asegúrate de haber iniciado sesión ejecutando `wandb login`.
+2. Cargaremos la configuración desde [`configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py). Importante, esta política se adaptará automáticamente a los estados del motor del robot, las acciones del motor y el número de cámaras, y se guardará en tu conjunto de datos.
+3. Proporcionamos `wandb.enable=true` para usar [Weights and Biases](https://docs.wandb.ai/quickstart) para visualizar gráficos de entrenamiento. Esto es opcional, pero si lo usas, asegúrate de haber iniciado sesión ejecutando `wandb login`.
 
 Reanudar el entrenamiento desde un checkpoint específico.
 
@@ -798,6 +804,7 @@ python -m lerobot.record  \
     --dataset.single_task="test" \
     --policy.path=outputs/train/act_bi_viola_test/checkpoints/last/pretrained_model
 ```
+
 </details>
 
 Como puedes ver, esto es casi lo mismo que el comando usado previamente para grabar el conjunto de datos de entrenamiento, con algunos cambios:
@@ -833,7 +840,6 @@ Como puedes ver, esto es casi lo mismo que el comando usado previamente para gra
 - El `num-episodes` en el comando de recolección de datos debe asegurar suficiente recolección de datos y no debe pausarse manualmente a la mitad. Esto es porque la media y varianza de los datos se calculan solo después de que se completa la recolección de datos, lo cual es necesario para el entrenamiento.
 
 - Si el programa indica que no puede leer los datos de imagen de la cámara USB, por favor asegúrate de que la cámara USB no esté conectada a través de un Hub. La cámara USB debe estar conectada directamente al dispositivo para asegurar velocidades rápidas de transmisión de imagen.
-
 
 ## Cita
 

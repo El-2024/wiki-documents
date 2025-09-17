@@ -234,6 +234,7 @@ usbを取り外すことを忘れないでください。そうしないとイ�
 :::
 
 例：
+
 1. リーダーアームのポートを識別する際の出力例（例：Macでは `/dev/tty.usbmodem575E0031751`、Linuxでは `/dev/ttyUSB0` の可能性があります）：
 2. フォロワーアームのポートを識別する際の出力例（例：Macでは `/dev/tty.usbmodem575E0032081`、Linuxでは `/dev/ttyUSB1` の可能性があります）：
 
@@ -278,6 +279,7 @@ sudo apt remove brltty
 ```sh
 sudo chmod 777 /dev/ttyUSB*
 ```
+
 :::
 
 以下を実行してUSBポートへのアクセス権限を付与する必要がある場合があります：
@@ -417,7 +419,6 @@ python -m lerobot.teleoperate \
 
 プログラム開始後、Hover Lock Technologyは機能し続けます。
 
-
 ## カメラの追加
 
 <div class="video-container">
@@ -491,7 +492,9 @@ python -m lerobot.teleoperate \
     --teleop.left_arm_port=/dev/ttyUSB0 \
     --teleop.right_arm_port=/dev/ttyUSB2 \
     --teleop.id=bi_starai_leader \
-    --display_data=true```
+    --display_data=true
+```
+
 </details>
 
 :::tip
@@ -673,7 +676,6 @@ Linuxでは、データ記録中に左右の矢印キーとエスケープキー
 データ記録に慣れたら、トレーニング用により大きなデータセットを作成できます。良い開始タスクは、異なる位置でオブジェクトを掴み、小さな箱に置くことです。少なくとも50エピソード、位置ごとに10エピソードを記録することをお勧めします。カメラを固定し、記録全体を通して一貫した掴み動作を維持してください。また、操作しているオブジェクトがカメラに映っていることを確認してください。良い経験則は、カメラ画像だけを見てタスクを完了できることです。
 :::
 
-
 ## データセットの可視化
 
 :::tip
@@ -712,6 +714,7 @@ python -m lerobot.replay \
     --dataset.repo_id=starai/record-test \
     --dataset.episode=0 # choose the episode you want to replay
 ```
+
 <details>
 <summary> デュアルアーム </summary>
 
@@ -724,6 +727,7 @@ python -m lerobot.replay \
     --dataset.repo_id=starai/record-test_bi_arm \
     --dataset.episode=0 # choose the episode you want to replay
 ```
+
 </details>
 
 ## ポリシーのトレーニング
@@ -754,10 +758,12 @@ python -m lerobot.scripts.train \
   --wandb.enable=False \
   --policy.repo_id=starai/my_policy
 ```
+
 </details>
 
 1. データセットをパラメータとして提供します：`dataset.repo_id=starai/record-test`。
-2. [`configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py)から設定を読み込みます。重要なことに、このポリシーはロボットのモーター状態、モーターアクション、カメラ数に自動的に適応し、データセットに保存されます。3. トレーニングチャートを可視化するために[Weights and Biases](https://docs.wandb.ai/quickstart)を使用する場合は、`wandb.enable=true`を提供します。これはオプションですが、使用する場合は`wandb login`を実行してログインしていることを確認してください。
+2. [`configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py)から設定を読み込みます。重要なことに、このポリシーはロボットのモーター状態、モーターアクション、カメラ数に自動的に適応し、データセットに保存されます。
+3. トレーニングチャートを可視化するために[Weights and Biases](https://docs.wandb.ai/quickstart)を使用する場合は、`wandb.enable=true`を提供します。これはオプションですが、使用する場合は`wandb login`を実行してログインしていることを確認してください。
 
 特定のチェックポイントからトレーニングを再開します。
 
@@ -798,6 +804,7 @@ python -m lerobot.record  \
     --dataset.single_task="test" \
     --policy.path=outputs/train/act_bi_viola_test/checkpoints/last/pretrained_model
 ```
+
 </details>
 
 ご覧のとおり、これは以前にトレーニングデータセットを記録するために使用したコマンドとほぼ同じですが、いくつかの変更があります：
@@ -833,7 +840,6 @@ python -m lerobot.record  \
 - データ収集コマンドの`num-episodes`は十分なデータ収集を確保し、途中で手動で一時停止しないでください。これは、データの平均と分散がデータ収集完了後にのみ計算されるためで、これはトレーニングに必要です。
 
 - プログラムがUSBカメラの画像データを読み取れないというプロンプトが表示される場合は、USBカメラがHubを介して接続されていないことを確認してください。USBカメラは高速画像転送レートを確保するために、デバイスに直接接続する必要があります。
-
 
 ## 引用
 
