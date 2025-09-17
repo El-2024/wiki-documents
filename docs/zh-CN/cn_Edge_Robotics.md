@@ -253,7 +253,7 @@ last_update:
   <span className="text">SO100 机械臂与 IsaacSim</span>
   <span className="tag recommended">New</span>
 </a>
-    <a href="//training_soarm101_policy_with_isaacLab/" className="nav-item">
+    <a href="/training_soarm101_policy_with_isaacLab/" className="nav-item">
     <span className="text">So Arm 强化学习</span>
     <span className="tag recommended">New</span>
     </a>
