@@ -169,7 +169,7 @@ REPLの探索を開始する場所を教えてくれる*help()*でREPLと対話�
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/6.png" /></div>
 
-- 詳細については[ハードウェア概要](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/#hardware-overview)を参照してください
+- 詳細については[ハードウェア概要](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/#hardware-overview)を参照してください
 - [Seeed Studio XIAO ESP32C3回路図](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf)
 
 ## XIAO ESP32C3でのCircuitPython入門

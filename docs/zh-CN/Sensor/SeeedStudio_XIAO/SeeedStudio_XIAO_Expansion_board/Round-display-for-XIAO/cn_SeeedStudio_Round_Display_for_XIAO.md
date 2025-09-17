@@ -93,7 +93,7 @@ Seeed Studio XIAO 圆形显示屏是一款与所有 XIAO 开发板兼容的扩�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/round-pinout.png" style={{width:800, height:'auto'}}/></div>
 
-自2023年4月7日起，改进后的圆形显示屏增加了一个2位开关来控制屏幕背光和电池电压读取。用户可以自由选择是否使用该引脚或释放它。点击[这里](https://wiki.seeedstudio.com/seeedstudio_round_display_usage/#ke-button--gpio)阅读更多详细信息。
+自2023年4月7日起，改进后的圆形显示屏增加了一个2位开关来控制屏幕背光和电池电压读取。用户可以自由选择是否使用该引脚或释放它。点击[这里](https://wiki.seeedstudio.com/cn/seeedstudio_round_display_usage/#ke-button--gpio)阅读更多详细信息。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/round-display-v1.1-pinout.png" style={{width:800, height:'auto'}}/></div>
 
@@ -161,7 +161,7 @@ Round Display 的推荐方向是：当您面对 Round Display 时，XIAO 的 Typ
 要使用 Round Display，我们需要对 XIAO 系列进行编程。推荐的编程工具是 Arduino IDE，您需要为 XIAO 配置 Arduino 环境并添加板载包。
 
 :::tip
-如果这是您第一次使用 Arduino，我们强烈建议您参考 [Arduino 入门指南](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)。
+如果这是您第一次使用 Arduino，我们强烈建议您参考 [Arduino 入门指南](https://wiki.seeedstudio.com/cn/Getting_Started_with_Arduino/)。
 :::
 
 #### 步骤 1. 根据您的操作系统下载并安装稳定版本的 Arduino IDE
@@ -176,15 +176,15 @@ Round Display 的推荐方向是：当您面对 Round Display 时，XIAO 的 Typ
 
 #### 步骤 3. 为您正在使用的 XIAO 配置 Arduino IDE
 
-- 如果您想在后续例程中使用 **Seeed Studio XIAO RP2350**，请参考 **[此教程](https://wiki.seeedstudio.com/getting-started-xiao-rp2350/)** 完成添加。
+- 如果您想在后续例程中使用 **Seeed Studio XIAO RP2350**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/getting-started-xiao-rp2350/)** 完成添加。
 
-- 如果您想在后续例程中使用 **Seeed Studio XIAO nRF52840**，请参考 **[此教程](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup)** 完成添加。
+- 如果您想在后续例程中使用 **Seeed Studio XIAO nRF52840**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/XIAO_BLE/#software-setup)** 完成添加。
 
-- 如果您想在后续例程中使用 **Seeed Studio XIAO ESP32C3**，请参考 **[此教程](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)** 完成添加。
+- 如果您想在后续例程中使用 **Seeed Studio XIAO ESP32C3**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/XIAO_ESP32C3_Getting_Started#software-setup)** 完成添加。
 
-- 如果您想在后续例程中使用 **Seeed Studio XIAO ESP32C6**，请参考 **[此教程](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/#software-preparation)** 完成添加。
+- 如果您想在后续例程中使用 **Seeed Studio XIAO ESP32C6**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32c6_getting_started/#software-preparation)** 完成添加。
 
-- 如果您想在后续例程中使用 **Seeed Studio XIAO ESP32S3**，请参考 **[此教程](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
+- 如果您想在后续例程中使用 **Seeed Studio XIAO ESP32S3**，请参考 **[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started#software-preparation)** 完成添加。
 
 #### 步骤 4. 安装图形库和屏幕驱动库
 
@@ -216,9 +216,9 @@ Round Display 的推荐方向是：当您面对 Round Display 时，XIAO 的 Typ
 
 从上面的教程中我们可以看出，Round Display 主要使用 **LVGL**、**TFT_eSPI** 和 **Arduino GFX** 库。为了节省篇幅，我们将以绘制表盘为例，分别介绍 **LVGL** 和 **TFT_eSPI** 库的使用。
 
-- 您可以点击**[这里](https://wiki.seeedstudio.com/using_lvgl_and_tft_on_round_display#common-interfaces-for-tft-library)**了解 **TFT_eSPI** 库的接口和使用方法。
+- 您可以点击**[这里](https://wiki.seeedstudio.com/cn/using_lvgl_and_tft_on_round_display#common-interfaces-for-tft-library)**了解 **TFT_eSPI** 库的接口和使用方法。
 
-- 您可以点击**[这里](https://wiki.seeedstudio.com/using_lvgl_and_tft_on_round_display#common-interfaces-for-lvgl-library)**了解 **LVGL** 库的接口和使用方法。
+- 您可以点击**[这里](https://wiki.seeedstudio.com/cn/using_lvgl_and_tft_on_round_display#common-interfaces-for-lvgl-library)**了解 **LVGL** 库的接口和使用方法。
 
 - 您可以点击**[这里](https://github.com/moononournation/Arduino_GFX)**了解 **Arduino GFX** 库的接口和使用方法。
 
@@ -357,7 +357,7 @@ A: 请检查圆形显示屏的开关是否打开。如果您使用的是XIAO ESP
 
 A: 这不会产生冲突。不同的SD卡槽通过片选控制，如果您想使用Sense上的microSD卡槽，片选引脚应该是 **21**，如果您想使用圆形显示屏上的microSD卡槽，片选引脚应该是 **D2**。
 
-我们在S3 Sense相机教程中有同时使用硬件和microSD卡的[示例](https://wiki.seeedstudio.com/xiao_esp32s3_camera_usage/#project-i-making-a-handheld-camera)。
+我们在S3 Sense相机教程中有同时使用硬件和microSD卡的[示例](https://wiki.seeedstudio.com/cn/xiao_esp32s3_camera_usage/#project-i-making-a-handheld-camera)。
 
 ### Q3: 为什么我的XIAO RP2040在使用圆形显示屏的HardwareTest代码时出现非常奇怪的C++错误？
 

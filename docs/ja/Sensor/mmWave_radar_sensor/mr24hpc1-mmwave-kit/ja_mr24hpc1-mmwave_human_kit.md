@@ -106,9 +106,9 @@ Home Assistant のインストール方法を学びたい場合は、[公式チ�
 
 Seeed Studio の一部の製品について Home Assistant のインストール方法も書いていますので、参照してください。
 
-- [ODYSSEY-X86 での Home Assistant 入門](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant/)
-- [reTerminal での Home Assistant 入門](https://wiki.seeedstudio.com/reTerminal_Home_Assistant/)
-- [LinkStar H68K/reRouter CM4 での Home Assistant 入門](https://wiki.seeedstudio.com/h68k-ha-esphome/)
+- [ODYSSEY-X86 での Home Assistant 入門](https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant/)
+- [reTerminal での Home Assistant 入門](https://wiki.seeedstudio.com/ja/reTerminal_Home_Assistant/)
+- [LinkStar H68K/reRouter CM4 での Home Assistant 入門](https://wiki.seeedstudio.com/ja/h68k-ha-esphome/)
 
 さらに、XIAO ESP32C3 は、Home Assistant にアクセスするためにオープンソースプロジェクト ESPHome に依存しているため、**Add-Ons** に **ESPHome** サービスもインストールする必要があります。
 
@@ -350,9 +350,9 @@ Groveモジュールを取り付けたい場合は、以下の画像を参考に
 
 このキットは主にスマートホームの方向性に向けられており、二次開発の内容については詳しく説明しませんが、二次開発の情報と必要になる可能性のあるコンテンツを提供します。参照してください。
 
-- 内蔵MR24HPC1モジュールに関するWiki：[24GHz mmWave Sensor - Human Static Presence Module Lite (MR24HPC1)](https://wiki.seeedstudio.com/Radar_MR24HPC1)
+- 内蔵MR24HPC1モジュールに関するWiki：[24GHz mmWave Sensor - Human Static Presence Module Lite (MR24HPC1)](https://wiki.seeedstudio.com/ja/Radar_MR24HPC1)
 
-- 内蔵XIAO ESP32C3開発資料とハンズオンWiki：[Getting Started with Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/)
+- 内蔵XIAO ESP32C3開発資料とハンズオンWiki：[Getting Started with Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/)
 
 ### ESPHomeの二次開発
 
@@ -366,7 +366,7 @@ Groveモジュールを取り付けたい場合は、以下の画像を参考に
 
 このコードフレームワークの使用については、プロジェクトのexamplesフォルダ下の[**mr24hpc1.yaml**](https://github.com/limengdu/mmwave-kit-external-components/blob/main/example/mr24hpc1.yaml)ファイルを参照できます。このファイルはESPHomeのサンプルyamlファイルです。
 
-これまでにESPHomeの経験がない場合は、[**このWiki**](https://wiki.seeedstudio.com/xiao-esp32c3-esphome/)を読んで使用方法を学ぶことができます。
+これまでにESPHomeの経験がない場合は、[**このWiki**](https://wiki.seeedstudio.com/ja/xiao-esp32c3-esphome/)を読んで使用方法を学ぶことができます。
 
 ## ESPHome OTAによるソフトウェアアップグレード
 

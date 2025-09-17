@@ -55,11 +55,11 @@ Edge Impulse 是一个多功能平台，专门致力于简化为边缘设备（�
 
 ### 软件准备
 
-我们建议从官方网站安装最新版本的 Raspberry Pi 64 位操作系统。如果您希望安装新的 Raspbian 操作系统，请按照此[指南](https://wiki.seeedstudio.com/reterminal-dm-flash-OS/#steps-for-flashing-raspbian-os)中概述的步骤进行操作。
+我们建议从官方网站安装最新版本的 Raspberry Pi 64 位操作系统。如果您希望安装新的 Raspbian 操作系统，请按照此[指南](https://wiki.seeedstudio.com/cn/reterminal-dm-flash-OS/#steps-for-flashing-raspbian-os)中概述的步骤进行操作。
 
 :::note
 
-如果您没有使用 reTerminal DM（带摄像头和 PoE）并希望设置 Raspberry Pi 摄像头，您应该按照此[指南](https://wiki.seeedstudio.com/reterminal-dm-hardware-guide/#install-camera)中提供的说明进行操作。
+如果您没有使用 reTerminal DM（带摄像头和 PoE）并希望设置 Raspberry Pi 摄像头，您应该按照此[指南](https://wiki.seeedstudio.com/cn/reterminal-dm-hardware-guide/#install-camera)中提供的说明进行操作。
 
 :::
 

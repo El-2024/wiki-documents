@@ -53,7 +53,7 @@ mmWave 人体检测传感器套件由 Seeed Studio XIAO ESP32C3 驱动，支持 
 
 ### 安装 Home Assistant
 
-确保您已经安装并运行了 Home Assistant。这里有多个介绍如何将 Home Assistant 刷入[产品](https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-)的教程。我使用的是 Raspberry Pi 4B，所以我可以[直接使用官方方法将操作系统刷入 Raspberry Pi 4B](https://www.home-assistant.io/installation/raspberrypi)。
+确保您已经安装并运行了 Home Assistant。这里有多个介绍如何将 Home Assistant 刷入[产品](https://wiki.seeedstudio.com/cn/home_assistant_topic/#-devices-for-home-assistant-)的教程。我使用的是 Raspberry Pi 4B，所以我可以[直接使用官方方法将操作系统刷入 Raspberry Pi 4B](https://www.home-assistant.io/installation/raspberrypi)。
 
 ### 在 Home Assistant 上安装 ESPHome
 
@@ -146,7 +146,7 @@ ESPHome 作为 **Home Assistant 插件**提供，可以通过插件商店简单�
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave_kit_plus_grove/12.png" style={{width:1000, height:'auto'}}/></div>
 
 :::tip
-如果您发现 ESPHome 不在已配置区域，而是在上方的已发现区域。您可以按照此[链接](https://wiki.seeedstudio.com/XIAO-ESP32C3-for-ESPHome-Support/)中的步骤15到步骤18进行操作。
+如果您发现 ESPHome 不在已配置区域，而是在上方的已发现区域。您可以按照此[链接](https://wiki.seeedstudio.com/cn/XIAO-ESP32C3-for-ESPHome-Support/)中的步骤15到步骤18进行操作。
 :::
 
 3. 点击 **devices**。我这里有2个设备，在您的情况下可能只有1个设备。

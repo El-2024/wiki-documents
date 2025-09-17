@@ -180,7 +180,7 @@ Seeed Studio XIAO 扩展底板可以用电池供电，所以如果你做一些�
 
 **步骤1**. 将Seeed Studio XIAO SAMD21安装到扩展板上，然后连接Type-C线缆。
 
-**步骤2**. 安装[**u8g2**](https://github.com/olikraus/U8g2_Arduino)库，这是[**如何安装库**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)的指南。
+**步骤2**. 安装[**u8g2**](https://github.com/olikraus/U8g2_Arduino)库，这是[**如何安装库**](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/)的指南。
 
 **步骤3**. 复制代码并粘贴到Arduino IDE中，然后上传。
 
@@ -372,7 +372,7 @@ void loop() {
 
 **步骤 1**. 将 Seeed Studio XIAO SAMD21 安装在扩展板上，然后连接 Type-C 线缆。
 
-**步骤 2**. 安装 [**u8g2**](https://github.com/olikraus/U8g2_Arduino) 和 [**PCF8563**](https://github.com/Bill2462/PCF8563-Arduino-Library) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) 的指南。
+**步骤 2**. 安装 [**u8g2**](https://github.com/olikraus/U8g2_Arduino) 和 [**PCF8563**](https://github.com/Bill2462/PCF8563-Arduino-Library) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/) 的指南。
 
 **步骤 3**. 复制代码并粘贴到 Arduino IDE 中，然后上传。
 
@@ -656,7 +656,7 @@ MicroSD 卡系统格式为 FAT 或 exFAT。如果您使用其他 MicroSD 卡系�
 :::
 **步骤 1.** 准备一张 micro SD 卡插入 Seeed Studio XIAO SAMD21 扩展板。
 
-**步骤 2.** 假设您尚未下载 [**CircuitPython 文件**](https://circuitpython.org/board/seeeduino_xiao/)，请参考 [**安装 CircuitPython**](https://wiki.seeedstudio.com/Seeeduino-XIAO-Expansion-Board/#installing-circuitpython) 章节。
+**步骤 2.** 假设您尚未下载 [**CircuitPython 文件**](https://circuitpython.org/board/seeeduino_xiao/)，请参考 [**安装 CircuitPython**](https://wiki.seeedstudio.com/cn/Seeeduino-XIAO-Expansion-Board/#installing-circuitpython) 章节。
 
 **步骤 3.** 下载 [**lib**](https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/lib.zip) 解压文件，然后用新的 lib 替换 `CIRCUITPY` 中的 lib。
 
@@ -750,7 +750,7 @@ sys.path.append("/sd/lib")  ## switch to the path to SD card
 
 **步骤 1**. 按照连接图将所有传感器连接到板上。
 
-**步骤 2**. 安装 [**Arduino-IRremote**](https://github.com/Seeed-Studio/Seeed_Arduino_IRSendRev) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) 的指南。
+**步骤 2**. 安装 [**Arduino-IRremote**](https://github.com/Seeed-Studio/Seeed_Arduino_IRSendRev) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/) 的指南。
 
 **步骤 3**. 复制代码粘贴到 Arduino IDE 中然后上传。
 
@@ -870,7 +870,7 @@ void loop() {
 
 **步骤 2**. 下载 [**Aruidno IDE**](https://www.arduino.cc/en/Main/software)
 
-**步骤 3**. 安装 [**Arduino-IRremote**](https://github.com/Seeed-Studio/Seeed_Arduino_IRSendRev) 和 [**Motor driver**](https://github.com/Seeed-Studio/Drv8830_Motor_Driver) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) 的指南。
+**步骤 3**. 安装 [**Arduino-IRremote**](https://github.com/Seeed-Studio/Seeed_Arduino_IRSendRev) 和 [**Motor driver**](https://github.com/Seeed-Studio/Drv8830_Motor_Driver) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/) 的指南。
 
 **步骤 4**. 复制代码粘贴到Arduino IDE中然后上传。
 
@@ -996,7 +996,7 @@ void delayUntil(unsigned long elapsedTime) {
 
 **步骤 2**. 下载 [**Aruidno IDE**](https://www.arduino.cc/en/Main/software)
 
-**步骤 3**. 安装 [**u8g2**](https://github.com/olikraus/U8g2_Arduino)、[**Servo**](https://github.com/arduino-libraries/Servo)、[**Seeed_Arduino_KCT202**](https://github.com/Seeed-Studio/Seeed_Arduino_KCT202) 和 [**Seeed_LED_Ring**](https://github.com/Seeed-Studio/Seeed_LED_Ring) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) 的指南。
+**步骤 3**. 安装 [**u8g2**](https://github.com/olikraus/U8g2_Arduino)、[**Servo**](https://github.com/arduino-libraries/Servo)、[**Seeed_Arduino_KCT202**](https://github.com/Seeed-Studio/Seeed_Arduino_KCT202) 和 [**Seeed_LED_Ring**](https://github.com/Seeed-Studio/Seeed_LED_Ring) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/) 的指南。
 
 **步骤 4**. 复制代码粘贴到Arduino IDE中然后上传。
 
@@ -1204,7 +1204,7 @@ void colorWipe(uint32_t c, uint8_t wait) {
 
 **步骤 2**. 下载 [**Arduino IDE**](https://www.arduino.cc/en/Main/software)
 
-**步骤 3**. 安装 [**u8g2**](https://github.com/olikraus/U8g2_Arduino) 和 [**Seeed_Arduino_KCT202**](https://github.com/Seeed-Studio/Seeed_Arduino_KCT202) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) 的指南。
+**步骤 3**. 安装 [**u8g2**](https://github.com/olikraus/U8g2_Arduino) 和 [**Seeed_Arduino_KCT202**](https://github.com/Seeed-Studio/Seeed_Arduino_KCT202) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/) 的指南。
 
 **步骤 4**. 复制代码粘贴到 Arduino IDE 中然后上传。
 
@@ -1331,7 +1331,7 @@ void setup() {
 
 **步骤 2**. 下载 [**Arduino IDE**](https://www.arduino.cc/en/Main/software)
 
-**步骤 3**. 安装 [**u8g2**](https://github.com/olikraus/U8g2_Arduino)、[**Seeed_PM2_5_sensor_HM3301**](https://github.com/Seeed-Studio/Seeed_PM2_5_sensor_HM3301) 和 [**Seeed_SCD30**](https://github.com/Seeed-Studio/Seeed_SCD30) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) 的指南。
+**步骤 3**. 安装 [**u8g2**](https://github.com/olikraus/U8g2_Arduino)、[**Seeed_PM2_5_sensor_HM3301**](https://github.com/Seeed-Studio/Seeed_PM2_5_sensor_HM3301) 和 [**Seeed_SCD30**](https://github.com/Seeed-Studio/Seeed_SCD30) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/) 的指南。
 
 **步骤 4**. 复制代码粘贴到 Arduino IDE 中然后上传。
 
@@ -1556,7 +1556,7 @@ void loop() {
 
 **步骤 2**. 下载 [**Arduino IDE**](https://www.arduino.cc/en/Main/software)
 
-**步骤 3**. 安装 [**u8g2**](https://github.com/olikraus/U8g2_Arduino) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) 的指南。
+**步骤 3**. 安装 [**u8g2**](https://github.com/olikraus/U8g2_Arduino) 库，这是 [**如何安装库**](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/) 的指南。
 
 **步骤 4**. 复制代码粘贴到 Arduino IDE 中然后上传。
 

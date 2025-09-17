@@ -63,7 +63,7 @@ XIAO LED驱动板是一个紧凑而强大的解决方案，支持5V和12V LED灯
 
         [Grove - IMU 9DOF (ICM20600+AK09918)](https://www.seeedstudio.com/Grove-IMU-9DOF-ICM20600-AK09918.html)
 
-  - **[`以及400+更多模块`](https://wiki.seeedstudio.com/Grove_System/)**
+  - **[`以及400+更多模块`](https://wiki.seeedstudio.com/cn/Grove_System/)**
 
 ### 规格参数
 
@@ -207,7 +207,7 @@ XIAO LED驱动板是一个紧凑而强大的解决方案，支持5V和12V LED灯
 您需要为XIAO配置Arduino环境并添加板载包。
 
 :::tip
-如果这是您第一次使用Arduino，我们强烈建议您参考[Arduino入门指南](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)。
+如果这是您第一次使用Arduino，我们强烈建议您参考[Arduino入门指南](https://wiki.seeedstudio.com/cn/Getting_Started_with_Arduino/)。
 :::
 
 #### 软件准备
@@ -224,23 +224,23 @@ XIAO LED驱动板是一个紧凑而强大的解决方案，支持5V和12V LED灯
 
 **步骤2.** 选择您的开发板型号并将其添加到Arduino IDE中。
 
-- 如果您想在后续教程中使用**Seeed Studio XIAO SAMD21**，请参考**[此教程](https://wiki.seeedstudio.com/Seeeduino-XIAO/#software)**完成添加。
+- 如果您想在后续教程中使用**Seeed Studio XIAO SAMD21**，请参考**[此教程](https://wiki.seeedstudio.com/cn/Seeeduino-XIAO/#software)**完成添加。
 
-- 如果您想在后续教程中使用**Seeed Studio XIAO RP2040**，请参考**[此教程](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/#software-setup)**完成添加。
+- 如果您想在后续教程中使用**Seeed Studio XIAO RP2040**，请参考**[此教程](https://wiki.seeedstudio.com/cn/XIAO-RP2040-with-Arduino/#software-setup)**完成添加。
 
-- 如果您想在后续教程中使用**Seeed Studio XIAO RP2350**，请参考**[此教程](https://wiki.seeedstudio.com/xiao_rp2350_arduino/#setting-up-the-software)**完成添加。
+- 如果您想在后续教程中使用**Seeed Studio XIAO RP2350**，请参考**[此教程](https://wiki.seeedstudio.com/cn/xiao_rp2350_arduino/#setting-up-the-software)**完成添加。
 
-- 如果您想在后续教程中使用**Seeed Studio XIAO nRF52840**，请参考**[此教程](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup)**完成添加。
+- 如果您想在后续教程中使用**Seeed Studio XIAO nRF52840**，请参考**[此教程](https://wiki.seeedstudio.com/cn/XIAO_BLE/#software-setup)**完成添加。
 
-- 如果您想在后续教程中使用**Seeed Studio XIAO ESP32C3**，请参考**[此教程](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)**完成添加。
+- 如果您想在后续教程中使用**Seeed Studio XIAO ESP32C3**，请参考**[此教程](https://wiki.seeedstudio.com/cn/XIAO_ESP32C3_Getting_Started#software-setup)**完成添加。
 
-- 如果您想在后续教程中使用**Seeed Studio XIAO ESP32C6**，请参考**[此教程](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/#software-preparation)**完成添加。
+- 如果您想在后续教程中使用**Seeed Studio XIAO ESP32C6**，请参考**[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32c6_getting_started/#software-preparation)**完成添加。
 
-- 如果您想在后续教程中使用**Seeed Studio XIAO ESP32S3**，请参考**[此教程](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)**完成添加。
+- 如果您想在后续教程中使用**Seeed Studio XIAO ESP32S3**，请参考**[此教程](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started#software-preparation)**完成添加。
 
-- 如果您想在后续教程中使用**Seeed Studio XIAO RA4M1**，请参考**[此教程](https://wiki.seeedstudio.com/getting_started_xiao_ra4m1/#software-preparation)**完成添加。
+- 如果您想在后续教程中使用**Seeed Studio XIAO RA4M1**，请参考**[此教程](https://wiki.seeedstudio.com/cn/getting_started_xiao_ra4m1/#software-preparation)**完成添加。
 
-- 如果您想在后续教程中使用**Seeed Studio XIAO MG24**，请参考**[此教程](https://wiki.seeedstudio.com/xiao_mg24_getting_started/#software-preparation)**完成添加。
+- 如果您想在后续教程中使用**Seeed Studio XIAO MG24**，请参考**[此教程](https://wiki.seeedstudio.com/cn/xiao_mg24_getting_started/#software-preparation)**完成添加。
 
 **步骤3.** 安装所需的库。
 
@@ -477,7 +477,7 @@ void loop() {
     </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-" target="_blank" rel="noopener noreferrer">
+        <a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/home_assistant_topic/#-devices-for-home-assistant-" target="_blank" rel="noopener noreferrer">
           <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
         </a>
       </div></td>

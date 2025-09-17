@@ -36,7 +36,7 @@ Edge Impulse 是边缘设备机器学习的领先开发平台，对开发者免�
 
 ### 在 Arduino 上设置 XIAO ESPS3 Sense
 
-在开始使用 Edge impulse 库之前，我们需要在 Arduino IDE 上设置 XIAO ESPS3，请查看[这里](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)的指南
+在开始使用 Edge impulse 库之前，我们需要在 Arduino IDE 上设置 XIAO ESPS3，请查看[这里](https://wiki.seeedstudio.com/cn/xiao_esp32s3_getting_started/)的指南
 
 #### 编译并上传 Blink 示例
 
