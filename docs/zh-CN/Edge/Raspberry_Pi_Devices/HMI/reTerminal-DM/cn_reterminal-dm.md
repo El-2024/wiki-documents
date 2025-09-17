@@ -849,7 +849,7 @@ gcc canreceive.c -o canreceive
 
 <div align="center"><img width={100} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/usb-c.png" /></div>
 
-USB Type-C 是一个 USB 2.0 端口，用于串行调试或刷写操作系统镜像，具体取决于启动开关的位置。有关刷写操作系统的信息，请参考[刷写操作系统 Wiki 页面](/reterminal-dm-flash-OS)
+USB Type-C 是一个 USB 2.0 端口，用于串行调试或刷写操作系统镜像，具体取决于启动开关的位置。有关刷写操作系统的信息，请参考[刷写操作系统 Wiki 页面](/cn/reterminal-dm-flash-OS)
 
 ### SIM 卡槽
 
@@ -1202,7 +1202,7 @@ reTerminal DM 主板上预留了 CSI 摄像头接口，可以定制支持摄像�
 - EC25-EUX 4G 模块 x1
 - SIM 卡 x1
 
-**步骤 1.** 请参考 [EC25 4G 模块硬件组装](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) 指南，将 `EC25 4G 模块` 安装到 `4G/LTE PCIe 插槽` 中，您应该能看到 *`4G/LTE`* 丝印，并且请在系统上电之前将支持 4G 的 SIM 卡插入 [SIM 卡插槽](/reterminal-dm/#sim-card-slot)。
+**步骤 1.** 请参考 [EC25 4G 模块硬件组装](/cn/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) 指南，将 `EC25 4G 模块` 安装到 `4G/LTE PCIe 插槽` 中，您应该能看到 *`4G/LTE`* 丝印，并且请在系统上电之前将支持 4G 的 SIM 卡插入 [SIM 卡插槽](/cn/reterminal-dm/#sim-card-slot)。
 
 **步骤 2.** 使用 ```lsusb``` 检查 EC25-EUX 是否被检测到
 
@@ -1277,7 +1277,7 @@ import TabItem from '@theme/TabItem';
     </a>
 </div>
 
-**步骤 1.** 请参考 [LoraWAN® 模块硬件组装](/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna) 指南，将 `WM1302 SPI LoraWAN® 模块` 安装到 `LoraWAN® Mini PCIe 插槽` 中，您应该能看到 *`Lora`* 丝印。
+**步骤 1.** 请参考 [LoraWAN® 模块硬件组装](/cn/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna) 指南，将 `WM1302 SPI LoraWAN® 模块` 安装到 `LoraWAN® Mini PCIe 插槽` 中，您应该能看到 *`Lora`* 丝印。
 通过安装模块来安装必要的软件包 build-essential（build essential 软件包是一个 Debian 软件包，包含从源代码创建 DEB 软件包所需的工具）。
 
 ```sh
@@ -1340,7 +1340,7 @@ cd ~/sx1302_hal/packet_forwarder
     </a>
 </div>
 
-**步骤 1.** 请参考 [LoraWAN® 模块硬件组装](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) 指南，将 `WM1302 USB LoraWAN® 模块` 安装到 `4G Mini PCIe 插槽` 中，您应该能看到 *`4G`* 丝印标识。
+**步骤 1.** 请参考 [LoraWAN® 模块硬件组装](/cn/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) 指南，将 `WM1302 USB LoraWAN® 模块` 安装到 `4G Mini PCIe 插槽` 中，您应该能看到 *`4G`* 丝印标识。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/dmlora.png"/></div>
 

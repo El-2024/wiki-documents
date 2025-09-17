@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reterminal_e10xx/img/44.jpg" style={{width:700, height:'auto'}}/></div><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/reterminal_e10xx_with_esphome" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ入手 🖱️</font></span></strong></a>
+    <a class="get_one_now_item" href="/ja/reterminal_e10xx_with_esphome" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ入手 🖱️</font></span></strong></a>
 </div>
 
 ## [Home Assistant](https://www.home-assistant.io/) の紹介
@@ -107,9 +107,9 @@ Home Assistant Green は、ホームオートメーションを実現する最�
 :::tip Home Assistant をインストール
 Seeed Studio 製品の一部に Home Assistant をインストールする方法も書いていますので、参考にしてください。
 
-- **[ODYSSEY-X86 で Home Assistant を始める](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant/)**
-- **[reTerminal で Home Assistant を始める](https://wiki.seeedstudio.com/reTerminal_Home_Assistant/)**
-- **[LinkStar H68K/reRouter CM4 で Home Assistant を始める](https://wiki.seeedstudio.com/h68k-ha-esphome/)**
+- **[ODYSSEY-X86 で Home Assistant を始める](https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant/)**
+- **[reTerminal で Home Assistant を始める](https://wiki.seeedstudio.com/ja/reTerminal_Home_Assistant/)**
+- **[LinkStar H68K/reRouter CM4 で Home Assistant を始める](https://wiki.seeedstudio.com/ja/h68k-ha-esphome/)**
 
 Seeed Studio 製品を使用していない場合は、公式 Home Assistant ウェブサイトで他の製品に Home Assistant をインストールする方法を確認して学習することもできます。
 
@@ -1029,7 +1029,7 @@ e-paperディスプレイのリフレッシュレートには制限があるこ�
 
 ## 続きを読む
 
-スペースの制約により、この記事ではデバイスの基本的な使用例と描画例のみを扱っています。reTerminalのハードウェアのESPHomeでの使用については、[reTerminal EシリーズePaperディスプレイのHome Assistantでの高度なESPHome使用法](https://wiki.seeedstudio.com/reterminal_e10xx_with_esphome_advanced)のWikiでより詳しく説明しており、こちらを読み進めることができます。
+スペースの制約により、この記事ではデバイスの基本的な使用例と描画例のみを扱っています。reTerminalのハードウェアのESPHomeでの使用については、[reTerminal EシリーズePaperディスプレイのHome Assistantでの高度なESPHome使用法](https://wiki.seeedstudio.com/ja/reterminal_e10xx_with_esphome_advanced)のWikiでより詳しく説明しており、こちらを読み進めることができます。
 
 ## FAQ
 

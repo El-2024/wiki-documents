@@ -103,7 +103,7 @@ Wi-Fi 定位系统是一种地理定位系统，它使用附近 Wi-Fi 热点和�
 ## 使用XIAO ESP32S3连接网络并获取公网IP
 
 :::tip
-如果您不熟悉XIAO ESP32S3的网络功能，可以阅读[Seeed Studio XIAO ESP32S3 (Sense)的WiFi使用](https://wiki.seeedstudio.com/xiao_esp32s3_wifi_usage/)。
+如果您不熟悉XIAO ESP32S3的网络功能，可以阅读[Seeed Studio XIAO ESP32S3 (Sense)的WiFi使用](https://wiki.seeedstudio.com/cn/xiao_esp32s3_wifi_usage/)。
 :::
 
 在XIAO ESP32S3基础使用教程中，我们已经掌握了使用XIAO ESP32S3连接网络的方法。
@@ -290,7 +290,7 @@ bool getLocation(){
 ## 在圆形显示屏上显示位置地图
 
 :::tip
-如果您是第一次使用 XIAO 圆形显示屏，那么您可能需要参考[这里的 Wiki](https://wiki.seeedstudio.com/get_start_round_display/) 来为圆形屏幕配置您的 Arduino 环境。
+如果您是第一次使用 XIAO 圆形显示屏，那么您可能需要参考[这里的 Wiki](https://wiki.seeedstudio.com/cn/get_start_round_display/) 来为圆形屏幕配置您的 Arduino 环境。
 :::
 
 ### 步骤 6. 学习如何调用 Google Cloud Static Maps API

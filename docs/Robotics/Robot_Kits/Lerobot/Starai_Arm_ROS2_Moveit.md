@@ -136,32 +136,100 @@ echo "source ~/starai_ws/install/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-## Starai Arm MoveIt2 Simulation Script
+
+## Viola
+### Starai Arm MoveIt2 Simulation Script (Optional)
 
 ```bash
-ros2 launch viola_configure demo.launch.py 
+ros2 launch viola_moveit_config demo.launch.py 
 ```
 
-## Using a Real Robotic Arm
+### Using a Real Robotic Arm
 
-### Terminal 1: Start the Arm Control Node
+### Step 1: Start the Arm Control Node
 
-The Arm Will Move to The Zero Position.
+Start the arm hardware driver, the Arm Will Move to The Zero Position.
 
 ```bash
-ros2 run robo_driver driver
+ros2 launch viola_moveit_config driver.launch.py
 ```
 
-### Start the Controller Node
+### Step2: Starthe Moveit2
 
 ```bash
-ros2 run viola_controller controller
+ros2 launch viola_moveit_config moveit_write_read.launch.py
 ```
 
-### Start the Moveit2
+### End-effector pose read/write demo
 
 ```bash
-ros2 launch viola_configure actual_robot_demo.launch.py
+ros2 run arm_moveit_write topic_publisher 
+```
+
+## Cello
+### Starai Arm MoveIt2 Simulation Script (Optional)
+
+```bash
+ros2 launch cello_moveit_config demo.launch.py 
+```
+
+### Using a Real Robotic Arm
+
+### Step 1: Start the Arm Control Node
+
+Start the arm hardware driver, the Arm Will Move to The Zero Position.
+
+```bash
+ros2 launch cello_moveit_config driver.launch.py
+```
+
+### Step2: Starthe Moveit2
+
+```bash
+ros2 launch cello_moveit_config actual_robot_demo.launch.py
+```
+
+### End-effector pose read/write demo
+
+```bash
+ros2 launch cello_moveit_config moveit_write_read.launch.py
+```
+
+## Position and orientation topic sending node demo
+
+update here `src/arm_moveit_write/src/topic_publisher.cpp`
+
+```bash
+    // // viola
+    // dataset1_ = { 
+    //   {0.003, -0.204, 0.274},       // position
+    //   {0.014, 0.717, 0.017, 0.696}, // orientation
+    //   "open"                         // gripper_state
+    // };
+    // dataset2_ = {
+    //   {-0.00, -0.34, 0.177},        // position
+    //   {0.0, 0.7071, 0.0, 0.7071},   // orientation
+    //   "close"                        // gripper_state
+    // };
+
+    // cello
+    dataset1_ = {
+      {-0.278, 0.000, 0.438},       // position
+      {0.707, 0.000, -0.707, 0.000}, // orientation
+      "open"                         // gripper_state
+    };
+    dataset2_ = {
+      {-0.479, -0.000, 0.369},        // position
+      {0.707, -0.000, -0.707, 0.000},   // orientation
+      "close"                        // gripper_state
+    }
+
+```
+
+```bash
+colcon build
+source install/setup.sh
+ros2 run arm_moveit_write topic_publisher 
 ```
 
 <div class="video-container">

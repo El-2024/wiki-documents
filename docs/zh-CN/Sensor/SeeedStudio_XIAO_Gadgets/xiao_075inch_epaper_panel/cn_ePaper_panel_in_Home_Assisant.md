@@ -104,9 +104,9 @@ Home Assistant Green 是自动化您家庭的最简单且最注重隐私的方�
 :::tip 安装 Home Assistant
 我们还为一些 Seeed Studio 产品编写了如何安装 Home Assistant 的教程，请参考它们。
 
-- **[在 ODYSSEY-X86 上开始使用 Home Assistant](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant/)**
-- **[在 reTerminal 上开始使用 Home Assistant](https://wiki.seeedstudio.com/reTerminal_Home_Assistant/)**
-- **[在 LinkStar H68K/reRouter CM4 上开始使用 Home Assistant](https://wiki.seeedstudio.com/h68k-ha-esphome/)**
+- **[在 ODYSSEY-X86 上开始使用 Home Assistant](https://wiki.seeedstudio.com/cn/ODYSSEY-X86-Home-Assistant/)**
+- **[在 reTerminal 上开始使用 Home Assistant](https://wiki.seeedstudio.com/cn/reTerminal_Home_Assistant/)**
+- **[在 LinkStar H68K/reRouter CM4 上开始使用 Home Assistant](https://wiki.seeedstudio.com/cn/h68k-ha-esphome/)**
 
 如果您没有使用 Seeed Studio 产品，您也可以在官方 Home Assistant 网站上查看并学习如何为其他产品安装 Home Assistant。
 

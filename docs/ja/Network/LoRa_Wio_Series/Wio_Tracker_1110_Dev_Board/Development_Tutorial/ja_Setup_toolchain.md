@@ -30,7 +30,7 @@ MAC、Windows、Linuxなど、すべてのオペレーティングシステム�
 </div>
 
 :::tip
-Arduinoを初めて使用する場合は、[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 #### Seeedボードの追加
