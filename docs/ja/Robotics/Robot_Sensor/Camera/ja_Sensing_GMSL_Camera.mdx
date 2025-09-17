@@ -56,7 +56,8 @@ export const steps = [
 
 <ProductBanner 
   imageUrl="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-101090101-3mp-gmsl2-camera-module-190-degree.jpg" 
-  linkUrl="https://www.seeedstudio.com/SG3S-ISX031C-GMSL2F-p-6245.html" 
+  linkUrl="https://www.seeedstudio.com/SG3S-ISX031C-GMSL2F-p-6245.html"
+  lang="ja"
 />
 
 様々な解像度、転送速度などをカバーする異なるGMSL2カメラを提供しています。これらのカメラは多くの分野のアプリケーションで使用できます。例えば：
@@ -72,7 +73,7 @@ export const steps = [
 ## 仕様
 
 
-<SensingGMSLCamTable />
+<SensingGMSLCamTable lang="ja" />
 
 
 ## はじめに
@@ -128,7 +129,7 @@ sudo /opt/nvidia/jetson-io/jetson-io.py
 
 以下の設定に従ってステップバイステップで進めてください
 
-<JetsonIOStepper steps={steps}/>
+<JetsonIOStepper steps={steps} lang="ja" />
 
 :::note
 上記のステップで、6Gbpsカメラを使用している場合は、ステップ3で**'Seeed GMSL 1X4 6G'**オーバーレイを選択してください。6Gbpsカメラは以下の通りです：
@@ -219,4 +220,4 @@ gst-launch-1.0 v4l2src device=/dev/video0 ! \
 
 弊社製品をお選びいただき、ありがとうございます！最新ニュースとサポートを受けるために、以下のプラットフォームで私たちをフォローしてください。
 
-<RoboticsFooter />
+<RoboticsFooter lang="ja" />

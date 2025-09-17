@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.webp
 slug: /lerobot_starai_arm
 last_update:
-  date: 9/1/2025
+  date: 9/15/2025
   author: LiShanghang
 ---
 

@@ -410,21 +410,12 @@ jobs:
         run: |
           set -e
           echo "🔧 准备在 base 仓库创建/更新翻译分支..."
+
           BRANCH="auto-translate/pr-${PR_NUMBER}"
           echo "BRANCH=$BRANCH" >> $GITHUB_OUTPUT
 
-          # 如果工作区 docs/ 三个语言目录都没有任何变化，则直接判断是否需要继续
-          # 这里不依赖 collect-changes 的清单，统一从工作区检测
-          if ! git -C "$GITHUB_WORKSPACE" status --porcelain | grep -E '^ [AMDR] ' | grep -E ' docs/(zh-CN|ja|es)/' >/dev/null 2>&1; then
-            echo "ℹ️ 未检测到目标语言目录的改动（可能 translate.js 内部也无变动）"
-            echo "HAS_CHANGES=false" >> $GITHUB_ENV
-            exit 0
-          fi
-          echo "HAS_CHANGES=true" >> $GITHUB_ENV
-
           WORKDIR=$(mktemp -d)
           echo "WORKDIR=$WORKDIR"
-          cd "$WORKDIR"
 
           TOKEN="${TRANSLATION_PAT:-${GITHUB_TOKEN}}"
           if [ -z "$TOKEN" ]; then
@@ -434,14 +425,13 @@ jobs:
           REMOTE_URL="https://${TOKEN}@github.com/${BASE_REPO}.git"
 
           git config --global init.defaultBranch main
-          git clone --depth=1 "$REMOTE_URL" repo
-          cd repo
+          git clone --depth=1 "$REMOTE_URL" "$WORKDIR/repo"
+          cd "$WORKDIR/repo"
           git fetch --depth=1 origin "$BASE_REF"
           git checkout "$BASE_REF"
 
-          # ✅ 只镜像三种语言目录，移动/删除由 --delete 保证同步
-          # 如果某个语言目录不存在也没关系，rsync 会忽略
-          rsync -a --delete \
+          # ✅ 镜像三种语言目录（含删除），并防止 symlink 越界
+          rsync -a --delete --safe-links --copy-dirlinks \
             --include='docs/' \
             --include='docs/zh-CN/***' \
             --include='docs/ja/***' \
@@ -451,10 +441,13 @@ jobs:
 
           git config user.email "action@github.com"
           git config user.name "GitHub Action Bot"
+
+          # 只对语言目录进行 add（不存在则忽略）
           git add docs/zh-CN docs/ja docs/es 2>/dev/null || true
 
           if git diff --cached --quiet; then
             echo "ℹ️ 镜像后无变化"
+            echo "HAS_CHANGES=false" >> $GITHUB_ENV
           else
             git commit \
               -m "🌍 自动翻译文档 for #${PR_NUMBER}" \
@@ -463,6 +456,7 @@ jobs:
               -m "Source PR: #${PR_NUMBER}" \
               -m "[TRANSLATION_COMMIT]: true"
             git push origin HEAD:"$BRANCH"
+            echo "HAS_CHANGES=true" >> $GITHUB_ENV
           fi
 
       - name: Create or update translation PR

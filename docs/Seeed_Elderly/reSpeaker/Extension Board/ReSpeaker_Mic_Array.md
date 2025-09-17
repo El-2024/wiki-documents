@@ -247,8 +247,7 @@ if __name__ == '__main__':
 
 ### Q2: How to use audacity to extract the 8 channels raw data on Windows?
 
-  Please select Windows WASA, here is the picture. If you want to switch firmware version from 0x032 to 0x082, before you do that, please uninstall your device in
-devices managment first. after uninstalling, update the firmware via DFU and reinstall the device.
+  Please select Windows WASA, here is the picture. If you want to switch firmware version from 0x032 to 0x082, before you do that, please uninstall your device in devices managment first. after uninstalling, update the firmware via DFU and reinstall the device.
 
 ![](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/img/audacity.png)
 
@@ -290,12 +289,11 @@ devices managment first. after uninstalling, update the firmware via DFU and rei
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-
