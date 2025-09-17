@@ -4,7 +4,7 @@ title: DM_Gripper - 装配指南与演示
 keywords:
 - Gripper
 - Robotics 
-slug: /dm_gripper
+slug: /cn/dm_gripper
 last_update:
   date: 9/17/2025
   author: Ylson W
