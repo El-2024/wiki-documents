@@ -97,7 +97,7 @@ last_update:
       <span className="text">Starai 机械臂</span>
     </a>
     <a href="/cn/starai_arm_ros_moveit/" className="nav-item">
-      <span className="text">Starai 机械臂 Moveit</span>
+      <span className="text">Starai 机械臂ROS2 Moveit</span>
     </a>
     <a href="/cn/control_robotic_arm_via_gr00t" className="nav-item">
   <span className="text">Starai Arm 跑Isaac GR00T</span>
@@ -105,7 +105,7 @@ last_update:
 </div>
 
 
-## 🖐️ Hand
+## 🖐️ 灵巧手
 
 <div className="card-container">
     <a href="/cn/hand_amazinghand/" className="nav-item">
@@ -113,6 +113,17 @@ last_update:
       <span className="tag recommended">New</span>
     </a>
 </div>
+
+## 🦀 末端夹爪
+
+<div className="card-container">
+    <a href="/cn/dm_gripper" className="nav-item">
+      <span className="text">达妙电机末端夹爪</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
+
+
 
 </div>
 </div>

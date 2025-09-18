@@ -842,15 +842,18 @@ python -m lerobot.record  \
 
 ## 参考文档
 
-矽递科技中文Wiki文档：[如何在最新版Lerobot中使用SO10xArm机械臂](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/)
 
-lerobot starai github: [lerobot starai](https://github.com/servodevelop/lerobot/tree/develop)
+lerobot starai github: [lerobot starai](https://github.com/servodevelop/lerobot.git )
+
+StarAI Robot Arm ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/cn/starai_arm_ros_moveit/)
+
+StarAI机械臂[相关性能介绍](https://www.bilibili.com/video/BV1wJYDzEE2s/?spm_id_from=888.80997.embed_other.whitelist&t=1.413555&bvid=BV1wJYDzEE2s&vd_source=16f6410bb6a7c9939bfb6a93fc79b27e)
+
+StarAI机械臂[开箱视频](https://www.bilibili.com/video/BV1wRgVznECk/?spm_id_from=333.1387.homepage.video_card.click)
 
 STEP: [STEP](https://github.com/Welt-liu/star-arm-moveit2/tree/main/hardware)
 
 URDF: [URDF](https://github.com/Welt-liu/star-arm-moveit2/tree/main/src/cello_description)
-
-StarAI Robot Arm moveit2: [star-arm-moveit2](https://github.com/Welt-liu/star-arm-moveit2)
 
 Huggingface Project: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
 
