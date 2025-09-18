@@ -29,27 +29,27 @@ import JetsonIOStepper from '@site/src/components/robotics/JetsonIOStepper'
 
 export const steps = [
   {
-    title: 'Configure Jetson 24pin CSI Connector',
+    title: 'Jetson 24ピンCSIコネクタを設定する',
     src: "https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini_335lg/JetsonIO_Configure_24pin_CSI.webp",
   },
   {
-    title: 'Configure for compatible hardware',
+    title: '互換性のあるハードウェアを設定する',
     src: "https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini_335lg/JetsonIO_Select_Compatiable_Hardware.webp",
   },
   {
-    title: 'Select the Overlay',
+    title: 'オーバーレイを選択する',
     src: "https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini_335lg/Select_Orbbec_Overlay.webp",
   },
   {
-    title: 'Save pin changes',
+    title: 'ピンの変更を保存する',
     src: "https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini_335lg/JetsonIO_Save_Pin_Changes.webp",
   },
   {
-    title: 'Save and reboot to reconfigure pins',
+    title: '保存して再起動し、ピンを再設定する',
     src: "https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini_335lg/JetsonIO_Save_and_Reboot.webp",
   },
   {
-    title: 'Press any key to reboot',
+    title: '任意のキーを押して再起動する',
     src: 'https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini_335lg/JetsonIO_Reboot_Prompt.webp'
   }
 ];
@@ -59,6 +59,7 @@ export const steps = [
 <ProductBanner
   imageUrl="https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini_335lg/Orbbec_Gemini-335Lg_Front.webp" 
   linkUrl=""
+  lang="ja"
 />
 
 Gemini 335Lgは、業界で実績のあるGemini 335LのGMSL2/FAKRAバージョンとして、Gemini 330シリーズの中でも際立ったモデルです。
@@ -67,7 +68,7 @@ GMSL2シリアライザーとFAKRAコネクタの組み合わせにより、複�
 
 ## 仕様
 
-<Orbbec335LgTable />
+<Orbbec335LgTable lang="ja" />
 
 <p>[1] 理論上の最大深度範囲は65メートル；</p>
 <p>[2] 工場校正時に測定されたデータ；</p>
@@ -202,7 +203,7 @@ sudo /opt/nvidia/jetson-io/jetson-io.py
 
 デバイスツリーオーバーレイを段階的に設定します：
 
-<JetsonIOStepper steps={steps} />
+<JetsonIOStepper steps={steps} lang="ja" />
 
 
 Jetsonデバイスを再起動します。Jetson Firmwareページで、プロンプトに従って正しいエントリを選択する必要がある場合があります。この場合、**'1'**を押して`Custom Header Config`を使用します。
@@ -267,4 +268,4 @@ OrbbecViewerを使用して結果を可視化します
 
 弊社製品をお選びいただき、ありがとうございます！最新ニュースとサポートを受けるために、以下のプラットフォームで必ずフォローしてください。
 
-<RoboticsFooter />
+<RoboticsFooter lang="ja" />

@@ -14,10 +14,9 @@ last_update:
 
 ## **MicroPython 介绍**
 
-[MicroPython](https://github.com/micropython/micropython/wiki) 是一个具有部分原生代码编译功能的 Python 解释器。它提供了 Python 3.5 功能的子集，专为嵌入式处理器和受限系统实现。它与 CPython 不同，您可以在[这里](https://github.com/micropython/micropython/wiki/Differences)了解更多差异。
+[MicroPython](https://github.com/micropython/micropython/wiki) 是一个具有部分本机代码编译功能的 Python 解释器。它提供了 Python 3.5 功能的子集，专为嵌入式处理器和受限系统实现。它与 CPython 不同，您可以在[这里](https://github.com/micropython/micropython/wiki/Differences)了解更多关于差异的信息。
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/micropython/MicroPython-Logo.png" /></div>
-
 
 ## **入门指南**
 
@@ -35,25 +34,21 @@ last_update:
 
 <div align="center"><img width={550} src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/micropython/board_6.png" /></div>
 
-
 - **步骤 2**. 启动 Thonny
 
 - **步骤 3**. 点击 **"Tools-->Options"** 打开设置。
 
 <div align="center"><img width={550} src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/micropython/board_8.png" /></div>
 
-
 - **步骤 4**. 选择 "Interpreter" 界面，将设备选择为 **"MicroPython(generic)"**，端口选择为 **"Try to detect port automatically"**
 
 <div align="center"><img width={550} src="https://files.seeedstudio.com/wiki/XIAO_SAMD/img/1.jpg" /></div>
-
 
 ### **将 Seeed Studio XIAO SAMD21 连接到 PC 并点亮它**
 
 - **步骤 1**. 按住 "BOOT" 按钮，然后通过 Type-C 数据线将 Seeed Studio XIAO SAMD21 连接到 PC。如果工作正常，PC 上会显示一个 "Arduino" 磁盘。
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/XIAO_SAMD/img/2.jpg" /></div>
-
 
 - **步骤 2**. 刷写固件
 
@@ -69,7 +64,7 @@ last_update:
 |-|--|---|--|---|
 |2|PA02|0|2|0| * | * | * | * |
 |4|PA04|1|4|4| * | * | * | * |
-|10|PA10|2|10|18| * | * | * | * | 
+|10|PA10|2|10|18| * | * | * | * |
 |11|PA11|3|11|19| * | * | * | * |
 |8|PA08|4|*|16| * | * | * | * |
 |9|PA09|5|9|17| * | * | * | * |
@@ -83,25 +78,25 @@ last_update:
 |31|PA31|SWDIO|11|*| * | * | * | * |
 |19|PA19|TX_LED|3|*| * | * | * | * |
 
-### 上传您的代码
+### 上传你的代码
 
-通过点击 "Run current script" 按钮上传代码。第一次时，Thonny 会询问您想要将代码文件保存在哪里。**This Computer** 和 **MicroPython device** 都可以。
+点击"运行当前脚本"按钮上传代码。第一次使用时，Thonny会询问你想要将代码文件保存在哪里。**本计算机**和**MicroPython设备**都可以。
 
-如果您想要离线使用程序，应该将程序保存到 XIAO SAMD21
+如果你想要离线使用程序，你应该将程序保存到XIAO SAMD21
 
-同时按住 Ctrl + Shift + S，然后选择保存到 **MicroPython device** 
+同时按住Ctrl + Shift + S，然后选择保存到**MicroPython设备**
 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/XIAO_SAMD/img/6.jpg" /></div>
 
-
-### GPIO 测试 (LED)
+### GPIO测试（LED）
 
 我们需要准备：
+
 - [Seeed Studio XIAO SAMD21](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html)
 
-将以下代码复制到 Thonny。
+将以下代码复制到Thonny中。
 
-我们可以看到蓝色的 RX_LED 点亮并每秒闪烁一次
+我们可以看到蓝色的RX_LED点亮并且每秒闪烁一次
 
 ```python
 from machine import Pin, Timer
@@ -125,8 +120,9 @@ tim.init(period=500, mode=Timer.PERIODIC, callback=fun)
 ### GPIO 控制继电器
 
 我们需要准备：
-- [Seeeduino-XIAO-Expansion-Board](https://wiki.seeedstudio.com/cn/Seeeduino-XIAO-Expansion-Board/)
-- [Grove-Relay](https://www.seeedstudio.com/Grove-Relay.html)
+
+- [Seeeduino-XIAO-扩展板](https://wiki.seeedstudio.com/cn/Seeeduino-XIAO-Expansion-Board/)
+- [Grove-继电器](https://www.seeedstudio.com/Grove-Relay.html)
 - [Seeed Studio XIAO SAMD21](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html)
 
 ```python
@@ -156,8 +152,7 @@ tim.init(period=200, mode=Timer.PERIODIC, callback=fun)
     Your browser does not support the video tag.
   </video></div>
 
-
-### 人体检测自动控制
+### 用于自动控制的人体检测
 
 我们需要准备：
 
@@ -197,7 +192,6 @@ tim.init(period=50, mode=Timer.PERIODIC, callback=fun)
     Your browser does not support the video tag.
   </video></div>
 
-
 ### I2C 支持
 
 ```python
@@ -219,11 +213,12 @@ print(i2c.readfrom(0x51, 4))
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/XIAO_SAMD/img/8.png" /></div>
 
-
 熟悉 micropython 可以让您做更多事情，我们期待为您创造更多价值。也欢迎与我们分享您的项目！
 
 ### DAC 支持
+
 感谢 Aleksei Tertychnyi 提交的代码，所有相关功能都是由他开发和贡献的。
+
 ```python
 from machine import Pin, Timer, DAC
  
@@ -243,11 +238,12 @@ def loop(tim):
 tim = Timer(-1)
 tim.init(period=1000, mode=Timer.PERIODIC, callback=loop)
 ```
-**引脚 A0** 上的电压将开始逐渐增加，在大约 *3.3V* 达到最大值后，将降至 *0V*，然后循环重复。
+
+**引脚 A0** 上的电压将开始逐渐增加，在大约 *3.3V* 时达到最大值后，将下降到 *0V*，然后循环重复。
 
 ## MicroPython 设备控制台
 
-我们的合作伙伴 **Neil** 为 XIAO 编写了一个使用 MicroPython 的命令行控制台程序。通过这个程序，您可以轻松上传、下载和删除文件。我们感谢他对 XIAO 的贡献！
+我们的合作伙伴 **Neil** 为 XIAO 编写了一个使用 MicroPython 的命令行控制台程序。通过这个程序，您可以轻松地上传、下载和删除文件。我们感谢他对 XIAO 的贡献！
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://gitlab.cba.mit.edu/pub/upy/-/blob/main/upy.py" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div>
 
@@ -256,11 +252,11 @@ tim.init(period=1000, mode=Timer.PERIODIC, callback=loop)
 感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

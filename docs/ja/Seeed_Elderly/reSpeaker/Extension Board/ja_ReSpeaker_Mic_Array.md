@@ -6,84 +6,81 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /ja/ReSpeaker_Mic_Array
 last_update:
-  date: 05/15/2025
+  date: 1/12/2023
   author: jianjing Huang
 ---
-:::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+
 
 ![](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/img/respeaker_mic_array.jpeg)
 
-## 説明
+## 概要
 
-ReSpeaker Mic Arrayは、ReSpeaker Coreの上に直接積み重ねて（接続して）使用することで、音声インタラクションの体験を大幅に向上させることができます。この製品はXMOSのXVSM-2000スマートマイクを基に開発されています。このボードには7つのPDMマイクが統合されており、ReSpeakerの音響DSP性能を大幅に向上させることができます。
+ReSpeaker Mic Array は ReSpeaker Core の上に直接スタック（接続）することができ、音声インタラクション体験を大幅に向上させます。XMOS の XVSM-2000 Smart Microphone をベースに開発されています。このボードは 7 つの PDM マイクロフォンを統合し、ReSpeaker の音響 DSP 性能をより高いレベルに向上させます。
 
 ## 主な特徴
 
 - 遠距離音声キャプチャ
-- 音響源の位置特定
+- 音響ソース定位
 - ビームフォーミング
 - ノイズ抑制
 - 残響除去
-- 音響エコーキャンセル
+- 音響エコーキャンセレーション
 
 ## 技術仕様
 
 ![](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/img/respeaker_mic_array.jpeg)
 
-- XVSM-2000（内部に16コアを搭載）：
-  - 2つのxCoreタイル上に16のリアルタイム論理コア。
-  - デュアルイシューモードで最大2000 MIPSを共有。
-  - 512KBの内部単一サイクルSRAMと2MBの内蔵フラッシュ。
-  - 16KBの内部OTP（タイルごとに最大8KB）。
-  - USB PHY、USB 2.0仕様に完全準拠。
-  - プログラム可能なI/O。
-  - DFUモードをサポート。
-- 7つのデジタルマイク：
-  - 遠距離音声認識や音源位置特定に有用。
-  - ST MP34DT01-M。
-  - -26 dBFSの感度。
-  - 120 dBSPLの音響過負荷ポイント。
-  - 61 dBの信号対雑音比。
-  - 全方向性の感度。
-  - PDM出力。
-- 12個のRGB LED：
-  - 256段階の明るさ。
-  - 800kHzのラインデータ伝送。
-- オーディオ出力：
-  - オンボード3.5mm Aux出力。
-  - WOLFSON WM8960。
-  - 24または16ビット、16kHzステレオ出力。
-  - 16Ωで40mWの出力（3.3V時）。
+- XVSM-2000（16コア内蔵）:
+  - 2つのxCoreタイル上に16のリアルタイム論理コア
+  - デュアルイシューモードで最大2000MIPSを共有
+  - 512KB内部シングルサイクルSRAMと2MB内蔵フラッシュ
+  - 16KB内部OTP（タイルあたり最大8KB）
+  - USB PHY、USB 2.0仕様に完全準拠
+  - プログラマブルI/O
+  - DFUモード対応
+- 7つのデジタルマイクロフォン:
+  - 遠距離音声認識または音源定位用途
+  - ST MP34DT01-M
+  - -26 dBFS感度
+  - 120 dBSPL音響過負荷点
+  - 61 dB信号対雑音比
+  - 無指向性感度
+  - PDM出力
+- 12個のRGB LED:
+  - 256レベル輝度
+  - 800kHzラインデータ伝送
+- 音声出力:
+  - オンボード3.5mm Aux出力
+  - WOLFSON WM8960
+  - 24または16bit 16kHzステレオ出力
+  - 16Ω @ 3.3Vで40mW出力パワー
 - クロック同期：
-  - オンボードPLL。
-  - DAC、MIC用のプログラム可能なサンプルクロック。
-    （XVSM-2000でDSPが使用されている場合は無効）。
-- 電源供給：
-  - Micro USBまたは拡張ヘッダーからの5V供給。
-- サイズ：
-  - 直径70mm。
-- 重量：
-  - 15.25g。
+  - オンボードPLL
+  - DAC、MIC用プログラマブルサンプルクロック
+    （XVSM-2000でDSPを使用する場合は無効）
+- 電源供給:
+  - Micro USBまたは拡張ヘッダーから5V供給
+- サイズ:
+  - 直径70mm
+- 重量:
+  - 15.25g
 
 ## ReSpeaker Mic Array用ドライバー
 
-- Windowsユーザーの場合、[こちら](https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Driver)をクリックしてドライバーをインストールしてください。
-- LinuxまたはMacユーザーの場合、ドライバーをインストールする必要はありません。
+- Windowsユーザーの場合、[こちら](https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Driver)をクリックしてドライバーをインストールしてください
+- LinuxまたはMacユーザーの場合、ドライバーのインストールは不要です
 
-## ReSpeaker Coreで音声を抽出する
+## ReSpeaker Coreで音声を抽出
 
-Mic ArrayがReSpeaker Coreに積み重ねられると、自動的に検出されます（`aplay -l`で確認）。また、[respeaker_python_library](https://github.com/respeaker/respeaker_python_library)を使用して音声インタラクションアプリケーションを開発することをお勧めします。このライブラリを使用することで、Mic Arrayがオンかどうかを気にする必要がなくなります。ライブラリがこれをチェックし、Mic Arrayがオンの場合はそれを選択します。
+Mic ArrayがReSpeaker Core上にスタックされている場合、自動的に検出されます（`aplay -l`で確認）。音声インタラクションアプリケーションの開発には、[respeaker_python_library](https://github.com/respeaker/respeaker_python_library)の使用をお勧めします。これにより、Mic Arrayが接続されているかどうかを気にする必要がありません。ライブラリがこれをチェックし、接続されている場合はMic Arrayを選択します。
 
-さらに、このライブラリ内の[*class Microphone*](https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/microphone.py)（**Pyaudio**に基づいています）には、音声を抽出するための[*listen*](https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/microphone.py#L207)というメソッドがあります。使用方法については、[こちらのサンプルコード](https://github.com/respeaker/respeaker_python_library/blob/master/examples/SpeechRecognition_translator.py)をご覧ください。
+また、そのライブラリの**Pyaudio**ベースの[*class Microphone*](https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/microphone.py)には、音声を抽出するための[*listen*](https://github.com/respeaker/respeaker_python_library/blob/master/respeaker/microphone.py#L207)というメソッドがあります。使用方法については、[サンプルコード](https://github.com/respeaker/respeaker_python_library/blob/master/examples/SpeechRecognition_translator.py)をご覧ください。
 
-## PC、Mac、Linux、Raspberry Piでの音声抽出
+## PC、Mac、Linux、Raspberry Piで音声を抽出
 
-以下はPyaudioを使用した例です：
+以下はPyaudioベースの例です：
 
-まず、以下のスクリプトを実行して、Mic Arrayのデバイスインデックス番号を取得します：
+まず、Mic Arrayのデバイスインデックス番号を取得するために、以下のスクリプトを実行する必要があります：
 
 ```python
 import pyaudio
@@ -97,7 +94,7 @@ for i in range(0, numdevices):
             print "Input Device id ", i, " - ", p.get_device_info_by_host_api_device_index(0, i).get('name')
 ```
 
-次に、`RESPEAKER_INDEX = 1`を取得したインデックス番号に変更します。以下のスクリプトを実行して音声を録音します。
+Then, change `RESPEAKER_INDEX = 1` to your index number. Run the script to record a speech.
 
 ```python
 import pyaudio
@@ -106,7 +103,7 @@ import wave
 RESPEAKER_RATE = 16000
 RESPEAKER_CHANNELS = 2
 RESPEAKER_WIDTH = 2
-# getDeviceInfo.pyを実行してインデックスを取得
+# run getDeviceInfo.py to get index
 RESPEAKER_INDEX = 1
 CHUNK = 1024
 RECORD_SECONDS = 5
@@ -121,7 +118,7 @@ stream = p.open(
             input=True,
             input_device_index=RESPEAKER_INDEX,)
 
-print("* 録音中")
+print("* recording")
 
 frames = []
 
@@ -129,7 +126,7 @@ for i in range(0, int(RESPEAKER_RATE / CHUNK * RECORD_SECONDS)):
     data = stream.read(CHUNK)
     frames.append(data)
 
-print("* 録音完了")
+print("* done recording")
 
 stream.stop_stream()
 stream.close()
@@ -145,21 +142,21 @@ wf.close()
 
 ## ReSpeaker Mic Array用ファームウェア
 
-ReSpeaker Mic Array用のDFUファームウェアは[こちら](https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Firmware)からダウンロードできます。以下の2つのバージョンを提供しています：
+ReSpeaker Mic array用のDFUファームウェアは[こちら](https://github.com/Fuhua-Chen/ReSpeaker_Microphone_Array_Firmware)からダウンロードできます。2つのバージョンを提供しています：
 
-- **xvsmバージョン**：初期バージョンで、DSPサポート付きの2チャンネルデータを出力します。
-- **rawバージョン**：8チャンネルのマイク生データを出力します。このファームウェアにはxvsm DSPサポートがないため、DOAやAECなどの機能はサポートされていません。
+- *xvsmバージョン* : 初期バージョン、dspサポート付きで2チャンネルデータを出力します。
+- *rawバージョン* : 8チャンネルマイクの生データを出力します。このファームウェアはxvsm dspサポートなしのため、DOA、AECなどの一部機能をサポートしていません。
 
-**Linuxでのファームウェア更新**については[こちら](https://github.com/respeaker/mic_array_dfu)をご覧ください。  
-**Macでのファームウェア更新**については[こちら](https://github.com/jerryyip/respeaker_micarray_dfu_mac_linux)をご覧ください。
+**Linux上でのファームウェア更新**については[こちら](https://github.com/respeaker/mic_array_dfu)をご覧ください。
+**Mac上でのファームウェア更新**については[こちら](https://github.com/jerryyip/respeaker_micarray_dfu_mac_linux)をご覧ください。
 
-## ReSpeaker Mic ArrayのHIDによる制御
+## ReSpeaker Mic Array制御用HID
 
-ユーザーはUSB HIDを介してReSpeaker Mic Arrayを制御できます。詳細は[通信プロトコル](https://github.com/Fuhua-Chen/ReSpeaker-Microphone-Array-HID-tool)をご覧ください。
+ユーザーはUSB HID経由でReSpeaker Mic Arrayを制御できます。[通信プロトコル](https://github.com/Fuhua-Chen/ReSpeaker-Microphone-Array-HID-tool)をご覧ください。
 
-注意：最新の**rawバージョン**を使用している場合、LEDのみを制御できます。
+最新の*rawバージョン*を使用している場合は、LEDのみ制御できることにご注意ください。
 
-以下はPythonの例です：
+以下はpythonの例です：
 
 ```python
 #!/usr/bin/env python
@@ -183,7 +180,7 @@ class MicArray:
         for _ in range(6):
             data = self.hid.read()
             # print [int(x) for x in data]
-            # VADデータをスキップ
+            # skip VAD data
             if int(data[0]) != 0xFF and int(data[1]) != 0xFF:
                 return data[4:(4 + length)]
 
@@ -198,7 +195,7 @@ class MicArray:
         elif type(data) is list:
             array = bytearray(data)
         else:
-            raise TypeError('%sはサポートされていません' % type(data))
+            raise TypeError('%s is not supported' % type(data))
         return array
 
 def main():
@@ -207,10 +204,10 @@ def main():
 
     mic = MicArray()
 
-    print("使用中: %s" % usb_hid.usb_backend)
+    print("Using: %s" % usb_hid.usb_backend)
 
     if len(sys.argv) < 3:
-        print('使用方法: python {} w 0x0 0x000003'.format(sys.argv[0]))
+        print('Usage: python {} w 0x0 0x000003'.format(sys.argv[0]))
         sys.exit(1)
 
     try:
@@ -242,61 +239,61 @@ if __name__ == '__main__':
 
 ## FAQ
 
-### Q1: *xvsm バージョン*のファームウェアを使用して、Mic Arrayから音声ソースの方向を取得する方法は？
+### Q1: *xvsm バージョン* ファームウェアを使用して Mic Array から音声ソース方向を取得する方法は？
 
-  Windowsを使用している場合は、[ガイド](https://github.com/respeaker/get_started_with_respeaker/wiki/Mic-Array)に従うか、[HIDツール](https://github.com/Fuhua-Chen/ReSpeaker-Microphone-Array-HID-tool)を使用してください。
+  Windows を使用する場合は、[ガイド](https://github.com/respeaker/get_started_with_respeaker/wiki/Mic-Array) に従うか、当社の [HID ツール](https://github.com/Fuhua-Chen/ReSpeaker-Microphone-Array-HID-tool) を使用してください。
 
-  Python & C hidapi の例は[こちら](https://github.com/elthef/respeaker-xmos-hid)です。
+  Python & C hidapi の例は [こちら](https://github.com/elthef/respeaker-xmos-hid) にあります
 
-### Q2: WindowsでAudacityを使用して8チャンネルの生データを抽出する方法は？
+### Q2: Windows で audacity を使用して 8 チャンネルの生データを抽出する方法は？
 
-  Windows WASAPIを選択してください。以下の画像をご参照ください。ファームウェアバージョンを0x032から0x082に切り替えたい場合は、切り替える前にデバイスマネージャーでデバイスをアンインストールしてください。アンインストール後、DFUを介してファームウェアを更新し、デバイスを再インストールしてください。
+  Windows WASA を選択してください。画像は以下の通りです。ファームウェアバージョンを 0x032 から 0x082 に切り替えたい場合は、その前にデバイス管理でデバイスをアンインストールしてください。アンインストール後、DFU 経由でファームウェアを更新し、デバイスを再インストールしてください。
 
 ![](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/img/audacity.png)
 
-### Q3: Mic ArrayはどのようにRespeaker Coreと通信しますか？
+### Q3: Mic array は Respeaker Core とどのように通信しますか？
 
-  Mic ArrayはUSBを介してRespeaker Coreと通信します。
+  Mic array は USB を通じて Respeaker Core と通信します。
 
-### Q4: [ReSpeaker-Microphone-Array-HID-tool](https://github.com/Fuhua-Chen/ReSpeaker-Microphone-Array-HID-tool) のVADは何を意味しますか？
+### Q4: [ReSpeaker-Microphone-Array-HID-tool](https://github.com/Fuhua-Chen/ReSpeaker-Microphone-Array-HID-tool) の VAD は何を表しますか？
 
   ![](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/img/VAD.png)
 
-  | データ  | 角度 |
+  | Data  | Degree |
   |-------|--------|
   | 1e, 0 | 30     |
   | e, 1  | 270    |
   | d2,0  | 210    |
   | 96,0  | 150    |
 
-## オンライン回路図ビューア
+## Schematic Online Viewer
 
 <div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/res/Respeaker%20Microphone%20Array%20v1.0%20Eagle%20File.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
 
-## リソース
+## Resources
 
-- **[Eagle]** [ReSpeaker Microphone Array SCH](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/res/Respeaker%20Microphone%20Array%20v1.0.sch.zip)
-- **[Eagle]** [ReSpeaker Microphone Array BRD](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/res/Respeaker%20Microphone%20Array%20v1.0.brd.zip)
+- **[Eagle]**[ReSpeaker Microphone Array SCH](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/res/Respeaker%20Microphone%20Array%20v1.0.sch.zip)
+- **[Eagle]**[ReSpeaker Microphone Array BRD](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/res/Respeaker%20Microphone%20Array%20v1.0.brd.zip)
 - **[PDF]** [ReSpeaker Microphone Array SCH](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/res/Respeaker%20Microphone%20Array%20v1.0%20Sch.pdf)
 - **[PDF]** [ReSpeaker Microphone Array PCB](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array/res/Respeaker%20Microphone%20Array%20v1.0%20PCB.pdf)
 
-## プロジェクト
+## Project
 
-**ReSpeaker Mic Arrayを使用してRaspberry PiでGoogleアシスタントを構築する**: ReSpeaker Mic Arrayを使用すれば、Raspberry PiでGoogleアシスタントを構築できます！
+**ReSpeaker Mic Array を使用して RPi で Google Assistant を構築**: ReSpeaker Mic Array を使用して、Raspberry Pi で Google Assistant を構築できます！
 
 <iframe frameborder='0' height='327.5' scrolling='no' src='https://www.hackster.io/SeeedStudio/build-google-assistant-on-rpi-with-respeaker-mic-array-1030bb/embed' width='350'></iframe>
 
-## 技術サポート & 製品ディスカッション
+## Tech Support & Product Discussion
 
-弊社製品をお選びいただきありがとうございます！製品の使用体験がスムーズになるよう、さまざまなサポートを提供しています。お客様の好みやニーズに応じた複数のコミュニケーションチャネルをご用意しています。
+当社の製品をお選びいただき、ありがとうございます！当社の製品での体験が可能な限りスムーズになるよう、さまざまなサポートを提供しています。さまざまな好みやニーズに対応するため、複数のコミュニケーションチャンネルを提供しています。
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

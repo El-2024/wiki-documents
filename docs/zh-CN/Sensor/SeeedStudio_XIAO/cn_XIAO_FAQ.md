@@ -1,6 +1,6 @@
 ---
 description: XIAO-FAQ 页面
-title: XIAO 系列常见问题
+title: XIAO 系列常见问题解答
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/XIAO_FAQ
 last_update:
@@ -14,7 +14,7 @@ last_update:
 
 详情请点击[**这里**](/cn/noport_upload_fails)
 
-### 针对 XIAO nRF52840 (Sense)
+### 关于 XIAO nRF52840 (Sense)
 
 #### Q1: 使用 XIAO nRF52840 (Sense) 进行电池充电时有哪些注意事项？
 
@@ -24,7 +24,7 @@ last_update:
 
 详情请点击[**这里**](/cn/bat_5vNo_OUTPUT)
 
-### 针对 XIAO ESP32C3
+### 关于 XIAO ESP32C3
 
 #### Q1: 如何检查电池电压
 
@@ -38,13 +38,13 @@ last_update:
 
 详情请点击[**这里**](/cn/reflash_the_bootloader)
 
-### 针对 XIAO ESP32S3 (Sense)
+### 关于 XIAO ESP32S3 (Sense)
 
 #### Q1: 为什么我的 XIAO 在圆角处出现不齐平的问题
 
 详情请点击[**这里**](/cn/not_being_flush)
 
-### 针对 Seeed Studio XIAO 圆形显示屏
+### 关于 Seeed Studio XIAO 圆形显示屏
 
 #### Q1: 为什么上传程序后显示屏没有任何显示？
 
@@ -74,7 +74,7 @@ last_update:
 
 详情请点击[**这里**](/cn/two_TF_card)
 
-### 针对 XIAO CAN 总线扩展板
+### 关于 XIAO CAN 总线扩展板
 
 #### Q1: XIAO CAN 总线扩展板支持的最大波特率是多少？
 
@@ -88,7 +88,7 @@ last_update:
 
 详情请点击[**这里**](/cn/in_other_microcontrollers_or_development_boards)
 
-#### Q4: CAN 总线连接的最大电缆长度是否有限制？
+#### Q4: CAN 总线连接的最大电缆长度有限制吗？
 
 详情请点击[**这里**](/cn/limitations_on_the_maximum_cable_length)
 
@@ -96,7 +96,7 @@ last_update:
 
 详情请点击[**这里**](/cn/troubleshoot_CAN_communication_issues)
 
-# 技术支持
+## 技术支持
 
 感谢您选择我们的产品！我们**在这里**为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 

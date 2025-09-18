@@ -17,8 +17,8 @@ last_update:
 :::tip
 この記事は、Seeed Studio XIAO ESP32開発Matterシリーズの第3回チュートリアルです。前回のチュートリアルをまだ読んでいない場合は、デバイスが要求通りに設定されていることを確認するために、まず前回のチュートリアルを読むことをお勧めします。
 
-- **[Espressif ESP-IDFを使用したXIAOでの開発](https://wiki.seeedstudio.com/xiao_idf)**
-- **[XIAO ESP32シリーズでMatterを素早く始める](https://wiki.seeedstudio.com/getting_started_with_matter)**
+- **[Espressif ESP-IDFを使用したXIAOでの開発](https://wiki.seeedstudio.com/ja/xiao_idf)**
+- **[XIAO ESP32シリーズでMatterを素早く始める](https://wiki.seeedstudio.com/ja/getting_started_with_matter)**
 
 :::
 
@@ -138,7 +138,7 @@ XIAOに加えて、WS281xモデルのライトバーまたはライトビーズ�
 ## ESP-Matter のステップバイステップインストール
 
 :::tip
-Matter の環境インストールを開始する前に、[ESP-IDFプログラミング環境がインストールされ、アクセス可能であること](https://wiki.seeedstudio.com/xiao_idf/#step-5-set-up-environment-variables)を確認してください。
+Matter の環境インストールを開始する前に、[ESP-IDFプログラミング環境がインストールされ、アクセス可能であること](https://wiki.seeedstudio.com/ja/xiao_idf/#step-5-set-up-environment-variables)を確認してください。
 :::
 
 ### ステップ1. 依存関係のインストール
@@ -481,7 +481,7 @@ matter onboardingcodes onnetwork
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoc6-matter/9.png" style={{width:1000, height:'auto'}}/></div>
 
-ここで最後に表示されるのは、デバイスのペアリングQRコードへのリンクです。QRコードを使用して、[Getting Started](https://wiki.seeedstudio.com/getting_started_with_matter/#step-2-add-a-device-by-scanning-the-code-using-the-iphone-home-app)の手順と同様に、携帯電話でコードをスキャンしてMatterデバイスをバインドできます。
+ここで最後に表示されるのは、デバイスのペアリングQRコードへのリンクです。QRコードを使用して、[Getting Started](https://wiki.seeedstudio.com/ja/getting_started_with_matter/#step-2-add-a-device-by-scanning-the-code-using-the-iphone-home-app)の手順と同様に、携帯電話でコードをスキャンしてMatterデバイスをバインドできます。
 
 ## Chip-toolを使用したMatterデバイスのリモートデバッグ
 

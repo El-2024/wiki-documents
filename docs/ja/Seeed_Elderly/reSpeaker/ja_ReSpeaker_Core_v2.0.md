@@ -6,21 +6,16 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /ja/ReSpeaker_Core_v2.0
 last_update:
-  date: 05/15/2025
+  date: 1/11/2023
   author: jianjing Huang
 ---
-:::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+![enter image description here](https://files.seeedstudio.com/wiki/Respeaker_V2/img/ReSpeaker_V2_front.JPG)
 
-![画像の説明を入力してください](https://files.seeedstudio.com/wiki/Respeaker_V2/img/ReSpeaker_V2_front.JPG)
+SeeedのReSpeaker Core v2.0は音声インターフェースアプリケーション向けに設計されています。Rockchip RK3229をベースとし、最大1.5GHzで動作するクアッドコアARM Cortex A7と1GB RAMを搭載しています。このボードは6マイクアレイを特徴とし、DoA（到来方向）、BF（ビームフォーミング）、AEC（音響エコーキャンセレーション）などの音声アルゴリズムを含んでいます。
 
-SeeedのReSpeaker Core v2.0は、音声インターフェースアプリケーション向けに設計されています。これは、最大1.5GHzで動作するクアッドコアARM Cortex A7であるRockchip RK3229をベースにしており、1GBのRAMを搭載しています。このボードは、DoA（到来方向）、BF（ビームフォーミング）、AEC（音響エコーキャンセレーション）などの音声アルゴリズムを備えた6つのマイクアレイを特徴としています。
+ReSpeaker Core v2.0はGNU/Linuxオペレーティングシステムを実行します。強力でアクティブなコミュニティの恩恵を受け、開発、テスト、デプロイメントのための既存のソフトウェアとツールの使用を可能にし、迅速な製品開発を実現します。
 
-ReSpeaker Core v2.0はGNU/Linuxオペレーティングシステムを実行します。これにより、既存のソフトウェアやツールを利用して開発、テスト、展開が可能となり、迅速な製品開発を実現します。
-
-ReSpeaker Core v2.0は、企業が評価するための多機能な開発ボードとして設計されています。この目的のために、ボードは2つの主要なセクションで構成されています。1つ目は、CPU、メモリ（RAM）、PMUを含む中心のコアモジュールです。2つ目は、eMMC、コネクタ、無線接続コンポーネントなどの周辺機器を含む外部キャリアボードです。どちらのセクションも、Seeedのカスタマイズサービスを通じてカスタマイズ可能です。
+ReSpeaker Core v2.0は、企業が評価するための機能豊富な開発ボードとして設計されています。この目的のため、ボードは2つの主要セクションで構成されています。最初のセクションは、CPU、メモリ（RAM）、PMUを含む中央コアモジュールです。2番目のセクションは、eMMC、コネクタ、ワイヤレス接続コンポーネントなどの周辺機器を含む外側のキャリアボードです。どちらのセクションも、またはその両方を、Seedのカスタマイゼーションサービスを通じてカスタマイズできます。
 
 <p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/ReSpeaker-Core-V2.0-p-3039.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
 
@@ -28,72 +23,83 @@ ReSpeaker Core v2.0は、企業が評価するための多機能な開発ボー�
 
 ## 特徴
 
-- 高性能SoCを備えたオールインワンソリューション
+- 高性能SoCによるオールインワンソリューション
 - 1GB RAM & 4GB eMMC
 - 6マイクアレイ  
 - USB OTG、USBデバイス
-- WiFi b/g/nおよびBLE 4.0
+- WiFi b/g/n および BLE 4.0
 - 検出範囲：約5メートル
 - 他のセンサー用のGroveソケット
 - 3.5mmオーディオジャック & JST2.0コネクタ
-- 6マイクアレイと2ループバック（ハードウェアループバック）用の8チャンネルADC
+- 6マイクアレイと2ループバック用の8チャンネルADC（ハードウェアループバック）
 
 - DebianベースのLinuxシステム
-- C++ SDKおよびPythonラッパー
-- 音声アルゴリズム用SDKと完全なドキュメント
+- C++ SDKとPythonラッパー
+- 完全なドキュメント付き音声アルゴリズムSDK
 - 音声アルゴリズムと機能：
 
   - キーワードウェイクアップ
   - BF（ビームフォーミング）
   - DoA（到来方向）
   - NS（ノイズ抑制）
-  - AEC（音響エコーキャンセレーション）およびAGC（自動ゲイン制御）
+  - AEC（音響エコーキャンセレーション）とAGC（自動ゲイン制御）
 
 ## 仕様
 
+<!-- <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-dc35{background-color:#f9f9f9;border-color:inherit;vertical-align:top}
+.tg .tg-l711{border-color:inherit}
+.tg .tg-us36{border-color:inherit;vertical-align:top}
+.tg .tg-4646{background-color:#f9f9f9;border-color:inherit}
+.tg .tg-gcw3{border-color:#000000}
+</style> -->
+
 <table className="tg">
   <tbody><tr>
-      <th className="tg-gcw3" colSpan={3}>特徴</th>
+      <th className="tg-gcw3" colSpan={3}>機能</th>
     </tr>
     <tr>
-      <td className="tg-4646" rowSpan={6}>SoC（Rockchip RK3229）</td>
+      <td className="tg-4646" rowSpan={6}>Soc(Rockchip RK3229)</td>
       <td className="tg-4646">CPU</td>
-      <td className="tg-4646">クアッドコアCortex-A7、最大1.5GHz</td>
+      <td className="tg-4646">クアッドコア Cortex-A7、最大1.5GHz</td>
     </tr>
     <tr>
       <td className="tg-l711">GPU</td>
-      <td className="tg-l711">Mali400MP、OpenGL ES1.1/2.0対応</td>
+      <td className="tg-l711">Mali400MP、OpenGL ES1.1/2.0サポート</td>
     </tr>
     <tr>
       <td className="tg-dc35">メモリ</td>
-      <td className="tg-dc35">1GB RAM（コアモジュールにRAMとPMUを含む）</td>
+      <td className="tg-dc35">1GB RAM（コアモジュールにはRAMとPMUが含まれます）</td>
     </tr>
     <tr>
       <td className="tg-us36" rowSpan={3}>システム</td>
       <td className="tg-us36">動作電圧：3.6-5V</td>
     </tr>
     <tr>
-      <td className="tg-dc35">80ピンオンモジュール</td>
+      <td className="tg-dc35">モジュール上80ピン</td>
     </tr>
     <tr>
-      <td className="tg-us36">PMUオンモジュール</td>
+      <td className="tg-us36">モジュール上PMU</td>
     </tr>
     <tr>
       <td className="tg-dc35" rowSpan={7}>周辺機器</td>
       <td className="tg-dc35">ネットワーク</td>
-      <td className="tg-dc35">WiFi b/g/n;<br />BLE 4.0;<br />イーサネット</td>
+      <td className="tg-dc35">WiFi b/g/n;<br />BLE 4.0;<br />Ethernet</td>
     </tr>
     <tr>
       <td className="tg-us36">USB</td>
-      <td className="tg-us36">2 x USBホスト; 1 x USB OTG; 1 x USB電源</td>
+      <td className="tg-us36">2 x USB Host;   1 x USB OTG;    1 x USB電源</td>
     </tr>
     <tr>
       <td className="tg-dc35">Grove</td>
-      <td className="tg-dc35">1 x Groveソケット（I2Cおよびデジタル）</td>
+      <td className="tg-dc35">1 x Groveソケット（I2CとDigital）</td>
     </tr>
     <tr>
       <td className="tg-us36">ビデオ</td>
-      <td className="tg-us36">4K VP9および4K 10ビットH265/H264ビデオデコード、最大60fps</td>
+      <td className="tg-us36">4K VP9および4K 10bits H265/H264ビデオデコード、最大60fps</td>
     </tr>
     <tr>
       <td className="tg-dc35">オーディオ</td>
@@ -113,13 +119,13 @@ ReSpeaker Core v2.0は、企業が評価するための多機能な開発ボー�
       <td className="tg-us36">200mA /5V</td>
     </tr>
     <tr>
-      <td className="tg-dc35">アルゴリズムモードで動作</td>
+      <td className="tg-dc35">アルゴリズム動作モード</td>
       <td className="tg-dc35">330mA /5V</td>
     </tr>
   </tbody></table>
 
 :::note
-​    この表はReSpeaker Core v2.0の基本仕様のみを記載しています。より専門的なパラメータについては、[ReSpeaker Core v2.0の音響および電気仕様](https://files.seeedstudio.com/wiki/Respeaker_V2/res/Acoustic%26Electrical_Specification_of_ReSpeaker_Core_v2.0.pdf)をご参照ください。
+​    この表はReSpeakser Core v2.0の基本仕様のみを記載しています。より専門的なパラメータについては[ReSpeaker Core v2.0の音響・電気仕様](https://files.seeedstudio.com/wiki/Respeaker_V2/res/Acoustic%26Electrical_Specification_of_ReSpeaker_Core_v2.0.pdf)を参照してください。
 :::
 
 ## ハードウェア概要
@@ -128,52 +134,52 @@ ReSpeaker Core v2.0は、企業が評価するための多機能な開発ボー�
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/hardware_overview.png)
 
-- **<font face="" size="3" font color="ff0000">①</font> 3.5mm ヘッドフォンジャック:**
-オーディオ出力用。アクティブスピーカーやヘッドフォンをこのポートに接続できます。
+- **<font face="" size="3" font color="ff0000">①</font> 3.5mmヘッドホンジャック:**
+音声を出力します。このポートにアクティブスピーカーやヘッドホンを接続できます。
 
 - **<font face="" size="3" font color="ff0000">②</font> USB OTG:**
-このUSBポートは、putty（または他のシリアルツール）のシリアルモードを介してコンピュータに接続するために使用されます。
+このUSBポートは、putty（または他のシリアルツール）のシリアルモード経由でコンピュータに接続するために使用されます。
 
 - **<font face="" size="3" font color="ff0000">③</font> USB電源入力:**
-このポートは、Respeaker Core v2.0に電力を供給するために使用されます。
+このポートはRespeaker Core v2.0に電源を供給するために使用されます。
 
-- **<font face="" size="3" font color="ff0000">④</font> スピーカージャック:**
-パッシブスピーカー用のオーディオ出力。JST 2.0ソケット。
+- **<font face="" size="3" font color="ff0000">④</font>スピーカージャック:**
+パッシブスピーカー用の音声出力。Jst 2.0ソケット。
 
 - **<font face="" size="3" font color="ff0000">⑤</font> UART:**
-このUARTポートを介して、ReSpeaker Core v2.0をコンピュータに接続することもできます。
+このUARTポート経由でReSpeaker Core v2.0をコンピュータに接続することもできます。
 
 - **<font face="" size="3" font color="ff0000">⑥</font> 8ピンGPIO:**
 拡張アプリケーション用の汎用入出力インターフェース。
 
 - **<font face="" size="3" font color="ff0000">⑦</font> SDカードスロット:**
-micro-SDカードを挿入するためのスロット。
+micro-SDカードを挿入します。
 
 - **<font face="" size="3" font color="ff0000">⑧</font> eMMC:**
-埋め込み型マルチメディアカード。イメージをeMMCに書き込むことで、ReSpeaker Core v2.0をeMMCから起動できます。
+組み込みマルチメディアカード。eMMCにイメージを書き込むことで、ReSpeaker Core v2.0をeMMCから起動できます。
 
 - **<font face="" size="3" font color="ff0000">⑨</font> USBホスト:**
-USBマウス、USBキーボード、USBフラッシュディスクなどのUSBデバイスを、これらの2つのUSBホストを介してReSpeaker Core v2.0に接続できます。
+これら2つのUSBホスト経由で、USBマウス、USBキーボード、USBフラッシュディスクなどのUSBデバイスをReSpeaker Core v2.0に接続できます。
 
-- **<font face="" size="4" font color="ff0000">Ⓐ</font> イーサネット:**
+- **<font face="" size="4" font color="ff0000">Ⓐ</font> Ethernet:**
 インターネットへのアクセス。
 
 - **<font face="" size="4" font color="ff0000">Ⓑ</font> HDMI:**
-ビデオ出力。
+映像出力。
 
-- **<font face="" size="4" font color="ff0000">Ⓒ</font> BluetoothおよびWi-Fiアンテナ:**
-オンボードアンテナはWi-FiおよびBluetooth用です。また、2.4GアンテナまたはPCBアンテナ用のインターフェースも提供されています。
+- **<font face="" size="4" font color="ff0000">Ⓒ</font> BluetoothとWIFIアンテナ:**
+オンボードアンテナはWIFIとBluetooth用です。また、2.4GアンテナまたはPCBアンテナ用のインターフェースも提供しています。
 
 - **<font face="" size="4" font color="ff0000">Ⓓ</font> Groveソケット:**
 デジタルまたはI2C用のGroveソケット。
 
 **システム図**
 
-クリックすると元の画像を表示できます。
+クリックして元の画像を表示できます
 
 <a href="https://files.seeedstudio.com/wiki/Respeaker_V2/img/SYS.png" target="_blank"><img src="https://files.seeedstudio.com/wiki/Respeaker_V2/img/SYS.png"/></a>
 
-**ピンアウト**
+**ピン配置**
 
 **ヘッダーのピンインデックス定義**
 
@@ -181,9 +187,9 @@ USBマウス、USBキーボード、USBフラッシュディスクなどのUSB�
 |--------------|-------------|
 | ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/GPIO.png)|![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/socketBLACK.png)|
 
-**GPIOピン**
+**GPIO ピン**
 
-MRAA| ヘッダーピンインデックス | SYSFSピン |RK3229ピン
+MRAA| HEADER PIN INDEX | SYSFS PIN |RK3229 PIN
 --|--|--|--
 0 |0| 1091| GPIO2_D3
 1 |1|   --| VCC
@@ -198,9 +204,9 @@ MRAA| ヘッダーピンインデックス | SYSFSピン |RK3229ピン
 10|10| --| VCC
 11|11| --| GND
 
-**I2Cピン**
+**I2C ピン**
 
-|MRAA |ヘッダーピンインデックス |SYSFSピン| RK3229ピン|
+|MRAA |HEADER PIN INDEX |SYSFS PIN| RK3229 PIN|
 |--|--|--|--|
 |0 |8 |-- |I2C2_SCL|
 |0 |9 |-- |I2C2_SDA|
@@ -219,162 +225,164 @@ MRAA| ヘッダーピンインデックス | SYSFSピン |RK3229ピン
 - インテリジェント音声アシスタントシステム
 - 音声レコーダー
 - 音声会議システム
-- 会議用通信機器
+- 会議通信機器
 - 音声対話ロボット
 - 車載音声アシスタント
-- その他、音声コマンドが必要なシナリオ
+- その他音声コマンドが必要なシナリオ
 
 ## はじめに
 
 ### 準備
 
-このセクションでは以下について説明します：
+この部分では以下について説明します：
 
 - イメージのインストール方法
 - シリアルコンソールへのアクセス方法
 - WiFiの設定方法
-- SSHとVNCへの接続方法
+- SSH & VNCへの接続方法
 - Bluetoothの設定方法
-- 音声録音と再生テスト
+- 音声録音と再生のテスト
 
-**必要条件**
+**前提条件**
 
 - ReSpeaker Core V2.0
 - Wi-Fiネットワーク
 - 4GB（またはそれ以上）のSDカードとSDカードリーダー
 - PCまたはMac
 - [USB To Uart Adapter](https://www.seeedstudio.com/USB-To-Uart-5V%26amp%3B3V3-p-1832.html)（オプション）
-- 5V 1A Micro USBアダプター（電源用、オプション）
+- 電源用5V 1A Micro USBアダプター（オプション）
 - 2本のMicro-USBケーブル
 
 :::caution
-USBケーブルを慎重に接続してください。そうしないとインターフェースが損傷する可能性があります。また、内部に4本のワイヤーがあるUSBケーブルを使用してください。2本のワイヤーしかないケーブルではデータ転送ができません。使用しているケーブルが不明な場合は、<a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><b>こちら</b></a>から購入できます。
+USBケーブルは優しく差し込んでください。そうしないとインターフェースを損傷する可能性があります。内部に4本の線があるUSBケーブルを使用してください。2本線のケーブルではデータを転送できません。お持ちのケーブルが不明な場合は、<a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><b>こちら</b></a>をクリックして購入できます
 :::
 
 **イメージのインストール**
 
-Raspberry Piと同様に、ReSpeaker Core v2.0を使用するには、SDカードからイメージをインストールする必要があります。ReSpeaker Core v2.0を起動する方法は2つあります。SDカードから起動するか、eMMCから起動するかです。
+Raspberry Piと同様に、ReSpeaker Core v2.0を起動して実行するには、SDカードからReSpeaker Core v2.0イメージをインストールする必要があります。Respeaker core v2.0を起動する方法を2つ提供しています。SDカードから起動するか、eMMCから起動することができます。
 
 **A. SDカードから起動**
 
-- **ステップ1.** [mirror-azure](http://respeaker.seeed.io/images/)をクリックして、最新のイメージzipファイルをダウンロードします：```respeaker-debian-9-lxqt-sd-********-4gb.img.xz```または```respeaker-debian-9-iot-sd-********-4gb.img.xz```。
+- **ステップ 1.** [mirror-azure](http://respeaker.seeed.io/images/)をクリックして、最新のイメージzipファイルをダウンロードしてください：```respeaker-debian-9-lxqt-sd-********-4gb.img.xz``` または ```respeaker-debian-9-iot-sd-********-4gb.img.xz```。
 
 |セクション|説明|
 |---|----|
-|**iot** / **lxqt**|**lxqt**バージョンはデスクトップGUIを含み、**iot**バージョンは含みません。ReSpeaker Core v2.0を初めて使用する場合は、**lxqt**バージョンを推奨します。|
-|**flasher** / **sd**|**flasher**バージョンはオンボードeMMCをフラッシュするために使用されます。フラッシュ後はSDカードを取り外すことができます。**sd**バージョンは常にSDカードを挿入したままにする必要があります。|
+|**iot** / **lxqt**|**lxqt**バージョンはデスクトップGUIが付属していますが、**iot**バージョンには付属していません。ReSpeaker Core v2.0が初めての場合は、**lxqt**バージョンをお勧めします。|
+|**flasher** / **sd**|**flasher**バージョンはオンボードeMMCをフラッシュするために使用され、フラッシュ後はSDカードを取り外すことができます。**sd**バージョンでは、SDカードを常に挿入したままにする必要があります。|
 
-開発には、**lxqt + sd**バージョンを推奨します。そのため、**respeaker-debian-9-lxqt-sd-[date]-4gb.img.xz**ファイルをダウンロードしてください。
+開発には、**lxqt + sd** バージョンを推奨します。そのため、**respeaker-debian-9-lxqt-sd-[date]-4gb.img.xz** ファイルをダウンロードしてください。
 
 :::caution
-このWikiは、**respeaker-debian-9-lxqt-sd-20180610-4gb.img.xz**イメージバージョンに基づいています。
+このwikiは **respeaker-debian-9-lxqt-sd-20180610-4gb.img.xz** イメージバージョンに基づいています。
 :::
 
-- **ステップ2.** SDカードリーダーを使用して、SDカードをPCまたはMacに接続します。容量が4GB以上のSDカードが必要です。
+- **ステップ 2.** SDカードリーダーを使用して、SDカードをPCまたはMACに接続します。4G以上の容量のSDカードが必要です。
 
-- **ステップ3.** [Etcher](https://etcher.io/)をダウンロードして、```*.img.xz```ファイルを直接SDカードに書き込みます。または、```*.img.xz```ファイルを解凍して```*.img```ファイルに変換し、他のイメージ書き込みツールを使用してSDカードに書き込むこともできます。
+- **ステップ 3.** [Etcher](https://etcher.io/)をここからダウンロードし、Etcherを使用して```*.img.xz```ファイルを直接SDカードに書き込みます。または、```*.img.xz```ファイルを```*.img```ファイルに解凍してから、他のイメージ書き込みツールでSDカードに書き込みます。
 <br />
-<br />プラスアイコンをクリックしてダウンロードしたイメージを追加すると、ソフトウェアが自動的に接続されたSDカードを選択します。その後、Flash!をクリックして書き込みを開始します。完了まで約10分かかります。
+
+<br />プラスアイコンをクリックして、ダウンロードしたイメージを追加すると、ソフトウェアが自動的に接続したSDカードを選択します。その後、Flash!をクリックして書き込みを開始します。完了まで約10分かかります。
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/v2-flash-sd.png)
 
-- **ステップ4.** イメージをSDカードに書き込んだ後、SDカードをReSpeaker Core v2.0に挿入します。PWR_IN micro USBポートを使用してボードに電源を供給し、電源を入れた後はSDカードを取り外さないでください。ReSpeaker Core v2.0はSDカードから起動し、USER1とUSER2のLEDが点灯します。USER1は通常、起動時にハートビートパターンで点滅するように設定され、USER2は通常、SDカードアクセス中に点灯するように設定されています。次のセクション「シリアルコンソール」に進んでください。
+- **ステップ 4.** イメージをSDカードに書き込んだ後、SDカードをReSpeaker Core v2.0に挿入します。PWR_IN micro usbポートを使用してボードに電源を供給し、電源投入後はSDカードを取り外さないでください。ReSpeaker Core v2.0はSDカードから起動し、USER1とUSER2のLEDが点灯するのを確認できます。USER1は通常、起動時にハートビートパターンで点滅するように設定され、USER2は通常、起動時にSDカードアクセス中に点灯するように設定されています。次に、次の部分であるシリアルコンソールに進んでください。
 
 **B. eMMCから起動**
 
-工場出荷時にはeMMCにファームウェアがありません。PCまたはMacを使用してReSpeakerのイメージファイルをReSpeakerのeMMC（オンボードフラッシュメモリ）にフラッシュすることができます。その後、ReSpeakerはSDカードではなくeMMC（オンボードフラッシュメモリ）から起動します。
+工場出荷時にはEMMCにファームウェアがありませんが、PCまたはMacを使用してReSpeakerイメージファイルをReSpeakerのeMMC（オンボードフラッシュメモリ）にフラッシュできます。その後、ReSpeakerはeMMC（オンボードフラッシュメモリ）から起動し、SDカードからは起動しません。
 
-- **ステップ1.** 最新のイメージzipファイル```respeaker-debian-9-iot-flasher-********-4gb.img.xz```または```respeaker-debian-9-lxqt-flasher-********-4gb.img.xz```をmirror-azureからダウンロードします。lxqtバージョンはDebianデスクトップを含み、iotバージョンは含みません。flasherバージョンはeMMCをフラッシュするためのもので、sdバージョンはSDカードから起動するためのものです。
+- **ステップ 1.** mirror-azureで最新のイメージzipファイル```respeaker-debian-9-iot-flasher-********-4gb.img.xz```または```respeaker-debian-9-lxqt-flasher-********-4gb.img.xz```をダウンロードします。lxqtバージョンにはDebianデスクトップが付属し、iotバージョンには付属しません。flasherバージョンはeMMCフラッシュ用で、sdバージョンはSDカードからの起動用です。
 
-- **ステップ2.** ```*.img.xz```ファイルをEtcherで直接SDカードに書き込むか、```*.img.xz```ファイルを解凍して```*.img```ファイルに変換し、他のイメージ書き込みツールを使用してSDカードに書き込みます。
+- **ステップ 2.** Etcherを使用して```*.img.xz```ファイルを直接SDカードに書き込むか、```*.img.xz```ファイルを```*.img```ファイルに解凍してから、他のイメージ書き込みツールでSDカードに書き込みます。
 
-- **ステップ3.** SDカードを書き込んだ後、SDカードをReSpeaker Core v2.0に挿入します。PWR_IN micro USBポートを使用してボードに電源を供給し、フラッシュ中はSDカードを取り外さないでください。
+- **ステップ 3.** SDカードを書き込んだ後、SDカードをReSpeaker Core v2.0に挿入します。PWR_IN micro usbポートを使用してボードに電源を供給し、フラッシュ中はSDカードを取り外さないでください。
 
-フラッシュプロセス中、USER1とUSER2のLEDが交互に点滅します。完了まで約10分かかります。LEDが消灯したらボードの電源を切り、SDカードを取り外して再度電源を入れます。LEDが点灯すれば、イメージがeMMCに正しくフラッシュされたことを意味します。
+フラッシュプロセス中、USER1とUSER2のLEDが交互に点滅するのを確認できます。完了まで約10分かかります。LEDが消灯したら、ボードの電源を切り、SDカードを取り出して再度電源を入れることができます。LEDが点灯すれば、イメージがeMMCに正しくフラッシュされたことを意味します。
 
-次のコマンドでイメージバージョンを確認することもできます：`cat /etc/issue.net`
+このコマンドでイメージバージョンを確認することもできます：cat /etc/issue.net。
 
 **シリアルコンソール**
 
-ReSpeaker Core v2.0が起動できるようになったら、コンソールを介してLinuxシステムにアクセスし、WiFiの設定などを行いたい場合があります。コンソールにアクセスする方法は2つあります：
+ReSpeaker Core v2.0が起動できるようになったので、WiFiの設定などのためにコンソール経由でLinuxシステムにアクセスしたい場合があります。コンソールを取得する方法は2つあります：
 
-- A. OTG USBポート - ボード上でLinuxシステムが動作している必要があります
-- B. UARTポート - コンソールにアクセスするための難しい方法で、低レベルの問題をデバッグする際に使用できます
+- A. OTG USBポート - これにはボード上で動作するLinuxシステムが必要です
 
-**A. OTG経由での接続**
+- B. UARTポート - これはコンソールにアクセスする困難な方法で、低レベルの問題のデバッグに使用できます
 
-- **ステップ1.** Micro USBケーブルを用意し、それがデータケーブル（単なる電源ケーブルではない）であることを確認してください。Micro USB端をReSpeakerの**OTG** Micro USBポートに接続します（ReSpeakerボードには2つのMicro USBポートがあり、それぞれ異なるシルクスクリーンでラベル付けされています。一つは**PWR_IN**、もう一つは**OTG**です）。もう一方の端をコンピュータに接続します。
+**A. OTG経由の接続**
+
+- **ステップ 1.** micro USBケーブルを見つけ、それがデータケーブル（単なる電源ケーブルではない）であることを確認してください。micro USB端をReSpeakerの**OTG** micro USBポート（ReSpeakerボードには2つのmicro USBポートがあり、異なるシルクスクリーンでラベル付けされています。1つは**PWR_IN**、もう1つは**OTG**です）に接続し、このケーブルのもう一方の端をコンピューターに接続します。
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/lianjiediannan.jpg)
 
-- **ステップ2.** コンピュータでシリアルポートが認識されているか確認します：
+- **ステップ 2.** コンピューターでシリアルポートが認識されているかを確認します：
 
-  - Windows: デバイスマネージャを確認し、新しいシリアルデバイスが```COMx```という名前で表示されます（xは増加する番号）。Windows XP/7/8を使用している場合は、[Windows CDCドライバー](https://github.com/respeaker/get_started_with_respeaker/blob/master/files/ReSpeaker_Gadget_CDC_driver.7z)をインストールする必要があるかもしれません。
-  - Linux: `ls /dev/ttyACM*`を実行すると、```/dev/ttyACMx```が表示されます（xは使用したUSBポートに応じて変化します）。
-  - Mac: `ls /dev/cu.usb*`を実行すると、```/dev/cu.usbmodem14xx```が表示されます（xxは使用したUSBポートに応じて変化します）。
+  - Windows：デバイスマネージャーを確認し、```COMx```という名前の新しいシリアルデバイスがあるはずです（xは増加する番号）。Windows XP/7/8を使用している場合は、[windows CDCドライバー](https://github.com/respeaker/get_started_with_respeaker/blob/master/files/ReSpeaker_Gadget_CDC_driver.7z)をインストールする必要があるかもしれません。
+  - Linux：`ls /dev/ttyACM*`、```/dev/ttyACMx```が取得されるはずです（xは使用したUSBポートによって異なります）。
+  - Mac：`ls /dev/cu.usb*`、```/dev/cu.usbmodem14xx```が取得されるはずです（xxは使用したUSBポートによって異なります）。
 
-- **ステップ 3.** お気に入りのシリアルデバッグツールを使用してシリアルポートに接続します。シリアル設定は以下の通りです：115200 ボーレート、8ビット、パリティなし、ストップビット1、フロー制御なし。例：
+- **ステップ 3.** お気に入りのシリアルデバッグツールを使用してシリアルポートに接続します。シリアルの設定は：115200ボーレート、8ビット、パリティなし、ストップビット1、フロー制御なし。例：
 
-  - Windows: [PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) を使用し、```Serial``` プロトコルを選択、ReSpeaker Core v2.0 の正しい COM ポートを入力し、```115200``` ボーレート、8ビット、パリティなし、ストップビット1、フロー制御なしを設定します。
-  - Linux: 使用する USB To TTL アダプタに応じて、```screen /dev/ttyACM0(,1, など)``` 115200 または ```screen /dev/ttyUSB0(,1, など)``` 115200 を使用します。
-  - Mac: 使用する USB To TTL アダプタに応じて、```screen /dev/cu.usbserial1412(,1422, など)``` 115200 または ```screen /dev/cu.usbmodem1412(,1422, など)``` 115200 を使用します。
+  - Windows：[PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)を使用し、```Serial```プロトコルを選択し、ReSpeaker Core v2.0の正しいCOMポート、```115200```ボー、8ビット、パリティなし、ストップビット1、フロー制御なしを入力します。
+  - Linux：USB To TTLアダプターによって、```screen /dev/ttyACM0(,1, など)``` 115200または```screen /dev/ttyUSB0(,1, など) 115200```になります。
+  - Mac：USB To TTLアダプターによって、```screen /dev/cu.usbserial1412(,1422, など) 115200```または```screen /dev/cu.usbmodem1412(,1422, など) 115200```になります。
 
-- **ステップ 4.** デフォルトのユーザー名は ```respeaker```、パスワードも ```respeaker``` です。
+- **ステップ 4.** デフォルトのユーザー名は```respeaker```で、パスワードも```respeaker```です。
 
-**B. UART ポート経由での接続**
+**B. UARTポート経由の接続**
 
-このセクションでは、USB To TTL アダプタを使用してコンピュータから ReSpeaker の UART ポート（ReSpeaker のスピーカープラグの左側に位置）に接続する方法を説明します。
+このセクションでは、ReSpeakerのUartポート（UartポートはReSpeakerスピーカープラグのすぐ左に位置）に接続されるUSB to TTLアダプターを使用して、コンピューターからReSpeakerへの接続を確立する方法をガイドします。
 
-- **ステップ 1.** UART ポートと PC/Mac を USB To TTL アダプタで接続します。RX/TX の電圧は 3.3V であることに注意してください。USB To TTL アダプタをお持ちでない場合は、[こちら](https://www.seeedstudio.com/USB-To-Uart-5V%26amp%3B3V3-p-1832.html) から購入できます。
+- **ステップ 1.** USB To TTLアダプターを使用してUartポートとPC/Macを接続します。RX/TXの電圧は3.3Vであることに注意してください。USB To TTLアダプターをお持ちでない場合は、[ここ](https://www.seeedstudio.com/USB-To-Uart-5V%26amp%3B3V3-p-1832.html)をクリックして入手できます。
 
-- **ステップ 2.** 以下のシリアルデバッグツールを使用して 115200 ボーレートで接続します：
-  - Windows: [PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) を使用し、```Serial``` プロトコルを選択、ReSpeaker Core v2.0 の正しい COM ポートを入力し、115200 ボーレート、8ビット、パリティなし、ストップビット1、フロー制御なしを設定します。
-  - Linux: 使用する USB To TTL アダプタに応じて、```screen /dev/ttyACM0(,1, など)``` 115200 または ```screen /dev/ttyUSB0(,1, など)``` 115200 を使用します。
-  - Mac: 使用する USB To TTL アダプタに応じて、```screen /dev/cu.usbserial1412(,1422, など)``` 115200 または ```screen /dev/cu.usbmodem1412(,1422, など)``` 115200 を使用します。
+- **ステップ 2.** 115200ボーで以下のシリアルデバッグツールを使用します：
+  - Windows：[PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)を使用し、```Serial```プロトコルを選択し、ReSpeaker Core v2.0の正しいCOMポート、115200ボー、8ビット、パリティなし、ストップビット1、フロー制御なしを入力します。
+  - Linux：USB To TTLアダプターによって、```screen /dev/ttyACM0(,1, など) 115200```または```screen /dev/ttyUSB0(,1, など) 115200```になります。
+  - Mac：USB To TTLアダプターによって、```screen /dev/cu.usbserial1412(,1422, など) 115200```または```screen /dev/cu.usbmodem1412(,1422, など) 115200```になります。
 
-- **ステップ 3.** ログインユーザー名は ```respeaker```、パスワードも ```respeaker``` です。
+- **ステップ 3.** ログインユーザー名は respeaker で、パスワードも respeaker です。
 
-- **ステップ 4.** USB To TTL アダプタをお持ちでない場合、Arduino を使用することもできます。Arduino を使用する場合、ジャンパーワイヤーの一端を Arduino の RESET ピンに、もう一端を GND ピンに接続します。これにより Arduino の ATMEGA MCU をバイパスし、Arduino を USB To TTL アダプタとして使用できます。ビデオチュートリアルは[こちら](https://www.youtube.com/watch?v=qqSLwK1DP8Q)をご覧ください。その後、Arduino の GND ピンを ReSpeaker の UART ポートの GND ピンに接続します。Arduino の Rx ピンを ReSpeaker の UART ポートの Rx ピンに接続し、Arduino の Tx ピンを ReSpeaker の UART ポートの Tx ピンに接続します。最後に、Arduino を USB ケーブルで PC/Mac に接続します。次に、以下のコマンドを使用して Mac または Linux PC が Arduino を認識しているか確認します：
+- **ステップ 4.** USB to TTL アダプターをお持ちでない場合は、Arduino を使用することもできます。Arduino を使用する場合は、ジャンパーワイヤーの一端を Arduino の RESET ピンに、もう一端を Arduino の GND ピンに接続します。これにより Arduino の ATMEGA MCU をバイパスし、Arduino を USB to TTL アダプターに変換できます。ビデオチュートリアルは[こちら](https://www.youtube.com/watch?v=qqSLwK1DP8Q)をご覧ください。次に、Arduino の GND ピンを Respeaker の Uart ポートの GND ピンに接続します。Arduino の Rx ピンを Respeaker の Uart ポートの Rx ピンに接続します。Arduino の Tx ピンを Respeaker の Uart ポートの Tx ピンに接続します。最後に、Arduino の USB ケーブルを使用して Arduino を PC/Mac に接続します。次のコマンドを入力して、Mac または Linux PC が Arduino を認識することを確認してください：
 
 ```
 ls /dev/cu.usb* (Mac)
 ls /dev/ttyACM* (Linux)
 ```
 
-以下のような出力が得られるはずです：
+You should get back something like:
 
 ```
-/dev/cu.usbmodem14XX (XX は使用した USB ポートに応じて変わります - Mac)
-/dev/ttyACMX (X は使用した USB ポートに応じて変わります - Linux)
+/dev/cu.usbmodem14XX where XX will vary depending on which USB port you used (on Mac)
+/dev/ttyACMX where X will vary depending on which USB port you used  (on Linux)
 ```
 
-その後、上記のステップ 2 に従って、このシリアル接続を介して ReSpeaker に接続します。この手順は一度だけ必要で、次回以降は Wi-Fi 接続を設定し、SSH または VNC を使用して接続します。
+次に、上記のステップ2に従って、このシリアル接続でRespeakerに接続してください。これは一度だけの手順であることに注意してください。次にRespeakerをWi-Fi接続用に設定し、今後はsshまたはVNC経由で接続することになります。
 
 **ネットワーク設定**
 
-**A. Wi-Fi 設定**
+**A. Wi-Fi設定**
 
-ReSpeaker のネットワークを Network Manager ツール（nmtui）を使用して設定します。nmtui は ReSpeaker イメージに既にインストールされています。
+Network Managerツール、nmtuiを使用してReSpeakerのネットワークを設定してください。nmtuiはReSpeakerイメージに既にインストールされています。
 
 ```
-sudo nmtui              # respeaker ユーザーには sudo が必要
+sudo nmtui              # respeaker user needs sudo
 ```
 
-次に以下のような設定ページが表示されます。```Activate a connection``` を選択し、```Enter``` キーを押します。
+すると、このような設定ページが表示されます。```Activate a connection```を選択し、```Enter```キーを押してください。
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/nmtui1-1.png)
 
-ReSpeaker v2.0 用の Wi-Fi を選択し、```Enter``` キーを押して Wi-Fi パスワードを入力し、再度 ```Enter``` キーを押します。```*``` マークが表示されたら、ReSpeaker が Wi-Fi ネットワークに正常に接続されたことを意味します。```Esc``` キーを 2 回押してネットワークマネージャー設定ツールを終了します。
+ReSpeaker v2.0用のWi-Fiを選択し、```Enter```キーを押してWi-Fiパスワードを入力し、再度```Enter```キーを押してください。```*```マークが表示されたら、ReSpeakerがWi-Fiネットワークに正常に接続されたことを意味します。```Esc```キーを2回押してネットワークマネージャー設定ツールを終了してください。
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/nmtui1-2.png)
 
-次に、以下のコマンドを使用して ReSpeaker の IP アドレスを確認します。
+次に、以下のコマンドを使用してReSpeakerのIPアドレスを確認してください。
 
 ```
 ip address
 ```
 
-以下の例では、この ReSpeaker の IP アドレスは ```192.168.7.108``` です。
+In the example below, we can see that this ReSpeaker's IP address is ```192.168.7.108```
 
 ```
 root@v2:/home/respeaker# ip address
@@ -397,7 +405,7 @@ root@v2:/home/respeaker# ip address
        valid_lft forever preferred_lft forever
 ```
 
-Network Manager の GUI インターフェースに加えて、Network Manager にはコマンドラインツールもあります。隠し Wi-Fi ネットワークに接続する場合は、このコマンドラインツールを使用する必要があります：
+Network Manager GUI インターフェースに加えて、Network Manager にはコマンドラインツールもあります。隠れた Wi-Fi ネットワークに接続する場合は、このコマンドラインツールを使用する必要があります：
 
 ```
 nmcli c add type wifi con-name mywifi ifname wlan0 ssid your_wifi_ssid
@@ -408,56 +416,51 @@ nmcli con up mywifi
 
 **B. イーサネット接続**
 
-イーサネットケーブルを使用してネットワークに接続することもできます。インターネットに接続されたイーサネットケーブルを差し込むだけで接続が完了します。
+イーサネットケーブルを使用してネットワークに接続できます。インターネットに接続されたイーサネットケーブルを差し込むだけで接続できます。
 
 **SSH & VNC への接続**
 
 **A. SSH**
 
-SSHサーバーはReSpeaker v2.0で自動的に起動します。Windowsユーザー向けにはサードパーティのSSHクライアントが利用可能です。Linux/Macユーザー向けにはSSHクライアントが標準で組み込まれています。
+SSHサーバーはReSpeaker v2.0で自動的に開始されます。Windowsユーザーの場合、サードパーティのSSHクライアントが利用可能です。Linux/Macユーザーの場合、SSHクライアントが内蔵されています。
 
-- **Windows**: PUTTYを使用し、SSHプロトコルを選択して正しいIPアドレスを入力し、「Open」をクリックします。ユーザー名は`respeaker`、パスワードも`respeaker`です。
+- Windows: PUTTYを使用し、SSHプロトコルを選択し、正しいIPアドレスを入力してopenをクリックします。respeakerユーザーとしてログインし、パスワードもrespeakerです。
 
-- **Linux/Mac**:
+- Linux/Mac:
 
 ```
 ssh respeaker@192.168.***.***
-// パスワード: respeaker
+// password: respeaker
 ```
 
 :::note
-SSHを使用してパフォーマンスが遅い場合は、混雑していないWi-Fiネットワークに切り替えてください。
+SSH使用時にパフォーマンスが遅い場合は、混雑していないWiFiネットワークに切り替えてください。
 :::
-
----
 
 **B. VNC**
 
-Alexaから認証を取得するには、VNC Viewerを使用する必要があります。システムにはVNCサーバーが組み込まれており、VNCサーバーは軽量なQtデスクトップ環境である**lxqt**デスクトップGUIを起動します。VNCサービスも自動的に開始されます。[VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)または[Google Chrome用VNC Viewer](https://chrome.google.com/webstore/detail/vnc%C2%AE-viewer-for-google-ch/iabmpiboiopbgfabjmgeedhcmjenhbla?hl=en)を使用してReSpeaker Core v2.0のデスクトップに接続します。
+Alexaから認証を取得するには、VNC Viewerを使用する必要があります。システムにはVNCサーバーが内蔵されています。VNCサーバーは軽量なQtデスクトップ環境である**lxqt**デスクトップGUIを起動します。
+VNCサービスも自動的に開始されます。[VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)または[VNC Viewer for Google Chrome](https://chrome.google.com/webstore/detail/vnc%C2%AE-viewer-for-google-ch/iabmpiboiopbgfabjmgeedhcmjenhbla?hl=en)を使用してReSpeaker Core v2.0のデスクトップに接続してください。
 
-VNCを使用するには、PC/MacとReSpeaker v2.0を同じWi-Fiネットワークに接続します。その後、VNC Viewerを開き、アドレスバーに```192.168.xxx.xxx```を入力します。```192.168.xxx.xxx```はボードのIPアドレスで、コマンド**ifconfig**を使用して確認できます。```Unencrypted connection```というメッセージが表示された場合は、「Continue」をクリックして続行します。パスワードは```respeaker```です。
+VNCを使用するには、PC/MacとReSpeaker v2.0を同じWi-Fiネットワークに接続します。次にVNC Viewerを開き、アドレスバーに```192.168.xxx.xxx```と入力します。```192.168.xxx.xxx```はボードのIPアドレスです。**ifconfig**コマンドで確認できます。```Unencrypted connection```が表示された場合は、Continueをクリックして続行してください。パスワードは```respeaker```です。
 
 ![](https://user-images.githubusercontent.com/5130185/34665797-93b222d6-f49c-11e7-8112-704f91163038.png)
 
 :::note
-VNC接続はネットワークの品質に依存します。VNCディスプレイのリフレッシュレートが非常に低くなる可能性があることをご了承ください。
+VNC接続はネットワークの品質に依存することにご注意ください。VNCディスプレイのリフレッシュレートが非常に低くなる可能性があることを心の準備をしておいてください。
 :::
-
----
 
 **スピーカーまたはヘッドセットへの接続**
 
-ボードはSOCの内蔵コーデックを使用して再生を行います。JSTスピーカーポートとヘッドセットポートの両方はそれぞれ独自のアンプによって駆動されており、両方のアンプはSOCの同じコーデックに接続されています。SEEEDが実装したサウンドカードドライバーは、キャプチャデバイスと再生デバイスの両方を駆動します。そのため、ALSAデバイスリストには個別のキャプチャまたは再生サウンドカードはありません。すべてが`seeed-8mic-voicecard`という名前で表示されます。
+ボードはSOCの内蔵コーデックを使用して再生をレンダリングします。JSTスピーカーポートとヘッドセットポートの両方がそれぞれのアンプによって駆動され、両方のアンプはSOCの同じコーデックに接続されています。SEEEDが実装したサウンドカードドライバーは、キャプチャデバイスと再生デバイスの両方を駆動します。そのため、ALSAデバイスリストには個別のキャプチャまたは再生サウンドカードはありません。すべてseeed-8mic-voicecardという名前になっています。
 
-ボードから音を聞く最も簡単な方法は、ヘッドセットを接続することです。大音量のスピーカーを使用したい場合、ボードは最大8Wの駆動能力を出力できます。
+ボードから音を聞く最も簡単な方法は、ヘッドセットを接続することです。ラウドスピーカーを好む場合、ボードは最大8Wの駆動能力を出力できます。
 
----
+**Bluetooth設定**
 
-**Bluetoothの設定**
+**bluetoothの有効化**
 
-**Bluetoothの有効化**
-
-以下のコマンドを入力して、ReSpeaker Core v2.0のBluetoothを更新および有効化してください：
+以下のコマンドを実行して、ReSpeaker Core v2.0のBluetoothを更新し有効化してください：
 
 ```
 sudo apt update
@@ -466,35 +469,34 @@ sudo apt upgrade
 ```
 
 :::note
-更新に失敗した場合は、ネットワーク状態の良い別のWi-Fiに切り替えて再度更新を試みてください。
+アップデートが失敗した場合は、ネットワーク状況の良い別のWiFiに変更して、再度アップデートを実行してください。
 :::
 
-その後、以下のコマンドでBluetoothを有効化します：
+次に、以下のコマンドでBluetoothを有効化します：
 
 ```
 sudo systemctl enable bt-auto-connect.service
 sudo reboot -f
 ```
 
----
+**ReSpeaker Core v2.0をBluetoothスピーカー-スレーブデバイスとして使用する**
 
-**ReSpeaker Core v2.0をBluetoothスピーカー（スレーブデバイス）として使用する**
-
-ReSpeaker Core v2.0が再起動したら、スマートフォンまたはコンピュータのBluetoothを開き、**ReSpeaker-xxxx**という名前のBluetoothデバイスを見つけます。それを選択して接続します。ReSpeaker Core v2.0にスピーカーまたはヘッドセットを接続し、音楽を再生してBluetoothスピーカーを楽しんでください。
+ReSpeaker Core v2.0が再起動すると、お使いの携帯電話またはコンピューターのBluetoothを開くと、**ReSpeaker-xxxx**という名前のBluetoothデバイスが見つかります。
+それを選択して接続してください。ReSpeaker Core v2.0にスピーカーまたはヘッドセットを接続し、音楽を再生してBluetoothスピーカーをお楽しみください。
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/Bluetooth_connect.png)
 
----
+**ReSpeaker Core v2.0をBluetoothプレーヤー-マスターデバイスとして使用する**
 
-**ReSpeaker Core v2.0をBluetoothプレーヤー（マスターデバイス）として使用する**
+単なるBluetoothスピーカーとして動作するだけでなく、Bluetoothプレーヤーとしても機能し、お使いのBluetoothヘッドセットやBluetoothスピーカーをハックすることができます。
+では、ハッキングしてみましょう。
 
-ReSpeaker Core v2.0はBluetoothスピーカーとして動作するだけでなく、BluetoothプレーヤーとしてBluetoothヘッドセットやBluetoothスピーカーを操作することもできます。以下の手順で設定を行います。
+- **ステップ1.** `bluetoothctl`をタップしてBluetoothシェルを開きます。
 
-- **ステップ1.** `bluetoothctl`を入力してBluetoothシェルを開きます。
+- **ステップ2.** `scan on`をタップしてBluetoothデバイスをスキャンします。
 
-- **ステップ2.** `scan on`を入力してBluetoothデバイスをスキャンします。
-
-- **ステップ3.** ReSpeaker Core v2.0がターゲットデバイスを見つけたら、`scan off`を入力します。この例では、MDR-1000Xヘッドセットがターゲットであり、デバイスID`04:5D:4B:81:35:84`を記録します。
+- **ステップ3.** ReSpeaker Core v2.0がターゲットデバイスを見つけたら、`scan off`をタップします。
+このwikiでは、例えばMDR-1000Xヘッドセットがターゲットとし、デバイスID Device `04:5D:4B:81:35:84`をマークします。
 
 ```
 respeaker@v2:~$ bluetoothctl
@@ -522,11 +524,12 @@ Discovery started
 [CHG] Device 58:44:98:93:35:24 RSSI is nil
 Discovery stopped
 [bluetooth]#
+
 ```
 
-- **ステップ4.** コマンド`pair + デバイスID`を使用して、BluetoothデバイスをReSpeaker Core v2.0とペアリングします。
+- **ステップ 4.** 次に、`pair + device ID` コマンドを使用して、Bluetooth デバイスを ReSpeaker Core v2.0 とペアリングします。
 
-- **ステップ5.** `Pairing successful`というメッセージが表示されたら、`connect + デバイスID`を入力します。
+- **ステップ 5.** `Pairing successful` というメッセージが表示されたら、`connect + device ID` をタップします。
 
 ```
 [bluetooth]# pair 04:5D:4B:81:35:84
@@ -553,20 +556,21 @@ Connection successful
 [MDR-1000X]#
 ```
 
-`Connection successful`が表示されたら、設定完了です！
+「Connection successful」がポップアップしたら、設定完了です！
 
-`exit` または `quit` を入力してシェルを終了し、以下のコマンドを使用して Bluetooth デバイスをテストしてください。
+`exit`または`quit`をタップしてシェルを終了し、以下のコマンドを使用してBluetoothデバイスをテストできます。
 
 ```
 arecord bluetoothtest.wav
 aplay bluetoothtest.wav
+
 ```
 
 **録音と再生**
 
-**1. ALSA を使用してテスト**
+**1.ALSA経由でのテスト**
 
-これは開発段階の技術文書であるため、サウンドデバイスのインデックスはバージョンによって変更される可能性があります。まず、以下のコマンドを使用して正しいデバイスインデックスを確認してください。
+これは開発段階の技術文書であるため、サウンドデバイスのインデックスはバージョンによって変更される可能性があります。そのため、まず以下のコマンドで正しいデバイスインデックスを確認してください：
 
 ```
 respeaker@v2:~$ arecord -l
@@ -580,20 +584,22 @@ respeaker@v2:~$ aplay -l
 card 0: seeed8micvoicec [seeed-8mic-voicecard], device 1: 100b0000.i2s1-rk3228-hifi rk3228-hifi-1 []
   Subdevices: 1/1
   Subdevice #0: subdevice #0
-```
-
-**seeed** プレフィックスを持つサウンドカードを見つけてください。上記の例では、キャプチャデバイスは **hw:0,0**（カード **0** / デバイス **0**）を意味します。再生デバイスは **hw:0,1**（カード **0** / デバイス **1**）を意味します。その後、以下のコマンドを使用して録音と再生をテストします。
 
 ```
-# 2 チャンネルオーディオの録音と再生
+
+**seeed** プレフィックスを持つ名前のサウンドカードを見つけます。上記の例では、キャプチャデバイスは **hw:0,0** で、これはカード **0**/デバイス **0** を意味します。
+再生デバイスは **hw:0,1** で、これはカード **0**/デバイス **1** を意味します。次に、以下のコマンドで録音と音声再生をテストします：
+
+```
+# record & playback 2 channels audio
 arecord -Dhw:0,0 -f S16_LE -r 16000 -c 2 hello.wav
 aplay -Dhw:0,1 -r 16000 -c 2 hello.wav
 
-# Bluetooth デバイスで音声を出力したい場合、以下のコマンドを使用してください
+# If you want to output the sound by the bluetooth device, you need to use the command below to play
 aplay -r 16000 -c 2 hello.wav
 
-# 8 チャンネルオーディオの録音
-# ボード上には 6 つのマイクがあり、ac108 が残りの 2 チャンネルを構成します。
+# record 8 channels audio
+# there are 6 microphones on board, and ac108 compose the 2 remaining channels.
 arecord -Dhw:0,0 -f S16_LE -r 16000 -c 8 hello_8ch.wav
 ```
 
@@ -603,57 +609,57 @@ arecord -Dhw:0,0 -f S16_LE -r 16000 -c 8 hello_8ch.wav
 arecord | aplay
 ```
 
-**2. PulseAudio を使用してテスト**
+**2. PulseAudioを使用したテスト**
 
-まず、PulseAudio が実行中かどうかを確認します。
+まず、PulseAudioが実行されているかどうかを確認します：
 
 ```
 respeaker@v2:~$ ps aux|grep pulse|grep -v grep
 respeak+  1109  0.0  0.7 363272  7932 ?        S<l  01:01   0:00 /usr/bin/pulseaudio --start --log-target=syslog
 ```
 
-実行されていない場合は、PulseAudio のドキュメントを参照して PulseAudio の自動起動を有効にしてください。その後、以下のコマンドでテストします。
+If it's not, please refer to PulseAudio's documentation to enable the auto-spawn of PulseAudio. Then test via:
 
 ```
 parecord --channels=8 --rate=16000 --format=s16le hello2.wav
 paplay hello2.wav
 ```
 
-さらに、現在のデフォルト ALSA デバイスは PulseAudio にフックされているため、以下のコマンドを使用しても PulseAudio 経由で音声を再生/録音できます。
+さらに、デフォルトのALSAデバイスは現在PulseAudioにフックされているため、以下のコマンドを使用してもPulseAudio経由で音声の再生/録音が行われます：
 
 ```
 arecord -v -f cd hello3.wav
 aplay hello3.wav
 ```
 
-これまでに、ReSpeaker Core v2.0 ボードの基本操作を学びました。次に進みましょう。ReSpeaker Core v2.0 を使用して、独自の AVS（Alexa Voice Service）デバイスや Dueros（Baidu の音声アシスタント）デバイスを構築できます。
+これまでReSpeaker Core v2.0ボードの基本操作を学びましたが、さらに進んでみましょう。ReSpeaker Core v2.0を使用して、独自のAVS（Alexa Voice Service）デバイスやDueros（Baiduの音声アシスタント）デバイスを構築することができます。
 
-## Wio Link を使って遊ぶ
+## Wio Linkで遊ぶ
 
-[ReSpeaker Core V2 & Wio Link チュートリアル](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_V2_&_Wio_Link/) に従って、ReSpeaker Core V2 を使用して IFTTT 経由で Wio Link を制御してください。
+[ReSpeaker Core V2 & Wio Link Tutorial](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_V2_&_Wio_Link/)に従って、ReSpeaker Core V2を使用してIFTTT経由でWio Linkを制御してください。
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/OJ0i6QrZCSM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## GPIO を使って遊ぶ
+## GPIOで遊ぶ
 
-このセクションでは、**MRAA** と **UPM** を使用して、ReSpeaker Core v2.0 上の GPIO と Grove ソケットを制御する方法を紹介します。
+この部分では、**MRAA**と**UPM**を使用してRespeaker Core v2.0のGPIOとGroveソケットを制御する方法を紹介します。
 
-- **ステップ 1. MRAA と UPM ライブラリを最新バージョンに更新**
+- **ステップ1. MRAAとUPMライブラリを最新バージョンに更新**
 
-まず、最新の MRAA と UPM パッケージをインストールする必要があります。
+まず、最新のMRAAとUPMパッケージをインストールする必要があります。
 
 ```
 sudo apt install  python-mraa python-upm libmraa1 libupm1 mraa-tools
 ```
 
-- **ステップ 2. プラットフォーム情報を確認**
+- **ステップ2. プラットフォーム情報を確認する**
 
 ```
-# バス 0 のみがあり、id=03(/dev/i2c-3)、0 は mraa と upm の i2c 番号です
+#only have bus 0 and id=03(/dev/i2c-3), 0 is the i2c number for mraa and upm
 respeaker@v2:~$ mraa-i2c list
 Bus   0: id=03 type=linux
 
-#mraa GPIO 番号、システム GPIO 番号、およびそのピンマップ
+#mraa gpio numbers and system gpio numbers and it's pinmux
 respeaker@v2:~$ mraa-gpio list
 00      GPIO91: GPIO
 01         VCC:
@@ -678,14 +684,14 @@ ReSpeaker Core v2.0 ボードの PIN 定義の説明については、[Pin Out](
 
 **GPIO を直接制御**
 
-必要な材料
+材料
 
 | ReSpeaker Core v2.0 |  Grove - Buzzer |
 |--------------|-------------|
 |![enter image description here](https://files.seeedstudio.com/wiki/Respeaker_V2/img/ReSpeaker_V2_back_little.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/Base_Shield_V2/img/Buzzer.png)|
 |[今すぐ購入](https://www.seeedstudio.com/ReSpeaker-Core-V2.0-p-3039.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Buzzer-p-768.html)|
 
-Grove PIR センサーの **SIG** ピンをジャンパーで ReSpeaker Core v2.0 のヘッダーピン **0** に接続します。同時に VCC と GND も接続することを忘れないでください。その後、以下のコードをコンソールに入力します。
+Grove PIR センサーの **SIG** ピンを、ジャンパーを使用して ReSpeaker Core v2.0 のヘッダーピン **0** に接続します。同時に VCC と GND の配線も忘れずに行ってください。その後、以下のコードをコンソールに入力します
 
 ``` python
 respeaker@v2:~$ python
@@ -703,20 +709,20 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-**x.write(1)** を入力すると、ブザーから音が聞こえます。
+**x.write(1)**をタップすると、ブザーから悲鳴が聞こえます。
 
-**PIR モーションセンサーの例**
+**PIRモーションセンサーの例**
 
-必要な材料
+材料
 
-| ReSpeaker Core v2.0 |  Grove - PIR モーションセンサー |
+| ReSpeaker Core v2.0 |  Grove -  PIRモーションセンサー |
 |--------------|-------------|
 |![enter image description here](https://files.seeedstudio.com/wiki/Respeaker_V2/img/ReSpeaker_V2_back_little.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/Respeaker_V2/img/Grove%20-%20PIR%20Motion%20Sensor.jpg)|
-|[今すぐ購入](https://www.seeedstudio.com/ReSpeaker-Core-V2.0-p-3039.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-PIR-Motion-Sensor-p-802.html)|
+|[今すぐ入手](https://www.seeedstudio.com/ReSpeaker-Core-V2.0-p-3039.html)|[今すぐ入手](https://www.seeedstudio.com/Grove-PIR-Motion-Sensor-p-802.html)|
 
-この例では、Grove PIR センサーのトリガーを Python コードでリッスンします。
-Grove PIR センサーの **D1** ピンをジャンパーで ReSpeaker Core v2.0 のヘッダーピン **0** に接続します。同時に VCC と GND も接続することを忘れないでください。
-その後、以下のコードを新しいファイルにコピーして Python ファイルとして保存し、**mraa_pir.py** という名前を付けます。このファイルを ReSpeaker Core v2.0 にコピーします。
+この例では、PythonコードでGrove PIRセンサーのトリガーを監視します。
+Grove PIRセンサーの**D1**ピンをジャンパーでReSpeaker Core v2.0のヘッダーピン**0**に接続します。同時にVCCとGNDの配線も忘れずに行ってください。
+次に、以下のコードを新しいファイルにコピーし、**mraa_pir.py**という名前のPythonファイルとして保存します。このファイルをReSpeaker Core v2.0にコピーしてください。
 
 ``` python
 import mraa
@@ -730,23 +736,22 @@ try:
     x = mraa.Gpio(pin)
     print("Starting ISR for pin " + repr(pin))
     x.dir(mraa.DIR_IN)
-    # respeaker v2 は EDGE_BOTH のみサポート
+    # respeaker v2 only support EDGE_BOTH
     x.isr(mraa.EDGE_BOTH, on_trigger, x)
     var = raw_input("Press ENTER to stop")
     x.isrExit()
 except ValueError as e:
     print(e)
-```
 
 ```
 
-次に、以下のコマンドでコードを実行します。（mraa_pir.py を保存したフォルダにいることを確認してください）
+次に、以下のコマンドでコードを実行してください。（先ほど保存したmraa_pir.pyが含まれているフォルダに移動していることを確認してください）
 
 ``` python
 sudo python mraa_pir.py
 ```
 
-結果は以下のようになります。
+The result will be like
 
 ```
 $ sudo python mraa_pir.py
@@ -757,23 +762,23 @@ pin 1091 = 1
 ...
 ```
 
-**B. UPMライブラリを使用する**
+**B. UPMライブラリの使用**
 
-UPMプロジェクトはMRAAライブラリに基づいてセンサーのドライバを実装しているため、GPIOプログラミングやセンサーのI2Cアドレスを気にする必要がなくなります。特定のセンサーに関するすべてのデフォルト情報とロジックがUPMライブラリにラップされています。UPMは多くのセンサーをサポートしています。https://iotdk.intel.com/docs/master/upm/modules.html ただし、すべてのセンサーがReSpeaker Core v2.0で動作することを確認したわけではない点に注意してください。
+UPMプロジェクトはMRAAライブラリをベースにセンサーのドライバーを実装しているため、もはやGPIOプログラミングやセンサーのI2Cアドレスを気にする必要がありません。特定のセンサーのすべてのデフォルト情報とロジックがUPMライブラリにラップされています。UPMは多数のセンサーをサポートしています。[UPMモジュール](https://iotdk.intel.com/docs/master/upm/modules.html)。ただし、すべてのセンサーがReSpeaker Core v2.0で動作することを確認していないことにご注意ください。
 
 **Groveデジタル光センサーの例**
 
 材料
 
-| ReSpeaker Core v2 |  Grove - デジタル光センサー |
+| ReSpeaker Core v2 |  Grove - Digital Light Sensor |
 |--------------|-------------|
-|![画像説明をここに入力](https://files.seeedstudio.com/wiki/Respeaker_V2/img/ReSpeaker_V2_back_little.jpg)|![画像説明をここに入力](https://files.seeedstudio.com/wiki/Respeaker_V2/img/Digital_Light_Sensor.jpg)|
+|![enter image description here](https://files.seeedstudio.com/wiki/Respeaker_V2/img/ReSpeaker_V2_back_little.jpg)|![enter image description here](https://files.seeedstudio.com/wiki/Respeaker_V2/img/Digital_Light_Sensor.jpg)|
 |[今すぐ購入](https://www.seeedstudio.com/ReSpeaker-Core-V2.0-p-3039.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Digital-Light-Sensor-p-1281.html)|
 
-これは、UPMのGitHubリポジトリからコピーされたGroveデジタル光センサーの例です。
+これはGroveデジタル光センサーの例で、UPM githubリポジトリからコピーしたものです。
 
-PIRモーションセンサーをGroveソケットを介してReSpeaker Core v2.0に接続してください。
-次に、以下のコードを新しいファイルにコピーし、Pythonファイルとして保存します。ファイル名は **tsl2561.py** とします。このファイルをReSpeaker Core v2.0にコピーしてください。
+PIRモーションセンサーをGroveソケット経由でRespeaker Core v2.0に接続してください。
+次に、以下のコードを新しいファイルにコピーし、**tsl2561.py**という名前のpythonファイルとして保存してください。このファイルをReSpeaker Core v2.0にコピーしてください。
 
 ``` python
 #!/usr/bin/env python
@@ -788,7 +793,7 @@ PIRモーションセンサーをGroveソケットを介してReSpeaker Core v2.
 # permit persons to whom the Software is furnished to do so, subject to
 # the following conditions:
 #
-# The above copyright notice and this permission shall be
+# The above copyright notice and this permission notice shall be
 # included in all copies or substantial portions of the Software.
 #
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
@@ -804,109 +809,114 @@ import time, sys, signal, atexit
 from upm import pyupm_tsl2561 as upmTsl2561
 
 def main():
-    # I2C上のデジタル光センサーTSL2561をインスタンス化
+    # Instantiate a digital light sensor TSL2561 on I2C
     myDigitalLightSensor = upmTsl2561.TSL2561()
 
-    ## 終了ハンドラ ##
-    # Control-Cを押したときにPythonがスタックトレースを出力しないようにする関数
+    ## Exit handlers ##
+    # This function stops python from printing a stacktrace when you hit control-C
     def SIGINTHandler(signum, frame):
         raise SystemExit
 
-    # 終了時にコードを実行できるようにする関数（myDigitalLightSensorの関数を含む）
+    # This function lets you run code on exit, including functions from myDigitalLightSensor
     def exitHandler():
-        print("終了します")
+        print("Exiting")
         sys.exit(0)
 
-    # 終了ハンドラを登録
+    # Register exit handlers
     atexit.register(exitHandler)
     signal.signal(signal.SIGINT, SIGINTHandler)
 
     while(1):
-        print("光の値は " + str(myDigitalLightSensor.getLux()))
+        print("Light value is " + str(myDigitalLightSensor.getLux()))
         time.sleep(1)
 if __name__ == '__main__':
     main()
 ```
 
-結果は以下のようになります。
+The result should be something like:
 
 ``` python
 respeaker@v2:~$ python tsl2561.py       
-光の値は 0
-光の値は 38
-光の値は 20
-光の値は 54
-光の値は 13
-光の値は 44
-光の値は 31  
-```
+Light value is 0
+Light value is 38
+Light value is 20
+Light value is 54
+Light value is 13
+Light value is 44
+Light value is 31  
 ```
 
 ## FAQs
 
-**Q1: Audacityで録音と再生を行う方法は？**
+**Q1: Audacityで録音・再生する方法は？**
 
-**A1:** **lxqt**バージョンにはAudacityがプリインストールされています。左下の**鳥のボタン**をクリックし、**Sound & Video -> Audacity**で見つけることができます。
+  **A1:** **lxqt**バージョンにはAudacityがプリインストールされています。左下角の**Birdボタン**をクリックし、**Sound & Video -> Audacity**で見つけることができます。
 
-Audacityを開いたら、小さな黒い矢印をクリックして録音および再生デバイスを選択し、以下の画像のように設定してください。
+  Audacityを開いたら、小さな黒い矢印をクリックして録音・再生デバイスを選択し、下の画像のように設定してください。
 
-![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/audacity.png)
+  ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/audacity.png)
 
-録音と再生デバイスにはSeeed-8mic-voicecardを選択してください。また、1/2/4/6/8チャンネルを選択して録音と再生が可能です。画像のように8チャンネルが表示されていますが、チャンネル7と8にはデータがありません。これは、この2つのチャンネルが再生用チャンネルであるためです。チャンネル7は3.5mmヘッドフォン用、チャンネル8はJST2.0スピーカー用です（JSTケーブルがない場合はジャンパーを使用することもできます）。例えば、JSTスピーカーを使用する場合：
+  録音・再生デバイスの両方でSeeed-8mic-voicecardを選択してください。1/2/4/6/8チャンネルを選択して録音・再生できます。画像でご覧いただけるように、
+  8チャンネルありますが、チャンネル7と8にはデータがありません。これは、この2つのチャンネルが再生チャンネルだからです。
+  チャンネル7は3.5mmヘッドホン用、チャンネル8はJST2.0スピーカー用です（JSTケーブルがない場合は、ジャンパーも使用できます）。JST スピーカーを使用する場合：
 
-- **ステップ1.** 上記の画像のように設定し、**Record**ボタンをクリックして音声を録音します。
-- **ステップ2.** **Stop**ボタンをクリックすると、チャンネル7と8が空であることが確認できます。
-- **ステップ3.** 再度**Record**ボタンをクリックすると、今度はチャンネル8が変化していることがわかります。
+- ステップ1. 上の画像のように設定し、**Record**ボタンをクリックして、一定時間音声を録音します。
+- ステップ2. **Stop**ボタンをクリックすると、チャンネル7と8が空であることがわかります。
+- ステップ3. 再度**Record**ボタンをクリックすると、今度はチャンネル8が変化していることがわかります。
 
-![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/audacity_playback.png)
+  ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/audacity_playback.png)
 
 **Q2: ReSpeaker Core v2.0のAPにアクセスする方法は？**
 
-**A2:** ReSpeaker Core v2.0を2本のワイヤーケーブルで電源供給することができます。システムが稼働中の場合、ReSpeaker Core v2.0はAPとして動作します。コンピュータを使用してこのAPにアクセスできます。以下の画像を参照しながら、ReSpeaker Core v2.0のWiFiを設定する手順を進めてください。
+**A2:** 2本のワイヤーケーブルを使用してReSpeaker Core v2.0に電源を供給できます。システムが動作している時、Respeaker Core v2.0はAPとして機能できます。コンピューターを使用して
+このAPにアクセスできます。画像に示すように、以下の手順に従ってReSpeaker Core v2.0のWiFiを設定できます。
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/Ap.png)
 
-- **ステップ1.** 以下のコマンドを入力してReSpeaker Core v2.0のAPを有効化します。
+- **ステップ1.** 以下のコマンドを実行してReSpeaker Core v2.0のApを有効化します。
 
 ```
 sudo systemctl enable re-wifi.service
 sudo reboot -f
+
 ```
 
-- **ステップ2.** ReSpeaker Core v2.0のAPにアクセスします。ReSpeaker Core v2.0が再起動した後、スマートフォンやコンピュータを使用してWiFiを検索します。AP名は**ReSpeaker_xxxx**のような名前で表示され、ユーザー名は**respeaker**、パスワードも**respeaker**です。
+- **Step 2.** ReSpeaker Core v2.0のAPにアクセスします。ReSpeaker Core v2.0が再起動した後、スマートフォンまたはコンピューターでWiFiを検索してください。AP名は
+   **ReSpeaker_xxxx**のようなものが見つかります。ユーザー名は**respeaker**、パスワードも**respeaker**です。
 
-- **ステップ3.** PuttyやSSHモードを使用してシリアルコンソールにアクセスします。Wlan1のIPは**192.168.42.1**で、このIPを使用して接続を設定します。ReSpeaker Core v2.0のユーザー名は**respeaker**、パスワードも**respeaker**です。
+- **Step 3.** これで、Putty、SSHモードを使用してシリアルコンソールにアクセスできます。Wlan1のIPは**192.168.42.1**です。この IPを使用して接続を設定する必要があります。
+ReSpeaker Core v2.0のユーザー名は**respeaker**、パスワードは**respeaker**です。
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/AP2.png)
 
-- **ステップ4.** シリアルコンソールにアクセスしたら、[WiFiを設定](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_v2.0/#a-wi-fi-setting-up)することができます。
+- **Step 3.** シリアルコンソールにアクセスしたら、[WiFiの設定](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_v2.0/#a-wi-fi-setting-up)を行うことができます。
 
-**Q3: 音量を調整する方法は？**
+**Q3: 音量を調整するにはどうすればよいですか？**
 
-**A3:** Alsamixerを使用して再生音量や録音感度を調整できます。
+**A3:** Alsamixerを使用して再生音量とキャプチャ感度を調整できます。
 
-- **ステップ1.** 以下のコードを入力してAlsamixerを開きます。
+- **Step 1.** 以下のコードを入力してAlsamixerを開きます：
 
 ```
 alsamixer
 ```
 
-- **ステップ2.** キーボードで**F6**を押して**Seeed-8mic-voicec**カードを選択します。
-- **ステップ3.** 以下の画像のようなインターフェースが表示されます。**右**または**左**キーを押して再生音声または録音チャンネルを選択し、**上**または**下**キーを押して値を調整します。
+- **ステップ 2.** キーボードの **F6** を押して **Seeed-8mic-voicec** カードを選択します。
+- **ステップ 3.** 下の画像のようなインターフェースが表示されます。**Right** または **Left** キーを押すことで再生音声または録音チャンネルを選択できます。
+また、**Up** または **Down** キーを押すことで値を調整できます。
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/Alexamixer.png)
 
-**Q4: ユーザーボタンを使用する方法は？**
+**Q4: ユーザーボタンの使用方法は？**
+**A4:** ご覧のとおり、ReSpeaker Core v2.0 の背面にユーザーボタンがあります。ここでは、その使用方法を示すPythonデモを提供します。
 
-**A4:** ReSpeaker Core v2.0の背面にはユーザーボタンがあります。以下のPythonデモを使用してその使い方を示します。
-
-- **ステップ1.** 以下のコマンドを入力します。
+- **ステップ 1.** 以下のコマンドを入力します：
 
 ```
 sudo pip install evdev
 ```
 
-- **ステップ2.** 以下のコードをコピーしてPythonファイルとして保存します。ファイル名を**usrer_button.py**とします。
+- **ステップ 2.** 以下のコードをコピーして、Pythonファイルとして保存してください。ファイル名を **usrer_button.py** とします。
 
 ```
 from evdev import InputDevice,categorize,ecodes
@@ -917,76 +927,80 @@ for event in key.read_loop():
         print(categorize(event))
 ```
 
-- **ステップ3.** 以下のコマンドを入力してこのデモを実行します。
+- **ステップ3.** 以下のコマンドを実行してこのデモを起動します。
 
 ```
 sudo python usrer_button.py
 ```
 
-すると、以下のような結果が表示されます。
+結果は以下のようになります：
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/userbutton.png)
 
-**Q5: コンピュータがReSpeaker Core v2.0を認識しない場合、ドライバーの問題ですか？**
+**Q5: コンピュータがReSpeaker Core v2.0を認識できません。ドライバの問題でしょうか？**
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/CDC_Driver.png)
 
-**A5:** ReSpeaker Core v2.0をOTGまたはUART経由でコンピュータに接続した際にこの問題が発生することがあります。これはCDCシリアルドライバーが他のOTGドライバーと競合しているためです。競合しているドライバーをアンインストールし、再度ReSpeaker Core v2.0を接続してください。
+**A5:** これは、ReSpeaker Core v2.0をOTGまたはUART経由でコンピュータに接続した際に発生する可能性があります。
+これは、CDCシリアルドライバが他のOTGドライバと競合しているためです。競合しているドライバをアンインストールして、
+ReSpeaker Core v2.0を再度接続してください。
 
 **Q6: 外部アンテナを使用したい場合はどうすればよいですか？**
 
-**A6:** ReSpeaker Core v2.0は**AP6212**を使用してWiFiとBluetoothを提供しており、これらは同じアンテナを共有しています。オンボードアンテナの代わりに外部アンテナを使用することができます。そのためには、以下のように抵抗を取り外し、新しいパッドにハンダ付けする必要があります：
+**A6:** ReSpeaker Core v2.0は**AP6212**を使用してWiFiとBluetoothの両方を提供しており、同じアンテナを共有しています。
+オンボードアンテナの代わりに、外部アンテナを使用することができます。そのためには、1つの抵抗を取り外して
+新しいパッドにはんだ付けする必要があります。以下に示すとおりです：
 
-- まず、オレンジ色のボックス内の抵抗を取り外します。
-- 次に、緑色のボックス内にハンダ付けしてください。
+- まず、オレンジ色のボックス内の抵抗を取り外す必要があります。
+- 次に、緑色のボックスにはんだ付けしてください。
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/ant.png)
 
-**Q7: 独自のフラッシャーファームウェアを構築する方法は？独自のファームウェアを他のReSpeaker Core v2.0に書き込みたい場合は？**
+**Q7: 独自のフラッシャーファームウェアをビルドするにはどうすればよいですか？そうすれば、残りのReSpeaker Core v2.0に独自のファームウェアを書き込むことができます。**
 
-**A7:** RAMが2GB以上のARM Debianシステムでイメージビルダーを実行してください。
+**A7:** RAM>2GのARMデビアンシステムでイメージビルダーを実行してください。
 
-以下は詳細な手順です。
+詳細な手順は以下のとおりです。
 
-- **ステップ1.** git clone <https://github.com/respeaker/image_builder>
-- **ステップ2.** /publish/respeaker.io_stable.shでアップロードパスを変更します。
-- **ステップ3.** sudo ./publish/respeaker.io_stable.sh
+- ステップ1. [image_builderリポジトリ](https://github.com/respeaker/image_builder)をgit cloneする
+- ステップ2. /publish/respeaker.io_stable.shでアップロードパスを変更する
+- ステップ3. sudo ./publish/respeaker.io_stable.shを実行する
 
-**Q8: 書き込んだSDカードをReSpeaker Core v2.0に挿入した際、デバイスマネージャーにCOMポートが表示されず、HDMIインターフェースに何も表示されない場合は？**
+**Q8: 書き込んだSDカードをReSpeaker Core v2.0に挿入すると、デバイスマネージャーにCOMポートが表示されず、HDMIインターフェースにも表示されません。**
 
-**A8:** USBからTTLアダプターを使用してUARTに直接接続すると、以下のエラーが表示されます。
+**A8:** USB to TTLアダプタを使用してUARTに直接接続してください。以下のエラーが表示されます。
 
 ```
 [    2.119560] mmcblk0: timed out sending SET_BLOCK_COUNT command, card status 0x400900
 [    2.128134] mmcblk0: command error, retrying timeout
 ```
 
-原因は古いSDカードがLinuxシステムで動作しないことです。最近のSDカード（例えばScanDisk Ultraなど）に変更してください。これらはすべてのeMMCコマンドをサポートしています。
+根本的な原因は、古いSDカードがlinuxシステムで動作しないことです。ScanDisk Ultraなど、すべてのeMMCコマンドをサポートする最新のSDカードに変更してください。
 
 ## リソース
 
-- **[アルゴリズム]** [AEC、ビームフォーミング、ノイズ抑制（NS）、キーワードスポッティング（KWS）を含むオーディオフロントエンド処理アルゴリズム](https://github.com/respeaker/respeakerd)
-- **[Google アシスタント]** [Google アシスタントデモ](https://github.com/respeaker/googleassistant_respeakerd)
-- **[Microsoft]** [Microsoft 音声翻訳デモ](https://github.com/respeaker/Python-Speech-Translate)
-- **[Pixel]** [RGB LED ライブラリ](https://github.com/respeaker/pixel_ring)
-- **[PDF]** [この Wiki の PDF をダウンロード](https://files.seeedstudio.com/wiki/Respeaker_V2/res/ReSpeaker_Core_v2.pdf)
-- **[PDF]** [Rockchip RK3229 データシート V1.1](https://files.seeedstudio.com/wiki/Respeaker_V2/res/Rockchip%20RK3229%20Datasheet%20V1.1%2020151209.pdf)
-- **[PDF]** [ボードの寸法](https://files.seeedstudio.com/wiki/Respeaker_V2/res/ReSpeaker_Core_v2_Demensions.pdf)
-- **[ZIP]** [ReSpeaker Core v2.0 用 3D モデル](https://files.seeedstudio.com/wiki/Respeaker_V2/res/Respeaker_Core_v2_3D_SKP.zip)
-- **[ZIP]** [ReSpeaker Core v2.0 ケース](https://files.seeedstudio.com/wiki/Respeaker_V2/res/RESPEAKER_CORE_V2_Box.zip)
-- **[DXF]** [ReSpeaker Core v2.0 スタンド](https://github.com/respeaker/get_started_with_respeaker/raw/8111196e821fec10c65b00d96cf011dc90111546/files/RESPEAKER_CORE_V2_CASE.dxf)
-- **[PDF]** [ReSpeaker Core v2.0 スタンド組立図](https://files.seeedstudio.com/wiki/Respeaker_V2/res/ReSpeaker_Core_v2.0_case_Assembly.pdf)
-- **[PDF]** [ReSpeaker Core v2.0 の音響および電気仕様](https://files.seeedstudio.com/wiki/Respeaker_V2/res/Acoustic%26Electrical_Specification_of_ReSpeaker_Core_v2.0.pdf)
-- **[追加資料]** [Mraa Python ドキュメントページ](http://iotdk.intel.com/docs/master/mraa/python/)
-- **[追加資料]** [Intel Mraa SDK](https://software.intel.com/en-us/mraa-sdk/documentation)
-- **[追加資料]** [Snips SDK](https://snips.gitbook.io/documentation/installing-snips/respeaker-core-2.0)
-- **[ソースコード]** [ReSpeaker Core v2.0 ソースコード](https://github.com/respeaker/rk-linux-develop)
+- **[Algorithms]** [AEC、Beamforming、NS、KWSを含むオーディオフロントエンド処理アルゴリズム](https://github.com/respeaker/respeakerd)
+- **[Google Assistant]** [Google Assistantデモ](https://github.com/respeaker/googleassistant_respeakerd)
+- **[Microsoft]** [Microsoft音声翻訳デモ](https://github.com/respeaker/Python-Speech-Translate)
+- **[Pixel]** [RGB LEDライブラリ](https://github.com/respeaker/pixel_ring)
+- **[PDF]** [このWikiのPDFダウンロード](https://files.seeedstudio.com/wiki/Respeaker_V2/res/ReSpeaker_Core_v2.pdf)
+- **[PDF]** [Rockchip RK3229データシート V1.1](https://files.seeedstudio.com/wiki/Respeaker_V2/res/Rockchip%20RK3229%20Datasheet%20V1.1%2020151209.pdf)
+- **[PDF]** [ボード寸法図](https://files.seeedstudio.com/wiki/Respeaker_V2/res/ReSpeaker_Core_v2_Demensions.pdf)
+- **[ZIP]** [ReSpeaker Core v2.0用3Dモデル](https://files.seeedstudio.com/wiki/Respeaker_V2/res/Respeaker_Core_v2_3D_SKP.zip)
+- **[ZIP]** [ReSpeaker Core v2.0ケース](https://files.seeedstudio.com/wiki/Respeaker_V2/res/RESPEAKER_CORE_V2_Box.zip)
+- **[DXF]** [ReSpeaker Core v2.0スタンド](https://github.com/respeaker/get_started_with_respeaker/raw/8111196e821fec10c65b00d96cf011dc90111546/files/RESPEAKER_CORE_V2_CASE.dxf)
+- **[PDF]** [ReSpeaker Core v2.0スタンド組立図](https://files.seeedstudio.com/wiki/Respeaker_V2/res/ReSpeaker_Core_v2.0_case_Assembly.pdf)
+- **[PDF]** [ReSpeaker Core v2.0の音響・電気仕様](https://files.seeedstudio.com/wiki/Respeaker_V2/res/Acoustic%26Electrical_Specification_of_ReSpeaker_Core_v2.0.pdf)
+- **[MoreReading]** [Mraa Pythonドキュメントページ](http://iotdk.intel.com/docs/master/mraa/python/)
+- **[MoreReading]** [Intel Mraa SDK](https://software.intel.com/en-us/mraa-sdk/documentation )
+- **[MoreReading]** [Snips SDK](https://snips.gitbook.io/documentation/installing-snips/respeaker-core-2.0)
+- **[Source Code]** [ReSpeaker Core v2.0ソースコード](https://github.com/respeaker/rk-linux-develop)
 
 ## プロジェクト
 
-**ReSpeaker Core v2.0 - Alexa デモ**
+**ReSpeaker Core v2.0 - Alexaデモ**
 
-このデモでは、ReSpeaker Core v2.0 を使用して Alexa と会話します。友達のように質問をしたり、ReSpeaker Core v2.0 と話すことができます。さらに、この製品は Google アシスタントや Bing とも連携可能です。ホットワードは Snowboy ですが、自分でカスタムのウェイクアップワードを作成することもできます。
+このデモでは、ReSpeaker Core v2.0を使用してAlexaと会話します。友達のようにReSpeaker Core v2.0に質問したり会話したりできます。さらに、この製品はGoogle AssistantやBingとも連携できます。ホットワードはSnowboyで、もちろん独自のウェイクアップワードを作成することもできます。
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/q7b8iLqRiPY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -994,37 +1008,37 @@ sudo python usrer_button.py
 
 **ReSpeaker Core v2.0 - ウェイクアップ距離テスト**
 
-このデモでは、ReSpeaker Core v2.0 のウェイクアップ距離をテストしました。Alexa を使用し、ホットワードは Snowboy です。画面に表示される「Alexa:status code 204」は、Alexa が正常にウェイクアップしたことを意味します。
+このデモでは、ReSpeaker Core v2.0のウェイクアップ距離をテストしました。ホットワードSnowboyでAlexaを使用しています。画面で見ることができるように、「Alexa:status code 204」はAlexaのウェイクアップが成功したことを意味します。
 
-高度なアルゴリズムと6つの高品質マイクを備えた結果、驚くべき性能を発揮しました！ReSpeaker Core v2.0 を16メートル（52フィート）離れた場所からウェイクアップすることができます。
+高度なアルゴリズムと6つの高品質マイクロフォンにより、結果は驚くべきものです！16メートル（52フィート）離れた場所からReSpeaker Core v2.0をウェイクアップできます！
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/PpcwvOLlpEw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **ReSpeaker Core v2.0 - 音声受付システム**
 
-このスマートシステムは、音声アシスタント（ReSpeaker Core v2.0）と電話アシスタント（Linklt One）で構成されています。訪問者が音声アシスタントに探している人の名前を伝えると、この小さなスマートアシスタントがその名前をデータベースで認識して検索します。一致する名前が見つかると、アシスタントがその人に電話をかけます。そして、その人が訪問者の身元を確認すると、「Open」というメッセージを送信するだけでドアを開けることができ、訪問者が中に入ることができます。
+このスマートシステムは、音声アシスタント（ReSpeaker Core v2.0）と電話アシスタント（Linklt One）で構成されています。ご覧のように、訪問者が音声アシスタントに探している人の名前を伝えると、小さなスマートアシスタントがそれを認識し、データベースでその人を検索します。一致する名前があれば、アシスタントがその人に電話をかけます。そして、その人が訪問者のIDを確認すると、「Open」というメッセージを送信するだけでドアを開けることができ、訪問者が入ることができます。
 
-このような音声受付システムを自宅や職場の前に設置するのはいかがでしょうか？とてもクールではありませんか？
+あなたの家や職場の前にこのような音声受付システムがあったらどうでしょうか？クールではありませんか？
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/tdIsCRXKoVI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <br />
 
-**ReSpeaker Core v2.0 - シンプルな音声受付システム**
+**ReSpeaker Core v2.0 - シンプル音声受付システム**
 
-受付サービスの基本機能は、訪問者を歓迎し、快適に感じてもらい、不正なアクセスを防ぐことです。ReSpeaker Core v2.0 の機能を活用して、音声受付サービスを設計しました。このシステムは訪問者と対話し、訪問先の人にメッセージを送ることができます。将来的には、小規模なオフィス従業員の電話リストデータベースを設計し、従業員がシステムにメッセージを送信できるようにする予定です。このシステムは ReSpeaker Core v2.0 の GPIO 機能を使用して訪問者のためにドアを開けることができます。Microsoft Bing の音声認識サービスと Twilio/Tencent メッセージ API を使用して Python スクリプトを作成しました。詳細については、[ReSpeaker Voice Reception System](https://project.seeedstudio.com/SeeedStudio/respeaker-voice-reception-system-209a6c) を参照してください。
+受付サービスの基本機能は、訪問者を迎え、歓迎の気持ちを伝え、オフィスへの不正アクセスを防ぐことです。ReSpeaker Core v2.0の機能を活用して音声受付サービスを設計しました。このシステムは訪問者と対話し、訪問される人にメッセージを送ることができます。将来的には、小さなオフィス従業員の電話リストデータベースを設計し、従業員がシステムにメッセージを送ると、システムがReSpeaker Core v2.0のGPIO機能を使用して訪問者のためにドアを開けることができます。Microsoft Bing Speech to textサービスとTwilio/Tencentメッセージ APIを使用してPythonスクリプトを作成しました。詳細については、[ReSpeaker音声受付システム](https://project.seeedstudio.com/SeeedStudio/respeaker-voice-reception-system-209a6c)を参照してください。
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/-nTOa3LLpVo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## 技術サポートと製品ディスカッション
+## 技術サポート & 製品ディスカッション
 
-弊社製品をお選びいただきありがとうございます！お客様が弊社製品をスムーズにご利用いただけるよう、さまざまなサポートをご提供しております。異なる好みやニーズに対応するため、いくつかのコミュニケーションチャネルをご用意しています。
+弊社製品をお選びいただき、ありがとうございます！お客様の製品体験を可能な限りスムーズにするため、さまざまなサポートを提供いたします。異なる好みやニーズに対応するため、複数のコミュニケーションチャネルをご用意しております。
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

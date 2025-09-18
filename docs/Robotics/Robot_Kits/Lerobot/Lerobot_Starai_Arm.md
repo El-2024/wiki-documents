@@ -1,6 +1,6 @@
 ---
 description: This wiki provides the debugging tutorial for the StarAI Robot Arm and realizes data collection and training within the Lerobot framework.
-title: Getting started with StarAI Robot Arm with LeRobot
+title: StarAI Arm in LeRobot
 keywords:
 - Lerobot
 - Huggingface
@@ -9,7 +9,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/starai_robotic_arm.webp
 slug: /lerobot_starai_arm
 last_update:
-  date: 9/1/2025
+  date: 9/16/2025
   author: LiShanghang
 ---
 
@@ -28,36 +28,31 @@ last_update:
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now!!! 🖱️</font></span></strong>
 </a></div>
 
-## Product Introduction
+## Products Introduction
 
-1. **Open-Source & Easy for Secondary Development**
-    This series of servo motors, provided by [Fashion Star Robotics](https://fashionrobo.com/), offers an open-source, easily customizable 6+1 degrees of freedom robotic arm solution.
+1. **Open-Source & Developer-Friendly**
+   It is an open-source, developer-friendly 6+1 DoF robotic arm solution from [Fishion Star Technology Limited](https://fashionrobo.com/).
+2. **Integration with LeRobot**
+   Designed for integration with [LeRobot Platform](https://github.com/huggingface/lerobot) , which provides PyTorch models, datasets, and tools for imitation learning in real-world robotic tasks — including data collection, simulation, training, and deployment.
+3. **Comprehensive Learning Resources**
+   Provides comprehensive open-source learning resources like assembly and calibration guides, and example custom grasping tasks to assist users in quickly getting started and developing robotic applications.
+4. **Compatible with Nvidia**
+   Supports deployment on the reComputer Mini J4012 Orin NX 16GB platform.
 
-2. **Dual-Arm Systems with Various Payloads**
-    The Violin serves as the leader robotic arm. When at 70% of its arm span, the follower arm Viola has an operating payload of 300g, while the follower arm Cello has an operating payload of 750g.
+## Main Features
 
-3. **Supported ROS2, Moveit2 and Isaac Sim**
-    It supports ROS2 for publishing and subscribing to robotic arm data topics and controlling the robotic arm, and also supports MoveIt2 for inverse kinematics calculation, as well as simulation in Isaac Sim.
-
-4. **LeRobot Platform Integration Support**
-    It's specifically designed for integration with the [LeRobot platform](https://github.com/huggingface/lerobot). This platform provides PyTorch models, datasets, and tools for imitation learning in real-world robotics tasks, including data collection, simulation, training, and deployment.
-
-5. **Open-Source SDK**
-     Supports Python and C++ SDK Development
-
-6. **Button Hover**
-    Simulates gravity compensation, allowing the robotic arm to hover at any position via a button.
-
-7. **Modular End Effector**
-    Enables quick DIY replacement.
-
-8. **Abundant Learning Resources**
-    We offer comprehensive open-source learning resources, including environment setup, installation and debugging guides, and custom grasping task examples to help users quickly get started and develop robotic applications.
-
-9. **Nvidia Platform Compatibility**
-    Deployment is supported via the Nvidia Jetson platform.
+- Ready to Go — No Assembly Required. Just Unbox and Dive into the World of AI.
+- 6+1 Degrees of Freedom and a 470mm Reach — Built for Versatility and Precision.
+- Powered by Dual Brushless Bus Servos — Smooth, Silent, and Strong with up to 300g Payload.
+- Parallel Gripper with 66mm Maximum Opening — Modular Fingertips for Quick-Replace Flexibility.
+- Exclusive Hover Lock Technology — Instantly Freeze Leader Arm at Any Position with a Single Press.
 
 ## Specifications
+
+<div align="center">
+    <img width={800}
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/cello.jpg" />
+</div>
 
 | Item                 | Follower Arm \| Viola                             | Leder Arm \|Violin                                |    Follower Arm \|Cello    |
 | -------------------- | ------------------------------------------------- | ------------------------------------------------- |-----------------|
@@ -138,7 +133,13 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 3. Clone Lerobot:
 
 ```bash
-git clone https://github.com/servodevelop/lerobot-starai.git
+git clone https://github.com/servodevelop/lerobot.git
+```
+
+Switch to the starai-arm-develop branch.
+
+```bash
+git checkout starai-arm-develop
 ```
 
 4. When using miniconda, install ffmpeg in your environment:
@@ -163,7 +164,7 @@ conda install ffmpeg=7.1.1 -c conda-forge
 5. Install LeRobot with dependencies for the feetech motors:
 
 ```bash
-cd ~/lerobot-starai && pip install -e ".[feetech]"
+cd ~/lerobot && pip install -e ".[starai]"
 ```
 
 For Jetson Jetpack devices (please make sure to install [Pytorch-gpu and Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) from step 5 before executing this step):
@@ -210,12 +211,22 @@ UC-01 debuging board switch：
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/UC-01 debuging board switch.png" />
 </div>
 
+<div class="video-container">
+<iframe width="900" height="600" src="https://www.youtube.com/embed/C0DsNSNl0dI?si=HQzFXNwGEEqdXz3R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 ### Configure Arm Port
+
+Enter the `src` directory:
+
+```bash
+cd src
+```
 
 Run the following command in the terminal to find USB ports associated to your arms：
 
 ```bash
-python lerobot/scripts/find_motors_bus_port.py
+python -m lerobot.find_port
 ```
 
 :::tip
@@ -224,18 +235,10 @@ Remember to remove the usb, otherwise the interface will not be detected.
 
 For example：
 
-1. Example output when identifying the leader arm's port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyACM0` on Linux):
-2. Example output when identifying the follower arm's port (e.g., `/dev/tty.usbmodem575E0032081`on Mac, or possibly `/dev/ttyACM1` on Linux):
-
-You might need to give access to the USB ports by running:
-
-```bash
-sudo chmod 666 /dev/ttyACM0
-sudo chmod 666 /dev/ttyACM1
-```
+1. Example output when identifying the leader arm's port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyUSB0` on Linux):
+2. Example output when identifying the follower arm's port (e.g., `/dev/tty.usbmodem575E0032081`on Mac, or possibly `/dev/ttyUSB1` on Linux):
 
 :::tip
-
 If the ttyUSB0 serial port cannot be identified, try the following solutions:
 
 List all USB ports.
@@ -274,122 +277,98 @@ sudo apt remove brltty
 Finally，use chmod command.
 
 ```sh
-sudo chmod 666 /dev/ttyUSB0
+sudo chmod 777 /dev/ttyUSB*
 ```
 
 :::
 
-Open-file `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
+You might need to give access to the USB ports by running:
 
-Use the Ctrl+F to search for starai and locate the following code. Then, you need to modify the port settings of follower_arms and leader_arms to match the actual port settings.
-
-```python
-@RobotConfig.register_subclass("starai")
-@dataclass
-class StaraiRobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/starai"
-    max_relative_target: int | None = None
-    
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB1",  #<-------- UPDATE HEARE
-                interval = 100,        
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB0",  #<-------- UPDATE HEARE
-                interval = 100,        
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
+```bash
+sudo chmod 666 /dev/ttyUSB0
+sudo chmod 666 /dev/ttyUSB1
 ```
 
-### Set Runtime Parameters
+## Calibrate
 
-Open-file `lerobot-starai\lerobot\common\robot_devices\robots\configs.py`
+### For Initial Calibration
 
-Use the Ctrl + F to search for starai and locate the following code. Then, you need modify the interval setting of follower_arms.
+Please rotate each joint left and right to the corresponding positions.
 
-- Description: The faster the follower responds when the time interval becomes smaller, and more stable the follower runs when the time interval becomes larger.
-- Value Range: Integer, greater than 50 and less than 2000.
+### For Re-Calibration
 
-It is recommended to set the interval to 100 (default value) during teleoperation for better responsiveness, and to 1000 during autonomous execution in evaluation phases to ensure more stable motion.
+Follow the on-screen prompt: enter the letter "c" and press the Enter key.
 
-```python
-@RobotConfig.register_subclass("starai")
-@dataclass
-class StaraiRobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/starai"
-    max_relative_target: int | None = None
+Below are the reference values. Under normal circumstances, the actual limit reference values should fall within the range of **±10°** of these references.
 
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB1",
-                interval = 100,  #<-------- UPDATE HEARE       
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
+| Servo ID | Lower Angle Limit (°) | Upper Angle Limit (°) | Notes                                          |
+| -------- | --------------------- | --------------------- | ---------------------------------------------- |
+| motor\_0 | -180°                 | 180°                  | Rotate to the limit position                   |
+| motor\_1 | -90°                  | 90°                   | Rotate to the limit position                   |
+| motor\_2 | -90°                  | 90°                   | Rotate to the limit position                   |
+| motor\_3 | -180°                 | 180°                  | No limit; rotate to the reference angle limits |
+| motor\_4 | -90°                  | 90°                   | Rotate to the limit position                   |
+| motor\_5 | -180°                 | 180°                  | No limit; rotate to the reference angle limits |
+| motor\_6 | 0°                    | 100°                  | Rotate to the limit position                   |
 
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": StaraiMotorsBusConfig(
-                port="/dev/ttyUSB0",
-                interval = 100,  #<-------- UPDATE HEARE
-                motors={
-                    # name: (index, model)
-                    "joint1": [0, "rx8-u50"],
-                    "joint2": [1, "rx8-u50"],
-                    "joint3": [2, "rx8-u50"],
-                    "joint4": [3, "rx8-u50"],
-                    "joint5": [4, "rx8-u50"],
-                    "joint6": [5, "rx8-u50"],
-                    "gripper": [6, "rx8-u50"],
-                },
-            ),
-        }
-    )
+:::tip
+Taking PC (Linux) and Jetson board as examples, the `first` USB device inserted will be mapped to `ttyUSB0`, and the `second` USB device inserted will be mapped to `ttyUSB1`.
 
+Please pay attention to the mapping interfaces of the leader and follower before running the code.
+:::
+
+#### Leader Robotic Arm
+
+Connect the leader to `/dev/ttyUSB0`, or modify the `--teleop.port` parameter, and then execute:
+
+```bash
+python -m lerobot.calibrate --teleop.type=starai_violin --teleop.port=/dev/ttyUSB0 --teleop.id=my_awesome_staraiviolin_arm
 ```
 
-### Calibrate
+#### Follower Robotic Arm
 
-Normally, the robotic arm is pre-calibrated in factory and does not require recalibration. If a joint motor is found to remain at a limit position for a long period, please contact us to obtain the calibration file and perform recalibration again.
+Connect the follower to `/dev/ttyUSB1`, or modify the `--teleop.port` parameter, and then execute:
+
+```bash
+python -m lerobot.calibrate --robot.type=starai_viola --robot.port=/dev/ttyUSB1 --robot.id=my_awesome_staraiviola_arm
+```
+
+After running the command, you need to **manually move the robotic arm** to allow each joint to reach its **limit position**. The terminal will display the recorded range data. Once this operation is completed, press Enter.
+
+:::tip
+The calibration files will be saved to the following paths: `~/.cache/huggingface/lerobot/calibration/robots` and `~/.cache/huggingface/lerobot/calibration/teleoperators`.
+:::
+
+### Dual-Arm Calibration Setup
+
+<details>
+<summary> Tutorial </summary>
+
+#### Leader Robotic Arm
+
+Connect `left_arm_port` to `/dev/ttyUSB0` and `right_arm_port` to `/dev/ttyUSB2`, or modify the `--teleop.left_arm_port` and `--teleop.right_arm_port` parameters, and then execute:
+
+```bash
+python -m lerobot.calibrate --teleop.type=bi_starai_leader --teleop.left_arm_port=/dev/ttyUSB0 --teleop.right_arm_port=/dev/ttyUSB2 --teleop.id=bi_starai_leader
+```
+
+#### Follower Robotic Arm
+
+Connect `left_arm_port` to `/dev/ttyUSB1` and `right_arm_port` to `/dev/ttyUSB3`, or modify the `--robot.left_arm_port` and `--robot.right_arm_port` parameters, and then execute:
+
+```bash
+python -m lerobot.calibrate --robot.type=bi_starai_follower --robot.left_arm_port=/dev/ttyUSB1 --robot.right_arm_port=/dev/ttyUSB3 --robot.id=bi_starai_follower
+```
+
+:::tip
+
+The difference between single-arm and dual-arm setups lies in the `--teleop.type` and `--robot.type` parameters. Additionally, dual-arm setups require separate USB ports for the left and right arms, totaling four USB ports: `--teleop.left_arm_port`, `--teleop.right_arm_port`, `--robot.left_arm_port`, and `--robot.right_arm_port`.
+
+If using a dual-arm setup, you need to manually modify the robotic arm file types `--teleop.type` and `--robot.type`, as well as the USB ports `--teleop.left_arm_port`, `--teleop.right_arm_port`, `--robot.left_arm_port`, and `--robot.right_arm_port`, to adapt to teleoperation, data collection, training, and evaluation commands.
+
+:::
+
+</details>
 
 ## Teleoperate
 
@@ -404,17 +383,41 @@ Move the arm to the position shown in the diagram and set it to standby.
     src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/Specifications.png" />
 </div>
 
-**Simple teleop**
-Then you are ready to teleoperate your robot! Run this simple script (it won't connect and display the cameras):
+Then you are ready to teleoperate your robot (It won't display the cameras)! Run this simple script :
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=starai \
-  --robot.cameras='{}' \
-  --control.type=teleoperate
+python -m lerobot.teleoperate \
+    --robot.type=starai_viola \
+    --robot.port=/dev/ttyUSB1 \
+    --robot.id=my_awesome_staraiviola_arm \
+    --teleop.type=starai_violin \
+    --teleop.port=/dev/ttyUSB0 \
+    --teleop.id=my_awesome_staraiviolin_arm
 ```
 
-After the program starts, the Hold button remains functional.
+<details>
+<summary> Dual-Arm </summary>
+
+```bash
+python -m lerobot.teleoperate \
+    --robot.type=bi_starai_follower \
+    --robot.left_arm_port=/dev/ttyUSB1 \
+    --robot.right_arm_port=/dev/ttyUSB3 \
+    --robot.id=bi_starai_follower \
+    --teleop.type=bi_starai_leader \
+    --teleop.left_arm_port=/dev/ttyUSB0 \
+    --teleop.right_arm_port=/dev/ttyUSB2 \
+    --teleop.id=bi_starai_leader
+```
+
+</details>
+
+The remote operation command will automatically detect the following parameters:
+
+1. Identify any missing calibrations and initiate the calibration procedure.
+2. Connect the robot and the remote operation device and start the remote operation.
+
+After the program starts, the Hover Lock Technology remains functional.
 
 ## Add cameras
 
@@ -425,70 +428,74 @@ After the program starts, the Hold button remains functional.
 After inserting your two USB cameras, run the following script to check the port numbers of the cameras. It is important to remember that the camera must not be connected to a USB Hub; instead, it should be plugged directly into the device. The slower speed of a USB Hub may result in the inability to read image data.
 
 ```bash
-python lerobot/common/robot_devices/cameras/opencv.py \
-    --images-dir outputs/images_from_opencv_cameras
+python -m lerobot.find_cameras opencv # or realsense for Intel Realsense cameras
 ```
 
-The terminal will print out the following information. For example, the laptop camera is `index 0`, and the USB camera is `index 2`.
+The terminal will print out the following information. For example, the laptop camera is `index 2`, and the USB camera is `index 4`.
 
 ```markdown
-Mac or X86 Ubuntu detected. Finding available camera indices through scanning all indices from 0 to 60
-[...]
-Camera found at index 0
-Camera found at index 2
-[...]
-Connecting cameras
-OpenCVCamera(0, fps=30.0, width=640, height=480, color_mode=rgb)
-OpenCVCamera(2, fps=30.0, width=640, height=480, color_mode=rgb)
-Saving images to outputs/images_from_opencv_cameras
-Frame: 0000 Latency (ms): 39.52
-[...]
-Frame: 0046 Latency (ms): 40.07
-Images have been saved to outputs/images_from_opencv_cameras
+--- Detected Cameras ---
+Camera #0:
+  Name: OpenCV Camera @ /dev/video2
+  Type: OpenCV
+  Id: /dev/video2
+  Backend api: V4L2
+  Default stream profile:
+    Format: 0.0
+    Width: 640
+    Height: 480
+    Fps: 30.0
+--------------------
+Camera #1:
+  Name: OpenCV Camera @ /dev/video4
+  Type: OpenCV
+  Id: /dev/video4
+  Backend api: V4L2
+  Default stream profile:
+    Format: 0.0
+    Width: 640
+    Height: 360
+    Fps: 30.0
+--------------------
+
+Finalizing image saving...
+Image capture finished. Images saved to outputs/captured_images
 ```
 
-You can find the pictures taken by each camera in the `outputs/images_from_opencv_cameras` directory, and confirm the port index information corresponding to the cameras at different positions. Then complete the alignment of the camera parameters in the `lerobot-starai/lerobot/common/robot_devices/robots/configs.py` file.
+You can find the images captured by each camera in the `outputs/images_from_opencv_cameras` directory and verify the port index information corresponding to cameras at different positions.
 
-<div align="center">
-    <img width={400}
-    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/starai/camera.png" />
-</div>
-
-```python
-@RobotConfig.register_subclass("starai")
-@dataclass
-class StaraiRobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/starai"
-
-    cameras: dict[str, CameraConfig] = field(
-        default_factory=*lambda*: {
-            "laptop": OpenCVCameraConfig(
-                camera_index=2,             #<------ UPDATE HEARE
-                fps=30,
-                width=640,
-                height=480,
-            ),
-            "phone": OpenCVCameraConfig(
-                camera_index=0,             #<------ UPDATE HEARE
-                fps=30,
-                width=640,
-                height=480,
-            ),
-        }
-    )
-
-​    mock: bool = False
-  
-```
-
-Then you will be able to display the cameras on your computer while you are teleoperating：
+After confirming the external cameras, replace the camera information below with your actual camera information, and you will be able to display the cameras on your computer during remote operation:
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=starai \
-  --control.type=teleoperate \
-  --control.display_data=true
+python -m lerobot.teleoperate \
+    --robot.type=starai_viola \
+    --robot.port=/dev/ttyUSB1 \
+    --robot.id=my_awesome_staraiviola_arm \
+    --robot.cameras="{ up: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30},front: {type: opencv, index_or_path: /dev/video4, width: 640, height: 480, fps: 30}}" \
+    --teleop.type=starai_violin \
+    --teleop.port=/dev/ttyUSB0 \
+    --teleop.id=my_awesome_staraiviolin_arm \
+    --display_data=true
 ```
+
+<details>
+<summary> Dual-Arm </summary>
+
+```bash
+python -m lerobot.teleoperate \
+    --robot.type=bi_starai_follower \
+    --robot.left_arm_port=/dev/ttyUSB1 \
+    --robot.right_arm_port=/dev/ttyUSB3 \
+    --robot.id=bi_starai_follower \
+    --robot.cameras="{ up: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30},front: {type: opencv, index_or_path: /dev/video4, width: 640, height: 480, fps: 30}}" \
+    --teleop.type=bi_starai_leader \
+    --teleop.left_arm_port=/dev/ttyUSB0 \
+    --teleop.right_arm_port=/dev/ttyUSB2 \
+    --teleop.id=bi_starai_leader \
+    --display_data=true
+```
+
+</details>
 
 :::tip
 If you find bug like this.
@@ -527,246 +534,324 @@ HF_USER=$(huggingface-cli whoami | head -n 1)
 echo $HF_USER
 ```
 
+Record 10 episodes and upload your dataset to the hub:
+
+```bash
+python -m lerobot.record \
+    --robot.type=starai_viola \
+    --robot.port=/dev/ttyUSB1 \
+    --robot.id=my_awesome_staraiviola_arm \
+    --robot.cameras="{ up: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30},front: {type: opencv, index_or_path: /dev/video4, width: 640, height: 480, fps: 30}}" \
+    --teleop.type=starai_violin \
+    --teleop.port=/dev/ttyUSB0 \
+    --teleop.id=my_awesome_staraiviolin_arm \
+    --display_data=true \
+    --dataset.repo_id=${HF_USER}/starai \
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 \
+    --dataset.num_episodes=10 \
+    --dataset.push_to_hub=True \
+    --dataset.single_task="Grab the black cube"
+```
+
+<details>
+<summary> Dual-Arm </summary>
+
+```bash
+python -m lerobot.record \
+    --robot.type=bi_starai_follower \
+    --robot.left_arm_port=/dev/ttyUSB1 \
+    --robot.right_arm_port=/dev/ttyUSB3 \
+    --robot.id=bi_starai_follower \
+    --teleop.type=bi_starai_leader \
+    --teleop.left_arm_port=/dev/ttyUSB0 \
+    --teleop.right_arm_port=/dev/ttyUSB2 \
+    --teleop.id=bi_starai_leader \
+    --robot.cameras="{ up: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30},front: {type: opencv, index_or_path: /dev/video4, width: 640, height: 480, fps: 30}}" \
+    --display_data=true \
+    --dataset.repo_id=starai/record-test_bi_arm \
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 \
+    --dataset.num_episodes=10 \
+    --dataset.push_to_hub=True \
+    --dataset.single_task="Grab the black cube"
+```
+
 :::tip
-If you do not wish to use the Hugging Face Hub's dataset upload feature, you can opt for `--control.push_to_hub=false`. Additionally, replace `--control.repo_id=${HF_USER}/starai` with a custom local folder name, such as `--control.repo_id=starai/starai`. The data will be stored in the `~/.cache/huggingface/lerobot` directory under the system's home directory.
+To differentiate between single-arm and dual-arm setups, the `--dataset.repo_id` here is named `starai/record-test_bi_arm`.
 :::
 
-Record 20 episodes and upload your dataset to the hub:
+</details>
+
+:::tip
+If you do not want to use the Hugging Face Hub dataset upload feature, you can choose `--dataset.push_to_hub=false`. Also, replace `--dataset.repo_id=${HF_USER}/starai` with a custom local folder name, for example, `--dataset.repo_id=starai/record-test`. The data will be stored in `~/.cache/huggingface/lerobot` under the system's home directory.
+:::
+
+Not uploading to Hub:
+**（Recommended, the following tutorials will focus on local data）**
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=starai \
-  --control.type=record \
-  --control.fps=30 \
-  --control.single_task="Grasp a lego block and put it in the bin." \
-  --control.repo_id=${HF_USER}/starai \
-  --control.tags='["starai","tutorial"]' \
-  --control.warmup_time_s=5 \
-  --control.episode_time_s=30 \
-  --control.reset_time_s=30 \
-  --control.num_episodes=20 \
-  --control.display_data=true \
-  --control.push_to_hub=ture
+python -m lerobot.record \
+    --robot.type=starai_viola \
+    --robot.port=/dev/ttyUSB1 \
+    --robot.id=my_awesome_staraiviola_arm \
+    --robot.cameras="{ up: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30},front: {type: opencv, index_or_path: /dev/video4, width: 640, height: 480, fps: 30}}" \
+    --teleop.type=starai_violin \
+    --teleop.port=/dev/ttyUSB0 \
+    --teleop.id=my_awesome_staraiviolin_arm \
+    --display_data=true \
+    --dataset.repo_id=starai/record-test \
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 \
+    --dataset.num_episodes=10 \
+    --dataset.push_to_hub=False \#修改push_to_hub为false
+    --dataset.single_task="Grab the black cube"
 ```
 
-Don't upload to Hub:
-**(Recommended, the following tutorials will mainly focus on local data)**
+<details>
+<summary> Dual-Arm </summary>
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=starai \
-  --control.type=record \
-  --control.fps=30 \
-  --control.single_task="Grasp a lego block and put it in the bin." \
-  --control.repo_id=starai/starai \#Assign a name to the local storage file yourself
-  --control.tags='["starai","tutorial"]' \
-  --control.warmup_time_s=5 \
-  --control.episode_time_s=30 \
-  --control.reset_time_s=30 \
-  --control.num_episodes=20 \
-  --control.display_data=true \
-  --control.push_to_hub=false #set push_to_hub to false
-```
-
-You will see data similar to the following:
-
-```bash
-INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5hz) dtWfoll: 0.25 (3963.7hz) dtRfoll: 6.22 (160.7hz) dtRlaptop: 32.57 (30.7hz) dtRphone: 33.84 (29.5hz)
-```
-
-```markdown
-Parameter Explanations
-- wormup-time-s: It refers to the initialization time.
-- episode-time-s: It represents the time for collecting data each time.
-- reset-time-s: It is the preparation time between each data collection.
-- num-episodes: It indicates how many groups of data are expected to be collected.
-- push-to-hub: It determines whether to upload the data to the HuggingFace Hub. 
+python -m lerobot.record \
+    --robot.type=bi_starai_follower \
+    --robot.left_arm_port=/dev/ttyUSB1 \
+    --robot.right_arm_port=/dev/ttyUSB3 \
+    --robot.id=bi_starai_follower \
+    --teleop.type=bi_starai_leader \
+    --teleop.left_arm_port=/dev/ttyUSB0 \
+    --teleop.right_arm_port=/dev/ttyUSB2 \
+    --teleop.id=bi_starai_leader \
+    --robot.cameras="{ up: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30},front: {type: opencv, index_or_path: /dev/video4, width: 640, height: 480, fps: 30}}" \
+    --display_data=true \
+    --dataset.repo_id=starai/record-test_bi_arm \
+    --dataset.episode_time_s=30 \
+    --dataset.reset_time_s=30 \
+    --dataset.num_episodes=10 \
+    --dataset.push_to_hub=False \#修改push_to_hub为false
+    --dataset.single_task="Grab the black cube"
 ```
 
 :::tip
+To differentiate between single-arm and dual-arm setups, the `--dataset.repo_id` here is named `starai/record-test_bi_arm`.
+:::
 
-- **Again**: "If you want to save the data locally (`--control.push_to_hub=false`), replace `--control.repo_id=${HF_USER}/starai` with a custom local folder name, such as `--control.repo_id=starai/starai`. It will then be stored in the system's home directory at `~/.cache/huggingface/lerobot`."
+</details>
 
-- Note: You can resume recording by adding `--control.resume=true`. Also if you didn't push your dataset yet, add `--control.local_files_only=true`. You will need to manually delete the dataset directory if you want to start recording from scratch.
+- `record` provides a set of tools for capturing and managing data during robot operations:
 
-- If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
+#### 1. Data Storage
 
-- Press right arrow → at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
+- Data is stored in the `LeRobotDataset` format and saved to disk during the recording process.
 
-- Press left arrow ← at any time during episode recording or resetting to early stop, cancel the current episode, and re-record it.
+#### 2. Checkpointing and Resuming
 
-- Press escape ESC at any time during episode recording to end the session early and go straight to video encoding and dataset uploading.
+- Checkpoints are automatically created during recording.
+- If an issue occurs, you can resume by rerunning the same command with `--resume=true`. When resuming recording, you must set `--dataset.num_episodes` to the **additional number of episodes to record**, not the target total number of episodes in the dataset!
+- To start recording from scratch, **manually delete** the dataset directory.
 
-- Once you're comfortable with data recording, you can create a larger dataset for training. A good starting task is grasping an object at different locations and placing it in a bin. We suggest recording at least 50 episodes, with 10 episodes per location. Keep the cameras fixed and maintain consistent grasping behavior throughout the recordings. Also make sure the object you are manipulating is visible on the camera's. A good rule of thumb is you should be able to do the task yourself by only looking at the camera images.
+#### 3. Recording Parameters
 
-- In the following sections, you’ll train your neural network. After achieving reliable grasping performance, you can start introducing more variations during data collection, such as additional grasp locations, different grasping techniques, and altering camera positions.
+Set the data recording workflow using command-line parameters:
 
-- Avoid adding too much variation too quickly, as it may hinder your results.
+```markdown
+Parameter Description
+- warmup-time-s: The initialization time.
+- episode-time-s: The duration for each data collection session.
+- reset-time-s: The preparation time between each data collection.
+- num-episodes: The expected number of data sets to collect.
+- push-to-hub: Determines whether to upload the data to HuggingFace Hub.
+```
 
-- On Linux, if the left and right arrow keys and escape key don't have any effect during data recording, make sure you've set the $DISPLAY environment variable. See [pynput limitations](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
+#### 4. Keyboard Controls During Recording
 
+Use keyboard shortcuts to control the data recording workflow:
+
+- Press **right arrow key (→)**: Prematurely stop the current episode or reset the time, then move to the next one.
+- Press **left arrow key (←)**: Cancel the current episode and re-record it.
+- Press **ESC**: Immediately stop the session, encode the video, and upload the dataset.
+
+:::tip
+On Linux, if the left and right arrow keys and the escape key have no effect during data recording, ensure that the $DISPLAY environment variable is set. See pynput limitations.
+
+Once you are familiar with data recording, you can create a larger dataset for training. A good starting task is to grasp an object at different positions and place it in a small box. We recommend recording at least 50 episodes, with 10 episodes per location. Keep the camera fixed and maintain consistent grasping behavior throughout the recording. Also, ensure that the object you are manipulating is visible in the camera. A good rule of thumb is that you should be able to complete the task by looking only at the camera image.
 :::
 
 ## Visualize the dataset
 
-The dataset is saved locally. You can visualize it locally with:
+:::tip
+Unstable, can be skipped, or can be attempted.
+:::
 
 ```bash
-python lerobot/scripts/visualize_dataset_html.py \
-  --repo-id starai/starai \
+echo ${HF_USER}/starai  
 ```
 
-Here, `starai/starai` is the custom `repo_id` name defined when collecting data.
+If you used `--dataset.push_to_hub=true` and uploaded the data, you can visualize it locally with the following command:
+
+```bash
+python -m lerobot.scripts.visualize_dataset_html \
+  --repo-id ${HF_USER}/starai
+```
+
+If you used `--dataset.push_to_hub=false` and did not upload the data, you can visualize it locally with the following command:
+
+```bash
+python -m lerobot.scripts.visualize_dataset_html \
+  --repo-id starai/record-test
+```
+
+Here, `starai/record-test` is the custom `repo_id` name you specified when collecting the data.
 
 ## Replay an episode
 
 Now try to replay the first episode on your robot:
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=starai \
-  --control.type=replay \
-  --control.fps=30 \
-  --control.repo_id=starai/starai \
-  --control.episode=0 \# 0 is the first episode
-  --control.local_files_only=true
+python -m lerobot.replay \
+    --robot.type=starai_viola \
+    --robot.port=/dev/ttyUSB1 \
+    --robot.id=my_awesome_staraiviola_arm \
+    --dataset.repo_id=starai/record-test \
+    --dataset.episode=0 # choose the episode you want to replay
 ```
 
-:::tip
-The parameter `--control.local_files_only=true` is used to instruct the program to utilize local datasets rather than those from the Hub.
-:::
-
-## Train a policy
-
-To train a policy to control your robot, use the `python lerobot/scripts/train.py` script. A few arguments are required. Here is an example command:
+<details>
+<summary> Dual-Arm </summary>
 
 ```bash
-python lerobot/scripts/train.py \
-  --dataset.repo_id=starai/starai \
+python -m lerobot.replay \
+    --robot.type=bi_starai_follower \
+    --robot.left_arm_port=/dev/ttyUSB1 \
+    --robot.right_arm_port=/dev/ttyUSB3 \
+    --robot.id=bi_starai_follower \
+    --dataset.repo_id=starai/record-test_bi_arm \
+    --dataset.episode=0 # choose the episode you want to replay
+```
+
+</details>
+
+## Train policy
+
+To train a policy to control your robot, here is an example command:
+
+```bash
+python -m lerobot.scripts.train \
+  --dataset.repo_id=starai/record-test \
   --policy.type=act \
-  --output_dir=outputs/train/act_starai \
-  --job_name=act_starai \
+  --output_dir=outputs/train/act_viola_test \
+  --job_name=act_viola_test \
   --policy.device=cuda \
-  --wandb.enable=false
+  --wandb.enable=False \
+  --policy.repo_id=starai/my_policy
 ```
 
-Let's explain it:
-
-1. We use our local dataset as argument `--dataset.repo_id=starai/starai`.
-2. We provide the policy using `policy.type=act`, which will load the configuration from [`lerobot-starai/lerobot/common/policies/act/configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/common/policies/act/configuration_act.py). Currently, ACT has been tested, but you can also try other policies such as diffusion, pi0, pi0fast, tdmpc, and vqbet.
-3. We provided policy.device=cuda since we are training on a Nvidia GPU, but you could use policy.device=mps to train on Apple silicon.
-4. We provided `wandb.enable=true` to use [Weights and Biases](https://docs.wandb.ai/quickstart) for visualizing training plots. This is optional but if you use it, make sure you are logged in by running `wandb login`.
-
-If you want to train on a local dataset, make sure the `repo_id` matches the one used during data collection. Training should take several hours. You will find checkpoints in`outputs/train/act_starai/checkpoints` .
-
-To resume training from a checkpoint, below is an example command to resume from last checkpoint of the `act_starai` :
+<details>
+<summary> Dual-Arm </summary>
 
 ```bash
-python lerobot/scripts/train.py \
-  --config_path=outputs/train/act_starai/checkpoints/last/pretrained_model/train_config.json \
+python -m lerobot.scripts.train \
+  --dataset.repo_id=starai/record-test_bi_arm \
+  --policy.type=act \
+  --output_dir=outputs/train/act_bi_viola_test \
+  --job_name=act_bi_viola_test \
+  --policy.device=cuda \
+  --wandb.enable=False \
+  --policy.repo_id=starai/my_policy
+```
+
+</details>
+
+1. We provide the dataset as a parameter: `dataset.repo_id=starai/record-test`.
+
+2. We will load the configuration from [`configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py). Importantly, this policy will automatically adapt to the robot's motor states, motor actions, and the number of cameras, and will be saved in your dataset.
+
+3. We provide `wandb.enable=true` to use [Weights and Biases](https://docs.wandb.ai/quickstart) for visualizing training charts. This is optional, but if you use it, make sure you have logged in by running `wandb login`.
+
+Resume training from a specific checkpoint.
+
+```bash
+python -m lerobot.scripts.train \
+  --config_path=outputs/train/act_viola_test/checkpoints/last/pretrained_model/train_config.json \
   --resume=true
 ```
 
 ## Evaluate your policy
 
-You can use the `record` function from [`lerobot/scripts/control_robot.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/scripts/control_robot.py) , but with a policy checkpoint as input. For instance, run this command to record 10 evaluation episodes:
+Run the following command to record 10 evaluation episodes:
 
 ```bash
-python lerobot/scripts/control_robot.py \
-  --robot.type=starai \
-  --control.type=record \
-  --control.fps=30 \
-  --control.single_task="Grasp a lego block and put it in the bin." \
-  --control.repo_id=starai/eval_act_starai \
-  --control.tags='["tutorial"]' \
-  --control.warmup_time_s=5 \
-  --control.episode_time_s=30 \
-  --control.reset_time_s=0 \#Set the reset time to 0 to skip the reset phase and ensure continuous operation.
-  --control.num_episodes=10 \
-  --control.push_to_hub=false \#Choose don't upload to Hub
-  --control.policy.path=outputs/train/act_starai/checkpoints/last/pretrained_model
+python -m lerobot.record  \
+  --robot.type=starai_viola \
+  --robot.port=/dev/ttyUSB1 \
+  --robot.cameras="{ up: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30},front: {type: opencv, index_or_path: /dev/video4, width: 640, height: 480, fps: 30}}" \
+  --robot.id=my_awesome_staraiviola_arm \
+  --display_data=false \
+  --dataset.repo_id=starai/eval_record-test \
+  --dataset.single_task="Grab the black cube" \
+  --policy.path=outputs/train/act_viola_test/checkpoints/last/pretrained_model
 ```
 
-As you can see, this is almost identical to the command previously used to record the training dataset. There are only two differences:
+<details>
+<summary> Dual-Arm </summary>
 
-1. The `--control.policy.path` parameter has been added to indicate the path of your policy checkpoint (for example, `outputs/train/act_starai/checkpoints/last/pretrained_model`).
-2. The name of the evaluation dataset **must** start with `eval` to reflect that you are running inference (for example, `--control.repo_id=starai/eval_act_starai`). This operation will record videos and data specifically during evaluation and save them to `eval_act_starai`.
+```bash
+python -m lerobot.record  \
+    --robot.type=bi_starai_follower \
+    --robot.left_arm_port=/dev/ttyUSB1 \
+    --robot.right_arm_port=/dev/ttyUSB3 \
+    --robot.cameras="{ up: {type: opencv, index_or_path: /dev/video0, width: 640, height: 480, fps: 30},front: {type: opencv, index_or_path: /dev/video2, width: 640, height: 480, fps: 30}}" \
+    --robot.id=bi_starai_follower \
+    --display_data=false \
+    --dataset.repo_id=starai/eval_record-test_bi_arm \
+    --dataset.single_task="test" \
+    --policy.path=outputs/train/act_bi_viola_test/checkpoints/last/pretrained_model
+```
 
-:::warning
-If an error occurs when you run the evaluation command for the second time, you need to delete the corresponding `eval_act_starai` file to ensure that there are no files with the same name under the directory `~/.cache/huggingface/lerobot/starai/`.
-:::
+</details>
 
-:::tip
-If you upload your model checkpoint to the Hub, you can also use the model repository (for example, `--control.repo_id=${HF_USER}/eval_act_starai`), while setting `--control.push_to_hub=true`.
-:::
+As you can see, this is almost the same as the command previously used to record the training dataset, with a few changes:
+
+1. The `--policy.path` parameter, which indicates the path to your trained policy weights file (for example, `outputs/train/act_viola_test/checkpoints/last/pretrained_model`). If you have uploaded your model weights to the Hub, you can also use the model repository (for example, `${HF_USER}/starai`).
+
+2. The name of the evaluation dataset `dataset.repo_id` starts with `eval_`. This operation will record videos and data specifically for the evaluation phase, which will be saved in a folder starting with `eval_`, such as `starai/eval_record-test`.
+
+3. If you encounter `File exists: 'home/xxxx/.cache/huggingface/lerobot/xxxxx/starai/eval_xxxx'` during the evaluation phase, please delete the folder starting with `eval_` and run the program again.
+
+4. When encountering `mean is infinity. You should either initialize with stats as an argument or use a pretrained model`, please ensure that the keywords such as `up` and `front` in the `--robot.cameras` parameter are strictly consistent with those used during the data collection phase.
 
 ## FAQ
 
-- If you are following this documentation/tutorial, please git clone the recommended GitHub repository `git clone https://github.com/servodevelop/lerobot-starai.git`.
+- If you are using the tutorial in this document, please `git clone` the recommended GitHub repository: `https://github.com/servodevelop/lerobot.git`.
 
-- If you encounter the following error, you need to check whether the robotic arm connected to the corresponding port is powered on and whether the bus servos have any loose or disconnected cables.
+- If teleoperation works normally but teleoperation with a Camera does not display the image interface, please refer to [here](https://github.com/huggingface/lerobot/pull/757/files).
 
-  ```bash
-  ConnectionError: Read failed due to comunication eror on port /dev/ttyACM0 for group key Present_Position_Shoulder_pan_Shoulder_lift_elbow_flex_wrist_flex_wrist_roll_griper: [TxRxResult] There is no status packet!
-  ```
-
-- If you have repaired or replaced any parts of the robotic arm, please completely delete the `~/lerobot/.cache/huggingface/calibration/so100` folder and recalibrate the robotic arm.
-
-- If the remote control functions normally but the remote control with Camera fails to display the image interface, you can find [here](https://github.com/huggingface/lerobot/pull/757/files)
-
-- If you encounter libtiff issues during dataset remote operation, please update the libtiff version.
+- If you encounter a libtiff issue during dataset teleoperation, please update the libtiff version.
 
   ```bash
-  conda install libtiff==4.5.0  #for Ubuntu 22.04 is libtiff==4.5.1
+  conda install libtiff==4.5.0  # for Ubuntu 22.04, use libtiff==4.5.1
   ```
 
-- After executing the [Lerobot Installation](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot), the GPU version of pytorch may be automatically uninstalled, so you need to manually install torch-gpu.
+- After installing LeRobot, it may automatically uninstall the GPU version of PyTorch, so you need to manually install torch-gpu.
 
-- For Jetson, please first install [Pytorch and Torchvsion](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) before executing `conda install -y -c conda-forge ffmpeg`, otherwise, when compiling torchvision, an ffmpeg version mismatch issue may occur.
+- For Jetson, please first install [PyTorch and Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) before running `conda install -y -c conda-forge ffmpeg`, otherwise, there will be a version mismatch issue when compiling torchvision.
 
-- If the following problem occurs, it means that your computer does not support this video codec format. You need to modify line 134 in the file `lerobot-starai/lerobot/common/datasets/video_utils.py` by changing the value of `vcodec: str = "libsvtav1"` to `libx264` or `libopenh264`. Different computers may require different parameters, so you can try various options. [Issues 705](https://github.com/huggingface/lerobot/issues/705)
-  
-  ```bash
-  [vost#0:0 @ 0x13207240] Unknown encoder 'libsvtav1' [vost#0:0 @ 0x13207240] Error selecting an encoder Error opening output file /home/han/.cache/huggingface/lerobot/lyhhan/so100_test/videos/chunk-000/observation.images.laptop/episode_000000.mp4. Error opening output files: Encoder not found
-  ```
+- Training 50 episodes of ACT data on a 3060 8GB laptop takes approximately 6 hours, while training 50 episodes on a 4090 or A100 computer takes about 2-3 hours.
 
-- Important!!! If during execution the servo's cable becomes loose, please restore the servo to its initial position and then reconnect the servo cable. You can also individually calibrate a servo using the [Servo Initialization Command](https://wiki.seeedstudio.com/lerobot_so100m/#configure-the-motors), ensuring that only one cable is connected between the servo and the driver board during individual calibration. If you encounter
+- During data collection, ensure the stability of the camera position and angle, as well as the environmental lighting, and minimize the unstable background and pedestrians captured by the camera. Otherwise, significant changes in the deployment environment may cause the robotic arm to fail to grasp objects normally.
 
-  ```bash
-  Auto-correct calibration of motor 'wrist roll' by shifting value by 1 full turns, from '-270 < -312.451171875 < 270degrees' to'-270<-312.451171875 < 270 degrees'.
-  ```
+- The `num-episodes` in the data collection command should ensure sufficient data collection and should not be manually paused midway. This is because the mean and variance of the data are calculated only after data collection is completed, which is necessary for training.
 
-  or other errors during the robotic arm calibration process related to angles and exceeding limit values, this method is still applicable.
-
-- Training 50 sets of ACT data on an 8G 3060 laptop takes approximately 6 hours, while on a 4090 or A100 computer, training 50 sets of data takes about 2–3 hours.
-
-- During data collection, ensure that the camera's position, angle, and environmental lighting remain stable, and minimize capturing excessive unstable backgrounds and pedestrians; otherwise, significant environmental changes during deployment may cause the robotic arm to fail to grasp properly.
-
-- Ensure that the `num-episodes` parameter in the data collection command is set to collect sufficient data, and do not manually pause midway. This is because the mean and variance of the data are calculated only after data collection is complete, which is necessary for training.
-
-- If the program prompts that it cannot read the USB camera image data, please ensure that the USB camera is not connected to a hub. The USB camera must be directly connected to the device to ensure a fast image transmission rate.
-
-- If you find bug like `AttributeError: module 'rerun' has no attribute 'scalar'. Did you mean: 'scalars'?`, You can downgrade the rerun version to resolve the issue.
-
-```bash
-pip3 install rerun-sdk==0.23
-```
-
-:::tip
-If you encounter software issues or environment dependency problems that cannot be resolved, in addition to checking the FAQ section at the end of this tutorial, please promptly report the issue to the [LeRobot platform](https://github.com/huggingface/lerobot) or the [LeRobot Discord channel](https://discord.gg/8TnwDdjFGU).
-:::
+- If the program prompts that it cannot read the USB camera image data, please ensure that the USB camera is not connected through a Hub. The USB camera must be directly connected to the device to ensure fast image transmission rates.
 
 ## Citation
 
-Seeedstudio English Wiki document：[How to use the SO10xArm robotic arm in the latest version of Lerobot](https://wiki.seeedstudio.com/lerobot_so100m_new/)
+StarAI Robot Arm ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/starai_arm_ros_moveit/)
 
-lerobot-starai github: [lerobot-starai](https://github.com/Welt-liu/lerobot-starai)
+lerobot-starai github: [lerobot-starai](https://github.com/servodevelop/lerobot.git)
 
 STEP: [STEP](https://github.com/Welt-liu/star-arm-moveit2/tree/main/hardware)
 
 URDF: [URDF](https://github.com/Welt-liu/star-arm-moveit2/tree/main/src/cello_description)
-
-StarAI Robot Arm moveit2: [star-arm-moveit2](https://github.com/Welt-liu/star-arm-moveit2)
 
 Huggingface Project: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
 

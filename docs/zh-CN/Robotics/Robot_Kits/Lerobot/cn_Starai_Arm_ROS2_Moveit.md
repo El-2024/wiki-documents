@@ -1,6 +1,6 @@
 ---
 description: 本维基提供的是 Starai Arm 机械臂ROS2 Moveit 使用教程。
-title: Starai Arm 机械臂ROS2 Moveit 使用教程
+title: StarAi 机械臂ROS2 Moveit
 keywords:
 - Moveit
 - ROS2
@@ -138,34 +138,107 @@ echo "source ~/starai_ws/install/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-## Starai Arm Moveit2仿真脚本
+## Viola机械臂
+
+### Starai Arm Moveit2仿真脚本（可选）
 
 ```bash
 ros2 launch viola_configure demo.launch.py 
 ```
 
 
-## 使用真实的机械臂
+### 使用真实的机械臂
 
-### 终端1:开启手臂控制节点
+#### Step 1:开启手臂控制节点
 
-手臂会移动到零位。
-
-```bash
-ros2 run robo_driver driver
-```
-
-### 开启控制器节点
+启动手臂硬件驱动，手臂会移动到零位。
 
 ```bash
-ros2 run viola_controller controller
+ros2 launch viola_moveit_config driver.launch.py
 ```
 
-### 启动moveit2
+#### Step 2: 启动Moveit2节点
 
 ```bash
-ros2 launch viola_configure actual_robot_demo.launch.py
+ros2 launch viola_moveit_config actual_robot_demo.launch.py
 ```
+
+#### Step 3: 手臂末端位姿读写示例
+
+```bash
+ros2 launch viola_moveit_config moveit_write_read.launch.py
+```
+
+
+## Cello机械臂
+
+### Starai Arm Moveit2仿真脚本（可选）
+
+```bash
+ros2 launch cello_moveit_config demo.launch.py 
+```
+
+
+### 使用真实的机械臂
+
+#### Step 1:开启手臂控制节点
+
+启动手臂硬件驱动，手臂会移动到零位。
+
+```bash
+ros2 launch cello_moveit_config driver.launch.py
+```
+
+#### Step 2: 启动Moveit2节点
+
+```bash
+ros2 launch cello_moveit_config actual_robot_demo.launch.py
+```
+
+#### Step 3: 手臂末端位姿读写示例
+
+```bash
+ros2 launch cello_moveit_config moveit_write_read.launch.py
+```
+
+## 位姿话题发送节点示例
+
+请更新文件`src/arm_moveit_write/src/topic_publisher.cpp`
+
+```bash
+    // // viola
+    // dataset1_ = { 
+    //   {0.003, -0.204, 0.274},       // position
+    //   {0.014, 0.717, 0.017, 0.696}, // orientation
+    //   "open"                         // gripper_state
+    // };
+    // dataset2_ = {
+    //   {-0.00, -0.34, 0.177},        // position
+    //   {0.0, 0.7071, 0.0, 0.7071},   // orientation
+    //   "close"                        // gripper_state
+    // };
+
+    // cello
+    dataset1_ = {
+      {-0.278, 0.000, 0.438},       // position
+      {0.707, 0.000, -0.707, 0.000}, // orientation
+      "open"                         // gripper_state
+    };
+    dataset2_ = {
+      {-0.479, -0.000, 0.369},        // position
+      {0.707, -0.000, -0.707, 0.000},   // orientation
+      "close"                        // gripper_state
+    }
+
+```
+
+```bash
+colcon build
+source install/setup.sh
+ros2 run arm_moveit_write topic_publisher 
+```
+
+
 
 <div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/L82y7e9uk9Q?si=Fa8YorBPgbRszYGn" title="youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

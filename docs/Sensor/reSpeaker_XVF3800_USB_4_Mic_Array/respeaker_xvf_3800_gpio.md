@@ -7,7 +7,7 @@ keywords:
 - reSpeaker
 - XIAO
 - ESP32S3
-image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/6-ReSpeaker-XVF3800-4-Mic-Array-With-XIAO-ESP32S3.jpg
+image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/6-ReSpeaker-XVF3800-4-Mic-Array-With-XIAO-ESP32S3.webp
 slug: /respeaker_xvf3800_xiao_gpio
 last_update:
   date: 9/3/2025
@@ -141,12 +141,12 @@ bool read_gpo_values(uint8_t *buffer, uint8_t *status) {
 ```bash
 #include <Wire.h>
 
-#define XMOS_ADDR 0x2C  // 7-bit I2C address
+#define XMOS_ADDR 0x2C  // I2C 7-bit address of XVF3800
 
-// GPI related definitions
+// Resource and command IDs for GPI
 #define IO_CONFIG_SERVICER_RESID 36
 #define IO_CONFIG_SERVICER_RESID_GPI_READ_VALUES 0
-#define GPI_READ_NUM_BYTES 3  // Defined in the header
+#define GPI_READ_NUM_BYTES 3   // From header: IO_CONFIG_SERVICER_RESID_GPI_READ_VALUES_NUM_VALUES
 
 void setup() {
   Serial.begin(115200);
@@ -160,8 +160,10 @@ void loop() {
   uint8_t gpi_values[GPI_READ_NUM_BYTES] = {0};
   uint8_t status = 0xFF;
 
-  if (read_gpi_values(gpi_values, &status)) {
-    Serial.print("SUCCESS. Status byte: 0x");
+  bool success = read_gpi_values(gpi_values, &status);
+
+  if (success) {
+    Serial.print("I2C Communication SUCCESS. Status byte: 0x");
     Serial.print(status, HEX);
     Serial.print(" | GPI Input Values: ");
     for (uint8_t i = 0; i < GPI_READ_NUM_BYTES; i++) {
@@ -179,14 +181,14 @@ void loop() {
 
 bool read_gpi_values(uint8_t *buffer, uint8_t *status) {
   const uint8_t resid = IO_CONFIG_SERVICER_RESID;
-  const uint8_t cmd = IO_CONFIG_SERVICER_RESID_GPI_READ_VALUES;
+  const uint8_t cmd = IO_CONFIG_SERVICER_RESID_GPI_READ_VALUES | 0x80;  // Read command
   const uint8_t read_len = GPI_READ_NUM_BYTES;
 
-  // Write phase: Request GPI read
+  // Step 1: Send the command
   Wire.beginTransmission(XMOS_ADDR);
   Wire.write(resid);
   Wire.write(cmd);
-  Wire.write(read_len);
+  Wire.write(read_len + 1);  // +1 for status byte
   uint8_t result = Wire.endTransmission();
 
   if (result != 0) {
@@ -195,21 +197,20 @@ bool read_gpi_values(uint8_t *buffer, uint8_t *status) {
     return false;
   }
 
-  // Read phase: Read status + GPI values
+  // Step 2: Read response (status + payload)
   Wire.requestFrom(XMOS_ADDR, (uint8_t)(read_len + 1));
-  if (Wire.available() < (read_len + 1)) {
+  if (Wire.available() < read_len + 1) {
     Serial.println("I2C Read Error: Not enough data received.");
     return false;
   }
 
-  *status = Wire.read();
+  *status = Wire.read();  // first byte is status
   for (uint8_t i = 0; i < read_len; i++) {
     buffer[i] = Wire.read();
   }
 
   return true;
 }
-
 
 ```
 

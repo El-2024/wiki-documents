@@ -114,8 +114,8 @@ AskLou.io ポモドーロタイマーは以下の方法でカスタマイズで�
 
 - [GitHubリポジトリ](https://github.com/AskLou-io/Pomodoro_Circuit_Python/blob/main/README.md)
 - [Hackster.ioプロジェクト](https://www.hackster.io/peter-machona/asklou-io-pomodoro-timer-a7a1f2)
-- [XIAO ESP32S3 ドキュメント](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)
-- [Round Display ドキュメント](https://wiki.seeedstudio.com/get_start_round_display/)
+- [XIAO ESP32S3 ドキュメント](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/)
+- [Round Display ドキュメント](https://wiki.seeedstudio.com/ja/get_start_round_display/)
 
 ## クレジット
 

@@ -1,6 +1,6 @@
 ---
 description: Build and control the AmazingHand, a low-cost, open-source, 8-DOF, 3D-printable robotic hand.
-title: Getting Started with the AmazingHand Robotic Hand
+title: AmazingHand 
 keywords:
 - Lerobot
 - Huggingface
@@ -11,7 +11,7 @@ keywords:
 - Humanoid Robot
 - Arduino
 - Python
-slug: /lerobot_amazinghand
+slug: /hand_amazinghand
 last_update:
   date: 9/10/2025
   author: TienjuiWong

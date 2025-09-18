@@ -24,7 +24,7 @@ SenseCAP Indicator 中有两个 Grove 接口用于连接 Grove 模块，一个�
 
 ## **示例代码**
 
-此示例代码介绍如何连接 [Grove TH 传感器](/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor)：
+此示例代码介绍如何连接 [Grove TH 传感器](/cn/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor)：
 
 [AHT20 温湿度传感器库](https://github.com/Seeed-Studio/Seeed_Arduino_AHT20/)
 

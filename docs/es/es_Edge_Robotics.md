@@ -1,5 +1,5 @@
 ---
-description: Este tema introduce la documentación de productos de Robótica de Seeed Studio.
+description: Este tema presenta la documentación de productos de Robótica de Seeed Studio.
 title: Robótica
 keywords:
 - robotics
@@ -49,35 +49,75 @@ last_update:
 <div class="category-group">
   <div class="category-card robot-kits">
 
-## 🤗 Lerobot
+## 🤗 SO-Arm
 
 <div className="card-container">
-    <a href="/es/lerobot_starai_arm/" className="nav-item">
-      <span className="text">Brazo Robótico Starai</span>
-      <span className="tag recommended">New</span>
-    </a>
-    <a href="/es/starai_arm_ros_moveit/" className="nav-item">
-      <span className="text">Brazo Robótico Starai Moveit</span>
-      <span className="tag recommended">New</span>
-    </a>
     <a href="/es/lerobot_so100m_new/" className="nav-item">
       <span className="text">Brazo SO100/101</span>
-      <span className="tag stable">Update</span>
     </a>
     <a href="/es/simulate_soarm101_by_leisaac/" className="nav-item">
       <span className="text">Brazo SO100 con IsaacSim</span>
-      <span className="tag recommended">New</span>
     </a>
+    <a href="/es/control_robotic_arm_via_phospho/" className="nav-item">
+      <span className="text">Phospho Lerobot</span>
+    </a>
+    <a href="/es/training_soarm101_policy_with_isaacLab/" className="nav-item">
+    <span className="text">Aprendizaje por Refuerzo del Brazo So</span>
+    <span className="tag recommended">Nuevo</span>
+    </a>
+    <a href="/es/simulate_soarm101_by_leisaac/" className="nav-item">
+      <span className="text">Brazo SO100 con IsaacSim</span>
+      <span className="tag recommended">Nuevo</span>
+    </a>
+    <a href="/es/fine_tune_gr00t_n1.5_for_lerobot_so_arm_and_deploy_on_jetson_thor/" className="nav-item">
+        <span className="text">Brazo SO101 con GR00T de NVIDIA</span>
+        <span className="tag recommended">Nuevo</span>
+    </a>
+</div>
+
+## 🚗 Lekiwi
+
+<div className="card-container">
     <a href="/es/lerobot_lekiwi/" className="nav-item">
       <span className="text">Base Móvil Lekiwi</span>
-       <span className="tag recommended">New</span>
     </a>
     <a href="/es/sound_follow_robot/" className="nav-item">
       <span className="text">Seguimiento de Sonido Lekiwi</span>
     </a>
-    <a href="/es/control_robotic_arm_via_phospho/" className="nav-item">
-      <span className="text">Phospho Lerobot</span>
-       <span className="tag recommended">New</span>
+</div>
+
+## 🦾 Brazo StarAI
+
+<div className="card-container">
+    <a href="/es/lerobot_starai_arm/" className="nav-item">
+      <span className="text">Brazo Robótico Starai</span>
+      <span className="tag recommended">Nuevo</span>
+    </a>
+    <a href="/es/starai_arm_ros_moveit/" className="nav-item">
+      <span className="text">Brazo Robótico Starai Moveit2</span>
+      <span className="tag recommended">Nuevo</span>
+    </a>
+    <a href="/es/control_robotic_arm_via_gr00t" className="nav-item">
+  <span className="text">Star AI con GR00T de NVIDIA</span>
+  </a>
+</div>
+
+## 🖐️ Mano
+
+<div className="card-container">
+    <a href="/es/hand_amazinghand/" className="nav-item">
+      <span className="text">AmazingHand</span>
+      <span className="tag recommended">Nuevo</span>
+    </a>
+</div>
+
+
+## 🦀 Efectores Finales
+
+<div className="card-container">
+    <a href="/es/dm_gripper/" className="nav-item">
+      <span className="text">Pinza DM</span>
+      <span className="tag recommended">Nuevo</span>
     </a>
 </div>
 
@@ -91,16 +131,16 @@ last_update:
 
 <div className="card-container">
     <a href="/es/myactuator_series/" className="nav-item">
-      <span className="text">MyActuator Serie X</span>
+      <span className="text">0️⃣MyActuator Serie X</span>
     </a>
     <a href="/es/damiao_series/" className="nav-item">
-      <span className="text">Damiao Serie DM43</span>
+      <span className="text">1️⃣Damiao Serie DM43</span>
     </a>
     <a href="/es/feetech_servo/" className="nav-item">
-      <span className="text">Motor Servo Feetech STS3215</span>
+      <span className="text">2️⃣Motor Servo Feetech STS3215</span>
     </a>
     <a href="/es/hightorque_series/" className="nav-item">
-      <span className="text">Serie HighTorque</span>
+      <span className="text">3️⃣Serie HighTorque</span>
     </a>
 </div>
 
@@ -112,7 +152,7 @@ last_update:
 <div class="category-group">
 <div className="category-card sensors">
 
-**LiDAR**  
+**📡LiDAR**  
 
 <div className="card-container">
     <a href="/es/robosense_lidar/" className="nav-item">
@@ -129,22 +169,22 @@ last_update:
     </a>
 </div>
 
-**Cámara**  
+**📷Cámara**  
 
 <div className="card-container">
     <a href="/es/orbbec_gemini2/" className="nav-item">
-      <span className="text">Primeros Pasos con Cámara 3D Orbbec Gemini2</span>
+      <span className="text">Orbbec Gemini2</span>
     </a>
     <a href="/es/orbbec_depth_camera_on_ros/" className="nav-item">
-      <span className="text">Cámara de Profundidad Orbbec</span>
+      <span className="text">Cámara de Profundidad Orbbec con ROS</span>
     </a>
     <a href="/es/orbbec_gemini_335lg" className="nav-item">
       <span className="text">Cámara Estéreo Orbbec Gemini 335Lg</span>
-      <span className="tag recommended">New</span>
+      <span className="tag recommended">Nuevo</span>
     </a>
     <a href="/es/sensing_gmsl_cameras" className="nav-item">
       <span className="text">Cámaras SENSING GMSL2</span>
-      <span className="tag recommended">New</span>
+      <span className="tag recommended">Nuevo</span>
     </a>
     <a href="/es/orb_slam3_orbbec_gemini2/" className="nav-item">
       <span className="text">ORB-SLAM3 con Orbbec Gemini2</span>
@@ -154,7 +194,7 @@ last_update:
     </a>
 </div>
 
-**Voz**  
+**🎤Voz**  
 
 <div className="card-container">
     <a href="/es/ReSpeaker_Core_v2.0/" className="nav-item">
@@ -165,7 +205,7 @@ last_update:
     </a>
 </div>
 
-**IMU**  
+**🧭IMU**  
 
 <div className="card-container">
     <a href="/es/hexfellow_y200/" className="nav-item">
@@ -205,12 +245,10 @@ last_update:
 <div className="card-container">
 <a href="/es/control_px4_with_recomputer_jetson/" className="nav-item">
   <span className="text">PX4 con Jetson</span>
-  <span className="tag recommended">New</span>
 </a>
 
 <a href="/es/object_tracking_with_reComputer_jetson_and_pX4/" className="nav-item">
   <span className="text">Seguimiento de Objetos con PX4</span>
-  <span className="tag recommended">New</span>
 </a>
 
 </div>
@@ -219,6 +257,10 @@ last_update:
 <div className="card-container">
 <a href="/es/install_isaaclab/" className="nav-item">
   <span className="text">Instalación de Isaac Lab</span>
+</a>
+<a href="/es/training_soarm101_policy_with_isaacLab/" className="nav-item">
+  <span className="text">Aprendizaje por Refuerzo del Brazo So</span>
+  <span className="tag recommended">Nuevo</span>
 </a>
 <a href="/es/simulate_soarm101_by_leisaac/" className="nav-item">
   <span className="text">Brazo SO100 con IsaacSim</span>
@@ -229,7 +271,7 @@ last_update:
 **VLA**  
 <div className="card-container">
 <a href="/es/control_robotic_arm_via_gr00t" className="nav-item">
-  <span className="text">GR00T de NVIDIA</span>
+  <span className="text">Star AI con GR00T de NVIDIA</span>
 </a>
 </div>
 
@@ -275,6 +317,7 @@ html[data-theme='dark'] .quick-nav-container {
   padding: 0.8rem 1.5rem;
   border-radius: 12px;
   display: flex;
+  margin: 6px 6px; /* 上下6px，左右6px */
   flex-direction: column;
   align-items: center;
   text-decoration: none !important;
@@ -327,8 +370,7 @@ html[data-theme='dark'] .nav-item {
 }
 
 /* Dark模式 - 悬浮动画 */
-html[data-theme='dark'] .nav-item:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+html[data-theme='dark'] .nav-item:hover {  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
   color: white;
 }
 
@@ -519,12 +561,12 @@ html[data-theme='dark'] .recommended {
   box-shadow: 0 6px 10px rgba(0,0,0,0.1);
 }
 
-/* Modo Dark - efecto de clic */
+/* Dark模式 - 点击效果 */
 html[data-theme='dark'] .category-card:active {
   box-shadow: 0 6px 10px rgba(0,0,0,0.4);
 }
 
-/* Optimización responsiva */
+/* 响应式优化 */
 @media (max-width: 768px) {
   .nav-grid {
     grid-template-columns: 1fr;
@@ -532,11 +574,11 @@ html[data-theme='dark'] .category-card:active {
 
   .category-card {
     width: 100%;
-    margin-top: 0.5rem; /* tarjeta pegada al título */
+    margin-top: 0.5rem; /* 卡片紧贴标题 */
   }
 }
 
-/* Modo Dark - texto de títulos */
+/* Dark模式 - 标题文字 */
 html[data-theme='dark'] h1,
 html[data-theme='dark'] h2,
 html[data-theme='dark'] h3,
@@ -546,16 +588,17 @@ html[data-theme='dark'] h6 {
   color: #f9fafb;
 }
 
-/* Modo Dark - texto del cuerpo */
+/* Dark模式 - 正文文字 */
 html[data-theme='dark'] p,
 html[data-theme='dark'] li,
 html[data-theme='dark'] strong {
   color: #e5e7eb;
 }
 
-/* Modo Dark - bloque de cita */
+/* Dark模式 - 引用块 */
 html[data-theme='dark'] blockquote {
   color: #9ca3af;
   border-left-color: #4b5563;
 }
 `}</style>
+
