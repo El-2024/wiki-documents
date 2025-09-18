@@ -171,15 +171,15 @@ source coral_venv/bin/activate
 
 Google Coral Edge TPU パッケージリポジトリを追加する
 
-````
+```
 echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
 
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
 sudo apt-get update
-````
+```
 
-Install necessary packages and Edge TPU Runtime
+必要なパッケージと Edge TPU ランタイムをインストールします
 
 ```
 sudo apt-get install cmake libedgetpu1-std devscripts debhelper dkms dh-dkms
