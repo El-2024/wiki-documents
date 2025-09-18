@@ -4347,8 +4347,6 @@ const sidebars = {
     //         'Contribution/Fusion/Starter_bundle_harness_V1',
     //       ]
     // },
-    // 'Contribution/Contributors/How_To_Edit_A_Document',
-    // 'Contribution/Contributors/Things_We_Make',
     {
       type: 'category',
       label: 'Github Contributions Guide',
@@ -4364,7 +4362,6 @@ const sidebars = {
         'Contribution/Contributors/Contribution-Guide/quick_pull_request',
       ],
     },
-    // 'Contribution/Contributors/community_sourced_projects',
     'Contribution/Contributors/Scale-up-Your-Creation-with-Fusion',
     {
       type: 'doc',
@@ -9372,8 +9369,6 @@ const sidebars = {
     //         'Contribution/Fusion/Starter_bundle_harness_V1',
     //       ]
     // },
-    // 'Contribution/Contributors/How_To_Edit_A_Document',
-    // 'Contribution/Contributors/Things_We_Make',
     {
       type: 'category',
       label: 'Github 贡献指南',
@@ -9389,7 +9384,6 @@ const sidebars = {
         'zh-CN/Contribution/Contributors/Contribution-Guide/cn_quick_pull_request',
       ],
     },
-    // 'Contribution/Contributors/community_sourced_projects',
     'Contribution/Contributors/Scale-up-Your-Creation-with-Fusion',
     {
       type: 'doc',
@@ -14311,8 +14305,6 @@ const sidebars = {
     //         'Contribution/Fusion/Starter_bundle_harness_V1',
     //       ]
     // },
-    // 'Contribution/Contributors/How_To_Edit_A_Document',
-    // 'Contribution/Contributors/Things_We_Make',
     {
       type: 'category',
       label: 'Guía de Contribuciones Github',
@@ -14328,7 +14320,6 @@ const sidebars = {
         'es/Contribution/Contributors/Contribution-Guide/es_quick_pull_request',
       ],
     },
-    // 'Contribution/Contributors/community_sourced_projects',
     'Contribution/Contributors/Scale-up-Your-Creation-with-Fusion',
     {
       type: 'doc',
@@ -19247,8 +19238,6 @@ const sidebars = {
     //         'Contribution/Fusion/Starter_bundle_harness_V1',
     //       ]
     // },
-    // 'Contribution/Contributors/How_To_Edit_A_Document',
-    // 'Contribution/Contributors/Things_We_Make',
     {
       type: 'category',
       label: 'Github コントリビューションガイド',
@@ -19264,7 +19253,6 @@ const sidebars = {
         'ja/Contribution/Contributors/Contribution-Guide/ja_quick_pull_request',
       ],
     },
-    // 'Contribution/Contributors/community_sourced_projects',
     'Contribution/Contributors/Scale-up-Your-Creation-with-Fusion',
     {
       type: 'doc',

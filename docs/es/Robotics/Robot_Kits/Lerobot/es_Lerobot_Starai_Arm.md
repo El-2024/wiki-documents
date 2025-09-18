@@ -845,7 +845,7 @@ Como puedes ver, esto es casi lo mismo que el comando usado previamente para gra
 
 ## Cita
 
-Brazo Robótico StarAI ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/starai_arm_ros_moveit/)
+Brazo Robótico StarAI ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/es/starai_arm_ros_moveit/)
 
 lerobot-starai github: [lerobot-starai](https://github.com/servodevelop/lerobot.git)
 

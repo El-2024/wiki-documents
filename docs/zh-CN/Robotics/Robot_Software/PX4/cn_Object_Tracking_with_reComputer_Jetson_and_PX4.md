@@ -37,12 +37,12 @@ reComputer Mini 是一款由 NVIDIA Jetson Orin Nano/Orin NX 模块驱动的微�
 
 - reComputer 系列产品  
 - PX4 飞控  
-- 已安装 Jetson Pack 6.2 与 [ROS 2 Humble](https://wiki.seeedstudio.com/install_ros2_humble/)  
+- 已安装 Jetson Pack 6.2 与 [ROS 2 Humble](https://wiki.seeedstudio.com/cn/install_ros2_humble/)  
 - [Orbbec Gemini 2 3D 相机](https://www.seeedstudio.com/Orbbec-Gemini-2-3D-Camera-p-6464.html)  
 
 ## 配置 PX4 的 ROS2 通信环境
 
-要在 Jetson 上实现无人机状态监控，请首先参考 [此教程](https://wiki.seeedstudio.com/control_px4_with_recomputer_jetson/) 配置 PX4 的 ROS2 通信环境。
+要在 Jetson 上实现无人机状态监控，请首先参考 [此教程](https://wiki.seeedstudio.com/cn/control_px4_with_recomputer_jetson/) 配置 PX4 的 ROS2 通信环境。
 
 ## 设置 Gemini 2 Python SDK
 
@@ -127,7 +127,7 @@ ros2 topic list | grep "/fmu/out/"
 
 ## 快速配置目标检测环境
 
-**步骤 1.** 根据 Jetpack 版本，可参考 [此教程](https://wiki.seeedstudio.com/install_torch_on_recomputer/) 安装 PyTorch 与 Torchvision。
+**步骤 1.** 根据 Jetpack 版本，可参考 [此教程](https://wiki.seeedstudio.com/cn/install_torch_on_recomputer/) 安装 PyTorch 与 Torchvision。
 
 **步骤 2.** 安装必要依赖与软件包：
 
@@ -164,7 +164,7 @@ colcon build
 ```
 
 :::note
-在运行检测节点之前，您需要将之前生成的引擎模型文件移动到 `/ROS2-package-for-target-tracking/models` 目录中。此外，您必须在工作空间的 src 目录中克隆 `px4_msgs` 和 `px4_ros_com` 包（参考 [此 wiki](https://wiki.seeedstudio.com/control_px4_with_recomputer_jetson/#step-2-build-the-px4_msgs-ros-2-package)）。
+在运行检测节点之前，您需要将之前生成的引擎模型文件移动到 `/ROS2-package-for-target-tracking/models` 目录中。此外，您必须在工作空间的 src 目录中克隆 `px4_msgs` 和 `px4_ros_com` 包（参考 [此 wiki](https://wiki.seeedstudio.com/cn/control_px4_with_recomputer_jetson/#step-2-build-the-px4_msgs-ros-2-package)）。
 
 您的 src 目录结构应如下所示：
 
