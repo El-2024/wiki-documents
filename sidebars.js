@@ -4192,6 +4192,7 @@ const sidebars = {
                 //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
                 // },
                 items: [
+                  'Robotics/Robot_Sensor/Camera/Getting_Start_with_AC1',
                   'Robotics/Robot_Sensor/Camera/Getting_Start_with_Orbbec_Gemini2_3D_Camera',
                   'Robotics/Robot_Sensor/Camera/Orbbec_Depth_Camera',
                   'Robotics/Robot_Sensor/Camera/ORB_SLAM3_with_Orbbec_Gemini2',
