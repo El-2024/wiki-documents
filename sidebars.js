@@ -8663,12 +8663,24 @@ const sidebars = {
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Lekiwi',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
               ]},
+        {
+          type: 'category',
+          label: '末端夹爪',
+          items: [
+            'zh-CN/Robotics/Robot_Kits/End_Effectors/cn_DM_Gripper',
+              ]},
+        {
+                type: 'category',
+                label: '灵巧手',
+                items: [
+                  'zh-CN/Robotics/Robot_Kits/Hand/cn_AmazingHand',
+                    ]},
+      ],
 
-      ]
     },
     {
       type: 'category',
-      label: 'Actuator',
+      label: '关节电机',
       items: [
         'zh-CN/Robotics/Robot_Actuator/cn_Myactuator_Series',
         'zh-CN/Robotics/Robot_Actuator/cn_Damiao_Series',
