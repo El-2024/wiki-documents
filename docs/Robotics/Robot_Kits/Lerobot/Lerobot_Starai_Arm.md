@@ -843,15 +843,13 @@ As you can see, this is almost the same as the command previously used to record
 
 ## Citation
 
-Seeedstudio English Wiki document：[How to use the SO10xArm robotic arm in the latest version of Lerobot](https://wiki.seeedstudio.com/lerobot_so100m_new/)
+StarAI Robot Arm ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/starai_arm_ros_moveit/)
 
-lerobot-starai github: [lerobot-starai](https://github.com/Welt-liu/lerobot-starai)
+lerobot-starai github: [lerobot-starai](https://github.com/servodevelop/lerobot.git)
 
 STEP: [STEP](https://github.com/Welt-liu/star-arm-moveit2/tree/main/hardware)
 
 URDF: [URDF](https://github.com/Welt-liu/star-arm-moveit2/tree/main/src/cello_description)
-
-StarAI Robot Arm moveit2: [star-arm-moveit2](https://github.com/Welt-liu/star-arm-moveit2)
 
 Huggingface Project: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
 
