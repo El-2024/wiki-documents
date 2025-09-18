@@ -9003,10 +9003,6 @@ const sidebars = {
     {
       type: 'category',
       label: '关节电机',
-      // link: {
-      //   type: "doc",
-      //   id: 'Edge/NVIDIA_Jetson/Application',
-      // },
       items: [
         'zh-CN/Robotics/Robot_Actuator/cn_Myactuator_Series',
         'zh-CN/Robotics/Robot_Actuator/cn_Damiao_Series',
