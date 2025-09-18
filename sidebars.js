@@ -4016,6 +4016,7 @@ const sidebars = {
           //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
           // },
           items: [
+            'Robotics/Robot_Sensor/Camera/Getting_Start_with_AC1',
             'Robotics/Robot_Sensor/Camera/Getting_Start_with_Orbbec_Gemini2_3D_Camera',
             'Robotics/Robot_Sensor/Camera/Orbbec_Depth_Camera',
             'Robotics/Robot_Sensor/Camera/ORB_SLAM3_with_Orbbec_Gemini2',
@@ -18287,7 +18288,7 @@ const sidebars = {
                 'ja/Edge/NVIDIA_Jetson/Carrier_Boards/J202/ja_reComputer_J2021_J202_Flash_Jetpack',
                 {
                   type: 'category',
-                  label: 'J401 Carrier Board',
+                  label: 'J401キャリアボード',
                   items: [
                     'ja/Edge/NVIDIA_Jetson/Carrier_Boards/J401/ja_reComputer_J4012_Flash_Jetpack',
                     'ja/Edge/NVIDIA_Jetson/Carrier_Boards/J401/ja_J401_carrierboard_Hardware_Interfaces_Usage',
@@ -18295,7 +18296,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'J401-Mini Carrier Board',
+                  label: 'J401-Mini キャリアボード',
                   items: [
                     'ja/Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/ja_reComputer_Mini_J4012_Flash_Jetpack',
                     'ja/Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/ja_J401_Mini_carrierboard_Hardware_Interfaces_Usage',
@@ -18303,7 +18304,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'J501 Carrier Board',
+                  label: 'J501 キャリアボード',
                   items: [
                     'ja/Edge/NVIDIA_Jetson/Carrier_Boards/J501/ja_reServer_Industrial_J501_Getting_Started',
                     'ja/Edge/NVIDIA_Jetson/Carrier_Boards/J501/ja_Hardware_Interfaces_Usage',
@@ -18311,7 +18312,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'J401-Robotics Carrier Board',
+                  label: 'J401-Robotics キャリアボード',
                   items: [
                     'ja/Edge/NVIDIA_Jetson/Carrier_Boards/Robotics_J401/ja_Robotics_J401_carrierboard_Hardware_Interfaces_Usage',
                   ],
@@ -18384,7 +18385,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'reComputer Industrial',
+                  label: 'reComputer 工業用',
                   items: [
                     'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_Getting_Started',
                     'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_J20_Hardware_Interfaces_Usage',
@@ -18788,7 +18789,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'reTerminal E Series',
+      label: 'reTerminal E シリーズ',
       collapsed: true,
       collapsible: true,
       link: {
@@ -19273,7 +19274,7 @@ const sidebars = {
         'ja/Top_Brand/Arduino/ja_Getting_Started_with_Arduino',
         {
           type: 'category',
-          label: 'Shield',
+          label: 'シールド',
           items: [
             'ja/Top_Brand/Arduino/shield/ja_Shield',
             'ja/Top_Brand/Arduino/shield/ja_2.8inch_TFT_Touch_Shield_v2.0',
@@ -19432,7 +19433,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Grove Beginner Kit for Arduino',
+              label: 'Grove 初心者向けキット for Arduino',
               items: [
                 'ja/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/ja_Grove-Beginner-Kit-For-Arduino',
                 'ja/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/ja_Grove-Beginner-Kit-for-Arduino-education-pack',
@@ -19770,7 +19771,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Air Serial',
+          label: 'Air シリアル',
           items: [
             'ja/Seeed_Elderly/Air_Serial/ja_Air602_WiFi_Development_Board',
             'ja/Seeed_Elderly/Air_Serial/ja_Air602_Firmware_Programming_Manual',
