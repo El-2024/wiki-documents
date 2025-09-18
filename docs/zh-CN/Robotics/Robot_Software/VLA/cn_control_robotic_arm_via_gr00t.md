@@ -32,7 +32,7 @@ last_update:
 
 ### 配置 Lerobot 环境
 
-StarAI 机械臂可通过 lerobot 项目驱动。请参考此 [教程](https://wiki.seeedstudio.com/lerobot_so100m/) 配置 StarAI 机械臂的运行环境。准备就绪后，可用以下命令控制跟随臂（Follow Arm）：
+StarAI 机械臂可通过 lerobot 项目驱动。请参考此 [教程](https://wiki.seeedstudio.com/cn/lerobot_so100m/) 配置 StarAI 机械臂的运行环境。准备就绪后，可用以下命令控制跟随臂（Follow Arm）：
 
 ```bash
 python lerobot/scripts/control_robot.py \
@@ -664,7 +664,7 @@ if __name__ == "__main__":
 
 ## 参考资料
 
-- [https://wiki.seeedstudio.com/lerobot_so100m/](https://wiki.seeedstudio.com/lerobot_so100m/)
+- [https://wiki.seeedstudio.com/cn/lerobot_so100m/](https://wiki.seeedstudio.com/lerobot_so100m/)
 - [https://github.com/NVIDIA/Isaac-GR00T/tree/main](https://github.com/NVIDIA/Isaac-GR00T/tree/main)
 - [https://github.com/huggingface/lerobot](https://github.com/huggingface/lerobot)
 - [https://github.com/Dao-AILab/flash-attention](https://github.com/Dao-AILab/flash-attention])
