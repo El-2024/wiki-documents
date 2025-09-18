@@ -234,6 +234,7 @@ Recuerda remover el usb, de lo contrario la interfaz no será detectada.
 :::
 
 Por ejemplo：
+
 1. Ejemplo de salida al identificar el puerto del brazo líder (por ejemplo, `/dev/tty.usbmodem575E0031751` en Mac, o posiblemente `/dev/ttyUSB0` en Linux):
 2. Ejemplo de salida al identificar el puerto del brazo seguidor (por ejemplo, `/dev/tty.usbmodem575E0032081` en Mac, o posiblemente `/dev/ttyUSB1` en Linux):
 
@@ -491,7 +492,8 @@ python -m lerobot.teleoperate \
     --teleop.left_arm_port=/dev/ttyUSB0 \
     --teleop.right_arm_port=/dev/ttyUSB2 \
     --teleop.id=bi_starai_leader \
-    --display_data=true```
+    --display_data=true
+```
 
 </details>
 
@@ -760,7 +762,10 @@ python -m lerobot.scripts.train \
 </details>
 
 1. Proporcionamos el conjunto de datos como parámetro: `dataset.repo_id=starai/record-test`.
-2. Cargaremos la configuración desde [`configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py). Importante, esta política se adaptará automáticamente a los estados del motor del robot, las acciones del motor y el número de cámaras, y se guardará en tu conjunto de datos.3. Proporcionamos `wandb.enable=true` para usar [Weights and Biases](https://docs.wandb.ai/quickstart) para visualizar gráficos de entrenamiento. Esto es opcional, pero si lo usas, asegúrate de haber iniciado sesión ejecutando `wandb login`.
+
+2. Cargaremos la configuración desde [`configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py). Importante, esta política se adaptará automáticamente a los estados del motor del robot, las acciones del motor y el número de cámaras, y se guardará en tu conjunto de datos.
+
+3. Proporcionamos `wandb.enable=true` para usar [Weights and Biases](https://docs.wandb.ai/quickstart) para visualizar gráficos de entrenamiento. Esto es opcional, pero si lo usas, asegúrate de haber iniciado sesión ejecutando `wandb login`.
 
 Reanudar el entrenamiento desde un checkpoint específico.
 
@@ -840,19 +845,19 @@ Como puedes ver, esto es casi lo mismo que el comando usado previamente para gra
 
 ## Cita
 
-StarAI Robot Arm ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/es/starai_arm_ros_moveit/)
+Brazo Robótico StarAI ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/starai_arm_ros_moveit/)
 
 lerobot-starai github: [lerobot-starai](https://github.com/servodevelop/lerobot.git)
 
-STEP: [STEP](https://github.com/Welt-liu/star-arm-moveit2/tree/main/hardware)
+PASO: [STEP](https://github.com/Welt-liu/star-arm-moveit2/tree/main/hardware)
 
 URDF: [URDF](https://github.com/Welt-liu/star-arm-moveit2/tree/main/src/cello_description)
 
-Huggingface Project: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
+Proyecto Huggingface: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
 
-ACT or ALOHA: [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](https://tonyzhaozh.github.io/aloha/)
+ACT o ALOHA: [Aprendiendo manipulación bimano fina con hardware de bajo costo](https://tonyzhaozh.github.io/aloha/)
 
-VQ-BeT: [VQ-BeT: Behavior Generation with Latent Actions](https://sjlee.cc/vq-bet/)
+VQ-BeT: [VQ-BeT: Generación de comportamiento con acciones latentes](https://sjlee.cc/vq-bet/)
 
 Diffusion Policy: [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/)
 

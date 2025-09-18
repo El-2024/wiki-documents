@@ -234,6 +234,7 @@ usbを取り外すことを忘れないでください。そうしないとイ�
 :::
 
 例：
+
 1. リーダーアームのポートを識別する際の出力例（例：Macでは `/dev/tty.usbmodem575E0031751`、Linuxでは `/dev/ttyUSB0` の可能性があります）：
 2. フォロワーアームのポートを識別する際の出力例（例：Macでは `/dev/tty.usbmodem575E0032081`、Linuxでは `/dev/ttyUSB1` の可能性があります）：
 
@@ -491,7 +492,8 @@ python -m lerobot.teleoperate \
     --teleop.left_arm_port=/dev/ttyUSB0 \
     --teleop.right_arm_port=/dev/ttyUSB2 \
     --teleop.id=bi_starai_leader \
-    --display_data=true```
+    --display_data=true
+```
 
 </details>
 
@@ -760,7 +762,10 @@ python -m lerobot.scripts.train \
 </details>
 
 1. データセットをパラメータとして提供します：`dataset.repo_id=starai/record-test`。
-2. [`configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py)から設定を読み込みます。重要なことに、このポリシーはロボットのモーター状態、モーターアクション、カメラ数に自動的に適応し、データセットに保存されます。3. トレーニングチャートを可視化するために[Weights and Biases](https://docs.wandb.ai/quickstart)を使用する場合は、`wandb.enable=true`を提供します。これはオプションですが、使用する場合は`wandb login`を実行してログインしていることを確認してください。
+
+2. [`configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/src/lerobot/policies/act/configuration_act.py)から設定を読み込みます。重要なことに、このポリシーはロボットのモーター状態、モーターアクション、カメラ数に自動的に適応し、データセットに保存されます。
+
+3. トレーニングチャートを可視化するために[Weights and Biases](https://docs.wandb.ai/quickstart)を使用する場合は、`wandb.enable=true`を提供します。これはオプションですが、使用する場合は`wandb login`を実行してログインしていることを確認してください。
 
 特定のチェックポイントからトレーニングを再開します。
 
@@ -840,7 +845,7 @@ python -m lerobot.record  \
 
 ## 引用
 
-StarAI Robot Arm ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/ja/starai_arm_ros_moveit/)
+StarAI ロボットアーム ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/starai_arm_ros_moveit/)
 
 lerobot-starai github: [lerobot-starai](https://github.com/servodevelop/lerobot.git)
 
@@ -848,11 +853,11 @@ STEP: [STEP](https://github.com/Welt-liu/star-arm-moveit2/tree/main/hardware)
 
 URDF: [URDF](https://github.com/Welt-liu/star-arm-moveit2/tree/main/src/cello_description)
 
-Huggingface Project: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
+Huggingface プロジェクト: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
 
-ACT or ALOHA: [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](https://tonyzhaozh.github.io/aloha/)
+ACT または ALOHA: [低コストハードウェアによる細粒度二手操作の学習](https://tonyzhaozh.github.io/aloha/)
 
-VQ-BeT: [VQ-BeT: Behavior Generation with Latent Actions](https://sjlee.cc/vq-bet/)
+VQ-BeT: [VQ-BeT: 潜在アクションによる行動生成](https://sjlee.cc/vq-bet/)
 
 Diffusion Policy: [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/)
 
