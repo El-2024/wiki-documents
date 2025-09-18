@@ -4128,6 +4128,8 @@ const sidebars = {
                 //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
                 // },
                 items: [
+                  //'Robotics/Robot_Kits/Lerobot/En_Hackathon_Thor',
+                  'Robotics/Robot_Kits/Lerobot/Fine_tune_GR00T_N1.5_for_LeRobot_SO_Arm_and_Deploy_on_Jetson_Thor',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_Starai_Arm',
                   'Robotics/Robot_Kits/Lerobot/Starai_Arm_ROS2_Moveit',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_New',
