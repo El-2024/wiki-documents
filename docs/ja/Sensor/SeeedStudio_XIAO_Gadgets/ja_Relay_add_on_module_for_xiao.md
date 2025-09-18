@@ -89,9 +89,9 @@ Home Assistantのインストール方法を学びたい場合は、[公式チ�
 
 Seeed Studioの一部製品についてHome Assistantのインストール方法も書いていますので、参考にしてください。
 
-- [ODYSSEY-X86でのHome Assistant入門](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant/)
-- [reTerminalでのHome Assistant入門](https://wiki.seeedstudio.com/reTerminal_Home_Assistant/)
-- [LinkStar H68K/reRouter CM4でのHome Assistant入門](https://wiki.seeedstudio.com/h68k-ha-esphome/)
+- [ODYSSEY-X86でのHome Assistant入門](https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant/)
+- [reTerminalでのHome Assistant入門](https://wiki.seeedstudio.com/ja/reTerminal_Home_Assistant/)
+- [LinkStar H68K/reRouter CM4でのHome Assistant入門](https://wiki.seeedstudio.com/ja/h68k-ha-esphome/)
 
 ## ステップ1. ESPHomeをインストールする
 

@@ -17,7 +17,7 @@ IoTアプリケーション構築の需要の高まりに応えるため、私�
 
 <p style={{textAlign: 'center'}}><img src="https://www.sensecapmx.com/wp-content/uploads/2022/09/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%9B%BE.jpg" alt="pir" width={800} height="auto" /></p>
 
-セットアップを開始する前に、[SenseCAP T1000をTTSに接続](https://wiki.seeedstudio.com/SenseCAP_T1000_tracker_TTN)を確認して、まずSenseCAP T1000 TrackerをTTSに接続してください。
+セットアップを開始する前に、[SenseCAP T1000をTTSに接続](https://wiki.seeedstudio.com/ja/SenseCAP_T1000_tracker_TTN)を確認して、まずSenseCAP T1000 TrackerをTTSに接続してください。
 
 ## Ubidotsの設定
 

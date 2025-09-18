@@ -641,7 +641,6 @@ MacBook-Air:Desktop XXX$ python record.py
 * done recording
 ```
 
-
 ## FAQ
 
 **Q1: Parameters of built-in algorithms**
@@ -781,7 +780,7 @@ A5: Please download the [new firmware](https://files.seeedstudio.com/wiki/ReSpea
 
 ## Resource
 
-- **[PDF]** [ReSpeaker MicArray v3.0 Schematic](https://files.seeedstudio.com/products/107990053/ReSpeakerMicArrayv2.0.1Schematic.zip)
+- **[PDF]** [ReSpeaker MicArray v3.0 Schematic](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array_V2/img/v3/202004229_ReSpeakerMicArray_V3.0_SCH%26PCB_250427.zip)
 - **[PDF]** [ReSpeaker MicArray v3.0 Product Brief](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array_V2/res/ReSpeaker%20MicArray%20v2.0%20Product%20Brief.pdf)
 - **[PDF]** [ReSpeaker MicArray v3.0 3D Model](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array_V2/res/RESPEAKER%20MIC%20v2.0.pdf)
 - **[SKP]** [ReSpeaker MicArray v3.0 3D Model](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array_V2/res/Respeaker%20Microphone%20Array%20v2.0_20180316.skp.zip)
@@ -795,12 +794,11 @@ A5: Please download the [new firmware](https://files.seeedstudio.com/wiki/ReSpea
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-

@@ -19,7 +19,7 @@ XIAO ESP32S3 Plusを搭載したコンパクトなPoE開発ボードで、統合
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="/ja/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ入手 🖱️</font></span></strong>
 </a></div>
 
@@ -169,7 +169,7 @@ XIAO W5500 Ethernet Adapterは、ネットワーク接続にESP32 Arduino Ethern
 
 **ステップ 2.** 開発ボードモデルを選択し、Arduino IDE に追加します。
 
-- 後のルーチンで **Seeed Studio XIAO ESP32-S3 Plus** を使用するには、**[このチュートリアル](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
+- 後のルーチンで **Seeed Studio XIAO ESP32-S3 Plus** を使用するには、**[このチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
 
 **ステップ 3.** 必要な材料
 
@@ -185,7 +185,7 @@ XIAO W5500 Ethernet Adapterは、ネットワーク接続にESP32 Arduino Ethern
   </tr>
   <tr>
    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
+    <a class="get_one_now_item" href="/ja/xiao_w5500_ethernet_adapter" target="_blank" rel="noopener noreferrer">
     <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
    </div></td>

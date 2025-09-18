@@ -1,6 +1,6 @@
 ---
 description: この文書では、HighTorqueシリーズモーターの素早い開始方法を紹介します。
-title: HighTorqueシリーズモーター ユーザーマニュアル
+title: HighTorqueシリーズモーター
 keywords:
 - Joint Module
 - Motor
@@ -13,7 +13,7 @@ last_update:
   author: ZhuYaoHui
 ---
 
-# HighTorqueシリーズモーター ユーザーマニュアル
+# HighTorqueシリーズモーターユーザーマニュアル
 
 <div className="quick-nav-container">
   <nav className="quick-nav">
@@ -30,7 +30,7 @@ last_update:
   </nav>
 </div>
 
-# HighTorqueシリーズモーター クイックスタートガイド
+# HighTorqueシリーズモータークイックスタートガイド
 
 この文書では、HighTorqueシリーズモーターの素早い開始方法を紹介します。
 
@@ -41,16 +41,16 @@ last_update:
 
 ## 技術仕様
 
-### 遊星ジョイントモジュール パラメータ比較表
+### 遊星関節モジュールパラメータ比較表
 
 | **技術仕様ダウンロード** | **[HTDW-5047-36-NE](https://files.seeedstudio.com/wiki/robotics/Actuator/hightorque/HTDW-5047-36-NE.pdf)** |  **[HTDW-4438-32-NE](https://files.seeedstudio.com/wiki/robotics/Actuator/hightorque/HTDW-4438-32-NE.pdf)** |  
 |------------------------|------------------|---------------------|
 | **減速比**    | 36               | 30                  |
 | **ピークトルク (Nm)**   | 16               | 6                   |
 | **定格トルク (Nm)**  | 4                | 1.5                 |
-| **失速トルク (Nm)**  | 24               | 10                  |
-| **定格回転数 (RPM)**  | 40               | 36                  |
-| **無負荷回転数 (RPM)**| 60               | 75                  |
+| **ストールトルク (Nm)**  | 24               | 10                  |
+| **定格速度 (RPM)**  | 40               | 36                  |
+| **無負荷速度 (RPM)**| 60               | 75                  |
 | **定格電力 (W)**    | 17               | 13                  |
 | **トルク定数 (Nm/A)** | 0.062        | 0.039               |
 | **極対数**         | 14               | -                   |
@@ -81,43 +81,43 @@ last_update:
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/hightorque/5047_install.png" />
 </div>
 
-**Windows PC 準備**
+**Windows PC準備**
 
-- [モーターデバッグアシスタント v1.2.1](https://www.hightorque.cn/wp-content/uploads/2025/03/%E9%AB%98%E6%93%8E%E7%94%B5%E6%9C%BA%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8Bv1.2.1.zip) をダウンロード
-- [PC デバッグマニュアル](https://files.seeedstudio.com/wiki/robotics/Actuator/hightorque/Hightorque_Motor_Debugging_Manual_EN.pdf) をダウンロード
-- CAN-USB ドライバーボードを購入
+- [モーターデバッグアシスタント v1.2.1](https://www.hightorque.cn/wp-content/uploads/2025/03/%E9%AB%98%E6%93%8E%E7%94%B5%E6%9C%BA%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8Bv1.2.1.zip)をダウンロード
+- [PCデバッグマニュアル](https://files.seeedstudio.com/wiki/robotics/Actuator/hightorque/Hightorque_Motor_Debugging_Manual_EN.pdf)をダウンロード
+- CAN-USBドライバーボードを購入
 
 <details>
 <summary>プロトコル解析</summary>
 
 # プロトコル解析
 
-## 1.1 CAN 関連説明
+## 1.1 CAN関連指示
 
-1. CAN ボーレート:
+1. CANボーレート:
    - 調停セグメント: 1 Mbps
    - データセグメント: 1 Mbps
-2. ID: 16 ビットで構成され、0x7F はブロードキャストアドレスです。
-   - 上位 8 ビット: 送信元アドレスを表す:
-     - 最上位ビットが 1: 応答が必要で、マスタースイッチとして機能します。クエリコマンドを送信せずに有効にすると、データセグメント長が 0 のフレームが返されます。
-     - 最上位ビットが 0: 応答は不要です。
-     - 残りの 7 ビット: 信号送信元アドレス。
-   - 下位 8 ビット: 宛先アドレスを表す:
-     - 最上位ビットは 0。
-     - 残りの 7 ビットは宛先アドレスを表します。
+2. ID: 16ビットで構成され、0x7Fはブロードキャストアドレスです。
+   - 上位8ビット: ソースアドレスを表す:
+     - 最上位ビットが1: 応答が必要で、マスタースイッチとして機能します。クエリコマンドを送信せずに有効にすると、データセグメント長が0のフレームが返されます。
+     - 最上位ビットが0: 応答は不要です。
+     - 残りの7ビット: 信号ソースアドレス。
+   - 下位8ビット: 宛先アドレスを表す:
+     - 最上位ビットは0。
+     - 残りの7ビットは宛先アドレスを表します。
 
 例:
 
 1. ID: 0x8001
-   - 信号送信元アドレスは 0。
-   - 宛先アドレスは 1。
-   - 最上位ビットが 1 で、応答が必要であることを示し、つまり応答マスタースイッチがオンになっています。
+   - 信号ソースアドレスは0。
+   - 宛先アドレスは1。
+   - 最上位ビットが1で、応答が必要であることを示し、つまり応答マスタースイッチがオンになっています。
 2. ID: 0x100
-   - 信号送信元アドレスは 1。
-   - 宛先アドレスは 0。
-   - 最上位ビットが 0 で、応答が不要であることを示し、つまり応答マスタースイッチがオフになっています。
+   - 信号ソースアドレスは1。
+   - 宛先アドレスは0。
+   - 最上位ビットが0で、応答が不要であることを示し、つまり応答マスタースイッチがオフになっています。
 
-## 1.2 モード説明
+## 1.2 モード指示
 
 ### 1.2.1 通常モード（位置と速度は同時に制御できません）
 
@@ -125,16 +125,16 @@ last_update:
 uint8_t cmd[] = {0x07, 0x07, pos1, pos2, val1, val2, tqe1, tqe2};
 ```
 
-通常のプロトコルは、コマンドビット（2バイト）+ 位置（2バイト）+ 速度（2バイト）+ トルク（2バイト）で構成され、合計8バイトです。
+通常プロトコルは、コマンドビット（2バイト）+ 位置（2バイト）+ 速度（2バイト）+ トルク（2バイト）で構成され、合計8バイトです。
 
-0x07 0x07: 通常モード。速度とトルク、または位置とトルクを制御できます（[[#2.1 Normal Mode]]を参照）。
+0x07 0x07: 通常モードで、速度とトルク、または位置とトルクを制御できます（[[#2.1-通常モード]]を参照）。
 
-プロトコル内の位置、速度、トルクデータはリトルエンディアンモードで、下位バイトが最初に送信され、続いて上位バイトが送信されます。例えば、pos = 0x1234の場合、pos1 = 0x34、pos2 = 0x12となります。
+プロトコル内の位置、速度、トルクデータはリトルエンディアンモードで、つまり下位バイトが最初に送信され、その後上位バイトが送信されます。例えば、pos = 0x1234の場合、pos1 = 0x34、pos2 = 0x12となります。
 
-このモードは2つの制御方法に分けることができます：
+このモードは2つの制御方法に分けることができます:
 
-- 位置とトルク制御（この時、val = 0x8000で、制限なしを示します）。
-- 速度とトルク制御（この時、pos = 0x8000で、制限なしを示します）。
+- 位置とトルク制御（この時、val = 0x8000で制限なしを示します）。
+- 速度とトルク制御（この時、pos = 0x8000で制限なしを示します）。
 
 ### 1.2.2 トルクモード
 
@@ -142,11 +142,11 @@ uint8_t cmd[] = {0x07, 0x07, pos1, pos2, val1, val2, tqe1, tqe2};
 uint8_t cmd[] = {0x05, 0x13, tqe1, tqe2};
 ```
 
-トルクモードプロトコルは以下で構成されます：コマンドビット（2バイト）+ トルク（2バイト）。
+トルクモードプロトコルは、コマンドビット（2バイト）+ トルク（2バイト）で構成されます。
 
-0x05 0x13：純粋なトルクモード、その後に2バイトのトルクデータが続きます（[[#2.3 Torque Mode]]を参照）。
+0x05 0x13: 純粋なトルクモードで、その後に2バイトのトルクデータが続きます（[[#2.3-トルクモード]]を参照）。
 
-プロトコル内のトルクデータはリトルエンディアンモードで、つまり下位バイトが最初に送信され、その後に上位バイトが続きます。例えば、tqe = 0x1234の場合、tqe1 = 0x34、tqe2 = 0x12となります。
+プロトコル内のトルクデータはリトルエンディアンモードで、つまり下位バイトが最初に送信され、その後上位バイトが送信されます。例えば、tqe = 0x1234の場合、tqe1 = 0x34、tqe2 = 0x12となります。
 
 ### 1.2.3 協調制御モード（位置、速度、トルクを同時に制御可能）
 
@@ -154,50 +154,50 @@ uint8_t cmd[] = {0x05, 0x13, tqe1, tqe2};
 uint8_t cmd[] = {0x07, 0x35, val1, val2, tqe1, teq2, pos1, pos2};
 ```
 
-協調制御モードプロトコル：コマンドビット（2バイト）+ 速度（2バイト）+ トルク（2バイト）+ 位置（2バイト）、合計8バイト。
+協調制御モードプロトコル: コマンドビット（2バイト）+ 速度（2バイト）+ トルク（2バイト）+ 位置（2バイト）、合計8バイト。
 
-0x07 0x35：協調制御モード。指定された速度で指定された位置まで回転し、最大トルクを制限することを指定します。
+0x07 0x35: 協調制御モードで、指定された速度で指定された位置まで回転し、最大トルクを制限します。
 
-このモードでは、パラメータ0x8000を使用すると制限なしを示します（速度とトルクに制限がないということは最大値を意味します）。例えば、val = 5000、tqe = 1000、pos = 0x8000：モーターが0.5回転/秒の速度で回転し、最大トルクが0.1 NMであることを意味します。
+このモードでは、パラメータ0x8000を使用すると制限なしを示します（速度とトルクに制限がないということは最大値を意味します）。例えば、val = 5000、tqe = 1000、pos = 0x8000: モーターが毎秒0.5回転の速度で回転し、最大トルクが0.1 NMであることを意味します。
 
-プロトコル内の位置、速度、トルクデータはすべてリトルエンディアンモードです。つまり、下位バイトが最初に送信され、続いて上位バイトが送信されます。例えば、pos = 0x1234の場合、pos1 = 0x34、pos2 = 0x12となります。
+プロトコル内の位置、速度、トルクデータはすべてリトルエンディアンモードで、つまり下位バイトが最初に送信され、その後上位バイトが送信されます。例えば、pos = 0x1234の場合、pos1 = 0x34、pos2 = 0x12となります。
 
 ## 1.3 モーター状態データ読み取り
 
 1. モーター状態部分を読み取るプロトコルはCAN-FDのプロトコルと同じで、唯一の違いはCANが8バイトのデータセグメントに制限されることです。
-2. レジスタアドレスと機能説明については、「Register Function, Motor Operation Mode, Error Code Instructions.xlsx」ファイルを参照してください。
-3. CANの8バイトデータセグメント制限により、単一のCANフレームで返せるモーター情報は限られています：
+2. レジスタアドレスと機能指示については、「Register Function, Motor Operation Mode, Error Code Instructions.xlsx」ファイルを参照してください。
+3. CANの8バイトデータセグメント制限により、単一のCANフレームで返せるモーター情報は限られています:
    - レジスタ内の1つのfloat型またはint32_t型モーター情報。
-   - 連続する3つのint16_t型モーター情報。
-   - 連続する6つのint8_t型モーター情報。
-4. サンプルプログラムでは、int16_t型のモーター位置、速度、トルク情報の照会とモーター情報解析のサンプル関数を提供しています（サンプルプログラムではC言語のunionを使用してCAN内の3番目から8番目のバイトのデータを直接コピーします）。
+   - 3つの連続したint16_t型モーター情報。
+   - 6つの連続したint8_t型モーター情報。
+4. サンプルプログラムでは、int16_t型のモーター位置、速度、トルク情報を照会するサンプル関数とモーター情報解析を提供しています（サンプルプログラムではC言語のunionを使用してCANの3番目から8番目のバイトのデータを直接コピーします）。
 
-### 1.3.1 送信プロトコル命令
+### 1.3.1 送信プロトコル指示
 
 ```bash
 uint8_t tdata[] = {cmd, addr, cmd1, addr1, cmd2, add2};
 ```
 
-一般的な意味は：addrからcmd[3, 2]タイプのデータをcmd[0, 1]個読み取る。
+一般的な意味は: addrからcmd[3, 2]型のcmd[0, 1]個のデータを読み取る。
 
 cmd:
 
-- 上位4ビット[7, 4]：0001は読み取りを示す。
-- ビット2-3 [3, 2]：タイプを示す。
-  - 00：int8_tタイプ。
-  - 01：int16_tタイプ。
-  - 10：int32_tタイプ。
-  - 11：floatタイプ。
-- 下位2ビット[1, 0]：数量を示す。
-  - 01：1つのデータ。
-  - 10：2つのデータ。
-  - 11：3つのデータ。
+- 上位4ビット[7, 4]: 0001は読み取りを示します。
+- ビット2-3 [3, 2]: 型を示します。
+  - 00: int8_t型。
+  - 01: int16_t型。
+  - 10: int32_t型。
+  - 11: float型。
+- 下位2ビット[1, 0]: 数量を示します。
+  - 01: 1つのデータ。
+  - 10: 2つのデータ。
+  - 11: 3つのデータ。
 
-addr：取得する開始アドレス。
+addr: 取得する開始アドレス。
 
-複数のcmdとaddrを連結して、不連続なアドレスと異なるタイプのデータを一度に読み取ることができます。
+複数のcmdとaddrを連結して、不連続なアドレスと異なる型のデータを一度に読み取ることができます。
 
-### 1.3.2 受信プロトコル命令
+### 1.3.2 受信プロトコル指示
 
 取得したデータがuint16_tであると仮定します。
 
@@ -207,13 +207,13 @@ uint8_t rdata[] = {cmd, addr, a1, a2, b1, b2, ..., cmd1, addr1, c1, c2, c3, c4}
 
 cmd:
 
-- 上位4ビット [7, 4]: 0010 は応答を示します。
-- ビット2-3 [3, 2]: タイプを示します。
-  - 00: int8_t タイプ。
-  - 01: int16_t タイプ。
-  - 10: int32_t タイプ。
-  - 11: float タイプ。
-- 下位2ビット [1, 0]: 数量を示します。
+- 上位4ビット[7, 4]: 0010は応答を示します。
+- ビット2-3 [3, 2]: 型を示します。
+  - 00: int8_t型。
+  - 01: int16_t型。
+  - 10: int32_t型。
+  - 11: float型。
+- 下位2ビット[1, 0]: 数量を示します。
   - 01: 1つのデータ。
   - 10: 2つのデータ。
   - 11: 3つのデータ。
@@ -227,13 +227,13 @@ b1, b2: データ2、リトルエンディアンモード。
 ### 1.3.3 例
 
 1. 位置、速度、トルクデータを読み取る必要があります。
-2. レジスタのExcelテーブルから、位置、速度、トルクのデータアドレスが01、02、03であることがわかります。
-3. これから、アドレス01から3つの連続データを読み取ることができることがわかります。CANは一度に最大8バイトのデータを送信でき、cmd + addrが2バイトを占めることを考慮すると、データタイプは最大でint16_tタイプになります。
+2. レジスタExcelテーブルから、位置、速度、トルクのデータアドレスが01、02、03であることがわかります。
+3. これから、アドレス01から3つの連続したデータを読み取ることができることがわかります。CANが一度に最大8バイトのデータを送信でき、cmd + addrが2バイトを占めることを考慮すると、データ型は最大でint16_t型になります。
 4. 上記から、cmdのバイナリは0001 0111で、16進数は0x17です。
 5. アドレス01から読み取りを開始する必要があるため、addrは0x01です。
 6. 送信する総データはuint8_t tdata[] = {0x17, 0x01}です。
 
-サンプルコードは以下の通りです：
+サンプルコードは以下の通りです:
 
 ```c
 /**
@@ -248,10 +248,9 @@ CAN_Send_Msg(0x8000 | id, tdata, sizeof(tdata));
 
 uint8_t cmd[] = {0x17, 0x01};
 ```
-
 全体的な意味は：アドレス0x01から開始して3つのint16_tレジスタを読み取る（表によると、アドレス0x01から0x03のレジスタはそれぞれ位置、速度、トルクを表す）。したがって、このコマンドはモーターの位置、速度、トルク情報を照会するためのものです。
 
-0x17: 0x17[7:4]のバイナリは0001：読み取りを示す。0x17[3:2]のバイナリは01：データタイプがint16_tであることを示す。0x17[1:0]のバイナリは11：データ数が3であることを示す。0x01: アドレス0x01から開始。
+0x17：0x17[7:4]のバイナリは0001：読み取りを示す。0x17[3:2]のバイナリは01：データタイプがint16_tであることを示す。0x17[1:0]のバイナリは11：データ数が3であることを示す。0x01：アドレス0x01から開始。
 
 対応する受信データの例：
 
@@ -259,14 +258,14 @@ uint8_t cmd[] = {0x17, 0x01};
 uint8_t rdata[] = {0x27, 0x01, 0x38, 0xf6, 0x09, 0x00, 0x00, 0x00};
 ```
 
-0x27: 送信された0x17に対応。0x01: アドレス0x01から開始。0x38 0xf6: 位置データ: 0xf638、すなわち-2505。0x09 0x00: 速度データ: 0x0009、すなわち9。0x00 0x00: トルクデータ: 0x0000、すなわち0。
+0x27：送信された0x17に対応。0x01：アドレス0x01から開始。0x38 0xf6：位置データ：0xf638、すなわち-2505。0x09 0x00：速度データ：0x0009、すなわち9。0x00 0x00：トルクデータ：0x0000、すなわち0。
 
 ## 1.4 モーター停止
 
-指示:
+説明：
 
-1. モーターを停止する。
-2. ホストコンピューター指示d stopに対応。
+1. モーターを停止します。
+2. ホストコンピューター命令d stopに対応します。
 
 ```c
 /**
@@ -279,12 +278,12 @@ CAN_Send_Msg(0x8000 | id, tdata, sizeof(tdata));
 }
 ```
 
-## 1.5 モーター零位置のリセット
+## 1.5 モーターゼロ位置リセット
 
 説明：
 
-1. 現在の位置をモーターの零位置として設定します。
-2. この命令はRAM内でのみ変更を行うため、フラッシュに保存するにはconf write命令と組み合わせて使用する必要があります。
+1. 現在の位置をモーターのゼロ位置として設定します。
+2. この命令はRAM内でのみ変更し、conf write命令と組み合わせてflashに保存する必要があります。
 3. この命令を使用した約1秒後にconf write命令を送信することを推奨します。
 
 ```c
@@ -297,12 +296,12 @@ conf_write(id); // Save the settings
 }
 ```
 
-## 1.6 モーター設定の保存 (conf write)
+## 1.6 モーター設定保存（conf write）
 
-手順：
+説明：
 
-1. RAMのモーター設定をフラッシュに保存します。
-2. この命令を使用した後は、モーターの電源を再投入することを推奨します。
+1. RAM内のモーター設定をflashに保存します。
+2. この命令を使用した後、モーターの電源を再投入することを推奨します。
 
 ```c
 void conf_write(uint8_t id)
@@ -312,12 +311,12 @@ CAN_Send_Msg(0x8000 | id, tdata, sizeof(tdata));
 }
 ```
 
-## 1.7 モーター状態の読み取り
+## 1.7 モーターステータス読み取り
 
-手順：
+説明：
 
 1. モーターの位置、速度、トルクデータを一度読み取ります。
-2. モーターフィードバック状態情報データの解析については、例の割り込み関数HAL_FDCAN_RxFifo0Callbackのコードを参照してください。
+2. モーターフィードバックステータス情報データの解析については、例の割り込み関数HAL_FDCAN_RxFifo0Callbackのコードを参照してください。
 
 ```c
 * @brief Instruction to read motor position, speed, and torque
@@ -330,16 +329,16 @@ can_send(hcan, 0x8000 | id, tdata, sizeof(tdata));
 }
 ```
 
-## 1.8 モーター状態データの定期返信
+## 1.8 モーターステータスデータの定期返送
 
-指示：
+説明：
 
-1. モーターの位置、速度、トルクデータを定期的に返信します。
-2. 返信されるデータ形式は、0x17、0x01指示を使用して取得されるものと同じです（つまり、1.7 位置状態の読み取り）。
+1. モーターの位置、速度、トルクデータを定期的に返送します。
+2. 返送されるデータ形式は、0x17、0x01命令を使用して取得したものと同じです（すなわち、1.7位置ステータス読み取り）。
 3. 周期の単位はmsです。
 4. 最小周期は1msです。
-5. データの定期返信を停止するには、周期を0に設定するか、モーターの電源を切ってください。
-6. モーターフィードバック状態情報データの解析については、例のHAL_FDCAN_RxFifo0Callback割り込み関数内のコードを参照してください。
+5. データの定期返送を停止するには、周期を0に設定するか、モーターの電源を切ってください。
+6. モーターフィードバックステータス情報データの解析については、例の割り込み関数HAL_FDCAN_RxFifo0Callbackのコードを参照してください。
 
 ```c
 void timed_return_motor_status(uint8_t id, int16_t t_ms)
@@ -428,7 +427,7 @@ CAN_Send_Msg(0x8000 | id, tdata, 8);
 
 ### 2.5 DQ電圧モード
 
-指示：
+説明：
 
 1. Q相電圧を制御できます。単位：0.1v、例：vol = 10はQ相電圧が1Vであることを意味します。
 
@@ -442,9 +441,9 @@ can_send(hfdcanx, 0x8000 | id, tdata, sizeof(tdata));
 
 ### 2.6 DQ電流モード
 
-手順：
+説明：
 
-1. Q相電流を制御できます。単位：0.1A、例：cur = 10 はQ相電圧が1Aであることを意味します。
+1. Q相電流を制御できます。単位：0.1A、例：cur = 10はQ相電圧が1Aであることを意味します。
 
 ```c
 void motor_control_cur(FDCAN_HandleTypeDef *hfdcanx, uint8_t id, int16_t cur)
@@ -492,119 +491,119 @@ can_send(fdcanHandle, 0x8000 | id, cmd, sizeof(cmd));
 }
 ```
 
-## 3. 一般的なタイプ（単位）の説明
+## 3. 一般的なタイプの説明（単位）
 
-### 3.1 電流 (A)
+### 3.1 電流（A）
 
-| データタイプ | LSB | 実際値 (A) |
+| データタイプ | LSB | 実際（A） |
 | --- | --- | --- |
 | int8 | 1 | 1 |
 | int16 | 1 | 0.1 |
 | int32 | 1 | 0.001 |
 | float | 1 | 1 |
 
-### 3.2 電圧 (V)
+### 3.2 電圧（V）
 
-| データタイプ | LSB | 実際値 (V) |
+| データタイプ | LSB | 実際（V） |
 | --- | --- | --- |
 | int8 | 1 | 0.5 |
 | int16 | 1 | 0.1 |
 | int32 | 1 | 0.001 |
 | float | 1 | 1 |
 
-### 3.3 トルク (Nm)
+### 3.3 トルク（Nm）
 
 真のトルク = k * tqe + d
 
-#### 3.3.1 5046 トルク (Nm)
+#### 3.3.1 5046 トルク（Nm）
 
-| データタイプ | 傾き (k) | オフセット (d) |
+| データタイプ | 傾き（k） | オフセット（d） |
 | --- | --- | --- |
 | int16 | 0.005397 | -0.455107 |
 | int32 | 0.000528 | -0.414526 |
 | float | 0.533654 | -0.519366 |
 
-#### 3.3.2 4538 トルク (Nm)
+#### 3.3.2 4538 トルク（Nm）
 
-| データタイプ | 傾き (k) | オフセット (d) |
+| データタイプ | 傾き（k） | オフセット（d） |
 | --- | --- | --- |
 | int16 | 0.004587 | -0.290788 |
 | int32 | 0.000445 | -0.234668 |
 | float | 0.493835 | -0.473398 |
 
-#### 3.3.2 5047/6056 (バイポーラ、36 ギア比) トルク (Nm)
+#### 3.3.2 5047/6056（バイポーラ、36ギア比）トルク（Nm）
 
-| データタイプ | 傾き (k) | オフセット (d) |
+| データタイプ | 傾き（k） | オフセット（d） |
 | --- | --- | --- |
 | int16 | 0.004563 | -0.493257 |
 | int32 | 0.000462 | -0.512253 |
 | float | 0.465293 | -0.554848 |
 
-#### 3.3.3 5047 (ユニポーラ、9 ギア比) トルク (Nm)
+#### 3.3.3 5047（ユニポーラ、9ギア比）トルク（Nm）
 
-| データタイプ | 傾き (k) | オフセット (d) |
+| データタイプ | 傾き（k） | オフセット（d） |
 | --- | --- | --- |
 | int16 | 0.005332 | -0.072956 |
 | int32 | 0.000533 | -0.034809 |
 | float | 0.547474 | -0.150232 |
 
-### 3.4 温度 (℃)
+### 3.4 温度（℃）
 
-| データ型 | LSB | 実際値 (℃) |
+| データタイプ | LSB | 実際（℃） |
 | --- | --- | --- |
 | int8 | 1 | 1 |
 | int16 | 1 | 0.1 |
 | int32 | 1 | 0.001 |
 | float | 1 | 1 |
 
-### 3.5 時間 (s)
+### 3.5 時間（s）
 
-| データ型 | LSB | 実際値 (s) |
+| データタイプ | LSB | 実際（s） |
 | --- | --- | --- |
 | int8 | 1 | 0.01 |
 | int16 | 1 | 0.001 |
 | int32 | 1 | 0.000001 |
 | float | 1 | 1 |
 
-### 3.6 位置 (回転)
+### 3.6 位置（回転数）
 
-| データ型 | LSB | 実際値 (回転) | 実際値 (°) |
+| データタイプ | LSB | 実際（回転数） | 実際（°） |
 | --- | --- | --- | --- |
 | int8 | 1 | 0.01 | 3.6 |
 | int16 | 1 | 0.0001 | 0.036 |
 | int32 | 1 | 0.00001 | 0.0036 |
 | float | 1 | 1 | 360 |
 
-### 3.7 速度 (回転/秒)
+### 3.7 速度（回転数/秒）
 
-| データ型 | LSB | 実際 (回転/秒) |
+| データタイプ | LSB | 実際（回転数/秒） |
 | --- | --- | --- |
 | int8 | 1 | 0.01 |
 | int16 | 1 | 0.00025 |
 | int32 | 1 | 0.00001 |
 | float | 1 | 1 |
 
-### 3.8 加速度 (回転/秒²)
+### 3.8 加速度（回転数/秒²）
 
-| データ型 | LSB | 実際 (回転/秒²) |
+| データタイプ | LSB | 実際（回転数/秒²） |
 | --- | --- | --- |
 | int8 | 1 | 0.05 |
 | int16 | 1 | 0.001 |
 | int32 | 1 | 0.00001 |
 | float | 1 | 1 |
 
-### 3.9 PWMスケール (無次元)
+### 3.9 PWMスケール（無単位）
 
-| データ型 | LSB | 実際 |
+| データタイプ | LSB | 実際 |
 | --- | --- | --- |
 | int8 | 1 | 1/127 - 0.007874 |
 | int16 | 1 | 1/32767 - 0.000030519 |
 | int32 | 1 | (1/2147483647) - 4.657^10 |
 | float | 1 | 1 |
 
-### 3.10 Kp, Kd スケール（単位なし）
+### 3.10 Kp、Kdスケール（無単位）
 
-| データ型 | LSB | 実際の値 |
+| データタイプ | LSB | 実際 |
 | --- | --- | --- |
 | int8 | 1 | 1/127 - 0.007874 |
 | int16 | 1 | 1/32767 - 0.000030519 |
@@ -613,44 +612,43 @@ can_send(fdcanHandle, 0x8000 | id, cmd, sizeof(cmd));
 
 </details>
 
-## C++ サンプル
+## C++の例
 
-C++ 制御には追加の CAN-USB ドライバーボードが必要です。[livelybot_hardware_sdk](https://github.com/HighTorque-Robotics/livelybot_hardware_sdk) を参照してください。
+C++制御には追加のCAN-USBドライバーボードが必要です。[livelybot_hardware_sdk](https://github.com/HighTorque-Robotics/livelybot_hardware_sdk)を参照してください
 
 <div align="center">
     <img width={400}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/hightorque/USB-CAN.png" />
 </div>
 
-## [reComputer Mini Jetson Orin](/recomputer_jetson_mini_getting_started) でモーターを制御する
+## [reComputer Mini Jetson Orin](/ja/recomputer_jetson_mini_getting_started)でモーターを制御する
 
-現在、市場でモーター用に最も一般的に使用されている CAN 通信インターフェースは XT30(2+2) と JST コネクタです。私たちの **reComputer Mini Jetson Orin** と **reComputer Robotics** デバイスには、デュアル XT30(2+2) ポートと JST ベースの CAN インターフェースが搭載されており、シームレスな互換性を提供します。
+現在、市場でモーターに最も一般的に使用されているCAN通信インターフェースは、XT30(2+2)およびJSTコネクタです。私たちの**reComputer Mini Jetson Orin**および**reComputer Robotics**デバイスには、デュアルXT30(2+2)ポートとJSTベースのCANインターフェースが搭載されており、シームレスな互換性を提供します。
 
-**reComputer Mini:**
+**reComputer Mini：**
 <div align="center">
   <img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg"/>  
 </div>
-
 **reComputer Robotics**
 <div align="center">
   <img width ="800" src="https://files.seeedstudio.com/wiki/robotics/Sensor/IMU/hexfellow/fig5.jpg"/>  
 </div>
 
-CAN 使用の詳細については、この [wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can) を参照してください。
+CANの使用に関する詳細については、この[wiki](https://wiki.seeedstudio.com/ja/recomputer_jetson_mini_hardware_interfaces_usage/#can)を参照してください。
 
-### CAN インターフェースの有効化
+### CANインターフェースの有効化
 
-**ステップ 1:** CAN0 と CAN1 を使用する前に、底面カバーを取り外し、両方の 120Ω 終端抵抗を ON 位置に設定します。
+**ステップ1:** CAN0とCAN1を使用する前に、底面カバーを取り外し、両方の120Ω終端抵抗をON位置に設定してください。
 
 <div align="center">
     <img width={300}
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/7.png" />
 </div>
 
-**ステップ 2:** XT30(2+2) インターフェースを介してモーターを reComputer Mini の CAN0 に直接接続します。
+**ステップ2:** XT30(2+2)インターフェースを介してモーターをreComputer MiniのCAN0に直接接続してください。
 
 :::tip
-reComputer Mini の CAN インターフェースの H/L ピンはモーターのものと逆になっているため、XT30 2+2 ハーネスの H/L 接続を逆にする必要があります。
+reComputer MiniのCANインターフェースのH/Lピンはモーターのものと逆になっているため、XT30 2+2ハーネスのH/L接続を逆にする必要があります。
 :::
 
 <div align="center">
@@ -663,24 +661,24 @@ reComputer Mini の CAN インターフェースの H/L ピンはモーターの
 </div>
 
 :::danger
-この電源ソリューションは、単一モーターの学習とテスト用途にのみ適しています。マルチモーターアプリケーションの場合は、Jetson 電源とモーター電源を分離し、Jetson を通じて大電流が直接流れることを避けるために、独立した電源ボードを設計してください。
+この電源ソリューションは、単一モーターの学習とテストにのみ適しています。マルチモーターアプリケーションの場合は、Jetsonの電源供給をモーターの電源供給から分離し、大電流がJetsonを直接通過することを避けるために、独立した電源ボードを設計してください。
 :::
 
-#### Jetson CAN 通信の有効化
+#### Jetson CAN通信の有効化
 
-ターミナルを開き、以下のコマンドを入力して GPIO ピンをハイにプルし、CAN0 を有効化します：
+ターミナルを開き、以下のコマンドを入力してGPIOピンをハイにしてCAN0を有効化してください：
 
 ```bash
 gpioset --mode=wait 0 43=0
 ```
 
-JSTインターフェースのCAN1を使用する場合は、ピン106をハイにプルします：
+JSTインターフェースのCAN1を使用する場合は、ピン106をハイにしてください：
 
 ```bash
 gpioset --mode=wait 0 106=0
 ```
 
-このターミナルを開いたままにして、新しいターミナルを作成してCAN0を設定します：
+このターミナルを開いたままにして、新しいターミナルを作成してCAN0を設定してください：
 
 ```bash
 sudo modprobe mttcan
@@ -702,7 +700,7 @@ pip install python-can numpy
 mkdir -p ~/hightorque/scripts
 ```
 
-- **hightorque_motor.pyファイルを作成**
+- **hightorque_motor.pyファイルの作成**
 
 ```bash
 cd ~/hightorque/scripts
@@ -748,7 +746,7 @@ class Motor:
         self.velocity = 0
         self.torque = 0
         self.temperature = 0
-        
+
         # Set Torque Conversion Parameters Based on Motor Type
         if motor_type == MotorType.HT5046:
             self.torque_k = 0.005397
@@ -874,7 +872,7 @@ class MotorControl:
         data = bytes([0x17, 0x01])
         self.__send_data(motor.slave_id, data)
         sleep(0.01)  # Wait for Data Reception
-        
+
         # Receive and Parse Data
         msg = self.bus.recv(timeout=0.1)
         if msg and msg.arbitration_id == (0x8000 | motor.slave_id):
@@ -902,9 +900,9 @@ class MotorControl:
 
 </details>
 
-- **hightorque_test.py ファイルを作成**
+- **hightorque_test.pyファイルの作成**
 
-以下のコードを hightorque_test.py にコピーしてください。
+以下のコードをhightorque_test.pyにコピーしてください。
 
 <details>
 <summary>hightorque_test.py</summary>
@@ -933,7 +931,7 @@ DURATION = 60.0  # Run Duration (s)
 def main():
     # Create Motor Control Object
     controller = MotorControl(channel=CAN_INTERFACE, bitrate=CAN_BITRATE)
-    
+
     try:
         # Create and Add Motors
         motors = []
@@ -941,46 +939,46 @@ def main():
             motor = Motor(MOTOR_TYPE, slave_id=i+1, master_id=0)
             controller.add_motor(motor)
             motors.append(motor)
-            
+
             # Enable Motor
             print(f"Enabling Motor {i+1}...")
             controller.enable(motor)
             time.sleep(1)  # Wait for Motor Enable
-            
+
             # Set Zero Position
             print(f"Setting Motor {i+1} Zero Position...")
             controller.set_zero_position(motor)
             time.sleep(1)
-            
+
             # Save Settings to Flash
             print(f"Saving Motor {i+1} Settings...")
             controller.save_settings(motor)
             time.sleep(1)
-            
+
             # Read Initial Status
             controller.read_motor_status(motor)
             print(f"Motor {i+1} Initial Status:")
             print(f"Position: {motor.position * 0.0001:.4f} turns")
             print(f"Velocity: {motor.velocity * 0.00025:.4f} turns/second")
             print(f"Torque: {motor.torque * motor.torque_k + motor.torque_d:.4f} Nm")
-        
+
         # Start Sine Wave Position Control
         print("\nStarting Sine Wave Position Control...")
         start_time = time.time()
         while time.time() - start_time < DURATION:
             current_time = time.time() - start_time
-            
+
             # Calculate Sine Wave Position with Offset to Ensure Positive
             position = AMPLITUDE * math.sin(2 * math.pi * FREQUENCY * current_time) + OFFSET
-            
+
             # Control All Motors
             for motor in motors:
                 # Use Position Control Mode with Max Torque of 1000
                 controller.control_position(motor, position=int(position), torque=1000)
-            
+
             # Control Frequency
             time.sleep(0.001)  # 1kHz Control Frequency
-            
+
     except KeyboardInterrupt:
         print("\nProgram Interrupted by User")
     finally:
@@ -988,19 +986,18 @@ def main():
         for motor in motors:
             print(f"Disabling Motor {motor.slave_id}...")
             controller.disable(motor)
-        
+
         # Close CAN Bus
         controller.close()
         print("CAN Bus Closed")
 
 if __name__ == "__main__":
     main() 
-
 ```
 
 </details>
 
-- **Run hightorque_test.py**
+- **hightorque_test.py を実行**
 
 ```bash
 python hightorque_test.py
@@ -1012,7 +1009,7 @@ python hightorque_test.py
 
 ## 技術サポートと製品ディスカッション
 
-私たちの製品をお選びいただき、ありがとうございます！最高の体験をしていただけるよう、様々なサポートチャンネルを提供しています。
+弊社製品をお選びいただき、ありがとうございます！最高の体験をしていただけるよう、様々なサポートチャンネルをご用意しております。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
@@ -1025,7 +1022,7 @@ python hightorque_test.py
 </div>
 
 <style>{`
-/* 导航容器 */
+/* 導航容器 */
 .quick-nav-container {
   margin: 2rem 0;
   padding: 1rem;
@@ -1041,22 +1038,22 @@ python hightorque_test.py
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* Dark模式 - 导航容器 */
+/* Dark模式 - 導航容器 */
 html[data-theme='dark'] .quick-nav-container {
   background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
-/* 导航主体 */
+/* 導航主体 */
 .quick-nav {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
-  flex-wrap: wrap; /* 关键属性 */
+  flex-wrap: wrap; /* 関键属性 */
   justify-content: left; /* 可选居中 */
 }
 
-/* 导航项 */
+/* 導航項 */
 .nav-item {
   position: relative;
   padding: 0.8rem 1.5rem;
@@ -1075,7 +1072,7 @@ html[data-theme='dark'] .quick-nav-container {
   z-index: 1;
 }
 
-/* Dark模式 - 导航项 */
+/* Dark模式 - 導航項 */
 html[data-theme='dark'] .nav-item {
   color: #e5e7eb;
   background: #374151;
@@ -1296,7 +1293,7 @@ html[data-theme='dark'] .stable {
   box-shadow: 0 2px 4px rgba(200,0,0,0.1);
 }
 
-/* ダークモード - Recommendedタグ */
+/* Dark模式 - Recommended标签 */
 html[data-theme='dark'] .recommended {
   background: #7f1d1d;
   color: #fca5a5;
@@ -1308,24 +1305,24 @@ html[data-theme='dark'] .recommended {
   box-shadow: 0 6px 10px rgba(0,0,0,0.1);
 }
 
-/* ダークモード - クリック効果 */
+/* Dark模式 - 点击效果 */
 html[data-theme='dark'] .category-card:active {
   box-shadow: 0 6px 10px rgba(0,0,0,0.4);
 }
 
-/* レスポンシブ最適化 */
+/* 响应式优化 */
 @media (max-width: 768px) {
   .nav-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .category-card {
     width: 100%;
-    margin-top: 0.5rem; /* カードをタイトルに密着 */
+    margin-top: 0.5rem; /* 卡片紧贴标题 */
   }
 }
 
-/* ダークモード - タイトルテキスト */
+/* Dark模式 - 标题文字 */
 html[data-theme='dark'] h1,
 html[data-theme='dark'] h2,
 html[data-theme='dark'] h3,
@@ -1335,14 +1332,14 @@ html[data-theme='dark'] h6 {
   color: #f9fafb;
 }
 
-/* ダークモード - 本文テキスト */
+/* Dark模式 - 正文文字 */
 html[data-theme='dark'] p,
 html[data-theme='dark'] li,
 html[data-theme='dark'] strong {
   color: #e5e7eb;
 }
 
-/* ダークモード - 引用ブロック */
+/* Dark模式 - 引用块 */
 html[data-theme='dark'] blockquote {
   color: #9ca3af;
   border-left-color: #4b5563;

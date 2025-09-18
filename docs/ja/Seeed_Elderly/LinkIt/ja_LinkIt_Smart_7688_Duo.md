@@ -9,10 +9,7 @@ last_update:
   date: 05/15/2025
   author: shuxu hu
 ---
-:::note
-この文書は AI によって翻訳されています。内容に不正確な点や改善すべき点がございましたら、文書下部のコメント欄または以下の Issue ページにてご報告ください。  
-https://github.com/Seeed-Studio/wiki-documents/issues
-:::
+
 
 ![画像の説明を入力してください](https://files.seeedstudio.com/wiki/LinkIt_Smart_7688_Duo/img/Linkit_7688_DUO_Product_view.jpg)
 
@@ -285,9 +282,9 @@ Arduino IDE 1.6.5は、**Board Manager** ツールを使用してサードパー
 
 **1.** Arduino IDEで、[ファイル] メニューから [環境設定] をクリックし、以下を追加します：
 
-````
+```
 http://download.labs.mediatek.com/package_mtk_linkit_smart_7688_index.json
-````
+```
 
 これを「追加のボードマネージャURL」フィールドに挿入します：
 

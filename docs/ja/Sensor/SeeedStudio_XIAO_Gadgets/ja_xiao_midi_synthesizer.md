@@ -174,7 +174,7 @@ BOOTモードに入った後、デバイスはArduino IDEまたは他のツー�
 ## Arduino ライブラリ概要
 
 :::tip
-Arduino を初めて使用する場合は、[Arduino を始める](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、[Arduino を始める](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 XIAO MIDI Synthesizer は [Seeed_Arduino_MIDIMaster](https://github.com/Seeed-Studio/Seeed_Arduino_MIDIMaster) ライブラリによってサポートされており、包括的な MIDI 制御とサウンド合成機能を提供します。
@@ -607,7 +607,7 @@ typedef enum {
 
 **ステップ2.** 開発ボードモデルを選択し、Arduino IDE に追加します。
 
-- XIAO MIDI Synthesizer には **XIAO ESP32-C3** が内蔵されています。追加を完了するには、**[このチュートリアル](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/)** を参照してください。
+- XIAO MIDI Synthesizer には **XIAO ESP32-C3** が内蔵されています。追加を完了するには、**[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/)** を参照してください。
 
 ### デモ1: 基本的なMIDIノート演奏
 

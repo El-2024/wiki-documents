@@ -28,7 +28,7 @@ Seeed Studio XIAO SAMD21は14個のPINを持ち、ピン多重化により11個�
 
 **Seeed Studio XIAO SAMD21**の使用に関する2つのドキュメントがあり、それぞれ異なる分野に焦点を当てています。参考として以下の表をご確認ください：
 
-|[**Seedによるドキュメント**](https://wiki.seeedstudio.com/Seeeduino-XIAO/)|[**Nanaseによるドキュメント**](https://wiki.seeedstudio.com/Seeeduino-XIAO-by-Nanase/)|
+|[**Seedによるドキュメント**](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/)|[**Nanaseによるドキュメント**](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO-by-Nanase/)|
 |---|---|
 |ピン配置図|インターフェース|
 |Seeed Studio XIAO SAMD21使用開始|Seeed Studio XIAO SAMD21とMicroSDカード（SPI）|
@@ -37,7 +37,7 @@ Seeed Studio XIAO SAMD21は14個のPINを持ち、ピン多重化により11個�
 
 ### **CircuitPython on Seeed Studio XIAO SAMD21**
 
-- [**Seeed Studio XIAO SAMD21 での CircuitPython**](https://wiki.seeedstudio.com/Seeeduino-XIAO-CircuitPython)を始めましょう。
+- [**Seeed Studio XIAO SAMD21 での CircuitPython**](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO-CircuitPython)を始めましょう。
 
 ## **特徴**
 
@@ -348,7 +348,7 @@ void loop()
 
 :::note
 
-Arduinoを初めて使用する場合は、[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino)を参照することを強くお勧めします。
 :::
 
 - **ステップ1. Arduinoソフトウェアをインストールする必要があります。**
@@ -409,9 +409,9 @@ Tools | Serial Portメニューから、Arduinoボードのシリアルデバイ
 
 ## サンプルアプリケーション
 
-- [Seeed Studio XIAO SAMD21 を使用してRaspberry PIにログインする方法](https://wiki.seeedstudio.com/How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI)
+- [Seeed Studio XIAO SAMD21 を使用してRaspberry PIにログインする方法](https://wiki.seeedstudio.com/ja/How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI)
 
-- [SPI 通信インターフェース](https://wiki.seeedstudio.com/XIAO-SPI-Communication-Interface)
+- [SPI 通信インターフェース](https://wiki.seeedstudio.com/ja/XIAO-SPI-Communication-Interface)
 
 - [Raspberry Piを使用して故障したxiaoを復旧する方法](https://forum.seeedstudio.com/t/how-to-unbrick-a-dead-xiao-using-raspberry-pi-guide-openocd/253990)。共有してくれたJohn_Doeに感謝します。
 

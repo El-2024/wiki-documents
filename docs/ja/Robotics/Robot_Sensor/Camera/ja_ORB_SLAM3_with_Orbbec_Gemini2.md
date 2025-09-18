@@ -1,6 +1,6 @@
 ---
-description: このwikiでは、Orbbec Gemini2 RGB-Dカメラを使用してreComputer Jetson上でORB-SLAM3アルゴリズムをセットアップし、実行するための詳細な手順を提供し、高度なビジュアルSLAMアプリケーションに対応します。
-title: reComputer上でのOrbbec Gemini2を使用したORB-SLAM3
+description: このwikiでは、高度なビジュアルSLAMアプリケーション用にOrbbec Gemini2 RGB-Dカメラを使用してreComputer Jetson上でORB-SLAM3アルゴリズムをセットアップして実行するための詳細な手順を提供します。
+title: ORB-SLAM3 with Orbbec Gemini2
 keywords:
 - ORB-SLAM3
 - SLAM
@@ -22,25 +22,25 @@ last_update:
 </div>
 
 <div style={{ textAlign: "justify" }}>
-Orbbec Gemini 2は、デュアルアイ構造光深度センサーと統合された6軸IMUを特徴とする高性能RGB-Dカメラです。完全に同期されたRGBと深度データストリームを提供し、正確なリアルタイムDepth-to-Color位置合わせを保証し、これは正確な3D認識に不可欠です。この機能の組み合わせにより、Gemini 2はロボティクス、コンピュータビジョン、その他の3Dアプリケーションに理想的で、オブジェクト検出、マッピング、ナビゲーション、空間解析などのタスクを高い信頼性と精度で実現できます。このカメラはコンパクトで、セットアップが簡単で、Orbbec SDKによって完全にサポートされており、研究と産業展開の両方に適しています。
+Orbbec Gemini 2は、デュアルアイ構造光深度センサーと統合された6軸IMUを搭載した高性能RGB-Dカメラです。完全に同期されたRGBと深度データストリームを提供し、正確なリアルタイム深度-カラー位置合わせを保証し、これは正確な3D認識に不可欠です。これらの機能の組み合わせにより、Gemini 2はロボティクス、コンピュータビジョン、その他の3Dアプリケーションに理想的で、高い信頼性と精度でオブジェクト検出、マッピング、ナビゲーション、空間解析などのタスクを可能にします。このカメラはコンパクトで、セットアップが簡単で、Orbbec SDKによって完全にサポートされており、研究と産業展開の両方に適しています。
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
 <a class="get_one_now_item" href="https://www.seeedstudio.com/Orbbec-Gemini-2-3D-Camera-p-6464.html" target="_blank">
-<strong><span><font color={'FFFFFF'} size={"4"}> 今すぐ購入 🖱️</font></span></strong>
+<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 </a></div>
 
 ## はじめに
 
 <div style={{ textAlign: "justify" }}>
-[ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3)は、単眼、ステレオ、RGB-Dカメラ用の高度なビジュアルSLAMアルゴリズムです。ORB特徴量を使用して堅牢なトラッキングとマッピングを行い、ループクロージャと再ローカライゼーションをサポートし、ロボティクス、AR/VR、自律ナビゲーション向けに高い精度と効率を提供します。このwikiでは、Orbbec Gemini2 RGB-Dカメラを使用してreComputer Jetsonシリーズ上でORB-SLAM3をセットアップし、高度なビジュアルSLAMアプリケーション用に実行するための包括的な手順を提供します。
+[ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3)は、単眼、ステレオ、RGB-Dカメラ用の高度なビジュアルSLAMアルゴリズムです。堅牢なトラッキングとマッピングのためにORB特徴を使用し、ループクロージャと再ローカライゼーションをサポートし、ロボティクス、AR/VR、自律ナビゲーションに高い精度と効率を提供します。このwikiでは、高度なビジュアルSLAMアプリケーション用にOrbbec Gemini2 RGB-Dカメラを使用してreComputer Jetsonシリーズ上でORB-SLAM3をセットアップして実行するための包括的な手順を提供します。
 </div>
 
 ## 前提条件
 
-- __Jetpack 6.2がプリインストールされた[reComputer J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__
-- __Orbbec Gemini2 3Dカメラ__
-- __[ROS2 Humble](https://wiki.seeedstudio.com/install_ros2_humble/)__環境がインストール済み
+- __[reComputer J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__ Jetpack 6.2がプリインストール済み
+- __Orbbec Gemini2 3D Camera__
+- __[ROS2 Humble](https://wiki.seeedstudio.com/ja/install_ros2_humble/)__ 環境がインストール済み
 
 <div align="center">
     <img width={700}
@@ -59,7 +59,7 @@ wget https://github.com/orbbec/OrbbecSDK_v2/releases/download/v2.4.11/OrbbecSDK_
 unzip OrbbecSDK_v2.4.11_202508040936_058db73_linux_aarch64.zip
 ```
 
-__ステップ 2.__ サンプルをビルドしてテストする：
+__ステップ 2.__ サンプルをビルドしてテストします：
 
 ```bash
 # Install udev rules
@@ -80,7 +80,7 @@ cd ..
 
 ## ORB-SLAM3のビルド
 
-__ステップ 1.__ システム依存関係のインストール：
+__ステップ 1.__ システム依存関係をインストールします：
 
 ```bash
 sudo apt update && sudo apt install -y \
@@ -114,9 +114,9 @@ sudo make install
 ```
 
 :::warning
-OpenEXR関連のコンパイルエラーが発生した場合、ソースコードを修正する必要があります：
+OpenEXR関連のコンパイルエラーが発生した場合、ソースコードを修正する必要があるかもしれません：
 
-`./components/pango_image/src/image_io_exr.cpp`で、以下を置き換えてください：
+`./components/pango_image/src/image_io_exr.cpp`で、以下を置き換えます：
 
 ```cpp
 #include <ImfChannelList.h>
@@ -125,7 +125,7 @@ OpenEXR関連のコンパイルエラーが発生した場合、ソースコー�
 #include <ImfOutputFile.h>
 ```
 
-を以下に置き換えます：
+以下に置き換えます：
 
 ```cpp
 #include <OpenEXR/ImfChannelList.h>
@@ -144,7 +144,7 @@ git clone https://github.com/UZ-SLAMLab/ORB_SLAM3.git
 cd ORB_SLAM3
 ```
 
-ORB-SLAM3は新しいC++標準との互換性の問題がある可能性があります。`monotonic_clock`の問題を修正してください：
+ORB-SLAM3は新しいC++標準との互換性の問題がある可能性があります。`monotonic_clock`の問題を修正します：
 
 ```bash
 # Replace monotonic_clock with steady_clock in all source files
@@ -152,7 +152,7 @@ find Examples -name "*.cc" -exec sed -i 's/monotonic_clock/steady_clock/g' {} \;
 ```
 
 :::info
-例えば、`Examples/Stereo/stereo_euroc.cc` では：
+例えば、`Examples/Stereo/stereo_euroc.cc`で：
 
 ```cpp
 // Change from:
@@ -164,7 +164,7 @@ std::chrono::steady_clock::time_point t1 = std::chrono::steady_clock::now();
 
 :::
 
-__Step 4.__ Test whether Pangolin is installed properly:
+__ステップ 4.__ Pangolinが正しくインストールされているかテストします：
 
 ```bash
 ./examples/SimpleDisplay/SimpleDisplay
@@ -175,13 +175,13 @@ __Step 4.__ Test whether Pangolin is installed properly:
     src="https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini2/v_tool.png" />
 </div>
 
-インストールが正しく完了していれば、上記の画像に示されているウィンドウが正常に開けるはずです。
+インストールが正しく完了していれば、上記の画像に示されているようなウィンドウが正常に開くことができます。
 
-__ステップ 5.__ CMakeLists.txtを修正する
+__ステップ 5.__ CMakeLists.txtを修正します
 
-CMakeLists.txtファイルを修正して、プロジェクトをOrbbec SDKと互換性があるようにします。以下の完全なCMakeList.txt設定を直接コピーしてください：
+プロジェクトをOrbbec SDKと互換性があるようにCMakeLists.txtファイルを修正します。以下の完全なCMakeList.txt設定を直接コピーしてください：
 :::info
-修正が必要な箇所：`set(ORBBEC_SDK_PATH "/home/seeed/demo/OrbbecSDK_v2.4.11_202508040936_058db73_linux_aarch64")` を、あなた自身がSDKをインストールしたパスに変更してください。
+修正が必要です：`set(ORBBEC_SDK_PATH "/home/seeed/demo/OrbbecSDK_v2.4.11_202508040936_058db73_linux_aarch64")`を自分でインストールしたSDKのパスに変更してください。
 :::
 <details>
 <summary> CMakeLists.txt </summary>
@@ -745,14 +745,13 @@ endif()
 # target_link_libraries(stereo_inertial_realsense_D435i_old ${PROJECT_NAME})
 
 # endif()
-
 ```
 
 </details>
 
-__ステップ6.__ ORB-SLAM3 RGB-Dモード用のOrbbec Gemini2アダプターを使用するスクリプトを作成する
+__Step 6.__ ORB-SLAM3 RGB-D モード用の Orbbec Gemini2 アダプターを使用するスクリプトを作成する
 
-以下のように`Examples/RGB-D/`ディレクトリの下に`rgbd_orbbec_gemini2_cpp.cc`という名前のファイルを作成します：
+`Examples/RGB-D/` ディレクトリの下に `rgbd_orbbec_gemini2_cpp.cc` という名前のファイルを以下のように作成します：
 
 <details>
 <summary> rgbd_orbbec_gemini2_cpp.cc </summary>
@@ -831,19 +830,19 @@ void orbbec_frame_callback(std::shared_ptr<ob::FrameSet> frameSet) {
     if (frameSet == nullptr) {
         return;
     }
-    
+
     count_im_buffer++;
-    
+
     // Get current timestamp
     double new_timestamp_image = std::chrono::duration_cast<std::chrono::milliseconds>(
         std::chrono::system_clock::now().time_since_epoch()).count() * 1e-3;
-    
+
     // Limit frame rate to 15 FPS to reduce processing load
     if (abs(timestamp_image - new_timestamp_image) < 0.067) { // 1/15 = 0.067 seconds
         count_im_buffer--;
         return;
     }
-    
+
     try {
                     // Process color frame
             auto colorFrame = frameSet->getFrame(OB_FRAME_COLOR);
@@ -852,7 +851,7 @@ void orbbec_frame_callback(std::shared_ptr<ob::FrameSet> frameSet) {
                 uint32_t width = videoFrame->getWidth();
                 uint32_t height = videoFrame->getHeight();
                 OBFormat format = videoFrame->getFormat();
-                
+
                 // Convert to OpenCV Mat
                 if (format == OB_FORMAT_RGB || format == OB_FORMAT_BGR) {
                     uint8_t* data = (uint8_t*)videoFrame->getData();
@@ -860,37 +859,37 @@ void orbbec_frame_callback(std::shared_ptr<ob::FrameSet> frameSet) {
                     if (format == OB_FORMAT_RGB) {
                         cv::cvtColor(imCV, imCV, cv::COLOR_RGB2BGR);
                     }
-                    
+
                     // Resize image for better performance (smaller size for faster processing)
                     cv::resize(imCV, imCV, cv::Size(640, 360));
-                    
+
                     // Add small delay to prevent overwhelming the system
                     std::this_thread::sleep_for(std::chrono::milliseconds(10));
                 }
             }
-        
+
         // Process depth frame
         auto depthFrame = frameSet->getFrame(OB_FRAME_DEPTH);
         if (depthFrame != nullptr) {
             auto videoFrame = depthFrame->as<ob::VideoFrame>();
             uint32_t width = videoFrame->getWidth();
             uint32_t height = videoFrame->getHeight();
-            
+
             uint8_t* data = (uint8_t*)videoFrame->getData();
             // Convert to OpenCV Mat (depth is 16-bit)
             depthCV = cv::Mat(height, width, CV_16U, data);
-            
+
             // Resize depth image for better performance (smaller size for faster processing)
             cv::resize(depthCV, depthCV, cv::Size(640, 360));
         }
-        
+
         timestamp_image = new_timestamp_image;
         image_ready = true;
-        
+
     } catch (const ob::Error& e) {
         std::cerr << "Error processing frames: " << e.what() << std::endl;
     }
-    
+
     lock.unlock();
     cond_image_rec.notify_all();
 }
@@ -919,7 +918,7 @@ int main(int argc, char **argv)
         // Create pipeline using C++ API
         pipeline = std::make_shared<ob::Pipeline>();
         cout << "✓ Pipeline created successfully" << endl;
-        
+
         // Get device info
         auto device = pipeline->getDevice();
         if (device) {
@@ -927,22 +926,22 @@ int main(int argc, char **argv)
             cout << "✓ Device name: " << deviceInfo->getName() << endl;
             cout << "✓ Device serial: " << deviceInfo->getSerialNumber() << endl;
         }
-        
+
         // Create config
         config = std::make_shared<ob::Config>();
-        
+
         // Enable color stream
         config->enableVideoStream(OB_STREAM_COLOR, OB_WIDTH_ANY, OB_HEIGHT_ANY, OB_FPS_ANY, OB_FORMAT_RGB);
         cout << "✓ Color stream enabled" << endl;
-        
+
         // Enable depth stream
         config->enableVideoStream(OB_STREAM_DEPTH, OB_WIDTH_ANY, OB_HEIGHT_ANY, OB_FPS_ANY, OB_FORMAT_Y16);
         cout << "✓ Depth stream enabled" << endl;
-        
+
         // Start pipeline with callback
         pipeline->start(config, orbbec_frame_callback);
         cout << "✓ Orbbec Gemini 2 pipeline started successfully!" << endl;
-        
+
     } catch (const ob::Error& e) {
         cerr << "Failed to initialize Orbbec SDK: " << e.what() << endl;
         return -1;
@@ -950,19 +949,19 @@ int main(int argc, char **argv)
         cerr << "Exception during initialization: " << e.what() << endl;
         return -1;
     }
-    
+
     // Create SLAM system
     ORB_SLAM3::System SLAM(argv[1], argv[2], ORB_SLAM3::System::RGBD, true, 0, "");
     float imageScale = SLAM.GetImageScale();
-    
+
     double timestamp;
     cv::Mat im, depth;
-    
+
     double t_resize = 0.f;
     double t_track = 0.f;
-    
+
     cout << "Starting SLAM system..." << endl;
-    
+
     // Main loop
     while (!SLAM.isShutDown())
     {
@@ -970,18 +969,18 @@ int main(int argc, char **argv)
             std::unique_lock<std::mutex> lk(imu_mutex);
             if (!image_ready)
                 cond_image_rec.wait(lk);
-            
+
             if (count_im_buffer > 1)
                 cout << count_im_buffer - 1 << " dropped frames\n";
             count_im_buffer = 0;
-            
+
             timestamp = timestamp_image;
             im = imCV.clone();
             depth = depthCV.clone();
-            
+
             image_ready = false;
         }
-        
+
         if (imageScale != 1.f)
         {
             int width = im.cols * imageScale;
@@ -989,19 +988,19 @@ int main(int argc, char **argv)
             cv::resize(im, im, cv::Size(width, height));
             cv::resize(depth, depth, cv::Size(width, height));
         }
-        
+
         // Pass the image to the SLAM system
         SLAM.TrackRGBD(im, depth, timestamp);
     }
-    
+
     cout << "System shutdown!" << endl;
-    
+
     // Cleanup
     if (pipeline) {
         pipeline->stop();
         cout << "✓ Pipeline stopped" << endl;
     }
-    
+
     return 0;
 }
 
@@ -1009,7 +1008,7 @@ int main(int argc, char **argv)
 
 </details>
 
-__Step 7.__ Build ORB-SLAM3
+__Step 7.__ ORB-SLAM3 をビルドする
 
 ```bash
 chmod +x build.sh
@@ -1019,10 +1018,10 @@ chmod +x build.sh
 ## カメラキャリブレーション
 
 <div style={{ textAlign: "justify" }}>
-ORB-SLAM3を実行する前に、カメラのパラメータ設定を取得するためにカメラをキャリブレーションする必要があります。ここでは、ROSが提供するカメラキャリブレーションツールを使用してカメラをキャリブレーションし、そのパラメータを取得する方法を説明します。
+ORB-SLAM3 を実行する前に、カメラのパラメータ設定を取得するためにカメラをキャリブレーションする必要があります。ここでは、ROS が提供するカメラキャリブレーションツールを使用してカメラをキャリブレーションし、そのパラメータを取得する方法を説明します。
 </div>
 
-__ステップ 1.__ Orbbec ROS2 ドライバーをインストール
+__Step 1.__ Orbbec ROS2 ドライバーをインストールする
 
 ```bash
 mkdir -p ~/ros2_ws/src
@@ -1052,22 +1051,21 @@ ros2 launch orbbec_camera gemini2.launch.py
 ```
 
 :::note
-カメラデータトピックが正常に公開されているかを観察することで、カメラノードが正常に起動できるかどうかを確認できます。
+カメラデータトピックが正常にパブリッシュされているかを観察することで、カメラノードが正常に起動できるかを確認できます。
 <div align="center">
     <img width={1000}
     src="https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini2/camera_topic.png" />
 </div>
 :::
-
 __ステップ 2.__ カメラキャリブレーションパッケージのインストール
 
 ```bash
 sudo apt install ros-humble-camera-calibration
 ```
 
-__ステップ 3.__ キャリブレーション用チェッカーボードのダウンロード
+__ステップ 3.__ キャリブレーションチェッカーボードのダウンロード
 
-[Checkerboard Collection](https://markhedleyjones.com/media/calibration-checkerboard-collection/Checkerboard-A4-25mm-8x6.pdf)からキャリブレーション用チェッカーボードをダウンロードして印刷してください。
+[Checkerboard Collection](https://markhedleyjones.com/media/calibration-checkerboard-collection/Checkerboard-A4-25mm-8x6.pdf)からキャリブレーションチェッカーボードをダウンロードして印刷してください。
 
 __ステップ 4.__ カメラキャリブレーションの実行
 
@@ -1081,11 +1079,11 @@ ros2 run camera_calibration cameracalibrator --size 8x6 --square 0.025 \
 
 - `--size 8x6` は内側のコーナー数を指します（8×6 = 9×7グリッドの48コーナー）
 - `--square 0.025` は正方形のサイズをメートル単位で指します（25mm）
-- カメラを動かして異なる角度から画像をキャプチャします
+- 異なる角度から画像を撮影するためにカメラを動かしてください
 
 :::
 
-異なる角度から画像を収集し、カメラパラメータを自動計算し、キャリブレーションデータをツールチップに保存します。
+異なる角度から画像を収集し、カメラパラメータを自動的に計算し、キャリブレーションデータをツールチップに保存します。
 <div align="center">
     <img width={1000}
     src="https://files.seeedstudio.com/wiki/robotics/Sensor/Camera/Orbbec_Gemini2/cal_tool.png" />
@@ -1098,7 +1096,7 @@ ros2 run camera_calibration cameracalibrator --size 8x6 --square 0.025 \
 
 __ステップ 5.__ カメラYAMLファイルの設定
 
-ORB-SLAM3プロジェクトの`Examples/RGB-D/`フォルダ下に、Orbbec Gemini2カメラ用のパラメータ設定ファイル`Orbbec_Gemini2.yaml`を作成します。
+ORB-SLAM3プロジェクトの`Examples/RGB-D/`フォルダ下に、Orbbec Gemini2カメラ用の`Orbbec_Gemini2.yaml`という名前のパラメータ設定ファイルを作成します。
 
 <details>
 <summary> Orbbec_Gemini2.yaml </summary>
@@ -1208,7 +1206,7 @@ export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 
 ## 技術サポート & 製品ディスカッション
 
-私たちの製品をお選びいただき、ありがとうございます！私たちは、お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供しています。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルを用意しています。
+弊社製品をお選びいただきありがとうございます！お客様の製品体験が可能な限りスムーズになるよう、さまざまなサポートを提供いたします。異なる好みやニーズに対応するため、複数のコミュニケーションチャンネルをご用意しています。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
