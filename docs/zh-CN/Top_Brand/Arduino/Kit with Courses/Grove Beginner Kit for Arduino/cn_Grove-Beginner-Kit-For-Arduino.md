@@ -36,21 +36,21 @@ Grove Arduino 初学者套件是最适合初学者的 Arduino 初学者套件之
 
 **注意：** 尺寸 - 17.69 *11.64* 1.88cm
 
-1. **[Grove - LED](https://wiki.seeedstudio.com/Grove-Red_LED/)：** 简单 LED 模块
-2. **[Grove - 蜂鸣器](https://wiki.seeedstudio.com/Grove-Buzzer/)：** 压电蜂鸣器
-3. **[Grove - OLED 显示屏 0.96"](https://wiki.seeedstudio.com/Grove-OLED-Display-0.96-SSD1315/)：** 128×64 点分辨率，高亮度，自发光和高对比度，紧凑设计的大屏幕，低功耗。
-4. **[Grove - 按钮](https://wiki.seeedstudio.com/Grove-Button/)：** 瞬时按钮
-5. **[Grove - 旋转电位器](https://wiki.seeedstudio.com/Grove-Rotary_Angle_Sensor/)：** 可调电位器
-6. **[Grove - 光线传感器](https://wiki.seeedstudio.com/Grove-Light_Sensor/)：** 检测周围光线强度
-7. **[Grove - 声音传感器](https://wiki.seeedstudio.com/Grove-Sound_Sensor/)：** 检测周围声音强度
-8. **[Grove - 温湿度传感器](https://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor/)：** 检测周围温度和湿度值。旧版本使用 DHT11 传感器，2025.10 之后的版本使用 DHT20 传感器。
+1. **[Grove - LED](https://wiki.seeedstudio.com/cn/Grove-Red_LED/)：** 简单 LED 模块
+2. **[Grove - 蜂鸣器](https://wiki.seeedstudio.com/cn/Grove-Buzzer/)：** 压电蜂鸣器
+3. **[Grove - OLED 显示屏 0.96"](https://wiki.seeedstudio.com/cn/Grove-OLED-Display-0.96-SSD1315/)：** 128×64 点分辨率，高亮度，自发光和高对比度，紧凑设计的大屏幕，低功耗。
+4. **[Grove - 按钮](https://wiki.seeedstudio.com/cn/Grove-Button/)：** 瞬时按钮
+5. **[Grove - 旋转电位器](https://wiki.seeedstudio.com/cn/Grove-Rotary_Angle_Sensor/)：** 可调电位器
+6. **[Grove - 光线传感器](https://wiki.seeedstudio.com/cn/Grove-Light_Sensor/)：** 检测周围光线强度
+7. **[Grove - 声音传感器](https://wiki.seeedstudio.com/cn/Grove-Sound_Sensor/)：** 检测周围声音强度
+8. **[Grove - 温湿度传感器](https://wiki.seeedstudio.com/cn/Grove-TemperatureAndHumidity_Sensor/)：** 检测周围温度和湿度值。旧版本使用 DHT11 传感器，2025.10 之后的版本使用 DHT20 传感器。
 9. **Grove - 气压传感器：** 检测周围大气压力
 
-- 旧版本使用 [BMP280](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BMP280/)。
-- 2025年10月的新版本使用 [SPA06-003](https://wiki.seeedstudio.com/grove_barometer_sensor_spa06_003)。
+- 旧版本使用 [BMP280](https://wiki.seeedstudio.com/cn/Grove-Barometer_Sensor-BMP280/)。
+- 2025年10月的新版本使用 [SPA06-003](https://wiki.seeedstudio.com/cn/grove_barometer_sensor_spa06_003)。
 
-10. **[Grove - 3轴加速度计](https://wiki.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR)：** 检测物体加速度
-11. **[Seeeduino Lotus](https://wiki.seeedstudio.com/Seeeduino_Lotus/)：** 带 Grove 接口的 Arduino 兼容板
+10. **[Grove - 3轴加速度计](https://wiki.seeedstudio.com/cn/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR)：** 检测物体加速度
+11. **[Seeeduino Lotus](https://wiki.seeedstudio.com/cn/Seeeduino_Lotus/)：** 带 Grove 接口的 Arduino 兼容板
 
 **注意：**
         默认情况下，Grove 模块通过 PCB 邮票孔连接到 Seeeduino。这意味着如果没有断开，您无需使用 Grove 线缆连接。默认引脚如下：
@@ -1013,7 +1013,7 @@ Arduino环境可以通过使用库来扩展，就像大多数其他编程平台�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/img/zip.jpg" style={{width:500, height:'auto'}}/></div>
 
-更多信息，请访问[如何安装Arduino库](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)。
+更多信息，请访问[如何安装Arduino库](https://wiki.seeedstudio.com/cn/How_to_install_Arduino_Library/)。
 
 涉及的组件
 
@@ -2006,7 +2006,7 @@ if (soundState > 500 || lightState < 200) {
 
 如果您不想自己进行原理图或布局工作，但想将基于 Seeed 模块的原型转换为集成产品，我们强烈建议您尝试 Upverter。
 
-请访问 [**Grove 初学者套件 Arduino Upverter 指南**](https://wiki.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-Upverter-Guide/) 了解更多信息。
+请访问 [**Grove 初学者套件 Arduino Upverter 指南**](https://wiki.seeedstudio.com/cn/Grove-Beginner-Kit-for-Arduino-Upverter-Guide/) 了解更多信息。
 
 ### PCB 服务
 

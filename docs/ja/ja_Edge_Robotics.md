@@ -61,13 +61,17 @@ last_update:
     <a href="/ja/control_robotic_arm_via_phospho/" className="nav-item">
       <span className="text">Phospho Lerobot</span>
     </a>
-    <a href="/ja//training_soarm101_policy_with_isaacLab/" className="nav-item">
+    <a href="/ja/training_soarm101_policy_with_isaacLab/" className="nav-item">
     <span className="text">So Arm強化学習</span>
     <span className="tag recommended">New</span>
     </a>
     <a href="/ja/simulate_soarm101_by_leisaac/" className="nav-item">
       <span className="text">SO100 Arm with IsaacSim</span>
       <span className="tag recommended">New</span>
+    </a>
+    <a href="/ja/fine_tune_gr00t_n1.5_for_lerobot_so_arm_and_deploy_on_jetson_thor/" className="nav-item">
+        <span className="text">SO101 Arm with NVIDIA's GR00T</span>
+        <span className="tag recommended">New</span>
     </a>
 </div>
 
@@ -107,6 +111,15 @@ last_update:
     </a>
 </div>
 
+
+## 🦀 エンドエフェクタ
+
+<div className="card-container">
+    <a href="/ja/dm_gripper/" className="nav-item">
+      <span className="text">DMグリッパー</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
 
 </div>
 </div>
@@ -245,7 +258,7 @@ last_update:
 <a href="/ja/install_isaaclab/" className="nav-item">
   <span className="text">Isaac Labインストール</span>
 </a>
-<a href="/ja//training_soarm101_policy_with_isaacLab/" className="nav-item">
+<a href="/ja/training_soarm101_policy_with_isaacLab/" className="nav-item">
   <span className="text">So Arm強化学習</span>
   <span className="tag recommended">New</span>
 </a>
@@ -304,6 +317,7 @@ html[data-theme='dark'] .quick-nav-container {
   padding: 0.8rem 1.5rem;
   border-radius: 12px;
   display: flex;
+  margin: 6px 6px; /* 上下6px，左右6px */
   flex-direction: column;
   align-items: center;
   text-decoration: none !important;
@@ -356,8 +370,7 @@ html[data-theme='dark'] .nav-item {
 }
 
 /* Dark模式 - 悬浮動画 */
-html[data-theme='dark'] .nav-item:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+html[data-theme='dark'] .nav-item:hover {  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
   color: white;
 }
 
@@ -369,7 +382,7 @@ html[data-theme='dark'] .nav-item:hover {
   height: 100%;
 }
 
-/* 響応式設計 */
+/* レスポンシブデザイン */
 @media (max-width: 768px) {
   .quick-nav {
     flex-direction: column;
@@ -388,8 +401,9 @@ html[data-theme='dark'] .nav-item:hover {
 `}</style>
 
 <style>{`
-/* 内容卡片増強版様式 */
-.nav-grid {  display: block;
+/* コンテンツカード強化版スタイル */
+.nav-grid {
+  display: block;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 2rem;
@@ -406,7 +420,7 @@ html[data-theme='dark'] .nav-item:hover {
   z-index: 1;
 }
 
-/* Dark模式 - 内容卡片 */
+/* Darkモード - コンテンツカード */
 html[data-theme='dark'] .category-card {
   background:rgb(30, 30, 32);
   box-shadow: 0 4px 6px rgba(0,0,0,0.4);
@@ -417,7 +431,7 @@ html[data-theme='dark'] .category-card {
   margin-bottom: 2rem;
 }
 
-/* 分类色标 */
+/* カテゴリー色標 */
 .category-card::before {
   content: "";
   position: absolute;
@@ -432,13 +446,13 @@ html[data-theme='dark'] .category-card {
 .sensors::before { background: linear-gradient(to bottom, #ff6b6b, #ff8e8e); }
 .software::before { background: linear-gradient(to bottom, #f5a623, #f5c623); }
 
-/* 悬浮特効 */
+/* ホバー特効 */
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
-/* Dark模式 - 悬浮特効 */
+/* Darkモード - ホバー特効 */
 html[data-theme='dark'] .category-card:hover {
   box-shadow: 0 12px 20px rgba(0,0,0,0.6);
 }
@@ -454,7 +468,7 @@ html[data-theme='dark'] .category-card:hover {
   z-index: -1;
 }
 
-/* Dark模式 - 悬浮光効 */
+/* Darkモード - ホバー光効 */
 html[data-theme='dark'] .category-card:hover::after {
   background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
 }
@@ -468,7 +482,7 @@ html[data-theme='dark'] .category-card:hover::after {
   color: #333;
 }
 
-/* Dark模式 - リンク */
+/* Darkモード - リンク */
 html[data-theme='dark'] .category-card a {
   color: #d1d5db;
 }
@@ -478,7 +492,7 @@ html[data-theme='dark'] .category-card a {
   transform: translateX(5px);
 }
 
-/* Dark模式 - リンクホバー */
+/* Darkモード - リンクホバー */
 html[data-theme='dark'] .category-card a:hover {
   color: #60a5fa;
 }
@@ -494,7 +508,7 @@ html[data-theme='dark'] .category-card a:hover {
   transition: width 0.3s;
 }
 
-/* Dark模式 - リンク下線 */
+/* Darkモード - リンク下線 */
 html[data-theme='dark'] .category-card a::after {
   background: #60a5fa;
 }
@@ -504,7 +518,7 @@ html[data-theme='dark'] .category-card a::after {
 }
 
 .card-container {
-  margin-bottom: 1.5rem; /* 原为0.1rem */
+  margin-bottom: 1.5rem; /* 元は0.1rem */
 }
 
 /* タグスタイル強化 */
@@ -522,7 +536,7 @@ html[data-theme='dark'] .category-card a::after {
   box-shadow: 0 2px 4px rgba(0,100,0,0.1);
 }
 
-/* Dark模式 - Stableタグ */
+/* Darkモード - Stableタグ */
 html[data-theme='dark'] .stable {
   background: #065f46;
   color: #a7f3d0;
@@ -535,7 +549,7 @@ html[data-theme='dark'] .stable {
   box-shadow: 0 2px 4px rgba(200,0,0,0.1);
 }
 
-/* Dark模式 - Recommendedタグ */
+/* Darkモード - Recommendedタグ */
 html[data-theme='dark'] .recommended {
   background: #7f1d1d;
   color: #fca5a5;
@@ -547,7 +561,7 @@ html[data-theme='dark'] .recommended {
   box-shadow: 0 6px 10px rgba(0,0,0,0.1);
 }
 
-/* Dark模式 - クリック効果 */
+/* Darkモード - クリック効果 */
 html[data-theme='dark'] .category-card:active {
   box-shadow: 0 6px 10px rgba(0,0,0,0.4);
 }
@@ -560,11 +574,11 @@ html[data-theme='dark'] .category-card:active {
 
   .category-card {
     width: 100%;
-    margin-top: 0.5rem; /* カードをタイトルに密着 */
+    margin-top: 0.5rem; /* カードがタイトルに密着 */
   }
 }
 
-/* Dark模式 - タイトル文字 */
+/* Darkモード - タイトル文字 */
 html[data-theme='dark'] h1,
 html[data-theme='dark'] h2,
 html[data-theme='dark'] h3,
@@ -574,16 +588,17 @@ html[data-theme='dark'] h6 {
   color: #f9fafb;
 }
 
-/* Dark模式 - 本文文字 */
+/* Darkモード - 本文文字 */
 html[data-theme='dark'] p,
 html[data-theme='dark'] li,
 html[data-theme='dark'] strong {
   color: #e5e7eb;
 }
 
-/* Dark模式 - 引用ブロック */
+/* Darkモード - 引用ブロック */
 html[data-theme='dark'] blockquote {
   color: #9ca3af;
   border-left-color: #4b5563;
 }
 `}</style>
+

@@ -1,5 +1,5 @@
 ---
-description: このwikiはStarai Arm Manipulator - ROS2 MoveItガイドを提供します。
+description: このwikiは、Starai Arm Manipulator - ROS2 MoveItガイドを提供します。
 title: ROS2 MoveItでのStarai Arm
 keywords:
 - Moveit
@@ -31,16 +31,16 @@ last_update:
 ## 製品紹介
 
 1. **オープンソース & 二次開発が容易**
-    [Fashion Star Robotics](https://fashionrobo.com/)が提供するこのサーボモーターシリーズは、オープンソースで簡単にカスタマイズ可能な6+1自由度ロボットアームソリューションを提供します。
+    [Fashion Star Robotics](https://fashionrobo.com/)が提供するこのシリーズのサーボモーターは、オープンソースで簡単にカスタマイズ可能な6+1自由度ロボットアームソリューションを提供します。
 
 2. **様々なペイロードを持つデュアルアームシステム**
-    Violinはリーダーロボットアームとして機能します。アーム範囲の70%において、フォロワーアームViolaは300gの動作ペイロードを持ち、フォロワーアームCelloは750gの動作ペイロードを持ちます。
+    Violinはリーダーロボットアームとして機能します。アーム範囲の70%において、フォロワーアームViolaの動作ペイロードは300g、フォロワーアームCelloの動作ペイロードは750gです。
 
 3. **ROS2、Moveit2、Isaac Simをサポート**
     ロボットアームデータトピックの発行・購読とロボットアームの制御にROS2をサポートし、逆運動学計算にMoveIt2、Isaac Simでのシミュレーションもサポートします。
 
 4. **LeRobotプラットフォーム統合サポート**
-    [LeRobotプラットフォーム](https://github.com/huggingface/lerobot)との統合のために特別に設計されています。このプラットフォームは、データ収集、シミュレーション、トレーニング、デプロイメントを含む実世界のロボティクスタスクにおける模倣学習のためのPyTorchモデル、データセット、ツールを提供します。
+    [LeRobotプラットフォーム](https://github.com/huggingface/lerobot)との統合に特化して設計されています。このプラットフォームは、データ収集、シミュレーション、トレーニング、デプロイメントを含む実世界のロボティクスタスクにおける模倣学習のためのPyTorchモデル、データセット、ツールを提供します。
 
 5. **オープンソースSDK**
      PythonとC++ SDK開発をサポート
@@ -55,7 +55,7 @@ last_update:
     環境設定、インストールとデバッグガイド、カスタム把持タスクの例を含む包括的なオープンソース学習リソースを提供し、ユーザーが迅速に開始してロボットアプリケーションを開発できるよう支援します。
 
 9. **Nvidiaプラットフォーム互換性**
-    Nvidia Jetsonプラットフォーム経由でのデプロイメントがサポートされています。
+    Nvidia Jetsonプラットフォーム経由でのデプロイメントをサポートします。
 
 ## 仕様
 
@@ -65,7 +65,7 @@ last_update:
 | リーチ                | 470mm                                             | 470mm                                             | 670mm |
 | スパン                 | 940mm                                             | 940mm                                             | 1340mm |
 | 再現性        | 2mm                                               | -                                                 | 1mm  |
-| 動作ペイロード      | 300g（リーチの70%）                            | -                                                 |  750g（リーチの70%）   |
+| 動作ペイロード      | 300g（リーチの70%時）                            | -                                                 |  750g（リーチの70%時）   |
 | サーボ               | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 | RX8-U50H-M x2<br/>RA8-U25H-M x4<br/>RA8-U26H-M x1 |RX18-U100H-M x3<br/> RX8-U50H-M x3<br/> RX8-U51H-M x1|
 | パラレルグリッパーキット  | ✅                                                 | -                                                 | ✅   |
 | 手首回転         | Yes                                               | Yes                                               | Yes |
@@ -136,32 +136,100 @@ echo "source ~/starai_ws/install/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-## Starai Arm MoveIt2シミュレーションスクリプト
+
+## Viola
+### Starai Arm MoveIt2シミュレーションスクリプト（オプション）
 
 ```bash
-ros2 launch viola_configure demo.launch.py 
+ros2 launch viola_moveit_config demo.launch.py 
 ```
 
-## 実際のロボットアームの使用
+### 実際のロボットアームの使用
 
-### ターミナル1：アーム制御ノードの開始
+### ステップ1：アーム制御ノードの開始
 
-アームはゼロ位置に移動します。
+アームハードウェアドライバーを開始すると、アームはゼロ位置に移動します。
 
 ```bash
-ros2 run robo_driver driver
+ros2 launch viola_moveit_config driver.launch.py
 ```
 
-### コントローラーノードの開始
+### ステップ2：Moveit2の開始
 
 ```bash
-ros2 run viola_controller controller
+ros2 launch viola_moveit_config moveit_write_read.launch.py
 ```
 
-### Moveit2の開始
+### エンドエフェクターポーズ読み書きデモ
 
 ```bash
-ros2 launch viola_configure actual_robot_demo.launch.py
+ros2 run arm_moveit_write topic_publisher 
+```
+
+## Cello
+### Starai Arm MoveIt2シミュレーションスクリプト（オプション）
+
+```bash
+ros2 launch cello_moveit_config demo.launch.py 
+```
+
+### 実際のロボットアームの使用
+
+### ステップ1：アーム制御ノードの開始
+
+アームハードウェアドライバーを開始すると、アームはゼロ位置に移動します。
+
+```bash
+ros2 launch cello_moveit_config driver.launch.py
+```
+
+### ステップ2：Moveit2の開始
+
+```bash
+ros2 launch cello_moveit_config actual_robot_demo.launch.py
+```
+
+### エンドエフェクターポーズ読み書きデモ
+
+```bash
+ros2 launch cello_moveit_config moveit_write_read.launch.py
+```
+
+## 位置と姿勢トピック送信ノードデモ
+
+ここで `src/arm_moveit_write/src/topic_publisher.cpp` を更新します
+
+```bash
+    // // viola
+    // dataset1_ = { 
+    //   {0.003, -0.204, 0.274},       // position
+    //   {0.014, 0.717, 0.017, 0.696}, // orientation
+    //   "open"                         // gripper_state
+    // };
+    // dataset2_ = {
+    //   {-0.00, -0.34, 0.177},        // position
+    //   {0.0, 0.7071, 0.0, 0.7071},   // orientation
+    //   "close"                        // gripper_state
+    // };
+
+    // cello
+    dataset1_ = {
+      {-0.278, 0.000, 0.438},       // position
+      {0.707, 0.000, -0.707, 0.000}, // orientation
+      "open"                         // gripper_state
+    };
+    dataset2_ = {
+      {-0.479, -0.000, 0.369},        // position
+      {0.707, -0.000, -0.707, 0.000},   // orientation
+      "close"                        // gripper_state
+    }
+
+```
+
+```bash
+colcon build
+source install/setup.sh
+ros2 run arm_moveit_write topic_publisher 
 ```
 
 <div class="video-container">

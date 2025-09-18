@@ -26,7 +26,7 @@ EdgeBox-RPi-200 系列是基于树莓派的一体化工业边缘计算控制器�
 </div>
 
 :::tip在您继续之前：
-由于我们已经更新了 2023 年 3 月 30 日之后发布批次的树莓派计算模块 4 的 EEPROM，启动顺序已更改为 `NVME > USB-MSD > BCM-USB-MSD > SD CARD/eMMC > NETWORK > RESTART`，更多信息请访问[更新计算模块 4 的 EEPROM](/Raspberry_pi_CM4_update_eeprom/) 页面。
+由于我们已经更新了 2023 年 3 月 30 日之后发布批次的树莓派计算模块 4 的 EEPROM，启动顺序已更改为 `NVME > USB-MSD > BCM-USB-MSD > SD CARD/eMMC > NETWORK > RESTART`，更多信息请访问[更新计算模块 4 的 EEPROM](/cn/Raspberry_pi_CM4_update_eeprom/) 页面。
 
 **如果您在 2023 年 3 月 30 日之前购买了 Edgebox-RPI-200，并且您想按照指南更新 EEPROM 或在 Edgebox-RPI-200 上刷写操作系统，您将需要一个最小开发板，该开发板包含为树莓派 CM4 选择启动模式的功能，[双千兆以太网网卡载板](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html)非常适合此用途。**
 
@@ -63,7 +63,7 @@ import TabItem from '@theme/TabItem';
 我们已经备份了原始操作系统镜像并在 Sourceforge 上发布了文件，您可以访问[此页面](https://sourceforge.net/projects/edgebox-rpi-200/files/edgeboxrpi200.img/download)来获取镜像文件。
 :::
 
-请按照[此处的步骤](https://wiki.seeedstudio.com/Raspberry_Pi_3_Model_B/)了解如何使用[树莓派官方镜像工具](https://www.raspberrypi.com/software/)设置可启动的 Raspbian 操作系统设备
+请按照[此处的步骤](https://wiki.seeedstudio.com/cn/Raspberry_Pi_3_Model_B/)了解如何使用[树莓派官方镜像工具](https://www.raspberrypi.com/software/)设置可启动的 Raspbian 操作系统设备
 
 #### 从 USB 启动
 
@@ -135,7 +135,7 @@ fsck.repair=yes rootwait quiet splash plymouth.ignore-serial-consoles
 
 请插入电源并等待设备启动。
 
-然后请使用 SSH 访问 EdgeBox-RPI-200，这里是[指南](/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh)。
+然后请使用 SSH 访问 EdgeBox-RPI-200，这里是[指南](/cn/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh)。
 
 一旦获得 SSH 访问权限，您可以按照以下步骤操作：
 

@@ -305,7 +305,7 @@ last_update:
       <td align="center">1.95μA</td>
    </tr>
    <tr>
-      <td colspan="13" style={{textAlign: 'center', backgroundColor: '#007bff', padding: '10px'}}><a href="https://wiki.seeedstudio.com/xiao_topic_page/" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 兼容项目</a></td>
+      <td colspan="13" style={{textAlign: 'center', backgroundColor: '#007bff', padding: '10px'}}><a href="https://wiki.seeedstudio.com/cn/xiao_topic_page/" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 兼容项目</a></td>
    </tr>
    <tr>
       <th>Arduino</th>
@@ -408,8 +408,8 @@ last_update:
         <td>Maker100-Eco (Economy) Robotics, IoT and TinyML Machine Learning course<br/>由 Jeremy Ellis 提供</td>
       </tr>
    <tr>
-        <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://wiki.seeedstudio.com/xiao_topic_page/" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 Wiki</a></td>
-        <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://wiki.seeedstudio.com/XIAO-Kit-Courses/" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 课程</a></td>
+        <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://wiki.seeedstudio.com/cn/xiao_topic_page/" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 Wiki</a></td>
+        <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://wiki.seeedstudio.com/cn/XIAO-Kit-Courses/" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 课程</a></td>
         <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://fabacademy.org/2020/labs/leon/students/adrian-torres/fabxiao.html" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 Fab-Xiao</a></td>
         <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://www.youtube.com/watch?v=ZsQ0-jXdnRY" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 第一部分</a><br/><a href="https://www.youtube.com/watch?v=-1EP3iqYYdU" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 第二部分</a></td>
         <td style={{textAlign: 'center', backgroundColor: '#007bff', padding: '5px'}}><a href="https://github.com/hpssjellis/maker100-eco" style={{color: 'white', textDecoration: 'none', fontWeight: 'bold'}}>📚 GitHub</a></td>  

@@ -61,13 +61,17 @@ last_update:
     <a href="/control_robotic_arm_via_phospho/" className="nav-item">
       <span className="text">Phospho Lerobot</span>
     </a>
-    <a href="//training_soarm101_policy_with_isaacLab/" className="nav-item">
+    <a href="/training_soarm101_policy_with_isaacLab/" className="nav-item">
     <span className="text">So Arm Reinforcement Learning</span>
     <span className="tag recommended">New</span>
     </a>
     <a href="/simulate_soarm101_by_leisaac/" className="nav-item">
       <span className="text">SO100 Arm with IsaacSim</span>
       <span className="tag recommended">New</span>
+    </a>
+    <a href="/fine_tune_gr00t_n1.5_for_lerobot_so_arm_and_deploy_on_jetson_thor/" className="nav-item">
+        <span className="text">SO101 Arm with NVIDIA's GR00T</span>
+        <span className="tag recommended">New</span>
     </a>
 </div>
 
@@ -107,6 +111,15 @@ last_update:
     </a>
 </div>
 
+
+## 🦀 End Effectors
+
+<div className="card-container">
+    <a href="/dm_gripper/" className="nav-item">
+      <span className="text">DM Gripper</span>
+      <span className="tag recommended">New</span>
+    </a>
+</div>
 
 </div>
 </div>
@@ -245,7 +258,7 @@ last_update:
 <a href="/install_isaaclab/" className="nav-item">
   <span className="text">Isaac Lab Installation</span>
 </a>
-<a href="//training_soarm101_policy_with_isaacLab/" className="nav-item">
+<a href="/training_soarm101_policy_with_isaacLab/" className="nav-item">
   <span className="text">So Arm Reinforcement Learning</span>
   <span className="tag recommended">New</span>
 </a>
@@ -304,6 +317,7 @@ html[data-theme='dark'] .quick-nav-container {
   padding: 0.8rem 1.5rem;
   border-radius: 12px;
   display: flex;
+  margin: 6px 6px; /* 上下6px，左右6px */
   flex-direction: column;
   align-items: center;
   text-decoration: none !important;
@@ -588,3 +602,4 @@ html[data-theme='dark'] blockquote {
   border-left-color: #4b5563;
 }
 `}</style>
+

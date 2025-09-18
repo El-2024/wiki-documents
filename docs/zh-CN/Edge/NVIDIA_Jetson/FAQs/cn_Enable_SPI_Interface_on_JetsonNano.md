@@ -25,7 +25,7 @@ Jetson Nano 具有两个与 GPIO 复用的 SPI 接口，但默认情况下 SPI �
 ## 修改 spi 并刷写
 
 首先，您需要将 Jetson Nano 上的 `REC` 引脚和 `GND` 引脚短接，以进入恢复模式。然后，在您的主机 PC 上，准备您打算刷写的镜像。但是，在完成 SPI 修改之前，不要将其刷写到 Jetson Nano。
-您可以参考 [**J101 刷写 JetPack 教程**](https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack/#:~:text=On%20the%20Linux%20host%20PC%2C%20we%20need%20to%20open%20a%20browser%20and%20go%20the%20Jetson%20Linux%20Archive.%20First%20we%20should%20check%20if%20the%20version%20of%20Jetson%20Linux%20is%20supported%20our%20reComputer%20Jetson%20module)，并确保仅使用命令行方法。
+您可以参考 [**J101 刷写 JetPack 教程**](https://wiki.seeedstudio.com/cn/reComputer_J1010_J101_Flash_Jetpack/#:~:text=On%20the%20Linux%20host%20PC%2C%20we%20need%20to%20open%20a%20browser%20and%20go%20the%20Jetson%20Linux%20Archive.%20First%20we%20should%20check%20if%20the%20version%20of%20Jetson%20Linux%20is%20supported%20our%20reComputer%20Jetson%20module)，并确保仅使用命令行方法。
 
 从 [NIVIDIA DEVELOPER](https://developer.nvidia.com/embedded/jetson-linux-archive#:~:text=Previous%20Jetson%20Linux%20Versions) 下载您选择的版本，包括 **BSP** 和 **Simple Root Filesystem**。
 在本指南中，我们以 **L4T 32.7.2** 为例。

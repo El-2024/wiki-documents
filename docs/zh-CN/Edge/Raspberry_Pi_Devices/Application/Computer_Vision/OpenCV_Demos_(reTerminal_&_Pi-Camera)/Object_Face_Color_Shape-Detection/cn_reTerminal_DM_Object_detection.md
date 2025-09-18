@@ -42,18 +42,18 @@ last_update:
    <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html?queryID=26220f25bcce77bc420c9c03059787c0&objectID=4904&indexName=bazaar_retailer_products" target="_blank">
               <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
           </a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/reTerminal-piCam/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/cn/reTerminal-piCam/" target="_blank" rel="noopener noreferrer"><strong><span><font color={'FFFFFF'} size={"4"}>📚 了解更多</font></span></strong></a></div></td>
         </tr>
     </table>
 </div>
 
 ### 软件准备
 
-我们建议从官方网站安装 **Bullesye** 或 **Bookworm** 版本的 Raspberry Pi 64 位操作系统。如果您希望安装新的 Raspbian 操作系统，请按照此[**指南**](https://wiki.seeedstudio.com/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)中概述的步骤进行操作。
+我们建议从官方网站安装 **Bullesye** 或 **Bookworm** 版本的 Raspberry Pi 64 位操作系统。如果您希望安装新的 Raspbian 操作系统，请按照此[**指南**](https://wiki.seeedstudio.com/cn/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)中概述的步骤进行操作。
 
 :::note
 
-我们强烈建议查看我们之前关于[**OpenCV 入门**](https://wiki.seeedstudio.com/reTerminal_DM_opencv/)的教程，因为本教程是我们系列教程的延续。本指南专门针对 **Bulleseye OS** 和 **Bookworm OS**。请注意安装依赖项，因为这里概述了两种不同的方法。
+我们强烈建议查看我们之前关于[**OpenCV 入门**](https://wiki.seeedstudio.com/cn/reTerminal_DM_opencv/)的教程，因为本教程是我们系列教程的延续。本指南专门针对 **Bulleseye OS** 和 **Bookworm OS**。请注意安装依赖项，因为这里概述了两种不同的方法。
 
 :::
 
@@ -73,7 +73,7 @@ TinyML 通过使轻量级模型能够在资源最少的边缘设备上运行，�
 cd Seeed_Python_ReTerminal/samples/Opencv_and_piCam/ObjectDetection
  ```
 
-确保安装依赖项和 EfficientDet 模型。如果您已经在我们的[**第一个教程**](https://wiki.seeedstudio.com/Getting-start-opencv/)中完成了这一步，就无需担心。
+确保安装依赖项和 EfficientDet 模型。如果您已经在我们的[**第一个教程**](https://wiki.seeedstudio.com/cn/Getting-start-opencv/)中完成了这一步，就无需担心。
 
  ```sh
 sh setup.sh

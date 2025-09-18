@@ -43,7 +43,7 @@ reComputer R1100シリーズは、**データ取得とプロセス監視、自�
 
 ### NVMEにOSをフラッシュ
 
-この[リンク](https://wiki.seeedstudio.com/recomputer_r1100_assembly_guide/#installing-an-ssd)を参照し、M.2スロットに挿入してください。
+この[リンク](https://wiki.seeedstudio.com/ja/recomputer_r1100_assembly_guide/#installing-an-ssd)を参照し、M.2スロットに挿入してください。
 
 ### eMMCから起動してeepromを更新
 

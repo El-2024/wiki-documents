@@ -55,7 +55,7 @@ EdgeBox-RPI-200 系列是基于 Raspberry Pi 的一体化工业边缘计算控�
 
 要在 EdgeBox-RPI-200 上刷写 balenaOS，您需要拆解设备并取出 Raspberry Pi Compute Module 4。
 
-**步骤 1：** 将 EdgeBox-RPI-200 中的 CM4 放入[双千兆以太网网卡载板](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html)，请按照[wiki 页面](/Raspberry_pi_CM4_update_eeprom/#put-cm4-emmc-storage-into-usb-mass-storage-mode)了解如何使用[双千兆以太网网卡载板](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html)将 CM4 eMMC 存储器置于 USB 大容量存储模式。
+**步骤 1：** 将 EdgeBox-RPI-200 中的 CM4 放入[双千兆以太网网卡载板](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html)，请按照[wiki 页面](/cn/Raspberry_pi_CM4_update_eeprom/#put-cm4-emmc-storage-into-usb-mass-storage-mode)了解如何使用[双千兆以太网网卡载板](https://www.seeedstudio.com/Rapberry-Pi-CM4-Dual-GbE-Carrier-Board-p-4874.html)将 CM4 eMMC 存储器置于 USB 大容量存储模式。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/102110497/latest-board/boot-pins.png" alt="pir" width={600} height="auto" /></p>
 

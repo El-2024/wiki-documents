@@ -9,11 +9,11 @@ keywords:
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp
 slug: /ja/lerobot_so100m_new
 last_update:
-  date: 8/20/2025
+  date: 9/15/2025
   author: LiShanghang
 ---
 
-# 最新版のLerobotでSO-ARM100およびSO-ARM101ロボットアームを使用する方法
+# LeRobot を使用した SO-ARM100 および SO-ARM101 ロボットアームの入門
 
 :::tip
 このチュートリアルのメンテナンスは最新版の[lerobot](https://huggingface.co/docs/lerobot/index)に更新されています。以前のバージョンのチュートリアルを参照したい場合は、[こちら](https://wiki.seeedstudio.com/ja/lerobot_so100m/)をクリックしてください。
@@ -1028,7 +1028,7 @@ pip3 install rerun-sdk==0.23
 
 ## 引用
 
-[中文文档](https://wiki.seeedstudio.com/cn/lerobot_so100m_new/)
+[中文文档](https://wiki.seeedstudio.com/ja/lerobot_so100m_new/)
 
 TheRobotStudio Project: [SO-ARM10x](https://github.com/TheRobotStudio/SO-ARM100)
 
