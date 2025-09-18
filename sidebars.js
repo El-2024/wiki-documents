@@ -22,21 +22,18 @@ const sidebars = {
 
   ProductSidebar: [
     // 'Sensing_test',
-
     {
       type: 'doc',
       id: 'Getting_Started',
       label: 'Getting Started',
       className: 'sideboard_calss',
     },
-
     {
       type: 'doc',
       id: 'weekly_wiki',
       label: 'Weekly Wiki',
       className: 'sideboard_calss',
     },
- 
     // {
     //   type: 'category',
     //   label: 'TinyML',
@@ -57,63 +54,6 @@ const sidebars = {
       label: 'Sensing',
       className: 'sideboard_calss',
     },
-    // {
-    //   type: 'category',
-    //   label: 'FAQ',
-    //   items: [
-
-    //     {
-    //       type: 'category',
-    //       label: 'reterminal',
-    //       items: [
-    //         'FAQ/XIAO/check_battery_voltage',
-    //         // 'FAQ/reTerminal/flash_different_os_to_emmc',
-    //         // 'FAQ/reTerminal/log_rpios_use_ssh_over_wifi_ethernet',
-    //         // 'FAQ/reTerminal/upgrade-rpiOS_installed-packages',
-    //         // 'FAQ/reTerminal/flashing_os_on_non-eMMC_CM4_replacement',
-    //         // 'FAQ/reTerminal/Logging_in_OS_using_USB_to_serial_converter',
-    //         // 'FAQ/reTerminal/Wakeup_reTerminal_LCD_after_sleep',
-    //         // 'FAQ/reTerminal/Boot_OS_from_USB_flash_drive',
-    //         // 'FAQ/reTerminal/black_glue_around_CM4',
-    //         // 'FAQ/reTerminal/buzzer-leds-not-work_by_drivers',
-    //         // 'FAQ/reTerminal/install-ubuntu-on-reterminal',
-    //         // 'FAQ/reTerminal/Incorrect_screen_orientation_on_RPiOS_Bullseye',
-    //         // 'FAQ/reTerminal/troubleshooting-touch-screen-inaccuracy',
-    //         // 'FAQ/reTerminal/check_Encryption_Chip',
-    //         // 'FAQ/reTerminal/disable_screen_rotation_on_reTerminal',
-    //         // 'FAQ/reTerminal/screen_refresh_rate',
-    //       ],
-    //     },
-
-    //   ]
-    // },
-
-    // {
-
-    //   type: 'doc',
-    //   label: '--Sensor--',
-    //   id: 'Sensor_Network',
-
-    // },
-
-    // {
-    //   type: 'html',
-    //   value: `
-    // <style>
-    //   .sub_item {
-    //     width: 275px;
-    //     display:inline-block;
-    //     text-align:center;
-    //     font-size:20px;
-    //     margin-top: 10px;
-    //   }
-    // </style>
-    // <div style="width:100px;text-align:center">
-    //   <div class="sub_item"><strong> Sensing </strong></div>
-    // </div>
-    // `,
-    // },
-
     {
       type: 'category',
       label: 'Grove',
@@ -148,7 +88,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'AI-powered',
-              items: [        
+              items: [
                 {
                   type: 'category',
                   label: 'Grove Vision AI',
@@ -218,7 +158,6 @@ const sidebars = {
                 'Sensor/Grove/Grove_Sensors/Temp&Humi/Grove-SHT4x',
               ],
             },
-
             {
               type: 'category',
               label: 'Temperature',
@@ -234,11 +173,9 @@ const sidebars = {
                 'Sensor/Grove/Grove_Sensors/Temperature/Grove-Temperature_Sensor',
                 'Sensor/Grove/Grove_Sensors/Temperature/Grove-Temperature_Sensor_V1.2',
                 'Sensor/Grove/Grove_Sensors/Temperature/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808',
-
                 // 'Sensor/Grove/Grove_Sensors/Temperature/Sensor_temperature',
               ],
             },
-
             {
               type: 'category',
               label: 'Soli Humidity',
@@ -379,7 +316,6 @@ const sidebars = {
                 'Sensor/Grove/Grove_Sensors/Biometric/Grove-Human_Presence_Sensor-AK9753',
               ],
             },
-
             {
               type: 'category',
               label: 'Sound',
@@ -446,7 +382,7 @@ const sidebars = {
                 'Sensor/Grove/Grove_Sensors/Motion/Grove-Step_Counter-BMA456',
               ],
             },
-             {
+            {
               type: 'category',
               label: 'Weight',
               items: [
@@ -455,7 +391,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Grove Network Module',
@@ -476,13 +411,13 @@ const sidebars = {
                 id: "Sensor/Grove/Grove_Sensors_Network/LoRa/Grove_LoRa_E5_New_Version"
               },
               items: [
-                    'Sensor/Grove/Grove_Sensors_Network/LoRa/Grove_LoRa_E5_New_Version',
-                    'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_P2P',
-                    'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_TTN_Demo',
-                    'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_Helium_Demo',
-                    'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_Helium_tinyML_Demo',
-                    'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_SenseCAP_Cloud_Demo',
-                    'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_SenseCAP_XIAO_ESP32S3',
+                'Sensor/Grove/Grove_Sensors_Network/LoRa/Grove_LoRa_E5_New_Version',
+                'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_P2P',
+                'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_TTN_Demo',
+                'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_Helium_Demo',
+                'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_Helium_tinyML_Demo',
+                'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_SenseCAP_Cloud_Demo',
+                'Sensor/Grove/Grove_Sensors_Network/LoRa/demo/Grove_Wio_E5_SenseCAP_XIAO_ESP32S3',
               ],
             },
             {
@@ -546,7 +481,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Grove Accessories',
@@ -627,7 +561,6 @@ const sidebars = {
                 'Sensor/Grove/Grove_Accessories/Actuator/Grove-Voltage_Divider',
               ],
             },
-
             {
               type: 'category',
               label: 'Time',
@@ -636,7 +569,6 @@ const sidebars = {
                 'Sensor/Grove/Grove_Accessories/Time/Grove_High_Precision_RTC',
               ],
             },
-
             {
               type: 'category',
               label: 'Current',
@@ -705,17 +637,17 @@ const sidebars = {
                 'Sensor/Grove/Grove_Accessories/Input_Output/Grove-NOT',
               ],
             },
-
             {
               type: 'category',
               label: 'Case',
-              items: ['Sensor/Grove/Grove_Accessories/Case/Grove-Wrapper'],
+              items: [
+                'Sensor/Grove/Grove_Accessories/Case/Grove-Wrapper'
+              ],
             },
           ],
         },
       ],
     },
-
     {
       type: 'category',
       label: 'SenseCAP',
@@ -738,62 +670,61 @@ const sidebars = {
           items: [
             'Sensor/SenseCAP/SenseCAP_T1000_Tracker/SenseCAP_T1000_Tracker_Introduction',
             {
-            type: 'category',
-            label: 'User Guide',
-            items: [
-              'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Get_Started',
-              'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Payload',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Tracker_WiFi_Geolocation',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/BC01_Indoor_Bluetooth_Beacon',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Indoor_Positioning_Guide',
-                   ],
-          },
-          {
-            type: 'category',
-            label: 'Integrated with LoRaWAN Network Server',
-            items: [
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/Connect_to_Helium',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/Connect_to_The_Things_Network',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/Connect_to_Loriot',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/AWS_Service',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/TTN_Mapper',
-                   ],
-          },
-          {
-            type: 'category',
-            label: 'Integrated with Popular Dashboard',
-            items: [
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Datacake_Integrated',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Ubidots_Integrated',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/thingsboard_integrated', 
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Ubidots_Integrated(Helium)',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Qubitro_Integrated',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/TagoIO_Integrated',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/InfluxDB_Integrated',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Akenza_Integrated',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Trackpac_Integrated',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/sensecap_t1000_tracker_wialon',
-                   ],
-          },
-          'Sensor/SenseCAP/SenseCAP_T1000_Tracker/FAQ',
-          'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Firmware_release_note',
+              type: 'category',
+              label: 'User Guide',
+              items: [
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Get_Started',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Payload',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Tracker_WiFi_Geolocation',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/BC01_Indoor_Bluetooth_Beacon',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Indoor_Positioning_Guide',
               ],
+            },
+            {
+              type: 'category',
+              label: 'Integrated with LoRaWAN Network Server',
+              items: [
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/Connect_to_Helium',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/Connect_to_The_Things_Network',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/Connect_to_Loriot',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/AWS_Service',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/TTN_Mapper',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Integrated with Popular Dashboard',
+              items: [
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Datacake_Integrated',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Ubidots_Integrated',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/thingsboard_integrated',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Ubidots_Integrated(Helium)',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Qubitro_Integrated',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/TagoIO_Integrated',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/InfluxDB_Integrated',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Akenza_Integrated',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/Trackpac_Integrated',
+                'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/sensecap_t1000_tracker_wialon',
+              ],
+            },
+            'Sensor/SenseCAP/SenseCAP_T1000_Tracker/FAQ',
+            'Sensor/SenseCAP/SenseCAP_T1000_Tracker/Firmware_release_note',
+          ],
         },
- //       {
-  //            type: 'category',
-   //           label: 'SenseCAP T1000-P Pet Tracker',
-   //           collapsed: true,
-   //           collapsible: true,
-    //          link: {
-    //            type: "doc",
-     //           id: 'Sensor/SenseCAP/SenseCAP_T1000-P/t1000_p_intro',
-     //         },
-      //        items: [
-       //         'Sensor/SenseCAP/SenseCAP_T1000-P/get_started_with_t1000_p',
-       //           ],
-       //     },
-
-         {
+        //       {
+        //            type: 'category',
+        //           label: 'SenseCAP T1000-P Pet Tracker',
+        //           collapsed: true,
+        //           collapsible: true,
+        //          link: {
+        //            type: "doc",
+        //           id: 'Sensor/SenseCAP/SenseCAP_T1000-P/t1000_p_intro',
+        //         },
+        //        items: [
+        //         'Sensor/SenseCAP/SenseCAP_T1000-P/get_started_with_t1000_p',
+        //           ],
+        //     },
+        {
           type: 'category',
           label: 'SenseCAP Sensor',
           collapsed: true,
@@ -803,11 +734,9 @@ const sidebars = {
             id: "Sensor/SenseCAP/SenseCAP_Intro/SenseCAP_Sensor_Intro",
           },
           items: [
-
             {
               type: 'category',
               label: 'SenseCAP LoRaWAN Sensor',
-
               items: [
                 {
                   type: 'category',
@@ -827,7 +756,6 @@ const sidebars = {
                     },
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'SenseCAP S2120 8-in-1 LoRaWAN Weather Sensor',
@@ -836,7 +764,6 @@ const sidebars = {
                     'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/Tutorials-Getting_Started_with_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor',
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'SenseCAP A1101',
@@ -848,8 +775,6 @@ const sidebars = {
                     //                 'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/Train_and_Deploy_Your_Own_AI_Model_with_Edge_Impulse_into_A1101',
                   ],
                 },
-
-
                 {
                   type: 'category',
                   label: 'SenseCAP A1102',
@@ -868,10 +793,8 @@ const sidebars = {
                 //     'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1102/TrainAI_With_A1102',
                 //   ],
                 // },
-
               ],
             },
-
             {
               type: 'category',
               label: ' SenseCAP ONE Weather Sensor',
@@ -895,7 +818,6 @@ const sidebars = {
                 },
               ],
             },
-
             {
               type: 'category',
               label: 'SenseCAP Sensor Probe',
@@ -922,7 +844,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: ' SenseCAP Sensor Builder',
@@ -937,7 +858,6 @@ const sidebars = {
             'Sensor/SenseCAP/SenseCAP_Sensor_Builder/list_of_seeed_grove_for_builder'
           ],
         },
-
         {
           type: 'category',
           label: ' SenseCAP Data Logger',
@@ -975,7 +895,7 @@ const sidebars = {
           label: 'Learn',
           items: [
             'Sensor/SenseCAP/Learn/How_to_Select_the_LoRaWAN_Network',
-         ],
+          ],
         },
       ],
     },
@@ -1072,7 +992,6 @@ const sidebars = {
         'Sensor/mmWave_radar_sensor/Radar_MR24FDB1',
       ],
     },
-
     {
       type: 'category',
       label: 'XIAO',
@@ -1084,7 +1003,6 @@ const sidebars = {
       },
       items: [
         'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Series_Projects',
-
         {
           type: 'category',
           label: 'XIAO SAMD21',
@@ -1121,7 +1039,8 @@ const sidebars = {
             },
           ],
         },
-        { // XIAO RA4M1
+        {
+          // XIAO RA4M1
           type: 'category',
           label: 'XIAO RA4M1',
           items: [
@@ -1174,7 +1093,8 @@ const sidebars = {
             },
           ],
         },
-        { // XIAO RP2350
+        {
+          // XIAO RP2350
           type: 'category',
           label: 'XIAO RP2350',
           items: [
@@ -1288,7 +1208,7 @@ const sidebars = {
           items: [
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_Getting_Started',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_Pin_Multiplexing',
-     //       'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_MicroPython',
+            //       'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_MicroPython',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO-ESP32C3-NuttX',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO-ESP32C3-Zephyr',
             {
@@ -1329,7 +1249,6 @@ const sidebars = {
           items: [
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/XIAO_ESP32C6_Getting_Started',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/XIAO_ESP32C6_Pin_Multiplexing',
-      
             {
               type: 'category',
               label: 'Wireless Connection',
@@ -1379,16 +1298,15 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/xiao_esp32c6_kafka',
               ],
             },
-            
           ],
         },
         {
           type: 'category',
           label: 'XIAO ESP32S3 Series',
           items: [
-              'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started',
-              'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Pin_Multiplexing',
-              'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Sense_Consumption',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Pin_Multiplexing',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Sense_Consumption',
             {
               type: 'category',
               label: 'Wireless Connection',
@@ -1497,7 +1415,6 @@ const sidebars = {
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/XIAO-RS485-Expansion-Board',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Bus_Servo_Driver_Board',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/LED_Driver_Board',
-            
           ],
         },
         {
@@ -1515,7 +1432,9 @@ const sidebars = {
         {
           type: 'category',
           label: 'Kit with Courses',
-          items: ['Sensor/SeeedStudio_XIAO/Kit_with_Courses/XIAO-Kit-Courses'],
+          items: [
+            'Sensor/SeeedStudio_XIAO/Kit_with_Courses/XIAO-Kit-Courses'
+          ],
         },
         'Sensor/SeeedStudio_XIAO/XIAO_FAQ',
       ],
@@ -1640,7 +1559,6 @@ const sidebars = {
                 'Sensor/Wio_Terminal/Hardware_Overview/Buttons/Wio-Terminal-Buttons',
               ],
             },
-
             {
               type: 'category',
               label: '5 Way Switch',
@@ -1648,7 +1566,6 @@ const sidebars = {
                 'Sensor/Wio_Terminal/Hardware_Overview/five_Way_Switch/Wio-Terminal-Switch',
               ],
             },
-
             {
               type: 'category',
               label: 'Light Sensor',
@@ -1656,7 +1573,6 @@ const sidebars = {
                 'Sensor/Wio_Terminal/Hardware_Overview/Light_Sensor/Wio-Terminal-Light',
               ],
             },
-
             {
               type: 'category',
               label: 'Infrared Emitter',
@@ -1664,7 +1580,6 @@ const sidebars = {
                 'Sensor/Wio_Terminal/Hardware_Overview/Infrared_Emitter/Wio-Terminal-Infrared-Emitter',
               ],
             },
-
             {
               type: 'category',
               label: 'Microphone',
@@ -1808,9 +1723,6 @@ const sidebars = {
         },
       ],
     },
-
-    
-
     // {
     //   type: 'category',
     //   label: 'SenseCAP Indicator',
@@ -1894,152 +1806,144 @@ const sidebars = {
     //     },
     //   ],
     // },
-
-
-
     {
-    type: 'category',
-    label: 'ReSpeaker',
-    collapsed: true,
-    collapsible: true,
-    link: {
-      type: 'doc',
-      id: 'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ReSpeaker',
-    },
-    items: [
-      {
-        type: 'category',
-        label: 'ReSpeaker XVF 3800',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: 'doc',
-          id: 'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf3800_usb_4_mic_array',
-        },
-        items: [
-          {
-            type: 'category',
-            label: 'ReSpeaker XVF 3800 with XIAO Intro',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: 'doc',
-              id: 'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf3800_with_xiao_intro',
-            },
-            items: [
-              'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf3800_i2s_test',
-              'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_rgb_test',
-              'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_volume',
-              'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_record_playback',
-              'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_gpio',
-              'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_mqtt_stream',
-              'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_udp_streaming',
-              {
-                type: 'category',
-                label: 'Application',
-                items: [
-                  'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_ha',
-                  'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_edgeimpulse',
-                ],
-              },
-            ],
-          },
-        ],
+      type: 'category',
+      label: 'ReSpeaker',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: 'doc',
+        id: 'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ReSpeaker',
       },
-      {
-        type: 'category',
-        label: 'ReSpeaker Lite',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: 'doc',
-          id: 'Sensor/ReSpeaker_Lite/reSpeaker_lite_introduction',
-        },
-        items: [
-          {
-            type: 'category',
-            label: 'ReSpeaker Lite with XIAO ESP32S3',
-            link: {
-              type: 'doc',
-              id: 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/xiao_respeaker',
-            },
-            items: [
-              'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_i2s_test',
-              'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_rgb_test',
-              'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_volume',
-              'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_button',
-              'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_record_and_play',
-              // 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_i2s_rgb', // commented out
-              {
+      items: [
+        {
+          type: 'category',
+          label: 'ReSpeaker XVF 3800',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: 'doc',
+            id: 'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf3800_usb_4_mic_array',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'ReSpeaker XVF 3800 with XIAO Intro',
+              collapsed: true,
+              collapsible: true,
+              link: {
                 type: 'doc',
-                id: 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_streams_generator',
-                label: 'Streams Generator',
+                id: 'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf3800_with_xiao_intro',
               },
-              'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_streams_print',
-              'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_streams_memory',
-              'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_player_spiffs',
-              'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_streams_mqtt',
-              'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_streams_i2s_tflite',
-            ],
-          },
-          {
-            type: 'category',
-            label: 'Application',
-            items: [
-              'Sensor/ReSpeaker_Lite/Application/respeaker_lite_ha',
-              'Sensor/ReSpeaker_Lite/Application/respeaker_lite_pi5',
-            ],
-          },
-          'Sensor/ReSpeaker_Lite/respeaker_enclosure',
-        ],
-      },
-      {
-        type: 'category',
-        collapsed: true,
-        collapsible: true,
-        label: 'ReSpeaker 2-Mics Pi HAT',
-        link: {
-          type: 'doc',
-          id:   'Sensor/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT',
+              items: [
+                'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf3800_i2s_test',
+                'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_rgb_test',
+                'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_volume',
+                'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_record_playback',
+                'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_gpio',
+                'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_mqtt_stream',
+                'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_udp_streaming',
+                {
+                  type: 'category',
+                  label: 'Application',
+                  items: [
+                    'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_ha',
+                    'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf_3800_edgeimpulse',
+                  ],
+                },
+              ],
+            },
+          ],
         },
-        items: [
-          {
-            type: 'category',
-            label: 'For v1 Users (Deprecated)',
-            items: [
-              'Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ReSpeaker_2_Mics_Pi_HAT_Raspberry',
-              'Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ReSpeaker_2_Mics_Pi_HAT_Jetson',
-            ],
+        {
+          type: 'category',
+          label: 'ReSpeaker Lite',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: 'doc',
+            id: 'Sensor/ReSpeaker_Lite/reSpeaker_lite_introduction',
           },
-          {
-            type: 'category',
-            label: 'For v2 Users',
-            items: [
-              'Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
-              'Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
-            ],
+          items: [
+            {
+              type: 'category',
+              label: 'ReSpeaker Lite with XIAO ESP32S3',
+              link: {
+                type: 'doc',
+                id: 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/xiao_respeaker',
+              },
+              items: [
+                'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_i2s_test',
+                'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_rgb_test',
+                'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_volume',
+                'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_button',
+                'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_record_and_play',
+                // 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_i2s_rgb', // commented out
+                {
+                  type: 'doc',
+                  id: 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_streams_generator',
+                  label: 'Streams Generator',
+                },
+                'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_streams_print',
+                'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_streams_memory',
+                'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_player_spiffs',
+                'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_streams_mqtt',
+                'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_streams_i2s_tflite',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Application',
+              items: [
+                'Sensor/ReSpeaker_Lite/Application/respeaker_lite_ha',
+                'Sensor/ReSpeaker_Lite/Application/respeaker_lite_pi5',
+              ],
+            },
+            'Sensor/ReSpeaker_Lite/respeaker_enclosure',
+          ],
+        },
+        {
+          type: 'category',
+          collapsed: true,
+          collapsible: true,
+          label: 'ReSpeaker 2-Mics Pi HAT',
+          link: {
+            type: 'doc',
+            id: 'Sensor/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT',
           },
-          'Sensor/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
-        ],
-      },
-       {
-        type: 'category',
-        label: 'ReSpeaker XVF 3000',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Mic_Array_v3.0',
-          'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Mic_Array_v2.0',
-          'Seeed_Elderly/reSpeaker/ReSpeaker-USB-Mic-Array',
-        ],
-      },
-    ],
-  },
-
-
-
-
-
+          items: [
+            {
+              type: 'category',
+              label: 'For v1 Users (Deprecated)',
+              items: [
+                'Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ReSpeaker_2_Mics_Pi_HAT_Raspberry',
+                'Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ReSpeaker_2_Mics_Pi_HAT_Jetson',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'For v2 Users',
+              items: [
+                'Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
+                'Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
+              ],
+            },
+            'Sensor/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'ReSpeaker XVF 3000',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Mic_Array_v3.0',
+            'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Mic_Array_v2.0',
+            'Seeed_Elderly/reSpeaker/ReSpeaker-USB-Mic-Array',
+          ],
+        },
+      ],
+    },
     {
       type: 'category',
       label: 'Other Sensing Modules',
@@ -2065,7 +1969,6 @@ const sidebars = {
             'Seeed_Elderly/Radar_Sensor/Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11',
           ],
         },
-
         {
           type: 'category',
           label: 'Sensor Network',
@@ -2081,7 +1984,6 @@ const sidebars = {
             'Sensor/Beyond_Grove/Sensor_Network/Wireless_Sensor_Node-Solar_Kit',
           ],
         },
-
         {
           type: 'category',
           label: 'EcoEye Vision Camera',
@@ -2096,7 +1998,6 @@ const sidebars = {
             'Sensor/Beyond_Grove/AI_Assistant/ai_assistant_getting_started'
           ],
         },
-        
         {
           type: 'category',
           label: 'Accessories',
@@ -2166,7 +2067,9 @@ const sidebars = {
             {
               type: 'category',
               label: 'LED',
-              items: ['Sensor/Beyond_Grove/Accessories/LED/FSM-55'],
+              items: [
+                'Sensor/Beyond_Grove/Accessories/LED/FSM-55'
+              ],
             },
             {
               type: 'category',
@@ -2204,8 +2107,6 @@ const sidebars = {
         },
       ],
     },
-
-    
     {
       type: 'category',
       label: 'Other Microcontrollers',
@@ -2260,7 +2161,6 @@ const sidebars = {
             //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/LoRa_Locator',
             //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Connect_1110_to_HA',
             //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/change_antenna_path',
-
             //     {
             //       type: 'category',
             //       label: 'Development Tutorial',
@@ -2270,7 +2170,6 @@ const sidebars = {
             //     },
             //   ],
             // },
-
             // {
             //   type: 'category',
             //   label: 'Wio WM1110 Dev Kit',
@@ -2294,9 +2193,6 @@ const sidebars = {
                 'Sensor/Wio_Series/LPWAN_Dev_Kit_for_Sidewalk/Switch_to_Wio_Tracker',
               ],
             },
-
-
-
             // {
             //   type: 'category',
             //   label: 'Wio WM1302',
@@ -2305,7 +2201,6 @@ const sidebars = {
             //     'Sensor/Wio_Series/Wio_WM1302/WM1302_Pi_HAT',
             //   ],
             // },
-
             {
               type: 'category',
               label: 'Wio RP2040',
@@ -2317,7 +2212,6 @@ const sidebars = {
                     'Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_Module/Wio_RP2040_Module_Build-in_Wireless_2.4G',
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'Wio RP2040 mini Dev Board',
@@ -2339,7 +2233,6 @@ const sidebars = {
                 },
               ],
             },
-
             {
               type: 'category',
               label: 'Wio Link',
@@ -2353,7 +2246,6 @@ const sidebars = {
                 'Sensor/Wio_Series/Wio_Link/Wio_Link_Starter_Kit',
               ],
             },
-
             {
               type: 'category',
               label: 'Wio Tracker',
@@ -2367,7 +2259,6 @@ const sidebars = {
                 'Sensor/Wio_Series/Wio_Tracker/Grove_Starter_Kit_for_Wio_LTE',
               ],
             },
-
             {
               type: 'category',
               label: 'Wio Lite',
@@ -2383,11 +2274,12 @@ const sidebars = {
             {
               type: 'category',
               label: 'Wio Node',
-              items: ['Sensor/Wio_Series/Wio_Node/Wio_Node'],
+              items: [
+                'Sensor/Wio_Series/Wio_Node/Wio_Node'
+              ],
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Seeeduino Series',
@@ -2436,7 +2328,6 @@ const sidebars = {
             'Sensor/Seeeduino Series/Seeeduino-Crypto-ATmega4809-ECC608',
             'Sensor/Seeeduino Series/Seeeduino_Arch',
             'Sensor/Seeeduino Series/Seeeduino_Arch_V1.0',
-
             {
               type: 'category',
               label: 'Application',
@@ -2456,7 +2347,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'LinkIt',
@@ -2492,7 +2382,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Arch',
@@ -2510,7 +2399,6 @@ const sidebars = {
             'Sensor/Arch/Grove-Starter_Kit_for_mbed',
           ],
         },
-
         {
           type: 'category',
           label: 'Azure Sphere MT3620',
@@ -2522,39 +2410,36 @@ const sidebars = {
             'Sensor/Azure Sphere MT3620/MT3620_Grove_Breakout',
           ],
         },
-        
         {
           type: 'category',
           label: 'Seeed Studio IoT Botton',
           items: [
-                'Sensor/IOT_Button_for_ESPHOME/getting_started_with_iot_button',
-                'Sensor/IOT_Button_for_ESPHOME/SEEED_IOT_BOTTON_FOR_ESPHOME',
-                'Sensor/IOT_Button_for_ESPHOME/seeed_iot_button_with_zigbee',
-              ],
+            'Sensor/IOT_Button_for_ESPHOME/getting_started_with_iot_button',
+            'Sensor/IOT_Button_for_ESPHOME/SEEED_IOT_BOTTON_FOR_ESPHOME',
+            'Sensor/IOT_Button_for_ESPHOME/seeed_iot_button_with_zigbee',
+          ],
         },
-
         {
           type: 'category',
           label: 'IOT Button for AWS',
-          items: ['Sensor/IOT_Button_For_AWS/SEEED-IOT-BUTTON-FOR-AWS'],
+          items: [
+            'Sensor/IOT_Button_For_AWS/SEEED-IOT-BUTTON-FOR-AWS'
+          ],
         },
-
         {
           type: 'category',
           label: 'Pi Pico',
-          items: ['Sensor/Pi_Pico/Grove-Starter-Kit-for-Raspberry-Pi-Pico'],
+          items: [
+            'Sensor/Pi_Pico/Grove-Starter-Kit-for-Raspberry-Pi-Pico'
+          ],
         },
       ],
     },
-
     // {
-
     //   type: 'doc',
     //   label: '--Network--',
     //   id: 'Sensor_Network',
-
     // },
-
     // {
     //   type: 'html',
     //   value: `
@@ -2572,7 +2457,6 @@ const sidebars = {
     // </div>
     // `,
     // },
-
     {
       type: 'doc',
       id: 'Network',
@@ -2595,7 +2479,6 @@ const sidebars = {
         },
       ]
     },
-
     // {
     //   type: 'category',
     //   label: 'Meshtastic Network',
@@ -2616,7 +2499,6 @@ const sidebars = {
     //           id: 'Network/Meshtastic_Network/T1000-E/sensecap_t1000_e',
     //           label: 'Get Started with T1000-E',
     //         },
-
     //       ],
     //     },
     //         {
@@ -2636,7 +2518,6 @@ const sidebars = {
     //               id:'Network/Meshtastic_Network/wio_tracker_kit/flash_meshtastic_kit',
     //               label: 'Flash Firmware', 
     //             },
-
     //           ],
     //         },
     //         {
@@ -2670,7 +2551,6 @@ const sidebars = {
         id: 'Network/SenseCAP_Network/SenseCAP_Gateway_Intro',
       },
       items: [
-
         {
           type: 'category',
           label: 'SenseCAP M2 Multi-Platform Gateway',
@@ -2691,7 +2571,6 @@ const sidebars = {
             'Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/flash_opensource_firmware_to_m2_gateway'
           ],
         },
-
         {
           type: 'category',
           label: 'Helium Gateway',
@@ -2716,7 +2595,6 @@ const sidebars = {
                 'Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/M2_Local_Console',
               ],
             },
-
             {
               type: 'category',
               label: 'SenseCAP M2 Light Gateway',
@@ -2728,7 +2606,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Flux Gateway',
@@ -2738,7 +2615,6 @@ const sidebars = {
             'Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_FAQ',
           ],
         },
-
         {
           type: 'category',
           label: 'Outdoor Gateway',
@@ -2748,7 +2624,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'SenseCAP K1100',
@@ -2886,87 +2761,77 @@ const sidebars = {
     //     'Network/LinkStar/Linkstar_Datasheet',
     //     'Network/LinkStar/linkstar-install-system',
     //     ],
-
     // },
-
     {
       type: 'category',
       label: 'Raspberry Pi Solutions',
       collapsed: true,
       collapsible: true,
       items: [
-      {
-        type: 'category',
-        label: 'reRouter',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'Network/RaspberryPi_Devices/reRouter/reRouter_Intro',
+        {
+          type: 'category',
+          label: 'reRouter',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'Network/RaspberryPi_Devices/reRouter/reRouter_Intro',
+          },
+          items: [
+            'Network/RaspberryPi_Devices/reRouter/Raspberry-OpenWrt-Getting-Started',
+            'Network/RaspberryPi_Devices/reRouter/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4',
+            'Network/RaspberryPi_Devices/reRouter/FAQs_For_openWrt',
+            {
+              type: 'category',
+              label: 'Application',
+              items: [
+                'Network/RaspberryPi_Devices/reRouter/Application/OpenWrt-Getting-Started',
+                'Network/RaspberryPi_Devices/reRouter/Application/OpenWrt-Plex-Media-Server-on-Docker',
+                'Network/RaspberryPi_Devices/reRouter/Application/Mender-Client-dual-GbE-CM4',
+              ],
+            },
+          ],
         },
-        items: [
-          'Network/RaspberryPi_Devices/reRouter/Raspberry-OpenWrt-Getting-Started',
-          'Network/RaspberryPi_Devices/reRouter/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4',
-          'Network/RaspberryPi_Devices/reRouter/FAQs_For_openWrt',
-          {
-            type: 'category',
-            label: 'Application',
-            items: [
-              'Network/RaspberryPi_Devices/reRouter/Application/OpenWrt-Getting-Started',
-              'Network/RaspberryPi_Devices/reRouter/Application/OpenWrt-Plex-Media-Server-on-Docker',
-              'Network/RaspberryPi_Devices/reRouter/Application/Mender-Client-dual-GbE-CM4',
-            ],
-          },
-        ],
-       },  
-
-       {
-        type: 'category',
-        label: ' Raspberry Pi 4G LTE Hat',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
-
-          {
-            type: 'category',
-            label: 'Application',
-            items: [
-              {
-                type: 'category',
-                label: 'Windows Network Setup',
-                items: [
-                  'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_rndis',
-                  'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_mbim',
-                ],
-              },
-              {
-                type: 'category',
-                label: 'Raspberry Pi OS Network Setup',
-                items: [
-                  'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mobile_internet_for_your_pi_ecm_set_up',
-                  'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_qmi',
-                  
-
-                ],
-              },
-
-              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/send_text_massages_lte_cat_hat_for_rpi',
-              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
-              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_hotspot_on_rpi_os',
-              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ftp_on_rpi_4g_lte_hat',
-              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mqtt_on_rpi_4g_lte_hat',
-              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/tcp_ip_rpi_4g_lte_hat',
-              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_openwrt',
-
-            ],
-          },
-        ],
-       },  
-
+        {
+          type: 'category',
+          label: ' Raspberry Pi 4G LTE Hat',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
+            {
+              type: 'category',
+              label: 'Application',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Windows Network Setup',
+                  items: [
+                    'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_rndis',
+                    'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_mbim',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Raspberry Pi OS Network Setup',
+                  items: [
+                    'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mobile_internet_for_your_pi_ecm_set_up',
+                    'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_qmi',
+                  ],
+                },
+                'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/send_text_massages_lte_cat_hat_for_rpi',
+                'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
+                'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_hotspot_on_rpi_os',
+                'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ftp_on_rpi_4g_lte_hat',
+                'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mqtt_on_rpi_4g_lte_hat',
+                'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/tcp_ip_rpi_4g_lte_hat',
+                'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_openwrt',
+              ],
+            },
+          ],
+        },
       ],
     },
-
     {
       type: 'category',
       label: 'Rockchip Solutions',
@@ -2977,63 +2842,60 @@ const sidebars = {
         id: 'Network/RK_Devices/RK_intro',
       },
       items: [
-      {
-        type: 'category',
-        label: 'LinkStar-H68K',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'Network/RK_Devices/LinkStar/Linkstar_Intro',
-        },
-        items: [
-          'Network/RK_Devices/LinkStar/Linkstar_Datasheet',
-          'Network/RK_Devices/LinkStar/linkstar-install-system',
-          {
-            type: 'category',
-            label: 'Application',
-            items: [
-              'Network/RK_Devices/LinkStar/Application/h68k-ha-esphome',
-              'Network/RK_Devices/LinkStar/Application/plex_media_server',
-              'Network/RK_Devices/LinkStar/Application/wordpress_linkstar',
-              'Network/RK_Devices/LinkStar/Application/grocy-bookstack-linkstar',
-            ],
+        {
+          type: 'category',
+          label: 'LinkStar-H68K',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'Network/RK_Devices/LinkStar/Linkstar_Intro',
           },
-        ],
-      },
-      {
-        type: 'category',
-        label: 'LinkStar-H68K-V2',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'Network/RK_Devices/H68K_V2/H68KV2_Datasheet',
+          items: [
+            'Network/RK_Devices/LinkStar/Linkstar_Datasheet',
+            'Network/RK_Devices/LinkStar/linkstar-install-system',
+            {
+              type: 'category',
+              label: 'Application',
+              items: [
+                'Network/RK_Devices/LinkStar/Application/h68k-ha-esphome',
+                'Network/RK_Devices/LinkStar/Application/plex_media_server',
+                'Network/RK_Devices/LinkStar/Application/wordpress_linkstar',
+                'Network/RK_Devices/LinkStar/Application/grocy-bookstack-linkstar',
+              ],
+            },
+          ],
         },
-        items: [
-          'Network/RK_Devices/H68K_V2/H68KV2_Datasheet',
-          'Network/RK_Devices/H68K_V2/H68KV2_install_system',
-        ],
-      },
-      {
-        type: 'category',
-        label: 'LinkStar-H28K',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'Network/RK_Devices/H28K/H28K_Datasheet',
+        {
+          type: 'category',
+          label: 'LinkStar-H68K-V2',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'Network/RK_Devices/H68K_V2/H68KV2_Datasheet',
+          },
+          items: [
+            'Network/RK_Devices/H68K_V2/H68KV2_Datasheet',
+            'Network/RK_Devices/H68K_V2/H68KV2_install_system',
+          ],
         },
-        items: [
-          'Network/RK_Devices/H28K/H28K_Datasheet',
-          'Network/RK_Devices/H28K/H28K-install-system',
-        ],
-      },
-
+        {
+          type: 'category',
+          label: 'LinkStar-H28K',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'Network/RK_Devices/H28K/H28K_Datasheet',
+          },
+          items: [
+            'Network/RK_Devices/H28K/H28K_Datasheet',
+            'Network/RK_Devices/H28K/H28K-install-system',
+          ],
+        },
       ],
     },
-
-
     {
       type: 'category',
       label: 'Other Network Devices',
@@ -3049,7 +2911,6 @@ const sidebars = {
         },
       ],
     },
-
     // {
     //   type: 'html',
     //   value: `
@@ -3067,14 +2928,12 @@ const sidebars = {
     // </div>
     // `,
     // },
-
     {
       type: 'doc',
       id: 'Edge_Computing',
       label: 'Edge Computing',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Raspberry Pi Devices',
@@ -3084,204 +2943,194 @@ const sidebars = {
         type: "doc",
         id: 'Edge/Raspberry_Pi_Devices/RpiDevices',
       },
-      items:[
+      items: [
         {
           type: 'category',
           label: 'Edge AI Computer',
           collapsed: true,
           collapsible: true,
-          items:[
+          items: [
             {
-            type: 'category',
-            label: 'reComputer-AI-R2000',
-            collapsed: true,
-            collapsible: true,
-            link:{
-              type:"doc",
-              id:'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/reComputer_AI_R2000_getting_start'
+              type: 'category',
+              label: 'reComputer-AI-R2000',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/reComputer_AI_R2000_getting_start'
+              },
+              items: [
+                'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/reComputer_AI_R2000_getting_start'
+              ]
             },
-            items: [
-              'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/reComputer_AI_R2000_getting_start'
-            ]},
             {
               type: 'category',
               label: 'reComputer-AI-Industrial-R2000',
               collapsed: true,
               collapsible: true,
-              link:{
-                type:"doc",
-                id:'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2135_getting_start'
+              link: {
+                type: "doc",
+                id: 'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2135_getting_start'
               },
               items: [
                 'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2135_getting_start',
                 'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2000_Flash_OS'
-              ]},
-            
-
-      ]},
+              ]
+            },
+          ]
+        },
         {
-        type: 'category',
-        label: 'HMI',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          {
-        type: 'category',
-        label: 'reTerminal',
-        collapsed: true,
-        collapsible: true,
-        link: {
-              type: "doc",
-              id: 'Edge/Raspberry_Pi_Devices/HMI/reTerminal/reTerminal_Intro',
-            },
-
-            items: [
-              'Edge/Raspberry_Pi_Devices/HMI/reTerminal/reTerminal',
-              'Edge/Raspberry_Pi_Devices/HMI/reTerminal/reTerminal-hardware-interfaces-usage',
-              'Edge/Raspberry_Pi_Devices/HMI/reTerminal/reTerminal-piCam',
-              'Edge/Raspberry_Pi_Devices/HMI/reTerminal/reTerminal-FAQ',
-              {
-                type: 'category',
-                label: 'OS Installation',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/reTerminal-Buildroot-SDK',
-                  'Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/reTerminal-Yocto',
-                  'Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/Streampi_OBS_On_reTerminal',
-                  // 'Edge/reTerminal/OS_Installation/',
-                ],
+          type: 'category',
+          label: 'HMI',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: 'reTerminal',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'Edge/Raspberry_Pi_Devices/HMI/reTerminal/reTerminal_Intro',
               },
-              {
-                type: 'category',
-                label: 'Extension Board',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/reTerminalBridge',
-                  'Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/reTerminal_Mount_Options',
-                ],
+              items: [
+                'Edge/Raspberry_Pi_Devices/HMI/reTerminal/reTerminal',
+                'Edge/Raspberry_Pi_Devices/HMI/reTerminal/reTerminal-hardware-interfaces-usage',
+                'Edge/Raspberry_Pi_Devices/HMI/reTerminal/reTerminal-piCam',
+                'Edge/Raspberry_Pi_Devices/HMI/reTerminal/reTerminal-FAQ',
+                {
+                  type: 'category',
+                  label: 'OS Installation',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/reTerminal-Buildroot-SDK',
+                    'Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/reTerminal-Yocto',
+                    'Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/Streampi_OBS_On_reTerminal',
+                    // 'Edge/reTerminal/OS_Installation/',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Extension Board',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/reTerminalBridge',
+                    'Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/reTerminal_Mount_Options',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'reTerminal DM',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reTerminal-dm_Intro',
               },
-            ],
-          },
-          {
-            type: 'category',
-            label: 'reTerminal DM',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: "doc",
-              id: 'Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reTerminal-dm_Intro',
+              items: [
+                'Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reterminal-dm',
+                'Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reterminal-dm-flash-OS',
+                'Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reterminal-dm-warranty',
+                'Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reterminal-dm-hardware-guide',
+              ],
             },
-            items: [
-              'Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reterminal-dm',
-              'Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reterminal-dm-flash-OS',
-              'Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reterminal-dm-warranty',
-              'Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reterminal-dm-hardware-guide',
-                        ],
-          },
-
-        ],
-
-      },
-      {
-        type: 'category',
-        label: 'Edge Controller',
-        collapsed: true,
-        collapsible: true,
-       // link: {
-         // type: "doc",
-         // id: 'Edge/Raspberry_Pi_Devices/Edge_Box_RPi_200/Edge_Box_intro',
-       // },
-        items: [
-          {
-            type: 'category',
-            label: 'EdgeBox-RPI-200',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: "doc",
-              id: 'Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Edge_Box_intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Edge Controller',
+          collapsed: true,
+          collapsible: true,
+          // link: {
+          // type: "doc",
+          // id: 'Edge/Raspberry_Pi_Devices/Edge_Box_RPi_200/Edge_Box_intro',
+          // },
+          items: [
+            {
+              type: 'category',
+              label: 'EdgeBox-RPI-200',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Edge_Box_intro',
+              },
+              items: [
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Edgebox_rpi_200_Introduction',
+              ],
             },
-            items: [
-              'Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Edgebox_rpi_200_Introduction',
-            
-            ],
-          },
-
-          {
-            type: 'category',
-            label: 'reComputer-R1000',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: "doc",
-              id: 'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_intro',
+            {
+              type: 'category',
+              label: 'reComputer-R1000',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_intro',
+              },
+              items: [
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_pcn',
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r',
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_flash_os',
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_assembly_guide',
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_warranty',
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_how_to_use_rs485_modbus',
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_use_bacnet_mstp',
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/reComputer_R1000_FAQ',
+              ],
             },
-            items: [
-              'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_pcn',
-              'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r',
-              'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_flash_os',
-              'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_assembly_guide',
-              'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_warranty',
-              'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_how_to_use_rs485_modbus',
-              'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/recomputer_r1000_use_bacnet_mstp',
-              'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/reComputer_R1000_FAQ', 
-            ],
-          },
-          {
-            type: 'category',
-            label: 'reComputer R1100',
-            collapsed: true,
-            collapsible: true,
-            items: [
-                  'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/reComputer_R1100',
-                  'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/recomputer_r1100_flash_os',
-                  'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/recomputer_r1100_configure_system',
-                  'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/recomputer_r1100_assembly_guide',
-            ],
-          },
-
-        ],
-      },
-
-      {
-        type: 'category',
-        label: 'Hat',
-        collapsed: true,
-        collapsible: true,
-        items: [
+            {
+              type: 'category',
+              label: 'reComputer R1100',
+              collapsed: true,
+              collapsible: true,
+              items: [
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/reComputer_R1100',
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/recomputer_r1100_flash_os',
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/recomputer_r1100_configure_system',
+                'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/recomputer_r1100_assembly_guide',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Hat',
+          collapsed: true,
+          collapsible: true,
+          items: [
             {
               type: 'category',
               label: 'M.2 Hat',
               items: [
-                    'Edge/Raspberry_Pi_Devices/M_2_Hat/m_2_hat_start_with_pi5',
+                'Edge/Raspberry_Pi_Devices/M_2_Hat/m_2_hat_start_with_pi5',
               ],
             },
-          
-        ],
-      },
-
-      {
-        type: 'category',
-        label: 'Application',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          {
-            type: 'category',
-            label: 'AIoT',
-            items: [
-              {
-                type: 'category',
-                label: 'BalenaOS',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/recomputer_r1000_build_seeed_balena_image',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/recomputer_r1000_balena',
-                ]
-              },
-              
-
-              {
-                type: 'category',
-                label: 'Cloud Solution',
-                items: [
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Application',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: 'AIoT',
+              items: [
+                {
+                  type: 'category',
+                  label: 'BalenaOS',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/recomputer_r1000_build_seeed_balena_image',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/recomputer_r1000_balena',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Cloud Solution',
+                  items: [
                     {
                       type: 'category',
                       label: 'AWS IoT Core Integration (R1000 / reTerminal DM)',
@@ -3290,242 +3139,238 @@ const sidebars = {
                         'Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/reTerminal-DM_AWS_first',
                       ]
                     },
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/reTerminal-DM_Azure_IoT',
-                ]
-              },
-
-              {
-                type: 'category',
-                label: 'Fin',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_install_fin',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with_fin_create_equip_graphic',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with_fin_create_site_graphic',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with_fin_top_level_graphic',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with_fin_use_modbus',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with-_fin_use_logic_to_alarm',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with-fin_create_floor_graphic',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Fuxa',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/recomputer_r1000_with_fuxa_to_achieve_SCADA',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/recomputer_r1000_with_fuxa_use_modbus',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/recomputer_r1000_with_fuxa_use_mqtt',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/recomputer_r1000_with_fuxa_use_opcua',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/recomputer_r1000_with_fuxa_use_webapi',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/reTerminal-DM_intro_FUXA',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Home Assistant',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/recomputer-r1000-home-assistant',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/recomputer-r1000-modbus-home-assistant',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/reTerminal_Home_Assistant',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/reTerminal-Home-Assistant-Customize',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'N3uron',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/Edgebox-rpi-200-n3uron-aws',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/Edgebox-rpi-200-n3uron-bacnet',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/Edgebox-rpi-200-n3uron-modbus-mqtt',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/Edgebox-rpi-200-n3uron',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/recomputer_r1000_n3uron_aws',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/recomputer_r1000_n3uron_bacnet',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/recomputer_r1000_n3uron_getting_started',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/recomputer_r1000_n3uron_modbus_mqtt',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/reTerminal_DM_N3uron_AWS',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/reTerminal_DM_N3uron_Historian',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/reTerminal_DM_N3uron_modbus_mqtt',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/reTerminalDM_N3uron_Get_Start',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Node Red',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_box_rpi_200_grafana',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_Bacnet_tcp',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_getting_started',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_influxdb',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_Modbus_rtu',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_Modbus_tcp',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_mqtt',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/neqto_engine_for_linux_reTerminal',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer_r1000_nodered_modbustcp',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer_r1000_nodered_opcua_server',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer_r1000_nodered_s7',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer_r1000_with_node_red_and_bacnet',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer_r1000-grafana',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer-r1000-nodered-getting-start',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-Bacnet',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-canbus',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-grafana',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-influxdb',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-Modbus-TCP',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-mqtt',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-RS485',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'UI Design',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/reTerminal-build-UI-using-Electron',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/reTerminal-build-UI-using-Flutter',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/reTerminal-build-UI-using-LVGL',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/reTerminal-build-UI-using-Qt-for-Python',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/weather-dashboard-with-Grafana-reTerminal',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Edge Impulse Object Detection',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/reTerminal_ML_Edgeimpulse',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/reTerminal-DM-edgeimpulse',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Ignition Edge (reComputer R1000 / reTerminal DM)',
-                items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/reTerminal-DM_Azure_IoT',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Fin',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_install_fin',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with_fin_create_equip_graphic',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with_fin_create_site_graphic',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with_fin_top_level_graphic',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with_fin_use_modbus',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with-_fin_use_logic_to_alarm',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/recomputer_r1000_with-fin_create_floor_graphic',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Fuxa',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/recomputer_r1000_with_fuxa_to_achieve_SCADA',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/recomputer_r1000_with_fuxa_use_modbus',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/recomputer_r1000_with_fuxa_use_mqtt',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/recomputer_r1000_with_fuxa_use_opcua',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/recomputer_r1000_with_fuxa_use_webapi',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/reTerminal-DM_intro_FUXA',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Home Assistant',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/recomputer-r1000-home-assistant',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/recomputer-r1000-modbus-home-assistant',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/reTerminal_Home_Assistant',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/reTerminal-Home-Assistant-Customize',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'N3uron',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/Edgebox-rpi-200-n3uron-aws',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/Edgebox-rpi-200-n3uron-bacnet',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/Edgebox-rpi-200-n3uron-modbus-mqtt',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/Edgebox-rpi-200-n3uron',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/recomputer_r1000_n3uron_aws',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/recomputer_r1000_n3uron_bacnet',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/recomputer_r1000_n3uron_getting_started',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/recomputer_r1000_n3uron_modbus_mqtt',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/reTerminal_DM_N3uron_AWS',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/reTerminal_DM_N3uron_Historian',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/reTerminal_DM_N3uron_modbus_mqtt',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/reTerminalDM_N3uron_Get_Start',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Node Red',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_box_rpi_200_grafana',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_Bacnet_tcp',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_getting_started',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_influxdb',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_Modbus_rtu',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_Modbus_tcp',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/Edge_Box_rpi_200_Node_red_mqtt',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/neqto_engine_for_linux_reTerminal',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer_r1000_nodered_modbustcp',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer_r1000_nodered_opcua_server',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer_r1000_nodered_s7',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer_r1000_with_node_red_and_bacnet',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer_r1000-grafana',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/recomputer-r1000-nodered-getting-start',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-Bacnet',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-canbus',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-grafana',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-influxdb',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-Modbus-TCP',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-mqtt',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/reTerminal-DM-Node-Red-RS485',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'UI Design',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/reTerminal-build-UI-using-Electron',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/reTerminal-build-UI-using-Flutter',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/reTerminal-build-UI-using-LVGL',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/reTerminal-build-UI-using-Qt-for-Python',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/weather-dashboard-with-Grafana-reTerminal',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Edge Impulse Object Detection',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/reTerminal_ML_Edgeimpulse',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/reTerminal-DM-edgeimpulse',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Ignition Edge (reComputer R1000 / reTerminal DM)',
+                  items: [
                     'Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/Edgebox-rpi-200-ignition-edge',
                     'Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/reTerminal-DM-Getting-Started-with-Ignition-Edge',
                     'Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/reTerminal-DM-Ignition-Edge-Panel-Builder',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'ThingsBoard Integration',
-                items: [
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'ThingsBoard Integration',
+                  items: [
                     'Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/recomputer_r1000_thingsboard_ce',
                     'Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/recomputer_r1000_thingsboard_dashboard',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'CODESYS with Modbus on R1000',
-                items: [
-                     'Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/recomputer_r1000_install_codesys',
-                     'Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/recomputer_r1000_with_codesys_use_modbus_rtu',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Others',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/Mender-Client-reTerminal',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/recomputer_r1000_flowfuse_getting_start',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/reTerminal-DM_intro_machinechat_jedi',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/reterminal-dm-sensecraft-edge-os-intro',
-                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/recomputer_use_ups'
-                ]
-              },
-            ]
-          },
-          {
-            type: 'category',
-            label: 'Computer Vision',
-            items: [
-              {
-                type: 'category',
-                label: 'Benchmark',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'OpenCV Demos (reTerminal & Pi Camera)',
-                items: [
-                  {
-                    type: 'category',
-                    label: 'Object/Face/Color/Shape Detection',
-                    items: [
-                      'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/reTerminal_DM_Color_detection',
-                      'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/reTerminal_DM_Face_detection',
-                      'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/reTerminal_DM_Object_detection',
-                      'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/reTerminal_DM_Shape_detection',
-                    ]
-                  },
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/reTerminal_DM_opencv',
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/reTerminal_DM-tracking',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'YOLO-based Applications',
-                items: [
-                  {
-                    type: 'category',
-                    label: 'YOLOv8  Object Detection (Pi 5 / R1000 / AI Box)',
-                    items: [
-                      'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/Using_YOLOv8_and_AI_Box_for_fall_climbing_and_tracking_detection',
-                      'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
-                    ]
-                  },
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/reTerminal-DM-Yolo5',
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'NVR',
-                items:[
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'CODESYS with Modbus on R1000',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/recomputer_r1000_install_codesys',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/recomputer_r1000_with_codesys_use_modbus_rtu',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Others',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/Mender-Client-reTerminal',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/recomputer_r1000_flowfuse_getting_start',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/reTerminal-DM_intro_machinechat_jedi',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/reterminal-dm-sensecraft-edge-os-intro',
+                    'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/recomputer_use_ups'
+                  ]
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Computer Vision',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Benchmark',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'OpenCV Demos (reTerminal & Pi Camera)',
+                  items: [
+                    {
+                      type: 'category',
+                      label: 'Object/Face/Color/Shape Detection',
+                      items: [
+                        'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/reTerminal_DM_Color_detection',
+                        'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/reTerminal_DM_Face_detection',
+                        'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/reTerminal_DM_Object_detection',
+                        'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/reTerminal_DM_Shape_detection',
+                      ]
+                    },
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/reTerminal_DM_opencv',
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/reTerminal_DM-tracking',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'YOLO-based Applications',
+                  items: [
+                    {
+                      type: 'category',
+                      label: 'YOLOv8  Object Detection (Pi 5 / R1000 / AI Box)',
+                      items: [
+                        'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/Using_YOLOv8_and_AI_Box_for_fall_climbing_and_tracking_detection',
+                        'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
+                      ]
+                    },
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/reTerminal-DM-Yolo5',
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'NVR',
+                  items: [
                     'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/firearm_detection_with_frigate_nvr_on_r2000',
                     'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/frigate_home_assistant_recomputer_r2000',
                     'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/frigate_nvr_with_raspberrypi_5',
                     'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/reterminal_frigate',
                     'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/reterminal-DM-Frigate',
                     'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/zoneminder_on_recomputer'
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Other AI Applications',
-                items: [
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/clip_application_on_rpi_with_ai_kit',
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/convert_model_to_edge_tpu_tflite_format_for_google_coral',
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/install_m.2_coral_to_rpi5',
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/pose_based_light_control_with_nodered_and_rpi_with_aikit',
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/real-time-ocr',
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/reTerminal_ML_TFLite',
-                  'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
-                 ]
-              },
-            ]
-          },
-          {
-            type: 'category',
-            label: 'Large language Model',
-            items:[
-              'Edge/Raspberry_Pi_Devices/Application/Large_language_Model/deploy_deepseek_on_raspberry_pi_ai_box',
-              'Edge/Raspberry_Pi_Devices/Application/Large_language_Model/distributed_inference_of_deepseek_model_on_raspberrypi'
-            ]
-          },
-          {
-            type: 'category',
-            label: 'Tools',
-            items:[
-              'Edge/Raspberry_Pi_Devices/Application/Development_Tools/recomputer_use_uv_to_build_package',
-              'Edge/Raspberry_Pi_Devices/Application/Development_Tools/recomputer_use_docker'
-            ]
-          }
-        ]
-      },
-
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Other AI Applications',
+                  items: [
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/clip_application_on_rpi_with_ai_kit',
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/convert_model_to_edge_tpu_tflite_format_for_google_coral',
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/install_m.2_coral_to_rpi5',
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/pose_based_light_control_with_nodered_and_rpi_with_aikit',
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/real-time-ocr',
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/reTerminal_ML_TFLite',
+                    'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
+                  ]
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Large language Model',
+              items: [
+                'Edge/Raspberry_Pi_Devices/Application/Large_language_Model/deploy_deepseek_on_raspberry_pi_ai_box',
+                'Edge/Raspberry_Pi_Devices/Application/Large_language_Model/distributed_inference_of_deepseek_model_on_raspberrypi'
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Tools',
+              items: [
+                'Edge/Raspberry_Pi_Devices/Application/Development_Tools/recomputer_use_uv_to_build_package',
+                'Edge/Raspberry_Pi_Devices/Application/Development_Tools/recomputer_use_docker'
+              ]
+            }
+          ]
+        },
       ],
-
-
     },
     {
       type: 'category',
@@ -3565,7 +3410,6 @@ const sidebars = {
                     'Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/J401_Mini_carrierboard_Hardware_Interfaces_Usage',
                   ],
                 },
-               
                 {
                   type: 'category',
                   label: 'J501 Carrier Board',
@@ -3586,10 +3430,8 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Carrier_Boards/A603/A603_Flash_JetPack',
                 'Edge/NVIDIA_Jetson/Carrier_Boards/A607/A607_Flash_JetPack',
                 'Edge/NVIDIA_Jetson/Carrier_Boards/A608/A608_Flash_JetPack',
-                
               ],
             },
-
             // reComputer Jetson Series
             {
               type: 'category',
@@ -3611,22 +3453,21 @@ const sidebars = {
                       type: 'category',
                       label: 'reComputer J1010',
                       items: [
-                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_J1010_with_Jetson_getting_start',
-                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/J101_Enable_SD_Card',
-                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/J1010_Boot_From_SD_Card',
-                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_GPIO',
-                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Memory_Expansion',
-                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Series_Hardware_Layout',
-                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Series_Initiation',
+                        'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_J1010_with_Jetson_getting_start',
+                        'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/J101_Enable_SD_Card',
+                        'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/J1010_Boot_From_SD_Card',
+                        'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_GPIO',
+                        'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Memory_Expansion',
+                        'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Series_Hardware_Layout',
+                        'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/reComputer_Jetson_Series_Initiation',
                       ],
                     },
-
                     {
                       type: 'category',
                       label: 'reComputer J1020',
                       items: [
-                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/reComputer_J1020v2_with_Jetson_getting_start',
-                      'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/reComputer_J1020_A206_Flash_JetPack',
+                        'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/reComputer_J1020v2_with_Jetson_getting_start',
+                        'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/reComputer_J1020_A206_Flash_JetPack',
                       ],
                     },
                   ],
@@ -3654,25 +3495,25 @@ const sidebars = {
                   type: 'category',
                   label: 'reComputer Industrial',
                   items: [
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_Getting_Started',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J20_Hardware_Interfaces_Usage',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_Getting_Started',
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J20_Hardware_Interfaces_Usage',
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
                   ],
                 },
                 {
                   type: 'category',
                   label: 'reComputer Mini',
                   items: [
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Hardware_Interfaces_Usage'
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started',
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Hardware_Interfaces_Usage'
                   ],
                 },
-                 {
+                {
                   type: 'category',
                   label: 'reComputer Robotics',
                   items: [
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Robotics/reComputer_Robotics_Getting_Started',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Robotics/reComputer_Robotics_Hardware_Interfaces_Usage'
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Robotics/reComputer_Robotics_Getting_Started',
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Robotics/reComputer_Robotics_Hardware_Interfaces_Usage'
                   ],
                 },
                 {
@@ -3687,15 +3528,14 @@ const sidebars = {
                   type: 'category',
                   label: 'reComputer Super',
                   items: [
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Getting_Started',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Hardware_Interfaces_Usage',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/Replace_the_Thermal_Conductive_Paste_for_reComputer'
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Getting_Started',
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Hardware_Interfaces_Usage',
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing',
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/Replace_the_Thermal_Conductive_Paste_for_reComputer'
                   ],
-                },  
-
-            ]},
-            
+                },
+              ]
+            },
             // reServer Jetson Series
             {
               type: 'category',
@@ -3710,23 +3550,20 @@ const sidebars = {
                   type: 'category',
                   label: 'reServer Industrial J30/40',
                   items: [
-                  'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
-                  'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Hardware_Interface_Usage'
+                    'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
+                    'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Hardware_Interface_Usage'
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'reServer J2032',
                   items: [
-                  'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/reServer_J2032_Flash_Jetpack',
-                  'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/reServer_J2032_Getting_Started'
+                    'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/reServer_J2032_Flash_Jetpack',
+                    'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/reServer_J2032_Getting_Started'
                   ],
                 },
-
-
-            ]},
-
+              ]
+            },
             // Other Devices
             {
               type: 'category',
@@ -3748,10 +3585,9 @@ const sidebars = {
               ]
             },
             //flashing jetpack page
-	    'Edge/NVIDIA_Jetson/Flash_Jetpack',
+            'Edge/NVIDIA_Jetson/Flash_Jetpack',
           ]
         },
-
         // Applications
         {
           type: 'category',
@@ -3787,7 +3623,6 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Computer_Vision/AI-NVR_with_Jetson',
               ]
             },
-
             // Generative AI
             {
               type: 'category',
@@ -3796,7 +3631,6 @@ const sidebars = {
                 type: "doc",
                 id: 'Edge/NVIDIA_Jetson/Application/Generative_AI/Generative_AI_Intro',
               },
-              
               items: [
                 // Models
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/Finetune_LLM_by_Llama_Factory_on_Jetson',
@@ -3807,7 +3641,6 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/How_to_run_zero_shot_detection_on_reComputer',
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/How_to_run_VLM_on_reComputer',
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson',
-                
                 // Projects
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/Deploy_Riva_and_Llama2_on_reComputer',
                 'Edge/NVIDIA_Jetson/Application/Generative_AI/Real_Time_Subtitle_Recoder_on_Jetson',
@@ -3841,7 +3674,6 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Managed_Services/Update-Jetson-Linux-OTA-Using-Allxon'
               ]
             },
-
             // Developer Tools
             {
               type: 'category',
@@ -3867,15 +3699,10 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/Install_torch_on_reComputer',
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/vnc_for_reComputer',
                 'Edge/NVIDIA_Jetson/Application/Developer_Tools/Implement_Ethercat_communication_on_reComputer',
-
-                
-                
-
               ]
             },
           ]
         },
-
         // FAQs
         {
           type: 'category',
@@ -3896,25 +3723,25 @@ const sidebars = {
         }
       ],
     },
-
     {
       type: 'category',
       label: 'ESP Devices',
       collapsed: true,
       collapsible: true,
       //link: {
-        //type: "doc",
-        //id: 'Edge/Edge_Series/Edge_series_Intro',
-     // },
+      //type: "doc",
+      //id: 'Edge/Edge_Series/Edge_series_Intro',
+      // },
       items: [
         {
           type: 'category',
           label: 'EdgeBox-ESP-100',
-          items: ['Edge/Edge_Series/Edge_Box_ESP_100/Edgebox-ESP-100-Arduino'],
+          items: [
+            'Edge/Edge_Series/Edge_Box_ESP_100/Edgebox-ESP-100-Arduino'
+          ],
         },
       ],
     },
-
     {
       type: 'category',
       label: 'BeagleBone®',
@@ -3937,7 +3764,6 @@ const sidebars = {
           items: [
             'Edge/Beagle_Bone/Application/BeagleBone_Solutions',
             'Edge/Beagle_Bone/Application/ChatGPT_and_BeagleBone',
-
           ],
         },
         {
@@ -3962,7 +3788,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'ODYSSEY',
@@ -3980,8 +3805,7 @@ const sidebars = {
           items: [
             'Edge/ODYSSEY/ODYSSEY_STM32MP135D/ODYSSEY STM32MP135D',
           ],
-          },
-
+        },
         {
           type: 'category',
           label: 'ODYSSEY X86J4105',
@@ -4049,7 +3873,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'ODYSSEY STM32MP157C',
@@ -4060,7 +3883,6 @@ const sidebars = {
         },
       ],
     },
-    
     {
       type: 'category',
       label: 'reCamera',
@@ -4073,7 +3895,6 @@ const sidebars = {
         },
       ]
     },
-
     {
       type: 'category',
       label: 'reTerminal E Series',
@@ -4090,24 +3911,21 @@ const sidebars = {
         },
       ]
     },
-
     {
       type: 'category',
       label: 'Other Edge Devices',
       items: [
-          {
-            type: 'category',
-            label: 'reServer X86',
-            items: [
-              'Edge/reServer/reServer_X86/reServer-Getting-Started',
-              'Edge/reServer/reServer_X86/reServer-Update-BIOS-Install-Drivers',
-            ],
-          },
+        {
+          type: 'category',
+          label: 'reServer X86',
+          items: [
+            'Edge/reServer/reServer_X86/reServer-Getting-Started',
+            'Edge/reServer/reServer_X86/reServer-Update-BIOS-Install-Drivers',
+          ],
+        },
         'Edge/Quantum_Development_Board/Quantum-Mini-Linux-Development-Kit',
       ],
     },
-
-
     {
       type: 'doc',
       id: 'Edge_Robotics',
@@ -4119,178 +3937,155 @@ const sidebars = {
       label: 'Robot Kits',
       collapsed: true,
       collapsible: true,
-          items: [
-            {
-              type: 'category',
-              label: 'Lerobot',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  //'Robotics/Robot_Kits/Lerobot/En_Hackathon_Thor',
-                  'Robotics/Robot_Kits/Lerobot/Fine_tune_GR00T_N1.5_for_LeRobot_SO_Arm_and_Deploy_on_Jetson_Thor',
-                  'Robotics/Robot_Kits/Lerobot/Lerobot_Starai_Arm',
-                  'Robotics/Robot_Kits/Lerobot/Starai_Arm_ROS2_Moveit',
-                  'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_New',
-                  //'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
-                  'Robotics/Robot_Kits/Lerobot/Lerobot_Lekiwi',
-                  'Robotics/Robot_Kits/Lerobot/Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
-                    ]},
-
-                    {
-                      type: 'category',
-                      label: 'Hand',
-                        // link: {
-                        //   type: "doc",
-                        //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                        // },
-                        items: [
-                          'Robotics/Robot_Kits/Hand/AmazingHand',
-                            ]},
-
-          ]
-        },
+      items: [
         {
           type: 'category',
-          label: 'Actuator',
+          label: 'Lerobot',
           // link: {
           //   type: "doc",
-          //   id: 'Edge/NVIDIA_Jetson/Application',
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
           // },
           items: [
-            'Robotics/Robot_Actuator/Myactuator_Series',
-            'Robotics/Robot_Actuator/Damiao_Series',
-            'Robotics/Robot_Actuator/Feetech_Servo',
-            'Robotics/Robot_Actuator/HighTorque',
-              ]
-        },
-        {
-          type: 'category',
-          label: 'Sensor',
-          // link: {
-          //   type: "doc",
-          //   id: 'Edge/NVIDIA_Jetson/Application',
-          // },
-          items: [
-            {
-              type: 'category',
-              label: 'Lidar',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  'Robotics/Robot_Sensor/Lidar/Robosense_Lidar',
-                  'Robotics/Robot_Sensor/Lidar/MID360',
-                  'Robotics/Robot_Sensor/Lidar/A_Loam',
-                  'Robotics/Robot_Sensor/Lidar/SLAMTEC',
-                ]},
-            {
-              type: 'category',
-              label: 'Camera',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  'Robotics/Robot_Sensor/Camera/Getting_Start_with_AC1',
-                  'Robotics/Robot_Sensor/Camera/Getting_Start_with_Orbbec_Gemini2_3D_Camera',
-                  'Robotics/Robot_Sensor/Camera/Orbbec_Depth_Camera',
-                  'Robotics/Robot_Sensor/Camera/ORB_SLAM3_with_Orbbec_Gemini2',
-                  'Robotics/Robot_Sensor/Camera/Orbbec_Gemini_335Lg',
-                  'Robotics/Robot_Sensor/Camera/Sensing_GMSL_Camera',
-                  'Robotics/Robot_Sensor/Camera/CSI_Camera'
-                ]},
-            {
-              type: 'category',
-              label: 'IMU',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  'Robotics/Robot_Sensor/IMU/Hexfellow_Y200',
-                    ]},
+            //'Robotics/Robot_Kits/Lerobot/En_Hackathon_Thor',
+            'Robotics/Robot_Kits/Lerobot/Fine_tune_GR00T_N1.5_for_LeRobot_SO_Arm_and_Deploy_on_Jetson_Thor',
+            'Robotics/Robot_Kits/Lerobot/Lerobot_Starai_Arm',
+            'Robotics/Robot_Kits/Lerobot/Starai_Arm_ROS2_Moveit',
+            'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_New',
+            //'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
+            'Robotics/Robot_Kits/Lerobot/Lerobot_Lekiwi',
+            'Robotics/Robot_Kits/Lerobot/Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
           ]
         },
         {
           type: 'category',
-          label: 'Software',
+          label: 'End Effectors',
           items: [
-            
-            {
-              type: 'category',
-              label: 'ROS',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  "Robotics/Robot_Software/ROS/Installing_ROS1",
-                  "Robotics/Robot_Software/ROS/Install_IsaacROS",
-                  "Robotics/Robot_Software/ROS/Install_ROS2_Humble",
-                  "Robotics/Robot_Software/ROS/Isaac_ROS_AprilTag",
-                  "Robotics/Robot_Software/ROS/Isaac_ROS_Visual_SLAM",
-                    ]},
-            {
-              type: 'category',
-              label: 'Isaag Lab',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  'Robotics/Robot_Software/Isaac_Lab/Install_Isaac_lab',
-                  'Robotics/Robot_Software/Isaac_Lab/Simulate_SoArm101_by_LeIsaac',
-                  'Robotics/Robot_Software/Isaac_Lab/Training_SoARM101_Policy_with_IsaacLab',
-                    ]},
-
-            {
-              type: 'category',
-              label: 'PX4',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  "Robotics/Robot_Software/PX4/Control_PX4_with_reComputer_Jetson",
-                  "Robotics/Robot_Software/PX4/Object_Tracking_with_reComputer_Jetson_and_PX4"
-                    ]},
-            'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
-            'Robotics/Robot_Software/control_robotic_arm_via_phospho',
-            
+            'Robotics/Robot_Kits/End_Effectors/DM_Gripper',
           ]
-
+        },
+        {
+          type: 'category',
+          label: 'Hand',
+          items: [
+            'Robotics/Robot_Kits/Hand/AmazingHand',
+          ]
+        },
+      ]
     },
-    
-
-    // {
-
-    //   type: 'doc',
-    //   label: '--Cloud and Chain--',
-    //   id: 'CloudnChain',
-
-    // },
-
-    // {
-    //   type: 'html',
-    //   value: `
-    // <style>
-    //   .sub_item {
-    //     width: 275px;
-    //     display:inline-block;
-    //     text-align:center;
-    //     font-size:20px;
-    //     margin-top: 10px;
-    //   }
-    // </style>
-    // <div style="width:100px;text-align:center">
-    //   <div class="sub_item"><strong> Cloud and Chain </strong></div>
-    // </div>
-    // `,
-    // },
-
+    {
+      type: 'category',
+      label: 'Actuator',
+      // link: {
+      //   type: "doc",
+      //   id: 'Edge/NVIDIA_Jetson/Application',
+      // },
+      items: [
+        'Robotics/Robot_Actuator/Myactuator_Series',
+        'Robotics/Robot_Actuator/Damiao_Series',
+        'Robotics/Robot_Actuator/Feetech_Servo',
+        'Robotics/Robot_Actuator/HighTorque',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Sensor',
+      // link: {
+      //   type: "doc",
+      //   id: 'Edge/NVIDIA_Jetson/Application',
+      // },
+      items: [
+        {
+          type: 'category',
+          label: 'Lidar',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            'Robotics/Robot_Sensor/Lidar/Robosense_Lidar',
+            'Robotics/Robot_Sensor/Lidar/MID360',
+            'Robotics/Robot_Sensor/Lidar/A_Loam',
+            'Robotics/Robot_Sensor/Lidar/SLAMTEC',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Camera',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            'Robotics/Robot_Sensor/Camera/Getting_Start_with_AC1',
+            'Robotics/Robot_Sensor/Camera/Getting_Start_with_Orbbec_Gemini2_3D_Camera',
+            'Robotics/Robot_Sensor/Camera/Orbbec_Depth_Camera',
+            'Robotics/Robot_Sensor/Camera/ORB_SLAM3_with_Orbbec_Gemini2',
+            'Robotics/Robot_Sensor/Camera/Orbbec_Gemini_335Lg',
+            'Robotics/Robot_Sensor/Camera/Sensing_GMSL_Camera',
+            'Robotics/Robot_Sensor/Camera/CSI_Camera'
+          ]
+        },
+        {
+          type: 'category',
+          label: 'IMU',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            'Robotics/Robot_Sensor/IMU/Hexfellow_Y200',
+          ]
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Software',
+      items: [
+        {
+          type: 'category',
+          label: 'ROS',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            "Robotics/Robot_Software/ROS/Installing_ROS1",
+            "Robotics/Robot_Software/ROS/Install_IsaacROS",
+            "Robotics/Robot_Software/ROS/Install_ROS2_Humble",
+            "Robotics/Robot_Software/ROS/Isaac_ROS_AprilTag",
+            "Robotics/Robot_Software/ROS/Isaac_ROS_Visual_SLAM",
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Isaag Lab',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            'Robotics/Robot_Software/Isaac_Lab/Install_Isaac_lab',
+            'Robotics/Robot_Software/Isaac_Lab/Simulate_SoArm101_by_LeIsaac',
+            'Robotics/Robot_Software/Isaac_Lab/Training_SoARM101_Policy_with_IsaacLab',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'PX4',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            "Robotics/Robot_Software/PX4/Control_PX4_with_reComputer_Jetson",
+            "Robotics/Robot_Software/PX4/Object_Tracking_with_reComputer_Jetson_and_PX4"
+          ]
+        },
+        'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
+        'Robotics/Robot_Software/control_robotic_arm_via_phospho',
+      ]
+    },
     {
       type: 'doc',
       id: 'Cloud',
@@ -4361,7 +4156,6 @@ const sidebars = {
         },
       ],
     },
-    
     // START OF Seeed SOLUTION
     {
       type: 'link',
@@ -4369,6 +4163,16 @@ const sidebars = {
       href: 'https://solution.seeed.cc/',
       className: 'sideboard_calss',
     },
+    // {      
+    //   type: 'category',
+    //   label: 'AI Agents',
+    //   items:[
+    //     {
+    //       type: 'autogenerated',
+    //       dirName: 'Solutions/ai-agents',
+    //     }
+    //   ],
+    // },
     // {
     //   type: 'category',
     //   label: 'Smart Agriculture',
@@ -4382,7 +4186,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Smart Building',
-      items:[
+      items: [
         {
           type: 'autogenerated',
           dirName: 'Solutions/smart-building',
@@ -4390,9 +4194,9 @@ const sidebars = {
       ],
     },
     {
-      type: 'category', 
+      type: 'category',
       label: 'Mission Pack',
-      items:[
+      items: [
         {
           type: 'autogenerated',
           dirName: 'Solutions/mission-pack-v3',
@@ -4402,14 +4206,12 @@ const sidebars = {
     'Solutions/jetson-crowd-tracking',
     'Solutions/Frigate_on_Jetson_NodeRED_Gun_Alerts',
     // END OF Solution
-
     {
       type: 'doc',
       id: 'Topics/Topic_introduction',
       label: 'Technology Topics',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Home Assistant',
@@ -4425,7 +4227,6 @@ const sidebars = {
         'Topics/Home_Assistant/Home_Assistant_Tutorials/sensecraft_homeassistant_userguide',
       ],
     },
-
     {
       type: 'category',
       label: 'TinyML',
@@ -4446,11 +4247,10 @@ const sidebars = {
             id: 'Topics/TinyML/TinyML_Workshop/TinyML_workshop_course',
           },
           items: [
-              'Topics/TinyML/TinyML_Workshop/sscma',
-              'Topics/TinyML/TinyML_Workshop/TrainModel',
+            'Topics/TinyML/TinyML_Workshop/sscma',
+            'Topics/TinyML/TinyML_Workshop/TrainModel',
           ],
         },
-
         {
           type: 'category',
           label: 'ModelAssistant',
@@ -4462,9 +4262,9 @@ const sidebars = {
               label: 'Introduction',
               collapsed: false,
               items: [
-              'Topics/TinyML/ModelAssistant/introduction/overview',
-              'Topics/TinyML/ModelAssistant/introduction/quick_start',
-              'Topics/TinyML/ModelAssistant/introduction/installation',
+                'Topics/TinyML/ModelAssistant/introduction/overview',
+                'Topics/TinyML/ModelAssistant/introduction/quick_start',
+                'Topics/TinyML/ModelAssistant/introduction/installation',
               ]
             },
             {
@@ -4509,25 +4309,21 @@ const sidebars = {
               collapsed: true,
               collapsible: true,
               link: {
-               type: "doc",
-               id: 'Topics/TinyML/ModelAssistant/deploy/overview',
+                type: "doc",
+                id: 'Topics/TinyML/ModelAssistant/deploy/overview',
               },
               items: [
-              'Topics/TinyML/ModelAssistant/deploy/ma_deploy_yolov5',
-              'Topics/TinyML/ModelAssistant/deploy/ma_deploy_yolov8',
-              'Topics/TinyML/ModelAssistant/deploy/ma_deploy_yolov8_pose',
+                'Topics/TinyML/ModelAssistant/deploy/ma_deploy_yolov5',
+                'Topics/TinyML/ModelAssistant/deploy/ma_deploy_yolov8',
+                'Topics/TinyML/ModelAssistant/deploy/ma_deploy_yolov8_pose',
               ]
             },
           ],
         },
       ],
     },
-
-  
-
     'Topics/Open_Source/Open_Source_Topic',
     'Topics/Edge_AI/Edge_AI_Topic',
-
     /*
       {
       type: 'doc',
@@ -4536,60 +4332,44 @@ const sidebars = {
       className: 'sideboard_calss',
       },
 */
-
-
-{
-  type: 'doc',
-  id: 'Contributor',
-  label: 'Contributions',
-  className: 'sideboard_calss',
-},
-
-// {
-//       type: 'category',
-//       label: 'Fusion Service',
-//       items: [
-//         'Contribution/Fusion/Service_for_Fusion_PCB',
-//         'Contribution/Fusion/Galileo_Case',
-//         'Contribution/Fusion/Unibody_box_for_Galileo_Gen2',
-//         'Contribution/Fusion/Starter_bundle_harness_V1',
-//       ]
-// },
-
-// 'Contribution/Contributors/How_To_Edit_A_Document',
-// 'Contribution/Contributors/Things_We_Make',
-
-{
-  type: 'category',
-  label: 'Github Contributions Guide',
-  collapsed: true,
-  collapsible: true,
-  link: {
-    type: "doc",
-    id: 'Contribution/Contributors/Contribution-Guide/Contribution-Guide',
-  },
-  items: [
-    'Contribution/Contributors/Deploy_Page_Locally/Deploy_Page_Locally',
-    'Contribution/Contributors/Contribution-Guide/full_steps_pull_request',
-    'Contribution/Contributors/Contribution-Guide/quick_pull_request',
-
-  ],
-},
-
-
-
-
-// 'Contribution/Contributors/community_sourced_projects',
-'Contribution/Contributors/Scale-up-Your-Creation-with-Fusion',
-
-
+    {
+      type: 'doc',
+      id: 'Contributor',
+      label: 'Contributions',
+      className: 'sideboard_calss',
+    },
+    // {
+    //       type: 'category',
+    //       label: 'Fusion Service',
+    //       items: [
+    //         'Contribution/Fusion/Service_for_Fusion_PCB',
+    //         'Contribution/Fusion/Galileo_Case',
+    //         'Contribution/Fusion/Unibody_box_for_Galileo_Gen2',
+    //         'Contribution/Fusion/Starter_bundle_harness_V1',
+    //       ]
+    // },
+    {
+      type: 'category',
+      label: 'Github Contributions Guide',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'Contribution/Contributors/Contribution-Guide/Contribution-Guide',
+      },
+      items: [
+        'Contribution/Contributors/Deploy_Page_Locally/Deploy_Page_Locally',
+        'Contribution/Contributors/Contribution-Guide/full_steps_pull_request',
+        'Contribution/Contributors/Contribution-Guide/quick_pull_request',
+      ],
+    },
+    'Contribution/Contributors/Scale-up-Your-Creation-with-Fusion',
     {
       type: 'doc',
       id: 'Top_Brand/PopularPlatforms',
       label: 'Popular Platforms',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Arduino',
@@ -4699,7 +4479,6 @@ const sidebars = {
                 'Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/How_To_Choose_The_Right_Cable',
               ],
             },
-
             {
               type: 'category',
               label: 'Arduino Enhanced Usage',
@@ -4739,7 +4518,6 @@ const sidebars = {
                 'Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/Project_Eight-Thermostat',
               ],
             },
-
             {
               type: 'category',
               label: 'Compiling Platform',
@@ -4790,7 +4568,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'Raspberry Pi',
@@ -4816,7 +4593,6 @@ const sidebars = {
             'Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Module/Raspberry_pi_CM4_update_eeprom',
           ],
         },
-
         {
           type: 'category',
           label: 'Pi HAT',
@@ -4839,7 +4615,6 @@ const sidebars = {
             'Top_Brand/Raspberry_Pi/Pi_HAT/two-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi',
           ],
         },
-
         {
           type: 'category',
           label: 'Accessories',
@@ -4851,7 +4626,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Cooler_Device',
+          label: 'Cooler Device',
           items: [
             'Top_Brand/Raspberry_Pi/Cooler_Device/Water_Cooling_Kit',
           ],
@@ -4874,7 +4649,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'Micro:bit',
@@ -4901,14 +4675,7 @@ const sidebars = {
       ],
     },
     // 'Contribution/Home_Assistant/Home_Assistant_Topic',
-
-
-
-
-
-
-
-/*
+    /*
     {
       type: 'html',
       value: `
@@ -4927,13 +4694,7 @@ const sidebars = {
     `,
     },
 */
-
-
-
-
-
-
-/*
+    /*
     {
       type: 'html',
       value: `
@@ -4952,7 +4713,6 @@ const sidebars = {
     `,
     },
     */
-
     {
       type: 'doc',
       id: 'Seeed_Elderly/DiscontinuedProducts',
@@ -4997,7 +4757,6 @@ const sidebars = {
             //'Seeed_Elderly/reSpeaker/ReSpeaker-USB-Mic-Array',
           ],
         },
-
         {
           type: 'category',
           label: 'rePhone',
@@ -5022,7 +4781,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Bee',
@@ -5131,12 +4889,16 @@ const sidebars = {
         {
           type: 'category',
           label: 'NPi-i',
-          items: ['Seeed_Elderly/NPi-i/NPi-i.MX6ULL-Dev-Board-Linux-SBC'],
+          items: [
+            'Seeed_Elderly/NPi-i/NPi-i.MX6ULL-Dev-Board-Linux-SBC'
+          ],
         },
         {
           type: 'category',
           label: 'W600',
-          items: ['Seeed_Elderly/W600/W600_Module'],
+          items: [
+            'Seeed_Elderly/W600/W600_Module'
+          ],
         },
         {
           type: 'category',
@@ -5192,10 +4954,6 @@ const sidebars = {
         },
       ],
     },
-
-
-    
-
     'About',
     'License',
   ],
@@ -5295,20 +5053,33 @@ const sidebars = {
 
   // 中文文档
   CNSidebar: [
+    // 'Sensing_test',
     {
       type: 'doc',
       id: 'zh-CN/cn_Getting_Started',
-      label: '快速入门',
+      label: '入门指南',
       className: 'sideboard_calss',
     },
-
+    // {
+    //   type: 'category',
+    //   label: 'TinyML',
+    //   collapsed: true,
+    //   collapsible: true,
+    //   link: {
+    //     type: "doc",
+    //     id: "TinyML/TinyML_Topic",
+    //   },
+    //   items: [
+    //     'TinyML/TinyML_workshop_course',
+    //   ]
+    // },
+    // 'Getting_Started_test',
     {
       type: 'doc',
       id: 'zh-CN/cn_Sensor',
       label: '传感器',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Grove',
@@ -5343,7 +5114,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'AI 驱动传感器',
-              items: [        
+              items: [
                 {
                   type: 'category',
                   label: 'Grove Vision AI',
@@ -5385,6 +5156,7 @@ const sidebars = {
                       label: '应用',
                       items: [
                         'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/cn_grove-vision-ai-v2-sensecap-app',
+                        // 'Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/grove-vision-ai-v2-ha',
                         'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/cn_grove-vision-ai-v2-demo',
                         'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/cn_grove_vision_ai_v2_webcamera',
                         'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/cn_vision_ai_v2_crowd_heat_map',
@@ -5394,6 +5166,7 @@ const sidebars = {
                   ],
                 },
                 'zh-CN/Sensor/Grove/Grove_Sensors/AI-powered/cn_Grove-Gesture_sensor_paj7660',
+                // 'Sensor/Grove/Grove_Sensors/AI-powered/Gesture_control_music_application',
               ],
             },
             {
@@ -5411,7 +5184,6 @@ const sidebars = {
                 'zh-CN/Sensor/Grove/Grove_Sensors/Temp&Humi/cn_Grove-SHT4x',
               ],
             },
-
             {
               type: 'category',
               label: '温度传感器',
@@ -5427,9 +5199,9 @@ const sidebars = {
                 'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-Temperature_Sensor',
                 'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-Temperature_Sensor_V1.2',
                 'zh-CN/Sensor/Grove/Grove_Sensors/Temperature/cn_Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808',
+                // 'Sensor/Grove/Grove_Sensors/Temperature/Sensor_temperature',
               ],
             },
-
             {
               type: 'category',
               label: '土壤湿度传感器',
@@ -5551,7 +5323,7 @@ const sidebars = {
                 'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Flame_Sensor',
                 'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-Infrared_Reflective_Sensor',
                 'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove-I2C_Color_Sensor',
-                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove_Color_Sensor'
+                'zh-CN/Sensor/Grove/Grove_Sensors/Light/cn_Grove_Color_Sensor',
               ],
             },
             {
@@ -5570,7 +5342,6 @@ const sidebars = {
                 'zh-CN/Sensor/Grove/Grove_Sensors/Biometric/cn_Grove-Human_Presence_Sensor-AK9753',
               ],
             },
-
             {
               type: 'category',
               label: '声音传感器',
@@ -5646,7 +5417,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Grove 网络模块',
@@ -5667,13 +5437,13 @@ const sidebars = {
                 id: "zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/cn_Grove_LoRa_E5_New_Version"
               },
               items: [
-                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/cn_Grove_LoRa_E5_New_Version',
-                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_P2P',
-                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_TTN_Demo',
-                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_Helium_Demo',
-                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_Helium_tinyML_Demo',
-                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_SenseCAP_Cloud_Demo',
-                    'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_SenseCAP_XIAO_ESP32S3',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/cn_Grove_LoRa_E5_New_Version',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_P2P',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_TTN_Demo',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_Helium_Demo',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_Helium_tinyML_Demo',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_SenseCAP_Cloud_Demo',
+                'zh-CN/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/cn_Grove_Wio_E5_SenseCAP_XIAO_ESP32S3',
               ],
             },
             {
@@ -5713,7 +5483,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '射频',
+              label: 'RF',
               items: [
                 'zh-CN/Sensor/Grove/Grove_Sensors_Network/RF/cn_Grove-125KHz_RFID_Reader',
                 'zh-CN/Sensor/Grove/Grove_Sensors_Network/RF/cn_Grove-315MHz_RF_Kit',
@@ -5737,7 +5507,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Grove 配件',
@@ -5818,7 +5587,6 @@ const sidebars = {
                 'zh-CN/Sensor/Grove/Grove_Accessories/Actuator/cn_Grove-Voltage_Divider',
               ],
             },
-
             {
               type: 'category',
               label: '时间模块',
@@ -5827,7 +5595,6 @@ const sidebars = {
                 'zh-CN/Sensor/Grove/Grove_Accessories/Time/cn_Grove_High_Precision_RTC',
               ],
             },
-
             {
               type: 'category',
               label: '电流模块',
@@ -5896,17 +5663,17 @@ const sidebars = {
                 'zh-CN/Sensor/Grove/Grove_Accessories/Input_Output/cn_Grove-NOT',
               ],
             },
-
             {
               type: 'category',
               label: '外壳',
-              items: ['zh-CN/Sensor/Grove/Grove_Accessories/Case/cn_Grove-Wrapper'],
+              items: [
+                'zh-CN/Sensor/Grove/Grove_Accessories/Case/cn_Grove-Wrapper',
+              ],
             },
           ],
         },
       ],
     },
-
     {
       type: 'category',
       label: 'SenseCAP',
@@ -5929,48 +5696,60 @@ const sidebars = {
           items: [
             'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_SenseCAP_T1000_Tracker_Introduction',
             {
-            type: 'category',
-            label: '用户指南',
-            items: [
-              'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Get_Started',
-              'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Payload',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Tracker_WiFi_Geolocation',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_BC01_Indoor_Bluetooth_Beacon',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Indoor_Positioning_Guide',
-                  ],
-          },
-          {
-            type: 'category',
-            label: '与 LoRaWAN 网络服务器集成',
-            items: [
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_Helium',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_The_Things_Network',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_Loriot',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_AWS_Service',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_TTN_Mapper',
-                  ],
-          },
-          {
-            type: 'category',
-            label: '与热门仪表板集成',
-            items: [
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Datacake_Integrated',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Ubidots_Integrated',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_thingsboard_integrated', 
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Ubidots_Integrated(Helium)',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Qubitro_Integrated',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_TagoIO_Integrated',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_InfluxDB_Integrated',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Akenza_Integrated',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Trackpac_Integrated',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_sensecap_t1000_tracker_wialon',
-                  ],
-          },
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_FAQ',
-          'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_Firmware_release_note',
+              type: 'category',
+              label: '用户指南',
+              items: [
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Get_Started',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Payload',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Tracker_WiFi_Geolocation',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_BC01_Indoor_Bluetooth_Beacon',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/cn_Indoor_Positioning_Guide',
               ],
+            },
+            {
+              type: 'category',
+              label: '集成 LoRaWAN 网络服务器',
+              items: [
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_Helium',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_The_Things_Network',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_Connect_to_Loriot',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_AWS_Service',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/cn_TTN_Mapper',
+              ],
+            },
+            {
+              type: 'category',
+              label: '集成流行仪表板',
+              items: [
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Datacake_Integrated',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Ubidots_Integrated',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_thingsboard_integrated',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Ubidots_Integrated(Helium)',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Qubitro_Integrated',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_TagoIO_Integrated',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_InfluxDB_Integrated',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Akenza_Integrated',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_Trackpac_Integrated',
+                'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/cn_sensecap_t1000_tracker_wialon',
+              ],
+            },
+            'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_FAQ',
+            'zh-CN/Sensor/SenseCAP/SenseCAP_T1000_Tracker/cn_Firmware_release_note',
+          ],
         },
-
+        //       {
+        //            type: 'category',
+        //           label: 'SenseCAP T1000-P Pet Tracker',
+        //           collapsed: true,
+        //           collapsible: true,
+        //          link: {
+        //            type: "doc",
+        //           id: 'Sensor/SenseCAP/SenseCAP_T1000-P/t1000_p_intro',
+        //         },
+        //        items: [
+        //         'Sensor/SenseCAP/SenseCAP_T1000-P/get_started_with_t1000_p',
+        //           ],
+        //     },
         {
           type: 'category',
           label: 'SenseCAP 传感器',
@@ -5981,11 +5760,9 @@ const sidebars = {
             id: "zh-CN/Sensor/SenseCAP/SenseCAP_Intro/cn_SenseCAP_Sensor_Intro",
           },
           items: [
-
             {
               type: 'category',
               label: 'SenseCAP LoRaWAN 传感器',
-
               items: [
                 {
                   type: 'category',
@@ -6005,7 +5782,6 @@ const sidebars = {
                     },
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'SenseCAP S2120 8合1 LoRaWAN 气象传感器',
@@ -6014,7 +5790,6 @@ const sidebars = {
                     'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/cn_Tutorials-Getting_Started_with_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor',
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'SenseCAP A1101',
@@ -6023,10 +5798,9 @@ const sidebars = {
                     'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_Train-Deploy-AI-Model-A1101',
                     'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_One-Stop-Model-Training-with-Edge-Impulse',
                     'zh-CN/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/cn_Train-Water-Meter-Digits-Recognition-Model-with-SenseCAP-A1101',
+                    //                 'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/Train_and_Deploy_Your_Own_AI_Model_with_Edge_Impulse_into_A1101',
                   ],
                 },
-
-
                 {
                   type: 'category',
                   label: 'SenseCAP A1102',
@@ -6037,12 +5811,19 @@ const sidebars = {
                     },
                   ],
                 },
+                // {
+                //   type: 'category',
+                //   label: 'SenseCAP A1102',
+                //   items: [
+                //     'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1102/Getting_Start_With_A1102',
+                //     'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1102/TrainAI_With_A1102',
+                //   ],
+                // },
               ],
             },
-
             {
               type: 'category',
-              label: 'SenseCAP ONE 气象传感器',
+              label: ' SenseCAP ONE 气象传感器',
               collapsed: true,
               collapsible: true,
               link: {
@@ -6063,7 +5844,6 @@ const sidebars = {
                 },
               ],
             },
-
             {
               type: 'category',
               label: 'SenseCAP 传感器探头',
@@ -6090,10 +5870,9 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
-          label: 'SenseCAP 传感器构建器',
+          label: ' SenseCAP 传感器构建器',
           collapsed: true,
           collapsible: true,
           link: {
@@ -6102,13 +5881,12 @@ const sidebars = {
           },
           items: [
             'zh-CN/Sensor/SenseCAP/SenseCAP_Sensor_Builder/cn_SenseCAP_Builder_build_LoRaWAN_Sensors',
-            'zh-CN/Sensor/SenseCAP/SenseCAP_Sensor_Builder/cn_list_of_seeed_grove_for_builder'
+            'zh-CN/Sensor/SenseCAP/SenseCAP_Sensor_Builder/cn_list_of_seeed_grove_for_builder',
           ],
         },
-
         {
           type: 'category',
-          label: 'SenseCAP 数据记录器',
+          label: ' SenseCAP 数据记录器',
           collapsed: true,
           collapsible: true,
           link: {
@@ -6143,7 +5921,7 @@ const sidebars = {
           label: '学习资源',
           items: [
             'zh-CN/Sensor/SenseCAP/Learn/cn_How_to_Select_the_LoRaWAN_Network',
-        ],
+          ],
         },
       ],
     },
@@ -6175,7 +5953,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCAP 观察者',
+      label: 'SenseCAP Watcher',
       collapsed: true,
       collapsible: true,
       link: {
@@ -6240,7 +6018,6 @@ const sidebars = {
         'zh-CN/Sensor/mmWave_radar_sensor/cn_Radar_MR24FDB1',
       ],
     },
-
     {
       type: 'category',
       label: 'XIAO',
@@ -6252,7 +6029,6 @@ const sidebars = {
       },
       items: [
         'zh-CN/Sensor/SeeedStudio_XIAO/cn_SeeedStudio_XIAO_Series_Projects',
-
         {
           type: 'category',
           label: 'XIAO SAMD21',
@@ -6267,7 +6043,7 @@ const sidebars = {
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_Seeeduino-XIAO-by-Nanase',
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_Seeeduino-XIAO-CircuitPython',
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_XIAO-SAMD21-MicroPython',
-
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/cn_MicroBlocks_XIAO_SAMD21',
               ],
             },
             {
@@ -6289,7 +6065,8 @@ const sidebars = {
             },
           ],
         },
-        { // XIAO RA4M1
+        {
+          // XIAO RA4M1
           type: 'category',
           label: 'XIAO RA4M1',
           items: [
@@ -6321,11 +6098,12 @@ const sidebars = {
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-Arduino',
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-MicroPython',
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-CircuitPython',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_MicroBlocks_XIAO_RP2040',
               ],
             },
             {
               type: 'category',
-              label: '实时操作系统',
+              label: 'RTOS',
               items: [
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-with-NuttX-RTOS',
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/cn_XIAO-RP2040-Zephyr-RTOS',
@@ -6341,7 +6119,8 @@ const sidebars = {
             },
           ],
         },
-        { // XIAO RP2350
+        {
+          // XIAO RP2350
           type: 'category',
           label: 'XIAO RP2350',
           items: [
@@ -6358,7 +6137,7 @@ const sidebars = {
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO_BLE',
             {
               type: 'category',
-              label: '实时操作系统',
+              label: 'RTOS',
               items: [
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-nRF52840-NuttX-RTOS',
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-nRF52840-Zephyr-RTOS',
@@ -6369,6 +6148,7 @@ const sidebars = {
               label: '编程语言',
               items: [
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_XIAO-BLE_CircutPython',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/cn_MicroBlocks_XIAO_nRF52840',
               ],
             },
             {
@@ -6423,6 +6203,7 @@ const sidebars = {
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/cn_XIAO_nRF54L15-Sense_Getting_Started',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/cn_XIAO_nRF54L15-Sense_Pin_Multiplexing',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/cn_XIAO_nRF54L15-Sense_Built-in-Sensor',
+            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/cn_XIAO_nRF54L15-Sense_Power_Consumptions',
             {
               type: 'category',
               label: '无线连接',
@@ -6437,6 +6218,14 @@ const sidebars = {
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/cn_XIAO_nRF54L15-Sense_PlatformIO',
               ],
             },
+            // {
+            //   type: 'category',
+            //   label: 'Application',
+            //   items: [
+            //     'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_WiFi_Usage',
+            //     'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_Bluetooth_Usage',
+            //   ],
+            // },
           ],
         },
         {
@@ -6445,6 +6234,7 @@ const sidebars = {
           items: [
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_Getting_Started',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_Pin_Multiplexing',
+            //       'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_MicroPython',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO-ESP32C3-NuttX',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO-ESP32C3-Zephyr',
             {
@@ -6459,8 +6249,9 @@ const sidebars = {
               type: 'category',
               label: '编程语言',
               items: [
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_with_CircuitPython',
-            'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_with_MicroPython',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_with_CircuitPython',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_XIAO_ESP32C3_with_MicroPython',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/cn_MicroBlocks_XIAO_ESP32_C3',
               ],
             },
             {
@@ -6484,7 +6275,6 @@ const sidebars = {
           items: [
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_Getting_Started',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO_ESP32C6_Pin_Multiplexing',
-      
             {
               type: 'category',
               label: '无线连接',
@@ -6511,7 +6301,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '实时操作系统',
+              label: 'RTOS',
               items: [
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/cn_XIAO-ESP32C6-NuttX',
               ],
@@ -6534,7 +6324,6 @@ const sidebars = {
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/cn_xiao_esp32c6_kafka',
               ],
             },
-            
           ],
         },
         {
@@ -6558,11 +6347,13 @@ const sidebars = {
               items: [
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_with_MicroPython',
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO_ESP32S3_CircuitPython',
+                'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_MicroBlocks_XIAO_ESP32_S3',
+                // 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Micropython',
               ],
             },
             {
               type: 'category',
-              label: '实时操作系统',
+              label: 'RTOS',
               items: [
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO-ESP32S3-Zephyr-RTOS',
                 'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/cn_XIAO-ESP32S3-FreeRTOS',
@@ -6629,6 +6420,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'XIAO GPS 模块',
+              // link: {
+              //   type: "doc",
+              //   id: 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Introduction',
+              // },
               items: [
                 {
                   type: 'autogenerated',
@@ -6646,7 +6441,6 @@ const sidebars = {
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_XIAO-RS485-Expansion-Board',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_Bus_Servo_Driver_Board',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/cn_LED_Driver_Board',
-            
           ],
         },
         {
@@ -6663,15 +6457,17 @@ const sidebars = {
         'zh-CN/Sensor/SeeedStudio_XIAO/cn_PCB_Design_XIAO',
         {
           type: 'category',
-          label: '教学套件',
-          items: ['zh-CN/Sensor/SeeedStudio_XIAO/Kit_with_Courses/cn_XIAO-Kit-Courses'],
+          label: '课程套件',
+          items: [
+            'zh-CN/Sensor/SeeedStudio_XIAO/Kit_with_Courses/cn_XIAO-Kit-Courses',
+          ],
         },
         'zh-CN/Sensor/SeeedStudio_XIAO/cn_XIAO_FAQ',
       ],
     },
     {
       type: 'category',
-      label: 'XIAO 创意装置',
+      label: 'XIAO 小工具',
       items: [
         {
           type: 'autogenerated',
@@ -6693,9 +6489,23 @@ const sidebars = {
         'zh-CN/Sensor/Wio_Terminal/cn_Wio-Terminal-CircuitPython',
         'zh-CN/Sensor/Wio_Terminal/cn_Software-FreeRTOS',
         'zh-CN/Sensor/Wio_Terminal/cn_wio_terminal_faq',
+        // {
+        //   type: 'category',
+        //   label: 'ArduPy with Wio Terminal',
+        //   collapsed: true,
+        //   collapsible: true,
+        //   link: {
+        //     type: "doc",
+        //     id: 'Sensor/Wio_Terminal/ArduPy/ArduPy',
+        //   },
+        //   items: [
+        //     'Sensor/Wio_Terminal/ArduPy/ArduPy-LCD',
+        //     'Sensor/Wio_Terminal/ArduPy/ArduPy-Libraries',
+        //   ],
+        // },
         {
           type: 'category',
-          label: '硬件概览',
+          label: '硬件概述',
           items: [
             {
               type: 'category',
@@ -6715,7 +6525,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '输入 / 输出',
+              label: '输入/输出',
               items: [
                 'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-Overview',
                 'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/cn_Wio-Terminal-IO-Analog',
@@ -6770,7 +6580,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '按键',
+              label: '按钮',
               items: [
                 'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Buttons/cn_Wio-Terminal-Buttons',
               ],
@@ -6784,7 +6594,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '光线传感器',
+              label: '光传感器',
               items: [
                 'zh-CN/Sensor/Wio_Terminal/Hardware_Overview/Light_Sensor/cn_Wio-Terminal-Light',
               ],
@@ -6818,7 +6628,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '简易物联网',
+              label: 'Easy IoT',
               items: [
                 'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central',
                 'zh-CN/Sensor/Wio_Terminal/Application/Easy_IoT/cn_Wio-Terminal-Azure-IOT',
@@ -6829,11 +6639,11 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '嵌入式机器学习',
+              label: '嵌入式机器学习 ',
               items: [
                 {
                   type: 'category',
-                  label: '基于 Edge Impulse 的项目',
+                  label: '基于 Edge Impulse 的项目 ',
                   items: [
                     'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-1',
                     'zh-CN/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/cn_Wio-Terminal-TinyML-EI-2',
@@ -6879,7 +6689,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '配套课程套件',
+          label: '课程套件',
           items: [
             'zh-CN/Sensor/Wio_Terminal/Kit_with_Courses/cn_Wio-Terminal-TinyML-Kit-Course',
             'zh-CN/Sensor/Wio_Terminal/Kit_with_Courses/cn_Wio-Terminal-TinyML',
@@ -6939,105 +6749,227 @@ const sidebars = {
         },
       ],
     },
-
-
+    // {
+    //   type: 'category',
+    //   label: 'SenseCAP Indicator',
+    //   collapsed: true,
+    //   collapsible: true,
+    //   link: {
+    //     type: "doc",
+    //     id: 'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/Introduction',
+    //   },
+    //   items: [
+    //     'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/Introduction',
+    //     {
+    //       type: 'category',
+    //       label: 'Setup Guide',
+    //       items: [
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/Native_Firmware',
+    //         {
+    //           type: 'category',
+    //           label: 'OpenAI X SenseCAP Indicator',
+    //           // link: {
+    //           //   type: "doc",
+    //           //   id: 'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/OpenAI_X_SenseCAP_Indicator/Overview',
+    //           // },
+    //           items: [
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/OpenAI_X_SenseCAP_Indicator/Overview',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/OpenAI_X_SenseCAP_Indicator/How_to_Set_the_API_Key',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/OpenAI_X_SenseCAP_Indicator/ChatGPT_Indicator',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/OpenAI_X_SenseCAP_Indicator/DALL·E_AI_Picture_Generator',
+    //           ],
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       type: 'category',
+    //       label: 'Development Tutorial',
+    //       items: [
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Dive_into_the_Hardware',
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/How_to_Create_your_own_UI',
+    //         {
+    //           type: 'category',
+    //           label: 'Develop with ESP32-S3',
+    //           items: [
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_ESP32-S3/Four-inch_Touch_Screen',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_ESP32-S3/Wi-Fi',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_ESP32-S3/BLE',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_ESP32-S3/Button',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_ESP32-S3/LoRa',
+    //           ],
+    //         },
+    //         {
+    //           type: 'category',
+    //           label: 'Develop with RP2040',
+    //           items: [
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/CO2_Sensor_Built-in',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/tVOC_Sensor_Built-in',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/Buzzer',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/Micro_SD',
+    //             {
+    //               type: 'category',
+    //               label: 'Grove',
+    //               items: [
+    //                 'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/Grove/Grove_ADC',
+    //                 'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/Grove/Grove_IIC',
+    //               ],
+    //             },
+    //           ],
+    //         },
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/SenseCAP_Indicator_Arduino',
+    //       ],
+    //     },
+    //     'Sensor/SenseCAP/SenseCAP_Indicator/How_To_Flash_The_Default_Firmware',
+    //     {
+    //       type: 'category',
+    //       label: 'Application',
+    //       items: [
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Application/OpenAI',
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Application/Home_Assistant',
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Application/LoRa',
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Application/Matter',
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       type: 'category',
-      label: 'ReSpeaker 2-Mics Pi HAT',
+      label: 'ReSpeaker',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: 'doc',
+        id: 'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_ReSpeaker',
+      },
       items: [
-        'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/cn_ReSpeaker_2_Mics_Pi_HAT',
         {
           type: 'category',
-          label: '适用于 v1 用户（已废弃）',
-          items: [
-            'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/cn_ReSpeaker_2_Mics_Pi_HAT_Raspberry',
-            'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/cn_ReSpeaker_2_Mics_Pi_HAT_Jetson',
-          ],
-        },
-        {
-          type: 'category',
-          label: '适用于 v2 用户',
-          items: [
-            'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/cn_ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
-            'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/cn_ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
-          ],
-        },
-        'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/cn_ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'ReSpeaker Lite',
-      items: [
-        'zh-CN/Sensor/ReSpeaker_Lite/cn_reSpeaker_lite_introduction',
-        {
-          type: 'category',
-          label: 'ReSpeaker Lite 搭配 XIAO ESP32S3',
+          label: 'ReSpeaker XVF 3800',
+          collapsed: true,
+          collapsible: true,
           link: {
-            type: "doc",
-            id: 'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_xiao_respeaker',
+            type: 'doc',
+            id: 'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf3800_usb_4_mic_array',
           },
           items: [
-            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_i2s_test',
-            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_rgb_test',
-            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_volume',
-            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_button',
-            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_record_and_play',
             {
-              type: 'doc',
-              id: 'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_generator',
-              label: '音频流生成器',
+              type: 'category',
+              label: 'ReSpeaker XVF 3800 with XIAO 介绍',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: 'doc',
+                id: 'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf3800_with_xiao_intro',
+              },
+              items: [
+                'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf3800_i2s_test',
+                'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_rgb_test',
+                'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_volume',
+                'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_record_playback',
+                'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_gpio',
+                'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_mqtt_stream',
+                'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_udp_streaming',
+                {
+                  type: 'category',
+                  label: '应用',
+                  items: [
+                    'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_ha',
+                    'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_edgeimpulse',
+                  ],
+                },
+              ],
             },
-            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_print',
-            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_memory',
-            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_player_spiffs',
-            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_mqtt',
-            'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_i2s_tflite',
           ],
         },
         {
           type: 'category',
-          label: '应用',
+          label: 'ReSpeaker Lite',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: 'doc',
+            id: 'zh-CN/Sensor/ReSpeaker_Lite/cn_reSpeaker_lite_introduction',
+          },
           items: [
-            'zh-CN/Sensor/ReSpeaker_Lite/Application/cn_respeaker_lite_ha',
-            'zh-CN/Sensor/ReSpeaker_Lite/Application/cn_respeaker_lite_pi5',
+            {
+              type: 'category',
+              label: 'ReSpeaker Lite with XIAO ESP32S3',
+              link: {
+                type: 'doc',
+                id: 'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_xiao_respeaker',
+              },
+              items: [
+                'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_i2s_test',
+                'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_rgb_test',
+                'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_volume',
+                'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_button',
+                'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_record_and_play',
+                // 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_i2s_rgb', // commented out
+                {
+                  type: 'doc',
+                  id: 'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_generator',
+                  label: '流生成器',
+                },
+                'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_print',
+                'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_memory',
+                'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_player_spiffs',
+                'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_mqtt',
+                'zh-CN/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/cn_respeaker_streams_i2s_tflite',
+              ],
+            },
+            {
+              type: 'category',
+              label: '应用',
+              items: [
+                'zh-CN/Sensor/ReSpeaker_Lite/Application/cn_respeaker_lite_ha',
+                'zh-CN/Sensor/ReSpeaker_Lite/Application/cn_respeaker_lite_pi5',
+              ],
+            },
+            'zh-CN/Sensor/ReSpeaker_Lite/cn_respeaker_enclosure',
           ],
         },
-        'zh-CN/Sensor/ReSpeaker_Lite/cn_respeaker_enclosure',
+        {
+          type: 'category',
+          collapsed: true,
+          collapsible: true,
+          label: 'ReSpeaker 2-Mics Pi HAT',
+          link: {
+            type: 'doc',
+            id: 'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/cn_ReSpeaker_2_Mics_Pi_HAT',
+          },
+          items: [
+            {
+              type: 'category',
+              label: '适用于 v1 用户（已弃用）',
+              items: [
+                'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/cn_ReSpeaker_2_Mics_Pi_HAT_Raspberry',
+                'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/cn_ReSpeaker_2_Mics_Pi_HAT_Jetson',
+              ],
+            },
+            {
+              type: 'category',
+              label: '适用于 v2 用户',
+              items: [
+                'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/cn_ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
+                'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/cn_ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
+              ],
+            },
+            'zh-CN/Sensor/ReSpeaker_2-Mics_Pi_HAT/cn_ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'ReSpeaker XVF 3000',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            'zh-CN/Seeed_Elderly/reSpeaker/Extension Board/cn_ReSpeaker_Mic_Array_v3.0',
+            'zh-CN/Seeed_Elderly/reSpeaker/Extension Board/cn_ReSpeaker_Mic_Array_v2.0',
+            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker-USB-Mic-Array',
+          ],
+        },
       ],
     },
-
-
-    {
-      type: 'category',
-      label: 'reSpeaker XVF3800 USB 四麦克风阵列',
-      items: [
-        'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf3800_usb_4_mic_array',
-
-        {
-          type: 'category',
-          label: 'reSpeaker XVF3800 USB 四麦阵列搭配 XIAO',
-          items: [
-            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf3800_with_xiao_intro',
-            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf3800_i2s_test',
-            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_rgb_test',
-            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_volume',
-            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_record_playback',
-            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_gpio',
-            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_mqtt_stream',
-          ],
-        },
-        {
-          type: 'category',
-          label: '应用',
-          items: [
-            'zh-CN/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/cn_respeaker_xvf_3800_ha',
-          ],
-        },
-      ],
-    },
-
-
     {
       type: 'category',
       label: '其他传感模块',
@@ -7065,7 +6997,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '传感网络',
+          label: '传感器网络',
           items: [
             'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_2KM_Long_Range_RF_link_kits_w_encoder_and_decoder',
             'zh-CN/Sensor/Beyond_Grove/Sensor_Network/cn_315Mhz_RF_link_kit',
@@ -7083,6 +7015,13 @@ const sidebars = {
           label: 'EcoEye 视觉摄像头',
           items: [
             'zh-CN/Sensor/Beyond_Grove/EcoEye_Embedded_Vison_Camera/cn_Get_Started_with_EcoEye',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'AI 助手',
+          items: [
+            'zh-CN/Sensor/Beyond_Grove/AI_Assistant/cn_ai_assistant_getting_started',
           ],
         },
         {
@@ -7136,7 +7075,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '电流相关',
+              label: '电流',
               items: [
                 'zh-CN/Sensor/Beyond_Grove/Accessories/Current/cn_Adjustable_DC_DC_Power_Converter_1V-12V-1.5A',
                 'zh-CN/Sensor/Beyond_Grove/Accessories/Current/cn_Capacitance_Meter_Kit',
@@ -7194,8 +7133,6 @@ const sidebars = {
         },
       ],
     },
-
-    
     {
       type: 'category',
       label: '其他微控制器',
@@ -7205,6 +7142,75 @@ const sidebars = {
           label: 'Wio 系列',
           items: [
             'zh-CN/Sensor/Wio_Series/cn_Wio',
+            // {
+            //   type: 'category',
+            //   label: 'Wio-E5',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio-E5/LoRa_E5_mini',
+            //     'Sensor/Wio_Series/Wio-E5/LoRa_E5_Dev_Board',
+            //     'Sensor/Wio_Series/Wio-E5/LoRa-E5_STM32WLE5JC_Module',
+            //   ],
+            // },
+            // {
+            //   type: 'category',
+            //   label: 'Wio-SX1262',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio_SX1262/Introduction',
+            //     //'Sensor/Wio_Series/Wio_SX1262/How_to_build_a_lora_sensor',
+            //     {
+            //       type: 'category',
+            //       label: 'Wio SX1262 with XIAO ESP32S3 Kit',
+            //       items: [
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Introduction',
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Get_Started_meshtastic',
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Single_Channel_LoRaWAN_Gateway',
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/LoRaWAN_Sensor_Node',
+            //         {
+            //           type: 'category',
+            //           label: 'LoRaWAN Network Server',
+            //           items: [
+            //             'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Lorawan_network_server/TTN',
+            //             'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Lorawan_network_server/Chirpstack',
+            //           ],
+            //         },
+            //       ],
+            //     },
+            //   ],
+            // },
+            //             {
+            //   type: 'category',
+            //   label: 'Wio Tracker 1110 Dev Board',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Introduction',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Get_Started',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Connect_to_TTN',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/LoRa_Locator',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Connect_1110_to_HA',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/change_antenna_path',
+            //     {
+            //       type: 'category',
+            //       label: 'Development Tutorial',
+            //       items: [
+            //         'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Development_Tutorial/Setup_toolchain',
+            //       ],
+            //     },
+            //   ],
+            // },
+            // {
+            //   type: 'category',
+            //   label: 'Wio WM1110 Dev Kit',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Introduction',
+            //     'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Get_Started_with_Wio-WM1110_Dev_Kit',
+            //     {
+            //       type: 'category',
+            //       label: 'Development Tutorial',
+            //       items: [
+            //         'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Development_Tutorial/Hardware_Overview',
+            //       ],
+            //     },
+            //   ],
+            // },
             {
               type: 'category',
               label: 'Sidewalk 的 LPWAN 开发套件',
@@ -7213,6 +7219,14 @@ const sidebars = {
                 'zh-CN/Sensor/Wio_Series/LPWAN_Dev_Kit_for_Sidewalk/cn_Switch_to_Wio_Tracker',
               ],
             },
+            // {
+            //   type: 'category',
+            //   label: 'Wio WM1302',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio_WM1302/WM1302_module',
+            //     'Sensor/Wio_Series/Wio_WM1302/WM1302_Pi_HAT',
+            //   ],
+            // },
             {
               type: 'category',
               label: 'Wio RP2040',
@@ -7351,7 +7365,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '带课程的套件',
+              label: '课程套件',
               items: [
                 'zh-CN/Sensor/Seeeduino Series/Kit with Courses/cn_Grove_IoT_Starter_Kits_Powered_by_AWS',
                 'zh-CN/Sensor/Seeeduino Series/Kit with Courses/cn_Seeeduino_Cloud_and_Grove_IoT_Starter_Kit_Powered_by_AWS',
@@ -7374,7 +7388,7 @@ const sidebars = {
             'zh-CN/Seeed_Elderly/LinkIt/cn_Grove_Starter_kit_for_LinkIt_Smart7688_Duo',
             {
               type: 'category',
-              label: 'LinkIt ONE',
+              label: 'Linklt ONE',
               items: [
                 'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE',
                 'zh-CN/Seeed_Elderly/LinkIt/Linklt ONE/cn_LinkIt_ONE_Tutorial-Analog_Interface',
@@ -7447,8 +7461,28 @@ const sidebars = {
         },
       ],
     },
-
-
+    // {
+    //   type: 'doc',
+    //   label: '--Network--',
+    //   id: 'Sensor_Network',
+    // },
+    // {
+    //   type: 'html',
+    //   value: `
+    // <style>
+    //   .sub_item {
+    //     width: 275px;
+    //     display:inline-block;
+    //     text-align:center;
+    //     font-size:20px;
+    //     margin-top: 10px;
+    //   }
+    // </style>
+    // <div style="width:100px;text-align:center">
+    //   <div class="sub_item"><strong> Network </strong></div>
+    // </div>
+    // `,
+    // },
     {
       type: 'doc',
       id: 'zh-CN/cn_Network',
@@ -7471,8 +7505,56 @@ const sidebars = {
         },
       ]
     },
-
-
+    // {
+    //   type: 'category',
+    //   label: 'Meshtastic Network',
+    //   collapsed: true,
+    //   collapsible: true,
+    //   link: {
+    //     type: "doc",
+    //     id: 'Network/Meshtastic_Network/meshtastic_intro',
+    //   },
+    //   items: [
+    //     {
+    //       type: 'category',
+    //       label: 'T1000-E Tracker',
+    //       items: [
+    //         'Network/Meshtastic_Network/T1000-E/t1000_e_intro',
+    //         {
+    //           type: 'doc',
+    //           id: 'Network/Meshtastic_Network/T1000-E/sensecap_t1000_e',
+    //           label: 'Get Started with T1000-E',
+    //         },
+    //       ],
+    //     },
+    //         {
+    //           type: 'category',
+    //           label: 'SenseCAP Indicator for Meshtastic',
+    //           items: [
+    //             'Network/Meshtastic_Network/SenseCAP_Indicator/sensecap_indicator_meshtastic',
+    //           ],
+    //         },
+    //         {
+    //           type: 'category',
+    //           label: 'Wio Tracker 1110 Meshtastic Kit',
+    //           items: [
+    //             'Network/Meshtastic_Network/wio_tracker_kit/meshtastic_kit_wio_tracker_1110',
+    //             {
+    //               type: 'doc', 
+    //               id:'Network/Meshtastic_Network/wio_tracker_kit/flash_meshtastic_kit',
+    //               label: 'Flash Firmware', 
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           type: 'category',
+    //           label: 'XIAO ESP32S3 & Wio-SX1262 Kit for Meshtastic',
+    //           items: [
+    //             'Network/Meshtastic_Network/XIAO_ESP32S3_&_SX1262_Kit/Get_Started_meshtastic',
+    //           ],
+    //         },
+    //       ],
+    // },
     {
       type: 'category',
       label: 'LoRa Wio 系列',
@@ -7568,8 +7650,6 @@ const sidebars = {
         },
       ],
     },
-
-
     {
       type: 'category',
       label: 'SenseCAP K1100',
@@ -7588,7 +7668,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Arduino 传感器基础使用',
+              label: '传感器与 Arduino 基础使用',
               items: [
                 'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/cn_K1100-Light-Sensor-Grove-LoRa-E5',
                 'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/cn_K1100-IMU-Sensor-Grove-LoRa-E5',
@@ -7626,7 +7706,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'SenseCAP 与 Node-Red 云服务集成',
+              label: 'SenseCAP 与 Node-Red 云服务',
               items: [
                 'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/cn_K1100_sensecap_node-red',
                 'zh-CN/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/cn_K1100_SenseCAP_to_Azure_IoT_Central',
@@ -7655,7 +7735,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Azure 物联网平台使用',
+              label: 'Azure IoT 平台使用',
               items: [
                 'zh-CN/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Azure_IoT_Platform_Usage/cn_Connect-Wio-Terminal-to-Azure-IoT-Central',
                 'zh-CN/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Azure_IoT_Platform_Usage/cn_Develop-in-Microsoft-Azure-IoT-Central',
@@ -7682,8 +7762,13 @@ const sidebars = {
         },
       ],
     },
-
-
+    // {
+    //   type: 'category',
+    //   label: 'SenseCAP LoRaWAN Starter Kit',
+    //   items: [
+    //     'Network/SenseCAP_LoRaWAN_Starter_Kit/M2_Kit_Getting_Started',
+    //   ],
+    // },
     {
       type: 'category',
       label: 'SenseCAP LoRaWAN 入门套件',
@@ -7694,7 +7779,15 @@ const sidebars = {
         },
       ]
     },
-
+    // {
+    // 有问题
+    //   type: 'category',
+    //   label: 'LinkStar',
+    //   items: [
+    //     'Network/LinkStar/Linkstar_Datasheet',
+    //     'Network/LinkStar/linkstar-install-system',
+    //     ],
+    // },
     {
       type: 'category',
       label: 'Raspberry Pi 解决方案',
@@ -7724,11 +7817,10 @@ const sidebars = {
               ],
             },
           ],
-        },  
-
+        },
         {
           type: 'category',
-          label: 'Raspberry Pi 4G LTE 扩展板',
+          label: ' Raspberry Pi 4G LTE 扩展板',
           collapsed: true,
           collapsible: true,
           items: [
@@ -7739,7 +7831,7 @@ const sidebars = {
               items: [
                 {
                   type: 'category',
-                  label: 'Windows 网络配置',
+                  label: 'Windows 网络设置',
                   items: [
                     'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_4g_lte_rpi_hat_rndis',
                     'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_4g_lte_rpi_hat_mbim',
@@ -7747,7 +7839,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'Raspberry Pi OS 网络配置',
+                  label: 'Raspberry Pi OS 网络设置',
                   items: [
                     'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_mobile_internet_for_your_pi_ecm_set_up',
                     'zh-CN/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/cn_4g_lte_rpi_hat_qmi',
@@ -7763,11 +7855,9 @@ const sidebars = {
               ],
             },
           ],
-        },  
+        },
       ],
     },
-
-
     {
       type: 'category',
       label: 'Rockchip 解决方案',
@@ -7832,7 +7922,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: '其他网络设备',
@@ -7848,41 +7937,56 @@ const sidebars = {
         },
       ],
     },
-
+    // {
+    //   type: 'html',
+    //   value: `
+    // <style>
+    //   .sub_item {
+    //     width: 275px;
+    //     display:inline-block;
+    //     text-align:center;
+    //     font-size:20px;
+    //     margin-top: 10px;
+    //   }
+    // </style>
+    // <div style="width:100px;text-align:center">
+    //   <div class="sub_item"><strong> Edge </strong></div>
+    // </div>
+    // `,
+    // },
     {
       type: 'doc',
       id: 'zh-CN/cn_Edge_Computing',
       label: '边缘计算',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
-      label: '树莓派设备',
+      label: 'Raspberry Pi 设备',
       collapsed: true,
       collapsible: true,
       link: {
         type: "doc",
         id: 'zh-CN/Edge/Raspberry_Pi_Devices/cn_RpiDevices',
       },
-      items:[
+      items: [
         {
           type: 'category',
-          label: '边缘AI计算机',
+          label: '边缘 AI 计算机',
           collapsed: true,
           collapsible: true,
-          items:[
+          items: [
             {
               type: 'category',
               label: 'reComputer-AI-R2000',
               collapsed: true,
               collapsible: true,
-              link:{
-                type:"doc",
-                id:'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/cn_reComputer_AI_R2000_getting_start'
+              link: {
+                type: "doc",
+                id: 'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/cn_reComputer_AI_R2000_getting_start'
               },
               items: [
-                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/cn_reComputer_AI_R2000_getting_start'
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/cn_reComputer_AI_R2000_getting_start',
               ]
             },
             {
@@ -7890,13 +7994,13 @@ const sidebars = {
               label: 'reComputer-AI-Industrial-R2000',
               collapsed: true,
               collapsible: true,
-              link:{
-                type:"doc",
-                id:'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/cn_reComputer_AI_Industrial_R2135_getting_start'
+              link: {
+                type: "doc",
+                id: 'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/cn_reComputer_AI_Industrial_R2135_getting_start'
               },
               items: [
                 'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/cn_reComputer_AI_Industrial_R2135_getting_start',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/cn_reComputer_AI_Industrial_R2000_Flash_OS'
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/cn_reComputer_AI_Industrial_R2000_Flash_OS',
               ]
             },
           ]
@@ -7928,6 +8032,7 @@ const sidebars = {
                     'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/cn_reTerminal-Buildroot-SDK',
                     'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/cn_reTerminal-Yocto',
                     'zh-CN/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/cn_Streampi_OBS_On_reTerminal',
+                    // 'Edge/reTerminal/OS_Installation/',
                   ],
                 },
                 {
@@ -7963,6 +8068,10 @@ const sidebars = {
           label: '边缘控制器',
           collapsed: true,
           collapsible: true,
+          // link: {
+          // type: "doc",
+          // id: 'Edge/Raspberry_Pi_Devices/Edge_Box_RPi_200/Edge_Box_intro',
+          // },
           items: [
             {
               type: 'category',
@@ -7994,7 +8103,7 @@ const sidebars = {
                 'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_warranty',
                 'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_how_to_use_rs485_modbus',
                 'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_recomputer_r1000_use_bacnet_mstp',
-                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_reComputer_R1000_FAQ', 
+                'zh-CN/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/cn_reComputer_R1000_FAQ',
               ],
             },
             {
@@ -8026,7 +8135,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: '应用',
@@ -8043,7 +8151,7 @@ const sidebars = {
                   items: [
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/cn_recomputer_r1000_build_seeed_balena_image',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/cn_recomputer_r1000_balena',
-                  ],
+                  ]
                 },
                 {
                   type: 'category',
@@ -8053,12 +8161,12 @@ const sidebars = {
                       type: 'category',
                       label: 'AWS IoT Core 集成 (R1000 / reTerminal DM)',
                       items: [
-                        'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/cn_recomputer_r1000_aws', 
-                        'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/cn_reTerminal-DM_AWS_first', 
+                        'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/cn_recomputer_r1000_aws',
+                        'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/cn_reTerminal-DM_AWS_first',
                       ]
                     },
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/cn_reTerminal-DM_Azure_IoT',
-                  ],
+                  ]
                 },
                 {
                   type: 'category',
@@ -8071,7 +8179,7 @@ const sidebars = {
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with_fin_use_modbus',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with-_fin_use_logic_to_alarm',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/cn_recomputer_r1000_with-fin_create_floor_graphic',
-                  ],
+                  ]
                 },
                 {
                   type: 'category',
@@ -8083,7 +8191,7 @@ const sidebars = {
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_use_opcua',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_recomputer_r1000_with_fuxa_use_webapi',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/cn_reTerminal-DM_intro_FUXA',
-                  ],
+                  ]
                 },
                 {
                   type: 'category',
@@ -8093,7 +8201,7 @@ const sidebars = {
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_recomputer-r1000-modbus-home-assistant',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_reTerminal_Home_Assistant',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/cn_reTerminal-Home-Assistant-Customize',
-                  ],
+                  ]
                 },
                 {
                   type: 'category',
@@ -8111,7 +8219,7 @@ const sidebars = {
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminal_DM_N3uron_Historian',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminal_DM_N3uron_modbus_mqtt',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/cn_reTerminalDM_N3uron_Get_Start',
-                  ],
+                  ]
                 },
                 {
                   type: 'category',
@@ -8138,7 +8246,7 @@ const sidebars = {
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-Modbus-TCP',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-mqtt',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/cn_reTerminal-DM-Node-Red-RS485',
-                  ],
+                  ]
                 },
                 {
                   type: 'category',
@@ -8149,11 +8257,11 @@ const sidebars = {
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_reTerminal-build-UI-using-LVGL',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_reTerminal-build-UI-using-Qt-for-Python',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/cn_weather-dashboard-with-Grafana-reTerminal',
-                  ],
+                  ]
                 },
                 {
                   type: 'category',
-                  label: 'Edge Impulse 目标检测',
+                  label: 'Edge Impulse 物体检测',
                   items: [
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/cn_reTerminal_ML_Edgeimpulse',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/cn_reTerminal-DM-edgeimpulse',
@@ -8163,124 +8271,133 @@ const sidebars = {
                   type: 'category',
                   label: 'Ignition Edge (reComputer R1000 / reTerminal DM)',
                   items: [
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/cn_Edgebox-rpi-200-ignition-edge',
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/cn_reTerminal-DM-Getting-Started-with-Ignition-Edge',
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/cn_reTerminal-DM-Ignition-Edge-Panel-Builder',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/cn_Edgebox-rpi-200-ignition-edge',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/cn_reTerminal-DM-Getting-Started-with-Ignition-Edge',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/cn_reTerminal-DM-Ignition-Edge-Panel-Builder',
                   ]
                 },
                 {
                   type: 'category',
                   label: 'ThingsBoard 集成',
                   items: [
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/cn_recomputer_r1000_thingsboard_ce',
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/cn_recomputer_r1000_thingsboard_dashboard',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/cn_recomputer_r1000_thingsboard_ce',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/cn_recomputer_r1000_thingsboard_dashboard',
                   ]
                 },
                 {
                   type: 'category',
                   label: 'R1000 上的 CODESYS 与 Modbus',
                   items: [
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/cn_recomputer_r1000_install_codesys',
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/cn_recomputer_r1000_with_codesys_use_modbus_rtu',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/cn_recomputer_r1000_install_codesys',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/cn_recomputer_r1000_with_codesys_use_modbus_rtu',
                   ]
                 },
                 {
                   type: 'category',
                   label: '其他',
                   items: [
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_Mender-Client-reTerminal',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_flowfuse_getting_start',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reTerminal-DM_intro_machinechat_jedi',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reterminal-dm-sensecraft-edge-os-intro',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_use_ups'
-                  ],
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_Mender-Client-reTerminal',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_r1000_flowfuse_getting_start',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reTerminal-DM_intro_machinechat_jedi',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_reterminal-dm-sensecraft-edge-os-intro',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/cn_recomputer_use_ups',
+                  ]
                 },
-              ],
+              ]
             },
             {
               type: 'category',
-              label: '计算机视觉 (Computer Vision)',
+              label: '计算机视觉',
               items: [
                 {
                   type: 'category',
-                  label: 'Benchmark 性能测试',
+                  label: '基准测试',
                   items: [
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/cn_benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/cn_benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
-                  ],
+                  ]
                 },
-              {
-                type: 'category',
-                label: 'OpenCV Demos (reTerminal & Pi Camera)',
-                items: [
-                  {
-                    type: 'category',
-                    label: 'Object/Face/Color/Shape Detection',
-                    items: [
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/cn_reTerminal_DM_Color_detection',
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/cn_reTerminal_DM_Face_detection',
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/cn_reTerminal_DM_Object_detection',
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/cn_reTerminal_DM_Shape_detection',
-                    ]
-                  },
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/cn_reTerminal_DM_opencv',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/cn_reTerminal_DM-tracking',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'YOLO-based Applications',
-                items: [
-                  {
-                    type: 'category',
-                    label: 'YOLOv8  Object Detection (Pi 5 / R1000 / AI Box)',
-                    items: [
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/cn_Using_YOLOv8_and_AI_Box_for_fall_climbing_and_tracking_detection',
-                      'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/cn_yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
-                    ]
-                  },
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/cn_reTerminal-DM-Yolo5',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/cn_yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'NVR',
-                items:[
+                {
+                  type: 'category',
+                  label: 'OpenCV 演示 (reTerminal & Pi Camera)',
+                  items: [
+                    {
+                      type: 'category',
+                      label: '物体/人脸/颜色/形状检测',
+                      items: [
+                        'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/cn_reTerminal_DM_Color_detection',
+                        'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/cn_reTerminal_DM_Face_detection',
+                        'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/cn_reTerminal_DM_Object_detection',
+                        'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/cn_reTerminal_DM_Shape_detection',
+                      ]
+                    },
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/cn_reTerminal_DM_opencv',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/cn_reTerminal_DM-tracking',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: '基于 YOLO 的应用',
+                  items: [
+                    {
+                      type: 'category',
+                      label: 'YOLOv8 物体检测 (Pi 5 / R1000 / AI Box)',
+                      items: [
+                        'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/cn_Using_YOLOv8_and_AI_Box_for_fall_climbing_and_tracking_detection',
+                        'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/cn_yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
+                      ]
+                    },
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/cn_reTerminal-DM-Yolo5',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/cn_yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'NVR',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/cn_firearm_detection_with_frigate_nvr_on_r2000',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/cn_frigate_home_assistant_recomputer_r2000',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/cn_frigate_nvr_with_raspberrypi_5',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/cn_reterminal_frigate',
                     'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/cn_reterminal-DM-Frigate',
-                ]
-              },
-              {
-                type: 'category',
-                label: '其他 AI 应用',
-                items: [
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_clip_application_on_rpi_with_ai_kit',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_convert_model_to_edge_tpu_tflite_format_for_google_coral',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_install_m.2_coral_to_rpi5',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_pose_based_light_control_with_nodered_and_rpi_with_aikit',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_real-time-ocr',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_reTerminal_ML_TFLite',
-                  'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
-                 ]
-              },
-              ],
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/cn_zoneminder_on_recomputer',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: '其他 AI 应用',
+                  items: [
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_clip_application_on_rpi_with_ai_kit',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_convert_model_to_edge_tpu_tflite_format_for_google_coral',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_install_m.2_coral_to_rpi5',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_pose_based_light_control_with_nodered_and_rpi_with_aikit',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_real-time-ocr',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_reTerminal_ML_TFLite',
+                    'zh-CN/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/cn_tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
+                  ]
+                },
+              ]
             },
             {
               type: 'category',
-              label: '大型语言模型 (Large language Model)',
-              items:[
+              label: '大语言模型',
+              items: [
                 'zh-CN/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/cn_deploy_deepseek_on_raspberry_pi_ai_box',
                 'zh-CN/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/cn_distributed_inference_of_deepseek_model_on_raspberrypi',
-              ],
+              ]
             },
-          ],
-        }
+            {
+              type: 'category',
+              label: '工具',
+              items: [
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Development_Tools/cn_recomputer_use_uv_to_build_package',
+                'zh-CN/Edge/Raspberry_Pi_Devices/Application/Development_Tools/cn_recomputer_use_docker',
+              ]
+            }
+          ]
+        },
       ],
     },
-
     {
       type: 'category',
       label: 'NVIDIA® Jetson™',
@@ -8291,12 +8408,12 @@ const sidebars = {
         id: 'zh-CN/Edge/NVIDIA_Jetson/cn_RecomputerPage',
       },
       items: [
-        // 快速上手
+        // Getting Started
         {
           type: 'category',
-          label: '快速上手',
+          label: '入门指南',
           items: [
-            // 载板
+            // Carrier Boards
             {
               type: 'category',
               label: '载板',
@@ -8319,7 +8436,6 @@ const sidebars = {
                     'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/cn_J401_Mini_carrierboard_Hardware_Interfaces_Usage',
                   ],
                 },
-              
                 {
                   type: 'category',
                   label: 'J501 载板',
@@ -8330,7 +8446,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'Robotics J401 载板',
+                  label: 'J401-Robotics 载板',
                   items: [
                     'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/Robotics_J401/cn_Robotics_J401_carrierboard_Hardware_Interfaces_Usage',
                   ],
@@ -8340,11 +8456,9 @@ const sidebars = {
                 'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A603/cn_A603_Flash_JetPack',
                 'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A607/cn_A607_Flash_JetPack',
                 'zh-CN/Edge/NVIDIA_Jetson/Carrier_Boards/A608/cn_A608_Flash_JetPack',
-                
               ],
             },
-
-            // reComputer Jetson 系列
+            // reComputer Jetson Series
             {
               type: 'category',
               label: 'reComputer Jetson',
@@ -8365,22 +8479,21 @@ const sidebars = {
                       type: 'category',
                       label: 'reComputer J1010',
                       items: [
-                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_J1010_with_Jetson_getting_start',
-                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_J101_Enable_SD_Card',
-                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_J1010_Boot_From_SD_Card',
-                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_GPIO',
-                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Memory_Expansion',
-                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Series_Hardware_Layout',
-                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Series_Initiation',
+                        'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_J1010_with_Jetson_getting_start',
+                        'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_J101_Enable_SD_Card',
+                        'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_J1010_Boot_From_SD_Card',
+                        'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_GPIO',
+                        'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Memory_Expansion',
+                        'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Series_Hardware_Layout',
+                        'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/cn_reComputer_Jetson_Series_Initiation',
                       ],
                     },
-
                     {
                       type: 'category',
                       label: 'reComputer J1020',
                       items: [
-                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/cn_reComputer_J1020v2_with_Jetson_getting_start',
-                      'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/cn_reComputer_J1020_A206_Flash_JetPack',
+                        'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/cn_reComputer_J1020v2_with_Jetson_getting_start',
+                        'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/cn_reComputer_J1020_A206_Flash_JetPack',
                       ],
                     },
                   ],
@@ -8395,26 +8508,38 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'reComputer J30/40',
+                  // link: {
+                  //   type: "doc",
+                  //   id: 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40',
+                  // },
                   items: [
                     'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/cn_reComputer_J30_40_with_Jetson_getting_start',
-                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/cn_reComputer_Jetson_with_Infineon_Wi-Fi_Module'
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/cn_reComputer_Jetson_with_Infineon_Wi-Fi_Module',
                   ]
                 },
                 {
                   type: 'category',
                   label: 'reComputer Industrial',
                   items: [
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_Getting_Started',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_J20_Hardware_Interfaces_Usage',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_Getting_Started',
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_J20_Hardware_Interfaces_Usage',
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/cn_reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage',
                   ],
                 },
                 {
                   type: 'category',
                   label: 'reComputer Mini',
                   items: [
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/cn_reComputer_Mini_Getting_Started',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/cn_reComputer_Mini_Hardware_Interfaces_Usage'
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/cn_reComputer_Mini_Getting_Started',
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/cn_reComputer_Mini_Hardware_Interfaces_Usage',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer Robotics',
+                  items: [
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Robotics/cn_reComputer_Robotics_Getting_Started',
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Robotics/cn_reComputer_Robotics_Hardware_Interfaces_Usage',
                   ],
                 },
                 {
@@ -8422,51 +8547,57 @@ const sidebars = {
                   label: 'reComputer J401B',
                   items: [
                     'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/cn_recomputer_j401b_getting_start',
-                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/cn_recomputer_j401b_interfaces_usage'
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/cn_recomputer_j401b_interfaces_usage',
                   ]
                 },
                 {
                   type: 'category',
                   label: 'reComputer Super',
                   items: [
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_reComputer_Super_Getting_Started',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_reComputer_Super_Hardware_Interfaces_Usage',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing',
-                  'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_Replace_the_Thermal_Conductive_Paste_for_reComputer'
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_reComputer_Super_Getting_Started',
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_reComputer_Super_Hardware_Interfaces_Usage',
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing',
+                    'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/cn_Replace_the_Thermal_Conductive_Paste_for_reComputer',
                   ],
                 },
-            ]},
-            
-            // reServer Jetson 系列
+              ]
+            },
+            // reServer Jetson Series
             {
               type: 'category',
               label: 'reServer Jetson',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_Getting_Started',
+              // },
               items: [
-                //'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/cn_reServer_Industrial_Getting_Started',
+                //'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
                 {
                   type: 'category',
                   label: 'reServer Industrial J30/40',
                   items: [
-                  'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/cn_reServer_Industrial_Getting_Started',
-                  'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/cn_reServer_Industrial_Hardware_Interface_Usage'
+                    'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/cn_reServer_Industrial_Getting_Started',
+                    'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/cn_reServer_Industrial_Hardware_Interface_Usage',
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'reServer J2032',
                   items: [
-                  'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/cn_reServer_J2032_Flash_Jetpack',
-                  'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/cn_reServer_J2032_Getting_Started'
+                    'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/cn_reServer_J2032_Flash_Jetpack',
+                    'zh-CN/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/cn_reServer_J2032_Getting_Started',
                   ],
                 },
-
-            ]},
-
-            // 其他设备
+              ]
+            },
+            // Other Devices
             {
               type: 'category',
               label: '其他设备',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/Other_Devices',
+              // },
               items: [
                 'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
                 'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_RTL8822CE_Wireless_Module_for_Jetson',
@@ -8476,23 +8607,30 @@ const sidebars = {
                 'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_Mini_AI_Computer_T906',
                 'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_reComputer_A203E_Flash_System',
                 'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_reComputer_A205E_Flash_System',
-                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_reComputer_Jetson_Series_GPIO_Grove'
+                'zh-CN/Edge/NVIDIA_Jetson/Other_Devices/cn_reComputer_Jetson_Series_GPIO_Grove',
               ]
             },
-            // 刷写 Jetpack 页面
+            //flashing jetpack page
             'zh-CN/Edge/NVIDIA_Jetson/cn_Flash_Jetpack',
           ]
         },
-
-        // 应用
+        // Applications
         {
           type: 'category',
           label: '应用',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application',
+          // },
           items: [
-            // 计算机视觉
+            // Computer Vision
             {
               type: 'category',
               label: '计算机视觉',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
+              // },
               items: [
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_DashCamNet-with-Jetson-Xavier-NX-Multicamera',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_How_to_Train_and_Deploy_YOLOv8_on_reComputer',
@@ -8503,7 +8641,7 @@ const sidebars = {
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv5-Object-Detection-Jetson',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv8-DeepStream-TRT-Jetson',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv8-TRT-Jetson',
-                // 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_reComputer_Jetson_Series_Tutorials_Exercise',
+                // 'Edge/NVIDIA_Jetson/Application/Computer_Vision/reComputer_Jetson_Series_Tutorials_Exercise',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv8_custom_classification_model',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_Multi-GMSL_Cameras_for_Real-Time_Object_Detection_and_3D_Reconstruction_on_Jetson_AGX_Orin',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_YOLOv11_With_Depth_Camera_For_Distance_Measurement',
@@ -8511,8 +8649,7 @@ const sidebars = {
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Computer_Vision/cn_AI-NVR_with_Jetson',
               ]
             },
-
-            // 生成式 AI
+            // Generative AI
             {
               type: 'category',
               label: '生成式 AI',
@@ -8520,9 +8657,8 @@ const sidebars = {
                 type: "doc",
                 id: 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Generative_AI_Intro',
               },
-              
               items: [
-                // 模型
+                // Models
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Finetune_LLM_by_Llama_Factory_on_Jetson',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Quantized_Llama2_7B_with_MLC_LLM_on_Jetson',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_run_local_llm_text_to_image_on_reComputer',
@@ -8531,39 +8667,47 @@ const sidebars = {
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_run_zero_shot_detection_on_reComputer',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_run_VLM_on_reComputer',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson',
-                
-                // 项目
+                // Projects
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Deploy_Riva_and_Llama2_on_reComputer',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Real_Time_Subtitle_Recoder_on_Jetson',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Deploy_Ollama_and_AnythingLLM_on_Jetson',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Quickly_Deploy_DeepSeek_on_reComputer_Jetson',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Deploy_DeepSeek_on_reComputer_Jetson_with_MLC',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_GPT_OSS_Running_Live_on_reComputer_Jetson',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Generative_AI/cn_Control_Motor_by_Voice_LLM_on_Jetson',
               ]
             },
             {
               type: 'category',
               label: '多模态 AI',
               items: [
-                // 模型
+                // Models
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Multimodal_AI/cn_Speech_vlm',
               ]
             },
-            // 托管服务
+            // Managed Services
             {
               type: 'category',
               label: '托管服务',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/Application/Managed_Services',
+              // },
               items: [
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_Allxon-Jetson-Getting-Started',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_neqto_engine_for_linux_recomputer',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_Scailable-Jetson-Getting-Started',
-                'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_Update-Jetson-Linux-OTA-Using-Allxon'
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Managed_Services/cn_Update-Jetson-Linux-OTA-Using-Allxon',
               ]
             },
-
-            // 开发者工具
+            // Developer Tools
             {
               type: 'category',
               label: '开发者工具',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/Application/Developer_Tools',
+              // },
               items: [
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Gapi-Jetson-Getting-Started',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_alwaysAI-Jetson-Getting-Started',
@@ -8574,25 +8718,29 @@ const sidebars = {
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Jetson-AI-developer-tools',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_jetson-docker-getting-started',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Lumeo-Jetson-Getting-Started',
-                // 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_No-code-Edge-AI-Tool',
+                // 'Edge/NVIDIA_Jetson/Application/Developer_Tools/No-code-Edge-AI-Tool',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_reComputer_Jetson_Series_Resource',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_NVStreamer_Getting_Started',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Roboflow-Jetson-Getting-Started',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Install_torch_on_reComputer',
                 'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_vnc_for_reComputer',
+                'zh-CN/Edge/NVIDIA_Jetson/Application/Developer_Tools/cn_Implement_Ethercat_communication_on_reComputer',
               ]
             },
           ]
         },
-
-        // 常见问题
+        // FAQs
         {
           type: 'category',
           label: '常见问题',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/FAQs',
+          // },
           items: [
             'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_jetson_FAQ',
             'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Create_Backup_and_Restore_on_reComputer',
-            // 'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Updating_Jetpack_with_OTA',
+            // 'Edge/NVIDIA_Jetson/FAQs/Updating_Jetpack_with_OTA',
             'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera',
             'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Use_IMX477_Camera_with_A603',
             'zh-CN/Edge/NVIDIA_Jetson/FAQs/cn_Differences_of_L4T_Between_Seeed_and_NVIDIA',
@@ -8601,21 +8749,25 @@ const sidebars = {
         }
       ],
     },
-
     {
       type: 'category',
       label: 'ESP 设备',
       collapsed: true,
       collapsible: true,
+      //link: {
+      //type: "doc",
+      //id: 'Edge/Edge_Series/Edge_series_Intro',
+      // },
       items: [
         {
           type: 'category',
           label: 'EdgeBox-ESP-100',
-          items: ['zh-CN/Edge/Edge_Series/Edge_Box_ESP_100/cn_Edgebox-ESP-100-Arduino'],
+          items: [
+            'zh-CN/Edge/Edge_Series/Edge_Box_ESP_100/cn_Edgebox-ESP-100-Arduino',
+          ],
         },
       ],
     },
-
     {
       type: 'category',
       label: 'BeagleBone®',
@@ -8629,6 +8781,7 @@ const sidebars = {
         'zh-CN/Edge/Beagle_Bone/cn_BeagleBone_Blue',
         'zh-CN/Edge/Beagle_Bone/cn_BeagleBone_Green',
         'zh-CN/Edge/Beagle_Bone/cn_BeagleBone_Green_Wireless',
+        'zh-CN/Edge/Beagle_Bone/cn_BeagleBone_Green_Eco',
         'zh-CN/Edge/Beagle_Bone/cn_BeagleBone-Green-Gateway',
         'zh-CN/Edge/Beagle_Bone/cn_Beaglebone_Case',
         {
@@ -8653,7 +8806,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '配套课程套件',
+          label: '课程套件',
           items: [
             'zh-CN/Edge/Beagle_Bone/Kit_with_Courses/cn_Grove_Starter_Kit_for_BeagleBone_Green',
             'zh-CN/Edge/Beagle_Bone/Kit_with_Courses/cn_Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS',
@@ -8661,7 +8814,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'ODYSSEY',
@@ -8672,6 +8824,7 @@ const sidebars = {
         id: 'zh-CN/Edge/ODYSSEY/cn_ODYSSEY_Intro',
       },
       items: [
+        //  'Edge/ODYSSEY/ODYSSEY_Getting_Started',
         {
           type: 'category',
           label: 'ODYSSEY STM32MP135D',
@@ -8679,7 +8832,6 @@ const sidebars = {
             'zh-CN/Edge/ODYSSEY/ODYSSEY_STM32MP135D/cn_ODYSSEY STM32MP135D',
           ],
         },
-
         {
           type: 'category',
           label: 'ODYSSEY X86J4105',
@@ -8731,7 +8883,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '系统安装',
+              label: '操作系统安装',
               items: [
                 'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_ODYSSEY-X86J4105-Installing-OS',
                 'zh-CN/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/cn_ODYSSEY-X86J4105-Updating-Firmware',
@@ -8747,7 +8899,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'ODYSSEY STM32MP157C',
@@ -8758,8 +8909,6 @@ const sidebars = {
         },
       ],
     },
-
-        
     {
       type: 'category',
       label: 'reCamera',
@@ -8772,10 +8921,9 @@ const sidebars = {
         },
       ]
     },
-
     {
       type: 'category',
-      label: 'reTerminal E Series',
+      label: 'reTerminal E 系列',
       collapsed: true,
       collapsible: true,
       link: {
@@ -8789,7 +8937,6 @@ const sidebars = {
         },
       ]
     },
-
     {
       type: 'category',
       label: '其他边缘设备',
@@ -8805,71 +8952,111 @@ const sidebars = {
         'zh-CN/Edge/Quantum_Development_Board/cn_Quantum-Mini-Linux-Development-Kit',
       ],
     },
-
-
     {
       type: 'doc',
       id: 'zh-CN/cn_Edge_Robotics',
-      label: '机器人',
+      label: '机器人页面',
       className: 'sideboard_calss',
     },
     {
       type: 'category',
-      label: 'Robot 套件',
+      label: '机器人套件',
       collapsed: true,
       collapsible: true,
       items: [
         {
           type: 'category',
           label: 'Lerobot',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
+            //'Robotics/Robot_Kits/Lerobot/En_Hackathon_Thor',
+            'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Fine_tune_GR00T_N1.5_for_LeRobot_SO_Arm_and_Deploy_on_Jetson_Thor',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Starai_Arm',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Starai_Arm_ROS2_Moveit',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_New',
-            //'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm',
-            'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_SO100Arm_Isaacsim',
+            //'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Lerobot_Lekiwi',
             'zh-CN/Robotics/Robot_Kits/Lerobot/cn_Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
-              ]},
-
+          ]
+        },
+        {
+          type: 'category',
+          label: '末端夹爪',
+          items: [
+            'zh-CN/Robotics/Robot_Kits/End_Effectors/cn_DM_Gripper',
+          ]
+        },
+        {
+          type: 'category',
+          label: '灵巧手',
+          items: [
+            'zh-CN/Robotics/Robot_Kits/Hand/cn_AmazingHand',
+          ]
+        },
       ]
     },
     {
       type: 'category',
-      label: 'Actuator',
+      label: '关节电机',
       items: [
         'zh-CN/Robotics/Robot_Actuator/cn_Myactuator_Series',
         'zh-CN/Robotics/Robot_Actuator/cn_Damiao_Series',
         'zh-CN/Robotics/Robot_Actuator/cn_Feetech_Servo',
         'zh-CN/Robotics/Robot_Actuator/cn_HighTorque',
-          ]
+      ]
     },
     {
       type: 'category',
       label: '传感器',
+      // link: {
+      //   type: "doc",
+      //   id: 'Edge/NVIDIA_Jetson/Application',
+      // },
       items: [
         {
           type: 'category',
           label: '激光雷达',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_Robosense_Lidar',
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_MID360',
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_A_Loam',
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_SLAMTEC',
-        ]},
+          ]
+        },
         {
           type: 'category',
           label: '摄像头',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
+            'zh-CN/Robotics/Robot_Sensor/Camera/cn_Getting_Start_with_Orbbec_Gemini2_3D_Camera',
             'zh-CN/Robotics/Robot_Sensor/Camera/cn_Orbbec_Depth_Camera',
-            'zh-CN/Robotics/Robot_Sensor/Camera/cn_CSI_Camera'
-              ]},
+            'zh-CN/Robotics/Robot_Sensor/Camera/cn_ORB_SLAM3_with_Orbbec_Gemini2',
+            'zh-CN/Robotics/Robot_Sensor/Camera/cn_Orbbec_Gemini_335Lg',
+            'zh-CN/Robotics/Robot_Sensor/Camera/cn_Sensing_GMSL_Camera',
+            'zh-CN/Robotics/Robot_Sensor/Camera/cn_CSI_Camera',
+          ]
+        },
         {
           type: 'category',
-          label: '陀螺仪',
+          label: 'IMU',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
             'zh-CN/Robotics/Robot_Sensor/IMU/cn_Hexfellow_Y200',
-              ]},
+          ]
+        },
       ]
     },
     {
@@ -8879,6 +9066,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'ROS',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
             "zh-CN/Robotics/Robot_Software/ROS/cn_Installing_ROS1",
             "zh-CN/Robotics/Robot_Software/ROS/cn_Install_IsaacROS",
@@ -8889,18 +9080,34 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Isaac Lab',
+          label: 'Isaag Lab',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
             'zh-CN/Robotics/Robot_Software/Isaac_Lab/cn_Install_Isaac_lab',
             'zh-CN/Robotics/Robot_Software/Isaac_Lab/cn_Simulate_SoArm101_by_LeIsaac',
             'zh-CN/Robotics/Robot_Software/Isaac_Lab/cn_XiaoPi',
+            'zh-CN/Robotics/Robot_Software/Isaac_Lab/cn_Training_SoARM101_Policy_with_IsaacLab',
           ]
         },
+        {
+          type: 'category',
+          label: 'PX4',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            "zh-CN/Robotics/Robot_Software/PX4/cn_Control_PX4_with_reComputer_Jetson",
+            "zh-CN/Robotics/Robot_Software/PX4/cn_Object_Tracking_with_reComputer_Jetson_and_PX4",
+          ]
+        },
+        'zh-CN/Robotics/Robot_Software/VLA/cn_control_robotic_arm_via_gr00t',
         'zh-CN/Robotics/Robot_Software/cn_control_robotic_arm_via_phospho',
       ]
     },
-    
-
     {
       type: 'doc',
       id: 'zh-CN/cn_Cloud',
@@ -8971,18 +9178,37 @@ const sidebars = {
         },
       ],
     },
-        
-    // START OF zh-hans SOLUTION
+    // START OF Seeed SOLUTION
     {
       type: 'link',
       label: '解决方案',
       href: 'https://solution.seeed.cc/',
       className: 'sideboard_calss',
     },
+    // {      
+    //   type: 'category',
+    //   label: 'AI Agents',
+    //   items:[
+    //     {
+    //       type: 'autogenerated',
+    //       dirName: 'Solutions/ai-agents',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'category',
+    //   label: 'Smart Agriculture',
+    //   items:[
+    //     {
+    //       type: 'autogenerated',
+    //       dirName: 'Solutions/smart-agriculture',
+    //     }
+    //   ],
+    // },
     {
       type: 'category',
       label: '智能建筑',
-      items:[
+      items: [
         {
           type: 'autogenerated',
           dirName: 'zh-CN/Solutions/smart-building',
@@ -8991,8 +9217,8 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Mission Pack',
-      items:[
+      label: '任务包',
+      items: [
         {
           type: 'autogenerated',
           dirName: 'zh-CN/Solutions/mission-pack-v3',
@@ -9000,15 +9226,14 @@ const sidebars = {
       ],
     },
     'zh-CN/Solutions/cn_jetson-crowd-tracking',
-    // END OF Solutions
-
+    'zh-CN/Solutions/cn_Frigate_on_Jetson_NodeRED_Gun_Alerts',
+    // END OF Solution
     {
       type: 'doc',
       id: 'zh-CN/Topics/cn_Topic_introduction',
-      label: '技术专题',
+      label: '技术主题',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Home Assistant',
@@ -9024,7 +9249,6 @@ const sidebars = {
         'zh-CN/Topics/Home_Assistant/Home_Assistant_Tutorials/cn_sensecraft_homeassistant_userguide',
       ],
     },
-
     {
       type: 'category',
       label: 'TinyML',
@@ -9045,11 +9269,10 @@ const sidebars = {
             id: 'zh-CN/Topics/TinyML/TinyML_Workshop/cn_TinyML_workshop_course',
           },
           items: [
-              'zh-CN/Topics/TinyML/TinyML_Workshop/cn_sscma',
-              'zh-CN/Topics/TinyML/TinyML_Workshop/cn_TrainModel',
+            'zh-CN/Topics/TinyML/TinyML_Workshop/cn_sscma',
+            'zh-CN/Topics/TinyML/TinyML_Workshop/cn_TrainModel',
           ],
         },
-
         {
           type: 'category',
           label: 'ModelAssistant',
@@ -9058,7 +9281,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '简介',
+              label: '介绍',
               collapsed: false,
               items: [
                 'zh-CN/Topics/TinyML/ModelAssistant/introduction/cn_overview',
@@ -9121,21 +9344,35 @@ const sidebars = {
         },
       ],
     },
-
     'zh-CN/Topics/Open_Source/cn_Open_Source_Topic',
     'zh-CN/Topics/Edge_AI/cn_Edge_AI_Topic',
-
-
+    /*
+      {
+      type: 'doc',
+      id: 'Topics/Edge_AI/Edge_AI_Topic',
+      label: 'Edge AI',
+      className: 'sideboard_calss',
+      },
+*/
     {
       type: 'doc',
       id: 'zh-CN/cn_Contributor',
-      label: '贡献指南',
+      label: '贡献',
       className: 'sideboard_calss',
     },
-
+    // {
+    //       type: 'category',
+    //       label: 'Fusion Service',
+    //       items: [
+    //         'Contribution/Fusion/Service_for_Fusion_PCB',
+    //         'Contribution/Fusion/Galileo_Case',
+    //         'Contribution/Fusion/Unibody_box_for_Galileo_Gen2',
+    //         'Contribution/Fusion/Starter_bundle_harness_V1',
+    //       ]
+    // },
     {
       type: 'category',
-      label: 'GitHub 贡献指南',
+      label: 'Github 贡献指南',
       collapsed: true,
       collapsible: true,
       link: {
@@ -9148,17 +9385,13 @@ const sidebars = {
         'zh-CN/Contribution/Contributors/Contribution-Guide/cn_quick_pull_request',
       ],
     },
-
-    // 'zh-CN/Contribution/Contributors/cn_community_sourced_projects',
-    'zh-CN/Contribution/Contributors/cn_Scale-up-Your-Creation-with-Fusion',
-
+    'Contribution/Contributors/Scale-up-Your-Creation-with-Fusion',
     {
       type: 'doc',
       id: 'zh-CN/Top_Brand/cn_PopularPlatforms',
       label: '热门平台',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Arduino',
@@ -9178,7 +9411,7 @@ const sidebars = {
             'zh-CN/Top_Brand/Arduino/shield/cn_2.8inch_TFT_Touch_Shield_v2.0',
             'zh-CN/Top_Brand/Arduino/shield/cn_4A_Motor_Shield',
             'zh-CN/Top_Brand/Arduino/shield/cn_Base_Shield_V2',
-            // 'zh-CN/Top_Brand/Arduino/shield/cn_Bluetooth_Shield_V2',
+            //   'Top_Brand/Arduino/shield/Bluetooth_Shield_V2',
             'zh-CN/Top_Brand/Arduino/shield/cn_CAN-BUS_Shield_V2.0',
             'zh-CN/Top_Brand/Arduino/shield/cn_Camera_Shield',
             'zh-CN/Top_Brand/Arduino/shield/cn_Energy_Shield',
@@ -9243,7 +9476,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Arduino 基础用法',
+              label: 'Arduino 基础使用',
               items: [
                 'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_Download-Arduino-and-install-Arduino_Driver',
                 'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_A_Handy_Serial_Library',
@@ -9268,10 +9501,9 @@ const sidebars = {
                 'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/cn_How_To_Choose_The_Right_Cable',
               ],
             },
-
             {
               type: 'category',
-              label: 'Arduino 进阶用法',
+              label: 'Arduino 增强使用',
               items: [
                 'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_Suli',
                 'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/cn_Seeed_Arduino_Serial',
@@ -9286,7 +9518,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Arduino 开发板项目',
+              label: ' Arduino 开发板项目',
               items: [
                 'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_IR_Remote',
                 'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Joystick_Control_RGB_Led',
@@ -9308,7 +9540,6 @@ const sidebars = {
                 'zh-CN/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/cn_Project_Eight-Thermostat',
               ],
             },
-
             {
               type: 'category',
               label: '编译平台',
@@ -9329,11 +9560,11 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '带教程套件',
+          label: '课程套件',
           items: [
             {
               type: 'category',
-              label: 'Arduino Grove 初学者套件',
+              label: 'Grove Beginner Kit for Arduino',
               items: [
                 'zh-CN/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/cn_Grove-Beginner-Kit-For-Arduino',
                 'zh-CN/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/cn_Grove-Beginner-Kit-for-Arduino-education-pack',
@@ -9359,7 +9590,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'Raspberry Pi',
@@ -9372,7 +9602,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: '官方 Raspberry Pi 主板',
+          label: '官方 Raspberry Pi 开发板',
           items: [
             'zh-CN/Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Board/cn_Raspberry_Pi_3_Model_B',
             'zh-CN/Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Board/cn_remote_connect',
@@ -9387,7 +9617,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Pi 扩展板（HAT）',
+          label: 'Pi HAT',
           items: [
             'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Grove_Base_Hat_for_Raspberry_Pi',
             'zh-CN/Top_Brand/Raspberry_Pi/Pi_HAT/cn_Grove_Base_Hat_for_Raspberry_Pi_Zero',
@@ -9441,7 +9671,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'Micro:bit',
@@ -9467,7 +9696,45 @@ const sidebars = {
         },
       ],
     },
-
+    // 'Contribution/Home_Assistant/Home_Assistant_Topic',
+    /*
+    {
+      type: 'html',
+      value: `
+    <style>
+      .sub_item {
+        width: 275px;
+        display:inline-block;
+        text-align:center;
+        font-size:20px;
+        margin-top: 10px;
+      }
+    </style>
+    <div style="width:100px;text-align:center">
+      <div class="sub_item"><strong> Contribution </strong></div>
+    </div>
+    `,
+    },
+*/
+    /*
+    {
+      type: 'html',
+      value: `
+    <style>
+      .sub_item {
+        width: 275px;
+        display:inline-block;
+        text-align:center;
+        font-size:20px;
+        margin-top: 10px;
+      }
+    </style>
+    <div style="width:100px;text-align:center">
+      <div class="sub_item"><strong> Discontinued Product </strong></div>
+    </div>
+    `,
+    },
+    */
     {
       type: 'doc',
       id: 'zh-CN/Seeed_Elderly/cn_DiscontinuedProducts',
@@ -9482,8 +9749,8 @@ const sidebars = {
           type: 'category',
           label: 'reSpeaker',
           items: [
-            //'zh-CN/Seeed_Elderly/reSpeaker/cn_reSpeaker_Getting_Started',
-            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker',
+            //'Seeed_Elderly/reSpeaker/reSpeaker_Getting_Started',
+            //'Seeed_Elderly/reSpeaker/ReSpeaker',
             'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_Product_Guide',
             {
               type: 'category',
@@ -9500,7 +9767,7 @@ const sidebars = {
               label: '扩展板',
               items: [
                 'zh-CN/Seeed_Elderly/reSpeaker/Extension Board/cn_ReSpeaker_Drive_Unit',
-                'zh-CN/Seeed_Elderly/reSpeaker/Extension Board/cn_ReSpeaker_Mic_Array_v2.0',
+                //'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Mic_Array_v2.0',
                 'zh-CN/Seeed_Elderly/reSpeaker/Extension Board/cn_ReSpeaker_Mic_Array',
               ],
             },
@@ -9509,10 +9776,9 @@ const sidebars = {
             'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_6-Mic_Circular_Array_kit_for_Raspberry_Pi',
             'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_Core',
             'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker_Core_v2.0',
-            'zh-CN/Seeed_Elderly/reSpeaker/cn_ReSpeaker-USB-Mic-Array',
+            //'Seeed_Elderly/reSpeaker/ReSpeaker-USB-Mic-Array',
           ],
         },
-
         {
           type: 'category',
           label: 'rePhone',
@@ -9526,7 +9792,7 @@ const sidebars = {
             'zh-CN/Seeed_Elderly/rePhone/cn_Retro Phone Kit',
             {
               type: 'category',
-              label: 'rePhone 编程',
+              label: '使用 rePhone 编程',
               items: [
                 'zh-CN/Seeed_Elderly/rePhone/Program with rePhone/cn_Arduino_IDE_for_RePhone_Kit',
                 'zh-CN/Seeed_Elderly/rePhone/Program with rePhone/cn_Eclipse_IDE_for_RePhone_Kit',
@@ -9537,7 +9803,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Bee',
@@ -9646,12 +9911,16 @@ const sidebars = {
         {
           type: 'category',
           label: 'NPi-i',
-          items: ['zh-CN/Seeed_Elderly/NPi-i/cn_NPi-i.MX6ULL-Dev-Board-Linux-SBC'],
+          items: [
+            'zh-CN/Seeed_Elderly/NPi-i/cn_NPi-i.MX6ULL-Dev-Board-Linux-SBC',
+          ],
         },
         {
           type: 'category',
           label: 'W600',
-          items: ['zh-CN/Seeed_Elderly/W600/cn_W600_Module'],
+          items: [
+            'zh-CN/Seeed_Elderly/W600/cn_W600_Module',
+          ],
         },
         {
           type: 'category',
@@ -9707,7 +9976,6 @@ const sidebars = {
         },
       ],
     },
-    
     'zh-CN/cn_About',
     'zh-CN/cn_License',
   ],
@@ -9719,14 +9987,12 @@ const sidebars = {
   //西班牙语文档
   esSidebar: [
     // 'Sensing_test',
-
     {
       type: 'doc',
       id: 'es/es_Getting_Started',
       label: 'Comenzando',
       className: 'sideboard_calss',
     },
-
     // {
     //   type: 'category',
     //   label: 'TinyML',
@@ -9747,63 +10013,6 @@ const sidebars = {
       label: 'Sensores',
       className: 'sideboard_calss',
     },
-    // {
-    //   type: 'category',
-    //   label: 'FAQ',
-    //   items: [
-
-    //     {
-    //       type: 'category',
-    //       label: 'reterminal',
-    //       items: [
-    //         'FAQ/XIAO/check_battery_voltage',
-    //         // 'FAQ/reTerminal/flash_different_os_to_emmc',
-    //         // 'FAQ/reTerminal/log_rpios_use_ssh_over_wifi_ethernet',
-    //         // 'FAQ/reTerminal/upgrade-rpiOS_installed-packages',
-    //         // 'FAQ/reTerminal/flashing_os_on_non-eMMC_CM4_replacement',
-    //         // 'FAQ/reTerminal/Logging_in_OS_using_USB_to_serial_converter',
-    //         // 'FAQ/reTerminal/Wakeup_reTerminal_LCD_after_sleep',
-    //         // 'FAQ/reTerminal/Boot_OS_from_USB_flash_drive',
-    //         // 'FAQ/reTerminal/black_glue_around_CM4',
-    //         // 'FAQ/reTerminal/buzzer-leds-not-work_by_drivers',
-    //         // 'FAQ/reTerminal/install-ubuntu-on-reterminal',
-    //         // 'FAQ/reTerminal/Incorrect_screen_orientation_on_RPiOS_Bullseye',
-    //         // 'FAQ/reTerminal/troubleshooting-touch-screen-inaccuracy',
-    //         // 'FAQ/reTerminal/check_Encryption_Chip',
-    //         // 'FAQ/reTerminal/disable_screen_rotation_on_reTerminal',
-    //         // 'FAQ/reTerminal/screen_refresh_rate',
-    //       ],
-    //     },
-
-    //   ]
-    // },
-
-    // {
-
-    //   type: 'doc',
-    //   label: '--Sensor--',
-    //   id: 'Sensor_Network',
-
-    // },
-
-    // {
-    //   type: 'html',
-    //   value: `
-    // <style>
-    //   .sub_item {
-    //     width: 275px;
-    //     display:inline-block;
-    //     text-align:center;
-    //     font-size:20px;
-    //     margin-top: 10px;
-    //   }
-    // </style>
-    // <div style="width:100px;text-align:center">
-    //   <div class="sub_item"><strong> Sensing </strong></div>
-    // </div>
-    // `,
-    // },
-
     {
       type: 'category',
       label: 'Grove',
@@ -9838,7 +10047,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'Con IA',
-              items: [        
+              items: [
                 {
                   type: 'category',
                   label: 'Grove Vision AI',
@@ -9895,7 +10104,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Temp y Humedad',
+              label: 'Temp y Hum',
               items: [
                 'es/Sensor/Grove/Grove_Sensors/Temp&Humi/es_Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor',
                 'es/Sensor/Grove/Grove_Sensors/Temp&Humi/es_Grove-TempAndHumi_Sensor-SHT31',
@@ -9908,7 +10117,6 @@ const sidebars = {
                 'es/Sensor/Grove/Grove_Sensors/Temp&Humi/es_Grove-SHT4x',
               ],
             },
-
             {
               type: 'category',
               label: 'Temperatura',
@@ -9924,11 +10132,9 @@ const sidebars = {
                 'es/Sensor/Grove/Grove_Sensors/Temperature/es_Grove-Temperature_Sensor',
                 'es/Sensor/Grove/Grove_Sensors/Temperature/es_Grove-Temperature_Sensor_V1.2',
                 'es/Sensor/Grove/Grove_Sensors/Temperature/es_Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808',
-
                 // 'Sensor/Grove/Grove_Sensors/Temperature/Sensor_temperature',
               ],
             },
-
             {
               type: 'category',
               label: 'Humedad del Suelo',
@@ -10069,7 +10275,6 @@ const sidebars = {
                 'es/Sensor/Grove/Grove_Sensors/Biometric/es_Grove-Human_Presence_Sensor-AK9753',
               ],
             },
-
             {
               type: 'category',
               label: 'Sonido',
@@ -10136,7 +10341,7 @@ const sidebars = {
                 'es/Sensor/Grove/Grove_Sensors/Motion/es_Grove-Step_Counter-BMA456',
               ],
             },
-             {
+            {
               type: 'category',
               label: 'Peso',
               items: [
@@ -10145,7 +10350,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Grove Network Module',
@@ -10236,7 +10440,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Grove Accessories',
@@ -10317,7 +10520,6 @@ const sidebars = {
                 'es/Sensor/Grove/Grove_Accessories/Actuator/es_Grove-Voltage_Divider',
               ],
             },
-
             {
               type: 'category',
               label: 'Tiempo',
@@ -10326,7 +10528,6 @@ const sidebars = {
                 'es/Sensor/Grove/Grove_Accessories/Time/es_Grove_High_Precision_RTC',
               ],
             },
-
             {
               type: 'category',
               label: 'Corriente',
@@ -10395,7 +10596,6 @@ const sidebars = {
                 'es/Sensor/Grove/Grove_Accessories/Input_Output/es_Grove-NOT',
               ],
             },
-
             {
               type: 'category',
               label: 'Carcasa',
@@ -10407,7 +10607,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'SenseCAP',
@@ -10430,62 +10629,61 @@ const sidebars = {
           items: [
             'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/es_SenseCAP_T1000_Tracker_Introduction',
             {
-            type: 'category',
-            label: 'Guía del Usuario',
-            items: [
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/es_Get_Started',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/es_Payload',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/es_Tracker_WiFi_Geolocation',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/es_BC01_Indoor_Bluetooth_Beacon',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/es_Indoor_Positioning_Guide',
-            ],
-          },
-          {
-            type: 'category',
-            label: 'Integrado con Servidor de Red LoRaWAN',
-            items: [
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/es_Connect_to_Helium',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/es_Connect_to_The_Things_Network',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/es_Connect_to_Loriot',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/es_AWS_Service',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/es_TTN_Mapper',
-            ],
-          },
-          {
-            type: 'category',
-            label: 'Integrado con Panel Popular',
-            items: [
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Datacake_Integrated',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Ubidots_Integrated',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_thingsboard_integrated',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Ubidots_Integrated(Helium)',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Qubitro_Integrated',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_TagoIO_Integrated',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_InfluxDB_Integrated',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Akenza_Integrated',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Trackpac_Integrated',
-              'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_sensecap_t1000_tracker_wialon',
-            ],
-          },
-          'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/es_FAQ',
-          'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/es_Firmware_release_note',
+              type: 'category',
+              label: 'Guía del Usuario',
+              items: [
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/es_Get_Started',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/es_Payload',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/es_Tracker_WiFi_Geolocation',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/es_BC01_Indoor_Bluetooth_Beacon',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/es_Indoor_Positioning_Guide',
               ],
+            },
+            {
+              type: 'category',
+              label: 'Integrado con Servidor de Red LoRaWAN',
+              items: [
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/es_Connect_to_Helium',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/es_Connect_to_The_Things_Network',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/es_Connect_to_Loriot',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/es_AWS_Service',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/es_TTN_Mapper',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Integrado con Panel Popular',
+              items: [
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Datacake_Integrated',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Ubidots_Integrated',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_thingsboard_integrated',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Ubidots_Integrated(Helium)',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Qubitro_Integrated',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_TagoIO_Integrated',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_InfluxDB_Integrated',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Akenza_Integrated',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_Trackpac_Integrated',
+                'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/es_sensecap_t1000_tracker_wialon',
+              ],
+            },
+            'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/es_FAQ',
+            'es/Sensor/SenseCAP/SenseCAP_T1000_Tracker/es_Firmware_release_note',
+          ],
         },
- //       {
-  //            type: 'category',
-   //           label: 'SenseCAP T1000-P Pet Tracker',
-   //           collapsed: true,
-   //           collapsible: true,
-    //          link: {
-    //            type: "doc",
-     //           id: 'Sensor/SenseCAP/SenseCAP_T1000-P/t1000_p_intro',
-     //         },
-      //        items: [
-       //         'Sensor/SenseCAP/SenseCAP_T1000-P/get_started_with_t1000_p',
-       //           ],
-       //     },
-
-         {
+        //       {
+        //            type: 'category',
+        //           label: 'SenseCAP T1000-P Pet Tracker',
+        //           collapsed: true,
+        //           collapsible: true,
+        //          link: {
+        //            type: "doc",
+        //           id: 'Sensor/SenseCAP/SenseCAP_T1000-P/t1000_p_intro',
+        //         },
+        //        items: [
+        //         'Sensor/SenseCAP/SenseCAP_T1000-P/get_started_with_t1000_p',
+        //           ],
+        //     },
+        {
           type: 'category',
           label: 'SenseCAP Sensor',
           collapsed: true,
@@ -10495,11 +10693,9 @@ const sidebars = {
             id: "es/Sensor/SenseCAP/SenseCAP_Intro/es_SenseCAP_Sensor_Intro",
           },
           items: [
-
             {
               type: 'category',
               label: 'SenseCAP LoRaWAN Sensor',
-
               items: [
                 {
                   type: 'category',
@@ -10519,7 +10715,6 @@ const sidebars = {
                     },
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'SenseCAP S2120 8-in-1 LoRaWAN Weather Sensor',
@@ -10528,7 +10723,6 @@ const sidebars = {
                     'es/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/es_Tutorials-Getting_Started_with_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor',
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'SenseCAP A1101',
@@ -10540,8 +10734,6 @@ const sidebars = {
                     //                 'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/Train_and_Deploy_Your_Own_AI_Model_with_Edge_Impulse_into_A1101',
                   ],
                 },
-
-
                 {
                   type: 'category',
                   label: 'SenseCAP A1102',
@@ -10560,10 +10752,8 @@ const sidebars = {
                 //     'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1102/TrainAI_With_A1102',
                 //   ],
                 // },
-
               ],
             },
-
             {
               type: 'category',
               label: ' SenseCAP ONE Weather Sensor',
@@ -10587,7 +10777,6 @@ const sidebars = {
                 },
               ],
             },
-
             {
               type: 'category',
               label: ' SenseCAP Sensor Probe',
@@ -10614,7 +10803,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: ' SenseCAP Sensor Builder',
@@ -10629,7 +10817,6 @@ const sidebars = {
             'es/Sensor/SenseCAP/SenseCAP_Sensor_Builder/es_list_of_seeed_grove_for_builder',
           ],
         },
-
         {
           type: 'category',
           label: ' SenseCAP Data Logger',
@@ -10764,7 +10951,6 @@ const sidebars = {
         'es/Sensor/mmWave_radar_sensor/es_Radar_MR24FDB1',
       ],
     },
-
     {
       type: 'category',
       label: 'XIAO',
@@ -10776,7 +10962,6 @@ const sidebars = {
       },
       items: [
         'es/Sensor/SeeedStudio_XIAO/es_SeeedStudio_XIAO_Series_Projects',
-
         {
           type: 'category',
           label: 'XIAO SAMD21',
@@ -10791,6 +10976,7 @@ const sidebars = {
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-by-Nanase',
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-CircuitPython',
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_XIAO-SAMD21-MicroPython',
+                'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/es_MicroBlocks_XIAO_SAMD21',
               ],
             },
             {
@@ -10812,7 +10998,8 @@ const sidebars = {
             },
           ],
         },
-        { // XIAO RA4M1
+        {
+          // XIAO RA4M1
           type: 'category',
           label: 'XIAO RA4M1',
           items: [
@@ -10844,6 +11031,7 @@ const sidebars = {
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-Arduino',
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-MicroPython',
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-CircuitPython',
+                'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/es_MicroBlocks_XIAO_RP2040',
               ],
             },
             {
@@ -10864,7 +11052,8 @@ const sidebars = {
             },
           ],
         },
-        { // XIAO RP2350
+        {
+          // XIAO RP2350
           type: 'category',
           label: 'XIAO RP2350',
           items: [
@@ -10892,6 +11081,7 @@ const sidebars = {
               label: 'Lenguaje de Programación',
               items: [
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE_CircutPython',
+                'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_MicroBlocks_XIAO_nRF52840',
               ],
             },
             {
@@ -10903,7 +11093,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Uso del Hardware',
+              label: 'Uso de Hardware',
               items: [
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-IMU-Usage',
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-PDM-Usage',
@@ -10946,6 +11136,7 @@ const sidebars = {
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/es_XIAO_nRF54L15-Sense_Getting_Started',
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/es_XIAO_nRF54L15-Sense_Pin_Multiplexing',
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/es_XIAO_nRF54L15-Sense_Built-in-Sensor',
+            'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/es_XIAO_nRF54L15-Sense_Power_Consumptions',
             {
               type: 'category',
               label: 'Conexión Inalámbrica',
@@ -10976,7 +11167,7 @@ const sidebars = {
           items: [
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Getting_Started',
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Pin_Multiplexing',
-     //       'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_MicroPython',
+            //       'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_MicroPython',
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO-ESP32C3-NuttX',
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO-ESP32C3-Zephyr',
             {
@@ -10993,6 +11184,7 @@ const sidebars = {
               items: [
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_with_CircuitPython',
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_with_MicroPython',
+                'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/es_MicroBlocks_XIAO_ESP32_C3',
               ],
             },
             {
@@ -11016,7 +11208,6 @@ const sidebars = {
           items: [
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Getting_Started',
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Pin_Multiplexing',
-      
             {
               type: 'category',
               label: 'Conexión Inalámbrica',
@@ -11066,7 +11257,6 @@ const sidebars = {
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/es_xiao_esp32c6_kafka',
               ],
             },
-            
           ],
         },
         {
@@ -11090,6 +11280,7 @@ const sidebars = {
               items: [
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_with_MicroPython',
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_CircuitPython',
+                'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/es_MicroBlocks_XIAO_ESP32_S3',
                 // 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Micropython',
               ],
             },
@@ -11104,7 +11295,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Uso del Hardware',
+              label: 'Uso de Hardware',
               items: [
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_mic',
                 'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_tf_and_filesystem',
@@ -11183,7 +11374,6 @@ const sidebars = {
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_XIAO-RS485-Expansion-Board',
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_Bus_Servo_Driver_Board',
             'es/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/es_LED_Driver_Board',
-            
           ],
         },
         {
@@ -11248,7 +11438,7 @@ const sidebars = {
         // },
         {
           type: 'category',
-          label: 'Descripción del Hardware',
+          label: 'Resumen de Hardware',
           items: [
             {
               type: 'category',
@@ -11328,7 +11518,6 @@ const sidebars = {
                 'es/Sensor/Wio_Terminal/Hardware_Overview/Buttons/es_Wio-Terminal-Buttons',
               ],
             },
-
             {
               type: 'category',
               label: 'Interruptor de 5 Vías',
@@ -11336,7 +11525,6 @@ const sidebars = {
                 'es/Sensor/Wio_Terminal/Hardware_Overview/five_Way_Switch/es_Wio-Terminal-Switch',
               ],
             },
-
             {
               type: 'category',
               label: 'Sensor de Luz',
@@ -11344,7 +11532,6 @@ const sidebars = {
                 'es/Sensor/Wio_Terminal/Hardware_Overview/Light_Sensor/es_Wio-Terminal-Light',
               ],
             },
-
             {
               type: 'category',
               label: 'Emisor Infrarrojo',
@@ -11352,7 +11539,6 @@ const sidebars = {
                 'es/Sensor/Wio_Terminal/Hardware_Overview/Infrared_Emitter/es_Wio-Terminal-Infrared-Emitter',
               ],
             },
-
             {
               type: 'category',
               label: 'Micrófono',
@@ -11496,9 +11682,6 @@ const sidebars = {
         },
       ],
     },
-
-    
-
     // {
     //   type: 'category',
     //   label: 'SenseCAP Indicator',
@@ -11582,155 +11765,147 @@ const sidebars = {
     //     },
     //   ],
     // },
-
-
-
-    {
-    type: 'category',
-    label: 'ReSpeaker',
-    collapsed: true,
-    collapsible: true,
-    link: {
-      type: 'doc',
-      id: 'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_ReSpeaker',
-    },
-    items: [
-      {
-        type: 'category',
-        label: 'ReSpeaker XVF 3800',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: 'doc',
-          id: 'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf3800_usb_4_mic_array',
-        },
-        items: [
-          {
-            type: 'category',
-            label: 'ReSpeaker XVF 3800 con XIAO Introducción',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: 'doc',
-              id: 'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf3800_with_xiao_intro',
-            },
-            items: [
-              'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf3800_i2s_test',
-              'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_rgb_test',
-              'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_volume',
-              'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_record_playback',
-              'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_gpio',
-              'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_mqtt_stream',
-              'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_udp_streaming',
-              {
-                type: 'category',
-                label: 'Aplicación',
-                items: [
-                  'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_ha',
-                  'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_edgeimpulse',
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      {
-        type: 'category',
-        label: 'ReSpeaker Lite',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: 'doc',
-          id: 'es/Sensor/ReSpeaker_Lite/es_reSpeaker_lite_introduction',
-        },
-        items: [
-          {
-            type: 'category',
-            label: 'ReSpeaker Lite con XIAO ESP32S3',
-            link: {
-              type: 'doc',
-              id: 'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_xiao_respeaker',
-            },
-            items: [
-              'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_i2s_test',
-              'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_rgb_test',
-              'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_volume',
-              'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_button',
-              'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_record_and_play',
-              // 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_i2s_rgb', // commented out
-              {
-                type: 'doc',
-                id: 'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_streams_generator',
-                label: 'Generador de Streams',
-              },
-              'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_streams_print',
-              'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_streams_memory',
-              'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_player_spiffs',
-              'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_streams_mqtt',
-              'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_streams_i2s_tflite',
-            ],
-          },
-          {
-            type: 'category',
-            label: 'Aplicación',
-            items: [
-              'es/Sensor/ReSpeaker_Lite/Application/es_respeaker_lite_ha',
-              'es/Sensor/ReSpeaker_Lite/Application/es_respeaker_lite_pi5',
-            ],
-          },
-          'es/Sensor/ReSpeaker_Lite/es_respeaker_enclosure',
-        ],
-      },
-      {
-        type: 'category',
-        collapsed: true,
-        collapsible: true,
-        label: 'ReSpeaker 2-Mics Pi HAT',
-        link: {
-          type: 'doc',
-          id:   'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/es_ReSpeaker_2_Mics_Pi_HAT',
-        },
-        items: [
-          {
-            type: 'category',
-            label: 'Para Usuarios v1 (Obsoleto)',
-            items: [
-              'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/es_ReSpeaker_2_Mics_Pi_HAT_Raspberry',
-              'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/es_ReSpeaker_2_Mics_Pi_HAT_Jetson',
-            ],
-          },
-          {
-            type: 'category',
-            label: 'Para Usuarios v2',
-            items: [
-              'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/es_ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
-              'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/es_ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
-            ],
-          },
-          'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/es_ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
-        ],
-      },
-       {
-        type: 'category',
-        label: 'ReSpeaker XVF 3000',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          'es/Seeed_Elderly/reSpeaker/Extension Board/es_ReSpeaker_Mic_Array_v3.0',
-          'es/Seeed_Elderly/reSpeaker/Extension Board/es_ReSpeaker_Mic_Array_v2.0',
-          'es/Seeed_Elderly/reSpeaker/es_ReSpeaker-USB-Mic-Array',
-        ],
-      },
-    ],
-  },
-
-
-
-
-
     {
       type: 'category',
-      label: 'Otros Módulos de Sensores',
+      label: 'ReSpeaker',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: 'doc',
+        id: 'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_ReSpeaker',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'ReSpeaker XVF 3800',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: 'doc',
+            id: 'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf3800_usb_4_mic_array',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'ReSpeaker XVF 3800 con XIAO Introducción',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: 'doc',
+                id: 'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf3800_with_xiao_intro',
+              },
+              items: [
+                'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf3800_i2s_test',
+                'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_rgb_test',
+                'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_volume',
+                'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_record_playback',
+                'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_gpio',
+                'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_mqtt_stream',
+                'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_udp_streaming',
+                {
+                  type: 'category',
+                  label: 'Aplicación',
+                  items: [
+                    'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_ha',
+                    'es/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/es_respeaker_xvf_3800_edgeimpulse',
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'ReSpeaker Lite',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: 'doc',
+            id: 'es/Sensor/ReSpeaker_Lite/es_reSpeaker_lite_introduction',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'ReSpeaker Lite con XIAO ESP32S3',
+              link: {
+                type: 'doc',
+                id: 'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_xiao_respeaker',
+              },
+              items: [
+                'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_i2s_test',
+                'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_rgb_test',
+                'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_volume',
+                'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_button',
+                'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_record_and_play',
+                // 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_i2s_rgb', // commented out
+                {
+                  type: 'doc',
+                  id: 'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_streams_generator',
+                  label: 'Generador de Streams',
+                },
+                'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_streams_print',
+                'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_streams_memory',
+                'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_player_spiffs',
+                'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_streams_mqtt',
+                'es/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/es_respeaker_streams_i2s_tflite',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Aplicación',
+              items: [
+                'es/Sensor/ReSpeaker_Lite/Application/es_respeaker_lite_ha',
+                'es/Sensor/ReSpeaker_Lite/Application/es_respeaker_lite_pi5',
+              ],
+            },
+            'es/Sensor/ReSpeaker_Lite/es_respeaker_enclosure',
+          ],
+        },
+        {
+          type: 'category',
+          collapsed: true,
+          collapsible: true,
+          label: 'ReSpeaker 2-Mics Pi HAT',
+          link: {
+            type: 'doc',
+            id: 'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/es_ReSpeaker_2_Mics_Pi_HAT',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'Para Usuarios v1 (Obsoleto)',
+              items: [
+                'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/es_ReSpeaker_2_Mics_Pi_HAT_Raspberry',
+                'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/es_ReSpeaker_2_Mics_Pi_HAT_Jetson',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Para Usuarios v2',
+              items: [
+                'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/es_ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
+                'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/es_ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
+              ],
+            },
+            'es/Sensor/ReSpeaker_2-Mics_Pi_HAT/es_ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'ReSpeaker XVF 3000',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            'es/Seeed_Elderly/reSpeaker/Extension Board/es_ReSpeaker_Mic_Array_v3.0',
+            'es/Seeed_Elderly/reSpeaker/Extension Board/es_ReSpeaker_Mic_Array_v2.0',
+            'es/Seeed_Elderly/reSpeaker/es_ReSpeaker-USB-Mic-Array',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Otros Módulos de Sensado',
       items: [
         {
           type: 'category',
@@ -11753,7 +11928,6 @@ const sidebars = {
             'es/Seeed_Elderly/Radar_Sensor/es_Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11',
           ],
         },
-
         {
           type: 'category',
           label: 'Red de Sensores',
@@ -11769,7 +11943,6 @@ const sidebars = {
             'es/Sensor/Beyond_Grove/Sensor_Network/es_Wireless_Sensor_Node-Solar_Kit',
           ],
         },
-
         {
           type: 'category',
           label: 'Cámara de Visión EcoEye',
@@ -11784,7 +11957,6 @@ const sidebars = {
             'es/Sensor/Beyond_Grove/AI_Assistant/es_ai_assistant_getting_started',
           ],
         },
-        
         {
           type: 'category',
           label: 'Accesorios',
@@ -11894,8 +12066,6 @@ const sidebars = {
         },
       ],
     },
-
-    
     {
       type: 'category',
       label: 'Otros Microcontroladores',
@@ -11950,7 +12120,6 @@ const sidebars = {
             //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/LoRa_Locator',
             //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Connect_1110_to_HA',
             //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/change_antenna_path',
-
             //     {
             //       type: 'category',
             //       label: 'Development Tutorial',
@@ -11960,7 +12129,6 @@ const sidebars = {
             //     },
             //   ],
             // },
-
             // {
             //   type: 'category',
             //   label: 'Wio WM1110 Dev Kit',
@@ -11984,9 +12152,6 @@ const sidebars = {
                 'es/Sensor/Wio_Series/LPWAN_Dev_Kit_for_Sidewalk/es_Switch_to_Wio_Tracker',
               ],
             },
-
-
-
             // {
             //   type: 'category',
             //   label: 'Wio WM1302',
@@ -11995,7 +12160,6 @@ const sidebars = {
             //     'Sensor/Wio_Series/Wio_WM1302/WM1302_Pi_HAT',
             //   ],
             // },
-
             {
               type: 'category',
               label: 'Wio RP2040',
@@ -12007,7 +12171,6 @@ const sidebars = {
                     'es/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_Module/es_Wio_RP2040_Module_Build-in_Wireless_2.4G',
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'Placa de Desarrollo mini Wio RP2040',
@@ -12029,7 +12192,6 @@ const sidebars = {
                 },
               ],
             },
-
             {
               type: 'category',
               label: 'Wio Link',
@@ -12043,7 +12205,6 @@ const sidebars = {
                 'es/Sensor/Wio_Series/Wio_Link/es_Wio_Link_Starter_Kit',
               ],
             },
-
             {
               type: 'category',
               label: 'Wio Tracker',
@@ -12057,7 +12218,6 @@ const sidebars = {
                 'es/Sensor/Wio_Series/Wio_Tracker/es_Grove_Starter_Kit_for_Wio_LTE',
               ],
             },
-
             {
               type: 'category',
               label: 'Wio Lite',
@@ -12079,7 +12239,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Serie Seeeduino',
@@ -12128,7 +12287,6 @@ const sidebars = {
             'es/Sensor/Seeeduino Series/es_Seeeduino-Crypto-ATmega4809-ECC608',
             'es/Sensor/Seeeduino Series/es_Seeeduino_Arch',
             'es/Sensor/Seeeduino Series/es_Seeeduino_Arch_V1.0',
-
             {
               type: 'category',
               label: 'Aplicación',
@@ -12148,7 +12306,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'LinkIt',
@@ -12184,7 +12341,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Arch',
@@ -12202,7 +12358,6 @@ const sidebars = {
             'es/Sensor/Arch/es_Grove-Starter_Kit_for_mbed',
           ],
         },
-
         {
           type: 'category',
           label: 'Azure Sphere MT3620',
@@ -12214,7 +12369,6 @@ const sidebars = {
             'es/Sensor/Azure Sphere MT3620/es_MT3620_Grove_Breakout',
           ],
         },
-        
         {
           type: 'category',
           label: 'Botón IoT de Seeed Studio',
@@ -12224,7 +12378,6 @@ const sidebars = {
             'es/Sensor/IOT_Button_for_ESPHOME/es_seeed_iot_button_with_zigbee',
           ],
         },
-
         {
           type: 'category',
           label: 'Botón IOT para AWS',
@@ -12232,7 +12385,6 @@ const sidebars = {
             'es/Sensor/IOT_Button_For_AWS/es_SEEED-IOT-BUTTON-FOR-AWS',
           ],
         },
-
         {
           type: 'category',
           label: 'Pi Pico',
@@ -12242,15 +12394,11 @@ const sidebars = {
         },
       ],
     },
-
     // {
-
     //   type: 'doc',
     //   label: '--Network--',
     //   id: 'Sensor_Network',
-
     // },
-
     // {
     //   type: 'html',
     //   value: `
@@ -12268,7 +12416,6 @@ const sidebars = {
     // </div>
     // `,
     // },
-
     {
       type: 'doc',
       id: 'es/es_Network',
@@ -12291,7 +12438,6 @@ const sidebars = {
         },
       ]
     },
-
     // {
     //   type: 'category',
     //   label: 'Meshtastic Network',
@@ -12312,7 +12458,6 @@ const sidebars = {
     //           id: 'Network/Meshtastic_Network/T1000-E/sensecap_t1000_e',
     //           label: 'Get Started with T1000-E',
     //         },
-
     //       ],
     //     },
     //         {
@@ -12332,7 +12477,6 @@ const sidebars = {
     //               id:'Network/Meshtastic_Network/wio_tracker_kit/flash_meshtastic_kit',
     //               label: 'Flash Firmware', 
     //             },
-
     //           ],
     //         },
     //         {
@@ -12366,7 +12510,6 @@ const sidebars = {
         id: 'es/Network/SenseCAP_Network/es_SenseCAP_Gateway_Intro',
       },
       items: [
-
         {
           type: 'category',
           label: 'Gateway Multi-Plataforma SenseCAP M2',
@@ -12387,7 +12530,6 @@ const sidebars = {
             'es/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/es_flash_opensource_firmware_to_m2_gateway'
           ],
         },
-
         {
           type: 'category',
           label: 'Gateway Helium',
@@ -12412,7 +12554,6 @@ const sidebars = {
                 'es/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/es_M2_Local_Console',
               ],
             },
-
             {
               type: 'category',
               label: 'Gateway Ligero SenseCAP M2',
@@ -12424,7 +12565,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Gateway Flux',
@@ -12434,7 +12574,6 @@ const sidebars = {
             'es/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/es_SenseCAP_M4_FAQ',
           ],
         },
-
         {
           type: 'category',
           label: 'Gateway Exterior',
@@ -12444,7 +12583,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'SenseCAP K1100',
@@ -12582,85 +12720,77 @@ const sidebars = {
     //     'Network/LinkStar/Linkstar_Datasheet',
     //     'Network/LinkStar/linkstar-install-system',
     //     ],
-
     // },
-
     {
       type: 'category',
       label: 'Soluciones Raspberry Pi',
       collapsed: true,
       collapsible: true,
       items: [
-      {
-        type: 'category',
-        label: 'reRouter',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'es/Network/RaspberryPi_Devices/reRouter/es_reRouter_Intro',
+        {
+          type: 'category',
+          label: 'reRouter',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'es/Network/RaspberryPi_Devices/reRouter/es_reRouter_Intro',
+          },
+          items: [
+            'es/Network/RaspberryPi_Devices/reRouter/es_Raspberry-OpenWrt-Getting-Started',
+            'es/Network/RaspberryPi_Devices/reRouter/es_Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4',
+            'es/Network/RaspberryPi_Devices/reRouter/es_FAQs_For_openWrt',
+            {
+              type: 'category',
+              label: 'Aplicación',
+              items: [
+                'es/Network/RaspberryPi_Devices/reRouter/Application/es_OpenWrt-Getting-Started',
+                'es/Network/RaspberryPi_Devices/reRouter/Application/es_OpenWrt-Plex-Media-Server-on-Docker',
+                'es/Network/RaspberryPi_Devices/reRouter/Application/es_Mender-Client-dual-GbE-CM4',
+              ],
+            },
+          ],
         },
-        items: [
-          'es/Network/RaspberryPi_Devices/reRouter/es_Raspberry-OpenWrt-Getting-Started',
-          'es/Network/RaspberryPi_Devices/reRouter/es_Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4',
-          'es/Network/RaspberryPi_Devices/reRouter/es_FAQs_For_openWrt',
-          {
-            type: 'category',
-            label: 'Aplicación',
-            items: [
-              'es/Network/RaspberryPi_Devices/reRouter/Application/es_OpenWrt-Getting-Started',
-              'es/Network/RaspberryPi_Devices/reRouter/Application/es_OpenWrt-Plex-Media-Server-on-Docker',
-              'es/Network/RaspberryPi_Devices/reRouter/Application/es_Mender-Client-dual-GbE-CM4',
-            ],
-          },
-        ],
-       },  
-
-       {
-        type: 'category',
-        label: ' Hat 4G LTE para Raspberry Pi',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/es_Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
-
-          {
-            type: 'category',
-            label: 'Aplicación',
-            items: [
-              {
-                type: 'category',
-                label: 'Configuración de Red Windows',
-                items: [
-                  'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_4g_lte_rpi_hat_rndis',
-                  'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_4g_lte_rpi_hat_mbim',
-                ],
-              },
-              {
-                type: 'category',
-                label: 'Configuración de Red Raspberry Pi OS',
-                items: [
-                  'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_mobile_internet_for_your_pi_ecm_set_up',
-                  'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_4g_lte_rpi_hat_qmi',
-                ],
-              },
-
-              'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_send_text_massages_lte_cat_hat_for_rpi',
-              'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
-              'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_4g_lte_hotspot_on_rpi_os',
-              'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_ftp_on_rpi_4g_lte_hat',
-              'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_mqtt_on_rpi_4g_lte_hat',
-              'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_tcp_ip_rpi_4g_lte_hat',
-              'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_4g_lte_rpi_hat_openwrt',
-
-            ],
-          },
-        ],
-       },  
-
+        {
+          type: 'category',
+          label: ' Hat 4G LTE para Raspberry Pi',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/es_Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
+            {
+              type: 'category',
+              label: 'Aplicación',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Configuración de Red Windows',
+                  items: [
+                    'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_4g_lte_rpi_hat_rndis',
+                    'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_4g_lte_rpi_hat_mbim',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Configuración de Red Raspberry Pi OS',
+                  items: [
+                    'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_mobile_internet_for_your_pi_ecm_set_up',
+                    'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_4g_lte_rpi_hat_qmi',
+                  ],
+                },
+                'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_send_text_massages_lte_cat_hat_for_rpi',
+                'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
+                'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_4g_lte_hotspot_on_rpi_os',
+                'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_ftp_on_rpi_4g_lte_hat',
+                'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_mqtt_on_rpi_4g_lte_hat',
+                'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_tcp_ip_rpi_4g_lte_hat',
+                'es/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/es_4g_lte_rpi_hat_openwrt',
+              ],
+            },
+          ],
+        },
       ],
     },
-
     {
       type: 'category',
       label: 'Soluciones Rockchip',
@@ -12671,63 +12801,60 @@ const sidebars = {
         id: 'es/Network/RK_Devices/es_RK_intro',
       },
       items: [
-      {
-        type: 'category',
-        label: 'LinkStar-H68K',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'es/Network/RK_Devices/LinkStar/es_Linkstar_Intro',
-        },
-        items: [
-          'es/Network/RK_Devices/LinkStar/es_Linkstar_Datasheet',
-          'es/Network/RK_Devices/LinkStar/es_linkstar-install-system',
-          {
-            type: 'category',
-            label: 'Aplicación',
-            items: [
-              'es/Network/RK_Devices/LinkStar/Application/es_h68k-ha-esphome',
-              'es/Network/RK_Devices/LinkStar/Application/es_plex_media_server',
-              'es/Network/RK_Devices/LinkStar/Application/es_wordpress_linkstar',
-              'es/Network/RK_Devices/LinkStar/Application/es_grocy-bookstack-linkstar',
-            ],
+        {
+          type: 'category',
+          label: 'LinkStar-H68K',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'es/Network/RK_Devices/LinkStar/es_Linkstar_Intro',
           },
-        ],
-      },
-      {
-        type: 'category',
-        label: 'LinkStar-H68K-V2',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'es/Network/RK_Devices/H68K_V2/es_H68KV2_Datasheet',
+          items: [
+            'es/Network/RK_Devices/LinkStar/es_Linkstar_Datasheet',
+            'es/Network/RK_Devices/LinkStar/es_linkstar-install-system',
+            {
+              type: 'category',
+              label: 'Aplicación',
+              items: [
+                'es/Network/RK_Devices/LinkStar/Application/es_h68k-ha-esphome',
+                'es/Network/RK_Devices/LinkStar/Application/es_plex_media_server',
+                'es/Network/RK_Devices/LinkStar/Application/es_wordpress_linkstar',
+                'es/Network/RK_Devices/LinkStar/Application/es_grocy-bookstack-linkstar',
+              ],
+            },
+          ],
         },
-        items: [
-          'es/Network/RK_Devices/H68K_V2/es_H68KV2_Datasheet',
-          'es/Network/RK_Devices/H68K_V2/es_H68KV2_install_system',
-        ],
-      },
-      {
-        type: 'category',
-        label: 'LinkStar-H28K',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'es/Network/RK_Devices/H28K/es_H28K_Datasheet',
+        {
+          type: 'category',
+          label: 'LinkStar-H68K-V2',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'es/Network/RK_Devices/H68K_V2/es_H68KV2_Datasheet',
+          },
+          items: [
+            'es/Network/RK_Devices/H68K_V2/es_H68KV2_Datasheet',
+            'es/Network/RK_Devices/H68K_V2/es_H68KV2_install_system',
+          ],
         },
-        items: [
-          'es/Network/RK_Devices/H28K/es_H28K_Datasheet',
-          'es/Network/RK_Devices/H28K/es_H28K-install-system',
-        ],
-      },
-
+        {
+          type: 'category',
+          label: 'LinkStar-H28K',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'es/Network/RK_Devices/H28K/es_H28K_Datasheet',
+          },
+          items: [
+            'es/Network/RK_Devices/H28K/es_H28K_Datasheet',
+            'es/Network/RK_Devices/H28K/es_H28K-install-system',
+          ],
+        },
       ],
     },
-
-
     {
       type: 'category',
       label: 'Otros Dispositivos de Red',
@@ -12743,7 +12870,6 @@ const sidebars = {
         },
       ],
     },
-
     // {
     //   type: 'html',
     //   value: `
@@ -12761,14 +12887,12 @@ const sidebars = {
     // </div>
     // `,
     // },
-
     {
       type: 'doc',
       id: 'es/es_Edge_Computing',
       label: 'Computación en el Borde',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Dispositivos Raspberry Pi',
@@ -12778,168 +12902,163 @@ const sidebars = {
         type: "doc",
         id: 'es/Edge/Raspberry_Pi_Devices/es_RpiDevices',
       },
-      items:[
+      items: [
         {
           type: 'category',
           label: 'Computadora de IA en el Borde',
           collapsed: true,
           collapsible: true,
-          items:[
+          items: [
             {
-            type: 'category',
-            label: 'reComputer-AI-R2000',
-            collapsed: true,
-            collapsible: true,
-            link:{
-              type:"doc",
-              id:'es/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/es_reComputer_AI_R2000_getting_start'
+              type: 'category',
+              label: 'reComputer-AI-R2000',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'es/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/es_reComputer_AI_R2000_getting_start'
+              },
+              items: [
+                'es/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/es_reComputer_AI_R2000_getting_start',
+              ]
             },
-            items: [
-              'es/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/es_reComputer_AI_R2000_getting_start',
-            ]},
             {
               type: 'category',
               label: 'reComputer-AI-Industrial-R2000',
               collapsed: true,
               collapsible: true,
-              link:{
-                type:"doc",
-                id:'es/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/es_reComputer_AI_Industrial_R2135_getting_start'
+              link: {
+                type: "doc",
+                id: 'es/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/es_reComputer_AI_Industrial_R2135_getting_start'
               },
               items: [
                 'es/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/es_reComputer_AI_Industrial_R2135_getting_start',
                 'es/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/es_reComputer_AI_Industrial_R2000_Flash_OS',
-              ]},
-            
-
-      ]},
+              ]
+            },
+          ]
+        },
         {
-        type: 'category',
-        label: 'HMI',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          {
-        type: 'category',
-        label: 'reTerminal',
-        collapsed: true,
-        collapsible: true,
-        link: {
-              type: "doc",
-              id: 'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal_Intro',
-            },
-
-            items: [
-              'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal',
-              'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-hardware-interfaces-usage',
-              'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-piCam',
-              'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-FAQ',
-              {
-                type: 'category',
-                label: 'Instalación de SO',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_reTerminal-Buildroot-SDK',
-                  'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_reTerminal-Yocto',
-                  'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_Streampi_OBS_On_reTerminal',
-                  // 'Edge/reTerminal/OS_Installation/',
-                ],
+          type: 'category',
+          label: 'HMI',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: 'reTerminal',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal_Intro',
               },
-              {
-                type: 'category',
-                label: 'Placa de Extensión',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/es_reTerminalBridge',
-                  'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/es_reTerminal_Mount_Options',
-                ],
+              items: [
+                'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal',
+                'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-hardware-interfaces-usage',
+                'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-piCam',
+                'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-FAQ',
+                {
+                  type: 'category',
+                  label: 'Instalación del SO',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_reTerminal-Buildroot-SDK',
+                    'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_reTerminal-Yocto',
+                    'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_Streampi_OBS_On_reTerminal',
+                    // 'Edge/reTerminal/OS_Installation/',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Placa de Extensión',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/es_reTerminalBridge',
+                    'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/es_reTerminal_Mount_Options',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'reTerminal DM',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reTerminal-dm_Intro',
               },
-            ],
-          },
-          {
-            type: 'category',
-            label: 'reTerminal DM',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: "doc",
-              id: 'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reTerminal-dm_Intro',
+              items: [
+                'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm',
+                'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-flash-OS',
+                'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-warranty',
+                'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-hardware-guide',
+              ],
             },
-            items: [
-              'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm',
-              'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-flash-OS',
-              'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-warranty',
-              'es/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-hardware-guide',
-            ],
-          },
-
-        ],
-
-      },
-      {
-        type: 'category',
-        label: 'Edge Controller',
-        collapsed: true,
-        collapsible: true,
-       // link: {
-         // type: "doc",
-         // id: 'Edge/Raspberry_Pi_Devices/Edge_Box_RPi_200/Edge_Box_intro',
-       // },
-        items: [
-          {
-            type: 'category',
-            label: 'EdgeBox-RPI-200',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: "doc",
-              id: 'es/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edge_Box_intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Edge Controller',
+          collapsed: true,
+          collapsible: true,
+          // link: {
+          // type: "doc",
+          // id: 'Edge/Raspberry_Pi_Devices/Edge_Box_RPi_200/Edge_Box_intro',
+          // },
+          items: [
+            {
+              type: 'category',
+              label: 'EdgeBox-RPI-200',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'es/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edge_Box_intro',
+              },
+              items: [
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edgebox_rpi_200_Introduction',
+              ],
             },
-            items: [
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edgebox_rpi_200_Introduction',
-            ],
-          },
-
-          {
-            type: 'category',
-            label: 'reComputer-R1000',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: "doc",
-              id: 'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_intro',
+            {
+              type: 'category',
+              label: 'reComputer-R1000',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_intro',
+              },
+              items: [
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_pcn',
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r',
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_flash_os',
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_assembly_guide',
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_warranty',
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_how_to_use_rs485_modbus',
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_use_bacnet_mstp',
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_reComputer_R1000_FAQ',
+              ],
             },
-            items: [
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_pcn',
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r',
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_flash_os',
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_assembly_guide',
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_warranty',
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_how_to_use_rs485_modbus',
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_use_bacnet_mstp',
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_reComputer_R1000_FAQ',
-            ],
-          },
-          {
-            type: 'category',
-            label: 'reComputer R1100',
-            collapsed: true,
-            collapsible: true,
-            items: [
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/es_reComputer_R1100',
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/es_recomputer_r1100_flash_os',
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/es_recomputer_r1100_configure_system',
-              'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/es_recomputer_r1100_assembly_guide',
-            ],
-          },
-
-        ],
-      },
-
-      {
-        type: 'category',
-        label: 'Hat',
-        collapsed: true,
-        collapsible: true,
-        items: [
+            {
+              type: 'category',
+              label: 'reComputer R1100',
+              collapsed: true,
+              collapsible: true,
+              items: [
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/es_reComputer_R1100',
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/es_recomputer_r1100_flash_os',
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/es_recomputer_r1100_configure_system',
+                'es/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/es_recomputer_r1100_assembly_guide',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Hat',
+          collapsed: true,
+          collapsible: true,
+          items: [
             {
               type: 'category',
               label: 'M.2 Hat',
@@ -12947,275 +13066,270 @@ const sidebars = {
                 'es/Edge/Raspberry_Pi_Devices/M_2_Hat/es_m_2_hat_start_with_pi5',
               ],
             },
-          
-        ],
-      },
-
-      {
-        type: 'category',
-        label: 'Aplicación',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          {
-            type: 'category',
-            label: 'AIoT',
-            items: [
-              {
-                type: 'category',
-                label: 'BalenaOS',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/es_recomputer_r1000_build_seeed_balena_image',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/es_recomputer_r1000_balena',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Solución en la Nube',
-                items: [
-                  { 
-                    type: 'category', 
-                    label: 'Integración con AWS IoT Core (R1000 / reTerminal DM)', 
-                    items: [ 
-                      'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/es_recomputer_r1000_aws', 
-                      'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/es_reTerminal-DM_AWS_first', 
-                    ] 
-                  },
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/es_reTerminal-DM_Azure_IoT',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Fin',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_install_fin',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with_fin_create_equip_graphic',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with_fin_create_site_graphic',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with_fin_top_level_graphic',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with_fin_use_modbus',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with-_fin_use_logic_to_alarm',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with-fin_create_floor_graphic',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Fuxa',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_recomputer_r1000_with_fuxa_to_achieve_SCADA',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_recomputer_r1000_with_fuxa_use_modbus',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_recomputer_r1000_with_fuxa_use_mqtt',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_recomputer_r1000_with_fuxa_use_opcua',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_recomputer_r1000_with_fuxa_use_webapi',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_reTerminal-DM_intro_FUXA',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Home Assistant',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/es_recomputer-r1000-home-assistant',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/es_recomputer-r1000-modbus-home-assistant',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/es_reTerminal_Home_Assistant',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/es_reTerminal-Home-Assistant-Customize',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'N3uron',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_Edgebox-rpi-200-n3uron-aws',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_Edgebox-rpi-200-n3uron-bacnet',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_Edgebox-rpi-200-n3uron-modbus-mqtt',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_Edgebox-rpi-200-n3uron',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_recomputer_r1000_n3uron_aws',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_recomputer_r1000_n3uron_bacnet',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_recomputer_r1000_n3uron_getting_started',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_recomputer_r1000_n3uron_modbus_mqtt',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_reTerminal_DM_N3uron_AWS',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_reTerminal_DM_N3uron_Historian',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_reTerminal_DM_N3uron_modbus_mqtt',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_reTerminalDM_N3uron_Get_Start',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Node Red',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_box_rpi_200_grafana',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_Bacnet_tcp',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_getting_started',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_influxdb',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_Modbus_rtu',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_Modbus_tcp',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_mqtt',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_neqto_engine_for_linux_reTerminal',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer_r1000_nodered_modbustcp',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer_r1000_nodered_opcua_server',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer_r1000_nodered_s7',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer_r1000_with_node_red_and_bacnet',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer_r1000-grafana',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer-r1000-nodered-getting-start',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-Bacnet',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-canbus',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-grafana',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-influxdb',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-Modbus-TCP',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-mqtt',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-RS485',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Diseño de UI',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/es_reTerminal-build-UI-using-Electron',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/es_reTerminal-build-UI-using-Flutter',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/es_reTerminal-build-UI-using-LVGL',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/es_reTerminal-build-UI-using-Qt-for-Python',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/es_weather-dashboard-with-Grafana-reTerminal',
-                ]
-              },
-              { 
-                type: 'category', 
-                label: 'Detección de Objetos con Edge Impulse', 
-                items: [ 
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/es_reTerminal_ML_Edgeimpulse', 
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/es_reTerminal-DM-edgeimpulse', 
-                ] 
-              }, 
-              { 
-                type: 'category', 
-                label: 'Ignition Edge (reComputer R1000 / reTerminal DM)', 
-                items: [ 
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/es_Edgebox-rpi-200-ignition-edge', 
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/es_reTerminal-DM-Getting-Started-with-Ignition-Edge', 
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/es_reTerminal-DM-Ignition-Edge-Panel-Builder', 
-                ] 
-              }, 
-              { 
-                type: 'category', 
-                label: 'Integración con ThingsBoard', 
-                items: [ 
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/es_recomputer_r1000_thingsboard_ce', 
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/es_recomputer_r1000_thingsboard_dashboard', 
-                ] 
-              }, 
-              { 
-                type: 'category', 
-                label: 'CODESYS con Modbus en R1000', 
-                items: [ 
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/es_recomputer_r1000_install_codesys', 
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/es_recomputer_r1000_with_codesys_use_modbus_rtu', 
-                ] 
-              },
-              {
-                type: 'category',
-                label: 'Otros',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/es_Mender-Client-reTerminal',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/es_recomputer_r1000_flowfuse_getting_start',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/es_reTerminal-DM_intro_machinechat_jedi',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/es_reterminal-dm-sensecraft-edge-os-intro',
-                  'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/es_recomputer_use_ups'
-                ]
-              },
-            ]
-          },
-          {
-            type: 'category',
-            label: 'Visión por Computadora',
-            items: [
-              {
-                type: 'category',
-                label: 'Benchmark',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/es_benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/es_benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Demos de OpenCV (reTerminal y Cámara Pi)',
-                items: [
-                  {
-                    type: 'category',
-                    label: 'Detección de Objetos/Rostros/Colores/Formas',
-                    items: [
-                      'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/es_reTerminal_DM_Color_detection',
-                      'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/es_reTerminal_DM_Face_detection',
-                      'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/es_reTerminal_DM_Object_detection',
-                      'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/es_reTerminal_DM_Shape_detection',
-                    ]
-                  },
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/es_reTerminal_DM_opencv',
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/es_reTerminal_DM-tracking',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Aplicaciones basadas en YOLO',
-                items: [
-                  {
-                    type: 'category',
-                    label: 'Detección de Objetos con YOLOv8 (Pi 5 / R1000 / AI Box)',
-                    items: [
-                      'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/es_Using_YOLOv8_and_AI_Box_for_fall_climbing_and_tracking_detection',
-                      'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/es_yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
-                    ]
-                  },
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/es_reTerminal-DM-Yolo5',
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/es_yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'NVR',
-                items:[
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Aplicación',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: 'AIoT',
+              items: [
+                {
+                  type: 'category',
+                  label: 'BalenaOS',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/es_recomputer_r1000_build_seeed_balena_image',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/es_recomputer_r1000_balena',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Solución en la Nube',
+                  items: [
+                    {
+                      type: 'category',
+                      label: 'Integración AWS IoT Core (R1000 / reTerminal DM)',
+                      items: [
+                        'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/es_recomputer_r1000_aws',
+                        'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/es_reTerminal-DM_AWS_first',
+                      ]
+                    },
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/es_reTerminal-DM_Azure_IoT',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Fin',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_install_fin',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with_fin_create_equip_graphic',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with_fin_create_site_graphic',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with_fin_top_level_graphic',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with_fin_use_modbus',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with-_fin_use_logic_to_alarm',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/es_recomputer_r1000_with-fin_create_floor_graphic',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Fuxa',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_recomputer_r1000_with_fuxa_to_achieve_SCADA',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_recomputer_r1000_with_fuxa_use_modbus',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_recomputer_r1000_with_fuxa_use_mqtt',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_recomputer_r1000_with_fuxa_use_opcua',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_recomputer_r1000_with_fuxa_use_webapi',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/es_reTerminal-DM_intro_FUXA',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Home Assistant',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/es_recomputer-r1000-home-assistant',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/es_recomputer-r1000-modbus-home-assistant',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/es_reTerminal_Home_Assistant',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/es_reTerminal-Home-Assistant-Customize',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'N3uron',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_Edgebox-rpi-200-n3uron-aws',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_Edgebox-rpi-200-n3uron-bacnet',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_Edgebox-rpi-200-n3uron-modbus-mqtt',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_Edgebox-rpi-200-n3uron',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_recomputer_r1000_n3uron_aws',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_recomputer_r1000_n3uron_bacnet',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_recomputer_r1000_n3uron_getting_started',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_recomputer_r1000_n3uron_modbus_mqtt',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_reTerminal_DM_N3uron_AWS',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_reTerminal_DM_N3uron_Historian',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_reTerminal_DM_N3uron_modbus_mqtt',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/es_reTerminalDM_N3uron_Get_Start',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Node Red',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_box_rpi_200_grafana',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_Bacnet_tcp',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_getting_started',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_influxdb',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_Modbus_rtu',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_Modbus_tcp',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_Edge_Box_rpi_200_Node_red_mqtt',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_neqto_engine_for_linux_reTerminal',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer_r1000_nodered_modbustcp',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer_r1000_nodered_opcua_server',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer_r1000_nodered_s7',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer_r1000_with_node_red_and_bacnet',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer_r1000-grafana',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_recomputer-r1000-nodered-getting-start',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-Bacnet',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-canbus',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-grafana',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-influxdb',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-Modbus-TCP',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-mqtt',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/es_reTerminal-DM-Node-Red-RS485',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Diseño de UI',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/es_reTerminal-build-UI-using-Electron',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/es_reTerminal-build-UI-using-Flutter',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/es_reTerminal-build-UI-using-LVGL',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/es_reTerminal-build-UI-using-Qt-for-Python',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/es_weather-dashboard-with-Grafana-reTerminal',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Detección de Objetos Edge Impulse',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/es_reTerminal_ML_Edgeimpulse',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/es_reTerminal-DM-edgeimpulse',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Ignition Edge (reComputer R1000 / reTerminal DM)',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/es_Edgebox-rpi-200-ignition-edge',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/es_reTerminal-DM-Getting-Started-with-Ignition-Edge',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/es_reTerminal-DM-Ignition-Edge-Panel-Builder',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Integración ThingsBoard',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/es_recomputer_r1000_thingsboard_ce',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/es_recomputer_r1000_thingsboard_dashboard',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'CODESYS con Modbus en R1000',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/es_recomputer_r1000_install_codesys',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/es_recomputer_r1000_with_codesys_use_modbus_rtu',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Otros',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/es_Mender-Client-reTerminal',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/es_recomputer_r1000_flowfuse_getting_start',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/es_reTerminal-DM_intro_machinechat_jedi',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/es_reterminal-dm-sensecraft-edge-os-intro',
+                    'es/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/es_recomputer_use_ups',
+                  ]
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Visión por Computadora',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Benchmark',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/es_benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/es_benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Demos OpenCV (reTerminal & Pi Camera)',
+                  items: [
+                    {
+                      type: 'category',
+                      label: 'Detección de Objetos/Rostros/Colores/Formas',
+                      items: [
+                        'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/es_reTerminal_DM_Color_detection',
+                        'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/es_reTerminal_DM_Face_detection',
+                        'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/es_reTerminal_DM_Object_detection',
+                        'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/es_reTerminal_DM_Shape_detection',
+                      ]
+                    },
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/es_reTerminal_DM_opencv',
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/es_reTerminal_DM-tracking',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Aplicaciones basadas en YOLO',
+                  items: [
+                    {
+                      type: 'category',
+                      label: 'Detección de Objetos YOLOv8 (Pi 5 / R1000 / AI Box)',
+                      items: [
+                        'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/es_Using_YOLOv8_and_AI_Box_for_fall_climbing_and_tracking_detection',
+                        'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/es_yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
+                      ]
+                    },
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/es_reTerminal-DM-Yolo5',
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/es_yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'NVR',
+                  items: [
                     'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/es_firearm_detection_with_frigate_nvr_on_r2000',
                     'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/es_frigate_home_assistant_recomputer_r2000',
                     'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/es_frigate_nvr_with_raspberrypi_5',
                     'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/es_reterminal_frigate',
                     'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/es_reterminal-DM-Frigate',
-                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/es_zoneminder_on_recomputer'
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Otras Aplicaciones de IA',
-                items: [
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_clip_application_on_rpi_with_ai_kit',
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_convert_model_to_edge_tpu_tflite_format_for_google_coral',
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_install_m.2_coral_to_rpi5',
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_pose_based_light_control_with_nodered_and_rpi_with_aikit',
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_real-time-ocr',
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_reTerminal_ML_TFLite',
-                  'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
-                ]
-              },
-            ]
-          },
-          {
-            type: 'category',
-            label: 'Modelo de Lenguaje Grande',
-            items:[
-              'es/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/es_deploy_deepseek_on_raspberry_pi_ai_box',
-              'es/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/es_distributed_inference_of_deepseek_model_on_raspberrypi',
-            ]
-          },
-          {
-            type: 'category',
-            label: 'Herramientas',
-            items:[
-              'es/Edge/Raspberry_Pi_Devices/Application/Development_Tools/es_recomputer_use_uv_to_build_package',
-              'es/Edge/Raspberry_Pi_Devices/Application/Development_Tools/es_recomputer_use_docker',
-            ]
-          }
-        ]
-      },
-
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/es_zoneminder_on_recomputer',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Otras Aplicaciones de IA',
+                  items: [
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_clip_application_on_rpi_with_ai_kit',
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_convert_model_to_edge_tpu_tflite_format_for_google_coral',
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_install_m.2_coral_to_rpi5',
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_pose_based_light_control_with_nodered_and_rpi_with_aikit',
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_real-time-ocr',
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_reTerminal_ML_TFLite',
+                    'es/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/es_tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
+                  ]
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Modelo de Lenguaje Grande',
+              items: [
+                'es/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/es_deploy_deepseek_on_raspberry_pi_ai_box',
+                'es/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/es_distributed_inference_of_deepseek_model_on_raspberrypi',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Herramientas',
+              items: [
+                'es/Edge/Raspberry_Pi_Devices/Application/Development_Tools/es_recomputer_use_uv_to_build_package',
+                'es/Edge/Raspberry_Pi_Devices/Application/Development_Tools/es_recomputer_use_docker',
+              ]
+            }
+          ]
+        },
       ],
-
-
     },
     {
       type: 'category',
@@ -13255,7 +13369,6 @@ const sidebars = {
                     'es/Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/es_J401_Mini_carrierboard_Hardware_Interfaces_Usage',
                   ],
                 },
-               
                 {
                   type: 'category',
                   label: 'J501 Carrier Board',
@@ -13276,10 +13389,8 @@ const sidebars = {
                 'es/Edge/NVIDIA_Jetson/Carrier_Boards/A603/es_A603_Flash_JetPack',
                 'es/Edge/NVIDIA_Jetson/Carrier_Boards/A607/es_A607_Flash_JetPack',
                 'es/Edge/NVIDIA_Jetson/Carrier_Boards/A608/es_A608_Flash_JetPack',
-                
               ],
             },
-
             // reComputer Jetson Series
             {
               type: 'category',
@@ -13310,7 +13421,6 @@ const sidebars = {
                         'es/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/es_reComputer_Jetson_Series_Initiation',
                       ],
                     },
-
                     {
                       type: 'category',
                       label: 'reComputer J1020',
@@ -13357,7 +13467,7 @@ const sidebars = {
                     'es/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/es_reComputer_Mini_Hardware_Interfaces_Usage',
                   ],
                 },
-                 {
+                {
                   type: 'category',
                   label: 'reComputer Robotics',
                   items: [
@@ -13382,10 +13492,9 @@ const sidebars = {
                     'es/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/es_reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing',
                     'es/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/es_Replace_the_Thermal_Conductive_Paste_for_reComputer',
                   ],
-                },  
-
-            ]},
-            
+                },
+              ]
+            },
             // reServer Jetson Series
             {
               type: 'category',
@@ -13404,7 +13513,6 @@ const sidebars = {
                     'es/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/es_reServer_Industrial_Hardware_Interface_Usage',
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'reServer J2032',
@@ -13413,10 +13521,8 @@ const sidebars = {
                     'es/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/es_reServer_J2032_Getting_Started',
                   ],
                 },
-
-
-            ]},
-
+              ]
+            },
             // Other Devices
             {
               type: 'category',
@@ -13438,10 +13544,9 @@ const sidebars = {
               ]
             },
             //flashing jetpack page
-	    'es/Edge/NVIDIA_Jetson/es_Flash_Jetpack',
+            'es/Edge/NVIDIA_Jetson/es_Flash_Jetpack',
           ]
         },
-
         // Applications
         {
           type: 'category',
@@ -13477,7 +13582,6 @@ const sidebars = {
                 'es/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_AI-NVR_with_Jetson',
               ]
             },
-
             // Generative AI
             {
               type: 'category',
@@ -13486,7 +13590,6 @@ const sidebars = {
                 type: "doc",
                 id: 'es/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Generative_AI_Intro',
               },
-              
               items: [
                 // Models
                 'es/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Finetune_LLM_by_Llama_Factory_on_Jetson',
@@ -13497,7 +13600,6 @@ const sidebars = {
                 'es/Edge/NVIDIA_Jetson/Application/Generative_AI/es_How_to_run_zero_shot_detection_on_reComputer',
                 'es/Edge/NVIDIA_Jetson/Application/Generative_AI/es_How_to_run_VLM_on_reComputer',
                 'es/Edge/NVIDIA_Jetson/Application/Generative_AI/es_How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson',
-                
                 // Projects
                 'es/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Deploy_Riva_and_Llama2_on_reComputer',
                 'es/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Real_Time_Subtitle_Recoder_on_Jetson',
@@ -13519,7 +13621,7 @@ const sidebars = {
             // Managed Services
             {
               type: 'category',
-              label: 'Servicios Gestionados',
+              label: 'Servicios Administrados',
               // link: {
               //   type: "doc",
               //   id: 'Edge/NVIDIA_Jetson/Application/Managed_Services',
@@ -13531,7 +13633,6 @@ const sidebars = {
                 'es/Edge/NVIDIA_Jetson/Application/Managed_Services/es_Update-Jetson-Linux-OTA-Using-Allxon',
               ]
             },
-
             // Developer Tools
             {
               type: 'category',
@@ -13556,14 +13657,11 @@ const sidebars = {
                 'es/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_Roboflow-Jetson-Getting-Started',
                 'es/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_Install_torch_on_reComputer',
                 'es/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_vnc_for_reComputer',
-                
-                
-
+                'es/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_Implement_Ethercat_communication_on_reComputer',
               ]
             },
           ]
         },
-
         // FAQs
         {
           type: 'category',
@@ -13584,16 +13682,15 @@ const sidebars = {
         }
       ],
     },
-
     {
       type: 'category',
       label: 'Dispositivos ESP',
       collapsed: true,
       collapsible: true,
       //link: {
-        //type: "doc",
-        //id: 'Edge/Edge_Series/Edge_series_Intro',
-     // },
+      //type: "doc",
+      //id: 'Edge/Edge_Series/Edge_series_Intro',
+      // },
       items: [
         {
           type: 'category',
@@ -13604,7 +13701,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'BeagleBone®',
@@ -13618,6 +13714,7 @@ const sidebars = {
         'es/Edge/Beagle_Bone/es_BeagleBone_Blue',
         'es/Edge/Beagle_Bone/es_BeagleBone_Green',
         'es/Edge/Beagle_Bone/es_BeagleBone_Green_Wireless',
+        'es/Edge/Beagle_Bone/es_BeagleBone_Green_Eco',
         'es/Edge/Beagle_Bone/es_BeagleBone-Green-Gateway',
         'es/Edge/Beagle_Bone/es_Beaglebone_Case',
         {
@@ -13650,7 +13747,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'ODYSSEY',
@@ -13668,8 +13764,7 @@ const sidebars = {
           items: [
             'es/Edge/ODYSSEY/ODYSSEY_STM32MP135D/es_ODYSSEY STM32MP135D',
           ],
-          },
-
+        },
         {
           type: 'category',
           label: 'ODYSSEY X86J4105',
@@ -13721,7 +13816,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Instalación de SO',
+              label: 'Instalación del SO',
               items: [
                 'es/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/es_ODYSSEY-X86J4105-Installing-OS',
                 'es/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/es_ODYSSEY-X86J4105-Updating-Firmware',
@@ -13737,7 +13832,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'ODYSSEY STM32MP157C',
@@ -13748,7 +13842,6 @@ const sidebars = {
         },
       ],
     },
-    
     {
       type: 'category',
       label: 'reCamera',
@@ -13761,7 +13854,6 @@ const sidebars = {
         },
       ]
     },
-
     {
       type: 'category',
       label: 'reTerminal E Series',
@@ -13778,24 +13870,21 @@ const sidebars = {
         },
       ]
     },
-
     {
       type: 'category',
       label: 'Otros Dispositivos Edge',
       items: [
-          {
-            type: 'category',
-            label: 'reServer X86',
-            items: [
-              'es/Edge/reServer/reServer_X86/es_reServer-Getting-Started',
-              'es/Edge/reServer/reServer_X86/es_reServer-Update-BIOS-Install-Drivers',
-            ],
-          },
+        {
+          type: 'category',
+          label: 'reServer X86',
+          items: [
+            'es/Edge/reServer/reServer_X86/es_reServer-Getting-Started',
+            'es/Edge/reServer/reServer_X86/es_reServer-Update-BIOS-Install-Drivers',
+          ],
+        },
         'es/Edge/Quantum_Development_Board/es_Quantum-Mini-Linux-Development-Kit',
       ],
     },
-
-
     {
       type: 'doc',
       id: 'es/es_Edge_Robotics',
@@ -13807,166 +13896,158 @@ const sidebars = {
       label: 'Kits de Robot',
       collapsed: true,
       collapsible: true,
-          items: [
-            {
-              type: 'category',
-              label: 'Lerobot',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  'es/Robotics/Robot_Kits/Lerobot/es_Lerobot_Starai_Arm',
-                  'es/Robotics/Robot_Kits/Lerobot/es_Starai_Arm_ROS2_Moveit',
-                  'es/Robotics/Robot_Kits/Lerobot/es_Lerobot_SO100Arm_New',
-                  //'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
-                  'es/Robotics/Robot_Kits/Lerobot/es_Lerobot_Lekiwi',
-                  'es/Robotics/Robot_Kits/Lerobot/es_Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
-                    ]},
-
-          ]
-        },
+      items: [
         {
           type: 'category',
-          label: 'Actuador',
+          label: 'Lerobot',
           // link: {
           //   type: "doc",
-          //   id: 'Edge/NVIDIA_Jetson/Application',
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
           // },
           items: [
-            'es/Robotics/Robot_Actuator/es_Myactuator_Series',
-            'es/Robotics/Robot_Actuator/es_Damiao_Series',
-            'es/Robotics/Robot_Actuator/es_Feetech_Servo',
-            'es/Robotics/Robot_Actuator/es_HighTorque',
+            //'Robotics/Robot_Kits/Lerobot/En_Hackathon_Thor',
+            'es/Robotics/Robot_Kits/Lerobot/es_Fine_tune_GR00T_N1.5_for_LeRobot_SO_Arm_and_Deploy_on_Jetson_Thor',
+            'es/Robotics/Robot_Kits/Lerobot/es_Lerobot_Starai_Arm',
+            'es/Robotics/Robot_Kits/Lerobot/es_Starai_Arm_ROS2_Moveit',
+            'es/Robotics/Robot_Kits/Lerobot/es_Lerobot_SO100Arm_New',
+            //'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
+            'es/Robotics/Robot_Kits/Lerobot/es_Lerobot_Lekiwi',
+            'es/Robotics/Robot_Kits/Lerobot/es_Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
           ]
         },
         {
           type: 'category',
-          label: 'Sensor',
-          // link: {
-          //   type: "doc",
-          //   id: 'Edge/NVIDIA_Jetson/Application',
-          // },
+          label: 'Efectores Finales',
           items: [
-            {
-              type: 'category',
-              label: 'Lidar',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  'es/Robotics/Robot_Sensor/Lidar/es_Robosense_Lidar',
-                  'es/Robotics/Robot_Sensor/Lidar/es_MID360',
-                  'es/Robotics/Robot_Sensor/Lidar/es_A_Loam',
-                  'es/Robotics/Robot_Sensor/Lidar/es_SLAMTEC',
-                ]},
-            {
-              type: 'category',
-              label: 'Cámara',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  'es/Robotics/Robot_Sensor/Camera/es_Getting_Start_with_Orbbec_Gemini2_3D_Camera',
-                  'es/Robotics/Robot_Sensor/Camera/es_Orbbec_Depth_Camera',
-                  'es/Robotics/Robot_Sensor/Camera/es_ORB_SLAM3_with_Orbbec_Gemini2',
-                  'es/Robotics/Robot_Sensor/Camera/es_Orbbec_Gemini_335Lg',
-                  'es/Robotics/Robot_Sensor/Camera/es_Sensing_GMSL_Camera',
-                  'es/Robotics/Robot_Sensor/Camera/es_CSI_Camera',
-                ]},
-            {
-              type: 'category',
-              label: 'IMU',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  'es/Robotics/Robot_Sensor/IMU/es_Hexfellow_Y200',
-                ]},
+            'es/Robotics/Robot_Kits/End_Effectors/es_DM_Gripper',
           ]
         },
         {
           type: 'category',
-          label: 'Software',
+          label: 'Mano',
           items: [
-            
-            {
-              type: 'category',
-              label: 'ROS',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  "es/Robotics/Robot_Software/ROS/es_Installing_ROS1",
-                  "es/Robotics/Robot_Software/ROS/es_Install_IsaacROS",
-                  "es/Robotics/Robot_Software/ROS/es_Install_ROS2_Humble",
-                  "es/Robotics/Robot_Software/ROS/es_Isaac_ROS_AprilTag",
-                  "es/Robotics/Robot_Software/ROS/es_Isaac_ROS_Visual_SLAM",
-                ]},
-            {
-              type: 'category',
-              label: 'Isaag Lab',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  'es/Robotics/Robot_Software/Isaac_Lab/es_Install_Isaac_lab',
-                  'es/Robotics/Robot_Software/Isaac_Lab/es_Simulate_SoArm101_by_LeIsaac',
-                ]},
-
-            {
-              type: 'category',
-              label: 'PX4',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-                items: [
-                  "es/Robotics/Robot_Software/PX4/es_Control_PX4_with_reComputer_Jetson",
-                  "es/Robotics/Robot_Software/PX4/es_Object_Tracking_with_reComputer_Jetson_and_PX4",
-                ]},
-            'es/Robotics/Robot_Software/VLA/es_control_robotic_arm_via_gr00t',
-            'es/Robotics/Robot_Software/es_control_robotic_arm_via_phospho',
+            'es/Robotics/Robot_Kits/Hand/es_AmazingHand',
           ]
-
+        },
+      ]
     },
-    
-
-    // {
-
-    //   type: 'doc',
-    //   label: '--Cloud and Chain--',
-    //   id: 'CloudnChain',
-
-    // },
-
-    // {
-    //   type: 'html',
-    //   value: `
-    // <style>
-    //   .sub_item {
-    //     width: 275px;
-    //     display:inline-block;
-    //     text-align:center;
-    //     font-size:20px;
-    //     margin-top: 10px;
-    //   }
-    // </style>
-    // <div style="width:100px;text-align:center">
-    //   <div class="sub_item"><strong> Cloud and Chain </strong></div>
-    // </div>
-    // `,
-    // },
-
+    {
+      type: 'category',
+      label: 'Actuador',
+      // link: {
+      //   type: "doc",
+      //   id: 'Edge/NVIDIA_Jetson/Application',
+      // },
+      items: [
+        'es/Robotics/Robot_Actuator/es_Myactuator_Series',
+        'es/Robotics/Robot_Actuator/es_Damiao_Series',
+        'es/Robotics/Robot_Actuator/es_Feetech_Servo',
+        'es/Robotics/Robot_Actuator/es_HighTorque',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Sensor',
+      // link: {
+      //   type: "doc",
+      //   id: 'Edge/NVIDIA_Jetson/Application',
+      // },
+      items: [
+        {
+          type: 'category',
+          label: 'Lidar',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            'es/Robotics/Robot_Sensor/Lidar/es_Robosense_Lidar',
+            'es/Robotics/Robot_Sensor/Lidar/es_MID360',
+            'es/Robotics/Robot_Sensor/Lidar/es_A_Loam',
+            'es/Robotics/Robot_Sensor/Lidar/es_SLAMTEC',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Cámara',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            'es/Robotics/Robot_Sensor/Camera/es_Getting_Start_with_Orbbec_Gemini2_3D_Camera',
+            'es/Robotics/Robot_Sensor/Camera/es_Orbbec_Depth_Camera',
+            'es/Robotics/Robot_Sensor/Camera/es_ORB_SLAM3_with_Orbbec_Gemini2',
+            'es/Robotics/Robot_Sensor/Camera/es_Orbbec_Gemini_335Lg',
+            'es/Robotics/Robot_Sensor/Camera/es_Sensing_GMSL_Camera',
+            'es/Robotics/Robot_Sensor/Camera/es_CSI_Camera',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'IMU',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            'es/Robotics/Robot_Sensor/IMU/es_Hexfellow_Y200',
+          ]
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Software',
+      items: [
+        {
+          type: 'category',
+          label: 'ROS',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            "es/Robotics/Robot_Software/ROS/es_Installing_ROS1",
+            "es/Robotics/Robot_Software/ROS/es_Install_IsaacROS",
+            "es/Robotics/Robot_Software/ROS/es_Install_ROS2_Humble",
+            "es/Robotics/Robot_Software/ROS/es_Isaac_ROS_AprilTag",
+            "es/Robotics/Robot_Software/ROS/es_Isaac_ROS_Visual_SLAM",
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Isaag Lab',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            'es/Robotics/Robot_Software/Isaac_Lab/es_Install_Isaac_lab',
+            'es/Robotics/Robot_Software/Isaac_Lab/es_Simulate_SoArm101_by_LeIsaac',
+            'es/Robotics/Robot_Software/Isaac_Lab/es_Training_SoARM101_Policy_with_IsaacLab',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'PX4',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            "es/Robotics/Robot_Software/PX4/es_Control_PX4_with_reComputer_Jetson",
+            "es/Robotics/Robot_Software/PX4/es_Object_Tracking_with_reComputer_Jetson_and_PX4",
+          ]
+        },
+        'es/Robotics/Robot_Software/VLA/es_control_robotic_arm_via_gr00t',
+        'es/Robotics/Robot_Software/es_control_robotic_arm_via_phospho',
+      ]
+    },
     {
       type: 'doc',
       id: 'es/es_Cloud',
-      label: 'SenseCraft & Cloud',
+      label: 'SenseCraft y Nube',
       className: 'sideboard_calss',
     },
     {
@@ -13995,7 +14076,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCraft Data Platform',
+      label: 'Plataforma de Datos SenseCraft',
       collapsed: true,
       collapsible: true,
       items: [
@@ -14033,7 +14114,6 @@ const sidebars = {
         },
       ],
     },
-    
     // START OF Seeed SOLUTION
     {
       type: 'link',
@@ -14041,6 +14121,16 @@ const sidebars = {
       href: 'https://solution.seeed.cc/',
       className: 'sideboard_calss',
     },
+    // {      
+    //   type: 'category',
+    //   label: 'AI Agents',
+    //   items:[
+    //     {
+    //       type: 'autogenerated',
+    //       dirName: 'Solutions/ai-agents',
+    //     }
+    //   ],
+    // },
     // {
     //   type: 'category',
     //   label: 'Smart Agriculture',
@@ -14054,7 +14144,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Edificio Inteligente',
-      items:[
+      items: [
         {
           type: 'autogenerated',
           dirName: 'es/Solutions/smart-building',
@@ -14062,9 +14152,9 @@ const sidebars = {
       ],
     },
     {
-      type: 'category', 
+      type: 'category',
       label: 'Paquete de Misión',
-      items:[
+      items: [
         {
           type: 'autogenerated',
           dirName: 'es/Solutions/mission-pack-v3',
@@ -14072,15 +14162,14 @@ const sidebars = {
       ],
     },
     'es/Solutions/es_jetson-crowd-tracking',
+    'es/Solutions/es_Frigate_on_Jetson_NodeRED_Gun_Alerts',
     // END OF Solution
-
     {
       type: 'doc',
       id: 'es/Topics/es_Topic_introduction',
       label: 'Temas de Tecnología',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Home Assistant',
@@ -14096,7 +14185,6 @@ const sidebars = {
         'es/Topics/Home_Assistant/Home_Assistant_Tutorials/es_sensecraft_homeassistant_userguide',
       ],
     },
-
     {
       type: 'category',
       label: 'TinyML',
@@ -14121,7 +14209,6 @@ const sidebars = {
             'es/Topics/TinyML/TinyML_Workshop/es_TrainModel',
           ],
         },
-
         {
           type: 'category',
           label: 'ModelAssistant',
@@ -14180,8 +14267,8 @@ const sidebars = {
               collapsed: true,
               collapsible: true,
               link: {
-               type: "doc",
-               id: 'es/Topics/TinyML/ModelAssistant/deploy/es_overview',
+                type: "doc",
+                id: 'es/Topics/TinyML/ModelAssistant/deploy/es_overview',
               },
               items: [
                 'es/Topics/TinyML/ModelAssistant/deploy/es_ma_deploy_yolov5',
@@ -14193,12 +14280,8 @@ const sidebars = {
         },
       ],
     },
-
-  
-
-    'Topics/Open_Source/Open_Source_Topic',
-    'Topics/Edge_AI/Edge_AI_Topic',
-
+    'es/Topics/Open_Source/es_Open_Source_Topic',
+    'es/Topics/Edge_AI/es_Edge_AI_Topic',
     /*
       {
       type: 'doc',
@@ -14207,59 +14290,44 @@ const sidebars = {
       className: 'sideboard_calss',
       },
 */
-
-
-{
-  type: 'doc',
-  id: 'es/es_Contributor',
-  label: 'Contribuciones',
-  className: 'sideboard_calss',
-},
-
-// {
-//       type: 'category',
-//       label: 'Fusion Service',
-//       items: [
-//         'Contribution/Fusion/Service_for_Fusion_PCB',
-//         'Contribution/Fusion/Galileo_Case',
-//         'Contribution/Fusion/Unibody_box_for_Galileo_Gen2',
-//         'Contribution/Fusion/Starter_bundle_harness_V1',
-//       ]
-// },
-
-// 'Contribution/Contributors/How_To_Edit_A_Document',
-// 'Contribution/Contributors/Things_We_Make',
-
-{
-  type: 'category',
-  label: 'Guía de Contribuciones de Github',
-  collapsed: true,
-  collapsible: true,
-  link: {
-    type: "doc",
-    id: 'es/Contribution/Contributors/Contribution-Guide/es_Contribution-Guide',
-  },
-  items: [
-    'es/Contribution/Contributors/Deploy_Page_Locally/es_Deploy_Page_Locally',
-    'es/Contribution/Contributors/Contribution-Guide/es_full_steps_pull_request',
-    'es/Contribution/Contributors/Contribution-Guide/es_quick_pull_request',
-  ],
-},
-
-
-
-
-// 'Contribution/Contributors/community_sourced_projects',
-'Contribution/Contributors/Scale-up-Your-Creation-with-Fusion',
-
-
+    {
+      type: 'doc',
+      id: 'es/es_Contributor',
+      label: 'Contribuciones',
+      className: 'sideboard_calss',
+    },
+    // {
+    //       type: 'category',
+    //       label: 'Fusion Service',
+    //       items: [
+    //         'Contribution/Fusion/Service_for_Fusion_PCB',
+    //         'Contribution/Fusion/Galileo_Case',
+    //         'Contribution/Fusion/Unibody_box_for_Galileo_Gen2',
+    //         'Contribution/Fusion/Starter_bundle_harness_V1',
+    //       ]
+    // },
+    {
+      type: 'category',
+      label: 'Guía de Contribuciones Github',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'es/Contribution/Contributors/Contribution-Guide/es_Contribution-Guide',
+      },
+      items: [
+        'es/Contribution/Contributors/Deploy_Page_Locally/es_Deploy_Page_Locally',
+        'es/Contribution/Contributors/Contribution-Guide/es_full_steps_pull_request',
+        'es/Contribution/Contributors/Contribution-Guide/es_quick_pull_request',
+      ],
+    },
+    'Contribution/Contributors/Scale-up-Your-Creation-with-Fusion',
     {
       type: 'doc',
       id: 'es/Top_Brand/es_PopularPlatforms',
       label: 'Plataformas Populares',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Arduino',
@@ -14369,7 +14437,6 @@ const sidebars = {
                 'es/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/es_How_To_Choose_The_Right_Cable',
               ],
             },
-
             {
               type: 'category',
               label: 'Uso Avanzado de Arduino',
@@ -14409,7 +14476,6 @@ const sidebars = {
                 'es/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/es_Project_Eight-Thermostat',
               ],
             },
-
             {
               type: 'category',
               label: 'Plataforma de Compilación',
@@ -14434,7 +14500,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Grove Kit para Principiantes para Arduino',
+              label: 'Grove Beginner Kit for Arduino',
               items: [
                 'es/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/es_Grove-Beginner-Kit-For-Arduino',
                 'es/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/es_Grove-Beginner-Kit-for-Arduino-education-pack',
@@ -14460,7 +14526,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'Raspberry Pi',
@@ -14486,7 +14551,6 @@ const sidebars = {
             'es/Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Module/es_Raspberry_pi_CM4_update_eeprom',
           ],
         },
-
         {
           type: 'category',
           label: 'Pi HAT',
@@ -14509,7 +14573,6 @@ const sidebars = {
             'es/Top_Brand/Raspberry_Pi/Pi_HAT/es_two-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi',
           ],
         },
-
         {
           type: 'category',
           label: 'Accesorios',
@@ -14521,7 +14584,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Cooler_Device',
+          label: 'Dispositivo de refrigeración',
           items: [
             'es/Top_Brand/Raspberry_Pi/Cooler_Device/es_Water_Cooling_Kit',
           ],
@@ -14544,7 +14607,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'Micro:bit',
@@ -14571,14 +14633,7 @@ const sidebars = {
       ],
     },
     // 'Contribution/Home_Assistant/Home_Assistant_Topic',
-
-
-
-
-
-
-
-/*
+    /*
     {
       type: 'html',
       value: `
@@ -14597,13 +14652,7 @@ const sidebars = {
     `,
     },
 */
-
-
-
-
-
-
-/*
+    /*
     {
       type: 'html',
       value: `
@@ -14622,7 +14671,6 @@ const sidebars = {
     `,
     },
     */
-
     {
       type: 'doc',
       id: 'es/Seeed_Elderly/es_DiscontinuedProducts',
@@ -14667,7 +14715,6 @@ const sidebars = {
             //'Seeed_Elderly/reSpeaker/ReSpeaker-USB-Mic-Array',
           ],
         },
-
         {
           type: 'category',
           label: 'rePhone',
@@ -14692,7 +14739,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Bee',
@@ -14866,33 +14912,40 @@ const sidebars = {
         },
       ],
     },
-
-
-    
-
-    'About',
-    'License',
+    'es/es_About',
+    'es/es_License',
   ],
 
 
   //日语文档
   jaSidebar: [
+    // 'Sensing_test',
     {
       type: 'doc',
       id: 'ja/ja_Getting_Started',
       label: 'はじめに',
       className: 'sideboard_calss',
     },
-
-
- 
+    // {
+    //   type: 'category',
+    //   label: 'TinyML',
+    //   collapsed: true,
+    //   collapsible: true,
+    //   link: {
+    //     type: "doc",
+    //     id: "TinyML/TinyML_Topic",
+    //   },
+    //   items: [
+    //     'TinyML/TinyML_workshop_course',
+    //   ]
+    // },
+    // 'Getting_Started_test',
     {
       type: 'doc',
       id: 'ja/ja_Sensor',
       label: 'センシング',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Grove',
@@ -14905,7 +14958,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Grove センサー',
+          label: 'Groveセンサー',
           collapsed: true,
           collapsible: true,
           link: {
@@ -14915,7 +14968,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '複数をまとめて',
+              label: 'オールインワン',
               items: [
                 'ja/Sensor/Grove/Grove_Sensors/All_in_one/ja_Grove_SEN5X_All_in_One',
                 'ja/Sensor/Grove/Grove_Sensors/All_in_one/ja_Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680',
@@ -14926,8 +14979,8 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'AI対応',
-              items: [        
+              label: 'AI搭載',
+              items: [
                 {
                   type: 'category',
                   label: 'Grove Vision AI',
@@ -14969,7 +15022,7 @@ const sidebars = {
                       label: 'アプリケーション',
                       items: [
                         'ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_grove-vision-ai-v2-sensecap-app',
-                        // 'ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_grove-vision-ai-v2-ha',
+                        // 'Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/grove-vision-ai-v2-ha',
                         'ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_grove-vision-ai-v2-demo',
                         'ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_grove_vision_ai_v2_webcamera',
                         'ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_vision_ai_v2_crowd_heat_map',
@@ -14979,12 +15032,12 @@ const sidebars = {
                   ],
                 },
                 'ja/Sensor/Grove/Grove_Sensors/AI-powered/ja_Grove-Gesture_sensor_paj7660',
-                // 'ja/Sensor/Grove/Grove_Sensors/AI-powered/ja_Gesture_control_music_application',
+                // 'Sensor/Grove/Grove_Sensors/AI-powered/Gesture_control_music_application',
               ],
             },
             {
               type: 'category',
-              label: '温度 & 湿度',
+              label: '温湿度',
               items: [
                 'ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor',
                 'ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-TempAndHumi_Sensor-SHT31',
@@ -14997,7 +15050,6 @@ const sidebars = {
                 'ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-SHT4x',
               ],
             },
-
             {
               type: 'category',
               label: '温度',
@@ -15013,11 +15065,9 @@ const sidebars = {
                 'ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-Temperature_Sensor',
                 'ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-Temperature_Sensor_V1.2',
                 'ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808',
-
-                // 'ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Sensor_temperature',
+                // 'Sensor/Grove/Grove_Sensors/Temperature/Sensor_temperature',
               ],
             },
-
             {
               type: 'category',
               label: '土壌湿度',
@@ -15045,7 +15095,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '空気質',
+              label: '空気品質',
               items: [
                 'ja/Sensor/Grove/Grove_Sensors/Air_Quality/ja_Grove-Laser_PM2.5_Sensor-HM3301',
                 'ja/Sensor/Grove/Grove_Sensors/Air_Quality/ja_Grove-Dust_Sensor',
@@ -15093,7 +15143,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '加速度センサー',
+              label: '加速度計',
               items: [
                 'ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-D7S-Vibration-Sensor',
                 'ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Sensor_accelerometer',
@@ -15122,7 +15172,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'ライト',
+              label: '光',
               items: [
                 'ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Lightning-Sensor-AS3935',
                 'ja/Sensor/Grove/Grove_Sensors/Light/ja_Sensor_light',
@@ -15139,7 +15189,7 @@ const sidebars = {
                 'ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Flame_Sensor',
                 'ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Infrared_Reflective_Sensor',
                 'ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-I2C_Color_Sensor',
-                'ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove_Color_Sensor'
+                'ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove_Color_Sensor',
               ],
             },
             {
@@ -15158,10 +15208,9 @@ const sidebars = {
                 'ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Grove-Human_Presence_Sensor-AK9753',
               ],
             },
-
             {
               type: 'category',
-              label: 'サウンド',
+              label: '音響',
               items: [
                 'ja/Sensor/Grove/Grove_Sensors/Sound/ja_Sensor_sound',
                 'ja/Sensor/Grove/Grove_Sensors/Sound/ja_Grove-Sound_Sensor',
@@ -15225,7 +15274,7 @@ const sidebars = {
                 'ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Step_Counter-BMA456',
               ],
             },
-             {
+            {
               type: 'category',
               label: '重量',
               items: [
@@ -15234,10 +15283,9 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
-          label: 'Grove ネットワークモジュール',
+          label: 'Groveネットワークモジュール',
           collapsed: true,
           collapsible: true,
           link: {
@@ -15255,13 +15303,13 @@ const sidebars = {
                 id: "ja/Sensor/Grove/Grove_Sensors_Network/LoRa/ja_Grove_LoRa_E5_New_Version"
               },
               items: [
-                    'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/ja_Grove_LoRa_E5_New_Version',
-                    'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_P2P',
-                    'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_TTN_Demo',
-                    'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_Helium_Demo',
-                    'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_Helium_tinyML_Demo',
-                    'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_SenseCAP_Cloud_Demo',
-                    'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_SenseCAP_XIAO_ESP32S3',
+                'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/ja_Grove_LoRa_E5_New_Version',
+                'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_P2P',
+                'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_TTN_Demo',
+                'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_Helium_Demo',
+                'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_Helium_tinyML_Demo',
+                'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_SenseCAP_Cloud_Demo',
+                'ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_SenseCAP_XIAO_ESP32S3',
               ],
             },
             {
@@ -15325,10 +15373,9 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
-          label: 'Grove アクセサリー',
+          label: 'Groveアクセサリー',
           collapsed: true,
           collapsible: true,
           link: {
@@ -15338,7 +15385,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '表示',
+              label: 'ディスプレイ',
               items: [
                 'ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-1.2_inch_IPS_Display',
                 'ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-4-Digit_Display',
@@ -15362,7 +15409,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'アクチュエータ',
+              label: 'アクチュエーター',
               items: [
                 'ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-2-Coil_Latching_Relay',
                 'ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Buzzer',
@@ -15406,7 +15453,6 @@ const sidebars = {
                 'ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Voltage_Divider',
               ],
             },
-
             {
               type: 'category',
               label: '時間',
@@ -15415,10 +15461,9 @@ const sidebars = {
                 'ja/Sensor/Grove/Grove_Accessories/Time/ja_Grove_High_Precision_RTC',
               ],
             },
-
             {
               type: 'category',
-              label: '現在',
+              label: '電流',
               items: [
                 'ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-10A_DC_Current_Sensor-ACS725',
                 'ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-5A_DC_AC_Current_Sensor-ACS70331',
@@ -15450,7 +15495,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'スイッチ & ボタン',
+              label: 'スイッチ・ボタン',
               items: [
                 'ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-6-Position_DIP_Switch',
                 'ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-Button',
@@ -15466,7 +15511,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '入力/出力',
+              label: '入出力',
               items: [
                 'ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-Differential_Amplifier_v1.2',
                 'ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-I2C_Hub',
@@ -15484,17 +15529,17 @@ const sidebars = {
                 'ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-NOT',
               ],
             },
-
             {
               type: 'category',
               label: 'ケース',
-              items: ['ja/Sensor/Grove/Grove_Accessories/Case/ja_Grove-Wrapper'],
+              items: [
+                'ja/Sensor/Grove/Grove_Accessories/Case/ja_Grove-Wrapper',
+              ],
             },
           ],
         },
       ],
     },
-
     {
       type: 'category',
       label: 'SenseCAP',
@@ -15507,7 +15552,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'SenseCAP T1000 トラッカー',
+          label: 'SenseCAP T1000 Tracker',
           collapsed: true,
           collapsible: true,
           link: {
@@ -15517,51 +15562,63 @@ const sidebars = {
           items: [
             'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/ja_SenseCAP_T1000_Tracker_Introduction',
             {
-            type: 'category',
-            label: 'ユーザーガイド',
-            items: [
-              'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Get_Started',
-              'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Payload',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Tracker_WiFi_Geolocation',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_BC01_Indoor_Bluetooth_Beacon',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Indoor_Positioning_Guide',
-                   ],
-          },
-          {
-            type: 'category',
-            label: 'LoRaWANネットワークサーバーと統合',
-            items: [
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_Connect_to_Helium',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_Connect_to_The_Things_Network',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_Connect_to_Loriot',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_AWS_Service',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_TTN_Mapper',
-                   ],
-          },
-          {
-            type: 'category',
-            label: '人気のあるDashboardと統合',
-            items: [
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Datacake_Integrated',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Ubidots_Integrated',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_thingsboard_integrated',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Ubidots_Integrated(Helium)',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Qubitro_Integrated',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_TagoIO_Integrated',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_InfluxDB_Integrated',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Akenza_Integrated',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Trackpac_Integrated',
-           'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_sensecap_t1000_tracker_wialon',
-                   ],
-          },
-          'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/ja_FAQ',
-          'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/ja_Firmware_release_note',
+              type: 'category',
+              label: 'ユーザーガイド',
+              items: [
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Get_Started',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Payload',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Tracker_WiFi_Geolocation',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_BC01_Indoor_Bluetooth_Beacon',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Indoor_Positioning_Guide',
               ],
+            },
+            {
+              type: 'category',
+              label: 'LoRaWANネットワークサーバーとの統合',
+              items: [
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_Connect_to_Helium',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_Connect_to_The_Things_Network',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_Connect_to_Loriot',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_AWS_Service',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_TTN_Mapper',
+              ],
+            },
+            {
+              type: 'category',
+              label: '人気ダッシュボードとの統合',
+              items: [
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Datacake_Integrated',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Ubidots_Integrated',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_thingsboard_integrated',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Ubidots_Integrated(Helium)',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Qubitro_Integrated',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_TagoIO_Integrated',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_InfluxDB_Integrated',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Akenza_Integrated',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Trackpac_Integrated',
+                'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_sensecap_t1000_tracker_wialon',
+              ],
+            },
+            'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/ja_FAQ',
+            'ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/ja_Firmware_release_note',
+          ],
         },
-
-         {
+        //       {
+        //            type: 'category',
+        //           label: 'SenseCAP T1000-P Pet Tracker',
+        //           collapsed: true,
+        //           collapsible: true,
+        //          link: {
+        //            type: "doc",
+        //           id: 'Sensor/SenseCAP/SenseCAP_T1000-P/t1000_p_intro',
+        //         },
+        //        items: [
+        //         'Sensor/SenseCAP/SenseCAP_T1000-P/get_started_with_t1000_p',
+        //           ],
+        //     },
+        {
           type: 'category',
-          label: 'SenseCAP センサー',
+          label: 'SenseCAPセンサー',
           collapsed: true,
           collapsible: true,
           link: {
@@ -15569,14 +15626,13 @@ const sidebars = {
             id: "ja/Sensor/SenseCAP/SenseCAP_Intro/ja_SenseCAP_Sensor_Intro",
           },
           items: [
-
             {
               type: 'category',
-              label: 'SenseCAP LoRaWAN センサー',
+              label: 'SenseCAP LoRaWANセンサー',
               items: [
                 {
                   type: 'category',
-                  label: 'SenseCAP S210X シリーズ',
+                  label: 'SenseCAP S210Xシリーズ',
                   items: [
                     'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/ja_SenseCAP_LoRaWAN_S210X_Series_Sensor',
                     'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/ja_SenseCAP_S2107',
@@ -15587,20 +15643,19 @@ const sidebars = {
                         'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/ja_Connect-S210X-Sensor-to-Microsoft-Azure-IoT-Central',
                         'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/ja_How-to-Connect-SenseCAP-S210X-to-Helium-Network',
                         'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/ja_How-to-Connect-SenseCAP-S210X-to-The-Things-Network',
+                        'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/ja_How_to_Connect_SenseCAP_S210X_to_Datacake_via_TTN',
                       ],
                     },
                   ],
                 },
-
                 {
                   type: 'category',
-                  label: 'SenseCAP S2120 8-in-1 LoRaWAN 気象センサー',
+                  label: 'SenseCAP S2120 8-in-1 LoRaWAN Weather Sensor',
                   items: [
                     'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/ja_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor_Introduction',
                     'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/ja_Tutorials-Getting_Started_with_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor',
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'SenseCAP A1101',
@@ -15609,11 +15664,9 @@ const sidebars = {
                     'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/ja_Train-Deploy-AI-Model-A1101',
                     'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/ja_One-Stop-Model-Training-with-Edge-Impulse',
                     'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/ja_Train-Water-Meter-Digits-Recognition-Model-with-SenseCAP-A1101',
-                    //'ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/ja_Train_and_Deploy_Your_Own_AI_Model_with_Edge_Impulse_into_A1101',
+                    //                 'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/Train_and_Deploy_Your_Own_AI_Model_with_Edge_Impulse_into_A1101',
                   ],
                 },
-
-
                 {
                   type: 'category',
                   label: 'SenseCAP A1102',
@@ -15624,14 +15677,19 @@ const sidebars = {
                     },
                   ],
                 },
-
-
+                // {
+                //   type: 'category',
+                //   label: 'SenseCAP A1102',
+                //   items: [
+                //     'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1102/Getting_Start_With_A1102',
+                //     'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1102/TrainAI_With_A1102',
+                //   ],
+                // },
               ],
             },
-
             {
               type: 'category',
-              label: 'SenseCAP ONE 気象センサー',
+              label: ' SenseCAP ONE Weather Sensor',
               collapsed: true,
               collapsible: true,
               link: {
@@ -15643,18 +15701,18 @@ const sidebars = {
                 'ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/ja_ORCH-S4-Weather-Station',
                 {
                   type: 'category',
-                  label: 'SenseCAP コンパクト気象ステーション',
+                  label: 'SenseCAP One Compact Weather Station',
                   items: [
                     'ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/ja_Introduction',
                     'ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/ja_Tutorials-Getting Started with SenseCAP ONE Compact Weather Sensor',
+                    'ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/ja_Benchmark_Labs_Forecast_Integration_for_Seeed_Weather_Stations',
                   ],
                 },
               ],
             },
-
             {
               type: 'category',
-              label: 'SenseCAP センサープローブ',
+              label: 'SenseCAPセンサープローブ',
               collapsed: true,
               collapsible: true,
               link: {
@@ -15678,10 +15736,9 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
-          label: 'SenseCAP センサービルダー',
+          label: ' SenseCAP Sensor Builder',
           collapsed: true,
           collapsible: true,
           link: {
@@ -15690,13 +15747,12 @@ const sidebars = {
           },
           items: [
             'ja/Sensor/SenseCAP/SenseCAP_Sensor_Builder/ja_SenseCAP_Builder_build_LoRaWAN_Sensors',
-            'ja/Sensor/SenseCAP/SenseCAP_Sensor_Builder/ja_list_of_seeed_grove_for_builder'
+            'ja/Sensor/SenseCAP/SenseCAP_Sensor_Builder/ja_list_of_seeed_grove_for_builder',
           ],
         },
-
         {
           type: 'category',
-          label: 'SenseCAP データロガー',
+          label: ' SenseCAP Data Logger',
           collapsed: true,
           collapsible: true,
           link: {
@@ -15728,16 +15784,16 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '学ぶ',
+          label: '学習',
           items: [
             'ja/Sensor/SenseCAP/Learn/ja_How_to_Select_the_LoRaWAN_Network',
-         ],
+          ],
         },
       ],
     },
     {
       type: 'category',
-      label: 'LoRaWAN トラッカー',
+      label: 'LoRaWANトラッカー',
       items: [
         {
           type: 'autogenerated',
@@ -15747,7 +15803,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCAP インジケーター',
+      label: 'SenseCAP Indicator',
       collapsed: true,
       collapsible: true,
       link: {
@@ -15763,7 +15819,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCAP ウォッチャー',
+      label: 'SenseCAP Watcher',
       collapsed: true,
       collapsible: true,
       link: {
@@ -15789,7 +15845,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'mmWave for XIAO',
+          label: 'XIAO用mmWave',
           items: [
             'ja/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/ja_mmwave-for-xiao',
             'ja/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/ja_mmwave-for-xiao_arduino',
@@ -15798,7 +15854,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'MR60FDA2 mmWaveキット',
+          label: 'MR60FDA2 mmWave kit',
           items: [
             'ja/Sensor/mmWave_radar_sensor/mr60fda2-mmwave-kit/ja_getting_started_with_mr60fda2',
             'ja/Sensor/mmWave_radar_sensor/mr60fda2-mmwave-kit/ja_ha_with_mr60fda2',
@@ -15806,7 +15862,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'MR60BHA2 mmWaveキット',
+          label: 'MR60BHA2 mmWave kit',
           items: [
             'ja/Sensor/mmWave_radar_sensor/mr60bha2-mmwave-kit/ja_getting_started_with_mr60bha2',
             'ja/Sensor/mmWave_radar_sensor/mr60bha2-mmwave-kit/ja_ha_with_mr60bha2',
@@ -15814,7 +15870,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'MR24HPC1 mmWaveキット',
+          label: 'MR24HPC1 mmWave kit',
           items: [
             'ja/Sensor/mmWave_radar_sensor/mr24hpc1-mmwave-kit/ja_mr24hpc1-mmwave_human_kit',
             'ja/Sensor/mmWave_radar_sensor/mr24hpc1-mmwave-kit/ja_mr24hpc1-mmWave_Kit_And_Grove_Connect_To_ESPHome',
@@ -15828,7 +15884,6 @@ const sidebars = {
         'ja/Sensor/mmWave_radar_sensor/ja_Radar_MR24FDB1',
       ],
     },
-
     {
       type: 'category',
       label: 'XIAO',
@@ -15840,7 +15895,6 @@ const sidebars = {
       },
       items: [
         'ja/Sensor/SeeedStudio_XIAO/ja_SeeedStudio_XIAO_Series_Projects',
-
         {
           type: 'category',
           label: 'XIAO SAMD21',
@@ -15855,12 +15909,12 @@ const sidebars = {
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_Seeeduino-XIAO-by-Nanase',
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_Seeeduino-XIAO-CircuitPython',
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_XIAO-SAMD21-MicroPython',
-
+                'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_MicroBlocks_XIAO_SAMD21',
               ],
             },
             {
               type: 'category',
-              label: '組み込み型ML',
+              label: '組み込みML',
               items: [
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/Embedded ML/ja_Seeeduino-XIAO-TinyML',
               ],
@@ -15877,7 +15931,8 @@ const sidebars = {
             },
           ],
         },
-        { // XIAO RA4M1
+        {
+          // XIAO RA4M1
           type: 'category',
           label: 'XIAO RA4M1',
           items: [
@@ -15909,11 +15964,12 @@ const sidebars = {
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040-with-Arduino',
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040-with-MicroPython',
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040-with-CircuitPython',
+                'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_MicroBlocks_XIAO_RP2040',
               ],
             },
             {
               type: 'category',
-              label: 'リアルタイムOS',
+              label: 'RTOS',
               items: [
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040-with-NuttX-RTOS',
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040-Zephyr-RTOS',
@@ -15922,14 +15978,15 @@ const sidebars = {
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO_RP2040_with_PlatformIO',
             {
               type: 'category',
-              label: '組み込み型ML',
+              label: '組み込みML',
               items: [
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/Embedded ML/ja_XIAO-RP2040-EI',
               ],
             },
           ],
         },
-        { // XIAO RP2350
+        {
+          // XIAO RP2350
           type: 'category',
           label: 'XIAO RP2350',
           items: [
@@ -15941,7 +15998,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'XIAO nRF52840 シリーズ',
+          label: 'XIAO nRF52840シリーズ',
           items: [
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO_BLE',
             {
@@ -15957,6 +16014,7 @@ const sidebars = {
               label: 'プログラミング言語',
               items: [
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-BLE_CircutPython',
+                'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_MicroBlocks_XIAO_nRF52840',
               ],
             },
             {
@@ -15968,7 +16026,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'ハードウェアの使用',
+              label: 'ハードウェア使用法',
               items: [
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-BLE-Sense-IMU-Usage',
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-BLE-Sense-PDM-Usage',
@@ -16006,11 +16064,43 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'XIAO nRF54L15シリーズ',
+          items: [
+            'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/ja_XIAO_nRF54L15-Sense_Getting_Started',
+            'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/ja_XIAO_nRF54L15-Sense_Pin_Multiplexing',
+            'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/ja_XIAO_nRF54L15-Sense_Built-in-Sensor',
+            'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/ja_XIAO_nRF54L15-Sense_Power_Consumptions',
+            {
+              type: 'category',
+              label: 'ワイヤレス接続',
+              items: [
+                'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/ja_XIAO_nRF54L15-Sense_Bluetooth_Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'プラットフォーム',
+              items: [
+                'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/ja_XIAO_nRF54L15-Sense_PlatformIO',
+              ],
+            },
+            // {
+            //   type: 'category',
+            //   label: 'Application',
+            //   items: [
+            //     'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_WiFi_Usage',
+            //     'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF54L15-Sense/XIAO_nRF54L15-Sense_Bluetooth_Usage',
+            //   ],
+            // },
+          ],
+        },
+        {
+          type: 'category',
           label: 'XIAO ESP32C3',
           items: [
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_Getting_Started',
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_Pin_Multiplexing',
-     //       'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_MicroPython',
+            //       'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_MicroPython',
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO-ESP32C3-NuttX',
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO-ESP32C3-Zephyr',
             {
@@ -16025,8 +16115,9 @@ const sidebars = {
               type: 'category',
               label: 'プログラミング言語',
               items: [
-            'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_with_CircuitPython',
-            'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_with_MicroPython',
+                'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_with_CircuitPython',
+                'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_with_MicroPython',
+                'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_MicroBlocks_XIAO_ESP32_C3',
               ],
             },
             {
@@ -16050,7 +16141,6 @@ const sidebars = {
           items: [
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO_ESP32C6_Getting_Started',
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO_ESP32C6_Pin_Multiplexing',
-      
             {
               type: 'category',
               label: 'ワイヤレス接続',
@@ -16100,12 +16190,11 @@ const sidebars = {
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/ja_xiao_esp32c6_kafka',
               ],
             },
-            
           ],
         },
         {
           type: 'category',
-          label: 'XIAO ESP32S3 シリーズ',
+          label: 'XIAO ESP32S3シリーズ',
           items: [
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_Getting_Started',
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_Pin_Multiplexing',
@@ -16124,12 +16213,13 @@ const sidebars = {
               items: [
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_with_MicroPython',
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_CircuitPython',
+                'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_MicroBlocks_XIAO_ESP32_S3',
                 // 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Micropython',
               ],
             },
             {
               type: 'category',
-              label: 'リアルタイムOS',
+              label: 'RTOS',
               items: [
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO-ESP32S3-Zephyr-RTOS',
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO-ESP32S3-FreeRTOS',
@@ -16138,7 +16228,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'ハードウェアの使用',
+              label: 'ハードウェア使用法',
               items: [
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/ja_XIAO_ESP32S3_Sense_mic',
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/ja_XIAO_ESP32S3_Sense_tf_and_filesystem',
@@ -16179,7 +16269,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'ラウンドディスプレイ for XIAO',
+              label: 'XIAO用円形ディスプレイ',
               items: [
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/ja_SeeedStudio_Round_Display_for_XIAO',
                 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/ja_SeeedStudio_RoundDisplay_Usage',
@@ -16195,10 +16285,10 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'GPSモジュール for XIAO',
+              label: 'XIAO用GPSモジュール',
               // link: {
               //   type: "doc",
-              //   id: 'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_Introduction',
+              //   id: 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Introduction',
               // },
               items: [
                 {
@@ -16216,7 +16306,7 @@ const sidebars = {
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_xiao_eink_expansion_board_v2',
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_XIAO-RS485-Expansion-Board',
             'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_Bus_Servo_Driver_Board',
-            
+            'ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_LED_Driver_Board',
           ],
         },
         {
@@ -16234,14 +16324,16 @@ const sidebars = {
         {
           type: 'category',
           label: 'コース付きキット',
-          items: ['ja/Sensor/SeeedStudio_XIAO/Kit_with_Courses/ja_XIAO-Kit-Courses'],
+          items: [
+            'ja/Sensor/SeeedStudio_XIAO/Kit_with_Courses/ja_XIAO-Kit-Courses',
+          ],
         },
         'ja/Sensor/SeeedStudio_XIAO/ja_XIAO_FAQ',
       ],
     },
     {
       type: 'category',
-      label: 'XIAO ガジェット',
+      label: 'XIAOガジェット',
       items: [
         {
           type: 'autogenerated',
@@ -16263,14 +16355,27 @@ const sidebars = {
         'ja/Sensor/Wio_Terminal/ja_Wio-Terminal-CircuitPython',
         'ja/Sensor/Wio_Terminal/ja_Software-FreeRTOS',
         'ja/Sensor/Wio_Terminal/ja_wio_terminal_faq',
-
+        // {
+        //   type: 'category',
+        //   label: 'ArduPy with Wio Terminal',
+        //   collapsed: true,
+        //   collapsible: true,
+        //   link: {
+        //     type: "doc",
+        //     id: 'Sensor/Wio_Terminal/ArduPy/ArduPy',
+        //   },
+        //   items: [
+        //     'Sensor/Wio_Terminal/ArduPy/ArduPy-LCD',
+        //     'Sensor/Wio_Terminal/ArduPy/ArduPy-Libraries',
+        //   ],
+        // },
         {
           type: 'category',
           label: 'ハードウェア概要',
           items: [
             {
               type: 'category',
-              label: 'LCDの使用',
+              label: 'LCD使用方法',
               items: [
                 'ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-Overview',
                 'ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-Basic',
@@ -16298,7 +16403,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'IMUの使用',
+              label: 'IMU使用方法',
               items: [
                 'ja/Sensor/Wio_Terminal/Hardware_Overview/IMU/ja_Wio-Terminal-IMU-Overview',
                 'ja/Sensor/Wio_Terminal/Hardware_Overview/IMU/ja_Wio-Terminal-IMU-Basic',
@@ -16346,7 +16451,6 @@ const sidebars = {
                 'ja/Sensor/Wio_Terminal/Hardware_Overview/Buttons/ja_Wio-Terminal-Buttons',
               ],
             },
-
             {
               type: 'category',
               label: '5方向スイッチ',
@@ -16354,7 +16458,6 @@ const sidebars = {
                 'ja/Sensor/Wio_Terminal/Hardware_Overview/five_Way_Switch/ja_Wio-Terminal-Switch',
               ],
             },
-
             {
               type: 'category',
               label: '光センサー',
@@ -16362,7 +16465,6 @@ const sidebars = {
                 'ja/Sensor/Wio_Terminal/Hardware_Overview/Light_Sensor/ja_Wio-Terminal-Light',
               ],
             },
-
             {
               type: 'category',
               label: '赤外線エミッター',
@@ -16370,10 +16472,9 @@ const sidebars = {
                 'ja/Sensor/Wio_Terminal/Hardware_Overview/Infrared_Emitter/ja_Wio-Terminal-Infrared-Emitter',
               ],
             },
-
             {
               type: 'category',
-              label: 'マイク',
+              label: 'マイクロフォン',
               items: [
                 'ja/Sensor/Wio_Terminal/Hardware_Overview/Microphone/ja_Wio-Terminal-Mic',
               ],
@@ -16393,7 +16494,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '簡単IoT',
+              label: 'Easy IoT',
               items: [
                 'ja/Sensor/Wio_Terminal/Application/Easy_IoT/ja_Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central',
                 'ja/Sensor/Wio_Terminal/Application/Easy_IoT/ja_Wio-Terminal-Azure-IOT',
@@ -16404,11 +16505,11 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '組み込み型ML',
+              label: '組み込みML ',
               items: [
                 {
                   type: 'category',
-                  label: 'Edge Impulse ベースのプロジェクト',
+                  label: 'Edge Impulseベースのプロジェクト ',
                   items: [
                     'ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/ja_Wio-Terminal-TinyML-EI-1',
                     'ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/ja_Wio-Terminal-TinyML-EI-2',
@@ -16420,7 +16521,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'TensorFlow Liteを使用したプロジェクト',
+                  label: 'TensorFlow Liteベースのプロジェクト',
                   items: [
                     'ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/ja_Wio-Terminal-TinyML-TFLM-1',
                     'ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/ja_Wio-Terminal-TinyML-TFLM-2',
@@ -16469,7 +16570,7 @@ const sidebars = {
             'ja/Sensor/Wio_Terminal/Tutorial/ja_Azure_IoT_CC',
             {
               type: 'category',
-              label: 'Wio Terminal 用 Blynk',
+              label: 'Blynk for Wio Terminal',
               items: [
                 'ja/Sensor/Wio_Terminal/Tutorial/Blynk_for_Wio_Terminal/ja_Wio-Terminal-Blynk',
                 'ja/Sensor/Wio_Terminal/Tutorial/Blynk_for_Wio_Terminal/ja_Blynk-wireless-OTA-functionality-to-Wio-Terminal',
@@ -16477,7 +16578,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Wio Terminal USBホスト',
+              label: 'Wio Terminal USB Host',
               items: [
                 'ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/ja_Wio-Terminal-USBH-Overview',
                 'ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/ja_Wio-Terminal-USBH-Keyboard',
@@ -16487,7 +16588,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Wio Terminal USBクライアント',
+              label: 'Wio Terminal USB Client',
               items: [
                 'ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/ja_Wio-Terminal-USBCLIENT-Overview',
                 'ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/ja_Wio-Terminal-USBCLIENT-Keyboard',
@@ -16514,77 +16615,230 @@ const sidebars = {
         },
       ],
     },
-
+    // {
+    //   type: 'category',
+    //   label: 'SenseCAP Indicator',
+    //   collapsed: true,
+    //   collapsible: true,
+    //   link: {
+    //     type: "doc",
+    //     id: 'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/Introduction',
+    //   },
+    //   items: [
+    //     'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/Introduction',
+    //     {
+    //       type: 'category',
+    //       label: 'Setup Guide',
+    //       items: [
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/Native_Firmware',
+    //         {
+    //           type: 'category',
+    //           label: 'OpenAI X SenseCAP Indicator',
+    //           // link: {
+    //           //   type: "doc",
+    //           //   id: 'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/OpenAI_X_SenseCAP_Indicator/Overview',
+    //           // },
+    //           items: [
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/OpenAI_X_SenseCAP_Indicator/Overview',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/OpenAI_X_SenseCAP_Indicator/How_to_Set_the_API_Key',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/OpenAI_X_SenseCAP_Indicator/ChatGPT_Indicator',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Get_Started_with_SenseCAP_Indicator/OpenAI_X_SenseCAP_Indicator/DALL·E_AI_Picture_Generator',
+    //           ],
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       type: 'category',
+    //       label: 'Development Tutorial',
+    //       items: [
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Dive_into_the_Hardware',
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/How_to_Create_your_own_UI',
+    //         {
+    //           type: 'category',
+    //           label: 'Develop with ESP32-S3',
+    //           items: [
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_ESP32-S3/Four-inch_Touch_Screen',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_ESP32-S3/Wi-Fi',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_ESP32-S3/BLE',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_ESP32-S3/Button',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_ESP32-S3/LoRa',
+    //           ],
+    //         },
+    //         {
+    //           type: 'category',
+    //           label: 'Develop with RP2040',
+    //           items: [
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/CO2_Sensor_Built-in',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/tVOC_Sensor_Built-in',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/Buzzer',
+    //             'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/Micro_SD',
+    //             {
+    //               type: 'category',
+    //               label: 'Grove',
+    //               items: [
+    //                 'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/Grove/Grove_ADC',
+    //                 'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/Develop_with_RP2040/Grove/Grove_IIC',
+    //               ],
+    //             },
+    //           ],
+    //         },
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Development_Tutorial/SenseCAP_Indicator_Arduino',
+    //       ],
+    //     },
+    //     'Sensor/SenseCAP/SenseCAP_Indicator/How_To_Flash_The_Default_Firmware',
+    //     {
+    //       type: 'category',
+    //       label: 'Application',
+    //       items: [
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Application/OpenAI',
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Application/Home_Assistant',
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Application/LoRa',
+    //         'Sensor/SenseCAP/SenseCAP_Indicator/Application/Matter',
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       type: 'category',
-      label: 'ReSpeaker 2-Mics Pi HAT',
-        items: [
-        'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/ja_ReSpeaker_2_Mics_Pi_HAT',
-        {
-          type: 'category',
-          label: 'v1ユーザー向け（非推奨）',
-          items: [
-            'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ja_ReSpeaker_2_Mics_Pi_HAT_Raspberry',
-            'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ja_ReSpeaker_2_Mics_Pi_HAT_Jetson',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'v2ユーザー向け',
-          items: [
-            'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ja_ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
-            'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ja_ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
-          ],
-        },
-        'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/ja_ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'ReSpeaker Lite',
+      label: 'ReSpeaker',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: 'doc',
+        id: 'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_ReSpeaker',
+      },
       items: [
-        'ja/Sensor/ReSpeaker_Lite/ja_reSpeaker_lite_introduction',
         {
           type: 'category',
-          label: 'ReSpeaker Lite with XIAO ESP32S3',
+          label: 'ReSpeaker XVF 3800',
+          collapsed: true,
+          collapsible: true,
           link: {
-            type: "doc",
-            id: 'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_xiao_respeaker',
+            type: 'doc',
+            id: 'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf3800_usb_4_mic_array',
           },
           items: [
-            'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_i2s_test',
-            'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_rgb_test',
-            'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_volume',
-            'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_button',
-            'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_record_and_play',
-           // 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_i2s_rgb',
             {
-              type: 'doc', 
-              id: 'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_generator',
-              label: 'ストリームジェネレーター', 
+              type: 'category',
+              label: 'ReSpeaker XVF 3800 with XIAO 紹介',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: 'doc',
+                id: 'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf3800_with_xiao_intro',
+              },
+              items: [
+                'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf3800_i2s_test',
+                'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf_3800_rgb_test',
+                'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf_3800_volume',
+                'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf_3800_record_playback',
+                'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf_3800_gpio',
+                'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf_3800_mqtt_stream',
+                'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf_3800_udp_streaming',
+                {
+                  type: 'category',
+                  label: 'アプリケーション',
+                  items: [
+                    'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf_3800_ha',
+                    'ja/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/ja_respeaker_xvf_3800_edgeimpulse',
+                  ],
+                },
+              ],
             },
-            'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_print',
-            'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_memory',
-            'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_player_spiffs',
-            'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_mqtt',
-            'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_i2s_tflite',
           ],
         },
         {
+          type: 'category',
+          label: 'ReSpeaker Lite',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: 'doc',
+            id: 'ja/Sensor/ReSpeaker_Lite/ja_reSpeaker_lite_introduction',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'ReSpeaker Lite with XIAO ESP32S3',
+              link: {
+                type: 'doc',
+                id: 'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_xiao_respeaker',
+              },
+              items: [
+                'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_i2s_test',
+                'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_rgb_test',
+                'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_volume',
+                'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_button',
+                'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_record_and_play',
+                // 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_i2s_rgb', // commented out
+                {
+                  type: 'doc',
+                  id: 'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_generator',
+                  label: 'Streams Generator',
+                },
+                'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_print',
+                'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_memory',
+                'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_player_spiffs',
+                'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_mqtt',
+                'ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_i2s_tflite',
+              ],
+            },
+            {
               type: 'category',
               label: 'アプリケーション',
               items: [
                 'ja/Sensor/ReSpeaker_Lite/Application/ja_respeaker_lite_ha',
                 'ja/Sensor/ReSpeaker_Lite/Application/ja_respeaker_lite_pi5',
               ],
-        },
-        'ja/Sensor/ReSpeaker_Lite/ja_respeaker_enclosure',
+            },
+            'ja/Sensor/ReSpeaker_Lite/ja_respeaker_enclosure',
           ],
+        },
+        {
+          type: 'category',
+          collapsed: true,
+          collapsible: true,
+          label: 'ReSpeaker 2-Mics Pi HAT',
+          link: {
+            type: 'doc',
+            id: 'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/ja_ReSpeaker_2_Mics_Pi_HAT',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'v1ユーザー向け（非推奨）',
+              items: [
+                'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ja_ReSpeaker_2_Mics_Pi_HAT_Raspberry',
+                'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ja_ReSpeaker_2_Mics_Pi_HAT_Jetson',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'v2ユーザー向け',
+              items: [
+                'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ja_ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
+                'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ja_ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
+              ],
+            },
+            'ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/ja_ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'ReSpeaker XVF 3000',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            'ja/Seeed_Elderly/reSpeaker/Extension Board/ja_ReSpeaker_Mic_Array_v3.0',
+            'ja/Seeed_Elderly/reSpeaker/Extension Board/ja_ReSpeaker_Mic_Array_v2.0',
+            'ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker-USB-Mic-Array',
+          ],
+        },
+      ],
     },
-
     {
       type: 'category',
-      label: 'その他のセンサーモジュール',
+      label: 'その他のセンシングモジュール',
       items: [
         {
           type: 'category',
@@ -16607,7 +16861,6 @@ const sidebars = {
             'ja/Seeed_Elderly/Radar_Sensor/ja_Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11',
           ],
         },
-
         {
           type: 'category',
           label: 'センサーネットワーク',
@@ -16623,12 +16876,18 @@ const sidebars = {
             'ja/Sensor/Beyond_Grove/Sensor_Network/ja_Wireless_Sensor_Node-Solar_Kit',
           ],
         },
-
         {
           type: 'category',
           label: 'EcoEye Vision Camera',
           items: [
             'ja/Sensor/Beyond_Grove/EcoEye_Embedded_Vison_Camera/ja_Get_Started_with_EcoEye',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'AIアシスタント',
+          items: [
+            'ja/Sensor/Beyond_Grove/AI_Assistant/ja_ai_assistant_getting_started',
           ],
         },
         {
@@ -16682,7 +16941,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '現在',
+              label: '電流',
               items: [
                 'ja/Sensor/Beyond_Grove/Accessories/Current/ja_Adjustable_DC_DC_Power_Converter_1V-12V-1.5A',
                 'ja/Sensor/Beyond_Grove/Accessories/Current/ja_Capacitance_Meter_Kit',
@@ -16700,7 +16959,9 @@ const sidebars = {
             {
               type: 'category',
               label: 'LED',
-              items: ['ja/Sensor/Beyond_Grove/Accessories/LED/ja_FSM-55'],
+              items: [
+                'ja/Sensor/Beyond_Grove/Accessories/LED/ja_FSM-55',
+              ],
             },
             {
               type: 'category',
@@ -16726,7 +16987,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '表示',
+              label: 'ディスプレイ',
               items: [
                 'ja/Sensor/Beyond_Grove/Accessories/Display/ja_1-69inch_LCD_SPI_display',
                 'ja/Sensor/Beyond_Grove/Accessories/Display/ja_1-47inch_LCD_SPI_display',
@@ -16738,8 +16999,6 @@ const sidebars = {
         },
       ],
     },
-
-    
     {
       type: 'category',
       label: 'その他のマイクロコントローラー',
@@ -16749,6 +17008,75 @@ const sidebars = {
           label: 'Wioシリーズ',
           items: [
             'ja/Sensor/Wio_Series/ja_Wio',
+            // {
+            //   type: 'category',
+            //   label: 'Wio-E5',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio-E5/LoRa_E5_mini',
+            //     'Sensor/Wio_Series/Wio-E5/LoRa_E5_Dev_Board',
+            //     'Sensor/Wio_Series/Wio-E5/LoRa-E5_STM32WLE5JC_Module',
+            //   ],
+            // },
+            // {
+            //   type: 'category',
+            //   label: 'Wio-SX1262',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio_SX1262/Introduction',
+            //     //'Sensor/Wio_Series/Wio_SX1262/How_to_build_a_lora_sensor',
+            //     {
+            //       type: 'category',
+            //       label: 'Wio SX1262 with XIAO ESP32S3 Kit',
+            //       items: [
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Introduction',
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Get_Started_meshtastic',
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Single_Channel_LoRaWAN_Gateway',
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/LoRaWAN_Sensor_Node',
+            //         {
+            //           type: 'category',
+            //           label: 'LoRaWAN Network Server',
+            //           items: [
+            //             'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Lorawan_network_server/TTN',
+            //             'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Lorawan_network_server/Chirpstack',
+            //           ],
+            //         },
+            //       ],
+            //     },
+            //   ],
+            // },
+            //             {
+            //   type: 'category',
+            //   label: 'Wio Tracker 1110 Dev Board',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Introduction',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Get_Started',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Connect_to_TTN',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/LoRa_Locator',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Connect_1110_to_HA',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/change_antenna_path',
+            //     {
+            //       type: 'category',
+            //       label: 'Development Tutorial',
+            //       items: [
+            //         'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Development_Tutorial/Setup_toolchain',
+            //       ],
+            //     },
+            //   ],
+            // },
+            // {
+            //   type: 'category',
+            //   label: 'Wio WM1110 Dev Kit',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Introduction',
+            //     'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Get_Started_with_Wio-WM1110_Dev_Kit',
+            //     {
+            //       type: 'category',
+            //       label: 'Development Tutorial',
+            //       items: [
+            //         'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Development_Tutorial/Hardware_Overview',
+            //       ],
+            //     },
+            //   ],
+            // },
             {
               type: 'category',
               label: 'LPWAN Dev Kit for Sidewalk',
@@ -16757,24 +17085,28 @@ const sidebars = {
                 'ja/Sensor/Wio_Series/LPWAN_Dev_Kit_for_Sidewalk/ja_Switch_to_Wio_Tracker',
               ],
             },
-
-
-
+            // {
+            //   type: 'category',
+            //   label: 'Wio WM1302',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio_WM1302/WM1302_module',
+            //     'Sensor/Wio_Series/Wio_WM1302/WM1302_Pi_HAT',
+            //   ],
+            // },
             {
               type: 'category',
               label: 'Wio RP2040',
               items: [
                 {
                   type: 'category',
-                  label: 'Wio RP2040モジュール',
+                  label: 'Wio RP2040 Module',
                   items: [
                     'ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_Module/ja_Wio_RP2040_Module_Build-in_Wireless_2.4G',
                   ],
                 },
-
                 {
                   type: 'category',
-                  label: 'Wio RP2040 mini 開発ボード',
+                  label: 'Wio RP2040 mini Dev Board',
                   items: [
                     'ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/ja_Wio_RP2040_mini_Dev_Board-Onboard_Wifi',
                     'ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/ja_Wio-RP2040-with-Arduino-WIFI',
@@ -16793,7 +17125,6 @@ const sidebars = {
                 },
               ],
             },
-
             {
               type: 'category',
               label: 'Wio Link',
@@ -16807,7 +17138,6 @@ const sidebars = {
                 'ja/Sensor/Wio_Series/Wio_Link/ja_Wio_Link_Starter_Kit',
               ],
             },
-
             {
               type: 'category',
               label: 'Wio Tracker',
@@ -16821,7 +17151,6 @@ const sidebars = {
                 'ja/Sensor/Wio_Series/Wio_Tracker/ja_Grove_Starter_Kit_for_Wio_LTE',
               ],
             },
-
             {
               type: 'category',
               label: 'Wio Lite',
@@ -16837,11 +17166,12 @@ const sidebars = {
             {
               type: 'category',
               label: 'Wio Node',
-              items: ['ja/Sensor/Wio_Series/Wio_Node/ja_Wio_Node'],
+              items: [
+                'ja/Sensor/Wio_Series/Wio_Node/ja_Wio_Node',
+              ],
             },
           ],
         },
-
         {
           type: 'category',
           label: 'Seeeduinoシリーズ',
@@ -16890,14 +17220,13 @@ const sidebars = {
             'ja/Sensor/Seeeduino Series/ja_Seeeduino-Crypto-ATmega4809-ECC608',
             'ja/Sensor/Seeeduino Series/ja_Seeeduino_Arch',
             'ja/Sensor/Seeeduino Series/ja_Seeeduino_Arch_V1.0',
-
             {
               type: 'category',
               label: 'アプリケーション',
               items: [
                 'ja/Sensor/Seeeduino Series/Application/ja_Driver_for_Seeeduino',
                 'ja/Sensor/Seeeduino Series/Application/ja_FM_Receiver',
-                'ja/Sensor/Seeeduino Series/Application/ja_Grove-SGP41-with-AHT20'
+                'ja/Sensor/Seeeduino Series/Application/ja_Grove-SGP41-with-AHT20',
               ],
             },
             {
@@ -16910,7 +17239,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'LinkIt',
@@ -16946,10 +17274,9 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
-          label: 'アーキ',
+          label: 'Arch',
           items: [
             'ja/Sensor/Arch/ja_Arch_Mix',
             'ja/Sensor/Arch/ja_Arch_V1.1',
@@ -16964,7 +17291,6 @@ const sidebars = {
             'ja/Sensor/Arch/ja_Grove-Starter_Kit_for_mbed',
           ],
         },
-
         {
           type: 'category',
           label: 'Azure Sphere MT3620',
@@ -16976,31 +17302,53 @@ const sidebars = {
             'ja/Sensor/Azure Sphere MT3620/ja_MT3620_Grove_Breakout',
           ],
         },
-        
         {
           type: 'category',
-          label: 'Seeed Studio IoTボタン',
+          label: 'Seeed Studio IoT Botton',
           items: [
-                'ja/Sensor/IOT_Button_for_ESPHOME/ja_getting_started_with_iot_button',
-                'ja/Sensor/IOT_Button_for_ESPHOME/ja_SEEED_IOT_BOTTON_FOR_ESPHOME',
-                'ja/Sensor/IOT_Button_for_ESPHOME/ja_seeed_iot_button_with_zigbee',
-              ],
+            'ja/Sensor/IOT_Button_for_ESPHOME/ja_getting_started_with_iot_button',
+            'ja/Sensor/IOT_Button_for_ESPHOME/ja_SEEED_IOT_BOTTON_FOR_ESPHOME',
+            'ja/Sensor/IOT_Button_for_ESPHOME/ja_seeed_iot_button_with_zigbee',
+          ],
         },
-
         {
           type: 'category',
-          label: 'IOTボタン for AWS',
-          items: ['ja/Sensor/IOT_Button_For_AWS/ja_SEEED-IOT-BUTTON-FOR-AWS'],
+          label: 'IOT Button for AWS',
+          items: [
+            'ja/Sensor/IOT_Button_For_AWS/ja_SEEED-IOT-BUTTON-FOR-AWS',
+          ],
         },
-
         {
           type: 'category',
           label: 'Pi Pico',
-          items: ['ja/Sensor/Pi_Pico/ja_Grove-Starter-Kit-for-Raspberry-Pi-Pico'],
+          items: [
+            'ja/Sensor/Pi_Pico/ja_Grove-Starter-Kit-for-Raspberry-Pi-Pico',
+          ],
         },
       ],
     },
-
+    // {
+    //   type: 'doc',
+    //   label: '--Network--',
+    //   id: 'Sensor_Network',
+    // },
+    // {
+    //   type: 'html',
+    //   value: `
+    // <style>
+    //   .sub_item {
+    //     width: 275px;
+    //     display:inline-block;
+    //     text-align:center;
+    //     font-size:20px;
+    //     margin-top: 10px;
+    //   }
+    // </style>
+    // <div style="width:100px;text-align:center">
+    //   <div class="sub_item"><strong> Network </strong></div>
+    // </div>
+    // `,
+    // },
     {
       type: 'doc',
       id: 'ja/ja_Network',
@@ -17023,7 +17371,56 @@ const sidebars = {
         },
       ]
     },
-
+    // {
+    //   type: 'category',
+    //   label: 'Meshtastic Network',
+    //   collapsed: true,
+    //   collapsible: true,
+    //   link: {
+    //     type: "doc",
+    //     id: 'Network/Meshtastic_Network/meshtastic_intro',
+    //   },
+    //   items: [
+    //     {
+    //       type: 'category',
+    //       label: 'T1000-E Tracker',
+    //       items: [
+    //         'Network/Meshtastic_Network/T1000-E/t1000_e_intro',
+    //         {
+    //           type: 'doc',
+    //           id: 'Network/Meshtastic_Network/T1000-E/sensecap_t1000_e',
+    //           label: 'Get Started with T1000-E',
+    //         },
+    //       ],
+    //     },
+    //         {
+    //           type: 'category',
+    //           label: 'SenseCAP Indicator for Meshtastic',
+    //           items: [
+    //             'Network/Meshtastic_Network/SenseCAP_Indicator/sensecap_indicator_meshtastic',
+    //           ],
+    //         },
+    //         {
+    //           type: 'category',
+    //           label: 'Wio Tracker 1110 Meshtastic Kit',
+    //           items: [
+    //             'Network/Meshtastic_Network/wio_tracker_kit/meshtastic_kit_wio_tracker_1110',
+    //             {
+    //               type: 'doc', 
+    //               id:'Network/Meshtastic_Network/wio_tracker_kit/flash_meshtastic_kit',
+    //               label: 'Flash Firmware', 
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           type: 'category',
+    //           label: 'XIAO ESP32S3 & Wio-SX1262 Kit for Meshtastic',
+    //           items: [
+    //             'Network/Meshtastic_Network/XIAO_ESP32S3_&_SX1262_Kit/Get_Started_meshtastic',
+    //           ],
+    //         },
+    //       ],
+    // },
     {
       type: 'category',
       label: 'LoRa Wioシリーズ',
@@ -17038,7 +17435,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCAP ゲートウェイ',
+      label: 'SenseCAP Gateway',
       collapsed: true,
       collapsible: true,
       link: {
@@ -17046,10 +17443,9 @@ const sidebars = {
         id: 'ja/Network/SenseCAP_Network/ja_SenseCAP_Gateway_Intro',
       },
       items: [
-
         {
           type: 'category',
-          label: 'SenseCAP M2 マルチプラットフォームゲートウェイ',
+          label: 'SenseCAP M2 Multi-Platform Gateway',
           items: [
             'ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/ja_SenseCAP_M2_Multi_Platform_Overview',
             'ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/ja_SenseCAP_M2_MP_Gateway_LNS_Configuration',
@@ -17067,14 +17463,13 @@ const sidebars = {
             'ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/ja_flash_opensource_firmware_to_m2_gateway'
           ],
         },
-
         {
           type: 'category',
-          label: 'Heliumゲートウェイ',
+          label: 'Helium Gateway',
           items: [
             {
               type: 'category',
-              label: 'SenseCAP M1ゲートウェイ',
+              label: 'SenseCAP M1 Gateway',
               items: [
                 'ja/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/ja_SenseCAP_M1_Overview',
                 'ja/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/ja_SenseCAP_M1_Quick_Start',
@@ -17085,14 +17480,13 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'SenseCAP M2 データのみ',
+              label: 'SenseCAP M2 Data Only',
               items: [
                 'ja/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/ja_SenseCAP_M2_Data_Only_Overview',
                 'ja/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/ja_SenseCAP_M2_Data_Only_Quick_Start',
                 'ja/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/ja_M2_Local_Console',
               ],
             },
-
             {
               type: 'category',
               label: 'SenseCAP M2 Light Gateway',
@@ -17104,17 +17498,15 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
-          label: 'Fluxゲートウェイ',
+          label: 'Flux Gateway',
           items: [
             'ja/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/ja_SenseCAP_M4_Overview',
             'ja/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/ja_SenseCAP_M4_Quick_Start',
             'ja/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/ja_SenseCAP_M4_FAQ',
           ],
         },
-
         {
           type: 'category',
           label: '屋外ゲートウェイ',
@@ -17124,7 +17516,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'SenseCAP K1100',
@@ -17139,7 +17530,7 @@ const sidebars = {
         'ja/Network/SenseCAP_K1100/ja_K1100_Getting_Started',
         {
           type: 'category',
-          label: 'LoRaWANネットワークアプリケーション',
+          label: 'LoRaWAN-ネットワークアプリケーション',
           items: [
             {
               type: 'category',
@@ -17155,12 +17546,12 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Helium クラウドサービス',
+              label: 'Helium Cloud Services',
               items: [
                 'ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/ja_Helium-Introduction',
                 {
                   type: 'category',
-                  label: 'Helium 接続済み & Azure 統合済み',
+                  label: 'Helium Connected & Azure Integrated',
                   items: [
                     'ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/Helium_Connected&Azure_Integrated/ja_Connecting-to-Helium',
                     'ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/Helium_Connected&Azure_Integrated/ja_Integrate-into-Azure-IoT-Hub',
@@ -17173,7 +17564,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'TTNクラウドサービス',
+              label: 'TTN Cloud Services',
               items: [
                 'ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/TTN_Cloud_Services/ja_TTN-Introduction',
                 'ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/TTN_Cloud_Services/ja_Connecting-to-TTN',
@@ -17181,7 +17572,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'SenseCAP & Node-Red を使用したクラウドサービス',
+              label: 'SenseCAP & Node-Red for Cloud Services',
               items: [
                 'ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/ja_K1100_sensecap_node-red',
                 'ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/ja_K1100_SenseCAP_to_Azure_IoT_Central',
@@ -17196,7 +17587,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Wi-Fiネットワークアプリケーション',
+          label: 'Wi-Fi-ネットワークアプリケーション',
           items: [
             'ja/Network/SenseCAP_K1100/Wi-Fi-Network_Application/ja_Wio-Terminal-Advanced-WiFi',
             {
@@ -17210,7 +17601,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Azure IoTプラットフォームの使用',
+              label: 'Azure IoTプラットフォーム使用方法',
               items: [
                 'ja/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Azure_IoT_Platform_Usage/ja_Connect-Wio-Terminal-to-Azure-IoT-Central',
                 'ja/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Azure_IoT_Platform_Usage/ja_Develop-in-Microsoft-Azure-IoT-Central',
@@ -17221,7 +17612,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '組み込み型MLアプリケーション',
+          label: '組み込みMLアプリケーション',
           items: [
             'ja/Network/SenseCAP_K1100/Embedded_ML_Application/ja_K1111-Edge-Impulse',
             'ja/Network/SenseCAP_K1100/Embedded_ML_Application/ja_Vision_AI_with_Customizable_Models',
@@ -17229,7 +17620,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '貢献者プロジェクト',
+          label: 'コントリビュータープロジェクト',
           items: [
             'ja/Network/SenseCAP_K1100/Contributors_Project/ja_IoT-into-the-wild-contest',
             'ja/Network/SenseCAP_K1100/Contributors_Project/ja_K1111-Quick-Start-Guide',
@@ -17237,9 +17628,16 @@ const sidebars = {
         },
       ],
     },
+    // {
+    //   type: 'category',
+    //   label: 'SenseCAP LoRaWAN Starter Kit',
+    //   items: [
+    //     'Network/SenseCAP_LoRaWAN_Starter_Kit/M2_Kit_Getting_Started',
+    //   ],
+    // },
     {
       type: 'category',
-      label: 'SenseCAP LoRaWAN スターターキット',
+      label: 'SenseCAP LoRaWAN Starter Kit',
       items: [
         {
           type: 'autogenerated',
@@ -17247,85 +17645,85 @@ const sidebars = {
         },
       ]
     },
-
+    // {
+    // 有问题
+    //   type: 'category',
+    //   label: 'LinkStar',
+    //   items: [
+    //     'Network/LinkStar/Linkstar_Datasheet',
+    //     'Network/LinkStar/linkstar-install-system',
+    //     ],
+    // },
     {
       type: 'category',
-      label: 'Raspberry Pi ソリューション',
+      label: 'Raspberry Piソリューション',
       collapsed: true,
       collapsible: true,
       items: [
-      {
-        type: 'category',
-        label: 'reRouter',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'ja/Network/RaspberryPi_Devices/reRouter/ja_reRouter_Intro',
+        {
+          type: 'category',
+          label: 'reRouter',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'ja/Network/RaspberryPi_Devices/reRouter/ja_reRouter_Intro',
+          },
+          items: [
+            'ja/Network/RaspberryPi_Devices/reRouter/ja_Raspberry-OpenWrt-Getting-Started',
+            'ja/Network/RaspberryPi_Devices/reRouter/ja_Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4',
+            'ja/Network/RaspberryPi_Devices/reRouter/ja_FAQs_For_openWrt',
+            {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                'ja/Network/RaspberryPi_Devices/reRouter/Application/ja_OpenWrt-Getting-Started',
+                'ja/Network/RaspberryPi_Devices/reRouter/Application/ja_OpenWrt-Plex-Media-Server-on-Docker',
+                'ja/Network/RaspberryPi_Devices/reRouter/Application/ja_Mender-Client-dual-GbE-CM4',
+              ],
+            },
+          ],
         },
-        items: [
-          'ja/Network/RaspberryPi_Devices/reRouter/ja_Raspberry-OpenWrt-Getting-Started',
-          'ja/Network/RaspberryPi_Devices/reRouter/ja_Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4',
-          'ja/Network/RaspberryPi_Devices/reRouter/ja_FAQs_For_openWrt',
-          {
-            type: 'category',
-            label: 'アプリケーション',
-            items: [
-              'ja/Network/RaspberryPi_Devices/reRouter/Application/ja_OpenWrt-Getting-Started',
-              'ja/Network/RaspberryPi_Devices/reRouter/Application/ja_OpenWrt-Plex-Media-Server-on-Docker',
-              'ja/Network/RaspberryPi_Devices/reRouter/Application/ja_Mender-Client-dual-GbE-CM4',
-            ],
-          },
-        ],
-       },  
-
-       {
-        type: 'category',
-        label: 'Raspberry Pi 4G LTE Hat',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/ja_Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
-
-          {
-            type: 'category',
-            label: 'アプリケーション',
-            items: [
-              {
-                type: 'category',
-                label: 'Windowsネットワーク設定',
-                items: [
-                  'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_rndis',
-                  'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_mbim',
-                ],
-              },
-              {
-                type: 'category',
-                label: 'Raspberry Pi OS ネットワーク設定',
-                items: [
-                  'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_mobile_internet_for_your_pi_ecm_set_up',
-                  'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_qmi',
-                  
-
-                ],
-              },
-
-              'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_send_text_massages_lte_cat_hat_for_rpi',
-              'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
-              'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_hotspot_on_rpi_os',
-              'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_ftp_on_rpi_4g_lte_hat',
-              'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_mqtt_on_rpi_4g_lte_hat',
-              'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_tcp_ip_rpi_4g_lte_hat',
-              'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_openwrt',
-
-            ],
-          },
-        ],
-       },  
-
+        {
+          type: 'category',
+          label: ' Raspberry Pi 4G LTE Hat',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/ja_Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
+            {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Windowsネットワーク設定',
+                  items: [
+                    'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_rndis',
+                    'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_mbim',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Raspberry Pi OSネットワーク設定',
+                  items: [
+                    'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_mobile_internet_for_your_pi_ecm_set_up',
+                    'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_qmi',
+                  ],
+                },
+                'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_send_text_massages_lte_cat_hat_for_rpi',
+                'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
+                'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_hotspot_on_rpi_os',
+                'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_ftp_on_rpi_4g_lte_hat',
+                'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_mqtt_on_rpi_4g_lte_hat',
+                'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_tcp_ip_rpi_4g_lte_hat',
+                'ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_openwrt',
+              ],
+            },
+          ],
+        },
       ],
     },
-
     {
       type: 'category',
       label: 'Rockchipソリューション',
@@ -17336,63 +17734,60 @@ const sidebars = {
         id: 'ja/Network/RK_Devices/ja_RK_intro',
       },
       items: [
-      {
-        type: 'category',
-        label: 'LinkStar-H68K',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'ja/Network/RK_Devices/LinkStar/ja_Linkstar_Intro',
-        },
-        items: [
-          'ja/Network/RK_Devices/LinkStar/ja_Linkstar_Datasheet',
-          'ja/Network/RK_Devices/LinkStar/ja_linkstar-install-system',
-          {
-            type: 'category',
-            label: 'アプリケーション',
-            items: [
-              'ja/Network/RK_Devices/LinkStar/Application/ja_h68k-ha-esphome',
-              'ja/Network/RK_Devices/LinkStar/Application/ja_plex_media_server',
-              'ja/Network/RK_Devices/LinkStar/Application/ja_wordpress_linkstar',
-              'ja/Network/RK_Devices/LinkStar/Application/ja_grocy-bookstack-linkstar',
-            ],
+        {
+          type: 'category',
+          label: 'LinkStar-H68K',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'ja/Network/RK_Devices/LinkStar/ja_Linkstar_Intro',
           },
-        ],
-      },
-      {
-        type: 'category',
-        label: 'LinkStar-H68K-V2',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'ja/Network/RK_Devices/H68K_V2/ja_H68KV2_Datasheet',
+          items: [
+            'ja/Network/RK_Devices/LinkStar/ja_Linkstar_Datasheet',
+            'ja/Network/RK_Devices/LinkStar/ja_linkstar-install-system',
+            {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                'ja/Network/RK_Devices/LinkStar/Application/ja_h68k-ha-esphome',
+                'ja/Network/RK_Devices/LinkStar/Application/ja_plex_media_server',
+                'ja/Network/RK_Devices/LinkStar/Application/ja_wordpress_linkstar',
+                'ja/Network/RK_Devices/LinkStar/Application/ja_grocy-bookstack-linkstar',
+              ],
+            },
+          ],
         },
-        items: [
-          'ja/Network/RK_Devices/H68K_V2/ja_H68KV2_Datasheet',
-          'ja/Network/RK_Devices/H68K_V2/ja_H68KV2_install_system',
-        ],
-      },
-      {
-        type: 'category',
-        label: 'LinkStar-H28K',
-        collapsed: true,
-        collapsible: true,
-        link: {
-          type: "doc",
-          id: 'ja/Network/RK_Devices/H28K/ja_H28K_Datasheet',
+        {
+          type: 'category',
+          label: 'LinkStar-H68K-V2',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'ja/Network/RK_Devices/H68K_V2/ja_H68KV2_Datasheet',
+          },
+          items: [
+            'ja/Network/RK_Devices/H68K_V2/ja_H68KV2_Datasheet',
+            'ja/Network/RK_Devices/H68K_V2/ja_H68KV2_install_system',
+          ],
         },
-        items: [
-          'ja/Network/RK_Devices/H28K/ja_H28K_Datasheet',
-          'ja/Network/RK_Devices/H28K/ja_H28K-install-system',
-        ],
-      },
-
+        {
+          type: 'category',
+          label: 'LinkStar-H28K',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'ja/Network/RK_Devices/H28K/ja_H28K_Datasheet',
+          },
+          items: [
+            'ja/Network/RK_Devices/H28K/ja_H28K_Datasheet',
+            'ja/Network/RK_Devices/H28K/ja_H28K-install-system',
+          ],
+        },
       ],
     },
-
-
     {
       type: 'category',
       label: 'その他のネットワークデバイス',
@@ -17400,7 +17795,7 @@ const sidebars = {
         'ja/Network/TTN_Gateway/ja_The-Things-Indoor-Gateway',
         {
           type: 'category',
-          label: 'Wio-WM6180 WiFi-Halow デバイス',
+          label: 'Wio-WM6180 WiFi-Halow Devices',
           items: [
             'ja/Network/WiFi-Halow/ja_wifi-halow-module-for-xiao',
             'ja/Network/WiFi-Halow/ja_wifi-halow-mini-pcie-module',
@@ -17408,454 +17803,467 @@ const sidebars = {
         },
       ],
     },
-
+    // {
+    //   type: 'html',
+    //   value: `
+    // <style>
+    //   .sub_item {
+    //     width: 275px;
+    //     display:inline-block;
+    //     text-align:center;
+    //     font-size:20px;
+    //     margin-top: 10px;
+    //   }
+    // </style>
+    // <div style="width:100px;text-align:center">
+    //   <div class="sub_item"><strong> Edge </strong></div>
+    // </div>
+    // `,
+    // },
     {
       type: 'doc',
       id: 'ja/ja_Edge_Computing',
       label: 'エッジコンピューティング',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
-      label: 'Raspberry Pi デバイス',
+      label: 'Raspberry Piデバイス',
       collapsed: true,
       collapsible: true,
       link: {
         type: "doc",
         id: 'ja/Edge/Raspberry_Pi_Devices/ja_RpiDevices',
       },
-      items:[
+      items: [
         {
           type: 'category',
-          label: 'エッジAIコンピュータ',
+          label: 'エッジAIコンピューター',
           collapsed: true,
           collapsible: true,
-          items:[
-            {
-            type: 'category',
-            label: 'reComputer-AI-R2000',
-            collapsed: true,
-            collapsible: true,
-            link:{
-              type:"doc",
-              id: 'ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/ja_reComputer_AI_R2000_getting_start'
-            },
-            items: [
-              'ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/ja_reComputer_AI_R2000_getting_start'
-            ]},
+          items: [
             {
               type: 'category',
-              label: 'reComputer-AI-産業用-R2000',
+              label: 'reComputer-AI-R2000',
               collapsed: true,
               collapsible: true,
-              link:{
-                type:"doc",
+              link: {
+                type: "doc",
+                id: 'ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/ja_reComputer_AI_R2000_getting_start'
+              },
+              items: [
+                'ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/ja_reComputer_AI_R2000_getting_start',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'reComputer-AI-Industrial-R2000',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
                 id: 'ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/ja_reComputer_AI_Industrial_R2135_getting_start'
               },
               items: [
                 'ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/ja_reComputer_AI_Industrial_R2135_getting_start',
-                'ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/ja_reComputer_AI_Industrial_R2000_Flash_OS'
-              ]},
-            
-
-      ]},
+                'ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/ja_reComputer_AI_Industrial_R2000_Flash_OS',
+              ]
+            },
+          ]
+        },
         {
-        type: 'category',
-        label: 'HMI',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          {
-        type: 'category',
-        label: 'reTerminal',
-        collapsed: true,
-        collapsible: true,
-        link: {
-              type: "doc",
-              id: 'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal_Intro',
-            },
-
-            items: [
-              'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal',
-              'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal-hardware-interfaces-usage',
-              'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal-piCam',
-              'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal-FAQ',
-              {
-                type: 'category',
-                label: 'OSインストール',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/ja_reTerminal-Buildroot-SDK',
-                  'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/ja_reTerminal-Yocto',
-                  'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/ja_Streampi_OBS_On_reTerminal',
-                  // 'Edge/reTerminal/OS_Installation/',
-                ],
+          type: 'category',
+          label: 'HMI',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: 'reTerminal',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal_Intro',
               },
-              {
-                type: 'category',
-                label: '拡張ボード',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/ja_reTerminalBridge',
-                  'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/ja_reTerminal_Mount_Options',
-                ],
+              items: [
+                'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal',
+                'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal-hardware-interfaces-usage',
+                'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal-piCam',
+                'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal-FAQ',
+                {
+                  type: 'category',
+                  label: 'OS インストール',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/ja_reTerminal-Buildroot-SDK',
+                    'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/ja_reTerminal-Yocto',
+                    'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/ja_Streampi_OBS_On_reTerminal',
+                    // 'Edge/reTerminal/OS_Installation/',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: '拡張ボード',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/ja_reTerminalBridge',
+                    'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/ja_reTerminal_Mount_Options',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'reTerminal DM',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reTerminal-dm_Intro',
               },
-            ],
-          },
-          {
-            type: 'category',
-            label: 'reTerminal DM',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: "doc",
-              id: 'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reTerminal-dm_Intro',
+              items: [
+                'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm',
+                'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm-flash-OS',
+                'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm-warranty',
+                'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm-hardware-guide',
+              ],
             },
-            items: [
-              'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm',
-              'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm-flash-OS',
-              'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm-warranty',
-              'ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm-hardware-guide',
-                        ],
-          },
-
-        ],
-
-      },
-      {
-        type: 'category',
-        label: 'エッジコントローラー',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          {
-            type: 'category',
-            label: 'EdgeBox-RPI-200',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: "doc",
-              id: 'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/ja_Edge_Box_intro',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Edge Controller',
+          collapsed: true,
+          collapsible: true,
+          // link: {
+          // type: "doc",
+          // id: 'Edge/Raspberry_Pi_Devices/Edge_Box_RPi_200/Edge_Box_intro',
+          // },
+          items: [
+            {
+              type: 'category',
+              label: 'EdgeBox-RPI-200',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/ja_Edge_Box_intro',
+              },
+              items: [
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/ja_Edgebox_rpi_200_Introduction',
+              ],
             },
-            items: [
-              'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/ja_Edgebox_rpi_200_Introduction',
-            
-            ],
-          },
-
-          {
-            type: 'category',
-            label: 'reComputer-R1000',
-            collapsed: true,
-            collapsible: true,
-            link: {
-              type: "doc",
-              id: 'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_intro',
+            {
+              type: 'category',
+              label: 'reComputer-R1000',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: 'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_intro',
+              },
+              items: [
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_pcn',
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r',
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_flash_os',
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_assembly_guide',
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_warranty',
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_how_to_use_rs485_modbus',
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_use_bacnet_mstp',
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_reComputer_R1000_FAQ',
+              ],
             },
-            items: [
-              'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_pcn',
-              'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r',
-              'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_flash_os',
-              'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_assembly_guide',
-              'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_warranty',
-              'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_how_to_use_rs485_modbus',
-              'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_use_bacnet_mstp',
-              'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_reComputer_R1000_FAQ',
-            ],
-          },
-          {
-            type: 'category',
-            label: 'reComputer R1100',
-            collapsed: true,
-            collapsible: true,
-            items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_reComputer_R1100',
-                  'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_recomputer_r1100_flash_os',
-                  'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_recomputer_r1100_configure_system',
-                  'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_recomputer_r1100_assembly_guide',
-            ],
-          },
-
-        ],
-      },
-
-      {
-        type: 'category',
-        label: 'ハット',
-        collapsed: true,
-        collapsible: true,
-        items: [
+            {
+              type: 'category',
+              label: 'reComputer R1100',
+              collapsed: true,
+              collapsible: true,
+              items: [
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_reComputer_R1100',
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_recomputer_r1100_flash_os',
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_recomputer_r1100_configure_system',
+                'ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_recomputer_r1100_assembly_guide',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Hat',
+          collapsed: true,
+          collapsible: true,
+          items: [
             {
               type: 'category',
               label: 'M.2 Hat',
               items: [
-                    'ja/Edge/Raspberry_Pi_Devices/M_2_Hat/ja_m_2_hat_start_with_pi5',
+                'ja/Edge/Raspberry_Pi_Devices/M_2_Hat/ja_m_2_hat_start_with_pi5',
               ],
             },
-          
-        ],
-      },
-
-      {
-        type: 'category',
-        label: 'アプリケーション',
-        collapsed: true,
-        collapsible: true,
-        items: [
-          {
-            type: 'category',
-            label: 'AIoT',
-            items: [
-              {
-                type: 'category',
-                label: 'BalenaOS',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/ja_recomputer_r1000_build_seeed_balena_image',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/ja_recomputer_r1000_balena',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'クラウドソリューション',
-                items: [
-                  {
-                    type: 'category',
-                    label: 'AWS IoT Core 統合 (R1000 / reTerminal DM)',
-                    items: [
-                      'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/ja_recomputer_r1000_aws',
-                      'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/ja_reTerminal-DM_AWS_first',
-                    ]
-                  },
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/ja_reTerminal-DM_Azure_IoT',
-                ]
-              },
-              {
-                type: 'category',
-                label: '終了',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_install_fin',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_create_equip_graphic',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_create_site_graphic',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_top_level_graphic',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_use_modbus',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with-_fin_use_logic_to_alarm',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with-fin_create_floor_graphic',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Fuxa',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_to_achieve_SCADA',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_modbus',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_mqtt',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_opcua',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_webapi',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_reTerminal-DM_intro_FUXA',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'ホームアシスタント',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_recomputer-r1000-home-assistant',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_recomputer-r1000-modbus-home-assistant',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_reTerminal_Home_Assistant',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_reTerminal-Home-Assistant-Customize',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'N3uron',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron-aws',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron-bacnet',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron-modbus-mqtt',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_aws',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_bacnet',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_getting_started',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_modbus_mqtt',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminal_DM_N3uron_AWS',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminal_DM_N3uron_Historian',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminal_DM_N3uron_modbus_mqtt',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminalDM_N3uron_Get_Start',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Node-RED',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_box_rpi_200_grafana',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_Bacnet_tcp',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_getting_started',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_influxdb',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_Modbus_rtu',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_Modbus_tcp',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_mqtt',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_neqto_engine_for_linux_reTerminal',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_nodered_modbustcp',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_nodered_opcua_server',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_nodered_s7',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_with_node_red_and_bacnet',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000-grafana',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer-r1000-nodered-getting-start',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-Bacnet',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-canbus',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-grafana',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-influxdb',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-Modbus-TCP',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-mqtt',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-RS485',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'UIデザイン',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-Electron',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-Flutter',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-LVGL',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-Qt-for-Python',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_weather-dashboard-with-Grafana-reTerminal',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Edge Impulse 物体検出',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/ja_reTerminal_ML_Edgeimpulse',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/ja_reTerminal-DM-edgeimpulse',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'Ignition Edge (reComputer R1000 / reTerminal DM)',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/ja_Edgebox-rpi-200-ignition-edge',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/ja_reTerminal-DM-Getting-Started-with-Ignition-Edge',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/ja_reTerminal-DM-Ignition-Edge-Panel-Builder',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'ThingsBoard 統合',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/ja_recomputer_r1000_thingsboard_ce',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/ja_recomputer_r1000_thingsboard_dashboard',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'R1000でのCODESYSとModbus',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/ja_recomputer_r1000_install_codesys',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/ja_recomputer_r1000_with_codesys_use_modbus_rtu',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'その他',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_Mender-Client-reTerminal',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_recomputer_r1000_flowfuse_getting_start',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_reTerminal-DM_intro_machinechat_jedi',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_reterminal-dm-sensecraft-edge-os-intro',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_recomputer_use_ups'
-                ]
-              },
-            ]
-          },
-          {
-            type: 'category',
-            label: 'コンピュータビジョン',
-            items: [
-              {
-                type: 'category',
-                label: 'ベンチマーク',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/ja_benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/ja_benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'OpenCV デモ (reTerminal & Pi カメラ)',
-                items: [
-                  {
-                    type: 'category',
-                    label: '物体 / 顔 / 色 / 形状 検出',
-                    items: [
-                      'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/ja_reTerminal_DM_Color_detection',
-                      'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/ja_reTerminal_DM_Face_detection',
-                      'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/ja_reTerminal_DM_Object_detection',
-                      'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/ja_reTerminal_DM_Shape_detection',
-                    ]
-                  },
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/ja_reTerminal_DM_opencv',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/ja_reTerminal_DM-tracking',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'YOLO ベースのアプリケーション',
-                items: [
-                  {
-                    type: 'category',
-                    label: 'YOLOv8 物体検出 (Pi 5 / R1000 / AI Box)',
-                    items: [
-                      'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/ja_Using_YOLOv8_and_AI_Box_for_fall_climbing_and_tracking_detection',
-                      'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/ja_yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
-                    ]
-                  },
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/ja_reTerminal-DM-Yolo5',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/ja_yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
-                ]
-              },
-              {
-                type: 'category',
-                label: 'NVR',
-                items:[
+          ],
+        },
+        {
+          type: 'category',
+          label: 'アプリケーション',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: 'AIoT',
+              items: [
+                {
+                  type: 'category',
+                  label: 'BalenaOS',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/ja_recomputer_r1000_build_seeed_balena_image',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/ja_recomputer_r1000_balena',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'クラウドソリューション',
+                  items: [
+                    {
+                      type: 'category',
+                      label: 'AWS IoT Core Integration (R1000 / reTerminal DM)',
+                      items: [
+                        'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/ja_recomputer_r1000_aws',
+                        'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/AWS_IoT_Core_Integration_(R1000_reTerminal-DM)/ja_reTerminal-DM_AWS_first',
+                      ]
+                    },
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/ja_reTerminal-DM_Azure_IoT',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Fin',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_install_fin',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_create_equip_graphic',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_create_site_graphic',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_top_level_graphic',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_use_modbus',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with-_fin_use_logic_to_alarm',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with-fin_create_floor_graphic',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Fuxa',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_to_achieve_SCADA',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_modbus',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_mqtt',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_opcua',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_webapi',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_reTerminal-DM_intro_FUXA',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Home Assistant',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_recomputer-r1000-home-assistant',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_recomputer-r1000-modbus-home-assistant',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_reTerminal_Home_Assistant',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_reTerminal-Home-Assistant-Customize',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'N3uron',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron-aws',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron-bacnet',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron-modbus-mqtt',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_aws',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_bacnet',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_getting_started',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_modbus_mqtt',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminal_DM_N3uron_AWS',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminal_DM_N3uron_Historian',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminal_DM_N3uron_modbus_mqtt',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminalDM_N3uron_Get_Start',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Node Red',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_box_rpi_200_grafana',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_Bacnet_tcp',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_getting_started',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_influxdb',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_Modbus_rtu',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_Modbus_tcp',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_mqtt',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_neqto_engine_for_linux_reTerminal',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_nodered_modbustcp',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_nodered_opcua_server',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_nodered_s7',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_with_node_red_and_bacnet',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000-grafana',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer-r1000-nodered-getting-start',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-Bacnet',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-canbus',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-grafana',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-influxdb',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-Modbus-TCP',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-mqtt',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-RS485',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'UI デザイン',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-Electron',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-Flutter',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-LVGL',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-Qt-for-Python',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_weather-dashboard-with-Grafana-reTerminal',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Edge Impulse Object Detection',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/ja_reTerminal_ML_Edgeimpulse',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Edge_Impulse_Object_Detection/ja_reTerminal-DM-edgeimpulse',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'Ignition Edge (reComputer R1000 / reTerminal DM)',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/ja_Edgebox-rpi-200-ignition-edge',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/ja_reTerminal-DM-Getting-Started-with-Ignition-Edge',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Ignition_Edge_(reComputer-R1000_reTerminal-DM)/ja_reTerminal-DM-Ignition-Edge-Panel-Builder',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'ThingsBoard Integration',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/ja_recomputer_r1000_thingsboard_ce',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/ThingsBoard_Integration/ja_recomputer_r1000_thingsboard_dashboard',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'CODESYS with Modbus on R1000',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/ja_recomputer_r1000_install_codesys',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/CODESYS_with_Modbus_on_R1000/ja_recomputer_r1000_with_codesys_use_modbus_rtu',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'その他',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_Mender-Client-reTerminal',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_recomputer_r1000_flowfuse_getting_start',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_reTerminal-DM_intro_machinechat_jedi',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_reterminal-dm-sensecraft-edge-os-intro',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_recomputer_use_ups',
+                  ]
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: 'コンピュータビジョン',
+              items: [
+                {
+                  type: 'category',
+                  label: 'ベンチマーク',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/ja_benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/ja_benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'OpenCV Demos (reTerminal & Pi Camera)',
+                  items: [
+                    {
+                      type: 'category',
+                      label: 'オブジェクト/顔/色/形状検出',
+                      items: [
+                        'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/ja_reTerminal_DM_Color_detection',
+                        'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/ja_reTerminal_DM_Face_detection',
+                        'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/ja_reTerminal_DM_Object_detection',
+                        'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/Object_Face_Color_Shape-Detection/ja_reTerminal_DM_Shape_detection',
+                      ]
+                    },
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/ja_reTerminal_DM_opencv',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV_Demos_(reTerminal_&_Pi-Camera)/ja_reTerminal_DM-tracking',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'YOLO ベースアプリケーション',
+                  items: [
+                    {
+                      type: 'category',
+                      label: 'YOLOv8 オブジェクト検出 (Pi 5 / R1000 / AI Box)',
+                      items: [
+                        'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/ja_Using_YOLOv8_and_AI_Box_for_fall_climbing_and_tracking_detection',
+                        'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/YOLOv8_Object_Detection_(Pi-5_R1000_AI-Box)/ja_yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
+                      ]
+                    },
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/ja_reTerminal-DM-Yolo5',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/YOLO-based_Applications/ja_yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'NVR',
+                  items: [
                     'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/ja_firearm_detection_with_frigate_nvr_on_r2000',
                     'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/ja_frigate_home_assistant_recomputer_r2000',
                     'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/ja_frigate_nvr_with_raspberrypi_5',
                     'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/ja_reterminal_frigate',
                     'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/ja_reterminal-DM-Frigate',
-                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/ja_zoneminder_on_recomputer'
-                ]
-              },
-              {
-                type: 'category',
-                label: 'その他の AI アプリケーション',
-                items: [
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_clip_application_on_rpi_with_ai_kit',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_convert_model_to_edge_tpu_tflite_format_for_google_coral',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_install_m.2_coral_to_rpi5',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_pose_based_light_control_with_nodered_and_rpi_with_aikit',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_real-time-ocr',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_reTerminal_ML_TFLite',
-                  'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
-                ]
-              },
-            ]
-          },
-          {
-            type: 'category',
-            label: '大規模言語モデル',
-            items:[
-              'ja/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/ja_deploy_deepseek_on_raspberry_pi_ai_box',
-              'ja/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/ja_distributed_inference_of_deepseek_model_on_raspberrypi'
-
-            ]
-          }
-        ]
-      },
-
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/NVR/ja_zoneminder_on_recomputer',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'その他の AI アプリケーション',
+                  items: [
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_clip_application_on_rpi_with_ai_kit',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_convert_model_to_edge_tpu_tflite_format_for_google_coral',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_install_m.2_coral_to_rpi5',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_pose_based_light_control_with_nodered_and_rpi_with_aikit',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_real-time-ocr',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_reTerminal_ML_TFLite',
+                    'ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Other_AI_Applications/ja_tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
+                  ]
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: '大規模言語モデル',
+              items: [
+                'ja/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/ja_deploy_deepseek_on_raspberry_pi_ai_box',
+                'ja/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/ja_distributed_inference_of_deepseek_model_on_raspberrypi',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'ツール',
+              items: [
+                'ja/Edge/Raspberry_Pi_Devices/Application/Development_Tools/ja_recomputer_use_uv_to_build_package',
+                'ja/Edge/Raspberry_Pi_Devices/Application/Development_Tools/ja_recomputer_use_docker',
+              ]
+            }
+          ]
+        },
       ],
-
-
     },
-
-
     {
       type: 'category',
       label: 'NVIDIA® Jetson™',
@@ -17902,15 +18310,20 @@ const sidebars = {
                     'ja/Edge/NVIDIA_Jetson/Carrier_Boards/J501/ja_Hardware_Interfaces_Usage',
                   ],
                 },
+                {
+                  type: 'category',
+                  label: 'J401-Robotics キャリアボード',
+                  items: [
+                    'ja/Edge/NVIDIA_Jetson/Carrier_Boards/Robotics_J401/ja_Robotics_J401_carrierboard_Hardware_Interfaces_Usage',
+                  ],
+                },
                 'ja/Edge/NVIDIA_Jetson/Carrier_Boards/A203v2/ja_reComputer_A203_Flash_System',
                 'ja/Edge/NVIDIA_Jetson/Carrier_Boards/A205/ja_reComputer_A205_Flash_System',
                 'ja/Edge/NVIDIA_Jetson/Carrier_Boards/A603/ja_A603_Flash_JetPack',
                 'ja/Edge/NVIDIA_Jetson/Carrier_Boards/A607/ja_A607_Flash_JetPack',
                 'ja/Edge/NVIDIA_Jetson/Carrier_Boards/A608/ja_A608_Flash_JetPack',
-                
               ],
             },
-
             // reComputer Jetson Series
             {
               type: 'category',
@@ -17932,22 +18345,21 @@ const sidebars = {
                       type: 'category',
                       label: 'reComputer J1010',
                       items: [
-                      'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_J1010_with_Jetson_getting_start',
-                      'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_J101_Enable_SD_Card',
-                      'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_J1010_Boot_From_SD_Card',
-                      'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_GPIO',
-                      'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_Memory_Expansion',
-                      'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_Series_Hardware_Layout',
-                      'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_Series_Initiation',
+                        'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_J1010_with_Jetson_getting_start',
+                        'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_J101_Enable_SD_Card',
+                        'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_J1010_Boot_From_SD_Card',
+                        'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_GPIO',
+                        'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_Memory_Expansion',
+                        'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_Series_Hardware_Layout',
+                        'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_Series_Initiation',
                       ],
                     },
-
                     {
                       type: 'category',
                       label: 'reComputer J1020',
                       items: [
-                      'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/ja_reComputer_J1020v2_with_Jetson_getting_start',
-                      'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/ja_reComputer_J1020_A206_Flash_JetPack',
+                        'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/ja_reComputer_J1020v2_with_Jetson_getting_start',
+                        'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/ja_reComputer_J1020_A206_Flash_JetPack',
                       ],
                     },
                   ],
@@ -17962,26 +18374,38 @@ const sidebars = {
                 {
                   type: 'category',
                   label: 'reComputer J30/40',
+                  // link: {
+                  //   type: "doc",
+                  //   id: 'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40',
+                  // },
                   items: [
                     'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/ja_reComputer_J30_40_with_Jetson_getting_start',
-                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/ja_reComputer_Jetson_with_Infineon_Wi-Fi_Module'
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/ja_reComputer_Jetson_with_Infineon_Wi-Fi_Module',
                   ]
                 },
                 {
                   type: 'category',
                   label: 'reComputer 工業用',
                   items: [
-                  'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_Getting_Started',
-                  'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_J20_Hardware_Interfaces_Usage',
-                  'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_Getting_Started',
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_J20_Hardware_Interfaces_Usage',
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage',
                   ],
                 },
                 {
                   type: 'category',
                   label: 'reComputer Mini',
                   items: [
-                  'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/ja_reComputer_Mini_Getting_Started',
-                  'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/ja_reComputer_Mini_Hardware_Interfaces_Usage'
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/ja_reComputer_Mini_Getting_Started',
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/ja_reComputer_Mini_Hardware_Interfaces_Usage',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer Robotics',
+                  items: [
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Robotics/ja_reComputer_Robotics_Getting_Started',
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Robotics/ja_reComputer_Robotics_Hardware_Interfaces_Usage',
                   ],
                 },
                 {
@@ -17989,42 +18413,57 @@ const sidebars = {
                   label: 'reComputer J401B',
                   items: [
                     'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/ja_recomputer_j401b_getting_start',
-                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/ja_recomputer_j401b_interfaces_usage'
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/ja_recomputer_j401b_interfaces_usage',
                   ]
                 },
-            ]},
-            
+                {
+                  type: 'category',
+                  label: 'reComputer Super',
+                  items: [
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/ja_reComputer_Super_Getting_Started',
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/ja_reComputer_Super_Hardware_Interfaces_Usage',
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/ja_reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing',
+                    'ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/ja_Replace_the_Thermal_Conductive_Paste_for_reComputer',
+                  ],
+                },
+              ]
+            },
             // reServer Jetson Series
             {
               type: 'category',
               label: 'reServer Jetson',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_Getting_Started',
+              // },
               items: [
                 //'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
                 {
                   type: 'category',
                   label: 'reServer Industrial J30/40',
                   items: [
-                  'ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/ja_reServer_Industrial_Getting_Started',
-                  'ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/ja_reServer_Industrial_Hardware_Interface_Usage'
+                    'ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/ja_reServer_Industrial_Getting_Started',
+                    'ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/ja_reServer_Industrial_Hardware_Interface_Usage',
                   ],
                 },
-
                 {
                   type: 'category',
                   label: 'reServer J2032',
                   items: [
-                  'ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/ja_reServer_J2032_Flash_Jetpack',
-                  'ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/ja_reServer_J2032_Getting_Started'
+                    'ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/ja_reServer_J2032_Flash_Jetpack',
+                    'ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/ja_reServer_J2032_Getting_Started',
                   ],
                 },
-
-
-            ]},
-
+              ]
+            },
             // Other Devices
             {
               type: 'category',
               label: 'その他のデバイス',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/Other_Devices',
+              // },
               items: [
                 'ja/Edge/NVIDIA_Jetson/Other_Devices/ja_How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
                 'ja/Edge/NVIDIA_Jetson/Other_Devices/ja_RTL8822CE_Wireless_Module_for_Jetson',
@@ -18034,22 +18473,30 @@ const sidebars = {
                 'ja/Edge/NVIDIA_Jetson/Other_Devices/ja_Mini_AI_Computer_T906',
                 'ja/Edge/NVIDIA_Jetson/Other_Devices/ja_reComputer_A203E_Flash_System',
                 'ja/Edge/NVIDIA_Jetson/Other_Devices/ja_reComputer_A205E_Flash_System',
-                'ja/Edge/NVIDIA_Jetson/Other_Devices/ja_reComputer_Jetson_Series_GPIO_Grove'
+                'ja/Edge/NVIDIA_Jetson/Other_Devices/ja_reComputer_Jetson_Series_GPIO_Grove',
               ]
             },
-
+            //flashing jetpack page
+            'ja/Edge/NVIDIA_Jetson/ja_Flash_Jetpack',
           ]
         },
-
         // Applications
         {
           type: 'category',
           label: 'アプリケーション',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application',
+          // },
           items: [
             // Computer Vision
             {
               type: 'category',
               label: 'コンピュータビジョン',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
+              // },
               items: [
                 'ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_DashCamNet-with-Jetson-Xavier-NX-Multicamera',
                 'ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_How_to_Train_and_Deploy_YOLOv8_on_reComputer',
@@ -18062,20 +18509,20 @@ const sidebars = {
                 'ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_YOLOv8-TRT-Jetson',
                 // 'Edge/NVIDIA_Jetson/Application/Computer_Vision/reComputer_Jetson_Series_Tutorials_Exercise',
                 'ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_YOLOv8_custom_classification_model',
+                'ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_Multi-GMSL_Cameras_for_Real-Time_Object_Detection_and_3D_Reconstruction_on_Jetson_AGX_Orin',
+                'ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_YOLOv11_With_Depth_Camera_For_Distance_Measurement',
                 'ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_deploy_frigate_on_jetson',
                 'ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_AI-NVR_with_Jetson',
               ]
             },
-
             // Generative AI
             {
               type: 'category',
-              label: '生成AI',
+              label: '生成 AI',
               link: {
                 type: "doc",
                 id: 'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Generative_AI_Intro',
               },
-              
               items: [
                 // Models
                 'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Finetune_LLM_by_Llama_Factory_on_Jetson',
@@ -18086,40 +18533,47 @@ const sidebars = {
                 'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_How_to_run_zero_shot_detection_on_reComputer',
                 'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_How_to_run_VLM_on_reComputer',
                 'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson',
-                
                 // Projects
                 'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Deploy_Riva_and_Llama2_on_reComputer',
                 'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Real_Time_Subtitle_Recoder_on_Jetson',
                 'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Deploy_Ollama_and_AnythingLLM_on_Jetson',
                 'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Quickly_Deploy_DeepSeek_on_reComputer_Jetson',
                 'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Deploy_DeepSeek_on_reComputer_Jetson_with_MLC',
+                'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_GPT_OSS_Running_Live_on_reComputer_Jetson',
+                'ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Control_Motor_by_Voice_LLM_on_Jetson',
               ]
             },
             {
               type: 'category',
-              label: 'マルチモーダルAI',
+              label: 'マルチモーダル AI',
               items: [
                 // Models
                 'ja/Edge/NVIDIA_Jetson/Application/Multimodal_AI/ja_Speech_vlm',
               ]
             },
-
             // Managed Services
             {
               type: 'category',
               label: 'マネージドサービス',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/Application/Managed_Services',
+              // },
               items: [
                 'ja/Edge/NVIDIA_Jetson/Application/Managed_Services/ja_Allxon-Jetson-Getting-Started',
                 'ja/Edge/NVIDIA_Jetson/Application/Managed_Services/ja_neqto_engine_for_linux_recomputer',
                 'ja/Edge/NVIDIA_Jetson/Application/Managed_Services/ja_Scailable-Jetson-Getting-Started',
-                'ja/Edge/NVIDIA_Jetson/Application/Managed_Services/ja_Update-Jetson-Linux-OTA-Using-Allxon'
+                'ja/Edge/NVIDIA_Jetson/Application/Managed_Services/ja_Update-Jetson-Linux-OTA-Using-Allxon',
               ]
             },
-
             // Developer Tools
             {
               type: 'category',
               label: '開発者ツール',
+              // link: {
+              //   type: "doc",
+              //   id: 'Edge/NVIDIA_Jetson/Application/Developer_Tools',
+              // },
               items: [
                 'ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_Gapi-Jetson-Getting-Started',
                 'ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_alwaysAI-Jetson-Getting-Started',
@@ -18134,17 +18588,21 @@ const sidebars = {
                 'ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_reComputer_Jetson_Series_Resource',
                 'ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_NVStreamer_Getting_Started',
                 'ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_Roboflow-Jetson-Getting-Started',
-                'ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_vnc_for_reComputer'
-
+                'ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_Install_torch_on_reComputer',
+                'ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_vnc_for_reComputer',
+                'ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_Implement_Ethercat_communication_on_reComputer',
               ]
             },
           ]
         },
-
         // FAQs
         {
           type: 'category',
           label: 'よくある質問',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/FAQs',
+          // },
           items: [
             'ja/Edge/NVIDIA_Jetson/FAQs/ja_jetson_FAQ',
             'ja/Edge/NVIDIA_Jetson/FAQs/ja_Create_Backup_and_Restore_on_reComputer',
@@ -18152,25 +18610,30 @@ const sidebars = {
             'ja/Edge/NVIDIA_Jetson/FAQs/ja_Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera',
             'ja/Edge/NVIDIA_Jetson/FAQs/ja_Use_IMX477_Camera_with_A603',
             'ja/Edge/NVIDIA_Jetson/FAQs/ja_Differences_of_L4T_Between_Seeed_and_NVIDIA',
+            'ja/Edge/NVIDIA_Jetson/FAQs/ja_Overview_of_the_Relationship_Between_JetPack_and_Jetson',
           ]
         }
       ],
     },
-
     {
       type: 'category',
-      label: 'ESPデバイス',
+      label: 'ESP デバイス',
       collapsed: true,
       collapsible: true,
+      //link: {
+      //type: "doc",
+      //id: 'Edge/Edge_Series/Edge_series_Intro',
+      // },
       items: [
         {
           type: 'category',
           label: 'EdgeBox-ESP-100',
-          items: ['ja/Edge/Edge_Series/Edge_Box_ESP_100/ja_Edgebox-ESP-100-Arduino'],
+          items: [
+            'ja/Edge/Edge_Series/Edge_Box_ESP_100/ja_Edgebox-ESP-100-Arduino',
+          ],
         },
       ],
     },
-
     {
       type: 'category',
       label: 'BeagleBone®',
@@ -18184,6 +18647,7 @@ const sidebars = {
         'ja/Edge/Beagle_Bone/ja_BeagleBone_Blue',
         'ja/Edge/Beagle_Bone/ja_BeagleBone_Green',
         'ja/Edge/Beagle_Bone/ja_BeagleBone_Green_Wireless',
+        'ja/Edge/Beagle_Bone/ja_BeagleBone_Green_Eco',
         'ja/Edge/Beagle_Bone/ja_BeagleBone-Green-Gateway',
         'ja/Edge/Beagle_Bone/ja_Beaglebone_Case',
         {
@@ -18192,7 +18656,6 @@ const sidebars = {
           items: [
             'ja/Edge/Beagle_Bone/Application/ja_BeagleBone_Solutions',
             'ja/Edge/Beagle_Bone/Application/ja_ChatGPT_and_BeagleBone',
-
           ],
         },
         {
@@ -18217,7 +18680,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'ODYSSEY',
@@ -18235,8 +18697,7 @@ const sidebars = {
           items: [
             'ja/Edge/ODYSSEY/ODYSSEY_STM32MP135D/ja_ODYSSEY STM32MP135D',
           ],
-          },
-
+        },
         {
           type: 'category',
           label: 'ODYSSEY X86J4105',
@@ -18277,7 +18738,7 @@ const sidebars = {
                 },
                 {
                   type: 'category',
-                  label: 'コンピュータ版',
+                  label: 'コンピュータバージョン',
                   items: [
                     'ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Computer_Version/ja_ODYSSEY-X86J4105-Intel-OpenVINO',
                     'ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Computer_Version/ja_ODYSSEY-X86J4105-NCS2',
@@ -18288,7 +18749,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'OSインストール',
+              label: 'OS インストール',
               items: [
                 'ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_ODYSSEY-X86J4105-Installing-OS',
                 'ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_ODYSSEY-X86J4105-Updating-Firmware',
@@ -18304,7 +18765,6 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
           label: 'ODYSSEY STM32MP157C',
@@ -18315,7 +18775,6 @@ const sidebars = {
         },
       ],
     },
-    
     {
       type: 'category',
       label: 'reCamera',
@@ -18328,28 +18787,41 @@ const sidebars = {
         },
       ]
     },
-
+    {
+      type: 'category',
+      label: 'reTerminal E シリーズ',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'ja/Edge/reTerminal_E10xx/ja_reterminal_e10xx_main_page',
+      },
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'ja/Edge/reTerminal_E10xx',
+        },
+      ]
+    },
     {
       type: 'category',
       label: 'その他のエッジデバイス',
       items: [
-          {
-            type: 'category',
-            label: 'reServer X86',
-            items: [
-              'ja/Edge/reServer/reServer_X86/ja_reServer-Getting-Started',
-              'ja/Edge/reServer/reServer_X86/ja_reServer-Update-BIOS-Install-Drivers',
-            ],
-          },
+        {
+          type: 'category',
+          label: 'reServer X86',
+          items: [
+            'ja/Edge/reServer/reServer_X86/ja_reServer-Getting-Started',
+            'ja/Edge/reServer/reServer_X86/ja_reServer-Update-BIOS-Install-Drivers',
+          ],
+        },
         'ja/Edge/Quantum_Development_Board/ja_Quantum-Mini-Linux-Development-Kit',
       ],
     },
-
-
     {
       type: 'doc',
       id: 'ja/ja_Edge_Robotics',
-      label: 'ロボット',
+      label: 'ロボティクスページ',
       className: 'sideboard_calss',
     },
     {
@@ -18361,40 +18833,100 @@ const sidebars = {
         {
           type: 'category',
           label: 'Lerobot',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
-            'ja/Robotics/Robot_Kits/Lerobot/ja_Lerobot_SO100Arm',
-            'ja/Robotics/Robot_Kits/Lerobot/ja_Lerobot_SO100Arm_Isaacsim',
+            //'Robotics/Robot_Kits/Lerobot/En_Hackathon_Thor',
+            'ja/Robotics/Robot_Kits/Lerobot/ja_Fine_tune_GR00T_N1.5_for_LeRobot_SO_Arm_and_Deploy_on_Jetson_Thor',
+            'ja/Robotics/Robot_Kits/Lerobot/ja_Lerobot_Starai_Arm',
+            'ja/Robotics/Robot_Kits/Lerobot/ja_Starai_Arm_ROS2_Moveit',
+            'ja/Robotics/Robot_Kits/Lerobot/ja_Lerobot_SO100Arm_New',
+            //'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
             'ja/Robotics/Robot_Kits/Lerobot/ja_Lerobot_Lekiwi',
-              ]},
-
+            'ja/Robotics/Robot_Kits/Lerobot/ja_Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'エンドエフェクタ',
+          items: [
+            'ja/Robotics/Robot_Kits/End_Effectors/ja_DM_Gripper',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'ハンド',
+          items: [
+            'ja/Robotics/Robot_Kits/Hand/ja_AmazingHand',
+          ]
+        },
       ]
     },
     {
       type: 'category',
-      label: 'Actuator',
+      label: 'アクチュエーター',
+      // link: {
+      //   type: "doc",
+      //   id: 'Edge/NVIDIA_Jetson/Application',
+      // },
       items: [
         'ja/Robotics/Robot_Actuator/ja_Myactuator_Series',
-          ]
+        'ja/Robotics/Robot_Actuator/ja_Damiao_Series',
+        'ja/Robotics/Robot_Actuator/ja_Feetech_Servo',
+        'ja/Robotics/Robot_Actuator/ja_HighTorque',
+      ]
     },
     {
       type: 'category',
       label: 'センサー',
+      // link: {
+      //   type: "doc",
+      //   id: 'Edge/NVIDIA_Jetson/Application',
+      // },
       items: [
         {
           type: 'category',
-          label: 'LiDAR',
+          label: 'Lidar',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
             'ja/Robotics/Robot_Sensor/Lidar/ja_Robosense_Lidar',
             'ja/Robotics/Robot_Sensor/Lidar/ja_MID360',
             'ja/Robotics/Robot_Sensor/Lidar/ja_A_Loam',
-              ]},
+            'ja/Robotics/Robot_Sensor/Lidar/ja_SLAMTEC',
+          ]
+        },
         {
           type: 'category',
           label: 'カメラ',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
+            'ja/Robotics/Robot_Sensor/Camera/ja_Getting_Start_with_Orbbec_Gemini2_3D_Camera',
             'ja/Robotics/Robot_Sensor/Camera/ja_Orbbec_Depth_Camera',
-            'ja/Robotics/Robot_Sensor/Camera/ja_CSI_Camera'
-              ]},
+            'ja/Robotics/Robot_Sensor/Camera/ja_ORB_SLAM3_with_Orbbec_Gemini2',
+            'ja/Robotics/Robot_Sensor/Camera/ja_Orbbec_Gemini_335Lg',
+            'ja/Robotics/Robot_Sensor/Camera/ja_Sensing_GMSL_Camera',
+            'ja/Robotics/Robot_Sensor/Camera/ja_CSI_Camera',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'IMU',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            'ja/Robotics/Robot_Sensor/IMU/ja_Hexfellow_Y200',
+          ]
+        },
       ]
     },
     {
@@ -18404,6 +18936,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'ROS',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
             "ja/Robotics/Robot_Software/ROS/ja_Installing_ROS1",
             "ja/Robotics/Robot_Software/ROS/ja_Install_IsaacROS",
@@ -18414,23 +18950,37 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Isaac Lab',
+          label: 'Isaag Lab',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
           items: [
             'ja/Robotics/Robot_Software/Isaac_Lab/ja_Install_Isaac_lab',
+            'ja/Robotics/Robot_Software/Isaac_Lab/ja_Simulate_SoArm101_by_LeIsaac',
+            'ja/Robotics/Robot_Software/Isaac_Lab/ja_Training_SoARM101_Policy_with_IsaacLab',
           ]
         },
+        {
+          type: 'category',
+          label: 'PX4',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+          // },
+          items: [
+            "ja/Robotics/Robot_Software/PX4/ja_Control_PX4_with_reComputer_Jetson",
+            "ja/Robotics/Robot_Software/PX4/ja_Object_Tracking_with_reComputer_Jetson_and_PX4",
+          ]
+        },
+        'ja/Robotics/Robot_Software/VLA/ja_control_robotic_arm_via_gr00t',
+        'ja/Robotics/Robot_Software/ja_control_robotic_arm_via_phospho',
       ]
     },
-
-
-
-
-    
-
     {
       type: 'doc',
       id: 'ja/ja_Cloud',
-      label: 'SenseCraft & クラウド',
+      label: 'SenseCraft & Cloud',
       className: 'sideboard_calss',
     },
     {
@@ -18497,38 +19047,65 @@ const sidebars = {
         },
       ],
     },
-    
-    /*
+    // START OF Seeed SOLUTION
     {
-      type: 'html',
-      value: `
-    <style>
-      .sub_item {
-        width: 275px;
-        display:inline-block;
-        text-align:center;
-        font-size:20px;
-        margin-top: 10px;
-      }
-    </style>
-    <div style="width:100px;text-align:center">
-      <div class="sub_item"><strong> Popular Platform </strong></div>
-    </div>
-    `,
+      type: 'link',
+      label: 'ソリューション',
+      href: 'https://solution.seeed.cc/',
+      className: 'sideboard_calss',
     },
-    */
-
-
+    // {      
+    //   type: 'category',
+    //   label: 'AI Agents',
+    //   items:[
+    //     {
+    //       type: 'autogenerated',
+    //       dirName: 'Solutions/ai-agents',
+    //     }
+    //   ],
+    // },
+    // {
+    //   type: 'category',
+    //   label: 'Smart Agriculture',
+    //   items:[
+    //     {
+    //       type: 'autogenerated',
+    //       dirName: 'Solutions/smart-agriculture',
+    //     }
+    //   ],
+    // },
+    {
+      type: 'category',
+      label: 'スマートビルディング',
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'ja/Solutions/smart-building',
+        }
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ミッションパック',
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'ja/Solutions/mission-pack-v3',
+        }
+      ],
+    },
+    'ja/Solutions/ja_jetson-crowd-tracking',
+    'ja/Solutions/ja_Frigate_on_Jetson_NodeRED_Gun_Alerts',
+    // END OF Solution
     {
       type: 'doc',
       id: 'ja/Topics/ja_Topic_introduction',
       label: '技術トピック',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
-      label: 'ホームアシスタント',
+      label: 'Home Assistant',
       collapsed: true,
       collapsible: true,
       link: {
@@ -18541,7 +19118,6 @@ const sidebars = {
         'ja/Topics/Home_Assistant/Home_Assistant_Tutorials/ja_sensecraft_homeassistant_userguide',
       ],
     },
-
     {
       type: 'category',
       label: 'TinyML',
@@ -18554,7 +19130,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'AIワークショップ',
+          label: 'AI ワークショップ',
           collapsed: true,
           collapsible: true,
           link: {
@@ -18562,25 +19138,24 @@ const sidebars = {
             id: 'ja/Topics/TinyML/TinyML_Workshop/ja_TinyML_workshop_course',
           },
           items: [
-              'ja/Topics/TinyML/TinyML_Workshop/ja_sscma',
-              'ja/Topics/TinyML/TinyML_Workshop/ja_TrainModel',
+            'ja/Topics/TinyML/TinyML_Workshop/ja_sscma',
+            'ja/Topics/TinyML/TinyML_Workshop/ja_TrainModel',
           ],
         },
-
         {
           type: 'category',
-          label: 'モデルアシスタント',
+          label: 'ModelAssistant',
           collapsed: true,
           collapsible: true,
           items: [
             {
               type: 'category',
-              label: '概要',
+              label: 'はじめに',
               collapsed: false,
               items: [
-              'ja/Topics/TinyML/ModelAssistant/introduction/ja_overview',
-              'ja/Topics/TinyML/ModelAssistant/introduction/ja_quick_start',
-              'ja/Topics/TinyML/ModelAssistant/introduction/ja_installation',
+                'ja/Topics/TinyML/ModelAssistant/introduction/ja_overview',
+                'ja/Topics/TinyML/ModelAssistant/introduction/ja_quick_start',
+                'ja/Topics/TinyML/ModelAssistant/introduction/ja_installation',
               ]
             },
             {
@@ -18621,77 +19196,71 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '開発',
+              label: 'デプロイメント',
               collapsed: true,
               collapsible: true,
               link: {
-               type: "doc",
-               id: 'ja/Topics/TinyML/ModelAssistant/deploy/ja_overview',
+                type: "doc",
+                id: 'ja/Topics/TinyML/ModelAssistant/deploy/ja_overview',
               },
               items: [
-              'ja/Topics/TinyML/ModelAssistant/deploy/ja_ma_deploy_yolov5',
-              'ja/Topics/TinyML/ModelAssistant/deploy/ja_ma_deploy_yolov8',
-              'ja/Topics/TinyML/ModelAssistant/deploy/ja_ma_deploy_yolov8_pose',
+                'ja/Topics/TinyML/ModelAssistant/deploy/ja_ma_deploy_yolov5',
+                'ja/Topics/TinyML/ModelAssistant/deploy/ja_ma_deploy_yolov8',
+                'ja/Topics/TinyML/ModelAssistant/deploy/ja_ma_deploy_yolov8_pose',
               ]
             },
           ],
         },
       ],
     },
-
-  
-
     'ja/Topics/Open_Source/ja_Open_Source_Topic',
     'ja/Topics/Edge_AI/ja_Edge_AI_Topic',
-
     /*
       {
       type: 'doc',
-      id: 'ja/Topics/Edge_AI/ja_Edge_AI_Topic',
-      label: 'エッジAI',
+      id: 'Topics/Edge_AI/Edge_AI_Topic',
+      label: 'Edge AI',
       className: 'sideboard_calss',
       },
 */
-
-
-{
-  type: 'doc',
-  id: 'ja/ja_Contributor',
-  label: '貢献',
-  className: 'sideboard_calss',
-},
-
-{
-  type: 'category',
-  label: 'Github 貢献ガイド',
-  collapsed: true,
-  collapsible: true,
-  link: {
-    type: "doc",
-    id: 'ja/Contribution/Contributors/Contribution-Guide/ja_Contribution-Guide',
-  },
-  items: [
-    'ja/Contribution/Contributors/Deploy_Page_Locally/ja_Deploy_Page_Locally',
-    'ja/Contribution/Contributors/Contribution-Guide/ja_full_steps_pull_request',
-    'ja/Contribution/Contributors/Contribution-Guide/ja_quick_pull_request',
-
-  ],
-},
-
-
-
-
-// 'Contribution/Contributors/community_sourced_projects',
-'ja/Contribution/Contributors/ja_Scale-up-Your-Creation-with-Fusion',
-
-
+    {
+      type: 'doc',
+      id: 'ja/ja_Contributor',
+      label: 'コントリビューション',
+      className: 'sideboard_calss',
+    },
+    // {
+    //       type: 'category',
+    //       label: 'Fusion Service',
+    //       items: [
+    //         'Contribution/Fusion/Service_for_Fusion_PCB',
+    //         'Contribution/Fusion/Galileo_Case',
+    //         'Contribution/Fusion/Unibody_box_for_Galileo_Gen2',
+    //         'Contribution/Fusion/Starter_bundle_harness_V1',
+    //       ]
+    // },
+    {
+      type: 'category',
+      label: 'Github コントリビューションガイド',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'ja/Contribution/Contributors/Contribution-Guide/ja_Contribution-Guide',
+      },
+      items: [
+        'ja/Contribution/Contributors/Deploy_Page_Locally/ja_Deploy_Page_Locally',
+        'ja/Contribution/Contributors/Contribution-Guide/ja_full_steps_pull_request',
+        'ja/Contribution/Contributors/Contribution-Guide/ja_quick_pull_request',
+      ],
+    },
+    'Contribution/Contributors/Scale-up-Your-Creation-with-Fusion',
     {
       type: 'doc',
       id: 'ja/Top_Brand/ja_PopularPlatforms',
-      label: '人気のプラットフォーム',
+      label: '人気プラットフォーム',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'Arduino',
@@ -18776,7 +19345,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: 'Arduino 基本使用方法',
+              label: 'Arduino 基本的な使用方法',
               items: [
                 'ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Download-Arduino-and-install-Arduino_Driver',
                 'ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_A_Handy_Serial_Library',
@@ -18801,10 +19370,9 @@ const sidebars = {
                 'ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_How_To_Choose_The_Right_Cable',
               ],
             },
-
             {
               type: 'category',
-              label: 'Arduino 拡張使用',
+              label: 'Arduino 拡張使用方法',
               items: [
                 'ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_Suli',
                 'ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_Seeed_Arduino_Serial',
@@ -18819,7 +19387,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: 'Arduinoボードプロジェクト',
+              label: ' Arduino ボードプロジェクト',
               items: [
                 'ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_IR_Remote',
                 'ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Joystick_Control_RGB_Led',
@@ -18841,10 +19409,9 @@ const sidebars = {
                 'ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_Eight-Thermostat',
               ],
             },
-
             {
               type: 'category',
-              label: 'プラットフォームのコンパイル',
+              label: 'コンパイルプラットフォーム',
               items: [
                 'ja/Top_Brand/Arduino/Tutorials/Compiling_Platform/ja_Compiling_MicroPython_for_embedded_devices',
                 'ja/Top_Brand/Arduino/Tutorials/Compiling_Platform/ja_Software-PlatformIO',
@@ -18892,7 +19459,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'Raspberry Pi',
@@ -18918,7 +19484,6 @@ const sidebars = {
             'ja/Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Module/ja_Raspberry_pi_CM4_update_eeprom',
           ],
         },
-
         {
           type: 'category',
           label: 'Pi HAT',
@@ -18941,7 +19506,6 @@ const sidebars = {
             'ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_two-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi',
           ],
         },
-
         {
           type: 'category',
           label: 'アクセサリー',
@@ -18953,7 +19517,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '冷却デバイス',
+          label: 'クーラー装置',
           items: [
             'ja/Top_Brand/Raspberry_Pi/Cooler_Device/ja_Water_Cooling_Kit',
           ],
@@ -18976,7 +19540,6 @@ const sidebars = {
         },
       ],
     },
-
     {
       type: 'category',
       label: 'Micro:bit',
@@ -19002,23 +19565,61 @@ const sidebars = {
         },
       ],
     },
-
+    // 'Contribution/Home_Assistant/Home_Assistant_Topic',
+    /*
+    {
+      type: 'html',
+      value: `
+    <style>
+      .sub_item {
+        width: 275px;
+        display:inline-block;
+        text-align:center;
+        font-size:20px;
+        margin-top: 10px;
+      }
+    </style>
+    <div style="width:100px;text-align:center">
+      <div class="sub_item"><strong> Contribution </strong></div>
+    </div>
+    `,
+    },
+*/
+    /*
+    {
+      type: 'html',
+      value: `
+    <style>
+      .sub_item {
+        width: 275px;
+        display:inline-block;
+        text-align:center;
+        font-size:20px;
+        margin-top: 10px;
+      }
+    </style>
+    <div style="width:100px;text-align:center">
+      <div class="sub_item"><strong> Discontinued Product </strong></div>
+    </div>
+    `,
+    },
+    */
     {
       type: 'doc',
       id: 'ja/Seeed_Elderly/ja_DiscontinuedProducts',
-      label: '販売終了製品',
+      label: '廃止製品',
       className: 'sideboard_calss',
     },
     {
       type: 'category',
-      label: '製品一覧',
+      label: '製品リスト',
       items: [
         {
           type: 'category',
           label: 'reSpeaker',
           items: [
             //'Seeed_Elderly/reSpeaker/reSpeaker_Getting_Started',
-            'ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker',
+            //'Seeed_Elderly/reSpeaker/ReSpeaker',
             'ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_Product_Guide',
             {
               type: 'category',
@@ -19035,7 +19636,7 @@ const sidebars = {
               label: '拡張ボード',
               items: [
                 'ja/Seeed_Elderly/reSpeaker/Extension Board/ja_ReSpeaker_Drive_Unit',
-                'ja/Seeed_Elderly/reSpeaker/Extension Board/ja_ReSpeaker_Mic_Array_v2.0',
+                //'Seeed_Elderly/reSpeaker/Extension Board/ReSpeaker_Mic_Array_v2.0',
                 'ja/Seeed_Elderly/reSpeaker/Extension Board/ja_ReSpeaker_Mic_Array',
               ],
             },
@@ -19044,10 +19645,9 @@ const sidebars = {
             'ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_6-Mic_Circular_Array_kit_for_Raspberry_Pi',
             'ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_Core',
             'ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_Core_v2.0',
-            'ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker-USB-Mic-Array',
+            //'Seeed_Elderly/reSpeaker/ReSpeaker-USB-Mic-Array',
           ],
         },
-
         {
           type: 'category',
           label: 'rePhone',
@@ -19061,7 +19661,7 @@ const sidebars = {
             'ja/Seeed_Elderly/rePhone/ja_Retro Phone Kit',
             {
               type: 'category',
-              label: 'rePhoneでプログラム',
+              label: 'rePhone でのプログラミング',
               items: [
                 'ja/Seeed_Elderly/rePhone/Program with rePhone/ja_Arduino_IDE_for_RePhone_Kit',
                 'ja/Seeed_Elderly/rePhone/Program with rePhone/ja_Eclipse_IDE_for_RePhone_Kit',
@@ -19072,10 +19672,9 @@ const sidebars = {
             },
           ],
         },
-
         {
           type: 'category',
-          label: 'ビー',
+          label: 'Bee',
           items: [
             'ja/Seeed_Elderly/Bee/ja_Mesh_Bee',
             'ja/Seeed_Elderly/Bee/ja_RFbee_V1.1-Wireless_Arduino_compatible_node',
@@ -19181,12 +19780,16 @@ const sidebars = {
         {
           type: 'category',
           label: 'NPi-i',
-          items: ['ja/Seeed_Elderly/NPi-i/ja_NPi-i.MX6ULL-Dev-Board-Linux-SBC'],
+          items: [
+            'ja/Seeed_Elderly/NPi-i/ja_NPi-i.MX6ULL-Dev-Board-Linux-SBC',
+          ],
         },
         {
           type: 'category',
           label: 'W600',
-          items: ['ja/Seeed_Elderly/W600/ja_W600_Module'],
+          items: [
+            'ja/Seeed_Elderly/W600/ja_W600_Module',
+          ],
         },
         {
           type: 'category',
@@ -19242,10 +19845,6 @@ const sidebars = {
         },
       ],
     },
-
-
-    
-
     'ja/ja_About',
     'ja/ja_License',
   ]
