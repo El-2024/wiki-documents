@@ -845,7 +845,7 @@ python -m lerobot.record  \
 
 ## 引用
 
-StarAI ロボットアーム ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/starai_arm_ros_moveit/)
+StarAI ロボットアーム ROS2 Moveit2: [star-arm-moveit2](https://wiki.seeedstudio.com/ja/starai_arm_ros_moveit/)
 
 lerobot-starai github: [lerobot-starai](https://github.com/servodevelop/lerobot.git)
 
